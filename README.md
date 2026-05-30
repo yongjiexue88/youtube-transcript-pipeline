@@ -81,6 +81,60 @@
   Maintenance of this project is made possible by all the <a href="https://github.com/jdepoix/youtube-transcript-api/graphs/contributors">contributors</a> and <a href="https://github.com/sponsors/jdepoix">sponsors</a>. If you'd like to sponsor this project <a href="https://github.com/sponsors/jdepoix">click here</a>. 💖
 </p>
 
+## YouTube Transcript Pipeline CLI Wrapper (`pipeline.py`)
+
+This repository contains a CLI wrapper, `pipeline.py`, designed for crawling entire channels safely and robustly without triggering YouTube's rate limiting blocks.
+
+### Quick Start
+
+1. Fetch transcripts for a single video:
+   ```bash
+   python3 pipeline.py video 'https://www.youtube.com/watch?v=HqsTB0avrh8'
+   ```
+
+2. Fetch all transcripts from a channel:
+   ```bash
+   python3 pipeline.py channel 'https://www.youtube.com/@TheValley101/videos'
+   ```
+
+### Rate-Limiting & Crawling Rules of Thumb
+
+> [!IMPORTANT]
+> **Do not try to "beat" YouTube rate limiting by blasting requests.**
+> For crawling channels, the recommended design is:
+> 1. **Crawl video list once** and save/cache it locally.
+> 2. **Download transcripts slowly** with deliberate, randomized delays.
+> 3. **Resume** from where it stopped.
+> 4. **Cache everything** so you don't repeat work.
+
+#### Practical Rules of Thumb (for personal/local use):
+- **1 video every 3–5 seconds** = Safer (Default)
+- **1 video every 1 second** = Risky
+- **Parallel requests** = Very risky
+- **Cloud server IP** = Much more risky (highly monitored by YouTube)
+
+#### Example Command:
+```bash
+python3 pipeline.py channel "https://www.youtube.com/@TheValley101/videos" \
+  --languages zh en \
+  --delay 5
+```
+
+### Pipeline Options & Defaults
+The `pipeline.py channel` command is pre-configured with safe defaults:
+- `--delay 5` (Default base delay of 5.0 seconds).
+- `--random-delay true` (Enabled by default; randomizes the sleep interval to `0.8 * delay` to `1.6 * delay`, e.g., 4–8 seconds, to make request patterns natural).
+- `--resume true` (Enabled by default; scans the `transcripts/` output folder and automatically skips already-downloaded transcripts).
+- `--stop-on-block true` (Enabled by default; stops cleanly on HTTP 429, 503, or IP block exceptions and saves progress instead of throwing hard failures).
+- `--max-videos <N>` (Optional limit to fetch transcripts for only up to $N$ videos).
+
+#### Crawling Once / Resuming from Cached Video List:
+When crawling a channel via URL, `pipeline.py` automatically caches the video list in `channel_lists/` in JSON format.
+To resume crawling or run safely without querying YouTube for the channel page again, you can pass the cached list file path directly:
+```bash
+python3 pipeline.py channel channel_lists/TheValley101_20260530_142240.json --delay 5
+```
+
 ## Install
 
 It is recommended to [install this module by using pip](https://pypi.org/project/youtube-transcript-api/):
