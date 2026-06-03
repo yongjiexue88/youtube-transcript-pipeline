@@ -178,6 +178,7 @@ def _get_proxy_env_defaults() -> dict[str, str | None]:
 def fetch_video_transcript(
     url_or_id: str,
     languages: list = None,
+    output_dir: str = None,
     webshare_username: str = None,
     webshare_password: str = None,
     http_proxy: str = None,
@@ -213,6 +214,7 @@ def fetch_video_transcript(
         path = save_transcript(
             url_or_id,
             languages=languages,
+            output_dir=output_dir,
             webshare_username=webshare_username,
             webshare_password=webshare_password,
             http_proxy=http_proxy,
@@ -243,11 +245,12 @@ def fetch_video_transcript(
 def fetch_channel_transcripts(
     channel_url_or_file: str,
     languages: list = None,
-    delay: float = 5.0,
+    delay: float = 10.0,
     max_videos: int | None = None,
     resume: bool = True,
     stop_on_block: bool = True,
     random_delay: bool = True,
+    output_dir: str = None,
     webshare_username: str = None,
     webshare_password: str = None,
     http_proxy: str = None,
@@ -265,7 +268,7 @@ def fetch_channel_transcripts(
         Preferred language codes in priority order, e.g. ["zh", "en"].
         Defaults to the first available language for each video.
     delay : float, optional
-        Seconds to wait between requests (default 5.0) to avoid rate-limiting.
+        Seconds to wait between requests (default 10.0) to avoid rate-limiting.
     max_videos : int, optional
         Maximum number of videos to crawl.
     resume : bool, optional
@@ -307,8 +310,9 @@ def fetch_channel_transcripts(
     saved, skipped, failed = [], [], []
 
     downloaded_ids = set()
+    target_dir = output_dir if output_dir else TRANSCRIPTS_DIR
     if resume:
-        downloaded_ids = get_downloaded_video_ids(TRANSCRIPTS_DIR)
+        downloaded_ids = get_downloaded_video_ids(target_dir)
         print(f"[i] Resume enabled: Found {len(downloaded_ids)} already-downloaded transcripts.")
 
     print()
@@ -343,6 +347,7 @@ def fetch_channel_transcripts(
             path = save_transcript(
                 url,
                 languages=languages,
+                output_dir=target_dir,
                 webshare_username=webshare_username,
                 webshare_password=webshare_password,
                 http_proxy=http_proxy,
@@ -448,8 +453,8 @@ Examples:
         help="Preferred language codes in priority order (e.g. --languages zh en)"
     )
     channel_parser.add_argument(
-        "--delay", type=float, default=5.0,
-        help="Seconds to wait between videos (default: 5.0)"
+        "--delay", type=float, default=10.0,
+        help="Seconds to wait between videos (default: 10.0)"
     )
     channel_parser.add_argument(
         "--max-videos", type=int, default=None,
@@ -473,6 +478,10 @@ Examples:
     
     for parser_obj in (video_parser, channel_parser):
         parser_obj.add_argument(
+            "--output-dir", default=None,
+            help="Directory to save transcripts (default: transcripts/)"
+        )
+        parser_obj.add_argument(
             "--webshare-username", default=proxy_defaults["webshare_username"],
             help="Username for Webshare rotating residential proxy"
         )
@@ -495,6 +504,7 @@ Examples:
         fetch_video_transcript(
             args.url,
             languages=args.languages,
+            output_dir=args.output_dir,
             webshare_username=args.webshare_username,
             webshare_password=args.webshare_password,
             http_proxy=args.http_proxy,
@@ -510,6 +520,7 @@ Examples:
             resume=args.resume,
             stop_on_block=args.stop_on_block,
             random_delay=args.random_delay,
+            output_dir=args.output_dir,
             webshare_username=args.webshare_username,
             webshare_password=args.webshare_password,
             http_proxy=args.http_proxy,

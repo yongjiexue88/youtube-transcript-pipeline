@@ -97,6 +97,25 @@ This repository contains a CLI wrapper, `pipeline.py`, designed for crawling ent
    python3 pipeline.py channel 'https://www.youtube.com/@TheValley101/videos'
    ```
 
+### Two-Step Crawling Workflow (Recommended)
+
+For larger channels, it is recommended to retrieve the list of video IDs first, and then run the download pipeline using that list. This prevents querying the channel page repeatedly.
+
+#### Step 1: Save the Video List from a Channel
+Fetch and save all uploads from a channel (exclude Shorts by appending `/videos` to the URL) to a TSV file:
+```bash
+python3 list_channel_videos.py "https://www.youtube.com/@AccurateEnglish/videos" --save
+```
+This will save a list file under `channel_lists/` (e.g., [channel_lists/AccurateEnglish_20260603_071945.tsv](file:///Users/yongjiexue/Documents/GitHub/youtube-transcript-pipeline/channel_lists/AccurateEnglish_20260603_071945.tsv)).
+
+#### Step 2: Download Transcripts Using the Saved List
+Pass the saved list file directly to `pipeline.py` to start downloading transcripts into your desired directory:
+```bash
+python3 pipeline.py channel channel_lists/AccurateEnglish_20260603_071945.tsv \
+  --output-dir transcripts/accurate_english \
+  --delay 10
+```
+
 ### Rate-Limiting & Crawling Rules of Thumb
 
 > [!IMPORTANT]
@@ -122,11 +141,13 @@ python3 pipeline.py channel "https://www.youtube.com/@TheValley101/videos" \
 
 ### Pipeline Options & Defaults
 The `pipeline.py channel` command is pre-configured with safe defaults:
-- `--delay 5` (Default base delay of 5.0 seconds).
-- `--random-delay true` (Enabled by default; randomizes the sleep interval to `0.8 * delay` to `1.6 * delay`, e.g., 4–8 seconds, to make request patterns natural).
+- `--delay 10` (Default base delay of 10.0 seconds).
+- `--random-delay true` (Enabled by default; randomizes the sleep interval to `0.8 * delay` to `1.6 * delay`, e.g., 8–16 seconds, to make request patterns natural).
 - `--resume true` (Enabled by default; scans the `transcripts/` output folder and automatically skips already-downloaded transcripts).
 - `--stop-on-block true` (Enabled by default; stops cleanly on HTTP 429, 503, or IP block exceptions and saves progress instead of throwing hard failures).
 - `--max-videos <N>` (Optional limit to fetch transcripts for only up to $N$ videos).
+- `--output-dir <path>` (Optional directory to save transcripts; defaults to the `transcripts/` folder).
+- `--languages <LANG...>` (Optional ordered list of preferred language codes, e.g., `--languages zh en`).
 
 #### Crawling Once / Resuming from Cached Video List:
 When crawling a channel via URL, `pipeline.py` automatically caches the video list in `channel_lists/` in JSON format.
@@ -134,6 +155,37 @@ To resume crawling or run safely without querying YouTube for the channel page a
 ```bash
 python3 pipeline.py channel channel_lists/TheValley101_20260530_142240.json --delay 5
 ```
+
+### Reformatting Transcripts to Article/Paragraph Format
+
+By default, transcripts downloaded by `pipeline.py` or `save_transcript.py` are saved in a timestamped format (e.g., `[MM:SS.ms] text`). 
+
+If you want to read transcripts like normal articles or paragraphs, you can use the `reformat_transcripts.py` utility script.
+
+#### What Reformatting Does:
+1. **Strips Timestamps:** Removes timing tags like `[00:00.03]` from the text.
+2. **Groups Paragraphs Flowingly:** Merges lines into readable paragraphs. A new paragraph is started if:
+   - There is a pause of more than 3.0 seconds between spoken lines.
+   - There is a pause of more than 1.5 seconds combined with sentence-ending punctuation (like `.`, `?`, `!`, or Chinese equivalent punctuation).
+3. **Smart Spacing:** Properly joins English words using spaces, and Chinese characters without spaces.
+4. **Renames Video ID Titles:** If the video has a title composed of random letters/numbers (such as a YouTube video ID like `0vB4CiIiOYU`), the script extracts the first sentence/meaningful phrase from the content to generate a clean, readable title and renames the file accordingly.
+5. **Preserves Headers:** Retains the metadata headers (Video ID, URL, Language, etc.) at the top of the transcript, but removes the no-longer-relevant `Snippets` counter.
+
+#### How to Run:
+
+- **Format all subdirectories under `transcripts/`:**
+  ```bash
+  python3 reformat_transcripts.py
+  ```
+
+- **Format a specific subdirectory or file:**
+  ```bash
+  # Format a specific folder
+  python3 reformat_transcripts.py transcripts/accurate_english
+  
+  # Format a specific file
+  python3 reformat_transcripts.py transcripts/101/some_file_en.txt
+  ```
 
 ## Install
 
