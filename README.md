@@ -160,20 +160,22 @@ python3 pipeline.py channel channel_lists/TheValley101_20260530_142240.json --de
 
 By default, transcripts downloaded by `pipeline.py` or `save_transcript.py` are saved in a timestamped format (e.g., `[MM:SS.ms] text`). 
 
-If you want to read transcripts like normal articles or paragraphs, you can use the `reformat_transcripts.py` utility script.
+If you want to read transcripts like normal articles or paragraphs, you can use the `reformat_transcripts.py` utility script to convert them into highly readable Markdown (`.md`) files.
 
 #### What Reformatting Does:
 1. **Strips Timestamps:** Removes timing tags like `[00:00.03]` from the text.
 2. **Groups Paragraphs Flowingly:** Merges lines into readable paragraphs. A new paragraph is started if:
    - There is a pause of more than 3.0 seconds between spoken lines.
    - There is a pause of more than 1.5 seconds combined with sentence-ending punctuation (like `.`, `?`, `!`, or Chinese equivalent punctuation).
-3. **Smart Spacing:** Properly joins English words using spaces, and Chinese characters without spaces.
-4. **Renames Video ID Titles:** If the video has a title composed of random letters/numbers (such as a YouTube video ID like `0vB4CiIiOYU`), the script extracts the first sentence/meaningful phrase from the content to generate a clean, readable title and renames the file accordingly.
-5. **Preserves Headers:** Retains the metadata headers (Video ID, URL, Language, etc.) at the top of the transcript, but removes the no-longer-relevant `Snippets` counter.
+3. **Splits Giant Paragraphs:** Auto-generated transcripts (which lack punctuation and normal pauses) can result in massive single blocks of text. The script dynamically splits blocks of text longer than ~100 words (English) or ~200 characters (Chinese) into smaller, logical paragraphs.
+4. **Smart Spacing:** Properly joins English words using spaces, and Chinese characters without spaces.
+5. **Renames Video ID Titles:** If the video has a title composed of random letters/numbers (such as a YouTube video ID like `0vB4CiIiOYU`), the script extracts the first sentence/meaningful phrase from the content to generate a clean, readable title and renames the file accordingly.
+6. **Formats Metadata Table:** Converts metadata headers (Video ID, URL, Language, Saved At, etc.) into a clean, formatted Markdown table at the top of each file.
+7. **Converts Files & Cleans Up:** Saves the reformatted transcript as a `.md` file and automatically deletes the original `.txt` file.
 
 #### How to Run:
 
-- **Format all subdirectories under `transcripts/`:**
+- **Format/Convert all subdirectories under `transcripts/`:**
   ```bash
   python3 reformat_transcripts.py
   ```
@@ -183,7 +185,7 @@ If you want to read transcripts like normal articles or paragraphs, you can use 
   # Format a specific folder
   python3 reformat_transcripts.py transcripts/accurate_english
   
-  # Format a specific file
+  # Format a specific file (can be a .txt or already converted .md file)
   python3 reformat_transcripts.py transcripts/101/some_file_en.txt
   ```
 
