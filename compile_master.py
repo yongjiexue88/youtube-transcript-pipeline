@@ -2,11 +2,26 @@
 import os
 import json
 import re
+import sys
+import argparse
+
+# Dynamic configuration based on argument
+parser = argparse.ArgumentParser(description="Compile transcripts into a master book.")
+parser.add_argument("channel_dir", nargs="?", default="interactive_english", help="Channel directory path or name under transcripts/")
+args = parser.parse_args()
 
 TRANSCRIPTS_DIR = os.path.join(os.path.dirname(__file__), "transcripts")
-INPUT_DIR = os.path.join(TRANSCRIPTS_DIR, "interactive_english")
-MASTER_FILE = os.path.join(TRANSCRIPTS_DIR, "interactive_english_master.md")
-TRACKER_FILE = os.path.join(TRANSCRIPTS_DIR, "interactive_english_compile_tracker.json")
+
+# Determine paths
+if os.path.isabs(args.channel_dir) or args.channel_dir.startswith(".") or "/" in args.channel_dir:
+    INPUT_DIR = os.path.abspath(args.channel_dir)
+    CHANNEL_NAME = os.path.basename(INPUT_DIR)
+else:
+    CHANNEL_NAME = args.channel_dir
+    INPUT_DIR = os.path.join(TRANSCRIPTS_DIR, CHANNEL_NAME)
+
+MASTER_FILE = os.path.join(os.path.dirname(INPUT_DIR), f"{CHANNEL_NAME}_master.md")
+TRACKER_FILE = os.path.join(os.path.dirname(INPUT_DIR), f"{CHANNEL_NAME}_compile_tracker.json")
 
 BATCH_SIZE = 5
 
@@ -24,8 +39,8 @@ def get_markdown_files():
     if not os.path.exists(INPUT_DIR):
         print(f"Error: {INPUT_DIR} does not exist.")
         return []
-    # Find all .md files in the channel directory
-    files = [f for f in os.listdir(INPUT_DIR) if f.endswith('.md')]
+    # Find all .md files in the channel directory, ignoring any master or TOC files
+    files = [f for f in os.listdir(INPUT_DIR) if f.endswith('.md') and not f.endswith('_master.md')]
     # Sort them alphabetically
     return sorted(files)
 
@@ -42,8 +57,8 @@ def generate_toc():
     headings = re.findall(r'^##\s+(.*?)$', content, re.MULTILINE)
     
     toc_lines = [
-        "# Interactive English Master Transcript Book\n",
-        "This book contains the compiled study transcripts for the @InteractiveEng YouTube channel.\n",
+        f"# {CHANNEL_NAME.replace('_', ' ').title()} Master Transcript Book\n",
+        f"This book contains the compiled study transcripts for the @{CHANNEL_NAME} YouTube channel.\n",
         "## Table of Contents\n"
     ]
     
@@ -56,9 +71,7 @@ def generate_toc():
         
     toc_lines.append("\n---\n")
     
-    # Check if there is an existing title or separator and strip it
-    # We will search for the first '---' or first '## ' and keep everything from there
-    # If the file already has a TOC from a previous run, strip it.
+    # Strip existing TOC/Headers if any to avoid duplication
     idx = content.find("## ")
     if idx != -1:
         body = content[idx:]
@@ -83,59 +96,60 @@ def main():
     start_idx = tracker["last_index"]
     if start_idx >= total_files:
         print(f"All {total_files} files have already been compiled.")
-        # Make sure TOC is generated
         generate_toc()
+        if os.path.exists(TRACKER_FILE):
+            os.remove(TRACKER_FILE)
+            print("[✓] Temporary tracker file deleted.")
         return
 
-    end_idx = min(start_idx + BATCH_SIZE, total_files)
-    batch_files = files[start_idx:end_idx]
-    
-    print(f"=== Compiling Batch: {start_idx + 1} to {end_idx} of {total_files} ===")
-    
-    # Determine mode: write if first batch, append otherwise
-    mode = 'w' if start_idx == 0 else 'a'
-    
-    with open(MASTER_FILE, mode, encoding='utf-8') as master:
-        # If starting fresh, write a placeholder header (will be replaced by TOC at the end)
-        if start_idx == 0:
-            master.write("# Interactive English Master Transcript Book\n\n")
-            
-        for i, filename in enumerate(batch_files, start_idx + 1):
-            filepath = os.path.join(INPUT_DIR, filename)
-            print(f"[{i}/{total_files}] Merging: {filename}")
-            
-            with open(filepath, 'r', encoding='utf-8') as f:
-                file_content = f.read().strip()
+    # Loop over all remaining batches
+    while start_idx < total_files:
+        end_idx = min(start_idx + BATCH_SIZE, total_files)
+        batch_files = files[start_idx:end_idx]
+        
+        print(f"=== Compiling Batch: {start_idx + 1} to {end_idx} of {total_files} ===")
+        
+        # Determine mode: write if first batch, append otherwise
+        mode = 'w' if start_idx == 0 else 'a'
+        
+        with open(MASTER_FILE, mode, encoding='utf-8') as master:
+            if start_idx == 0:
+                master.write(f"# {CHANNEL_NAME.replace('_', ' ').title()} Master Transcript Book\n\n")
                 
-            # If the file content starts with `# `, convert it to `## ` to fit into the book-ish hierarchy
-            if file_content.startswith("# "):
-                # Find the title line
-                lines = file_content.split('\n')
-                title = lines[0][2:].strip()
-                # Change title header to ## [Index]. [Title]
-                lines[0] = f"## {i}. {title}"
-                file_content = '\n'.join(lines)
-            else:
-                # Fallback if title is missing/different
-                title_clean = filename.replace('.md', '').replace('_en', '').replace('_', ' ')
-                file_content = f"## {i}. {title_clean}\n\n" + file_content
+            for i, filename in enumerate(batch_files, start_idx + 1):
+                filepath = os.path.join(INPUT_DIR, filename)
+                print(f"[{i}/{total_files}] Merging: {filename}")
                 
-            master.write(file_content)
-            master.write("\n\n---\n\n")
-            
-            tracker["processed_files"].append(filename)
-            
-    tracker["last_index"] = end_idx
-    save_tracker(tracker)
-    
-    print(f"Batch completed. Progress: {end_idx}/{total_files} files compiled.")
-    
-    # If this was the last batch, generate the Table of Contents
-    if end_idx >= total_files:
-        generate_toc()
-        print("\n=== Compilation Complete! ===")
-    else:
-        print("Run the script again to process the next batch.")
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    file_content = f.read().strip()
+                    
+                # Format each transcript as a chapter starting with ## {Index}. {Title}
+                if file_content.startswith("# "):
+                    lines = file_content.split('\n')
+                    title = lines[0][2:].strip()
+                    lines[0] = f"## {i}. {title}"
+                    file_content = '\n'.join(lines)
+                else:
+                    title_clean = filename.replace('.md', '').replace('_en', '').replace('_', ' ')
+                    file_content = f"## {i}. {title_clean}\n\n" + file_content
+                    
+                master.write(file_content)
+                master.write("\n\n---\n\n")
+                
+                tracker["processed_files"].append(filename)
+                
+        tracker["last_index"] = end_idx
+        save_tracker(tracker)
+        print(f"Batch completed. Progress: {end_idx}/{total_files} files compiled.\n")
+        start_idx = end_idx
+
+    # Generate TOC and clean up
+    generate_toc()
+    if os.path.exists(TRACKER_FILE):
+        os.remove(TRACKER_FILE)
+        print("[✓] Temporary tracker file deleted.")
+    print("\n=== Compilation Complete! ===")
 
 if __name__ == '__main__':
     main()
+
