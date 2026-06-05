@@ -109,7 +109,36 @@ python3 list_channel_videos.py "https://www.youtube.com/@AccurateEnglish/videos"
 This will save a list file under `channel_lists/` (e.g., [channel_lists/AccurateEnglish_20260603_071945.tsv](file:///Users/yongjiexue/Documents/GitHub/youtube-transcript-pipeline/channel_lists/AccurateEnglish_20260603_071945.tsv)).
 
 #### Step 2: Download Transcripts Using the Saved List
-Pass the saved list file directly to `pipeline.py` to start downloading transcripts into your desired directory:
+Pass the saved list file directly to `pipeline.py` to start downloading transcripts into your desired directory.
+
+##### Option A: Using Webshare Rotating Residential Proxies (Recommended to avoid IP bans)
+YouTube actively blocks IP addresses that make too many requests. Using rotating residential proxies like [Webshare](https://www.webshare.io/?referral_code=w0xno53eb50g) is highly recommended. You can set it up in two ways:
+
+1. **Via Environment Variables (`.env` file - Recommended)**
+   Create a `.env` file in the root directory of the project and add your credentials:
+   ```env
+   WEBSHARE_USERNAME="your_webshare_username"
+   WEBSHARE_PASSWORD="your_webshare_password"
+   ```
+   When these variables are present in the `.env` file, `pipeline.py` automatically loads them. You can then run the pipeline cleanly without specifying credentials in your command:
+   ```bash
+   python3 -u pipeline.py channel channel_lists/InteractiveEng_20260605_072449.tsv \
+     --delay 8 \
+     --output-dir transcripts/interactive_english
+   ```
+
+2. **Via Command-Line Arguments**
+   Alternatively, you can pass the credentials directly into the CLI wrapper commands:
+   ```bash
+   python3 -u pipeline.py channel channel_lists/InteractiveEng_20260605_072449.tsv \
+     --delay 8 \
+     --output-dir transcripts/interactive_english \
+     --webshare-username "YOUR_USERNAME" \
+     --webshare-password "YOUR_PASSWORD"
+   ```
+
+##### Option B: Run Without Proxies (Local / Low Volume)
+If you are running locally for a small channel/volume and do not require a proxy, you can run the pipeline directly:
 ```bash
 python3 pipeline.py channel channel_lists/AccurateEnglish_20260603_071945.tsv \
   --output-dir transcripts/accurate_english \
@@ -191,11 +220,13 @@ If you want to read transcripts like normal articles or paragraphs, you can use 
 
 ## Install
 
-It is recommended to [install this module by using pip](https://pypi.org/project/youtube-transcript-api/):
+Since this repository contains custom pipeline wrappers and local residential proxy enhancements, you should clone this repository and install its dependencies locally using [Poetry](https://python-poetry.org/):
 
+```bash
+poetry install
 ```
-pip install youtube-transcript-api
-```
+
+To run commands inside the virtual environment created by Poetry, you can prepend them with `poetry run` (for example, `poetry run python3 pipeline.py ...` or `poetry run youtube_transcript_api ...`).
 
 You can either integrate this module [into an existing application](#api) or just use it via a [CLI](#cli).
 
@@ -529,9 +560,9 @@ ytt_api_2.fetch(video_id)
 
 ## Cookie Authentication
 
-Some videos are age restricted, so this module won't be able to access those videos without some sort of
-authentication. Unfortunately, some recent changes to the YouTube API have broken the current implementation of cookie 
-based authentication, so this feature is currently not available.
+> [!WARNING]
+> **Cookie Authentication is temporarily disabled and unsupported.**
+> Some videos are age restricted, which historically required cookie authentication to access. However, recent changes to the YouTube API broke the implementation of cookie-based auth. As a result, this feature is currently disabled in the codebase (both in the API and CLI wrappers) and passing a cookies file will not work.
 
 ## Using Formatters
 Formatters are meant to be an additional layer of processing of the transcript you pass it. The goal is to convert a
@@ -612,79 +643,67 @@ class MyCustomFormatter(Formatter):
 
 ## CLI
 
-Execute the CLI script using the video ids as parameters and the results will be printed out to the command line:  
+To execute the CLI script (registered via Poetry), prefix the commands with `poetry run`:
 
-```  
-youtube_transcript_api <first_video_id> <second_video_id> ...  
+```bash  
+poetry run youtube_transcript_api <first_video_id> <second_video_id> ...  
 ```  
 
 The CLI also gives you the option to provide a list of preferred languages:  
 
-```  
-youtube_transcript_api <first_video_id> <second_video_id> ... --languages de en  
+```bash  
+poetry run youtube_transcript_api <first_video_id> <second_video_id> ... --languages de en  
 ```
 
 You can also specify if you want to exclude automatically generated or manually created subtitles:
 
-```  
-youtube_transcript_api <first_video_id> <second_video_id> ... --languages de en --exclude-generated
-youtube_transcript_api <first_video_id> <second_video_id> ... --languages de en --exclude-manually-created
+```bash  
+poetry run youtube_transcript_api <first_video_id> <second_video_id> ... --languages de en --exclude-generated
+poetry run youtube_transcript_api <first_video_id> <second_video_id> ... --languages de en --exclude-manually-created
 ```
 
-If you would prefer to write it into a file or pipe it into another application, you can also output the results as 
-json using the following line:  
+If you would prefer to write it into a file or pipe it into another application, you can also output the results as json:  
 
-```  
-youtube_transcript_api <first_video_id> <second_video_id> ... --languages de en --format json > transcripts.json
-```  
-
-Translating transcripts using the CLI is also possible:
-
-```  
-youtube_transcript_api <first_video_id> <second_video_id> ... --languages en --translate de
+```bash  
+poetry run youtube_transcript_api <first_video_id> <second_video_id> ... --languages de en --format json > transcripts.json
 ```  
 
-If you are not sure which languages are available for a given video you can call, to list all available transcripts:
+Translating transcripts using the CLI:
 
+```bash  
+poetry run youtube_transcript_api <first_video_id> <second_video_id> ... --languages en --translate de
 ```  
-youtube_transcript_api --list-transcripts <first_video_id>
+
+To list all available transcripts:
+
+```bash  
+poetry run youtube_transcript_api --list-transcripts <first_video_id>
 ```
 
-If a video's ID starts with a hyphen you'll have to mask the hyphen using `\` to prevent the CLI from mistaking it for 
-a argument name. For example to get the transcript for the video with the ID `-abc123` run:
+If a video's ID starts with a hyphen you'll have to mask the hyphen using `\` to prevent the CLI from mistaking it for an argument name. For example:
 
-```
-youtube_transcript_api "\-abc123"
+```bash
+poetry run youtube_transcript_api "\-abc123"
 ```
 
 ### Working around IP bans using the CLI
 
-If you are running into `RequestBlocked` or `IpBlocked` errors, because YouTube blocks your IP, you can work around this 
-using residential proxies as explained in 
-[Working around IP bans](#working-around-ip-bans-requestblocked-or-ipblocked-exception). To use
-[Webshare "Residential" proxies](https://www.webshare.io/?referral_code=w0xno53eb50g) through the CLI, you will have to 
-create a [Webshare account](https://www.webshare.io/?referral_code=w0xno53eb50g) and purchase a "Residential" proxy 
-package that suits your workload (make sure NOT to purchase "Proxy Server" or "Static Residential"!). Then you can use 
-the "Proxy Username" and "Proxy Password" which you can find in your 
-[Webshare Proxy Settings](https://dashboard.webshare.io/proxy/settings?referral_code=w0xno53eb50g), to run the following command:
+If you are running into `RequestBlocked` or `IpBlocked` errors, you can use rotating residential proxies like [Webshare](https://www.webshare.io/?referral_code=w0xno53eb50g). Run the following command with your credentials:
 
-```
-youtube_transcript_api <first_video_id> <second_video_id> --webshare-proxy-username "username" --webshare-proxy-password "password"
+```bash
+poetry run youtube_transcript_api <first_video_id> <second_video_id> --webshare-proxy-username "username" --webshare-proxy-password "password"
 ```
 
-If you prefer to use another proxy solution, you can set up a generic HTTP/HTTPS proxy using the following command:
+If you prefer to use another proxy solution, you can set up a generic HTTP/HTTPS proxy:
 
-```
-youtube_transcript_api <first_video_id> <second_video_id> --http-proxy http://user:pass@domain:port --https-proxy https://user:pass@domain:port
+```bash
+poetry run youtube_transcript_api <first_video_id> <second_video_id> --http-proxy http://user:pass@domain:port --https-proxy https://user:pass@domain:port
 ```
 
 ### Cookie Authentication using the CLI
 
-To authenticate using cookies through the CLI as explained in [Cookie Authentication](#cookie-authentication) run:
-
-```
-youtube_transcript_api <first_video_id> <second_video_id> --cookies /path/to/your/cookies.txt
-```
+> [!WARNING]
+> **Cookie authentication is currently disabled/unsupported.** The `--cookies` option is non-functional because cookie authentication has been commented out in the library code due to YouTube API changes breaking it.
 
 ## Warning  
 
