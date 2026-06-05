@@ -218,6 +218,34 @@ If you want to read transcripts like normal articles or paragraphs, you can use 
   python3 reformat_transcripts.py transcripts/101/some_file_en.txt
   ```
 
+## Standard Transcript Processing Formality (User Quality Standards)
+
+When downloading, cleaning, and compiling transcripts, follow this standard processing workflow:
+
+### Phase 1: Safe & Robust Crawling
+1. **Cache Video Lists:** Run `list_channel_videos.py` first to fetch and save the channel's upload video IDs into `channel_lists/` in TSV format. This prevents querying the YouTube channel page repeatedly.
+2. **Polite delays:** When downloading transcripts using `pipeline.py`, use a base delay of **8 to 10 seconds** and ensure `--random-delay true` is active. This randomizes requests between `0.8 * delay` and `1.6 * delay` to simulate natural browsing.
+3. **Resume capability:** Always run with `--resume true` to scan the output folder and skip already downloaded files, allowing safe restarts.
+4. **Proxy Fallback:** Try running directly on a clean residential IP first. If YouTube rate-limits or blocks requests, fall back to rotating residential proxies (e.g. Webshare) configured in `.env`.
+
+### Phase 2: Transcript Reformatting & Cleaning
+1. **Remove Timestamps:** Strip all timestamp formats (`[MM:SS.ms]`) from the downloaded transcript file content.
+2. **Readability Formatting:** Merge lines into natural paragraphs based on pause durations (> 3.0s, or > 1.5s with punctuation).
+3. **Split Walls of Text:** Prevent huge auto-generated single paragraphs by dynamically splitting paragraphs longer than ~100 English words or ~200 Chinese characters.
+4. **Resolve Titles:** If the video title is a random ID (e.g. `0vB4CiIiOYU`), extract the first sentence/phrase from the content to create a readable title.
+5. **Metadata & Clean Up:** Render a formatted Markdown table with metadata at the top of the file. Save the reformatted file as `.md` and **delete** the original `.txt` file.
+   - Run the script on a folder: `python3 reformat_transcripts.py <directory_path>`
+
+### Phase 3: Master Book Compilation
+To compile all individual `.md` transcript files into a single master document:
+1. **Memory-Safe Batching:** Merge transcripts in batches of **5 files** at a time to avoid running out of memory.
+2. **Process Tracking:** Use a temporary index tracker file (e.g., a JSON progress tracker) to log which files have been processed and resume compilation safely if interrupted.
+3. **Book-ish Structure:**
+   - Format each transcript as a chapter starting with a `## {Index}. {Title}` header.
+   - Prepend a clickable **Table of Contents** linking to each numbered chapter anchor at the top of the file.
+4. **Clean Up:** Once compilation is 100% complete, verify the master file formatting and **delete the temporary index tracker file**.
+   - Run the compilation script: `python3 compile_master.py`
+
 ## Install
 
 Since this repository contains custom pipeline wrappers and local residential proxy enhancements, you should clone this repository and install its dependencies locally using [Poetry](https://python-poetry.org/):
