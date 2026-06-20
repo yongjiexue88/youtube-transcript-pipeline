@@ -19,7 +19,7 @@ at. So, I'm talking about verbs, nouns,
 
 and adjectives that you would follow with one of these prepositions. And the goal of this lesson is really to help you improve your speaking accuracy.
 
-Because this is when I notice when in speaking and writing people make small mistakes and they use the wrong preposition. And since these are very common prepositions, I want to look at some verbs, nouns, and adjectives and the preposition that follows. So, for the most part, I think you should do very well and you pro you probably know many of these already, which is what I hope. It's all about reinforcing it, reviewing it, because the more you see these phrases, you listen to these phrases, when you're having a conversation and you use this verb or adjective, you're just going to follow it with the correct preposition and without even thinking about it.
+Because this is when I notice when in speaking and writing people make small mistakes and they use the wrong preposition. And since these are very common prepositions, I want to look at some verbs, nouns, and adjectives and the preposition that follows. So, for the most part, I think you should do very well and you pro you probably know many of these already, which is what I hope.
 
 So, let's look at this first one. And in the chat, in the comments, I would love it if you participate and write your answer. Again, you only have three choices, in, on, or at.
 
@@ -145,7 +145,7 @@ And finally, I'm looking for someone with experience in data analysis to join
 
 our team. You have experience in something. Just to keep this a little uh, you know, casual, here's a funny little meme joke that I I found. So, I thought I would share it with you. But again, still using experience in. So,
 
-it's like this woman interviewer is asking, "You're asking for a pretty high salary for someone who has no experience in this field." And the person who's applying for the job, this guy says, "Well, this job is going to be super hard since I have no idea what the I'm doing." All right? So, it's it's kind of humorous in that he has, look, you have no idea. That means you're going to have to work very hard to learn what you should do. So yeah, I'm gonna ask for a lot of money even though I have no experience in this field.
+it's like this woman interviewer is asking, "You're asking for a pretty high salary for someone who has no experience in this field." And the person who's applying for the job, this guy says, "Well, this job is going to be super hard since I have no idea what the I'm doing." All right? So, it's it's kind of humorous in that he has, look, you have no idea. That means you're going to have to work very hard to learn what you should do.
 
 keep it light from from time to time.
 

@@ -15,7 +15,7 @@ Today I want you guys to listen to a natural English conversation.
 
 What's up everyone? My name is Wes. This is Interactive English which is all about helping you practice and improve your English skills. And the way we're going to do that today is by listening to a natural English conversation.
 
-We are going to have a discussion about a topic that that many learners ask us about and it's just a common question which is how long does it take to learn English. So we are going to discuss this question a and give our thoughts and opinions about how long it takes to learn English. And before you listen to the conversation, I'm going to go over some vocabulary words with you that you will hear when you are listening to this conversation so that you can identify these words. A and hopefully this will give you another example about how they're used in context.
+We are going to have a discussion about a topic that that many learners ask us about and it's just a common question which is how long does it take to learn English. So we are going to discuss this question a and give our thoughts and opinions about how long it takes to learn English. And before you listen to the conversation, I'm going to go over some vocabulary words with you that you will hear when you are listening to this conversation so that you can identify these words.
 
 So, it's also a great way to build your vocabulary. So, now let's go over some of the vocabulary that you are going to listen to in this conversation. And this is a great way to learn some new words as well as hear these words being used in context. So the first word that I have for you is an adjective modest.
 
@@ -81,7 +81,7 @@ What what what is your response?
 
 to me the answer is like it just takes a lifetime forever [laughter] if you are talking about becoming proficient in a language but but to me that's not a problem but most people are just like they want to achieve a certain level of fluency I mean I think when people say that you know what they mean like what what would you tell them as a Obviously,
 
-even for native speakers, you can always learn new things. But, but the reason I was saying that and why that it doesn't bother me that it takes a long time to learn a language is because once you realize that it can take a really long time and then you the pressure is kind of off. You stop worrying about it cuz you're like, okay, I'm always going to keep learning. So then I'm not going to worry like I'm not going to worry about it and I'm just going to learn and just get better instead of focusing like I want to have proficiency in this language.
+even for native speakers, you can always learn new things. But, but the reason I was saying that and why that it doesn't bother me that it takes a long time to learn a language is because once you realize that it can take a really long time and then you the pressure is kind of off. You stop worrying about it cuz you're like, okay, I'm always going to keep learning.
 
 It's just I want to improve in this language. Takes the edge off.
 
@@ -105,7 +105,7 @@ B1 C1 those kinds of levels like just
 
 just look at just because so much of of knowledge of language knowledge cannot be measured by these these things. It can just I I don't know. I think it's but I think that's where it comes into it. So many people are learning English or any other language for school or maybe they're learning it for work and they're asking for those types of credentials like oh you need this level and that's why you need for work then it's a little different cuz cuz that's you you have to measure yourself against that.
 
-But to be honest if you just needed to speak to communicate uh language is so much more than that. If you're doing it just for your own personal enrichment, then again, there's a lot that you can do without having to worry about like, okay, I I only have this amount of time, some progress. Yeah, I would say the the the the best answer would be like, yeah, don't. And even though it's not the one you might want to hear is don't worry so much about the time, just realize, yeah, it's it's going to take time and it's going to take people a different amount of time.
+But to be honest if you just needed to speak to communicate uh language is so much more than that. If you're doing it just for your own personal enrichment, then again, there's a lot that you can do without having to worry about like, okay, I I only have this amount of time, some progress. Yeah, I would say the the the the best answer would be like, yeah, don't.
 
 I think there are some people that can achieve fluency in languages in a very short period of time because they're naturally gifted or talented like the same way somebody would be very talented at a musical instrument and it it's going to be different for each person. I know for me it takes takes a long time. It's not about destination, it's about the journey. That's true.
 

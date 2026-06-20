@@ -209,7 +209,7 @@ well, you know, you're you're dragging your feet. So, for example, let's say tha
 
 Maybe I'll say, "Hey, you know, stop dragging your feet. We need to go. We need to bolt." Now, this idiom can also be used in other situations as well. It doesn't always have to be talking about movement. It could be referring to progress as well. So if you have some
 
-work that you need to do, but you're trying to avoid doing it, you are procrastinating, you could also say then that you're you're dragging your feet, that you're trying to avoid working on some project, you don't want to do it. I think we've all been there before, but maybe your your colleague, your co-orker, or even your boss might come over and tell you, "Look, you need to finish this project. Stop dragging your feet." Now, let's talk about some verbs that you can use if you're driving or flying. You're in the car, you're in the plane, and well, one thing we could say is hitchhike, to hitchhike.
+work that you need to do, but you're trying to avoid doing it, you are procrastinating, you could also say then that you're you're dragging your feet, that you're trying to avoid working on some project, you don't want to do it. I think we've all been there before, but maybe your your colleague, your co-orker, or even your boss might come over and tell you, "Look, you need to finish this project. Stop dragging your feet." Now, let's talk about some verbs that you can use if you're driving or flying.
 
 And this means that you get a free ride with someone in in a vehicle.
 
@@ -693,7 +693,7 @@ somebody is chatty, it just means that well, they like to talk a lot, usually in
 
 You could say he or she is chatty. Now, the one thing I would say about this word is that it's often used to make an
 
-observation about someone else. You you wouldn't often hear people say that, "Oh, I'm so chatty." It's not really It's not necessarily a good or a bad thing, but you would use it more to make an observation and talk about the way somebody else is acting that they are talking a lot. And you could use it to describe a person's uh somebody's personality. You could say that he or she is a chatty person, but you could also use it to describe maybe somebody's temporary behavior because if a person just doesn't usually talk a lot and then suddenly one day they're very talkative, you could tell them, "Wow, you're you're a bit chatty today." >> What was I saying?
+observation about someone else. You you wouldn't often hear people say that, "Oh, I'm so chatty." It's not really It's not necessarily a good or a bad thing, but you would use it more to make an observation and talk about the way somebody else is acting that they are talking a lot. And you could use it to describe a person's uh somebody's personality.
 
 >> She's so chatty. Maybe my parents are right. Maybe I'd be better off with an Indian girl. >> Something wrong, >> boy.
 
@@ -2589,7 +2589,7 @@ been feeling a little under the weather, but I'm feeling much better now.
 
 >> Next is neck of the woods. And if you
 
-hear somebody talking about like, oh, for example, what are you doing in my neck of the woods? They're talking about a particular area or maybe even a particular neighborhood. So, that's what it means, neck of the woods. And often times, yeah, people might ask a question like I just did, and they say, "Hey, you know, you see somebody in your neighborhood and you say, "Hey, what what are you doing in my neck of the woods?" Or perhaps in the office that you work at, somebody in another department comes and visits you in your department and you'd say, "Hey, what are you doing in my neck of the woods?
+hear somebody talking about like, oh, for example, what are you doing in my neck of the woods? They're talking about a particular area or maybe even a particular neighborhood. So, that's what it means, neck of the woods.
 
 >> A few errands. >> I'm going to be in your neck of the woods soon. And um it would be very nice
 
@@ -2943,7 +2943,7 @@ also means to get married. [music] To tie the knot. My parents tied the
 
 knot in a beautiful church.
 
-Number [music] eight, to go through a bit of a rough patch. Now, this can be used as to go through a bit of a rough patch or to just go through a rough [music] patch. What it means is when a couple is having trouble, a period of of problems in their lives, you know, something goes bad and then they're constantly fighting or arguing or they just have some issues, we're saying that they're going through a rough patch or a bit of a rough patch. This usually means when you say that that the period is finite and that [music] things are going to get better.
+Number [music] eight, to go through a bit of a rough patch. Now, this can be used as to go through a bit of a rough patch or to just go through a rough [music] patch. What it means is when a couple is having trouble, a period of of problems in their lives, you know, something goes bad and then they're constantly fighting or arguing or they just have some issues, we're saying that they're going through a rough patch or a bit of a rough patch.
 
 Number nine, double date. [music] Double date means an activity that two couples do together. So, it can really mean any kind of activity, but many times it just means like a date, like going some somewhere to a picnic or to the movies
 
@@ -3259,7 +3259,7 @@ means well kind of exactly what it says
 
 and that is that somebody is just repeating something again and again.
 
-Especially when it's not really necessary and you would say to another person like, "Oh, you know, you sound like a broken record. You just keep repeating the same thing again and again and again." Especially when you don't want to hear it, then you could use this expression and say that someone sounds like a broken record. I hope that I don't sound like a broken record because I do. I tend to repeat things again and again so so that you have a better understanding of all of these idioms and expressions because I just I just want you to get the hang of it.
+Especially when it's not really necessary and you would say to another person like, "Oh, you know, you sound like a broken record. You just keep repeating the same thing again and again and again." Especially when you don't want to hear it, then you could use this expression and say that someone sounds like a broken record. I hope that I don't sound like a broken record because I do.
 
 >> You know, I know I sound like a broken record.
 
@@ -3367,7 +3367,7 @@ people use amongst instead of among. And
 
 they they mean the same thing. I think it's more common to use among, especially in the United States. Amongst
 
-it's a little bit of an older word, but there are still some phrases, statements in which people are likely to use amongst. If you're in front of a group of people and maybe you're talking to them and you have to leave the room, you could say talk amongst yourselves. That is that is a statement that you may hear in which people may use amongst. Now, between you and me, if you truly want to build your vocabulary, learn the difference between these confusing words, I suggest you subscribe, turn on notifications so that you learn about future lessons, and I can become your English teacher.
+it's a little bit of an older word, but there are still some phrases, statements in which people are likely to use amongst. If you're in front of a group of people and maybe you're talking to them and you have to leave the room, you could say talk amongst yourselves. That is that is a statement that you may hear in which people may use amongst.
 
 My name is Wes.
 

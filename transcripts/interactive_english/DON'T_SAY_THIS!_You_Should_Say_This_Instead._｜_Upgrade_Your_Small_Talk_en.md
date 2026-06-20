@@ -245,7 +245,7 @@ not lend itself to having a productive
 
 conversation if you're just trying to engage with someone casually. Why are you still single? When are you getting married? Why don't you have kids? These are questions that I would definitely say, yeah, you you don't need to ask these things, especially when it comes to small talk and you're you just met this person or you don't know them very well.
 
-I think you might be surprised how often it does happen because, you know, different countries, different cultures, some things are accepted, others are not. For example, I feel like in the US people you you know, you're not going to readily talk about money like, "Oh, how much money do you make?" You know, if you're like, "What do you do for a living?" Oh, you know, "How much money do you make each year?" I I feel like in other countries and cultures, it is, you know, maybe a little more acceptable to discuss money and somebody's personal finances.
+I think you might be surprised how often it does happen because, you know, different countries, different cultures, some things are accepted, others are not.
 
 Here is what I would say instead, "What's something you're really looking forward to next month?" Uh or how do you usually like to decompress after a a particularly long and busy weekend?
 

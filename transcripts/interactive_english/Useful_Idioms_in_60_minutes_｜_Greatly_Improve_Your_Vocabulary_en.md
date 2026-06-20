@@ -245,7 +245,7 @@ Something's wrong with this picture.
 
 Can't be simple as it seems. Look at this sorry, miserable squashed thing.
 
-Can anybody tell me what's wrong with this picture? So, this is an expression that's also a question and it goes, "Do I have to paint you a picture?" And it's it's not it's kind of like when you're trying to explain some something to somebody and they just don't don't get it at all. It This is kind of asking like, "What else can I do to make you understand this?" You you're trying to make it more clear for them. You're a little bit frustrated that they don't get it and you're just asking them, "Do I have to paint you a picture?" So, you're just kind of trying to see like, "I've tried all these ways to explain it.
+Can anybody tell me what's wrong with this picture? So, this is an expression that's also a question and it goes, "Do I have to paint you a picture?" And it's it's not it's kind of like when you're trying to explain some something to somebody and they just don't don't get it at all. It This is kind of asking like, "What else can I do to make you understand this?" You you're trying to make it more clear for them.
 
 What else can I do to make you understand this?" Another idiom is saying that something is like watching the paint dry. This is a simile because we're comparing two things and you're saying that something is like watching paint dry. So, you're talking about something that is very boring, it's dull, it's tedious and it takes a long time.
 
@@ -453,7 +453,7 @@ I'm going to keep working on that for you. Just keep your chin up. The next idio
 
 it's to encourage someone to keep trying, especially when they are going through some difficult situation. To to keep trying, don't give up. Just just hang in there. You can do it. When I think of somebody using like hang in there, I think that that person is doing
 
-something that they're actually doing some kind of work or activity and they're actually they're doing something that they don't want to do and they are having to endure this thing. So you may hear this used again as just a standalone statement. Somebody saying, you know, "Just just hang in there. You can do it." Or they might say, you know, "I I need you to hang in there." Especially if they are encouraging you to finish because maybe you're working together and you're like, you know, "I need you to hang in there." Or maybe you're talking about yourself and you're telling somebody and they're listening to your problems and you say, "You know, I'm just having a tough time hanging in there." And then the other person might tell you, you know, "Stay positive.
+something that they're actually doing some kind of work or activity and they're actually they're doing something that they don't want to do and they are having to endure this thing. So you may hear this used again as just a standalone statement. Somebody saying, you know, "Just just hang in there.
 
 Keep your chin up." So again, these are are very useful idioms to offer that hope and inspiration. have a plan and I am going to save our jobs. Just hang in there. Please just hang in there a little longer.
 
@@ -603,7 +603,7 @@ because something was bad and then since
 
 then, you know, some good things happened. So when you think back about that first bad situation, you could refer to it and say, you know, it was a blessing in disguise. Let me give you an example and we'll stick with that same story, all right? Somebody loses their job and they try to look on the bright side and they move to a place that they've always wanted to live.
 
-They they applied for a new job, kept their fingers crossed and and got that new job. And then let, you know, maybe they met the love of their life and they got married and they had a family. And then when they think back about that initial situation, all right, they lost their job and you know, they could say, "Hey, it was a blessing in disguise." So I quite often you may use it to reflect back on a past situation or you could also use it if you're, you know, you're trying to give somebody hope and inspiration who is actually in a bad situation now and you try to reassure them and say, "Hey, you know, hey, maybe it's a blessing in disguise that even though there there's this this terrible situation now, in the future there will be some good that may come out of it.
+They they applied for a new job, kept their fingers crossed and and got that new job. And then let, you know, maybe they met the love of their life and they got married and they had a family.
 
 It's a blessing in disguise." I got fired from running the Sweet'ems Foundation. Thanks to me.
 

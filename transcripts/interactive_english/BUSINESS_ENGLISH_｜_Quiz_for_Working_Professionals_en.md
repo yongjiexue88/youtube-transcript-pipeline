@@ -229,7 +229,7 @@ again this is not this is not from me.
 
 So you can see that again other people are giving similar information the and I
 
-highlight it like put your weakness in a positive light and they say things like you know emphasize the positive avoiding negative words failure inept that's not something like again I've never really gone into that part um again this is from Robert half talent group talk about how you've transformed your weakness into a strength you could do that but again then that's not to me that's not possibly answering the the actual question. But the last one down there is more like what I was trying to say, like show how you recognize where you need to improve and then talk about how you're taking steps to get better and and how to do better.
+highlight it like put your weakness in a positive light and they say things like you know emphasize the positive avoiding negative words failure inept that's not something like again I've never really gone into that part um again this is from Robert half talent group talk about how you've transformed your weakness into a strength you could do that but again then that's not to me that's not possibly answering the the actual question.
 
 Give an honest answer, but then again, I would recommend then talk about, well, what are you doing to improve? How are you trying to make it so that this is no
 

@@ -153,7 +153,7 @@ have to write to me in the comments.
 
 It's like I'm I'm making you do something and you are trying to talk
 
-your way out of it and persuade me not to make you do this and I'm I'm not buying it. And I say, "Look, you're not going to talk your way out of this." All right, that that is a statement that you may often hear if somebody's trying to persuade the other person and they're they just don't believe it and they're not going to fall for it. They may say, "You're not going to talk your way out of this, okay? I I'm still going to make you do this thing." The other thing that I wanted to point out with this idiom is that it is more common to hear people say they're going to talk their way out of something than talk their way into something.
+your way out of it and persuade me not to make you do this and I'm I'm not buying it. And I say, "Look, you're not going to talk your way out of this." All right, that that is a statement that you may often hear if somebody's trying to persuade the other person and they're they just don't believe it and they're not going to fall for it. They may say, "You're not going to talk your way out of this, okay?
 
 So, comparing these two phrases, you can see that it's more common to talk your way out of something. I'm not letting you just throw your life away. I'm going to talk our way out of this. Start a new life there.
 
@@ -193,7 +193,7 @@ a C1 idiom and it means to be quick to
 
 understand and react to things. So it's like you're you're just really ready and alert. And often this idiom is going to follow the verb to be. And you could use it in the affirmative and say, "Look,
 
-you really need to be on the ball for the important meeting tomorrow." Or you may hear people use it in the negative and say something like, "Well, he didn't sleep much last night, so today he's just not on the ball." I always try to be on the ball when I come up with these lessons. I try to react and always give you the best information, provide some nuance. So throughout the lesson, I'm going to tell you the meaning of each idiom. I'll talk a little bit about how it's used, and we'll go over the pronunciation so that you can say them easily and naturally.
+you really need to be on the ball for the important meeting tomorrow." Or you may hear people use it in the negative and say something like, "Well, he didn't sleep much last night, so today he's just not on the ball." I always try to be on the ball when I come up with these lessons. I try to react and always give you the best information, provide some nuance. So throughout the lesson, I'm going to tell you the meaning of each idiom.
 
 And with that in mind, let's talk about the pronunciation right now. When pronouncing this idiom, linking may occur. And this is when you link the final consonant sound of one word with the beginning vowel sound of the next word. And really, we're talking about linking that consonant sound of the verb to be with the vowel sound in on.
 
@@ -449,7 +449,7 @@ Okay, showtime. Mac, I got your six.
 
 I got your six. This is an expression that you're not going to go out and use unless you are in the military or law enforcement, but it is an expression that you may hear if you're watching a TV show or movie that has to do with the
 
-military. And people will refer to the position and say, "Hey, something's at 12:00, something's at 3:00." Or if you're talking about protecting somebody and watching their back, they might say, "Got your six." You may also hear somebody say, "Watch your six," which is similar to saying, "Watch your back." Especially if the enem is behind you, they could say, "Watch your six." The next expression is bought the farm. And this is an expression where bought would would be used in the past tense. And the reason it' be used in the past tense is because it's talking about a person who has died.
+military. And people will refer to the position and say, "Hey, something's at 12:00, something's at 3:00." Or if you're talking about protecting somebody and watching their back, they might say, "Got your six." You may also hear somebody say, "Watch your six," which is similar to saying, "Watch your back." Especially if the enem is behind you, they could say, "Watch your six." The next expression is bought the farm. And this is an expression where bought would would be used in the past tense.
 
 It's an informal way and saying, you know, somebody somebody bought the farm, somebody died, somebody passed away. Now, we don't know exactly how this expression came about. Some people think it has to do with with jet pilots during the 50s that when they died, the family would receive some money, some compensation, and then they could buy the land, they would buy the farm. Then we have an expression to catch flak.
 
@@ -479,7 +479,7 @@ Fubar, snafu, tarfu. The next phrase is
 
 in the trenches. And this just means that you are you you're in a tough fight. You are in the midst of things.
 
-You you are in the trenches. And this expression, of course, it applies to war, but but people may also use it in other context as well, that that they're in a fight, they're down in the trenches, perhaps maybe in in a sports competition, that you're you're in the middle of this fight, you're down in the trenches. Or maybe in business, if you feel like you're in the middle of this fight, you're stuck, you got to keep fighting through, you could say that, you know, you're in the trenches. This expression comes from soldiers trying to protect themselves when they were taking fire from the enemy.
+You you are in the trenches. And this expression, of course, it applies to war, but but people may also use it in other context as well, that that they're in a fight, they're down in the trenches, perhaps maybe in in a sports competition, that you're you're in the middle of this fight, you're down in the trenches. Or maybe in business, if you feel like you're in the middle of this fight, you're stuck, you got to keep fighting through, you could say that, you know, you're in the trenches.
 
 So during a war like World War I, they would dig trenches. They would dig these trenches in the ground. And when the enemy would fire, they'd get in the trenches, try to protect themselves. It was a tough situation, but it was a way for them to survive, to keep fighting.
 
@@ -505,7 +505,7 @@ Right, sir. Right away, sir. Now, suit up and get out there on the double. So, i
 
 And if you're talking about a task and and you want them to get this task done, that's when they would say on the double. When I think of this expression, I I think of people that that used to be in the military and they take some of these terms and phrases with them. For example, my grandfather who was in the military, I would hear him use this from time to time and he'd say that that something needs to be done on the double. Then we have the expression on the front lines.
 
-forefront of a battle, an argument, or maybe even some movement that they are out there, they are leading the charge, and you could say that they are on the front lines. If talking about the military, then I I think it's self-explanatory that if if there's a battle, if there is a fight, and you are right in the middle of it, if you are out front, then you'd say you are on the front lines. So, this is an expression that that may be used outside of discussing the military. For example, maybe there there's a movement, there's a cause, you really believe in it, and and you're out there trying to lead the way, trying to create change.
+forefront of a battle, an argument, or maybe even some movement that they are out there, they are leading the charge, and you could say that they are on the front lines. If talking about the military, then I I think it's self-explanatory that if if there's a battle, if there is a fight, and you are right in the middle of it, if you are out front, then you'd say you are on the front lines. So, this is an expression that that may be used outside of discussing the military.
 
 You could say that that you are on the front lines of this issue. The next expression, and I think this is a very well-known one, and that is just roger that. And if somebody says roger that, it just means yes. And when I think of this expression, I I think about two people communicating over the radio or maybe they're using walkie-talkies and that somebody's telling somebody to do something and instead of saying yes, you just say roger that.
 

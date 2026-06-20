@@ -77,7 +77,7 @@ people may speak faster than they normally do in real life. I think this is espe
 
 articulate each and every word. And this can also be true for video as well.
 
-Naturally, people end up speaking a little quicker if they might feel nervous or or a little anxious. And that tends to happen when you're in front of a video camera. So, if you're just randomly watching people on YouTube and trying to follow along with their vlog or or a story that they're trying to tell, they may end up speaking a little faster than they normally do if if they're just speaking with a friend in real life. And for those reasons that that I just told you about using slang, idioms, expressions, linking words, speaking fast, that makes it the most advanced form of listening.
+Naturally, people end up speaking a little quicker if they might feel nervous or or a little anxious. And that tends to happen when you're in front of a video camera. So, if you're just randomly watching people on YouTube and trying to follow along with their vlog or or a story that they're trying to tell, they may end up speaking a little faster than they normally do if if they're just speaking with a friend in real life.
 
 And I I think that's something that people tend to forget about because when you talk about practicing your listening skills, people practice listening to to TV, movies, or music all the time. And therefore, I think it's important to understand, well, okay, this is a very advanced form of listening.
 

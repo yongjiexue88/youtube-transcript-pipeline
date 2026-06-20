@@ -155,7 +155,7 @@ says, "Rope memory is really important." Uhhuh. Absolutely. I think uh yeah I I
 
 think again I think a different a learning approach in which you're like they they talk a lot about an eclectic approach where you're trying to teach um
 
-learners using a variety of styles because I think wrote learning can be very effective for some and others they may need more than that um that memorization maybe they need to be like more kinesthetic learning get out of the chair and stuff like that but I think this is a good one um for like memorizing and just learning a bunch of different ones because there's so many different verbs out there. Also, it's just a great way to build your vocabulary. Let let me move on. I feel like I'm kind of spending too much time on each book right now.
+learners using a variety of styles because I think wrote learning can be very effective for some and others they may need more than that um that memorization maybe they need to be like more kinesthetic learning get out of the chair and stuff like that but I think this is a good one um for like memorizing and just learning a bunch of different ones because there's so many different verbs out there. Also, it's just a great way to build your vocabulary. Let let me move on.
 
 So, let's get into some grammar.
 

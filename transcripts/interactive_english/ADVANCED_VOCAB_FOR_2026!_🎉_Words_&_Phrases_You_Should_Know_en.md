@@ -59,7 +59,7 @@ that is available to move or act. And you might give someone some leeway. Or
 
 somebody might say, I I don't have much leeway. Now, I see somebody wrote wiggle room. They mean the same thing. So, in this case, you could also use wiggle room. In this context, they are synonyms. So that's actually also another great phrase. The manager gave the team some leeway, some amount of freedom to adjust the timeline as long as the final deadline uh was met. Just
 
-to give you a little more context because I think this also helps you build your vocabulary, I want to share with you some collocations with this word. And often you might use it with a quantifier and talk about, you know, somebody has a little leeway or they have some leeway or maybe you you're asking for more leeway in order to do something or maybe say, look, I don't have much leeway. I don't have much freedom. Or the the other end would be to say that you have a great deal of leeway and you have a great deal of freedom to do something, to act, to make your own decision.
+to give you a little more context because I think this also helps you build your vocabulary, I want to share with you some collocations with this word. And often you might use it with a quantifier and talk about, you know, somebody has a little leeway or they have some leeway or maybe you you're asking for more leeway in order to do something or maybe say, look, I don't have much leeway. I don't have much freedom.
 
 and and you have a lot of leeway. So there are many quantifiers that you can use with this noun and I wanted to share some of them with you.
 
@@ -375,7 +375,7 @@ to play devil's advocate. I think we can
 
 all I don't want to say relate to this, but I'm sure you can think of someone in your life who likes to play devil's advocate. They like to debate, challenge others, and it may not be their real opinion. They just Sometimes people just like to argue and debate and they like to play devil's advocate. Let's play devil's advocate for a moment. What if the plan fails because we weren't given enough leeway to work independently?
 
-Again, I know I say this with all of these great phrase to know and uh I would say if you want to try to, you know, put it in a little more context, make an association. Think of somebody that you know right now. Who do you think of when you hear this phrase to play devil's advocate and you know somebody who likes to debate, likes to argue? It's a great way to remember the phrase so that the next time you're in that situation talking about some to somebody like, oh, you know, they just like to play devil's advocate.
+Again, I know I say this with all of these great phrase to know and uh I would say if you want to try to, you know, put it in a little more context, make an association. Think of somebody that you know right now. Who do you think of when you hear this phrase to play devil's advocate and you know somebody who likes to debate, likes to argue?
 
 Here is the next question.
 
@@ -511,7 +511,7 @@ cognitive dissonance. I don't know if you can really see these, but I'll I'll go
 
 replying to work emails in 2 minutes or less, but replying to text messages in
 
-two years or less. And you have these these replying to someone this cognitive dissonance or telling people I read a new book every week but still bing binging say yes to the dress. And then finally, refusing to spend an extra 10 cents for a paper bag at checkout because I'm cheap, but spending $16 on a salad that only with only that only has one tiny piece of halfbaked chicken. And I feel like, yes, that kind of uh uh is is I I also show that type of cognitive dissonance where I'm being very cheap on one hand, but then I'm spending money on something.
+two years or less. And you have these these replying to someone this cognitive dissonance or telling people I read a new book every week but still bing binging say yes to the dress. And then finally, refusing to spend an extra 10 cents for a paper bag at checkout because I'm cheap, but spending $16 on a salad that only with only that only has one tiny piece of halfbaked chicken.
 
 It's like, wait, why did I spend so much money for for this? It's clearly not worth it, but I do it anyway.
 

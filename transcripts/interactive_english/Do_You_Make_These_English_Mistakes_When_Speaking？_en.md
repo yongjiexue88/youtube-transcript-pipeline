@@ -227,7 +227,7 @@ is especially tricky because in and on
 
 when talking about teams, either one may be used. It depends on the context. So, when talking about sports, you're going to use on. She's on the tennis team. My cousin is on the opposing basketball team. When talking about work, you may hear people use in. They work in a team.
 
-So, what I'm really trying to get at is that prepositions can be especially confusing because there are instances when you could use more than one and both of them are correct. Now, sometimes there are rules that you can follow if talking about times of the day, in the morning, in the afternoon, in the evening. Other times you just need to familiarize yourself with the preposition that may follow certain nouns, verbs or adjectives or that may be used in certain phrases. Like if I were to give you the adjective afraid, you're going to follow that with the preposition of.
+So, what I'm really trying to get at is that prepositions can be especially confusing because there are instances when you could use more than one and both of them are correct. Now, sometimes there are rules that you can follow if talking about times of the day, in the morning, in the afternoon, in the evening. Other times you just need to familiarize yourself with the preposition that may follow certain nouns, verbs or adjectives or that may be used in certain phrases.
 
 You're afraid of something. So how do you correct this so that you are using the right preposition and speaking accurately?
 

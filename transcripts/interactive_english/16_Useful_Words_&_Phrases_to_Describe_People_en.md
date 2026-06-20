@@ -27,7 +27,7 @@ Then we have the word chatty. And if somebody is chatty, it just means that well
 
 You could say he or she is chatty. Now, the one thing I would say about this word is that it's often used to make an
 
-observation about someone else. You you wouldn't often hear people say that, "Oh, I'm so chatty." It's not really it's not necessarily a good or a bad thing, but you would use it more to make an observation and talk about the way somebody else is acting that they are talking a lot. And you could use it to describe a person's uh somebody's personality. You could say that he or she is a chatty person, but you could also use it to describe maybe somebody's temporary behavior because if a person just doesn't usually talk a lot and then suddenly one day they're very talkative, you could tell them, "Wow, you're you're a bit chatty today." What was I saying?
+observation about someone else. You you wouldn't often hear people say that, "Oh, I'm so chatty." It's not really it's not necessarily a good or a bad thing, but you would use it more to make an observation and talk about the way somebody else is acting that they are talking a lot. And you could use it to describe a person's uh somebody's personality.
 
 She's so chatty. Maybe my parents are right. Maybe I'd be better off with an Indian girl. Something wrong.
 

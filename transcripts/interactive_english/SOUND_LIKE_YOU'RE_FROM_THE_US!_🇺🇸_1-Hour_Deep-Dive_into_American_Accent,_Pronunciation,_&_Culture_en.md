@@ -21,7 +21,7 @@ And I want to share with you some useful tips if you are interested in copying t
 
 this lesson, we're going to talk about the standard American accent. And I really just want to break it down and talk about what are some of the different parts that make the accent what it is today. Now, the first thing I want to say is that if you are an English learner, you should not feel like you have to speak with any sort of accent. The most important thing is mutual intelligibility, that we understand each other.
 
-That being said, I do think this will help with your listening comprehension if you're watching a movie or TV show and really just get a better understanding of why people speak the way they do. And of course, we are going to practice throughout the lesson. And the first thing that I want you to keep in mind is that you need to pronounce those Rs, especially at the end of words. So, this is a pretty clear distinction between British English and American English because in British English, those Rs may get dropped, but not with the American accent.
+That being said, I do think this will help with your listening comprehension if you're watching a movie or TV show and really just get a better understanding of why people speak the way they do. And of course, we are going to practice throughout the lesson. And the first thing that I want you to keep in mind is that you need to pronounce those Rs, especially at the end of words.
 
 Father, car, water.
 

@@ -155,7 +155,7 @@ I'm just going to cut to the chase and show you some video examples.
 
 >> Then we have the phrase at the heart of the matter. This just refers to the most important or fundamental part of a problem, issue, or situation. So really, you would use this phrase if you want to highlight the central point and talk about that problem that should be understood or addressed.
 
-Or maybe I I give you a command and say, "Let's cut to the chase and get to the heart of the matter." So now I'm using both of these phrases to say let's get directly to the most important thing. To be honest, these two phrases to cut to the chase and at the heart of the matter, they are a little similar, but one clear distinction is that they have different parts of speech. You're going to use the phrase to cut to the chase as a verb and the phrase at the heart of the matter as a noun.
+Or maybe I I give you a command and say, "Let's cut to the chase and get to the heart of the matter." So now I'm using both of these phrases to say let's get directly to the most important thing. To be honest, these two phrases to cut to the chase and at the heart of the matter, they are a little similar, but one clear distinction is that they have different parts of speech.
 
 But let's get to the heart of the matter right now, which is helping you understand how this phrase is used in context.
 
@@ -187,6 +187,6 @@ just do your best. If you ever feel like you're in over your head, >> the market
 
 >> You're in over your head. >> And remember, if you feel like you're in over your head, just excuse yourself to go to the bathroom or get a drink.
 
->> Now, I hope this lesson really struck a chord with you. And even though these are advanced phrases, I I don't think you're in over your head trying to learn and understand them, but when you watch lessons like this, it is a foregone conclusion that you will build your vocabulary. So, let me just cut to the chase. I think that you should watch another video lesson, one of my lessons of course, to continue building your vocabulary because I if you ever feel like you're starting to forget certain words and phrases, it's good to get a refresher.
+>> Now, I hope this lesson really struck a chord with you. And even though these are advanced phrases, I I don't think you're in over your head trying to learn and understand them, but when you watch lessons like this, it is a foregone conclusion that you will build your vocabulary. So, let me just cut to the chase.
 
 Let's just nip this problem in the bud right now. So, watch another video lesson. In the grand scheme of things, it's going to help you reach your fluency goals. And if you enjoyed this lesson and learned something new, you can let me know by hitting that like button.

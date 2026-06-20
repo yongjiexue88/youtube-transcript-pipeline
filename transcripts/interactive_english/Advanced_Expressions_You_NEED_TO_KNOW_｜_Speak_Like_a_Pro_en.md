@@ -281,7 +281,7 @@ is a great phrase whenever you want to say that you don't have the power authori
 
 you cannot do something because you
 
-don't have I I you could say knowledge but I think in general I do think uh I would say emphasis on authority you don't have the power to do something or you don't have the ability when it is when it's something that is above your pay grade let's uh I don't know why I thought this was funny just this little girl like kind of shrugging her shoulders like look I don't know I can't do anything about it looks to be above my pay Uh, I don't know. I just I just find it humorous. So, that's why sometimes I I'll share these ridiculous memes with you.
+don't have I I you could say knowledge but I think in general I do think uh I would say emphasis on authority you don't have the power to do something or you don't have the ability when it is when it's something that is above your pay grade let's uh I don't know why I thought this was funny just this little girl like kind of shrugging her shoulders like look I don't know I can't do anything about it looks to be above my pay Uh, I don't know. I just I just find it humorous.
 
 This is referring to a feeling of regret
 

@@ -91,7 +91,7 @@ after the meeting. Of course, in this case, the expression or our part of the co
 
 This is to change your opinion or decision. Now, I will say that it's not
 
-always interchangeable with you change your opinion, because to to give you a little more nuance, whenever you have a change of heart, it's often something that is meaningful or more important to you. So, I if we're talking about what to eat for dinner, are you going to have the pizza or the pasta? I'm not going to say, "Well, I was going to get the pizza, but then I had a change of heart, and I'm going to have pasta." That's I would just say I changed my mind or I'm going to get something else. But, when you have a change of heart, makes me think that something's meaningful, you gave it some thought, and then you changed your opinion.
+always interchangeable with you change your opinion, because to to give you a little more nuance, whenever you have a change of heart, it's often something that is meaningful or more important to you. So, I if we're talking about what to eat for dinner, are you going to have the pizza or the pasta? I'm not going to say, "Well, I was going to get the pizza, but then I had a change of heart, and I'm going to have pasta." That's I would just say I changed my mind or I'm going to get something else.
 
 Whenever you have a change of heart. Here is the next sentence.
 

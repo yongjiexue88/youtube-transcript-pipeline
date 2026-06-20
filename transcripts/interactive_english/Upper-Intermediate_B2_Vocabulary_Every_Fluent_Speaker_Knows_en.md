@@ -203,7 +203,7 @@ That investigation is forthcoming.
 
 forthcoming with details about the accident. >> Your tone doesn't inspire me to be very forthcoming. >> I'm going to be as forthcoming as I can be, Mr. Anderson.
 
->> The next adjective is sharp. I like this word mostly because yeah, I like to think that I'm pretty sharp, even though that that is definitely not always the case, but it refers to a person who is intelligent, notices things quickly, and just really thinks fast. And really, you're just complimenting someone's mental state or mental speed. Often, I think it's used when referring to older people, maybe in their 80s or 90s, and you're just surprised and say, "Wow, they're they're still really sharp." Keep in mind, we're not talking about sharp like the knife, but really just complimenting somebody's mental intelligence when you say he or she is sharp.
+>> The next adjective is sharp. I like this word mostly because yeah, I like to think that I'm pretty sharp, even though that that is definitely not always the case, but it refers to a person who is intelligent, notices things quickly, and just really thinks fast. And really, you're just complimenting someone's mental state or mental speed.
 
 And in that case, you're saying they are highly intelligent. To give you an example, even though he's in his 90s, my
 

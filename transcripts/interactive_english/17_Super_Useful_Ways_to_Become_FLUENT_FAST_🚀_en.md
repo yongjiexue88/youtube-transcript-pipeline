@@ -25,7 +25,7 @@ But just start with something simple and easy and even short. You can read a new
 
 The third thing you can do is listen to a podcast. And the reason I say you should listen to a podcast is because it it's like you're listening to a conversation. When you're listening to a podcast, you don't have images that you can follow so that you understand what people are talking about. You really have to pay attention to what it is that you're hearing and try to put a picture in your mind.
 
-So, it's really a great way to hone your listening skills and understand conversational English. Another part of the English bubble is writing down new words and phrases. If you write down new words and phrases that you're learning, then then you're keeping a record of everything that you should review because that means that you can go back one week later or one month later, review the material. And when you do that, that is going to help you put these words and phrases into your active memory so that you can use them in speaking, you can use them in writing, use them easily and fluently.
+So, it's really a great way to hone your listening skills and understand conversational English. Another part of the English bubble is writing down new words and phrases. If you write down new words and phrases that you're learning, then then you're keeping a record of everything that you should review because that means that you can go back one week later or one month later, review the material.
 
 Number five is focus on language that is suitable to you. And what I mean by that is not everybody's trying to learn the exact same thing in English. For example, you want to learn new vocabulary.
 

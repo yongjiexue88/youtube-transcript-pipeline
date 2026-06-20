@@ -47,7 +47,7 @@ are incredibly sick to the point maybe
 
 you you need to go to the hospital, in that case, you may not use this idiom.
 
-But for most of us, as you're you know, you go about your lives, most of us get a cold or there's there many times when we just don't have to seek, you know, emergency medical attention, but we're just feeling a little sick. Maybe we go to the doctor, we get some uh antibiotics, whatever it is. But if somebody were to ask you like, "Hey, how you how are you doing?" You're like, "Well, right now I'm I'm feeling a little under the weather or I'm feeling a bit under the weather." Sometimes people will even use this idiom with little or bit.
+But for most of us, as you're you know, you go about your lives, most of us get a cold or there's there many times when we just don't have to seek, you know, emergency medical attention, but we're just feeling a little sick. Maybe we go to the doctor, we get some uh antibiotics, whatever it is.
 
 Just to again to emphasize, you know, it's just a little sick or a bit sick.
 
@@ -237,7 +237,7 @@ the storm, then it just means that you are able to continue doing something desp
 
 different situations that could apply that this could apply to as far as a problem you might have at work or uh personally and it's going to it's you're going to have to endure it for some time. But if you think you can get through it, yes, I I will be able to weather the storm. Uh, I wanted to give you this is a fun I'll use this from time to time just to to point it out as far as using chat GPT. And if I want to
 
-give you more context or even if you wanted more context yourself, you could go to chat GPT and say, "Hey, give me five sentences with the idiom weather the storm." So, what I really wanted to point out is even though the idiom is talking about the weather and we're talking about a storm, you you're not you could use it when talking about the weather as far as there's a storm coming up and you're like, look, okay, we're going to need to weather the storm. If there's a hurricane and you're going to stay put and you're going to go through it, then you are going to weather the storm.
+give you more context or even if you wanted more context yourself, you could go to chat GPT and say, "Hey, give me five sentences with the idiom weather the storm." So, what I really wanted to point out is even though the idiom is talking about the weather and we're talking about a storm, you you're not you could use it when talking about the weather as far as there's a storm coming up and you're like, look, okay, we're going to need to weather the storm.
 
 And you could use it in that context, but most of the time it's some other problem that somebody might be talking about. And for that reason, I I wanted to give you some of these more some of these other examples using this idiom like the first one, the small business managed to weather the storm during the economic recession. That is that tough period. Or the number number two, they faced a lot of criticism, but the team weathered the storm and came out stronger.
 

@@ -107,7 +107,7 @@ and you don't have that much time throughout the day, then I think the best thin
 
 they they're very short. You it doesn't take as much time, but you also get to control that speed and really put it where you think it needs to be. And if you want to really challenge yourself, then turn on the radio. Jump into some radio broadcasts.
 
-Try to challenge yourself. You're not going to be able to control the speed, but radio it, it's a great option for somebody who may not be able to listen for a long time if you just have these short periods throughout the day. If you are an intermediate learner and you have a lot of time throughout the day, a longer time period where you can sit down and and really get some quality exposure, then I would suggest an audio book because this it's a story that you get to follow and you can try to listen to it and and put those pictures up there in your mind because again you get to control the speed and you get to find that that speed that is best for your level as a listener.
+Try to challenge yourself. You're not going to be able to control the speed, but radio it, it's a great option for somebody who may not be able to listen for a long time if you just have these short periods throughout the day.
 
 I think movies and TV shows are also good for intermediate learners with more time because you get to listen to that natural conversation which is always beneficial. If you are an advanced learner who who doesn't have a lot of time throughout the day, just a few moments here and there, then I think educational videos that's a great option. You can try to make the speed a little faster and challenge yourself.
 

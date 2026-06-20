@@ -19,7 +19,7 @@ about the top 10 reasons to learn
 
 English. Now, I'll I'll be honest with you. These these are my top 10 reasons.
 
-And I'm sure that some of them may be similar for all of you. And of course, we all have different reasons. You might have different reasons for learning English and that's that's perfectly fine. But these are reasons that what I hope is that as we go through these and talk to you about them that maybe it'll just give you something else to think about try to help keep you motivated to continue learning to continue improving your skills because I think that well whether it's you're learning English or any language for that matter I think it's a wonderful thing to always uh get better learn more uh and I am very happy that you guys are learning English with me.
+And I'm sure that some of them may be similar for all of you. And of course, we all have different reasons. You might have different reasons for learning English and that's that's perfectly fine.
 
 So, let me quickly introduce myself in case this is your first time here. My name is Wes. This channel, Interactive English, it's all about trying to help you reach your fluency goals.
 

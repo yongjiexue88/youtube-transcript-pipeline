@@ -147,7 +147,7 @@ Some of these other phrases like you said out and about I think that is good to 
 
 somebody tells me like yeah now I'm back on my feet I know that previously there
 
-was some issue somebody was injured or somebody was ill so that's why I feel like this idiom is pretty pretty precise if you want to capture that sentiment and say I was really hurt before but now now I'm back on my feet or the doctor said, "I'm going to be back on my feet in no time." That is an expression you might hear if you're watching a TV show or movie. You'll be back on your feet in no time. This is again another good little meme that I came across. Want to get back on your feet.
+was some issue somebody was injured or somebody was ill so that's why I feel like this idiom is pretty pretty precise if you want to capture that sentiment and say I was really hurt before but now now I'm back on my feet or the doctor said, "I'm going to be back on my feet in no time." That is an expression you might hear if you're watching a TV show or movie. You'll be back on your feet in no time. This is again another good little meme that I came across.
 
 Miss two car payments. We'll take that car away and then you will be walking and you will be back on your feet.
 

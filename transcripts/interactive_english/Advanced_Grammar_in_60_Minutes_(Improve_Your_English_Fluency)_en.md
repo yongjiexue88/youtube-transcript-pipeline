@@ -651,7 +651,7 @@ talking about the names of families.
 
 You're in this in this case you're talking about not not individual people, but the family as a group. So, like the
 
-movie Harry Potter, you you might hear people say the Potters when talking about the family or a very famous family, they have their own TV show, the Kardashians. So, those are 25 rules that you can follow so that you know when to use the definite article the. Now, you do not need to memorize all of these rules. What I would encourage you to do is is just get more exposure to the language because the more you read, the more you listen, you are just going to learn these rules naturally and then you'll be able to use the definite article correctly when you're writing or just having a conversation.
+movie Harry Potter, you you might hear people say the Potters when talking about the family or a very famous family, they have their own TV show, the Kardashians. So, those are 25 rules that you can follow so that you know when to use the definite article the. Now, you do not need to memorize all of these rules.
 
 Learning grammar in part is about avoiding mistakes. You want to learn the structure and the rules that should be followed. However, mistakes are inevitable. They're going to happen and it is okay to make mistakes.
 

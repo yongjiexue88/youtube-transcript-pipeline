@@ -217,7 +217,7 @@ So, those are 10 super awesome adjectives that will help you sound smarter when 
 
 adjectives. Welcome to today's lesson, which is more of a vocabulary lesson because I'm going to talk to you about 10 amazing adjectives that you can use
 
-to sound more academic, more professional, and more competent when you're speaking English. And these are not words that you're going to hear every day on the street. Instead, you're more likely to hear these adjectives in presentations, debates, or in-depth conversations that are a bit more serious because these are words that sound more professional, more convincing, and they they give us a bit more authority when we're speaking about a topic. So, I'm going to tell you the adjective, show you how it's phonetically pronounced, give you the meaning as well as a sentence so you can see how it's used in context.
+to sound more academic, more professional, and more competent when you're speaking English. And these are not words that you're going to hear every day on the street. Instead, you're more likely to hear these adjectives in presentations, debates, or in-depth conversations that are a bit more serious because these are words that sound more professional, more convincing, and they they give us a bit more authority when we're speaking about a topic.
 
 Are you ready? Let's begin.
 

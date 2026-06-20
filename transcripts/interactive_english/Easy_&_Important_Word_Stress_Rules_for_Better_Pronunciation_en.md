@@ -231,7 +231,7 @@ It is most two-cllable nouns. And in the
 
 comments, I want you to write think of a
 
-two-cllable noun and write it in the comments and share with us. and think about ones that have the stress on the first syllable because most two-cllable nouns again that stress and I tried to show you with those those two dots right there the stress is on the first syllable when we're talking about these words right here two syllable nouns and I will say the words and again it helps repeat them after me it doesn't matter where you are you can just you can say it out loud and practice your speaking or you can just say it in your mind.
+two-cllable noun and write it in the comments and share with us.
 
 All right.
 

@@ -191,7 +191,7 @@ The highways are probably a mess right now. Then there's bear left or bear right
 
 This means to change direction slightly so that you're going in a particular direction, in this case left or right.
 
-And I think these phrases are very useful, especially if you're giving directions and you want to be specific because some roads, especially some of those backroads, uh they they may not always have a full left turn or right turn. And I would say, "Hey, up ahead, you're you're going to want to bear left and then after that, the road's going to intersect with another one and when that happens, you should bear right." All right, I'm just trying to be a little more specific. And I also want you to keep in mind that the word bear, this is a homonym.
+And I think these phrases are very useful, especially if you're giving directions and you want to be specific because some roads, especially some of those backroads, uh they they may not always have a full left turn or right turn. And I would say, "Hey, up ahead, you're you're going to want to bear left and then after that, the road's going to intersect with another one and when that happens, you should bear right." All right, I'm just trying to be a little more specific.
 
 Do not think about the animal.
 
@@ -491,7 +491,7 @@ a C1 idiom, and it means to be quick to
 
 understand and react to things. So, it's like you're you're just really ready and alert. And often this idiom is going to follow the verb to be, and you could use it in the affirmative and say, "Look,
 
-you really need to be on the ball for the important meeting tomorrow." Or you may hear people use it in the negative and say something like, "Well, he didn't sleep much last night, so today he's just not on the ball." I always try to be on the ball when I come up with these lessons. I try to react and always give you the best information, provide some nuance. When pronouncing this idiom, linking may occur, and this is when you link the final consonant sound of one word with the beginning vowel sound of the next word. And really we're talking about linking that consonant sound of the verb to be with the vowel sound in on.
+you really need to be on the ball for the important meeting tomorrow." Or you may hear people use it in the negative and say something like, "Well, he didn't sleep much last night, so today he's just not on the ball." I always try to be on the ball when I come up with these lessons. I try to react and always give you the best information, provide some nuance. When pronouncing this idiom, linking may occur, and this is when you link the final consonant sound of one word with the beginning vowel sound of the next word.
 
 the ball." "I'm on the ball." "You're on the ball."
 

@@ -13,7 +13,7 @@
 
 sound impressive and I impressive just
 
-like the uh northern lights that you see there. Now the the reason why I say to sound impressive is is really for two reasons. The first is these are words that are a bit more advanced and I think some many of them you might be familiar with especially if you feel like you're more of a proficient speaker and that's good because I tried to choose words that you will actually come across if you're listening to a podcast or reading the news. The next reason why I say that it's going to sound impressive is because these are longer words.
+like the uh northern lights that you see there. Now the the reason why I say to sound impressive is is really for two reasons. The first is these are words that are a bit more advanced and I think some many of them you might be familiar with especially if you feel like you're more of a proficient speaker and that's good because I tried to choose words that you will actually come across if you're listening to a podcast or reading the news.
 
 going to start with words that are 12 letters or more and then we're going to work our way up. So that's why I say I'm going to teach you the meaning, talk about how it's used in context as well as the pronunciation because sometimes with these longer words, they they can be a little intimidating. And I think this is when people may sometimes make a slight speaking mistake and they may stress the wrong syllable. So we're going to talk about those two things.
 

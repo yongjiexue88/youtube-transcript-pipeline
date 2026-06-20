@@ -15,7 +15,7 @@ Let's unlock the American accent or I
 
 want to help you unlock it if that is one of your speaking goals. And the first thing I want to say, of course, is that you should never feel like you need to speak with any particular English accent. There are many varieties out there. Many of them are lovely.
 
-But I've heard a lot of people tell me they either live in the US or they work with people in the US and therefore they they would like to emulate the American accent. And if that's the case, then this lesson would be for you because I want to look at a dialogue and break things down and talk about how people in the US would say them, which is where I am from. And if you are someone who enjoys learning about different English accents and having a better understanding of them, please subscribe, turn on notifications. That way I can become your teacher.
+But I've heard a lot of people tell me they either live in the US or they work with people in the US and therefore they they would like to emulate the American accent. And if that's the case, then this lesson would be for you because I want to look at a dialogue and break things down and talk about how people in the US would say them, which is where I am from. And if you are someone who enjoys learning about different English accents and having a better understanding of them, please subscribe, turn on notifications.
 
 The channel is Interactive English. It is all about helping you reach your fluency goals.
 
@@ -35,7 +35,7 @@ through each one, practice it a few times, and then at the end, we're going to g
 
 Okay? So, I I am going to ask and I'm going to check from time to time if you are actually participating and saying these sentences out loud because that's that's what I want to hear. All right?
 
-So, let's go ahead and look at this first Well, no, I said let I'll I'll I'll say the dialogue so that you can at least hear it once and then we'll go through each sentence. So, the way I would say this is, "What do you think we ought to do this weekend?" "Well, we can go see a movie or go to a concert." "I'm leaning towards a movie cuz I don't want to make it but I don't want to make a decision right now." "Sounds good. Just let me know what you want to do." So, this is a I think as I say the dialogue, I think it's easy to understand.
+So, let's go ahead and look at this first Well, no, I said let I'll I'll I'll say the dialogue so that you can at least hear it once and then we'll go through each sentence. So, the way I would say this is, "What do you think we ought to do this weekend?" "Well, we can go see a movie or go to a concert." "I'm leaning towards a movie cuz I don't want to make it but I don't want to make a decision right now." "Sounds good.
 
 Now, saying it just like me maybe is a different thing. That can certainly be challenging depending on what we're talking about. So, let me show you what we're talking about. We're going to start with this first question right here.
 
@@ -257,7 +257,7 @@ want to do. Want to we can reduce to wanna. What you want to do. What you want t
 
 What you. Or you could say what you if you want to emphasize you versus ya. What ya versus what you.
 
-So again, there I I think one thing when you really get into it and dive deep, there are different ways that you're going to hear native speakers pronounce these sentences. And I I What I really want to hammer home right now is that don't think of this as a fixed rule. There are different ways that you can do it. I just wanted to point out some of the the elements of connected speech and in this case assimilation, you have that T and Y when they they're next to each other, you might get that slight ch sound.
+So again, there I I think one thing when you really get into it and dive deep, there are different ways that you're going to hear native speakers pronounce these sentences. And I I What I really want to hammer home right now is that don't think of this as a fixed rule. There are different ways that you can do it.
 
 What you. What you want to do. So here is the phonetic spelling.
 

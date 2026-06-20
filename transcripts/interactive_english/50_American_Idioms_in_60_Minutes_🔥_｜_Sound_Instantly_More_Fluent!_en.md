@@ -909,7 +909,7 @@ line. This means to do what you are expected to do without causing trouble
 
 for anyone and you are just trying to tow the line. Maybe this is used in a
 
-situation in which you're not trying to cause any controversy. You don't want you don't like confrontation and even if you disagree with something or maybe you disagree with someone, you're not going to cause a lot of trouble and you're just trying to tow the line. employees who refuse to tow the line will be let go. That's not really a company that I'd want to work for, but I imagine that is what some companies that is their mindset that employees, you got to tow the line or you're not going to work here any longer and you just have to tow the line.
+situation in which you're not trying to cause any controversy. You don't want you don't like confrontation and even if you disagree with something or maybe you disagree with someone, you're not going to cause a lot of trouble and you're just trying to tow the line. employees who refuse to tow the line will be let go.
 
 up. This is more of an informal idiom
 
