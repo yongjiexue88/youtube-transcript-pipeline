@@ -84,19 +84,24 @@ def get_downloaded_video_ids(directory: str) -> set[str]:
     if not os.path.isdir(directory):
         return downloaded
     for filename in os.listdir(directory):
-        if not filename.endswith(".txt"):
+        if not filename.endswith((".txt", ".md")):
             continue
         filepath = os.path.join(directory, filename)
         try:
             with open(filepath, "r", encoding="utf-8") as f:
-                # Read first few lines (Video ID is usually on line 2)
-                for _ in range(5):
+                # Read first few lines (Video ID is usually on line 2-10)
+                for _ in range(12):
                     line = f.readline()
                     if not line:
                         break
                     match = re.match(r"^Video ID\s*:\s*([a-zA-Z0-9_-]{11})", line)
                     if match:
                         downloaded.add(match.group(1))
+                        break
+                    # Also match Markdown table style: | **Video ID** | `GFnBp8lMIf4` |
+                    match_md = re.search(r"\*\*Video ID\*\*\s*\|\s*`([a-zA-Z0-9_-]{11})`", line)
+                    if match_md:
+                        downloaded.add(match_md.group(1))
                         break
         except Exception:
             pass
