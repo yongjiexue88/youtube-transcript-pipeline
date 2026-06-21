@@ -1,0 +1,1763 @@
+Title     : Building AI Agents that actually work (Full Course)
+Video ID  : eA9Zf2-qYYM
+URL       : https://www.youtube.com/watch?v=eA9Zf2-qYYM
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1754
+Saved at  : 2026-06-21 01:55:03
+------------------------------------------------------------
+
+[00:00.00]  I think AI is confusing. There, I said
+[00:02.96]  it. I think there's a lot of terms,
+[00:04.56]  skills, MCPs, agent harnesses that are
+[00:08.60]  difficult concepts to understand. So, I
+[00:10.56]  had my friend Remy come on the podcast
+[00:13.12]  and explain it in the most simple terms
+[00:16.04]  possible. In this free course on how to
+[00:19.16]  master AI agents, he breaks down exactly
+[00:22.36]  what each piece is, how they connect
+[00:25.28]  together, and the simplest ways
+[00:27.36]  beginners could start using them today.
+[00:30.00]  Enjoy the episode.
+[00:34.06]  >> [music]
+[00:39.24]  >> I begged them to come on. Remy Gaskill's
+[00:41.96]  on the pod. You've structured your
+[00:43.92]  company where you basically have these
+[00:45.72]  folders and dot MD files that run your
+[00:49.88]  company. And what I want to do today is
+[00:53.20]  I want you to teach people in a
+[00:54.96]  beginner-friendly fashion. This is only
+[00:56.92]  for beginners.
+[00:58.24]  How they could do the same thing. How
+[01:00.72]  they can set up their own executive
+[01:01.96]  assistant, head of marketing, chief
+[01:03.52]  financial officer. Basically, I want you
+[01:05.92]  to base to tell us the concepts behind
+[01:10.16]  all this. By the end of this episode,
+[01:12.20]  Remy, do you think you can do that?
+[01:14.48]  >> 100% Greg. We're going to go through all
+[01:17.16]  the concepts that make up an AI agent.
+[01:19.20]  And by the end of this video, you will
+[01:20.36]  know exactly how you can build up
+[01:23.56]  agents to run complete departments of
+[01:25.60]  your life and your company within any
+[01:28.00]  agent platform you choose, whether it's
+[01:29.52]  Claude
+[01:30.32]  Codec, Open Claw, Manas, all of them.
+[01:33.72]  >> All right, let's do it.
+[01:35.44]  >> Sweet. So, one of the reasons why I
+[01:37.64]  really wanted to make this episode is
+[01:39.64]  because I feel like the AI landscape is
+[01:42.76]  moving into like stage two, from chat to
+[01:46.16]  agents. And most people are getting left
+[01:49.32]  behind right now, just using the chat
+[01:51.24]  models. And
+[01:53.48]  the founders and employees that are
+[01:55.44]  utilizing agents
+[01:57.00]  are no word of a lie 10 to 20 times more
+[01:59.52]  productive in their day. And when you
+[02:01.24]  stack that up over days, weeks, years,
+[02:04.92]  you're going to just be miles ahead of
+[02:06.12]  the competition. So, I really want to
+[02:07.88]  make this episode today to help bring
+[02:09.44]  everyone up to where the AI landscape is
+[02:11.96]  at the moment and to start using agents
+[02:13.96]  to manage every department of your
+[02:15.60]  business.
+[02:17.24]  So, the key thing to understand here is
+[02:19.96]  chat models versus agents because the
+[02:22.24]  word agent is thrown around lots online.
+[02:24.92]  I'm sure you've seen it, Greg, like AI
+[02:26.84]  agents this, agents this, use this agent
+[02:29.00]  for this, and it's kind of lost a lot of
+[02:30.76]  meaning. So, I wanted to give start by
+[02:32.96]  giving a really clear definition of what
+[02:34.84]  an agent actually is.
+[02:36.72]  So, the way I think of it is a chat
+[02:38.52]  model is question to answer.
+[02:41.72]  But then an agent is goal to result. So,
+[02:44.44]  moving from just like uh you asking, AI
+[02:47.28]  replies, then you do the work to you
+[02:50.36]  giving the agent a task, it planning out
+[02:53.32]  the task and then executing and then
+[02:54.96]  delivering you a result. Does that make
+[02:57.16]  sense?
+[02:58.20]  >> Crystal clear. I mean, the way I think
+[02:59.48]  about it is chat is kind of like ping
+[03:01.72]  pong, back and forth, back and forth.
+[03:03.72]  >> Yeah.
+[03:04.48]  >> And agent is
+[03:07.40]  uh
+[03:08.16]  you know, you're giving it it's a goal.
+[03:09.36]  I mean, the best way to Yeah, you're
+[03:10.28]  giving it a goal and you're hoping that
+[03:12.76]  over time it gets better and closer to
+[03:14.60]  that goal.
+[03:15.68]  >> Exactly. Yeah, that's exactly it. And I
+[03:17.28]  just think that's a nice way to lay it
+[03:18.80]  out in your head is chat is question to
+[03:20.44]  answer, agent is goal to result. So,
+[03:23.96]  when you chat to an agent,
+[03:26.56]  you might give it a task like build me a
+[03:28.84]  website for XYZ, and then it goes away,
+[03:32.04]  it does its work, and it outputs this
+[03:34.04]  wonderful website to you.
+[03:36.08]  But it's really important to understand
+[03:37.84]  what's actually happening in this step
+[03:39.80]  here.
+[03:40.84]  So, inside this agent step, we have
+[03:42.80]  what's called the agent loop.
+[03:45.72]  So, you give it your prompt or task,
+[03:48.76]  and it goes through these three steps
+[03:50.36]  here, which is observe, think, and act.
+[03:54.24]  So, let's just say for example, um we're
+[03:56.28]  actually going to do this demo after
+[03:57.40]  this, but if we gave the agent a simple
+[03:59.56]  task like
+[04:01.20]  "Build me a minimalist portfolio site
+[04:03.56]  for Greg Eisenberg."
+[04:05.16]  It's going to start by like you've
+[04:07.16]  loaded in that prompt. It's going to
+[04:09.20]  check if there's any files in the
+[04:10.52]  workspace that it can work with, like
+[04:12.00]  maybe you've got some information on
+[04:13.24]  Greg Eisenberg.
+[04:14.84]  Um and then it's going to think about
+[04:16.44]  what to do next.
+[04:17.84]  It's going to act, and then it just
+[04:19.28]  keeps going through this loop. So, for
+[04:21.52]  that actual example of building the
+[04:23.76]  portfolio site for Greg Eisenberg, let's
+[04:25.76]  just say it was a blank agent. We hadn't
+[04:27.64]  given it any context. The first thing
+[04:30.88]  is it's received this prompt to build
+[04:32.16]  the website.
+[04:33.48]  And the first thing it's going to be
+[04:34.32]  thinking about is, okay, well, I need to
+[04:36.28]  build this website about Greg.
+[04:38.56]  Who the hell is Greg Eisenberg? So, it's
+[04:40.52]  going to then decide to do some research
+[04:43.20]  into Greg Eisenberg.
+[04:44.80]  It's going to research everything about
+[04:46.44]  Greg, and then feed it back into this
+[04:48.52]  observe step. So, then it's going to
+[04:50.36]  think to itself,
+[04:51.88]  "Okay, so I've got this prompt to build
+[04:53.44]  a website. I've now got my research
+[04:55.88]  here, so I know exactly who Greg
+[04:57.76]  Eisenberg is."
+[04:59.12]  And then it's going to start thinking,
+[05:00.68]  "What is the next step?"
+[05:02.88]  And the next step is probably to write
+[05:04.48]  up a plan to build the website. So, it
+[05:06.64]  might write up that plan, feed that back
+[05:08.72]  in. Now it's got the research, the
+[05:10.36]  prompt, the plan, and it will think,
+[05:12.60]  "All right, what next? I should probably
+[05:13.88]  write the code." It'll write the code,
+[05:16.12]  feed it back in, and it just keeps going
+[05:18.12]  through this loop as many times as it
+[05:20.12]  needs until it can conclude uh that the
+[05:23.04]  task is complete. And how it concludes
+[05:25.84]  that the task is complete is based on
+[05:27.16]  the parameters that you set in your
+[05:28.40]  prompt. So, you know, if you're giving
+[05:30.04]  it a research task, you might say
+[05:31.92]  compile 10 sources, and then create a
+[05:35.12]  report as a PowerPoint. And then once
+[05:37.72]  it's compiled 10 sources and build the
+[05:39.96]  report as a PowerPoint, it can conclude
+[05:42.12]  that the task is complete, and then give
+[05:44.28]  you the output as the user. The The
+[05:46.84]  agent itself
+[05:48.80]  is made up of these four components.
+[05:51.48]  So, it's the LLM, which is the brain
+[05:53.56]  behind it. So, think like, you know,
+[05:55.52]  Claude Opus 4.6 or GPT 5.4 or Gemini 3.
+[06:00.60]  It's the model.
+[06:02.08]  Uh it's got the loop, which means it
+[06:04.08]  just keeps going until the task is done.
+[06:05.64]  It doesn't stop after one response. So,
+[06:07.40]  you're going from ping-pong to like it
+[06:09.80]  continuing to go rather than you having
+[06:11.12]  to sit there baby-sitting it.
+[06:13.28]  Uh it connects in all your tools.
+[06:15.72]  And then it connects in all the context.
+[06:17.96]  And a platform that facilitates this
+[06:21.52]  process and basically facilitates this
+[06:23.60]  loop to happen is known as an agent
+[06:25.92]  harness.
+[06:27.52]  And all of the popular AI agent
+[06:30.08]  platforms on the market that you'd be
+[06:31.56]  familiar with are just agent harnesses.
+[06:34.28]  They're just applications
+[06:36.12]  where this loop is facilitated.
+[06:40.04]  And I want to actually run this little
+[06:42.40]  prompt I prepared earlier.
+[06:44.16]  I want to open up CodeX, Claude Code,
+[06:46.60]  and Anti-Gravity. And I'm going to show
+[06:48.76]  you this loop uh actually happening in
+[06:51.08]  action.
+[06:52.28]  So, I have a nicely prepared before the
+[06:54.40]  episode these three demo folders, which
+[06:56.04]  we're going to run in. So, I'm going to
+[06:57.24]  open up demo one
+[06:59.16]  to work in in Claude Code.
+[07:01.44]  And the way these folders work is if
+[07:03.76]  you've used If you're familiar with like
+[07:05.56]  any of the chat models like Claude and
+[07:07.36]  ChatGPT, there's a projects feature,
+[07:09.64]  which is where um if I open it up
+[07:11.60]  actually,
+[07:13.28]  try not to get dizzy with me switching
+[07:14.72]  tabs so much. But, you know, if we
+[07:16.80]  create a a project here,
+[07:19.48]  it contains all your chats in one place.
+[07:21.88]  It allows you to upload all your sources
+[07:23.56]  here, which is your context.
+[07:25.56]  And then you can even add custom
+[07:27.52]  instructions,
+[07:29.04]  which tells it how to behave within this
+[07:30.64]  project, and that's also known as a
+[07:32.04]  system prompt, which we're going to dive
+[07:34.48]  into how to do this with agents as well
+[07:36.04]  later. But, it's a similar concept that
+[07:38.32]  you'd be familiar with if you've used
+[07:39.40]  projects before. But, instead of the
+[07:41.40]  project being here on the cloud, we're
+[07:43.88]  actually working within projects that uh
+[07:46.60]  local on our computer.
+[07:48.40]  So, I've just selected this demo one for
+[07:49.88]  now.
+[07:51.16]  Then, we're going to run
+[07:52.92]  build a minimalist portfolio site for
+[07:55.04]  Greg Eisenberg.
+[07:56.40]  And then, this little bit here just
+[07:57.92]  tells it to actually spin it up like to
+[07:59.84]  publish it on the web
+[08:01.52]  uh in a preview mode so we can see what
+[08:03.36]  it's done.
+[08:04.64]  So, I'm going to run that.
+[08:05.40]  >> So, so this is this is um Claude Code?
+[08:10.44]  >> Yes. Yeah, right now we're in Claude
+[08:12.12]  Code, and this is just accessing it
+[08:13.92]  through the desktop app for Claude.
+[08:16.84]  Um so, I'm just going to run that.
+[08:19.48]  And then, I'm also going to give the
+[08:21.00]  same prompt to Codex here. So, this is
+[08:23.44]  the Codex app. And you can see same
+[08:25.80]  concept. It says, "Let's build." We can
+[08:28.28]  choose a folder on our computer to work
+[08:29.80]  in, like demo two.
+[08:32.04]  And then, we're going to give that a
+[08:33.52]  prompt as well. And we're going to tell
+[08:35.12]  it to host it on
+[08:37.84]  a different one.
+[08:39.84]  And then, also in Antigravity. So, you
+[08:42.80]  can see same concept. We're going in,
+[08:45.52]  selecting a folder.
+[08:47.40]  And then, we will
+[08:50.48]  give it the prompt as well.
+[08:52.68]  >> How should people think about security
+[08:54.92]  and these different products?
+[08:57.88]  >> I like to think of security as in just
+[08:59.80]  like
+[09:00.88]  scoping what they have access to. So, by
+[09:04.36]  default, Antigravity, Claude Code, and
+[09:07.04]  Codex, they're very, very secure because
+[09:08.88]  they're built by these massive companies
+[09:10.36]  that have a lot on the line um
+[09:12.44]  to protect.
+[09:13.88]  And
+[09:15.56]  I just you know, if you're if you're
+[09:17.12]  building out these agents to manage
+[09:18.44]  different elements of your business,
+[09:19.68]  like the other week I built one um that
+[09:22.04]  does manages meta ads. And obviously,
+[09:24.40]  that's quite a risky thing to give an
+[09:26.24]  agent control over managing ad budgets.
+[09:28.64]  So, it's just comes down to like what
+[09:30.68]  you feel comfortable giving the agent.
+[09:32.12]  And also, you can control what
+[09:33.76]  privileges or you can control what um
+[09:37.08]  tool permissions it has access to so
+[09:39.12]  that if it was compromised for whatever
+[09:41.00]  reason, the worst case like isn't that
+[09:42.56]  bad. And that means, you know, just
+[09:43.72]  giving it like read-only access to
+[09:46.08]  certain important platforms and stuff
+[09:48.00]  like that.
+[09:49.12]  Does that make sense?
+[09:50.64]  >> Yeah, totally. I mean, comparing it to
+[09:53.20]  like open claw, which is like
+[09:55.64]  >> Yeah, which I want to touch on at the
+[09:57.04]  end as well cuz that's the same thing,
+[09:58.60]  just another harness, but it's just like
+[10:00.52]  the wild west.
+[10:02.20]  >> Cool.
+[10:03.76]  >> Uh, and one thing like
+[10:06.48]  a nice little analogy to think about
+[10:07.88]  these harnesses is
+[10:10.12]  what we're going to learn today is we're
+[10:11.64]  going to learn to drive. So, we're going
+[10:13.36]  to learn about how to, you know, steer
+[10:14.96]  the car, like how the pedals, the brakes
+[10:17.40]  work, the accelerator works, the
+[10:18.72]  handbrake. But then once you know how to
+[10:21.12]  drive, you can kind of jump in any car
+[10:23.56]  whether it's like a old Toyota, a Range
+[10:25.64]  Rover, and you inherently sort of know
+[10:27.76]  what to do. And that just comes down to
+[10:29.72]  understanding all these key concepts
+[10:31.12]  that we're going to go through today.
+[10:32.64]  And you can think of the agent harnesses
+[10:34.20]  like different cars. And some of them
+[10:36.12]  will have better features like seat
+[10:37.64]  warmers and cruise control, but it's all
+[10:39.68]  once you know how to drive, you can
+[10:40.84]  pretty much jump in any of them and use
+[10:42.40]  them.
+[10:43.56]  So, we've just got our thing over here
+[10:45.84]  building to
+[10:46.72]  building the website for Greg. And it's
+[10:48.88]  going through this agent loop right now.
+[10:50.88]  So, you can see here it's actually
+[10:52.52]  decided that it's going to launch, um,
+[10:54.88]  an agent to go and research Greg
+[10:56.60]  Eisenberg.
+[10:57.92]  And I've connected it up to Perplexity,
+[10:59.48]  so it's now using Perplexity to research
+[11:01.36]  Greg. So, it's going through its first
+[11:03.40]  step of the loop. And I imagine that,
+[11:06.44]  uh,
+[11:07.20]  Codex
+[11:08.44]  has also done something similar here.
+[11:10.68]  You can see it's still working, but it's
+[11:12.36]  gone.
+[11:14.84]  And, um,
+[11:16.72]  started to build this out through the
+[11:18.24]  loop. I think Claude code does the best
+[11:20.44]  job of actually displaying that loop,
+[11:22.84]  um, and allowing you to see what it's
+[11:24.68]  thought about compared to Antigravity
+[11:26.88]  and Codex. But it's all just going
+[11:28.72]  through the same sort of loop process
+[11:30.52]  that I described earlier.
+[11:32.28]  And I think So, when
+[11:32.92]  >> you say that when you say you hooked it
+[11:34.84]  up to Perplexity
+[11:36.80]  didn't it's not like you asked it to
+[11:38.88]  hook it up, right? It just sort of did
+[11:41.24]  it.
+[11:42.48]  >> Yeah, because I've
+[11:44.28]  I've given Claude code Perplexity as a
+[11:47.20]  tool via MCP.
+[11:48.44]  >> Okay.
+[11:49.20]  >> Which we're going to get into
+[11:51.16]  um
+[11:51.96]  very very shortly all about MCPs, which
+[11:54.08]  is just connecting tools up.
+[11:56.00]  So we can see that in anti-gravity
+[11:59.00]  it's gone you can see this thinking
+[12:00.60]  process. It's gone um
+[12:04.32]  I'm now examining the current directory
+[12:05.92]  to figure out if there's an existing
+[12:07.20]  project or if I build one from scratch.
+[12:09.84]  It's then going
+[12:11.16]  I'm now going to start to build this
+[12:12.44]  thing.
+[12:14.12]  And then it's built the the website and
+[12:15.84]  it's given us a little localhost preview
+[12:17.84]  here. So it's created this nice little
+[12:19.56]  portfolio site for for you, Greg.
+[12:22.84]  >> What's interesting is like it's super
+[12:24.76]  minimalist and I mean
+[12:28.44]  it it did its job, right? Like
+[12:31.00]  this is
+[12:32.36]  I would totally launch something like
+[12:34.68]  this.
+[12:35.22]  >> [laughter]
+[12:36.08]  >> It actually looks really nice. Did it
+[12:37.84]  Did it scrape your email address
+[12:39.24]  correct?
+[12:39.88]  >> That's not my email address and I don't
+[12:41.84]  live in South Canada anymore. So but
+[12:43.84]  yeah, there's a few copy things, but
+[12:45.60]  other than that
+[12:46.88]  uh
+[12:46.96]  >> Yeah.
+[12:48.08]  It's done a pretty good job.
+[12:49.64]  >> It did.
+[12:50.96]  >> And if we go So that was anti-gravity.
+[12:53.24]  If we go into
+[12:55.20]  Codex as well, you can see here it's
+[12:56.60]  finished doing its website, which is
+[12:58.52]  somewhat similar.
+[12:59.88]  I think I prefer Gemini's.
+[13:01.68]  >> Yeah, agreed.
+[13:03.32]  >> If we check out Claude as well
+[13:05.28]  um
+[13:06.48]  it's still going. But you can see this
+[13:09.16]  loop, right? It's gone
+[13:10.96]  Okay, so first off, who is Greg
+[13:12.72]  Eisenberg? It's gone and researched
+[13:14.36]  Greg, then fed it back into that observe
+[13:16.76]  step and it's gone, all right, what
+[13:18.32]  next?
+[13:19.44]  Now I need to create the HTML file.
+[13:22.12]  So it's written the the code.
+[13:24.24]  And then now it's gone, okay, so he
+[13:26.16]  wanted it spun up on this local server.
+[13:28.88]  So, now I'm going to spin it up on the
+[13:30.00]  server.
+[13:31.72]  And then the last iteration of the loop
+[13:33.32]  is to check that it's actually done and
+[13:35.12]  can conclude the task is complete. It's
+[13:37.68]  opening it up and screenshotting the
+[13:39.28]  website and then reviewing the
+[13:41.40]  screenshots to check that the website is
+[13:43.76]  complete. And you can see here it's done
+[13:46.12]  another pretty good job. This one's very
+[13:48.16]  similar to the Gemini one, hey?
+[13:49.80]  >> It's true.
+[13:51.52]  >> Um but yeah, that's just like demoing
+[13:54.00]  how that loop is actually working in
+[13:56.00]  real time.
+[13:57.20]  >> Yeah. I mean, what comes to mind just by
+[13:59.36]  watching this is like
+[14:01.44]  how many people on the planet would
+[14:03.40]  benefit from a very clean website and
+[14:06.44]  like
+[14:06.84]  >> Yeah.
+[14:07.80]  >> how how do you set up these agents so
+[14:10.32]  that like
+[14:11.80]  you know, maybe it's like a cold email
+[14:14.28]  loop, right? Like you're sending cold
+[14:15.80]  emails, "Hey, I built you this website,
+[14:17.80]  so-and-so business. Do you want it? It's
+[14:19.08]  going to cost $250."
+[14:20.96]  >> Yeah. Yeah, that's actually a great
+[14:22.48]  idea. Um
+[14:23.92]  pre-making websites for companies. And
+[14:26.52]  it's like an off-the-shelf thing. It's
+[14:27.88]  like, "Hey, I I made you this website.
+[14:29.64]  If you want it like if you want to own
+[14:31.44]  it, it's $250." You can just do a mass
+[14:33.36]  cold email thing.
+[14:36.00]  Uh cool. So, I think that's like pretty
+[14:38.00]  much illustrated that agent loop
+[14:39.32]  example. So, I'm just going to go um
+[14:42.16]  back to our trusty board over here.
+[14:44.76]  But you can understand that it's just
+[14:46.32]  like all of these apps are just
+[14:48.12]  different flavors of the same thing.
+[14:50.92]  And then what we're going to be working
+[14:52.16]  up to today is my workspace looks
+[14:54.76]  something like this is I have, you know,
+[14:56.44]  a big like a a folder for each company
+[14:59.20]  or or client that I'm working in.
+[15:01.32]  And then I'll have folders underneath
+[15:03.20]  with all my heads of departments.
+[15:05.72]  And then
+[15:07.00]  um within those heads of departments,
+[15:08.84]  I'll have skills and MCPs, which we'll
+[15:10.96]  get into.
+[15:12.20]  And contacts.
+[15:13.84]  And then I've got like an overarching
+[15:15.40]  one at the top to just to sort of manage
+[15:17.16]  them all. But we're going to be focusing
+[15:18.44]  today on building out this executive
+[15:19.84]  assistant to take care of just your
+[15:21.76]  manual day-to-day tasks and free up at
+[15:24.64]  least 1 to 2 hours extra per day.
+[15:29.64]  Um cool. So, to build this out like we
+[15:33.52]  did uh with our demos, it's running off
+[15:36.04]  your local files. So, we're going to
+[15:37.60]  create a folder here
+[15:39.56]  called executive assistant.
+[15:43.64]  And also through building out this
+[15:44.84]  assistant, it's going to allow us to
+[15:47.08]  clearly explain each of the concepts um
+[15:49.76]  of building an agent in real time.
+[15:52.44]  And the way I like to think about
+[15:53.56]  building agents is onboarding them like
+[15:55.60]  a real employee.
+[15:57.32]  So, if you took on a real executive
+[15:59.32]  assistant, you couldn't expect to just
+[16:01.76]  for them to come into the office and you
+[16:03.04]  to give them a task without explaining
+[16:05.68]  your business first, your clients, what
+[16:07.76]  you do, the tools
+[16:09.64]  um because they just would not be a very
+[16:11.20]  good executive assistant.
+[16:12.92]  So, that's the first step that we need
+[16:14.56]  to go through uh when we're building out
+[16:16.52]  this agent. So, uh I'm actually going to
+[16:19.92]  work
+[16:21.56]  uh in Co-work at the beginning. So,
+[16:23.76]  Co-work is just another agent harness to
+[16:26.20]  do the pretty much the same thing as all
+[16:27.68]  the others, just that loop connecting in
+[16:29.60]  your tools and the context.
+[16:31.56]  So, you can see here um this was my
+[16:33.36]  little uh previous session where I was
+[16:35.16]  building some diagrams.
+[16:37.52]  But, we can go um and you can follow
+[16:39.48]  along in Cloud Code or Codex or
+[16:41.60]  Antigravity or whatever agent harness
+[16:43.40]  that you want to work in.
+[16:44.80]  But, I just think that Co-work has
+[16:46.28]  really nice simple UI for people to just
+[16:48.72]  understand really well what's actually
+[16:50.16]  going on.
+[16:51.96]  So, we're going to open up this
+[16:53.08]  executive assistant folder.
+[16:55.72]  And you can see here that if we ask it,
+[17:00.32]  "Write me a cold email."
+[17:03.96]  and send that off.
+[17:05.72]  >> So, peop- So, people are going to ask,
+[17:07.08]  "How How did you transcribe?" You did
+[17:09.08]  like a voice-to-text.
+[17:10.80]  >> Yeah, so that is um I use one called
+[17:13.56]  Monologue, but there's a lot out there
+[17:15.72]  on the market. Whisper flows another
+[17:17.04]  popular one, and it just allows you to
+[17:19.08]  hold a little button on your computer
+[17:20.88]  and
+[17:22.00]  just yap away, and it will just
+[17:23.68]  transcribe it neatly into text. And I
+[17:26.08]  find that
+[17:26.52]  >> good. My monologue looks really good.
+[17:29.08]  >> Yeah, I think it's built by the team at
+[17:30.24]  Every. Every. io.
+[17:32.64]  Um it's a cool product, but uh so
+[17:36.28]  what it's asking So it's it's straight
+[17:37.88]  away we we it's got no context here. So
+[17:40.04]  it's working out of
+[17:42.00]  uh that folder here on our computer,
+[17:44.36]  but there's nothing in the folder.
+[17:46.00]  >> Mhm.
+[17:46.44]  >> And it has no memory of our previous
+[17:48.20]  sessions.
+[17:49.64]  Um and it's asking like what like what
+[17:52.20]  do you even sell?
+[17:53.56]  Um and then we're going to kind of give
+[17:55.36]  it like who do you target? What tone do
+[17:57.64]  you want? These are all things that our
+[17:59.00]  executive assistant should know.
+[18:01.56]  Um so I'm just going to stop the
+[18:02.60]  response there.
+[18:04.32]  And one thing that's really important to
+[18:06.20]  know, which might be a bit of a shock
+[18:07.56]  moving from chat to agents, is that
+[18:09.28]  these agents' memory work a little bit
+[18:11.96]  different. So if you're used to using
+[18:14.12]  chat models like ChatGPT and Claude, if
+[18:16.56]  you open up a fresh session in the one
+[18:18.60]  of these chats,
+[18:19.96]  you don't give it any context, you don't
+[18:21.68]  upload any files, and you just say
+[18:23.92]  "Who am I and what do I do?" It's going
+[18:25.96]  to know a scary amount about you. And
+[18:28.76]  that's because with these chat models,
+[18:30.12]  they have memory built in automatically.
+[18:32.28]  So every time you sort of say things
+[18:33.56]  that are important, the chat model saves
+[18:35.84]  it to its memory in the cloud that you
+[18:37.56]  can't see and you can't control.
+[18:39.88]  And with agents, you have to set up
+[18:42.96]  memory and control exactly what you give
+[18:45.32]  it. And I think that's actually uh a
+[18:48.12]  benefit, not a limitation, because what
+[18:50.12]  happens is if you're using ChatGPT and
+[18:53.16]  it's got the auto memory, you're having
+[18:54.80]  conversations about three different
+[18:56.96]  companies, maybe you're asking for
+[18:59.08]  relationship advice, and then all of a
+[19:01.00]  sudden um when you ask it to write a
+[19:03.36]  landing page copy,
+[19:04.96]  it's pulling in context from all these
+[19:06.48]  other places that you don't really want
+[19:07.88]  in there.
+[19:09.16]  So with these agents, um
+[19:12.28]  you need to actually set up that context
+[19:14.28]  and memory. So, as you can see, when we
+[19:15.68]  asked it to write a cold email, it just
+[19:18.52]  had no idea about anything.
+[19:21.24]  So, we need to give it a context file.
+[19:25.12]  And the way you do this, right? So, you
+[19:26.68]  can see this example here. It doesn't
+[19:28.36]  know anything about us.
+[19:29.92]  And that's because we haven't populated
+[19:32.00]  what's called an agents.md file.
+[19:35.20]  And an agents.md file is just like a
+[19:37.72]  system prompt. Just like if you've
+[19:39.32]  created any custom GPTs before, you have
+[19:41.44]  that field for custom instructions. Or
+[19:43.68]  in the project, like I just showed
+[19:44.92]  before, you have that field for custom
+[19:46.28]  instructions. And it just gives it this
+[19:48.60]  context that's kind of always there,
+[19:50.48]  always on. And you put in there things
+[19:52.44]  like its role, context about you,
+[19:56.08]  um, your preferences for working.
+[19:58.72]  And then what happens is every new
+[20:00.20]  session, before it answers your your
+[20:03.08]  query or task, it loads in all this
+[20:05.36]  context to its brain as part of that
+[20:07.64]  observe step in the loop.
+[20:10.24]  So, I have pre-prepared
+[20:13.96]  pardon me.
+[20:16.08]  So, I've pre-prepared
+[20:18.36]  a, uh, agents.md file here. So, if we
+[20:22.28]  drag this in over here,
+[20:24.60]  this, uh, when you're working within
+[20:26.32]  Claude Code, it's called a Claude.md.
+[20:28.80]  When you're working within Gemini, it's
+[20:30.52]  called a Gemini.md. But when you're
+[20:32.48]  working in within Codex or Open Claw,
+[20:35.04]  it's an agents.md. But it's all the same
+[20:37.20]  concept.
+[20:38.72]  So, we can drag this into our folder
+[20:40.40]  here.
+[20:41.44]  And if we open up this file for a little
+[20:43.44]  preview,
+[20:46.00]  we can see here, I've got in here, um,
+[20:49.20]  all about me,
+[20:50.72]  what my business does, my working
+[20:52.20]  preferences, like the tools that I use
+[20:54.40]  and what for, like Notion project
+[20:55.92]  management, Stripe, um,
+[20:59.88]  we've got, you know, all the
+[21:01.16]  information. My ideal customer, it's
+[21:02.84]  loaded with context here.
+[21:05.00]  And I pre-prepared this, but if you want
+[21:07.32]  to make one of those, you can just use
+[21:08.88]  Claude chat or co-work whatever, and you
+[21:11.24]  can ask it to help you build out this
+[21:15.00]  agents.md file, and to just ask you
+[21:17.24]  interview-style questions to extract all
+[21:19.00]  the context from you, and then build the
+[21:20.52]  file.
+[21:21.96]  So, if I jump back in,
+[21:24.52]  now if I go to a new task,
+[21:27.56]  same folder,
+[21:28.88]  and we say,
+[21:30.92]  write me a cold email,
+[21:33.56]  it's going to have all that context.
+[21:35.52]  >> Yeah.
+[21:36.76]  That's what we hope.
+[21:38.40]  >> That's what we hope.
+[21:42.08]  There we go. And it knows, you can see
+[21:44.04]  these files over here. It knows
+[21:45.88]  automatically to load in this file if
+[21:48.40]  you title it correctly.
+[21:50.92]  >> Yeah.
+[21:52.32]  It's basically just like a a reminder
+[21:54.48]  file.
+[21:55.68]  >> Yeah, pretty much. It's just like
+[21:58.12]  loading it in so it has all this set
+[21:59.76]  context before you even start working.
+[22:02.32]  And one of the other big shifts to make,
+[22:03.96]  which comes with moving from chat to
+[22:05.52]  agents, is prompt engineering used to be
+[22:08.56]  the big thing. It was like, here's the
+[22:10.36]  ultimate prompt for going viral on
+[22:12.36]  social media, or use this prompt for
+[22:14.24]  this. And now it's all about context
+[22:17.20]  engineering. It's about how well can you
+[22:19.24]  load up your agent with all the
+[22:20.56]  information about your business,
+[22:22.52]  so that your prompt can be stupidly
+[22:24.32]  simple, like write me a cold email, and
+[22:26.64]  you're still going to get an amazing
+[22:27.80]  result. Um you can see already here,
+[22:30.68]  it's already asking like, um is it a
+[22:32.84]  brand or sponsor, potential partner, or
+[22:35.00]  consulting client. So, it's already got
+[22:36.60]  that context. Um book a call.
+[22:40.24]  Um you know, it's it's it's loaded in
+[22:42.60]  everything that we've given it from that
+[22:43.88]  agents.md file.
+[22:47.28]  And then now we've got a a pretty decent
+[22:50.08]  cold email there, ready to go.
+[22:55.76]  So, that's basically agents.md files for
+[22:58.44]  you. And you want to create one of those
+[22:59.92]  to onboard your agent with all the
+[23:01.48]  context it needs. And if you have lots
+[23:03.24]  of context,
+[23:04.80]  without getting into too many advanced
+[23:06.80]  concepts here, sometimes what I will do
+[23:09.56]  is I will create like a um
+[23:12.56]  a folder called context.
+[23:15.36]  Load that in. And in here it's got
+[23:17.08]  different files about me, brand voice,
+[23:19.96]  ideal customer profile, etc., etc.
+[23:23.04]  And then in order to keep this smaller,
+[23:25.84]  I will then just say in this Claude.md
+[23:27.64]  file,
+[23:28.68]  um before answering any questions or
+[23:30.48]  before doing any tasks, read my context
+[23:32.96]  folder to understand about myself and my
+[23:35.00]  business.
+[23:36.08]  Because by default, if you just have
+[23:38.28]  this context file in here but no
+[23:39.96]  Claude.md, it won't load all that into
+[23:42.44]  the session by default. But if you tell
+[23:44.64]  it in this file that it always loads in
+[23:46.80]  to then check this file, you can start
+[23:48.96]  to like string all your context
+[23:50.44]  together.
+[23:53.04]  And a lot of people have done that with
+[23:54.08]  Obsidian. So, they'll have like in the
+[23:56.52]  Claude.md file, they'll tell it to go
+[23:58.48]  check their Obsidian vault for their
+[24:00.32]  second brain to go and find context.
+[24:02.68]  >> Mhm.
+[24:03.80]  >> So, that is agents.md files explained.
+[24:05.96]  So, that's how you actually when you're
+[24:06.92]  onboarding your agent, like our
+[24:08.36]  executive assistant, you can train it up
+[24:11.08]  on who you are and your business.
+[24:13.40]  And then as you can see here, you know,
+[24:15.08]  I've got folders for all these different
+[24:16.64]  roles in my business. And in the head of
+[24:18.12]  marketing, that Claude.md file would
+[24:20.08]  look somewhat similar, but in the top it
+[24:22.48]  would say instead like you are my head
+[24:24.32]  of marketing. You speak like this. These
+[24:27.20]  are your tasks. These are your roles.
+[24:29.04]  And then the second thing here is about
+[24:31.80]  memory
+[24:33.12]  and the self-improving loop.
+[24:34.96]  So, we've solved the problem now. Um try
+[24:37.68]  not to get too dizzy with me switching
+[24:39.12]  tabs.
+[24:40.52]  But we've solved the problem of our
+[24:43.20]  executive assistant not knowing anything
+[24:44.72]  about us or our business.
+[24:46.56]  But now we have a new problem, which is
+[24:49.04]  it doesn't really remember
+[24:51.32]  the intricate details or your
+[24:52.52]  preferences across sessions unless
+[24:54.48]  you're manually going and updating that
+[24:56.44]  Claude.md file.
+[24:58.20]  So, you can see here if we go
+[25:00.96]  um
+[25:02.44]  my favorite color is lavender.
+[25:06.32]  It'll probably say something like got
+[25:08.32]  it, noted.
+[25:09.88]  >> Yeah, that makes sense, right? Cuz it's
+[25:12.64]  and it's it's adding Where Where's that
+[25:14.56]  adding it?
+[25:16.12]  >> Well, it's not adding it, that's the
+[25:17.20]  thing. So, we can tell it my favorite
+[25:19.52]  color's lavender.
+[25:20.92]  And it's gone. The user's just shared
+[25:22.60]  you That's that thinking step. It's like
+[25:24.16]  the user's just shared this
+[25:26.68]  >> No like no nothing needed. Good to know,
+[25:29.32]  I'll keep that in mind. But then if we
+[25:31.36]  go into a new session, same folder, and
+[25:33.72]  we go
+[25:35.32]  what is my
+[25:38.92]  fav color?
+[25:41.00]  Mind my spelling.
+[25:43.00]  It's going to say I've no idea what your
+[25:44.60]  favorite color is, even though we just
+[25:46.12]  told it.
+[25:47.72]  And that um is an issue, you know, cuz
+[25:50.28]  if you're working, you know, in uh
+[25:52.08]  you've got like a head of sales or
+[25:53.44]  something and it keeps it signs off your
+[25:55.16]  emails wrong.
+[25:56.72]  And you tell it you correct it, you say
+[25:58.32]  never sign off emails with cheers, say
+[26:00.92]  warm regards.
+[26:02.68]  And it will go Okay, got it, noted. But
+[26:04.48]  then the next day you start working and
+[26:06.00]  it does the same thing again. It's like,
+[26:07.64]  what like my agent's broken. But really
+[26:10.40]  it's not it's running off those context
+[26:12.60]  files in the back and unless you are
+[26:14.12]  manually updating it, it won't know to
+[26:17.12]  save that preference.
+[26:18.76]  So, what I like to do is I like to add
+[26:21.20]  in
+[26:23.64]  something like this to my agents.md
+[26:27.16]  file.
+[26:28.20]  So, this is just a little simple thing.
+[26:29.56]  You can pause the video and copy it.
+[26:35.44]  But I like to
+[26:37.24]  I'm just going to remove that context
+[26:38.40]  file for now. That was just to
+[26:39.60]  illustrate that example of adding more,
+[26:41.80]  but we're just working with this one
+[26:43.16]  file for now. So, I'm just going to open
+[26:44.84]  this up so I can edit it.
+[26:47.60]  And I will quite often add something on
+[26:49.68]  the bottom like that little snippet.
+[26:52.72]  And this basically just says
+[26:55.24]  Actually, you know what? I might just
+[26:56.16]  add it at the top.
+[26:58.08]  Just so it's there.
+[26:59.60]  Top of mind for my agent, cuz I think
+[27:02.12]  this is really important.
+[27:05.36]  So, you can see I've just added this in
+[27:06.44]  and it just says
+[27:07.80]  read all files in context.
+[27:10.36]  Read memory.md. This is what you've
+[27:12.36]  learned over time.
+[27:14.08]  And then when I correct you or you learn
+[27:15.84]  something new, update the relevant
+[27:17.56]  section in memory.md. And it's just got
+[27:20.56]  a couple little things here. And it just
+[27:22.64]  says keep memory.md current. When
+[27:24.48]  something changes, update it in place
+[27:26.68]  and replace outdated info.
+[27:29.00]  So, we can do command S to save that.
+[27:32.16]  And then I'm going to add another file
+[27:34.12]  here.
+[27:35.52]  We can actually just duplicate this.
+[27:39.56]  And this one
+[27:41.04]  I'm going to call
+[27:43.00]  memory.md.
+[27:46.12]  And then we can open up this one.
+[27:47.96]  And I'm just going to remove all of this
+[27:49.44]  context here.
+[27:51.60]  Um except I'm just going to keep those
+[27:53.64]  sections.
+[27:55.92]  >> So, memory.md
+[27:57.84]  is basically I mean, it's just
+[28:01.04]  what it sounds like, right? It's
+[28:02.16]  basically like you want to
+[28:04.68]  >> [sighs]
+[28:05.12]  >> you know, if the goal is to build, you
+[28:07.00]  know, AI employees that do things for
+[28:08.80]  us, they're going to need to
+[28:10.60]  need to remember our preferences, right?
+[28:12.48]  A good employee remembers preferences.
+[28:14.80]  >> Exactly.
+[28:15.36]  >> And learns over time and that that
+[28:17.80]  compounds. So, memory.md
+[28:20.36]  is just a place that you can just make
+[28:22.48]  sure that
+[28:23.88]  uh over time it you know, your whatever
+[28:27.04]  you're using co-work or whatever, it
+[28:29.00]  ends up it ends up getting compounded,
+[28:31.28]  getting smarter. So, ultimately
+[28:33.88]  you might be trying things like co-work
+[28:36.24]  and and you're you're not getting good
+[28:37.88]  results. And a big part of that is you
+[28:40.12]  don't have uh
+[28:41.76]  a clo.md and memory.md sort of
+[28:44.32]  >> Yeah.
+[28:44.84]  >> set up.
+[28:45.44]  >> Exactly. Exactly. And now the thing is
+[28:47.84]  some of these agent harnesses
+[28:50.12]  have started to add in this memory
+[28:52.24]  system that we're doing manually,
+[28:54.16]  telling it to update. Some of them have
+[28:56.00]  have got that built in automatically,
+[28:57.64]  like Open Claw, and I believe like Manas
+[29:00.16]  and some of the others have that built
+[29:01.32]  in automatically. But it's still
+[29:03.00]  important to understand because it's
+[29:04.48]  just doing the same thing under the
+[29:05.68]  hood, except they've just set this up
+[29:07.48]  for you.
+[29:09.00]  Um so, we've got this here now. We've
+[29:11.56]  got our memory.md, our claw.md.
+[29:14.16]  And then now, if we go back into
+[29:18.24]  Cawork,
+[29:19.64]  if we do a new session
+[29:22.12]  in that same folder,
+[29:23.80]  and we say,
+[29:25.48]  "My
+[29:26.64]  favorite color is lavender."
+[29:31.48]  >> Better remember.
+[29:34.16]  >> For the sake of the demo, I hope that it
+[29:36.04]  that it does what it's told.
+[29:37.84]  >> It's going to remember it.
+[29:40.96]  >> You see here?
+[29:42.12]  Perfect. It's gone good. I'll remember
+[29:44.00]  that. Let me save it to memory. And now
+[29:46.36]  you've got this big memory file that
+[29:47.92]  builds up over time. And whether For
+[29:50.28]  example, this is your executive
+[29:51.32]  assistant, so it might be saving
+[29:52.56]  preferences like how to sign off emails,
+[29:55.24]  or don't connect with clients on Slack.
+[29:58.28]  I always want to keep client comms on
+[30:00.00]  email. But if you're building out like a
+[30:02.44]  head of marketing, it might be
+[30:04.16]  preferences about how you like your ads
+[30:06.12]  structured in Facebook Manager. If
+[30:08.12]  you're building If you've got a folder
+[30:09.40]  where you're working on a website or an
+[30:10.76]  app, it might be things like don't use
+[30:13.20]  dark mode, and then it will update so
+[30:15.20]  it'll never use dark mode again. And
+[30:17.16]  these just compound over time. So, as
+[30:19.28]  you start to build up these rules,
+[30:21.68]  the amount of errors go down. And And
+[30:23.20]  this just compounds and compounds over
+[30:25.64]  weeks and months.
+[30:27.68]  >> Remy, have you seen some of these
+[30:29.64]  memory.md files get so big that at a
+[30:32.68]  certain point it's just ineffective?
+[30:34.84]  >> Great question. I personally haven't
+[30:37.20]  happen have that happen to me yet. I
+[30:38.72]  haven't hit that threshold. Um but a
+[30:41.92]  best practice for those Claude MD files
+[30:44.44]  is to keep it around like no more than
+[30:46.12]  200 lines.
+[30:48.00]  And yeah, I could imagine if you started
+[30:50.40]  to build this up over years and years,
+[30:52.52]  you'd eventually hit a point where all
+[30:53.80]  the the rules are stepping on each
+[30:55.12]  other's toes.
+[30:56.52]  And you know, you could probably go
+[30:57.84]  through and do a bit of like a manual
+[30:59.00]  clear. But, I haven't hit that threshold
+[31:00.88]  yet.
+[31:01.92]  >> Cool. So, people don't need to worry
+[31:03.36]  about
+[31:04.88]  cluttering their memory MD.
+[31:08.08]  >> I wouldn't worry too much. I mean, if
+[31:09.48]  it's saving like this like the silliest
+[31:11.44]  little things, like the tiniest
+[31:13.56]  corrections, you could maybe update that
+[31:15.36]  Claude MD to say only save like
+[31:17.20]  substantial corrections, you know? And
+[31:19.00]  then you can have a bit more control
+[31:20.28]  about what it's saving.
+[31:21.76]  So, that's probably a yeah, what I would
+[31:23.24]  do there. But, once you've set this up,
+[31:26.08]  now when you say something like quit
+[31:27.96]  writing so formally, it's going to
+[31:30.52]  do the task, then update its agents
+[31:33.32]  or in this case Claude MD to keep tone
+[31:36.28]  casual, never formal. And then now in
+[31:38.72]  any new sessions, it's going to keep
+[31:40.00]  that preference over time, which is
+[31:41.92]  pretty cool.
+[31:43.16]  So, now we've got our executive
+[31:45.00]  assistant set up with
+[31:47.04]  memory and we've given him his role. We
+[31:50.20]  now need to connect our tools cuz by
+[31:52.00]  default, most of these agent harnesses,
+[31:53.84]  they just
+[31:55.28]  have web search baked in. But, if you
+[31:57.72]  want to actually start linking it up to
+[32:00.12]  your tools like Gmail, calendar, and
+[32:02.08]  everything else, which is where the real
+[32:03.24]  productivity gains are made, you need to
+[32:05.32]  do so via what's called MCP.
+[32:09.08]  And I actually got Greg, I got this MCP
+[32:11.32]  explanation from when you had on
+[32:13.56]  Is it Ross Mac?
+[32:14.36]  >> Ross Mac. Yeah.
+[32:15.44]  >> Yeah. So, this he did a great
+[32:17.08]  explanation and it just dropped into my
+[32:18.80]  head really nicely. And it's basically
+[32:20.56]  that
+[32:21.48]  before MCPs,
+[32:23.60]  your agent or your LLM, in order to
+[32:26.04]  speak to tools, it had to kind of learn
+[32:27.96]  their language cuz Claude speaks
+[32:29.48]  English, Notion speaks Spanish, Gmail
+[32:31.96]  French, your browser speaks Japanese,
+[32:34.16]  and Slack speaks Chinese. And it was
+[32:36.72]  capable of connecting to those tools,
+[32:38.80]  but it like required these extensive
+[32:40.88]  custom developments that took a long
+[32:42.32]  time.
+[32:43.32]  But then
+[32:44.44]  Anthropic actually created MCP, is that
+[32:46.92]  right?
+[32:48.76]  >> Yep, it's right. Yeah.
+[32:50.32]  >> Anthropic built MCP to basically sit as
+[32:52.52]  this translator
+[32:54.24]  in between your tools so that Claude can
+[32:56.92]  still just speak English and your tools
+[32:58.92]  can just speak their languages and this
+[33:01.28]  MCP speaks every language and then just
+[33:03.56]  translates your calls from your
+[33:06.60]  agent to the tool and then from the tool
+[33:09.08]  back to your agent. So just set a really
+[33:11.36]  easy standardized way to connect tools
+[33:13.36]  up.
+[33:14.60]  And that's what we're going to be using
+[33:15.92]  to connect all of the tools to our
+[33:17.80]  executive assistant.
+[33:19.96]  So if we go back into co-work here, you
+[33:22.80]  can see that Claude make it really,
+[33:24.28]  really easy to connect up your tools.
+[33:26.00]  You can just go to connectors, browse
+[33:28.00]  connectors and they've got like hundreds
+[33:29.92]  of all the like biggest apps that you
+[33:31.32]  probably use.
+[33:32.60]  And you can just, you know, add them,
+[33:33.88]  sign in, pretty self-explanatory.
+[33:36.20]  But I believe
+[33:37.80]  Codex would be the exact same. You know,
+[33:39.64]  you can go
+[33:41.24]  skills or
+[33:44.08]  If we go settings, they probably have
+[33:46.44]  like uh
+[33:47.64]  And then like Manas is the same. For
+[33:49.36]  example, if you go into Manas, we can
+[33:51.32]  see
+[33:52.52]  we can go and connect our tools.
+[33:55.48]  Very, very simple process and then same
+[33:57.44]  with Perplexity computer. You know, you
+[33:58.88]  got your connectors
+[34:00.56]  and you can connect all your tools in
+[34:01.68]  here. It's just all using that
+[34:03.88]  model context protocol, MCP.
+[34:07.08]  So I've already, before the episode,
+[34:09.48]  gone and connected all of the tools that
+[34:11.12]  I use most, like Gmail, Google Calendar,
+[34:13.68]  Granola, Notion. They're all set up
+[34:15.72]  already as MCPs.
+[34:17.40]  And what I'm going to do now is I'm
+[34:18.60]  actually going to
+[34:20.28]  open up this executive assistant folder
+[34:22.76]  in Claude code to sort of demonstrate
+[34:24.84]  how these harnesses are all the same and
+[34:26.60]  they work off your local files and the
+[34:29.32]  real future-proof AI stack is just
+[34:31.56]  having those markdown files on your
+[34:33.64]  computer.
+[34:34.92]  And the reason why I like to work in
+[34:36.24]  markdown files is because it's just the
+[34:38.64]  easiest sort of format
+[34:40.92]  for your LLM, for your agent to actually
+[34:43.08]  digest and understand compared to if you
+[34:45.36]  were to give it your files as like a
+[34:47.20]  docs or a PDF file.
+[34:49.68]  So, I like to use Claude Code within
+[34:52.72]  Visual Studio Code.
+[34:54.88]  Um so, you can see here, I'm just going
+[34:56.56]  to It looks very similar to
+[34:57.60]  Anti-Gravity.
+[34:58.96]  I'm just going to open up our executive
+[35:00.24]  assistant folder here.
+[35:02.36]  And the way that I see the future of
+[35:04.16]  this all going, Greg, is I think that
+[35:06.08]  everyone's going to have their what I
+[35:07.80]  call an AI OS, like an operating system.
+[35:10.72]  And this will just compound over time,
+[35:12.48]  like you saw with adding the rules and
+[35:14.12]  getting less errors.
+[35:15.56]  But, with adding your tools and then
+[35:17.28]  skills, which we'll get into, which is
+[35:18.96]  basically just training AI on your
+[35:20.64]  processes.
+[35:22.28]  And I think that everyone's going to
+[35:23.44]  have like an AI operating system they
+[35:25.44]  work in. And everyone will just have
+[35:27.32]  personal agents and agents to manage
+[35:29.00]  each department of their company.
+[35:30.96]  And people won't actually use these apps
+[35:32.72]  anymore. Like, I've connected up Gmail,
+[35:36.36]  uh Google Drive, calendar, Granola for
+[35:38.52]  my meeting notes, Stripe for payments,
+[35:40.68]  Notion for project management. And I
+[35:42.56]  don't even enter these tools anymore. I
+[35:45.08]  just sit in Claude Code as one central
+[35:46.96]  place. And an example here is I sent
+[35:49.60]  myself before the episode, I sent myself
+[35:51.88]  an email from a fake prospect.
+[35:54.64]  And I also entered in Granola a fake
+[35:57.56]  meeting with this prospect.
+[35:59.44]  So, now I can say things like um
+[36:03.00]  summarize my inbox from today.
+[36:07.36]  >> Um you know,
+[36:08.92]  so someone might ask like
+[36:10.76]  well, how important is that really, you
+[36:13.00]  know, like
+[36:15.40]  is that such a high value task? Like our
+[36:18.00]  What are high value tasks that you're
+[36:19.64]  actually getting done here?
+[36:21.83]  >> [sighs and gasps]
+[36:22.12]  >> So,
+[36:24.44]  >> Or maybe Or Or maybe you get a lot of
+[36:27.36]  emails, you know?
+[36:28.88]  >> Well, if you know, emails is a big thing
+[36:30.32]  if you do get a lot of emails, but
+[36:33.04]  just having like all those tools
+[36:34.44]  connected in one place and not having to
+[36:35.96]  switch and and copy-paste context. So,
+[36:38.60]  you'll see an example here, right? So,
+[36:39.84]  we've got summarize my inbox from today,
+[36:41.28]  which is like one of the most basic
+[36:43.16]  agent tasks ever. But, we can see this
+[36:45.20]  is one I sent earlier. We've got this
+[36:46.88]  one email here like our call today,
+[36:48.92]  excited after your call wants next
+[36:50.36]  steps.
+[36:51.44]  So, I might just say here, um
+[36:54.84]  Okay, great. I review my meeting notes
+[36:57.56]  with Maltoshi from today and then draft
+[37:01.52]  up the email sending the proposal and
+[37:04.20]  creating the Stripe payment link and
+[37:05.96]  then go into Notion and set up the
+[37:08.44]  project.
+[37:09.88]  And where this starts to compound even
+[37:11.36]  more is when you start to build out
+[37:13.08]  skills for each of your processes,
+[37:15.56]  because every time I do a process, even
+[37:17.32]  like this, manually prompting it, um
+[37:20.00]  and I know I'm going to do it again at
+[37:21.56]  some point, I'll then just turn that
+[37:23.36]  into a skill.
+[37:24.96]  Uh and then you eventually end up if you
+[37:27.08]  automate like three to five tiny manual
+[37:29.00]  processes each week with skills, you
+[37:31.08]  eventually end up
+[37:32.80]  um automating like your entire life with
+[37:34.52]  these agents.
+[37:35.76]  >> Right. So, it's it's not so much in like
+[37:37.96]  summarize my my emails where it's super
+[37:41.52]  super valuable. It's like
+[37:43.84]  that's where the starting point is and
+[37:45.36]  then we want to like manipulate it and
+[37:47.28]  use it and go deeper and stuff like
+[37:49.32]  that. That's when
+[37:50.88]  >> Exactly.
+[37:52.28]  >> these tools really really are valuable.
+[37:54.92]  >> And you can see here it's now connecting
+[37:56.32]  all my tools. So, it's going into
+[37:58.48]  Grainola and found the the full meeting
+[38:00.52]  of what we went through today.
+[38:02.68]  It's now going into Stripe to create the
+[38:05.28]  product link. Um
+[38:06.84]  >> Yep.
+[38:07.48]  >> And then it's going into Notion to set
+[38:09.88]  up the project.
+[38:11.64]  And then it will it should create the
+[38:13.92]  draft ready for us to go to send out.
+[38:16.76]  >> That this is really like a new way of
+[38:18.56]  working.
+[38:19.72]  Right?
+[38:20.08]  >> Yeah, it is. It is. It it it it it's so
+[38:22.76]  new and I and I even this task, it's
+[38:25.48]  really simple, right? Just sending an
+[38:26.68]  email based on a call with a proposal
+[38:28.48]  link and stuff. But like even if you can
+[38:31.72]  just do something like seven times
+[38:34.12]  faster without having to go into all
+[38:36.12]  these tools, copy the meeting notes into
+[38:37.84]  the
+[38:38.56]  page to give it context on your meeting.
+[38:41.24]  It really starts to compound and you
+[38:42.72]  start to fit like a week in a day and
+[38:44.60]  then seven weeks in a week. Um and you
+[38:48.00]  stack that up over a year and you're
+[38:49.04]  going to be miles ahead of everyone
+[38:50.12]  else. Uh and when we get into skills,
+[38:52.36]  you're going to see how this continues
+[38:53.76]  to get even better.
+[38:55.16]  But um you can see here
+[38:56.92]  it's drafted the email.
+[38:59.36]  It's pulled in all these insights from
+[39:02.56]  our call in Granola, which is like where
+[39:04.40]  I do my meeting notes.
+[39:06.56]  And then it's created the Stripe payment
+[39:08.36]  link.
+[39:10.16]  Here, ready to go.
+[39:11.20]  >> That's cool.
+[39:12.44]  >> And then now I can just go
+[39:14.92]  um
+[39:15.60]  send this email.
+[39:17.24]  And it will use my Gmail integration to
+[39:18.96]  to go and send it.
+[39:20.72]  Uh and then
+[39:21.84]  >> really cool.
+[39:23.00]  >> It is, hey? I think this is the new way
+[39:25.08]  of working. And Cody Schneider, who you
+[39:26.88]  had on the pod the other week, I saw a
+[39:28.52]  tweet from him and he said
+[39:30.48]  that in the future
+[39:31.88]  everyone's going to have like an AI
+[39:33.08]  operating system like this and you're
+[39:34.76]  going to have like the 100X employee
+[39:36.68]  because everyone will come into their
+[39:38.84]  role with a pre-existing AI operating
+[39:41.60]  system and then build out skills for all
+[39:44.24]  their manual processes, similar to how I
+[39:45.80]  was describing, and just keep building
+[39:47.48]  skills each week for anything manual
+[39:49.20]  that comes up until eventually their
+[39:50.56]  entire
+[39:51.84]  life and work life is automated.
+[39:54.40]  Great. So, you can see here it's now
+[39:55.64]  created the draft here in Gmail ready
+[39:57.44]  for us to to go. And if we're happy with
+[39:59.40]  it in the platform, I could also just
+[40:01.04]  ask Claude to send it there and then.
+[40:04.28]  Uh but then what like also gets really
+[40:06.88]  cool is
+[40:08.12]  I'm going to demonstrate now how I
+[40:09.40]  actually build out skills for these
+[40:11.08]  processes. So,
+[40:12.88]  I know I've talked a lot about skills so
+[40:14.16]  far. I want to just give a little
+[40:15.88]  overview on what skills actually are.
+[40:18.04]  >> Yep.
+[40:18.96]  >> So, the easiest way to think about
+[40:20.40]  skills is SOPs for AI. So, standing
+[40:23.36]  operator
+[40:24.88]  standing operated Oh my god. Standard
+[40:27.80]  operating procedures for AI.
+[40:30.00]  >> The most
+[40:32.04]  >> [laughter]
+[40:32.52]  >> It means once you explain something
+[40:34.12]  once, you never have to explain it ever
+[40:35.96]  again.
+[40:37.04]  An example of this is without skills, if
+[40:39.44]  you are creating a proposal for a client
+[40:42.04]  and you're sitting in in in your cloud
+[40:43.48]  chat or whatever agent harness you're
+[40:44.84]  using
+[40:45.92]  and you ask it to create this proposal,
+[40:48.20]  you're probably going to go back and
+[40:49.20]  forth a bunch of times. Remove change
+[40:51.88]  the formatting here. Use this color blue
+[40:54.36]  for this part. Put the price at the
+[40:56.52]  bottom instead of at the top. And
+[40:58.44]  eventually, maybe after 15 minutes, half
+[41:00.88]  an hour, you land on a proposal that
+[41:02.40]  you're really happy with.
+[41:04.28]  And you send it. And the next week, you
+[41:07.08]  want another proposal written, but
+[41:08.88]  unless you're going and finding the same
+[41:10.52]  session and working in that same
+[41:11.76]  session, it's going to have completely
+[41:13.48]  forgotten all of these preferences. And
+[41:16.32]  even if you have that memory system set
+[41:18.56]  up, these kind of things you don't
+[41:20.72]  really want clogging up your memory.
+[41:22.64]  They're better off as skills, which is
+[41:24.40]  basically it packages up that process
+[41:27.12]  into a dot skill file.
+[41:29.72]  And in that dot skill file, it's
+[41:31.96]  basically just a markdown file that
+[41:33.88]  explains the exact process that you went
+[41:35.72]  through. So, you could create a proposal
+[41:37.80]  skill.
+[41:38.92]  And then every time you now you need a
+[41:40.56]  proposal written, it just
+[41:43.04]  takes that skill, knows exactly what to
+[41:45.12]  do, and then you can have that proposal
+[41:47.96]  the same way every single time.
+[41:50.48]  >> So, is a skill like a memory file? Like,
+[41:53.28]  what's the difference between
+[41:54.64]  essentially a memory.md
+[41:57.60]  and a skill? Like, is it just is it is
+[41:59.96]  it is it is it just like a memory.md
+[42:02.68]  file for particular job to be done?
+[42:06.00]  >> pretty much like exactly it. And all of
+[42:08.20]  these agent harnesses pretty much now
+[42:10.40]  have skills as a feature.
+[42:12.76]  So, you can see here like if we go into
+[42:16.28]  Codex, for example, they've got skills
+[42:18.40]  here.
+[42:19.60]  Um same with Claude as well.
+[42:22.48]  And these when you're working with these
+[42:24.60]  agent harnesses that operate like mostly
+[42:26.80]  locally off your computer,
+[42:28.60]  um you can see here
+[42:30.68]  it actually operates out of this hidden
+[42:33.20]  file called a dot Claude folder.
+[42:35.68]  Skills, and these are all of the skills
+[42:38.24]  that I've created. There's tons.
+[42:40.32]  And if we open [clears throat] one up,
+[42:41.56]  for example,
+[42:42.96]  um like this one here, let's find a good
+[42:44.84]  one.
+[42:46.80]  For example, I've got this one here for
+[42:47.96]  writing viral hooks.
+[42:50.44]  And in this skill, we have a dot skill
+[42:53.76]  file, which is basically like your
+[42:55.20]  memory.md, which explains the exact
+[42:57.40]  process for writing viral hooks.
+[43:01.28]  And then it's also got packaged in here
+[43:03.76]  some references like hook formulas.
+[43:06.40]  >> Okay, so wait. So,
+[43:08.28]  how did you create that skill?
+[43:11.52]  >> Okay, so there's two ways that I find
+[43:14.44]  useful to create skills is one you can
+[43:16.44]  have an idea of a skill you want to
+[43:18.32]  create off the bat. So, like viral hooks
+[43:20.88]  for example, I had this course on viral
+[43:23.24]  hooks, which I transcribed, put it into
+[43:25.44]  Claude, and Claude has this by default.
+[43:27.64]  It has a skill creator skill added into
+[43:30.00]  it. Same with all of the major agent
+[43:31.76]  harnesses, they'll have a skill creator
+[43:33.12]  skill. So, it's kind of like
+[43:34.48]  skill-ception. You use the skill creator
+[43:36.68]  skill, and you say, "Hey, take this
+[43:39.60]  course on viral hooks and create a viral
+[43:41.48]  hook skill." And it can create it like
+[43:43.08]  that. That's one way.
+[43:45.12]  Uh and then it will package it up nicely
+[43:47.16]  with that skill.md. It'll do the whole
+[43:48.72]  thing for you.
+[43:49.88]  >> Wait, you you you asked you asked it to
+[43:52.44]  take the course?
+[43:55.12]  >> Yeah, I I uploaded the course like the
+[43:57.52]  full transcript of the course.
+[43:59.60]  >> Literally.
+[44:00.12]  >> And I said uh
+[44:02.12]  yeah, based on this course on viral
+[44:03.88]  hooks, build me a viral hook skill.
+[44:07.12]  Uh and then I use that for my content
+[44:09.64]  team. So, just like we're building the
+[44:11.28]  executive assistant folder, I've got a
+[44:12.76]  folder called content team, and I've got
+[44:14.68]  that
+[44:15.04]  >> Yeah.
+[44:15.52]  >> that uses that skill for me.
+[44:17.44]  And the second way to create skills is
+[44:20.32]  going through a process manually once
+[44:22.44]  with Claude.
+[44:23.60]  And then if you know you're going to
+[44:24.72]  have to do it again, like that proposal
+[44:26.16]  example,
+[44:27.48]  you can just say once you've done the
+[44:28.96]  task, "Hey, create a skill for what we
+[44:31.16]  just did." And it will package up that
+[44:32.60]  process you went through. And that's the
+[44:34.08]  second main way that you can create
+[44:35.68]  skills.
+[44:37.12]  >> So, in your viral hook example, if you
+[44:39.32]  go into that folder again,
+[44:41.24]  >> Yeah.
+[44:41.92]  >> so you have a references folder.
+[44:44.76]  >> Yeah.
+[44:45.60]  >> So, that is probably
+[44:49.56]  like was that Yeah, let's open it. I'm
+[44:51.16]  just curious.
+[44:53.08]  >> So, here it's got a full thing about
+[44:56.00]  like
+[44:56.12]  >> So, was this from the course?
+[44:57.68]  >> he is a bit screwed. Yeah, this was
+[44:59.24]  basically from like a a
+[45:00.60]  course I put into it.
+[45:02.24]  >> And did you ask it to create a
+[45:04.60]  references folder? Like how should
+[45:05.84]  people think about
+[45:07.24]  >> No, it just did it. It just did it. So,
+[45:09.04]  I think what would be great is if we
+[45:10.36]  could actually um, demonstrate building
+[45:13.40]  a skill live.
+[45:14.44]  >> Let's do it.
+[45:15.28]  >> Um, and so, for example, like this
+[45:18.12]  process here,
+[45:20.04]  um, I might I could create a skill
+[45:22.60]  called like a daily brief skill, you
+[45:24.36]  know, that goes through and summarizes
+[45:26.12]  like your calendar, your inbox, and your
+[45:29.12]  projects in Notion, and plans out your
+[45:31.20]  day for you in the morning. And then you
+[45:33.16]  can run that on a scheduled task,
+[45:35.00]  because
+[45:36.04]  uh, a lot of these agent harnesses now
+[45:37.72]  are starting to introduce scheduled
+[45:38.92]  tasks.
+[45:40.28]  So, you can just run it on 9:00 a.m.
+[45:41.72]  every morning, "Use my daily brief skill
+[45:44.00]  to prepare me for my day."
+[45:45.84]  But I think another cool one here, just
+[45:47.68]  to show you an example, right, of how
+[45:50.88]  my new like how intricate I make these
+[45:52.80]  skills, is let's just say for this
+[45:55.08]  fictional meeting I had with this
+[45:56.80]  person,
+[45:58.40]  I might say,
+[45:59.88]  um,
+[46:02.08]  "Can you draft up an email? I want to
+[46:04.96]  refer Maltoshi to my good friend
+[46:07.92]  Sebastian, who has an AI automation
+[46:09.96]  agency
+[46:11.52]  and can help them out better with their
+[46:12.92]  needs.
+[46:17.64]  And then we can just go
+[46:19.32]  um
+[46:20.84]  Sebastian's
+[46:22.60]  email is
+[46:25.52]  And we can just say that, right? And
+[46:27.00]  then now it's going to be able to
+[46:30.04]  take the notes from Granola, all the
+[46:32.84]  contacts, and then draft an email
+[46:34.44]  connecting these two,
+[46:36.68]  um a prospect with a friend. And you
+[46:38.68]  know, I have different like referral
+[46:39.84]  things set up like that with people in
+[46:41.64]  marketing agencies. And that's just like
+[46:43.72]  a little manual process there. Tiny. It
+[46:45.48]  maybe takes 15 minutes out of my day.
+[46:47.72]  But then I can just go
+[46:50.40]  I want you to use your skill creator
+[46:52.20]  skill
+[46:53.28]  and create a Sebastian refer skill so
+[46:57.08]  that whenever I ask you to refer someone
+[46:58.92]  to Sebastian
+[47:00.64]  you know exactly what to do and you know
+[47:03.16]  his email address.
+[47:10.44]  And then that'll build out that tiny
+[47:11.92]  skill for us, tiny process. But it means
+[47:14.60]  I like I know in the future I'm going to
+[47:16.16]  have to refer someone to Seb again. And
+[47:18.36]  even if this skill now saves me 15
+[47:20.48]  minutes another five or six times
+[47:23.48]  they start to compound when you create
+[47:25.00]  skills for every single little process
+[47:26.76]  in your business.
+[47:28.20]  >> Yeah, I guess it's like
+[47:31.40]  we should just be asking ourselves like,
+[47:33.68]  you know, in our day-to-day life, like
+[47:35.08]  what are all the jobs to be done?
+[47:37.32]  >> Yeah.
+[47:37.68]  >> are all skills that we need? Like what
+[47:39.92]  are the
+[47:40.64]  repetitive processes or SOPs as you
+[47:43.88]  >> Yeah.
+[47:44.24]  >> talked about. And then just
+[47:46.28]  setting up as many as possible.
+[47:48.72]  Right? To make our lives easier.
+[47:50.48]  >> Exactly. And just to give you a little
+[47:52.52]  demo here. So
+[47:54.52]  I sort of I to that folder structure at
+[47:57.08]  the start of the video. And this is it
+[47:59.24]  here. So we've got workspaces AI with
+[48:01.28]  Remy.
+[48:02.48]  And for example, I can open up my
+[48:03.64]  content team.
+[48:06.72]  And within this folder
+[48:08.52]  uh this is just like a more elaborate
+[48:10.32]  version of our executive assistant, but
+[48:12.52]  we've got our Claude.md in here, which
+[48:14.92]  explains
+[48:16.60]  um you are like the main orchestrator,
+[48:19.88]  you have these sub-agents. It's just a
+[48:22.64]  more elaborate version of that
+[48:23.84]  Claude.md.
+[48:25.32]  But I've got a skill within this for
+[48:28.84]  like a meta ads analysis. So that was a
+[48:30.80]  process, for example, if you're a
+[48:32.16]  marketing agency owner, this is probably
+[48:34.00]  like the kind of stuff that you can get
+[48:35.32]  inspiration from.
+[48:36.88]  Um like ads analyzing, you know, taking
+[48:38.84]  competitors ads libraries, breaking down
+[48:40.92]  all the creatives um and their landing
+[48:43.36]  pages. So I built out this ads analyst
+[48:46.08]  skill, where I literally just do ads
+[48:48.44]  analyst, and then I paste in like the
+[48:51.76]  ads library URL like that.
+[48:54.84]  And I'll click run, and I did an example
+[48:56.88]  yesterday with the Udi, which is a super
+[48:59.16]  large e-com brand, and it ran through
+[49:02.12]  and basically scraped all of It took
+[49:05.04]  screenshots of all the landing pages.
+[49:07.16]  It went and scraped all of the ads that
+[49:09.24]  they're running, all like 220.
+[49:11.68]  It then did a full deep dive here on all
+[49:14.80]  the ads.
+[49:16.00]  Visual analysis, copy analysis, why did
+[49:18.28]  this work, what could be improved. It
+[49:20.28]  basically did a breakdown of all the
+[49:21.60]  landing pages with screenshots.
+[49:24.20]  >> Hmm.
+[49:25.44]  >> And it did a master report here about
+[49:27.88]  everything that's going on. So it did it
+[49:28.92]  just did a full breakdown. And that was
+[49:30.08]  like a manual process that I would have
+[49:31.76]  gone through when I used to run like my
+[49:33.04]  marketing agency, and that probably
+[49:35.32]  would have taken me like
+[49:36.80]  three or four hours.
+[49:38.24]  And then I went through to build out
+[49:40.36]  this skill, I went through the process
+[49:42.40]  once with Claude. Like I started a fresh
+[49:43.96]  session, and I was like, all right, go
+[49:45.84]  to this ads library URL, scrape this, do
+[49:48.56]  this, do this, do this for for two
+[49:50.64]  hours. And then after I've done the
+[49:52.72]  entire process
+[49:54.16]  I just said use your skill creator skill
+[49:57.12]  to make a skill
+[49:58.88]  for ads analyzing and package up the
+[50:01.64]  entire process we just went through as a
+[50:03.68]  skill.
+[50:04.76]  And then now whenever I want to do that
+[50:06.16]  process again I can just
+[50:07.96]  invoke the skill and it and it knows
+[50:09.56]  what to do.
+[50:10.92]  Which is pretty cool.
+[50:11.60]  >> Crazy. Crazy.
+[50:13.80]  >> Absolutely crazy. So if So now the the
+[50:16.08]  refer Sebastian skill is live
+[50:18.36]  and now whenever I want to refer someone
+[50:21.44]  to Sebastian again I can just say um
+[50:23.68]  yeah refer to Sebastian and it will just
+[50:25.60]  start to use it will use that skill.
+[50:27.48]  That's example there tiniest process but
+[50:30.44]  you build like those up for all these
+[50:32.40]  little tasks you do day to day
+[50:34.52]  and then
+[50:35.80]  it just compounds and compounds and
+[50:36.96]  compounds. And I can already think of an
+[50:38.40]  idea here where you could then you can
+[50:41.28]  chain skills together.
+[50:43.24]  So you could example have like a a
+[50:45.52]  meeting prep skill
+[50:47.28]  that prepares you for a meeting by
+[50:49.72]  researching the guest
+[50:51.80]  um and compiling some talking points.
+[50:53.44]  You might have like a podcast research
+[50:55.12]  skill for example Greg for a guest
+[50:56.96]  that's coming on.
+[50:58.48]  And
+[50:59.60]  you might also create a a morning brief
+[51:01.40]  skill.
+[51:02.64]  And in the morning brief skill you can
+[51:04.72]  say if there's any meetings
+[51:07.16]  uh coming up or podcasts in my day use
+[51:09.80]  the podcast research skill
+[51:12.80]  um to research the the the guest. And
+[51:15.64]  you can like chain them together
+[51:17.60]  uh and build like some really really
+[51:18.96]  cool workflows.
+[51:21.16]  >> Yeah and you can have it so it sends you
+[51:23.36]  an email right?
+[51:25.20]  >> Yeah exactly. And then now these
+[51:27.20]  harnesses are starting to get more and
+[51:28.44]  more autonomous. Like they're starting
+[51:29.64]  to add like you know in the car they're
+[51:30.80]  starting to add like cruise control and
+[51:32.20]  stuff. Like now within most of these
+[51:33.76]  harnesses you can schedule tasks
+[51:37.56]  um like in co-work or cloud code now and
+[51:40.32]  you can like for example this one here
+[51:42.56]  you can go new task and I could say like
+[51:45.68]  uh
+[51:46.64]  run my morning briefing skill.
+[51:51.92]  And then set that to go every every
+[51:53.32]  morning at 9:00 a.m. And then now it's
+[51:55.68]  like an automated workflow that like
+[51:58.24]  you've just got running every morning
+[51:59.56]  now, which is pretty cool.
+[52:00.60]  >> Yeah, I'm I'm doing this right now. Like
+[52:03.32]  for example,
+[52:04.80]  I'm I'm buying a new car right now and
+[52:07.64]  it's like a particularly unique
+[52:10.80]  like color that I want and feature set
+[52:13.60]  and there's just none none really
+[52:15.32]  available, so you know, every 3 hours I
+[52:18.32]  I have I'm scraping all the different
+[52:21.12]  car marketplaces
+[52:23.16]  >> That's great.
+[52:23.56]  >> and
+[52:24.32]  and then I'm getting a notification that
+[52:26.00]  you know, it when something comes up and
+[52:28.56]  it's
+[52:29.72]  it's crazy, right? Like it saves me
+[52:32.92]  I'm one of those people that like
+[52:35.04]  if I didn't have this, I would be
+[52:36.96]  spending an hour of my day just like
+[52:39.08]  checking
+[52:40.36]  religiously every single, you know,
+[52:42.76]  CarMax and cars.com and Autotrader and
+[52:46.96]  all these websites and refreshing like a
+[52:49.00]  insane person.
+[52:50.68]  Um so yeah, the schedule to not
+[52:53.76]  >> great great example there. But you know,
+[52:55.80]  this like this is a skill that would be
+[52:57.96]  relevant for my executive assistant.
+[53:00.04]  Same with that car one. That could be a
+[53:01.36]  good executive assistant skill. But then
+[53:03.64]  I've got those more elaborate skills
+[53:05.20]  built out for like, you know, my um
+[53:07.72]  content team that ads library scraping
+[53:09.76]  one. And then um I've got like, you
+[53:12.52]  know, re- a research weekly research
+[53:14.72]  skill for my newsletter team. And that
+[53:16.88]  runs on a schedule every Thursday
+[53:18.28]  morning to go and scrape like I've built
+[53:20.36]  the skill out so it goes and scrapes
+[53:21.68]  Twitter and Reddit to find what's new in
+[53:23.80]  AI.
+[53:25.16]  Um but yeah, skills are so so powerful.
+[53:28.48]  Um combine them with like your MCP so it
+[53:30.40]  can use your tools and then you can
+[53:32.20]  start to just train up your agent on all
+[53:33.76]  the processes in your business. And I
+[53:36.36]  did a um a build out on Open Claw for a
+[53:41.04]  agent to manage meta ads, and it went
+[53:43.00]  pretty viral.
+[53:44.60]  And
+[53:45.60]  the the way I built this was with all
+[53:47.52]  these key concepts. So, Open Claw
+[53:49.88]  functions the exact same way. So, I I
+[53:53.00]  hope it hasn't timed out, but I've
+[53:54.72]  remote accessed into my Open Claw
+[53:56.32]  dashboard here.
+[53:57.88]  And you can see
+[53:59.60]  it's just operating off an agents.md
+[54:01.52]  file in the backend. But, instead of the
+[54:03.52]  dot claw folder, it's in a dot open claw
+[54:05.32]  folder. And then it's got a couple of
+[54:06.96]  these other ones here. It's got a
+[54:07.84]  memory.md.
+[54:09.52]  It's got some of these other ones that
+[54:11.40]  it's added on, like a soul which tells
+[54:13.36]  it its personality, and an identity
+[54:15.28]  which tells it who it is.
+[54:17.76]  But, it's that same concept of markdown
+[54:20.72]  context files
+[54:22.84]  connecting your tools, and then creating
+[54:25.00]  skills. So, that
+[54:27.00]  uh meta ads manager one that went pretty
+[54:28.44]  viral,
+[54:29.52]  I just planned it out with Claude. I was
+[54:30.80]  like, "I want to have this Open Claw
+[54:31.84]  manage my meta ads.
+[54:33.44]  Help me write the agents.md file to tell
+[54:36.08]  it you are my meta ads media buyer. You
+[54:38.48]  do these processes." And then I created
+[54:41.00]  skills. So, I created a
+[54:44.76]  ad creative skill.
+[54:46.52]  Um so, it knew to go look in the Dropbox
+[54:49.24]  folder and create creatives.
+[54:51.76]  I created a copywriting skill, so it
+[54:54.20]  knew how to write good copy for the
+[54:55.72]  business.
+[54:56.88]  Um
+[54:58.20]  and I just built out there's probably
+[54:59.44]  maybe 15 different skills. And then I
+[55:01.84]  would combine scheduled tasks, which is
+[55:03.88]  cron jobs, with skills, and the context
+[55:07.12]  files, and then just give it all the
+[55:09.36]  tools it needed.
+[55:10.76]  Um and just following the same process
+[55:13.08]  as we just went through to build the
+[55:14.04]  executive assistant, I had an Open Claw
+[55:16.68]  meta ads media buyer, which was sick.
+[55:19.52]  >> I love it. And for the beginner, are you
+[55:21.32]  like would you recommend people, you
+[55:23.16]  know, use Open Claw, or should they be
+[55:25.24]  using Co-work or Manas and some of the
+[55:27.76]  ones you showed?
+[55:29.52]  >> So, great question.
+[55:31.80]  Uh
+[55:32.96]  I would say that Open Claw is probably
+[55:34.56]  like one of the hardest to learn and set
+[55:36.72]  up of these harnesses. I would say
+[55:39.12]  Claude Code is probably the easiest.
+[55:41.32]  I think Perplexity Compute, you did a
+[55:42.64]  video on it. Um it's pretty simple, too.
+[55:44.88]  Same with Mana.
+[55:45.68]  >> Easy.
+[55:46.92]  >> Um but I would definitely learn
+[55:50.24]  um and get comfortable using like Claude
+[55:52.60]  Code or um one of these other ones
+[55:54.64]  before I started to play around with
+[55:56.04]  Open Claude. And I would also
+[55:58.56]  uh have all the processes built out in
+[56:00.56]  Claude Code first. So, for example, that
+[56:02.44]  executive assistant, over the next
+[56:05.60]  uh 2 weeks, I might build out a bunch of
+[56:07.80]  skills, like the Sebastian refers skill,
+[56:10.40]  um like a daily brief, meeting prep,
+[56:13.12]  etc. etc. And then once I'm happy with
+[56:15.80]  how it's all functioning in Claude Code,
+[56:17.76]  then I could look to migrate that into
+[56:19.52]  Open Claude, where it has that more
+[56:21.12]  autonomous nature to it.
+[56:23.08]  So, that's kind of how I think about
+[56:24.60]  using Open Claude and those other
+[56:26.00]  harnesses.
+[56:27.64]  >> Yeah.
+[56:28.80]  Cool. All right, anything else you
+[56:30.16]  wanted to
+[56:31.40]  >> Um
+[56:31.84]  >> cover?
+[56:32.68]  >> I mean, like really, there's no right or
+[56:34.08]  wrong way to run these. Like that was
+[56:35.56]  the executive assistant.
+[56:37.32]  I've got one built out for all the other
+[56:39.04]  departments in my business, and then
+[56:40.44]  other businesses I work on, I have the
+[56:41.76]  same. Um
+[56:43.28]  and you can just kind of build out that
+[56:45.20]  structure with what works for you.
+[56:47.56]  Um you've got like one other thing to
+[56:50.40]  mention is global versus project level,
+[56:52.24]  which I'll just go over super quick. So,
+[56:54.16]  like those skills, for example,
+[56:56.44]  um you can add them at a global level,
+[56:58.88]  which means they apply to every single
+[57:01.12]  project you work in, whether it's the
+[57:02.40]  executive assistant, your head of
+[57:03.72]  marketing. And some skills you want
+[57:06.60]  globally cuz you might use them in every
+[57:08.12]  chat. Um like
+[57:11.36]  a
+[57:12.92]  um truncate skill that I created, which
+[57:15.80]  just makes whenever I want to make
+[57:17.32]  something shorter, it makes it shorter
+[57:20.04]  without compressing the sentences, but
+[57:21.80]  just removing sentences that don't need
+[57:23.60]  to be there.
+[57:24.84]  And that's something I want in every
+[57:25.80]  session. So, I've got that in global.
+[57:27.72]  But you can have project level skills,
+[57:29.60]  like that um
+[57:31.68]  Sebastian refers skill, I would not want
+[57:34.16]  that with my marketing head of marketing
+[57:36.44]  cuz it's just like plugs up the context
+[57:38.64]  and you don't need it there.
+[57:40.24]  Um, so I would have that as a project
+[57:41.76]  level for example. And you can have
+[57:44.28]  um, global skills versus project skills,
+[57:46.60]  global Claude dot MD versus project
+[57:49.28]  Claude dot MD. And same with MCPs, you
+[57:51.36]  have global MCPs and project MCPs.
+[57:53.68]  That's probably the other concept
+[57:55.88]  um, to go over.
+[57:57.56]  But look, other than that, that's pretty
+[57:58.96]  much the entire agents crash course. So,
+[58:01.36]  it's just that loop running in the back
+[58:03.00]  end to complete your task
+[58:05.00]  and connecting in your tools, your
+[58:07.60]  context, and the LLM all in one place.
+[58:11.16]  Uh, and I would just say to to work out
+[58:13.28]  what roles you want to start to build
+[58:15.08]  out an agent for,
+[58:16.52]  go into Claude or your favorite chat
+[58:18.32]  model and get it to help you build out
+[58:20.44]  those
+[58:21.76]  uh, context files through an interview
+[58:23.36]  style process. Just say ask me questions
+[58:25.36]  to build this out.
+[58:27.12]  I would connect all the tools that you
+[58:28.20]  need and then start building out the
+[58:29.96]  skills through daily use.
+[58:32.56]  And then pretty soon you're going to
+[58:33.76]  have like pretty powerful AI agents
+[58:35.72]  built for every single um, aspect and
+[58:37.84]  department of your business.
+[58:39.20]  >> Ramy, thank you so much. I'll include
+[58:41.32]  links uh, in the show notes, in the
+[58:43.40]  description, where you can go follow
+[58:45.52]  him, get to know him a little bit
+[58:47.04]  better. And uh, I appreciate you coming
+[58:50.32]  on dropping some sauce. Thank you, man.
+[58:52.40]  >> Thank you so much for having me on,
+[58:53.36]  Greg. It's been a blast.

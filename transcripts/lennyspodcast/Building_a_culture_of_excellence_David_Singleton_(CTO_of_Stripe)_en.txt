@@ -1,0 +1,2830 @@
+Title     : Building a culture of excellence | David Singleton (CTO of Stripe)
+Video ID  : F0_IKKY3HCk
+URL       : https://www.youtube.com/watch?v=F0_IKKY3HCk
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2821
+Saved at  : 2026-06-21 01:38:22
+------------------------------------------------------------
+
+[00:00.00]  The way we think about product
+[00:01.08]  development, it's
+[00:02.16]  it really is to find the correct set of
+[00:05.48]  early users to kind of co-create the
+[00:07.68]  product with. Maybe the best example of
+[00:09.76]  that is Stripe Billing. When we got to
+[00:11.40]  starting the Stripe Billing product, we
+[00:13.48]  realized that there were a number of our
+[00:16.12]  existing users. These were companies
+[00:17.96]  like Figma and Slack and who were
+[00:20.08]  already using Stripe for payments, but
+[00:22.68]  had these subscriptions business models.
+[00:24.68]  And we figured that there were going to
+[00:26.04]  be many more of these kind of companies
+[00:27.56]  into the future and we we could see that
+[00:29.72]  they were really kind of pushing the
+[00:31.04]  boundaries of what was possible here. So
+[00:32.56]  we decided to co-create the product with
+[00:33.88]  them. So we had shared Slack channels,
+[00:35.56]  we'd actually show them product on a
+[00:36.88]  very regular basis, get their feedback
+[00:38.96]  on it. And only when that original kind
+[00:41.60]  of alpha group was super super happy
+[00:44.36]  with the product did we then think it
+[00:45.80]  might be ready to go to to a broader
+[00:47.44]  audience. So that's just how we build
+[00:49.52]  product at Stripe. And that means that
+[00:51.52]  every engineer building product at
+[00:53.16]  Stripe really has many of the kind of
+[00:56.24]  attributes and will exercise many of the
+[00:58.00]  attributes that you'll often find in in
+[00:59.88]  PMs in in other companies.
+[01:04.20]  Welcome to Lenny's Podcast where I
+[01:06.44]  interview world-class product leaders
+[01:07.96]  and growth experts to learn from their
+[01:09.60]  hard-won experiences building and
+[01:11.16]  growing today's most successful
+[01:12.68]  products. Today my guest is David
+[01:14.76]  Singleton. David is Chief Technology
+[01:17.04]  Officer at Stripe where he's responsible
+[01:19.32]  for guiding its engineering and design
+[01:21.20]  teams, a role he's had for over 5 years.
+[01:23.96]  Prior to Stripe, David was VP of
+[01:25.44]  Engineering at Google where he spent
+[01:27.28]  over a decade. And in hearing from
+[01:29.12]  David, you'll quickly be able to tell
+[01:30.92]  how passionate he is about the craft of
+[01:33.08]  building great products and building
+[01:35.00]  great teams. We dig into Stripe's unique
+[01:37.64]  approach to hiring, how they built a
+[01:39.88]  very product-oriented engineering team
+[01:42.24]  which allowed them to hold off on hiring
+[01:43.76]  their first product manager for many,
+[01:45.12]  many years, how they operationalized
+[01:47.32]  their operating principle of be
+[01:49.28]  meticulous in your craft including a
+[01:51.76]  number of fascinating internal processes
+[01:53.80]  like engineer-cations,
+[01:55.72]  walking the store, and something called
+[01:57.48]  friction logging. David also shares what
+[01:59.60]  it takes to run an engineering culture
+[02:01.80]  with the uptime and scale requirements
+[02:03.88]  of a Stripe plus how AI is already
+[02:06.84]  impacting how they work and lessons
+[02:09.04]  around leadership, management, and
+[02:10.84]  planning. I'm so thankful David carved
+[02:13.04]  out time to come on the podcast and I
+[02:14.88]  know that you'll learn something
+[02:15.88]  valuable from it. With that, I bring you
+[02:18.12]  David Singleton after a short word from
+[02:20.36]  our sponsors.
+[02:22.64]  This episode is brought to you by
+[02:24.28]  Mixpanel offering powerful self-serve
+[02:26.64]  product analytics. If you listen to this
+[02:29.24]  podcast, you know that it's really hard
+[02:31.32]  to build great product without making
+[02:33.04]  compromises. And when it comes to using
+[02:35.04]  data, a lot of teams think that they
+[02:36.76]  only have two choices: make quick
+[02:38.52]  decisions based on gut feelings or make
+[02:41.12]  data-driven decisions at a snail's pace.
+[02:43.48]  But that's a false choice. You shouldn't
+[02:45.56]  have to compromise on speed to get
+[02:47.24]  product answers that you can trust. With
+[02:49.64]  Mixpanel, there are no tradeoffs. Get
+[02:51.60]  deep insights at the speed of thought at
+[02:53.44]  a fair price that scales as you grow.
+[02:55.64]  Mixpanel built powerful and intuitive
+[02:57.52]  product analytics that everyone can
+[02:59.36]  trust, use, and afford. Explore plans
+[03:02.24]  for teams of every size and see what
+[03:04.36]  Mixpanel can do for you at mixpanel.com.
+[03:07.28]  And while you're at it, they're hiring.
+[03:09.44]  Check out mixpanel.com to learn more.
+[03:13.12]  This episode is brought to you by Eppo.
+[03:15.36]  Eppo is a next-generation AB testing
+[03:17.32]  platform built by Airbnb alums for
+[03:19.32]  modern growth teams. Companies like
+[03:21.24]  DraftKings, Zapier, ClickUp, Twitch, and
+[03:24.20]  Cameo rely on Eppo to power their
+[03:26.04]  experiments. Wherever you work, running
+[03:27.88]  experiments is increasingly essential.
+[03:30.32]  But there are no commercial tools that
+[03:31.92]  integrate with a modern growth team
+[03:33.28]  stack. This leads to wasted time
+[03:34.92]  building internal tools or trying to run
+[03:37.04]  your own experiments through a clunky
+[03:38.72]  marketing tool. When I was at Airbnb,
+[03:40.56]  one of the things that I loved most
+[03:41.88]  about working there was our
+[03:42.96]  experimentation platform where I was
+[03:44.92]  able to slice and dice data by device
+[03:47.40]  types, country, user stage. Eppo does
+[03:50.40]  all that and more delivering results
+[03:51.88]  quickly, avoiding annoying prolonged
+[03:53.72]  analytics cycles, and helping you easily
+[03:55.68]  get to the root cause of any issue you
+[03:57.52]  discover. Eppo lets you go beyond basic
+[03:59.96]  click-through metrics and instead use
+[04:01.68]  your north star metrics like activation,
+[04:04.00]  retention, subscription, and payments.
+[04:06.72]  Eppo supports tests on the front end, on
+[04:08.80]  the back end, email marketing, even
+[04:10.96]  machine learning clients. Check out Eppo
+[04:13.16]  at geteppo.com.
+[04:15.44]  That's geteppo.com and 10x your
+[04:17.96]  experiment velocity.
+[04:22.76]  David, welcome to the podcast. Thanks
+[04:25.60]  for having me, Lenny. It's great to be
+[04:26.80]  here. I know Stripe Sessions is coming
+[04:29.32]  around the corner in later next week and
+[04:31.96]  I imagine it's a pretty hectic time for
+[04:33.36]  you. And so I just want to extra
+[04:35.40]  appreciate you making time for this in
+[04:36.72]  the middle of all that. Thank you. Well,
+[04:38.48]  it's it's a pleasure. It's a lot of fun.
+[04:40.08]  Stripe Sessions is our annual user
+[04:41.88]  conference. So we get together a bunch
+[04:43.80]  of folks from businesses building on
+[04:45.28]  Stripe and it's a great opportunity both
+[04:47.64]  to share what we've been up to over the
+[04:49.56]  last year, but also just learn a lot
+[04:51.28]  from them about, you know, what what
+[04:53.48]  they would like to see us doing. And so
+[04:55.32]  I find it very energizing. It is of
+[04:57.16]  course a lot of work to put it together.
+[04:58.56]  In particular, I'm spending a bunch of
+[05:00.00]  time getting some demos together today
+[05:01.64]  which I love building demos. So it's a
+[05:03.68]  real pleasure to to join you today. So
+[05:05.72]  as I was preparing for this
+[05:07.40]  conversation, I kind of realized that
+[05:09.92]  the Stripe alumni are are just killing
+[05:12.04]  it on this podcast both in terms of the
+[05:13.92]  number of people that have come from
+[05:15.56]  Stripe and also just in terms of the
+[05:17.12]  quality and the popularity of some of
+[05:18.32]  the episodes. So folks like Claire
+[05:20.24]  Hughes Johnson and Shreyas Doshi and
+[05:22.88]  Aika and my first question is
+[05:25.32]  essentially, what is it that you all do
+[05:27.52]  that allows you to attract hire, close,
+[05:31.28]  keep people of that caliber? And I'm not
+[05:34.28]  going to accept just we keep a high bar
+[05:36.36]  or we just spend a lot of time on
+[05:37.48]  hiring. I'm curious just like what is it
+[05:39.20]  that you all do that you think you that
+[05:40.44]  other companies don't do that's maybe
+[05:41.84]  unique to the way Stripe finds and
+[05:43.20]  hires. Well, yeah, I'd love to tell you
+[05:45.28]  more about how we find and hire people.
+[05:47.00]  I I think it makes sense to kind of zoom
+[05:48.40]  out for a second cuz it it's material
+[05:49.88]  here. So think about what Stripe's
+[05:51.24]  doing. Our core thesis is that the
+[05:53.44]  internet economy is going to be much
+[05:55.68]  bigger and more important in the future
+[05:57.12]  than it is today and that's certainly
+[05:58.76]  played out over the last 10 years. And
+[06:00.64]  so we are really a a business full of
+[06:05.12]  product-minded
+[06:07.04]  builders who are seeking to make it
+[06:09.84]  easier for businesses to get started and
+[06:11.84]  to operate against that backdrop. And
+[06:14.04]  so, you know, we got started building a
+[06:16.16]  credit card payments API. Before Stripe
+[06:19.00]  came along, accepting credit card
+[06:21.16]  payments online was way too hard. You
+[06:23.56]  had to
+[06:24.72]  go talk to your bank, you had to maybe
+[06:26.84]  sign a contract with Visa and
+[06:27.92]  MasterCard. You then had to kind of
+[06:30.00]  string together all of this very
+[06:31.64]  complicated infrastructure and it then
+[06:33.72]  put a bunch of kind of restrictions and
+[06:35.64]  requirements on the business. And John
+[06:37.60]  and Patrick were co-founders of a
+[06:38.68]  previous business and they they tell
+[06:41.32]  this funny story actually which is while
+[06:42.60]  they were building that company, they
+[06:44.24]  assumed it was an internet company. They
+[06:45.72]  assumed the hardest thing was going to
+[06:46.96]  be like putting together hardware in a
+[06:49.52]  data center. But it turned out that
+[06:51.24]  because there were services like AWS
+[06:52.72]  around by then, that that was actually
+[06:54.36]  quite easy. However, when it came to
+[06:56.52]  accepting payments in that business, it
+[06:58.00]  was just as hard as they'd expected
+[06:59.56]  building hardware to be. They had to
+[07:00.64]  actually deploy some physical hardware,
+[07:02.20]  they had to do a whole bunch of these
+[07:03.28]  partnerships and it was very difficult
+[07:05.08]  especially as an upstart, you know,
+[07:06.68]  folks that didn't have any reputation
+[07:08.08]  yet to kind of be taken seriously and be
+[07:09.72]  able to to crack into that. And so
+[07:11.64]  that's kind of the inspiration behind
+[07:12.76]  Stripe. So we started out solving a
+[07:16.28]  really kind of important and profound
+[07:17.84]  problem for these businesses getting
+[07:19.16]  started and scaling. And obviously
+[07:20.68]  taking a a very developer-centric
+[07:22.08]  approach to that in the early days.
+[07:24.16]  I think what's exciting to know about
+[07:26.52]  and important to know about next is as
+[07:28.56]  we've scaled,
+[07:30.20]  we really kind of figure out what to do
+[07:32.60]  based on paying really close attention
+[07:36.12]  to our users. Those are the businesses
+[07:37.52]  building on Stripe. What are they
+[07:39.08]  getting out of the products as they are
+[07:40.88]  today? And what are the problems
+[07:42.44]  adjacent to the ones that we're already
+[07:43.92]  solving that they, you know, have to put
+[07:45.88]  a lot of their own energy into but
+[07:47.20]  really feel like they shouldn't and
+[07:48.28]  they'd like us to help. And when we find
+[07:50.72]  that confluence of kind of need and and
+[07:52.76]  then the adjacency to what we're already
+[07:53.96]  doing, that's usually our invitation to
+[07:55.84]  go and build the next layer of our
+[07:57.32]  economic infrastructure. So we think
+[07:58.68]  about what we do today is building
+[07:59.96]  economic infrastructure for the internet
+[08:01.80]  and beyond. So to bring this back to
+[08:04.00]  like how do we attract the the right
+[08:06.16]  talent and and and and you know, why why
+[08:08.08]  does this matter?
+[08:09.32]  First of all, a lot of people, most
+[08:11.36]  people I think come to Stripe because
+[08:12.84]  they see that there is this great
+[08:14.36]  opportunity to help businesses at scale.
+[08:16.44]  So it really is about taking part in a
+[08:19.24]  mission that matters.
+[08:21.08]  And are really motivated by that idea
+[08:24.84]  that we spend a lot of time with our
+[08:26.68]  users, the folks that actually, you
+[08:28.36]  know, need our help. And are guided by
+[08:30.64]  them.
+[08:31.92]  And that mindset, I think, attracts a
+[08:35.16]  certain kind of person who wants to take
+[08:38.32]  a lot of agency. Like wants to
+[08:39.52]  understand the problems deeply and come
+[08:41.24]  up with their own ideas of how to to
+[08:43.24]  solve for them. Because we're building
+[08:45.40]  infrastructure, it's also our approach
+[08:47.76]  that we really do think that we can do
+[08:49.84]  the best work kind of behind the scenes.
+[08:51.32]  We don't have to be, uh, you know, out
+[08:53.28]  having the the splashy launch, but
+[08:55.08]  hopefully all of our users can and we
+[08:56.84]  are quietly working behind the scenes to
+[08:58.84]  make their businesses better or more
+[09:00.28]  effective over time. And I think that
+[09:02.56]  attracts folks with a certain kind of
+[09:04.48]  mindset which is the
+[09:07.12]  interest and kind of tenacity to dig
+[09:09.24]  into
+[09:10.44]  kind of
+[09:11.48]  difficult problems that may not be
+[09:13.52]  obvious and obviously kind of attractive
+[09:15.64]  to everyone in the world, then really
+[09:17.20]  plug away at them until we've made a
+[09:19.32]  tremendous amount of progress. And so it
+[09:21.04]  attracts folks that are long-term
+[09:22.20]  thinkers, that care about building, and
+[09:24.48]  also actually want to work very
+[09:25.60]  collaboratively together. So when I
+[09:28.28]  think about what makes Stripe different
+[09:30.76]  to other companies, it really is this
+[09:32.52]  like singularity of purpose. Our mission
+[09:34.48]  is increasing the GDP of the internet
+[09:35.84]  and building this financial
+[09:37.28]  infrastructure to do that.
+[09:39.20]  And a tremendous amount of teamwork and
+[09:41.04]  collaboration to get that done. And so
+[09:42.72]  that attracts a certain kind of person.
+[09:45.24]  When we think about finding those
+[09:46.72]  people, um, we don't hide any of that.
+[09:49.60]  Like you you have you have to care about
+[09:51.56]  that in order to, I think, be excited
+[09:54.12]  about working at Stripe. And so we work
+[09:56.92]  very hard to make it very clear as we're
+[10:00.96]  as we're bringing people in that that's
+[10:02.36]  that's what this is about. And
+[10:05.28]  to to that end, we're often very patient
+[10:07.64]  when we're hiring. So, especially for
+[10:10.08]  critical roles, you know, leadership
+[10:11.40]  hiring in particular, we're happy to
+[10:13.20]  take our time and, you know, meet
+[10:16.12]  tens or hundreds of people. Then in
+[10:17.76]  particular, sometimes we'll meet someone
+[10:19.08]  that we think is a really good fit for a
+[10:20.28]  given role, but they're not available
+[10:22.16]  right now.
+[10:23.32]  And then we'll be patient. We'll we'll
+[10:25.04]  keep building the the personal
+[10:26.36]  relationship with them. And often times
+[10:28.92]  the moment of time comes when it makes
+[10:30.44]  sense for them to join.
+[10:32.24]  And in order to pull that off, it's also
+[10:34.28]  the case that hiring at Stripe is a very
+[10:35.88]  personal activity. So, look, there are
+[10:38.12]  lots of other companies where
+[10:40.52]  recruiting is kind of like this machine.
+[10:42.28]  And by the way, we have an awesome
+[10:43.28]  recruiting team, but folks across the
+[10:45.28]  rest of the company partner very closely
+[10:46.92]  with our recruiting team. So, it's not
+[10:48.32]  There's not like it's a machine that
+[10:49.32]  delivers new hires and you're like, oh,
+[10:50.88]  well, maybe this person is here and I
+[10:52.28]  can put them to use on that thing. Um
+[10:55.00]  our managers spend a lot of time
+[10:57.00]  identifying exactly what they need for
+[10:58.52]  the various roles that we have. And then
+[11:00.44]  getting to know the the potential
+[11:02.56]  candidates, the people out there in the
+[11:03.72]  world that could do these jobs. Actually
+[11:05.32]  like really go quite deep with them on
+[11:07.24]  why it might make sense for them to feel
+[11:09.84]  like number one, they can like feel very
+[11:12.08]  personally fulfilled against that
+[11:13.24]  mission here. And then also why it
+[11:15.92]  represents like a bigger opportunity for
+[11:17.44]  them than maybe anything else they can
+[11:18.76]  spend their their time and and attention
+[11:20.56]  on.
+[11:21.36]  And to that end, another thing that I
+[11:22.96]  think Stripe has definitely delivered
+[11:25.48]  for for many, many people who who join
+[11:27.32]  here is just and I care about
+[11:30.04]  preserving this in the culture is just
+[11:32.20]  tremendous learning opportunities. Um
+[11:35.40]  very, very many people at Stripe today
+[11:37.68]  are doing a quite different job to the
+[11:39.60]  one that they joined for. And in order
+[11:41.36]  to do that, they've often had to learn a
+[11:42.72]  lot and and stretch themselves into new
+[11:44.80]  areas. It's also the case that you think
+[11:47.56]  about that financial infrastructure
+[11:48.72]  we're building,
+[11:49.92]  the space really rewards people who want
+[11:52.72]  to go and learn a ton of detail in how
+[11:55.60]  these are like not that, you know,
+[11:58.20]  popular or well understood in the
+[11:59.60]  broader world, how they actually work.
+[12:01.76]  And and assimilate just a lot of
+[12:03.20]  context. And then in particular, you can
+[12:05.80]  build better stuff at Stripe if you're
+[12:07.64]  sharing that context with each other and
+[12:09.20]  helping other people learn. And so, I
+[12:11.20]  think that all ladders up to this kind
+[12:12.56]  of group of folks that you mentioned and
+[12:15.32]  all of the folks you mentioned are are
+[12:17.36]  wonderful Stripes or former Stripes that
+[12:19.80]  come together in service for users. I
+[12:22.40]  always love to hear what people call
+[12:23.76]  their people internally. So, Stripes,
+[12:25.60]  good to know. That's right.
+[12:27.80]  So, just to summarize what you shared,
+[12:29.08]  which I I was just writing as you were
+[12:30.20]  talking about the things that
+[12:31.32]  essentially help Stripe build this
+[12:32.64]  incredible team. A strong mission
+[12:35.04]  and a mission that draws people in that
+[12:36.88]  are incredible. And people may be
+[12:38.44]  hearing that and be like, yeah, yeah,
+[12:39.68]  like sure. But it in my experience
+[12:42.56]  having invested in a bunch of companies
+[12:44.08]  and working with a lot of founders,
+[12:45.08]  there's such a dichotomy between how
+[12:47.64]  hard it is for companies to hire when
+[12:49.08]  they
+[12:49.92]  don't have a mission people really care
+[12:51.20]  about versus a mission that's like
+[12:52.60]  really meaningful.
+[12:54.20]  So, there's something so powerful there.
+[12:56.16]  And so, it's 100% I can see how that
+[12:57.96]  works so well. And then the other things
+[12:59.60]  you mentioned, patience, personal
+[13:01.16]  connections between the hiring manager
+[13:03.04]  and the people they're hiring. And I see
+[13:04.08]  that on Twitter, a lot of PMs are just
+[13:05.68]  like
+[13:06.52]  doing things like basically it's like
+[13:08.12]  they're running their own little startup
+[13:09.24]  on Twitter. Like Jeff Weinstein. Yeah,
+[13:12.40]  so
+[13:13.12]  runs Jeff is the PM for our Atlas
+[13:14.96]  product and he's a great example of
+[13:17.36]  someone who cares a lot about learning
+[13:19.76]  exactly how the world works. So, before
+[13:22.08]  instance, one of the things that that
+[13:23.56]  team and Jeff really has driven this
+[13:25.12]  himself have done recently is
+[13:26.60]  recognizing that when you're starting a
+[13:27.84]  new business in the US, one of the most
+[13:30.48]  frustrating steps is that you have to
+[13:32.04]  apply for this employer identification
+[13:34.16]  number from the IRS. And it used to have
+[13:36.00]  like an extremely long backlog. And it's
+[13:38.36]  really hard. You can't do you can't you
+[13:40.00]  can't like start running your business
+[13:41.52]  until you have it. And Jeff dug into the
+[13:44.12]  details, the team dug into the details
+[13:45.88]  and we're just like kept asking, does it
+[13:47.84]  have to be this way? Does it have to be
+[13:49.00]  this way? Eventually we worked with the
+[13:50.40]  IRS to make it possible for for us to
+[13:53.16]  issue those those numbers much, much
+[13:54.64]  more quickly. Like instantly as you sign
+[13:56.36]  up. And I think that's exactly the great
+[13:58.68]  example of how being curious, having
+[14:01.84]  this relentless passion to solve
+[14:04.36]  problems for users, and then just keep
+[14:06.28]  plugging away at a problem delivers this
+[14:08.60]  great result and in an environment where
+[14:10.20]  you can learn a lot from each other. I
+[14:11.72]  hope he got a
+[14:12.92]  big promotion for getting the IRS to do
+[14:14.88]  something that he needed. That's
+[14:16.52]  incredible.
+[14:17.80]  I'm going to ask try to go one layer
+[14:19.04]  deeper on the hiring piece and then move
+[14:21.08]  on to a different topic, but what is
+[14:22.84]  just the interview process like?
+[14:24.96]  I don't know how involved you are with
+[14:25.80]  the product management hiring process,
+[14:27.08]  but just I'm curious what that is like
+[14:28.56]  high level and and engineering hiring
+[14:30.52]  process, however you can share. Yeah,
+[14:32.72]  there are a couple of things that are
+[14:33.48]  very common across hiring for all roles
+[14:35.44]  at Stripe and in particular engineers
+[14:37.04]  and PMs. One of the things is we do have
+[14:40.20]  structured hiring loops. So, we put
+[14:42.64]  everyone through a very consistent
+[14:44.40]  process. So, very personal as we help
+[14:46.68]  folks figure out why they might want to
+[14:47.88]  be here, but then we have a consistent
+[14:50.76]  way of evaluating talent. And I think
+[14:53.16]  that's important because it means that
+[14:54.84]  you can
+[14:56.52]  as an interviewer, as a hiring manager,
+[14:58.40]  you can actually really start to
+[14:59.72]  understand what is the broad spectrum of
+[15:02.08]  responses you might get here. And what
+[15:03.68]  do I actually learn about individual
+[15:05.08]  candidates when I'm asking like similar
+[15:06.80]  questions. The other thing that these
+[15:09.28]  loops have in common is
+[15:11.04]  nothing is a trick question. Like we try
+[15:12.84]  to put people into an environment which
+[15:15.16]  is as close to doing the actual work
+[15:17.00]  together as you possibly can. So, I mean
+[15:19.20]  for engineers for instance, we've got
+[15:20.64]  several different coding exercises that
+[15:23.08]  they do. They share their screen with
+[15:24.32]  the interviewer. It's actually kind of
+[15:25.68]  pair programming. You're welcome to like
+[15:27.12]  use Google to search for Stack Overflow
+[15:29.56]  to search for for answers. We don't
+[15:31.52]  don't care. Like we just want to see the
+[15:32.84]  outcome. You're happy to we're happy for
+[15:35.12]  you to ask your interviewer questions as
+[15:36.72]  you go along. And and it's you know,
+[15:39.12]  we've created these exercises that are
+[15:40.24]  as close to real problems as we need to
+[15:41.92]  solve at Stripe as possible. The same is
+[15:43.84]  true on on the PM side. One of the
+[15:46.56]  things for instance we do with PMs is we
+[15:48.08]  have a written exercise. We've got a
+[15:50.16]  variety of different problems. And we
+[15:51.96]  find that very valuable for actually
+[15:53.84]  just seeing how does someone attack a
+[15:57.16]  real problem that they would be solving
+[15:58.92]  at work? And will they want to do that
+[16:01.08]  in a way that is curious, digs into the
+[16:03.04]  details, collaborative with their
+[16:05.16]  interviewer and so forth. So, that's the
+[16:07.08]  point. Structured loops, they're
+[16:08.36]  consistent, and then questions that are
+[16:10.60]  as close to the real job as we possibly
+[16:12.80]  can.
+[16:13.64]  And for the questions on the PM side, do
+[16:15.32]  you have them do it at home or do you
+[16:16.52]  have them do it in the office? It's a
+[16:18.04]  variety. Right now at Stripe, we're very
+[16:20.52]  much in a hybrid mode, so a lot of our
+[16:22.20]  interviews are still happening over
+[16:23.52]  Zoom, although we have plenty of
+[16:25.44]  great activity going on in offices as
+[16:26.88]  well. The written exercises tend to be
+[16:28.64]  something that you do in your own time.
+[16:30.08]  We we suggest a time bind, so it's not
+[16:32.04]  an unreasonable demand on your the rest
+[16:34.48]  of your life. And then the the other
+[16:37.00]  exercises are, you know, with an
+[16:38.72]  interviewer on Zoom. Okay. So, speaking
+[16:40.92]  of product managers at Stripe, Stripe is
+[16:43.24]  kind of famous {slash} infamous for
+[16:45.28]  waiting a long time to hire your first
+[16:47.20]  product manager. From what I understand,
+[16:48.76]  it was like around the 200th employee
+[16:50.68]  and maybe 5 years in. Which to me tells
+[16:53.04]  me that you're really good at building
+[16:54.96]  product-minded engineers and or hiring
+[16:57.28]  and building a product-minded
+[16:58.52]  engineering culture.
+[16:59.76]  How do you do that? How do you go about
+[17:01.16]  doing that? And then I'm also just
+[17:02.60]  curious what PMs ended up bringing to
+[17:04.16]  the table and how they kind of
+[17:05.32]  collaborate now.
+[17:06.44]  Yeah, so I mean at Stripe today, we have
+[17:08.64]  lots of product managers, lots of
+[17:09.92]  engineers. Product management is an
+[17:11.28]  extremely valuable and important job
+[17:13.32]  family. I'll talk more about what folks
+[17:14.84]  do today. It is true that our our
+[17:18.24]  original team, I think we hired our
+[17:19.68]  first PM a little bit earlier than you
+[17:21.00]  said, but our original team was was
+[17:23.92]  really an engineering team. However,
+[17:26.08]  they were extremely product-minded. And
+[17:28.68]  I would honestly say that of all of the
+[17:31.56]  the very early team that I worked
+[17:33.28]  closely with and and know well over
+[17:34.76]  time, every single one of them could
+[17:37.44]  also have been and and essentially also
+[17:39.40]  was acting as a as a PM. If you think
+[17:41.48]  about the nature of the of the first
+[17:43.44]  Stripe product, and again today we solve
+[17:45.00]  problems for businesses from the very
+[17:46.32]  small to the very large across a whole
+[17:48.04]  range of financial infrastructure, but
+[17:50.04]  the the initial product was very
+[17:51.92]  developer-focused. And we still have a
+[17:53.64]  developer focus at the core of many
+[17:55.24]  things that we do. The best PMs for
+[17:58.12]  developer-focused products, I think, are
+[18:00.76]  usually very technical. They're mostly
+[18:02.80]  former engineers themselves or maybe
+[18:04.36]  kind of current engineers still
+[18:05.44]  tinkering on the side, but bringing, you
+[18:07.16]  know, a lot of a lot of user insight and
+[18:09.12]  strategy to to the problem. And every
+[18:11.88]  single early member of the team at
+[18:13.60]  Stripe had to act like that in order to
+[18:16.20]  to to work the way that we do and that
+[18:17.88]  we want to. So, remember again that is
+[18:20.48]  to get to know our users very well and
+[18:21.96]  then bring those kind of personal
+[18:23.64]  insights into our product development
+[18:25.52]  loop. So, I mean in fact, the way we
+[18:27.52]  think about product development at
+[18:28.68]  Stripe, it it really is to find the
+[18:31.72]  correct set of early users to kind of
+[18:34.48]  co-create the product with. So, maybe
+[18:37.52]  the best example of that or at least a
+[18:39.12]  an example of that is Stripe Billing.
+[18:40.76]  So, it's our solution for subscriptions
+[18:42.36]  and invoicing. And when we got to
+[18:44.44]  starting the Stripe Billing
+[18:46.28]  product, we realized that there were a
+[18:49.40]  number of our existing users. These were
+[18:51.44]  companies like Figma and Slack who were
+[18:54.24]  already using Stripe for payments, but
+[18:56.84]  had these subscriptions business models.
+[18:59.24]  And we figured that there were going to
+[19:01.04]  be many more of these kind of companies
+[19:02.56]  into the future. And we we could see
+[19:04.52]  that they they were really kind of
+[19:05.64]  pushing the boundaries of what was
+[19:06.72]  possible here. So, we decided to
+[19:08.00]  co-create the product with them.
+[19:10.00]  The The early team working on billing
+[19:12.52]  got a bunch of those companies,
+[19:14.00]  including Slack and Figma, but a bunch
+[19:15.84]  more as well, got to know them that the
+[19:18.04]  individuals who were operating those
+[19:19.52]  systems at those companies personally
+[19:21.16]  understood exactly what their challenges
+[19:23.04]  and hopes and dreams for the future
+[19:24.36]  were. And then brought them into kind of
+[19:26.96]  shared product development loop. So, we
+[19:28.40]  had shared Slack channels. We'd actually
+[19:29.88]  show them product on a very regular
+[19:31.68]  basis. Get their feedback on it. And
+[19:33.92]  only when that original kind of alpha
+[19:36.44]  group was super, super happy with the
+[19:38.88]  product, did we then think it might be
+[19:40.40]  ready to go to to a broader audience.
+[19:42.48]  So, that is just how we build product at
+[19:44.24]  Stripe. And that means that every
+[19:46.80]  engineer building product at Stripe
+[19:48.60]  really has many of the kind of
+[19:51.12]  attributes and will exercise many of the
+[19:52.96]  attributes that you'll often find in in
+[19:54.76]  PMs in in other companies.
+[19:57.04]  Now, that doesn't mean that there isn't
+[19:58.08]  a really important job for PMs to do
+[19:59.72]  here as well. So, something else that I
+[20:01.80]  think is worth knowing about Stripe and
+[20:03.08]  is somewhat unique is building product
+[20:04.96]  is also a much more kind of team sport
+[20:06.92]  at Stripe across functions. So, there
+[20:09.76]  are the obvious functions that most
+[20:11.16]  companies have, engineers, engineering
+[20:13.04]  managers, product managers, designers,
+[20:15.12]  and those folks all get involved in
+[20:17.80]  you know, throughout the entire life
+[20:19.60]  cycle of product development at Stripe.
+[20:21.88]  But also, if you think about the nature
+[20:23.20]  of our products, it turns out that a lot
+[20:25.16]  of our products are about abstracting
+[20:27.08]  over what the
+[20:29.24]  the financial system does at large. So,
+[20:31.00]  sometimes there's a capability in
+[20:32.16]  certain country, and there's a a
+[20:33.28]  different one in another country, and we
+[20:34.72]  want to make it all work consistently.
+[20:36.44]  So, our financial partnerships matter.
+[20:38.28]  So, sometimes folks from our
+[20:39.44]  partnerships team are part of the kind
+[20:40.64]  of early development phase of of a
+[20:43.20]  product. Similarly, when you think about
+[20:45.08]  product legal and many of the other
+[20:47.28]  functions around risk and compliance and
+[20:49.24]  so forth, we actually need their
+[20:50.92]  creative thinking in order to build the
+[20:53.32]  right stuff for our users. So, the point
+[20:55.08]  is it's a way more cross-functionally
+[20:57.32]  collaborative process than I've seen in
+[20:59.24]  a lot of other companies.
+[21:00.96]  And PMs play just this absolute linchpin
+[21:05.24]  role across a lot of that. So, PMs are
+[21:08.28]  very frequently the ones that are
+[21:09.92]  providing the kind of look and motion to
+[21:12.08]  bring all of that that partnership
+[21:13.60]  together. They're very frequently the
+[21:15.36]  folks that are synthesizing what we're
+[21:17.76]  learning from our users. Not everyone is
+[21:19.72]  talking to users across all those job
+[21:21.64]  families, but the PM is probably the
+[21:22.80]  person talking to folks the very most,
+[21:25.00]  and probably the one who's who's
+[21:26.20]  synthesizing the very best. They
+[21:29.12]  often and usually also bring a lot of
+[21:31.56]  the product strategy. So, okay, this is
+[21:33.08]  what we're doing today, but what does it
+[21:34.12]  ladder up to, and therefore how do we
+[21:35.64]  make the right choices to make sure that
+[21:37.40]  we're taking the right longer-term path?
+[21:39.56]  And so, it's a super important and and
+[21:41.92]  valuable role, and I you mentioned a
+[21:44.72]  couple of great ones on the call here
+[21:46.40]  already, but I think that the PMs at
+[21:48.24]  Stripe
+[21:49.40]  embody a lot of
+[21:50.84]  a lot of the culture at Stripe and our
+[21:51.88]  operating principles just
+[21:54.16]  contributed a tremendous amount to what
+[21:55.52]  we get done. Perfect segue to where I
+[21:57.28]  was going to go with the next question,
+[21:58.60]  which is one of your operating
+[22:00.12]  principles is to be meticulous with your
+[22:02.52]  craft. And I know this is something that
+[22:04.44]  you focus on a lot.
+[22:06.72]  What I'm curious about is that sounds
+[22:08.52]  great. Everyone, you know, would love
+[22:10.52]  for that to be a a focus of theirs and a
+[22:12.64]  core value and the way they operate, but
+[22:14.44]  there's always this trade-off of like we
+[22:15.76]  just got to ship stuff. Like it doesn't
+[22:17.08]  need How do we wait until it's perfect?
+[22:18.92]  So, what I want to ask is just how do
+[22:20.48]  you operationalize this principle first
+[22:22.96]  of all, and then I'm going to have a few
+[22:23.92]  follow-up questions. Yeah, great
+[22:25.96]  question. Before I talk about this one
+[22:27.76]  operating principle, let me just set a
+[22:28.80]  little bit of context on what are our
+[22:30.40]  operating principles at all. So, at
+[22:32.36]  Stripe we have operating principles, and
+[22:34.40]  they are they're kind of like corporate
+[22:36.72]  values, but they're not just values.
+[22:38.32]  They they're much less abstract than
+[22:39.92]  that. So, actually we were just talking
+[22:41.24]  about the early Stripe team. I think one
+[22:42.76]  of the best things that they did, I mean
+[22:44.48]  they did a bunch of great stuff finding
+[22:45.88]  early product market fit, but one of the
+[22:47.84]  the most foresighted things that they
+[22:50.48]  did was to kind of take a little detour
+[22:52.92]  and think about what is it about how
+[22:54.72]  we've been working so far that we think
+[22:56.92]  has made us successful and is going to
+[22:59.08]  be important as we continue to scale.
+[23:00.96]  And we capture those as a set of
+[23:02.48]  operating principles. So, they are
+[23:04.00]  behaviors distilled from the most
+[23:07.52]  effective Stripes.
+[23:09.44]  And we we really care about them. So, we
+[23:13.36]  we talk about our operating principles a
+[23:14.76]  lot internally. I'll often see
+[23:16.96]  individual Stripes kind of celebrating
+[23:18.92]  each other's work in terms of which
+[23:20.36]  operating this kind of best represented.
+[23:23.24]  We frame a lot of our feedback processes
+[23:24.96]  and so forth around them, although not
+[23:26.16]  exclusively. The very first operating
+[23:28.20]  principle we have, by the way, is users
+[23:29.92]  first. So, we've already on this call
+[23:31.40]  touched a bunch on how we put our users
+[23:34.00]  at the center of understanding what we
+[23:35.96]  should be doing at all, and that idea
+[23:37.80]  that we form these deep personal
+[23:39.48]  relationships with our users to guide
+[23:40.96]  everything really comes from and is is
+[23:43.04]  captured by that operating principle.
+[23:45.20]  We also have operating principles
+[23:47.16]  they're kind of segmented into how we
+[23:48.72]  work, who we are, and then a bunch that
+[23:50.96]  leaders must execute.
+[23:52.76]  So, I mean another example of one of the
+[23:55.52]  how we work ones is move with urgency
+[23:57.40]  and focus. Like we really believe that
+[23:59.40]  even though we're building
+[24:00.44]  infrastructure that will persist for
+[24:01.96]  decades, it is important that we solve
+[24:04.12]  the needs our users have right now, you
+[24:06.08]  know, relatively rapidly so that it's
+[24:08.12]  actually makes sense and is
+[24:09.64]  is delivering value for them. So,
+[24:11.20]  anyway, there's a range of them. You
+[24:12.76]  asked about being meticulous in our
+[24:13.96]  craft. So, this is another how we work
+[24:15.92]  principle, and it is it is very
+[24:18.72]  important at Stripe. And you also call
+[24:20.88]  out Lenny a kind of challenge of being
+[24:22.88]  meticulous, which is well, there's so
+[24:25.84]  much to get done, so where can I be
+[24:27.96]  meticulous? Because
+[24:30.56]  well, if you do it across everything,
+[24:32.20]  maybe a a lot of progress would grind to
+[24:33.96]  a halt. Right. So, well, first let me
+[24:35.88]  tell a couple of stories. So,
+[24:38.68]  before I joined Stripe, I spent some
+[24:40.76]  time and it's big part of deciding to
+[24:43.16]  join playing with the product. And
+[24:45.28]  something that that really delighted me
+[24:47.48]  was that when I started integrating the
+[24:50.48]  product,
+[24:51.80]  there were parts of the experience where
+[24:54.48]  I was stuck, right? So, like I made a
+[24:57.00]  mistake with how I had integrated the
+[24:58.28]  API, and I was getting an error message
+[25:00.32]  back,
+[25:01.32]  but I wasn't stuck for very long because
+[25:02.92]  something that the team at Stripe had
+[25:04.44]  done was we made the error messages
+[25:06.92]  coming out of our API linked to the
+[25:09.76]  piece of the docs that told you how to
+[25:11.28]  solve the problem.
+[25:12.12]  Genius. And that is a really
+[25:15.36]  good example of being meticulous in the
+[25:16.92]  craft. So, it is
+[25:19.56]  it's pretty uncommon, and certainly very
+[25:21.12]  uncommon back then for companies to do
+[25:23.32]  this. Like the error messages on your
+[25:24.92]  API, who's ever going to look at them?
+[25:26.40]  Well, turns out developers while they're
+[25:27.80]  building and if they're running into
+[25:28.76]  problems, they will look at them. It's
+[25:29.96]  actually a really high-stakes moment
+[25:32.08]  because it's a time that matters. So,
+[25:34.92]  that is an example of where we've been
+[25:36.12]  meticulous in the product. And
+[25:39.04]  the way that we kind of figure out where
+[25:41.00]  to be meticulous, like where to really
+[25:42.56]  sweat the details and go above and
+[25:43.88]  beyond, is again we try to be as user
+[25:46.76]  first as we possibly can. So, we have a
+[25:48.72]  process that is widely used across
+[25:51.76]  product teams and even like folks
+[25:53.04]  building stuff for internally for
+[25:54.52]  Stripes to use, which we call friction
+[25:55.92]  logging.
+[25:57.04]  The way this works is you you need to
+[25:59.56]  kind of put yourself in a particular
+[26:01.52]  user's shoes. Like it's actually
+[26:02.76]  important to have a very clear idea of
+[26:05.12]  who is the person I am kind of modeling
+[26:07.28]  the friction for right now. So, for
+[26:09.08]  instance, I might be
+[26:10.80]  integrating the Stripe billing API, and
+[26:13.16]  I might put myself in the shoes of an
+[26:15.32]  engineer at I don't know, let's say
+[26:17.48]  Atlassian, which is a
+[26:20.04]  one of the world's largest SaaS
+[26:21.00]  platforms, and using actively Stripe
+[26:23.20]  billing for for
+[26:25.00]  automating all of the revenue today.
+[26:27.36]  I I might put myself in the mindset of
+[26:29.08]  that person. I might have met them
+[26:30.28]  recently and kind of understood them a
+[26:31.68]  little a little bit better than than
+[26:33.84]  otherwise doing this particular thing.
+[26:35.68]  And then I will go through the process
+[26:37.20]  of actually using the product, starting
+[26:39.20]  off in the dashboard, hopping over to
+[26:41.00]  the particular page in the docs that I
+[26:42.44]  need to follow, starting to write code
+[26:44.44]  and so forth in order to do my
+[26:45.84]  integration, and make really careful and
+[26:49.20]  meticulous notes of what the the
+[26:51.76]  experience is. So, stream of
+[26:52.68]  consciousness notes, but paying
+[26:53.96]  particular attention to the places where
+[26:56.68]  I ran into friction that I think that
+[26:58.96]  particular user I'm mental modeling
+[27:01.52]  would find difficult. And then those are
+[27:04.20]  the places where we will tend to go and
+[27:07.16]  invest a tremendous amount in really
+[27:09.60]  thinking how could we solve this
+[27:11.68]  problem, and then putting a lot of
+[27:13.44]  attention into detail into making it
+[27:15.44]  right.
+[27:16.32]  And by the way, that that
+[27:17.92]  the example I gave you around the error
+[27:19.44]  messages, there's actually more code in
+[27:21.52]  the jobs that serve the Stripe API to
+[27:23.00]  handle those edge cases than in the
+[27:24.84]  actual main flow. And I think that's
+[27:27.40]  quite remarkable. Most people wouldn't
+[27:28.64]  do that, but it turns out not only was
+[27:31.08]  it something I was impressed with, but
+[27:32.32]  when I talk to Stripe users, this is
+[27:34.00]  very frequently something they tell me
+[27:36.16]  delights them about the product. It's a
+[27:37.44]  reason that they can adopt it more
+[27:39.24]  quickly, and it's a reason that they
+[27:40.32]  keep adopting other Stripe products
+[27:41.84]  because they know it's going to be
+[27:43.28]  easier than doing anything else. So, it
+[27:45.64]  really matters. So, the point is like we
+[27:47.48]  are intentional about where the places
+[27:49.44]  where
+[27:50.56]  being particularly matters, and then
+[27:52.56]  when we are, we try to do it in quite a
+[27:54.08]  systematic way.
+[27:55.56]  It's great business as well. So, for
+[27:57.24]  instance, um
+[27:59.60]  we actually just earlier today
+[28:02.00]  put a blog post up that explains we've
+[28:05.04]  been tuning our
+[28:08.16]  both what we call our payment element,
+[28:10.12]  which is our kind of more kind of
+[28:12.56]  batteries included UI for putting
+[28:15.36]  payment integrations directly on your
+[28:16.64]  website. You can style it to fit with
+[28:17.80]  the rest of your page, but it has a lot
+[28:19.36]  of powerful features, and we also have a
+[28:20.96]  set of hosted services called Stripe
+[28:22.20]  Checkout. And the point here is we've
+[28:24.60]  gone and scarred a whole bunch of like
+[28:26.72]  checkout flows on the internet over the
+[28:28.88]  course of many years, and we look out
+[28:30.96]  for all of the little broken edges, and
+[28:33.76]  we've been working hard on these
+[28:34.88]  products to to tune those.
+[28:36.80]  And then not we don't just stop there.
+[28:38.84]  We've also been really obsessing about
+[28:40.60]  what are the things that we can do in
+[28:41.92]  the flows that we've already built that
+[28:43.40]  will, you know, remove latency or remove
+[28:46.52]  a click or whatever. And what we have
+[28:48.76]  found, we've recently measured the
+[28:51.64]  difference between so with a with a
+[28:53.60]  bunch of actual users who migrated from
+[28:56.64]  a fairly vanilla integration where they,
+[28:58.52]  you know, built their own checkout flow
+[29:00.48]  to one of these surfaces, to our payment
+[29:02.32]  element or to Stripe Checkout, it turns
+[29:04.48]  out that it increases the average user's
+[29:07.64]  revenue by 10.5%.
+[29:10.40]  And that is that's huge, right? So, this
+[29:12.52]  is an industry where little changes that
+[29:14.68]  you you might go about making or even
+[29:17.12]  like big changes that you pour blood,
+[29:19.20]  sweat, and tears into will typically
+[29:21.00]  deliver uplifts in that you measure in
+[29:23.16]  basis points. That's hundreds of a
+[29:24.44]  percentage point. And this, you know,
+[29:26.48]  this set of small changes compounding
+[29:28.12]  over time ladders up to 10.5%. It's
+[29:30.40]  huge. And the point is we only get there
+[29:33.36]  by knowing that this is a thing that
+[29:35.04]  might ultimately matter and being
+[29:36.36]  meticulous in every single step along
+[29:38.60]  the way, and that it combines to a
+[29:41.08]  dramatic impact in the end. And so, I
+[29:43.08]  think that that particular
+[29:45.04]  set of experiences is is one where this
+[29:47.64]  operating principle has really mattered.
+[29:49.76]  Thinking about those kind of flows is
+[29:51.04]  what led us to build Link, which is our
+[29:53.68]  product for
+[29:55.48]  making one-click checkout available, and
+[29:58.20]  that has had a tremendous impact both on
+[30:00.72]  convenience for customers of our users
+[30:03.08]  and also on their conversion rate and so
+[30:04.68]  forth. So, it it really matters. And
+[30:07.00]  then one final
+[30:08.76]  other area, if I may, I think Stripe is
+[30:11.96]  relatively well known for putting a lot
+[30:14.32]  of care and attention into our our
+[30:16.96]  website. A lot of our, you know,
+[30:18.80]  marketing or product explanation pages.
+[30:21.64]  And I think for a business like ours,
+[30:23.40]  it's not immediately obvious that it
+[30:25.28]  makes a tremendous amount of sense to be
+[30:27.32]  super meticulous in building those
+[30:28.72]  experiences.
+[30:30.16]  But we are, and again, it I think it
+[30:32.48]  really matters for us and for our users.
+[30:34.80]  So, the way that we we got into this
+[30:37.52]  mode was we recognized that we are
+[30:40.24]  building a lot of infrastructure. So, we
+[30:42.60]  built what we call our global payments
+[30:44.20]  and treasury network. It is literally
+[30:45.52]  our product infrastructure for moving
+[30:47.24]  money into Stripe, holding balances on
+[30:49.28]  behalf of our users, moving money out,
+[30:51.36]  all of the automation between moving
+[30:54.12]  money between different businesses, and
+[30:55.84]  all of the kind of regulatory stuff we
+[30:57.00]  have to handle, all handled in this this
+[30:58.52]  big payments engine. But, as a user,
+[31:01.56]  it's very hard for you to kind of come
+[31:02.68]  in and inspect that and say, "Well, is
+[31:04.20]  it good?" I mean, hopefully you can go
+[31:06.08]  and talk to a bunch of other Stripe
+[31:06.92]  users, but it's very hard to know from
+[31:08.56]  the outside.
+[31:09.80]  So, if we put a lot of care to care and
+[31:13.24]  to care for detail and attention into
+[31:15.76]  the experiences that we use to explain
+[31:18.04]  the value and the power of that, it
+[31:19.80]  actually helps our users understand
+[31:21.40]  exactly how it is that we are trying to
+[31:23.12]  operate for them. And that's where all
+[31:25.84]  the meticulousness that we put into our
+[31:27.68]  site have come from. There are lots of
+[31:30.32]  features like, you know, we have a
+[31:31.36]  spinning globe on our page that shows
+[31:33.36]  you
+[31:34.08]  what payment methods you can use in
+[31:35.16]  different countries. We have this kind
+[31:36.96]  of big animated wave on our home page.
+[31:39.32]  And you know, in general, Stripe is kind
+[31:40.56]  of known for these, you know, great
+[31:43.20]  internet moments when we launch
+[31:44.32]  products. Um and so we did it because we
+[31:46.80]  wanted our users to be able to see the
+[31:48.32]  care and attention that we were taking.
+[31:49.92]  It's turned out to have this, you know,
+[31:51.36]  wonderful kind of side benefit to some
+[31:53.12]  extent because
+[31:54.48]  those experiences tend to get shared a
+[31:56.24]  lot like on Twitter and LinkedIn and
+[31:58.24]  elsewhere because they're worth looking
+[31:59.72]  at just cuz they're beautiful, and they,
+[32:01.60]  you know, often push the web platform
+[32:03.24]  forward. And that then means that folks
+[32:05.48]  who are likely, folks who themselves
+[32:07.00]  want to push internet business forward
+[32:08.64]  are likely to know about Stripe and know
+[32:09.92]  about our capabilities. So,
+[32:11.76]  meticulousness plays out with impact in
+[32:14.92]  so many different ways at Stripe, and
+[32:16.60]  and I I I enjoy uh
+[32:19.52]  you know, working that way in in many
+[32:21.24]  different areas. I have a a few
+[32:23.36]  follow-up questions along those lines,
+[32:24.76]  but before we do that, I want to
+[32:26.00]  double-click on this friction logging
+[32:27.88]  process. Just understand how you
+[32:29.40]  actually do that. So, maybe two
+[32:31.04]  questions there. Is this like a
+[32:33.72]  regular task people have on their plate
+[32:36.48]  like say or is it executives or just PMs
+[32:38.68]  in general?
+[32:39.72]  And is there like a template that you
+[32:41.40]  share if just like you talked about who
+[32:43.16]  you are, you, what company you're
+[32:44.24]  working for, what problem are you trying
+[32:46.00]  to solve? How do you actually kind of
+[32:47.80]  tactically operationally is that?
+[32:50.20]  Yeah, great question. So, it's a it's a
+[32:52.00]  practice that is quite valuable
+[32:53.72]  generically. There are many there are
+[32:55.76]  many places where you can apply friction
+[32:57.60]  logging in order to
+[33:00.12]  really kind of shine a light on what is
+[33:01.60]  the most effective place to invest time
+[33:03.68]  and effort. So, we use the practice
+[33:05.60]  across lots of different functions and
+[33:08.84]  in lots of different ways at Stripe, but
+[33:10.72]  it is the case that almost every product
+[33:12.88]  team has someone, it's often the PM,
+[33:15.52]  sometimes it's the engineering manager,
+[33:17.04]  who has a regular repeating loop of
+[33:19.44]  going through the end-to-end flow of the
+[33:22.00]  product and writing a friction log. For
+[33:23.80]  years and years, I have gone through the
+[33:26.04]  process of onboarding an user to Stripe
+[33:28.00]  once a month, writing a friction log,
+[33:30.08]  and then tagging in the right people
+[33:32.44]  across the company that might need to
+[33:34.84]  take action on some of the things that
+[33:35.96]  we're observing. And one of the the
+[33:37.60]  reasons that that kind of process of
+[33:39.36]  taking a big step back is useful is
+[33:42.76]  at this stage we have many people. We
+[33:44.84]  have thousands of engineers who are
+[33:46.64]  working in parallel, and while everyone
+[33:49.08]  cares a lot about being meticulous,
+[33:50.80]  paying attention to detail, getting the
+[33:52.20]  details right,
+[33:53.76]  you kind of end up with experiences that
+[33:55.20]  diverge, and going through this process
+[33:57.40]  of looking at it all together on a
+[34:00.24]  regular rhythm with friction logging
+[34:02.28]  really helps us maintain a cohesive
+[34:04.40]  whole while we all operate in parallel.
+[34:07.20]  And so, therefore, you know, senior
+[34:09.16]  leaders, executives, I guess, of our
+[34:11.08]  larger areas will often do this as a
+[34:12.48]  practice themselves in order to kind of
+[34:14.16]  make sure that everything that they're
+[34:15.28]  responsible for is coming together well.
+[34:16.88]  So, it happens kind of recursively at
+[34:18.28]  different layers.
+[34:19.88]  To your question of is there a template?
+[34:21.44]  It's a relatively simple process. So,
+[34:23.64]  yes, there is a template, and in fact,
+[34:25.36]  there's a stripe.dev article that maybe
+[34:27.48]  we can put into the show notes that has
+[34:28.76]  the template, but it literally is say
+[34:30.88]  what you want to do, be very explicit
+[34:33.24]  about the user that you are trying to
+[34:35.92]  have a mental model for cuz that helps
+[34:37.48]  you make the right choices as you go
+[34:38.72]  through the flow, and then really just
+[34:40.76]  keep a very clear stream of
+[34:42.64]  consciousness log of uh of what you're
+[34:45.24]  finding as you go. By the way, also
+[34:47.16]  really important, like praise the stuff
+[34:48.72]  that's good. So, I I'll often send these
+[34:50.52]  these docs around to, you know, a lot of
+[34:52.20]  folks inside of the company, and it's a
+[34:53.28]  great opportunity to recognize great
+[34:54.88]  work done. So, if I ran into that error
+[34:57.52]  message that links to documentation,
+[34:58.84]  that's a great example where I'd be
+[34:59.72]  like, "This is awesome. Nice work."
+[35:02.28]  Being a PM that has received emails from
+[35:05.68]  the CEOs of companies with all the
+[35:07.16]  problems they run into in their train of
+[35:08.56]  thought, it's often like, "Oh god, I
+[35:11.12]  have like so many goals I got to hit,
+[35:12.76]  and I have this timeline, I have these
+[35:14.76]  things I'm working on." What is the
+[35:16.32]  culture like slash how do you give teams
+[35:18.96]  space to do these things that are just
+[35:20.52]  like we're just going to make the
+[35:21.60]  experience better? How do you actually
+[35:23.32]  do that so that PMs aren't stressed out
+[35:24.92]  when they get these things? It starts
+[35:26.48]  with our operating principles. So,
+[35:28.12]  because we have operating principles of
+[35:29.48]  users first and being meticulous in our
+[35:31.08]  craft, we actually tend
+[35:33.76]  all of our kind of ways of building
+[35:35.88]  plans tend to be wired quite well around
+[35:38.56]  this idea that we're going to reserve
+[35:39.84]  enough time
+[35:40.60]  Mhm. to really make the experience good.
+[35:42.80]  Maybe, you know, the most pronounced
+[35:45.12]  version of that is not even the issues
+[35:47.44]  we identify in friction logs.
+[35:49.64]  Maybe maybe in a bit we can talk about
+[35:51.56]  how we invest in reliability and so
+[35:52.88]  forth, but things go wrong, and one of
+[35:54.72]  the things that's very important to me
+[35:55.76]  is that we are a learning organization.
+[35:58.12]  We need to understand why they went
+[35:59.36]  wrong, and then take action to stop the
+[36:01.28]  same thing going wrong in future. And
+[36:03.88]  so, that means that we identify instant
+[36:06.04]  remediations. That's what we call those.
+[36:07.84]  And we prioritize those carefully, and
+[36:10.04]  most of them, the ones that matter,
+[36:11.36]  actually get prioritized before other
+[36:13.28]  work on the road map, which means that
+[36:15.04]  as a PM when you're building your road
+[36:16.76]  map and your plans, you do have to think
+[36:17.92]  about, well, approximately how much
+[36:19.56]  bandwidth do I need to reserve in this
+[36:21.64]  area in order to address polish stuff
+[36:25.08]  that might come up through friction
+[36:26.16]  logging, and also to take care of, you
+[36:28.16]  know, those kind of operational things
+[36:29.72]  as well. It varies by team and varies by
+[36:32.32]  stage of product. So, there is no Stripe
+[36:35.08]  kind of like, "We will reserve 50% of
+[36:37.52]  our time to do this stuff." That
+[36:38.56]  wouldn't make any sense. But we do
+[36:40.40]  encourage and and ask every team to
+[36:43.08]  think hard about how much should they be
+[36:44.56]  setting aside for those kind of
+[36:45.64]  activities. Does that make sense?
+[36:46.92]  Absolutely. I was going to ask you if
+[36:48.04]  there's a percentage, and
+[36:49.84]  basically you trust the teams to set
+[36:51.28]  aside the right amount of time. That's
+[36:52.84]  right. Awesome.
+[36:54.56]  Okay, so sort along the same lines, I
+[36:57.00]  actually asked Shreyas Doshi what I
+[36:59.20]  should ask you. Oh, cool.
+[37:02.20]  He had no idea I was going to do this.
+[37:03.84]  And
+[37:04.96]  what he said is I should ask you how you
+[37:06.40]  did UX reviews
+[37:08.44]  pre-shipping
+[37:09.88]  right after you joined Stripe, and he
+[37:11.20]  just said you were very good at this.
+[37:13.44]  And
+[37:14.36]  so, how do you What is that What is that
+[37:16.16]  like in when How should people learn
+[37:18.72]  from your experience? The way that I did
+[37:20.60]  UX reviews very early on in my time at
+[37:22.44]  Stripe, and not the way that every group
+[37:24.56]  at Stripe does these reviews, is
+[37:27.32]  employing some of the techniques we
+[37:28.40]  talked about already. So, that that act
+[37:31.24]  of friction logging,
+[37:33.24]  it's very often done asynchronously. So,
+[37:35.32]  someone will sit down and reserve, you
+[37:36.96]  know, an afternoon and go through the
+[37:37.88]  product and make meticulous notes, and
+[37:39.20]  that's super useful. We also find it
+[37:41.20]  very valuable to go through that process
+[37:43.12]  together. So, we will bring together
+[37:46.80]  both the team that built the product
+[37:49.12]  that we're looking at, but also a lot of
+[37:51.32]  their cross-functional partners. So,
+[37:52.88]  things like this the support folks that
+[37:54.48]  are going to be handling or kind of
+[37:55.92]  building the process to handle questions
+[37:57.96]  from users about it, executives in the
+[38:00.40]  org that they are part of
+[38:02.28]  to do these these walk-throughs where
+[38:05.04]  we're taking exactly the same approach
+[38:06.52]  as I described with friction logging.
+[38:07.76]  So, imagine we're a particular user and
+[38:09.56]  experiencing the product together, and
+[38:11.72]  then just discussing very openly. We
+[38:13.76]  actually the way that we do this today
+[38:15.40]  is we have a
+[38:17.16]  a log of issues that we want to talk
+[38:18.92]  about that that anyone can type into
+[38:20.80]  while the PM usually is walking us
+[38:23.12]  through the flow, and then we'll get
+[38:24.96]  together at the end and actually talk
+[38:25.92]  about each issue and, you know, does
+[38:27.52]  this need to be addressed? What do we
+[38:28.72]  really think about it? So, that that's
+[38:30.40]  the approach both that that I took early
+[38:32.00]  on and that we take in in general
+[38:34.72]  at scale today.
+[38:36.16]  There's a lot of benefit to to doing
+[38:38.32]  this together. So, someone once
+[38:40.04]  described this to me as if you were a
+[38:42.44]  chef, you're going to you're going to
+[38:44.04]  taste the soup, and you're going to talk
+[38:45.60]  to your kitchen staff about like what
+[38:47.20]  went into the soup when it was good and
+[38:48.56]  wasn't so good. If you run a movie
+[38:50.56]  studio, you're going to sit down and
+[38:51.88]  like watch a lot of movies together. And
+[38:53.80]  so,
+[38:54.76]  actually kind of looking at products
+[38:56.76]  together, I find extremely energizing
+[39:00.16]  and also really valuable in actually
+[39:01.76]  teaching some of the kind of bar for
+[39:03.76]  craft and and values around how we want
+[39:06.04]  the product to interoperate for our
+[39:07.44]  users at scale across the company.
+[39:09.92]  And building on that, there's something
+[39:12.00]  that that that we do occasionally and
+[39:14.60]  and I've done it occasionally at Stripe
+[39:16.80]  called walk the store, where we'll
+[39:19.28]  actually do that process of like looking
+[39:21.56]  at the product together with the whole
+[39:23.48]  company. So, we we have a weekly meeting
+[39:26.48]  called Friday Fireside, where, you know,
+[39:28.16]  not you don't have to attend, but
+[39:29.68]  majority of the company does attend. And
+[39:31.64]  we've done a few series where we'll
+[39:32.80]  actually go through some really really
+[39:34.20]  interesting and critical product flows
+[39:36.04]  together and talk about, you know, how
+[39:38.64]  this is reflecting various, you know,
+[39:40.92]  priorities that we have and the that
+[39:42.36]  we're trying to make, but in in
+[39:43.48]  particular with the user experience and
+[39:45.40]  a particular user at the core.
+[39:47.48]  And that turns out to have a tremendous
+[39:49.52]  amount of benefit and and value in
+[39:52.32]  helping just everyone have a a shared
+[39:54.36]  language for talking about things and
+[39:55.72]  get on the same page about everything.
+[39:58.04]  So, yeah, those are some of the
+[39:59.04]  techniques that that the trace might
+[40:00.64]  have been thinking of.
+[40:01.92]  It's amazing how many directions you all
+[40:03.96]  come at to create this high-quality end
+[40:07.44]  product. Walking the store, friction
+[40:09.56]  logging, these like entire company
+[40:11.24]  meetings looking at the product, UX
+[40:13.44]  reviews, like this is how it's it's
+[40:15.60]  possible to build something so
+[40:16.92]  high-quality, right? It's not just we
+[40:18.76]  have this value and we're going to be
+[40:20.52]  building great stuff. It's like you have
+[40:21.76]  to come at it from so many places.
+[40:23.92]  Yeah, that's an interesting observation.
+[40:25.16]  I think almost anything that you talk
+[40:27.08]  about is a value. I mean, it being a
+[40:28.76]  value matters, but you need to have a
+[40:31.48]  practice behind that that means that the
+[40:33.80]  value becomes real for everyone. So, we
+[40:36.80]  very frequently find that for any
+[40:39.08]  product development team, so long as
+[40:40.76]  they are
+[40:42.16]  they identify the right metrics that
+[40:44.52]  actually represent the experience that
+[40:46.88]  they want to deliver for their users
+[40:49.12]  and then get together
+[40:50.88]  frequently, like predictably, to look at
+[40:52.92]  how the team is doing against those
+[40:54.52]  metrics, but then everything else just
+[40:56.20]  happens naturally because you understand
+[40:59.32]  what you're trying to move and you every
+[41:01.40]  little micro decision you're making
+[41:02.84]  within your own time prioritization and
+[41:04.84]  then in terms of the actual work you're
+[41:06.04]  doing will ladder up to that. And so,
+[41:07.80]  when I say that, it it is like you have
+[41:09.40]  to have the predictable and regular
+[41:12.20]  thing that ladders up to the value
+[41:14.00]  you're trying to deliver in order to to
+[41:15.72]  make it happen.
+[41:17.20]  Coming back to the UX review, just a
+[41:18.80]  question there.
+[41:20.28]  Presenting to the CTOs often very
+[41:22.48]  stressful in a review like that.
+[41:25.16]  What advice would you give PMs and
+[41:27.00]  designers and just leads of a team for
+[41:28.96]  how to prepare for a meeting like that,
+[41:30.96]  whether it's Stripe or anywhere?
+[41:33.20]  I personally try to be as as friendly
+[41:35.76]  and un-scary as possible, but I know
+[41:38.68]  that no matter how much I do that, that
+[41:41.16]  these can be high-stakes meetings.
+[41:43.16]  At Stripe, I think it's probably goes
+[41:44.40]  for most companies, but at Stripe, the
+[41:45.96]  the the main answer here is
+[41:48.36]  put your users hat on and if you
+[41:50.56]  understand your user well and what
+[41:52.28]  they're seeking to get out of the
+[41:53.36]  experience and anchor
+[41:56.04]  any, you know, questions you get asked
+[41:58.28]  or
+[41:59.92]  wobbles you may feel of like, "Oh, that
+[42:01.44]  was an out of out of the blue question."
+[42:03.76]  back to well, here's remember what we're
+[42:05.16]  trying to do for our users. That that
+[42:06.92]  usually makes any meeting like that go
+[42:09.12]  really well. And so, that would be my my
+[42:10.96]  main piece of advice.
+[42:12.44]  So, I mean, a risk that
+[42:14.72]  exists in any company as you get to, you
+[42:17.04]  know, run a bigger team or whatever, is
+[42:19.16]  that individual contributors,
+[42:20.72]  individuals, will have, you know, very
+[42:22.96]  small amount of time with you in
+[42:24.68]  general. So, there's always a risk that
+[42:26.72]  you might make a kind of like
+[42:29.40]  fairly unimportant remark and it will be
+[42:31.20]  taken out of context to be something
+[42:32.80]  very important. So, I I personally also
+[42:35.56]  try very hard to
+[42:37.60]  anchor feedback I'm giving in
+[42:40.80]  what is the what's the user experience
+[42:42.12]  we're trying to deliver? Does this
+[42:43.12]  actually matter? Um, recognizing that
+[42:45.76]  that that is a risk. Um, and uh, yeah,
+[42:48.48]  it definitely takes constant practice.
+[42:51.00]  You've touched on a couple of these
+[42:52.20]  things, but just if someone's trying to
+[42:53.96]  get better at building product,
+[42:56.24]  either PM, designer, engineer, what kind
+[42:58.24]  of advice do you often give for helping
+[43:00.20]  people just build better product?
+[43:02.80]  Almost always goes back to things we've
+[43:05.16]  already talked about here. So, remember
+[43:07.00]  at the very top I talked about iterating
+[43:08.96]  very closely with users.
+[43:10.72]  If you have a mechanism to listen to
+[43:13.88]  users,
+[43:14.92]  get something in their hands quite
+[43:16.76]  quickly, and then get their feedback on
+[43:18.84]  it to run it back through a feedback
+[43:20.28]  loop, you're very unlikely to go wrong.
+[43:23.32]  Especially if you put a lot of thought
+[43:24.64]  into these being the right users to
+[43:26.52]  whose needs you want to focus on because
+[43:28.20]  they ladder up to your strategy, it's
+[43:29.44]  actually very hard to go wrong if you
+[43:31.96]  if you're have that feedback loop
+[43:33.36]  working really well. So, if you don't
+[43:35.08]  have that feedback loop, but actually
+[43:36.24]  it's remarkable as I talk to folks, you
+[43:37.96]  know, across the industry and so forth,
+[43:39.68]  it's remarkable how frequently that
+[43:41.36]  feedback loop doesn't exist in product
+[43:42.84]  development cycles. So, if you don't
+[43:43.88]  have that, go figure out how to create
+[43:45.56]  it. And if you do have it, but you can't
+[43:48.84]  get something into users' hands very
+[43:50.56]  rapidly from you having the idea that
+[43:52.76]  this might matter to getting their
+[43:54.08]  feedback on it, figure out how to make
+[43:55.56]  that go faster as well. And at Stripe,
+[43:57.40]  we focus a lot in all of our developer
+[43:59.16]  tooling and infrastructure on making it
+[44:00.84]  possible for changes to get delivered
+[44:03.12]  continuously to production so that we
+[44:04.72]  can get them in front of users very
+[44:06.12]  rapidly. And yeah, that that's really
+[44:08.36]  important.
+[44:09.76]  This episode is brought to you by
+[44:11.24]  BrainTrust, where the world's most
+[44:12.84]  innovative companies go to find talent
+[44:14.72]  fast so that they can innovate faster.
+[44:17.12]  Let's be honest, it's a lot of work to
+[44:19.28]  build a company. And if you want to stay
+[44:21.24]  ahead of the game, you need to be able
+[44:22.64]  to hire the right talent quickly and
+[44:24.56]  confidently. BrainTrust is the first
+[44:27.16]  decentralized talent network where you
+[44:29.32]  can find, hire, and manage high-quality
+[44:31.64]  contractors in engineering, design, and
+[44:34.36]  product for a fraction of the cost of
+[44:36.08]  agencies. BrainTrust charges a flat rate
+[44:38.56]  of only 10% unlike agency fees of up to
+[44:41.56]  70% so you can make your budget go four
+[44:44.08]  times further. Plus, they're the only
+[44:46.16]  network that takes 0% of what the talent
+[44:48.64]  makes so they're able to attract and
+[44:50.40]  retain the world's best tech talent.
+[44:52.68]  Take it from DoorDash, Airbnb, Plaid,
+[44:55.20]  and hundreds of other high-growth
+[44:56.52]  startups that have shaved their hiring
+[44:58.16]  process from months to weeks at less
+[45:00.32]  than a quarter of the cost by hiring
+[45:02.08]  through BrainTrust network of 20,000
+[45:04.24]  high-quality, vetted candidates ready to
+[45:06.32]  work. Whether you're looking to fill in
+[45:08.24]  gaps, upskill your staff, or build a
+[45:10.36]  team for that dream project that finally
+[45:12.12]  got funded, contact BrainTrust and
+[45:14.16]  you'll get matched with three candidates
+[45:15.96]  in just 48 hours. Visit
+[45:17.92]  usebraintrust.com/lenny
+[45:20.40]  or find them in my show notes for
+[45:21.84]  today's episode. That's
+[45:23.24]  usebraintrust.com/lenny
+[45:25.80]  for when you need talent yesterday.
+[45:28.84]  Something that I've heard about you is
+[45:30.56]  that you get into the weeds. You get
+[45:32.24]  really deep as a CTO of a company at the
+[45:35.56]  scale of Stripe and I came across this
+[45:37.32]  term engineer-cations,
+[45:39.96]  which I think connects to this. Can you
+[45:41.20]  talk about that and how you think about
+[45:42.76]  just getting in the weeds? First of all,
+[45:44.60]  in terms of how how much getting in the
+[45:46.32]  weeds matters. At Stripe, we find that
+[45:48.20]  it's very important for engineering
+[45:50.36]  managers in particular, but really all
+[45:51.64]  managers, to to really have a very
+[45:55.00]  uh,
+[45:55.56]  detailed understanding of whether their
+[45:58.12]  teams are kind of on the right track and
+[45:59.64]  where they're getting stuck in order to
+[46:01.60]  make sure that we make the most progress
+[46:02.96]  in unit time for our users. So, we find
+[46:05.24]  that again, that the nature of the
+[46:07.16]  problems we're solving really reward
+[46:08.60]  domain expertise, like assimilating a
+[46:10.56]  deep understanding.
+[46:12.08]  And we ask all of our managers to be
+[46:14.16]  kind of the editors-in-chief of their
+[46:15.44]  team's plans. I think the only way to do
+[46:16.96]  that is to get the right loop for
+[46:18.28]  yourself to understand what is actually
+[46:20.24]  going on on the ground.
+[46:21.84]  Now, it would be really damaging if I
+[46:24.48]  was only doing work, you know, the IC
+[46:27.08]  engineering level every day. Like that
+[46:28.92]  that doesn't ladder up to someone who's
+[46:30.12]  able to like help
+[46:32.32]  guide the team or whatever. So, it's
+[46:34.16]  important to do this judiciously, but
+[46:36.04]  done
+[46:37.20]  uh, on the right cadence, I think it's
+[46:38.52]  very very valuable. So, engineer-cation
+[46:40.60]  is something that I I personally do. So,
+[46:42.60]  it's it's obviously a portmanteau of
+[46:43.96]  engineer and vacation, but it's not a
+[46:45.64]  vacation. The way
+[46:47.36]  the way we get to the name of the term,
+[46:48.68]  or at least how the way I think about
+[46:49.80]  it, is what you do on engineer-cation is
+[46:52.32]  I'll clear, other people do this as
+[46:54.04]  well, I'll clear several days in a row,
+[46:55.96]  three or four days, actually join a
+[46:57.92]  team, pick up a small task, hopefully a
+[47:00.00]  small feature that we can get all the
+[47:01.36]  way from start to finish, like in
+[47:03.32]  production. Um, and do that, going
+[47:06.20]  through the exact experience that the
+[47:07.64]  team has. So, you get to understand the
+[47:09.64]  developer tools, the build
+[47:11.12]  infrastructure, how you get stuff
+[47:13.16]  reviewed, how good is the documentation,
+[47:15.60]  how long did I have to wait in order to
+[47:17.56]  actually, you know, see my thing live in
+[47:20.16]  in order to start that feedback loop
+[47:21.76]  that I talked about with users. So,
+[47:23.48]  you're actually going and joining a team
+[47:24.68]  and doing some work. While one does
+[47:27.36]  that, uh, it's really valuable and
+[47:29.24]  important to keep a friction log because
+[47:31.36]  then what you want to do is write up the
+[47:33.28]  experience both as an aide-mémoire for
+[47:35.52]  yourself because it then helps you go
+[47:37.08]  and,
+[47:37.96]  you know, for all of the
+[47:39.96]  the next like years' worth of
+[47:41.24]  conversations I might be involved in
+[47:42.56]  around uh, making trade-offs and helping
+[47:44.84]  set priorities, that context really
+[47:46.44]  helps. So, I actually reread these
+[47:47.88]  reports periodically. And it's also
+[47:49.60]  really valuable to actually share them
+[47:50.64]  with the team, which then demonstrates
+[47:52.16]  why I understand what it's actually like
+[47:53.92]  and here's how we're going to kind of,
+[47:55.56]  you know, make sure that we're we're
+[47:56.44]  carrying that information through into
+[47:58.56]  prioritization. So, that's what you do.
+[48:00.84]  The the name is uh,
+[48:02.64]  it's often the hardest thing about these
+[48:04.84]  is finding the time to clear your
+[48:06.80]  calendar for that many days. So, the
+[48:08.80]  reason I think about it is like a
+[48:10.00]  vacation is of course, people go on
+[48:11.64]  vacation. By the way, I work very hard
+[48:13.04]  to use all my vacation days every year.
+[48:14.76]  I think that taking a break and and
+[48:16.44]  recharging your creative juices is
+[48:17.80]  valuable. So, the point is like when
+[48:19.60]  you're on vacation, the world goes on
+[48:21.64]  and it's all fine. So, I treat it like
+[48:23.72]  I'll decline every meeting in order to
+[48:25.36]  to clear my my my schedule and have a
+[48:27.32]  maker schedule in order to do that. And
+[48:29.28]  so, I I've done this, you know, many
+[48:30.68]  times at Stripe. I I advise engineering
+[48:33.40]  managers at Stripe that they should do
+[48:35.12]  an engineer-cation sometime in their
+[48:36.84]  first quarter to six months at the
+[48:39.88]  company. Uh, gives you a tremendous
+[48:41.72]  amount of context for for what your
+[48:43.08]  teams are actually experiencing. And
+[48:44.84]  then for folks to do it once a year on
+[48:46.40]  an ongoing basis. And it provides a
+[48:48.08]  tremendous amount of context. That is
+[48:50.08]  insane. I've never heard of that
+[48:51.36]  process. How do you
+[48:53.48]  stay knowledgeable and up-to-date on the
+[48:56.12]  the infrastructure and the code that you
+[48:57.48]  have to code in all of a sudden when
+[48:59.24]  things move so fast?
+[49:00.56]  the process is literally to help you do
+[49:03.28]  that.
+[49:04.36]  I guess maybe something I left out in
+[49:05.96]  explaining it is um,
+[49:07.88]  we'll often identify a buddy on the team
+[49:09.88]  who's going to like help you through.
+[49:11.16]  So, for what it's worth, at Stripe we
+[49:13.00]  write a lot of code in Ruby. We write a
+[49:15.08]  lot of We write a lot of code in other
+[49:16.48]  languages like Java, TypeScript as well,
+[49:18.12]  but our kind of core infrastructure is
+[49:20.64]  mostly implemented in core product
+[49:22.24]  infrastructure mostly implemented in
+[49:23.52]  Ruby. When I started, I had never
+[49:25.52]  written a line of Ruby in my life. And I
+[49:27.72]  knew I wanted to do this thing. I'd
+[49:28.88]  actually done something like it before
+[49:30.56]  joining. And I was really scared. Like,
+[49:33.72]  what kind of like would how much
+[49:34.92]  credibility might I lose if I show up
+[49:36.96]  and I can't write a line of Ruby, but my
+[49:39.76]  my first buddy was a guy called Akshay
+[49:42.48]  who's still Stripe doing great stuff.
+[49:44.48]  And he helped me learn Ruby during these
+[49:46.60]  three days. And yeah, they ripped me a
+[49:48.24]  little bit, but but ultimately everyone
+[49:50.16]  really appreciated that I'd done it.
+[49:51.84]  Imagine being the engineer that has to
+[49:53.60]  review your PR. I tell them this is an
+[49:56.20]  important part of the process. Please
+[49:58.24]  don't treat me any different to anyone
+[49:59.88]  else. And you know, obviously
+[50:02.72]  to make this work well, you have to set
+[50:04.08]  the expectation that you're not going to
+[50:05.20]  like take immediate action if something
+[50:07.64]  isn't exactly the way you want it to be.
+[50:08.84]  It is a more kind of longitudinal
+[50:10.32]  process.
+[50:11.52]  Is there something that you found in
+[50:12.72]  this process that comes to mind that was
+[50:14.32]  really surprising or interesting or just
+[50:15.88]  kind of lasting in the past I don't know
+[50:17.76]  a couple of years? One of the most
+[50:19.44]  interesting things that I think I've run
+[50:21.08]  into is there are a lot of places that
+[50:23.60]  as we scale, we know that it makes a lot
+[50:27.16]  of sense to invest in automation. And
+[50:28.92]  there were a bunch of places in our
+[50:30.60]  development process where while we've
+[50:32.44]  done that, we were working hard to help
+[50:34.40]  each other right. And actually saying,
+[50:35.68]  "Hey, please come talk to this other
+[50:36.96]  team if you want to use this thing." And
+[50:39.00]  if you're working for instance a
+[50:40.76]  different time zone from someone else,
+[50:42.12]  it's often the case that actually it
+[50:43.32]  would be much better just to document it
+[50:44.64]  well and automate it and then maybe make
+[50:45.96]  the the consultation available async.
+[50:48.52]  And so like running into those kind of
+[50:50.68]  pieces of friction and then, you know,
+[50:52.44]  having a good conversation about it is
+[50:53.84]  has has really helped. But one good
+[50:56.28]  thing about Stripe I think is that that
+[50:58.88]  kind of change doesn't depend on on me
+[51:01.72]  doing anything. So
+[51:03.56]  we really care about making Stripe a
+[51:05.88]  place where engineers can do some of the
+[51:07.64]  best work of their careers. And that
+[51:08.88]  means being enabled with good tools and
+[51:11.08]  good developer productivity. So we
+[51:12.84]  invest a lot in developer productivity.
+[51:14.20]  We have a team
+[51:15.56]  who work on our dev tools. And they
+[51:18.24]  actually run exactly the same product
+[51:19.88]  development process that I just
+[51:21.08]  described for our external users
+[51:22.68]  internally. So
+[51:24.36]  understand your users really well, talk
+[51:26.40]  to them a lot. And so for instance, we
+[51:28.76]  do a monthly survey. We operate at
+[51:31.28]  enough scale now where we can ping
+[51:33.40]  enough people once a month that we get a
+[51:35.44]  statistically significant sample of the
+[51:37.88]  entire organization without having to to
+[51:39.80]  to get everyone to respond every
+[51:41.00]  individual need to respond but once
+[51:42.20]  every six months. And we we ask, you
+[51:44.20]  know, very directly, "What's the
+[51:45.44]  experience you're having?" And then we
+[51:46.40]  use that to prioritize the road map of
+[51:48.56]  our developer productivity team. We also
+[51:50.60]  measure everything. And so we know where
+[51:53.44]  people are getting stuck. And and when
+[51:55.40]  we compare both the kind of free
+[51:56.96]  responses and and the data, it helps us
+[51:59.44]  invest in the best places to make
+[52:01.96]  everyone else more productive. Okay,
+[52:03.60]  that's exactly where I was hoping to go
+[52:04.92]  next. And let me set this question up.
+[52:07.20]  So I saw a tweet of yours recently where
+[52:09.36]  I'm I have some notes here. I'm going to
+[52:10.36]  read that you deploy changes to your
+[52:12.52]  core API 16.4 times a day on average.
+[52:16.60]  Your uptime has been 99.999%
+[52:20.28]  and one in 10 people in the world have
+[52:21.96]  transacted with a business powered by
+[52:23.84]  Stripe at this point. And so my question
+[52:26.08]  is just what does it take to achieve
+[52:27.96]  something like this especially in terms
+[52:29.48]  of tooling and culture
+[52:31.28]  and and everything else you're just
+[52:32.80]  talking about? Well, I think it's worth
+[52:34.28]  saying at Stripe we are trying to do
+[52:35.64]  something I think relatively unique,
+[52:37.76]  which is
+[52:39.20]  the what we what we power for the
+[52:41.40]  businesses that build on Stripe, our
+[52:42.64]  users, it's it's really business
+[52:44.20]  critical to them. Like we're literally
+[52:45.64]  talking about money coming into your
+[52:47.68]  business to help you run your operations
+[52:50.24]  or make it even possible for you to run
+[52:51.92]  your operations and maybe pay your
+[52:54.28]  employees and so forth. Um all the
+[52:56.88]  revenue automation that we do around
+[52:58.32]  billing, subscriptions, our financial
+[53:00.36]  automation products helping you close
+[53:01.56]  your books. Like this stuff matters. You
+[53:03.28]  cannot get it wrong. And we also operate
+[53:06.48]  Stripe today like we we move as much
+[53:09.52]  money
+[53:10.64]  as all of e-commerce was when Stripe got
+[53:12.84]  started. So we operate at very
+[53:13.92]  significant scale. And so business
+[53:15.92]  critical, significant scale, we just
+[53:17.48]  have a tremendous duty to our users to
+[53:19.40]  to get this right and be extremely
+[53:21.28]  reliable and available for them.
+[53:23.48]  So we do think about that a lot.
+[53:25.76]  Now, there's one way to be very
+[53:27.60]  reliable, which is to try to change
+[53:29.12]  things as infrequently as possible. Like
+[53:31.56]  never change anything, then you have
+[53:33.84]  many fewer opportunities for things to
+[53:35.36]  break. But we don't take that approach.
+[53:37.80]  Um
+[53:38.64]  the needs of our users are evolving so
+[53:41.40]  rapidly, the number of ways that we want
+[53:43.52]  to serve them and can serve them is
+[53:44.92]  evolving rapidly enough that it matters
+[53:47.00]  a lot that we can operate in a kind of
+[53:50.44]  constantly changing environment.
+[53:52.24]  Hopefully I've explained like why that
+[53:53.68]  matters. Like that tight feedback loop
+[53:54.92]  with users only possible if you can
+[53:56.48]  actually get something in their hands.
+[53:58.04]  So we choose to design the way we work
+[54:01.68]  to hold those two things true at the
+[54:03.28]  same time. And it does take a lot of
+[54:05.32]  care and attention and it takes a lot of
+[54:06.96]  systems. So um
+[54:09.68]  maybe just kind of build this up. Uh
+[54:12.00]  first of all, there's a lot in our
+[54:13.88]  development process and the ways that we
+[54:15.96]  take changes into our product that that
+[54:19.12]  makes this possible. One of those is we
+[54:21.76]  really care a lot about having really
+[54:24.12]  good test suites. So we believe in
+[54:26.00]  automated testing. We don't have manual
+[54:27.68]  testers because manual testers couldn't
+[54:29.64]  possibly cover the the vast array of API
+[54:33.40]  endpoints and configurations that we
+[54:34.84]  offer. But automated test can. So we
+[54:37.08]  work hard to have a lot of automated
+[54:38.64]  test coverage. And then every single
+[54:40.96]  change that an engineer produces
+[54:43.84]  gets run through this battery of tests
+[54:45.68]  before it can even possibly go towards
+[54:47.68]  production. And then we work very hard
+[54:50.28]  as changes end up in production to put
+[54:52.68]  them through increasingly
+[54:55.68]  realistic and then more broadly exposed
+[54:58.48]  environments. So we have a bunch of
+[55:00.08]  staging environments where we like send
+[55:01.56]  a a battery of like more realistic
+[55:03.44]  end-to-end tests. Then finally once
+[55:05.44]  something actually goes to production,
+[55:06.48]  it starts at a very small percentage of
+[55:08.32]  the traffic and then ramps up to the
+[55:09.72]  whole. So we can detect problems before
+[55:11.64]  they become huge problems.
+[55:13.60]  There's a number of things that we had
+[55:14.80]  to do to make that all possible. So for
+[55:17.88]  instance,
+[55:19.52]  every change that a Stripe engineer
+[55:21.44]  submits once it's passed those tests, it
+[55:22.64]  actually ends up in production
+[55:23.76]  automatically
+[55:25.88]  over the course of the next 45 minutes
+[55:27.56]  or so. Um and that the I don't think
+[55:31.48]  there are a lot of financial services
+[55:32.92]  companies, at least not until maybe the
+[55:34.76]  last few years, that have operated that
+[55:36.36]  way. And so that takes a certain mind
+[55:37.88]  shift. You have to actually have to
+[55:39.00]  assume that that's going to happen and
+[55:40.56]  put the right systems and processes in
+[55:42.12]  place.
+[55:43.20]  And then the other thing that's
+[55:44.20]  important is to recognize that we just
+[55:46.80]  we we we have to obsess about getting
+[55:50.16]  very systematically good at addressing
+[55:53.00]  anything that can go wrong. So I
+[55:54.96]  mentioned earlier it's really important
+[55:56.20]  to me that we are a continuously
+[55:57.72]  learning organization. And I mean
+[56:00.52]  something else that matters of course is
+[56:01.68]  things will go wrong. You know,
+[56:02.84]  sometimes there is a downstream partner
+[56:05.12]  where something breaks. Other times
+[56:07.00]  there is, you know,
+[56:08.88]  a particular kind of network outage
+[56:10.40]  outside of our control or whatever. So
+[56:12.16]  things will go wrong. So it's important
+[56:13.60]  that we have the right systems in place
+[56:15.40]  that minimize the damage that any
+[56:17.84]  individual thing going wrong can cause.
+[56:19.96]  And we work hard on that. We have
+[56:21.04]  redundant systems in a bunch of places.
+[56:23.12]  We think hard about how something that
+[56:24.84]  breaks for one user wouldn't kind of
+[56:26.16]  carry over into into other users.
+[56:28.64]  And then we actually very actively work
+[56:31.48]  hard to put things right when they are
+[56:32.80]  wrong. So that's called incident
+[56:34.28]  response at most companies including
+[56:35.84]  Stripe. Um I actually think Stripe is
+[56:37.68]  very very good at incident response.
+[56:39.00]  We've got very good tools for both
+[56:40.96]  declaring incidents and then pulling the
+[56:42.56]  right people together to to put them
+[56:44.44]  right. But we don't stop there. We
+[56:46.60]  really obsess about reviewing them
+[56:48.44]  carefully and identifying not only like
+[56:50.80]  what would have stopped this thing
+[56:51.84]  happening, but how can we prevent this
+[56:53.64]  whole class of issues in future? And as
+[56:56.44]  I said earlier, we prioritize working on
+[56:58.28]  that stuff ahead of anything else on the
+[57:00.92]  road map. It's because of remember what
+[57:03.12]  it is we're trying to do, how how
+[57:04.12]  important it is and how if we don't do
+[57:05.92]  that well, we can't move quickly for our
+[57:07.48]  users. So that's how we do it. By the
+[57:09.44]  way, I don't want to I want to kind of
+[57:10.60]  come across here and sound like we've
+[57:11.56]  got it all figured out. Of course all of
+[57:12.96]  this is always entirely, you know, in
+[57:15.80]  flux. We're always anxious to figure out
+[57:17.24]  how we can make it go better. For
+[57:18.88]  instance, in recent years, we realized
+[57:20.56]  that we could get a lot of benefit from
+[57:21.88]  what we call chaos testing. That's like
+[57:23.24]  injecting errors and making sure that
+[57:25.08]  the systems respond in such way that it
+[57:26.52]  doesn't cause any impact on users. So
+[57:28.44]  it's constantly evolving and we, you
+[57:30.68]  know, we really enjoy learning from
+[57:32.24]  other companies and learning from our
+[57:33.76]  users as well. But it's something we
+[57:35.84]  care a tremendous amount about and think
+[57:37.72]  very rigorously and systematically
+[57:38.92]  about.
+[57:40.20]  Did you say that it takes only 45
+[57:41.68]  minutes from pushing code to it going
+[57:44.04]  into production?
+[57:45.32]  Typically, yes. So we we that battery of
+[57:48.52]  tests that I described that gets run on
+[57:50.68]  every change, um that gets run in
+[57:53.24]  parallel to when you send it for review
+[57:55.16]  by another human. So it's run once,
+[57:57.08]  typically takes about 15 minutes. And
+[57:58.96]  then once the change is merged into our
+[58:01.56]  code base, we run that same test suite
+[58:03.24]  one more time. So another 15 minutes.
+[58:05.16]  And typically it takes about 30 minutes
+[58:06.52]  for the systems to automatically deploy
+[58:08.16]  into production. That's that's how we
+[58:10.24]  run. Um and you know, think about
+[58:12.96]  establishing that tight feedback loop
+[58:14.40]  with users. That means you can get
+[58:15.72]  feedback from a user in the morning, you
+[58:17.76]  can figure out how to address it, and
+[58:19.36]  you can actually put something back in
+[58:20.32]  their hands by the end of the day. And
+[58:22.92]  that loop running inside of 24 hours I
+[58:24.44]  think is pretty important. That's
+[58:25.96]  incredible. I remember times at Airbnb
+[58:28.24]  where it took hours
+[58:29.60]  for tests to finish because they just
+[58:31.76]  there was a lot of them. And they fixed
+[58:33.56]  that over time, but I'm used to more
+[58:35.80]  long on that scale. It takes constant
+[58:38.12]  effort to to hold those Those Those
+[58:39.96]  numbers by the way are important. Like
+[58:41.92]  those are about the right numbers I
+[58:43.28]  think for a company operating our kind
+[58:45.04]  of scale. Of course, as you add more
+[58:47.48]  stuff, you add more tests. So we've had
+[58:49.40]  to work on we've had to invent
+[58:50.72]  mechanisms to make it run more in
+[58:52.40]  parallel. We now have a thing called
+[58:54.00]  selective test execution where we figure
+[58:56.00]  out for the not the battery that runs
+[58:58.08]  before it goes into production, that we
+[58:59.56]  run everything and just run it on more
+[59:01.12]  machines to make it parallelize. But for
+[59:03.04]  the changes that are the tests that we
+[59:04.44]  run for individual changes,
+[59:07.52]  uh systems that figure out well, which
+[59:08.92]  tests are the ones that might be
+[59:10.60]  material for this particular thing. Um
+[59:12.76]  and that's been like a real source of
+[59:14.68]  innovation. In fact, our our distributed
+[59:18.12]  change and test environment at Stripe is
+[59:20.12]  the biggest distributed system that we
+[59:21.64]  actually run. Um and so running that is,
+[59:24.32]  you know, requires just as much energy
+[59:26.00]  and and effort and rigor and and craft
+[59:28.28]  as everything else. What are some of the
+[59:30.08]  things you've done that have had the
+[59:31.92]  most impact on developer productivity.
+[59:34.08]  We've touched on a couple of these
+[59:35.12]  already. That that auto deploy mechanism
+[59:38.20]  definitely had a very significant
+[59:39.76]  individual impact. So, before we
+[59:41.88]  introduced that, so that
+[59:43.92]  sometime within the last 5 years, each
+[59:46.08]  deployed to production required an
+[59:48.08]  engineer to actually babysit it, to like
+[59:50.36]  watch it as it went live, make sure all
+[59:51.76]  the charts look good. And it was a bit
+[59:53.64]  of it was a bit of a kind of game of
+[59:55.00]  roulette because you always wish that
+[59:57.16]  your change would get bundled in with
+[59:58.36]  someone else's so that they were paying
+[60:00.00]  attention to it for you. So, literally
+[60:02.16]  being able to be like fingers on
+[60:03.68]  keyboard at something else while your
+[60:05.16]  change is going live and it's going to
+[60:06.84]  automatically monitored. That that was a
+[60:08.64]  big improvement in our productivity.
+[60:11.36]  Also, like very small things that this
+[60:13.36]  is just like optimizing checkout. Very
+[60:15.68]  small changes really compound in a big
+[60:17.24]  way. So, for instance, about 8 months
+[60:19.76]  ago we made it possible um we've got a
+[60:21.92]  we use a tool for code review um
+[60:24.48]  it's just quite popular as GitHub
+[60:25.60]  Enterprise. But, we built a bunch of our
+[60:27.32]  own uh experiences and controls around
+[60:29.68]  that. We will tick box that you can tick
+[60:31.84]  on your uh on your pull request, that's
+[60:33.84]  what you call an individual change that
+[60:35.32]  an engineer produces that is auto merge,
+[60:38.04]  which means once the reviewer says this
+[60:39.60]  is good, I don't need to come back and
+[60:40.92]  look at it again, the system should just
+[60:42.64]  take over. And that just cuts out one
+[60:45.12]  whole kind of human distraction step and
+[60:48.00]  that laddered up to a big change in
+[60:49.44]  productivity as well. So, these very
+[60:51.36]  small changes can, if you're deliberate
+[60:53.00]  with them, ladder up to a big impact.
+[60:54.92]  I'm going to go in a different direction
+[60:55.92]  now.
+[60:56.68]  AI very hot right now. Yeah. Has AI
+[61:00.44]  impacted the way you all build product
+[61:02.88]  yet? And if not, where do you think it
+[61:04.60]  starts to go in the next few years?
+[61:06.76]  Yeah, we're very excited about AI. Uh
+[61:09.96]  now, let's just take one step back.
+[61:12.24]  Stripe has been using machine learning
+[61:15.40]  and, you know, advanced machine learning
+[61:16.84]  techniques at the heart of our product
+[61:18.08]  since the very early days. Um Radar is
+[61:20.80]  our solutions for payment fraud and it
+[61:23.84]  has used I mean it's at the very core of
+[61:26.40]  our product and has used machine
+[61:27.80]  learning since we introduced it. We
+[61:29.68]  also, if you think about the nature of
+[61:31.48]  Stripe, we operate in an environment
+[61:33.52]  where we have to do a lot of work to
+[61:34.72]  kind of catch bad actors in the system,
+[61:36.68]  fraudsters, or fraudulent businesses.
+[61:38.72]  So, we've been employing a lot of
+[61:40.08]  machine learning techniques there again
+[61:41.72]  for years and, you know, we couldn't
+[61:43.08]  operate the company without them. So,
+[61:45.32]  you know, the difference between ML and
+[61:46.72]  AI I think when we think about AI today,
+[61:48.76]  we're mostly talking about the
+[61:49.72]  applications of large language models.
+[61:51.76]  But, those are really based on this new
+[61:53.32]  technology called transformers, a paper
+[61:55.60]  that came out of Google a while back
+[61:57.28]  about 4 years ago, 5 years ago.
+[61:59.08]  And we put transformer
+[62:01.04]  technology
+[62:03.76]  at some point more than a year ago. And
+[62:06.20]  it's it's proved to have a very profound
+[62:07.96]  impact on our ability to solve those
+[62:09.80]  problems for our users, which which is
+[62:11.32]  great. But, we are also excited about
+[62:14.08]  the applications of large language
+[62:15.44]  models.
+[62:16.36]  I mean, there's there's really two
+[62:17.16]  dimensions to this. Number one, we feel
+[62:19.68]  privileged to be able to help serve and
+[62:22.88]  power a lot of businesses getting
+[62:25.44]  started in this space. One big
+[62:27.20]  difference between AI startups and and
+[62:29.88]  others is it's actually quite expensive
+[62:31.52]  to operate an AI startup in terms of the
+[62:33.88]  compute resources, like running this
+[62:35.92]  stuff in these GPU machines is is quite
+[62:37.96]  expensive. So, typically these companies
+[62:40.60]  need to have a monetization model from
+[62:42.92]  day one. And really excited to say like
+[62:46.08]  most of the AI economy is is running on
+[62:48.60]  Stripe and we're working very hard to
+[62:49.84]  make sure we serve all their needs. Open
+[62:51.12]  AI for instance is using us for
+[62:53.80]  monetizing ChatGPT Plus and all their
+[62:56.84]  other products. But, they don't just
+[62:58.28]  stop there, we're actually helping power
+[63:00.12]  all of their subscriptions and revenue
+[63:02.92]  tracking and and financial operations
+[63:05.16]  around the business. And the point about
+[63:07.32]  that is
+[63:08.60]  we've been putting very large
+[63:10.40]  engineering teams on this stuff for
+[63:11.64]  years and that means, you know,
+[63:14.16]  anyone who wants to build a a
+[63:16.64]  reconciliation product in the
+[63:17.96]  subscriptions business model
+[63:20.00]  if you want to do that yourself, you
+[63:20.88]  have to put, you know, big engineering
+[63:22.20]  teams on them. But, if you can use
+[63:24.08]  Stripe instead, you can actually focus
+[63:26.04]  those really precious engineering
+[63:27.36]  resources on keeping up with the rate
+[63:29.32]  of, you know, breakneck innovation in
+[63:31.08]  this space. So, we're excited about
+[63:32.20]  that. But, we're also really excited
+[63:34.68]  about the applications of these AI
+[63:36.72]  techniques on our own ability to serve
+[63:39.12]  our users better. And so, for instance,
+[63:41.88]  at sessions we'll be talking about a few
+[63:43.24]  of these. We
+[63:44.96]  we started working with Open AI when
+[63:46.72]  they had the beta it was a kind of
+[63:48.52]  private beta of GPT-4 available at the
+[63:50.88]  beginning of this year. The first thing
+[63:52.72]  we thought of was we've a lot of
+[63:54.40]  documentation on Stripe and we put a lot
+[63:56.52]  of care and attention to making it good.
+[63:58.08]  But, if you want to achieve something
+[64:00.08]  with your Stripe integration, you're
+[64:01.12]  typically going to spend quite a lot of
+[64:02.16]  time
+[64:03.32]  reading docs and kind of synthesizing
+[64:04.88]  them as an end user. We realized we can
+[64:07.84]  have GPT-4 read all of our docs, store
+[64:10.88]  them as embeddings, and then answer
+[64:12.16]  questions for developers. And so, we now
+[64:14.80]  have that available in kind of early
+[64:17.64]  stage release inside of our
+[64:19.00]  documentation. It's turning out to be
+[64:20.44]  pretty valuable.
+[64:21.68]  We've also been able to apply these
+[64:23.56]  techniques to other areas of our
+[64:25.76]  products. So, something that we're going
+[64:27.24]  to show an early version of at sessions
+[64:29.48]  is we have a really powerful product as
+[64:32.76]  part of our revenue and financial
+[64:34.60]  automation suite, which we call Sigma.
+[64:36.56]  It allows you to write SQL queries
+[64:38.52]  across all of your Stripe data. So, you
+[64:40.36]  can like interrogate your Stripe data to
+[64:42.12]  understand your business in really fine
+[64:43.76]  grain detail, you know,
+[64:45.56]  which country has the fastest growing
+[64:46.84]  sales, which segment in in which country
+[64:48.60]  has, you know, particular attributes to
+[64:50.64]  it.
+[64:51.44]  Very powerful product, but it's one that
+[64:53.20]  is potentially challenging for
+[64:55.12]  non-developers to adopt. Like, you do
+[64:56.88]  have to know how to write SQL queries
+[64:58.84]  unless you just use the ones in the menu
+[65:00.56]  in order to get the full value out of
+[65:01.72]  the product. Well, it turns out with
+[65:03.44]  large language models, we can apply this
+[65:05.64]  technology where you can ask questions
+[65:07.44]  in natural language and our engine will
+[65:10.44]  actually write the SQL query for you.
+[65:12.44]  And we've had to do a lot of work to
+[65:13.76]  kind of tune that to make sure that it's
+[65:15.36]  reliable and understandable and it's
+[65:16.88]  going really well. And we also see great
+[65:19.52]  applications in actually applying these
+[65:22.04]  technologies to make us more efficient
+[65:25.04]  internally, answer users' questions
+[65:26.80]  faster, help each other out more
+[65:29.24]  quickly. And so, we're doing those
+[65:30.68]  things as well.
+[65:32.20]  One concrete thing that we did, which
+[65:33.80]  I'm I'm pretty excited about, is
+[65:36.48]  not long after we saw ChatGPT come out,
+[65:39.36]  we realized it would be really awesome
+[65:41.84]  if we could apply that to many use cases
+[65:44.08]  inside of Stripe.
+[65:45.44]  But, as you can imagine, a lot of the
+[65:46.88]  data that we are dealing with on a daily
+[65:49.28]  basis is very sensitive to our business,
+[65:52.28]  to our users. And we care a lot and we
+[65:54.40]  have a lot of governance around this.
+[65:55.92]  But, we wanted to make that technology
+[65:57.00]  available. We couldn't say, "Hey,
+[65:58.24]  Stripes, go and use ChatGPT."
+[66:00.56]  So, we stood up an integration to GPT-4
+[66:02.76]  and an internal UI to to use models like
+[66:05.36]  that. But, here's the thing that I want
+[66:07.28]  to kind of relate to all of your
+[66:08.68]  viewers.
+[66:09.68]  We find that we built presets into that.
+[66:12.76]  So, when you when you work with large
+[66:14.12]  language models, you want to write a
+[66:15.20]  prompt that then helps get the model
+[66:17.40]  into a state where it's going to be able
+[66:18.92]  to to solve the particular problem at
+[66:20.40]  hand. And we find that
+[66:23.16]  writing prompts is something that's
+[66:24.40]  accessible to folks across lots of
+[66:26.08]  different job families, not just
+[66:27.16]  engineers. Folks in our marketing team,
+[66:29.76]  folks in our user support team have been
+[66:31.36]  able to use this as well. You put you
+[66:33.12]  can put a lot of care and attention to
+[66:34.28]  getting a prompt that works really well.
+[66:35.68]  We now make it possible for those to be
+[66:36.92]  shared across the company. Um so, I can
+[66:39.44]  grab the preset to help me
+[66:41.88]  write, you know, a blog post with the
+[66:43.84]  the right kind of tone and I find it
+[66:46.00]  extremely valuable in in in helping me
+[66:48.28]  and and many other people across the
+[66:49.48]  company. So, I think there's a lot
+[66:52.20]  uh
+[66:52.96]  a lot of innovation in how companies
+[66:56.36]  serve their users and operate is is
+[66:58.04]  possible right now and we are working
+[67:00.44]  hard to employ all of that on behalf of
+[67:02.08]  our users.
+[67:03.44]  What about as engineers, do you are you
+[67:05.52]  pro Copilot? Is there something along
+[67:07.36]  those lines you
+[67:08.76]  find useful? Where you have How do you
+[67:10.92]  think about that? We're excited about
+[67:12.72]  Copilot. We we've made Copilot available
+[67:15.24]  to our engineers internally. Um
+[67:18.60]  we ran a like fairly rigorous trial to
+[67:21.48]  make sure that we felt good about uh
+[67:24.80]  about its actual, you know, impact on
+[67:27.28]  our ability to write code and the code
+[67:29.76]  it's actually generating and find that
+[67:31.84]  it was very effective for us.
+[67:34.36]  Both in
+[67:35.88]  productivity, but also just in helping
+[67:37.92]  our engineers feel
+[67:40.64]  feel like they could direct their energy
+[67:42.16]  towards some of the bigger problems,
+[67:43.84]  like how should this stuff fit together,
+[67:45.20]  rather than some of the micro problems.
+[67:47.00]  And so, because we had such great
+[67:48.28]  feedback in that, we've we've made it
+[67:49.44]  available
+[67:50.56]  very broadly internally. And we'll be
+[67:53.40]  very excited to see where that that
+[67:55.16]  space develops over time. Give a sense
+[67:57.24]  of the productivity gain that say,
+[68:00.16]  imagine you have a lot of 10x engineers.
+[68:02.36]  The gains that an amazing engineer gets
+[68:04.44]  out of a Copilot versus, you know, newer
+[68:06.40]  engineer. It's honestly too early to
+[68:08.72]  tell because we've only recently made it
+[68:10.64]  available at scale. What we're typically
+[68:12.68]  seeing is that the kind of tasks that it
+[68:14.56]  accelerates are
+[68:16.96]  remember I mentioned how much energy we
+[68:18.76]  put into having comprehensive test
+[68:20.20]  suites. It's actually using Copilot to
+[68:22.68]  generate your test cases turns out to be
+[68:24.52]  extremely valuable.
+[68:26.84]  There's there's a reasonable amount of
+[68:28.12]  boilerplate that is kind of like
+[68:29.24]  repeated code and concepts that goes
+[68:31.24]  into writing good tests. But, you also
+[68:33.60]  have to reason very carefully about is
+[68:35.16]  this actually testing exactly what it
+[68:36.64]  want. So, Copilot takes a lot of that
+[68:38.76]  boilerplate generation out of the way so
+[68:40.96]  that you're actually thinking about the
+[68:42.04]  stuff that really matters. And I think
+[68:44.52]  that is going to have a profound impact
+[68:46.60]  on quality of code that we write as
+[68:48.76]  well. But, it's a little too early to
+[68:50.20]  say cuz we literally just rolled it out
+[68:51.68]  what kind of actual measurable impact
+[68:53.36]  it's having. I was talking to an
+[68:54.92]  engineer and he's just like
+[68:56.84]  I like the act of writing code and it
+[68:58.88]  makes me sad that this is doing this for
+[69:00.60]  me. So, he he turns it off. But, I think
+[69:04.16]  over time people will be like, "Yeah,
+[69:05.52]  let's try. I never really enjoyed this
+[69:06.72]  part of it." I mean, I I'll speak from
+[69:08.32]  personal experience. I love writing
+[69:09.60]  code. Like, I really love writing code.
+[69:11.44]  It's pretty much what I do for fun. I
+[69:13.60]  also love writing code with Copilot
+[69:15.36]  because, as I said, it it means that I
+[69:17.76]  can focus on the parts that really
+[69:19.44]  matter. And I think that's been a fairly
+[69:21.60]  consistent experience across Stripe as
+[69:23.08]  well. Awesome.
+[69:24.88]  So, you run a massive engineering team.
+[69:27.36]  I don't know if you share the numbers of
+[69:28.48]  engineers, but I know there are many.
+[69:30.44]  What are And this is a broad question.
+[69:31.84]  Just what are some lessons you've
+[69:33.12]  learned about managing people
+[69:35.96]  and or managing engineers, whichever
+[69:37.44]  direction you want to go.
+[69:40.84]  Wow, big question.
+[69:42.60]  There There are so many different
+[69:43.88]  directions we could take that. So, I'll
+[69:45.20]  I'll share a few
+[69:46.64]  observations. They don't necessarily all
+[69:48.36]  have a particular theme to them.
+[69:50.40]  I think as I've been responsible for
+[69:53.04]  bigger and bigger teams over time,
+[69:55.12]  one of the things that you know, just
+[69:57.48]  repeatedly learn is I I personally will
+[70:00.52]  not be involved in really any of the
+[70:03.20]  decisions that that matter and happen.
+[70:04.80]  Like there are there are thousands of
+[70:06.16]  decisions that an organization of any
+[70:08.00]  scale is making every single day. You
+[70:09.40]  know, every individual engineer or PM is
+[70:11.92]  making hundreds of small decisions and
+[70:13.88]  some big ones every day that affect the
+[70:15.48]  kind of general trajectory. So,
+[70:17.40]  the most important thing is to really
+[70:20.64]  focus on hiring the right people. And
+[70:23.12]  that means like hiring people that you
+[70:25.40]  can trust with a tremendous amount of
+[70:28.20]  autonomy. Like if I try to get involved
+[70:30.48]  in lots of decisions, everything will
+[70:32.12]  grind to a halt. So, how do you do that?
+[70:34.68]  It is important obviously to be
+[70:35.80]  rigorous. We've described already what
+[70:37.20]  our hiring process is. I really lean
+[70:39.04]  into getting to know folks in you know,
+[70:40.56]  very very well as as we're hiring them.
+[70:42.28]  By the way, something I didn't mention
+[70:43.36]  earlier that is I think important here
+[70:44.80]  is we pay a lot of attention at Stripe
+[70:47.28]  during the hiring process to references.
+[70:49.24]  This is typically later in the process,
+[70:50.96]  but
+[70:51.92]  you know, if you put someone through an
+[70:53.08]  interview process, you've only spent
+[70:54.36]  what, like 8 hours total with them. If
+[70:56.92]  you talk to people that actually have
+[70:58.48]  worked with them before, you're probably
+[70:59.76]  benefiting from thousands of hours of
+[71:01.80]  direct experience. So, like we take this
+[71:03.48]  very seriously and we we try to ask
+[71:07.52]  you know, smart questions that will help
+[71:09.12]  get real signal out of that. I certainly
+[71:11.32]  find when it comes to hiring folks that
+[71:13.52]  then go on to really you know, make a
+[71:15.44]  transformative impact that references
+[71:17.28]  are often the time that you get the best
+[71:19.20]  conviction on the hire or not. So, hire
+[71:22.08]  the right people and then you have to
+[71:23.52]  trust them. Now, trust is interesting.
+[71:25.48]  It's actually quite challenging to trust
+[71:27.00]  people that you've just hired, right?
+[71:28.28]  We've got no stake really on you yet.
+[71:30.56]  And so, what I find is you do actually
+[71:32.60]  have to be generous in giving trust and
+[71:34.24]  assuming trust by default at the
+[71:35.72]  beginning, but then you do need to you
+[71:38.28]  know,
+[71:39.32]  hold people accountable enough that they
+[71:40.60]  are proving that they
+[71:42.44]  you know, they can handle that trust.
+[71:44.20]  So, you know, sometimes that means
+[71:46.20]  hiring someone who you think quite
+[71:48.52]  plausibly can end up in a very big role
+[71:50.36]  into a smaller role to begin with. Other
+[71:52.16]  times you just have the big role that
+[71:53.80]  you need to to fill, in which case it's
+[71:55.52]  important to like be quite conscious
+[71:57.00]  about really trusting and delegating to
+[71:59.28]  them with you know, a lot of support.
+[72:01.92]  So, I'm always
+[72:03.60]  working hard to
+[72:05.84]  delegate sometimes like a little bit
+[72:07.48]  more than I'm comfortable with because
+[72:09.00]  that's the only way to like really
+[72:10.84]  operate at significant scale.
+[72:13.12]  I think something else And sorry, this
+[72:14.92]  is a really a smorgasbord of a lot of
+[72:16.64]  different things.
+[72:17.04]  Perfect. Something Something else I've
+[72:19.60]  realized as the organizations I work
+[72:22.00]  with and be responsible for have grown
+[72:24.08]  is that you have to be extremely
+[72:26.32]  conscious about managing your own time.
+[72:28.36]  There are hundreds or thousands of
+[72:30.72]  people who like quite legitimately might
+[72:32.76]  want to get some time with you. And you
+[72:35.40]  know, if you just let your places that
+[72:37.96]  you spend your time and energy be
+[72:39.44]  controlled by the stuff that comes into
+[72:40.88]  your inbox or the stuff that gets put on
+[72:42.80]  your calendar, that's going to be
+[72:44.36]  random. So, it's quite likely that
+[72:46.52]  that's not laddering up to the biggest
+[72:48.20]  impact. So, I personally have been
+[72:50.76]  running a loop for I don't know, maybe
+[72:52.24]  like 10 years where
+[72:54.28]  Sunday evenings Well, usually starts on
+[72:56.40]  Sunday afternoons. Like I read a lot of
+[72:57.92]  what happened last week. Then on Sunday
+[72:59.28]  evenings I actually write a list for
+[73:00.32]  myself of You asked me a question at the
+[73:03.04]  start of this podcast which was like,
+[73:04.48]  what would What would like be great
+[73:06.36]  success for this podcast from your
+[73:07.56]  perspective? I basically think about
+[73:08.96]  that for my week every Sunday night. I
+[73:11.32]  make a list of if we got these things
+[73:13.20]  done this week, that is a good week. And
+[73:15.52]  obviously we need to be dynamic. Like
+[73:17.28]  things will surprise you through the
+[73:18.32]  week. But honestly then that that drives
+[73:20.96]  a lot of just where I decide to spend my
+[73:22.96]  time. And you know, I try to
+[73:25.76]  you know, encourage everyone to think
+[73:27.36]  that way throughout the organization and
+[73:29.00]  I think it does ladder up to more impact
+[73:30.44]  over time.
+[73:31.88]  I think the final thing I'll say here is
+[73:34.44]  I mentioned how how important operating
+[73:36.36]  principles are to the culture. I think
+[73:38.40]  for any manager and any leaders, that
+[73:40.44]  includes ICPMs as well. But for any
+[73:42.64]  manager, any leader, like how you show
+[73:45.04]  up really does
+[73:46.76]  set the culture that that is around you.
+[73:49.04]  So, I try very hard to
+[73:52.36]  show up very consistently every day.
+[73:54.80]  Even though there will very frequently
+[73:56.92]  be things that are going wrong and are
+[73:59.16]  bad and are hard, it's actually very
+[74:00.88]  important to show up quite consistently.
+[74:02.84]  Certainly, you know, in line with all
+[74:04.60]  the values that we have in the culture
+[74:06.04]  that we want to set in order to to
+[74:07.72]  really kind of model that at scale. And
+[74:10.20]  you know, different days that can be
+[74:11.76]  easier and harder. So, the final thing
+[74:13.92]  is I think it's quite important to
+[74:15.80]  manage your own energy. There are some
+[74:18.40]  tasks that I do that are maybe not the
+[74:21.28]  most important thing, but I know that I
+[74:22.84]  get a lot of joy and
+[74:25.52]  and energy from them. And then that
+[74:26.92]  carries over into the other stuff that
+[74:28.44]  that that also needs to get done.
+[74:30.40]  Just two more questions before we get to
+[74:32.12]  our very exciting lightning round.
+[74:34.52]  One is just I feel like Stripe is
+[74:36.48]  incredibly good at planning and
+[74:38.40]  organizing, prioritizing. I know every
+[74:40.36]  inside it's always not as beautiful as
+[74:42.32]  it may seem on the outside.
+[74:44.12]  But what have you learned? What has
+[74:45.40]  Stripe learned about planning and
+[74:46.92]  prioritizing that you think other
+[74:48.40]  companies might be missing?
+[74:50.40]  Yeah, it was funny you say that. I would
+[74:51.92]  say planning inside of Stripe does not
+[74:54.00]  get the highest net promoter score that
+[74:56.64]  you might imagine. I do think it is
+[74:58.52]  actually quite effective. And by the
+[74:59.80]  way, the reason I think that planning
+[75:02.16]  the way we do planning at Stripe doesn't
+[75:03.44]  always get the best internal
+[75:05.28]  rep is
+[75:06.84]  we we have grown very rapidly.
+[75:09.80]  And that means that almost every time we
+[75:11.92]  come back round to planning, we actually
+[75:14.20]  And this is kind of a theme at Stripe.
+[75:15.20]  We we think about a lot of the ways that
+[75:16.76]  we work internally from first
+[75:18.20]  principles. So, we will tend not to by
+[75:22.28]  default just pick a system off of the
+[75:25.00]  shelf that some other company has run or
+[75:26.88]  that we've used before. We'll think hard
+[75:28.80]  about
+[75:29.92]  considering what we're doing for our
+[75:31.12]  users,
+[75:32.32]  how should we do this? And when we're
+[75:33.92]  thinking from first principles, we'll
+[75:34.96]  often go out and talk to a lot of other
+[75:36.44]  companies and try to learn from their
+[75:38.48]  experiences. Actually something I've
+[75:39.64]  really appreciated and and enjoyed at
+[75:41.20]  Stripe. A lot of the the learning I've
+[75:43.00]  done here has come not only from folks
+[75:44.56]  that are at the company, but also
+[75:46.16]  talking to a bunch of folks that we have
+[75:48.08]  the privilege to work closely with
+[75:49.16]  because their business is building on
+[75:50.52]  Stripe or you know, they're at a similar
+[75:52.84]  stage or scale to us.
+[75:55.28]  I mean, a good example of this is
+[75:56.80]  Amazon. Amazon is a Stripe user. Because
+[75:59.20]  we are we work with them, in my first
+[76:00.92]  couple of weeks at Stripe I was actually
+[76:02.16]  able to meet with Charlie Bell who then
+[76:04.36]  ran operations at Stripe. And a lot of
+[76:06.16]  the things that Sorry, who then ran
+[76:07.72]  operations at Amazon. A lot of the
+[76:09.16]  things that we actually now do at Stripe
+[76:10.72]  have come from learning from that
+[76:11.80]  experience. But it wasn't just, "Oh
+[76:13.12]  yeah, we'll take the thing cuz Amazon
+[76:14.20]  did it." Talked to him and lots of other
+[76:15.64]  companies in order to to learn. So, the
+[76:17.44]  point is like we we care about learning
+[76:19.16]  from others and then we apply it. So,
+[76:21.40]  bringing this back to planning, because
+[76:23.52]  we tend to think a lot from first
+[76:24.64]  principles and we've been growing
+[76:26.04]  rapidly, the right planning process for
+[76:28.48]  us as a company has actually changed
+[76:30.40]  quite dramatically and quite
+[76:32.20]  significantly over the years. And so,
+[76:34.72]  you know, we we do planning in a
+[76:36.04]  relatively deep way once a year and then
+[76:37.80]  in a slightly lighter way halfway
+[76:39.24]  through the year. So, if you imagine
+[76:40.24]  doing something once a year and you're
+[76:41.32]  growing rapidly, you're going to want to
+[76:42.60]  revisit exactly how you do it. And so, I
+[76:44.72]  think you know, for for anyone who has
+[76:47.24]  the privilege of running the same
+[76:48.96]  planning process again and again, you
+[76:51.12]  can really like iterate and tune it.
+[76:53.36]  We've had to make more deliberate and
+[76:55.20]  kind of
+[76:55.96]  more sweeping changes as as we've as
+[76:58.12]  we've gone along. But there are a couple
+[77:00.52]  of things at the core of how we do this.
+[77:02.40]  So, one is it's really important to
+[77:04.76]  focus on who are the users that we are
+[77:06.60]  seeking to serve for any given
+[77:09.64]  product area that we're working in. And
+[77:12.40]  kind of holding their needs front and
+[77:13.96]  center in your plans is important.
+[77:16.60]  Again, at Stripe we do something that is
+[77:18.96]  it's not unconventional, but it's like
+[77:21.00]  not it's not the most common practice in
+[77:23.16]  the industry, which is we work very hard
+[77:25.36]  to serve companies from the very very
+[77:26.72]  small. Like the the folks that are
+[77:27.84]  literally just starting their company on
+[77:29.52]  Stripe with Stripe Atlas all the way up
+[77:31.80]  to you know, multinational Fortune 10,
+[77:34.76]  Fortune 5
+[77:36.24]  companies. Fortune 1 companies, I guess.
+[77:38.36]  Um
+[77:39.08]  There's a very different set of user
+[77:40.84]  needs across those businesses. So, for
+[77:42.52]  any given area, it's very important for
+[77:44.64]  for each team to be clear about like who
+[77:46.48]  are they serving.
+[77:47.72]  And then we we run a a kind of
+[77:49.76]  inverted W process. So, we typically
+[77:51.40]  have teams surface what you know, their
+[77:54.00]  immediate thoughts are on the most
+[77:55.76]  important things to do. We'll then have
+[77:57.88]  a group of product leaders, you know,
+[78:00.08]  get together and and try to synthesize
+[78:02.56]  the the most important parts of that
+[78:03.80]  into a kind of draft overall company
+[78:06.60]  strategy. Then take that back down to
+[78:08.56]  teams to figure out well, how does if
+[78:10.32]  that's where we're making a big push,
+[78:11.60]  should that tweak my plans at all? And
+[78:13.28]  we bring it back up for synthesis and
+[78:15.80]  then back down for everyone to really
+[78:17.48]  distribute with a lot of context within
+[78:19.28]  their orgs. And we find that
+[78:22.16]  at our current scale very very
+[78:23.40]  effective. I haven't mentioned this yet,
+[78:24.96]  but actually Stripe for my newsletter, I
+[78:26.48]  check the app many times a day.
+[78:29.00]  So, I'm probably in the Fortune 1 1
+[78:30.72]  million, somewhere in that. Do you have
+[78:32.28]  any feedback? Genuinely, I'd love to
+[78:34.92]  hear your Stripe feedback. It's you
+[78:36.28]  know, it's great. Like the app tells me
+[78:37.72]  the number the number
+[78:38.40]  tell us it's great. Like what bugs you?
+[78:40.52]  Well, it's interesting for churn, for
+[78:42.48]  cohort retention, which I care a lot
+[78:44.76]  about for the newsletter, I actually use
+[78:46.56]  a different tool that feels like gives
+[78:48.56]  me better
+[78:50.04]  a table of per cohort how many people
+[78:52.68]  are still around. So, there's an
+[78:54.32]  opportunity to have a better cohort
+[78:56.20]  retention metrics. Cool. Okay, well
+[78:58.04]  maybe we can email about that. Quite
+[78:59.52]  genuinely at Stripe, anytime we talk to
+[79:01.88]  a Stripe user, we are always looking for
+[79:03.68]  feedback. That goes for any occasion. We
+[79:06.68]  we often bring users into the beginning
+[79:08.72]  of our Friday fireside I already
+[79:10.60]  mentioned and we're always asking them
+[79:12.00]  for their feedback and we we we really
+[79:13.64]  really want to act on it.
+[79:15.08]  Well, I wish I had more. It's works
+[79:16.76]  great. Final question. Stripe Sessions
+[79:19.36]  coming up. It's going to happen before
+[79:21.08]  this comes out. What should folks be
+[79:22.88]  watching for? What's next for Stripe?
+[79:25.72]  So we touched on a few of the things
+[79:27.48]  that we're
+[79:29.16]  sharing broadly for the first time at
+[79:31.32]  Stripe Sessions in this call already.
+[79:33.12]  Per our development process, like these
+[79:35.16]  have been in the hands of some Stripe
+[79:36.92]  users for, you know, a significant
+[79:38.48]  amount of time and we've really kind of
+[79:39.64]  crafted them with them, but I'm super
+[79:40.96]  excited about a number of the things
+[79:42.24]  that that we're going to be talking
+[79:43.04]  about next week. One is, I mentioned,
+[79:45.24]  our revenue and financial automation
+[79:47.56]  suite. We've really been like crafting
+[79:50.12]  the features there for for some time and
+[79:52.68]  really nice example actually of of how
+[79:54.20]  we're building with
+[79:55.64]  closely with users really really helps
+[79:57.20]  kind of build things at scale. We have a
+[79:59.08]  set of features that we work with
+[80:00.40]  companies like Atlassian and Cloudflare
+[80:02.52]  to
+[80:04.04]  to enable their businesses on Stripe
+[80:05.56]  billing. So they have relatively complex
+[80:09.32]  models. For instance, you might sign a
+[80:11.60]  deal where it has a discount in the
+[80:13.60]  first year and then there's another
+[80:14.84]  product that's being used in the second
+[80:16.40]  year and then something else happens in
+[80:17.56]  the third year. You can model all of
+[80:19.32]  that in Stripe billing and we're going
+[80:20.52]  to be showing how you can do that in the
+[80:21.48]  dashboard at Stripe Sessions next week.
+[80:22.88]  So it's now going to general
+[80:23.76]  availability for all Stripe users. So
+[80:25.44]  it's giving all of our users from the
+[80:27.92]  very small to the very large the same
+[80:29.24]  power that that that any, the world's
+[80:31.28]  best SaaS platform might have. Excited
+[80:33.04]  about that. It's also the case that we
+[80:35.48]  didn't talk about in this call. Stripe
+[80:37.04]  Connect is our product for platforms and
+[80:39.64]  marketplaces.
+[80:41.04]  And if I may actually just take one
+[80:43.20]  second, it's a really good example of
+[80:45.12]  how focusing on the needs of our users
+[80:48.04]  in one area
+[80:50.16]  kind of took us into a really valuable
+[80:51.96]  space to solve for many users in in
+[80:53.64]  other areas. So the ideas behind Stripe
+[80:55.80]  Connect came from working with companies
+[80:57.40]  like Lyft and Shopify in the very early
+[80:59.68]  days. They were using Stripe for pay
+[81:01.88]  ins, but we realized, oh, these
+[81:03.40]  companies are operating these
+[81:04.48]  multi-sided marketplaces and there's a
+[81:06.16]  ton of heavy lifting you have to do to
+[81:07.56]  make that work really well. You have to
+[81:09.24]  have to have a bunch of regulatory
+[81:10.32]  licenses in place, there's a lot that
+[81:12.12]  you need to do to actually make the
+[81:13.00]  money move and kind of account for it in
+[81:14.36]  the right way. So Connect is our product
+[81:16.20]  for platforms and marketplaces. And one
+[81:18.48]  of the things that we've done over the
+[81:20.44]  course of the last year or so
+[81:23.12]  is actually taken a lot of the
+[81:25.48]  a lot of the features that we built in
+[81:27.24]  the Stripe dashboard to help folks
+[81:29.08]  manage things like gathering the right
+[81:30.84]  documents from their users or handling
+[81:33.20]  refunds and so forth. And we've actually
+[81:35.20]  made them available as
+[81:37.20]  embeddable UI components that are also
+[81:39.80]  completely customizable, which these
+[81:42.12]  platforms can take and put inside their
+[81:43.72]  own their own dashboards. So they can
+[81:46.44]  present a lot of the power that Stripe
+[81:48.32]  is enabling to their customers without
+[81:51.20]  having to do a ton of engineering work
+[81:52.44]  themselves. And generating engineering
+[81:54.48]  leverage for our customers is just very
+[81:55.84]  frequently like the main thing that we
+[81:57.44]  can do to help their businesses. And
+[81:59.00]  we're going to show a bunch of that
+[81:59.84]  stuff next week, which I'm excited
+[82:00.96]  about. And then finally, we touched on
+[82:02.52]  it already, but it would be great to
+[82:03.56]  show some of the innovation we've had
+[82:04.96]  around AI and large language models
+[82:07.36]  because again, I think it's going to
+[82:08.56]  make a big impact over the coming years.
+[82:10.44]  Well, with that we reached our very
+[82:11.76]  exciting lightning round. First
+[82:13.56]  question, what are two or three books
+[82:14.92]  that you've recommended most to other
+[82:16.32]  people? So most means that like you have
+[82:19.24]  to integrate under the curve. So I'd say
+[82:20.76]  High Output Management by Andy Grove is
+[82:23.72]  definitely the book that I've
+[82:24.64]  recommended the most. It was a book that
+[82:26.12]  really opened my eyes to how to get the
+[82:28.12]  most out of teams,
+[82:30.68]  you know, over the whole course of my
+[82:32.20]  career. So definitely check that out if
+[82:33.96]  you haven't read it already. Recently, I
+[82:36.56]  So we talked about being meticulous in
+[82:38.00]  our craft. I've really enjoyed Build by
+[82:40.96]  Tony Fadell. Tony
+[82:43.64]  worked on the iPod and then the iPhone
+[82:45.52]  and then was the founder of Nest and he
+[82:47.32]  puts a tremendous amount of thought into
+[82:49.48]  his users and how to build really great
+[82:51.80]  crafted experiences.
+[82:53.64]  I had the privilege of working with him
+[82:54.64]  very briefly at Google, but I thought
+[82:56.56]  the book was excellent in terms of
+[82:58.36]  helping provide some practical pointers
+[83:00.24]  there. And then I would be remiss if I
+[83:02.88]  did not mention Claire Hughes Johnson's
+[83:04.76]  book Scaling People. Even though it only
+[83:06.64]  just came out, I've recommended it a
+[83:07.92]  lot. There's actually some stuff in here
+[83:09.88]  where I'm sharing some some techniques
+[83:12.12]  that we've used at Stripe, so you might
+[83:14.24]  enjoy that. And then if I may share one
+[83:16.44]  more thing. You've got it, too. Amazing.
+[83:18.60]  Supports my laptop on here and I hope
+[83:21.16]  you've read it. I've I've had her on the
+[83:23.04]  podcast. I've read, you know, I've
+[83:24.64]  skimmed it as much as I can cuz I'm not
+[83:26.48]  building a business right now.
+[83:28.16]  And she was in the top 10 best-seller
+[83:30.20]  list on the Wall Street Journal, I saw.
+[83:31.48]  That's right. That's right. It it has a
+[83:33.04]  ton of very practical advice, so I I I
+[83:35.60]  recommend that one. What's a favorite
+[83:37.12]  recent movie or TV show? Okay, I I want
+[83:39.60]  to cheat here because I'm going to
+[83:41.08]  interpret that as like what's the best
+[83:42.56]  video content you've seen recently.
+[83:45.20]  I have fallen in love with YouTube for
+[83:48.92]  learning about like the really
+[83:51.24]  fast-moving AI space. So it has been
+[83:54.12]  remarkably valuable and
+[83:56.72]  you know, Andrej Karpathy has a bunch of
+[83:58.44]  really good seminars, but not not just
+[84:00.32]  that, across the whole spectrum, I think
+[84:02.80]  there's just so much gold on YouTube if
+[84:04.56]  you want to learn a new skill these
+[84:05.60]  days. Is that the channel you recommend?
+[84:07.28]  Andrej Karpathy's channel? His channel
+[84:08.96]  is awesome if you want to learn about
+[84:11.04]  about AI. And he's the ex-Tesla
+[84:14.40]  AI lead.
+[84:15.20]  That's right. I believe recently gone to
+[84:17.24]  OpenAI, but was doing this kind of on
+[84:18.84]  his own for for a few months and has
+[84:21.00]  produced a bunch of great YouTube
+[84:22.20]  content. Great pick. Most people pick
+[84:24.24]  White Lotus or something like that and
+[84:25.68]  you go with a AI YouTube channel. I love
+[84:27.92]  it.
+[84:28.80]  What's a favorite interview question you
+[84:30.96]  like to ask? Okay, well actually you
+[84:32.80]  will find some recommended interview
+[84:34.68]  questions for me in this book. One I
+[84:36.88]  really like actually um
+[84:39.04]  it is it sounds like a softball and then
+[84:40.64]  it's not is I often ask people,
+[84:42.84]  especially
+[84:44.00]  for leadership hiring, which leader that
+[84:46.00]  they've worked with they admire most and
+[84:47.88]  why. So sounds like a softball, right?
+[84:49.52]  But it actually tells you a lot about
+[84:51.36]  about what this person like really cares
+[84:52.96]  about in leadership. Sometimes I'll
+[84:55.20]  follow up and ask like how does that
+[84:56.40]  manifest in your own leadership style?
+[84:58.08]  But then, and this I think is
+[85:00.12]  is really quite telling, I always ask
+[85:02.76]  folks, I'm going to spoil my interview
+[85:04.16]  question by revealing it in your
+[85:05.36]  podcast, but I always ask folks, okay,
+[85:07.60]  so imagine you were their manager, tell
+[85:09.76]  me the performance review or the
+[85:11.04]  development feedback you'd give them to
+[85:12.44]  help them be more effective. And I think
+[85:15.24]  everyone always
+[85:16.88]  can has things that they can improve,
+[85:19.44]  certainly myself included. And so folks'
+[85:22.12]  ability to think critically about
+[85:23.64]  someone that they kind of admire or
+[85:25.16]  lionize and how they could actually be
+[85:27.20]  more effective, I I find quite quite
+[85:28.96]  telling.
+[85:30.08]  What are some favorite products you've
+[85:31.40]  recently discovered that you love? The
+[85:33.40]  products that I have recently discovered
+[85:35.40]  and definitely love is Midjourney. Also
+[85:38.12]  building the
+[85:39.40]  the business side of their business on
+[85:40.72]  Stripe, but so for folks who don't know,
+[85:42.56]  Midjourney is a an AI tool for
+[85:46.84]  generating images using stable
+[85:48.32]  diffusion, but it's really pretty
+[85:50.40]  awesome. I've been using it a lot with
+[85:51.96]  my daughter, so we'll come up with
+[85:53.76]  stories and we'll generate
+[85:55.96]  beautiful-looking images with Midjourney
+[85:57.68]  and then she'll drop them into books and
+[85:59.12]  she'll write the prose. The reason I
+[86:01.08]  think it's pretty cool is I was very
+[86:03.12]  surprised and skeptical at its UI to
+[86:05.52]  begin with because its UI is Discord.
+[86:07.44]  They drop you into Discord and you're in
+[86:09.52]  a channel where you have to prompt the
+[86:11.52]  the the artificial intelligence
+[86:13.64]  and I found it very confusing at the
+[86:15.00]  beginning. It's like, this is not the
+[86:16.20]  right interface for this tool, but
+[86:17.60]  actually
+[86:18.80]  it's very smart because you learn from
+[86:20.88]  other people on Discord how they're
+[86:23.40]  prompting the AI in order to get the
+[86:24.92]  kind of results that that they're
+[86:26.20]  looking for and I find that made it
+[86:29.20]  possible for me to get a lot more power
+[86:30.96]  and value out of the tool. So I I
+[86:33.08]  definitely subscribe to Midjourney and
+[86:34.92]  have had a lot of fun playing with it.
+[86:36.36]  What's your favorite image that you've
+[86:37.32]  created if there's one that comes to
+[86:38.52]  mind? We made a cover for a book that my
+[86:40.64]  daughter is writing. My daughter is 9
+[86:41.92]  years old, by the way, so we're we're
+[86:43.20]  talking here
+[86:44.72]  good children's stories. She made an
+[86:46.76]  image of a
+[86:48.72]  a wolf wearing a purple velvet cloak
+[86:51.76]  sitting in front of a campfire with a
+[86:55.72]  like shack in a forest and a nebula
+[86:57.84]  behind. It's beautiful and we actually
+[87:00.80]  built that with by combining two images,
+[87:02.92]  the wolf and the and the shack. I
+[87:04.68]  actually
+[87:05.88]  getting the the wolf out of one image
+[87:07.40]  and and putting it onto the other, we
+[87:08.84]  used the new like Apple image
+[87:11.16]  segmentation copy and pasting, which
+[87:12.76]  worked great. So it's also fun combining
+[87:15.20]  these AI tools, but that one's been
+[87:16.56]  pretty good.
+[87:17.64]  What a world.
+[87:19.28]  Two final questions. What's something
+[87:21.28]  relatively minor you've changed in your
+[87:22.72]  product development process that has had
+[87:24.48]  a tremendous impact on your ability to
+[87:26.20]  execute as a team? So we talked a bit or
+[87:28.28]  about this already, auto deploys and
+[87:30.32]  that auto merge feature, but probably
+[87:32.44]  the most profound thing is we put a
+[87:36.00]  little button in every single developer
+[87:38.08]  tool at Stripe. It is an emoji of an
+[87:40.00]  octopus that is crying. If you click it,
+[87:42.04]  it makes it possible to just type in
+[87:43.56]  what your what's gone wrong and then we
+[87:46.04]  have our developer productivity team
+[87:48.28]  read all of those and use them to
+[87:49.48]  prioritize what they're up to. So just
+[87:51.00]  like frictionless problem reporting
+[87:53.44]  turned out to be really valuable. We
+[87:54.60]  call those paper cuts.
+[87:56.48]  Crying octopus, I love that. Yeah.
+[87:59.52]  Who else from Stripe or former Stripe
+[88:01.84]  should I have on this podcast? Is my
+[88:03.20]  final lightning round question. I see I
+[88:05.88]  see how this works.
+[88:07.60]  This isn't how it's worked so far. Also
+[88:09.00]  Stripes I think you should have on.
+[88:10.28]  Emily Sands is our chief economist and
+[88:12.72]  leads our information org, so I think
+[88:14.28]  that's data science, but also the teams
+[88:15.92]  that build all of our or a lot of our
+[88:17.32]  internal tools. And I think Emily just
+[88:19.08]  has great
+[88:20.60]  frameworks for thinking about how to
+[88:22.32]  translate what's really going on for
+[88:24.20]  users into great sets of metrics that
+[88:26.24]  you can then use to kind of get the
+[88:27.88]  right action happening. As I described
+[88:29.28]  before, that's super important. And the
+[88:31.00]  second person would be Michelle Bu. So
+[88:33.08]  Michelle joined Stripe as an engineer in
+[88:35.04]  the very very early days and has been
+[88:36.92]  with us for obviously a long time. She's
+[88:38.88]  really our principal product design
+[88:41.64]  architect in terms of the the actual
+[88:44.08]  abstractions that we use to model our
+[88:46.48]  users' businesses on Stripe. I think she
+[88:48.64]  has
+[88:49.68]  very deep insight into how to think
+[88:51.68]  about getting those things right and I
+[88:52.92]  think you would enjoy talking.
+[88:55.04]  David, I so appreciate you making time
+[88:56.60]  for this, especially during this hectic
+[88:58.36]  period ahead of Sessions. Two final
+[89:00.40]  questions. Where can folks find you
+[89:02.00]  online if they want to reach out, maybe
+[89:03.32]  learn more about what you're up to? And
+[89:05.24]  then how can listeners be useful to you?
+[89:08.00]  Cool. Okay, well, I am @dps on Twitter.
+[89:11.16]  That is definitely the best place to get
+[89:12.52]  hold of me, but you can also check out
+[89:14.40]  my personal blog at blog.singleton.io.
+[89:18.04]  And useful. Honestly, please send me
+[89:20.80]  Stripe feedback. You can do that on
+[89:22.48]  Twitter. You can discover my email
+[89:24.08]  address on my blog as well. I would love
+[89:26.08]  to hear how we could serve you better.
+[89:28.60]  David, thank you again for being here.
+[89:31.04]  Thank you. It was a lot of fun, Lenny.
+[89:32.96]  Same. Bye, everyone.
+[89:36.56]  Thank you so much for listening. If you
+[89:38.12]  found this valuable, you can subscribe
+[89:39.72]  to the show on Apple Podcasts, Spotify,
+[89:42.16]  or your favorite podcast app.
+[89:44.40]  Also, please consider giving us a rating
+[89:46.44]  or leaving a review as that really helps
+[89:48.56]  other listeners find the podcast. You
+[89:50.80]  can find all past episodes or learn more
+[89:52.88]  about the show at lennyspodcast.com.
+[89:56.20]  See you in the next episode.

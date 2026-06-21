@@ -1,0 +1,1310 @@
+Title     : Claude Opus 4.6 vs GPT-5.3 Codex
+Video ID  : gmSnQPzoYHA
+URL       : https://www.youtube.com/watch?v=gmSnQPzoYHA
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1301
+Saved at  : 2026-06-21 01:57:06
+------------------------------------------------------------
+
+[00:00.24]  Today's a massive day because Anthropic
+[00:02.96]  just dropped Opus 4.6 and OpenAI
+[00:06.24]  answered with GPT 5.3 codeex. But what
+[00:10.24]  is the better model and how do you get
+[00:12.08]  started and what are some tips and
+[00:14.24]  tricks to get the most out of them?
+[00:15.68]  Well, this episode is all about that.
+[00:18.32]  This is for the technical person who's
+[00:20.96]  trying to get the most out of these
+[00:22.32]  models, who don't just want hot takes,
+[00:24.72]  who want tactical sauce for getting the
+[00:27.84]  most out of these models. This episode
+[00:30.00]  of the pod is with my dear friend Morgan
+[00:32.40]  Linton. Morgan is one of the best
+[00:34.40]  engineers I know. He was an executive at
+[00:36.80]  Sonos. He's invested in a lot of AI
+[00:39.28]  companies and he's building an AI
+[00:40.88]  company of his own. He's one of my first
+[00:42.80]  calls when I'm like, "Hey, which model's
+[00:45.12]  better?" So, we put the models
+[00:46.96]  headto-head and there's a winner at the
+[00:48.72]  end. We rebuild Poly Market, a
+[00:51.68]  multi-billion dollar app, but we use
+[00:53.84]  these models. So, which is the better
+[00:55.36]  one? You'll find out by watching this
+[00:57.76]  episode, but you'll also learn to become
+[00:59.92]  a better AI developer because you'll
+[01:02.32]  have these tips and tricks in your back
+[01:04.00]  pocket. [music]
+[01:11.39]  [music]
+[01:12.72]  >> I'm with one of my favorite people,
+[01:14.64]  Morgan Linton. You might not know him,
+[01:16.72]  but he is just, you know, just an
+[01:19.12]  incredible developer, founder,
+[01:21.68]  entrepreneur, investor. He's does it
+[01:24.32]  all. But today, what you know what I I
+[01:26.48]  needed him to help me understand is Opus
+[01:29.36]  4.6 just came out. GBT 5.3 codeex just
+[01:32.80]  came out. Morgan, help me understand by
+[01:35.76]  the end of this episode. What are people
+[01:37.44]  going to get out of this?
+[01:38.88]  >> Yeah. Well, Greg, thanks for having me.
+[01:40.64]  Super exciting day. It's moving fast
+[01:42.88]  today. Opus 46 came out and then Sam
+[01:45.84]  Alman put together a quick tweet, I want
+[01:48.64]  to say like maybe 18 minutes later
+[01:50.32]  announcing GPT53 codecs. Uh, and me and
+[01:53.84]  I think everybody else has been jumping
+[01:55.52]  on it, playing around, figuring out the
+[01:57.44]  differences,
+[01:58.96]  um, and all the little neat new settings
+[02:00.96]  that there are in each of these. By the
+[02:03.12]  end of this, you're going to know first
+[02:04.24]  how to make sure that you are running
+[02:06.32]  Opus 4.6 and all of the little details
+[02:09.36]  you can change in the settings.json file
+[02:11.28]  to use some of the cool features in Opus
+[02:13.44]  4.6, especially agent teams, which is
+[02:16.00]  probably the feature I'm the most
+[02:17.12]  excited about. Um, you'll also
+[02:20.08]  understand why you might use one versus
+[02:22.88]  the other because they both kind of
+[02:24.80]  tackle different engineering
+[02:26.16]  methodologies. Um, and then hopefully
+[02:28.88]  you'll see some cool stuff as we build
+[02:30.72]  some demos together that I've put
+[02:32.88]  together that I haven't tried myself.
+[02:34.08]  So, I'll be trying just live with you.
+[02:35.60]  So, we'll we'll see how that goes.
+[02:37.44]  >> Cool. I think one of them is we're going
+[02:39.12]  to try to recreate Poly Market.
+[02:41.76]  >> Yes.
+[02:42.64]  >> And see which model performs best.
+[02:46.32]  >> Yeah. We're going to have both. They're
+[02:47.28]  going to do a head-to-head to try to
+[02:49.04]  each build their own version of Poly
+[02:50.48]  Market.
+[02:51.36]  >> So, by the end of this episode, you will
+[02:54.32]  have a pretty good understanding of how
+[02:56.64]  to use the models, when to use the
+[02:58.32]  models, how to get started. Morgan,
+[03:00.72]  let's get into it.
+[03:01.92]  >> Cool. Right on. All right. So, I took
+[03:04.16]  some notes and essentially, you know,
+[03:06.56]  with 53 codecs, um, I'll be showing that
+[03:09.68]  in the desktop app on Mac because
+[03:12.32]  they're super excited about that. I'm
+[03:13.84]  excited about it. I think if if OpenAI
+[03:16.80]  was wanting a demo to be done the right
+[03:19.12]  way, they would want me to do it in
+[03:20.40]  their app. Um whereas with Opus 46, I
+[03:23.44]  would say the anthropic team would want
+[03:24.72]  me to do it in the CLI. And so there's a
+[03:27.20]  few different um configuration settings
+[03:29.92]  that you do want to make sure that you
+[03:32.24]  get right when you're using Opus 46 or
+[03:35.04]  trying to use Opus 46 today, tomorrow,
+[03:37.68]  whenever it is that you're jumping in to
+[03:39.12]  use it. I've seen a lot of people um
+[03:41.76]  online today on Twitter saying, "Uh,
+[03:44.32]  it's weird. I'm having a problem. Like,
+[03:46.00]  I'm supposed to be agent teams, but I
+[03:47.92]  don't see them or how do I know what
+[03:49.12]  version I'm running?" So, I thought,
+[03:50.56]  let's start by just giving everybody a
+[03:52.64]  level playing field to know, okay, I
+[03:54.72]  want to be able to use Claude Code with
+[03:56.24]  Opus 46. How do I make sure I'm doing
+[03:58.40]  that and doing that correctly? Um, so
+[04:01.52]  here's kind of the initial to-dos that
+[04:03.44]  everyone should have on their list. Just
+[04:05.52]  do an npm update. see if that does the
+[04:08.64]  trick. Um, if that doesn't and you're
+[04:11.60]  running an older version, um, then run
+[04:14.32]  cloud update. But you you should see
+[04:16.64]  like as of right now it's 2.1.32.
+[04:20.32]  If you see 1 something, you're running
+[04:22.56]  an old version. Um, and then what you
+[04:25.44]  want to do is go into your
+[04:26.72]  settings.json, and I'll just show this
+[04:29.52]  here. So, if you just do like cd
+[04:33.12]  uh tilda slash uh.clad quad.
+[04:38.00]  >> So, I bet that there's people who are
+[04:40.32]  running the old model, they don't even
+[04:42.16]  realize it. Probably bad bad result.
+[04:44.80]  >> No idea. Yeah. Yeah. So, I mean, make
+[04:47.44]  sure you go in here, cd to.claude.
+[04:50.08]  Here's your settings.json.
+[04:52.48]  Um, if you view this, here's essentially
+[04:55.84]  what you should see. Um, now it's okay.
+[04:58.56]  It can be model. If you want to like
+[05:00.32]  really be specific about it, you can put
+[05:02.08]  in claw-opish-4-6.
+[05:04.80]  that'll lock it in. But because 46 is
+[05:07.60]  the newest model, you can also just put
+[05:10.24]  in model and just opus and that'll work.
+[05:13.76]  Um, the key thing that you want to do is
+[05:16.48]  the in my opinion the coolest feature
+[05:18.32]  that they added with 46 is agent teams.
+[05:22.00]  I'm super excited to demo that with you.
+[05:24.32]  um you have to make sure to turn that on
+[05:26.80]  because it is an experimental feature
+[05:28.96]  and that's probably the biggest
+[05:30.00]  confusion I'm seeing people have today
+[05:31.68]  with Opus 46 is that they are running
+[05:34.40]  Opus 46. They keep hearing about agent
+[05:36.64]  teams and they're giving it prompts like
+[05:38.56]  build a team of agents to do this and
+[05:39.84]  this and it's not quite doing it and
+[05:42.00]  that's because you do have to enable
+[05:43.44]  this. So you do have to add and end this
+[05:47.12]  claude code experimental agent teams and
+[05:49.60]  then set it equal to one. Okay, nothing
+[05:52.56]  too crazy. Once you do that, that will
+[05:55.04]  uh make all that possible. Uh so with
+[05:59.44]  that in mind, um you're pretty ready to
+[06:02.80]  go there. Then you can just run cloud in
+[06:04.72]  the terminal and you're good. For people
+[06:06.08]  that are using the API, the one thing I
+[06:09.12]  did want to point out is there's a
+[06:11.04]  pretty cool new addition which is called
+[06:13.04]  adaptive thinking. Also, just to be
+[06:15.60]  clear because I'm seeing confusion on
+[06:16.88]  this too. Um this is in the API. This is
+[06:19.68]  not in cloud code itself. uh but
+[06:22.48]  adaptive thinking just to show it here
+[06:25.52]  uh you're able to essentially pick the
+[06:28.72]  uh level of effort that you would like
+[06:30.72]  the model to use. This is only going to
+[06:32.64]  work in 46 by the way if you want to use
+[06:35.28]  like an effort level of max. And so
+[06:37.52]  here's kind of the different levels. So
+[06:39.52]  with max claude always thinks with no
+[06:41.92]  constraints on thinking depth it's open
+[06:44.00]  46 only. So requests using max on other
+[06:46.24]  models are going to return an error. So
+[06:48.80]  if you're calling the API and you set
+[06:50.88]  the effort level to max and you get an
+[06:52.72]  error, then you're probably not using
+[06:55.28]  Opus 4.6. But here's the example where
+[06:57.60]  you can see if I'm calling the API, I
+[07:00.16]  set the model to claude opus 46 and then
+[07:03.52]  here's where I can set the effort. And
+[07:05.12]  this is another thing. If you're using
+[07:06.80]  existing API code, you may have the
+[07:09.04]  model to opus 45 and now you adjust the
+[07:11.76]  effort to max. It gives you an error.
+[07:13.44]  All you need to do is just bump the
+[07:14.88]  version and you're good. But this is
+[07:16.48]  kind of a neat thing they've added to
+[07:17.68]  the API um with 46 that's worth
+[07:20.80]  mentioning. And then uh kind of the last
+[07:24.08]  the last thing I would say is uh just uh
+[07:28.48]  if you want to use split panes for
+[07:31.04]  agents. So if you want agents to show up
+[07:33.68]  in different panes um and you're using
+[07:36.40]  something like warp just make sure to
+[07:38.40]  install T-Max. You can do this with brew
+[07:40.40]  install t-m. And then um if you do that
+[07:43.44]  it's going to default to auto uh which
+[07:46.00]  usually means in process which means in
+[07:48.32]  that same terminal window you have the
+[07:50.24]  agents are going to be working um all
+[07:52.48]  together. If you want it to split pane
+[07:54.88]  then you just need to update uh that
+[07:57.28]  setting in the settings.json to split
+[07:59.12]  panes. I'm not going to go into super
+[08:00.88]  details on that but those are just like
+[08:02.80]  I think good housekeeping to start with
+[08:04.80]  for anyone using Opus. But don't worry
+[08:07.44]  about it. really all that anybody needs
+[08:09.36]  to do, especially if you don't even want
+[08:11.12]  to use teams, uh, agent teams, is just
+[08:14.16]  make sure you're updated using the
+[08:16.16]  newest version, um, and that the model
+[08:18.64]  is Opus and you'll be using Opus 46.
+[08:21.12]  >> Cool.
+[08:22.08]  >> So, that's that. Before I get into kind
+[08:24.88]  of the differences between uh Opus 46
+[08:28.48]  and and Codeex, I thought I would
+[08:30.08]  actually read this because uh this was
+[08:33.20]  posted on Hacker News 4 hours ago and I
+[08:35.60]  was reading it. I was thinking that's
+[08:37.60]  like the best way to explain it. So, I'm
+[08:39.76]  just going to I'm just going to read
+[08:41.20]  this little section here because I think
+[08:42.64]  they do such a good job with it. This
+[08:44.40]  person's saying, "What's interesting to
+[08:45.76]  me is that GPT53 and Opus 46 are
+[08:48.96]  diverging philosophically and really in
+[08:51.60]  the same way that actual engineers and
+[08:53.20]  orgs have diverged philosophically." I
+[08:55.52]  think this really nails it. With codeex
+[08:57.36]  53, the framing is an interactive
+[08:59.84]  collaborator. You steer it
+[09:01.76]  mid-execution,
+[09:03.28]  stay in the loop, course correct as it
+[09:05.60]  works. With Opus 46, the emphasis is the
+[09:08.56]  opposite. a more autonomous, agent,
+[09:10.72]  thoughtful system that plans deeply,
+[09:12.64]  runs longer, and asks less of the human.
+[09:16.24]  That feels like a reflection of a real
+[09:17.92]  split in how people think LM based
+[09:19.84]  coding should work. Some want tight
+[09:22.00]  human and loop control. Others want to
+[09:24.00]  delegate whole chunks of work and review
+[09:25.76]  the result. And I honestly I think that
+[09:29.04]  says it beautifully. And I think that
+[09:30.64]  that nails the differences. And also
+[09:33.84]  hopefully, you know, there's all
+[09:35.36]  everybody wants to pick a winner where
+[09:36.88]  it's like, "Oh, no, no, Opus 46 is
+[09:39.36]  better. Codeex is it's it's different.
+[09:42.24]  It depends on what your methodology is."
+[09:44.48]  And I think what we're seeing now um not
+[09:47.20]  just with vibe coding, but also with
+[09:48.64]  like overall like AI powered engineering
+[09:51.68]  is how how do you want to work with
+[09:54.56]  agentic coding? Do you want to have a
+[09:57.76]  totally autonomous experience where
+[09:59.12]  you're sending agents out to do work or
+[10:02.00]  do you want to work with an LLM um like
+[10:05.68]  another teammate and pair program with
+[10:07.68]  the LLM? And that's where you're now
+[10:09.68]  seeing a divergence where I think you're
+[10:12.00]  going to see a lot of teams using both
+[10:14.40]  because codeex really is your
+[10:16.72]  collaborator. And what they've added
+[10:18.16]  with 53 is like really good like
+[10:21.20]  midexecution steering. Whereas with with
+[10:24.16]  Opus 46, it's probably the best of the
+[10:26.88]  best now being able to say I want to
+[10:28.88]  spin up three or four agents. I want
+[10:30.80]  them to go do stuff. Hey, and don't bug
+[10:33.12]  me. I want to trust they're going to do
+[10:34.56]  good stuff. um and it's able to deliver.
+[10:38.40]  >> So are you saying that there in some
+[10:42.00]  ways it's just a preference like
+[10:45.36]  depending on how
+[10:47.20]  >> you know there's no right or wrong
+[10:48.48]  basically you know you're not wrong to
+[10:50.32]  be an opus person or you know it just
+[10:53.36]  like might feel Yeah. might it's just a
+[10:55.84]  preference.
+[10:57.12]  >> Yeah. Well and you might be both
+[10:59.12]  >> right. That's true.
+[11:00.08]  >> It might turn out you're both. That's
+[11:01.20]  why like not to disappoint people here,
+[11:02.72]  but we're not going to end this with me
+[11:04.40]  saying and so the winner is it's like
+[11:06.80]  well depend depends on what you want to
+[11:08.56]  do. Everyone has a different methodology
+[11:10.96]  um for it. So I'll dive in and try to
+[11:14.08]  try to make this part fast because I
+[11:15.60]  know the fun part is probably us going
+[11:17.28]  in and uh playing around with both of
+[11:20.96]  these and having them do a head-to-head
+[11:22.72]  and try to build a competitor to Poly
+[11:24.72]  Market in however much time we have. Um
+[11:27.12]  but uh I'll just I'll just start kind of
+[11:29.36]  going into these uh at a high level just
+[11:32.00]  so for anyone that wants to know like
+[11:34.48]  what are the core differences? Why is
+[11:36.48]  this so interesting? Um just going to
+[11:38.40]  what that is. So with with Opus 46 uh
+[11:42.00]  much bigger context window. So you have
+[11:43.68]  a million token context window here. Um
+[11:47.12]  very strong coherence over entire
+[11:48.88]  documents and repos. Uh designed for you
+[11:52.32]  know like load the whole universe and
+[11:53.76]  reason over it. uh 53. They talk about
+[11:57.92]  large context, but it's not a headline
+[11:59.84]  feature. And I actually went back and
+[12:02.24]  forth with it to get it to actually give
+[12:04.16]  me a number. And the number is around
+[12:06.24]  200,000 tokens, which is not that
+[12:08.80]  impressive. That's smaller than I was
+[12:10.56]  thinking it would be. Um but that's
+[12:13.36]  okay. It's optimized, you know, for for
+[12:15.44]  progressive execution rather than total
+[12:17.68]  recall. So that's why that's not as
+[12:19.28]  important. um and you know optimized for
+[12:22.56]  deciding like what to keep in working
+[12:24.72]  memory. So high level what that means is
+[12:27.76]  claude is better when the task is
+[12:29.60]  understand everything first and then
+[12:31.36]  decide. Uh GBT3 53 codeex is probably
+[12:34.64]  better when the task is decide fast act
+[12:37.60]  iterate more of that you know pair
+[12:39.92]  programming you know midtask change uh
+[12:43.04]  behavior
+[12:44.96]  for uh for coding benchmarks. You know,
+[12:48.00]  Opus 46 is really good at codebased
+[12:50.00]  comprehension. Um, refactors with like
+[12:53.12]  architectural sensitivity, explaining
+[12:55.52]  why a system behaves a certain way, uh,
+[12:58.00]  and then, you know, a little less
+[13:00.32]  tendency of this like yolo write code,
+[13:02.80]  right? Uh, which is, I think, something
+[13:05.44]  everybody wants.
+[13:06.48]  >> Yeah, [laughter] exactly. Um, so you
+[13:08.40]  know, that's good for everybody, but
+[13:09.84]  especially for um, vibe coders that are
+[13:13.28]  getting started and they may not be able
+[13:15.36]  to identify hallucinations, Opus 46 is
+[13:18.40]  definitely going to perform better
+[13:19.36]  there. But then for teams, you know,
+[13:21.44]  building in large code bases like like
+[13:23.20]  like me and my team are doing. Um,
+[13:25.44]  that's also really important. So kind of
+[13:26.80]  a win for everyone there. Five 53 Codeex
+[13:29.52]  did win on SWDbench Pro, Terminal Bench.
+[13:32.56]  Overall, it's like scored better on
+[13:34.88]  coding benchmarks. So probably better
+[13:38.24]  end to end app generation and you know
+[13:41.04]  Claude's kind of like senior reviewer
+[13:42.80]  staff engineer uh GPT53 probably like
+[13:46.48]  your your founding engineer right uh
+[13:49.36]  agentic behavior uh opus 46 this is the
+[13:52.88]  key one right is like the multi- aent
+[13:54.64]  orchestration um that's that's probably
+[13:57.36]  like the bleeding edge feature in 46
+[14:00.80]  um and then with uh with with uh 53
+[14:04.56]  codecs really like task-driven autonomy,
+[14:07.36]  build, test, modify without being asked.
+[14:09.84]  But then this task steering, you can
+[14:12.08]  watch it, you can go in, it's like your
+[14:13.60]  buddy's coding and you can say, "Oh,
+[14:15.04]  wait, wait, man. Wait, why are you doing
+[14:16.40]  this?" And you can stop it and you'll
+[14:18.32]  go, "Okay." And then you can restart.
+[14:20.40]  You can really fix things in line. Much
+[14:23.84]  harder to do that with with Opus. With
+[14:25.68]  Opus, you'll kind of be stopping it and
+[14:27.60]  then starting somewhat fresh, but it has
+[14:29.44]  a pretty big context window, so so it
+[14:31.12]  knows what it did. Um, but you know,
+[14:33.84]  Claude's really asking like, "Should we
+[14:35.76]  do this?" GPT GBT53 is like, "How fast
+[14:39.12]  can I ship this?" Right.
+[14:40.80]  >> It's really I mean, it's so cool because
+[14:43.68]  it almost feels like they're different
+[14:45.52]  people. You know what I mean? Like they
+[14:47.12]  have different styles.
+[14:48.24]  >> Yes. Totally. Yeah. It's a good way to
+[14:50.16]  look at it. It's like a different It's
+[14:52.00]  like a different personality type,
+[14:53.76]  right? And then Yeah. Uh, failure
+[14:56.32]  failure modes. Uh, you know, Claude 46,
+[14:59.68]  it might overanalyze. It's got a much
+[15:01.28]  bigger context window. Uh it can
+[15:03.12]  hesitate when when requirements are
+[15:04.88]  ambiguous and then it can stop short on
+[15:08.16]  full execution. Uh 53 codeex uh could be
+[15:12.64]  overconfident, can lock in a flawed
+[15:14.56]  assumption early, but you can steer it
+[15:16.56]  back into the right direction if that if
+[15:18.48]  that happens. So that's kind of a
+[15:21.60]  highlevel overview on the on the two.
+[15:25.44]  >> Cool. That's helpful.
+[15:27.12]  >> Yeah.
+[15:28.48]  So, should we should we just dive in? I
+[15:31.04]  haven't tested any of this. So, this is
+[15:32.72]  now I have like zero canned demos
+[15:34.64]  because I thought it'd be more fun to to
+[15:37.52]  uh try something together and see what
+[15:39.44]  happens. So, should we should we try it?
+[15:41.52]  >> Yeah.
+[15:42.08]  >> Okay. So, let's see. I'm going to um I'm
+[15:44.96]  going to start with Opus and I've got
+[15:47.92]  these prompts preloaded. So, I'm giving
+[15:50.32]  different prompts just like I think you
+[15:51.84]  you said it really well. It's like
+[15:53.60]  you're talking to different people. And
+[15:55.68]  so, you know, when I'm talking to Opus,
+[15:58.96]  I can tell Opus, build me a team, and
+[16:01.84]  here's what I want each member of the
+[16:03.60]  team to do. When I'm talking to Codeex,
+[16:06.16]  I can't really tell it to build me a
+[16:07.84]  team, but I can tell it to think about
+[16:09.36]  stuff. So, the prompt that I'm going to
+[16:12.00]  give to Opus is build a competitor to
+[16:14.40]  Poly Market. Create an agent team to
+[16:16.72]  explore this from different angles. one
+[16:18.56]  teammate on technical architecture, one
+[16:20.80]  on understanding poly market and the ins
+[16:22.56]  and outs of prediction markets, one on
+[16:24.72]  UX, and one that just works on building
+[16:26.96]  really good tests to make sure
+[16:28.08]  everything works. For codeex, I'm going
+[16:31.20]  to give it a little different prompt,
+[16:33.12]  but very similar. So, still build a
+[16:34.80]  competitive poly market, but now think
+[16:36.96]  deeply about technical architecture,
+[16:39.28]  understanding poly market and the ins
+[16:40.80]  and outs of prediction markets, good
+[16:42.48]  clean UX, make sure it builds really
+[16:44.48]  good tests to make sure everything
+[16:45.76]  works.
+[16:47.44]  And to be fair, I'm gonna try to pace
+[16:49.60]  these in around the same time. Um,
+[16:52.72]  >> you're a fair guy, Morgan.
+[16:54.80]  >> I'm trying to I'm trying to keep it fair
+[16:56.40]  here, right? That's the only way to do
+[16:57.76]  it. Like I said, no no winners or
+[16:59.44]  losers. It's it's just about uh
+[17:02.40]  >> just about letting everybody have a fair
+[17:04.08]  shot to play the game.
+[17:05.44]  >> Yeah.
+[17:07.04]  >> All right. So, let's see. I'm going to
+[17:08.16]  make different directories for these.
+[17:09.44]  So, I'll do uh let's just call this opus
+[17:14.32]  45
+[17:16.00]  trolley market
+[17:18.32]  competitor.
+[17:19.84]  All right. So, let's fire up cloud in
+[17:21.60]  here. By the way, if you want to check
+[17:23.92]  when you're running uh just to like
+[17:26.00]  really make sure that you're in a good
+[17:27.20]  place with the model, if you type
+[17:28.96]  /model, I can see here, right? Cloud
+[17:31.92]  opus 46, right?
+[17:34.96]  Um so, I'm good there. I'm going to take
+[17:38.00]  this prompt,
+[17:39.76]  copy it. Make sure this is all copied in
+[17:42.88]  correctly.
+[17:45.20]  Okay, got that. I'm not going to hit
+[17:46.80]  enter yet. I'm making this totally fair.
+[17:48.72]  I don't want anyone at Anthropic or
+[17:50.72]  OpenAI to get upset with me. So, I want
+[17:53.60]  to be in good terms with both of them.
+[17:55.60]  >> Totally smart guy.
+[17:57.76]  >> Let's see. Oh, wait. Actually, you know
+[17:58.88]  what? I do want to create a new folder
+[18:00.56]  for this.
+[18:02.24]  >> But we are keeping it real. We're being
+[18:03.92]  objective. Neither myself or Morgan are
+[18:07.92]  affiliated with either Well, actually, I
+[18:09.76]  don't know about you. I'm not
+[18:10.64]  affiliated.
+[18:10.96]  >> No, I'm not. [clears throat] I'm not.
+[18:11.68]  I'm not.
+[18:12.08]  >> Or Open AI?
+[18:12.96]  >> Nope.
+[18:13.92]  >> Yeah.
+[18:14.24]  >> Nope.
+[18:15.44]  >> I love them both equally. How about
+[18:17.20]  that?
+[18:17.92]  >> Yeah.
+[18:19.12]  >> Okay. And I'm going to try to start them
+[18:21.20]  as close to on the same time as I can.
+[18:24.24]  Enter. Go.
+[18:26.64]  All right. They're going off to the
+[18:28.72]  races.
+[18:30.32]  >> So, what do you think's going to happen?
+[18:33.76]  That's a great question. Well, I know
+[18:35.60]  right now because I told uh Opus 45 to
+[18:41.68]  build uh using different teammates. It's
+[18:45.04]  going to do that. So, you can see here
+[18:46.72]  it says I'll build a Polymark competitor
+[18:48.72]  by launching parallel research agents
+[18:50.72]  first, then synthesizing their finding
+[18:53.28]  to a comprehensive implementation
+[18:54.72]  planning codebase. This is brand brand
+[18:57.36]  new, right? like if I did this with Opus
+[19:00.48]  yesterday wouldn't be possible. Um
+[19:04.00]  that's kind of the difference here is
+[19:06.00]  that um the way that um that Codex is
+[19:09.12]  working is the way things have kind of
+[19:10.72]  always worked, right? So if you see this
+[19:13.12]  is like the individual person, right?
+[19:15.20]  It's not saying, okay, I'm going to
+[19:17.28]  launch all these different agents and
+[19:18.80]  compare what they say and say, okay, I'm
+[19:20.24]  going to inspect the workspace. this is
+[19:22.00]  your you know really detailoriented
+[19:25.60]  really senior like founding engineer
+[19:27.76]  like that example gave right whereas
+[19:29.52]  over here you can see it's already
+[19:31.84]  launched these agents and now it wants
+[19:34.32]  to do web searches and I'm going to let
+[19:36.96]  it do that so multiple agents were
+[19:39.84]  asking to do web searches so now now
+[19:42.32]  launching all four research agents in
+[19:44.08]  parallel so this is off and I've got you
+[19:47.60]  know my technical architecture agent
+[19:50.64]  I've got this other agent that's these
+[19:52.64]  are both doing web searches right now.
+[19:54.64]  So one is looking at like prediction
+[19:56.48]  market order book matching engine
+[19:58.32]  architecture. So this one's learning
+[19:59.92]  about engine architecture for prediction
+[20:01.52]  markets. This one's looking at poly
+[20:04.24]  market how it works binary prediction
+[20:05.68]  market mechanics. And then I've got the
+[20:07.76]  UX design um is doing some design
+[20:11.52]  research and then we've got some test
+[20:13.36]  research. Okay, now it's going to go to
+[20:14.80]  poly market and let's really hope that
+[20:16.56]  polymer market doesn't block it because
+[20:18.16]  that'll make things harder for it.
+[20:20.08]  Meanwhile, over here, uh, this has
+[20:23.36]  discovered COX has figured out the repo
+[20:24.88]  is empty. So, it's going to scaffold it
+[20:26.32]  from scratch. Um, and it is starting to
+[20:30.96]  I'm now wiring the core market math and
+[20:33.28]  trading engine. So, it's interesting,
+[20:35.44]  right? So, you've got uh Codeex is out
+[20:38.72]  here building and is is like building
+[20:41.04]  the engine. Uh, with Opus 46, it still
+[20:45.28]  has agents out there like doing research
+[20:47.52]  work.
+[20:48.32]  >> Yeah. you really start to see just like
+[20:50.00]  how different they really are as they as
+[20:52.88]  they
+[20:54.08]  >> make progress.
+[20:55.60]  >> Yeah. And like I said, I haven't touched
+[20:57.68]  it before, so we don't know how long
+[20:58.72]  it'll take each of these.
+[21:00.24]  >> Totally. Yeah. And I think like I guess
+[21:02.72]  one question I I have is like is one
+[21:07.44]  is one model better for being more of a
+[21:10.80]  beginner vi nontechnical vibe coder or
+[21:14.88]  >> you know does it really matter?
+[21:16.56]  >> Yeah, it's a good question. I mean, I
+[21:19.12]  think the fair answer would be probably
+[21:21.68]  Codeex because Codeex
+[21:25.04]  uh edged out Opus 46 a little bit on
+[21:28.96]  some of those coding benchmarks and is
+[21:30.80]  is kind of known for writing better
+[21:33.84]  production code, probably codec in that
+[21:37.28]  way. Um, at the same time, one of the
+[21:40.64]  downsides, and like I said, this is I
+[21:42.32]  could only do this in a totally balanced
+[21:43.92]  way because they're so different. Um,
+[21:46.80]  you know, at the same time for a vibe
+[21:49.12]  coder knowing when to interject and stop
+[21:52.48]  codecs and say, "Oh, wait. You're doing
+[21:55.76]  this this way. Uh, can you instead look
+[21:58.48]  at doing it this way?" They're probably
+[22:00.40]  not going to know how to do that, right?
+[22:02.08]  And so that's where maybe Opus 46 is
+[22:04.24]  better where you could say, "Okay, spin
+[22:06.72]  up four or five agents and let them work
+[22:09.60]  with each other." Right.
+[22:11.92]  >> Yeah.
+[22:13.28]  >> Okay. Uh, Codex is done. All right. Um,
+[22:17.68]  so Codeex built a competitor to Poly
+[22:19.76]  Market in 3 minutes and 47 seconds.
+[22:22.40]  >> And to be clear, Poly Market's a
+[22:23.92]  multi-billion dollar company.
+[22:26.00]  >> Yeah, I don't think this will work quite
+[22:27.44]  as well. [laughter]
+[22:29.84]  Um, but uh but we'll see. Let's see. So
+[22:33.44]  um let's just check out if it worked
+[22:35.60]  first. I'll let this keep running here.
+[22:38.40]  Um so you know it'll tell you at the end
+[22:40.40]  here. It actually did the testing. So
+[22:41.84]  you can see it built a test suite. So,
+[22:43.92]  it has an LMSR math unit test suite, an
+[22:46.96]  engine behavior unit test suite, and an
+[22:49.28]  API integration uh test suite, and it
+[22:52.88]  passed with 10 out of 10 tests. Uh, as
+[22:56.08]  far as what it built, it has this core
+[22:58.88]  LMSR uh market maker engine, so coherent
+[23:02.40]  pricing, slippage, bound loss behavior,
+[23:05.60]  uh, domain trending engine. It built a
+[23:07.84]  REST API router, which is kind of
+[23:09.52]  interesting because I didn't tell it
+[23:10.40]  that it would have to build uh obviously
+[23:12.88]  any of this in any way. It figured out
+[23:14.56]  the architecture on its own. Uh clean,
+[23:17.20]  responsive front end. All right. Well,
+[23:18.96]  let's see. Let's see if it is actually.
+[23:20.72]  So, um let's go here. I'll let this keep
+[23:25.20]  running. This has got these four agents
+[23:26.80]  just running away here.
+[23:29.12]  And
+[23:31.84]  I'm in here. I'm going to do npm
+[23:35.92]  test.
+[23:38.64]  All right, tests 10 pass 10. That looks
+[23:41.60]  good to me.
+[23:42.40]  >> Oh, yeah.
+[23:42.80]  >> 1 p.m. start. All right, it's running.
+[23:46.96]  Uh, let's see. Okay, here we go. Uh, so
+[23:53.12]  this looks like it has the ability. So,
+[23:55.60]  let's Greg, let's make you We'll make
+[23:57.52]  you the first trader. All right.
+[23:59.20]  >> Okay.
+[24:00.64]  Uh, say add. Okay, you got a thousand
+[24:04.88]  bucks.
+[24:05.60]  >> Okay,
+[24:06.00]  >> there we go. Not bad. All right. What uh
+[24:09.44]  what market do you want to create?
+[24:11.68]  >> Um, well, Bitcoin, I think as we speak,
+[24:14.56]  has crashed to what 63,000 or something?
+[24:17.39]  [clears throat]
+[24:17.84]  >> Something like that. Yeah.
+[24:19.04]  >> So, I do like the I mean, will BDC be
+[24:22.80]  above, you know, be above 110K by
+[24:26.00]  >> Yeah. Okay. by death 31.
+[24:30.16]  >> Pretty good. Yeah. Okay.
+[24:31.20]  >> Pretty good.
+[24:31.52]  >> So, let's
+[24:33.12]  >> I mean, that's almost double.
+[24:35.04]  >> Yeah, that'd be pretty good.
+[24:37.84]  >> It dep It depends. Depends when you
+[24:39.44]  bought it. You know, if you bought it at
+[24:40.96]  uh 125K, then
+[24:43.44]  >> yeah,
+[24:44.80]  >> you're not so happy about it.
+[24:47.28]  >> Let's see. So, then I don't know. I
+[24:48.56]  don't even know what resolution
+[24:49.60]  criterion source
+[24:51.28]  >> would means
+[24:52.72]  >> be. I mean, I think I know what it's
+[24:54.40]  getting at, but I guess you could say
+[24:55.84]  like uh uh why don't we say use coin
+[25:00.16]  market uh cap as the source and resolve
+[25:06.40]  by looking at the price
+[25:10.16]  uh on the last day of December
+[25:14.56]  uh just before midnight I guess. Yeah, I
+[25:17.60]  guess like
+[25:19.84]  >> uh the price of BTC. Yeah. All right.
+[25:25.12]  >> Okay. It looks like it's okay. So, we've
+[25:27.36]  got it now. So, we'll use Coin Market
+[25:29.52]  Cap.
+[25:30.64]  >> Okay. So, then you could do a Yes. 50%.
+[25:35.92]  So, what do you think? Yes. Yes or no?
+[25:39.12]  >> I mean, this isn't financial advice.
+[25:40.96]  This is just purely for educational
+[25:43.36]  purposes,
+[25:44.88]  >> but I think I think so. I think that
+[25:47.84]  >> All right, that's a yes for Greg. Buy um
+[25:51.44]  let's see uh how many shares you want to
+[25:54.32]  buy. You've got a thousand bucks.
+[25:56.88]  >> I want to put it all. I'll put it all in
+[25:59.52]  this.
+[26:00.00]  >> I don't know how much it is per share.
+[26:01.44]  Let's see if it's a thousand if that's
+[26:02.72]  right. Okay. Yeah. Okay. Trade executed.
+[26:08.08]  >> Okay. So I mean it seems like it built
+[26:11.20]  something you know as a prototype
+[26:12.88]  relatively
+[26:14.40]  uh functional here. I I guess that it
+[26:16.88]  actually has decremented. So okay a
+[26:18.88]  thousand chairs was not that ended up
+[26:20.48]  being uh you know about $24 that you
+[26:23.68]  spent. So you've got more money if you
+[26:25.04]  wanted to create another market. Um but
+[26:28.00]  it worked. It's not returning an air. It
+[26:29.92]  shows the volume here. Um interesting.
+[26:32.96]  All right. So let's go back. Let's see.
+[26:35.68]  So far so good with that. I'd say uh
+[26:37.56]  [clears throat]
+[26:38.48]  >> let's see what's going on here. So,
+[26:40.32]  we've got Okay, so first off, look at
+[26:42.80]  how many tokens people have been talking
+[26:44.88]  about how token hungry uh Opus is and uh
+[26:49.60]  it's very token hungry. Each one of
+[26:51.04]  these agents has used over 25,000
+[26:53.20]  tokens. Um so let's see though. So they
+[26:57.20]  finished, right? The the the technical
+[26:59.52]  research around architecture is done.
+[27:02.80]  Prediction market research is done. The
+[27:04.88]  UX design research is done. The testing
+[27:07.28]  strategy is done. Uh, now
+[27:11.28]  it's going to go and build. So, it's
+[27:14.88]  writing the package. JSON.
+[27:17.52]  >> Did you see the ad that Anthropic
+[27:21.12]  launched about
+[27:23.36]  ads?
+[27:24.48]  >> Yes, I watched them all. They're
+[27:26.24]  hilarious. Although, actually, I guess
+[27:28.64]  Sam was not very happy about them today.
+[27:30.32]  I saw a tweet from Sam that was less
+[27:32.48]  than happy. So, uh, I also I found them
+[27:35.52]  hilarious, but I also understand his
+[27:37.28]  side as well.
+[27:40.16]  >> It seems like Anthropic is sort of anti-
+[27:43.12]  ads for now and and andly chat GBT is
+[27:46.64]  going to be introducing ads.
+[27:48.08]  >> Yes.
+[27:48.56]  >> And, you know, when I'm when I'm
+[27:50.64]  watching this and I'm seeing you're
+[27:52.16]  going through 25,000 tokens, 25,000
+[27:54.72]  tokens, 25,000 tokens,
+[27:56.56]  >> I'm like, yeah, of course, anthropic
+[27:58.24]  doesn't really, [laughter]
+[28:01.04]  >> you know.
+[28:02.32]  >> Yeah. Yeah, I mean this is literally I
+[28:04.40]  mean if you add that all up, you're
+[28:05.84]  talking about over a 100,000 tokens used
+[28:09.36]  uh in doing this. So I think that's one
+[28:12.48]  of the very good things uh for like
+[28:15.76]  investors in Anthropic, right? Is with
+[28:19.04]  agents and agents now being I think
+[28:21.92]  probably the new killer feature in Opus.
+[28:24.24]  >> Yeah.
+[28:24.64]  >> You're going to take whatever token
+[28:25.92]  usage and multiply it by the number of
+[28:27.36]  agents.
+[28:28.16]  >> Exactly. It's actually really smart. And
+[28:30.88]  I wonder if that was like the thinking
+[28:34.08]  like they're like how can we get people
+[28:35.36]  to use more tokens? Oh, we'll just like
+[28:37.36]  spin up agents and we'll design it like
+[28:39.36]  that or or did they think like okay how
+[28:42.56]  can we design a system that is best for
+[28:44.80]  the use case and then they're like okay
+[28:46.48]  then we'll monetize it like this. I
+[28:48.32]  don't know.
+[28:48.64]  >> Yeah. Yeah. Probably a combination of
+[28:50.80]  the two. I can tell you I've never used
+[28:52.56]  so many tokens in one day as [laughter]
+[28:54.48]  today.
+[28:56.00]  >> So it's working. 100 100,000 tokens is
+[28:59.12]  like roughly how much in in US dollars?
+[29:02.40]  >> I don't know because I have a I have a
+[29:04.72]  um Claude Max plan. So
+[29:08.80]  >> yeah. So I'm not paying it. We're not
+[29:11.92]  seeing it hit any limits right now.
+[29:13.44]  Right. So I'm not paying more than $200.
+[29:15.68]  I can tell you that.
+[29:16.80]  >> Yeah. My guess is it's you know we're
+[29:20.80]  talking
+[29:22.40]  like in in the $200 max plan. Do you
+[29:25.04]  remember how many how many tokens you
+[29:27.36]  get approximately?
+[29:29.52]  >> That's a good question. Um,
+[29:32.00]  >> let me check.
+[29:32.48]  >> Let me fire up Let me fire up Claude and
+[29:34.40]  ask it. Let's see here. How many tokens
+[29:38.48]  do I get? Estimate. Let's see.
+[29:43.68]  Okay, so here you go. Estimate.
+[29:45.84]  Estimates. So, uh, 45 million tokens per
+[29:50.16]  month of Sonnet. But let's see. Uh, what
+[29:53.36]  is your estimate for opus
+[29:58.08]  or six?
+[30:00.64]  >> It's like they don't really want you to
+[30:02.08]  know.
+[30:02.72]  >> No, they're trying to make it a little
+[30:03.92]  harder. Okay. Yeah, they're not even
+[30:05.68]  going to tell me actually. They're just
+[30:06.64]  going to say there's no public data.
+[30:08.80]  It's very new.
+[30:10.24]  >> Opus is roughly 5x more expensive.
+[30:13.60]  >> So then,
+[30:15.04]  >> uh, if it's 45 million, that's 5x. So 10
+[30:17.44]  million is probably the answer about,
+[30:19.12]  right?
+[30:19.52]  >> Yeah.
+[30:19.92]  >> Yeah. Um,
+[30:21.76]  >> so then if we're doing, you know, quick
+[30:23.68]  math, let's just say we spent 100,000
+[30:25.68]  tokens.
+[30:27.20]  >> Um,
+[30:28.72]  you know, 100,000 divided by 5 million
+[30:32.00]  is,
+[30:34.24]  you know,
+[30:34.80]  >> well, we're going to spend more than
+[30:35.52]  that cuz look at this. We're we're now
+[30:37.52]  over 17,000 tokens on top of that in
+[30:40.96]  this next build.
+[30:42.48]  >> Okay. So, but still, let's say, you
+[30:46.24]  know, even if we use a million tokens
+[30:49.04]  building a competitor to Poly Market
+[30:51.20]  right now, uh, we're still only using a
+[30:52.96]  tenth of what it can do. That's not
+[30:55.36]  terrible.
+[30:56.00]  >> No, I mean, it's $20, which is like the
+[30:58.64]  price of a cocktail in Miami.
+[31:00.56]  >> Yeah. Yeah. Exactly. Yeah. Yeah. So,
+[31:04.08]  let's see. But now, [laughter] as I say,
+[31:06.24]  I'm watching the tokens uh creep up.
+[31:10.72]  All right. So, it's building the API
+[31:12.32]  routes. Now,
+[31:15.12]  >> I have a feeling this is going to be a
+[31:16.64]  better end result.
+[31:18.64]  >> I I was actually just going to say that
+[31:20.96]  this feels and and maybe it's just
+[31:22.80]  because there were four agents that were
+[31:24.88]  doing all the work beforehand and now
+[31:27.92]  it's doing the work. It It feels like
+[31:30.40]  we're going to see something very
+[31:32.00]  different when we uh when we load what
+[31:34.48]  it built.
+[31:35.36]  >> Yeah. I don't think we gave it any like
+[31:37.84]  design like visual design any you know
+[31:41.12]  so no
+[31:42.08]  >> do you recommend for folks to just like
+[31:44.64]  sort of get the MVP app out play around
+[31:47.76]  with it on local host you know click
+[31:50.88]  some buttons and then sort of update
+[31:53.68]  with the visual design from there
+[31:55.60]  >> it's a good question I I do like 50/50
+[31:58.08]  sometimes if I have something in mind
+[32:00.96]  >> um
+[32:01.76]  >> uh especially if I want something like
+[32:03.20]  on brand with something like suppose I'm
+[32:05.12]  building something that is um going to
+[32:07.92]  be in the like open claw maltbook
+[32:10.08]  ecosystem. I would probably say, "Hey, I
+[32:13.92]  want to design a a site that uh you
+[32:17.60]  know, looks somewhat similar to or is
+[32:21.36]  inspired by, you know, uh opencloud.ai
+[32:26.08]  and moldbook.com, right? Take a look at
+[32:28.32]  those sites and get inspiration. These
+[32:30.32]  models are great at doing stuff like
+[32:32.08]  that."
+[32:33.04]  >> Cool. I'm really excited to see this is
+[32:35.12]  doing though. I think we're we're now
+[32:36.64]  like well over 200,000 tokens based from
+[32:40.32]  what I could tell. Uh but we're not at
+[32:42.80]  10 million.
+[32:44.16]  >> We're not hitting any limits. You know,
+[32:46.32]  we don't have to take out second
+[32:48.08]  mortgages on our
+[32:49.44]  >> Yeah, there you go. [laughter]
+[32:50.96]  >> Yet it's still going though.
+[32:55.50]  [clears throat]
+[32:55.52]  >> I guess you know, we can tell like
+[32:56.96]  here's an interesting thing. Um in
+[32:58.88]  comparison like this is still going. Uh
+[33:01.12]  why don't we say like uh the design
+[33:04.48]  because looked kind of bland to me,
+[33:06.16]  right?
+[33:06.48]  >> Yeah. Yes, it did.
+[33:07.68]  >> Uh
+[33:12.16]  can you spruce it up and make it look
+[33:16.32]  nicer? Cuz like we may as well have
+[33:18.00]  codeex working away too, right?
+[33:19.92]  >> Yeah. So you ba you didn't really give
+[33:21.68]  it any like specific it should look like
+[33:24.40]  square.com. No. So we'll see. We'll
+[33:27.20]  basically see if
+[33:29.04]  >> if codecs if you know fi if 53 has a
+[33:34.08]  little bit of taste.
+[33:35.36]  >> Yeah. Yeah. So that's what it's saying
+[33:36.80]  now. It's saying okay I'll upgrade the
+[33:38.16]  visual system without changing
+[33:39.92]  functionality, stronger typography,
+[33:42.08]  richer color direction, better card
+[33:44.00]  hierarchy, and purposeful motion. I
+[33:46.40]  don't know what that means, but we'll
+[33:47.60]  find out. Um all right. Okay. So now
+[33:51.84]  it's now it's editing um index.ht. HTML.
+[33:56.16]  It looks like he's going to add motion
+[33:57.68]  hover polish. Okay, cool. Look at that.
+[34:00.96]  This current task for over 30,000 tokens
+[34:03.28]  building the front end UI.
+[34:05.28]  >> Okay, it's done.
+[34:07.04]  >> Yeah, Codex is fast by the way, right? I
+[34:09.84]  mean, that's pretty darn fast.
+[34:11.28]  >> Yeah.
+[34:11.84]  >> Um, so we should be able to just go
+[34:14.72]  here.
+[34:16.24]  Should have already automatically
+[34:17.36]  reloaded, but okay.
+[34:19.20]  >> All right. I mean,
+[34:20.24]  >> I mean,
+[34:20.72]  >> not that not that different.
+[34:22.40]  >> It's not that different. It's
+[34:24.72]  >> I think um can I try something?
+[34:28.32]  >> Yeah, go for it.
+[34:29.84]  >> I'm going to say I I would say okay,
+[34:33.28]  thank you.
+[34:35.52]  But this was a minor design refresh.
+[34:39.44]  I'm looking I'm looking for a major one.
+[34:41.92]  >> There you go. Yeah.
+[34:42.96]  >> And then I'm going to say
+[34:45.20]  pretend
+[34:48.80]  you are Jack Dorsey.
+[34:51.76]  >> Here you go. And how would he design
+[34:56.24]  this website to be clean, elegant,
+[35:01.20]  >> and full and full of interesting
+[35:03.28]  interactions?
+[35:04.64]  >> Yeah. Great. Yeah.
+[35:07.36]  >> Jack Dorsey, for people who don't know,
+[35:09.04]  co-founder of
+[35:11.20]  formerly known as Twitter and Square
+[35:14.56]  Block now.
+[35:16.08]  >> Mhm.
+[35:16.64]  >> He's just got he's got he's a design
+[35:18.88]  guy. I don't He's first one guy who came
+[35:20.72]  to mind or first person came to mind. So
+[35:23.20]  >> yeah, that's a good one. That's a good
+[35:25.04]  prompt. Let's see.
+[35:27.76]  So I'll do a full visual rearchitect,
+[35:31.84]  not an incremental tweak, new layout,
+[35:34.40]  language, stronger typography,
+[35:36.48]  monochrome first pallet. Interesting.
+[35:39.12]  Interaction driven cars. Da da da. Okay.
+[35:41.84]  You know what's interesting is it didn't
+[35:44.32]  I would have kind of hoped and maybe you
+[35:46.40]  know we're not quite at AGI yet. I would
+[35:49.12]  have kind of hoped that it would say,
+[35:50.64]  "Let me go find some art." Like, if you
+[35:52.40]  told me that, Greg, like, "Hey, Morgan,
+[35:54.08]  can you read?" I would be like, "Yeah,
+[35:56.16]  let me go look at some articles about
+[35:58.40]  Jack Dorsey's design aesthetic."
+[36:00.72]  >> Exactly.
+[36:01.92]  >> Um, I'm surprised it's not doing that.
+[36:04.00]  Instead, it's going like
+[36:05.52]  >> I I am assuming it knows who Jack Dorsey
+[36:07.76]  is, although I don't know if it actually
+[36:09.20]  does. It just seems like it it's it's
+[36:11.68]  really just taking like
+[36:13.52]  >> this part of your question and going,
+[36:15.92]  "Oh, okay. Major refresh. I'll do that."
+[36:18.08]  Well, can can't you ask it? Can't you
+[36:19.92]  say, "Do you know who Jack Dorsey is?"
+[36:22.24]  >> Let's see. I can actually uh I'm
+[36:24.16]  supposed to be able to in the middle cut
+[36:25.92]  it off. So, let me see. Yeah. Do you
+[36:28.08]  know who Jack Dorsey is?
+[36:32.16]  Let's see. Okay. So, here we go. This is
+[36:34.16]  the midstream
+[36:36.80]  test.
+[36:39.92]  It's thinking about it.
+[36:42.96]  43,000 tokens over here. Okay. Yes.
+[36:46.16]  Okay. Here we go. Yes. Jack Dorsey is
+[36:48.16]  the co-founder of Twitter, former
+[36:49.84]  Docking Square. Okay. With a design
+[36:52.40]  style that's typically minimal restrain
+[36:54.96]  and interaction focused.
+[36:56.72]  >> Beautiful.
+[36:57.76]  >> Okay. All right. So, touche. It showed
+[37:00.96]  us.
+[37:01.92]  >> Yeah.
+[37:03.28]  >> Now, here's the weird thing. It looks
+[37:04.64]  like it's
+[37:05.52]  >> Is it complete or do we have to say it
+[37:07.20]  >> complete? Like right when I was saying
+[37:08.24]  that like are you done or did you stop
+[37:12.08]  because I asked a question?
+[37:14.24]  >> Yeah, this is really interesting.
+[37:18.48]  I will say like the Oh, I paused when
+[37:21.60]  you asked the question. The major
+[37:22.96]  redesign.
+[37:23.76]  >> Oh,
+[37:24.88]  >> mostly.
+[37:25.68]  >> If you want to resume, so that's weird.
+[37:27.60]  So, you ask a question, it just stops,
+[37:29.60]  but like uh so like yes, of course,
+[37:32.48]  continue.
+[37:33.60]  >> Yeah.
+[37:34.48]  >> Okay.
+[37:35.36]  >> So, that's a that's actually some weird
+[37:36.80]  UX. Like, it obviously should just
+[37:38.88]  continue after,
+[37:40.00]  >> right?
+[37:40.72]  >> Yeah, I would assume that. It's such a
+[37:43.36]  weird thing because it said Yeah. If you
+[37:46.00]  want, I'll resume. Now,
+[37:47.84]  >> I will say I I do like that you can in
+[37:51.60]  midstream like kind of edit things.
+[37:53.60]  >> Yeah.
+[37:53.84]  >> Like that's how my brain works.
+[37:55.84]  >> Totally.
+[37:56.80]  >> Yeah. Yeah.
+[37:59.84]  This is using a ton of tokens. It is
+[38:02.88]  amazing to see the detail. I mean, this
+[38:05.28]  this should be a a work of art, whatever
+[38:07.52]  side this comes off with. [laughter]
+[38:10.80]  >> Um, all right. This is done. So, now
+[38:13.20]  let's see. We can go back to this and uh
+[38:18.16]  okay I mean I'm not blown away but it's
+[38:22.08]  okay.
+[38:22.72]  >> Opinions become price in milliseconds.
+[38:25.04]  Trade conviction not noise signal market
+[38:27.76]  is designed for fast thesis iter iter
+[38:31.60]  iteration with transparent pricing.
+[38:33.60]  Okay. I mean
+[38:36.24]  I I I would push it more I think.
+[38:38.48]  >> Yeah. Yeah. I guess. Yeah. Like
+[38:42.48]  >> go for it.
+[38:43.28]  >> I would say
+[38:45.28]  that's not the Jack Dorsey I know.
+[38:47.90]  [laughter]
+[38:48.96]  >> I don't know. Jack Dorsey.
+[38:53.44]  >> Uh I was looking for a Capslock major
+[38:57.28]  upgrade.
+[38:59.20]  Uh that that might mean
+[39:02.96]  um
+[39:05.04]  way more copy, way more images.
+[39:08.48]  >> Yeah.
+[39:10.08]  way more storytelling.
+[39:12.48]  >> Yeah, exactly.
+[39:14.40]  >> Etc., etc.
+[39:15.44]  >> Yeah. I'll just say seriously, take your
+[39:18.08]  time, go nuts.
+[39:19.84]  >> Yeah.
+[39:20.56]  >> What are credits?
+[39:22.61]  [laughter]
+[39:23.36]  >> Famous last words, Morgan.
+[39:25.04]  >> I know, right? It's like, oh, perfect.
+[39:26.56]  Okay. That's like a signal within the
+[39:28.56]  opening headquarters like we finally got
+[39:30.16]  someone.
+[39:30.80]  >> Totally. It's a whale. [clears throat]
+[39:32.56]  >> All right. So, Opus has finished.
+[39:35.20]  >> Yeah. I have no idea how many credits I
+[39:37.52]  used, but probably actually, let me ask
+[39:39.12]  it. How many uh how many tokens in total
+[39:43.52]  did you use to put all of this together,
+[39:47.20]  including
+[39:48.72]  the four agents
+[39:50.80]  and then we can Oh, it's using tokens to
+[39:52.40]  answer.
+[39:52.72]  >> That's so funny.
+[39:54.32]  >> Okay. Uh doesn't know. Let's see.
+[39:59.76]  Okay, here we go. Okay, it's it's
+[40:01.44]  estimating. It actually doesn't know,
+[40:02.88]  which is weird because it should know.
+[40:04.56]  Although uh
+[40:06.96]  wonder if I can actually do slashcost.
+[40:10.64]  Oh, here we go. Yeah. Okay.
+[40:11.92]  >> Yeah.
+[40:12.64]  >> Oh, it doesn't. Okay. No, no need to
+[40:14.32]  monitor cost. Okay. So, they really
+[40:16.00]  don't want you to know. [laughter]
+[40:18.29]  [clears throat]
+[40:18.80]  >> Um Okay. It's guessing 150 to 250,000
+[40:21.92]  tokens totally. Okay.
+[40:23.12]  >> That's probably right.
+[40:24.32]  >> Okay. Sure.
+[40:25.28]  >> Okay. So, here's what it's done. So
+[40:27.36]  first off, one really interesting thing
+[40:29.12]  here is um you know codeex created 10
+[40:33.36]  tests, right? Opus created 96 tests.
+[40:39.28]  >> So definitely a lot uh a lot more detail
+[40:43.60]  on the testing side and it's called it
+[40:46.08]  forecast uh whereas uh codeex called it
+[40:49.44]  uh signal market. So different names. A
+[40:52.32]  polymark competitor is built and
+[40:53.84]  verified. Here's what each team member
+[40:55.92]  delivered. So the architecture technical
+[40:58.48]  lead decided modular monolith Nex.js14
+[41:01.76]  app router central limit order book
+[41:05.45]  [clears throat] database schema rest
+[41:06.96]  API. Okay. The prediction market domain
+[41:09.92]  expert binary yes no market where yes no
+[41:13.28]  is always a dollar. Okay. Seated markets
+[41:16.24]  across crypto politics. Okay. Okay. The
+[41:18.96]  UX design lead dark mode trading
+[41:21.12]  platform
+[41:23.20]  pages. It is a green for yes, red for
+[41:27.68]  no. Okay. Testing QA lead did order book
+[41:31.20]  test. Okay. So, here's how the tests are
+[41:32.64]  broken down. Order book test matching
+[41:34.64]  engine. Okay.
+[41:38.16]  All right. NPN runde to start the app.
+[41:40.72]  So, let's go in here. [clears throat]
+[41:43.04]  Oh, interesting. Okay. I don't want to
+[41:46.80]  say anything actually. I've already
+[41:47.76]  given to it. What's your initial take?
+[41:49.52]  >> I mean, my
+[41:51.44]  Hello, Jack Dorsey. You know what I'm
+[41:53.12]  saying? Like, [laughter]
+[41:54.56]  this is this is what I expected it to
+[41:57.76]  look like when we pushed codeex.
+[42:00.80]  >> Yeah, me too.
+[42:01.68]  >> Um, this looks really clean. What
+[42:05.36]  happens when you hover over uh
+[42:08.08]  >> Oh, yeah. Look at that. Yeah,
+[42:10.08]  >> it's got hover states.
+[42:11.20]  >> Hover states.
+[42:13.12]  Um, it's obvious got it organized like
+[42:16.00]  those sports, you know, will the next
+[42:17.76]  tube will have over 120 million viewers.
+[42:20.72]  >> Will AI pass the touring test by 2027?
+[42:23.44]  Will the movie preserver three? It's got
+[42:25.04]  stuff in there. Yeah.
+[42:26.80]  >> Yeah. This doesn't even doesn't feel
+[42:29.20]  like an MVP.
+[42:30.88]  >> Yeah. This is pretty wild actually.
+[42:34.00]  >> And it created some stuff, you know,
+[42:35.76]  that we never talked to it about, right?
+[42:37.52]  like a leaderboard
+[42:39.60]  >> um which it's already populated with
+[42:41.60]  some initial stuff portfolio section.
+[42:45.92]  >> Yeah. Interesting. So, let's see now.
+[42:48.96]  So, yeah, I mean I'm I'm more impressed
+[42:51.68]  with the it was maybe worth the
+[42:53.60]  150,000,000 tokens.
+[42:56.08]  >> Feeling better about it. Will SpaceX
+[42:57.84]  land humans on Mars before 2030? Only 8%
+[43:02.40]  it thinks. Huh. Oh, yeah. Look at this
+[43:04.16]  actually. Whoa.
+[43:05.28]  >> This is This is insane, bro. That's
+[43:07.44]  clean.
+[43:08.16]  >> That's clean.
+[43:08.64]  >> Yeah.
+[43:09.44]  >> I wasn't expecting to click in and
+[43:11.12]  actually get a well-designed page like
+[43:13.68]  this,
+[43:15.28]  >> huh? So, if I were to do I have to sign
+[43:17.36]  in to trade. I don't know if I'm going
+[43:18.32]  to be able to sign in because I haven't
+[43:19.44]  set anything up. Let me just check. Uh,
+[43:21.60]  >> well, you can sign up. Says don't have
+[43:23.20]  an account.
+[43:25.20]  >> Oh, yeah. Sign up. I don't know if it
+[43:26.88]  gets it all connected, though. Let's
+[43:28.24]  see, though.
+[43:29.52]  >> All right. I'm snagging. You know what?
+[43:30.88]  Actually, I'm gonna take the username
+[43:32.48]  Greg. I'm gonna steal your username.
+[43:34.56]  >> All right. Uh, [laughter]
+[43:37.04]  let's see.
+[43:38.88]  Okay. So, yeah, it's probably because I
+[43:40.80]  was gonna say the database isn't wired
+[43:42.80]  up yet, right?
+[43:43.68]  >> So, I'm not I'm not surprised that I
+[43:45.44]  would actually have to do I wasn't
+[43:46.48]  expecting to do that. So, um, but I get
+[43:49.52]  it. I mean, it's clean. This is pretty
+[43:51.60]  neat.
+[43:52.32]  >> Yep.
+[43:52.72]  >> Um, yeah. All right, let's see. So, then
+[43:55.44]  can this All right, we've given I don't
+[43:57.84]  know about you, but this is the last
+[43:59.04]  chance I'm going to give Codeex on the
+[44:00.96]  design side. Um, it's out of it's out of
+[44:03.28]  opportunities here. So, um, oh, here
+[44:06.88]  it's funny though in the in the end it
+[44:08.48]  kind of it's it's acting a little bit
+[44:10.24]  like data from Star Trek on your
+[44:12.24]  question. What are credits in this
+[44:13.60]  context? Credits usually means
+[44:16.05]  [laughter]
+[44:17.84]  >> uh wasn't quite it. That's good though.
+[44:19.92]  Okay, so let's see. Let's take a look
+[44:21.44]  and see. All right, here we go. The new
+[44:24.56]  version of signal market.
+[44:26.56]  >> Boom.
+[44:27.28]  >> Oh, wow. Okay,
+[44:31.12]  this is getting a little bit
+[44:32.24]  interesting. Let's see here. Read the
+[44:35.60]  manifesto.
+[44:36.88]  >> Yeah. I mean, I don't hate it.
+[44:39.44]  >> It's definitely better. Yeah.
+[44:42.56]  >> I mean, it's it's got a lot going on.
+[44:46.40]  >> Yeah.
+[44:47.68]  >> But it's different
+[44:51.04]  terminal. It's different than uh
+[44:55.52]  >> Yeah. It's different than any sort of
+[44:57.84]  prediction market app I've seen.
+[45:00.16]  >> Yeah. Yeah. From a UX perspective, I
+[45:01.52]  just feel like this is just so clean,
+[45:02.96]  though.
+[45:03.60]  >> This is so good. It's so fast. Yeah.
+[45:06.40]  Yeah. I mean, I I would say, you know,
+[45:09.44]  like I said, I'm not going to say which
+[45:10.56]  one is It's not that Opus is better than
+[45:12.56]  Codeex or vice versa, but I would say in
+[45:14.64]  this test, Opus won.
+[45:16.96]  >> Yeah. In this test, Opus won.
+[45:18.88]  >> Yeah.
+[45:19.52]  >> That's just the truth.
+[45:21.36]  >> Yeah. Yeah. But we could give it another
+[45:23.60]  I mean, you know, you never know. Like I
+[45:25.36]  think that what's interesting about this
+[45:26.80]  is I mean Codeex built it like I don't
+[45:30.96]  know how much faster. We can look at the
+[45:32.40]  timing on this video but like 20 times
+[45:34.72]  faster or something, right?
+[45:37.36]  >> Yeah. Yeah.
+[45:38.48]  >> Yeah.
+[45:40.00]  >> Well, anything else you want to cover?
+[45:43.04]  Um I don't think we'll have time to do
+[45:44.64]  another example, but anything else you
+[45:46.08]  want to cover between, you know, that
+[45:48.56]  you want to leave people with?
+[45:50.16]  >> Yeah. Um
+[45:52.64]  let me see if there is anything else in
+[45:54.24]  here. I cover the adapted thinking. Oh,
+[45:55.84]  I guess just on the um orchestration, I
+[45:59.12]  would say, you know, this is the feature
+[46:00.88]  I'm probably the most excited about with
+[46:02.64]  Opus and clearly we saw in this example
+[46:04.80]  it working really well. Um just make
+[46:07.44]  sure to look at the documentation. It's
+[46:09.28]  all in the docs now. Um and
+[46:11.99]  [clears throat] it gives some examples
+[46:13.60]  as well because it has this idea of like
+[46:16.40]  compare with sub aents of like context
+[46:19.36]  and communication and coordination and
+[46:21.36]  kind of breaks this down. Um, and then
+[46:24.08]  it has like a sample prompt. Uh, more of
+[46:27.52]  the details on the display mode. There's
+[46:29.60]  a lot of other stuff that I didn't go
+[46:31.28]  into there. That's probably what I would
+[46:32.56]  leave people with because I think a lot
+[46:34.24]  of people are going to want to dive in
+[46:35.44]  and use um use agents with Opus 46 and
+[46:40.08]  they've got pretty good details on all
+[46:42.16]  the little uh tweaks that you can make
+[46:44.48]  with it.
+[46:45.76]  >> Amazing. Well, Morgan, I can't thank you
+[46:48.08]  enough for coming on. I I hope people
+[46:50.00]  love this episode. Um, I love talking to
+[46:53.92]  you. You get super
+[46:55.20]  >> Thank you for having me, Greg. It's a
+[46:56.80]  total honor.
+[46:57.84]  >> You're uh, yeah, it's just I love how
+[47:01.28]  clearly you communicate and and and
+[47:04.72]  to technical people, but also
+[47:06.00]  nontechnical people, and you're
+[47:07.52]  criminally underfollowed. So, I'm going
+[47:09.36]  to include [laughter]
+[47:10.56]  >> I appreciate
+[47:11.92]  >> links where you can find Morgan and
+[47:14.00]  follow him on X. He talks a lot about
+[47:16.24]  vibe coding over there. And Morgan, any
+[47:20.48]  anything [snorts] else you want to, you
+[47:22.00]  know, places that you want to leave
+[47:23.84]  people to go and check you out?
+[47:25.60]  >> Yeah, I mean, I'm the the co-founder and
+[47:27.52]  CTO of Bold Metrics. Um, I'll just give
+[47:30.16]  a a little plug for us. We have a AI
+[47:32.72]  technology that's used by apparel brands
+[47:34.88]  or retailers. So, if you're shopping
+[47:36.88]  online and want to find the right size,
+[47:38.32]  you see a find my size button. We a lot
+[47:40.24]  of times power that and have really
+[47:42.32]  powerful uh machine learning models that
+[47:44.48]  update and adapt over time to help
+[47:47.28]  people find the right size and give lots
+[47:49.52]  of really interesting data to lots of
+[47:52.16]  amazing brands and retailers that you
+[47:53.84]  probably all know and love. And and and
+[47:55.68]  me and my team, you know, we're using
+[47:57.68]  all of this tooling. Like I had a
+[47:59.44]  meeting with my team this morning about
+[48:02.88]  uh Opus 46 and and Codeex and I've given
+[48:07.20]  everybody access to both of these and I
+[48:09.76]  actually have multiple teams of mine
+[48:12.40]  that are trying current things we're
+[48:14.16]  working on and are actually testing with
+[48:16.56]  each to see which performs better. So,
+[48:19.44]  you know, the one thing I encourage all
+[48:20.88]  engineering teams to do is like and
+[48:23.44]  engineering leaders to do is like let
+[48:25.20]  your teams loose with this stuff. let
+[48:27.04]  them try it. You know, some of this
+[48:28.96]  stuff is really cutting edge and really
+[48:30.88]  performing and gives us the opportunity
+[48:33.20]  um to do better, more creative work.
+[48:34.96]  >> Yeah. Stop listening to us right now.
+[48:36.96]  Like Exactly. Stop. [laughter] Yeah.
+[48:39.28]  Listen to us.
+[48:40.48]  >> X out of this YouTube or Spotify link,
+[48:42.96]  but actually give us a like, a comment,
+[48:44.80]  and subscribe. Let us know if you like
+[48:46.40]  this episode. Morgan, thanks again for
+[48:48.24]  coming on the show. Um this was a lot of
+[48:51.60]  fun. See you next time.
+[48:52.96]  >> Thank you so much. Total honors.

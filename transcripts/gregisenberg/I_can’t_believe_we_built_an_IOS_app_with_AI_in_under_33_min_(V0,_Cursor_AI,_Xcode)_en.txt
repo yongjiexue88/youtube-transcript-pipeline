@@ -1,0 +1,790 @@
+Title     : I can’t believe we built an IOS app with AI in under 33 min (V0, Cursor AI, Xcode)
+Video ID  : 4oNLQUznT8A
+URL       : https://www.youtube.com/watch?v=4oNLQUznT8A
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 781
+Saved at  : 2026-06-21 02:23:30
+------------------------------------------------------------
+
+[00:00.52]  Riley brown people who watch this
+[00:04.24]  episode what are they going to get out
+[00:06.48]  of
+[00:07.52]  it I hope to instill some clarity around
+[00:13.40]  building with AI so I think it would be
+[00:16.44]  useful in this episode if we talked
+[00:19.00]  about prototyping and how
+[00:21.52]  business-oriented people marketing
+[00:23.36]  oriented people can communicate their
+[00:26.48]  app ideas more effectively to either
+[00:28.20]  pitch to their team and
+[00:30.60]  um and just yeah and yeah basically use
+[00:32.88]  it as a guiding vision for building
+[00:36.42]  [Music]
+[00:41.56]  software
+[00:42.88]  [Music]
+[00:49.44]  baby
+[00:51.04]  baby let get those
+[00:56.44]  juices and just to be clear you're not a
+[01:00.12]  trained engineer you didn't go to like
+[01:01.64]  University waterl for four years and
+[01:04.88]  study engineering correct don't even
+[01:07.04]  know what that is and no I uh I was I
+[01:10.68]  will say I will say just through this
+[01:12.96]  process because I have been building
+[01:15.28]  stuff with code despite not knowing how
+[01:17.80]  to code like if you ask me how to write
+[01:20.04]  a hello world thing I don't think I
+[01:22.64]  would be able to do it but I could build
+[01:24.96]  a full mockup for an app using one of
+[01:27.20]  the templates that we've been using and
+[01:28.80]  deploy it to the web so that other
+[01:30.44]  people can test it and I will say I am
+[01:32.68]  learning a lot about like what the
+[01:34.12]  functions do so through this process you
+[01:35.84]  do kind of learn how to code but it's
+[01:38.36]  just in an in the opposite way you you
+[01:40.84]  build the thing and then you learn about
+[01:42.68]  it instead of learning about it then
+[01:44.16]  building the thing which which makes it
+[01:46.24]  more
+[01:47.52]  fun should we get into it yeah let's
+[01:50.56]  what what do you want to get into first
+[01:51.80]  do you want to get into um vzer I think
+[01:55.24]  that might be a good place to start I
+[01:56.48]  think that's a good place to
+[01:58.28]  start okay let's Do It um I do have
+[02:01.52]  xcode open um you know what let's let's
+[02:05.08]  pull an audible here let's start on
+[02:06.56]  xcode because we can actually prototype
+[02:10.48]  iOS apps I forgot to bring that up so
+[02:13.12]  okay while you bring that up while you
+[02:15.40]  bring that
+[02:16.32]  up I want people to know that you are in
+[02:18.96]  for a treat because first of all I have
+[02:22.12]  so much fun when you when you come on
+[02:23.56]  here and share because it's just like
+[02:25.04]  I'm learning you you you're able to
+[02:26.80]  communicate in such a clear way that I
+[02:29.24]  get these little aha moments so people
+[02:31.96]  are listening you're in for a treat and
+[02:34.44]  I do have to I must shout out an without
+[02:38.28]  an this I'd be two months behind uh he
+[02:42.80]  has been the person that like came in
+[02:44.84]  and he onboarded me and and allow like
+[02:47.24]  gave me the right
+[02:49.00]  um the right Frameworks and mental
+[02:51.76]  models to like think about what's going
+[02:53.64]  on with code that like really pushed me
+[02:56.00]  forward um and so I just have to shout
+[02:58.32]  him out um and he was on the last
+[03:00.20]  episode we did together but anyway let's
+[03:01.68]  pull up this right here okay can you see
+[03:06.36]  my screen yes I've got we've got xcode
+[03:09.28]  open yeah and so I don't want to like
+[03:12.28]  build a full app honestly because I'm
+[03:14.16]  like brain dead right now I don't want
+[03:15.56]  to like deal with um like coming up with
+[03:18.88]  an app I just want to talk about like
+[03:20.72]  how powerful this is let me bring this
+[03:22.88]  to a different screen real quick so this
+[03:26.52]  was one of the most powerful uh tools
+[03:30.36]  that I've ever seen in terms of like
+[03:32.56]  getting me inspired to build some stuff
+[03:34.68]  so this is an iPhone simulator and this
+[03:38.08]  is
+[03:38.88]  xcode and if you've watched the previous
+[03:41.56]  videos I've made the way we've been
+[03:43.76]  creating apps is we are basically using
+[03:46.80]  cursor to generate the code and our
+[03:49.32]  codebase is in repet and we're
+[03:51.28]  connecting the two in this case we're
+[03:53.52]  not using repet we're using xcode
+[03:55.88]  instead and xcode allows us to make iOS
+[03:58.48]  apps and uh xcode uses Swift or iOS is
+[04:03.48]  built on Swift and like I you know this
+[04:07.28]  I don't know how to write code but I do
+[04:09.52]  know I have seen a lot of code generated
+[04:11.64]  and it's actually pretty easy to
+[04:13.56]  understand what's going on when using um
+[04:16.64]  Swift with building an IOS app so let's
+[04:18.76]  do it so first thing that we need to do
+[04:20.60]  is we need to make sure that cursor is
+[04:22.28]  open so I'll bring everything down to
+[04:25.24]  one window here and so we should be
+[04:28.56]  connected um um and it's super easy to
+[04:30.92]  get started all you do is you hit new
+[04:32.72]  project on xcode and you're going to
+[04:34.72]  save it to a certain location you're
+[04:36.48]  going to open cursor and you're going to
+[04:38.36]  hit open via file and you're going to
+[04:40.28]  select that same file and then they
+[04:41.88]  should be connected and then you're good
+[04:43.32]  to go it's way quicker to set up than um
+[04:47.40]  a web app and so let's go ahead and open
+[04:50.64]  composer with command shift I and say uh
+[04:54.12]  I want you to create a simple onepage
+[05:00.20]  uh app that um lets
+[05:03.48]  me um write my notes and save them to
+[05:09.60]  the phone to my phone and what's cool
+[05:14.16]  about this is since we're using iOS you
+[05:17.64]  can actually save things to the files
+[05:19.92]  like you have your files thing on your
+[05:21.40]  phone and so you can save things locally
+[05:23.16]  so you don't have to set up Firebase
+[05:24.52]  which takes forever and leads to a lot
+[05:26.36]  of Errors um and I'm just going to hit
+[05:28.20]  codebase
+[05:30.44]  here and let's go ahead and run
+[05:33.56]  this and I honestly think this might
+[05:37.00]  actually be a good place for people to
+[05:38.56]  start instead of starting with a web app
+[05:41.88]  um except for vzer like if you want to
+[05:43.44]  just do front-end design if you want to
+[05:45.44]  actually have a database I think it's a
+[05:47.04]  really good place to start have you
+[05:49.52]  tried this yet Greg building an IOS app
+[05:53.04]  no um I just figured that it would
+[05:57.60]  be okay I
+[06:00.28]  I always thought that building an IOS
+[06:02.48]  app was more time consuming and harder
+[06:05.72]  to do than building a web app am I Am I
+[06:08.08]  Wrong shh don't tell anyone but I've got
+[06:11.44]  30 plus startup ideas that could make
+[06:14.08]  you millions and I'm giving them away
+[06:17.52]  for free these aren't just random
+[06:20.88]  guesses they're validated Concepts from
+[06:24.12]  entrepreneurs who built hundred million
+[06:27.12]  plus businesses I've comp pile them into
+[06:30.76]  one simple
+[06:32.36]  database compiled from hundreds of
+[06:35.36]  conversations I've had on my podcast but
+[06:38.88]  the main thing is most of these ideas
+[06:41.68]  don't need a single investor some cost
+[06:45.16]  nothing to start I'm pretty much handing
+[06:47.92]  you a cheat sheet the idea bank is your
+[06:50.76]  startup
+[06:51.76]  shortcut just click below to get
+[06:55.00]  access your next cash flowing business
+[06:57.92]  is waiting for you um so the the thing
+[07:01.40]  about iOS from what I've learned and
+[07:03.24]  again a lot of this is what I've learned
+[07:04.52]  in the last two weeks from what I can
+[07:06.44]  tell it's very annoying to release apps
+[07:09.84]  on the App Store because Apple has such
+[07:11.92]  a strict um U monitoring policy they
+[07:15.64]  they're making sure that you're not
+[07:17.28]  selling things on because they want that
+[07:19.28]  30% cut and they're they have really
+[07:21.16]  strict content uh regulations so like
+[07:23.92]  they don't want you doing anything so
+[07:25.52]  the it's more time consuming on that
+[07:27.92]  part but if you're just testing it like
+[07:29.92]  I can immediately deploy this to my
+[07:32.08]  phone you have to put your phone on
+[07:33.44]  developer mode but you can like deploy
+[07:35.40]  it on your phone and take it with you
+[07:37.08]  and so like I'll be making little voice
+[07:38.84]  apps and I'll just deploy it straight to
+[07:40.40]  my phone and it lives on your phone for
+[07:42.52]  the max seven days and you can just go
+[07:44.36]  on a walk and you can talk to your phone
+[07:45.88]  and you can use your AI features and I
+[07:48.76]  really like that because you always have
+[07:50.20]  your phone with you and so you can
+[07:51.40]  always test it it's way easier to show
+[07:53.32]  people and it's not super difficult to
+[07:55.40]  create a test flight account and so I
+[07:57.60]  could send you a test flight link and
+[07:59.64]  you could try the app much it's I think
+[08:02.44]  it's just more tangible and fun and it
+[08:04.64]  it's not that timec consuming if you're
+[08:06.16]  not trying to fully deploy it once you
+[08:07.72]  want to fully deploy it then yeah it's
+[08:09.84]  probably more timec
+[08:12.08]  consuming um okay let's see this so
+[08:14.64]  we're going to hit save all and this is
+[08:17.96]  the part that's annoying about xcode so
+[08:20.20]  anytime they add a new file you actually
+[08:22.08]  have to manually go in and you have to
+[08:24.88]  hit file and you have to let's make sure
+[08:28.20]  we're on the right
+[08:29.96]  thing um yeah so file add files to
+[08:34.16]  siod and they
+[08:37.20]  should did it not did it add already
+[08:41.12]  it's been a while since I've done this
+[08:43.32]  uh hold on
+[08:44.96]  hold okay it actually shows note view
+[08:48.24]  here so maybe you don't have to do that
+[08:49.84]  annoying uh step anymore even better um
+[08:54.76]  that's cool normally you have to anytime
+[08:57.32]  cursor creates a new file you have to
+[08:58.92]  like manually save them but it doesn't
+[09:01.36]  look like you have to um okay there you
+[09:04.84]  go see now we have a Notes app um and we
+[09:08.32]  can actually use it like it's a phone
+[09:10.72]  like Hello uh this is my app and we can
+[09:16.24]  we can go back to um we can go to cursor
+[09:20.04]  we can
+[09:20.88]  say um please make the top
+[09:26.80]  say uh sip notes
+[09:30.80]  even better can I can I edit that yeah
+[09:33.24]  yeah yeah absolutely I have a note file
+[09:35.64]  on
+[09:36.68]  my on my phone that's called ideas
+[09:39.92]  startup
+[09:41.16]  ideas so this could kind of just be my
+[09:45.76]  idea yeah and you can add little fields
+[09:48.36]  that you have so like you know like you
+[09:49.96]  can make it your own custom based on
+[09:51.68]  whatever you like and you could just
+[09:52.88]  make it for fun and it's like honestly
+[09:54.80]  as fast as setting up you know like a
+[09:57.04]  notion dock which kind of sucks like as
+[09:59.96]  you I saw in your Tweet recently you're
+[10:02.12]  talking about the feature blow which I
+[10:03.52]  agree with um okay startup ideas make
+[10:06.72]  the top say startup ideas and then um
+[10:10.76]  and then make the button say because
+[10:14.36]  we'll want this button right here to say
+[10:16.68]  um add sip
+[10:20.00]  or no uh add I add idea add
+[10:25.56]  idea uh change the color theme
+[10:31.16]  uh then at code
+[10:33.84]  base and yeah that's pretty fun I don't
+[10:36.44]  know I don't know how far we want to get
+[10:38.12]  into it but this is just to show you
+[10:40.52]  that it's like pretty easy to get oh I
+[10:43.84]  know what I want to show you um all
+[10:45.60]  right so it should be done we hit save
+[10:47.96]  all and then oh yeah every time you make
+[10:50.96]  an update you have to actually rerun it
+[10:52.88]  on xcode so you have to come back make
+[10:54.92]  sure that you have this like simulated
+[10:56.84]  iPhone 16 open right here and you're
+[10:59.00]  just hit this play button and it needs
+[11:02.12]  to succeed if it if it fails it'll say
+[11:05.00]  build failed um
+[11:08.72]  and yeah it'll just kind of it so this
+[11:11.76]  part takes a little bit longer than
+[11:13.40]  using a web app but there you go startup
+[11:16.28]  ideas and then add idea let me make sure
+[11:18.72]  this work like
+[11:20.48]  um selling water it's the theme selling
+[11:23.72]  water balloons at a football game um
+[11:27.24]  like this is the third straight episode
+[11:29.12]  uh idea there you go boom it's right
+[11:31.00]  there you can check it out um super easy
+[11:34.68]  final thing I want to show you um is if
+[11:38.20]  you go
+[11:40.36]  to Riley's iPhone I can
+[11:46.48]  actually oh I haven't set it up to this
+[11:48.84]  account anyway that's how you would do
+[11:50.60]  it you just need to hook it up via your
+[11:52.88]  uh iPhone and you need to put it on
+[11:54.76]  developer mode I haven't done it with
+[11:56.56]  the iOS 18 yet um and I don't think we
+[11:59.32]  need to do it now but yeah you can
+[12:00.40]  immediate it'll immediately load on your
+[12:02.24]  phone which is really fun that's cool
+[12:04.12]  you can go for a walk and you can come
+[12:06.48]  up with startup ideas and store them in
+[12:08.00]  there and it's a great way to get
+[12:10.16]  started it's a great way to get started
+[12:12.00]  and it's a great way to give you that
+[12:12.96]  aha moment yeah for sure because when
+[12:15.60]  you especially if people listening to
+[12:17.68]  this this is probably the first thing or
+[12:19.44]  one of the first things they're building
+[12:20.92]  right so I think it's a big deal you
+[12:23.40]  know it's going to you might look at
+[12:24.76]  this and you're going to be like oh I
+[12:25.76]  don't need this I don't need that app
+[12:27.32]  well actually creating the app is going
+[12:28.96]  to just turn on your brain in a
+[12:30.96]  completely new way yeah 100% agree um
+[12:35.68]  you don't know what you don't know um
+[12:38.08]  and once you start like your problem is
+[12:40.16]  you're going to have too many ideas like
+[12:42.08]  once you you might think you have no
+[12:43.60]  ideas now as soon as you find one idea
+[12:45.68]  to make you're 100% right you're you're
+[12:47.84]  going to be walking around you like oh
+[12:49.04]  sh I want to build this thing and it's
+[12:50.48]  going to get in the way of the other
+[12:51.76]  projects that you actually want to build
+[12:53.60]  um and so it's actually I guarantee it
+[12:55.76]  too like every single person I talk to
+[12:57.68]  has the problem of like two ideas um and
+[13:01.76]  yeah you have to hit the aha moment um
+[13:04.08]  and I think I think it's a good way to
+[13:05.76]  start on your phone because for
+[13:07.56]  something about iPhone apps are more
+[13:09.08]  tangible than websites for whatever
+[13:11.52]  reason um should we talk about vzer yeah
+[13:15.76]  let's do it
+[13:17.00]  cool cool okay and maybe we can explore
+[13:21.00]  an idea that I had earlier today um
+[13:24.92]  you're at the right place startup ideas
+[13:26.84]  podcast you have an idea sounds about
+[13:28.92]  right
+[13:30.24]  hell yeah um can you see my screen yes
+[13:33.68]  sir okay I've talked about VZ on
+[13:36.84]  previous episodes and it's getting it's
+[13:40.00]  getting better so they added a project
+[13:41.80]  feature which um the app that I'm
+[13:45.76]  building is Yap thread Yap thread.com
+[13:47.60]  the uh by the way you can uh sign up for
+[13:50.00]  the wait list plug um anyway uh what you
+[13:53.80]  can do on vzer is you can actually like
+[13:56.20]  put in all the information about like
+[13:58.28]  your company about your app that you're
+[14:00.40]  building so that you don't have to enter
+[14:01.84]  in information over and over again so
+[14:03.64]  like you can just create like create a
+[14:05.84]  landing page for Yap thread uh create a
+[14:10.12]  um what else would you need for it yeah
+[14:12.52]  like um you can basically yeah create a
+[14:15.88]  about us page with Yap thread and it
+[14:17.84]  will always have access to that
+[14:19.16]  information and so it's super easy to
+[14:20.68]  store it in your project so highly
+[14:22.52]  recommend using that um but I want to
+[14:25.48]  create a cursor for writing I was
+[14:29.60]  thinking about that earlier like what if
+[14:31.04]  there was like a cursor that looked like
+[14:32.72]  vs code but it was for writing and so um
+[14:37.08]  imagine you have that idea and say I
+[14:39.24]  want you to create a VSS code but um a
+[14:46.00]  VSS code like app but for
+[14:49.40]  writers um where you have notes on the
+[14:54.04]  left
+[14:55.44]  panel and a
+[14:57.88]  markdown um um
+[15:00.80]  note uh note titles on the left panel
+[15:07.28]  and a markdown editor in the middle
+[15:11.72]  panel and then custom presets on the
+[15:16.80]  right panel where you could use them to
+[15:22.16]  edit the middle
+[15:24.88]  panel so uh so the presets are like
+[15:30.40]  custom AI prompts or something like that
+[15:35.04]  and you just put in your idea and vzer
+[15:37.40]  is quite creative compared to like CLA
+[15:39.28]  artifacts compared to anything else you
+[15:41.92]  can um it comes up with original ideas
+[15:45.48]  which is fun and it's really fast and
+[15:49.12]  sharable so would you recommend being
+[15:52.16]  very prescriptive in the beginning or
+[15:55.20]  letting it kind of come up with its own
+[15:57.44]  idea I would
+[15:59.64]  100% ooh this is actually kind of clean
+[16:03.24]  I kind of dig this actually like legit
+[16:05.88]  like I'm not even this is fire
+[16:09.52]  like this is my note we can make I love
+[16:14.24]  the white um expand scene character
+[16:17.20]  dialogue okay so there's
+[16:19.84]  some chapter one okay so it has the
+[16:22.36]  notes right here o this is actually kind
+[16:24.76]  of sick um what would you would you
+[16:27.64]  change anything about it
+[16:29.76]  well I think uh this is interesting if
+[16:33.92]  you're writing a
+[16:35.12]  book but I think that the real
+[16:38.16]  opportunity here first of all I think
+[16:39.84]  this is a huge idea like this is a
+[16:41.28]  multi-billion dollar you know idea um
+[16:45.00]  but I think that if I was creating this
+[16:47.80]  vs code like interface for writers I
+[16:49.76]  would focus more on internet writers
+[16:51.64]  than book writers sure for sure um this
+[16:55.96]  does it is like chap okay so let's let's
+[16:59.40]  make this
+[17:01.40]  for uh content
+[17:04.48]  creators uh make the
+[17:07.76]  presets
+[17:09.84]  called uh tweet
+[17:12.68]  thread Tik
+[17:14.72]  Tock uh
+[17:17.08]  script
+[17:18.68]  podcast
+[17:20.96]  intro and
+[17:23.12]  outline uh
+[17:25.72]  newsletter and then um
+[17:29.40]  uh
+[17:30.44]  Instagram uh Carousel I do not know how
+[17:33.36]  to spell carousel I never get it right
+[17:34.84]  so I'm just not going to try um and um
+[17:39.00]  the notes should be o uh web clips from
+[17:44.64]  the
+[17:45.52]  internet and then oh no that hold on
+[17:50.04]  let's just try this uh make
+[17:52.84]  it make the the left
+[17:56.88]  titles uh more
+[18:00.36]  um about posts on social media yeah I
+[18:05.84]  think it was just the the things that
+[18:07.60]  they added as placeholders so basically
+[18:11.16]  if you create one of these and I
+[18:13.44]  actually can't go back while it's
+[18:14.52]  loading but you'll see that it it's
+[18:16.56]  adding a lot of these placeholders right
+[18:18.56]  so if we were to actually build this app
+[18:20.44]  what it would do is it would basically
+[18:21.92]  say whatever the user puts in you're
+[18:24.64]  adding it to Firebase which is where
+[18:26.72]  we're storing all of this data um and so
+[18:30.24]  then oh there you go there's your social
+[18:33.44]  icons oh it doesn't have a Tik it
+[18:35.40]  doesn't have a Tik Tok icon in the
+[18:36.84]  library that's all right that's
+[18:39.24]  interesting
+[18:42.48]  um okay yeah there it is uh failed to
+[18:46.00]  load the Tik Tok icon from lose side
+[18:47.52]  react it's probably because it doesn't
+[18:49.04]  exist
+[18:50.10]  [Music]
+[18:51.40]  um this okay so it won't let me type in
+[18:54.00]  there anymore but the point is you're
+[18:56.08]  trying to figure out what each page
+[18:57.56]  should look like and so if we're
+[18:59.56]  actually trying to prototype this app um
+[19:01.92]  and we're not trying to build it and
+[19:03.36]  like this is like the next iteration of
+[19:04.92]  wireframing right because what I'm going
+[19:07.04]  to do here is that you can hit share or
+[19:09.16]  you can hit Fork let's Fork it first
+[19:11.04]  let's say we decide Yep this is our main
+[19:13.16]  page of this cursor writing app and we
+[19:16.64]  are going to Fork it and that allows us
+[19:19.72]  in any of these apps the less context
+[19:22.08]  you have in the better unless it's
+[19:24.32]  relevant and um if you want to iterate
+[19:27.20]  on it I recommend forking because if you
+[19:29.20]  have all of that context in here it's
+[19:30.88]  just going to start performing worse um
+[19:33.16]  but when you Fork it also isolates it so
+[19:35.60]  you can share it so you have these
+[19:37.24]  public links right what we can do is we
+[19:39.80]  can go to um let's just go to Google
+[19:44.36]  Docs and let's just very easily just
+[19:48.64]  like you can just go front page and then
+[19:52.16]  we
+[19:53.00]  just um we can hyperlink that in and so
+[19:56.72]  now our goal would be to get
+[19:59.44]  whatever other page we might want on
+[20:00.96]  this so let's now say from here we say
+[20:05.68]  Okay I want there to be a profile icon
+[20:11.40]  on the bottom right of the
+[20:15.12]  screen uh this should have all the
+[20:19.88]  important
+[20:21.40]  information about or information about
+[20:25.20]  the
+[20:26.92]  user um that a writing tool would have
+[20:34.40]  including um let's just say
+[20:36.76]  audience information so that might
+[20:39.80]  tailor some of the writing styles
+[20:43.48]  um example scripts uh actually we'll
+[20:48.16]  we'll call them let's call
+[20:50.36]  these high
+[20:53.80]  performer scripts because you want
+[20:56.52]  really good examples any really good app
+[20:59.36]  it's not about having being able to do
+[21:01.48]  everything it's about having really good
+[21:03.24]  examples and staying super narrow um
+[21:06.12]  towards those that's just that's kind of
+[21:08.48]  how one of the things that we're taking
+[21:09.96]  in consideration when um we're building
+[21:12.00]  our app is we're you have to have really
+[21:14.24]  good examples and you don't want it to
+[21:16.36]  just let it do its thing because it
+[21:17.64]  sucks at writing in that way um audience
+[21:20.52]  information High performing scripts and
+[21:22.68]  then basic
+[21:23.84]  details and um and then one thing to
+[21:27.32]  always include is keep the theme of the
+[21:31.36]  site it should look like the same style
+[21:36.28]  that'll probably work and then you
+[21:39.00]  can run
+[21:43.20]  that and I really dig the style to be
+[21:45.64]  honest like it's super minimalistic it's
+[21:47.56]  kind of like typewriter Vibes yeah it's
+[21:50.72]  it's very versel if you look at their
+[21:53.00]  company it's very black and white um
+[21:55.64]  whatever I don't know what the font is
+[21:57.36]  called um
+[22:00.36]  but yeah it's very clean this is kind of
+[22:03.84]  their default
+[22:05.12]  style um okay so it's so it's basically
+[22:09.12]  adding the profile button maybe it's
+[22:10.60]  going to be a full screen popup I forgot
+[22:12.28]  to just say to generate like a full
+[22:14.84]  separate page I was actually prompting
+[22:16.44]  it like it was cursor because I was
+[22:18.32]  basically saying put the button on the
+[22:19.60]  main page and create that new page I
+[22:21.44]  forgot that I was actually in vzer um
+[22:24.56]  but it should give us that icon I don't
+[22:27.80]  see it
+[22:29.84]  yet oh was that saying it
+[22:33.88]  failed okay just create the profile page
+[22:39.44]  please um no
+[22:42.36]  need to show the profile
+[22:46.84]  icon I must admit I'm a lot more Angry
+[22:50.96]  to V zero than than you are I feel like
+[22:55.20]  you're so you're you're
+[22:56.84]  polite oh yeah I mean I feel like uh and
+[23:00.76]  trust me right now we're in the
+[23:02.12]  beginning you haven't seen me uh at the
+[23:04.36]  end of uh an error Loop that last
+[23:06.72]  multiple hours okay I have I'm not crazy
+[23:10.40]  I have
+[23:11.76]  definitely behind not not filming I have
+[23:15.52]  sworn relentlessly at cursor before
+[23:18.44]  especially cursor when the um oh it's
+[23:21.40]  kind
+[23:22.52]  of O this looks dope
+[23:26.08]  actually um oh so this this would be
+[23:28.88]  like if it was pulling your data so like
+[23:31.04]  if you you could set that up to your you
+[23:32.88]  YouTube API your podcast statistic apis
+[23:36.48]  which might take a little bit longer um
+[23:38.96]  but yeah you could actually have it
+[23:40.88]  automatically load your high performing
+[23:42.96]  scripts you have your account details
+[23:45.28]  that would be something that you could
+[23:46.24]  automatically set up um but yeah this is
+[23:48.92]  pretty cool so what I'm going to do
+[23:50.64]  again is Fork this profile page and then
+[23:54.32]  quick ad break let me tell you about a
+[23:56.52]  business I invested in it's called
+[23:58.44]  boring marketing.com so a few years ago
+[24:01.84]  I met this group of people that were
+[24:04.00]  some of the best SEO experts in the
+[24:06.64]  world they were behind getting some of
+[24:09.36]  the biggest companies found on Google
+[24:11.92]  and the secret sauce is they've got a
+[24:13.92]  set of technology and AI that could help
+[24:17.40]  you outrank your competition so for my
+[24:20.24]  own businesses I wanted that I didn't
+[24:22.60]  want to have to rely on Mark Zuckerberg
+[24:24.36]  I didn't want to depend on ads to drive
+[24:27.04]  customers to my businesses is I wanted
+[24:29.12]  to rank high in Google that's why I like
+[24:31.52]  SEO and that's why I use boring
+[24:33.76]  marketing.com and that's why I invested
+[24:36.16]  in it they're so confident in their
+[24:37.96]  approach that they offer a 30-day Sprint
+[24:40.08]  with 100% money back guarantee who does
+[24:43.20]  that nowadays so check it out highly
+[24:45.24]  recommend boring marketing.com
+[24:47.96]  um this is basically what I sent my team
+[24:50.80]  before we started building is I just had
+[24:53.92]  all of these pages in in links so you
+[24:57.44]  just have the profile page um you have
+[25:00.16]  the um yeah profile page and then you
+[25:04.80]  can link it there so you can always find
+[25:06.72]  it if you want to use something like
+[25:08.60]  Whimsical diagrams you can basically
+[25:10.72]  show what button will lead to that page
+[25:14.20]  and it's super useful um and then yeah
+[25:18.48]  cursor for
+[25:24.04]  writing and yeah now we have two pages
+[25:27.64]  what do you what do you think we should
+[25:28.92]  do
+[25:32.28]  next first of all I love this page I I
+[25:35.28]  love how simple it
+[25:38.08]  is I love how gamified it is like it it
+[25:42.84]  now feels like this is like a game
+[25:44.44]  almost like I would use this like one
+[25:46.92]  you know one of the reasons why I think
+[25:48.72]  people got addicted to platforms social
+[25:51.68]  platforms like Snapchat Snapchat streaks
+[25:54.96]  it's like you know you came back to
+[25:56.76]  Snapchat because you didn't want you
+[25:58.68]  know to lose your streak with someone so
+[26:01.16]  I think like a gamified writing tool is
+[26:04.72]  really interesting yeah yeah yeah so
+[26:07.24]  like maybe it scores everything that you
+[26:11.12]  post maybe or something like that or
+[26:14.52]  because a lot of what people are writing
+[26:16.28]  now end up becoming videos so that's
+[26:17.96]  actually that is a tougher problem that
+[26:20.04]  we're actually trying to solve is like
+[26:22.28]  how do we connect that original piece of
+[26:24.24]  writing to the video content that you've
+[26:26.28]  created because a lot of
+[26:29.68]  a lot of
+[26:31.36]  video in order to create an AI tool that
+[26:34.04]  helps with video you need to have
+[26:36.48]  sufficient input output so you need to
+[26:38.96]  not only know the video but you need to
+[26:40.36]  know what script or what outline you
+[26:42.28]  used and then it's useful to know what
+[26:44.36]  research went into the outline and so if
+[26:46.56]  you can map the whole process um you can
+[26:49.88]  then reverse engineer it so you can
+[26:51.88]  basically take someone else's video you
+[26:53.68]  can be like I want to create a video
+[26:54.88]  like this and then it says like okay you
+[26:56.84]  want to create a script like this and
+[26:58.64]  then you want to be able to find these
+[27:01.44]  types of sources U and so that's the way
+[27:04.60]  that we're trying to approach this
+[27:06.00]  problem um but yeah so that's v0 and v0
+[27:11.48]  is just front end so I'm not able to
+[27:14.84]  they actually are adding certain apis
+[27:17.44]  that you can use to fill data in as just
+[27:19.88]  placeholders so you don't have to look
+[27:21.36]  at like um like one thing we could do is
+[27:24.60]  say we could say let's go back to this
+[27:27.48]  real quick and what I've been doing for
+[27:29.52]  with VZ recently is using it to make
+[27:31.56]  landing pages so that's been really fun
+[27:34.96]  and I think the best use case for vzer
+[27:37.36]  is say um okay for this site
+[27:42.12]  create a landing
+[27:45.44]  page that is
+[27:49.00]  highly um effective to get people to
+[27:54.00]  sign up based on the value
+[27:58.88]  prop or
+[28:00.80]  this
+[28:02.52]  site
+[28:04.20]  um the
+[28:07.28]  ultimate or we can just call it
+[28:10.60]  cursor um Creator
+[28:14.88]  composer uh name of site
+[28:18.36]  okay and
+[28:21.00]  yeah have you ever used
+[28:24.80]  tally
+[28:26.52]  um the talking about like the form
+[28:29.36]  company
+[28:30.72]  yeah yeah so if you want to create a
+[28:33.16]  really really fast landing page and
+[28:35.20]  collect like user um like if you created
+[28:38.76]  a weight list like I created one
+[28:40.08]  yesterday in 10 minutes and just threw
+[28:42.08]  it up and I was able like I literally
+[28:45.08]  said use this logo that I generated on
+[28:47.44]  Mid journey in one minute use this logo
+[28:49.96]  and then embed this form and I just
+[28:51.88]  pasted in the tally embed form and
+[28:54.36]  literally one prompt it generated my
+[28:58.12]  landing page and now like people are
+[29:00.80]  signing up on the wait list and it's
+[29:02.24]  just going to tally so we have that
+[29:03.88]  information so if you have to do it
+[29:05.28]  really quick that's a really good way to
+[29:06.88]  do
+[29:07.80]  it and it's and it's free what because I
+[29:11.60]  I know I pay like hundreds of dollars a
+[29:13.60]  month on type form for all the different
+[29:15.88]  ideas that we're running yeah well
+[29:18.20]  Tally's only 30 bucks a month if you
+[29:20.24]  don't want any of their branding like um
+[29:24.00]  yeah like this is one prompt on vzer
+[29:26.56]  right here and if you just click on sign
+[29:28.68]  up for wait list um it just one prompt
+[29:33.04]  like I created this basically it's crazy
+[29:36.16]  yeah and it's super easy to get go from
+[29:39.12]  this it's a lot easier with one page to
+[29:41.68]  go from this to get it over to repet you
+[29:43.92]  basically just give it all of the code
+[29:46.24]  you can
+[29:47.68]  also
+[29:50.32]  um I mean this is basically the whole
+[29:52.64]  landing page I mean look at this landing
+[29:54.00]  page let's let's use your um I guess the
+[29:57.68]  the Bor in marketing analytics here um
+[30:01.80]  like compose your content orchestrate
+[30:03.92]  your success I you could probably work
+[30:06.40]  on that but like that's a clean landing
+[30:08.48]  page it's clean it's clean and I think
+[30:11.76]  what's so cool about this is you can
+[30:14.48]  come up with an idea you can prototype
+[30:17.08]  something you can put it out there and
+[30:19.68]  start getting
+[30:21.04]  feedback in minutes yeah I mean think
+[30:24.36]  about how long we've been sitting here I
+[30:26.68]  mean like look at this public link boom
+[30:29.60]  look at this we
+[30:31.68]  have now we have a landing page and so
+[30:35.80]  if you send this to a developer they're
+[30:38.96]  like oh like he has the whole site
+[30:40.68]  mapped out all they have to do basically
+[30:42.64]  is connect things with the backend
+[30:44.80]  obviously there might be some code that
+[30:46.24]  might be a little messy but like their
+[30:47.84]  job is mostly just the vision is very
+[30:51.04]  clear um maybe not with something like
+[30:53.44]  with cursor for writing is actually a
+[30:55.80]  pretty that is a tall task that's a
+[30:58.28]  multi-week project no matter what but
+[31:01.40]  they have a better idea of what you're
+[31:02.64]  talking about um which is really cool um
+[31:07.16]  yeah I mean that's vzero what what else
+[31:09.52]  what else should we should we dive into
+[31:12.12]  I think that's it I think that's the
+[31:13.28]  episode I like it hell yeah let's do it
+[31:16.52]  yeah so if you're listening to this
+[31:19.28]  you've got
+[31:20.44]  ideas don't just be an idea guy or gal
+[31:24.92]  like be a prototype guy or gal
+[31:28.60]  you know um put your stuff out there uh
+[31:32.24]  I've never used tally but I've seen
+[31:33.52]  people use it like get your tallying I
+[31:35.12]  think like voice of customer feedback is
+[31:37.36]  so helpful um and you might realize by
+[31:41.28]  putting out this prototype that hey
+[31:43.16]  turns out people don't want this product
+[31:45.00]  and that's that's great
+[31:47.48]  too it is the best Loop and you said
+[31:50.44]  that like you had a tweet that I
+[31:52.04]  referenced in a YouTube video uh that I
+[31:54.00]  released this morning which was like the
+[31:55.76]  most dangerous person or um something
+[31:58.44]  about the I call them the Creator
+[32:00.44]  composer someone who can build things
+[32:03.40]  with a community and asks them if they
+[32:05.92]  like it or ask them if they don't like
+[32:07.36]  it or ask them what they want and you
+[32:08.84]  just have this like really fast feedback
+[32:10.72]  loop because yes you can as a Creator I
+[32:12.96]  can Outsource someone to build apps for
+[32:14.80]  me but the loop is so slow I'm talking
+[32:17.72]  to other creators who do that and it's
+[32:19.04]  like multiple months before basic
+[32:20.68]  features are created features that I
+[32:22.80]  have literally released to my community
+[32:24.88]  the same day I have the idea and so it's
+[32:28.12]  a it's a huge unlock in my opinion and I
+[32:30.88]  agree that it's they're the most
+[32:32.08]  dangerous people you want to be
+[32:34.00]  dangerous yeah Do It um if you like this
+[32:38.16]  episode please
+[32:40.56]  like And subscribe and then Riley and I
+[32:43.20]  will be in the comment section if you
+[32:44.56]  have any additional questions or want to
+[32:47.24]  just talk more about the stuff and nerd
+[32:48.64]  out about it love to see you in there
+[32:51.04]  and Riley where could people learn more
+[32:52.96]  about you and some of the stuff that
+[32:54.36]  you're working on yeah Yap thread.com
+[32:57.88]  uh releasing an app that's all I've been
+[32:59.60]  doing in for the last two weeks so it's
+[33:01.12]  nice to get a little content break in
+[33:02.72]  this was a lot of fun um yeah that's
+[33:05.52]  what I'm working on and he's doing it in
+[33:07.88]  public which is cool you know like this
+[33:09.60]  is a guy who like you said he wasn't
+[33:11.96]  wasn't a developer he's got a small team
+[33:15.20]  and uh one thing one one one thing
+[33:17.64]  before I go is we're actually G to have
+[33:19.72]  feature contests so we're going to
+[33:21.20]  release the code for the app and we're
+[33:22.76]  going to see who can like Fork the code
+[33:24.96]  and add the coolest feature to the app
+[33:28.00]  um and it's going to be really fun I'm
+[33:30.80]  super excited about that yeah we're just
+[33:32.72]  going to do it um if someone copies us
+[33:35.24]  whatever whatever yeah cool all right my
+[33:39.16]  man I'll catch you later yep peace peace
+[33:43.82]  [Music]

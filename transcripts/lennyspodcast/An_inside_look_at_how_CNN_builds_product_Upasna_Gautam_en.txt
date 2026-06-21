@@ -1,0 +1,1474 @@
+Title     : An inside look at how CNN builds product | Upasna Gautam
+Video ID  : gRiCzfFEd7c
+URL       : https://www.youtube.com/watch?v=gRiCzfFEd7c
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1465
+Saved at  : 2026-06-21 01:42:02
+------------------------------------------------------------
+
+[00:00.00]  happened all the time right that is the
+[00:03.12]  nature of breaking news I mean you have
+[00:05.52]  to be ready to Pivot at you know the
+[00:08.82]  drop of a hat I had a big working
+[00:10.56]  session plan with my users to do
+[00:12.72]  research with them or do user testing
+[00:14.52]  and breaking news breaks and it takes so
+[00:18.00]  much time and effort to gather a team of
+[00:20.64]  editors across the globe to do a user
+[00:22.80]  testing session and when breaking news
+[00:24.78]  happens they have to prioritize that
+[00:27.00]  over everything right so like what do
+[00:28.92]  you do in that situation you can be
+[00:31.20]  frustrated absolutely it's frustrating
+[00:33.30]  but you always have to have the ability
+[00:36.72]  to a pivot of course but also have
+[00:39.42]  backup and you know buffers in those
+[00:42.06]  types of scenarios
+[00:44.70]  welcome to Lenny's podcast where I
+[00:47.52]  interview world-class product leaders
+[00:49.02]  and growth experts to learn from their
+[00:50.46]  hard-won experiences building and
+[00:52.20]  growing today's most successful products
+[00:54.06]  today my guest is upasnagowtham upasna
+[00:57.36]  is a product manager at CNN where she
+[00:59.46]  leads the team responsible for the
+[01:01.14]  content management system that
+[01:02.64]  journalists use to write and publish
+[01:04.38]  their stories she's also on the front
+[01:06.18]  lines of elevating the discipline of
+[01:07.98]  product management within newsrooms
+[01:09.60]  through her work at the news product
+[01:11.28]  Alliance she's also a long time
+[01:13.20]  meditation and mindfulness teacher which
+[01:15.54]  as we discuss ends up being pretty damn
+[01:17.64]  handy working at a place like CNN we dig
+[01:20.88]  into how the product team operates
+[01:22.14]  within CNN how they collaborate with
+[01:24.06]  journalists for breaking news dress
+[01:25.92]  rehearsals and also some simple tricks
+[01:28.08]  to build your own mindfulness in your
+[01:29.88]  day-to-day work as a PM enjoy this
+[01:32.34]  episode with rupasana Gotham after a
+[01:34.62]  short word from our wonderful sponsors
+[01:37.80]  this episode is brought to you by
+[01:39.96]  amplitude if you're setting up your
+[01:41.82]  analytics stack but not using amplitude
+[01:43.74]  what are you doing anyone can sell you
+[01:46.38]  analytics while amplitude unlocks the
+[01:48.54]  power of your product and guides you
+[01:50.22]  every step of the way get the right data
+[01:52.68]  ask the right questions get the right
+[01:54.66]  answers and make growth happen to get
+[01:57.66]  started with amplitude for free visit
+[01:59.76]  amplitude.com amplitude power to your
+[02:03.06]  products
+[02:05.04]  today's episode is brought to you by one
+[02:07.38]  schema the embeddable CSV importer for
+[02:09.66]  SAS customers always seem to want to
+[02:11.82]  give you their data in the messiest
+[02:13.26]  possible CSV file in building a
+[02:15.54]  spreadsheet importer becomes a
+[02:16.68]  never-ending sync for your engineering
+[02:18.18]  and support resources we keep adding
+[02:20.28]  features to your spreadsheet importer
+[02:21.72]  the customers keep running into issues
+[02:23.64]  six months later you're fixing yet
+[02:25.26]  another date conversion Edge case bug
+[02:27.00]  most tools aren't built for handling
+[02:28.86]  messy data but once schema is companies
+[02:31.74]  like scale Ai and pave are using one
+[02:34.32]  schema to make it fast and easy to
+[02:36.24]  launch delightful spreadsheet import
+[02:37.68]  experiences from embeddable CSV import
+[02:40.26]  to importing csvs from an SFTP folder on
+[02:43.26]  a recurring basis spreadsheet import is
+[02:45.78]  such an awful experience in so many
+[02:47.52]  products customers get frustrated by
+[02:49.74]  useless messages like error on line 53
+[02:52.68]  and never end up getting started with
+[02:54.42]  your product one schema intelligently
+[02:56.46]  corrects messy data so that your
+[02:57.90]  customers don't have to spend hours in
+[02:59.40]  Excel just to get started with your
+[03:01.38]  product for listeners of this podcast
+[03:03.24]  one schema is offering a one thousand
+[03:05.34]  dollar discount learn more at
+[03:07.44]  oneschema.com
+[03:13.52]  welcome to the podcast
+[03:15.72]  thank you lady I'm so excited to be here
+[03:18.18]  as you probably know on this kind of
+[03:20.16]  quest to understand how different
+[03:22.08]  companies build product especially
+[03:24.30]  companies that are kind of outside the
+[03:25.62]  Silicon Valley just like standard Tech
+[03:27.96]  scene and I've always wondered what it
+[03:30.06]  was like to build product at a company
+[03:31.20]  like CNN which is like very different
+[03:33.24]  from where most I don't know Tech PMS
+[03:35.88]  work and so I'm really excited to have
+[03:38.04]  you on and to give us a little glimpse
+[03:39.48]  into what it's like build product at CNN
+[03:42.00]  awesome I'm very excited to share as
+[03:44.16]  well so I was doing a little research on
+[03:46.20]  you before this chat and I noticed that
+[03:48.42]  you've been teaching and studying
+[03:50.64]  meditation and mindfulness for I don't
+[03:52.44]  know maybe a decade and I imagine that
+[03:54.78]  comes in handy at a company like CNN
+[03:57.12]  which also I imagine is like quite
+[03:59.16]  hectic at times with breaking news all
+[04:01.02]  the time and so here's my question what
+[04:04.08]  have you learned or brought from that
+[04:06.84]  practice to your ability to lead an
+[04:10.08]  ability to just like keep your team calm
+[04:12.54]  and focused during imagine many hectic
+[04:14.82]  moments
+[04:16.08]  I love that question and working in
+[04:19.38]  product in news is a very Beast we hear
+[04:23.22]  a lot about having the skills to thrive
+[04:25.98]  in ambiguity in order to be a successful
+[04:28.56]  product manager but to be a successful
+[04:30.96]  product manager in news you have to be
+[04:33.36]  able to thrive in chaos and Equanimity
+[04:36.42]  is the most important skill I've
+[04:38.82]  developed I think across my entire life
+[04:41.34]  and it's due to all of those years of
+[04:43.68]  practicing uh mindfulness and meditation
+[04:45.92]  and Equanimity is one of my favorite
+[04:48.96]  words it means mental calmness composure
+[04:52.34]  evenness of temper especially in Crazy
+[04:55.98]  stressful situations it's you know the
+[04:58.86]  ability to remain unrattled in like the
+[05:01.08]  highest of highs and the lowest of lows
+[05:03.06]  and if you think about it in the dynamic
+[05:05.94]  of a workplace or human interaction it's
+[05:08.82]  really the ability to pause before
+[05:10.86]  reacting and reactivity is the root
+[05:14.64]  cause of so many of our workplace woes
+[05:17.40]  and product management frustrations and
+[05:19.56]  when you're able to pause before
+[05:21.12]  reacting you can start to undo and break
+[05:24.06]  a lot of those negative patterns in your
+[05:26.16]  brain and in news and especially the
+[05:28.74]  world's biggest breaking news
+[05:29.76]  organization you can cut through that
+[05:32.82]  chaos with Equanimity because it also
+[05:35.94]  really gives you this outsized advantage
+[05:38.28]  in everything from stakeholder
+[05:40.50]  management team morale to the way you're
+[05:43.50]  able to translate user feedback to
+[05:45.96]  product development velocity and the
+[05:48.42]  thing is is you're always going to hear
+[05:51.06]  things and feedback that you don't like
+[05:53.82]  and opinions that you don't like and
+[05:55.74]  you're gonna get frustrated that's
+[05:57.42]  product management that's light but real
+[06:00.36]  power to me comes from Equanimity and
+[06:03.84]  that comes from managing your emotional
+[06:06.12]  reactions and not trying to control
+[06:07.86]  others so I think when you're able to
+[06:11.22]  cultivate that level of self-awareness
+[06:13.14]  for yourself you're able to chart a
+[06:15.48]  clear path forward for your team and
+[06:18.24]  like serve as a compass in the chaos
+[06:21.84]  is there a story or example that comes
+[06:24.24]  to mind where things were just like oh
+[06:26.46]   and you were able to tap into that
+[06:29.16]  skill that you built to stay calm and
+[06:31.08]  focused or even just like help your team
+[06:32.70]  stay focused I mean it happened all the
+[06:36.18]  time right that is the nature of
+[06:37.92]  breaking news I mean you have to be
+[06:40.26]  ready to Pivot at you know the drop of a
+[06:43.80]  hat and so I think more than just like
+[06:47.94]  the big
+[06:49.50]  chaotic moment in those daily
+[06:52.02]  interactions when there's chaos I think
+[06:55.02]  that's when it really shows its power
+[06:57.42]  and helps me navigate those day-to-day
+[07:00.12]  interactions when I had a big working
+[07:02.28]  session plan with my users to do
+[07:04.44]  research with them or do user testing
+[07:06.30]  and breaking news breaks and it takes so
+[07:09.72]  much time and effort to gather a team of
+[07:12.42]  editors across the globe to do a user
+[07:14.58]  testing session and when breaking news
+[07:16.56]  happens they have to prioritize that
+[07:18.72]  over everything right so like what do
+[07:20.70]  you do in that situation you can be
+[07:22.92]  frustrated absolutely it's frustrating
+[07:25.02]  but you always have to have the ability
+[07:28.44]  to a pivot of course but also have
+[07:31.14]  backup and buffers in those types of
+[07:33.90]  scenarios so anytime we're planning we
+[07:36.36]  build in offers for all of that chaos
+[07:39.48]  that's happening on a daily basis wow
+[07:41.94]  that's cool is that a real thing that
+[07:43.14]  happened you were like in a big meeting
+[07:44.22]  with all the researchers and then
+[07:45.48]  something went went off the rails in the
+[07:47.46]  world oh yeah absolutely happens all the
+[07:49.20]  time I don't know how much you can go
+[07:50.64]  into all this but what is it that you
+[07:51.78]  would do in that case like as a product
+[07:53.16]  team what are they looking for you to do
+[07:55.14]  at that moment for us it's not really
+[07:57.60]  anything we have to do it is more so
+[08:00.36]  okay well our goal of this session was
+[08:02.34]  to get
+[08:03.60]  user testing done or user feedback from
+[08:06.72]  that user testing session with our
+[08:08.22]  editors and so what do we do okay well
+[08:10.80]  good thing we had a backup plan right we
+[08:13.44]  don't actually have to go into that
+[08:15.00]  scenario but since our editors and our
+[08:18.30]  journalists our customers we're there to
+[08:21.12]  serve their needs but they are not here
+[08:23.28]  to serve our needs they have a whole
+[08:25.44]  nother job that they have to do and so
+[08:27.90]  we have to have the ability to adapt and
+[08:31.08]  accommodate to those really chaotic
+[08:33.60]  schedules across Global time zones and
+[08:36.00]  so that happens again like it's not it's
+[08:39.24]  not like once in a while it's a very
+[08:41.22]  regular thing that we have to be aware
+[08:43.56]  of and also account for okay okay I get
+[08:46.86]  it's the like this journalist or the
+[08:48.54]  ones in the meeting they're like oh they
+[08:49.56]  have to go right about the stuff and
+[08:50.70]  cover totally I see that makes sense you
+[08:53.16]  said that you built in some buffer time
+[08:54.66]  for to kind of account for these things
+[08:56.16]  they're like a systematic way of doing
+[08:57.66]  that or is it just broadly let's add
+[08:58.98]  buffer time is there like a rule of
+[09:00.30]  thumb you you think about there
+[09:02.22]  it depends on the scope of the work
+[09:05.76]  we're doing at that time so one of my
+[09:08.88]  main responsibilities is to rebuild our
+[09:11.82]  content management system which also
+[09:13.44]  involves onboarding our editors and
+[09:15.66]  journalists to it off of our Legacy
+[09:17.52]  platform and onto our new one so when
+[09:19.74]  we're thinking about onboarding
+[09:21.42]  especially the teams our own boarding
+[09:24.36]  Cycles very long it involves training
+[09:26.58]  testing lots of dialogue and feedback
+[09:29.58]  and then only do we actually test and
+[09:31.92]  then we onboard and so it is a long
+[09:34.68]  cycle and it's longer than it maybe
+[09:37.50]  seems like it needs to be because we
+[09:39.42]  have to build in those buffers sometimes
+[09:41.58]  that buffer is a day or two and
+[09:43.80]  sometimes it's a week or a month and
+[09:46.62]  sometimes when we think we need a buffer
+[09:49.20]  we get it done in a day and we quickly
+[09:51.96]  move on to the next phase and so I think
+[09:54.84]  that quick decision making in those
+[09:57.30]  times is super important because you
+[10:00.18]  have to be able to assess the situation
+[10:01.62]  as it and and so I think mindfulness is
+[10:04.32]  so important too in practices like this
+[10:06.24]  because being able to objectively see
+[10:08.58]  the scenario for what it is make a quick
+[10:10.44]  decision and move on to the next phase
+[10:12.42]  is is something we have to analyze every
+[10:15.42]  single day
+[10:16.50]  it makes you think a little bit about a
+[10:18.36]  lot of CEOs are very uh busy and pulled
+[10:21.78]  into a lot of things and so you have to
+[10:23.16]  kind of account for their schedule and
+[10:25.08]  it sounds like you have many many people
+[10:27.36]  that you work with that have crazy
+[10:28.98]  schedules yes I wanted to dig a little
+[10:31.32]  bit deeper into how you or team worked
+[10:34.44]  with the news team it's such a unique
+[10:36.54]  way of working most product teams don't
+[10:38.76]  have a whole set of journalists that
+[10:40.14]  they have to work with and as
+[10:41.76]  stakeholders so I'm curious to
+[10:44.10]  specifically say a journalist has like
+[10:45.78]  hey I'd love to build a special
+[10:47.94]  immersive experience for this story or I
+[10:50.64]  need some special feature to help
+[10:52.56]  support this work that I'm doing how
+[10:54.00]  does that work did they come to you like
+[10:55.80]  hey here's a road map maybe in the court
+[10:57.96]  or any good thing imagine it's like I
+[10:59.88]  need this next week how do you how do
+[11:01.80]  you work with the journalist team
+[11:02.58]  basically on product
+[11:03.96]  Yep this is pretty much the foundation
+[11:06.24]  of all of my work we talked to our
+[11:08.88]  editorial staff every single day and
+[11:12.36]  after a lot of observation and learning
+[11:15.18]  I implemented a system to manage that
+[11:17.58]  kind of intake with four different touch
+[11:20.16]  points or events so we have weekly demo
+[11:23.94]  days working sessions breaking news
+[11:26.34]  dress rehearsals and office hours so
+[11:29.10]  with weekly demo days I facilitate those
+[11:31.38]  with my product design lead and my tech
+[11:33.00]  lead and we use that as an open Forum
+[11:35.82]  communication to Deep dive into features
+[11:39.00]  that exist on our platform also to
+[11:41.52]  preview or give a sneak peek of new
+[11:43.38]  features to come and kind of recreate
+[11:47.28]  their workflows and do a show and tell
+[11:49.26]  again we wanted to open that up as a
+[11:51.78]  forum to not just our editorial Partners
+[11:54.66]  but also anyone across the business who
+[11:56.70]  is interested in learning about the
+[11:58.98]  product and which is our platform and it
+[12:01.14]  was also a great way to kind of
+[12:02.64]  evangelize the product too 2 coming off
+[12:04.86]  of a legacy system after several years
+[12:07.20]  onto a brand new one is a big change at
+[12:10.44]  a place like CNN and so we definitely
+[12:13.92]  try to make sure that you know smart
+[12:17.76]  repetition in different ways is top
+[12:20.88]  priority so weekly demo days is one
+[12:23.28]  working sessions are interesting I
+[12:26.76]  use the term working session because
+[12:28.80]  it's a combination of several things
+[12:30.66]  this is a really critical part of our
+[12:33.00]  onboarding process Where We Gather
+[12:35.52]  breakout groups of our journalists and
+[12:38.40]  editors to work with us to recreate
+[12:40.62]  their workflows in the new platform this
+[12:43.38]  allows us to you know address any
+[12:45.42]  friction or issues of course that are
+[12:47.88]  occurring in their workflows but also
+[12:50.40]  we're able to gather a lot of awesome
+[12:52.26]  feedback from them in those sessions so
+[12:54.60]  we used to call them user testing
+[12:56.64]  sessions but decided to move away from
+[12:58.62]  that and just call them working sessions
+[13:00.30]  so they're more collaborative and again
+[13:02.58]  it's a really critical part of our
+[13:04.14]  onboarding process we usually do three
+[13:07.32]  to six of them depending on the size of
+[13:09.48]  the group before the team is actually
+[13:11.28]  onboarded for two hours per session so
+[13:14.28]  they're like deep dives into their
+[13:17.10]  specific workflows so as you can imagine
+[13:19.56]  the way the politics team programs
+[13:22.38]  content is wildly different than the way
+[13:24.66]  the entertainment team does or the way
+[13:26.58]  that at the um the health team does and
+[13:30.42]  the very different than the way that the
+[13:32.04]  CNN home page even even interacts so all
+[13:35.22]  of those are separate teams we have to
+[13:36.84]  work with when it comes to getting
+[13:39.24]  feedback so in addition to that we also
+[13:42.42]  do I mentioned breaking news stress
+[13:44.04]  rehearsals and you can imagine this is
+[13:45.90]  exactly what it sounds like we create a
+[13:48.54]  script and do a simulation of a breaking
+[13:51.06]  news scenario to stress test our
+[13:52.86]  platform because all breaking news
+[13:54.84]  scenarios are definitely not the same
+[13:56.76]  either so this gives us a lot of great
+[13:59.46]  feedback in that short amount of time at
+[14:02.52]  the speed of breaking news and then last
+[14:05.16]  but not least we have office hours which
+[14:07.62]  I just started last year and that's also
+[14:10.38]  probably what you can imagine open
+[14:11.76]  blocks of time where me and my product
+[14:13.56]  design partner and my tech lead are this
+[14:15.84]  there to answer questions help people
+[14:18.00]  troubleshoot any friction they might be
+[14:20.76]  experiencing in their workflow get their
+[14:23.16]  feedback we just wanted to open up
+[14:25.14]  another line of communication so we do
+[14:27.12]  those right now once a week sometimes
+[14:29.40]  they go up to two times a week if we're
+[14:31.20]  in a really rigorous onboarding phase
+[14:33.00]  after those conversation then uh
+[14:37.14]  sessions and events happen you know it's
+[14:39.48]  our job to translate their needs into
+[14:41.52]  the functions that we a either maybe
+[14:44.94]  already have that we can optimize B we
+[14:48.84]  build a new or we tell them it's not
+[14:51.78]  viable and the good thing is is that
+[14:54.42]  because they've been along for the ride
+[14:56.34]  with us throughout the product Discovery
+[14:58.56]  process we've earned their trust and
+[15:01.38]  respect so that when we tell them
+[15:03.90]  something like it's not viable they
+[15:06.06]  usually get it man there's so many
+[15:08.04]  questions about just working with
+[15:09.06]  journalists I feel like pushing back on
+[15:10.62]  the journalists probably extra hard
+[15:12.24]  versus other type of stakeholders it is
+[15:14.76]  can we zoom out a little bit and you
+[15:17.28]  talked about what you work on at CNN
+[15:19.20]  which is the content management system
+[15:20.88]  and things around that can you just talk
+[15:23.22]  about whatever you can share just like
+[15:24.42]  what does the product team look like at
+[15:26.58]  CNN how many PMS are there how's like a
+[15:28.92]  product or structured and where where do
+[15:30.60]  you fit in there yes so I mentioned
+[15:33.18]  earlier my team sits on CNN digital and
+[15:36.12]  I think when most people think of CNN of
+[15:38.40]  course you think of TV and linear
+[15:40.32]  programming I have nothing to do with
+[15:42.30]  that I'm CNN digital is digital and it's
+[15:45.36]  made up of several teams that are
+[15:47.46]  structured around a lot of different
+[15:50.22]  product areas it includes everything
+[15:52.74]  from the content management platforms
+[15:54.78]  that I work on to data infrastructure to
+[15:57.96]  personalization to video experience
+[16:00.66]  which includes like the products of
+[16:03.12]  video editor and the video player to
+[16:06.42]  podcasts there's a lot so each of those
+[16:09.60]  are product teams and so we also split
+[16:12.78]  out you know the way CNN is split out
+[16:15.12]  into CNN digital is because there's a
+[16:17.52]  separate core content platform that
+[16:19.26]  power is broadcast and linear TV and the
+[16:21.96]  one that I work on Powers CNN digital so
+[16:25.28]  on my team the core platform team are
+[16:28.44]  stakeholders and our customers are like
+[16:30.78]  I mentioned our journalists and our
+[16:32.16]  editors which presents a really unique
+[16:34.44]  Dynamic and it's one that I love we have
+[16:36.90]  direct access to our customers at all
+[16:39.78]  times of day for Better or For Worse and
+[16:42.54]  they're embedded into our product
+[16:44.10]  development process and each of those
+[16:47.64]  teams under CNN digital is kind of like
+[16:51.78]  a squad very similar to how it is at
+[16:54.66]  other larger tech companies we have PMS
+[16:57.90]  we have Engineers designers and delivery
+[17:00.12]  managers embedded in those Squad and
+[17:03.06]  since my team is a core platform team
+[17:06.18]  our main responsibility is to a build
+[17:09.66]  our newer faster more flexible content
+[17:12.48]  management platform to replace our
+[17:14.22]  Legacy one and be on board our entire
+[17:17.52]  editorial staff to it and so even more
+[17:21.12]  specifically my role is focus us on
+[17:22.86]  rebuilding the tooling and the editorial
+[17:24.84]  experience of that platform as well as
+[17:27.84]  doing the actual onboarding of our
+[17:29.82]  journalists so we were
+[17:31.82]  cross-functionally because our team kind
+[17:34.50]  of is the umbrella over a lot of
+[17:37.08]  different teams so we truly work
+[17:38.94]  cross-functionally to make sure that you
+[17:41.70]  know we're serving our journalists with
+[17:43.50]  the tools that they need to do their job
+[17:46.08]  in the most efficient way possible
+[17:48.60]  what would surprise people most about
+[17:51.30]  how product is built at CNN I think the
+[17:55.14]  most surprising thing may actually be
+[17:57.54]  that there's just so many different
+[17:59.76]  types of products that we build like I
+[18:02.10]  said I I think when most people think of
+[18:04.08]  CNN you see TV and you think of Anderson
+[18:06.84]  Cooper and all of the things that are
+[18:09.30]  very publicly you know visible there is
+[18:12.62]  most of our product work and product
+[18:16.40]  teams all sit behind the scenes and so I
+[18:21.12]  think just that in itself like the sheer
+[18:23.34]  size of that is is surprising to a lot
+[18:26.04]  of people so I mentioned like all of the
+[18:28.44]  different teams right product teams that
+[18:30.30]  are based off of function content
+[18:32.10]  management platforms infrastructure
+[18:34.02]  personalization video podcasts linear TV
+[18:37.94]  and I think that in itself the like the
+[18:41.64]  sheer size of it like we're we're not
+[18:43.56]  the size of Google by any means but at
+[18:46.02]  the same time we have the expertise and
+[18:49.14]  the depth and brat of a lot of those
+[18:51.06]  larger companies I'm curious about the
+[18:53.88]  day-to-day operational work of how you
+[18:56.46]  build product at CNN so a first question
+[18:58.98]  here is just these like okrs you know
+[19:01.62]  who cares with like key objectives and
+[19:03.06]  outcomes and 70 of a goal of success
+[19:05.52]  yeah absolutely we do we've used okrs
+[19:08.58]  for a long time and they've served as an
+[19:10.32]  anchor for my team over the last three
+[19:12.90]  years I kind of already I can't go into
+[19:15.78]  specifics on like what are okrs are but
+[19:18.24]  I did kind of cover the two main parts
+[19:21.00]  of it which is you know rebuilding or
+[19:22.92]  content management form and onboarding
+[19:24.84]  our users to it so again it's a long
+[19:27.66]  game at CNM when you're working on on a
+[19:30.96]  core platform to replace a legacy one
+[19:33.30]  and so we break those okrs down of
+[19:37.14]  course even further into you know we
+[19:39.78]  look two to three years out and build
+[19:42.54]  goals based off of that then we break
+[19:44.70]  them down by quarter and month and then
+[19:47.04]  out of that for my team and what I do I
+[19:51.72]  need to for my own sake and my team's
+[19:53.94]  sake break those down by the week and
+[19:56.58]  when we're in Rapid development phases
+[19:58.68]  we're planning on a daily basis
+[20:00.96]  how about in terms of just planning
+[20:02.82]  broadly how far out does the product
+[20:05.58]  team it's in and plan in detail like
+[20:08.10]  have an actual roadmap and is that
+[20:09.72]  standardized across teams or can each
+[20:11.58]  team kind of do their own approach It's
+[20:13.86]  a combination of both so we have one
+[20:16.44]  that is an overarching you know roadmap
+[20:19.20]  that tracks to like our company okrs and
+[20:22.74]  our product organization okrs and then
+[20:25.50]  from there I mentioned we have our
+[20:28.02]  squads product teams and we have okrs on
+[20:32.04]  those as well track up to the larger
+[20:34.86]  broader ones and so once we get down to
+[20:38.28]  that level though there is flexibility
+[20:40.98]  and we have autonomy to tackle those how
+[20:43.86]  we want which is really great because
+[20:45.66]  the scope of work across our different
+[20:48.90]  product teams is drastically different
+[20:51.42]  working on core platform like I do
+[20:54.12]  versus working on video experience
+[20:56.82]  versus podcasts I mean you it's apples
+[21:00.00]  and oranges and so so it's really
+[21:02.04]  awesome that we have the flexibility to
+[21:04.32]  kind of make it work for us while also
+[21:07.02]  having these larger goals that we know
+[21:10.14]  that okay this is what we need to work
+[21:12.00]  towards and that makes you know I mean
+[21:14.70]  it's like the saying we always hear in
+[21:16.20]  product right of say firm on the global
+[21:18.60]  flexible on the process and like we've
+[21:20.82]  definitely been able to to use that and
+[21:23.76]  leverage that in the way that we track
+[21:26.04]  against our goals something else that a
+[21:28.44]  lot of people are always curious about
+[21:29.40]  is product review meeting design review
+[21:31.62]  meetings you talked about a couple of
+[21:32.94]  these meetings that you have but do you
+[21:34.92]  have standard product review meetings
+[21:36.96]  where folks get together and just review
+[21:38.64]  stuff in progress and if so how do they
+[21:41.58]  work like who runs them who comes to
+[21:43.74]  them how do you make decisions things
+[21:45.54]  like that we have multiple variations of
+[21:49.02]  those some are standing ceremonies of
+[21:50.88]  course and some are ad hoc again it's
+[21:52.98]  really based on the work we're doing in
+[21:55.38]  that in in whatever phase we're in but
+[21:57.96]  when it comes to product review and
+[21:59.76]  product Discovery or design review
+[22:01.68]  meetings in addition to my design lead
+[22:04.04]  I've made it a point to bring in my tech
+[22:07.14]  lead and Engineers along for this
+[22:09.42]  product Discovery Ride and that's
+[22:11.40]  definitely been a game changer as well
+[22:13.14]  when our Engineers are able to
+[22:15.36]  understand our journalists needs at the
+[22:18.24]  same level as we are they're able to
+[22:21.06]  define the foul to do it with so much
+[22:24.36]  greater Clarity and precision and so my
+[22:27.00]  tech lead is embedded also in our
+[22:29.22]  product Discovery process he joins our
+[22:31.98]  user testing sessions and our design
+[22:33.66]  jams and our editorial conversation
+[22:35.82]  planning sessions and it's helped him
+[22:38.82]  and the rest of our Tech and engineering
+[22:40.98]  team become experts on the why are we
+[22:43.74]  doing this and what are we working
+[22:45.12]  towards to better determine technical
+[22:47.34]  feasibility and he's done an amazing job
+[22:50.22]  of also passing that knowledge down to
+[22:52.50]  the rest of our Engineers on our team so
+[22:54.84]  it's really like this mentality of
+[22:57.18]  getting that important feedback from our
+[23:00.00]  journalists under sanding their pain
+[23:01.74]  points and then sharing and teaching it
+[23:03.48]  across the team and I think you know the
+[23:06.60]  key Takeaway on that is it's so
+[23:08.64]  important to think of your engineers as
+[23:10.38]  partners and not just resources and when
+[23:13.14]  they are embedded you know into the
+[23:16.14]  process right up front it makes the
+[23:19.02]  whole process in general more efficient
+[23:20.82]  so it sounds like that was maybe an
+[23:22.56]  evolution of the of the way the team
+[23:24.60]  works is engineering has been looped
+[23:27.06]  into a lot of this early stuff more
+[23:29.40]  recently totally yeah recently meaning I
+[23:33.66]  mean we
+[23:35.10]  again long game right so it's been it's
+[23:37.56]  been a couple years
+[23:39.18]  got it
+[23:40.44]  going in a slightly different direction
+[23:41.94]  I'm curious if there's any fun or unique
+[23:44.76]  Traditions or rituals that the CNN
+[23:47.46]  product team has is always fun to hear
+[23:49.80]  about
+[23:50.58]  so I'll be very honest
+[23:53.22]  we are not one of the cool teams the
+[23:55.80]  politics team like and the breaking news
+[23:58.44]  teams have all these cool rituals and
+[24:01.14]  fun things that they do what kind of
+[24:03.06]  stuff do they do it's different also
+[24:04.86]  because they're usually in person in The
+[24:06.78]  Newsroom and I work remotely and so and
+[24:09.24]  actually most of my team Works remotely
+[24:11.28]  and so you know they have their rituals
+[24:13.74]  I will say one of the things that we
+[24:15.60]  started to do is so onboarding teams has
+[24:19.80]  been a big goal of ours and that we've
+[24:22.08]  slowly checked off the list over 2022
+[24:25.32]  and anytime we successfully onboard a
+[24:28.50]  team or launch a new feature you know
+[24:30.72]  it's not anything crazy or fun like
+[24:32.70]  there's always so much you can do when
+[24:33.90]  you work remotely but we definitely make
+[24:36.06]  it a point to celebrate and it's been
+[24:39.00]  hard to figure out ways to keep team
+[24:40.86]  morale up when you're all remote and it
+[24:44.28]  started with we knew we needed to start
+[24:46.08]  doing something when we would have a big
+[24:48.06]  launch and it was so article epic and it
+[24:52.26]  would literally hit
+[24:53.46]  publish an onboard onto like a politics
+[24:57.06]  page and we're like oh okay so I guess
+[25:00.24]  that's it so one thing we started doing
+[25:01.80]  is sending like
+[25:03.72]  like these gift boxes of like random
+[25:06.78]  shotkeys and stuff that would that mean
+[25:08.64]  things to us from the whole year and
+[25:11.22]  it's like just cheap little like gifts
+[25:13.62]  and stuff that we send to each other
+[25:14.94]  they have like random stuff all over my
+[25:17.46]  over my desk I don't even know if I can
+[25:19.20]  share some of it but
+[25:21.78]  um so we try to make it a point to at
+[25:23.64]  least like share and celebrate and then
+[25:25.92]  when we're in person we do too but again
+[25:28.32]  being remote there's definitely there's
+[25:30.66]  definitely a challenge there are you
+[25:32.82]  ever able to get like a cameo from an
+[25:34.50]  Anderson Cooper or someone else on on
+[25:36.60]  air to uh thank the teams that feels
+[25:39.18]  like a cool feature potential so one of
+[25:42.06]  my uh key stakeholders she is a she
+[25:45.30]  leads the video team at CNN and she is
+[25:48.30]  uh We've we've had some discussions
+[25:50.82]  about doing a Sizzler reel for our
+[25:53.28]  content management platform as since
+[25:55.62]  we're onboarding people and you know
+[25:57.42]  building new features and there have
+[26:00.30]  been discussions with her about getting
+[26:02.04]  a celebrity to come and promote product
+[26:04.86]  for us so working on it yeah it feels
+[26:08.64]  like a missed opportunity you had so
+[26:10.02]  much talent around totally
+[26:12.60]  this episode is brought to you by vanta
+[26:15.12]  helping you streamline your security
+[26:16.98]  compliance to accelerate growth if your
+[26:20.28]  business stores any data in the cloud
+[26:21.96]  then you've likely been asked or you're
+[26:23.76]  going to be asked about your sock 2
+[26:25.50]  compliance sock 2 is a way to prove your
+[26:28.38]  company is taking proper security
+[26:29.70]  measures to protect customer data and
+[26:32.04]  builds trust with customers and partners
+[26:34.22]  especially those with serious security
+[26:36.42]  requirements also if you want to sell to
+[26:38.76]  the Enterprise proving security is
+[26:40.80]  essential sock 2 can either open the
+[26:43.44]  door for bigger and better deals or it
+[26:45.60]  can put your business on hold if you
+[26:47.76]  don't have a sock 2 there's a good
+[26:49.38]  chance you won't even get a seat at the
+[26:51.30]  table beginning a sock 2 report can be a
+[26:54.12]  huge burden especially for startups it's
+[26:56.64]  time consuming tedious and expensive
+[26:58.98]  enter Banta over 3 000 fast growing
+[27:03.00]  companies use vanta to automate up to 90
+[27:05.40]  of the work involved with sock 2. vanta
+[27:07.98]  can get you ready for security audits in
+[27:10.02]  weeks instead of months less than a
+[27:12.00]  third of the time that it usually takes
+[27:13.86]  for a limited time Lenny's podcast
+[27:16.26]  listeners get one thousand dollars off
+[27:18.54]  vanta just go to vanta.com Lenny that's
+[27:23.12]  v-a-n-t-a.com Lenny to learn more and to
+[27:26.40]  claim your discount get started today
+[27:29.46]  coming back a little bit to the way you
+[27:31.32]  all built product I'm curious how you
+[27:33.12]  balance uh new product work and new
+[27:35.82]  features versus maintenance and bugs do
+[27:38.16]  you have kind of a is there like a
+[27:39.30]  philosophy at CNN how much goes to bugs
+[27:41.88]  maintenance versus new stuff or is it
+[27:43.44]  per team and just how do you all think
+[27:44.94]  about that it's certainly team specific
+[27:47.58]  because again the scope of work across
+[27:50.40]  teams really varies but since my team's
+[27:53.22]  product is an entire platform it's my
+[27:56.58]  job to ensure we're crystal clear on our
+[27:59.10]  goals because like I said they may
+[28:00.54]  change on a week by week basis one
+[28:02.94]  Sprint might be high priority feature
+[28:04.92]  development and another Sprint maybe
+[28:06.48]  we're focused on medium priority
+[28:08.64]  optimizations and Bug fixes but we know
+[28:11.82]  that anytime there's a critical incident
+[28:14.76]  in production it also takes critical
+[28:17.64]  priority over everything else so it's a
+[28:21.12]  balancing and juggling act that relies
+[28:23.28]  heavily on intuitive decision making but
+[28:26.76]  I will say we're also really fortunate
+[28:29.10]  to as a global 24 7 editorial support
+[28:32.88]  team that we work really closely with so
+[28:35.52]  they are the ones who handle
+[28:37.62]  troubleshoot escalate incidences
+[28:40.14]  incidents up to the relevant teams there
+[28:43.32]  are a lot of layers to that protocol
+[28:44.88]  when it when a critical incident occurs
+[28:47.40]  and so our editorial support team is
+[28:49.92]  that first layer of support whereas my
+[28:52.38]  team might be the second or third
+[28:54.36]  depending on the level of severity and
+[28:57.78]  who it gets escalated to so there's
+[29:00.36]  definitely a lot of processes in place
+[29:02.22]  we're not always that first line of
+[29:04.14]  defense which is actually it alleviates
+[29:06.72]  a lot of stress to know that we have an
+[29:08.40]  entire team Around the Clock globally
+[29:10.80]  dedicated just to that are you talking
+[29:12.78]  about these like incidents and moments
+[29:14.76]  and makes me wonder is there a memory of
+[29:17.16]  just like a wild time of something
+[29:18.66]  happen in the news of just like oh man
+[29:21.24]  we got to get on top of this thing like
+[29:22.80]  is there like a memory that you think of
+[29:24.72]  like wow that was crazy it's funny but
+[29:27.30]  also crazy and amazing is so our new
+[29:30.18]  content management platform you know it
+[29:32.22]  where we've been building it for a while
+[29:34.02]  and stress testing it for a while and
+[29:36.84]  you know politics and election season
+[29:39.06]  CNN is is Super Bowl like times 100 and
+[29:43.74]  so we have to be you know all hands on
+[29:46.14]  deck like all layers of support in
+[29:49.98]  intact and so we have also a lot of
+[29:53.16]  layers of fallback in case something
+[29:55.26]  happened right like there's layers and
+[29:57.42]  layers of infrastructure fallback if
+[29:59.78]  CNN.com goes down or another service
+[30:03.48]  goes down and so and actually did happen
+[30:07.14]  a couple of years ago in the 2020
+[30:09.42]  election and one of the fallbacks at
+[30:11.64]  that time because we were not we were
+[30:13.74]  you know we're still on our current
+[30:15.30]  content management platform but we had
+[30:17.82]  our new one as we're building it as one
+[30:21.06]  of the levels of fall and if XYZ fails
+[30:25.38]  then it goes to our current platform and
+[30:29.52]  it did and so that's actually happened
+[30:32.22]  where our new platform saved the day
+[30:35.40]  even though it wasn't fully ready but
+[30:38.64]  that just goes to show we think about
+[30:41.34]  that kind of stuff like in granular
+[30:44.28]  detail when we think about everything
+[30:47.10]  that could possibly go wrong because it
+[30:49.92]  has been and it will happen and it does
+[30:52.80]  go wrong so that was kind of cool it was
+[30:55.02]  validation to know that the platform we
+[30:58.14]  have is really stable and strong and
+[30:59.88]  secure that it was a fallback for the
+[31:02.10]  election
+[31:03.30]  damn that must have felt good that feels
+[31:05.94]  like a promotion material right there
+[31:07.50]  that you're working progress system
+[31:09.42]  saved the day yeah I agree you talked
+[31:12.72]  about how you have these like breaking
+[31:14.22]  news stress rehearsals uh I just noted
+[31:17.34]  that and I thought the quality just
+[31:18.72]  revisit that briefly like what is that
+[31:20.28]  how does that work you just like get the
+[31:22.14]  team together and like here's here's a
+[31:23.94]  new story that just broke what do we do
+[31:25.50]  like how does how does that work it is
+[31:27.66]  scripted right so we could only get so
+[31:29.46]  close to the real thing but one thing we
+[31:31.80]  do is I think we script everything right
+[31:33.66]  like the teams and the players that we
+[31:35.58]  need involved in it what the incident is
+[31:37.68]  and it usually starts when breaking news
+[31:39.84]  occurs with an email the news Gathering
+[31:42.66]  team sends an email it to our writers
+[31:45.54]  and our producers and then from there
+[31:48.24]  it goes out all the places it needs to
+[31:50.58]  go there's a video that needs to be
+[31:52.08]  created there's an article that needs to
+[31:53.40]  be written if they're you know and again
+[31:55.14]  the TV side I have no insight into it's
+[31:57.90]  like a foreign land to me but as far as
+[32:00.72]  the digital scope goes there's a lot of
+[32:02.82]  work that has to be done even things
+[32:04.68]  like Photo and imagery right like we
+[32:07.68]  have a whole team dedicated just to
+[32:09.96]  selecting photos like the photo desk is
+[32:12.06]  very involved with that process and so
+[32:14.40]  that is all scripted out and so we say
+[32:17.46]  okay here's the news here's how it's
+[32:19.86]  gonna break and then we we run it and so
+[32:22.74]  we use you know interpersonal
+[32:24.60]  communication tools that work of course
+[32:26.34]  email and like we run the whole thing
+[32:28.74]  from the minute the email is sent to and
+[32:31.62]  of course since we're testing the
+[32:32.88]  platform with this breaking news dress
+[32:34.62]  rehearsal to the minute you hit publish
+[32:37.02]  on that page and there's a lot of stuff
+[32:39.42]  that goes on in there and it all happens
+[32:41.46]  in the span of minutes and so while that
+[32:46.08]  is happening while that dress rehearsal
+[32:48.12]  is happening we have our engineers and
+[32:50.40]  our editorial support team on hand as
+[32:52.80]  well so they're observing what's
+[32:54.96]  happening while it's usually me and one
+[32:58.08]  of our editorial stakeholders and leads
+[33:00.30]  facilitating the actual rehearsal part
+[33:02.46]  and you know getting user feedback on
+[33:05.10]  okay what did something raped and
+[33:07.56]  everything work as it was supposed to
+[33:09.24]  work and also allows us to understand
+[33:11.70]  like how far we can go with stress
+[33:13.92]  testing different features on our system
+[33:15.86]  so each one is different but it's a
+[33:18.96]  crazy amount of stuff and information
+[33:20.64]  you can gather in such a short span of
+[33:23.70]  time because
+[33:25.68]  it cannot serve the needs of breaking
+[33:28.02]  news then it's useless so it's it's a
+[33:31.44]  lot of work that goes into it for you
+[33:33.78]  know this three-minute event that is
+[33:36.42]  cool it feels like just a cool tactic
+[33:37.86]  you could use anywhere yeah and that's a
+[33:39.96]  good segue to the next question I had is
+[33:41.46]  just having built products at CNN
+[33:44.52]  and seeing how the product Team Works
+[33:46.38]  what is it that you think you'll take
+[33:48.36]  with you to Future product teams and
+[33:50.52]  future companies that if you ever move
+[33:52.44]  on to anything else
+[33:53.82]  so like the course can't speak for the
+[33:56.40]  entire CNN product team but I can speak
+[33:58.68]  for myself and my specific team
+[34:02.34]  so in order to stay competitive in our
+[34:06.06]  modern news landscape
+[34:08.40]  building this content management
+[34:09.90]  platform and the technology behind it
+[34:12.24]  has taught us how to enable rapid
+[34:15.60]  development and integration of new
+[34:17.88]  features and workflows and we've been
+[34:20.28]  able to quickly test hypotheses while
+[34:23.58]  reducing risk and again time is of the
+[34:27.18]  essence right when it comes to breaking
+[34:28.98]  news and when you layer that with a very
+[34:32.70]  complex content management technology
+[34:35.28]  there's a lot of moving parts and we've
+[34:38.64]  been able to do that successfully and
+[34:40.50]  it's pretty amazing and because of that
+[34:42.42]  we've developed I think this unique
+[34:45.72]  skill of high agency under high pressure
+[34:49.14]  and I really think that that skill or
+[34:53.04]  combination of skills is our superpower
+[34:55.56]  and that is something you can take
+[34:58.02]  anywhere that is something that that is
+[35:00.00]  an asset to any any product development
+[35:02.28]  team
+[35:03.06]  the circle is back to our original topic
+[35:04.98]  about mindfulness and meditation rather
+[35:06.96]  than just living through it and either
+[35:08.76]  becoming a meditation expert or having
+[35:10.98]  worked at a company like CNN that has a
+[35:12.84]  lot of this is there any I don't know a
+[35:15.54]  tactic you could share something that
+[35:17.70]  someone could take tomorrow and be like
+[35:19.44]  okay I'm gonna get better at dealing
+[35:21.12]  with crazy unexpected events based on
+[35:23.82]  the experience you've had two parts to
+[35:26.40]  this so one I would be remiss as a
+[35:31.02]  meditation educator if I didn't say that
+[35:34.20]  there is no substitution for meditation
+[35:36.60]  so you just gotta do it it takes a long
+[35:39.90]  time and it's a lifelong work in
+[35:41.40]  progress but the good thing is is that
+[35:43.50]  it also like the more you do it and
+[35:46.08]  consistently you do it it compounds over
+[35:47.88]  time and I always yeah okay if you think
+[35:51.24]  of any job description for a product
+[35:52.80]  manager right it's mostly the same core
+[35:56.46]  stuff you need to be able to lead a team
+[35:58.86]  without having Authority you need to
+[36:00.48]  have great communication skills you need
+[36:02.76]  to be able to thrive in ambiguity you
+[36:04.80]  need to be able to work with a lot of
+[36:06.36]  different people on the technical side
+[36:07.74]  business side all of the stuff that we
+[36:09.96]  hear all the time right but like how do
+[36:12.24]  you actually become better at those
+[36:14.88]  things right like there's only so much
+[36:16.80]  you can gain from reading a book to me
+[36:18.96]  it's either a you gotta go do it and B
+[36:20.94]  meditation has helped so much because of
+[36:23.16]  the clarity of mind and Clarity of
+[36:26.04]  thinking you're able to cultivate
+[36:27.78]  because of it especially when it comes
+[36:30.00]  to communication and this comes back to
+[36:33.06]  another tactic I think right so
+[36:34.98]  meditation is one I you can't get around
+[36:37.26]  it it's a very very powerful tool I will
+[36:40.50]  die on that hill but thinking about
+[36:42.80]  workplace tactics communication is so
+[36:46.38]  essential when I started at CNN it was a
+[36:49.44]  very new chapter for me it's my first
+[36:51.18]  official product management role after
+[36:53.64]  working a decade in Tech in data and
+[36:56.34]  search infrastructure and it was really
+[36:59.70]  scary to make that change so far into my
+[37:02.52]  career but when I asked my boss why he
+[37:05.34]  took such a big chance on me he said
+[37:07.62]  it's because of your communication
+[37:09.18]  skills and relationship building skills
+[37:11.34]  and that I've seen you in a room where
+[37:13.56]  Engineers listen to you and what you
+[37:15.72]  have to say and you listen to that and
+[37:17.46]  he was like that in itself is really
+[37:20.10]  really hard to teach and I was like okay
+[37:22.80]  yeah I can do that so when I think about
+[37:25.44]  what communication means I also attach
+[37:28.38]  that to mindfulness like mindful
+[37:30.78]  communication is so critical for
+[37:33.30]  successful product management no matter
+[37:35.22]  what type of product environment you're
+[37:37.50]  in and it means being like deeply aware
+[37:41.46]  of the conversation you're having and
+[37:43.38]  when I'm having this conversation with
+[37:45.18]  you I'm only having this conversation
+[37:46.80]  with you when I'm talking to my design
+[37:48.66]  lead I'm only talking to my design lead
+[37:50.70]  when one of my journalists is venting
+[37:53.28]  because this feature is not working the
+[37:55.74]  way we told them it was going to I am
+[37:58.14]  shutting my mouth and I am listening to
+[38:00.42]  that vent and then I'm extracting what
+[38:03.36]  the root cause of the problem is and I
+[38:05.70]  think the takeaway in the tactic is that
+[38:08.40]  goes back to exactly what we talked
+[38:10.08]  about in the beginning is the ability to
+[38:12.54]  pause before we acting is the key to
+[38:15.72]  mindful communication and being a
+[38:17.34]  successful product manager
+[38:19.08]  I think a lot of times we are taught to
+[38:21.96]  like
+[38:22.80]  have all the answers or we're expected
+[38:25.50]  to have all the answers and people
+[38:27.54]  assume we have all the answers so it's a
+[38:29.76]  really frustrating sometimes place to be
+[38:31.74]  in but if you listen and you know where
+[38:34.80]  to go to get the answers that in itself
+[38:37.20]  is like a tremendous place to be so I
+[38:41.46]  think the power of meditation being able
+[38:43.32]  to pause before reacting lets you do
+[38:45.96]  things like
+[38:47.22]  conversate in the language of The
+[38:49.08]  Listener so when I'm talking to my
+[38:50.94]  journalists worked I'm not using
+[38:53.10]  technical terms or like content
+[38:54.84]  management technology terms they have
+[38:57.30]  whole different vocabulary that they use
+[39:00.42]  they have shortcuts that they have you
+[39:03.54]  know lingo for in our content management
+[39:05.40]  system they call things nicknames and so
+[39:09.66]  you have to speak many different
+[39:11.40]  languages as a product manager and
+[39:13.32]  there's one thing that you know learning
+[39:16.98]  and teaching mindfulness has like
+[39:19.58]  strengthened it is that communication
+[39:22.68]  yes it's very important how do you
+[39:25.32]  become an effective Communicator I think
+[39:27.66]  a lot of times we think of speaking
+[39:30.32]  articulately first and foremost or we
+[39:33.60]  think about writing well which those two
+[39:36.66]  are really really important things but
+[39:38.88]  those can't be effective for us as
+[39:41.46]  product leaders if we're listening so I
+[39:44.64]  think listening and being able to
+[39:46.62]  Converse in the lane language of The
+[39:48.00]  Listener is
+[39:49.62]  the utmost importance and how do you
+[39:52.14]  like do that in your day-to-day it's
+[39:53.64]  like okay if you're having a
+[39:55.02]  conversation with your customer
+[39:57.72]  are you actually listening to what they
+[40:00.54]  say or are you going in with your own
+[40:02.58]  assumptions because maybe you're a user
+[40:04.86]  of the product and it was very
+[40:06.84]  interesting because I actually started
+[40:09.18]  writing freelance for CNN this past year
+[40:12.02]  and I was like oh okay I'll be user now
+[40:16.20]  and
+[40:17.40]  no I'm not I I'm not gonna say that it
+[40:20.58]  helped me understand
+[40:22.56]  their pain points so much more and where
+[40:25.74]  they're coming from in a whole different
+[40:27.36]  light but
+[40:29.28]  again I am merely a proxy I'm not
+[40:31.92]  actually the user what they do is still
+[40:34.02]  drastically different and so when like
+[40:36.48]  having those like customer interactions
+[40:38.22]  and stakeholder interactions
+[40:40.56]  the priority should be to listen and I
+[40:43.02]  think that is one of the most important
+[40:44.94]  things I've learned and it's also helped
+[40:47.28]  build trust and respect between a
+[40:50.76]  previously
+[40:52.10]  fragmented structure where product of
+[40:55.68]  editorial didn't talk to each other and
+[40:57.66]  now we're a unified you know partnership
+[40:59.94]  oh I love that I love the reminder that
+[41:03.36]  a lot of
+[41:04.50]  communication is incredibly important
+[41:06.30]  for product managers and so much of it
+[41:07.98]  is not actually you talking it's you
+[41:09.84]  being really good at listening and that
+[41:11.88]  makes you a better communicator
+[41:13.86]  imagine some people listening to this
+[41:15.48]  are going to be like yeah meditation
+[41:16.92]  that's how I should be doing that what's
+[41:18.78]  like one thing someone could do to move
+[41:20.70]  forward on the path to starting to
+[41:22.92]  meditate is there a resource you
+[41:24.18]  recommend the tip of just like getting
+[41:25.86]  starting to do something there totally I
+[41:28.80]  think when people think of meditation
+[41:31.52]  you immediately think uh sitting on a
+[41:35.88]  meditation cushion like a monk for an
+[41:38.04]  hour
+[41:39.54]  and that doesn't have to be true
+[41:42.36]  especially if you're just starting and
+[41:44.46]  there's also of course social media has
+[41:47.42]  commercialized what meditation is a lot
+[41:49.98]  as well but at its core all it is is
+[41:52.98]  being deeply aware of the present moment
+[41:55.62]  right so I always tell people who are
+[41:58.56]  for example like really busy moms who
+[42:01.86]  have no time right in the morning for an
+[42:04.98]  hour-long meditation is okay take
+[42:07.74]  something in your day that you do every
+[42:10.08]  single day you brush your teeth every
+[42:11.94]  morning right okay take brushing your
+[42:13.98]  teeth can you brush your teeth and just
+[42:17.46]  brush your teeth and when you're
+[42:19.74]  brushing your teeth you are engaging all
+[42:22.32]  of your senses and being fully present
+[42:24.24]  and aware of how it feels how it smells
+[42:26.82]  how it sounds that's you know two three
+[42:29.28]  minutes of your day that's meditation
+[42:31.32]  and I think it's an amazing way to in an
+[42:34.32]  easy way oh sorry not easy simple not
+[42:37.50]  easy way always to think about what
+[42:40.08]  meditation actually is is like instead
+[42:41.82]  of like having to uproot your whole life
+[42:44.46]  and the way you live to like bring
+[42:46.62]  meditation in think about what you
+[42:49.20]  already do every day and how you can
+[42:51.06]  just be more present like fully present
+[42:53.52]  and Glenn's one of like core examples I
+[42:57.18]  give is start with brushing your teeth
+[42:58.80]  and just brush your teeth there's a old
+[43:01.50]  app
+[43:02.64]  I've been using for a long time if
+[43:05.10]  you're into that I stopped using it
+[43:06.90]  recently but it's still amazing it's
+[43:08.34]  called insight timer the free version is
+[43:10.44]  amazing it started as like a single
+[43:14.10]  frame app about 10 years ago and it's
+[43:17.16]  turned into this they've done amazing
+[43:19.20]  things with that product so that's what
+[43:20.88]  I recommend but again you don't I think
+[43:24.12]  again when people
+[43:25.98]  have a vision of meditation in their
+[43:27.84]  mind they're like well I need these
+[43:29.46]  tools and I need these resources and I
+[43:31.14]  need these things and I need knowledge
+[43:33.00]  you don't need anything you need five
+[43:34.86]  minutes and yourself and that's it
+[43:36.68]  amazing I imagine many people listening
+[43:39.12]  to this coming into thinking I'm going
+[43:40.86]  to learn about CNN and how they build
+[43:42.36]  product and then get a free meditation
+[43:43.64]  lesson what a bonus that was awesome I'm
+[43:47.40]  gonna be brushing my teeth very
+[43:48.60]  mindfully today love it my takeaway love
+[43:51.00]  it final question around something that
+[43:53.94]  I know is important to you that is uh
+[43:57.00]  basically there's this growing shift of
+[43:59.94]  product thinking in the new industry at
+[44:02.40]  large and I know that's something that
+[44:03.84]  you're passionate about and something
+[44:05.34]  you're trying to create is just to kind
+[44:06.96]  of move the media industry in the news
+[44:08.94]  industry towards more product thinking
+[44:10.50]  so I'd love for you to just talk about
+[44:12.00]  what you're doing there what's happening
+[44:13.08]  there and then maybe there's anything
+[44:14.34]  people can do to help in that effort
+[44:16.68]  compare it to the rest of product
+[44:19.74]  management as a discipline and the tech
+[44:21.84]  industry
+[44:23.46]  product management and news is still
+[44:27.06]  if it's I will say infancy and that's
+[44:29.82]  just because it hasn't been an
+[44:31.68]  integrated role for as long as it has
+[44:34.32]  been in big Tech but it is starting to
+[44:37.86]  become more and more not just prominent
+[44:41.16]  now but people are realizing the value
+[44:43.26]  and power of it because especially in
+[44:46.44]  smaller newsrooms I mean see it like CNN
+[44:48.84]  places like New York Times Washington
+[44:50.28]  Post we have
+[44:52.62]  great embedded you know strong product
+[44:55.20]  teams but that is not the case for the
+[44:57.90]  majority of newsrooms across the country
+[44:59.52]  and the world newsrooms are strapped for
+[45:02.10]  resources they are struck and all all
+[45:05.16]  resources including financial resources
+[45:07.74]  and so first bringing in product and
+[45:10.80]  Tech Talent is extensive and that in
+[45:13.62]  itself has forced editorial staff and
+[45:17.34]  journalists to take on other jobs that
+[45:20.16]  they never signed up for and so they've
+[45:22.56]  had to learn how to do things product
+[45:25.50]  management and engineering and coding
+[45:28.74]  hacks because there was nobody else to
+[45:31.14]  do it and so it's interesting because a
+[45:34.68]  lot of times when you talk to
+[45:36.66]  editors and journalists
+[45:38.76]  they're they're doing so many other
+[45:40.98]  things other than just their reporting
+[45:43.56]  of the news right they've had to take on
+[45:45.48]  other roles because of those restraints
+[45:47.64]  in The Newsroom and so
+[45:50.64]  there was a group established in a
+[45:53.58]  community established during the
+[45:55.02]  pandemic called the news product
+[45:56.34]  Alliance and there was like a
+[45:58.98]  realization occurring all at the same
+[46:01.44]  time that wow there's a lot of us doing
+[46:04.74]  this work like
+[46:06.54]  um
+[46:07.08]  what do we call it is this
+[46:09.78]  product management and it was it's
+[46:12.30]  product management at so many different
+[46:13.80]  levels and so the news product Alliance
+[46:16.62]  was formed during the pandemic in 2020 I
+[46:19.20]  Believe by several media and news
+[46:22.02]  Executives who had been there and done
+[46:24.48]  and have seen people in their newsrooms
+[46:26.70]  do that and the goal of it is to
+[46:29.70]  increase the awareness and education of
+[46:32.46]  product thinking and product management
+[46:34.14]  in newsrooms while also
+[46:37.34]  increasing the diversity of thought and
+[46:40.32]  the and the diversity of people in those
+[46:43.62]  positions as well and making the
+[46:45.78]  resources more readily available
+[46:47.22]  especially for those smaller newsrooms
+[46:49.50]  that don't have the money to hire Tech
+[46:52.80]  talent and that in itself has so that
+[46:56.70]  group the news product Alliance has
+[46:58.50]  grown dramatically in the past three
+[47:01.68]  years since I've been a part of it since
+[47:03.48]  the beginning that we regularly produce
+[47:06.00]  you know the resources that are catered
+[47:08.34]  product management resources that are
+[47:09.96]  catered to working in a newsroom because
+[47:12.60]  it is different it is very unique but
+[47:15.06]  there are of course Frameworks and
+[47:16.56]  processes that are still relevant right
+[47:18.30]  like
+[47:19.68]  editors who have been cobbling together
+[47:22.16]  how to make this thing that they want
+[47:24.66]  but maybe this PRD framework will help
+[47:28.08]  you just to keep it you know and on on
+[47:30.78]  on track so like these very simple like
+[47:34.08]  rudimentary types of things have helped
+[47:37.20]  them so much and so last year we kicked
+[47:40.14]  off a
+[47:41.34]  mentorship Network in which we had about
+[47:44.34]  400 people apply there's we accepted 150
+[47:47.82]  mentees from across the world and
+[47:49.74]  matched them with 50 mentors from
+[47:52.74]  different newsrooms across the world in
+[47:55.14]  leadership positions and each mentee
+[47:57.44]  defined a goal that they wanted to work
+[48:00.06]  on and all of course having to do with
+[48:02.16]  product management and some of them were
+[48:04.98]  creating a product management role for
+[48:07.32]  themselves in The Newsroom some of it
+[48:09.48]  was creating a product managed practice
+[48:12.00]  maybe they were given the title product
+[48:14.76]  manager and said okay you can hire a
+[48:17.22]  couple people but it was all on them and
+[48:19.86]  they had no idea what to do right and so
+[48:22.02]  some of it it's it's across the board
+[48:24.18]  and it's amazing to see
+[48:26.64]  people doing this from scratch who never
+[48:30.06]  in a million years thought they'd like
+[48:31.56]  walk into it you know they're not coming
+[48:32.94]  from Big Tech they don't have startup
+[48:34.80]  backgrounds they had journalism degrees
+[48:37.50]  from around the world and they're
+[48:39.78]  learning how to do product and build not
+[48:42.12]  just learning how to do it they're
+[48:43.92]  building product practices they're
+[48:46.26]  actually building and developing
+[48:47.88]  products and features and they're
+[48:50.64]  creating more leaders in the space as
+[48:52.80]  well and across their newsrooms to
+[48:55.14]  empower each other so it's been really
+[48:57.30]  amazing to see and it's the most
+[49:01.26]  valuable Professional Organization I've
+[49:03.72]  been a part of just because it is so
+[49:05.28]  Niche that you know talking about
+[49:07.20]  product management is always fun but
+[49:09.84]  when you talk about it at a level that
+[49:13.08]  specific it becomes even more believable
+[49:15.60]  that is some really impactful product
+[49:17.64]  work where can people find that if they
+[49:20.76]  want to maybe participate maybe apply if
+[49:22.50]  you're doing another cohort in the
+[49:23.70]  future go to newsproduct.org there is a
+[49:27.12]  very active slack group with a couple
+[49:29.46]  thousand people in it a very active and
+[49:32.52]  popular job board as well and you just
+[49:35.70]  have to submit an application on the
+[49:37.20]  website a form sorry on that on the
+[49:39.42]  website to join this lock and then
+[49:41.94]  you'll get an invitation to join the
+[49:43.56]  slack and then you'll have all of the
+[49:45.48]  resources
+[49:46.92]  um your fingertips it's very low barrier
+[49:49.44]  to entry we want everyone and everyone
+[49:51.36]  who is interested in in the intersection
+[49:54.12]  of news and product to be a part of it
+[49:56.34]  and the cool thing about it is like
+[49:58.32]  mentioned it's it's a Global Network we
+[50:00.78]  have people from from the biggest
+[50:01.92]  newsrooms across the world to all the
+[50:04.26]  regional ones to you know even big tech
+[50:07.02]  one of my fellow board members was you
+[50:09.60]  know doing news at Twitter one was
+[50:11.40]  working on the Google News initiative so
+[50:13.80]  it's a really really awesome group of
+[50:16.38]  people and everyone is so hungry and
+[50:19.80]  passionate about sharing and paying it
+[50:22.68]  forward we'll put a link to this in the
+[50:24.84]  show notes one last question what kind
+[50:26.64]  of people are you looking for who should
+[50:28.38]  apply they're listening if you are
+[50:30.48]  interested in working in news and have a
+[50:33.18]  product background or the the inverse of
+[50:36.90]  that if you work in news and you're
+[50:39.36]  interested in breaking into product so
+[50:41.52]  either side of the coin or any
+[50:43.56]  combination of that news media product
+[50:46.38]  technology even odd we have a lot of
+[50:48.42]  audience development and analytics and
+[50:51.12]  data science folks in there too it's
+[50:53.64]  just an amazing Community for knowledge
+[50:56.70]  sharing in Tech and news so there will
+[51:00.24]  be a fit for you some somewhere or to
+[51:02.22]  learn something or at the very least to
+[51:04.74]  meet other really amazing people
+[51:06.72]  well with that we've reached our very
+[51:08.94]  exciting lightning round I've got five
+[51:11.10]  questions for you and are you ready I'm
+[51:14.64]  ready all right what are two or three
+[51:17.04]  books that you recommend most to other
+[51:19.02]  people or that you've recommended most
+[51:21.36]  one mindfulness in plain English
+[51:24.48]  two how to win friends that influence
+[51:27.06]  people
+[51:28.40]  I have to attribute a lot of my
+[51:31.92]  communication skills to my dad forcing
+[51:33.78]  me to read that book when I was like 10
+[51:35.28]  years old and 10 years old intense he
+[51:39.78]  was an engineer and they were in their
+[51:42.42]  very uh beginning phases of introducing
+[51:45.36]  well at that time there was no product
+[51:46.98]  but product type stuff into his
+[51:50.22]  engineering practice and so he had to
+[51:52.80]  read the book and it was like you need
+[51:54.78]  to read this book so I never forgot
+[51:56.82]  about it and then the third one is
+[51:58.50]  actually it's it's not a book but it's
+[52:01.14]  an article that I think is
+[52:04.02]  still very powerful and relevant to this
+[52:06.42]  day it's the new product development
+[52:08.40]  game published by Harvard Business
+[52:10.62]  Review in 1986 and it looks at a really
+[52:13.86]  different approach one that I resonate a
+[52:16.38]  lot with because it's a lot along the
+[52:18.42]  lines of how we work at CNN around rapid
+[52:21.36]  development and you know time and
+[52:23.82]  flexibility being like key anchors of
+[52:26.40]  successful productive so I threw that in
+[52:28.74]  there as well favorite recent movie or
+[52:30.72]  TV show and it can be White Lotus okay I
+[52:32.94]  haven't even seen that show okay great
+[52:35.28]  that's come up so many times it's not
+[52:37.74]  allowed anymore TV show is a toss-up
+[52:41.28]  between the Mandalorian and Ted lasso I
+[52:44.64]  know it's not very new but I don't watch
+[52:46.86]  tons and tons of TV and I usually find
+[52:48.90]  like the few that I latch onto and then
+[52:50.82]  I get obsessed with and then I gotta
+[52:52.32]  take a break for a while so those are my
+[52:54.24]  last two obsessions movie is everything
+[52:56.76]  everywhere all at once last amazing one
+[52:59.82]  that really really struck a chord with
+[53:01.98]  me if you like Mandalorian check out
+[53:05.42]  the best Star Wars thing okay I've seen
+[53:07.50]  it okay great I I still love Mandalorian
+[53:10.38]  more I do like that one too my my
+[53:12.96]  husband is obsessed okay
+[53:16.20]  okay wow contrarian uh favorite
+[53:19.08]  interview question that you like to ask
+[53:20.52]  candidates what's something that would
+[53:23.88]  not exist without your initiative
+[53:26.96]  and what do you look for in an answer
+[53:28.92]  that's a sign that this is someone you
+[53:30.60]  may want to hire the whole point of the
+[53:32.58]  question is like
+[53:34.38]  do you have and can you exhibit High
+[53:36.12]  agency and especially again working in
+[53:38.58]  news that's so important and so
+[53:41.40]  there's not like a specific answer I
+[53:43.74]  think the ability to actually Define
+[53:45.86]  something specific and tangible in
+[53:49.56]  itself is a really really really good
+[53:51.66]  sign I think a lot of that you know
+[53:53.70]  people definitely get startled by that
+[53:56.58]  by that question sometimes because it
+[53:58.80]  requires you to kind of have to know
+[54:01.92]  what it is that you put on the table
+[54:03.66]  right so
+[54:05.76]  um yeah it's it's different every single
+[54:09.18]  time but the fact if they can define
+[54:11.16]  something out of that question it's it's
+[54:14.16]  it's usually a positive sign cool thanks
+[54:16.44]  for sharing that additional detail next
+[54:18.84]  question what's something relatively
+[54:20.28]  minor you've changed in your product
+[54:21.78]  development process at CNN or on your
+[54:24.48]  team specifically that's had a
+[54:26.16]  tremendous impact on your ability to
+[54:27.90]  execute Bridging the Gap between product
+[54:30.78]  and editorial at Mutual trust and
+[54:33.24]  respect has had an outsize impact on our
+[54:36.24]  success as a high performing team
+[54:38.46]  sadly and that's something other people
+[54:39.84]  can use but that's cool to know they'll
+[54:42.30]  have to hire some journalists now I
+[54:43.80]  think to take advantage of that learning
+[54:45.78]  I can add on to that to make it relevant
+[54:48.66]  for for others which is it just goes
+[54:51.36]  back to you know there's
+[54:53.70]  there's no substitute for having those
+[54:56.82]  direct conversations with your customers
+[54:58.74]  and your users right and it's like when
+[55:01.44]  you understand that the assumptions you
+[55:03.24]  make are not one-to-one or ever going to
+[55:06.00]  be one-to-one with their actual feedback
+[55:07.98]  and developing that line of
+[55:09.90]  communication with your users and your
+[55:11.58]  customers is
+[55:13.74]  of utmost importance I think you know
+[55:16.68]  that in itself is is the key takeaway
+[55:19.44]  right it's like how do you bridge the
+[55:21.30]  gap between
+[55:22.80]  collecting that feedback having those
+[55:24.84]  conversations like how far are you from
+[55:27.42]  your users how frequently are you having
+[55:29.46]  conversation how consistently are you
+[55:31.92]  having conversations and I always think
+[55:34.50]  the more frequently and the more
+[55:37.16]  consistently and earlier on in the
+[55:40.32]  process that you're having those
+[55:41.82]  conversations the better
+[55:43.86]  final question maybe you were to answer
+[55:46.02]  this what's the most crazy or most
+[55:48.54]  memorable story from working at CNN
+[55:51.32]  every election season is absolutely
+[55:54.12]  crazy in the best way possible it's
+[55:57.48]  incredible to see our democracy and
+[56:00.60]  action and watch History unfold and
+[56:04.38]  while that's happening using the
+[56:06.72]  platform you had a direct hand in
+[56:08.46]  building and it's never lost on me that
+[56:11.28]  my work impacts the world every single
+[56:13.44]  day and on the crazy frustrating
+[56:15.90]  stressful days like that is what serves
+[56:18.12]  as my anger awesome plus this was
+[56:21.78]  amazing I learned uh how to brush my
+[56:24.18]  teeth more mindfully about elections
+[56:26.52]  downtime Trump all these things final
+[56:28.92]  two questions working folks finding a
+[56:30.90]  line if they want to reach out and learn
+[56:31.98]  more and how can listeners be useful to
+[56:34.32]  you it's very easy to find me online I'm
+[56:37.38]  pretty active on Twitter and Instagram I
+[56:40.14]  recently became an amateur content
+[56:41.70]  creator so I share
+[56:43.44]  lots of stuff here and there on on
+[56:45.54]  social so any social platform well not
+[56:47.82]  any only on Twitter LinkedIn and
+[56:50.10]  Instagram so any any of those three is
+[56:53.04]  is good and I always love to hear
+[56:55.20]  feedback on stuff that resonated and
+[56:58.62]  made sense and the stuff that you know
+[57:01.20]  there are further questions on always
+[57:03.00]  love having
+[57:04.56]  conversations around that so yeah DMS
+[57:07.56]  are always open I know a link to this in
+[57:09.90]  Mission but just what's your handle on
+[57:11.40]  these networks it's my first and last
+[57:13.32]  name very creative I thought about it
+[57:15.42]  all by myself awesome and then I don't
+[57:18.42]  know if you answered the second question
+[57:19.32]  how can listeners be useful to you it's
+[57:21.36]  the feedback right like I love to hear
+[57:23.40]  what you found valuable what has how
+[57:26.34]  what helped you what was the tactic that
+[57:28.44]  you took away and employed that helped
+[57:30.36]  you things that made sense things that
+[57:32.46]  didn't make sense what you'd like to
+[57:34.08]  hear more about any any specific topic
+[57:36.48]  that would be valuable to do a deeper
+[57:39.30]  dive on all of those things are very
+[57:40.98]  valuable to me amazing again thank you
+[57:43.98]  for being here and um adios thank you
+[57:48.96]  thank you so much for listening if you
+[57:51.00]  found this valuable you can subscribe to
+[57:52.62]  the show on Apple podcast Spotify or
+[57:55.26]  your favorite podcast app also please
+[57:57.66]  consider giving us a rating or leaving a
+[57:59.76]  review as that really helps other
+[58:01.44]  listeners find the podcast you can find
+[58:03.78]  all past episodes or learn more about
+[58:05.76]  the show at lennyspodcast.com
+[58:08.76]  see you in the next episode

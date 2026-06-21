@@ -1,0 +1,1352 @@
+Title     : 363: Skyflow - Lessons on Launching a New SaaS Product Category
+Video ID  : bDijLweNNzk
+URL       : https://www.youtube.com/watch?v=bDijLweNNzk
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1343
+Saved at  : 2026-06-20 20:56:16
+------------------------------------------------------------
+
+[00:00.12]  all right Andrew welcome to the show hey
+[00:03.18]  Omer nice to meet you uh do you have a
+[00:06.36]  favorite quote something that inspires
+[00:08.04]  or motivates you that you can share with
+[00:09.30]  us yeah I think you know my mentor Mark
+[00:11.94]  benioff has this quote which I think
+[00:13.86]  he's borrowed it from someone else but
+[00:15.72]  basically says we all underestimate what
+[00:18.60]  we can do in a
+[00:20.46]  in 10 years and overestimate what we can
+[00:22.74]  do in a year and
+[00:24.48]  I know it sounds banal but every hard
+[00:28.02]  thing about building a startup if you
+[00:29.94]  can return to the concept of what does
+[00:32.70]  it mean for us in 10 years even just
+[00:35.88]  three to five years you'll realize that
+[00:38.28]  a lot of things just don't matter and
+[00:39.90]  you can focus so tell us about Sky flow
+[00:43.02]  what does the product do who's it for
+[00:44.82]  and what's the main problem you're
+[00:46.68]  helping to solve yeah so scale flow is
+[00:48.90]  in some ways a very simple product uh
+[00:51.30]  you know if you think about how when you
+[00:53.58]  log into an application
+[00:55.44]  all of your username and password data
+[00:58.80]  is stored in something like odd zero and
+[01:02.28]  your credit card information goes to
+[01:03.84]  something like stripe
+[01:06.42]  all of your other personal information
+[01:08.28]  ends up in like hundreds of databases
+[01:11.16]  and applications and such and because of
+[01:14.70]  the impact of all the privacy laws like
+[01:17.58]  gdpr CCPA but also just like
+[01:21.48]  consumers becoming smarter and smarter
+[01:23.94]  asking like why are you asking me for my
+[01:25.74]  social security number when all you have
+[01:27.66]  to do is do a one-time background check
+[01:30.36]  people have realized that it's no longer
+[01:32.58]  the right thing to do is to hold your
+[01:34.92]  pii in hundreds of different places so
+[01:37.38]  what if you had a data privacy vault
+[01:39.96]  custom built for pii it manages life
+[01:43.50]  cycle end-to-end made sure the data was
+[01:45.72]  stored in the right country at the right
+[01:47.10]  time only the right people at the right
+[01:48.72]  time could see or use it and you could
+[01:52.14]  still search analyze and run workflows
+[01:54.30]  for it wouldn't that be magical wouldn't
+[01:56.34]  that save us from the problems of our
+[01:59.22]  social security numbers and email
+[02:00.54]  addresses and in the hands of all the
+[02:02.64]  bad people
+[02:03.72]  that's the core concept
+[02:05.88]  I applied all the learnings I had at
+[02:07.86]  Salesforce Oracle and built a product
+[02:10.44]  that is radically simple and just you
+[02:13.32]  know you could just get started with an
+[02:15.00]  API call so who is who's your ICP your
+[02:18.36]  ideal customer that you sell this
+[02:19.86]  product to you know it's one of those
+[02:22.08]  things uh what's an ideal customer
+[02:23.94]  profile for mongodb well in some ways
+[02:26.76]  every company in the world can use
+[02:28.62]  mongodb or odd zero but in the early
+[02:31.68]  days you have to focus so even though we
+[02:33.90]  are building a horizontal platform we
+[02:36.18]  focused very intensely on
+[02:39.26]  ctOS of high growth companies especially
+[02:42.78]  in Industries where they are regulated
+[02:46.20]  either because of the geographies they
+[02:48.66]  serve like gdpr or because of the
+[02:51.36]  verticals they serve like digital health
+[02:53.10]  or fintech give us a sense of the size
+[02:55.98]  of the business where are you in terms
+[02:57.84]  of Revenue number of customers size of
+[03:00.48]  team of course nobody shares the details
+[03:03.24]  but you know we crossed millions of
+[03:05.22]  dollars in Revenue last year we're
+[03:07.32]  growing off 400 percent uh we are 105
+[03:10.26]  people uh via series B we've raised 70
+[03:13.56]  million dollars so far the core thing to
+[03:16.38]  know about our company is it's very very
+[03:18.42]  product and Engineering Centric because
+[03:21.48]  as I said earlier we're building a
+[03:23.76]  fundamentally new building block of how
+[03:26.58]  applications are built and as a result
+[03:29.52]  getting it right was super important to
+[03:31.38]  me so that's where we are in our journey
+[03:34.08]  okay great so one clarification about
+[03:37.02]  Sky flow and how a customer uses it when
+[03:40.74]  you said about hey you know they don't
+[03:42.00]  want to deal with this this uh
+[03:43.68]  personally identifiable information
+[03:46.20]  and they use skyflow instead what are
+[03:49.44]  they basically doing does that mean they
+[03:52.68]  have a limited information about the
+[03:55.32]  customer but the the the identifiable
+[03:58.62]  information is stored in some central
+[04:00.48]  place in with skyflow is that how it's
+[04:03.18]  organized yeah so again as I said you
+[04:06.78]  know just think about odd zero and
+[04:10.20]  stripe right so the password never
+[04:12.90]  leaves odd zero the credit card number
+[04:15.18]  actually never leave stripe however
+[04:17.64]  you're able to you know do all the
+[04:20.70]  functions you need to do so in case of
+[04:22.50]  Sky flow the customer profile
+[04:24.84]  information these sensitive Fields
+[04:27.32]  essentially get polymorphically
+[04:30.06]  encrypted and tokenized inside of Sky
+[04:32.16]  flow you end up with something that
+[04:34.26]  looks like a real social security number
+[04:35.94]  or a real email address so all of your
+[04:38.58]  databases applications data warehouses
+[04:41.22]  think they have the real information
+[04:44.10]  about you Omer except they only are
+[04:47.82]  holding for my preserving tokens the
+[04:50.64]  benefit of this is now when a customer
+[04:52.74]  comes to you says hey where is my data
+[04:55.26]  store can you delete it or you know you
+[04:58.68]  want to make sure that only certain
+[05:00.06]  people in your customer service team or
+[05:02.64]  your engineering team can see certain
+[05:04.38]  parts of the data you can set up all of
+[05:06.84]  those policies and rules around Skype
+[05:09.54]  flow rather than going into 15 different
+[05:11.46]  places and so it's basically a shared
+[05:14.52]  services architecture just like today
+[05:17.10]  every company in the world has a shared
+[05:19.20]  services architecture around storing
+[05:21.00]  secrets and a Secrets manager sorting in
+[05:23.94]  an identity manager storing you know
+[05:27.12]  credit cards in a credit card PCS system
+[05:30.02]  similarly pii We Believe belongs in its
+[05:33.54]  own Pia manager and that's what skyflow
+[05:37.20]  offers as a service and you can
+[05:39.02]  deployment wise you can actually run it
+[05:41.52]  both in a shared services architecture
+[05:43.86]  like SAS companies but you can also get
+[05:46.38]  your own dedicated instance and run it
+[05:49.02]  in your own VPC if need be so you
+[05:51.66]  mentioned your background you worked at
+[05:54.84]  Oracle Salesforce I think skyflow is
+[05:59.34]  your third startup that you've you've
+[06:01.92]  founded and this business was founded in
+[06:05.78]  January 2019 so not that long ago
+[06:10.20]  where did the idea come from I'm an
+[06:14.10]  ideas person uh maybe even a little bit
+[06:16.44]  add if you follow my Twitter account but
+[06:20.16]  this is one of those ideas that just
+[06:22.20]  like stuck around in my head for over 10
+[06:24.78]  years the first time I conceived of this
+[06:27.84]  idea was when I was working
+[06:30.54]  with a very large Financial Services
+[06:33.18]  Institution
+[06:34.68]  and they were trying to do
+[06:37.02]  a competitor to PayPal right so imagine
+[06:39.78]  you are
+[06:41.04]  uh top three Bank in the U us and you're
+[06:43.80]  like hey PayPal is going to end up
+[06:45.30]  owning all the banking services
+[06:47.64]  what if we had peer-to-peer payment this
+[06:50.04]  is way before Zen Zell existed when we
+[06:53.22]  existed
+[06:54.66]  and the fundamental problem immediately
+[06:56.28]  becomes like how are you going to do
+[06:57.54]  that right in some ways you already have
+[06:59.52]  the data you know my bank already knows
+[07:01.38]  my email address phone number and
+[07:02.76]  account number
+[07:03.90]  at the same time they're not legally
+[07:06.00]  allowed to share this data right that
+[07:08.70]  was the first time I hit a problem like
+[07:10.86]  is there a way to use data without
+[07:13.14]  disclosing all the information
+[07:15.08]  and when you start thinking about that
+[07:18.78]  then you start seeing it everywhere
+[07:20.46]  right it's like the game kids play like
+[07:23.04]  you know spot pink or something and you
+[07:25.02]  suddenly seeping everywhere
+[07:26.70]  once you spot the
+[07:28.74]  privacy plus sharing problem
+[07:31.14]  you see it everywhere so it started with
+[07:33.48]  financial services then I ran into
+[07:35.46]  healthcare companies in fact if you've
+[07:37.92]  been through the covet crisis last four
+[07:39.84]  years if you deeply think about it
+[07:43.44]  when we say com countries like Singapore
+[07:47.28]  and Dubai and Netherlands were able to
+[07:51.06]  roll out
+[07:52.20]  covet policies overnight and America was
+[07:55.86]  struggling
+[07:57.42]  part of it is was because they all have
+[07:59.88]  centralized systems for managing their
+[08:02.94]  citizens data
+[08:04.38]  we live in a federal democracy so we
+[08:06.78]  don't want that but that creates
+[08:09.12]  complications on you know how does if
+[08:12.42]  you're trying to get on a Disney cruise
+[08:14.10]  how does Disney know as a either as a
+[08:17.52]  vendor or as a customer or as an
+[08:20.16]  employee whether or not you have had
+[08:22.02]  your covet shots
+[08:23.46]  same problem almost exactly the same
+[08:25.98]  problem is the payment problem which is
+[08:27.60]  I don't need to know Homer who
+[08:30.00]  you are and what your exact date of
+[08:32.70]  birth is if you can prove to me that you
+[08:34.98]  had your covet shot
+[08:36.72]  or you already been infected or whatever
+[08:38.76]  it is and so all of these problems fall
+[08:42.18]  under the class of what we call zero
+[08:44.16]  knowledge systems in fact all of Bitcoin
+[08:46.74]  is built on zero knowledge proofs and
+[08:48.54]  such so I started seeing a pattern which
+[08:51.48]  is a lot of conventional businesses you
+[08:55.02]  know think about when you walk into a
+[08:56.46]  Starbucks right it's a coffee company
+[08:58.50]  but it knows where you live where you go
+[09:01.44]  to work in fact Starbucks knows more
+[09:04.44]  about my life patterns and maybe even my
+[09:07.62]  spouse does
+[09:08.70]  because they have information about
+[09:10.92]  literally where I'm spending all my time
+[09:13.68]  so companies like Starbucks went from
+[09:16.62]  being
+[09:17.52]  the sellers of coffee
+[09:19.68]  so did Walmart
+[09:21.30]  to being in the business of knowing
+[09:24.12]  about us
+[09:25.26]  we call it sometimes digital
+[09:26.70]  transformation I hate that phrase but if
+[09:29.16]  you think deeply about it Starbucks is
+[09:31.08]  digitally transformed when it goes from
+[09:32.82]  selling coffee to people it doesn't know
+[09:35.22]  anything about to you being able to
+[09:37.50]  pre-order coffee and send your colleague
+[09:39.66]  out to pick up seven cups of coffee and
+[09:42.18]  they don't have to remember the order
+[09:43.38]  they don't have to punch in a credit
+[09:44.88]  card number they don't have to give a
+[09:46.32]  phone number the coffee just magically
+[09:48.60]  shows up and they get maybe two extra
+[09:51.54]  Starbucks points or something right so
+[09:54.48]  that whole ecosystem has to work in our
+[09:57.60]  lives whether we are buying coffee or
+[10:00.18]  you're buying an airline ticket you're
+[10:02.04]  opening a bank account or you're going
+[10:04.26]  in getting covered shot so something
+[10:07.02]  seem to be missing across all of these
+[10:09.60]  use cases around how we handle all of
+[10:12.96]  our sensitive information it's just
+[10:15.30]  insane that today when you file your
+[10:17.52]  taxes you give your social security
+[10:19.20]  number to everybody you interact with
+[10:21.72]  who in turn puts Into Turbo Tax who in
+[10:24.60]  turn sends it to the IRS guess what IRS
+[10:27.78]  already has your social security number
+[10:30.42]  why are you sending your social security
+[10:32.04]  number to somebody who already has it
+[10:34.02]  well it's because so they can identify
+[10:36.18]  you well you can identify somebody
+[10:38.10]  without knowing that SSN
+[10:40.44]  if you use modern encryption
+[10:42.60]  tokenization schemes so it became very
+[10:45.18]  clear to me over a 10-year period that
+[10:48.00]  if we had this foundational layer which
+[10:50.46]  is missing from the internet today this
+[10:53.10]  service could transform the world in a
+[10:55.74]  meaningful way and impact Our Lives
+[10:57.24]  positively got it so this idea is
+[10:59.58]  brewing for like 10 years what happened
+[11:02.40]  at the end of those 10 years that got
+[11:05.40]  you to finally do something about it so
+[11:08.16]  there is The Logical answer and then
+[11:11.28]  there is the real answer so The Logical
+[11:14.64]  answer is
+[11:16.20]  I saw this everywhere it's kind of like
+[11:19.08]  that movie sixth sense right I see dead
+[11:20.82]  people everywhere but nobody else was
+[11:22.68]  seeing it so what happened was
+[11:25.50]  around 2018 Facebook had this Cambridge
+[11:28.56]  analytica issue
+[11:30.24]  and gdpr came out and States like
+[11:33.42]  California started talking about privacy
+[11:35.64]  effectively went from this problem being
+[11:38.82]  what I call a hundred thousand problem
+[11:40.74]  so if your Equifax or married and you
+[11:43.38]  had a breach of every card data every
+[11:46.44]  phone number in your database maybe you
+[11:49.32]  would get fined a million dollars in
+[11:51.18]  2017.
+[11:53.06]  2019 that's a billion dollar fine in
+[11:56.94]  fact as you know Facebook paid five
+[11:58.68]  billion dollars four years ago they
+[12:00.30]  spent another 1.2 billion dollars a few
+[12:02.94]  weeks ago these billion dollar fines are
+[12:05.58]  not limited to just Facebook
+[12:07.86]  Twitter's paying them companies like
+[12:10.50]  American Express and MasterCard were
+[12:12.36]  blocked for entire years from doing
+[12:13.98]  business in countries like India because
+[12:15.78]  they couldn't follow the local laws so
+[12:18.24]  it went from being you know as a nerd I
+[12:21.12]  could see this problem technically for
+[12:22.98]  10 years but the business person me the
+[12:26.34]  product guy and me wanted to see dollars
+[12:28.50]  Associated and it went from a nice to
+[12:31.74]  have very nice architecture
+[12:34.20]  to off if I don't do this this may be a
+[12:37.56]  billion dollar fine for many companies
+[12:39.32]  and as a Founder users have to love the
+[12:42.78]  problems that have a clean architectural
+[12:44.76]  solution which suddenly go from being a
+[12:47.40]  million dollar problem to being a
+[12:48.60]  billion dollar problem so that's what
+[12:50.34]  happened the honest answer is I got sick
+[12:53.10]  and tired of giving out my social
+[12:55.26]  security number and date of birth again
+[12:57.42]  and again and again and I just got fed
+[12:59.82]  up and said like you know forget I'm
+[13:01.26]  just going to start this company love it
+[13:03.00]  all right so you you get started what
+[13:06.42]  what did you do did you start
+[13:08.94]  building the product right away did you
+[13:12.12]  say okay now I'm doing it seriously I'm
+[13:14.46]  gonna spend more time kind of Discovery
+[13:16.98]  and talking to customers or potential
+[13:19.32]  customers how did you approach it to the
+[13:21.36]  point where you could get the product
+[13:22.80]  built I'm gonna give you some
+[13:24.54]  unconventional answers because that's
+[13:26.58]  what happened here right we actually
+[13:29.10]  talked to zero customers uh from the day
+[13:32.64]  we started the company into the day we
+[13:35.46]  actually had you know a beta product
+[13:37.68]  that somebody could actually buy in fact
+[13:40.44]  the very first customer call I had ended
+[13:42.72]  up in a in a sale but
+[13:45.60]  if you're listening to this podcast and
+[13:47.58]  think I can go out and do the same thing
+[13:49.74]  if you come to me as an investor I'm not
+[13:52.32]  writing that check for you
+[13:53.82]  unless you've also spent last 10 years
+[13:55.98]  before that
+[13:57.36]  over and over
+[13:59.28]  thinking about it talking about it
+[14:01.32]  diligencing about it
+[14:03.24]  I had seen every pattern every use case
+[14:06.36]  I talked to hundreds of ctOS dozens of
+[14:09.66]  csos about this problem and why they
+[14:12.72]  would and would not use it so I knew
+[14:15.24]  enough that I could build that first
+[14:16.98]  version of the product with an amazing
+[14:19.74]  engineering team and co-founders and
+[14:21.72]  such without thinking about like hey
+[14:24.24]  what does the customer want
+[14:25.92]  the other problem with products like Sky
+[14:28.32]  flow snowflake mongodb
+[14:31.62]  is that we are category creation
+[14:34.88]  and if you're creating a category
+[14:37.02]  solving a new problem in a new way
+[14:39.48]  the MVP for your product is simply a
+[14:42.72]  postgres database right wasn't MVP for
+[14:45.42]  snowflake a postgres database what's an
+[14:48.06]  MV per mongodb a postgres database
+[14:50.46]  what's an MVP for uh style you know I
+[14:54.48]  don't know maybe just using
+[14:55.98]  authorize.net so some categories of
+[14:58.68]  products you can't sort of incrementally
+[15:01.26]  test and build them you have to build
+[15:05.28]  enough that you can now say hey if you
+[15:09.42]  had this thing would it change something
+[15:12.54]  fundamental about your business or
+[15:14.70]  architecture or problem space and that's
+[15:17.70]  why you know snowflake was building its
+[15:20.52]  product for many years before going
+[15:21.78]  after customers and so on and so forth
+[15:24.42]  so I think my advice to Founders is
+[15:26.76]  deeply think about which category you
+[15:28.62]  are in don't get confused if you're
+[15:30.96]  truly creating a new category a
+[15:33.66]  fundamentally new building block you
+[15:36.00]  sort of have to build enough to then go
+[15:38.28]  test it on the other hand if you're
+[15:40.62]  building something that's a better CRM
+[15:42.90]  or a better DocuSign or what have you
+[15:45.24]  you have to test first and then build
+[15:47.64]  later great okay so you didn't talk to
+[15:50.34]  any customers we explained why
+[15:52.80]  how long did it take you to build the
+[15:54.84]  MVP or the first
+[15:56.76]  product first version of the product
+[15:58.98]  yeah so we really started Engineering in
+[16:02.46]  about August so for first six months we
+[16:06.18]  were building out the team thinking
+[16:08.52]  deeply about what exactly the shape of
+[16:11.70]  the product would be so
+[16:13.92]  even though I didn't talk to customers
+[16:15.74]  the knowledge I had from hundreds of
+[16:18.06]  conversations
+[16:19.64]  and the core hypothesis had to be
+[16:22.86]  distilled down into what is the first
+[16:24.90]  end-to-end use case we're going to solve
+[16:27.48]  completely for a customer because one of
+[16:30.66]  the worst things you can do trying to
+[16:31.92]  build a platform company is to start
+[16:33.60]  with building a platform product so we
+[16:35.82]  narrowed it down to couple use cases
+[16:37.92]  around you know pii for kyc use cases
+[16:42.36]  around handling payments data and then
+[16:45.18]  said okay if that's the only problem you
+[16:46.98]  were trying to solve with version one
+[16:48.26]  what are the feature functions and
+[16:50.64]  things you would need so you would be
+[16:52.02]  vastly superior and so that took us
+[16:54.66]  about I would say 10 to 12 months to
+[16:57.12]  build up the first beta version enough
+[16:59.46]  that I could show something to CTO of a
+[17:02.64]  large company or a startup and get
+[17:05.64]  feedback about yes this would work for
+[17:08.34]  me or not so 100 conversations before we
+[17:11.40]  started building close to zero while we
+[17:13.80]  were building and again lots of
+[17:15.90]  conversations once we built it up can
+[17:17.58]  you just explain what you mean by kyc
+[17:19.08]  for people who don't know what that
+[17:20.16]  means well know your customers so every
+[17:22.56]  time you open a bank account or you sign
+[17:25.50]  up for even some online services the law
+[17:28.92]  requires that
+[17:30.96]  The Entity that's doing business with
+[17:33.30]  you legally know who you are in fact if
+[17:36.72]  you're following the whole Twitter
+[17:37.86]  versus Facebook War right now going on a
+[17:40.98]  lot of this is around does Twitter know
+[17:43.86]  who you are now legally they're not
+[17:45.84]  required so you could they could take a
+[17:48.60]  very 4chan likely of the world I have no
+[17:51.06]  idea who these people are and I refuse
+[17:52.86]  to find out
+[17:54.06]  all the way to a bank where I know
+[17:56.52]  exactly who you are your mom your
+[17:59.10]  passport number
+[18:00.36]  that's a spectrum but irrespective of
+[18:02.88]  where you lie on the Spectrum think
+[18:04.62]  about an airline you know it doesn't
+[18:06.30]  legally need to know who you are but you
+[18:08.88]  effectively can't travel without them
+[18:11.40]  knowing your passport number driver's
+[18:13.80]  license TSA Pre Etc so most companies
+[18:17.52]  that do business with consumers end up
+[18:19.80]  collecting some amount of kyc know your
+[18:23.10]  customer information
+[18:24.60]  the easiest example for you guys might
+[18:26.64]  be Uber right you sign up as a rider you
+[18:30.96]  need to at least share your phone number
+[18:32.22]  and credit card number as a driver you
+[18:35.28]  need to share a whole bunch of
+[18:36.42]  information so they can do a background
+[18:38.04]  check on you all of these processes hang
+[18:40.62]  around personal information great thank
+[18:42.66]  you uh so when you when you started
+[18:44.88]  building the product were you
+[18:47.16]  bootstrapping initially or did you go
+[18:49.26]  out and raise some money right away you
+[18:53.88]  know I had had some success at
+[18:55.38]  Salesforce I'd been invested in many
+[18:57.60]  companies some of them went public so I
+[18:59.64]  had a little bit of a financial question
+[19:02.40]  so first six months we frankly just you
+[19:04.98]  know paid everybody through our pockets
+[19:07.38]  and uh you know me and my co-founders
+[19:10.32]  didn't take any salary for the first six
+[19:12.06]  months
+[19:13.02]  we had access to Capital I was kind of
+[19:15.00]  lucky I had done Venture before in Angel
+[19:16.68]  Investing so we knew we could raise any
+[19:18.72]  time we wanted
+[19:19.98]  but weirdly enough I know it's not
+[19:22.26]  fashionable anymore
+[19:23.88]  I was very hesitant to take Capital till
+[19:26.70]  I knew exactly what I wanted to build
+[19:28.86]  and whether it was worth building for
+[19:30.66]  the next 10 years so my commitment
+[19:32.88]  wasn't a two-year commitment for me the
+[19:35.16]  commitment was a 10-year commitment
+[19:37.14]  and even after starting the company it
+[19:39.42]  took me six months to make a 10-year
+[19:41.34]  commitment once I had that nailed I
+[19:44.10]  talked to a few investors most of them
+[19:46.56]  absolutely hated the idea of creating a
+[19:48.72]  new category and you kind of store a new
+[19:51.30]  kind of product
+[19:52.68]  a few loved it because
+[19:55.68]  in our Sugar's word who did our seed
+[19:58.14]  round most likely this will not work but
+[20:00.54]  if it works this could be a hundred
+[20:02.16]  billion dollar company so we found
+[20:03.54]  couple of investors like that and we
+[20:05.58]  took a large seat down of six million
+[20:07.44]  dollars in those days yeah I think you
+[20:09.90]  know you and I were talking uh earlier
+[20:12.12]  and you you gave that example of
+[20:15.96]  DB and you know going out and if you
+[20:19.68]  asked people if they needed mongodb
+[20:22.20]  they'd say no to that and maybe you can
+[20:24.78]  just briefly tell that story but but
+[20:26.28]  explain it explain it for people who
+[20:29.22]  don't know what mongodb or postgres are
+[20:32.82]  what the difference is between
+[20:33.78]  relational and a document based database
+[20:35.94]  actually
+[20:37.68]  invert the problem itself right so think
+[20:41.16]  about more startups that we all work and
+[20:45.30]  read about invest in we feel like we're
+[20:48.54]  familiar with the problem and a lot of
+[20:51.48]  time you will hear advice like hey it
+[20:53.88]  should be sort of obvious it's something
+[20:55.92]  that is not too complicated can you
+[20:58.50]  explain it in a single line
+[21:00.84]  and that's fascinating and it's true and
+[21:03.72]  a lot of I would say YC class companies
+[21:05.70]  come out of that paradigm Uber Airbnb
+[21:09.30]  you know these kind of companies don't
+[21:11.10]  require you to like have a PhD in
+[21:12.96]  economics to understand why they would
+[21:15.00]  or would not work it's best to just
+[21:17.10]  build it and see if it works
+[21:19.32]  however there's a certain class of
+[21:22.02]  companies uh and Sam Altman himself xyc
+[21:26.00]  manager has come out and said he
+[21:28.80]  couldn't have built openai using his own
+[21:30.78]  advice at YC right when you're building
+[21:33.54]  something
+[21:34.82]  fundamentally architecturally new
+[21:38.40]  there is nothing for you to rely on in
+[21:41.34]  fact everything else you rely on is
+[21:43.20]  going to make you look like an idiot so
+[21:45.48]  if you went out and said I'm building a
+[21:48.72]  large language model first of all nobody
+[21:51.54]  knows what that means and he said well
+[21:53.52]  it's going to be a data system for
+[21:55.56]  running AI everybody would say that
+[21:57.84]  sounds like Snowflake and databricks
+[21:59.52]  right so you end up with this chicken
+[22:01.98]  and egg problem and so we can't solve
+[22:04.74]  large technical problems or even large
+[22:07.38]  business problems sometimes like
+[22:10.14]  building an electric car without having
+[22:12.90]  a different Paradigm and I call this
+[22:16.08]  category of thinking intentional
+[22:18.60]  startups versus the first category what
+[22:21.48]  I call evolutionary startups right
+[22:23.94]  new people and ideas just keep evolving
+[22:26.28]  whereas intentional startups tend to be
+[22:28.20]  like you've thought about it some
+[22:29.94]  something so much that you figured out
+[22:32.28]  truly
+[22:33.90]  a fundamental reason why it could be
+[22:35.88]  different
+[22:37.26]  so mongodb coming back even today 95 of
+[22:41.46]  the world has no idea what mongodb does
+[22:44.94]  they still can't articulate why it's
+[22:47.10]  different from Oracle or snowflake
+[22:49.56]  and yet it's worth tens of billions of
+[22:52.56]  dollars it's Revenue I think it's not
+[22:54.48]  the billions
+[22:55.68]  and it's one of the fastest growing tech
+[22:58.02]  companies so what is it about
+[23:00.96]  that allows them to grow so fast
+[23:04.26]  even though most people can't explain
+[23:06.06]  What It Is Well turns out it solves a
+[23:09.60]  fundamental technical limitation of
+[23:11.94]  relational databases
+[23:14.10]  which is implicit in the name you can
+[23:16.38]  only handle certain kind of relational
+[23:18.00]  data there
+[23:19.68]  so
+[23:21.36]  they found a problem that was such of
+[23:24.30]  such high value
+[23:25.80]  that a certain class of very experienced
+[23:28.26]  season people would understand if you
+[23:31.20]  try to solve it differently
+[23:33.00]  the hyper focused on that and then went
+[23:36.30]  out
+[23:37.26]  and instead of telling the world about
+[23:39.72]  mongodb which nobody knows anything
+[23:41.88]  about
+[23:42.84]  they went out and explained to people
+[23:44.76]  why a new architecture for storing data
+[23:48.18]  would be valuable and it eventually
+[23:50.70]  became known as nosql right so everybody
+[23:54.18]  now has heard of nosql
+[23:56.94]  so
+[23:58.32]  a similar thing happened by the way 20
+[24:00.36]  years ago when uh Bea became an observer
+[24:03.42]  company nobody had heard of an app
+[24:04.92]  server by the same thing happened when
+[24:06.84]  the elastic came out nobody had heard of
+[24:08.76]  an elk platform or a search index
+[24:12.42]  we forget that there are fundamental
+[24:15.36]  building blocks of how we build
+[24:17.28]  applications handle data today
+[24:19.62]  like kubernetes
+[24:21.72]  and containerization that were
+[24:24.42]  fundamental breakthroughs so in those
+[24:25.98]  categories
+[24:27.12]  you cannot rely on hey I am Uber for x
+[24:31.50]  you're much better off saying hey this
+[24:34.26]  is the this is how we're building things
+[24:36.00]  today or handling data or using things
+[24:39.60]  if we think about it differently here is
+[24:42.36]  why it would be 10x better
+[24:44.40]  and then you show a whole bunch of use
+[24:47.28]  cases around it so in case of bongodb
+[24:49.80]  for example in the early days they're
+[24:52.26]  one of their earliest best customers or
+[24:54.00]  people who just had a lot of
+[24:55.14]  unstructured data in e-commerce that
+[24:57.24]  tended to be catalog data so if you ask
+[25:00.54]  somebody in 2011 where should I use
+[25:03.24]  mango DB they would say you know if you
+[25:05.10]  have catalog data
+[25:06.90]  you're probably better off starting in
+[25:08.70]   because catalogs have this
+[25:11.22]  peculiar property that
+[25:13.44]  they are very high dimensionality so you
+[25:15.72]  cannot have like three columns like even
+[25:17.70]  a T-shirt has 15 features about it so
+[25:20.34]  things like that by the way for those of
+[25:22.50]  you who are technical nerds you're
+[25:24.90]  seeing this right now happen with
+[25:26.28]  Pinecone and Vector databases none of us
+[25:29.64]  knew what a vector database is
+[25:32.04]  five years ago
+[25:33.72]  two percent of you knew about it a year
+[25:36.06]  ago and about 20 percent of you know
+[25:38.58]  about it now while listening to the
+[25:40.44]  podcast so this pattern repeats again
+[25:42.60]  and again the key thing is once you
+[25:45.18]  recognize I'm building a new category
+[25:47.28]  because I've figured out a new building
+[25:49.14]  block
+[25:50.10]  embrace it accept it
+[25:52.98]  hire people around this concept build a
+[25:56.70]  team around it set expectations with
+[25:58.62]  investors around it
+[26:00.54]  you're not going to have the same
+[26:02.16]  Journey that somebody building Echo sign
+[26:05.94]  or DocuSign had if you're trying to
+[26:08.58]  build pine cone open AI snowflake
+[26:11.22]  mongodb Sky flow and dozens of other
+[26:14.58]  companies in that category yeah that's
+[26:16.80]  that's a great explanation and some some
+[26:19.44]  really awesome examples there
+[26:21.54]  so how did that play out for you once
+[26:25.08]  the product was built and you're going
+[26:27.66]  out there and trying to get these you
+[26:30.06]  know these mythical first 10 customers
+[26:33.90]  how easy or hard was it for you to sell
+[26:38.76]  the product so I think actually the
+[26:41.76]  first 10 customers
+[26:44.34]  came in surprisingly easy assuming you
+[26:48.48]  had done the 10 plus two years of work
+[26:50.82]  which is by the time we came in we had
+[26:55.74]  deeply thought about the problem so we
+[26:58.26]  knew more about this problem that
+[26:59.70]  customers did
+[27:01.14]  we are deeply thought about the
+[27:02.94]  architecture so we knew more about it
+[27:04.50]  than our customers did
+[27:06.12]  and we knew exactly where and why they
+[27:08.58]  would buy it so when you know one of our
+[27:11.28]  earliest customers was a guy by the name
+[27:13.14]  of Bo Hartman he was the previous CTO of
+[27:15.78]  Goldman Sachs and Capital One and all
+[27:18.54]  these Banks he was at a very fast
+[27:21.12]  growing payments infrastructure company
+[27:24.00]  and he met me and he's like look I built
+[27:26.70]  this thing before twice in my career
+[27:29.34]  and I hated it every time I wish skyflow
+[27:32.34]  existed earlier
+[27:34.02]  it's the easiest buying decision I'm
+[27:36.54]  going to make in my career to this day
+[27:38.94]  he loves our company he's our vocal
+[27:42.48]  proponent he sends me customers
+[27:44.52]  investors and all he wanted out of us
+[27:48.66]  was someone who was 100 focusing on
+[27:51.90]  building the thing that he needs over
+[27:54.06]  and over again but he's reluctant to
+[27:56.22]  spend having 30 Engineers working on it
+[27:58.92]  and so when you're building something
+[28:00.72]  new you'll find this set of customers
+[28:04.44]  who have the problem so acute that they
+[28:07.20]  will basically deal with the fact that
+[28:09.24]  your slides suck your product has gaps
+[28:11.52]  and that you really don't even know how
+[28:13.32]  to price it and those are the best 10
+[28:15.72]  customers you can have it changes after
+[28:17.70]  that by the way yeah we'll talk about
+[28:19.44]  that so I think most uh most Founders
+[28:22.02]  when they're trying to get those first
+[28:23.04]  10 customers or whatever are very keen
+[28:25.98]  to go out there and show customers you
+[28:27.78]  know a demo of the product like you know
+[28:29.64]  hey you know we're solving this problem
+[28:31.56]  take a look at the the product
+[28:33.96]  now given the context of what you just
+[28:36.18]  described about a new category and
+[28:37.98]  something like you're you're creating
+[28:39.48]  here
+[28:40.68]  were you initially doing the same thing
+[28:42.12]  were you going out and trying to get
+[28:43.26]  demos or were you taking that approach
+[28:45.06]  that you described in terms of
+[28:47.46]  hey this is this is how things are done
+[28:50.16]  today
+[28:51.54]  if you think about it differently this
+[28:53.58]  is how it could be 10x better like was
+[28:56.46]  that part of your pitch or is that
+[28:58.80]  something that evolved after you found
+[29:01.14]  people weren't interested in just
+[29:02.82]  getting to jump into demos there are two
+[29:05.40]  kinds of products right one is you know
+[29:07.92]  the first time I saw
+[29:09.96]  Echo saying I was like oh my God like
+[29:12.66]  why am I signing anything
+[29:15.18]  that's not coming in through email right
+[29:17.34]  like it's a no-brainer after you see it
+[29:20.22]  conceptually it's very hard to actually
+[29:22.08]  explain to somebody who's never seen any
+[29:23.76]  signature product
+[29:25.44]  on the other hand
+[29:27.30]  even to this day right like imagine
+[29:30.78]  I asked you to demo me snowflake
+[29:34.14]  or kubernetes or ec2 or S3 what are you
+[29:39.12]  gonna demo
+[29:40.62]  you know you're going to run a SQL query
+[29:42.30]  and comes back well I can do that on SQL
+[29:44.58]  Lite on my desktop right maybe I can
+[29:46.32]  even do it faster I think
+[29:49.44]  people make a mistake they don't know
+[29:52.26]  what they are selling as in they don't
+[29:55.08]  know what is the core value proposition
+[29:57.60]  they're selling
+[29:59.28]  your demo your slides and your story are
+[30:02.76]  in service of the problem that you're
+[30:04.44]  solving right so if I sign a lot of
+[30:08.64]  contracts every day my pain is signing
+[30:11.34]  but you know a lot of people in
+[30:12.72]  procurement don't sign contracts they
+[30:14.28]  just send them out their problem is
+[30:16.02]  sending not signing so showing them any
+[30:19.32]  signature demo actually weirdly enough
+[30:21.00]  won't do anything for you in our case
+[30:23.16]  what do people care about so there is a
+[30:25.68]  demo that's very powerful from Sky flow
+[30:28.20]  but it shows that if I take
+[30:32.10]  a data pipeline or your application
+[30:35.28]  built using conventional you know
+[30:37.56]  building blocks
+[30:40.26]  if you don't use Sky flow how pii and
+[30:43.68]  card numbers and ssns can end up
+[30:45.96]  everywhere
+[30:46.92]  and then I can show you how if you use
+[30:49.44]  Sky flow you can control it you can only
+[30:52.62]  have it visible to the right people at
+[30:54.30]  the time I can show you how some of the
+[30:57.12]  data is stored in Germany some in India
+[30:59.58]  and some in the US I can show you how
+[31:02.40]  that happens with a single API click but
+[31:05.88]  for me to show those things that I'm
+[31:07.74]  describing to you
+[31:09.00]  if I hadn't set the context
+[31:11.76]  they wouldn't look magical they would
+[31:13.98]  look like yeah sure you're telling me
+[31:16.08]  you can store data in India well you
+[31:18.36]  know I can
+[31:19.44]  do that using Google drive right so
+[31:23.40]  figuring out
+[31:25.14]  what's the problem
+[31:26.88]  that the customer has so I'll give two
+[31:30.00]  examples some of our customers have a
+[31:32.52]  data residency problem as in
+[31:35.66]  you are a large payments company or your
+[31:39.00]  large SAS company you've been selling
+[31:41.52]  your CRM or payments product globally
+[31:43.62]  suddenly
+[31:45.80]  Frankfurt Germany has a data residency
+[31:48.90]  regulation or Ireland or India or
+[31:51.84]  Nigeria
+[31:53.22]  you can no longer sell your product
+[31:55.02]  there or people can't use it there well
+[31:57.66]  now you have very specific problem
+[31:59.82]  how do I make sure I can continue to do
+[32:02.10]  business in Europe
+[32:04.26]  or start doing business in Europe well
+[32:07.20]  then the problem is framed as hey if you
+[32:10.44]  do it the traditional way you would end
+[32:12.30]  up replicating all of your AWS
+[32:14.22]  infrastructure in another country and
+[32:16.14]  cost you 20 million dollars a year
+[32:18.18]  but Sky flow it's as simple as like
+[32:20.40]  spinning up you know walls in two
+[32:22.86]  regions and in like six minutes you can
+[32:25.68]  be actually up and running
+[32:28.02]  that's magical to someone who thought
+[32:30.42]  data residency was a two-year problem
+[32:32.84]  where I can show to them that it's now a
+[32:35.46]  two-month problem at best
+[32:37.56]  on the other hand if I showed the exact
+[32:39.66]  same thing to someone who doesn't do
+[32:42.24]  business globally a lot of companies are
+[32:44.64]  U.S Centric showing them a data
+[32:46.80]  residency demo is like basically has no
+[32:49.92]  effect on them it's like showing Gucci
+[32:52.38]  purses to me right I don't buy them they
+[32:54.78]  look like just leather bags to me
+[32:57.18]  on the other hand if I'm dealing with an
+[32:59.64]  American customer and they are trying to
+[33:02.46]  do more with their customers except they
+[33:06.24]  need to partner with another company and
+[33:09.06]  do data sharing to reserve roll out a
+[33:11.52]  new payments company or a loyalty card
+[33:13.74]  or what have you
+[33:16.50]  for them the magic is in Sharing data
+[33:19.14]  across organizational boundaries without
+[33:21.06]  actually revealing the data
+[33:23.34]  and they will get blown away by that and
+[33:26.22]  so we have to figure out
+[33:28.02]  what we are solving for what customer
+[33:30.54]  again go back 20 years ago if you're
+[33:33.30]  selling Bea or 15 years ago you're
+[33:35.70]  selling mongodb
+[33:37.56]  if you're selling to the catalog guy you
+[33:39.06]  show them catalog search if you're
+[33:40.80]  selling it to a supply chain person you
+[33:43.02]  saw them subscribing visibility
+[33:45.30]  so that's how we basically decide when
+[33:47.70]  and how to show what part of the product
+[33:49.26]  you know many Founders in in those early
+[33:51.66]  days are going out and talking to
+[33:52.80]  anybody and everybody and and just
+[33:55.02]  anybody who will listen I'll I'll talk
+[33:57.18]  to you and tell you about you know my my
+[33:58.98]  business and my product
+[34:01.28]  how we how are you able to
+[34:04.68]  narrow down your ICP and figure out
+[34:07.80]  where you were going to focus on which
+[34:09.72]  use cases you're going to pick
+[34:12.24]  uh you know obviously as you said it's a
+[34:14.22]  horizontal product but you you had to
+[34:16.98]  start somewhere so how did you make
+[34:18.66]  those decisions and figure that out so
+[34:20.76]  again there's two ways to do it one is
+[34:22.56]  if I had just started with this problem
+[34:24.48]  anew because I had only had a technical
+[34:27.42]  innovation in mind then I would have to
+[34:29.88]  do you know some sort of breadth first
+[34:31.38]  search right and that's what like you
+[34:33.18]  know YC tells you like hey go talk to
+[34:35.46]  100 customers let them tell you why they
+[34:37.80]  need this product and I think that's
+[34:39.12]  very viable
+[34:40.38]  strategy and you should do that if
+[34:42.18]  that's where you are
+[34:43.44]  in my case I had a thesis I knew what
+[34:45.96]  the problems were
+[34:47.28]  I had to narrow down like hey should I
+[34:49.62]  focus on SAS companies or health
+[34:51.66]  companies or fintech companies so all I
+[34:54.66]  did was called up three of each and very
+[34:57.18]  soon found out
+[34:58.62]  who is most interested and
+[35:01.50]  and then just prioritized some of it is
+[35:03.66]  was frankly random for example you know
+[35:05.82]  should we do more SAS data residency or
+[35:08.34]  more you know PCI like stuff for fintech
+[35:11.34]  companies was a toss-up and I picked
+[35:14.10]  based on you know
+[35:15.96]  my personal preference or where I had
+[35:18.84]  the most Network to begin with and did
+[35:22.98]  they turn out to be the right hunches
+[35:25.22]  yeah uh you know one of my learnings
+[35:28.50]  after investing in I think over 67
+[35:31.98]  companies now is that we read a lot
+[35:35.52]  about pivots
+[35:37.02]  and they are glorious stories when they
+[35:39.18]  happen
+[35:40.62]  but for every Slack
+[35:43.50]  there is 100 dead slacks
+[35:46.68]  and
+[35:48.66]  20 successful Salesforce and zendask
+[35:51.60]  and
+[35:52.98]  companies like Salesforce and mongodb
+[35:55.62]  and snowflake
+[35:57.84]  basically can't pivot
+[36:00.30]  and if you try to prevent your basically
+[36:03.06]  you're going to end up killing the
+[36:04.14]  company so you better have very clear
+[36:05.58]  idea if you saw our seat deck
+[36:08.28]  word by word four years later we built
+[36:11.40]  the exact same product we target the
+[36:13.86]  exact same customers in the exact right
+[36:15.84]  order
+[36:16.80]  and it's not because you know we are
+[36:19.86]  somehow Geniuses it's because
+[36:22.80]  we frustratingly wait 10 years to start
+[36:25.38]  the company so we've done the work if we
+[36:27.36]  hadn't done the work
+[36:28.92]  instead of doing the work 10 years prior
+[36:31.20]  I would have to basically I would add
+[36:33.24]  another two to three years to my journey
+[36:35.70]  if we had to basically start the product
+[36:37.92]  now so you you describe getting the
+[36:40.38]  first 10 customers as relatively easy
+[36:42.80]  given the
+[36:44.70]  what you describe is like 10 plus two
+[36:47.22]  years of of pre-work that happened
+[36:51.36]  what about getting to the first 100
+[36:54.30]  customers I mean the first 10 I think
+[36:56.28]  were a lot about you know through your
+[36:58.26]  network and finding the right types of
+[37:00.06]  customers how did you get to the first
+[37:02.46]  100 was that still a lot of outbound or
+[37:05.70]  what helped you kind of accelerate the
+[37:08.04]  growth there I think one of the pieces
+[37:09.96]  of feedback you'll hear from second and
+[37:13.02]  third time Founders and you know some of
+[37:15.96]  the legendary investors that you know
+[37:19.44]  famous names that you might have heard
+[37:21.18]  they will say things like you know
+[37:23.64]  solving a harder problem
+[37:26.76]  is an easier path to building a great
+[37:29.04]  company
+[37:30.24]  a counterintuitively and the reason I
+[37:32.46]  think that's
+[37:33.92]  surprisingly true is because when you
+[37:36.84]  solve a hard problem
+[37:38.84]  meaningfully
+[37:40.74]  there's so much pent-up demand for
+[37:43.62]  people who had that problem that
+[37:46.74]  a lot of those people when they're here
+[37:48.60]  for the first time so you know to this
+[37:51.06]  day 90 of people listening to this have
+[37:53.52]  no idea what mongodb is but imagine you
+[37:56.94]  were the CTO of eBay or Walmart or
+[38:00.48]  Pinterest
+[38:01.88]  or FedEx and your biggest problem was
+[38:05.46]  every time you added a new field
+[38:07.62]  to your catalog or one more field to
+[38:09.96]  your you know database everything went
+[38:12.90]  down for like days and weeks and it took
+[38:15.90]  months so you basically never changed
+[38:17.64]  anything so you literally couldn't
+[38:19.32]  evolve your product because you couldn't
+[38:20.82]  evolve your schema
+[38:22.62]  when you heard for the first time what a
+[38:24.84]  document database could do you would
+[38:26.64]  line up like hey I want a nosql database
+[38:29.76]  in a similar way I think the problem we
+[38:32.46]  were solving was had a lot of pent-up
+[38:34.38]  demand we got some friendly press
+[38:37.20]  because of the ambitious nature of our
+[38:39.54]  offering
+[38:40.50]  that generated a lot of inbound interest
+[38:43.08]  which we obviously were able to take
+[38:45.72]  advantage of and then we also did a lot
+[38:49.08]  of thoughtful content marketing I hate
+[38:52.62]  the word content marketing because it
+[38:54.30]  implies it's more marketing than content
+[38:57.48]  but it's really thoughtful content it's
+[39:00.00]  really like what we are doing right now
+[39:01.74]  which is can you from first principles
+[39:04.38]  explain why you need a document database
+[39:07.80]  can you explain from first principles
+[39:09.54]  why I need an application server can you
+[39:12.06]  explain from first principles why you
+[39:14.46]  need this pii what what are the
+[39:16.68]  scenarios what are the use cases every
+[39:19.02]  time I wrote a blog post about it we got
+[39:21.66]  more hits we got more users yeah I I
+[39:24.54]  think you you know you're tackling one
+[39:25.98]  of those problems where
+[39:29.76]  maybe initially you know some people
+[39:32.58]  like like the feedback you got for you
+[39:34.44]  know investors this will never work this
+[39:36.78]  is too hard and so on
+[39:38.64]  but when you're talking to somebody who
+[39:42.54]  who understands the problem or the pains
+[39:45.24]  that they're currently dealing with with
+[39:46.80]  the current solution and they they can
+[39:50.40]  that kind of it clicks this Paradigm
+[39:52.92]  Shift of how things could be different
+[39:54.54]  or better
+[39:55.92]  I I think that you know in many ways
+[39:58.86]  it's like it it it becomes a lot easier
+[40:02.16]  because you haven't even told them about
+[40:04.38]  your product yet potentially right
+[40:06.12]  you've just helped them to understand
+[40:07.32]  hey what if there was a better different
+[40:09.36]  way to do this and people are like
+[40:10.68]  totally like the the CTO who's like I
+[40:14.22]  hate building this stuff and if there
+[40:15.66]  was a better way to do it I'm I'm all in
+[40:18.48]  um so I think that that's kind of
+[40:19.74]  totally uh makes sense I want to talk
+[40:22.26]  about one story that you shared with me
+[40:24.42]  about a customer that you sold to
+[40:29.10]  and then they had a new CTO come in and
+[40:34.74]  suddenly it didn't look like they were
+[40:37.14]  going to be a customer for much longer
+[40:38.76]  can you tell us that story one of our
+[40:41.52]  first 10 customers which was a customer
+[40:44.22]  who was
+[40:45.66]  you know very excited they were very
+[40:47.76]  happy with what we were building for
+[40:49.98]  them I think we were about
+[40:52.02]  three or three to five months into the
+[40:54.84]  contract
+[40:55.88]  they were not yet Fully live because
+[40:59.52]  they were building something new using
+[41:01.44]  our product and they ended up having a
+[41:04.02]  leadership change where they hired
+[41:05.94]  basically sort of a new Chief Architect
+[41:07.68]  kind of a person
+[41:09.30]  and this person who had never heard of
+[41:13.02]  Sky flow he had never heard of data
+[41:15.30]  privacy Vault comes in uh his manager
+[41:19.26]  ctoslc here is my team here's a you know
+[41:22.80]  200 Engineers to manage and here is our
+[41:25.58]  uh you know things we are using to build
+[41:28.08]  our product
+[41:29.40]  and is instant reaction a few weeks in
+[41:34.68]  was like who ordered that right so it's
+[41:38.94]  kind of like imagine you were
+[41:42.00]  a contractor building a house
+[41:44.64]  and you just got assigned as the new
+[41:47.28]  contractor and there is this weird
+[41:49.80]  shaped path stuff sitting and you're
+[41:52.02]  like who who ordered this thing like
+[41:54.84]  you know I I don't know what this thing
+[41:57.12]  is
+[41:58.26]  I have never thought about this
+[42:00.68]  and when you ask other people on
+[42:03.72]  sighting what is this thing they don't
+[42:06.54]  have the words in the language to
+[42:09.12]  explain it to him so they might just say
+[42:10.92]  yeah this is some kind of a data
+[42:12.84]  security thing we have some mind might
+[42:14.82]  say well this helps us with HIPAA and
+[42:16.62]  PCI someone else might say hey this
+[42:19.32]  thing solves our gdpr problems what
+[42:21.18]  whatever words they use
+[42:22.86]  it doesn't sound very appealing does it
+[42:24.96]  right because
+[42:27.60]  people on the inside you know they're
+[42:29.64]  not it's not their job to sell the
+[42:31.56]  product back again to to themselves for
+[42:34.80]  us it would have been a crushing blow
+[42:36.60]  right so this is you know this is the
+[42:39.00]  customer I'm giving references to other
+[42:41.04]  customers for this is the customer I'm
+[42:43.20]  calling up and Masters like hey you know
+[42:45.48]  if you want to invest this is the
+[42:47.58]  customer you should talk to they they
+[42:49.62]  are a living legend blah blah blah and
+[42:52.92]  you know at that time I would say you
+[42:55.02]  know we were obviously sub million
+[42:57.36]  dollars in Era at that point and
+[42:59.70]  I don't remember the exact number but
+[43:01.44]  they were somewhere between
+[43:02.82]  20 to 30 percent of our Revenue right on
+[43:06.12]  a very small basis that's you know if
+[43:08.94]  you're doing
+[43:09.84]  300K in error it's very easy for One
+[43:12.54]  customer to be like 20 of your Revenue
+[43:14.46]  right especially your largest customers
+[43:17.34]  even this to this day if you remember
+[43:18.96]  when uh Twitter went public 20 of the
+[43:22.20]  revenue or something like that was
+[43:23.40]  coming in from Just One customer Uber so
+[43:25.74]  there's a lopsite in this tune in all
+[43:27.84]  deals especially early stage companies
+[43:29.82]  especially for problems that we are
+[43:31.98]  solving so deep pain
+[43:35.18]  and there's nothing really to anchor
+[43:38.28]  because you had not even built a
+[43:41.52]  relationship with this guy also so
+[43:43.74]  happens this is covid-19 Days by the way
+[43:46.50]  so you can't go meet this person you
+[43:48.84]  can't talk to this person their own team
+[43:50.46]  is distributed how did you hear about
+[43:52.56]  the problem well he called up and said I
+[43:54.78]  want to cancel
+[43:56.70]  and and
+[43:58.16]  I said well tell me more and and I said
+[44:02.94]  and he's like well I just took the job
+[44:06.24]  and I'm basically going to cancel
+[44:07.62]  everything that previous people bought
+[44:09.72]  and then we'll start with a fresh trick
+[44:11.94]  because like you know why should I buy
+[44:13.86]  whatever the previous guy had bought and
+[44:16.44]  which is very fair right that's what I
+[44:18.42]  would do in a new job uh if I was gonna
+[44:20.94]  wearing Clean Slate he
+[44:22.86]  when you're given a clean slate guess
+[44:24.66]  what you come in and first Clean Slate
+[44:26.46]  so he just was like okay I'm gonna use
+[44:28.38]  this Rag and clean the slate and build
+[44:29.76]  my own architecture diagram and I think
+[44:32.10]  this is where you know a critical point
+[44:35.40]  and you know when I talk to Founders and
+[44:37.26]  stuff I give them coaching comes in
+[44:39.84]  how you react to
+[44:42.66]  that customer in those moments
+[44:45.20]  defines you in the eyes of the customer
+[44:47.70]  but also defines you in our eyes of your
+[44:50.58]  own team
+[44:51.48]  defines you in the eyes of your
+[44:53.70]  investors because trust me I've worked
+[44:57.36]  at Oracle in Salesforce
+[44:59.52]  even years after going public you have
+[45:03.24]  those moments where your largest
+[45:05.82]  customer just you know has a new
+[45:08.70]  leadership change or
+[45:11.10]  they just lose a contract and they don't
+[45:13.50]  want to do what they were planning to do
+[45:14.94]  so all these things happen
+[45:17.52]  I'm lucky I had a very senior leadership
+[45:19.98]  team in place from early days uh you
+[45:22.50]  know there is advantages to youth but
+[45:24.42]  there's one advantages experience
+[45:27.00]  you've suffered all the pain that you're
+[45:28.80]  gonna suffer before at least once before
+[45:31.26]  so
+[45:32.58]  we were like okay this is gonna suck but
+[45:34.74]  it's okay you know in five years it
+[45:37.08]  wouldn't matter either ways right sort
+[45:39.00]  of the perspective comes in
+[45:41.04]  so
+[45:42.18]  we no we did what we what everybody
+[45:45.00]  should do which is like hey why don't we
+[45:47.88]  just teach it you know again you can
+[45:50.64]  legally say hey I have a contract blah
+[45:52.68]  blah blah but we're like look why don't
+[45:54.60]  we just meet let me tell you what
+[45:58.02]  problem we are solving and why your team
+[46:00.90]  was looking into using this product and
+[46:02.82]  so it was a conversation for an hour and
+[46:06.66]  you know he was very reluctant because
+[46:08.88]  he felt like it'd be salesy but
+[46:11.58]  through even our first call
+[46:14.04]  I was able to earn his trust back that
+[46:16.32]  look this fine you know you know I've
+[46:19.14]  run billion dollar businesses before
+[46:21.02]  your 60k contract is not going to kill
+[46:24.12]  you know me or my company so it's fine
+[46:26.28]  as painful as it may sound right now we
+[46:28.92]  live through it why don't we just talk
+[46:30.66]  to each other and you know we'll move on
+[46:32.70]  and that opened the door enough where we
+[46:35.22]  started talking to each other me and
+[46:37.56]  couple of our senior Engineers we just
+[46:39.96]  went there and said let's have a
+[46:41.46]  conversation we talked to him zero times
+[46:44.76]  about the contract about legality about
+[46:48.24]  ethics we just said hey tell us what
+[46:51.42]  you're building how you're now that you
+[46:53.82]  are the new architect tell us how you're
+[46:55.26]  building this thing
+[46:57.00]  and let's just have a discussion
+[46:59.46]  um
+[47:00.84]  of course in the background what was
+[47:04.02]  happening was uh I knew where he was
+[47:06.66]  what he was thinking we assembled the
+[47:10.98]  documentation necessary the stories and
+[47:13.50]  when by the time we met him
+[47:15.36]  we had an even more compelling case but
+[47:18.30]  we heard him out
+[47:19.92]  realized that some of his priorities
+[47:22.56]  were very different than the original
+[47:24.06]  priorities because you know companies
+[47:26.46]  themselves change so imagine you sold
+[47:28.44]  this is not the customer we're talking
+[47:30.30]  about but imagine you sold to Starbucks
+[47:31.80]  or privacy solution for employees and
+[47:35.28]  suddenly they they care more about
+[47:37.80]  customer data or they're launching a
+[47:40.14]  payments application
+[47:42.60]  you go in there you say hey tell me what
+[47:44.70]  your top priorities are
+[47:46.62]  and it so happens you know and I can I
+[47:49.62]  can know this for every business no
+[47:51.84]  matter what you're trying to do you're
+[47:53.04]  going to end up with some privacy or
+[47:55.20]  compliance or security challenges so we
+[47:56.94]  identified a bunch we offered to help
+[47:59.04]  them if they wanted and you know we were
+[48:02.58]  able to turn that around over the next
+[48:05.46]  few months and today that Chief
+[48:08.52]  Architect actually is no longer with
+[48:10.20]  this company two years later he is in
+[48:13.32]  fact now at a very large financial
+[48:15.00]  institution
+[48:16.38]  and I just got a text message from him a
+[48:19.26]  week ago where he says I just took over
+[48:22.08]  a cxo of this bank and the first thing
+[48:25.62]  I'm going to look into is using Sky flow
+[48:28.56]  for our snowflake initiative and for our
+[48:31.50]  lunch language model initiative because
+[48:33.68]  I love this product
+[48:36.18]  and that transformation in some ways is
+[48:39.36]  the defining Journey for
+[48:41.58]  every customer facing purpose person in
+[48:44.28]  the company when we do our sales
+[48:46.20]  enablement we talk about customer
+[48:47.70]  success we don't talk about you know
+[48:50.46]  renewal rates and churn rates we talk
+[48:52.98]  about how do you stay customer focused
+[48:55.98]  intensely how do you actually think
+[48:58.50]  through their perspective
+[49:00.42]  how do you have more empathy for them
+[49:02.40]  you know the guy is taking on a new job
+[49:04.32]  he probably has a bunch of stresses why
+[49:06.72]  you know what's going on in his mind
+[49:08.88]  and through that process and again we've
+[49:10.80]  seen this happen again again both in
+[49:12.66]  great scenarios and some negative
+[49:14.04]  scenarios and it always works out best
+[49:17.28]  if you focus on your customers problem
+[49:19.74]  rather than your own problems I love it
+[49:22.62]  that's such a great story
+[49:24.54]  and I think yeah the the you just nailed
+[49:26.94]  the the big lesson from there like
+[49:29.22]  focusing on the customers problems and
+[49:31.20]  and I think when you talk about customer
+[49:32.88]  success
+[49:34.92]  really authentically
+[49:37.62]  talk about customer success and not just
+[49:41.28]  you know activations and renewals and
+[49:43.80]  stuff those you know important metrics
+[49:45.42]  but that's not you know customer success
+[49:48.66]  all right great we should uh wrap up
+[49:50.22]  let's get on to uh the lightning round
+[49:52.56]  I've got seven quick fire questions for
+[49:55.38]  you just try to answer them as quickly
+[49:56.76]  as you can what's one of the best pieces
+[49:59.16]  of business advice you've ever received
+[50:01.92]  have a beginner's mind Mark benioff
+[50:04.56]  talks about it in some ways everything I
+[50:07.02]  just said
+[50:08.28]  if you focused I've said the opposite
+[50:10.32]  things too and that's for a reason
+[50:12.78]  every new business has its own unique
+[50:15.06]  constraints so learn everything but
+[50:17.64]  don't blindly follow it it's great
+[50:19.50]  advice uh what book would you recommend
+[50:21.36]  to our audience and why I love good to
+[50:24.12]  great it's a 25 year old book about how
+[50:26.82]  great companies are built and you know
+[50:29.70]  they're usually around a corporate spur
+[50:31.44]  what's amazing about it is you learn
+[50:33.48]  some of the best strategies to grow a
+[50:35.76]  company
+[50:36.72]  but what I love about it is ironically
+[50:39.06]  you'll also learn that most of those
+[50:41.52]  companies are now dead or dying
+[50:43.80]  and that speaks to how
+[50:46.56]  what worked for G 1980s and 90s
+[50:50.34]  actually killed them in 2000s what
+[50:53.46]  worked for Honeywell in 2005 won't work
+[50:56.70]  for them in 2023 so it's great because
+[50:59.88]  you learn and then you also learn that
+[51:03.06]  no learning is permanent yeah I think
+[51:05.22]  that's an unintentional benefit of that
+[51:07.74]  book after all these years of seeing
+[51:10.50]  what's happened to those companies uh
+[51:12.30]  what's one attribute or characteristic
+[51:14.58]  in your mind of a successful founder
+[51:16.62]  insight
+[51:18.30]  what's your favorite personal
+[51:20.34]  productivity tool or habit setting aside
+[51:24.14]  time or having two distinct modes of
+[51:27.42]  operation execution and strategy it's
+[51:30.66]  not a spectrum they're fundamentally two
+[51:32.58]  different modes you have to make time
+[51:34.44]  and space for it think differently in
+[51:36.42]  those two modes what's uh new or crazy
+[51:39.60]  business idea you'd love to pursue if
+[51:41.64]  you had the time I have 45 of those if
+[51:44.88]  anybody wants to start a company I can
+[51:46.56]  give you one of them I think one of the
+[51:49.38]  you know more fun ones for me would be
+[51:52.34]  redefining how we
+[51:55.20]  help people find jobs and go through
+[51:58.62]  college I think there are ways to apply
+[52:01.34]  llm kind of stuff and predictive anal
+[52:04.14]  decks
+[52:04.98]  and fundamentally change
+[52:07.80]  how you decide what loans to take what
+[52:10.32]  colleges to go to what courses to take
+[52:12.38]  and a lot of things you don't have to do
+[52:14.88]  today because things have changed that
+[52:17.22]  could lead to you being successful in a
+[52:19.86]  career I think there's lots of brilliant
+[52:22.50]  ideas there that are you know
+[52:24.30]  aspirational for me today and maybe I'll
+[52:27.18]  go build them next uh what's an
+[52:29.34]  interesting or fun fact about you that
+[52:31.02]  most people don't know I think I am
+[52:34.50]  a hundred percent as nerdy as I come
+[52:37.32]  across on Twitter and also 100 as
+[52:40.98]  irreverent and and trying to be funny
+[52:43.52]  and uh finally what's one of your most
+[52:46.08]  important passions outside of your work
+[52:48.00]  I think I I deeply care about friends
+[52:51.66]  and family I think relationships are
+[52:53.82]  extremely important to me in fact
+[52:55.86]  weirdly enough that ties back to work
+[52:57.54]  too because even at work I care about
+[52:59.52]  relationships a lot so and then
+[53:01.86]  obviously reading and learning awesome
+[53:04.02]  well aren't you thank you so much for
+[53:06.18]  joining me and sharing the story of Sky
+[53:08.82]  flow I think it was a great conversation
+[53:10.86]  I think you shared some very uh useful
+[53:14.66]  insights on uh not just your journey but
+[53:18.24]  some of the experiences of a whole bunch
+[53:19.92]  of other tech companies if people want
+[53:22.62]  to learn more about Sky flow they can go
+[53:25.20]  to skyflow.com and if folks want to get
+[53:28.86]  in touch with you what's the best way
+[53:30.36]  for them to do that my email is CEO
+[53:32.88]  skyflower.com and then I'm on Twitter at
+[53:36.00]  anshu blog awesome well include a link
+[53:39.12]  to your Twitter handle on uh the show
+[53:41.40]  notes page awesome thank you so much
+[53:43.56]  it's been an absolute pleasure and I
+[53:45.00]  wish you and the team that skyflow the
+[53:47.04]  best of success thank you my pleasure
+[53:49.50]  cheers

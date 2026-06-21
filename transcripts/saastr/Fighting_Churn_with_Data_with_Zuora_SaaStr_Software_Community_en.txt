@@ -1,0 +1,1322 @@
+Title     : Fighting Churn with Data with Zuora | SaaStr Software Community
+Video ID  : Zg639FO5Etk
+URL       : https://www.youtube.com/watch?v=Zg639FO5Etk
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1313
+Saved at  : 2026-06-20 23:39:18
+------------------------------------------------------------
+
+[00:05.60]  my name is carl gold
+[00:06.88]  chief data scientist at zora zora is a
+[00:09.68]  subscription management platform
+[00:11.76]  my phd is in biology but you know now
+[00:13.76]  i'm a subscription economy grew
+[00:17.36]  all companies can benefit from fighting
+[00:19.92]  churn with data
+[00:21.92]  when you look at a sas product they're
+[00:23.76]  typically tracking
+[00:24.96]  dozens or even hundreds of events if you
+[00:27.92]  can find a few key relationships that's
+[00:30.08]  what really makes the difference
+[00:32.08]  churn is hard to fight because it's
+[00:34.00]  owned by different parts of your
+[00:35.92]  organization
+[00:37.44]  so the churn fighters in your business
+[00:39.44]  they need insights from the data
+[00:41.36]  it's a multi-team effort the product
+[00:43.92]  creators the customer support people
+[00:46.00]  they're all thinking about this
+[00:49.68]  in general more observations can never
+[00:52.08]  hurt you
+[00:53.36]  you're not gonna find easy fixes for
+[00:55.44]  churn you really have to deliver more
+[00:57.44]  value
+[01:00.74]  [Music]
+[01:07.92]  thank you so much the sasser team for
+[01:09.44]  making that it actually makes my
+[01:11.20]  my nerdy data scientist life look kind
+[01:14.40]  of
+[01:14.64]  cool which is you know quite
+[01:16.64]  unbelievable
+[01:18.24]  if you think about it but hey it's kind
+[01:20.08]  of true so my name is carl gold welcome
+[01:22.40]  to today's
+[01:23.20]  session at saster scale fighting churned
+[01:25.60]  with data is the name of the session
+[01:27.92]  i'm the chief data scientist at a
+[01:29.60]  company called zora and i'll be telling
+[01:31.36]  you more about all this in seconds
+[01:33.20]  and at the bottom is my twitter handle
+[01:35.04]  carl 24k
+[01:36.72]  so just to dive right in i'm gonna dive
+[01:39.60]  right in with the basics i'm gonna level
+[01:41.44]  set for everyone
+[01:42.80]  i don't know if i need to do this at
+[01:44.88]  saster but i have to i start out all my
+[01:47.20]  presentations with a little intro
+[01:49.36]  you know what is churn uh if you don't
+[01:52.16]  know
+[01:52.64]  churn is customers quitting and it comes
+[01:56.08]  from
+[01:56.48]  the term the churn rate which means the
+[02:00.00]  percentage of customers
+[02:01.52]  which is quitting or dropping out on you
+[02:05.12]  you typically measure the churn rate in
+[02:06.80]  a month or a year time period and we'll
+[02:09.04]  see more of that
+[02:10.40]  in just a second so
+[02:13.60]  turn is also now a noun and a verb it's
+[02:16.72]  not
+[02:17.04]  just a rape so you can say the customer
+[02:19.84]  churned
+[02:20.88]  or make a report of last quarter's churn
+[02:24.16]  or even a churn report
+[02:25.92]  um it's also you know you can also say
+[02:28.96]  oh i'm churning from hulu or netflix so
+[02:31.92]  there's a lot more uses for
+[02:33.76]  churn now for those of us who are
+[02:35.44]  already in the sas business
+[02:37.04]  but the fundamental thing that you all
+[02:38.72]  must know is that churn cancels your
+[02:41.12]  growth
+[02:41.68]  because churn is your new customers
+[02:44.80]  you know dropping out the door um so
+[02:48.72]  did i really have to tell you all this
+[02:50.32]  at saster scale i think this is one
+[02:52.56]  conference where uh i don't have to
+[02:55.52]  explain what churn is and what we're
+[02:57.12]  here for
+[02:58.16]  although to finish off the level setting
+[03:00.16]  i want to say that
+[03:01.20]  please feel free to ask questions you
+[03:03.12]  know may i don't want to set a high bar
+[03:04.96]  maybe if this is
+[03:06.08]  any of this is new for you or if you
+[03:07.84]  have any in-depth questions
+[03:09.68]  you know please ask them in the q a i'm
+[03:11.84]  not going to try to answer questions
+[03:13.60]  during
+[03:14.40]  the presentation but we have a lot of
+[03:16.40]  time for
+[03:17.60]  questions at the end so that's the
+[03:20.96]  basic level set on churn let me tell you
+[03:23.28]  a little bit more about my background
+[03:25.20]  you know and why
+[03:26.00]  i'm here talking to you about churn uh
+[03:28.96]  what is fighting churn with data
+[03:31.20]  that's actually a book that i wrote and
+[03:33.52]  it's just been published it's just come
+[03:35.36]  out in hard copies
+[03:36.80]  it's actually a book of data science and
+[03:39.04]  analytics it's not really
+[03:40.64]  it's not focused on the business case
+[03:42.72]  but it's all about
+[03:44.16]  churn reducing strategies um and it
+[03:47.12]  includes step-by-step
+[03:48.64]  instructions and open source code so
+[03:51.04]  it's technic really a book for your tech
+[03:52.88]  team
+[03:53.68]  um but still it's based on
+[03:57.28]  my learnings over the years as zora's
+[03:59.76]  chief data scientist
+[04:01.04]  where i've worked on churn with many
+[04:03.04]  different companies
+[04:04.08]  so this book is really all about the
+[04:05.84]  lessons i learned and
+[04:07.76]  to help you avoid the mistakes that i
+[04:10.16]  made
+[04:11.12]  along the way fighting churn data so
+[04:13.92]  just
+[04:14.24]  really briefly if you don't know what
+[04:16.08]  zora is
+[04:17.36]  zora is a subscription management
+[04:19.28]  platform we say our customers from
+[04:21.68]  avalara to zoom
+[04:23.28]  i'm not really here to talk to you about
+[04:25.36]  zora i just want to
+[04:27.12]  by way of explanation you know how did i
+[04:29.20]  come to work on churn for so many
+[04:31.28]  different companies
+[04:32.40]  it was because of my role as chief data
+[04:35.36]  scientist at zora
+[04:36.64]  it brought me into contact with all
+[04:38.40]  these companies we have a product at
+[04:40.16]  zora that was allowing them to analyze
+[04:42.24]  their churn
+[04:43.12]  so that was made my role unique in
+[04:45.44]  comparison to a data scientist
+[04:47.68]  at a typical company where they only
+[04:49.36]  work on churn for their own company
+[04:51.84]  as data scientist at zora i worked on
+[04:54.48]  churn for
+[04:55.20]  many many companies and that was where i
+[04:56.88]  got the experiences
+[04:58.32]  that let me you know write the book so
+[05:01.04]  i'm going to go back
+[05:02.08]  to kind of level setting and just talk
+[05:03.92]  about churn rates which is something
+[05:05.84]  that people often want to know about
+[05:08.64]  so this is showing what typically
+[05:10.48]  typical monthly churn rates
+[05:12.56]  look like and you can see there's a big
+[05:14.56]  range so this is based on
+[05:16.40]  zora data um there's a big range of
+[05:19.60]  churn rates and it depends
+[05:20.96]  a lot on the business model and company
+[05:23.76]  maturity
+[05:24.64]  for example we generally see that
+[05:26.88]  consumer products
+[05:28.32]  have significantly higher churn rates
+[05:30.48]  than business products or b2b
+[05:32.40]  products um overall we see a median of
+[05:35.44]  around two percent
+[05:36.64]  for zora customers and you do see
+[05:39.52]  different
+[05:40.08]  numbers coming out of different sources
+[05:43.04]  um
+[05:43.76]  for example another you know there are
+[05:46.00]  other subscription management
+[05:47.44]  platforms more geared towards small
+[05:49.68]  businesses
+[05:50.56]  and those typically have you know
+[05:52.16]  somewhat higher churn rates just because
+[05:54.56]  of the nature of being a small business
+[05:57.44]  um
+[05:58.00]  so for details on this data we published
+[06:00.48]  it in a report from zora called the
+[06:02.64]  zora subscription economy index and you
+[06:05.36]  can find it well it's pretty easy to
+[06:07.04]  google for
+[06:08.24]  subscription economy index so this is
+[06:11.28]  the typical monthly churn rates and this
+[06:14.16]  is
+[06:14.56]  how you're going to look at churn if
+[06:16.72]  you're a consumer company
+[06:18.96]  because you take you sell your chur your
+[06:21.28]  product in
+[06:22.08]  typically monthly or short term
+[06:23.76]  contracts so you look at monthly churn
+[06:26.00]  if you're a business to business company
+[06:28.32]  or you're selling annual contracts
+[06:30.40]  you want to look at the annual churn
+[06:32.08]  rate and this is showing
+[06:33.60]  how those monthly churns translate into
+[06:36.72]  the annual
+[06:37.52]  loss to your growth um and so you can
+[06:40.40]  see
+[06:41.44]  um the median churn of two percent per
+[06:44.88]  month
+[06:45.28]  translates into 22 percent per year
+[06:48.80]  5.7 per month translates into
+[06:52.32]  50 per year so that's if you're in that
+[06:55.44]  that group that's half your growth
+[06:57.20]  walking out the door
+[06:58.64]  uh each month so for zora customers the
+[07:01.68]  median annual churn is 22
+[07:04.32]  um as you can see here um
+[07:07.36]  and as i mentioned this is typically how
+[07:09.52]  you would look at your churn if you're a
+[07:10.88]  b
+[07:11.12]  to b company so if you're lucky and
+[07:14.56]  you're in the top half of this
+[07:16.32]  group you know above the media and
+[07:17.92]  that's around 20 percent of your growth
+[07:20.00]  disappearing
+[07:20.88]  every year so churn is a huge problem
+[07:23.92]  you know for all companies
+[07:25.84]  i'll mention that public companies are
+[07:28.72]  kind of like the best
+[07:29.68]  in class for churn is typically around
+[07:32.00]  10
+[07:32.96]  or less per year and that's what you see
+[07:35.60]  kind of in the top customers
+[07:37.68]  uh analyzed in this cohort so like i
+[07:40.96]  said before where you are
+[07:42.48]  on this chart it really depends a lot on
+[07:44.80]  what type of business business you're
+[07:46.48]  doing
+[07:47.04]  but i have seen that all companies that
+[07:49.76]  every level of churn that they start out
+[07:51.60]  with
+[07:52.24]  if they do make an effort to use their
+[07:54.56]  data
+[07:55.28]  to fight churn there's really you know a
+[07:57.92]  big benefit
+[07:59.04]  that that comes from it okay
+[08:02.16]  so another thing people have been asking
+[08:04.56]  me a lot about
+[08:05.44]  is what happened this year uh due to
+[08:08.00]  cobit 19
+[08:09.44]  and here is some data on that this is
+[08:12.16]  showing
+[08:12.88]  the annual churn rates again this is
+[08:15.60]  from the zora subscription economy index
+[08:17.76]  based on
+[08:18.72]  uh customers on the zora platform we saw
+[08:21.76]  churn peaked in q1 at 27 percent
+[08:25.52]  uh average annual rate and that is the
+[08:28.88]  highest
+[08:29.52]  churn rate this is these are annualized
+[08:31.44]  churn rates shown here
+[08:32.96]  um on a quarterly basis and that is
+[08:36.00]  actually the highest churn rate we've
+[08:37.60]  seen in quite a while
+[08:38.96]  27 i i don't think it's been that high
+[08:41.60]  yeah since like
+[08:42.64]  2015 or something but it's not that high
+[08:46.48]  that's my first reaction i mean sure
+[08:48.80]  it's the highest rate we've seen in a
+[08:50.32]  while but
+[08:50.96]  i mean really is this is that as bad as
+[08:52.64]  it gets and
+[08:54.24]  churn fell back down again in q2 and q3
+[08:57.68]  coming back down to the typical levels
+[09:00.08]  from 2019 so the impact on churn overall
+[09:04.32]  from kobit
+[09:05.12]  19 has not been that strong now that's
+[09:07.92]  not to say there are not some businesses
+[09:10.08]  that have been very disrupted
+[09:12.16]  by what's going on this year
+[09:13.52]  particularly companies
+[09:15.20]  that where their product involves you
+[09:17.76]  know face-to-face meetings or travel
+[09:20.80]  live events those companies have
+[09:22.72]  obviously had much more difficult times
+[09:24.72]  but there's also been
+[09:26.08]  um as you know a rush to adopt digital
+[09:28.88]  services and products and so many people
+[09:31.12]  are working from home and so many
+[09:33.12]  companies are going digital so there's
+[09:35.52]  you know contrasting trends you know in
+[09:37.76]  churn and overall the net effect
+[09:40.08]  uh in the sas market has been pretty
+[09:42.24]  muted
+[09:43.60]  um so that's how covert has impacted
+[09:45.68]  sure now let's stop
+[09:47.04]  talking about the churn numbers and talk
+[09:50.24]  about the actual
+[09:51.36]  churn reducing strategies this is what
+[09:53.52]  fighting churn with data
+[09:55.04]  uh is really about it's data-driven
+[09:57.84]  churn fighting
+[09:58.72]  strategies so the this is the
+[10:02.08]  the top four churn fighting strategies
+[10:04.32]  that i see companies use
+[10:05.84]  and that um i provide analysis for
+[10:09.60]  the first one is making a great product
+[10:12.88]  did you did you realize that would be a
+[10:14.56]  churn fighting strategy
+[10:16.24]  well having a great product is actually
+[10:18.40]  your best churn fighting strategy
+[10:20.64]  and you can use the data that you
+[10:22.64]  collect to make a great product
+[10:24.88]  without relying on biased surveys
+[10:27.92]  surveys of your customers are great but
+[10:30.00]  they mostly
+[10:31.36]  the customers who love you or hate you
+[10:33.36]  are the ones you know who fill it out
+[10:35.36]  but using data in the way i'm going to
+[10:37.76]  explain
+[10:38.40]  will let you see what are your best
+[10:40.24]  product features
+[10:41.52]  uh in a way that uses all of your
+[10:43.44]  customer data and
+[10:44.72]  gets information from all of your
+[10:46.24]  customers
+[10:47.92]  okay next is marketing
+[10:51.20]  or particularly engagement marketing
+[10:53.60]  where you re-engage with your existing
+[10:55.60]  customers and here the key is to use the
+[10:58.24]  data
+[10:58.96]  to make the commun communication to your
+[11:01.28]  customers
+[11:02.00]  actually valuable actually telling them
+[11:04.64]  about
+[11:05.12]  features that they don't know about or
+[11:07.52]  telling them
+[11:08.16]  tips and tricks for features that they
+[11:10.08]  really value
+[11:11.20]  that's the kind of engagement that your
+[11:12.96]  customers want and not
+[11:14.80]  you spamming them okay next is customer
+[11:17.92]  success
+[11:18.72]  i love being at sastra scale because i
+[11:20.96]  don't have to explain what customer
+[11:22.72]  success is there's been a lot of great
+[11:24.56]  presentations
+[11:25.92]  about customer success these past couple
+[11:28.40]  of days
+[11:29.20]  and so using your data is a gr is the
+[11:32.80]  best way to see
+[11:34.24]  what customers need training and
+[11:36.88]  onboarding
+[11:37.68]  and when do they need it so again you
+[11:39.52]  want to take a targeted approach
+[11:41.44]  with your training and onboarding um by
+[11:44.00]  using data to get the customers that
+[11:45.92]  really
+[11:46.40]  that really need it now the fourth way
+[11:49.04]  to fight churn is actually in your
+[11:50.96]  pricing
+[11:51.84]  and here what i tell people you're
+[11:54.16]  trying to do
+[11:55.04]  is give customers value with a
+[11:57.60]  multi-tiered
+[11:58.88]  pricing plan but don't give discounts a
+[12:01.44]  lot of people
+[12:02.24]  mistakenly think that giving out
+[12:04.56]  discounts
+[12:05.36]  is how you reduce churn and there are
+[12:08.24]  examples of that mostly from the cable
+[12:10.08]  companies where you call up and say you
+[12:11.84]  want to cancel they throw you a discount
+[12:13.76]  well sas leaders if you give out
+[12:16.64]  discounts to reduce
+[12:17.76]  churn you're undermining your pricing so
+[12:19.92]  what you want to do
+[12:21.04]  is use your data and design a
+[12:22.96]  multi-tiered pricing strategy
+[12:25.44]  where people can get value at different
+[12:27.68]  levels
+[12:28.72]  of involvement with your product now
+[12:31.12]  there's actually a fifth way to
+[12:32.88]  reduce churn which i talk about in the
+[12:35.04]  book and that's to find
+[12:36.84]  lookalikes uh of your best customers so
+[12:39.84]  figure out where your best customers are
+[12:42.24]  are coming from and really double down
+[12:44.08]  on those channels
+[12:45.36]  i'm not gonna go into that today and i
+[12:47.28]  consider that kind of a lesser way of
+[12:49.28]  reducing churn
+[12:50.64]  because they're you're not saving your
+[12:52.56]  current customers you're just looking
+[12:54.00]  for new better customers
+[12:55.44]  i'm not saying you shouldn't do that but
+[12:57.60]  again it's
+[12:59.28]  uh finding better look-alike channels is
+[13:01.84]  is kind of an extra method we're not
+[13:03.60]  going to go into today but it is in the
+[13:05.12]  book that i wrote
+[13:06.56]  so let's see so these are the main ways
+[13:09.28]  to reduce
+[13:10.24]  churn and you know how does data
+[13:12.08]  contribute to them is the next subject
+[13:13.92]  that we're going to talk about
+[13:16.08]  well first actually let me back up and
+[13:18.24]  say why churn is hard to fight
+[13:20.00]  and you know why do you need to use all
+[13:21.92]  this data
+[13:23.20]  the first thing about churn is that even
+[13:25.44]  with the best data
+[13:26.72]  it's going to be hard to predict churn
+[13:29.60]  is
+[13:29.92]  relatively rare for most companies also
+[13:33.28]  it's based on the subjective opinions
+[13:35.52]  and thoughts of your customers which you
+[13:37.28]  don't have
+[13:38.16]  you can't read their minds and even
+[13:41.04]  about the objective facts relating to
+[13:43.28]  your customers you're going to have
+[13:44.64]  limited
+[13:45.28]  information for example you'll never
+[13:47.20]  know what their ability to pay
+[13:49.12]  is you know if you're a b2b uh product
+[13:51.84]  you don't know what your customers
+[13:53.92]  uh profit and loss is unless you're an
+[13:56.16]  accounting product but that's a
+[13:57.52]  special case and lastly churn is always
+[14:00.56]  really
+[14:01.12]  random which you can see in your own
+[14:03.92]  behavior probably the last time you were
+[14:05.84]  churning from a product like netflix or
+[14:08.16]  hulu
+[14:08.80]  you probably weren't watching it for a
+[14:10.40]  while you got sick of it
+[14:12.00]  but it probably took you a while to make
+[14:13.76]  up your mind or maybe to choose a
+[14:15.76]  replacement product
+[14:17.12]  so even when churn is pretty obvious it
+[14:19.92]  tends to be
+[14:20.80]  hard to predict so churn is hard to
+[14:23.28]  predict but even worse
+[14:25.28]  churn is hard to prevent these are
+[14:27.68]  customers they already use your product
+[14:29.92]  they know your product
+[14:31.28]  and you actually have to deliver more
+[14:32.88]  value there's no silver bullets
+[14:35.28]  you know for churn reduction if you know
+[14:37.04]  the expression this is a problem for
+[14:38.96]  lead bullets not silver bullets
+[14:40.88]  which means you have to make an ongoing
+[14:42.96]  investment
+[14:44.08]  uh get down in the trenches and fight
+[14:46.00]  with it it's not just going to be like a
+[14:47.60]  once and done
+[14:48.72]  you know solution now also the other
+[14:52.24]  thing that makes churn hard is that it's
+[14:53.84]  a multi-team effort
+[14:55.68]  and here if you think about those churn
+[14:57.84]  reduction strategies that i was telling
+[14:59.84]  you
+[15:00.40]  you know in the previous slides um
+[15:03.76]  i said make a great product market
+[15:06.64]  remarket to your customers customer
+[15:08.48]  success and support
+[15:09.68]  pricing and packaging i just named every
+[15:11.68]  department in your company
+[15:12.96]  hello i mean if you're big enough to
+[15:14.40]  have departments but that's like the
+[15:16.32]  entire company
+[15:17.36]  and all those people have different
+[15:19.28]  methods and different tools
+[15:21.12]  and different ways that they think about
+[15:22.96]  churn and so there's going to be
+[15:24.88]  communication and alignment issues
+[15:27.36]  when you try to tackle churn it might be
+[15:29.68]  you know finger pointing i thought they
+[15:31.28]  were going to do it
+[15:32.32]  or different definitions of churn even
+[15:34.88]  or you know
+[15:35.60]  different ideas about what are the most
+[15:38.16]  the best
+[15:38.88]  strategies to pursue all right so now
+[15:42.00]  that we've talked about how why it's
+[15:44.64]  hard to fight let's talk about
+[15:46.56]  how you fight it with data a lot of
+[15:49.28]  people ask me
+[15:50.24]  if you should use ai for churn and there
+[15:53.12]  are
+[15:53.52]  some ai use cases i mean they ask
+[15:55.92]  because by ai i mean artificial
+[15:57.60]  intelligence if you don't know the
+[15:58.80]  acronym i'm sure everyone does now
+[16:00.48]  and since i'm a data scientist people
+[16:02.32]  always expect i mainly work with ai now
+[16:04.64]  i do work with ai
+[16:06.56]  um but not so much for churn
+[16:09.68]  ai is a little helpful for churn but
+[16:12.48]  it's not
+[16:13.12]  really the focus i mentioned that
+[16:16.16]  churn can be hard to predict um and it's
+[16:18.96]  hard to use the data so
+[16:20.24]  you would really only be doing this if
+[16:21.92]  you were an
+[16:23.36]  organization which is already advanced
+[16:25.44]  in analytics
+[16:26.96]  but the problem it's it's not just that
+[16:29.44]  it's hard to predict churn and you need
+[16:31.20]  to be
+[16:31.76]  very good with your analytics it's that
+[16:34.32]  the interventions we talked about
+[16:36.24]  all need to be targeted and designed to
+[16:39.36]  particular
+[16:40.16]  segments there's no one-size-fits-all
+[16:43.04]  churn intervention that you're just
+[16:44.56]  gonna
+[16:44.88]  unleash on all your customers um so
+[16:48.00]  whatever intervention you're going to
+[16:49.44]  make you're going to design it
+[16:51.20]  using the behavior and demographics that
+[16:53.60]  are particular
+[16:54.64]  to that customer segment um
+[16:58.00]  and yeah so ai it helps with some use
+[17:01.84]  cases if you want to
+[17:03.28]  figure out your most at risk customers
+[17:05.52]  with very high degree of accuracy
+[17:07.60]  that's when you're going to use ai but
+[17:09.20]  i'm mostly going to talk about a
+[17:10.72]  different set of methods
+[17:12.88]  more traditional analytic based methods
+[17:16.96]  and really what i'm going to focus on
+[17:18.64]  telling you about is your
+[17:20.40]  customer metrics um how do you fight
+[17:23.44]  term with data it's all about the
+[17:25.12]  customer metrics and by
+[17:26.56]  customer metric i mean a measurement of
+[17:29.28]  your customers that you're going to make
+[17:31.12]  individually for all the customers so i
+[17:33.84]  don't mean an aggregate measurement
+[17:35.60]  i mean at the individual customer level
+[17:37.76]  you're going to make metrics
+[17:39.36]  and i want you to scientifically design
+[17:42.32]  them and that's what i
+[17:43.36]  teach and if you do this those metrics
+[17:45.84]  will be easy to understand
+[17:47.68]  and usable by all those different
+[17:49.68]  departments in your company
+[17:51.36]  and the metrics actually predict churn
+[17:54.08]  and retention
+[17:55.20]  and without using ai if you do
+[17:58.08]  well-designed customer metrics
+[18:00.16]  every single metric in your arsenal will
+[18:03.28]  predict churn and retention and i'll
+[18:04.88]  show you examples of this
+[18:06.88]  very very soon two slides away from case
+[18:09.44]  study data
+[18:10.48]  showing how this works so the customer
+[18:13.04]  metrics that you make are going to
+[18:14.80]  enable you to do targeted segmentation
+[18:17.76]  when you take the interventions like you
+[18:20.72]  know marketing
+[18:21.76]  or you know onboarding training um and
+[18:24.88]  of course if you make
+[18:25.84]  intuitive metrics like this it'll be
+[18:27.92]  usable by all your teams and it'll
+[18:29.92]  become
+[18:30.96]  a focus of communication between the
+[18:33.52]  teams
+[18:34.48]  will be the metrics so that's actually
+[18:38.08]  the background i think i'm about halfway
+[18:40.32]  through the prepared material
+[18:42.48]  now i'm now going to go into case
+[18:45.04]  studies i'm going to introduce
+[18:47.04]  some companies that you may know about
+[18:50.24]  first up is broadly broadly.com broadly
+[18:53.76]  is a sas
+[18:54.40]  product and it ensures that businesses
+[18:57.20]  look great online and are found and
+[18:59.28]  chosen by potential customers
+[19:01.36]  so what that means i guess in in
+[19:03.84]  layman's terms
+[19:04.80]  is that broadly helps businesses manage
+[19:07.60]  their online reviews
+[19:09.76]  and so when broadly collects data the
+[19:12.64]  data that they collect
+[19:13.84]  includes events which are things like a
+[19:16.96]  customer promoter
+[19:18.40]  which means that a customer made a
+[19:20.24]  review and it was positive
+[19:22.16]  or another event might be a customer
+[19:24.40]  detractor
+[19:25.28]  that's an event that they track in
+[19:27.04]  broadly system among many many others
+[19:29.76]  and a customer detractor is a customer
+[19:33.04]  who actually gave a negative review and
+[19:35.76]  from these
+[19:36.64]  events which are kind of the underlying
+[19:38.96]  data you make
+[19:40.08]  the customer metrics and here i'm
+[19:43.04]  mentioning some basic metrics which
+[19:44.80]  would be
+[19:45.28]  for broadly how many promoters per month
+[19:48.16]  did a particular customer get
+[19:50.00]  and you would update that metric you
+[19:51.68]  know continuously over time as you watch
+[19:53.68]  your customers
+[19:54.88]  and another metric might be how many
+[19:56.88]  detractors uh did the customers get per
+[19:59.52]  month
+[20:00.32]  now i said that you can use even simple
+[20:03.36]  metrics to predict churn and retention
+[20:05.68]  and now let's look at an example this is
+[20:08.16]  showing how you can use
+[20:09.52]  a simple customer metric to predict
+[20:12.16]  churn
+[20:13.12]  and it's using a technique that i call a
+[20:15.44]  cohort analysis
+[20:17.12]  now you might heard of cohort analysis
+[20:19.36]  before
+[20:20.24]  and it was probably based on using
+[20:23.52]  cohorts of customers that signed up in a
+[20:26.08]  particular
+[20:26.80]  month or quarter for example and that
+[20:29.28]  would be a time-based cohort analysis
+[20:31.60]  i'm going to look at time-based cohort
+[20:33.28]  analysis in a little bit
+[20:35.12]  but this is actually a metric based
+[20:37.36]  cohort analysis
+[20:38.80]  so all the customers have a metric which
+[20:41.44]  is their customer promoters per month
+[20:44.16]  metric that i just mentioned and we
+[20:46.72]  group the customers
+[20:48.00]  based on that metric so the bottom
+[20:50.00]  cohort
+[20:51.12]  uh is the first decile or the first the
+[20:53.52]  bottom 10 percent
+[20:54.64]  are those customers that have the lowest
+[20:56.56]  promoters per month
+[20:57.92]  then the next group will be those that
+[20:59.76]  have somewhat higher promoters per month
+[21:02.00]  and that's what's shown in this slide uh
+[21:04.72]  on the horizontal
+[21:06.24]  dimension you can see the average
+[21:08.56]  promoters per month
+[21:09.92]  in each of the cohorts so the bottom
+[21:12.08]  cohort has just about
+[21:13.92]  one or zero promoters per month and the
+[21:16.72]  top cohort has
+[21:17.92]  on average more than 80 promoters per
+[21:19.84]  month now on the vertical
+[21:22.24]  dimension of this graph i'm showing you
+[21:24.48]  the relative
+[21:25.36]  churn rate so this is not the actual
+[21:28.80]  churn rates for broadly
+[21:30.00]  as you can see there's no numbers in the
+[21:31.60]  scale and that's for a protection of the
+[21:33.60]  strategic
+[21:34.32]  interests of my case study customers
+[21:36.96]  they have all generously allowed me to
+[21:39.44]  show you this kind of data from their
+[21:42.16]  real
+[21:42.72]  live businesses but we're not going to
+[21:44.96]  show you their churn rates
+[21:46.64]  but the bottom of this axis is the zero
+[21:49.92]  so you can tell on a relative scale how
+[21:52.32]  churn decreases and what you can see
+[21:54.08]  here
+[21:55.44]  is that customers with more than around
+[21:57.36]  15 promoters per month
+[21:59.12]  are churning at about one-third the rate
+[22:01.44]  of those customers that have
+[22:03.04]  around zero or one and that after around
+[22:05.92]  15 promoters per month the churn rate
+[22:08.16]  isn't really affected
+[22:09.60]  so it's very easy from a chart like this
+[22:12.00]  to go to
+[22:13.04]  answer the question what's a healthy
+[22:14.80]  customer in this case a healthy customer
+[22:17.28]  would be one with more than around
+[22:19.52]  15 promoters per month and any customer
+[22:22.32]  with less than that
+[22:23.60]  they would be a reasonable target for
+[22:26.00]  customer success
+[22:27.28]  training or something that will help
+[22:29.04]  them get more promoters
+[22:31.12]  and so this is the first example we're
+[22:33.04]  going to look at of one of these
+[22:34.96]  curves where you see how churn decreases
+[22:38.56]  with increasing
+[22:39.68]  use of the product and to me these are
+[22:43.20]  the bread and butter of churn analysis
+[22:45.20]  you're going to see a lot of these
+[22:46.40]  charts
+[22:47.20]  and you'll see they all have this very
+[22:49.04]  similar shape
+[22:50.48]  where uh churn decreases from a very
+[22:53.92]  high level for the lowest cohort
+[22:56.00]  the cohort that uses the product the
+[22:57.84]  least and then it tends to flatten out
+[23:00.48]  at higher levels
+[23:01.60]  let's look at another example now which
+[23:03.76]  is actually for
+[23:04.72]  the customer detractor metric from
+[23:08.00]  broadly so this is how many bad reviews
+[23:11.20]  the customer gets
+[23:12.72]  in the last month or it's an average so
+[23:15.04]  in an average month
+[23:16.48]  and again you can see that the customers
+[23:18.72]  with the least
+[23:20.00]  bad reviews churn the least they have
+[23:22.48]  the highest churn rate
+[23:24.00]  and the more bad reviews they get the
+[23:26.08]  churn rate goes down
+[23:27.52]  until it kind of levels out when you're
+[23:30.00]  above around
+[23:30.88]  one customer detractor per month now
+[23:34.08]  that all
+[23:34.56]  sounds well and good but isn't something
+[23:36.64]  wrong here
+[23:37.92]  aren't detractors and bad reviews bad
+[23:41.44]  why does that make people not
+[23:44.48]  churn from broadly you'd think that a
+[23:46.88]  product that's giving
+[23:48.08]  feeding you up a lot of bad reviews
+[23:50.24]  would make you churn
+[23:52.08]  well to understand this we actually have
+[23:54.40]  to go to
+[23:55.36]  a more advanced kind of metric and
+[23:57.52]  that's what we'll look at next we're
+[23:58.96]  going to look at
+[23:59.92]  similar analysis but now we're going to
+[24:01.84]  look at churn versus
+[24:03.44]  the percentage of bad reviews or what i
+[24:06.88]  call here
+[24:07.52]  the detractor rate and this is an
+[24:09.92]  example of how you can use a more
+[24:11.92]  advanced
+[24:12.56]  metric to disentangle the effects
+[24:16.00]  in a disengaging behavior so what this
+[24:19.28]  shows is that the bottom cohort in
+[24:21.36]  percentage of bad reviews
+[24:23.52]  shown here on the left has practically a
+[24:25.36]  zero churn rate there's hardly
+[24:27.20]  any turn among those who get zero bad
+[24:30.40]  reviews
+[24:31.20]  but if you go up to the top cohort that
+[24:33.44]  has more than 25
+[24:35.20]  reviews there's a much much higher churn
+[24:37.92]  rate
+[24:38.40]  so now what you're seeing is that too
+[24:40.48]  many detractors for this product
+[24:42.88]  really is a churn risk but you have to
+[24:44.72]  look at it on a percentage basis
+[24:47.20]  or a relative basis now why is that
+[24:50.88]  it's because this last chart where we
+[24:53.84]  only look at the
+[24:54.64]  the count of bad reviews is missing
+[24:57.44]  something
+[24:58.24]  it's actually missing how big the
+[25:00.24]  business is that's using broadly and how
+[25:02.56]  many reviews they get
+[25:04.32]  so a big business using broadly is gonna
+[25:07.60]  get a lot of reviews they're gonna get a
+[25:09.36]  lot of good reviews and a lot of bad
+[25:11.04]  reviews
+[25:11.84]  and the fact that they get a lot of well
+[25:13.84]  they get the most number of bad reviews
+[25:16.08]  maybe two or three per month
+[25:18.00]  that's not a reason to churn because
+[25:19.84]  they're doing good they're getting a lot
+[25:21.12]  of good reviews
+[25:22.16]  it's only a reason to churn if they get
+[25:24.24]  a high percentage of bad reviews
+[25:26.80]  and this is a very important technique
+[25:29.36]  for
+[25:29.88]  disambiguating this these kinds of
+[25:32.08]  effects which applies to
+[25:34.00]  all products with users that act at
+[25:36.96]  different levels it's
+[25:38.16]  for b2b products your big customers are
+[25:40.88]  your enterprise customers who do a lot
+[25:42.80]  of everything
+[25:44.08]  and for consumer products you tend to
+[25:45.92]  have a similar effect
+[25:47.36]  with power users certain power users are
+[25:49.84]  going to do a lot of everything
+[25:52.00]  and they tend to turn less so when you
+[25:54.16]  look at a disengaging behavior
+[25:56.64]  it's important to look at it on a
+[25:58.40]  relative basis and we're going to see
+[26:00.08]  some more examples of this
+[26:01.92]  in a few minutes but first let's kind of
+[26:04.48]  wrap up the
+[26:05.28]  story with by looking at broadly's top
+[26:07.60]  churn fighting moves
+[26:09.60]  great and priceless advice here number
+[26:12.40]  one
+[26:12.88]  is that the customer success managers
+[26:15.28]  use the metrics to talk to the customers
+[26:17.76]  so when they get on the phone with a
+[26:19.52]  customer they pull up the screen i think
+[26:21.76]  they have this
+[26:22.40]  imported into their sales force um they
+[26:25.44]  have all the most important customer
+[26:27.20]  metrics so they can have a conversation
+[26:29.04]  oh i see you got
+[26:30.56]  you know two detractor reviews last
+[26:33.44]  month and 10
+[26:34.48]  promoter reviews or you know or what
+[26:36.40]  what have you so it really makes it easy
+[26:38.88]  to get into the conversation with the
+[26:41.20]  customer when you have these kind of
+[26:42.88]  metrics
+[26:44.24]  next very important is to focus on the
+[26:47.28]  mid-range in churn risk
+[26:49.20]  ignore those most at risk since they're
+[26:52.00]  probably not savable
+[26:53.76]  i'm going to back up briefly here to
+[26:55.44]  illustrate
+[26:56.80]  if you consider this top cohort with
+[26:59.04]  more than 25
+[27:00.88]  bad reviews you know it might not be
+[27:03.68]  worth helping them
+[27:04.72]  i mean you know it could be really a
+[27:06.16]  poorly run business that deserves the
+[27:08.32]  bad reviews who knows
+[27:10.00]  the point is if you want to help
+[27:11.44]  customers focus on the mid-range in this
+[27:13.76]  case they would focus on those with
+[27:15.60]  between
+[27:16.64]  seven and fifteen percent bad reviews
+[27:18.80]  and help them reduce the number
+[27:21.04]  so focus on the mid-range this applies
+[27:23.68]  to almost
+[27:24.40]  any measure of churn risk those who are
+[27:26.80]  in that bottom cohort with the highest
+[27:28.96]  churn rate they might not be worth your
+[27:30.80]  effort so really look at it carefully
+[27:33.76]  lastly figure out your stickiest feature
+[27:36.88]  and for broadly this was integration of
+[27:39.28]  the businesses booking system
+[27:41.12]  they found a much lower churn rate
+[27:42.96]  whenever one of their customers
+[27:45.04]  integrated their
+[27:46.00]  booking system so now that's a top
+[27:48.08]  priority for the setup
+[27:49.60]  and most businesses will have some
+[27:52.00]  similar sticky features where
+[27:54.32]  if the customer gets that set up it'll
+[27:56.96]  really
+[27:57.84]  increase the integration you know the
+[27:59.92]  stickiness of your product okay gonna
+[28:02.48]  move on from broadly now and look at
+[28:04.40]  another case study
+[28:05.60]  a company called clipfolio clipfolio
+[28:09.36]  is a data analytics cloudout for
+[28:11.36]  building and sharing real-time
+[28:13.12]  dashboards of mission
+[28:14.48]  critical company metrics and so
+[28:17.76]  in english i guess you'd say they're a
+[28:19.20]  bi tool you know a dashboarding tool
+[28:22.00]  for company data so they have events
+[28:25.20]  in their system that are things like
+[28:27.76]  dashboard views and edits
+[28:29.76]  and from those events the one metric
+[28:32.00]  they calculate
+[28:32.96]  is the active users per month another
+[28:36.08]  basic metric they look at
+[28:37.60]  is the account tenure which is what i
+[28:39.52]  call the age of the customer
+[28:41.52]  i call it account tenure so it's not
+[28:43.84]  confusing with the demographic
+[28:46.00]  age um of a consumer um an
+[28:49.60]  advanced metric we'll look at for clip
+[28:51.60]  folio which is based on the active users
+[28:54.00]  is the seat utilization so that's
+[28:56.08]  another
+[28:56.80]  ratio there so we'll look for that in
+[28:59.60]  just a minute
+[29:00.64]  let's start by looking at the time-based
+[29:03.04]  cohorts
+[29:03.92]  based on account tenure and so this is
+[29:05.76]  from the real data from clipfolio system
+[29:08.32]  but this is
+[29:09.52]  very typical you know for other
+[29:11.52]  companies and again we're not showing
+[29:13.20]  the actual churn rates here these are
+[29:15.28]  churn rates on a relative scale
+[29:17.28]  but you can see there's a very
+[29:19.04]  significantly higher risk
+[29:20.80]  in the first part of the first year
+[29:23.44]  peaking at around one half a year
+[29:25.76]  the churn risk comes down again in the
+[29:27.76]  third quarter but is up again
+[29:29.36]  at the one year renewal but for
+[29:31.76]  customers that make it past the one year
+[29:34.08]  renewal
+[29:35.04]  churn gets much better and by year three
+[29:38.32]  churn is less than half what it was uh
+[29:41.52]  in the high risk period
+[29:43.20]  at the front now this really shows you
+[29:45.04]  where to target with the onboarding and
+[29:47.20]  training
+[29:48.08]  um it's in that crucial you know first
+[29:50.56]  half year
+[29:51.84]  and yeah every company should definitely
+[29:55.04]  look at a chart like this you can find
+[29:57.36]  one technique to do it using what's in
+[29:59.44]  my book
+[30:00.24]  um this can even be done in a
+[30:01.92]  spreadsheet lots of people do this in
+[30:03.52]  spreadsheets i'm not really an advocate
+[30:05.52]  you know of doing this all in
+[30:06.64]  spreadsheets but it is doable
+[30:08.96]  but absolutely look at the churn rate
+[30:11.04]  based on the length of time your
+[30:12.56]  customers have been customers
+[30:14.80]  okay turning back to the behavior on
+[30:17.12]  clip folio
+[30:18.32]  here's another very typical relationship
+[30:21.20]  between product
+[30:22.00]  use and churn and i say it's typical
+[30:24.16]  because that standard
+[30:25.52]  behavior those uh customers
+[30:28.72]  in the bottom cohort in this case it's
+[30:30.88]  one active user
+[30:32.32]  have a much higher churn rate then you
+[30:34.32]  see a rapid
+[30:35.60]  decrease in churn rate in the the next
+[30:38.56]  cohorts that have just a few more active
+[30:40.88]  users
+[30:41.84]  the healthy customer level here occurs
+[30:44.56]  around
+[30:45.04]  four or five active users per month
+[30:48.24]  because after that the increase of
+[30:50.48]  active users
+[30:51.44]  up to the top cohort with around 25
+[30:54.32]  average
+[30:54.96]  it actually does continue to increase
+[30:57.04]  churn um
+[30:58.16]  so this is the case where churn
+[31:00.08]  continues to decrease
+[31:01.76]  at higher and higher levels of the
+[31:03.68]  metric and that is because
+[31:05.84]  relating to the facts we were talking
+[31:07.52]  about earlier for a business to business
+[31:10.00]  company it's your bigger customers that
+[31:12.40]  are going to be have more active users
+[31:14.48]  and more use
+[31:15.68]  they're going to be more engaged big
+[31:18.08]  customers are less likely to fail
+[31:20.88]  and so on all these measures you're
+[31:22.40]  going to see a lower churn rate
+[31:24.88]  from your biggest customers which is who
+[31:26.72]  you who's going to have the most active
+[31:28.56]  users
+[31:29.52]  however there is a better and more
+[31:31.84]  nuanced way to look at this
+[31:34.00]  which is actually to look at the seat
+[31:36.32]  utilization
+[31:38.16]  now again this is a metric which takes
+[31:41.28]  out the effect of
+[31:42.48]  how big the customer so it's no longer
+[31:45.28]  about
+[31:45.68]  are they your biggest customer or not
+[31:47.92]  it's about how deeply
+[31:49.44]  are they using what they've purchased
+[31:52.00]  because the the number of seats
+[31:53.52]  available is of course you know how the
+[31:55.28]  product is sold
+[31:56.72]  and this plots the active users divided
+[31:59.76]  by the number of seats
+[32:01.12]  and you can see it's actually a more
+[32:02.72]  continuous kind of change you know
+[32:05.52]  it's still the bottom cohort you know
+[32:07.68]  has the highest churn rate but you don't
+[32:09.44]  see that steep drop-off this is actually
+[32:11.44]  a good property in one of your metrics
+[32:13.84]  where you see that it distinguishes
+[32:15.60]  health
+[32:16.40]  more clearly across the full range
+[32:19.60]  of the cohorts alright so to wrap up
+[32:22.56]  clip folio let's talk about their top
+[32:24.72]  churn fighting moves
+[32:26.80]  number one is no discounting it wasn't
+[32:29.76]  worth it
+[32:30.64]  instead clipfolio reconfigured their
+[32:32.88]  pricing and packaging to make a
+[32:34.48]  multi-tier plan
+[32:35.84]  um so that customers who only use a
+[32:37.76]  little bit can still get value
+[32:40.32]  and when you do that you know you might
+[32:42.32]  not even keep all your customers it's
+[32:44.32]  possible
+[32:45.12]  there are some customers that use it so
+[32:47.44]  little it's not worth giving them a plan
+[32:49.84]  you know that could keep them because
+[32:51.12]  you have the maintenance and overhead
+[32:52.88]  cost of maintaining those customers
+[32:55.12]  but anyway no discounting uh use a
+[32:57.84]  tiered pricing plan is the main part of
+[32:59.76]  the churn fighting move
+[33:01.44]  next more active users is keys so that's
+[33:04.08]  their number one account health metric
+[33:06.24]  for folio and lastly they observed the
+[33:10.32]  high churn risk
+[33:11.52]  in early adopters and you saw that in
+[33:13.84]  the churn rate
+[33:14.80]  versus the left the tenure of the
+[33:16.40]  customers so they got three months free
+[33:19.04]  support and onboarding was how clipfolio
+[33:22.00]  helped fight that all right we'll do one
+[33:24.48]  more uh
+[33:25.20]  case study and then we will have some
+[33:27.12]  time for questions
+[33:29.76]  versature is disrupting the canadian
+[33:32.16]  telecom industry with cloud-based
+[33:34.16]  business communication solutions
+[33:36.16]  now you might be saying hold on i
+[33:37.92]  thought this is saster you know why are
+[33:39.68]  we looking at a telco
+[33:41.12]  well this is voice over ips so modern
+[33:44.16]  telcos are
+[33:45.28]  by and large pretty similar to sas
+[33:47.36]  companies so the lessons you see here
+[33:49.60]  really do apply to even you know
+[33:52.16]  non-communication
+[33:53.36]  oriented sas companies but
+[33:56.48]  they are communication companies so
+[33:58.40]  their most common events are actually
+[34:00.24]  things like
+[34:00.96]  calls local calls international calls
+[34:03.92]  conference calls
+[34:05.20]  there's an app that goes with versature
+[34:07.28]  too and so we did analyze and track the
+[34:09.84]  the different app features but for this
+[34:12.48]  case study we'll just focus on the calls
+[34:14.40]  they're the most illustrative
+[34:16.08]  so we calculate basic metrics on the
+[34:18.16]  calls like the number of calls per
+[34:20.00]  month and we also looked at how much
+[34:23.12]  customers pay this will be the first
+[34:25.12]  case study where we look at the
+[34:27.36]  what the customers pay and we'll also
+[34:30.48]  look at an
+[34:31.04]  advanced metric cost per call based on
+[34:33.60]  the payment
+[34:34.40]  and the usage together so first the
+[34:36.80]  basic metric
+[34:37.92]  now i've told you before this is the
+[34:39.84]  standard way these curves
+[34:41.68]  work and and they all look like this the
+[34:44.40]  bottom cohort has the highest churn rate
+[34:47.04]  churn falls rapidly uh with a few more
+[34:50.40]  additional cohorts till you get to the
+[34:52.40]  this middle area
+[34:53.92]  for versatur it's above around 2500
+[34:58.24]  minutes per month of calls is their
+[35:00.16]  healthy level beyond
+[35:02.08]  which there's not really a reduction in
+[35:04.24]  insurance
+[35:05.28]  so again almost all products should show
+[35:08.48]  curves like this of use of the product
+[35:11.68]  versus the churn rate of the cohort for
+[35:14.48]  those customers
+[35:15.76]  now let's talk about the cost this is
+[35:18.56]  the similar cohort analysis
+[35:20.72]  but customers are grouped on what they
+[35:22.80]  pay per month
+[35:24.72]  and that's measured in mrr monthly
+[35:26.96]  recurring revenue
+[35:28.24]  i'm showing you monthly recurring
+[35:29.76]  revenue on a normalized access
+[35:32.80]  uh on the horizontal so this is not
+[35:35.44]  actually their monthly recurring
+[35:36.64]  revenues these are turned into
+[35:37.92]  normalized
+[35:38.72]  scores which have a zero mean and one
+[35:41.76]  standard deviation now that's a data
+[35:43.68]  science technique
+[35:44.96]  i'm not going to go into the weeds and
+[35:46.40]  explain it to you it has a lot of
+[35:47.84]  benefits
+[35:48.96]  which are detailed in the book but the
+[35:51.28]  interesting thing here
+[35:52.56]  is that the customers who pay the most
+[35:55.04]  actually churn the least
+[35:57.44]  um does that surprise you or does that
+[35:59.84]  make sense now anyone who's
+[36:01.84]  working in an established b2b company
+[36:04.48]  that is monitoring their
+[36:05.84]  churn is probably already going to know
+[36:08.00]  this and the reason which i already
+[36:10.08]  explained
+[36:10.80]  earlier in the session is that your
+[36:12.96]  biggest customers
+[36:14.96]  are the ones who use the product the
+[36:17.12]  most and they're also going to be the
+[36:18.88]  ones who pay the most
+[36:20.64]  so it's not actually that these
+[36:22.56]  customers with above
+[36:23.92]  average payments per month
+[36:26.96]  it's not that they like paying more but
+[36:28.80]  they're just bigger customers
+[36:30.80]  now that may be true but it's not very
+[36:33.28]  satisfying
+[36:34.16]  it's not really the insight you're
+[36:35.84]  looking for when you analyze
+[36:38.32]  how much customers pay so that's where
+[36:40.64]  we go to a more advanced metric
+[36:43.60]  um which is shown here and again this
+[36:46.24]  metric is a ratio we look at the dollars
+[36:48.96]  per
+[36:49.60]  call not just dollars and not just
+[36:52.80]  call but the ratio of the two and then
+[36:55.76]  you can see
+[36:57.04]  that paying a lot does not cause churn
+[37:00.48]  but paying too much does customers who
+[37:03.28]  get a bad value really do churn at a
+[37:05.68]  higher rate
+[37:06.88]  so again this is a normalized metric
+[37:10.08]  with zero mean
+[37:11.12]  one standard deviations you can see the
+[37:13.12]  customers with below
+[37:14.48]  average cost per call here on the left
+[37:17.52]  these are getting the best value and
+[37:19.60]  they turn at a very low rate
+[37:22.16]  however as you get up to around the
+[37:24.56]  average and go above the average cost
+[37:26.88]  per call you see a much
+[37:28.48]  higher churn risk and especially in this
+[37:30.88]  cohort
+[37:31.76]  that's way above average and cost per
+[37:34.16]  call
+[37:35.52]  um they have a churn rate that looks
+[37:37.20]  like five or six times the customer is
+[37:39.44]  getting a good value
+[37:41.28]  so again paying a lot doesn't cause
+[37:44.08]  churn
+[37:44.64]  if the customers are taking advantage
+[37:47.20]  but paying too much
+[37:48.56]  does and i really say any product
+[37:51.60]  if you have multiple price points like
+[37:53.76]  if you have customers paying different
+[37:55.44]  amounts
+[37:56.40]  you must do this analysis and see
+[37:59.52]  uh divide the amount that your customers
+[38:02.24]  pay
+[38:03.20]  by the most important metrics of your
+[38:05.52]  product use
+[38:06.96]  i almost guarantee you'll see a really
+[38:09.44]  interesting curve
+[38:10.56]  like this which will help you segment
+[38:12.64]  your customers
+[38:13.76]  figure out who's getting a good value
+[38:15.44]  who's getting a bad value
+[38:16.96]  and give you some insights into you know
+[38:18.88]  how you can turn it around
+[38:20.80]  all right let's wrap up versature with
+[38:22.72]  their top churn fighting moves
+[38:25.12]  number one is identifying at risk
+[38:27.28]  customers early in the product life
+[38:29.12]  cycle
+[38:29.68]  and that's especially true for any
+[38:31.28]  product that has you know
+[38:33.04]  a big setup cost you know big
+[38:34.96]  implementation up front you gotta
+[38:36.88]  figure out who's not getting on board
+[38:38.80]  fully
+[38:40.16]  um they focus on customer success in all
+[38:43.04]  its forms
+[38:44.00]  including you know both onboarding uh
+[38:47.04]  training throughout the customer life
+[38:48.64]  cycle check-ins with the customer
+[38:50.32]  success managers
+[38:51.68]  and when they check in their customer
+[38:53.84]  success managers
+[38:55.20]  really focus on value-driven
+[38:57.12]  conversations
+[38:58.48]  so not just talking to the customer
+[39:00.72]  about how much they use the product
+[39:02.88]  but talking to the customer about what a
+[39:04.80]  good value it is for them
+[39:06.24]  how much they're saving in comparison to
+[39:09.20]  their other solutions
+[39:11.84]  um so that's like taking it to another
+[39:14.08]  level uh the
+[39:15.68]  the metric driven conversations okay
+[39:18.80]  so that wraps up the case studies we're
+[39:21.12]  going to look at i'm just going to give
+[39:22.48]  you a few takeaways right now
+[39:25.04]  and then we'll see if we have any
+[39:26.24]  questions first i want to mention some
+[39:28.24]  churn
+[39:28.80]  fighting tips for post covid so i said
+[39:31.60]  that overall
+[39:33.04]  churn has not significantly gone up this
+[39:35.68]  year
+[39:36.16]  although for some companies it really
+[39:37.68]  has however
+[39:39.92]  all customers all businesses should
+[39:42.60]  re-analyze
+[39:43.76]  their customer metrics and health
+[39:46.00]  basically all that analysis i just
+[39:48.32]  showed you like
+[39:49.68]  grouping your customers into cohorts
+[39:51.52]  based on metrics and looking at the
+[39:53.44]  relationship to churn
+[39:54.96]  it all needs to be reanalyzed now you
+[39:57.20]  can't rely on your 2019 data
+[40:00.16]  to tell you how customers value or don't
+[40:02.80]  value
+[40:03.60]  your product in 2020. there's so many
+[40:06.00]  priorities have changed for customers
+[40:08.48]  that you really don't need to go back to
+[40:10.08]  the data and rediscover the
+[40:11.44]  relationships
+[40:12.56]  now if you're a b2b company this can be
+[40:15.28]  really hard
+[40:16.56]  if your customers are on annual
+[40:18.88]  contracts
+[40:19.84]  they only decide to churn or not churn
+[40:22.24]  once a year
+[40:23.36]  so there's it's very hard for b2b
+[40:25.60]  companies you've got to do the best that
+[40:27.28]  you can we're coming up to
+[40:29.20]  january there will be a lot of business
+[40:31.12]  software renewals
+[40:32.56]  that might be the first time when you
+[40:34.08]  can actually you know redo the analysis
+[40:36.56]  and see
+[40:37.44]  how you're about how do customers value
+[40:39.44]  your product now
+[40:40.96]  but really do try to do it one other tip
+[40:43.60]  is for
+[40:44.56]  companies that were really disrupted and
+[40:46.88]  can no longer
+[40:48.24]  deliver value we saw a lot of companies
+[40:51.28]  hit pause on the subscription
+[40:53.60]  so that the customers don't have to pay
+[40:55.68]  anything because
+[40:57.04]  if the product or service could no
+[40:58.80]  longer deliver
+[41:00.48]  i mean it helps your bottom line to keep
+[41:02.64]  charging your customers but it's not
+[41:04.24]  going to make them stay
+[41:05.52]  so we saw a lot of customers whose
+[41:08.24]  businesses were significantly disrupted
+[41:10.40]  just
+[41:10.72]  freeze billing uh let the customer keep
+[41:13.76]  the account open but without charging
+[41:15.68]  them with a promise that once
+[41:17.52]  you know things pick up again hopefully
+[41:20.16]  you know
+[41:20.64]  they'll be back and we'll see how these
+[41:22.32]  strategies play out you know we're not
+[41:24.00]  it's not over yet so
+[41:25.68]  look for an update on that uh from from
+[41:27.92]  zora's publications next year when we
+[41:29.92]  reanalyze that data
+[41:31.60]  all right top takeaways from the session
+[41:34.16]  today
+[41:34.72]  kind of going over time but i'll just
+[41:36.24]  hit them off
+[41:37.84]  fighting churn is a multi-front war to
+[41:40.64]  save your growth it's
+[41:42.08]  churn is your growth walking out the
+[41:43.68]  door and there's a lot of different
+[41:45.04]  things you can do about it
+[41:46.40]  and no one of them is enough you kind of
+[41:48.40]  got to be operating on multiple fronts
+[41:50.64]  to turn turn around
+[41:52.96]  the main churn reducing strategies we
+[41:54.72]  looked at are product imper
+[41:56.88]  improvements and you use your data to
+[41:58.88]  find what works without surveys
+[42:01.12]  engagement marketing which is
+[42:02.64]  communicating to customers
+[42:04.56]  that really gives them value by using
+[42:06.72]  their data to
+[42:07.92]  to guess what it is that they need to
+[42:09.92]  know customer success
+[42:12.08]  onboarding and training reaching out to
+[42:14.40]  the right customers at the right time
+[42:16.64]  and lastly pricing to deliver value
+[42:20.00]  tiered plans not discounts which that
+[42:22.80]  undermines your pricing strategy
+[42:25.20]  now customer metrics are the focus of
+[42:27.84]  using
+[42:28.56]  data to fight churn they provide
+[42:31.04]  actionable insight and they allow you to
+[42:33.44]  align your different teams
+[42:35.28]  um they enable smart segmentation so all
+[42:38.00]  of your churn interventions are actually
+[42:40.00]  targeted at the customers
+[42:41.76]  that will uh it'll make the most
+[42:43.92]  difference
+[42:45.04]  and you can predict churn without using
+[42:47.52]  ai
+[42:48.08]  now ai is a valuable technique if you
+[42:50.80]  have all of your analytics basics
+[42:53.04]  covered
+[42:53.76]  um there are good use cases for ai
+[42:56.16]  there's more details about that in the
+[42:57.84]  book
+[42:58.80]  lastly i gave you the pro tip uh many of
+[43:01.84]  the most powerful metrics for
+[43:03.68]  understanding your customers are going
+[43:05.36]  to be ratios or rates
+[43:07.36]  because that lets you disambiguate the
+[43:09.84]  effect of the size of the customer or
+[43:12.08]  whether they're a casual or a power user
+[43:14.72]  effect by looking at percentages i'll
+[43:18.00]  close by saying thank you and just drop
+[43:20.16]  in my my twitter handle again
+[43:22.00]  carl 24k please follow me for updates on
+[43:25.60]  churn
+[43:26.08]  data science and the subscription
+[43:29.31]  [Music]
+[43:38.84]  economy
+[43:48.40]  you

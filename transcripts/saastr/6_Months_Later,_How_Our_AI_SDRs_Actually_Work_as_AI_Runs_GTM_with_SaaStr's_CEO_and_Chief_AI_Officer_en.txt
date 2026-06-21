@@ -1,0 +1,2308 @@
+Title     : 6 Months Later, How Our AI SDRs Actually Work as AI Runs GTM with SaaStr's CEO and Chief AI Officer
+Video ID  : 6YrzIuvhi5k
+URL       : https://www.youtube.com/watch?v=6YrzIuvhi5k
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2299
+Saved at  : 2026-06-20 22:31:24
+------------------------------------------------------------
+
+[00:01.28]  Welcome to the official Saster Podcast
+[00:03.36]  where you can hear some of the best SAS
+[00:05.60]  speakers. This is where the cloud meets
+[00:09.12]  up today on the Saster Podcast. Don't
+[00:11.44]  fire anyone good to replace them with AI
+[00:13.12]  if you haven't learned anything. If
+[00:14.64]  someone's fail, if they can't close
+[00:16.08]  anything or if your AI SDR hasn't set a
+[00:18.16]  single appointment, I mean your human
+[00:19.68]  SDR, maybe just replace that budget
+[00:21.44]  with, you know, if your SDR can't do
+[00:23.36]  anything, you know, you can't do worse
+[00:25.04]  than zero.
+[00:28.24]  But we'll track it. the many of you, if
+[00:30.08]  you're early stage folks watching this,
+[00:32.48]  you'll think that's expensive and if you
+[00:34.64]  don't believe in the vendor, it will
+[00:36.08]  seem very expensive. It will because
+[00:37.92]  you'll get quoted by a sales rep a lot
+[00:39.76]  of money
+[00:40.88]  >> and it will feel risky to you if the
+[00:43.28]  deployment doesn't work.
+[00:46.24]  >> You know, we that's why we're not trying
+[00:48.56]  to be walking billboards, but we do
+[00:50.32]  share the vendors that we use. Others
+[00:51.84]  are good, too. But if you get the right
+[00:54.24]  people, it's going to work. But it it
+[00:55.60]  can feel risky. It's tough to start at
+[00:57.76]  500 bucks a month today, but you got to
+[01:01.68]  take a little risk in life.
+[01:04.70]  [Music]
+[01:07.04]  Hey everybody, it's Saster. Connect
+[01:08.72]  data, automate busy work, and empower
+[01:11.20]  teams like nobody's business with the
+[01:12.80]  one platform that grows with you every
+[01:14.80]  step of the way. Learn how Salesforce
+[01:16.64]  works for startups at
+[01:18.08]  salesforce.com/smv.
+[01:20.40]  That's salesforce.com/smv.
+[01:26.80]  Hey Ser, imagine having agents for every
+[01:29.12]  support tact. One that triages tickets,
+[01:31.76]  another that catches duplicates, one
+[01:33.44]  that spots turn risk. That'd be pretty
+[01:35.28]  amazing, right? Happy Fox just made it
+[01:37.36]  real with autopilot. These pre-built AI
+[01:39.92]  agents deploy in about 60 seconds and
+[01:42.16]  run for as low as 2 cents per successful
+[01:44.48]  action. All of it sits inside the Happy
+[01:47.20]  Omni Channel AI first support stack,
+[01:50.08]  Chatbot, Copilot, and Autopilot working
+[01:52.48]  as one. Check them out at
+[01:53.92]  happyfox.com/aster.
+[01:56.23]  [Music]
+[02:01.60]  All right. Hello everyone. Welcome.
+[02:06.88]  All right. Um, welcome to everyone in
+[02:09.20]  today listening or your agents that are
+[02:11.76]  also listening and you'll be reading the
+[02:13.28]  recap later. We thought it would be fun
+[02:16.24]  to do a deep dive into where we're at
+[02:20.08]  today in our AI journey.
+[02:23.52]  It's kind of crazy to think before SAS
+[02:26.08]  annual this last May we really only had
+[02:29.12]  one agent that we had sort of just
+[02:31.68]  deployed
+[02:33.68]  and now we have about 20 or so core
+[02:36.08]  agents which we've gone through but I'll
+[02:38.24]  go through a little bit as well for
+[02:39.36]  context. So it's crazy to see you know
+[02:42.64]  just kind of from May till November you
+[02:45.68]  know postanual now that we're full in
+[02:47.68]  all the platforms we've added a lot more
+[02:49.92]  use cases across go to market which
+[02:52.16]  you'll see just to give an update of
+[02:54.80]  where we're at what's working
+[02:57.52]  there's some nuances on what hasn't
+[02:59.36]  worked and there's some maybe unexpected
+[03:02.96]  learnings there that we'll also go
+[03:04.48]  through but hopefully it's helpful for
+[03:06.32]  folks just to listen and hear and see
+[03:09.52]  where we're at share our learnings and
+[03:11.44]  our findings. Hopefully this helps you
+[03:14.00]  as well. Um, but if you have any
+[03:17.28]  questions as we go along, put them into
+[03:18.96]  the chat. We'll try and do a bunch of
+[03:20.64]  questions at the end. Help answer you
+[03:22.48]  guys any deep dive questions, too. So,
+[03:26.32]  with that, I try and keep admitting you
+[03:29.28]  guys.
+[03:31.12]  Let's go through it.
+[03:34.16]  So, what do I mean by six months of AI
+[03:37.92]  running our GTM? Now, it's not on full
+[03:40.08]  autopilot. So, it is not just that the
+[03:43.04]  AI is running a muck with RGTM on its
+[03:45.84]  own. It does require a lot of oversight
+[03:48.56]  and time and management, which you'll
+[03:50.64]  see here today of how we do that, how we
+[03:53.44]  think about it, and also how we are
+[03:56.56]  thinking about doing that going forward.
+[03:58.80]  Just cuz right now it does take
+[04:00.72]  literally the majority I would say, of
+[04:02.80]  both mine and Jason's time to run all
+[04:05.52]  these agents and use them successfully,
+[04:07.60]  right? if we could run more agents and
+[04:09.68]  they would fail if we didn't put in as
+[04:11.04]  much time. But since we do devote a lot
+[04:12.48]  of time to them, they've become quite
+[04:15.12]  timeconsuming. Now, none of that is to
+[04:17.44]  scare you. I don't think
+[04:19.68]  you know 20 is the right amount for
+[04:21.76]  everybody. So, if you haven't seen this
+[04:24.16]  sasser.ai/agents,
+[04:26.32]  you can see all the agents we use.
+[04:28.72]  There's a mix of ones we've coded that
+[04:32.32]  Jason's talked about previously, and
+[04:33.84]  then there's ones that we are using
+[04:36.00]  third party tools for. So that's all
+[04:38.48]  listed there. You'll see most of those
+[04:40.00]  here today too. We'll go through the
+[04:42.16]  metrics of them just like in full
+[04:44.64]  disclosure. I've got screenshots of all
+[04:46.24]  of our metric and then also we're going
+[04:48.96]  to go through how we think about them in
+[04:51.44]  our day-to-day. So Jason, anything you
+[04:53.76]  want to add there?
+[04:55.68]  >> No, I think that's great. I think and I
+[04:56.96]  think I'm going to go through all of it,
+[04:58.32]  but I think most importantly, we'll give
+[04:59.44]  you an update on how all our AI
+[05:01.12]  SDRs/BDRs have worked, outbound,
+[05:03.20]  inbound, the actual data,
+[05:06.88]  which I think will be super helpful when
+[05:08.16]  Millie put this together, which is
+[05:09.36]  great.
+[05:10.64]  >> Yep. And then, so why 20, right? So,
+[05:14.16]  I'll kick this off to say 20 is not the
+[05:16.16]  right amount for most people.
+[05:20.16]  I think even like a few is maybe the
+[05:23.76]  right amount for most people. Or even
+[05:25.44]  right now if you're like I have maybe
+[05:27.12]  let's say one agent kind of fully
+[05:28.96]  deployed. I it's scaring me to go from
+[05:31.76]  one to 20. I don't think you should take
+[05:34.24]  this as like the gold standard of
+[05:37.36]  everyone needs to be on 20 apps or
+[05:38.88]  you're behind. Now I do think you need
+[05:40.32]  to be we've talked about this before. I
+[05:42.16]  do think you need to be on some version
+[05:44.56]  of this stack in GTM to not fall behind.
+[05:48.40]  And I'll show you why. But I don't think
+[05:50.72]  20 is the right number for everyone. I
+[05:52.56]  feel like between myself and Jason were
+[05:54.80]  fairly technical, right? Some of the
+[05:56.00]  stuff we vibe coded, we've been thinking
+[05:57.36]  about for a long time. Some of the stuff
+[05:59.04]  you'll see that we've deployed across
+[06:01.12]  our go to market or is where we had gaps
+[06:03.52]  and we had a need to fill them, right?
+[06:05.44]  So that's why we have 20. I just put a
+[06:09.20]  fun image of, you know, this is a real
+[06:11.28]  image of myself that then uh Reeves
+[06:13.28]  added a digital clone to. But I think
+[06:16.16]  there is a lot of talk and I want to get
+[06:18.72]  your thoughts quick Jason on this before
+[06:20.80]  we move on you know how much can AI
+[06:25.12]  clone yourself how much can it do I
+[06:27.84]  would say now 6 months in it is for us
+[06:31.60]  and for me it's become a clone of all
+[06:34.32]  the best things we can do when we devote
+[06:37.28]  the time to it right like it can do such
+[06:39.20]  a better like a such a massively scale
+[06:42.00]  of output more than I could physically
+[06:44.00]  do or that Jason could physically do.
+[06:46.32]  There's just so much scale in getting
+[06:48.16]  these systems to actually work and go to
+[06:50.40]  market. That is a scale that no no
+[06:52.56]  single human could achieve, right? And
+[06:54.64]  so that's kind of the magic of it. I
+[06:56.72]  think 6 months in it still does not
+[06:58.72]  cease to amaze me how much we can do
+[07:00.40]  with our AI together across all of go to
+[07:03.20]  market. And I would say too in the last
+[07:04.88]  6 months we didn't start with all of go
+[07:06.48]  to market, right? We started with
+[07:07.68]  basically a support use case and then we
+[07:09.84]  added in the we layered in the other
+[07:11.84]  places where people either left the org
+[07:14.32]  or we had gaps or we wanted to improve
+[07:17.20]  how we were doing these things in go to
+[07:19.12]  market. And so that's kind of how we
+[07:21.20]  landed on 20. That's why we have it all
+[07:24.08]  across the org. But I think this concept
+[07:27.20]  now it's cloning the best parts of your
+[07:29.92]  best players. Right? Maybe your org
+[07:31.76]  isn't as small internally as Aster is.
+[07:33.92]  Um and you've got more folks. And I
+[07:36.40]  think there is now, I think, a clear
+[07:38.16]  path to where I'm seeing in these
+[07:40.08]  platforms, you can clone all your best A
+[07:41.92]  players, right? Take all the best A
+[07:44.72]  players on your team across marketing,
+[07:46.56]  sales, CS, sales, rev ops, and make them
+[07:49.28]  tier with AI. I I truly believe that's
+[07:51.60]  possible and you'll see it from our
+[07:52.88]  results. But yeah, what do you any
+[07:55.60]  thoughts out there, Jason?
+[07:56.96]  >> I think that's a really great insight
+[07:58.24]  thinking about what we have learned
+[07:59.60]  since we've had some success. A lot of
+[08:02.40]  folks want agents, specifically AI SDRs,
+[08:07.36]  AI BDRs, AI marketing agents, others,
+[08:10.48]  they want them to do magical work for
+[08:12.56]  them. They want to spend 20 grand, 50
+[08:14.00]  grand, 100 grand and all of a sudden get
+[08:15.60]  leads. That is I didn't fully realize
+[08:18.24]  that till just now said that's the wrong
+[08:20.32]  way to think about it. What your agents
+[08:22.24]  can do and it is so powerful is they can
+[08:25.36]  take your best practices and scale them
+[08:27.28]  out almost infinitely. Figure out what
+[08:29.28]  works. Figure out what campaigns work,
+[08:30.96]  what messaging, whatever works, is
+[08:32.88]  already working. You have to have
+[08:34.00]  something that's working. An agent can't
+[08:35.84]  today figure out make something that
+[08:37.44]  isn't working work. But if you know
+[08:39.60]  what's working and then this is
+[08:41.12]  important, you train the agent with it.
+[08:43.44]  Then you get 24/7 infinite firepower
+[08:46.56]  backing up your best practices and your
+[08:48.64]  best practices will change and you'll
+[08:50.00]  run AB tests and ABCDEF tests and
+[08:52.40]  multivariant tests. But you've got to
+[08:54.56]  understand what is working in GDM before
+[08:57.44]  your agent can scale it up. And I think
+[08:59.92]  that is a fundamental mistake that
+[09:01.52]  confuses folks. It's not about buying a
+[09:03.20]  tool. But once you have something that
+[09:05.28]  works, which we have, and Ameilia will
+[09:06.72]  show you the data, then you can scale in
+[09:09.20]  a way you can't with humans.
+[09:11.36]  >> Yep. Yep. I would say that's my biggest
+[09:13.60]  learning six month in like we we took
+[09:15.68]  things that were already work or some
+[09:17.92]  processes were broken, right? like our
+[09:19.20]  RevOps process was pretty broken before
+[09:20.96]  we did this, but we figured out how to
+[09:23.68]  fix it and then we basically put that on
+[09:26.40]  acid with the AI and the agents. So, I
+[09:29.04]  do think it's a it's an interesting
+[09:30.64]  nuance of how to approach it as you know
+[09:33.36]  people are in different states. Okay,
+[09:35.52]  this is just a quick fun one before I go
+[09:37.44]  into our data. This is from Jason's
+[09:40.08]  co-host Rory SC. This is their state of
+[09:43.84]  GTM AI. Um, it's pretty good. It's
+[09:47.20]  actually fairly short but concise. So I
+[09:48.56]  like it. You can just go to their site,
+[09:49.76]  you can download it. It said a lot of
+[09:52.08]  interesting things that I used to kind
+[09:53.84]  of anchor how I wanted to present a lot
+[09:55.84]  of our data since we have a lot, right?
+[09:57.60]  So I think we're in this right now par
+[10:00.24]  sort of paradoxical world in November of
+[10:03.92]  2025 where a lot of folks have adopted
+[10:06.88]  at least one sort of AI or agent. But
+[10:09.20]  maybe to Jason's point that he just
+[10:10.96]  made, a lot of them aren't seeing the
+[10:12.56]  impact because either they're expecting
+[10:13.84]  too much or they're not putting in the
+[10:15.44]  time. So I think that's kind of where I
+[10:19.12]  see the paradox lying in this report.
+[10:21.20]  You'll see if you're I'll write it up
+[10:23.44]  too on just some of my learnings but you
+[10:26.48]  know you'll see across go to market
+[10:28.16]  which ties into this most most most
+[10:31.28]  deeply the adoption has been in
+[10:33.28]  marketing but if you read the whole
+[10:34.72]  report it's on kind of what I consider
+[10:37.60]  base level adoption right like they're
+[10:39.52]  using cloud to create content. Yes so
+[10:41.68]  are we. But you'll see our more kind of
+[10:43.28]  like sophisticated 2.0 know stacked at
+[10:45.36]  the end of this sales dev same thing
+[10:47.76]  they're using it for sales messaging
+[10:50.64]  like the kind of middle ground is using
+[10:52.56]  it for starting to do things like rev
+[10:55.60]  ops or more intelligent emails again
+[11:00.08]  consider that kind of baseline I feel
+[11:03.36]  like you can again if you take the best
+[11:05.52]  people give them an agent they get used
+[11:08.00]  to and they know how to train it I do
+[11:09.44]  think you can get them to blow by that
+[11:11.04]  fairly quickly so I think across the
+[11:13.28]  board even what they said sales and CS
+[11:15.28]  is a lot of folks are still early,
+[11:17.12]  right? So, a lot of still early adopters
+[11:20.64]  there across the board, but some good
+[11:22.64]  stuff there. I'll try and tie into what
+[11:24.32]  we're going to show.
+[11:26.40]  I think just a quick one to tie into
+[11:28.32]  that data plus what Jason was saying as
+[11:31.12]  well. Here are my quick biggest
+[11:33.12]  learnings and then literally all the
+[11:34.72]  next slides are the data that we'll run
+[11:36.40]  through.
+[11:38.00]  I think again in in a lot of early days
+[11:40.16]  and as you add more platform I think the
+[11:42.80]  expectation that it gets easier with
+[11:44.64]  each platform you add is false. So that
+[11:48.64]  I wouldn't expect to have that
+[11:50.16]  expectation. I do think a lot of the
+[11:52.72]  platforms whether you use like one
+[11:54.88]  specialized one for each function the
+[11:56.56]  way we are or you end up on one platform
+[11:58.80]  that does kind of like a little bit of
+[12:00.24]  everything pretty good. Maybe in that
+[12:02.64]  case it gets a little bit easier as time
+[12:04.24]  goes on. But it's never set it and
+[12:05.68]  forget it. The biggest thing is that our
+[12:07.76]  agents will eb and flow. Oddly,
+[12:10.48]  depending on how much time the humans
+[12:12.16]  put in, right? So, the more time I put
+[12:14.56]  in with our agents, wow, shocker, the
+[12:16.88]  better the output is. And sometimes that
+[12:18.96]  es and flows, right? Like we get busy.
+[12:20.72]  We have faster lending coming up. So, I
+[12:22.56]  can't always spend the amount of time I
+[12:24.80]  would like to with the agents, right?
+[12:26.40]  And so, that obviously does translate to
+[12:29.44]  the results. And so, I think that's one
+[12:31.44]  of the biggest things. I think Jason's
+[12:34.40]  point on like immediate RO and headcount
+[12:36.40]  is a hugely false expectation that I
+[12:38.96]  hope nobody have on this call but if you
+[12:41.20]  had it maybe going into this can kind of
+[12:43.52]  course correct on where are you going to
+[12:46.48]  see lift and there there have been cases
+[12:48.80]  in our data you'll see where we did get
+[12:50.56]  immediate list but again it took our
+[12:53.60]  processes like it took us recreating
+[12:55.60]  some of our best processes that were
+[12:57.36]  already working to get an immediate lift
+[13:00.00]  in these six months you And then I think
+[13:03.20]  in the expectation on needing to staff
+[13:05.04]  like an AI expert, I've talked to a
+[13:06.64]  bunch of CMOs and CRO's now as well as
+[13:09.36]  founders that are either at SAS or
+[13:11.44]  participating in SAS where you know they
+[13:13.28]  say hey million you know what's your
+[13:14.56]  advice on my biggest problem right now
+[13:16.40]  is we're starting to onboard all these
+[13:18.24]  tools but I don't have anybody to run
+[13:20.88]  it. I don't have a chief AI officer like
+[13:24.16]  I am now to help us figure all this out.
+[13:26.88]  What do I do? And most folks I will say
+[13:29.60]  that that have figured this out and
+[13:31.52]  started to
+[13:33.36]  deploy AI more across the GTM org have
+[13:36.08]  told me that their best success has been
+[13:39.68]  again taking your a player. Take
+[13:41.44]  somebody that is the best person on your
+[13:44.00]  sales ops team, your rev ops team, your
+[13:46.24]  best marketer, your best SDR, your best
+[13:48.88]  AE.
+[13:50.40]  Sit down with them, figure out what
+[13:51.76]  tools you want to use together. Don't
+[13:53.52]  just deploy it to them from, you know,
+[13:55.60]  the castle. And then go through that
+[13:58.32]  process with them together because it's
+[14:00.32]  very important, too, that you need to do
+[14:01.92]  the AI yourself in order to figure out
+[14:03.84]  how it works. You know, you can't expect
+[14:06.00]  the even your best STR to know how to
+[14:09.28]  instantly use this. You got to help them
+[14:10.88]  out and help them figure it out a little
+[14:12.32]  bit. But everyone I talk to that says
+[14:14.16]  they go this route of using the best A
+[14:16.16]  tier players and injecting AI and
+[14:18.72]  figuring it out with them have now they
+[14:21.84]  have now changed their job roles like in
+[14:23.36]  the way that my job role has changed
+[14:24.72]  into now chief AI officer they're saying
+[14:26.96]  the same thing. This is like the best
+[14:28.40]  path I've seen work for people across
+[14:31.28]  and these are you know founders and CMOs
+[14:33.68]  at different stages different some of
+[14:35.60]  them are even AI native companies and
+[14:37.60]  they need to figure out AI too. They're
+[14:40.00]  they're just taking all their best
+[14:41.60]  people figuring out and these are the
+[14:42.96]  founders figuring out AI with them in
+[14:45.04]  the trenches and then you become this S
+[14:47.28]  tier team together with AI that can do
+[14:49.92]  this again great outputs that you'll see
+[14:52.16]  like ours with everything AI. I think
+[14:55.44]  this like somebody else asked me
+[14:57.76]  yesterday
+[14:59.44]  I you know I'm rolling out a few
+[15:01.12]  platforms some of the some of them are
+[15:02.72]  ones that SAS uses. Do you like
+[15:04.24]  recommend anybody to
+[15:07.20]  any either anybody or like an agency
+[15:09.28]  that can help me deploy all this? I'm
+[15:10.72]  like that's the wrong way to go about
+[15:12.24]  it. One, you got to figure it out
+[15:13.76]  yourself. Two, you know, no, I don't
+[15:17.28]  care who where anybody went in life or
+[15:19.44]  school or whatever. No single person on
+[15:21.60]  planet Earth will know how to do this
+[15:23.04]  better. There's no agency that already
+[15:25.12]  knows how to do this. There's no maybe
+[15:28.08]  there's a few like estier people at orgs
+[15:30.56]  that you can try and steal, but outside
+[15:33.04]  of that I wouldn't, you know, buy the
+[15:34.88]  snake oil of oh, we're an AI native
+[15:37.76]  agency and we know how to do GTM across
+[15:40.00]  the entire org. I'm like, they probably
+[15:41.44]  haven't done it themselves.
+[15:44.32]  I know maybe that's a little
+[15:45.36]  disheartening that you have to figure
+[15:46.48]  out yourself, but that is the best path
+[15:48.40]  forward in the meantime until others
+[15:50.48]  catch up.
+[15:52.40]  And then I would say too, don't get too
+[15:54.40]  hung up on this data governance thing. A
+[15:56.48]  lot of folks I talk to now, especially
+[15:58.08]  at bigger or
+[16:01.20]  get very concerned on, okay, if I add so
+[16:03.36]  many agents, I'm going to need
+[16:04.40]  governance as a layer or I'm going to
+[16:06.00]  need to clean up all my data and
+[16:07.68]  cleaning up all my data or getting all
+[16:09.12]  the processes right is going to take two
+[16:10.88]  years before I can even think about
+[16:12.72]  implementing. I think too much data is
+[16:15.12]  too much data and if you have things
+[16:16.96]  that are working, again, I would focus
+[16:18.80]  there first. So, I wouldn't try and
+[16:20.88]  tackle, you know, bite off more than you
+[16:22.88]  can chew. It just it didn't work preAI
+[16:25.04]  and it stuck work with AI.
+[16:28.72]  And then I think the last one because
+[16:29.92]  the other ones we'll get into per
+[16:31.76]  department is I hear this panic a lot
+[16:35.36]  from folks now. I don't know if it's
+[16:38.16]  because of how much content we post
+[16:40.40]  about AI or
+[16:42.96]  because of all the tweets, all the
+[16:44.64]  LinkedIn messages that they have to keep
+[16:46.88]  adding. Oh, I got to catch I got SAS has
+[16:49.60]  20. I got to get to 20. You don't like
+[16:52.56]  actually we have 20 and I'm only adding
+[16:54.56]  one more tool for the rest of the year.
+[16:57.20]  That's literally it. I'm adding more use
+[16:58.64]  cases to our current agent. I'm adding a
+[17:01.44]  2.0 agent to agent force. I'm adding a
+[17:03.52]  2.0 thing to qualified. Like I'm going
+[17:05.92]  deeper on our current tools. I'm adding
+[17:07.60]  one more because I think it's cool.
+[17:10.48]  And that's probably it for the foresee
+[17:12.56]  like Q1. I don't really know what I'm
+[17:14.00]  going to add yet. Actually, I feel like
+[17:15.76]  if our agents can just go a little
+[17:17.76]  deeper, I may not add anything new. I
+[17:19.68]  might add, you know, just deeper use
+[17:21.12]  cases. Our current
+[17:26.32]  Okay, let's start with outbound. I'll
+[17:29.36]  try not to spend all the time here. We I
+[17:32.48]  know outbound is near and dear to a lot
+[17:34.24]  of our hearts and we talk about it a
+[17:36.88]  lot, but I'll start here and I'll get
+[17:39.92]  your input too.
+[17:41.84]  So for outbound 6 months in now, we have
+[17:44.40]  sent now almost 20,000 messages.
+[17:47.20]  Actually, it would be 20,000. Again, if
+[17:50.08]  the human me had a little bit more time
+[17:51.84]  to send with my agent, it'd be over
+[17:54.56]  20,000, but still 20,000 is like a lot.
+[17:58.08]  Overall, our outbound with the AI is
+[18:03.28]  almost a 7%
+[18:05.44]  overall response rate, which is, you
+[18:07.36]  know, kind of double just overall
+[18:09.04]  averages across anything you'll see from
+[18:12.56]  all any, you know, tool that does
+[18:14.48]  sequences and outreach. A 4% positive
+[18:17.36]  response rate, which is higher than
+[18:18.88]  most. Now, keep that in mind. This is
+[18:20.40]  like higher than most folks on the
+[18:21.92]  platform.
+[18:24.48]  But interestingly too, now that it's
+[18:26.64]  been six months, 10% of ticket revenue
+[18:30.24]  for SAS AI in London only on this agent.
+[18:33.68]  So this is an interesting thing where I
+[18:38.48]  have seen our outbound agent. It has
+[18:41.04]  different goals. We've explained this
+[18:42.32]  previously, but I'll just give you guys
+[18:43.44]  some context. It has different goals and
+[18:45.28]  so it has like different agents in one
+[18:48.08]  platform because the training is
+[18:50.16]  different on all those agents. I have an
+[18:51.76]  agent basically for lap sponsors. I've
+[18:54.08]  got one for current sponsors. I've got
+[18:56.08]  one for people who previously attended
+[18:57.60]  Soundster now. And now I have one for
+[19:00.24]  people who are opening our emails but
+[19:02.40]  maybe not taking any actions with us.
+[19:04.24]  And then I have one purely for cold
+[19:05.76]  outbound. So all of those agents are
+[19:07.52]  trained and tuned in a slightly
+[19:08.96]  different way because I those audiences
+[19:11.20]  are different, right? The messaging is
+[19:12.72]  different. The collateral of what we
+[19:14.80]  want the agent to do and also the goal
+[19:16.96]  for the a what we want the agent to do
+[19:18.72]  is very different across those five. And
+[19:20.96]  so we've got about five core ones just
+[19:23.84]  within Artisan that are set up
+[19:25.28]  differently.
+[19:26.88]  And this is I think is surprising
+[19:29.20]  because at the start I was like okay you
+[19:30.96]  know it's an outbound tool. They were a
+[19:32.72]  sponsor of Sster this last May like I'm
+[19:35.04]  going to use it for sponsorships
+[19:37.84]  but then I quickly saw okay like it's
+[19:40.24]  not bad at booking meetings. It's fine
+[19:42.24]  to bookie meetings and that's great and
+[19:43.76]  then you know capture that intent and
+[19:47.36]  it's a great way to do follow-ups again
+[19:50.08]  to like current or past or lapse
+[19:52.48]  customers. It's a great way to do that
+[19:54.64]  using AI again at scale in a more
+[19:56.64]  consistent way that sometimes we can't
+[19:58.56]  physically do.
+[20:00.56]  But then you know there was just this
+[20:02.64]  interesting learning of because tickets
+[20:05.12]  for London and then now for annual are
+[20:07.60]  you know less than $1,000 depending on
+[20:09.44]  which event you go to. The AI got pretty
+[20:12.72]  good at selling the tickets itself. Like
+[20:16.96]  it got pretty good. Like at first I was
+[20:19.12]  nervous. Now six months in I'm like it's
+[20:21.68]  let let it go. Let it run free. Like
+[20:24.64]  it's gotten pretty good now with all the
+[20:27.12]  time we put in that it is empowered to
+[20:30.40]  sell tickets to be bulk. Again, it's a
+[20:32.64]  lower ASP. So maybe that's the most
+[20:34.40]  interesting learning. And it is still
+[20:36.08]  booking meetings for us on like the
+[20:37.36]  higher ASP things. But you know these
+[20:40.40]  people know us and it's just it's giving
+[20:42.72]  us this scale and personalization in a
+[20:44.88]  way we couldn't pre you know pre six
+[20:47.92]  months ago like every event after we
+[20:50.88]  have a event I struggle to you know send
+[20:53.52]  I'm like okay we should send out
+[20:54.88]  hyperpersonalized follow-ups to everyone
+[20:57.28]  to all the sponsors to all the attendees
+[20:58.88]  to all the speakers everyone you think
+[21:00.80]  about London that's 2,000 people annual
+[21:03.12]  that's 10,000 people like we could never
+[21:05.36]  do it right like we had to literally
+[21:07.52]  cherrypick the people who got like an
+[21:09.84]  actual human customized email, then who
+[21:13.04]  would the sales team send like a
+[21:14.32]  somewhat customized email to and then
+[21:16.40]  who just got like a templated email
+[21:17.84]  because we didn't have time to do the
+[21:19.12]  rest, right? We just can't send that
+[21:22.24]  hyperpersonalization of scale before
+[21:24.40]  this. Now, you know, we've sent 20,000
+[21:26.96]  post London. It'll easily send a highly
+[21:29.68]  customized email to all 2500 people that
+[21:32.24]  come. That's crazy if you think just
+[21:34.80]  stop and think about that for a second.
+[21:36.64]  It's doing all this for us.
+[21:39.84]  And this also was something that took
+[21:42.00]  not just me it took you know different
+[21:44.40]  members of the sales team like
+[21:46.32]  everything that we did is now
+[21:48.08]  consolidated into this in a way where
+[21:49.84]  the output is obviously fairly for us
+[21:52.40]  positive at least right
+[21:55.28]  we've seen some good gains here but it's
+[21:58.96]  not without time right so our how we
+[22:02.00]  think about using arisen specifically
+[22:03.92]  for outbound and you'll see here that's
+[22:05.92]  why I put the data like the positive
+[22:07.84]  response rates do vary right and So this
+[22:10.32]  is varied on agent. This is showing just
+[22:12.80]  the So one's a website one. You'll see a
+[22:15.36]  couple of these are attendee ones, but
+[22:17.04]  different years. And so they have
+[22:18.24]  slightly different training, slightly
+[22:19.60]  different things that they're
+[22:20.40]  referencing here.
+[22:23.36]  But these are ones where, you know,
+[22:25.28]  these positive response rates do vary
+[22:27.60]  depending on how maybe recent they
+[22:29.60]  interacted with us. Again, that was
+[22:31.20]  probably true pre- AI and it's still
+[22:32.88]  true now. But because our outbound
+[22:35.12]  emails sent per rep, and this was a
+[22:37.76]  crazy stat I just looked into last
+[22:40.08]  night, our outbound emails per rep
+[22:42.24]  across the board. So across the things I
+[22:44.00]  just mentioned for us, you know,
+[22:45.12]  tickets, sponsorships, speakers,
+[22:46.80]  whatever.
+[22:48.32]  On the average band 6 months ago was
+[22:50.96]  anywhere between 75, you know, let's say
+[22:54.00]  at the low end to 285 at the high end,
+[22:56.32]  depending on the person. Some people are
+[22:57.92]  were faster than others. Now, our AI is
+[23:02.16]  blowing that scale out of the water. It
+[23:03.92]  does 3,000 on its own per month in one
+[23:06.72]  plat. This is just one platform. I have
+[23:08.48]  another one that's always that I have
+[23:10.24]  actually two more two more that's doing
+[23:11.92]  outbound. This is just one platform
+[23:14.64]  that's giving us this leverage.
+[23:17.44]  And so I think again what's working for
+[23:19.60]  us is using this to do hyper specialized
+[23:23.76]  personalized you know messaging at scale
+[23:27.52]  has been working.
+[23:29.60]  There is a and which I fully believe it.
+[23:32.56]  I've talked to Jasper who's the CEO of
+[23:33.76]  artisan. There is a two to three week
+[23:35.68]  warm-up period with artisan so that they
+[23:38.56]  can get your deliverability as close to
+[23:40.88]  perfect as possible. You want to do
+[23:42.64]  this. You don't want to skip this step.
+[23:44.16]  There's a reason they make everybody do
+[23:45.76]  it. At first I was kind of annoy I'll be
+[23:47.60]  honest like previous webinars I be like
+[23:49.44]  it's kind of annoying it takes two weeks
+[23:51.12]  or anytime I need to add new domains it
+[23:53.12]  takes another three like I get a little
+[23:56.00]  frustrated but then you wait and then
+[23:58.00]  you see why because you're like okay
+[24:00.24]  you're not only do your email in this
+[24:02.88]  hit the inbox they don't go to
+[24:04.64]  promotions just as a I can't even solve
+[24:06.72]  that in Marquetto so many of our
+[24:09.12]  newsletters end up in promotions these
+[24:11.44]  actually go to the inbox and so again
+[24:14.08]  just another point of like
+[24:15.84]  differentiation there of things they
+[24:17.44]  could do that we couldn't do six months
+[24:19.04]  ago.
+[24:20.64]  And at the start we had to review all I
+[24:23.12]  was nervous. I wanted to review all the
+[24:24.64]  emails myself.
+[24:26.80]  But now I just spot check, right? I I
+[24:29.28]  spot check it.
+[24:31.68]  But I do mainly let the AI in or draft a
+[24:36.00]  response. I don't let it send it fully
+[24:37.60]  yet. Even six months in,
+[24:40.16]  I think it's still and some of my other
+[24:42.88]  agents I do empower to do full responses
+[24:44.80]  without me looking. But this one in
+[24:47.04]  particular, because of where Saster is,
+[24:49.52]  and maybe if you have multiple products,
+[24:50.88]  you might be the same way. Sometimes
+[24:52.56]  people ask multi-threaded questions,
+[24:54.16]  right? And so I think that's where the
+[24:56.00]  AI is pretty good if you know, let's
+[24:58.00]  just say in this scenario, it's to book
+[24:59.84]  a meeting and that person's like, "Yeah,
+[25:01.12]  I want to book a meeting." I'm like,
+[25:02.00]  "Cool, here's the calendar. The AI can
+[25:03.68]  do that." But if someone starts to ask
+[25:05.36]  about speaking and sponsorship, that's a
+[25:07.28]  common question we get. It's
+[25:08.24]  multi-threaded,
+[25:09.84]  it's not as good. And I think because
+[25:11.52]  there's just some human nuance and okay,
+[25:14.16]  do I feel like they're trying to ask me
+[25:15.60]  about speaking or free tickets because
+[25:17.36]  they want to they actually want to
+[25:18.96]  sponsor or do they just want free
+[25:20.24]  tickets and they're kind of wasting my
+[25:21.52]  AIS? And so there's still a little bit
+[25:24.80]  of that. you know, we do constantly
+[25:27.76]  monitor the human attention and
+[25:31.36]  responses specifically
+[25:34.40]  in this platform that we're using. So
+[25:36.96]  again, I do think it I think the
+[25:39.68]  unexpected learning is for artisan in
+[25:42.08]  particular and probably any other
+[25:43.36]  outbound tool you use for AI for
+[25:45.44]  outbound, it relies heavily on human
+[25:48.80]  consistency for training and iteration
+[25:51.20]  and quality of context. Like it's not
+[25:56.32]  100% of not 100 okay 90% of the contacts
+[26:00.40]  we've
+[26:02.00]  reached out to with our artisan agents
+[26:04.16]  are contacts we have they're not
+[26:06.00]  contacts I'm going and finding in Luca
+[26:08.24]  or Apollo or Clay or Artisan has a way
+[26:11.20]  you can do it natively in the platform I
+[26:13.76]  just you know I trust our contacts more
+[26:15.92]  and so putting in all that data does
+[26:19.76]  require time and it requires consistency
+[26:21.60]  our on our end so when I've had more
+[26:24.40]  time, you know, the sequences and
+[26:26.56]  everything works better when I've had
+[26:27.92]  less time. It still works on autopilot,
+[26:29.84]  but I see a drop off in the amount of
+[26:31.84]  responses we get. And that's cuz I just
+[26:33.52]  can't keep up with the AI. 6 months in,
+[26:36.00]  I have to try and give it fresh contact.
+[26:39.52]  It used to be I would do it once a week.
+[26:42.24]  Now I do it twice a week if I can
+[26:44.72]  ideally because it's gotten better, too.
+[26:47.68]  Right? Like I've empowered our agents.
+[26:48.96]  It's gotten better. And so ideally twice
+[26:50.40]  a week would be better.
+[26:52.64]  So that's I think the again unexpected
+[26:55.44]  learning there.
+[26:57.44]  Anything you want to add on outbound
+[26:58.72]  Jason.
+[27:02.88]  No, I think I I
+[27:05.44]  that I think that's a lot here is it's
+[27:08.08]  interesting. I think there's a this is
+[27:09.92]  plenty. I think the question I mean the
+[27:12.56]  conclusion obviously is that moving from
+[27:16.00]  the two human STRs we had the way we
+[27:18.80]  were doing it to
+[27:21.28]  AI there was no no downside in net right
+[27:25.60]  >> actually not necessarily better it looks
+[27:27.68]  like net the open rates and response
+[27:29.68]  rates were roughly similar in the end
+[27:31.44]  but we have 10 times the scale if I had
+[27:33.12]  to summarize it right
+[27:34.32]  >> correct y
+[27:35.36]  >> the I guess the one question that I
+[27:37.12]  might have around the audience is that's
+[27:38.72]  great but what about like super high
+[27:41.36]  value prospects, the ones you would want
+[27:43.76]  to reach out to personally. How do you
+[27:46.08]  how do we address that? How do you
+[27:47.44]  measure that? How do you think about
+[27:49.12]  that versus this is a broad swath of a
+[27:52.64]  lot of potential prospects?
+[27:54.64]  >> Yeah, it's a great question. Yeah, for
+[27:56.64]  super high value folks, I still put our
+[28:00.48]  AIS into draft mode across our agents,
+[28:03.36]  right?
+[28:04.88]  There's different use cases where I want
+[28:07.44]  to hit different folks, different
+[28:09.28]  parties with a message that is maybe
+[28:12.08]  hyperpersonalized or it's somebody who's
+[28:13.60]  actually met me and would know that you
+[28:16.32]  know my Amelia gets sassaster.com is one
+[28:19.04]  of my artisan emails and not
+[28:20.48]  Ameilia.com.
+[28:24.48]  And so for those folks like no matter
+[28:26.72]  what platform I use, artisan does some
+[28:28.88]  of them. Some other platforms do others.
+[28:31.44]  Uh, I pretty much put the Adrian's draft
+[28:33.36]  out and I see what it says, right? But
+[28:35.20]  that still saves me time. Like having it
+[28:37.60]  draft that next email either next email
+[28:40.08]  or first email of, you know, whatever
+[28:41.92]  I'm trying to action with them as like
+[28:44.56]  the end goal is helpful versus me
+[28:47.04]  writing everything from scratch.
+[28:49.60]  Definitely helpful. I think I still
+[28:51.04]  spend probably the most time making sure
+[28:52.88]  the contacts are the right people.
+[28:55.20]  I think where there's a gap right now
+[28:58.80]  is for a lot of these folks, especially
+[29:00.96]  our highv value ones, I always have to
+[29:03.04]  find new people to CC, which is manual
+[29:05.28]  like that. No AI can do this yet. Trust
+[29:07.52]  me, I've looked like no AI can do this
+[29:09.92]  yet. We're like because we have so many
+[29:11.92]  CEOs and founders in our database and
+[29:13.68]  maybe you sell to a lot of seuite
+[29:15.04]  executives too. The biggest issue I have
+[29:17.44]  right now in the AI is not that it's not
+[29:20.56]  working or that we have high value
+[29:22.08]  contacts that I can't draft an email to.
+[29:23.84]  pretty good and fairly customized is
+[29:25.84]  that you don't want to send it just to
+[29:27.52]  CEO, right? So, if I'm going to email
+[29:29.76]  the CEO of Data Bricks, like I want to
+[29:31.68]  copy his press team, his chief of staff,
+[29:34.24]  his CMO if it's for something speaking,
+[29:36.40]  probably the CMO too for visibility.
+[29:38.88]  Like, I don't want to just send it to
+[29:40.72]  Ollie. like even though I have his email
+[29:42.80]  and he knows faster and there's no way
+[29:45.12]  to really do that in the like there's no
+[29:46.88]  good way right now in any AI to find
+[29:49.92]  those additional contacts
+[29:53.04]  and also include them in a in a sequence
+[29:55.52]  like right now across all across the
+[29:57.60]  board all of our platforms are one to
+[29:59.36]  one right so I think that's something
+[30:02.00]  where we're six months in I do think
+[30:04.00]  that will get better and the platforms
+[30:06.16]  will let you do that more so down the
+[30:07.60]  road but that part takes a lot of time
+[30:09.92]  right now that's kind of like one of my
+[30:11.36]  biggest pain points.
+[30:15.92]  Okay, let's look to inbound cuz I want
+[30:18.00]  to try and go through all of go to
+[30:19.76]  market, but I'm already 30 minutes.
+[30:22.24]  I'll pick it up.
+[30:24.40]  All right,
+[30:26.40]  this is the inbound. So, there's some
+[30:30.16]  interesting numbers here on the right.
+[30:31.44]  My zoom's a little bit in the way. We
+[30:33.68]  actually have not had this for 6 months.
+[30:35.36]  We've only had it since August. So
+[30:37.44]  August, September, October,
+[30:39.84]  a couple weeks in November, three and a
+[30:41.36]  half months. We have not had this one as
+[30:44.32]  long cuz I added outbound first and then
+[30:45.92]  I tackled inbound. Again, you got to
+[30:48.56]  stair step your use cases here on AI. I
+[30:51.36]  wouldn't try and do everything in GTM
+[30:53.44]  all at once. Do one, get it working,
+[30:55.60]  then add another one if you want. So
+[30:57.84]  then I added inbound. We've had you
+[31:00.40]  could see it's had a lot of had almost
+[31:03.28]  700,000 sessions with people which we
+[31:06.32]  can never do physically
+[31:08.64]  and it's had a thousand conversations.
+[31:11.60]  So like sessions versus conversation in
+[31:13.36]  this realm is that the sessions are
+[31:16.72]  either I think it counts it where it can
+[31:18.56]  answer it itself whereas a conversation
+[31:20.64]  is something where the AI agent is
+[31:22.72]  actually conversing with the person more
+[31:25.04]  fully. It's looking, you know, it's
+[31:27.12]  looking at his training. It's answering
+[31:28.48]  it a bit more. I think that's the
+[31:30.80]  nuance, but don't take my word for it.
+[31:32.48]  But it's still a lot of sessions and
+[31:33.76]  conversations. And then when I took the
+[31:37.12]  screenshot, it was 91 meeting books and
+[31:38.88]  then this morning it was close to 100.
+[31:40.56]  So
+[31:42.24]  we've had a lot of interactions with
+[31:44.64]  inbound. Now that's always going to be
+[31:46.08]  true, right? This is inbound.
+[31:48.48]  But this is the data I wanted to share
+[31:50.72]  cuz I will say I wasn't as hesitant as
+[31:53.44]  adding an outbound agent. There's
+[31:55.52]  alternatives to artisan if you don't
+[31:57.36]  like that one. I like that one because
+[31:58.80]  again it's highly specialized on
+[32:00.48]  outbound. So I like that one because
+[32:02.88]  everything it does is to get the like
+[32:05.76]  similar results to what we're seeing.
+[32:07.20]  Like that's literally its whole manifest
+[32:09.44]  too. So I like to go specialized. I know
+[32:11.92]  other people like to try and find one
+[32:13.36]  platform that can do like multiple
+[32:15.36]  agents and try and consolidate for a lot
+[32:17.20]  of reason. But I like to go specialized
+[32:19.44]  because I do feel like the specialized
+[32:20.96]  ones for now still work a lot better
+[32:23.04]  because they go deeper.
+[32:24.88]  But anyway, so then when I added
+[32:27.04]  inbound,
+[32:29.20]  we've only had this, let's say, 3
+[32:31.60]  months. The inbound agent has been
+[32:35.36]  responsible for already a million
+[32:37.44]  dollars of revenue. Now, you could say,
+[32:39.52]  okay, some of that revenue would have
+[32:41.28]  closed anyway, right? It's inbound.
+[32:42.96]  People are reaching out to SAS in this
+[32:45.12]  case, particular for sponsorships. You
+[32:47.36]  could say, okay, you know, one that
+[32:48.88]  would in the old days six months ago,
+[32:50.56]  that would have been routed to a rep.
+[32:52.08]  somebody would have responded eventually
+[32:54.00]  gotten the meeting on the books and then
+[32:56.32]  you know hopefully
+[32:58.64]  I don't know I mean my data does show
+[33:00.16]  our win rates are better now with a on
+[33:02.40]  inbound than 6 months ago but assuming
+[33:05.04]  it was similarish and still fairly high
+[33:07.44]  let's say you know 750 of that would
+[33:10.32]  have still closed
+[33:12.72]  the onus here is that it closes not only
+[33:15.28]  does it close a lot faster is what we're
+[33:17.76]  saying in our data it's also closing at
+[33:21.36]  a higher rate than previous to us 6
+[33:23.84]  months ago. So even though it isn't
+[33:26.08]  inbound and you could say okay there's
+[33:27.84]  obviously inherent demand because
+[33:29.20]  they're coming inbound
+[33:31.92]  this has given context to both the
+[33:36.80]  prospect and our sales team in a way
+[33:39.60]  that it's giving us speed. So our inount
+[33:42.48]  agent right now is definitely picking up
+[33:44.08]  speed. A crazy stat I just saw too like
+[33:47.92]  70% of our October close one came from
+[33:51.20]  the AI.
+[33:53.68]  So you can see right there was a little
+[33:54.88]  bit of lag in August September and then
+[33:57.04]  most of that million came last month but
+[33:59.28]  then we have like another 2.5 pipe that
+[34:02.16]  is literally attributed to meetings and
+[34:05.12]  deals that came from the qualified
+[34:06.96]  agent. And that's magical in a couple
+[34:10.24]  ways. Now, I know some people like to
+[34:11.52]  describe it as, okay, it's just a
+[34:13.60]  meetings booker. I could do the same
+[34:15.60]  thing with just a meetings booker.
+[34:17.92]  That's like roundrobining. And if I show
+[34:19.36]  that on a website with a little AI,
+[34:21.52]  maybe that's good enough. And maybe that
+[34:23.20]  is good enough for you. But I'll say the
+[34:25.68]  difference here of why I've become a fan
+[34:29.60]  of qualified for what we use in this
+[34:31.92]  tool is that it gives you so much
+[34:34.56]  context more than a meetings booker,
+[34:36.88]  right? Like even if you have an AI
+[34:38.88]  meetings broker that's doing round robin
+[34:40.64]  per inbound
+[34:42.56]  our agent is having conversations with
+[34:44.88]  people like it's okay what you know let
+[34:48.08]  me let me book the meeting but first
+[34:50.56]  okay it puts the meeting instantly it
+[34:52.32]  used to be 6 months ago you had to fill
+[34:54.32]  out a contact form to disaster then I
+[34:57.52]  would it would go to me I would
+[34:58.96]  roundroin it so there's a delay like if
+[35:01.04]  it's overnight or on the east coast or a
+[35:04.08]  time I'm not awake there's a delay for
+[35:05.52]  me to round robin Then I send the
+[35:07.68]  roundroin to the rep. Then the rep has
+[35:09.76]  to respond to that person. And so that
+[35:12.00]  process is anywhere from within the same
+[35:14.56]  hour to a day later. That highly
+[35:17.12]  inconsistent 6 months ago. Now our agent
+[35:20.56]  is empowered to book meetings on its own
+[35:22.80]  and have a conversation. So it's send
+[35:24.96]  it's not only booking the meeting
+[35:26.72]  instantly where this used to take up to
+[35:28.72]  a day at the worst case scenario. The
+[35:31.04]  meeting is instant, but it's having a
+[35:32.96]  conversation with this person so that
+[35:34.88]  when I give it to the sales team, like
+[35:36.56]  literally me and David will go through,
+[35:37.60]  we'll be like, "Okay, what did they say
+[35:38.64]  to the agent? Did they say anything
+[35:40.48]  interesting?" The agent can also show
+[35:43.04]  you other people who have been on the
+[35:45.04]  website. You could say, "Oh, hey, cool."
+[35:46.64]  Like, "This person actually booked the
+[35:48.64]  meeting with me, but I saw their CEO was
+[35:50.32]  on the site or I saw a lot of contacts
+[35:51.76]  from the same company were on the site.
+[35:53.28]  Let me see." And also what they were
+[35:55.04]  looking at. It'll show you directly.
+[35:56.72]  Okay, this is what they were reading on
+[35:58.32]  the website. this is what they were
+[36:00.88]  probably interested in. And so that
+[36:03.12]  context just gives us a lot more like
+[36:06.48]  highly pre-qualified contextualized
+[36:08.88]  meaning, right? We don't really have to
+[36:10.24]  do discovery anymore because the AI has
+[36:11.84]  already done it. The AI already knows
+[36:13.68]  what websites you are on. It already
+[36:15.44]  knows who was on the site,
+[36:18.32]  who was there, how many times you
+[36:20.00]  visited the site. And because we have
+[36:21.36]  ours on multiple domains, it can also
+[36:23.76]  say, "Hey, they were also looking at XYZ
+[36:26.08]  thing on saster.com." Like
+[36:29.36]  again, I we don't do discovery anymore.
+[36:31.28]  We're like, "Okay, our agent already did
+[36:32.80]  it and already has the data. We just use
+[36:35.52]  that to do like a theory of what we
+[36:37.44]  think. We're like, "Hey, we saw you were
+[36:39.28]  looking at XYZ thing. Is that actually
+[36:41.12]  one what you want to talk about today?"
+[36:43.44]  You know, part of sales is still
+[36:44.64]  learning what their goals are just. But
+[36:46.40]  we have, it's so nice now to get on a
+[36:48.48]  club where we have that baseline with
+[36:50.00]  folks. They appreciate it, right? That
+[36:52.16]  you're not doing, you're not wasting 10
+[36:54.16]  of their minutes on discovery. You
+[36:55.52]  already kind of know what they're about.
+[36:56.80]  You know what they've been doing. Or
+[36:58.64]  sometimes they're like, "Oh, I didn't
+[36:59.60]  know our CEO was on the site looking at
+[37:01.04]  speaking." That's good to know. Maybe I
+[37:02.72]  should look at a sponsorship package on
+[37:04.56]  speaking. The conversations of quality
+[37:06.96]  is anecdotally a lot better. I don't
+[37:09.20]  have data around that, but maybe we will
+[37:11.92]  now. But it's just nice that it can do
+[37:16.32]  that. So that's an interesting context
+[37:19.84]  on selling something that is more of a
+[37:22.32]  higher ASP, right? Because for us,
+[37:24.16]  again, tickets are like sub 1,000
+[37:26.08]  sponsorships.
+[37:27.60]  The most popular one is, let's say,
+[37:30.00]  between the 50 to 100k range. There are
+[37:32.40]  more custom ones than that. But this is
+[37:34.24]  helping us with something that's at a
+[37:35.92]  higher price point. Close one a lot
+[37:38.48]  faster and we're seeing a lot more of.
+[37:41.92]  I will say two two interesting things
+[37:44.00]  before I move on to the next one and
+[37:46.48]  then anything you want to hit Jason on
+[37:47.92]  this one. But I see a lot of folks who
+[37:51.12]  use qualified that limit their agent,
+[37:52.88]  right? Like they limit it to talk to
+[37:56.00]  support or talk to sales and there's two
+[37:58.16]  buttons and that's kind of it. And then
+[38:00.48]  when I talk to other people's qualifies,
+[38:03.04]  I've seen it sometimes not as good. I'll
+[38:05.20]  be honest, it's not as good. And that's
+[38:06.80]  not a fall on the technology. That's a
+[38:08.56]  fall on the training. Again, if you take
+[38:10.48]  something that is a tier and make it
+[38:12.88]  even better like we have like I've
+[38:15.20]  empowered our qualified agents to ingest
+[38:18.32]  all of our website. So across saster.com
+[38:21.20]  which is you know 20 million words
+[38:23.68]  saster aai London Saster annual our
+[38:27.36]  YouTube channel things I upload to it
+[38:29.44]  I'm like these meetings I upload these
+[38:30.96]  meetings I upload some of my sponsor
+[38:32.32]  meetings I'll upload calls to it so we
+[38:34.16]  kind of know like what we're saying on
+[38:35.84]  calls because it can ingest all that it
+[38:39.12]  does so much more than I think most
+[38:40.72]  agents do on qualified and so ours in
+[38:44.56]  particular too is I think pretty good
+[38:47.52]  but it's also pretty good because we've
+[38:49.04]  empowered it to be that way. There's a
+[38:50.96]  level of trust I have with my Ameilia AI
+[38:53.04]  now that we've also, you know, I talked
+[38:55.92]  a little bit about the outbound piece of
+[38:57.84]  that's booking meetings for
+[38:58.88]  sponsorships, but it was also selling a
+[39:00.56]  lot of tickets. The inbound agent
+[39:02.80]  previously, right, you would fill out a
+[39:04.24]  form on the website
+[39:06.32]  for sponsorships and then if you wanted
+[39:08.24]  to buy a ticket, there was kind of
+[39:10.00]  nothing. There was like you could email
+[39:11.84]  events.com 6 months ago. It wasn't
+[39:14.80]  great.
+[39:17.60]  You know, the number one question our
+[39:19.28]  chat gets now related to tickets versus
+[39:21.68]  sponsorship is can I have a discount?
+[39:23.92]  And so quickly, oh, I think a week in
+[39:26.80]  when I saw it in the data with
+[39:28.40]  qualified, we empowered the agent to
+[39:30.88]  sell tickets directly. So, what it does
+[39:33.04]  now is if you ask it that question or if
+[39:34.96]  you prompt it for that question that
+[39:36.96]  you're looking, you're like seeking a
+[39:38.48]  discount, the agent's goal is to not
+[39:41.04]  only give you that discount, it will
+[39:42.56]  remind you because the agent lives on
+[39:44.64]  our website. It will know if you come
+[39:45.92]  back and if you don't after a couple
+[39:47.20]  days, it will actually email you like,
+[39:48.96]  "Hey, Jason, I gave you the code. We had
+[39:51.12]  this nice conversation as Ameilia AI.
+[39:53.04]  You didn't use it." And then it reset to
+[39:54.96]  the code. Hey, are you still interested?
+[39:56.72]  And people then use that code. Like
+[39:59.68]  again, I can't do that as a scale just
+[40:02.00]  me and it's something we didn't have
+[40:04.24]  prior to this. So between our two
+[40:06.80]  agents,
+[40:08.88]  it's now 20% of our ticket revenue for
+[40:12.00]  the upcoming London event. We'll see
+[40:13.36]  where we net out for London and then
+[40:14.96]  where we net out for annual because it
+[40:16.24]  will have a lot more time. But I think
+[40:18.64]  our AI just totally crushes it on this
+[40:20.56]  kind of stuff.
+[40:22.96]  If you can empower it, if you can get it
+[40:25.44]  to work in the same way, man, does it
+[40:28.56]  crush it. So, I love our AI. I actually
+[40:32.96]  went to go film with qualified
+[40:36.16]  and I think it's called Tabisk to make
+[40:38.88]  our AI into a full-blown seller and
+[40:42.24]  supporter where it's going to have my
+[40:45.12]  video and voice. And so, that will
+[40:48.00]  hopefully roll out by London and y'all
+[40:50.16]  can play with it there in person, too.
+[40:53.28]  But I'm just letting it do more.
+[40:59.20]  >> It's good. Yeah, I want to keep moving
+[41:00.64]  because this data is so good. We've said
+[41:02.24]  it before, but when we look, you know,
+[41:03.92]  we're we're 100 days in here, we're 125
+[41:07.28]  days into using Replet, we're six or
+[41:09.28]  seven seven or eight months into using
+[41:10.72]  Deli.
+[41:13.44]  If you're handsoff with your agent, not
+[41:15.12]  only will it not perform, not only will
+[41:17.12]  you not train it properly or iterate,
+[41:20.00]  you won't realize all the things it can
+[41:22.00]  do, it can do. So, all of our agents,
+[41:23.84]  when you get good at it, if you just are
+[41:25.76]  really hands-on with your agent, you
+[41:27.12]  work with it every day, you watch
+[41:28.40]  results, you're as quantitative and data
+[41:30.40]  driven as Amelia is here, if you get
+[41:32.24]  there, there is a pot of gold after that
+[41:35.60]  because you will find your agent can do
+[41:37.52]  so much more than you thought it could.
+[41:39.28]  That is the magic. But you got to push
+[41:41.36]  on. You got to get really good at what
+[41:43.12]  you think it does and then open your
+[41:44.96]  eyes for other use cases. All these AIs
+[41:47.04]  get so powerful. They know all your
+[41:48.64]  data. They ingest everything out of you.
+[41:51.20]  And the underlying LLMs are so powerful.
+[41:54.48]  They can't help but do more.
+[41:58.48]  >> Yeah. I It's a you'll see like I see I'm
+[42:03.04]  reading some comments in the chat too
+[42:04.24]  while you're going. the, you know, our
+[42:06.48]  again my SLR theory is I like to go deep
+[42:10.24]  now with like specialized tools where I
+[42:12.56]  can just keep adding use cases and add
+[42:14.88]  agents within certain tools. I don't use
+[42:17.60]  an all-in-one tool, but I feel like the
+[42:20.24]  results are worth it. And so that's why
+[42:22.08]  it's worth, you know, sometimes I have
+[42:23.60]  to put stuff in artisan and qualified
+[42:26.32]  separately. And is it a little annoying?
+[42:28.80]  Of course it's a little bit annoying.
+[42:30.08]  It's time consuming, but am I going to
+[42:32.00]  do it because the response rates I think
+[42:33.76]  will be better in the long run for
+[42:35.60]  inbound versus outbound? Yeah. So, I'm
+[42:37.60]  still going to do that for the
+[42:38.56]  foreseeable future.
+[42:40.88]  It's going to be a little bit annoying
+[42:43.20]  and painful. That's true of anything.
+[42:45.12]  Like outbound's always a little bit
+[42:46.48]  annoying and painful. Like not like the
+[42:48.48]  AI was going to magically wave its wand
+[42:50.64]  and like glindify it. Like it's less
+[42:53.36]  painful and have more scale, but it
+[42:55.92]  would still help. If you didn't like
+[42:57.84]  doing it before, AI, you're probably not
+[42:59.60]  going to like doing it now.
+[43:02.40]  >> Okay, a quick one here because I do
+[43:04.24]  think I all I have like more use cases,
+[43:07.44]  but maybe I'll have to do a part two.
+[43:10.72]  AI and GTM the there's this middle
+[43:14.96]  ground and I do want to spend some time
+[43:16.64]  on this because I feel like most people
+[43:18.24]  have a misconception about the next
+[43:21.20]  product which is Asian force and I do
+[43:24.00]  feel like I when I talk to people about
+[43:26.64]  it they're always shocked they're like
+[43:29.92]  what do you mean I have either they've
+[43:31.44]  never seen it so I put like more
+[43:33.04]  screenshots
+[43:34.80]  or they're like not sure how to use it
+[43:38.40]  because I don't know I think because
+[43:40.56]  it's from an in, you know, an existing
+[43:44.16]  company versus a it's an incumbent
+[43:46.24]  versus a startup. I don't know. But
+[43:48.16]  anyways, I get some mixed reaction, but
+[43:50.56]  I'm like, yeah, part of our core stack
+[43:52.16]  now is Asian force. So, I'll explain my
+[43:56.08]  Asian force. I I've gotten to know their
+[43:57.68]  team very well. They're all fantastic
+[44:00.16]  humans. Let me say they are the nicest
+[44:02.40]  people on the planet. They're like some
+[44:03.60]  of the best people. And I now love also,
+[44:05.68]  you know, I love the qualified team.
+[44:07.04]  I've gotten to know Jasper and Artisan.
+[44:09.28]  Part of this is I do trust the humans
+[44:12.00]  that are on the backside. I think that's
+[44:14.64]  if you're going to pick an AI vendor, I
+[44:16.32]  do think that's part of it. Like you
+[44:17.92]  should trust the humans. Look, you
+[44:19.92]  should want to work with their human
+[44:21.68]  counterparts. Like I called Replet's
+[44:23.84]  team replets humans. Like Replet's
+[44:25.68]  humans. Like we went there this week. I
+[44:27.52]  was like, "Oh, we're going to go see
+[44:28.40]  Reply Humans." I'm like, "But I like
+[44:30.32]  those guys and I trust them." So same
+[44:32.88]  thing with any vendor rep. We have this
+[44:35.36]  middle ground where I've gotten to know
+[44:37.04]  their team a lot and they you know I
+[44:38.64]  think publicly they say their number one
+[44:41.28]  their number one use case for agent
+[44:43.36]  force is support and I'm building a 2.0
+[44:46.32]  you know, agent that lives somewhere
+[44:48.16]  between support and like
+[44:49.52]  personalization. But our first agent
+[44:51.92]  that we've deployed, and this was
+[44:53.28]  recently, so this was just
+[44:55.92]  right at Dream Force, which is like a
+[44:57.28]  month ago. So, it's only been live a
+[44:58.64]  month. This is our newest agent, right?
+[44:59.84]  Cuz I had ours and I hadn't qualified
+[45:01.68]  and then added a bunch of other stuff
+[45:03.20]  you'll see in marketing and then I added
+[45:05.20]  agent force
+[45:07.44]  in we had a gap where it wasn't inbound
+[45:10.80]  in the way that like qualified is. It
+[45:12.96]  wasn't outbound in the way the artisan
+[45:14.96]  mostly is. I had this gap where
+[45:18.40]  embarrassingly
+[45:20.32]  post SAS annual I was like we literally
+[45:23.12]  just from this SAS annual have about a
+[45:25.60]  thousand people our sales team never
+[45:27.76]  followed up with. These were people who
+[45:30.08]  literally filled out that form I was
+[45:31.60]  talking about earlier said they wanted
+[45:33.52]  information about SAS annual. I routed
+[45:35.36]  it to a rep and then the rep did
+[45:37.04]  nothing. I found a thousand of these
+[45:38.56]  people which is all blonde. like I can't
+[45:41.28]  kill I'm not gonna go I should email
+[45:43.52]  those people an apology
+[45:46.16]  one by one and email them but that again
+[45:49.36]  that would take me too much time I need
+[45:50.72]  the scale and so I thought okay this is
+[45:53.12]  probably the best first use case for an
+[45:55.76]  agent force agent because these people
+[45:58.56]  raise their hand meaning they're already
+[46:00.08]  in our salesforce because that's how our
+[46:01.84]  forums used to work and I already have
+[46:04.64]  info about them in Salesforce whereas
+[46:06.56]  like Artisan does a lot of
+[46:07.68]  personalization based on what they're
+[46:09.04]  posting this the magic I would say the
+[46:13.28]  agent course is that it knows everything
+[46:15.44]  your Salesforce knows which sometimes I
+[46:18.08]  say that to people and they're surprised
+[46:19.20]  I'm like what
+[46:21.20]  that's the beauty of it like it has all
+[46:24.96]  your Salesforce data if you like click a
+[46:27.52]  button and you want it to and then you
+[46:30.00]  can use that to then sense the context
+[46:33.28]  of the email so I'll show you what I
+[46:34.88]  mean next but this was our first use
+[46:36.64]  case we had a thousand leads nobody
+[46:38.64]  wanted to follow up with.
+[46:42.24]  So it's now sending out reach to mainly
+[46:45.44]  those people like it's still working
+[46:46.64]  that again it's newer so it's still
+[46:48.40]  working that list of a thousand. I also
+[46:51.28]  capped it right whereas like artisan's
+[46:52.80]  doing 300,000 a month it's doing 3,000 a
+[46:54.96]  month on on month six like agent force
+[46:58.32]  is very much on I would say month one at
+[47:01.52]  the end of month one going into month
+[47:02.88]  two. So, I've capped it. So, it's still
+[47:04.88]  emailing those thousand people that we
+[47:06.32]  ghosted. But then I also started adding
+[47:08.40]  people where if I have a conversation
+[47:10.24]  with them
+[47:12.32]  for ideal cycle, it starts to email them
+[47:14.16]  a follow-up cuz sometimes I'm really bad
+[47:15.60]  at them.
+[47:17.84]  Between those two use cases, what we've
+[47:20.96]  seen, and this is early days, is a
+[47:23.52]  higher response rate so far and a huge
+[47:26.88]  open rate. Like, I can't the open rate
+[47:29.68]  of 72% is freaking high. You can't get
+[47:32.56]  that in Marquetto. You can't get that
+[47:34.40]  with a human that doesn't send that
+[47:35.92]  email. The open rate is zero at equals
+[47:38.00]  zero for an email that was never sent.
+[47:39.92]  And even though it's early days, I'm
+[47:42.80]  fairly bullish on this one because the
+[47:44.88]  early data is pretty good. So I have
+[47:49.92]  liked it for that. I think it's a good
+[47:52.88]  use case that more folks are getting
+[47:55.12]  into. Okay. versus, you know, again,
+[47:58.32]  support is their number one kind of like
+[47:59.84]  agents normal. Most people deploy fine,
+[48:02.16]  whatever, but our qualified does
+[48:03.36]  support. So, like I said one that did
+[48:06.32]  sales and you'll see I put two sample
+[48:08.64]  emails here. This was like a follow-up
+[48:09.92]  email to again somebody we ghosted and
+[48:13.20]  for this agent because it's early days,
+[48:14.88]  I haven't empowered it yet to do
+[48:16.24]  bookings itself. So, that's why it's
+[48:17.60]  asking for a meeting versus like just
+[48:19.68]  showing a direct booker. And Kyle
+[48:21.84]  responded literally right away and said,
+[48:24.40]  you know, no thanks, but I'll attend.
+[48:27.36]  Again, never would have happened six
+[48:29.92]  months ago because our sales team,
+[48:33.20]  nothing against them. They just decided
+[48:34.80]  not to follow up with these thousand
+[48:36.16]  people. And
+[48:38.64]  yeah, you could say maybe I started with
+[48:40.16]  the use case that is low hanging fruit.
+[48:42.48]  Sure, but why also why wouldn't you? I
+[48:44.72]  already have so many use cases. the
+[48:47.60]  other agents that we used that I wanted
+[48:49.84]  one that was near and dear to me because
+[48:51.60]  I was like if I inbounded to somebody
+[48:54.08]  and they never followed up I salty
+[48:58.08]  like maybe cuz the AI has data and you
+[49:01.12]  know them being in our sales force and
+[49:02.88]  what their company has done with us I
+[49:04.64]  think it's like a nice note like you
+[49:07.28]  know so I don't know that's where I went
+[49:09.28]  into it the other thing I'll say about
+[49:10.96]  agent force which was alerting is
+[49:14.08]  there's two slide there so we're
+[49:15.68]  flipping ahead on the deck
+[49:17.44]  Because somebody asked this earlier
+[49:18.72]  actually about the setup of it. Like it
+[49:21.28]  is within the UX of Salesforce, right?
+[49:24.96]  My biggest learning was like I am I will
+[49:27.20]  admit I am not the greatest Salesforce
+[49:30.40]  user on planeter. I was not the greatest
+[49:33.04]  user 6 months ago. I've definitely
+[49:35.12]  become a better user now in this
+[49:36.72]  process. But I would by no means like
+[49:39.68]  you know I'm not even certifi I'm not
+[49:42.64]  not even certified like I know that a
+[49:45.44]  lot of people I'm not Marquetto
+[49:47.12]  certified either so I but I would say
+[49:50.32]  like in my rankings the tools in our
+[49:52.56]  stack six months ago I would say I was a
+[49:55.68]  lot better at Marquetto than Salesforce
+[49:57.36]  and I pushed a lot of things from
+[49:58.56]  Marquetto to Salesforce just because
+[50:00.56]  that's what I was trained on in the
+[50:02.32]  early days as a marketer versus
+[50:03.84]  Salesforce which was a sales stool
+[50:06.72]  only back in the day they just wouldn't
+[50:08.32]  give you access and so I didn't know all
+[50:10.48]  the like nooks and crannies. I learned a
+[50:13.12]  lot of them in this process and so I
+[50:15.44]  think that's I think there's a
+[50:17.52]  misconception on it's super technical
+[50:20.40]  and nobody can get it to work. That's
+[50:22.00]  like the number one thing I hear.
+[50:25.12]  But honestly one I had help with all
+[50:27.44]  these platforms. Artisan helped us help
+[50:29.44]  set up artisan qualified helped us set
+[50:31.44]  up qualified Salesforce helped us set up
+[50:33.68]  Asian for like all of these they it
+[50:35.52]  wasn't just me like we did a lot of the
+[50:37.60]  training and tuning once we knew how it
+[50:39.12]  works but they helped us with the setup
+[50:41.12]  that's not vendor agnostic right now and
+[50:43.60]  I think it's true of any good vendor in
+[50:45.12]  AI right now they do have to help you
+[50:47.12]  and they should want to help you get
+[50:48.88]  successful they want you to have the
+[50:51.52]  same numbers and results we have I think
+[50:54.48]  this misconception of you know oh I
+[50:56.88]  can't use agent for even on Salesforce
+[50:58.56]  cuz it's probably too technical or it's
+[51:00.96]  going to be doomed to fail or I probably
+[51:02.64]  can't get, you know, I'll need either a
+[51:04.96]  third party agency or like a Salesforce
+[51:06.88]  admin to come do this for me. I'm not a
+[51:09.76]  Salesforce admin. I figured this out
+[51:11.28]  with their help.
+[51:13.12]  So again, I think it's for any tool
+[51:15.20]  where you'll need their help at the
+[51:16.88]  start for sure. Like now I need less
+[51:18.96]  help. Now I get how this works. But
+[51:21.60]  you'll see too like a lot of things even
+[51:23.76]  though they don't look the same are kind
+[51:26.08]  of the same concepts. So once you learn
+[51:28.56]  one tool because I learned artisan first
+[51:31.12]  like this is for reference the artisan
+[51:33.28]  setup where this is only two screenshots
+[51:35.92]  of a very long page and it's great but
+[51:38.64]  you're seeing like I'm putting in what
+[51:40.72]  is this one for? This one's for London
+[51:44.24]  tickets. I can tell because of what I
+[51:46.24]  put in my proof points and then there's
+[51:48.40]  coaching right here that I put in. Then
+[51:50.48]  there's other things you have to put in
+[51:52.00]  to the setup. This is not just similar
+[51:55.44]  to that where I'm putting in
+[51:56.72]  instructions on the prompt builder
+[51:59.04]  similar to I actually copied my whole
+[52:01.60]  page for I actually copied all the
+[52:04.64]  instructions I put into artisan I just
+[52:06.56]  put them into a force and rewrote them
+[52:08.64]  for this use case of email people who
+[52:11.12]  haven't been reached out to and then it
+[52:13.52]  worked. So like some of the training you
+[52:15.60]  do is again maybe not going to look
+[52:17.60]  physically the same but some of the same
+[52:19.84]  concepts I think are core across any AI
+[52:22.56]  tool you use where again between the
+[52:25.84]  ones I've shared so far artisan
+[52:27.60]  qualified now Salesforce/ Asian force
+[52:29.84]  like this logic that I had to learn 6
+[52:32.80]  months ago okay this is how you tune an
+[52:34.80]  agent this is how you train it this is
+[52:36.16]  how you consistently update it does have
+[52:38.80]  this kind of universality to it which I
+[52:41.92]  know seems a little funky but Once you
+[52:44.16]  kind of learn how to do in one, it is
+[52:45.92]  easier to do the others. I don't think I
+[52:48.00]  could have gotten successful on having
+[52:50.32]  all of these agents and now learning how
+[52:51.76]  to buy a good replet had I not taken the
+[52:54.24]  time to learn the foundations of one of
+[52:56.56]  them and go really deep so that I could
+[52:58.72]  basically speed through the other ones
+[53:01.60]  and say, "Okay, I kind of know a version
+[53:03.20]  of this. I kind of know the concepts."
+[53:05.20]  you just start to learn how to talk to
+[53:07.52]  AI and talk to the agents and the models
+[53:10.48]  with your data in a way that again no
+[53:13.20]  one can teach you like it's just
+[53:14.80]  something you've got to go through
+[53:16.08]  yourself of okay I've learned now how to
+[53:18.40]  talk to reply I've learned how to talk
+[53:19.76]  to our agent birth agent I know how to
+[53:21.52]  talk to qualified I know how to talk to
+[53:23.12]  replet like again certain universalities
+[53:25.84]  are there actually six months in where
+[53:28.16]  if you kind of if you learn one you can
+[53:30.72]  figure out the others because they're
+[53:32.16]  not dissimilar to one
+[53:36.16]  Okay. I There's a lot of questions.
+[53:37.92]  There's eight minutes, but I haven't
+[53:39.12]  really gone to all these. What do you
+[53:41.04]  reckon, G? Should I keep going or should
+[53:43.12]  I just do questions and do a part two?
+[53:46.64]  >> You're on mute.
+[53:47.68]  >> Sorry. Let's do questions. I think the
+[53:49.20]  SDR outbound inbound is so important.
+[53:51.04]  Let's take questions and then let's
+[53:52.80]  break this up into a part two on the
+[53:54.64]  rest of GTM and AI agency.
+[53:56.48]  >> Okay. Okay. I could do part two next
+[53:58.56]  weekend.
+[54:01.12]  It will not be long. I could do part
+[54:03.12]  two, but I haven't even touched on revop
+[54:04.88]  CS and like marketing. So, there's a lot
+[54:07.12]  there.
+[54:08.64]  Let me go back to crush. Oh, some people
+[54:10.88]  like keep going like do you want to be
+[54:12.72]  here for
+[54:18.32]  Hold on. Let me go back to Russian.
+[54:22.08]  Go back to a few key questions and then
+[54:24.64]  I'll do a quick overview and we'll do a
+[54:26.24]  part two. So, I'll meet you guys in the
+[54:27.60]  middle if that's okay.
+[54:29.68]  Go back to the start.
+[54:32.32]  Let me go back to the start.
+[54:37.92]  Someone has asked, "What are the tools
+[54:39.52]  you are using with success?" Yeah,
+[54:42.48]  they're in this deck. And then I don't
+[54:44.80]  Sorry, a lot of you asked for a link to
+[54:47.76]  the deck. So, I'm going to put that in
+[54:50.16]  now. It wouldn't let me do it while I
+[54:52.80]  was talking.
+[54:55.76]  I think I have to reframe
+[55:06.24]  it to Jason, but
+[55:10.16]  hold on. I do think this is important
+[55:11.84]  because if we're going to do part two,
+[55:13.92]  you guys can also tell me what you want
+[55:15.44]  to see in the next one.
+[55:20.08]  Okay, here it is.
+[55:23.20]  Let me get you guys the link.
+[55:30.24]  Not everything can be sold by AI. Some
+[55:31.84]  things you have to do.
+[55:35.20]  You're selling like finding this link in
+[55:37.92]  a very roundabout way. But I've got it.
+[55:42.64]  And also you guys can keep asking
+[55:44.00]  questions. I will I'll stay on.
+[55:47.04]  I can go over. So if you guys want to
+[55:48.80]  stay on and get your question answered
+[55:50.24]  or if you want to watch the replay later
+[55:53.28]  that is good.
+[55:55.76]  So copy link address. Okay slides.
+[56:01.20]  There we go. Okay there's one
+[56:04.40]  first major question I thought. Somebody
+[56:06.88]  else is asking what's our tools and
+[56:08.96]  stack because they join late. So at the
+[56:10.72]  beginning of this presentation but if
+[56:12.24]  you also go to faster.ai/agents AI/
+[56:15.52]  agents. We talk a lot about these tools.
+[56:19.20]  So, this has all the tools. You can see
+[56:21.28]  I really didn't make it far. I only made
+[56:22.64]  it through 13,
+[56:25.68]  the ones I was going to go through
+[56:27.28]  today, but we have a few here. So, you
+[56:29.84]  can go to saster.ai/agents.
+[56:32.24]  There's a little bit more on all of them
+[56:33.84]  here. And then I linked this deck or you
+[56:35.92]  can we'll draw it on saster.com too so
+[56:38.96]  that you can also see it there. There's
+[56:41.60]  a few good questions here. Right. They
+[56:43.60]  gone the earlier part of the session
+[56:45.92]  that was about
+[56:48.16]  inbound and outboundation.
+[56:56.96]  Some folks were asking what is our cost
+[57:00.00]  for each of these tools. I think it's
+[57:01.60]  and how you should budget for it.
+[57:04.24]  It's a good question. I want to get your
+[57:06.24]  thoughts on this as well, Jason. Mainly
+[57:08.24]  on the budget side.
+[57:10.56]  I would say for cost one, it depends on
+[57:13.84]  what you're going to use it for.
+[57:16.72]  And I'll give a quick anidote. I
+[57:18.40]  literally spoke to a $50 million AR CMO
+[57:22.00]  this week and he was like, "Oh, I have
+[57:24.24]  10 betas going." And I was like, "Why do
+[57:27.44]  you have 10 betas going right now?" He
+[57:32.08]  I'm in a bake off with, you know, three
+[57:34.24]  different outbound AISR tools, like two
+[57:36.96]  for inbound, a couple more for allin-one
+[57:39.84]  tools.
+[57:41.68]  I was like, maybe don't do that.
+[57:44.48]  Maybe my advice is to
+[57:47.36]  stop all the I like why, you know, I
+[57:50.88]  just want to see which one works the
+[57:52.16]  best before I spend money. I'm like, I
+[57:54.32]  think you got to make a bet here, dude.
+[57:55.84]  Like I think in trying to save money,
+[57:58.64]  you are actually spending a lot more
+[58:00.88]  time than you normally would just
+[58:02.24]  deploying these and getting the outputs
+[58:03.68]  of AI by doing these 10 different betas.
+[58:06.56]  I was like just pick one and if you feel
+[58:09.44]  like the cost is prohibitive, work with
+[58:12.48]  the vendor on the cost, see what they
+[58:14.56]  can do for you. If not, go to fine. Go
+[58:16.48]  to their competitor if you need to. But
+[58:18.24]  I was like, don't do 10 trials because
+[58:19.84]  you think it's going to magically save
+[58:21.20]  you money in the end on AI. This is like
+[58:23.92]  the craziest thing I've ever heard.
+[58:27.20]  >> I think and to be it is to first of all
+[58:30.08]  one I don't think you I mean it would be
+[58:32.40]  nice to have a bake off but unless
+[58:33.68]  you're going to invest the effort to
+[58:34.80]  truly train all of them it'd be hard to
+[58:37.20]  do a bake off than more than two
+[58:38.72]  vendors. You should do a bake off for a
+[58:40.64]  variety of reasons. There's different
+[58:42.56]  flavors,
+[58:44.08]  different UI UX, different limit. They
+[58:47.12]  all have limitations. They all have
+[58:48.56]  limitations. So I would bake but I
+[58:50.00]  wouldn't do 10 because you won't put the
+[58:51.36]  energy into training them. the bake off
+[58:53.04]  will fail with 10. I would do two just
+[58:55.36]  like in the old days. The one thing I
+[58:56.64]  would say, Ameilia, you could add to it
+[58:57.92]  is what's the pricing they ask. You can
+[59:00.08]  talk to the vendors. Here's the tough
+[59:01.92]  part. Basically, all the vendors that
+[59:04.64]  were describing for this for GTM sales
+[59:08.88]  type motions or marketing BDR, whatever
+[59:11.28]  you want to call it, they all require
+[59:13.28]  training. They all have a fair amount of
+[59:14.88]  data and really they're mostly optimized
+[59:18.40]  kind of around 100k price point. Now
+[59:21.04]  sometimes it's 60 or 70K annual
+[59:24.16]  >> and 30K to pay you for the onboarding
+[59:26.96]  and training. Some of the vendors absorb
+[59:29.68]  some of the onboarding costs, some
+[59:31.44]  don't.
+[59:33.36]  There are lower-end versions you could
+[59:35.60]  but it is all in the tens of thousands
+[59:37.44]  of dollars a year or more and probably
+[59:39.60]  more like 20 30 40,000. Artisan that we
+[59:43.04]  happen to use is launching a low-end
+[59:44.80]  version, right? I think everybody will
+[59:46.56]  and we will be on top of that. We will
+[59:48.80]  be on top of that and we will test out
+[59:51.60]  more of these cheaper versions and see
+[59:54.40]  how the more automated training works.
+[59:56.32]  I'm not skeptical with where LLMs and
+[59:58.48]  AIs are going today. I think I can
+[60:00.88]  guarantee you that the low-end cheap
+[60:02.56]  versions just and this is true in
+[60:04.32]  support which is further along. The
+[60:05.92]  low-end cheap versions aren't as good.
+[60:08.72]  And it's not that the software isn't as
+[60:10.48]  good. I just did a deep dive with G2 on
+[60:12.24]  the CEO of Zenesk and we talked about it
+[60:13.84]  at Zenesk and support. The low-end
+[60:15.84]  agents work. They just don't ingest as
+[60:17.36]  much data. They might ingest your wiki
+[60:18.96]  and a little bit of information. And so
+[60:20.72]  the low-end Zenesk a engine is still
+[60:22.88]  good, but it maybe only has 20% of the
+[60:25.60]  power of the enterprise version. And I
+[60:27.36]  suspect that's what's going to happen.
+[60:28.48]  Instead of training this on every bit of
+[60:30.96]  data we have for a decade, every
+[60:32.88]  interaction, every customer action, it's
+[60:34.48]  just going to simplify what it trains.
+[60:37.04]  Maybe Amelia feels it differently. And
+[60:38.48]  so it won't be quote as good, but it may
+[60:41.04]  be plenty good. It may be plenty good
+[60:42.72]  for $299 a month or 10 grand or what. We
+[60:46.16]  don't know. We're going to be objective
+[60:47.36]  and I think if we do nothing else, we're
+[60:49.92]  going to pilot the low some low-end
+[60:52.08]  versions of these and we'll compare and
+[60:53.36]  contrast for you. But I am not aware of
+[60:55.60]  in right now as this is recorded, I'm
+[60:58.00]  not aware of any cheap AI SDR and BDR
+[61:00.56]  tool that works because of the training
+[61:02.32]  ingestion and data. But I wouldn't rule
+[61:05.12]  it out for 2026. But I would budget 50
+[61:07.68]  to 80 grand or more. And if you can't
+[61:10.32]  afford that, don't expect much.
+[61:14.00]  >> Just don't expect
+[61:16.32]  today. No, it's a good point. And I
+[61:18.08]  think yeah, the bake off thing was
+[61:19.36]  interesting because that was something I
+[61:21.44]  was just kind of shocked when I heard
+[61:23.12]  this. I was like, what? I know you're
+[61:25.20]  trying to save money, but I don't think
+[61:26.32]  this is the way to do it. It's just too
+[61:28.72]  many.
+[61:30.24]  I was like, it's just too many and too
+[61:31.84]  much. Like, you're either going to say
+[61:34.08]  that they all suck or you're going to
+[61:36.16]  kind of pick one and it's going to take
+[61:37.60]  you too long to actually implement it
+[61:39.44]  and your cuz the CMO like your CEO is
+[61:42.24]  going to get frustrated with you.
+[61:43.60]  There's a lot of problems in doing too
+[61:45.84]  many bake offs from all these AI tools
+[61:48.24]  in the vein of saving money, right?
+[61:50.48]  There's other reasons you should do it
+[61:51.68]  to Jason's point, but I think in the
+[61:52.88]  vein of saving money, like this is not
+[61:54.48]  the way to save money. The other thing
+[61:57.84]  I'll say about budget, I think the 100k
+[61:59.36]  range is right. Some are right below it,
+[62:01.28]  some are maybe right above it. Depends
+[62:03.60]  on what you use it for. Pricing does
+[62:05.60]  fluctuate based on, you know, uses.
+[62:08.96]  But the other thing I'll say about
+[62:11.52]  budget that I've come to learn from
+[62:13.52]  folks too and then like trials, yeah, a
+[62:16.00]  lot of these are going to be rolling out
+[62:18.00]  self-s served versions, right, where
+[62:19.60]  it's more of a paid to go or, you know,
+[62:21.84]  you can try it for a few months and see
+[62:23.36]  how it goes and see if you get some of
+[62:24.88]  the same results we do.
+[62:27.52]  But I would say too, like the thing that
+[62:29.84]  you should budget that is maybe more
+[62:31.92]  important than the direct cost is going
+[62:34.40]  to be time. So we also were able to
+[62:38.96]  reallocate budget, right? There's
+[62:40.64]  certain things you could do where this
+[62:42.24]  was not new budget I had for all these
+[62:44.72]  tools that I went to Jason and said,
+[62:46.08]  "Hey, can Google Asian boards qualified
+[62:49.04]  artisan?" But also around the time of
+[62:51.92]  our event in May, a few people left
+[62:54.80]  after. And so I was like, "Okay, instead
+[62:57.20]  of replacing that headcount, which was
+[63:00.24]  already budgeted, I will replace it with
+[63:02.48]  the tool." And so that's another way to
+[63:04.72]  do it. Like I'm not saying to fire
+[63:06.16]  someone and then hire in the stool
+[63:07.36]  instead. But if somebody
+[63:08.24]  >> No, but we replaced two human the budget
+[63:10.32]  from two humans to support our agents.
+[63:12.40]  And we didn't fire anybody. It I really
+[63:14.96]  think natural attrition is going to
+[63:16.56]  create your budget more than you know if
+[63:18.72]  you're going to fire someone because
+[63:19.68]  they don't perform just fire someone.
+[63:21.36]  Like you don't fire anyone good to
+[63:22.56]  replace them with AI if you haven't
+[63:23.84]  learned anything. If someone's fail if
+[63:25.84]  they can't close anything or if your AI
+[63:27.60]  SDR hasn't set a single appointment I
+[63:29.52]  mean your human SDR maybe just replace
+[63:31.12]  that budget with you know if your SDR
+[63:33.36]  can't do anything. you know, you can't
+[63:35.04]  do worse than zero,
+[63:38.48]  but we'll track it. The many of you, if
+[63:40.48]  you're early stage folks watching this,
+[63:42.88]  you'll think that's expensive, and if
+[63:44.80]  you don't believe in the vendor, it will
+[63:46.40]  seem very expensive. It will because
+[63:48.32]  you'll get quoted by a sales rep a lot
+[63:50.16]  of money
+[63:51.28]  >> and it will feel risky to you if the
+[63:53.60]  deployment doesn't work.
+[63:56.56]  >> You know, we that's why
+[63:58.40]  >> we're not trying to be walking
+[63:59.60]  billboards, but we do share the vendors
+[64:01.28]  that we use. Others are good, too. But
+[64:03.84]  if you get the right people, it's going
+[64:05.12]  to work. But it it can feel risky. It's
+[64:07.28]  tough to start at 500 bucks a month
+[64:09.04]  today.
+[64:10.56]  But you got to take a little risk in
+[64:12.72]  life.
+[64:14.16]  >> Yep. Uh there's another question for
+[64:17.12]  about I think related to outbound for
+[64:20.56]  what this question came in.
+[64:21.68]  >> Oh, let me ask can I add one more thing
+[64:23.04]  on pricing? It's interesting.
+[64:24.56]  >> All of the vendors
+[64:26.24]  >> have too much demand
+[64:28.08]  >> including Salesforce. they have too much
+[64:30.08]  demand. And so you're going to hear that
+[64:33.84]  manifested with some of them where they
+[64:35.92]  might not take your business.
+[64:38.32]  And the main reason Amelia could maybe
+[64:41.52]  share other anger she learned. I I've
+[64:42.96]  seen it just a few ways. She's seen it
+[64:44.08]  more often because she interacts more
+[64:45.20]  with them. If you don't have enough
+[64:46.72]  data, if they don't think you have a
+[64:48.56]  rich enough data source to train these
+[64:50.64]  agents, they might just even if you have
+[64:52.32]  the money, they might not take your
+[64:53.52]  business. We've sent a lot of business
+[64:55.68]  to our the vendors we use directly or
+[64:59.20]  just by doing this we generate million
+[65:00.72]  we've generated millions of re dollars
+[65:02.48]  of revenue for all these guys just by
+[65:04.56]  sharing what we use that's the nature of
+[65:06.80]  the beast but they've turned away a lot
+[65:09.20]  of business we've sent to them
+[65:11.12]  >> a lot of business so don't get flustered
+[65:13.04]  but just be aware not only is it not
+[65:15.68]  dirt cheap but if you're not an
+[65:17.12]  appropriate candidate it's a it's bad
+[65:18.96]  that they have too much business and
+[65:20.16]  that it's like everything in AI folks
+[65:21.92]  are overwhelmed with demand And but also
+[65:24.40]  if they tell you they can't support you,
+[65:26.72]  ask why and listen and they're probably
+[65:28.64]  right.
+[65:30.00]  >> Yep. I agree. I think the biggest other
+[65:34.32]  thing I seen it's like I either through
+[65:36.88]  this webinar or content we post, right?
+[65:39.60]  Folks will then reach out to these
+[65:41.04]  vendors or they'll ask me and I'll I'll
+[65:43.12]  say, "Hey, I'll just make like an intro
+[65:44.40]  to you to the team because now I know
+[65:45.76]  them." And you know, I'll be like, "Hey,
+[65:48.32]  did that ever work out? Did this person
+[65:50.00]  that I referred you actually sign?" Some
+[65:52.48]  of them do, some of them don't. So, it's
+[65:55.60]  they do have a lot of demand, which
+[65:58.08]  shouldn't turn you off, but also they're
+[66:00.32]  going to go through with you and the way
+[66:02.00]  they did with us. Saster is not unique
+[66:04.48]  to this because I saw another question
+[66:05.76]  in the chat.
+[66:08.16]  Are we getting, you know, special
+[66:09.68]  upgrades from some of our vendors to
+[66:11.20]  help on pricing that aren't public? Some
+[66:15.52]  Okay, now those three vendors I just
+[66:18.08]  focused on today have become sponsors of
+[66:20.80]  SAS. Sure. If Artisan hadn't Artisan
+[66:24.08]  actually sponsored SAR before I became a
+[66:26.08]  customer. So if they hadn't sponsored I
+[66:28.08]  maybe I would be on a different SDR tool
+[66:30.40]  talking about it. But because they were
+[66:32.48]  a sponsor I did the classic thing. If I
+[66:35.44]  just went to the founder Jasper and said
+[66:36.88]  hey I want to use this post annual. Can
+[66:39.20]  you help me get like the best person on
+[66:41.68]  your team to help me set it up? Cuz I
+[66:43.36]  didn't know as much at the time
+[66:45.84]  and can you help me figure out like yeah
+[66:47.76]  what is your pricing? How does all this
+[66:49.20]  work? So, we went I just went to the
+[66:51.04]  CEO, but again, I think if you know the
+[66:53.12]  CEO of a company, you were going to do
+[66:54.24]  that anyway. That hasn't changed
+[66:55.60]  anything.
+[66:57.68]  And then I put it in the chat. There are
+[66:59.20]  a few features specifically
+[67:02.08]  like beyond pricing. We're in a lot of
+[67:04.00]  beta features, I would say, with all of
+[67:05.60]  these vendors across the board. So, we
+[67:07.76]  spent the most of the time today on
+[67:09.04]  sales, but also in marketing. Most of
+[67:11.60]  the things you'll see next week because
+[67:13.28]  I'll come back and do a part two. We're
+[67:15.36]  in beta features.
+[67:17.44]  And I think that's partially because
+[67:20.56]  one, this is not like a hubris thing,
+[67:22.88]  but a lot of vendors have told us
+[67:24.56]  because we have so many agents, we're a
+[67:26.40]  lot faster now at adopting them than
+[67:28.48]  just maybe a typical SAS company/Off
+[67:31.04]  Office company. I think too, because we
+[67:33.44]  spend so much time with them, I think of
+[67:36.00]  more use cases, right? I'm like, okay, I
+[67:38.00]  started using it for one thing, now I
+[67:39.44]  only use it for another. And I'm like,
+[67:40.64]  "Wait, can it I'm like, maybe can it do
+[67:43.44]  this or that or maybe can it do XYZ
+[67:47.92]  thing?" And so I just email, you know,
+[67:50.48]  the founders or CS rep, whoever it is.
+[67:53.12]  I'm like, "Hey, can the agent maybe do
+[67:55.52]  this if I have this use case, like the
+[67:57.20]  next use case?" And sometimes the answer
+[67:59.04]  is, "Yeah, that usually the answer I
+[68:00.80]  would say is, "Yeah, that's already on
+[68:01.92]  the road map, but we can give you access
+[68:03.60]  like we can have you guys test it, break
+[68:05.68]  it." And so I we do get access to things
+[68:07.92]  but also because we want to I want to
+[68:09.92]  test these things. I have now
+[68:11.52]  comfortability with the AI where I want
+[68:13.68]  all those data features so I can be like
+[68:15.36]  okay if I break it or if it hallucinates
+[68:17.68]  I understand the risk there of testing
+[68:19.68]  something that's not fully released. But
+[68:22.40]  I will say that's my disclosure. We do
+[68:24.16]  have some features on each of those
+[68:25.60]  tools that are not publicly available
+[68:28.48]  yet. But some of them are like either
+[68:30.96]  just launching in the new year or soon.
+[68:34.48]  But I don't think that's unique to maybe
+[68:35.84]  that's unique to SAS. But I also think
+[68:37.52]  it's there's a want there for there's a
+[68:39.60]  like I personally have a want to do some
+[68:40.96]  of those things and they have a want to
+[68:42.56]  test some of those things.
+[68:43.84]  >> Yeah. But let me just I think it's a
+[68:45.28]  good question because we have do have a
+[68:47.76]  lot of success. Some folks think it's
+[68:49.20]  because we have so much data. We thought
+[68:51.04]  in the beginning it turns out to not to
+[68:52.32]  be true. You just need enough data for
+[68:53.92]  these tools to work. You don't need 10
+[68:55.52]  years of data. 6 months is enough. You
+[68:57.68]  need a volume of actionable data. You
+[68:59.84]  don't need to know who came to SAS
+[69:01.20]  annual first meetup in 2012. data really
+[69:03.76]  doesn't help. Okay, so it's not so much
+[69:05.52]  data. Do we get special treatment? I
+[69:07.76]  think we do. We get the best people at
+[69:10.24]  these vendors helping us, the best
+[69:11.84]  FDEEs, the best onboarding folks. And so
+[69:15.20]  I want to tell you a counter story just
+[69:17.12]  to help you qualify vendors. There's
+[69:19.44]  another vendor on this list that we
+[69:21.44]  thought about using
+[69:23.60]  >> great founders like them. We were routed
+[69:26.24]  to a very mediocre sales/onboarding
+[69:29.36]  person who really didn't want our
+[69:30.80]  business. told us we couldn't use
+[69:33.12]  certain features and was a pain to work
+[69:35.76]  with and so we passed them by and we
+[69:37.76]  never used them. Do that yourself. Talk
+[69:40.88]  to these vendors. If you have a bad
+[69:42.56]  experience, don't use that one. And
+[69:44.56]  don't Also, in the age of AI
+[69:47.52]  is where I'm getting frustrated. Don't
+[69:49.92]  get bamboozled by a sales rep that
+[69:51.76]  doesn't know the product or isn't
+[69:53.04]  technical. Ask to talk to an FTE or a
+[69:56.80]  solution architect or an onboarding
+[69:58.48]  specialist. Don't waste your time with
+[70:00.56]  an idiot sales rep. the best there are
+[70:02.80]  the I will tell you some of the very
+[70:04.32]  best AI companies across the globe not
+[70:06.00]  just any ones we're talking about the
+[70:07.12]  best ones I know have really mediocre
+[70:09.44]  sales teams that do not understand the
+[70:11.68]  products they're selling they just don't
+[70:13.68]  understand how AI coding tools work and
+[70:17.04]  how AI support tools are trained or how
+[70:18.96]  any of these tools are trained don't
+[70:21.04]  stand for that in the age of AI because
+[70:23.20]  a rep will tell you something that's
+[70:24.24]  just wrong or they won't understand it
+[70:26.08]  bypass it and say listen if you want my
+[70:27.76]  real money I want to talk to the person
+[70:29.84]  that's going to be onboarding me and own
+[70:31.52]  it. And if some blocker that last worked
+[70:35.12]  at, you know, a dated B2B company 5
+[70:39.44]  years ago and doesn't know AI won't let
+[70:40.80]  you talk to that person, find another
+[70:42.00]  vendor. You deserve it. You deserve it.
+[70:44.08]  Assume the sales rep, unless they're
+[70:45.60]  technical or know their CRA or have done
+[70:48.96]  a deployment, if they hesitate on an
+[70:51.12]  answer, f talk to somebody else.
+[70:54.64]  >> And so we just didn't deploy one of
+[70:56.00]  these agents. It's probably as good as
+[70:57.68]  the ones on this list. It's probably
+[70:59.28]  just as good because we had the idiot
+[71:01.76]  sales guy that he lost all this PR,
+[71:04.72]  revenue, promotion, friends, and just
+[71:08.16]  ran the deal into the ground. And
+[71:11.12]  you deserve to talk to an expert, an FTE
+[71:14.16]  or whatever it is before you sign before
+[71:17.68]  you sign. And we did with Harry and
+[71:19.36]  Rory. We had Mark Beni off on about a
+[71:21.36]  month and a half ago and we talked about
+[71:22.64]  what's the number one thing he wanted at
+[71:23.84]  Salesforce. He not only do they does he
+[71:26.24]  want to have thousands more forward
+[71:27.60]  deployed engineers on agent force and
+[71:29.20]  AI. He said he wished obviously it's not
+[71:31.28]  practical at 44 billion in AR. He wished
+[71:33.84]  every company could deploy their agent
+[71:35.92]  and have value before they sign their
+[71:37.44]  contract. Okay? And that's not practical
+[71:39.68]  for Salesforce. It's not even practical
+[71:41.20]  for the folks the startups on this list.
+[71:44.16]  But you should demand as close to that
+[71:45.76]  as you can. You should demand that you
+[71:48.00]  at least talk to an expert who in 20
+[71:50.56]  minutes can tell you exactly how
+[71:51.76]  successful your tool will be. they'll go
+[71:53.12]  that he can just look here or she can
+[71:54.40]  just look at your Salesforce data, look
+[71:55.76]  at your HubSpot data, look at your
+[71:56.88]  Marquetto data, look at whatever data,
+[71:58.96]  pop up a little bit and say, "Yeah,
+[72:00.16]  listen. I did this with 20 other
+[72:01.52]  customers and clients. This will work."
+[72:03.12]  Or, "No, it won't work." You deserve
+[72:05.04]  that. You deserve that. And if you have
+[72:07.52]  to pay 20 grand for it for the training,
+[72:09.60]  it's going to be your best 20 grand that
+[72:11.12]  you're going to pay this year.
+[72:13.28]  >> Yeah. The other thing I'll say
+[72:15.68]  to add on to it and then we can answer a
+[72:17.44]  few more questions. going to do part two
+[72:19.12]  next week
+[72:21.36]  somewhat related to cost like I
+[72:25.04]  like I said we we replaced headcount
+[72:27.92]  spend so I reallocate I should say
+[72:29.76]  replace I reallocated headcount spend
+[72:32.40]  into some of these tools that will start
+[72:35.12]  to happen at your or as people naturally
+[72:37.12]  leave for no matter what the reason you
+[72:39.28]  can start to say okay can it is it a
+[72:41.84]  role where I can start to earmark that
+[72:44.00]  budget and move it into a bucket that
+[72:45.84]  would then be an AI tool
+[72:48.08]  That again, I'm not saying you have to
+[72:50.00]  replace your entire SDR team with AI and
+[72:53.20]  get these three agents that we have. You
+[72:55.44]  can. We've done it, but we still have
+[72:56.72]  humans here, too. Like, I'm saying the
+[72:58.80]  magic of this is getting the best A tier
+[73:01.44]  players on your team that are still
+[73:02.96]  there
+[73:04.64]  to become S tier with AI. So, I think
+[73:08.32]  there's some of that. And I think a lot
+[73:10.32]  of folks I talked to J more common, you
+[73:12.32]  probably do too, Jason, that just say
+[73:13.60]  they're not going to add headcount so
+[73:15.60]  that they can empower their teams either
+[73:18.64]  Q4 2025 or Q1 2026 with these tools.
+[73:22.08]  Like they're just again reallocating
+[73:24.16]  budget that they would have to say,
+[73:25.76]  okay, instead of growing the sales team
+[73:27.60]  from 5 to 10 humans next year, we're
+[73:29.28]  going to keep it at five, but we
+[73:30.88]  reallocate some of that spend to the
+[73:32.40]  tool so that those five people can be
+[73:34.32]  tier.
+[73:36.80]  I think that's a good way to think about
+[73:37.92]  it. The other thing I'll say we're not
+[73:40.16]  immune from people roasting our AI and
+[73:43.60]  so I think how that kind of plays into
+[73:47.12]  cost if you decide to roast an AI in the
+[73:50.32]  beta because maybe it's not very good. I
+[73:52.24]  don't know all Listen, I don't know all
+[73:53.60]  the tools. I know a lot of them. I've
+[73:55.12]  seen a lot of them now. I can't say I
+[73:57.36]  know them all. There's so many of them.
+[74:00.00]  I do try if we can't use it for ourel I
+[74:02.16]  do try to at least learn all the tools
+[74:04.24]  and their capabilities so that when
+[74:05.84]  folks ask me for recommendations I can
+[74:07.92]  make at least an informed answer. So I
+[74:10.80]  don't know all the tools but I will say
+[74:12.40]  there are instances where people roast
+[74:13.84]  our AI and they've roasted all of our
+[74:16.56]  inherent vendor because they roast our
+[74:18.40]  AI.
+[74:20.24]  I think to some degree that's a little
+[74:22.32]  bit okay and your team should be maybe a
+[74:24.88]  little bit skeptical and maybe the out
+[74:27.28]  listen the outputs are never going to be
+[74:28.88]  perfect but the outputs with the human
+[74:31.52]  are never perfect either so maybe if
+[74:34.32]  there's one final takeaway before we
+[74:36.48]  answer the last questions is if it
+[74:38.32]  wasn't working preai it probably still
+[74:40.40]  won't work now
+[74:42.56]  if it was working or was working kind of
+[74:44.72]  good and AI can get you that leverage
+[74:47.04]  then as you've seen in our results then
+[74:48.64]  it's even better, but it, you know, if
+[74:51.12]  you hated outbound preai, you're still
+[74:52.64]  going to hate outbound. If you hate it,
+[74:56.56]  if you didn't have the best support or
+[74:59.28]  you still don't have the best support
+[75:00.56]  documentation for your AI to ingest,
+[75:02.56]  then your support is still probably
+[75:03.68]  going to be B tier versus F tier. There
+[75:06.56]  are times where our agent can't answer a
+[75:08.88]  question and it's a support question and
+[75:10.48]  I'm like, that's my failing. That's and
+[75:13.12]  they should I know people roast the AI
+[75:15.68]  in those times when, you know, it's
+[75:17.60]  happened. I put it somewhere in a slide.
+[75:19.12]  I think less than 10% of the time or I
+[75:21.84]  think 3% of the time. Well, we yeah,
+[75:24.24]  we'll touch on it next week. Less than
+[75:25.76]  3% of the time, but when they do roast
+[75:28.56]  it, I'm like, you know what? It's not
+[75:29.76]  even a failing on my AI's fault. It's
+[75:32.00]  actually a failing on my fault. Like,
+[75:33.52]  it's something they're asking the AI
+[75:35.52]  that I didn't train it on. I didn't do
+[75:37.12]  it on even though it has 20 million
+[75:38.72]  words. There are certain use cases and
+[75:42.00]  scenarios where people ask certain
+[75:43.68]  questions that our 20 million words do
+[75:45.52]  not have the answer to and they were not
+[75:47.44]  going to have the answer to preAI and
+[75:49.60]  they don't have the answer to. Now
+[75:53.44]  last couple questions then we'll wrap
+[75:55.52]  and we'll come back for part two next
+[75:57.44]  week. There's a few specific questions
+[75:59.76]  that are fairly technical but I think
+[76:01.20]  they're good ones just if you guys are
+[76:03.44]  thinking through this as well. So the
+[76:06.40]  first one's on artisan. So I'll come
+[76:09.52]  back to here which we use for outbound.
+[76:13.28]  There's two questions on it. One someone
+[76:14.96]  has said have I played around with the
+[76:17.68]  lead genen contacts that it has. Related
+[76:20.72]  question is have I seen artisan engaging
+[76:23.28]  with duplicate contacts in a smarter way
+[76:26.80]  than maybe a human would?
+[76:29.68]  Is there anything built in to prevent
+[76:31.20]  bombarding inevitable dupes? So on the
+[76:34.40]  first part, have I experimented with
+[76:36.32]  their legion context? Yes, I commented
+[76:39.60]  on the chat. I just started. So like to
+[76:42.48]  this point if we're six months in, I
+[76:44.56]  have 99% of the contacts are ours. I
+[76:47.20]  just started using it to see how I I
+[76:50.32]  wanted to learn. I wanted to see how it
+[76:51.60]  does on completely cold outbound
+[76:54.24]  contacts. But that's a new experiment
+[76:55.92]  I'm running. So it's too early for me to
+[76:57.76]  say yet if the data was if the contact
+[77:00.32]  data was good enough for us to keep
+[77:02.56]  adding. But again, I don't think you
+[77:05.28]  with the beauty of artis like even
+[77:06.72]  though you have used to train like the
+[77:07.84]  sub a you can call it sub aents you can
+[77:10.88]  call it sub campaigns whatever
+[77:13.04]  separately
+[77:16.56]  the it's too early for me to see on you
+[77:19.60]  know outside contacts but I do want to
+[77:21.28]  test it because there's other things we
+[77:22.72]  use when for instance I need to find a
+[77:25.76]  new email for a contact that existed in
+[77:28.56]  our ecosystem which I think is a lot of
+[77:30.16]  people but is not there anymore we have
+[77:32.64]  a lot of contact They've got 12 years of
+[77:34.80]  SAS annual data like six year open now.
+[77:37.60]  These people are not all at the same
+[77:39.04]  job. They may still be in SAS and they
+[77:42.08]  still may be at a company I want to
+[77:43.92]  reach out to and that's where I use
+[77:46.08]  contact arrangement to get their new
+[77:48.16]  contact. A lot of people we have Gmails.
+[77:50.08]  I will say we've been very careful since
+[77:52.32]  the start to get Gmails to folks. So
+[77:54.88]  you're not going to change your Gmail.
+[77:56.48]  So I have those. But for context and
+[77:59.12]  move on, which I think is a common
+[78:00.40]  occurrence for most folks, that's where
+[78:02.00]  I'm testing it. So it'll be interesting
+[78:03.28]  to see how that pans out. Now on the
+[78:06.32]  question on dupes, a lot of the I will
+[78:09.20]  say I don't get dupes within a single
+[78:10.96]  agent. So Artisan has Artisan will ddup
+[78:14.16]  your list across you know multiple
+[78:15.68]  campaigns, multiple agents. Qualified
+[78:18.48]  does the same thing. Salesforce does the
+[78:20.64]  same thing. Where there's a gap is
+[78:22.32]  because I have three. I have to be super
+[78:25.36]  careful in saying okay this bucket of
+[78:28.48]  contacts going to artisan. this bucket
+[78:32.08]  going to qualify, that bucket going to
+[78:34.80]  Salesforce,
+[78:35.92]  >> and then inevitably all contacts. Yeah.
+[78:38.56]  All contacts are out of Salesforce
+[78:40.08]  because we use Martin to Salesforce and
+[78:42.16]  so they're kind of all already in
+[78:43.92]  Salesforce anyway. And so I don't really
+[78:46.80]  see a lot of due per one vendor. So if
+[78:49.20]  you only use one vendor, you won't have
+[78:50.96]  the issue I do. But my issue right now
+[78:52.72]  is I have to be super careful in manual
+[78:56.08]  oversight to make sure those contacts
+[78:57.92]  are not getting hit by three different
+[78:59.20]  agents cuz those three agents as of
+[79:01.68]  right now mostly do not talk to us.
+[79:04.32]  They're getting there though. Like I
+[79:05.44]  know Artisan just pushed Artisan just
+[79:07.52]  pushed an update where they you could
+[79:09.44]  turn on a toggle and you can pick what
+[79:11.68]  Salesforce campaigns you want it to
+[79:13.36]  exclude. So that's great. So it's
+[79:15.92]  starting to solve for this problem if
+[79:17.68]  they know some of their customers like
+[79:19.68]  us have multiple agents that don't all
+[79:22.08]  live there. Qualified already syncs
+[79:24.88]  natively to Salesforce. So it kind of
+[79:26.40]  has that toggle by default.
+[79:29.20]  So again because the backbone of all
+[79:30.88]  these three is that Salesforce is the
+[79:32.80]  common denominator. It works
+[79:35.60]  but I do think it's a it's an
+[79:38.16]  interesting nuance there. Like you may
+[79:39.44]  not have that problem if you just go
+[79:40.56]  deep on one, but I've got that problem
+[79:42.48]  now where trying to get data across the
+[79:46.24]  different agents is sometimes right now
+[79:48.40]  a little bit manual pushing it to a few
+[79:51.44]  different places. That's inevitable, but
+[79:53.60]  again because we're getting good
+[79:55.36]  results, I think it's worth it for the
+[79:58.48]  interim.
+[80:03.20]  Last question and then anything you want
+[80:06.08]  to hit
+[80:08.56]  Jason in the end. Let's do it. Somebody
+[80:10.24]  asked me about how to trigger all these
+[80:13.12]  which I think is a good question. It's
+[80:14.40]  fairly technical, right?
+[80:17.12]  Let me stay here. So, they're all again
+[80:21.76]  the underlying foundations and training
+[80:24.64]  are all a little bit the same but you
+[80:26.72]  know particular to the vendor that you
+[80:29.36]  use. And so the way you can trigger in
+[80:32.88]  I'll just go through them for you real
+[80:34.16]  quick. The way you can trigger in arten
+[80:36.96]  is you can upload a list. That's the
+[80:39.36]  easiest thing you can do. You can just
+[80:40.88]  export them. That's what I do honestly.
+[80:42.88]  I just export or again I don't want the
+[80:45.20]  contacts to be on the other two agent. I
+[80:47.20]  export the contact. I upload them.
+[80:49.76]  That's the way I do it. That's the
+[80:51.04]  easiest way to do it. Now you can
+[80:52.56]  there's other ways you can do it. You
+[80:54.16]  can, like I said, now you can kind of
+[80:55.76]  like cherry pick from certain Salesforce
+[80:58.48]  campaigns or contacts that you have. You
+[81:01.28]  can do just like a search, like an
+[81:02.72]  intent search on there and do it that
+[81:04.80]  way. I use CSV. It's the easiest trigger
+[81:07.76]  also because I don't I've seen this I
+[81:10.88]  don't know if this is like a again a
+[81:12.40]  platform thing or a me thing, but I've
+[81:14.32]  tried different sizes in Artisan really
+[81:16.72]  different campaigns and different
+[81:17.76]  audiences, but I see 800 to a,000 as a
+[81:20.80]  sweet spot. So the other reason why I do
+[81:23.04]  CSV is I want to keep it in that band
+[81:25.76]  because it seemed to perform better for
+[81:27.44]  whatever reason. I keep it in that band.
+[81:30.32]  Triggering on qualified is more so
+[81:32.64]  automatic. So also the user can just
+[81:35.20]  talk to the agent. So if you guys go on
+[81:36.64]  Saster London right now, you can talk to
+[81:38.56]  my AIA AI. That was something where in
+[81:41.44]  the early days I used to I still
+[81:43.52]  somewhat do it but I used to monitor a
+[81:46.48]  qualified like a hawk and be like what
+[81:48.24]  are people saying to Ameilia AI? Is she
+[81:51.36]  giving the right response? Is she saying
+[81:52.96]  the right thing? Now I've obviously
+[81:54.48]  built some like trust and comfortability
+[81:55.84]  with it and I let it run and it will
+[81:58.72]  tell me if it needs help. Like it'll
+[82:00.08]  raise its hand and say someone's
+[82:01.68]  interacting and needs your help and then
+[82:03.60]  I'll jump in. But now if she doesn't say
+[82:05.28]  that then I just let it go full
+[82:06.88]  autopilot. So, that's how that's
+[82:09.52]  triggered. I'll talk next week in part
+[82:11.28]  two how I trigger some of the emails
+[82:12.64]  that it's doing. I made the earlier case
+[82:14.72]  of if I if our agent gives you a code,
+[82:17.20]  it sends you an email follow-up in a few
+[82:19.04]  days. I'll show that more so next week
+[82:21.12]  on the marketing side because there's
+[82:22.56]  different ways you can think about using
+[82:24.40]  that use case that's relevant for you.
+[82:26.64]  And then in agent course, the trigger is
+[82:30.72]  I don't have a screenshot for it. Such a
+[82:32.40]  good question, but the trigger is based
+[82:34.32]  on either the you can do it on a cam
+[82:37.84]  lead level, contact level or like a
+[82:40.48]  campaign level.
+[82:42.72]  It's I will say that portion of it I
+[82:46.24]  think don't I think they just pushed it.
+[82:48.88]  I think you know as we were rolling this
+[82:50.96]  out we did it very manually just to make
+[82:53.36]  sure it wasn't like spamming a thousand
+[82:55.12]  people all at once. But then since then
+[82:58.08]  I've been able to say okay I've got like
+[82:59.52]  a list of contacts already in
+[83:00.88]  Salesforce. I could put them into a
+[83:02.88]  campaign and then I can attach just I
+[83:04.88]  then I could just have the entire
+[83:06.32]  campaign go live on the agent and it'll
+[83:09.04]  parse it out the way it thinks it
+[83:10.32]  should, right? Okay, you got a thousand
+[83:12.16]  people and I can hit them all at once.
+[83:13.68]  I'm going to see what time zone they're
+[83:15.20]  in. I'll look at the times you want me
+[83:17.76]  to email those folks and I'll just start
+[83:19.36]  to queue them up. You can do it either
+[83:21.84]  way. It's actually gotten easier. So, I
+[83:23.44]  commend them on that. It's gotten easier
+[83:25.04]  on how to in our use case for this sales
+[83:28.96]  this sales motion that we use it for.
+[83:30.64]  It's gotten easier to trigger this
+[83:33.52]  particular flow.
+[83:37.92]  Any else want to wrap on? Sorry, we have
+[83:39.60]  to do part two, guys.
+[83:44.32]  >> Good. Okay, cool.
+[83:46.08]  >> Similar. Great job. Appreciate it.
+[83:47.76]  >> Yeah, you guys can
+[83:49.92]  keep you can I'm just like I said
+[83:52.16]  earlier, I'm just similar.
+[83:54.72]  We try and answer any additional
+[83:56.08]  questions. I'm not on LinkedIn that
+[83:57.84]  often, but I will add you in the week
+[83:59.36]  when I check it. And then and then the
+[84:02.32]  we will do part two next week, so I'll
+[84:03.76]  send that as a follow-up to everyone so
+[84:05.92]  we can cover the rest of GTM. And then
+[84:07.84]  I'll do a much shorter version of this
+[84:09.92]  at Sastra AI in London. If there's
+[84:14.08]  anything you want to see in particular
+[84:15.52]  for part two, I've already gotten some
+[84:17.28]  good ideas from this. Just let me know.
+[84:19.20]  I will put into part two and I will see
+[84:20.72]  you next Wednesday.
+[84:25.04]  Bye everyone.
+[84:28.15]  [Music]
+[84:29.84]  You didn't create a startup to run a
+[84:31.60]  small business. Let Salesforce help you
+[84:33.84]  connect data, automate busy work, and
+[84:36.08]  empower employees on the only platform
+[84:37.84]  you will ever need. No matter how big
+[84:39.60]  you get with smarter AI and builtin
+[84:41.92]  collaboration tools like Slack, which we
+[84:43.84]  use and you use, the sky is the limit.
+[84:46.32]  Learn how Salesforce works for startups
+[84:48.48]  at salesforce.com/sm.
+[84:51.12]  That's salesforce.com/sm.
+[84:53.61]  [Music]
+[84:57.12]  Hey Ser, imagine having agents for every
+[84:59.44]  support task. One that triages tickets,
+[85:02.08]  another that catches duplicates, one
+[85:03.76]  that spots turn risk. That'd be pretty
+[85:05.60]  amazing, right? Happy Fox just made it
+[85:07.60]  real with autopilot. These pre-built AI
+[85:10.24]  agents deploy in about 60 seconds and
+[85:12.48]  run for as low as 2 cents per successful
+[85:14.80]  action. All of it sits inside the Happy
+[85:17.28]  Box omni channel AI first support stack,
+[85:20.40]  chatbot, co-pilot, and autopilot working
+[85:22.80]  as one. Check them out at
+[85:24.16]  happyfox.com/aster.

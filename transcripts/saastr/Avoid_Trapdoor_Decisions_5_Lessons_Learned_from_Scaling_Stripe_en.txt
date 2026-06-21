@@ -1,0 +1,893 @@
+Title     : Avoid Trapdoor Decisions: 5 Lessons Learned from Scaling Stripe
+Video ID  : oqWoFrRM8sA
+URL       : https://www.youtube.com/watch?v=oqWoFrRM8sA
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 884
+Saved at  : 2026-06-21 00:07:43
+------------------------------------------------------------
+
+[00:01.68]  [Music]
+[00:03.96]  stripe is really a set of developer
+[00:05.72]  tools for building and operating in
+[00:08.00]  online business we work with hundreds of
+[00:10.40]  thousands of companies around the world
+[00:12.68]  on accepting payments expanding globally
+[00:15.44]  and increasingly on innovating their
+[00:17.32]  business models for the internet and for
+[00:20.00]  mobile and I think it's really relevant
+[00:22.24]  to the SAS audience because it's easy to
+[00:25.32]  underestimate how complicated a SAS
+[00:27.64]  model gets and we've increasingly worked
+[00:30.00]  to build solutions that you can just
+[00:31.64]  integrate with us and spend your time
+[00:33.96]  building the rest of your
+[00:36.52]  product we built a new way of planning
+[00:39.32]  our products what are we going to
+[00:40.68]  release for our users and working our
+[00:42.40]  way back from
+[00:43.69]  [Music]
+[00:45.36]  it I'm an execution I was like we got to
+[00:48.28]  execute on the plan that we made and
+[00:50.36]  it's going to make such a difference for
+[00:51.80]  our users and since we talked to so many
+[00:53.48]  of them uh we'll feel it I think very
+[00:56.41]  [Music]
+[00:58.16]  acutely I need
+[01:05.56]  please welcome stripe coo Claire Hughes
+[01:10.41]  [Music]
+[01:15.44]  Johnson uh all right we got to get off
+[01:17.40]  that slide um hi it's so great to be
+[01:21.08]  back at saster um I don't think I've
+[01:24.12]  ever had a live band in my life this way
+[01:27.32]  before so that's exciting uh I do want
+[01:30.12]  to start by saying that I'm a little
+[01:33.56]  worried about all the hype that Jason
+[01:35.84]  and malan put out there on my talk so
+[01:38.80]  let's all take a moment and lower our
+[01:42.72]  expectations okay so just feel like if
+[01:44.84]  this is any good at all I'm glad I'm
+[01:46.52]  here okay good um the simplest way I
+[01:50.40]  guess they played me describing stripe
+[01:52.20]  but we actually do more today than we
+[01:54.20]  did a few years ago um but we provide a
+[01:57.08]  combination of apis and software d say
+[02:00.84]  SAS um that help companies of every size
+[02:04.04]  yes accept payments but also manage
+[02:05.80]  billing tackle fraud issue cards and
+[02:09.00]  basically run your Commerce side of your
+[02:11.04]  business online um we work with many of
+[02:13.64]  the companies who are here at saster
+[02:15.92]  Salesforce slack twilio Zoho and I hope
+[02:19.12]  many of you in the room uh in fact more
+[02:22.24]  than 80% of Americans in the last year
+[02:24.48]  bought through stripe but obviously
+[02:26.24]  through a business that ran on stripe so
+[02:28.44]  they don't know they're buying through
+[02:29.40]  stripe and that's fine um if you don't
+[02:32.12]  know us I'd love to change that our team
+[02:34.72]  is in room 111 your registration we're
+[02:36.80]  doing office hours all day I'll be there
+[02:39.08]  after this talk so would love to talk um
+[02:42.64]  but anyway let's let's get into some
+[02:45.08]  lessons Lessons Learned um before I get
+[02:49.00]  into the Five Lessons I'm going to share
+[02:51.36]  I want to talk a little bit about two
+[02:52.88]  tenants that I think are really
+[02:54.36]  important to building a business so the
+[02:56.76]  first one is you need to have a reason
+[02:58.88]  to exist
+[03:00.84]  um Stripes is to increase the GDP of the
+[03:03.64]  internet I know that sounds kind of
+[03:05.56]  wonky which is very stripe actually um
+[03:08.80]  but only 3% of Commerce happens online
+[03:11.04]  today which is really shocking when you
+[03:12.68]  think about how much technology matters
+[03:15.12]  to people's lives and much of the
+[03:17.40]  industry's focus has been on increasing
+[03:19.36]  access to the internet which is
+[03:20.56]  absolutely critical but I would argue
+[03:22.80]  that access to Commerce is equally
+[03:24.60]  critical if we're going to really
+[03:25.88]  realize the opportunity of the internet
+[03:29.00]  um a lot of you know that stripe was
+[03:30.76]  founded by two Irish Brothers John and
+[03:32.88]  Patrick Collison they grew up in a rural
+[03:35.64]  town in Ireland they were selftaught
+[03:38.44]  developers they built their first
+[03:40.44]  company and sold it when they were
+[03:43.04]  teenagers um and afterwards they
+[03:46.44]  realized that actually the hardest part
+[03:48.12]  of that experience was getting the
+[03:50.68]  payment acceptance piece uh and that's
+[03:54.04]  what led them to found found stripe uh
+[03:57.12]  and and when I think about that story I
+[03:59.08]  think about how concerning it is that
+[04:01.64]  there are so many companies around the
+[04:03.40]  the world today that may not be getting
+[04:05.56]  started because of that kind of an
+[04:07.60]  obstacle and that's why stripe
+[04:10.44]  exists um another tenant is that I think
+[04:14.12]  is really important is that you got to
+[04:16.04]  add value to the audience uh that you're
+[04:19.00]  seeking and it's really true and it's
+[04:21.40]  really important if you're disrupting
+[04:22.72]  some existing industry right payments
+[04:24.52]  has been around for thousands of years
+[04:26.32]  the exchange of value and at the risk of
+[04:28.84]  giving you a full stripe sales pitch
+[04:31.16]  don't worry that's my other talk happy
+[04:33.12]  to give that later I'd love to talk
+[04:35.28]  about what we set out to solve because I
+[04:36.96]  think it gives you a sense of the
+[04:39.08]  complexity that we entered which in some
+[04:41.96]  ways you think was that a bunch of fools
+[04:44.08]  rushing in uh but that's what it's going
+[04:46.56]  to look like to change the GDP of the
+[04:49.32]  internet in my opinion um so before
+[04:52.36]  stripe an online company that wanted to
+[04:54.96]  accept payments had to go prove
+[04:56.48]  themselves to a bank which was like a
+[04:58.12]  weird catch22 because the bank would say
+[05:00.12]  can you please show us your your payment
+[05:01.88]  and your Revenue history and the company
+[05:03.56]  would be like yeah but I'm new and then
+[05:06.04]  it would just cycle and and usually not
+[05:08.16]  end in in a good place for that company
+[05:10.28]  then they had to integrate with credit
+[05:11.64]  card processors let's not forget
+[05:13.48]  managing PCI compliance building the
+[05:16.12]  auditing and Reporting features you need
+[05:17.68]  for that and what about fraud prevention
+[05:19.68]  I think most people don't know that
+[05:20.76]  online businesses are liable for fraud
+[05:22.92]  in a way that offline businesses are not
+[05:25.08]  and finally if you want to go to any
+[05:26.48]  other Market you got to repeat it all
+[05:27.72]  over again uh and that's new
+[05:29.92]  Integrations new payment methods and new
+[05:32.32]  compliance schemes around the world it's
+[05:35.16]  pretty brutal actually so what did
+[05:37.32]  stripe do we we removed a lot of the
+[05:39.84]  friction so that a business founder and
+[05:42.68]  Builder could just focus on what they
+[05:44.28]  want to do which is their product we
+[05:46.20]  abstracted away a lot of the complexity
+[05:48.36]  of payments when I joined stripe we only
+[05:51.32]  had so that was in 2014 at the end of
+[05:53.92]  2014 we only had one marketer and three
+[05:58.20]  people in sales
+[06:00.36]  uh and the first thing I had to solve
+[06:02.12]  actually was handling our inbound lead
+[06:04.36]  volume because we could not get back to
+[06:06.76]  people uh that's when you know you're
+[06:08.72]  adding value when people are coming to
+[06:10.84]  you before you go out to them with your
+[06:13.84]  product um so have a reason to exist
+[06:16.84]  don't just grow for growth's sake and
+[06:19.60]  solve a problem for your user so well
+[06:21.76]  that they are coming to you I realize
+[06:24.04]  that neither of those tenants is
+[06:25.56]  particularly Earth shattering uh but one
+[06:27.72]  of my first rules of communication is to
+[06:29.84]  State the obvious all right so let's
+[06:32.32]  talk a little bit about building stripe
+[06:34.48]  and and hopefully some of this is useful
+[06:35.88]  to all of you stripe started nearly a
+[06:38.20]  decade ago um this photo is from
+[06:40.88]  2012 uh and I joined as I said in 2014
+[06:44.16]  in 2014 there were about 160 people uh
+[06:47.24]  mostly working out of this office you
+[06:48.84]  see on 18th Street in San Francisco and
+[06:51.68]  our mission was very much the same but
+[06:53.80]  our organization uh and the product were
+[06:56.44]  were really not the whole company was
+[06:58.80]  mostly full stack developers uh based
+[07:01.52]  here and there was no org charts we
+[07:03.48]  didn't have a feedback cycle luckily no
+[07:05.96]  expense policies uh but we really even
+[07:08.44]  barely had managers when internal issues
+[07:10.96]  arose people worked them out either in a
+[07:13.12]  meeting allog together or at the coffee
+[07:14.96]  machine and when external issues
+[07:16.84]  happened it's all those hands were on
+[07:18.60]  Deck because we were already undersized
+[07:21.20]  for the business we were building at
+[07:23.32]  that time and frankly again when I
+[07:24.68]  joined in
+[07:26.60]  2014 um this photo is from a company
+[07:29.64]  Gathering that we had in December we're
+[07:32.60]  now over 1500 people and we're available
+[07:34.72]  in 26 countries we have teams
+[07:36.88]  specializing in everything from security
+[07:39.04]  infrastructure to machine learning to
+[07:41.28]  banking Partnerships and Integrations
+[07:43.60]  and we process billion dollars of
+[07:45.00]  payments billions of dollars for
+[07:46.60]  millions of customers around the world
+[07:48.84]  but still we have such a long way to go
+[07:51.92]  um when I think about the lessons that
+[07:53.48]  brought us to this place uh the first
+[07:56.52]  one is to have fantastic people like you
+[07:58.48]  see in this picture
+[08:00.00]  the other lessons are the things that
+[08:01.28]  have stuck with us despite lots of
+[08:03.96]  change and those are the ones I want to
+[08:05.88]  talk about
+[08:07.52]  today uh so here's the
+[08:09.80]  list uh I know you're all waiting for
+[08:12.16]  the trapo part of this talk and
+[08:14.60]  hopefully that's not also a stage
+[08:16.40]  feature uh but not to ruin it those are
+[08:18.64]  in Lesson Four uh I can't claim that
+[08:21.28]  we're experts on scale I actually get
+[08:23.16]  nervous about claiming that because we
+[08:25.56]  have so much left to do um but I do feel
+[08:28.52]  we've been able to scale rapidly without
+[08:30.60]  losing our roots in other words we're
+[08:32.60]  growing our company without growing out
+[08:34.52]  of what I think is a is a unique culture
+[08:37.12]  and I'll talk a little bit about that in
+[08:39.04]  fact in this very first one so using
+[08:41.28]  your principles uh what does this mean
+[08:44.28]  like let's be honest every company ends
+[08:46.68]  up having some kind of mission
+[08:48.72]  statement the trick is writing down the
+[08:51.12]  operating principles that drive it and
+[08:53.52]  then using those principles to guide
+[08:55.80]  culture and Company decision- making um
+[08:58.28]  from very early on
+[09:00.72]  uh when John cison visits a stripe
+[09:03.08]  office and we have offices now around
+[09:04.56]  the world Dublin Ireland of course but
+[09:07.00]  Tokyo Melbourne Seattle New York and
+[09:10.60]  when John goes to those offices and he
+[09:12.12]  gets in touch with me or the country
+[09:14.08]  manager or the site lead at that office
+[09:15.84]  and says this is really just like stripe
+[09:18.00]  it is the greatest compliment that they
+[09:20.24]  can receive and we can receive as we
+[09:22.16]  scale the company but it doesn't happen
+[09:24.44]  by accident creating a culture that
+[09:26.72]  adheres to those principles and really
+[09:28.56]  honors the mission
+[09:30.08]  is a lot closer to gardening than
+[09:32.84]  architecture is not about writing a
+[09:35.32]  giant list of maxims and posting them to
+[09:37.52]  the wall um it's about living them day
+[09:41.04]  in and day out and with a lot of
+[09:42.96]  deliberate attention sometimes on a very
+[09:44.80]  small scale and people really
+[09:46.64]  underestimate I think what that takes uh
+[09:49.52]  let me give you just a few examples so
+[09:51.24]  first of all these These are operating
+[09:53.00]  principles we've actually worked on them
+[09:54.76]  and reworked them a few times in my
+[09:57.12]  opinion there should be fewer than 10 to
+[09:59.52]  be truthful fewer than this um we've
+[10:02.56]  really had trouble editing ours down and
+[10:04.36]  I worry not every stripe could repeat
+[10:06.12]  them which means there's a little bit of
+[10:07.64]  a lesson of failure in this one and I'll
+[10:09.68]  admit it but really these principles
+[10:12.08]  should be like a good brand relevant
+[10:15.88]  believable enduring and deliverable they
+[10:19.60]  cannot just be aspirations they actually
+[10:22.52]  have to be reflections of your DNA and
+[10:25.68]  the way we test this at stripe is
+[10:27.28]  anytime we make an edit we Crow
+[10:29.32]  cloudsource comments across the company
+[10:31.12]  in a Google doc on the changes we're
+[10:33.12]  proposing making to make sure they still
+[10:35.00]  feel real to people it's okay for
+[10:37.80]  principles to actually change but the
+[10:40.00]  underlying beliefs and assumptions that
+[10:42.56]  you cement early on should serve you
+[10:44.96]  from tens of people to thousands of
+[10:47.08]  people I think of operating principles
+[10:49.52]  really as the Constitution versus the
+[10:52.64]  law and they're founding documents that
+[10:55.76]  are going to matter to your Future
+[10:57.60]  Leaders people you've not yet met
+[10:59.96]  and it will help them decide what to do
+[11:01.80]  I hope and what not to do but most
+[11:04.56]  importantly it will help them decide how
+[11:07.40]  to do
+[11:09.16]  it one example of how we use our
+[11:11.44]  operating principles is in our hiring
+[11:13.48]  process all candidates who come on site
+[11:15.96]  for an interview at stripe get sent a
+[11:18.08]  document uh with our principles
+[11:20.00]  outlining how we work and what we value
+[11:22.56]  it's an external facing version of some
+[11:24.52]  of the internal work we have on this and
+[11:26.52]  we ask the candidates to read it and I
+[11:28.44]  don't think you'd be surprised to hear
+[11:29.80]  some people actually take themselves out
+[11:31.20]  of the process because they don't see
+[11:33.92]  themselves in how we work and what we
+[11:35.88]  value at stri it's pretty rare but I
+[11:37.84]  actually think it's a good thing because
+[11:39.60]  we also have candidates who come in and
+[11:42.08]  say part of the reason they decided to
+[11:43.84]  work at the company was because of that
+[11:46.12]  document you really want to add people
+[11:48.44]  who want to be there and who have full
+[11:50.08]  information on what you are and what you
+[11:53.48]  do
+[11:55.68]  um another another way you know your
+[11:58.52]  principles are really being used is when
+[12:01.00]  you hear people actually using these
+[12:02.84]  exact words in meetings and invoking
+[12:05.68]  them some teams like to invoke certain
+[12:08.32]  principles a lot like our finance team
+[12:10.40]  loves efficiency is leverage um and that
+[12:13.36]  is code to them for let us custom cost
+[12:15.88]  here um but this can work in sales deals
+[12:18.60]  it can work in internal disagreements
+[12:20.64]  but the true test is really the usage
+[12:22.96]  inter internally and the way you get
+[12:24.96]  there is that you have leaders and early
+[12:27.16]  employees really embody the principles
+[12:29.68]  and use the language I think this is
+[12:31.76]  kind of like how you teach in medical
+[12:33.16]  school right see one do one teach one
+[12:36.64]  watch a leader take what feels like
+[12:39.64]  maybe a minor decision which is what
+[12:41.48]  software should we start using to send
+[12:43.08]  customer emails and then explain to the
+[12:45.68]  room how it's actually foundational to
+[12:48.16]  your future scale and the entire room
+[12:50.28]  will shift at Stripe from moving with
+[12:52.64]  urgency and focus to reasoning clearly
+[12:55.64]  and building a meticulous Foundation the
+[12:58.32]  trick is to use the principle in a way
+[13:00.52]  that expresses the underlying value and
+[13:03.04]  I'm going to talk a little bit more
+[13:04.12]  about decisions because if you're not
+[13:05.76]  making the right decisions in the right
+[13:07.20]  way you're going to end up in one of
+[13:09.08]  those trap
+[13:11.04]  doors um I think our most important
+[13:13.36]  operating principle in one that has
+[13:14.84]  never changed is to put users first uh
+[13:17.84]  in our onboarding classes for new
+[13:19.24]  employees we get on a support call the
+[13:21.56]  whole class with the user and we get
+[13:23.68]  their feedback and we hear their
+[13:24.96]  experience just sends a message that the
+[13:27.16]  principles are real I think I think more
+[13:29.88]  importantly we use it when we build our
+[13:32.12]  products uh we applied this principle
+[13:34.28]  when we launched stripe in Japan in 20
+[13:36.88]  uh 14 I think it was end of 2014 um so
+[13:40.68]  this photo is a classic uh Japanese
+[13:43.80]  press really likes to take a celebratory
+[13:45.92]  photo especially when you do a
+[13:47.96]  partnership and Patrick got kind of
+[13:50.60]  roped into this hand stacky thing um I
+[13:54.04]  got away with a handshake when I was
+[13:55.84]  there last year uh announcing another
+[13:58.56]  partnership uh but they asked me to high
+[14:00.72]  five and I was like no I'm not going to
+[14:02.76]  high five for the photo okay back to the
+[14:04.60]  users um multicurrency processing in
+[14:07.80]  Japan because most of Japan transacts in
+[14:10.52]  Yen was something a lot of our
+[14:12.28]  prospective users wanted and we were
+[14:13.80]  hearing from a lot of startups in the
+[14:15.24]  ecosystem but it was not actually read
+[14:17.56]  readily available in the Japanese
+[14:19.04]  Financial infrastructure so we actually
+[14:21.48]  did a partnership uh with a local card
+[14:24.48]  company in order to build the rails so
+[14:26.56]  that local banks could accept currencies
+[14:28.64]  other than Yen which really meant we had
+[14:31.44]  to delay our launch and take the time to
+[14:33.44]  build what our users needed and what the
+[14:35.12]  market lacked but it was worth it
+[14:37.60]  because it gave us not only something
+[14:39.28]  for our users but also something
+[14:40.72]  important in the market and I know
+[14:42.40]  you're thinking wait a minute that must
+[14:43.76]  be increasing the GDP of the internet
+[14:46.24]  okay it's just me maybe just thinking
+[14:47.92]  that um all right so let's talk more
+[14:50.44]  about users let's talk about knowing
+[14:52.36]  your Forever
+[14:54.60]  user no matter how many employees you
+[14:57.24]  have or what markets you operate or what
+[14:59.44]  vertical I think you can often fall down
+[15:02.24]  if you don't know your Forever user at
+[15:04.72]  stripe our forever user will always be
+[15:06.72]  the developer and we're always going to
+[15:08.76]  start first with developer tools today
+[15:11.96]  um our users are fraud teams support
+[15:14.52]  teams Finance teams um even the Commerce
+[15:18.96]  teams at SAS companies who are using our
+[15:21.08]  billing product uh for recurring
+[15:23.32]  business models but the developer is the
+[15:26.00]  DNA and the company and it comes from
+[15:27.92]  two places the first is a belief which
+[15:31.40]  is we don't assume that we know exactly
+[15:33.40]  what another company wants we're giving
+[15:35.32]  developers at those companies the tools
+[15:37.48]  to build what their company needs it
+[15:39.76]  also comes from an Insight on which
+[15:41.68]  stripe was built which is developers are
+[15:44.24]  increasingly the decision makers on the
+[15:47.04]  software that a company buys and
+[15:48.68]  integrates and if you don't celebrate
+[15:50.96]  and build the product for them you're
+[15:52.88]  not talking to the right decision maker
+[15:54.56]  in the end
+[15:56.84]  um so I think you all might have a
+[16:00.00]  different forever user could it be an IT
+[16:01.84]  manager an HR person but I think it's
+[16:04.52]  worth talking through what it looks like
+[16:05.92]  for us um it started out looking like
+[16:09.32]  John and Patrick actually showing up at
+[16:11.44]  the offices of sort of technical founder
+[16:15.12]  new startups and asking them for
+[16:16.96]  feedback on stripe and asking them if
+[16:18.96]  they use stripe and if the answer was no
+[16:22.00]  they would do they would sit down open
+[16:23.72]  their laptops and integrate stripe on
+[16:25.40]  the spot for the company we used to call
+[16:27.84]  it the cison installation
+[16:29.84]  and there are still Founders today who I
+[16:31.68]  meet who tell me the time when John and
+[16:33.80]  Patrick showed up or one of them and
+[16:35.84]  helped integrate stripe for their
+[16:37.16]  company so if you know you're forever
+[16:39.04]  user you're showing up at their doorstep
+[16:41.00]  a lot early on and you're always
+[16:43.24]  honoring their feedback even today we
+[16:45.88]  have a mailing list with our leadership
+[16:47.84]  team if we get a certain type of
+[16:50.12]  complaint or concern from a user one of
+[16:52.32]  us reaches out I've had a few people
+[16:55.32]  just yesterday one named Alejandro asked
+[16:58.16]  me if it was really me how is it that he
+[17:01.16]  because he felt like a small customer
+[17:02.60]  and I was like no you're an interesting
+[17:03.96]  important aspiring growing internet
+[17:06.12]  company and I want to talk to you and I
+[17:07.64]  want your feedback it's really built
+[17:09.36]  into how we do things it's also built
+[17:11.52]  into the experience for the customer um
+[17:14.88]  I'm just going to run through a few
+[17:16.16]  examples of what we do for the developer
+[17:17.92]  audience but some of these lessons
+[17:19.56]  probably apply just a little bit
+[17:20.96]  differently for other forever users our
+[17:23.04]  first lesson is you got to have a speedy
+[17:24.56]  onramp developers don't want to spend 10
+[17:26.52]  minutes filling out information they
+[17:29.12]  want to try the product right away and
+[17:31.12]  test it the inclusive thing to do for
+[17:33.92]  our users is to have as many programming
+[17:36.08]  languages as you possibly can it has to
+[17:38.08]  be incredibly diverse we released an SDK
+[17:40.88]  a developer kit for every major
+[17:42.72]  environment to make it easy for
+[17:44.00]  developers to get started um more than
+[17:46.72]  you can imagine languages I didn't know
+[17:48.48]  existed let's put it that way we obsess
+[17:51.36]  about our documentation it became really
+[17:53.96]  really important especially early on but
+[17:55.92]  still today our documentation is much
+[17:58.56]  less of a static user manual or what
+[18:00.68]  you'd see on a normal site it's actually
+[18:02.76]  interactive you get code Snippets it can
+[18:05.12]  jump start your integration and we built
+[18:07.44]  our brand actually on the Simplicity and
+[18:09.76]  usability of that documentation today if
+[18:13.04]  the documentation is not ready or not
+[18:15.12]  good we will not launch and we have
+[18:16.96]  blocked some launches because it was not
+[18:18.84]  up to our
+[18:20.80]  standards support existed it's right
+[18:23.64]  from the very beginning and our early
+[18:25.72]  support team was Engineers engineer to
+[18:28.20]  engineer developer to developer contact
+[18:30.36]  that's incredibly powerful today we have
+[18:32.64]  a dedicated support engineering team
+[18:34.64]  they're in IRC they're in stack Overflow
+[18:36.76]  they're on email answering questions
+[18:38.44]  from developers and Fielding feedback
+[18:40.60]  internally when we find things aren't
+[18:42.16]  working as well for our user um your
+[18:44.48]  onboarding your site and how it engages
+[18:46.80]  your user how you communicate all should
+[18:49.08]  be uniquely designed with your Forever
+[18:50.76]  user in
+[18:52.12]  mind all right so let's talk about
+[18:54.60]  everyone's favorite thing I know this
+[18:57.36]  process
+[18:59.40]  let me say something controversial I
+[19:01.68]  think process is good unfortunately in
+[19:05.08]  young companies there's like an insanely
+[19:07.40]  strong aversion to process because it
+[19:09.56]  feels like you're giving something up
+[19:11.60]  you're giving up some kind of freedom I
+[19:13.28]  get it but here's here's how I think
+[19:16.68]  about it say you gave a bunch of people
+[19:19.88]  some random sports equipment and you
+[19:22.04]  sent them out into a field or into the
+[19:24.12]  park somewhere near here in San Jose
+[19:26.24]  that I know is like in downtown s and
+[19:28.20]  you said
+[19:30.04]  play and there's no rules there's no
+[19:33.40]  officiating no rules there's no sideline
+[19:36.20]  there's no way to win no objective you
+[19:39.24]  know what's going to happen is someone's
+[19:40.52]  going to get hurt when I tell that story
+[19:42.72]  I always picture someone with a field
+[19:44.12]  hockey stick whacking a football into
+[19:46.00]  somebody's face um those things should
+[19:48.36]  not be on the same field together this
+[19:50.24]  happens in companies too by the way
+[19:52.00]  something goes wrong hopefully people
+[19:54.12]  aren't getting hurt but you're losing a
+[19:55.60]  sales deal you have a bad press event
+[19:58.36]  you lose a candidate that you wanted to
+[20:00.60]  close and what happens to companies when
+[20:02.96]  something breaks or there's a mistake is
+[20:04.92]  they
+[20:05.76]  overcorrect usually they over engineer
+[20:08.32]  and bring in this tops down heavyweight
+[20:10.44]  insane thing because this mistake
+[20:12.76]  happened and then people hate it because
+[20:15.08]  it's too heavy so don't overcorrect
+[20:17.88]  there is another
+[20:20.12]  way lightweight processes increase speed
+[20:24.28]  they increase Clarity I built a really
+[20:27.40]  short candidate review process when for
+[20:29.48]  new hires when we wanted to sign off to
+[20:31.76]  make sure that that the process had been
+[20:33.52]  good and that we wanted to hire that
+[20:34.80]  person it still exists today I'm shocked
+[20:37.40]  to be honest four years later because
+[20:39.52]  recruiting loves it the executive team
+[20:41.28]  loves it it's just a slack Channel with
+[20:43.56]  a little template it's like a bot and we
+[20:46.04]  all love it and it is very light so if
+[20:49.48]  you can build something that can last
+[20:50.60]  for that long you're on the right track
+[20:53.44]  speaking of hiring we used this idea of
+[20:56.40]  lightweight process early on when we
+[20:58.24]  were starting to hire developers now
+[21:00.52]  admittedly it's a little easier because
+[21:02.36]  developers were our forever user and we
+[21:05.00]  were developing some fans and some folks
+[21:07.32]  who were willing to do this but in
+[21:09.60]  before we hired some folks again very
+[21:11.88]  early on at stripe we just have them
+[21:13.32]  come and work in the office uh we'd have
+[21:15.56]  them do bug squashes do some integration
+[21:17.76]  challenges work with our Engineers uh on
+[21:21.08]  helping improve stripe and it was great
+[21:23.88]  it was a great way to gauge employee fit
+[21:26.20]  it was a great way for them to get a
+[21:27.32]  sense of the company there's actually a
+[21:29.28]  company in
+[21:30.60]  Japan um who runs on stripe called
+[21:33.92]  wantedly um that is actually really
+[21:37.00]  impressive it's founded by a woman she's
+[21:38.72]  one of the only female startup CEO
+[21:40.60]  Founders who's taken her company public
+[21:42.88]  and what wantedly does is kind of a
+[21:44.72]  similar thing which is it's like a
+[21:46.28]  matching service where a a prospective
+[21:48.24]  employee says I'd like to go work in
+[21:49.84]  your office and see it and like get a
+[21:51.48]  feel for the place and they arranged
+[21:53.28]  that with the recruiting team which
+[21:54.64]  seems so smart like why don't more
+[21:56.20]  people get a chance to go work in an
+[21:58.04]  environment so that's what we did and a
+[21:59.96]  lot of what we built for the integration
+[22:01.76]  challenges and the bug squashes are
+[22:03.24]  still in our recruiting process they've
+[22:05.56]  evolved from these early days but I
+[22:07.84]  think many of you could could employ a
+[22:09.48]  similar thing depending on your
+[22:11.48]  size um again this also applies to
+[22:14.68]  products I don't know if you're familiar
+[22:16.60]  with our Atlas product it's a toolkit
+[22:18.44]  that helps businesses incorporate and
+[22:20.08]  get online businesses in the US or
+[22:22.16]  around the world we have a lot of uh
+[22:24.28]  entrepreneurs in countries that don't
+[22:25.92]  have access to easy incorporation use
+[22:28.24]  Atlas to incorporate in the US there's
+[22:31.64]  really a Temptation and I don't blame
+[22:33.40]  you after talking about the forever
+[22:35.16]  users to over poish every product launch
+[22:38.36]  and to have done all of the heavy
+[22:40.00]  lifting to support it Atlas uses a lot
+[22:42.56]  of Partnerships right there's a tax
+[22:44.20]  component to this there's a legal
+[22:45.52]  component to it um and we could have
+[22:47.52]  built very heavy Integrations with all
+[22:49.40]  of those Partners instead we did just a
+[22:52.76]  lightweight process don't tell anyone
+[22:55.32]  but we had two stripe employees faxing
+[22:57.60]  in Delaware paperwork for each Atlas
+[23:00.04]  user by hand uh for a while and once it
+[23:03.80]  was proven we hired more people we built
+[23:05.96]  the Integrations we built more of the
+[23:07.40]  structure of the product but the initial
+[23:09.64]  lightweight approach was a great test of
+[23:12.24]  whether this was an interesting product
+[23:13.56]  to people and what we needed to build in
+[23:15.88]  the future as opposed to building it
+[23:17.48]  before the launch all right I know
+[23:20.52]  you've all been waiting for the trap
+[23:21.60]  doors they are now happening we're going
+[23:23.88]  to talk about preserving
+[23:26.44]  optionality um
+[23:29.08]  one of the examples of of things that
+[23:30.72]  happens when you're growing quickly is
+[23:32.32]  you solve something and the minute you
+[23:34.84]  solve it it breaks because you've gotten
+[23:37.12]  bigger and you need it differently uh
+[23:39.80]  this happens with office space right the
+[23:41.72]  minute you move into one space if you're
+[23:43.04]  growing as quickly as strip has for me
+[23:45.44]  I've been looking at the new office
+[23:46.72]  space like the next week after we move
+[23:48.88]  in um and when I think about the most
+[23:51.92]  valuable currency for a young company
+[23:55.40]  actually for any company I think it's to
+[23:57.64]  preserve option ality and not end up in
+[24:00.04]  a trap um avoid making decisions that
+[24:03.92]  are irreversible as often as you can
+[24:06.72]  because they take a ton of time and you
+[24:10.04]  can't unmake them as easily which takes
+[24:12.28]  even more time when you're faced with
+[24:13.88]  having to unmake them you've probably
+[24:16.08]  already made a decision like this I
+[24:17.92]  think hiring a very senior leader can
+[24:19.76]  can be a a bit of a trapdoor uh just
+[24:22.76]  because they have such an impact on your
+[24:24.92]  culture though you can unmake that just
+[24:26.88]  can be messy but what about acquiring a
+[24:29.36]  company or publishing your pricing on
+[24:31.72]  your site and then realizing now I want
+[24:34.28]  to change it and you got to change your
+[24:36.76]  pricing in front of everybody uh there
+[24:39.08]  are trapdoor decisions really know when
+[24:41.52]  you're making one and try not to make so
+[24:43.48]  many in the beginning this is the
+[24:46.00]  decision-making framework I talked about
+[24:47.64]  earlier this is not news it's not unique
+[24:50.44]  to stripe um Jeff Bezos talks about t
+[24:53.76]  type one and type two decisions what's
+[24:55.88]  really critical about this framework is
+[24:57.60]  just one know if it's irreversible or
+[25:00.20]  very difficult to reverse or very
+[25:02.48]  tunable so know that and then know how
+[25:05.28]  high impact it is I think changing your
+[25:07.72]  pricing for your product around the
+[25:09.16]  world is in that upper right quadrant we
+[25:12.16]  found this really useful at stripe um
+[25:15.60]  because luckily a lot of decisions are
+[25:18.08]  not in that quadrant and if you can
+[25:19.52]  teach your organization to move quickly
+[25:21.20]  and bias toward action almost in every
+[25:23.24]  other quadrant you're going to be a much
+[25:25.40]  faster moving company but the other
+[25:27.60]  thing is you need the rigor to come the
+[25:30.04]  details the research the user experience
+[25:32.24]  testing when you're in that upper right
+[25:33.92]  quadrant and everyone needs to
+[25:36.48]  learn when you're
+[25:39.00]  there um something that feels actually
+[25:42.00]  quite small but I think is something
+[25:45.12]  that benefits a lot from optionality is
+[25:47.36]  giving titles to people I recognize I
+[25:50.08]  say this to you as stripe coo so let's
+[25:52.88]  ignore that for a second that's kind of
+[25:54.48]  a non-title anyway um but titles are
+[25:57.16]  really important to people actually
+[25:58.48]  there's been some studies where the
+[26:00.32]  majority of people would rather have a a
+[26:02.12]  title A seniority increase in their
+[26:03.84]  title than a small increase in pay like
+[26:05.92]  it's valuable we're humans we seek
+[26:07.84]  status right we seek survivorship and
+[26:10.48]  Status so so they're they're important
+[26:12.60]  but if you go down that path too early
+[26:14.44]  it's very hard to go back I think most
+[26:17.00]  businesses make the mistake of
+[26:18.24]  overstructuring and overc committing to
+[26:20.48]  the names of people's roles too early
+[26:23.20]  and when the company grows you're going
+[26:24.60]  to need different skill sets different
+[26:26.68]  specializations more experience
+[26:28.80]  different experiences than you start
+[26:30.52]  with um so let's just use say marketing
+[26:33.36]  as an example when you're a 50% company
+[26:35.76]  and you've got a couple people in
+[26:37.00]  marketing and you hire someone to manage
+[26:38.92]  that team I hope you're not giving them
+[26:40.96]  the CMO title because what's going to
+[26:43.84]  happen a few years later when you're 50
+[26:45.92]  people in marketing and you want to hire
+[26:47.72]  a leader over that person who is
+[26:49.24]  managing
+[26:50.16]  marketing you're not going to have two
+[26:52.48]  CMOS so then you're going to have to
+[26:54.48]  have a very difficult conversation you
+[26:56.40]  might miss you might lose someone who's
+[26:58.40]  talented who's been helping to manage
+[26:59.84]  the team and not benefit from bringing
+[27:02.32]  in that experience it's not going to be
+[27:03.92]  a fun conversation don't build a lot of
+[27:06.56]  that debt too
+[27:08.12]  early for new hires at stripe the
+[27:10.56]  reaction to not having a title is
+[27:12.04]  actually a good signal we mostly call
+[27:13.60]  our roles what they are like account
+[27:15.88]  manager or recruiter um and if they're
+[27:18.96]  cool with that it means they get their
+[27:20.72]  culture and they get what stage that
+[27:22.44]  we're at this may change over time but
+[27:24.32]  it served us incredibly well getting
+[27:26.60]  people used to flexibility and change
+[27:28.72]  early on benefits you more than you
+[27:31.36]  realize it's a great way of making a non
+[27:34.12]  decision that helps you preserve
+[27:37.32]  optionality let's talk finally about
+[27:39.76]  naming
+[27:40.92]  things uh it's really the sister lesson
+[27:43.24]  to preserving optionality but I think it
+[27:44.68]  deserves its own uh its own section
+[27:48.76]  because this is the thing I know people
+[27:50.64]  ask me what surprised you when you join
+[27:52.28]  stripe and there are surprises I find
+[27:54.76]  the payments industry fascinating but
+[27:56.92]  really the thing that surprised me the
+[27:58.40]  most is how many things you have to name
+[28:00.84]  I mean it's shocking you name teams you
+[28:03.08]  name products you name organizations you
+[28:05.00]  name processes you have to name every
+[28:06.92]  freaking thing that is happening around
+[28:08.72]  you even your meeting rooms and it's
+[28:10.92]  exhausting and then the names do this
+[28:13.16]  annoying thing which is they stick and
+[28:15.56]  they stick in ways that aren't always
+[28:17.84]  helpful um so there's three things I
+[28:20.04]  think you should know the first is that
+[28:21.28]  they stick and if they're a good name it
+[28:23.44]  really sticks one of our weaknesses at
+[28:25.64]  stripe is we really Lo love to use the
+[28:27.64]  word op Ops Ops is super popular these
+[28:30.60]  are all names of teams at strip for
+[28:33.24]  reals um and and they all do actually
+[28:36.64]  very different things so it's very
+[28:38.40]  confusing that they're all called ops um
+[28:41.20]  but we were preserving optionality we
+[28:43.20]  kind of liked the idea look we're we're
+[28:44.84]  building right now we got Engineers
+[28:46.20]  building and we got operators that's
+[28:47.72]  what we got so you're either Ops or
+[28:49.20]  you're engineering yeah it's actually
+[28:51.72]  been kind of a challenge it's hard to
+[28:54.52]  know what all these folks do um and so
+[28:57.32]  there's one s for it which is you can
+[28:59.88]  just take out the Ops and call the team
+[29:02.04]  the umbrella name and then build the
+[29:03.64]  specialized things underneath and one
+[29:05.68]  thing we have had to do is just use some
+[29:07.60]  industry terms for a few things like
+[29:09.72]  this is our benefits team hrbps sounds
+[29:12.36]  very corporate but people know who they
+[29:13.80]  are and that has helped but I'm going to
+[29:16.52]  be honest with you and tell you Ops is
+[29:18.40]  still extremely prevalent at stripe we
+[29:20.24]  have an entire organization now called
+[29:22.24]  ops yet a lot of these teams with Ops in
+[29:24.92]  the name are not in the organization
+[29:27.32]  Long Live op s watch out for names that
+[29:30.08]  stick and names that get used by
+[29:33.44]  everyone here's another thing about
+[29:35.40]  names they should help people understand
+[29:37.68]  if you're going to name something an
+[29:39.60]  unusual thing an abstract concept of
+[29:42.48]  fruit you are going to spend a lot of
+[29:44.96]  money on branding and marketing to
+[29:47.96]  explain what that name means for your
+[29:50.48]  company I know this is obvious apple is
+[29:53.16]  actually a company that I think has done
+[29:54.44]  incredibly well cementing what their
+[29:56.92]  brand means
+[29:58.56]  but you'll notice that Apple doesn't
+[30:01.08]  name a lot of its follow-on products
+[30:04.12]  abstract things they're things like
+[30:06.28]  apple music you know what that is or you
+[30:09.28]  know what the iPhone is it's a phone
+[30:11.80]  with an eye in front of it you know it's
+[30:13.60]  not hard to understand but it's really
+[30:17.24]  expensive to name something something
+[30:20.36]  abstract or that needs explanation guess
+[30:23.28]  what we have messed this up um this is a
+[30:26.76]  slide with our product name games I
+[30:29.32]  think um there's a little mix that
+[30:31.12]  you're probably noticing here issuing is
+[30:33.56]  like issuing credit cards so that's
+[30:35.24]  pretty payments hopefully you know what
+[30:37.36]  payments is but what about Radar Radar
+[30:40.56]  is our fraud product or Sigma if you
+[30:43.40]  think about it for a minute it's
+[30:44.76]  analytics get it the sum very cute we
+[30:48.12]  almost called our billing product orbit
+[30:50.76]  so that would have been really awesome
+[30:52.28]  cuz what does that mean um some of you
+[30:55.20]  guys are looking for subscription
+[30:56.28]  billing I don't know if you would have
+[30:57.68]  Gra gravitated toward orbit so we've
+[31:00.32]  really not learned this lesson and it's
+[31:01.88]  really hard on our sales and marketing
+[31:03.48]  teams because they have to explain these
+[31:05.76]  products we don't invest a lot in
+[31:07.84]  marketing so our site has to explain
+[31:10.28]  these products um don't forget to name
+[31:13.32]  things uh descriptive names that help
+[31:15.92]  illuminate what they are unless you're
+[31:17.64]  ready to invest um all right I've kind
+[31:20.40]  of depressed myself now um because
+[31:23.48]  that's like one of those trapo
+[31:24.84]  situations that I talked about okay
+[31:27.24]  here's the ones a little more fun think
+[31:29.32]  about names in a system that helps
+[31:31.04]  people understand um at stripe we always
+[31:33.68]  try to name our conference room
+[31:35.00]  something like more interesting than
+[31:36.56]  just a number or a very predictable like
+[31:39.24]  after all the currencies or all the
+[31:41.00]  payment methods we could have done an
+[31:42.48]  obvious thing we weren't sure what we
+[31:44.16]  wanted a theme to be early on and our
+[31:46.24]  first naming scheme came from Patrick if
+[31:48.60]  you've uh read about him or follow him
+[31:50.60]  on Twitter you won't be surprised that
+[31:52.28]  his naming scheme was scientific
+[31:54.60]  papers he put copies of the papers up in
+[31:57.24]  the conference room rooms and um that
+[32:00.16]  didn't really last very long
+[32:01.52]  interestingly I love human behavior
+[32:03.56]  people actually actively avoided meeting
+[32:05.88]  in The Germ and penicillin
+[32:07.92]  rooms um so we switch to animals which
+[32:10.60]  is good there's a lot of animals uh and
+[32:12.76]  as you can see all the photos on this
+[32:14.16]  floor in our building are our Birds and
+[32:16.40]  the floor is an upper floor get it the
+[32:18.16]  birds in the sky anyway make it make
+[32:20.32]  sense in a system okay so names are
+[32:23.44]  important they're going to stick they're
+[32:25.20]  going to become infused in their culture
+[32:26.64]  they're going to be hard to change
+[32:28.60]  and they should exist in a system that
+[32:30.68]  makes sense and be descriptive and
+[32:32.68]  useful uh really treat it quite as
+[32:35.04]  seriously as you would treat naming your
+[32:36.60]  company thank you so much I think many
+[32:39.12]  of these lessons are obvious I found it
+[32:41.04]  that scaling a company is easier to
+[32:43.40]  describe that it is to do because what's
+[32:45.72]  happening is it's all happening at once
+[32:47.40]  but when I go to these events I hope I
+[32:48.92]  take away one or two things I hope you
+[32:50.72]  all did as well um and I guess I'll
+[32:53.84]  close really with reminding you of what
+[32:56.60]  I started with it's all about the reason
+[32:58.76]  you exist and the value that you add for
+[33:00.60]  your user when things get tough for your
+[33:03.36]  team your your product your users that's
+[33:06.44]  the center that we hold and that is what
+[33:08.92]  the most important lesson of all thank
+[33:10.84]  you so much

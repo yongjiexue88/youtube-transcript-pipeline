@@ -1,0 +1,1389 @@
+Title     : DeepSeek R1 - Everything you need to know
+Video ID  : i9kTrcf-gDQ
+URL       : https://www.youtube.com/watch?v=i9kTrcf-gDQ
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1380
+Saved at  : 2026-06-21 02:16:21
+------------------------------------------------------------
+
+[00:00.28]  Ray Fernando on the Pod he's a 12year ex
+[00:05.92]  Apple engineer he streams AI coding he's
+[00:10.16]  building an AI startup in real time I
+[00:12.48]  needed to have you on because what are
+[00:15.84]  we going to talk about today Ray today
+[00:18.68]  we're going to talk about prompting and
+[00:21.00]  we're going to be specifically prompting
+[00:22.72]  with the new reasoning models with deep
+[00:24.48]  seek R1 and there are a lot of caveats
+[00:27.68]  as far as these models cuz they're now
+[00:30.04]  able to think and reason and what that
+[00:32.72]  can do is can even lead to superhuman
+[00:35.32]  capabilities uh and so what does that
+[00:37.80]  mean is that uh these models have now
+[00:40.32]  become so Advanced um and this specific
+[00:42.76]  one from Deep seek uh is out of China
+[00:45.76]  and uh what that allows you to do is
+[00:48.20]  basically um like they've made it open
+[00:50.60]  source so it's available for uh us to
+[00:53.96]  study uh but it's apparently also on par
+[00:56.88]  uh with chat gpts like 01 model 0 one's
+[00:59.44]  reasoning model mod um and why it's
+[01:01.72]  taken the World by storm uh is because
+[01:04.36]  the fact that um it's also free to use
+[01:06.88]  on their website so
+[01:09.33]  [Music]
+[01:16.96]  jeep.com and um when we say free uh
+[01:20.04]  there's also a little bit of a caveat uh
+[01:22.12]  if you don't really know so I just want
+[01:23.80]  to also kind and cover a little bit of
+[01:25.40]  the architecture um today and and
+[01:27.84]  explained you know what you're getting
+[01:29.20]  into if you use uh something like deep
+[01:31.16]  seek uh and then maybe uh how you can
+[01:34.20]  also run this in something that can run
+[01:36.08]  like in a container like in North
+[01:37.40]  America or in some other area because
+[01:39.68]  your data is really important especially
+[01:41.16]  if you're doing anything for business uh
+[01:43.16]  and then also the the third like kind of
+[01:45.24]  secret bonus there would be uh how to
+[01:47.32]  actually run this locally on your
+[01:48.76]  machine so you can get the capability of
+[01:50.92]  these models uh and you know run that
+[01:52.88]  locally for your own private businesses
+[01:54.48]  whether you're a lawyer you're a doctor
+[01:56.08]  or whatever um there's a lot of
+[01:57.60]  different implications that you probably
+[01:59.24]  want to look into too so I think that uh
+[02:01.20]  this episode's going to be super helpful
+[02:02.72]  if you're even just beginning and and
+[02:04.60]  you don't really know some of the
+[02:05.52]  advanced stuff or no code uh that's okay
+[02:08.08]  uh it just takes learning English or
+[02:09.92]  using English to describe these things
+[02:12.44]  uh to get the output and the
+[02:13.64]  intelligence of these models to do some
+[02:15.64]  really cool stuff so I'm pretty excited
+[02:18.40]  all right let's get into it cool
+[02:21.04]  excellent to start out uh to use these
+[02:23.80]  models you have a couple of options and
+[02:25.84]  one is going directly to deep seek.com
+[02:28.84]  and this is actually currently hosted in
+[02:31.36]  China so a little bit of uh background
+[02:33.60]  here is that your computer is here like
+[02:35.52]  it for example I'm in North America and
+[02:38.08]  if I go to deep seek.com or download the
+[02:40.24]  app from the App Store uh the app will
+[02:42.24]  actually be talking to uh a region over
+[02:44.40]  in China and uh for what it may be uh
+[02:48.40]  whenever you send your data over to uh
+[02:50.92]  another country they have their own
+[02:52.52]  rules and laws and regulation so I would
+[02:55.08]  be very careful as far as anything you
+[02:56.76]  put into this system uh as far as if you
+[02:59.40]  have any s sensitive data because it
+[03:00.92]  would not belong to a region that you
+[03:03.40]  know you may live in or have control in
+[03:06.12]  uh there are other Alternatives which
+[03:07.36]  we're going to cover uh which would be
+[03:08.76]  using a web UI and going to these
+[03:11.04]  different API providers like fireworks
+[03:13.16]  or Gro uh and then we're also going to
+[03:15.60]  do something like uh covering running
+[03:17.88]  something locally on your machine so it
+[03:19.36]  doesn't go out to any of these providers
+[03:20.68]  and you can even run this uh if you're
+[03:22.20]  flying on a plane which is really
+[03:23.76]  exciting so uh as an example for deep
+[03:26.24]  seek uh we're just going to do this
+[03:28.04]  because uh this is something that's
+[03:29.32]  currently public information and I don't
+[03:31.32]  really mind uh having this stuff sent
+[03:33.32]  out so as far as prompting one thing
+[03:35.48]  that I I frequently do is I have a live
+[03:37.40]  stream and I basically transcribe my um
+[03:40.72]  videos and stuff so I basically you know
+[03:42.92]  I made a little app that will transcribe
+[03:45.24]  videos and I just take my live stream
+[03:47.64]  here uh and just run it through the
+[03:49.16]  transcriber there and what it will do is
+[03:51.00]  just generate transcripts from the video
+[03:52.88]  and it usually does it pretty fast it
+[03:54.60]  processes uh on my device and then it
+[03:56.80]  sends it up to uh grock for the endpoint
+[03:58.96]  so when it's done looks basically
+[04:00.48]  something like this and you're able to
+[04:03.52]  uh copy this transcript uh and put it
+[04:05.96]  into something like deep seek if you
+[04:07.52]  wanted to and so in order for you to use
+[04:09.76]  the model what you can do on deep
+[04:11.96]  seek.com is to just go ahead and click
+[04:14.64]  where it says uh deep seek so when it
+[04:16.32]  turns blue that means the Deep think is
+[04:18.28]  enabled and that means uh it's also
+[04:20.88]  there and you can if you want to enable
+[04:22.28]  web search you can do that so we can
+[04:23.76]  probably do that for the next prompt
+[04:25.52]  here so I paste in my transcript here I
+[04:28.48]  hit shift and I hit enter a couple times
+[04:30.80]  and so what we can do is give it
+[04:32.20]  additional instructions for uh it to do
+[04:35.20]  what we want to do and one of the things
+[04:36.84]  that I like to do is um I actually have
+[04:39.16]  built a little prompt that I'll actually
+[04:40.72]  share with y'all uh so that you can
+[04:42.88]  actually do some analysis and generate a
+[04:44.44]  blog post off a transcript and so that
+[04:46.80]  is actually located here in my little uh
+[04:48.76]  notion thing and so one of the things I
+[04:51.24]  have is uh we're going to coup cover how
+[04:53.92]  to do some of these prompts and stuff
+[04:55.28]  and I'll actually show you how you can
+[04:56.64]  generate some of these Advanced chaining
+[04:58.48]  prompts because this is will really take
+[05:00.80]  advantage of these models to think
+[05:03.16]  through all of that text and do some
+[05:05.28]  work on our behalf U so this is really
+[05:07.44]  really cool it's basically like hiring
+[05:09.48]  an admin to go through all of your stuff
+[05:12.00]  uh and and make things for you so we're
+[05:13.32]  can go ahead and hit submit and when we
+[05:16.00]  do that I will say you know I wouldn't
+[05:19.60]  put a tax return on deep seek.com it's
+[05:23.24]  not the type of thing I would put on so
+[05:25.64]  be you know you do want to be a bit wary
+[05:29.40]  of
+[05:30.48]  what you're putting on when you're on
+[05:31.80]  deep seek.com now I was playing with
+[05:34.40]  perplexity earlier and perplexity
+[05:36.36]  actually has some of these models built
+[05:38.24]  in um but it's hosted in the United
+[05:41.36]  States of America so that's that's a bit
+[05:44.32]  different that's correct and there um
+[05:46.88]  you you may want to ask your app
+[05:48.56]  providers what they do one of my
+[05:50.40]  favorite apps for coding is actually
+[05:52.24]  cursor and I asked them hey where do you
+[05:55.28]  have have your deep seek model hosted
+[05:57.24]  and they told me they use the fireworks
+[05:58.80]  API and that's you know actually not in
+[06:01.20]  China so that's great so it's like okay
+[06:03.04]  cool um that's awesome and they're using
+[06:04.84]  the full model quick break in the Pod to
+[06:07.96]  tell you a little bit about startup
+[06:09.88]  Empire so startup Empire is my private
+[06:13.84]  membership where it's a bunch of people
+[06:17.24]  like me like you who want to build out
+[06:20.52]  their startup ideas now they're looking
+[06:22.96]  for content to help accelerate that
+[06:24.96]  they're looking for potential
+[06:26.28]  co-founders they're looking for uh
+[06:28.72]  tutorials from people like me to come in
+[06:32.04]  and tell them how do you do email
+[06:33.52]  marketing how do you build an audience
+[06:35.24]  how do you go viral on Twitter all these
+[06:37.24]  different things that's exactly what
+[06:39.44]  startup Empire is and it's for people
+[06:42.20]  who want to start a startup but are
+[06:44.32]  looking for ideas or it's for people who
+[06:47.00]  have a startup but just they're not
+[06:48.76]  seeing the traction uh that they need so
+[06:52.08]  you can check out the link to Startup
+[06:54.48]  empire.co in the description uh so these
+[06:57.32]  models have these parameters that you
+[06:58.84]  may hear of uh and like you know like
+[07:01.04]  the the really large parameter model
+[07:02.92]  like 600 uh billion plus parameters uh
+[07:06.28]  just means that it has more intelligence
+[07:08.04]  to leverage and uh it tends to take
+[07:10.20]  longer in its thinking but the results
+[07:12.52]  are really really really great um and
+[07:15.32]  some of the models that will probably
+[07:16.48]  run locally on the machine a little bit
+[07:17.92]  later they're going to be like distilled
+[07:19.44]  so you just basically take the essence
+[07:21.04]  of it uh and then those models basically
+[07:23.64]  are going to run they run a lot faster
+[07:25.36]  and they're just as efficient uh but
+[07:28.16]  they may not think as long or they may
+[07:29.80]  not give the results and it's really up
+[07:31.60]  to you to try out uh which I highly
+[07:33.52]  encourage so one of the problems is that
+[07:36.12]  sometimes the server is really busy and
+[07:38.84]  um that can happen because right now
+[07:40.24]  it's so popular and I probably after the
+[07:42.68]  publishing of this video it' probably be
+[07:44.12]  even more popular uh so you can hit this
+[07:46.48]  little pencil and you can hit send again
+[07:48.44]  to try to resend it and so that's kind
+[07:51.20]  of where um I thought well if I'm
+[07:55.16]  sending this over and there's a bunch of
+[07:57.16]  reliability issues why don't I try to do
+[08:00.04]  something like you know that I can host
+[08:02.24]  my own or just hit the API themselves if
+[08:04.36]  cursor is doing this why can't I do it
+[08:06.68]  as well so I can actually show you a
+[08:09.04]  technique for how to do this so you can
+[08:10.84]  hit the API and so you don't send your
+[08:12.40]  data to China uh and that actually
+[08:14.24]  involves using this thing called open
+[08:16.16]  web UI so I can show you that so while
+[08:18.64]  this is thinking uh if it even returns
+[08:20.52]  results or does anything here uh we're
+[08:22.48]  going to go ahead and pop on over to the
+[08:24.36]  other side so in the other side we're
+[08:25.92]  going to go to here and so I have an
+[08:29.00]  instance of what's called open web UI
+[08:31.56]  and it looks very similar to like a chat
+[08:33.52]  GPT and uh to get this set up I'll
+[08:36.08]  probably go through a little bit more
+[08:37.04]  details but I'll just go ahead and show
+[08:38.24]  you what this looks like so in here I
+[08:40.24]  have the model selected I can go to deep
+[08:42.28]  seek and so what's great is that you can
+[08:45.24]  um connect to an API provider uh and I'm
+[08:47.72]  using fireworks AI so fireworks AI here
+[08:50.84]  is uh currently hosting deep seek model
+[08:53.68]  and they allow you to use the model just
+[08:55.48]  by um you know using it getting an API
+[08:57.56]  key uh and then putting in the the exact
+[09:00.44]  model string and so forth here and so
+[09:02.56]  from
+[09:03.48]  here um if I go to the open web UI uh
+[09:07.24]  I'm able to select them and say okay
+[09:09.40]  this is my deeps account I'm going to go
+[09:11.72]  ahead and just paste the exact prompt
+[09:13.12]  that we had pasted in with my my
+[09:14.96]  transcript and everything here and I
+[09:17.00]  should be able to get everything out so
+[09:18.96]  let me just double check here um that I
+[09:21.80]  got everything so it's still timing out
+[09:24.20]  here yeah server is busy try again later
+[09:26.84]  so yeah that's not fun so what I'm going
+[09:29.16]  to go and do scroll to the top and hit
+[09:30.68]  this little copy button and then go over
+[09:33.24]  here just make sure I put everything in
+[09:35.20]  there I have the whole transcript yeah
+[09:36.80]  so the whole transcripts here and so
+[09:38.52]  what's going to happen here is it when I
+[09:40.04]  hit send it's going to send this off to
+[09:42.08]  fireworks Ai and uh what's great about
+[09:44.84]  this um thing that's actually running uh
+[09:47.84]  in in this open web UI is that it's
+[09:50.08]  using the API and it's not actually
+[09:51.40]  sending the data to China so just for um
+[09:54.28]  as as it's doing its thinking here and
+[09:55.84]  showing us what's going on I'm going to
+[09:58.24]  go back to Overlay this model of our
+[10:00.92]  data in our container and kind of show
+[10:02.36]  you what this is looking like in the
+[10:03.84]  background so here in t draw we actually
+[10:07.76]  have our Mac and PC and so I used web UI
+[10:10.68]  here and I'm actually using the
+[10:12.20]  fireworks API so I'm going to the cloud
+[10:14.08]  and this cloud is located in North
+[10:15.60]  America so the data basically resides
+[10:17.80]  here in North America and and it's going
+[10:19.60]  to be delivered back to my device so
+[10:21.04]  that's what we're doing when we're on
+[10:22.40]  the Deep seek website we were going out
+[10:24.40]  to the China region so that's just a a
+[10:27.24]  heads up of kind of how that's working
+[10:28.60]  in the background and so um next I'll
+[10:31.48]  show you the difference of what's going
+[10:32.56]  to happen in like the speed difference
+[10:34.36]  with what grock hosting provider
+[10:36.36]  provides uh and then uh a little bit
+[10:38.48]  later we'll get into a little bit of
+[10:39.40]  details for how to get this set up uh so
+[10:41.76]  as you see it's kind of outputting this
+[10:43.16]  stuff here because these models are
+[10:45.36]  still so new uh these web apps are still
+[10:47.48]  adjusting to uh take a look at the
+[10:49.76]  reasoning stuff and so what I'm going to
+[10:52.00]  go ahead and do is hit this little
+[10:53.28]  pencil up here to the very top I'm going
+[10:54.96]  to make this a little bit bigger so you
+[10:56.08]  can see and then from here when you hit
+[10:59.00]  this little pencil it creates a new chat
+[11:01.56]  uh at the very top you can select the
+[11:02.88]  model dropdown I'm going to type in deep
+[11:04.60]  seek and the one that I have set up from
+[11:06.88]  Gro is called the distilled llama 70b um
+[11:10.44]  and so this model um is actually like a
+[11:13.04]  smaller distilled version that they're
+[11:14.60]  hosting but it's incredibly fast using
+[11:17.52]  the gro API and so if we hit this here
+[11:20.60]  it seems like nearly Instant by the time
+[11:22.84]  um all the stuff kind of starts
+[11:24.36]  finishing so we'll see this uh model
+[11:27.00]  actually going out it's doing its
+[11:28.36]  thinking and it's actually providing the
+[11:30.28]  response just like that super fast so um
+[11:33.80]  if we take a look this this has thought
+[11:35.80]  for a few seconds and actually shows us
+[11:38.08]  the reasoning that was going on so this
+[11:40.04]  is actually going through my transcript
+[11:42.00]  trying to really understand what was
+[11:43.32]  going on with my transcript this was an
+[11:45.08]  interview with ldj who spoke a lot about
+[11:48.20]  deep seek and technical details of
+[11:50.68]  things that you know I really couldn't
+[11:51.96]  remember and so then it basically makes
+[11:53.92]  this like you know very simple blog post
+[11:56.56]  um so we'll see if if my other um one
+[11:59.60]  that was running the the larger models
+[12:01.20]  finished and you can see the difference
+[12:02.92]  between the two models a distillation
+[12:04.40]  model is just going to give us like a
+[12:05.64]  small little blog post versus the the
+[12:07.88]  full model that's also running on
+[12:09.52]  fireworks API is actually giving us
+[12:12.20]  quite a bit of detail uh it's going to
+[12:14.08]  take more time but take a look at what
+[12:16.32]  it's doing right now so it's above here
+[12:19.16]  was all the stinking stuff but this is
+[12:21.16]  actually now doing an analysis on my
+[12:23.24]  transcript uh and generating a really
+[12:25.28]  nice blog post uh and so it's telling us
+[12:27.88]  about the calculations that J talked
+[12:29.64]  about in the Stream uh geopolitical
+[12:31.64]  implications of what's going on with the
+[12:33.12]  new AI arms race uh also future
+[12:35.84]  predictions and we talked about these
+[12:38.32]  details in the live stream and it
+[12:40.16]  literally picked them up and is now
+[12:41.76]  creating a graph from this this is how
+[12:43.92]  crazy these models are if you can really
+[12:45.48]  think about it uh and here are some key
+[12:47.44]  takeaways as well so that's um an
+[12:50.00]  amazing thing and I'll I'll be able to
+[12:51.40]  share these prompts with you and um you
+[12:53.88]  know so that you can actually run these
+[12:55.16]  analysis on your guys' own trem scripts
+[12:56.92]  as well um yeah so here here's the SEO
+[13:00.20]  enhancements and final thoughts yeah so
+[13:02.64]  when you're in when you're in business
+[13:04.08]  or you're building a
+[13:05.40]  startup having an unfair Advantage is so
+[13:08.44]  important right like being super
+[13:10.08]  efficient and being you know keeping
+[13:12.64]  your cost low creating your product to
+[13:14.92]  be the best possible thing now we're in
+[13:17.36]  this new deep seek world where the model
+[13:21.48]  you know I call it a deep- seek world
+[13:22.88]  but it's really it's a llama world it's
+[13:24.44]  a deep seek world it's a world where if
+[13:27.88]  you figure out
+[13:29.68]  the model that works for you and the
+[13:31.52]  tasks that you want to accomplish you
+[13:34.12]  might be able to out compete whatever
+[13:35.88]  whoever you're you know you're competing
+[13:38.48]  against now I've done a similar prompt
+[13:42.24]  on chat
+[13:43.64]  GPT and with some of my YouTube
+[13:46.96]  transcripts and it's not unusable but
+[13:50.08]  it's more of a thought starter it's like
+[13:52.24]  oh okay like I can
+[13:55.40]  take most of this and I can rejig this
+[13:57.96]  and add this and add that
+[13:59.56]  and probably get to a blog post that is
+[14:02.24]  good but it does require a lot of human
+[14:05.00]  energy to go and do this when I see
+[14:07.72]  what's coming out of this what's really
+[14:10.44]  really mindboggling is the fact that it
+[14:14.56]  almost looks like just quickly scanning
+[14:17.40]  this this
+[14:18.40]  looks
+[14:20.44]  pretty pretty human level incredible
+[14:24.52]  like a senior writer would do something
+[14:26.32]  like this yeah or research in engineer
+[14:29.52]  that you hire to really thoughtfully
+[14:32.16]  take a lot of notes spend a lot of time
+[14:34.76]  analyzing and like put together how you
+[14:37.84]  would want to report and it's even more
+[14:40.56]  incredible because these instructions
+[14:42.60]  can be configured so if you want like a
+[14:45.28]  graph or you want to type a thing we can
+[14:47.92]  take this prompt and put it into you
+[14:50.32]  know deep seek itself to say can you
+[14:52.48]  give me this type of output instead and
+[14:55.00]  it'll it'll do that for us you know it's
+[14:56.64]  like how do we improve the prompt or
+[14:58.12]  what do you want to see from your your
+[15:00.24]  outputs all the time from your live
+[15:01.60]  streams uh and and like I think the
+[15:03.76]  thing that I've seen this is kind of the
+[15:05.56]  biggest breakthrough that's happening is
+[15:07.36]  that uh with I'm seeing this also with
+[15:09.44]  01 Pro by the way uh 01 Pro and uh deep
+[15:12.96]  seek reasoning models these reasoning
+[15:14.72]  models spend extra time and actually pay
+[15:17.44]  attention to your instructions and so
+[15:19.40]  every little detail that they're seeing
+[15:20.76]  they're like oh yep I haven't done that
+[15:22.12]  yet okay let me go ahead and make sure I
+[15:23.56]  still do that and that's something that
+[15:26.00]  I super deeply appreciate uh and for me
+[15:28.40]  it's worth the extra 200 bucks I pay a
+[15:30.76]  month to open AI but this is really
+[15:33.08]  quickly turning my head and like oh my
+[15:35.56]  goodness could you can you understand
+[15:37.88]  like what just happened here it's like
+[15:40.04]  I'm a little still taken I'm still taken
+[15:42.32]  away at this output like you're saying
+[15:44.36]  it's very detailed and um it's it's to
+[15:48.44]  me I I feel like this is totally a
+[15:50.00]  GameChanger and um I think what one
+[15:52.24]  thing that people aren't really talking
+[15:53.52]  about right now is actually this
+[15:54.80]  additional rush to understand who can
+[15:57.68]  host this in order host these huge like
+[16:01.24]  600 plus billion parameter models you
+[16:03.52]  need all those gpus you need services
+[16:05.92]  like fireworks uh grock is trying to
+[16:07.88]  spin that up you know grock was able to
+[16:09.32]  get a distilled model uh there's just so
+[16:11.28]  much demand there's going to be even
+[16:12.48]  more demand for these chips and um yeah
+[16:15.40]  this is just the beginning and I'm
+[16:16.52]  trying to figure out you know uh who who
+[16:18.72]  which provider can host this for me
+[16:20.48]  reliably so that I can do this for
+[16:22.20]  myself but also share back uh and and
+[16:24.36]  put this into apps for other people as
+[16:25.96]  well because this is going to be uh this
+[16:27.96]  is great and I don't want the data to go
+[16:29.80]  to China I just want the data to stay in
+[16:31.52]  North America or if I get a European
+[16:33.72]  container I can do the European
+[16:35.40]  container and meet all their legal
+[16:36.68]  requirements that need to happen for
+[16:38.16]  that as well so um that's super exciting
+[16:41.12]  yeah what's the uh cost the pricing for
+[16:44.20]  for
+[16:45.44]  fireworks yeah the pricing for fireworks
+[16:48.04]  we can look this up real quick I think
+[16:49.80]  it's about $8 per million tokens uh
+[16:53.44]  where normally I think chat GPT was like
+[16:56.00]  15 input and $60
+[16:59.20]  for output for 01 Pro I can just double
+[17:01.92]  check that real quick so
+[17:04.52]  pricing let's
+[17:07.64]  see uh yeah from from what I remember
+[17:12.92]  it's it's cheap it's like significantly
+[17:16.16]  cheaper Thana going to 01 Pro yeah so uh
+[17:21.20]  01 Pro uh
+[17:23.28]  o01 uh API cost yeah and pricing
+[17:31.12]  and this is going to add up right like
+[17:32.80]  you might you might be like oh yeah who
+[17:34.76]  cares a million tokens but once once you
+[17:39.44]  add this to your workflow and you're
+[17:41.48]  pumping out content or you're doing
+[17:43.80]  research you know on an ongoing basis or
+[17:46.48]  you've built a business around how to do
+[17:49.04]  this these tokens will add up that's
+[17:52.64]  exactly it yeah they'll add up um also
+[17:55.24]  at the same time open AI is currently
+[17:58.16]  promised that the 03 model will come out
+[18:00.36]  and the Mini model will come out which
+[18:01.56]  would be on par with this model so that
+[18:03.88]  prices will also probably significantly
+[18:05.68]  drop as well because they just get more
+[18:08.12]  efficient with time and so that'll be
+[18:10.08]  really interesting to see and um you
+[18:12.40]  know I'm rooting for it because uh for
+[18:14.36]  me as a consumer I want the power of all
+[18:16.96]  the intelligence and um to to do these
+[18:19.80]  types of things I think it's going to be
+[18:21.36]  pretty important and I think um to that
+[18:23.76]  note I think it'd be interesting to show
+[18:26.04]  how um if anyone hasn't found out about
+[18:29.32]  this it's this thing on openi thing
+[18:31.56]  called the platform. open.com so you
+[18:34.32]  just sign up for accounts or developer
+[18:35.80]  account it's a little playground and
+[18:37.68]  what you can do is actually hit this
+[18:39.08]  little generate star button and so we
+[18:41.28]  can describe a prompt that we want for
+[18:44.04]  any type of model and what I will do is
+[18:45.92]  reconfigure the prompt for uh the
+[18:48.24]  language model so that they can actually
+[18:49.48]  be more efficient at doing something so
+[18:51.52]  if there's a task that you do quite a
+[18:53.12]  bit you're like uh I just want you know
+[18:55.92]  please like make uh you know keywords
+[19:00.08]  for my Amazon listings and then hit like
+[19:03.68]  generate what it'll do is basically um
+[19:06.12]  whoops sorry if we hit generate here and
+[19:09.12]  hit this uh at the very top right uh and
+[19:11.28]  hit update what it will do is actually
+[19:14.48]  uh reconfigure this prompt just from a
+[19:16.12]  oneline type of thing to include more
+[19:18.40]  details so we can take existing prompts
+[19:22.00]  and try to improve them through this
+[19:23.56]  mechanism so as you can see this is like
+[19:25.68]  how people get really nice long chains
+[19:27.40]  of thought or Reason or outputs so one
+[19:30.52]  way to think about these things is to
+[19:32.52]  first kind of put down like what
+[19:33.88]  instructions you want what type of
+[19:35.76]  output do you really expect um maybe
+[19:38.20]  what you don't want as a as a good
+[19:39.84]  starting point and then that'll help you
+[19:41.92]  generate prompts that can be a little
+[19:43.48]  bit useful um a lot of the prompts that
+[19:45.56]  you're seeing that I spit out are
+[19:47.12]  basically things that um have come out
+[19:49.68]  over time because of you know of my use
+[19:51.72]  cases it's like okay I want this instead
+[19:53.32]  of that um and so as an
+[19:55.92]  example uh one of the things that we I
+[19:58.12]  was thinking about was like how do you
+[20:00.36]  verify like claims for a specific type
+[20:02.88]  of thing so for if you have an article
+[20:05.92]  and how do you understand if something
+[20:07.36]  is actually true or not um so I have one
+[20:09.80]  here this says information verification
+[20:11.96]  and so um one of the things that's um
+[20:15.08]  these these models that I'm Cur I was
+[20:16.64]  currently showing you is that uh the
+[20:18.68]  fireworks and the gro uh are specific
+[20:21.20]  API endpoints and right now there isn't
+[20:23.76]  like a specific web search thing that's
+[20:25.56]  currently tuned into them so if you want
+[20:27.48]  to do web search you have to go through
+[20:29.36]  the Deep seek.com route or the app uh
+[20:32.08]  and keep in mind you're also sending
+[20:33.32]  data uh into this this container there
+[20:36.36]  um so like sometimes you could just use
+[20:38.24]  it for public articles for things that
+[20:40.00]  you really don't care about so if you're
+[20:41.80]  on deep seek U let's just see if they
+[20:43.64]  actually have stuff available here for
+[20:45.28]  us so you just go to the search thing
+[20:47.48]  turn that on I paste my prompt in and
+[20:51.00]  then um what I'm going to go ahead and
+[20:53.16]  do is like maybe grab an article like
+[20:54.76]  the uh techno Optimus Manifesto from uh
+[20:57.52]  mark hron uh it's a very popular article
+[21:00.52]  and sometimes you know it's really long
+[21:02.36]  to read there's like a lot of
+[21:03.48]  information here and you're like oh my
+[21:05.56]  God there's like so much in there right
+[21:07.28]  it's like uh how can I even get started
+[21:09.84]  with this thing and how do I even verify
+[21:11.44]  the claims of this stuff uh and I think
+[21:13.68]  this is probably sometimes like a good
+[21:14.96]  thing to start here so um what I do is
+[21:17.64]  um I hit shift and enter and I put the
+[21:20.16]  like article at the very top and once I
+[21:22.56]  do that I just go ahead and paste that
+[21:23.84]  in there and then just go ahead and hit
+[21:25.84]  send so what that's going to do for us
+[21:28.28]  is going to use the web search and try
+[21:29.80]  to like look through uh just like how we
+[21:32.40]  saw earlier that was happening with the
+[21:34.04]  API uh every type of claim that's in
+[21:36.80]  there try to see if they can search the
+[21:38.56]  internet for it um and try to see if it
+[21:40.56]  can do anything so this is going to try
+[21:41.92]  to do its thinking thing um this is
+[21:44.56]  obviously very popular and you know deep
+[21:47.08]  seek the website is is getting flooded
+[21:50.12]  uh with people because of basically it
+[21:52.04]  being free and um so that yeah just keep
+[21:55.08]  in mind like U Greg says like I yeah I
+[21:57.12]  would not be putting taxes in there I
+[21:58.80]  probably wouldn't be putting medical
+[21:59.88]  records in there uh things that you know
+[22:02.92]  you don't want to see generated if
+[22:04.64]  somebody asks a question that's related
+[22:06.20]  to you uh because that can be a little
+[22:08.88]  crazy uh you'll be like wow all of a
+[22:10.88]  sudden my data is showing up somewhere
+[22:12.60]  uh that was not expecting so um yeah
+[22:15.16]  this is this is currently airing out uh
+[22:17.24]  it's no surprise and this is kind of why
+[22:19.52]  um we're kind of thinking about doing
+[22:21.00]  some other Alternatives here so um yeah
+[22:23.76]  I think that's that would set there so I
+[22:27.24]  think um another thing maybe that can be
+[22:30.72]  useful here is probably getting this
+[22:32.92]  stuff set up so if you wanted to run
+[22:34.64]  this locally maybe we can kind of go
+[22:36.60]  over that workflow what do you think I I
+[22:39.24]  would love yeah I mean selfishly I would
+[22:42.08]  love to know that okay okay cool awesome
+[22:45.12]  let's do that yeah I think that that'll
+[22:46.44]  be great so uh in order like for this
+[22:49.28]  section in order for us to run this
+[22:51.28]  model locally the best interface that I
+[22:54.56]  found Bar None is something called open
+[22:57.44]  web UI so so open web UI uh it's really
+[23:00.52]  quick to get started all you need is to
+[23:03.12]  download Docker so just go to doer. and
+[23:06.12]  you can just download the desktop app so
+[23:07.96]  download the one that you need for your
+[23:09.24]  machine uh if you're running an apple M
+[23:11.28]  machine which I am doing I just download
+[23:13.08]  the Apple silicon version uh and and
+[23:15.36]  accordingly so once you get that
+[23:17.12]  installed uh it's going to present to
+[23:19.04]  you a user interface like a dashboard
+[23:20.92]  here um and so that's kind of something
+[23:23.08]  that you'll have um you know kind of
+[23:24.88]  going mine's is already showing the app
+[23:26.76]  is running here um but that's how you
+[23:29.16]  already know it's installed uh it will
+[23:31.00]  require the terminal but it really won't
+[23:32.72]  hurt you too bad if you have it running
+[23:34.68]  so the First Command that you will
+[23:36.00]  basically run is this one that's uh
+[23:38.48]  listed on their quick start so the quick
+[23:40.00]  start will be listed here and we'll have
+[23:41.84]  this available as a guide for those to
+[23:43.28]  download um and all you have to do is
+[23:45.40]  follow these two steps really um so the
+[23:47.40]  first step is pull the container so this
+[23:49.80]  is you just copy this and then you put
+[23:52.60]  into the terminal and then it's going to
+[23:54.48]  do this little pulling thing and it'll
+[23:55.76]  probably download like you know several
+[23:57.28]  gigabytes of files onto your your
+[23:58.56]  machine uh and then the next step is
+[24:00.52]  literally what they call running the
+[24:02.04]  container so uh with Docker the whole
+[24:04.20]  app and everything is all contained in
+[24:05.96]  one so that way you don't have to spend
+[24:07.28]  a bunch of time doing extra terminal
+[24:08.80]  things this is probably the only two
+[24:10.36]  terminal things that you will run if
+[24:12.28]  you're running a PC you probably want to
+[24:14.20]  run uh especially for NVIDIA you want to
+[24:16.36]  run this command gpus Dall uh so all you
+[24:18.84]  have to do is just copy this one if
+[24:20.00]  you're running Nvidia uh and that'll
+[24:21.92]  take advantage of your GPU uh and you
+[24:24.48]  know it'll run more efficiently when
+[24:25.84]  you're running it locally um so the one
+[24:28.00]  I I like to do uh is just the single
+[24:29.80]  user mode which doesn't require a sign
+[24:31.52]  in um that way if you're the only one
+[24:33.68]  that's using it at your house or on your
+[24:35.24]  network that's probably the best way to
+[24:36.88]  do it uh so you just copy this command
+[24:39.20]  here and then you put it into uh the
+[24:41.44]  terminal and it'll say Hey you know
+[24:43.28]  great it's up and running uh and then
+[24:45.44]  all you have to do now is just go to the
+[24:47.56]  website Local Host
+[24:49.48]  3000 and then um once you're running on
+[24:52.40]  Local Host 3000 you're going to be
+[24:54.28]  presented with you know some user
+[24:55.96]  interface thing like this um and I have
+[24:58.60]  a model that's currently uh loaded here
+[25:00.56]  that's kind of why it's showing us here
+[25:02.48]  but you you're not going to have any
+[25:03.88]  models loaded so in order for you the
+[25:06.92]  next step here that we have to do is
+[25:08.64]  actually U have a couple of options one
+[25:10.88]  of the things that I do is like you can
+[25:12.44]  just download a model locally and I use
+[25:15.20]  a thing called AMA and so ama.com is uh
+[25:19.44]  something you'll want to download there
+[25:20.76]  and so that way you can run uh any local
+[25:22.88]  model and it's simple as just you know
+[25:24.72]  finding the model and so forth so once
+[25:26.48]  you hit download it's going to download
+[25:27.96]  for your machine and you install it
+[25:29.76]  you'll see like the way that it's
+[25:31.40]  downloaded you'll you actually see this
+[25:32.88]  little um llama guy that's at the very
+[25:34.84]  top uh and the little figure there and
+[25:36.96]  that's how you know it's currently
+[25:37.96]  running uh and so once that's currently
+[25:40.68]  running there um you'll see the models
+[25:43.24]  that are currently listed here uh in the
+[25:45.60]  model section at the very top and so
+[25:47.92]  deeps R1 is going to be the one that we
+[25:49.72]  want to use here so we'll go back to our
+[25:53.48]  web UI instance and then we're going to
+[25:55.72]  go ahead and hit where it says user at
+[25:57.16]  the bottom from there we're going to go
+[25:59.08]  to the admin panel and from the admin
+[26:01.60]  panel um there's like a section A
+[26:03.88]  settings area and so this settings area
+[26:07.08]  um has an area of our connections with a
+[26:08.88]  little Cloud icon and this is kind of
+[26:11.36]  where we're going to connect our other
+[26:12.68]  providers here so let me make this a
+[26:13.96]  little bit bigger so everyone can see so
+[26:15.92]  as you can see the olama API is already
+[26:18.12]  configured for us which is nice um and
+[26:20.56]  this is already going to have the the
+[26:22.28]  docker container there um which is great
+[26:25.20]  and so when you hit the little pencil
+[26:26.60]  here and you hit plus uh add uh change
+[26:28.84]  the model you can type in the model like
+[26:31.04]  deep seek and if you don't see it
+[26:33.72]  available which um it may not be there
+[26:36.08]  you'll see this option at the bottom
+[26:37.32]  that says pull from Deep uh pull deep
+[26:39.40]  seek from ama.com and so that'll
+[26:41.52]  actually search olama here uh to get it
+[26:44.04]  for you so like for example if we wanted
+[26:46.16]  to download the fe4 model I'll just type
+[26:49.16]  that one in just as an example so you
+[26:51.08]  can
+[26:52.08]  see
+[26:54.00]  V4 so I have no I don't have that model
+[26:56.52]  currently downloaded I just can hit here
+[26:58.92]  and it's just going to go ahead and find
+[27:00.04]  it and it downloads it so uh in in no
+[27:03.00]  time basically this model would just be
+[27:04.40]  downloaded on my machine and then I
+[27:06.60]  could just type in fe4 and I'll be able
+[27:08.72]  to use that uh in the future going
+[27:10.24]  forward so what we can do um is go ahead
+[27:13.88]  and type in um you know we're starting a
+[27:16.32]  new chat and we're going to basically
+[27:17.56]  select the model uh
+[27:20.20]  deep seek D R1 and you'll see um it'll
+[27:26.20]  be colon latest is kind of what it's
+[27:27.92]  listed that and that's actually how you
+[27:29.68]  know that that's the one that's
+[27:30.88]  currently running locally and so once
+[27:33.04]  you select that one you can just say
+[27:35.00]  something like explain options training
+[27:37.56]  and then go ahead and hit enter and so
+[27:40.08]  what this does is you know it's
+[27:41.68]  basically um you know thinking and you
+[27:43.88]  can see the thinking tokens of what's
+[27:45.32]  going on when it's thinking and so all
+[27:47.24]  of this is actually running on my
+[27:49.12]  computer which is amazing um one of the
+[27:51.56]  ways that I can tell is um there's this
+[27:53.92]  command line uh called ASI top and it
+[27:57.08]  actually shows us uh all of the
+[27:58.48]  resources that it's eating up uh
+[28:00.24]  thankfully I have 128 gigabytes on my
+[28:02.60]  machine because I could I do live
+[28:04.44]  streams I do this all the stuff at the
+[28:06.60]  same time and you can kind of see how
+[28:08.48]  much RAM it takes up right now uh with
+[28:10.48]  me hosting the stream plus u you know
+[28:12.40]  running this model locally um so yeah
+[28:15.00]  this is uh the actually what it does
+[28:17.64]  here one of the things that we could
+[28:19.56]  even do is try to test that prompt that
+[28:21.72]  we were using earlier so that we can run
+[28:23.68]  this command locally so earlier what we
+[28:25.92]  did was we were running like a whole
+[28:27.80]  analog is on something um and it would
+[28:30.12]  just fail out so this thoughtful
+[28:32.28]  analysis that I was showing you we can
+[28:34.96]  try to see if we can run this on a local
+[28:36.28]  model and just see the difference as
+[28:37.56]  well so uh this is basically the
+[28:39.72]  transcript that I had earlier plus the
+[28:41.20]  analysis stuff and if I go to open web
+[28:43.96]  UI and then just go ahead and going to
+[28:45.88]  go ahead and um go back here and create
+[28:47.40]  a new chat and hit paste and then hit
+[28:51.00]  run so this is going to see uh it's
+[28:54.20]  thinking here and it's using up all the
+[28:56.04]  resources on my local machine to run
+[28:57.92]  this model and um it's quite a lot of
+[29:00.16]  tokens uh and it's it's still fairly
+[29:03.24]  impressive what a smaller model can do
+[29:06.00]  that's running on my machine and um
+[29:09.04]  you'll have different versions that you
+[29:10.40]  can use I think um and so this one's
+[29:12.92]  using the 7 billion parameter model if
+[29:15.36]  you get something that's a little bit
+[29:16.36]  higher this probably going to get you a
+[29:18.12]  little bit more detailed response um and
+[29:20.56]  I would definitely play around with
+[29:21.72]  these things another important setting I
+[29:24.08]  think that you can tweak um and we can
+[29:26.36]  probably run this as a next uh chat
+[29:29.00]  uh is while this is going here there's
+[29:31.76]  control section so this control section
+[29:34.16]  at the very top will uh show us let's
+[29:36.64]  see if I dismiss this so the controls
+[29:39.16]  one of the controls that you probably
+[29:40.92]  want to change around to get different
+[29:42.96]  results is the temperature so setting
+[29:45.44]  the temperature from like you know 08
+[29:48.12]  the default to like a lower temperature
+[29:50.84]  will actually make it like hallucinate
+[29:53.08]  less is kind of what people say uh and
+[29:54.96]  so it'll tend to follow instructions
+[29:56.92]  better and and not kind of kind of Veer
+[29:58.60]  off into different tangents uh and then
+[30:01.04]  another one if you go all the way to one
+[30:02.40]  it'll just be extremely creative so you
+[30:04.28]  can think about those as far as maybe if
+[30:05.96]  you're doing some creative writing some
+[30:07.72]  non-logical reasoning um that can be
+[30:10.12]  really helpful if you want to kind of
+[30:11.28]  think out of the box and have it kind of
+[30:12.76]  go into La La Land it's really uh up to
+[30:15.52]  you and your content but I would
+[30:16.96]  definitely do two different responses
+[30:19.00]  with different temperatures uh and test
+[30:20.92]  those things and see uh if you see any
+[30:22.80]  difference in your output um for me
+[30:24.72]  sometimes I find the temperature zero to
+[30:26.40]  be very helpful for very logical
+[30:28.00]  reasoning uh outcomes especially around
+[30:30.00]  code um but it's it's really up to you
+[30:32.60]  it it kind of varies and I I just kind
+[30:34.36]  of want to give you a heads up on that
+[30:35.76]  to that's I appreciate that uh to
+[30:39.00]  me I would rename that temperature
+[30:42.64]  as you know wine versus coffee mode love
+[30:46.68]  it wi wine might get you a little more
+[30:49.80]  creative um but if you know if if you
+[30:52.68]  want more rational
+[30:54.44]  execution style maybe you want coffee
+[30:57.08]  mode I think um that is something that I
+[31:00.56]  you know we have a LCA it's our design
+[31:03.28]  firm for the aih we have a I feel like
+[31:06.08]  that's what's missing from a lot of
+[31:07.92]  these AI products is just like a little
+[31:11.00]  humanity and and and
+[31:13.80]  lightness um right so I expect over the
+[31:16.20]  next couple years we'll start seeing uh
+[31:19.08]  you know you know what would be funny to
+[31:22.16]  basically have like a spinner where you
+[31:23.96]  you can actually flick it yourself and
+[31:25.56]  you kind of see it land on something and
+[31:27.08]  then just like hit go
+[31:28.80]  totally that would be cool because
+[31:30.20]  sometimes you really don't care right
+[31:31.32]  you're just like I just want to spin the
+[31:32.84]  bottle and see what happens like totally
+[31:36.08]  it's just kind of YOLO mode kind of yeah
+[31:38.08]  yeah yeah because I think like like you
+[31:41.36]  say there's huge opportunities in the AI
+[31:44.64]  space to be playful uh and and I think
+[31:47.28]  that's what's interesting is you have
+[31:48.64]  these intelligence of the the models uh
+[31:51.04]  and then now you have to have people who
+[31:52.96]  build interfaces to interface with them
+[31:55.24]  and there are a lot of companies who are
+[31:56.56]  trying to do that and you know you can
+[31:58.92]  get very far with just some prompting as
+[32:01.00]  we're seeing here uh and then we're
+[32:03.12]  trying this exercise here is to try
+[32:04.80]  different models so if you think about
+[32:07.12]  it ama sort of the Gateway um you know
+[32:09.68]  to all these different types of models
+[32:11.64]  that you can try out and see if it even
+[32:13.56]  works for your use case um and and this
+[32:15.84]  web UI is actually a really nice user
+[32:17.64]  interface to keep track of that uh is
+[32:19.76]  saved locally on your machine you can go
+[32:21.64]  back to them at any time um you can
+[32:23.88]  there's additional options at the bottom
+[32:25.52]  here which is really nice so um you can
+[32:27.96]  actually have this read allowed to you
+[32:30.24]  so uh if you're a person suffering maybe
+[32:31.96]  from dyslexia or you actually prefer
+[32:34.36]  audio you can have that for you uh this
+[32:36.44]  will give you some information there you
+[32:37.56]  can continue the response sometimes if
+[32:39.68]  you have too much information it still
+[32:41.80]  needs to continue going so you hit the
+[32:44.16]  continue and it'll just continue on uh
+[32:46.24]  or regenerate the responses um so that's
+[32:49.16]  that's kind of some of the the basics
+[32:51.08]  there so yeah um so this is the output
+[32:54.48]  of this model and I'm fairly impressed
+[32:58.44]  for being a 7 billion parameter model at
+[33:00.64]  running locally on my machine uh that it
+[33:02.88]  took that entire transcript and did this
+[33:05.36]  analysis type of thing that's I'd say is
+[33:08.12]  pretty close to the bigger model and um
+[33:11.68]  in in terms of details is not as
+[33:13.40]  detailed as the other one if we kind of
+[33:14.92]  take a look so like the the previous
+[33:17.04]  this is one that it came out with before
+[33:18.92]  you know with this nice big blog post
+[33:20.36]  type of thing so um it's it's pretty
+[33:23.36]  good and it's it's running you know
+[33:24.76]  locally I can run this on the
+[33:26.44]  plane um you as as far as that so yeah
+[33:29.84]  so to get um get started basically again
+[33:32.40]  it's just open web UI there is a getting
+[33:35.04]  started it's literally a couple steps to
+[33:37.64]  run make sure you have Docker installed
+[33:40.00]  there uh and then AMA is going to show
+[33:42.00]  you all the different models so if you
+[33:43.76]  go to the models you'll see kind of
+[33:45.04]  stuff that's popular and trending right
+[33:46.52]  now uh and that'll kind of get you some
+[33:48.32]  of that as well as far as getting
+[33:50.20]  started uh there is um you know we also
+[33:53.96]  talked about fireworks AI so that's
+[33:56.12]  fireworks it's a good resource for you
+[33:57.56]  to
+[33:58.52]  um you know go take a look and put that
+[34:00.12]  model in so like if you want to put that
+[34:01.96]  model into your olama you would kind of
+[34:03.92]  do the same thing here so go to user and
+[34:06.28]  then you go to admin panel and then you
+[34:09.20]  would go to settings up here and then
+[34:11.64]  from the settings um you're going to go
+[34:13.40]  ahead and hit connections and so what
+[34:15.60]  you'll do is go ahead and hit the little
+[34:17.04]  plus connection and so you have to put
+[34:19.52]  in the base URL and you'll also have to
+[34:21.60]  put in the API key so the uh base URL
+[34:25.28]  here for fireworks is um this
+[34:28.04]  specifically here it says api.
+[34:30.28]  fireworks. a inference V1 in the example
+[34:34.16]  documents you'll see SL chat completions
+[34:36.64]  and things um you don't need those
+[34:38.60]  because that's part of the open AI
+[34:40.64]  framework is that uh you just put
+[34:42.68]  everything up to V1 uh and then you'll
+[34:45.28]  generate an API key from that model uh
+[34:47.80]  over in fireworks so AI so if you go to
+[34:50.36]  the model here in fireworks and you go
+[34:52.96]  to the um your name and then um you go
+[34:57.92]  to API Keys once you go to API Keys here
+[35:01.04]  you just hit create API key and that'll
+[35:03.40]  pop up and that's the key that you want
+[35:05.20]  to put in there um similar to grock
+[35:07.80]  Cloud you just go ahead and hit create
+[35:09.88]  API key um so once you go to console.
+[35:13.12]  gro.com uh there's an API key section
+[35:16.12]  here and then you'll want to hit create
+[35:18.12]  API key and that'll pop up a dialogue
+[35:20.44]  with those API keys and so that endpoint
+[35:22.80]  will look something like this over here
+[35:24.64]  so that'll be um if we hit configure
+[35:28.84]  api. gro.com
+[35:30.56]  [Music]
+[35:32.08]  opv1 and then you put your key in there
+[35:34.88]  and you don't have to do anything with
+[35:36.16]  these IDs these will be pulled directly
+[35:38.32]  from that endpoint so whatever models
+[35:40.60]  you have available will be there and so
+[35:43.08]  now when you hit the plus sign you'll
+[35:44.44]  see like this nice list of models from
+[35:46.60]  fireworks so there'll be the fireworks
+[35:48.96]  on so account fireworks you can play
+[35:51.40]  with any one of those uh and then the
+[35:53.24]  other ones that are just with the normal
+[35:54.48]  name are from grock um so they have
+[35:57.48]  those those is available for there so
+[35:58.80]  you can you can play with a lot of these
+[36:00.04]  models which is nice uh and compare them
+[36:02.44]  and then the ones at the bottom are the
+[36:03.80]  ones from olama uh and so they'll show
+[36:06.20]  like you know the colon latest is kind
+[36:07.84]  of how you can tell and if you hover
+[36:09.52]  over them you'll see like um some
+[36:11.16]  additional information over the
+[36:12.72]  parameter count what quantization level
+[36:14.56]  it is so Q4 means it's um quantized to
+[36:17.84]  four bits and um that also has a play in
+[36:21.48]  its intelligence obviously the higher
+[36:24.44]  level of quantization you know um means
+[36:26.88]  more memory so like 32 bit 16 all the
+[36:30.36]  way down um so the like the the lower
+[36:32.44]  the number the like not less
+[36:34.36]  intelligence but you may not get the
+[36:35.72]  output that you want is expected so
+[36:37.80]  that's kind of part of that process it's
+[36:39.24]  a a lot of different things here but I
+[36:41.40]  think uh the most important thing is
+[36:43.28]  just um yeah how how to host this
+[36:45.32]  locally how to start playing around with
+[36:47.20]  it um and that's kind of like a really
+[36:49.40]  good primer to get started for doing
+[36:51.64]  these models and stuff yeah I love it um
+[36:56.68]  I don't know if you've played around
+[36:57.88]  with it but is there any way to do this
+[37:00.08]  on mobile like could you play with local
+[37:02.36]  models on the mobile
+[37:04.36]  device yeah there is an app called
+[37:06.88]  Apollo have you um heard of that Apollo
+[37:10.56]  yeah I just haven't used it AP see I
+[37:13.72]  don't think app store app store I'm GNA
+[37:16.20]  see if I can go here
+[37:18.80]  Apollo let's see okay private local AI
+[37:22.96]  yes so I have this app on my phone and
+[37:27.32]  they allow you to download the models
+[37:29.60]  directly just like you would with AMA as
+[37:32.60]  well but it's it's has its own interface
+[37:34.76]  which is really nice and so um I wonder
+[37:37.60]  if I could share my
+[37:38.96]  screen I think I can so on your phone
+[37:43.08]  yeah yeah they have a phone mirroring
+[37:46.04]  yeah exactly so
+[37:50.00]  Apollo okay oh I have to lock my phone
+[37:53.28]  okay cool so I lock it and then it
+[37:56.52]  should be able to connect
+[37:58.72]  okay cool
+[38:01.40]  nice awesome so yeah let me kind of
+[38:03.88]  minimize this here and um yeah okay um
+[38:10.16]  let me just go to a different screen
+[38:12.56]  here probably one that's less cluttered
+[38:15.28]  and do
+[38:17.00]  phone whoops put that over
+[38:20.80]  here cool maybe this will
+[38:23.92]  work I think yeah yeah sweet yeah I
+[38:29.16]  actually have the yes uh another place
+[38:31.88]  to get your models apparently is also
+[38:33.64]  through open router um and so yeah so
+[38:37.32]  this is kind of the Apollo app you're
+[38:38.76]  like okay cool I can can I start
+[38:40.40]  chatting with this you know as soon as I
+[38:41.80]  play with the thing uh a couple
+[38:43.64]  configurations you have to do is you hit
+[38:45.36]  this little um hamburger menu at the
+[38:47.36]  very top left corner and then you hit
+[38:49.28]  settings so on the on the phone app you
+[38:51.36]  hit settings and it's going to say AI
+[38:53.44]  providers and when you click there uh
+[38:56.08]  you have three different options open
+[38:57.76]  router which is another uh API provider
+[39:01.04]  and you can also get access to pretty
+[39:02.60]  much every model there which is also
+[39:04.00]  very handy uh I think they give you some
+[39:06.00]  free credits but then you would uh put
+[39:07.92]  you know your credits there uh and then
+[39:09.80]  you have the local model and then you
+[39:11.08]  have custom backends so uh with the
+[39:13.68]  local model they actually can tell how
+[39:16.08]  much memory you have on your device and
+[39:17.80]  they'll actually have a little download
+[39:19.08]  button for those models the ones that
+[39:21.24]  are not available with the download
+[39:22.48]  button basically means you can't run
+[39:23.84]  that on your device because you don't
+[39:25.00]  have enough memory um to run them so
+[39:27.88]  uh these downloads are pretty big like 4
+[39:30.32]  gigabytes uh and some of them you know
+[39:32.60]  are several gigabytes so just depending
+[39:34.28]  on the space on your phone um so you can
+[39:36.36]  actually run the distilled llama 8b8 uh
+[39:39.96]  8bit mlx version um and I have the
+[39:43.64]  distilled Quin version at 7B um so it
+[39:46.40]  just depends on your oh that one's
+[39:47.96]  actually not compatible which one do I
+[39:49.48]  have downloaded so I think on mine let's
+[39:53.88]  see the one I have available is the Deep
+[39:56.76]  seek R1 from Apollo I think I have it
+[39:58.80]  from open router that's running so let's
+[40:02.32]  take a look here AI providers open
+[40:05.36]  router yeah so the the one that I have
+[40:08.92]  set up right now is from open router so
+[40:11.16]  open router will show you all the models
+[40:13.12]  I have you can select deep seek R1 from
+[40:15.24]  there which is awesome uh so you can
+[40:17.12]  have a conversation so this just
+[40:18.64]  requires me you know being connected to
+[40:20.36]  the internet we start a new chat you're
+[40:22.76]  like uh tell me more about options TR
+[40:27.96]  trading and so here you're still talking
+[40:30.76]  to the model uh but you're actually just
+[40:32.76]  using open router and so that's a little
+[40:34.92]  bit different than you know sending your
+[40:36.84]  stuff directly to deep seek uh and they
+[40:39.12]  should be able to do that it's possible
+[40:40.80]  that this model is busy or it's
+[40:42.40]  currently down that can happen so yeah
+[40:46.48]  that happens um yeah while that's going
+[40:49.28]  I think we could even start another new
+[40:50.48]  chat let's see is this model you can
+[40:53.40]  select a different model so
+[40:57.52]  let's see it's crazy how many models
+[40:59.80]  there are now there's so many yeah it's
+[41:03.52]  like how do you know which one does it I
+[41:05.40]  feel like you just go off Vibes like
+[41:07.48]  what's what's my friend telling me yeah
+[41:09.32]  like what's the real Vibes right now so
+[41:10.64]  the Vibes right now obviously R1 is like
+[41:12.52]  the real
+[41:13.72]  hotness people are are like totally into
+[41:16.08]  that right now um and it makes sense
+[41:17.68]  because you know reasoning uh at a much
+[41:19.88]  lower cost so um let's see
+[41:25.24]  um uh there's probably something go
+[41:27.68]  wrong with my API key or something so uh
+[41:30.20]  AI providers I can select the local
+[41:32.12]  model to run um you know I want to see
+[41:34.52]  if there's something small here that we
+[41:35.56]  can download so we could do yeah this
+[41:38.92]  dis still quen just for Just For Speed
+[41:40.96]  purposes we'll just download the
+[41:42.04]  gigabyte one so this is going to
+[41:43.56]  download uh wow that's really fast um
+[41:47.04]  the quen model 1.5b and so that'll Run
+[41:50.32]  Deep seek locally and so basically it's
+[41:52.24]  just downloading it directly from I
+[41:54.32]  think hugging face and then the model is
+[41:55.96]  being loaded on my phone
+[41:57.76]  and um this this is actually optimized
+[42:00.76]  to run on Apple Hardware or apple
+[42:03.16]  silicon so that's um you know one way
+[42:06.08]  that you can kind of take a look at it
+[42:08.08]  uh to run this thing and so what's nice
+[42:09.64]  yeah if if this phone runs out of
+[42:11.12]  internet or I need to ask some questions
+[42:12.56]  or do some stuff uh I now have I will
+[42:15.28]  have this R1 reasoning model that's a
+[42:17.52]  much smaller version to run on device
+[42:19.68]  and I think that's a another good point
+[42:21.60]  about AI That's running and like you
+[42:24.36]  don't always need the most powerful
+[42:25.72]  thing running for every single type of
+[42:27.64]  thing I think it's really important to
+[42:30.32]  understand different use cases you know
+[42:32.28]  because maybe you don't need that depth
+[42:33.68]  of reasoning you just need something
+[42:34.88]  that's really quick uh or you just need
+[42:37.00]  something that's really good at like
+[42:38.40]  Gathering lots of information and just
+[42:39.76]  telling you some topics or something
+[42:41.28]  like that uh and that could just be done
+[42:43.00]  really quickly so it's kind of like
+[42:45.12]  picking the right tool for the job uh
+[42:47.24]  and experimenting so um the we're at a
+[42:49.76]  good age today where we can actually get
+[42:51.84]  these models and experiment with them so
+[42:54.12]  now I should be able to select this guy
+[42:55.52]  and run it so let's go and hit done and
+[42:58.52]  start a new chat and then over here um
+[43:01.68]  we're going to go ahead and select the
+[43:03.00]  model so here we're going to type in uh
+[43:06.08]  oh yeah it already has it the top so you
+[43:07.64]  see this little icon that signifies that
+[43:09.16]  it's running locally and then we're
+[43:10.92]  going to hit
+[43:12.12]  cancel uh hit done okay great so now
+[43:15.80]  we're running with that local model and
+[43:18.20]  uh I think we're just using a default
+[43:19.56]  system prompt about it being Apollo and
+[43:22.20]  you're like yo tell me about options
+[43:26.64]  trading
+[43:28.16]  and it should basically start to cook so
+[43:30.68]  it's using my phone's power there and
+[43:34.12]  it's now thinking and so if we click
+[43:35.96]  this little drop down we'll actually see
+[43:37.24]  the reasoning tokens and so that's
+[43:40.68]  yeah I have reasoning on my phone no
+[43:43.88]  Internet completely running locally yeah
+[43:47.24]  2025 is
+[43:49.92]  insane yeah and imagine be able to run
+[43:52.20]  this on your watch like that'll just be
+[43:57.20]  because this is already showing its
+[43:58.64]  capability like we're doing this input
+[44:00.92]  if you're if you can make an app that
+[44:02.52]  can run on a watch all locally you know
+[44:05.52]  just think about like the transcription
+[44:07.32]  stuff right uh you have a very very
+[44:09.52]  lightweight model you send the audio you
+[44:12.08]  know from the watch you know especially
+[44:13.96]  of a loved one maybe they've fallen or
+[44:15.52]  something it can just turn on the the
+[44:17.48]  speaker and try to understand the
+[44:19.32]  situation uh and then if it listens to
+[44:21.44]  paramedics or something about asking
+[44:23.44]  questions and they don't really know
+[44:25.12]  maybe the watch can show hey this is
+[44:27.32]  here I'm going to show you the emergency
+[44:28.60]  card this person has for their
+[44:29.76]  medications or uh this is something
+[44:31.84]  that's happened in the last you know
+[44:33.48]  five minutes before this events or
+[44:35.28]  something um this is kind of the way
+[44:37.68]  that uh people think about designing uh
+[44:40.60]  apps with these models is trying to
+[44:42.20]  think about these use cases because now
+[44:43.64]  you have really powerful devices just
+[44:46.00]  all like on the size of your wrist that
+[44:48.60]  can run these models and the power of uh
+[44:50.56]  Apple's mlx infrastructure and also
+[44:52.88]  their uh AI technology is the fact that
+[44:55.44]  you know these These are really
+[44:56.52]  optimized to run these models um you
+[44:58.72]  know very small as we're seeing right
+[45:00.20]  now um so that thought for 49 seconds uh
+[45:03.04]  and it gets us this output uh yeah
+[45:05.28]  please excuse my small screen but uh
+[45:07.12]  we'll probably have a zoom in on this uh
+[45:08.84]  so for the edit so yeah yeah yeah that's
+[45:13.36]  that's pretty
+[45:14.40]  sweet so many startup ideas by the way
+[45:17.12]  like from from that alone and I also you
+[45:21.36]  know and and so many you know I love
+[45:23.28]  that I love that you shared that example
+[45:25.32]  of you know someone maybe following
+[45:27.04]  hurting themselves I think even
+[45:30.16]  coordinating with your your airpods um
+[45:33.64]  yes there's just a ton of opportunity
+[45:36.24]  there as well um
+[45:39.60]  translation you know not just pure
+[45:41.76]  translation but it's like someone is
+[45:43.64]  saying saying XYZ but what are they
+[45:46.80]  really saying you know what I mean oh
+[45:49.72]  maybe like imagine like negotiating in
+[45:51.96]  the future except you have like you know
+[45:54.64]  the the you know pretend you're a lead
+[45:56.60]  negot Ator as like almost you know a
+[46:00.44]  local AI llm that's helping you figure
+[46:02.88]  this out so there's just you know we can
+[46:04.64]  have a million ideas but it's just
+[46:05.96]  really exciting to see what that you
+[46:08.96]  know where this could go yeah I think
+[46:11.32]  that also goes to the point a little bit
+[46:13.08]  about what some of these models do so
+[46:15.08]  one thing I just learned very recently
+[46:16.92]  about uh GPT 4 and chat gpt's Omni
+[46:20.48]  models is the fact that this model's
+[46:22.72]  breakthrough a little bit different than
+[46:24.40]  R1 uh is the fact that it can actually
+[46:27.24]  understand audio and tone and all these
+[46:29.08]  extra implications that we don't know
+[46:30.56]  about um especially for negotiation like
+[46:33.00]  imagine if you can understand someone's
+[46:34.72]  breathing rate just from listening to
+[46:36.12]  the audio uh that's the capability of
+[46:38.20]  something like you know the 40 models
+[46:40.20]  with audio you just give it the audio
+[46:42.12]  and it's going to know tone it's going
+[46:43.56]  to know Cadence it's going to pick up
+[46:45.28]  things that we just normally don't think
+[46:46.72]  about but people who are maybe skilled
+[46:49.20]  negotiators can understand what those
+[46:51.48]  implications mean and then can say hey
+[46:53.76]  give me some outlier things every time I
+[46:55.40]  give this person a response you know it
+[46:57.60]  can answer in like milliseconds what the
+[46:59.36]  differences are and I've heard these
+[47:01.28]  terms of like micro expressions and if
+[47:03.68]  you have an omni model uh you can
+[47:05.80]  actually mimic these you know micro
+[47:07.96]  expressions and say okay this person is
+[47:10.04]  off when we ask them these types of
+[47:11.72]  things or changes their position and
+[47:14.24]  those are the things that you really
+[47:15.16]  can't get today with some of the you
+[47:17.24]  know current reasoning models but except
+[47:19.08]  for like the Omni models which is the
+[47:21.32]  you know 40 models uh and so it's going
+[47:24.40]  to be really exciting when they actually
+[47:25.80]  dropped 03 I think a lot of people are
+[47:28.84]  going to be taken by storm of like
+[47:31.36]  what's actually really going to come out
+[47:32.68]  from them it's going to be a really
+[47:34.32]  really big leap anything else you want
+[47:36.64]  to cover
+[47:37.92]  today uh I think this is a really good
+[47:39.96]  primer for folks to get started on the
+[47:42.16]  power of prompting uh and especially
+[47:44.12]  with these reasoning models just to get
+[47:45.64]  started so we covered uh being able to
+[47:48.68]  get started with prompting understanding
+[47:50.72]  where your data is going you know if
+[47:52.36]  you're using deep seek.com or using the
+[47:54.12]  apps that will go directly to China and
+[47:56.88]  and their restrictions and things that
+[47:58.64]  they have for uh your data privacy so
+[48:00.60]  just beware um I wouldn't personally be
+[48:02.84]  putting any personal information in
+[48:04.36]  there that you don't want exposed um and
+[48:06.72]  then there are other providers that you
+[48:08.20]  can use right now and other people are
+[48:09.68]  that are still spinning up at this very
+[48:11.00]  moment uh so for now fireworks open
+[48:13.92]  router uh Gro as far as inference uh and
+[48:16.84]  then we also covered here running the
+[48:18.56]  models locally so that you can actually
+[48:20.52]  you know run them on your phone uh using
+[48:23.12]  the Apollo app I was using it's it's a
+[48:24.88]  paid app but I find a lot of value from
+[48:27.08]  and I'm not sponsored or anything like
+[48:28.44]  that I just love the work that these
+[48:30.04]  people are doing uh and it's really good
+[48:31.84]  stuff you can connect to these endpoints
+[48:33.32]  with them uh and then the other part is
+[48:35.48]  running this through uh AMA locally on
+[48:38.12]  your Mac and using web UI uh with Docker
+[48:41.12]  and stuff so I think there's a lot to be
+[48:43.24]  taken um care of here as far as trying
+[48:46.08]  to use these models and and come up with
+[48:47.80]  different app ideas and uh if you have
+[48:49.92]  an idea just start to use the the
+[48:52.28]  playground to try to generate some
+[48:54.20]  prompts for it and see if you can get
+[48:55.56]  the output that you want uh and that
+[48:57.44]  could be the beginnings of your next
+[48:59.00]  multi-million dollar idea that you don't
+[49:00.52]  even know is there right so it's it
+[49:02.60]  could be hidden in PL sight and I think
+[49:04.76]  that's the power if you want to reach
+[49:06.36]  out to me you can just go to Ray
+[49:08.44]  fernando. and book some time uh we can
+[49:10.88]  have a conversation we can get you set
+[49:12.44]  up uh because some of the stuff is very
+[49:14.24]  cumbersome and it's just easier for me
+[49:15.48]  to walk you through this uh and so I'm
+[49:17.64]  available there as well uh you can find
+[49:19.52]  my YouTube channel Ray Fernando 1337 on
+[49:21.96]  YouTube uh feel free to check that out I
+[49:24.64]  do a lot of live streams where I check
+[49:26.20]  out new tech technology and try to play
+[49:28.00]  around with these AI models and try to
+[49:29.56]  discover what's going on and also try to
+[49:31.32]  bring on Experts to explain things a
+[49:33.68]  little bit more for us so um Greg such a
+[49:36.64]  pleasure to have me on the show this is
+[49:38.44]  really amazing you're a legend man thank
+[49:40.92]  you for coming on sh sharing sharing
+[49:43.56]  your insights here this has been super
+[49:46.00]  helpful um I thought it was helpful so
+[49:48.60]  if if people agree uh go go comment on
+[49:52.60]  YouTube I read and respond to almost
+[49:54.84]  every comment um like And subscribe for
+[49:58.28]  more of this in your feed and let us
+[50:01.44]  know if we should bring and when I say
+[50:03.12]  we it's me you know let me know if I you
+[50:05.76]  know should invite Ray back on again to
+[50:07.96]  show us more stuff I would certainly
+[50:09.56]  love to do that more in
+[50:11.20]  2025 um crazy times Ray uh this whole
+[50:15.36]  deep seek you
+[50:18.36]  know Title Wave is
+[50:21.72]  just yeah I'm glad that it's something
+[50:24.20]  is here to um like make more people
+[50:27.76]  aware that there's a lot of intelligence
+[50:29.76]  and how fast it's moving um and I I want
+[50:32.32]  to also add that like please don't be
+[50:34.84]  fearful or don't feel like you're left
+[50:36.84]  behind if you're just finding out about
+[50:38.80]  this you're not that far behind we're
+[50:40.84]  all actually still trying to understand
+[50:43.12]  what this intelligence can give us and
+[50:45.16]  so the prompts and the things that you
+[50:46.88]  develop is a good place to start uh and
+[50:49.60]  you know it doesn't have to feel
+[50:50.84]  complicated uh and and you know whatever
+[50:52.92]  you can get your hands on make sure you
+[50:54.12]  do that um and you know be aware of
+[50:56.32]  where your dat is going but at the same
+[50:57.80]  time play discover share share back with
+[51:00.76]  the community and definitely share any
+[51:02.76]  cool stuff that you've done in the
+[51:03.76]  comments for sure all right my man I'll
+[51:06.80]  see you later thank you so much take it
+[51:09.24]  easy thanks
+[51:11.48]  [Music]

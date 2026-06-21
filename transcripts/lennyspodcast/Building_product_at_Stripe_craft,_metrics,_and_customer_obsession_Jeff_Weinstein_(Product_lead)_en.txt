@@ -1,0 +1,3932 @@
+Title     : Building product at Stripe: craft, metrics, and customer obsession | Jeff Weinstein (Product lead)
+Video ID  : qbZQjprTnrU
+URL       : https://www.youtube.com/watch?v=qbZQjprTnrU
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 3923
+Saved at  : 2026-06-21 01:21:22
+------------------------------------------------------------
+
+[00:00.04]  watching you operate on Twitter you're
+[00:01.40]  just breaking this wall between the PM
+[00:03.56]  and the customer the moment the customer
+[00:05.36]  felt compelled enough to go out of their
+[00:07.76]  way to talk about some problem that's a
+[00:10.32]  unbelievable gift I will leave a meeting
+[00:12.52]  to just get one message back to them if
+[00:15.12]  you're text message friendly with five
+[00:17.52]  or 10 of those you are going to have so
+[00:19.92]  much direct signal that is infectious
+[00:22.16]  many people told me I need to ask you
+[00:23.40]  about picking matrics well what was the
+[00:25.08]  value that we're trying to produce for
+[00:26.28]  the customer and can we measure it from
+[00:27.96]  their perspective and okay how do you
+[00:29.80]  know you have product Market fit charts
+[00:31.68]  that showcase things are going up and to
+[00:33.44]  the right on one hand and then tweets on
+[00:35.92]  the other you started at Stripes
+[00:37.68]  something called study groups we show up
+[00:39.56]  four to eight people total pretend to be
+[00:42.32]  some company with some outcome problem
+[00:44.44]  rule one is you do not work at stri and
+[00:46.72]  Rule two is we're not here to solve any
+[00:49.04]  problems this is just about practicing
+[00:51.56]  empathy for the
+[00:56.00]  customer today my guest is Jeff
+[00:58.44]  Weinstein over the course course of his
+[01:00.36]  six plus years at stripee Jeff was the
+[01:02.60]  product lead for Stripes payment
+[01:03.88]  infrastructure teams where helped scale
+[01:05.68]  stripe payments to hundreds of billions
+[01:07.56]  of dollars in volume a year he also LED
+[01:09.76]  PMs and teams on a number of 0 to1 bets
+[01:12.48]  at stripe and most recently took on the
+[01:14.56]  scaling of stripe Atlas which as of the
+[01:17.48]  day this podcast launches allows you to
+[01:19.68]  incorporate a new company in a single
+[01:22.08]  day including handling 83b elections
+[01:25.00]  incorporation documents getting your EIN
+[01:27.36]  share purchases and all the things that
+[01:29.16]  used to take weeks or months before a
+[01:31.08]  company could begin operating at this
+[01:32.96]  point one in six new Delaware
+[01:34.92]  Corporations are started on stripe Atlas
+[01:37.72]  which blows my mind this episode ended
+[01:39.96]  up being the longest in my podcast
+[01:42.12]  history because I wanted to basically do
+[01:44.48]  an archaeology of an incredibly
+[01:46.64]  effective and admired product leader we
+[01:49.16]  spent the entire conversation digging
+[01:51.04]  deep into the many skills that Jeff has
+[01:53.68]  built that enable him to consistently
+[01:55.88]  build successful and beloved products we
+[01:58.60]  get into his go go go plus optimism
+[02:01.36]  long-term compounding philosophy of
+[02:03.40]  Building Products how to think about an
+[02:05.44]  operationalized product craft and
+[02:07.20]  quality he shares a popular program that
+[02:09.32]  he started at stripe called stripe study
+[02:11.12]  groups that I think you should steal we
+[02:13.08]  also talk about how to effectively talk
+[02:14.40]  to customers how to know if you have
+[02:15.76]  product Market fit for your new product
+[02:17.48]  how to pick great metrics for your team
+[02:19.40]  what he's learned about getting [ __ ]
+[02:20.56]  done at a big company also advice that
+[02:22.80]  he's gotten from the founders of stripe
+[02:24.64]  and so much more this episode is for
+[02:26.80]  anyone who's looking to level up their
+[02:28.32]  product building chops in every way if
+[02:30.76]  you enjoy this podcast don't forget to
+[02:32.48]  subscribe and follow it in your favorite
+[02:33.80]  podcasting app or YouTube it's the best
+[02:35.84]  way to avoid missing future episodes and
+[02:37.64]  it helps the podcast tremendously with
+[02:40.40]  that I bring you Jeff
+[02:45.16]  Weinstein Jeff thank you so much for
+[02:48.16]  being here and welcome to the podcast
+[02:50.16]  thank you Lenny of Lenny's podcast I was
+[02:52.76]  I wasn't I knew what to expect but it is
+[02:54.96]  fun to see the first name and the
+[02:56.60]  podcast all line up I really appreciate
+[02:58.76]  you asking so so I wanted to start with
+[03:01.16]  a quote that I found from you that I
+[03:02.64]  think gives a little perspective into
+[03:04.00]  how you think and how you approach the
+[03:05.04]  world so here's the quote very
+[03:06.64]  frequently I would do porly on test in
+[03:08.64]  school and then the professor would say
+[03:10.32]  very reasonably hey I think you should
+[03:12.28]  bump down a level to the previous
+[03:14.00]  semester's pace and you said uh I
+[03:16.92]  actually know that that's why I'm in
+[03:18.36]  this class I want to be in the class
+[03:19.88]  that I'm potentially the worst at this
+[03:23.04]  isn't how most people think this is how
+[03:24.68]  most people operate usually people want
+[03:25.96]  to get good grades they want to be at
+[03:27.24]  the top of their class clearly you have
+[03:29.08]  a different approach in a different
+[03:30.32]  mindset where did this come from for you
+[03:32.80]  and how did this shape the way you think
+[03:34.80]  about product and and the work that you
+[03:36.76]  do some of it was just the fact that I
+[03:38.88]  wasn't particularly good at the class
+[03:40.72]  and had to uh rationalize it for myself
+[03:42.60]  in some form so uh in retrospect that
+[03:45.28]  sounds kind of high futin but at the
+[03:47.08]  time I just wasn't particularly good at
+[03:48.44]  the classes I was in but I think it
+[03:51.08]  comes from growing up I went to a pretty
+[03:53.84]  hippie dippy K through2 School in
+[03:55.96]  Baltimore Maryland where we were really
+[04:00.36]  asked to think about why we were in
+[04:04.32]  school and to pick any of the courses
+[04:08.96]  that were of interest to us outside of
+[04:11.36]  AP programs or grades or any particular
+[04:14.96]  requirements you really got to choose
+[04:16.68]  your own path and I recall one
+[04:19.24]  particular class in high school uh which
+[04:22.36]  was you know sort of somewhat a science
+[04:25.72]  class but it was called The History of
+[04:27.64]  Science and we actually walked through
+[04:29.92]  and studied all of the at the time best
+[04:34.72]  understood ways the world worked in
+[04:37.08]  science but then later were turned out
+[04:38.76]  to be wrong right in the 1500s we
+[04:41.40]  believed X Y and Z in the 1600s believed
+[04:43.80]  a b and c just very confidently in 1500s
+[04:46.64]  we thought something and then in the
+[04:48.28]  1600s they thought something very
+[04:49.64]  different and so this class was quite
+[04:52.64]  impactful on me where we spent an entire
+[04:55.60]  year studying things that are not true
+[04:58.72]  and it was fascina ating and that
+[05:00.56]  particular teacher employed another
+[05:03.08]  trick on US during that class which was
+[05:06.20]  um they took the tuition fee of our
+[05:09.20]  school and divided it by the number of
+[05:11.36]  hours and wrote wrote the cost on a
+[05:13.40]  ticket and and then handed Us in the
+[05:16.00]  beginning of the year tickets for every
+[05:18.64]  single one of the classes and he would
+[05:20.08]  stand at the door and you would have to
+[05:22.16]  give him a ticket at the end of the
+[05:23.76]  class if he thought it was worth them
+[05:25.28]  worth like worth it and just like that
+[05:27.28]  practice of
+[05:29.92]  deep intellectual understanding of how
+[05:32.64]  people evaluated something at the time
+[05:35.36]  and choosing for yourself to spend the
+[05:38.20]  time on it by just like the physical act
+[05:40.20]  of handing that ticket to the teacher
+[05:43.76]  that really clicked for me and so when I
+[05:45.24]  got to college and there a real real
+[05:47.80]  College
+[05:48.76]  University people are coming from often
+[05:52.64]  quite more rigorous backgrounds of
+[05:55.12]  things that were true uh I was a bit
+[05:57.36]  unprepared and I remember actually like
+[05:58.84]  taking a microeconomics class that was
+[06:01.36]  quite Advanced and had a close friend
+[06:03.24]  and we studied exactly the same
+[06:04.68]  information we sat looked at the same
+[06:07.00]  cheat sheets we practiced the same
+[06:08.80]  quizzes we read the same books and he
+[06:10.72]  got the top grade in the class and I got
+[06:12.16]  the bottom and that's the from where
+[06:15.36]  that quote came from where the professor
+[06:16.68]  said I think you should bump potentially
+[06:18.84]  bump down I was like I I already know
+[06:20.20]  that stuff like I'm interested in this
+[06:21.92]  topic I'm going to try to improve but
+[06:24.08]  look just because I'm significantly
+[06:26.08]  worse than the other kids in the class
+[06:27.16]  that has like little to do with if I
+[06:29.00]  should leave and he was particularly
+[06:30.48]  cool with
+[06:31.52]  it this episode is brought to you by
+[06:34.32]  pendo the only all-in-one product
+[06:36.76]  experience platform for any type of
+[06:38.96]  application tired of bouncing around
+[06:41.04]  multiple tools to uncover what's really
+[06:43.12]  happening inside your product with all
+[06:45.20]  the tools you need in one simpl to ous
+[06:47.28]  platform pendo makes it easy to answer
+[06:49.56]  critical questions about how users are
+[06:51.64]  engaging with your product and then turn
+[06:53.64]  those insights into action all so you
+[06:55.88]  can get your user to do what you
+[06:57.72]  actually want them to do first pendo is
+[07:00.16]  built around product analytics seeing
+[07:02.12]  what your users are actually doing in
+[07:03.68]  your apps so that you can optimize their
+[07:05.72]  experience next pendo lets you deploy
+[07:08.24]  inapp guides that lead users through the
+[07:10.44]  actions that matter most then pendo
+[07:13.04]  integrates user feedback so that you can
+[07:15.16]  capture and analyze what people actually
+[07:17.12]  want and the new thing in pendo session
+[07:19.72]  replays a very cool way to visualize
+[07:22.08]  user sessions I am not surprised at all
+[07:24.72]  that over 10,000 companies use it today
+[07:27.60]  visit pendo.io
+[07:29.48]  menty to create your free pendo account
+[07:31.28]  today and start building better
+[07:32.92]  experiences across every corner of your
+[07:35.04]  product PS you want to take your product
+[07:37.48]  LED know how a step further check out
+[07:39.44]  peno's lineup of free certification
+[07:41.36]  courses led by top product experts and
+[07:43.84]  designed to help you grow and advance in
+[07:45.32]  your career learn more and experience
+[07:47.40]  the power of the pendo platform today at
+[07:49.48]  pendo.io
+[07:52.20]  Lenny
+[07:55.16]  pend today's episode is brought to you
+[07:57.64]  by cycle the AI power feedback platform
+[08:00.52]  for product teams is your customer
+[08:02.60]  feedback a tangled mess of slack threads
+[08:05.32]  survey responses and overflowing inboxes
+[08:08.32]  wish that you could know what your
+[08:09.80]  customers really need cycle unifies all
+[08:12.88]  of your customer interactions from
+[08:14.36]  support chats to user research gong
+[08:16.76]  calls and App Store reviews into one
+[08:19.12]  neat collaborative space Cycles AI then
+[08:22.00]  extracts actionable insights on
+[08:24.08]  autopilot cycle will learn what you're
+[08:26.48]  building so that it can label incoming
+[08:28.24]  feedback automatically that means you'll
+[08:30.36]  get a full voice of customer report
+[08:32.32]  without manually triaging feedback then
+[08:34.76]  simply you cycle ask to dig deeper into
+[08:37.16]  any topic and generate custom AI
+[08:39.32]  generated summaries across your entire
+[08:41.28]  feedback repository what makes cycle
+[08:43.72]  different is the way that it lets you
+[08:45.12]  close feedback loops in each release
+[08:47.48]  feedback is not used just as a way to
+[08:49.80]  prioritize what to build but also as a
+[08:51.88]  tool that creates trust with all
+[08:53.96]  stakeholders sign up for a free cycle
+[08:56.24]  trial today at cycle.app Lenny
+[08:59.72]  and put your feedback on autopilot
+[09:02.08]  that's
+[09:03.00]  cycle.app
+[09:05.92]  Lenny it's really interesting that you
+[09:07.84]  went to this liberal artsy hidp school
+[09:10.24]  as you describe which a lot of people
+[09:11.80]  bash on like why spend all this college
+[09:13.68]  money and time on a liberal artsy kind
+[09:16.28]  of education and you end up being really
+[09:19.28]  successful in a very technical highly
+[09:21.16]  analytical data driven company and it's
+[09:23.40]  interesting that that experience still
+[09:25.60]  helped you succeed in this other path it
+[09:27.92]  it did take a change though because M I
+[09:29.88]  started in English was my selected major
+[09:34.12]  in school but then I kept playing with
+[09:36.12]  computers and I kept liking math and I
+[09:38.76]  looked at the roles of the you the
+[09:41.08]  backgrounds of the people who were
+[09:42.28]  running the types of companies I loved
+[09:44.44]  at the time Facebook was getting super
+[09:46.52]  phenomenally successful Apple was
+[09:47.88]  already on their on their up and up
+[09:49.76]  again and all everyone everyone who was
+[09:52.08]  leading those places had technical
+[09:53.24]  backgrounds and I lik computers lot so I
+[09:54.72]  added computer science as a as an
+[09:56.52]  engineering degree Midway through school
+[09:58.64]  so and having to take those I had to
+[10:01.00]  take the real science classes with the
+[10:02.48]  Premed kids and the rest of it and I did
+[10:04.52]  similarly poorly but I I did end end up
+[10:07.92]  with a computer science degree and a
+[10:09.20]  liberal arts degree so it was it was a
+[10:11.80]  journey but I had to make a pretty big
+[10:13.64]  switch in the middle to like get on that
+[10:15.60]  path I asked you if there was uh one
+[10:18.32]  thing that you'd love to get across in
+[10:21.44]  this podcast asked you what would it be
+[10:23.80]  and here's what you said here's the
+[10:25.20]  first item on this list that you sent me
+[10:27.52]  quoting go go go as that plus optimistic
+[10:30.60]  comma long-term compounding approach can
+[10:34.20]  you just talk about what you mean by
+[10:35.92]  that yeah there's two things going on
+[10:37.44]  here
+[10:39.40]  so i i s of see the world as immediately
+[10:42.84]  we need we have just such opportunity to
+[10:44.76]  take action in front of us we can be
+[10:47.48]  optimistic and go go go as soon as
+[10:49.92]  possible I think that a lot of life
+[10:53.08]  is how you know you get as much
+[10:55.12]  Furniture as you H as you room in the
+[10:57.48]  house we will do the work the night
+[11:01.24]  before it's due so let's just make it
+[11:04.24]  due tomorrow can we turn tomorrow into
+[11:06.44]  today it's so just
+[11:08.08]  optimistically seeing if we can just
+[11:10.76]  inject energy to go go
+[11:13.08]  go has produced surprising results and I
+[11:16.12]  think ignites in other people that same
+[11:18.52]  interest and then it kind of feeds off
+[11:20.04]  each other and that's I think really in
+[11:21.76]  my bones from growing up and then I
+[11:24.96]  added over time had to learn this longer
+[11:27.88]  term comp founding more strategic
+[11:31.64]  mindset where some of the things we want
+[11:34.28]  to accomplish be it at my startups in
+[11:36.96]  the past or or at stripe they can't be
+[11:40.00]  solved in the afternoon they're going to
+[11:43.20]  require layers of infrastructure and
+[11:46.16]  services and applications and UI and
+[11:49.16]  Partnerships that really look like that
+[11:52.12]  kind of Iceberg drawing you see where
+[11:53.72]  you just see the top but then there's
+[11:54.88]  the whole thing underneath and I've had
+[11:56.92]  to learn over time to pay
+[12:00.52]  my instinct of like let's get it done
+[12:02.24]  today let's move forward let's let's see
+[12:04.12]  what we can get done let's make some
+[12:05.32]  mistakes let's try it out with where are
+[12:08.80]  we going what needs to be true over time
+[12:11.28]  where can we always invest what what
+[12:13.88]  what will we sort of never regret
+[12:15.48]  spending time in we'll never regret
+[12:17.16]  spending time making the latency of our
+[12:19.00]  payments apis at stripe faster we'll
+[12:21.40]  never regret uh making it more reliable
+[12:25.28]  to send 83 B- elction mails to the IRS
+[12:27.68]  like we will never regret those things
+[12:29.20]  so let's just always
+[12:30.64]  compound those capabilities over time
+[12:33.00]  then the trick is like how do you mix
+[12:34.76]  this go go go attitude with a long-term
+[12:37.36]  compounding and that's something I still
+[12:39.24]  struggle with but I try to purposely
+[12:42.24]  balance it more than I used to it's such
+[12:44.48]  a good way of summarizing just how to be
+[12:46.64]  successful in a lot of things go go go
+[12:48.60]  ASAP stay optimistic focus on long-term
+[12:51.64]  compounding growth is there an example
+[12:54.72]  of that in action I I know we're going
+[12:56.48]  to talk about Atlas a bunch but I guess
+[12:57.84]  is there an example of that working for
+[13:01.20]  you or a product you worked on I work at
+[13:04.00]  stripe which is a infrastructure company
+[13:06.80]  we build things that help businesses do
+[13:09.00]  online Commerce in various forms and
+[13:11.16]  I've had a few roles at stripe I'm in
+[13:13.72]  our beautiful office here in South San
+[13:16.52]  Francisco one of which was was the
+[13:20.24]  product person that helped us decide how
+[13:23.40]  we're going to go Global and how we're
+[13:25.64]  going to offer multiple ways for people
+[13:27.36]  to pay it turns out there's more than
+[13:29.64]  just credit cards in the world there's
+[13:31.28]  small hundreds of ways that people will
+[13:32.96]  naturally want to pay for things online
+[13:34.72]  and as a business you're going to of
+[13:36.08]  course just want to accept whatever it
+[13:38.16]  is people want to pay with and for the
+[13:41.44]  first seven or eight years of stripe
+[13:43.96]  well prior to my my being here you know
+[13:46.84]  the the
+[13:49.68]  incremental country ads and the
+[13:52.04]  incremental new payment methods was
+[13:54.16]  relatively flat over time and that
+[13:59.68]  was surprising to all of us who worked
+[14:01.72]  here because the world wanted it and we
+[14:03.48]  had a lot of people working on it and we
+[14:05.12]  were working very hard but it wasn't
+[14:08.64]  producing returns in the way that we
+[14:10.84]  wanted and so actually the optimistic as
+[14:13.20]  soon as possible go go attitude was not
+[14:14.88]  working right no matter how much energy
+[14:16.76]  we poured into building Thailand payment
+[14:19.76]  methods or UK bank transfers or uh you
+[14:23.28]  know an in-person payment system in
+[14:25.32]  Latin America we just like couldn't rack
+[14:27.88]  up points and get it done
+[14:29.60]  so we had to step back and say well what
+[14:31.40]  is the world going to look like in 10
+[14:33.04]  years what was going to need to be true
+[14:35.32]  and how can we start to go go there now
+[14:37.44]  which meant going a lot slower building
+[14:41.52]  internal platforms sending people around
+[14:44.12]  the world to start to build these
+[14:45.80]  payment methods up uproot their lives
+[14:48.28]  pay for their Apartments get them on
+[14:49.64]  airplanes start using these payment
+[14:51.56]  methods actually in the world and so it
+[14:53.20]  really like our line Flatline for a
+[14:54.92]  while and we're like okay is this
+[14:56.04]  strategy working is it not working but
+[14:57.80]  then over time we start to see it switch
+[14:59.72]  to nonlinear again and go from whatever
+[15:02.16]  it was 10 payment methods at the time
+[15:03.60]  and now stripe accepts over 100 so we
+[15:05.64]  got to like 50 really quickly and then
+[15:07.24]  kind of like skyrocketed to 100 and I
+[15:10.88]  remember there being a meeting where we
+[15:12.04]  said well maybe we should just like lock
+[15:13.48]  everyone in the basement and see if we
+[15:14.84]  can get from 10 to 50 that would be you
+[15:17.36]  know the intensity startup go go go
+[15:19.64]  attitude but we looked at the individual
+[15:22.12]  components of what it meant to get this
+[15:24.12]  done and how how long we wanted this to
+[15:26.24]  be true for and we had to go a lot
+[15:28.00]  slower so that was like a very formative
+[15:32.08]  decision where you had to mix the go go
+[15:35.24]  go with the long-term
+[15:37.96]  compounding awesome okay so let's start
+[15:40.60]  to delve deeper into some of the
+[15:43.20]  specific skills that I hear you're
+[15:44.48]  incredible at and that I've seen you be
+[15:45.92]  incredible at on Twitter and and
+[15:47.92]  Linkedin and things like that so the
+[15:49.40]  first is craft craft and quality I'm
+[15:52.68]  told by many people that you have a very
+[15:55.08]  strong uh obsession with craft and user
+[15:58.28]  experience in quality and even more so
+[16:01.52]  I'm told that you teach people at stripe
+[16:03.40]  how to be obsessed with craft and
+[16:04.92]  quality and these your experience in a
+[16:06.40]  very systematic way I feel like this
+[16:09.00]  something a lot of people are starting
+[16:10.96]  to realize is really important and or
+[16:12.92]  are trying to get better at either
+[16:14.72]  personally or at their company so first
+[16:16.48]  of all let me just ask why is why is
+[16:18.08]  this so important to you why do you
+[16:19.12]  think craft and experience and quality
+[16:21.84]  is so important why do you put so much
+[16:23.44]  emphasis on it yourself I think I'm
+[16:25.20]  really working backwards from failures
+[16:27.84]  in the past
+[16:29.48]  and avoiding them and so maybe just a
+[16:31.64]  quick
+[16:33.56]  story I had a I started a company
+[16:36.08]  several years ago based on just a
+[16:37.96]  personal pet peeve of mine uh which was
+[16:41.04]  I was a SQL analyst many of you
+[16:43.24]  listening might have written sequel in
+[16:45.12]  the past maybe the robots write the
+[16:46.40]  squel for you now but still need to
+[16:48.12]  write a little squel yourself and every
+[16:50.48]  single time I wrote a squl query I
+[16:53.48]  wanted to run the same subsequent
+[16:55.16]  analysis I wanted great Version Control
+[16:57.48]  I wanted all the cool stuff that GitHub
+[17:00.24]  had for code but in a in in but for
+[17:03.92]  writing data code and so my friends and
+[17:06.72]  I built a little python tool which you
+[17:08.92]  know basically let you run R style
+[17:12.32]  queries it lets you draw uh charts and
+[17:15.72]  pivot tables quickly and sharing all
+[17:17.76]  sort of all this Mo modern SAS
+[17:21.40]  application stuff but applied to SQL a
+[17:24.20]  few years ago
+[17:26.52]  and we turned that into a company we got
+[17:29.40]  some progress but then there was this
+[17:31.00]  moment one day where we had maybe a
+[17:34.88]  couple hundred
+[17:36.28]  customers and we had an error where we
+[17:39.76]  basically by accidentally shut down the
+[17:41.68]  service and it was sort of bricked for
+[17:44.12]  10 or 20 minutes and at the time we were
+[17:48.68]  all kind of hustling in our little dinky
+[17:50.96]  office to get the application back
+[17:52.60]  online and we really kind of were proud
+[17:55.32]  of ourselves about how reasonably
+[17:57.44]  quickly we did and people went back to
+[18:00.28]  using it it wasn't a super long outage
+[18:02.96]  and we didn't lose any data we're just
+[18:04.68]  like kind of high-fiving each other and
+[18:06.16]  we went about our day and about a year
+[18:09.12]  later I realized that that was a I
+[18:11.56]  missed a huge moment that I should
+[18:14.80]  have pounced on which is that during
+[18:17.88]  those 20 minutes our customers weren't
+[18:22.20]  Furious they weren't emailing us like
+[18:25.80]  crazy they weren't texting us they
+[18:27.56]  weren't trying to find us on Google Maps
+[18:29.48]  and knock on our door and say hey I need
+[18:32.20]  this thing back online immediately we
+[18:34.24]  heard a couple comments from them it was
+[18:37.32]  little
+[18:38.20]  murmur and I didn't realize at the time
+[18:40.28]  like that was the signal that I did not
+[18:42.12]  like we did not have product Market fit
+[18:44.44]  and I ended up wasting many more years
+[18:47.36]  on that project and wasting is a sort of
+[18:49.32]  big word we built an amazing software
+[18:51.08]  people liked it we were able to sell the
+[18:52.56]  company it it it help it helped many of
+[18:55.68]  us learn how to really build software
+[18:58.56]  but I'm I'm really trying to avoid that
+[19:00.44]  situation again and I think craft is
+[19:03.96]  kind of
+[19:05.12]  a dessert that you get after the meal of
+[19:09.36]  does your thing solve a real problem in
+[19:11.88]  the world and are people clamoring
+[19:15.48]  needing it badly and that's really my
+[19:18.56]  obsession is in finding problems in
+[19:21.80]  which people will pause their entire day
+[19:25.44]  to solve they will leap through the
+[19:27.72]  computer to to be like oh my God I have
+[19:30.48]  that problem do you have a solution and
+[19:32.72]  if you you know focus on that style of
+[19:36.04]  product development and we can get into
+[19:38.32]  just H H how do you kind of like listen
+[19:41.12]  for that and then turn that into
+[19:43.40]  product later you might get the
+[19:45.84]  opportunity to really provide craft and
+[19:48.64]  beauty and touches and moments and
+[19:50.88]  Delight but certainly there is no amount
+[19:53.44]  of craft there's no amount of beauty
+[19:55.20]  there's no amount Delight or touches you
+[19:56.76]  can add to a thing that will solve the
+[20:01.80]  problem we had at our at our startup
+[20:03.48]  which is that people didn't really need
+[20:05.16]  this and that's sort of like the biggest
+[20:07.04]  error is like picking something in which
+[20:08.88]  people don't really need it and then
+[20:11.00]  going through these practices of trying
+[20:12.28]  to like make it great when maybe it
+[20:14.40]  shouldn't exist in the first place I
+[20:16.24]  think a lot of people see all these
+[20:17.92]  tweets and messages about just like
+[20:19.48]  obsessed with the craft of what you're
+[20:21.92]  building and you can easily lose sight
+[20:24.52]  of nobody nobody even cares about what
+[20:27.40]  you're building it could the most
+[20:29.12]  incredible experience ever designed but
+[20:31.32]  if it's not something anyone ever wants
+[20:33.52]  it doesn't really matter people don't
+[20:34.96]  really get out of bed for their second
+[20:36.80]  problem right they get out of bed for
+[20:38.64]  their first problem and you have
+[20:40.44]  to carefully listen and not Pitch your
+[20:45.40]  customer or your prospective customer as
+[20:47.00]  you're trying to trying to figure this
+[20:48.24]  out and I think this advice not even
+[20:50.00]  advice just style applies to small
+[20:52.24]  companies big companies anyone which is
+[20:56.28]  people don't want to be pitched you know
+[20:58.40]  I I'm sometimes on a uxr call with a
+[21:00.96]  very well-meaning person or a Founder
+[21:03.32]  who has a new product that they
+[21:05.76]  want advice on or they want uh to find
+[21:10.32]  customers and the first thing that they
+[21:12.76]  start talking about when we get on the
+[21:14.04]  call is hi I'm the CEO of X Y and Z
+[21:17.92]  company we do one two and three I want
+[21:20.44]  to show you a demo it's
+[21:23.00]  like hold up uh I'm I'm the customer I
+[21:28.16]  have
+[21:30.44]  like what a wasted opportunity you
+[21:32.00]  you've kind of you you've just done here
+[21:33.84]  I have so many problems how you're sort
+[21:36.04]  of guessing ahead of time what is my top
+[21:39.00]  problem and now that you've anchored and
+[21:41.56]  limited to the pitch you're you're going
+[21:43.76]  to miss you prent very likely going to
+[21:46.12]  miss the burning problem that they have
+[21:48.80]  on the top of their on the like on the
+[21:50.96]  top of their mind and they're you know
+[21:52.28]  it's not the customer's job to interrupt
+[21:53.76]  you and say hey could you stop your
+[21:55.28]  pitch like I want to tell you about my
+[21:57.04]  my top problem and you could sort see
+[21:58.88]  this down the stream which then
+[22:00.72]  companies who launch things put craft uh
+[22:04.60]  have a have a great launch raise money
+[22:06.80]  are then like later
+[22:08.44]  gone right and it's because they built
+[22:10.96]  something that wasn't solving a burning
+[22:13.36]  need and I think you can kind of stem it
+[22:15.56]  all the way back to they were just
+[22:17.36]  pitching rather than sitting in silence
+[22:20.20]  and just waiting for their customer to
+[22:24.44]  just open their heart out about what's
+[22:27.20]  the most burning thing and sometimes
+[22:29.24]  I'll I'll prompt our customers I'll just
+[22:31.24]  I'll say hey do you mind just opening up
+[22:32.56]  your email like what what's in there or
+[22:35.92]  if you weren't talking to me right now
+[22:37.24]  what would you be working on or hey last
+[22:40.04]  week what what what grind what grinded
+[22:42.32]  your gears what like what are you not
+[22:43.48]  looking forward to or magic wand like
+[22:45.64]  what do you wish we you could just like
+[22:47.16]  have off your plate immediately forget
+[22:48.64]  forget stripe forget about thing work on
+[22:50.48]  just in your whole life like what is it
+[22:54.04]  that you do not want to be doing or a
+[22:57.24]  massive opportunity you wish was just
+[22:59.48]  one door away
+[23:01.72]  and it's a little awkward because they
+[23:04.32]  don't know why you're asking that kind
+[23:05.28]  of question but then you just sit there
+[23:07.12]  in silence and for the most part if you
+[23:10.04]  have amazing customers who are smart and
+[23:12.12]  ambitious and are trying to build their
+[23:13.68]  own business they're going to want to
+[23:15.68]  offload their hardest thing to somebody
+[23:17.36]  else if you've earned trust along the
+[23:19.92]  way and certainly not pitching is a
+[23:21.24]  great way of earning trust you're just
+[23:23.36]  listening we we've we've learned a lot
+[23:25.36]  at Stripe from that and that's where you
+[23:26.44]  can start to find adjacencies like well
+[23:28.56]  hey I don't know if stripe could you
+[23:30.04]  know really help me with this but it
+[23:31.68]  wouldn't it be cool if if uh we could
+[23:34.68]  identify if the person signing up on our
+[23:37.40]  site like wasn't fraudulent or is who
+[23:40.20]  they say they are or isn't a bot or is
+[23:42.52]  are they really a dog on the internet
+[23:44.16]  like huh we keep hearing this as the
+[23:46.12]  major complaint from all of our
+[23:47.64]  customers but like we're not an identity
+[23:50.04]  company it's like well I guess now we
+[23:53.16]  are because all of our customers who are
+[23:55.16]  trying to build their business like all
+[23:57.16]  have this problem and so
+[23:59.04]  so via silence you can just create your
+[24:02.60]  road map pretty quickly and drop a lot
+[24:05.48]  of the long uxr long survey long build
+[24:12.08]  cycle
+[24:14.08]  approach so I love where we're going
+[24:16.12]  with this this is where I was going to
+[24:17.16]  actually talk about next is just uh your
+[24:19.32]  ability to talk to customers and use
+[24:21.64]  research it feels very unique watching
+[24:24.08]  you operate on Twitter you're just like
+[24:26.12]  sharing your email constantly uh on
+[24:28.64]  calls with people constantly there's
+[24:30.12]  this like you're like breaking this wall
+[24:33.32]  between that a lot of people imagine
+[24:34.76]  there is between the PM and the lead of
+[24:37.40]  a team and the customer like you're not
+[24:39.44]  relying us research you're not waiting
+[24:41.36]  for someone else to do this work for you
+[24:43.96]  uh talk about just why and how you do
+[24:46.92]  this because I think there's so much to
+[24:48.32]  learn from just how you operate in
+[24:50.20]  finding opportunities picking problems
+[24:51.76]  to solve by talking to customers it's
+[24:53.92]  where the business comes from as
+[24:55.80]  customers you know it's not a long
+[24:59.24]  shot um hypothesis about why to talk to
+[25:03.36]  them it's like if they love your stuff
+[25:06.24]  they will tell their friends and pay
+[25:08.00]  fair prices for the
+[25:11.32]  product we're so fortunate through the
+[25:14.36]  internet
+[25:16.04]  that people kind of announce themselves
+[25:19.28]  as having as being interested in a topic
+[25:22.08]  sometimes they are interested in it by
+[25:24.44]  posting on Reddit a long thread or a
+[25:27.92]  screen screenshot of a customer service
+[25:29.88]  interaction that bugged them or hopeful
+[25:33.92]  that from their dorm room in country X
+[25:38.36]  someone else in the world has solved the
+[25:40.12]  same problem and the internet has given
+[25:42.48]  us
+[25:43.52]  all this absolutely magical Forum that
+[25:47.28]  you can just yell out the
+[25:49.76]  window and then billions of people could
+[25:52.56]  just like could could actually listen to
+[25:54.56]  what you said out the window now that's
+[25:55.76]  not all the time true for all people all
+[25:59.04]  situations
+[26:01.24]  but dramatically more true now than ever
+[26:03.96]  before in human history and so the fact
+[26:06.00]  that people wouldn't be listening to
+[26:07.88]  their customers and and
+[26:10.64]  really jumping through the computer to
+[26:13.08]  talk to them surprises me it's like they
+[26:15.52]  have like I'm I always sometimes think
+[26:17.12]  do they have some other strategy are are
+[26:19.48]  they so confident in what they're
+[26:22.20]  building that they don't need to hear
+[26:25.04]  directly from the people who will be
+[26:27.08]  using it and I think some of it is my
+[26:29.56]  own fear that I'm going to make the same
+[26:33.00]  mistake I've made in the past which is
+[26:34.36]  build something that people like they're
+[26:37.12]  using but isn't solving a burning enough
+[26:40.96]  problem such that they're going to stop
+[26:43.20]  their day they're going to tell their
+[26:44.52]  friends we're going to be able to
+[26:46.20]  sustain the company economically over a
+[26:48.96]  long period of time and that really just
+[26:50.64]  comes from hearing people's most burning
+[26:53.00]  problems and then the jumping through
+[26:54.88]  the the the just jumping through the
+[26:57.28]  computer and talking to them takes a
+[26:59.80]  little bit of of nervous G gumption you
+[27:02.72]  know kind of like walking up to a person
+[27:04.20]  at a bar Co cocktail party and saying H
+[27:07.20]  hi my name is Jeff it it can be a little
+[27:09.56]  awkward but then you get it it's kind of
+[27:11.52]  a rush once it starts to work and once
+[27:14.04]  you get the iterative loop that they're
+[27:18.20]  excited to talk to you they have
+[27:20.20]  problems they see you as a
+[27:22.04]  trusted not salesy not pitching not
+[27:26.44]  narrow-minded to just my my product and
+[27:29.16]  my position but I'm here to hear about
+[27:31.44]  your your whole Pro all of your problems
+[27:33.56]  and see where we can help not promising
+[27:35.68]  we can help solve everything but let's
+[27:37.16]  listen that is infectious both between
+[27:39.88]  the customers and internally and so I'm
+[27:42.32]  able to
+[27:43.48]  bring more people into that practice at
+[27:46.52]  stripe I'm able to quickly grab an
+[27:48.92]  engineer and hop on a call I can forward
+[27:52.40]  a a message over to a slack group and
+[27:55.92]  they know that because the customer
+[27:58.28]  speaking directly it somewhat trumps
+[28:00.36]  everything that's happening during the
+[28:01.60]  day you know we we could go to our
+[28:03.04]  meeting where we're going to guess
+[28:04.04]  what's going to the customer wants or we
+[28:05.72]  could talk to them directly uh and you
+[28:09.76]  have to use a little bit of art to
+[28:12.72]  decide which customers you want to
+[28:14.72]  listen the closest to but even at
+[28:17.96]  Stripes scale where we're dealing with
+[28:20.20]  many millions of businesses and many
+[28:22.36]  hundreds of millions of consumers on the
+[28:25.16]  other end of those businesses you can
+[28:28.12]  pattern match relatively quickly what
+[28:29.80]  are the styles of customers that
+[28:32.68]  represent where the world is going the
+[28:35.20]  most ambitious the most technical the
+[28:37.40]  fastest growing the most detailed and
+[28:40.24]  you don't need 10,000 of those people to
+[28:43.04]  talk to if you're text message friendly
+[28:46.32]  with five or 10 of those you are going
+[28:49.12]  to have so much direct signal about
+[28:51.80]  where to go that you kind of forget how
+[28:55.88]  you did it in the past I love so I'd
+[28:58.80]  love to learn more about these tactics
+[29:00.56]  that You' found helpful so you've shared
+[29:02.88]  this idea of Silence talking to someone
+[29:05.16]  and just being silent and I forget the
+[29:07.76]  phrase used but just like ideas emerge
+[29:09.56]  like your whole road map can emerge from
+[29:10.96]  that silence so let me share a few of
+[29:12.48]  the things you shared so far and I'm
+[29:13.44]  curious what else two is tweeting just
+[29:15.64]  like hey I'm looking to improve Atlas
+[29:17.52]  right now what bugs do you have here's
+[29:19.20]  my email address uh you talked about
+[29:21.16]  text messaging you just like hey can I
+[29:23.04]  get your number and I'll just text you
+[29:24.28]  when I have questions if there's
+[29:25.84]  anything else to add to these that'd be
+[29:27.20]  awesome and then what else have you
+[29:28.48]  found just like ways to actually get to
+[29:30.72]  a customer and find opportunities that
+[29:33.04]  are important speed is an important one
+[29:37.04]  which is red just reducing the time
+[29:41.16]  between the moment the customer felt
+[29:43.76]  compelled enough to go out of their
+[29:46.48]  way to talk about some problem they're
+[29:49.92]  busy there's snacks to eat they have
+[29:53.40]  families they have other things to do
+[29:55.76]  there's a lot going on in the world a
+[29:57.68]  lot
+[29:59.28]  your dumb
+[30:00.76]  product it's amazing that they would
+[30:03.08]  spend any of their time discussing it at
+[30:05.56]  all I mean most of the time if you don't
+[30:07.20]  like something you just move along you
+[30:09.84]  just apathetically silently move forward
+[30:13.48]  in the world and so the fact that
+[30:14.68]  someone took their finite time to
+[30:18.92]  succinctly with
+[30:21.20]  curiosity communicate to the world or
+[30:23.40]  you about your product that's a
+[30:25.48]  unbelievable gift that should be
+[30:29.24]  you know p0o alert level intensity and
+[30:34.40]  so I will leave a meeting I will CH
+[30:38.56]  change what I'm doing to just get one
+[30:41.52]  message back to them even if it's hey I
+[30:44.44]  got this I'm about to go to dinner can I
+[30:47.36]  hit you up tomorrow you're like oh yeah
+[30:48.84]  thank you awesome like I can't even
+[30:50.36]  believe you responded that puts us in
+[30:52.24]  the camp of on the right trajectory
+[30:54.64]  where they're going to feel that they
+[30:55.84]  have a almost Secret portal between this
+[30:59.56]  big brand of a company and another human
+[31:02.20]  who's just actually curious what's going
+[31:04.40]  on that's night night and day and it's
+[31:06.96]  also like fun fact tip when people are
+[31:09.80]  really hot on an issue and it could blow
+[31:11.84]  up on social or they're going to start
+[31:14.60]  becoming a
+[31:16.04]  detractor we make mistakes we have SLA
+[31:19.40]  breaches we have
+[31:21.68]  errors you're going to want to get on
+[31:23.48]  that stuff fast and in those situations
+[31:26.32]  I
+[31:28.36]  my bar for where like for how we will
+[31:30.16]  respond to those folks is not to just
+[31:31.64]  sort of solve the problem but is to turn
+[31:33.96]  them into a promoter and most of the
+[31:36.52]  time were able to even if there was a
+[31:39.12]  pretty relevant issue I remember one
+[31:40.64]  time in Atlas um we had this bug in
+[31:44.76]  which for a handful of our legal docs
+[31:49.64]  they were handing out let's say 25
+[31:51.60]  shares rather than 25% of the shares we
+[31:54.24]  dropped the percentage sign and
+[31:57.16]  thankfully a a Founder noticed this in
+[32:00.36]  the docs and and tweeted about it I was
+[32:02.20]  like my heart like like paused you know
+[32:04.84]  and I was like oh no this could be a Ser
+[32:06.48]  really serious issue and we're able to
+[32:07.72]  fix it and regenerate the documents
+[32:09.92]  relatively quickly for everyone that was
+[32:12.08]  impacted and I was thinking to myself
+[32:14.48]  wow we really like let this person down
+[32:17.04]  we have one job to do which is to get
+[32:18.64]  their company right and we didn't and
+[32:21.04]  that person was incredibly gracious
+[32:24.16]  about the situation and said Anytime you
+[32:28.32]  want me to just read your docs be happy
+[32:30.04]  to I have a law degree I care about this
+[32:33.16]  topic I want to brainstorm with you
+[32:35.00]  about ways that Atlas could do more
+[32:37.08]  document Creations like wow I can't
+[32:39.32]  believe I was in this sort of Defense
+[32:41.24]  position and now we've gained a friend
+[32:45.04]  in the world who can be eyes and ears
+[32:46.72]  and brainstorm with us and we the team
+[32:48.84]  maintains a really close relationship
+[32:50.24]  with that person as they do with many
+[32:51.44]  many many Founders who use Atlas And so
+[32:53.40]  just again we we're so quick to put the
+[32:57.92]  outside world in this other camp where
+[32:59.92]  we need to touch it with kid gloves and
+[33:02.64]  treat it as a Big Blob and a and a
+[33:06.28]  cohort and a statistic when it is a
+[33:08.60]  human with a problem who likes snacks
+[33:10.80]  who is busy and it's fun to do and it
+[33:14.28]  turns out to be an incredibly easy fast
+[33:17.24]  way to figure out what to build there's
+[33:20.24]  a bunch of stuff I want to follow up
+[33:21.48]  here one is people may be hearing this
+[33:23.20]  and like oh my God I'd be overwhelmed
+[33:25.16]  with feedback and people to fix problems
+[33:27.84]  for and bugs and texting of people
+[33:30.12]  there's just like um there's so many
+[33:32.64]  people that potentially uh i' have to be
+[33:35.32]  interacting with how do you how do you
+[33:36.76]  try to narrow that down like I know
+[33:38.32]  Atlas is a very uh highly adopted
+[33:41.04]  product there's a ton of people there's
+[33:42.36]  probably bugs often people sending you
+[33:44.56]  feedback how do you pick the people to
+[33:45.80]  Zer and on I think there are two parts
+[33:47.84]  of this one what a problem to have of
+[33:50.92]  all the problems in the world I'm
+[33:52.68]  overwhelmed by customer interest is on
+[33:55.80]  the you know the top list of problems I
+[33:58.84]  I I want to have I think most
+[34:02.12]  entrepreneurs would purchase that
+[34:04.60]  problem as a state and so if you're in
+[34:07.60]  it I think take a deep breath and look
+[34:10.68]  at the sun sunrise or Sunset and just
+[34:12.64]  enjoy the fact that you've built
+[34:14.24]  something that is Meaningful enough that
+[34:16.96]  people would spend their time again
+[34:19.60]  there are amazing snacks uh that they
+[34:21.76]  could be spending the time on otherwise
+[34:24.64]  so that's a that's a huge deal
+[34:28.88]  and then two you need you need the the
+[34:30.92]  art there's an art and science to
+[34:32.44]  picking where to go deep you know I will
+[34:35.48]  happily respond to folks with I really
+[34:37.76]  appreciate that do you mind sending me a
+[34:40.32]  screenshot or a a video and some of them
+[34:43.68]  don't okay that's fine you kind of get a
+[34:46.24]  sense of quickly looking at how they
+[34:48.76]  wrote about it or a pattern just pattern
+[34:51.40]  matching how detailed they were or how
+[34:55.00]  much they seem that they
+[34:58.32]  want to engage and kind of kind of
+[35:00.60]  balance it that way otherwise you know
+[35:02.92]  you can you can tell
+[35:05.32]  folks this is really awesome do you mind
+[35:09.20]  sending me an email with three to five
+[35:12.12]  bullet points about the details of how
+[35:15.00]  you got to this issue and that's not a
+[35:18.44]  30 minute meeting don't need to BL blow
+[35:20.88]  up your whole life to get on the phone
+[35:22.88]  with
+[35:23.92]  them it's not a huge homework assignment
+[35:26.80]  to them but it's enough structure that
+[35:29.80]  it will self- select those who want to
+[35:31.96]  go deep and then from there you really
+[35:34.36]  do owe it to them to to follow up if
+[35:36.20]  they're going to be that detailed and at
+[35:38.28]  that point you really have a sort
+[35:40.52]  product friend for life and you'll kind
+[35:42.44]  of continuously go back to them so you
+[35:44.76]  know you you you have to kind of
+[35:46.88]  tune tune it I also will bound some of
+[35:50.20]  these efforts so I'll just completely
+[35:53.52]  make up one day a program so hi uh
+[35:57.64]  Stripes doing a um bugfinder program I
+[36:01.32]  made that up as I was driving to work
+[36:02.84]  one morning uh tweeted it was curious if
+[36:05.52]  anyone would send anything we'll be
+[36:08.04]  taking videos for the next three days to
+[36:10.40]  go you know super deep and people like
+[36:12.52]  oh my goodness I would love to be part
+[36:13.96]  of the stripe bugfinder program like may
+[36:16.48]  I apply I'm like uh you know it's very
+[36:18.56]  selective uh you know of course but yes
+[36:21.28]  of course for you it's just you you're
+[36:22.92]  giving people permission through a pro
+[36:26.12]  program even if it is
+[36:28.08]  deeply arbitrary I find helps the
+[36:31.52]  bounding it and then later I could
+[36:32.68]  follow up with the world hey uh we ran
+[36:35.56]  our first uh program we got 65 videos
+[36:38.60]  which we did uh we found dozens of
+[36:41.12]  issues which we did um it was an
+[36:44.92]  incredibly valuable use of of of our
+[36:48.20]  time and it really came from just a a
+[36:51.80]  single tweet something I saw you mention
+[36:54.52]  somewhere is that you only pay attention
+[36:56.44]  to feedback from people that are paying
+[36:57.68]  customers and ignore everything else can
+[36:59.12]  you talk about that people who build
+[37:02.12]  things for people tend to be empathetic
+[37:05.08]  and interested and curious folks who
+[37:08.00]  have friends and then those
+[37:10.60]  friends want to use your stuff because
+[37:13.60]  they know you and they like you and
+[37:16.08]  they'll have good
+[37:18.72]  feedback but you need to figure out is
+[37:21.92]  that actually your customer or is that
+[37:24.52]  your friend trying it who is actually
+[37:27.56]  your Target customer exactly not a
+[37:30.64]  company or a segment you know not
+[37:33.36]  digital natives that are X big I'm
+[37:36.08]  talking about Sarah in this department
+[37:39.36]  who has these tabs open and just faced
+[37:42.64]  this problem and needs to solve it by 4
+[37:45.64]  p.m. like that level
+[37:47.76]  specificity if that's your
+[37:51.00]  customer and I'm talking mostly about
+[37:52.96]  B2B which is where I spend a lot of my
+[37:54.88]  time as the social network B Toc stuff I
+[37:57.64]  have less intuition
+[37:59.24]  on they're very willing to exchange
+[38:03.00]  money for solving their
+[38:06.60]  problems incredibly so often times
+[38:09.36]  they'll if you listen with enough
+[38:11.24]  silence they might even say I'll pay you
+[38:13.08]  money to solve blah uh if if you sit
+[38:15.68]  there long enough in silence and so you
+[38:18.60]  could listen to your friendly friend who
+[38:21.04]  you got to play with your beta version
+[38:23.28]  and they'll say they liked it and they
+[38:24.88]  will click around but that is Extreme
+[38:27.76]  different from Sarah who has the actual
+[38:29.52]  problem and is willing to pay and it is
+[38:32.28]  so tempting to go down the first path
+[38:35.60]  with the friend
+[38:36.68]  group that I sort of needed a rule which
+[38:40.84]  was like okay rather than I was like
+[38:42.56]  well don't pay attention to that quite
+[38:43.68]  as much you know really pay attention to
+[38:45.60]  to like who is your Target customer and
+[38:47.48]  are you in a fast iteration cycle with
+[38:48.92]  for them and are they telling their
+[38:50.20]  friends but that wasn't enough because
+[38:52.56]  people are so drawn myself included
+[38:54.28]  drawn to the the friendliness that I
+[38:56.48]  just set a rule which is we discount all
+[38:59.04]  of that feedback from our friends to
+[39:00.72]  zero like that is not of interest to us
+[39:04.60]  it doesn't we don't even write it
+[39:06.92]  down it's not part it's just not part of
+[39:09.24]  what we're talking about at all we're
+[39:10.96]  only interested in Sarah our Target
+[39:13.76]  customer and can we get
+[39:16.60]  her to solve whatever the problem is as
+[39:19.76]  quickly as possible as janky as
+[39:23.32]  possible and go from there and
+[39:27.72]  it's a for and then the paying part is a
+[39:29.68]  forcing function because again even with
+[39:32.48]  Sarah because you're paying attention to
+[39:34.76]  her and solving her problem a bit she'll
+[39:36.72]  say of course oh this is great I want
+[39:39.72]  feature X Y and Z can it do one two and
+[39:42.68]  three naturally she would say that but
+[39:45.12]  if you said and by the way this thing is
+[39:48.68]  $10,000 um Phil will happily refund your
+[39:51.16]  money 100% the second you don't like it
+[39:53.96]  she might say whoa whoa whoa wait a
+[39:56.12]  second uh I like this thing but not not
+[39:59.04]  $10,000 for $10,000 it would need
+[40:02.68]  to solve x and you're like oh there it
+[40:06.16]  is right there that was actually what
+[40:09.40]  the thing that was of value and we were
+[40:11.36]  all kind of dancing around this it's
+[40:14.64]  usefulness it's useful we're on the
+[40:17.12]  right track and because I've fallen down
+[40:19.24]  that path
+[40:20.52]  myself and so many times I just set a
+[40:23.84]  rule this was great I was actually going
+[40:26.00]  to ask the this technique of using
+[40:28.52]  silence to help people actually practice
+[40:30.84]  it you just Shar this kind of quote of
+[40:33.28]  for you you to pay $10,000 it would have
+[40:35.40]  to do X that's a really cool line to use
+[40:37.32]  is there any other advice there just had
+[40:38.52]  to practice this idea of creating
+[40:40.36]  silence to help the potential customer
+[40:42.88]  share what they actually need I
+[40:45.32]  encourage people to take an improv
+[40:47.00]  training improv training class uh or two
+[40:50.60]  just to get people out of their skin a
+[40:52.84]  bit by the way this advice applies to
+[40:55.08]  big companies also not just small ones
+[40:57.52]  and we we have issues and I hear other
+[40:59.28]  larger companies have issues where a big
+[41:02.20]  company will say hey we we're an
+[41:06.08]  Enterprise and we're going to pay you
+[41:07.96]  this big contract all you need to do is
+[41:11.28]  build features 1 2 3 four 5 six seven 8
+[41:13.16]  nine and go through security steps ABCD
+[41:15.40]  EFG and this siren song of the big
+[41:18.40]  three-year contract of your first
+[41:20.16]  Enterprise buyer even when you're
+[41:22.56]  already big it's there's always a you
+[41:25.04]  know you go from Fortune 1,000 to
+[41:26.44]  Fortune 500 to Fortune 10 to Fortune 1
+[41:28.48]  you know there's always more and a there
+[41:31.40]  are so many stories of the rug being
+[41:33.12]  pulled in the middle and they never they
+[41:34.92]  never actually use it and the contract
+[41:36.56]  Never Lands same in Partnerships and and
+[41:39.56]  so I would say the same thing which is
+[41:41.32]  like if we're super serious about this
+[41:44.76]  send us a million dollars like w wire us
+[41:47.84]  a million dollars we'll happily wire it
+[41:49.80]  back anytime you need it but let's
+[41:53.40]  actually put some stake in the ground
+[41:56.60]  about the value you and I find that in
+[41:59.04]  the cases in which they're like who wait
+[42:00.84]  a second no absolutely not uh we can't
+[42:04.32]  commit here that's really good signal
+[42:06.20]  because you're about to spend a huge
+[42:08.68]  amount of time building something that
+[42:10.20]  might not ever be used and that's the
+[42:12.28]  majority case I hear or you might get
+[42:15.04]  the opposite which is sounds
+[42:18.08]  great let's make sure our teams are
+[42:20.72]  trained on it faster uh how can we get
+[42:23.92]  you to our office to explain it we need
+[42:26.68]  it to really work with this system we
+[42:28.44]  haven't talked about yet and now that
+[42:29.92]  we're paying we want it even faster and
+[42:32.12]  so I find that just it puts a fork in
+[42:34.56]  the road towards faster success or
+[42:39.12]  avoiding the non-success case and even
+[42:42.52]  at stripe scale I've heard our Founders
+[42:45.48]  somewhat push this this methodology on
+[42:48.20]  us where you one from the outside might
+[42:50.48]  think well it's a 8,000 person company
+[42:53.52]  sure sure surely they have just regular
+[42:55.32]  ways of of of building things for your
+[42:57.40]  customers and and and like we too need
+[42:59.08]  these style of commitments if we're
+[43:01.84]  going to go off road map so a big lesson
+[43:05.08]  you're sharing here is essentially make
+[43:07.40]  sure people are ready to pay for
+[43:09.40]  something that they are asking for that
+[43:11.20]  is the ultimate sign that they ready to
+[43:13.84]  pay is different than paying
+[43:16.28]  significantly different significantly
+[43:18.96]  different I've also thought of of well
+[43:21.92]  if as long as they're ready to pay and
+[43:23.40]  they said they would pay and they look
+[43:25.32]  at the contract we should feel good that
+[43:27.32]  is not the same as paying paying is an
+[43:31.76]  independent group of people saying my
+[43:33.60]  problem is burning enough that I'm
+[43:35.64]  willing to exchange something I have
+[43:37.96]  that has value for the promise of what
+[43:40.88]  you're going to do and now it's like a a
+[43:42.92]  real commitment that is extremely
+[43:45.16]  different than ready to so I will often
+[43:49.24]  be on the phone or video whatever with a
+[43:51.76]  founder
+[43:54.16]  and I will have them practice paying
+[43:57.84]  like have them practice charging me I'll
+[44:00.28]  just say hey I'm just a friend I'm
+[44:02.72]  trying to help you out uh is a little is
+[44:05.96]  a little bit self- serving because I
+[44:07.00]  work on stripe and I want to get
+[44:07.88]  feedback on our products I'll say feel
+[44:10.28]  free to sign up for any invoicing or
+[44:14.08]  payment service I don't really care
+[44:15.60]  which one you're welcome to choose
+[44:16.64]  stripe if it's easy enough for you I'd
+[44:18.04]  love to hear your two cents and send me
+[44:20.52]  an invoice or a payment link for a
+[44:23.08]  dollar right now like right now that way
+[44:26.40]  you don't
+[44:27.64]  when it comes time to actually charge
+[44:30.68]  your first customer it won't be your
+[44:31.72]  first time it won't feel weird you have
+[44:33.36]  already done this you already have a
+[44:34.36]  dollar in your account it'll just you
+[44:36.56]  already have your logo on the top right
+[44:37.96]  of the invoice it will feel great and I
+[44:41.12]  probably could go through my email inbox
+[44:42.44]  and just see $1 receipts to random
+[44:45.72]  people uh because I'm just so convinced
+[44:48.56]  that the difference between paying and
+[44:51.08]  like willing ready thought I thought
+[44:53.28]  they would pay is you know night and day
+[44:56.80]  difference
+[44:57.84]  yeah there's this term willingness to
+[44:59.48]  pay uh that I feel like should change as
+[45:02.80]  you're saying to just cross that
+[45:04.32]  willingness to and just paying paying
+[45:06.20]  exactly yeah no yeah and we can refund
+[45:07.72]  the money there's no like there's no
+[45:09.04]  issue at all other just other tricks on
+[45:12.28]  how to get people going
+[45:15.00]  is ask them about their regular Life as
+[45:17.48]  a human you know what did you do
+[45:21.08]  yesterday and they'll be like oh at
+[45:23.76]  work I'm like or or not what whatever
+[45:27.00]  and people just they'll start to spill
+[45:28.92]  they'll just start to Spill and
+[45:30.04]  eventually they'll get to their biggest
+[45:31.28]  problem pretty quickly let's talk about
+[45:34.20]  metrics kind of going in a different
+[45:35.76]  direction many people told me I need to
+[45:37.60]  ask you about picking metrics and the
+[45:40.04]  importance of metrics and how you think
+[45:41.28]  about metrics so let me just maybe start
+[45:44.20]  with a question just why do you think
+[45:46.64]  picking the right metric and why are
+[45:48.76]  metrics so important in building
+[45:50.80]  successful products I somewhat walk
+[45:54.04]  around with the belief that
+[45:58.40]  the product manager's responsibility is
+[46:00.84]  to produce product Market
+[46:04.52]  fit and okay how do you know you have
+[46:06.84]  product Market
+[46:09.40]  fit charts that showcase things are
+[46:12.00]  going up and to the
+[46:13.76]  right on one hand and then tweets on the
+[46:17.28]  other
+[46:18.36]  so metrics like you know quantitative
+[46:22.00]  and qualitative and I really see them as
+[46:25.48]  deep deep siblings and equals you you
+[46:28.44]  really need both it's not oh okrs versus
+[46:32.72]  something like there are some things you
+[46:34.68]  want the texture of the person on video
+[46:39.28]  showing how complicated thing was and
+[46:41.40]  then also we are trying to make an
+[46:43.32]  economically viable system that we can
+[46:45.64]  run at large scale and you can't keep
+[46:47.44]  all that stuff in your head and need to
+[46:48.76]  me need to measure it and so I think
+[46:50.56]  metrics at their best are a numerical
+[46:54.80]  representation of the value we're prod
+[46:57.12]  providing for the for the customer one
+[46:59.76]  could measure anything you just like
+[47:00.92]  start counting events and log log lines
+[47:02.84]  we've made it incredibly cheap to count
+[47:04.52]  stuff and now we have this big privilege
+[47:07.12]  of choosing what to measure and I really
+[47:10.64]  just try to map it all the way back to
+[47:12.60]  well what was the actually the value
+[47:14.04]  that we're trying to produce for the
+[47:15.12]  customer and can we measure it from
+[47:16.92]  their perspective whereas I think
+[47:20.12]  it's natural both because we when you
+[47:22.88]  work inside of a company you're just
+[47:24.44]  thinking internally but also the way
+[47:26.40]  that the Met are collected inside your
+[47:28.20]  application to be more internal oriented
+[47:32.44]  how many people logged in okay that's a
+[47:35.96]  fine measure but how many people
+[47:38.48]  accomplished what they were trying to do
+[47:40.80]  after they logged in is not just
+[47:42.36]  necessarily sitting there as a single
+[47:44.24]  event in your database you have to think
+[47:46.36]  about it a bit another reason why I
+[47:48.20]  spend a lot of time CRA
+[47:51.48]  crafting a small number of these metrics
+[47:54.08]  is they force tradeoffs and decisions so
+[47:56.64]  we could all sit around all day and say
+[47:59.76]  hey I heard all these customer problems
+[48:02.28]  we should build X Y and Z and another
+[48:03.84]  person could absolutely reasonably say
+[48:05.48]  well I heard from these customers we
+[48:07.04]  should build one two and three and
+[48:08.24]  they're all true we could have a lot of
+[48:10.20]  success in both but the majority cases
+[48:13.04]  that we don't build either and we sit
+[48:15.12]  around and argue and bicker and we go
+[48:18.04]  slowly what are we going to do
+[48:21.40]  to naturally organically every day
+[48:24.76]  Orient a larger group of people in the
+[48:27.08]  right direction and see if our tactics
+[48:29.56]  are generating progress over time for a
+[48:32.36]  customer from their perspective and
+[48:34.80]  metrics on the left and a series of
+[48:36.56]  tweets uh on the right is like a pretty
+[48:39.40]  great combo so here's an example a
+[48:43.72]  couple years ago I'd been working in our
+[48:46.12]  our payments group at stripe for a bit
+[48:49.52]  and then I I started working on uh some
+[48:51.32]  of our Banking and and incorporation
+[48:53.16]  services so in Atlas when I started
+[48:56.48]  working on
+[48:58.08]  it it had had some success it had
+[49:01.16]  already existed for four or five yearsi
+[49:03.24]  prior to me spending time on
+[49:06.64]  it but when I started to look at the
+[49:08.76]  support tickets people were pretty
+[49:10.72]  unhappy frequently they had a docu sign
+[49:14.20]  stuck in their email box they needed uh
+[49:18.32]  co-founder address but they didn't know
+[49:20.60]  their co-founders address they couldn't
+[49:23.20]  log into the dashboard to figure out
+[49:25.08]  their 83b manual filing instructions and
+[49:28.32]  we saw
+[49:29.56]  this you know basically in the first
+[49:31.72]  week of spending time on Atlas I was
+[49:33.04]  just like just show me all the support
+[49:34.16]  tickets uh are they happy support
+[49:36.28]  tickets are people writing in being like
+[49:37.52]  Oh I love this service it's absolutely
+[49:39.00]  fantastic can you just do ab even more
+[49:40.84]  for me or they like sad support tickets
+[49:42.40]  like oh my God they're all sad support
+[49:43.80]  tickets and so we're just kind of asking
+[49:45.84]  ourselves well why
+[49:48.24]  would why would someone recommend Atlas
+[49:50.80]  to a friend was like well it would have
+[49:53.72]  to accomplish AB andc activities for
+[49:55.68]  them you know it would have to get their
+[49:57.28]  company it would have to handle getting
+[49:59.24]  their tax ID from the IRS it'd have to
+[50:01.20]  handle all the downstream ammin dvia but
+[50:04.12]  surely if they had a bunch of support
+[50:05.60]  tickets at the end they're not going to
+[50:07.28]  go tell their friends to use this thing
+[50:10.80]  we could measure all of the intermediate
+[50:13.44]  parts we could measure the success rate
+[50:16.08]  and the frequency of incorporation
+[50:18.20]  services and and we do all those things
+[50:20.80]  but if you like looked at the support
+[50:22.00]  tickets there's just no way if you had a
+[50:23.96]  support ticket you would recommend do it
+[50:25.20]  to a friend and so we suggested metric
+[50:27.12]  to
+[50:28.48]  ourselves companies that
+[50:30.96]  have no support
+[50:33.44]  tickets through the through the
+[50:35.20]  incorporation service the whole process
+[50:37.40]  from the moment you start the
+[50:39.00]  application open like actually the be
+[50:42.08]  like the first page load at the very
+[50:44.20]  beginning all the way through the
+[50:46.24]  process waiting for the government
+[50:47.88]  waiting for the IRS and we give you two
+[50:50.76]  more weeks to write into support we give
+[50:52.36]  like an extra buffer two weeks and if
+[50:54.76]  you get through that whole thing with
+[50:56.68]  with no support tickets that's a yes if
+[51:00.16]  you have any number of support tickets
+[51:01.68]  that's a no and we just looked at the
+[51:03.24]  percentage
+[51:04.72]  of Founders that were going through the
+[51:07.20]  service with zero support tickets which
+[51:10.04]  is very different than looking at an
+[51:11.32]  average right you could you'd have the
+[51:13.08]  average is 0.3 but that doesn't
+[51:15.76]  necessarily mean that they're you know
+[51:18.24]  that getting to 02 is going to cause
+[51:19.96]  them to tell their friends more and we
+[51:21.56]  looked and only 15% of Founders were
+[51:26.08]  getting through Atlas with zero support
+[51:28.96]  tickets through that metric and I just
+[51:32.88]  thought okay well let's just drive that
+[51:34.60]  number way
+[51:35.68]  up and let's look at the support tickets
+[51:38.12]  decide what people are needing and we'll
+[51:40.88]  bake it into the product and presumably
+[51:43.12]  it'll fix it people like that more and
+[51:46.04]  then tell their friends and over about
+[51:48.20]  18 months we took that number from 15%
+[51:51.40]  to 85 uh we basically just flipped it
+[51:54.56]  and you can look at the market share
+[51:57.96]  plotted on the same on the same time
+[52:01.08]  frame and it's like same shape uh and I
+[52:05.20]  think you have to find a measure by
+[52:07.88]  which it speaks directly to the to what
+[52:11.32]  the customer wanted and that if you by
+[52:14.32]  accidentally leaked your dashboard to
+[52:16.24]  them your customer would be ecstatic to
+[52:18.84]  learn that that's what you were
+[52:19.92]  measuring the whole time you know if we
+[52:21.56]  were to showcase the internal atas
+[52:23.52]  metrics which we often just uh
+[52:24.96]  screenshot and publish
+[52:27.60]  I think they'd be pretty happy to hear
+[52:28.88]  that we were spending all of our time
+[52:30.28]  making sure that none of them had sport
+[52:32.48]  tickets and it was incredibly
+[52:34.76]  encouraging uh and motivating to the
+[52:37.60]  engineers on the team because we could
+[52:39.56]  just assign them a topic
+[52:41.88]  hey here's look look at all these
+[52:44.60]  support tickets why don't you come up
+[52:46.52]  with the product spec the scope the
+[52:50.52]  solution oh want to learn more just
+[52:53.28]  reply to the support ticket email figure
+[52:55.60]  out what they needed what they need and
+[52:57.32]  so we kind of turned all the engineers
+[52:59.68]  on the team into PMS to go
+[53:04.04]  and one like one issue at a time figure
+[53:07.56]  out what needed to change and build
+[53:09.08]  products for it and that's where we push
+[53:10.92]  forward on a3b elections automating it
+[53:14.00]  sending in the mail for folks we built
+[53:15.96]  our own signing service we turned
+[53:17.44]  everything into a click we we did just
+[53:19.36]  did sort of the the obvious things we
+[53:21.08]  saw on the tickets but as the PM I was
+[53:23.92]  able to just sort of not on autopilot
+[53:26.72]  but really sit back and
+[53:30.68]  have contentful conversations with
+[53:33.28]  Engineers who are bringing Solutions and
+[53:35.20]  ideas for product rather than one person
+[53:38.68]  going through all of the potential ideas
+[53:41.64]  scoping them and assigning them and
+[53:43.60]  because it was based in what people were
+[53:46.16]  saying and wanted it was very motivating
+[53:48.16]  for everyone on the team so somewhat
+[53:50.60]  long answer
+[53:52.72]  but figuring out something in which
+[53:55.64]  every day we can wake up and look at the
+[53:57.40]  same metric and with some confidence
+[54:00.84]  know what to do is so much better than
+[54:04.20]  let's figure out what to do each month
+[54:05.92]  and kind of like starting from scratch I
+[54:08.52]  think this is amazing and important
+[54:10.24]  advice just the power of a single metric
+[54:12.84]  that everyone in the team can understand
+[54:14.80]  rally around and use to prioritize the
+[54:16.64]  work they're doing I've seen exactly the
+[54:18.36]  same sort of impact funny enough Airbnb
+[54:21.20]  one of the teams actually had a metric
+[54:23.76]  sort of like this basically reducing the
+[54:25.40]  people contacting Airbnb with support
+[54:27.32]  issues uh but what ended up happening is
+[54:30.16]  their team started just making it harder
+[54:31.64]  to contact support because they're like
+[54:34.44]  maybe they don't need to contact support
+[54:35.84]  about all these trivial issues so maybe
+[54:37.56]  let's not let's encourage them to figure
+[54:39.28]  it out themselves is there anything
+[54:40.88]  you've learned about try to avoid these
+[54:42.36]  kind of second order effects that are
+[54:44.68]  kind of perverse incentives of a metric
+[54:47.24]  we look at multiple metrics but we will
+[54:49.48]  optimize around one and you have to use
+[54:52.48]  your own judgment to to look at some of
+[54:55.08]  these counter measures and and pick them
+[54:59.32]  um we would
+[55:01.60]  also you know that would sort of be our
+[55:03.64]  overarching metric for a year but then
+[55:06.80]  we would pick
+[55:08.92]  specific tactical metrics about how we
+[55:11.36]  would accomplish it so just an example
+[55:15.04]  that
+[55:16.92]  both is is how we solved a problem but
+[55:19.36]  also it's just like a style of metric
+[55:20.84]  that was useful to us of of course some
+[55:25.16]  of these support tickets include
+[55:26.28]  included things
+[55:28.08]  like I'm waiting to hear back from Atlas
+[55:31.68]  about if they're going to approve my
+[55:33.08]  application because stripe is required
+[55:35.56]  for very good reasons to evaluate
+[55:38.12]  certain business types or um sanctions
+[55:41.68]  lists and so a worldwide product so
+[55:43.44]  there is some you know incred incredibly
+[55:46.88]  should be incredibly quick but uh there
+[55:49.36]  is a bit of like a review process and of
+[55:53.32]  course if you were not hearing back from
+[55:55.52]  us you would be upset you're trying to
+[55:56.64]  make your company immediately this is
+[55:57.60]  ridiculous like let's get back to us
+[55:58.84]  quickly and so we knew that one of the
+[56:01.80]  reasons that people were ready to
+[56:03.40]  support was like hey what's up with my
+[56:05.60]  review what's going on and we knew that
+[56:08.84]  our tactic was just to drive up how
+[56:11.64]  quickly we got to a final decision on
+[56:13.40]  folks and to reduce the number of
+[56:15.88]  overturn rejections where someone writes
+[56:18.64]  back in saying hi like come on I'm
+[56:20.68]  totally just making something reasonable
+[56:22.04]  what's up why did you reject me and so
+[56:24.24]  we would pick these
+[56:26.52]  overarching single metric which was
+[56:28.52]  which was the companies with zero
+[56:29.88]  support tickets but then we would have a
+[56:32.44]  specific KR that was owned by an
+[56:34.52]  engineer which is the tactic that we're
+[56:36.40]  going to do and so we
+[56:39.08]  would not allow ourselves the perverse
+[56:43.12]  tactics to sort of just casually exist
+[56:45.88]  we would choose which tactics we're
+[56:47.48]  going to do and then set a metric for it
+[56:49.52]  and the one the other reason I love this
+[56:51.64]  metric is it's a it's a cohort metric by
+[56:54.84]  which you're trying to drive something
+[56:57.40]  up and to the left I sometimes people
+[56:59.88]  get excited about a chart that goes up
+[57:02.08]  and to the right it's kind of a meme oh
+[57:04.12]  that's going up to the right I'm really
+[57:06.48]  excited about charts that go up into the
+[57:08.20]  left uh so you have to figure out some
+[57:10.56]  optimization that you're trying to
+[57:12.60]  maximize and so in this particular case
+[57:16.16]  of this risk review we would look at hey
+[57:19.12]  for the cohort of customers that started
+[57:21.40]  last month how quickly did we get them
+[57:25.56]  to their their final risk review by
+[57:28.76]  number of days since they submitted and
+[57:31.60]  so you want a chart that looks a lot
+[57:33.56]  like here we go you know right up to the
+[57:37.24]  top because you want 100% of your
+[57:39.96]  customers to get their final decision as
+[57:42.72]  quickly as possible and once you know it
+[57:44.72]  when we looked at the chart it was doing
+[57:46.60]  this right and so each month we would
+[57:49.12]  just make it a little better a little
+[57:51.00]  better a little up to the left up and to
+[57:52.84]  the left up and to the left and now
+[57:54.48]  basically 100ish percent of people get
+[57:57.68]  their risk review within an hour from
+[57:59.96]  you know a a long tail taking a long
+[58:02.96]  time and so we would constrain the
+[58:05.64]  tactic through a metric and then kind of
+[58:07.40]  like watch it through an optimization
+[58:08.92]  function and then when we got to a point
+[58:11.00]  where we were happy with the target we
+[58:12.44]  could put down the tactic that's another
+[58:13.92]  like really useful thing about metrics
+[58:15.16]  is just like you can decide when to stop
+[58:17.12]  a tactic because you get to some level
+[58:18.76]  of success that you're comfortable with
+[58:20.48]  and you can always choose to pick it
+[58:21.64]  back up later so there's some really
+[58:23.92]  cool lessons here um of just how to pick
+[58:25.80]  a good metric just to kind of maybe
+[58:27.88]  summarize what I'm hearing is you kind
+[58:29.56]  of work backwards from essentially NPS
+[58:32.32]  like how many why aren't people
+[58:33.60]  recommending Atlas you found okay well
+[58:36.80]  people that are complaining and having
+[58:38.16]  issues with support and running into
+[58:39.80]  problems most likely are going to be
+[58:41.08]  detractors not going to want to
+[58:42.20]  recommend Atlas so let's let's have this
+[58:44.08]  really ambitious goals eventually nobody
+[58:47.12]  has a support ticket slash let's just
+[58:48.96]  track how many people have zero issues
+[58:51.16]  and then you identify okay what's
+[58:53.04]  driving a lot of these support tickets
+[58:54.40]  okay it looks like this risk timeline to
+[58:56.20]  I get to the certain Milestone let's
+[58:58.16]  make that our goal for the next quarter
+[58:59.64]  whatever and let's focus there and then
+[59:02.36]  make an impact and then I imagine to
+[59:03.76]  move on to other levers within this uh
+[59:06.48]  bucket of zero contact you have to pick
+[59:09.76]  the right metric for your
+[59:12.04]  audience in I wouldn't like I wouldn't
+[59:15.56]  fully export that metric to everyone
+[59:18.72]  though it's not a terrible one to export
+[59:21.56]  but in in the founder Founders choosing
+[59:24.52]  where to get started mindset again this
+[59:27.28]  isn't just deeply spending time
+[59:29.72]  listening to your customers they all ask
+[59:32.28]  their friends hey how did you start your
+[59:34.24]  company they want to talk to an older
+[59:36.88]  sibling of sorts about how it went and
+[59:40.60]  so
+[59:43.20]  we decided that our goom Market strategy
+[59:47.36]  would be to Delight our current
+[59:50.48]  customers such that they would tell
+[59:51.88]  their friends and other businesses I
+[59:54.28]  mean that's always somewhat useful but
+[59:55.80]  you can also reach people with
+[59:56.92]  Billboards and Google ads and other
+[59:59.84]  types of upsells that's very difficult
+[60:01.92]  in the moment that someone is starting a
+[60:04.76]  company that's sort of a natural
+[60:05.92]  geographic can you get the picture of
+[60:08.08]  the bird at exactly the right time how
+[60:10.28]  are you even supposed to go find people
+[60:12.84]  about to start companies thankfully they
+[60:15.44]  have this practice of just asking their
+[60:17.60]  friends and so if their
+[60:20.60]  friends loved it they're going to just
+[60:23.04]  recommend it and that that has
+[60:26.84]  that the metric and the tactic and the
+[60:28.92]  go to market all lined up uh rather than
+[60:31.88]  sometimes in cases you might hear
+[60:33.40]  someone say well let's make the product
+[60:34.52]  quality better well we can all make the
+[60:36.40]  product quality better but why like why
+[60:38.64]  is this actually going to move what our
+[60:40.96]  customers want and the Business board
+[60:42.64]  and when you can line them all up it it
+[60:44.48]  can be quite quite beautiful just
+[60:46.76]  especially when you can see it month
+[60:48.72]  over month for a long period of time one
+[60:50.44]  other metric I think is I that I would
+[60:52.16]  export to anybody is if you are
+[60:56.24]  unsure what to measure we have this I
+[60:58.96]  don't know if we stole it from somebody
+[61:00.16]  else or if we came up with internally
+[61:01.76]  whatever is just users having a bad day
+[61:05.32]  where we will just emit a log line
+[61:09.56]  anytime we think that a user bumped into
+[61:13.20]  a problem so maybe they hit a 404 or
+[61:18.04]  maybe their payout was one day after the
+[61:21.68]  the the ETA or they had more than 10
+[61:26.76]  payment declines you can kind of
+[61:28.80]  brainstorm again or just listen to
+[61:30.44]  customers what what would cause you to
+[61:32.76]  personally have a bad day and then just
+[61:35.56]  emit an event when that occurs and then
+[61:38.16]  you could just make a bar chart a
+[61:40.16]  stacked bar chart of all the bad day
+[61:43.48]  reasons and the frequency by which
+[61:45.08]  they're happening and is eye opening to
+[61:47.52]  see those frequencies and it's kind of a
+[61:50.88]  metric I hadn't thought about until
+[61:53.52]  Stripes scale in which you just don't
+[61:56.60]  know what's happening until
+[61:59.64]  you emit the log line and count it like
+[62:02.68]  the frequencies could be kind of
+[62:04.40]  mindblowing and I think for almost any
+[62:06.68]  scale business if you are bored one day
+[62:09.72]  and you're not sure what to measure just
+[62:11.40]  make a users having a bad day chart emit
+[62:13.96]  a log line and count it as a bar chart
+[62:16.28]  and then anybody else can add their own
+[62:17.80]  bar chart on top of it and so it's
+[62:19.44]  become a way for teams to scale their
+[62:24.68]  understanding of users through metric by
+[62:26.16]  just saying hey look anytime anybody has
+[62:27.76]  an idea about why a customer is having a
+[62:29.16]  bad day just m a log line like put it on
+[62:31.12]  this chart and then what we can choose
+[62:32.92]  over time which bad day reasons we want
+[62:35.48]  to burn down and hopefully just like
+[62:38.68]  eradicate them not just like minimize
+[62:40.72]  them but it it g it gave us kind of
+[62:44.16]  a background
+[62:47.00]  noise counting system for where there
+[62:51.00]  are problems and anytime there's an
+[62:53.32]  incident or some customer issue the
+[62:55.08]  first thing I think think is oo like I
+[62:56.92]  wonder if we have a bad day I wonder if
+[62:58.76]  we have a bad day reason for this and if
+[63:02.80]  we do I actually feel okay I'm like oh
+[63:06.76]  yeah it is a bad day for this customer I
+[63:08.16]  wish didn't have it but at least we're
+[63:09.76]  aware and we can evaluate it against
+[63:11.64]  other bad days that we want to burn down
+[63:13.92]  what what does sometimes a little bit
+[63:16.20]  grind my gears or gives is an
+[63:17.84]  opportunity is like when we didn't know
+[63:19.44]  about that bad day and it's a surprise
+[63:21.32]  to us too that is like to for me is
+[63:24.68]  immediate action it's like okay cool we
+[63:26.40]  have to figure out a way to count this
+[63:27.60]  bad day we got to get it on the chart
+[63:29.52]  that way we can make an informed
+[63:30.96]  decision about you know when to invest
+[63:32.88]  in and improving it I love this idea I
+[63:35.72]  haven't heard this before so the idea is
+[63:37.12]  just make a list of what happens to a
+[63:39.36]  potential customer that would cause them
+[63:41.12]  to have a bad day yeah what what are
+[63:42.68]  some examples for striper Atlas that you
+[63:44.80]  guys have are you a stripe customer
+[63:46.16]  Lenny I am I check my with my
+[63:48.32]  newsletters uh the payments go through
+[63:50.08]  stripe I check my dashboard every day
+[63:51.88]  cool so what would be a bad day for you
+[63:53.92]  oh I see I see some silence uh happening
+[63:57.16]  here um you know it not loading the
+[64:00.64]  numberers taking a long time to show up
+[64:03.80]  something being completely off in there
+[64:08.28]  um not being able to log
+[64:13.12]  in the silence is
+[64:17.36]  good I just want to keep going the
+[64:19.92]  question is how much you know to the
+[64:20.84]  audience is how much will of the silence
+[64:22.12]  will he edit out before before it goes
+[64:24.28]  live but this is what I'm talking about
+[64:25.60]  right right is is is I could guess them
+[64:28.48]  right yeah but and I I can as you were
+[64:31.96]  saying those I know the like I know the
+[64:34.12]  URL of those charts right I I I know the
+[64:38.12]  login one because I I feel that too so I
+[64:39.96]  play with stripe all the time and then
+[64:41.40]  you get a tofa too frequently and you
+[64:44.32]  know come on I have the same cookie I
+[64:46.40]  was just here yesterday right so we
+[64:48.32]  count all that stuff and try to make it
+[64:50.00]  better over time but I'm so excited when
+[64:53.24]  someone brings me a new Bad Day hadn't
+[64:56.04]  thought about yet uh because that's just
+[64:58.92]  that's like product catnet I love it and
+[65:01.20]  your advice here is this doesn't
+[65:02.92]  necessarily have to be your goal or
+[65:05.04]  metric it's just start watching this
+[65:07.04]  thing because that could lead to a lot
+[65:08.32]  of interesting ways of operating couple
+[65:10.72]  other just like quick metrics things
+[65:12.32]  it's a bit of
+[65:13.64]  a I don't know some people like cycling
+[65:17.44]  or something I guess I like metrics I I
+[65:20.36]  like people people get a really nice
+[65:22.04]  bike like I I want a really great metric
+[65:24.60]  um picking metric titles that make you
+[65:28.36]  feel something so we could have called
+[65:32.12]  that measure of
+[65:34.52]  companies you know number of companies
+[65:37.72]  that do not send a support
+[65:40.96]  ticket over X period and Y period you
+[65:44.88]  know with Min you know you see you
+[65:47.40]  sometimes see these charts where the
+[65:49.04]  metric itself like named itself this is
+[65:51.44]  just companies with zero support
+[65:56.40]  that's it and it the
+[65:58.92]  brevity and the focus and the
+[66:02.08]  customer mindset built into the chart
+[66:04.60]  name can become currency inside the
+[66:06.68]  company it's like oh I'm working on
+[66:09.04]  making the like this chart go up and it
+[66:11.44]  feels good to just say the name out loud
+[66:14.44]  rather than some complicated underscores
+[66:18.68]  and mins and Maxes and you know the
+[66:22.40]  database field name is like still in the
+[66:24.60]  chart title I these These are aesthetic
+[66:27.08]  choices but I think make dramatic
+[66:29.36]  differences in the cultural willingness
+[66:32.92]  for people to buy in and get excited
+[66:35.56]  about it
+[66:37.20]  and reduce the need of a product person
+[66:40.20]  to just remind everyone every day why
+[66:42.00]  they're doing it it's like the metric is
+[66:43.36]  motivating us because it's it's a
+[66:44.76]  motivating thing to talk about um and
+[66:47.16]  and then lastly on metrics is there's
+[66:49.32]  just good hygiene that people should
+[66:51.16]  bring to their measures percentages
+[66:54.04]  shouldn't have
+[66:56.64]  41 bll you know significant digits if if
+[67:01.40]  only two of the digits are
+[67:03.80]  relevant uh you should keep all the
+[67:07.12]  measures of your dashboard on the same
+[67:09.24]  x-axis these are just stylistic things
+[67:13.00]  that increase the frequency that people
+[67:15.36]  want to just wake up every day and open
+[67:17.04]  the dashboard and look at it and that is
+[67:19.68]  so powerful if your whole team is
+[67:21.84]  looking at the same set of information
+[67:23.76]  that has the heartbeat of the customer
+[67:25.24]  every every single day in fact we can
+[67:27.56]  measure at stripe the usage of our
+[67:30.24]  dashboards by team and so we can see
+[67:34.00]  which teams are themselves looking at
+[67:36.52]  their own metrics uh and that is an
+[67:39.00]  incredibly useful predictor of how on
+[67:43.72]  the same page they are and how and how
+[67:45.44]  customer obsessed they are so I just
+[67:47.20]  think
+[67:48.00]  it's it's it's not an area that's sort
+[67:50.68]  of behind the scenes Bean Counting
+[67:55.76]  reliability only is the machine hot you
+[67:59.36]  can make metrics that mean something to
+[68:02.28]  the customer and you would be proud if
+[68:04.08]  they were to be screenshoted and put on
+[68:05.64]  the internet to be like wow I feel like
+[68:08.44]  that company is taking their promise to
+[68:11.48]  me seriously and I can see myself on
+[68:13.84]  those metrics as a customer that's
+[68:16.12]  that's where we we're really shooting
+[68:17.36]  for so it's jir back what you just said
+[68:19.60]  there which I think is a subtle Point
+[68:21.60]  potentially is just making the dashboard
+[68:24.40]  look nice like the hygiene of the naming
+[68:27.60]  conventions and the decimal points and
+[68:29.84]  the chart you're in your experience you
+[68:32.08]  find that really powerful important a
+[68:34.08]  couple years ago stripe did internal
+[68:37.16]  work to make an internal metrics kind of
+[68:41.48]  dashboard system and we have a special
+[68:43.84]  place called go metrics many people use
+[68:46.40]  a go/ service where you can just quickly
+[68:48.64]  go to a URL and again I I have to
+[68:52.00]  sometimes do a rule rather than a policy
+[68:54.12]  my rule is if it's not on go metrics I'm
+[68:56.64]  not going to look at it so if PE people
+[68:59.84]  can send me oneoff queries or charts or
+[69:02.16]  screenshots or presentations or emails
+[69:05.24]  of charts and data but that
+[69:08.44]  is in the wind you know we can't
+[69:11.64]  interrogate the query metrics are almost
+[69:14.44]  always wrong for many weeks we didn't
+[69:17.16]  quite get the definition correctly you
+[69:18.64]  have to live in the metric for quite a
+[69:20.88]  while before you really believe in it
+[69:23.24]  and so if you're always looking at some
+[69:24.64]  oneoff
+[69:26.80]  version it's just very difficult to for
+[69:29.48]  it to rise up to the level of importance
+[69:31.88]  that
+[69:33.40]  is a thing we should trust to help us
+[69:36.88]  decide what to do that's an incredibly
+[69:38.92]  High bar and
+[69:41.04]  so I I just find you have
+[69:43.60]  to look at it frequently enough and if
+[69:46.04]  you're going to look at it frequently
+[69:47.12]  enough it means it needs to be in a
+[69:49.08]  discoverable place um you almost go
+[69:52.56]  through a couple stages of grief about
+[69:54.08]  it because I'll we'll kind of put metric
+[69:55.80]  up in a in a place and everyone
+[69:57.12]  initially is like wow this is great like
+[69:59.64]  I was so excited to finally see this and
+[70:01.84]  then a couple days later huh like I
+[70:04.88]  don't quite understand it what does it
+[70:07.04]  like actually mean I saw this other
+[70:10.40]  metric from this other angle that kind
+[70:13.12]  of makes it feel you know
+[70:16.36]  counterintuitive that it's like this and
+[70:17.84]  then you kind of look into it wait a
+[70:19.08]  second we've been counting it wrong the
+[70:20.20]  whole time oh no and then you look at it
+[70:22.20]  the third week and it's a completely
+[70:23.84]  different version and then you hope that
+[70:26.32]  we forget about it maybe we'll go on
+[70:28.08]  something else nope we're not going to
+[70:29.04]  forget about it week four comes around
+[70:30.36]  you're like wait a
+[70:31.92]  second okay this is like then the team
+[70:34.40]  meeting starts hey just a reminder let's
+[70:36.04]  just bring up the metric again not a
+[70:37.64]  screenshot of it go to the URL and just
+[70:40.44]  that level of frequency and
+[70:45.00]  specificity and ritual around it is what
+[70:48.36]  brings it into the
+[70:49.84]  decision-making culture and again we
+[70:51.60]  treat it the exact same as we do tweets
+[70:53.48]  it's it's it's the quantitative and the
+[70:54.72]  qualitative right next to each other and
+[70:56.44]  because you're putting that amount of
+[70:57.72]  attention to it you can't have a
+[70:59.32]  thousand metrics we just don't
+[71:00.40]  physically have time the day to bring
+[71:02.52]  that level of care and understanding to
+[71:05.08]  so many things so then it forces you to
+[71:08.64]  Wi know so many things you could care
+[71:11.24]  about down to a small number of things
+[71:13.12]  that you really must care about and
+[71:16.20]  again that practice goes back to do you
+[71:19.08]  really understand what your customer
+[71:20.20]  wants and so for all these tactics it's
+[71:23.56]  about finding out customer once and then
+[71:27.12]  different versions of of how do we sort
+[71:29.00]  of know it's true over time and our
+[71:31.16]  tactics improving
+[71:32.48]  it sounds so simple when you describe it
+[71:34.92]  that way this episode is brought to you
+[71:37.88]  by Anvil their document SDK helps
+[71:40.96]  product teams build and launch software
+[71:43.04]  for documents fast companies like carda
+[71:46.08]  and vouch Insurance use Anvil to
+[71:48.24]  accelerate the development of their
+[71:49.64]  document workflows getting to Market
+[71:52.00]  fast is a top priority for product teams
+[71:54.64]  and the last thing that you or your
+[71:56.36]  developers want is to build document
+[71:58.20]  workflows from scratch it's timec
+[72:00.24]  consuming expensive and distracts from
+[72:02.32]  core work you could stitch together
+[72:04.76]  multiple tools and manage those
+[72:06.36]  Integrations or you can use an
+[72:08.40]  all-in-one document SDK most product
+[72:11.52]  managers will tell you paperwork sucks
+[72:14.36]  Anvil's document SDK helps teams get to
+[72:16.76]  Market fast incorporate your brand style
+[72:19.68]  and give you back time to focus on your
+[72:21.36]  company's core differentiated features
+[72:24.12]  for your users paperwork often starts
+[72:26.08]  with an AI powered web form styled and
+[72:28.12]  embedded in your application from there
+[72:30.44]  you can route data to your backend
+[72:31.92]  systems and to the correct fields in
+[72:34.20]  your PDFs via API complete the process
+[72:37.40]  with a white labeled e signature the
+[72:39.92]  best part about Anvil is the level of
+[72:42.16]  customization their SDK provides
+[72:44.56]  non-technical folks love Anvil's drag
+[72:46.60]  and drop Builder and developers love
+[72:48.92]  their flexible apis and easy to
+[72:51.40]  understand documentation build document
+[72:53.60]  software fast with and
+[72:55.68]  that's use Anvil
+[72:57.48]  docen to learn more or start a free
+[73:00.04]  trial that's use nv.com
+[73:04.52]  Lenny kind of along these same lines
+[73:06.56]  there's something that uh I've learned
+[73:08.72]  you started at stripe to help people
+[73:11.48]  obsessed with the user experience and
+[73:13.04]  get quality to where it needs to be and
+[73:14.28]  move a lot of these metrics something
+[73:15.44]  called study groups talk about what that
+[73:18.04]  is I'm very curious okay let's imagine
+[73:20.52]  we've we understand our customer
+[73:22.80]  [Music]
+[73:23.96]  we've understand understand their
+[73:25.40]  burning problem we've built a solution
+[73:28.84]  that's in their hands they're using it's
+[73:31.32]  hopefully better than their Alternatives
+[73:32.92]  and they're start they're starting to
+[73:34.24]  use it and we have some real
+[73:36.56]  traction you
+[73:39.08]  could still me measure the success you
+[73:42.12]  could still look at the tweets and then
+[73:43.80]  of course you go to pick it up yourself
+[73:45.28]  and you're like wait a second this thing
+[73:46.36]  is horrible you how how did it get so
+[73:49.00]  bad anyone who's built a product that
+[73:51.28]  has gone over the horizon of it's
+[73:55.40]  actually in production and being used
+[73:57.40]  for some you know a year or more as you
+[74:00.84]  go to iterate on it especially when
+[74:02.20]  you're in a larger company and there's
+[74:03.36]  multiple teams and multiple products
+[74:04.96]  going on there's just some entropy in
+[74:07.40]  the world that causes these things to go
+[74:09.24]  bad uh I actually have a hard time
+[74:12.32]  naturally explaining it you kind of
+[74:14.16]  think to yourself well it's code it just
+[74:15.60]  must be running the same every day but
+[74:17.48]  somehow you do enough things in a row
+[74:20.08]  and what was once a smooth endtoend
+[74:24.04]  flow for accomplishing a task for a
+[74:26.36]  customer is all of a sudden some
+[74:27.76]  Byzantine complicated
+[74:30.40]  broken mall that where all the doors are
+[74:33.84]  busted and you have to know exactly the
+[74:35.92]  way to get through the dashboard to to
+[74:37.64]  solve your problem you're wait a second
+[74:38.96]  we just I thought this was great just a
+[74:40.32]  second ago so all I me many of us have
+[74:42.64]  experienced that
+[74:44.88]  now okay what what are we going to do
+[74:47.64]  about it well one is it is really
+[74:51.24]  difficult to
+[74:55.12]  take time during the day
+[74:59.60]  to allow yourself to even know that this
+[75:02.56]  is true because if you're working on one
+[75:05.32]  particular team you're going to have
+[75:07.48]  some next thing you're shipping you're
+[75:09.64]  going to have your customers you're
+[75:11.20]  going to be doing great product work
+[75:13.96]  Meanwhile your current thing kind of
+[75:16.68]  starts to rot in the world and uh
+[75:20.96]  decrease all the trust you've earned to
+[75:24.24]  build what you're building now it is
+[75:26.76]  actually difficult to decide well what
+[75:28.96]  hours during the week am I going to
+[75:30.68]  block like block off from my future
+[75:33.52]  progress to to to to see it from the
+[75:35.88]  customer perspective today and there are
+[75:39.52]  various techniques to try
+[75:43.40]  to incentivize or to structure a group
+[75:48.32]  of people to do that stripe has a thing
+[75:50.08]  called friction logs as well which is an
+[75:52.80]  a a single individual will protect to be
+[75:55.96]  a customer and go through a product
+[75:58.76]  experience end to end and write it down
+[76:00.96]  and that has been quite successful at
+[76:03.24]  stripe
+[76:04.24]  for very motivated people who
+[76:08.68]  can block off the time and have the wide
+[76:12.04]  enough context to go to do a complicated
+[76:14.92]  thing end to end and have the time to
+[76:16.88]  write it
+[76:18.12]  up and the sort of position in the
+[76:21.68]  company to send it out as a critique to
+[76:25.88]  potentially to not just your own team
+[76:28.84]  but but in in a whole organization so
+[76:30.96]  that's actually like a pretty high bar
+[76:33.44]  to crossover so I was kind of
+[76:35.96]  brainstorming what could we do to make
+[76:38.80]  this more fun and have the frequency by
+[76:42.60]  which we're looking at our own products
+[76:43.84]  dramatically increase and we kind of
+[76:45.52]  iterated through a through through few
+[76:47.32]  through ideas and I landed on this thing
+[76:49.24]  called study group which is
+[76:52.20]  basically a random group of people
+[76:55.72]  inside the company they might not work
+[76:57.44]  on any particular team they might not
+[76:59.20]  all be PMS just like literally anyone
+[77:01.20]  who wants to sign up a support person A
+[77:03.24]  salesperson someone who's you know on
+[77:06.24]  our events team an engineer and our
+[77:08.16]  infrastructure stack anybody can sign up
+[77:10.36]  for a study group we show up maybe four
+[77:13.84]  to eight people total
+[77:16.88]  we pretend to be some company with some
+[77:20.16]  outcome problem maybe we want to accept
+[77:22.60]  money in person at an upcoming uh
+[77:25.44]  farmers market or we want to run a
+[77:28.88]  multi-country global business where we
+[77:32.00]  have software that another business
+[77:35.32]  would use to run their business like
+[77:36.96]  something quite quite complicated we
+[77:38.08]  could pick any motivating goal and there
+[77:41.92]  are two rules to study group rule one is
+[77:46.76]  you do no longer work at stripe you
+[77:49.72]  you're not you're not you do not work at
+[77:51.32]  stripe not pretend you work don't work
+[77:53.44]  at stripe not try to forget you do not
+[77:55.20]  work at stripe you've never worked at
+[77:56.72]  stripe you work at and we make up a name
+[77:59.76]  of the company you know dolphin aquarium
+[78:03.32]  Industries and we will pick a CEO of the
+[78:06.04]  company from the from the group in
+[78:08.24]  amongst us and okay Jenny is the CEO hey
+[78:11.36]  Jenny like what what do you want to do
+[78:12.88]  today like well I want to sell inperson
+[78:15.72]  tickets to the dolphin aquarium it's
+[78:17.36]  like cool where would you start all
+[78:20.20]  right so we actually embody the customer
+[78:23.16]  we will not break character a little bit
+[78:25.04]  of the Improv
+[78:26.24]  thing and as the kind of maestro of
+[78:29.72]  study group I will firmly but kindly if
+[78:34.52]  I hear you use any internal stripe
+[78:36.24]  knowledge which is natural to do you're
+[78:37.72]  like well because you worked on a team
+[78:39.04]  and you you know where that button
+[78:40.60]  really is and you know the docs link
+[78:43.12]  goes a little bit to the wrong place but
+[78:44.92]  if you click the other link you'll get
+[78:46.32]  to it if I can see you use any internal
+[78:49.32]  stripe knowledge I'll just pause and say
+[78:52.12]  hey let's re let's redo the sentence or
+[78:54.44]  readed what we did with with no stripe
+[78:56.80]  knowledge as reminder you don't work at
+[78:57.76]  stripe and it takes us a couple times
+[79:00.96]  but people really get into it and all of
+[79:03.32]  a sudden uh we'll start making up
+[79:05.24]  characters and you know the CEO will be
+[79:07.72]  like oh uh Tim uh you're our designer
+[79:10.40]  you know where are we going to get the
+[79:11.44]  color palette all of a sudden there's a
+[79:13.32]  person who's not a designer right in
+[79:15.44]  real life is now all of a sudden having
+[79:17.52]  to practice the empathy from to be in
+[79:20.60]  the customer's position and because
+[79:21.72]  we're going to be doing it for an hour
+[79:22.92]  hour and a half at a time you start you
+[79:26.64]  actually start to believe that you don't
+[79:28.20]  work at stripe and you you work at do
+[79:30.28]  dolphin aquarium Industries and you
+[79:32.68]  start to really feel it so that's rule
+[79:34.24]  one you don't work a stripe and Rule two
+[79:36.96]  is we're not here to solve any
+[79:40.28]  problems we're not here to critique
+[79:43.24]  we're not here to solution or suggest
+[79:46.20]  we're not here to file bugs all of those
+[79:49.12]  things is recorded we can do that later
+[79:50.80]  whatever this is just about practicing
+[79:54.00]  empathy
+[79:55.16]  for the customer and going through the
+[79:56.64]  product and we have done more than 25 of
+[80:01.76]  these at stripe thus far in the last
+[80:03.92]  just this year last few months of of
+[80:06.32]  2024 uh more than 250 people uh have
+[80:10.32]  gone like participa in the study group
+[80:12.56]  and it is deeply eye openening for those
+[80:15.56]  involved the responses
+[80:19.08]  are you know sort of business emotional
+[80:22.52]  you know not not not like not super
+[80:24.80]  emotional but just wow I I I I sort of
+[80:29.12]  can't believe how hard it was to
+[80:31.92]  accomplish XYZ I thought we were amazing
+[80:34.76]  at blah it's like well we actually are
+[80:36.28]  still pretty good but we need to get
+[80:38.12]  back towards amazing or wow I didn't
+[80:40.44]  even know that internally people would
+[80:43.12]  know that our products did one two and
+[80:44.84]  three and this has become so internally
+[80:47.56]  popular that teams have adopted for
+[80:49.36]  themselves and so we've kind of
+[80:50.16]  franchised study group internally
+[80:51.60]  already where different teams will will
+[80:53.60]  will run it um but I think we're going
+[80:55.36]  to continue it because it I think a
+[80:57.92]  little bit is coming out of the pandemic
+[80:59.64]  people just want more group
+[81:01.68]  activities I think some of it is the
+[81:04.72]  slowness by which we do it we're not
+[81:07.16]  rushing through it um which another
+[81:09.24]  reason I appreciate your podcast as well
+[81:10.60]  it's like let's like really get into the
+[81:12.04]  details and not be rushed for time you
+[81:14.60]  you forget that you have a meeting at
+[81:16.00]  the end kind kind of amount of
+[81:19.08]  time no one is to blame or defensive
+[81:22.72]  because it's not your product at all
+[81:24.40]  it's a random group of people we don't
+[81:26.00]  even introduce ourselves about what team
+[81:28.12]  we worked on uh we're just all here as
+[81:31.08]  participants to embody the customer and
+[81:34.52]  then I think lastly a reason why it's
+[81:36.48]  it's it's work and these are many of
+[81:38.00]  these just been actually super
+[81:39.04]  surprising to me I wouldn't have been
+[81:40.04]  able to prick ahead of time is it is
+[81:42.56]  just fun it's just fun people want to
+[81:45.52]  make up the name of the company they're
+[81:48.24]  excited about what dolphin Industries
+[81:49.88]  would sell uh a person who's not a CTO
+[81:53.48]  in real life gets to pretend to be a CTO
+[81:56.32]  and it just there's a little theatrics
+[81:59.00]  to it but
+[82:01.16]  it it has been different enough from our
+[82:04.84]  our our other approaches to for a
+[82:08.12]  company like stripe which is already
+[82:10.16]  like pretty focused on this topic that
+[82:13.32]  we think that it's there's there's
+[82:14.88]  enough legs here that we're going to
+[82:16.04]  keep it and and kind of invest
+[82:18.88]  in groups pretending to be the customer
+[82:23.84]  and going through it painstakingly
+[82:26.12]  slowly rather
+[82:28.48]  than only demos or only writing which
+[82:33.24]  has other benefits but misses the
+[82:37.32]  participation of a larger group and and
+[82:39.56]  more fresh eyes so that's been it's been
+[82:42.88]  fun and we named it study group I guess
+[82:44.80]  I named it study group because I wasn't
+[82:46.52]  sure what it would be initially so I
+[82:48.68]  just came up with something that sounded
+[82:50.24]  cutesy uh but uh gave me enough leeway
+[82:53.24]  that we could kind of adjust it over
+[82:54.60]  time and this is where we've landed it's
+[82:56.80]  fascinating that something that there's
+[82:59.08]  so much theatrics and uh uh ceremony
+[83:02.60]  necessary for a product team and a
+[83:04.76]  company to find out these things about
+[83:07.76]  their product you would think people are
+[83:09.28]  like oh we know we know how onboarding
+[83:11.28]  looks we know all these things but
+[83:13.36]  you're basically what you're saying is
+[83:14.88]  you don't and you need to do these sorts
+[83:16.72]  of things in order to really know what
+[83:18.60]  your product is is like these days the
+[83:20.40]  customer does not live in our
+[83:22.88]  walls they aren't they're not they're
+[83:25.40]  not here you know they're they're not
+[83:27.68]  they don't know our lingo and it is just
+[83:29.84]  so natural for our internal mindset and
+[83:33.44]  lingo
+[83:36.48]  to flow into the application over time
+[83:39.76]  and you need some counterbalance to get
+[83:42.32]  there and I think that's an has to be an
+[83:44.36]  unnatural counterbalance I it used to
+[83:46.40]  frustrate me actually more like wow why
+[83:49.16]  aren't we all like why why aren't we
+[83:51.28]  doing this well we're actually doing
+[83:52.28]  great work to move something forward and
+[83:53.92]  we have our our local optimizations it'
+[83:56.76]  be difficult to get to this level of
+[83:58.20]  specialization that multi-product
+[84:00.52]  companies are trying to do without that
+[84:03.68]  level
+[84:04.96]  of focus on a per team basis but then
+[84:08.60]  you need something
+[84:10.08]  unnatural to help us bring it back and
+[84:12.28]  so I'm constantly looking for
+[84:15.32]  non-punitive fun ways objectively to get
+[84:20.60]  more perspectives from the outside in if
+[84:23.84]  it's breaking the fourth wall to get on
+[84:25.72]  the phone on Twitter if it's looking at
+[84:28.24]  a metric of users having a bad day which
+[84:29.80]  is just like counting what's happening
+[84:31.48]  can't argue with that or a random group
+[84:34.04]  of people just kind of scratching their
+[84:35.56]  head trying to find a button those are
+[84:39.00]  truths those are truths in the world
+[84:41.56]  that we're trying to make sure are
+[84:43.48]  inputs to all of our teams and if you
+[84:47.48]  don't have those inputs I can totally
+[84:48.96]  naturally see where the entropy of the
+[84:51.20]  world like leads you to have
+[84:54.72]  Frankenstein bad products even when all
+[84:58.20]  the individual parts are like well oiled
+[85:01.52]  and and run by great people so you need
+[85:03.76]  something on
+[85:04.92]  natural there's an interesting Trend
+[85:07.00]  through our and thread through our talk
+[85:09.08]  so far broadly there's just like an
+[85:11.56]  obsession with making something great
+[85:13.92]  and awesome and then a layer below is
+[85:16.40]  just an obsession with the user
+[85:17.56]  experience being as great as possible
+[85:20.84]  and for a lot of PMS there's not a
+[85:22.80]  direct line between make the experience
+[85:24.80]  as amazing as possible to growth and
+[85:27.20]  revenue and success and things like that
+[85:29.00]  and it feels like for you and for stripe
+[85:31.48]  broadly there's this in innate uh
+[85:34.44]  implication if we're making the
+[85:36.52]  experience better and better and better
+[85:38.44]  we will grow uh you're not in your head
+[85:40.60]  sideways a little bit so I'd love to
+[85:41.88]  hear just your thoughts on just like
+[85:43.40]  this obsession with experience and user
+[85:46.32]  issues and okay but we also have to goow
+[85:48.56]  the business what are the metrics for
+[85:50.24]  moving if someone else has a strategy
+[85:52.92]  for moving Revenue that is getting it
+[85:54.76]  from customers I want to know about it
+[85:57.24]  because it is so hard to get it from
+[85:58.68]  customers if there's some faster path
+[86:02.00]  please tweet me and tell me about it
+[86:04.00]  because we work this is very hard a lot
+[86:06.60]  of work to do so if there's something
+[86:11.88]  else I want it on the table but I often
+[86:14.68]  find it's part of the product experience
+[86:16.20]  so maybe it's internal sales tools we
+[86:19.76]  can do a study group about our internal
+[86:21.24]  sales tools process and our deal desk
+[86:23.36]  and our uh margin structure we can do a
+[86:28.60]  friction log on our thirdparty vendor
+[86:30.96]  process or a migration service or the
+[86:33.64]  way um an ecosystem partner helps deploy
+[86:39.56]  our services and into a big Enterprise
+[86:41.76]  like nothing is sort of off limits from
+[86:44.32]  product in fact I was chatting with a
+[86:46.72]  friend who runs a company and they were
+[86:49.16]  small company on the verge of product
+[86:51.52]  Market fit starting to starting to feel
+[86:53.00]  customers starting to pull and they're
+[86:54.32]  like oh but our our self-service funnel
+[86:56.36]  is it's so leaky and we have all this
+[86:59.24]  support coming through
+[87:02.04]  self-service first of all
+[87:04.72]  congratulations unbelievable that
+[87:06.64]  they're going through your product even
+[87:08.12]  attempting self-service and contacting
+[87:09.72]  you the majority case would be no one
+[87:12.16]  tries or they try and fail and don't
+[87:13.96]  contact you so again what a problem to
+[87:15.96]  have and two they wanted to minimize the
+[87:18.92]  support in that particular case it's
+[87:20.20]  like well what's actually in those
+[87:21.28]  support tickets what's in those sales
+[87:22.84]  cont there's a really sales cont
+[87:24.24]  contacts they're like oh they want to
+[87:26.24]  learn more about how to get started they
+[87:28.84]  want to know the expertise about this is
+[87:31.56]  a particular company it's a healthcare
+[87:32.92]  related company they wanted to know
+[87:34.40]  their health the healthcare choices uh
+[87:36.48]  available they wanted to know how to
+[87:38.60]  migrate from some old system they had to
+[87:40.88]  it I was like that's the product that's
+[87:42.28]  the product like the thing you're
+[87:43.36]  talking about is the product turn those
+[87:46.04]  moments during your self serve process
+[87:48.64]  into not self- serve and make the make
+[87:51.84]  the product experience be let's get you
+[87:53.56]  on the phone let when the and now when
+[87:55.80]  they when when they get on the phone
+[87:57.40]  they know the first name of the person
+[87:58.80]  they're talking to because they they
+[87:59.88]  have it from the onboarding for and all
+[88:01.68]  of a sudden it feels like you are still
+[88:05.96]  in the product but it's not software now
+[88:08.72]  it's a person but it's a person backed
+[88:11.12]  by internal software which knows as much
+[88:14.00]  as as they can about the customer and
+[88:15.56]  what they want and I was really inspired
+[88:17.44]  by U Fidelity which is a big financial
+[88:20.32]  institution where you know you many
+[88:23.40]  people listening might have switched
+[88:25.28]  jobs and had to move their 401k or
+[88:27.52]  something like this from job a to job
+[88:30.44]  B you know maybe in some Universe it'll
+[88:33.20]  be three clicks but not today or
+[88:35.44]  certainly not when I tried a couple
+[88:36.60]  years ago you got to call and go on a
+[88:39.08]  phone tree and all the shenanigans and
+[88:41.76]  then I got on on the line with someone
+[88:43.68]  from Fidelity they're like hi Jeff they
+[88:46.52]  knew about the old company they
+[88:49.44]  confirmed my address they said we by the
+[88:51.96]  way uh this is not a digital process yet
+[88:54.52]  we're going to FedEx you an
+[88:58.24]  envelope and inside it is going to be
+[89:00.56]  the thing for you to sign here's going
+[89:02.40]  to be exactly where to sign here's like
+[89:03.84]  a picture we're going to sign we've put
+[89:05.48]  another envelope inside that envelope
+[89:07.68]  ready to go and so you just take the
+[89:09.80]  papers from envelope one sign them where
+[89:11.96]  it says and put them in envelope two and
+[89:14.24]  like put it back to the Fest it's like
+[89:16.08]  wow that is product that is a product
+[89:18.12]  experience where I think some people
+[89:19.16]  would say Oh look The Product experience
+[89:20.96]  has to only be in software so I feel
+[89:23.76]  when people think oh you
+[89:26.76]  know product quality and craft has some
+[89:30.24]  limit towards business value like
+[89:32.24]  there's some ASM toote that you have to
+[89:35.64]  be like well kind of PL product playtime
+[89:39.72]  quality is over we need to talk about
+[89:41.36]  business it's like let's figure out
+[89:43.32]  exactly what is causing the business to
+[89:45.20]  happen and make it product even if it
+[89:47.24]  doesn't look naturally the same as our
+[89:50.68]  as our sort of SAS software browser
+[89:52.84]  mobile whatever vers vers I think we can
+[89:54.72]  see the entire experience as it and from
+[89:57.28]  there I include the sales process I
+[89:59.84]  include the support process I include uh
+[90:02.96]  you know tools that help with compliance
+[90:05.12]  and everything else
+[90:07.44]  and again if people have a way to make
+[90:10.08]  all those things bad and lead to Great
+[90:13.48]  uh increasing Revenue over time in
+[90:14.92]  sustainable ways like I want to know
+[90:16.92]  about that because that sounds so much
+[90:18.92]  easier than than the version that we're
+[90:22.52]  trying I love that and clearly it's
+[90:24.64]  worked for
+[90:25.60]  stripe just one last question I want to
+[90:27.60]  talk about Atlas and dive into just like
+[90:29.32]  what is atlas and how is it doing and
+[90:30.92]  things like that I know there's some new
+[90:32.36]  stuff coming that you're going to share
+[90:34.12]  but one last question about study groups
+[90:36.32]  who how do you decide what product
+[90:38.08]  you're going to pick to do a study group
+[90:39.36]  on and then what is the expectation with
+[90:41.04]  the result I imagine there's a PM
+[90:42.44]  sitting around like oh my God I just got
+[90:44.28]  this 10-page report of all the
+[90:47.28]  problems so initially I just made up a
+[90:49.80]  list of stuff that I thought would be
+[90:50.96]  fun to study group to kind of kick it
+[90:52.24]  off and now because it has a of an
+[90:54.60]  internal brand and it's exciting and
+[90:57.28]  people have gone to a study group say
+[90:58.80]  nice things about study group they're
+[91:00.44]  they actually proactively say hey we
+[91:02.80]  should study group blah or uh we're
+[91:06.72]  launching something next week we should
+[91:08.20]  study group it before it goes out the
+[91:09.96]  door
+[91:10.84]  or now I actually just have a huge
+[91:13.04]  backlog of things to study group uh
+[91:15.80]  based on what people want and then and
+[91:17.44]  now we're kind of again franchising it
+[91:19.28]  so we're going to have study group
+[91:20.28]  captains and people run their own study
+[91:22.36]  groups and so I can we can really scale
+[91:24.72]  this Behavior but we did our first study
+[91:26.76]  group of an internal tool recently and
+[91:28.64]  so that I think is going to catch on
+[91:30.72]  just any anything at all can be study
+[91:32.32]  grouped it just takes about an hour and
+[91:34.52]  couple people and you open up the zoom
+[91:35.92]  and that's it and then for expectation
+[91:39.00]  wise look you
+[91:42.28]  can it is it is so tempting
+[91:47.84]  to put more regulation on something okay
+[91:52.00]  well everything coming out of this
+[91:54.08]  program needs to be scored and rubric
+[91:57.40]  and have slas that is
+[92:00.00]  extremely reasonable as some of these
+[92:02.68]  next steps because we do notice things
+[92:03.88]  that are of serious issues and we you
+[92:06.44]  know we have some formal processes
+[92:08.44]  inside of stripe for elevating bugs to
+[92:12.32]  certain priority levels that get tagged
+[92:14.72]  and have slas for teams to acknowledge
+[92:16.60]  and review and so we kind of funnel the
+[92:19.72]  outputs of a study group into our
+[92:22.80]  already existing formal processes rather
+[92:25.60]  than having some new special thing
+[92:29.40]  that's going to bother a particular team
+[92:31.68]  I will say though
+[92:33.56]  that it is difficult to watch one of
+[92:36.60]  these study groups a and if you are the
+[92:39.24]  team you know involved in some piece of
+[92:41.72]  it and not want to act on it uh
+[92:46.32]  because seeing your
+[92:50.00]  fellow
+[92:51.84]  teammates struggle to use your thing in
+[92:55.48]  some way is more motivating than the
+[92:57.24]  customer because you can kind of always
+[92:59.20]  say to the customer well they didn't
+[93:00.56]  really know or they have some special
+[93:03.13]  [Music]
+[93:04.44]  setup you know you probably shouldn't
+[93:06.40]  say those things but you you can kind of
+[93:08.36]  rationalize it
+[93:10.08]  whereas a group of people incentivized
+[93:12.32]  to have actually accomplished it who got
+[93:13.88]  together to do so painstakingly
+[93:17.80]  slowly not being able to do
+[93:21.44]  so if that's not what excites you as a
+[93:24.00]  product person to want to solve you know
+[93:26.60]  it's like this thing's not not for you
+[93:29.44]  but then again you have your own
+[93:31.88]  optimization system you have your own
+[93:33.32]  things you need to ship that's and and
+[93:35.28]  study group doesn't have a mandate um
+[93:38.88]  that comes from it we have our own we
+[93:41.32]  it's more of a cultural piece of
+[93:43.56]  information that is very high signal and
+[93:45.80]  then people tend to use that high signal
+[93:48.00]  for good prioritization I will say
+[93:50.12]  though that
+[93:51.68]  we have added
+[93:54.28]  s the slas is to certain bug levels that
+[93:57.96]  begin to match a bit of our incident
+[94:00.12]  process so you know in an incident
+[94:02.76]  stripe like in many companies you know
+[94:04.04]  like pencils down fix the problem
+[94:06.88]  severity
+[94:08.40]  levels not non-negotiable slack rooms
+[94:11.36]  happen War rooms all that stuff you know
+[94:13.60]  you don't want to do that with every
+[94:14.72]  single bug but we have a rubric of craft
+[94:19.56]  related tags for our bug system and if
+[94:22.72]  it is a sort of a t0 bug which is not an
+[94:25.72]  incident right it doesn't mean to put
+[94:27.36]  down your pencils you do need to
+[94:29.32]  acknowledge it at stripe within seven
+[94:31.04]  days and even if it doesn't mean to fix
+[94:32.88]  it it's like a person looks at it and
+[94:35.28]  says hey we're going to like do it or
+[94:36.76]  not do it that's a still pretty strong
+[94:40.20]  Bar for a non-incident related craft
+[94:44.60]  issue it feels just at stripe there's
+[94:47.28]  this uh cultural focus on we want to
+[94:50.28]  make the product great we want to make
+[94:52.20]  the experience as great as possible a
+[94:54.00]  lot of companies it's just teams we have
+[94:56.12]  this goal we're not going to do anything
+[94:57.40]  that isn't driving this metric and goal
+[94:58.96]  that we have and I think for teams like
+[95:01.36]  that it's hard to hear just like oh
+[95:02.72]  someone's going to send you all of these
+[95:04.08]  problems with your experience you know
+[95:05.64]  there's like the negative version where
+[95:06.88]  the founders like goes through the
+[95:08.24]  product like a CEO a larger company just
+[95:10.64]  oh my God look at all these problems you
+[95:11.76]  need to fix these immediately and a lot
+[95:13.84]  of times those it's like completely
+[95:15.84]  distracting from the things they need to
+[95:17.24]  do the goals they're trying to drive
+[95:18.68]  things that act really really matter
+[95:20.92]  that the SE may not be thinking about
+[95:22.76]  and it feels like you're trying to find
+[95:24.40]  this balance of like here's like
+[95:26.72]  problems that exist you don't need to
+[95:28.20]  fix them you probably should here's like
+[95:30.24]  the most important stuff but also
+[95:32.80]  there's often you find a correlation
+[95:34.08]  between make the experience better
+[95:35.32]  you're going to you're going to do
+[95:36.36]  better there's a huge amount of trust
+[95:38.48]  here involved in your colleagues which
+[95:42.00]  is we want to provide teams great
+[95:46.36]  information and they the best teams
+[95:49.08]  welcome that information it doesn't mean
+[95:50.88]  that it comes with a alter opinion from
+[95:54.52]  the outside world that says You must do
+[95:56.40]  X we have a rubric on some of the craft
+[96:01.08]  related bugs but it but again we also
+[96:04.08]  allow our we let the teams relabel them
+[96:08.36]  and so maybe it's actually not a p Zero
+[96:10.56]  from their eyes and we like that's the
+[96:12.12]  TR that's the trust we put in the teams
+[96:14.00]  I think that the the failure mode is
+[96:16.80]  when you don't look and and so we need
+[96:20.48]  unnatural safe fun
+[96:25.32]  lore that gets us out of our chair and
+[96:28.72]  into the customer's mindset best is if
+[96:31.28]  it's you and you're your own customer
+[96:34.00]  okay second best would be sitting right
+[96:36.52]  next to the customer in the outside
+[96:37.84]  world and then like okay fine I'll take
+[96:40.24]  a third best which is pantam mining the
+[96:42.24]  customer and with a zero with enforcing
+[96:46.20]  you don't use any internal knowledge if
+[96:48.88]  if you have practices in those three
+[96:51.48]  categories
+[96:54.08]  I'm comfortable with the failure modes I
+[96:56.76]  love that this is definitely going to be
+[96:58.84]  the longest episode I've ever done which
+[97:00.24]  is exactly what I expected and I'm happy
+[97:02.72]  that we're doing this you know everyone
+[97:04.52]  go 1.75x or something I like when people
+[97:08.08]  are like oh this episode was really good
+[97:09.72]  I had to slow down to 1.75 or something
+[97:13.16]  what how are you even listening at that
+[97:15.08]  speed um no let's one 1.0 speed that's
+[97:18.96]  what this episode needs to be there's
+[97:20.56]  two more areas I want to spend some time
+[97:21.76]  on one is atlas we've talked a lot about
+[97:23.80]  on the surface of Atlas I want to help
+[97:25.36]  people understand what the hell it is
+[97:26.52]  and the stuff that's happening there and
+[97:28.56]  two I want to talk about getting stuff
+[97:29.84]  done at a big company something that
+[97:32.00]  you've done at stripe and I hear you
+[97:34.44]  have a lot of good advice on so first of
+[97:36.92]  all what is atlas we've talked a bit bit
+[97:39.24]  about it what's the best way to
+[97:40.32]  understand what Atlas is and who it's
+[97:41.40]  for in
+[97:43.92]  2016 a bunch of Stripes were traveling
+[97:46.40]  the world uh Stripes is what we call
+[97:48.80]  call teammates here and they're just
+[97:51.12]  hearing stories from entrepreneurs
+[97:52.60]  around the world and you would hear
+[97:54.96]  this unbelievable story from incredible
+[97:58.04]  entrepreneurs who are have a laptop
+[98:00.52]  which is that they'd have to fly to the
+[98:02.72]  United
+[98:03.88]  States on an airplane to make a US
+[98:07.96]  company in order to get access to US
+[98:11.16]  Financial system to raise money from us
+[98:14.44]  or or Global Investors often to take you
+[98:18.32]  know USD or to charge us customers and
+[98:22.24]  you know you could have sat around in
+[98:23.60]  said huh is that illegal they don't live
+[98:27.00]  they don't live in the US you know can
+[98:28.88]  they have a US company absolutely the US
+[98:31.68]  loves this it is incredibly encouraged
+[98:33.92]  for people from around the world to make
+[98:35.32]  a US company and many people do now why
+[98:39.08]  did it require an
+[98:41.96]  airplane right and so you you you start
+[98:44.88]  to hear that kind of thing at a coffee
+[98:47.08]  shop amongst someone with a laptop who
+[98:49.64]  has access to the whole internet and
+[98:52.16]  that is a burning problem
+[98:54.48]  right that is not a tier three issue I
+[98:58.08]  am not able to run my business without
+[99:00.08]  getting on an airplane should be
+[99:02.96]  sending you know alerts off in your
+[99:06.36]  whole in your whole psyche that you have
+[99:08.04]  discovered some something important and
+[99:10.04]  so I wasn't at stripe at the time and
+[99:12.44]  I'm very but I'm very thankful that I
+[99:14.32]  was running my own startup at the time I
+[99:16.00]  was very thankful that the people at
+[99:18.32]  stripe decided to try to tackle that
+[99:20.28]  problem and so Atlas is a way
+[99:23.92]  to start a company in a few clicks and
+[99:27.08]  we think that's an incredibly big deal
+[99:31.44]  because while there are smart humans
+[99:34.08]  across the whole planet the opportunity
+[99:37.16]  that they have is not uniform and it is
+[99:40.84]  but it's a little strange because it's
+[99:42.24]  all the same MacBooks and it's a little
+[99:44.56]  strange because it's all the same IP
+[99:46.08]  addresses and we all have plenty of
+[99:47.52]  bandwidth and smarts and so what can we
+[99:50.20]  do to dramatically lower the barrier
+[99:54.00]  to great people solving problems and we
+[99:57.44]  found over and over again
+[100:01.16]  that increasing the ease and simplicity
+[100:05.32]  and decreasing the cost and and
+[100:07.92]  complexity tends to lead to just more of
+[100:11.08]  that thing and we have a fundamental
+[100:14.00]  belief that there should be more
+[100:16.48]  startups and they're not finite and that
+[100:19.72]  belief comes from both just a core hope
+[100:23.32]  because there are so many problems in
+[100:24.48]  the world that don't seem to be being
+[100:25.76]  solved fast enough by our current
+[100:27.52]  institutions and larger companies that
+[100:29.16]  we think we'll actually you know we need
+[100:32.16]  entrepreneurial energy to tackle them
+[100:34.20]  and then it's also comes from experience
+[100:37.04]  of seeing it happened instacart signed
+[100:39.44]  up for strip with a Gmail address and
+[100:41.52]  then Co happened and they delivered
+[100:43.76]  critical food to everyone when when
+[100:46.96]  people were reasonably uh not allowed to
+[100:50.88]  go to the grocery store easily so you
+[100:53.64]  just don't know what the next Gmail
+[100:56.00]  address is going to do and so in Atlas
+[101:01.68]  we radically try to simplify the process
+[101:05.00]  of getting a company started and that
+[101:06.72]  mission has taken us to just solve more
+[101:10.68]  of the problem over time and so over the
+[101:13.44]  last few years for those who have either
+[101:15.00]  used Atlas or have started a company or
+[101:18.64]  maybe follow along on Twitter a bit you
+[101:20.76]  might have seen just a progression of
+[101:23.92]  of complexity that used to exist being
+[101:28.24]  automated um and so a big one that we
+[101:30.88]  did about a year ago was this 83b
+[101:33.76]  election which is
+[101:36.08]  this absolutely Byzantine sillly system
+[101:40.44]  by which you have 30 calendar days to
+[101:42.68]  send a one-page document to the IRS that
+[101:45.00]  could radically change the economics of
+[101:48.40]  of how you are um incentivized as a
+[101:51.44]  founder and this is not one of these you
+[101:53.48]  know greedy loophole situations the IRS
+[101:56.28]  in the 1980s made this made this
+[102:01.48]  uh this IRS rule in order to spurm or
+[102:05.88]  entrepreneurship they want this and the
+[102:08.56]  only issue is they made it extremely
+[102:11.00]  difficult to accomplish you have to send
+[102:13.08]  a snail mail in to an IRS address in a
+[102:16.16]  particular format in a particular way
+[102:18.56]  with no verification that it happened at
+[102:20.56]  all and if you do it 31 calendar days
+[102:23.28]  there's no redo okay now again if you're
+[102:26.48]  a product person you
+[102:28.24]  hear the founders terrified all day long
+[102:32.72]  about this same issue just alarm bells
+[102:34.64]  in your head all the whole time and so I
+[102:36.52]  had experienced it for myself as a
+[102:37.72]  Founder several times and I also just
+[102:39.68]  heard story after Story and I just put
+[102:41.04]  on my to-do list for the team we are
+[102:43.52]  going to solve this a3b election thing
+[102:45.44]  and there are very good reasons not to
+[102:46.88]  do it uh because it comes with potential
+[102:50.56]  huge liability don't want to screw it up
+[102:52.24]  it's nail mail
+[102:53.64]  uh you're really going to monetize this
+[102:55.36]  you know is this really what the kind of
+[102:58.84]  is a competitive advantage to do it you
+[103:00.36]  can kind of argue yourself not to do it
+[103:02.08]  in a million ways but again back to the
+[103:04.36]  mission of just taking all of this
+[103:06.20]  complexity and turning into a single
+[103:07.96]  click it was obvious to us and we and we
+[103:10.12]  got started on it infrastructurally
+[103:12.32]  we've been automating these steps and
+[103:15.68]  when this podcast errors I guess today
+[103:18.24]  uh uh it will be true that when you go
+[103:22.04]  to start a company on Atlas
+[103:23.84]  it will just be a single click you go to
+[103:27.96]  type in your friends names how what the
+[103:31.00]  name of the company will be it'll tell
+[103:32.68]  you if it's available automatically or
+[103:33.96]  not you can split the company up 50/50
+[103:36.64]  or whatever you want to do fill it a few
+[103:38.52]  things and you click go and then like a
+[103:42.88]  burrito coming
+[103:44.88]  to like a pizza tracker we will just
+[103:48.24]  handle all of the downstream activities
+[103:51.04]  that used to be
+[103:53.36]  hey remember to come back in and
+[103:55.44]  purchase your shares why am I purchasing
+[103:58.08]  my shares I'm just getting started why
+[103:59.96]  am I writing a check for $10 and putting
+[104:03.20]  into a bank account that I can't even
+[104:05.04]  open yet and then I have to wait for
+[104:06.72]  that to be done to get the 83 all of
+[104:09.72]  those steps are now just handled in the
+[104:12.00]  background so that we can get you ready
+[104:14.16]  for
+[104:15.08]  business in a day or two and so you can
+[104:18.32]  quit your you know this is our vision is
+[104:19.60]  so you can quit your job on a Sunday
+[104:20.92]  night get the Sunday scaries I'm done
+[104:22.80]  with it thing and on Monday morning fill
+[104:26.92]  out this form and the next day be able
+[104:31.24]  to run a billion dollar business because
+[104:33.48]  we will have automatically handled
+[104:36.84]  getting you access to banking systems to
+[104:40.44]  Payment Systems to handling all the
+[104:42.52]  equity paperwork filing your 83b
+[104:44.48]  election where you can just shift from
+[104:47.40]  having worrying about the company
+[104:49.00]  starting process to just building and
+[104:51.64]  shipping and you'll just get kind
+[104:53.44]  updates in the background cool the IRS
+[104:56.20]  has given you a tax ID cool your 83b
+[104:58.68]  election is filed cool all the founders
+[105:01.64]  have their equity and you're ready ready
+[105:03.04]  to go on the cap table and we've done
+[105:05.20]  this by deeply integrating with the
+[105:08.56]  governments and deeply integrating with
+[105:10.52]  banking Partners at where we can get you
+[105:13.76]  access
+[105:14.88]  to the financial system
+[105:19.16]  before the IRS and the other governments
+[105:22.16]  come back with with their sort of
+[105:23.68]  official yeses because we have we take
+[105:25.80]  care of the problem in the background by
+[105:27.56]  which we're faxing phone calling filling
+[105:29.72]  out forms on your behalf and so we just
+[105:31.60]  want to take all that
+[105:34.32]  complexity and just erase it so that you
+[105:38.08]  get the same thing the YC group gets
+[105:40.64]  when they start that checklist that they
+[105:42.44]  go through we just have the robot do
+[105:44.12]  exactly the same thing and so in some
+[105:45.92]  ways it is a really big deal in a big
+[105:48.20]  ship because it it completely automates
+[105:53.04]  it's the company starting process but in
+[105:55.88]  other ways it's an incredibly
+[105:57.36]  incremental step that it's taken us
+[105:59.12]  three years to get to where we had to
+[106:03.84]  systematically automate the internal
+[106:06.00]  steps each one and now we've done the
+[106:08.00]  work to wrap it all up into one button
+[106:11.96]  you can just you can just watch how your
+[106:13.24]  company's doing the
+[106:14.80]  dashboard well first of all congrats
+[106:16.84]  Jeff and the atlas team on shipping this
+[106:18.52]  I know this a big milestone and it's
+[106:19.96]  been a long time coming yeah Atlas was
+[106:22.56]  actually a little reasonable before we
+[106:24.52]  decided to do all this work it's like
+[106:26.04]  why do why do this next step of
+[106:29.04]  completely automating it when it was
+[106:30.64]  actually like fairly straightforward
+[106:33.08]  before um Atlas has above 80 MPS uh
+[106:37.28]  which is quite High uh Apple is in the
+[106:40.24]  low 60s airpods is 75 I love my airpods
+[106:44.84]  uh so Atlas in the 80s with almost 50%
+[106:48.60]  response rate is quite high and so we
+[106:51.56]  still chose to do another year of work
+[106:53.88]  to automate all of this work behind
+[106:56.28]  behind the scenes because we
+[106:58.64]  see
+[107:00.20]  that companies are charging their
+[107:02.80]  customers
+[107:04.40]  sooner when they go through this
+[107:06.32]  automated process versus waiting
+[107:10.32]  and it's you know a little strange you
+[107:13.12]  just started your company well what does
+[107:15.16]  it really matter to wait an extra s days
+[107:17.60]  or 20 days before you can get off you
+[107:20.72]  before you can really get going on
+[107:21.96]  business those are really fragile days
+[107:23.76]  with your building and to some of our
+[107:25.28]  conversation
+[107:26.84]  earlier that amazing feeling of getting
+[107:29.32]  your first customer and being in it with
+[107:30.92]  them and money actually exchanging hands
+[107:33.00]  and getting that relationship if we can
+[107:35.40]  slide that forward in the world by a
+[107:37.76]  couple days or weeks which we we see
+[107:39.80]  we're seeing like half the time it takes
+[107:42.84]  to get to your first customer just take
+[107:44.48]  like shave a whole week off of your
+[107:46.32]  company
+[107:47.84]  and you can kind of see GDP being like
+[107:51.20]  born like sooner
+[107:53.76]  and you you went my whole life knowing
+[107:57.76]  that okay GDP is not finite and it can
+[108:01.32]  grow but I've never really seen it and
+[108:04.16]  now I've actually seen it grow faster
+[108:06.92]  sooner and I think anything we could do
+[108:09.16]  to just move that forward is going to
+[108:13.28]  inspire and and lower the bar for more
+[108:16.36]  people to be entrepreneur because
+[108:17.40]  they'll see how satisfying that can be
+[108:21.40]  and another stat which really
+[108:23.84]  was interesting to me recently is that
+[108:25.72]  we have seen since doing much of this
+[108:27.76]  automation work that more solo Founders
+[108:31.32]  are using Atlas than ever before and I
+[108:33.64]  think it's because you can just do a lot
+[108:35.56]  more on the internet as a Founder with
+[108:38.00]  no code tools and everything else and
+[108:39.64]  get going very cool to see
+[108:43.04]  that bringing the best of the internet
+[108:45.56]  and making it available worldwide can
+[108:47.52]  cause more people can be correlated with
+[108:50.80]  more people becoming Entre rurs and I
+[108:53.72]  think we should just keep doing that it
+[108:55.80]  incredibly inspiring and I think this is
+[108:57.80]  going to be a huge deal uh like it's
+[108:59.76]  hard to think about how many what sorts
+[109:01.68]  of changes in Tech could transform how
+[109:04.76]  many companies are started and how many
+[109:06.44]  companies not just started but actually
+[109:08.36]  happen because to your point you may
+[109:09.72]  start in like nah never mind a few days
+[109:11.36]  later if it's still stuck in some Q
+[109:13.12]  totally and then you don't know where
+[109:14.24]  these things are going to go we have the
+[109:17.64]  sort of cohort of 2024 startups in Atlas
+[109:21.80]  got to 50 million in Revenue twice as
+[109:25.44]  quickly as the cohort in 2023 and so we
+[109:28.56]  kind of also think sometimes oh it was
+[109:30.04]  the pandemic that pushed everything
+[109:31.36]  online that those are our best years
+[109:33.00]  it's like we're seeing the earliest
+[109:35.20]  cohort charts of new
+[109:37.40]  startups just like CRA cracking up and
+[109:40.28]  to the right and that's very exciting
+[109:42.72]  because you also hear sometimes well the
+[109:44.24]  funding Market is down and valuations
+[109:46.20]  and this and that the other that is much
+[109:48.44]  more of a point in
+[109:50.56]  time Capital analysis and much less of a
+[109:54.92]  business that just how businesses are
+[109:57.28]  working dayto day it's really in the
+[109:59.60]  revenue that that is representative of
+[110:02.20]  their of their Futures and that looks
+[110:04.44]  amazingly bright and then of course
+[110:06.24]  these companies go off to do pretty wild
+[110:08.36]  things companies that have started
+[110:09.88]  through Atlas there's been 55,000 of
+[110:11.92]  them uh to date are doing five billion
+[110:14.68]  dollar a year in Revenue I think it
+[110:16.36]  actually resets their expectations of
+[110:18.00]  what other tools will be in the future
+[110:19.56]  it's like well if it was so easy for me
+[110:21.04]  to get my company started well why is it
+[110:22.76]  so hard to do banking well thankfully
+[110:24.44]  there are some great services for it but
+[110:25.80]  I think it's if we can if we can push
+[110:29.36]  people towards expectations higher then
+[110:32.40]  they will want to make their companies
+[110:33.92]  better and and we just all benefit from
+[110:37.52]  that how much of this uh is based on you
+[110:41.56]  guys doing like sending faxes and
+[110:43.96]  sending mail yourself like I don't know
+[110:46.00]  how much you can talk about the behind
+[110:47.20]  the scenes but is there a lot of there
+[110:48.92]  this Ops Element to automating some of
+[110:50.88]  this Atlas is in total 10
+[110:54.32]  people uh which is I think a relatively
+[110:56.80]  small group for
+[110:59.04]  the role that it plays in The Wider
+[111:03.40]  startup ecosystem
+[111:06.12]  and we just don't pick up work we can't
+[111:12.08]  automate because we know that we need
+[111:14.40]  the leverage and so we're not going to
+[111:18.60]  tackle we're not going to put ourselves
+[111:20.44]  in situations in which we have to
+[111:22.88]  compete to be the best we're going to
+[111:24.48]  put ourselves in situations where we can
+[111:26.12]  automate it and be the
+[111:27.76]  only and and like that's a different
+[111:30.12]  mindset so in terms of you know why we
+[111:32.56]  picked up 83b election as a topic like
+[111:35.32]  when we made that decision we made a
+[111:36.84]  commitment that we're going to we're
+[111:39.08]  going to do this
+[111:40.64]  forever like we're we're going to do
+[111:42.84]  this forever this a piece of
+[111:44.40]  infrastructure for the rest of the
+[111:46.12]  internet that is a very high bar to to
+[111:49.40]  set as the thing you're going to do and
+[111:50.72]  so we're happy to take our time this is
+[111:53.00]  part of versus like go go go versus the
+[111:54.96]  long-term compounding go go go was when
+[111:57.72]  we assigned one
+[112:00.36]  engineer hey it's your job today to send
+[112:04.08]  one piece of paper to the office with
+[112:06.12]  this third-party uh mail service why
+[112:10.32]  doesn't
+[112:11.48]  matter today just send a single piece of
+[112:14.60]  paper to the office and uh incredible
+[112:16.72]  engineer and she went on to lead all all
+[112:18.80]  the 83 V election
+[112:20.40]  work she sent it and the proof of just
+[112:24.36]  receiving the piece of paper at the
+[112:27.24]  office that we had just sent yesterday
+[112:30.04]  is incredible proof right we like well
+[112:32.52]  look I mean the A3 election is just
+[112:33.92]  sending this piece of paper to to the
+[112:35.48]  IRS like we just did it right that that
+[112:37.76]  go go go as soon as possible was
+[112:39.44]  extremely useful because it's just like
+[112:41.04]  look this exists like we can do it come
+[112:43.88]  on on the long-term compounding part we
+[112:46.48]  were extremely serious about how we
+[112:48.56]  picked our third party vendors and
+[112:50.12]  backup vendors and what promises and
+[112:53.00]  slas and Reporting systems and alerts
+[112:55.60]  and playbooks and backup processes like
+[112:58.12]  there's is a very intense amount of
+[113:01.32]  internal structure we use and but again
+[113:03.76]  we have to look at where the value is
+[113:05.04]  the value is in making sure it happens
+[113:06.56]  does it need to be us sending the mail
+[113:08.72]  does it need to be us talking to
+[113:10.04]  government not necessarily and we have
+[113:12.72]  chosen to work with third parties and
+[113:14.20]  many backup third parties as well
+[113:15.84]  because one there's expertise in the
+[113:18.24]  world of physically Printing and sending
+[113:20.28]  mail that the 10 of us are not going to
+[113:23.04]  today become experts in and two I think
+[113:25.68]  it also causes us to build better
+[113:29.16]  software in that we now need to
+[113:33.48]  evaluate if something's actually working
+[113:37.08]  because it's happening externally
+[113:38.72]  whereas when you build it yourself again
+[113:40.28]  you have this natural feeling well we
+[113:42.08]  built it it must be working oh later
+[113:44.28]  we'll add alerts you know later when
+[113:46.64]  there are problems we'll figure out
+[113:47.80]  playbooks well look when it's a third
+[113:49.48]  party building it you're like wait a
+[113:51.40]  second WS if they screw up like cool we
+[113:53.84]  better figure that out we better OCR all
+[113:55.84]  the results we better you know do all
+[113:57.80]  these check sums we better and it would
+[114:01.36]  be awesome if we could always treat our
+[114:02.84]  internal work that way but because it
+[114:05.24]  was external it forced us to be more
+[114:08.84]  rigid where we needed to be rigid and
+[114:10.64]  create interfaces and and kind of
+[114:12.36]  commitments and again we work with a
+[114:14.20]  bunch of great third parties uh and back
+[114:16.20]  up third parties to execute this and we
+[114:18.20]  and each year we write a document called
+[114:19.56]  should we do this ourselves and we look
+[114:20.92]  at the other nine of us around the room
+[114:22.08]  and go of course we shouldn't let's go
+[114:24.04]  onto something else so again we're just
+[114:26.68]  we're we're just really stitching it
+[114:28.44]  together but ensuring that it happens
+[114:31.60]  awesome okay I was imagining fax
+[114:33.32]  machines just there are fax machines
+[114:35.32]  occurring there are fax machines
+[114:36.72]  occurring not in theice there and there
+[114:38.96]  are phone calls being made and there are
+[114:40.72]  robots waiting on phones uh on hold as
+[114:43.92]  well there's oh amazing there's quite a
+[114:45.56]  lot going on ai ai is here uh I saw a
+[114:48.64]  stat that one in six new Delaware
+[114:51.00]  Corporations are now started on stripe
+[114:52.92]  Atlas that's absurd yep I'm very excited
+[114:56.28]  to tell you when it's one in five but I
+[114:58.00]  but is not today okay sounds like we're
+[115:00.40]  close we're on our way sounds like we're
+[115:02.36]  close the other stat I have here is that
+[115:04.00]  uh the fastest growing cities for
+[115:06.04]  startups uh here's what I have I don't
+[115:08.36]  know if you know this but Boulder
+[115:10.24]  shenzen and Las
+[115:12.08]  Vegas they're everywhere and the part
+[115:14.60]  one of the it's not this like stat we
+[115:17.24]  kind of came up with a little bit last
+[115:19.04]  year that I I'm just personally deeply
+[115:21.12]  obsessed with is founding teams in which
+[115:24.92]  the co-founders are in multiple
+[115:27.12]  countries so like kind of nickname this
+[115:29.92]  again it's like the giving giving things
+[115:32.00]  a good title uh headlines crossb
+[115:34.72]  Founders um wow
+[115:38.84]  like more than
+[115:41.04]  20% of multi multi founder teams have at
+[115:46.04]  least one founder from another country
+[115:48.56]  that is astounding to me that the
+[115:51.04]  internet could bring people together
+[115:52.52]  that and I think that's going to Pro
+[115:55.64]  provide more perspectives more solutions
+[115:59.28]  will be local and Global just all
+[116:03.72]  perspectives are great and and again I
+[116:05.36]  think the atas team itself represents
+[116:07.76]  this we were very intentional of how we
+[116:10.40]  built the atlas team it's majority women
+[116:13.08]  and we have more more diversity to to to
+[116:15.88]  hire but we were just very intentional
+[116:18.20]  to make it a team that had diverse
+[116:20.48]  perspectives uh you've been on teams
+[116:22.96]  that don't have diverse perspectives of
+[116:25.80]  any type they are so much worse uh
+[116:28.24]  there's no real science necessary here
+[116:30.56]  we just enforced
+[116:32.24]  that as we had the opportunity to build
+[116:34.68]  build this team that way and it was
+[116:37.52]  really important to me that it repres it
+[116:40.08]  represented a world we wanted things to
+[116:43.00]  look like and and to represent and you
+[116:46.48]  know we just had to be very intentional
+[116:47.92]  about it because I've made mistakes in
+[116:49.48]  my career previously where my startup
+[116:52.04]  was all men when we sold to box one of
+[116:55.28]  them and it on each hire was harder and
+[116:58.40]  harder and harder to hire someone of a
+[117:00.28]  different background just naturally
+[117:01.76]  folks didn't want to join that type of
+[117:03.92]  team and that was the last time I've
+[117:06.44]  ever ever going to make that mistake
+[117:08.00]  which is that
+[117:09.60]  early the candidate poll must match
+[117:13.76]  where where you want the team to go it's
+[117:15.36]  not a down funnel problem it is an up
+[117:17.40]  funnel problem and where you have to
+[117:19.08]  just make sure that for each role you're
+[117:22.24]  comfortable with the AL like with the
+[117:24.04]  with the distribution of of people and
+[117:26.04]  backgrounds in your candidate pool and
+[117:27.80]  go from there and I think that is one of
+[117:30.72]  the reasons why that 10 person group is
+[117:33.00]  so effective is it has just a lot of
+[117:35.64]  diversity and and
+[117:37.24]  perspective another skill Jeff Weinstein
+[117:39.76]  is incredible at that I wasn't even
+[117:41.68]  aware of we're going to add him to the
+[117:43.36]  list and I actually saw a photo of the
+[117:44.96]  team and I noticed that and so great
+[117:47.60]  work is there anything else on Atlas
+[117:49.80]  that you wanted to share before I get
+[117:51.64]  into how actually made Atlas happen at a
+[117:53.28]  company like stripe that has a billion
+[117:54.60]  things to do we just want to hear about
+[117:56.52]  what's hard for you you know if you if
+[117:58.52]  you look back in your emails and and you
+[118:01.32]  if you've started a company recently
+[118:02.56]  you're starting company right
+[118:05.76]  now the whole world is counting on you
+[118:08.84]  to pick a customer solve their problem
+[118:11.68]  10 times better than their
+[118:13.56]  alternative get it to them charge for it
+[118:16.48]  become economically viable and build a
+[118:18.16]  great business that provides great
+[118:19.40]  Services we are not counting on you to
+[118:20.92]  become experts at this silliness of
+[118:22.80]  administratively running your company
+[118:24.72]  that is you know uh imagine life without
+[118:28.28]  Google Docs uh and where you'd have to
+[118:30.44]  hire an IT person to run your it backend
+[118:34.88]  uh on on employee three you'd have an IT
+[118:37.60]  person or imagine the world without AWS
+[118:40.88]  for ec2 or S3 or any of these cloud
+[118:43.48]  services and you're racking computers
+[118:45.52]  yourself you're just absolutely not
+[118:46.96]  going to try as many things we just like
+[118:48.20]  we just see the company structure the
+[118:52.20]  the structure bringing people together
+[118:54.60]  to be like that and we want to automate
+[118:56.52]  more and more and more of it and turn
+[118:57.84]  into software so we're we're looking for
+[119:00.84]  the next things to work on we have a
+[119:02.16]  couple ideas but we expect to turn more
+[119:06.40]  of groups of people working together
+[119:08.68]  that Administration into software and I
+[119:10.64]  think it's just going to
+[119:12.48]  unlock huge amount more people choosing
+[119:15.00]  to do it interesting I'm so curious what
+[119:18.12]  that ends up being like if you really
+[119:20.20]  think about what you're doing here if
+[119:21.24]  you believe that on entrepreneurship and
+[119:22.72]  Innovation and Technology make the world
+[119:24.48]  better you're creating such an unlock to
+[119:28.40]  allow more of that and like I said I
+[119:30.08]  think it's it's hard to imagine and
+[119:31.16]  think of other examples that could be as
+[119:32.96]  transformative and impactful as just
+[119:34.84]  making this process it's funny because I
+[119:37.28]  I go back to again I also hear from
+[119:39.52]  Founders entrepreneurs like oh I can't
+[119:41.12]  think of an idea like ah I need a I need
+[119:44.04]  I need a startup idea and yet everything
+[119:45.84]  in the world is
+[119:46.96]  broken you know uh and I also recall my
+[119:50.96]  first startup early 2010
+[119:54.40]  2012-ish I joined a friends company that
+[119:58.12]  was started at the same time that the
+[120:00.72]  stripe Founders started stripe and that
+[120:04.84]  is that I think about that a lot because
+[120:08.00]  with the same
+[120:10.96]  information knowing how hard it was to
+[120:13.40]  accept online payments I chose to work
+[120:15.88]  on something else uh where they didn't
+[120:19.16]  they worked on making it easy in seven a
+[120:22.24]  code to accept payments online which
+[120:25.28]  turned out to be really useful uh so I I
+[120:30.32]  really encourage people to be very
+[120:32.80]  sensitive to the problems that they see
+[120:35.56]  and just not let
+[120:37.76]  any any little hiccup go unnoticed uh
+[120:41.80]  and I think Atlas is really a
+[120:44.04]  manifestation of that which is let's
+[120:46.32]  actually look at every single thing you
+[120:48.80]  went from Hobby to E eally successful
+[120:53.08]  operation and which of the any moment
+[120:56.08]  along the way you shouldn't have had to
+[120:57.92]  had to do and we think those things are
+[121:00.44]  fair game to play with in any topic I
+[121:02.84]  think that there are many more gigantic
+[121:06.28]  businesses important things to be solved
+[121:08.20]  sitting in plain sight I can't see them
+[121:10.40]  always but when you hear if you sit
+[121:13.88]  enough silence and you hear the same
+[121:15.56]  people complain about problems you too
+[121:17.32]  might find something as big as online
+[121:19.76]  payments are hard which was sitting
+[121:22.32]  right in front of all of
+[121:23.64]  us and I think it's important to note it
+[121:25.96]  doesn't necessarily have to be a venture
+[121:27.32]  back venture Scale company right there
+[121:29.28]  are many most businesses in the world
+[121:31.12]  are not Venture back venture scale
+[121:32.80]  billion dollar companies you could build
+[121:34.76]  a profitable company it it's uh kind of
+[121:38.60]  funny we've all um put
+[121:42.40]  this badge of honor of giving away a lot
+[121:45.44]  of your company uh you
+[121:48.96]  know people really love owning a lot
+[121:52.00]  their company and being successful so
+[121:54.08]  you just got to pick the right capital
+[121:55.40]  structure for your for your business and
+[121:57.88]  again uh the amount of money that is
+[122:00.16]  been generated of the companies that
+[122:02.28]  started through Atlas you said5 billion
+[122:05.00]  basically that's the GDP of of Atlas
+[122:06.92]  that Atlas and that's that's like
+[122:08.00]  Revenue per year and that's growingly
+[122:10.72]  yeah and you know obviously some a lot
+[122:12.28]  of it would have happened anyway but
+[122:13.56]  still there's it accelerated it's
+[122:15.92]  probably growing faster uh a lot of it
+[122:18.08]  probably never would happened otherwise
+[122:19.24]  yeah we we ran a survey a little bit to
+[122:22.20]  go we need to rerun this where we just
+[122:24.12]  ask people would they have started their
+[122:25.48]  business without without Atlas and about
+[122:28.00]  20% of people said they wouldn't have or
+[122:29.88]  wouldn't have had them and again these
+[122:32.52]  things are fragile right and it's not
+[122:35.28]  all it's not all Google
+[122:38.64]  Employees leaving their job to build
+[122:41.96]  something it's people
+[122:43.92]  from every possible background every
+[122:47.04]  possible role every possible job every
+[122:49.56]  possible age group who see problem and
+[122:52.16]  can solve it so it's dramatically more
+[122:54.60]  fragile than people think well great
+[122:57.00]  work Jeff and team Atlas and stripe in
+[122:59.48]  general fun let's talk about one last
+[123:02.44]  thing um there's like so many more
+[123:04.32]  things I still want to talk about maybe
+[123:05.88]  we'll have a go quick yeah we go fast
+[123:08.44]  make it tox speed so this Lis is
+[123:11.44]  basically a zero to one product I know
+[123:13.72]  you didn't start initially it was there
+[123:14.96]  but you took it from I don't know maybe
+[123:16.20]  took it from 0. five or something to uh
+[123:18.92]  to one and 100 now and a lot of people
+[123:21.84]  struggle with starting things like this
+[123:24.04]  within larger companies like strip's a
+[123:25.52]  large company right they it's like you
+[123:27.20]  know a very Innovative uh well-run
+[123:29.92]  company but it's also a large company
+[123:31.88]  and clearly you you made you made [ __ ]
+[123:34.20]  happen you and your team what kind of
+[123:36.16]  things have you learned actually let me
+[123:37.40]  read a quote here's a quote that kind of
+[123:39.00]  describes uh you being good at this from
+[123:41.20]  one of your former colleagues who will
+[123:42.32]  go un named Jeff is really good at
+[123:44.44]  cutting through the BS you hear so much
+[123:46.72]  about Frameworks and all this
+[123:47.76]  complicated stuff that people talk about
+[123:49.12]  in PM circles when the most
+[123:50.40]  straightforward obvious thing is
+[123:51.88]  probably right I get so annoyed after
+[123:53.72]  calls with Jeff sometimes because I know
+[123:55.32]  he's right about something I bang my
+[123:56.60]  head against the wall for months and so
+[124:00.52]  talk about just like what you've done
+[124:02.52]  what you've learned about getting stuff
+[124:03.76]  done at a large company what do you need
+[124:05.56]  to do right not having things be your
+[124:10.04]  idea I think is really powerful like I
+[124:14.12]  just talked to 50 customers who all yell
+[124:17.24]  the same thing here they are in
+[124:19.88]  varieties of quotes and forms and the
+[124:22.12]  rest of it and you put some three bullet
+[124:24.44]  points of strategy around why it's
+[124:26.00]  important and it's going to help you win
+[124:27.28]  more market share and the rest of it and
+[124:28.72]  how you can do it well cool I mean what
+[124:33.20]  what else could we want to do maybe
+[124:35.04]  somebody has something where 51 people
+[124:37.76]  have the same burning thing but the
+[124:40.08]  majority failure mode is we do nothing
+[124:43.32]  that's the majority failure mode and
+[124:46.56]  so one aligning people with deep
+[124:51.72]  customer
+[124:53.80]  stories storyboarding some solution
+[124:57.88]  visually with a sharpie and not a pencil
+[125:02.36]  not figma initially not high or low
+[125:05.64]  Fidelity I can never remember which one
+[125:06.68]  is the detailed one but just like
+[125:09.20]  Sharpie what is the
+[125:13.44]  unconstrained perfect solution to this
+[125:15.96]  Burning problem and that's you know
+[125:20.00]  Pixar style storyboard
+[125:22.16]  you don't need to be a designer you can
+[125:24.20]  just draw like stick figures on a piece
+[125:26.16]  of paper or whimsicle or whatever you
+[125:27.84]  want to
+[125:28.80]  do and with those
+[125:31.24]  things if you're not asking for you know
+[125:34.12]  this the Sun and the Moon on headcount
+[125:36.24]  and team size to make some forward
+[125:38.76]  progress like who could stop you you
+[125:41.24]  know let's get some first version
+[125:43.12]  working it was very motivating to get
+[125:45.76]  that single piece of paper in the mail
+[125:48.20]  with which was blank to kick us off on
+[125:51.48]  the 83b election and again by the time
+[125:54.96]  this podcast airs we will have crossed
+[125:56.28]  10,000 83b elections filed and we have
+[125:59.64]  have done them all 100. z% on time
+[126:04.48]  uh with the burning use case why
+[126:07.80]  customers are going to need it why we
+[126:09.52]  can do it cheaply effectively safely
+[126:12.80]  over a long period of time and here's
+[126:15.28]  the way to get tangible forward progress
+[126:18.80]  quickly against the stick figure vision
+[126:21.88]  but with
+[126:24.40]  something in the browser or one one one
+[126:28.40]  version of it let's just get one thing
+[126:29.88]  working one time I find proof of
+[126:32.92]  existence to be an incredibly powerful
+[126:35.36]  proof rather than proof by Theory or
+[126:39.08]  proof
+[126:40.24]  by debate it's just like look we did it
+[126:43.16]  one time hey I'm holding the piece of
+[126:45.36]  paper uh pretty motivating uh we could
+[126:48.56]  you know if we just if we just printed
+[126:50.12]  out the right information we'd be done
+[126:53.12]  okay actually there's a lot to do other
+[126:54.56]  than just that but it it really pushed
+[126:56.68]  us forward so I think cutting
+[126:59.56]  through a little bit of the red tape is
+[127:03.52]  about
+[127:05.04]  momentum and making each step not such a
+[127:09.48]  big deal and asking for Less permission
+[127:13.04]  and then of course once you have a
+[127:14.24]  little bit of that under your belt
+[127:15.56]  you're going to naturally be trusted
+[127:19.20]  with taking more of those kinds of bets
+[127:23.80]  uh paired with the some of the things we
+[127:27.12]  talked about earlier of everyone's
+[127:29.84]  looking at the same place about the
+[127:31.36]  metrics everyone can watch the success
+[127:34.28]  we don't need to do big internal updates
+[127:37.80]  with long-
+[127:39.00]  winded PowerPoint presentations and
+[127:41.60]  scrambles the night before you can just
+[127:43.16]  go to the metric page and see how we're
+[127:44.40]  doing that that in that brings so much
+[127:47.20]  trust to the group that people start
+[127:50.08]  going from hey why do we have
+[127:53.08]  this Atlas thing that doesn't you know
+[127:56.76]  really produce so much money is like
+[128:00.00]  charging people companies when they
+[128:02.12]  don't have money like we're a big
+[128:03.88]  payments business how do you even
+[128:04.88]  compare these things to wow look at the
+[128:08.76]  progress that they are making against
+[128:10.08]  the mission and look at look at its
+[128:11.84]  impact and the curves and you start they
+[128:13.76]  start to like root for it more I think
+[128:16.76]  that's how we got it there I will say
+[128:19.28]  one other thing which is that making
+[128:20.88]  something e eally viable is extremely
+[128:23.44]  important and so when I I'm probably the
+[128:26.88]  fourth person to run Atlas and it's
+[128:29.20]  quite a Pantheon of people prior to me
+[128:31.40]  including the founder of mosy which is a
+[128:34.20]  compliance um uh startup uh Watershed
+[128:38.36]  which is this amazing climate reporting
+[128:40.68]  tool also um LED Atlas P Patrick
+[128:43.44]  McKenzie patio 11 for many folks do wow
+[128:46.36]  what an alumni group this we owe
+[128:48.60]  ourselves a dinner uh we owe ourselves
+[128:50.92]  quite a group and now we have a new
+[128:52.80]  person who's so I you know I technically
+[128:54.64]  no longer lead Atlas so we've hired up a
+[128:56.80]  whole team which is really exciting and
+[128:58.56]  Haley haverson who joined us uh about a
+[129:00.84]  year or two ago she leads Atlas now and
+[129:02.52]  you can find her on Twitter she's
+[129:03.72]  fantastic and uh we just uh we swap jobs
+[129:07.04]  over a course of a year just one month
+[129:09.00]  at a time the roles and so uh she worked
+[129:12.04]  for me and then I worked for her and
+[129:13.32]  then and she's gone off to hire some
+[129:14.72]  amazing people to run Atlas so it's
+[129:16.24]  really quite a privilege to have these
+[129:18.40]  people leaded over time so we but it was
+[129:22.64]  really important for us to communicate
+[129:24.88]  why we are going to run this e in an
+[129:27.52]  economically viable way and I think that
+[129:29.32]  applies to all products and all
+[129:31.84]  businesses it's just like look if you're
+[129:33.08]  a customer acquisition style product
+[129:35.92]  well show showcase why is this is the
+[129:38.44]  best customer acquisition for the dollar
+[129:40.44]  for the company if you are a margin
+[129:43.00]  generating Mo Moe creating ecosystem
+[129:47.08]  growing portion of the business well
+[129:49.04]  well then your metrics have to show it
+[129:50.44]  and so just
+[129:52.00]  you can't just have half the story of
+[129:53.80]  just the product quality and the tweets
+[129:55.64]  you have to have the economics who else
+[129:58.40]  is going to put this much energy into
+[130:00.68]  this style of of product and that gives
+[130:02.60]  us confidence that we should invest it
+[130:04.72]  in the long term
+[130:06.48]  because uh Alternatives can come and go
+[130:08.96]  and we actually I super encourage there
+[130:10.64]  to be more Atlas Alternatives that'd be
+[130:12.00]  great for
+[130:12.88]  Founders but I think over the long term
+[130:15.24]  it'll be difficult to do so just because
+[130:17.52]  of the business model yeah there
+[130:19.68]  actually was an alternative at one point
+[130:20.92]  angelist and then they're like no stripe
+[130:23.08]  is a kill in it let's just send everyone
+[130:24.56]  to to Atlas so I had worked on stripe
+[130:27.40]  payments for a while and I had just
+[130:31.40]  started on Atlas And I think that same
+[130:34.36]  month Angelus announced that they were
+[130:36.20]  doing incorporation and Banking and cap
+[130:38.96]  table all together which was exactly
+[130:41.16]  what I wanted to do and I was like oh
+[130:43.08]  shoot did I sign up for the wrong thing
+[130:45.76]  Angel is a such a smart group of people
+[130:48.44]  so customer oriented great brand and I
+[130:52.00]  love many of the people that work there
+[130:53.88]  work with some of the best uh legal
+[130:55.36]  Minds to and they have the ruv set up
+[130:57.44]  there's like so much awesomeness here I
+[130:59.52]  was like should we
+[131:01.56]  just should we really compete like what
+[131:04.56]  should we do here and we thought about
+[131:07.28]  it more and more like
+[131:08.92]  look in the very long
+[131:12.04]  term this company starting process is
+[131:15.32]  going to become a efficiency cost
+[131:17.72]  problem and there's so much longtail
+[131:20.40]  complexity with dealing with multiple
+[131:22.60]  financial institutions multiple
+[131:24.40]  government processes all of this legal
+[131:26.68]  complexity that it will be and it's
+[131:29.56]  difficult to charge a lot of money for
+[131:30.56]  it because it's hard to charge people
+[131:32.48]  money when they haven't even started the
+[131:34.16]  business
+[131:35.16]  yet we looked at it and said look we're
+[131:38.20]  g to keep we're going to keep this
+[131:40.28]  long-term compounding approach because
+[131:43.08]  we think that this is where it's going
+[131:44.28]  to go and it was a zero zero interest
+[131:46.36]  rate environment at the time Angelus
+[131:48.52]  built a phenomenal product I looked at
+[131:50.44]  it with
+[131:52.28]  nothing but admiration and happiness but
+[131:55.52]  it also kind of smarted and hurt and we
+[131:58.52]  just kept building kept building kept
+[132:00.04]  building and I got a phone call one
+[132:01.88]  night on my wife's birthday uh before we
+[132:04.92]  sat down for dinner and it was uh um Dan
+[132:09.72]  at uh at angelist I hope he be
+[132:11.84]  comfortable telling the story who I love
+[132:13.64]  an incredible product mind and he led
+[132:16.84]  product over at Angeles for startups and
+[132:18.72]  he said hey we're going to get out of
+[132:20.80]  Incorporation
+[132:21.96]  this is not going to be our Focus going
+[132:24.84]  forward do you want the
+[132:27.68]  business I like it was like a year and a
+[132:30.40]  half after after they had really gone
+[132:32.08]  out or two years after they gone out or
+[132:33.88]  something like this I was like Wow and
+[132:36.60]  we had kept such an open relationship
+[132:38.64]  with them we had paired with them on
+[132:40.52]  legal constructs we had discussed 83b
+[132:42.68]  election openly and a lot of people like
+[132:44.36]  oh I can't believe you're talking to the
+[132:45.36]  competitor you know like look we we all
+[132:47.48]  share the same Mission here you know yes
+[132:49.48]  we're competing but
+[132:51.76]  it's are we really all better off from
+[132:55.56]  treating each other at at Arms distance
+[132:58.60]  we had a shared slack Channel we
+[133:00.16]  discussed when the uh Delaware was slow
+[133:03.32]  on on incorporation one time is because
+[133:05.20]  they were playing softball and they had
+[133:06.68]  an afternoon off that's a real story uh
+[133:08.92]  and we've discussed it and so when and
+[133:11.52]  and Angelus was
+[133:13.20]  incredible in in how they evaluated it
+[133:16.00]  we're like evaluating different uh
+[133:17.80]  Partners but because of our working
+[133:20.48]  relationship and the quality of the of
+[133:24.20]  your product and they saw we were going
+[133:26.28]  with 83b election and the intensity of
+[133:29.24]  that they just put up a a web page that
+[133:32.20]  said to get started with Angel list if
+[133:33.72]  you need a company go right over to
+[133:35.00]  Atlas and that was a really amazing
+[133:38.48]  moment because it it I respected them so
+[133:41.20]  much and I looked up to them so much
+[133:43.12]  that they would mutually beneficially
+[133:46.20]  choose to do that and everybody was
+[133:49.68]  excited and happy and customers happy
+[133:51.40]  and it's been an incredible relationship
+[133:53.52]  since in which you can start on angelist
+[133:55.04]  go through Atlas and then all of your
+[133:56.52]  information is automatically populated
+[133:58.12]  into angelist automatically and we've
+[133:59.76]  since rolled that out with several other
+[134:01.52]  partners Mercury Carta others but
+[134:04.32]  Angel's really led the way there and we
+[134:06.68]  just maintain a great relationship with
+[134:07.76]  team but it's just like such a it was it
+[134:10.28]  took a while but it really reproved to
+[134:12.56]  me that they're not competitors it's
+[134:15.40]  Alternatives and if you care about your
+[134:17.12]  customer you care about their
+[134:18.36]  Alternatives and if you care about the
+[134:19.88]  mission you you need to all work
+[134:22.16]  together and look there's some friendly
+[134:24.00]  competition of course we all want to win
+[134:26.40]  but in the long term I think all parties
+[134:29.44]  are like significantly better off wow
+[134:32.32]  that is an awesome story I don't know if
+[134:33.76]  you've shared that anywhere else there's
+[134:36.12]  so many lessons there uh that I could
+[134:38.12]  like spinoff on just like not worrying
+[134:40.56]  about competition staying heads down
+[134:42.04]  just solving customer problems staying
+[134:43.56]  close to your competition not being
+[134:45.44]  afraid to talk to them sharing advice
+[134:47.48]  with each other just building the best
+[134:48.84]  possible product I don't know there's a
+[134:50.36]  ton there that's super interesting I
+[134:52.16]  couldn't really draw it up any better
+[134:53.64]  and I just think the world is better off
+[134:55.16]  with more specialization and there it's
+[134:58.32]  a pain in the butt it's a pain in butt
+[134:59.44]  to these incorporations like you really
+[135:02.36]  I think we can get yeah I think you want
+[135:05.48]  more specialization and more partnership
+[135:08.44]  um and I think a lot of companies are
+[135:10.20]  starting to do that now okay so let me
+[135:12.64]  let me go back to the lessons you shared
+[135:14.44]  on how to build something new at a big
+[135:16.84]  company and then we can we can wrap up
+[135:20.00]  so I took a bunch of and these are
+[135:21.68]  awesome and they actually resonate a lot
+[135:23.24]  with Mika who came on the podcast who's
+[135:25.64]  all who's had figma been the person
+[135:27.20]  building a lot of Z to1 stuff and so
+[135:29.20]  it's nice that there's these trends that
+[135:30.56]  are coming up again and again so one tip
+[135:32.84]  is just storyboard the ideal like with a
+[135:35.08]  sharpie draw out here's this exciting
+[135:37.84]  vision of what this could be if we were
+[135:39.40]  to pull it off without constraints
+[135:41.24]  unconstrained powerful Vision uh two is
+[135:45.00]  solve a burning use case make it clear
+[135:46.68]  like this is a huge problem for a lot of
+[135:48.28]  people there's probably stories you
+[135:50.32]  share there show tangible forward
+[135:52.12]  progress just like look at this we made
+[135:53.72]  this progress we made this progress sent
+[135:55.92]  ourselves a piece of blank paper look at
+[135:57.56]  this it's a huge milestone and have
+[135:59.56]  momentum and mahika talked about this
+[136:01.48]  just like keep the fire alive keep the
+[136:03.24]  fire alive show momentum we're making
+[136:05.20]  progress this metric's moving up and to
+[136:06.64]  the right and then and then there's like
+[136:08.96]  a milestone felt like you had like an
+[136:10.32]  early Milestone of like Le this we made
+[136:11.76]  a we made progress and then also have
+[136:14.12]  the business case basically look how
+[136:15.64]  much we could make and look what this
+[136:17.36]  could be if we were to succeed anything
+[136:20.00]  you'd add there anything you correct
+[136:21.80]  bringing the earliest customers into the
+[136:25.24]  room with your team as soon as humanly
+[136:28.80]  possible we would just invite a Founder
+[136:32.44]  to the team meeting we
+[136:35.64]  would pipe all of their feedback into a
+[136:38.84]  slack Channel automatically we have all
+[136:41.32]  the NPS scores going to a channel and
+[136:44.56]  any time it's not a 10 for 10 we follow
+[136:46.60]  up directly just like constant
+[136:51.44]  engagement with a customer creates the
+[136:54.08]  momentum where it doesn't need to be the
+[136:56.76]  product person or some other leader
+[136:58.04]  saying we need to do this follow me it's
+[137:02.04]  oh my gosh the world needs this let's
+[137:04.68]  figure out how to do it even faster and
+[137:06.60]  a tip that the team has tried and this
+[137:09.24]  is well since i' I've involved dayto day
+[137:11.96]  uh is literally inviting customers in to
+[137:15.00]  design the product which I had actually
+[137:16.48]  never heard of hey we're thinking about
+[137:18.52]  what happens after incorporation now and
+[137:20.36]  what can we do to help uh Founders after
+[137:22.72]  they've set up their company what would
+[137:24.40]  be magical there we just invite Founders
+[137:28.24]  in into a Whimsical which one of a piece
+[137:31.20]  of software I love at just a really easy
+[137:33.16]  learning curve to create visual diagrams
+[137:36.52]  and rather than sort of doing Au USR
+[137:39.16]  about it we just say
+[137:41.20]  hey what would what would you hope this
+[137:43.76]  dashboard would have and they grab a
+[137:45.20]  thing and they start typing and they
+[137:46.44]  start drawing what they want their
+[137:47.60]  dashboard to be like why were we
+[137:49.24]  guessing beforehand I kind of and now
+[137:51.68]  scratched my head I'm several years into
+[137:54.64]  you know decade plus building things and
+[137:56.24]  I was like I was doing this by myself
+[137:58.28]  why didn't I just assign it to the
+[137:59.64]  people who are going to use it in the
+[138:00.92]  first place now look that doesn't always
+[138:02.76]  work because not all of your customers
+[138:04.28]  are going to be uh you know product
+[138:06.48]  designers at heart but more of them than
+[138:08.56]  you think and I think it's it's giving
+[138:11.48]  your customers right access and not just
+[138:14.48]  read access to your company is
+[138:17.68]  incredibly powerful and I think I had
+[138:20.40]  not seen it so directly where they just
+[138:23.80]  actually designed what they want but I
+[138:26.12]  saw a diagram of something we're working
+[138:27.92]  on right now I was like wow we haven't
+[138:29.20]  even had design look at it they're like
+[138:31.00]  no actually the customer drew it great
+[138:34.16]  uh why were we guessing I think you have
+[138:35.56]  an unfair Advantage where your customers
+[138:37.00]  are founders and oftentimes have product
+[138:39.40]  skills and design skills uh but I love
+[138:41.84]  that it's true but I will really push
+[138:44.04]  because you don't need a hundred of them
+[138:46.40]  and you're you'll find somebody
+[138:49.04]  somewhere who know you just got to sit
+[138:51.80]  in a little more silence you'll some
+[138:53.44]  they'll raise their
+[138:54.52]  hand uh there's a quote you shared
+[138:56.52]  somewhere that I'm that relates to what
+[138:58.24]  you just said that your dad once said
+[138:59.96]  you can screw up a sentence if it begins
+[139:01.76]  with the customer that's true yeah my
+[139:04.16]  dad runs a um an IT business in
+[139:07.72]  Baltimore they help other businesses
+[139:09.60]  with their computer systems and my
+[139:12.24]  growing up I would literally physically
+[139:14.36]  clean the keyboards of his employees and
+[139:16.96]  you know dust dust the M dust the mice
+[139:19.52]  but yeah he's very very customer
+[139:21.00]  oriented where I get a lot of it from
+[139:22.16]  and my mom's a painter so I think
+[139:23.72]  there's some combination of tal talents
+[139:26.28]  or interests there but yeah he he would
+[139:29.96]  take it one step further and he would
+[139:32.56]  sometimes physically bring a chair over
+[139:35.88]  in a meeting and say the customer is
+[139:37.88]  sitting here and you'd have to like
+[139:39.44]  pretend and then he would kind of fake
+[139:41.56]  talk to the invisible customer hey based
+[139:44.52]  on what you've seen today at the meeting
+[139:45.76]  I saw him do this one time like based on
+[139:47.40]  what you've seen today at the meeting
+[139:48.60]  are you more likely to pay your bill or
+[139:51.72]  less likely to pay your bill based on
+[139:53.28]  what you witnessed uh that's a little a
+[139:56.16]  little intense on the pantomime but I
+[139:57.76]  think the point gets across that you
+[139:59.04]  just if you begin again because it's so
+[140:01.76]  natural to think internal if you be
+[140:03.40]  begin the sends physically with the
+[140:05.16]  customer and then start your sends you
+[140:07.32]  just have a much better shot at it
+[140:09.32]  that's an amazing story very steady
+[140:11.12]  group is like a early early prototype um
+[140:15.28]  Jeff we've covered so much ground I have
+[140:19.04]  two hours more worth of questions but we
+[140:21.28]  need to Let's lock we need to take a cut
+[140:24.28]  it off I think um is there anything else
+[140:26.56]  you wanted to share or leave listeners
+[140:27.96]  with before we get there very exciting
+[140:29.48]  lightning round really excited about
+[140:31.80]  whatever you're building out there or
+[140:33.00]  thinking of building my email address is
+[140:35.16]  incredibly easy to find my Twitter
+[140:37.16]  handle is incredibly easy to find do not
+[140:39.16]  hesitate to send me cold emails uh My
+[140:41.76]  love language is Loom videos of bugs but
+[140:45.48]  feel free to send anything you have um
+[140:47.80]  off the top of your head I respond to
+[140:49.32]  good cold emails don't hesitate
+[140:51.40]  what's the email real quick for people
+[140:52.88]  oh if finding my email address is your
+[140:54.80]  issue okay uh it can't possibly be but
+[140:57.96]  it is my first initial and last name at
+[140:59.96]  basically everything in the world though
+[141:01.16]  my handle on Twitter is Jeff Weinstein
+[141:03.48]  but gosh if you if you can't find my
+[141:05.68]  email address then you got a bigger
+[141:06.92]  problem okay we'll link to it in the
+[141:09.00]  show notes as well with that we've
+[141:10.88]  reached our very exciting lightning
+[141:13.08]  round are you
+[141:15.28]  ready here we go what are two or three
+[141:17.92]  books you've recommended most to other
+[141:19.24]  people I I know lot of people in this
+[141:21.04]  podcast recommend high output management
+[141:23.24]  but it should be you know swap the Bible
+[141:26.76]  out for it at all the hotels in the
+[141:28.60]  world and in the little drawer just like
+[141:30.60]  put it everywhere you just can't go
+[141:32.24]  wrong though uh it is just a an
+[141:35.56]  incredible Clarity of how to spend your
+[141:39.28]  time as a leader manager of other people
+[141:43.68]  just like a very high bar for how
+[141:46.64]  evaluating your work as the sum of
+[141:49.08]  everyone around around you that was very
+[141:51.76]  clarifying to me that it's just like not
+[141:53.16]  an individual effort it is the sum of of
+[141:56.24]  everything I'm involved in is how to
+[141:57.80]  measure it so that's definitely up there
+[142:00.00]  a nice pair to that book as a a mo like
+[142:04.16]  a moose Bou afterwards is orbiting the
+[142:06.92]  giant hairball a corporate Fool's uh
+[142:09.96]  corporate Fool's guide to surviving with
+[142:12.36]  Grace I think is the full exact title um
+[142:14.84]  by Gordon McKenzie which is the story of
+[142:17.00]  a illustrator at Hallmark the greeting
+[142:21.76]  card company and it turns out to be
+[142:25.32]  a again bureaucratic slow-moving
+[142:29.56]  organization that over time just added
+[142:32.08]  rules and policies and rules and
+[142:33.56]  policies and kind of quelled creativity
+[142:36.84]  and Innovation which is surprising at a
+[142:38.80]  greeting card company uh but it existed
+[142:41.72]  and so this is his incredibly well-drawn
+[142:43.68]  book as you'd imagine with beautiful
+[142:45.16]  illustrations about how he
+[142:48.20]  orbited the Hairball of the organiz
+[142:50.72]  ation
+[142:53.16]  to INSP others keep
+[142:56.12]  himself engaged and to bring creativity
+[143:00.56]  and excitement and trying to like pull
+[143:02.72]  people off the Hairball as as he orbited
+[143:05.64]  it and so I think it's just like a fun
+[143:07.08]  afternoon read with beautiful
+[143:08.68]  illustrations about just kind of how to
+[143:10.64]  stay sane at big companies and where
+[143:13.76]  to be a little goofy and take the the
+[143:16.52]  advantage and gravity of the Hairball
+[143:18.64]  but not to be like succumb buy it and be
+[143:21.32]  able to orbit it those two are really
+[143:24.36]  fun I will say one other one I like just
+[143:26.60]  because we haven't talked about strategy
+[143:28.00]  here this been more getting stuff done
+[143:30.32]  and some other tactical things but seven
+[143:33.08]  powers and I know you you had uh the
+[143:35.04]  author recently on which is awesome I uh
+[143:39.56]  ran in so I won't explain the book just
+[143:42.04]  go you just watch the the podcast of it
+[143:44.00]  but just walk it walks through many of
+[143:46.04]  the business powers and sort of Moes a a
+[143:49.64]  company can have
+[143:51.28]  I ran into the
+[143:54.08]  author um Hamilton Helmer Hamilton
+[143:56.40]  Helmer yes thank you what a cool name
+[143:58.40]  very cool name ill litera at the Box
+[144:00.68]  lunchroom one time where I worked at box
+[144:03.20]  uh they acquired one of our companies
+[144:05.00]  and I was like hey uh any luck finding
+[144:06.52]  the eighth power uh he's like I'm
+[144:08.92]  looking I'm looking as he like ran off
+[144:10.36]  with his sandwich another one other
+[144:11.84]  funny uh somewhat embarrassing moment
+[144:13.64]  about that book is when I was applying
+[144:15.76]  to work at stripe uh I was in some email
+[144:19.84]  conversation with our CEO Patrick Carson
+[144:23.28]  who quite well read enjoys books and I
+[144:26.84]  was you know trying to Showcase I like
+[144:30.24]  books a little bit though not at any
+[144:31.84]  level him and I just had mentioned like
+[144:33.64]  I just finished reading seven powers and
+[144:35.52]  I kind of recommended it to him but it
+[144:37.20]  jokes on me because he's quoted in the
+[144:39.12]  forward that I had skipped uh so he was
+[144:42.32]  very kind to let me know that he had
+[144:43.92]  read it and he is quoted in it uh so I
+[144:46.68]  was like oh shoot maybe I won't get the
+[144:48.16]  job but um I got through that part at
+[144:49.76]  least so th those those books have have
+[144:51.96]  spoken to me do you have a favorite
+[144:54.04]  Power by the way do you have a favorite
+[144:55.80]  Power uh well his favorite Power is
+[144:58.12]  counter positioning I also like that
+[144:59.68]  power a lot because I think it's the one
+[145:01.00]  you can that really changes everything
+[145:03.00]  about how you build your company so
+[145:05.56]  that's the one that always stands it I
+[145:07.08]  like counter positioning also and Atlas
+[145:09.68]  with going cheap and that audience is
+[145:11.32]  counter positioning but I really enjoy
+[145:13.68]  process um the process power because
+[145:16.64]  it's just like I think it is very
+[145:19.84]  difficult to as an organization get good
+[145:21.68]  at anything and if you could do that
+[145:23.48]  over a long period of time in a
+[145:24.60]  sustainable way you have a power this is
+[145:27.04]  the nerdiest chat I've ever had which
+[145:28.80]  which is your favorite seventh power I
+[145:30.44]  love it but uh on that power he I asked
+[145:32.44]  him about it he he makes a really strong
+[145:34.44]  point there that that's uh rarely is it
+[145:36.84]  actually a power for people they think
+[145:38.24]  like the way we execute is going to be
+[145:40.28]  our advantage and rarely is it actually
+[145:42.76]  a power usually people can kind of copy
+[145:45.32]  it but but when you nail it um that's
+[145:47.48]  even better because then if your
+[145:48.76]  competition thinks they have it ex won't
+[145:50.96]  invest in the other one so I like it
+[145:52.48]  even more for that reason I love it uh
+[145:56.00]  but I was going to say with Patrick
+[145:56.96]  hollon being quoted in that book Not
+[145:58.52]  only was he just like uh uh wrote part
+[146:01.64]  of the forwarder was a code he basically
+[146:03.16]  credited seven Powers with helping build
+[146:05.60]  stripe no big deal totally yeah okay the
+[146:08.72]  slighting round is going great this is
+[146:10.08]  like a very microcosm of our whole chat
+[146:11.88]  so far uh second question do you have a
+[146:14.76]  favorite recent movie or TV show howto
+[146:17.44]  with John Wilson that's on HBO it's okay
+[146:21.44]  so for those who haven't seen it not
+[146:23.24]  really giving away anything because it's
+[146:24.84]  just wild when you watch it you can't
+[146:26.20]  give it away uh this videographer has
+[146:30.88]  found footage or he's just like walking
+[146:32.44]  through Manhattan other and other parts
+[146:34.72]  of the country but mostly New York with
+[146:36.40]  just like a camera for 10 years just
+[146:38.68]  filming intensely weird things and if
+[146:40.56]  you've spent any time in New York you
+[146:41.72]  know there's plenty to
+[146:43.04]  film and then has put together this
+[146:45.32]  narrative afterwards about certain
+[146:47.60]  topics like how to uh make risoto or how
+[146:51.40]  to take out the trash or how to and it's
+[146:53.80]  a way of seeing Life Through The Eyes of
+[146:58.28]  these vignettes like diving down really
+[147:01.40]  understanding people and he does it
+[147:02.36]  through this
+[147:03.88]  incredibly dry humor of of of stitching
+[147:08.64]  together this this uh this video footage
+[147:11.48]  to tell a different narrative and I
+[147:13.48]  think some of is that we used to live in
+[147:14.72]  New York and I love I love I love living
+[147:16.80]  in California but I I miss that
+[147:19.20]  frequency of strangeness and you can see
+[147:23.00]  that through that TV show fantastic
+[147:25.96]  movie I recently watched the quiet girl
+[147:29.20]  which is a film about a young Irish girl
+[147:33.04]  who sort of from a dysfunctional home
+[147:36.08]  and has this opportunity to live with a
+[147:38.52]  family friend who is family's more um
+[147:43.52]  have more opportunity for her more
+[147:45.40]  empathetic to her
+[147:48.12]  and just repres just it just showcases
+[147:51.08]  again like how
+[147:52.52]  fragile things are um it's a very
+[147:55.68]  intense film but I just there's
+[147:57.48]  something beautiful in how how much
+[147:59.96]  opportunity was in front of this this
+[148:02.08]  young this this young girl so it's it's
+[148:04.24]  it's a tearjerker but a great one do you
+[148:06.68]  have a favorite product you have
+[148:08.64]  recently discovered that you love I love
+[148:11.80]  my computer I'm fast at my computer um
+[148:14.44]  being fast on my computer helps me just
+[148:16.52]  go from intention to just out in the
+[148:19.16]  world I Fallen back in love with raycast
+[148:22.72]  uh which is a automation tool for those
+[148:24.68]  who have watched the Journey of
+[148:26.72]  Spotlight and Quicksilver and Alfred and
+[148:29.76]  all these automator Services raycast
+[148:32.16]  seems to have cracked the nut on
+[148:35.00]  automation nerd complexity but also UI
+[148:39.44]  ease and some nice touches and just like
+[148:41.04]  loads quickly does the basics it's fully
+[148:42.80]  programmable extensible just like a huge
+[148:44.92]  fan of raycast and then I think for
+[148:47.76]  product people you if you don't have
+[148:49.16]  clean shot install for screenshots
+[148:50.96]  you're just behind the curve I there's
+[148:53.52]  so being able to take a screenshot and
+[148:55.92]  blur particular things or point at stuff
+[148:58.32]  or have arrows and lines and just like
+[149:00.84]  have that be second nature fast
+[149:02.28]  instantaneous is so useful to be able to
+[149:05.44]  communicate what you're seeing so when I
+[149:07.12]  get a new laptop it's raycast first and
+[149:09.28]  cleanshot second wow I am G to download
+[149:12.44]  cleanshot immediately yes it's ex heard
+[149:15.00]  I've been I've been using Skitch as my
+[149:17.20]  bluring and so as much as I appreciate
+[149:19.32]  the sketch folks uh clean shot is is a
+[149:21.60]  incredible piece of software amazing I'm
+[149:23.20]  going to do that all right two more
+[149:24.36]  questions do you have favorite life
+[149:25.76]  motto that you often come back to share
+[149:28.16]  with friends or family find useful and
+[149:29.60]  worker in life I don't even realize I
+[149:31.16]  say go go go a lot but I do I actually
+[149:33.16]  say it and write it so
+[149:35.40]  people I hear that they'll later say go
+[149:38.36]  go go back to me I'm like huh don't I
+[149:39.88]  say that sometimes like yes you say it a
+[149:41.40]  lot uh so apparently go go go is one of
+[149:43.92]  them I also I love that say like let's
+[149:47.48]  make some
+[149:48.56]  mistakes uh just when we're like
+[149:51.08]  brainstorming something or um sitting at
+[149:54.28]  a sushi restaurant with and talk Sushi
+[149:57.64]  guy guy or gal just just to like
+[150:00.08]  showcase like hey let's be creative do
+[150:03.60]  do whatever you want I'm no pretense I'm
+[150:05.64]  out of value anything like let's make
+[150:07.08]  some mistakes it's just like a weird
+[150:08.24]  thing they're so good I'm gonna use that
+[150:10.12]  for my podcast guest let's just make
+[150:11.52]  some mistakes like let's make some Mist
+[150:13.20]  don't worry about at that Point's like
+[150:15.32]  what okay fine sure I'm like cool I like
+[150:17.96]  the combo of those two go go go go let's
+[150:20.08]  makes a mistake you have you have to use
+[150:21.52]  it in certain circumstances and not for
+[150:23.52]  the 59s of reliability on our API but uh
+[150:26.92]  uh it does have its place final question
+[150:30.40]  you worked with Patrick cson and John
+[150:32.40]  cson for many years curious what the
+[150:34.72]  most useful feedback or advice you have
+[150:37.76]  heard from them or learned from them on
+[150:40.36]  my first month working here which I
+[150:43.08]  guess is six some years ago now I was
+[150:46.48]  they they put me in charge of our
+[150:48.64]  payments infrastructure services so
+[150:50.84]  that's all the backend systems that
+[150:53.52]  communicate with the financial system
+[150:54.88]  and all the internal apis where we build
+[150:57.60]  the external apis and products on top of
+[150:59.32]  so like quite a lot of stuff I knew
+[151:00.88]  nothing about Finance I knew nothing
+[151:04.32]  about the scale that we talking about
+[151:06.28]  they entrusted me somewhat insanely uh
+[151:08.92]  with
+[151:09.92]  that responsibility and so on the first
+[151:13.60]  month we had our quarterly Business
+[151:15.32]  Review where you know just the normal
+[151:17.92]  quarterly process and they I was like
+[151:20.28]  okay cool I'll do the next one I'll
+[151:21.40]  write the next one I've been here one
+[151:23.60]  month they're like no like you no you
+[151:26.84]  you write it
+[151:28.28]  like it'll be even better that you that
+[151:30.64]  you write it oh my God like it's just
+[151:32.36]  like the forcing me to have to in the
+[151:35.24]  fourth week have
+[151:38.08]  that
+[151:39.60]  Catalyst to understand the whole
+[151:42.16]  business and like with the permission
+[151:44.04]  because I was going to have to write
+[151:44.92]  this doc about how we're doing i'
+[151:47.72]  company been in existence for like seven
+[151:49.64]  years before I got here already at some
+[151:51.80]  reasonable scale I
+[151:54.16]  didn't it was just an intense it was
+[151:56.56]  just an intense operation and I remember
+[151:58.40]  writing the first draft and sending it
+[151:59.72]  to him because it was I didn't want to
+[152:01.48]  send it he had kind of pushed me to do
+[152:03.16]  it a bit and I figured I'd give him an
+[152:05.92]  early draft and he wrote back this
+[152:08.12]  doesn't sound like you yet the
+[152:10.36]  willingness to entrust a new person to
+[152:12.88]  provide their own perspective and and
+[152:15.28]  bring it into a very formalized document
+[152:18.40]  like that was an impressive and like
+[152:21.92]  that's that really spoke to me and I
+[152:23.52]  rewrote it completely and I made it
+[152:25.56]  sound like me and I've tried to make
+[152:27.72]  things sound like me since Jon's is more
+[152:30.00]  of a gut punch I'll say so I reported to
+[152:32.92]  John the co-founder
+[152:35.88]  he maybe nine months into reporting to
+[152:40.32]  him
+[152:42.80]  he I would run around with a clipboard I
+[152:45.12]  was a little bit manic of getting a lot
+[152:48.20]  done a lot going on at stripe at the
+[152:49.68]  time
+[152:52.24]  and I would we'd have a one hour
+[152:54.60]  one-on-one I'd be listing all the things
+[152:56.52]  that we had accomplished and the
+[152:58.12]  problems we have and where we need
+[153:00.04]  escalation help and where we're stuck
+[153:01.68]  and all this that and the other just
+[153:03.52]  lots of stuff I had you know checklists
+[153:05.68]  and physical paper flipping it over a
+[153:09.08]  little bit frantically and he he said
+[153:11.40]  you are one of the best people I've ever
+[153:13.12]  worked with at solving problems three
+[153:16.04]  through
+[153:17.04]  100 but I need you stuck on problem S
+[153:20.12]  one and two like oh
+[153:23.48]  man that like hurt I was like oh shoot I
+[153:26.84]  I am I've i' I'm I'm productive on the
+[153:29.96]  non-he hardest problems and I was trying
+[153:33.08]  to mask uh not on purpose mask but just
+[153:37.60]  who wants to be stuck on something so
+[153:39.00]  hard when there's so much else to do and
+[153:40.84]  from then on I would show up to him with
+[153:42.92]  problems one and two and not talk about
+[153:44.72]  provs 3 through 100 even if we were
+[153:46.00]  working on them we would just not talk
+[153:48.16]  about them and we would get stuck on
+[153:50.96]  problems one and two and that was
+[153:53.20]  phenomenal advice which I you know I was
+[153:56.00]  like oh shoot I'm going to be fired but
+[153:57.44]  just like but but was like it was really
+[153:59.56]  a deeply impactful
+[154:02.76]  sentence wow what a what a powerful
+[154:06.64]  great helpful like that's that's great
+[154:08.56]  advice he really my soul and yeah love
+[154:12.04]  this you know like uh Street Fighter
+[154:14.44]  style or something but it's your point
+[154:17.24]  very impactful and helpful yeah Jeff we
+[154:20.44]  did it cool the Archaeology is complete
+[154:22.88]  I appreciate the time Lenny it was fun
+[154:24.68]  and uh I I don't do too many of these so
+[154:27.12]  I'm curious to people's feedback and
+[154:29.28]  really appreciate the questions amazing
+[154:31.52]  Jeff thank you so much for being here
+[154:33.32]  appreciate it Lenny bye
+[154:35.96]  everyone thank you so much for listening
+[154:38.32]  if you found this valuable you can
+[154:39.76]  subscribe to the show on Apple podcast
+[154:41.96]  Spotify or your favorite podcast app
+[154:44.88]  also please consider giving us a rating
+[154:46.84]  or leaving a review as that really helps
+[154:48.96]  other listeners find the podcast you can
+[154:51.32]  find all past episodes or learn more
+[154:53.36]  about the show at Lenny podcast.com see
+[154:56.68]  you in the next episode

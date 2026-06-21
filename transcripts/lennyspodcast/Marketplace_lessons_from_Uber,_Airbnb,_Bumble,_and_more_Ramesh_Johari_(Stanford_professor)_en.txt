@@ -1,0 +1,2465 @@
+Title     : Marketplace lessons from Uber, Airbnb, Bumble, and more | Ramesh Johari (Stanford professor)
+Video ID  : BVzTfsUMaK8
+URL       : https://www.youtube.com/watch?v=BVzTfsUMaK8
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2456
+Saved at  : 2026-06-21 01:30:47
+------------------------------------------------------------
+
+[00:00.16]  marketplaces are a little bit like a
+[00:02.12]  game of whacka like one example that I
+[00:04.08]  came across with one of the companies I
+[00:06.00]  worked with that I love is our new you
+[00:09.12]  know supply side was having a pretty bad
+[00:11.44]  experience so what we decided to do is
+[00:13.16]  build some custom bespoke features that
+[00:15.36]  were really going to direct them to more
+[00:16.92]  experienced folks on the other side of
+[00:18.48]  the market good and then yeah lo and
+[00:20.88]  behold you know pretty soon those
+[00:22.20]  metrics start to look better but then
+[00:23.44]  we're looking at we're like wait a
+[00:24.52]  second now you know the existing folks
+[00:26.92]  on the other side are having a worse
+[00:28.40]  experience so you kind of lash around
+[00:30.64]  you're like oh wait a second we better
+[00:31.72]  do something about that so we take them
+[00:33.16]  we try to match them up with the more
+[00:34.64]  experienced folks and now suddenly month
+[00:36.72]  after that you're like you know wait a
+[00:38.40]  second and and your metrics just keep
+[00:39.76]  moving around and that's because the
+[00:41.00]  wack Ando game here is ultimately a lot
+[00:43.32]  of marketplace management is moving
+[00:45.08]  attention and inventory around many of
+[00:47.44]  the changes that are most consequential
+[00:48.88]  create winners and losers and rolling
+[00:50.68]  with those changes is about recognizing
+[00:52.80]  whether the winners you've created are
+[00:54.56]  more important to your business than the
+[00:56.52]  losers you've created in the
+[00:58.92]  process
+[01:00.56]  today my guest is Ramesh Johari Ramesh
+[01:03.32]  is a professor at Stanford University
+[01:05.96]  where he does research on and teaches
+[01:07.76]  data science methods and practices with
+[01:10.16]  a specific focus on the design and
+[01:12.36]  operation of online marketplaces he's
+[01:14.84]  advised and worked with some of the
+[01:16.28]  biggest marketplaces in the world
+[01:18.08]  including Airbnb Uber stripe Bumble
+[01:21.40]  Stitch fix upwork and many others and in
+[01:24.28]  our conversation we get super nerdy on
+[01:26.76]  how to build a thriving Marketplace
+[01:29.04]  including to focus your resources to
+[01:31.44]  fuel the marketplace flywheel of growth
+[01:33.72]  why data and data science is so Central
+[01:36.24]  to building a successful Marketplace how
+[01:38.52]  to design a better review system why as
+[01:41.16]  a Founder you shouldn't think of
+[01:42.52]  yourself as a Marketplace founder but
+[01:44.44]  instead simply as a Founder also how AI
+[01:47.72]  is going to impact data science and
+[01:49.48]  marketplaces and experimentation and so
+[01:51.92]  much more if you're building a
+[01:53.24]  Marketplace business or thinking about
+[01:55.04]  building a Marketplace or just curious
+[01:57.28]  this episode is for you with that I
+[01:59.28]  bring you Ramesh Johari after a short
+[02:01.72]  word from our
+[02:03.28]  sponsors this episode is brought to you
+[02:05.72]  by sanity your website is the heart of
+[02:08.44]  your growth engine for that engine to
+[02:10.40]  drive big results you need to be able to
+[02:12.32]  move super fast ship new content
+[02:14.76]  experiment learn and iterate but most
+[02:17.16]  content Management Systems just aren't
+[02:18.76]  Built For This your content teams
+[02:20.60]  wrestle with rigid interfaces as they
+[02:22.40]  build new pages you spent endless time
+[02:24.84]  copying and pasting across pages and
+[02:26.96]  recreating content for other channels
+[02:28.80]  and applications and their ideas for new
+[02:30.92]  experiments are squashed when developers
+[02:32.60]  can't build them within the constraints
+[02:34.12]  of outdated Tech Forward Thinking
+[02:36.40]  companies like figma amplitude Loom Ride
+[02:39.68]  Games linear and more use sanity to
+[02:42.28]  build content growth engines that scale
+[02:44.16]  Drive Innovation and accelerate customer
+[02:46.20]  acquisition with sanity your team can
+[02:48.44]  dream bigger and move faster as the most
+[02:50.84]  powerful headless CMS on the market you
+[02:52.88]  can tailor editorial workflows to match
+[02:54.68]  your business reuse content seamlessly
+[02:57.08]  across any page or Channel and bring
+[02:58.72]  your ideas to Market without developer
+[03:00.60]  friction sanity makes life better for
+[03:03.20]  your whole team it's fast for developers
+[03:05.20]  to build with intuitive for Content
+[03:07.00]  managers and it integrates seamlessly
+[03:09.08]  with the rest of your Tech stack get
+[03:10.96]  started with sanity's generous free plan
+[03:13.08]  and as a Lenny's podcast listener you
+[03:14.92]  can get a boosted plan with double the
+[03:16.80]  monthly usage head over to
+[03:19.12]  sanity.io Lenny to get started for free
+[03:21.96]  that's
+[03:23.28]  sanity.io
+[03:25.40]  Lenny this episode is brought to you by
+[03:28.36]  hex if you're a data person you probably
+[03:30.64]  have to jump between different tools to
+[03:32.40]  run queries build visualizations write
+[03:35.04]  Python and send around a lot of
+[03:36.96]  screenshots and CSV files heex brings
+[03:40.16]  everything together its powerful
+[03:41.84]  notebook UI lets you analyze data in SQL
+[03:44.56]  python or no code in any combination and
+[03:47.16]  work together with live multiplayer and
+[03:49.36]  Version Control and now hex's ai tools
+[03:52.20]  can generate queries and code create
+[03:54.08]  visualizations and even Kickstart a
+[03:56.04]  whole analysis for you all from natural
+[03:58.12]  language prompts it's like having an
+[04:00.08]  analytics co-pilot built right into
+[04:02.04]  where you're already doing your work
+[04:03.72]  then when you're ready to share you can
+[04:05.00]  use hexa's Drag and Drop app builder to
+[04:07.12]  configure beautiful reports or
+[04:08.56]  dashboards that anyone can use join the
+[04:10.96]  hundreds of data teams like notion
+[04:12.64]  alltrails Loom mix panel and algolia
+[04:15.40]  using hex every day to make their work
+[04:17.52]  more impactful sign up today at
+[04:21.96]  hex.exe trial of the hex team plan
+[04:25.08]  that's
+[04:26.20]  hextech
+[04:28.60]  Lenny
+[04:31.72]  rsh thank you so much for being here
+[04:33.80]  welcome to the podcast thanks so much
+[04:36.00]  for having me Lenny it's uh it's great
+[04:37.36]  to be on it's great to have you on a big
+[04:40.28]  thank you to Riley Newman for connecting
+[04:42.44]  us Riley was the first data scientist
+[04:44.64]  atbb and head of data science at Airbnb
+[04:47.36]  and that role is actually a really good
+[04:48.84]  microcosm of what we're going to be
+[04:50.64]  focusing on in our chat today we're
+[04:52.68]  going to get super Nery about
+[04:54.48]  marketplaces and experimentation and
+[04:57.00]  data I know that's your jam you ready to
+[04:59.96]  dive in I really am yeah and and I
+[05:02.64]  actually want to thank Riley too um you
+[05:04.84]  know I I got to know Riley when I was at
+[05:07.08]  at odesk uh you know first as a research
+[05:09.92]  scientist and then I directed their data
+[05:11.56]  science team this was like way back in
+[05:13.72]  in 2012 and you know I was looking
+[05:16.36]  around for people who are experts on how
+[05:18.76]  we think about data in marketplaces and
+[05:20.72]  and Riley Newman came up and so I
+[05:22.28]  invited him to come talk to us at odesk
+[05:24.84]  and we've stayed in touch since then you
+[05:26.52]  know those were early days of where this
+[05:29.08]  industry was and and I've had a kind of
+[05:31.64]  lengthy career now uh thinking about
+[05:34.44]  those kinds of problems so I'm pretty
+[05:35.44]  excited to talk about it with you let's
+[05:37.36]  start Broad and set a little Foundation
+[05:40.28]  you have a really interesting way to
+[05:42.28]  describe what a Marketplace business
+[05:44.08]  even is so rsh what is a Marketplace
+[05:47.08]  business and also why is data so
+[05:49.20]  important and such an integral part of
+[05:50.72]  building a successful Marketplace
+[05:52.20]  business you know it's it's interesting
+[05:54.48]  when people sit down and think about say
+[05:56.68]  Airbnb what does Airbnb sell average
+[05:59.68]  person is like oh it's that's pretty
+[06:00.92]  obvious Airbnb sells rooms I go there to
+[06:02.92]  book a room I want to stay at right
+[06:04.28]  other people say oh what does Uber sell
+[06:05.92]  Uber sells me rides I use Uber when I
+[06:07.84]  need to get a ride from somewhere to
+[06:08.92]  somewhere else and you know in some
+[06:11.16]  sense you're not wrong I mean you go
+[06:12.64]  there that's a platform to get these
+[06:14.00]  things but that's not what the platform
+[06:16.32]  is selling that's a really important
+[06:17.96]  distinction there are people on the
+[06:20.04]  platform that are selling that to you
+[06:21.68]  the hosts on Airbnb are selling you
+[06:23.56]  listings the you know the drivers on
+[06:26.04]  Uber are selling you
+[06:27.44]  rdes but Uber and Airbnb are selling you
+[06:32.44]  some the taking away of something which
+[06:34.32]  is a weird thing to think about what
+[06:35.88]  they're taking away is the friction of
+[06:38.12]  finding a place to stay they're taking
+[06:40.08]  away the friction of finding a driver in
+[06:42.88]  economics we call those things
+[06:44.12]  transaction costs you know when you take
+[06:45.88]  econ one you learn about markets and how
+[06:48.76]  Supply meets demand and we get prices
+[06:50.52]  out of that but but you don't learn
+[06:52.44]  until like econ you know 2011 is that
+[06:55.20]  markets don't always work and one of the
+[06:56.88]  reasons markets don't always work is
+[06:58.36]  because we have what are called Market
+[06:59.40]  market failures due to the presence of
+[07:01.72]  these kinds of frictions so like what's
+[07:03.24]  a market failure it's that you know
+[07:04.92]  Lenny wants to get from paloalto to
+[07:07.40]  Berling game and he can't do it why
+[07:09.60]  can't he do it because he doesn't have
+[07:10.56]  anyone to drive in well why doesn't he
+[07:12.52]  just call someone to drive him well
+[07:13.68]  who's he supposed to call who are those
+[07:15.40]  people are they out there are they
+[07:17.04]  willing to drive him right now right at
+[07:18.80]  like you know 10: am. on a Friday are
+[07:20.56]  they willing to take him somewhere when
+[07:22.80]  I want to stay somewhere when I'm
+[07:24.00]  traveling a friction is who's willing to
+[07:26.52]  give me their room I mean in principal
+[07:28.20]  there's people who are willing to let me
+[07:29.44]  stay in their living room but I don't
+[07:30.48]  know who they are so those are frictions
+[07:33.08]  and what the marketplaces are selling
+[07:34.92]  you is taking the friction away that's
+[07:37.76]  what you're paying them for and it's an
+[07:39.76]  important observation because what that
+[07:41.36]  means is the marketplace's customers
+[07:43.64]  aren't just the people buying the rides
+[07:45.36]  are buying the listings actually the
+[07:46.84]  hosts are airbnb's customers and the
+[07:49.56]  drivers are also a uh Uber's customers
+[07:52.08]  right so both sides of the marketplace
+[07:53.96]  are the customers of the platform both
+[07:56.08]  sides depend on the platform to help the
+[07:58.16]  platform take that friction away because
+[07:59.52]  just like you want a place to stay or
+[08:01.12]  you want to ride the driver is at Uber
+[08:03.36]  because he wants to earn money by taking
+[08:04.96]  people places and the host is out Airbnb
+[08:07.64]  because they want to earn money by
+[08:08.76]  selling their listing I think this
+[08:11.12]  concept that we're making money by
+[08:13.24]  taking transaction costs away is such a
+[08:16.12]  fundamental idea that's misunderstood
+[08:18.44]  around marketplaces that when you're an
+[08:20.40]  entrepreneur starting a Marketplace or
+[08:23.28]  thinking about your business model I
+[08:25.12]  think you can be wildly off if you
+[08:27.60]  forget that that's the thing that's
+[08:29.24]  fundamentally your value proposition you
+[08:31.24]  know and then you asked about the role
+[08:32.48]  of data and more broadly data science in
+[08:35.44]  in marketplaces so it's an interesting
+[08:38.60]  thing right like the example I always
+[08:40.88]  love to give are the ancient aoras you
+[08:43.00]  know in Greece or or like trajan's
+[08:45.24]  Market in Rome you know when you look at
+[08:47.44]  pictures of these things what really
+[08:48.64]  stands out to me is the rock I mean
+[08:50.60]  these things are made of stone it's not
+[08:53.24]  like you were going to move a booth from
+[08:54.80]  one place to another place without
+[08:56.24]  moving a lot of rock from one place to
+[08:58.80]  another place place so you flash forward
+[09:01.12]  to 2023 and here we are with technology
+[09:03.76]  underg guring pretty much every kind of
+[09:05.64]  Commerce now and it means we can
+[09:07.96]  architect and rearchitecturing
+[09:29.64]  okay one of them is finding people to
+[09:32.36]  match with so that's the problem of I
+[09:34.72]  want to stay somewhere who is out there
+[09:37.16]  who's willing to let me stay with them
+[09:39.36]  on a given you know time frame and then
+[09:41.84]  if I'm a host I have a listing who is
+[09:44.00]  out there who's willing to stay at my
+[09:45.64]  place when I have it available so that's
+[09:47.52]  finding matches then there's making the
+[09:51.12]  match and so here you know going back to
+[09:53.04]  my time at odesk you know a big problem
+[09:55.40]  that we dealt with there was if I've got
+[09:57.92]  multiple applicants to my job who should
+[10:00.36]  I hire who should I interview right it's
+[10:02.52]  a common problem we face in the real
+[10:03.92]  world but now it's all remote I don't
+[10:05.76]  meet these people in person all I've got
+[10:07.60]  is this application they submitted to me
+[10:09.88]  I need help triaging that okay so that's
+[10:12.36]  helping make a match out of possible
+[10:14.52]  Partners you can match with and then
+[10:16.48]  finally we make
+[10:18.04]  matches well what matches tell us right
+[10:21.00]  I mean if you stay somewhere in Airbnb
+[10:22.64]  you learn something about the host you
+[10:23.84]  learn something about the listing the
+[10:25.20]  host learns about you too and you know
+[10:28.28]  that's all in information that the
+[10:30.56]  marketplace should feed back in so this
+[10:32.16]  is where we get to rating systems and
+[10:33.64]  feedback systems even passive data
+[10:35.80]  collection right did you leave your
+[10:38.00]  booking before you were supposed to
+[10:39.56]  leave well maybe that's a sign that
+[10:40.84]  something didn't quite work out the way
+[10:41.80]  you want it to work out so that's
+[10:43.40]  passive data collection did you leave
+[10:44.88]  five stars that's active data collection
+[10:47.24]  get all this back in and what does that
+[10:48.60]  do well that lets us do a better job
+[10:50.88]  finding potential matches and make
+[10:52.56]  potential matches in the future every
+[10:54.48]  single thing I just said finding
+[10:56.52]  potential matches making matches and
+[10:59.04]  learning about those matches and then
+[11:00.88]  you know cycling back again that is the
+[11:02.92]  data science of
+[11:04.32]  marketplaces and I feel like every
+[11:06.68]  market place that you could think of you
+[11:09.08]  know in any vertical has those three
+[11:12.76]  problems to deal with and relies on
+[11:15.00]  algorithms and data science to help them
+[11:16.48]  solve it and in turn that is the I think
+[11:19.28]  really the underpinning of taking those
+[11:20.56]  frictions away many Founders try to
+[11:23.64]  start a Marketplace business think about
+[11:25.36]  Marketplace opportunities where they
+[11:27.12]  don't exist and there's often like
+[11:29.32]  recurring failures of types of marketpl
+[11:31.20]  that just don't work in a area I was
+[11:33.04]  just writing a couple ideas down while
+[11:34.36]  you're chatting like cleaners getting
+[11:36.80]  cleaners as a Marketplace doesn't seem
+[11:38.40]  to work ever car wash there's a classic
+[11:40.92]  failure or two like getting tasks done
+[11:43.92]  for you on demand as a Marketplace seems
+[11:45.44]  to not often work so this might be too
+[11:48.40]  big of a question but I'm just curious
+[11:49.72]  if anything comes up of when someone is
+[11:51.68]  starting a Marketplace or thinking about
+[11:53.24]  starting a Marketplace business what do
+[11:55.40]  you find are the most common flaws in
+[11:57.24]  like this is probably not going going to
+[11:59.24]  work as a Marketplace that is such a
+[12:01.88]  fantastic question and I want to preface
+[12:04.40]  uh what I say with a couple of comments
+[12:06.20]  so one of them is that you know I've
+[12:08.76]  worked with a lot of different
+[12:09.72]  Marketplace companies when anything I
+[12:11.28]  say is pertaining you know to something
+[12:13.44]  more sensitive I may not name the
+[12:14.76]  company uh just over the course of the
+[12:16.68]  podcast um but the other more important
+[12:18.76]  thing I want to say is that you know I'm
+[12:21.20]  a professor at Stanford and there's a
+[12:24.24]  reason I'm not like a successful scar
+[12:26.36]  scaled entrepreneur in marketplaces and
+[12:28.20]  that's because I probably haven't
+[12:29.16]  unlocked the key to exactly the question
+[12:30.72]  you asked but nevertheless I have some
+[12:32.20]  thoughts on it the most important one is
+[12:34.52]  this what I found talking to people who
+[12:36.40]  want to start what they think is a
+[12:39.28]  Marketplace is that they think too much
+[12:41.60]  about a Marketplace before they're a
+[12:43.20]  Marketplace that in my view is the
+[12:45.12]  biggest failure mode you know you
+[12:46.80]  mentioned specific things cleaners you
+[12:49.24]  know I I wonder about that right is it
+[12:51.52]  about something about the cleaning
+[12:52.88]  industry it possibly is I don't claim to
+[12:55.04]  be an expert on the the microeconomics
+[12:57.44]  of the cleaning industry but but often
+[12:59.20]  it's not that it's that I thought I was
+[13:00.96]  building a Marketplace from the
+[13:02.20]  beginning and that's not the way the
+[13:03.56]  world works so I'm going to give you one
+[13:04.84]  vignette of this that I really like and
+[13:07.20]  that's Urban sitter so when Urban sitter
+[13:10.00]  first urban sitter is a babysitting
+[13:11.40]  Marketplace okay we can we can talk
+[13:13.28]  about kind of their whole life story but
+[13:14.68]  I think what's most interesting is
+[13:15.96]  really the early days and in the early
+[13:17.72]  days what what I found interesting the
+[13:19.08]  way I found out about them actually is
+[13:20.40]  that we were stuck looking for some help
+[13:22.72]  and I found out about this new platform
+[13:25.04]  where kind of the the the clever thing
+[13:27.88]  was you know when you used to hire a
+[13:29.76]  babysitter this is like pre venmo days
+[13:31.60]  you need a cash on hand because when the
+[13:33.44]  babysitter's done at the end of the day
+[13:34.60]  they're usually like you know high
+[13:35.52]  school students or something they they
+[13:37.16]  want to get paid they're not g to take
+[13:39.12]  your IOU that you'll you know send them
+[13:41.00]  some check in the mail the next day and
+[13:43.52]  unfortunately you often don't have cash
+[13:45.36]  they don't take credit card they're you
+[13:46.68]  know high school students that was an
+[13:48.88]  incredible friction to address which is
+[13:50.64]  literally just we accept credit card
+[13:52.48]  payments for babysitting that's it right
+[13:55.32]  now from there what happened is they
+[13:57.52]  took advantage of Facebook networks
+[13:59.12]  between parents and babysitters to build
+[14:00.84]  trusted introductions so like let's say
+[14:02.76]  my sitter wasn't available I get to know
+[14:04.72]  Sitters in the Facebook network of of
+[14:06.48]  that sitter
+[14:08.04]  right and once they overcame that first
+[14:10.96]  thing to get some liquidity onto their
+[14:12.96]  platform they could move towards asking
+[14:16.40]  how do I solve for these frictions that
+[14:18.32]  I talked about earlier how do I solve
+[14:20.44]  for helping people find potential
+[14:22.40]  matches how do I solve for people making
+[14:24.60]  those matches right you can't do that
+[14:26.32]  when you don't have liquidity on your
+[14:27.56]  platform it's silly to tell someone hey
+[14:29.56]  I'm really going to help you find all
+[14:30.96]  those drivers out there even though I
+[14:32.28]  only have three drivers on my platform
+[14:33.88]  that's not a friction you're solving for
+[14:36.32]  so in their example as they evolve they
+[14:39.20]  actually shifted their monetization
+[14:40.92]  model away from billing specifically for
+[14:43.92]  this friction of allowing you to pay
+[14:46.04]  with credit cards instead to now billing
+[14:49.04]  for how you were interviewing and
+[14:50.56]  contacting sitters they had kind of a
+[14:52.56]  two-part plan for that you know one with
+[14:54.44]  like a pay as you go menu one with a
+[14:56.44]  more of like a subscription option but
+[14:57.88]  the the key thing was either way what
+[14:59.64]  you were paying for now was Finding
+[15:01.68]  potential babysitters not paying them
+[15:03.40]  with a credit card that wasn't the key
+[15:04.68]  thing anymore right so what's the moral
+[15:06.56]  there the moral is a Marketplace
+[15:09.16]  business never starts as a Marketplace
+[15:11.40]  business because what we think of as a
+[15:13.48]  Marketplace business is something which
+[15:15.32]  at scale is removing the friction of the
+[15:18.00]  two sides finding each other but when
+[15:20.08]  you start you don't have that scale so
+[15:22.88]  when you start you had better be
+[15:24.20]  thinking what's my value proposition in
+[15:27.00]  a world in which I don't have that scale
+[15:29.48]  liquidity on both sides and you know
+[15:31.80]  that's bespoke it it means different
+[15:33.48]  things and in the case of odesk where I
+[15:35.92]  started that initial thing was that
+[15:39.60]  remote work is a weird thing because
+[15:42.08]  basically you've somehow got to know
+[15:44.08]  that this person who you're not next to
+[15:46.08]  is doing what you're asking them to do
+[15:48.24]  and so the initial value proposition of
+[15:50.08]  odesk was to provide tools for workers
+[15:54.32]  to verify they were working the hours
+[15:56.20]  and doing the things that they said they
+[15:57.76]  were doing you know screenshots and and
+[15:59.76]  various kinds of tracking and then in
+[16:02.60]  return for that to be able to provide
+[16:04.00]  guarantees on both sides right so now
+[16:06.08]  the workers could say hey I worked what
+[16:07.40]  I said so I should get paid and the
+[16:08.68]  employers could say oh you know I
+[16:10.36]  actually see that you worked what you
+[16:11.56]  said and so you know I I feel
+[16:13.36]  comfortable that I got what I paid for
+[16:15.76]  that was the initial value proposition
+[16:17.20]  was resolving a trust issue at a remote
+[16:19.84]  scale right at that point liquidity
+[16:22.76]  isn't the game it's asking what's a
+[16:25.72]  what's a problem that people in this
+[16:27.76]  space are facing that I can de deal with
+[16:30.88]  when I'm not a scaled Marketplace so you
+[16:33.48]  know again with the cleaning industry I
+[16:34.96]  can comment on that from personal
+[16:36.68]  experience but otherwise I think that's
+[16:38.36]  the way I would think about it it's
+[16:39.48]  almost never about building a
+[16:41.20]  Marketplace when you're building a
+[16:42.64]  Marketplace that's very similar to the
+[16:44.92]  advice I always give Marketplace
+[16:46.12]  Founders is like 90% of your problems
+[16:48.76]  are going to be nonm Marketplace
+[16:50.40]  specific problems they're going to be
+[16:51.60]  the same problems any startup is going
+[16:54.12]  to have like how do I grow it's going to
+[16:55.80]  be like the same things you need to do
+[16:58.20]  so you know one thing you said was
+[16:59.80]  that's what you tell Marketplace
+[17:01.52]  Founders I mean something I've actually
+[17:03.12]  pressed hard on in in my own way of
+[17:05.32]  thinking about this is that maybe we
+[17:06.72]  shouldn't talk about the concept of a
+[17:08.12]  Marketplace founder really there's
+[17:10.84]  Founders and I think every entrepreneur
+[17:13.40]  I mean one way to think about it right
+[17:14.68]  it's very hard to think about a human
+[17:16.96]  business Endeavor that has not been
+[17:19.04]  disrupted by the potential for
+[17:21.88]  transactions to take place
+[17:23.60]  online and if that's the case it means
+[17:25.76]  literally any founder is a Marketplace
+[17:27.56]  founder it'll a choice they make after
+[17:29.76]  they grow as to whether they want to
+[17:31.60]  build a platform I mean to take a very
+[17:34.16]  you know a very hot recent example no
+[17:36.92]  one in their right mind would have
+[17:38.36]  thought of open AI as a
+[17:40.56]  marketplace right but open AI is a
+[17:42.48]  marketplace now they may not want to
+[17:43.96]  call themselves The Marketplace but they
+[17:45.28]  have plugins the plugins are flooding
+[17:47.48]  that that platform I don't know you know
+[17:50.00]  if people have played with it I mean
+[17:51.80]  it's not it's not an easy thing to find
+[17:54.12]  the plugin you need for what you want to
+[17:55.76]  do and that really is a two-sided thing
+[17:57.88]  now there's the plugin creators and
+[17:59.48]  there's the users and and they may
+[18:01.80]  believe it they may not believe it but
+[18:02.96]  they are a Marketplace so I think a
+[18:05.04]  different way to think about it is every
+[18:06.20]  founder is a Marketplace founder it's
+[18:08.16]  going to be a choice they want to make
+[18:09.36]  for themselves of whether they want to
+[18:10.72]  become that platform that's I think one
+[18:12.92]  and two is because that's the case I
+[18:15.76]  think one of the other challenges I find
+[18:17.20]  Founders struggle with is you never want
+[18:20.04]  to you don't want to overcommit your
+[18:21.88]  future and what I mean by that is that
+[18:24.96]  you're building up trust and you're
+[18:26.84]  building up a sense of what kind of
+[18:28.68]  business you are in your early days if
+[18:32.04]  you believe that this kind of platform
+[18:33.96]  future awaits you or Market you know
+[18:35.76]  Market platform future awaits you you're
+[18:38.56]  there may be choices you're making early
+[18:40.08]  on that are tying your hands later a
+[18:41.72]  great example of this is you know when
+[18:44.40]  Oda started it was because the tools
+[18:47.80]  they were providing were for ongoing
+[18:49.44]  monitoring of work it's a very natural
+[18:51.24]  thing to say you know we'll just take a
+[18:53.60]  constant fraction of the dollars that
+[18:55.04]  cross the platform that all works well
+[18:57.08]  and good until you know after you become
+[18:59.24]  mature some of these relationships
+[19:01.20]  between worker and employer last a long
+[19:03.28]  time and most of the value was generated
+[19:06.12]  now not so much because they're able to
+[19:07.72]  track each other because the trust is
+[19:09.16]  now there but because they found each
+[19:11.40]  other because they're able to build that
+[19:12.92]  relationship through
+[19:14.48]  odesk and that meant that you know the
+[19:17.12]  longer that goes on the less value the
+[19:19.44]  platform is adding into that
+[19:21.44]  relationship right and but you're still
+[19:23.28]  pulling 10% of all the dollars so what
+[19:25.48]  does that lead to a word that you know
+[19:27.44]  most Marketplace CEOs know well is
+[19:29.64]  disintermediation which is where you
+[19:31.72]  were intermediating between the two
+[19:33.72]  parties and now they disintermediation
+[19:35.84]  means you know that essentially they're
+[19:37.36]  like hey we don't need you anymore right
+[19:39.32]  favorite example is we had some stuff
+[19:41.04]  delivered from Ikea by a thumb Tech
+[19:43.28]  worker once and you know my wife is like
+[19:45.44]  oh you know thanks a lot you're so
+[19:47.00]  reliable he's like hey great here's my
+[19:48.56]  business card ever need me again just
+[19:50.40]  call the number on the back right and
+[19:51.64]  that was it like thumb Tech got their
+[19:53.12]  one Legion and then you know we we
+[19:55.44]  didn't we didn't need the platform
+[19:57.12]  anymore and I think
+[19:59.36]  this issue for odesk meant that after
+[20:01.76]  they merged with Elance and became
+[20:03.28]  upwork uh they had to think a little bit
+[20:05.28]  about okay what's the monetization
+[20:06.84]  strategy we want to use how do we
+[20:08.80]  address this issue that longer term
+[20:10.96]  relationships May disintermediate does
+[20:12.80]  that mean you need a pricing plan that
+[20:15.04]  actually takes that into account right
+[20:17.24]  so early commitments in this case to
+[20:20.28]  like a particular pricing scheme
+[20:21.72]  particular monetization can really tie
+[20:23.44]  your hands as you then realize later you
+[20:25.28]  actually are a platform I really like
+[20:27.40]  this message it makes me think about
+[20:28.52]  substack actually which started as a
+[20:31.44]  just a platform for newsletter writers
+[20:33.88]  and then they're like how do we make
+[20:35.32]  this more valuable because they take a
+[20:36.60]  cut of everyone's revenue and they've
+[20:38.80]  actually invested heavily on helping
+[20:41.12]  Drive demand to writers for example me
+[20:43.48]  and at this point over 80% of my
+[20:45.12]  subscribers come from substack Network
+[20:47.92]  and so they've built this Marketplace
+[20:49.28]  element exactly as you're describing
+[20:51.08]  where they just found here's a paino
+[20:52.64]  writers need more subscribers how do we
+[20:54.12]  help them Drive subscribers so they
+[20:55.72]  figured out all these ways to create
+[20:57.44]  demand that's like a really positive
+[20:59.80]  story right where they they they managed
+[21:02.96]  to actually expand the frontier of their
+[21:06.32]  business by enabling that Network you
+[21:08.88]  know for every one of those there's
+[21:10.36]  unfortunately you know a lot of negative
+[21:12.28]  stories I mean one that I think is very
+[21:14.28]  painful is how eBay sort of had a lot of
+[21:18.64]  challenges with its seller Community as
+[21:20.36]  it introduced you know more and more
+[21:22.44]  fine grained kind of sources of fees and
+[21:25.56]  I think a lot of that I mean there's
+[21:27.36]  many many treatises at this point
+[21:29.56]  written on eBay and their history and
+[21:31.32]  and how they got to the point that
+[21:32.44]  they're at but I think one kind of
+[21:35.20]  simple thing I do want people to think
+[21:37.08]  about there is that the sellers on eBay
+[21:40.24]  Who had who had matured with the
+[21:41.96]  platform who had grown with it had come
+[21:43.76]  to developed certain expectations about
+[21:46.76]  what their lives on that platform would
+[21:48.88]  look like and it's understandable
+[21:50.20]  because a lot of these businesses they
+[21:51.64]  had built their livelihood on that
+[21:53.20]  platform that that was their entire
+[21:55.20]  business so when you now reach in and
+[21:58.56]  you say I'm going to completely change
+[22:00.92]  the rules of the game in which your
+[22:02.52]  business model operates you know from
+[22:04.92]  the perspective of those sellers that's
+[22:07.24]  that's a Breaking of a social contract
+[22:09.48]  that's been developed over a very long
+[22:11.20]  time and so you know I love the substack
+[22:14.28]  example because that's like hey let me
+[22:15.72]  amplify our social contract right but
+[22:17.68]  but I think for every one of those
+[22:19.52]  there's an eBay warning sign that you
+[22:21.20]  can also you could trap yourself a
+[22:23.20]  little bit just to close a loop on this
+[22:25.40]  really I think important point a lot of
+[22:28.36]  people listening to this are probably
+[22:29.84]  I'm a Marketplace founder I'm building a
+[22:31.32]  Marketplace are going to hear this and
+[22:33.04]  be like oh maybe I need to rethink
+[22:35.44]  how I think about what I'm doing what
+[22:37.12]  would be your piece of advice to people
+[22:39.88]  like that is it focus on the friction
+[22:42.32]  point and it may be a Marketplace
+[22:44.00]  solution it may be a manag Marketplace
+[22:45.56]  it may be you own the supply is that the
+[22:48.56]  advice or how would you what would your
+[22:50.00]  advice be to someone that's like I'm
+[22:51.56]  building a Marketplace what how should
+[22:53.16]  they reframe their thinking let's go
+[22:55.20]  back to kind of thinking about this
+[22:57.08]  concept of a market place of reducing
+[22:58.92]  friction right so the limit test I like
+[23:02.84]  to give to someone who claims to me that
+[23:04.72]  they're building a Marketplace business
+[23:06.24]  or their Marketplace founder is you know
+[23:08.08]  do you have what I would call scaled
+[23:09.56]  liquidity on both sides of your platform
+[23:11.44]  what does scaled liquidity mean what it
+[23:13.72]  means in late terms and and that's by
+[23:16.16]  the way I I am a data scientist and I
+[23:17.92]  love to think about these quantitatively
+[23:19.36]  but but fundamentally like if it doesn't
+[23:20.68]  pass the smell test then you don't have
+[23:22.04]  to keep going with the data science and
+[23:23.64]  the small test is scale liquidity asks
+[23:27.04]  do I have a lot of buyers and a lot of
+[23:29.48]  sellers on my platform or do I only have
+[23:31.88]  one of these two or do I have neither
+[23:33.96]  okay if you don't have both it you can
+[23:36.76]  call yourself whatever you want to call
+[23:37.92]  yourself but at this moment in time
+[23:39.52]  you're not a Marketplace all right if
+[23:41.88]  you have one congratulations you've won
+[23:44.28]  the game on one side of the market and
+[23:46.08]  now you can you can if you want you have
+[23:48.84]  a choice point you can lean into growth
+[23:51.16]  on the side that you're doing well with
+[23:52.88]  right you got a ton of users ton of
+[23:54.44]  buyers great lean into it get more
+[23:56.36]  buyers that's one option it's there's no
+[23:58.84]  shame in not being a
+[24:00.60]  Marketplace there's there's you know
+[24:02.60]  scaling of business is scaling of
+[24:03.68]  business if that's the way to do it do
+[24:05.00]  it if you decide you want to be a
+[24:07.44]  Marketplace then at that moment when
+[24:09.00]  you've got a lot of buyers but not a lot
+[24:10.40]  of sellers or a lot of sellers but not a
+[24:11.88]  lot of buyers the choice you're facing
+[24:13.64]  is how do I take advantage of having
+[24:15.84]  that one side scaled to attract the
+[24:17.76]  other side we can talk more about that
+[24:19.60]  but there's a lot of ways to kind of
+[24:21.00]  Hack That to think about how so you know
+[24:23.28]  to take Uber as an example right they
+[24:24.76]  would walk into a new city and uh one
+[24:27.24]  thing that you know Uber was was kind of
+[24:29.76]  commonly known for doing this was back
+[24:31.00]  in the days when really Uber black was
+[24:32.56]  the only service is they just hand out
+[24:35.04]  coupons for free rides at kind of you
+[24:37.04]  know events parties things like that to
+[24:39.08]  take people home and that was a way of
+[24:41.44]  saying hey we're subsidizing the drivers
+[24:43.48]  in the city that's our scaled side now
+[24:45.72]  we're going to use that subsidized
+[24:46.92]  driver base to attract briers okay so
+[24:49.92]  that's like how do you get that flywheel
+[24:51.28]  going and and again you know many people
+[24:53.32]  have written about how to take liquidity
+[24:55.96]  scale liquidity on one side and use it
+[24:57.80]  to attract the other side if you don't
+[25:00.28]  have either side don't worry about it
+[25:03.32]  don't worry about being a Marketplace
+[25:05.12]  worry about scaling one side and in that
+[25:08.32]  world it's opened up it it opens your
+[25:11.40]  visibility up completely into the advice
+[25:13.80]  of many many you know startup advisers
+[25:16.92]  right people who have advice not so much
+[25:19.12]  about scaling a Marketplace but about
+[25:21.28]  scaling a startup and I really I want to
+[25:24.00]  say you got to let the ego go on at that
+[25:26.36]  point right like it's finding articulate
+[25:28.60]  to people that your vision of the future
+[25:30.00]  is to be a platform or Marketplace as I
+[25:31.68]  said virtually every business is going
+[25:33.36]  to have that option at some point in in
+[25:35.12]  you know the modern tech enabled economy
+[25:36.92]  anyway so you're not saying something
+[25:38.52]  people don't already know when you tell
+[25:40.16]  you know an adviser or an investor that
+[25:42.52]  but I do think you need to be humble
+[25:44.92]  enough at the starting point to
+[25:46.40]  recognize that there's no sense in
+[25:48.60]  talking about a Marketplace if you don't
+[25:49.96]  have scaling on either side yet and then
+[25:52.32]  it becomes a question of a business
+[25:54.24]  model un unit economics of can I build
+[25:58.36]  say a door Dash not as a Marketplace can
+[26:00.48]  I just hire a bunch of people delivering
+[26:02.48]  right it's like a is this even possible
+[26:04.28]  in a different route yeah that's a
+[26:06.80]  that's a great point you know one of the
+[26:08.36]  things I think that's useful for people
+[26:09.68]  to think about here that you're
+[26:11.68]  raising at some level it's kind of uh
+[26:14.88]  tied up I think with that question of
+[26:16.24]  whether I should have employees or kind
+[26:18.56]  of contract or freelance uh work on one
+[26:21.64]  side of the marketplace and that's
+[26:23.68]  actually a pretty old question in
+[26:24.72]  economics uh this distinct the way we
+[26:27.72]  talk about it often is a distinction
+[26:29.00]  between a market or a
+[26:30.60]  firm and kind of one of the interesting
+[26:33.44]  puzzles in in economics Ronald Co is a
+[26:35.76]  famous economist who thought about this
+[26:37.68]  is well you know if markets are so
+[26:39.36]  efficient why do we need firms right
+[26:41.16]  because if markets are efficient at
+[26:42.24]  matching labor up with things that need
+[26:43.68]  to get done why would you ever need a
+[26:44.72]  firm and that's like one of the earliest
+[26:46.52]  recognitions the transaction costs are a
+[26:48.12]  real thing and and that's kind of one of
+[26:50.08]  the things that that firms are solving
+[26:51.68]  for and I love what you're saying
+[26:53.92]  because what it's recognizing is hey for
+[26:56.24]  your frictions the best resolution to
+[26:59.32]  that might not be to have a Marketplace
+[27:02.32]  it might actually be to have very
+[27:04.24]  tightly controlled labor a good example
+[27:05.88]  of this actually you know Stitch fix I
+[27:07.80]  think one of the things that's cool
+[27:08.96]  about Stitch fix is the experience that
+[27:10.88]  people had early on with stylists at at
+[27:13.40]  Stitch fix I'm a happy customer by the
+[27:14.88]  way I think I stuff on yeah I think I
+[27:17.76]  think like one of the great things about
+[27:19.28]  that experience is it felt magical to
+[27:21.72]  have have someone who kind of got to
+[27:24.12]  know you right but that depends on a a
+[27:26.64]  relationship that doesn't feel like a
+[27:28.44]  freelance relationship every single time
+[27:30.48]  you're you're going back another example
+[27:32.36]  that that I would I would pull out is
+[27:35.00]  pretty much any healthc care platform so
+[27:37.68]  you know for example for physical
+[27:38.96]  therapy uh you know it'd be weird if
+[27:41.40]  every time you went to a physical
+[27:42.40]  therapy platform you just got randomly
+[27:43.84]  match to whoever happened to be
+[27:45.00]  available then so so I think there
+[27:47.00]  there's some there's some curation that
+[27:48.52]  needs to happen of that relationship
+[27:50.28]  does that mean full employee maybe not
+[27:52.44]  but it does mean you have to think a
+[27:53.68]  little bit about exactly as you brought
+[27:55.64]  up you know what's the what's the nature
+[27:58.36]  of curation of your of your labor pool
+[28:01.56]  awesome okay so let's come back to a
+[28:03.60]  point you made early on around the
+[28:06.12]  importance of data and the power of data
+[28:08.04]  in actually making your Marketplace a
+[28:09.84]  lot more efficient and work more
+[28:11.36]  effectively so say that you have a data
+[28:14.12]  scientist or a data analyst or someone
+[28:15.76]  that is helping you optimize your
+[28:17.68]  marketplace where do you often find the
+[28:19.60]  biggest leverage and opportunity for a
+[28:22.44]  data person to help you make your
+[28:23.72]  Marketplace more effective this is an
+[28:26.52]  incredible question right because I I
+[28:29.12]  think I could answer it you know a
+[28:30.52]  number of different ways like one
+[28:31.96]  question I think there that's kind of
+[28:34.00]  basic is just what should this person be
+[28:36.52]  doing and I'm not I'm gonna actually
+[28:38.60]  kind of evade that question a little bit
+[28:40.00]  I'm GNA give some examples of what they
+[28:41.36]  could do but I feel like that's one
+[28:43.44]  where context matters a lot so as an
+[28:45.48]  example you know at ride sharing or
+[28:48.96]  grocery delivery marketplaces pricing
+[28:51.96]  means actually what do you pay for that
+[28:54.48]  ride or what do you pay for that
+[28:55.88]  delivery right so that's that's actually
+[28:57.24]  the the price that's set at the moment
+[28:58.80]  you actually place your just to be clear
+[29:00.48]  by the way if you order from door Dash I
+[29:02.08]  don't mean the price of the restaurant I
+[29:03.44]  mean what do you pay to Door Dash right
+[29:04.80]  what's that what's that fee is there a
+[29:06.12]  sear charg because it's you know surge
+[29:08.24]  or whatever right so okay so that's a
+[29:11.00]  thing right but that's not really a
+[29:12.76]  thing in a marketplace where the
+[29:15.20]  platform's not setting the prices so
+[29:16.80]  Airbnb really hosts are the ones who are
+[29:18.80]  charge of setting prices for their
+[29:20.12]  listings so one answer to your question
+[29:22.36]  is if I'm in a place like you know Uber
+[29:25.00]  lift or Dash I want to have good data
+[29:27.44]  scientist thinking about pricing because
+[29:29.08]  that seems like something which should
+[29:30.16]  be heavily dependent on the
+[29:31.44]  instantaneous state of supply and demand
+[29:33.48]  in my marketplace right so that's one
+[29:37.00]  type of answer is well do I need people
+[29:39.12]  data scientists working on pricing do I
+[29:40.76]  need data scientists working on search
+[29:42.28]  why search because maybe in my
+[29:43.76]  Marketplace finding the needle and the
+[29:45.68]  Hast stack is really the biggest highest
+[29:47.20]  friction problem so maybe I need a lot
+[29:49.04]  more data science to say about search
+[29:51.00]  that's what I'm going to evade okay I'm
+[29:53.44]  going to focus more on something
+[29:54.64]  completely different which is just a a
+[29:56.76]  more f opical point about what a data
+[29:58.76]  scientist does so in a lot of companies
+[30:02.44]  today especially a main thing that you
+[30:05.00]  ask data scientist to do is build what's
+[30:06.96]  called a machine learning model now
+[30:08.92]  machine learning model even already can
+[30:10.36]  mean a lot of things to a lot of
+[30:11.36]  different people I'm going to focus on
+[30:12.20]  something very concrete you're asking
+[30:14.16]  them to predict something when I started
+[30:17.16]  at at odesk this is in in 2012 one of
+[30:19.76]  the funny things about me is I started
+[30:21.28]  at odesk because I'd had a a academic
+[30:24.96]  career up to that point in about 10
+[30:26.36]  years just
+[30:28.16]  you know building mathematical bottles
+[30:30.04]  of things I was not really very much of
+[30:31.84]  a data scientist up to that point what I
+[30:34.16]  expected would happen is I go to
+[30:35.36]  Industry and I'd be told hey like look
+[30:37.16]  how important data is you know and
+[30:38.60]  definitely my eyes were opened and one
+[30:40.76]  of the first things I was asked to think
+[30:42.12]  about is well okay someone comes to
+[30:44.64]  odess posts a job workers apply to that
+[30:47.84]  job predict which of these workers is
+[30:51.16]  most likely to be hired on that job that
+[30:53.28]  was the narrow question okay and and so
+[30:55.52]  why is that a good question because we
+[30:57.48]  have a whole awesome set of tools now to
+[31:00.24]  solve that kind of a problem exactly how
+[31:02.56]  do we do it take a lot of past data of
+[31:04.88]  past jobs past applicants past hires
+[31:07.16]  that were made and then we ask you know
+[31:09.48]  these crazy big blackbox algorithms all
+[31:11.44]  right do the best job you can predicting
+[31:13.48]  who's going to get hired on this job
+[31:14.64]  with these applicants and we use that
+[31:16.04]  data to test how well these applicant
+[31:18.20]  these algorithms are doing that's like
+[31:19.32]  machine learning in 30 seconds basically
+[31:22.28]  okay so you know we're working on this
+[31:24.24]  problem great and then I kind of poked
+[31:26.48]  my head up a little bit why are we
+[31:27.76]  working what's what is this going to do
+[31:29.68]  well it turns out the reason these kinds
+[31:31.24]  of things are important is they get used
+[31:33.32]  to make decisions right so what kind of
+[31:35.92]  decision do you make with that well one
+[31:37.24]  thing you do is you say oh well if I
+[31:38.88]  could predict who's most likely to be
+[31:41.76]  hired then I should just rank People
+[31:44.92]  based on that and that would be a good
+[31:46.60]  matching algorithm right that would be a
+[31:48.00]  good way to sort and triage people uh
+[31:50.64]  applicants for you know for employers
+[31:52.60]  when they're like screening trying to
+[31:53.68]  figure out who to interview who to hire
+[31:55.92]  great so sounds pretty natural right and
+[31:58.72]  then you know you think about it a
+[32:00.12]  little bit and this this to me is really
+[32:02.24]  it's it's such a such a passion project
+[32:05.24]  to get people to understand that this is
+[32:07.28]  why the humans in the loop that help us
+[32:10.20]  in in businesses and making sense of
+[32:11.72]  data are so critical is is the following
+[32:14.64]  problem if you think about it a little
+[32:16.56]  bit you realize you know what that
+[32:18.36]  algorithm is doing it's really just
+[32:20.32]  picking up on patterns and past data
+[32:22.48]  right so yeah that's great this person
+[32:25.44]  is likely to be hired but what we really
+[32:27.48]  want is something different we're trying
+[32:29.48]  to add value by ranking people so you
+[32:32.44]  know to give another example that's
+[32:33.88]  similar to this when you're a marketing
+[32:36.28]  manager and you've got you know a crack
+[32:38.92]  data science team that's built a
+[32:40.40]  long-term value lifetime value model for
+[32:42.48]  you you're not going to get in trouble
+[32:44.36]  with anyone if you send your highest
+[32:46.16]  value promotions to the highest LTV
+[32:48.28]  customers right who's gonna who's going
+[32:49.92]  to blame you for that because you're
+[32:51.24]  like oh yeah you know this person is
+[32:52.56]  worth a lot and I sent them this
+[32:54.60]  promotion you know say that in your
+[32:56.32]  monthly report nobody's going to give
+[32:57.60]  you a hard time but the problem with
+[33:00.36]  that way of thinking is actually
+[33:02.36]  predicting what their lifetime value is
+[33:04.12]  isn't really the question the question
+[33:05.72]  is how much more are they going to spend
+[33:07.72]  on my platform because I sent them that
+[33:09.96]  promotion that's a very different thing
+[33:11.88]  it's a differential rather than an
+[33:14.12]  absolute I'm not interested in their
+[33:15.44]  absolute LTV I'm ABS interested in the
+[33:17.72]  difference in their LTV because I sent
+[33:19.60]  them this
+[33:20.56]  promotion and when you look at it that
+[33:22.60]  way what you realize can happen is
+[33:24.68]  picking up on patterns because of good
+[33:26.64]  predic right finding the people that
+[33:28.60]  have high LTV because you predicted that
+[33:31.28]  is very different than making good
+[33:33.00]  decisions which is about saying the
+[33:35.32]  difference in their LTV is going to be
+[33:36.88]  higher because I sent them this
+[33:38.36]  promotion I love this example because I
+[33:40.92]  taught a class here at Stanford it was
+[33:42.76]  like an executive education class we had
+[33:45.00]  you know all the executives for a
+[33:46.40]  company in the room and one of the
+[33:48.00]  people in the room was the chief
+[33:49.04]  marketing officer and I just asked this
+[33:50.32]  question I'm like hey okay let's you got
+[33:51.56]  this great LTV model who would you send
+[33:53.08]  the promotions to it's like definitely
+[33:54.92]  the highest LTV people and a CMO in the
+[33:57.72]  room and so you know it's like it's it's
+[33:59.48]  a it's a little bit of a delicate
+[34:01.00]  situation like pushing back a little bit
+[34:02.84]  right I do want to be clear there's
+[34:04.36]  reputational reasons you might do that
+[34:05.96]  anyway I mean I'm not trying to get away
+[34:07.36]  from that but just to make the narrow
+[34:08.76]  point that predicting is about picking
+[34:12.12]  up patterns but making decisions is
+[34:14.64]  about thinking about these differences
+[34:15.92]  now why is that important because we
+[34:17.28]  learn in high school correlation is not
+[34:20.12]  causation that's a phrase everybody has
+[34:22.28]  heard all over the place what does it
+[34:23.56]  have to do with this well when we teach
+[34:25.60]  people to build machine learning models
+[34:27.04]  we're asking them to make predictions
+[34:28.28]  we're asking them to find correlations
+[34:30.08]  prediction is inherently about
+[34:31.80]  correlation but when we ask people to
+[34:33.68]  make decisions we're asking him to think
+[34:36.04]  about causation if I make this decision
+[34:39.32]  then will I actually increase the net
+[34:42.40]  value of my business right will I have
+[34:44.64]  by sending the promotion increase the
+[34:46.84]  likelihood that this person is going to
+[34:48.12]  spend more on my platform and so the
+[34:51.36]  first and most important thing that I
+[34:53.12]  feel very strongly about and what would
+[34:54.96]  I get a data scientist to do is no
+[34:57.08]  matter who they are right even if it was
+[34:59.68]  that person in the weeds thinking about
+[35:01.40]  building this you know prediction model
+[35:03.36]  for for hiring get them to be thinking
+[35:06.00]  in the back of their mind always that
+[35:08.00]  their goal is to help the business make
+[35:09.48]  decisions and that the distinction
+[35:11.28]  between causation and correlation
+[35:12.60]  matters a lot you know we can talk a lot
+[35:14.44]  more about how does that play out in in
+[35:16.64]  terms of their day-to-day work but at
+[35:19.12]  least at a starting point you have to
+[35:20.44]  recognize that the first step is always
+[35:22.04]  recognition that prediction isn't the
+[35:24.64]  same thing as making decisions
+[35:27.80]  so the takeaway here is help as a data
+[35:30.76]  team and as a data scientist on the team
+[35:32.52]  is help the business make predictions
+[35:34.92]  are there a couple more examples you
+[35:36.04]  could share just like what is an example
+[35:37.32]  of a decision that you think they often
+[35:39.36]  should be making and using data to help
+[35:41.12]  them with maybe the right way right
+[35:43.24]  frame of reference for this and and the
+[35:45.24]  word that an academic would use is CA
+[35:47.76]  you know causal inference right so what
+[35:49.76]  we're changing from is machine learning
+[35:51.80]  to causal inference so let's think that
+[35:53.60]  through in a couple of different use
+[35:55.72]  cases that are related to that
+[35:57.32]  that you know Marketplace data science
+[35:58.72]  flywheel I talked about earlier you know
+[36:00.40]  Finding matches making matches and then
+[36:02.88]  learning about matches so finding
+[36:04.84]  matches like you said a core part of
+[36:06.44]  that is search and recommendation and
+[36:08.16]  each of those relies on rankings so you
+[36:10.04]  know I want to be able to rank order
+[36:11.32]  let's say I go do a search on Airbnb on
+[36:13.32]  a rank order the different listings in
+[36:14.88]  the marketplace right at some level it's
+[36:18.24]  true that what I'm trying to do there is
+[36:20.00]  I'm trying to just predict what are you
+[36:21.72]  going to like the most right but I think
+[36:25.28]  there's an important piece of that also
+[36:27.60]  which is that I want to think a little
+[36:29.20]  bit about the distinction between two
+[36:31.44]  different ranking
+[36:32.80]  algorithms that's the real decision
+[36:34.92]  that's being made and when I think about
+[36:36.32]  the distinction about two different
+[36:37.76]  between two different ranking algorithms
+[36:39.68]  I don't want to be only comparing them
+[36:42.04]  in terms of how well they recreate the
+[36:44.20]  choices people made in the past the way
+[36:46.56]  I'm really going to evaluate those is in
+[36:48.80]  my market does one of those lead to
+[36:51.56]  better matches or more matches than the
+[36:53.52]  other one right so Airbnb as a business
+[36:56.20]  like what are the the most obvious core
+[36:57.60]  metrics it's bookings and revenue so
+[37:00.28]  you're going to want to ask a very basic
+[37:01.84]  question if I use the ranking algorithm
+[37:03.64]  Lenny just developed last night versus
+[37:05.40]  the ranking algorithm remes developed
+[37:06.84]  last week does Lenny's ranking algorithm
+[37:08.72]  need to more bookings than R's ranking
+[37:10.60]  algorithm and it's so important to put
+[37:12.40]  it that way starkly because that's so
+[37:14.12]  different a question than does Lenny's
+[37:16.28]  ranking algorithm do a better job of
+[37:18.00]  predicting over the last two years what
+[37:19.64]  bookings people made than rsh is ranking
+[37:21.48]  on it okay so that's that's I think like
+[37:23.84]  you know at that level then you know we
+[37:25.12]  talked a little bit about about rank
+[37:27.16]  at the point of making a match and I
+[37:29.36]  think that's where this kind of hiring
+[37:31.08]  issue popped up right because in the end
+[37:33.20]  while we might have these predictive
+[37:34.64]  algorithms to rank who you're going to
+[37:36.28]  hire that's not the important question
+[37:38.04]  interestingly the important question is
+[37:40.12]  actually to evaluate the quality of the
+[37:42.32]  match that's made and we would do that
+[37:44.40]  through the next step of the of that
+[37:46.04]  flywheel we'd ask ourselves you know
+[37:48.40]  what ratings did they give back to that
+[37:49.84]  freelancer do they hire that freelancer
+[37:51.72]  again so you're comparing two different
+[37:53.88]  algorithms not through their ability to
+[37:55.56]  recreate the past but their ability to
+[37:57.84]  make matches in the future that can be
+[38:00.12]  objectively evaluated to say hey yeah I
+[38:02.12]  increased the value of the business I I
+[38:03.92]  actually made better matches this way
+[38:05.76]  you know and then rating systems I think
+[38:07.56]  we could talk quite a bit about kind of
+[38:08.96]  a similar a similar phenomenon there too
+[38:12.04]  this episode is brought to you by EPO
+[38:14.60]  EPO is a Next Generation AB testing and
+[38:16.92]  feature management platform built by
+[38:18.92]  alums of airbeam be and snowflake for
+[38:21.12]  modern growth teams companies like
+[38:23.12]  twitch Muro clickup and DraftKings RI on
+[38:26.16]  EPO to power their experiments
+[38:28.64]  experimentation is increasingly
+[38:30.40]  essential for driving growth and for
+[38:32.60]  understanding the performance of new
+[38:33.96]  features and EPO helps you increase
+[38:36.12]  experimentation velocity while unlocking
+[38:38.24]  rigorous deep analysis in a way that no
+[38:40.36]  other commercial tool does when I was in
+[38:42.56]  Irv B one of the things that I loved
+[38:44.28]  most was our experimentation platform
+[38:46.44]  where I could set up experiments easily
+[38:48.32]  troubleshoot issues and analyze
+[38:50.20]  performance all on my own EPO does all
+[38:52.44]  that and more with Advanced statistical
+[38:54.44]  methods that can help you shave weeks
+[38:56.08]  off exper experiment time an accessible
+[38:57.92]  UI for diving deeper into performance
+[39:00.36]  and out of the box reporting that helps
+[39:02.16]  you avoid annoying prolonged analytic
+[39:04.28]  Cycles EPO also makes it easy for you to
+[39:06.72]  share experiment insights with your team
+[39:08.64]  sparking new ideas for the AB testing
+[39:10.68]  flywheel EPO Powers experimentation
+[39:13.40]  across every use case including product
+[39:16.00]  growth machine learning monetization and
+[39:18.44]  email marketing check out EPO at geo.com
+[39:21.92]  Lenny and 10x your experiment velocity
+[39:25.28]  that's get eppo / Lenny yeah I would
+[39:29.60]  actually love to talk about rating
+[39:30.60]  systems but there's kind of an
+[39:32.00]  implication in everything you're
+[39:33.04]  describing of running an experiment
+[39:34.92]  versus looking at what would have
+[39:36.96]  happened in the previous world it's
+[39:39.36]  you've made a change run experiment see
+[39:41.04]  if it actually makes an impact on
+[39:42.24]  bookings in revenue and that leads me to
+[39:45.24]  a question I wanted to ask which is with
+[39:47.64]  experiments there's kind of this classic
+[39:49.64]  Challenge and always elephant in the
+[39:51.92]  room of if you just run a bunch of
+[39:53.40]  experiments you're kind of going to
+[39:55.28]  micro optimize lead to these local
+[39:57.32]  Minima local Maxima and you may miss big
+[40:00.76]  opportunities and big unlocks if you're
+[40:02.36]  just like extremely experiment Dru you
+[40:05.00]  spent a lot of time thinking about
+[40:06.60]  experimentation what have you learned or
+[40:08.48]  what advice do you have for people to
+[40:10.60]  either be less worried about micro
+[40:12.20]  optimizing and missing something big or
+[40:13.84]  just finding a balance with running
+[40:16.56]  experiments but also creating
+[40:18.04]  opportunity to find a huge new
+[40:20.24]  opportunity yeah first of all I'm really
+[40:22.48]  glad you approached the e-word I was
+[40:24.36]  dancing around it and and I'm really
+[40:27.00]  glad that we talked about experiments
+[40:28.52]  because yeah that you know one of the
+[40:29.92]  big lessons of this like recent
+[40:31.84]  conversation we we've been having is
+[40:33.64]  just how could you possibly know that
+[40:35.76]  difference without doing something like
+[40:37.60]  experimenting okay so yeah I am a big
+[40:39.88]  believer in experiments I mean I'm I'll
+[40:41.48]  just lay those cards on the table I I I
+[40:44.20]  love working with businesses that think
+[40:45.92]  experiments are important to helping
+[40:47.40]  make good decisions now all that said I
+[40:50.40]  am also someone who feels pretty
+[40:52.52]  strongly about this exact issue that
+[40:54.00]  you're raising just you can't experiment
+[40:55.80]  your way out of
+[40:56.84]  everything and one way you know that one
+[40:59.84]  frame I like to give people is that
+[41:03.44]  although you might say you're an
+[41:04.88]  experiment driven business I I you know
+[41:06.76]  some businesses will Proclaim we
+[41:08.08]  literally test everything but that kind
+[41:10.60]  of leaves aside a little bit is there's
+[41:12.68]  a lot of degrees of freedom in what it
+[41:14.16]  means to test everything because
+[41:17.24]  ultimately what's getting built and
+[41:19.28]  tested are choices that are made through
+[41:21.80]  the organizational structure the data
+[41:23.60]  scientists the PMS the engineers
+[41:25.48]  everybody's on you know before we're
+[41:27.92]  running experiments we're actually
+[41:29.04]  thinking about even what's worth
+[41:30.16]  experimenting right like what designs
+[41:32.32]  are we coming with so that's one and the
+[41:33.76]  other big one is how long do we run
+[41:35.28]  these experiments okay that's a big
+[41:37.28]  choice and what I generally believe and
+[41:41.32]  I think there's a paper I'll I'll we can
+[41:43.12]  we can link to later that I'll that I'll
+[41:44.84]  Point your readers to as well that not
+[41:46.56]  my paper uh from some folks at Microsoft
+[41:49.44]  what I generally believe is that we're
+[41:52.00]  risk averse on both these two
+[41:53.88]  Dimensions that what people decide to
+[41:56.92]  test in a world that has promoted
+[41:58.72]  experimentation for everything tends to
+[42:01.20]  be more incremental by Design okay
+[42:04.60]  because and and we'll come back to by
+[42:05.96]  actually let me answer the because in a
+[42:07.16]  second so that's one and two is people
+[42:09.44]  tend to run experiments for a long time
+[42:11.84]  and probably longer than they
+[42:13.64]  should okay now what do I mean by these
+[42:15.68]  two things so what's interesting to me
+[42:18.88]  about this Dynamic is experiments don't
+[42:21.16]  live in a vacuum companies have
+[42:24.16]  incentives and in in comp that really go
+[42:27.28]  all in on experimentation one of the
+[42:29.40]  things that gets wrapped up in that is
+[42:30.88]  the incentives around experiments
+[42:32.76]  because if you go all in on experiments
+[42:33.88]  a common thing you'll see is data
+[42:35.84]  scientists get judged based on how many
+[42:38.40]  wins they had that quarter and right how
+[42:41.72]  do you get more wins well it's easier to
+[42:45.08]  get wins when you're being incremental
+[42:46.96]  and because it's important to have wins
+[42:48.48]  you have to run them long enough to
+[42:49.88]  demonstrate that there really wins right
+[42:52.00]  you're less willing to cut something off
+[42:54.32]  in exchange for trying something riskier
+[42:56.64]  so the big less of this Microsoft paper
+[42:58.48]  it's it's called AB testing with what's
+[43:00.00]  called fat taals which in Lay terms just
+[43:02.36]  means you're running a business where
+[43:04.12]  there's potentially big opportunities
+[43:05.72]  out there if you if you look at kind of
+[43:07.56]  the effects of the experiments that you
+[43:09.12]  run but there's a couple lessons there
+[43:11.04]  about both trying a lot more stuff
+[43:13.88]  that's you know not all risk averse and
+[43:16.28]  not necessarily running everything for
+[43:17.60]  so long so really getting velocity up so
+[43:20.76]  you can see that there's a big incentive
+[43:22.20]  problem there right because the culture
+[43:24.44]  that says it's okay to fail big actually
+[43:28.00]  requires changing the terminology of
+[43:29.88]  winds this is one of the things I hate
+[43:31.48]  most in AB testing I have to say I get
+[43:33.24]  where it comes from you know
+[43:35.00]  experimentation was never historically
+[43:36.96]  in science about winners and losers it'd
+[43:39.48]  be weird if you know Ronald Fischer
+[43:41.52]  who's kind of the father of
+[43:42.60]  experimentation with with his
+[43:44.08]  agriculture experiments talked about
+[43:45.92]  Winners I don't think that's necessarily
+[43:47.84]  how he talked about things
+[43:49.28]  experimentation is always very
+[43:50.28]  hypothesis driven it's about what are
+[43:51.60]  you learning and that's really an
+[43:53.76]  important distinction because what it
+[43:55.76]  means is if I go with something big
+[43:58.48]  risky and it quote unquote fails meaning
+[44:01.72]  that doesn't
+[44:03.24]  win I nevertheless if I was being
+[44:05.84]  rigorous about what hypothesis that's
+[44:07.52]  testing about my business I'm
+[44:08.92]  potentially learning a lot right so a
+[44:11.60]  great example of this kind of thing is
+[44:13.80]  you know uh that there's an important
+[44:16.80]  feature of of marketplaces is badging
+[44:19.20]  right so sometimes it's really important
+[44:20.40]  to have badges on your kind of top rated
+[44:23.80]  profiles or whatever when when people
+[44:25.40]  are searching
+[44:26.96]  and without going too far into the
+[44:28.72]  details a common kind of finding you
+[44:32.60]  know with badges is that that badges you
+[44:34.72]  think are going to be great actually
+[44:36.00]  turn out to be terrible and one reason
+[44:37.88]  they're terrible is they focus too much
+[44:39.24]  attention on the badged folks and pull
+[44:41.12]  too much attention away from the
+[44:42.36]  unbadged folks right and if we judge
+[44:45.28]  that only in terms of winners and losers
+[44:46.72]  you throw the baby out with the bath
+[44:47.96]  water you're like oh well that badging
+[44:49.04]  idea was terrible so you'll ditch that
+[44:51.12]  you know no badges but that's not what
+[44:52.60]  it's telling you it's teaching you
+[44:54.12]  something about how inventory is being
+[44:57.64]  reallocated how attention's being
+[44:59.28]  redirected through the badges and you
+[45:02.16]  really want to think not in terms of
+[45:03.64]  winning and losing but learning so
+[45:05.36]  learning is a win and I feel that that's
+[45:07.72]  a cultural thing fundamentally it's very
+[45:09.72]  hard to somehow attach dollars and sense
+[45:12.20]  at the top to data scientists running
+[45:14.68]  experiments that that fail but learn and
+[45:17.04]  and ultimately I think getting into that
+[45:19.36]  space where you experiment more meaning
+[45:22.28]  you don't run all your experiments for
+[45:23.60]  quite as long and you accept the
+[45:25.96]  willingness to to try experiments that
+[45:27.80]  are into the tales where you might fail
+[45:30.00]  bigger is a cultural thing it's about
+[45:32.56]  saying that that you know we're allowing
+[45:35.12]  that to be part of our social contract
+[45:36.76]  with our data scientists or you know
+[45:38.48]  actually our employee contract with our
+[45:39.72]  data scientists that not everything is
+[45:41.60]  just about how many launches you had and
+[45:43.80]  and you know how many wins there were
+[45:45.72]  it's okay to say that's how I want to
+[45:46.88]  use experimentation but if you're going
+[45:48.12]  to use it that way then I would say
+[45:50.04]  don't be uh we experiment everything
+[45:51.80]  business because then I think you need
+[45:53.56]  some other way to deal with these big
+[45:55.36]  you know ch es that that you know teach
+[45:57.48]  the whole company a lot but but maybe
+[45:59.92]  can't fall into the the incentives
+[46:02.20]  you've created for your data scientists
+[46:04.28]  this badging example is uh I don't know
+[46:06.04]  if you're referring to the Airbnb
+[46:08.12]  example but actually led the launch of
+[46:09.52]  superhost at Airbnb which is like the
+[46:11.32]  ultimate badge on Airbnb and there was a
+[46:14.84]  lot of concern from the data team that
+[46:16.64]  it would destroy the marketplace because
+[46:19.08]  they built as you described this very
+[46:21.80]  well-crafted ranking algorithm with just
+[46:24.52]  like a prediction of you know exactly as
+[46:26.96]  you described which listings that guest
+[46:30.04]  is most likely to book and be successful
+[46:32.20]  booking and then we're about to throw a
+[46:33.84]  badge on random listings in the results
+[46:36.68]  and so this one data scientist and our
+[46:38.36]  team's like no we can't do this this is
+[46:40.56]  insane we're gonna destroy it all and we
+[46:43.96]  still went ahead with it we ran an
+[46:45.68]  experiment showing the badge to some
+[46:47.16]  people and some not actually it was no
+[46:49.28]  no impact at all which is like super
+[46:51.88]  roast itself had no impact at all on the
+[46:53.84]  business as far as I we could tell
+[46:55.96]  initially which is also a bittersweet
+[46:58.12]  because it felt like what the why did we
+[47:00.04]  even work on this thing there was like a
+[47:01.76]  slight benefit where host felt better
+[47:04.00]  they felt more satisfied with being a
+[47:05.84]  host but uh I went exactly through what
+[47:08.80]  you described so that's pretty funny
+[47:11.24]  without necessarily like going into the
+[47:13.28]  Weeds on like the data science of super
+[47:15.08]  host I think there's a lot wrapped up in
+[47:16.64]  what you said I guess another thing I'll
+[47:19.08]  say is that I'm a big believer that you
+[47:22.88]  don't you don't throw your understanding
+[47:25.84]  of the business out the window when you
+[47:27.72]  process experiment results and it's
+[47:30.48]  partly partly I guess what I mean by
+[47:32.48]  this is data science is really about
+[47:35.24]  accumulation of evidence it's never
+[47:37.88]  about one finding an isolation and so
+[47:39.92]  another kind of trap I think is to
+[47:42.36]  sometimes say well I hit stat Sig on my
+[47:44.36]  ab test you know Green Light it's all go
+[47:47.08]  like and you know I think you know you
+[47:49.64]  had Ronnie kave on your show and he made
+[47:51.24]  a similar point that that there are
+[47:53.48]  different levels of evidence and and
+[47:55.44]  it's just having an outlier AB test that
+[47:58.40]  goes against everything you believe
+[47:59.64]  about your business doesn't mean that
+[48:01.00]  you somehow have controverted all your
+[48:03.04]  knowledge and I think that's one side
+[48:05.36]  but the other thing is you can't always
+[48:06.64]  measure everything that's important
+[48:09.20]  that's needed to really develop like a
+[48:11.44]  full sense so with superhost right one
+[48:13.56]  of the things that's hard to measure is
+[48:15.20]  the long-term impact of
+[48:17.00]  superhost because I mean the short run
+[48:20.36]  superhost causes a rebalancing of
+[48:22.60]  inventory there's going to be winners
+[48:23.76]  and losers part of super host is
+[48:26.24]  actually about retaining hosts that get
+[48:27.96]  the badge over a longer period of time
+[48:30.92]  recognizing that hypothesis actually
+[48:33.32]  says something about maybe how long the
+[48:34.80]  experiment needs to be run or what kinds
+[48:36.44]  of data analyses need to be done and in
+[48:39.24]  the end if you can't do that you can't
+[48:41.00]  run it long enough or you can't do that
+[48:42.68]  data analysis due to sparsity of data or
+[48:44.56]  lack of data to to address the question
+[48:47.28]  it matters what you bring to the table
+[48:49.32]  right what are your beliefs about that
+[48:51.36]  so what I like to tell people to do
+[48:53.16]  there is I like to push people to be
+[48:55.40]  what's called Quantified rather than
+[48:57.00]  data driven which is okay fine some
+[48:59.16]  things we can't measure right but you
+[49:01.80]  know maybe you've got a leadership team
+[49:03.48]  with different beliefs about what they
+[49:05.36]  think the retention value of super host
+[49:07.28]  is going to be and they might be all
+[49:08.72]  over the place you can process your
+[49:11.00]  experiment results in the context of
+[49:13.24]  these competing beliefs it's almost like
+[49:14.92]  a prediction Market kind of a thing and
+[49:17.52]  and start asking well okay like if this
+[49:19.04]  is what we believe about our business
+[49:20.72]  this is what the data is telling us out
+[49:22.08]  of the experiment let's put those two
+[49:23.88]  together and ask is this is this enough
+[49:26.12]  for us to make the bet that we're still
+[49:27.60]  going to go with it even though maybe
+[49:28.88]  that short-term test you ran was flat
+[49:31.08]  that's actually exactly how I think of
+[49:32.36]  superhost looking back it was a great
+[49:35.08]  idea I'm really happy I can't even
+[49:36.96]  imagine airb be without that even though
+[49:39.92]  there's no evidence at least initially
+[49:41.64]  that it made any impact I'm guessing
+[49:43.72]  they looked at it again and maybe
+[49:44.96]  there's something that came out of it
+[49:47.32]  but even if it had no impact it just
+[49:50.12]  feels like it made the marketplace
+[49:51.44]  better and that was a big learning for
+[49:53.72]  me just like it doesn't need to always
+[49:55.52]  Tri a metric that you can measure
+[49:56.92]  there's just like this is the way it
+[49:58.20]  should work so one of the reasons the
+[50:00.20]  thing you said happens is because
+[50:02.72]  marketplaces are a little bit like a
+[50:04.76]  game of whack-a-mole okay and what I
+[50:06.92]  mean by that is like so narrowly in the
+[50:08.68]  context of superhost because you're
+[50:10.60]  redirecting attention to some hosts at
+[50:12.76]  the at the expense of it's not even
+[50:14.16]  obvious if bookings can really go up
+[50:16.52]  okay maybe you get lucky and maybe you
+[50:18.00]  get a bunch more bookings one reason you
+[50:19.88]  probably wouldn't expect that in the
+[50:20.76]  first place is there's only a limited
+[50:22.12]  number of Super hosts how many more
+[50:23.92]  bookings are they going to be absorbing
+[50:25.16]  because of this extra attention and
+[50:26.40]  you're taking attention away from other
+[50:27.68]  people without doing any data analysis
+[50:29.64]  my prior would have been that booking
+[50:30.84]  should probably go down right and like
+[50:33.76]  one example that I came across with one
+[50:35.88]  of the companies I worked with that I
+[50:37.32]  love is uh you know we we were working
+[50:41.28]  together over a period of time and and
+[50:45.04]  in a month we looked at some of the data
+[50:47.00]  and it suggested that our new you know
+[50:50.04]  supply side was having a pretty bad
+[50:52.28]  experience oh we got to do something
+[50:54.04]  about this so we decided to do is build
+[50:56.24]  some custom bespoke features that were
+[50:58.40]  really going to direct them to more
+[50:59.76]  experienced folks on the other side of
+[51:01.36]  the market good and then yeah lo and
+[51:04.24]  behold you know pretty soon those
+[51:05.56]  metrics start to look better but then
+[51:06.80]  we're looking at we're like wait a
+[51:07.88]  second now you know the existing folks
+[51:10.28]  on the other side are having a worse
+[51:11.92]  experience so you kind of whiplash
+[51:14.16]  around you're like oh wait a second we
+[51:15.32]  better do something about that so we
+[51:16.52]  take them we try to match them up with
+[51:18.12]  the more experienced folks and now
+[51:19.72]  suddenly month after that you're like
+[51:21.72]  you know wait a second and and your
+[51:23.40]  metric just keep moving around and
+[51:24.64]  that's because the all game here is
+[51:27.08]  ultimately a lot of marketplace
+[51:29.08]  management is moving attention and
+[51:30.72]  inventory
+[51:32.04]  around you sometimes you get lucky and
+[51:34.28]  you really expand the pie for everybody
+[51:36.44]  but I think SAS Salen who who was a CFO
+[51:39.84]  at at upwork that I got to know there
+[51:42.16]  and then went to thumb Tac later he had
+[51:44.12]  this line when he came to visit our
+[51:45.36]  class that I love which is you know you
+[51:48.80]  have to recognize when you run
+[51:49.96]  marketplaces that many of the changes
+[51:51.76]  that are most consequential create
+[51:53.00]  winners and losers and rolling with
+[51:55.44]  those changes is about recognizing
+[51:57.32]  whether the winners you've created are
+[51:59.08]  more important to your business view
+[52:01.88]  than the losers you've created in the
+[52:03.12]  process and it's a hard reality because
+[52:05.00]  nobody likes to articulate the idea that
+[52:07.52]  a feature change is hurting some of the
+[52:08.88]  people in your Marketplace but but
+[52:10.64]  because of this this fundamental
+[52:13.08]  constraint baked into how marketplaces
+[52:14.76]  work many of the things that we would
+[52:16.60]  choose to do and the re reallocation
+[52:19.20]  they create can't necessarily create
+[52:21.28]  observed Pi expanding winds in the short
+[52:23.76]  run uh you're often bets that that's
+[52:26.16]  where you're headed partly through the
+[52:28.40]  reallocation that you're doing right now
+[52:30.04]  you know and so I think that's what's
+[52:31.04]  interesting about superhost to me is it
+[52:32.84]  partly points to thinking about what's
+[52:35.24]  the objective you would have defined the
+[52:37.00]  metric you would have defined in the
+[52:38.68]  short run that captures this idea of a
+[52:41.04]  trade-off that's a great way to think
+[52:43.56]  about it I wanted to come back to this
+[52:46.40]  idea you're sharing of maybe you should
+[52:49.28]  run experiments more quickly not wait
+[52:51.56]  for stat Sig have a culture of learning
+[52:54.44]  versus impact
+[52:56.24]  in practice it's very difficult because
+[52:58.80]  people are measured by impact there's
+[53:00.36]  performance reviews there's promotions
+[53:02.00]  there's how much impact at the team
+[53:03.80]  Drive we're going to look at their
+[53:04.64]  experiment results you've worked a lot
+[53:06.32]  of marketplace companies a lot of
+[53:07.48]  different companies is there anything
+[53:08.40]  you've seen about just like how to
+[53:10.32]  something you could do to help the
+[53:12.44]  company shift and actually work this way
+[53:16.76]  while also recognizing success and who's
+[53:18.88]  doing great who's not which team is
+[53:20.32]  driving impact who's not interestingly
+[53:22.92]  it's actually sort of an active area of
+[53:24.60]  research for now what I mean by active
+[53:26.60]  area of research is I care a lot about
+[53:28.04]  the incentives that we create for data
+[53:30.80]  science through how we set up reward
+[53:33.64]  mechanisms so there's there's a couple
+[53:35.76]  things I think that could be helpful
+[53:37.88]  that are maybe you know there may be a
+[53:39.56]  little bit less about uh like maybe I'm
+[53:43.44]  not going to directly answer the
+[53:44.84]  question you asked because I think
+[53:45.88]  that's a hard one right I think I
+[53:47.16]  recognize that measurement on impact is
+[53:49.52]  critical well let me let me answer that
+[53:51.12]  actually from the most obvious way first
+[53:52.96]  I think there's a cultural issue here
+[53:54.72]  that's really critical you know one of
+[53:56.24]  the things I often find is that my PhD
+[53:58.64]  students our PhD students here often go
+[54:00.44]  off and get you know great data
+[54:01.72]  scientist jobs and in one sense they're
+[54:04.08]  doing amazing stuff they apply really
+[54:05.72]  technically sophisticated methods but
+[54:07.88]  when I look at kind of the problems
+[54:09.04]  they're working on they're often more at
+[54:10.40]  the margins of the business than they
+[54:12.16]  should be and it's it's a cultural thing
+[54:15.28]  it's basically because if you're
+[54:16.28]  measured narrowly on impact and that's
+[54:18.08]  all anyone sees around you then it's
+[54:20.92]  very hard to engage with the creative
+[54:22.52]  aspect of of of business change and and
+[54:24.72]  the iic aspects of business change so
+[54:26.56]  the cultural aspect there is I think
+[54:28.56]  it's partly incumbent on the
+[54:30.44]  leaders to expect something more of
+[54:33.20]  their data scientists and what I mean by
+[54:35.68]  expect more is that you expect them to
+[54:38.44]  do more than deliver narrowly defined
+[54:41.24]  statistically rigorous results to you in
+[54:42.88]  their reports you're actually expecting
+[54:45.00]  them to talk also about what they're
+[54:47.88]  learning about the business in the
+[54:49.40]  process so so where that's headed is
+[54:52.04]  this this concept of being hypothesis
+[54:53.76]  driven which is like the technical
+[54:55.20]  phrase what does that mean again in a
+[54:57.28]  more lce sense what it means is tests
+[54:59.96]  aren't going to be defined only in terms
+[55:02.16]  of winners and losers that each test
+[55:03.76]  should also say something about what
+[55:05.80]  will we learn about a business flow a
+[55:08.88]  funnel preferences of the of the of the
+[55:11.48]  guests preferences of the hosts right uh
+[55:13.88]  what will we learn about their demand
+[55:15.16]  elasticity if we're changing prices
+[55:16.80]  around you know these kinds of things so
+[55:18.84]  it's possible to articulate in an
+[55:20.44]  experiment doc a launch doc you know
+[55:22.44]  what is what are the hypothesis that are
+[55:23.80]  being tested so that's one thing I would
+[55:24.84]  say is like just culturally setting the
+[55:27.20]  Norms that learning is part of the
+[55:29.36]  discourse and it's expected actually I
+[55:32.44]  think is is important but the other
+[55:34.28]  thing I would say that's that's you know
+[55:35.76]  maybe a little bit more about kind of
+[55:38.04]  programmatically like what could what
+[55:39.64]  could a what could a team a data science
+[55:41.72]  platform team do you know a funny thing
+[55:44.60]  about experiments is that we throw past
+[55:46.28]  learning away effectively and this is
+[55:48.04]  just an artifact of how we analyze
+[55:49.76]  experiments that the methods used the
+[55:52.24]  statistical methods used typically you
+[55:54.32]  know P values confidence intervals these
+[55:56.40]  fall in a branch of Statistics known as
+[55:58.00]  frequentist statistics and the idea
+[55:59.72]  behind frequen statistics you know
+[56:01.16]  without being overly technical is just I
+[56:03.68]  let that data speak for itself there's
+[56:06.32]  no beliefs brought to the table about
+[56:08.28]  where that data came from but if you
+[56:10.24]  think about this in like a company and
+[56:11.48]  AB testing a company it's like a weird
+[56:13.08]  thing right because I might have run a
+[56:14.36]  thousand AB tests in the past on this
+[56:16.08]  exact same you know button or call to
+[56:18.04]  action or color and now I'm going to
+[56:20.96]  completely ignore that and focus only on
+[56:22.80]  this so there's there's ways
+[56:25.44]  to take the past into account to build
+[56:28.52]  what's called a prior belief before I
+[56:31.08]  run an experiment and now take the data
+[56:33.20]  from the experiment connect it with the
+[56:35.00]  prior to come up with a conclusion of
+[56:37.16]  like okay in light of the past plus this
+[56:39.16]  experiment what's it telling me about
+[56:40.56]  the future and that falls broadly under
+[56:42.80]  the category of what's called basian AB
+[56:45.36]  testing so that's one of the things I
+[56:47.40]  think can help culturally weirdly it's
+[56:49.64]  like a super technical thing but I think
+[56:51.56]  it can help culturally because what it's
+[56:53.24]  doing is it's now rewarding people for
+[56:55.80]  contributing information to that prior
+[56:58.24]  and and I think it's then becomes
+[56:59.68]  possible to say oh like your experiment
+[57:02.52]  that failed actually moved our prior and
+[57:06.04]  that's an important thing because by
+[57:07.48]  doing so you're now altering kind of how
+[57:09.52]  we're going to think about this flow or
+[57:11.20]  this pricing plan in all future
+[57:13.32]  experiments right so there's like an
+[57:15.04]  information positive externality
+[57:17.44]  positive Network effect that's generated
+[57:18.92]  for the rest of your business if I can
+[57:21.00]  somehow encode what you learned into
+[57:23.52]  those the analysis of future experiments
+[57:25.60]  so this is one thing I there's a a
+[57:27.68]  strong connection between the culture
+[57:29.40]  and incentives of AB testing and the
+[57:31.60]  ability to actually incorporate past
+[57:33.76]  learning into these prior beliefs I love
+[57:35.96]  that you're doing research in this area
+[57:37.20]  we should bring you back when you've
+[57:38.92]  completed it and have the uh the
+[57:40.44]  ultimate answer for everyone to change
+[57:42.08]  how they operate yeah one of the great
+[57:43.20]  things about professors is we never
+[57:44.56]  complete anything and never have
+[57:45.88]  Ultimate answers so oh boy yeah I'll do
+[57:48.16]  my best
+[57:49.32]  though this touches on a really
+[57:51.32]  interesting concept that you shared with
+[57:52.76]  me around how learning just learning
+[57:55.00]  isn't free people think that they could
+[57:57.28]  just learn a bunch of stuff and there's
+[57:58.96]  not a cost to it I'd love for you to
+[58:00.36]  just chat a bit about what that means
+[58:02.52]  let me start with an anecdote that I
+[58:04.00]  just I just absolutely love this
+[58:05.44]  anecdote I I use it every year in class
+[58:07.56]  so yeah I was talking to to a real
+[58:09.52]  estate platform and
+[58:11.16]  they they have a they had a marketing uh
+[58:15.40]  data science manager who's basically you
+[58:16.80]  know responsible as as many marketing
+[58:18.56]  managers are for allocation of AD spend
+[58:20.40]  across different
+[58:21.76]  channels and what they discovered it
+[58:24.84]  happened at the end of the year is on in
+[58:28.64]  one hand the team had done great but the
+[58:31.44]  manager had held out some subset of of
+[58:34.80]  arriving visitors not shown them any of
+[58:37.84]  the Innovations they were making like a
+[58:39.36]  hold group yeah exactly what's called a
+[58:42.00]  holdout group in
+[58:43.40]  experimentation and the word thing about
+[58:45.72]  this hold out is wasn't authorized like
+[58:47.28]  that that's not the way things are
+[58:48.36]  supposed to work they've got their ads
+[58:49.80]  spend Alit out your ad spend great so at
+[58:52.28]  the end of the year you know they looked
+[58:53.76]  at the hole out they like w cost us like
+[58:55.84]  a couple million dollars something in
+[58:57.60]  that range and it's like not a trivial
+[59:00.16]  amount of money like what's the deal
+[59:01.60]  what were you thinking basically and and
+[59:03.80]  of course the answer was well I get that
+[59:05.92]  I cost you that much but number one now
+[59:08.80]  you know what my team's
+[59:10.36]  worth and number two you would never
+[59:12.48]  have had that answer unless I'd done
+[59:15.12]  that on my own right now why is that so
+[59:17.68]  powerful I think what's what I find so
+[59:19.96]  interesting about
+[59:21.24]  experiments is that when you don't know
+[59:23.88]  something it seems not even a question
+[59:27.84]  that you would allocate some of your
+[59:29.28]  samples to to all options right
+[59:31.40]  treatment and control like have two
+[59:32.92]  different ways of doing something I
+[59:34.52]  don't know which one's better so of
+[59:35.60]  course I'll give some samples to each
+[59:37.92]  after the fact you're like oh treatment
+[59:39.44]  was better what the heck were we
+[59:40.36]  thinking why' we give all those samples
+[59:41.56]  to control right that doesn't make any
+[59:42.92]  sense now there's this great Seinfeld
+[59:44.84]  clip where you know they they get the
+[59:46.60]  bill at the he mentions getting a bill
+[59:48.48]  at the end of a like large luxurious
+[59:50.44]  meal and people stare at the bill we're
+[59:52.20]  not hungry now why' we order all this
+[59:53.76]  food right so it's the same thing like I
+[59:56.00]  mean you know treatments better now
+[59:57.40]  why'd you waste all those samples on
+[59:58.68]  control and I think that is such a
+[60:00.76]  powerful observation that you have to
+[60:03.96]  put yourself in the frame of reference
+[60:05.56]  of when you didn't have the
+[60:07.32]  answer and at that moment what you're
+[60:10.44]  essentially saying to yourself is that
+[60:12.64]  it's worth paying to learn the answer I
+[60:16.04]  I think it sounds obvious the way we're
+[60:17.84]  saying it now or this this anecdote of
+[60:19.36]  the marketing manager and the hold out
+[60:20.68]  sounds obvious right what's culturally
+[60:23.16]  not baked in I think
+[60:25.28]  is that idea and and the reason I say
+[60:28.16]  it's not culturally baked in by the way
+[60:29.48]  is because of the language of winners
+[60:30.60]  and losers because if we use that
+[60:32.60]  language what we're implicitly saying is
+[60:34.64]  that we wasted time when we ran an AB
+[60:37.12]  test on loser if I reward you for
+[60:38.88]  shipping winners then what I'm really
+[60:41.20]  telling you is all the time that you
+[60:43.04]  spent testing out failures was wasted
+[60:45.64]  time and I think you know of course yeah
+[60:48.08]  like you you don't want to keep data
+[60:49.48]  scientists around who regularly are just
+[60:51.48]  generating failures that's not my point
+[60:53.92]  but my point is is there's a disconnects
+[60:55.72]  there on one hand we can all look at the
+[60:57.84]  story of this marketing manager and
+[60:59.12]  chuckle at it right and yet every day
+[61:02.16]  we're instantiating language and
+[61:03.72]  processes that are reinforcing that same
+[61:05.68]  theme which is essentially trying to say
+[61:07.44]  to you if you're wasting samples on
+[61:10.60]  things that don't ultimately end up
+[61:12.12]  being a winner then that is a the act of
+[61:14.96]  doing so is a failure so I I really feel
+[61:17.64]  you know that that that idea that you
+[61:19.76]  have to pay to learn is is again it's a
+[61:22.04]  cultural thing but it's also an
+[61:23.52]  education issue for you know businesses
+[61:25.80]  are populated by people of all Stripes
+[61:27.64]  not everybody comes from a data science
+[61:29.64]  or experimentation background and this
+[61:32.28]  idea that that learning is costly is not
+[61:35.12]  natural actually it's it's not natural
+[61:37.16]  as you not as a matter of human nature
+[61:38.88]  it's certainly not natural as a matter
+[61:40.20]  of running of business I love that
+[61:42.28]  example of the real estate platform
+[61:44.16]  where it's like very viscerally clearly
+[61:47.04]  like cost there's like they lost because
+[61:49.44]  they didn't roll out experiments to as
+[61:51.88]  group for a long time example of this
+[61:54.04]  idea action you mentioned star ratings I
+[61:57.96]  know you spend a lot of time on
+[61:59.24]  designing rating systems sorry I didn't
+[62:01.04]  mean to imply star ratings that's just
+[62:02.68]  one implementation rating systems in
+[62:04.92]  general so maybe just to keep it focused
+[62:08.04]  say a Marketplace founder is trying to
+[62:10.76]  decide and design how they do ratings
+[62:13.28]  and reviews and things like that what's
+[62:15.64]  a couple pieces of advice you'd give
+[62:17.20]  them for how to do this correctly and is
+[62:20.48]  there model like a model Marketplace
+[62:22.36]  you'd Point them to like H these guys
+[62:23.72]  really do it really well and I know it's
+[62:25.44]  like super specific based on the
+[62:26.60]  marketplace but is there one just like
+[62:28.56]  oh they really nailed it oh man that's a
+[62:31.60]  tough one I think I'll answer the second
+[62:33.00]  part first I don't feel like anyone's
+[62:34.36]  really nailed this um you know I think
+[62:36.64]  there's a lot of innovation that's
+[62:38.12]  happened but I think fundamentally we're
+[62:39.92]  still playing with the same kind of
+[62:41.32]  tools that we had when you know eBay and
+[62:43.92]  Amazon like first started thinking about
+[62:45.96]  how to do rating systems ages ago and
+[62:48.80]  part of the reason we haven't nailed it
+[62:50.36]  is because there's a lot of Dynamics in
+[62:52.48]  play that lead to what's called braing
+[62:53.88]  inflation
+[62:54.88]  where if you look at ratings over time
+[62:56.12]  in the marketplace one of my colleagues
+[62:57.32]  John Horton was a professor at MIT and
+[63:00.64]  you know has worked very closely with
+[63:02.20]  upwork we worked together when I was at
+[63:03.84]  at Odes he was the staff Economist there
+[63:06.16]  he's written a couple of really nice
+[63:07.80]  papers with this empirical phenomenon
+[63:09.88]  that over time you see the median rating
+[63:12.60]  inflating let's say on marketplaces like
+[63:14.60]  like odesk like uber like any of these
+[63:16.56]  right and you there's a lot of reasons
+[63:18.80]  for this but one of them is just that
+[63:20.64]  there's a reciprocity issue right which
+[63:22.84]  is it's effectively you know from your
+[63:24.72]  perspective it's kind of Costless if
+[63:26.40]  someone says to you hey like please
+[63:27.56]  leave me a nice rating right and and you
+[63:29.88]  know if you're seeing them or you're
+[63:31.08]  interacting with them you know most
+[63:32.60]  people don't want to be mean so that
+[63:34.60]  happens now but there's another aspect
+[63:36.36]  of it which is norming as the ratings in
+[63:39.00]  the marketplace go up they get normed
+[63:40.84]  right so that now you're a condition
+[63:42.36]  you're like oh a fourstar rating I'm
+[63:43.68]  really screwing this person over whereas
+[63:45.20]  maybe when the marketplace started you
+[63:46.40]  didn't think that so definitely one
+[63:49.12]  thing that we worked on uh in our
+[63:51.16]  research was to think about renorming
+[63:53.40]  the meaning of some of these labels and
+[63:55.40]  renorming could mean something like
+[63:57.48]  rather than you know the star ratings
+[63:59.44]  just being you know poor to excellent
+[64:02.32]  the top rating is actually exceeded
+[64:04.04]  expectations right you could go one step
+[64:06.48]  further and you could say how did this
+[64:08.68]  compare to this experience you had in
+[64:10.64]  the past that you rate really highly and
+[64:13.28]  and Airbnb had something like this in
+[64:15.04]  place uh where they they would actually
+[64:16.68]  ask you to compare or you know or ask
+[64:18.76]  you questions about expectations I find
+[64:20.28]  that that's really valuable because it's
+[64:23.08]  easier for people to say that was good
+[64:24.68]  but didn't exceed my
+[64:26.48]  expectations and that was good but
+[64:28.28]  definitely not better than this amazing
+[64:29.76]  stay I had like two months ago than it
+[64:32.00]  is to say well you know I'm going to
+[64:33.64]  ding this person and give them four
+[64:35.00]  stars so that's one issue and I think
+[64:37.32]  another thing I want to point out uh for
+[64:39.16]  any Marketplace founder is that
+[64:41.96]  something you want to be really careful
+[64:43.16]  about is is the concept of averaging and
+[64:45.56]  and what are the implications of
+[64:46.76]  averaging and that that's because a
+[64:48.68]  default for many marketplaces is to just
+[64:50.92]  average the ratings that people get it
+[64:53.72]  feels right natural right like Lenny's
+[64:55.64]  got five ratings let me average them and
+[64:57.40]  that actually has some pretty important
+[64:58.88]  distributional consequences for the
+[65:00.40]  marketplace distributional in the sense
+[65:01.92]  of who wins who loses and that's because
+[65:05.40]  if you're averaging and you're really
+[65:07.48]  established on a platform think of a
+[65:09.16]  restaurant on Yelp with 10,000 reviews
+[65:11.60]  it's irrelevant what the next review is
+[65:14.00]  doesn't matter nothing's moving at that
+[65:16.16]  point if you're new and you break into
+[65:18.92]  that market and your first review is
+[65:20.64]  negative you might be completely screwed
+[65:23.00]  in fact there are some early work on
+[65:24.32]  eBay that showed that your first if your
+[65:26.04]  first rating is negative that could
+[65:28.08]  actually in immediately cause like an 8%
+[65:30.52]  hit on you know your immediate expected
+[65:32.48]  Reven you say nothing of long-term
+[65:33.76]  consequences subsequent work has found
+[65:35.84]  that that's a a significant indicator of
+[65:38.40]  potential exit from the platform just
+[65:39.96]  because now it's very hard to find work
+[65:42.48]  and you know some platforms do things
+[65:43.92]  like maybe they won't show your ratings
+[65:45.36]  until you've accumulated a few but in
+[65:47.16]  the end this kind of distributional
+[65:50.48]  fairness aspect of averaging is pretty
+[65:53.16]  significant and one of the recent papers
+[65:55.32]  that we've written is trying to get
+[65:56.56]  platforms to think a little bit about
+[65:58.16]  that there's ways to address that
+[65:59.68]  interestingly through the same concept
+[66:01.48]  of a prior and the prior basically says
+[66:04.04]  hey if someone comes into the
+[66:05.48]  marketplace and instead of averaging
+[66:07.40]  them I average them together with a
+[66:09.04]  prior belief then maybe what that prior
+[66:11.56]  belief does it says yeah you got one
+[66:13.00]  negative rating but maybe you got a
+[66:14.08]  little bit unlucky and maybe my prior
+[66:15.76]  belief is something which actually pulls
+[66:17.16]  your rating up a little bit and allows
+[66:19.48]  me to to still have you alongside others
+[66:23.04]  in the marketplace that you a chance at
+[66:25.04]  at getting work you know getting rides
+[66:27.08]  Etc so I I believe pretty strongly in
+[66:30.04]  this kind of like distributional
+[66:31.28]  fairness element of Designing rating
+[66:33.68]  system rating systems I think it's been
+[66:35.76]  understudied and and you know I'll say
+[66:38.04]  in general actually I think rating
+[66:39.08]  systems are understudied which to me is
+[66:41.32]  astonishing because the biggest change
+[66:43.28]  from those agor and traun Market
+[66:45.88]  elements of you know those kinds of
+[66:47.36]  markets to me the biggest change is that
+[66:49.44]  we get to see what happened with our
+[66:50.96]  matches so you know as a data scientist
+[66:54.16]  working on marketplaces I feel like it's
+[66:56.12]  it's incredible that more of us don't
+[66:59.08]  spend our time thinking about what we're
+[67:01.44]  learning from the matches and what these
+[67:03.16]  rating systems are telling us and what
+[67:04.56]  the impact of that is on who wins and
+[67:06.40]  who loses in these markets and you know
+[67:09.00]  kind of thinking about like the social
+[67:10.16]  implications of these things so that's
+[67:11.88]  something I'm I'm pretty passionate
+[67:13.40]  about I uh also led the review system
+[67:16.72]  flows for a while at Airbnb and one of
+[67:19.16]  the things I'm most proud of is
+[67:20.80]  launching what we call double blind ex
+[67:23.20]  uh reviews where don't see the other
+[67:24.72]  person's review until you leave your
+[67:27.20]  review and we the intention was to
+[67:30.04]  create more honesty and more accurate
+[67:31.44]  reviews it turned out the biggest impact
+[67:33.44]  was review rate went up because people
+[67:35.64]  get this email R fgv review if you want
+[67:37.68]  to see it should leave a review and that
+[67:39.88]  really increased review rate which gave
+[67:41.28]  us more data and it was a really fun
+[67:43.24]  experiment to work on there's a great
+[67:45.16]  Concept in the ratings in the literature
+[67:47.08]  on rating systems called The Sound of
+[67:48.92]  Silence which is this idea that that
+[67:51.84]  there's a lot of information in in
+[67:53.92]  ratings that are not left um so Steve
+[67:56.48]  tadelis who's a professor at Berkeley he
+[67:59.24]  had a really nice paper with some folks
+[68:01.40]  at eBay talking about what they called
+[68:03.48]  effective percent positive where rather
+[68:05.28]  than normalizing just by the ratings
+[68:07.56]  they normalized by including ratings
+[68:09.44]  that that weren't left and what you
+[68:11.32]  found was this was much more predictive
+[68:13.24]  of kind of Downstream Downstream kind of
+[68:16.12]  performance of a of a seller so there's
+[68:18.56]  a lot of information in that in that
+[68:20.48]  like lack of a response you know so it's
+[68:22.08]  cool that you're able to get more of
+[68:23.08]  that out so much easier just to not
+[68:25.40]  leave a review than leave a bad review
+[68:27.04]  right like the downside to you is just
+[68:29.12]  much better oh man marketplac are so
+[68:32.24]  fascinating I could see why a Founder
+[68:33.80]  would want to be a Marketplace founder
+[68:35.16]  because it's just like such an
+[68:36.12]  interesting space and uh hearing your
+[68:39.20]  feedback of like no you're not a
+[68:40.80]  Marketplace founder let's think about
+[68:42.28]  the problem you're solving and it might
+[68:43.40]  be a Marketplace might change people's
+[68:45.44]  minds also I feel like there's like a
+[68:47.60]  podcast episode and every topic we
+[68:49.76]  touched on I know we just kind of
+[68:50.84]  scratched the surface a lot of things I
+[68:53.04]  know you got to run before we get to our
+[68:54.56]  lightning round is there anything else
+[68:55.76]  you wanted to highlight touch on leave
+[68:57.44]  people with that are maybe working on
+[68:59.24]  marketplaces thinking about a
+[69:00.28]  Marketplace I think one of the high Lev
+[69:02.32]  points I would make and you know like
+[69:04.24]  you said there's an entire podcast in
+[69:06.08]  this topic is that I think people want
+[69:09.44]  to imagine LMS and Aid driven data
+[69:12.56]  science automating out large parts of
+[69:16.20]  what it means to do data science and in
+[69:18.64]  industry and I think that's probably the
+[69:21.36]  wrong perspective in in some like gain
+[69:24.04]  sense that's true it's easier for me to
+[69:25.88]  code than it used to be before easier
+[69:27.60]  for me to develop visualizations than it
+[69:29.16]  used to be I can make dashboards faster
+[69:30.80]  so like programmatically I think it's
+[69:33.36]  true in some basic sense but you know
+[69:36.48]  what I believe pretty strongly and I
+[69:37.72]  teach data science here and my students
+[69:39.48]  are asked to use llms and generative AI
+[69:42.08]  on a weekly basis on all their
+[69:43.56]  assignments so I've got like an upclose
+[69:45.32]  and personal read on this but I believe
+[69:48.00]  very strongly actually is what AI has
+[69:50.84]  done for us is it's massively expanded
+[69:53.44]  the Frontier of things we could think
+[69:55.88]  about our problem hypotheses we could
+[69:58.08]  have maybe things we could test it's
+[70:00.12]  just an astronomical explosion of
+[70:02.84]  explanations and ideas and
+[70:05.32]  principle and I really think actually
+[70:08.60]  what that does is puts more pressure on
+[70:10.68]  the human not less I think it's becomes
+[70:13.28]  more important for humans to be in the
+[70:15.76]  loop and interacting with these tools to
+[70:18.72]  drive the funneling down process of
+[70:21.16]  identifying what matters that at all
+[70:22.88]  levels that ranges from you're carrying
+[70:25.00]  out a data scientific analysis and now
+[70:26.84]  because you've got these tools you can
+[70:28.08]  hypothesize 10
+[70:29.48]  explanations maybe a 100 explanations
+[70:32.52]  which of those are you going to focus
+[70:33.84]  attention on what are you going to tell
+[70:35.00]  other people to focus their attention on
+[70:36.84]  to you're running experiments you used
+[70:38.48]  to have 10 creatives you're testing for
+[70:40.08]  a marketing campaign you got a thousand
+[70:41.60]  creatives you're testing for that
+[70:42.60]  marketing campaign maybe that completely
+[70:44.76]  changes the game of what it means to run
+[70:46.12]  an experiment you know what do you
+[70:47.40]  actually looking for now uh how do you
+[70:49.80]  evaluate that you found something that
+[70:51.16]  was good enough and and I think these
+[70:53.36]  question questions are not getting
+[70:54.96]  enough attention I think people are
+[70:56.44]  looking for the automated tool that that
+[70:58.92]  really cuts the human out but what I've
+[71:02.12]  seen so far and again you know who knows
+[71:04.24]  by 2024 I might have a totally different
+[71:05.76]  answer for you I don't think so but at
+[71:08.16]  the moment what I see is that humans
+[71:11.24]  have actually become far more important
+[71:13.08]  to the productive data science Loop not
+[71:14.96]  far
+[71:15.76]  less such an important point I feel like
+[71:17.92]  we need to add AI corner to this podcast
+[71:19.84]  where we always think about how does AI
+[71:21.68]  impact what we're talking about on this
+[71:23.72]  yeah I can see that I totally see that
+[71:25.64]  okay we might start doing that remesh
+[71:27.76]  with that we've reached our very
+[71:28.64]  exciting lightning round I've got six
+[71:30.80]  questions for you let's try to knock
+[71:32.36]  through them so you can go teach your
+[71:33.72]  class are you ready I am ready all right
+[71:37.08]  what are two or three books you've
+[71:38.12]  recommended most to other people when it
+[71:40.36]  comes to books I have one I love that I
+[71:42.40]  start with always which is how to lie
+[71:44.00]  with Statistics it's a tiny book by
+[71:46.92]  Daryl Huff from 1954 which is just for
+[71:49.68]  anyone that likes data at any level it's
+[71:52.40]  like such a fun read it's it's like it's
+[71:54.08]  it's a great book the second thing I
+[71:55.60]  recommend to people and actually this is
+[71:56.84]  true even for people who are not uh you
+[71:59.88]  know not expert is David fredman was a
+[72:02.56]  statistician at Berkeley who who passed
+[72:05.00]  away in in the 2000s early 2000s and he
+[72:09.08]  his writing was fantastic in getting us
+[72:13.52]  to think hard about process what why you
+[72:16.48]  know he he was especially fond of what
+[72:18.12]  he called Sho leather statistics where
+[72:19.80]  you really got your you know you you
+[72:21.64]  rolled your sleeves up you got on the
+[72:23.00]  ground Bo on the ground really getting
+[72:24.64]  in there really trying to understand
+[72:25.88]  your data his writing is fantastic his
+[72:28.84]  explanations are fantastic uh he has a
+[72:31.12]  few different books at different levels
+[72:32.64]  I think people would love reading most
+[72:33.76]  importantly what I like about it is he
+[72:35.52]  puts such emphasis on on driving
+[72:37.88]  evidence and understanding of your
+[72:39.56]  processes that generate data and you
+[72:41.52]  know I find often data scientists don't
+[72:43.16]  even look at examples right so like at
+[72:45.24]  at odesk it meant are you looking at
+[72:47.00]  actual jobs and what the what's actually
+[72:49.56]  going on in in your product before
+[72:51.76]  you're trying to do data science on it
+[72:53.16]  so that's like a fredman a Freedman
+[72:55.60]  Insight Freedman Mantra and so his
+[72:57.24]  writing is great the last one I was
+[72:58.80]  going to mention has nothing to do with
+[72:59.64]  data science or anything it's it's
+[73:00.76]  called 4,000 weeks uh by Oliver burkman
+[73:05.32]  I'm not like a huge like self-help type
+[73:07.36]  person but I really like this book a lot
+[73:09.44]  it's a little bit I think it's a little
+[73:10.56]  bit stoic in its approach like stoic
+[73:12.72]  philosophy but it's the basic point is
+[73:14.60]  you're only on Earth for on somewhere in
+[73:16.40]  the neighborhood of 4,000 weeks and uh
+[73:19.44]  you know my wife and I have this term we
+[73:20.92]  called infinite Q which is like no
+[73:22.44]  matter what you think you get on a given
+[73:23.96]  day more stuff's going to just keep
+[73:25.16]  coming in and he basically says that
+[73:28.16]  recognizing that is liberating because
+[73:29.84]  once you recognize it doesn't matter
+[73:31.20]  what you do you're always going to have
+[73:32.40]  too much to do there's no point in
+[73:34.60]  stressing out about having too much to
+[73:36.08]  do and just that like small shift of
+[73:38.36]  mindset then puts a lot more attention
+[73:40.16]  on you know the usual thing people worry
+[73:41.96]  about which is where do I want to
+[73:43.04]  prioritize my time so he has a great way
+[73:45.16]  of writing about it some concrete rules
+[73:47.12]  of thumb to help manage you know that
+[73:49.84]  that way of thinking and yeah I I think
+[73:51.84]  it's a great book what is if favorite
+[73:53.92]  recent movie or TV show I am a climber
+[73:56.92]  and and one movie that I really liked
+[73:58.36]  was the alist I know a lot of people
+[74:00.04]  have seen pre solo but for anyone that
+[74:02.28]  kind of likes that genre I would
+[74:03.88]  recommend they watch uh watch the
+[74:05.60]  alpinist I think climbing is an
+[74:07.24]  interesting sport because it has a very
+[74:10.24]  much like a a psychological aspect of it
+[74:12.44]  and I I think that movie is is pretty
+[74:14.80]  good at this sort of meta level where
+[74:17.64]  you kind of reflect a little bit on what
+[74:19.04]  does it mean to make a movie about
+[74:20.48]  people who are obviously putting
+[74:22.52]  themselves into such situations so I
+[74:24.72]  really enjoyed that on TV we've been
+[74:26.68]  watching only murderers in the building
+[74:28.16]  but I'm like enough episodes behind
+[74:30.08]  right now that I I probably won't say
+[74:31.96]  anything more uh because I I'm I'm
+[74:34.28]  trying to avoid any spoilers and I'm
+[74:35.68]  sure there's people out there trying to
+[74:36.72]  do the same so great show though on Hulu
+[74:39.32]  what's a favorite interview question
+[74:40.56]  that you like to ask candidates that
+[74:42.36]  you're hiring I interview people
+[74:44.00]  probably that are a little bit different
+[74:45.40]  than like most of your podcast listeners
+[74:47.96]  but that said there's one question I
+[74:49.52]  like to ask a lot uh and that's if you
+[74:53.12]  met imagine so you know often in our
+[74:55.12]  interviews in in Academia whether it's
+[74:56.92]  grad students or faculty we ask people
+[74:59.12]  about their plans and what I like to ask
+[75:01.12]  people is okay now imagine everything
+[75:03.76]  works out all the challenges you're
+[75:05.56]  facing work out all your plans work out
+[75:07.72]  everything hits the top end of your
+[75:09.84]  vision for what this could
+[75:11.64]  be what do you imagine is the impact of
+[75:14.36]  having done that like who's being
+[75:16.68]  impacted by that why is that a big deal
+[75:19.00]  that that happened and I find that's a
+[75:21.36]  really valuable question to ask because
+[75:23.68]  first of all many people haven't thought
+[75:25.08]  about that we're so short-term focused
+[75:27.52]  we don't even think like boy if
+[75:28.72]  everything worked out what would be the
+[75:29.84]  big deal because of what I did startup
+[75:32.60]  Founders tend to be better at this than
+[75:33.84]  most people obviously but another reason
+[75:36.00]  I like it is because you you'll find in
+[75:39.32]  that conversation that their Vision
+[75:41.68]  expands a little bit of additional
+[75:44.72]  spheres that are touched or impacted by
+[75:46.56]  what they're thinking about doing so on
+[75:48.04]  both sides it's kind of a revealing
+[75:49.92]  question I think so so I find that
+[75:51.80]  important for my line of work
+[75:53.80]  but you know my hunch is that might be
+[75:55.32]  useful for some of your listeners too
+[75:57.40]  yeah such a unique perspective on
+[75:59.36]  interviewing versus at most of the
+[76:01.68]  guests that I interview in tech company
+[76:03.44]  yeah like normally there's like a coding
+[76:04.72]  question right I should say I would
+[76:06.36]  never ask a coding question like you
+[76:07.80]  know post November 2022 after uh after
+[76:10.92]  after we got like AI to help us code I
+[76:13.24]  just I think it's a super power AI
+[76:18.04]  Corner what is a favorite product you've
+[76:20.32]  recently discovered that you really like
+[76:22.40]  I'm I also really like cycling and I'm
+[76:24.64]  not ashamed to admit that I think that
+[76:26.80]  ebikes are like the greatest thing for
+[76:28.32]  cycling admittedly I'm like you know
+[76:30.04]  late 40s so maybe I'm the right tar
+[76:32.12]  Target demographic too but yeah I love
+[76:34.16]  my eoad bike it it's like great because
+[76:36.40]  it's it's not like one of those with a
+[76:38.00]  throttle you have to work but it kicks
+[76:40.36]  in just when you're on like your you
+[76:41.72]  know sixth Hill and you don't want to go
+[76:43.20]  up the last Hill anymore on the way home
+[76:45.00]  so so yeah that's amazing I think that's
+[76:47.16]  just like transformative for people that
+[76:49.24]  like cycling but have busy lives and I
+[76:51.60]  think another one that my son who's 10
+[76:53.88]  roped me into actually is we were like
+[76:55.72]  in Santa Cruz browsing at a at a kitchen
+[76:58.32]  wear shop of all places and you saw an
+[76:59.80]  outdoor pizza and like a tiny portable
+[77:02.08]  one and he insist he just did research
+[77:04.44]  for like two weeks and insisted we get
+[77:06.12]  one so we got over the summer and uh
+[77:09.52]  after we got it he refused to eat pizza
+[77:11.28]  out anymore as a 10-year-old so so you
+[77:13.72]  know that's like a maybe that's the best
+[77:15.64]  best thing I could say about like the
+[77:17.04]  quality of pizza you can get from a home
+[77:18.52]  outdoor portable Pizza Oven oh my God
+[77:20.76]  I'm hungry I am going to go have to get
+[77:22.48]  some pizza now
+[77:24.72]  what is a favorite life motto that you
+[77:27.12]  like to repeat to yourself share with
+[77:29.00]  folks find useful in your
+[77:31.00]  day-to-day a lot of my work involves
+[77:33.16]  talking to students of all stripes and
+[77:35.76]  and I guess these students go on to be
+[77:37.24]  data scientists go on to be you know
+[77:39.04]  Founders and and a lot of them go in the
+[77:40.36]  tech industry so maybe in that sense the
+[77:42.72]  advice is relevant my main thing I tell
+[77:44.60]  people is slow
+[77:45.88]  down because I think what I found has
+[77:49.04]  been happening is just
+[77:51.68]  uh we're so convinced that speed is the
+[77:55.56]  way you're going to find the right
+[77:57.28]  answer that I just don't think we slow
+[77:59.40]  down to develop meaningful mental models
+[78:01.56]  of the things we're doing that's
+[78:03.12]  certainly true in the research projects
+[78:04.64]  I work on it's consistently true in you
+[78:07.40]  know when I talk to people in business
+[78:09.04]  and you I asked them about their mental
+[78:11.32]  by mental model I just mean you know if
+[78:12.96]  you're running a marketplace right what
+[78:15.52]  what is your model of what people care
+[78:17.56]  about what what makes people stay versus
+[78:19.88]  leave you know what makes matches work
+[78:21.88]  versus not work all those things shape a
+[78:24.68]  roadmap right in your mind and and I
+[78:26.84]  think a lot of roadmapping a lot of
+[78:29.12]  execution uh paper writing in Academia
+[78:31.68]  has all just become far more fast-paced
+[78:34.72]  at the expense of kind of deeper
+[78:36.96]  thinking about these kind of structural
+[78:39.44]  features of the of the thing you're
+[78:40.72]  building and so yeah with my students
+[78:42.64]  but also I think with people I interact
+[78:44.44]  with in Industry um I think slowing down
+[78:47.16]  is actually more of a virtue than it's
+[78:49.32]  giv credit for very similar to a motto
+[78:52.32]  that a recent guest shared and I which I
+[78:54.48]  think was go slow to go fast or go stay
+[78:57.56]  smooth to go fast I like that maybe I'll
+[79:00.52]  maybe I'll P for that when I go talk to
+[79:02.12]  my
+[79:03.08]  gr final question you're a professor at
+[79:06.00]  Stanford University which sounds
+[79:07.44]  incredibly cool what's something about
+[79:10.04]  being a professor at Stanford in
+[79:12.76]  particular or in general that would
+[79:13.92]  surprise people either good or bad yeah
+[79:17.24]  I mean we've had a rough ride as
+[79:18.44]  everybody probably knows uh there's
+[79:20.16]  there's Stanford's been in the news for
+[79:22.40]  a lot of you know not so great reasons I
+[79:25.00]  think over the last last five years
+[79:27.16]  especially uh so you know I don't know
+[79:30.28]  if I don't know if this is the right the
+[79:32.96]  right kind of surprise but I think one
+[79:35.20]  thing that I find really energizing at
+[79:39.16]  Stanford is people have never asked me
+[79:42.32]  for credentialing cure and and what I
+[79:45.36]  mean by that is that you know I came I
+[79:47.52]  came from kind of a bunch of other good
+[79:49.76]  schools and you know obviously I've
+[79:51.28]  spent time in Industry with a lot of
+[79:52.60]  great companies
+[79:54.24]  and a kind of cultural Dynamic that can
+[79:56.64]  often develop is well before I'm going
+[79:58.20]  to talk to you I want to know something
+[80:00.24]  about why you're worth talking to like
+[80:01.96]  give me your credentials right like oh
+[80:03.92]  you know where are you a grad student or
+[80:05.60]  like where are you a professor like tell
+[80:07.28]  me about yourself
+[80:08.96]  first one of the things that I found
+[80:10.84]  very surprising when I came here is just
+[80:12.52]  how that never happened at any level
+[80:14.80]  grad students tell me this all the time
+[80:16.32]  go talk to someone across campus and
+[80:18.16]  just launch right into a a conversation
+[80:20.44]  about how your X meets my Y and we
+[80:22.96]  something we could do together you know
+[80:24.92]  as a faculty member happens all the time
+[80:27.20]  that I I just had a conversation couple
+[80:29.36]  days ago with someone about like
+[80:31.32]  effectively a Marketplace of experiment
+[80:34.52]  designs for nanofabrication here right
+[80:36.76]  which is like totally out of left field
+[80:39.28]  for things I do and yet seamless right
+[80:41.84]  our conversation was about the substance
+[80:44.36]  rather than the credentialing I really
+[80:46.64]  think part of the reason for that is
+[80:47.92]  that Stanford is sort of unique in that
+[80:49.92]  it doesn't have a weakness across the
+[80:51.48]  board we have strong professional
+[80:53.24]  schools law business medicine strong
+[80:55.40]  engineering school strong Humanities and
+[80:57.24]  social sciences and then that in the
+[80:59.36]  weather is what I usually tell people
+[81:00.68]  honestly which matters a lot people are
+[81:02.20]  willing to walk anywhere um I I think
+[81:05.28]  those things combined to create a
+[81:06.68]  culture and an environment where you
+[81:08.40]  don't credential everybody and I think
+[81:11.24]  that means a lot you know and I think
+[81:13.00]  that's something that I I haven't found
+[81:15.52]  elsewhere and you know that if people
+[81:17.32]  want to know something about what what
+[81:18.84]  Stanford's like on the inside I think
+[81:20.36]  that's one one aspect of it the isn't
+[81:23.12]  discussed very much and that I you know
+[81:25.04]  I think that's part of what makes it
+[81:26.08]  really fun to be here it's also an
+[81:27.80]  incredibly dreamy campus that is very
+[81:31.12]  joyful to walk around that helps I'm
+[81:33.68]  sure remesh I feel like we got people's
+[81:36.24]  brains tingling I think we've created
+[81:37.80]  new Marketplace Founders and also
+[81:39.16]  convince people maybe they aren't
+[81:40.28]  Marketplace Founders so maybe we knit it
+[81:41.92]  out it's zero new Marketplace Founders
+[81:44.52]  two final questions where can folks find
+[81:46.04]  you online if they want to reach out and
+[81:47.88]  how can listeners be useful to you I
+[81:49.92]  think the easiest way you know if
+[81:51.76]  someone's interested more on the
+[81:52.80]  industrial side is probably LinkedIn you
+[81:54.44]  know you send me a message or connect
+[81:55.72]  there I'm also because I'm an academic
+[81:57.92]  you know I have my own Stanford web page
+[81:59.68]  and it's pretty easy to figure out how
+[82:00.80]  to find me there as well and how can
+[82:02.96]  listeners help me I mean you know I I
+[82:06.20]  kind of feel the most important thing
+[82:08.16]  that someone listening to this could do
+[82:09.88]  is take forward some of the messages
+[82:11.80]  that came out in terms of what it means
+[82:13.28]  to be data literate and I think there's
+[82:15.52]  a lot you can do to educate yourself
+[82:17.12]  there uh you know maybe one final
+[82:19.08]  thought I'll share is that you know in
+[82:22.28]  the way that AI generates a lot of ideas
+[82:24.72]  AI also generates a lot of pros and in
+[82:27.52]  data science that can actually be deadly
+[82:29.56]  because you're getting more explanations
+[82:31.56]  that sometimes maybe are extraneous you
+[82:34.40]  know and so taking that as a little
+[82:36.32]  vignette I think what the world needs is
+[82:38.36]  data literacy on the part of people
+[82:40.48]  interacting with these tools and with
+[82:42.24]  each other so so that's the thing I care
+[82:43.92]  most about the things I teach the things
+[82:46.24]  I do research on they're all connected
+[82:47.72]  to that theme and and so yeah that's
+[82:49.68]  where like you know I'm pretty excited I
+[82:51.64]  I do work with companies regularly um
+[82:53.84]  and so if there's you know interesting
+[82:55.36]  opportunities that kind of fall in the
+[82:56.52]  sphere of stuff we've discussed on the
+[82:57.84]  podcast always always happy to listen
+[83:00.68]  awesome I think we've made a dent in
+[83:02.40]  helping people become a little more data
+[83:04.32]  literate rsh thank you so much for being
+[83:06.44]  here all right thank you so much Lenny
+[83:08.92]  bye
+[83:10.72]  everyone thank you so much for listening
+[83:13.12]  if you found this valuable you can
+[83:14.52]  subscribe to the show on Apple podcast
+[83:16.72]  Spotify or your favorite podcast app
+[83:19.64]  also please consider giving us a rating
+[83:21.60]  or leaving a review as that really helps
+[83:23.76]  other listeners find the podcast you can
+[83:26.08]  find all past episodes or learn more
+[83:28.16]  about the show at Lenny podcast.com see
+[83:31.44]  you in the next
+[83:34.48]  episode

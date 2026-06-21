@@ -1,0 +1,604 @@
+Title     : Top 10 Learnings about Free Trials with Tomasz Tunguz
+Video ID  : tfQNJpnxmMw
+URL       : https://www.youtube.com/watch?v=tfQNJpnxmMw
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 595
+Saved at  : 2026-06-21 00:01:35
+------------------------------------------------------------
+
+[00:00.00]  Ready to go. Awesome. So, my name is Tom
+[00:02.80]  Tungus. I'm a managing director at
+[00:04.48]  Redpoint. I've been there for about 10
+[00:06.08]  years. I write a blog at tomtungus.com
+[00:08.48]  that focuses a lot on earlystage
+[00:10.08]  startups and uses a lot of data in order
+[00:12.24]  to illuminate different topics. Redpoint
+[00:14.48]  is a venture firm that's been around for
+[00:16.00]  about 20 years. We invest from the very
+[00:18.32]  earliest stages to the latest stages of
+[00:20.48]  software and consumer companies and
+[00:21.92]  we're based in California. Over our 20
+[00:24.40]  years, we've been lucky enough to work
+[00:25.76]  with over 15 different unicorns and some
+[00:28.08]  of the most notable companies in the
+[00:29.52]  last generation of software, including
+[00:31.52]  companies like Stripe that just raised
+[00:33.20]  at 22 and a half billion, Hashi Corp and
+[00:35.60]  Snowflake, which are two of the fastest
+[00:37.04]  growing software companies in history,
+[00:38.96]  and some of the next generation
+[00:40.32]  businesses like Looker and others.
+[00:43.44]  A lot of these businesses use a common
+[00:45.28]  marketing technique in order to grow
+[00:46.72]  really quickly. And that marketing
+[00:48.40]  technique is free trial.
+[00:50.96]  Being on the board of some of these
+[00:52.24]  companies, we're often asked the
+[00:53.84]  question, what is the most effective way
+[00:55.36]  to structure a free trial? And if for
+[00:57.52]  those of you who read the blog, you know
+[00:58.96]  that I love data. And so what we did is
+[01:01.04]  we went out and we created a data set in
+[01:03.52]  order to answer this question. Late in
+[01:05.84]  October of last year, we sent out a
+[01:07.68]  survey
+[01:09.52]  to understand how the best marketers and
+[01:11.68]  marketers across all different kinds of
+[01:13.36]  SAS use free trial in order to acquire
+[01:15.68]  customers the most effective in the most
+[01:18.48]  effective ways. That survey had 24
+[01:21.84]  questions and we were overwhelmed by the
+[01:23.68]  response. We had almost 600 different
+[01:25.84]  companies respond of all shapes and
+[01:27.52]  sizes. And I'll get into the
+[01:29.04]  distributions of that for a second. We
+[01:31.12]  took that data set over the last three
+[01:32.64]  months and it was an enormous amount of
+[01:33.92]  work. We wrote over a thousand lines of
+[01:35.84]  code in R. And we performed lots of
+[01:38.00]  different statistical tests to make sure
+[01:39.76]  that the the results of the analysis I'm
+[01:41.92]  going to share with you actually stand
+[01:44.24]  um stand to stat statistical
+[01:46.08]  significance.
+[01:47.84]  To give you a sense of the distribution
+[01:49.68]  by ARR, of the 600 or so respondents,
+[01:53.20]  about half of the about twothirds of
+[01:55.44]  them are five million in AR or under,
+[01:56.96]  but we had five or six different
+[01:58.80]  companies that were publicly traded well
+[02:00.32]  north of 100 million who are using free
+[02:02.40]  trial in order to continue to grow their
+[02:03.76]  businesses. In terms of ACV, they span
+[02:06.00]  the gamut everywhere from 5K all the way
+[02:08.00]  to 150K plus. And they were broken down
+[02:10.72]  roughly a third, a third, a third by
+[02:12.24]  targeting the SMB, the mid-market, and
+[02:14.00]  the enterprise.
+[02:16.40]  In addition, we believe that this data
+[02:18.48]  is representative because if you look at
+[02:20.00]  the different kinds of buyers from the
+[02:22.00]  respondents, you see it spans everything
+[02:23.60]  from operations and marketing to sales
+[02:25.68]  and engineering, even down to legal. So,
+[02:28.08]  we really believe this data set is is
+[02:29.84]  comprehensive and provides at least some
+[02:31.60]  sense of what's really going on in the
+[02:33.28]  wild when use a free trial.
+[02:36.32]  There are two goals of this analysis.
+[02:38.24]  The first goal is to share with you
+[02:39.60]  benchmarks. We believe benchmarks are
+[02:41.60]  really useful to help you build your
+[02:43.28]  business because they provide good
+[02:44.72]  goalposts for financial planning and for
+[02:46.88]  goal setting. And the second goal is to
+[02:49.36]  help you have conversations within your
+[02:51.36]  business about what the right mechanisms
+[02:53.36]  are to test for free trial.
+[02:56.40]  The way that we structure this
+[02:57.60]  presentation is top 10 learnings. So
+[02:59.28]  let's jump right in. Contract length.
+[03:01.92]  How long should a contract be in order
+[03:03.60]  to maximize conversion rate?
+[03:07.20]  If we look at the distribution by
+[03:08.88]  respondents here on the e on the y-
+[03:11.12]  axis, we broke it down by four different
+[03:12.64]  categories. Usage based, how many API
+[03:15.12]  calls, in other words, you can use as
+[03:18.08]  many different API calls as you want. A
+[03:20.08]  multi-year contract, a month-to-month
+[03:21.68]  contract, and annual contract. And on
+[03:23.76]  the x-axis, we broke it out by ACV from
+[03:26.00]  0 to 5 all the way to 150K. What we see
+[03:29.36]  is the way to read this chart is 80% of
+[03:31.44]  respondents in the 15 to 50K ACV use an
+[03:34.56]  annual contract. And what you'll notice
+[03:36.40]  is that looking at the heat map, what
+[03:38.32]  we've got is in the mid-market, the vast
+[03:40.48]  majority of of respondents actually use
+[03:42.72]  an annual contract. In the SMB,
+[03:45.20]  twothirds use month-to-month. And in the
+[03:47.36]  enterprise, you've got twothirds using
+[03:48.88]  multi-year. What does this mean? It
+[03:51.20]  means that for most companies, an annual
+[03:53.92]  contract tied to a free trial is the
+[03:57.36]  best way of going about it. And it turns
+[03:58.88]  out if you run the correlation of the
+[04:00.64]  conversion rate by free trial, there's
+[04:02.88]  actually no statistical difference. So,
+[04:04.88]  even if you're the SMB and even if the
+[04:08.00]  month-to-month contract is the most
+[04:09.52]  popular, you really should be using an
+[04:11.12]  annual contract because the conversion
+[04:12.64]  rate from your free trial won't change.
+[04:17.44]  So, conclusion number one, observation
+[04:19.20]  number one from this data set is stick
+[04:20.88]  with annual contracts. They're industry
+[04:22.80]  standard and there's no change in
+[04:24.56]  conversion rate.
+[04:28.72]  Our second topic, benchmarks around
+[04:30.64]  retention. Logo retention. Logo
+[04:32.88]  retention is starting last year how many
+[04:35.12]  customers did I have and from that
+[04:36.56]  cohort this year how many have I
+[04:38.16]  retained
+[04:41.36]  if we look at the distribution across
+[04:43.04]  the respondents we see twothirds of the
+[04:46.72]  respondents actually retained better
+[04:49.12]  than 80% of their logos
+[04:52.16]  the top third maintain 90% plus.
+[04:56.08]  So in building your models for your
+[04:57.68]  business, you really should be striving
+[04:58.96]  for 90% plus logo retention rate. Oops,
+[05:05.36]  here's another slide. So if we break
+[05:06.80]  down the the So one of the key questions
+[05:08.72]  that comes up a lot is if I'm an SMB
+[05:11.12]  company or if I'm a mid-market company
+[05:13.20]  or if I'm an enterprise company, should
+[05:15.12]  my logo retention rates change? And the
+[05:17.60]  answer is yes. What we notice is that in
+[05:20.32]  the enterprise, it's much more common to
+[05:22.40]  retain 90 to 100%. 45% of respondents
+[05:25.20]  who target the enterprise maintain 90%
+[05:27.36]  of their logos. If you look in the
+[05:29.20]  mid-market, it's pretty similar. But if
+[05:30.80]  you look at the distribution ESNB, it's
+[05:32.40]  actually quite different. You have
+[05:33.36]  almost a fifth of respondents failing to
+[05:35.68]  to maintain to retain uh 60% or more of
+[05:39.12]  their logos. That's a very difficult way
+[05:40.64]  of building a business.
+[05:44.00]  So the conclusion number two is you
+[05:45.68]  really should be striving for 97 90%
+[05:48.16]  logo retention rates. If we move on to
+[05:51.12]  net dollar retention, net dollar
+[05:52.72]  retention, also called negative net
+[05:54.24]  churn, also called account expansion. If
+[05:56.88]  I take a cohort of customers who are
+[05:59.20]  paying me $1,000 last year, how much are
+[06:01.12]  they paying me this year? Then it's net
+[06:03.12]  of churn. How many customers have I lost
+[06:05.28]  and the revenue associated with it and
+[06:06.96]  the customers within that cohort that
+[06:08.56]  have actually expanded or grown their
+[06:10.32]  spend with with me. If we look at NDR
+[06:13.36]  again distribution by percentage of
+[06:15.12]  companies, we see that the vast majority
+[06:17.04]  about 60% of companies are somewhere
+[06:18.64]  between 80 to 120% net dollar retention.
+[06:21.68]  One of the things that we say in venture
+[06:23.20]  is I was just in a board meeting where
+[06:24.88]  we had this conversation. You know, the
+[06:27.20]  very best companies are really expanding
+[06:28.88]  their accounts 120% plus or more. The
+[06:31.76]  top quartiles right there, if you look
+[06:33.52]  120% and above, you've got about 8% that
+[06:35.84]  are doing 140% net expansion or better.
+[06:38.32]  That's top decile.
+[06:40.40]  Again,
+[06:42.32]  let's look at the same chart that we
+[06:43.92]  looked at in the previous BI logos. And
+[06:45.36]  if we look at at the enterprise, what we
+[06:47.04]  find is it's much easier or it's much
+[06:49.04]  more common within the enterprise to
+[06:50.40]  actually attain higher levels of net
+[06:52.24]  dollar retention than it is in the SMB.
+[06:54.56]  In the SMB, in order to get the top
+[06:56.56]  cortile, you have to go all the way down
+[06:58.00]  to 100% net dollar retention where in
+[07:00.32]  order to get top cortile in the
+[07:01.60]  enterprise, you're looking at 120 to
+[07:03.84]  140% net retention. Why? This surprised
+[07:06.48]  me. This was one of the results where,
+[07:08.48]  you know, we've invested in SMB
+[07:09.92]  companies like Expensify that have
+[07:11.76]  phenomenal net dollar retention growth
+[07:13.68]  rate or net dollar retention numbers.
+[07:16.56]  Um, and so I thought, you know, broadly
+[07:18.88]  across the industry that you would have
+[07:20.16]  lots of different SMBs that had really
+[07:21.76]  great NDRs. But when we stepped back and
+[07:24.64]  t thought about it and talked to some of
+[07:26.24]  our companies, the reality is if you're
+[07:27.92]  selling to an enterprise, you have way
+[07:29.20]  more seats to sell. There are way more
+[07:30.96]  departments to sell to. There's just a
+[07:32.80]  lot more people and a lot more business
+[07:33.92]  that you can get. And so it's far easier
+[07:36.00]  as we saw in the logo retention to
+[07:37.52]  retain those customers and also to
+[07:38.96]  expand them.
+[07:41.12]  So another observation was you really
+[07:43.60]  should be setting a net dollar retention
+[07:45.04]  target of 100% to 140%. That will put
+[07:47.84]  you within the top either third or decel
+[07:50.16]  or cile depending on the category
+[07:54.16]  trial structure. Okay. So there are four
+[07:57.12]  ways to limit a free trial. The first
+[07:59.12]  way is through features, compliance
+[08:01.36]  features, security features. Slack uses
+[08:03.68]  search. The second is through seats.
+[08:06.00]  Expensify did this in the early days.
+[08:07.84]  Your first two seats are free. Once you
+[08:09.68]  want to get to the third seat, it it's
+[08:11.52]  time to time to pay. Time is the third
+[08:14.56]  one. 30-day free trial, 14-day free
+[08:16.48]  trial. And then the last is usage. How
+[08:19.04]  many API calls do I get free with Twilio
+[08:20.88]  before I need to pay?
+[08:22.96]  We broke this out by ACV. And what we
+[08:24.80]  find is across every single ACV, time is
+[08:26.96]  the most frequent and most commonly used
+[08:29.04]  limiter to trial.
+[08:32.16]  The second most common actually depends
+[08:34.72]  it changes as a function of the ACV. So
+[08:36.96]  what we find is usage is very common in
+[08:38.96]  small ACVs and as you go up seats are in
+[08:42.16]  the enterprise are much more common as
+[08:43.52]  the delimiter. The question is what is
+[08:45.20]  the impact on conversion rate? Well, it
+[08:47.44]  turns out time and usage trials actually
+[08:50.64]  convert twice twice as effectively as
+[08:54.00]  the as features and seats and this is
+[08:56.56]  statistically significant.
+[08:59.60]  Right? So if you are structuring a free
+[09:01.36]  trial, you really ought to be
+[09:02.88]  considering a timebound free trial or a
+[09:05.20]  usage based free trial rather than a
+[09:07.28]  feature-based free trial or a seatbased
+[09:09.28]  free trial.
+[09:14.80]  That's observation number four.
+[09:18.32]  Let's talk about trial length. If time
+[09:20.00]  is one of the most effective limiters of
+[09:22.00]  free trial, how long should your free
+[09:24.16]  trial be? Should it be 7 days, 14 days,
+[09:26.16]  30 days, 90 days, 120 days? Some people
+[09:28.72]  have have unlimited free trials. So, it
+[09:30.96]  turns out that 14-day free trials are by
+[09:32.96]  far the most common. I don't know why.
+[09:35.92]  And I don't know why only 3% of people
+[09:37.84]  use 21-day free trials. It's really just
+[09:41.36]  a week of difference. It turns out it
+[09:44.72]  doesn't matter. The conversion rates
+[09:46.24]  across all those lengths are
+[09:47.92]  statistically identical. By the way,
+[09:50.00]  I'll be sharing these slides on
+[09:51.20]  tomingers.com. So, uh feel free to take
+[09:54.08]  photos, but they'll be public uh
+[09:55.60]  published later today. So what we find
+[09:57.52]  is, you know, if if the conversion rates
+[09:59.92]  across the free trial links are exactly
+[10:01.60]  the same, why lengthen it? You should
+[10:04.24]  just shorten your free trial.
+[10:07.92]  And the theory there is if you're
+[10:09.84]  engaging with a buyer who's using a free
+[10:11.68]  trial, all of the momentum, all of the
+[10:13.60]  desire to use the product is really
+[10:15.20]  right there at the very beginning. And
+[10:16.96]  the longer the time they're engaged with
+[10:18.40]  the product, yet the longer the t, you
+[10:21.12]  know, the longer the time they have to
+[10:22.64]  decide not to use it. Time kills deals
+[10:24.64]  is another apherism we use in venture.
+[10:27.44]  And so if if you've got the point of
+[10:29.12]  maximum intent at the beginning, use a
+[10:31.76]  shorter free trial.
+[10:35.76]  Salespeople. Should you use sales
+[10:37.52]  people? Should you hire salespeople in
+[10:39.12]  order to
+[10:40.80]  um should you hire sales people in order
+[10:43.20]  to call your leads?
+[10:46.32]  Well, it turns out 75% of the
+[10:48.16]  respondents actually do this. Obviously,
+[10:50.08]  this is more expensive, right? If you're
+[10:51.52]  hiring a salesperson, an inside sales
+[10:53.36]  rep in the Bay Area is probably going to
+[10:54.64]  cost you 120K. A field rep is probably
+[10:56.96]  going to cost you 250 to 300K, maybe
+[10:59.36]  more depending on their quota. But this
+[11:01.44]  is a very common practice. And and
+[11:03.28]  there's a reason. It turns out that
+[11:04.80]  you're almost 4xing the conversion rate.
+[11:06.80]  So if we look at unassisted conversion
+[11:09.20]  rate across the entire respondent set,
+[11:11.12]  about 4% of incoming leads through free
+[11:13.20]  trial will actually convert to paid. But
+[11:14.96]  if you have a salesperson call them,
+[11:16.72]  that goes up to 15%. Again, a really
+[11:19.20]  statistically significant result. The
+[11:21.60]  question as a business is at what point
+[11:24.56]  at what point um at what price point
+[11:26.80]  does it actually make sense to hire a
+[11:28.24]  salesperson in order to make the cost of
+[11:30.24]  of customer acquisition scale? And
+[11:32.48]  really that comes back to your price
+[11:34.08]  point. So there's there's another blog
+[11:35.68]  post that's on the blog that talks about
+[11:37.12]  how you really need to be at kind of a
+[11:38.80]  10 to a 15k price point and make sure
+[11:41.04]  that you're paying your inside sales
+[11:42.32]  reps an appropriate amount in order to
+[11:44.64]  make sure that this works. But if you're
+[11:46.24]  above that price point, there's no
+[11:47.60]  question that you should be using
+[11:48.56]  salespeople in order to call those
+[11:50.56]  qualified leads.
+[11:53.28]  And what we find is that this
+[11:54.88]  observation actually is true across all
+[11:56.88]  different price points.
+[11:59.92]  So unassisted conversion rate by price
+[12:03.04]  point. Unassisted conversion is uh the
+[12:05.76]  median is 7% in the 0 to 5% 0 to 5k ECV.
+[12:09.68]  It's 3% in the 5 to 15k ECV. You'll
+[12:12.56]  notice that as the price points go up,
+[12:14.08]  unassisted conversion rates goes go to
+[12:15.92]  zero.
+[12:17.84]  This means that as people want to spend
+[12:19.68]  more money, they want to talk to
+[12:20.80]  somebody. They want to be reassured.
+[12:22.16]  They want to have some sense of trust in
+[12:23.92]  the company that they're buying from.
+[12:25.68]  And what you'll also notice is that um
+[12:28.32]  conversion rates actually dip through
+[12:29.92]  the through increasing price points. But
+[12:32.16]  in in every single bucket, assisted
+[12:34.64]  actually meaningfully doubles or triples
+[12:36.40]  or or even quadruples uh the
+[12:38.72]  effectiveness of the free trial.
+[12:42.16]  So hire sales people to close leads.
+[12:46.56]  Moving on to conversion.
+[12:49.12]  So
+[12:51.84]  there's this number 4%. Again, it's kind
+[12:54.08]  of a part of industry jargon, which is
+[12:56.16]  that's the target. If I have an
+[12:57.60]  unassisted, if I have somebody who comes
+[12:59.28]  to use a free trial, what fraction of
+[13:00.56]  the free trial do I actually convert?
+[13:02.56]  Well, I've been batting around this
+[13:04.00]  number for as long as I've been in
+[13:05.12]  venture, which is about a 4% target.
+[13:06.96]  Here's the actual data. The 25th
+[13:09.20]  percentile, the bottom 25th percentile
+[13:11.04]  converts uh 1% and this is unassisted.
+[13:13.76]  That means not being touched by a
+[13:14.96]  salesperson. The 50th percentile is 4%
+[13:18.24]  and the 75th percentile is 12%. And if
+[13:21.20]  you look at this chart through
+[13:22.24]  distribution, it actually follows a
+[13:23.60]  power law which means that you know most
+[13:26.24]  most of the time it's basically flat and
+[13:27.68]  at the very end you have a handful of
+[13:28.88]  companies that have really terrific
+[13:30.40]  product market fit and are able to
+[13:31.92]  convert these free trials uh at at much
+[13:34.32]  more effective rates. But what that
+[13:36.24]  really means and what that means for you
+[13:37.60]  is you really should be aiming at 4% or
+[13:39.44]  a little bit better in terms of
+[13:40.96]  unassisted conversion rate. If we look
+[13:43.92]  at the same analysis for
+[13:46.64]  assisted conversion, so the conversion
+[13:48.40]  with salespeople by quartile, what we
+[13:50.32]  find is the 25th percentile is 6.8%, the
+[13:53.44]  50th percentile is 15.5, and the 75th
+[13:55.84]  percentile is 30%. The 75th percentile
+[13:58.56]  takes one-third of inbound leads and
+[14:00.32]  converts them into paying customers.
+[14:02.32]  That's pretty exceptional. You don't see
+[14:03.92]  that very often. So, what does that
+[14:05.76]  mean? Conclusion number eight, you
+[14:07.36]  really should be shooting for at least
+[14:08.88]  15% assisted conversion rate on your
+[14:10.80]  free trials.
+[14:16.40]  Activity qualification. A lot of
+[14:18.80]  companies with their free trials, what
+[14:20.48]  they do is they look at product metrics
+[14:22.00]  in order to understand which of the
+[14:23.68]  prospective leads are engaging with
+[14:25.12]  their product and they use that to score
+[14:26.72]  leads. How many times does this person
+[14:28.64]  use this particular feature? How many
+[14:30.24]  times have they invited their colleagues
+[14:32.56]  in order to use the product? uh how many
+[14:34.96]  searches have they executed? All kinds
+[14:36.56]  of different activity metrics as you're
+[14:39.28]  looking to qualify your leads and figure
+[14:41.36]  out which of the ones your salespeople
+[14:43.04]  should be calling. Uh is this a good
+[14:45.52]  thing to be doing?
+[14:47.76]  So if again if we go back to the data on
+[14:50.08]  the y- ais you have use activity to
+[14:52.56]  score leads yes and no and on the x-
+[14:54.80]  axis you have all the different price
+[14:56.08]  points. What we see is what you would
+[14:58.88]  expect in the SMB when you're selling to
+[15:00.64]  small price points, activity scoring is
+[15:03.20]  actually very good.
+[15:06.64]  Oh, sorry. It's basically the same. So,
+[15:08.48]  if you use activity scoring uh to
+[15:11.44]  determine leads, your conversion rate is
+[15:13.28]  is it's actually not very good. My
+[15:14.88]  apologies. If you use activity scoring
+[15:17.20]  in order to discriminate leads, there's
+[15:18.88]  actually no no real difference. So,
+[15:20.24]  there's no value in using it at the SMB.
+[15:22.48]  If you go into the mid-market, what you
+[15:24.24]  find is that activity scoring actually
+[15:26.32]  meaningfully decreases
+[15:29.20]  it actually meaningfully I'll say that
+[15:30.72]  again. It actually meaningfully
+[15:32.00]  decreases conversion rates and in the
+[15:33.92]  enterprise it does it to an even greater
+[15:36.16]  effect. So what does this mean? Using
+[15:38.08]  the data about how people are engaging
+[15:40.08]  with your product during the free trial
+[15:42.16]  actually is bad in the sense that you
+[15:46.56]  are
+[15:48.08]  uh throwing out leads that otherwise
+[15:49.68]  could be really good. Why is this? Well,
+[15:52.16]  in the SMB, people are buying products
+[15:54.32]  the way that consumers buy products. But
+[15:56.40]  as you go more and more into the
+[15:57.52]  enterprise, the enterprise buyer is not
+[15:59.52]  going to be using the product
+[16:00.64]  necessarily. The buyer and the user
+[16:02.40]  might be different. It might be it
+[16:03.92]  versus uh the the line of business
+[16:06.16]  owner. And so, consequently, if you're
+[16:08.16]  using activity metrics in order to score
+[16:10.00]  your leads, you you're you're looking at
+[16:12.08]  people and you're expecting them to use
+[16:13.36]  the product in a particular way in order
+[16:15.28]  to qualify their demand when in fact,
+[16:16.80]  what you're doing is actually qualifying
+[16:18.48]  out what could be a really great buyer.
+[16:22.96]  So really question activity scoring in
+[16:24.80]  the enterprise. Take a look at that.
+[16:26.16]  That's really important. Okay, the last
+[16:28.24]  one payment
+[16:31.20]  only 12 companies require payment info
+[16:33.84]  at the start of a trial. Uh this was
+[16:36.24]  really low. Uh I was really surprised by
+[16:38.48]  this figure. Uh and so what this means
+[16:41.20]  is most of the free trial forms today
+[16:43.36]  what they do is they optimize on the
+[16:44.88]  total top of the funnel. They say we
+[16:46.32]  want to get the maximum number of leads.
+[16:47.84]  We want to get as much possible data
+[16:49.60]  about each individual lead and so we
+[16:52.24]  don't require a credit card to be uh to
+[16:55.12]  be entered. But what we do find is if
+[16:56.96]  you do require payment, you actually
+[16:59.36]  more than double the conversion rate.
+[17:01.76]  What we weren't able to get a sense of
+[17:03.44]  is how does this impact the top of the
+[17:05.12]  funnel? In other words, what is the
+[17:06.64]  trade? If I implement payment as a
+[17:09.20]  requirement in the the funnel, do I lose
+[17:11.52]  half of the the top of the funnel or do
+[17:13.68]  I lose a smaller fraction? And so every
+[17:15.36]  company's going to be slightly
+[17:16.64]  different, but it's definitely worth
+[17:18.16]  testing because there's a meaningful
+[17:19.92]  increase in conversion.
+[17:25.44]  Awesome. Uh so that's the 10th. Those
+[17:27.92]  are the 10 observations that we were
+[17:29.60]  able to pull from this survey. There's a
+[17:31.36]  lot more data here. We're going to be
+[17:32.80]  publishing the slides at tomtungus.com.
+[17:35.12]  Uh there are a lot more insights that
+[17:36.48]  we'd like to share with you and we will
+[17:38.64]  be in the future, but uh these were the
+[17:40.16]  ones that we wanted to cover today.
+[17:43.68]  So, just to summarize for you the top 10
+[17:46.16]  observations from this 600 person
+[17:47.84]  survey, the first is stick with annual
+[17:49.92]  contracts. They're by far the most
+[17:51.76]  common. They're an industry practice.
+[17:54.16]  Uh, and particularly in the mid-market,
+[17:56.56]  they're they're very common. There's no
+[17:58.40]  real meaningful impact to conversion
+[18:00.08]  rate for your contract length. And so,
+[18:01.84]  having your customers stick around
+[18:03.04]  longer is a net positive. The second is
+[18:05.68]  as you build your financial plan for
+[18:07.28]  this year for next year you really
+[18:08.96]  should be targeting 90% plus logo
+[18:10.96]  retention across most segments except
+[18:13.36]  for the SMB 90% retention uh is is top
+[18:17.12]  cortile. If you look at net dollar
+[18:19.28]  retention you you should really be 100
+[18:21.84]  to 140% somewhere in that range. The
+[18:24.48]  bigger your ACVs the larger your net
+[18:26.40]  dollar retention should be. The smaller
+[18:28.24]  your ACVs the smaller the net dollar
+[18:30.24]  retention will be. And that's just the
+[18:31.92]  nature of the kinds of customers that
+[18:33.36]  you're selling to. And the fourth
+[18:35.52]  observation was time and usage based
+[18:37.44]  trials meaningfully improve conversion
+[18:39.36]  rates. And so if you're not using a
+[18:41.12]  trial that's bound by time and if you're
+[18:43.04]  not using a trial that's bound by usage,
+[18:44.80]  but instead you're using a seatbased
+[18:46.72]  trial or a feature-based trial, you're
+[18:48.64]  likely underoptimizing your conversion
+[18:50.40]  funnel. And so it's worth testing one of
+[18:52.88]  those two.
+[18:56.32]  Shorten your trial length. If you're
+[18:57.76]  using a timebased trial, there's no
+[18:59.44]  meaningful difference in conversion rate
+[19:01.12]  from a 7-day trial to a 14-day trial to
+[19:03.20]  a 21-day trial to a 30-day trial or
+[19:05.44]  longer. And so, like we talked about
+[19:07.28]  before, capitalize on that point of
+[19:09.20]  maximum intent and get the sales people
+[19:10.80]  to call as quickly as possible.
+[19:14.08]  Do hire sales people to call leads.
+[19:15.84]  Again, you're 4xing the amount of you're
+[19:18.16]  you're nearly quadrupling the the
+[19:19.84]  conversion rate and the effectiveness of
+[19:21.20]  the funnel. And so, at certain price
+[19:22.96]  points where it makes sense, it's
+[19:24.64]  important to hire salespeople. um uh to
+[19:28.08]  call them.
+[19:29.76]  You really should be aiming that number
+[19:31.04]  should be a four. Aim for 4% or better
+[19:33.52]  unassisted conversion. Uh aim for 15% or
+[19:36.96]  better assisted conversion on your
+[19:38.32]  sales. Question activity scoring in
+[19:40.24]  enterprise. What we saw in that chart
+[19:41.60]  was in the majority of cases
+[19:44.40]  particularly at price price points above
+[19:46.32]  5K activity scoring is actually
+[19:48.96]  negatively correlated to conversion
+[19:51.12]  rate.
+[19:52.64]  And so it's a it's a it's a bad
+[19:54.32]  indicator. And then the last is test
+[19:56.40]  requiring payment. You got a two and a
+[19:57.76]  halfx increase in your conversion rate
+[19:59.92]  when you have payment. And you got to
+[20:01.28]  figure out what is the trade that I'm
+[20:02.80]  making when I'm actually I'm getting
+[20:04.88]  much higher quality of lead, but I'm
+[20:07.92]  also reducing the size of the top of my
+[20:09.68]  funnel.
+[20:11.52]  So those were the conclusions. I'm
+[20:13.04]  thrilled to share this with you all. I'd
+[20:14.48]  like to thank again Jason and the STS
+[20:16.48]  team. I'd also like to thank my
+[20:17.60]  colleague Patrick Chase who put an
+[20:19.28]  incredible amount of time into this
+[20:20.56]  survey. And uh to all the companies who
+[20:22.72]  participated, we'll be distributing the
+[20:24.16]  raw data. Everybody else will be sharing
+[20:26.00]  the aggregate slides and future insights
+[20:27.60]  on the blog. But I hope you all have a
+[20:29.68]  wonderful conference. Thank you for
+[20:30.96]  sharing the first session of Tuesday
+[20:32.80]  with me. And I hope the these these data
+[20:35.28]  help you figure out how to optimize your
+[20:37.20]  funnel, maximize your conversion rates,
+[20:38.72]  and build an incredible SAS business.
+[20:40.64]  Thank you very much.

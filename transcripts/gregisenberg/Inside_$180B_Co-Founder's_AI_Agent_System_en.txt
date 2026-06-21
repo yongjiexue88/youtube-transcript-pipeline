@@ -1,0 +1,873 @@
+Title     : Inside $180B Co-Founder's AI Agent System
+Video ID  : oDl-A2Uez58
+URL       : https://www.youtube.com/watch?v=oDl-A2Uez58
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 864
+Saved at  : 2026-06-21 01:57:52
+------------------------------------------------------------
+
+[00:00.00]  Sam Altman predicted the one person, one
+[00:02.68]  billion dollar startup powered by AI.
+[00:05.44]  And I think we're starting to see a
+[00:06.92]  glimpse of it. My friend, Furqan, he
+[00:10.24]  used to be the co-founder of AppLovin.
+[00:12.96]  AppLovin is like a hundred and
+[00:14.28]  seventy-five billion dollar company. And
+[00:16.24]  what's cool about Furqan is he is always
+[00:18.84]  tinkering.
+[00:20.16]  And today he's doing a little bit of a
+[00:21.44]  show and tell. He hasn't done this
+[00:23.16]  anywhere, but he's working on this agent
+[00:25.00]  platform called Nebula. And he wanted to
+[00:27.16]  show it to me and he wants to show it to
+[00:28.40]  you because it's a platform for you to
+[00:30.72]  take your ideas and build a one-person
+[00:33.04]  business powered by agents. So, think
+[00:35.72]  about creating a blog that creates
+[00:38.08]  content for you three times a day based
+[00:40.16]  on X trends. I think that's a glimpse
+[00:43.28]  into where the future of building a
+[00:46.20]  one-person business powered by AI looks
+[00:49.20]  like. So, today I'm excited that Furqan
+[00:51.68]  came. He shared his product. He shows
+[00:54.08]  how it works. And what I hope is it gets
+[00:56.00]  your creative juices flowing for how you
+[00:58.64]  can create a one-person business powered
+[01:01.56]  by AI agents.
+[01:03.80]  Uh, let's get right into it.
+[01:05.50]  >> [music]
+[01:11.39]  [music]
+[01:13.68]  >> You are in for a special treat,
+[01:15.12]  everyone, because Furqan, he really is
+[01:18.04]  my go-to guy when it comes to tinkering
+[01:21.16]  with new technologies.
+[01:23.04]  He's um I've known him now for, you
+[01:25.36]  know, over 10 years. And this is a guy
+[01:29.00]  who when he speaks, I listen. So, thank
+[01:32.40]  you, Furqan, for coming on the show
+[01:33.92]  today. Um
+[01:35.72]  Furqan, by the end of this episode, what
+[01:37.80]  are people going to learn?
+[01:40.00]  Uh like you said, I'm a tinkerer. So, my
+[01:42.12]  nights and weekends are really just
+[01:44.08]  playing with new technologies. Uh you
+[01:46.20]  know, the last few years, AI and agents,
+[01:49.16]  can't can't pull away from it. So, I'm
+[01:51.88]  going to show you like some of the power
+[01:53.32]  that's already there in the world and
+[01:56.12]  um
+[01:56.68]  how you can leverage it and how you can
+[01:57.96]  use it to just accomplish more.
+[02:00.72]  Um get to get things done that are in
+[02:02.24]  your mind and you you don't know how to
+[02:03.44]  do them. And
+[02:04.96]  I I feel like um
+[02:07.07]  >> [clears throat]
+[02:07.12]  >> capability-wise, we're we're in the age
+[02:08.96]  of abundance. So, I hopefully I'm going
+[02:10.56]  to show you a bit of abundance.
+[02:12.60]  That's what I want to hear. All right,
+[02:14.36]  let's get into it.
+[02:15.92]  Sweet. Uh so, I'm going to show you like
+[02:18.92]  basically like I was saying, I've been
+[02:19.92]  tinkering for, you know, many years now
+[02:22.68]  around AI systems, LLMs, agents. The
+[02:26.56]  last few months, though, it it it kind
+[02:28.56]  of did become more obsession than just
+[02:31.52]  tinkering. Um you know, and mostly
+[02:33.96]  because I had built up all of these
+[02:35.88]  agents
+[02:37.12]  to do very, very useful things for me
+[02:39.28]  like, you know, like you, like I do a
+[02:41.36]  lot of stuff. There's a lot of Slack.
+[02:43.08]  There's a lot of people. There's a lot
+[02:44.16]  of like activity going on. You can't
+[02:46.12]  keep up with it.
+[02:47.64]  Um So, you let it go. You you delegate.
+[02:49.60]  You move on. But then there's just like
+[02:51.60]  things I do want to get my hands in and
+[02:53.28]  and and how do I do more of that? And
+[02:55.12]  so, I built up a bunch of agents myself.
+[02:57.72]  I had kind of like an opinion on how I
+[02:59.52]  wanted them to work and what kinds of
+[03:01.60]  things they wanted to accomplish. Like,
+[03:03.56]  where should you just go full send and
+[03:05.28]  where should you dial back and ask me?
+[03:07.64]  And then I was like, wait a minute. As
+[03:09.28]  I'm telling people, this is pretty
+[03:10.44]  useful. And
+[03:11.84]  the obsession was just like maybe I'm
+[03:13.24]  just going to make it a product that I
+[03:15.04]  can use. So, I'm customer one. But I
+[03:17.60]  also think other people can use it and
+[03:19.68]  it's very useful. It is rough. So, this
+[03:21.92]  is, you know, one of those I'm showing
+[03:23.08]  you something that's we're going to see
+[03:24.52]  some breaking points. But I do think I
+[03:26.00]  can show you kind of some of the the
+[03:27.92]  cool ways that that I'm approaching the
+[03:29.48]  problem. But
+[03:31.32]  um I'm going to screen share right here.
+[03:35.12]  So, yeah, this is uh this is Nebula.
+[03:37.92]  That that's that's kind of what I've
+[03:39.24]  been calling it. And uh you'll notice
+[03:41.96]  first that it looks a little bit like
+[03:43.72]  Slack. And it's got these channels here.
+[03:46.00]  And I think my goal was like a lot of
+[03:47.96]  work happens in in Slack in this kind of
+[03:51.28]  messaging experience. And uh I wanted to
+[03:53.64]  just mimic that. Except everybody in
+[03:55.92]  here is an agent and can help me get
+[03:59.40]  work done. And
+[04:01.28]  you know, I'm an engineer. You know, I I
+[04:02.92]  spent a lot of time in the technical
+[04:04.20]  side. I got things like Claude code and
+[04:06.56]  cursor and codex that I leverage to make
+[04:09.52]  my coding so much more powerful, so much
+[04:12.16]  more impactful.
+[04:13.76]  Um
+[04:14.44]  And you know, I wanted to make
+[04:16.68]  all the other work feel the same.
+[04:19.40]  Um and you know, a lot of it to me lives
+[04:21.64]  in the cloud. Uh it's services that we
+[04:23.96]  use like GitHub, Slack, Linear, Notion,
+[04:26.20]  Google stuff. And uh like a lot of work
+[04:29.36]  just happens there. And And I think
+[04:30.92]  flow-wise, it feels similar to how I
+[04:33.12]  engineer things when I'm developing. But
+[04:35.44]  there aren't the tools in the same way.
+[04:37.44]  At least in the AI front. At least, you
+[04:38.80]  know, what I felt that that we're
+[04:39.96]  solving that. And so, to me in many
+[04:41.76]  ways, this is like Claude code for
+[04:42.72]  everything else. Like, you know, for the
+[04:44.08]  non-engineering tasks, for all the other
+[04:45.64]  work that I want to get done.
+[04:47.68]  Um And so, we mimic Slack. You have
+[04:49.48]  these kind of channels. You can, you
+[04:51.52]  know, kind of create things. Uh we'll
+[04:53.56]  do, you know, some sort of a test where
+[04:55.80]  we can, you know, connect to, you know,
+[04:57.20]  Google Slides test. Uh kind of show you
+[05:01.32]  like how you could, you know, kind of do
+[05:02.96]  that. And so,
+[05:04.52]  um if I was just going into a channel
+[05:06.20]  and I'm like, you know, I want to
+[05:08.96]  connect to Google Slides.
+[05:12.00]  Uh can you create a new
+[05:15.68]  slide for
+[05:19.52]  Um and you know, this idea is Nebula's
+[05:21.76]  this agent. It you ask it to do stuff.
+[05:24.40]  It will do things. It will try to figure
+[05:27.88]  out, however, to do it. And
+[05:30.68]  uh it has all the knowledge of the
+[05:31.92]  internet. It can search. It has a
+[05:33.24]  browser. It can find things. It can look
+[05:35.44]  up documentation. And then we gave it
+[05:37.68]  the ability to write code. So, it will
+[05:39.84]  write code for you that it can, you
+[05:42.16]  know, um
+[05:44.84]  you know, help help accomplish tasks.
+[05:46.28]  So, even even if you don't know how to
+[05:47.44]  write code, it knows how to do that. It
+[05:48.72]  can execute it. And so, in this case, it
+[05:50.88]  did make this presentation
+[05:53.32]  that's a brand new one.
+[05:55.28]  Um and I'll kind of pull it up here as
+[05:57.04]  we're editing it. And so, it now made
+[06:00.32]  this presentation. I am not going to
+[06:02.60]  touch the presentation directly.
+[06:04.92]  Um and I'm just going to have it like
+[06:06.52]  start modifying and doing things. And
+[06:08.28]  so, if I was like, you know, I'm on a
+[06:10.92]  podcast with Greg and I'm showing him
+[06:15.32]  Nebula. This podcast is for startup
+[06:19.44]  {slash} founder {slash} team leads that
+[06:22.36]  focus on building and producing great
+[06:26.52]  companies.
+[06:28.00]  I want to
+[06:30.48]  do to create a
+[06:34.00]  three-slide
+[06:35.60]  deck um outline on Nebula and what it's
+[06:40.96]  useful for.
+[06:42.36]  And so, this part is Yeah, yeah, go for
+[06:44.12]  it. Yeah, I was going to say like this
+[06:45.48]  is sort of a glimpse into the future of
+[06:48.52]  how we're going to interact with apps, I
+[06:51.40]  think, right?
+[06:53.20]  I think so. Um you know, obviously text
+[06:55.44]  is a modality that we're very
+[06:57.00]  comfortable with. I'm I'm very, very
+[06:59.20]  interested in audio and screen share and
+[07:01.84]  live synchronous. That's kind of
+[07:03.88]  to me the next part of stuff that's
+[07:05.36]  going to come here. It's like I not only
+[07:07.36]  want to type asynchronously, maybe from
+[07:09.20]  my phone, but I also want to just get on
+[07:12.20]  a call and spend three minutes
+[07:14.12]  explaining my entire thought process and
+[07:15.96]  then Nebula can go off and work. And you
+[07:18.72]  know, we built an engine behind the
+[07:19.80]  scenes. That's kind of like the main
+[07:20.80]  thing. The text is the input to the
+[07:22.04]  engine. But you know, I do think here.
+[07:24.20]  And And so, you can kind of see that
+[07:26.16]  it's taking control of this
+[07:27.32]  presentation. It's now starting to edit
+[07:30.24]  it. It's saying that it's going to
+[07:31.60]  create an update slide one. There's a
+[07:34.56]  bunch of hidden stuff here like it, you
+[07:36.52]  know, created its own to-do list. It,
+[07:39.12]  you know, told Google like, hey, replace
+[07:41.64]  all the text with this for this slide.
+[07:43.76]  You know, like these are things that if
+[07:45.80]  you're writing a program for it, it's
+[07:47.12]  actually doing all this stuff. It's
+[07:48.32]  doing API requests for you. It's kind of
+[07:50.68]  making making all of these things happen
+[07:52.32]  that an engineer would do. And you know,
+[07:54.68]  we're here and and and now kind of had
+[07:56.80]  all of these. And uh great. And And so,
+[07:59.88]  now this is a kind of like a basic slide
+[08:02.04]  deck. And so,
+[08:03.60]  let's make a fourth slide
+[08:06.88]  and add an image that shows
+[08:10.92]  the power of Nebula. Make that image the
+[08:14.56]  entire slide.
+[08:16.16]  So, now it gets a little bit more
+[08:17.04]  complex, right? It's got to go and and
+[08:19.24]  understand the context of what we've
+[08:20.72]  been talking about here. It's going to
+[08:22.80]  make a fourth slide. It's going to
+[08:24.28]  generate an image.
+[08:26.16]  Um you know, it it comes up with the
+[08:28.48]  prompt that needs to be done. In this
+[08:31.28]  case, it said a powerful visualization
+[08:32.92]  of AI agent network. It's a glowing
+[08:34.88]  node. It kind of took some, you know,
+[08:36.48]  direction. It had an aesthetic. If I was
+[08:39.08]  very specific with how I wanted it to
+[08:40.96]  look, it would just listen to me, right?
+[08:43.08]  Like and and and and try to generate
+[08:44.72]  that.
+[08:45.72]  And um
+[08:47.04]  you know, the idea here is like cool.
+[08:49.56]  Like a lot of this you can kind of do
+[08:51.76]  with Claude
+[08:53.40]  and ChatGPT.
+[08:55.32]  You could do some of the research.
+[08:56.72]  There's maybe web search. Okay, now
+[08:58.96]  we're connecting it to services. And
+[09:00.56]  that's kind of step one of of of an area
+[09:03.88]  that it can kind of operate. Um okay.
+[09:06.96]  Like it can manipulate these things. It
+[09:09.00]  can do it. Um it can connect to image or
+[09:12.72]  video generation things. It has Python.
+[09:15.36]  So, you it'll get a little bit more
+[09:16.44]  advanced if I push it a bit more.
+[09:18.72]  Um so, it did kind of create an image in
+[09:20.20]  here. You can see a file was created.
+[09:22.64]  Uh it has its own file system. So, you
+[09:24.52]  don't have to be on a computer
+[09:25.76]  somewhere. It generated this image. You
+[09:28.24]  know, style-wise, don't love it. But I
+[09:30.00]  could tell it,
+[09:31.28]  hey, I don't love this style. Like go do
+[09:32.80]  something else. Um and you know, we're
+[09:35.24]  going to see it create the fourth slide
+[09:37.80]  here.
+[09:38.92]  And then kind of kind of go from there.
+[09:40.96]  And
+[09:42.04]  you know,
+[09:43.16]  you can see it's actually writing Python
+[09:45.04]  right now. So, again, we're not
+[09:47.04]  engineering, but this thing is. It wrote
+[09:49.20]  some code to, you know, take these files
+[09:51.92]  and upload them to Google Slides.
+[09:54.32]  There's, you know, an engineer somewhere
+[09:56.32]  that would be writing this integration
+[09:57.76]  for you or you'd be connecting some
+[09:59.64]  no-code service.
+[10:01.32]  Just live, it'll kind of figure out how
+[10:02.92]  to do it all and and take care of it and
+[10:05.28]  you know, in a second here we'll see
+[10:06.48]  this kind of image pop up here.
+[10:08.60]  Yeah, a little failure here and it'll
+[10:09.92]  correct itself. It'll say, "Hey, let me
+[10:11.64]  try something else. Uh let me try a
+[10:13.32]  different way to do it."
+[10:14.88]  Um and you know, this is part of that AI
+[10:16.36]  system is like AI
+[10:18.16]  is not perfect, but could you just tell
+[10:20.44]  it to keep trying until it works? It it
+[10:24.72]  it kind of can and it will keep trying
+[10:28.04]  to do things over and over again until
+[10:30.84]  it finds a pathway to accomplish it or
+[10:32.48]  at some point it's like, "Hey, I have no
+[10:33.96]  way to do it." And you know, okay, so
+[10:36.28]  like we're we're trying for a third
+[10:37.88]  time.
+[10:39.08]  Let's see if it gets it and
+[10:41.12]  uh I think we'll see an image pop up
+[10:42.68]  hopefully here.
+[10:46.32]  Yeah, it says created a file.
+[10:49.04]  Something's something's happening.
+[10:51.00]  Stuff's happening, right? It's it's got
+[10:52.80]  some files in here. Right, it wrote it
+[10:55.32]  wrote this like Python script.
+[10:57.88]  Uh like again, this is code that Nebula
+[11:00.60]  wrote for itself. Like, "Hey, this is
+[11:02.80]  the file that we have.
+[11:04.80]  Here's the presentation and I want to
+[11:06.68]  kind of create this image and go do it."
+[11:09.52]  This is code that somebody would write
+[11:11.28]  16 by 9 roughly this, you know, kind of
+[11:14.56]  all of the requirements that you would
+[11:15.72]  have. Uh it's complaining about the size
+[11:17.92]  of it. Um cool, we have an image here.
+[11:21.64]  It wasn't the image that's there, but it
+[11:23.40]  tried. I could push it more by the way.
+[11:25.60]  I could just tell it to kind of keep
+[11:26.68]  doing it and that'll be there.
+[11:28.92]  I think some of the power happens
+[11:31.60]  work is not synchronous like this,
+[11:33.60]  right? And so, one of the biggest things
+[11:34.92]  I wanted was it you know, I can get a
+[11:37.20]  lot of this in other places. I could
+[11:38.64]  write scripts, but now I'm like, "Okay,
+[11:41.20]  cool. Now let's add a new slide every
+[11:45.68]  day with more information about Nebula.
+[11:50.52]  We want to get this presentation to 15
+[11:54.24]  page 15 slides
+[11:56.60]  uh in a week.
+[11:59.04]  And so, it has scheduling, right? It
+[12:01.92]  will actually go and say, "Cool, what is
+[12:04.24]  the thing that you were doing here? What
+[12:05.80]  was the context? Let me pull all of that
+[12:08.24]  out of this piece of work. Let me create
+[12:11.36]  a recipe for that so that we could
+[12:13.48]  reproduce this dish over and over again.
+[12:16.00]  And then
+[12:17.52]  write the you know, the trigger, you
+[12:20.00]  know, it wrote a cron. If you're
+[12:21.32]  technical, you know what a cron is. And
+[12:23.32]  you know, we can go over here to the
+[12:24.96]  triggers and see there's a daily Nebula
+[12:27.60]  presentation update. And so, every day
+[12:30.56]  it's going to add a new slide. Goals to
+[12:32.96]  reach 15 slides in a week by adding two
+[12:34.68]  slides a day from current slide four.
+[12:36.84]  And here's the execution steps.
+[12:39.40]  And it'll just run every day at 9:00
+[12:41.24]  a.m. And now this is hands-off. And um
+[12:46.84]  you know, maybe a slide deck is not the
+[12:48.64]  approach for it, but for example, if we
+[12:50.80]  wanted to make a blog, that's what I
+[12:52.68]  would do. I would you know, go and edit
+[12:54.76]  the style and and I can actually show
+[12:56.48]  you that that workflow as well.
+[12:59.48]  Um where we you know, we can kind of
+[13:01.08]  quickly create a blog and every single
+[13:03.52]  day it can kind of produce those
+[13:05.44]  results. I can dictate where to get the
+[13:08.56]  information from, search it from
+[13:09.88]  Twitter, search it from the internet.
+[13:11.84]  Here's how you think about the analysis.
+[13:14.00]  Here's the visual style of the images of
+[13:15.92]  the blog and how we want the text to
+[13:18.08]  work. Uh and then you connect your
+[13:19.92]  post-talk to it and every day you tell
+[13:21.36]  it to optimize itself and and and we can
+[13:23.48]  do that now, you know.
+[13:25.84]  I mean, that's sort of the dream for a
+[13:27.40]  lot of people, I think, is
+[13:30.36]  they create a business in a box, you
+[13:34.12]  know, maybe it's content, but
+[13:36.76]  you know, it could be like an email
+[13:38.12]  newsletter every single day, you know,
+[13:40.56]  you
+[13:41.80]  search on X, you search on you know,
+[13:45.28]  press releases, Google News, things like
+[13:46.96]  that. You have a style guide around how
+[13:49.72]  you write. Uh and then every single day
+[13:52.36]  you you know, you're pushing out content
+[13:55.20]  and you sell you sell, you know, make
+[13:57.92]  money via affiliate ads or maybe you
+[14:00.48]  sell ads and stuff like that, but I
+[14:02.04]  think
+[14:03.16]  this is you know, an interesting like
+[14:05.44]  when I see this, I'm that's kind of like
+[14:07.00]  where my head goes.
+[14:08.92]  100% and and that was actually one of my
+[14:11.12]  starting points is like, "Okay, why do I
+[14:13.84]  want to create these scripts and agents
+[14:15.96]  that are {quote} intelligent?" Um well,
+[14:21.56]  I want to automate my work. Well, if I
+[14:24.36]  just extrapolate that to the end, it's
+[14:26.16]  like I want an automated company
+[14:27.84]  probably. Like I want to create some
+[14:28.92]  direction or guidance
+[14:30.80]  and I want to work with intelligent
+[14:32.20]  systems to kind of go do that. Um you
+[14:35.20]  know, and um
+[14:37.44]  like
+[14:38.72]  great.
+[14:40.28]  And so, I started thinking. I'm like,
+[14:41.80]  "Okay, what's like the smallest company
+[14:44.68]  project that I could do?" And uh a a
+[14:47.84]  blog is kind of one of the things I
+[14:49.32]  landed on. It you know, I can
+[14:52.44]  think of a you know, content direction.
+[14:54.76]  I can think of source of information. I
+[14:57.16]  can come up with visual style, editing
+[14:59.04]  style, as well as you know, the ability
+[15:01.92]  to connect to my system. In this case,
+[15:04.12]  I'm using Ghost. And then, you know,
+[15:06.88]  from there I'm telling it to run every
+[15:10.16]  day and then what am I going to do? I'm
+[15:11.52]  going to look at the search console and
+[15:13.16]  post-talk and optimize keywords and just
+[15:16.28]  do that every day, right? And and and I
+[15:18.56]  think that was one of the North Stars
+[15:20.00]  that I actually started from was, "Can I
+[15:21.92]  just have it run a company, a project
+[15:24.20]  just on its own like autonomy?" And I do
+[15:26.64]  have a blog that I used as my kind of
+[15:28.44]  like testing grounds for building this.
+[15:30.64]  And it it's now 15 days in a row been
+[15:32.64]  doing three posts a day. I think the
+[15:34.52]  blog has gotten to about 100 hits a day.
+[15:37.60]  I I I just set it up. Like I I spent
+[15:41.00]  less than 30 minutes on the setup and
+[15:42.72]  then, you know, kind of from there
+[15:46.04]  it was good, you know, uh
+[15:48.68]  to go. And and if I spent more time, it
+[15:51.12]  would do that.
+[15:52.84]  Someone in the comment section, I can
+[15:54.12]  just hear it so we can just address it.
+[15:55.96]  Someone in the comment section is going
+[15:57.08]  to be like,
+[15:58.20]  "Well, if everyone's going and creating
+[16:00.12]  these
+[16:01.28]  business in a box blogs and stuff like
+[16:03.72]  that, you know,
+[16:06.32]  is there still opportunity or is it
+[16:08.84]  going to get commoditized or what does
+[16:11.44]  the world look like in you know, a few
+[16:13.52]  years when anyone has the power of
+[16:15.56]  something like Nebula?"
+[16:17.28]  For sure. Um
+[16:18.92]  I think as we get more advanced,
+[16:21.52]  we there are things that are no longer
+[16:23.76]  that interesting.
+[16:25.36]  Um you know, there was a time period
+[16:26.88]  where just having a website was a
+[16:29.16]  competitive advantage, right? Like
+[16:30.60]  having a dot com. I'm a little you know,
+[16:32.08]  I got the gray hairs, you know, dot com
+[16:33.64]  era. Like literally being a dot com was
+[16:36.44]  an advantage cuz you created the
+[16:38.40]  accessibility. And then, yeah, like
+[16:40.72]  being a content creator or a blog you
+[16:43.24]  know, blogger was an advantage maybe 5
+[16:45.76]  or 10 years ago. And yes, what's going
+[16:48.00]  to happen is you know,
+[16:50.24]  everybody gets access to these things.
+[16:53.28]  Now we flood it. Well, the basic version
+[16:56.52]  of it is not going to be useful. I'm
+[16:57.80]  going to have to apply the same logic to
+[17:01.36]  kind of the next level of things. My
+[17:02.80]  content is going to have to be superior.
+[17:05.08]  My deliveries going to have to be
+[17:07.04]  superior. Maybe I'm going video. Maybe
+[17:09.84]  I'm going more advanced, you know, and
+[17:12.16]  I'm going to build agents to help me do
+[17:13.72]  that. I can make a blog critic agent
+[17:15.92]  that just loops against. Every time it
+[17:17.48]  produces a post, I can say, "Hey, ask
+[17:19.68]  the critic.
+[17:20.84]  Make sure this is
+[17:23.16]  a nine [clears throat] out of 10 on
+[17:24.00]  these metrics. And here's how we
+[17:25.48]  determine that and then test your thing
+[17:27.60]  and learn the next week." And so, I
+[17:29.60]  think we're just going to go more and
+[17:30.64]  more advanced um
+[17:32.68]  you know, in terms of you know, what
+[17:35.44]  what's kind of there. And so, I
+[17:36.96]  connected to this like Nebula demo Ghost
+[17:39.08]  blog. Here's my Ghost admin side. I told
+[17:41.68]  it to make a test draft post. And it
+[17:45.00]  it's there. It it's connected to the
+[17:46.36]  system.
+[17:47.52]  Now it's up to me to create creativity,
+[17:49.88]  you know, like, "Okay, cool. This blog
+[17:53.64]  will be VR-themed
+[17:56.20]  specifically
+[17:57.84]  about new apps and games coming out in
+[18:00.84]  VR. Can you do the research from the top
+[18:05.76]  VR
+[18:07.04]  influencers
+[18:09.40]  to find the latest and greatest
+[18:12.80]  games? Produce
+[18:15.44]  a post and an image." So again, if I get
+[18:19.16]  much more advanced with the instruction
+[18:21.04]  like this is not advanced. This I'm just
+[18:22.40]  typing this very quickly. If I got like
+[18:24.60]  very fine-grained. I gave it a paragraph
+[18:26.40]  of stuff that I care about. If I'm kind
+[18:28.76]  of going to go and and do a lot more,
+[18:31.44]  then it will be better. And you can kind
+[18:34.72]  of see it starts working in parallel
+[18:36.24]  like multiple things start happening. It
+[18:38.56]  created these to-dos of things to do. It
+[18:42.64]  now has like five different searches
+[18:44.44]  going on at the same time. It's you
+[18:47.40]  know, dumping all the info. For now,
+[18:48.84]  again, this is UX that I think will
+[18:50.92]  improve over time and on what it should
+[18:52.56]  look like. Right now, it's just verbose.
+[18:55.04]  Great, I can see all of the work that's
+[18:56.56]  happening.
+[18:57.84]  But this is like real work, right? Like
+[18:59.52]  and I can give it significant
+[19:01.44]  specificity
+[19:03.12]  around my focus area. You know, I could
+[19:05.68]  tell it to design my blog differently. I
+[19:07.84]  could tell it, "Hey, I don't want it to
+[19:09.48]  be looking like a blog. I want to
+[19:11.48]  integrate it into my website and connect
+[19:13.32]  my GitHub." And it it can take these
+[19:15.56]  parts and connect them together. I think
+[19:17.72]  that's the power that I wanted is this
+[19:19.40]  system that can live in the cloud. It
+[19:21.56]  has the code execution, the file
+[19:22.92]  systems, all these things that I have in
+[19:24.28]  my cloud to
+[19:26.56]  but it just lives on the internet. I
+[19:27.92]  start connecting it to different
+[19:29.04]  services. I get more advanced with the
+[19:31.24]  system. It starts managing multiple
+[19:33.48]  schedules, multiple things, multiple
+[19:36.12]  optimizations.
+[19:37.96]  Um I I I feel like we're still like I
+[19:40.24]  said at the start, this is an age of
+[19:41.52]  abundance and so, we're not taking
+[19:43.68]  advantage of the abundance yet. I do
+[19:46.04]  believe that once we get and we're
+[19:48.20]  taking advantage of it, maybe it'll be
+[19:49.52]  too much and we'll go back into the age
+[19:51.88]  of you know, organic or the age of, you
+[19:54.40]  know, taste. Um so I don't think that,
+[19:57.12]  you know, this never ends, this cycle of
+[19:58.92]  like a lot of stuff go to the kind of
+[20:01.80]  top more popular things or, you know,
+[20:03.76]  crafted better. Maybe we go more
+[20:05.76]  human-centric. Tons of stuff this helps
+[20:08.36]  me get done. I can manage my calendar.
+[20:10.92]  It has an email address so it could just
+[20:12.48]  reach out to people on my behalf and and
+[20:14.92]  and manage conversations. So if I'm
+[20:16.88]  doing lead gen, if I'm doing a trip, and
+[20:19.00]  I want to reach out to hotel or
+[20:20.20]  something like that. Uh we just wanted
+[20:22.08]  to give it the right package of things
+[20:24.32]  that you normally hire somebody to do
+[20:26.12]  and
+[20:26.96]  then I think you're just figuring out
+[20:28.52]  like
+[20:29.44]  how do I get it to do more? And
+[20:32.00]  you know, I think if you spent $1,000 a
+[20:34.72]  month and had uh AI team,
+[20:38.68]  it sounds a lot, but I do believe you'll
+[20:40.44]  produce five or 10,000 dollars of value
+[20:42.52]  for yourself if you just point it in the
+[20:44.20]  right direction. So that part we've
+[20:46.08]  always had to do that. We have to point
+[20:47.56]  the thing at the right direction. And
+[20:50.56]  I think that creativity will never get
+[20:52.20]  lost. That's where humans come in.
+[20:54.20]  All the other mundane stuff in between,
+[20:56.32]  like this research, writing the post,
+[20:58.68]  generating these images, going and
+[21:00.68]  scheduling all of these things, like
+[21:03.08]  I think that's what kind of goes away
+[21:04.76]  and and that's already capable now and I
+[21:06.36]  think
+[21:07.32]  that's what that's why I ended up
+[21:08.16]  building this. It was like I was like,
+[21:09.16]  "Dude, I got this power in my hands. How
+[21:10.52]  does everyone get that?"
+[21:12.88]  So
+[21:14.20]  I agree with you. I think uh it's really
+[21:16.24]  about you know, how do you point it to
+[21:18.64]  the right thing? And that is often the
+[21:20.80]  hard part.
+[21:22.08]  Uh
+[21:23.92]  one-person business, I think a blog, a
+[21:26.44]  newsletter, those are there's a huge
+[21:29.24]  opportunity now for the next 12 to 18
+[21:31.00]  months. What else comes top of mind if
+[21:34.36]  you're trying to build a one-person
+[21:36.76]  business in the age of AI? Like what do
+[21:39.20]  you
+[21:40.60]  how what are you brainstorming and how
+[21:42.56]  are you how are you thinking about that?
+[21:44.48]  Yeah, so in in a company, you know, a
+[21:47.20]  blog might be
+[21:49.36]  less than 2%
+[21:51.40]  of the entire company of work, right?
+[21:53.20]  Like it might be like, "Hey, we have a
+[21:54.68]  blog, but we have 99 other things
+[21:57.48]  that we do." And I think about all of
+[22:00.24]  those workflows, like where
+[22:02.64]  where is
+[22:04.40]  the like creativity needed? This is
+[22:08.04]  where I got to put the most talented
+[22:09.96]  humans in charge of and arm them with
+[22:12.36]  tools.
+[22:13.44]  And then what are the things that they
+[22:14.92]  produce? And so you know, the reason I
+[22:16.88]  wanted it to make this feel like Slack
+[22:19.28]  was cool, I got my blog. You know, now
+[22:22.24]  I'm going to be like, you know,
+[22:25.08]  making my lead gen channel and starting
+[22:27.64]  to kick off like lead gen work, right?
+[22:30.08]  Like go and research these, do it every
+[22:32.36]  day, go craft emails, go send things.
+[22:35.48]  And then I'm going to be like, "Well, we
+[22:37.40]  have our product analytics work that we
+[22:40.80]  need to do. So I'm going to connect my
+[22:42.12]  PostHog, right? I'm going to be like,
+[22:43.84]  you know, connect to my PostHog. Um you
+[22:48.80]  know, create an agent that can
+[22:51.92]  you know, analyze
+[22:54.08]  my
+[22:55.68]  you know, web traffic.
+[22:58.40]  I'm you know, like I'm just like, how do
+[23:01.20]  I just spawn up many of these agents?
+[23:03.48]  And in in different channels, like here
+[23:05.32]  it says, "Cool, like let me connect your
+[23:07.44]  PostHog." But but that's what I'm
+[23:09.24]  thinking about. Like I I think a lot of
+[23:11.24]  work is not
+[23:13.08]  uh it it does get more complicated,
+[23:15.80]  right? Um you know, and uh it does
+[23:19.84]  become a thing where it's like there's
+[23:22.24]  many many more things to do.
+[23:24.32]  But I I think a lot of them do come down
+[23:26.76]  to directive and workflow.
+[23:29.92]  Um you know, the whole no-code movement
+[23:32.92]  I was super fascinated with. I was
+[23:34.28]  always the engineer that I'm working
+[23:36.32]  with every team in the organization,
+[23:37.76]  marketing, business, sales, whatever,
+[23:40.40]  to like help them get the power of what
+[23:43.40]  engineering had. It was a lot of work.
+[23:45.16]  It was hard to commit resources and and
+[23:47.12]  do these things. No-code and SaaS kind
+[23:49.44]  of came out and and you know, really
+[23:52.60]  unlocked that and we and we saw that.
+[23:54.92]  And and I just think that the next thing
+[23:56.72]  with AI is is that it will
+[24:00.48]  elevate that to every corner of the
+[24:02.84]  company.
+[24:04.08]  I I just feel like it's it's kind of
+[24:05.76]  getting to the stage where, you know,
+[24:08.80]  there's no longer a limit here. It's
+[24:10.64]  just like what what work do we want to
+[24:12.44]  put them through, you know, like you
+[24:14.64]  know, kind of like like like that that's
+[24:17.84]  the experience that that I'm thinking
+[24:19.44]  about. So you know, I got my blog. It
+[24:22.36]  it's coming up with all these things.
+[24:24.24]  The reviews are actually while we were
+[24:25.76]  talking and doing something else, the
+[24:27.16]  reviews should be in here. Um you know,
+[24:29.76]  it made an image. It came up with
+[24:32.68]  something. We didn't give it any
+[24:33.88]  direction. We can definitely increase
+[24:37.96]  the, you know, editorial quality here by
+[24:40.84]  just being much more fine-grained with
+[24:42.72]  our directive.
+[24:44.84]  It actually went and did research, you
+[24:46.92]  know, for me. It it produced this. I
+[24:49.32]  could just be like, "Hey, go publish
+[24:50.52]  this, right? Like
+[24:52.52]  you know, looks good. Let's publish.
+[24:55.24]  Make three posts a day."
+[24:58.04]  Now our blog worker's going.
+[25:00.28]  We're going to go work on the analytics
+[25:01.56]  worker.
+[25:02.76]  This agent's going to have stuff. You'll
+[25:04.64]  you'll see different agents show up in
+[25:05.96]  the chat here. There's an agent creator.
+[25:08.00]  It's just going and making this thing.
+[25:09.64]  Now it's building custom stuff. Like So
+[25:11.52]  I think like I I see a lot of like
+[25:13.48]  inside of companies how work happens,
+[25:16.36]  what what's going on. What does it take
+[25:18.56]  to go do this? I mean, times have you
+[25:20.68]  asked somebody on your team, Greg, to
+[25:22.24]  like go connect and add analytics to our
+[25:24.64]  website or you know, then then it's
+[25:27.08]  like, "Cool, go make the dashboards."
+[25:28.40]  And then go do this and
+[25:30.08]  at the end, what are you trying to do?
+[25:31.12]  It's like, "I want to see how many
+[25:31.96]  people came, how many new people, what's
+[25:33.52]  the retention?"
+[25:34.80]  It's like, what if we can get to that
+[25:36.32]  level? What what's the unlock of our
+[25:37.76]  creativity?
+[25:39.28]  I also think there's
+[25:41.40]  you know, when you think of agencies and
+[25:43.08]  service businesses, like a lot of the
+[25:45.08]  time they're delivering
+[25:47.88]  this service, right? So there's tons of
+[25:50.84]  content agencies that churn out blog
+[25:53.36]  posts for a monthly fee. There's tons of
+[25:55.76]  analytics agencies that'll set up your
+[25:58.56]  PostHog and give you reports and do
+[26:00.80]  research. So I also think that
+[26:03.64]  you know, for for people listening,
+[26:07.04]  there's an opportunity to use something
+[26:09.04]  like this and basically do client work,
+[26:12.60]  but the service is instead of having
+[26:16.08]  literal humans do it, you you you have I
+[26:18.64]  mean, you're going to have some humans
+[26:19.88]  manage it, but a lot less humans, maybe
+[26:23.32]  a 20th of the amount of humans, and then
+[26:25.64]  you have these agents go and actually
+[26:27.52]  create the
+[26:29.76]  the the service, right? 100% Like I
+[26:32.96]  mean, you know, a lot of people are
+[26:34.40]  like, "Oh, well, humans will be gone
+[26:35.56]  then, right?" It's like,
+[26:37.00]  "No, like I think we still decide what
+[26:38.92]  we want to do, right? Like some point
+[26:41.16]  somebody has to direct things." And I I
+[26:44.32]  think people like, you know, notice I
+[26:46.88]  know the word PostHog. There's a lot of
+[26:48.72]  people out there that might not know
+[26:50.16]  that. So okay,
+[26:51.84]  like
+[26:53.00]  like somebody's still going to like have
+[26:55.08]  some knowledge and direction and
+[26:57.16]  directive.
+[26:58.64]  And I don't think AI replaces how we go
+[27:01.44]  and get our results. I think what it
+[27:03.64]  does is it allows us to take a a
+[27:08.32]  direction we want to go and progress us
+[27:11.00]  towards that faster. Like we are
+[27:14.20]  creating the circumstance of where we
+[27:15.88]  want to be, you know? Um and you know,
+[27:18.52]  while while the analytics agent was
+[27:20.00]  being set up, it published the post. I
+[27:22.48]  think uh we should be able to see it
+[27:25.40]  at this URL now.
+[27:28.92]  Right? We got one. It still looks like a
+[27:30.36]  demo blog. Cool, we're live. And uh it
+[27:34.00]  now set up the trigger. So it's going to
+[27:36.80]  do it three times a day, right? It's
+[27:39.24]  going to run in an hour. It says it's
+[27:40.84]  going to run at 6:00 a.m., 2:00 p.m.,
+[27:42.40]  and 10:00 p.m.
+[27:44.20]  And it has an agent attached to it that
+[27:46.08]  it knows all the knowledge of
+[27:47.24]  everything.
+[27:49.60]  You know, like I'll move on to the next
+[27:50.92]  thing and you know, I'll come back and
+[27:52.64]  add more to it and you know, I I I think
+[27:55.04]  the experience of continually upgrading
+[27:57.72]  and iterating my processes to get more
+[28:00.64]  advanced. I'm showing you very like this
+[28:02.56]  is like day one of your company, you
+[28:03.96]  might set up the blog, you might set up
+[28:05.84]  the content thing, or, you know, your
+[28:07.96]  internal kind of like workflows. But
+[28:10.16]  then your company gets more advanced and
+[28:11.28]  you're going to add more things and
+[28:12.96]  you'll end up with like 20 or 30
+[28:14.24]  channels. Like you know, a lot of the
+[28:15.76]  stuff to even build Nebula, like I'm
+[28:17.76]  using Nebula itself. The change logs
+[28:20.04]  that get produced, the images that are
+[28:22.28]  kind of in different places, like styles
+[28:25.04]  like that we want to kind of focus on
+[28:27.04]  when we're trying landing page tests and
+[28:28.64]  the analysis. Like every day there's
+[28:30.16]  like an experiment analysis agent
+[28:33.28]  that, you know, tried three different
+[28:35.44]  variants for our landing page
+[28:37.88]  and just told us the results. And then
+[28:40.20]  we tell it like, "Hey, these attempts
+[28:41.56]  suck. Do something better. Go like this.
+[28:44.08]  These sites are great over here. Go look
+[28:45.76]  at these sites and research those." And
+[28:48.00]  then try that. And then the next day is
+[28:50.00]  very very different. Um and and and so
+[28:53.56]  I just found that like a lot of time
+[28:55.36]  gets spent in creating the workflow.
+[28:57.20]  Like I love n8n, don't get me wrong. I
+[28:59.24]  have many self-hosted instances of that
+[29:01.04]  over the years. I like tools like
+[29:02.96]  Zapier. They're very instrumental in,
+[29:05.88]  you know, a lot of work being much
+[29:07.36]  easier. It was still pretty tedious to
+[29:09.56]  do. I kind of, you know, I just landed
+[29:11.24]  on can I just tell it? Can I just tell
+[29:12.92]  it what I want? Cuz that's what I want
+[29:14.64]  to get to. And I just scratched my own
+[29:16.68]  itch here and
+[29:18.04]  you know, wanted to you know, wanted to
+[29:20.68]  go from there.
+[29:22.16]  Well, I love it. I think it's
+[29:24.04]  it's a glimpse of where how work is
+[29:26.28]  going to be worked on and it's a glimpse
+[29:28.84]  of like the opportunities in these
+[29:30.88]  one-person businesses and and then
+[29:33.12]  optimizing your internal company. So I
+[29:34.68]  think this is really cool. Um
+[29:37.68]  dude, that's why I had you on. I knew
+[29:38.96]  you're always tinkering and and thanks
+[29:41.00]  for this Is this Is this live yet?
+[29:43.96]  This is live. You can just go go
+[29:46.92]  um and use it.
+[29:48.60]  Uh,
+[29:49.16]  I have not hooked up billing yet. I
+[29:50.40]  won't until the cost are significant.
+[29:54.36]  And so go use it. Go burn tokens. Uh,
+[29:57.36]  tell me what's wrong. I'm happy like I I
+[30:00.24]  want I want all the feedback cuz
+[30:02.52]  you know, like I scratch my own itch. I
+[30:04.08]  I know what I can do with this. The
+[30:06.16]  question is I can I take the UX that's
+[30:08.20]  useful for me
+[30:09.80]  and get it to other people and it is
+[30:11.04]  that that's fun. This you know,
+[30:13.12]  there's a lot of people that tinker and
+[30:14.20]  then that that's kind of the hobby and
+[30:15.60]  then I always tinker till I
+[30:18.04]  I want like I want a lot of people to
+[30:19.52]  use the thing that I tinker with. That
+[30:20.80]  would be the net end outcome is a lot of
+[30:24.24]  people find this exceptionally useful.
+[30:26.52]  And I think you're going to find bugs.
+[30:28.20]  You're going to find things you don't
+[30:29.12]  find useful. Just tell me. I'm I'm happy
+[30:30.88]  to iterate here.
+[30:32.64]  I appreciate you for a con. Thanks for
+[30:34.64]  for sharing the product, your thinking,
+[30:37.68]  firing people up about some of these uh,
+[30:40.36]  ideas they can do and um,
+[30:42.80]  I hope you come back on and share more
+[30:45.32]  more of projects that you're working on
+[30:46.76]  and tinkering on in the future.
+[30:48.64]  Anytime. Let me know. I mean, uh, you
+[30:50.68]  know, I'm I'm always down to share, you
+[30:52.12]  know, happy to share what I'm what I'm
+[30:53.36]  up to in the evenings.
+[30:54.84]  You're the best. All right, thanks, man.
+[30:57.00]  >> Bye.

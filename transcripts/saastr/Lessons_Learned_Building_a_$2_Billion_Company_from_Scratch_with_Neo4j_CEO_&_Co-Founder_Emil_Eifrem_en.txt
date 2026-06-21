@@ -1,0 +1,1069 @@
+Title     : Lessons Learned Building a $2 Billion Company from Scratch with Neo4j CEO & Co-Founder Emil Eifrem
+Video ID  : 6vay3Ny3o0M
+URL       : https://www.youtube.com/watch?v=6vay3Ny3o0M
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1060
+Saved at  : 2026-06-20 23:26:28
+------------------------------------------------------------
+
+[00:04.88]  so my name is emil aphram and um as kate
+[00:07.52]  then mentioned i'm the ceo of neo4j
+[00:10.00]  which as you'll soon learn is an
+[00:12.08]  infrastructure company uh and in this
+[00:15.12]  presentation i'm going to discuss a few
+[00:17.68]  things that we've learned in building
+[00:19.52]  this company from scratch
+[00:22.16]  to where it is today
+[00:25.36]  so
+[00:26.56]  before we get into the meat of the
+[00:28.56]  conversation just a few words about
+[00:30.48]  neo4j so you understand where i'm coming
+[00:32.96]  from uh in for the rest of the uh of the
+[00:36.32]  presentation
+[00:37.52]  so um you know neo4j is a graph database
+[00:39.92]  company we in fact were the leader in
+[00:42.32]  the in the category of graph databases
+[00:45.04]  millions of downloads and hundreds of
+[00:48.16]  global 2000 customers
+[00:50.72]  and there's only just a handful of new
+[00:53.36]  database companies right now what used
+[00:55.20]  to be called nosql for those of you who
+[00:57.04]  are around uh back when that term was
+[01:00.08]  was coined who have reached escape
+[01:02.48]  velocity and neo4js is one of them
+[01:05.84]  and in fact we just raised a 325 million
+[01:09.12]  dollar series f which actually is the
+[01:11.60]  largest investment in database history
+[01:14.72]  and folks like gartner are saying things
+[01:17.44]  like graph techniques will form the
+[01:20.00]  foundation of modern data and analytics
+[01:23.84]  so we are truly going for it
+[01:26.80]  we're headquartered in silicon valley uh
+[01:29.04]  with close to 600 people worldwide
+[01:32.56]  including in europe and latin america
+[01:35.92]  and in asia
+[01:39.52]  so um just to set the stage here um i
+[01:43.36]  want to talk a little bit about kind of
+[01:44.88]  the backdrop of what's going on in our
+[01:46.72]  industry for the for the past decade
+[01:49.52]  um
+[01:50.64]  about 10 years ago if you if you go back
+[01:53.28]  to uh what the way things looked back
+[01:55.84]  then you had this insane chaos happening
+[01:58.96]  in infrastructure not just in databases
+[02:01.44]  i of course have lived in a database
+[02:03.68]  world and maybe it was most obvious in
+[02:05.84]  in databases this is five years before
+[02:08.32]  cloudera went public and you know the
+[02:10.40]  world was figuring out whether larry
+[02:12.32]  ellison would again just turn some of
+[02:14.88]  these companies into features or whether
+[02:17.68]  they could actually sustain
+[02:19.28]  independently
+[02:20.80]  and most offerings they were deployed
+[02:23.12]  on-prem uh you know for a combination of
+[02:25.60]  reasons security concerns probably buyer
+[02:28.48]  immaturity and you know lack of enabling
+[02:31.28]  technologies like kubernetes um and so
+[02:34.16]  as a result you had this massive market
+[02:36.40]  fragmentation
+[02:38.00]  tons of distributions of the same open
+[02:40.16]  source code venture capital funding is
+[02:42.96]  was just pouring into this new wave of
+[02:45.12]  startups and then traditional you know
+[02:47.92]  massive companies you know all the way
+[02:50.00]  from the ibm's to the accentures of the
+[02:52.48]  world trying to figure out you know
+[02:54.48]  their play so to speak
+[02:57.04]  and the market adoption and the value
+[03:00.00]  was heavily enterprise biased you know
+[03:03.84]  mom and pop shops you know wouldn't put
+[03:06.24]  in hadoop you know they
+[03:08.24]  they couldn't right so the people who
+[03:10.72]  could adopt either they had the
+[03:12.72]  organizational sophistication to deal
+[03:15.20]  with them you know themselves internally
+[03:17.92]  or they had the budgets to pay a vendor
+[03:20.32]  to do it for them or possibly both
+[03:25.52]  fast forward to today a decade later and
+[03:28.64]  there's still plenty of innovation
+[03:30.32]  happening but it's far less fragmented
+[03:33.36]  you know the market appears to have
+[03:34.80]  coalesced around just a handful like
+[03:37.28]  actually less than that three four
+[03:38.56]  database models in the in the database
+[03:40.40]  world that you know more likely have a
+[03:43.52]  significant long-term role to play and
+[03:46.48]  there's new entrants that pop up fairly
+[03:48.64]  regularly
+[03:49.92]  but there's no longer a whole market
+[03:52.40]  churning through this tidal wave of
+[03:54.72]  partially big technologies that are
+[03:56.40]  looking for some
+[03:57.92]  you know some semblance of competitive
+[03:59.52]  advantage
+[04:00.72]  um so new projects are shifting to the
+[04:03.60]  cloud more and more every passing day
+[04:06.48]  most workloads are born and raised in
+[04:09.52]  the cloud there's even workloads that
+[04:11.28]  are shifting from the on-prem world into
+[04:14.24]  the cloud and thanks to this you know
+[04:17.20]  the cloud but also things like
+[04:18.72]  consumption based or pay as you go
+[04:20.72]  pricing and just general technology
+[04:22.72]  evolution
+[04:24.16]  right now we're at this very very
+[04:26.16]  interesting time where any company can
+[04:28.16]  get access to nearly any technology
+[04:31.04]  through the cloud
+[04:33.12]  so this is hopefully well trodden known
+[04:35.68]  you know that's that's not used to
+[04:37.12]  anyone listening into to this
+[04:38.88]  presentation but it's an important
+[04:40.40]  backdrop to explain where we are
+[04:42.80]  so what we're seeing today then is this
+[04:46.08]  you know this generation of
+[04:47.92]  infrastructure companies that are
+[04:49.84]  thriving you know with their customers
+[04:51.76]  and with their communities and for that
+[04:53.68]  matter with their investors as a result
+[04:56.16]  of all of that you know they started as
+[04:58.56]  open source infrastructure companies
+[05:00.40]  right
+[05:01.20]  but later on they got funding and became
+[05:04.64]  basically viable commercial open source
+[05:07.68]  startups
+[05:08.96]  and then over the last couple of years
+[05:11.52]  maybe you know two to three years
+[05:14.64]  they become these public companies oops
+[05:18.48]  these public companies and if you add
+[05:20.48]  them all up together
+[05:22.08]  the market value is just massive it's
+[05:24.56]  between 50 to 100 billion dollars right
+[05:27.04]  just out of these generation of
+[05:28.80]  infrastructure startups
+[05:30.64]  and so we're living our own journey like
+[05:32.72]  this here at neo4j informed by by their
+[05:35.68]  success of course and there are some
+[05:37.44]  patterns emerging and i'd love to share
+[05:39.92]  them i'm going to punctuate them
+[05:42.08]  as it were
+[05:43.44]  with some specific examples both from
+[05:45.76]  them and from our own journey here at
+[05:48.08]  neo4j which hopefully will make it make
+[05:50.64]  it stick
+[05:54.40]  so
+[05:56.88]  what we've seen emerging here is these
+[05:59.60]  four stages of a virtuous cycle and
+[06:02.64]  throughout that evolution that i talked
+[06:04.80]  before from open source project all the
+[06:06.96]  way through to a public independent
+[06:09.28]  company you see this virtuous cycle of
+[06:11.84]  growth that just grows and changes as
+[06:14.00]  marketing companies emerge it starts
+[06:16.00]  with awareness so that people can get
+[06:18.32]  excited about you and find you
+[06:20.48]  activation then is that moment when they
+[06:22.64]  decide to do something with your product
+[06:24.88]  hopefully useful or interesting
+[06:27.44]  and then you learn from your users and
+[06:29.44]  from the usage
+[06:31.36]  and you evolve your product
+[06:33.12]  and those services to fit their needs
+[06:35.36]  and their success then drives awareness
+[06:37.28]  directly indirectly and draws in the
+[06:39.84]  next wave of users and this is a generic
+[06:42.48]  cycle but let's spend some time talking
+[06:45.36]  about what this looked like
+[06:47.12]  for us
+[06:48.72]  in the early day you know we had a lot
+[06:50.80]  of boots on the ground you know we met
+[06:53.20]  developers you know where they lived you
+[06:55.60]  know on third-party forums
+[06:57.84]  um they we didn't have enough
+[07:00.40]  gravity to draw them into where we where
+[07:03.20]  we lived on neo4j.com or neo4j.org
+[07:06.72]  but if you start getting enough traction
+[07:08.72]  then you know journalists will start to
+[07:10.40]  pay attention and usually through a
+[07:12.88]  developer's lens
+[07:14.72]  and then community programs they end up
+[07:16.88]  being how you keep your community
+[07:19.20]  continuously engaged so for example we
+[07:22.08]  started a program that we call graphs
+[07:24.40]  for good which was to encourage really
+[07:27.92]  world impacting but non-commercial use
+[07:31.92]  that didn't make us any money directly
+[07:34.48]  but generated a lot of awareness right
+[07:36.80]  so these are things like the panama
+[07:38.80]  papers which some of you might remember
+[07:41.28]  it's five years ago but it was the
+[07:43.12]  biggest news story of all of 2016 where
+[07:46.40]  a lot of politicians like the prime
+[07:48.40]  minister of iceland and the prime
+[07:50.40]  minister of pakistan were found out to
+[07:53.04]  have bank
+[07:54.64]  bank accounts in offshore tax havens and
+[07:57.68]  several of them ended up losing their
+[07:59.12]  jobs because of that that was all backed
+[08:01.20]  by our technology we didn't make a
+[08:03.12]  single dime but it generated a lot of
+[08:04.96]  awareness and buzz and goodwill and this
+[08:08.16]  grass for good program also span other
+[08:11.04]  things that we
+[08:12.48]  that weren't directly revenue generating
+[08:14.40]  the generated buzz like the mission to
+[08:16.80]  mars where nasa is on the record saying
+[08:19.36]  that thanks to neo4j humanity will get
+[08:22.24]  to mars two years earlier uh so those
+[08:25.12]  were the kind of things that that were
+[08:26.56]  very successful for us in in in in the
+[08:29.20]  early days and eventually if you're
+[08:31.28]  really super successful the major
+[08:33.68]  industry analysts the the gardeners and
+[08:35.76]  the foresters of the world you know will
+[08:38.24]  they will
+[08:39.28]  eventually take up what what developers
+[08:42.32]  have known for years right and they're
+[08:44.48]  those going to start talking about it
+[08:46.32]  and obviously the business press will
+[08:47.68]  cover you if you have interesting enough
+[08:49.60]  uh investors
+[08:52.08]  and then activation that's trying to
+[08:54.08]  make it as frictionless as possible for
+[08:56.40]  users to do something useful with your
+[08:58.48]  product as we as we alluded to before
+[09:01.28]  and for us the threshold or the bar to
+[09:04.40]  success in the early days was really
+[09:06.48]  really high right you know and that's
+[09:08.64]  true for most community edition open
+[09:10.96]  source infrastructure products the
+[09:13.60]  tooling is really immature the
+[09:15.76]  documentation is light at best um but if
+[09:19.68]  there's not
+[09:20.80]  enough there there
+[09:23.36]  then those users will activate and use
+[09:25.52]  especially if they have a deep enough
+[09:28.00]  pain and antibiotics level of pain
+[09:31.36]  and at neo4j we collaborated with other
+[09:34.16]  projects to get embedded in things like
+[09:36.56]  linux distros so that we could find
+[09:38.80]  developers even before they ended up
+[09:41.04]  finding us
+[09:42.32]  and as our tooling then matured we saw a
+[09:44.96]  chance to improve that activation
+[09:47.12]  experience and make a step function
+[09:49.20]  improvement to adoptability by doing
+[09:51.44]  things like building a desktop edition
+[09:55.04]  and over time of course not shockingly
+[09:58.08]  to a conference you know uh you know
+[10:00.32]  audience like at faster you know our
+[10:02.64]  community started shifting to the cloud
+[10:04.72]  so then it obviously made sense to give
+[10:06.64]  them cloud ready images and earlier this
+[10:09.52]  year we launched another step function
+[10:12.24]  improvement with a perpetual cloud three
+[10:14.88]  tier which um we're going to talk more
+[10:17.60]  about a little bit later
+[10:20.24]  and then on some level you know being
+[10:22.24]  born as an open source project is i
+[10:25.12]  think the first kind of bold act of user
+[10:27.60]  centricity and from there we wanted to
+[10:30.56]  make it a lot easier for developers to
+[10:32.72]  exploit our engine so we ended up
+[10:34.80]  building out this
+[10:36.32]  this query language called cipher which
+[10:38.80]  on some level is the equivalent of sql
+[10:41.28]  for graph databases so it's a
+[10:42.88]  declarative query language for graph
+[10:45.20]  databases
+[10:46.88]  and
+[10:47.68]  we after
+[10:48.96]  after a while realized there's an
+[10:50.48]  opportunity to expand the entire space
+[10:52.88]  not just our product by making it easier
+[10:56.08]  not just for neo4j developers but for
+[10:58.96]  all graph developers
+[11:00.48]  to use graph databases so we actually
+[11:02.32]  took that language when we open sourced
+[11:04.24]  it under the open source uh sorry under
+[11:06.64]  the open cipher umbrella and this is a
+[11:09.44]  little bit of a counter-intuitive move
+[11:11.60]  because it's taking one of the crown
+[11:13.20]  jewels of your product and giving it
+[11:15.20]  away to your competition including the
+[11:17.68]  cloud platforms and we'll talk a lot
+[11:19.84]  more about the cloud platforms firms
+[11:21.76]  later but over time that openness that
+[11:25.60]  more inclusive strategy ends up being
+[11:28.64]  the the tide the rising tide that that
+[11:31.52]  lifts all boats and it ended up creating
+[11:33.84]  this critical mass of both user and
+[11:37.12]  vendor adoption which is important in
+[11:39.68]  category creation to not just have user
+[11:42.08]  adoption but vendor adoption and that
+[11:44.16]  means your competitors using things like
+[11:47.04]  your query language
+[11:48.80]  that that is what ultimately broke the
+[11:51.84]  stranglehold that sql has had on
+[11:54.32]  database query languages for three four
+[11:57.04]  decades
+[11:58.08]  so in databases there's really only been
+[12:00.00]  one officially sanctioned blessed query
+[12:03.04]  language called sql until a couple of
+[12:05.84]  years ago when the iso
+[12:08.32]  ended up blessing gql uh as the formal
+[12:11.92]  query language uh for graph databases
+[12:14.72]  and those thanks to uh a lot of work on
+[12:17.68]  that openness uh strategy from folks
+[12:20.96]  like neo4j but all of our competitors as
+[12:23.20]  well or at least many of them
+[12:26.56]  in some ways i'm thinking of
+[12:28.80]  um
+[12:29.60]  open source as the original product led
+[12:32.96]  growth right or kind of the og plg as it
+[12:36.88]  as it were apologies for the
+[12:39.44]  for the dad joke um but that's kind of
+[12:41.84]  how i think about it and we've always
+[12:44.00]  had this motion that makes it easy for
+[12:46.88]  enthusiastic users to share with others
+[12:49.44]  and create growth groups and that
+[12:51.28]  started in the form of an open source
+[12:53.60]  distribution which ended up growing the
+[12:56.00]  developer community as people shared
+[12:58.88]  their success and talked about how and
+[13:01.44]  when and why they were successful with
+[13:04.48]  our product but we also attracted
+[13:07.12]  entirely new user communities using open
+[13:10.08]  source so for example releasing a graph
+[13:12.32]  algo package that attracted data
+[13:14.48]  scientists and then over time we've
+[13:17.20]  invested in the ecosystem to create more
+[13:19.04]  on-ramps onto neo4j from other platforms
+[13:21.92]  like spark or confluence you know
+[13:24.96]  patrick kafka
+[13:26.96]  and now most recently a cloud service
+[13:30.16]  which i mentioned before with a
+[13:31.92]  perpetual free tier which offers the
+[13:34.40]  most friction
+[13:35.60]  frictionless way for our users to share
+[13:38.80]  their success with their peers
+[13:41.52]  so
+[13:43.04]  those four pillars is the is the broader
+[13:45.44]  framework through which i look at these
+[13:47.36]  modern infrastructure companies and i
+[13:50.08]  want to move on from that to a couple of
+[13:52.16]  more specific points
+[13:55.60]  so the first one is is absolutely
+[13:58.56]  central like distribution is just so so
+[14:01.20]  so important and you want to make sure
+[14:03.12]  that you exist in all four factors that
+[14:06.40]  are relevant uh to your users you want
+[14:08.64]  to make sure that you are everywhere um
+[14:11.36]  and that's that's on-prem uh you know of
+[14:14.32]  course right that you know we all at
+[14:16.72]  saster believe that the
+[14:18.48]  we live in this cloudy world and of
+[14:20.00]  course that's that's both the present
+[14:21.84]  and the future but there's still a huge
+[14:24.08]  amount of adoption in on-prem data
+[14:26.80]  centers right and it's embedded and
+[14:29.20]  distributed you know the cloud of course
+[14:31.20]  is all the rage but
+[14:32.80]  you know on some level i feel like
+[14:34.16]  enterprises run on multi-cloud data
+[14:36.16]  centers but developers still run on
+[14:38.80]  laptops
+[14:40.00]  so the fact that that as
+[14:42.48]  an infrastructure company you have this
+[14:44.80]  on-prem offering is actually a strength
+[14:48.16]  right not just for production
+[14:49.68]  deployments where you can offer hybrid
+[14:52.40]  form factors um but also for developers
+[14:55.68]  running uh on their local laptops
+[14:59.36]  and then you will spend a little bit
+[15:01.20]  more time on this later the cloud
+[15:02.80]  marketplaces of course always deserve a
+[15:05.76]  special call out in terms of reducing
+[15:07.84]  friction to accessing
+[15:09.52]  your product
+[15:12.64]  so that's the first one and the second
+[15:14.32]  of all you know a free peer is a lot
+[15:17.76]  more valuable than a free trial right
+[15:19.84]  and
+[15:20.48]  there's a lot of debate about this and
+[15:22.48]  every business is special but for me
+[15:24.48]  personally i come out very much in favor
+[15:26.88]  of a free tier and if you look at
+[15:29.44]  some of the successful uh some of the
+[15:31.68]  patterns from successful modern
+[15:33.12]  infrastructure companies they end up
+[15:35.12]  gravitating much more towards free tier
+[15:37.92]  than a free trial a free trial is
+[15:40.88]  valuable it's going to give you leads
+[15:42.88]  right which i mean we all know how
+[15:44.80]  important that is but a free tier will
+[15:47.44]  generate users and if that free tier is
+[15:50.24]  good not too underpowered right it's
+[15:53.44]  going to generate not just users but
+[15:55.12]  advocates people who will promote your
+[15:57.28]  business so we will evangelize your your
+[15:59.60]  product
+[16:00.64]  and most free trials don't deliver a ton
+[16:03.84]  of user value and
+[16:05.76]  all i mean built into the to the entire
+[16:08.24]  notion is that that value is transient
+[16:11.28]  by definition that's why it's a free
+[16:12.88]  trial it's it's time bound
+[16:15.28]  um
+[16:16.24]  but you can learn things about your
+[16:18.24]  product you know from that free trial
+[16:20.32]  but really only about the trial
+[16:21.92]  experience right and that early usage
+[16:24.48]  and that's that's valuable um you can
+[16:27.20]  optimize your trial so you know that's
+[16:29.44]  that's important but it's not going to
+[16:31.44]  do much to make the product that your
+[16:33.28]  customers use every year every day every
+[16:36.32]  year inside out right
+[16:38.48]  it's not going to make that one
+[16:39.60]  materially better
+[16:41.04]  and with a free tier if you instrument
+[16:43.04]  it well then you can learn a lot more
+[16:45.44]  about the user journey and the usage
+[16:47.44]  life cycle through expansion and even
+[16:50.32]  through deprecation retirement or
+[16:52.88]  basically
+[16:54.24]  and those product learnings are going to
+[16:56.56]  circle back and cycle back into your
+[16:58.48]  product to bring value to your entire
+[17:00.24]  commercial customer base even though
+[17:02.24]  those are perpetual free forever
+[17:05.12]  users
+[17:06.96]  so i come up very much in favor of
+[17:10.72]  having a free tier
+[17:13.44]  and then the third tip this one is
+[17:16.88]  probably more broadly applicable but
+[17:19.36]  most stark in open source now open
+[17:22.08]  source is a very common pattern uh in
+[17:25.20]  modern infrastructure companies i don't
+[17:27.36]  think applies to everyone but i think
+[17:29.36]  for sure most
+[17:31.28]  successful modern infrastructure
+[17:32.88]  companies uh are open sourced by
+[17:35.76]  by birth and what's really interesting
+[17:37.84]  around cloud services and the platform
+[17:40.32]  shift to the cloud is that it provides
+[17:43.28]  just a fresh opportunity to resegment
+[17:45.68]  the free versus paid and redraw that
+[17:48.56]  monetization line and that's a really
+[17:51.48]  consequential early decision it's a
+[17:54.72]  capital b capital d like big decision uh
+[17:57.92]  in open source infrastructure what
+[18:00.40]  features are you going to float into the
+[18:02.24]  free let's call it the community edition
+[18:04.40]  um
+[18:05.20]  just uh for
+[18:06.64]  for for ease of use of wording um versus
+[18:10.40]  in the let's call it the enterprise or
+[18:12.08]  the or the commercial
+[18:14.00]  edition
+[18:14.96]  and that's typically a decision that you
+[18:17.36]  make early on in the first few years
+[18:19.60]  maybe somewhere between 0 to 10 million
+[18:21.68]  of ar the first few years of your
+[18:24.24]  company and sometimes you get that
+[18:26.16]  decision right and sometimes you get it
+[18:29.04]  wrong and even if it was right for you
+[18:31.20]  at let's call it 0 to 10 million it may
+[18:33.84]  not be right for you at 100 million
+[18:36.56]  and what's really interesting as you
+[18:38.32]  shift to the cloud then all of a sudden
+[18:40.48]  you have this opportunity to redraw that
+[18:42.48]  monetization line
+[18:44.16]  and that's i think a very interesting
+[18:46.56]  opportunity and then in addition to that
+[18:49.92]  it
+[18:50.88]  the the cloud form factor also have a
+[18:53.92]  lot more knobs and levers to build right
+[18:56.80]  in on-prem open source it's basically
+[18:59.36]  just features and possibly choice of
+[19:01.92]  open source license those are really the
+[19:04.24]  two dimensions that you have to to to
+[19:06.96]  play with
+[19:08.32]  on the cloud all of a sudden you have
+[19:11.20]  memory consumption you have memory
+[19:13.68]  footprint on disk
+[19:15.44]  cpu consumption you have
+[19:18.16]  higher level metrics that relate to the
+[19:20.64]  abstraction in your domain so like kafka
+[19:23.04]  streams or elastic search documents or
+[19:26.48]  in the neo4j sense like nodes and
+[19:28.16]  relationships you can you can price and
+[19:30.48]  meter uh based on on that
+[19:33.60]  and so not only does it give you a
+[19:35.52]  chance to redraw you also have more
+[19:37.52]  knobs and levers available and if you
+[19:39.84]  match that up with the first two tips
+[19:42.00]  that be everywhere and the and the three
+[19:44.48]  tier all of a sudden it's much more safe
+[19:47.28]  for you to drive users onto that free
+[19:49.52]  tier because there's multiple fences
+[19:51.92]  that that can gate where the the the
+[19:54.40]  users should flip over into into a
+[19:57.36]  commercial edition and you can start
+[19:59.36]  monetize the entire spectrum of your
+[20:02.00]  user base rather than just open source
+[20:04.88]  they pay zero and then big enterprises
+[20:08.16]  on your commercial edition they pay
+[20:09.92]  millions of dollars
+[20:13.52]  so that's the third one um and then the
+[20:16.40]  fourth one you know it's around the
+[20:18.56]  cloud platforms you know keep your
+[20:20.32]  friends close and the cloud platforms uh
+[20:22.72]  closer
+[20:23.84]  and what's very very stark as you study
+[20:27.52]  these
+[20:28.32]  escape velocity
+[20:30.08]  infrastructure companies in the cloud is
+[20:32.40]  that the cloud partnerships can be this
+[20:34.88]  exceptionally successful driver of
+[20:38.64]  business for these companies
+[20:40.80]  um and you know i'm not gonna
+[20:43.84]  um
+[20:44.72]  go on the record as guessing what
+[20:46.24]  incremental growth it's giving them but
+[20:48.00]  it's a substantial part of their
+[20:50.00]  business so if there's any chance that
+[20:52.24]  you can get like as deep of a
+[20:54.48]  marketplace integration as possible just
+[20:57.60]  just go ahead and do it uh right away
+[21:00.16]  but not only that you know obviously if
+[21:02.32]  you can get the cloud platform field
+[21:05.52]  engaged and there's been a few of these
+[21:08.00]  um uh cloud platform park
+[21:11.12]  partnerships that have offered really
+[21:13.36]  really beneficial terms to both both the
+[21:15.60]  field uh for the cloud platforms as fail
+[21:18.08]  as well as for the for the partner that
+[21:20.56]  can really end up driving a lot of
+[21:22.56]  success uh for you in the cloud so
+[21:25.36]  that's kind of the the one hand of the
+[21:27.68]  equation the other hand of the equation
+[21:29.44]  of course is that they can also be your
+[21:31.44]  fiercest competitors and especially if
+[21:33.92]  you're open source right and there's
+[21:35.92]  this there's big fork in the road for
+[21:38.32]  for open source infrastructure companies
+[21:40.16]  which i think is dissimilar from you
+[21:42.72]  know for example application uh vendors
+[21:45.92]  um which is
+[21:47.76]  when one of the cloud platforms enter
+[21:50.16]  into your category
+[21:51.84]  can they do that with your own product
+[21:54.56]  and that's that big fork in the road
+[21:56.64]  especially if you're doing category
+[21:58.48]  creation
+[21:59.68]  if a cloud platform enters into your
+[22:02.00]  space that's good news right when you do
+[22:04.32]  category creation your high order bit is
+[22:06.64]  getting the word out about the entire
+[22:08.32]  category right and so you know how all
+[22:10.96]  startup ceos end up saying whenever a
+[22:13.20]  big company enters your space oh this is
+[22:14.96]  great validation well in category
+[22:17.44]  creation that's very much true right
+[22:20.32]  because the high order bit again is
+[22:22.16]  getting
+[22:23.20]  awareness about the concept or the
+[22:25.92]  category out there
+[22:28.32]  but if they enter into your space with
+[22:30.72]  your own product
+[22:32.32]  you are living in a in a very painful
+[22:35.68]  world right and because they have the
+[22:38.00]  massive benefits of of scale and then if
+[22:40.80]  they compete against you with your own
+[22:42.48]  product that's very very challenging and
+[22:45.84]  there are really only two ways that you
+[22:47.68]  can protect against that and they're not
+[22:49.92]  mutually exclusive but unfortunately
+[22:51.76]  some of them end up being hard to
+[22:54.48]  retrofit onto your business um kind of
+[22:57.20]  in in after you've started the company
+[23:00.24]  but the first one is of course licensing
+[23:02.16]  right there are certain open source
+[23:03.68]  licensing
+[23:04.96]  licenses where the cloud platforms can
+[23:07.36]  just adopt you wholesaling they don't
+[23:09.52]  have to strike a deal with you or
+[23:10.80]  anything like that more permissive
+[23:12.48]  licenses then there are certain that
+[23:13.84]  protect you against that so that's
+[23:15.52]  that's the first one and then the second
+[23:17.52]  one is
+[23:18.72]  differentiation between your feature
+[23:20.80]  differentiation i should say
+[23:22.88]  between your uh your
+[23:25.60]  free and open edition and your paid
+[23:27.84]  edition
+[23:28.72]  those things combined if you play it
+[23:31.04]  right can provide a good moat against
+[23:34.16]  the cloud platforms and force them to
+[23:36.24]  enter into your category
+[23:38.24]  with um
+[23:39.92]  an either in-house product that they
+[23:41.52]  built themselves or or another one of
+[23:43.60]  your competitors products
+[23:45.52]  and that's a completely different
+[23:47.52]  universe to live in compared to if they
+[23:50.08]  compete against you with your own
+[23:52.00]  product
+[23:54.48]  so that's kind of the the fourth one
+[23:56.16]  we're coming up to uh the the full
+[23:59.28]  bottom of the hour and um i wanted to
+[24:02.24]  provide just not too much content since
+[24:04.88]  it's early on in the
+[24:06.80]  in in the morning for at least for those
+[24:08.40]  of you in california but a couple of key
+[24:11.28]  takeaways from this there's never been a
+[24:14.64]  better time to build infrastructure
+[24:16.72]  companies than now there are certain
+[24:18.56]  product categories that are very very
+[24:20.72]  sticky where the half-life is very long
+[24:23.76]  when there's really only one chance for
+[24:26.40]  you
+[24:27.44]  to build a company in that space and
+[24:30.32]  that's when you have a platform shift
+[24:32.00]  and obviously we live in this really
+[24:33.76]  magical world where there's two
+[24:35.36]  concurrent platform shifts going on one
+[24:38.00]  is what this conference is dedicated to
+[24:39.84]  which is the shift to the cloud and then
+[24:41.68]  the second one of course is the shift of
+[24:43.44]  mobile and both of those platform shifts
+[24:46.56]  leave white space in the market for
+[24:48.72]  infrastructure which sometimes is harder
+[24:51.12]  to get to market than more vertical
+[24:53.52]  application centric companies
+[24:56.08]  and then there's a there's a clear
+[24:57.68]  blueprint that has emerged if you look
+[25:00.08]  at successful uh infrastructure
+[25:01.84]  companies uh today you should never just
+[25:04.16]  blindly follow it or imitate it of
+[25:05.84]  course but it's important to understand
+[25:08.00]  it and and be inspired by it and there's
+[25:10.64]  a couple of key ingredients in that open
+[25:12.88]  source is a is a big part of it um
+[25:15.60]  initially monitor monetizing the
+[25:17.92]  enterprise exclusively um both with an
+[25:20.80]  on-prem form factor but of course
+[25:22.56]  increasingly with a with a cloud cloud
+[25:25.36]  product that monetize the the global
+[25:27.52]  2000 in a
+[25:29.36]  in a very enterprise sales centric way
+[25:32.48]  and then you can launch this self-serve
+[25:35.52]  first or plg cloud offering uh through
+[25:39.44]  which you can monetize the entire
+[25:41.36]  spectrum when you've created awareness
+[25:43.52]  around your your infrastructure uh
+[25:45.84]  products that awareness is typically not
+[25:48.00]  limited to a specific size of company
+[25:51.76]  but it's limited to whenever you have
+[25:53.84]  data problems whenever wherever you are
+[25:55.76]  developers or something generic is that
+[25:57.68]  right and you will never ever in the
+[26:00.00]  early days be able to hire sales people
+[26:01.76]  to target any vertical
+[26:03.68]  any size of company any geo
+[26:06.48]  but with a self-serve cloud product you
+[26:08.64]  can you can address that and so you add
+[26:10.96]  all of that together and it's a magical
+[26:13.92]  time uh to be building infrastructure
+[26:16.32]  companies
+[26:18.40]  so that's all i had as a queue up uh
+[26:21.52]  would love to
+[26:23.68]  hear any type of uh questions uh from
+[26:27.68]  the audience
+[26:29.12]  yeah thank you so much for kicking off
+[26:32.80]  saster annual so well
+[26:35.28]  i do see a few questions coming in
+[26:38.56]  and feel free my audience to keep
+[26:41.36]  dropping them in as well as we go
+[26:44.56]  but we will start our first question
+[26:47.36]  you've been laying the groundwork for
+[26:49.12]  the mainstream of graphs for some time
+[26:52.96]  what were the early signs that the
+[26:55.20]  nature of infrastructure companies were
+[26:58.32]  changing
+[26:59.84]  where did your foresight come from
+[27:03.36]  yeah it's right right
+[27:05.44]  probably it's one of those that were
+[27:06.64]  typed up just before the the last slide
+[27:08.88]  that i mentioned i think really the
+[27:10.64]  early sign was the shift to the cloud
+[27:13.20]  right it's back to the notion that
+[27:14.96]  infrastructure companies right it's
+[27:17.12]  sometimes very hard to
+[27:19.52]  build
+[27:20.40]  when you don't have changes in adoption
+[27:23.12]  patterns amongst in particular big
+[27:25.04]  enterprises but really probably
+[27:26.32]  developers everywhere right um and
+[27:29.44]  that happens when you have platform
+[27:31.68]  shifts right when you have shifts from
+[27:34.08]  you know
+[27:35.12]  let's take i obviously know databases
+[27:36.88]  best let's take the database space right
+[27:39.28]  so oracle was built on the shift from
+[27:42.16]  mainframe to client server right that
+[27:44.80]  was a big platform shift and now with
+[27:46.40]  this other big platform shift from
+[27:48.08]  client server maybe to web which is
+[27:50.00]  where mysql has been built but now from
+[27:52.80]  that to the cloud and that opens up this
+[27:55.76]  this this white space where you can
+[27:57.84]  build infrastructure companies yeah
+[28:01.20]  thank you so much for that answer
+[28:03.52]  um again remember to add your questions
+[28:06.08]  to the chat
+[28:07.28]  but moving on to our second question
+[28:10.56]  what advice would you have for a founder
+[28:13.28]  looking to disrupt the market today
+[28:15.68]  and build a category
+[28:20.08]  man uh i guess uh i i'm on the record of
+[28:23.04]  saying that ignore all advice so i'm not
+[28:25.36]  sure if that should be my my meta advice
+[28:28.08]  uh the the one thing though that
+[28:31.12]  whenever i talk to earlier entrepreneurs
+[28:34.08]  and
+[28:34.80]  and founders is that
+[28:37.76]  you end up getting so much advice around
+[28:40.48]  um where you should spend your time you
+[28:42.48]  should do x you should do y you should
+[28:44.72]  do z the only thing that i i think that
+[28:47.52]  you can't do too much of in other words
+[28:49.68]  do as much as you
+[28:51.04]  possibly can
+[28:52.56]  is spending time with customers and when
+[28:54.96]  i say customers i don't necessarily mean
+[28:58.08]  paying like the people the economic
+[29:00.00]  buyer the person writing the check you
+[29:02.08]  should spend time with them too make
+[29:03.52]  sure you get that check collect that
+[29:05.04]  check
+[29:06.00]  but really with the users of your
+[29:07.52]  product and you should know absolutely
+[29:10.16]  everything for your persona for your
+[29:12.16]  user the product like when do they wake
+[29:14.96]  up in the morning would they attend a 7
+[29:17.04]  a.m you know faster
+[29:18.96]  session in their in their time zone
+[29:21.60]  where do they go for information what
+[29:24.88]  magazines websites blogs sub stack what
+[29:28.56]  do they read for their information who
+[29:31.36]  do they hang out with like you should
+[29:32.80]  just know everything about that
+[29:35.52]  about that persona and so so that's i
+[29:38.08]  think the only kind of advice that
+[29:40.24]  transcends
+[29:41.60]  all the tactical kind of day-to-day and
+[29:44.08]  the huge the contextual pieces it is
+[29:47.20]  spend as much time with customers as you
+[29:50.08]  possibly can
+[29:51.44]  i love that customer obsession you can't
+[29:53.92]  go wrong with that
+[29:56.16]  um our next question
+[29:58.64]  what should
+[29:59.72]  isvs be thinking about now if they want
+[30:03.84]  to compete
+[30:05.60]  oh isvs yes that's a that's a blast from
+[30:08.96]  the past independent software vendors by
+[30:11.04]  the way is what it is
+[30:12.72]  um
+[30:14.64]  yeah it i think there's there's a couple
+[30:16.56]  of things most of which i i touched on
+[30:19.52]  uh you know in
+[30:21.36]  uh in in my presentation and since this
+[30:24.08]  is infrastructure frame you know a lot
+[30:26.64]  of it ends up coming out of uh i think
+[30:29.20]  open source right because
+[30:31.44]  if you're not open source today as an
+[30:33.20]  infrastructure company it's very hard to
+[30:35.36]  be choosable right um and so for and so
+[30:39.04]  that's great for user it's typically
+[30:41.12]  great for the for the vendor for the
+[30:43.20]  startup uh as well or for the isv i
+[30:45.52]  guess is how the question was framed
+[30:47.60]  um
+[30:48.40]  but of course it opens up that flank
+[30:51.52]  against the cloud platforms where all of
+[30:53.60]  a sudden they could take your product
+[30:55.04]  and compete with yourself and so that
+[30:56.88]  would be i think the
+[30:58.80]  the
+[31:00.08]  the probably most important part is
+[31:03.52]  choosing a license and a differentiation
+[31:06.80]  between your your uh product editions
+[31:10.16]  um
+[31:11.12]  and when you do that be mindful not just
+[31:13.68]  of the users and how you go to market
+[31:16.08]  and how you monetize but also the
+[31:19.12]  compete you know the competitive vector
+[31:21.52]  uh from the the cloud platforms and i'm
+[31:24.56]  of the in the kind of
+[31:26.88]  let's call it the larry ellison kind of
+[31:29.04]  school of thinking versus the jet phases
+[31:31.20]  school of thinking
+[31:32.40]  right um jeff bezos is famously customer
+[31:35.12]  centric and custom you mentioned
+[31:36.80]  indicating customer obsessed
+[31:38.72]  um whereas larry ellison wakes up every
+[31:41.20]  day wanting to kill the competition
+[31:43.84]  right and i'm very much of the jeff
+[31:46.00]  bezos kind of school there so i i
+[31:48.72]  generally think you should ignore your
+[31:50.32]  competition and you should just focus on
+[31:52.24]  users and build amazing products the one
+[31:55.04]  exception for for infrastructure
+[31:56.72]  companies would be
+[31:58.08]  if you're open source make sure you um
+[32:00.72]  you're mindful of the cloud platform so
+[32:03.04]  they can compete against you with your
+[32:04.48]  own product
+[32:05.60]  yeah jeff bezos i love his quote it's
+[32:08.08]  always day one
+[32:09.92]  exactly yeah one of my favorites
+[32:13.36]  um so our next question is somebody
+[32:16.96]  saying that they loved your comment
+[32:18.56]  about not taking advice were you ever
+[32:21.12]  given any bad advice
+[32:23.44]  or
+[32:24.24]  um
+[32:26.16]  it's
+[32:28.08]  were you ever given any bad advice or
+[32:30.80]  how do you get the confidence to not
+[32:32.56]  take others advice
+[32:35.92]  constantly given bad advice honestly um
+[32:40.08]  you know it's it's fascinating and on
+[32:42.24]  some level like how do you get the
+[32:43.92]  confidence well i i think some of this
+[32:46.88]  my entire presentation was trying to
+[32:48.40]  draw out patterns of success from people
+[32:50.64]  who have gone boldly gone before me
+[32:53.76]  right and i'll give you an example of
+[32:56.16]  that advice i think that was the
+[32:57.36]  question right yeah example of that
+[32:59.12]  advice right yeah and so so bad advice
+[33:01.84]  for us as an infrastructure company was
+[33:04.40]  you have to sell into the line of
+[33:05.84]  business right if you're not solving a
+[33:07.92]  business problem then it's not worth
+[33:10.00]  solving and if there's an infrastructure
+[33:12.16]  company if you just solve problems for
+[33:13.92]  developers or data scientists that's
+[33:15.84]  somehow not as good as solving
+[33:18.72]  problems that are experienced by the
+[33:20.64]  line of business in other words people
+[33:22.00]  who own a pml right and that is clearly
+[33:25.36]  very bad advice when you're in an
+[33:27.28]  infrastructure company you always exist
+[33:30.08]  on the
+[33:31.04]  uh the build path
+[33:33.12]  right in the enterprise ip buy versus
+[33:36.08]  build right if they don't go down the
+[33:38.48]  build path and want to build themselves
+[33:40.72]  with their own project like you don't
+[33:42.56]  have a play like if it's on the bypass
+[33:44.72]  they want to buy an off-the-shelf
+[33:46.56]  solution a turnkey solution and your
+[33:49.52]  only play there is through oem being
+[33:52.56]  with another sas vendor uh right or or
+[33:55.68]  or another company become embedded in
+[33:57.68]  someone who solves that business problem
+[33:59.44]  right
+[34:00.32]  but as an infrastructure your direct
+[34:02.56]  play is always on that build path right
+[34:05.28]  and so trying to market to the line of
+[34:07.84]  business
+[34:08.80]  probably
+[34:10.08]  ninety percent of the advice that i got
+[34:12.32]  was there and a hundred percent from the
+[34:14.00]  people who have an mba
+[34:15.60]  like no offense to the people i'm gonna
+[34:16.96]  call who have an mba
+[34:18.40]  uh right and and so that was that would
+[34:20.80]  end up just being very bad advice and
+[34:22.64]  then i guess the second part if i
+[34:24.40]  remember the
+[34:25.68]  um
+[34:26.56]  the confidence directly was like the
+[34:28.16]  confidence right yeah and i think some
+[34:29.60]  of that comes back to i would say two
+[34:31.44]  things right
+[34:32.48]  deeply understanding the user that's
+[34:34.40]  coming back to that like understanding
+[34:36.00]  the customer understanding right and
+[34:37.84]  seeing what they actually need because
+[34:39.60]  that that ends up being the source of
+[34:41.36]  truth right but then also the patterns
+[34:44.24]  of success right you look at what a com
+[34:47.28]  i mean my three examples
+[34:49.28]  could have been other companies but i
+[34:50.64]  happen to choose confluent elastic
+[34:53.28]  right they all look at much greater
+[34:56.16]  scale than you know you are as an early
+[34:58.40]  stage you know zero to ten million ar
+[35:01.20]  startup which is typically when you
+[35:02.64]  grapple with these things right and you
+[35:04.72]  see that that's how they go to market
+[35:06.48]  right then that ends up being of course
+[35:08.88]  uh you know confidence inspiring as well
+[35:11.28]  yeah no that was a great question um
+[35:14.56]  we have another
+[35:16.40]  um what's the trade-off between
+[35:18.56]  competition and cooperating with public
+[35:21.44]  cloud providers how do you manage this
+[35:25.28]  oh wow
+[35:26.32]  that's such a good question this is
+[35:28.40]  clearly from a practitioner someone
+[35:30.24]  who's living in that because it's
+[35:32.80]  unfortunately i don't think there's a
+[35:35.44]  i've i've certainly not seen a
+[35:38.08]  um like a silver bullet here like a
+[35:40.80]  magical way to do it it is part of why
+[35:43.84]  running a company there's an art and
+[35:45.84]  there's a science right the science is
+[35:48.00]  there's going to be a lot of talks at
+[35:49.76]  disaster about
+[35:51.20]  ltv to cac and like all those metrics
+[35:54.08]  and there's a ton of that
+[35:56.32]  this question is really is in the art
+[35:58.16]  side of things like how do how do you
+[35:59.84]  balance that right and fundamentally as
+[36:02.96]  with so many of these things it comes
+[36:04.56]  comes down to people right like you need
+[36:06.64]  to make sure that you are as competitive
+[36:08.96]  as is needed to to win right in in the
+[36:11.84]  deals when you come up against the the
+[36:14.00]  the cloud platforms but not so much
+[36:17.20]  take such an aggressive stance that you
+[36:19.44]  can't at the same time partner with them
+[36:21.36]  now the really good news is again coming
+[36:24.40]  back to people is that typically this
+[36:26.56]  ends up being multiple groups inside of
+[36:28.48]  the uh the cloud platforms right you
+[36:30.96]  might have a great relationship with a
+[36:32.88]  partnering team or with a marketing team
+[36:35.12]  but then a vicious you know competitive
+[36:37.76]  relationship with with some of the the
+[36:40.16]  product teams right and that's fine
+[36:42.08]  because these are massive massive
+[36:43.92]  organizations but i unfortunately i
+[36:46.48]  can't provide any more uh specific
+[36:49.84]  direction than that but that's it that's
+[36:51.68]  at least some some caller on
+[36:53.76]  no that was a great answer
+[36:56.40]  um
+[36:57.36]  i
+[36:58.80]  oh here another question has the
+[37:01.68]  pandemic hurt or helped you
+[37:04.56]  when it comes yeah
+[37:06.40]  that's a good question um
+[37:08.64]  i want to say this carefully because of
+[37:10.72]  course the the pandemic has been
+[37:13.52]  a tragedy on so many levels right from a
+[37:15.76]  from a human perspective um also for us
+[37:18.88]  internally in terms of our ability to
+[37:21.44]  meet i have a blurry background here
+[37:23.84]  because i'm actually at a hotel at an
+[37:26.00]  off site one of the first
+[37:28.40]  i think it's actually the first offside
+[37:30.00]  we've had since before the pandemic
+[37:32.64]  right for the small team here
+[37:35.28]  which is which is just fantastic and
+[37:37.92]  not doing that for 18 months has of
+[37:39.92]  course hurt us as much as it is has hurt
+[37:42.32]  everyone else right
+[37:44.32]  with that as caveat the pandemic has
+[37:46.96]  been amazing for our business it's
+[37:48.88]  really accelerated in so many ways so
+[37:52.24]  our i'm not talking a whole lot about
+[37:55.12]  kind of the core of what what we do but
+[37:56.96]  as a graph database our job is to figure
+[38:00.08]  out the cause and effect and trace how
+[38:03.36]  information flows from one point to the
+[38:05.36]  other and so you start thinking through
+[38:07.36]  like what covet tracing it is you know
+[38:10.08]  that's all about that's a graph that's a
+[38:12.16]  network graph problem right like
+[38:14.08]  figuring that out so a ton of people
+[38:16.48]  will have kind of countries as well as
+[38:18.40]  companies as well as states and in the
+[38:21.20]  us and things like that
+[38:22.64]  have used neo4j to do contact tracing of
+[38:25.92]  of of covid
+[38:27.60]  um covet also ushered in
+[38:30.40]  an entire new focus on supply chain and
+[38:33.60]  supply chain of course is a massive
+[38:35.68]  graph problem because that's all about
+[38:38.56]  this one vendor produces something that
+[38:40.40]  is shipped to someone else that is
+[38:41.68]  shipped to someone else and all of a
+[38:43.12]  sudden it has to go through this west
+[38:45.04]  canal but this west canal is blocked for
+[38:47.04]  a week if you recall this is i guess
+[38:50.00]  six months ago whenever that was right a
+[38:52.24]  while ago right um and how does that
+[38:54.56]  cascade across your business well in
+[38:56.88]  order to figure that out you have to
+[38:58.32]  graph out your entire supply chain which
+[39:00.48]  is which is this deeply connected data
+[39:02.96]  structure right so that drove a huge
+[39:05.12]  amount of
+[39:06.64]  of usage of graph databases and neo4j so
+[39:10.56]  you know we're surfing on this this
+[39:12.64]  broadly secular shift to to the cloud
+[39:15.60]  which was accelerated by the by the
+[39:17.92]  pandemic but also specifically graph
+[39:20.16]  technology uh was accelerated by it so
+[39:22.56]  it's been um it's been a very positive
+[39:25.68]  thing for us outside of the human
+[39:28.16]  tragedy of course
+[39:29.52]  yes of course
+[39:31.36]  um
+[39:32.40]  but great point there is always some
+[39:34.24]  positive that comes from everything
+[39:36.96]  um our next question has it been hard to
+[39:40.16]  hire cloud developers
+[39:42.80]  oh man
+[39:44.32]  yeah this one is this one is just super
+[39:46.56]  tough like for those i i think we have
+[39:48.64]  mostly
+[39:50.32]  i don't know like disaster when back
+[39:52.32]  when i went face to face disaster uh it
+[39:54.40]  was it was mostly kind of founders and
+[39:57.68]  go-to-market professionals but but maybe
+[40:00.24]  today there's also a lot of
+[40:02.32]  engineers if so know your value because
+[40:05.36]  there's uh there's way fewer of you than
+[40:08.40]  than as vendors as we as we want there
+[40:10.80]  to be uh because it's a very unique uh
+[40:13.12]  skill set and maybe even more so
+[40:15.52]  the people who've successfully done
+[40:18.48]  a hybrid play so going from on-prem
+[40:22.08]  to the cloud while having the on-premise
+[40:25.12]  and existing
+[40:26.72]  important product surface uh that's an
+[40:29.04]  even rarer breed so if anyone
+[40:32.40]  on the call is has that skill set please
+[40:35.20]  drop me a line after the presentation
+[40:37.12]  because i i'd love to talk
+[40:39.20]  i love that um connecting people in all
+[40:41.84]  different types of ways today
+[40:43.76]  all right well we are just about at time
+[40:47.84]  so thank you so much emil i really
+[40:50.16]  appreciate you coming on and for the
+[40:52.40]  great session
+[40:57.14]  [Music]
+[41:13.60]  you

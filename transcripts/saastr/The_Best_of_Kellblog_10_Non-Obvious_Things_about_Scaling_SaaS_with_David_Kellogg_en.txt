@@ -1,0 +1,877 @@
+Title     : The Best of Kellblog: 10 Non-Obvious Things about Scaling SaaS with David Kellogg
+Video ID  : ag1vZlao7UU
+URL       : https://www.youtube.com/watch?v=ag1vZlao7UU
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 868
+Saved at  : 2026-06-21 00:20:05
+------------------------------------------------------------
+
+[00:10.37]  thank you thanks for joining our our
+[00:14.01]  repeat session so we did it at nine
+[00:15.63]  o'clock so I've done it once now so you
+[00:18.24]  get to see the more rehearse version
+[00:20.60]  let's jump in
+[00:22.83]  so I'm Dave I'm CEO of host analytics if
+[00:25.20]  you happen to be in finance and working
+[00:26.64]  planning or budget and give us a call
+[00:28.17]  prior to host I was at Salesforce for a
+[00:30.63]  year ran marklogic for six years from
+[00:33.42]  zero to 80 million and was CMO Business
+[00:35.25]  Objects from 30 million to a billion
+[00:36.92]  quite a nice ride their board wise I'm
+[00:40.08]  on two boards right now elation which is
+[00:41.79]  data catalogues and Luxio which is a
+[00:43.59]  next-generation content management prior
+[00:45.96]  to that I was on the board of granular
+[00:47.07]  and aster data and in my copious spare
+[00:49.11]  time I do write a blog that hopefully
+[00:51.72]  you'll want to see after the
+[00:52.53]  presentation and a lot of the points
+[00:54.54]  certainly not all but a lot of the
+[00:55.89]  points in the slide there there is a
+[00:57.78]  blog post that really drills into the
+[00:59.55]  topic so you know our intent today and
+[01:03.24]  it was the guys it's aster who came up
+[01:04.77]  with the title which I like because I
+[01:06.75]  like the non-obvious and they said hey
+[01:08.91]  cover 10 and non-obvious things about
+[01:10.89]  sailing scaling a SAS company and it was
+[01:13.92]  like well that'll be fun and there's
+[01:15.63]  custard a tweeted like how are we gonna
+[01:17.25]  do that in 30 minutes and the answer is
+[01:20.34]  with great difficulty and with a lot of
+[01:23.73]  speed so my intent for the presentation
+[01:25.95]  that's really kind of tops of waves it's
+[01:27.90]  ten things to hopefully make you think
+[01:29.97]  I'm it's more thought-provoking and then
+[01:31.74]  then you know question answering and
+[01:34.44]  that's really my goal if you walk away
+[01:35.88]  with a few things doing got it didn't
+[01:37.20]  think about it that way before maybe
+[01:38.43]  maybe I'll think differently then at
+[01:40.53]  least I'll be happy with what we've
+[01:42.18]  accomplished today so the first one and
+[01:46.26]  you can accuse me of like whoa isn't
+[01:48.39]  this a presentation on non-obvious
+[01:50.22]  things about SAS companies why are you
+[01:52.56]  saying you should run the company about
+[01:53.88]  air are and the answer is lots of people
+[01:57.00]  seem to think they do run their
+[01:58.32]  companies in the air are but they don't
+[02:00.00]  just last night I met with a very smart
+[02:02.34]  entrepreneur very cool company he wanted
+[02:05.19]  to show me his financials and the first
+[02:07.59]  line was all about a CV that was mixing
+[02:10.32]  new a CV upsell a CV and renewals a CV I
+[02:14.37]  couldn't I couldn't make heads or tails
+[02:16.32]  of it another time people they
+[02:19.92]  the gap revenues and like your SAS
+[02:22.59]  company why is your first slide gap
+[02:24.87]  revenue right so if everybody thinks
+[02:29.10]  they want to be a are our first but but
+[02:31.35]  you only know you are if based on the
+[02:33.87]  answers to these questions one if you
+[02:35.64]  ask somebody how big a deal is to the
+[02:37.08]  answer in air are if they answer in any
+[02:39.09]  other unit your company's not air are
+[02:41.01]  first if I ask the forecast for the
+[02:42.51]  quarter is if you don't answer an AR are
+[02:44.49]  right it's about what I don't say but
+[02:46.11]  just say what's the forecast do you
+[02:47.67]  answer in bookings what do you answer it
+[02:49.53]  if you answer in ARR that's correct
+[02:52.11]  right then your ARR first what's the
+[02:53.79]  first line of the first slide of your
+[02:56.16]  investor deck or board deck and if it
+[02:58.35]  isn't arr then you're not air are first
+[03:01.17]  so lots of people think they do this
+[03:03.60]  it's actually a dangerous form of denial
+[03:05.40]  in my mind but if you want to be air are
+[03:07.86]  first make this the first slide of your
+[03:10.50]  board deck or of your investor deck and
+[03:13.08]  it's not only my opinion I had a couple
+[03:16.41]  years back with Doug Leone top guy at
+[03:17.97]  Sequoia I showed him some financials in
+[03:19.98]  this format and he goes every SAS
+[03:21.99]  company should present their financials
+[03:23.58]  in this format and so that's just me
+[03:26.34]  have a second opinion on it and what
+[03:29.34]  this shows you is what I call leaky
+[03:31.20]  bucket analysis because the SAS company
+[03:33.12]  is a leaky bucket full of air are right
+[03:35.76]  every quarter sales pours more water in
+[03:38.31]  the bucket every quarter customer
+[03:40.20]  success tries to keep water from leaking
+[03:42.18]  out of the bucket right and therefore
+[03:45.33]  you can say we started a period with 100
+[03:47.94]  units of AR AR
+[03:49.02]  we added 50 units we turned away ten
+[03:51.63]  therefore we end up with 140 units right
+[03:54.39]  and I can tell you that the value of
+[03:56.52]  your SAS company is determined by the
+[03:58.68]  water level in the bucket and by how
+[04:00.54]  fast that's growing so when you do this
+[04:03.42]  analysis is very important like you can
+[04:05.10]  see things like people who are say they
+[04:08.22]  they sell two million a new air are but
+[04:10.20]  churn 1/5 say it's a big bucket and
+[04:12.33]  they're having trouble keeping it full
+[04:13.77]  well that company's not worth very much
+[04:15.27]  right because it's not growing the water
+[04:16.89]  level in the bucket it's got a big
+[04:18.06]  bucket but it's not growing so that's
+[04:20.37]  why we have the three growth rates down
+[04:21.63]  below new air are our growth ending air
+[04:24.15]  our growth which really is the single
+[04:26.07]  most important thing for valuing your
+[04:27.96]  company and net new air our growth how
+[04:30.57]  much incremental did you do
+[04:32.42]  so everybody agrees we should be err our
+[04:35.75]  first the question is are you and if you
+[04:38.21]  don't if your default unit isn't err are
+[04:41.06]  and if you don't show your financials
+[04:43.19]  with an immediate focus on the ARR
+[04:45.35]  bucket and what's happening to it I'm
+[04:47.42]  gonna argue you're not here our first
+[04:48.95]  and Lord knows please don't show up with
+[04:51.23]  a gap P&L right these things will hurt
+[04:54.56]  you when you try to raise money right
+[04:56.21]  because the VC wants to know that you
+[04:58.07]  get a RR and you are an AR our first
+[05:00.44]  person as our first point second point
+[05:03.13]  SAS metrics are a lot more complicated
+[05:05.54]  than meets the eye
+[05:06.53]  a lot of us are kind of intellectually
+[05:09.23]  lazy and we want to assume these things
+[05:11.15]  are simple and you can get yourself in
+[05:13.34]  trouble if you don't take time to think
+[05:15.86]  about what goes into these calculations
+[05:17.66]  so VCS are going to be looking at your
+[05:20.48]  company through a lens of these metrics
+[05:22.19]  they're gonna look at LGBTIQ AK they're
+[05:23.99]  gonna look at CAC they're gonna look at
+[05:25.40]  earn and if you don't understand and
+[05:28.73]  kind of have a logical argument for how
+[05:31.16]  you calculate them you could get
+[05:33.05]  yourself in trouble now the purpose of
+[05:35.66]  this presentation isn't to try and do a
+[05:37.79]  two-hour course in subtleties of SAS
+[05:40.16]  metrics but I do want to just point out
+[05:42.17]  a few things that maybe you didn't think
+[05:44.48]  of that will hopefully make you realize
+[05:46.19]  whom I should dig into this that for
+[05:47.48]  example look the ratio seems simple
+[05:50.54]  prior quarter sales and marketing
+[05:52.13]  divided by nu air are in the current
+[05:55.13]  quarter what could be easier well does
+[05:57.26]  that new air are include upsell or not
+[05:58.97]  most people would say yes but some
+[06:00.80]  people may want to make a new business
+[06:02.00]  focus CAC the DIMM is sales and
+[06:04.37]  marketing all of sales and marketing is
+[06:05.93]  just a variable like the sales
+[06:07.22]  commissions of the marketing demand gen
+[06:08.81]  or is it the entire base salary your the
+[06:11.66]  PR team the whole banana for most people
+[06:14.27]  it should be the whole banana right
+[06:15.80]  because the question we're trying to
+[06:17.33]  answer is how much does your company
+[06:19.34]  spend to acquire a dollar of ARR that's
+[06:22.55]  what the CAC ratio is right so typically
+[06:25.07]  it's all sales and marketing costs
+[06:26.36]  divided by all nuaire are in the quarter
+[06:29.57]  so shouldn't include upsell yes but who
+[06:32.30]  does upsell at your company if upsell is
+[06:34.76]  done by sales then wait a minute if you
+[06:37.82]  ask finance where they put the cost of
+[06:39.53]  customer success it's in sales right so
+[06:42.29]  you don't need to pull that out and say
+[06:43.88]  wait a minute my sales team does up
+[06:46.34]  therefore when I make when I do my
+[06:48.98]  ratio I shouldn't include the cost of
+[06:50.90]  renewals because my customer success
+[06:52.46]  team just does renewals in that right or
+[06:54.98]  vice versa if your customer success team
+[06:56.48]  does do a lot of upsell then they send
+[06:59.39]  you're including upsell arr in the
+[07:01.58]  denominator then yes you should include
+[07:03.32]  their cost right in the sales
+[07:05.72]  calculation because most finance
+[07:08.12]  departments will classify customer
+[07:09.41]  success as sales expense the other nasty
+[07:12.29]  thing about sales expense and this is
+[07:13.73]  probably for slightly bigger companies
+[07:15.02]  but commissions get amortized so there
+[07:17.93]  is a question of whether or not you want
+[07:19.61]  to restate this on a cash basis to say
+[07:22.16]  wait a minute if I've got screwed up
+[07:23.87]  comp plans that are over rewarding sales
+[07:25.88]  I'm gonna take those and divide them
+[07:27.74]  over the duration of the contract it's
+[07:29.21]  gonna be very hard for me to see this
+[07:30.53]  with a broken ratio right so if I
+[07:33.44]  reset and do this on a cash basis maybe
+[07:35.27]  I'll see reality more clearly right so
+[07:37.85]  these are just a little kind of neatly
+[07:39.62]  subtleties that make something that
+[07:41.75]  seems so easy difficult LTV to CAC I
+[07:46.88]  mean first LGBT CAC is kind of the
+[07:49.22]  ultimate sass metric it's right what
+[07:51.11]  what you paid for something on the
+[07:52.91]  bottom and on the top what it's worth
+[07:54.83]  right it's kind of the grand balance and
+[07:58.27]  what you paid for it is about the CAC
+[08:01.58]  ratio or how much you pay for dollar var
+[08:03.47]  and on the top you're trying to say what
+[08:05.48]  somebody's lifetime value in terms of
+[08:07.37]  subscription margin right so I I have to
+[08:09.83]  run the service so let's do this on a
+[08:11.21]  gross margin basis subscription gross
+[08:12.65]  margin basis let's invert the CAC rate
+[08:14.87]  to get the lifetime and then divide it
+[08:17.27]  by the CAC ratio and that will get me a
+[08:18.86]  number the bigger that number the more
+[08:21.38]  it's worth relative to what I'm paying
+[08:22.97]  for it it seems like a pretty simple
+[08:24.92]  metric but the first question is which
+[08:27.56]  CAC I just talked to you about five
+[08:29.12]  different you could do so which
+[08:31.01]  CAC ratio to use and can make the same
+[08:32.87]  argument on churn which turn do you use
+[08:34.76]  because there's a lot of different ways
+[08:36.32]  to think about churn as well and Lord
+[08:38.15]  knows what do you do in churn becomes a
+[08:39.65]  negative because the idea behind churn
+[08:44.09]  rates is kind of like you use it as a
+[08:45.92]  discount rate and the net present value
+[08:47.45]  formula right if I have this bucket of
+[08:49.22]  air R and imagine I have no upsell and
+[08:51.65]  every year 10% of it leaks out well it
+[08:54.05]  starts out with a hundred then it's 90
+[08:55.43]  then it's 81 that's 72 right if I'm
+[08:57.74]  kinda
+[08:58.13]  using it as a discount rate on the value
+[09:00.23]  of my annuity well that works really
+[09:02.39]  good except one churn is negative and
+[09:04.76]  then all of a sudden your lifetime value
+[09:06.32]  is infinite and you can go Televi see
+[09:08.99]  that but they're not gonna believe you
+[09:10.46]  right so what do you do and if you
+[09:13.16]  exclude upsell it seems too pessimistic
+[09:14.80]  because it wait a minute we really do do
+[09:17.06]  upsell I really do have negative churn
+[09:19.19]  but it breaks your LGBTIQ act math right
+[09:21.92]  so these are the things you need to
+[09:23.30]  think about here's an even more
+[09:24.83]  interesting case which is most of the
+[09:27.11]  thinking about land and expand in
+[09:28.73]  Silicon Valley is I sell somebody a $50
+[09:31.07]  steak and then I sell them a $10 glass
+[09:32.87]  of wine and if I'm lucky another $10
+[09:34.34]  glass of wine right that I have the big
+[09:36.20]  purchase upfront and I'm getting these
+[09:37.85]  little things in the back end well I met
+[09:40.37]  a guy last night who sells a $10 glass
+[09:42.26]  of wine and then sells a $50 steak that
+[09:44.72]  another $50 state then another $50 steak
+[09:46.58]  right so he has a problem that looks
+[09:49.55]  like this if he spends a hundred units
+[09:51.65]  to get a customer worth 50 on that
+[09:53.33]  initial purchase well it looks like it's
+[09:55.52]  cack ratio is 2.0 which is not good a
+[09:57.41]  lot of VCs will run away if you tell him
+[09:59.27]  you're cactus - no no
+[10:00.80]  or is this CAC point three three because
+[10:03.20]  I can tell you reliably that two
+[10:04.88]  quarters later these guys who I spent a
+[10:07.31]  hundred to get are now worth a hundred
+[10:09.56]  and fifty so what what is my CAC ratio
+[10:12.80]  here and the question is really what do
+[10:15.11]  you mean by acquisition right because in
+[10:17.21]  this guy's case if you can reliably
+[10:19.01]  prove that that patterns going to happen
+[10:21.11]  that I think he should count the sales
+[10:23.51]  and marketing divided by let's just say
+[10:25.10]  the first year customer value right
+[10:27.38]  which is unusual way of looking at it
+[10:29.12]  but if you have a small land big expand
+[10:31.22]  model maybe it's the right way so here's
+[10:35.66]  another example this is just a churn
+[10:37.31]  example my last metrics example to talk
+[10:40.04]  about how things can get confusing but
+[10:42.32]  we'll take a simple case somebody buys
+[10:44.24]  19 units of product day and 10 units to
+[10:46.10]  be six months into it they buy 15 more
+[10:48.89]  units of a they're happy and then the
+[10:51.80]  renewal comes up well what are we were
+[10:54.26]  doing are we renewing what's the
+[10:55.88]  denominator in the renewal rate is it a
+[10:57.95]  hundred or a hundred and fifteen right
+[11:00.35]  now your inner fundraiser wants to say
+[11:02.18]  it's a hundred right because you want to
+[11:04.07]  say hey I renewed 115 plus units off a
+[11:06.35]  hundred right that's what your
+[11:07.40]  fundraising side wants to say your
+[11:09.29]  operational manager sighs this is 115
+[11:11.60]  I'm handing a CSM a customer worth 115
+[11:14.63]  units I want to get 115 more 115 or more
+[11:18.29]  units out of that customer right so
+[11:20.42]  there's your first question what do you
+[11:21.53]  do about kind of off-cycle upsell and
+[11:23.60]  how do you think about that and the
+[11:25.91]  answer is you certainly want to tell the
+[11:27.29]  CSM go renew 115 or more the 15 units of
+[11:31.43]  upsell financed it takes it when it
+[11:33.26]  comes so you kind of thus far into the
+[11:35.60]  discussion of lost credit for it all
+[11:37.46]  right it kind of went away because it
+[11:39.38]  went to offset churn in some other
+[11:40.91]  period but but more subtly on day 365 or
+[11:46.82]  is your company going to count that as
+[11:48.82]  10 units of churn and 20 units of upsell
+[11:52.55]  or simply as 10 units of upsell right
+[11:56.96]  and most sales ops people if you talk to
+[11:58.91]  them about this they look at customers
+[12:01.01]  on a contract basis and they're gonna
+[12:02.42]  say the value of that contract went up
+[12:04.43]  by 10 units so it's 10 units of upsell
+[12:07.07]  so the underlying flows get lost and
+[12:10.49]  most systems don't track it most
+[12:12.23]  companies don't track them so I call a
+[12:13.85]  count level chair and you're looking at
+[12:15.11]  it through an account lands not through
+[12:17.03]  a product lands and what about those 15
+[12:19.94]  units of upsell how do I get credit for
+[12:22.01]  them and the answer is that's why they
+[12:24.02]  made retention rates because retention
+[12:25.97]  rates are cohort based as you say take
+[12:28.70]  all the people who bought in one queue
+[12:30.29]  17 what are they worth now in one queue
+[12:33.20]  18 in aggregate and that's my retention
+[12:36.29]  rate and those are good this is simple
+[12:38.39]  calculation and it actually shows what
+[12:40.31]  happens to a group some customers and
+[12:41.81]  how they expand or shrink over time so
+[12:43.94]  you don't have to worry so much about
+[12:45.05]  the timing issues because you're taking
+[12:46.40]  snapshots so all this stuff this is just
+[12:49.19]  tops of waves
+[12:50.57]  hopefully points out that gosh there's a
+[12:52.25]  lot more going on here then maybe I
+[12:53.99]  think and it's worth drilling into these
+[12:56.21]  things because you're raising money VCS
+[12:59.03]  and private equity guys are they're very
+[13:01.22]  familiar with these metrics and they're
+[13:02.39]  gonna ask those questions and if you
+[13:04.25]  don't have credible answers that are
+[13:06.23]  well thought out you kind of lose a lot
+[13:07.94]  of credibility on the flip side take my
+[13:10.49]  friend who sells the $10 glass of wine
+[13:12.28]  most VCS would kind of run away from him
+[13:14.72]  going well have you spent what's your
+[13:16.04]  money to get just this $10 order but if
+[13:18.17]  he comes in with a good story that says
+[13:19.49]  wait a minute eight out of ten times
+[13:20.99]  they buy 50 been buy 50 then buy 50
+[13:23.42]  again within one year his ratio
+[13:25.79]  to to 0.3 and they're like holy cow
+[13:27.95]  right it goes from unacceptable to
+[13:30.95]  amazing just based on how he was able to
+[13:33.56]  frame it so so this stuff matters and
+[13:35.93]  they do react to the metrics Third Point
+[13:39.88]  public CFOs may not get get SAS metrics
+[13:43.76]  this was fascinating to me and I put it
+[13:46.13]  up here mostly as a bonus because one
+[13:47.78]  day I met with the CFO of a well-known
+[13:50.06]  public SAS company he started asking me
+[13:52.37]  all these questions about CAC and LTV
+[13:54.08]  and renewal rates and I'm sitting there
+[13:56.51]  thinking how can this be this person is
+[13:59.57]  a CFO a public SAS company and he
+[14:01.79]  doesn't understand a lot of these
+[14:02.72]  metrics and then the kind of light went
+[14:05.30]  off and I'm like wait a minute he lives
+[14:06.89]  in the world where investors look
+[14:09.20]  through a veil at the company right they
+[14:11.21]  can't see all the metrics that you show
+[14:12.98]  VCS and private equity guys they look at
+[14:15.47]  the company through a veil so he only
+[14:17.75]  understands these outside-in metrics
+[14:19.61]  like Billings right so Billings is
+[14:21.50]  revenue plus change in deferred revenue
+[14:23.06]  right it's kind of a way to try and hack
+[14:25.07]  bookings right it doesn't necessarily
+[14:28.01]  always work but that's what they're used
+[14:30.32]  to so even though he's the CFO but
+[14:32.51]  virtue of his job he kind of places
+[14:34.07]  himself outside the company and looks in
+[14:36.23]  because that's what all his investors do
+[14:37.94]  and therefore he doesn't actually know
+[14:39.50]  much about all these internal metrics
+[14:42.17]  that the VC world gets to see so first
+[14:45.20]  it was kind of amazing to see it second
+[14:47.87]  I would just say look how this might
+[14:49.49]  apply to you his boards love to hire the
+[14:52.25]  CFO you need three years from now and
+[14:55.19]  that's great as long as that person
+[14:56.30]  could do the job you need done today and
+[14:59.21]  this guy can't this guy would not be a
+[15:00.62]  good CFO at a private company that needs
+[15:02.30]  to raise two more rounds before an IPO
+[15:04.28]  so my advice is don't let your board
+[15:07.07]  push you too far ahead and hire some CFO
+[15:10.79]  who's gonna be wonderful at the IPO when
+[15:13.19]  you're three years from an IPO need to
+[15:14.96]  raise two rounds because you need
+[15:16.10]  somebody who can do the job right now
+[15:17.17]  and it's a fairly common pattern and
+[15:19.85]  this is just one example so number four
+[15:22.49]  multi-year deals make sense in certain
+[15:25.04]  situations this is heretical so I kind
+[15:27.17]  of put the heretical warning on it
+[15:28.70]  because if you say this in polite sass
+[15:31.37]  company you are likely to offend someone
+[15:34.67]  because hardcore SAS purists think it's
+[15:38.12]  all annual multi
+[15:39.74]  your deals are evil you're counting tcv
+[15:42.91]  and that scares me because tcv may or
+[15:45.56]  may not ever be realized are you taking
+[15:47.33]  your air are multiplying by five for a
+[15:49.46]  five-year contract with annual payments
+[15:51.38]  who knows if you're gonna get the money
+[15:53.12]  are you inflating the size of your
+[15:54.62]  company 5x in the process scary scary
+[15:57.11]  scary right that's the thought process
+[15:59.60]  that happens if you talk about
+[16:00.89]  multi-year deals recklessly now the
+[16:04.01]  reality is these contracts are
+[16:06.26]  effectively rolling the dice right if
+[16:07.73]  you've got a 90% churn rate I'm
+[16:10.10]  effectively exposing you to an annual
+[16:12.41]  dice roll where your contract comes up
+[16:14.75]  we roll the dice nine times out of ten
+[16:16.19]  it says renew one time it says not right
+[16:18.65]  that's the way we should think about the
+[16:20.06]  company renewal rate so if I were to
+[16:23.18]  offer you a discount that was less than
+[16:25.22]  that churn rate am I better off
+[16:27.02]  I could expose you to a 10% decay from
+[16:30.23]  the churn rate or I can expose you to a
+[16:31.97]  5% decay from my discount right so my
+[16:35.21]  belief is whenever the discount I offer
+[16:36.86]  you for a multi-year deal is less than
+[16:38.99]  the churn rate that you win and I win
+[16:41.30]  right it's actually a win-win
+[16:43.79]  transaction so my company we offer these
+[16:47.93]  to customers we do it at the very end of
+[16:49.46]  the sales cycle we say you've done a
+[16:50.90]  full evaluation you've chosen host
+[16:52.25]  analytics would you like to save a
+[16:54.74]  little extra money because you seem
+[16:56.27]  pretty sure it's gonna work for you
+[16:57.35]  because you just spent six months
+[16:58.10]  evaluating it if you'd like to do that
+[17:00.26]  we could talk to you about a multi-year
+[17:01.46]  deal and here's the kind of discount we
+[17:02.96]  can do and about half the time people
+[17:05.18]  say great about half the time to say no
+[17:06.53]  thanks and I don't mind because because
+[17:09.56]  if I'm offered the discount the right
+[17:10.73]  level I'm actually fairly neutral like
+[17:12.14]  go ahead I'll put you against I'll put
+[17:14.21]  you against the dice because that's
+[17:16.82]  roughly what the discount I was offering
+[17:18.02]  anyway it's but kind of mathematically
+[17:19.37]  equivalent to me now the deal needs to
+[17:21.89]  be prepaid right very important because
+[17:24.83]  I believe you know if your sales force
+[17:26.90]  and you sign a multi-year deal it's not
+[17:28.49]  prepaid and a customer defaults on you
+[17:30.50]  you're probably going to sue them and
+[17:32.21]  you can collect that money if you're a
+[17:34.46]  $10,000,000 SAS company you're not right
+[17:37.25]  you're not gonna have the money to sue
+[17:38.33]  them so I believe that multi year non
+[17:40.94]  prepaid deals for small SAS companies
+[17:43.07]  are a terrible idea why because they
+[17:45.59]  look a lot like renewals that are done
+[17:47.48]  by Finance not customer success right
+[17:50.42]  because because if it's not a one-year
+[17:51.59]  cycle you're to tell customer success
+[17:53.66]  you'll love this customer make sure
+[17:55.43]  they're ready for you all do all your
+[17:57.05]  normal love process so when that
+[17:58.94]  contract comes up they're ready to renew
+[18:00.62]  if you hand it to finance and say hey
+[18:02.96]  there's a collection do in 365 days
+[18:04.69]  they're not gonna call anybody they're
+[18:06.71]  not gonna be nice they're not gonna
+[18:08.18]  treat it like a renewal they're just
+[18:09.68]  gonna mail an invoice at month 11 if the
+[18:12.62]  customer is unhappy there's not gonna
+[18:13.88]  pay it right and all of a sudden you've
+[18:16.10]  got you've got effectively a renewal
+[18:17.87]  right in finances gonna say it's a
+[18:19.46]  contract you lost the money if the
+[18:21.17]  customers not using the software they're
+[18:22.46]  gonna say pound sand and then where are
+[18:24.17]  you you're nowhere right you gave away a
+[18:26.84]  price lock you gave away a discount and
+[18:29.45]  you got nothing in return
+[18:30.95]  so argument is if you want to play this
+[18:33.20]  game
+[18:33.98]  the deals have to be prepaid multi-year
+[18:36.11]  non prepaid deals to me don't make a lot
+[18:38.99]  of sense for small companies because
+[18:40.64]  your ability to collect those out your
+[18:43.55]  payments is virtually identical whether
+[18:46.46]  or not the contracts in place because if
+[18:48.29]  they're using the software and they're
+[18:49.28]  happy they're gonna pay if they're not
+[18:50.54]  they're not it doesn't matter what the
+[18:51.92]  contract says
+[18:52.67]  so they can make sense in certain
+[18:55.10]  situations now another heretical idea is
+[18:57.89]  that bookings is not a four-letter word
+[19:00.25]  again if you say the word bookings in
+[19:02.36]  polite SAS company you're likely to
+[19:03.83]  offend so we must be careful when we say
+[19:06.41]  the B word but if you define bookings
+[19:09.26]  sensibly right then you can talk about
+[19:11.54]  it and to find sensibly bookings or
+[19:14.81]  things that turn into cash in 90 days
+[19:16.78]  everybody cares about cash so they're
+[19:19.64]  gonna like talking about something that
+[19:20.84]  turns into cash and if as long as you
+[19:24.50]  don't mean tcv bookings which is not
+[19:26.78]  prepaid see prior sermon right if you're
+[19:29.36]  talking about something you're gonna get
+[19:30.68]  collection on soon then people are happy
+[19:33.11]  to talk about these so at our company I
+[19:35.45]  said about half the time somebody will
+[19:37.01]  do a multi-year prepaid deal so we end
+[19:39.23]  up on average with two years prepaid so
+[19:41.81]  if you looked at a build of our
+[19:43.01]  financials I'd say in a period we did a
+[19:44.84]  100 units of ARR we did 200 units of
+[19:47.48]  what we call new subscription bookings
+[19:49.25]  that's prepaid subscription bookings
+[19:50.93]  right our NSBA are our ratios is the
+[19:54.53]  average effective the average prepaid
+[19:56.06]  contract duration right in effect then
+[19:58.52]  we add renewal bookings to new
+[20:00.83]  subscription bookings and then that gets
+[20:03.08]  total subscription bookings then you add
+[20:04.97]  services bookings on top to get total
+[20:06.71]  bookings
+[20:07.37]  and this is a great way to build this
+[20:09.35]  because if you're smart you put the
+[20:11.63]  focus on what I call TSB total
+[20:13.88]  subscription bookings right because if
+[20:15.92]  you care about cash whether it's a
+[20:18.35]  renewal booking or a new booking it's
+[20:20.27]  still gonna generate if you have
+[20:21.71]  subscription gross margins of 80% right
+[20:24.05]  it's gonna generate 80% of that money in
+[20:25.85]  cash for you to go spend right but
+[20:29.12]  that's not true for services bookings as
+[20:30.98]  we'll see in a minute most of you 50km
+[20:33.17]  services yuning's generates a 0kay of
+[20:34.82]  cash right so let's get that out of the
+[20:37.25]  way and let's focus on subscription
+[20:39.20]  bookings right because if you're
+[20:40.43]  offsetting deficits and subscription
+[20:42.35]  bookings with services bookings you may
+[20:44.51]  feel great about hitting your bookings
+[20:46.13]  target but you're gonna have to find
+[20:47.48]  yourself with a real cash shortfall
+[20:48.80]  right because they don't have the same
+[20:49.88]  gross margin so bookings is not a
+[20:52.40]  four-letter word if you think about
+[20:53.96]  bookings is something that turns into
+[20:55.49]  cash renewals you know a lot of us feel
+[21:00.89]  like renewals is a proxy for customer
+[21:02.87]  sat and it's not and there's pretty
+[21:05.72]  simple point right we lose customers who
+[21:08.36]  are very happy because they got acquired
+[21:09.92]  by a PE firm and the PE firm says here's
+[21:11.87]  our standard toolset right are they
+[21:13.73]  hired a new CFO the CFO says we use our
+[21:15.89]  period because I've always used that
+[21:16.94]  period right that happens in our lives
+[21:19.49]  and those were happy customers right on
+[21:22.52]  the flip side you often have unhappy
+[21:24.05]  customers renewing typically because
+[21:26.00]  they didn't have their act together like
+[21:27.53]  they missed an auto renews 60 day thing
+[21:29.81]  in a contract or they were trying to get
+[21:32.09]  a new system up and couldn't get it done
+[21:33.61]  right so you can find both cases where
+[21:37.37]  unhappy customers renew and happy
+[21:39.65]  customers don't renew so let's not
+[21:41.84]  pretend that renewals are perfect proxy
+[21:44.24]  for CSAT let's go measure and PS instead
+[21:47.45]  and then try and look at the
+[21:48.86]  relationship between the two so a pretty
+[21:51.65]  simple point but but the net of it is go
+[21:54.17]  measure NPS do it ideally four times a
+[21:56.57]  year with a quarter of your base each
+[21:58.67]  time this one's fun
+[22:02.21]  you can't analyze charing by analyzing
+[22:04.28]  churn this is a slide we show on our
+[22:05.81]  board meetings and this is what I call
+[22:07.55]  the churn taxonomy it takes all the
+[22:09.62]  churn that happened in the period and
+[22:11.21]  talks about why so a thousand units lost
+[22:14.54]  to lost accounts 300 to shrinking
+[22:16.22]  accounts on the lost accounts blah blah
+[22:18.29]  blah the 750 was business related 250
+[22:20.42]  was product
+[22:21.20]  it's a way to show your board and to
+[22:23.97]  show your team kind of churn by reason
+[22:27.06]  like what are the reasons people turn
+[22:29.27]  great slide useful slide for any board
+[22:32.01]  deck but the problem is it doesn't
+[22:34.05]  actually answer the question you really
+[22:35.67]  care about mm-hmm
+[22:37.34]  because ones like the question you
+[22:41.94]  really care about is what predicts
+[22:43.62]  someone churning I'm gonna use an
+[22:46.65]  example here fairly well known example
+[22:49.53]  about World War two and as bombers came
+[22:52.35]  back from missions they would put little
+[22:54.90]  dots for where they've been hit on these
+[22:56.94]  planes and if the first order people
+[22:59.85]  said gosh these are where our planes are
+[23:01.80]  getting hit so let's go reinforce them
+[23:05.04]  in those spots this make him stronger in
+[23:07.83]  the places that they get hit and one day
+[23:10.32]  a very smart person came along and asked
+[23:12.15]  a simple question which was why what
+[23:15.72]  about the planes that don't come back
+[23:18.08]  wait a minute shouldn't we worry about
+[23:21.09]  what separates the planes that don't
+[23:22.80]  come back for the planes that do come
+[23:24.84]  back and maybe the planes that don't
+[23:26.46]  come back are the ones that get hit in
+[23:28.26]  the complement of this pattern right
+[23:29.67]  they get hit in an engine or they get
+[23:31.59]  hit where the pilot sits right this is a
+[23:33.75]  basically survivor bias right we were
+[23:35.97]  analyzing how to make the planes
+[23:38.31]  stronger by only looking at planes that
+[23:41.04]  survived the mission when we should have
+[23:43.17]  been looking at what differentiated
+[23:44.55]  planes that didn't survive the mission
+[23:45.90]  from those that did right and when you
+[23:48.42]  analyze a bunch of customers that churn
+[23:50.43]  you're doing exactly that if you just
+[23:53.43]  grab you know here all the customers
+[23:55.11]  that churn last quarter let's go analyze
+[23:57.24]  the heck out of them you're making this
+[24:00.12]  mistake right and what you want to do
+[24:02.85]  instead is go get a table of all the
+[24:05.34]  customers those that churn and those
+[24:06.93]  that didn't with a bunch of input
+[24:08.88]  variables who did the services how big
+[24:10.92]  is the company how big in the arr what
+[24:15.00]  else what industry are they in those
+[24:20.52]  sorts of examples that describe the
+[24:22.14]  customers kind of things about the
+[24:23.82]  customers and in the first columns and
+[24:25.59]  the other columns or did they churn or
+[24:26.79]  not were they happy or not and then
+[24:30.15]  trying to figure out the relationship
+[24:30.87]  between these inputs and those outputs
+[24:32.64]  right to see what differentiates
+[24:34.74]  people who turn from those that did not
+[24:36.87]  so that's what I mean by saying you
+[24:39.03]  can't analyze chair by analyzing churn
+[24:40.89]  you need to analyze who churned and who
+[24:42.93]  didn't and try to compare them finding
+[24:46.14]  your own hunter farmer model is hard you
+[24:49.50]  know people do hunter farmer because
+[24:50.88]  they want to focus their reps on new
+[24:52.23]  business and that's a very noble intent
+[24:55.67]  and they want to pay lower rates on
+[24:57.90]  renewals and upsell right because that's
+[24:59.88]  less hard work than winning new business
+[25:02.03]  now something to know if you don't know
+[25:04.14]  it already boards hate paying sales
+[25:05.82]  commission sales type Commission's on
+[25:07.35]  renewals and their right to right
+[25:09.09]  salespeople in SAS make maybe 10 or 15
+[25:10.68]  percent Commission's you don't to pay
+[25:12.42]  that under renewal and boards hate
+[25:16.05]  double compensation another word not to
+[25:18.15]  say in a board meeting is double com
+[25:20.31]  because if you say it everyone's gonna
+[25:21.54]  sigh and it's gonna it's gonna be a bad
+[25:23.49]  meeting for the next 10 or 15 minutes
+[25:25.05]  right if you ever say those words never
+[25:27.96]  say double comp in a board meeting
+[25:29.73]  because boards hate it and sometimes
+[25:32.73]  they're right and sometimes they're
+[25:33.54]  wrong in my opinion is we need to let
+[25:35.58]  intelligence not Dogma drive this the
+[25:37.41]  first thing you need be aware of the
+[25:38.58]  dogma there's a lot of a religion but
+[25:42.48]  look if you've got a standard kind of
+[25:44.97]  fries with your burger cross-sell right
+[25:47.64]  it's not really hard to sell the fries
+[25:49.11]  if you're buying the burger right that's
+[25:51.36]  what a lot of hunter farmer is right so
+[25:53.70]  they say the sales guy go sell the
+[25:54.96]  burgers and the CSM will sell the fries
+[25:57.06]  and it's not that hard so I can get a
+[25:58.98]  relatively low skilled CSM well say it
+[26:01.47]  is so that's hunters and farmers will
+[26:03.36]  say this the expand is more salesy that
+[26:05.52]  it requires more sales skills
+[26:07.47]  those are people often call account
+[26:09.51]  management so there's some sales person
+[26:12.48]  ship required to do that
+[26:13.74]  well that might require a farmers with
+[26:16.71]  shotguns model we call it right so we
+[26:18.51]  still have hundreds of farmers but the
+[26:20.01]  farmers are armed right they're they're
+[26:21.63]  more sales and profile they make more
+[26:23.85]  money they come from a sales background
+[26:26.00]  say it's a really hard cost sell like we
+[26:28.95]  have we sell planning and budgeting to
+[26:30.78]  the FPAA people we sell consolidations
+[26:33.00]  to controllers different buyer different
+[26:35.07]  product it is definitely not fries with
+[26:37.05]  your burger right in that case we for
+[26:39.57]  that sale will use farmer's track for
+[26:41.85]  hunters so when customer success manager
+[26:44.13]  finds a consolidation opportunity we
+[26:46.08]  said the salesperson right back in right
+[26:47.97]  because
+[26:48.72]  if you don't if you send a CSM to try
+[26:51.24]  and sell consolidation to that
+[26:52.44]  controller you're gonna end up with a
+[26:53.94]  dead farmer right because you put your
+[26:56.13]  farmer against somebody else's hunter
+[26:57.99]  and that's something you don't want to
+[27:00.21]  do right so you need to figure out how
+[27:01.62]  your competitor is treating these models
+[27:03.39]  as well and finally to beat the metaphor
+[27:05.91]  to death if you have the kind of small
+[27:08.16]  land and big expand like the guy with
+[27:10.38]  the wine steak steak that person
+[27:12.66]  actually has an inside sales team that's
+[27:14.43]  pretty cheap selling the wine glasses
+[27:16.41]  and all their enterprise reps are
+[27:18.48]  installed base traps so it's a crazy
+[27:20.82]  model he calls it hunters of the zoo
+[27:22.53]  right cuz cuz they're in the zoo they're
+[27:24.72]  in cages and he's got these Enterprise
+[27:26.25]  wraps shooting at them and it's a great
+[27:29.07]  model alright for for that sort of for
+[27:32.25]  that sort of business number 9 you don't
+[27:34.44]  have to lose money in professional
+[27:35.85]  services
+[27:36.63]  I was shocked when I found this chart in
+[27:39.00]  the the key bag pack craft study but
+[27:41.37]  only 20% of companies lose money on
+[27:43.80]  services today I think it was a lot more
+[27:46.08]  in the past so people have kind of
+[27:48.21]  figured this one out on their own but to
+[27:50.82]  me the right model is you have a
+[27:52.50]  relatively small team of high skilled
+[27:54.39]  high price people you shoot for
+[27:56.61]  single-digit margins and things should
+[27:58.89]  go pretty well you'll set a nice price
+[28:00.42]  point to lead your ecosystem of partners
+[28:02.04]  and you won't have the problems you have
+[28:04.92]  if you have heavy losses because heavy
+[28:06.96]  losses cause two problems one they hurt
+[28:08.67]  your blended gross margins which isn't
+[28:10.65]  that bad because a lot of people will
+[28:11.82]  just look at subscription but the real
+[28:13.65]  problem is and I've seen this happen a
+[28:15.42]  clever PE or VC guy will look at your
+[28:18.30]  services losses and add them back to
+[28:20.10]  your CAC and that can be a very bad
+[28:22.53]  moment for you because you're sitting
+[28:24.15]  there going hey I've got a pretty good
+[28:25.17]  CAC but I'm losing Gio 25% margins on
+[28:28.17]  services and they go well if it's gonna
+[28:30.12]  cost you a 25% loss on services to sell
+[28:32.43]  that software that's actually
+[28:33.42]  acquisition cost poof and then you're
+[28:36.00]  like oh damn oh bad moment right so
+[28:40.26]  think hard about that if you think you
+[28:41.88]  can fool somebody by subsidizing a lot
+[28:44.40]  of sales cost and negative professional
+[28:46.11]  services there's a lot of smart people
+[28:47.58]  out there who's gonna correct for that
+[28:48.84]  error finally the last point look you
+[28:51.72]  need not sacrifice long term team
+[28:53.55]  members of the altar of experienced
+[28:54.75]  talent I'm a big believer that Silicon
+[28:56.28]  Valley boards are a little too quick to
+[28:58.53]  kind of kick out the people who help
+[28:59.94]  build the company and they're a little
+[29:01.86]  bit heavy
+[29:02.34]  handed with them I think we've been in a
+[29:03.84]  more relatively founder friendly era for
+[29:05.88]  the last five or ten years but but as
+[29:08.19]  you face these moments right where your
+[29:09.63]  VP of Sales who's been so good for the
+[29:11.16]  past two or three years is starting to
+[29:12.57]  run out of gas what do you do and the
+[29:15.75]  board will very quickly say let's bring
+[29:17.19]  the new on and get rid of the old one
+[29:20.13]  there's no way we can keep them and I
+[29:22.11]  think if you're creative you can find a
+[29:23.61]  way to keep them in Salesforce I wasn't
+[29:25.86]  there that long but they were phenomenal
+[29:26.91]  at this they valued people they valued
+[29:29.61]  talent and if you scaled out of your job
+[29:31.59]  then try and find your new one they try
+[29:32.94]  a couple times typically right because
+[29:34.74]  they wanted to keep you with the company
+[29:36.24]  and I think VC boards are a little too
+[29:38.19]  quick to kind of boot people out so I
+[29:40.05]  don't think you need to make these
+[29:41.31]  sacrifices these boards are correct in
+[29:43.14]  some ways incorrect and others I think
+[29:45.63]  the thing you can do to your company is
+[29:47.25]  create a culture of change not a culture
+[29:50.07]  of stasis because if everything's the
+[29:51.54]  same every year it's very hard to take
+[29:54.24]  one person out and move them down if
+[29:56.64]  every year you're kind of reorganized to
+[29:58.26]  say you try this you try that you try
+[29:59.82]  this then it's much much easier to do
+[30:02.34]  that and you can get to a place where
+[30:05.07]  you can get everyone in your company to
+[30:06.84]  understand that they're gonna have more
+[30:08.13]  fun and make more money if they worry
+[30:10.26]  about being on the right bus ie your
+[30:12.57]  company let's worry about getting on the
+[30:14.37]  right bus that's how you make money
+[30:16.05]  that's how you have fun it's not all
+[30:18.51]  about the seat it's all about the bus so
+[30:21.21]  if I want the you know the VP of North
+[30:22.92]  American sales to run Central Region
+[30:24.63]  sales for a year and he or she doesn't
+[30:26.19]  like that just do it well in a year from
+[30:28.41]  now we'll see what happens who knows
+[30:29.73]  what happens I don't know but you'll
+[30:31.77]  still be on the right bus you'll still
+[30:33.27]  be vesting your options and if if you do
+[30:35.76]  great in that role and love it great and
+[30:37.35]  if you don't we'll talk let's talk in a
+[30:39.33]  year because we're gonna change
+[30:40.11]  everything anyway it's a great way to
+[30:42.33]  retain your people which is really the
+[30:45.12]  most important thing you can do as you
+[30:46.32]  build a startup so thanks very much
+[30:48.93]  follow me at Cal blog and check out Kai
+[30:51.33]  blog calm thank you
+[30:52.54]  [Applause]
+[31:01.55]  you

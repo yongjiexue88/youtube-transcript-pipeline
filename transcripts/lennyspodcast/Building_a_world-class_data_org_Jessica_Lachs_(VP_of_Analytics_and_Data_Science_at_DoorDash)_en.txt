@@ -1,0 +1,2010 @@
+Title     : Building a world-class data org | Jessica Lachs (VP of Analytics and Data Science at DoorDash)
+Video ID  : D4PDb_C8Dww
+URL       : https://www.youtube.com/watch?v=D4PDb_C8Dww
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2001
+Saved at  : 2026-06-21 01:21:13
+------------------------------------------------------------
+
+[00:00.04]  so you built one of the largest and most
+[00:02.56]  respected data teams in all of Tech for
+[00:05.20]  me analytics is a business impact
+[00:07.56]  driving function and not purely a
+[00:09.72]  service function not just answering the
+[00:11.72]  why but answering the what do we do now
+[00:14.44]  that we know this one of your colleagues
+[00:16.04]  told me that you incredibly good at
+[00:18.12]  defining metrics retention is a terrible
+[00:20.48]  thing to goal on it's almost impossible
+[00:22.60]  to drive in a meaningful way in a short
+[00:24.84]  term ultimately you want to find a
+[00:27.40]  shortterm metric you can measure that
+[00:30.12]  drives a long-term output you mentioned
+[00:32.64]  the early team had felt extreme
+[00:34.04]  ownership yes you are a data scientist
+[00:36.12]  but your goal is to figure out what's
+[00:38.76]  happening and if that means that you're
+[00:40.32]  going to pick up the phone and call
+[00:42.08]  customers then that is what you're going
+[00:43.72]  to do so roll up your
+[00:47.84]  sleeves today my guest is Jessica LAX
+[00:51.12]  Jessica is Vice President of analytics
+[00:53.40]  and data science at door Dash which has
+[00:55.88]  built one of the biggest and most
+[00:57.40]  impactful data teams in Tech she's been
+[00:59.52]  at door Das for over 10 years and was
+[01:01.56]  the first gmma door Dash responsible for
+[01:03.52]  launching new markets previously Jessica
+[01:06.00]  founded GS simple a social gifting
+[01:07.68]  startup and began her career in
+[01:09.52]  investment banking at Leman Brothers in
+[01:11.84]  our conversation we go deep on how to
+[01:14.08]  build and scale your data org including
+[01:16.84]  why a centralized org model is so
+[01:19.40]  effective what to look for when hiring
+[01:21.52]  data people how to pick the right
+[01:23.00]  metrics for teams to align incentives
+[01:25.32]  and drive the right sorts of outcomes
+[01:27.48]  examples of how the data team at door
+[01:29.60]  Dash has helped the business make better
+[01:31.12]  decisions a bunch of great stories about
+[01:33.28]  the early days of door Dash and a ton
+[01:35.36]  more if you enjoy this podcast don't
+[01:37.36]  forget to subscribe and follow in your
+[01:38.80]  favorite podcasting app or YouTube it's
+[01:40.64]  the best way to avoid missing future
+[01:42.00]  episodes that helps the podcast
+[01:43.72]  tremendously with that I bring you
+[01:45.92]  Jessica
+[01:49.92]  LAX Jessica thank you so much for being
+[01:53.28]  here and welcome to the podcast thank
+[01:55.32]  you so much for having me I'm very
+[01:56.88]  excited to be here so you built one of
+[01:59.52]  the largest and most respected data
+[02:02.12]  teams in all of Tech I've heard from a
+[02:05.00]  number of people that look to you for
+[02:07.00]  advice when they're trying to build and
+[02:08.36]  scale their data teams and then D Dash
+[02:11.40]  in particular is an incredibly complex
+[02:14.00]  business there's uh three or maybe even
+[02:16.48]  four sites to the marketplace there's
+[02:18.80]  this operational element from the
+[02:20.68]  outside it just feels extremely
+[02:22.44]  complicated and wild imagine from the
+[02:24.32]  inside it's even more wild let's talk
+[02:26.72]  about some of the things you've learned
+[02:27.88]  about building and scaling the team you
+[02:30.04]  have a fairly contrarian perspective on
+[02:32.16]  how to structure data teams this is
+[02:34.28]  reference this was referenced when we
+[02:35.48]  had Elizabeth Stone on the podcast too
+[02:37.12]  she approaches data the same way so I'd
+[02:39.04]  love to hear just your take on how to
+[02:40.92]  structure data teams within
+[02:42.96]  companies this episode is brought to you
+[02:45.52]  by webflow we're all friends here so
+[02:48.28]  let's be real for a second we all know
+[02:50.36]  that your website shouldn't be a static
+[02:52.24]  asset it should be a dynamic part of
+[02:54.52]  your strategy that drives conversion
+[02:57.12]  that's business 101 but here's a number
+[02:59.60]  for for you 54% of leaders say web
+[03:02.64]  updates take too long that's over half
+[03:05.28]  of you listening right now that's where
+[03:07.88]  webflow comes in their visual first
+[03:10.00]  platform allows you to build launch and
+[03:12.28]  optimize web pages fast that means you
+[03:14.96]  can set ambitious business goals and
+[03:16.84]  your site can rise to the challenge
+[03:19.28]  learn how teams like Dropbox Ideo and
+[03:21.96]  orange theory trust webflow to achieve
+[03:24.28]  their most ambitious goals today at
+[03:26.36]  webflow tocom
+[03:30.00]  this episode is brought to you by Anvil
+[03:32.76]  their document SDK helps product teams
+[03:35.12]  build and launch software for documents
+[03:37.52]  fast companies like carda and vouch
+[03:40.12]  Insurance use Anvil to accelerate the
+[03:42.36]  development of their document workflows
+[03:44.76]  getting to Market fast is a top priority
+[03:47.12]  for product teams and the last thing
+[03:49.04]  that you or your developers want is to
+[03:51.04]  build document workflows from scratch
+[03:53.28]  it's time consuming expensive and
+[03:55.20]  distracts from core work you could
+[03:57.64]  stitch together multiple tools and
+[03:59.24]  manage those Integrations or you can use
+[04:01.72]  an all-in-one document SDK most product
+[04:05.08]  managers will tell you paperwork sucks
+[04:07.96]  Anvil's document SDK helps teams get to
+[04:10.36]  Market fast incorporate your brand style
+[04:13.24]  and give you back time to focus on your
+[04:14.92]  company's core differentiated features
+[04:17.68]  for your users paperwork often starts
+[04:19.68]  with an AI powered web form styled and
+[04:21.72]  embedded in your application from there
+[04:24.04]  you can route data to your backend
+[04:25.52]  systems and to the correct fields in
+[04:27.80]  your PDFs via API complete the process
+[04:30.96]  with a white labeled e signature the
+[04:33.48]  best part about Anvil is the level of
+[04:35.76]  customization their SDK provides
+[04:38.16]  non-technical folks love Anvil's drag
+[04:40.20]  and drop Builder and developers love
+[04:42.56]  their flexible apis and easy to
+[04:44.96]  understand documentation build document
+[04:47.20]  software fast with Anvil that's use
+[04:49.84]  Anvil
+[04:53.48]  docomo that's USV
+[04:56.68]  il.com Lenny there's two main things
+[05:00.48]  that I think are important when you're
+[05:01.84]  structuring a team the first is I
+[05:04.92]  believe that analytics should have a
+[05:07.00]  seat at the table just like engineering
+[05:09.84]  and product and and sort of the business
+[05:12.28]  folks The Operators for me analytics is
+[05:15.16]  a business impact driving function and
+[05:18.12]  not purely a service function I think
+[05:20.28]  there are analytics teams at other
+[05:22.40]  companies where they are answering
+[05:24.68]  people's questions maybe even through
+[05:27.96]  Jura tickets or build dashboards that's
+[05:31.44]  that was never really of interest to me
+[05:33.08]  that wasn't the team that I wanted to
+[05:34.56]  build for me it's about finding
+[05:37.64]  opportunities about having a point of
+[05:40.00]  view on the decisions that we should
+[05:42.40]  make not just answering the why but
+[05:44.96]  answering the the so what so what do we
+[05:47.76]  do now that we know this uh and so that
+[05:50.60]  that's definitely one thing uh as far as
+[05:52.44]  my point of view on on building a a data
+[05:55.08]  team I think the second thing which may
+[05:56.72]  be a little more contrarian is
+[06:00.48]  I think there are there are people out
+[06:01.76]  there who think that analytics should be
+[06:03.48]  embedded into business units I strongly
+[06:07.48]  disagree I I believe a central Model A
+[06:10.64]  Center of Excellence is superior and I'm
+[06:13.76]  happy to talk about why but that's
+[06:16.24]  something that I feel quite strongly
+[06:17.64]  about we we've tried it uh or shouldn't
+[06:20.80]  well we've experimented in the past with
+[06:23.88]  the alternative so putting it into a
+[06:25.60]  business unit and it's just much more
+[06:27.80]  problematic and I think the value you
+[06:29.92]  get from a central model is far greater
+[06:33.48]  than some of the the things that you
+[06:35.04]  might lose so yeah let's definitely talk
+[06:37.24]  about it and just to make sure people
+[06:38.80]  understand when you say Central versus
+[06:40.60]  embedded is that in terms of reporting
+[06:42.12]  lines in terms of their goals it's a
+[06:45.04]  great question so mostly it's in terms
+[06:47.04]  of reporting lines um because I think on
+[06:50.24]  the goal side that is something where we
+[06:52.96]  have the same goals that our partner
+[06:54.80]  teams have and I think that that's
+[06:56.36]  actually an important part of a
+[06:58.76]  successful set Central model so um when
+[07:01.32]  I say Central model it just means that
+[07:02.92]  instead of for marketing analytics
+[07:05.12]  marketing analytics is part of the
+[07:06.88]  broader analytics team it does not sit
+[07:09.52]  and report in through marketing that
+[07:11.92]  that just to clarify got it so the
+[07:13.92]  reporting functions in some companies
+[07:15.88]  there's like the head of marketing or
+[07:17.68]  some partner to the head of marketing
+[07:19.76]  where the data say analyst or Biz offs
+[07:22.08]  people or data scientists would report
+[07:23.36]  potentially to them and that's it and
+[07:25.48]  they're not as connected to the core to
+[07:27.36]  like the rest of the data team the rest
+[07:29.36]  of the analytics team versus exactly
+[07:31.80]  yeah so you'd have a bunch of sort of um
+[07:34.28]  smaller of course data teams that sit
+[07:36.88]  embedded within the functions and I I
+[07:39.32]  understand why Business Leaders like
+[07:42.12]  that you know you're you're embedded
+[07:43.52]  within the functions you're a part of
+[07:45.08]  team that ownership that camaraderie
+[07:47.52]  that comes with that I think you can
+[07:49.36]  solve for that but I I do understand
+[07:51.68]  that that is benefit I think the other
+[07:53.64]  benefit of course is you know the the
+[07:55.52]  Business Leaders control the road maps
+[07:58.12]  so they get to dictate the world they
+[07:59.84]  know that they have help and resources
+[08:02.84]  in that area when they need them so that
+[08:05.84]  that certainty that control I I totally
+[08:09.04]  understand the value there but I think
+[08:11.24]  that those are two things that you can
+[08:12.56]  Sol for uh if you know that those are
+[08:15.40]  the kind of biggest issues with a with a
+[08:19.00]  central team so for us we have a central
+[08:22.24]  analytics team but we are we're divided
+[08:25.00]  up into pods that map perfectly with how
+[08:28.72]  product engine ing operations marketing
+[08:31.36]  are are are structured as well and so
+[08:34.44]  our team de facto has these folks
+[08:38.20]  embedded with our partner teams even
+[08:40.40]  though the reporting structure is up
+[08:43.16]  through a central orc through through me
+[08:45.68]  uh and that helps the team to to feel
+[08:49.36]  like they are one team both in terms of
+[08:51.84]  the analytics team feeling like it's one
+[08:53.56]  team but also to use the marketing
+[08:55.84]  example the marketing folks are one team
+[08:58.64]  and because the analytic shares the same
+[09:01.24]  goals as the marketing leaders your
+[09:04.36]  incentives are aligned to work on the
+[09:06.20]  most important things and you your
+[09:09.28]  success is their success and vice versa
+[09:11.36]  so I think that that's been really a
+[09:14.40]  good way to a happy medium but still
+[09:17.72]  preserves all the benefits of a of a
+[09:20.44]  central orgon and there are there are a
+[09:22.32]  lot of them I want to hear about him um
+[09:24.56]  but I think something that some people
+[09:26.04]  may think when you say a central org is
+[09:29.44]  like a silo data team that sits there
+[09:31.40]  and they're like this they're like a
+[09:33.12]  service org a little bit within the
+[09:35.12]  company it's like hey I need some data
+[09:36.44]  help and you try to convince that you
+[09:38.56]  hey I need some help on this thing and
+[09:39.80]  that's not what you're saying oh no no
+[09:41.96]  no no that that job seems terrible um I
+[09:45.72]  don't want that job no we are very much
+[09:48.44]  you to the earlier point we have a seat
+[09:50.12]  at the table we are business partners we
+[09:52.96]  are thought partners with our product
+[09:55.84]  counterparts with our engineering
+[09:57.28]  counterparts with our Ops counter parts
+[10:00.44]  and we sh again share the same goals and
+[10:05.16]  have the
+[10:06.92]  same you know initiatives that that they
+[10:09.80]  do and it's just our job to come at it
+[10:11.92]  from a data driven Place uh we bring to
+[10:15.80]  the table insights on things that we've
+[10:17.84]  noticed deep Dives that we do to
+[10:20.32]  understand the problems that we're
+[10:21.88]  trying to solve better if we need to
+[10:23.84]  grow what are the most efficient ways to
+[10:27.12]  grow what are the trade-offs that we
+[10:28.64]  have to make wear their pockets of
+[10:31.52]  opportunity uh that that is what I
+[10:33.68]  expect my team to be able to to bring to
+[10:36.60]  that table the proverbial table that we
+[10:39.32]  want to seat at um and so and in order
+[10:41.88]  to earn their spot that's that's the
+[10:44.16]  deal we get the seat at the table and we
+[10:45.84]  need to earn it by bringing
+[10:48.72]  opportunities that we all can go and go
+[10:51.92]  after awesome so it's in a sense it is
+[10:54.72]  embedded they're embedded in cross
+[10:56.32]  functional teams across the org but they
+[10:58.28]  report up too Central orc to you
+[11:00.32]  essentially in the end yeah cool what
+[11:03.12]  are some of the benefits of this
+[11:04.36]  approach oh there's so many okay so the
+[11:06.44]  first thing is a consistent and high
+[11:08.88]  Talent bar I think this is this is
+[11:11.92]  something I saw when we would have some
+[11:14.08]  sort of pockets of of analytics folks
+[11:16.84]  embedded is the having a consistent bar
+[11:19.80]  for talent in terms of what we're
+[11:21.32]  looking for what are the technical
+[11:22.84]  skills what are the soft skills and
+[11:25.08]  being able to kind of evaluate
+[11:29.36]  candidate with that same bar uh using
+[11:33.80]  sort of our same rubric just you just
+[11:36.28]  get more consistent and higher higher
+[11:39.24]  talent in my opinion I think that's
+[11:41.56]  number one number two is actually growth
+[11:43.96]  opportunities so if you're siloed you
+[11:46.56]  may be the most senior data person
+[11:48.60]  within keep picking on marketing um but
+[11:51.68]  you might be the the most senior sort of
+[11:53.48]  data scientist within marketing where do
+[11:54.92]  you go from there I think when you have
+[11:56.96]  the central or you're able to see if
+[11:59.04]  there are growth opportunities in other
+[12:02.72]  areas within the company and so that
+[12:05.64]  really helps folks to stay engaged
+[12:08.92]  because they can look at new problems if
+[12:11.40]  the kind of problems they've been
+[12:12.68]  working on for a few several years or
+[12:14.84]  getting maybe boring and they want
+[12:17.56]  something new There's an opportunity
+[12:19.20]  move from marketing over to Merchant
+[12:21.60]  analytics uh and then I think similarly
+[12:24.96]  if there isn't a promotion or Room to
+[12:27.52]  Grow if you want to be a people manager
+[12:29.24]  there just isn't a people management
+[12:30.92]  role kind of within your functional area
+[12:34.72]  well you've got 10 other ones to look at
+[12:38.08]  and maybe there is that opportunity so I
+[12:40.00]  think it helps with the growth
+[12:42.20]  opportunities for the team which helps
+[12:44.04]  to retain Talent so that's a second
+[12:46.64]  thing the third thing is just
+[12:48.32]  consistency of methodologies and metrics
+[12:51.92]  so you don't have sales that was as
+[12:54.32]  defined by one team and sales as defined
+[12:57.16]  by another team you just have sales
+[12:59.72]  and everybody is using kind of the same
+[13:01.72]  metrics the same the same methodologies
+[13:05.20]  and you're able to improve your
+[13:06.36]  methodologies with input from you know
+[13:08.64]  more people uh and rather than kind of
+[13:11.60]  recreating the wheel doing the same
+[13:13.48]  building the same churn prediction model
+[13:15.64]  on six different teams you can instead
+[13:18.32]  build one and have the input of six
+[13:21.00]  different teams I think that's a
+[13:22.52]  definitely another benefit also helps
+[13:24.92]  you to scale because you start to see
+[13:26.92]  the same problems across teams
+[13:29.72]  and so you're like oh this is an issue
+[13:31.28]  that we need to get ahead of this is
+[13:32.76]  something we need to automate or this is
+[13:34.56]  something that we need to to improve
+[13:37.00]  upon or a problem that is going to grow
+[13:39.52]  as our business as our team scales so I
+[13:42.12]  think it helps you see around corners a
+[13:44.12]  little bit more and then just lastly
+[13:46.40]  there's The A Team culture brand I think
+[13:50.60]  that's really important not just
+[13:52.64]  externally for recruiting top talent but
+[13:55.64]  you know the team is really proud to be
+[13:57.32]  members of the analytics team we have a
+[13:59.56]  a unique culture you know of learning of
+[14:02.44]  sharing you have someone you can go to
+[14:04.56]  to talk about your challenges you have
+[14:06.48]  someone who can peer review your work I
+[14:08.84]  think just having that that team culture
+[14:11.92]  that we have is really important and
+[14:14.32]  it's a lot harder to get when you have
+[14:16.20]  the you know individual uh individual
+[14:18.64]  silos particularly in an earlier stage
+[14:21.72]  when it's a smaller team you just don't
+[14:23.60]  have as many people around so everybody
+[14:26.08]  wants to have friends at work uh and
+[14:28.20]  we're creating an environment where they
+[14:30.24]  can find like-minded kind of data nerds
+[14:33.72]  it makes me think about uh airb B's
+[14:35.32]  First Data team I don't know if you know
+[14:36.52]  Riley Newman well but he built airbnb's
+[14:38.96]  First Data team and it was actually an
+[14:40.32]  analytics team they called it themselves
+[14:42.00]  The A Team uh on the point of culture
+[14:44.88]  and that that always felt a lot of fun
+[14:47.04]  and and they loved being part of that
+[14:48.48]  team yeah we have we have the same thing
+[14:51.52]  um but now I feel a lot less special for
+[14:53.88]  being you know coming up with that name
+[14:55.28]  so oh you called it a team also yeah got
+[14:57.44]  the A Team yeah and then I think they
+[14:59.60]  moved away from it when there was a push
+[15:01.04]  now we're data scientists we're not anal
+[15:03.00]  an analytics or analysts and that was
+[15:05.32]  like a I don't know 10 year ago like hey
+[15:08.04]  data science we're data science we will
+[15:09.56]  always be the A Team there's like so
+[15:11.24]  many threads I want to follow here one
+[15:13.16]  that's kind of a tangent but something
+[15:14.80]  that I think a lot of people struggle
+[15:16.36]  with is you talked about how you want
+[15:18.08]  your data team your analytics team to be
+[15:20.96]  proactive to find Opportunities to give
+[15:22.88]  you ideas to help you figure out what to
+[15:25.16]  build not just answer questions at the
+[15:27.04]  same time there are many questions that
+[15:28.40]  teams need to get answered do you have
+[15:30.72]  any advice for just how to set up a team
+[15:32.76]  where they both find time to explore dig
+[15:37.28]  show opportunities and come up with big
+[15:39.12]  ideas and also hey we just need to
+[15:40.92]  figure out the funnel conversion on this
+[15:42.48]  thing or hey what do you think what's
+[15:44.20]  happening in China right now thoughts
+[15:46.36]  there yeah I it'san such a good question
+[15:48.68]  I think it's something that never gets
+[15:50.68]  easier you have to be very intentional
+[15:53.00]  to carve out time for exploratory work
+[15:55.88]  for deep Dives because as you mentioned
+[15:59.12]  there are always more questions and more
+[16:01.16]  work to be done than hours in the day
+[16:03.88]  and so I think being intentional about
+[16:06.68]  it and setting goals for your team
+[16:09.60]  around finding this these insights
+[16:12.32]  through self-directed work is an
+[16:15.24]  important mechanism for holding
+[16:18.24]  ourselves accountable to that goal
+[16:19.96]  because it tends to be the first thing
+[16:22.12]  that goes when you
+[16:23.88]  get you know a lot of inbounds you're
+[16:26.20]  like all right well this deep dive on
+[16:28.24]  something that I don't know if it's
+[16:29.72]  really something you know the the could
+[16:32.32]  be high Roi could be low Roi I don't
+[16:34.76]  know so the expected value is is lower
+[16:37.44]  than this known thing that I can deliver
+[16:40.56]  and make someone happy and so I think to
+[16:44.32]  prevent that time from just slipping
+[16:47.28]  away you really have to be intentional
+[16:49.24]  we would do hackathons for our team to
+[16:52.00]  carve out days to just go and look into
+[16:55.56]  these really interesting things and find
+[16:57.72]  Opportunities and I think we have the
+[16:59.80]  support of our business partners because
+[17:01.36]  so many great insights have come from
+[17:03.68]  these deep Dives and it really has been
+[17:06.36]  some of the work that driv future road
+[17:08.44]  maps so they're they're always really
+[17:10.72]  great at allowing us to have this time
+[17:13.48]  and actually encourage us often to have
+[17:16.08]  this time for for some self-directed
+[17:17.96]  work to go find the next big opportunity
+[17:22.12]  so uh if there's no uh answer that comes
+[17:24.84]  to mind that's totally cool but is there
+[17:26.80]  an example of one of these insights
+[17:29.44]  that someone on the data team came up
+[17:31.24]  with that led to something big for door
+[17:33.48]  Dash that you're able to share so one
+[17:35.88]  interesting example was from a hackathon
+[17:38.24]  we did a couple years ago where we were
+[17:41.04]  looking at referral as a channel for uh
+[17:44.48]  consumer
+[17:45.60]  acquisition and when you compared that
+[17:48.28]  channel to others it
+[17:50.08]  was below average in terms of the
+[17:53.76]  engagement you'd see from consumers who
+[17:55.76]  came through that channel and the
+[17:57.20]  payback period uh and we rather than
+[18:00.80]  just lowering spend on referrals and
+[18:03.28]  moving right along we really wanted to
+[18:06.40]  understand what was happening and so
+[18:08.96]  during the hackathon we did a deep dive
+[18:12.72]  into into referral we actually tried
+[18:15.36]  referring each other we tried committing
+[18:17.48]  referral fraud creating new accounts to
+[18:20.60]  get around rules and we uncovered a lot
+[18:22.44]  of fraudulent Behavior through this deep
+[18:25.72]  dive we ordered so many cupcakes to the
+[18:27.76]  office I remember
+[18:29.40]  um using referral credits to because you
+[18:31.80]  had to place an order to be able to get
+[18:33.56]  the referral bonus so we would create
+[18:35.76]  the account place the orders and we just
+[18:37.56]  kept ordering cupcakes and we what we
+[18:41.00]  noticed was that referral as a channel
+[18:44.52]  was a bit misleading when you would look
+[18:46.68]  at the average in terms of payback and
+[18:49.68]  that it was really a bodal distribution
+[18:52.16]  and you had one group of really great
+[18:55.56]  consumers who were referring other
+[18:57.44]  really great consumers uh and the
+[18:59.52]  payback on that on those consumers was
+[19:02.20]  was really strong uh in fact if you if
+[19:04.56]  that's all you saw you would spend a lot
+[19:06.76]  more on that channel and then what was
+[19:10.04]  happening was you had this other group
+[19:12.84]  of consumers that were not as good
+[19:15.84]  people who were posting referral codes
+[19:18.48]  online and you know getting people who
+[19:21.04]  were just in it to get free free
+[19:23.44]  discounts and credits and we had at that
+[19:26.56]  point in time pretty Lacks fraud rules
+[19:29.64]  and uh we didn't have caps on these
+[19:31.68]  things all of which came about from this
+[19:35.00]  deep dive where we found that uh this
+[19:38.48]  group of consumers was really a drag on
+[19:41.84]  the efficiency of this marketing channel
+[19:44.36]  and so I think that's an example of a a
+[19:47.24]  few things that we we we like to do at
+[19:50.24]  at door dash one being these deep Dives
+[19:53.36]  and taking the time to really understand
+[19:55.44]  the problem and then ultimately make a
+[19:57.20]  bunch of recommendations for what we
+[19:59.16]  should do including better fraud checks
+[20:01.84]  caps on referrals etc etc but also sort
+[20:05.40]  of how this a the average can be
+[20:07.16]  incredibly misleading and so looking at
+[20:10.08]  distributions and trying to kind of
+[20:13.04]  break down what you're seeing to find
+[20:16.32]  ways that you can optimize and ways that
+[20:18.80]  you can you know gain and efficiencies
+[20:21.04]  that's an awesome story great uh great
+[20:23.48]  memory to come up with that one so this
+[20:26.16]  is a really good example of a way to
+[20:27.80]  carve out time for the data team to
+[20:30.32]  think longterm think look for
+[20:31.96]  opportunities find Big Ideas so the
+[20:34.16]  hackathon is one idea imagine many data
+[20:37.28]  people are struggling often to push back
+[20:39.76]  on asks that are just like oh we need to
+[20:41.48]  know we just need this one thing here's
+[20:42.64]  a question just just answer this one
+[20:44.12]  question for do you have any advice to
+[20:46.64]  data people to get better at pushing
+[20:49.76]  back sounds like a bit of like cultural
+[20:51.56]  like we have time we need to work on
+[20:53.16]  these bigger things but just any advice
+[20:54.92]  for data leaders or data IC to find time
+[20:57.88]  for these sorts of things
+[20:59.92]  yeah I mean saying no to someone is
+[21:02.20]  never fun I you know I think you know as
+[21:04.36]  a as a self-proclaimed people pleaser
+[21:07.28]  you don't want to say no especially when
+[21:08.56]  it's something you can do and you know
+[21:10.12]  that you can very easily with maybe an
+[21:12.52]  hour's work make someone happy I think
+[21:14.96]  it's really important for to establish a
+[21:17.56]  culture and to for leadership to really
+[21:19.84]  sort of establish the rules of working
+[21:23.28]  and the that operating model so that
+[21:25.52]  some of the junior folks aren't forced
+[21:27.44]  to always have to say no and I think one
+[21:30.40]  of the ways we do that is through our
+[21:32.24]  goaling so because our goals are the
+[21:35.40]  same as our business partners we're able
+[21:37.88]  to pretty easily say hey we've got a
+[21:39.80]  limited amount of time these are our
+[21:41.28]  goals what are the most important things
+[21:42.76]  that we are going to work on this week
+[21:44.80]  or this month in order for both of us to
+[21:48.08]  hit our goals and so when something
+[21:50.12]  comes up to be able to say hey is
+[21:52.52]  this you know data pull that you want me
+[21:55.44]  to do is this more important than these
+[21:58.84]  other three things that I was going to
+[22:00.68]  be working on yes or no and I think when
+[22:04.00]  you sometimes people don't necessarily
+[22:06.28]  realize the tradeoffs and when you make
+[22:09.28]  them apparent and you put them front and
+[22:11.52]  center they realize that oh actually you
+[22:14.16]  know what that that asset's not
+[22:15.48]  important that can wait H so I think
+[22:17.64]  that that's definitely something I would
+[22:19.16]  recommend which is always share the
+[22:21.12]  tradeoffs don't kind of suffer in
+[22:22.76]  silence with how am I going to do all
+[22:24.16]  four of these things bring it up and say
+[22:26.32]  hey this is what I was planning to do if
+[22:28.64]  you want me to do this extra new thing
+[22:31.88]  then one of these other things is going
+[22:33.68]  to have to drop and I I personally don't
+[22:36.80]  think that your ask is more important
+[22:38.80]  than these three things but maybe
+[22:40.24]  there's new information maybe there's
+[22:41.68]  context I don't have so let's talk about
+[22:43.48]  it rather than just being like no I
+[22:45.28]  won't do that I don't think that's
+[22:47.04]  that's not a great approach either I
+[22:48.60]  think having the conversation and
+[22:50.72]  constantly re-evaluating your
+[22:52.48]  prioritization to make sure you're
+[22:53.92]  working on the most important things or
+[22:55.60]  your team is working on the most
+[22:57.00]  important things is is good hygiene to
+[22:59.48]  have with your business partner so some
+[23:00.96]  teams do that through a weekly kind of
+[23:03.68]  standup of like here's what we're going
+[23:05.08]  to do this week do we like this
+[23:07.36]  prioritization do we not some folks do
+[23:09.28]  it less formally than that I think you
+[23:11.40]  you got to figure out what works for you
+[23:13.64]  but to the earlier point it's a
+[23:16.44]  conversation with your engineering
+[23:19.36]  partner your product partner your Ops
+[23:21.12]  partner you're all on the same team
+[23:22.76]  you're all trying to achieve the same
+[23:24.20]  goals and you're all incentivized to
+[23:26.88]  have your Analytics team working on the
+[23:30.12]  most impactful things this advice is
+[23:32.60]  great for any role basically and the
+[23:35.48]  like if I were to summarize it to a
+[23:37.44]  couple words it's just like prioritize
+[23:39.68]  and communicate what your priorities are
+[23:42.00]  and then align on the tradeoffs that
+[23:44.48]  shifting your parities every once in a
+[23:46.44]  while you just kind of throw one over
+[23:47.96]  and say you know what this is quick I'll
+[23:49.64]  do it at least I do I think you know
+[23:51.72]  sometimes just knock it out build some
+[23:54.60]  Goodwill I think that that's also
+[23:56.16]  important but usually it's not a
+[23:58.20]  something something you can do in five
+[23:59.56]  minutes uh and in that case it's that
+[24:03.00]  ruthless prioritization for sure and
+[24:05.24]  then there's also the side that you
+[24:06.52]  talked about of just show that you can
+[24:08.60]  provide value doing these things that
+[24:09.84]  are longer term like prove your worth
+[24:12.16]  hey look at all these opportunities I
+[24:13.40]  found for a team over time like I should
+[24:14.96]  keep spending time on these other areas
+[24:16.92]  versus the on fire
+[24:18.92]  stuff when you're hiring people for your
+[24:22.08]  team I'm curious what you look for and
+[24:25.16]  you think is incredibly important that
+[24:26.96]  maybe other people aren't this
+[24:28.40]  prioritizing as much what do you what do
+[24:29.88]  you focus on when you're hiring yeah I
+[24:32.12]  mean so everybody needs to have a
+[24:33.92]  certain set of technical skills I think
+[24:36.56]  that's sort of a a non-starter we have a
+[24:38.88]  technical bar we do a technical screen
+[24:40.92]  so I think that's table Stakes there's
+[24:43.84]  some really unique characteristics that
+[24:46.00]  I've noticed when I look at some of the
+[24:48.08]  top talent that I've I've had on the
+[24:50.04]  team or have on the team I think the
+[24:51.92]  first thing is just curiosity you you
+[24:54.72]  can't teach curiosity or at least I I
+[24:57.80]  haven't found way to do it if somebody
+[24:59.44]  else knows how please let me know
+[25:01.52]  somebody who is just self-motivated to
+[25:03.72]  pull on the threads when they find them
+[25:05.96]  so they don't just answer a question
+[25:08.04]  they're like hm this thing seems a
+[25:10.64]  little odd I'm going to dig in and look
+[25:13.92]  even though I could say I'm done I
+[25:16.32]  answered the question I did the thing I
+[25:18.84]  was going to do the the the person that
+[25:20.76]  has that Curiosity something something
+[25:23.00]  seems off something doesn't really make
+[25:25.60]  sense and goes and proactively looks
+[25:28.84]  into what that is like that that is just
+[25:31.56]  so valuable so I I really look for that
+[25:34.04]  Curiosity and that self motivation uh to
+[25:37.04]  do it without being told how do you test
+[25:39.56]  for that how do you do that in an
+[25:40.60]  interview and get a sense of if they're
+[25:42.40]  good at that one way you can do it
+[25:44.44]  through the questions you ask is have
+[25:46.36]  something that is not quite right within
+[25:50.04]  the case that you're presenting and see
+[25:52.12]  if people notice first and foremost and
+[25:54.96]  even if they don't if you point it out
+[25:57.60]  right like where did they go with that
+[26:00.04]  um I think that that's something that
+[26:01.40]  you can you can test for I think you can
+[26:03.92]  also ask for
+[26:05.84]  examples
+[26:07.52]  that for these folks typically will
+[26:10.40]  highlight this um they'll talk about I
+[26:13.32]  you know I noticed this thing and so we
+[26:15.28]  decided to investigate so I think that
+[26:18.52]  you there there are ways that you can
+[26:20.68]  get it get that signal through through
+[26:23.80]  the interview process but it's really
+[26:26.16]  hard um I think you know testing for for
+[26:29.16]  uh hard skills is a lot easier than
+[26:31.04]  testing for soft skills and I think you
+[26:33.16]  know in some of the questions we ask
+[26:35.40]  we'll ask a question with the idea that
+[26:37.76]  we're assessing something separate than
+[26:40.68]  what the question is necessarily asking
+[26:42.88]  and I think that this is a one one
+[26:44.88]  example of what where that really works
+[26:47.04]  you said that you give them a case what
+[26:48.56]  does that look like what is the actual
+[26:49.80]  kind of approach to how you do this
+[26:51.60]  interview our interview process has in
+[26:54.96]  the early stages a um a coding exercise
+[26:59.28]  so we do our technical screen and a
+[27:02.08]  shortened version of a business case so
+[27:04.52]  real world problem solving typically
+[27:07.24]  it's something actually from door Dash
+[27:10.16]  history like a real problem that we had
+[27:13.48]  uh to see how people can problem solve
+[27:16.52]  on the Fly I think that that's a an
+[27:18.88]  important skill to be able to have which
+[27:21.20]  is how do you take a problem break it
+[27:23.20]  down talk through it a little bit like
+[27:25.84]  some of those Consulting cases that you
+[27:27.84]  you know hear about but something that's
+[27:30.88]  really rooted in in real problems and I
+[27:34.04]  think you can learn a lot from those
+[27:37.00]  types of cases where yes you get to see
+[27:40.44]  how people handle ambiguity and
+[27:42.40]  structured problem solving But
+[27:44.96]  ultimately most people get something
+[27:47.40]  kind of wrong right they make an
+[27:48.84]  assumption that's wrong because well I
+[27:51.68]  would hope that the interviewer knows
+[27:53.68]  the business better than the interviewee
+[27:56.12]  and seeing how people react to being
+[27:58.60]  told they're wrong is is an really
+[28:01.28]  important signal in my opinion seeing
+[28:03.48]  how people respond how they're able to
+[28:07.04]  take new information and kind of pivot
+[28:10.32]  how they're able to make a decision so
+[28:12.40]  that's another thing that I like to see
+[28:13.88]  in cases where hey you may not know the
+[28:16.52]  right the re the real right decision you
+[28:20.16]  might say hey I could see I could see it
+[28:22.68]  going one way I could see it going the
+[28:24.36]  other way but I always push people to
+[28:25.72]  say if you had to make a call right now
+[28:27.56]  what would it be so are people able to
+[28:30.04]  have a point of view without full
+[28:32.28]  information because that's that's life
+[28:34.92]  sometimes you have to just pick a pick a
+[28:37.60]  direction and make a decision even
+[28:39.40]  though you don't have perfect
+[28:40.68]  information so I like to see some of
+[28:43.20]  these uh some of these softer skills and
+[28:46.60]  how they manifest throughout a case
+[28:48.88]  interview even if it's not specifically
+[28:51.48]  what I'm asking with the you know the
+[28:53.80]  literal problem we're solving in the
+[28:56.08]  case kind of along these lines but sort
+[28:58.36]  of in a different direction you don't
+[28:59.96]  actually have a deep data science data
+[29:02.12]  background before you got into this
+[29:03.60]  stuff you I know you had some kind of
+[29:05.48]  art background you had like art you had
+[29:07.68]  an art portfolio back in school and I
+[29:10.52]  think a lot of people wouldn't imagine
+[29:12.36]  that for someone being head of analytics
+[29:15.08]  for a company like door Dash uh I don't
+[29:18.08]  exactly know the question but I guess is
+[29:19.64]  there anything there that you think
+[29:21.52]  would be interesting for people to know
+[29:22.76]  or
+[29:23.60]  here yeah it's funny I sort of joke that
+[29:26.16]  I have a job I'd never be hired for
+[29:28.56]  because I don't have a traditional data
+[29:30.20]  science background and I know that
+[29:32.00]  Elizabeth Stone on her her podcast with
+[29:34.28]  you talked a lot about her sort
+[29:36.16]  non-traditional background for a CTO so
+[29:38.52]  hey maybe there's something to it but I
+[29:41.16]  I became a data scientist out of
+[29:43.72]  necessity uh I completely self-taught uh
+[29:47.16]  in terms of SQL and Python and I I did
+[29:50.28]  it because there was a need at door dash
+[29:53.76]  for someone
+[29:55.20]  to help figure out what the right goals
+[29:58.04]  goal were uh how we set those goals how
+[30:01.24]  we were performing different markets
+[30:03.36]  kind of early in in in the door Dash
+[30:06.20]  story so 10 years ago uh at this point
+[30:09.56]  and I just had
+[30:12.56]  a I think I just gravit gravitated
+[30:15.92]  towards that type of work and Tony Tony
+[30:18.56]  recognized that superpower in me even
+[30:21.12]  though I don't have that formal training
+[30:22.96]  so yeah I'm a bit of a an artist for fun
+[30:26.52]  but a I guess a data science scientist
+[30:28.64]  in in practice or for career but I think
+[30:31.84]  that that non-traditional background has
+[30:35.76]  been a great thing because I'm able to
+[30:38.84]  hire people who have the technical
+[30:41.96]  skills that I don't have the folks with
+[30:44.12]  phds and statistics and the the data
+[30:47.60]  scientists machine learning and
+[30:49.24]  otherwise you know I'm able to hire
+[30:51.00]  those folks and yet keep them really
+[30:53.92]  focused on driving business impact
+[30:56.64]  because my background was
+[30:58.60]  in the on the finance side and so I've
+[31:00.88]  always been a you know pragmatist uh and
+[31:04.12]  for me the purpose of our team is to
+[31:06.44]  drive business impact and so the mix
+[31:08.68]  between the technical skills of the
+[31:11.04]  smarter people that I've hired uh the
+[31:13.68]  smarter than myself and my kind of
+[31:16.44]  grounding in driving business impact has
+[31:18.72]  been a really great great partnership
+[31:21.40]  that's a quite an inspiring story for
+[31:24.00]  someone that is just starting out and
+[31:25.84]  doesn't necessarily have a lot of
+[31:27.36]  experience in data but also just
+[31:29.64]  generally like I think this is a really
+[31:31.20]  cool example you could be successful in
+[31:33.56]  a field that you don't have a ton of uh
+[31:36.88]  background in I'm curious what you think
+[31:39.52]  it was in you that allowed you to
+[31:42.44]  succeed in this and get to where you're
+[31:43.92]  are today like what do you think you did
+[31:46.16]  right or what are some habits or ways of
+[31:49.16]  thinking that you think helped you
+[31:51.48]  achieve that first off I I have impostor
+[31:54.64]  syndrome like everybody else so it's not
+[31:56.72]  like I have this crazy sense of
+[31:59.68]  confidence of like I can do anything I I
+[32:02.24]  definitely have the same doubts and uh
+[32:05.00]  that that that others have I think part
+[32:07.52]  of it was probably not even realizing
+[32:09.64]  what I was doing you know when you're at
+[32:11.96]  a startup and things are moving quickly
+[32:13.64]  and you see a problem and I've always
+[32:15.40]  liked solving problems so I was like all
+[32:17.12]  right how do I solve this problem I was
+[32:19.08]  like oh well I need to I need access to
+[32:20.64]  the data I don't have access to the data
+[32:22.40]  all right I'll ask an engineer to get me
+[32:24.20]  the data well this isn't going to scale
+[32:26.88]  I can't always father you know an
+[32:28.96]  engineer so how do I figure out how to
+[32:31.16]  get the data myself right well Let's
+[32:33.44]  Learn Python so I think it kind of came
+[32:36.16]  it happened organically and I don't
+[32:38.08]  think I realized at the time what I was
+[32:40.52]  even doing and then I think if you think
+[32:44.24]  about things from first principles about
+[32:46.68]  what you need right now in front of you
+[32:48.64]  to unblock yourself or solve a problem
+[32:51.32]  and you just focus on that instead of
+[32:54.04]  thinking about like you know a global or
+[32:56.48]  that you're trying to build and you know
+[32:58.88]  I think that that helps so for me it was
+[33:01.04]  always about solving the problem in
+[33:03.04]  front of me the best way I could and if
+[33:06.04]  that meant I needed to hire an engineer
+[33:08.08]  to report into me through the finance
+[33:10.04]  org then that was what we were going to
+[33:11.96]  do and nobody was going to tell me I
+[33:14.76]  couldn't do it so I think you know it's
+[33:18.12]  it's a belief in yourself and ultimately
+[33:21.00]  it's just my desire to solve problems
+[33:24.88]  and figure out what has to get done is I
+[33:27.56]  think ultimately how it came about I
+[33:30.56]  love I love that so much there's so many
+[33:32.40]  elements there that I think a lot of
+[33:34.04]  people can learn from I feel like
+[33:35.48]  there's also this underlying current of
+[33:36.84]  you're just motivated for this to work
+[33:38.68]  like you need you wanted door Dash to
+[33:41.00]  succeed and you're just like I will do
+[33:42.20]  what I need to do to make this happen
+[33:43.56]  like I need to solve these problems I'm
+[33:45.12]  not going to overthink do I have the
+[33:46.44]  skills necessarily to do these things
+[33:47.96]  yet yeah I think I'm competitive I think
+[33:50.56]  that's a trait that you find in a lot of
+[33:52.76]  sort early door Dash folks and current
+[33:55.00]  door Dash folks to be honest just being
+[33:56.64]  really uh wanting to win and being
+[33:59.80]  willing to do you know whatever you need
+[34:02.36]  to to win so roll up your sleeves do
+[34:04.88]  something that's not your job I think
+[34:06.64]  back to you know early days of taking
+[34:09.20]  out the garbage on Saturday nights
+[34:11.80]  because it needed to get done right I
+[34:13.56]  think that that kind that that was
+[34:16.08]  something that is ingrained in our
+[34:18.92]  culture from Tony Shu from our founder
+[34:21.44]  and CEO and I think
+[34:25.32]  the that really resonated with me and I
+[34:28.56]  feel like I've always sort of operated
+[34:30.68]  that way as well and I think that that
+[34:32.40]  helped to help me in my career to be
+[34:35.60]  able to do what I've done um without
+[34:38.28]  really thinking about it too much are
+[34:40.20]  there any other memories or stories of
+[34:41.80]  the early days of door Dash that would
+[34:43.96]  be fun to share something that sticks
+[34:45.28]  with you like wild I can't believe
+[34:47.16]  that's what it was
+[34:48.88]  like oh man there's so many including so
+[34:52.20]  many mistakes that we've made but I
+[34:54.04]  think something that really stands out
+[34:56.04]  to me is
+[34:58.16]  uh before I moved to the analytics area
+[35:01.64]  I was actually a GM I was the first GM
+[35:04.24]  at door Dash and I was in Boston in
+[35:09.00]  2014 launching this the city of Boston
+[35:11.84]  when nobody knew who we were and
+[35:15.44]  we would wake up early in the morning
+[35:18.80]  5:00 a.m. and we would go out in the in
+[35:21.36]  it was the winter of of 2014 we'd go out
+[35:25.16]  and we'd hand out promo codes to to
+[35:28.56]  Consumers outside of the tea in Boston
+[35:31.48]  and these promo cards would be attached
+[35:33.56]  to kind bars so people would take them
+[35:36.32]  and the whole the whole team it was a
+[35:38.24]  small team there were four of us but the
+[35:39.52]  whole team would go out in the morning
+[35:41.08]  to do this and I I think back to our
+[35:43.92]  sales our sales guy shout out to to Joey
+[35:46.88]  G so Joe graio is our sales guy in
+[35:50.56]  Boston and he was gold on signing
+[35:53.56]  merchants on the platform that was how
+[35:55.40]  he was gold his compensation was tied to
+[35:57.48]  that
+[35:58.24]  and yet in the morning when we would go
+[36:00.16]  out he was with us handing out promo
+[36:02.60]  codes because he was part of the team
+[36:05.00]  because he wanted to win you know we
+[36:07.00]  wanted to grow the business and I think
+[36:08.96]  that that is a just a great example of
+[36:12.16]  kind of the culture that that Tony and
+[36:15.40]  the you know the early
+[36:17.44]  employees and you know Stanley and Andy
+[36:20.20]  other co-founders really instilled in
+[36:22.84]  all of us early in those days so I think
+[36:25.40]  that that that ownership that extreme
+[36:27.60]  dream ownership of the outcome is is
+[36:30.96]  definitely one of the things I think the
+[36:32.92]  other is just being very customer first
+[36:35.92]  and I say customer I mean consumers
+[36:38.28]  Dashers and Merchants as as all being
+[36:41.00]  our customers and uh the first time I
+[36:44.28]  ever went to the the office headquarters
+[36:47.20]  in Palo Alto which at the time was in an
+[36:49.32]  animal hospital uh the first time I went
+[36:51.76]  there uh there was a huge sight outage
+[36:54.80]  and the whole company it's like 20
+[36:57.16]  people at the time you know the whole
+[36:59.00]  company jumped online to do customer
+[37:01.72]  support to answer the phones to make
+[37:04.40]  sure that folks were getting refunds for
+[37:06.92]  orders that weren't going through make
+[37:08.40]  sure the orders that were out there were
+[37:10.28]  getting delivered just dropped
+[37:12.64]  everything and and and hopped on to do
+[37:14.88]  support and I was brand new didn't
+[37:17.28]  really know how to use tools and so was
+[37:20.36]  like how can I be useful and so back in
+[37:23.12]  those days we used to order dinner to
+[37:25.04]  the office using door Dash and so in
+[37:27.24]  order to
+[37:28.40]  preserve about three Dashers who would
+[37:31.24]  have had to deliver food to us I was
+[37:33.44]  like I'm going to go out go out dashing
+[37:35.60]  go get everyone pizza so that we could
+[37:38.20]  kind of feed the masses doing credits
+[37:39.96]  and refunds and you know do what we had
+[37:42.20]  to to make sure that we were serving our
+[37:44.12]  customers well and I think that that
+[37:47.28]  night was one of the largest refunds
+[37:50.08]  like as a percent of our bank account
+[37:52.24]  that we that we had ever given given out
+[37:54.40]  and I think Tony's talked about some of
+[37:56.72]  there were sort of two examples that
+[37:58.32]  he's talked about where we just gave a
+[38:00.60]  lot of money back to customers because
+[38:02.36]  it was the right thing to do because you
+[38:04.12]  know our service failed and we wanted to
+[38:06.00]  do right by them so I think that those
+[38:08.00]  those are sort of two stories that stick
+[38:09.60]  out in my mind and really highlight
+[38:12.32]  culturally what makes Door Dash unique
+[38:14.96]  and uh what what I think has been a
+[38:17.96]  really important part of our success
+[38:20.72]  reminds me of the story that Tony and
+[38:22.40]  all the early employees and I imagine
+[38:24.44]  you did this just like we Dashers like
+[38:26.32]  it's like aot
+[38:28.20]  where you dash for a while right is that
+[38:30.16]  part of the culture yeah so we have a
+[38:31.44]  program a we Dash uh program and uh
+[38:34.92]  Keith yendell who's our our chief
+[38:36.92]  business officer did your podcast last
+[38:38.96]  year and he talked about this um but
+[38:41.64]  four times a year all the employees go
+[38:44.80]  out and go dashing or do customer
+[38:47.56]  support and it's part of our culture
+[38:50.80]  that I love I actually go pair dashing
+[38:53.64]  so I go together with with one of my one
+[38:56.08]  of my colleagues we've done it for years
+[38:57.96]  now uh and it's sort of a fun fun thing
+[39:01.44]  that we do together four times a year
+[39:03.56]  actually usually more than that but um
+[39:06.20]  and it's it's important because you get
+[39:09.00]  to use the product you get to you build
+[39:12.32]  empathy with all the audiences I mean I
+[39:14.64]  think all of us order door Dash a lot so
+[39:17.56]  we we've built empathy with the with
+[39:19.28]  consumers but being able to go and
+[39:21.32]  understand what it's like to go out
+[39:22.48]  dashing and when you're in the
+[39:24.24]  restaurants going and talking with
+[39:25.80]  merchants and seeing
+[39:28.24]  The Experience from their point of view
+[39:29.92]  I think it's just incredibly important
+[39:31.76]  and and of course we find a lot of bugs
+[39:34.72]  like this doesn't work the way it should
+[39:36.68]  let me report this uh so I think it's
+[39:38.80]  also just great for for catching
+[39:40.76]  catching bugs in the
+[39:42.40]  product this episode is brought to you
+[39:44.76]  by ATO a radically new type of CRM
+[39:48.00]  there's a world where your CRM is
+[39:50.12]  powerful easily configured and deeply
+[39:52.96]  intuitive ATO makes that a reality ATO
+[39:56.68]  is built specific specifically for the
+[39:58.24]  next era of companies it syncs with your
+[40:00.72]  data sources easily configures to their
+[40:03.00]  unique structures and works for any go
+[40:05.32]  to market motion from self-served to
+[40:07.48]  sales Le ATO automatically enriches your
+[40:10.76]  contacts syncs your email and calendar
+[40:13.08]  gives you powerful reports and lets you
+[40:15.12]  quickly build zapier style automations
+[40:17.60]  the next era of companies deserves more
+[40:20.16]  than an inflexible one size fits all CRM
+[40:23.68]  join modal replicate 11 labs and more
+[40:26.52]  and scale your start up to the next
+[40:28.36]  level head to ato.com Lenny and you'll
+[40:32.16]  get 15% off your first year that's ATT
+[40:35.28]  io.com
+[40:37.76]  Lenny I want to come back to a thread
+[40:40.00]  that uh something you mentioned where
+[40:41.76]  you and a lot of the early team had felt
+[40:43.96]  extreme ownership over the company and
+[40:46.88]  that's why a lot of this stuff happened
+[40:48.88]  for people that like every founder every
+[40:50.76]  product team they're going to like yes
+[40:52.20]  we need that let's make sure everyone on
+[40:53.52]  the team feels extreme ownership is
+[40:55.48]  there anything you think that the early
+[40:56.96]  team
+[40:57.80]  to create that or is it hiring just pick
+[41:00.08]  people that will have that feeling
+[41:02.44]  already or is it something or is
+[41:04.40]  cultural I think it's both I mean it's
+[41:06.56]  definitely cultural I think it comes
+[41:08.20]  from from the top and I think that Tony
+[41:11.08]  exhibits this extreme ownership and uh
+[41:14.68]  and looks for it in others so I think
+[41:17.44]  that it that that helps but I think even
+[41:20.84]  today I expect of my team that same kind
+[41:24.40]  of extreme ownership over the outcomes
+[41:27.00]  and so I'm more interested in our team
+[41:30.24]  figuring out how to solve a problem than
+[41:33.04]  sort of the box that someone fits in
+[41:35.20]  like I am a data scientist so I only do
+[41:37.56]  these things right it's like no yes I
+[41:40.48]  mean yes you are a data scientist but
+[41:42.68]  you your goal is to figure out what's
+[41:45.76]  happening and if that means that you're
+[41:47.32]  going to pick up the phone and call
+[41:49.08]  customers then that is what you're going
+[41:50.76]  to do uh and I think that expecting that
+[41:54.52]  and setting that as the norm for the
+[41:56.52]  team this sort of ownership of the
+[41:58.64]  outcome is something that we continue to
+[42:02.24]  to do at door Dash and and and instill
+[42:04.56]  in everyone whether you were you know
+[42:06.24]  early or just joined last month is there
+[42:09.16]  an example that that comes to mind of
+[42:10.80]  someone practicing extreme ownership
+[42:12.72]  like a data scientist calling someone or
+[42:14.60]  something on those lines yeah so I
+[42:16.96]  actually had a meeting uh yesterday
+[42:19.08]  morning with the team that's working on
+[42:21.40]  some of our affordability initiatives
+[42:23.24]  and we had chipped something that we
+[42:27.56]  expected to work and it didn't and you
+[42:30.00]  know instead of you can dig into the
+[42:32.00]  data to understand the segments of
+[42:33.60]  consumers that you would expect it to
+[42:35.88]  work with and those that it wouldn't of
+[42:38.32]  course we did that but ultimately it's
+[42:40.16]  like I don't know why right and that's
+[42:42.36]  where qualitative research is superior
+[42:45.44]  to to quantitative research right is
+[42:47.36]  that asking for the context actually
+[42:49.68]  talking to people to figure out what was
+[42:51.56]  the motivation what worked what didn't
+[42:53.24]  for them and so the team data scientists
+[42:55.88]  included just sat and made phone calls
+[42:58.80]  uh and so they they they were talking
+[43:01.36]  about what they found in from those
+[43:02.96]  phone calls and that's going to inform
+[43:05.44]  kind of future decisions and I think
+[43:06.96]  rather than saying well that's what the
+[43:09.72]  the qualitative research team is
+[43:11.68]  supposed to do it's like no no no that
+[43:13.28]  is what our team anyone's team is
+[43:14.84]  supposed to do because that's what's
+[43:16.12]  needed to unblock us from this next test
+[43:20.24]  that we want to run because we need to
+[43:21.80]  know what we what we're testing so I
+[43:24.04]  think that that that it happens it
+[43:25.96]  happens every day I think I I really
+[43:28.68]  love when I see team members go outside
+[43:31.32]  the sort of traditional bounds of what a
+[43:34.16]  data science role might be and you do
+[43:37.60]  some product management work right do
+[43:39.84]  some engineering work I think that
+[43:41.96]  that's that's part of what keeps the job
+[43:45.64]  interesting I think it's part of what
+[43:48.64]  makes our team special is that that is
+[43:50.60]  not
+[43:51.48]  only you know allowed it's encouraged uh
+[43:55.28]  which is and and probably also reason
+[43:57.36]  why we've had folks whove gone from my
+[43:59.16]  team to the product org and to the Ops
+[44:01.56]  org and to the finance org is because
+[44:04.48]  they get to do and experience parts of
+[44:07.56]  that job and get a good sense for what
+[44:09.40]  that's like and then realize that
+[44:10.96]  something that they love so I think it's
+[44:13.32]  it's definitely a a something we
+[44:15.84]  encourage at at door bash I love that I
+[44:19.20]  want to move in a slightly different
+[44:20.52]  direction one of your colleagues told me
+[44:22.44]  that you were incredibly good at
+[44:24.20]  defining metrics which is so important
+[44:27.60]  to get right for a business especially
+[44:29.40]  when that's complex of door Dash and I
+[44:31.64]  hear you're especially good at finding
+[44:33.52]  the right metric to drive the right
+[44:35.32]  incentive especially when the business
+[44:37.20]  is really messy and things like that so
+[44:38.56]  I'm just curious what you've learned
+[44:40.40]  about how to pick good metrics and align
+[44:43.00]  incentives well I've learned a lot of
+[44:45.68]  things about metrics mostly from Bad
+[44:47.44]  metrics I actually think you learn a lot
+[44:49.20]  from picking the wrong metric ultimately
+[44:51.80]  you want to find a shortterm metric you
+[44:55.92]  can measure that drives a long-term
+[44:59.40]  output so people always talk about oh we
+[45:01.72]  want to drive an improvement in
+[45:02.96]  retention retention is a terrible thing
+[45:05.40]  to goal on because it's like it it it's
+[45:08.84]  almost impossible to to drive in a
+[45:11.40]  meaningful way in a in the short term
+[45:13.72]  and yet you want to be able to
+[45:15.36]  experiment and iterate quickly so what
+[45:17.24]  are the what are the things that drive
+[45:19.80]  retention what are the inputs so I think
+[45:21.72]  it's it's really important to find the
+[45:23.12]  right inputs and then through
+[45:24.76]  experimentation test whether or not
+[45:26.64]  those short-term inputs are driving the
+[45:28.88]  long-term output that you're looking for
+[45:31.96]  I think that's one thing I think keeping
+[45:33.56]  things simple is another thing I've
+[45:35.28]  learned over the years maybe it's data
+[45:38.04]  scientists but they tend to love these
+[45:39.80]  like composite metrics like you know
+[45:43.04]  with a coefficient we're going to wait
+[45:44.76]  this input you know at X and this input
+[45:47.84]  at X plus two and and and then you end
+[45:50.48]  up with like a a metric that nobody
+[45:52.64]  really understands that like doesn't
+[45:55.56]  actually mean anything
+[45:57.68]  and you're like I don't know if a
+[46:00.72]  0.1 increase is that is a lot is it good
+[46:04.12]  is bad so they're just hard to work with
+[46:07.08]  and so I always encourage folks just
+[46:09.00]  pick something simple even if it's not
+[46:11.16]  perfect and your composite would be more
+[46:13.32]  perfect if people understand it if they
+[46:15.80]  have an intuition around it if it's
+[46:18.36]  something that people can talk about
+[46:20.56]  across the company it's going to be a
+[46:22.28]  much better metric in terms of driving
+[46:24.76]  real outcomes than you're made up
+[46:27.64]  composite score that nobody understands
+[46:30.44]  so I think keeping things simple is also
+[46:32.96]  really important and then I think the
+[46:35.16]  last thing I'll I'll say is it's
+[46:38.08]  important to understand how metrics
+[46:40.40]  across the company equate to one another
+[46:43.80]  and so we spend a lot of time
+[46:46.64]  quantifying things in
+[46:49.12]  terms of a common currency so for
+[46:53.16]  example if I were to lower price by a
+[46:56.00]  dollar what would I get in terms of
+[46:58.80]  we'll say volume well what if I lower
+[47:02.16]  delivery times by a minute what do I get
+[47:04.72]  for that in terms of volume and so now
+[47:07.72]  you can make tradeoffs between maybe
+[47:09.68]  your marketing
+[47:10.88]  team and your Logistics team because you
+[47:14.12]  have this common currency that everyone
+[47:16.16]  can talk talk about and so we've done
+[47:19.12]  that we've tried to quantify all of the
+[47:21.20]  levers of our business price selection
+[47:24.80]  quality um in common terms so that if we
+[47:28.88]  have say a dollar to spend we know what
+[47:32.04]  we get depending on where we put it over
+[47:35.76]  what time frame and I think that that
+[47:37.72]  helps us make decisions more quickly
+[47:41.40]  because we we sort of know what our
+[47:44.24]  options are we know the we we have our
+[47:46.52]  inventory of things that we can do
+[47:48.68]  short-term long-term and what we get for
+[47:51.24]  it so it it it definitely helps us to
+[47:53.08]  make decisions more quickly and
+[47:54.60]  hopefully better decisions
+[47:56.96]  these are so awesome uh I definitely
+[47:58.84]  want to follow up on some of this this
+[48:00.36]  is so good so maybe on this last one
+[48:03.12]  which we did at Airbnb also just like
+[48:05.64]  what how does everything translate into
+[48:07.32]  into nights booked and booking like
+[48:08.96]  every decision we make what is the
+[48:10.40]  actual nights booked impact and so I
+[48:13.20]  imagine your case you don't I don't know
+[48:14.64]  if you want to talk about these things
+[48:15.68]  imagine it's like transactions or
+[48:18.28]  purchases or gmv or something like that
+[48:20.00]  as I'm guessing is the final metric I
+[48:22.00]  don't know is that something you talk
+[48:23.08]  about or or we don't talk about that so
+[48:26.12]  I mean we we we measure things in terms
+[48:28.20]  of of gov uh so gross order value and
+[48:31.68]  and also volume got it okay so basically
+[48:35.24]  every other metric that people are gold
+[48:37.88]  on as much as you can can translate
+[48:40.52]  there's a model that translates that
+[48:42.40]  into gross order value and volume
+[48:45.48]  awesome so when a team is saying like
+[48:47.20]  Hey we're going to change the onboarding
+[48:49.40]  flow and impact conversion here and I
+[48:51.84]  don't know I guess what's yeah what are
+[48:53.40]  some examples of other metrics on teams
+[48:55.28]  that potentially translate into gov and
+[48:57.96]  and volume just to make it even more
+[49:00.32]  real yeah so everything from the the
+[49:03.16]  example that you started with with it
+[49:05.56]  which is like an improvement in the
+[49:07.80]  login flow right how many more you know
+[49:11.36]  consumers are getting onto the app and
+[49:14.12]  ultimately placing orders and so you can
+[49:16.36]  translate that to of course orders and
+[49:18.24]  gov but then something is interesting is
+[49:21.16]  you know selling a a Thai restaurant in
+[49:25.36]  Sacramento right we we're able to say
+[49:27.92]  what do we think that that gets us in
+[49:29.92]  terms of gov from the consumer by
+[49:32.68]  selling that Thai restaurant so it's
+[49:35.44]  it's every area of the business it's
+[49:38.40]  mobilizing more Dashers on the road what
+[49:41.08]  does that do to our quality metrics in
+[49:44.20]  terms of delivery times how does that
+[49:46.44]  translate and so because of that we're
+[49:48.60]  able to figure out if we want to spend
+[49:52.36]  you know spend the dollar or spend the
+[49:55.12]  time the team's time
+[49:57.32]  on improving conversion or spending more
+[50:00.24]  money in marketing or onboarding more
+[50:03.68]  more Dashers we're signing more
+[50:06.20]  restaurants we're adding more grocery
+[50:08.84]  stores right so we we were're able to
+[50:11.04]  look kind of across the whole business
+[50:13.24]  and figure out what is what is the right
+[50:15.60]  mix of actions to take to achieve our
+[50:17.80]  goals I could see as you talk about this
+[50:20.20]  why this is so important at a in a
+[50:21.68]  Marketplace especially a multi-sided
+[50:23.48]  marketplace where there's all these
+[50:24.64]  trade-off decisions between Supply
+[50:26.24]  investment and demand growth and Dasher
+[50:29.16]  growth I don't even know my brain would
+[50:31.16]  explode trying to think about all these
+[50:32.36]  things so I I get exactly why this is so
+[50:35.12]  important to business okay and then in
+[50:37.44]  terms of the simple uh recommendation I
+[50:40.16]  think when people hear are like yeah
+[50:41.28]  keep it simple they're like yeah yeah
+[50:42.56]  we're going to keep it simple what are
+[50:44.56]  some things that point to this is not
+[50:46.52]  simple that tell you like no you this is
+[50:48.68]  way too complicated you should try to
+[50:50.32]  simplify this metric even though it's
+[50:51.60]  not ideal it's not the perfect metric
+[50:54.24]  but it needs to be simpler yeah so we we
+[50:56.80]  had a score from uh from Merchant Health
+[51:00.36]  um which we tried experimenting with
+[51:04.60]  which was a combination of factors that
+[51:08.56]  we had found would lead to a merchant
+[51:12.12]  being on the platform and getting in
+[51:13.60]  order so we wanted to make sure that the
+[51:15.76]  merchant was had had active hours on the
+[51:18.68]  platform and had images and had a full
+[51:22.52]  menu that was accurate and robust and a
+[51:25.52]  number of different inputs and we
+[51:26.84]  created a composite that weighted all of
+[51:29.56]  these different inputs and then we were
+[51:31.20]  like what is our Merchant Health score
+[51:33.92]  right and you were like it's you know
+[51:38.36]  35 it's not 35% so like what is that
+[51:42.72]  what is like that 35 I I don't know what
+[51:45.76]  it is so instead of that we said what
+[51:48.36]  are the most important factors in order
+[51:51.16]  first let's measure how many of the new
+[51:53.20]  Merchants are getting an order within
+[51:54.92]  their first say seven days on the
+[51:56.28]  platform form and then let's look at how
+[51:58.52]  many of our Merchants are doing these
+[52:00.72]  things we know are important so these
+[52:02.64]  inputs so let's goal our team on getting
+[52:06.92]  like Merchant photo coverage up let's
+[52:09.40]  goal the team on making sure that we
+[52:11.96]  have open hours accurate hours right so
+[52:15.44]  figuring instead of yes it's someone
+[52:18.20]  might say it's simpler to have a
+[52:19.72]  composite metric but it was so hard to
+[52:22.40]  understand what it was and how to move
+[52:24.36]  it that it it became meaningless and
+[52:27.56]  ultimately moving to something that was
+[52:30.52]  simpler to understand even if it meant
+[52:33.28]  having three metrics instead of one it
+[52:36.40]  It ultimately was better for the team
+[52:38.44]  because folks knew what they were trying
+[52:39.96]  to move and so yeah maybe we missed
+[52:43.08]  number four five and six on the list of
+[52:45.76]  things but you got one through three and
+[52:48.80]  that's 95% of it anyway so once we get
+[52:52.00]  success with that 95 then let's talk
+[52:54.72]  about figuring out the other 5%
+[52:57.36]  it's so funny because this is exactly
+[52:58.92]  what we went through at Airbnb we had a
+[53:00.72]  we call it a healthy host I led the host
+[53:02.52]  quality team for a while and we came up
+[53:04.56]  with this healthy host metric that was
+[53:06.80]  six factors of a host like their
+[53:08.96]  cancellation rate their review rate
+[53:10.68]  their responsory and things like that
+[53:13.00]  and then we're just like cool let's move
+[53:14.32]  this let's make more host healthy and
+[53:16.40]  then you end up like okay which one do
+[53:18.72]  we focus on and oh what about all these
+[53:20.92]  others and we ended up basically
+[53:22.48]  focusing on one at a time and so let's
+[53:24.24]  just make that the goal for now and then
+[53:26.08]  rotate through the different biggest
+[53:28.00]  lever opport to move exactly I think in
+[53:30.64]  hindsight for for the example you give
+[53:32.40]  like which of those six things are
+[53:34.52]  actually the most important right and if
+[53:36.44]  you're able to then quantify which one
+[53:38.72]  matters most you work on that one first
+[53:40.76]  and you materially move that one and
+[53:42.84]  then you you know you work on the next
+[53:44.28]  one and you want to move them all but
+[53:46.68]  like being able to prioritize and know
+[53:48.60]  what you're going to get for a 20%
+[53:51.40]  Improvement in say your cancellation
+[53:53.40]  rate right that's that's where analytics
+[53:55.40]  I think can add a lot of value because
+[53:56.96]  yes ultimately you'll get to all of them
+[53:59.68]  but the way you do that and the time can
+[54:03.12]  have a meaningful impact on your growth
+[54:05.48]  if you can Target the most problematic
+[54:07.56]  things first and solve those you get
+[54:10.08]  more bang for your buck and that
+[54:11.72]  compounds over time and so doing the
+[54:14.88]  things that matter first and most
+[54:17.64]  quickly like is a competitive advantage
+[54:20.24]  in my opinion the other thing we found
+[54:21.96]  along those same lines is rotating
+[54:23.92]  between different metrics is so not
+[54:26.08]  efficient cuz you get good at we're
+[54:27.72]  going to move this metric and your
+[54:29.04]  team's like cool we totally understand
+[54:31.64]  this lever like cancellation rate we
+[54:33.80]  become really smart at cancellation rate
+[54:35.36]  and then three months later you need to
+[54:37.24]  switch to response rate and they have to
+[54:39.36]  learn a whole new paradigm of how to
+[54:41.64]  think about it and it's just super
+[54:43.04]  inefficient so we found basically just
+[54:45.28]  like keep a team on the metric until
+[54:47.04]  there's no more opportunities and find
+[54:49.00]  give another team one of these other
+[54:50.12]  metric yeah so many lessons Okay and the
+[54:54.68]  first thing you said on how to pick a
+[54:56.20]  good metric about this idea of
+[54:57.64]  short-term metrics that have long-term
+[55:00.16]  impact how did you phrase that again
+[55:02.48]  yeah so we find proxy metrics for
+[55:04.28]  long-term outcomes awesome and it's
+[55:06.60]  simple it's s similar to the simple
+[55:08.72]  metric and it all comes down to again
+[55:10.88]  just like the metric should be something
+[55:13.08]  you probably you can move you can
+[55:15.04]  understand that's close enough to this
+[55:17.72]  ideal perfect metric but isn't
+[55:19.64]  necessarily the entire idea okay awesome
+[55:22.72]  anything else along these lines of just
+[55:23.96]  like picking metrics working with
+[55:25.20]  metrics that you've learned that would
+[55:26.72]  be worth with metrics we're often
+[55:29.76]  looking at the average and I think we
+[55:31.56]  talked about this a little bit earlier
+[55:32.92]  but but making sure that you're looking
+[55:34.68]  at the edge cases and your fail States
+[55:36.80]  is also really important and so we often
+[55:39.44]  will set goals actually around and
+[55:42.40]  create metrics around those edge cases
+[55:45.56]  so like the disaster deliveries the ones
+[55:48.96]  that go terribly wrong right so we have
+[55:51.84]  this concept of never delivered which is
+[55:55.12]  orders that are never IED were really
+[55:57.08]  great at naming things at door Dash and
+[55:59.88]  they they're very rare right and so if
+[56:02.56]  you were just looking at the average
+[56:05.80]  effect or the average consumer
+[56:07.44]  experience it would never come up if you
+[56:09.68]  were just measuring
+[56:12.12]  quality on based on sort of average
+[56:14.80]  values of delivery times and lateness
+[56:17.08]  and sort of those T you would these
+[56:18.80]  wouldn't show up because they are so
+[56:21.00]  rare but they're terrible I mean they're
+[56:22.92]  just they're terrible experiences for
+[56:24.84]  consumers they leave to churn they're
+[56:27.64]  incredibly expensive because you're
+[56:29.52]  refunding an order or repurchasing food
+[56:32.04]  to and having to send another Dasher to
+[56:35.44]  deliver that repurchased food so they're
+[56:38.20]  very expensive they're costly from a
+[56:40.00]  consumer experience standpoint and I
+[56:42.40]  think if you're not looking for these
+[56:44.32]  fail States they are often missed so I
+[56:47.64]  think when you're picking metrics yes
+[56:49.72]  you want to improve engagement and you
+[56:52.64]  want to improve conversion and there's a
+[56:55.56]  lot of things that
+[56:57.08]  are kind of averages overall that you
+[56:59.72]  want to move but it's so important to
+[57:02.12]  find these edge cases and these fail
+[57:04.20]  States and actually set concrete goals
+[57:07.72]  around eliminating them because it can
+[57:10.40]  be really powerful so the tip here is
+[57:12.88]  actually make that a goal like never
+[57:14.36]  delivered some team just keep cutting
+[57:16.68]  that down exactly so we have part of our
+[57:19.36]  quality analytics team and we have
+[57:22.60]  product engineering and Ops on it as
+[57:24.84]  well their goal is
+[57:27.12]  eradicate never delivered and in order
+[57:29.60]  to do that you have to understand why
+[57:31.16]  they happen right sometimes it's human
+[57:33.96]  error sometimes it's fraud and then
+[57:36.68]  figure out ways that you can prevent
+[57:39.24]  them that you can kind of fix them while
+[57:42.40]  it's happening and and ultimately just
+[57:45.32]  get rid of them from from the system and
+[57:47.36]  you know you're never going to
+[57:48.44]  completely get rid of them but you can
+[57:49.92]  make a meaningful
+[57:51.48]  impact to make them even more rare than
+[57:55.52]  a fraction about you know a fraction of
+[57:57.88]  a fraction of a
+[57:59.40]  percent yeah and I feel like people may
+[58:01.76]  be hearing this and like of course why
+[58:03.80]  would you not focus on terrible order
+[58:06.72]  experiences but I think in most
+[58:08.32]  companies they look at the big numbers
+[58:09.92]  they look at the averages as you said
+[58:11.96]  like oh it's almost never happens why do
+[58:13.68]  we even spend any time on this and your
+[58:15.64]  point is you should actually spend time
+[58:17.56]  on these really terrible experiences
+[58:19.00]  even if it's a tiny portion of your
+[58:20.32]  business I guess maybe share why that's
+[58:22.64]  important is it just because that has
+[58:24.16]  trickle down effects on the the brand
+[58:27.72]  yeah I mean I think it's a couple things
+[58:29.12]  so just because something doesn't happen
+[58:31.04]  frequently doesn't mean that it's that
+[58:33.76]  it's not important so the the never
+[58:37.08]  delivered example is a great one in that
+[58:39.44]  this is leading directly to churn and
+[58:42.52]  it's it's also costing a lot of money
+[58:44.92]  far more than its frequency would
+[58:48.40]  suggest and I think that the fact of the
+[58:50.56]  matter is is when you have things that
+[58:51.72]  cause churn you're losing all of that
+[58:54.00]  consumer's subsequent orders and that is
+[58:57.36]  not necessarily observed you're just
+[59:00.12]  seeing one bad experience you're not
+[59:01.84]  seeing all of the Lost orders because
+[59:04.84]  they're lost and so I think that
+[59:07.12]  sometimes this is an area where the data
+[59:08.76]  doesn't show you the full picture uh and
+[59:11.16]  being able to to to quantify the the
+[59:15.12]  impact on engagement on profitability
+[59:18.48]  will make it stand out as something that
+[59:20.52]  really matters that you would you know
+[59:22.24]  maybe Miss if you if you weren't really
+[59:24.28]  looking for it and then I think the
+[59:26.28]  other thing is with something like login
+[59:28.96]  errors sometimes you don't see it in the
+[59:30.96]  data because people can't even get into
+[59:33.64]  the data if you're not able to log in
+[59:36.08]  right you're not making any purchases
+[59:38.84]  you're not ordering and so you may not
+[59:41.32]  see it in the data that you're looking
+[59:42.84]  at and so that's also something that I
+[59:44.80]  think is important for data folks to
+[59:46.68]  think about which is what data don't we
+[59:48.32]  have what data might we be missing where
+[59:51.12]  might there be opportunities and things
+[59:53.00]  that we actually need to identify and
+[59:55.24]  fix that we may not see because in this
+[59:58.24]  case with login failures they're not
+[60:00.40]  able to log in and so we're missing out
+[60:03.12]  on their they're not in the denominator
+[60:06.12]  and so we're missing out on on them from
+[60:08.64]  the data set entirely just a couple more
+[60:12.56]  questions there's one that I I skipped
+[60:14.76]  that I'm just going to come back to it's
+[60:16.24]  completely out of nowhere but I think it
+[60:17.96]  might be interesting is about global a
+[60:20.96]  global data org so you run a global data
+[60:23.00]  org you have data scientist and analyst
+[60:24.84]  and business Ops people all over the
+[60:26.80]  world not just the US I'm curious just
+[60:28.48]  what the what how how is it different
+[60:31.56]  managing data people in different
+[60:33.60]  countries versus just the US whatever
+[60:35.36]  you what's the big difference everyone
+[60:37.32]  always asks about the differences what I
+[60:39.72]  am surprised by is how similar things
+[60:42.80]  are how similar people are the data
+[60:45.52]  scientists themselves but also you know
+[60:47.76]  consumers and Dashers and careers uh as
+[60:51.24]  we call them at Vault there's a lot more
+[60:53.20]  similarities than differences I do think
+[60:56.40]  that when you built a business in the US
+[60:58.48]  and then you introduced new countries
+[61:01.64]  having different currencies and
+[61:03.36]  different languages adds complexity that
+[61:06.96]  you you know weren't necessarily
+[61:09.52]  familiar with I think similarly in EU
+[61:13.76]  countries versus non-eu countries in
+[61:16.24]  Europe there's different regulation so
+[61:19.28]  that adds a fun layer of complexity so I
+[61:22.00]  do think that it it adds complexity to
+[61:24.96]  what your to the problem set but
+[61:28.00]  ultimately so many of the problems are
+[61:31.04]  the same it feels a little bit like
+[61:33.52]  going into a test with like having seen
+[61:36.84]  the answer key and so for me there are
+[61:40.60]  problems we've encountered uh at volt uh
+[61:44.56]  through volt analytics where I'm like oh
+[61:46.40]  I feel you know we've we've had a
+[61:48.28]  similar problem I have an instinct for
+[61:51.48]  what the answer might be let's still
+[61:53.76]  test because there could be differences
+[61:56.00]  cultural or otherwise but I feel like I
+[61:59.24]  I I I know where we're going to end and
+[62:02.00]  then sometimes there are problems where
+[62:04.00]  you know it's new for one reason or
+[62:05.52]  another and it's exciting because you're
+[62:06.84]  like all right let's see if things are
+[62:08.04]  different here let's see what what
+[62:12.32]  ideas might work in in a vault country
+[62:16.92]  that you know don't work in a door Dash
+[62:18.60]  country and vice versa so I think I I
+[62:21.00]  tend to focus more on what's the same
+[62:23.36]  and then I'm pleasantly surprised when I
+[62:25.56]  find things that are different because
+[62:27.28]  that keeps it keeps you on your toes and
+[62:28.96]  keeps things
+[62:30.36]  interesting I'm going to take us to AI
+[62:32.72]  Corner this is a segment we have in the
+[62:34.72]  podcast where uh I try to understand how
+[62:37.32]  people are using AI in their day-to-day
+[62:40.24]  and in their business I'm curious if you
+[62:42.56]  found some really interesting way of
+[62:45.16]  using AI ideally in like you can go in
+[62:48.44]  either one of these directions and how
+[62:50.20]  you you or your team work day-to-day
+[62:52.36]  using AI tools to make you more
+[62:53.84]  efficient or integrating AI into your
+[62:57.36]  product making door Dash better yeah I
+[62:59.80]  mean I think that there are
+[63:01.44]  opportunities in in both I think one of
+[63:04.88]  the things I'm really excited about is
+[63:07.36]  actually so the former so in helping to
+[63:09.92]  make the team more productive we we do
+[63:12.44]  something called office hours uh at at
+[63:15.28]  door Dash the analytics team and it's
+[63:17.44]  something that we started eight years
+[63:20.12]  ago and it was a way to uh Provide
+[63:24.76]  support for team that at the time we
+[63:26.88]  just didn't have the bandwidth to
+[63:28.24]  support so we would go we would in the
+[63:31.04]  early days we'd go sit in a room and
+[63:32.92]  we'd say come on in and we'll help you
+[63:35.24]  with anything you need help with we'll
+[63:36.92]  help teach you SQL we'll help look at
+[63:39.80]  some of your work we'll be a thought
+[63:41.76]  partner you could just come learn what
+[63:44.20]  we're working on whatever it was we we
+[63:46.12]  would do uh two hours every week of
+[63:48.56]  office hours at different times to be
+[63:50.56]  friendly to different time zones and I
+[63:53.92]  think one of the things I'm excited
+[63:55.56]  about about is being able to really
+[63:57.48]  Empower some of the folks that are still
+[63:59.84]  coming to office hours for one thing or
+[64:02.44]  another to be able to use AI to help
+[64:05.40]  edit queries on their own for example to
+[64:07.96]  be able to say here's a query I want to
+[64:10.56]  make this please adjust this to uh our
+[64:15.04]  grocery business so that I can see you
+[64:17.24]  know the gov at at for grocery and so
+[64:21.36]  working to build these tools that will
+[64:24.28]  help not just our team in terms of time
+[64:26.60]  saving and also to be honest folks folks
+[64:30.00]  are going to use it on our team but
+[64:31.44]  really to be able to empower non
+[64:33.84]  technical users to be able to to do
+[64:36.12]  things on their own and not have to take
+[64:37.92]  up bandwidth for for the analytics team
+[64:40.60]  so essentially it's the chatbot that
+[64:42.28]  anyone in the company can talk to to get
+[64:43.96]  advice on how to write SQL queries query
+[64:46.40]  data and things like that yeah is there
+[64:48.12]  a clever name for this chatbot per
+[64:50.36]  chance so it's not
+[64:52.76]  clever it's called ask data AI
+[64:56.68]  and that's named for our internal slack
+[64:59.32]  channel that used to be the open kind of
+[65:01.56]  Q&A for people to ask data um so it's
+[65:06.08]  not at all clever but again go with the
+[65:08.60]  theme of very very specific naming
+[65:12.56]  conventions uh that we have at at door
+[65:15.04]  Dash never delivered in ask data
+[65:17.64]  AI I love it just clear Clarity above
+[65:21.12]  all else that's something I've learned
+[65:22.36]  from an editor that I work with Jess is
+[65:25.76]  there anything else that you want to
+[65:28.44]  share or leave listeners with for folks
+[65:30.36]  that are trying to build their data
+[65:31.64]  teams make their data teams more
+[65:33.16]  efficient is there any final wisdom
+[65:36.80]  nugget you'd want to share I think the
+[65:39.56]  only thing that I I sort of want to
+[65:41.92]  reiterate is that you you don't
+[65:44.44]  necessarily need a you know formal
+[65:46.52]  training in whatever it is you're
+[65:48.56]  building and I think that also goes
+[65:51.08]  towards the folks that you hire onto the
+[65:53.48]  team and so you know I'm mentioned
+[65:56.16]  earlier that we've had a lot of folks go
+[65:57.84]  to product or go to opts from the team
+[66:00.84]  what I didn't mention is how many folks
+[66:03.20]  we've actually had join the analytics
+[66:05.84]  team from partner teams so whether that
+[66:08.84]  was from engineering or from our Ops
+[66:10.88]  Team or marketing or Finance we've had a
+[66:13.64]  lot we've actually had a lot more um uh
+[66:17.04]  import we we we are a net importer of
+[66:19.32]  talent as opposed to a net exporter of
+[66:21.64]  talent and I think that that's
+[66:24.12]  because I my own experience coming over
+[66:27.88]  from operations from being a GM and
+[66:31.32]  making that transition into analytics I
+[66:34.20]  find that I I'm drawn to other folks who
+[66:37.64]  want to make a similar transition now
+[66:39.64]  again you have to have the technical
+[66:41.56]  skills and most of these folks have
+[66:43.20]  acquired these skills on the job you
+[66:46.44]  know whatever job they are doing at door
+[66:49.16]  Dash before they transition to the
+[66:51.36]  analytics team or they had maybe some
+[66:53.96]  formal training in school but I love
+[66:56.76]  seeing the folks that make that
+[66:58.48]  transition and actually want to join the
+[67:01.04]  analytics team even if that they're not
+[67:02.76]  a career data scientist uh I think it
+[67:06.40]  creates a really unique environment
+[67:09.32]  where you have folks on the team from
+[67:11.20]  different backgrounds with different
+[67:13.16]  expertise who can teach each other
+[67:15.64]  things so uh I can teach you how to
+[67:18.28]  build a discounted cash flow model in
+[67:20.52]  Excel and I can learn how to make
+[67:24.28]  Kick-Ass slides
+[67:26.08]  you know from from someone who has a
+[67:28.52]  background in Consulting and I can learn
+[67:30.76]  about common gotas in statistics from
+[67:34.08]  someone who comes to us with a Masters
+[67:36.80]  or PhD in statistics and we've got our
+[67:39.56]  econometrics folks and we've got our
+[67:42.84]  economists and we you we just have a
+[67:45.40]  group of people with different
+[67:46.76]  backgrounds who can all teach each other
+[67:49.08]  how to be better and we're not all
+[67:51.92]  carbon copies you know of of each other
+[67:55.60]  hearing is you try to optimize almost
+[67:57.28]  for a lot of different complimentary
+[67:59.64]  skills and very different backgrounds
+[68:01.72]  almost exactly and also people who have
+[68:04.60]  experience at different size companies I
+[68:07.32]  think you know we I love folks from
+[68:09.84]  startups who have that that hustle and
+[68:12.52]  grit but I also love folks who've seen
+[68:16.24]  what scale looks like and can help us
+[68:18.32]  see around corners as far as what
+[68:20.64]  problems we will encounter as the
+[68:22.68]  business is growing and I think it you
+[68:24.56]  know it's not just about a diversity of
+[68:26.68]  skill and a diversity of background it's
+[68:28.68]  also you know diversity of sort of Prior
+[68:31.28]  company and Stage uh that can be really
+[68:34.44]  a a unique way to think about
+[68:37.12]  structuring your team so that you get
+[68:38.76]  the best of both worlds amazing well
+[68:41.84]  just when you thought we were done we
+[68:43.04]  reached our very exciting lightning
+[68:44.88]  round are you
+[68:46.56]  ready I am let's do it let's do it okay
+[68:50.48]  first question what are two or three
+[68:52.36]  books that you've recommended most to
+[68:54.44]  other people I tend to read fiction
+[68:57.28]  particularly historical fiction and I
+[68:59.76]  love spy novels so I think my brain is
+[69:03.00]  always in problem solving mode even when
+[69:05.76]  reading um a recent book that I read
+[69:08.24]  that I enjoyed was the rose code by Kate
+[69:13.08]  Quinn uh and it's about women Cod
+[69:15.12]  Breakers in World War II and I just I
+[69:17.36]  really enjoyed that but um rather than
+[69:20.80]  recommending a book I guess I did just
+[69:22.52]  recommend a book but rather than
+[69:23.92]  recommending another book I'm going to
+[69:25.72]  recommend the Libby app uh and
+[69:27.68]  supporting your local public library
+[69:30.04]  because I love the library and I love
+[69:33.00]  Libby so I'll I'll I'll I'll give that
+[69:36.32]  as my other recommendation beautiful
+[69:37.96]  very un brand with sharing economy
+[69:39.88]  company stuff uh Libby cool uh okay next
+[69:43.48]  question favorite recent movie or TV
+[69:45.32]  show this is another one I don't
+[69:47.52]  actually watch a lot of TV uh definitely
+[69:49.76]  don't watch a lot of movies in fact
+[69:51.52]  haven't seen some of like the movie
+[69:53.52]  greats I get yelled at a lot by my
+[69:55.76]  friend I can't believe you haven't seen
+[69:57.24]  that I tend to rewatch things so series
+[70:01.44]  from the past uh over and over again
+[70:04.64]  it's I think it's just like how I shut
+[70:06.44]  my brain off uh so I've recently
+[70:09.08]  rewatched the westwing which is one of
+[70:11.08]  my favorite shows of all time probably
+[70:13.76]  for like the 50th time oh my god um and
+[70:16.92]  uh Alias which was like a Jennifer
+[70:18.52]  Garner series from like the early 2000s
+[70:21.56]  also spy so I'm noticing like a theme I
+[70:24.28]  think I really love these spy the Spy
+[70:26.52]  genre but yeah I watched those uh
+[70:29.20]  they're both great but not at all
+[70:32.32]  current perfect perfectly acceptable do
+[70:35.72]  you have a favorite product that you
+[70:37.12]  recently discovered that you really love
+[70:39.92]  this is a bit of a curveball so Korean
+[70:43.20]  sunscreens I so I burn really easily so
+[70:46.48]  I have to wear sunscreen and I I love
+[70:48.64]  Korean sunscreens was introduced to them
+[70:51.72]  by a friend of mine and they're just far
+[70:53.80]  superior to what we have in in the US so
+[70:57.48]  I highly recommend people give Korean
+[70:59.28]  sunscreens a try particularly there's a
+[71:01.96]  beauty of joson branded sunscreen it's
+[71:04.16]  just amazing and it's delightful to wear
+[71:06.64]  which is important when you have to wear
+[71:08.16]  it every day so I've been trying to wear
+[71:09.80]  more sunscreen as I age and so this is a
+[71:12.32]  really good tip is there was that a
+[71:13.96]  brand you recommended or yeah so beauty
+[71:16.12]  of joson is the brand there's another
+[71:18.80]  brand isn't tree which also has a great
+[71:21.48]  sunscreen but I'll be honest almost
+[71:23.92]  every Korean sunscreen I've tried is
+[71:26.80]  just is great okay I'm Googling this as
+[71:29.36]  soon as we get
+[71:30.44]  off do you have a favorite life motto
+[71:34.88]  that you often come back to and share
+[71:37.48]  and or share with family and friends
+[71:38.88]  even worker in life I do so there is a
+[71:42.20]  John Steinbeck quote which I'm not big
+[71:44.68]  on quotes but I like this one which is
+[71:47.56]  that uh it's a common experience that a
+[71:50.52]  problem difficult at night is resolved
+[71:53.36]  in the morning after the Committee of
+[71:55.80]  sleep has worked on it uh I find that
+[71:58.76]  that's something I really live by I
+[72:00.64]  think uh first off I love sleep uh and I
+[72:04.72]  try to get as much of it as possible but
+[72:07.56]  the other thing is that if I'm stuck on
+[72:09.56]  a problem or if I am writing a response
+[72:12.76]  to something where like a a tense issue
+[72:15.36]  or an emotional issue often I find that
+[72:18.04]  if I put down my thoughts go to sleep
+[72:21.16]  check it in the morning I end up with a
+[72:23.96]  better outcome so you know all of a
+[72:26.52]  sudden you have a New Perspective and
+[72:28.16]  Clarity on a problem you were stuck on
+[72:30.56]  or you realize that you weren't clear in
+[72:33.48]  the way you were communicating your
+[72:34.92]  thoughts because you were emotional
+[72:36.52]  about something and you're able to put
+[72:38.64]  together a much better response to to an
+[72:41.40]  email or or to whatever problem you're
+[72:43.48]  handling so sleep can solve lots of
+[72:45.68]  problems I love sleep as well always
+[72:47.84]  telling my wife let's go to sleep like
+[72:50.32]  okay I'll be there soon uh I love that
+[72:52.68]  advice okay uh two more questions who's
+[72:54.84]  in inuenced you most in your career is
+[72:57.68]  there something that comes to
+[72:59.40]  mind so I think two answers uh M
+[73:04.16]  multi-art answer so I think first you
+[73:06.40]  know I've I've my career has been in
+[73:08.28]  male dominated Industries and I've
+[73:10.24]  worked with just some incredible women
+[73:12.84]  whove really influenced me when I was a
+[73:14.88]  banker there was there were two senior
+[73:17.40]  Bankers Vanessa Roberts and Gina terrone
+[73:21.00]  Who at Leman Brothers where I worked and
+[73:23.40]  they were just so incredible they were
+[73:25.40]  just so good at their jobs and I found
+[73:28.12]  that really inspiring and then at at
+[73:30.24]  door Dash uh Tia sheringham who is our
+[73:32.72]  our GC uh and Liz jarvisen who leads
+[73:36.08]  comms uh are just like dominant in their
+[73:39.28]  fields and I think that that's really
+[73:41.44]  empowering and uh have been big
+[73:43.76]  influences on me to just see strong
+[73:46.92]  powerful women kind of kicking ass and
+[73:49.44]  uh and that helps me believe that I can
+[73:52.28]  I can do the same so that's one answer
+[73:54.56]  and then the other answer sort of cliche
+[73:57.48]  but my parents my mom was a statistician
+[74:00.56]  at the UN before she got married and she
+[74:03.48]  actually chose to stay home and raise
+[74:05.40]  three children uh but when I so I'm the
+[74:08.08]  youngest and when I was in I think it
+[74:09.88]  was elementary school she decided to go
+[74:12.72]  back to school switch careers uh and
+[74:15.20]  become a nurse and so the fact that she
+[74:17.68]  embarked on this completely new career
+[74:20.64]  in her 40s after you 15 years as a
+[74:24.16]  stay-at-home mom
+[74:25.72]  and you know my father supported this I
+[74:27.88]  think that that was really really
+[74:30.00]  influential and was probably the first
+[74:32.04]  time I saw that you can do whatever you
+[74:34.52]  put your mind to no matter your age no
+[74:37.60]  matter your circumstances so that was
+[74:39.72]  really influential and i' I don't think
+[74:42.12]  I've ever told her that so hi Mom hi
+[74:45.96]  yeah I think that was that was
+[74:47.28]  influential for my career definitely
+[74:49.40]  it's a beautiful answer uh fun fact I
+[74:51.92]  work with Liz at Airbnb your uh person
+[74:55.32]  just mentioned in the com's team love
+[74:56.96]  each ass she's amazing final question so
+[75:00.64]  when you join door Dash imagine it
+[75:02.36]  wasn't obvious that it was going to work
+[75:04.04]  I imagine it was still like this is a
+[75:05.76]  crazy idea maybe it'll work maybe not is
+[75:08.20]  there a moment you recall where you're
+[75:09.72]  like I think this is going to be a big
+[75:11.80]  success I think this is actually going
+[75:13.20]  to work out to be honest I went into
+[75:17.04]  door
+[75:18.68]  Dash because I wanted to learn for the
+[75:22.16]  experience I thought it was interesting
+[75:23.84]  problems with interesting people I never
+[75:26.68]  thought too much about whether it would
+[75:28.36]  work I of course wanted it to work and
+[75:30.12]  was very competitive and wanted to win I
+[75:32.96]  think there sort of two moments that
+[75:35.32]  stand out one was when the thirdparty
+[75:40.16]  market share data showed that we had
+[75:43.68]  become the number one player after I
+[75:45.68]  think we started at number four or five
+[75:48.28]  and I think that that was really
+[75:49.44]  exciting to see the trajectory and to
+[75:52.44]  see um to see us gain category share
+[75:56.84]  that was exciting I think I probably
+[75:58.40]  didn't see it until like months after it
+[76:00.56]  had happened CU we don't spend a ton of
+[76:02.96]  time focusing on it but I do remember
+[76:06.44]  somebody wanted to include the graph in
+[76:08.52]  some presentation some sales material
+[76:11.60]  like oh we're number one like that
+[76:13.76]  that's incredible we used to be number
+[76:16.08]  five so I'd say that that was one the
+[76:17.96]  other one that stands out was I used to
+[76:21.60]  the first talk I gave in uh a lot of
+[76:25.72]  these like startup talks in the early
+[76:27.72]  days in Boston and I'd ask the audience
+[76:29.80]  like how many of you have used door Dash
+[76:31.60]  and there'd be like three people who
+[76:33.36]  would rais their hand and then a it was
+[76:36.24]  a few years ago maybe like 20 2018 2019
+[76:40.24]  and I was giving a talk and I asked the
+[76:42.68]  audience like how many of you have used
+[76:44.20]  door Dash and like almost everyone's
+[76:46.24]  hands went up and that was actually
+[76:48.92]  pretty memorable for me because uh in my
+[76:52.36]  mind we were still the sort of small
+[76:55.36]  startup uh that no one had heard of
+[76:57.52]  where I had to over annunciate the D's
+[77:00.00]  in door Dash so people didn't think I
+[77:02.20]  worked for Jord Dash the 9s denim
+[77:05.20]  company uh and so that was that was
+[77:07.60]  pretty meaningful to me uh when when
+[77:10.24]  just so many people had uh used the
+[77:14.80]  product and or were were consumers of
+[77:17.24]  door Dash was pretty exciting and I
+[77:19.20]  still get excited I saw door Dash
+[77:21.00]  mentioned in a book recently that I was
+[77:23.04]  reading and I was like the book uh so
+[77:26.76]  those little things when you become part
+[77:28.36]  of the kind of cultural lingo that I
+[77:31.00]  think are are really really special well
+[77:33.76]  I'm a very happy customer of D Dash I've
+[77:35.72]  never had a never deliver it's always
+[77:38.12]  it's always there sometimes a little
+[77:39.60]  late usually it's perfect thank you for
+[77:42.12]  everything you do go team door Dash two
+[77:44.52]  final questions where can folks find you
+[77:46.32]  online if they want to follow stuff that
+[77:48.60]  you do I know you've been doing more
+[77:49.76]  writing on LinkedIn and things like that
+[77:51.16]  so just help people understand where to
+[77:52.76]  find you and how can listeners be useful
+[77:54.64]  to you you yeah so as you mentioned uh
+[77:58.28]  uh to find me LinkedIn uh I don't have a
+[78:00.72]  huge social uh presence but I am on
+[78:03.12]  LinkedIn and I am currently writing a
+[78:05.60]  series of blog posts about my experience
+[78:08.72]  building a Global analytics or at door
+[78:11.56]  Dash some of the lessons I've learned
+[78:13.12]  over the last 10 years so definitely
+[78:15.44]  check those out and as far as your
+[78:17.52]  second question of how listeners can be
+[78:19.80]  useful to me I guess read read the post
+[78:23.44]  on LinkedIn and I'd love to hear what
+[78:25.12]  people think uh whether you agree with
+[78:27.80]  my point of view or not uh that being
+[78:30.08]  said be nice like I want honest feedback
+[78:33.56]  but I want uh kindness as well so uh
+[78:37.28]  yeah just engage with uh with the
+[78:39.84]  content and let me know what what y'all
+[78:42.32]  think I think I do have a broader ask
+[78:45.32]  which uh is just to encourage folks
+[78:48.40]  listening to to truth seek something I
+[78:51.96]  you know take seriously at door Dash
+[78:53.64]  it's a company value
+[78:55.52]  um but there's a lot of misinformation
+[78:57.40]  out there and it's often up to us as
+[78:59.44]  individuals to figure out what's fact
+[79:01.80]  and what's fiction so I have a sort of a
+[79:04.44]  plea for folks to do your best to search
+[79:06.80]  for the truth and speak the truth and I
+[79:09.32]  think we'll all be better off for it and
+[79:11.32]  of course used door Dash so course guess
+[79:14.48]  I had three there are three things that
+[79:16.48]  listeners can do your door dash.com uh
+[79:20.48]  that was awesome I love that last Point
+[79:21.80]  as well in addition to VI door Dash uh
+[79:24.96]  Jessica thank you so much for being here
+[79:27.36]  thank you for having me it was a lot of
+[79:28.76]  fun same for me bye
+[79:31.68]  everyone thank you so much for listening
+[79:33.96]  if you found this valuable you can
+[79:35.40]  subscribe to the show on Apple podcast
+[79:37.60]  Spotify or your favorite podcast app
+[79:40.48]  also please consider giving us a rating
+[79:42.48]  or leaving a review as that really helps
+[79:44.64]  other listeners find the podcast you can
+[79:46.96]  find all past episodes or learn more
+[79:49.00]  about the show at lenp podcast.com see
+[79:52.32]  you in the next episode

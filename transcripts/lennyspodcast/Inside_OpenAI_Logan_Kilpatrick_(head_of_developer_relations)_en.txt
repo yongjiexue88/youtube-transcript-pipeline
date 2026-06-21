@@ -1,0 +1,2035 @@
+Title     : Inside OpenAI | Logan Kilpatrick (head of developer relations)
+Video ID  : XkMbkWG2ca4
+URL       : https://www.youtube.com/watch?v=XkMbkWG2ca4
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2026
+Saved at  : 2026-06-21 01:26:38
+------------------------------------------------------------
+
+[00:00.08]  finding people who are high agency and
+[00:04.44]  work with urgency if I was hiring five
+[00:07.08]  people today like those are like some of
+[00:08.72]  the top two characteristics that I would
+[00:10.92]  look for in people because you can take
+[00:12.80]  on the world if you have people who have
+[00:14.52]  high agency and like not needing to get
+[00:17.24]  50 people's different consensus they
+[00:19.48]  hear something from our customers about
+[00:20.80]  a challenge that they're having and like
+[00:22.24]  they're already pushing on what the
+[00:23.68]  solution for them is and not waiting for
+[00:26.60]  all the other things to happen that like
+[00:28.40]  people just go and do it and solve the
+[00:29.72]  problem woman I love that it's so fun to
+[00:31.44]  be able to to be a part of those
+[00:35.12]  situations today my guest is Logan
+[00:37.52]  kpatrick Logan is head of developer
+[00:39.88]  relations at open aai where he supports
+[00:42.24]  developers building on open AIS apis and
+[00:45.04]  J GPT before open aai Logan was a
+[00:48.04]  machine learning engineer at Apple and
+[00:50.00]  advised NASA on their open source policy
+[00:52.64]  if you can believe it Chad GPT launched
+[00:55.32]  just over a year ago and transformed the
+[00:58.04]  way that we think about Ai and what it
+[00:59.76]  means means for our products and our
+[01:01.24]  lives Logan has been at the front lines
+[01:03.92]  of this change and every day is helping
+[01:06.24]  developers and companies figure out how
+[01:08.16]  to leverage these new AI superpowers in
+[01:10.88]  our conversation we dig into examples of
+[01:13.60]  how people are using chat gbt and the
+[01:16.04]  new gpts and other open AI apis in their
+[01:19.32]  work and their life Logan shares some
+[01:21.56]  really interesting advice on how to get
+[01:23.20]  better at prompt engineering we also get
+[01:25.72]  into how open AI operates internally how
+[01:28.08]  they ship so quickly and the two key
+[01:29.96]  attributes they look for in the people
+[01:31.56]  that they hire plus where Logan sees the
+[01:34.08]  biggest opportunities for new products
+[01:35.80]  and new startups building on their apis
+[01:38.80]  we also get a little bit into the very
+[01:40.36]  dramatic weekend that open AI had with
+[01:43.16]  the board and Sam Alman and all of that
+[01:45.88]  and so much more a huge thank you to Dan
+[01:48.16]  shipper and Dennis Yang for some great
+[01:49.96]  question suggestions with that I bring
+[01:52.16]  you Logan Kilpatrick after a short word
+[01:54.60]  from our
+[01:55.68]  sponsors this episode is brought to you
+[01:58.20]  by hex if you're a data person you
+[02:00.68]  probably have to jump between different
+[02:02.20]  tools to run queries build
+[02:04.00]  visualizations write Python and send
+[02:06.32]  around a lot of screenshots and CSV
+[02:08.76]  files hex brings everything together its
+[02:11.80]  powerful notebook UI lets you analyze
+[02:13.76]  data in SQL python or no code in any
+[02:16.68]  combination and work together with live
+[02:18.68]  multiplayer and Version Control and now
+[02:21.36]  hex's ai tools can generate queries and
+[02:23.56]  code create visualizations and even
+[02:25.72]  Kickstart a whole analysis for you all
+[02:27.80]  from natural language prompts it's like
+[02:30.00]  having an analytics co-pilot built right
+[02:32.00]  into where you're already doing your
+[02:33.32]  work then when you're ready to share you
+[02:35.16]  can use hexa's Drag and Drop app builder
+[02:37.20]  to configure beautiful reports or
+[02:38.84]  dashboards that anyone can use join the
+[02:41.24]  hundreds of data teams like notion
+[02:42.92]  alltrails Loom mix panel and algolia
+[02:45.68]  using hex every day to make their work
+[02:47.80]  more impactful sign up today at
+[02:52.20]  hex.exe trial of the hex team plan
+[02:55.36]  that's
+[02:56.44]  hexte
+[02:58.16]  Lenny this episode is brought to you by
+[03:00.92]  whimsicle the iterative product
+[03:02.96]  workspace whimsicle helps product
+[03:05.24]  managers build Clarity and shared
+[03:07.60]  understanding faster with tools designed
+[03:09.68]  for solving product challenges with
+[03:11.84]  Whimsical you can easily explore new
+[03:14.12]  Concepts using Dragon drop wireframe and
+[03:16.24]  diagram components create Rich product
+[03:18.52]  briefs that show and sell your thinking
+[03:21.68]  and keep your team aligned with one
+[03:23.20]  source of Truth for all of your build
+[03:25.20]  requirements whimsicle also has a
+[03:27.76]  library of easy to ous templates from
+[03:29.76]  product leaders like myself including a
+[03:32.12]  project proposal one pager and a go to
+[03:34.08]  market worksheet give them a try and see
+[03:36.64]  how fast and easy it is to build Clarity
+[03:39.68]  with Whimsical sign up at whimsicle
+[03:44.60]  docomo Pro Plan that's whimsicle
+[03:51.88]  docomo thank you so much for being here
+[03:54.12]  welcome to the podcast thanks for having
+[03:55.92]  me Lenny I'm super excited I want to
+[03:57.64]  start with the elephant in the room room
+[03:59.92]  which I think the elephant is actually
+[04:01.36]  leaving the room cuz I think this is
+[04:02.84]  months ago at this point but I'm still
+[04:04.36]  just really curious what was it like on
+[04:07.76]  the inside of open AI during the the
+[04:10.44]  very dramatic weekend with the board and
+[04:12.32]  Sam and all those things what was it
+[04:14.28]  like and is there a story maybe you
+[04:16.04]  could share that maybe people haven't
+[04:17.20]  heard about what it was like on the
+[04:18.76]  inside of what was going on yeah it was
+[04:21.24]  it was definitely a very stressful
+[04:23.64]  stressful Thanksgiving week I think like
+[04:25.88]  in Broad context like you know opena had
+[04:27.88]  been pushing for a really long time
+[04:29.72]  since chbt came out and that was
+[04:31.80]  supposed to be like the first one of the
+[04:33.56]  first weeks that like the whole company
+[04:35.04]  had like taken time away to like
+[04:36.72]  actually reset and have a break so like
+[04:38.44]  very selfishly I was super excited spent
+[04:40.48]  time with my family all that stuff um
+[04:43.24]  and then the Friday afternoon we we got
+[04:45.64]  the message that all of the changes were
+[04:47.88]  happening and I think it was super
+[04:50.16]  shocking because I think and and this is
+[04:52.12]  a perspective a lot of folks sh like
+[04:53.60]  there's everybody has uh and had and
+[04:56.28]  continues to have like such deep trust
+[04:58.04]  in in Sam and Greg and our leadership
+[05:00.40]  team that it was like just very
+[05:01.76]  surprising and we're also like a very as
+[05:05.12]  far as company cultures go like very
+[05:06.72]  transparent and very open so like you
+[05:08.52]  know when there's problems or there's
+[05:09.96]  things going on like we tend to hear
+[05:11.36]  about them and again it was the the
+[05:13.28]  first time that a lot of us had had
+[05:14.92]  heard um some of the things that were
+[05:16.88]  happening between the board and and the
+[05:18.16]  leadership team so very very surprising
+[05:20.56]  I think my my sort
+[05:22.56]  of being someone who's not based in San
+[05:26.44]  Francisco I was like again very
+[05:28.52]  selfishly like kind of happy that it
+[05:30.56]  happened over the Thanksgiving break
+[05:32.36]  because a lot of folks actually had like
+[05:33.96]  gone home to different places so it felt
+[05:35.80]  it felt like I had a little bit of
+[05:36.96]  comfort knowing like I wasn't the only
+[05:38.68]  one noted San Francisco because like
+[05:40.52]  everybody was meeting up in person to do
+[05:42.28]  a bunch of stuff and uh and be together
+[05:44.64]  during that time so it was it was nice
+[05:47.08]  to to know that there was a few other
+[05:49.16]  folks who who were sort of out of the
+[05:50.48]  loop with me I think the thing that
+[05:52.44]  surprised me the most was like just how
+[05:55.40]  quickly everybody got back to business
+[05:57.92]  like I flew to San Francisco the next
+[05:59.60]  week after Thanksgiving which I wasn't
+[06:01.00]  planning to do to be with the team in
+[06:02.52]  person and like being literally Monday
+[06:05.32]  morning I was kind of walking into the
+[06:06.84]  office being like expecting I don't know
+[06:09.20]  something like weird to be going on or
+[06:11.08]  happening or like a and really it was
+[06:13.08]  like people laser focus and like back to
+[06:15.68]  work and I think that that like speaks
+[06:17.92]  to like the caliber of of our team and
+[06:21.04]  like everybody who's just so excited
+[06:22.80]  about building towards the mission that
+[06:25.04]  we're building towards so I think that
+[06:26.64]  was like the most yeah that was the most
+[06:28.48]  surprising thing of the
+[06:29.96]  the whole in I think a lot of companies
+[06:31.68]  like would have had the potential to
+[06:33.08]  like truly be like derailed for some
+[06:35.48]  non-trivial amount of time by this and
+[06:37.24]  like everybody was just right back to it
+[06:39.08]  which I love I feel like it also maybe
+[06:40.88]  brought the team closer together feels
+[06:42.32]  like it was a kind of traumatic
+[06:44.68]  experience that may uh bring folks
+[06:47.56]  together because it was something they
+[06:48.48]  all shared is there anything along those
+[06:49.84]  lines that's like wow things are a
+[06:51.00]  little different now one of my takeaways
+[06:53.76]  was I'm actually very grateful that this
+[06:55.84]  happened when it happened I think like
+[06:58.04]  today the stakes are are you know
+[07:00.56]  they're they're still relatively high
+[07:01.92]  like people have built their businesses
+[07:03.16]  on top of open AI like we have tons of
+[07:04.96]  customers who love chat so if something
+[07:06.88]  bad happens to us like we definitely
+[07:09.56]  impact our customers but sort of on the
+[07:11.52]  world scale like you know somebody else
+[07:13.76]  will build a a model if open AI
+[07:16.12]  disappeared and and continue towards
+[07:17.84]  this this progress of of general
+[07:19.48]  intelligence I think you know fast
+[07:21.68]  forward like five or 10 years if
+[07:23.64]  something like this would have would
+[07:24.80]  have happened um and we sort of hadn't
+[07:27.20]  gone through the the hopeful UPC like or
+[07:30.56]  transformation and and sort of all those
+[07:32.48]  changes that are going to happen I think
+[07:33.80]  it would have been a little bit or
+[07:35.12]  potentially much worse of of an outcome
+[07:36.88]  so I'm glad that things happened when
+[07:38.48]  when the stakes are a little bit lower
+[07:39.84]  and I totally agree with you it's like
+[07:41.76]  the team has been growing so
+[07:44.36]  rapidly over the last like year since I
+[07:47.88]  joined and it's been it's been crazy to
+[07:50.32]  to think about like how many new folks
+[07:51.84]  there are and I really think that this
+[07:53.16]  like really brought people together
+[07:55.16]  because most folks like historically
+[07:57.64]  many of the folks when I joined what
+[07:59.44]  kind of banded us all together was like
+[08:00.84]  the launch of jbt the launch of gbt 4
+[08:02.96]  and like for folks who like weren't
+[08:04.12]  around for some of those launches it was
+[08:05.68]  perhaps Deb day uh for folks who W
+[08:07.80]  around for devb day like it was probably
+[08:09.36]  this event so I think we've had these
+[08:11.12]  events that have really brought the the
+[08:12.88]  company together cross functionally so
+[08:14.92]  hopefully all the future ones will be
+[08:16.60]  like really exciting things like you
+[08:18.12]  know gbt 5 whenever that comes and stuff
+[08:20.08]  like that awesome we're gonna talk about
+[08:21.68]  gbt 5 going in a totally different
+[08:24.32]  direction what is the most mind-blowing
+[08:26.76]  or surprising thing that you've seen AI
+[08:29.72]  do recently the things that are getting
+[08:31.92]  me most excited are these like new
+[08:34.36]  interfaces around AI like the the rabbit
+[08:37.68]  R1 I don't know if you've seen that but
+[08:39.32]  it's a consumer Hardware device this
+[08:41.44]  company called TLD draw I don't know if
+[08:43.48]  you've seen TL draw I think you sketch
+[08:45.68]  something and then it makes it as as a
+[08:46.96]  website yeah and that and that's like
+[08:48.32]  only like a small piece of what TL draw
+[08:50.40]  is actually working on but like there's
+[08:51.72]  all of these like new interfaces to
+[08:54.64]  interact with AI and I think like I was
+[08:56.36]  having a conversation with the TL draw
+[08:57.84]  folks a couple of days ago like really
+[09:00.08]  blows my mind to think about how chat is
+[09:03.32]  the predominant way that folks are using
+[09:05.20]  AI today and like I actually think like
+[09:07.28]  and and this is my you know my bull case
+[09:09.04]  for the folks at T draw I'm super
+[09:10.52]  excited for them to build what they're
+[09:11.84]  building but they're sort of building
+[09:13.32]  this Infinite Canvas experience and you
+[09:15.28]  can imagine how as you're interacting
+[09:17.72]  with an AI on a daily basis like you
+[09:20.12]  know you might want to jump over to your
+[09:21.80]  like Infinite Canvas which the AI has
+[09:24.16]  sort of filled in all the details and
+[09:25.76]  you might see like a reference to a file
+[09:27.72]  and to a video and like all of these
+[09:29.64]  different things and it's such a cool
+[09:31.08]  way like it actually makes a lot more
+[09:33.16]  sense for us as humans to like see stuff
+[09:36.08]  in that type of format than I think like
+[09:38.04]  just listing out a bunch of stuff in
+[09:39.68]  chat so I'm really really excited to see
+[09:41.84]  more people I think like 2024 is the
+[09:44.44]  year of multimodal AI but it's also the
+[09:46.76]  year that people really push the
+[09:48.08]  boundaries of um some of these like new
+[09:50.48]  ux paradigms around AI it's funny I feel
+[09:53.56]  like chat Bots like as a as a PM for
+[09:56.16]  many years it feels like every
+[09:57.32]  brainstorming session we had about new
+[09:59.12]  new features it's like hey we should
+[10:00.24]  build a chatbot to solve this problem
+[10:02.12]  it's like The Perennial like oh chatbot
+[10:03.76]  of course someone's going to suggest we
+[10:04.84]  do a chatbot and now they're actually
+[10:07.08]  useful and working and everyone's
+[10:08.60]  building chat Bots a lot of them based
+[10:10.68]  on openi apis there's not really a
+[10:13.12]  question there but maybe the question I
+[10:14.16]  was going to get to this later is just
+[10:15.92]  when people are thinking about building
+[10:17.64]  a product like say TL
+[10:19.52]  draw what should they think about where
+[10:21.76]  open ey is not going to go versus like
+[10:24.80]  here's what open ey is going to do for
+[10:26.12]  us we shouldn't worry about them
+[10:28.40]  building a version if T draw in the
+[10:29.80]  future what's the kind of the the way to
+[10:31.52]  think about where you won't be disrupted
+[10:33.52]  essentially by openi knowing also they
+[10:35.64]  may change their mind that's a great
+[10:37.44]  question I think like we're we're deeply
+[10:39.60]  focused on these like very very general
+[10:42.16]  use cases like the general reasoning
+[10:44.20]  capabilities the general coding the
+[10:45.96]  general writing abilities I think where
+[10:47.88]  you start to get into some of these like
+[10:49.28]  very critical applications and I think a
+[10:51.00]  great example of this is um it's
+[10:52.68]  actually like Harvey I don't know if
+[10:53.80]  you've seen Harvey but it's this legal
+[10:55.36]  AI use case where they're they're
+[10:56.92]  building custom models and tools to help
+[10:58.68]  lawyers and people at legal firms and
+[11:00.64]  stuff like that and that's a great
+[11:01.80]  example of like our models are probably
+[11:03.64]  never going to be as capable as as some
+[11:05.36]  of the things that that Harvey's doing
+[11:07.20]  because like our our goal and our
+[11:08.84]  mission is really to solve this like
+[11:10.40]  very general use case and then people
+[11:12.20]  can do things like fine-tuning and build
+[11:13.88]  all their own custom you know UI and
+[11:16.16]  product features on top of that and I
+[11:18.08]  think that's the you know I I have a lot
+[11:20.88]  of empathy and like a lot of excitement
+[11:23.92]  for people who are like building these
+[11:25.44]  like very general products today like I
+[11:27.12]  talked to a lot of developers who are
+[11:28.40]  building like you know just general
+[11:30.20]  purpose assistants and like general
+[11:31.84]  purpose agents and stuff like that I
+[11:33.48]  think it's cool and it's a good idea I
+[11:35.40]  think like the challenge for them is
+[11:36.68]  like but they are going to end up
+[11:38.32]  directly competing against us in those
+[11:40.08]  spaces and I think there's there's
+[11:41.64]  enough room for a lot of people to be
+[11:43.08]  successful but like it to me like you
+[11:45.12]  shouldn't be surprised when you know we
+[11:47.24]  end up launching some like general
+[11:48.84]  purpose agent product because like again
+[11:50.84]  we're sort of building that with gpts
+[11:52.64]  today and versus like we're not going to
+[11:55.04]  launch like some of these like very
+[11:56.68]  verticalized products like we're not
+[11:58.28]  going to launch like an AI sales agent
+[12:01.56]  like that's just not what we're building
+[12:03.08]  towards and companies who are and have
+[12:04.80]  some domain specific knowledge and
+[12:06.20]  they're really excited about that
+[12:07.32]  problem space like they can go and do
+[12:09.32]  that and leverage our models and like
+[12:11.44]  end up continuing to be on The Cutting
+[12:13.16]  Edge without having to like do all that
+[12:14.64]  r&f for themselves got it so the advice
+[12:17.32]  I'm hearing is get specific about use
+[12:19.52]  cases and that could be either models
+[12:22.40]  that are tuned to be especially useful
+[12:24.88]  for use case like sales or make an
+[12:27.84]  interface or experience solving a very a
+[12:29.48]  more specific problem and and I think if
+[12:31.08]  you're going to try and solve this like
+[12:33.08]  very general like if you're going to try
+[12:34.80]  to build like the next general assistant
+[12:36.68]  to compete with something like Chaim
+[12:38.72]  like it has to be so radically different
+[12:40.72]  like people have to really like be like
+[12:42.36]  wow this is solving like these 10
+[12:44.36]  problems that I have with CHT and
+[12:45.80]  therefore I'm going to go and try your
+[12:46.96]  new thing otherwise like you know we're
+[12:49.00]  just putting a ton of engineering effort
+[12:50.84]  and and research effort into making that
+[12:52.56]  like an incredible product and it's just
+[12:53.84]  going to be like the normal challenges
+[12:56.08]  of building compy like it's just hard to
+[12:57.84]  compete against somebody like that
+[12:59.28]  awesome okay that's great I was going to
+[13:00.84]  get to that later but I'm glad we
+[13:01.88]  touched that I imagine that's on the
+[13:02.96]  minds of many developers and Founders
+[13:05.52]  kind of along the same lines there's a
+[13:07.52]  lot of talk about how chat GPT and gpts
+[13:11.20]  and many of the tools you guys offer are
+[13:12.80]  going to make a company much more
+[13:14.32]  efficient they don't need as many
+[13:15.60]  Engineers data scientists PMS things
+[13:17.44]  like that but I think it's also hard for
+[13:19.40]  companies to think about what should we
+[13:21.88]  actually like what can we actually do to
+[13:23.56]  make our company more efficient I'm
+[13:25.92]  curious if there's any examples that you
+[13:28.24]  can share of how companies have taken
+[13:30.92]  built to say a GPT internally to do
+[13:33.40]  something so that they don't have to
+[13:35.36]  spend engineering hours on it or
+[13:37.40]  generally just used open AI tooling to
+[13:39.92]  make their business internally more
+[13:41.60]  efficient yeah that's a great question
+[13:43.60]  and I wonder if if you can put this in
+[13:45.44]  like the show notes or something like
+[13:46.80]  that but there's a really great uh
+[13:48.64]  Harvard Business School study about and
+[13:51.08]  I forgot which Consulting fir they did
+[13:53.24]  it with maybe it was like Boston
+[13:54.36]  Consulting or or something like that but
+[13:56.56]  it it might have been one of the other
+[13:57.76]  ones and they talk about about like the
+[13:59.48]  order of magnitude of efficiency gained
+[14:02.80]  for those folks who are using AI tools
+[14:04.96]  and I I think it was chat gbt
+[14:06.32]  specifically in those use cases that
+[14:07.84]  they were using comparatively against
+[14:09.56]  like folks who aren't using AI I'm
+[14:11.88]  really excited also just like as this
+[14:14.04]  more time passes between the release of
+[14:16.00]  this technology for us to get more like
+[14:17.76]  empirical studies because like I feel
+[14:19.52]  this for myself like as somebody who's
+[14:21.20]  an engineer today like I use chbt and
+[14:23.16]  like I can ship things way faster than I
+[14:25.40]  would be able to I don't have any like
+[14:27.12]  good metrics for myself to to to put
+[14:29.76]  like a a specific number on it but I'm
+[14:31.56]  guessing like people are working on
+[14:32.96]  those studies right now I think
+[14:34.44]  engineering is actually like one of the
+[14:36.72]  highest leverage things that you could
+[14:38.32]  be using AI to do today and like really
+[14:40.84]  unlocking like probably on the order of
+[14:43.72]  at least a 50% Improvement especially
+[14:46.64]  for some of the like lower hanging fruit
+[14:48.96]  software engineering tasks like the
+[14:50.44]  models are just so capable at doing that
+[14:52.80]  work and it's crazy to think and I'm
+[14:54.64]  guessing actually GitHub probably has a
+[14:56.48]  bunch of really great studies they
+[14:58.68]  published around like co-pilots and you
+[15:00.60]  could use those as an analogy for what
+[15:02.20]  people are getting from chat gbt as well
+[15:04.00]  but those are probably like the highest
+[15:06.44]  leverage things and I think now with
+[15:07.96]  gpts people are able to like go in and
+[15:11.00]  solve some of these more tactical
+[15:12.16]  problems I think one of the general
+[15:13.40]  challenges with chat GPT is like it
+[15:15.20]  gives like a decent answer for like a a
+[15:18.20]  lot of different use cases but
+[15:19.88]  oftentimes it's not like particular
+[15:22.20]  enough to like the voice of your company
+[15:24.76]  or like the Nuance of the work that
+[15:26.48]  you're doing and I think now with gpts
+[15:28.40]  like and people who are using the teams
+[15:31.00]  in chat gbt and Enterprise in chat gbt
+[15:33.24]  they can actually build those things
+[15:35.04]  incorporate the Nuance of their own
+[15:36.72]  company and make make solving those
+[15:38.96]  tasks like much much more domain
+[15:40.80]  specific so we we literally just
+[15:42.48]  launched gbts a couple of months ago so
+[15:44.64]  I don't think there's been any like good
+[15:47.20]  public success stories but I'm I'm
+[15:49.00]  guessing that that success is happening
+[15:51.16]  right now at companies and and hopefully
+[15:52.80]  we'll hear more about that in the in the
+[15:54.24]  months to come as folks like get super
+[15:55.96]  excited about sharing those case studies
+[15:58.08]  I'll share an example example um so I
+[15:59.44]  have this good friend uh his name's
+[16:00.80]  Dennis Yang he works at chime and he
+[16:03.12]  told me about two things that they're
+[16:04.60]  doing at chime that seem to be providing
+[16:07.56]  value one is he built a GPT that helps
+[16:10.28]  write ads for Facebook and Google just
+[16:13.44]  it gives you ideas for ads to run and so
+[16:16.12]  that takes a little load off the
+[16:17.40]  marketing team or the grow team and then
+[16:19.36]  he built another GPT that delivers
+[16:21.80]  experiment results kind of like a data
+[16:23.16]  scientist with like here's the result of
+[16:24.52]  this experiment and then you could talk
+[16:26.84]  to it and ask for like Hey how how much
+[16:28.92]  longer do you think we should run this
+[16:29.92]  for or what might this imply about our
+[16:32.12]  product and things like that and I think
+[16:33.88]  it's really that like you said is there
+[16:36.08]  anything else that comes to mind just
+[16:37.16]  like things you've heard people do just
+[16:38.64]  like wow that was a really smart wave so
+[16:40.32]  I get there's like engineering copil
+[16:42.64]  type tooling is there anything else that
+[16:44.56]  comes to mind just to give people a
+[16:45.60]  little inspiration of like wow that's an
+[16:47.36]  interesting way I should be thinking
+[16:48.84]  about using some of these tools I I've
+[16:50.80]  seen some interesting gpts around like
+[16:53.32]  uh the planning use cases like you want
+[16:55.28]  to do like okr planning for your team or
+[16:57.48]  something like that there's I I just
+[16:59.04]  actually saw somebody tweet it like
+[17:00.36]  literally yesterday I've seen some cool
+[17:02.24]  like Venture Capital ones of like doing
+[17:04.56]  diligence on like a deal flow which is
+[17:06.52]  kind of interesting and like getting
+[17:07.72]  some different perspectives I think all
+[17:09.76]  of those like horizontal use cases where
+[17:12.48]  like you can bring in a different
+[17:14.48]  personality and like get perspective on
+[17:17.08]  different things I think is really cool
+[17:18.40]  like i' I've personally used in a gbt
+[17:21.04]  the private gbt that I use myself that
+[17:22.76]  like helps with some of the like
+[17:24.48]  planning stuff for for different
+[17:26.04]  quarters and like just making sure that
+[17:27.92]  I'm being consistent in how I'm framing
+[17:31.24]  things like driving back to like
+[17:33.20]  individual metrics stuff that like when
+[17:35.40]  people do planning like they often miss
+[17:37.08]  and like are bad at and it's been super
+[17:39.04]  helpful for me to like have a GPT to
+[17:40.84]  like force me to think about some of
+[17:42.52]  those things wait can you talk more
+[17:44.16]  about this what does this GPT do for you
+[17:45.68]  and how do you what do you feed it yeah
+[17:48.40]  there's I I forgot what article I found
+[17:50.32]  online but it was like some article that
+[17:51.84]  was talking about like what are the best
+[17:54.04]  ways to like set yourself up for success
+[17:56.24]  in planning and I took a bunch of the
+[17:57.92]  like I'll see if I can make it public
+[17:59.48]  after this and send you a link but took
+[18:01.12]  a bunch of the examples from that and
+[18:03.12]  went in and put some of those
+[18:04.80]  suggestions into the gbt and then when
+[18:06.52]  now when I do any of my planning of like
+[18:08.28]  I want to build this thing I put it
+[18:10.24]  through and and have it like generate a
+[18:12.24]  timeline generate all the specifics of
+[18:14.24]  like what are the metrics and success
+[18:15.96]  that I'm working for like who who might
+[18:18.16]  be some important cross functional
+[18:20.00]  stakeholders to like include in the
+[18:21.48]  planning process all that stuff and um
+[18:23.76]  it's been it's been helpful wow that is
+[18:26.40]  very cool that would be awesome if you
+[18:27.76]  made it public
+[18:29.08]  and if we do we'll link to it and we'll
+[18:31.28]  make it the number one most popular GPT
+[18:33.76]  in the store I love it going in a
+[18:36.40]  slightly different direction there's
+[18:37.84]  this whole genre of prompt engineering
+[18:40.60]  it feels like it's one of these really
+[18:41.84]  emerging skills I actually saw a startup
+[18:43.88]  hiring a prompt engineer one of I the
+[18:46.12]  startups I've invested in and I think
+[18:48.04]  that's going to blow a lot of people's
+[18:49.04]  minds that there's this new job that's
+[18:50.60]  emerging and I know the idea is this
+[18:52.20]  won't last forever that in theory AI
+[18:54.88]  will be so smart you don't need to
+[18:56.08]  really think about how to be smart about
+[18:57.48]  asking it for things you needed to do
+[18:59.32]  but can you just describe this idea of
+[19:01.36]  what is PRT engineering this term that
+[19:02.88]  people might be hearing and then even
+[19:04.84]  more interestingly just like what advice
+[19:06.28]  do you have for people to get better at
+[19:08.12]  writing prompts for say Chad GPT or
+[19:11.36]  through the API in general yeah this
+[19:13.76]  this is such an interesting space and I
+[19:15.64]  think it's like another space where I'm
+[19:17.72]  excited for people to do like more like
+[19:19.64]  scientific empirical studies about
+[19:21.44]  because there's like so much like gut
+[19:23.60]  feeling best practices that like maybe
+[19:25.60]  aren't actually true in a certain ways I
+[19:27.64]  think the the reason that prompt
+[19:29.32]  engineering exists and comes up at all
+[19:31.72]  is because the models are so inclined
+[19:35.28]  because of the way that they're trained
+[19:37.04]  to give you just an answer to the
+[19:39.12]  question that you asked crap in crap out
+[19:41.16]  if you ask like a a pretty like basic
+[19:43.56]  question you're going to get a pretty
+[19:44.80]  basic response and I actually think the
+[19:46.04]  same thing is true for humans and you
+[19:47.60]  can think of a great example of this
+[19:48.88]  when I go to another human and I ask
+[19:50.28]  like how's your day going they say it's
+[19:52.04]  going pretty good like literally
+[19:53.68]  absolutely zero Detail no Nuance like
+[19:56.48]  not very interesting at all versus again
+[19:58.64]  if you have some context with a person
+[20:00.52]  if you have a personal relationship with
+[20:01.96]  them and I ask you hey Lenny you know
+[20:03.52]  how's your day going like how did the
+[20:04.84]  last podcast go etc etc like you just
+[20:07.16]  have a little bit more context and and
+[20:09.20]  agency to go and answer my question I
+[20:11.28]  think this is like prompt engineering my
+[20:13.48]  whole my whole position on this is like
+[20:15.56]  prompt engineering is a very human thing
+[20:17.64]  like when we want to get some value out
+[20:20.88]  of a human we do this prompt engineering
+[20:23.64]  we we try to effectively communicate
+[20:25.56]  with that human in order to get the best
+[20:27.32]  output and the same is true of models
+[20:29.28]  and I think it's like again because
+[20:31.28]  we're using a system that appears to be
+[20:33.24]  really smart we assume that it has all
+[20:35.64]  this context but it's really like you
+[20:38.56]  know imagine a human human level
+[20:40.84]  intelligence but like literally no
+[20:42.48]  context like it has no idea what you're
+[20:44.40]  going to ask it it's never met you
+[20:45.96]  before it has no idea who you are what
+[20:48.16]  you do what your goals are and like it's
+[20:51.00]  the reason that you get super generic
+[20:52.76]  responses sometimes is because people
+[20:54.32]  forget they need to put that context in
+[20:56.52]  the model so I think the thing that is
+[20:58.76]  going to help solve this problem and we
+[21:01.60]  already kind of do this in the context
+[21:03.16]  of Dolly so when you go to the image
+[21:05.20]  generation model that we have do and you
+[21:07.36]  say I want a picture of a turtle what it
+[21:10.72]  does is it actually takes that
+[21:12.64]  description it says I want a picture of
+[21:14.40]  a turtle and it changes it into this
+[21:16.36]  High Fidelity like you know generate a
+[21:18.72]  picture of a turtle with a shell with a
+[21:21.64]  green background and you know lily pads
+[21:24.52]  in the water and all this other it adds
+[21:26.24]  all this Fidelity because that's the way
+[21:28.32]  that the model is trained it's trained
+[21:29.88]  on examples with super high fidelity
+[21:33.08]  this will happen with text models you
+[21:35.20]  can imagine a world where you go into
+[21:36.48]  catb and you say write me a blog post
+[21:38.16]  about AI it automatically will go and be
+[21:40.72]  like let me generate a much higher
+[21:42.48]  Fidelity description of what this person
+[21:44.32]  really wants which is you know generate
+[21:46.08]  me a blog post about AI that talks about
+[21:48.76]  the trade-offs between these different
+[21:50.28]  techniques and some example use cases
+[21:52.52]  and references some of the latest papers
+[21:54.40]  and it does all that for you and then
+[21:56.40]  you as the user will hopefully be able
+[21:57.92]  to be like Yep this is kind of what I
+[21:59.80]  wanted let me edit this let me edit this
+[22:02.12]  here and again the inherent problem is
+[22:04.28]  like we're lazy as humans we don't want
+[22:06.04]  to type all we don't really want to type
+[22:07.80]  what we mean and I think AI systems are
+[22:10.08]  actually going to help solve some of
+[22:11.24]  that problem so until that day what did
+[22:15.48]  what can people do better when they're
+[22:16.92]  prompting say chat GPT and I'll give you
+[22:18.76]  an example Tim Ferris suggested this
+[22:20.88]  really good idea that I've been stealing
+[22:22.56]  which is when you're preparing for an
+[22:23.92]  interview go to chat GPT and I'm and so
+[22:26.48]  I did this for you I was like I'm
+[22:28.20]  interviewing Logan Kilpatrick he's head
+[22:30.80]  of developer relations at openi on my
+[22:33.28]  podcast give me 10 questions to ask him
+[22:35.72]  in the style of Tyler Cowan who I think
+[22:38.60]  is the best interviewer he's so good at
+[22:40.80]  just like very pointed original
+[22:43.00]  questions so what advice would you have
+[22:45.32]  for me to improve on that prompt to have
+[22:48.04]  better results because the questions
+[22:49.44]  were like fine they're great they're
+[22:50.72]  like interesting enough but they wer
+[22:52.32]  like holy these are incredible so I
+[22:54.40]  guess what advice would you give me in
+[22:55.96]  that example yeah that that's a great
+[22:58.00]  great example where like thinking in
+[23:00.16]  context of like who it is that you're
+[23:01.68]  asking questions about like I'm probably
+[23:03.44]  not somebody who has enough information
+[23:05.72]  about me on the internet where like the
+[23:07.36]  model actually has been trained and like
+[23:09.16]  knows the nuances of my background I
+[23:11.08]  think there's like probably like much
+[23:12.68]  more famous guests where like it might
+[23:14.92]  be that there's enough context on the
+[23:16.84]  internet so answer the questions like
+[23:18.08]  you actually have to do some of that
+[23:19.48]  work you need to say like if you're
+[23:21.48]  using uh browse with ban for example you
+[23:23.68]  could say like here's a link to Logan's
+[23:25.88]  blog and like some of the things that
+[23:27.12]  he's talked about here a link to his
+[23:28.60]  Twitter like go through some of his
+[23:29.84]  tweets go through some of his blogs and
+[23:31.36]  like see what his interesting
+[23:33.08]  perspectives are that we might want to
+[23:34.76]  surface on the on the blog or something
+[23:36.36]  like that and again giving the model
+[23:38.00]  enough context to answer to answer the
+[23:39.72]  question I think again that that prompt
+[23:41.56]  actually might work really well for
+[23:44.08]  somebody who like has it like if you
+[23:45.56]  were interviewing like Tom Cruz or
+[23:47.24]  something like that somebody who has a
+[23:48.44]  lot of information about them on the
+[23:49.76]  Internet it probably works a little bit
+[23:51.28]  better so the advice there is just give
+[23:53.16]  more context it doesn't tell you hey I
+[23:54.84]  don't actually know that much about
+[23:55.92]  Logan so give me some more information
+[23:57.64]  it's just just like here we go here's a
+[23:58.84]  bunch of good questions exactly like it
+[24:01.20]  wants to like it so deeply wants to
+[24:03.72]  answer your question like it doesn't
+[24:05.20]  care that it doesn't have enough context
+[24:06.76]  it's like the most eager person in the
+[24:08.44]  world you could imagine to answer the
+[24:09.92]  question and without that context it's
+[24:11.80]  just hard to do to give up any anything
+[24:14.08]  of value if we got t-shirts printed they
+[24:16.24]  should say like context is is all you
+[24:18.48]  need context is the only thing that
+[24:19.80]  matters like it's it's such an important
+[24:22.32]  piece of getting a language model to do
+[24:25.36]  anything for you any other tips just say
+[24:28.08]  people are sitting there maybe they're
+[24:29.60]  they have chaty PT open right now as
+[24:31.00]  they're crafting a prompt is there
+[24:32.36]  anything else that you'd say would help
+[24:34.44]  them have better results we actually
+[24:37.52]  have a prompt engineering guide um which
+[24:39.76]  folks should go and check out and it has
+[24:41.40]  some of the examples it depends on sort
+[24:43.32]  of the order of magnitude of like how
+[24:45.24]  much performance increase you can get
+[24:47.60]  there's a lot of like really small silly
+[24:49.88]  things like adding a smiley face
+[24:52.16]  increases the performance of the model
+[24:54.16]  like telling the you know you've seen
+[24:56.28]  I'm sure folks have seen like a lot of
+[24:57.60]  these like silly examples like telling
+[24:59.84]  the model to like take a break and then
+[25:01.48]  answer the question all these kind of
+[25:03.04]  things and again if you think about it
+[25:04.88]  it's because the Corpus of information
+[25:07.04]  that's that's trained these models is
+[25:09.40]  the same things that is that humans have
+[25:11.68]  sent back and forth to each other so
+[25:13.20]  like you telling a human like when I go
+[25:14.80]  take a break and then I come back to
+[25:15.92]  work like I'm fresher and I'm able to
+[25:17.76]  answer questions better and like do work
+[25:19.84]  better um so very similar things are
+[25:21.76]  true for these models and again when I
+[25:23.44]  see a smiley face at the end of
+[25:24.64]  someone's message like I feel empowered
+[25:26.40]  that like this is going to be a positive
+[25:28.08]  interaction I should like be more
+[25:29.96]  inclined to give them a great answer and
+[25:32.04]  spend more effort on the thing that they
+[25:33.52]  asked me for Wow wait so that's a real
+[25:35.56]  thing if you had a smiley face it might
+[25:37.40]  give you better results again it's like
+[25:39.96]  the the challenge with all this stuff is
+[25:41.48]  it's like it's very nuanced and and it's
+[25:44.00]  also like it's a small jump in
+[25:46.36]  performance you could imagine like on
+[25:47.64]  the order of like one or two% which for
+[25:49.96]  a few sentence answer is like might not
+[25:52.40]  even be a discernable difference again
+[25:54.20]  if you're generating like an entire Saga
+[25:56.52]  of text like this smiley face like could
+[25:58.60]  actually make a material difference for
+[26:00.12]  you but for like something small and
+[26:01.68]  tactical it might not okay good tip
+[26:04.52]  amazing okay we've talked about gpts I
+[26:07.20]  think maybe it might be helpful to
+[26:09.08]  describe what is what is this new thing
+[26:10.40]  that you guys launch gpts and I'm
+[26:12.60]  curious just how it's going this because
+[26:14.24]  this is a really big change and element
+[26:17.40]  of open AI now with this idea that you
+[26:18.88]  could build your only kind of mini and
+[26:21.20]  I'm almost explaining it your mini open
+[26:22.68]  chat chat GPT and then people can I
+[26:25.84]  think you can pay for it right like you
+[26:27.00]  can charge for your own GPT or is it all
+[26:28.92]  free right now it's all free right now
+[26:31.52]  free okay in the future I imagine people
+[26:32.96]  will be able to charge so there's this
+[26:34.92]  whole store now basically it's the whole
+[26:36.48]  App Store that you guys have launched
+[26:38.40]  how's it going what's happening what
+[26:39.72]  surprised you there what you people know
+[26:42.20]  yeah it's it's going great and again
+[26:43.80]  historically the the thing that you
+[26:46.00]  would have to do let's say for example
+[26:47.64]  you have like a really cool chat TBT use
+[26:49.80]  case what you would have to do to share
+[26:51.64]  it with somebody else is like actually
+[26:53.48]  go in and like start the conversation
+[26:55.92]  with the model like prompted to do the
+[26:58.12]  things that you wanted to and then you
+[26:59.52]  would share that link with somebody else
+[27:01.60]  before the action has actually happened
+[27:03.76]  and be like here now you can like
+[27:05.16]  essentially finish this conversation
+[27:06.84]  with chat gbt that I started um so gbts
+[27:09.48]  kind of changes this where you take all
+[27:11.40]  that important context you put it into
+[27:13.64]  the model to begin with and then people
+[27:15.44]  can go and like chat with essentially a
+[27:17.36]  custom version of chat gbt and the thing
+[27:19.44]  that's really interesting is you know
+[27:20.80]  you can upload files you can give it
+[27:22.56]  custom instructions you can add all
+[27:24.64]  these different tools like a code
+[27:26.44]  interpreter is built in which allows you
+[27:28.12]  to like do like math essentially you
+[27:30.92]  have browsing built in image generation
+[27:32.88]  built in you can also like for more
+[27:34.52]  advanced use cases if you're a developer
+[27:36.36]  you can like connect it to external API
+[27:38.20]  so you can connect it to the notion API
+[27:40.00]  or Gmail or all these different things
+[27:41.68]  and like have it actually take actions
+[27:43.60]  on your behalf so there's there's so
+[27:45.92]  many cool things that people are
+[27:47.32]  unlocking and what's been most exciting
+[27:49.00]  to me actually is like the non-developer
+[27:51.60]  Persona is now empowered to like go and
+[27:54.16]  solve these like really really really
+[27:56.88]  more challeng in Problems by giving the
+[27:59.28]  model enough context on what that
+[28:00.92]  problem is um to be able to solve it
+[28:02.72]  going back to like context is all you
+[28:04.20]  need like this is very true in the
+[28:05.88]  context of gpts and if you give it
+[28:07.36]  enough context like you can solve much
+[28:09.20]  more interesting problems um there's so
+[28:12.12]  many things that I'm excited about with
+[28:13.56]  this like I think monetization when it
+[28:15.20]  comes to the store uh later this quarter
+[28:17.44]  I think is going to be extremely
+[28:18.68]  exciting like when people can get paid
+[28:20.40]  based on who's using their gpts that's
+[28:22.56]  going to be a huge unlock and like open
+[28:24.12]  a lot of people's eyes to the to the
+[28:25.96]  opportunity here I also think like
+[28:28.04]  continuing to push on making more
+[28:31.72]  capabilities accessible to gpts for
+[28:34.52]  people who can't code is really exciting
+[28:36.48]  like having to even for me as like a
+[28:38.32]  someone who is a software engineer like
+[28:40.08]  it's not super easy to like connect the
+[28:42.28]  notion API or the Gmail API to my gbt
+[28:45.08]  and like really I'd love to just be able
+[28:46.48]  to like oneclick sign in with Gmail and
+[28:48.68]  then all of a sudden it's like my Gmail
+[28:50.36]  is accessible or like someone else can
+[28:52.12]  sign in with their Gmail and make it
+[28:53.44]  accessible so I think over time like all
+[28:55.52]  those types of things will come but
+[28:57.08]  today it's really like custom prompts is
+[28:59.88]  essentially like one of the biggest
+[29:01.36]  value ads with gpgs awesome I have it
+[29:04.36]  pulled up here on the on different
+[29:05.56]  Monitor and canva has the top GPT
+[29:08.36]  currently and I was trying to play with
+[29:09.72]  it as you're were chatting just to see I
+[29:11.32]  was going to make a big banner that said
+[29:12.64]  it's the context stupid and it doesn't
+[29:15.52]  I'm not doing some right but I'm not
+[29:16.68]  paying that much attention to it because
+[29:18.16]  we're talking but uh this is very cool
+[29:20.88]  just maybe a final question there is
+[29:22.28]  there a GPT that you saw someone built
+[29:24.16]  that was like wow that's amazing that's
+[29:26.44]  so cool something that's surprised you
+[29:27.88]  and I'll sh I'll share one that was very
+[29:30.08]  cool but is there anything that comes to
+[29:31.32]  mind and ask that I think my my instinct
+[29:34.88]  is the zappier all of the stuff that
+[29:37.60]  zappier has done with gpts is like the
+[29:40.88]  most useful stuff that you could imagine
+[29:43.52]  like you can go so far with what and and
+[29:46.28]  I don't know how it's like packaged for
+[29:48.04]  zapier's GPT right now but like you can
+[29:50.48]  actually as a third party developer
+[29:52.44]  integrate zappier without knowing how to
+[29:55.08]  code into your gbt so like they're
+[29:57.12]  they're pushing a lot of this stuff and
+[29:58.60]  then basically like all 5,000
+[30:01.00]  connections that are possible with
+[30:02.56]  zapier today you can bring into your GPT
+[30:04.76]  and like essentially enable it to do
+[30:06.20]  anything so I'm I'm incredibly excited
+[30:08.08]  for zapier and for people who are
+[30:09.56]  building with them because like there's
+[30:10.76]  so many things that you can unlock uh
+[30:12.88]  using that platform so I think that's
+[30:14.80]  probably like the most the most exciting
+[30:17.20]  thing to me for people who aren't who
+[30:18.80]  aren't developers awesome zappier is
+[30:21.20]  always in there getting there connecting
+[30:22.52]  things yeah they're great uh so the one
+[30:25.48]  that I had in mind so I had uh M siki
+[30:28.08]  who's the CEO of a company called Runway
+[30:30.16]  built this thing called Universal primer
+[30:32.36]  which helps you learn it's described as
+[30:35.08]  learn everything about anything and it
+[30:37.00]  basically I think is kind of this
+[30:38.72]  Socratic method of helping you learn
+[30:40.40]  stuff so it's like explain how
+[30:42.04]  Transformers work in LMS and then it
+[30:44.40]  just kind of goes through stuff and then
+[30:45.56]  asks you questions I think and kind of
+[30:47.20]  helps you learn new Concepts and I think
+[30:49.08]  it's the number two education gpg I love
+[30:52.36]  that SEI is incredible so yes it's true
+[30:56.00]  let me tell you about a product prodct
+[30:57.52]  called arcade arcade is an interactive
+[31:00.24]  demo platform that enables teams to
+[31:02.08]  create polished unbrand Demos in minutes
+[31:05.28]  telling the story of your product is
+[31:06.96]  hard and customers want you to show them
+[31:09.28]  your product not just talk about it or
+[31:11.40]  gate it that's why product for teams
+[31:13.84]  such as atlassian Carta and retool use
+[31:16.60]  arcade to tell better stories within
+[31:18.52]  their homepages product change logs
+[31:20.92]  emails and documentation but don't just
+[31:23.44]  take my word for it quantum metric the
+[31:25.68]  leading digital Analytics platform
+[31:27.68]  created an interactive product to her
+[31:29.40]  library to drive more prospects with
+[31:31.76]  arcade they achieved a 2X higher
+[31:33.72]  conversion rate for demos and saw five
+[31:36.00]  times more engagement than videos on top
+[31:38.60]  of that they built the demo 10 times
+[31:40.52]  faster than before creating a product
+[31:42.60]  demo has never been easier with
+[31:44.32]  browser-based recording arcade is the no
+[31:46.84]  code solution for building personalized
+[31:48.80]  demos at scale arcade offers product
+[31:51.32]  customization options designer approved
+[31:53.60]  editing tools and Rich insights about
+[31:55.64]  how your viewers engage every every step
+[31:57.60]  of the way ready to tell more engaging
+[31:59.64]  product stories that drive results head
+[32:01.92]  to arcade. software Lenny and get 50%
+[32:06.12]  off your first 3 months that's arcade.
+[32:09.08]  software Lenny I want to talk about just
+[32:12.08]  what it's like to work at open Ai and
+[32:13.48]  how the product team operates and how
+[32:15.04]  the company operates so you worked at
+[32:17.84]  your two previous companies were apple
+[32:19.56]  and NASA which are not known for moving
+[32:22.28]  fast and now you're open AI which is
+[32:25.32]  known for moving very fast maybe too
+[32:26.92]  fast as for some people's taste as we
+[32:28.68]  saw it with the whole board thing and so
+[32:31.48]  what I'm curious is just what is it that
+[32:34.28]  openi does so well that allows them to
+[32:37.04]  build and ship so quickly and it's such
+[32:39.36]  high a bar like is there a process or a
+[32:41.56]  way of working that you've seen that you
+[32:43.32]  think other companies should try to move
+[32:46.28]  more quickly and ship better stuff you
+[32:48.52]  know there's so many interesting
+[32:49.72]  trade-offs and all this like tension
+[32:51.56]  around like how how quickly companies
+[32:53.56]  can move I think for us like again if
+[32:55.44]  you think about Apple as an example's
+[32:57.20]  about naso as an example just like older
+[32:59.36]  institutions like lots of like you know
+[33:01.44]  over time the tendency is things slow
+[33:03.68]  down uh there's like additional checks
+[33:05.44]  and balances that have put in place
+[33:06.92]  which sort of drag things down a little
+[33:08.76]  bit so we're we're young and like a new
+[33:11.36]  company so like we don't have a lot of
+[33:12.80]  that like institutional um Legacy
+[33:16.44]  barriers that have been put in place I
+[33:18.48]  think the biggest thing and I there's a
+[33:20.48]  Good Sam tweet somewhere uh in The Ether
+[33:23.32]  about this from I think 2022 or
+[33:25.40]  something like that but like finding
+[33:27.48]  people who are high agency and work with
+[33:31.96]  urgency is like one of the most you know
+[33:35.44]  if I was hiring five people today like
+[33:37.32]  those are like some of the top two
+[33:39.08]  characteristics that I would look for in
+[33:41.12]  people because it's you you can you can
+[33:43.40]  take on the world if you have people who
+[33:45.08]  have high agency and like not needing to
+[33:47.88]  either like you know get 50 people's
+[33:51.96]  different consensus because like you
+[33:54.04]  have people who you trust with high
+[33:55.72]  agency and they can just go and do the
+[33:57.76]  thing I think is like one of the most it
+[34:00.48]  is the most important thing I I'm pretty
+[34:02.68]  sure if you if you were to distill it
+[34:04.36]  down and like I I see this in folks that
+[34:05.96]  I work with like folks are so high
+[34:07.64]  agency like they see a problem and they
+[34:09.60]  go and tackle it like they hear
+[34:11.00]  something from our customers about a
+[34:12.24]  challenge that they're having and like
+[34:13.52]  they're already pushing on what the
+[34:15.00]  solution for them is and not like
+[34:16.96]  waiting for all the other things to
+[34:19.40]  happen that like I think traditional
+[34:20.76]  companies are are sort of stuck behind
+[34:23.68]  because they're like oh let's check with
+[34:25.12]  all these like seven different
+[34:26.32]  departments so like you know try to get
+[34:28.52]  feedback on this like people just go and
+[34:30.08]  do it and solve the problem and I love
+[34:31.64]  that it's so fun to be able to to be a
+[34:33.68]  part of those situations that is so cool
+[34:36.16]  I really like these two characteristics
+[34:38.68]  because I haven't heard this before is
+[34:39.84]  the two maybe the two most important
+[34:41.20]  things you guys look for high agency
+[34:42.92]  High urgency to give people a clear
+[34:45.04]  sense of what these actually look like
+[34:46.72]  when you're hiring you shared maybe this
+[34:49.16]  example of customer service someone
+[34:50.56]  hearing a bug and then going to fix it
+[34:52.68]  is there anything else that can
+[34:54.52]  illustrate what that looks like high
+[34:56.00]  agency and then similar question on
+[34:57.88]  urgency other than just like move move
+[34:59.88]  ship ship ship I think like the
+[35:02.08]  assistance API that we released for Dev
+[35:04.12]  day
+[35:04.96]  like we continued to get this feedback
+[35:08.20]  from developers that people wanted these
+[35:11.20]  higher levels of abstraction on top of
+[35:13.20]  our existing apis and like a bunch of
+[35:15.64]  folks on the team just like came
+[35:17.00]  together and were like hey let's let's
+[35:18.36]  put together what the plan would look
+[35:19.84]  like to build something like this and
+[35:21.72]  then very quickly came together and
+[35:24.16]  actually built the actual API that now
+[35:27.32]  so many people's assistant applications
+[35:28.96]  that are out there and I think that's a
+[35:30.04]  great example of like you know it wasn't
+[35:32.20]  like this like top down like oh
+[35:33.96]  someone's sitting there being like Oh
+[35:35.36]  Let's do these five things and then like
+[35:37.32]  okay team go and do that it's like
+[35:38.64]  people really seeing these problems that
+[35:40.28]  are coming up and like knowing that they
+[35:43.56]  can come together as a team and like
+[35:45.08]  solve these problems really quickly and
+[35:46.60]  I think the assistants API and there's
+[35:47.84]  like a thousand and one other examples
+[35:49.56]  of of teams taking agency in doing this
+[35:51.92]  but I think that's that's a great one um
+[35:53.84]  at the top of my head that makes me want
+[35:57.16]  ask just how how does planning work at
+[35:59.36]  open so in this example is just like hey
+[36:01.32]  we think we need to build this let's
+[36:02.40]  just go and build it I imagine there was
+[36:04.28]  still a road map and priorities and
+[36:05.80]  goals and things that that team had how
+[36:08.48]  does how does Road mapping and
+[36:10.24]  prioritization and all that generally
+[36:11.92]  work to allow for something like that I
+[36:14.12]  think this is one of the more
+[36:18.72]  challenging pieces at open AI like
+[36:21.40]  there's there's so many like everyone
+[36:23.32]  wants everything from us and like today
+[36:25.36]  especially in the world of ch and and
+[36:27.60]  how large and and well used our our API
+[36:30.00]  is like people will just come to us and
+[36:31.88]  say like hey we want all of these things
+[36:33.88]  I think there's like a bunch of like
+[36:35.20]  core guiding principles that we look at
+[36:37.36]  like one going back to the mission like
+[36:39.76]  is this actually like going to help us
+[36:41.84]  get to AGI so there's a huge focus on
+[36:43.92]  like you know there's this like
+[36:45.64]  potential shiny reward right in front of
+[36:47.80]  us which is like you know like optimize
+[36:49.72]  user engagement or whatever it is and
+[36:51.60]  like is that really the thing like maybe
+[36:53.32]  the answer is yes like maybe that is
+[36:54.88]  what is going to help us get to AGI soon
+[36:56.92]  but like looking at it through that lens
+[36:58.84]  I think is like always the first step of
+[37:00.56]  deciding any any of these problems I
+[37:03.32]  think on the developer side there's also
+[37:04.84]  these like core tenants of like
+[37:06.72]  reliability like hey you know it would
+[37:08.92]  be awesome if we had additional apis
+[37:10.96]  that did all these cool things like new
+[37:12.88]  new endpoints new modalities new
+[37:14.76]  abstractions but like are we giving
+[37:17.28]  customers a robust and reliable
+[37:19.60]  experience on our API and like that's
+[37:21.04]  often like the first question and I
+[37:22.92]  think there have been times where we've
+[37:24.36]  fallen short on that and like you know
+[37:26.16]  there was a bunch of other things that
+[37:27.36]  we've been thinking about doing and like
+[37:28.88]  really bringing the focus and priority
+[37:31.04]  back to that reliability piece because
+[37:32.80]  at the end of the day nobody cares if
+[37:34.16]  you have something great if they can't
+[37:35.88]  use it robust and reliably so there's
+[37:37.64]  like these core tenants and I think like
+[37:39.80]  again we have like very other
+[37:42.24]  than all the principles about how we're
+[37:45.88]  making the decision I think like the
+[37:47.20]  actual planning process is like pretty
+[37:48.88]  standard like we come together there's
+[37:50.44]  like H1 q1 goals we all Sprint on those
+[37:54.68]  I think the real interesting thing is
+[37:56.08]  like How Stuff changes over time like
+[37:58.20]  you think we're going to do these like
+[38:00.32]  very highlevel things and like you know
+[38:02.16]  new models new modalities whatever it is
+[38:04.68]  and then like as time goes on there's
+[38:06.44]  like all of this turmoil and change and
+[38:09.60]  it's interesting to have like mechanisms
+[38:11.72]  to be like hey how do we how do we
+[38:13.56]  update our understanding of the world
+[38:15.04]  and our goals as everything sort of the
+[38:17.16]  ground changes underneath of us as is
+[38:19.08]  happening in in the craziness of the AI
+[38:20.96]  space today it's interesting that it
+[38:22.60]  sounds a lot like most other companies
+[38:24.24]  there's H1 planning there's q1 planning
+[38:27.16]  are there metrics and goals like that do
+[38:29.44]  you guys have okrs or anything like that
+[38:31.04]  or is it just here we're going to launch
+[38:32.32]  these products I think it's like much
+[38:34.36]  higher level I I actually don't think
+[38:35.96]  open AI is like a big okr company like I
+[38:38.32]  don't think teams do okrs today and I
+[38:40.84]  don't have a good understanding of like
+[38:42.24]  why that's the case whether or not I
+[38:43.92]  don't even know if okrs are like still
+[38:45.80]  the industry you're probably talking to
+[38:47.96]  a lot more folks about like yeah who are
+[38:50.04]  making those so I'm curious is that
+[38:51.48]  something that you're seeing from folks
+[38:52.56]  like is it still common for people to do
+[38:54.12]  okrs yeah absolutely many companies use
+[38:56.72]  okr love oks many companies hate okrs I
+[38:59.64]  not surprised that open AI is not an okr
+[39:01.88]  driven company along those lines I don't
+[39:03.80]  know how much you can sh about all the
+[39:04.96]  stuff but how do you measure success for
+[39:06.72]  things that you launch I know there's
+[39:08.16]  this ultimate goal AGI is there some way
+[39:10.80]  to track we're getting closer what else
+[39:12.48]  do you guys look at when you launch say
+[39:14.64]  GPT store or assistance or anything
+[39:16.68]  that's like cool that was exactly what
+[39:18.32]  we were hoping for is it just adoption
+[39:20.48]  yeah adoption is a great one I think
+[39:22.32]  there's like a bunch of metrics around
+[39:23.80]  like you know Revenue number of
+[39:25.16]  developers that are building on our
+[39:26.48]  platform all those things and a lot of
+[39:28.68]  these and and I don't want to to dive
+[39:30.80]  I'll I'll let Sam or or someone else on
+[39:32.84]  our our leadership team like go go more
+[39:34.72]  into details but I think like a lot of
+[39:36.48]  these are like actual abstractions
+[39:39.16]  towards something else like even if
+[39:41.32]  revenue is a goal it's like revenue is
+[39:43.04]  not actually the goal revenue is a proxy
+[39:45.12]  for getting more compute which is then
+[39:47.28]  like actually what helps us get towards
+[39:49.72]  getting more gpus so that we can you
+[39:51.92]  know train better models and like
+[39:53.40]  actually get to the goal so there's all
+[39:54.76]  these like intermediate layers for like
+[39:56.72]  even if we say something is the goal and
+[39:58.56]  like you hear that in a vacuum and
+[40:00.20]  you're like oh well open a I just wants
+[40:01.48]  to make money and it's like well really
+[40:02.80]  money is the mechanism to get better
+[40:05.24]  models so that we can achieve our
+[40:06.88]  mission and I think there's there's a
+[40:08.40]  bunch of
+[40:09.40]  interesting interesting angles like that
+[40:11.68]  as well I don't know if I've heard of a
+[40:13.28]  more uh ambitious vision for a company
+[40:16.20]  to build artificial general intelligence
+[40:18.76]  I love that I imagine many companies are
+[40:20.68]  like what's our version of that before
+[40:23.36]  we leave this topic is there is there
+[40:25.52]  anything else that you seen open a do
+[40:27.80]  really well that allows it to move this
+[40:30.28]  fast and be this successful he talked
+[40:31.80]  about hiring people with higher agency
+[40:34.20]  and high urgency is there anything else
+[40:36.20]  that's just like oh W that's a really
+[40:37.60]  good way of operating imagine part of is
+[40:39.64]  just hiring incredibly smart people like
+[40:41.48]  I think that's probably an unset thing
+[40:43.44]  but yeah anything else I think there's a
+[40:45.92]  non-trivial benefit to using slack and I
+[40:48.76]  think like maybe maybe that's
+[40:50.76]  controversial and maybe some people
+[40:52.24]  don't like slack but opening is such a
+[40:54.32]  slack heavy culture and like it really
+[40:56.92]  the like instantaneous Real Time
+[40:59.32]  Communication on slack is so crucial and
+[41:02.20]  like I I I just love being able to like
+[41:04.52]  tag in different people from different
+[41:06.40]  teams and like get everybody coess so
+[41:08.60]  like everybody is always on slack so
+[41:10.52]  it's like even if you're remote or
+[41:12.00]  you're on a different team or in a
+[41:13.12]  different office like so much of the
+[41:14.88]  company culture is like ingrained and
+[41:16.48]  slack and it allows us to like really
+[41:18.36]  quickly coordinate where like it's
+[41:19.96]  actually faster to send someone a slack
+[41:21.52]  message sometimes than it would be to
+[41:22.72]  like walk over to their desk because
+[41:24.32]  they're on slack and they're going to
+[41:25.92]  they're to be using it and I saw uh if
+[41:28.48]  you saw the recent Sam and and Bill
+[41:30.40]  Gates interview but Sam was talking
+[41:32.00]  about how slack is his number one most
+[41:34.20]  used app on his phone I'm like I don't
+[41:35.88]  even look at the time thing on my phone
+[41:38.00]  any works and like I don't want to know
+[41:39.48]  how long I'm using slack but I'm sure
+[41:41.32]  they Salesforce people are looking at
+[41:42.68]  the numbers and they're like this is
+[41:44.04]  exactly what we wanted so I also love
+[41:47.28]  slack I'm a big promoter of slack I
+[41:48.80]  think there's a lot of slack hate but
+[41:50.32]  such a good product I've tried so many
+[41:51.60]  Alternatives and Nothing Compares I
+[41:54.00]  think what's interesting about slack for
+[41:55.20]  you guys is one of the like you don't
+[41:57.04]  know if someone in there is just an AGI
+[41:58.88]  that is not actually a person that's
+[42:00.52]  just there working at the company I I
+[42:02.00]  know they're real people there is no no
+[42:04.80]  agis yet but uh I think like yeah even
+[42:07.56]  even slack is building a bunch of like
+[42:09.16]  really cool AI tools which like I'm
+[42:10.96]  excited to and that's why like there's
+[42:13.04]  so much cool AI progress and like at the
+[42:15.28]  end of the day it's so exciting from
+[42:18.12]  being like a consumer of all these new
+[42:20.08]  AI products like Google's a great
+[42:21.40]  example like I'm so happy that Google is
+[42:23.04]  doing really cool AI stuff because like
+[42:24.76]  I'm a Google Docs customer and like I
+[42:26.44]  love using Google Docs and like a bunch
+[42:27.88]  of their other products and like it's
+[42:29.32]  awesome that people are building such
+[42:31.04]  such useful things around these models
+[42:33.36]  how big is the opening I team at this
+[42:34.92]  point whatever you can share just to
+[42:36.20]  give people a sense of the scale yeah I
+[42:38.20]  think the last public number was
+[42:40.20]  something around like
+[42:41.76]  750 um near the near the end of of last
+[42:44.68]  year 780 or something like that near the
+[42:46.44]  end of last year and we're growing we're
+[42:47.96]  still growing so quickly so I don't want
+[42:49.56]  to I won't be the messenger to share the
+[42:51.64]  specific updated numbers but like the
+[42:52.92]  team is growing like crazy and we're
+[42:54.08]  also hiring like across all of our
+[42:55.60]  engineering team so if folks are and and
+[42:57.60]  PM team so if folks are interested would
+[42:59.16]  love to would love to hear from folks
+[43:00.40]  who are um who are curious about joining
+[43:03.16]  maybe one last question here so you're
+[43:05.04]  growing maybe getting to a thousand
+[43:07.00]  people clearly still very Innovative and
+[43:09.08]  moving incredibly fast is there anything
+[43:11.68]  you've seen about what openi does well
+[43:13.76]  to enable Innovation and not kind of
+[43:16.64]  slow down new Big Ideas yeah there's
+[43:19.88]  there's a couple of things one of which
+[43:21.72]  is um the actual research team who who
+[43:24.84]  like you know sort of see most of the
+[43:26.80]  Innovation that happens at open aai is
+[43:28.72]  intentionally small they're not like you
+[43:30.60]  know most of the growth that open a has
+[43:32.28]  seen is around like our customer facing
+[43:33.88]  roles our our engineering roles to like
+[43:36.08]  provide the infrastructure to protect
+[43:37.92]  gbt and things like that the research
+[43:39.92]  team is like again intentionally kept
+[43:41.88]  small and there's all of this talk and
+[43:43.76]  it's really interesting I just saw this
+[43:45.16]  thread from one of our one of our
+[43:46.76]  research folks who was talking about how
+[43:48.84]  in a world where you're constrain by the
+[43:51.68]  amount of GPU capacity that you have as
+[43:53.80]  a as a researcher which is the case for
+[43:56.08]  open AI researchers but also researchers
+[43:57.96]  everywhere else like each new researcher
+[44:00.80]  that you add is actually like a net
+[44:02.92]  productivity loss for the research group
+[44:06.04]  unless that person is like upleveling
+[44:08.76]  everyone else in like such a profound
+[44:10.80]  way that like it increases the
+[44:12.04]  efficiency like if you just add somebody
+[44:13.76]  who's going to go and like tackle some
+[44:15.68]  completely different research Direction
+[44:17.64]  you now have to share your gpus with
+[44:19.36]  that person and everyone else is now
+[44:21.20]  slower on their experiments so it's a
+[44:23.32]  really interesting like tradeoff that
+[44:26.28]  that research folks have that I don't
+[44:28.12]  think like product folks like if I add
+[44:30.24]  another engineer to like our API team or
+[44:32.68]  to our some of the chat GBP teams like
+[44:34.64]  you can actually write more code and do
+[44:36.28]  more and like that's actually like a net
+[44:38.12]  beneficial Improvement for everybody and
+[44:40.20]  that's always not the case in the case
+[44:42.08]  of researchers which is interesting in a
+[44:43.68]  GPU constraint World which hopefully we
+[44:45.64]  won't always be in I want to zoom out a
+[44:48.16]  bit and then there's going to be a
+[44:49.40]  couple follow-up questions here where
+[44:51.44]  are things heading with open AI what's
+[44:53.36]  what's kind of in the near future of
+[44:54.72]  what people should expect from the tools
+[44:56.72]  that you guys are going to have in
+[44:57.88]  launch yeah new new modalities I think
+[45:00.80]  chbt like continuing to push all of the
+[45:04.48]  different experiences that are going to
+[45:06.08]  be possible like today like chb is
+[45:08.36]  really just like text in text out or I
+[45:10.84]  guess like three months ago was just
+[45:12.28]  text in text out we started to change
+[45:14.28]  that with now you can do the voice mode
+[45:16.28]  and now you can generate images and now
+[45:18.36]  you can take pictures so I think like
+[45:20.04]  continuing to expand like the way in
+[45:21.88]  which you interface with AI through chat
+[45:23.56]  GPT is coming I think gpts is our first
+[45:26.40]  step towards the agent future like again
+[45:29.20]  today when you use a GPT it's really you
+[45:31.20]  send a message you get an answer back
+[45:33.16]  almost almost right away um and that's
+[45:35.44]  kind of the end of your interaction I
+[45:36.92]  think as gbts continue to get more
+[45:39.12]  robust like you'll actually be able to
+[45:40.76]  say hey go and do this thing and like
+[45:42.28]  just let me know when you're done like
+[45:43.36]  it might take I I don't need the answer
+[45:45.28]  right now I want you to like really
+[45:46.64]  spend time and be thoughtful about this
+[45:48.60]  and like again that's if you think back
+[45:50.92]  to all these human analogies like that's
+[45:52.40]  what we do with humans like I don't
+[45:53.64]  expect somebody when I ask them to do
+[45:55.44]  something meaningful for me to like do
+[45:57.08]  it right away and like give me the
+[45:58.36]  answer back right away so I think
+[46:00.48]  pushing more towards those experiences
+[46:02.92]  is what is going to unlock like so much
+[46:04.88]  more value for people and I think the
+[46:07.08]  last thing is gpts as this mechanism to
+[46:11.20]  get like the next you know few hundred
+[46:13.48]  million people into chat gbt and into AI
+[46:15.92]  so I think like if you had conversations
+[46:17.52]  with people who aren't close to the AI
+[46:19.32]  space often times you talk about even if
+[46:22.08]  they've heard of chat gbt a lot of
+[46:23.40]  people haven't heard of chat gbt but if
+[46:24.68]  they have they're like they show up and
+[46:26.08]  chat GT and they're like you know I
+[46:27.56]  don't really know what I'm supposed to
+[46:28.64]  do with this this bik slate I can kind
+[46:31.28]  of do anything it's like not super clear
+[46:33.12]  how this solves like my specific problem
+[46:35.00]  but I think the cool thing about gpts is
+[46:36.80]  you can package down like here's this
+[46:39.48]  one very specific problem that AI can
+[46:41.56]  solve for you and and do it really well
+[46:43.72]  and like I can share that experience
+[46:45.16]  with you and now you can go and try that
+[46:46.72]  gbt have it actually solve the problem
+[46:49.04]  and be like wow like it did this thing
+[46:51.04]  for me I should probably spend the time
+[46:52.80]  to investigate like these five other
+[46:54.56]  problems that I have to see if AI can
+[46:56.24]  also be a solution to those so I think
+[46:58.08]  so many more people are going to come
+[46:59.40]  online and start using these tools
+[47:01.56]  because very like narrow vertical tools
+[47:05.08]  are what's going to be like a huge
+[47:06.40]  unlock for them so in that last case a
+[47:08.64]  classic horizontal product problem where
+[47:11.04]  it does so many things and people don't
+[47:12.44]  know what exactly it should do for them
+[47:14.52]  so that makes a ton of sense just be
+[47:16.24]  being a lot more template oriented use
+[47:18.64]  case specific helping people on board
+[47:21.04]  makes tons of sense common problem for
+[47:23.16]  so many Sal products out there uh the
+[47:26.00]  other ones you mentioned which is really
+[47:27.44]  interesting basically more interfaces to
+[47:31.08]  more easily interact with openi voice
+[47:33.40]  you mention audio and things like that
+[47:35.40]  that makes tons of sense and then this
+[47:37.44]  agents piece where the ideas instead of
+[47:39.76]  just it's a chat it's like hey good to
+[47:41.52]  do this thing for me kind of along those
+[47:43.24]  lines GPT 5 we touched on this a bit
+[47:46.68]  there's a lot of speculation about the
+[47:48.96]  much better version people are just have
+[47:50.44]  these wild expectations I think for
+[47:52.16]  where GPT is going gp5 is going to solve
+[47:54.84]  all the world's problems I know you're
+[47:56.28]  not going to tell me when it's launching
+[47:57.68]  and what it's going to do but I heard
+[48:00.68]  from a friend that there's kind of this
+[48:02.04]  tip that when you're Building Products
+[48:03.48]  today you should build towards a GPT 5
+[48:06.48]  future not based on limitations of GPT
+[48:08.96]  for today so to help people do that what
+[48:12.72]  should people think about that might be
+[48:14.48]  better in a world of GPT 5 is it just
+[48:16.32]  like it's faster it's just smarter is
+[48:18.36]  there anything else that might be like
+[48:19.56]  oh wow I should really rethink how I'm
+[48:20.80]  approaching my product if if folks have
+[48:23.00]  looked through the gbg4 technical report
+[48:25.92]  that we released back in March when gbt
+[48:27.64]  4 came out gbt 4 was the first Model
+[48:29.88]  that we trained where we could reliably
+[48:32.08]  predict the capabilities of that model
+[48:34.64]  uh beforehand based on the amount of
+[48:36.72]  compute that we were going to put into
+[48:38.24]  it and you could actually we we did like
+[48:39.80]  a scientific study to show like hey this
+[48:41.92]  is what we predicted and here is what
+[48:43.68]  the actual outcome was so it'll be one I
+[48:46.52]  think just as somebody who's interested
+[48:48.40]  in technology but interesting to see
+[48:49.56]  like does that continue to hold for gb5
+[48:51.48]  and hopefully we'll we'll share some of
+[48:52.76]  that information when whenever that
+[48:54.64]  model comes out out I also think you can
+[48:57.52]  probably draw a few observations one of
+[49:00.64]  them which
+[49:01.88]  is qb4 came out the the consensus from
+[49:06.12]  the world is everything is different
+[49:08.52]  like all of a sudden everything is
+[49:09.76]  different this changes the world this
+[49:11.16]  changes everything and then slowly but
+[49:13.96]  surely we come back to reality of like
+[49:16.84]  this is a really effective tool and it's
+[49:19.08]  going to help solve my problems more
+[49:20.64]  effectively and I think that is like the
+[49:23.76]  undoubtedly the lens in which people
+[49:25.84]  should look at all of these model
+[49:27.28]  advancements like gbt 5 is like surely
+[49:29.08]  going to be extremely useful and like
+[49:30.68]  solve some whole new Ashana problems
+[49:33.12]  hopefully they'll be faster hopefully
+[49:34.44]  it'll be better on all these ways but
+[49:35.92]  like fundamentally the same problems
+[49:38.76]  that exist in the world are still going
+[49:40.20]  to be the same problems you now just
+[49:42.20]  have a better tool to solve those
+[49:43.68]  problems and I think like going back to
+[49:45.56]  like vertical use cases like I think
+[49:47.64]  people who are solving very specific use
+[49:49.92]  cases are just now going to be able to
+[49:51.48]  do that much more effectively like I
+[49:52.84]  don't think that's like going to people
+[49:55.16]  have these unrealistic expectations that
+[49:57.04]  like gbt 5 is going to be like doing
+[49:59.00]  back flips in the background in my
+[50:00.36]  bedroom while it also like writes all my
+[50:02.76]  code for me and like talked in the phone
+[50:04.48]  with my with my mom or something like
+[50:05.96]  that like that's not the case like it is
+[50:07.60]  just going to be this like very
+[50:09.28]  effective tool very similar to gbd4 and
+[50:11.84]  it's also going to become like very
+[50:14.20]  normal very quickly and I think like
+[50:16.44]  that is actually a really interesting
+[50:18.16]  piece if you can plan for the world
+[50:20.72]  where people become very very used to
+[50:24.32]  these tools very quickly actually think
+[50:26.04]  that's like an edge and like assuming
+[50:27.64]  that this thing is going to like
+[50:29.32]  absolutely change everything and in many
+[50:31.16]  ways I think it's actually like a um a
+[50:34.32]  downside it's like the wrong mental
+[50:36.00]  framing to have of these tools as they
+[50:37.96]  come out kind of along these lines you
+[50:40.08]  guys are investing a lot in to B2B
+[50:42.44]  offerings I think half the revenue last
+[50:44.96]  I heard was B2B and then half is BET to
+[50:47.44]  C I don't know if that's true but that's
+[50:49.56]  something I heard what is it that you
+[50:51.16]  get if you work with OP ey as a company
+[50:53.36]  as a business what is the what is what
+[50:54.88]  does unlock it is it just called opening
+[50:56.40]  ey Enterprise what's it called and what
+[50:58.96]  do you get as a part of that yeah so I
+[51:01.60]  think a lot of our be B2B customers are
+[51:04.76]  using the API to like build stuff so I
+[51:06.64]  think that's one angle of it I think if
+[51:08.08]  you're a chubbt B2B customer we sell
+[51:10.44]  teams which is the ability to like get
+[51:12.92]  multiple subscriptions of chbt packaged
+[51:15.64]  together we also have an Enterprise
+[51:17.16]  version of chbt there's a bunch of like
+[51:19.24]  enterpris things that Enterprise
+[51:21.16]  companies want around like SSO and stuff
+[51:23.20]  like that related to chbt Enterprise I
+[51:25.48]  think the coolest thing is actually
+[51:26.60]  being able to like share some of these
+[51:28.64]  like prompt templates and gbts
+[51:30.80]  internally so again you can make like
+[51:32.80]  custom things that work really well for
+[51:34.60]  your company with like all of the
+[51:36.32]  information that's relevant to solving
+[51:38.04]  problems in your company and like share
+[51:39.48]  those internally and to me that's like
+[51:41.96]  you know you want to be able to
+[51:43.16]  collaborate with your teammates of the
+[51:44.56]  cool things you create using AI so
+[51:46.96]  that's a huge unlock for companies I
+[51:48.32]  think that those are like the two
+[51:49.40]  biggest value ads there's like higher
+[51:50.96]  limits and stuff like that on some of
+[51:52.64]  those models but I think being able to
+[51:54.44]  share like your very domain specific
+[51:56.60]  applications is the most useful thing
+[51:59.36]  and I think if you're a company
+[52:01.12]  listening and you think a lot of
+[52:02.72]  employees are using chat gbt basically
+[52:05.76]  the simplest thing you could do is just
+[52:06.84]  roll it up into a business account with
+[52:08.84]  single sign on and that probably saves
+[52:10.36]  you money and makes it easier to
+[52:12.44]  coordinate and administer yeah there's
+[52:14.68]  also like a bunch of security stuff too
+[52:16.36]  like if you want to control like you
+[52:17.72]  don't want people to use certain gbts
+[52:19.60]  from the gbt store because you're like
+[52:21.04]  worried about security or privacy and
+[52:22.68]  stuff like that you don't want your
+[52:23.60]  private data going in places it makes a
+[52:25.64]  lot of sense to to sign up for that so
+[52:27.20]  that you have a little bit more control
+[52:28.28]  over what's happening okay got it
+[52:30.76]  there's a launch happening tomorrow I
+[52:32.84]  think after we're recording this can you
+[52:35.16]  talk about what is new what's coming out
+[52:37.24]  I think this is going to come out a
+[52:38.16]  couple weeks after recording but just
+[52:39.88]  what should people know that's new
+[52:41.12]  that's coming out from open a and
+[52:42.80]  tomorrow in our time in our world yeah
+[52:45.76]  updated so there's a few different
+[52:47.20]  things a couple of quick ones are
+[52:48.72]  updated gbt 4 Turbo model um updated the
+[52:52.08]  preview model that we released at Dev
+[52:53.68]  day there's an updated version of that
+[52:55.04]  it's fixes this if folks have seen
+[52:56.80]  online people talking about this sort of
+[52:58.64]  laziness phenomenon in the model we we
+[53:01.16]  improve on that and it fixes a lot of
+[53:02.96]  the cases where that where that was the
+[53:04.48]  case so hopefully the model will be a
+[53:05.56]  little bit less
+[53:06.64]  lazy the the big thing is this is the
+[53:09.68]  third generation embedding model so we
+[53:11.56]  were talking off camera before recording
+[53:13.76]  about all of the cool use cases for
+[53:15.88]  embeddings so if folks have have used
+[53:17.56]  embeddings before it's essentially the
+[53:19.52]  the technology that powers like many of
+[53:21.24]  these like question question and
+[53:22.76]  answering with your own documentation or
+[53:24.76]  your own
+[53:25.72]  Corpus of knowledge and uh let you were
+[53:27.80]  saying you actually have a a website
+[53:29.96]  where people can ask questions about
+[53:31.68]  recordings of the podcast lenot lot.com
+[53:34.72]  check it out yeah Len leny bot.com and
+[53:37.20]  my my assumption was that lenot tocom is
+[53:39.52]  actually powered by embedding so you
+[53:40.84]  take all of the Corpus of knowledge you
+[53:42.52]  take all the recordings your blog post
+[53:44.76]  you embed them and then when people ask
+[53:46.92]  questions um you can actually go in and
+[53:49.56]  see the similarity between the question
+[53:52.00]  and and the Corpus of knowledge and then
+[53:53.92]  provide an answer to some somebody's
+[53:55.48]  question and reference like an empirical
+[53:57.76]  fact like something that's true from
+[53:59.28]  your knowledge base and like this is
+[54:00.88]  super useful and people are doing a ton
+[54:02.60]  of this is like trying to ground these
+[54:04.64]  models in reality in what they know to
+[54:06.96]  be true like we know all the things from
+[54:08.52]  your podcast to be at least something
+[54:10.44]  that you've said before and to be true
+[54:12.24]  in that sense and we can bring them into
+[54:14.44]  the the answer that that the model is
+[54:16.92]  actually generating in response to a
+[54:18.56]  question so that'll be super cool and
+[54:20.16]  these new V3 embedding models again you
+[54:23.68]  know state-of-the-art performance the
+[54:25.56]  cool thing is actually the non-english
+[54:27.96]  performance has increased super
+[54:29.96]  significantly I think historically
+[54:31.52]  people really were only using edings for
+[54:33.92]  like it it only worked really well for
+[54:36.08]  for English and I think now you can you
+[54:38.44]  can use it across like so many new
+[54:40.00]  languages because it's it's just so much
+[54:41.72]  more performant across those uh across
+[54:43.96]  those languages and it's like five times
+[54:45.92]  cheaper as well which is wonderful I
+[54:47.88]  there's there's there's no better
+[54:49.12]  feeling than making things cheaper for
+[54:50.88]  people I I love it I think now it's like
+[54:52.88]  you can embed I'm pretty sure was like
+[54:55.92]  62,000 pages of text for $1 um which is
+[55:01.00]  which is very very cheap so what the
+[55:03.04]  really cool things you can do with
+[55:04.24]  edings and excited to see people ined
+[55:06.56]  more stuff what a deal final question
+[55:09.76]  before we get to a very exciting
+[55:11.20]  lightning round say you're a product
+[55:13.68]  manager at a big company or even a
+[55:16.84]  Founder what do you think are the
+[55:18.80]  biggest opportunities for them to
+[55:20.92]  Leverage The Tech that you guys are
+[55:23.20]  building gp4 all the apis how should
+[55:26.28]  people be thinking about here's how we
+[55:27.56]  should really think about leveraging
+[55:29.00]  this power in our existing product or
+[55:31.84]  new product whichever direction you want
+[55:33.12]  to go yeah I think going back to this
+[55:35.68]  theme of like new experiences is really
+[55:38.80]  exciting to me like I think consumers
+[55:41.48]  are just going to be like TI like you're
+[55:44.40]  going to have an edge on other people if
+[55:46.60]  you're providing AI That's not
+[55:48.16]  accessible on a chat bot like people are
+[55:49.76]  using a ton of chat and like it's a
+[55:51.72]  really valuable service area like it's
+[55:53.68]  clearly valuable because people are
+[55:54.80]  using using it but I think products that
+[55:56.68]  like move Beyond this chat interface
+[55:59.72]  really are going to have such an
+[56:01.04]  advantage and and also like thinking
+[56:03.48]  about how to take your use case to the
+[56:06.04]  next level like i' I've tried a ton of
+[56:08.92]  chat examples that are like very very
+[56:11.48]  basic and like providing a little bit of
+[56:13.32]  value to me but I'm like really this
+[56:14.64]  should go like much further and like
+[56:16.76]  actually build your core experience from
+[56:19.40]  the ground up like I've used this
+[56:20.72]  product that allows you to essentially
+[56:22.88]  like manage or like view the
+[56:25.28]  conversations that are happening online
+[56:27.32]  around like certain topics and stuff
+[56:29.20]  like that so I can go and look online
+[56:30.52]  like what are people saying about gb4
+[56:32.72]  and like that what what I just said out
+[56:35.28]  loud what are people saying about gp4 is
+[56:37.80]  like the actual question that I have and
+[56:39.64]  like in in a normal product experience
+[56:41.44]  to like I have to go into a bunch of
+[56:42.80]  dashboards and like change a bunch of
+[56:44.60]  filters and stuff like that and what I
+[56:46.00]  really want is just like ask my question
+[56:48.28]  what are what are people doing what are
+[56:50.20]  people saying about gp4 like get an
+[56:52.12]  answer to that question in like a very
+[56:54.16]  data grounded way and I've seen people
+[56:56.60]  like solve part of this problem where
+[56:59.20]  like oh be like oh here's a here's a few
+[57:01.04]  examples of what people are saying and
+[57:02.44]  like well that's not really what I want
+[57:03.88]  like I want this like summary of what's
+[57:06.40]  happening and I think it just takes a
+[57:08.20]  little bit more engineering effort to
+[57:09.76]  make that happen but I think it's like
+[57:11.48]  that is the magical unlock of like wow
+[57:14.12]  this is an incredible product that I'm
+[57:15.68]  going to continue to use instead of like
+[57:17.52]  yeah this is kind of useful but like I
+[57:19.48]  really want more awesome I'll give a
+[57:21.64]  shout out to a product I'm not an
+[57:23.04]  investor but I know the founder called
+[57:25.08]  visual electric.com which I think is
+[57:27.32]  doing exactly this it's basically uh
+[57:29.60]  tools specifically built for creatives I
+[57:32.08]  think specifically graphic design to
+[57:34.40]  help them create imagery so you know
+[57:37.00]  there's like Dolly obviously but this
+[57:39.12]  takes it to a whole new level where it's
+[57:40.68]  kind of this canvas Infinite Canvas that
+[57:42.72]  you could just generate images edit
+[57:44.12]  tweak them and continue toate until you
+[57:45.68]  have the thing that you need visual I'm
+[57:48.20]  try this out is is it similar to canva
+[57:50.88]  it's it's even more Niche I think for
+[57:52.76]  more sophisticated graphic design I
+[57:54.40]  think is the the use case but I'm not a
+[57:56.76]  designer so uh I'm not I'm not the
+[57:59.40]  Target customer but I will say my wife
+[58:01.16]  is a graphic designer she' never used AI
+[58:03.44]  tools I showed her this and she got
+[58:05.36]  hooked on it she paid for it without
+[58:06.84]  even telling me that she was going to
+[58:07.84]  become a paid customer and she just
+[58:09.60]  started she created imagery of her dog
+[58:12.16]  all and all this art and now it's like
+[58:13.64]  on our TV she the art she created is now
+[58:16.00]  sitting it's like we have a frame TV and
+[58:18.16]  that's the um image on our TV so anyway
+[58:21.24]  I love that what was it called again
+[58:22.64]  visual
+[58:23.72]  electric.com anyway uh anything else you
+[58:26.80]  wanted to touch on or share before we
+[58:29.16]  get to a very exciting lightning round
+[58:31.84]  I've made this statement a few times
+[58:33.32]  online or other places but like for
+[58:35.00]  people who are have cool ideas that they
+[58:37.52]  should build with AI like this is the
+[58:39.48]  moment like there are so many cool
+[58:41.80]  things that need to be built for the
+[58:43.16]  world using Ai and like again if if I or
+[58:47.00]  other folks on on the team at open AI
+[58:48.56]  can be helpful and like getting you over
+[58:50.52]  the hump of like starting that journey
+[58:51.96]  of building something really cool like
+[58:53.28]  please reach out like they're just the
+[58:55.12]  the world needs more cool Solutions
+[58:56.96]  using these tools and uh would would
+[58:58.92]  love to hear about like the awesome
+[59:00.16]  stuff that people are building I would
+[59:01.80]  have asked you this at the end but how
+[59:03.00]  would people reach out what's the best
+[59:04.32]  way to actually do that Twitter LinkedIn
+[59:07.76]  uh my my email should be findable
+[59:09.72]  somewhere I don't want to say it and
+[59:11.04]  then I get spammed with a bunch of
+[59:12.40]  emails like you should be able to find
+[59:13.60]  my email if you need it online somewhere
+[59:15.88]  um but yeah Twitter and Linkedin is
+[59:17.36]  usually like the easiest place and uh
+[59:19.36]  how did they find you on Twitter uh it's
+[59:21.44]  just Logan kpatrick or I think my name
+[59:23.24]  shows up as Logan GPT or GP official
+[59:27.16]  Logan K yeah awesome okay and we'll link
+[59:29.24]  to in the show notes amazing well Logan
+[59:31.24]  with that we reached our very exciting
+[59:32.68]  lightning round are you ready I'm ready
+[59:35.64]  first question what are two or three
+[59:37.20]  books that you've recommended most to
+[59:38.76]  other people I think the first one it's
+[59:40.92]  one that I read a long time ago and came
+[59:43.24]  back to recently is the one room
+[59:44.96]  Schoolhouse by
+[59:46.56]  Salon incredible yeah I I don't want
+[59:49.84]  it's a lightning round so I won't say
+[59:51.00]  too much but like incredible story and
+[59:53.44]  AI is what is going to enable style
+[59:55.84]  con's vision of like a a teacher per
+[59:58.92]  student to actually happen so I'm really
+[60:00.48]  excited about that the other one is uh
+[60:02.20]  that I always come back to is why we
+[60:03.56]  sleep um I yeah sleep sleep and SC sleep
+[60:06.68]  science are so cool um if you don't care
+[60:08.92]  about your sleep like it's one of the
+[60:10.80]  the biggest up levels that you can do
+[60:12.92]  for yourself what is a favorite recent
+[60:15.72]  movie or TV show that you really enjoyed
+[60:18.16]  I'm I'm a sucker for like a good
+[60:20.16]  inspirational human story um so I I
+[60:22.84]  watched with my family recently over the
+[60:25.00]  holidays this Grand Turismo movie and
+[60:27.08]  it's a story about somebody who like uh
+[60:29.12]  this a kid from London who grew up uh
+[60:31.84]  like doing like Sim racing which is like
+[60:33.76]  a virtual race car uh and did this
+[60:36.88]  competition ended up becoming like a
+[60:38.32]  real professional race car driver
+[60:40.36]  through some competition and it's just
+[60:42.28]  like really cool to see yeah someone go
+[60:44.84]  from driving a virtual car to driving a
+[60:47.20]  real car and like competing in the
+[60:48.56]  24-hour Lama and all that stuff I used
+[60:50.84]  to play that game and it was a lot of
+[60:52.08]  fun but I don't think I have any clue
+[60:54.56]  how to drive a real car race car uh so
+[60:56.92]  that's inspiring do you have a favorite
+[60:59.24]  interview question that you like to ask
+[61:00.72]  candidates that you're
+[61:02.08]  interviewing yeah I'm I'm always curious
+[61:04.12]  to hear what people's like the thing
+[61:06.48]  that they so strongly believe that uh
+[61:09.60]  people disagree with them on what do you
+[61:12.24]  look for in an answer that seems like
+[61:14.12]  wow that's a really good signal I'm I'm
+[61:17.00]  oftentimes it's it's it's just an
+[61:18.88]  entertaining question to ask in some
+[61:20.56]  sense but it's also it's it's
+[61:21.96]  interesting to see like what somebody's
+[61:24.28]  like deeply held strong belief is I
+[61:26.52]  think that's and you know not not to
+[61:28.96]  like judge whether or not I believe in
+[61:30.52]  that but like just curious to like see
+[61:32.84]  why why people feel that way what is a
+[61:35.56]  favorite product that you've recently
+[61:37.36]  discovered that you really like a
+[61:40.04]  narrative of sleep I have this um I have
+[61:42.96]  this really nice sleep mask from this
+[61:44.96]  company called and the not being paid to
+[61:47.60]  say this but it's called like man Manta
+[61:49.40]  sleep or something like that it's a
+[61:50.68]  weighted sleep mask and it feels
+[61:52.64]  incredible when I I don't know maybe I
+[61:54.32]  just have a heavy head or something like
+[61:55.96]  that but it feels it feels good to wear
+[61:58.04]  a weighted sleep mask um at night I I
+[62:00.44]  really appreciate it I have a competing
+[62:01.92]  sleep mask that I highly recommend I'm
+[62:03.56]  trying to find it it's an I've emailed
+[62:05.96]  people about it a couple times in my
+[62:07.52]  newsletter for gift guides okay my
+[62:09.92]  favorite is called the wow waha sleep
+[62:13.20]  mask uh W like o a w AO A W uh I'll link
+[62:18.84]  to it in the show notes uh it makes a
+[62:20.48]  lot of room it's like very large and
+[62:22.76]  there's space for your eyes so like your
+[62:25.44]  eyelashes and whatever eyes aren't
+[62:26.80]  pressed on uh and it's just it just fits
+[62:29.08]  really nicely around the head and my
+[62:30.68]  wife we both wear eye masks at night it
+[62:32.24]  just speaking of sleep really helps as
+[62:34.16]  sleep uh it's not like here I love it
+[62:36.72]  yeah it doesn't have the weight in this
+[62:38.44]  piece so it might be worth trying but uh
+[62:41.04]  everyone I've recommended this to is
+[62:42.32]  like that changed my life thank you for
+[62:44.36]  helping me sleep better and so we link
+[62:46.88]  to look at that sleep mask look at that
+[62:49.48]  adult uh two more questions do you have
+[62:52.08]  a favorite life motto that you often
+[62:55.48]  come back to share with friends or
+[62:57.32]  family either in work or in life yeah
+[63:00.00]  I've got it on a post- a note that I
+[63:02.68]  right behind my my camera and it's
+[63:04.60]  measure in hundreds I love this idea of
+[63:07.36]  measuring things in hundreds and it's
+[63:09.52]  for folks who are like at the beginning
+[63:11.64]  of some Journey I I talk to people all
+[63:13.72]  the time they're like yeah I've tried
+[63:14.88]  this thing and it hasn't worked and if
+[63:17.08]  your mental model is to measure in
+[63:19.68]  hundreds if I measure in hundreds the
+[63:21.60]  five times that you failed at something
+[63:23.48]  youve failed tried zero times and I love
+[63:26.16]  that it's like such a great reminder
+[63:29.04]  that everything in life is like built on
+[63:32.04]  compounding and multiple attempts at
+[63:34.52]  stuff and if you don't try enough times
+[63:36.00]  like you're never going to be successful
+[63:37.40]  at it I love that I could see why you
+[63:39.28]  are successful at open Ai and why you're
+[63:41.20]  a good fit there final question so I
+[63:44.32]  asked open a I asked Chad
+[63:46.24]  GPT uh for a very silly question give me
+[63:48.84]  a bunch of silly questions to ask Logan
+[63:51.56]  Kilpatrick head of developer relations
+[63:53.64]  at openi and I went through a bunch I
+[63:55.60]  have three here but I'm going to pick
+[63:57.28]  one if an AI started doing standup
+[64:00.36]  comedy what do you think would be its
+[64:02.56]  go-to joke or funny observation about
+[64:05.36]  humans I think today I think if you if
+[64:09.40]  you were to do this like I think the
+[64:11.48]  go-to question would be something along
+[64:13.72]  like the so an AI walks into a bar and
+[64:17.36]  and likely because again it's trained on
+[64:19.80]  some distribution of training data and
+[64:21.60]  like that's like the most common joke
+[64:23.52]  that comes up that's probably like I
+[64:25.40]  wonder if you came up with a joke right
+[64:27.52]  now whether or not that would show up in
+[64:29.28]  in one of the examples I love it what
+[64:31.48]  would be the joke though we need the
+[64:32.76]  joke we need the punch line I'm just
+[64:34.68]  joking I know you can't come up with
+[64:36.88]  amazing that's what we have sh for
+[64:39.44]  already irrelevant amazing Logan thank
+[64:42.48]  you so much for being here two final
+[64:45.04]  questions even though you've already
+[64:45.92]  shared this information but just for
+[64:47.28]  folks to remind them or can folks find
+[64:49.16]  you if they want to reach out and ask
+[64:51.04]  you more questions and how can listeners
+[64:53.32]  be useful to you
+[64:55.52]  yeah Twitter and Linkedin Logan
+[64:57.84]  Kilpatrick or logan. gbt on on Twitter
+[65:00.52]  please please shoot me messages like I
+[65:02.00]  get a ton of DMS from people and it's
+[65:03.52]  always like really really interesting
+[65:05.00]  stuff I think the thing that I can uh
+[65:07.96]  that I would love to have help on is
+[65:09.48]  like if people find bugs and things that
+[65:11.88]  don't work well in chat gbt like I
+[65:13.68]  oftentimes like see people be like ah
+[65:16.28]  this thing didn't work really well and
+[65:18.28]  the the key and I think we as open AI
+[65:20.80]  need to do a better job of like
+[65:21.92]  messaging this to people but having like
+[65:24.16]  shared chats or like actual like
+[65:26.52]  tangible reproducible examples are like
+[65:29.00]  the two things that we need in order to
+[65:30.96]  like actually fix the problems that
+[65:32.72]  people have like the model laziness was
+[65:34.56]  a good example where it was kind of hard
+[65:36.36]  to figure out what was going on because
+[65:38.88]  people would be like a the model's
+[65:39.92]  lazier but like it's hard to figure out
+[65:41.76]  like what were the prompts they were
+[65:42.84]  using what was the examples all that
+[65:44.36]  stuff so send those examples as you come
+[65:46.44]  up on things that don't work well and we
+[65:48.36]  we'll make stuff better for you amazing
+[65:50.20]  and I'll also just remind people as if
+[65:51.96]  you're listening to this and you're like
+[65:53.40]  oh okay Co cool a lot of cool ideas for
+[65:55.72]  for open Ai and chat GPT what you need
+[65:58.48]  to do is actually just go to chat chat.
+[66:01.16]  open.com and try the stuff out there's a
+[66:03.88]  lot of just like theorizing but I think
+[66:06.24]  once you actually start doing it you
+[66:08.04]  start to see things a little differently
+[66:09.40]  and at this point every day I'm in there
+[66:11.28]  doing something like asking for ideas
+[66:13.00]  for questions doing research on a
+[66:14.92]  newsletter post and it's just like a tab
+[66:16.92]  I'm always coming back to and I know
+[66:19.32]  there's a lot of people just like
+[66:20.32]  talking about this sort of thing and I
+[66:22.04]  just want to remind people just like go
+[66:23.68]  sign in play with it ask it questions on
+[66:26.08]  something you're working on and just see
+[66:27.08]  how it goes and keep keep coming back to
+[66:29.08]  it um is there anything else you want to
+[66:30.60]  share along those lines to inspire
+[66:31.92]  people to give this a shot I love it I
+[66:34.72]  think that the phrase of like you know
+[66:36.92]  people being worried about humans being
+[66:38.60]  replaced by Ai and I've seen this
+[66:40.24]  narrative online that it's like it's not
+[66:42.32]  AI That's going to replace humans it's
+[66:43.92]  like other humans that are being
+[66:45.20]  augmented and like using AI tools that
+[66:47.16]  are like going to be more competitive in
+[66:49.00]  a job market and stuff like that so go
+[66:50.80]  and try these AI tools like this is the
+[66:52.40]  best time to learn like you're going to
+[66:53.56]  be more productive and like empowered in
+[66:55.60]  your job and and the things that you're
+[66:57.08]  excited about so um yeah excited to see
+[66:59.44]  what people use chat TBT for and then
+[67:01.60]  you can expense your account I think
+[67:03.08]  it's 10 or 20 bucks a month a lot of
+[67:05.12]  companies are paying for this for you so
+[67:07.08]  ask your boss if you can just have it
+[67:08.44]  expensed and make sure you use the
+[67:09.76]  latest version anyway Logan thank you
+[67:13.28]  again so much for being
+[67:15.08]  here this is awesome buddy thanks for
+[67:17.00]  having me and uh thoughtful questions
+[67:18.44]  hopefully those weren't all from chat
+[67:19.60]  should be nope only the last one I did
+[67:21.72]  have a bunch of others I was had in in
+[67:24.32]  the belt or in the pocket I don't know
+[67:25.96]  what the metaphor is in the back pocket
+[67:27.68]  that's the metaphor uh but I did not get
+[67:29.52]  to them because we had enough great
+[67:31.04]  stuff so no that was all me human AI
+[67:35.48]  thank you thanks Logan Lenny Lenny
+[67:38.72]  bot.com check it out okay thanks Logan
+[67:41.80]  bye
+[67:42.76]  everyone thank you so much for listening
+[67:45.16]  if you found this valuable you can
+[67:46.56]  subscribe to the show on Apple podcast
+[67:48.76]  Spotify or your favorite podcast app
+[67:51.68]  also please consider giving us a rating
+[67:53.60]  or leaving a review as that really helps
+[67:55.80]  other listeners find the podcast you can
+[67:58.12]  find all past episodes or learn more
+[68:00.16]  about the show at Lenny's podcast.com
+[68:02.52]  see you in the next
+[68:05.16]  episode

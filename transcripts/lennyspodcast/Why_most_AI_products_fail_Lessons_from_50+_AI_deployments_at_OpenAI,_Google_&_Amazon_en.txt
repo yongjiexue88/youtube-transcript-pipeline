@@ -1,0 +1,2452 @@
+Title     : Why most AI products fail: Lessons from 50+ AI deployments at OpenAI, Google & Amazon
+Video ID  : z7T1pCxgvlA
+URL       : https://www.youtube.com/watch?v=z7T1pCxgvlA
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2443
+Saved at  : 2026-06-21 01:00:10
+------------------------------------------------------------
+
+[00:00.00]  We worked on a guest post together had
+[00:01.60]  this really key insight that building AI
+[00:04.32]  products is very different from building
+[00:06.88]  nonAI products.
+[00:08.16]  >> Most people tend to ignore the
+[00:09.44]  non-determinism. You don't know how the
+[00:11.20]  user might behave with your product and
+[00:12.88]  you also don't know how the LLM might
+[00:14.96]  respond to that. The second difference
+[00:16.80]  is the agency control trade-off. Every
+[00:19.20]  time you hand over decision-m
+[00:21.20]  capabilities to agentic systems, you're
+[00:23.36]  kind of relinquishing some amount of
+[00:24.96]  control on your end.
+[00:26.00]  >> This significantly changes the way you
+[00:27.28]  should be building product. So we
+[00:28.48]  recommend building step by step. When
+[00:30.00]  you start small, it forces you to think
+[00:32.48]  about what is the problem that I'm going
+[00:34.16]  to solve. In all this advancements of
+[00:36.24]  the AI, one easy slippery slope is to
+[00:38.64]  keep thinking about complexities of the
+[00:40.40]  solution and forget the problem that
+[00:41.84]  you're trying to solve.
+[00:42.64]  >> It's not about being the first company
+[00:44.40]  to have an agent among your competitors.
+[00:46.48]  It's about have you built the right fly
+[00:48.08]  wheels in place so that you can improve
+[00:49.60]  over time.
+[00:50.16]  >> What kind of ways of working do you see
+[00:52.40]  in companies that build AI products
+[00:54.40]  successfully? I used to work with the
+[00:56.48]  CEO of now Rackspace. He would have this
+[00:59.68]  block every day in the morning which
+[01:01.28]  would say catching up with AI 4 to 6:00
+[01:03.44]  a.m. Leaders have to get back to being
+[01:05.84]  hands-on. You must be comfortable with
+[01:07.76]  the fact that your intuions might not be
+[01:09.68]  right and you probably are the dumbest
+[01:11.68]  person in the room and you want to learn
+[01:12.96]  from everyone.
+[01:13.76]  >> What do you think the next year of AI is
+[01:15.76]  going to look like?
+[01:16.56]  >> Persistence is extremely valuable.
+[01:18.48]  Successful companies right now building
+[01:20.08]  in any new area. They are going through
+[01:22.00]  the pain of learning this, implementing
+[01:24.16]  this and understanding what works and
+[01:25.84]  what doesn't work. Pain is the new mode.
+[01:29.76]  Today my guests are Aishwaria Raanti and
+[01:32.16]  Kiti Bottom. Kiti works on codecs at
+[01:34.80]  OpenAI and has spent the last decade
+[01:36.88]  building AI and ML infrastructure at
+[01:39.04]  Google and at Kumo. Ash was an early AI
+[01:41.68]  researcher at Alexa and Microsoft and
+[01:43.76]  has published over 35 research papers.
+[01:46.32]  Together, they've led and supported over
+[01:48.56]  50 AI product deployments across
+[01:51.20]  companies like Amazon, Data Bricks,
+[01:52.96]  OpenAI, Google, and both startups and
+[01:55.04]  large enterprises. Together, they also
+[01:57.20]  teach the number one rated AI course on
+[01:59.36]  Maven, where they teach product leaders
+[02:01.20]  all of the key lessons they've learned
+[02:02.72]  about building successful AI products.
+[02:05.12]  The goal of this episode is to save you
+[02:07.20]  and your team a lot of pain and
+[02:09.52]  suffering and wasted time trying to
+[02:11.60]  build your AI product. Whether you are
+[02:13.92]  already struggling to make your product
+[02:15.44]  work or want to avoid that struggle,
+[02:17.76]  this episode is for you. If you enjoy
+[02:19.52]  this podcast, don't forget to subscribe
+[02:20.88]  and follow it in your favorite
+[02:21.76]  podcasting app or YouTube. It helps
+[02:23.52]  tremendously. And if you become an
+[02:25.28]  annual subscriber of my newsletter, you
+[02:27.60]  get a year free of a ton of incredible
+[02:30.00]  products, including a year free of
+[02:32.08]  lovable, replet, bold, gamma, nad
+[02:34.16]  linear, Devon, Postto, Superhum, Dcript,
+[02:36.16]  Whisper Flow, Perplexity, Warp, Granola,
+[02:37.76]  Magic Pattern, Dracast, Chapter D,
+[02:39.12]  Mobit, and Stripe Atlas. Head on over to
+[02:40.96]  lenny'snewsletter.com and click product
+[02:42.80]  pass. With that, I bring you Awaria
+[02:45.28]  Oranti and Kiti bottom after a short
+[02:47.84]  word from our sponsors.
+[02:49.92]  This episode is brought to you by Merge.
+[02:52.32]  Product leaders hate building
+[02:54.16]  integrations. They're messy. They're
+[02:56.16]  slow to build. They're a huge drain on
+[02:58.24]  your road map, and they're definitely
+[02:59.76]  not why you got into product in the
+[03:01.60]  first place. Lucky for you, Merge is
+[03:04.00]  obsessed with integrations. With a
+[03:06.16]  single API, B2B SAS companies embed
+[03:08.40]  Merge into their product and ship 220
+[03:11.12]  plus customerf facing integrations in
+[03:13.20]  weeks, not quarters. Think of merge like
+[03:15.76]  Plaid, but for everything B2B SAS.
+[03:18.48]  Companies like Merall AI, ramp, and use
+[03:22.00]  Merge to connect their customers as
+[03:23.60]  accounting, HR, ticketing, CRM, and file
+[03:26.32]  storage systems to power everything from
+[03:28.32]  automatic onboarding to AI ready data
+[03:30.56]  pipelines. Even better, Merge now
+[03:33.04]  supports the secure deployment of
+[03:34.64]  connectors to AI agents with a new
+[03:36.56]  product so that you can safely power AI
+[03:38.56]  workflows with real customer data. If
+[03:40.80]  your product needs customer data from
+[03:42.64]  dozens of systems, Merge is the fastest,
+[03:45.68]  safest way to get it. Book and attend a
+[03:48.24]  meeting at merge.dev/lenny
+[03:50.24]  and they'll send you a $50 Amazon gift
+[03:52.64]  card. That's merge.dev/lenny.
+[03:56.24]  This episode is brought to you by
+[03:57.76]  Stella, the customer research platform
+[03:59.92]  built for the AI era. Here's the truth
+[04:02.64]  about user research. It's never been
+[04:04.72]  more important or more painful. Teams
+[04:07.44]  want to understand why customers do what
+[04:09.28]  they do. But recruiting users, running
+[04:11.36]  interviews, and analyzing insights takes
+[04:13.44]  weeks. By the time the results are in,
+[04:15.68]  the moment to act has passed. Strella
+[04:18.40]  changes that. It's the first platform
+[04:20.32]  that uses AI to run and analyze in-depth
+[04:22.88]  interviews automatically, bringing fast
+[04:25.12]  and continuous user research to every
+[04:27.20]  team. Strella's AI moderator asks real
+[04:30.24]  follow-up questions, probing deeper when
+[04:32.32]  answers are vague, and services patterns
+[04:34.48]  across hundreds of conversations, all in
+[04:36.64]  a few hours, not weeks. Product design
+[04:39.76]  and research teams at companies like
+[04:41.20]  Amazon and Dualingo are already using
+[04:43.44]  Stella for Figma prototype testing,
+[04:45.76]  concept validation, and customer journey
+[04:47.84]  research, getting insights overnight
+[04:49.84]  instead of waiting for the next sprint.
+[04:51.92]  If your team wants to understand
+[04:53.28]  customers at the speed you ship
+[04:54.96]  products, try Strella. Run your next
+[04:57.68]  study at strea.io/lenny.
+[05:00.48]  That's s t re l.io/lenny.
+[05:07.84]  Ash and Kiti, thank you so much for
+[05:10.80]  being here and welcome to the podcast.
+[05:13.68]  >> Thank you. Thank you for having us.
+[05:15.28]  Super excited for this.
+[05:16.56]  >> Let me set the stage for the
+[05:17.76]  conversation that we're going to have
+[05:18.88]  today. So, you two have built a bunch of
+[05:22.24]  AI products yourself. You've gone deep
+[05:24.56]  with a lot of companies who uh have
+[05:27.28]  built AI products, have struggled to
+[05:28.88]  build AI products, build AI agents. You
+[05:31.68]  also teach a course on building AI
+[05:33.84]  products successfully that and you're
+[05:35.84]  kind of like on this mission to just
+[05:37.20]  reduce pain and suffering and failure uh
+[05:40.24]  that you constantly see people go
+[05:41.76]  through when they're building AI
+[05:43.28]  products. So to set a little just
+[05:45.44]  foundation for the conversation we're
+[05:46.88]  going to have, what are you seeing on
+[05:48.72]  the ground within companies trying to
+[05:51.20]  build AI products? What's going well?
+[05:53.68]  What's not going well?
+[05:54.72]  >> I think 2025 has been significantly
+[05:57.44]  different than 2024. one, the skepticism
+[06:01.28]  has significantly reduced. Um, there
+[06:03.60]  were tons of leaders last year who
+[06:05.44]  probably thought this would be yet
+[06:06.56]  another crypto wave and kind of
+[06:08.40]  skeptical to get started and a lot of
+[06:11.04]  the use cases that I saw last year were
+[06:13.04]  more of Snapchat on your data, right?
+[06:14.96]  and that was, you know, um calling
+[06:16.80]  themselves an AI product. And this year,
+[06:19.36]  a ton of companies are really rethinking
+[06:21.28]  their user experiences and their
+[06:23.36]  workflows and all of that and really
+[06:24.96]  understanding that you need to
+[06:27.28]  deconstruct and reconstruct your
+[06:29.04]  processes in order to have a in order to
+[06:31.84]  build successful AI products, right? And
+[06:33.76]  that's that's the good stuff. The bad
+[06:36.00]  stuff is the execution is still all over
+[06:38.24]  the place. Um, think of it, right? This
+[06:40.56]  is a three-year-old field. There are no
+[06:42.96]  play playbooks. there are no textbooks.
+[06:45.44]  Um so you really need to figure out as
+[06:47.52]  you go and the AI life cycle both
+[06:50.48]  pre-eployment and post- deployment is
+[06:52.96]  very different as compared to a
+[06:54.40]  traditional software life cycle. Um and
+[06:57.60]  so so a lot of old contracts and
+[06:59.92]  handoffs between traditional roles like
+[07:02.00]  say PMs and engineers and data folks has
+[07:05.28]  now been broken. It's and people are
+[07:07.92]  really getting adapted to this new way
+[07:10.00]  of working together and kind of owning
+[07:12.48]  the same feedback loop in a way because
+[07:15.36]  previously I feel like PMs and engineers
+[07:17.52]  and all of these folks had their own
+[07:18.96]  feedback loops to optimize and now you
+[07:21.20]  need to be probably sitting in the same
+[07:22.56]  room. You're probably looking at agent
+[07:24.56]  traces together and deciding how your uh
+[07:26.88]  product should behave. So it's a tighter
+[07:29.36]  form of collaboration. So companies are
+[07:31.76]  still kind of figuring that out. That's
+[07:33.60]  kind of what I see um in my consulting
+[07:36.32]  practice this year.
+[07:37.52]  >> So, let me follow that thread. We worked
+[07:39.04]  on a guest post together that came out a
+[07:40.72]  few months ago. And the thing that stood
+[07:42.88]  out to me most that stuck with me most
+[07:44.64]  after working on that post is you had
+[07:46.64]  this really uh key insight that building
+[07:49.76]  AI products is very different from
+[07:52.48]  building non-AI products. And the thing
+[07:54.56]  that you're big on getting across is
+[07:56.80]  there's two very big differences. Talk
+[07:59.28]  about those two differences.
+[08:01.20]  >> Yes. Um and again I I want to make sure
+[08:03.84]  that we drive home the right point. Um
+[08:06.80]  there are tons of uh similarities of
+[08:09.12]  building AI systems and software systems
+[08:11.28]  as well. But then there are some things
+[08:13.28]  that kind of fundamentally change the
+[08:15.28]  way you build software systems um versus
+[08:18.24]  AI systems, right? And one of them that
+[08:20.08]  most people tend to ignore is the
+[08:21.68]  non-determinism. Uh you're pretty much
+[08:24.24]  working with a non-deterministic API as
+[08:27.20]  compared to traditional software. What
+[08:29.76]  does that mean and why does that have to
+[08:31.28]  affect us is in traditional software you
+[08:34.40]  pretty much have a very well-mapped
+[08:36.96]  decision engine or workflow. Think of
+[08:39.44]  something like booking.com right you um
+[08:41.76]  you have an intention that uh you want
+[08:43.52]  to make a booking in San Francisco for
+[08:45.44]  two nights etc. uh the product has kind
+[08:48.40]  of been built uh so that your intention
+[08:50.72]  can be converted into a particular
+[08:52.96]  action and you kind of are clicking
+[08:54.56]  through a bunch of buttons, options,
+[08:56.08]  forms and all of that and you finally
+[08:57.60]  achieve your intention. But now that
+[08:59.92]  layer in AI products has completely been
+[09:02.64]  replaced by a very fluid um interface
+[09:06.96]  which is mostly natural language which
+[09:09.52]  means you the user can literally come up
+[09:11.60]  with ton of ways of saying uh or
+[09:13.92]  communicating their intentions, right?
+[09:15.68]  And that kind of changes a lot of things
+[09:17.12]  because now you don't know how your user
+[09:19.36]  is going to behave. That's on the input
+[09:21.44]  side. And the output is also that you're
+[09:24.16]  working with a non-deterministic
+[09:25.84]  probabilistic API which is your LLM. And
+[09:29.60]  LLMs are pretty sensitive to prompt
+[09:31.76]  phrasings and they're pretty much black
+[09:33.52]  boxes. So you don't even know how the
+[09:35.36]  output surface will look like, right? So
+[09:37.12]  this um you don't know how the user
+[09:39.12]  might behave with your product and you
+[09:40.80]  also don't know how the LLM might
+[09:42.72]  respond to that. So you're now working
+[09:44.56]  with an input, output, and a proc
+[09:46.72]  process. And you don't understand all
+[09:49.04]  the three very well. You're trying to
+[09:50.40]  kind of anticipate behavior and build
+[09:52.40]  for it. And with agentic systems, this
+[09:55.44]  kind of gets even harder. And that's
+[09:56.96]  where we talk about the second
+[09:58.16]  difference, which is the agency control
+[10:00.56]  trade-off. Right? What we mean by that,
+[10:03.60]  and I'm kind of shocked. So many people
+[10:06.08]  don't talk about this. They're extremely
+[10:08.16]  obsessed with building autonomous
+[10:09.68]  systems, agents can that can do work for
+[10:11.68]  you. But every time you hand over
+[10:14.08]  decision-m capabilities or autonomy to
+[10:16.32]  agentic systems, you're kind of
+[10:18.48]  relinquishing some amount of control on
+[10:20.16]  your end, right? And when you do that,
+[10:21.92]  you want to make sure that your agent
+[10:23.76]  has um caning your trust or it is
+[10:26.48]  reliable enough that you can allow it to
+[10:28.32]  make decisions. And that's where we talk
+[10:30.24]  about this agency control trade-off
+[10:32.48]  which is if you give your AI agent or
+[10:35.12]  your AI system whatever it is more
+[10:36.96]  agency which is the ability to make
+[10:38.88]  decisions you're also um losing some
+[10:41.76]  control and you want to make sure that
+[10:43.76]  the agent or the AI system has earned um
+[10:47.20]  that ability or has built up trust over
+[10:49.36]  time.
+[10:49.92]  >> So just to summarize what you're sharing
+[10:51.92]  here essentially people have been
+[10:54.24]  building product software products for a
+[10:56.24]  long time. We're now in a world where
+[10:58.64]  the software you're building is one
+[11:01.12]  non-deterministic can just do things
+[11:03.04]  differently like you know as you said
+[11:04.88]  you go to booking.com you find a hotel
+[11:06.24]  it's going to be the same experience
+[11:07.20]  every time you'll see different hotels
+[11:08.56]  but it's a predictable experience with
+[11:10.40]  AI you can't predict that it's going to
+[11:12.64]  be the exact same thing the thing that
+[11:14.00]  you uh plan it to be every time and then
+[11:16.56]  the other is there's this trade-off
+[11:18.00]  between agency and control how much will
+[11:20.48]  the AI do for you versus how much should
+[11:22.40]  the person still be in charge and the
+[11:25.44]  what I'm hearing is the big point here
+[11:26.72]  is significantly changes the way you
+[11:28.16]  should be building product and we're
+[11:29.28]  going to talk about the impact on how
+[11:31.60]  the product development life cycle
+[11:33.44]  should change as a result. Is there
+[11:36.00]  anything else you want to add there
+[11:37.12]  before we get into into that? Yeah, it's
+[11:40.00]  definitely like one of the key points
+[11:41.60]  that uh this kind of distinction needs
+[11:44.00]  to exist in your mind like when you're
+[11:46.40]  starting to build. For example, think
+[11:48.16]  about if your like objective is to hike
+[11:50.40]  uh half term inity, right? You don't
+[11:52.64]  start hiking it every day, but you start
+[11:54.88]  you know training yourself for like you
+[11:56.48]  know in in minor parts and then you
+[11:58.80]  slowly improve and then like you go to
+[12:00.32]  the end goal, right? I feel like that's
+[12:02.24]  extremely similar to what you want to
+[12:04.08]  build AI products in the sense that when
+[12:06.32]  you don't start with like agents with
+[12:08.32]  all the tools and all the context that
+[12:10.08]  you have in the company in day one and
+[12:12.00]  expect it to work or like you don't even
+[12:13.84]  tinker at that level. You need to be
+[12:15.84]  deliberately starting in places where
+[12:18.16]  there is minimal impact and more human
+[12:20.16]  control so that you have like a good
+[12:22.16]  grip of what are the current
+[12:23.44]  capabilities and what can I do with them
+[12:25.52]  and then slowly you know like lean into
+[12:27.52]  the more agency and lesser control. So
+[12:29.84]  this gives you that confidence that okay
+[12:32.32]  I can know that okay this is the
+[12:34.48]  particular problem that I'm facing and
+[12:36.56]  the AI can solve this extent of it and
+[12:38.56]  then like let me next think through what
+[12:40.88]  context I need to bring in what kind of
+[12:42.48]  tools I need to add to this to improve
+[12:45.04]  the uh experience right so I feel like
+[12:47.20]  it's also uh it's a good and a bad thing
+[12:49.36]  in sense that it's good that you don't
+[12:51.44]  have to see the complexity of the
+[12:53.04]  outside world of like you know all of
+[12:55.04]  this fancy AI agents force and feel like
+[12:57.44]  I cannot do that it's always everyone is
+[12:59.68]  starting from very uh minimalistic
+[13:02.80]  structures and then evolving. And the
+[13:04.56]  second part is like it's also good the
+[13:06.64]  the bad thing is that as you are like
+[13:09.28]  you know trying to build this oneclick
+[13:10.96]  agents into your company you don't have
+[13:13.44]  to be overwhelmed with this complexity
+[13:15.04]  you can like slowly graduate. So that's
+[13:16.88]  extremely important and we see this as a
+[13:18.96]  repeating pattern over and over.
+[13:20.64]  >> Okay. All right. So, let's actually
+[13:21.44]  follow that, right? Cuz that's a really
+[13:22.88]  important component of how you recommend
+[13:25.04]  people build AI stuff. AI stuff, AI
+[13:27.52]  products, AI agents, all the AI things.
+[13:29.52]  Um, so give us an example what you're
+[13:31.84]  talking about here. This idea of
+[13:33.20]  starting
+[13:34.72]  uh slow with agency and control and then
+[13:37.28]  moving kind of up this rung.
+[13:38.88]  >> Yeah. For example, a very important or
+[13:41.28]  like very prevalent uh application of AI
+[13:44.08]  agents is like customer support, right?
+[13:45.92]  Uh imagine like you are a company who
+[13:48.56]  has like a lot of customer support
+[13:50.24]  tickets and why even imagine like OpenAF
+[13:53.04]  faced the exact same thing when we were
+[13:55.04]  launching products and there was like a
+[13:57.28]  huge spike of uh support volume as like
+[14:00.00]  you know we launch successful products
+[14:01.36]  like image and or uh you know like GPD5
+[14:04.32]  and things like that the kind of
+[14:05.84]  questions you get is different the kind
+[14:07.52]  of like you know u problems that the
+[14:09.76]  customers bring to you is different. So
+[14:11.92]  it's not about just like dumping all the
+[14:14.72]  uh list of help center articles that you
+[14:16.56]  have into the AI agent. you kind of
+[14:18.72]  understand what are the things that you
+[14:20.48]  can build and so initially the first
+[14:23.04]  step of it would be something like uh
+[14:25.28]  you have your support agents the human
+[14:27.04]  support agents but you will be
+[14:28.48]  suggesting uh in terms of okay this is
+[14:30.56]  what the AI thinks that is the right
+[14:32.72]  thing to do and then you get that
+[14:34.64]  feedback loop from the humans that okay
+[14:36.72]  this is actually a good suggestion for
+[14:38.16]  me in this particular case and this is a
+[14:39.84]  bad suggestion and then you can go back
+[14:41.68]  and understand okay uh this is what the
+[14:45.28]  drawbacks are or this is where the blind
+[14:46.96]  spots are and then how do I fix that?
+[14:48.96]  And once you get that you can increase
+[14:50.56]  the autonomy to say that okay I don't
+[14:52.72]  need to suggest to the human I'll
+[14:54.40]  actually show the uh show the answer
+[14:57.20]  directly to the customers to the
+[14:59.36]  customer and then we can actually add
+[15:01.68]  more complexity in terms of okay uh I
+[15:04.16]  was only answering questions based on
+[15:06.40]  health center articles but now let me
+[15:08.00]  add new functionality like I can
+[15:10.08]  actually issue refunds to the customers
+[15:11.84]  I can actually raise feature requests
+[15:13.44]  with the engineering team and all of
+[15:14.96]  these things. So if you start all with
+[15:16.40]  all of this on day one, it's incredibly
+[15:18.08]  hard to control the complexity. So we
+[15:20.24]  recommend like you know building step by
+[15:21.92]  step and then increasing it.
+[15:23.52]  >> Awesome. And you have a visual actually
+[15:25.20]  that we'll share of what this looks
+[15:27.60]  like. But just to kind of mirror back
+[15:29.20]  what you're describing this idea of
+[15:30.64]  start with high control, low agency in
+[15:33.52]  your the example you gave is the support
+[15:35.68]  agent is just kind of giving suggestions
+[15:38.40]  is not able to do anything. the user is
+[15:41.84]  in charge. And then as that becomes
+[15:44.88]  useful and you are confident it's doing
+[15:47.36]  the right sort of work, you give it a
+[15:49.52]  little more agency and you kind of pull
+[15:51.92]  back on the control the user has. And
+[15:54.16]  then if that's starting to go well, then
+[15:55.84]  you give it more agency and the user
+[15:57.76]  needs less control to control it.
+[16:01.20]  >> Awesome.
+[16:02.00]  >> I I think the higher level idea here is
+[16:05.36]  with AI systems, it's all about behavior
+[16:08.56]  calibration. It's incredibly impossible
+[16:11.44]  to predict up front how your system
+[16:13.68]  behaves. Now what do you do about it?
+[16:16.40]  You make sure that you don't ruin your
+[16:19.20]  customer experience or your end user
+[16:21.28]  experience. Um you keep that as is but
+[16:24.08]  then remove the amount of control that
+[16:25.92]  the human has and there is no single
+[16:29.52]  right way of doing it. You can decide
+[16:32.00]  how to constrain that autonomy. Right?
+[16:34.40]  Um, a very I mean a different example of
+[16:37.28]  how you could constrain autonomy is
+[16:39.76]  pre-authorization use cases. Insurance
+[16:42.40]  pre-authorization is a very ripe use
+[16:44.32]  case for AI because uh clinicians spend
+[16:47.60]  a lot of time um pre-authorizing
+[16:50.88]  uh things like blood tests, MRIs and
+[16:53.20]  things like that, right? And there are
+[16:54.88]  some cases which are more of lowhanging
+[16:57.04]  fruits. for instance, MRIs and blood
+[16:59.36]  tests because um as soon as you know
+[17:01.44]  patients information, it's easier to
+[17:03.20]  approve that and AI could do that versus
+[17:06.64]  something like an invasive surgery, etc.
+[17:08.64]  is more high-risk. You don't want to be
+[17:10.40]  doing that autonomously. So, you can
+[17:12.56]  kind of determine which of these use
+[17:14.48]  cases should go through that human and
+[17:16.24]  the loop layer versus which of the use
+[17:17.76]  cases AI can conveniently handle. And
+[17:20.24]  then all through this process, you're
+[17:21.60]  also logging what the human is doing,
+[17:23.76]  right? because you want to build a
+[17:25.36]  flywheel um that you could use in order
+[17:28.64]  to improve your system. Um so you're
+[17:31.84]  essentially um not ruining the user
+[17:34.16]  experience, not eroding trust at the
+[17:36.88]  same time logging what humans would
+[17:38.72]  otherwise do so that you can
+[17:40.08]  continuously improve your system.
+[17:41.76]  >> So let me let me give you a few more
+[17:43.20]  examples of this kind of progression
+[17:44.72]  that you recommend. And this the reason
+[17:46.24]  I'm spending so much time here is this
+[17:47.60]  is a really key part of your
+[17:49.36]  recommendation to help people build more
+[17:51.76]  successful AI products. this idea of
+[17:54.48]  start slow with high control and low
+[17:57.84]  agency and then build up over time once
+[17:59.68]  you've built confidence that it's doing
+[18:00.88]  the right sort of work. So a few more
+[18:02.32]  examples that you shared in your post
+[18:03.52]  that I'll just read. So say you're
+[18:05.20]  building a coding assistant. V1 would be
+[18:07.52]  just suggest inline completion and
+[18:09.28]  boilerplate snippets. V2 would be
+[18:11.36]  generate larger blocks like tests or
+[18:13.28]  refactors for humans to review. And then
+[18:15.44]  V3 is just apply the changes and open
+[18:17.52]  PRs autonomously.
+[18:20.00]  And then another example is a marketing
+[18:21.52]  assistant. So V1 would be draft emails
+[18:23.52]  or social copy just like here's what I
+[18:25.36]  would do. V2 is build a multi-step
+[18:27.92]  campaign and run the campaign and then
+[18:30.72]  launch and V3 is just launch it AB test
+[18:33.04]  it autooptimize campaigns across
+[18:34.64]  channels.
+[18:36.48]  >> Awesome.
+[18:36.88]  >> Yeah.
+[18:38.08]  >> And and again just to summarize where
+[18:39.92]  we're at just to give people the the
+[18:41.92]  advice we've shared so far. Uh one is
+[18:44.72]  just important to understand AI products
+[18:47.36]  are different. They're
+[18:47.84]  non-deterministic. And he pointed out
+[18:49.36]  and I forgot to actually mirror back
+[18:50.72]  this point both on the in on the input
+[18:52.88]  and the output the user experience is
+[18:55.12]  nondeterministic like people will see
+[18:57.04]  different things different outputs
+[18:58.96]  different chat conversations different
+[19:00.48]  maybe UI if it's designing the UI for
+[19:02.24]  you and also the output obviously is
+[19:03.68]  going to be nondeterministic so that's a
+[19:05.68]  problem and a challenge and then uh
+[19:08.08]  >> I mean if you think of it it's also the
+[19:10.00]  most beautiful part of AI which is I
+[19:13.12]  mean we're all much more comfortable
+[19:15.36]  talking than following a bunch of
+[19:17.60]  buttons and all of that right? So the
+[19:19.12]  bar to using AI products is much lower
+[19:21.92]  because you can be as natural as you
+[19:23.76]  would be with humans. But that's also
+[19:25.76]  the problem which is there are tons of
+[19:28.00]  ways we communicate. Um and it's you
+[19:30.96]  want to make sure that that intent is
+[19:32.64]  rightly communicated and the right
+[19:34.00]  actions are taken because most of your
+[19:35.60]  systems are deterministic and you want
+[19:38.16]  to achieve a deterministic outcome uh
+[19:40.96]  but with non-deterministic technology
+[19:42.72]  and that's where it gets a little messy.
+[19:44.80]  >> Awesome. Okay. That's a I love I love
+[19:46.64]  the the optimistic version of the why
+[19:50.00]  this is good. Okay. And then the other
+[19:51.76]  piece is this idea of this trade-off of
+[19:53.60]  autonomy versus control when you're
+[19:55.20]  designing a thing. And what I imagine
+[19:56.96]  what you're seeing is people try to jump
+[19:58.32]  to the ideal like the V3 immediately and
+[20:02.00]  that's when they get into trouble both.
+[20:03.44]  It's probably a lot harder to build that
+[20:04.80]  and it's just doesn't work and then
+[20:06.08]  they're just like okay this is a
+[20:07.28]  failure. What are we even doing?
+[20:08.72]  >> Exactly. I feel there's like a bunch of
+[20:10.80]  things that you actually have to uh get
+[20:13.52]  confidence in before you get to V3 and
+[20:16.08]  it's it's easy to get overwhelmed that
+[20:17.92]  oh my AI agent is like doing these
+[20:20.00]  things wrong in like 100 different ways
+[20:22.08]  and you're not going to actually
+[20:23.20]  tabulate all of them and fix it right
+[20:25.20]  even though you've learned like you know
+[20:26.72]  how do you deal with the uh evaluation
+[20:29.12]  practices and stuff like that. If you're
+[20:30.96]  starting on the wrong spot you are
+[20:32.88]  actually going to have a hard time like
+[20:34.32]  you know correcting things from there.
+[20:35.84]  And when you start uh small and when you
+[20:38.64]  start with building like a very
+[20:40.80]  minimalistic version with high human
+[20:43.12]  control and low agency, it also forces
+[20:45.44]  you to think about what is the problem
+[20:47.60]  that I'm going to solve. uh we we use
+[20:49.92]  this term called problem first and uh to
+[20:53.52]  me it was like obvious in the sense that
+[20:55.36]  yeah I I do need to think about the
+[20:56.96]  problem but it's incredible how well it
+[20:58.88]  resonates with the people that in all
+[21:01.36]  this advancements of the AI that we are
+[21:03.28]  seeing one easy slippery slope is to
+[21:05.84]  just keep thinking about uh complexities
+[21:07.92]  of the solution and not and forget the
+[21:09.84]  problem that you're trying to solve. So
+[21:11.28]  when you're trying to start at like a
+[21:13.60]  small at a smaller scale of autonomy,
+[21:16.72]  you start to really think about what is
+[21:18.40]  the problem that I'm trying to solve and
+[21:19.92]  how do I break it down into like levels
+[21:22.24]  of autonomy that I can build later. So
+[21:24.56]  that is incredibly useful when like and
+[21:27.04]  we keep repeating this pattern over and
+[21:28.80]  over with everyone we talk to.
+[21:31.20]  And there's so many other benefits to uh
+[21:33.52]  limiting autonomy because there there's
+[21:35.76]  just danger also of the thing doing too
+[21:37.60]  much for you and just messing up your I
+[21:40.64]  don't know your database sending out all
+[21:42.00]  these emails you never expected. There's
+[21:43.60]  like so many reasons this is a good
+[21:44.88]  idea.
+[21:45.36]  >> Yep. I I recently read this paper from a
+[21:48.08]  bunch of folks at UC Berkeley. um
+[21:51.36]  basically mate Zahara Stoker and the
+[21:54.24]  folks at data bricks and it said about
+[21:57.60]  74 or 75% of the enterprises that they
+[22:00.80]  had spoken to um their biggest problem
+[22:02.80]  was reliability and that's also why they
+[22:04.96]  weren't uh comfortable um deploying
+[22:08.24]  products to their end users or building
+[22:10.64]  customerf facing products because they
+[22:12.56]  just weren't sure or they just weren't
+[22:15.36]  um comfortable doing that and exposing
+[22:17.84]  their users to a bunch of these risks,
+[22:19.76]  right? And that's also why they think a
+[22:22.72]  lot of AI products today have to do with
+[22:24.64]  productivity because it's much low
+[22:26.72]  autonomy versus you know end to end
+[22:29.20]  agents that would replace workflows. Um
+[22:31.36]  and yeah I love their work otherwise as
+[22:33.28]  well but I think that's very in line
+[22:35.12]  with what um at least we're seeing at my
+[22:37.68]  startup as well.
+[22:38.80]  >> Okay very interesting. There's an
+[22:40.40]  episode that'll come out before this
+[22:41.76]  conversation where we go deep into
+[22:43.76]  another problem that this avoids which
+[22:46.56]  is around uh prompt injection and
+[22:48.40]  jailbreaking and just how big of a
+[22:51.04]  >> uh ex risk that is for AI products where
+[22:53.76]  it's essentially an unsolved and
+[22:55.44]  unsolvable problem potentially. I'm not
+[22:57.12]  going to go down that track, but that's
+[22:58.80]  uh it's a pretty scary conversation we
+[23:00.40]  had that it'll be out before this
+[23:01.68]  conversation.
+[23:02.56]  >> I think that will be a huge problem once
+[23:04.96]  systems go mainstream. We're still so
+[23:07.20]  busy building AI products that we're not
+[23:09.28]  worried about security, but it it will
+[23:12.32]  be um such a huge problem to kind of u
+[23:15.44]  especially with this non-deterministic
+[23:17.44]  API again, right? So, you're kind of
+[23:19.92]  stuck because um there are tons of
+[23:21.84]  instructions that you could inject
+[23:24.32]  within your prompt and then yeah, it's
+[23:26.88]  it's going to be bad. Okay, I let's
+[23:29.36]  actually spend a little time here
+[23:30.24]  because it's actually really interesting
+[23:31.28]  to me and no one's talking about this
+[23:32.64]  stuff which is like the conversation we
+[23:35.44]  had is just it's pretty easy to get AI
+[23:37.44]  to trick to do stuff it shouldn't do and
+[23:39.76]  there's all these guardrail systems
+[23:41.60]  people put in place but turns out these
+[23:43.68]  guardrails aren't actually very good and
+[23:45.36]  you can always get around them and to
+[23:47.36]  your point as agents become more
+[23:48.88]  autonomous and robots uh it gets pretty
+[23:51.60]  scary that you could get AI to do things
+[23:53.28]  you shouldn't do. I think this is
+[23:55.44]  definitely a problem. But I feel in the
+[23:57.60]  current spectrum of like customers
+[23:59.20]  adopting AI, the the extent to which
+[24:03.44]  like you know companies can actually get
+[24:05.44]  advantage of AI or like improve their
+[24:07.76]  processes or like you know streamline
+[24:09.84]  the existing processes that they have. I
+[24:12.48]  feel it's in still in the very early
+[24:14.16]  stage like 2025 has been an extremely
+[24:16.08]  busy year for AI agents and customers
+[24:19.20]  trying to adopt AI. But I feel the
+[24:21.28]  penetration is still not as much as you
+[24:23.68]  would actually get advantage out of it.
+[24:25.76]  So with the right sort of you know human
+[24:28.40]  in the loop uh points in here I feel we
+[24:31.04]  can actually avoid a bunch of these
+[24:32.64]  things and focus more towards like
+[24:34.96]  streamlining the processes and I I am
+[24:37.60]  more on the optimist side in the sense
+[24:39.04]  that like you need to try and adopt this
+[24:41.60]  before actually like trying to be only
+[24:44.48]  highlighting the negative aspects of
+[24:46.56]  like what could go wrong. So I I feel
+[24:48.56]  like strongly u that companies has to
+[24:51.52]  adopt this. They definitely like no
+[24:53.52]  company uh at openi we talked to is has
+[24:57.28]  never had been the case that oh AI
+[24:59.04]  cannot help me in this case. It has
+[25:00.48]  always been that oh there is this like
+[25:01.84]  set of things that it can uh optimize
+[25:04.16]  for me and then let me see how I can
+[25:05.68]  adopt it. Sweet. I always like the
+[25:07.76]  optimistic perspective. I'm excited to
+[25:09.84]  for you to listen to this and see what
+[25:10.96]  you think because it's really
+[25:11.76]  interesting and uh and to your point
+[25:13.36]  there's a lot of things to focus on.
+[25:14.64]  It's one of one of many things to worry
+[25:16.80]  about and think about. Okay, let's get
+[25:18.72]  back on track here. So, we've shared a
+[25:20.64]  bunch of pro tips and important piece of
+[25:22.48]  advice. Let me ask, what other patterns
+[25:25.60]  and kind of ways of working do you see
+[25:28.64]  in companies that do this well and teams
+[25:30.72]  that build AI products successfully? And
+[25:33.92]  then just what are the most common
+[25:35.20]  pitfalls people fall into? So, we could
+[25:37.04]  just maybe start with what are other
+[25:39.36]  ways that companies do this well, build
+[25:41.60]  AI products successfully? I almost think
+[25:44.80]  of it as like a success triangle with
+[25:48.16]  three dimensions. It's never always
+[25:50.40]  technical. Every technology problem is a
+[25:52.72]  people problem first. And with companies
+[25:55.04]  that we have worked with, it's these
+[25:57.36]  three dimensions, right? Like great
+[25:58.96]  leaders, good culture and technical
+[26:01.68]  progress. Um with leaders itself, we
+[26:05.52]  work with a lot of companies uh for
+[26:07.36]  their AI transformation, training,
+[26:09.20]  strategy and stuff like that. And I feel
+[26:12.00]  like um a lot of companies the leaders
+[26:15.76]  have built intuitions over 10 or 15
+[26:17.68]  years and they are kind of highly
+[26:19.44]  regarded for those intuions but now with
+[26:21.44]  AI in the picture those intuions will
+[26:24.24]  have to be relearned and leaders have to
+[26:26.32]  be vulnerable to do that right. Um I
+[26:28.64]  used to work with the CEO of now
+[26:30.80]  Rackspace Gajen. So he would um have
+[26:35.12]  this block every day in the morning
+[26:36.80]  which would say catching up with AI 4 to
+[26:39.20]  6:00 a.m. and he would not have any
+[26:41.44]  meetings or anything like that and that
+[26:42.96]  was just his time to pick up on the
+[26:44.64]  latest AI um you know podcast or
+[26:47.28]  information and all of that and he would
+[26:49.44]  have um weekend white coding sessions
+[26:51.52]  and stuff like that. So I think leaders
+[26:53.92]  have to get back to being hands-on and
+[26:56.40]  that's not because they have to be
+[26:57.92]  implementing these things but more of uh
+[27:00.24]  rebuilding their intuitions because you
+[27:02.40]  must be comfortable with the fact that
+[27:04.00]  your intuitions might not be right. Um
+[27:06.24]  and you you probably are the dumbest
+[27:08.24]  person in the room and you want to learn
+[27:09.52]  from everyone. Um and that I've seen
+[27:12.24]  that being a very um distinguishing
+[27:14.88]  factor of companies that build products
+[27:18.00]  um which are successful because you're
+[27:19.44]  kind of bringing in that top down
+[27:20.80]  approach. It's almost always impossible
+[27:23.84]  for it to be bottom up. You can't have a
+[27:26.16]  bunch of engineers go and get buyin from
+[27:28.64]  the leader if they just don't trust in
+[27:30.24]  the technology or if they have
+[27:32.08]  misaligned expectations about the
+[27:33.92]  technology. Right? I've heard from so
+[27:35.76]  many folks who are building that our
+[27:37.92]  leaders just don't understand the extent
+[27:39.84]  to which AI can solve a particular
+[27:41.68]  problem or they just white code
+[27:43.36]  something and assume it's easy to take
+[27:44.72]  it to production and you really need to
+[27:46.48]  understand the range of what AI can
+[27:48.16]  solve today so that you can guide
+[27:49.68]  decisions within the company. The second
+[27:52.08]  one is the culture itself, right? And
+[27:54.96]  again, I work with enterprises where AI
+[27:57.76]  is not their main thing and they have um
+[28:00.40]  they need to bring in AI into their
+[28:02.08]  processes just because a competitor is
+[28:03.84]  doing it and just because it does make
+[28:05.68]  sense because there are use cases that
+[28:07.36]  are very ripe. Then along the way, I
+[28:10.00]  feel a lot of companies have this
+[28:11.68]  culture of FOMO and you will be replaced
+[28:14.16]  and those kind of things and people get
+[28:15.84]  really afraid. um subject matter experts
+[28:18.80]  are such a huge part of building AI
+[28:21.20]  products that work because you really
+[28:22.72]  need to consult them to understand how
+[28:24.56]  your AI is behaving or what the ideal
+[28:26.48]  behavior should be. But then I have
+[28:28.40]  spoken to a bunch of companies where the
+[28:30.32]  subject matter experts just don't want
+[28:31.76]  to talk to you because they think their
+[28:33.60]  job is being replaced. So as I mean
+[28:36.80]  again this comes from the leader itself.
+[28:38.40]  want to build a culture of empowerment
+[28:41.04]  of um augmenting AI into your own
+[28:44.08]  workflows so that you know you can 10x
+[28:46.72]  what you're doing instead of saying that
+[28:48.40]  you know probably uh you'll be replaced
+[28:50.48]  if you don't adopt AI and stuff like
+[28:52.16]  that. So that kind of an empowering
+[28:53.68]  culture always helps you want to make um
+[28:56.72]  your entire organization be in it
+[28:59.28]  together and make AI work for you
+[29:00.96]  instead of trying to you know guard
+[29:03.04]  their own jobs etc. And with AI, it's
+[29:05.76]  also true that it opens up a lot more
+[29:07.84]  opportunities than before. So you could
+[29:10.16]  have your employees doing a lot more
+[29:11.84]  things than before and 10x their
+[29:13.76]  productivity. Um, and the third one is
+[29:16.00]  the technical part which we talk about,
+[29:18.08]  right? I think folks that are successful
+[29:20.88]  are incredibly obsessed about
+[29:23.60]  understanding their workflows very well
+[29:25.68]  and augmenting parts um that could be um
+[29:30.16]  um that could be ripe for AI versus the
+[29:32.80]  ones that might need human in the loop
+[29:34.72]  somewhere etc. Whenever you're uh trying
+[29:37.60]  to automate some part of a workflow,
+[29:40.32]  it's never the case that you could you
+[29:43.12]  could use an AI agent and that will kind
+[29:44.64]  of solve your uh problems, right? It's
+[29:47.12]  always you probably have a machine
+[29:49.36]  learning uh model that's going to do
+[29:51.12]  some part of the job. You have
+[29:52.08]  deterministic code doing some part of
+[29:53.68]  the job. So you really need to be
+[29:55.52]  obsessed with understanding that
+[29:56.72]  workflow so you can choose the right
+[29:58.32]  tool for the problem instead of being
+[29:59.84]  obsessed with the technology itself. And
+[30:03.12]  um another pattern I see is also folks
+[30:06.96]  really understand this idea of working
+[30:09.28]  with a non-deterministic API which is
+[30:11.52]  your LLM. And what that means is they
+[30:14.16]  also understand the development life
+[30:16.08]  cycle looks very different and they
+[30:18.40]  iterate pretty quickly which is can I um
+[30:20.96]  can I build something iterate uh quickly
+[30:23.60]  in a way that it doesn't ruin my
+[30:25.68]  customer experience at the same time
+[30:27.36]  gives me enough amount of data so that I
+[30:30.16]  can estimate behavior right so they
+[30:31.76]  build that flywheel very quickly as of
+[30:34.24]  today it's not about being the first
+[30:36.00]  company to have an agent among your
+[30:37.92]  competitors it's about have you built
+[30:39.36]  the right flywheels in place so that you
+[30:41.12]  can improve over time
+[30:42.72]  When someone comes up to me and says,
+[30:44.32]  "We have this one-click agent. It's
+[30:46.08]  going to be deployed in your system and
+[30:47.68]  then in two or three days it'll start
+[30:49.68]  showing you significant gains," I would
+[30:51.92]  almost be skeptical because it's just
+[30:53.76]  not possible. And that's not because the
+[30:55.84]  models aren't there, but because
+[30:57.60]  enterprise data and infrastructure is
+[30:59.92]  very messy and you need a bit to even
+[31:02.56]  the agent needs a bit to understand um
+[31:04.88]  how these systems work. There are very
+[31:07.44]  messy taxonomies everywhere. um people
+[31:10.80]  tend to do things like get customer data
+[31:13.20]  wi1 get customer data w2 and these kind
+[31:15.52]  of things and all those functions exist
+[31:18.08]  and um they are being called and there's
+[31:20.56]  basically there's a lot of tech debt
+[31:22.16]  that you need to deal with. So most of
+[31:24.08]  the times if you're obsessed with the
+[31:26.16]  problem itself and you understand your
+[31:28.56]  workflows very well you will know how to
+[31:30.72]  improve your agents over time instead of
+[31:32.72]  just slapping an agent and assuming that
+[31:34.64]  it'll work from day one. I probably will
+[31:36.96]  go as far to say that if someone's
+[31:38.64]  selling you one click agents, it's it's
+[31:40.40]  pure marketing. You don't want to buy
+[31:42.00]  into that. I would rather go with a
+[31:44.08]  company that says we're going to build
+[31:45.28]  this pipeline for you and that that will
+[31:47.76]  learn over time and kind of build a
+[31:49.36]  flywheel to improve than something
+[31:51.36]  that's going to work out of the box to
+[31:53.60]  replace any critical workflow or to um
+[31:56.64]  build something that can give you
+[31:58.16]  significant ROI easily takes four to six
+[32:00.64]  months of work. Even if you have the
+[32:02.24]  best data layer and infrastructure
+[32:04.64]  layer. Amazing. There's a lot there that
+[32:06.64]  resonates so deeply with other
+[32:07.92]  conversations I've been having on this
+[32:09.20]  podcast. One is just for a company to be
+[32:12.24]  successful at seeing a lot of impact
+[32:13.92]  from AI, the founder CEO has to be deep
+[32:17.20]  into it. Uh I had Dan Shipper on the
+[32:19.68]  podcast and they work with a bunch of
+[32:21.68]  companies helping them adopt AI and he
+[32:23.28]  said that's the number one predictor of
+[32:24.64]  success is the CEO chatting with Chad
+[32:27.20]  GPT, Claude, whatever uh many times a
+[32:30.32]  day. I love this example you gave the
+[32:32.40]  Rackspace as like catch up on AI news in
+[32:34.64]  the morning every day. I was imagining
+[32:36.80]  he'd be like chatting with like the
+[32:38.80]  chatbot versus uh like reading news.
+[32:42.08]  >> With the kind of information you have as
+[32:43.76]  of today, you could just um I mean you
+[32:46.64]  want to choose the right um channels as
+[32:49.44]  well because everybody has an opinion.
+[32:51.44]  So whose opinion do you want to bank on?
+[32:53.60]  I feel like having that good quality set
+[32:56.88]  of people that you're listening to
+[32:58.48]  really makes sense. So he just has a
+[33:00.48]  list of two or three sources that he
+[33:02.56]  always looks at and and then he comes
+[33:04.64]  back with a bunch of questions and
+[33:06.00]  bounces it around with a bunch of AI
+[33:08.08]  experts to see what they think about it.
+[33:09.84]  And I was part of that group so I kind
+[33:11.52]  of know um
+[33:12.24]  >> I love that
+[33:12.96]  >> about the questions that he comes up
+[33:14.32]  with. So that's cool.
+[33:15.20]  >> It's pretty cool. I was like why are you
+[33:16.88]  doing so much? And then he says it
+[33:18.72]  trickles down into a bunch of decisions
+[33:20.24]  that we take.
+[33:21.36]  >> Okay, let me talk about another topic
+[33:23.12]  that's very it's been a hot topic on
+[33:24.72]  this podcast. It was a hot topic on
+[33:26.16]  Twitter for a while. Evals.
+[33:29.28]  A lot of people are obsessed with evals,
+[33:31.92]  think they're the solution to a lot of
+[33:33.52]  problems in AI. A lot of people think
+[33:35.52]  they're overrated, that well, you don't
+[33:37.36]  need evals. You can just feel the vibes
+[33:39.68]  and you'll you'll be all right. What's
+[33:41.84]  your take on evals? How far does that
+[33:44.24]  take people in solving a lot of the
+[33:46.08]  problems that you talk about in terms of
+[33:48.24]  like what is going on in the community?
+[33:50.16]  I I feel there's this false dichotomy of
+[33:52.88]  like there's either eval is going to
+[33:55.20]  solve everything or online monitoring or
+[33:57.76]  production monitoring is going to solve
+[33:59.12]  everything and I find no reason to trust
+[34:02.00]  like one of the extremes in the sense
+[34:04.08]  that I will entirely bank my application
+[34:06.64]  on this and or like that to solve the uh
+[34:09.84]  thing right so if you take a step back
+[34:11.76]  uh think of what are eval are basically
+[34:14.96]  your uh trusted product thinking or like
+[34:18.40]  your knowledge about the product that is
+[34:20.48]  going into this uh set of data sets that
+[34:22.80]  you're going to build in the sense that
+[34:24.32]  this is what matters to me like this is
+[34:26.32]  the kind of problems that my agent
+[34:28.80]  should not do and let me build a list of
+[34:31.28]  data sets so that I'm going to do well
+[34:33.04]  on those and in terms of production
+[34:35.28]  monitoring what you're doing doing there
+[34:37.52]  is uh you're deploying your application
+[34:39.76]  and then you're having this some sort of
+[34:41.52]  key metrics that actually communicate
+[34:44.08]  back to you on how customers are using
+[34:46.16]  your product like you could be deploying
+[34:48.64]  uh any agent And like if the C customer
+[34:50.96]  is giving a thumbs up for your
+[34:52.16]  interaction, you better want to know
+[34:53.92]  that. So that is what production
+[34:55.44]  monitoring is going to do, right? And
+[34:56.80]  this production monitoring has existed
+[34:58.80]  for products like for a long time just
+[35:01.28]  that now with AI agents, you need to be
+[35:03.44]  monitoring like a lot more granularity.
+[35:06.64]  It's not just the customer always giving
+[35:08.32]  you explicit feedback, but there is many
+[35:10.56]  implicit feedback that you can get. Uh
+[35:12.64]  for example, in chat GPD, right? Like if
+[35:14.40]  you are uh liking the answer you can
+[35:16.64]  actually give a thumbs up or if you
+[35:18.24]  don't like the answer sometimes
+[35:19.44]  customers don't give you thumbs down but
+[35:21.28]  actually re regenerate the answer. So
+[35:23.44]  that is an clear indication that the
+[35:25.68]  initial answer that you generated is not
+[35:27.52]  matting uh meeting the customer's
+[35:29.92]  expectation. Right. So these are the
+[35:31.92]  kind of implicit signals you always need
+[35:34.40]  to think about and that spectrum has
+[35:36.48]  been increasing in terms of production
+[35:37.92]  monitoring. Now let's come back to the
+[35:40.24]  initial topic of like okay is it eval or
+[35:42.88]  is it production monitoring? What does
+[35:44.40]  it matter? So I feel again we go back to
+[35:47.12]  this problem first approach of what is
+[35:49.68]  your what is it that you're trying to
+[35:51.12]  build like you're trying to build a
+[35:52.32]  reliable application for your customers
+[35:54.40]  that's not going to do a bad thing like
+[35:56.48]  it's always going to do the right thing
+[35:57.92]  or if it is doing a wrong thing you are
+[36:00.48]  uh you're basically alerted like very
+[36:03.12]  quickly right so the I break this down
+[36:05.76]  into two parts like one is you like
+[36:08.24]  nobody goes into uh deploying an
+[36:11.12]  application without actually like you
+[36:12.96]  know just testing that this testing
+[36:14.96]  could be wipes or this testing could be
+[36:16.88]  okay I have this like 10 questions that
+[36:19.04]  it should not go wrong any no matter
+[36:21.20]  what changes I make and let me build
+[36:22.88]  this and let's call this an evaluation
+[36:24.56]  data set now let's say you built this
+[36:26.72]  you deployed this and then you figured
+[36:28.96]  uh okay now I need to understand whether
+[36:30.56]  it's doing the right thing or not so if
+[36:32.88]  you're a high uh high uh throughput or
+[36:35.20]  like a high transaction customer you
+[36:38.08]  cannot practically sit and evaluate all
+[36:40.48]  the traces right you need some
+[36:42.08]  indication to understand what are the
+[36:43.92]  things that I should look at and this is
+[36:45.60]  where production monitoring comes into
+[36:46.96]  the picture that you cannot predict your
+[36:49.60]  uh the base in which your agent could be
+[36:51.12]  doing wrong but all of these other
+[36:52.96]  implicit signals and explicit signals
+[36:55.20]  those are going to communicate back to
+[36:56.80]  you what uh what are the traces that you
+[36:59.60]  need to look at and that is where
+[37:00.80]  production monitoring helps and once you
+[37:02.96]  get this kind of traces you need to
+[37:05.76]  examine what are the failure patterns
+[37:07.44]  that you're seeing in these uh different
+[37:09.52]  types of interactions and is there
+[37:11.68]  something that I really care about that
+[37:13.28]  should not happen and if that kind of
+[37:15.12]  failure modes are happening then I need
+[37:17.04]  to think about building an evaluation
+[37:18.72]  data set for it and okay let's say I
+[37:21.36]  built an evaluation data set for my
+[37:23.28]  agent trying to offer refunds where
+[37:27.36]  explicitly I have configured it not to
+[37:29.60]  so I built this evaluation data set and
+[37:31.92]  then like I made my changes in tools or
+[37:34.48]  prompts or whatever and then I deployed
+[37:36.40]  the second version of the product right
+[37:38.24]  now uh there is no guarantee that this
+[37:40.80]  is the only problem that you're going to
+[37:42.16]  see you still need production monitoring
+[37:44.16]  to actually have like you know catch
+[37:46.32]  different kinds of problems that you
+[37:47.44]  might encounter. So I feel eval are
+[37:50.00]  important, production monitoring is
+[37:51.44]  important but this notion of only one of
+[37:53.68]  them is going to solve things for you
+[37:55.68]  that is uh completely dismissible in my
+[37:57.92]  opinion.
+[37:58.56]  >> All right, a very reasonable answer and
+[38:00.48]  the point here isn't uh it's not just as
+[38:02.56]  simple as do both. It's more that there
+[38:04.64]  are different things to catch and one
+[38:08.24]  approach won't catch all the things you
+[38:09.92]  need to be paying attention to.
+[38:11.44]  >> Exactly. Awesome.
+[38:13.04]  >> I want to take two steps back and kind
+[38:15.28]  of talk about how much weight the term
+[38:18.08]  evals has had to take in the second, you
+[38:20.96]  know, half of 2025
+[38:23.12]  because you go meet a data labeling
+[38:24.96]  company and they tell you our experts
+[38:26.72]  are writing evals. And then uh you have
+[38:29.52]  all of these uh folks saying that PMS
+[38:31.84]  should be writing evals. They're the new
+[38:33.28]  PRDS. And then you have folks saying
+[38:35.68]  that um eval is pretty much everything
+[38:38.00]  which is the feedback loop you're
+[38:39.28]  supposed to be building to improve your
+[38:40.72]  products. Now step back as a beginner
+[38:43.36]  and kind of think like what are evals?
+[38:45.52]  Why is everyone saying eval? And these
+[38:47.12]  are actually different parts of the
+[38:48.56]  process and nobody's wrong in the sense
+[38:50.40]  that yes these are eval but when a data
+[38:53.04]  labeling company is telling you that our
+[38:55.20]  um experts are writing evals they're
+[38:56.80]  actually referring to error analysis or
+[38:59.44]  you know experts just leading notes on
+[39:01.36]  what should be right. Lawyers and
+[39:03.28]  doctors write evals that doesn't mean
+[39:05.28]  they're building LLM judges or they're
+[39:07.12]  building this entire feedback loop. And
+[39:09.52]  when you say that a PM should be writing
+[39:11.44]  evals doesn't mean they have to write an
+[39:13.44]  LLM judge that's good enough for
+[39:15.20]  production. I think there's there are
+[39:17.52]  also very prescriptive ways of doing
+[39:19.84]  this and plus one to KD which is you
+[39:22.88]  cannot predict up front if you need to
+[39:25.20]  be building an LLM judge versus you need
+[39:27.04]  to be using um implicit signals from
+[39:29.36]  production monitoring etc. I think
+[39:32.16]  Martin Fowler at some point had this
+[39:33.92]  term called semantic diffusion back in
+[39:36.56]  the 2000s. Um um which kind of means
+[39:39.36]  that someone comes up with a term
+[39:40.72]  everybody starts butchering it with
+[39:42.40]  their own definitions and then you kind
+[39:43.84]  of lose the actual definition of it.
+[39:46.16]  That is kind of what is happening to
+[39:47.76]  eval
+[39:50.32]  of today. Everybody kind of sees a
+[39:51.92]  different side to it I guess. Um but if
+[39:54.32]  you make a bunch of practitioners sit
+[39:55.92]  together and ask them is it important to
+[39:57.76]  build a actionable feedback loop for AI
+[40:00.96]  products I think all of them will agree.
+[40:02.88]  Now how you do that really depends on
+[40:05.52]  your application itself when you go to
+[40:07.92]  complex use cases it's incredibly hard
+[40:10.08]  to build LM judges because you see a lot
+[40:12.56]  of emerging patterns. If you built a
+[40:14.24]  judge that would um you know test for
+[40:17.04]  verbosity or something like that, you
+[40:18.88]  turns out that you're seeing newer
+[40:20.80]  patterns that your LM judge is not able
+[40:22.48]  to catch and then you're just um you
+[40:24.72]  just end up building too many evals and
+[40:26.80]  at that point it just makes sense to you
+[40:28.80]  know look at your user signals, fix
+[40:30.48]  them, check if you've regressed and move
+[40:32.16]  on instead of actually building these
+[40:33.76]  judges. Um so it all depends. I think
+[40:36.96]  one statement that every ML practitioner
+[40:39.28]  will tell you is it really depends on
+[40:41.52]  the context. Don't be obsessed with
+[40:43.52]  prescriptions. They're going to change.
+[40:45.28]  >> Uh that's such an important point. This
+[40:46.80]  idea that especially that eval just
+[40:48.80]  means many things to different people
+[40:50.56]  now. It's just like a term for so many
+[40:52.32]  things. And uh it it's complicated to
+[40:55.12]  just talk about evals when you're think
+[40:56.40]  when you see it as the stuff data
+[40:57.92]  labeling companies are giving you and
+[40:59.12]  things are right. And there's also
+[41:00.64]  benchmarks. People call benchmarks a
+[41:02.08]  little bit eval. It's like
+[41:03.20]  >> I I recently spoke to a client who told
+[41:05.36]  me we do eval
+[41:06.88]  >> and I was like okay can you show me your
+[41:08.56]  data set? and said, "No, we just checked
+[41:09.92]  LM arena and artificial analysis. These
+[41:12.48]  are, you know, independent benchmarks
+[41:14.64]  and we know that this model is the right
+[41:16.88]  one for our use case." And I'm like,
+[41:18.08]  "You're not doing eval. That's not eval.
+[41:20.08]  Those are model."
+[41:20.88]  >> That makes sense. Like the word, you
+[41:22.16]  know, like could be used in that
+[41:23.28]  context. I get why people think that,
+[41:24.64]  but yeah, now it's just confusing it
+[41:25.92]  even more.
+[41:26.72]  >> Yep.
+[41:27.20]  >> Just like one more line of questioning
+[41:28.80]  here that I think uh that's on my mind
+[41:30.88]  is the reason this became kind of a big
+[41:32.40]  debate is cloud code, the head of cloud
+[41:34.72]  code, Boris, was like, "Nah, we don't do
+[41:36.40]  evalance on cloud code. It's all vibes.
+[41:38.96]  What can you share kiti on codex and the
+[41:41.28]  codeex team of how you approach evals?
+[41:43.20]  So CEX we have like this balanced
+[41:45.84]  approach of like you know you need to
+[41:47.36]  have eval and you need to definitely
+[41:49.84]  listen to your customers and I think
+[41:52.24]  Alex has been on your podcast recently
+[41:54.00]  and he's been talking about how we
+[41:56.00]  extremely focused on building the right
+[41:57.76]  product right and a part of a big part
+[42:00.96]  of it is basically listening to your
+[42:02.40]  customers and coding agents are
+[42:04.24]  extremely unique compared to agents for
+[42:06.80]  other domains in the sense that these
+[42:08.72]  are actually built for customizability
+[42:10.88]  and these are built for engineers. So
+[42:12.80]  coding agent is not a product which is
+[42:14.56]  going to solve like these top five
+[42:16.40]  workflows or like top six workflows or
+[42:18.40]  whatever right it's meant to be
+[42:20.32]  customizable in multi different ways and
+[42:22.56]  the implication of that is that your
+[42:25.44]  product is going to be used in different
+[42:28.08]  integrations and different kinds of
+[42:29.68]  tools and different kinds of things. So
+[42:31.52]  it gets really hard to build an
+[42:33.28]  evaluation data set for all kinds of
+[42:35.76]  interactions that your customers are
+[42:37.68]  going to use your product for. Right?
+[42:39.28]  But that said, you also need to
+[42:40.96]  understand that okay, if I'm going to
+[42:42.64]  make a change, it's at least not going
+[42:44.32]  to like damage something that is really
+[42:46.24]  core to the product. So we have like
+[42:48.40]  evaluations uh for doing that. At the
+[42:51.12]  same time, we have we take like extreme
+[42:53.04]  care on like understanding how the
+[42:54.96]  customers are using it. For example,
+[42:57.60]  uh we built this code review product
+[42:59.44]  recently and uh it has been gaining like
+[43:02.08]  extreme amount of traction and uh I feel
+[43:04.56]  like many many bugs in OpenAI as well as
+[43:07.12]  like even external customers are getting
+[43:08.80]  caught with this. And now let's say if
+[43:10.64]  I'm making a model change to the course
+[43:12.56]  review or like a different kinds of uh
+[43:15.68]  RL mechanism that I trained with it and
+[43:18.32]  now if I'm going to deploy it I
+[43:20.16]  definitely do want to AP test and
+[43:22.56]  identify whether it's actually finding
+[43:24.16]  the right uh mistakes and are users how
+[43:27.28]  are users reacting to it and sometimes
+[43:29.28]  like if users do get annoyed by your
+[43:31.52]  like you know uh incorrect code riggers
+[43:33.52]  they go to the extent of just switching
+[43:35.04]  off the product right so those are the
+[43:36.64]  signals that you want to look at and
+[43:38.64]  make sure that your new changes are
+[43:40.72]  doing the right thing and it's extremely
+[43:42.96]  hard for us to you know uh think of
+[43:44.88]  these kind of scenarios beforehand and
+[43:47.20]  uh develop evaluation data sets for it.
+[43:49.36]  So I feel like there's a bit of both
+[43:51.44]  like there's a lot of wipes and there's
+[43:52.96]  a lot of like customer feedback and we
+[43:55.28]  are super active on like the social
+[43:56.64]  media to understand if anybody's having
+[43:58.80]  certain types of problems and quickly
+[44:00.40]  fix that. So I feel it's a it's a um how
+[44:05.12]  do I put this? It's like a domain of
+[44:06.72]  things that you do here. That makes so
+[44:09.04]  much sense. Okay, what I'm hearing Codex
+[44:10.48]  Pro evals, but it's not enough. You need
+[44:12.96]  to Yes. But also, uh, just watch
+[44:15.76]  customer behavior and feedback and also
+[44:17.52]  there's some vibes just like is this
+[44:19.12]  feeling good? Is this as I'm using it
+[44:21.36]  generating great code that I'm excited
+[44:23.04]  about that I think is great.
+[44:24.48]  >> I I don't think like if anybody's coming
+[44:26.88]  and saying that like my I have this
+[44:28.64]  concrete set of evas that I can like bet
+[44:30.96]  my life on and then I don't need to
+[44:32.88]  think about anything else like it it's
+[44:34.80]  not going to work. And every new model
+[44:36.24]  that we're going to launch, we uh get
+[44:38.24]  together as a team and like you know
+[44:39.68]  test different things each each person
+[44:42.24]  is like concentrating on something else
+[44:44.08]  and like we have this list of hard
+[44:45.60]  problems that we have and we throw that
+[44:47.84]  to the model and see how well they are
+[44:49.60]  progressing. So it's like uh custom
+[44:51.92]  evals for each engineer you would say
+[44:53.92]  and just like understand what the uh
+[44:55.92]  product is doing in this new model.
+[44:58.40]  If you're a founder, the hardest part of
+[45:00.24]  starting a company isn't having the
+[45:01.84]  idea. It's scaling the business without
+[45:04.16]  getting buried in back office work.
+[45:06.24]  That's where Brex comes in. Brex is the
+[45:08.56]  intelligent finance platform for
+[45:10.48]  founders. With Brex, you get high limit
+[45:12.88]  corporate cards, easy banking, high
+[45:14.80]  yield treasury, plus a team of AI agents
+[45:17.76]  that handle manual finance tasks for
+[45:19.92]  you. They'll do all the stuff that you
+[45:22.00]  don't want to do, like file your
+[45:24.00]  expenses, scour transactions for waste,
+[45:26.64]  and run reports, all according to your
+[45:29.12]  rules. With Brex AI agents, you can move
+[45:32.00]  faster while staying in full control.
+[45:34.48]  One in three startups in the United
+[45:36.48]  States already runs on Brex. You can,
+[45:39.52]  too, at brex.com.
+[45:43.12]  We've been talking for almost an hour
+[45:44.64]  already and we haven't even covered your
+[45:46.96]  extremely powerful software development
+[45:49.92]  workflow for building AI products that
+[45:51.92]  you two developed that you teach in your
+[45:53.36]  course that you basically combines all
+[45:54.96]  the stuff we've been talking about into
+[45:57.44]  a step-by-step approach to building AI
+[46:00.08]  products. You call it the continuous
+[46:02.24]  calibration, continuous development
+[46:04.48]  framework. Let's pull up a visual to
+[46:07.20]  show people what the heck we're talking
+[46:08.40]  about and then just walk us through what
+[46:10.08]  this is, how this works, how teams can
+[46:12.08]  shift the way they build their AI
+[46:13.60]  products to this approach to help them
+[46:16.24]  avoid a lot of pain and suffering.
+[46:18.16]  >> Before we go about explaining um the
+[46:21.28]  life cycle, a quick story on why Kita
+[46:23.92]  and I came up with this is because um
+[46:26.64]  there are tons of u uh companies that we
+[46:29.36]  keep talking to that have the pressure
+[46:31.44]  from their competitors because they're
+[46:33.20]  all building agents. we should be
+[46:34.64]  building agents that are entirely
+[46:35.92]  autonomous. And we I did end up working
+[46:38.88]  with a few customers where we built
+[46:41.12]  these end-to-end agents. And turns out
+[46:43.60]  that because you start off at a place
+[46:45.92]  where you don't know how the user might
+[46:48.48]  interact with your system and what kind
+[46:50.08]  of responses or actions the AI might
+[46:52.16]  come up with, it's really hard to fix
+[46:55.20]  problems when you have this really huge
+[46:57.12]  workflow which is taking four or five
+[46:58.72]  steps, making tons of decisions. you're
+[47:00.88]  you just you just end up debugging so
+[47:03.44]  much and then kind of hot fixing to the
+[47:06.16]  point where at at a time we were
+[47:07.76]  building for a customer support um use
+[47:09.84]  case which is what which is the example
+[47:11.76]  that we give in the newsletter as well
+[47:13.52]  and we to shut down the product because
+[47:15.76]  we were doing so many hot fixes and
+[47:17.68]  there was no way we could um count all
+[47:19.68]  the emerging or emerging problems that
+[47:21.92]  were coming up right and there's also
+[47:24.24]  quite some news online um recently I
+[47:28.00]  think Air Canada had this thing where um
+[47:30.96]  one of their agents predicted or
+[47:33.04]  hallucinated a policy um for a refund
+[47:35.68]  which was not part of their original
+[47:37.20]  playbook and they had to go by it
+[47:39.36]  because legal stuff and there have been
+[47:41.84]  a ton of really uh scary incidents and
+[47:45.36]  that's where the idea comes from right
+[47:47.12]  how can you build so that um you don't
+[47:49.68]  lose customer trust and you don't end up
+[47:52.48]  or your agent or um AI system doesn't
+[47:54.80]  end up making decisions that are super
+[47:56.88]  dangerous to the company itself at the
+[47:59.28]  same time build a flywheel so that you
+[48:01.52]  can improve your product as you go right
+[48:03.52]  and that's why we came up with this idea
+[48:05.04]  of continuous calibration continuous
+[48:07.04]  development. The idea is pretty simple
+[48:09.60]  which is um we have this right side of
+[48:11.76]  the loop which is continuous development
+[48:14.24]  uh where you scope capability and curate
+[48:17.20]  data essentially get a data set of what
+[48:19.60]  your expected inputs are and what um
+[48:22.24]  your expected outputs should be looking
+[48:24.00]  at. This is a very good exercise before
+[48:26.56]  you start building any AI product
+[48:28.56]  because many times you figure out that a
+[48:31.12]  lot of the folks within the team are
+[48:32.56]  just not aligned on how the product
+[48:34.08]  should behave and that's where your PMS
+[48:36.40]  can really give in a lot more
+[48:37.68]  information and your subject matter
+[48:39.04]  experts as well. So you have this data
+[48:41.20]  set that you know um your AI product
+[48:43.44]  should be doing really well on. It's
+[48:45.52]  it's not comprehensive but it lets you
+[48:47.28]  get started and then you set up the
+[48:49.52]  application and then design the right
+[48:51.60]  kind of evaluation metrics and I
+[48:53.92]  intentionally use the term evaluation
+[48:56.00]  metrics although we say eval because I
+[48:57.92]  just want to be very specific on what it
+[48:59.52]  is because evaluation is a process
+[49:01.44]  evaluation metrics are dimensions that
+[49:03.36]  you want to focus on um during the
+[49:06.08]  process right and then you go about
+[49:08.00]  deploying um run your evaluation metrics
+[49:10.96]  um and the second part is the continuous
+[49:14.08]  calibration which is the part where you
+[49:16.80]  understand what um behavior you hadn't
+[49:20.56]  expected in the beginning, right?
+[49:22.24]  Because when you start the development
+[49:24.80]  process, you have this data set that
+[49:26.88]  you're optimizing for, but more often
+[49:29.44]  than not, you realize that that data set
+[49:31.44]  is not comprehensive enough. Um because
+[49:33.84]  users start behaving with your systems
+[49:35.84]  in ways that you did not predict. And
+[49:37.60]  that's where you want to do the
+[49:38.80]  calibration piece. Right? I've deployed
+[49:41.04]  my system. Now I see that there are
+[49:42.80]  patterns that I did not really expect
+[49:45.20]  and your evaluation metrics should give
+[49:47.44]  you some insight into that into those
+[49:49.20]  patterns. But sometimes you figure out
+[49:50.72]  that those metrics were also not enough
+[49:52.96]  and you probably have new error patterns
+[49:54.48]  that you've not thought about and that's
+[49:56.00]  where you analyze your behavior, spot
+[49:58.00]  error patterns. You apply fixes for
+[50:00.72]  issues that you see but you also design
+[50:02.80]  newer evaluation metrics. to figure out
+[50:04.72]  that they are emerging patterns. And
+[50:07.84]  that doesn't mean you should always
+[50:10.16]  design evaluation metrics. There are
+[50:11.84]  some errors that you can just fix and
+[50:13.68]  not really come back to uh because
+[50:15.36]  they're very spot errors. For instance,
+[50:17.36]  there's a there's a a tool calling error
+[50:19.76]  just because your tool wasn't defined
+[50:21.84]  well and stuff like that. You can just
+[50:23.20]  fix it and move on, right? And this is
+[50:25.84]  pretty much how an AI product life cycle
+[50:28.16]  would look like. But what we
+[50:30.00]  specifically also mention is while
+[50:32.16]  you're going through these iterations,
+[50:34.56]  try to think of lower agency iterations
+[50:38.32]  in the beginning um and higher control
+[50:40.80]  iterations. What that means is constrain
+[50:43.36]  the number of decisions your AI systems
+[50:45.84]  can make and um make sure that they're
+[50:48.56]  humans in the loop and then increase
+[50:50.32]  that over time because you're kind of
+[50:51.76]  building a flywheel of behavior and uh
+[50:54.24]  you're understanding what kind of use
+[50:56.32]  cases are coming in or how your users
+[50:58.24]  are using the system right and one
+[51:00.16]  example I think we give in the
+[51:01.76]  newsletter itself is um the customer
+[51:04.08]  support this is a nice image that kind
+[51:06.32]  of shows how you can think of agency and
+[51:08.96]  control as two dimensions and each of
+[51:11.12]  your versions keep on increasing the
+[51:13.12]  agency or the ability of your AI system
+[51:16.08]  to make decisions and lower the control
+[51:18.32]  as you go. And one example that we give
+[51:20.40]  is that of the u customer support agent
+[51:24.00]  where you can break it down into three
+[51:26.00]  versions. The first version is just
+[51:27.92]  routing which is is your agent able to
+[51:30.88]  classify and route a particular ticket
+[51:33.12]  to the right department. And sometimes
+[51:35.52]  when you read this you probably think is
+[51:37.28]  it so hard to just do routing? Why can't
+[51:39.92]  an agent easily do that? And when you go
+[51:42.72]  to enterprises, routing itself can be a
+[51:45.04]  super complex problem. Any retail
+[51:47.60]  company, any popular retail company that
+[51:49.44]  you can think of has hierarchical
+[51:51.28]  taxonomies. Most of the times the
+[51:53.44]  taxonomies are incredibly messy. I have
+[51:56.24]  worked in you know use cases where you
+[51:58.64]  probably have taxonomy that says um you
+[52:01.84]  know some tax um some kind of hierarchy
+[52:03.60]  and then that says shoes and then
+[52:05.84]  women's shoes and men's shoes all at the
+[52:07.92]  same layer where idea you should be
+[52:10.32]  having shoes and then women's shoes and
+[52:12.24]  men's shoes should be sub uh you know
+[52:14.32]  classes right and then you're like okay
+[52:16.16]  fine I could just merge that and you go
+[52:17.76]  further and you see that there's also
+[52:19.36]  another section under shoes that says
+[52:21.12]  for women and for men and it's just not
+[52:23.36]  aggregated it's not uh fixed for some
+[52:25.92]  reason. So if an agent kind of sees this
+[52:28.24]  kind of a taxonomy, what is it supposed
+[52:29.76]  to do? Where is it supposed to route and
+[52:32.00]  a lot of the times we are not aware of
+[52:33.84]  these problems until you actually go
+[52:35.68]  about building something and
+[52:37.20]  understanding it, right? So um and when
+[52:40.00]  these kind of problems um real human
+[52:42.88]  agents see these kind of problems, they
+[52:44.64]  know what to check next. U maybe they
+[52:46.72]  realize that the the node that says for
+[52:49.68]  women and for men that's under shoes was
+[52:51.84]  last updated in 2019 which means that
+[52:54.00]  it's just a dead node that's lying there
+[52:55.76]  and not being used. So they kind of know
+[52:57.20]  that okay we're supposed to be looking
+[52:58.80]  at a different node and stuff like that.
+[53:00.64]  And I'm not saying agents cannot
+[53:02.16]  understand this or models are not
+[53:03.68]  capable enough to understand this, but
+[53:05.28]  there are really weird rules within
+[53:07.44]  enterprises that are not documented
+[53:09.76]  anywhere and you want to um make sure
+[53:12.48]  that the agents have all of that context
+[53:14.56]  instead of just throwing the problem at
+[53:16.16]  them, right? Um yeah. Uh coming back to
+[53:18.48]  the versions we had, routing was one
+[53:20.96]  where you have really high control
+[53:22.80]  because even if your agent routes to the
+[53:25.28]  wrong department, humans can take
+[53:27.04]  control and you know undo uh those
+[53:29.36]  actions. Um and along the way you also
+[53:32.00]  figure out that you probably are dealing
+[53:33.44]  with a ton of data issues that you need
+[53:35.04]  to fix and you know um um u make sure
+[53:38.08]  that your data layer is good enough for
+[53:39.60]  the agent to function. uh we do is what
+[53:42.16]  we said of a co-pilot which is now that
+[53:45.04]  you've figured out routing works fine
+[53:47.12]  after a few iterations and you fixed all
+[53:49.12]  of your data issues, you could go to the
+[53:51.20]  next step which is can my agent provide
+[53:54.16]  suggestions uh based on some standard
+[53:56.80]  operating procedures that we have for
+[53:58.64]  the customer support agent, right? And
+[54:00.56]  it could just generate a draft that the
+[54:02.72]  human can make changes to. And when you
+[54:05.20]  do this, you're also logging human
+[54:07.36]  behavior, which means that how much of
+[54:09.04]  this draft was used by the customer
+[54:11.68]  support agent or what was omitted. So
+[54:13.92]  you're actually getting error analysis
+[54:15.60]  for free when you do this because you're
+[54:17.76]  literally logging everything that the
+[54:18.96]  user is doing that you could then build
+[54:20.96]  back into your flywheel. And then we say
+[54:23.92]  post that once you figured out that
+[54:25.44]  those drafts look good and most of the
+[54:27.36]  times maybe humans are not making too
+[54:29.20]  many changes. They're using these drafts
+[54:30.96]  as is. That's when you want to go to
+[54:33.12]  your end toend resolution assistant that
+[54:35.52]  could you know um draft a resolution
+[54:38.32]  that could sort the ticket as well right
+[54:41.12]  and those are the stages of agency where
+[54:44.00]  you start with low agency and then you
+[54:45.84]  go up high, right? Um, we also have this
+[54:48.56]  really nice table that we put together
+[54:50.80]  which is what do you do at each version
+[54:54.00]  and what you learn that can enable you
+[54:56.24]  to go to the next step and what
+[54:58.32]  information do you get that you can feed
+[54:59.92]  into the loop. Right? When you're just
+[55:01.60]  doing your routing, you have better
+[55:03.52]  quality routing data. You also know what
+[55:06.00]  kind of prompts you need to be building
+[55:07.44]  to improve the routing system.
+[55:09.44]  Essentially, you're figuring out your
+[55:11.44]  structure for context engineering and um
+[55:14.32]  building that flywheel that you want,
+[55:15.84]  right? And while I go through this, I
+[55:18.32]  want to also be very clear that two
+[55:20.96]  things. One is when you build with CCCD
+[55:24.16]  in mind, it doesn't mean that you fix
+[55:26.32]  the problem all for once. It's possible
+[55:28.08]  that you probably gone through V3 and
+[55:30.00]  you see a new distribution of data that
+[55:31.84]  you never previously imagined. But um
+[55:34.72]  this is just one way to lower your risk
+[55:37.60]  which is you get enough information
+[55:39.92]  about how users behave with your system
+[55:42.72]  before going to a point of complete um
+[55:45.04]  autonomy. And the second thing is um
+[55:49.60]  you're also kind of um building this um
+[55:53.52]  you know implicit logging system. Uh a
+[55:56.56]  lot of people come and tell us that oh
+[55:57.92]  wait there are eval right why do you
+[55:59.44]  need something like this? The issue with
+[56:02.48]  just building a bunch of evaluation
+[56:04.08]  metrics and then having um them in
+[56:06.72]  production is evaluation metrics catch
+[56:09.04]  only the errors that you're already
+[56:10.72]  aware already aware of. But there can be
+[56:13.12]  a lot of emerging patterns that you
+[56:14.88]  understand only after you put things in
+[56:17.28]  production. Right? So for those emerging
+[56:18.96]  patterns, you're kind of creating um um
+[56:22.24]  you know a low-risk uh kind of a
+[56:24.88]  framework so that you could understand
+[56:26.96]  user behavior and not really be in a
+[56:28.88]  position where there are tons of errors
+[56:30.16]  and you're trying to fix all of them at
+[56:31.84]  once. And this is not the only way to do
+[56:34.48]  it. There are tons of different ways.
+[56:36.08]  You want to decide how you constrain
+[56:38.48]  your autonomy. It could be based on the
+[56:40.56]  number of actions that the agent is
+[56:42.24]  taking, which is what we do in this
+[56:44.16]  example. It could be based on topic.
+[56:45.84]  there just some um domains where it's uh
+[56:49.44]  pretty high risk to make a system
+[56:51.60]  completely autonomous for um certain
+[56:54.00]  decisions but for some other topics it's
+[56:55.92]  okay to make them completely autonomous
+[56:58.08]  and depending on the complexity of the
+[56:59.68]  problem and that's where you really want
+[57:01.76]  your product managers your you know um
+[57:04.40]  engineers and subject matter experts to
+[57:06.48]  align on how to build the system and
+[57:08.72]  continuously improve it. The idea is
+[57:11.44]  just behavior calibration and not losing
+[57:14.40]  user trust as you do that behavior
+[57:16.24]  calibration. I guess
+[57:17.20]  >> we'll link folks to this actual post if
+[57:18.88]  they want to go really deep. You
+[57:20.00]  basically go through all of these steps
+[57:21.44]  by step a bunch of examples. And the
+[57:24.00]  idea here is as you said that like the
+[57:26.16]  reason everything about what you're
+[57:27.92]  describing here is about making it uh
+[57:30.40]  continuous and iterative and kind of
+[57:32.64]  moving along this progression of higher
+[57:34.88]  autonomy, less control. And this idea of
+[57:37.20]  even calling continuous calibration
+[57:38.80]  continuous development is communicating
+[57:40.56]  it's this kind of iterative process. And
+[57:42.72]  just to be clear, this this naming is
+[57:44.56]  kind of a owed to uh CI CICD, continuous
+[57:49.44]  integration, continuous deployment
+[57:51.60]  >> suite. And the idea here is like that
+[57:53.44]  this is the version of that for AI where
+[57:55.60]  instead of just like integrating into
+[57:57.04]  unit tests and deploying constantly,
+[57:58.64]  it's
+[57:59.36]  >> uh running evals, looking at results,
+[58:01.36]  iterating on on the metrics you're
+[58:03.60]  watching, figuring out where it's
+[58:05.20]  breaking, and iterating on that.
+[58:07.68]  Awesome. Okay, so again, we'll point
+[58:09.84]  people to this post if they want to go
+[58:11.12]  deeper. That was a great overview. Is
+[58:12.96]  there anything else before I go in a
+[58:14.24]  different topic around this framework
+[58:16.08]  specifically that you think is important
+[58:17.44]  for people to know?
+[58:18.80]  >> I think one of the most common questions
+[58:20.48]  we get is how do I know if I need to go
+[58:23.36]  to the next stage or if this is
+[58:25.76]  calibrated enough, right? There's not
+[58:28.16]  really a rule book you can follow, but
+[58:29.76]  it's all about minimizing surprise,
+[58:32.00]  which means let's say you're calibrating
+[58:34.16]  every one or two days. Um, and you
+[58:36.64]  figure out that you're not seeing new
+[58:38.00]  data distribution patterns. your users
+[58:39.92]  have been pretty consistent with how
+[58:41.52]  they're behaving with the system, then
+[58:43.36]  the amount of information you gain is
+[58:46.16]  kind of very low and that's when you
+[58:47.84]  know you can actually go to the next um
+[58:50.56]  stage, right? And it's all about the
+[58:52.40]  wipes at that point. Like do you know
+[58:54.24]  you're ready? Um you're not receiving
+[58:56.72]  any new information. But also it really
+[59:00.16]  helps to understand that sometimes there
+[59:02.80]  are events that could completely uh
+[59:07.04]  you know mess up the calibration of your
+[59:08.64]  system. An example is um GPD 40 doesn't
+[59:12.88]  exist anymore or it's going to be
+[59:14.48]  deprecated in APIs as well. So most
+[59:16.80]  companies that were using 40 should
+[59:18.56]  switch to five and five has very
+[59:20.72]  different properties. So that's where
+[59:22.80]  your calibration's off again. You want
+[59:24.40]  to go back and do this process again.
+[59:26.56]  Sometimes users start users start
+[59:28.64]  behaving with systems also differently
+[59:30.32]  over time or user behavior evolves even
+[59:32.80]  with consumer products right you don't
+[59:34.56]  talk to chat GPT the same way you were
+[59:37.68]  talking say two years ago just because
+[59:39.28]  you know the capabilities have increased
+[59:40.96]  so much and and also just people get
+[59:43.44]  excited when um you know these systems
+[59:45.92]  can solve one task they want to try it
+[59:48.32]  out on other tasks as well. Uh we built
+[59:51.12]  this system um for underwriters at some
+[59:54.48]  point, right? Underwriting is a painful
+[59:56.56]  task. There are agreements that are like
+[59:58.88]  you know uh you know loan uh
+[60:01.12]  applications that are like 30 or 40
+[60:02.88]  pages. And the idea for this bank was to
+[60:05.52]  build a system that could help
+[60:07.12]  underwriters pick policies and you know
+[60:10.40]  um um information about the bank so that
+[60:12.88]  they could approve loans, right? And for
+[60:15.60]  a good three or four months, everybody
+[60:17.12]  was pretty impressed with the system. We
+[60:18.80]  had underwriters actually report gains
+[60:21.04]  in terms of how much time they were
+[60:22.72]  spending etc. And post 3 months we
+[60:25.60]  realized that they were so excited with
+[60:27.12]  the product that they started asking
+[60:28.88]  very deep questions that we never
+[60:30.32]  anticipated. They would just throw the
+[60:32.24]  entire application document at the
+[60:34.40]  system and go like for a case that looks
+[60:36.32]  like this what did previous underwriters
+[60:38.64]  do and for a user that just seems like a
+[60:42.08]  natural extension of what they were
+[60:43.68]  doing but the building behind it should
+[60:46.24]  significantly change. Now you need to
+[60:47.76]  understand what does for a case like
+[60:49.92]  this mean in the context of the loan
+[60:52.32]  itself. Is it referring to people of a
+[60:54.08]  particular you know income range or is
+[60:56.00]  it referring to people in a particular
+[60:57.60]  geo and stuff like that and then you
+[60:59.44]  need to pick up historical documents
+[61:01.04]  analyze those documents and then tell
+[61:02.80]  them um okay this is what it looks like
+[61:04.64]  versus just saying that there's a policy
+[61:06.80]  X Y and Z and you want to um you know
+[61:09.60]  look up that policy. Um so something
+[61:12.16]  that might seem very natural to a end
+[61:14.32]  user might be very hard to build as a
+[61:17.12]  product builder and you see that user
+[61:19.44]  behavior also evolves over time and
+[61:21.28]  that's when you know you you know that
+[61:22.64]  you want to go back and recalibrate.
+[61:24.40]  >> What do you think is uh overhyped in the
+[61:27.84]  AI space right now and even more
+[61:29.76]  importantly what do you think is is
+[61:31.36]  underhyped?
+[61:32.64]  >> I am as I said like super optimistic in
+[61:35.60]  different things that are going in AI.
+[61:37.20]  So I wouldn't say overhyped but I feel
+[61:39.92]  kind of misunderstood is the concept of
+[61:42.72]  multi- aents. Uh people have this notion
+[61:45.52]  of like uh I have this incredibly
+[61:47.60]  complex problem. Now I'm going to break
+[61:49.76]  it down into hey you are this agent take
+[61:52.16]  care of this. You're this agent take
+[61:53.60]  care of this. And now if I somehow
+[61:55.28]  connect all of these agents they think
+[61:57.44]  they're the agent utopia. And it's never
+[62:00.00]  the case that there are incredibly
+[62:02.16]  successful multi-agent systems that are
+[62:04.00]  built right like there's no doubt about
+[62:05.60]  that. But I feel a lot of it comes in
+[62:07.68]  terms of how are you limiting the uh
+[62:11.52]  ways in which the system can go off
+[62:13.36]  tracks and for example like if you're
+[62:15.68]  building a supervisor agent and there
+[62:17.20]  are like sub agents that actually do the
+[62:18.88]  work for the super agent supervisor
+[62:20.80]  agent that is a very uh successful
+[62:23.36]  pattern but coming with this notion of
+[62:25.76]  I'm going to divide the responsibilities
+[62:28.40]  based on functionality and somehow uh
+[62:31.36]  expect all of that to work together in
+[62:33.76]  some sort of like gossip protocol.
+[62:36.00]  uh that is like extremely uh
+[62:39.12]  misunderstood that you could do that. I
+[62:41.44]  don't think like current uh ways of
+[62:43.36]  building and current like uh model
+[62:44.96]  capabilities are like right there in
+[62:47.36]  terms of like uh building those kind of
+[62:49.12]  applications. I feel that is kind of
+[62:51.52]  misunderstood than overrated. uh
+[62:54.00]  underrated. I feel it's hard to probably
+[62:57.20]  believe but I still feel coding agents
+[62:58.72]  are underrated in the sense that I feel
+[63:01.20]  like you can go on Twitter and you can
+[63:02.88]  go on Reddit and you see a lot of
+[63:04.80]  chatter about coding agents but talking
+[63:07.04]  to an engineer in like any random
+[63:09.36]  company uh especially outside of Bay
+[63:11.52]  Area you you can see like the amount of
+[63:14.40]  impact this coding agents can create and
+[63:16.16]  the penetration is very low. So I feel
+[63:18.48]  like 2025
+[63:20.16]  uh and 2026 is going to be like an
+[63:22.00]  incredible year for optimizing all of
+[63:24.72]  these processes and I feel that is going
+[63:26.48]  to be creating a lot of value with AI.
+[63:28.88]  That's really interesting on that first
+[63:30.16]  point. So the idea there is uh you'll
+[63:32.72]  probably be more successful building and
+[63:34.88]  using uh an agent that is able to do its
+[63:37.92]  own sub agent splitting of work versus
+[63:40.40]  like a bunch of say codeex agents where
+[63:42.80]  you do this task, you do that task. You
+[63:45.04]  can have agents to do these things and
+[63:46.48]  you as a human can orchestrate it or you
+[63:48.32]  can have like one uh larger agent that
+[63:50.64]  is going to orchestrate all of these
+[63:51.92]  things. But letting the agents
+[63:53.92]  communicate in terms of peer-to-peer
+[63:55.60]  kind of protocol and then especially uh
+[63:58.48]  doing this in say a customer support
+[64:00.16]  kind of use case is incredibly hard to
+[64:02.96]  control what kind of agent is replying
+[64:04.72]  to your customer because you need to
+[64:06.32]  shift your guardrails everywhere and
+[64:07.92]  things like that.
+[64:08.88]  >> Yeah. Okay. Uh great picks. Okay, Ash,
+[64:11.20]  what do you got?
+[64:12.48]  >> Can I say emails? Will I be cancelled?
+[64:14.72]  >> On which in which category? Which which
+[64:16.56]  bucket do they go?
+[64:17.52]  >> Overrated.
+[64:18.40]  >> Overrated. Okay, go go go for it. You we
+[64:20.56]  won't let you get cancelled.
+[64:22.48]  >> Uh just kidding. I think EVAs are
+[64:24.16]  misunderstood. They are important folks.
+[64:25.84]  I'm not saying they're not important.
+[64:28.00]  But I think just um this um I'm going to
+[64:31.60]  keep um jumping across tools and going
+[64:34.88]  to pick up and learn a new tool is
+[64:36.96]  overrated. I I still am old school and
+[64:40.64]  feel like you would need really need to
+[64:42.16]  be obsessed with the business problem
+[64:43.52]  you're trying to solve. AI is only a
+[64:45.52]  tool. Try to think of it that way. Of
+[64:48.24]  course, you need to be learning about
+[64:49.44]  the latest and greatest, but don't be so
+[64:51.52]  obsessed with just building so quickly.
+[64:53.76]  Building is really cheap today. Um
+[64:55.44]  design is more expensive. really
+[64:57.36]  thinking about your product, what you're
+[64:58.80]  going to build, is it going to really
+[65:00.32]  solve a pain point is is what is way
+[65:03.20]  more valuable today and it will only
+[65:05.36]  become uh more true in the near future,
+[65:07.76]  right? So really obsessing about your
+[65:10.16]  problem and design is underrated and
+[65:12.48]  just wrote building is overrated I
+[65:15.12]  guess.
+[65:15.92]  >> Awesome. Okay. Uh similar sort of
+[65:18.80]  question from a a product point of view.
+[65:22.48]  What do you think the next year of AI is
+[65:24.56]  going to look like? give us a vision of
+[65:26.56]  where you think things are going to go
+[65:27.76]  by say by the end of 2026.
+[65:30.00]  >> Yeah, I feel uh there's a lot of promise
+[65:32.24]  in terms of uh this background agents or
+[65:35.84]  proactive agents who is like they're
+[65:38.56]  going to like basically understand your
+[65:40.32]  workflow even more. Uh if you think if
+[65:42.72]  you think of like where is AI failing to
+[65:45.36]  create value today, it's mainly about
+[65:47.28]  not understanding the context. And the
+[65:49.52]  reason that it's not understanding the
+[65:51.04]  context is it's not plugged into the
+[65:52.64]  right places where actual work is
+[65:54.24]  happening. Right? And as you do more of
+[65:56.64]  this, you can give the agent mode of
+[65:58.88]  context and then it start to see the
+[66:00.96]  world around you and understand what is
+[66:02.88]  the what are the set of metrics that
+[66:04.56]  you're optimizing for or what are the
+[66:06.08]  kind of activities that you're trying to
+[66:07.52]  do. It is a very easy extension from
+[66:10.24]  there to actually gain more out of it
+[66:12.32]  and then let the agent prompt you back.
+[66:14.72]  uh we already do this in terms of charge
+[66:16.48]  GPT pulse which kind of gives you this
+[66:18.64]  daily update of things you might care
+[66:20.40]  about and it's it's very nice to
+[66:22.72]  actually have that like jog your brain
+[66:24.32]  up in terms of oh this is something that
+[66:25.68]  I haven't thought about maybe this is
+[66:27.12]  good and now when you extend this to
+[66:28.88]  more complex tasks like a coding agent
+[66:31.28]  which says that like okay I have fixed
+[66:32.80]  five of your linear tickets and here are
+[66:34.48]  the patches just review them at the
+[66:36.24]  start of your day so I feel that is
+[66:38.00]  going to be like extremely useful and I
+[66:40.16]  see that as like a strong direction in
+[66:41.76]  which like products are going to build
+[66:42.88]  in 2026
+[66:44.32]  That is so cool. So essentially agents
+[66:45.84]  kind of anticipating what you want to do
+[66:48.96]  and getting going getting ahead of you
+[66:51.04]  and here's I've solved these problems
+[66:52.56]  for you or I think this is going to
+[66:54.40]  crash your site. Maybe you should fix
+[66:55.76]  this thing right here or I see the spike
+[66:57.76]  here and let's refactor our database.
+[67:00.96]  Amazing. What a world. Okay, Ash, what
+[67:03.60]  do you got?
+[67:04.32]  >> I am all in for multimodal experiences
+[67:06.64]  in 2026. I think we have done quite some
+[67:09.52]  progress in 2025 and um not just in
+[67:12.32]  terms of generation but also
+[67:14.00]  understanding um until now I think LLMs
+[67:17.20]  have been our most commonly used models
+[67:19.84]  but as humans we are multimodal
+[67:23.20]  creatures I would say like um language
+[67:25.52]  is probably one of our last forms of
+[67:26.96]  evolution as the three of us are talking
+[67:28.80]  I think we're constantly getting so many
+[67:30.64]  signals I'm like oh Lenny is nodding his
+[67:32.72]  head so probably I would go in this
+[67:34.40]  direction or Lenny's bored so let me
+[67:36.32]  stop stop stop talking So there's a
+[67:38.16]  chain of thought be behind your chain of
+[67:40.40]  thought and you're constantly altering
+[67:42.00]  it with language that dimension of
+[67:44.80]  expression is not explored as well. So
+[67:46.64]  if you we could build better multimodal
+[67:48.80]  experiences that would get us closer to
+[67:51.60]  um humanlike um conversation richness
+[67:55.76]  and um yeah I think um and just you will
+[67:59.44]  also just given the kind of models
+[68:01.84]  there's a bunch of boring tasks as well
+[68:03.52]  which are ripe for AI if multimodal
+[68:05.44]  understanding gets better there are so
+[68:07.76]  many handwritten documents and really
+[68:09.76]  messy uh PDFs that cannot be passed even
+[68:13.12]  by the best of the models as of today
+[68:15.36]  and if It's possible. There's there'll
+[68:17.52]  be so much um um data that we can tap
+[68:20.64]  into.
+[68:21.20]  >> Awesome. I just saw Demis from Deep Mind
+[68:23.44]  AI, Google, whatever they call the whole
+[68:25.60]  or uh talking about this where he's
+[68:27.52]  thinks that's going to be a big part of
+[68:28.80]  where they're going, combining the image
+[68:30.96]  model work, the LLM, and also their
+[68:34.08]  world model stuff, Genie, I think is
+[68:35.60]  what it's called.
+[68:36.96]  >> So, that's going to be a wild wild time.
+[68:39.52]  Okay. Uh last question. If someone wants
+[68:42.80]  to just get better at building AI
+[68:44.80]  products, what's just maybe one skill or
+[68:48.16]  maybe two skills that you think they
+[68:50.32]  should lean into and develop?
+[68:52.64]  >> I think we did cover a bunch of best
+[68:54.72]  practices for AI products, which is
+[68:56.32]  start small, try to get your iteration
+[68:59.60]  going well and build a flywheel and all
+[69:01.68]  of that. But again, if you kind of look
+[69:04.00]  at it at a 10,000 ft level for anybody
+[69:07.20]  building today, like I was saying,
+[69:09.44]  implementation is going to be
+[69:11.44]  ridiculously cheap in the next few
+[69:13.12]  years. So really nail down your design,
+[69:15.68]  your judgment, your taste and all of
+[69:17.44]  that. Um and in general if you're
+[69:20.16]  building a career as well I feel for the
+[69:23.20]  past few years your your former years
+[69:27.52]  say the first two three years of uh
+[69:29.84]  building your career is always focused
+[69:31.60]  on execution mechanics and all of that
+[69:33.92]  and now we have AI that could help you
+[69:36.64]  ramp pretty quickly and post that I mean
+[69:39.36]  after a few years I think everybody
+[69:41.04]  everybody's job becomes about your taste
+[69:43.60]  your judgment and kind of um uh you know
+[69:48.24]  what is uniquely you. I think nail down
+[69:50.96]  on that part and try to figure out how
+[69:53.04]  you can bring in um that kind of a
+[69:54.96]  perspective. Um and it doesn't have to
+[69:57.44]  mean that you should be significantly
+[69:59.36]  older, have ex um years of experience.
+[70:02.16]  We recently hired someone and we use
+[70:04.88]  this very popular app uh for tracking
+[70:07.76]  our tasks, right? And we've been using
+[70:09.36]  it for years and we pay a high
+[70:11.52]  subscription fee for it. And this guy
+[70:13.76]  just came with his own white coded app
+[70:15.68]  to the meeting. he onboarded us um to
+[70:18.32]  all of it and he's like okay let's start
+[70:19.84]  using this and I think that kind of
+[70:21.76]  agency and that kind of ownership to
+[70:23.52]  really rethink experiences is what uh
+[70:26.00]  will set people apart and I'm not being
+[70:28.16]  blind to the fact that wipe coded apps
+[70:30.24]  have high maintenance costs and maybe as
+[70:32.24]  we scale as a company we have to replace
+[70:34.88]  it or we have to think of better
+[70:36.08]  approaches but given that we're a smalls
+[70:38.24]  size company now and just I I was really
+[70:41.12]  shocked because I never thought of it um
+[70:44.00]  um if you've been used to working in a
+[70:46.16]  certain way you associate a cost with
+[70:48.00]  building and I feel like folks who grew
+[70:50.16]  up in this age u have a much lower cost
+[70:52.88]  associated in their mind they just don't
+[70:54.80]  mind building something and going ahead
+[70:56.40]  with it and that's they're also very um
+[70:59.68]  enthusiastic to try out new tools um
+[71:02.08]  that's also probably why AI products
+[71:03.84]  have this retention problem because
+[71:05.20]  everybody's so excited about trying out
+[71:06.80]  these new tools and all of that but
+[71:08.80]  essentially um having the agency and
+[71:11.20]  ownership and I think it's also the end
+[71:13.76]  going to be the end of the busy work
+[71:16.56]  era, right? You can't be sitting in a
+[71:18.00]  corner doing something that doesn't move
+[71:19.60]  the needle for a company. You really
+[71:21.60]  need to be thinking about, you know, end
+[71:23.52]  to-end workflows, how you can bring in
+[71:25.36]  more impact. I think all of that will be
+[71:27.12]  super important.
+[71:28.40]  >> That reminds me, I just had Jason
+[71:29.68]  Lumpkit on the podcast. He's um uh very
+[71:33.12]  smart on sales, go to market, run
+[71:34.56]  Zaster, and he replaced his whole sales
+[71:36.64]  team with agents. He had 10 sales
+[71:38.48]  people, now he has 1.2 and 20 agents.
+[71:41.36]  And one of the agents, it was just
+[71:43.44]  tracking everyone's updates to
+[71:45.20]  Salesforce and kind of uh updating it
+[71:48.24]  automatically for them based on their
+[71:49.60]  calls. And one of the salespeople uh is
+[71:52.24]  like, "Okay, I'm I I quit." And it turns
+[71:54.56]  out he wasn't really doing anything.
+[71:56.56]  >> He was just sitting around
+[71:58.08]  >> and he's like, "Okay, this will catch
+[71:59.52]  me. I got to get out of here."
+[72:01.68]  >> Yes.
+[72:01.92]  >> So to your point about you can't it'll
+[72:03.44]  be harder to sit around and to your
+[72:04.88]  thumbs. Uh I think is really right.
+[72:07.68]  >> Yeah. I think to add on to that like
+[72:09.52]  feel like persistence is also something
+[72:11.52]  that is extremely valuable especially
+[72:14.24]  given that anybody who wants to build
+[72:16.40]  something is the information is like at
+[72:18.32]  your fingertips even more than like the
+[72:20.88]  past decade right you can learn anything
+[72:23.68]  overnight and become that sort of like
+[72:25.76]  iron man kind of approach so I feel like
+[72:28.48]  having that persistence and like going
+[72:30.56]  through the pain of like learning this
+[72:33.04]  implementing this and like understanding
+[72:34.72]  what works and what doesn't work and as
+[72:36.96]  you are going through this like pain of
+[72:38.64]  like developing multiple approaches and
+[72:41.04]  then solving the problem. I feel that is
+[72:43.12]  like going to be the real boat as an
+[72:44.88]  individual like I I I like to call it
+[72:47.04]  like pain is the new mode but uh I feel
+[72:49.52]  that is exactly super useful to actually
+[72:52.24]  have this in especially in like you know
+[72:54.48]  you're building these AI products.
+[72:56.24]  >> Say more about this. I love this
+[72:57.84]  concept. Pain is the new moat. Is there
+[72:59.76]  more there? Yeah, I feel as a company I
+[73:02.00]  mean like successful companies right now
+[73:03.68]  building in any new area they are
+[73:05.68]  successful not because they're first to
+[73:07.52]  the market or like they have this fancy
+[73:09.68]  feature that more customers are liking
+[73:11.20]  it. They went through the pain of
+[73:12.88]  understanding what are the set of
+[73:14.96]  non-negotiable things and trade them off
+[73:18.72]  exactly with like what are the features
+[73:20.80]  or like what are the model capabilities
+[73:22.32]  that I can use to solve that problem. it
+[73:24.72]  it this is not a straightforward
+[73:26.00]  process, right? There's no textbook to
+[73:27.44]  do this or like there's no
+[73:28.80]  straightforward way or like a known
+[73:30.88]  threaded path to be here. So a lot of
+[73:33.68]  this pain I was talking about is just
+[73:35.44]  like going through this iteration of
+[73:37.44]  like okay let's try this and if this
+[73:39.36]  doesn't work let's try this and that
+[73:41.20]  kind of knowledge that you built across
+[73:42.88]  the organization or across like your own
+[73:45.12]  experience lived experiences I feel that
+[73:47.84]  the that pain is what uh translates into
+[73:50.80]  the mode of the company right this could
+[73:52.80]  be like a product of eval or like
+[73:55.36]  something that you built and I feel that
+[73:56.88]  is going to be the game changer
+[73:59.28]  >> that is awesome it's like uh turning a
+[74:01.84]  coal into diamond Diamond. Yes. Okay. Uh
+[74:05.44]  I feel like we've done a great job
+[74:07.76]  helping people avoid some of the biggest
+[74:11.04]  issues people consistently run into
+[74:13.52]  building AI products. We've covered so
+[74:15.12]  many of the pitfalls and the ways to
+[74:17.20]  actually do it correctly.
+[74:19.52]  Before we get to our very exciting
+[74:21.52]  lightning round, is there anything else
+[74:22.64]  that you wanted to share? Anything else
+[74:23.68]  you want to leave listeners with?
+[74:25.20]  >> Be obsessed with your customers. Be
+[74:26.88]  obsessed with the problem. Um AI is just
+[74:29.36]  a tool and um try to make sure that
+[74:32.24]  you're really understanding your
+[74:33.52]  workflows. 80% of so-called AI
+[74:36.64]  engineers, AIPM spend their time
+[74:38.88]  actually understanding their workflows
+[74:40.48]  very well. They're not building the
+[74:42.24]  fanciest and the you know most uh cool
+[74:45.92]  models or um workflows around it.
+[74:48.40]  They're actually in the wheats
+[74:49.60]  understanding their customers behavior
+[74:51.28]  and data. Um, and whenever a software
+[74:55.20]  engineer who's never done AI before
+[74:57.84]  hears the term, look at your data, I
+[74:59.68]  think it's a huge revelation to them,
+[75:01.28]  but it's always been the case. You need
+[75:03.36]  to go there. Look at your data,
+[75:04.64]  understand your users, and that's going
+[75:06.96]  to be a huge differentiator.
+[75:09.04]  >> It's a great way to close it. It's not
+[75:10.64]  the AI isn't the answer. It's it's a
+[75:13.12]  tool to solve the problem. With that, we
+[75:16.56]  have reached our very exciting lightning
+[75:18.40]  round. I've got five questions for both
+[75:20.48]  of you. Are you ready? Yay. Yes.
+[75:23.68]  >> All right. So, you can both answer them.
+[75:25.12]  You can pick one which you want to
+[75:26.16]  answer. Either way, up to you. What are
+[75:28.64]  two or three books you find yourself
+[75:30.08]  recommending most to other people?
+[75:32.16]  >> For me, it's this book called When
+[75:33.76]  Breath Becomes Air, Lenny. It was
+[75:35.84]  written by Paul Kalaniti. I think he was
+[75:38.16]  um um an Indian origin neurosurgeon who
+[75:40.96]  was diagnosed with lung cancer at 31 or
+[75:43.92]  32 and the whole book is his memoir and
+[75:46.48]  just is written after he was diagnosed
+[75:48.96]  and it's it's really beautiful
+[75:51.44]  especially because I read it during co
+[75:53.36]  and all we ever wanted to do during co
+[75:55.76]  is stay alive. Um there are a bunch of
+[75:58.72]  really nice quotes within the book as
+[76:01.28]  well, but I remember one of them he was
+[76:03.52]  kind of arguing against a very popular
+[76:05.76]  quote by Socrates which is the
+[76:08.72]  unexamined life is not worth living or
+[76:12.32]  something like that. And which means you
+[76:14.24]  really need to be thinking about your
+[76:15.60]  choices. You need to you know understand
+[76:17.44]  your values, your mission and all of
+[76:19.20]  that. And um Paul says, "If the
+[76:21.76]  unexamined life is not worth living, was
+[76:24.64]  the unlived life worth examining?" Which
+[76:27.12]  means are you spending so much time just
+[76:29.60]  understanding your mission and purpose
+[76:31.20]  that you've forgotten to live? And I
+[76:33.52]  think it everybody who's uh staying in
+[76:36.24]  the AI era and building and continuously
+[76:38.56]  going through this phase of reinventing
+[76:40.24]  themselves need to take a pause and live
+[76:42.64]  for a bit. I guess they need to stop
+[76:44.24]  evaling life too much. What really
+[76:46.40]  >> I was going to say that that's where my
+[76:48.00]  mind went. generate some emails for your
+[76:50.08]  life. Oh my god, we've gone too far.
+[76:52.56]  >> Yep. Yeah. Yeah. That's that's my
+[76:54.16]  favorite book.
+[76:55.12]  >> I I like more of science fiction books.
+[76:57.28]  So, I uh really like this three body
+[77:00.32]  problem series. Uh it's like a three
+[77:02.48]  book series. It's it's like has it has
+[77:05.12]  elements of like grander than science
+[77:06.64]  fiction uh life outside earth and how it
+[77:10.16]  impacts like human decision-m process
+[77:12.80]  and it also has like elements of
+[77:14.48]  geopolitics and how how much important
+[77:17.60]  or like valuable abstract science is to
+[77:19.84]  human progress and then that gets when
+[77:22.00]  that gets stopped it's it's not
+[77:23.68]  noticeable in everyday life but it it
+[77:25.60]  can cause like devastating effects. So I
+[77:27.92]  feel like AI helping in these areas for
+[77:30.00]  example is going to be like extremely
+[77:31.52]  crucial and that book is like a nice
+[77:33.76]  example of what could happen otherwise.
+[77:35.60]  Completely agree absolutely love might
+[77:37.36]  be my favorite sci-fi book except or
+[77:39.92]  series even and it's three I have to
+[77:41.44]  read them all three by the way. I find
+[77:42.72]  that it only got really good about one
+[77:44.80]  and a half books in. So if anyone's
+[77:46.40]  tried it and like what the heck is going
+[77:47.76]  on here just keep reading and get to the
+[77:49.84]  middle of the second one and then gets
+[77:51.60]  mindblowing.
+[77:52.64]  >> Yes. Uh, if you love sci-fi and you're
+[77:55.60]  an AI, you got to read this book called
+[77:57.36]  A Fire Upon the Deep
+[77:59.92]  by uh, Vernon Vege.
+[78:03.52]  >> Mhm.
+[78:04.32]  >> Check it out. It's incredible. Uh, I saw
+[78:07.12]  Noah Smith on his newsletter recommend
+[78:08.80]  this book and there's like a whole
+[78:10.56]  there's like sequels to it, but this is
+[78:11.92]  the one. It's so incredible and it's
+[78:14.16]  actually turns out it's about AGI and
+[78:15.84]  super intelligence and all these things
+[78:17.20]  and it's just like so epic and no one's
+[78:19.44]  heard of it.
+[78:19.84]  >> Thank you.
+[78:20.48]  >> There you go. I'm giving you one back.
+[78:21.92]  Okay, next question. What's a favorite
+[78:23.84]  recent movie or TV show that you've
+[78:25.60]  really enjoyed?
+[78:26.48]  >> I started re-watching Silicon Valley,
+[78:28.40]  and I think it's so true. It's so
+[78:30.32]  timeless. Everything is repeating all
+[78:32.16]  over again. Anybody who's watched it a
+[78:34.48]  few years ago should start re-watching
+[78:36.00]  it, and you'll see that it's eerily
+[78:37.92]  similar to everything that's happening
+[78:39.68]  right now with the AI wave.
+[78:41.60]  >> That's That's a good idea to rewatch it.
+[78:43.20]  I love that their whole business was
+[78:44.48]  like an algorithm to compress, like a
+[78:46.08]  compression algorithm. It's like maybe a
+[78:47.84]  precursor to LM in some small way. Very
+[78:50.96]  good. All right, GT, what you got?
+[78:53.44]  >> Uh, I'm going to digress and say not a
+[78:55.68]  movie or a TV show, but there's this
+[78:57.60]  game I picked up recently called
+[78:59.12]  Expedition 33. Uh, it has nothing to do
+[79:01.44]  with AI, but it's an incredibly
+[79:03.36]  incredibly well-made game in terms of
+[79:05.68]  the game play or like the movie and the
+[79:07.68]  story and the music. Uh, it it's been
+[79:09.84]  amazing.
+[79:10.32]  >> I love that you have time to play games.
+[79:11.60]  That's a great sign. I love that. So, an
+[79:13.60]  open eye. I'm just imagining you're
+[79:15.44]  there's nothing else going on except
+[79:17.36]  just coding and and
+[79:19.44]  >> yeah, it has been incredibly hard to
+[79:21.12]  find time for that.
+[79:22.64]  >> That's good. That's a good sign. I'm
+[79:24.00]  happy to hear this. Okay. What's a
+[79:25.44]  favorite product that you've recently
+[79:26.72]  discovered that you really love?
+[79:28.00]  >> For me, it's Whisper Flow. I think I've
+[79:29.76]  been using it quite a bit and I didn't
+[79:32.16]  know I needed it so much. Um the best
+[79:35.12]  part is it's a conceptual transcription
+[79:38.80]  tool which means if you go to you know
+[79:41.04]  codeex and start using whisfl it starts
+[79:43.44]  identifying variables and all of that
+[79:45.68]  and it's so seamless in terms of
+[79:47.84]  transcription to instruction you could
+[79:49.44]  say something like I'm so excited today
+[79:51.20]  add three exclamation marks and it
+[79:53.28]  seamlessly switches it adds those three
+[79:55.36]  exclamation marks instead of you know
+[79:57.28]  writing add three exclamation marks and
+[79:59.44]  I think it's pretty cool um um if you're
+[80:01.76]  not using it you should try it I'll do a
+[80:04.08]  plug. Get Whisper Flow for free for an
+[80:06.64]  entire year
+[80:08.56]  >> for a year for free by becoming an
+[80:10.96]  annual subscriber of my newsletter.
+[80:12.80]  >> And that's how I got access to it.
+[80:14.40]  Lenny,
+[80:14.88]  >> there we go. It's like I think I I
+[80:17.20]  pitched this deal. I think people don't
+[80:18.80]  truly understand how incredible this is.
+[80:20.80]  They're like, "No way. This is real."
+[80:22.00]  It's real. And 18 other products.
+[80:23.76]  Lenny's productbass.com. Check it out.
+[80:26.40]  Moving on. K.
+[80:28.24]  >> Awesome. Uh I actually am a stickler for
+[80:31.52]  productivity. I keep experimenting new
+[80:33.68]  CLI tools and like things which can uh
+[80:36.24]  make me faster. Uh so I feel like a
+[80:38.56]  recast has been amazing. Uh I've
+[80:40.72]  discovered all this like new shortcuts
+[80:42.24]  that you can use to open different
+[80:43.92]  things, type in shortcut commands and
+[80:45.52]  things like that. And caffeinate is
+[80:47.84]  another thing that I've recently
+[80:48.96]  discovered from my teammates. It helps
+[80:51.20]  you like prevent Mac from sleeping. So
+[80:53.76]  you can run this really long codeex task
+[80:55.76]  for like four or five hours locally. Let
+[80:57.92]  it build the thing and then you can wake
+[80:59.44]  up and be like okay this is good. I like
+[81:01.36]  this.
+[81:02.00]  >> That's hilarious. That combo codeex and
+[81:04.72]  caffeinate. You guys, you guys need to
+[81:07.12]  use it. Like build that yourself. An
+[81:08.88]  open air version of that or the codeex
+[81:10.96]  agent should just keep your Mac from
+[81:12.24]  sleeping. That's so funny. Uh, by the
+[81:13.84]  way, Raycast also part of Lenny's
+[81:15.68]  product pass. One year free of Raycast.
+[81:18.56]  >> We wen
+[81:20.72]  Lenny didn't tell us these folks. These
+[81:23.20]  are actually our favorite.
+[81:24.32]  >> These are just two of 19 products. No
+[81:26.32]  caffeinate though. I don't know if
+[81:27.44]  that's even paid. Okay, let's keep
+[81:29.28]  going. Do you have a favorite life motto
+[81:32.48]  that you find yourself coming back to in
+[81:34.40]  work or in life?
+[81:35.68]  >> For me, I think this is what my dad told
+[81:37.52]  me when I was a kid and it's always
+[81:39.28]  stuck, which is um um they told it
+[81:42.80]  couldn't be done, but the fool didn't
+[81:44.40]  know it, so he did it anyway. I think be
+[81:46.96]  foolish enough to believe that you can
+[81:49.04]  do anything if you put your heart to it.
+[81:51.28]  Especially now because you have so much
+[81:54.72]  data at your hand that could be pointing
+[81:56.64]  towards the fact that you probably will
+[81:58.40]  be unsuccessful. with how many podcasts
+[82:00.40]  made it to more than a thousand
+[82:01.68]  subscribers or how many companies hit
+[82:04.56]  more than 1 million y and there's always
+[82:07.04]  data to show you that you won't be
+[82:08.56]  successful but sometimes just be foolish
+[82:10.72]  and go ahead with it
+[82:12.16]  >> that's great yeah for me I uh am more of
+[82:15.92]  an overinker so I really like this quote
+[82:18.32]  from Steve Jobs that you can only
+[82:20.16]  connect the dots looking backwards so
+[82:22.40]  it's a lot of the times there are like
+[82:24.48]  numerous choices and you don't really
+[82:26.08]  know the optimal one to pick but life's
+[82:28.64]  life works in ways that you can actually
+[82:30.48]  see back and be like, "Oh, these are
+[82:31.92]  actually beautiful in terms of how I I
+[82:34.00]  would transition." So, I feel like that
+[82:35.68]  is extremely useful in like, you know,
+[82:37.44]  keep moving forward, keep experimenting.
+[82:39.76]  >> Final question. Whenever I have two
+[82:41.92]  guests on the podcast at once, I like to
+[82:43.92]  ask this question. What's something that
+[82:46.08]  you admire about the other person?
+[82:48.56]  >> I think with Kir, um, it's about he's
+[82:53.04]  he's pretty calm and, uh, very grounded.
+[82:56.80]  Um, and he's always been my sounding
+[82:58.96]  board. I can throw a ton of ideas at him
+[83:00.80]  and he always comes up with he's able to
+[83:03.84]  anticipate the kind of issues that might
+[83:06.40]  um, run into and he's extremely um, kind
+[83:10.56]  and lets his work speak instead of
+[83:13.20]  actually doing a lot of talking, I
+[83:14.80]  guess. But if I had to pick one, I think
+[83:17.44]  uh, he's the most incredible husband. So
+[83:20.88]  >> reveal little people know.
+[83:24.72]  >> Yeah. We've been married for four years
+[83:27.44]  and been the most beautiful four years
+[83:29.36]  of my life.
+[83:30.00]  >> Oh wow. Okay. How do you follow that?
+[83:34.40]  >> Yeah, it's super hard to follow that. I
+[83:36.56]  would say I am extremely privileged in
+[83:39.20]  terms of working with like really smart
+[83:41.04]  people in great companies in the Silicon
+[83:43.52]  Valley. And I feel the unique thing that
+[83:46.24]  stands with Ashwaryia across like any
+[83:49.20]  other uh smart folks I've worked on is
+[83:51.20]  like she has this really amazing knack
+[83:53.44]  of teaching and like explaining
+[83:55.68]  something uh in a very understandable
+[83:57.76]  and easy to comprehend way and that
+[84:00.32]  combined with persistence is like super
+[84:02.40]  useful especially in this uh fastmoving
+[84:05.36]  AI world that we are in in the sense
+[84:06.80]  that there's so many new things coming
+[84:08.00]  up it feels overwhelming but when I hear
+[84:10.56]  her talk about like this is how you make
+[84:12.64]  sense of this entire thing this is where
+[84:14.48]  it plugs in. I feel like oh that is so
+[84:16.08]  simple like I can also do that. So she
+[84:18.48]  empowers a lot of people by simplifying
+[84:20.88]  things and you know like uh explaining
+[84:23.28]  things in the most understandable way.
+[84:25.20]  So I feel that is like an incredible
+[84:26.80]  quality.
+[84:28.08]  >> Amazing. How sweet. I got to do this all
+[84:30.08]  the time. I need more more yes to that
+[84:32.16]  was that was great. Okay. Uh final
+[84:34.56]  questions. Where can folks find stuff
+[84:36.00]  that you're working on? Find you online.
+[84:37.44]  Talk about share your course link and
+[84:39.60]  then just how can listeners be useful to
+[84:41.20]  you?
+[84:41.68]  >> I write a lot on LinkedIn. Um um so if
+[84:45.60]  you if you want to listen to pragmatists
+[84:47.68]  who've been in the weeds working on AI
+[84:49.60]  products and um what they're seeing, you
+[84:52.24]  can uh follow my work. We also have a
+[84:54.56]  GitHub repository with about 20K stars
+[84:56.88]  and that repository is all about good
+[84:59.04]  resources for learning AI. It's
+[85:00.96]  completely free and if you um like what
+[85:03.84]  we spoke today, we also run a super
+[85:05.52]  popular course. We'll leave a link to it
+[85:07.44]  on building enterprise AI products. And
+[85:09.68]  the course is a lot about unlearning
+[85:11.92]  mindsets and following like a problem
+[85:14.80]  first approach uh instead of a tool
+[85:16.96]  first or a hype first approach. Um so
+[85:19.28]  you can check that out as well. And if
+[85:20.96]  you don't want to do the course, we
+[85:22.32]  write a lot. We give out a lot of free
+[85:24.00]  resources. We have free sessions. So
+[85:26.16]  make sure you follow our work.
+[85:27.68]  >> Yeah, I would also add that I you can
+[85:29.36]  also find me on LinkedIn. uh I don't
+[85:31.36]  like write a lot I guess but I'm super
+[85:34.08]  all excited to just talk to any complex
+[85:36.56]  product that you're building and if you
+[85:38.48]  have thoughts on like how you can uh use
+[85:41.12]  coding agents to make your life better
+[85:43.04]  or how what are the problems that you're
+[85:44.48]  seeing um always my DMs are open and
+[85:46.40]  like we can have a great discuss.
+[85:47.92]  >> Awesome. Well, Kiriti and Ash, thank you
+[85:50.72]  so much for being here.
+[85:52.40]  >> Thank you so much.
+[85:53.04]  >> Thank you Lenny. This was so much fun.
+[85:54.80]  >> So much fun. Bye everyone.
+[85:58.00]  >> Thank you so much for listening. If you
+[85:59.60]  found this valuable, you can subscribe
+[86:01.12]  to the show on Apple Podcasts, Spotify,
+[86:03.60]  or your favorite podcast app. Also,
+[86:06.16]  please consider giving us a rating or
+[86:08.08]  leaving a review as that really helps
+[86:09.92]  other listeners find the podcast. You
+[86:12.24]  can find all past episodes or learn more
+[86:14.32]  about the show at lennispodcast.com.
+[86:17.52]  See you in the next episode.

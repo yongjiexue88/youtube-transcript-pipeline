@@ -1,0 +1,2375 @@
+Title     : Al Engineering 101 with Chip Huyen (Nvidia, Stanford, Netflix)
+Video ID  : qbvY0dQgSJ4
+URL       : https://www.youtube.com/watch?v=qbvY0dQgSJ4
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2366
+Saved at  : 2026-06-21 01:02:50
+------------------------------------------------------------
+
+[00:00.08]  One question that get asked a lot and a
+[00:02.16]  lot is how do we keep up to date with
+[00:03.84]  the latest AI news? Why why do you need
+[00:05.92]  to keep up to date with the latest AI
+[00:07.76]  news? If you talk to the users and
+[00:09.52]  understand what they want, what they
+[00:10.80]  don't want, look into the feedback, then
+[00:12.48]  you can actually improve the application
+[00:13.92]  way way way more.
+[00:14.96]  >> A lot of companies are building AI
+[00:16.24]  products. A lot of companies are not
+[00:17.36]  having a good time building AI products.
+[00:19.20]  >> We are in an ideal crisis now. We have
+[00:21.28]  all this really cool tools. You have do
+[00:23.28]  everything from scratch. It have your
+[00:24.64]  design. It can have your right code. You
+[00:26.48]  have your website. So in theory, we
+[00:28.32]  should see a lot more. But at the same
+[00:29.84]  time, it more or less somehow stuck.
+[00:31.36]  They don't know what to build.
+[00:33.28]  >> All this AI hype, the data is actually
+[00:34.88]  showing most companies try it, doesn't
+[00:36.24]  do a lot, they stop. What do you think
+[00:37.44]  is the gap here?
+[00:38.32]  >> It's really hard to measure
+[00:39.76]  productivity. So I do ask people to ask
+[00:42.40]  their managers, would you rather have
+[00:44.00]  give everyone on the team very expensive
+[00:46.32]  coding agent subscriptions or you get an
+[00:49.36]  extra headcount. Almost everyone
+[00:51.28]  managers would say headcount. But if you
+[00:53.20]  ask VP level or someone who manage a lot
+[00:55.52]  of teams they would say one AI assistant
+[00:58.24]  because as managers you are still
+[00:59.84]  growing. So for you having one HR head
+[01:02.24]  is big whereas for executive maybe you
+[01:04.32]  have more business metrics that you you
+[01:05.92]  care about. So you actually think about
+[01:07.76]  what actually drive productivity metrics
+[01:10.08]  for you.
+[01:11.60]  >> Today my guest is Chip Hen. Unlike a lot
+[01:14.00]  of people who share insights into
+[01:15.68]  building great AI products and where
+[01:17.52]  things are heading. Chip has built
+[01:19.20]  multiple successful AI products,
+[01:21.36]  platforms, tools. Chip was a core
+[01:23.84]  developer on NVIDIA's Nemo platform, an
+[01:26.16]  AI researcher at Netflix. She taught
+[01:28.48]  machine learning at Stanford. She's also
+[01:30.40]  a two-time founder and the author of two
+[01:32.40]  of the most popular books in the world
+[01:33.92]  of AI, including her most recent book
+[01:36.16]  called AI Engineering, which has been
+[01:38.32]  the most read book on the O'Reilly
+[01:40.16]  platform since its launch. She's also
+[01:42.24]  gotten to work with a lot of enterprises
+[01:44.00]  on their AI strategies and so she gets
+[01:46.08]  to see what's actually happening on the
+[01:47.76]  ground inside a lot of different
+[01:49.12]  companies. In our conversation, Chip
+[01:51.04]  explains a lot of the basics like what
+[01:53.44]  exactly does pre-training and
+[01:55.20]  post-training look like? What is RAG?
+[01:57.36]  What is reinforcement learning? What is
+[01:58.96]  RHF? We also get into everything she's
+[02:01.44]  learned about how to build great AI
+[02:03.20]  products, including what people think it
+[02:04.96]  takes and what it actually takes. We
+[02:06.88]  talk about the most common pitfalls that
+[02:08.40]  companies run into, where she's seeing
+[02:10.08]  the most productivity gains, and so much
+[02:11.84]  more. This episode is quite technical,
+[02:14.00]  more technical than most conversations
+[02:15.52]  I've had, and is meant for anyone
+[02:17.12]  looking for a more in-depth conversation
+[02:18.88]  about AI. If you enjoy this podcast,
+[02:21.04]  don't forget to subscribe and follow it
+[02:22.48]  in your favorite podcasting app or
+[02:24.00]  YouTube. And if you become an annual
+[02:25.92]  subscriber of my newsletter, you get a
+[02:28.16]  year free of 16 incredible products,
+[02:31.20]  including Devon, Lovable, Replet, Bolt,
+[02:33.12]  NAN, Linear, Superhum, Dcript, Whisper
+[02:35.04]  Flow, Gamma, Perplexity, Warp, Granola,
+[02:36.72]  Magic Patterns, Rickcast, JPRD, and
+[02:38.24]  Mobin. Head on over to Lenny's.com and
+[02:40.88]  click product pass. With that, I bring
+[02:43.36]  you Chip when after a short word from
+[02:45.92]  our sponsors. This episode is brought to
+[02:48.56]  you by Dcout. Design teams today are
+[02:51.44]  expected to move fast, but also to get
+[02:53.84]  it right. That's where Dout comes in.
+[02:56.40]  Dout is the all-in-one research platform
+[02:58.64]  built for modern product and design
+[03:00.32]  teams. Whether you're running usability
+[03:02.32]  tests, interviews, surveys, or in the
+[03:04.40]  wild fieldwork, Dout makes it easy to
+[03:06.72]  connect with real users and get real
+[03:08.64]  insights fast. You can even test your
+[03:11.04]  Figma prototypes directly inside the
+[03:13.20]  platform. No juggling tools, no chasing
+[03:16.16]  ghost participants. And with the
+[03:18.08]  industry's most trusted panel, plus AI
+[03:20.96]  powered analysis, your team gets clarity
+[03:23.12]  and confidence to build better without
+[03:25.20]  slowing down. So if you're ready to
+[03:27.12]  streamline your research, speed up
+[03:28.72]  decisions, and design with impact. Head
+[03:30.64]  to dscout.com to learn more. That's
+[03:33.60]  dsc.com.
+[03:36.16]  The answers you need to move
+[03:37.76]  confidently. Did you know that I have a
+[03:40.08]  whole team that helps me with my podcast
+[03:42.00]  and with my newsletter? I want everyone
+[03:44.08]  on that team to be super happy and
+[03:46.16]  thrive in their roles. Just Works knows
+[03:48.40]  that your employees are more than just
+[03:49.92]  your employees. They're your people. My
+[03:52.00]  team is spread out across Colorado,
+[03:53.76]  Australia, Nepal, West Africa, and San
+[03:56.40]  Francisco. My life would be so
+[03:58.48]  incredibly complicated to hire people
+[04:00.32]  internationally, to pay people on time
+[04:02.08]  and in their local currencies, and to
+[04:04.00]  answer their HR questions 24/7. But with
+[04:06.80]  Just Works, it's super easy. Whether
+[04:09.20]  you're setting up your own automated
+[04:10.72]  payroll, offering premium benefits, or
+[04:12.80]  hiring internationally, JustWorks offers
+[04:14.88]  simple software and 24/7 human support
+[04:17.84]  from small business experts for you and
+[04:19.76]  your people. They do your human
+[04:21.52]  resources right so that you can do right
+[04:23.52]  by your people. Just works for your
+[04:26.16]  people.
+[04:30.64]  >> Chip, thank you so much for being here
+[04:32.48]  and welcome to the podcast.
+[04:34.24]  >> Hi, Lenny. I've been a big fan of a
+[04:36.24]  podcast for a while. So, I'm really
+[04:37.76]  excited to be here. Thank you for having
+[04:39.44]  me.
+[04:39.76]  >> I want to start with this table
+[04:41.60]  slashchart that you shared on LinkedIn a
+[04:44.32]  while ago that went super viral. And I
+[04:46.00]  think it went super viral because it hit
+[04:47.52]  a nerve with a lot of people. And let me
+[04:49.36]  just read this and we'll show this on
+[04:50.56]  YouTube for people that are watching.
+[04:52.00]  So, it's this very simple table you
+[04:53.76]  shared of what people think will improve
+[04:55.76]  AI apps and what actually improves AI
+[04:58.32]  apps. what people think will improve AI
+[05:00.24]  apps, staying up to date with the latest
+[05:01.84]  AI news, adopting the newest agentic
+[05:04.24]  framework, agonizing over vector
+[05:06.00]  databases to use, constantly evaluating
+[05:08.48]  what model is smarter, fine-tuning a
+[05:10.88]  model, and then you have what actually
+[05:13.20]  improves AI apps, talking to users,
+[05:15.68]  building more reliable platforms,
+[05:17.20]  preparing better data, optimizing
+[05:19.36]  end-to-end workflows, writing better
+[05:21.28]  prompts. Why do you think this such a
+[05:23.68]  nerve with people? And just what if you
+[05:25.04]  had to boil it down, what do you think
+[05:26.08]  is what do you think people are missing
+[05:27.20]  about building successful AI apps?
+[05:28.88]  >> One one question that get asked a lot
+[05:30.64]  and a lot is that how do we keep up to
+[05:33.68]  date with the latest AI news? And I'm
+[05:36.48]  like why why do you need to keep up to
+[05:38.64]  date with the latest AI news? I know it
+[05:40.56]  sound very counter counter intuitive but
+[05:42.72]  there's so much news out there. A lot of
+[05:45.12]  people also ask me questions like how do
+[05:47.84]  I choose between two different
+[05:48.96]  technologies like maybe like recently
+[05:50.96]  like MCP versus like Asian Asians,
+[05:53.60]  right? like protocol and it was like
+[05:55.12]  which one is better or like this or that
+[05:57.04]  and a ser question I used to ask them is
+[05:59.52]  like first like if how much of the
+[06:02.08]  improvements could you get like from
+[06:04.56]  like optimal solutions versus nonoptimal
+[06:06.88]  solutions right and sometimes they were
+[06:08.56]  like actually it's not much right and I
+[06:10.72]  was like okay if it's not much
+[06:11.84]  improvement why do you want to spend so
+[06:14.56]  much time debating something that
+[06:15.92]  doesn't uh make that much difference to
+[06:18.48]  your performance and another question
+[06:20.24]  they asked is like if you adopt a new
+[06:22.16]  technology like how hard it would be to
+[06:25.28]  switch that out to another. And
+[06:27.20]  sometimes it were like, oh, I think it
+[06:28.80]  would be like a lot of work switching it
+[06:31.28]  out. And I was just like, hm, let's say
+[06:33.28]  here's a new technology. It hasn't been
+[06:35.04]  tested by a lot of people. And if you
+[06:36.72]  adopt it, you would be like stuck with
+[06:38.24]  it forever. Like, do you actually want
+[06:40.08]  to adopt it, right? And maybe you want
+[06:41.60]  to think twice about about like
+[06:44.16]  overcommit to like a new technology that
+[06:47.12]  hasn't been battle tested. I love your
+[06:49.76]  just broader advice is just simple like
+[06:51.92]  talk to to build successful apps talk to
+[06:54.00]  users build better data uh write better
+[06:57.44]  prompts optimize the user experience
+[07:00.48]  versus just like what is the latest and
+[07:02.48]  greatest what's the best model to use
+[07:03.84]  right now what's happening in AI let me
+[07:06.24]  follow this thread of this idea of
+[07:08.16]  fine-tuning and basically post-training
+[07:10.96]  there's all these terms that people hear
+[07:12.32]  in AI and I think this is going to be a
+[07:13.68]  really good opportunity for people to
+[07:15.04]  learn what we're actually talking about
+[07:17.20]  since you actually do these things. You
+[07:19.12]  build these things. You work with
+[07:20.08]  companies doing these things. And um
+[07:21.28]  there's a few terms I want to sprinkle
+[07:22.48]  in through the conversation, but let's
+[07:23.84]  start with this one. What what's the
+[07:25.44]  simplest way for someone to understand
+[07:27.20]  what is the difference between
+[07:29.12]  pre-training and post- training and then
+[07:30.64]  just how fine-tuning fits into that?
+[07:32.40]  Just what fine-tuning actually is.
+[07:34.72]  >> Disclaimer, I don't have like full
+[07:36.24]  visibility into like on what like this
+[07:38.08]  big secretive like frontier labs are
+[07:40.00]  doing. Uh but right from what I heard,
+[07:42.08]  right? So, so I think it's like one is
+[07:44.00]  um like supervised fetuning when you
+[07:45.92]  have demonstration data and you have
+[07:47.60]  like a bunch of like um experts like
+[07:49.84]  okay here's a prop right and here is
+[07:52.24]  what the answer should be like and like
+[07:54.32]  you you you just train it like on like
+[07:56.88]  to like stim like uh simulate um like
+[07:59.52]  emulate what the human expert would be
+[08:01.68]  like and that's also like what a lot of
+[08:03.52]  people would like um the the open source
+[08:06.40]  models are doing they do it by
+[08:07.92]  distillation so instead of having human
+[08:09.76]  experts should like write really good
+[08:11.92]  starting a great answers to like prompts
+[08:14.56]  that get like very popular famous good
+[08:17.44]  models to like generate a respond to it
+[08:19.76]  and like getting this train smaller
+[08:22.00]  model to emulate. So, so sometimes you
+[08:24.32]  see people just like so that's because
+[08:26.32]  like some I I really appreciate open
+[08:28.40]  source community by the way but like
+[08:30.00]  going from like have been able to train
+[08:31.76]  a models that can emulate a existing
+[08:34.64]  good model is very different from like
+[08:36.96]  being able to train a good models like
+[08:39.28]  an outperform existing good model. So
+[08:41.84]  it's a big step there. Uh so yeah so
+[08:44.08]  like we have supervised fetuning and
+[08:46.00]  another things that's like very big uh
+[08:48.16]  I'm not sure you have guessed talking
+[08:49.36]  about it already but like reinforcement
+[08:50.80]  learning is like everywhere. Okay, let's
+[08:52.56]  pause on that because I definitely want
+[08:53.84]  to spend time on that and that's such a
+[08:55.28]  cool topic that I that's emerging more
+[08:57.28]  and more in my conversations. But just
+[08:58.56]  to even summarize the things you just
+[09:00.32]  shared which I think is really really
+[09:02.00]  important stuff. So the idea here is a
+[09:04.32]  model is essentially this algorithm
+[09:05.84]  piece of code that someone writes and
+[09:07.68]  say the frontier models are feeding it
+[09:09.04]  just like the entire internet of content
+[09:11.04]  and basically it's trying to test itself
+[09:13.76]  on predicting in all of the in across
+[09:16.08]  all that data the next word essentially
+[09:19.28]  token is a simpler way isn't the correct
+[09:20.96]  way to think about it but a simpler way
+[09:22.24]  to think about it is like the next word
+[09:23.44]  in a in text and as it gets it wrong it
+[09:27.84]  adjusts these things called weights
+[09:29.92]  essentially uh just like is that a
+[09:31.92]  simple way to think about it even though
+[09:33.12]  that's that even that's just like very
+[09:34.88]  surface level. So I think of language
+[09:36.88]  modeling as a way of encoding
+[09:39.20]  statistical information about a
+[09:40.72]  language, right? So so let's say that um
+[09:43.68]  we we both speak English. So we kind get
+[09:45.84]  a sense of like what is more
+[09:47.68]  statistically likely like if I say my
+[09:50.40]  favorite color is then you would like
+[09:52.56]  okay that should be another color like
+[09:54.00]  the word blue would be much more likely
+[09:55.68]  to appear than the word like uh of table
+[09:58.80]  right because statistically blue is more
+[10:01.36]  likely to come back to every color is so
+[10:03.52]  so it's just like get is um it's is it's
+[10:06.24]  a way of encoding statical information
+[10:07.84]  so like when language modeling when you
+[10:09.36]  train a large amount of data like it you
+[10:11.60]  see a lot of languages a lot of domains
+[10:13.52]  so it can tell like okay you bas say
+[10:15.84]  this standards then if user do the
+[10:18.00]  prompt then it would come like with the
+[10:19.52]  next uh most likely token uh so by the
+[10:22.56]  way it's not a new idea actually every
+[10:24.48]  so it's the idea comes very very old
+[10:26.40]  like from the 1951 papers um um the like
+[10:30.32]  English entropy I think it's like called
+[10:32.16]  Shannon it's a great paper and I think
+[10:33.76]  every a story I really like um it's from
+[10:36.56]  did you read Sherlock Holm by the way
+[10:38.72]  >> uh yeah I read a few Sherlock Holmes
+[10:40.48]  books yeah
+[10:41.36]  >> yeah so so this is story of like when
+[10:42.96]  Sherlock Holmes was using this statical
+[10:44.80]  information to like have sewn a case. So
+[10:47.52]  he was getting um so this in this story
+[10:50.00]  uh there is uh somebody left message uh
+[10:52.64]  with a lot of like stick figures. So
+[10:54.64]  Shhol was like okay he knows that in
+[10:57.20]  English the most common letter is E then
+[11:00.40]  the most common stick figure must be E
+[11:03.36]  right and then he goes he start like
+[11:05.12]  that it was just s uh so the uh the code
+[11:08.96]  so I think that's language so in a way
+[11:11.04]  that's like simple language modeling
+[11:12.56]  right but instead of like at a word
+[11:13.76]  level he does it at like tok like
+[11:16.00]  character level and token is something
+[11:17.68]  in between right token is not quite a
+[11:19.92]  word uh but it's bigger than a character
+[11:22.56]  so let's say uh we we say token because
+[11:24.80]  uh it helps us like read what help us
+[11:27.68]  reduce vocabulary because with character
+[11:29.68]  is like smallest amount of like
+[11:31.36]  vocabulary right so the five has like 26
+[11:33.76]  character but words can have like
+[11:35.44]  millions and millions right uh whereas
+[11:37.76]  um um tokens you can like
+[11:41.12]  be able to like get like the sweet spot
+[11:43.12]  between the two so let's say that we
+[11:44.88]  have like uh the new word like uh uh how
+[11:48.48]  to say like podcasting right let's say
+[11:50.80]  it's a it's a new word but it can divide
+[11:52.80]  podcast and ink So people understand
+[11:55.04]  okay podcast we know the meaning we know
+[11:56.80]  that ink is like uh like a verb like
+[12:00.32]  girant whatever it is so we we know the
+[12:02.56]  word like podcasting. So that's why the
+[12:04.16]  token comes in but yeah uh that's like
+[12:07.04]  the pre-tuning is basically like
+[12:08.64]  encoding statistical informations of
+[12:11.20]  language to have you predict what is
+[12:12.96]  most likely um I think like most likely
+[12:16.56]  is the most simple way of doing it. uh
+[12:18.80]  because it's more like building a
+[12:20.00]  distributions of like okay so the next
+[12:21.92]  token could be like more like like 90%
+[12:24.00]  of the time it could be like a color 90
+[12:26.48]  like 10% of the time could be like
+[12:27.84]  something else right so based on
+[12:29.28]  distributions the language could like
+[12:30.88]  pick like depending on your sampling
+[12:33.92]  strategy like do you want it to always
+[12:35.92]  pick the most likely token or you wanted
+[12:38.16]  to pick something more creative you know
+[12:40.08]  so so so I think sampling strategy I
+[12:42.64]  think is something extremely important
+[12:45.20]  can have you boost up performance in a
+[12:46.72]  in a huge way and very very underrated.
+[12:49.76]  >> Okay, awesome. So essentially uh a model
+[12:52.80]  is just code with this whole uh set of
+[12:56.32]  weights essentially the statistical
+[12:58.08]  model that has learned to predict what
+[13:00.40]  comes next after certain words and
+[13:02.00]  phrases.
+[13:03.20]  >> Yeah.
+[13:03.84]  >> And then post-raining and fine-tuning
+[13:06.48]  specifically is doing that same thing.
+[13:08.24]  So pre-training you get like GPT5
+[13:11.68]  fine-tuning is someone taking GPT5 and
+[13:14.08]  doing the same sort of thing. uh
+[13:16.24]  adjusting these awaits a little bit for
+[13:17.92]  specific use cases on data that they uh
+[13:20.80]  find is necessary to do their very
+[13:22.48]  specific use case. Is that a simple way
+[13:23.84]  to think about it?
+[13:24.88]  >> Yeah, I think you ws as like functions,
+[13:27.12]  right? So let's say just like you you
+[13:28.88]  have uh maybe has a functions of like
+[13:31.28]  maybe Lenny's height is maybe like 1x
+[13:35.20]  like 1x plus something or like 2x like
+[13:37.68]  one and plus something is is a waist,
+[13:40.00]  right? So you change it until you fit
+[13:42.16]  the uh the the correct data which is
+[13:45.12]  like my height and your height, right?
+[13:46.80]  So so you can think of the weight is
+[13:48.08]  just like a way like they function. So
+[13:49.76]  so you like chain adjust the weight so
+[13:51.92]  they can fit the data which is a
+[13:53.68]  training data.
+[13:54.72]  >> Awesome. Okay. So so we're talking about
+[13:56.96]  pre-training, post- training,
+[13:58.16]  finetuning. Is there anything else here
+[13:59.20]  that's important to share about just
+[14:00.56]  like what this is exactly? What people
+[14:02.96]  need to understand about these parts of
+[14:05.60]  training? So the vast majority of time
+[14:08.08]  we don't touch on like pre-union model
+[14:10.40]  like as users we don't use already done
+[14:12.96]  for us.
+[14:13.76]  >> Yeah. So so I think actually it's bit of
+[14:15.44]  fun like uh process like when my friends
+[14:17.60]  training models like I try to play with
+[14:18.96]  their pre-shing model and they're
+[14:20.24]  horrendous. They like saying things like
+[14:22.80]  oh my god this is like yeah it's crazy.
+[14:25.20]  Um so so it's it's really interesting to
+[14:27.76]  look at like how much of like post
+[14:29.92]  training can change the motor behavior.
+[14:32.72]  Um yeah and I think that's where like a
+[14:35.20]  lot of time that a lot of people are
+[14:37.12]  spending energy on nowadays in front lab
+[14:39.28]  is on like post training because uh
+[14:41.52]  pre-training uh I think um so preing
+[14:44.48]  have been
+[14:46.16]  used to like increase the general c
+[14:48.24]  capacity of of of a model capabilities
+[14:50.32]  of a model and it depends on a lot of
+[14:52.96]  data and like model size to increase um
+[14:55.92]  to increase the model capabilities and
+[14:58.08]  at some point we are actually like have
+[14:59.76]  max out like in data right and then
+[15:01.60]  people like texted that pretty much I
+[15:03.20]  think a lot of people are doing like
+[15:04.40]  with other data like audios and videos
+[15:07.04]  and everyone's trying to think of like
+[15:08.56]  what is the new source of data but where
+[15:10.56]  like post trading but like of course
+[15:12.64]  like this more of like everyone can have
+[15:14.64]  very similar pre-training data is like
+[15:17.28]  post trading is where they make a big
+[15:19.76]  difference nowadays
+[15:20.96]  >> this is a good segue to you talked about
+[15:22.56]  supervised learning versus unsupervised
+[15:24.24]  learning I love we're getting into this
+[15:25.44]  by the way this is super interesting so
+[15:26.96]  you talked about labeled data basically
+[15:28.56]  supervised learning is AI learning on
+[15:31.12]  data that somebody has already labeled
+[15:33.52]  and told it here's correct versus
+[15:35.04]  incorrect for example this is spam
+[15:37.04]  versus not spam this is uh a good short
+[15:40.00]  story this is not a good short story
+[15:41.68]  we've had u the cos of a lot of these
+[15:43.60]  companies that do this for labs uh
+[15:45.60]  mercor and scale handshake uh there's
+[15:48.96]  micro uh there's a few others so is is
+[15:52.24]  that essentially what these companies
+[15:53.76]  are doing for labs giving them labeled
+[15:55.84]  data high quality data to train on
+[15:57.76]  >> it is in a way but I think it's more
+[16:00.24]  like a product of big equations. So
+[16:02.72]  there are a lot more different
+[16:03.84]  components than that. So that's why I
+[16:05.68]  was talking about reinforcement
+[16:06.72]  learning. I'm not sure if your CEOs that
+[16:08.96]  you interview bring up like that term.
+[16:10.96]  Uh so so the idea is that um you want
+[16:13.68]  people to like so like let's say you
+[16:16.08]  have a model give the model like a prop
+[16:18.08]  right and it produce an output right you
+[16:20.40]  want to buy like you want to reinforce
+[16:23.76]  or encourage the model to produce an
+[16:25.84]  output that is better right so so like
+[16:29.04]  how like now time to like how do we know
+[16:31.28]  that the answer is good or bad right so
+[16:34.32]  people realize on like um signals so one
+[16:38.08]  way to get like a first one good or bad
+[16:39.60]  is like human feedback Right? It happen
+[16:41.12]  we have two responses. You can okay this
+[16:42.72]  one is better than the other. Um and we
+[16:45.20]  do that is because like as humans uh we
+[16:47.68]  tend to it's very hard to give like
+[16:49.68]  concrete score but it's easier to do
+[16:51.68]  comparisons right like if you ask me
+[16:53.84]  okay give this song a score. I'm not a
+[16:56.72]  musicians like and don't know like how
+[16:58.24]  hard it is like it's like yeah I don't
+[16:59.44]  know like what like now 10 I go six you
+[17:01.44]  know and like if you ask me again a
+[17:02.88]  month from now and I completely forgot
+[17:04.40]  okay maybe now seven or like four I
+[17:06.48]  don't know but they need to ask me okay
+[17:08.00]  here are two songs and which one would
+[17:09.52]  you prefer to play for the birthday
+[17:11.60]  party I was like okay I can prefer this
+[17:13.92]  song so like comparison is a lot easier
+[17:16.72]  um so say yes so we have a humans um you
+[17:19.36]  have human feedback uh and then you use
+[17:21.36]  this human feedback to train a reward
+[17:22.96]  model so like tell like which like so
+[17:25.28]  and then Free root model help you like
+[17:26.88]  okay the model now produce this response
+[17:28.80]  is robot model can score is this good or
+[17:30.80]  bad you charge some bias toward like
+[17:32.32]  producing better model the better
+[17:34.40]  responses another ways like you can
+[17:36.08]  instead of using a humans you can use
+[17:37.68]  like AI right like a response say yes or
+[17:40.56]  good good or bad right or the thing is
+[17:42.72]  that people are very big on nowadays
+[17:44.16]  like verifiable rewards which is like
+[17:46.48]  natural um so basically they give it a
+[17:48.64]  math problems and then math solutions uh
+[17:51.44]  like is a model output a solution is you
+[17:53.36]  know that okay expected response should
+[17:55.44]  in a 42 and it doesn't provide 42 then
+[17:58.48]  it's then it's wrong right it's not a
+[18:00.32]  good response um so so yes so like uh a
+[18:03.04]  lot of time people like using this um
+[18:04.96]  human labor like human um human laborers
+[18:08.40]  should like produce like m like um how
+[18:10.88]  to say expert questions and like the
+[18:13.28]  expected answers and in a way that like
+[18:15.60]  design a system that like verifiable so
+[18:18.00]  that the the models can can be trained
+[18:20.40]  on yeah
+[18:21.12]  >> okay I'm really glad you went there this
+[18:22.40]  is essentially RHF reinforcement
+[18:24.96]  learning with human feedback which is
+[18:26.48]  exactly what I wanted to also talk about
+[18:28.40]  right
+[18:29.28]  >> yeah so um I think it's like it's
+[18:31.44]  general it's like it's a way of learning
+[18:32.96]  it's like training is contextual
+[18:34.56]  learning and whether it learned from
+[18:36.08]  human feedback or like AI feedback or
+[18:38.16]  like verifiable rewards uh I think I say
+[18:40.88]  you say just different way of like um
+[18:43.44]  collei signals
+[18:44.88]  >> awesome yeah that's uh I we had the c of
+[18:46.88]  anthropic on the podcast and he talked
+[18:48.32]  about their version of RHF which is
+[18:50.00]  AIdriven reinforcement learning I love
+[18:52.32]  the way you phrased it where you
+[18:53.36]  basically you want to help the model.
+[18:55.84]  You want to reinforce correct behavior
+[18:57.76]  and correct answers and this is the
+[18:59.60]  method to do it. Whether it's say an
+[19:01.52]  engineer seeing an output from a model
+[19:04.16]  being like no here's how I would code it
+[19:06.00]  differently and then training and it's
+[19:08.64]  training a different model that the
+[19:10.72]  original model works with to tell it am
+[19:13.84]  I correct or not correct. Is that right?
+[19:15.44]  Yeah.
+[19:16.00]  >> Yeah. I I think I think that's a way of
+[19:17.76]  of looking into it and I think that's a
+[19:20.16]  space is so exciting nowadays because
+[19:22.80]  there's so many like domain expert task
+[19:25.68]  that the model like that model
+[19:27.68]  developers want model to do well on
+[19:29.84]  right let's say you're like accountant
+[19:31.52]  right like maybe you want to use a model
+[19:32.88]  to have accounting task so I need a lot
+[19:35.04]  of like accounting data like examples
+[19:37.60]  from like accountants so you need to
+[19:39.12]  hire a lot of them should I do it or if
+[19:40.64]  you want to do physics problems or you
+[19:42.40]  want to do um I don't know like legal
+[19:45.68]  questions and stuff or like engineering
+[19:47.44]  questions or like somebody was telling
+[19:49.12]  me they want to do like uh using like
+[19:51.44]  coding for to solve scientific problems
+[19:53.60]  and not just like coding to build
+[19:54.88]  product which is another different whole
+[19:56.96]  realm of things and I also like using
+[19:58.56]  very specific toolings like uh yeah like
+[20:01.28]  I'm not sure what apps you use but maybe
+[20:03.20]  like um for editing app or like
+[20:05.44]  Quickbooks or like Google Excel like
+[20:07.84]  they have very specific like tune
+[20:09.60]  specific um expert expertise that you
+[20:12.24]  want the models to learn. So like they
+[20:13.92]  need a lot of like humans expert in this
+[20:16.80]  area to like create data to train them.
+[20:19.60]  Um and it's a massive things. It's like
+[20:21.44]  people because uh everyone wants a lot
+[20:23.28]  of data and like want slaps like
+[20:24.88]  unlimited budget. Uh but uh whether I
+[20:27.76]  think this is also like a little bit of
+[20:29.20]  lowkey interesting economics. I'm not
+[20:31.60]  sure you talk to to like the guest about
+[20:33.84]  I thought it's very interesting to think
+[20:35.44]  about because it's very lopsided, right?
+[20:38.32]  because like there only like a very
+[20:40.00]  small numbers of frontier labs right and
+[20:43.36]  they want a lot of data and there's like
+[20:45.44]  a massive amount of like startups or
+[20:47.36]  companies are providing related data so
+[20:49.44]  like you can see this companies like
+[20:50.96]  this startup like doing later but they
+[20:52.96]  have like maybe have like massive AR but
+[20:55.28]  you ask them like okay so how many
+[20:57.12]  customers you have and they could be
+[20:58.80]  like oh a very small numbers I'm not
+[21:01.04]  sure I'm not sure you you I saw you
+[21:03.12]  smiling
+[21:03.84]  >> yeah we chat we chat about that
+[21:05.92]  >> yeah so so I'm like a bit like leave me
+[21:07.52]  unease Right? They have like a companies
+[21:09.84]  growing like crazy but it's like heavily
+[21:11.76]  dependent on like
+[21:14.08]  >> two or three companies and at the same
+[21:16.48]  time like if I if I was this company
+[21:18.24]  Frontier Labs what could be the right
+[21:20.64]  economical things for me to do right now
+[21:23.28]  I want a lot of startups I want to have
+[21:25.44]  a lot of providers so I can pick and
+[21:27.44]  choose and then this providers can also
+[21:29.60]  like to compete each other to lower the
+[21:31.68]  price and it's so dependent on me they
+[21:33.12]  will sell to me regardless. So, so I
+[21:34.88]  feel like Yeah. So, so this economics,
+[21:37.12]  the whole economics is very interesting
+[21:39.36]  to me and I'm curious to see how it
+[21:41.12]  plays out.
+[21:41.92]  >> What I'm hearing is you're uh you're
+[21:43.28]  bearish on the future of these data
+[21:45.20]  labeling companies because as you said,
+[21:47.84]  they don't have a lot of leverage over
+[21:49.68]  pricing because they have so few
+[21:50.72]  customers and there's so many people
+[21:52.56]  getting into the space. So, basically,
+[21:54.80]  even though they're some of the fastest
+[21:55.92]  growing companies in the world, you're
+[21:57.04]  feeling like there's there's a challenge
+[21:59.12]  up ahead.
+[21:59.92]  >> I'm not sure if I'm bearish on it. Um I
+[22:02.48]  think I'm curious because I think things
+[22:05.84]  have has a way of work out in ways that
+[22:09.12]  I don't expect. So I think that maybe
+[22:12.32]  these companies they have a lot of data.
+[22:14.16]  Maybe they wouldn't be able to use that
+[22:15.92]  to like have some insight that helps
+[22:17.92]  them like stay ahead of the curve, you
+[22:19.92]  know. So so I don't know. Uh
+[22:22.48]  >> a very fair answer. Okay. While we're on
+[22:24.72]  this topic, I want to chat about evals,
+[22:26.80]  which is a very recurring topic in this
+[22:28.56]  podcast. This is the other piece of data
+[22:31.68]  content these companies share that AI
+[22:33.68]  labs really need. Can you just talk
+[22:35.28]  about what an eval is the simplest way
+[22:37.76]  to understand it and then how this helps
+[22:40.24]  models get smarter.
+[22:41.92]  >> So I think if people approach eval I
+[22:44.08]  think there like two very different
+[22:46.16]  problems. ones is a app builder right
+[22:49.76]  like can I say I have an app uh that do
+[22:51.92]  like uh maybe a chatbot very simple and
+[22:55.68]  I know it's first thing that came to my
+[22:57.12]  mind um and I want you to know is
+[22:59.04]  chatbot is good or bad right so I need
+[23:00.72]  to come up way with like evaluate the
+[23:02.40]  chatbot um another thing is uh I think
+[23:05.12]  of this as a uh task specific evol
+[23:08.56]  design so let's say I'm a model
+[23:10.40]  developer and I want to make my model
+[23:13.20]  better at curve writing right and I was
+[23:15.36]  like okay but how How how do I even
+[23:18.00]  measure cerwiting right? So I would need
+[23:20.08]  someone to like okay understand cer
+[23:22.32]  writing and think about like what makes
+[23:24.24]  good story like what makes a story good
+[23:26.96]  and then designed the whole data set and
+[23:29.76]  then criteria to evaluate creative
+[23:31.76]  writing. Um so yeah so so I think
+[23:34.00]  there's that I think it's like more like
+[23:35.44]  eval design that is very interesting uh
+[23:38.72]  come criteria um come guideline how to
+[23:42.72]  do it and then also like train people
+[23:45.52]  like how to do it effectively um so I
+[23:48.32]  guess uh in a course I think Evar is
+[23:50.56]  really really fun because it's extremely
+[23:53.52]  creative uh I was looking at like
+[23:55.12]  different avons people build and was
+[23:56.64]  like wow like it's not dry at all this
+[23:59.68]  is like super super super fun
+[24:01.44]  >> we had a whole podcast any vals with HML
+[24:03.36]  Haml and Shrea and uh and that's exactly
+[24:06.64]  what they talked about is just it's
+[24:07.92]  actually really fun to create evals for
+[24:09.44]  for companies especially. So let's still
+[24:11.76]  dig into that one a little bit more.
+[24:13.36]  There's this kind of debate online that
+[24:15.20]  I don't know how big of a deal this
+[24:16.64]  debate is, but it feels like people uh
+[24:19.36]  spend a lot of time thinking about this
+[24:20.80]  this idea of do we need evals for AI
+[24:23.20]  products? Some of the best companies say
+[24:24.64]  they don't really do evals. They just go
+[24:26.48]  on vibes. They're just like is this
+[24:27.84]  working well? Can I feel it or not?
+[24:30.32]  What's your take on just the importance
+[24:32.16]  of building evals and the skill of eval
+[24:35.36]  for app AI apps not the model companies?
+[24:38.96]  >> You don't have to be like absolutely
+[24:41.12]  perfect at things to win. You just need
+[24:43.68]  to be like good enough and being
+[24:45.52]  consistent about it. Okay, this is not
+[24:47.76]  the philosophy I follow but like I have
+[24:50.16]  worked with enough companies to see that
+[24:52.16]  play out. So when I say like why company
+[24:54.32]  don't need evaluate let's say you are
+[24:55.84]  like an executive right and you want to
+[24:57.92]  have a new use case. So here's a use
+[24:59.76]  case you you started out we built and
+[25:01.36]  it's like it works well right the
+[25:02.56]  customers are somewhat happy don't you
+[25:04.08]  don't have the exact metric for it but
+[25:05.52]  like the traffic keeps increasing like
+[25:07.84]  people seem happy people keep buying
+[25:09.44]  stuff right and now here's our engineer
+[25:11.20]  coming like okay we need eva for it and
+[25:13.92]  so I think it was like okay how much
+[25:16.16]  effort do we need to put into eva and
+[25:17.92]  they were like okay uh maybe like two
+[25:20.16]  engineers as much as much and it could
+[25:22.24]  maybe would improve so was like okay so
+[25:24.08]  how much expected gain can I get from it
+[25:26.08]  and the engineer would be like oh maybe
+[25:27.68]  you can improve it from like 80% to like
+[25:31.12]  82% 85% right and I was like okay but we
+[25:34.24]  take like that two engineers and we
+[25:36.16]  launch a new feature then it could give
+[25:38.56]  me like so much more like improvement
+[25:40.72]  right so so I think it's like one of
+[25:42.40]  them is like sometime people think of
+[25:43.84]  evol okay this is good enough just don't
+[25:45.60]  touch it like if you do spend a lot of
+[25:47.60]  energy on eva I would like only
+[25:49.04]  incremental improvement where it spends
+[25:51.44]  the energy on like another use case and
+[25:53.92]  maybe it's good enough that you vive
+[25:56.08]  check it right so so I I do think it's
+[25:58.32]  like maybe like that's a debate is about
+[26:00.40]  um I do think that's like a lot of time
+[26:02.24]  people just like get things to the to
+[26:03.84]  the place when it's like okay good
+[26:05.84]  enough people run but and then but of
+[26:08.96]  course it's like there's a lot of risk
+[26:10.16]  associated with it because if you don't
+[26:11.84]  have a clear metric you uh you have a
+[26:14.56]  good visibility to how the application
+[26:17.60]  models are performing it might do
+[26:19.20]  something very dumb or it can cost you
+[26:21.20]  like I know some something like crazy
+[26:23.44]  can happen so so yeah so um so so I do
+[26:27.28]  think evol is very very important. If
+[26:30.96]  you have if you operate at scale and
+[26:34.16]  where like failures can have like
+[26:36.96]  catastrophic consequences then you do
+[26:39.28]  need to be very tyrannical about like
+[26:41.28]  what you put in front of the users
+[26:43.52]  understand different failure modes like
+[26:45.28]  what could go wrong and also maybe in a
+[26:47.20]  space that like is is a feature of the
+[26:49.60]  product is as a competitive advantage
+[26:51.12]  right you want to be the best at it you
+[26:52.72]  want to have like a very strong
+[26:54.56]  understanding of like where you are and
+[26:56.56]  like where you are with the competitors
+[26:58.32]  but it's just something that's like more
+[26:59.68]  like a low key. Okay, this like
+[27:01.12]  something is like okay that's not the
+[27:02.48]  core or like it helps with our users
+[27:04.64]  then maybe you don't need to be so so
+[27:07.68]  obsessed or like tyical about it is okay
+[27:09.76]  that's good enough for now and if it
+[27:11.52]  fails then it fails like okay I know
+[27:13.52]  it's like it's so terrifying but like
+[27:15.20]  yeah um yeah I think it's all about like
+[27:18.00]  the question of like return investment
+[27:20.00]  um I'm a big fan of I love writing Eva
+[27:22.64]  say it's like I understand why some
+[27:25.12]  people would choose to not focus on Eva
+[27:27.76]  right away and choose like bringing on
+[27:30.00]  new functionalities instead.
+[27:32.00]  >> Awesome. That is a really pragmatic
+[27:33.52]  answer. What I'm hearing is eval are
+[27:35.84]  great, very important, especially if
+[27:37.36]  you're operating at scale, but pick your
+[27:39.84]  battles. You don't need to write evals
+[27:41.44]  for every little feature. Something that
+[27:43.36]  Hamlin Shrea shared is that people need
+[27:45.84]  just like I don't know five or seven
+[27:46.96]  evals for the most important elements of
+[27:48.96]  their product. Is that is that what you
+[27:50.16]  see or do you see a lot more in
+[27:51.52]  production that people build and need?
+[27:53.36]  Um I I don't think of like
+[27:57.44]  just a fixed number unlike the evol like
+[27:59.68]  what was the goal of evol right the go
+[28:01.44]  to evol is to guys of product
+[28:03.36]  development um so so like you see evol
+[28:06.48]  um because I think I'm a big fan of evol
+[28:08.32]  is is that it helps you uncover
+[28:10.40]  opportunities where the products are
+[28:11.92]  doing well so I sometimes seen it very
+[28:13.60]  often okay we look at the AA we realize
+[28:16.48]  it's like okay it perform really poorly
+[28:18.96]  on this like specific segment of users
+[28:21.68]  and then we look into it's like what
+[28:23.44]  what what what's what's wrong with it
+[28:25.04]  and it turns out it's like we just like
+[28:27.04]  don't have a good messaging to it. So
+[28:28.72]  like we should like just focus on the
+[28:31.04]  things that we doing can improve
+[28:32.80]  significantly. Yeah. So I kind of the
+[28:34.96]  number of evol is really depends like we
+[28:38.00]  have seen product with like hundreds of
+[28:39.92]  different metrics right like people like
+[28:41.36]  going crazy this is because like product
+[28:43.92]  is like general right have different
+[28:45.36]  have like one avar for like I don't know
+[28:46.88]  like uh verity have like one evolve for
+[28:49.36]  like user sensitive data um and like
+[28:52.16]  another is like is um for length but
+[28:54.72]  like has a number of like um okay let's
+[28:57.92]  just example complex simple like div
+[29:00.32]  research so so you have the application
+[29:02.40]  you have like build a to like do deep
+[29:04.40]  research for you, right? like okay like
+[29:06.48]  have a prompt like me say okay do me a
+[29:08.88]  com comprehensive research on Lenny's
+[29:11.52]  podcast and help me like some like uh
+[29:14.64]  propose like show me report on what kind
+[29:17.76]  of topics he's interested in what kind
+[29:19.52]  of videos could get the most views or
+[29:21.84]  like what topics that he's missing on
+[29:23.68]  that he should be covering right like
+[29:25.36]  have that kind of like prompt then how
+[29:27.28]  do you evaluate the the result right I
+[29:30.56]  don't think this like one like metrics
+[29:32.56]  that would help maybe just like maybe
+[29:34.40]  you have like a 100 I think somebody has
+[29:36.08]  a benchmark and is they get like a 100
+[29:37.60]  expert like write a bunch of prompts and
+[29:39.44]  they go through like all the all the
+[29:41.92]  answers on AI and I do it and it's like
+[29:44.00]  it's extremely costly and slow right but
+[29:46.64]  if I might have something else for like
+[29:48.72]  one way was thinking about it um I was
+[29:50.48]  talking to a friend about it and and one
+[29:52.64]  way is like how to produce the result of
+[29:56.40]  the of the summary right at first you
+[29:58.48]  need to do like gather informations and
+[30:00.96]  to gather informations you need to do a
+[30:04.56]  lot search queries uh you like gathers
+[30:07.84]  grab the search results and then from
+[30:09.76]  the search results you like uh aggregate
+[30:12.24]  and then maybe say okay I'm still
+[30:13.68]  missing on this you have to go another
+[30:15.04]  route and like another route is another
+[30:17.04]  summary so every step of the way you
+[30:19.36]  need evaluations right you don't need to
+[30:21.28]  end to end so maybe the first search
+[30:22.88]  query you might first think about like
+[30:24.64]  okay now I write five search queries I
+[30:27.12]  might look into like how good are the
+[30:28.72]  search queries like do they like are
+[30:30.48]  they like similar to each other because
+[30:31.76]  you need five such queries that are very
+[30:33.36]  similar like Lenny podcast nanny podcast
+[30:37.12]  uh last month landed podcast like two
+[30:39.36]  months ago right it's not it's not very
+[30:41.20]  very exciting but like if the quer is a
+[30:43.04]  podcast like the the keywords are like
+[30:44.72]  more um more diverse right and then look
+[30:48.32]  at the results of the of the search
+[30:50.08]  query let's say you enter the search
+[30:51.36]  query like Lenny Parscat data label like
+[30:54.56]  and then they come up with like 10 pages
+[30:56.56]  uh 10 results and then you come up with
+[30:58.16]  like oh Lenny podcast on uh I don't know
+[31:01.84]  m um I don't know like uh Frontier Labs
+[31:04.40]  and have like 10 results. I might look
+[31:05.92]  at a different web page like how much of
+[31:07.76]  them overlapping like are we are we
+[31:09.76]  doing both like the breath like getting
+[31:11.52]  a lot of page but also like do we have
+[31:14.16]  depth and also like have relevance
+[31:16.08]  because we come up with a search queries
+[31:17.68]  that completely irrelevant to the to to
+[31:20.64]  the original prompt. So I feel like
+[31:22.32]  every aspect of it it would need a way
+[31:24.16]  of evaluating right so I don't think
+[31:25.52]  it's just like how many evolve should I
+[31:28.24]  get but like how many evolve should do I
+[31:32.16]  need to get a good coverage a high
+[31:35.04]  confidence in my application's
+[31:36.96]  performance and also to help me
+[31:38.72]  understand like where it is not
+[31:40.40]  performing well so that I can fix it.
+[31:43.12]  >> Awesome. And I'm hearing also just
+[31:45.28]  especially for the very core use case
+[31:48.00]  like the most common path people take in
+[31:49.68]  your product is where you want to focus.
+[31:52.88]  >> Yeah. So yeah.
+[31:54.88]  >> Okay. Let me there's one more term I
+[31:56.64]  want to cover and I want to go in a
+[31:58.08]  somewhat different direction. Rag people
+[32:00.96]  see this term a lot. RA what does it
+[32:03.92]  mean?
+[32:04.72]  >> So rag is stand for retrieval augmented
+[32:07.04]  generations. It also not specific to JD
+[32:10.24]  AI. So um the idea is just like for a
+[32:12.96]  lot of questions we need context to
+[32:14.96]  answer. So I think it came pretty oh I
+[32:17.76]  think it's from the paper 2017.
+[32:20.24]  So so someone was like um so they
+[32:22.72]  realizes like for a bunch of like
+[32:24.48]  benchmark when the question answering
+[32:26.24]  benchmarks they realize it's like okay
+[32:28.16]  if we give the model informations about
+[32:31.28]  the questions then the answer can be
+[32:33.36]  much much better. So what they do was
+[32:35.28]  they try to retrieve information from
+[32:37.12]  Wikipedia. So for for questionable
+[32:39.20]  topics just like retrieve that and then
+[32:40.56]  put in the context and like answer it
+[32:42.64]  does much better. So I feel like it
+[32:44.16]  sounds like a no-brainer, right? I mean
+[32:45.52]  like obviously. So, so I think that's
+[32:46.96]  what racket as a simplest sense is just
+[32:48.88]  like providing the model with a relevant
+[32:51.44]  context so so that it can answer the
+[32:54.16]  questions and and that's where like
+[32:55.92]  things get like uh really uh more more
+[32:58.48]  interesting because traditionally when
+[33:00.40]  it started out rack is mostly like text
+[33:03.36]  um so so we we talk about like a lot of
+[33:05.44]  way like how to prepare data so that the
+[33:07.84]  model can retrieve u effectively let's
+[33:09.84]  say there like not everything is a
+[33:11.52]  wikipia page right like Wikipedia page
+[33:13.92]  is pretty contained and like you know
+[33:16.16]  everything about it is about a topic. Uh
+[33:17.92]  but a lot of time you have documents
+[33:19.36]  extremely long, right? And like they
+[33:21.36]  have a weird way of like structures the
+[33:22.96]  documents. Let's say that um you have
+[33:24.80]  documents about Lenny uh podcast, right?
+[33:27.28]  And in the in the future in the
+[33:28.96]  beginning documents like from now on
+[33:31.52]  podcast wouldn't refer to Lenny's
+[33:33.52]  podcast, right? So let's say somebody in
+[33:35.44]  the future like tell me about Lenny,
+[33:37.28]  right? Lenny's work. And because the
+[33:40.00]  rest of the document does not have the
+[33:41.44]  term leni you just don't know uh you
+[33:44.00]  might not read through it and the
+[33:45.44]  document is long enough that it chunk
+[33:46.96]  into a different part. So like the
+[33:48.40]  second part doesn't have the the word
+[33:50.64]  manic so you cannot reach. So I have to
+[33:52.64]  find a way to like process data. So that
+[33:54.64]  makes sure it's like it can retrieve the
+[33:57.36]  information just relevant to the query
+[33:59.28]  even though it might not immediately
+[34:00.88]  like obvious that is related. So people
+[34:03.28]  come up with like only thing I think
+[34:04.64]  like contextual visual
+[34:06.88]  um like uh giving x chunk of the data uh
+[34:10.16]  the relevant like maybe like summary
+[34:12.08]  meta data so that it knows um or like
+[34:14.72]  some people use like as a hypothetical
+[34:17.20]  questions it's very interesting like for
+[34:18.96]  even the chunk of like documents I
+[34:20.96]  generated a bunch of questions that the
+[34:23.20]  chunks can help answer so that when they
+[34:25.44]  have a a query it was like okay does it
+[34:27.36]  match any of the like hypothetical
+[34:29.12]  questions so it can it can fetch it so
+[34:31.28]  it's very interesting approach
+[34:33.04]  Okay. So maybe before I go to the next
+[34:34.88]  thing I just want to say this like data
+[34:36.72]  preparations for rack is extremely
+[34:38.64]  important and I would say this like in
+[34:40.56]  the a lot of the companies that I have
+[34:42.72]  seen that's like the biggest performance
+[34:44.88]  in their rack solutions coming from like
+[34:47.28]  better data preparations not agonizing
+[34:50.24]  over like what better databases to use
+[34:52.80]  uh because database of course it's very
+[34:54.72]  important to care about like things like
+[34:56.00]  latency or like if you have like very
+[34:58.96]  specific access patterns like read heavy
+[35:01.52]  or write heavy Of course it's like it
+[35:03.04]  matters but in term of like pure quality
+[35:05.44]  answers right I think the data
+[35:06.80]  preparation is just like hands out
+[35:08.56]  >> when you say data preparation what's an
+[35:10.00]  example to make that real and concrete
+[35:12.08]  for us to understand
+[35:13.20]  >> so so like one way is like uh um
+[35:15.60]  mentioned as in like um you have like
+[35:17.28]  chunks of data so we think about like
+[35:19.36]  how big of each chunk should be right
+[35:21.52]  because um if it's like so let's think
+[35:24.08]  about like if a context you want to
+[35:25.84]  maximize maybe you can it's very simple
+[35:27.92]  example right you want to retrieve like
+[35:30.00]  a thousand words right so If HM's data
+[35:32.80]  is too long um then so if if a data cham
+[35:35.92]  is long then it's more likely to contain
+[35:38.32]  more relevant metadata so you can
+[35:40.72]  retrieve more but if it's too long like
+[35:44.24]  then you have a thousand word and so
+[35:46.48]  chunk is like a thousand words you can
+[35:47.92]  reach one chunk so it's not very useful
+[35:49.76]  but it's too short then you can retrieve
+[35:52.48]  more relevant information like oh so it
+[35:54.88]  can retrieve a wider range of like
+[35:58.08]  documents and chunk but at the same time
+[35:59.92]  a chunk is too small to contain relevant
+[36:01.84]  information. So you have like very nice
+[36:03.60]  like chunk design like how big a chunk
+[36:05.84]  should be. Uh you add like contextual
+[36:07.84]  informations like summary, metadata,
+[36:10.32]  hypothetical questions. Uh somebody was
+[36:12.56]  telling me like um a very big
+[36:14.08]  performance they got is that from um
+[36:16.56]  rewriting their data in the question
+[36:18.56]  answering format. So like instead of
+[36:20.56]  having like so they have a podcast right
+[36:22.16]  instead of just chunking the podcast you
+[36:24.00]  just like reframe rewrite it into like
+[36:26.00]  here's a question here's answers um like
+[36:28.32]  and and produce a lot of them. you can
+[36:29.92]  use AI for that as well. So that's one
+[36:31.92]  example of data processing. A lot of
+[36:34.16]  example we I see is like for people
+[36:36.40]  helping like using AI to have like
+[36:38.56]  specific uh tool use and documentations
+[36:41.04]  right and a lot and we write
+[36:42.80]  documentation usually a lot of document
+[36:45.36]  documentation today is written for human
+[36:48.00]  um reading and AI reading is different
+[36:50.08]  because it's different because humans we
+[36:51.68]  have like common sense and we kind know
+[36:53.60]  what it is. Um so so one one things or
+[36:56.24]  like uh human for human experts they
+[36:57.68]  have the context that AI doesn't quite
+[36:59.20]  have. So somebody told me that like
+[37:01.36]  what's the big change they have is like
+[37:03.04]  let's say that um you have a you have a
+[37:04.80]  function a document uh documentation for
+[37:07.12]  this maybe this library and this library
+[37:09.04]  say okay the output of this one is like
+[37:11.76]  maybe talking for like I know some crazy
+[37:14.08]  term maybe some uh temperature something
+[37:17.20]  under graph should be like one zero or
+[37:20.40]  minus one and as a human expert maybe
+[37:22.64]  understand the scale like what one in
+[37:24.24]  the scale mean but like for AI just
+[37:25.76]  really doesn't understand what that
+[37:26.88]  means so so actually have like another
+[37:28.56]  allot annotation
+[37:30.32]  layer for AI it's like okay got
+[37:32.48]  temperatures equal one mean like that
+[37:34.80]  it's not like it's the abstra it's like
+[37:37.04]  associated with the scale over there so
+[37:39.28]  just saving all this data processing to
+[37:41.44]  make it easier for AI to retrieve the
+[37:43.44]  relevant information to answer the
+[37:44.88]  questions
+[37:45.76]  >> this episode is brought to you by
+[37:47.36]  persona the verified identity platform
+[37:49.76]  helping organizations onboard users
+[37:52.16]  fight fraud and build trust we talk a
+[37:54.64]  lot on this podcast about the amazing
+[37:56.48]  advances in AI but this can be a
+[37:58.64]  double-edged sword report. For every wow
+[38:00.72]  moment, there are fraudsters using the
+[38:02.72]  same tech to wreak havoc, laundering
+[38:05.04]  money, taking over employee identities,
+[38:06.88]  and impersonating businesses. Persona
+[38:09.12]  helps combat these threats with
+[38:10.48]  automated user, business, and employee
+[38:12.80]  verification. Whether you're looking to
+[38:14.88]  catch candidate fraud, meet age
+[38:16.80]  restrictions, or keep your platform
+[38:18.64]  safe, Persona helps you verify users in
+[38:20.88]  a way that's tailored to your specific
+[38:22.56]  needs. Best of all, Persona makes it
+[38:24.96]  easy to know who you're dealing with
+[38:26.40]  without adding friction for good users.
+[38:28.72]  This is why leading platforms like Etsy,
+[38:31.12]  LinkedIn, Square, and Lyft trust Persona
+[38:33.76]  to secure their platform. Persona is
+[38:36.24]  also offering my listeners 500 free
+[38:38.64]  services per month for one full year.
+[38:40.96]  Just head to withpersona.com/lenny
+[38:44.64]  to get started. That's
+[38:45.92]  withpersona.com/lenny.
+[38:48.16]  Thanks again to Persona for sponsoring
+[38:49.92]  this episode. Awesome. Okay. So, you've
+[38:53.12]  talked a bit about how you work with
+[38:55.28]  companies on these sorts of things, on
+[38:57.04]  their AI strategies, on their AI
+[38:58.80]  products, how they build, which tools
+[39:01.04]  they build, all these things. I want to
+[39:02.88]  spend a little time here because a lot
+[39:04.72]  of companies are building AI products. A
+[39:06.24]  lot of companies are not having a good
+[39:07.44]  time building AI products. Let me ask a
+[39:09.84]  few questions along these lines of what
+[39:11.52]  you've learned working with companies
+[39:12.88]  that are doing this. Well, one is just,
+[39:15.36]  I guess, in terms of AI tool adoption
+[39:17.52]  and adoption in general within
+[39:18.80]  companies. There's all this talk
+[39:19.76]  recently of just like all this AI hype.
+[39:21.76]  The data is actually showing most
+[39:23.04]  companies try it doesn't do a lot they
+[39:24.96]  stop and so there's all this just like
+[39:26.64]  maybe this isn't going anywhere. So in
+[39:28.64]  terms of just adoption of tools and AI
+[39:30.40]  within companies what are you seeing
+[39:31.68]  there
+[39:32.16]  >> for gen AI in company I think there are
+[39:34.16]  two type of genai toolings that have
+[39:37.36]  been uh I have seen like ones is to like
+[39:40.16]  um internal productivity right like have
+[39:43.04]  coding tool slack chatbot um uh internal
+[39:47.12]  knowledge like a lot of big enterprises
+[39:49.60]  have some kind like a wrapper around
+[39:51.12]  like um model so but like with access
+[39:54.24]  like maybe some different kind of racket
+[39:56.32]  I think we talk about that Um okay like
+[39:58.72]  text based rack I haven't talked about
+[40:00.00]  like Asian tech rack or like multim
+[40:02.00]  motor rack yet but it's like yes there a
+[40:04.00]  whole very exciting area around that um
+[40:06.56]  yeah so like b b b b b b b b b b b b b b
+[40:07.20]  b b b b b b b b b b b b b b b b b b b b
+[40:07.28]  b b b b b basically to allows the
+[40:08.48]  employee to like access internal
+[40:12.48]  document. Uh somebody somebody asked
+[40:14.16]  like okay um I'm I'm having a baby what
+[40:16.72]  could be the maternal or paternal policy
+[40:19.52]  right or like am I having this
+[40:21.28]  operations with the health benefit like
+[40:23.84]  cover that or like I want to like
+[40:25.76]  interview or I want to like refer my
+[40:27.92]  friend what could be the process for
+[40:29.44]  that so a lot of this like having
+[40:31.68]  chatbot internal chatbot to help with
+[40:33.52]  internal operations um and um another
+[40:37.04]  things um another category is more like
+[40:40.24]  customerf facing um so or like partner
+[40:43.28]  facing um so so customer support chatbot
+[40:45.68]  is a big one you have a hotel chain you
+[40:47.68]  might have like a booking chatbot which
+[40:49.12]  is like somehow massive like a lot of
+[40:50.88]  booking chatbot because I guess it's
+[40:52.48]  it's it's I do have this theory of like
+[40:55.44]  a lot of applications uh companies
+[40:57.76]  pursue because they can't measure the
+[40:59.76]  concrete outcome and I feel like booking
+[41:02.00]  or sale chatbot it's very clear right
+[41:03.84]  like what's a conversion rate right now
+[41:05.20]  with a chatbot with human operators and
+[41:07.36]  what could be conversion rate with a
+[41:08.80]  chatbot and then some somehow I think
+[41:10.80]  it's like very clear outcome comes and
+[41:13.28]  companies are easier to buy into this um
+[41:16.32]  this solutions. So a lot of companies
+[41:18.72]  have that like customer uh facing
+[41:20.56]  chatbot. Uh so yeah so so that is um
+[41:23.76]  another category of tool um and I think
+[41:26.96]  that um I think for customers or
+[41:30.16]  external facing tools um because people
+[41:32.80]  are driven to um people are driven to
+[41:36.64]  choose applications with clear outcomes.
+[41:39.28]  So, so the questions of uh adopting them
+[41:41.92]  is really based on like whether they see
+[41:44.08]  the outcome or not. Of course, it's not
+[41:46.00]  perfect because sometimes uh the outcome
+[41:48.16]  can be bad not because the idea or like
+[41:50.48]  the applications idea itself is bad.
+[41:52.96]  It's just because the
+[41:55.20]  the I know the the process of building
+[41:57.52]  it is like not that great. Um yeah. So,
+[42:00.24]  so it's tricky for the internal
+[42:02.16]  adoptions of like tooling. So, internal
+[42:04.08]  productivity that's where it gets
+[42:05.52]  tricky. I would say like a lot of
+[42:07.12]  companies uh what they think of as a
+[42:09.12]  strategy like I think of as have like
+[42:10.96]  usually have very um have like two key
+[42:14.72]  aspect right it's like use cases and the
+[42:17.20]  second is talent you might have like
+[42:19.36]  great data for great use cases but you
+[42:21.20]  don't have talents and you cannot do it
+[42:22.96]  so a lot of time in the beginning with
+[42:24.48]  geni and it's still and sometimes I'm
+[42:26.16]  really admire a lot of companies for
+[42:27.52]  that it's just like exactly like okay we
+[42:29.28]  need our employees to be very geni aware
+[42:32.80]  like very AI literate right so what to
+[42:35.28]  do is they start like maybe like
+[42:37.28]  adopting a bunch of tools for for the
+[42:40.00]  team to use. They have a lot of upskill
+[42:41.92]  upscaling uh workshops like they
+[42:44.08]  encourage learning. I think it's like a
+[42:45.92]  really really good thing and it's also
+[42:47.84]  like willing to spend a lot of money
+[42:49.60]  into like adopting like um giving people
+[42:51.84]  like touchd
+[42:54.08]  subscriptions uh cloud code
+[42:56.16]  subscriptions like to get the employees
+[42:59.12]  to like to to be more AI literate. Um
+[43:02.80]  and the other thing is like a lot of the
+[43:04.64]  secretary come say okay we spend a ton
+[43:06.32]  of money as this tool but then we don't
+[43:09.12]  see because you can see the usage it's
+[43:10.80]  like but people don't seem to use them
+[43:13.20]  as much and what is the issue so so yeah
+[43:16.40]  so I think is that that is um that is
+[43:18.80]  tricky yeah
+[43:20.16]  >> what do you think is the issue is it
+[43:22.16]  just they're not they're like they don't
+[43:24.48]  know how to use them like what do you
+[43:25.60]  think is the gap here do you think we'll
+[43:27.04]  get to a place of just like wow work is
+[43:29.20]  completely different because of AI for a
+[43:31.20]  lot of companies
+[43:32.24]  The main thing is like it's really hard
+[43:34.00]  to measure productivity uh gain. So I
+[43:37.44]  talked to a lot of people and they was
+[43:38.96]  like first of all on on sample is coding
+[43:40.96]  right a lot of companies not using
+[43:42.32]  coding agents uh or coding aided coding
+[43:45.92]  uh and um I was asking I was like I was
+[43:49.76]  like okay do do you think that like it
+[43:51.52]  helps with your productivity and a lot
+[43:53.92]  of time the question is very handwavy
+[43:55.76]  just like okay like okay I feel like
+[43:58.24]  it's been better right and okay because
+[44:00.00]  we have more PRs uh we see more code and
+[44:03.44]  then immediate correct me okay but of
+[44:05.20]  course code number of life code is not a
+[44:07.36]  good metric for that right so so it's
+[44:09.44]  it's really really tricky and it's
+[44:11.52]  something funny uh so so so I do ask um
+[44:15.28]  people to ask their managers because I
+[44:17.12]  work with like usually the VP level so
+[44:19.12]  they have like multiple teams under them
+[44:21.04]  so I ask them like okay do you ask
+[44:23.12]  managers um like okay would you rather
+[44:26.80]  have access uh would you rather have
+[44:28.96]  give everyone on the team like very
+[44:30.64]  expensive coding agent um subscriptions
+[44:35.12]  or you get an extra headcount right
+[44:36.88]  let's say it's like maybe like um and
+[44:38.88]  and almost everyone could say the
+[44:41.60]  managers could say headcount but if you
+[44:44.00]  ask VP level or like someone who manage
+[44:46.08]  a lot of teams they could say just like
+[44:47.84]  they would want AI assistant assistance
+[44:50.32]  tools and the reason is that people say
+[44:52.16]  like okay because as managers right
+[44:54.16]  because you are still growing like
+[44:55.84]  you're not as a level when you you
+[44:57.36]  manage hundreds of thousands of people
+[44:58.96]  so for you like having one HR hash count
+[45:01.36]  is like is big so you want that not for
+[45:04.08]  productivity reasons but because you
+[45:05.52]  just want you have more people working
+[45:06.96]  for you. Whereas for executive, you care
+[45:09.36]  more about like the um the maybe you
+[45:12.48]  have more like business metrics that you
+[45:14.40]  care about. So so you actually think
+[45:16.64]  about like what actually drive drive
+[45:19.36]  productivity uh metrics for you. Uh so
+[45:22.24]  so yeah, so it's tricky. Um and I think
+[45:25.12]  that's like the question of like
+[45:26.32]  productivity.
+[45:27.84]  um it's not I'm not sure it's like
+[45:30.56]  fundamentally is the some people are
+[45:32.40]  more productive but it's just like we
+[45:33.68]  don't have a good way of measuring
+[45:35.84]  productivity improvement. Uh another
+[45:38.48]  thing is also varies wily um and I think
+[45:41.60]  that people do tell me that they notice
+[45:43.84]  different buckets of of employees like
+[45:45.84]  different reactions to AI assisted tools
+[45:48.96]  like first of all I keep going back to
+[45:50.80]  coding because it's big and it's like
+[45:53.12]  easier to like reason about um so it
+[45:56.32]  says like um I have different reports
+[45:58.32]  like one team would tell me that like um
+[46:00.88]  one of the people tell me okay amongst
+[46:02.80]  all his engineers he think it's like
+[46:05.12]  senior engineers would get the most
+[46:07.12]  output like would be more productive
+[46:08.96]  because it's like okay so that person
+[46:10.56]  very interesting so so he actually
+[46:12.16]  divided his team to like three bucket
+[46:14.88]  but he didn't tell them obviously he was
+[46:16.72]  like okay here's more like currently
+[46:18.72]  like u best performing average
+[46:21.12]  performing and lowest performing and
+[46:23.20]  then there's a randomized trial so like
+[46:25.12]  they give like half of each of each
+[46:27.60]  group like access to like to like cursor
+[46:30.56]  and then was noticed like over time was
+[46:32.48]  like okay the something funny like the
+[46:34.56]  the group that get the biggest
+[46:36.40]  performance boost like in his opinion.
+[46:38.16]  So it goes very close to his team as the
+[46:40.08]  biggest boom Bruce like is the senior
+[46:41.28]  engineer the highest performing. So the
+[46:42.96]  highest performing engineer get the
+[46:44.40]  biggest boost out of it and then the
+[46:46.24]  second group is just like the um the
+[46:49.68]  average performing. So so he so his
+[46:52.16]  opinion is like okay the highest
+[46:54.08]  performing engineers they also more
+[46:56.00]  proactive they say know how to solve
+[46:58.08]  problem. So AI helps them to solve
+[46:59.68]  problem better. Whereas the people who
+[47:01.36]  are lowest performing they only don't
+[47:04.64]  care much about work right? So like it's
+[47:06.80]  easier to just like go on autopilot get
+[47:09.52]  it to like generate like bad code and
+[47:11.36]  just like do it and I just don't know
+[47:12.64]  what to do with it. As another company
+[47:15.04]  however they told me just like actually
+[47:17.20]  senior engineers are the one most
+[47:18.80]  resistant to like using AI as tooling
+[47:22.48]  because they said it's like okay but AI
+[47:24.80]  because they are more opinionated and
+[47:26.56]  they have very high standard was like
+[47:28.16]  okay but AI code jet code just sucks. So
+[47:30.96]  just like very very resistant in using
+[47:32.96]  this. So I don't know I I haven't quite
+[47:35.28]  be able to reconcile like very different
+[47:37.44]  reports on that yet.
+[47:39.28]  >> This is so interesting. So just to make
+[47:41.52]  sure I'm hearing what you're the story.
+[47:43.28]  So there's a company work with that did
+[47:45.52]  a three bucket test with their
+[47:47.52]  engineering team where they created
+[47:50.08]  three sorts of groups. The highest
+[47:52.40]  performing engineers, mid-performing
+[47:54.16]  engineers, lowest performing engineers
+[47:56.72]  uh and gave some of them so they gave
+[47:59.12]  some of them access to say cursor. Was
+[48:01.20]  it cursor or what did they give them
+[48:02.32]  access to? It was cursor.
+[48:03.20]  >> I think by then it was cursor.
+[48:04.56]  >> Okay, cool. And so
+[48:05.84]  >> I didn't work with them. This more like
+[48:07.20]  a friend company.
+[48:08.24]  >> Okay. It's a friends company. So do they
+[48:10.40]  give like half of the higher performing
+[48:12.08]  engineers cursor and half not or how did
+[48:14.00]  they do the split?
+[48:14.80]  >> Yeah. So like they give like half of the
+[48:16.24]  entire company but like half for each
+[48:17.92]  bucket. Yeah. And then they observe the
+[48:20.08]  difference in like productivity.
+[48:21.36]  >> I see. Yeah.
+[48:22.24]  >> So how do they even do that? They're
+[48:23.68]  just like okay you get cursor, you don't
+[48:25.28]  get cursors. That how did they do that?
+[48:26.80]  That's so interesting.
+[48:27.44]  >> Yeah. I I didn't again just the
+[48:28.64]  mechanics of it. Uh but but I was like
+[48:30.64]  at Raspia for doing a randomized trial.
+[48:32.80]  >> That is so cool. Yeah.
+[48:34.40]  >> Okay. Wow. How large was this
+[48:36.40]  engineering team? Was it like hundreds
+[48:37.76]  of people?
+[48:38.16]  >> Um it's it's not that large. It's about
+[48:39.84]  like maybe um 30 40. Yeah.
+[48:43.28]  >> 30 to 40. Okay. Yeah.
+[48:44.72]  >> Wow. Okay. So they found that the
+[48:47.68]  highest performing engineers had the
+[48:49.84]  most benefit from using AI tools and
+[48:52.64]  then behind them was the middle tier
+[48:54.72]  engineers and the worst performers
+[48:56.88]  >> were the lowest performers. Okay.
+[48:59.20]  >> But also not the same everywhere. Um
+[49:01.68]  like companies Yeah. Yeah. different.
+[49:03.92]  >> Right. This other example you shared of
+[49:05.60]  just senior engineers in this one
+[49:07.52]  example are most resistant to changing
+[49:09.76]  the way they work which I get. I I do
+[49:12.00]  feel like the most valuable people right
+[49:14.72]  now other than ML researchers uh and AI
+[49:18.24]  researchers like yourself are senior
+[49:20.32]  engineers because it feels like junior
+[49:22.40]  engineers are just like so much of this
+[49:24.40]  is now done by AI but an engineer that
+[49:26.80]  knows what they're doing that
+[49:27.84]  understands how things work at a large
+[49:30.16]  scale with AI tools just basically like
+[49:33.12]  infinite junior engineers doing their
+[49:34.96]  bidding feels like an extremely valuable
+[49:37.52]  and powerful asset.
+[49:39.12]  >> Yeah. Uh I definitely like really
+[49:41.04]  appreciate as you see companies like we
+[49:43.04]  appreciate engineers who are um have a
+[49:46.88]  good understanding of the whole systems
+[49:48.72]  and be able to have good problem solving
+[49:50.80]  skill like thinking holistically instead
+[49:52.96]  of like local uh locally um when our
+[49:55.76]  company have seen as the way they work
+[49:57.04]  as they told me they work completely
+[49:58.72]  different now I like so they actually
+[50:00.24]  restructured engineering arc so that
+[50:02.24]  like they get more senior engineer
+[50:03.68]  should be more in the PR review because
+[50:05.52]  they like to get like sort of writing
+[50:07.52]  guidelines on like what is a good
+[50:08.96]  engineering practices. Um what is a
+[50:11.12]  process would be like they be like okay
+[50:12.88]  so they write like a lot of like
+[50:14.32]  processes uh on how to work well and
+[50:17.44]  then they um and then they have more
+[50:19.84]  more junior engineers just like produce
+[50:22.40]  code and and like submit PR but senior
+[50:25.52]  engineer more in the reviewing case. So
+[50:27.76]  I think is it might be prepare for the
+[50:29.52]  future. So another company actually told
+[50:31.12]  me something very similar. So that kind
+[50:33.04]  preparing the future when they only need
+[50:34.80]  a very small
+[50:36.88]  group of like very very strong engineers
+[50:39.36]  to like create like processes and like
+[50:42.56]  reviewing code to get into production
+[50:44.96]  but I get like AI or like junior
+[50:47.12]  engineers should like produce code but
+[50:49.12]  then the question becomes like how does
+[50:51.68]  one become a very strong
+[50:53.68]  >> right that's right that's right I feel
+[50:55.44]  like
+[50:57.04]  >> yeah so so I don't know what's the
+[50:58.48]  process was thinking about like yeah um
+[51:01.44]  >> no one's thinking It's just it's a
+[51:03.12]  problem. We won't have any more in 10 20
+[51:05.60]  years. There'll be no more engineers
+[51:07.28]  because no one's hiring junior
+[51:08.48]  engineers. Although I could make the
+[51:09.92]  case junior engineers, people just
+[51:11.36]  getting into computer science right now
+[51:12.88]  are just native AI native. And in
+[51:15.68]  theory, you could argue they will become
+[51:18.40]  really good really fast if they're
+[51:20.16]  curious, aren't just, you know,
+[51:22.88]  delegating learning and thinking to AI,
+[51:25.28]  but learning how to actually using it to
+[51:27.20]  learn how to code well and architect
+[51:28.72]  correctly. like you could argue they
+[51:30.48]  will be the most successful engineers in
+[51:32.64]  the future.
+[51:33.60]  >> I do think that what I mentioned is like
+[51:35.36]  loading to architect um I think I I
+[51:37.60]  group that in like system thinking I do
+[51:39.76]  think it's very important skill because
+[51:42.16]  I think AI can help automate a lot of
+[51:44.64]  like um destroy the skills but like
+[51:48.16]  knowing how to like utilize the skills
+[51:50.24]  together to solve a problems is is very
+[51:53.44]  uh it's is it's hard. So there's a a
+[51:56.32]  webinar between um Mer Sami who was my
+[52:00.16]  one of my favorite professors. He was a
+[52:02.24]  chair of the curriculum of the CS
+[52:04.32]  department at Stford. We spend a lot of
+[52:05.92]  time thinking about CIS educations right
+[52:08.32]  like what what what should students
+[52:09.76]  learn nowaday like AI coding and then
+[52:12.88]  the other person is like Andrew which is
+[52:14.80]  of course it's like a legend in the AI
+[52:16.88]  space and NAMI person like Sami said
+[52:19.92]  something very interesting is like he
+[52:21.36]  said like a lot of people think that CS
+[52:22.96]  is about coding but it's not like coding
+[52:25.12]  is just a means to an end like CS is
+[52:27.76]  about system thinking like using like
+[52:30.00]  coding to solve actual problem and
+[52:32.32]  problem solving will never go way
+[52:35.12]  because like what like AI can automate
+[52:36.80]  more stuff the problem just get bigger
+[52:38.64]  but like the process of understanding
+[52:40.88]  what cause the issue and like how to
+[52:43.28]  like design step-by-step solution to it
+[52:46.00]  will always be there um so I think an
+[52:48.56]  example of um of like I actually have a
+[52:51.04]  lot of issues with like AI for like um
+[52:53.68]  in the way of like is debugging so I'm
+[52:56.48]  not sure you use a lot of air for coding
+[52:57.84]  but like something I've noticed and also
+[53:00.32]  seen from my friends it's like it is
+[53:02.08]  pretty good when you have very clear
+[53:03.60]  welldefy task maybe write do re
+[53:05.44]  documentations
+[53:07.04]  fixes specific features or like build an
+[53:09.36]  app from scratch right like doesn't have
+[53:11.44]  to interact with a large existing code
+[53:13.12]  base but it added something like a
+[53:14.88]  little bit more complicated um maybe
+[53:16.80]  require interacting with a lot of
+[53:17.92]  components and stuff is usually like not
+[53:20.00]  that good um and and for example like I
+[53:22.64]  was using AI to like use um to deploy an
+[53:25.36]  applications um and I was testing out a
+[53:28.00]  new uh hosting service I was not
+[53:30.00]  familiar with I was like okay like
+[53:31.84]  usually they for me so what they think
+[53:33.44]  AI does give me is like confidence to
+[53:35.44]  try new tool like before with AI is like
+[53:37.28]  trying new tools has a lot of
+[53:38.64]  documentations for the beginning but I
+[53:40.32]  was like okay just try it out and and
+[53:42.40]  learn. So I was testing out this new
+[53:44.16]  hosting service and it kept getting a
+[53:46.72]  bug. It was like very very annoying and
+[53:48.72]  I was like okay I asked uh car codes
+[53:51.04]  like fix it and it keep g keeping like
+[53:52.96]  it keep changing the way like maybe
+[53:54.64]  change environment variable fix the code
+[53:57.52]  maybe I change from the function to this
+[53:59.36]  function maybe change the language maybe
+[54:01.84]  it doesn't process JavaScript well I
+[54:04.00]  don't know whatever and it didn't work
+[54:06.16]  and I was like okay that's it I'm just
+[54:08.32]  going to read the document document uh
+[54:10.48]  documentation myself and see what's
+[54:11.92]  wrong and it turns out it's like I'm on
+[54:14.40]  another tier like the fish I want did
+[54:16.96]  not is not available in this tier.
+[54:18.80]  Right? So I feel like okay so the issue
+[54:20.72]  with clon is trying to focus on fixing
+[54:23.20]  things from a very a different component
+[54:25.04]  where the issue is from a different
+[54:26.48]  component. So I think I think of like
+[54:28.32]  okay be understanding like how different
+[54:30.08]  components um work together and where
+[54:33.04]  the source of issue might come from you
+[54:34.88]  need to you need to have a holistic view
+[54:36.32]  of it and this made me think is like
+[54:38.00]  okay how do we teach AI like system
+[54:40.00]  thinking like like that right I think I
+[54:41.60]  have all the human experts like having
+[54:43.76]  like right like very much built scaffold
+[54:46.88]  uh just like okay for this kind of
+[54:48.56]  problem look into this look into that
+[54:50.32]  look into that and then stuff so so I
+[54:52.24]  think is that could be one way but also
+[54:54.00]  made me think is like how do we teach
+[54:55.76]  humans like system thinking. Um yeah, so
+[54:59.04]  so yeah. So I think it's very
+[55:00.24]  interesting um skill. I I do think it's
+[55:03.04]  very important.
+[55:04.16]  >> That's exactly the same insight Brett
+[55:06.08]  Taylor shared on the podcast. He's the
+[55:08.16]  co-founder of Sierra. He created Google
+[55:09.92]  Maps. He was CEO of Salesforce, Quip, a
+[55:12.40]  few other things. And I asked him just
+[55:13.68]  like should people learn to code? And
+[55:15.52]  his point is exactly what you said,
+[55:16.96]  which is learning taking computer
+[55:18.56]  science classes is not about learning
+[55:20.40]  Java and Python. It's learning how
+[55:23.28]  systems work and how code operates and
+[55:26.72]  how software works broadly, not just
+[55:29.68]  here's like a function to do a thing.
+[55:32.16]  One thing that I wanted to help people
+[55:34.32]  understand, you you wrote this book
+[55:35.84]  called AI engineering, which is
+[55:37.20]  essentially helping people understand
+[55:38.80]  this new genre of engineer. And you have
+[55:41.92]  this really simple way of thinking about
+[55:43.44]  the difference between an ML engineer
+[55:45.52]  and an AI engineer which has a really
+[55:47.76]  good correlary to product managers now
+[55:50.40]  of just like an AI product manager
+[55:52.24]  versus a non-AI product manager. The way
+[55:54.64]  you describe it and fill in what I'm
+[55:56.08]  missing is just ML engineers built
+[55:58.64]  models themselves. AI engineers use
+[56:01.76]  existing models to build products.
+[56:04.40]  Anything you want to add there? One
+[56:05.76]  thing I really dislike about writing
+[56:08.24]  books is that you have to defy like this
+[56:10.88]  and and I think it's like no definition
+[56:12.88]  to be perfect because they always be
+[56:14.16]  like edge cases. Um but yeah in general
+[56:16.48]  I think it's like just like gen like AI
+[56:19.04]  as a service like more as a service like
+[56:21.04]  when somebody build the models for you
+[56:22.72]  and the base model performance is a
+[56:25.20]  pretty shock. So, so it's like it's
+[56:27.12]  enable people to just like okay now I
+[56:28.88]  want she in integrate AI into my product
+[56:32.00]  I don't need to learn what green is even
+[56:34.56]  though knowing that could really help uh
+[56:36.48]  but but yeah it's like it makes the
+[56:37.84]  entry barrier really low for people who
+[56:39.84]  want to use AI to build product and at
+[56:42.96]  the same time AI capabilities are like
+[56:45.68]  so strong like it's also like increase
+[56:48.08]  like the possibilities like the type
+[56:50.16]  applications that AI can be used for so
+[56:52.40]  I think like yeah so like both entry
+[56:53.84]  barriers like super low and like the
+[56:55.60]  demand And for like a applications like
+[56:57.60]  a lot bigger. So it feels very very
+[56:59.52]  exciting. It opens up like a whole new
+[57:02.24]  world of possibilities.
+[57:04.32]  >> Oh yeah. It's like now you don't have to
+[57:05.92]  time you don't even have to spend time
+[57:07.28]  building this AI brain. Now you can just
+[57:08.80]  use it to do stuff. Uh such a such an
+[57:11.84]  unlock. Okay. Maybe just a vital
+[57:14.16]  question. You get to see a lot of where
+[57:17.92]  what's working, what's not working,
+[57:19.36]  where things are heading. I'm curious
+[57:21.28]  just if you had to think about in the
+[57:23.12]  next two or three years just where
+[57:24.48]  things are heading. What do you think
+[57:26.64]  what do you think how do you think
+[57:28.24]  building products will be different? How
+[57:30.96]  do you think companies working will be
+[57:32.72]  different? If you had to think of maybe
+[57:34.72]  the biggest change we expect to see in
+[57:37.12]  the next few years in terms of how
+[57:38.88]  companies work.
+[57:40.32]  >> I think in a lot of organizations they
+[57:42.64]  don't move that fast, right? Um but at
+[57:45.92]  the same time they also move faster than
+[57:48.16]  I expected. uh because again I think
+[57:51.12]  it's like biased like and don't work
+[57:52.96]  with dinosaur companies don't care like
+[57:55.12]  a lot of executive who comes to me are
+[57:57.20]  like very forwardlooking so maybe for me
+[57:59.68]  I'm very biased uh towards towards like
+[58:01.76]  organization just like move fast um so
+[58:05.28]  so yeah so I think one big change I see
+[58:08.56]  is just like in organizational structure
+[58:11.20]  um I think it's like a lot of value
+[58:13.04]  place um in like um so before like we
+[58:16.24]  have like a lot of disjointed team like
+[58:17.84]  we have very clear like engineering ing
+[58:19.36]  team, product team. But then there's a
+[58:21.60]  question of like who should write Eva,
+[58:23.60]  right? Like who should own the matrix?
+[58:25.44]  And it turns out it's like Eva is not a
+[58:28.32]  um it's not a it's not a separate
+[58:29.84]  problem. It's a system problem, right?
+[58:31.36]  Because you you you need to look into
+[58:33.36]  different components how interest each
+[58:34.88]  other. You need user behaviors because
+[58:36.72]  you need to know what users care about
+[58:38.08]  so that you can so that you can like
+[58:40.24]  write write about like reflect what
+[58:42.56]  users care about. So, so all of that
+[58:44.56]  like you can sort it from like you know
+[58:45.84]  look into different component
+[58:46.88]  architectures uh place guardrails and
+[58:49.84]  stuff. So it's just engineering but
+[58:51.36]  understanding users is like what product
+[58:53.44]  right so so because of like a lot of
+[58:55.04]  things and they are extremely important.
+[58:56.80]  So like that guy bring product team and
+[58:59.20]  like engineering team even like
+[59:00.88]  marketing team like user acquisition
+[59:02.64]  like very close to each other so so yeah
+[59:04.88]  since in a way people are structuring so
+[59:06.72]  that's more communications between like
+[59:08.56]  previously very distinct functions.
+[59:11.12]  Another thing is I also see as teams um
+[59:14.48]  of course like think about like what can
+[59:16.96]  be automated in the next few years and
+[59:19.28]  what what cannot be automated and I see
+[59:21.60]  that people already like shedding like
+[59:23.76]  actually is it's a little bit like scary
+[59:26.16]  to think about it but I also think it's
+[59:27.92]  like the team told me it's like okay
+[59:30.32]  this is between you and me but we have
+[59:31.76]  we like got rid of these functions right
+[59:33.68]  like for a lot of thing like uh
+[59:35.12]  previously outsource for example like
+[59:37.04]  traditionally is a business outsourcing
+[59:38.88]  this core to them and like can done with
+[59:41.44]  like not um can be a more um system uh
+[59:46.08]  um systematized um so so with that you
+[59:49.04]  can actually like use AI like automate a
+[59:51.12]  lot of that and also like a separation
+[59:53.04]  think more like what is the value of
+[59:54.48]  like junior engineers or like senior
+[59:56.24]  engineers how you restructure
+[59:57.68]  engineering for that um so so yeah so I
+[60:00.64]  do definitely think that um is one thing
+[60:03.04]  to success organization people are just
+[60:04.72]  moving pieces around and like thinking
+[60:06.72]  about like use cases um whether you need
+[60:09.52]  to like spin out new use cases and who
+[60:11.60]  would lead a new effort and like yeah um
+[60:15.12]  that is one big uh change. Another
+[60:19.12]  things in ter of like AI, I think this
+[60:21.04]  is um I'm not sure how true this is. Um
+[60:24.64]  I guess I'm I'm also like on the camp of
+[60:27.36]  like thinking that is has merit is it's
+[60:31.04]  a camp of like okay uh base models we
+[60:34.40]  have probably like not quite max out but
+[60:36.80]  we want we unlikely to see like really
+[60:40.56]  really strong like craziness strong
+[60:43.84]  models. So like you remember like when
+[60:45.28]  we have like GBT right then GB2 which is
+[60:47.44]  a big step up like an order of magnitude
+[60:49.60]  like like better than like GBD and then
+[60:52.16]  GB3 which like much much bigger GB4 much
+[60:54.72]  much bigger and then of course I have
+[60:56.40]  GBD 5 but like is GB 5 like that scale
+[61:00.08]  of like much bigger like a step jump
+[61:03.52]  compared to like the previous I think
+[61:05.36]  it's a debatable right so so I think
+[61:07.28]  that it's like we had reached a point
+[61:08.56]  where like the base model um performance
+[61:12.40]  improvement is not going to be like
+[61:14.48]  mind-blowing it was in the last three
+[61:17.36]  years uh so so I think it's like a lot
+[61:19.76]  of like improvements we're going to see
+[61:21.60]  in the post training phase in the
+[61:24.00]  application building phase um and um and
+[61:27.68]  yes also I think that's where I feel I
+[61:29.60]  was see a lot of improvement there so
+[61:32.72]  very like interesting like multimodality
+[61:35.36]  um so we've seen a lot of uh text based
+[61:38.16]  uh but I think there a lot of um audio
+[61:41.12]  videos use cases uh that is very very
+[61:44.24]  exciting and I think audio is not quite
+[61:47.04]  as soft as thinking because I do work
+[61:48.96]  with like with with like a couple of
+[61:51.52]  like voice startups and when I talk to
+[61:54.48]  think about voice it's a entirely
+[61:56.48]  different beast uh so let's say have
+[61:58.96]  chatbot right we go from a text chatbot
+[62:01.04]  to voice chatbot it's like the consoles
+[62:03.36]  are completely different because now
+[62:04.96]  with voice chatbot right we need to
+[62:06.40]  think about like latency because like
+[62:08.08]  multiple steps uh first like like text
+[62:10.40]  like like voice to text text to text and
+[62:12.96]  text question into text answer and then
+[62:14.80]  like and then text to voice answer right
+[62:16.96]  so it's like manable hops and like
+[62:18.96]  latency become very important and
+[62:20.80]  there's a question like what does make
+[62:22.72]  you sound natural so for example like
+[62:24.96]  people think like um in in in AI and
+[62:28.40]  humans so like when humans talk to each
+[62:29.84]  other like if I say if I say you try to
+[62:33.28]  interrupt me it's like um chip that
+[62:35.36]  right I would like pause and I try to
+[62:37.52]  hear you out right but sometime I may
+[62:39.92]  just say say some word not like
+[62:42.48]  acknowledge when I mhm that I shouldn't
+[62:45.20]  stop I just continue so the question of
+[62:47.20]  like force interruption like whether
+[62:49.12]  it's like I should should I stop or not
+[62:51.84]  like it's is a big and like what
+[62:53.52]  perceived as like natural conversations
+[62:55.84]  and that's also regulations right
+[62:57.60]  because like because like a lot of time
+[62:59.60]  people want to build AI chatbot voice
+[63:01.68]  chat bots that sound like humans try to
+[63:03.52]  like trick users into thinking they're
+[63:06.00]  talking to humans but also of like maybe
+[63:08.08]  potential regulations saying like okay
+[63:09.60]  you have to disclose to users when to
+[63:12.40]  talk if the if the bot is talking to is
+[63:15.92]  human or um or AI. So, so I think just
+[63:18.48]  like um there's a whole space I think
+[63:20.72]  it's not quite as so as as you think is
+[63:23.36]  it but it's al it's not quite like an AI
+[63:26.80]  foundation model problem right because
+[63:28.56]  like a human interruption detection is
+[63:30.72]  actually a classical machineing problem
+[63:32.40]  like you you it's is a different uh
+[63:34.80]  framing but like you can view classifier
+[63:37.20]  for that or or like the question of like
+[63:39.68]  let's see actually have a massive
+[63:41.36]  engineuric challenge not an AI challenge
+[63:44.16]  of course it can be an AI challenge
+[63:45.60]  because people are trying to build like
+[63:47.04]  voicetovoice model. So instead of having
+[63:49.04]  like having to first like transcribe the
+[63:51.60]  voice from me into text and then get a
+[63:53.76]  model generous text answer and get
+[63:55.44]  another model to like turn from text to
+[63:58.08]  speech, you just like voice your voice
+[63:59.52]  directly. So that is something who are
+[64:01.28]  working on but it's like very hard. Um
+[64:03.92]  yeah. So so yeah. So like even audio I
+[64:06.24]  think of it is like the easier than
+[64:07.76]  video right because video have like both
+[64:10.08]  image and voice. Uh it's already like
+[64:12.48]  pretty hard. So I think it's a lot of
+[64:14.16]  challenges in that space.
+[64:16.16]  That was an awesome list of things. Let
+[64:18.00]  me mirror them back real quick. So what
+[64:19.92]  you're predicting in the next few years,
+[64:21.28]  things that will change in the way we
+[64:23.12]  work and these actually resonate with so
+[64:25.84]  many conversations I've had on this
+[64:27.20]  podcast. So this is just kind of
+[64:29.12]  doubling doubling down on where things
+[64:30.96]  are heading. One is the blurring of
+[64:32.88]  lines between different functions
+[64:34.40]  instead of just like design engineering.
+[64:36.72]  Everyone's going to be doing a lot of
+[64:38.32]  different things now. Uh, two is just
+[64:40.72]  more of work being automated with agents
+[64:42.88]  and all these AI tools and just in
+[64:45.60]  theory productivity going up. Third is a
+[64:48.16]  shifting from pre-training models to
+[64:50.40]  post-training fine-tuning and things
+[64:52.08]  like that because to your point model
+[64:54.56]  models maybe are slowing down and how
+[64:56.48]  smart they're getting. Although I'll
+[64:58.08]  point folks to the ed chat with the
+[64:59.76]  co-founder of Anthropic. He made a
+[65:01.12]  really good point here. He's like we're
+[65:02.88]  really bad at understanding what
+[65:04.48]  exponentials feel like when we're in the
+[65:06.08]  middle of that. And also models are
+[65:07.92]  being released more often. So the
+[65:09.92]  difference between them we may not
+[65:11.44]  notice because they're just happening
+[65:12.72]  more often versus GPT3 came out like a
+[65:14.88]  year I don't know a before after JPT2.
+[65:18.08]  So uh maybe true maybe not. And then the
+[65:20.80]  fourth point you made is this idea of
+[65:22.32]  multimodal investing in multimodal
+[65:24.48]  experiences. I cannot wait for JPT voice
+[65:26.96]  mode to get better at interruption. Like
+[65:28.88]  exactly what you're saying. I'm just
+[65:30.08]  like talking to it and then someone
+[65:31.20]  makes a little sound. It's like okay and
+[65:33.28]  then you have to and then it's like and
+[65:34.80]  then it stops talking. It's so annoying.
+[65:36.48]  I'm shocked that we don't have better
+[65:39.04]  voice assistant at home yet. I think I
+[65:41.20]  have been testing out a bunch. Like I
+[65:43.28]  keep hoping, oh my god, Zach could be
+[65:45.28]  the one and then I know how many of them
+[65:46.88]  I just like had to get away because
+[65:48.16]  they're not that good.
+[65:49.04]  >> I think it's coming. I hear it's coming.
+[65:50.40]  Anthropic is working with someone uh
+[65:52.24]  that I don't know if it's launched or
+[65:53.68]  not yet.
+[65:54.48]  >> Yeah, I want to bring back to what you
+[65:56.64]  mentioned about like the your guest like
+[65:58.72]  from Antropic mentioned about the
+[66:00.16]  performance uh improvement. I think
+[66:02.24]  there's a big change. Um I think like um
+[66:04.64]  this difference between um a model based
+[66:07.68]  capability so I'm not talking about like
+[66:09.20]  the pre-trained model right versus a
+[66:11.52]  perceived performance. So, so let's say
+[66:14.16]  just like um a machine thought about
+[66:16.56]  like are you familiar with the term test
+[66:18.24]  time compute?
+[66:19.84]  >> Uh I don't think so.
+[66:21.76]  >> Yeah, help us understand. So um so so
+[66:23.68]  the idea is like okay like um you have
+[66:25.60]  some a fixed amount of compute, right?
+[66:27.44]  So you're going to spend a lot of
+[66:28.80]  compute on pre-shooting or training the
+[66:30.88]  model pre-tuning and then have spend a
+[66:33.12]  lot of uh some computing and the ratio
+[66:35.52]  like pre-tuning to the post training
+[66:36.96]  compute is like crazy varies different
+[66:39.68]  between different lab um um and also
+[66:42.48]  like since then has to spend comput uh
+[66:44.40]  on like Jerry inference when I have a
+[66:46.96]  train and 500 model now it want to like
+[66:49.28]  serve to users so I might type a
+[66:51.28]  questions or prompt and like Jerry like
+[66:53.12]  do inference like and that requires a
+[66:55.20]  compute and I guess I feel about
+[66:56.96]  discussion of like uh should I spend
+[66:58.80]  more compute on like pre-tuning or
+[67:00.96]  fetuning or inference right because like
+[67:03.36]  inference and people found I was just
+[67:04.80]  like test time compute so like spending
+[67:07.04]  more compute on inference is like call
+[67:09.04]  like test time like u compute uh like
+[67:11.68]  the strategy of like just allocating
+[67:14.08]  more resources compute resource to
+[67:16.08]  generate uh inference when I bring
+[67:19.20]  better performance and how does that do
+[67:20.48]  it like let's say um let's say you have
+[67:22.56]  a math questions right and maybe instead
+[67:24.80]  of just generic one answer I can gen
+[67:26.64]  four different answers and say okay
+[67:28.32]  whichever is uh the best according to
+[67:31.36]  some standard uh or like okay have four
+[67:33.92]  answers and then maybe like three of
+[67:35.84]  them say 42 and one of them said like 20
+[67:38.40]  okay three of them in the in in
+[67:40.00]  agreement so the answer should be 42
+[67:42.00]  right so like just people shouldn't
+[67:43.12]  generate a bunch of it or another thing
+[67:44.80]  is like a lot of time like reasoning uh
+[67:46.64]  thinking just like people should like
+[67:48.16]  generate more thickening tokens I spend
+[67:50.24]  more time thinking before showing the
+[67:51.92]  final answers uh it's like require more
+[67:54.08]  compute but also like give it more uh
+[67:56.32]  more and more more better performance.
+[67:58.88]  So so yes. So so so I think it's like
+[68:00.72]  from the user perspective right like
+[68:03.44]  when the model spend more time exploring
+[68:06.72]  different potential answers thinking
+[68:08.56]  longer it can give you much better final
+[68:10.96]  answers but the base model itself does
+[68:14.56]  not change.
+[68:16.08]  >> Awesome.
+[68:16.40]  >> Does it make sense? Yes.
+[68:17.44]  >> Yes. Absolutely. Uh that is a good
+[68:19.84]  correlary to uh to Ben man's point.
+[68:23.60]  >> Yeah. Chip, we covered a lot of ground.
+[68:25.76]  I've gone through everything I was
+[68:27.12]  hoping to learn and more. Before we get
+[68:29.28]  to our very exciting lightning round, is
+[68:30.80]  there anything else that you wanted to
+[68:32.16]  share? Anything else you want to leave
+[68:33.44]  listeners with?
+[68:34.40]  >> So, I do work at a few companies that
+[68:36.24]  does this things of like they want
+[68:38.16]  employees to like come up with ideas.
+[68:40.48]  So, there's a big debate on like what is
+[68:42.48]  a better way for a strategy, right?
+[68:44.08]  Should it be top down or like bottom up,
+[68:46.24]  right? Should like executive come up
+[68:48.00]  with like one or two like killer use
+[68:49.92]  case and like everyone like allocate
+[68:51.60]  resource to that or like should you give
+[68:53.52]  engineers and PMs and smart people like
+[68:56.08]  come up with ideas and I think it's a
+[68:58.16]  mixture of both. So, so some companies
+[68:59.68]  it was like okay we hire a bunch of
+[69:01.28]  smart people like let's see like what
+[69:03.44]  they come up with and they they organize
+[69:05.20]  like hackathons or like internal
+[69:07.60]  challenge to get people to to build
+[69:09.84]  product and one things that um I noticed
+[69:13.12]  is like a lot of people just like don't
+[69:14.80]  know what to build uh and it shocked me
+[69:17.44]  like why I feel like we are in some kind
+[69:19.28]  like an idea crisis right now we have
+[69:21.44]  all this really cool tools to have you
+[69:23.44]  like do everything from scratch I can
+[69:25.04]  have you like design it can have you
+[69:26.72]  like write code it can have build
+[69:28.32]  website. So in theory we should see a
+[69:30.56]  lot more but at the same time people are
+[69:32.24]  like somehow stuck like they don't know
+[69:34.56]  what to build and and I think it's like
+[69:37.12]  maybe a lot of had to do with like maybe
+[69:39.12]  like um society expectations because
+[69:41.92]  like we have gone through uh we have
+[69:44.00]  gone into this phase of like
+[69:45.44]  specializations like people like uh very
+[69:47.68]  highly uh specialized and people are
+[69:50.40]  supposed to do like focus on one thing
+[69:52.24]  really well instead of like a big
+[69:53.68]  picture and we don't have a big picture
+[69:55.04]  of you. it's hard to come up with like
+[69:56.72]  ideas of what to build. So, so I know
+[69:59.28]  what like uh when when I work with this
+[70:00.96]  company on this hackathon like we do
+[70:02.56]  work out like a how come up with a
+[70:04.08]  guideline like how to come up with ideas
+[70:06.08]  and usually what we think of is like
+[70:07.60]  okay like one tip is like go look from
+[70:10.56]  the last week right like for a week just
+[70:13.04]  like pay attention to what you do and
+[70:14.40]  what frustrate you and when something
+[70:16.24]  frustrate you think about like is there
+[70:18.72]  anything we can do
+[70:20.96]  is there like can you be done a
+[70:22.48]  different way so it's not frustrating
+[70:24.08]  and you can talk like people can swap
+[70:25.92]  accept notebooks or teams and if you see
+[70:28.00]  common frustrations maybe just something
+[70:30.00]  you can think about like just to build
+[70:31.52]  something around that. So yeah so I feel
+[70:33.12]  like um just like notice like how we
+[70:35.36]  work uh thinking of like ways to like
+[70:37.20]  constantly ask questions like how can be
+[70:39.20]  better and then I just build something
+[70:41.68]  to like address the frustrations. I
+[70:43.52]  think it's a good way to just like learn
+[70:44.80]  and adopt AI.
+[70:46.32]  >> I think people have felt exactly what
+[70:48.16]  you're describing every time they open
+[70:49.52]  up one of these vibe coding tools where
+[70:51.20]  they could just describe anything you
+[70:52.56]  want. I'm like I don't know what do I
+[70:54.00]  want? And and I love this very tactical
+[70:56.56]  piece of advice, just like what
+[70:57.60]  frustrates you, just pay attention to
+[70:59.04]  where you're frustrated. For example, I
+[71:01.36]  just built a very cool little VIP coded
+[71:03.20]  app. I was working on a newsletter post
+[71:05.60]  inside Google Docs and I I pasted all
+[71:09.12]  these images into the Google Doc from
+[71:11.20]  screenshots and stuff and and then I
+[71:13.04]  forgot, oh yeah, you can't take images
+[71:14.40]  out of Google Docs. It's like this Hotel
+[71:16.24]  California experience where you can
+[71:17.60]  paste stuff into it. Very hard to get
+[71:19.28]  images back out. So, I just went to all
+[71:21.44]  the VIP coded tools and just build an
+[71:23.44]  app that I can give you a Google doc URL
+[71:25.68]  and it let me download all the images
+[71:27.36]  automatically and it worked amazingly
+[71:29.20]  well and it made it really cute and I'll
+[71:30.72]  I'll link to it in the show notes.
+[71:32.40]  >> Oh, I would love to see that. I do I'm
+[71:34.00]  very bullish on like using AI just
+[71:35.60]  create like micro tools like just
+[71:37.60]  something just like make your life a bit
+[71:39.68]  easier
+[71:40.48]  >> and 100%. I feel like that's one of the
+[71:42.64]  main ways people are using these tools
+[71:44.08]  just like a little niche problem they
+[71:46.32]  have. With that, Chip, we've reached our
+[71:48.88]  very exciting lightning round. I've got
+[71:51.36]  five questions for you. Are you ready?
+[71:54.96]  >> Yeah. Always. No. No. Uh, depends on how
+[71:56.88]  hard the questions are.
+[71:58.32]  >> They're very consistent across every
+[72:00.72]  guest. So, uh, I imagine you've heard
+[72:02.96]  them before. First question, what are
+[72:04.72]  two or three books that you find
+[72:06.48]  yourself recommending most to other
+[72:09.04]  people? O I'm really terrified of like
+[72:12.40]  book recommendations because I feel like
+[72:14.40]  what books a person should read really
+[72:15.76]  depends on what they want and where they
+[72:17.12]  in life and where they want to get to.
+[72:18.96]  Uh but there's several books that I do
+[72:20.72]  think is really change the way I think
+[72:23.44]  and see the world. So one thing is a
+[72:25.12]  selfish gene that's like understand uh
+[72:27.52]  it actually changed uh it actually
+[72:29.84]  helped me with the question like whether
+[72:31.12]  I want to have kids or not. uh because
+[72:33.28]  it's like uh understanding more of like
+[72:36.16]  um yeah a lot of our functions of way we
+[72:39.52]  operate is the functions of our genes uh
+[72:42.08]  and genes want to do one thing was like
+[72:44.00]  to procreate uh so so yes in a little
+[72:47.28]  way but I like the book also proposed
+[72:49.20]  another thing it's like um so everyone
+[72:51.12]  wants to live forever right now and
+[72:52.40]  maybe it's not like consciously but
+[72:54.96]  subconsciously we do we do want that and
+[72:57.36]  and I said two ways like one is like by
+[72:59.60]  genes like genans wants just like want
+[73:01.60]  to continue forever But also there are
+[73:03.12]  two ideas. Um I think there's something
+[73:05.04]  going meme. Uh it's like being a boy if
+[73:07.12]  you have some ideas out there and then
+[73:08.32]  it's like last for a long time. That's
+[73:09.68]  the one you like live on. I know it's
+[73:11.52]  like it's a little bit like um abstract
+[73:14.56]  but I thought it's very interesting. The
+[73:16.24]  other books I really really like. It's
+[73:18.16]  like from like u the book from um
+[73:20.40]  Singaporean um previous um I think he's
+[73:24.32]  known as the father of Singapore. I know
+[73:26.08]  like Limi Guango I'm not so sure what's
+[73:28.00]  the title it but like he did so he was
+[73:29.52]  the one who led Singapore from uh he
+[73:32.00]  changed uh Singapore from a third
+[73:34.40]  country to a forceful country within 25
+[73:36.32]  years and I have never seen any country
+[73:39.68]  leaders spend so much effort into like
+[73:41.76]  pushing down his thought on like how to
+[73:44.16]  build a country uh like like that um
+[73:47.36]  yeah I talk a lot about like public
+[73:48.96]  policy like how to like create policies
+[73:51.44]  that encourage people to do the right
+[73:54.08]  thing that is good for the nation And
+[73:55.68]  also talking about like uh foreign
+[73:57.68]  affairs, foreign policies like the
+[74:00.24]  relation of like the country with other.
+[74:01.84]  So it's a really good book to think
+[74:03.68]  about. For me it's like system thinking
+[74:05.76]  but like it's a different kind system
+[74:07.28]  which is country which a lot of us don't
+[74:08.96]  get a chance to like ever experiment in
+[74:10.72]  our life. So it's good to learn about
+[74:12.32]  that.
+[74:12.88]  >> What was the name of that second book?
+[74:14.64]  >> Uh it's called like from third to first
+[74:17.44]  world fashion. I think I have it
+[74:18.80]  somewhere here. Yeah,
+[74:20.72]  >> there it is. Show and tell. That's
+[74:23.12]  that's awesome. I definitely want to
+[74:24.32]  read that. That's a really good tip.
+[74:25.68]  I've heard a lot about just the impact
+[74:26.96]  he's had and I've seen all these videos
+[74:28.24]  on Twitter of just his really wise
+[74:30.40]  insights into how to build a thriving
+[74:32.48]  society and clearly
+[74:34.48]  >> believe like how does he have time to
+[74:36.16]  write is such a thick book. It's like
+[74:38.48]  insane.
+[74:39.60]  >> That is Claude. Please summarize. I'm
+[74:41.84]  just joking. Uh by the way, selfish. I
+[74:44.24]  also absolutely love that book. That is
+[74:45.60]  such a good choice. It's such an under
+[74:46.88]  the radar kind of book that really
+[74:48.96]  changed the way I see the world as well.
+[74:50.80]  Uh so really good pick. Okay, next
+[74:52.96]  question. Do you have a favorite recent
+[74:54.40]  movie or TV show you really enjoyed?
+[74:56.32]  >> So I watch a lot of movie and TV shows
+[74:58.40]  as a research uh because I I working on
+[75:01.28]  my first novel and I recently uh sold
+[75:03.76]  it. So I'm interesting like what makes
+[75:05.92]  So it's a drama. It's not a science
+[75:07.36]  fictions or uh anything that like tech
+[75:10.48]  people usually read. So it's it's very
+[75:12.72]  like I know it's a very um out of the
+[75:14.80]  left field out of left field and like
+[75:16.56]  very um so like reading watching TV to
+[75:20.00]  see like what kind of stories become
+[75:22.88]  popular trying to understand the trope
+[75:24.88]  and and stuff like that. So I'm not sure
+[75:26.48]  if the audience like
+[75:28.24]  >> well what's one what's one that taught
+[75:29.92]  you something about writing?
+[75:31.60]  >> I think it like uh Yami Palace is a
+[75:35.52]  Chinese TV show.
+[75:37.36]  >> Cool. Okay. I haven't that one on the
+[75:39.92]  podcast before. Okay. Yeah.
+[75:42.00]  >> Next question. Do you have a life motto
+[75:44.72]  that you often think about come back to
+[75:47.52]  when you're dealing with something hard
+[75:49.36]  whether it's in work or in life?
+[75:51.36]  >> This sounds very nihilist. I think so.
+[75:53.92]  Say it's like in the end nothing really
+[75:55.52]  matters. Uh usually think of like in the
+[75:57.28]  grand scheme of thing like in a billion
+[75:58.72]  years nothing will like no one would
+[76:01.84]  ever be there. I think okay some people
+[76:03.76]  argue with me about that. So I go to
+[76:05.28]  like I so my theory is like in a billion
+[76:07.44]  years like none of us would ever exist
+[76:09.28]  like so like whatever like messy things
+[76:11.92]  like crazy things we do or like how bad
+[76:14.24]  we do it I mean no one would be remember
+[76:17.20]  wouldn't be there to remember it and I
+[76:19.36]  think in a way it's like it sounds scary
+[76:21.44]  but it's very liberating because it just
+[76:23.52]  allows me okay let's just try things out
+[76:25.52]  right like why does it matter and there
+[76:27.76]  a story of like recently um so we have
+[76:30.16]  some family member who passed away
+[76:31.68]  recently and I was talking to my that
+[76:35.12]  because I couldn't be home for that. I
+[76:36.80]  was asking my dad like okay is there
+[76:38.00]  anything I can do to make the person
+[76:40.08]  like oh something like comfort anything
+[76:43.20]  you can get that person and my dad was
+[76:45.44]  just like what can he possibly want at
+[76:48.24]  this moment like and this made me real
+[76:49.92]  like at the end of life like there's
+[76:51.28]  nothing that can bring you like like
+[76:53.68]  material can bring you joy there's no
+[76:55.36]  like money no product nothing and in a
+[76:58.00]  way feel like okay what really do I
+[77:00.64]  really care about at the end of the day
+[77:02.96]  um so I guess it's like I think about it
+[77:04.56]  if it's like okay maybe I fail it maybe
+[77:06.40]  don't get the contract maybe things like
+[77:08.16]  in but in the end at the end of life
+[77:09.84]  like I don't think that actually really
+[77:11.84]  matters so in a way it's like it's quite
+[77:14.16]  liberating
+[77:15.28]  >> uh I know you said it might be
+[77:16.48]  nihilistic this is what Steve Jobs
+[77:18.08]  shared too in one of his most famous
+[77:19.52]  speeches just we will all die someday so
+[77:22.24]  don't take things so seriously
+[77:24.88]  and it is freeing absolutely it just
+[77:26.96]  makes you appreciate every moment every
+[77:28.48]  day you have just like yeah let's just
+[77:30.24]  do something hard and scary okay final
+[77:32.88]  question you talked about how you're
+[77:34.32]  writing a novel most people in tech uh
+[77:37.68]  have never written something creative
+[77:39.60]  and fiction. What's just like one thing
+[77:41.68]  you learned in the process about how to
+[77:43.76]  write better stories, better fiction?
+[77:46.16]  >> A lot of time when we read uh we get
+[77:48.40]  trip up by some small things. So I think
+[77:51.28]  like I I want to do [ __ ] writing because
+[77:53.20]  I just want to go a better writer and I
+[77:55.12]  thought like maybe try my like a
+[77:57.20]  different audience could help me like
+[77:59.12]  become better like anticipating what
+[78:01.68]  this different type of audience would
+[78:03.28]  want to hear and like like what they
+[78:05.20]  care about. So this is a way for me to
+[78:06.80]  get a so I think about writing or like
+[78:08.88]  even like any kind of like content
+[78:10.48]  creations is about like predicting the
+[78:13.28]  users's reactions right
+[78:16.00]  >> just kidding.
+[78:17.12]  >> Yeah. So, so like you do a podcast, it's
+[78:18.96]  like okay, what kind of things that the
+[78:21.12]  users could find engaging, right? And
+[78:23.44]  and I find this like a little bit like
+[78:25.12]  uh in a lot of companies like you have
+[78:26.56]  like launch a product, you have a
+[78:27.76]  narrative coming out, okay, what kind do
+[78:29.92]  we position this product in a way that
+[78:32.32]  like users would want, right? So, I feel
+[78:34.24]  like I have done technical writing for a
+[78:35.76]  while and I felt like I have had some
+[78:38.80]  experience like trying to predict what
+[78:41.76]  engineers would want to hear all care
+[78:44.48]  about. But then I don't have an
+[78:46.24]  experience like this completely
+[78:47.84]  different type of audience. So that's
+[78:49.52]  what I want you to like career writing
+[78:51.12]  creating a story and that's why I was
+[78:53.28]  doing a lot of research on like watching
+[78:54.64]  I mean going research enjoy a lot like
+[78:56.88]  watching a lot of dramas. I just see
+[78:58.32]  like what what people like. Um so so one
+[79:00.72]  things that I care about is just like I
+[79:02.32]  think I learned is like what like
+[79:03.52]  emotional journey was from my editor,
+[79:05.28]  right? So like when we write something
+[79:07.28]  we we care about like how users would
+[79:09.36]  feel like across the the story like we
+[79:12.56]  want something in the beginning, right?
+[79:13.68]  We want something just like we need to
+[79:15.92]  have a hook so that people continue
+[79:17.52]  reading. But we also don't want too much
+[79:19.44]  of like drama because we'll get like too
+[79:21.92]  tired, right? like uh because like the
+[79:24.16]  emotionally exhausted like because it's
+[79:26.24]  like you're being like emotionally
+[79:28.00]  manipulated like a lot of time. So it
+[79:30.32]  give like emotional emotional journey
+[79:32.40]  maybe have like some some climax or like
+[79:34.24]  some something more chill or like maybe
+[79:36.08]  like I so care about another things I I
+[79:38.16]  didn't realize like for me for for
+[79:40.64]  technical writing you entirely focus on
+[79:42.80]  the content like the argument is very
+[79:44.48]  impersonal right like it it like for
+[79:46.72]  example like people like ML compilers
+[79:49.04]  like doesn't matter if they like the
+[79:51.36]  person telling them about compiler or
+[79:53.68]  not right because it's just like
+[79:54.88]  objective like like but like for for
+[79:57.36]  novel people care about like character
+[79:58.96]  likability
+[80:00.00]  So, so like in in the first version is
+[80:01.92]  my story and makes the characters like a
+[80:04.00]  little bit more like uh very uh very
+[80:07.04]  logical, very rational and just does
+[80:09.28]  everything just like very rationally.
+[80:11.20]  And then the feedback I got is I have a
+[80:12.80]  very good friend read it and he was he's
+[80:14.24]  a amazing person. He's a great person
+[80:16.24]  and he was like chip I be honest you I
+[80:18.24]  hate that person. So it doesn't matter
+[80:19.92]  as a story. It's just like the person is
+[80:21.68]  so unlikable. So let's say he doesn't
+[80:23.52]  find so is a second version and makes a
+[80:26.00]  person the character more likable like
+[80:28.08]  what how she makes that character more
+[80:29.92]  likable is that you put in some
+[80:31.20]  vulnerability like sometime that okay
+[80:32.96]  maybe a person like has setback because
+[80:34.80]  some people can relate to it. See in a
+[80:36.72]  lot of ways it's like it's very
+[80:38.32]  interesting. It's like a lot of it is
+[80:39.84]  like um yeah, a lot of it is it's about
+[80:42.64]  like understand the emotional bits uh
+[80:44.88]  like how the users feel not just about
+[80:47.52]  the story but also about the characters.
+[80:50.24]  >> That is so interesting. Wow, I learned a
+[80:52.96]  lot more there than I thought. That was
+[80:54.48]  awesome. Really good example. Chip, two
+[80:56.80]  final questions. Where can folks find
+[80:58.56]  you online if they want to reach out and
+[81:00.32]  maybe work with you or uh maybe even
+[81:02.64]  just share the stuff that you offer if
+[81:04.40]  folks want to reach out? And then how
+[81:06.56]  can listeners be useful to you? I'm like
+[81:08.72]  I'm on social media, LinkedIn, Twitter.
+[81:11.28]  I don't post a lot, but I keep telling
+[81:13.36]  myself that I should do more because I
+[81:15.36]  kind like the conversation with uh with
+[81:17.76]  um with with readers. Uh so I'm actually
+[81:20.00]  about to start a a SL a subspect. Um so
+[81:24.24]  I have like a placeholder for subspect
+[81:26.16]  right now and I'm thinking of doing it
+[81:27.52]  for more system thinking because I think
+[81:29.12]  it's a very interesting skill. Um and so
+[81:31.92]  like thinking of doing a YouTube channel
+[81:33.52]  on book reviews and basically books that
+[81:35.84]  help you think better. So I think it's
+[81:38.24]  the first book I'm going to review is
+[81:39.36]  probably like this book because it's
+[81:40.96]  like my favorite book growing up. Uh and
+[81:42.72]  I have been like keep on reading it. Uh
+[81:44.88]  so yes. So how can it be helpful like
+[81:48.00]  send me books that you like uh books
+[81:50.80]  that have you have changed the way you
+[81:54.56]  think or change you the way you do
+[81:57.76]  anything. So, I would appreciate it.
+[82:00.32]  >> Amazing. I'm I'm excited to read that
+[82:02.08]  book.
+[82:03.04]  >> Uh, Chip, thank you so much for being
+[82:04.72]  here.
+[82:05.44]  >> Thank you so much, Lenny, for having me.
+[82:07.60]  >> Bye, everyone.
+[82:11.12]  Thank you so much for listening. If you
+[82:12.80]  found this valuable, you can subscribe
+[82:14.32]  to the show on Apple Podcasts, Spotify,
+[82:16.80]  or your favorite podcast app. Also,
+[82:19.44]  please consider giving us a rating or
+[82:21.28]  leaving a review as that really helps
+[82:23.20]  other listeners find the podcast. You
+[82:25.44]  can find all past episodes or learn more
+[82:27.60]  about the show at lennispodcast.com.
+[82:30.72]  See you in the next episode.

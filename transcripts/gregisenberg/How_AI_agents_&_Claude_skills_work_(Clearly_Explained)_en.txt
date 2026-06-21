@@ -1,0 +1,1070 @@
+Title     : How AI agents & Claude skills work (Clearly Explained)
+Video ID  : S_oN3vlzpMw
+URL       : https://www.youtube.com/watch?v=S_oN3vlzpMw
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1061
+Saved at  : 2026-06-21 01:53:57
+------------------------------------------------------------
+
+[00:00.00]  Ross, Mike, welcome back to the pod. By
+[00:01.92]  the end of this episode, what are people
+[00:03.48]  going to learn?
+[00:04.20]  >> I hope I'm going to share some wisdom on
+[00:06.56]  how you can use the agents better.
+[00:08.52]  There's a lot of information going on
+[00:10.52]  right now. I disagree with most of it,
+[00:13.16]  and that's what we're going to talk
+[00:14.20]  about. So, at the end, whether you're
+[00:15.60]  building something, [music] using an
+[00:17.08]  agent for some sort of work, you have
+[00:19.20]  the best outcome possible.
+[00:20.56]  >> And is this going [music] to be a
+[00:21.20]  technical dive or, you know,
+[00:23.76]  non-technical person can
+[00:25.40]  >> Anyone can watch this. There's going to
+[00:26.76]  be a lot of diagrams. That's all.
+[00:28.82]  >> [laughter]
+[00:29.24]  >> You're going to make it clear to
+[00:30.24]  understand the concepts, right?
+[00:31.84]  >> Easy.
+[00:32.32]  >> Okay.
+[00:33.12]  >> Basics.
+[00:33.12]  >> Let's go.
+[00:33.88]  >> So,
+[00:37.99]  >> [music]
+[00:42.64]  >> the first thing that I want to announce,
+[00:44.76]  previous episodes, we probably disagree
+[00:46.92]  with this point, but now
+[00:48.64]  what's true is the models are good.
+[00:50.60]  The models are exceptionally good. Opus
+[00:52.64]  4.6 is amazing. GPT 5.4 is amazing. I
+[00:55.68]  know there's like two sets of camp
+[00:56.96]  where, especially when it comes to
+[00:58.48]  programming, people are like, "Oh, Opus
+[01:00.00]  is the better UI designer. GPT 5.4 is
+[01:02.56]  the better back end." Generally
+[01:04.60]  speaking, we've reached a point We're
+[01:06.28]  not at AGI yet. Well, we reached a point
+[01:08.20]  where the models are good.
+[01:10.16]  But, context still matters, and you have
+[01:13.28]  the power to steer the models in a
+[01:15.36]  direction where you can get quality or
+[01:17.00]  you can get slop. And that's what I
+[01:19.36]  really want to talk about. But, before
+[01:21.68]  we get into all that, and feel free to
+[01:22.92]  cut me off cuz this topic excites me. Um
+[01:25.40]  we need to learn how context works. And
+[01:28.60]  context is the model assembling
+[01:31.76]  information that it needs to execute an
+[01:33.88]  action. And the way the context is
+[01:36.00]  assembled, let's say in a coding agent,
+[01:37.60]  but really in any sort of agent, is
+[01:40.00]  there's this general system prompt,
+[01:41.72]  usually by the model provider. So, for
+[01:43.64]  example, Claude code leaked recently,
+[01:46.36]  and one of the cool things that, um
+[01:48.28]  especially as a developer, I got to do
+[01:49.60]  is I got to read the system prompt. So,
+[01:51.44]  they have this general system prompt
+[01:52.92]  that guides the model on how to act,
+[01:54.88]  what to do, what not to do. The system
+[01:56.88]  prompt is very important. And then you
+[01:58.88]  have a lot of people have agent.md files
+[02:01.36]  or cloud.md files. Now, I'm just going
+[02:03.36]  to say off rip,
+[02:04.84]  95% of people don't need this.
+[02:07.32]  The reason being is, again, you have to
+[02:09.60]  assume that the models are already good,
+[02:12.12]  right? Now, imagine I told you, Greg,
+[02:14.84]  every time we're about to shoot a
+[02:15.72]  podcast, Greg, you need a microphone.
+[02:19.16]  You know you need a microphone, right?
+[02:20.28]  You've done this plenty of times, right?
+[02:21.84]  So, if I'm building, like, let's say a
+[02:24.36]  website with, uh, cloud code, and I'm
+[02:27.52]  telling cloud code, "This code base uses
+[02:29.68]  React." I don't need to, because it has
+[02:32.12]  the code base in context. It can check
+[02:33.96]  the code, right? So, there is this
+[02:36.24]  disparity where a lot of people are
+[02:38.80]  putting a lot of onus on the harness and
+[02:41.00]  the context building, and I'm low-key
+[02:43.72]  starting to strip things off. Like, I'm
+[02:45.80]  going super, super minimal, because,
+[02:48.04]  again, not to sound like a Anthropic or
+[02:50.36]  OpenAI shill. Unfortunately, I have not
+[02:52.04]  been acquired. None of them are paying
+[02:53.92]  me.
+[02:54.80]  Um, but the models are really, really
+[02:56.16]  good.
+[02:57.16]  >> Wait, so 95% of the time I don't even
+[02:59.60]  need a bot bother with an agent.md file?
+[03:02.08]  >> You don't. Like, it unless this is some
+[03:03.92]  sort of proprietary information.
+[03:05.92]  >> Yeah, what is the 5% of of time I should
+[03:08.04]  care about it?
+[03:08.52]  >> Proprietary information that, like,
+[03:10.52]  maybe specific to your company or some
+[03:12.48]  methodology that is specific to you that
+[03:14.80]  has to be referenced in every single
+[03:16.96]  conversation, cuz the annoying part with
+[03:18.60]  an agent.md file is every time you go
+[03:21.00]  back and forth with the agent, it's
+[03:22.88]  added in the context, right? The cool
+[03:25.44]  thing about skills, and I'm going to
+[03:26.64]  talk about skills in a second, the way
+[03:28.60]  skills are designed, the skills are used
+[03:32.68]  in a way that's called progressive
+[03:34.16]  disclosure, meaning, when you have a
+[03:35.84]  skill file, the entire thing isn't added
+[03:37.88]  to context. It's just the title and the
+[03:39.96]  description. So, the agent has the title
+[03:42.92]  and description in the context, and when
+[03:45.16]  you, let's say you have a notion report
+[03:47.28]  skill, right? And you tell your agent,
+[03:49.16]  "Hey, I want you to create a notion
+[03:50.88]  report." It's then going to check its
+[03:53.16]  context and be like, "Oh, I have this
+[03:55.00]  skill. Let me check out the entire
+[03:57.20]  document." So, it's not in the context,
+[04:00.08]  what's in the context is the name and
+[04:02.08]  the description, but that's enough for
+[04:04.00]  the agent to be like, "Oh, this is a
+[04:05.24]  skill I need. Let me go use it." Which
+[04:07.32]  is fantastic. I'm a skills maxi, and I'm
+[04:09.96]  going to show later in the episode like
+[04:11.92]  how you craft the perfect skills. But,
+[04:14.08]  with agent.md and claw.md files, its
+[04:16.84]  context being added at every turn,
+[04:19.24]  right? So, let's say you have like a
+[04:20.68]  thousand line file claw.md, and let's
+[04:24.28]  say that's like 7,000 tokens. You're
+[04:26.40]  spending 7,000 tokens on every run. Now,
+[04:29.84]  do you need to? Most likely not. It
+[04:32.24]  probably should be a skill, but if you
+[04:33.84]  have some sort of company proprietary
+[04:35.92]  information, or like there's something
+[04:37.88]  specific that you do that the model
+[04:40.04]  needs to know at every single turn, then
+[04:41.92]  you use it. The thing is 95% of people
+[04:44.92]  don't have that, right? So, I'm not a
+[04:47.44]  fan unless that's the case. So, and and
+[04:50.44]  and the reason being is we're wasting
+[04:52.16]  tokens, right? It's in every single
+[04:55.16]  turn.
+[04:56.16]  But, this is where the beauty of skills
+[04:57.56]  come. Um I'll show my screen here.
+[05:00.84]  The your skill, again, this is not like
+[05:02.92]  word for word how it looks, but a skill
+[05:05.36]  basically looks like this. There is a
+[05:07.80]  name, there is a description,
+[05:10.68]  and then underneath
+[05:12.44]  is a bunch of information. I'm going to
+[05:14.60]  put bunch of info.
+[05:16.88]  What When you create a skill.md file,
+[05:19.88]  what gets added into the context is
+[05:22.52]  actually just the name and the
+[05:23.60]  description,
+[05:24.92]  right? The bunch of info doesn't get
+[05:27.40]  added. So, imagine you have two
+[05:29.72]  sentences versus an agent.md that has
+[05:32.48]  like a thousand lines that get added
+[05:34.48]  into the context. We're talking
+[05:36.00]  thousands of tokens compared to a couple
+[05:38.24]  hundred. And the agent only gets the
+[05:40.80]  bunch of info when it realizes it needs
+[05:43.52]  this skill. So, if I have, let's say, a
+[05:46.44]  certain way of generating a report, a
+[05:48.12]  certain way of structuring my code,
+[05:50.36]  why would I put that in the agent.md
+[05:52.16]  file when I can have the agent call on
+[05:55.20]  it progressively when it needs it,
+[05:57.20]  right? So, this is why skills are
+[05:59.80]  honestly, like I'm a shill, I'm a maxi,
+[06:02.36]  but people do it wrong and I'm going to
+[06:03.92]  share the right way on how do we create
+[06:06.00]  skills. So, so far we have the system
+[06:08.28]  prompt, the agent.md, the skills, and
+[06:10.96]  then we have the tools, right? So, if
+[06:12.24]  you're using cloud code, there's already
+[06:14.04]  built-in tools that read tool or write
+[06:15.68]  tool. Like there's many tools that it
+[06:17.68]  uses. This has to be added into the
+[06:19.20]  context because the model the model
+[06:21.64]  doesn't call the tools. It like it's the
+[06:23.52]  agent harness around it that allows it
+[06:25.16]  to call the tools.
+[06:26.56]  And then in this case, we also have our
+[06:28.28]  code base, right? Like whatever if we're
+[06:30.08]  building a web app, a mobile app. I know
+[06:32.24]  most people here won't care for the
+[06:33.52]  specific framework and honestly, we're
+[06:35.36]  getting to a point if you're not
+[06:36.44]  technical, you really shouldn't.
+[06:38.80]  Um and then we have the user
+[06:40.12]  conversation. So, this is what
+[06:42.56]  the complete context window is filled
+[06:44.40]  with, right? And this can total up to
+[06:47.04]  let's say like at the beginning this
+[06:48.92]  could be like 20,000 tokens and as the
+[06:51.68]  conversation continues to grow, you
+[06:53.84]  might reach your limit of 25 250,000
+[06:56.60]  tokens and that's when you see both
+[06:59.12]  cloud code and open AI codex they
+[07:01.08]  they'll compact, right? So, beautiful so
+[07:03.32]  far, right? This is how context works.
+[07:06.28]  Why skills are important and how you
+[07:08.12]  should generate skills.
+[07:10.52]  Let's say I have a specific workflow.
+[07:12.40]  For example, for my YouTube channel, you
+[07:14.16]  know, we're at a point right now Greg
+[07:16.52]  where we get sponsors now. Crazy. When I
+[07:18.80]  first joined this not when I first came
+[07:20.84]  to the pod not a thing. We get sponsors
+[07:22.68]  now. It was just your mom sponsoring the
+[07:23.84]  channel. Yeah, yeah, yeah, it was just
+[07:24.84]  her showing love, feeding me. Uh but now
+[07:27.64]  we get sponsors. I get a lot of emails
+[07:29.48]  and some are good, some are bad and it's
+[07:32.20]  a lot of time I'm sure you're aware to
+[07:33.76]  comb through and to check. So, I have an
+[07:36.24]  open cloud agent that has its own email,
+[07:39.40]  right? I I I have it I don't I given it
+[07:41.32]  access to my email, uh cuz there's like
+[07:43.84]  attack vectors and I've been hacked
+[07:45.16]  before, so I'm very careful with these
+[07:46.80]  things, but it has its own email. And
+[07:49.16]  every time I get an email from like a
+[07:50.64]  sponsor, I forward that email to the
+[07:53.72]  agent. Now, the first time I told my
+[07:56.60]  Open Cloud agent, "I'm going to forward
+[07:57.84]  you emails. Check every 15 minutes when
+[08:00.16]  you have an email.
+[08:01.60]  Um and when you check the email, do
+[08:02.84]  research on the sponsor and tell me if
+[08:04.36]  they're worth it."
+[08:05.76]  That's all I told the agent.
+[08:07.76]  Every sponsor email I sent it, it was
+[08:09.40]  like legit, legit, legit, perfect,
+[08:11.92]  perfect, perfect. There was no like the
+[08:15.36]  There was no rejection. There's no this
+[08:16.80]  is bad or these guys are a scam or this
+[08:18.60]  product's not good. Like there was no
+[08:20.32]  deep research being done by it. So, then
+[08:22.44]  I realized, "Huh, okay. The model needs
+[08:25.24]  a step-by-step guide."
+[08:27.76]  This is when I create a skill. But
+[08:29.68]  here's the problem. A lot of people will
+[08:32.56]  I'll just write it down here will
+[08:34.08]  identify
+[08:35.64]  uh identify they have a workflow, right?
+[08:38.72]  You have some sort of workflow. And then
+[08:40.52]  they'll jump to create the skill right
+[08:41.84]  away.
+[08:43.00]  This is the Let me click hide here. This
+[08:46.28]  is the worst thing you can do. I'm just
+[08:47.92]  going to draw arrows to signify
+[08:50.40]  that this is bad. You don't do these.
+[08:52.72]  And the reason why you don't do this is
+[08:55.84]  imagine
+[08:57.80]  you hire an employee or you're mentoring
+[08:59.44]  somebody.
+[09:00.68]  Um correct me if I'm wrong.
+[09:02.64]  You're probably going to tell them what
+[09:05.20]  to do.
+[09:06.56]  And if they ask you questions on how to
+[09:08.04]  do it, you'll help them. You would
+[09:10.00]  ideally like them to fail and then you
+[09:12.28]  want to then tell them, "No, this is how
+[09:13.72]  you do it." Like there needs to be some
+[09:15.64]  sort of experiential learning. The way
+[09:17.80]  I've been creating skills, Greg, and I
+[09:19.76]  have like a 100% hit rate now when I
+[09:21.44]  tell my agent to do something specific
+[09:23.76]  is I actually walk with it step-by-step
+[09:26.92]  on doing the workflow. So, in the case
+[09:29.08]  of my YouTube uh analysis, I told the
+[09:32.56]  agent, "Okay, I just sent you an email.
+[09:34.20]  Tell me about the company." Company's
+[09:35.80]  this, this, that, and that. Okay, their
+[09:37.60]  Twitter, check their YouTube, check
+[09:39.48]  their Trustpilot, check if they raised
+[09:41.32]  any money. If two of these are have not
+[09:44.84]  If two of these don't exist or not in
+[09:46.28]  good standing, automatic rejection. It
+[09:48.80]  checked and it was like, "You're
+[09:49.60]  absolutely right." I was using Opus.
+[09:51.76]  Um these uh this is not a good company.
+[09:54.80]  And then it would just we would We have
+[09:56.60]  a spreadsheet in Google Sheets. It'd be
+[09:58.56]  like, "No contact."
+[09:59.84]  >> It's so frustrating too, right? Cuz
+[10:01.36]  you're like you give it a task and it
+[10:04.76]  seems like so binary, like right or
+[10:06.60]  wrong. And then when you tell it, "Hey,
+[10:09.72]  like why didn't you look at the
+[10:10.96]  Trustpilot? Why didn't you see if
+[10:12.56]  they've raised money?" "You're
+[10:13.92]  absolutely right."
+[10:15.00]  >> absolutely
+[10:15.52]  >> It's like, "What?"
+[10:17.16]  >> And And the thing is the reason why this
+[10:18.76]  is the case is the models uh actually
+[10:22.08]  don't think. They're predictors of
+[10:24.12]  tokens, right? So, when you give it
+[10:26.32]  English, when I give it English, it maps
+[10:27.88]  it on this vector graph and then it
+[10:29.72]  looks for the closest resemblance and it
+[10:31.44]  says, "This is the response," right? So,
+[10:33.48]  when you say, "What is the capital of
+[10:34.84]  France?" It maps it again on this graph
+[10:37.12]  and it says, "Oh, Paris is pretty close
+[10:38.52]  by." Then it gives you Paris. It has no
+[10:40.88]  It doesn't think. It doesn't understand.
+[10:42.92]  It feels like it understands. It feels
+[10:44.60]  like it thinks. Heck, it even feels like
+[10:46.44]  it has emotion. That's because it's been
+[10:48.20]  trained on so much data. But it actually
+[10:50.68]  does not know how to think. And this is
+[10:52.28]  where a lot of people be frustrated um
+[10:55.40]  with like, "Why is it not understanding
+[10:56.80]  me?" You have to walk with it. So, I
+[10:59.28]  told it, "Okay, this is how you
+[11:00.32]  research." And it's like, "Okay." It
+[11:01.88]  researches. And guess what? This is part
+[11:03.24]  of the context. And I'm like, "Okay, now
+[11:05.00]  that you're done researching, when it's
+[11:06.56]  a good company, these are the qualities
+[11:08.12]  you look for. And then when it's really
+[11:09.96]  good, send me an email."
+[11:12.12]  And then once we had a successful run
+[11:14.16]  and we did it again and again, then I
+[11:16.80]  converted it to a skill.
+[11:18.64]  Or the reason being is a lot of people
+[11:20.28]  create the skills themselves or I I
+[11:21.96]  mean, they'll use the AI to create the
+[11:23.28]  skill, but it doesn't have the context
+[11:25.24]  on what a successful run looks like.
+[11:27.32]  Right? Cuz most of the time, especially
+[11:28.56]  if you're using Open Claw, it's probably
+[11:30.16]  going to fail at the API call. It's
+[11:32.00]  probably going to call the data wrong.
+[11:33.80]  Like there's so many places it's going
+[11:35.28]  to get wrong and I see a lot of people
+[11:36.56]  saying, "It's just so frustrating. This
+[11:38.08]  is terrible technology. Why doesn't it
+[11:39.60]  work?" It's cuz you don't understand how
+[11:41.16]  an agent works, right? It will mimic you
+[11:43.60]  perfectly, but you've given it nothing
+[11:45.60]  to mimic, right? So, I will
+[11:48.76]  do the workflow myself. So, the the
+[11:50.96]  updated version is identify the
+[11:52.64]  workflow,
+[11:53.88]  go back
+[11:55.92]  and forth and teach it. So, like I'm
+[11:58.88]  doing it like I'll be like, "Okay, first
+[12:00.48]  do the research." Here's the result. And
+[12:03.12]  I'll be like, "What do you think about
+[12:04.24]  this?" "Oh, these guys are terrible."
+[12:05.64]  You're absolutely right. "Okay, what do
+[12:07.44]  you you should go to the Google Sheet
+[12:09.44]  and mark this as bad company."
+[12:11.52]  I've done that. Once I've had that back
+[12:13.40]  and forth, then I tell the AI,
+[12:16.40]  uh
+[12:17.44]  "Review what you did
+[12:20.68]  and then create the skill." So, now it
+[12:22.96]  has actual context with how it worked
+[12:26.04]  and it's going to create the skill
+[12:27.24]  beautifully. I don't handwrite skills. I
+[12:28.60]  don't think you need to. You can use AI
+[12:30.48]  to do it. They even have a skill to
+[12:32.04]  create skills. Skill inception.
+[12:34.96]  But, you should have the context of what
+[12:37.08]  a successful run looks like. And this is
+[12:39.28]  why, by the way, I don't install skills.
+[12:42.36]  Like I've seen people like, "Oh, this
+[12:43.52]  Notion skill, this social media skill,
+[12:45.32]  whatever." I'll I'll I'll review it.
+[12:46.68]  I'll check it out. I'll even give it to
+[12:48.24]  my AI and be like, "Oh, what are some
+[12:49.28]  things we can learn from this?" But, I
+[12:50.96]  don't download skills because your agent
+[12:53.60]  needs the context of a successful run,
+[12:55.76]  which you then turn to skills, right? Um
+[12:58.60]  and this is the big thing I see. You see
+[12:59.96]  skills marketplaces. You see download
+[13:02.20]  this and that. First of all, it's a easy
+[13:04.92]  way to attack somebody. So, I would be
+[13:07.28]  very, very careful with downloading some
+[13:10.16]  random person's skills.
+[13:11.68]  But, second of all, again, it's all
+[13:13.44]  about context, right? It's all about and
+[13:16.12]  you know, Open Claw has a memory layer
+[13:17.68]  and all these type of things. You want
+[13:20.12]  it to do the right thing and the only
+[13:22.32]  way it can do the right thing is if you
+[13:24.04]  give it the proper context. And to me,
+[13:26.12]  the best way to create a skill is to
+[13:28.88]  work with it in your specific workflow.
+[13:31.44]  Once you have a successful run, tell it,
+[13:33.20]  "Okay, review what you just did. This is
+[13:34.92]  the skill you need to create." I'll
+[13:36.64]  pause here.
+[13:37.32]  >> I mean, it makes sense, right? Cuz
+[13:40.48]  if you hired an employee, you would do
+[13:43.12]  the same thing.
+[13:43.88]  >> Yeah.
+[13:44.28]  >> You wouldn't You wouldn't just be like,
+[13:45.68]  "Okay, go do this thing. Good luck."
+[13:47.44]  >> Yeah.
+[13:48.12]  >> Uh and by the way, this is how you're
+[13:49.52]  going to go do things forever. You would
+[13:51.44]  map out a workflow. You would identify
+[13:55.16]  what right and wrong is. You would
+[13:58.32]  uh do it iteratively.
+[14:00.28]  And then, once you've gotten to that
+[14:02.32]  point, you would codify it.
+[14:03.60]  >> 100% and I think like that's the thing.
+[14:05.92]  Like, we should treat models and these
+[14:08.32]  agents like very new employees versus
+[14:12.80]  like these black magic boxes that like
+[14:15.52]  know everything, right? They know
+[14:17.28]  everything because they've been trained
+[14:18.48]  on a lot of data, but they don't know
+[14:20.56]  your workflow, your steps, right? So, I
+[14:23.08]  see a lot of people who have you know,
+[14:25.72]  15 like right off the they'll set up
+[14:27.60]  open claw and um 15 sub agents, 30
+[14:32.08]  skills.
+[14:33.32]  Yet, you haven't even set up your own
+[14:34.80]  workflows, right? And these things are
+[14:36.32]  cool right off the bat and and there's a
+[14:37.88]  perfect time to use sub agents. I use
+[14:39.64]  sub agents a lot.
+[14:41.56]  But, the way you build like I call it
+[14:44.12]  scaling for productivity, not scaling
+[14:46.40]  for what looks cool, right? Like, I've
+[14:48.64]  seen like for example, paper claw. Paper
+[14:50.00]  claw looks awesome. Cool. I used it. I
+[14:52.68]  loved it, right? But, I think people
+[14:54.80]  would be more productive if they built
+[14:56.68]  up from scratch their own version.
+[14:59.96]  Meaning like, okay, you have your own
+[15:01.56]  like
+[15:02.68]  um
+[15:03.24]  you know, like editor, right? Content
+[15:05.32]  creator.
+[15:05.76]  >> So, you're You're asking people to do
+[15:07.16]  the work, basically.
+[15:08.00]  >> 100% 100% and cuz the thing is, it's
+[15:09.92]  like
+[15:10.80]  look, I'm in the position where like
+[15:13.40]  people using like these beefed-up things
+[15:15.88]  make a lot more sense for me. And the
+[15:18.12]  reason being is like I could build a
+[15:19.24]  product like that. Like, I know what
+[15:21.16]  your audience wants. I know what my
+[15:22.44]  audience wants. Like, you know, heck, I
+[15:24.04]  could spin up agents and build this
+[15:25.52]  thing, right? But, if I'm going to be
+[15:27.04]  completely honest, if you want to scale
+[15:28.56]  for productivity, it starts with one
+[15:30.40]  agent and you building up the skills.
+[15:32.56]  And then, okay, now you've built up some
+[15:34.16]  skills and now you add a sub agent and
+[15:36.20]  your one agent manages multiple agents.
+[15:38.28]  Right? Like, imagine this. Like, imagine
+[15:40.52]  I start a company and off rip, I have 10
+[15:43.44]  employees.
+[15:44.76]  Never managed a team in my life. Heck, I
+[15:47.24]  don't even have a really big family. So,
+[15:49.44]  like, I'm a little Like, you know what I
+[15:50.56]  mean? So, it's like you have to sort of
+[15:53.80]  Yeah, it's not sexy. Um and I apologize
+[15:56.04]  if this is not the cool thing people
+[15:57.64]  wanted to hear. But, you sort of have to
+[15:59.24]  put in the work and build it up. And I
+[16:00.76]  And I personally believe you're building
+[16:02.84]  skills, like, your personal human
+[16:04.68]  skills, not
+[16:06.24]  skill that MD files, that when the
+[16:08.56]  models get better, when the agents get
+[16:10.08]  better, you will be more valuable cuz at
+[16:12.12]  the end of the day, as long as there's
+[16:14.08]  no new paradigm for models, LLMs just
+[16:16.92]  predict tokens.
+[16:18.56]  They don't understand or know the way
+[16:20.64]  you and I do, right? And this is why
+[16:22.88]  although like yeah, the job scene and
+[16:24.56]  all this stuff is scary, I genuinely
+[16:26.52]  believe anyone who knows how these tools
+[16:28.48]  work and like knows how to build agents
+[16:30.76]  and like craft skills and like knows how
+[16:33.04]  to make them productive, we're in it for
+[16:35.08]  a good run. Mhm. So, you're saying that
+[16:37.36]  if you know how to do this, you won't
+[16:39.36]  join the permanent underclass.
+[16:40.96]  >> The permanent underclass. [laughter]
+[16:43.96]  So, is the permanent underclass
+[16:45.52]  basically like I've seen this these this
+[16:48.40]  this on Twitter a lot. Is that basically
+[16:50.60]  AI has replaced you, so now you're just
+[16:53.68]  >> From what I understand, it's
+[16:56.60]  once AGI comes,
+[16:59.32]  all these white-collar workers are going
+[17:01.92]  to lose their jobs.
+[17:03.40]  And if you don't know how to build
+[17:06.04]  skills, use AI,
+[17:08.64]  people say you're joining the permanent
+[17:10.24]  underclass. That's That's the term.
+[17:12.76]  >> It's permanent, too. That's scary.
+[17:14.91]  >> [laughter]
+[17:15.32]  >> So, I just have a little bit of time
+[17:16.76]  left. Yeah, by the way, like
+[17:19.64]  it's ridiculous to call it a permanent
+[17:21.44]  underclass.
+[17:22.28]  >> Yeah, cuz that's terrifying. [laughter]
+[17:23.56]  >> understand underclass, but permanent
+[17:25.64]  permanent it's like
+[17:27.36]  >> Like you're saying there's no hope like
+[17:28.88]  >> No
+[17:29.88]  >> Yeah, um I mean, we are in like
+[17:33.32]  knowledge that took 20 people 20 years
+[17:35.80]  to acquire is now like 20 bucks a month,
+[17:37.76]  right? So, there is like a huge shift,
+[17:39.36]  right? People who are non-technical are
+[17:41.56]  I I think I saw yesterday like some guy
+[17:44.44]  hit like a hundred million dollars um
+[17:46.60]  and he vibe coded the whole app. I think
+[17:48.68]  it was him and his friend.
+[17:49.32]  >> 1.8 billion
+[17:51.28]  >> billion?
+[17:51.92]  >> Yeah.
+[17:54.04]  >> So, you know what I mean? Like it is the
+[17:56.00]  there is a shift, right? And I think
+[17:58.20]  this idea of like well, I'm not
+[17:59.96]  >> how you were like billion. You were
+[18:01.12]  about to just leave this podcast and
+[18:02.92]  just be like
+[18:03.68]  >> No, you know what it is? I just
+[18:04.84]  realized, man, I overthink things. Like
+[18:06.68]  I just need to drop the thing, release
+[18:08.64]  the thing and there's like wisdom in
+[18:09.88]  that like
+[18:11.48]  there needs to be this level of
+[18:12.80]  delusion, which I don't have. Like I'm
+[18:14.44]  trying to work on where you're like this
+[18:15.88]  is just going to work out. We're just
+[18:17.52]  going to launch the product. It's going
+[18:19.04]  to succeed and if it doesn't, onto the
+[18:20.84]  next one cuz 1.8 billion
+[18:23.12]  >> Yeah, dude.
+[18:24.60]  >> Like B?
+[18:25.52]  >> B
+[18:26.04]  >> USD?
+[18:27.20]  >> We're Yeah, we're not talking Monopoly
+[18:30.24]  >> [laughter]
+[18:30.96]  >> Cuz it was Canadian.
+[18:32.72]  Uh it's it's uh
+[18:34.96]  >> We're not talking carny coins.
+[18:37.44]  >> [laughter]
+[18:40.36]  >> We're talk we're talking real Benjamins.
+[18:42.52]  >> Yeah.
+[18:43.04]  >> Yeah, that makes sense. That makes
+[18:44.56]  sense. But yeah, like I I hope this like
+[18:46.60]  understanding of like again, I
+[18:48.76]  personally don't think you don't need an
+[18:50.12]  agent.md file unless you have something
+[18:52.20]  proprietary.
+[18:53.68]  Um skills are valuable. Build your own
+[18:56.76]  though. Build build your own. Like you
+[18:58.96]  know like when you ask your mom when you
+[19:00.24]  were a kid, oh, can we have McDonald's?
+[19:01.84]  And she's like we have food at home. We
+[19:03.60]  have food at home. Build your own
+[19:05.00]  skills. For coding perspective, from
+[19:07.96]  coding wise,
+[19:09.56]  um
+[19:11.08]  a lot of the companies model companies
+[19:13.24]  have realized that the agents are really
+[19:15.60]  good at writing code, particularly
+[19:18.04]  TypeScript. And this is why there's been
+[19:21.40]  like you see this advancement with like
+[19:23.52]  Claude co-work and like even open claw.
+[19:26.20]  Really what they're doing under the hood
+[19:27.32]  is they're writing code, right? They're
+[19:28.68]  writing code calling APIs and all this
+[19:30.44]  stuff. So, when it comes to building a
+[19:33.04]  project um you actually don't need
+[19:37.16]  skills or like you don't need an agent
+[19:39.16]  MD file specific to the tech stack you
+[19:41.48]  use. Like I remember we used to I'm
+[19:43.08]  using React and you know, Convex or I'm
+[19:46.00]  using Next.js and Supabase I'm using
+[19:48.00]  this and I'm using that and you put that
+[19:49.64]  in the agent MD file and you have like
+[19:51.88]  all these lines.
+[19:53.28]  For the most part, unless again you have
+[19:54.92]  a specific specific workflow
+[19:57.88]  unnecessary. And the reason being is
+[19:59.92]  code itself has become context now. So,
+[20:02.92]  the more the more important thing is
+[20:05.00]  starting with a solid foundation.
+[20:06.44]  Templates used to be big back in the
+[20:07.84]  day. People made lots of money with
+[20:09.36]  templates. I believe templates are going
+[20:11.12]  to have a renaissance because if you
+[20:13.24]  have a solid like template, right? Like
+[20:16.08]  whether it be like for web app or mobile
+[20:17.96]  app
+[20:18.96]  because that becomes context for the
+[20:20.60]  agent, it's going to build on top of
+[20:23.12]  that, right? And again, I didn't need
+[20:25.80]  some large agent.md file. I didn't need
+[20:28.20]  any large cloud.md file. What I needed
+[20:30.92]  was again, minimal context usage and
+[20:34.52]  skills. So, if there's anything
+[20:38.00]  anyone can learn from me is build your
+[20:39.80]  own skills. Build your own skills. And
+[20:42.36]  there's this methodology I don't know if
+[20:44.08]  I've shared this with you, recursively
+[20:45.40]  building skills. So, let's say you've
+[20:47.00]  built your skill, right? I have I'll
+[20:49.36]  draw a diagram cuz why not?
+[20:52.28]  Let's say I have a workflow
+[20:55.00]  and after you like setting up my
+[20:57.56]  workflow with an agent, I've decided,
+[20:59.32]  you know what? I'm going to turn this
+[21:01.84]  into a skill, right? So, this is my uh
+[21:05.56]  skill.md.
+[21:07.48]  Now, here's the thing. Even though you
+[21:09.96]  have the skill.md, the agent at some
+[21:12.40]  point is still going to mess up because
+[21:14.52]  there's probably gaps in the information
+[21:16.12]  it has in the skill. So, when it messes
+[21:18.84]  up, I'm going to work with it again. How
+[21:21.16]  do I work with it? You messed up.
+[21:23.72]  Try calling the API again. Try doing
+[21:25.76]  this again. Or even ask it when it tells
+[21:27.80]  you, "Oh, I failed. I couldn't do this
+[21:29.12]  task." Believe it or not, when you tell
+[21:30.92]  the agent, "Why did you fail?" When you
+[21:33.12]  ask it, like, "What's the error that you
+[21:35.04]  got?" It will tell you descriptively,
+[21:36.84]  "Oh, I got a 505 error. You uh, you have
+[21:39.48]  insufficient credits." Like, "Oh, okay.
+[21:41.32]  So, it's a credit issue. Fine." So, I
+[21:43.56]  would tell it that. And then,
+[21:46.04]  I would pass that failure back to the
+[21:49.40]  agent. So, let's say uh, it did
+[21:52.20]  something wrong. We identified the
+[21:53.80]  failure. All I did was asking it. I will
+[21:56.32]  give that failure back to the agent.
+[21:57.84]  I'll be like, "You failed here. This
+[21:59.84]  didn't work. Fix this."
+[22:02.48]  It's going to fix. It's going to write
+[22:03.68]  code. It's going to do whatever it does.
+[22:05.36]  Once it fixes it and it's done it right,
+[22:07.80]  now you tell it with the new fix,
+[22:09.80]  "Update the skill so this doesn't happen
+[22:12.04]  again."
+[22:13.24]  I have, like, for my YouTube channel, I
+[22:15.32]  have like a report generator. It calls
+[22:17.64]  Notion, Dub Analytics, YouTube
+[22:19.80]  Analytics, Twitter Analytics. Pulls from
+[22:22.20]  my It pulls from like eight data
+[22:23.56]  sources. There's no way you're going to
+[22:25.92]  one prompt and the agent's going to do
+[22:28.00]  it. But, every time I tell it to do that
+[22:30.28]  workflow, it takes like 10 minutes. It
+[22:32.12]  executes it flawlessly. Why? I went
+[22:34.20]  through five loops of this.
+[22:36.20]  Five iterations of recursively building
+[22:38.88]  the skill. And that skill is so good. I
+[22:41.72]  genuinely think if anyone's going to if
+[22:44.20]  like skills marketplace is going to be a
+[22:45.72]  thing, there's going to be people who
+[22:47.52]  sell skills. Like, really well-defined,
+[22:50.28]  like, step-by-step skills because people
+[22:52.88]  are just creating them without having
+[22:55.44]  built out the workflow with the agent,
+[22:57.60]  right? So, use the workflow by hand,
+[23:00.40]  like, telling it each step. Once it's
+[23:02.64]  done it completely, create the scale out
+[23:04.64]  MD file, continue to use it. It's going
+[23:07.00]  to mess up. When he messes up, you thank
+[23:09.76]  God you don't complain cuz a lot of
+[23:11.08]  people are like, "Oh, I messed up. I'm
+[23:12.32]  angry." No, this is a moment where you
+[23:14.48]  identify the error, tell it, "This is
+[23:16.52]  the error, fix it." It'll fix it itself,
+[23:18.92]  and then you tell it to update the skill
+[23:20.72]  file so that this doesn't happen again.
+[23:23.24]  >> So, that's a little bit about shifting
+[23:25.32]  your expectation, right? Cuz people just
+[23:27.56]  assume uh
+[23:29.60]  it's going to work in the beginning.
+[23:31.20]  You're saying basically it's not going
+[23:33.04]  to work initially. There's going to be
+[23:35.24]  two, three, five, six hiccups. Um and
+[23:38.24]  over time, it should
+[23:40.60]  be good.
+[23:41.20]  >> So, this is most people's expectations.
+[23:44.52]  Right?
+[23:45.00]  >> Yeah.
+[23:45.36]  >> And
+[23:46.64]  the way I've personally experienced is
+[23:49.36]  it's like this.
+[23:51.04]  So, there's like this early area of
+[23:53.44]  investment that you have to make that
+[23:55.88]  sucks, that nobody will tell you,
+[23:58.44]  especially Agent Harness's company cuz
+[24:00.56]  they wouldn't raise as much money if
+[24:01.64]  they did. But like this maybe I would
+[24:04.08]  give it 2 weeks cuz it took me 2 weeks
+[24:06.52]  like OpenClaw when I first set up
+[24:07.88]  OpenClaw, I thought the same thing. I'm
+[24:09.60]  like, "What What is this garbage? Right?
+[24:12.12]  Like it doesn't understand anything.
+[24:13.20]  It's confusing." Then I realized like,
+[24:14.56]  "Oh, like
+[24:15.76]  let me go lower level." The models and
+[24:18.28]  the agents like they they don't think
+[24:20.32]  like you and me. Right? Like I could I
+[24:21.84]  could tell you, "Hey,
+[24:23.76]  um Greg, we need a report on like, you
+[24:26.60]  know, the financials in Notion."
+[24:28.92]  Because you're probably were in the same
+[24:30.76]  business, we worked together, you would
+[24:32.08]  understand based on the context you have
+[24:33.72]  of the business what that means. But
+[24:35.52]  imagine a new guy joins like, "Yeah, I
+[24:36.92]  need a report on the financials."
+[24:39.00]  So, where do I even start?
+[24:40.04]  >> reminds me? I wonder if we can put this
+[24:41.60]  clip in.
+[24:42.80]  But in the office, you watch The Office?
+[24:45.12]  >> I am not an office watcher,
+[24:46.60]  unfortunately.
+[24:47.40]  >> There's a clip that
+[24:49.88]  uh there's a new boss
+[24:51.68]  and
+[24:53.32]  the new boss goes to Jim, one of the
+[24:55.48]  main characters. Yeah, and he asked for
+[24:58.24]  a rundown.
+[24:59.88]  So go go The Office
+[25:02.48]  The Office rundown.
+[25:05.76]  >> I don't know.
+[25:07.36]  >> Basically, Charles
+[25:10.40]  the whole episode is about
+[25:13.44]  Jim trying to ask around and be like,
+[25:15.84]  "What What is a rundown? Like what is a
+[25:18.24]  rundown?" He's like calling his dad,
+[25:19.76]  like "What is a rundown?" You know what
+[25:21.60]  I mean? He's just Um he didn't have the
+[25:24.20]  context.
+[25:24.96]  >> Yeah. He didn't have the context.
+[25:26.32]  >> Yeah. And and and it goes back to my
+[25:27.96]  initial point, the models are really
+[25:30.28]  really good now, but the context matters
+[25:33.16]  more than anything, right? So when you
+[25:35.04]  see like these large agent like
+[25:37.52]  companies and sub agents, and again, I'm
+[25:39.36]  not saying those don't work, but I'm
+[25:41.32]  saying
+[25:42.68]  probably won't work for you off rip
+[25:44.52]  because you haven't built it up to get
+[25:46.24]  to that point, right? So let's say like
+[25:48.68]  for me for example, I started with um
+[25:51.44]  one agent. Let me draw this. I started
+[25:53.72]  with one agent. And this was like my
+[25:55.52]  main agent. This did everything, right?
+[25:57.04]  This checked my spreadsheet, this
+[25:59.52]  checked my sponsors email, and all these
+[26:01.80]  type of things. And once I had like
+[26:03.64]  predefined workflows, let's say for like
+[26:07.08]  working with sponsors, then I can
+[26:09.32]  actually have a sub agent. What's the
+[26:10.96]  purpose of the sub agent? The sub agent
+[26:12.60]  does all the marketing stuff, right? But
+[26:15.36]  I'm not creating the sub agent for the
+[26:16.88]  sake of creating it. It's going to have
+[26:18.68]  skills, it's going to have context, and
+[26:20.80]  it actually makes sense for me to have
+[26:22.24]  sub agents, right? So I've built out my
+[26:24.40]  thing to like now I have five sub
+[26:26.40]  agents. I have one for marketing, one
+[26:29.04]  uh for business, one for personal, and
+[26:32.12]  and that's it. And I'm willing to bet if
+[26:34.64]  I went open claw to open claw with
+[26:36.24]  anyone, my system is more productive
+[26:39.04]  because I didn't scale for what looks
+[26:40.44]  cool, I scale for productivity.
+[26:44.16]  >> That was a bar.
+[26:45.08]  >> That was a huge bar. We got to clip
+[26:46.52]  that. I was just thinking that clip,
+[26:48.48]  that's going to rip.
+[26:50.16]  >> Yeah, that was a bar. Um what else do
+[26:52.60]  you want to leave people with or is this
+[26:54.24]  this is the main point? Yeah, like
+[26:56.12]  here's like the we've got to a point
+[26:58.36]  where the models are good. The models
+[26:59.88]  are really good. The context matters
+[27:01.96]  plus the harness, right? So, for
+[27:04.20]  example,
+[27:05.48]  there was this benchmark, although I'm
+[27:07.48]  not 100% supporting it, that there was a
+[27:10.16]  difference between the quality of output
+[27:13.20]  that cursor generated versus Claude code
+[27:15.84]  versus Codex, right?
+[27:18.44]  Um So, what that tells me is that we've
+[27:21.60]  reached a point where the models are
+[27:23.04]  really really good. They're probably
+[27:24.56]  going to get better. The next iteration
+[27:25.92]  is probably going to get better, but the
+[27:27.68]  harness and the tools that you surround
+[27:30.04]  it, the context that you give it is
+[27:33.00]  going to matter even more. And just like
+[27:35.60]  in everything in life, less is more,
+[27:38.16]  right? Like building up step by step,
+[27:40.72]  making it productive for you first
+[27:43.00]  before you add the shiny new thing. Like
+[27:45.40]  cuz I tried all these tools all the time
+[27:46.88]  like especially paper paperclip blew up
+[27:49.28]  and a lot of people are talking about
+[27:50.48]  and it's fantastic, but I'm willing to
+[27:52.48]  bet if people took 2 weeks to build up
+[27:54.96]  to the version cuz you can prompt open
+[27:56.60]  Claude to do all that stuff. If they
+[27:58.12]  built up their own version of paperclip
+[28:00.72]  in 2 3 weeks where like they're building
+[28:02.76]  things that they actually need, their
+[28:04.56]  productivity level will skyrocket
+[28:06.16]  through the roof.
+[28:07.04]  >> It's a hot take.
+[28:08.36]  >> It's a hot take.
+[28:09.04]  >> Might get me in trouble.
+[28:10.24]  >> No, it won't get Who's it going to get
+[28:11.40]  you in trouble with? Maybe paperclip
+[28:13.08]  raises a billion dollars and they don't
+[28:14.52]  acquire my podcast.
+[28:15.81]  >> [laughter]
+[28:17.78]  [gasps]
+[28:18.64]  >> I think
+[28:20.04]  Listen, you're you're out there, you're
+[28:21.28]  trying things and you're just sharing
+[28:22.48]  what you're learning in real time. So,
+[28:24.48]  if you're just
+[28:26.08]  You're not
+[28:26.36]  >> Things can change by the way. Hey, like
+[28:27.72]  2 weeks from now it could be like no
+[28:29.20]  give the agent everything. There's this
+[28:31.56]  new memory paper that Google released
+[28:34.04]  and like now like it has the ability to
+[28:35.96]  index information and stuff, but
+[28:38.56]  as it as it pertains to real life, less
+[28:41.00]  is more, simple is better, right? If you
+[28:43.48]  can't explain it in in a few sentences,
+[28:46.04]  you probably don't really understand it,
+[28:47.84]  right? And I find that the models are
+[28:50.56]  trained on so much information,
+[28:52.04]  especially when it comes to programming,
+[28:53.68]  building, and like and um what do you
+[28:56.28]  call like day-to-day work, like
+[28:57.76]  financial work, or like any sort of
+[28:59.96]  like, you know, checking contracts and
+[29:01.88]  stuff. Like they the model companies are
+[29:03.48]  focusing on that, like on white-collar
+[29:05.52]  work. The models are really, really
+[29:07.80]  good. What matters more is the harness
+[29:09.88]  and the tools you provided. And the one
+[29:11.72]  thing that you and I have that the
+[29:13.04]  models don't have is my specific
+[29:15.40]  workflow, my specific taste, my specific
+[29:18.36]  strategy of doing things. And those can
+[29:20.64]  be codified in skills, right? This is
+[29:22.80]  why like skills make sense when you
+[29:25.32]  build them. Not if you download my
+[29:27.48]  skill. Like I have this one skill.
+[29:29.76]  Um like again, don't download it. Do I'm
+[29:32.16]  telling you now, do not download it.
+[29:33.56]  Don't use it. I just put it so I can get
+[29:36.00]  some GitHub stars. Um
+[29:39.44]  I have this one skill, and it's
+[29:40.88]  literally a code structure skill.
+[29:43.00]  And I'll put the markdown so people can
+[29:45.00]  see it.
+[29:46.00]  Um it's 116 lines. It's basically after
+[29:49.68]  AI has generated a bunch of code, I like
+[29:51.96]  it structured in a certain way, so it's
+[29:53.52]  easy for me to review it. And like I
+[29:55.64]  mentioned earlier with skills, the only
+[29:57.48]  thing that gets added into context is
+[29:59.04]  the name and description. So when I look
+[30:00.92]  at the name, it's code structure. When I
+[30:02.64]  look at the description, use when
+[30:04.20]  multiple workflows duplicate the same
+[30:05.96]  operational logic when deciding that
+[30:08.12]  blah blah blah blah blah some nerd
+[30:09.24]  stuff. So when I tell the agent, I want
+[30:11.48]  to
+[30:12.28]  clean up the code structure, it checks
+[30:14.48]  the skills it has, it sees the name, it
+[30:17.08]  reads the description. It's like, oh,
+[30:18.88]  this makes sense. Then it progressively
+[30:21.04]  discloses, meaning once it realizes it
+[30:22.72]  needs this skill, then it adds the rest
+[30:24.92]  of this, right? Versus if this was my
+[30:26.84]  agent.md file, imagine every single
+[30:29.40]  time, and we can actually check how many
+[30:31.96]  tokens this is.
+[30:33.68]  Let me check. Um
+[30:35.60]  what was it? OpenAI token tokenizer.
+[30:39.80]  If I go to this,
+[30:42.88]  So, this is 944 tokens. So, if this was
+[30:46.32]  an agent.md file, every single time I
+[30:49.56]  have a chat, I'm adding 944 tokens.
+[30:52.28]  Tokens ain't cheap now.
+[30:53.40]  >> No.
+[30:54.00]  >> But, if I just have the name
+[30:57.04]  and the description, it's just 53
+[30:58.28]  tokens.
+[30:58.48]  >> And it's not even cheap. It's just like
+[31:00.08]  you're not trying to
+[31:02.76]  hit the limit quicker than you need to
+[31:04.04]  hit the limit.
+[31:04.88]  >> Cuz the model will get dumb as the
+[31:06.24]  context window closes, right? So, if you
+[31:08.16]  have like a context window, and I can
+[31:10.32]  draw this out. If this is your context
+[31:12.48]  window,
+[31:13.80]  and like the optimal is you're between
+[31:19.68]  like there's always like maybe like 10%
+[31:21.80]  is already filled with all the
+[31:23.40]  system prompt and all that stuff. You
+[31:24.68]  want to be between like
+[31:27.40]  you know, fresh to like 70% cuz the
+[31:29.96]  closer you get to 99, 100% like 99, 90,
+[31:33.16]  80%, it starts to get dumb, right? And
+[31:35.32]  you can think of this like a human. Like
+[31:36.68]  imagine you throw a bunch of information
+[31:39.84]  again and again and again and again. And
+[31:41.40]  this is why like when I like was in
+[31:43.68]  school, like last minute studying never
+[31:46.12]  worked for me cuz like I didn't pay
+[31:47.36]  attention the entire year. Now I have to
+[31:49.24]  learn about polynomials, and I have to
+[31:51.96]  do these graphs, and there's this weird
+[31:53.64]  notation. It's impossible for me to
+[31:56.08]  catch up, right? And it's the same way
+[31:57.96]  with the agents. You want to keep your
+[31:59.76]  context window You want to save your
+[32:01.08]  context window cuz hey, it saves you
+[32:02.28]  money. But not only that, it makes a
+[32:04.68]  more performant
+[32:06.32]  um agent. So, less is more. Less is
+[32:09.44]  more. Rely more on the model's strength,
+[32:11.68]  and what the model needs is what's
+[32:13.92]  unique and special about you, your
+[32:15.56]  workflow, your business, not general
+[32:17.48]  knowledge. Don't tell the model use
+[32:19.68]  React.
+[32:20.92]  It knows to use React. Don't tell the
+[32:22.52]  model um you know, things that like
+[32:25.80]  should already be known uh for the uh
+[32:28.56]  like you know,
+[32:29.56]  task. Like for example, like let's say
+[32:31.52]  I'm doing a financial report, and then
+[32:33.08]  the agent.md file, I say um
+[32:36.28]  to denote money use a dollar sign.
+[32:39.68]  It's going to use a dollar sign. Right
+[32:41.08]  now, if you have a specific currency,
+[32:43.44]  then you like, oh, use this currency.
+[32:46.48]  This is the You know, like for something
+[32:48.20]  that the agent won't do manually, like
+[32:51.08]  won't know manually, that's when you
+[32:52.56]  have like your agent.md's, Claude.md's,
+[32:54.96]  but honestly, these are a farce. You
+[32:56.92]  don't need them. Um, skills skills
+[32:59.84]  skills skills skills is what it's at.
+[33:03.56]  >> Thanks for keeping it real. I appreciate
+[33:05.16]  you, man.
+[33:05.72]  >> That's all I'm going to do. Thank you,
+[33:06.80]  man.
+[33:07.32]  >> it.
+[33:08.20]  Uh, like always, I'll include links
+[33:09.80]  where you can follow
+[33:11.52]  Ross Mike on YouTube and X and other
+[33:14.00]  places in the show notes in the
+[33:15.52]  description, so go follow him there.
+[33:17.88]  Always clearly breaking down things. We,
+[33:20.32]  uh,
+[33:21.70]  >> [sighs]
+[33:21.84]  >> I have to be real with you. You weren't
+[33:22.88]  going to come on the show today.
+[33:24.52]  >> I wasn't, and I'll be honest, I I told
+[33:26.64]  Greg, and I'm just going to be frank.
+[33:27.96]  I'm like, I don't have that banger, you
+[33:31.76]  know, something new dropping, let's
+[33:33.20]  review it, cuz if we going to be honest,
+[33:35.64]  there's not that many tools dropping
+[33:36.96]  nowadays. Like, unfortunately, the big
+[33:39.28]  dogs are running the show.
+[33:40.40]  >> Yeah.
+[33:40.92]  >> Um, the Clauds and the
+[33:42.92]  the Anthropics and the Open AI,
+[33:44.76]  especially when it comes to general
+[33:46.12]  purpose and
+[33:47.56]  and coding,
+[33:49.00]  they sort of run the game, so they're
+[33:50.84]  releasing updates, and like all the
+[33:53.68]  stuff has already been covered. So, I
+[33:54.72]  was like, Greg, I don't know if I have
+[33:56.28]  anything valuable to add.
+[33:57.12]  >> And what did I say?
+[33:58.20]  >> You're like, the people, you know, you
+[33:59.24]  got to think about impact. You got to
+[34:00.56]  think about what, you know, this could
+[34:02.24]  apply to someone's And you showed me
+[34:03.76]  like a a text someone, right?
+[34:05.60]  >> I sent a text to you.
+[34:07.00]  >> Yeah. I'm going to pull it up.
+[34:09.40]  Uh, I sent a text to you of someone who
+[34:14.16]  saw a video that we did together,
+[34:16.40]  and it that video got him into coding.
+[34:20.20]  Now, he's running a cake business, and
+[34:21.92]  he's making $150,000 a year and growing.
+[34:25.24]  And he said,
+[34:26.88]  "The Greg and Ross Mike
+[34:29.28]  episode in November last year is what
+[34:31.24]  got me into coding. I've recommended to
+[34:33.12]  everyone asking how to start out. And I
+[34:36.76]  just sent you that text and I said,
+[34:37.84]  "It's not about the numbers. It's not
+[34:39.04]  about, you know, cuz you said in the
+[34:41.64]  text
+[34:43.24]  >> You don't see it sometimes, right?
+[34:45.20]  >> everything we do to get to 200k views
+[34:47.92]  minimum.
+[34:48.60]  >> yeah, yeah, yeah.
+[34:49.32]  >> And I'm just like
+[34:50.80]  I hope this gets 200k views or more, so
+[34:52.96]  like and comment to to juice those
+[34:54.56]  algorithms, but if it gets 2,000 and two
+[34:57.32]  people end up taking this information
+[34:59.52]  and changes their business, their
+[35:01.44]  productivity, how they think about
+[35:03.08]  things, then you know, I think that's
+[35:05.12]  why I think that's why you and myself
+[35:08.20]  have been put on this planet Earth is to
+[35:10.60]  inspire people to get their creative
+[35:12.40]  juices flowing. And so I thank you for
+[35:15.20]  for coming on and and taking time out of
+[35:17.72]  your day.
+[35:18.08]  >> And I appreciate the motivation and
+[35:19.72]  yeah, I hope this helps somebody and I
+[35:21.64]  can't wait to be back with more.
+[35:23.16]  >> Absolutely. All right, catch you later,
+[35:24.48]  dude.

@@ -1,0 +1,2269 @@
+Title     : How To Create Ai Agents From Scratch (CrewAI, Zapier, Cursor)
+Video ID  : PM9zr7wgJX4
+URL       : https://www.youtube.com/watch?v=PM9zr7wgJX4
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2260
+Saved at  : 2026-06-21 02:17:59
+------------------------------------------------------------
+
+[00:00.04]  all right we got Joe MOA on the Pod
+[00:03.56]  co-founder CEO of crew
+[00:06.88]  AI uh probably one of the leading if not
+[00:09.76]  the
+[00:10.48]  leading uh AI agent platforms what are
+[00:14.24]  we learning today Joe well first of all
+[00:16.60]  thank you so much for having me uh I
+[00:18.52]  think it's going to be a lot of fun so
+[00:20.28]  we're going to be building a few
+[00:21.36]  different things I was thinking about
+[00:23.16]  your community and I was like what if if
+[00:25.04]  we use AI agents to do things like data
+[00:27.88]  enrichment so given that you're t
+[00:30.20]  respect a lead it finds information
+[00:32.08]  about them automatically writes an email
+[00:34.76]  sent to them but then we take it like it
+[00:36.80]  up a notch and we kind of like produce a
+[00:38.92]  real time report and kind of like
+[00:40.84]  generate a PDF I don't know just trying
+[00:42.92]  to have some fun and if we get the time
+[00:44.88]  we can do more fancy stuff towards the
+[00:46.64]  end so I hopefully hopefully have some
+[00:48.96]  spare time at the
+[00:50.12]  [Music]
+[00:57.68]  end and okay that sounds good and I
+[01:00.80]  think could you explain you
+[01:03.84]  know explain by the end of this episode
+[01:07.16]  what are the tangible skills people are
+[01:09.00]  going to get yes so by the end of this
+[01:12.00]  you all should be able to BU Cru uh
+[01:14.80]  fully understand what AI agents are how
+[01:17.60]  to orchestrate them using crew Ai and
+[01:20.36]  even deploy them into a production
+[01:22.00]  environment if you want to use or free
+[01:24.24]  tier on the Enterprise and you're going
+[01:25.88]  to be able to do it there as well so
+[01:28.24]  you'll be able to go now from this and
+[01:30.08]  start building AI agents for yourself
+[01:31.68]  and how to make processes and to be
+[01:34.88]  clear there's like I'm not sponsored by
+[01:37.72]  Joe at all like my incentive is to get
+[01:40.64]  you people to build agents and make them
+[01:44.44]  work for you because I know a lot of you
+[01:47.36]  are Solo entrepreneurs solo preneurs
+[01:50.44]  have a couple of employees or even you
+[01:52.80]  have a business that has employees but
+[01:54.96]  you're looking to have a army of Agents
+[01:58.48]  do more work for you that's why I
+[02:00.44]  brought Joe in um so without further Ado
+[02:04.44]  maybe let's share our screen and and and
+[02:06.40]  get to work I love that and it's good
+[02:09.12]  that you point that out because honestly
+[02:10.84]  with crew itself being like in startup
+[02:13.60]  now we have a bigger team like there are
+[02:15.44]  more people to help out in so many
+[02:16.96]  fronts but from the GGO being able to
+[02:19.80]  use AI agents to scale an AI agent
+[02:22.28]  company was kind of like an interesting
+[02:24.12]  kind like Inception like experience so I
+[02:27.48]  I definitely can appreciate for folks
+[02:29.16]  out there trying can like build
+[02:30.52]  businesses how the idea of having an
+[02:32.52]  agents automating certain processes can
+[02:34.24]  be quite amazing actually um right all
+[02:37.56]  right let me share my screen let's get
+[02:39.44]  things going there we go all right so I
+[02:44.28]  T about we start with a simple use case
+[02:47.08]  and then we grow up into more complex
+[02:49.40]  ones so let's Dy out what we're going to
+[02:52.44]  be trying to do this one I think this
+[02:54.48]  going to be an interesting one so in the
+[02:57.00]  past especially when you're thinking
+[02:59.12]  about using cases like about companies
+[03:01.36]  in general then start there's two things
+[03:03.08]  that you really want to nail once that
+[03:04.72]  you have a product or you're building a
+[03:06.56]  product you want to make sure that you
+[03:08.48]  do good marketing and you do good sales
+[03:10.80]  right because that's not only like
+[03:13.04]  Revenue but also an opportunity for you
+[03:15.12]  to learn so you can learn what works
+[03:17.60]  what doesn't work like what tracks with
+[03:19.80]  your product and what doesn't so I
+[03:22.48]  thought why don't we do something that
+[03:25.08]  is able to do lead enrichment so let's
+[03:29.80]  say you got a lead you want to learn
+[03:31.56]  more about this person and this company
+[03:35.20]  and there's a few questions that you're
+[03:36.48]  trying to answer here once like is this
+[03:38.56]  my ICP my ideal customer profile also is
+[03:42.48]  this company a good match and like
+[03:44.96]  should I actually spend some time
+[03:46.44]  pursuing interviewing and trying to
+[03:48.60]  understand more about them but then that
+[03:50.72]  information alone like you you can do
+[03:53.20]  only so much with it but could we also
+[03:56.52]  use agents to take one step further and
+[03:58.64]  make it actionable and say like all
+[04:00.52]  right can we have ideas for how to use
+[04:05.16]  our product given that we now learn
+[04:07.92]  about this person so the agents will not
+[04:10.44]  only do the enrichment and learn about
+[04:13.16]  the company and learn about the person
+[04:14.68]  they're going to come up with these
+[04:16.28]  ideas on how they can use our product
+[04:19.04]  and then afterwards can we just go ahead
+[04:21.44]  and draft an email and kind of like
+[04:23.64]  trying to reach out to them like hey
+[04:25.24]  thank you for signing up um this is how
+[04:27.64]  you could be using your product three
+[04:29.08]  ideas for business business very excited
+[04:31.12]  about it like let's chat so honestly I
+[04:34.56]  think this kind of like a more
+[04:35.56]  straightforward kind of use case we can
+[04:37.84]  start building with no code but I want
+[04:41.12]  to take a step further after this and
+[04:44.16]  even further if we get the time but
+[04:46.56]  before we get there let's get to
+[04:48.24]  building so for this one because I want
+[04:50.68]  to start very simple I'm going to start
+[04:52.28]  with no code if you go on crew AI
+[04:55.68]  Enterprise there's a free tier that you
+[04:57.92]  can create an account there's some
+[04:59.72]  setting up that you need to do but once
+[05:01.72]  you have done it you got to have access
+[05:03.84]  to crew Studio crew studio is basically
+[05:07.00]  a way for you to create AI agents by
+[05:09.44]  chatting like you can chat your way into
+[05:11.56]  an automation so for this one let's try
+[05:14.76]  let's try to create one ourselves now I
+[05:17.40]  have something in here for us to use and
+[05:19.56]  I'm going to read it out loud with you
+[05:21.16]  all so the idea is I want to create a
+[05:25.00]  crew that will be able to research both
+[05:27.04]  a person and a company based on their
+[05:29.08]  name email domain of the company I
+[05:31.52]  wanted to make sure to learn most that I
+[05:33.52]  can about their business so their role
+[05:35.76]  their seniority the company level how
+[05:38.36]  big the company is what is their
+[05:40.72]  industry their culture and three ideas
+[05:44.00]  about how they can use AI agents and at
+[05:47.08]  end I want to produce an email that is
+[05:49.08]  friendly it doesn't sound like an AI
+[05:52.04]  offers to explain how they cuse agents
+[05:54.12]  on the business call and basically
+[05:56.24]  describing a little more about how I
+[05:57.64]  want that email to sound like all right
+[06:00.40]  so now I have a plan right the outputs
+[06:02.80]  the fully crafted email ready to send
+[06:04.84]  including the insights there's going to
+[06:06.96]  be three inputs for this agents the name
+[06:09.60]  uh the email and the domain it's
+[06:11.72]  suggesting to use three tools a serer da
+[06:14.72]  um scrape website and GT3 let's remove
+[06:17.92]  this so we don't need we don't need
+[06:22.52]  gpt3 uh then three agents one for doing
+[06:25.56]  the researching one for do do analysis
+[06:27.24]  another one for doing the Mao Drafting
+[06:29.24]  and four tasks so what you see here is
+[06:32.28]  that with AI agents and crew AI
+[06:34.48]  specifically you don't need to have one
+[06:36.44]  agent to one task it's not necessarily
+[06:38.20]  one to one so you can see the first one
+[06:41.20]  is doing by the research agent that is
+[06:43.12]  basically researching the thing the
+[06:45.04]  person the second one is is researching
+[06:48.04]  the company and it's also done by the
+[06:49.84]  research agent and then the third one is
+[06:52.24]  where the analysis agent comes in and
+[06:54.16]  then the emo agent comes in after that
+[06:56.60]  so this feels good let's create our crew
+[06:58.68]  plan quick break in the Pod to tell you
+[07:01.32]  a little bit about startup Empire so
+[07:04.16]  startup Empire is my private membership
+[07:07.96]  where it's a bunch of people like me
+[07:11.28]  like you who want to build out their
+[07:13.88]  startup ideas now they're looking for
+[07:16.52]  content to help accelerate that they're
+[07:18.20]  looking for potential co-founders
+[07:20.16]  they're looking for uh tutorials from
+[07:23.36]  people like me to come in and tell them
+[07:25.80]  how do you do email marketing how do you
+[07:27.48]  build an audience how do you go viral on
+[07:29.52]  Twitter all these different things
+[07:31.44]  that's exactly what startup Empire is
+[07:34.28]  and it's for people who want to start a
+[07:36.80]  startup but are looking for ideas or
+[07:39.08]  it's for people who have a startup but
+[07:41.08]  just they're not seeing the traction uh
+[07:43.92]  that they need so you can check out the
+[07:46.00]  link to Startup empire.co in the
+[07:49.08]  description and that's going to
+[07:50.68]  basically take this UI uh up a notch so
+[07:53.24]  we can actually see visually your tasks
+[07:56.60]  and agents so here you can see profile
+[08:00.36]  researcher IDE generation email content
+[08:03.04]  specialist and I can keep changing in
+[08:05.16]  here if I want to so let's say that I
+[08:06.44]  want to make this like a senior email
+[08:08.52]  accountant specialist there you go um
+[08:11.08]  and let's check like how they're doing
+[08:12.84]  condu your research to together
+[08:14.40]  information about individual domain this
+[08:17.88]  that's their company domain all right
+[08:19.88]  this this feels good let's do it
+[08:21.56]  generate crew so this actually generates
+[08:25.28]  the code for you if you want to download
+[08:28.04]  it or allows you to deploy this right
+[08:30.80]  away if you really if you really want to
+[08:32.72]  do that so in here you can see it's very
+[08:35.48]  straightforward we have three tasks the
+[08:37.52]  first one second one third one we can
+[08:39.72]  change the tasks can change the agents
+[08:42.48]  uh one thing that I do want to do is for
+[08:45.72]  example the research profile was using
+[08:47.64]  serer and scraping the generating ideas
+[08:51.44]  is I I think I want to also it to use
+[08:54.48]  ser and scraping just in case it wants
+[08:56.68]  to go a little like more broad on
+[08:58.92]  searching for ideas online and the third
+[09:01.56]  task uses no tools now the other thing
+[09:04.24]  that I want to do is for the idea
+[09:06.56]  generator let's do GPT 40 instead of 40
+[09:11.04]  mini and for the email let's go a little
+[09:14.08]  crazy Let's Lose on ow and mini uh so
+[09:17.12]  that we can get like some extra Fen in
+[09:19.80]  there so uh let's see if it's going to
+[09:21.88]  work honestly ow and mini in my
+[09:23.72]  experience for gentic behaviors
+[09:26.04]  sometimes falls short um just because it
+[09:28.84]  already has like chain off tot and B it
+[09:30.84]  on it it tries to basically like figure
+[09:33.76]  out everything itself without using any
+[09:35.80]  tools and kind of like outsmart a little
+[09:37.92]  bit what you're trying to do but hey
+[09:40.32]  there we go so we have our initial crew
+[09:42.56]  in here very simple what I'm going to do
+[09:44.92]  is I'm going to deploy this right away
+[09:47.04]  so that we can go ahead and test it but
+[09:50.56]  we're going to also download the code so
+[09:53.08]  let me go back into that so that we can
+[09:57.20]  um so that we can start trying things
+[09:59.52]  out all right there we go this is do
+[10:02.56]  one yes so let's do download The Cone so
+[10:06.60]  that we can uh change a few things about
+[10:08.56]  this make it more complex go extra
+[10:10.56]  custom again you don't necessarily need
+[10:13.48]  to use this UI in the end of the day if
+[10:16.48]  you want to create this Cruise locally
+[10:18.44]  using only the open source you can do
+[10:21.24]  crei
+[10:23.68]  create and name of your crew and that
+[10:28.40]  will basically ask ask you a few
+[10:29.84]  questions around like all right what is
+[10:32.08]  the provider oh sorry create crew there
+[10:35.04]  you go it's going to ask you a few
+[10:36.56]  questions about like what is our
+[10:38.00]  provider so you can say ah open AI what
+[10:40.24]  the model you want to use you can say
+[10:41.84]  well I want all my agents to use gp4 o
+[10:44.40]  Mei you can specify individual models
+[10:46.96]  per agent down the road then Jo I had a
+[10:49.08]  question I had a question about the
+[10:50.88]  models you know I think a lot of people
+[10:52.84]  get to that point and they're like yeah
+[10:55.44]  I don't know which model to pick for
+[10:57.68]  this particular task how should how
+[10:59.84]  should people think about that that's a
+[11:02.40]  great question Greg so usually the way
+[11:04.40]  that I think about it is like smaller
+[11:07.76]  models like smaller or 7B 14b they they
+[11:11.48]  don't work as well you can get them to
+[11:13.68]  behave as agents but they usually take
+[11:15.64]  even longer because they go in so many
+[11:18.24]  blind alleys and keep like retrying
+[11:20.72]  things so you definitely want to go like
+[11:23.08]  my goto is GPT 40 meaning and that
+[11:25.68]  usually works great that said you can
+[11:28.72]  evaluate different models locally we
+[11:31.96]  have a feature let me go into this new
+[11:34.60]  crew that we
+[11:35.96]  created name of your crew we have a
+[11:39.40]  feature called crew AI test and what
+[11:43.28]  that does is it allows you to test our
+[11:46.68]  agents using many different models so
+[11:49.48]  you can test like all right how does it
+[11:51.04]  does with GPT 4 how it does with GPT
+[11:53.88]  mini so you can get like how each model
+[11:57.36]  works and what are the score that each
+[11:59.96]  task gets so you get a an actual quality
+[12:02.84]  score an actual hallucination score yes
+[12:05.68]  of course it's missing my uh my key let
+[12:08.88]  me added this in there make sure that we
+[12:10.96]  can get
+[12:13.60]  this all right I'm going to just come in
+[12:17.96]  here I get this nvar I have a key that I
+[12:21.24]  created just for us
+[12:23.64]  today and let me copy it there we
+[12:27.68]  go open it I API key and I'm going to
+[12:32.52]  put ours in here all right so what do
+[12:36.84]  you can do in the open source is you can
+[12:39.08]  run this command the create test and
+[12:41.96]  what it does is basically run your
+[12:43.92]  agents but it's going to try to
+[12:46.00]  calculate um the task let me do just one
+[12:49.00]  interation by the way um oh I think
+[12:53.32]  maybe my key is
+[12:55.60]  wrong all right let me get another key
+[12:58.24]  one second
+[13:00.12]  classic classic yeah all right there we
+[13:06.72]  go as you're uh as you're fig putting
+[13:09.96]  that in I have a question around one of
+[13:12.16]  the things that I I noticed you changed
+[13:13.96]  was adding I think it was like a senior
+[13:16.28]  writing correspondent or whatever you
+[13:17.76]  added the word senior how how important
+[13:21.04]  is like does that actually affect the
+[13:23.72]  outputs of your crew if you if you write
+[13:27.16]  senior to some extent yes I mean not
+[13:29.64]  necessarily senior alone right but
+[13:31.56]  because these agents they're kind of
+[13:32.80]  like impersonating roles you do get
+[13:35.64]  different behaviors depending on you do
+[13:38.36]  get different behaviors depending on how
+[13:39.88]  you give them like a different role so
+[13:42.36]  you can actually replicate this on chat
+[13:44.48]  GPT like if you ask jgpt to like give
+[13:47.16]  you an assessment on uh a stock it's
+[13:50.88]  going to give you kind of like a report
+[13:52.92]  but if you say uh behave as an FCC kind
+[13:56.24]  of like a proven kind of like a St
+[13:59.36]  analyst it's going to give you a
+[14:00.64]  completely different answer even though
+[14:02.56]  all the remaining of the prompt is you
+[14:04.24]  the same so um it's one way that you can
+[14:07.44]  steer the model to behave in a certain
+[14:09.32]  way if you really want to go
+[14:11.48]  there so um here you can see like I just
+[14:14.60]  run it just for one execution just was
+[14:16.76]  one model but you can see what would be
+[14:18.36]  your task scores your crew over score
+[14:21.32]  your execution time so you can actually
+[14:23.56]  compare many models in this and you can
+[14:25.48]  run this like many different times and
+[14:27.92]  see what happens and if you want to take
+[14:30.92]  this up a notch on the Enterprise side
+[14:34.16]  of things that again there is a free
+[14:36.08]  tier so you can try it out there is let
+[14:39.52]  me see one of the agents that I did run
+[14:42.56]  tests for maybe the pr review there is a
+[14:46.96]  way where you can compare yeah there you
+[14:48.20]  go you can compare many models so you
+[14:49.80]  can see here GPT 4 mini
+[14:52.12]  andring individual tasks score overall
+[14:55.36]  crew score and execution time so you can
+[14:58.40]  see that overall son it was better on a
+[15:00.56]  lot of this but it tooks way way longer
+[15:04.24]  so probably I probably don't want to go
+[15:06.16]  there but I might replace a task or two
+[15:08.28]  to use sonin if I think this is
+[15:13.56]  useful uh so yeah again you can create
+[15:16.48]  all your agents with the CLI if you
+[15:18.52]  really want to go there and you can run
+[15:20.40]  all those things locally I just use the
+[15:22.24]  UI in case for the folks that are less
+[15:24.36]  tech savvy and they want to start with
+[15:25.72]  something
+[15:26.72]  simple totally and you know in terms of
+[15:32.32]  output they're I would imagine they're
+[15:34.60]  the same right using the interface or or
+[15:37.44]  the
+[15:38.36]  CLI yeah the output will be the same um
+[15:41.60]  the the thing is once that you're using
+[15:43.64]  the Enterprise that automatically
+[15:45.24]  becomes an API right so that open UPS
+[15:48.04]  like opportunity for you to kind like
+[15:49.64]  interact with a few like different apps
+[15:52.12]  uh and we can integrate for example with
+[15:54.24]  like zaper on this one and I think this
+[15:56.92]  could be like an interesting one but uh
+[16:00.44]  it's essentially the same thing so for
+[16:02.16]  example I
+[16:03.36]  downloaded uh creating yes I downloaded
+[16:07.16]  the crew that we just created on the UI
+[16:10.36]  and if you open it up you can actually
+[16:12.60]  get all your agents in here so you see
+[16:16.28]  like the profile researcher is in there
+[16:19.56]  you can see our senior one in there that
+[16:21.28]  you mentioned senior email content
+[16:22.96]  specialist right in there you can see
+[16:25.20]  that they're using o mini and JY 40 and
+[16:27.88]  4 mini so so all the codes in here the
+[16:30.84]  code generator is also in here so you
+[16:32.76]  can kind of like inspect and take it
+[16:34.32]  like an a up a notch if you really want
+[16:39.44]  to uh well all right so while this is uh
+[16:43.88]  deploying it just to be good um what
+[16:46.56]  we're going to do is I want to I want to
+[16:50.04]  do something uh a little fancy for us
+[16:53.52]  today so I want to make sure that we
+[16:57.04]  create a zapier to run
+[16:59.96]  this so by the way now that this is live
+[17:03.36]  I can actually again because it's an API
+[17:05.40]  I can see what are the inputs that it
+[17:07.00]  needs so we can see that need domain
+[17:09.28]  email and company name I can actually
+[17:12.08]  run this right here if I want to so we
+[17:14.96]  can do a task real quick let's say ja
+[17:18.12]  crew ai.com
+[17:19.64]  uh let's see the domain
+[17:22.76]  crew.com and the company is crew AI
+[17:27.60]  let's do a kickoff
+[17:29.60]  and you can use web hooks like if you're
+[17:31.84]  more Technical and you want to like have
+[17:33.44]  progress bars on your app and you have
+[17:35.44]  to have other things um but you can also
+[17:38.44]  just do pooling as well if you want to
+[17:40.12]  just see like how are things going oh
+[17:42.12]  this one failed great so we're going to
+[17:44.04]  debug life that's going to be that's
+[17:45.68]  going to be fun but the other thing that
+[17:48.08]  you can also do if you don't want to use
+[17:50.48]  the UI uh like the API you have a UI
+[17:54.08]  that you can use in here where you can
+[17:57.16]  basically create a card for your your
+[17:59.00]  agents and again it's going to use the
+[18:00.76]  same inputs and they're going to pick it
+[18:02.40]  up and they're going to work like
+[18:03.80]  directly from here or if you want to you
+[18:06.96]  can also export a UI you can export a
+[18:09.00]  react component right from here and that
+[18:11.12]  usually that said let's the bug let's
+[18:13.72]  see what what going wrong with our crew
+[18:16.44]  uh we actually have it in here so we
+[18:18.24]  should be able to do create install to
+[18:21.16]  install dependences and create IR run
+[18:24.04]  just see what issues there we get create
+[18:27.84]  IR run
+[18:30.08]  and whatever broke it in there should
+[18:31.92]  break it in here as
+[18:44.52]  well the first run by the way you're
+[18:46.56]  going to notice is the first run takes a
+[18:48.00]  few extra seconds because it sets an
+[18:49.92]  environment um just the environment for
+[18:52.48]  you to actually run it there you go the
+[18:54.88]  agent is missing in the following
+[18:56.84]  description that's great all right so we
+[18:59.44]  know how to fix this uh the thing is on
+[19:02.24]  the task there is yes there is no agent
+[19:06.12]  for or second task to generate ideas for
+[19:10.16]  that we want our idea generator so let's
+[19:13.08]  make sure that we get this in there and
+[19:15.76]  there we go um this should now be fixed
+[19:18.32]  if we run it again it should work and
+[19:21.28]  this might be an actually a good way for
+[19:22.92]  me to show how you can actually deploy
+[19:24.76]  this using G as well so let's say that I
+[19:27.84]  build this thing like uh I bu it
+[19:29.60]  manually right with code I'm going to do
+[19:33.64]  grag test make this private
+[19:39.96]  boom so now what I want to do yeah there
+[19:43.88]  you go it tried to run and me start up
+[19:45.56]  in a I key that's great means that it's
+[19:48.04]  working so now let's do get init make
+[19:51.36]  this a repository let's do get ad so we
+[19:54.40]  add everything
+[19:56.16]  in let's just p out in
+[20:01.84]  here and there you have
+[20:06.16]  it yes so now we can deploy this grag
+[20:10.68]  test uh crew and we can do it directly
+[20:13.28]  in here there's a GitHub integration so
+[20:15.20]  again if you didn't do through the UI
+[20:17.16]  and you generated things you can come in
+[20:18.92]  here and you can do grag test I can add
+[20:22.68]  my separate API key my open AI key that
+[20:25.56]  I have uh pre-registered and I can click
+[20:29.24]  deploy and um and there you go we're
+[20:31.28]  going to deploy this one uh similar
+[20:33.60]  thing I guess I I should have checked if
+[20:35.60]  all the agents were assigned on the UI
+[20:37.64]  there in the other one so let me delete
+[20:39.72]  this one and while that does its thing I
+[20:45.00]  want us to set up a webflow website that
+[20:48.48]  is going to use the screw so um I'm just
+[20:51.20]  going to choose random template in here
+[20:54.00]  Joe's fantastic website that sounds that
+[20:56.32]  sounds right sounds right by the way Joe
+[20:58.92]  is there any particular reason why you
+[21:00.40]  chose webflow versus framer or another
+[21:03.08]  another product uh no really I'm just
+[21:05.48]  turning out to be a webflow customer so
+[21:07.48]  I really like use them um but this
+[21:09.40]  directly should work with anything out
+[21:11.12]  there the end of the day it's an API
+[21:13.04]  call so you should be good to
+[21:16.72]  go so let me delete all this grid and
+[21:21.68]  delete the spacer and I'm going to add a
+[21:26.00]  form
+[21:28.72]  F block there we go so we know there's
+[21:32.36]  three feuds that we need for uh for our
+[21:36.48]  thing so I'm going to duplicate can I
+[21:39.68]  add a few directly I think I can so fud
+[21:43.24]  no I'm going to duplicate this once all
+[21:47.44]  right there we go so it's name uh email
+[21:52.56]  address and the other one was company
+[21:55.48]  domain if I recall correctly so let's do
+[22:00.32]  company
+[22:02.48]  domain so name should be good let's
+[22:06.56]  check
+[22:08.00]  settings yes name email address it's
+[22:12.60]  good should be email let's check how
+[22:14.64]  you're calling it on the C well I guess
+[22:17.48]  it doesn't matter we can map it since
+[22:19.08]  we're using zapier and here I'm going to
+[22:22.76]  make sure that we do company
+[22:25.96]  domain and we can call this domain
+[22:29.60]  all right let's check if I did it all
+[22:31.28]  right email name all right this feels
+[22:35.44]  good let's publish it for
+[22:41.28]  now and we can start to set up our zaper
+[22:46.36]  so one thing that you will notice is
+[22:48.76]  that we have a few Integrations we're
+[22:50.52]  still beating out more again this is
+[22:52.48]  something that you can do manually as
+[22:53.68]  well if you're doing the open seource
+[22:54.80]  round but if you're using Enterprise
+[22:57.44]  there's a few integration one of them is
+[22:59.52]  zapier another one's HubSpot another one
+[23:01.36]  is laack so that kind of can help you
+[23:03.64]  out with zapier on that you connected
+[23:07.08]  you can actually do you can actually use
+[23:09.08]  screw AI in here so let's say that we're
+[23:11.40]  going to start with a web hook because
+[23:12.96]  we're getting this request from
+[23:14.72]  somewhere um let's go for it now
+[23:19.08]  continue and we can test this URL I
+[23:22.72]  think I have Postman open here somewhere
+[23:26.68]  yes so there we go
+[23:29.40]  and it's uh domain email and
+[23:34.80]  name so let's add name in here
+[23:40.16]  oh and let's
+[23:42.68]  do J MOA there you go send it boom
+[23:48.72]  request
+[23:49.76]  successful test trigger we got a request
+[23:53.48]  all the data is in there there you go
+[23:56.00]  and now we can open create I and we can
+[23:58.68]  actually choose to kick off a
+[24:00.88]  crew and our crew should show up in here
+[24:04.92]  assuming the deploy is done uh it is
+[24:08.56]  grag Task there you go I think deploy is
+[24:12.48]  two yeah it's a two happening there you
+[24:14.68]  go provisioning once that we deploy in
+[24:17.56]  we're going to see it load up exactly
+[24:19.52]  the same feuds that we want in here so
+[24:21.76]  we're going to see the name the domain
+[24:24.60]  and um and the email show up in here so
+[24:27.92]  that we can map from what we're getting
+[24:29.60]  from this web hook and after this I'm
+[24:32.52]  going to use resend again no specific
+[24:35.36]  reason um just turn out to be a recent
+[24:37.88]  customer I really like zenoh haha I
+[24:40.24]  think he's doing a amazing job in
+[24:42.76]  there and we can send an
+[24:45.16]  email and uh we're going to use the same
+[24:48.64]  email that we are getting from our
+[24:51.92]  hook and oh that's not the two yeah
+[24:54.96]  that's two from let's say no reply
+[24:58.76]  um reply at
+[25:01.76]  crew.com subject we can say
+[25:06.28]  um hey there let's
+[25:11.16]  chat by the way for people who don't
+[25:13.32]  know resend is is a way to send
+[25:16.92]  transactional emails um so meaning you
+[25:22.24]  know a transaction happens an email gets
+[25:24.96]  in and they've also got like a really
+[25:27.04]  beautiful um analytics platform um so it
+[25:32.68]  is a it is beautiful again I'm not like
+[25:35.04]  associated with with recent or crew or
+[25:37.88]  anything I just it's a cool product um
+[25:40.16]  and they're doing cool things yeah I
+[25:42.80]  agree it's funny when you think about
+[25:44.68]  email like it's not kind of like a your
+[25:47.00]  your go-to kind of like startup if
+[25:49.16]  you're trying to think about starting a
+[25:50.40]  business feels like such a Consolidated
+[25:53.88]  Market but uh I guess there you go there
+[25:56.16]  do you have it all right quick ad break
+[25:58.84]  let me tell you about a business I
+[26:00.28]  invested in it's called boring
+[26:02.04]  marketing.com so a few years ago I met
+[26:05.40]  this group of people that were some of
+[26:07.52]  the best SEO experts in the world they
+[26:10.68]  were behind getting some of the biggest
+[26:13.32]  companies found on Google and the secret
+[26:15.80]  sauce is they've got a set of technology
+[26:18.48]  and AI that could help you outrank your
+[26:22.12]  competition so for my own businesses I
+[26:24.80]  wanted that I didn't want to have to
+[26:26.32]  rely on Mark Zuckerberg I didn't want to
+[26:28.32]  depend on ads to drive customers to my
+[26:31.28]  businesses I wanted to rank high in
+[26:33.28]  Google that's why I like SEO and that's
+[26:35.76]  why I use boring marketing.com and
+[26:38.32]  that's why I invested in it they're so
+[26:40.56]  confident in their approach that they
+[26:41.88]  offer a 30-day Sprint with 100% money
+[26:44.76]  back guarantee who does that nowadays so
+[26:47.52]  check it out highly recommend boring
+[26:49.56]  marketing.com so while this is deploying
+[26:52.68]  let me explain what we're going to be
+[26:54.28]  doing next after this okay and we get
+[26:57.72]  this working into to
+[26:59.88]  end well I find that an email is fun but
+[27:04.16]  it's kind of like a it's kind of like a
+[27:06.80]  demo right like it's what you see a lot
+[27:08.44]  of like other folks do as well I think
+[27:11.12]  we can do a custom report custom PDF
+[27:15.28]  report something that looks more fancy
+[27:17.64]  more drafted towards specifically their
+[27:19.80]  company with more specific like we
+[27:22.24]  already doing all this enrichment we're
+[27:23.76]  already like having this uh agents kind
+[27:25.80]  of create these ideas on how they can
+[27:27.24]  use it so why not like go one step
+[27:29.72]  further do the craft report and then use
+[27:34.40]  that to be sent on the
+[27:37.76]  email
+[27:40.04]  so the custom PDF report this is
+[27:43.52]  something that you would hire typically
+[27:46.00]  a junior marketing person to actually
+[27:47.96]  put together take the data make it look
+[27:50.56]  nice maybe you want a designer there or
+[27:52.68]  or whatever but it's it's someone you're
+[27:54.76]  paying you know in the US at least kind
+[27:57.48]  of you know 50 to $80,000 a year um
+[28:01.64]  you're saying basically you can just
+[28:04.12]  automate this whole thing yeah I mean
+[28:08.32]  what you can do is you can get like them
+[28:10.12]  to do maybe a 10 play right and then
+[28:12.04]  based off that 10 play you can like
+[28:14.24]  preview the information so you still get
+[28:16.32]  like that very nice high quality that
+[28:18.36]  you would get in terms of like capturing
+[28:20.68]  your ense and what you want to the PDF
+[28:23.44]  to look but then what you get is kind of
+[28:26.20]  like this very kind of like custom
+[28:27.44]  reports per for customer so as soon as
+[28:29.68]  someone sign up like as a lead they get
+[28:32.92]  something and you can go a little crazy
+[28:34.32]  on this you can put their company logos
+[28:36.56]  you can put like a bunch of other things
+[28:39.40]  I usually I I love when I think about
+[28:41.44]  marketing and I'm going back to my CLEAR
+[28:43.92]  bit days here um one thing that I would
+[28:46.72]  think is I would love to send a lead
+[28:49.52]  materials that they would like to show
+[28:51.60]  in a meeting right like imagine saying
+[28:54.20]  something so beautiful that they are
+[28:56.00]  okay taking that and going back to their
+[28:58.28]  team and so like oh let me show you what
+[29:00.52]  we should be doing and how we should be
+[29:02.16]  thinking about this so I think there's
+[29:04.12]  something special about that and just
+[29:05.76]  helping your champion in your like lead
+[29:08.24]  and your customer to actually kind of
+[29:09.76]  like uh get some props in there so uh
+[29:14.08]  for that for this custom PDF report
+[29:16.44]  we're going to need a template so let's
+[29:18.32]  figure out how we can get a template
+[29:20.44]  going uh eest way for me to generate
+[29:23.16]  templates now is using chat GPT uh I
+[29:27.12]  love it so so why don't we go to chat B
+[29:29.88]  here real quick and I have a prompt in
+[29:31.84]  here write me a custom
+[29:34.20]  HTML that is pretty that I can export to
+[29:36.92]  make a beautiful report there's a bunch
+[29:38.32]  of typos in there but it should still
+[29:40.56]  works just fine so while chat GPT is
+[29:43.96]  writing in our deployment is done so we
+[29:46.84]  can go back into our zapier and let's go
+[29:50.48]  back into configure there we
+[29:53.16]  go refresh results I want to get GR
+[29:59.08]  test and refresh in here make sure that
+[30:02.48]  we got there we go so we can now use our
+[30:06.36]  a company it's not a company name so we
+[30:10.32]  can
+[30:11.16]  use domain here I guess I missed the
+[30:14.16]  point on that one
+[30:15.76]  email and domain again there you go that
+[30:19.20]  should be okay all right this is good to
+[30:23.48]  go test St is going to try to kick off
+[30:26.36]  the screw in crei make that it works
+[30:29.80]  there you go and you can get you get a
+[30:32.28]  ky off ID in here you don't need to
+[30:34.28]  worry about that like the integration is
+[30:35.96]  going to figure itself out so it should
+[30:38.00]  just work and then as the HTML we
+[30:40.80]  basically want the crew result um into
+[30:44.28]  this one and we can test the step make
+[30:47.68]  sure it's all fine uh c. oh I think
+[30:51.88]  there is a typo in here yes. there we go
+[30:56.48]  continue
+[30:58.08]  test
+[31:00.60]  stab and there we go so we can publish
+[31:03.44]  this one uh because we just trigger this
+[31:06.76]  you can actually get to see the
+[31:08.28]  execution in here uh we just run this 34
+[31:11.32]  seconds ago we can go into the execution
+[31:14.80]  we can see what the email looks like he
+[31:17.96]  I hope this finds you well I have been
+[31:19.44]  follow cre impressive Journey truly
+[31:21.28]  inspired about the Innovation Solutions
+[31:23.16]  here are a few AI agent ideas St for
+[31:25.12]  crei driven workflows remote teams
+[31:28.00]  automated compliance Dynamic customer
+[31:30.76]  engagement I I would use those
+[31:33.36]  ideas I think that fits into my alley
+[31:36.88]  right
+[31:37.68]  totally so then again we could optimize
+[31:40.40]  the prompt to make sure that no subject
+[31:42.40]  is included that doesn't have like this
+[31:44.72]  interpolation your name like we we can
+[31:47.12]  work around all that but let's call this
+[31:49.56]  a win for now let's good to go um
+[31:52.72]  there's a few extra matrics that we can
+[31:54.32]  talk about eventually but I think this
+[31:55.80]  should be good all right so now we have
+[31:58.44]  our zapier we have our URL let's copy
+[32:01.44]  this one we can go into our webflow we
+[32:04.36]  can go into our form and we can add this
+[32:06.92]  I'm going to add this both as action and
+[32:09.56]  redirect just in case and
+[32:13.84]  publish in meanwhile I'm going to check
+[32:17.04]  my email just get it ready there we go I
+[32:21.88]  got an
+[32:24.24]  email and I want to make sure that
+[32:28.60]  we now get the email end to end on this
+[32:31.32]  one all right so we publish it let's
+[32:34.92]  test
+[32:36.20]  it
+[32:40.00]  boom by the way let me I think I lost
+[32:43.08]  reverse side there we go is back so this
+[32:45.36]  is our landing page amazing landing page
+[32:48.04]  future is now give give our email in
+[32:50.96]  here so uh in here we're going to say
+[32:55.08]  jur email.
+[32:58.68]  my domain ci.com as well and I'm going
+[33:01.64]  to do
+[33:02.80]  subit um H I guess expecting this to be
+[33:06.72]  an email let me fix that in webflow real
+[33:10.04]  quick this is not an email Feud uh
+[33:15.68]  uh
+[33:19.24]  so style maybe let's check this
+[33:23.68]  out
+[33:26.36]  settings domain domain email form there
+[33:29.96]  we go there we go it's a plane publish
+[33:33.84]  it there we
+[33:37.80]  go nice all right so now we can refresh
+[33:43.08]  this and we can
+[33:45.28]  do
+[33:47.32]  J J cre.com and the company domain is
+[33:51.84]  cre.com and I can click submit and there
+[33:54.80]  we go because I didn't add the proper
+[33:56.96]  redirect it took me to um the Json thing
+[34:00.72]  but it should now have a running
+[34:04.32]  execution in here
+[34:06.64]  stopped what was this C I stopped by
+[34:10.32]  this error missing company name company
+[34:13.08]  name is missing let's see what is the
+[34:15.56]  request that we got from the web hook uh
+[34:20.00]  data in data out so query string name oh
+[34:24.52]  I guess it's sending a get request so
+[34:27.84]  again post requests publish publish like
+[34:35.68]  domains all right so let's go back
+[34:40.84]  refresh and let's do it again jaw
+[34:44.40]  mow H at crew.com and crew.com and do a
+[34:50.28]  submit there we go let's see if it's
+[34:52.72]  running now
+[34:57.76]  there we
+[34:58.88]  go it's running so while the crew runs
+[35:03.32]  and we get our email and everything's
+[35:05.36]  going let's check our PDF template uh
+[35:08.84]  there we go we have a PDF template I'm
+[35:10.72]  going to just copy this for now because
+[35:13.20]  we're ready downloaded our crew I'm
+[35:15.08]  going to do some of the work in here so
+[35:16.84]  I'm going to create a folder here that
+[35:18.20]  I'm going to call template and in here
+[35:21.32]  I'm going to get a flyo that I'm going
+[35:22.64]  to call pdf. HTML I'm going to paste our
+[35:26.12]  PDF in there and let's see what that
+[35:29.12]  looks like just to make sure that it's
+[35:31.24]  nothing crazy s temp plates
+[35:34.68]  PDF let me open this up and bring it to
+[35:37.84]  screen all right it's okay for us to
+[35:41.00]  start again you can do like all sorts of
+[35:43.12]  crazy things in the end like because
+[35:44.84]  it's HTML and we're going to convert
+[35:46.68]  this in PDF you can just make sure that
+[35:49.08]  it looks exactly how you want you could
+[35:50.96]  have images across the whole thing but
+[35:53.44]  that feels good enough now we want to
+[35:55.92]  make sure that this the content of the
+[35:57.84]  is completely Dynamic so what we're
+[36:00.52]  going to do in here is I'm going to
+[36:03.00]  basically ask it to update and I'm using
+[36:07.04]  csor here I read love I'm going to say
+[36:10.88]  replace the text content with variables
+[36:15.48]  we can
+[36:17.80]  interplate um using
+[36:21.40]  the
+[36:25.08]  their pattern boom there we
+[36:28.92]  go so now we're placing title intro all
+[36:33.16]  right this is this is good now we have a
+[36:35.92]  bunch of information for us to
+[36:37.44]  interpolate in this PDF right but our
+[36:40.92]  crew is geared towards an email so we
+[36:43.72]  need to change that slightly first thing
+[36:47.12]  is with crew aai now for now our agents
+[36:50.24]  are working mainly with text text in
+[36:52.64]  text out it's email but this requires a
+[36:55.92]  more structured output we're talking
+[36:58.32]  about title sections so we want to make
+[37:02.32]  sure that these agents are outputting ad
+[37:05.76]  Jon or a penic object something that you
+[37:08.12]  can actually use
+[37:09.88]  programmatically so crew actually
+[37:12.24]  supports you to have like that crew like
+[37:14.40]  penic output or Jon output so let's ask
+[37:18.04]  it to uh create a
+[37:21.84]  penic object um actually model that will
+[37:27.68]  hold out the data
+[37:31.08]  necessary to interpolate on the PDF file
+[37:37.40]  there you go by the way Greg do do you
+[37:39.08]  use cursor or you are a wind surf
+[37:42.08]  guy um well I'm actually more of a bolt
+[37:46.72]  guy than anything oo I love it Vats
+[37:50.36]  amazing yeah I I went to CS School
+[37:53.68]  dropped out but finished most of my
+[37:55.44]  classes so I'm somewhat technical but
+[37:57.60]  like a bad technical person and I found
+[38:00.16]  that Bol has
+[38:02.88]  been more geared towards non- technical
+[38:06.76]  people I hear you I hear yes doesn't
+[38:10.08]  mean I don't like mess around with
+[38:11.64]  winser for cursor or whatever I I'm also
+[38:14.56]  in the stage where I I want to play with
+[38:17.60]  all the tools like I I've just been
+[38:19.80]  playing with lovable
+[38:21.32]  recently um which is another one and I
+[38:24.04]  just like to like I'm a learner you know
+[38:26.96]  so
+[38:28.56]  we don't know who's going to win yet so
+[38:30.76]  I might as we might as well play with a
+[38:32.76]  bunch of the tools I hear you and yeah a
+[38:35.84]  lot of people get to ask me this asking
+[38:37.48]  like hey like what is going to happen
+[38:39.48]  with the market like how are things are
+[38:41.24]  going do you think like there's going to
+[38:42.60]  be a clear winner and what I'm telling
+[38:44.16]  everyone like it's very much early days
+[38:47.12]  still like no one knows how the things
+[38:49.56]  are going to play out and there's a few
+[38:51.80]  things that are not in your control for
+[38:53.88]  example you you don't truly know like
+[38:56.40]  how this is going to impact like
+[38:57.68]  companies or how this going to impact
+[38:59.12]  jobs and everything along the way but we
+[39:02.56]  don't have control over that but you do
+[39:04.88]  have control around like what are you're
+[39:06.92]  going to do with your your time right
+[39:09.44]  what is happening right now so I usually
+[39:12.24]  recommend people to just learn these
+[39:14.12]  tools and as use them anyway because
+[39:16.12]  doesn't matter what happens in the
+[39:17.32]  future like what to wins or how AI
+[39:19.92]  impacts like everyone in the end of the
+[39:22.32]  day that will like that knowing these
+[39:25.68]  things are going to set you up for
+[39:27.08]  better like even independently of what
+[39:30.20]  happens totally all right let's go back
+[39:33.72]  into this so we just create this ptic
+[39:35.68]  object uh now that we have this ptic
+[39:38.04]  object we actually can go to our final
+[39:40.88]  task in here and I'm actually saying
+[39:43.48]  like hey outputs this object so there's
+[39:45.84]  going to be a function calling at the
+[39:47.36]  end that's going to convert the output
+[39:49.72]  of our agents into this object that we
+[39:52.68]  need but now that I just noticed I'm
+[39:54.56]  going to actually remove this for a
+[39:55.72]  while because we need to update this
+[39:57.00]  task
+[39:57.96]  so let's go into tasks and
+[40:00.56]  say uh I need to update this
+[40:05.32]  tasks to now instead
+[40:09.24]  of coming up with an
+[40:14.40]  email to
+[40:17.08]  um get all the data
+[40:21.28]  necessary necessary to create this
+[40:25.44]  object and I'm going to copy the object
+[40:28.08]  there this is the object that we are
+[40:29.96]  going after so I'm going to
+[40:32.48]  say there we go so let's see how it's
+[40:36.16]  going to go about
+[40:38.00]  things um seems to be keeping out the
+[40:40.52]  same
+[40:41.80]  agent the one thing that I would do is
+[40:44.68]  let's update the agents as well to
+[40:47.08]  factor this
+[40:48.28]  in we are now updating we're now
+[40:54.52]  updating this agent to generate to
+[41:01.08]  gather all data to
+[41:05.24]  generate
+[41:07.20]  genate this
+[41:09.60]  object instead of writing an
+[41:14.92]  email there you go it's going to
+[41:16.84]  probably rename our agents and change a
+[41:18.64]  few things but that's
+[41:21.48]  fine yes there we go there we go update
+[41:25.80]  everything all right for Mini 4 o 4 mini
+[41:29.76]  let's do 4 on this one as well uh and in
+[41:33.60]  here now um update this to
+[41:37.52]  use the
+[41:39.68]  agent defined
+[41:42.60]  in agents there you go I gotta say once
+[41:45.80]  that you got used to this like new tools
+[41:47.64]  like cursor and such it's hard to go
+[41:50.56]  back totally it's so good it's so good
+[41:53.96]  oh funny enough they kept the same key
+[41:55.88]  so you can see it's email draft after
+[41:57.48]  even though they change the role so
+[41:59.76]  maybe we maybe we do update like update
+[42:01.68]  the key update the agent Keys reflect
+[42:06.08]  the neurals there we
+[42:08.46]  [Music]
+[42:09.92]  go yeah go just changing this final one
+[42:12.64]  the PDF drafter so let's update this to
+[42:15.16]  use PDF drafter all right so now we
+[42:17.32]  Chang our agents we changed our tasks
+[42:20.40]  again I used cursor to do in AI so I'm
+[42:23.36]  not really like taging along and
+[42:24.68]  optimizing this prompts very much but if
+[42:27.52]  it works it will be it would be pretty
+[42:29.56]  good so now what we can do is we can ask
+[42:33.04]  it uh update this class to use the new
+[42:40.04]  agent in
+[42:43.96]  tasks and it should it should do good
+[42:47.24]  job about that well there goes by the
+[42:49.72]  way we never checked our email uh I I
+[42:52.48]  probably got an email already about this
+[42:56.48]  and gu what I did get it got mail you
+[42:59.40]  got it I got a mail I got a mail yes let
+[43:01.84]  me let me move this into or view there
+[43:06.60]  you go I got our first one that we were
+[43:08.40]  testing on and I got the I got a new one
+[43:11.00]  that now seems to be doing great let me
+[43:14.16]  move this into
+[43:17.15]  [Music]
+[43:18.36]  view all right email no
+[43:21.84]  reply move it
+[43:24.00]  here no no no move it move it here
+[43:30.68]  uh there we go there we go so you can
+[43:33.12]  see that I got a mail and hi Jo I hope
+[43:36.60]  this me finds Well my name is again we
+[43:39.12]  didn't like necessarily mess around with
+[43:41.08]  that I've been called impressive Jenny
+[43:43.16]  reach out for some innovative ideas
+[43:44.72]  about offers especially around strategic
+[43:46.96]  Partnerships customer experience
+[43:48.20]  Regulatory Compliance love to schedule a
+[43:50.32]  call to discuss would be available to
+[43:52.24]  check next week so again pretty cool you
+[43:54.84]  could make this like so much much more
+[43:57.76]  advanced if you really want to and more
+[44:00.56]  precise and this is kind of like where
+[44:02.88]  you get more into kind of like what
+[44:04.36]  we're seeing companies doing where
+[44:06.36]  you're going to also integrate this with
+[44:08.16]  like a Google Calendar you're also going
+[44:10.60]  to integrate this with your CRM so now
+[44:13.44]  it's not only kind of like uh in like
+[44:16.20]  sending the email but actually
+[44:17.84]  scheduling the call checking if you have
+[44:20.16]  the times lot available and kind of like
+[44:22.12]  doing going out the way but this would
+[44:24.56]  be a good way for you to get things
+[44:26.00]  started and again there's a few things
+[44:27.80]  that we could change in the prompt to
+[44:29.92]  not include the subject to not have
+[44:32.48]  interpolation and everything but just
+[44:35.32]  like a a quick example of how you can
+[44:37.04]  get some of these things kind of like
+[44:38.40]  going and um and how some companies go
+[44:40.60]  about
+[44:41.60]  this yeah I think you know tactically
+[44:45.04]  speaking if you're if you're building
+[44:46.56]  some of these things it's like that what
+[44:48.16]  I just saw that email is good enough to
+[44:50.72]  start and then spend the next few days
+[44:54.00]  just tweaking
+[44:55.48]  learning uh and making more advanced but
+[44:58.56]  you don't I guess what I'm saying is you
+[45:00.80]  and I'm curious your thoughts like you
+[45:01.92]  don't need to go and build the the
+[45:04.20]  fanciest output from day one right don't
+[45:07.52]  you want to just try and get the the
+[45:09.24]  basics going first yeah a th% I think
+[45:13.12]  there's a few things that AI really
+[45:14.96]  shines in and and one of those is like
+[45:17.48]  it's as it's I think it's the easiest
+[45:20.32]  way for it to be a agents right now like
+[45:22.08]  if you want to be the more custom ones
+[45:23.64]  like ignoring like all like the the more
+[45:26.00]  kind of like geared St kind like drag
+[45:27.84]  and drop only simpler use cases uh I
+[45:31.04]  think this is kind like the easiest way
+[45:32.24]  for you to inate because now like we if
+[45:35.44]  we spend like an actual couple hours in
+[45:37.44]  here going about our agents and our
+[45:39.36]  tasks and maybe doing all these
+[45:41.56]  Integrations we could get something
+[45:43.40]  pretty cool that we can just deploy
+[45:45.40]  right away and turn it on it's connected
+[45:48.00]  to our landing page and just have it
+[45:49.60]  going but I think you got to the point
+[45:51.32]  where you got a name in the head where
+[45:53.56]  you want to make sure that you get
+[45:54.44]  something out there and once it's
+[45:56.24]  working then about inating on
+[45:59.52]  it so um all right so now let's just
+[46:02.40]  wrap this things up like we we can now
+[46:05.48]  pass an extra attribute C output penic
+[46:08.64]  again we're getting more technical in
+[46:10.12]  here because now you want your agents to
+[46:12.12]  Output actual structure data and this is
+[46:15.64]  the structure data that's going to
+[46:16.76]  Output so we can actually use it and
+[46:19.92]  what you want to make sure is that you
+[46:23.32]  are
+[46:24.96]  sorry what you want to make sure is is
+[46:27.08]  that you are updating this PDF to now
+[46:31.44]  include all this data that your agents
+[46:34.48]  are getting to you so now we're getting
+[46:37.76]  to more Precision what we have done with
+[46:40.04]  crew so far is basically very fuzzy and
+[46:42.76]  there's a lot of agency like the agents
+[46:44.64]  are doing everything but then again as
+[46:46.88]  the use cases got more complex you start
+[46:48.84]  to need more precision and more like uh
+[46:51.76]  repeatability and consistency on their
+[46:53.68]  use cases so usually people start with
+[46:56.56]  before and after hooks I'm going to show
+[46:58.48]  that in a second uh but you can go into
+[47:00.72]  guard rails and out the way into flows
+[47:03.48]  and flows are way more complex way more
+[47:05.44]  fun as well to build uh but they're way
+[47:07.52]  more complex and you can get like some
+[47:09.24]  crazy use cases once that you get into
+[47:11.28]  kind of like the flow level but um that
+[47:13.20]  is pretty
+[47:18.12]  interesting all right so for S before
+[47:20.72]  hooks we can basically do an after keyof
+[47:24.56]  um hook that means that that is going to
+[47:27.40]  run after the crew so you do The
+[47:30.04]  annotation and in here you can say I
+[47:33.52]  will create uh
+[47:37.72]  HTML and you get the crew
+[47:43.08]  output as an attribute in here that you
+[47:45.88]  can use um that you can use down here so
+[47:49.16]  I actually have an example that we can
+[47:52.24]  use to ask it to do it for us so so
+[47:57.64]  let's
+[47:58.88]  say uh update this after key COV
+[48:04.80]  function to
+[48:07.00]  interpolate the variables in
+[48:10.36]  [Music]
+[48:12.32]  PDF here is a high level
+[48:17.48]  example all right this is an example of
+[48:19.80]  this again interpolating variables
+[48:21.48]  loading the template and then
+[48:22.64]  interpolating a bunch of variables and
+[48:25.12]  it's exactly what it's doing right now
+[48:26.60]  but very geared stores the exactly
+[48:28.88]  template that we have and we can just
+[48:31.80]  make sure that we do the OS
+[48:34.08]  import so there you go it's loading the
+[48:36.28]  PDF and then uh interpolating all the
+[48:38.84]  variables so basically interpolating
+[48:40.48]  with everything that we have for the
+[48:42.04]  things that are arrays it's making lists
+[48:44.32]  out of them and then at the end it needs
+[48:48.28]  to return an actual crew output um
+[48:53.44]  object and This Crew output object needs
+[48:57.16]  to be there we go it needs to be and let
+[49:01.24]  me import This Crew object I think it's
+[49:04.32]  a
+[49:05.84]  from from crew AI is that it no I don't
+[49:10.32]  think that's it and boom so that import
+[49:14.84]  the right class so now we're returning a
+[49:16.76]  crew output where we return the final
+[49:18.96]  template now completely interpolated so
+[49:21.32]  now there you have it this crew is able
+[49:24.20]  to not only do the things that it was
+[49:25.68]  doing before but generates the custon
+[49:28.52]  PDF for us so with these changes we can
+[49:32.24]  actually just give an update to our
+[49:35.16]  project so um get comment uh making it
+[49:40.76]  output a
+[49:42.88]  template plate and get Bush
+[49:47.56]  rain and now we're updating our crew to
+[49:52.44]  basically being able to generate this
+[49:54.20]  PDF so if I turned out Auto deploy it
+[49:57.68]  will deploy right away if not we can
+[49:59.64]  just trigger a redeploy by clicking
+[50:02.08]  right in here so let's click on it and
+[50:05.32]  that's going to start redeploying this
+[50:08.12]  uh crew so getting back into this so we
+[50:11.08]  are updating our crew now and that crew
+[50:13.76]  is now going to be able to like to
+[50:15.24]  generate the PDF templates for us so
+[50:17.48]  that we can send them over email that
+[50:19.64]  seems good so while that is deploying I
+[50:24.24]  think we can take a brief look at flows
+[50:27.96]  again those are more technical so some
+[50:30.16]  of you might like say hey all right
+[50:32.48]  maybe I don't want I don't want to Trad
+[50:33.92]  go that far but a lot of you might want
+[50:35.88]  to go that far uh and the cool
+[50:38.12]  interesting about flows is that that's
+[50:40.00]  where I kind of like a lot of the more
+[50:41.88]  complex use cases really come to life um
+[50:44.88]  and that's where we see like um like
+[50:47.04]  Integrations with sap Salesforce pulling
+[50:50.00]  out those different sources executing
+[50:52.16]  some python before after Cruise during
+[50:54.92]  Cruise things get a little uh a little
+[50:56.76]  all over the place uh but it starts
+[50:59.00]  simple it's just it can get complex but
+[51:01.16]  it starts simple so this is this is how
+[51:03.64]  it works you can start a flow the same
+[51:06.96]  way that we created a crew you're going
+[51:08.44]  to do crei create flow and you're going
+[51:12.40]  to give your flow a name so I'm going to
+[51:14.52]  say
+[51:16.40]  educational
+[51:18.20]  content flow for example and the flow is
+[51:23.36]  an ability for you to have an even based
+[51:28.24]  automation that have crews in it so let
+[51:33.12]  me show you what this looks
+[51:36.12]  like so the flow has also a similar
+[51:39.20]  folder structure but you're going to see
+[51:40.68]  that it has a cruise folder so you can
+[51:43.00]  have many crews inside the flow and the
+[51:46.68]  flow follows kind of like an EV like an
+[51:49.52]  event based system where you basically
+[51:53.88]  have an start function that you can an
+[51:56.96]  with this start annotation and then you
+[51:59.96]  can have other functions listening to
+[52:02.88]  functions before there might be a
+[52:04.76]  meeting event so for example it's going
+[52:07.84]  to generate a sentence count and then
+[52:11.08]  the function generate poem is going to
+[52:13.44]  be listening for once that one finishes
+[52:16.80]  and this one's going to kick off a crew
+[52:19.12]  and then save poem is going to be
+[52:21.56]  listening to when generate poem finishes
+[52:24.44]  and then it's going to save that in a
+[52:26.00]  text file file so it starts simple but
+[52:29.16]  things can get a little fence in here
+[52:30.92]  where you can start something and then
+[52:32.80]  you kick off a crew and that crew you do
+[52:35.16]  some validation of the output and then
+[52:37.36]  depending on the result you call another
+[52:39.84]  crew if you really want to go there so a
+[52:42.60]  good example in a use case where this
+[52:44.52]  could be useful and and that's why I
+[52:46.80]  named educational content is for example
+[52:49.12]  generating long form documents so let's
+[52:52.36]  say that he want to generate a crash
+[52:54.44]  course PDF again for the sake of another
+[52:57.44]  example where you go over like many
+[53:00.68]  different chapters you're talking about
+[53:02.40]  many different chapters like evolving
+[53:04.56]  into a topic this is a great example of
+[53:07.04]  our flow because you can have a function
+[53:11.08]  together inputs from the user for
+[53:13.00]  example what is the topic that this C is
+[53:14.64]  going to be about what are the like the
+[53:17.60]  like um the learning style for this uh
+[53:21.68]  person and what are some of the main
+[53:24.64]  interests that this person have so that
+[53:26.52]  we can use those interests as examples
+[53:28.92]  and throughout the educational content
+[53:31.04]  and then you have a crew that generates
+[53:32.68]  a plan it plans out what are going to be
+[53:35.16]  the chapters that you're going to have
+[53:37.36]  like what they're going to look like and
+[53:39.32]  then you have another crew that writes a
+[53:41.72]  chapter so again you're going to have
+[53:43.24]  like a longterm content and like a fully
+[53:45.44]  blonde kind of like PDF at the end with
+[53:47.64]  like many many pages if you really want
+[53:49.84]  to incredible dude yeah this this is
+[53:53.96]  this is pretty interesting so again I'm
+[53:56.20]  going to I'm going to real quick try to
+[53:58.44]  show like what this would look like I
+[54:00.08]  don't know if have time to put something
+[54:01.80]  end to end together uh grab keep me
+[54:04.56]  honest here yeah I'd love just to see
+[54:07.36]  what it would look like like to me I'm
+[54:09.88]  visual so I need I need to see that
+[54:11.64]  before you leave oh so if you're a vis
+[54:14.48]  you're going to absolutely love flows
+[54:16.64]  I'm going to show you one thing in a
+[54:18.08]  second so all right let's change this
+[54:20.00]  real quick so let's first um go into our
+[54:23.60]  cruise and rename this poem crew to be
+[54:27.88]  um uh let's
+[54:29.80]  say
+[54:31.80]  content plan
+[54:35.56]  crew and rename this file to cont plan
+[54:39.60]  crew and rename this to content
+[54:44.60]  plan content plan crew there we go now
+[54:49.56]  again I'm going to be very like straight
+[54:51.40]  the point in here usually you would
+[54:53.80]  spend a lot of more time on thinking
+[54:55.36]  about your agents and asks but just
+[54:57.16]  because we're trying to put something
+[54:58.40]  Qui together I'm going to say I want a
+[55:01.52]  couple agents to help me create a
+[55:06.32]  Content plan for a crash
+[55:11.04]  course a crash course on a
+[55:15.28]  topic um
+[55:17.52]  these this agents will take a few
+[55:23.56]  interpolations like topic
+[55:26.87]  [Music]
+[55:28.20]  uh learning
+[55:30.92]  style and uh
+[55:34.88]  interest inter interest there you
+[55:39.16]  go uh the topic is what the course is
+[55:43.84]  about the learning style should
+[55:49.72]  um advise how we plan the chapters in
+[55:56.96]  the
+[55:58.00]  interests should be used as for examples
+[56:03.68]  and
+[56:06.08]  such uh final output of this will be a
+[56:12.80]  plan with many chapters there we go
+[56:17.60]  let's see what they come up
+[56:19.68]  with all right it updated it added a
+[56:22.84]  couple oh sorry it added a couple in
+[56:24.88]  here uh course planner account expert
+[56:28.32]  and a learning specialist and yeah this
+[56:32.72]  feels this feels very good now let's
+[56:36.24]  make sure that we also update our tasks
+[56:39.64]  so I
+[56:42.88]  want tasks to help me create a plan all
+[56:46.08]  right uh let's use the
+[56:50.12]  agents there you go so hopefully between
+[56:53.60]  the context of the agent ymo and what I
+[56:56.00]  just typed in there as prompt it is able
+[56:58.28]  to create me a good set of
+[57:02.12]  tasks all right so the final one is
+[57:04.44]  recommendation learning activities and
+[57:05.92]  engagement for each chapter I actually
+[57:09.40]  want def find all right so I'm going to
+[57:11.12]  say I want a final task that
+[57:16.04]  task that brings it out together on a
+[57:21.88]  comprehensive list of our chapters
+[57:26.60]  and our information about them all right
+[57:32.20]  and there we have it the one thing that
+[57:35.32]  I'm going to say is I'm going to add
+[57:36.68]  this context for this
+[57:39.20]  agent all the other tasks so create the
+[57:42.44]  outline the develop and optimize so
+[57:45.24]  whatever the output of creating the
+[57:47.44]  outline task whatever the output of the
+[57:49.72]  develop chapter content and whatever the
+[57:51.88]  output of the optimizing learning all
+[57:53.88]  those outputs are going to be sent to
+[57:55.92]  this agent to help it to come up with
+[57:58.64]  this final final result all right so now
+[58:02.40]  that we have this we just need to make
+[58:04.96]  sure that we are loading the right crew
+[58:08.00]  in here so this poem crew exists no
+[58:10.20]  longer these is our new content crew and
+[58:13.80]  instead of starting with a generate
+[58:15.92]  count I'm going to say um gather user
+[58:20.60]  input so what is the topic what is the
+[58:24.04]  learning style what is the interest
+[58:26.80]  that feels good now after gather the
+[58:29.60]  input I want to generate content plan so
+[58:34.16]  this going to be listening to that user
+[58:36.52]  input and it's going to call our crew
+[58:39.20]  and it's going to pass all the inputs
+[58:41.32]  that we just gathered by the way it's
+[58:43.96]  using this state we want to probably
+[58:45.92]  update this to be another state there we
+[58:49.00]  go there we go so now we're using
+[58:51.72]  everything that we want in there so
+[58:54.56]  after the Cent plan is generated in this
+[58:56.72]  is where you can start getting things a
+[58:58.16]  little more fancy we can say like all
+[58:59.44]  right let's uh save content plan and we
+[59:02.96]  can save this as Jon by the way let's do
+[59:08.24]  Jon and in here we can say that we want
+[59:11.24]  to get the Jon output out of from this
+[59:14.52]  and in here we want to make sure that
+[59:15.92]  we're updating this to use the content
+[59:18.32]  flow and the content
+[59:20.60]  flow and we have a plan the one thing
+[59:23.56]  that I will change though is because if
+[59:25.48]  you think about it the plan is a
+[59:28.04]  structured object right we're thinking
+[59:29.92]  about we have chapters and these
+[59:32.36]  chapters we have kind of like
+[59:33.88]  descriptions they're going to have
+[59:35.44]  titles so what we can do is we can say
+[59:40.60]  um create a pantic model that uses the
+[59:47.24]  output and I'm going to copy the final
+[59:49.76]  tasking here there we go the output of
+[59:54.32]  this task
+[59:57.60]  um to hold the structure data of a list
+[60:03.56]  of
+[60:06.60]  chapters and there we go so we know that
+[60:10.24]  every chapter is going to have a title
+[60:12.20]  with description learning key Concepts
+[60:14.76]  all right a bunch of things and we are
+[60:16.64]  going to have a Content plan at the end
+[60:18.84]  so now we want to make sure that update
+[60:22.28]  is through to use the tasks
+[60:26.60]  and
+[60:28.52]  agents so it's going to update this to
+[60:31.52]  there we go use our new agents and our
+[60:33.40]  new
+[60:34.20]  tasks and we want this final task to do
+[60:38.00]  an
+[60:39.00]  output Jon that is conted
+[60:42.96]  plan so we created a crew again we're
+[60:47.12]  like we did everything very fast in here
+[60:49.28]  I told you but call thing we got a
+[60:51.16]  little complex and we uh and we have our
+[60:54.32]  flow that we created in here so the cool
+[60:58.16]  thing is we could like now have another
+[61:00.76]  function in here after we save the plan
+[61:03.64]  where we can say
+[61:05.92]  generate um
+[61:08.92]  content and this generate content could
+[61:11.96]  be
+[61:13.40]  listening here let me do this could be
+[61:17.48]  listening to the same function to
+[61:20.36]  generate content plan so this is an
+[61:22.40]  interesting one you can see that after
+[61:24.00]  you generate content you do two things
+[61:25.92]  you save the content and because that
+[61:28.04]  can happens synchronously we can go
+[61:30.48]  ahead and generate the content directly
+[61:33.40]  so we don't need to wait for the save to
+[61:36.36]  happen for us to generate the conty and
+[61:38.44]  this is where we could have another
+[61:41.20]  crew and This Crew will
+[61:45.00]  create uh each chapter in a loop for
+[61:50.76]  example and after we have created each
+[61:53.56]  chapter in a loop we could have a
+[61:56.04]  another one that is going to be saving
+[61:59.08]  content for example where we're actually
+[62:01.36]  saving the content so we can do a key
+[62:04.00]  here there we go so all right so in here
+[62:08.96]  you can see We Gather the user results
+[62:10.72]  that's where thing starts then after
+[62:12.28]  getting user results we generate the
+[62:13.88]  content plan then after that we do two
+[62:15.96]  things we save it and we generate the
+[62:17.72]  content with another crew and then we
+[62:19.92]  save that content somewhere the cool
+[62:22.24]  thing is because Greg is a visual person
+[62:24.88]  you can do now
+[62:26.80]  crei flow plot and that will actually
+[62:31.44]  plot you a visual showing exactly what
+[62:34.56]  is happening with your flow so you can
+[62:36.80]  see what are the crews that you have in
+[62:38.68]  there you can see what are the inputs
+[62:40.84]  like what are the different kind of like
+[62:42.76]  functions and events that are being
+[62:44.40]  emitted and that is something that
+[62:46.64]  people usually add to their Ry files and
+[62:49.52]  makes like parts of their documentation
+[62:51.72]  moving forward so let me open this up
+[62:54.44]  now it got generated so so I can show
+[62:57.68]  you what this looks like right there we
+[63:01.40]  go so we gather the user input we create
+[63:05.32]  the content plan and you can see this is
+[63:07.00]  a crew method so there's a crew in this
+[63:09.04]  one then we have save a Content plan and
+[63:12.36]  generate content eventually generate
+[63:14.20]  content is going to be a crew as well so
+[63:15.80]  it's going to be similar to this node
+[63:17.64]  and then we save content and there's a
+[63:19.52]  bunch of more things that you can do you
+[63:20.76]  can do router triggers and and some
+[63:23.20]  other things but you got a visual
+[63:24.56]  representation
+[63:27.24]  dude I I had a smile on my face I don't
+[63:29.08]  know if people saw that because I'm like
+[63:30.44]  this this this is what I need you know I
+[63:32.40]  needed
+[63:33.68]  this I'm going to say it does helps with
+[63:36.04]  like this more complex flows because
+[63:37.92]  like uh again you even if you crack it
+[63:40.92]  and you get the hangout of in you're
+[63:42.48]  still working on the team sometimes
+[63:43.96]  there's beaing this so the more visual
+[63:46.08]  that you can get for people to just like
+[63:47.56]  wrap their heads around what's happening
+[63:49.68]  the better and the easier it is for you
+[63:51.16]  to kind of like build the more complex
+[63:52.72]  flows like this one
+[63:56.60]  cool uh and then again like if you if
+[63:59.08]  you want to execute that is similar
+[64:01.08]  thing you can do c flow key cough and I
+[64:05.16]  think we don't let me double check one
+[64:08.08]  thing I don't think we
+[64:11.32]  have environment variables on this one
+[64:14.16]  no we don't so let me get our
+[64:16.32]  environment variables on this
+[64:20.52]  one all
+[64:22.36]  right there we go one second let me move
+[64:25.32]  this in into screen
+[64:29.32]  yes so now we can do crew
+[64:32.60]  AI uh flow Ki
+[64:36.28]  off and that will kick off our agents
+[64:38.64]  again we're missing a crew in there the
+[64:40.20]  crew that actually generates the content
+[64:42.12]  but you get to hang out with it we could
+[64:44.00]  like do that now and do that in the loop
+[64:46.36]  but it's asking for input so the topic
+[64:48.64]  will be a nuclear
+[64:52.16]  fusion I'm a very practical learner
+[64:56.96]  and the interest of the target audience
+[64:59.80]  would be games and Anime there we go and
+[65:03.68]  there you go our first uh our first crew
+[65:05.72]  is starting trying to create a high
+[65:07.32]  level curse outline so these first
+[65:10.00]  agents are going to do their thing you
+[65:11.68]  can see chapters introduction to nuclear
+[65:14.16]  fusion the science behind it Stellar
+[65:16.36]  Fusion process Fusion in technology
+[65:18.96]  current challenges the future and now
+[65:21.80]  the subject matter experts going to
+[65:23.48]  create an outline for each of those
+[65:25.24]  chapters
+[65:26.48]  and things are going to keep going and
+[65:28.16]  going but you get the hang on how this
+[65:29.68]  is going to turn out to be now if we do
+[65:33.44]  add our second crew in here what we can
+[65:35.68]  do is because we pushed our plan into
+[65:39.24]  this and we know that this plan is
+[65:43.12]  basically this content plan that has
+[65:45.00]  chapters we can Loop that in into
+[65:47.60]  another crew so content plan here is
+[65:52.40]  actually content plan
+[65:56.04]  is actually not a string but
+[66:00.64]  instead there we
+[66:02.96]  go and what we can do is on this second
+[66:07.64]  place we do content plan uh we actually
+[66:11.00]  do for there you go for chapter into
+[66:13.40]  each one of those chapters we can do
+[66:16.68]  content creator crew and what we're
+[66:21.44]  passing here at inputs we can we can
+[66:24.44]  pass those things individ ually if we
+[66:26.44]  want to or we can pass the whole thing
+[66:29.08]  um if we pass the whole thing it's going
+[66:30.32]  to be formatted weird but it might be
+[66:32.52]  okay so uh reg how are we doing on time
+[66:35.64]  can I keep going we yeah we we got we
+[66:39.00]  gota we got to keep going a
+[66:42.12]  little all right so let me just copy
+[66:45.84]  this and letting me paste it in here and
+[66:48.96]  now this is going to be the content
+[66:53.44]  creator Creator cre
+[66:56.52]  crew so now we have this other crew in
+[66:59.68]  here let's rename this as well this is
+[67:01.88]  going to be
+[67:03.20]  cont Creator crew in here uh we don't
+[67:08.68]  need this
+[67:10.04]  anymore and we can go to our agents and
+[67:12.88]  we're going to say all right
+[67:15.44]  uh
+[67:17.56]  let's create new agents that are now
+[67:22.76]  responsible for creating a
+[67:26.64]  specific
+[67:30.08]  chapter they should
+[67:33.88]  research the topic online find
+[67:37.60]  interesting angles and write the chapter
+[67:42.92]  using
+[67:44.44]  the interpolated
+[67:47.84]  context day we get with the
+[67:52.96]  following information and then and we
+[67:56.08]  can basically tell like this is what
+[67:57.72]  they're going to be
+[67:58.84]  getting
+[68:00.92]  Mission and let's see how things are
+[68:03.04]  going to turn
+[68:06.96]  out all right this seems to looks good
+[68:12.28]  let me approve this right
+[68:15.36]  away boom so we have three agents
+[68:18.56]  content researcher a technical writer an
+[68:20.52]  education content writer this feels good
+[68:23.20]  now let's update it our tasks so let's
+[68:27.40]  update the
+[68:30.28]  tasks to actually write to actually
+[68:34.92]  write the content
+[68:38.00]  now
+[68:39.72]  for for a given chapter using the agents
+[68:45.40]  defined in
+[68:47.48]  agent we can remove one of those and I
+[68:52.60]  want to say they will have it access so
+[68:55.56]  this let's make sure to interpolate a
+[68:58.20]  chapter variable so
+[69:02.36]  tasks uh let's make sure we
+[69:06.32]  interpolate
+[69:08.16]  interpolate uh
+[69:11.00]  [Music]
+[69:12.60]  chapter variable that will include all
+[69:17.76]  the
+[69:19.64]  information boom there we go so while it
+[69:23.00]  rewrites that I want to make sure in
+[69:25.16]  here see it's trying to do some facing
+[69:28.12]  things research let's do not do any
+[69:30.92]  interpolations in this one this should
+[69:33.20]  be
+[69:34.32]  good oh the interest is good if we can
+[69:36.72]  add interest in here I think this could
+[69:38.24]  be interesting so learning style and
+[69:41.36]  interest all
+[69:42.92]  right this
+[69:44.92]  feels this feels good all right what
+[69:48.28]  about the tasks in the tasks let's
+[69:50.48]  approve it right away as well uh I won't
+[69:53.80]  try to do anything uh fancy about this
+[69:58.52]  like trying to access the objects this I
+[70:01.00]  don't think would necessarily work so
+[70:03.68]  what I'm going to do instead is I'm
+[70:05.76]  going to basically
+[70:11.16]  say chapter chap chap chapter
+[70:17.24]  information
+[70:18.92]  information and we can do just
+[70:22.08]  interpolated the whole chapter thing
+[70:27.20]  consider how content and there we go I
+[70:30.24]  found this I found this way
+[70:33.16]  better engagement
+[70:35.56]  strategies boom and then we can do the
+[70:38.44]  same thing for the other ones so
+[70:41.64]  interpolate only chapter equal
+[70:46.12]  equal in the same way we do
+[70:50.56]  above there we go
+[70:57.12]  all right so it's removing everything
+[70:58.80]  just keeping
+[71:01.04]  chapter well do one thing though it just
+[71:03.40]  did for this one so let me do everything
+[71:06.76]  below
+[71:12.96]  boom all right so chapter information is
+[71:16.88]  in here with view chapter content this
+[71:19.08]  is good optimizing for learning compin
+[71:21.56]  to
+[71:22.56]  final all right let's add chapter
+[71:24.68]  information all right this one get a
+[71:26.24]  little bit like a little bigger like we
+[71:27.96]  have a a few more tasks but that should
+[71:30.36]  not be a problem now we want to make
+[71:33.28]  sure to um update this class to use the
+[71:39.24]  agents
+[71:42.24]  and
+[71:44.76]  tasks and there you have it Con of
+[71:47.84]  Creator
+[71:48.80]  crew all right updating everything this
+[71:51.64]  feels
+[71:53.76]  good all right
+[71:55.92]  now what we're going to do is by the way
+[71:58.32]  one thing that we don't mention is what
+[71:59.84]  format we want this I would say make
+[72:02.60]  this uh a markdown a markdown
+[72:07.44]  file and what I want to do on here
+[72:12.32]  is no I think this is good I think this
+[72:15.12]  is good we shouldn't need any of those
+[72:16.92]  as
+[72:18.28]  well so now we can import our new crew
+[72:23.28]  so we have our content creator crew
+[72:26.64]  and we are generating this for each of
+[72:29.08]  the
+[72:30.12]  chapters and what we can do is for the
+[72:33.56]  sake of just keeping things a little
+[72:35.28]  simpler is I'm going to save here so
+[72:38.48]  save res.
+[72:42.56]  raw not raw
+[72:45.52]  to uh markdown file
+[72:49.44]  in um content slash there we go and we
+[72:54.44]  can create here here a new folder I'm
+[72:56.88]  going to say content for
+[72:59.52]  now and there you go we basically got
+[73:03.08]  the chapter
+[73:04.48]  name this is good we need to interpolate
+[73:07.08]  the other things as well yes learning
+[73:08.88]  style
+[73:10.32]  interest yes yes
+[73:12.76]  yes all right like will this work I
+[73:16.52]  don't know brace for
+[73:19.04]  impact we did a lot in there you can see
+[73:21.64]  that when we run our crew the first time
+[73:24.00]  it did work like like we got all this
+[73:26.88]  plan so let's actually open because it
+[73:29.40]  saved that file that we asked it
+[73:31.76]  to um I hope so where is this yes
+[73:36.60]  content plan let's do Json
+[73:40.84]  beauy there we go so we have all the
+[73:43.12]  chapters introdution description learn
+[73:45.36]  objectives key Concepts technical
+[73:48.00]  content practical examples learning
+[73:50.04]  activity so you can see the plan is in
+[73:52.04]  here for all the chapters so this looks
+[73:54.16]  good now now what we're going to do is
+[73:56.44]  make sure that after the plan is
+[73:58.36]  generated and we are saving to this file
+[74:00.64]  we didn't even need to save it we can
+[74:02.68]  drop this part eventually uh and you we
+[74:05.84]  actually call the thing that generates
+[74:07.68]  all the chapters so this should be good
+[74:10.04]  one thing that I'm missing though from
+[74:12.20]  uh This Crew is that they're not doing
+[74:14.12]  anything like they're using only the llm
+[74:16.84]  knowledge I would love to use for
+[74:19.24]  example um create I tools and U maybe
+[74:23.24]  server so they can search line and maybe
+[74:26.68]  scraping like I think those are probably
+[74:29.24]  like the couple like easiest tools that
+[74:31.12]  we can use and then we can give these
+[74:34.00]  tools for some of these agents so they
+[74:36.84]  can find more relevant up to-date
+[74:38.68]  information so maybe the content
+[74:41.04]  reviewer get thems as well um and and
+[74:44.48]  that should be okay for these but for
+[74:46.72]  the ones they're planning I think
+[74:48.16]  they're even more important so the
+[74:50.64]  planner should actually um use these
+[74:53.76]  tools and and the outliner should
+[74:57.08]  probably also have like these tools
+[74:59.16]  accessible to them and there we go
+[75:02.36]  because I'm adding the serer to I do
+[75:04.40]  need to add an environment variable but
+[75:06.44]  I think I have already done this before
+[75:08.36]  when I copy down my environment variable
+[75:10.20]  so that should be good um all right
+[75:14.56]  let's let's give it a try let's see what
+[75:16.52]  happens again we're doing we're doing a
+[75:18.40]  lot of things live here but I'm feeling
+[75:20.32]  optimistic are you feeling optimistic gr
+[75:22.92]  I'm I'm always feeling optimistic
+[75:26.72]  you're a better human than I
+[75:29.04]  am I will say like when you know
+[75:32.76]  obviously when you're building these
+[75:34.56]  things you want to kind of limit the
+[75:35.92]  amount of variables right but we we we
+[75:38.64]  do have a lot going on uh but we do also
+[75:42.08]  have the CEO of crew AI so I'm feeling
+[75:45.00]  optimistic I love that all right so want
+[75:47.84]  to learned about lucar Fusion again uh
+[75:49.88]  learning style is practical uh games and
+[75:54.56]  anim Ma and AI as well let's see if like
+[75:57.76]  what a turn up in there all right our
+[75:59.44]  first crew we know it works so let's do
+[76:01.60]  its thing one thing that you can see now
+[76:03.72]  it's using our tools uh searching the
+[76:05.76]  internet nuclear ficient curse outline
+[76:08.60]  educational examples and there's a few
+[76:11.08]  contents in there from like K12 to um
+[76:14.96]  Institute of physics and now it's
+[76:17.76]  actually reading some of those websites
+[76:20.24]  so it's going on and kind like trying to
+[76:22.08]  get information now searching for
+[76:23.84]  nuclear fusion curriculum development
+[76:26.12]  examples uh in has an isal outline so
+[76:30.08]  introduction the science of ficient real
+[76:32.36]  word fish and popular cuture and debates
+[76:35.32]  and perspectives this is good you see
+[76:37.48]  this is what happens when you give it
+[76:38.56]  like some extra tools the ability to
+[76:40.36]  search now it can go like all right what
+[76:43.04]  about the debates like is this good is
+[76:44.84]  this bad I know a lot of people say like
+[76:47.16]  we have a huge nuclear fish in the sky
+[76:49.44]  the sun maybe should use that so you you
+[76:52.04]  don't know um and then subject matter
+[76:56.36]  now creates a description for each
+[76:58.08]  chapter talking about the key Concepts
+[77:00.88]  the important and look at this up
+[77:03.12]  engaging activity explore the use of
+[77:05.04]  nuclear fusion in popular enemy series
+[77:07.24]  like Attack on Titans so if there any
+[77:09.60]  enemy funds right there like as myself
+[77:12.52]  uh this this is very interesting I do
+[77:14.20]  like that uh and for games it's
+[77:16.28]  mentioning about Fallout and the
+[77:18.48]  consequences of nuclear warfare so um
+[77:20.80]  very interesting one so it keep on going
+[77:23.12]  and going generating all the chap
+[77:25.84]  um this should be good I think this is
+[77:27.60]  the final agent now that actually
+[77:29.16]  creates the plan so if something is
+[77:31.08]  going to break it's going to break now
+[77:33.32]  between finishing the screw and kicking
+[77:36.24]  off the next one where it's going to
+[77:38.08]  like it's basically the the brand new
+[77:40.16]  piece that will be put together so cross
+[77:42.80]  fingers uh I think I think this is gonna
+[77:45.44]  I hope this is gonna
+[77:48.04]  work I'm gonna say this is fun uh I
+[77:51.24]  don't I don't get to do much coding like
+[77:53.88]  uh nowadays just because of how the
+[77:55.56]  business are going so it's fun to spend
+[77:57.84]  some time doing this now especially live
+[78:01.00]  coding it's live coding
+[78:03.72]  yes I mean there we go of course we had
+[78:06.76]  a problem the all the things were good
+[78:09.52]  but then uh in the man to generate
+[78:12.00]  content a string has no attribute
+[78:15.00]  chapters all right so let's let's debug
+[78:17.48]  this real quick see if we can fix it is
+[78:19.96]  on this form right here so if you look
+[78:25.04]  at this form is trying to Loop this
+[78:27.68]  variable here and this variable is a
+[78:30.16]  Json content so even though it is Json
+[78:33.36]  Jon for now in here is a is a string
+[78:36.00]  right so what I can do now is I can do
+[78:39.56]  penic um so it's an actual object on our
+[78:43.32]  planning crew instead of saying outp put
+[78:45.28]  Jason I'm going to say I want you to op
+[78:47.72]  penic for me and I think we we don't
+[78:52.56]  need to save this anymore into AJ five I
+[78:55.56]  mean we can still save it but maybe now
+[78:57.44]  we need to do the the model dump
+[79:01.16]  Json uh but yeah let's let's not not
+[79:04.92]  just do that for now I'm for the sake of
+[79:08.40]  running this faster I'm going to remove
+[79:11.00]  our tools like we know that they work so
+[79:14.52]  let's remove them so it's basically more
+[79:18.20]  straightforward this agents run a little
+[79:20.80]  faster and let's rerun them
+[79:25.60]  and cross fingers let's see if it this
+[79:27.84]  one's going to work now uh
+[79:30.36]  [Music]
+[79:32.80]  um curse is going to be again uh nuclear
+[79:38.48]  fusion I'm a practical learner and uh
+[79:42.80]  anime
+[79:44.64]  games and
+[79:47.36]  AI all right so crew now should be run
+[79:50.68]  faster it's not going to like spend so
+[79:52.48]  much time going over like the smaller
+[79:54.28]  detail
+[79:55.68]  so cross
+[80:00.76]  fingers okay now I'm really
+[80:04.60]  optimistic it's always like that right I
+[80:06.80]  mean for for the folks that have played
+[80:08.72]  around with like designs and everything
+[80:11.44]  it's like this is the point where you
+[80:13.08]  start to put underscore final underscore
+[80:16.24]  two and and you're wondering like is two
+[80:19.52]  the final
+[80:21.36]  version but I think this going to be a
+[80:23.40]  good one I'm I'm feeling optimist stick
+[80:25.00]  on this one as
+[80:26.48]  well all right uh the one thing that I'm
+[80:30.24]  remembering now is um we did our our PDF
+[80:33.24]  thing I don't think we ever we ever test
+[80:35.56]  it out so maybe maybe it's worth it for
+[80:38.36]  me to uh try to see if that PDF deploy
+[80:41.44]  worked and we can check that out in a
+[80:43.72]  second as well just to make sure that
+[80:46.40]  everything is working fine on the PF
+[80:50.16]  generator side of things I make sure
+[80:52.16]  that we uh we don't drop the ball and
+[80:54.68]  leave people hanging on that one n all
+[80:57.88]  right so while this runs let me check
+[81:00.32]  that
+[81:01.96]  um all right so our deployment is
+[81:05.72]  done so we should be able to update our
+[81:08.68]  zapier now so let's edit our zaper real
+[81:11.84]  quick all right so um there is a catch
+[81:16.00]  hook that works still we're still
+[81:18.64]  calling our same drag test that FS okay
+[81:23.28]  let's make sure that this is working
+[81:24.64]  that I didn't break in so I can re
+[81:27.04]  retest
+[81:30.84]  time uh all right seems to be
+[81:34.32]  working okay now remember that instead
+[81:37.36]  of sending the email now we getting an
+[81:39.36]  HTML at the end so there's a there's a
+[81:42.04]  service that I have used in the past
+[81:43.48]  called PDF Co again I it's the only
+[81:46.56]  service that I could found that is able
+[81:48.76]  to trans like dynamically convert HTML
+[81:51.52]  to PDF so I'm going to use in here just
+[81:54.20]  for the sake of using it and what you
+[81:55.96]  can do is you can get your output of
+[81:57.48]  your crew so the
+[81:59.44]  result and basically output it in um as
+[82:03.16]  a pgf so I'm going to say I want a no
+[82:06.08]  margins uh this feel good all
+[82:09.24]  right so let's see if it
+[82:14.52]  runs yes there we go and on our resent
+[82:18.20]  now instead of like sending the this
+[82:21.84]  content we can basically say here is
+[82:25.56]  your
+[82:27.48]  report and we can attach
+[82:31.96]  the uh URL continue publish
+[82:38.36]  publish
+[82:40.64]  and there we go we have updated it now
+[82:44.04]  so let's make sure that our crew is
+[82:45.76]  running
+[82:46.96]  accordingly
+[82:48.72]  we should be able to kick off a new one
+[82:51.92]  so I'm going to T is this the one that
+[82:53.72]  we
+[82:56.24]  I think this is a new one isn't it a new
+[82:58.00]  one let me make sure that we're using
+[83:00.12]  the right one in here so the kickoff I
+[83:03.16]  want to add this app real quick I want
+[83:05.88]  to make sure that we are refreshing this
+[83:09.16]  list I'm going to choose another one
+[83:11.36]  real
+[83:13.04]  quick let's find our grag one grag
+[83:18.68]  test all right domain company name
+[83:22.84]  continue continue
+[83:25.60]  continue this is good continue continue
+[83:28.56]  continue
+[83:30.20]  and well we didn't change anything all
+[83:32.68]  right feel good let's try it out then
+[83:35.28]  domain is cre.com company domain is C.C
+[83:41.48]  I guess what happens is or cursor
+[83:44.80]  Dynamic updates kind of remove the name
+[83:47.68]  the person's name from the
+[83:50.72]  interpolation that's okay we just make
+[83:52.68]  sure this is running all right it is
+[83:55.36]  running so this works so this now should
+[83:59.88]  work all the way from the getg go so
+[84:06.56]  let's let's do a request
+[84:11.04]  boom do we have a new
+[84:15.12]  run yes we have a new run going on here
+[84:18.56]  oh no that's not in there you go this is
+[84:20.96]  in all right let's see how that goes
+[84:23.56]  while that runs
+[84:24.96]  we go back ah another error now is error
+[84:29.24]  in the generate content content expert
+[84:32.28]  so it's not finding an agent that is
+[84:35.32]  called content expert I guess that's
+[84:37.08]  what we get from doing everything on um
+[84:41.80]  everything using curer so what happens
+[84:44.04]  is if you look at one of our tasks it is
+[84:46.60]  looking for a contact expert agent but
+[84:49.80]  if you look at the agents we don't have
+[84:51.48]  a coner and agent so we can do a Content
+[84:54.96]  writer on this one and the other thing
+[84:57.68]  is you want to make sure make sure our
+[85:01.04]  agents in here exist on agents
+[85:07.20]  and there we
+[85:10.04]  go just to make sure that there you go
+[85:12.76]  there was another problem in there
+[85:14.12]  another one in here there you go now
+[85:17.20]  it's better and then in here let's say
+[85:20.16]  let's make sure we are using the r
+[85:25.16]  let sir we are defining the r tasks and
+[85:31.32]  agents and then we can use the Creator
+[85:35.20]  and the
+[85:37.72]  Creator and there we have
+[85:40.16]  it so just to make sure because now we
+[85:42.72]  have like two Crews I might have tagged
+[85:44.68]  the wrong files I think that's what
+[85:46.40]  happening
+[85:48.28]  there yeah you see I think that was
+[85:50.60]  exactly what I did so we don't need this
+[85:53.64]  context in here for now all right let's
+[85:56.64]  run it again we go back to our zapier
+[85:59.60]  one so our zapier one it seems there's a
+[86:03.16]  few that are stuck maybe is that what's
+[86:05.84]  happening in here it's calling the crew
+[86:09.12]  is delayed so maybe this crew is running
+[86:12.52]  let's double check that on crew
+[86:16.60]  AI get
+[86:19.00]  status failed cre attribute has no
+[86:21.92]  attributes benefit list again see me
+[86:24.88]  thinking that cursor is going to replace
+[86:26.92]  engineer so
+[86:27.86]  [Laughter]
+[86:29.76]  soon it's going to take quite a while so
+[86:32.76]  this is it we're trying to look for
+[86:34.24]  benefits list in what is there crew
+[86:39.16]  object has no benefits list in that's
+[86:42.52]  because we are looking crew output
+[86:44.92]  directly we want to do
+[86:48.32]  penic um output and we can do there we
+[86:52.80]  go identic
+[86:55.00]  and then our crew outputs we replace
+[86:57.96]  everything with identic
+[87:00.88]  output and F
+[87:04.84]  so nuclear
+[87:07.88]  fish practical anime
+[87:12.08]  games and
+[87:14.16]  Ai and then for our other one we just
+[87:18.24]  update oh we just update the pr GS
+[87:26.48]  Comon
+[87:28.04]  fix push aring mang and then let's
+[87:32.56]  do let's trigger redeploy in
+[87:38.75]  [Music]
+[87:41.76]  there redeploy there we go all right so
+[87:46.40]  now we fix we fix both
+[87:50.44]  hopefully let's make sure that the
+[87:52.60]  things runs and that we got def the res
+[87:55.36]  I guess third ch's a thirdd time is a
+[87:59.72]  charm
+[88:01.52]  totally happens to the best of us man
+[88:04.96]  yeah I gotta say this is live coding
+[88:06.88]  right I think like to everyone's point
+[88:09.32]  on like how AI is evolving coding is
+[88:11.60]  still a very interactive process right
+[88:15.04]  like uh definitely Ai and agents and
+[88:17.96]  things like Davin now and like other
+[88:20.08]  solutions they help a lot but um it's
+[88:23.44]  still like a lot of of like just making
+[88:25.56]  sure that from going going from zero to
+[88:28.36]  one is very fast and getting faster and
+[88:30.44]  faster going one to 10 is still very
+[88:32.60]  much like um what traditionally has
+[88:36.24]  been
+[88:37.80]  yeah that's that has been my experience
+[88:40.68]  so far all right a similar here but now
+[88:42.80]  on the task side probably same thing I
+[88:46.88]  forgot to reference something
+[88:50.24]  somewhere so on the tasks I'm saying
+[88:52.84]  create a Content out line I'm actually
+[88:55.48]  saying create line and I don't have that
+[88:58.00]  task in here so all this context should
+[89:01.88]  actually
+[89:03.04]  be research
+[89:06.96]  chapter uh should be right chapter
+[89:11.60]  C and
+[89:15.52]  compile final plan I think this is it
+[89:21.40]  let me just double check this is the
+[89:23.08]  right one this is the Creator all right
+[89:25.52]  so compile defined curse
+[89:30.04]  plan complete structure plan now this
+[89:33.12]  this looks odd if you think about it
+[89:35.88]  that's the content creator plan the plan
+[89:38.96]  is the one where the tasks are about
+[89:42.48]  compiling the outputs in the compressive
+[89:44.36]  plan this should be actually right in
+[89:46.84]  the chapter so if you look at this we
+[89:50.32]  can
+[89:51.40]  say inad inad stand off a plan we want
+[89:56.92]  the final actual chapter on this
+[90:03.12]  [Music]
+[90:05.36]  one right a complete polish mark down
+[90:08.56]  all right this feels more this is right
+[90:10.80]  in content reviewer we have that agent
+[90:12.96]  yes we do do we have those tasks yes so
+[90:16.96]  we're using the research we're using the
+[90:19.72]  writer and we're using the review
+[90:21.40]  chapter content all right this feels
+[90:23.40]  good
+[90:24.52]  and this is our task so
+[90:27.96]  now let me make sure that we get our
+[90:31.56]  tasks from the content
+[90:35.00]  creator I'll properly defined in
+[90:39.48]  here um all right so research research
+[90:43.32]  WR wrer chapal review review and then
+[90:49.08]  optimize optimize this feels good and
+[90:52.68]  then compile find course
+[90:55.48]  plan we can keep that name for now even
+[90:58.20]  though what's doing is actually writing
+[91:00.12]  the
+[91:01.44]  markdown and the context in here we
+[91:03.96]  don't need to pass it given that we
+[91:05.48]  already passing in the
+[91:07.44]  tasks and let's kick it off again I
+[91:11.80]  think that's it only one way to find out
+[91:15.76]  only one way to find out all right topic
+[91:19.36]  do you have another topic by the way
+[91:20.76]  other than nuclear
+[91:22.52]  SE um
+[91:25.16]  sure what about
+[91:28.36]  seo
+[91:30.12]  seo what is your learning style you know
+[91:33.36]  me I'm
+[91:35.20]  visual Visual and any interests I like
+[91:40.68]  games I think yeah all right games there
+[91:44.92]  we go all right let's see what what is
+[91:47.12]  going to be the plan for SEO for a
+[91:49.16]  visual person that like games yeah uh
+[91:52.36]  now I'm curious to see what the plan is
+[91:53.64]  going to being all right introdiction to
+[91:55.48]  SEO it's relevance in gaming oh there
+[91:57.72]  you
+[91:58.92]  go uh keyword research and optimization
+[92:02.28]  onpage SEO fundamentals content creator
+[92:04.92]  marketing strategies technical
+[92:07.16]  Essentials tracking performance how you
+[92:10.20]  feel about that s
+[92:12.72]  plan yeah I think
+[92:15.00]  it it makes sense you know makes a lot
+[92:18.08]  of sense I wasn't yeah I'm I'm I think
+[92:21.88]  it looks good all right well introducing
+[92:25.48]  Concepts a couple use cases how fortnite
+[92:28.00]  effectiv use SEO to rank highly on
+[92:30.16]  gaming content and analyze Legend of daa
+[92:32.80]  breath of the wide I mean that's a
+[92:34.36]  killer game right there totally um then
+[92:37.72]  keyword researches using things like
+[92:39.64]  Keyword Planner Sam Rush a arffs that
+[92:43.24]  feels good on page SEO again OverWatch
+[92:47.56]  call of
+[92:48.60]  study that's is interesting Destin 2
+[92:51.60]  Hollow nine another great game
+[92:55.32]  then technical results and SEO
+[92:57.84]  performance directly all right s s the
+[93:00.68]  track then there's the final plan right
+[93:03.44]  there the whole Json thing and it works
+[93:06.60]  generating content so now our content
+[93:09.80]  researcher specialist actually is
+[93:11.56]  getting all that objects so you can see
+[93:14.56]  all the capture chapter information is
+[93:16.32]  in here the title the
+[93:19.52]  objectives like everything is in here
+[93:21.60]  it's always matched together because
+[93:23.16]  kind of like we Jem the entire chapter
+[93:26.00]  like object in there we could make a
+[93:28.44]  little prettier and now because this
+[93:31.20]  crew we didn't remove the tools they're
+[93:32.88]  searching the internet so searching the
+[93:35.12]  internet finding information scraping
+[93:38.16]  websites there you go a bunch of website
+[93:40.64]  content that's kind like just reading
+[93:42.20]  and researching
+[93:43.60]  further and coming up with the actual
+[93:46.92]  content so now is the actual content
+[93:48.64]  writer we can see an initial writing of
+[93:51.48]  what the topic would be over view key
+[93:54.40]  concept the technical content the
+[93:55.96]  Practical examples learning activities
+[93:59.08]  there we go now I think we have uh the
+[94:02.60]  editor kind of like doing a
+[94:04.64]  review and again researching online
+[94:07.40]  scrapping AB Pages like that the models
+[94:09.64]  are getting so fast now that it's even
+[94:11.24]  hard to keep up with everything that
+[94:12.60]  they're
+[94:13.64]  doing so there you go researching how
+[94:16.72]  technical visual Learners like in
+[94:18.76]  Practical and fun tips so making sure
+[94:20.68]  that it gets like some of like that uh
+[94:23.44]  that Insight in there yeah learning
+[94:26.16]  gaming for
+[94:27.40]  Education yeah it's going it's going out
+[94:30.28]  loud all out
+[94:32.76]  baby oh there we go all right so we
+[94:36.32]  should be able to see like and by the
+[94:38.00]  way this we're seeing all these logs
+[94:39.52]  because we're running on verbos mode so
+[94:42.08]  you can disable all that if you don't
+[94:43.96]  want to get like everything and kind
+[94:45.72]  like the the stream of cches of the
+[94:47.68]  models and everything that they're doing
+[94:50.24]  but H if everything works out we should
+[94:53.00]  start to see uh files there we go
+[94:56.00]  populated right in here y so it wrote
+[94:59.00]  the first chapter Let's uh let's
+[95:03.48]  see let me actually remove those initial
+[95:06.52]  markdown codes here that it
+[95:10.48]  added there we
+[95:12.44]  go and then let's do markdown
+[95:15.68]  preview so introdution to se's relevance
+[95:18.36]  in gaming the learning objectives the
+[95:21.00]  key Concepts the C the Practical
+[95:23.04]  examples
+[95:24.60]  what they have done learning
+[95:27.00]  activities we create infographic
+[95:29.20]  illustrating how search Eng GES Works
+[95:31.04]  wow that's going to be tough one um
+[95:33.64]  assets methods success
+[95:36.64]  metrics this feels good all right well I
+[95:40.24]  guess we what we could do and we have
+[95:42.88]  done like this like um this kind of like
+[95:45.48]  flow before where you use for like high
+[95:47.48]  level content creation is you can go
+[95:50.28]  like way deeper on some of the pred for
+[95:52.28]  the planning that's usually where most
+[95:53.92]  of the kind of like the optimization
+[95:55.68]  lies is making sure that the plans
+[95:58.00]  reflect like what exactly what you're
+[95:59.76]  trying to kind like go after like the
+[96:02.00]  the fact that he's trying to not use
+[96:04.64]  game as examples but actually focus on
+[96:07.48]  gaming SEO is a little odd and it's not
+[96:09.72]  what we want so we could change some of
+[96:12.04]  the tasks and agents around that it's
+[96:14.44]  funny because I saw I saw that
+[96:16.08]  originally and I was like that's not
+[96:17.28]  what I want but then I was like actually
+[96:19.28]  that's probably a huge opportunity in
+[96:21.16]  like a
+[96:22.16]  niche um
+[96:24.16]  like you know I've seen a million
+[96:26.00]  SEO uh you know courses and content
+[96:29.48]  guides and stuff like that but I haven't
+[96:30.88]  seen anything specifically spoken to to
+[96:33.76]  to video
+[96:35.24]  games yeah I gotta say definitely
+[96:37.76]  definitely sounds like a nich something
+[96:39.48]  that like U I think like people would
+[96:41.20]  really like U do and you can see a
+[96:43.40]  difference in there for like specific
+[96:45.08]  Industries on how they're playing some
+[96:46.72]  of this but um yeah so now what what is
+[96:50.32]  what is happening there behind the
+[96:51.64]  scenes again we have a new chapter now
+[96:53.64]  now talking about uh the keyword
+[96:56.20]  research optimization so we can double
+[97:00.52]  check what this one looks
+[97:02.72]  like uh where is
+[97:05.79]  [Music]
+[97:07.68]  preview uh there we go so keyword
+[97:09.84]  research and optimization in gaming so
+[97:12.24]  introduction learn objectives the key
+[97:14.72]  Concepts explaining what is the keyword
+[97:17.08]  plan there what is the seam Rush uh and
+[97:19.72]  going over a few others about search
+[97:22.00]  volume comp competition
+[97:24.40]  relevance um and then examples of flow
+[97:28.64]  charts activities engagement strategist
+[97:31.96]  success metrics how does this trct with
+[97:34.80]  you someone that actually like uh that
+[97:36.88]  actually does care a lot about like SEO
+[97:39.88]  I mean it's it's directionally right you
+[97:42.12]  know of course it needs to be
+[97:44.92]  optimized yeah it would have been insane
+[97:48.60]  literally if it didn't need to be
+[97:49.92]  optimized but I think like this is this
+[97:52.88]  is a this is a legit output yeah I think
+[97:56.20]  honestly a lot of like the optimization
+[97:58.64]  like happens especially on the firstness
+[98:01.80]  parts like on the actual agents is on
+[98:04.72]  these agents and tasks like emo files
+[98:07.64]  it's where like you're going to be like
+[98:09.24]  uh spending a lot of time like to make
+[98:11.48]  sure that you get the behavior that you
+[98:12.72]  want yeah and then when you get
+[98:14.96]  Precision is more on the python files is
+[98:17.72]  where you spend the time like adding
+[98:19.88]  checks creating this python objects
+[98:22.44]  structures where you can use guard rails
+[98:25.84]  and where you can use like before and
+[98:27.36]  after kickoffs or where you can build
+[98:28.92]  flows so this kind of like where we get
+[98:31.16]  like where you optimize for precision
+[98:34.28]  but uh and funny enough is a piece that
+[98:36.68]  we spend less time on just because we
+[98:38.28]  let AI right out our agents and tasks
+[98:40.28]  for us but usually you do can optimize a
+[98:43.88]  lot of this just by kind of like
+[98:45.32]  revamping some of it and it gets
+[98:47.88]  something very good so uh another
+[98:50.80]  example of something that we have done
+[98:52.56]  in the past and that was pretty
+[98:55.00]  interesting is building a crew that
+[98:57.80]  monitors AWS for us so AWS where people
+[99:01.88]  host a lot of like their software and we
+[99:04.84]  had it to actually produce um a like a
+[99:07.96]  markdown report at the end but in this
+[99:10.08]  one we spend more time describing like
+[99:11.92]  what exactly we need and this kind like
+[99:13.52]  the level that you can get where we have
+[99:15.32]  an executive summary table of contexts
+[99:18.48]  introduction a very detailed analysis
+[99:21.88]  and you could have actual link
+[99:24.08]  you can add guard rails to make sure
+[99:26.00]  that these links are not like
+[99:27.32]  hallucination so if for example it's
+[99:30.04]  mentioning a link in here and you can
+[99:31.56]  click on that what you actually get is
+[99:34.44]  control traffic two resources Pages yes
+[99:38.12]  there you go so you can actually have
+[99:39.52]  exactly the page that is a valid one
+[99:41.92]  that's really cool yeah that's really if
+[99:44.08]  you spend the time you can get amazing
+[99:45.44]  thing like risk assessment Matrix road
+[99:48.84]  maps um this is actually a demo that
+[99:51.16]  we're going to be pushing with AWS in
+[99:52.96]  general so it's going to be like on
+[99:54.64]  their blog post and everything but uh
+[99:57.44]  this kind of like the level that you can
+[99:58.96]  get if you're really double down kind of
+[100:01.00]  like u a lot of this all right hey we we
+[100:04.88]  covered a
+[100:06.52]  lot I mean time flew to be honest um I
+[100:10.96]  hope people stuck around like if you're
+[100:12.32]  listening to this and you're in in the
+[100:13.76]  deep end here with us
+[100:15.60]  like you know you realize you probably
+[100:19.28]  realize that I mean look at this look at
+[100:21.24]  the outcome that you can you could
+[100:22.60]  potentially get
+[100:24.32]  um but there's going to be zigs and zags
+[100:26.08]  along the way there's going to be errors
+[100:27.60]  there's going to be you know it isn't
+[100:29.80]  press a button and it automatically you
+[100:31.88]  know you have this agent force
+[100:34.88]  multi-agent you know ecosystem but it is
+[100:37.64]  press a few buttons Zig and zag and and
+[100:40.64]  you and you get it out so um Joe thank
+[100:43.64]  you for spending time with us showing us
+[100:46.68]  around bringing you inside your brain
+[100:50.24]  and and really how you think about uh
+[100:52.60]  this multi world and showing us crew
+[100:54.84]  where could what do you suggest people
+[100:57.88]  do I mean I know use crew but like what
+[101:00.56]  what do you suggest people do if they
+[101:03.52]  want to get started in this world uh I
+[101:06.24]  would say if people want to really dive
+[101:07.88]  into this uh I would recommend checking
+[101:10.08]  a couple courses that we have uh with
+[101:12.52]  Ender Yang on deep learning AI so I can
+[101:16.40]  send you the link so that you can put on
+[101:17.80]  the descriptions but uh there's a couple
+[101:20.16]  courses the first one is is pretty good
+[101:22.52]  it's like very introd like from
+[101:24.92]  introduction it's like very for
+[101:26.48]  beginners out the way to can like start
+[101:28.28]  building everything so if you do that
+[101:31.00]  we're going to step back out the way to
+[101:32.60]  kind of like what is an agent like how
+[101:35.04]  agent Works what are tools what are llm
+[101:37.36]  so you can watch that and catch it up on
+[101:39.16]  that way and then there's a second
+[101:41.24]  course that we did that was very
+[101:43.16]  practical it's all about what we're
+[101:44.68]  seeing in companies out there um and
+[101:47.60]  there's an interview with the CTO of gen
+[101:50.60]  on PWC on how PWC is using crei in
+[101:53.96]  production and there's a few extra
+[101:55.92]  informations in there as well that you
+[101:57.36]  probably want to check it out so I would
+[101:59.24]  say those two like we have over 100,000
+[102:02.08]  people that enrolled on those courses so
+[102:03.68]  I definitely recommend you to check it
+[102:04.96]  out cool we'll include that uh get your
+[102:07.92]  hands dirty and
+[102:09.72]  and of course like and comment and
+[102:13.88]  subscribe uh if you enjoyed this video
+[102:17.04]  and uh I'll see you in the next one Joe
+[102:18.92]  I'll see you around see y thank you so
+[102:21.28]  much for having me thank you later
+[102:24.86]  [Music]

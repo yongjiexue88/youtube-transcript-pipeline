@@ -1,0 +1,1062 @@
+Title     : Become the Wise Advisor with Mike Ritchie
+Video ID  : otkCFXxD7hY
+URL       : https://www.youtube.com/watch?v=otkCFXxD7hY
+Language  : English - Default (en)
+Generated : No (manually created)
+Snippets  : 704
+Saved at  : 2026-06-20 21:49:35
+------------------------------------------------------------
+
+[00:00.00]  (upbeat electronic music)
+[00:07.33]  - All right, we are
+live back with our sixth
+[00:10.30]  and final keynote of
+MicroConf Remote, thanks again
+[00:13.89]  for joining me and sticking around.
+[00:16.03]  We're going to have about
+a 20 minute conversation
+[00:18.54]  with Mike Ritchie and myself
+[00:20.70]  and he is the founder of Seekwell.io.
+[00:23.99]  He's gonna, share how
+he tapped into authority
+[00:26.26]  building platforms to reach
+their earliest customers
+[00:29.15]  by providing insights and solutions
+[00:30.98]  to potential customers specifically
+[00:33.10]  on Quora and StackOverflow.
+[00:35.43]  But during our conversation, we'll talk
+[00:37.94]  about I'll bring up
+several other Q&A platforms
+[00:41.46]  that I believe can be
+used for similar purposes.
+[00:44.88]  It's early stage SaaS,
+[00:46.01]  it's getting 10, 50, or the
+first hundred customers.
+[00:50.06]  And with that, let's welcome,
+Mike Ritchie to the show.
+[00:54.32]  How's it going, sir?
+[00:55.33]  - Good to have you.
+[00:56.66]  - Doing all right.
+[00:57.49]  Thanks for joining us today.
+[00:59.46]  We're gonna, as I was telling folks
+[01:01.35]  we're gonna have about a 20 minute chat.
+[01:03.37]  You have some slides prepared
+[01:04.95]  and then we will have
+10 minutes of Q&A-ish.
+[01:08.81]  And we'll wrap around some around 9:30 PT
+[01:13.83]  12:30 ET.
+[01:16.96]  So with that, I'll let you
+take it away from here.
+[01:20.73]  You can intro yourself and dive
+[01:22.17]  into the slides and then
+we'll, I'll chime in as needed.
+[01:26.03]  - Yeah, sounds great.
+[01:26.86]  And just set some context
+[01:28.29]  because I'm sure not
+everyone is familiar with
+[01:30.61]  with my small niche of the
+world, my small company.
+[01:32.97]  So Seekwell is an app that
+helps customers, our customers
+[01:37.53]  which are generally data
+analysts, people that know SQL
+[01:40.19]  but are not too much more
+tech savvy than that.
+[01:42.88]  It helps those analysts push data
+[01:44.96]  from their data warehouse
+into other applications.
+[01:47.94]  So you can think
+[01:48.77]  of those things are places that
+are interesting to push data
+[01:51.22]  as places like Google sheets, Slack
+[01:53.87]  even things like Salesforce,
+just all this insight and data.
+[01:57.32]  That's locked up in a customer
+[01:59.54]  in one of our customer's data warehouses.
+[02:01.27]  We just make it dead simple
+[02:03.01]  for anyone that knows SQL to
+get it out of their warehouse
+[02:05.21]  and drop it into other places
+that they're interested in.
+[02:07.78]  And when I first built the product
+[02:09.50]  I started completely as a side project.
+[02:12.22]  It was something that I kind
+of used and, and doubled
+[02:14.46]  with a bit at my last company,
+[02:17.48]  and decided, kind of spin
+off as a little side project.
+[02:20.36]  Got some customers pretty early
+[02:22.07]  but after that very first
+customer, I realized, okay
+[02:24.23]  this is something that people
+might actually want to use
+[02:26.89]  might be interested in.
+[02:28.22]  So it started to kind
+of think about like how,
+[02:30.04]  marketing would look and
+how we could kind of get
+[02:32.40]  on the first 10 users
+after that first user.
+[02:35.66]  And Rob are the, slides up.
+[02:38.95]  Cause I only see myself right now.
+[02:42.93]  - There you go.
+[02:45.84]  - Cool, and I guess that I
+can control it with this.
+[02:49.42]  There we go great, so
+yeah, this first slide,
+[02:52.52]  is basically what the
+initial strategy was.
+[02:54.71]  Which was try to find places
+[02:57.40]  that people were asking questions
+or really trying to figure
+[03:01.22]  out how to build our
+products on their own.
+[03:04.03]  So that would look like,
+for our specific use case,
+[03:06.35]  it would look like people
+trying to write Python scripts
+[03:09.08]  and trying to set up servers
+and do all these things
+[03:11.24]  to try to like automate this
+data flow from their warehouse
+[03:14.80]  into these other destinations,
+like Google sheets.
+[03:17.44]  So there's this like
+really clunky process that
+[03:19.85]  people were following, hitting problems,
+[03:22.07]  and multiple steps along the way.
+[03:24.06]  They might be getting they
+might be getting caught up
+[03:27.29]  with going through the
+Google OAuth process
+[03:30.13]  in terms of like getting
+credentials set up.
+[03:32.07]  They might be getting jammed
+[03:33.07]  up with getting it set on a schedule.
+[03:35.25]  So having a server set up
+[03:36.50]  and making sure that that's
+running reliably 24/7.
+[03:39.36]  There's a ton of different
+places that they could be,
+[03:41.02]  falling into a trap or
+hitting a roadblock.
+[03:44.37]  And, basically that's what
+we try to do is we try to
+[03:46.64]  help people overcome
+that individual roadblock
+[03:49.09]  that they hit.
+[03:50.30]  So, maybe it was authenticating
+[03:52.68]  to their database with Python.
+[03:54.41]  We were helping people
+answer that question.
+[03:57.03]  But then we were also
+saying, hey, by the way
+[03:58.56]  this is gonna be a pain 12 more times
+[04:00.70]  like you're gonna run
+into 12 more roadblocks.
+[04:03.21]  Seekwell is perfectly built
+to solve this problem.
+[04:05.84]  So you might wanna give
+that feedback to try
+[04:08.48]  and instead of building it yourself.
+[04:11.89]  So, this tweet was, mentioned
+[04:14.32]  I guess earlier, earlier this month
+[04:15.93]  but it's basically kind of
+encapsulates our early strategy.
+[04:19.78]  And, one of the first
+places that we looked
+[04:22.80]  was basically just, Google
+searching and finding places,
+[04:25.83]  that people have bumped into this issue.
+[04:27.59]  And, it kind of already
+answered the questions
+[04:29.78]  are starting to answer the question.
+[04:31.57]  So this is, a screenshot
+from StackOverflow
+[04:35.16]  and it's funny, there's,
+there's 12 upvotes here.
+[04:37.94]  But I could say, with
+pretty solid confidence
+[04:41.09]  that this one post on StackOverflow
+has generated thousands
+[04:45.39]  of dollars in MRR for us.
+[04:47.50]  Since we initially answered the question.
+[04:49.57]  So it's only 12 upvotes but
+tons of people have seen this
+[04:53.10]  and it's really highly qualified
+traffic that we'd get in.
+[04:56.47]  So this StackOverflow
+question ranks pretty highly,
+[04:59.77]  on Google for various
+questions that are related
+[05:02.95]  to our product.
+[05:03.92]  And you can see the answer here is,
+[05:05.77]  crisp to the point,
+hey, if you don't wanna
+[05:08.01]  solve this yourself, you
+know, Seekwell's out there.
+[05:11.34]  We've always tried to be
+as transparent as possible.
+[05:14.24]  Like, hey, we're one of the founders,
+[05:16.03]  just full transparency.
+[05:17.50]  Like we built this product.
+[05:18.58]  So it's, it's clear that
+you're aware where the pitch
+[05:21.10]  is coming from.
+[05:21.93]  It's not, that we're trying to hide it
+[05:23.91]  and post it from, a ghost
+account, or position it as though
+[05:28.05]  it's one of our customers
+that's answering it,
+[05:29.63]  anything like that.
+[05:30.85]  We're always transparent that it's us
+[05:32.24]  that's answering the question.
+[05:34.08]  And then we just try to be crisp,
+[05:35.66]  and not canned in terms of the response.
+[05:38.10]  So we try to cater the
+response, whether it's,
+[05:41.22]  a place like we're StackOverflow
+[05:42.70]  we'd be catered the response
+to the exact question
+[05:45.59]  as opposed to just pacing in,
+[05:47.49]  a blanket response that's
+used, for all questions.
+[05:52.76]  I think the next slide has
+a, an example of Quora.
+[05:56.37]  So this was another question
+that we found pretty early on
+[06:01.93]  in our history in terms of,
+when we initially launched.
+[06:06.46]  One thing with Quora that's nice
+[06:08.31]  is it's actually StackOverflow as well as,
+[06:10.86]  you can update the question
+[06:13.17]  or update your answer over
+time, as you add new features
+[06:16.45]  whereas you kind of improve the product.
+[06:18.33]  So this is exactly what
+we did here is when we
+[06:21.16]  initially launched the product,
+it was, the UI was terrible.
+[06:24.68]  It was, actually, a pretty
+janky and clunky product.
+[06:27.49]  So this post was actually
+updated multiple times
+[06:30.16]  as we improved our product.
+[06:31.06]  And as the screenshots look cleaner
+[06:32.79]  as the product envisioned
+became more concise
+[06:36.50]  we updated these answers and,
+[06:38.49]  they made the value prop, more clear.
+[06:41.30]  So it was actually something
+we did call it like
+[06:44.08]  every quarter to every like six
+months as we kind of go back
+[06:47.10]  through these top posts, which
+obviously like attribution
+[06:50.91]  and tracking is pretty important
+[06:52.02]  for understanding where your
+customers are coming from
+[06:53.66]  so you know, which of these
+posts actually matter to update.
+[06:56.80]  But that we kept that
+like log of the posts
+[07:01.41]  that still matter or the
+answers that still matter to us.
+[07:03.65]  And we'd go back and update
+those regularly, if necessary.
+[07:07.39]  So this is one example in Quora
+[07:10.14]  and then the third place that
+we really found some initial
+[07:13.99]  and early traffic, and
+it's not really a Q&A site
+[07:17.47]  but it is a place that a lot
+[07:19.36]  of our customers were
+going to for answers.
+[07:22.32]  So there's actually, and
+this is a very little
+[07:24.63]  known marketplace that oddly
+has a very large user base.
+[07:29.93]  Like you can kind of see some
+[07:30.83]  of the numbers that are
+in just this screenshot,
+[07:33.30]  but if you're looking for an idea,
+[07:34.92]  I fully encourage you to go
+[07:36.70]  to Google work workspace marketplace,
+[07:38.84]  and just kind of search around
+[07:39.98]  at some of the products
+that have traction there.
+[07:42.54]  There there's applications
+[07:43.88]  that are literally just born, like add ons
+[07:45.13]  to Google forms that have millions
+[07:47.52]  of users and terrible reviews.
+[07:49.94]  So there's like apps that
+are being widely used.
+[07:53.47]  There are paid apps that
+have terrible reviews
+[07:55.73]  and are poorly built.
+[07:56.63]  It seems like a pretty good combination
+[07:58.89]  for someone looking for,
+[08:00.04]  a side project or a
+new project to work on.
+[08:02.64]  But in our use case, pretty early on
+[08:05.33]  we realized that customers were
+looking for solutions here.
+[08:08.60]  We actually, by default
+had to have a listing here,
+[08:11.46]  for the initial version
+of our application.
+[08:12.98]  So it wasn't something that
+we discovered on our own
+[08:14.83]  like we had to be listed here.
+[08:16.39]  But once we realized how many
+customers were finding us
+[08:18.84]  through the marketplace,
+we've really worked to
+[08:22.81]  improve our ratings, improve our reviews.
+[08:23.70]  You can see here in this screenshot
+[08:25.11]  we have a 4.9 star review,
+[08:27.61]  with almost 3000 users for the first app.
+[08:30.33]  We actually have two
+apps in the marketplace
+[08:32.04]  one for forms and one for Google sheets.
+[08:34.07]  So five star review on the other one.
+[08:37.03]  And we really worked on
+making sure we were number one
+[08:40.11]  in the search results for
+different terms that matter to us.
+[08:43.21]  So basically anything you search
+[08:44.83]  for that matters to our company,
+like Postgres, Snowflake
+[08:47.74]  anything like that, we are
+the number one search result
+[08:50.24]  and we get a ton of traffic through here.
+[08:52.47]  So again, you have thousands
+[08:53.44]  and thousands of dollars
+of MRR with no spend.
+[08:56.78]  So it's not like we're
+paying for placement here.
+[08:58.85]  It's, purely just doing the work,
+[09:01.36]  to get the app reviewed
+well, and listed well.
+[09:07.62]  And I think, yeah
+[09:09.24]  so I think that that's
+it on the marketplaces.
+[09:11.61]  Those were the three that
+we really leaned on early on
+[09:14.31]  especially to get the first
+ten first a hundred customers.
+[09:18.91]  The, I guess, the overall strategy,
+[09:21.53]  I already mentioned being transparent.
+[09:23.12]  So making sure that anyone that we
+[09:26.70]  anyone that we were quote unquote
+[09:28.29]  like selling to through
+these marketplaces knew,
+[09:31.89]  who it was that was selling to them,
+[09:33.12]  and knew that we were
+associated with the company.
+[09:35.58]  Always trying to speak the language.
+[09:37.87]  It was, it was pretty easy for me just
+[09:39.48]  because I was, I kind of was our customer.
+[09:42.09]  So I knew SQL I wasn't
+much of a developer.
+[09:45.64]  So it didn't know a ton about
+like backend infrastructure
+[09:49.07]  and things like that in
+terms of setting up servers.
+[09:50.87]  So I was kind of our customer.
+[09:53.00]  So I was able to kind
+of speak that language
+[09:54.81]  but if you're not your customer
+[09:56.02]  make sure that you're
+not getting too far into
+[09:58.38]  like technical jargon things
+that the customer doesn't care
+[10:00.81]  about in terms of, you
+sound like a salesperson.
+[10:03.76]  So we were just very direct
+[10:05.01]  in terms of answering their questions.
+[10:06.98]  And then the last one
+[10:08.66]  which is probably the
+most important is really,
+[10:12.38]  showing how painful free can be.
+[10:15.98]  So, we were like Digital Ocean
+has some great posts on this.
+[10:21.11]  Their early strategy was very
+much along these lines is like
+[10:24.48]  just showing how incredibly painful it is
+[10:26.50]  to manage machines on
+AWS, or set up a new,
+[10:29.53]  spin up a new instance on AWS
+[10:31.30]  at the time that the
+DigitalOcean launched.
+[10:33.19]  So we took that exact same
+playbook and exact same strategy
+[10:37.30]  in terms of like, hey,
+setting this all up on your
+[10:39.46]  on your own is going to
+be a complete nightmare.
+[10:41.37]  This is not something you wanna manage
+[10:43.03]  especially when our product
+starts at $50 a month.
+[10:45.97]  This should be kind of
+an absolute, no brainer
+[10:47.78]  for you for at least, to
+at least give us a trial.
+[10:50.34]  As opposed to trying to
+solve this problem yourself
+[10:52.53]  because free isn't always, really free
+[10:55.50]  when you when you kind of
+factor in all the hours
+[10:57.25]  it's gonna take to for you
+[10:58.64]  to kind of build this on your own.
+[10:59.71]  So that's pretty much the tips,
+[11:02.39]  Rob, any questions on your side?
+[11:05.16]  - Yep, yeah.
+[11:05.99]  Let me, let me dive in
+with a couple of comments
+[11:07.69]  because actually I have a
+done very similar approach
+[11:11.70]  to what you've done.
+[11:12.67]  And I did it with HitTail
+[11:15.27]  which was a long tail SEO keyword tool.
+[11:17.69]  It was a SaaS app.
+[11:18.68]  And so at that time, I
+went to Quora subscribed
+[11:21.29]  to all the SEO and
+keyword research topics.
+[11:23.85]  And I would chime in.
+[11:25.03]  Similar to you, I use
+the, I was very personal.
+[11:28.11]  I always, divulged, that I
+by the way I run HitTail,
+[11:33.12]  but the big thing was I
+would absolutely show them.
+[11:37.08]  And this is a decade ago, but
+I would say, they would say
+[11:39.35]  how do I do keyword research?
+[11:40.31]  And I'd say, here's how you can do it.
+[11:41.91]  Screenshot, screenshot,
+go through Google, do this
+[11:44.55]  or look through to this
+site, pay $20 a month
+[11:47.92]  you know, but disclosure,
+[11:49.23]  I'm the owner of it,
+but, it literally became
+[11:52.79]  it's almost like a, doing
+the selling for you.
+[11:56.48]  And even it's funny, cause you said,
+[11:58.86]  one of those posts had 12 up votes.
+[12:00.62]  But it's great, if, thousands
+of dollars in value for you
+[12:04.22]  similar with with HitTail
+and then with Drip, actually
+[12:06.95]  I went you know, Drip, being
+an email service provider.
+[12:09.69]  I subscribed to all the
+email marketing and the
+[12:13.56]  or really a bunch of just
+email marketing questions.
+[12:15.90]  And it was similar where ones wouldn't get
+[12:18.02]  that many up votes
+[12:19.13]  but it would just drive highly,
+highly targeted traffic.
+[12:22.83]  So even if I only got
+30-50 visitors a month
+[12:26.22]  from those threads,
+[12:28.47]  they would convert to trial at like 10-20%
+[12:31.50]  when the rest of the site
+was converting at 1 or 2%.
+[12:34.49]  It was because they were so qualified
+[12:36.16]  and already so interested in the problem.
+[12:38.52]  So there's a lot of value there.
+[12:39.57]  And of course these
+days, even I answer stuff
+[12:41.24]  about SaaS and marketing and this and that
+[12:43.64]  because, it's the, the podcast MicroConf
+[12:47.19]  and TinySeed stuff that I'm
+thinking about these days.
+[12:49.38]  So there's a lot of value here
+[12:51.97]  and what we do have a question
+that I'll get to in a second
+[12:53.69]  but I wanted to point out some other sites
+[12:55.55]  obviously Quora is, is the general one.
+[12:58.95]  But, and it covers it
+covers a lot of it started
+[13:01.35]  out as more of a Silicon
+Valley kind of startup topics.
+[13:03.49]  And then it's really expanded from there.
+[13:04.94]  StackOverflow is the technical one.
+[13:07.21]  And obviously StackExchange
+has a bunch of different.
+[13:11.39]  I mean, I believe they have
+hundreds of different ones now.
+[13:13.81]  I mean, they have RPG.StackExchange
+[13:15.83]  and they have English
+literature and grammar
+[13:18.22]  just all kinds of stuff.
+[13:19.05]  So there's a lot of options there.
+[13:20.85]  Reddit is another place
+that I've seen folks
+[13:23.09]  if you're involved in, a specific
+[13:25.72]  if there's a SQL users group
+or a developer users group,
+[13:28.16]  or, a startup users group, whatever
+[13:30.61]  that's a place I've seen people
+be helpful on the internet.
+[13:32.89]  And those can rank, if there's a question
+[13:35.10]  they can rank in Google.
+[13:36.93]  Clarity.FM is another one
+that I think people forget.
+[13:39.55]  Clarity is for phone.
+[13:43.35]  Mostly it's for connecting
+with consultants via phone chat
+[13:46.53]  about phone calls but they now have,
+[13:50.02]  that you can get involved with.
+[13:51.83]  And those are the ones
+that, the interesting thing
+[13:53.98]  is there's this whole other
+strategy where it's go
+[13:55.64]  on Facebook groups,
+forums and Slack groups,
+[13:59.04]  like MicroConf Connect.
+[14:00.42]  Those are also helpful,
+but they're different
+[14:02.40]  in that you don't get SEO out of it.
+[14:04.74]  That's the thing is
+[14:05.57]  that Quora, Clarity, StackOverflow, Reddit
+[14:09.42]  these things tend to rank in Google,
+[14:11.93]  for the answer to the question
+that that person is asking.
+[14:16.17]  And you would love for your
+website to rank number one
+[14:18.31]  for the answer to that question
+[14:19.69]  but you don't have the juice, none
+[14:21.22]  of us have the juice, the
+Quora or these other sites do.
+[14:24.18]  So that's what I'll say
+kind of is bringing my
+[14:26.68]  personal experience to it
+as well as kind of expanding
+[14:29.42]  on that in terms of
+there are other options,
+[14:31.30]  it's not just the three, you
+pointed out StackOverflow
+[14:33.66]  and Google workspace marketplace
+[14:35.87]  which I had never heard of, that's funny.
+[14:38.52]  All right, we've got
+a couple of questions,
+[14:41.08]  from one from Adam.
+[14:42.21]  He says, I think you
+may have covered this,
+[14:44.32]  but, reiterate Mike, he says,
+[14:47.01]  "Do you have any thoughts
+on using personal accounts
+[14:49.16]  for example, Adam versus company
+accounts, example the name
+[14:52.82]  is My Company on Quora,
+StackOverflow, et cetera?"
+[14:57.68]  - We always used personal accounts.
+[14:59.22]  I always felt that that
+was much less salesy.
+[15:02.29]  So, wherever possible we
+always use a personal account.
+[15:05.54]  - Yep, that's what I did as well.
+[15:07.42]  And the nice part, especially on Quora
+[15:09.43]  you can put Rob Walling, Founder of Drip,
+[15:14.27]  founder of Whatever.
+[15:15.52]  And so, your company makes it in any ways
+[15:17.76]  but then you're a human being.
+[15:19.15]  It's like, nobody wants a
+question answered by a company.
+[15:21.25]  It's, I'm instantly
+suspect when I see that.
+[15:23.52]  But if it's by a person
+who's the CEO or a founder,
+[15:26.31]  I actually give give them credibility.
+[15:28.64]  A question from Kristin Carney.
+[15:32.52]  How do you find questions?
+[15:34.50]  Let's see. How do you find
+the right questions to answer
+[15:36.67]  on the platform?
+[15:37.86]  Did you answer hundreds of questions
+[15:39.34]  or did you somehow ID the
+questions with a lot of views?
+[15:44.33]  You weigh in first, I wanna
+tell folks, how I did it.
+[15:47.51]  - No, that's absolutely a great question.
+[15:49.43]  Cause Quora is just an absolute flood,
+[15:52.31]  of the same question over and over.
+[15:54.74]  So you can waste a lot of
+time answering 100 versions
+[15:58.42]  of basically the same question
+[15:59.87]  the way the simple method we
+used is just Google searching.
+[16:02.90]  So if so, we search through Google
+[16:05.11]  for the questions that we cared about
+[16:06.59]  for the key terms that we cared about.
+[16:08.15]  And then whatever ranked there from Quora,
+[16:10.64]  we would then click through to Quora
+[16:11.96]  and answer those questions.
+[16:13.10]  So if you search directly
+on Quora for something like
+[16:16.25]  if you just search a job, a
+broad term, like a Postgres
+[16:20.36]  or a Google sheets,
+things along those lines,
+[16:22.71]  there will be dozens of the
+same question over and over.
+[16:24.81]  The, ones that we really focused on
+[16:26.41]  were the ones that were basically the ones
+[16:29.65]  that were ranking in Google.
+[16:31.26]  One other side note, on Quora is
+[16:33.33]  that you can get tricked probably
+[16:36.31]  into running ads there
+or promoting your post.
+[16:41.65]  Just, to our own experience,
+we actually tried that out.
+[16:44.92]  It seemed like a no brainer.
+[16:46.22]  It's like, Oh, well, like
+we can instantly get our
+[16:47.87]  our answer, to pose a
+it's jumped to the top.
+[16:50.68]  It was a complete failure,
+it, did not work at all.
+[16:54.00]  They actually, their ad
+platform is also terrible
+[16:56.80]  in terms of like setting all that up
+[16:58.09]  and then getting it, to
+display appropriately.
+[17:01.92]  So getting the promotion to display
+[17:04.44]  on the questions that you want
+it to was also a disaster.
+[17:07.63]  So just a quick, a quick aside is that
+[17:10.31]  like ads on Quora did
+not work at all for us
+[17:13.60]  versus doing the questions completely
+[17:15.31]  for free worked as well.
+[17:17.76]  - That's good to know, cause
+I've never tried Quora ads.
+[17:20.02]  And I always see Quora
+ads cause I am on Quora,
+[17:23.05]  I get their weekly digest.
+And so I'm on it once a week
+[17:25.24]  kind of searching through the stuff.
+[17:26.56]  Of course the digest is always like
+[17:28.84]  at MCU movie, trivia and what's going on
+[17:32.01]  with dungeons and dragons
+and that kind of stuff.
+[17:33.83]  So it's like nothing to do with start up
+[17:35.20]  which is actually a nice break.
+[17:36.28]  But I see the ads all the time
+[17:37.37]  and I I kind of have in the
+back of my head, like I wonder
+[17:39.37]  if I should try those so
+interesting data point there.
+[17:43.70]  I like that about Google searching.
+[17:45.22]  I wish I had thought of that.
+[17:46.19]  Cause I would go through, I
+would subscribe to the topics
+[17:48.93]  and then I'd try to be the
+first answer for a lot of them.
+[17:51.74]  And I, that worked, it worked, well,
+[17:55.27]  it always worked in terms of
+[17:56.55]  I would usually start
+getting upvotes quickly,
+[17:58.97]  but if those didn't appear
+in search results anywhere
+[18:01.85]  that I wouldn't get a lot
+of traffic from those.
+[18:03.41]  So it's, it is an interesting approach,
+[18:05.94]  unlike, what's your, what's your thinking.
+[18:07.42]  Another question, how
+do you make your answers
+[18:10.32]  not to sound promotional.
+[18:14.39]  - Yeah, and, that is actually hard.
+[18:16.65]  So if you, the first draft
+[18:18.69]  if you're thinking, selling the product
+[18:20.95]  it's probably going to
+come across to sales.
+[18:22.77]  Like, they always came back to
+[18:25.17]  is if you are answering the question
+[18:27.83]  from a place that you're not involved
+[18:29.40]  with the company at all,
+so almost put yourself
+[18:31.51]  in a, customers or
+potential customers shoes.
+[18:35.11]  But that, that absolutely is
+something that we had to work
+[18:37.59]  on early on.
+[18:38.58]  And I found that the
+best way for me to do it,
+[18:42.15]  was to pretend that I was
+answering the question
+[18:44.55]  either to someone that I knew.
+[18:46.21]  So like just put yourself in a
+[18:49.40]  an actual situation where someone that you
+[18:51.58]  know is asking you the question
+and like a specific person.
+[18:55.39]  So I would pretend like,
+Oh, like our product manager
+[18:57.80]  at our last company is
+asking me this question
+[18:59.91]  how would I answer him?
+[19:01.33]  Like, and making it a specific person
+[19:03.54]  worked really well for me.
+[19:05.34]  Because if you're answering
+it to like the internet
+[19:08.42]  like just broadly, you can come
+[19:10.54]  across as like maybe
+sounding a little bit too
+[19:12.57]  like polished or maybe
+too, like on the PR side,
+[19:16.25]  versus if you're answering a friend or,
+[19:18.80]  a previous coworker it'll
+probably come across more natural.
+[19:23.06]  We, didn't AB test this obviously.
+[19:25.04]  So who knows if it works or not
+[19:26.58]  but that's the way that
+it felt better to me.
+[19:29.16]  And I guess if like upvotes
+versus downvotes mean anything.
+[19:32.86]  It seems like, broad
+mentioned places like Reddit,
+[19:36.77]  when we answered more
+naturally, it seems like,
+[19:39.53]  people appreciate that
+and, welcome it more
+[19:43.29]  than something that's more
+kind of salesy or marketing.
+[19:47.72]  - Yeah, I like that of just
+talking, pretend you're talking
+[19:50.76]  to a human or you're answering a friend
+[19:52.34]  in an email thread or a Slack thread.
+[19:54.25]  And it's like, what would
+I actually tell them?
+[19:55.73]  I would say, well here, I'm
+gonna answer your question.
+[19:59.28]  And then I'm going to tell
+you probably don't do that
+[20:01.42]  is usually the way it winds up.
+[20:03.62]  And, it can come off, not salesy then.
+[20:06.93]  Another question for Mark,
+[20:09.13]  he says I don't have a Quora account.
+[20:11.77]  Can I create one today and
+start answering right away?
+[20:13.85]  Or do you have to warm
+up your account first?
+[20:18.01]  - I don't think you have
+to warm your account.
+[20:19.80]  I definitely answered the first day.
+[20:22.57]  So I started answering questions.
+[20:23.90]  I did use like our domain.
+[20:25.97]  So I signed up with our,
+like@seekwell.io domain.
+[20:29.28]  So I did create a separate new account,
+[20:31.03]  for Seekwell for the company.
+[20:34.08]  But yeah, you can start
+answering right away.
+[20:36.33]  I don't, think they do too much.
+[20:39.01]  I don't think they're
+trying to be too clever
+[20:40.41]  around like new accounts.
+[20:42.15]  There is a lot of spam on Quora.
+[20:44.19]  So you, do I have the possibility
+[20:47.92]  of being drowned out
+by a lot of other spam,
+[20:49.96]  but yeah, I don't think you
+need any more of a period.
+[20:54.40]  - Yeah, I agree with you.
+[20:55.93]  I think they rely on their
+upvote downvote system.
+[20:58.27]  Since it is a human powered,
+you know, voting system
+[21:02.71]  the spam does get, can
+get downvoted quickly.
+[21:05.64]  And so I think if you sign up
+and start answering questions
+[21:08.76]  with value, and you do get
+up votes that pretty quickly
+[21:11.80]  you'll get the reputation you need
+[21:13.99]  to continue answering.
+[21:16.77]  Any other questions from
+folks, checking the Slack.
+[21:22.70]  And I have a question for you.
+[21:23.84]  Did you, was this something you did
+[21:26.28]  in the early days to get early traction
+[21:28.76]  and then you stopped at
+a certain point where
+[21:30.55]  it just didn't move the
+needle for you anymore?
+[21:32.27]  Or is it something that
+you continue to do today?
+[21:35.89]  - Yeah, this was definitely,
+this was the very
+[21:37.54]  first thing we did, which
+was just Google search.
+[21:40.76]  And we knew we weren't going
+to have domain credibility
+[21:43.36]  from day one.
+[21:44.19]  So we Google searched, found places
+[21:46.21]  that we could answer this
+question that did have
+[21:47.70]  domain authority that would
+show up and rank in SEO results.
+[21:50.84]  And that was like the
+very first thing we did.
+[21:54.48]  As far as like ongoing, it has
+not been much of a strategy
+[21:58.29]  like say like the past year.
+[22:00.03]  And we have mainly just
+been in maintenance mode.
+[22:03.05]  So, if a post of a particular post
+[22:05.85]  is just looking outdated,
+so it's just not really
+[22:09.69]  displaying the current
+product anymore, we will,
+[22:12.19]  update them some newer channels
+[22:15.05]  like as opposed to like Quora
+[22:16.39]  in StackOverflow have worked well for us.
+[22:18.42]  So like, as we added more integrations
+[22:21.34]  and destinations new forums
+became relevant to us.
+[22:25.64]  So specifically like Salesforce,
+when we added Salesforce
+[22:28.65]  as a destination for
+our product, we did go,
+[22:31.75]  we kind of dug into their
+[22:33.09]  their archives and their
+previous Q&A forums there,
+[22:37.06]  which are very active.
+[22:38.22]  Like there's a ton of
+Salesforce developers out there
+[22:40.30]  a ton of people that use
+Salesforce in general, obviously.
+[22:43.39]  So there are questions
+that are super relevant
+[22:45.29]  to our product that we've
+kind of gone in and answered
+[22:47.97]  but, the amount of work to like keep
+[22:50.97]  up with it is actually like, really low.
+[22:53.60]  So like, if you kind of like have it to do
+[22:56.58]  once or twice, once a month
+or once every other month,
+[22:59.96]  I think that's more than
+enough to like keep up with,
+[23:03.70]  maybe even like a dozen or so
+[23:05.60]  different sources and questions.
+[23:08.47]  - Yeah, and I think that's
+something good to take away
+[23:10.59]  is that's why this is, these are,
+[23:13.22]  this whole MicroConf Remote 2.0 event is
+[23:15.49]  around getting that first
+10, 50, or 100 customers.
+[23:18.73]  It's this is not gonna,
+I don't see the scaling.
+[23:20.89]  The only time I've seen
+this scale is Jason Lemkin
+[23:23.67]  built the entire SaaSter brand on Quora.
+[23:26.32]  And then he republished on
+his blog and that's the one
+[23:28.57]  person I've seen who like built
+up, a huge personal brand.
+[23:31.78]  But other than that, it's
+usually what you've said
+[23:34.26]  and how I've described HitTail and Drip
+[23:36.17]  is you do it in the early days and it
+[23:38.47]  gets you highly qualified
+folks, not a huge amount
+[23:41.22]  but enough that, you can use
+it to get early traction.
+[23:44.75]  And then there on it's just maintenance.
+[23:47.31]  There is a question from
+Eric and he's asking,
+[23:50.84]  like I think during the active
+time, when you were really
+[23:54.13]  targeting this, how much
+time in a given week,
+[23:56.70]  did you spend answering questions?
+[24:00.25]  - Super low, like five or
+10 minutes a week, maybe.
+[24:04.49]  It was, it felt,
+[24:05.52]  a lot of it was a,
+one-time find everything
+[24:09.25]  make a spreadsheet with, all the questions
+[24:11.79]  and go through and
+answer them all at once.
+[24:14.53]  So, kind of upfront investment,
+[24:17.59]  definitely less than 10 hours.
+[24:19.55]  And, especially when you think
+[24:21.16]  about like getting how
+painful it can be to
+[24:23.07]  get your first 10 customers.
+[24:24.32]  If you have the right product
+that kind of fits into this
+[24:28.20]  the type of product that can be successful
+[24:30.12]  with this strategy.
+[24:31.18]  We easily got more than
+our first 10 customers,
+[24:33.77]  with less than 10 hours of work.
+[24:35.71]  Of just going through finding
+the relevant questions
+[24:38.19]  answering them really well.
+[24:40.35]  And, just tracking and making sure
+[24:42.08]  that we knew where those
+customers were coming from.
+[24:45.18]  So we had like less
+[24:46.67]  than 10 hours initial
+investment and then ongoing,
+[24:50.26]  we've been around for
+almost three years now.
+[24:52.67]  And I'd say like, life
+[24:54.01]  to date is probably another
+like 10 or 20 hours.
+[24:56.34]  So it's really low investment.
+[24:59.72]  - Yeah, and I like about what I like
+[25:01.76]  about doing Quora and StackOverflow
+[25:04.48]  and these others is that usually
+when you see the question
+[25:08.60]  it's obvious to you what the answer is,
+[25:10.66]  but it's not obvious to everyone else.
+[25:11.85]  because you're the expert
+[25:13.44]  like you're knee deep in this stuff.
+[25:15.01]  I mean, you can call
+out particular API calls
+[25:17.22]  or you can call out particular numbers.
+[25:19.53]  I mean, again, when I
+answer questions on Quora
+[25:21.22]  about B2B SaaS marketing,
+[25:22.74]  I'm like referencing page 27 of the State
+[25:25.00]  of Independent SaaS that we ran up.
+[25:26.11]  Because, it's just all in your head
+[25:27.93]  and you forget how knowledgeable
+[25:30.40]  and how deep your knowledge is.
+[25:31.50]  These are not things that you research.
+[25:33.79]  I, at least I never did.
+[25:34.81]  It was always like, what, our best,
+[25:36.86]  what are the biggest mistakes people make
+[25:37.99]  in email marketing?
+[25:38.82]  And it's like, well, I
+can list five right now
+[25:40.38]  because I see it everyday on Drip.
+[25:41.72]  Right? It's not that I have to go
+[25:43.06]  and spend a bunch of time,
+like writing a dissertation.
+[25:45.55]  It just kind of, it comes
+[25:46.82]  out of me because, you're knee-deep in it.
+[25:50.84]  Another question from, there's
+a question from Justin.
+[25:53.81]  Go ahead, yep.
+[25:55.20]  - I was gonna say that's a
+great point, on our product
+[25:57.15]  as well as like this, this is a lot
+[25:59.20]  of times a person that
+spent like 10-15 minutes
+[26:02.36]  trying to figure out how
+to solve this problem.
+[26:04.68]  And we've meanwhile spent like six months
+[26:07.19]  building a company around it.
+[26:08.67]  So like, you're exactly spot on Rob.
+[26:10.94]  It's like, it's someone that's like, Hey
+[26:12.35]  this is a really annoying problem.
+[26:13.65]  I'm trying to solve it right now.
+[26:15.52]  They're asking it from a place of like,
+[26:17.55]  maybe 10-15 minutes of
+experience on like working on it.
+[26:21.16]  So you might come across
+[26:22.31]  as like the most
+brilliant person on earth.
+[26:24.13]  If you, answer their question well
+[26:25.97]  after, having worked on the product
+[26:27.87]  or the problem for three to six months.
+[26:30.78]  - We have a question from Justin.
+[26:32.09]  He says, what were some
+examples of the Google
+[26:34.52]  searches you did?
+[26:39.62]  - Literally the question.
+[26:40.78]  So for our product,
+we, and this is another
+[26:45.38]  I think this is a general theme that Rob
+[26:48.67]  and MicroConf in general
+pushes is like niche down.
+[26:51.48]  Like, find a niche.
+[26:52.88]  We were super niche at first.
+[26:54.77]  Like we basically only
+solved like one problem
+[26:57.00]  which was getting data
+[26:58.71]  from your database into Google sheets.
+[27:00.70]  So it was like write SQL
+connected to your database,
+[27:03.98]  whether that's like Postgre,
+mySQL, whatever it is.
+[27:06.87]  And instead of having the
+results, returned into your IDE
+[27:10.43]  we were sending the results to
+somewhere like Google sheets.
+[27:13.11]  So like, was the, problem we
+solved but that was the niche.
+[27:17.63]  So we just searched every
+iteration of that problem.
+[27:20.61]  It's like, how do I send
+[27:22.07]  or how do I connect
+Postgres to Google sheets?
+[27:25.01]  And those different words in between
+[27:27.55]  were actually pretty important to us.
+[27:29.29]  So things like, how do you send
+[27:35.29]  Postgres data to Google sheets?
+[27:36.59]  How do you connect
+Postgres to Google sheets?
+[27:38.85]  Like all these different
+iterations and kind of synonyms
+[27:41.38]  for various words in that
+search term were important
+[27:44.17]  for us finding those,
+those first few questions.
+[27:47.13]  So trying all the
+different iterations, like,
+[27:50.04]  mySQL instead of Postgres, snowflake
+[27:52.77]  which is a popular data
+warehouse, instead of
+[27:54.79]  PostGres kind of like adding
+all those different iterations
+[27:57.94]  and combinations, like that's what we did
+[27:59.97]  to build that spreadsheet.
+[28:01.24]  And say, hey these are the 50 questions
+[28:03.41]  that we wanna answer. And
+then we just went through
+[28:05.08]  and knock them out, again
+in like less than 10 hours
+[28:07.59]  that first, go around.
+[28:11.85]  - All right, yeah, Justin responded,
+[28:13.13]  he said, those examples
+are gold, thank you.
+[28:16.11]  And that's the thing,
+you, can you go to Google
+[28:18.11]  to find out what's ranking in Google.
+[28:19.38]  But you can also go directly
+to Quora and you can type in
+[28:21.80]  in your example, you could
+type in Postgres Google sheets
+[28:24.80]  in the search box and see what
+comes up to see what wording
+[28:27.60]  cause there's gonna be
+a bunch of questions
+[28:28.79]  with those two in it.
+[28:29.62]  And then there's going
+to be all those connect,
+[28:31.81]  transfer, transmit, you
+know, whatever else.
+[28:34.68]  And then you can do the
+same thing, Seekwell server,
+[28:36.82]  Google sheets, and yeah, that's great.
+[28:40.12]  All right, we are at time, sir.
+[28:41.45]  Thank you so much for coming and,
+[28:44.04]  dropping your knowledge today.
+[28:45.03]  I know that, judging by
+the level of the questions
+[28:47.90]  and the number of them,
+[28:48.73]  I know that provided a lot of
+value for them folks today.
+[28:52.01]  - Awesome, thanks for having me Rob.
+[28:53.68]  - Absolutely.
+[28:55.02]  (upbeat music)
+[29:11.34]  Captioning made possible by Balsamiq

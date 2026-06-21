@@ -1,0 +1,1618 @@
+Title     : The Top 5 Issues Managing Multiple AI Agents in Production
+Video ID  : kL5cO-Sxv00
+URL       : https://www.youtube.com/watch?v=kL5cO-Sxv00
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1609
+Saved at  : 2026-06-20 22:28:55
+------------------------------------------------------------
+
+[00:01.28]  Welcome to the official Saster Podcast
+[00:03.36]  where you can hear some of the best SAS
+[00:05.24]  [music] speakers. This is where the
+[00:06.96]  cloud meets
+[00:09.12]  up today on [music] the Saster Podcast.
+[00:11.12]  >> How like how do you scale past this N
+[00:13.92]  equals 1. And I don't think there's a
+[00:16.96]  good answer for this today. There is no
+[00:19.36]  like crazy good agent that can manage
+[00:21.84]  all the other agents on its own today.
+[00:24.00]  There doesn't exist, right? I think
+[00:25.68]  there will be, but there's not one
+[00:27.92]  today. And so I think even with all the
+[00:30.08]  help we get, it's this is just a huge
+[00:33.92]  issue that I think the market has not
+[00:36.16]  realized yet.
+[00:37.60]  >> Yeah. I mean I mean obviously we're
+[00:39.36]  extreme and tiny. I mean if you left for
+[00:41.12]  some reason we would we would have to
+[00:42.48]  cease using our agents. There there's no
+[00:44.96]  there's no there's no plan B. We're just
+[00:46.96]  all learning that you need some sort of
+[00:48.80]  chief agent officer, right? Whatever you
+[00:50.72]  want to call them. Someone that can
+[00:52.16]  manage all of your agents that I think
+[00:54.24]  needs to be a bit of a nerd, a tech
+[00:56.56]  nerd. ideally a bit of a marketing nerd
+[00:58.48]  because a lot of these products are if
+[01:00.48]  you can manage [music] a complex
+[01:01.76]  marketing automation tool, you can
+[01:03.36]  probably manage most of the products
+[01:04.56]  that we use. You can hack the rest.
+[01:07.84]  But, you know, thinking through it, I
+[01:08.96]  mean, this is this is tapped and
+[01:10.16]  obvious, but I think if you [music]
+[01:11.60]  actually find the person that can deploy
+[01:12.96]  these agents for real that actually can
+[01:15.52]  be success, just like a lot of these
+[01:17.68]  functions, but immediately they should
+[01:19.44]  recruit. You need to recruit somebody
+[01:21.04]  else on their team [music] and and
+[01:22.56]  divide and conquer and make sure you
+[01:23.76]  have two
+[01:28.32]  Hey Sasser, imagine having agents for
+[01:30.40]  every support tab. One that triages
+[01:32.64]  tickets, [music] another that catches
+[01:34.16]  duplicates, one that spots churn. That'd
+[01:36.56]  be pretty mainly, right? Happy Fox just
+[01:38.56]  made it real with autopilot. These
+[01:40.48]  pre-built AI agents deploy in about 60
+[01:42.84]  [music] seconds and run for as low as 2
+[01:44.80]  cents per successful action. All of it
+[01:47.36]  sits inside the Happy Fox omni channel
+[01:49.52]  AI first support stack, chatbot,
+[01:52.24]  co-pilot, and autopilot working as one.
+[01:54.72]  Check them out at [music]
+[01:55.44]  happyfox.com/saster.
+[02:00.56]  >> Hey everybody, Saster Annual will be
+[02:02.72]  back May 2026, the world's largest SAS
+[02:05.84]  and AI gathering for [music] executives.
+[02:08.08]  Just this last May, we hosted 10,000
+[02:10.00]  attendees with 68 VP level and above
+[02:12.72]  attendees, 36% [music]
+[02:14.40]  CEOs and founders, and 25% were AI first
+[02:17.52]  professionals. It's the very best of S
+[02:19.52]  tier attendees and decision makers that
+[02:21.48]  [music] come to SAS annual and AI summit
+[02:24.00]  each and every year. But here's the
+[02:25.36]  reality, folks. The longer you wait, the
+[02:27.20]  higher ticket prices get. They're cheap
+[02:28.80]  now. They're cheap. So just get them
+[02:30.80]  early. Lock in your spot today. Use my
+[02:32.80]  code Jason 100 for exclusive savings.
+[02:35.92]  Get your tickets at podcast.sanual.com
+[02:38.80]  or just use code Jason100 when you check
+[02:40.80]  out. See you there. Saster annual and
+[02:42.64]  AAImit 2026. [music] It will rock.
+[02:45.76]  >> Hello everybody. excited to be here with
+[02:48.08]  all of you and your agents here today.
+[02:51.76]  We thought we would do a fun one since
+[02:53.20]  we have 20 actually almost 30 I think
+[02:56.16]  when I counted it this morning. Agents
+[02:59.60]  and Vivecoded tools and apps in
+[03:01.52]  production.
+[03:03.04]  We wanted to talk about our top five
+[03:05.28]  issues. Once you start to manage these
+[03:07.36]  multiple agents in production, what does
+[03:09.28]  that really mean? What are maybe the
+[03:10.48]  nuances folks haven't thought of if
+[03:12.00]  you've only deployed like one or two
+[03:13.36]  agents? kind of like what breaks when
+[03:15.28]  you have multiple agents at a high
+[03:18.08]  volume and high scale. Okay, as always,
+[03:21.84]  I always like to have this as our first
+[03:23.52]  slide because folks go back to it and
+[03:25.44]  reference it. So, for any of the agents
+[03:27.84]  and tools we'll reference today, you can
+[03:29.76]  go to saster.ai/
+[03:31.92]  aents, that's where we put our agent
+[03:33.36]  directory. We actually have a few more
+[03:34.96]  we need to add to it, but this is our
+[03:37.44]  depository of all the agents and some
+[03:39.36]  community agents that we use across the
+[03:41.52]  board. A lot of the things we'll talk
+[03:42.88]  about today are linked there if you're
+[03:44.88]  looking for the links. So, as always,
+[03:47.36]  keep that in mind. Okay, top five
+[03:49.20]  issues. I'll summarize them here and
+[03:50.72]  then I'll I'll go into them in depth. I
+[03:52.88]  think there's a lot we've learned in
+[03:54.16]  like the now 9/10 months of managing
+[03:57.36]  multiple AI agents in production between
+[04:00.00]  Jason and myself. So, I kind of narrowed
+[04:02.96]  it down to the top five things and then
+[04:04.80]  I have a bonus. So I would say issue
+[04:08.80]  number one and this is maybe force
+[04:10.16]  ranked is context switching becomes
+[04:12.88]  extremely difficult when you have 20
+[04:14.96]  plus agents. They don't all function the
+[04:17.36]  same way. If you guys saw the article
+[04:19.20]  that Jason did over the weekend about
+[04:21.04]  like how we use Salesforce and Agent
+[04:23.76]  Force is kind of like the backbone and
+[04:25.28]  the plumbing for a lot of these agents.
+[04:27.04]  You know there's a reason we do that and
+[04:28.80]  that's because a lot of these agents
+[04:30.32]  function somewhat independently. Some of
+[04:32.80]  them push back to Salesforce, some of
+[04:34.48]  them don't. Some of them talk to Claude,
+[04:36.40]  some of them don't. And so it's a bit of
+[04:38.72]  a hodgepodge today. Like that's the
+[04:40.40]  reality of managing all these AI agents
+[04:42.72]  and productions. They all speak slightly
+[04:44.24]  different languages. They all ingest
+[04:46.96]  context very similarly, but still
+[04:48.88]  different ways.
+[04:50.88]  They all have slightly different
+[04:52.32]  personalities. I will say these agents
+[04:55.52]  and they all kind of want different
+[04:57.20]  things from you. And so I think context
+[04:59.44]  switching just like in as a human brain
+[05:02.24]  keeping up with the agents becomes kind
+[05:04.96]  of difficult on a day-to-day basis.
+[05:08.56]  Number two, I think the the new agent
+[05:10.32]  blackout period for again for those of
+[05:12.16]  you who have maybe added a couple
+[05:13.44]  agents, but now you're you're getting
+[05:14.96]  into the high volume of multiple agents.
+[05:18.00]  For us at least, even with the help we
+[05:20.00]  get from our vendors, which we'll talk
+[05:21.28]  about a bit, even with the help we get,
+[05:23.84]  like I feel like every new agent costs
+[05:26.48]  us at least 2 weeks of what I call
+[05:28.56]  either a blackout period and somewhat
+[05:30.48]  chaotic of like I kind of have to ignore
+[05:32.40]  the other agents anytime I bring on a
+[05:35.20]  new agent, which as you might imagine,
+[05:37.12]  since they need daily
+[05:39.52]  review, it's kind of rough on the entire
+[05:41.84]  stack. It's just like this cascading
+[05:43.44]  waterfall of effects that happen every
+[05:46.48]  time we add a new agent of which I
+[05:49.04]  famously said on LinkedIn I was not
+[05:50.56]  going to add anymore and then I added
+[05:51.76]  two more in the last two weeks. So there
+[05:53.68]  goes that and and I can share some
+[05:57.12]  reasons why if you didn't watch the one
+[05:58.72]  from last week. Okay, the other one I
+[06:01.36]  would say number three which is a huge
+[06:03.44]  issue actually maybe it's number one but
+[06:06.16]  the AI what we call the AI agent
+[06:08.88]  succession planning crisis. I actually
+[06:11.04]  asked our agents today what they would
+[06:13.12]  do if I had to pass them over and the
+[06:15.12]  answers were actually a little bit
+[06:16.16]  surprising.
+[06:18.96]  You'll see why when I dig into that one.
+[06:21.60]  The fourth one I would say the agent as
+[06:23.60]  the truth teller. One of my agents more
+[06:26.48]  famously than the other, the 10K agent
+[06:28.40]  roasts me all the time.
+[06:31.04]  Every day cuz I talk to it every day.
+[06:32.56]  Like that's the first one I talk to each
+[06:34.08]  morning. It will literally roast me all
+[06:36.80]  the time. which is funny because when I
+[06:38.64]  pushed it on that for this webinar, it
+[06:40.16]  said it wasn't roasting me. So
+[06:41.52]  [laughter] that's that's an interesting
+[06:44.08]  learning too where it said it was being
+[06:46.00]  helpful and I thought it was roasting
+[06:47.52]  me. And the last but not least before we
+[06:50.56]  get into the bonus one, I think there is
+[06:52.00]  a lot of you know compliance and
+[06:53.92]  security maybe not issues but just
+[06:56.40]  nuances and maintenance that people
+[06:58.08]  don't talk about.
+[07:00.32]  That is a real problem right? I think
+[07:02.00]  that's why
+[07:03.92]  most high, you know, highly secure, like
+[07:06.64]  I'm not going to vibe code to Salesforce
+[07:07.92]  for a lot of reasons, but part of the
+[07:09.04]  reason is because Salesforce is secure.
+[07:10.80]  Like that data is there. We've got 10
+[07:12.32]  years of data there. It's the plumbing
+[07:14.00]  for a lot of our other agents, but also
+[07:16.48]  it's, you know, they've thought about
+[07:17.92]  all these things like Sock 2 and ISOs
+[07:20.08]  endlessly so that I don't have to. So,
+[07:22.56]  that alone is like kind of worth it for
+[07:24.24]  us to use it and keep using that. But I
+[07:26.72]  think there's other issues when you
+[07:27.76]  start to vibe code your own apps and
+[07:29.20]  agents that most folks probably haven't
+[07:32.32]  thought about because you you're so used
+[07:34.32]  to these other tools like a Salesforce
+[07:36.00]  doing it for you that even myself I
+[07:38.08]  didn't naturally think about doing that
+[07:39.44]  myself when I started pushing apps into
+[07:41.76]  production.
+[07:43.28]  >> I think
+[07:45.28]  I think you'll get to the next one. It
+[07:46.48]  would be useful just as an overview when
+[07:49.60]  you log in each day who do you talk to?
+[07:51.76]  What does that take? How much time does
+[07:53.20]  it take? that because that that feeds
+[07:55.76]  into the first point, doesn't it? It's
+[07:57.12]  there's context switching decks. There's
+[07:58.56]  also just this and part of that is all
+[08:01.04]  these different interfaces, all these
+[08:02.24]  different exceptions, all the different
+[08:03.36]  things when you log in each day to
+[08:04.96]  artisan or qualified or Asian force.
+[08:08.08]  There's a lot of time in different
+[08:09.68]  interfaces and different conflicts.
+[08:12.08]  That'd be the main one. And then maybe
+[08:13.28]  just a quick reminder to folks, maybe
+[08:15.36]  you have it in here, how we segment our
+[08:17.04]  base for these different agents because
+[08:18.64]  it's related to the first point, right?
+[08:20.48]  >> Yeah. [snorts] Yeah.
+[08:23.28]  Yeah. I would say to your point on the
+[08:26.56]  context switching tax, right? It's it's
+[08:28.48]  it's not even that I think about them as
+[08:31.04]  20 agents anymore. Like I think the
+[08:33.60]  better comparison to make to folks on
+[08:35.84]  the skull and watching live is you have
+[08:38.40]  to almost think about it now and I think
+[08:41.20]  about it now is managing 20 different
+[08:42.80]  people which like before we had 20
+[08:45.68]  agents. I don't even know what we had
+[08:48.08]  maximum headcount here. let's say 12 at
+[08:51.04]  the very at the very peak.
+[08:54.32]  Now we have 20 plus almost 30 different
+[08:57.20]  agents plus you know three humans and a
+[08:59.84]  dog that we manage. So I think that's a
+[09:03.44]  better way to frame it to folks is to
+[09:05.28]  think about each agent almost as its own
+[09:09.04]  entity as your own employee that you
+[09:11.92]  know speaks a different language, has a
+[09:13.60]  different personality, needs different
+[09:15.28]  things from you. Like to Jason's point,
+[09:18.08]  like I'm not immune from logging into
+[09:20.72]  each of these tools every day, seeing
+[09:23.76]  what's going on, right? So like this is
+[09:25.20]  a good example of my my kind of like
+[09:27.36]  morning, even just this morning. Like I
+[09:29.60]  actually didn't even have time to go
+[09:30.88]  through my whole checklist cuz we are on
+[09:33.28]  this call at 10. So I was like, I
+[09:34.40]  haven't actually even made it through
+[09:35.76]  all of my agent check-ins for the day
+[09:37.84]  and it's already 10. Now it's going to
+[09:39.44]  be like 11 by the time this is over and
+[09:40.88]  I have other calls today. So like it's
+[09:42.56]  basically going to take me the whole day
+[09:46.48]  just to check in with all of our
+[09:48.72]  different agents. So I don't really know
+[09:50.48]  this my morning routine but my daily
+[09:51.92]  routine. But so yeah, kind of a quick
+[09:54.24]  example of the ones I check the most.
+[09:56.08]  Right. So I would say I actually log
+[09:57.60]  into 10K kind of first because this is
+[10:00.40]  our main internal AIVPN. We've done a
+[10:04.24]  previous episode about it where we did a
+[10:05.68]  deep dive so you can go back and check
+[10:07.28]  that one out. But just as a high level,
+[10:09.76]  this is one that is running on internal
+[10:12.16]  data. It has some API data. It's
+[10:14.48]  literally telling me what I what I
+[10:16.56]  slashw we should be doing every day for,
+[10:19.04]  you know, tickets to SAS, paid tickets
+[10:21.12]  to SAS annual, our VIP summits that we
+[10:23.36]  have, our sponsorships that we have, our
+[10:25.12]  sponsors, uh, media contacts, like
+[10:27.36]  there's a bunch of highlevel,
+[10:31.20]  it's highlevel, you know, goals that I'm
+[10:33.60]  trying to hit with 10K. And so I check
+[10:35.36]  that one every day just to see where
+[10:36.72]  we're at. And like am I falling behind?
+[10:39.20]  And that's why this one roasts me all
+[10:40.88]  the time. It's like, Ameilia, you didn't
+[10:42.24]  get, you know, these five things that I
+[10:44.00]  laid out for you done yesterday. I'm
+[10:45.36]  like, I had to go to sleep, dude. Like,
+[10:50.08]  thanks for roasting me. I understand why
+[10:52.08]  we're behind. Can you just help me
+[10:54.40]  figure out how to get caught up in a way
+[10:56.08]  that I can actually do with the time
+[10:57.28]  that I have today? And so then it will
+[10:59.12]  kind of, you know,
+[11:01.60]  re re-evaluate its its to-do list for me
+[11:04.88]  for the day. But 10K literally tells me
+[11:06.88]  what to do. So that's why I log into
+[11:08.72]  that one first because actually 10K2
+[11:11.20]  will tell me what to do with our other
+[11:12.56]  agents. That's also why I log into that
+[11:14.16]  one first and foremost. Um, that one is
+[11:16.80]  a mix too of Claude and Replet. So I'm
+[11:18.72]  kind of like bouncing between those two
+[11:20.16]  entities, which you know, a lot of
+[11:22.16]  Replet runs, I'm pretty sure, on Claude.
+[11:24.56]  And so for that one, context switching
+[11:26.72]  is not too too hard because they kind of
+[11:29.20]  speak the same language, but they have
+[11:31.12]  different nuances in how they interact
+[11:32.80]  with you, right? Like 10K as Claude is
+[11:36.00]  obviously more like textbased, whereas
+[11:38.24]  10K as the replet agent has a lot more
+[11:40.80]  dashboards, has a lot more numbers in
+[11:42.24]  it. So it's kind of a combination of
+[11:43.44]  both that I'm talking to at the same
+[11:44.64]  time there.
+[11:46.80]  Or then I'll go into, you know, what are
+[11:48.40]  our outward facing agents? I'll go into
+[11:51.12]  all of our sales agents and ticket
+[11:53.44]  agents and that's artisan qualified
+[11:55.36]  agent force and now Monaco that's four
+[11:58.48]  different agents I have to log into look
+[12:01.84]  at who needs a human response
+[12:05.36]  look at who it's reached out to over the
+[12:07.28]  last you know day between the last time
+[12:09.12]  I checked it yesterday let's say morning
+[12:12.40]  and see what it's doing right like a a
+[12:14.32]  lot of times I'll need to refresh
+[12:17.68]  what the agents are doing who they're
+[12:19.20]  reaching out to the copy they're
+[12:20.40]  reaching out to. For instance, I have it
+[12:22.08]  in the next screenshot here.
+[12:25.04]  Like I And you can see where it's
+[12:26.72]  roasting me already. Like I had to
+[12:28.32]  context switch for this week when I was
+[12:30.32]  doing this on Monday because I was like,
+[12:31.84]  we have a distinct promotion going out
+[12:34.40]  this week for Saturday annual tickets in
+[12:36.72]  particular because the ticket prices go
+[12:38.72]  up on March 1st. And I literally had to
+[12:40.56]  put that context into five different
+[12:42.88]  agents. Like literally, you can see some
+[12:44.24]  of the screenshots here. I was like, I
+[12:45.68]  have to go in and tell artisan that. I
+[12:47.84]  have to go in and tell qualified that. I
+[12:49.60]  have to go in and tell Salesforce that I
+[12:51.20]  have to like 10K already knows that
+[12:53.20]  because he's the one came up with it.
+[12:54.40]  But then he's telling me, why aren't you
+[12:56.40]  launching LinkedIn ads immediately for
+[12:58.16]  this new promotion? Do it right now. I
+[13:00.00]  was like, I will do it as soon as I'm
+[13:01.92]  done talking to the other agents. And so
+[13:04.00]  context switching becomes extremely like
+[13:07.44]  I don't it's just hard to keep up with I
+[13:09.44]  think sometimes in your brain. And a lot
+[13:11.76]  of the times it's hard too for the
+[13:14.16]  agents to remember everything you're
+[13:16.24]  doing, right? So, I think there's kind
+[13:18.24]  of like a double-edged sword there.
+[13:19.76]  [snorts]
+[13:23.84]  >> And so, the the at least for us for
+[13:26.00]  today, if if you're literally logging in
+[13:29.84]  and spending anywhere from 10 minutes to
+[13:31.68]  an hour with four to five of our core
+[13:33.68]  GTM agents, right? I would say every
+[13:36.08]  single day, right? And with different
+[13:37.52]  user interfaces,
+[13:38.88]  >> you have to remind each others of the
+[13:40.72]  changes, the campaigns because they
+[13:42.24]  don't talk to each other. I know we
+[13:44.16]  haven't found anything so it's slightly
+[13:45.52]  rhetorical question but people talk
+[13:47.44]  about orchestration agents and master
+[13:49.20]  agents we haven't found anyone that can
+[13:51.20]  integrate Asian force artisan qualified
+[13:53.04]  Monaco momentum attention attendive like
+[13:56.32]  we don't there's nothing out there today
+[13:58.96]  even with 10k which we've built
+[14:00.32]  ourselves that at some magical API or
+[14:03.12]  other level can integrate everything for
+[14:04.48]  you that does product does not exist
+[14:06.00]  right
+[14:06.96]  >> no it doesn't exist I will say the the
+[14:09.36]  the benefit of Salesforce
+[14:12.40]  buying being qualified momentum is like
+[14:14.96]  eventually by probably Dreamforce right
+[14:17.20]  those two things will be integrated into
+[14:19.04]  one so we have like two west dashboards
+[14:23.44]  and I'll probably have one centralized
+[14:25.12]  one by October but only because you know
+[14:28.24]  they've they've acquired those tool for
+[14:30.00]  most tools it's it's completely separate
+[14:32.80]  >> yep
+[14:33.52]  >> yeah so it's a lot
+[14:36.00]  >> you can have a one-on-one with your
+[14:37.28]  agent every day
+[14:39.76]  >> a weekly oneonone instead of a check-in
+[14:42.08]  on Slack back. If you want to accomplish
+[14:44.08]  what we've done or better, you have to
+[14:46.16]  do a truly and honestly a one-on-one
+[14:48.08]  with your agent every day. Even if you
+[14:49.44]  don't want to do the work, you got to do
+[14:50.40]  the work to see one-on-one with every
+[14:51.68]  agent every day.
+[14:52.88]  >> Yeah. And I think it's an interesting
+[14:55.68]  learning, too. I didn't put it here, but
+[14:57.04]  like one thing I do with my agents is I
+[14:59.12]  ask them every day like, "What should I
+[15:00.88]  be mindful of? What should I be looking
+[15:02.72]  at?"
+[15:03.84]  And then sometimes it'll say hey like I
+[15:06.48]  can give you a recommendation but you
+[15:07.92]  need to give me some data back or you
+[15:09.28]  need to tell me what you're doing with
+[15:10.08]  your other ages or you need to give me
+[15:11.20]  XYZ inputs in order for me to output
+[15:14.08]  that. And so that is a very good way I
+[15:16.72]  think more so to look at it is just
+[15:18.24]  think of this as 20 different people
+[15:21.60]  that you have to manage every day.
+[15:24.00]  Right? Sometimes you can get away with
+[15:25.44]  doing a one-on-one with a human once a
+[15:28.08]  week if you're you know lucky. This is
+[15:30.80]  you can't you can't wait a whole week.
+[15:32.48]  Like that's the thing. It's like if you
+[15:34.24]  wait a whole week with any of your
+[15:35.68]  agents, it'll be so out of date by the
+[15:37.36]  time the week's over.
+[15:39.44]  >> The production the output is so high.
+[15:41.68]  >> Yeah. Yeah. Exactly. You can't you it
+[15:44.64]  just can't afford to wait a whole week
+[15:46.00]  or like you're or you're probably just
+[15:48.00]  wasting honestly you're probably wasting
+[15:49.60]  your money if you don't spend the time
+[15:51.52]  to do it daily because a lot of these
+[15:53.12]  are waiting for you to give it inputs,
+[15:55.76]  right? like it's such a high volume like
+[15:57.92]  artisan qualified agent force like I'm
+[16:00.00]  constantly giving it more people to
+[16:01.52]  reach out to better messaging different
+[16:03.12]  campaigns different things where like if
+[16:04.96]  I don't do that most of those don't do
+[16:06.72]  it themselves so they're just going to
+[16:08.48]  sit there like your agents are just
+[16:10.00]  going to idle if you don't check in with
+[16:11.84]  them every day which I also think is
+[16:13.20]  just like a waste of time and money cuz
+[16:15.36]  what you want is to have that high
+[16:17.28]  volume output so you're maximizing what
+[16:19.44]  the agent can do right so
+[16:23.04]  it's an interesting nuance Okay, number
+[16:25.92]  two. I would say biggest learning is we
+[16:28.16]  learned this kind of quickly, but I
+[16:29.52]  think it's just more so now getting
+[16:31.44]  harder now that we have 20 plus almost
+[16:34.72]  30 agents, but you know, in the
+[16:36.56]  beginning it used to take us more than
+[16:37.60]  two weeks to implement some of these
+[16:38.80]  agents. I would say now we've pretty
+[16:40.24]  much gotten it down to about two weeks
+[16:42.80]  for a lot of reasons. One reason like a
+[16:44.40]  lot again even though context switching
+[16:46.48]  is hard. You can share a lot of contacts
+[16:49.04]  between agents. So kind of once you have
+[16:50.72]  one, you can do another one. It gets
+[16:52.88]  easier. It's not easy, but it gets
+[16:54.40]  easier.
+[16:55.92]  But I would say we've kind of gotten it
+[16:57.28]  down to like a two week implementation
+[16:59.68]  pipeline for any of our agents. It's
+[17:02.08]  true for Monica that we just did. It's
+[17:03.44]  true for Happy Fox that we just did.
+[17:04.80]  Like each of those just took two weeks
+[17:07.04]  and that was not spending the entirety
+[17:09.52]  of the two weeks on it, but it was
+[17:10.72]  spending the majority of two weeks on
+[17:12.56]  it. And so this just gets harder with
+[17:15.04]  every new agent that you add because
+[17:18.40]  each new agent means you're not
+[17:21.04]  spending, you know, that daily time I
+[17:23.04]  just mentioned. You're probably not
+[17:24.40]  doing that if while you're onboarding a
+[17:26.24]  new agent. Like I know I didn't spend
+[17:27.84]  the time I needed to with each of our
+[17:29.36]  agents in the way that I should I I
+[17:32.72]  usually do when I was onboarding these
+[17:34.80]  new agents cuz I was like, I want to get
+[17:36.24]  these off the ground. I want to get them
+[17:37.76]  up and running. And so I'm just going to
+[17:39.84]  have to do, you know, I'm going to have
+[17:41.76]  to do the trade-off and let the other
+[17:43.44]  ones slightly degrade or slash sit idle
+[17:45.92]  while I get these new agents up because
+[17:47.68]  there's just no way I can do it all. And
+[17:50.48]  so I think that's a huge trade-off when
+[17:52.64]  you're looking at bringing in, you know,
+[17:54.32]  multiple agents is instantly things go
+[17:57.92]  stale with your agents, right? While
+[17:59.28]  they're idling, they go stale really
+[18:01.52]  fast. Not because they can't do things
+[18:03.36]  on their own, but because they're again
+[18:05.20]  waiting for you to tell them what to do.
+[18:08.08]  So, if they've run through, like, let's
+[18:10.00]  just say one of these outbound agents
+[18:11.44]  has run through a whole contact list,
+[18:13.04]  but I'm busy on boarding another agent,
+[18:16.16]  it's just sitting there. It's literally
+[18:17.84]  idling. It's sitting there. It's not
+[18:19.28]  doing anything cuz I haven't had the
+[18:20.72]  time to give it new contacts. Like that
+[18:22.72]  is I think just a huge nuance folks
+[18:25.04]  don't really talk about is anytime you
+[18:27.04]  know we're all trying to push like okay
+[18:28.32]  we we we also push like we have a lot of
+[18:30.32]  agents and I think there's a lot more
+[18:32.56]  agent things people can be doing but
+[18:34.96]  just realize like anytime you bring on a
+[18:37.28]  new one it's going to take time it's
+[18:39.12]  going to cost money for these agents
+[18:41.76]  it's going to cost some of your you know
+[18:43.60]  mental overhead and mental bandwidth and
+[18:45.60]  mental time like these agents do not
+[18:48.24]  deploy themselves and so even with all
+[18:51.12]  the help you in the world, which you
+[18:52.48]  should only pick vendors you get help
+[18:53.76]  from. But even with that, like again,
+[18:56.16]  two weeks is pretty fast. I think most
+[18:58.16]  agents, especially in the early days,
+[19:00.00]  took us like a month, maybe six weeks to
+[19:01.52]  get up and running. Now we've gotten it
+[19:02.72]  down to two weeks cuz we've gotten
+[19:03.92]  pretty good at it. But I'd say in that
+[19:06.56]  math, you can really only add one slash
+[19:08.96]  one and a half agents per month max.
+[19:11.68]  Like otherwise, you're running in place
+[19:13.92]  because you can't really keep up with
+[19:15.28]  your current agents to add the new
+[19:17.52]  agent. So, it doesn't actually maybe it
+[19:19.20]  doesn't make sense to add that new agent
+[19:20.80]  if you can't keep up with it or know
+[19:23.04]  that you can that you'll need to do kind
+[19:24.88]  of a blackout period to do a new agent.
+[19:28.40]  And so, I think this is super nuance,
+[19:30.40]  not something I really realized until we
+[19:31.92]  had multiple agents of production that
+[19:34.48]  there is a trade-off. Like, it's you're
+[19:36.24]  going to get a lift from it for sure,
+[19:38.00]  right? If it works the way you think it
+[19:39.52]  will, but there's a trade-off. Like,
+[19:40.96]  there it's not free. It's not free
+[19:43.36]  scalability instantly.
+[19:50.40]  Okay.
+[19:52.24]  Oh, these are Yeah, these are
+[19:53.52]  screenshots I added. So, I added some of
+[19:55.28]  these screenshots of Monaco. This was
+[19:56.72]  like one of our newer agents that we
+[19:58.16]  just did. Again, we got help from the
+[20:00.64]  team to put us into the product. I think
+[20:03.76]  it took, you know, probably two weeks
+[20:07.84]  conservatively, maybe a little bit less
+[20:09.52]  actually because we we worked fairly
+[20:11.20]  quickly with them. But again, it was one
+[20:12.72]  of those things where I blocked out
+[20:14.64]  doing other things. And actually, the
+[20:16.48]  mono team works over the weekend. So, I
+[20:17.84]  did a lot of this over the weekend,
+[20:18.80]  which was nice. But we got it up and
+[20:21.76]  running in basically a week and a half.
+[20:23.60]  And you can see here like in its first
+[20:25.20]  week on, you know, it reached out to 64
+[20:27.12]  people. It booked six meetings
+[20:29.04]  instantly. Some of those are like tier
+[20:31.60]  one accounts for us, which is pretty
+[20:33.04]  dang good. So, again, is it worth it?
+[20:35.76]  Yes. From that perspective, it was worth
+[20:37.84]  it to let our other agents kind of like
+[20:40.32]  sit idle slash do a little bit less
+[20:43.92]  while we were getting this new agent on
+[20:45.68]  board because we believed it would be
+[20:47.04]  worth the trade-offs, right? But just
+[20:48.56]  know that you're going to have to
+[20:49.52]  probably weigh trade-offs when you come
+[20:51.12]  into something like adding a new agent.
+[20:53.76]  And maybe just plan for a blackout
+[20:55.28]  period. I think that's my kind of meta
+[20:57.12]  point is if you plan on it, it'll
+[21:00.00]  probably work more to your benefit
+[21:01.28]  versus just going into it like, oh, I
+[21:02.96]  can just add this in a day. that's not
+[21:05.28]  really going to work for you or your
+[21:06.40]  agents. So,
+[21:08.56]  okay. Number three,
+[21:11.12]  and this may not apply to all of you,
+[21:13.60]  but I think from what I've seen, and
+[21:16.24]  this is where I want to get your take,
+[21:17.44]  too, Jason, I see a lot of folks where
+[21:19.68]  it's either a single or like maybe one
+[21:22.88]  like for us it's two people, but like
+[21:24.48]  it's kind of a single point of failure
+[21:26.80]  for our agents. And it's funny because I
+[21:29.36]  put some screenshots in the next one of
+[21:30.64]  like I asked my agents what what it
+[21:32.32]  would do if I stopped talking to
+[21:36.40]  and the responses were interesting.
+[21:39.28]  But I think this is where folks get
+[21:42.16]  themselves into trouble because they
+[21:43.52]  think they can, you know, recruit
+[21:45.20]  somebody to just manage all the agents.
+[21:46.72]  That doesn't really work. They think
+[21:48.16]  they can just, you know, roll it out to
+[21:49.60]  the entire sales team or the entire CS
+[21:51.36]  team. That doesn't really work. There's
+[21:53.36]  reasons that doesn't really work. Like
+[21:55.52]  this is I would say the biggest
+[21:57.04]  double-edged sword of like I do think
+[21:58.72]  having a single point of truth with who
+[22:02.16]  is managing the agents, right? Like who
+[22:04.56]  from our perspective, which contacts go
+[22:06.96]  into qualified versus artisan versus
+[22:09.04]  Monaco versus agent force? Like that is
+[22:11.52]  just all in my brain right now. And I'm
+[22:14.96]  sure Claude could write it down if I
+[22:17.44]  told it to and give it to other agents
+[22:21.36]  if it was really pushed. But like, but
+[22:23.84]  then if like, let's just say even if I
+[22:25.84]  got the agents to give me an ND file of
+[22:28.56]  everything it knows with me, I'm not
+[22:31.36]  sure the next person can really pick it
+[22:33.04]  up in the same way. They might say,
+[22:34.96]  "Okay, you know, Ameilia was segmenting
+[22:37.92]  a lot of her ticket outbound in Artisan
+[22:40.00]  and then a lot of her sponsor outbound
+[22:41.52]  in agent force and then new cold
+[22:43.60]  outbound in Monaco and then, you know,
+[22:46.56]  what whatever else we're doing
+[22:47.76]  retargeting in and in inbound in
+[22:50.24]  qualified
+[22:52.80]  But maybe this new person doesn't agree
+[22:54.48]  with that. They may say, "Hey, agent."
+[22:56.24]  Like, "Oh, you're outbound. Cool. I'm
+[22:58.32]  just going to keep one of you." Like one
+[22:59.92]  of like we only need one of you to stay
+[23:02.48]  to do, you know, outbound. If it's truly
+[23:05.44]  at the end of the day, those are all
+[23:06.56]  doing outbound functions. Somebody else
+[23:08.32]  might say, I only need one of those
+[23:09.76]  agents to do those things, which might
+[23:11.20]  be true, but also like we have found
+[23:12.72]  like we have all these tools cuz they're
+[23:14.48]  super nuanced. They're like hyper
+[23:16.40]  effective in certain verticals. And
+[23:18.08]  that's why we've chosen to do multiple
+[23:20.80]  agents versus just one agent. And so I
+[23:23.52]  think that's an interesting nuance you
+[23:24.88]  would lose. Like again, double-edged
+[23:26.64]  sword of like I think having one person
+[23:28.56]  know what's going on with all your
+[23:29.92]  agents is super important. But then what
+[23:31.36]  happens if you know you're in a bigger
+[23:33.20]  company, you have maybe multiple people
+[23:35.68]  working on agents or you're in a bigger
+[23:37.60]  company and that person leaves. Like how
+[23:40.32]  like how do you scale past this n equals
+[23:43.28]  1? And I don't think there's a good
+[23:46.08]  answer for this today. There is no like
+[23:49.04]  again crazy good agent that can manage
+[23:52.24]  all the other agents on its own today as
+[23:54.56]  of February. There's that doesn't exist,
+[23:56.64]  right? Like I wish there were I don't
+[23:59.20]  know if I think there will be but
+[24:01.60]  there's not one today. And so I think
+[24:03.44]  even with all the help we get, it's this
+[24:06.56]  is just a huge issue that I think the
+[24:09.76]  market has not realized yet.
+[24:11.84]  >> Yeah, it's good. I want to keep going,
+[24:13.36]  but yeah, I mean I mean obviously we're
+[24:15.12]  extreme and tiny. I mean, if you left
+[24:16.72]  for some reason, we would we would have
+[24:18.24]  to cease using our agents. There there's
+[24:20.64]  no there's no there's no plan B. We're
+[24:22.56]  just all learning that you need some
+[24:24.32]  sort of chief agent officer, right?
+[24:26.08]  Whether it's a whether it's a whatever
+[24:28.32]  you want to call them, someone that can
+[24:29.84]  manage all of your agents that I think
+[24:32.00]  needs to be a bit of a nerd, a tech
+[24:34.24]  nerd, ideally a bit of a marketing nerd
+[24:36.16]  because a lot of these products are if
+[24:38.16]  you can manage a complex marketing
+[24:40.00]  automation tool, you can probably manage
+[24:41.60]  most of the products that we use. you
+[24:43.28]  can hack the rest.
+[24:45.52]  But, you know, thinking through it, I
+[24:46.72]  mean, this is this is Captain Obvious,
+[24:48.32]  but I think if you actually find the
+[24:50.00]  person that can deploy these agents for
+[24:51.44]  real, that actually can be success just
+[24:54.72]  like a lot of these functions, but
+[24:56.24]  immediately they should recruit. You
+[24:57.76]  need to recruit somebody else on their
+[24:59.44]  team and and divide and conquer and make
+[25:01.28]  sure you have two.
+[25:02.64]  >> Yeah, you got to have two, right? I
+[25:04.24]  mean, one's hard enough. There's a lot
+[25:06.56]  of in the early days of agents when we
+[25:08.64]  talk to folks, there's very few people
+[25:09.92]  in a lot of organizations that can do
+[25:11.60]  this. It's not that hard, but there's
+[25:13.12]  very few people. But you you Yeah. If
+[25:14.56]  you don't have two, you're at
+[25:16.08]  existential risk.
+[25:18.08]  >> Yeah. Like literally when Philipe Picero
+[25:20.56]  at Persona was in London, he you know,
+[25:22.56]  he famously set up all their agents, but
+[25:24.32]  then he was like, I I started using
+[25:29.28]  he was qualified or something like with
+[25:30.88]  the sales team. And
+[25:33.60]  then he was like I rolled it out to like
+[25:35.84]  a few reps to be able to like cuz like
+[25:38.00]  qualified you can round robin like the
+[25:39.68]  inbound, right? you can say, "Okay, like
+[25:41.20]  I'm going to I'll be the mass he's like
+[25:43.28]  the master controller of it of like
+[25:44.96]  doing the training and the programming."
+[25:46.40]  But qualified is actually an easier one
+[25:47.76]  to get the rest of your team on because
+[25:49.04]  you can just have them respond to folks
+[25:51.04]  when the agent can't. You can set up
+[25:52.64]  certain escalations and how however you
+[25:55.28]  want it, right? So for him, he was like,
+[25:56.48]  "Okay, I rolled it out to like five of
+[25:57.92]  the top reps on the sales team." And
+[26:00.48]  then the very top rep, whose name is
+[26:02.40]  also Amelia,
+[26:04.80]  ended up being the most like affluent at
+[26:07.20]  learning how to work with the agent
+[26:10.00]  handinhand as a co-pilot. And so then he
+[26:12.72]  decided from that like kind of pilot
+[26:14.88]  test with his humans that Amelia on
+[26:17.12]  their team would be the next person he
+[26:18.56]  trains on how to use the agent. So like
+[26:20.16]  he did kind of, you know, like a little
+[26:21.84]  bit of a beta with their team and then
+[26:24.48]  said, "Okay, I know now who wants to
+[26:26.88]  actually manage these agents the way
+[26:28.48]  that I do." And so now I'm going to
+[26:29.84]  train that person. So that's another way
+[26:31.44]  to do it too across your team is to do
+[26:33.52]  it that way. But yeah, this again
+[26:35.44]  double-edged sword though because now
+[26:36.64]  it's like now he has to tell all the
+[26:38.80]  agents everything plus he has to tell
+[26:40.24]  Ameilia everything. So like
+[26:42.96]  >> and he's the CRO arguably.
+[26:44.56]  >> And he's the CRO.
+[26:45.44]  >> Arguably.
+[26:46.00]  >> Yeah. Exactly.
+[26:46.72]  >> Right. [laughter]
+[26:47.60]  >> Yeah.
+[26:49.52]  >> So it's funny too. I asked our agents
+[26:52.00]  what they what they recommended we do if
+[26:54.80]  for some reason I got hit by I said if I
+[26:56.64]  get hit by a bus what what should you
+[26:58.72]  tell a
+[27:03.04]  about yourself so that they could like
+[27:05.28]  if Jason were to take these agents over
+[27:07.04]  cuz I got hit by a bus. What would you
+[27:08.48]  what would you tell him? And and the 10K
+[27:11.76]  version of Claude said it would I well
+[27:14.08]  these docs are on my computer cuz I use
+[27:15.52]  Claude on on on machine. it would need
+[27:19.44]  to give him these, you know, documents,
+[27:21.44]  which I'm like, I don't know. Maybe you
+[27:23.84]  could guess my laptop password. I don't
+[27:25.28]  know. Maybe. But like, first of all,
+[27:27.44]  that's already an issue because I'm
+[27:28.72]  like, these docs are literally on my
+[27:30.56]  computer and probably nowhere else.
+[27:33.84]  Then it's literally saying the next
+[27:35.92]  campaigns he has to run for March and
+[27:38.00]  April, which I don't think you would
+[27:39.12]  want to. And then I think it's
+[27:41.60]  interesting, it called out what I
+[27:43.68]  consider the vibe for SAS annual, which
+[27:46.16]  I hadn't really thought about. But it's
+[27:47.60]  just it's a little funny that the agent
+[27:49.36]  was like, "Make sure Jason or whoever
+[27:52.24]  takes us over if you get hit by a bus
+[27:53.60]  knows what the vibe is like."
+[27:56.56]  So, it's I was like, I do actually call
+[27:58.96]  it a moment in time. That's really
+[28:00.16]  funny. I use that in like a lot of copy
+[28:01.60]  and I use that in like a lot of things.
+[28:04.24]  So, it's a little funny that the agent
+[28:06.16]  picked up on that. It wanted you to know
+[28:07.68]  the vibe, Jason, just in case I get hit
+[28:09.60]  by a bus. [laughter]
+[28:12.64]  I see. The other interesting thing was I
+[28:16.24]  asked our SAS sponsors,
+[28:19.44]  which is an app we talked a lot about
+[28:21.28]  last week, how many lines of code it
+[28:23.84]  has, which was shocking because I think
+[28:25.68]  Jason, you said it's something like
+[28:26.80]  3,000 is like, you know, average or
+[28:29.20]  basic or simple. It said 12,000 and it
+[28:33.12]  says it said it was hefty. But then I
+[28:36.24]  said, "Okay, since this is a hefty
+[28:39.04]  fivecoded app that I made for sponsors,
+[28:42.08]  yeah, how would you bring somebody new
+[28:43.92]  up to speed?" And this is where it gets
+[28:46.16]  tough, right? Cuz I'm like, I think what
+[28:47.52]  it says is so complicated that somebody
+[28:49.68]  else would give up. It's explaining it's
+[28:52.32]  a sponsor portal. Fine, that's easy. But
+[28:54.56]  then it says how the authorization
+[28:56.32]  works. Like, okay, file uploads go to
+[28:58.40]  replet, object storage, submission sync
+[29:00.88]  to Google via Zapier. Again, you're just
+[29:03.36]  running into a lot of issues here. The
+[29:05.20]  agent doesn't know my clerk login. It
+[29:07.68]  doesn't know my Google Sheets login. It
+[29:10.24]  doesn't know my Zapier login.
+[29:13.76]  It's a like it's it would be a mess to
+[29:17.84]  hand it off. [laughter]
+[29:21.04]  And then it was funny cuz then my agent
+[29:22.80]  said, "Don't get hit by a bus." That was
+[29:24.48]  it. That was its recommendation.
+[29:27.76]  I said, "Thanks. I'm really trying
+[29:29.17]  [laughter] not to."
+[29:31.76]  All right.
+[29:33.60]  This is number four for me. You've
+[29:34.88]  already seen it a little bit in these
+[29:35.92]  slides. These agents as I they're
+[29:40.32]  interesting to work with on a daily
+[29:41.92]  basis versus humans cuz you know some
+[29:46.00]  sometimes humans have their own
+[29:47.68]  ambitions, their own goals. Like I feel
+[29:50.40]  like Claude is famously goal seeking but
+[29:53.20]  in a very different way than a human
+[29:55.12]  being is right. In a very different way.
+[29:58.56]  So, I think there are times where I also
+[30:00.64]  feel like these agents don't really know
+[30:02.24]  the date and time and like they don't
+[30:04.40]  realize they don't realize on their own
+[30:06.16]  that like when you start chatting with
+[30:07.44]  them at 6:00 in the morning, you're
+[30:08.56]  still chatting with them at midnight
+[30:09.68]  that you should probably go to sleep at
+[30:10.88]  this point. Like, you can't keep working
+[30:12.00]  with your agent. So, like it's just a
+[30:13.76]  little funny
+[30:15.68]  that as I as I considered it, but you'll
+[30:18.56]  see my agent's response on the next
+[30:19.92]  slide. I consider my 10K is like
+[30:21.68]  roasting me all the freaking time.
+[30:24.64]  Like, you can see it here. It said,
+[30:26.16]  "You're behind on Summit Outreach." I
+[30:27.76]  said, I know I am.
+[30:29.92]  You needed to send 200 emails by Feb
+[30:32.96]  15th and you sent 87. You're 56% behind
+[30:36.32]  target. Now, maybe you don't think this
+[30:38.48]  is roasting me. I thought it was though,
+[30:41.12]  cuz it also told me to block 3 hours and
+[30:42.96]  I was like, you know, I don't have 3
+[30:44.48]  hours. Let's do this and catch up. Like,
+[30:47.12]  thanks. But also, now you're just
+[30:49.12]  stressing me out and roasting me versus
+[30:51.04]  being helpful. Um, so I thought that was
+[30:54.08]  a little bit funny cuz it was it, you
+[30:56.24]  know,
+[30:57.60]  What does the agent care? The agent's
+[30:59.44]  just going to tell me the truth. The
+[31:00.88]  agent has all the data more than I
+[31:03.60]  probably look at it, right? Like I look
+[31:05.04]  at it a lot,
+[31:07.52]  but it's got all like it knows where I'm
+[31:09.76]  behind. It knows my calendar. It knows
+[31:12.00]  all these things. And it's still said,
+[31:14.08]  you're you're dropping the ball here.
+[31:16.32]  Catch up. It's constantly asking me,
+[31:19.60]  "What's preventing you from doing this
+[31:21.36]  right now?" And sometimes I'm like, it's
+[31:23.12]  literally 11:00 p.m. and I'm I'm I'm
+[31:25.36]  tired, so I can't I can't really like
+[31:26.88]  focus on launching this XYZ thing that
+[31:29.36]  you want me to do right at this very
+[31:31.60]  moment cuz I need to sleep first and
+[31:33.52]  then do it. So, it's just interesting,
+[31:36.16]  right, of like, okay, what then? What do
+[31:37.84]  you decide as the human leader of the
+[31:40.00]  agents is helpful versus what crosses a
+[31:43.60]  line into maybe slightly demoralizing of
+[31:46.08]  because your agent knows everything.
+[31:50.24]  It's not that it's wrong when it's
+[31:52.48]  roasting me, right? That is maybe the
+[31:54.48]  uncomfortable truth. Oftentimes it
+[31:56.16]  roasts me and I'm like, "Yeah, well, I
+[31:59.12]  deserve that roast. You were right. Like
+[32:01.04]  I didn't do this thing that I'm now
+[32:03.28]  behind on."
+[32:05.20]  But also like because so much like so
+[32:07.76]  like 10k roast me the most. Some of the
+[32:09.44]  other agents roast me slightly, but like
+[32:11.12]  because you're getting it from so many
+[32:12.40]  different angles and so many agents cuz
+[32:13.84]  you can't keep up with them. Sometimes I
+[32:15.84]  feel like it does cross a little bit of
+[32:17.12]  line where I'm like, "Okay, dude. like
+[32:19.04]  today just like sugarcoat it to me like
+[32:22.40]  you would a person like today I don't
+[32:25.36]  need the hard like I can't deal with
+[32:27.28]  hard truths every day. I don't think
+[32:29.36]  anyone can like I can't to some degree
+[32:31.52]  but I think every day all the time from
+[32:33.20]  your agent is a lot. But it's funny cuz
+[32:35.76]  it said you know literally it said to me
+[32:37.76]  on Sunday what's when it was super late
+[32:40.24]  what's blocking you from the LinkedIn
+[32:42.24]  ads from going live and I I literally
+[32:44.96]  said it's cuz it was late. And then I
+[32:46.72]  said, "Hey, you've kind of roasted me a
+[32:48.72]  lot lately. Can you bring up some
+[32:50.00]  examples for this webinar I'm doing?"
+[32:51.76]  And it said, "Looking through the
+[32:53.68]  transcript, I haven't really roasted
+[32:55.68]  you."
+[32:58.16]  It said, "I've a tough accountability
+[33:01.68]  partner." And then it listed ways. This
+[33:04.24]  is only two out of five ways. Then it
+[33:06.56]  listed ways it should have roasted me.
+[33:09.92]  And I said, "Thanks.
+[33:13.28]  I don't know if you're I don't know if
+[33:14.72]  your agents risk you as much, Jason, but
+[33:16.48]  I think this is just a like a fun
+[33:18.48]  interesting one of like, you know, just
+[33:21.60]  something maybe you don't expect from
+[33:23.52]  your agents is that they will always
+[33:24.88]  tell you the truth and they have all the
+[33:26.40]  data.
+[33:30.24]  Let's get into the last one and I'll do
+[33:31.44]  the bonus one and then we've we've got
+[33:32.88]  quite a few questions that I want to try
+[33:34.16]  and get to. So,
+[33:36.64]  compliance and security issues. Anytime
+[33:39.92]  we run an audit or ask an agent to run a
+[33:44.08]  security audit, it takes time to fix
+[33:46.80]  these. Like we ran a huge one the other
+[33:49.92]  day on sasher.ai. We haven't even fixed
+[33:53.36]  I would say even 10% of the issues that
+[33:55.60]  came up in the audit because it became
+[33:59.52]  super fragile once we started like
+[34:01.28]  futzing with the code and like then you
+[34:04.32]  know sometimes when you do a security
+[34:06.08]  audit
+[34:07.76]  it will go too far like it'll start to
+[34:10.16]  lock things down to the point where
+[34:11.60]  you're like I actually can't even use my
+[34:13.28]  app anymore because it took this too
+[34:14.64]  far. So then you kind of have to peel
+[34:16.32]  back one by one. It's something you have
+[34:17.68]  to walk the agent through. It can't
+[34:19.04]  really do it that great on its own.
+[34:21.52]  And so this takes a lot of time. Not
+[34:24.16]  only does this takes a lot of time, the
+[34:26.16]  maintenance becomes a lot harder each
+[34:27.84]  time you do a security audience and like
+[34:29.28]  implement whatever it recommended with
+[34:31.36]  you know you together. So then when you
+[34:33.76]  start to multiply that across 20 agents,
+[34:36.56]  it's almost unfathomable like how to
+[34:38.48]  keep your apps and all your data secure.
+[34:43.52]  But Jason, you've been running the
+[34:44.80]  security more than I have. Like you're
+[34:46.24]  the one who actually told me that I
+[34:47.60]  should talk. It's askful.
+[34:49.52]  >> Well, there's a lot there's a lot here.
+[34:50.80]  I think it is it is a reminder that
+[34:54.08]  in general, I mean, you can see this in
+[34:56.40]  the press. Agents can do more
+[34:58.08]  autonomously. That's why they're agents,
+[35:00.32]  right? What's the definition of an
+[35:01.60]  agent? I'm actually not sure, but I
+[35:03.76]  think it is a piece of software powered
+[35:06.40]  by AI that can complete tasks
+[35:08.00]  autonomously. And all of these agents,
+[35:10.72]  if that we're talking about, go to
+[35:14.00]  market agents and others have access to
+[35:15.76]  your data. And there's an inherent level
+[35:17.84]  of security and that Salesforce is our
+[35:19.84]  hub, right? As to tie this to the
+[35:21.60]  beginning that that is important. I
+[35:23.76]  think I do think it is one of the if if
+[35:27.04]  no other reason to use something like
+[35:28.24]  sales source as your hub is that it is
+[35:29.52]  secure. But these agents then take data
+[35:31.60]  out and the honest truth is no agents no
+[35:35.04]  third party agents are more secure than
+[35:37.12]  Salesforce. They're all less secure is
+[35:38.72]  the reality of it. They're less secure
+[35:40.64]  because they're startups, but they're
+[35:42.00]  also less secure because the agents can
+[35:43.44]  do crazy stuff with them like publish
+[35:44.96]  them to the wild, right? Or do other
+[35:47.36]  things. It is just a reality. And then
+[35:49.68]  just the final point
+[35:52.64]  is ones you vibe code yourself, which we
+[35:55.04]  have done a lot of, they are inherently
+[35:56.48]  less secure than third party apps that
+[35:58.08]  you buy today. I don't that may not last
+[36:01.44]  because
+[36:03.52]  a lot all of the the the products from
+[36:06.56]  cloud code to repel to level below have
+[36:08.32]  added more and more security but they're
+[36:10.08]  all custom. They all are less secure
+[36:11.92]  than a Salesforce or something. So all
+[36:14.40]  of the the apps like us you're going to
+[36:16.08]  run are going to have customer data
+[36:17.52]  through them. They're all of them right?
+[36:19.76]  You're not Stripe or PayPal like it's
+[36:22.08]  not that dramatic in many cases but bear
+[36:24.48]  in mind you're taking some measured
+[36:26.56]  risk. So at least if nothing else the
+[36:29.44]  ones that you've create yourself
+[36:32.48]  before you launch and then frequently at
+[36:34.80]  least every month just go to the agent
+[36:36.64]  and say do a deep security audit on my
+[36:38.56]  app and just have it do that. Don't
+[36:40.24]  assume the apps do it yourself. That's
+[36:42.08]  the best actionable thing I can take.
+[36:44.80]  And then just be thoughtful that there
+[36:47.12]  are there just inherent trade-offs to
+[36:48.80]  this that we're all going to have to
+[36:49.76]  learn, right? And it may make sense as
+[36:53.20]  you get going in the agentic revolution
+[36:56.00]  to maybe use slightly less sensitive
+[36:57.76]  data to start. If you're a conservative
+[36:59.12]  enterprise, it just may make sense just
+[37:00.56]  like it always has been for enterprise
+[37:01.84]  software. You always start in a in a
+[37:03.52]  little group or little function that's
+[37:04.72]  safer when you buy a startup. It's just
+[37:06.96]  this on steroids because you cannot
+[37:08.72]  fully predict what the agent will do
+[37:10.00]  with your data. It's just a reality.
+[37:12.08]  >> Yep.
+[37:12.64]  >> It's just a reality.
+[37:14.40]  >> Yep.
+[37:16.56]  Yeah. I put a few screenshots here of
+[37:18.32]  like when
+[37:18.80]  >> run another audit.
+[37:19.92]  >> Yeah. Run another one. Thanks, dude.
+[37:22.56]  Like
+[37:25.04]  there was a question in the chat too.
+[37:26.24]  How are we running these security
+[37:27.20]  audits? Some of them you can do natively
+[37:29.20]  with the agent, right? Like lovable
+[37:30.40]  reply. You can just ask its agent to run
+[37:32.48]  an audit for you. Um, other times,
+[37:36.72]  again, you may not need it if it's a
+[37:39.68]  full-blown third party tool, but you
+[37:42.00]  should ask that tool like I ask transfer
+[37:44.32]  from Marson all the time. I'm like, hey,
+[37:46.24]  what is your how like what's your
+[37:48.08]  compliance right now? Or like [laughter]
+[37:50.00]  like what do you cuz you have so much of
+[37:52.24]  my data like let's just make sure it's
+[37:54.64]  not going anywhere. It's not supposed
+[37:56.48]  to. So I think that's another thing too
+[37:58.08]  is like when you use third party tools
+[37:59.52]  like we do obviously we use Salesforce
+[38:01.36]  for a lot and that's ultra like fairly
+[38:03.44]  secure right knock on wood but for the
+[38:05.60]  other ones we use I I just ask them I'm
+[38:07.52]  like hey what what are you guys up up to
+[38:09.60]  date on what are you doing to make sure
+[38:11.60]  our data is secure.
+[38:16.00]  Okay, last one and then I'll do
+[38:17.44]  questions. I added as number six because
+[38:20.64]  this may not apply to everyone. It may
+[38:22.80]  not be a bridge that you ever cross, but
+[38:25.04]  I think if you get to the point where
+[38:26.72]  your agents do work 24/7 and you have
+[38:29.20]  almost 30 agents and again your agents
+[38:32.48]  know all the data when they answer a
+[38:33.92]  question, they have your APIs, they have
+[38:35.44]  your sales, but like they have all these
+[38:37.20]  things they can look at and are brutally
+[38:39.52]  honest roast you when you can't keep up
+[38:41.76]  with them.
+[38:43.52]  I think it it it it makes it harder
+[38:46.40]  sometimes. I know at least for me when I
+[38:49.52]  deal with actual humans that sometimes I
+[38:51.12]  lose patience with them a lot quicker
+[38:52.64]  now because I'm like, "What do you mean
+[38:54.48]  you don't know the answer?" Like my
+[38:55.84]  agents know the answer instantly. Like,
+[38:59.04]  what do you mean you don't know the the
+[39:00.64]  answer to this very basic question?
+[39:03.92]  What do you mean you haven't delivered
+[39:06.08]  on XYZ thing that I gave you three weeks
+[39:08.48]  to do? Or what do you mean you forgot
+[39:09.84]  something that I've, you know, told you
+[39:11.60]  literally 10 times now?
+[39:14.16]  It does make you on sometimes I often
+[39:16.72]  start to wonder I'm like do I need them
+[39:19.20]  or can't I build an agent to do this
+[39:20.96]  because
+[39:22.80]  if I'm losing patience with with them
+[39:25.36]  I'll probably lose patience with
+[39:26.56]  somebody else in the same boat and if an
+[39:28.32]  agent can just do it and the agent won't
+[39:29.92]  lose patience maybe I should just build
+[39:31.12]  an agent to deal with them and they
+[39:33.28]  don't have to deal with me. So
+[39:36.56]  I think it's just an interesting nuance.
+[39:38.08]  I think something else I've seen just to
+[39:41.12]  be wary of this is almost somewhat
+[39:43.92]  unrelated but related in that I've I've
+[39:47.12]  really find it now in the age of AI in
+[39:51.20]  you know the early phases of 2026 when
+[39:53.84]  folks
+[39:55.52]  tell us that they're going to help SAS
+[39:58.40]  for you know let's just say XYZ thing
+[40:00.08]  for SAS annual like I'll give you a
+[40:03.04]  concrete example a couple months ago I
+[40:05.60]  was working with a few parties on just
+[40:08.88]  house annual third-party production
+[40:10.32]  things we normally contract out things I
+[40:11.84]  thought an agent couldn't do and I went
+[40:13.92]  out to a few different agencies and
+[40:15.92]  production teams to RFP for it to get a
+[40:18.08]  quote for it right normal okay fine
+[40:21.12]  a few folks told me this would be your
+[40:24.40]  deliverable it was one sentence and this
+[40:26.80]  would be the price and it was something
+[40:28.00]  like 40 or 50k a month and I was like in
+[40:31.28]  the age of AI that's what you're
+[40:34.00]  promising something that like is one
+[40:37.92]  sentence, one price point, and nothing
+[40:40.24]  else. Like, you couldn't even ask your
+[40:42.08]  own internal agent or freaking ask your
+[40:44.08]  claude or Chad GBT how to make a better
+[40:46.80]  proposal. Like, that's terrible in the
+[40:48.48]  age of AI. I was like, this is just
+[40:50.08]  unacceptable. Like, I just didn't
+[40:52.24]  respond to those people. And it's sad
+[40:53.68]  because multiple people did it. Like,
+[40:55.76]  and I think maybe that's just a symptom
+[40:58.72]  of agencies versus software tools. And
+[41:03.52]  maybe marketing agencies won't exist in
+[41:05.28]  a year because of this, but I literally
+[41:07.44]  was like, how in the age of AI can you
+[41:09.60]  say you have a one-s sentence
+[41:11.12]  deliverable and a fixed price point and
+[41:13.52]  you can't even use the basic AI better
+[41:16.32]  than our team can? Like what? I I was
+[41:19.20]  exasperated. I was like, this is
+[41:22.48]  so crazy to me that so much of the world
+[41:24.72]  is still operating this way. Like I
+[41:26.48]  think, you know, AI is probably going to
+[41:28.88]  come for them. But
+[41:31.20]  I was like, I don't think anyone in the
+[41:33.28]  age of AI should be giving you a fuzzy
+[41:35.36]  deliverable and a fuzzy timeline.
+[41:38.96]  That's just not acceptable anymore. I
+[41:40.32]  don't think that was ever acceptable. I
+[41:41.60]  think it's just more unacceptable now.
+[41:44.80]  I also This is an interesting nuance,
+[41:46.32]  but I do feel like I have now managed
+[41:48.16]  more agents ever than than humans. And
+[41:50.56]  so I'm probably worse at managing people
+[41:53.44]  now than I than I am. Like agents I get.
+[41:56.48]  I can, you know, talk to them first
+[41:58.16]  thing in the morning, last thing at
+[41:59.36]  night. Like, they're not going to be
+[42:00.80]  impatient with me if I don't respond to
+[42:02.24]  them right all day. They might be idle,
+[42:05.20]  but they're not going to be like, you
+[42:06.32]  know, the same as the same vibe as
+[42:08.16]  somebody in Slack being like, "Hey, I
+[42:10.24]  have a question for you. Can you answer
+[42:11.44]  this right now?" And sometimes they
+[42:12.64]  can't like, so I do feel like now that
+[42:15.12]  I've flipped the switch to managing more
+[42:17.12]  agents, I think I've probably become
+[42:18.96]  slightly worse at managing the people
+[42:21.12]  that are, you know, that work with
+[42:22.48]  Sasser, especially leading up to SAS
+[42:24.00]  radial. So, it's something that I am
+[42:27.84]  hyper aware of now because I'm like
+[42:30.00]  there I have to remember that there are
+[42:31.68]  not agents.
+[42:34.08]  I need to be more I don't know at some
+[42:36.96]  I'm like I just don't know what's
+[42:37.92]  realistic anymore. I'm like if the
+[42:39.52]  agents work 24/7 and feasibly any human
+[42:43.36]  can use an agent, why can't they keep up
+[42:45.36]  a little bit more? That's why I called
+[42:46.64]  it my bonus point of once you reach this
+[42:50.64]  point
+[42:52.56]  what does that really do right in your
+[42:54.48]  in your nucleus of how you operate with
+[42:56.32]  the team the team is agents like they
+[42:58.32]  are still part of the team though right
+[43:00.40]  all right anything else you want to add
+[43:01.52]  Jason before we go to questions
+[43:03.84]  >> no I think it's great let's hit the
+[43:05.20]  questions and I think it's just a
+[43:07.76]  reminder I do want to it's a reminder to
+[43:09.28]  me that no matter how much people talk
+[43:11.12]  about on social media about an
+[43:12.48]  orchestration layer we haven't found one
+[43:14.08]  yet it's it's on our checklist list, but
+[43:16.64]  when I look at a lot of the GTM and
+[43:18.24]  other vendors, they're just building
+[43:19.36]  point solutions,
+[43:20.64]  >> right? No matter what anybody says. So,
+[43:22.32]  as soon as we master the orchestration
+[43:24.24]  layer ourselves, we will share it with
+[43:25.44]  you. It is it's definitely a challenge
+[43:27.04]  for 2026, but it's one we haven't even
+[43:29.12]  realistically been able to tackle yet.
+[43:30.96]  But let's get the questions.
+[43:32.96]  >> Yeah, it's funny. There are a few
+[43:34.88]  questions on
+[43:38.00]  why we haven't tried to build our own
+[43:40.64]  orchestration layer.
+[43:43.60]  Well, how how would I mean, do all these
+[43:45.28]  agents have enough of an API or open
+[43:48.08]  system that we could manage? Can they
+[43:49.36]  all be managed through an API?
+[43:51.60]  >> We'd have to extract all the data
+[43:53.92]  >> through into cloud or wherever our own
+[43:56.08]  vibe coded app and then we'd have to man
+[43:57.84]  and we could get them all in some sort
+[43:59.20]  of unified system, but they'd all have
+[44:00.80]  to be 100% manageable through their API.
+[44:05.68]  >> Yeah. Which they're not all today.
+[44:08.08]  >> Yeah. I don't think it's a priority for
+[44:09.36]  any of them. I don't think it matters
+[44:10.48]  whether it's MCP or anything. if they're
+[44:12.32]  not exposing their entire I mean
+[44:14.56]  literally just going in every morning
+[44:16.56]  and seeing the exceptions and issues
+[44:18.16]  that come up from campaigns the night
+[44:19.60]  before if that can't be fully replicated
+[44:23.04]  inside an orchestration layer with some
+[44:24.88]  management it's useless like if it's not
+[44:26.56]  as good it's useless right
+[44:28.16]  >> so everything would have to be exposed
+[44:31.12]  >> it's a good question and it's not I'm
+[44:32.56]  not saying someone smarter than us
+[44:33.68]  couldn't figure it out but we we haven't
+[44:35.28]  even begun to to figure that out there's
+[44:36.96]  no there's no obvious offtheshelfish
+[44:39.76]  even vibe solution today and
+[44:43.76]  platforms are a lot of these agentic
+[44:45.60]  platforms are not as open as they look
+[44:47.49]  [snorts]
+[44:48.64]  or as you might think not as that's not
+[44:50.40]  fair as as much as you might think.
+[44:51.92]  They're siloed solutions today.
+[44:54.00]  >> Yeah. [snorts]
+[44:54.56]  >> Right. The the only thing that is open
+[44:56.32]  is Salesforce. It's where they all meet.
+[44:58.48]  And if Salesforce could be our or our
+[45:00.40]  truly our orchestration layer, that
+[45:01.68]  would be actually the simplest path,
+[45:03.20]  right? But it's our management layer,
+[45:05.04]  but it's not really a truly an agentive
+[45:06.56]  orchestration layer yet,
+[45:08.32]  >> right? Yeah. Not yet. Another question
+[45:11.60]  in the chat from Alex. Any other
+[45:12.96]  thoughts on scaling past one person to
+[45:16.64]  manage all of your agents?
+[45:20.64]  >> I don't know. You would know better than
+[45:21.84]  me. I I don't think it's that
+[45:22.96]  complicated. I think that I think that
+[45:25.92]  you you I mean, listen, there's
+[45:27.60]  obviously conflicts and in some ways a
+[45:29.52]  lot of the start of this conversation
+[45:30.88]  was about conflicts, potential conflicts
+[45:32.56]  between agents and making sure they
+[45:33.76]  don't conflict. But if you have two
+[45:35.36]  folks on your team that work well
+[45:36.96]  together, two humans, they'll just
+[45:38.32]  divide and conquer. Yeah, I mean we our
+[45:41.20]  our agents are our go to our sales
+[45:43.04]  agents are roughly as as AI alluded to
+[45:44.80]  and we've talked about before are are
+[45:46.40]  actually fairly clearly segmented.
+[45:48.08]  There's there's raw outbound, right?
+[45:50.08]  There's there's there's inbound,
+[45:53.60]  there's re-energizing lapse leads,
+[45:55.60]  right? There's lapse leads and I might I
+[45:57.60]  might be missing the fourth one. Just
+[45:59.52]  have different people manage these
+[46:00.88]  different campaigns and have them
+[46:02.48]  coordinate every day just like the
+[46:03.68]  agents coordinate every day. That would
+[46:04.96]  be fun. If we could find a mini Amelia
+[46:08.24]  or a maxi Amelia, we would hire him or
+[46:10.96]  her tomorrow as a human. Like, no
+[46:12.24]  problem. And they would just divide and
+[46:13.28]  conquer. I don't think that is an issue
+[46:14.72]  with the agents.
+[46:17.84]  >> Actually, might let us do more, right?
+[46:19.44]  We probably could do a little bit.
+[46:20.56]  >> Oh, for sure.
+[46:21.44]  >> Yeah.
+[46:21.76]  >> Yeah. Yeah. I think I the issue I've run
+[46:23.76]  into is like I well one I was like I'm
+[46:25.36]  not going to try and solve this problem
+[46:26.32]  before annual
+[46:28.08]  but two I I think the problem I run into
+[46:30.64]  is like I can't find folks that know
+[46:32.56]  more about the agents than I do at this
+[46:34.56]  very moment in time.
+[46:35.36]  >> Well that's that's that's that's a big I
+[46:37.52]  think what you need is someone that not
+[46:40.16]  that for real wants to learn and is a
+[46:42.48]  good nerd about tools.
+[46:44.16]  >> Yeah.
+[46:44.72]  >> You need someone that has already built
+[46:46.24]  like listen everyone should be screening
+[46:48.40]  hires better. You should have someone
+[46:50.00]  someone should come into the interview
+[46:51.20]  and have built an agent in replet or cla
+[46:53.68]  does something. That should be the test.
+[46:56.08]  >> Yeah,
+[46:56.48]  >> that should be in fact what they do at
+[46:57.92]  Replet itself now is they give you a
+[47:00.00]  massive amount of credits. I think they
+[47:01.12]  give you like $1,000 worth of credits in
+[47:02.96]  the interview and they say build
+[47:03.92]  anything you want with a thousand bucks.
+[47:05.36]  Come back to us and then we'll do the
+[47:07.12]  interview.
+[47:08.16]  >> Yep.
+[47:08.64]  >> It's the best test in the world. You
+[47:10.24]  should do if we could if they don't need
+[47:12.00]  to be better than you, but they need to
+[47:13.04]  pass that test, right? Here's whatever
+[47:14.96]  you need. just just show me something
+[47:16.32]  you've built that automates GTM or
+[47:18.08]  agents that is better than we could. And
+[47:20.00]  you know, if you're not too crazy, we'd
+[47:21.52]  probably hire you tomorrow. Even if you
+[47:22.72]  could be pretty crazy, we'd still hire
+[47:24.08]  you, right? It'd be fine.
+[47:26.80]  >> Yeah. Yeah. I think that's a good test.
+[47:29.44]  And another question is, how do you
+[47:32.00]  calculate your agent? I count it more so
+[47:34.88]  as close revenue. That is literally our
+[47:38.24]  our very topline agent ROI across the
+[47:41.76]  board across all these agents is ROI
+[47:45.28]  like true ROI and revenue.
+[47:48.16]  >> Just two things. It is very easy to
+[47:49.76]  attribute revenue to each agent. It's
+[47:51.44]  very simple.
+[47:52.00]  >> Yeah, it's super easy.
+[47:53.12]  >> In fact, there's rarely even a
+[47:54.24]  multi-touch issue at the agentic level.
+[47:56.00]  There may be multi-touch at a market
+[47:57.60]  meta marketing level. It's very easy.
+[47:58.96]  Which agent interacted with which lead
+[48:01.20]  and did that did that lead close? Like
+[48:03.12]  and then we attribute revenue to them.
+[48:06.08]  That's the main way we measure ROI. The
+[48:08.16]  reality is having said that, it's not
+[48:11.12]  why we started.
+[48:13.28]  We started because we had people that
+[48:15.68]  didn't want to do these jobs and we
+[48:18.48]  said, can we replace a six-f figureure
+[48:20.40]  hire with a five figure agent?
+[48:24.32]  So, the truth is even if these agents
+[48:26.32]  performed a little bit worse than they
+[48:27.92]  did, they would still be ROI positive on
+[48:30.16]  that on that goal, right? Our goal was
+[48:32.48]  basically to achieve the same amount of
+[48:34.24]  revenue with half the humans and and the
+[48:38.00]  agents. That was that was the way we
+[48:39.52]  initially measured ROI. And honestly, I
+[48:42.96]  you know, you you need to deliver the
+[48:46.40]  one thing I'll say to folks in general
+[48:47.68]  if they're scratching their heads and
+[48:48.88]  why is it so hard? I can tell you some
+[48:50.24]  of the products that we use, most of the
+[48:52.80]  ones we use, they have infinite demand.
+[48:56.24]  like Monaco, we just rolled it out for
+[48:58.08]  outbound that we talked about. They're
+[49:00.00]  booked for two months including weekends
+[49:02.24]  for demos. Okay, there is one called
+[49:04.40]  Basis, which is an agentic pro product
+[49:07.20]  for accounting yesterday. I don't know
+[49:08.48]  the team, but they just raised a billion
+[49:10.48]  yesterday and they said in their in
+[49:11.76]  their in their header, one of the
+[49:12.88]  challenges is like the demand is simply
+[49:14.56]  overwhelming. Like they can't serve the
+[49:16.24]  demand. Now, some of that is because you
+[49:17.68]  have to train these agents and you have
+[49:18.80]  to onboard them and you can't dump it on
+[49:20.24]  the customer. So there's a reason for
+[49:22.08]  it, but that's how we measure ROI. But
+[49:24.80]  if you're a vendor, if you're working at
+[49:26.24]  a startup, your ROI needs to be massive
+[49:29.04]  in this world. You're going to be
+[49:30.08]  slaughtered by folks that deliver like a
+[49:32.72]  six figure meeting on day one like
+[49:34.32]  Monaco did, right? Or take over all of
+[49:37.28]  like two people did for like each of
+[49:39.20]  Artisan and Mon and qualified. They
+[49:41.04]  replace like two two people each, right?
+[49:43.12]  That's high ROI. Mediocre ROI is dead.
+[49:48.64]  It's just dead. Odd. products that just
+[49:52.00]  give you productivity bounces that no
+[49:54.32]  one's going to buy that stuff today. So
+[49:56.08]  that's why I challenge folks out there.
+[49:58.40]  If you're stalled out, if your business
+[49:59.84]  is struggling, if people aren't lining
+[50:01.84]  up out the door to buy your agent, your
+[50:03.84]  agent is not good enough.
+[50:06.16]  Anyone that has this massive ROI, they
+[50:08.80]  cannot service the demand. They
+[50:10.56]  literally cannot service the demand. At
+[50:12.48]  least not all the demand. And and in
+[50:14.40]  fact, what a lot of the vendors that we
+[50:16.16]  highlight here, if nothing else, they
+[50:18.72]  ruthlessly screen out prospects that are
+[50:20.88]  not a good ICP fit because they don't
+[50:22.40]  even want to waste their time, anybody's
+[50:24.00]  time. They don't want them to churn.
+[50:25.52]  They don't want them to bounce. If you
+[50:26.96]  don't have enough data, if you're too
+[50:28.40]  small, if you're the wrong org, some of
+[50:29.68]  the folks we talked about just just they
+[50:31.04]  just it may it frustrates people. We get
+[50:33.44]  emails all the time, hey, can you get me
+[50:34.72]  a meeting with this vendor?
+[50:37.68]  >> I mean, we can we will, but it's but
+[50:41.44]  sometimes they're making the right
+[50:42.64]  decision. and they're so overwhelmed
+[50:43.76]  with demand, they've got to focus on
+[50:45.36]  their core ICB. So, that should be you.
+[50:48.00]  I know it's tough to hear, but it should
+[50:50.24]  be you. And if it is, if you have this
+[50:52.00]  agent where the ROI is so insane, you
+[50:54.32]  can generate new business for them the
+[50:56.08]  first day or the first week, or you can
+[50:57.84]  replace multiple humans with an agent
+[50:59.52]  reliably, in today's world, right now,
+[51:01.68]  this may not last, in today's world, you
+[51:03.12]  will have demand out the door.
+[51:06.40]  Out the door. And if you're not, don't
+[51:08.88]  delude yourself that you just have that
+[51:10.40]  your AI is good enough. It is not. Yep.
+[51:14.32]  Okay. I was trying to hit one or two
+[51:15.52]  last questions. Another question from
+[51:17.84]  the chat was, "What's preventing you
+[51:19.12]  guys from letting the agents do more of
+[51:21.20]  the work, i.e. emailing on your behalf,
+[51:23.84]  updating LinkedIn, letting it do the
+[51:25.84]  LinkedIn ads, etc. since it's roasting
+[51:27.60]  you on that?" I'll give you my quick
+[51:29.92]  take is it can't do it.
+[51:33.84]  I would let it do it if it could.
+[51:37.20]  These agents can't do that. I have not
+[51:39.20]  seen an agent successfully do email
+[51:43.68]  marketing at SC. The moment I find one,
+[51:46.24]  I'm using it that actually works. I have
+[51:48.40]  not found one that actually works. Like
+[51:52.40]  not just write all of these just write
+[51:54.48]  email copy. They don't actually send it
+[51:57.28]  to the right contacts at the right at
+[51:59.92]  the right time. They just don't do it.
+[52:02.08]  >> It'll come it. Listen, some folks are
+[52:04.32]  going to challenge us and say, "Hey, my
+[52:05.52]  startup does it." Listen, we we look at
+[52:08.08]  everything that's out there. The reality
+[52:09.52]  is, you know, marketing is behind sales.
+[52:12.40]  >> It's just the reality. Honestly, if you
+[52:14.40]  squint at the apps we use, our stack,
+[52:16.40]  half of them really are marketing
+[52:17.60]  automation but for sales,
+[52:19.60]  >> right? Go back to the old days.
+[52:21.28]  Salesoft, Outreach, companies like this,
+[52:23.12]  they were they are marketing tools just
+[52:24.72]  designed for the sales team instead of
+[52:26.00]  the marketer, right? That's these are
+[52:27.84]  just those tools on steroids with AI.
+[52:29.92]  They're just ahead. It is embarrassing
+[52:32.72]  that we do not have a fully automated
+[52:34.80]  HubSpot/Marquetto
+[52:36.48]  today. There's no excuse for it's it's
+[52:38.00]  faking 2026 like and and marketing
+[52:40.56]  actually is some ways easier problems to
+[52:42.56]  solve than sales, right? Instead, we're
+[52:44.56]  living we're living in the past and even
+[52:47.52]  I get I get folks reach out to me and
+[52:49.12]  what they're doing in marketing is very
+[52:50.40]  narrow. Like I can automate a little
+[52:52.72]  piece of your LinkedIn ad and maybe
+[52:54.08]  we'll add that, right? We haven't
+[52:55.20]  historically done that. But I don't need
+[52:56.72]  a I don't need a landing page, right? or
+[52:59.52]  like a little tiny optimize my
+[53:01.60]  Instagram. I need a That's why we built
+[53:03.60]  our own VP of marketing. I wish we
+[53:05.04]  hadn't. So, we are all over this. I hope
+[53:07.60]  that in the back half of this year when
+[53:09.92]  we do these AI lives, it's actually all
+[53:11.60]  about marketing. That's what I'm
+[53:13.04]  optimistic about, but we don't need any
+[53:14.96]  like we need the kind of ROI and
+[53:16.56]  marketing that we see in sales.
+[53:17.68]  Otherwise, it's just it's not worth it.
+[53:19.68]  They're not better enough, right? But we
+[53:21.84]  would love we would love to. There's and
+[53:23.60]  there's no reason it can't be automated
+[53:25.04]  with AI.
+[53:27.20]  There there's no reason. There's no
+[53:28.72]  reason that you cannot ship better
+[53:30.88]  emails than a human can create. There's
+[53:32.32]  no reason AI can't take your past
+[53:33.84]  campaigns and update them with new
+[53:35.76]  visuals, new new video, new content, and
+[53:38.32]  send them out. There's no reason AI
+[53:40.00]  can't segment your base better than a
+[53:41.68]  human can segment your base. There's
+[53:43.44]  just no excuse. There's no excuse to not
+[53:45.44]  run programmatic advertising for B2B,
+[53:47.92]  not for B TOC, without you having to do
+[53:50.08]  anything. There's no like that all
+[53:51.44]  should be doable today. And people are
+[53:54.00]  going to say, "We do it. We do it. We
+[53:55.52]  we'll keep looking, friends." But if you
+[53:58.08]  can do all of this, then like do what
+[54:00.16]  these leaders have set it all up for us
+[54:02.00]  on their own and show us that it works
+[54:03.44]  and we'll we'll be on your homepage. But
+[54:05.44]  it's got to do all of it. [snorts]
+[54:07.44]  I I don't need a landing page or an
+[54:08.96]  infographic. It's not enough.
+[54:10.96]  >> It's not enough. I know there's other
+[54:12.88]  questions in the chat. We'll do this.
+[54:14.16]  We're trying to do these every other
+[54:15.36]  week. In the meantime, we are I would I
+[54:19.60]  don't know something like 70ish days
+[54:21.92]  away from SAS annual. So we'll hopefully
+[54:24.88]  see you guys there. We will talk a lot
+[54:27.52]  more about our agents there. We've got
+[54:29.44]  some of the best of breed AI native apps
+[54:33.04]  coming. Their CEOs are coming to speak.
+[54:35.20]  So, it'll be a lot. We're doing
+[54:36.08]  >> deploy. They'll have everyone there to
+[54:38.00]  teach you how to do this stuff, too.
+[54:39.20]  >> Yes, for real.
+[54:39.76]  >> They'll have the CEOs of Replet and
+[54:41.68]  Lovable and the CO of Versel and all
+[54:44.48]  these great people and, you know, CTO of
+[54:46.64]  Data Bricks. It's all great. But we'll
+[54:48.00]  have people hands-on showing you how to
+[54:49.68]  do these agents, answering your
+[54:50.96]  questions. You can you can pepper them
+[54:52.80]  until they fall fall down exhausted
+[54:55.36]  because that in fact our whole first day
+[54:57.28]  is deploy and it's I mean it'll be all
+[54:59.12]  the but the whole point of the first day
+[55:00.96]  is to help you deploy these agents
+[55:02.08]  yourself if you have it or to fix your
+[55:03.76]  issues. That's the whole point. So it'll
+[55:05.60]  be great.
+[55:06.56]  >> See you guys in a minute.
+[55:07.12]  >> We'll go we'll go deeper there and then
+[55:08.96]  yeah we'll see you on here next time and
+[55:10.80]  thanks everybody for joining.
+[55:13.04]  >> Thanks Ailia.
+[55:14.48]  >> Thanks everyone.
+[55:19.84]  Hey Sasker. Imagine having agents for
+[55:21.84]  every support task. One that triages
+[55:24.16]  tickets, another that catches
+[55:25.68]  duplicates, one that spots turn risk.
+[55:27.84]  That'd be pretty amazing, right? Happy
+[55:29.60]  Fox just made it real with autopilot.
+[55:31.68]  These pre-built AI agents deploy in
+[55:34.00]  about 60 seconds and run for as low as 2
+[55:36.32]  cents per successful action. All of it
+[55:38.88]  sits inside the Happy Fox omni [music]
+[55:40.64]  channel AI first support stack, chatbot,
+[55:43.76]  co-pilot, and autopilot working as one.
+[55:46.24]  Check them out at happyypox.com/taster.

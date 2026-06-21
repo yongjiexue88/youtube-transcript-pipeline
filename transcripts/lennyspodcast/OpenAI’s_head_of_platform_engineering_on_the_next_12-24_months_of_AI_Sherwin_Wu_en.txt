@@ -1,0 +1,2463 @@
+Title     : OpenAI’s head of platform engineering on the next 12-24 months of AI | Sherwin Wu
+Video ID  : B26CwKm5C1k
+URL       : https://www.youtube.com/watch?v=B26CwKm5C1k
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2454
+Saved at  : 2026-06-21 00:59:00
+------------------------------------------------------------
+
+[00:00.16]  95% of engineers use Codex. 100% of our
+[00:03.52]  PRs are reviewed by Codex for engineers.
+[00:06.00]  I don't know what job has changed more
+[00:08.08]  in the past couple years. Engineers are
+[00:09.84]  becoming tech leads. They're managing
+[00:11.44]  fleets and fleets of agents. It
+[00:13.20]  literally feels like we're wizards
+[00:14.40]  casting [music] all these spells. And
+[00:15.36]  these spells are kind of like going out
+[00:16.48]  and doing things for you. What do you
+[00:17.92]  think people aren't pricing in yet? The
+[00:19.92]  second or third order effects of the
+[00:21.28]  oneperson billion dollar startup to
+[00:22.96]  enable a one person billion dollar
+[00:24.48]  startup. There might be a hundred other
+[00:26.32]  small startups building bespoke
+[00:27.92]  software. And so I think we might
+[00:28.96]  actually enter into a golden age of B2B
+[00:30.72]  SAS.
+[00:31.12]  >> I've been hearing more and more there's
+[00:32.24]  this stress people feel when their
+[00:33.84]  agents aren't working. There's a team
+[00:35.52]  that's actually doing an experiment
+[00:36.80]  right now within OpenAI where they are
+[00:38.64]  maintaining a 100% codeex written
+[00:40.64]  codebase. They run into the exact
+[00:42.40]  problems that [music] you're describing.
+[00:43.28]  And so usually you're like all right
+[00:44.48]  I'll roll up my sleeves and figure it
+[00:45.76]  out. Team doesn't have that escape
+[00:47.04]  hatch.
+[00:47.44]  >> You've shared that listening to
+[00:48.80]  customers not always the right strategy
+[00:50.24]  in AI. The field and the models
+[00:52.56]  themselves are just changing so so
+[00:54.96]  quickly. They tend to like disrupt
+[00:56.64]  themselves. The models will eat your
+[00:58.48]  scaffolding for breakfast. What's your
+[01:00.00]  advice to folks that are like, "Okay, I
+[01:01.44]  don't want to miss the boat." Make sure
+[01:02.48]  you're building for where the models are
+[01:03.76]  going and not where they are today.
+[01:05.12]  There's a quote from Kevin Whale, our VP
+[01:06.96]  of science here. He likes saying, "This
+[01:08.56]  is the worst the models will ever be."
+[01:11.84]  Today, my guest is Sherwin Woo, head of
+[01:13.76]  engineering for OpenAI's API and
+[01:15.92]  developer platform. Considering that
+[01:17.92]  essentially every AI startup integrates
+[01:19.92]  with OpenAI's APIs, Sherwin has an
+[01:22.32]  incredibly unique and broad view into
+[01:24.48]  what is going on and where things are
+[01:26.08]  heading. Let's get into it after a short
+[01:28.40]  word from our wonderful sponsors.
+[01:30.56]  Today's episode is brought to you by DX,
+[01:32.80]  the developer intelligence platform
+[01:34.48]  designed by leading researchers. To
+[01:36.64]  thrive in the AI era, organizations need
+[01:39.04]  to adapt quickly. But many organization
+[01:41.44]  leaders struggle to answer pressing
+[01:43.12]  questions [music] like which tools are
+[01:44.88]  working? How are they being used? What's
+[01:47.20]  actually driving value? DX [music]
+[01:49.44]  provides the data and insights that
+[01:51.20]  leaders need to navigate this shift.
+[01:53.36]  With DX, companies like Dropbox,
+[01:55.36]  Booking.com, Adion, [music] and Intercom
+[01:57.60]  get a deep understanding of how AI is
+[01:59.84]  providing value to their developers and
+[02:01.84]  what impact AI is having on engineering
+[02:04.16]  productivity. To learn more, visit DX's
+[02:06.72]  website at getdx.com/lenny.
+[02:10.24]  That's getdx.com/lenny.
+[02:14.08]  Applications break in all kinds of ways.
+[02:16.32]  Crashes, slowdowns, regressions, and the
+[02:19.04]  stuff that you only see once real users
+[02:21.20]  show up. Sentry [music] catches it all.
+[02:23.68]  See what happened where, and why, down
+[02:25.84]  to the commit that introduced the error,
+[02:27.92]  the developer who shipped it, and the
+[02:30.00]  [music] exact line of code all in one
+[02:32.24]  connected view. I've definitely tried
+[02:34.56]  the [music] five tabs and Slack thread
+[02:36.72]  approach to debugging. This is better.
+[02:39.60]  Sentry shows you how the request moved,
+[02:41.92]  what ran, what slowed down, and what
+[02:44.24]  users [music] saw. Seir, Sentry's AI
+[02:46.72]  debugging agent, takes it from there. It
+[02:48.72]  uses all of that Sentry context to tell
+[02:50.64]  you the root cause, suggest a fix, and
+[02:53.12]  even opens a PR for you. It also reviews
+[02:55.52]  your [music] PR and flags any breaking
+[02:57.44]  changes with fixes ready to go. Try
+[02:59.84]  Sentry and SER for [music] free at
+[03:02.48]  centry.io/lenny
+[03:04.40]  and use code Lenny for $100 in Sentry
+[03:06.96]  credits. That's s nt r y.io/lenny.
+[03:15.92]  Sherwin, thank you so much for being
+[03:18.24]  here and welcome to the podcast. Thank
+[03:20.24]  you. Thank you for having me.
+[03:21.28]  >> I want to start with what's feeling like
+[03:23.28]  a barometer of progress in AI,
+[03:25.36]  especially in engineering. What
+[03:27.76]  percentage of your code, if you even
+[03:29.52]  write code anymore, and your team's code
+[03:31.92]  is written by AI at this point?
+[03:33.92]  >> I do write code occasionally now still.
+[03:36.56]  Uh and I actually say for managers like
+[03:38.48]  myself, it's way easier to use these AI
+[03:40.96]  tools uh than to manually code at this
+[03:42.96]  point. And so I know for myself and some
+[03:44.40]  of the other emuring managers at OpenAI,
+[03:47.68]  uh all of our code is written by by
+[03:49.68]  codeex uh at this point. But more
+[03:51.76]  broadly, there's just been this there's
+[03:53.36]  just so much energy. There's like a
+[03:54.88]  tangible energy internally around just
+[03:56.64]  how far these tools have gotten, how
+[03:58.08]  good Codeex as a tool has gotten for us.
+[04:00.56]  And uh it's it's a little hard for us to
+[04:02.96]  exactly measure how much of the code is
+[04:05.04]  is written because the vast majority of
+[04:07.28]  it I'd say like close to 100% is is
+[04:09.04]  usually generated by AI first. What we
+[04:12.00]  do track though is is you know at this
+[04:13.60]  point the vast majority of engineers use
+[04:15.60]  codeex on a daily basis. So 95%
+[04:18.64]  of engineers um use codeex. Um 100% of
+[04:21.76]  our PRs are reviewed by codeex daily as
+[04:23.76]  well. So basically any code that goes
+[04:25.44]  into production that's merged in Kodas
+[04:27.04]  kind of has its eyes on and uh suggests
+[04:29.84]  improvements suggests changes uh uh in
+[04:32.32]  the PRs. And so uh that's kind of what
+[04:34.96]  we're seeing internally. But by and
+[04:36.48]  large the most exciting is just the
+[04:38.00]  energy that that there that there is. Um
+[04:40.88]  another observation that we've had is uh
+[04:43.12]  engineers who tend to use codecs more uh
+[04:46.24]  open way more PRs. So uh they're
+[04:48.32]  actually opening 70% more PRs uh and uh
+[04:51.12]  than than the engineers who aren't using
+[04:52.64]  codecs as much. Uh and the gap is
+[04:54.56]  widening. So I feel like you know the
+[04:55.92]  people who are opening more PRs um are
+[04:58.48]  starting to you know learn how to use
+[04:59.60]  the tool more and more get more
+[05:00.80]  efficient and that 70% gap keeps uh uh
+[05:03.04]  growing over time and so might have
+[05:04.64]  actually increased since I last looked
+[05:05.92]  at the at the number.
+[05:07.44]  >> Okay. So just to make sure we hear what
+[05:09.44]  you're saying you're saying all of the
+[05:10.96]  code of these 95%
+[05:13.92]  uh engineers at at OpenAI is written by
+[05:16.40]  AI. It's written and then they review
+[05:18.08]  it.
+[05:18.72]  >> Yep. Yep.
+[05:20.00]  >> It's It's like crazy that that's almost
+[05:22.40]  like not crazy anymore that we're just
+[05:24.80]  like getting used to this. I think
+[05:26.56]  there's still some getting used to to be
+[05:28.32]  clear. Uh there's also I think some you
+[05:31.52]  know uh engineers who I think trust uh
+[05:34.48]  codeex a little bit less but um
+[05:36.56]  basically every day I talk to someone
+[05:38.00]  who who uh is blown away by something
+[05:40.96]  that I can do and and kind of like the
+[05:42.40]  their bar of of trust kind of uh or like
+[05:45.28]  how much they trust the model to do on
+[05:46.88]  its own goes up over and over uh over
+[05:49.04]  time. And there's a quote from Kevin
+[05:51.12]  Whale our our um VP of of science here
+[05:54.24]  and he likes saying this is the worst
+[05:55.44]  the models will ever be. And so this is
+[05:57.12]  the worst that the models ever be for
+[05:58.32]  software engineering as well. And so
+[05:59.76]  over time you just see people trusting
+[06:01.28]  it more and more and then we'll see the
+[06:02.56]  models get better and better as well.
+[06:04.08]  >> Yeah. Kevin Wheel, former podcast guest,
+[06:06.00]  uh he he said exactly that line on this
+[06:07.84]  podcast and a few times.
+[06:10.08]  >> Yeah. Uh Peter the Claudebot/moldbotclaw
+[06:13.84]  is what it's called now. uh developer uh
+[06:16.80]  recently shared that he uses codecs for
+[06:18.72]  his work and he feels like anytime it
+[06:22.24]  does things he just trusts that it has
+[06:24.08]  done the right job and he's just like
+[06:25.36]  almost certain he could just commit it
+[06:26.64]  to master and it'll be great.
+[06:28.16]  >> Yeah. Yeah. He's a great um user of
+[06:30.24]  codeex. I know he's in close touch with
+[06:31.76]  the team gives us great feedback. Um not
+[06:34.32]  surprised that he uses it. I mean uh
+[06:35.84]  sorry it's called open claw.
+[06:37.92]  >> Open claw. Yeah.
+[06:38.80]  >> Open claw is a great is a great product.
+[06:40.32]  And then I saw that this I mean this is
+[06:42.00]  very recent but this morning I think
+[06:43.76]  mold's book uh kind of like uh uh was
+[06:46.64]  shared as well and seeing all the uh AI
+[06:48.64]  agents talk to each other is pretty uh
+[06:50.08]  pretty surreal. It's basically her is
+[06:51.52]  happening in real life is what I'm
+[06:52.80]  hearing.
+[06:53.20]  >> Yeah. Yeah.
+[06:54.48]  >> So just like coming back to this crazy
+[06:56.96]  moment we are living through four
+[06:58.80]  engineers in particular. We've gone from
+[07:02.24]  you write every line of code to now AI
+[07:04.64]  is writing all of your code. I don't
+[07:06.40]  know what job has changed more in the
+[07:08.72]  past couple years like job that we
+[07:10.64]  didn't expect to change this much where
+[07:12.16]  just like the job of an engineer is so
+[07:14.72]  different in the entire lifespan of an
+[07:17.20]  engineer like in the past couple years
+[07:18.72]  it's now shifted to I don't write any
+[07:21.12]  more code how do you imagine the role of
+[07:22.88]  an engineer and the job of a software
+[07:24.48]  engineer looks in the next couple years
+[07:26.72]  just like what is that job yeah it's I
+[07:28.56]  mean it's honestly being really cool to
+[07:29.84]  see um uh and it's part of where the
+[07:32.08]  excitement is because uh like the job is
+[07:34.72]  likely going to change pretty
+[07:35.60]  significantly over the next one to two
+[07:37.20]  years. It kind of feels like we're still
+[07:39.52]  figuring things out though and so
+[07:40.88]  there's like this excitement I know
+[07:42.16]  especially from some of the software
+[07:43.28]  engineers of like we're in this rare
+[07:45.28]  moment you know maybe over the next 12
+[07:47.28]  to 24 months where we'll kind of get to
+[07:49.20]  figure things out ourselves and set our
+[07:50.64]  standards for ourselves in terms of
+[07:53.28]  where I see uh I see this moving. So I
+[07:56.48]  think there's a common thing that
+[07:57.36]  everyone's saying which is uh you know
+[07:59.04]  people are generally like IC engineers
+[08:01.52]  are becoming tech leads. They're
+[08:03.04]  basically like managers now. They're
+[08:04.72]  managing fleets and fleets of agents. Um
+[08:06.88]  I know many of the engineers on my team
+[08:09.28]  basically have like 10 to 20 uh threads
+[08:12.80]  kind of being pulled on at the same
+[08:14.24]  time. Obviously not active running
+[08:15.60]  codeex uh jobs but uh just a lot of
+[08:18.80]  parallel threads. They're checking in on
+[08:20.48]  what they're doing. They're steering the
+[08:22.24]  agents and codeex and and and and giving
+[08:24.48]  it feedback. And so their job has kind
+[08:26.48]  of really changed from just writing the
+[08:29.04]  code itself into being almost like a
+[08:30.80]  manager. In terms of where I think this
+[08:33.28]  will go one to two years from now. So
+[08:35.12]  one uh kind of metaphor that that I kind
+[08:38.32]  of always come back to here is actually
+[08:40.08]  from this uh is from this uh programming
+[08:42.64]  textbook uh that I read back in college
+[08:44.48]  called sikp. I don't know if you've
+[08:45.76]  heard of it. Uh structure and uh
+[08:48.00]  interpretation of computer programs. So
+[08:49.92]  si sicp.
+[08:52.08]  um at at MIT it was really popular and
+[08:54.72]  and it was actually used as the uh uh
+[08:56.64]  introductory it was the textbook for the
+[08:58.56]  intro programming course for a very long
+[09:00.80]  time um and it kind of has this cult
+[09:02.64]  following um it teaches you programming
+[09:05.92]  uh it teaches you a dialect of list
+[09:08.40]  called scheme uh and so it like
+[09:10.40]  introduces you to like functional
+[09:11.92]  programming it's like very mindopening
+[09:13.76]  in that way but the thing that was
+[09:15.36]  memorable for me about that book so I I
+[09:16.88]  I kind of read it in college um the very
+[09:20.00]  beginning of it kind of describes
+[09:21.68]  programming as a discipline and draws
+[09:23.84]  this metaphor to basically like sorcery.
+[09:26.40]  Like it says like software engineers are
+[09:27.84]  like wizards and you're like like
+[09:30.00]  programming languages are like
+[09:30.88]  incantations and you're like you know
+[09:32.96]  you're you're saying you're issuing
+[09:34.24]  these spells and these spells are kind
+[09:35.92]  of like going out and doing things for
+[09:37.20]  you and and the challenge is like what
+[09:38.80]  incantation do you have to say to make
+[09:40.72]  the the program do what you want. And
+[09:43.28]  this book was written in 1980 so this is
+[09:45.20]  this is a while ago and I think that
+[09:46.72]  metaphor is actually like kind of
+[09:48.08]  persisted over time. And I think it's
+[09:49.68]  actually playing out as we move into
+[09:51.52]  this uh new era of vibe coding or just
+[09:54.40]  like what software engineering will look
+[09:55.60]  like because programming languages were
+[09:57.44]  basically these incantations. They've
+[09:58.80]  changed over time and the challenge has
+[10:00.88]  always and and the trend has been that
+[10:02.40]  these it's been easier and easier to
+[10:03.84]  kind of get them the the the computer to
+[10:05.68]  do what you want uh via programming. And
+[10:08.00]  I think the current wave of AI is is
+[10:10.48]  probably the next stage of that
+[10:11.76]  evolution. it is now literally
+[10:13.76]  incantations because you can tell you
+[10:15.68]  know your uh you can tell codex you can
+[10:17.60]  tell cursor uh exactly what you want to
+[10:19.92]  do and then it'll all go do it for you.
+[10:22.16]  Uh, and I particularly like the wizard
+[10:24.08]  and like the the the sorcery analogy
+[10:25.68]  because uh I think our current state is
+[10:27.20]  is starting to move towards kind of like
+[10:29.04]  the the sorcerers apprentice uh you know
+[10:31.28]  from Fantasia uh where Mickey Mouse is
+[10:33.76]  like you know he finds the sorcerer hat
+[10:35.60]  and he tries to do all these things and
+[10:37.28]  I actually think it's a really apt
+[10:38.40]  analogy because one uh it's just it's
+[10:40.96]  really powerful now these incantations
+[10:42.56]  you can do can is is extremely high
+[10:44.48]  leverage but you kind of have to know
+[10:46.08]  what you're doing right like in
+[10:47.36]  Sorcerers Apprentice the whole plot is
+[10:48.88]  like Mickey goes wild the the brooms
+[10:50.72]  like go crazy and everything's flooding.
+[10:52.88]  I think he literally sets the like sets
+[10:55.52]  the uh the brooms off on a task and then
+[10:57.76]  goes asleep. Uh and and so, you know,
+[10:59.68]  it's like vi coding at it at its at its
+[11:01.68]  greatest and then eventually the the old
+[11:03.84]  sorcerer comes back and like cleans
+[11:05.20]  everything up. And um you know when I
+[11:07.84]  see engineers kind of like doing these
+[11:10.16]  these these these 20 different uh codeex
+[11:12.24]  threads at a time there there is some
+[11:14.32]  skill and there's some seniority and
+[11:15.68]  like you know uh um a lot of thought
+[11:17.76]  that needs to go into this because you
+[11:18.96]  want to make sure that the the the
+[11:20.24]  models aren't going off the rails. Uh
+[11:22.08]  you definitely don't want to just like
+[11:23.44]  completely uh go away and and you know
+[11:25.60]  like ignore ignore the thing. But it's
+[11:27.76]  also extremely high leverage like you
+[11:29.36]  know a a very senior engineer who's
+[11:31.84]  who's really prol uh proficient with
+[11:34.00]  these tools uh can now just do way more
+[11:36.64]  things via what they're doing. And and I
+[11:38.64]  think this is also what makes it fun.
+[11:39.76]  Like it literally feels like we're
+[11:40.80]  wizards now. You know, it feels like
+[11:42.16]  we're closer to to to to having uh uh to
+[11:45.68]  to making making it feel like this like
+[11:47.12]  magical experience where we're, you
+[11:48.56]  know, casting all these spells and
+[11:49.68]  having software do all these things for
+[11:50.88]  you.
+[11:51.12]  >> I was thinking of the sorcerers
+[11:52.32]  apprentice exactly as the metaphor as
+[11:54.00]  you were describing that. So I'm glad
+[11:55.12]  you went there. Uh a previous podcast
+[11:57.36]  guest described it as you have a genie
+[11:59.20]  that you can that grants you wishes and
+[12:01.28]  it's a useful frame because you have to
+[12:03.04]  be very clear about the wish you want
+[12:05.20]  like if you want to be big like how big
+[12:06.64]  it could be.
+[12:06.88]  >> Yeah. Or it might be like the
+[12:07.76]  monkeykey's paw type thing where you
+[12:09.36]  know it's like you got what you want but
+[12:10.88]  what are the side effects?
+[12:12.32]  >> Um yeah. Yeah. I think that and the
+[12:13.52]  analogy is great and um yeah the crazy
+[12:15.60]  thing for me is just the staying power
+[12:16.72]  of that book. Sik be like it's called
+[12:18.56]  the wizard book. you know, people call
+[12:19.84]  it the wizard book because that is the
+[12:21.12]  metaphor that they kind of weave
+[12:22.32]  throughout the the book. And um we're
+[12:24.48]  we've basically reached that point now,
+[12:25.92]  which is which is which is really cool.
+[12:27.68]  There's two kind of threads I want to
+[12:28.88]  follow here. One is I've been hearing
+[12:30.32]  more and more there's this like stress
+[12:32.00]  that people feel when their agents
+[12:33.60]  aren't working. You fire off all these,
+[12:36.16]  you know, codeex agents and then you
+[12:37.60]  have to keep stay on top of them. Oh
+[12:38.96]   one's not working. I'm wasting
+[12:40.40]  time. Uh do you do you feel that? Do you
+[12:42.56]  feel that across your team at all?
+[12:44.00]  >> Yeah. Yeah. I mean, it happens all the
+[12:45.36]  time. And I actually think like this is
+[12:47.60]  where the interesting part of all of
+[12:49.12]  this lies right now because these models
+[12:51.20]  aren't perfect. These tools aren't
+[12:52.80]  perfect and we're still trying to figure
+[12:54.24]  out how to best interact with these uh
+[12:56.16]  with with with codecs or with these AI
+[12:58.00]  agents to to get work done. We see this
+[13:00.64]  come up all the time. There's a
+[13:02.24]  particularly interesting team that we
+[13:04.72]  have internally. So there's a team that
+[13:06.00]  that's actually doing an experiment
+[13:07.36]  right now uh within OpenAI where they
+[13:09.28]  are basically maintaining a 100% codeex
+[13:12.08]  written codebase. Uh so you know like
+[13:15.04]  you know uh uh some you know you'll have
+[13:17.76]  the AI write code but you'll obviously
+[13:19.20]  end up like rewriting a lot of it and
+[13:20.64]  and you might need to like double check
+[13:22.16]  and change things but this team is just
+[13:24.32]  fully codeex pill and just like leaning
+[13:26.24]  in entirely. Uh and they run into the
+[13:28.48]  exact problems that you're describing
+[13:29.60]  which is like you know their challenge
+[13:31.28]  is you know uh you know I want to get
+[13:32.64]  this thing this feature built but I
+[13:34.48]  can't get the agent to do it. And so
+[13:36.40]  usually there's an escape hatch where
+[13:38.08]  you know then you're like all right I'll
+[13:39.20]  roll up my sleeves and like figure it
+[13:40.56]  out and then instead of using codeex I
+[13:42.16]  might use like tab complete and and
+[13:43.60]  cursor and things like that but this
+[13:45.68]  team uh uh for the experiment this team
+[13:48.08]  doesn't have that escape hatch. Uh and
+[13:49.76]  so then the challenge like how do I get
+[13:50.96]  the the the agent to to to do this? And
+[13:54.00]  um I actually think we're going to be
+[13:55.04]  publishing a blog post from some of our
+[13:56.56]  learnings here. Um but a lot of
+[13:58.88]  fascinating like paradigms and best
+[14:01.36]  practices are falling out of this. Um,
+[14:04.00]  one interesting thing that we've
+[14:05.52]  noticed, I I don't know if this is what
+[14:06.88]  you you kind of feel, but we definitely
+[14:08.32]  feel it here, is a lot of the time, uh,
+[14:11.28]  when the coding agent is not doing what
+[14:12.72]  you want, it's usually a problem with
+[14:14.56]  context and just like information that
+[14:16.32]  you've given it. It's just you've either
+[14:17.60]  underspecified or there's just not
+[14:19.44]  enough information around how to do
+[14:21.36]  something available to the agent,
+[14:23.76]  available to codeex. Uh and so uh when
+[14:26.48]  when you have to solve it through
+[14:27.76]  through that uh the challenge is then to
+[14:29.76]  to to add documentation and actually
+[14:32.40]  work around this this limitation and
+[14:35.36]  basically encode more tribal knowledge
+[14:37.20]  that's in your head somehow into the
+[14:38.80]  codebase either via you know code
+[14:40.96]  comments itself or code structure itself
+[14:43.12]  or via text files like you know MD files
+[14:46.80]  skills any type of additional resources
+[14:48.88]  within the repository so that the model
+[14:51.04]  can um uh can better do its task.
+[14:53.76]  There's a whole bunch of other learnings
+[14:55.04]  from this uh this group which I think is
+[14:56.64]  fascinating uh to to explore. But yeah,
+[14:59.68]  kind of giving removing that escape
+[15:01.44]  hatch of of no longer using AI has
+[15:03.52]  allowed them to start piecing together a
+[15:05.12]  lot of the problems that we'll have to
+[15:06.88]  solve if we really want to lean into
+[15:08.24]  agents.
+[15:08.88]  >> Another uh issue people run into, you
+[15:11.28]  talked about how people are shipping PRs
+[15:13.20]  like crazy, a lot more PRs if they're
+[15:14.80]  working with AI. Uh obviously code
+[15:16.72]  review is becoming a bigger challenge.
+[15:18.96]  Is there anything you've figured out in
+[15:20.56]  your team to help speed that up to make
+[15:22.16]  that scale as and not just create this
+[15:24.40]  terrible job for people where they're
+[15:25.60]  just sitting there reviewing PRs all
+[15:26.88]  day?
+[15:27.28]  >> Yeah, I mean one thing is Codex reviews
+[15:29.68]  100% of all of our PRs at this point.
+[15:31.60]  And so uh I actually think so one one
+[15:35.92]  really interesting thing that's happened
+[15:37.76]  is the things that tend to we hand we
+[15:40.40]  tend to hand to the models immediately
+[15:41.76]  tend to be the things that annoy us or
+[15:43.28]  like are the most boring parts of uh
+[15:44.80]  software engineering. It's also why it's
+[15:46.32]  more fun now because we get to do more,
+[15:48.48]  you know, more of the fun things. Um,
+[15:50.48]  for me, um, speaking more for myself, I
+[15:53.04]  really hated code reviews. It was like
+[15:54.72]  one of the worst things for me. And then
+[15:56.80]  I remember in my first job, uh, out of
+[15:59.60]  college, uh, it was at it was at Quora.
+[16:01.92]  Um, I owned I was working on the
+[16:03.76]  newsfeed and so I owned the code for the
+[16:06.00]  newsfeed. And so I was a reviewer for
+[16:07.68]  Newsfeed and uh it was just like the
+[16:09.92]  central piece of code that everyone
+[16:11.68]  would touch. And so I would just every
+[16:13.44]  morning I'd log in and be like like 20
+[16:15.68]  to 30 code reviews. I just like oh my
+[16:17.44]  goodness I got to like you know get
+[16:18.56]  through all these. Um I would
+[16:20.24]  procrastinate and then it grows to like
+[16:21.68]  50. And so there's like a a lot of code
+[16:23.60]  reviews. Codeex is really good at
+[16:25.28]  reviewing code. Uh so actually one thing
+[16:27.12]  that we've noticed that 52 in particular
+[16:28.96]  has gotten extremely strongly adept at
+[16:30.80]  is reviewing code and especially when
+[16:32.96]  you kind of steer it in the right
+[16:34.08]  direction. And so uh for code reviews
+[16:36.16]  yeah we create a lot of PRs but Codex
+[16:37.68]  reviews all of them and it makes you
+[16:39.68]  know code reviews go from a you know I
+[16:42.24]  don't know 10 15 minute task to
+[16:44.00]  sometimes even just like a two to three
+[16:45.28]  minute task because you have a uh a
+[16:47.52]  bunch of suggestions uh already already
+[16:49.60]  baked in. Uh a lot of the times people
+[16:52.08]  will uh especially for small PRs like
+[16:54.16]  you you actually don't even need people
+[16:55.36]  to review. We kind of trust codeex in
+[16:56.96]  this way. Um the original author kind of
+[16:58.88]  looks at Codex. It is you know the
+[17:00.56]  benefit of code review is to have a
+[17:01.68]  second pair of eyes to make sure that
+[17:02.96]  you're not doing anything dumb. Codex is
+[17:04.72]  a pretty smart second pair of eyes at
+[17:06.24]  this point and so that's something that
+[17:08.00]  that we've heavily leaned into. Um the
+[17:11.12]  general CI process and like the post uh
+[17:13.84]  kind of push and like deployment process
+[17:15.44]  has also been heavily automated via
+[17:17.04]  codeex internally at this point. If you
+[17:19.28]  talk to a lot of engineers the thing
+[17:20.32]  that annoys them the most is after
+[17:21.52]  you've written your beautiful code like
+[17:22.96]  how do you get it into production? You
+[17:24.32]  know you got to you got to run through
+[17:25.84]  all these tests you got to like you know
+[17:27.44]  lint errors you code review. Um there's
+[17:30.00]  a lot of automated stuff you can do with
+[17:31.36]  codecs and so we've actually built some
+[17:32.96]  tools internally that that help automate
+[17:34.72]  that process, automate the lint, you
+[17:36.56]  know, if there's like a lint error, it's
+[17:37.76]  a very easy codeex fix. Uh and then just
+[17:40.00]  it could just patch it and then kind of
+[17:41.28]  restart the CI process. Um so all of
+[17:43.52]  that is we're trying to collapse as as
+[17:45.60]  into as as little work for an engineer
+[17:47.76]  as possible which and and the byproduct
+[17:49.84]  of which is uh um uh they can they can
+[17:52.00]  now merge and push out a lot more peers.
+[17:53.76]  Codec's writing the code, Codex
+[17:55.20]  reviewing its own code. I'm curious if
+[17:57.20]  you are open to using other models to
+[17:58.64]  review your models work. Is that is that
+[18:00.40]  a path or is it just it's good enough,
+[18:01.76]  we don't need anything else?
+[18:03.04]  >> So, I will say there's there's
+[18:04.24]  definitely a circular thing here and
+[18:05.36]  like going back to sources apprentice
+[18:06.72]  like you want to make sure you're not
+[18:07.76]  letting the brooms go crazy here. Um,
+[18:10.16]  and so, you know, we're very thoughtful,
+[18:12.24]  I'd say, around which PRs kind of are
+[18:15.76]  completely just codeex uh reviewed. Most
+[18:18.88]  people still obviously take a look at
+[18:20.56]  their PRs. Uh, and so it's not like it's
+[18:22.88]  going to zero. It's more like going from
+[18:24.72]  you know 100% attention to like 30%
+[18:26.96]  attention which which just helps things
+[18:28.72]  push through. Uh in terms of like
+[18:31.12]  multiple models uh so we we obviously
+[18:33.52]  test a lot of models internally and so
+[18:35.04]  we have a lot of those. Um we use
+[18:37.44]  external models less. Um it's we we
+[18:39.84]  think it's important to kind of dog food
+[18:41.04]  our own models and kind of like get
+[18:42.48]  feedback there. But uh you can also you
+[18:45.36]  know there are a lot of like internal
+[18:46.56]  variants of models that you can use to
+[18:47.84]  give you a different perspective um here
+[18:49.36]  as well and and we found that to to work
+[18:51.04]  quite well.
+[18:51.60]  >> Okay. So just to just to make sure we
+[18:53.68]  get like a barometer of today's world at
+[18:56.00]  OpenAI in terms of AI and code uh just
+[18:58.72]  so I understand and then I want to move
+[19:00.32]  on to a different topic. Uh 100% of code
+[19:03.92]  across OpenAI is written by codeex at
+[19:06.56]  this point. Is that the way to frame it?
+[19:08.48]  I wouldn't make the statement that 100%
+[19:10.40]  of code running in production today was
+[19:12.16]  is written by AI. Uh and and it's kind
+[19:14.64]  of hard to to to do attribution there.
+[19:16.64]  But the like almost every engineer
+[19:18.88]  heavily uses codecs in all of their
+[19:20.88]  tasks at this point. And so I you know
+[19:23.84]  if I were to guesstimate like the vast
+[19:25.52]  majority of code at this point is it was
+[19:27.20]  probably authored by incredible. Okay.
+[19:30.32]  So there's a lot of talk and we've been
+[19:32.00]  talking about kind of the IC role the
+[19:33.76]  work of an IC engineer. There's less
+[19:36.56]  talk about the changing role of a
+[19:38.32]  manager especially an engineering
+[19:40.00]  manager. How has your life as a manager
+[19:42.80]  changed with the rise of AI and just
+[19:44.80]  what do you where do you think managers
+[19:46.88]  what's the role of a manager in the
+[19:48.24]  future?
+[19:48.80]  >> It's definitely changed less than an
+[19:50.16]  engineer. Uh there's no you know codeex
+[19:52.80]  for managers just uh just yet. However,
+[19:55.12]  I use codeex quite a bit for for some of
+[19:57.12]  the um uh some of some of the like kind
+[20:00.16]  of more managery tasks that I do. I'd
+[20:02.56]  say a couple things are are changing.
+[20:04.40]  There like some trends. So I don't think
+[20:05.92]  it's changed that much yet. Um, but I
+[20:08.40]  see trends and I think if you play it
+[20:09.68]  out, you can kind of see where where a
+[20:10.72]  lot of this is going. One thing that
+[20:12.56]  that's becoming increasingly clear is
+[20:15.60]  codeex really empowers like top
+[20:17.52]  performers to to get a lot like to be a
+[20:20.80]  lot more productive. And so it really
+[20:22.56]  like and I think this is maybe true for
+[20:24.48]  AI more broadly like across society
+[20:27.12]  which is like the people who really lean
+[20:28.80]  in or like the people who have high
+[20:30.72]  agency or like will get get good at
+[20:33.92]  these tools will kind of supercharge
+[20:35.92]  themselves. Uh and so I'm kind of
+[20:38.16]  noticing this now as well, which is like
+[20:40.08]  the top performers kind of end up uh uh
+[20:43.60]  uh being a lot more a lot more
+[20:45.20]  productive. Uh and so you see a broader
+[20:47.60]  spread uh in in team productivity in
+[20:49.36]  this way. One so one thing that I've
+[20:51.36]  always done as as a management
+[20:52.72]  philosophy is to spend uh actually the
+[20:55.04]  majority of my time with top performers
+[20:56.56]  just like make sure they're unblocked,
+[20:57.76]  make sure they're happy, make sure you
+[20:59.36]  know they're they feel productive and
+[21:01.20]  they feel heard. I think this is even
+[21:02.80]  more true uh in an AI world where you
+[21:04.80]  know your top firmers are going to just
+[21:06.24]  like really be shooting ahead uh using
+[21:08.16]  these tools. I think I think one example
+[21:10.56]  is is that the team that's you know
+[21:12.08]  maintaining a 100% codec generated
+[21:14.00]  codebase like just letting them kind of
+[21:15.92]  rip and and and see what's happening
+[21:17.44]  there is something that's that's paid
+[21:19.12]  dividends. So I think that that's kind
+[21:21.20]  of one one trend that I'm seeing where
+[21:22.72]  where where um spending even more time
+[21:25.60]  with top performers for managers I think
+[21:27.28]  is is likely going to um uh continue.
+[21:30.56]  The other thing is I I so this is more
+[21:34.64]  uh an observation but my sense is with a
+[21:37.76]  lot of these AI tools available to
+[21:39.20]  managers. So le less like writing code
+[21:41.36]  but just things like chat GBT with
+[21:43.76]  organizational knowledge like being able
+[21:46.08]  to do research and understanding
+[21:47.84]  organizational context a lot better.
+[21:49.84]  Another good example is uh um we're
+[21:52.80]  doing performance reviews right now and
+[21:54.16]  it's actually really easy to use chat
+[21:55.36]  GBT with internal knowledge hooked up to
+[21:57.36]  GitHub and like our notion docs and
+[21:58.96]  Google docs to give it get a really good
+[22:00.96]  sense of what this person has done over
+[22:02.40]  the last 12 12 uh months uh and writing
+[22:05.12]  a little you know deep research report
+[22:06.56]  for it. My sense is I think managers
+[22:08.96]  will be able to manage much larger teams
+[22:10.64]  in this world kind of like how you know
+[22:12.08]  like software engineers are managing 20
+[22:14.56]  to 30 codeexes. Um my sense that these
+[22:17.36]  tools will allow managers people
+[22:19.36]  managers to be higher leverage um and uh
+[22:22.64]  it will allow them to to to manage you
+[22:24.32]  know teams of way more than than the
+[22:26.88]  current best practice of I think it's
+[22:28.00]  like six to eight right for software
+[22:29.52]  engineering. You kind of see this
+[22:30.96]  applied to you know like uh the non uh
+[22:34.00]  engineering domains like support or uh
+[22:37.04]  operations where it's like you know
+[22:39.12]  previously um uh where previously like
+[22:43.04]  the size of support team might be
+[22:44.72]  limited but like as you can pass off
+[22:46.48]  more things to agents you can actually
+[22:48.08]  do more work and also manage more people
+[22:49.76]  this way. I think the same thing might
+[22:51.36]  happen for um people management as well,
+[22:53.20]  especially in tech companies. Um and
+[22:55.92]  we're already seeing this. There's some
+[22:57.04]  teams uh where there are EM managing you
+[22:59.68]  know quite a few people and they're
+[23:01.12]  doing it pretty adeptly because of some
+[23:02.64]  of these tools where they can get higher
+[23:04.08]  leverage and understand what their
+[23:05.76]  team's doing, understand organizational
+[23:07.20]  context a little bit better uh and
+[23:08.88]  operate in that way. I love this advice
+[23:10.56]  that the way you described it is you've
+[23:12.40]  always leaned into top performers and
+[23:14.56]  spent more time with them, unblock them,
+[23:16.08]  make sure they're happy. The way Mark
+[23:17.28]  Andre and he was just on the podcast,
+[23:18.48]  the way he phrased it is AI makes good
+[23:20.40]  people better and it makes great people
+[23:23.28]  exceptional.
+[23:24.40]  >> Yeah. Yeah.
+[23:25.04]  >> And what you're saying here is just just
+[23:27.92]  doing this more and more is probably the
+[23:29.28]  right move. Spending more time with the
+[23:30.64]  best people on your team to unblock
+[23:31.84]  them, make sure they have everything
+[23:32.88]  they need.
+[23:33.52]  >> Yeah. A very good example right now is
+[23:35.84]  uh there are I would say like a a group
+[23:37.84]  of engineers internally who are really
+[23:40.48]  codeex and are thinking through what the
+[23:42.96]  best practices are for interacting with
+[23:44.56]  this model and that is just an extremely
+[23:46.64]  high lever thing for them to do and so
+[23:49.04]  just like as a manager I'm just like
+[23:50.40]  yeah go explore this you know uh
+[23:52.64]  whatever best practices come out of this
+[23:54.32]  you know we we have to share with the
+[23:55.68]  org we'll we'll you know uh we'll we'll
+[23:58.72]  uh we do all these knowledge sharing
+[23:59.92]  sessions we'll we'll like share
+[24:01.52]  documents and like best practices
+[24:03.12]  everywhere So things like that just uh
+[24:05.12]  you know elevate everyone and uh and I I
+[24:08.40]  view that as like you know another
+[24:09.52]  example of this trend um uh that um that
+[24:12.08]  we're seeing where the top performers
+[24:13.28]  really get exceptional.
+[24:14.24]  >> People just like have a sense this is
+[24:15.84]  big. AI is changing so much. The world
+[24:17.84]  is changing. Uh it's going to be a huge
+[24:20.00]  deal. What do you think people aren't
+[24:21.68]  pricing in yet into what will change
+[24:24.88]  into where things are heading? Just like
+[24:26.64]  what's an example of something you think
+[24:28.00]  are like okay we're not realizing this
+[24:29.84]  yet. So, one of my favorite kind of uh
+[24:33.28]  uh like phrases or like things that have
+[24:35.92]  come out of this whole AI wave is is the
+[24:37.84]  idea of the one person billion dollar
+[24:39.36]  startup. I think I actually think Sam
+[24:40.96]  may have ke or like uh Sam Sam may have
+[24:43.60]  been the first one to say it, but it's
+[24:45.20]  fascinating to think about, right? It's
+[24:46.32]  like yeah, if you know if people are so
+[24:48.00]  high leverage, at some point there will
+[24:49.52]  likely be um a oneperson billion dollar
+[24:52.16]  startup. Um, and while I think that's
+[24:54.56]  really really cool, I think people
+[24:55.92]  aren't really pricing in the second or
+[24:57.36]  third order effects of this. And and
+[24:58.80]  really what you know because because
+[25:01.04]  what the one person billion dollar
+[25:02.48]  startup implies is that there's you
+[25:05.20]  know, one person can just have so much
+[25:07.44]  more agency and so much more leverage
+[25:09.12]  using one of these tools um that it is
+[25:11.84]  just super easy for them to get
+[25:13.60]  everything done that they need to for
+[25:15.28]  for their business to, you know,
+[25:17.36]  ultimately create something that's a
+[25:18.40]  billion dollars. But I think there are a
+[25:19.84]  couple other implications of this. One
+[25:21.28]  of them is uh uh if it's easy for a
+[25:25.20]  person to create a one person bill or if
+[25:26.72]  it's possible for a person to create a
+[25:27.76]  one person billion dollar startup, it
+[25:29.60]  also means it's way easier for people to
+[25:30.96]  just create startups in general. Like I
+[25:32.56]  actually think this will like one second
+[25:34.16]  order effect to this is I think there's
+[25:35.44]  going to be a huge like startup boom and
+[25:38.08]  like small like SMB style boom um where
+[25:41.68]  anyone can build software for anything,
+[25:43.36]  right? like uh uh one uh you're kind of
+[25:46.88]  starting see starting to see this play
+[25:48.56]  out in the AI startup scene where
+[25:51.20]  software's became a lot more vertical
+[25:52.72]  oriented where like these verticals uh
+[25:55.36]  like creating some AI tool for some
+[25:57.60]  vertical tends to work quite well
+[25:59.28]  because you know you really lean into uh
+[26:02.00]  that particular domain you like really
+[26:04.40]  understand the use case for it and so if
+[26:06.56]  you play out AI there's no reason why
+[26:09.36]  you can't have like 100x more of these
+[26:11.60]  these startups uh and So I think I think
+[26:14.00]  one world that we might end up seeing
+[26:16.00]  happen is in order to enable a one
+[26:18.64]  person billion dollar startup there
+[26:20.08]  might be like a hundred other small
+[26:22.08]  startups building bespoke software that
+[26:24.00]  works extremely well to support uh other
+[26:26.88]  types of you know small small oneperson
+[26:29.84]  you know billion dollar startups and so
+[26:31.76]  I think we might actually end uh enter
+[26:33.44]  into a golden age of like B2B SAS uh and
+[26:36.08]  just like software and startups in
+[26:37.44]  general and so I think I think that's
+[26:38.88]  that's a really interesting trend to to
+[26:40.40]  kind of see because as it's as it's as
+[26:43.20]  it gets easier and easier to build
+[26:44.56]  software, um as it's easier and easier
+[26:46.80]  to uh you know uh uh run a company um
+[26:50.80]  you might actually just end up seeing
+[26:51.84]  way more of these these these startups.
+[26:53.36]  So the way I I' I've been thinking about
+[26:54.56]  is like yeah there might be one uh one
+[26:56.64]  person billion dollar startup but there
+[26:58.32]  might be like a hundred you know uh
+[27:00.96]  hund00 million startups there might be
+[27:03.04]  tens of thousands of $10 million
+[27:05.52]  startups and as an individual it's
+[27:08.24]  actually pretty great to have a $10
+[27:09.36]  million business like that's like enough
+[27:11.04]  for you're set for life at that point
+[27:12.80]  and so you know we might really see see
+[27:14.80]  an explosion in that way and and I feel
+[27:17.52]  like people aren't aren't really you
+[27:18.56]  know pressing that in. Um there's
+[27:20.48]  another kind of like third order effect
+[27:22.16]  to this you know and again all of these
+[27:24.56]  like as you get to the further and
+[27:25.84]  further out predictions I think uh are
+[27:27.84]  there's a lot of uncertainty I think if
+[27:30.08]  we end up moving to this world where you
+[27:32.00]  end up with these like kind of micro
+[27:33.28]  companies building software that works
+[27:35.12]  for one or two people uh who own the
+[27:37.68]  company and and and are working there um
+[27:39.52]  I think the startup ecosystem will
+[27:40.96]  change I think the VC ecosystem will
+[27:42.64]  change you know might we might end up in
+[27:44.72]  uh in a world where there's just like a
+[27:46.72]  handful of big players that are offering
+[27:48.32]  platforms and supporting all of these
+[27:49.68]  startups. But, you know, the types of
+[27:52.00]  venture scale return startups that can
+[27:55.04]  really 100 or thousandx your your
+[27:56.80]  investment might actually end up
+[27:58.16]  shrinking if you end up having a bunch
+[28:00.48]  of these, you know, smaller 10 to$50
+[28:02.96]  million uh companies. Uh, which are not
+[28:05.60]  great for venture solid returns, but are
+[28:06.88]  great for the individuals, the high
+[28:08.00]  agency individuals who are now, you
+[28:09.52]  know, really leaning into AI to to to
+[28:11.20]  build these businesses for themselves.
+[28:12.80]  >> I love how many uh order like uh order
+[28:15.20]  effects we've been through. I want to
+[28:17.52]  hear the fourth order effect now.
+[28:18.88]  Sherwin, I'm just joking. I I can't It's
+[28:21.84]  too fourth order is too too is too
+[28:24.24]  gigabrain for me. I can't I can't think
+[28:25.92]  that far ahead.
+[28:26.80]  >> It's like inception where just
+[28:28.08]  everything gets slower every time you go
+[28:29.84]  deeper into something every layer. Uh,
+[28:33.12]  okay. So, the billion-dollar startup
+[28:34.80]  I've been I think about this a lot
+[28:36.56]  because I I'm not going to be a billion
+[28:38.40]  dollar startup because what I'm doing is
+[28:39.60]  not venture scale in any way and not
+[28:41.36]  super high leverage, but just seeing how
+[28:43.76]  many support tickets I get from just
+[28:46.08]  like the most ridiculous things. It's
+[28:49.04]  hard for me to imagine one person like
+[28:51.52]  I'm bearish on this billion dollar
+[28:52.88]  startup. I just want to share this
+[28:54.32]  thought uh simply because of the support
+[28:57.28]  costs even if AI is helping you at a
+[29:00.56]  billion dollars just like unless your
+[29:02.64]  ACVs are you know very high and you have
+[29:04.72]  very few customers it's just dealing
+[29:06.96]  with support and people are like you
+[29:09.04]  know like they can solve their own
+[29:10.24]  problems but they're like I'll email
+[29:11.28]  support ask about this thing just
+[29:12.88]  dealing with that is hard to scale is in
+[29:15.20]  my experience so unless you have in my
+[29:17.20]  opinion unless you have a bunch of
+[29:18.24]  contractors which I don't know does that
+[29:19.52]  count as a single person company I feel
+[29:22.24]  like it's very difficult to scale a
+[29:24.96]  billion dollar startup and not have
+[29:26.72]  someone helping you with at least the
+[29:28.32]  support work and AI I think will only
+[29:30.32]  take you so far. So I I I think that's
+[29:32.56]  true. Uh, and actually I think my view
+[29:34.32]  on it is is is slightly different, which
+[29:36.08]  is I think that your, you know, Lenny's
+[29:38.08]  podcast might end up becoming a
+[29:39.28]  billion-dollar startup. But um what I
+[29:41.84]  think might happen is uh instead of you
+[29:45.84]  kind of being the one person who has to
+[29:48.24]  dispatch an AI to solve and fix those
+[29:52.24]  support tickets, I think what might end
+[29:54.24]  up happening is there might be a whole
+[29:56.00]  smattering of other startups that are
+[29:58.24]  building software and super and like
+[30:01.28]  super tailored towards what you might
+[30:02.80]  need. And so, you know, uh there might
+[30:05.04]  be like 10 or 20 startups that build
+[30:07.28]  support software for podcasts and
+[30:10.00]  newsletters and uh that might be a
+[30:12.48]  oneperson startup. Like it doesn't need
+[30:13.76]  to be a big one. And uh it's it's and
+[30:16.88]  you know they might be able to just code
+[30:18.32]  up this product very very easily. They
+[30:20.32]  are able to kind of like build their own
+[30:21.76]  thing and because it's so tailored and
+[30:23.84]  unique and hopefully you know useful for
+[30:25.12]  you. It might be something that you
+[30:26.24]  purchase um as the one person billion
+[30:28.48]  dollar startup.
+[30:28.96]  >> I would buy that. I would buy that.
+[30:30.16]  >> Yeah. there's like a question of like
+[30:31.36]  what you in-house and what you what you
+[30:32.80]  like kind of uh outsource and what I
+[30:34.96]  think might happen is because the cost
+[30:36.16]  of writing software and building
+[30:37.44]  products is is is is collapsing so much
+[30:39.68]  you might end up outsourcing a lot of
+[30:41.36]  this and in doing so reducing the size
+[30:43.76]  of your company uh and so that's kind of
+[30:45.52]  the world that I think might end up
+[30:46.64]  happening again there's like high
+[30:47.76]  uncertainty [clears throat] in what
+[30:48.48]  might play out here but the end result
+[30:50.24]  still might be a one like one person
+[30:52.08]  driving this like high high massive
+[30:54.24]  leveraged company that might actually
+[30:56.08]  reach a billion dollars
+[30:57.28]  >> I could see that I also think about
+[30:58.64]  Peter at Clawbots/ /moldbot/openclaw
+[31:01.92]  of just like how barrageed he is right
+[31:03.76]  now by all these asks and emails and
+[31:05.52]  pings and DMs and PRs just like I'm
+[31:08.16]  curious to and he's not even making any
+[31:09.76]  money off this thing.
+[31:10.96]  >> Um
+[31:11.28]  >> yeah, I can't imagine what it's like to
+[31:12.72]  be him right now. It's must be like
+[31:13.92]  absolutely insane. It it's probably like
+[31:16.00]  um uh you know like the the months after
+[31:18.56]  we launched Hatchvt the craziness that
+[31:20.56]  was
+[31:21.20]  >> as one as one man.
+[31:22.64]  >> Uh he's coming out on the pod by the way
+[31:24.08]  in in [clears throat] a week.
+[31:25.20]  >> Oh, that's exciting. Yeah. Uh maybe the
+[31:27.28]  fourth order effect is distribution
+[31:28.88]  becomes increasingly important because
+[31:31.84]  there are so many freaking things trying
+[31:33.68]  to get your attention. So people with an
+[31:35.60]  audience and platform I think become
+[31:37.36]  more and more valuable which is good
+[31:39.36]  good stuff. Okay. Uh I wanted to come
+[31:42.40]  back actually to your management stuff.
+[31:44.32]  So I really loved your insight about
+[31:46.64]  spending more time with top performers
+[31:47.92]  has been really successful to you. Just
+[31:50.08]  thinking about you as a manager of a
+[31:51.68]  team that is building the platform that
+[31:53.76]  powers basically the entire AI economy
+[31:56.64]  like every AI startup is building on
+[31:59.04]  your API. Uh clearly you're doing a
+[32:02.08]  great job. What other kind of core
+[32:04.80]  management lessons have you learned?
+[32:06.72]  What do you find is really important and
+[32:09.04]  and and key to your success as a manager
+[32:11.20]  of engineers and just people?
+[32:12.88]  >> Yeah. Um, I I think a lot of the lessons
+[32:14.88]  that I've learned here, I don't know how
+[32:17.52]  specific it is to the OpenA API or or
+[32:20.00]  some of our enterprise products in
+[32:21.76]  particular. I think my my management
+[32:23.92]  philosophy has obviously changed over
+[32:25.20]  time, but I think it it's uh probably
+[32:27.04]  stayed the same more than it's changed
+[32:28.88]  uh over time. Uh, one of these
+[32:31.92]  principles is is kind of what I talked
+[32:33.36]  to you about before, which is, you know,
+[32:34.72]  spending a lot of time with with top
+[32:36.16]  performers, like actually spending and
+[32:37.84]  like to be very concrete, like it's like
+[32:39.52]  more than 50% of your time with your top
+[32:41.84]  performers with maybe your top like 10%
+[32:44.56]  uh performers and really really trying
+[32:47.28]  your best to empower them. The way that
+[32:48.80]  I think about it is um is is is kind of
+[32:51.84]  come back to this analogy of software
+[32:54.00]  engineer as as as a surgeon um which
+[32:56.72]  comes from the the mythical man book.
+[32:58.72]  So, it's actually it's funny. So I I
+[33:00.64]  pull it from the book, but in the book
+[33:02.24]  they actually described this world where
+[33:05.12]  um I think they were like predicting the
+[33:06.72]  future cuz cuz I think the book was
+[33:08.48]  written like in the 70s or something. Um
+[33:10.80]  they said that software engineering
+[33:12.08]  might end up moving into a world where
+[33:13.76]  that software engineers are like
+[33:15.20]  surgeons or like in a surgery room
+[33:17.52]  there's like one person doing the work.
+[33:19.76]  Um and you know there's one person like
+[33:21.92]  cutting or whatever and like doing all
+[33:23.20]  the surgery and everyone else in the
+[33:24.96]  room is there to just support them,
+[33:26.40]  right? as like the nurse and like the
+[33:28.24]  and the resident and the fellow and then
+[33:30.32]  the surgeon's like I need a scalpel and
+[33:31.76]  they give them scalpel and then uh
+[33:33.76]  they're like I need you know this tool
+[33:35.68]  and this machine and they'll bring it
+[33:36.96]  over. Everyone's there to just like you
+[33:38.96]  know support the one uh surgeon and so
+[33:40.88]  the the the myth mammoth actually
+[33:42.48]  predicted that that is kind of the
+[33:43.84]  direction that software engineers going
+[33:45.28]  to go. I don't think that's exactly
+[33:46.72]  played out where like you know it's much
+[33:48.24]  more collaborative and like it's not
+[33:50.08]  only one person doing the work but I've
+[33:52.16]  always really liked that analogy and and
+[33:53.68]  and and uh that analogy is actually what
+[33:56.32]  I strive to uh uh kind of like emulate
+[33:58.80]  in my own management philosophy which is
+[34:00.72]  um software engineering isn't really
+[34:02.16]  like surgery where it's not just one
+[34:03.92]  person doing work but the way in which I
+[34:05.52]  like treating the people on my team and
+[34:07.36]  the way that I act as a manager is I
+[34:09.20]  want to uh empower them make them feel
+[34:11.44]  like they're a surgeon um and in in so
+[34:14.00]  far at like as like making sure that I'm
+[34:16.08]  supporting them and making sure they
+[34:17.20]  have everything that they need to to do
+[34:18.64]  their work and it feels like they have
+[34:20.00]  an army of people kind of supporting
+[34:21.28]  them um and looking around corners and
+[34:23.36]  giving them everything that they need
+[34:24.88]  when it's really just me as the as the
+[34:26.72]  manager. And so like the example that I
+[34:28.72]  give is is looking around corners and
+[34:30.32]  unblocking people especially from an
+[34:32.00]  organizational perspective is extremely
+[34:33.44]  extremely useful. And again going back
+[34:35.20]  to the AI conversations even more
+[34:36.80]  important nowadays right like uh if if
+[34:39.28]  people are just like cranking PR after
+[34:41.76]  PR the main thing bottlenecking uh
+[34:44.56]  progress and and you know shipping
+[34:46.40]  something tends to be organizational or
+[34:47.92]  like processoriented and if you as a
+[34:49.92]  manager can kind of look around corners
+[34:51.92]  and kind of unblock the team if you can
+[34:54.24]  you know like if if the surgeon needs
+[34:56.16]  scalpel but you know the manager kind of
+[34:58.24]  already has a scalpel ready for them
+[34:59.60]  that that's the best case scenario.
+[35:01.20]  That's kind of the the way that I
+[35:02.48]  approach uh u um management and and
+[35:05.04]  especially uh engineering management.
+[35:06.88]  And so that's something that that's
+[35:08.64]  really really um stuck with me over
+[35:10.56]  time. And even though you know software
+[35:12.80]  engineers aren't exactly surgeons, that
+[35:14.40]  metaphor has always kind of stayed in my
+[35:15.68]  mind as of as of uh uh for the rest of
+[35:17.44]  my career.
+[35:18.08]  >> I love that. And I I feel like I wonder
+[35:19.60]  if that's something AI can help with is
+[35:21.28]  look around corners and predict here
+[35:23.20]  this engineer is going to be blocked by
+[35:24.56]  this decision. We need to figure this
+[35:25.84]  out. We need to get
+[35:26.56]  >> Yeah, that's actually a really good uh
+[35:28.40]  point. I haven't tried this yet, but I
+[35:30.00]  wonder what would happen if I ask uh
+[35:32.08]  Chad GBT hooked up to company knowledge,
+[35:34.72]  you know, like what are the active
+[35:36.08]  blockers? Uh look through all the notion
+[35:37.84]  docs, what are maybe Slack messages, you
+[35:40.24]  know, it's probably in Slack somewhere.
+[35:41.84]  What are the active blockers on my team
+[35:43.44]  and is there something I can do to to
+[35:45.68]  help? Um now very I have not thought
+[35:47.84]  about that, but you're right.
+[35:48.48]  >> You just had an insight right here.
+[35:50.00]  >> Yeah. Yeah. Yeah.
+[35:50.64]  >> Uh and it's I think even more
+[35:52.08]  interestingly, what do you anticipate
+[35:53.36]  will be a blocker for this engineer or
+[35:55.12]  this team in the in the coming months or
+[35:56.72]  >> Yeah. You asked the you asked the model.
+[35:58.08]  Well, you asked the AI to do the second
+[35:59.36]  and third order things. Anticipate that,
+[36:01.84]  man. Anticipate what the bloggers will
+[36:03.44]  be next month, too. Uh,
+[36:05.44]  >> I think we've got a we've got a good
+[36:06.80]  idea right here.
+[36:07.52]  >> Yeah. Yeah.
+[36:08.56]  >> This episode is brought to you by Data
+[36:10.32]  Dog, now home to EPO, the leading
+[36:12.64]  experimentation and feature flagging
+[36:14.64]  platform. Product managers at the
+[36:16.40]  world's best companies use Data Dog, the
+[36:18.56]  same platform their engineers rely on
+[36:20.32]  every day to connect product insights to
+[36:22.80]  product issues like bugs, UX friction,
+[36:25.68]  and business impact. [music]
+[36:27.12]  It starts with product analytics where
+[36:29.20]  PMs can watch replays, review [music]
+[36:31.04]  funnels, dive into retention, and
+[36:33.04]  explore their growth metrics. Where
+[36:34.80]  other tools stop, data dog goes even
+[36:37.12]  further. It helps you actually diagnose
+[36:38.96]  the impact of funnel drop offs and bugs
+[36:41.44]  and UX friction. Once you know where to
+[36:43.76]  focus, experiments prove what works. I
+[36:46.48]  saw this firsthand when I was at Airbnb,
+[36:48.40]  where our experimentation platform was
+[36:50.16]  critical for analyzing what worked and
+[36:51.76]  where things went wrong. And the same
+[36:53.44]  team that built experimentation at
+[36:54.96]  Airbnb built EPO beta do then lets you
+[36:57.92]  go beyond the numbers with session
+[36:59.52]  replay. Watch exactly how users interact
+[37:02.48]  with heat maps and scroll maps to truly
+[37:05.04]  understand their behavior. And all of
+[37:06.96]  this is powered by feature flags that
+[37:08.88]  are tied to realtime data so that you
+[37:11.20]  can roll out safely, target [music]
+[37:12.96]  precisely, and learn continuously. Data
+[37:16.00]  Dog is more than engineering metrics.
+[37:18.16]  It's where great product teams learn
+[37:19.68]  faster, fix smarter, and ship with
+[37:21.92]  confidence. [music]
+[37:22.88]  Request a demo at dataq.com/lenny.
+[37:26.64]  That's data dogq.com/lenny.
+[37:29.84]  Okay, I'm going to shift to talking
+[37:31.12]  about the API and the platform that you
+[37:32.64]  all build. Some So, you work with a lot
+[37:35.20]  of companies implementing your API, your
+[37:38.16]  platform, building on on your on your
+[37:40.00]  tools. You told me that you find that a
+[37:42.88]  lot of companies actually have negative
+[37:44.88]  ROI on their AI deployments, which uh I
+[37:48.64]  think is what a lot of people read about
+[37:50.40]  and feel and think and it's interesting
+[37:52.56]  you're actually seeing that. What what's
+[37:54.64]  going on there? What are they doing
+[37:55.68]  wrong? What do you what what's happening
+[37:57.20]  in the world of AI and deployments in
+[37:59.12]  ROI?
+[37:59.84]  >> Yeah. So, so to be clear, I I I don't
+[38:01.92]  like explicitly see quantitative numbers
+[38:03.92]  around this. uh you know uh it's
+[38:06.08]  actually really hard to measure these
+[38:07.76]  things but especially from observing
+[38:10.16]  some companies kind of trying to do AI I
+[38:13.28]  would not be surprised if a lot of AI
+[38:15.84]  deployments are actually you know
+[38:16.96]  negative ROI. I mean part of this too is
+[38:19.04]  I think there's also general sentiment
+[38:21.04]  um from uh folks uh around the country u
+[38:24.24]  like basically outside of tech that AI
+[38:26.08]  is being forced onto them. Um, and I
+[38:28.32]  think part of this is is is uh uh uh
+[38:31.20]  probably a symptom of some negative ROI
+[38:34.24]  uh AI deployments. A couple things I've
+[38:36.48]  observed around this. So one one thing
+[38:38.64]  is and I think I I come back to this
+[38:40.72]  again and again like I think we in
+[38:42.88]  Silicon Valley just forget that we live
+[38:44.32]  in a bubble. Like we are so like Twitter
+[38:47.20]  is a bubble sorry X is a bubble. Um
+[38:49.28]  Silicon Valley is a bubble. Software
+[38:50.48]  engineering is a bubble. most people uh
+[38:52.96]  in the world, most people in the US are
+[38:54.48]  not software engineers, are not very AI
+[38:56.48]  pled um are not following every single
+[38:58.64]  model release. And so uh uh and so we're
+[39:01.92]  just like highly out of the loop on how
+[39:03.84]  to use this technology and so you know
+[39:05.92]  like we um we always talk about all
+[39:07.60]  these like best practices for codecs,
+[39:09.20]  all these like codeex build people
+[39:10.40]  within OpenAI. I'm sure everyone on X
+[39:13.04]  who posts are like crazy power users of
+[39:15.28]  of these AI tools, you know, they they
+[39:17.28]  lean into skills, they lean into
+[39:19.04]  agents.mmd,
+[39:20.64]  >> MCPS.
+[39:21.92]  >> Uh yes. Yeah. All all of that. And uh
+[39:26.16]  when I talk to some of these companies
+[39:27.52]  and I and I talk to the the actual
+[39:28.96]  employees using these, it's like the
+[39:30.96]  most basic thing that they're trying to
+[39:32.64]  do and they like have very little
+[39:34.96]  understanding of exactly how this
+[39:36.48]  technology works. And so that that's
+[39:39.04]  that's kind of like one big observation
+[39:41.92]  for me, which is like they're asking
+[39:44.40]  very simple questions of these things.
+[39:46.40]  They're really not not pushing it just
+[39:47.92]  yet. And so that kind of goes back to
+[39:50.56]  that kind of ties into to to what I what
+[39:52.24]  I think um more companies do or like
+[39:54.64]  what could do or or what what a more
+[39:56.72]  ideal AI deployment setup looks like. Um
+[39:59.60]  and and this is kind of how we've run
+[40:00.96]  things within OpenAI too. Um the
+[40:02.80]  companies where I think it's it started
+[40:04.00]  to work really well have a combination
+[40:05.92]  of both top down buyin. So it's like the
+[40:08.00]  seuite it's like you know we're we're we
+[40:09.60]  want to become an AI AI first company.
+[40:12.32]  So there's buyin, they buy the tools,
+[40:14.08]  they have, you know, exact support, but
+[40:16.00]  it also has bottoms up adoption and
+[40:18.40]  buyin. And so what I mean by that is it
+[40:20.24]  has like actual employees doing the work
+[40:23.68]  who are really excited about the
+[40:25.60]  technology and are willing to learn,
+[40:27.36]  evangelize, build best practices and
+[40:30.00]  kind of like knowledge share within the
+[40:31.52]  organization. We've we've seen this a
+[40:33.52]  lot internally. So like obviously OpenAI
+[40:35.76]  has always wanted to be uh a very
+[40:37.68]  AIcentric company but where when it
+[40:40.08]  really started taking off was when was
+[40:41.68]  with the introduction of codecs and
+[40:43.04]  these tools where like people like
+[40:44.96]  actual employees themselves could start
+[40:46.96]  applying it to their work. Uh and I
+[40:49.04]  think you really need this because at
+[40:50.72]  the end of the day everyone's work is
+[40:52.08]  like very different. It's like very
+[40:53.44]  unique. Uh software engineering is
+[40:55.20]  different than finance is different than
+[40:56.32]  operations different than go to market
+[40:57.60]  and sales. Uh, and so there's like a lot
+[41:00.16]  of these like last mile intricacies of
+[41:03.04]  work that needs to really be done in a
+[41:05.04]  bottoms up fashion. And so my sense is a
+[41:08.80]  lot of these these AI deployments don't
+[41:10.72]  have like don't have bottoms up
+[41:12.56]  adoption. Like it was like an exact
+[41:14.16]  mandate and it's extremely top down and
+[41:17.20]  is very divorced from what the actual
+[41:18.64]  work looks like. And as an end result,
+[41:20.56]  you end up with a giant workforce that
+[41:22.00]  doesn't really understand the
+[41:23.28]  technology. is like, I know I'm supposed
+[41:24.96]  to use this and maybe it's like on my
+[41:26.32]  performance review too, but um I'm not
+[41:28.56]  sure what to do. And they look around,
+[41:30.24]  no one else is doing it. There's no one
+[41:31.44]  else to learn from. Uh and so my my you
+[41:34.48]  know my recommendation for companies
+[41:36.08]  kind of pushing this is is find or maybe
+[41:38.00]  even staff a full-time team internally
+[41:39.60]  that is this kind of tiger team
+[41:41.36]  internally that can um explore the full
+[41:44.40]  extent of the capabilities apply to
+[41:46.24]  specific workflows do the knowledge
+[41:47.76]  sharing uh create excitement uh within
+[41:50.48]  folks uh who might want to use this
+[41:51.92]  technology uh because in the absence of
+[41:53.92]  that it's very difficult to it's
+[41:55.28]  actually very difficult to pick up
+[41:56.56]  >> and who who would you put on this tiger
+[41:58.16]  team is it like engineerled do you find
+[42:00.48]  in your experience is it cross
+[42:02.24]  functional sort of team.
+[42:03.76]  >> Yeah, it's it's interesting. So, um also
+[42:06.48]  a lot of companies don't have software
+[42:08.00]  engineers. Uh and so the the pattern
+[42:10.56]  I've seen is it tends to be these like
+[42:13.28]  software engineering adjacent like
+[42:15.68]  basically technical people but are not
+[42:18.00]  software engineers. I think those are
+[42:19.28]  the ones who get tend to get most
+[42:20.48]  excited uh around this. It's like, you
+[42:23.52]  know, maybe the It's like maybe the
+[42:25.84]  like, you know, support team operations
+[42:28.08]  lead who doesn't code but loves using
+[42:31.36]  these tools and, you know, is like an
+[42:32.96]  Excel wizard or something. And so it's
+[42:34.88]  like technical adjacent or like coding
+[42:36.72]  adjacent and like, you know, pretty
+[42:38.08]  technical. Those are the times like
+[42:40.40]  those are the kinds of people I've seen
+[42:41.44]  in these companies who just like really
+[42:42.64]  light up and get excited around this.
+[42:44.24]  Um, and you can usually build a team uh
+[42:45.92]  a team around that. But yeah, it's like
+[42:47.36]  oftentimes not software engineers.
+[42:48.72]  Software engineers, I think, will
+[42:50.00]  understand this, but not every company
+[42:51.28]  has has software engineers. Um, is
+[42:53.84]  actually kind of a rarity. They're
+[42:54.96]  they're hard to find. They're expensive.
+[42:56.32]  Uh, and so it's it's these other other
+[42:57.84]  types of folks. What I'm hearing is the
+[42:59.44]  anti- pattern is top down. This is very
+[43:02.08]  the CEO found exec team just like we are
+[43:04.56]  going to go AI first. We're going to
+[43:06.40]  lead into AI. Everyone's going to be
+[43:08.16]  judged on their performance using AI
+[43:09.76]  tools, how much your productivity is
+[43:12.48]  increasing thanks to AI. And without
+[43:16.00]  with that being just top down and not
+[43:17.92]  creating a team that is bottom up
+[43:20.40]  spreading the the gospel, you find it
+[43:22.72]  doesn't work.
+[43:23.76]  >> Yeah. Yeah. Exactly. Exactly.
+[43:25.12]  >> And the advice is find the people that
+[43:27.20]  are most excited and instead of kind of
+[43:30.24]  having them spread out through the
+[43:31.36]  organization, you're what you find works
+[43:33.12]  is create a little AI kind of evangelist
+[43:36.32]  team that finds ways to use it and kind
+[43:38.40]  of spreads it across the work.
+[43:39.84]  >> Yeah. I mean another it's kind of like
+[43:41.44]  hearing you you play back to me. Another
+[43:42.88]  way to think about it, kind of tying
+[43:44.08]  back to my own management philosophies,
+[43:45.92]  is find the high performers in AI
+[43:47.68]  adoption and empower them. You know, let
+[43:49.44]  them build hackathons, let them, you
+[43:51.52]  know, hold seminars, do knowledge
+[43:53.36]  sharing, kind of create the seeds of uh
+[43:55.52]  of excitement internally. Okay. Amazing.
+[43:58.96]  There's a couple hot takes I want to
+[44:00.80]  hear uh from you. Something that I've
+[44:03.20]  seen you talk about and share. one is um
+[44:06.40]  you've shared that talking to customers
+[44:08.56]  and listening to customers is not always
+[44:10.08]  the right strategy in AI and it might
+[44:11.84]  often lead you astray.
+[44:13.68]  >> I don't know if it's that hot of a take.
+[44:15.44]  I think the main thing here is so
+[44:17.60]  obviously you should talk to your
+[44:18.56]  customers like it's it's like useful to
+[44:19.84]  talk to customers. I just think the AI
+[44:22.08]  field um especially what I've seen over
+[44:24.56]  the last kind of like three years um uh
+[44:27.52]  working on the API and and seeing kind
+[44:29.76]  of all that evolve is the field and the
+[44:32.88]  models themselves are just changing so
+[44:35.52]  so quickly they tend to like disrupt
+[44:37.84]  themselves especially around the like
+[44:40.24]  tooling and the scaffolding space. So uh
+[44:42.96]  there there's this quote that I read
+[44:44.24]  actually earlier this week from a it's
+[44:46.00]  from an ex article uh by this guy named
+[44:47.84]  Nicholas who's who's the founder of a a
+[44:49.44]  startup called finol uh where uh I think
+[44:52.56]  he was he was sharing a lot of the best
+[44:53.92]  practices that he has learned through
+[44:55.76]  building AI agents for financial
+[44:57.28]  services I think at a at a startup
+[44:58.64]  FinTool um and he had this phrase that I
+[45:00.72]  thought was really good which is uh the
+[45:02.00]  models will eat your scaffolding for
+[45:03.68]  breakfast. Like if you look if you
+[45:05.60]  rewind back to 2022 right when Chad GBT
+[45:08.56]  launched um these models were pretty raw
+[45:11.20]  and there was like all this product
+[45:13.20]  scaffolding and and things especially in
+[45:15.28]  the developer space to basically try and
+[45:18.56]  steer the model and build a scaffolding
+[45:20.56]  around it to get it to do what you want
+[45:22.80]  like agent frameworks there's like like
+[45:24.88]  vector stores I think was like really
+[45:26.40]  popular back then uh and just like a
+[45:28.56]  whole smattering of tools here and as
+[45:30.64]  you've kind of seen the field play out
+[45:32.00]  that the models have just changed so
+[45:33.84]  much uh that uh and and gotten so much
+[45:36.72]  better that they ended up yeah literally
+[45:38.80]  eating some of some of the scaffolding.
+[45:40.48]  Um and I think this is even true today.
+[45:42.64]  So I think the the article from Nicholas
+[45:44.64]  um actually you know the the current
+[45:46.00]  scaffolding which is uh fashionable is
+[45:47.84]  skills files based context management. I
+[45:50.72]  could see a world where at some point
+[45:52.16]  you know that's no longer useful uh
+[45:54.72]  where the model can actually you know
+[45:56.40]  manage all that themselves or like you
+[45:58.72]  know uh uh or or or there might be you
+[46:01.12]  know it's hard to predict but like might
+[46:02.16]  move on to some new paradigm where you
+[46:03.28]  know need this file based like skills
+[46:04.80]  skills type thing you have literally
+[46:06.48]  seen this play out right like the agent
+[46:07.84]  frameworks I think are a little less
+[46:08.96]  useful now um there was a period of time
+[46:10.80]  like 2023 where we thought vector stores
+[46:12.80]  and is is going to be like the main way
+[46:15.20]  for you to you know bring organizational
+[46:17.60]  context into the models and you need to
+[46:20.00]  you know uh vector and embed every bit
+[46:23.36]  of your corpuses and then you need to do
+[46:24.72]  all this work to like figure out the
+[46:26.08]  vector search to like optimize that to
+[46:27.92]  fill out the right information the right
+[46:29.12]  time. All of that is scaffolding because
+[46:31.60]  the model you know was not good enough
+[46:33.92]  and turns out you know in this case it
+[46:35.92]  turns out as the models get better a
+[46:38.08]  better approach is actually to take out
+[46:39.52]  a lot of that logic and trust the model
+[46:41.44]  and give it a set of tools for search.
+[46:43.76]  It doesn't need to be a vector store.
+[46:45.20]  You could actually just hook it up to
+[46:46.40]  any type of search. It could literally
+[46:48.00]  be files on a file system like skills uh
+[46:50.72]  and agents MD uh to kind of steer it uh
+[46:53.68]  as well. Obviously, there's still a
+[46:55.20]  place for vector stores. I know a lot of
+[46:56.80]  companies are still using it, but the
+[46:58.32]  that the entire scaffolding around that
+[46:59.84]  and building an entire ecosystem around
+[47:01.68]  that and assuming that's the only
+[47:02.80]  scaffolding that you need has has really
+[47:04.40]  changed. And so tying this back to like
+[47:07.12]  you know uh it's you know you don't
+[47:08.72]  always have to listen to your customers
+[47:10.24]  because the field is changing so much at
+[47:11.92]  any point in time you know a lot of
+[47:13.60]  people are kind of in this local local
+[47:15.20]  maximum and if you just blindly listen
+[47:18.16]  to your customers they'll be like yeah I
+[47:19.60]  want a better vector store like I want a
+[47:21.52]  better uh I want a better you know agent
+[47:23.68]  framework for this and uh if you had
+[47:26.16]  just kind of only chased down that path
+[47:27.76]  it actually would have led you to you
+[47:29.20]  know build something that again is the
+[47:30.56]  local maxima whereas as the models get
+[47:32.80]  better we've had to reinvent event and
+[47:34.80]  kind of rethink the right right uh uh
+[47:37.44]  abstractions and the right tools and
+[47:39.04]  frameworks to to to to build around
+[47:41.28]  these models. Um and the cool slash
+[47:43.68]  exciting slash kind of crazy annoying
+[47:45.76]  part is it's a moving target. And so
+[47:47.92]  yeah, like the current current
+[47:49.76]  smattering of of tools and frameworks
+[47:52.08]  right now will likely need to evolve and
+[47:54.00]  change pretty significantly over time um
+[47:56.08]  as the models get smarter and better.
+[47:58.16]  But that is just the nature of building
+[47:59.36]  in the space. I think that's what makes
+[48:00.48]  it exciting. Uh but it also means when
+[48:02.24]  you talk to customers, you kind of need
+[48:03.52]  to balance the exact feedback that they
+[48:05.76]  want uh with uh where you think the
+[48:07.68]  models are going and where you think
+[48:08.88]  things will uh trend over the next one
+[48:10.24]  to two years. It's interesting how this
+[48:11.84]  is um the bitter lesson is uh you know
+[48:14.48]  this big lesson that AI and ML folks
+[48:17.20]  learned which is just like uh don't the
+[48:19.84]  less you over complicate the less logic
+[48:21.76]  you add to to machine learning to AI the
+[48:24.64]  more it'll be able to scale and grow and
+[48:26.64]  just like take it all away and let it
+[48:27.92]  just just compute basically just give it
+[48:30.16]  more power to to get smarter on its own.
+[48:32.64]  Yeah, there's literally a version of the
+[48:34.32]  bitter lesson applied to like building
+[48:36.32]  with AI where you know we were trying to
+[48:38.48]  architect all this stuff around and
+[48:40.00]  turns out the models are just kind of
+[48:41.28]  you know eat it all away and and and and
+[48:43.28]  honestly like OpenAI API team has like
+[48:45.60]  been guilty of this uh where we kind of
+[48:47.36]  like took some you know left and right
+[48:48.88]  turns when we shouldn't have um but uh
+[48:52.72]  yeah the models still end up models get
+[48:54.64]  better and uh we're all learning the
+[48:56.24]  bitter lesson day in and day out. So
+[48:58.00]  what would be the the key takeaway for
+[48:59.92]  folks building on say the API or just
+[49:01.92]  building agents and you know having to
+[49:04.00]  build a little bit of this around for
+[49:05.52]  now is it just yeah what would be the
+[49:07.12]  advice?
+[49:07.84]  >> My general advice and I've been giving
+[49:09.12]  this to people for a while and I think
+[49:10.48]  still true today is make sure you're
+[49:12.24]  building for where the models are going
+[49:13.52]  and not where they are today. um uh you
+[49:16.64]  know the the it's it's clearly a moving
+[49:19.44]  target and I think a lot of the
+[49:21.12]  companies that I've seen startups that
+[49:22.88]  I've seen really really do well is they
+[49:25.04]  build a product for an ideal like type
+[49:28.72]  of capability that is like maybe 80% of
+[49:31.68]  the way there today and it like they end
+[49:34.72]  up you know having a product that like
+[49:36.40]  kind of works but it's like just almost
+[49:38.16]  there but then as the models get better
+[49:40.88]  you know suddenly it might click and
+[49:42.48]  then their product now is incredible
+[49:44.00]  because it works you like uh uh like
+[49:46.48]  maybe with like 03 at some point it
+[49:48.64]  suddenly works with 5.1 5.2 suddenly it
+[49:50.64]  unlocks it but they're building these
+[49:52.40]  products with the like the model
+[49:54.56]  capability improvements in mind and with
+[49:57.20]  that you end up creating an exper
+[49:58.72]  experience that's way better than if you
+[50:00.32]  had assumed that it's it's static in the
+[50:01.92]  first place. Um and so that would be my
+[50:03.68]  my general uh advice which is you know
+[50:05.76]  build for where where where the models
+[50:07.44]  are going and not not where they are
+[50:08.72]  today. You end up building a better
+[50:10.16]  product. you may need to, you know, like
+[50:11.76]  wait a little bit, but like, you know,
+[50:13.04]  the models are getting so much better so
+[50:14.40]  quickly, you often don't need to wait um
+[50:16.32]  that long.
+[50:16.88]  >> So to follow that thread, where are like
+[50:20.16]  in the next six to 12 months, where is
+[50:22.88]  the API heading? Where's the platform
+[50:24.40]  heading? Where are the models heading?
+[50:25.84]  As much as you can share, I know there's
+[50:27.36]  a lot of secrets here that maybe you're
+[50:29.52]  most excited about or do you think that
+[50:30.80]  people should start to prepare for and
+[50:32.80]  however much you can share?
+[50:34.32]  >> I mean, so the obvious one is um how
+[50:36.56]  long of a task uh these models can do
+[50:39.12]  coherently. Um, so there's like the the
+[50:41.36]  meter benchmark that that I think tracks
+[50:43.60]  software engineering tasks and how long,
+[50:46.40]  you know, like how long of a task can
+[50:47.84]  these models do uh 50% of the time, 80%
+[50:50.24]  of the time. Uh, I think we're at
+[50:52.32]  something like multi-hour tasks being
+[50:55.28]  able to be done by uh software
+[50:57.04]  engineering tasks being able to be done
+[50:58.56]  by um uh these frontier models uh 50% of
+[51:02.24]  the time and then I think 80% is
+[51:03.92]  something like just under an hour. But
+[51:06.24]  the the the sobering thing about that
+[51:07.76]  that chart is they plot all the uh
+[51:09.68]  previous models on this chart as well.
+[51:12.00]  So you can really see the trend of this.
+[51:14.00]  That's something that I'm really excited
+[51:15.20]  about which is you know I actually think
+[51:17.04]  products today really optimize for tasks
+[51:19.76]  that the model can do for like minutes
+[51:21.28]  at a time. Like even codecs and like the
+[51:23.44]  coding tools I'd say like you know it's
+[51:25.84]  in the Cly you're kind of like seeing it
+[51:27.52]  be interactive. It's really you know
+[51:29.84]  quite optimized well for like maybe at
+[51:31.92]  most 10-minute types. I have seen people
+[51:34.72]  push codeex to the limit and do like
+[51:36.48]  multi-hour long uh tasks. Uh but again I
+[51:40.24]  I think that that's more of the
+[51:41.36]  exception. But I uh if you follow this
+[51:43.52]  trend like I think like in the next 12
+[51:45.20]  to 18 months we could see models that
+[51:46.64]  could do multi-hour long tasks very very
+[51:49.28]  coherently. At some point it might reach
+[51:51.76]  like you know 6 hours a dayong task
+[51:54.72]  where you kind of like dispatch it and
+[51:56.24]  have it do you know do things on uh on
+[51:58.24]  its own for a while. The types of
+[52:00.16]  products you build around that will look
+[52:01.76]  very different. you want to give the
+[52:02.88]  model feedback. You obviously don't want
+[52:04.24]  it to completely run wild for a day.
+[52:05.92]  Maybe you do, but but you probably
+[52:08.16]  don't. Um and and then the the universe
+[52:10.64]  of things you can have the model do
+[52:11.92]  really expand. So that's something that
+[52:13.04]  I'm really um really excited about
+[52:15.12]  seeing. Another uh thing over the next
+[52:17.28]  12 to 18 months I think be really cool
+[52:18.80]  is improvements in our in the multimodal
+[52:20.96]  models. So uh and and actually by by
+[52:23.76]  multimodality I'm mostly thinking about
+[52:25.68]  audio here where uh the models are
+[52:28.64]  pretty good at audio. I think they're
+[52:30.24]  going to get a lot better um at audio
+[52:32.08]  over the next 6 to 12 months especially
+[52:34.00]  the like you know the um native
+[52:36.40]  multimodal models the speech to speech
+[52:38.80]  ones I think there's also interesting
+[52:40.72]  work uh being done around um new types
+[52:43.28]  of models and architectures on the
+[52:44.96]  multimodal audio side uh as well but uh
+[52:48.64]  audio especially in the enterprise and
+[52:50.32]  in a business setting I think is a
+[52:51.84]  hugely underrated uh domain still like
+[52:54.16]  everyone talks about coding it's all
+[52:55.52]  text uh but uh we're talking in audio
+[52:59.60]  A lot of the world's business is done
+[53:01.92]  via audio. Uh a lot of services and
+[53:04.80]  operations are done via uh talking and
+[53:06.88]  audio. And so uh I think that that area
+[53:08.96]  is going to look very exciting in the
+[53:10.16]  next 12 to 18 months. And I think there
+[53:11.52]  will be uh even more unlock for uh what
+[53:13.92]  we can do uh with with audio models uh
+[53:16.16]  there as well.
+[53:17.28]  >> Amazing. So quick summary uh expect
+[53:20.80]  agents and uh AI tools to run longer to
+[53:25.20]  that that trajectory to continue to
+[53:26.96]  increase and then audio and speech
+[53:28.96]  becoming a bigger deal more first party
+[53:31.04]  and and native and better and core to
+[53:33.84]  the experience.
+[53:34.64]  >> Yeah,
+[53:35.20]  >> extremely cool. Okay, I want to go back
+[53:36.64]  to one of your hot takes, another hot
+[53:38.24]  take that I've seen you discuss. You're
+[53:40.80]  big uh you're very bullish on business
+[53:42.72]  process automation as an opportunity in
+[53:45.60]  the world of AI. Talk about that. Yeah,
+[53:47.60]  this go this goes back to the thing that
+[53:49.28]  I said previously which is um we we we
+[53:51.76]  live in a bubble in Silicon Valley and
+[53:54.88]  um a lot of the work that we do that
+[53:56.96]  we're used to software engineering you
+[53:58.88]  know product management building
+[54:00.80]  products uh is very differently shaped
+[54:03.68]  than the work that goes on um that runs
+[54:06.16]  our entire economy and I see this in and
+[54:08.48]  out when I talk to customers uh if you
+[54:10.80]  if you talk to any like you know company
+[54:12.72]  that's not based in it's not a tech
+[54:14.64]  company um there's a lot of business
+[54:17.12]  processes. And so what what I mean by
+[54:18.96]  this is is you know I generally
+[54:20.48]  delineate it as you know there's like uh
+[54:22.80]  like software engineering is kind of
+[54:24.16]  like open-ended knowledge work right
+[54:26.24]  it's and this is why I think tools like
+[54:28.24]  codeex tend to be quite quite good
+[54:29.92]  because it's exploring and and you're
+[54:31.36]  giving it these like open-ended things
+[54:32.72]  but software engineering is
+[54:34.24]  fundamentally like pretty open-ended uh
+[54:36.64]  and it's not very repeatable right so
+[54:38.48]  like you build a feature you're not
+[54:40.24]  trying to build the exact same feature
+[54:41.52]  over and over again and a lot of like
+[54:43.68]  tech jobs are in the space I think like
+[54:46.72]  data science is kind of in the space as
+[54:48.56]  well. Even some of the like strategic
+[54:50.40]  finance stuff. But as you move further
+[54:52.80]  and further away from software
+[54:54.16]  engineering and like what what is core
+[54:55.60]  in tech, a lot of jobs are just business
+[54:58.32]  processes. They're like repeatable
+[55:00.00]  things uh repeatable operations um that
+[55:03.76]  you know some manager at a company has
+[55:05.60]  kind of like iterated on. Um there's
+[55:07.92]  usually a standard operating procedure
+[55:10.08]  that people want to do. Uh and you don't
+[55:12.80]  want to deviate from it that much. you
+[55:14.32]  know this like in software engineering
+[55:15.60]  the ingenuity is isn't isn't deviating
+[55:18.24]  but a lot of a lot of the the the work
+[55:20.40]  being done in the world is actually just
+[55:22.64]  um running through these procedures and
+[55:24.24]  operations like if I you know if I call
+[55:26.56]  um a support line they're running
+[55:28.08]  through one of these if I call my
+[55:30.24]  utility company there's a bunch of
+[55:31.68]  processes and things that they can and
+[55:33.12]  cannot do um for me uh and so I'm I'm
+[55:36.08]  just extremely bullish on this general
+[55:37.68]  category of like and and and I think
+[55:39.84]  it's underrated because it's so
+[55:41.20]  different from what we think about in
+[55:42.48]  Silicon Valley people tend to not think
+[55:43.84]  about it. But how can we apply um AI uh
+[55:47.68]  and and some of the tools and frameworks
+[55:49.60]  that we have towards this business
+[55:51.20]  process automation towards automated
+[55:54.40]  automating and making easier um
+[55:57.04]  repeatable business processes with high
+[55:59.28]  determinism um that is fully integrated
+[56:02.08]  with business uh data and business
+[56:04.16]  decisions and and and different systems
+[56:06.16]  within an enterprise um and how can we
+[56:08.40]  actually make that that process better
+[56:10.16]  uh because I actually think there's a
+[56:11.52]  lot of opportunity and a lot of work to
+[56:14.00]  be done uh in that area and we just we
+[56:16.32]  just don't talk about it because it's
+[56:17.36]  it's a little bit less uh uh in our
+[56:19.68]  wheelhouse. So your take here just to
+[56:21.52]  make sure I fully understand it is you
+[56:23.36]  think there's a much uh bigger
+[56:24.96]  opportunity outside of engineering for
+[56:27.20]  AI to impact uh productivity of
+[56:30.16]  companies and also jobs of these folks
+[56:32.24]  that are doing these kind of repetitive
+[56:34.16]  easily automated tasks impact jobs and
+[56:36.56]  also just impact how work is done like
+[56:38.24]  so much of work is done in this way like
+[56:39.92]  you think about you know like what a
+[56:42.96]  basically we I I talk to customers all
+[56:44.48]  the time big enterprises like like how
+[56:46.64]  how will AI transform my company like
+[56:48.40]  how will it run in in in a world uh with
+[56:51.04]  AI in like 20 years. Um and and you
+[56:53.76]  know, software engineering is part of
+[56:55.04]  the story, but there's so much more on
+[56:57.12]  the business process side. And I
+[56:58.56]  actually think it might look even more
+[57:00.00]  different on the business process side.
+[57:01.52]  And and the work there is is pretty
+[57:03.52]  substantial. It's actually interesting.
+[57:04.96]  I don't know like from an absolute
+[57:06.48]  percentage or absolute basis, I don't
+[57:08.16]  know if it's bigger or smaller than
+[57:09.20]  software engineering. Like software is
+[57:10.56]  pretty huge and pretty extensive uh as
+[57:12.80]  well. But it is pretty massive and it's
+[57:15.04]  definitely bigger than you know uh uh uh
+[57:17.92]  it's bigger than you would think it is
+[57:19.52]  based off of how how people talk about
+[57:21.36]  it or don't talk about it on X or
+[57:23.04]  Twitter. Okay. Uh going in a slightly
+[57:25.52]  different direction uh having built the
+[57:28.56]  platform building the API uh people
+[57:30.88]  building on the API the biggest question
+[57:32.72]  on people's minds is always just uh how
+[57:35.36]  do I not have OpenAI squash my idea and
+[57:38.24]  build their own thing and then you know
+[57:40.00]  destroy this this market I created.
+[57:42.32]  What's the general policy? What's the
+[57:43.76]  general philosophy of how startups
+[57:46.08]  should think about where open AI is
+[57:47.52]  unlikely to go? My my general answer
+[57:50.08]  here is is um the market is so big and
+[57:55.12]  so massive like I actually think you
+[57:58.24]  know startups should just not overly
+[58:00.08]  think about where open AI or these labs
+[58:02.56]  are going. I've talked to a lot of
+[58:04.64]  startups you know that have you know not
+[58:06.48]  worked out, startups that are doing
+[58:07.60]  really well. Every startup that I've
+[58:10.00]  seen that has kind of fizzled out is not
+[58:11.76]  because open AI or you know big lab or
+[58:13.92]  Google or something has has come to
+[58:15.52]  squash them. It's because they built
+[58:16.64]  something and it like really didn't
+[58:18.00]  resonate with with the customers.
+[58:19.36]  Whereas the ones that take off like even
+[58:21.20]  in very competitive spaces like coding
+[58:23.20]  like cursor is huge at this point and
+[58:24.88]  it's because they built something that
+[58:25.92]  people really love. And so my general
+[58:27.76]  advice is like don't you know don't
+[58:30.32]  overly stress about this. Just build
+[58:31.84]  something that people like and you will
+[58:33.36]  you will have a space in this. I can't
+[58:35.68]  overstate how big of an opportunity
+[58:37.28]  there is right now. Like the the the
+[58:40.16]  opportunity space of building with AI is
+[58:41.68]  so big. Like a good example of this is
+[58:43.36]  is like the space is so big that the
+[58:46.16]  overton window of what is acceptable and
+[58:47.92]  not acceptable for VCs to do has
+[58:49.36]  completely changed here. VCs are like
+[58:51.44]  investing in like competitive companies
+[58:53.04]  left and right is just like the space is
+[58:55.28]  so big because the opportunity is is is
+[58:57.44]  is unlike anything that we've seen
+[58:58.80]  before. And while you know uh that that
+[59:01.84]  affects how VCs operate from a startup
+[59:03.92]  perspective it's like the most
+[59:04.80]  empowering thing in the world because
+[59:06.08]  the like even if you just build
+[59:07.76]  something that that some people really
+[59:09.12]  really love you will you will end up
+[59:10.56]  with a massive massively valuable
+[59:12.16]  business. Uh and so I that's why I tell
+[59:15.36]  people like don't don't overthink about
+[59:16.56]  it. The other thing like I also think is
+[59:18.40]  important to remember uh at least from
+[59:20.00]  an open AI perspective. One thing that
+[59:21.52]  that that we've always held very near
+[59:23.36]  and dear which both Sam and Greg helped
+[59:25.44]  you know reinforce from the top as well
+[59:27.36]  is we actually view ourselves
+[59:29.12]  fundamentally as a like ecosystem
+[59:31.28]  platform company. The API was our first
+[59:33.44]  product. We think it's really important
+[59:35.44]  for us to foster this ecosystem and
+[59:37.28]  continue to you know uh support it and
+[59:39.68]  and not squash it. And so if you kind of
+[59:41.28]  look at the decisions we make it this is
+[59:42.80]  all we've weave through it. Every single
+[59:44.96]  model we've released in one of our
+[59:46.16]  products gets released in the API. Like
+[59:47.84]  even, you know, we release these codeex
+[59:49.60]  models now that are a little bit more
+[59:50.64]  optimized for the Codex harness, but
+[59:53.28]  they always find their way into the API
+[59:54.96]  and like all of our, you know, uh,
+[59:56.80]  customers end up using those. We don't
+[59:58.56]  hold back on any of that. Uh, we think
+[60:00.32]  it's really important to keep our
+[60:02.24]  platform neutral and so, you know, we
+[60:04.32]  don't block competitors. Um, we allow
+[60:06.48]  people to have access to our models. Um
+[60:09.12]  uh we also want you know like uh we've
+[60:11.20]  recently been testing more of like the
+[60:12.48]  signin with chatgbt you know uh product
+[60:14.88]  as well and so we we want to foster this
+[60:16.80]  ecosystem and I think it's really
+[60:17.92]  important that we do so. Uh the general
+[60:20.16]  like thinking about this is like you
+[60:21.44]  know a rising tide like lifts all boats
+[60:23.76]  and you know we might be a aircraft
+[60:25.92]  carrier we're like pretty big at this
+[60:27.36]  point but we think it's important to
+[60:28.72]  raise the tide uh because everyone kind
+[60:30.32]  of uh benefits and I think we'll benefit
+[60:32.00]  as well like our API itself has grown
+[60:34.08]  pretty significantly because we we act
+[60:35.84]  in this way and so I'd really encourage
+[60:37.76]  people not to view OpenAI as this kind
+[60:39.44]  of like you know thing that'll just uh
+[60:42.08]  uh shove people out of the way but
+[60:44.08]  instead focus on on on building
+[60:45.52]  something valuable and we you know
+[60:47.60]  remain committed to to to providing an
+[60:49.84]  open ecosystem.
+[60:51.04]  >> Why why is that important to open AAI?
+[60:52.80]  Just this focus on building a platform,
+[60:55.92]  creating a way for people to build
+[60:58.56]  businesses just like is that just that's
+[61:00.56]  been the vision from the beginning. We
+[61:01.84]  want this to be a a platform. It's been
+[61:04.40]  the vision from the beginning. It comes
+[61:05.84]  goes back to our charter actually like
+[61:07.36]  our our mission. Um so the the open air
+[61:10.48]  mission has always been to one to build
+[61:12.16]  AGI. So you know we're obviously doing
+[61:13.76]  that but then the second thing is to
+[61:15.12]  like spread the benefits of it to all of
+[61:17.12]  humanity and there's kind of like a lot
+[61:19.52]  of you know uh uh the main part there is
+[61:21.52]  all of humanity like uh and obviously
+[61:23.28]  Chad GBD is trying to do this you know
+[61:24.72]  we're trying to reach however many you
+[61:26.16]  know the whole world but very early on
+[61:28.72]  and this is why we we launched the API
+[61:30.56]  you know back in I think it was like
+[61:31.60]  2020 or something like really early we
+[61:33.60]  don't think we as a company will be able
+[61:35.20]  to reach all of humanity right like
+[61:37.84]  there's I don't know every every corner
+[61:39.52]  of the world is like like pretty pretty
+[61:40.88]  pretty pretty deep. And so we actually
+[61:44.16]  feel like in order for us to fulfill our
+[61:45.52]  mission, we need to have some platform
+[61:47.28]  style thing here where we can empower
+[61:48.64]  other people to build, you know, the
+[61:51.20]  customer support bot for podcasters and
+[61:54.00]  newsletter hosts. Uh because we're not
+[61:56.16]  going to be able to do it ourselves. Uh
+[61:58.16]  and so we've largely seen this play out
+[61:59.76]  with the API. Uh this is why we we you
+[62:02.00]  know, we we we we talked to so many of
+[62:03.84]  our customers and and and really, you
+[62:05.36]  know, love seeing the diversity of of
+[62:06.80]  things built on. But yeah, it it's been
+[62:08.48]  there since day one because it's it's
+[62:10.32]  kind of we view it as an expression of
+[62:11.68]  our mission.
+[62:12.16]  >> And you haven't even mentioned the uh
+[62:13.36]  the app store that you guys are
+[62:14.40]  launching the chatbt app store.
+[62:16.16]  >> Yeah. Is is that under your umbrella by
+[62:18.40]  the way or is that a different Oregon
+[62:19.68]  team?
+[62:20.00]  >> It's a it's a different team. So it's
+[62:21.12]  under chatbt. We obviously collaborate
+[62:22.88]  very closely with them and uh you know
+[62:25.04]  they built like an apps SDK uh which is
+[62:27.20]  built in close collaboration with our
+[62:28.48]  team. Uh but that is more within the
+[62:30.00]  chat GBT umbrella. Uh but that is also
+[62:32.72]  another like that's another example of
+[62:34.32]  this right. It's like Chad GBT is like
+[62:38.24]  we we we we we kind of like have these
+[62:40.64]  800 million weekly active users who are
+[62:42.88]  just coming over and over again. Like
+[62:44.72]  it's a great asset to have as a
+[62:46.56]  business, but like man would it be
+[62:48.00]  better if we could somehow allow, you
+[62:50.32]  know, uh other companies to come in and
+[62:52.24]  and and and uh take advantage of this as
+[62:54.64]  well and and build for this this
+[62:56.08]  audience as well. And and then
+[62:57.60]  ultimately we think it'll help us expand
+[62:59.04]  that that that group as well, right? And
+[63:00.72]  so it's all it all kind of comes back to
+[63:02.16]  the mission and uh we find that being a
+[63:04.00]  platform being open tends to help here.
+[63:05.68]  Just that number 800 million I think
+[63:07.68]  it's ma
+[63:09.52]  just like weekly weekly
+[63:11.36]  >> weekly act billion people using weekly
+[63:15.76]  just like it's absurd how many how these
+[63:18.00]  numbers we're just used to now but
+[63:19.36]  that's in insane unprecedented
+[63:22.24]  >> yeah it's it's mindboggling for me to
+[63:23.84]  think about from a scale perspective uh
+[63:25.92]  honestly and the way I think about it is
+[63:27.36]  like 10% of the world uh and growing by
+[63:29.92]  the way like it's just it's it's
+[63:31.20]  shooting up um
+[63:33.12]  >> uh come to chat GPT uh um and and use it
+[63:35.92]  every day or sorry every week.
+[63:37.84]  >> And this point I just want to double
+[63:39.52]  down on this point you're making. Open
+[63:41.28]  AAI's mission was to make AI available
+[63:43.76]  to all humanity. And I think some people
+[63:46.56]  diss that. They're like, oh, you know,
+[63:47.84]  it costs money and it's like uh like the
+[63:50.16]  fact that it it's there's a free version
+[63:52.24]  of chat GPT that anybody can use that is
+[63:54.88]  not so different from the most powerful
+[63:57.36]  AI model that exists in the world for
+[63:59.60]  free that's not gated that anyone could
+[64:01.68]  use. It's like if you have if you're a
+[64:03.04]  billionaire, there's only so much more
+[64:04.40]  you can get out of AI than what someone
+[64:06.96]  you know in a village in Africa can can
+[64:08.96]  get. And I know that's always been
+[64:10.64]  really important to open AI.
+[64:12.00]  >> Yeah. Yeah. I mean like uh that that's
+[64:14.96]  why I think we've leaned into the health
+[64:16.40]  work. We leaned into like like uh
+[64:18.40]  education is going to be a very
+[64:19.92]  interesting here. Um the other in insane
+[64:22.88]  kind of trend here is is the free model
+[64:24.56]  has gotten so smart over time. like the
+[64:26.40]  free model back in 2022 was, you know,
+[64:29.04]  like uh was good at the time, but it's
+[64:31.04]  like nothing compared to what you get
+[64:32.16]  today because you get 2 GB 5 today. Uh
+[64:34.08]  and so the like, you know, raising the
+[64:35.84]  floor across the world is kind of, you
+[64:37.68]  know, something that we're really we're
+[64:39.20]  trying to do and and we view it as as
+[64:40.64]  part of our mission. The other flip side
+[64:42.80]  of this, by the way, is like, you know,
+[64:44.40]  kind of talking about like the
+[64:45.28]  billionaires or whatever. I know people
+[64:47.44]  have saying like you're using the same
+[64:48.72]  iPhone that like you know Steve or sorry
+[64:51.12]  like Mark Zuckerberg's probably using or
+[64:52.72]  like the billionaires are using but for
+[64:54.40]  like $20 a month you're basically using
+[64:56.88]  you know like using the same AI that you
+[64:59.36]  know the billionaires are using. Uh for
+[65:01.44]  like $200 a month uh you get the same
+[65:04.24]  pro model that you know all the
+[65:05.60]  billionaires are using but they're
+[65:06.56]  probably not using pro for everything.
+[65:07.60]  They're probably just using the the plus
+[65:08.88]  tier ones uh for their day in and day
+[65:10.80]  out. And so yeah, this kind of like
+[65:12.16]  democratization and just like spreading
+[65:14.32]  of this this benefit like across all of
+[65:16.32]  the world is something that's really
+[65:17.52]  meaningful to us and something that um
+[65:20.56]  uh drives a lot of of of what we do. One
+[65:22.72]  last question just for folks that are
+[65:24.24]  thinking about building on the API or
+[65:25.60]  just like oh wait I could do cool stuff
+[65:27.20]  with open models and APIs. What what
+[65:30.48]  does your API and and platform allow
+[65:32.88]  people to do? Like I know you can build
+[65:34.32]  agents on top of the platform. Just talk
+[65:36.16]  about what you allow. So fundamentally
+[65:38.56]  the API offers a bunch of developer
+[65:40.32]  endpoints uh and and uh and these
+[65:42.64]  developer endpoints basically let you
+[65:44.72]  sample from our models. The most popular
+[65:46.96]  one that we have right now is one called
+[65:48.56]  responses API. Uh and so this is an
+[65:51.20]  endpoint and it's optimized for building
+[65:53.28]  longunning agents. So agents that'll
+[65:55.44]  work for a while. So what you can
+[65:57.28]  basically you can at a very you know uh
+[66:00.88]  uh low level you're basically just
+[66:02.48]  giving the model text. The model will
+[66:04.24]  work for a while. you can kind of, you
+[66:06.16]  know, pull it to see see what it'll do
+[66:07.60]  and then you'll get the model response
+[66:08.96]  back at at some point. That's like the
+[66:11.52]  lowest level primitive that we have uh
+[66:13.76]  for people and that's actually what a
+[66:15.28]  lot of people use. That's the most
+[66:16.64]  popular way of building on top of API
+[66:18.48]  with that. It is like super
+[66:20.16]  unpopinionated and you can do basically
+[66:22.88]  whatever you want. It's like the lowest
+[66:24.00]  level thing. We've also started building
+[66:25.84]  more and more kind of like layers of
+[66:27.36]  abstraction on top to help people build
+[66:30.40]  uh some of these. Uh and so next layer
+[66:32.56]  up we have this thing called the agents
+[66:33.92]  SDK which has also gotten extremely
+[66:35.76]  extremely popular. Um this allows you to
+[66:37.84]  use you know the responses API or some
+[66:39.84]  other API endpoints that we have to
+[66:41.92]  build what you might more traditionally
+[66:43.68]  think of as an agent like a you know an
+[66:45.36]  AI kind of working in an infinite loop.
+[66:46.96]  It might have sub agents that it
+[66:48.08]  delegates to. It starts building all
+[66:49.68]  this framework all this scaffolding
+[66:51.36]  actually. You know we'll see where this
+[66:52.88]  all goes. Um, but it makes it a lot
+[66:55.12]  easier for you to build these these
+[66:56.24]  these these kind of agents, giving it
+[66:58.56]  guard rails, allowing it to like farm
+[67:00.88]  out subtasks to other agents and and
+[67:02.96]  kind of like orchestrate a swarm of
+[67:04.32]  agents. Uh, the agents SDK uh kind of
+[67:07.20]  allows you to do that. And then above
+[67:09.52]  that, uh, we've now started building
+[67:11.28]  tools to help also with kind of like the
+[67:13.76]  meta level of deploying an agent. Uh so
+[67:16.48]  we have this product called uh um agent
+[67:19.04]  kit uh uh uh and widgets uh which are
+[67:22.48]  basically a bunch of UI components that
+[67:23.92]  you can use to very easily um build a
+[67:26.48]  very beautiful UI um on top of uh uh
+[67:29.60]  either our API or agents SDK um because
+[67:32.56]  you know a lot of times these agents
+[67:33.68]  kind of look very similar from a UI
+[67:35.12]  perspective uh and so there's agent kit
+[67:37.12]  we also have a smattering of like uh
+[67:38.88]  eval products like an eval API where if
+[67:41.76]  you want to test and like you know see
+[67:43.36]  if your models or your your agent or
+[67:45.28]  your workflow was working. Uh you can
+[67:46.96]  test it in a very quantitative way um
+[67:48.80]  using our EDOLs product. And so yeah,
+[67:50.96]  that I I view it as like these these
+[67:52.32]  various layers. They're all kind of
+[67:53.60]  helping you build um what you want um
+[67:56.08]  with our AI uh with our models um and
+[67:59.44]  with increasing levels of abstraction
+[68:01.12]  and and and and uh you know how
+[68:03.44]  opinionated it is. And so um you can
+[68:05.52]  start you can do you can use the whole
+[68:07.04]  stack and and it it very quickly allows
+[68:09.12]  you to build an agent or you can go down
+[68:11.20]  down the stack as low as you want to
+[68:12.88]  basically responses API and build
+[68:15.28]  whatever you want uh because of how low
+[68:16.80]  level it is.
+[68:17.52]  >> Sherwin, is there anything else that you
+[68:19.52]  want to share? Anything else you want to
+[68:20.80]  leave listeners with? Anything we
+[68:22.48]  haven't touched on that you think might
+[68:24.00]  be helpful before we get to our very
+[68:25.60]  exciting lightning round? The only thing
+[68:27.12]  I' I'd leave folks with is yeah, I think
+[68:30.24]  um I think the next like two to three
+[68:32.24]  years are going to be some of the most
+[68:34.00]  fun uh in tech and in the startup world
+[68:36.80]  uh that that we'll have in a very long
+[68:38.40]  time. And uh I would just encourage
+[68:40.72]  people to not uh not take it for
+[68:42.72]  granted. Like I I entered the workforce
+[68:44.80]  in 2014. It was great for like a couple
+[68:46.88]  years. I felt like there was like a
+[68:48.32]  period of like five to six years where
+[68:50.56]  it wasn't very exciting in tech. Uh and
+[68:53.04]  then in the last three years has just
+[68:54.32]  been the most insanely exciting
+[68:56.16]  energizing period uh of my career and I
+[68:59.60]  think the next two to three years are
+[69:00.48]  gonna be a continuation of that. And so
+[69:02.16]  uh would encourage people not take it
+[69:03.28]  for granted. I'm trying to not take it
+[69:04.56]  for granted. At some point you know this
+[69:06.40]  wave is going to play out and it's going
+[69:07.68]  to be a lot more you know incremental.
+[69:09.68]  Uh but in the meantime we're going to
+[69:10.88]  get to explore a lot of really cool
+[69:12.80]  things, invent a lot of new things and
+[69:14.72]  change the world and change how we work.
+[69:16.32]  And so uh that's the main thing I' I'd
+[69:17.84]  leave folks with. I love this message. I
+[69:20.00]  want to spend a little more time on it.
+[69:21.44]  Um, when you say don't miss it, is it
+[69:23.76]  what do you recommend people do? Is it
+[69:25.12]  just build, lean in, learn, join a
+[69:27.20]  company building really interesting
+[69:28.40]  things? Like what's what's your advice
+[69:29.84]  to folks that are like, "Okay, I don't
+[69:31.20]  want to miss the boat." Yeah, I would
+[69:32.72]  just say engage with it. So, it's
+[69:33.84]  basically like what you said. Um, lean
+[69:35.52]  in. Um, building, uh, tools on top of
+[69:38.16]  this is is part of the, you know, it's
+[69:39.76]  part of the story. Um, just using the
+[69:41.76]  tools like you don't, you know, you
+[69:43.28]  don't need to be a software engineer to
+[69:44.56]  to lean into this. Um, all I think a lot
+[69:46.80]  of jobs are going to going to going to
+[69:48.16]  change here. So just using the tools,
+[69:50.24]  understanding the limitations of what it
+[69:51.92]  can and cannot do so that you can kind
+[69:53.68]  of watch the trend of what it can start
+[69:55.76]  to do um as the models improve and yeah
+[69:58.40]  and so it's basically like getting used
+[69:59.68]  and getting getting used to the
+[70:00.80]  technology and getting familiar with it
+[70:02.32]  instead of kind of like laying back and
+[70:04.56]  uh uh uh letting it letting it pass you.
+[70:07.20]  >> On the flip side of that, there's a lot
+[70:08.88]  of I think stress and just anxiety
+[70:11.04]  around like there's so much happening.
+[70:12.88]  How do I keep up? I got to learn
+[70:14.96]  cloudbot this week. Oh god. What is
+[70:17.52]  there something you've learned about it
+[70:18.64]  just not like you're at the center of
+[70:19.92]  this? How do you not get overly stressed
+[70:22.80]  and worried about missing things that
+[70:24.16]  are going on and just stay on top of
+[70:25.84]  news? What what are some things you've
+[70:27.20]  done learned?
+[70:28.16]  >> Yeah, so I I think I'm personally a bad
+[70:30.08]  example of this because I am I'm
+[70:31.84]  basically chronically online uh on X and
+[70:34.80]  uh our company Slack. So I I I actually
+[70:37.92]  try and absorb I end up absorbing a lot
+[70:39.52]  of it. What I will say though is just
+[70:40.96]  like from observing other folks who are
+[70:42.64]  less, you know, addicted to this stuff
+[70:44.16]  like I am. Um, yeah, a lot of it is
+[70:47.28]  noise. Like you don't need to you don't
+[70:49.52]  need to have like 110% of this kind of
+[70:53.04]  pass your mind like like go into your
+[70:55.20]  mind. Honestly, just leaning into like
+[70:57.36]  one or two different tools starting
+[70:59.76]  small is already like you know more than
+[71:02.00]  you need here. I think just the
+[71:04.08]  combination of like the frenetic pace of
+[71:05.76]  the industry X as a product just creates
+[71:08.72]  like this insane kind of like um uh uh
+[71:13.12]  like yeah this insane like pace of of
+[71:15.28]  news which is honestly very
+[71:16.80]  overwhelming. Uh the main thing is like
+[71:18.40]  you don't need to be you don't need to
+[71:20.24]  know all of that to to really engage
+[71:21.92]  with what's happening right now and even
+[71:23.76]  something as simple as just like install
+[71:25.68]  the codeex client and play around with
+[71:27.12]  it. install Chad GBHEN, connect it to a
+[71:29.44]  couple of your uh you know internal uh
+[71:32.32]  uh data sources, notion, slack, github,
+[71:34.72]  and see what it can and cannot do. Um
+[71:36.80]  all of that I think is a part of it.
+[71:39.36]  Amazing. Sherwin, with that we've
+[71:40.96]  reached our very exciting lightning
+[71:42.56]  round. I've got five questions for you.
+[71:44.16]  Are you ready?
+[71:44.96]  >> Yeah. Yeah, absolutely.
+[71:46.40]  >> First question, what are two or three
+[71:47.68]  books that you find yourself
+[71:48.96]  recommending most to other people?
+[71:50.32]  >> Oh, I'll I'll talk about one non-fiction
+[71:51.84]  one and one fiction book. Uh the fiction
+[71:53.44]  book was I just finished reading it. I I
+[71:55.20]  I it was really I I really recommend it.
+[71:57.44]  It it's uh uh there is no anti-mimetics
+[72:00.24]  division by Q&M. Uh it's a uh I think
+[72:03.52]  it's like an online author, but I saw it
+[72:05.20]  being shared on X. Uh this this uh it's
+[72:07.52]  like a science fictiony kind of book. Um
+[72:10.40]  and it was I basically devoured it in
+[72:12.32]  like two days. Um it was it's super
+[72:15.28]  super well written, super fascinating.
+[72:17.36]  It's about a government agency that's
+[72:19.68]  fighting, you know, things that make you
+[72:21.28]  forget it. Um, and so it's just a very
+[72:23.60]  like smart like creative book that that
+[72:25.52]  and fresh uh honestly in terms of like
+[72:27.44]  source material uh that that that I
+[72:29.60]  really like. So I'd recommend that one.
+[72:31.04]  Uh the book is also unintentionally
+[72:32.64]  hilarious. So like it's like meant to be
+[72:34.40]  like this like sci-fi almost like horror
+[72:36.32]  style book, but it was it was it was uh
+[72:38.40]  it made me laugh a couple times. So uh
+[72:41.04]  that's the that's the um fiction book
+[72:43.52]  non-fiction. So I'm going to cheat and
+[72:45.04]  I'm going to recommend two of them. So
+[72:46.40]  in the last year I've been reading a lot
+[72:47.68]  more about China and kind of like the US
+[72:49.44]  China relations. And I think there are
+[72:51.36]  two books that came out in the last year
+[72:52.64]  that have been you know really really
+[72:54.00]  eye opening for me in in that regard.
+[72:56.24]  First one is the Dan Wang book
+[72:57.68]  breakneck. That one was really really
+[72:59.20]  good. I really liked his analogy of like
+[73:00.96]  the lawyerly US is the lawyerly society.
+[73:03.52]  China is the engineering society uh and
+[73:06.00]  their pros and cons to each. I read it
+[73:08.00]  and I was like hm yeah does does seem
+[73:10.08]  like we're run by lawyers uh in the US.
+[73:13.76]  So that's one. Uh and the other one is
+[73:15.52]  the Patrick McGee book on Apple and
+[73:17.20]  China was super super interesting. I'm a
+[73:19.36]  huge Apple fanboy. Like if you could see
+[73:21.20]  my uh desk right now, it's it's all
+[73:22.88]  Apple stuff. But just like one, it was
+[73:25.76]  just super fascinating learning about
+[73:27.20]  Apple's relationship to China. And then
+[73:28.64]  two, it just like had a lot of inside
+[73:30.80]  information about Apple as a company
+[73:32.56]  that I found fascinating. So it was also
+[73:34.96]  quite a page turner and um also, you
+[73:37.12]  know, very very timely a timely book as
+[73:39.04]  well.
+[73:39.36]  >> The antiimetics book sounds amazing. I'm
+[73:41.36]  buying it right now as you're talking.
+[73:43.28]  >> Yeah. Yeah. Yeah. It's it's like I think
+[73:44.80]  it's only like couple hundred pages. I
+[73:46.48]  literally finished in two days. It was
+[73:47.92]  just like so so good.
+[73:49.36]  >> Okay, great tip. Okay. Uh favorite
+[73:51.28]  recent movie or TV show you have really
+[73:53.20]  enjoyed?
+[73:53.84]  >> Yeah, that one's tough cuz you know with
+[73:56.00]  I I have two kids and uh uh a busy job
+[73:59.68]  and so I really haven't had much time um
+[74:02.88]  to watch TV shows. Uh I will say in the
+[74:05.84]  last couple weeks I watched a couple
+[74:07.36]  episodes. I'm actually a big anime guy
+[74:09.28]  and so uh I I watched a couple episodes.
+[74:11.52]  There's a new season of this anime
+[74:12.72]  called Jujutsu Kaisen uh that's out. Uh
+[74:15.68]  so season 3 of JJK. uh was was was
+[74:18.16]  really good. Um, in general, uh I'm a
+[74:21.36]  huge uh fan of uh Japanese anime. I
+[74:25.04]  think they create the most uh novel and
+[74:27.60]  unique uh plots uh and universes that uh
+[74:30.64]  western media has shied away from. Um
+[74:33.36]  and so uh generally a big fan of that
+[74:35.92]  but yeah it haven't really watched much
+[74:37.44]  but saw a couple episodes of JJK
+[74:39.12]  recently.
+[74:39.84]  >> Extremely understandable in your role.
+[74:42.16]  >> Yeah.
+[74:42.64]  >> Favorite product you recently discovered
+[74:44.08]  that you really love?
+[74:44.96]  >> Yeah. Okay. So, so, uh, so I recently,
+[74:47.20]  uh, had to set up Wi-Fi and like home
+[74:48.96]  networking, and I went all in on
+[74:51.36]  Ubiquiti, uh, routers, um, and C
+[74:54.16]  security cameras. I had never heard of
+[74:56.08]  it before. I had to do this. I always
+[74:57.68]  just had a very simple setup. Uh, and it
+[74:59.52]  is just such a well-built product. Uh, I
+[75:01.76]  don't know if you used it before, but
+[75:02.96]  it's basically like the Apple of like
+[75:05.28]  home networking. So, uh, beautiful
+[75:08.24]  products. Uh, but the thing that
+[75:10.16]  actually makes it extremely good is it
+[75:11.76]  software is good. Uh, and so they have a
+[75:13.60]  really great um, mobile app to help
+[75:16.08]  manage, you know, uh, all of the the
+[75:17.76]  home networking. Um, and so basically
+[75:20.40]  Ubiquity, you can use it to buy uh,
+[75:22.48]  wireless routers. Um, you need Ethernet
+[75:25.52]  uh, wiring throughout your house to use
+[75:26.80]  it. Um, but I actually think what makes
+[75:28.56]  it really good are security cameras. So,
+[75:30.24]  if you have security cameras that are
+[75:31.68]  plugged into the Ubiquiti ecosystem,
+[75:33.12]  they have an incredible mobile app. Uh,
+[75:35.36]  and Apple TV app and iPad app um to kind
+[75:38.00]  of see the live feed of your cameras and
+[75:40.24]  and so uh they're they're they're a
+[75:42.24]  little pricey, but not that pricey. Uh
+[75:44.24]  but it's been just an incredible product
+[75:46.00]  experience.
+[75:46.80]  >> All right, I went EO so I made a
+[75:48.72]  mistake. Good tip.
+[75:49.60]  >> EOS are pretty good, too. But, uh fully
+[75:52.24]  converted to Ubiquity at this point.
+[75:53.76]  >> Good tip. Okay, two more questions. Do
+[75:55.52]  you have a favorite life motto that you
+[75:57.04]  find yourself coming back to in work or
+[75:58.56]  in life?
+[75:59.92]  Yeah. Uh the one that I always, you
+[76:01.68]  know, repeat to myself is, uh, uh, never
+[76:03.76]  feel sorry for yourself. There's a lot
+[76:06.00]  of things that are going to happen, you
+[76:07.68]  know, uh, at work, uh, in life. Uh, and
+[76:11.28]  reminding yourself to never feel sorry
+[76:12.88]  and that you always have a sense of
+[76:14.08]  agency to kind of pull yourselves up is
+[76:16.24]  something that I've had to tell myself a
+[76:17.52]  lot and, um, also something that I
+[76:19.36]  repeat to to to to a lot of other folks
+[76:21.76]  as well. Last question. So, in your
+[76:24.08]  previous life, you worked at Open Door
+[76:25.92]  where you led work on basically figuring
+[76:28.00]  out how much to uh pay for houses. You
+[76:30.80]  basically built a model that told the
+[76:32.64]  company, "Here's how much we'll pay for
+[76:33.76]  this house." What's like a variable in
+[76:35.60]  the price of a house that you didn't
+[76:37.28]  expect is really important and impacts
+[76:39.04]  the price of a house? There's a bunch
+[76:40.88]  that were surprising. I'll I'll maybe
+[76:42.40]  list the the the the couple of mo most
+[76:45.36]  uh uh interesting ones. um power lines
+[76:49.28]  and like uh high voltage power lines
+[76:51.84]  like are super super uh actually impact
+[76:54.40]  your price quite a lot. I didn't really
+[76:56.40]  fully internalize this until I went to
+[76:58.08]  like Dallas and observe like when your
+[76:59.92]  house sits next to one of these giant
+[77:01.52]  like you know voltage lines is like
+[77:02.96]  buzzing and most people have families
+[77:04.80]  you don't want your kids kind of near
+[77:05.92]  there. Uh so I think that was one that
+[77:08.00]  really really uh kind of surprised me.
+[77:10.48]  >> That makes sense.
+[77:11.44]  >> Yeah. And then the other one which which
+[77:13.36]  was something that uh was always
+[77:14.80]  something really difficult for us to uh
+[77:17.68]  quantify uh was floor plans. Uh and so
+[77:21.12]  it is very important like yes of course
+[77:22.72]  it's really important but just like
+[77:24.96]  quantifying what a good floor plan is
+[77:26.56]  like and what a really bad floor plan is
+[77:28.32]  like we were doing all these things of
+[77:29.76]  like how wide is the kitchen and like is
+[77:32.08]  it a what style of kitchen is it and
+[77:33.92]  then like where's the master bedroom and
+[77:35.92]  and so it was just really really hard to
+[77:37.36]  quantify but I remember floor plan was a
+[77:39.28]  big one because like we'd have a home
+[77:40.40]  that like wouldn't sell and then our uh
+[77:42.24]  ops team would go in and be like yeah
+[77:43.60]  it's a floor plan issue so like how do
+[77:45.28]  you how could you tell it's like you go
+[77:46.40]  inside you just feel it it feels you
+[77:48.08]  know the floor plan feels
+[77:50.24]  Uh so yeah, th those are ones that were
+[77:52.88]  uh surprising. And then the last one
+[77:54.32]  that was more impactful than I thought
+[77:56.16]  is um general like curb appeal and like
+[77:59.04]  even like the front door. Uh and so I
+[78:01.12]  actually think there there's a Zillow
+[78:02.24]  book on on this where the front door
+[78:04.08]  replacement tends to be the highest ROI
+[78:06.48]  uh for homes. Um but just like the feel
+[78:08.96]  of like as you walk up to the home as a
+[78:12.00]  buyer, what you're interacting with and
+[78:14.08]  the first moments of the house, I think
+[78:15.60]  was uh I'd underrated its importance.
+[78:18.24]  That is extremely interesting. Uh, and I
+[78:19.84]  love that you had to figure figure how
+[78:21.60]  to do all this in code and not walk
+[78:25.04]  floor plans. I have a bunch of stories
+[78:26.08]  around like for floor plans there's like
+[78:28.08]  there's like uh it's not digitized. So
+[78:30.00]  there's like a handful of people who
+[78:31.12]  have like paper floor plans uh of like
+[78:33.36]  all these homes in like Phoenix and
+[78:34.72]  Dallas. Um yeah, a lot lot of fun fun
+[78:36.88]  stories from the open door days.
+[78:38.48]  >> Okay, Sherwin, uh thank you so much for
+[78:40.40]  doing this. This was incredible. Uh
+[78:42.00]  where can folks find you online and uh
+[78:43.52]  and how can listeners be useful to you?
+[78:45.20]  Yeah. So, I'm uh online on on Twitter on
+[78:47.60]  X. I'm just Sherwin Woo and uh yeah, I
+[78:50.96]  mostly just tweet about uh OpenAI and
+[78:52.80]  the API and some of the products that
+[78:54.16]  we're launching. Uh and then how folks
+[78:56.00]  can be uh can be useful to me. Uh I love
+[78:58.80]  hearing about things that people are
+[79:00.40]  building and so if you're working on a
+[79:01.92]  startup, if you're hacking on an idea,
+[79:04.08]  you know, would love to uh just reach
+[79:05.68]  out to me on X. Um I would love to hear
+[79:07.92]  about uh what you're building and and
+[79:10.00]  learn about how open I can help support
+[79:11.36]  you.
+[79:11.84]  >> Amazing. Sherwin, thank you so much for
+[79:13.52]  being here. Yeah. Thank you, Lenny.
+[79:15.12]  >> Bye, everyone. Thank you so much for
+[79:17.60]  listening. If you found this valuable,
+[79:19.28]  you can subscribe to the show on Apple
+[79:21.04]  Podcasts, Spotify, or your favorite
+[79:23.28]  podcast app. Also, please consider
+[79:25.60]  giving us a rating or leaving a review
+[79:27.68]  as that really helps other listeners
+[79:29.52]  find the podcast. You can find all past
+[79:31.76]  episodes or learn more about the show at
+[79:34.00]  lennispodcast.com.
+[79:36.16]  See you in the next episode.

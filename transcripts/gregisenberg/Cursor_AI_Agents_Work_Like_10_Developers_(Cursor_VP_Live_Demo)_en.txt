@@ -1,0 +1,844 @@
+Title     : Cursor AI Agents Work Like 10 Developers (Cursor VP Live Demo)
+Video ID  : 8QN23ZThdRY
+URL       : https://www.youtube.com/watch?v=8QN23ZThdRY
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 835
+Saved at  : 2026-06-21 02:04:52
+------------------------------------------------------------
+
+[00:00.40]  There's a way to use Cursor where you
+[00:02.24]  have AI agents working for you. AI
+[00:04.72]  agents that do your security, AI agents
+[00:07.12]  that do your bugs. If you're anything
+[00:08.80]  like me, you've tried Cursor, you've
+[00:10.80]  used Cursor, but you're not really
+[00:12.24]  getting the most out of it. So, I
+[00:13.84]  brought on Lee, who is from the Cursor
+[00:15.92]  team, to give us an in-depth tutorial
+[00:18.00]  with how to squeeze the most out of
+[00:20.56]  Cursor. This is for anyone who wants to
+[00:23.92]  use Cursor, get the most out of it, have
+[00:26.80]  those AI agents working for you. Enjoy
+[00:29.12]  the episode.
+[00:31.96]  [Music]
+[00:38.24]  >> All right, we got Lee on the pod from
+[00:40.48]  the cursor team. And Lee, what are we
+[00:43.60]  going to learn today?
+[00:44.96]  >> Yeah, I want to show some practical tips
+[00:46.96]  about how I use cursor, how the cursor
+[00:49.20]  team builds cursor with cursor, and
+[00:51.84]  hopefully things you can take back and
+[00:53.36]  apply to building your next app.
+[00:56.08]  And so if someone sticks to the end of
+[00:58.00]  this episode, what what what are they
+[01:00.40]  going to take away?
+[01:01.92]  >> My hope is I've been coding for 15 years
+[01:04.16]  and hopefully you can steal some of my
+[01:05.76]  tips for how I structure my apps, some
+[01:07.92]  of the rules and cursor configuration
+[01:09.84]  that I use to help you get more out of
+[01:11.92]  AI agents.
+[01:12.88]  >> Okay, great. Cuz I think a lot of the
+[01:14.56]  people listening, we've, you know, we've
+[01:16.56]  tried cursor. It's probably part of our
+[01:18.56]  workflow now, but we want to get the
+[01:21.12]  most out of it. You know, we want to we
+[01:23.04]  want to squeeze that juice. And so my
+[01:25.44]  hope today is that you're going to help
+[01:26.72]  us look, you know, teach us the tips
+[01:29.52]  from the inside of how to squeeze the
+[01:32.16]  most amount of juice out of Cursor
+[01:35.60]  specifically with these agents. Um, and
+[01:39.12]  and just, you know, help us avoid some
+[01:40.96]  pitfalls.
+[01:42.40]  >> Absolutely. Let's do it.
+[01:44.08]  >> All right, let's rock.
+[01:45.52]  >> Sweet. Okay, let me share my screen.
+[01:49.60]  All right, so the first thing I want to
+[01:50.88]  show is using agents. Now, the view I'm
+[01:54.64]  showing right now is something we're
+[01:56.16]  kind of cooking up and will be released
+[01:57.76]  soon, but it's basically exactly the
+[01:59.84]  same as pulling up the agent sidebar on
+[02:01.68]  the right. The reason I wanted to show
+[02:03.28]  this is because it's easy to see all of
+[02:05.28]  the different agents that I ran. So,
+[02:06.80]  yesterday I'm building a real app
+[02:08.80]  working on a new course platform and
+[02:11.12]  documentation site for Cursor. And if
+[02:13.36]  you look on the left, I fired off about
+[02:16.32]  20 different agents,
+[02:18.72]  20 different conversations over the day.
+[02:20.96]  Actually, I was coding at midnight last
+[02:22.72]  night. So, there's a few up here at the
+[02:24.56]  top that leaked into today. And I want
+[02:27.44]  to just talk through some of the common
+[02:28.72]  patterns I used here to get the most out
+[02:30.48]  of agents in this codebase. So, let me
+[02:32.72]  just um maybe I'll I'll pick on a few of
+[02:35.76]  these and we'll see there's one that's
+[02:37.84]  interesting. Maybe uh this event
+[02:40.32]  tracking one. So, I asked it to add
+[02:43.68]  event tracking when uh the add to cursor
+[02:46.80]  button for an MCP was clicked. And
+[02:49.44]  you're going to notice that it goes
+[02:51.12]  through, it thinks a little bit, and
+[02:52.80]  then it finds that there's no llinter
+[02:54.72]  errors. So I've taken some measures
+[02:56.64]  ahead of time to make sure that the
+[02:58.64]  agent can basically fix its own outputs
+[03:01.04]  inside of this codebase, which I can
+[03:02.48]  show in a second. I'm using TypeScript.
+[03:04.56]  I have a llinter setup. I have
+[03:06.08]  formatting set up. I have tests and all
+[03:08.88]  of those things. The agent can read its
+[03:10.64]  own outputs and then just self-correct
+[03:12.88]  and fix itself without me having to do
+[03:14.80]  anything. So I just say, "Go do this
+[03:16.88]  task." Notice it's it's not really that
+[03:18.64]  complex of a prompt. I just said very
+[03:20.56]  directly, here's what you need to do.
+[03:22.40]  And then we can look and yeah, it did a
+[03:25.04]  pretty decent job of what I wanted it to
+[03:26.72]  do. Now, you notice I got 20 different
+[03:30.24]  conversations. Most of these are what,
+[03:32.24]  30 line changes, 75 line changes, 45
+[03:35.12]  line changes. It's important that you're
+[03:37.12]  making new chats or new conversations
+[03:39.12]  for each kind of discrete task because
+[03:41.92]  every single time you're giving context
+[03:43.60]  to the model. You can see here it was
+[03:45.76]  about 17% of the context window. This is
+[03:48.16]  like kind of like the maximum working
+[03:50.32]  memory that the AI agent can keep in its
+[03:52.72]  brain. So you don't want to clog that
+[03:54.48]  up. If you talk to me for 30 minutes,
+[03:56.08]  you're probably going to forget
+[03:56.88]  something that I said at the beginning
+[03:58.08]  of the 30-minute conversation. So for
+[04:00.00]  each new task to get the best quality
+[04:02.24]  out of working with the model, you can
+[04:03.76]  just start new chats for each thing that
+[04:06.00]  you want to do. So when you look through
+[04:07.68]  here, like it's not that I'm doing super
+[04:09.92]  complex detailed prompts. I'm kind of
+[04:12.24]  just asking like, hey, looks like there
+[04:13.92]  was some layout shift on this video.
+[04:16.08]  Let's fix this script that I have. You
+[04:18.56]  know, let's replace this uh prompt here.
+[04:21.28]  We want to just remove this custom
+[04:22.64]  component. Remove this file. we got this
+[04:25.44]  error in the editor and we said um could
+[04:28.56]  not find the file declaration for this
+[04:30.64]  module and I needed I needed to resolve
+[04:33.04]  how that worked and it went and said
+[04:34.40]  okay you need to add this type in your
+[04:36.16]  file. So really the prompts are not too
+[04:40.32]  detailed but what you'll notice that I
+[04:42.16]  do is that I explicitly tag in files
+[04:45.36]  when I want to pull them into the
+[04:46.80]  context. I want to stuff them in the
+[04:48.80]  agent's brain. So, when I said when you
+[04:51.28]  go to a new item in our kind of left
+[04:53.60]  sidebar that has all the different links
+[04:55.36]  in our course, our documentation site,
+[04:57.84]  uh, it should reset the filter input and
+[05:00.16]  reset the sidebar outline to the
+[05:02.16]  starting state. And so, I'm just very
+[05:04.40]  directly telling it what it should be
+[05:06.08]  doing. And it goes through, it thinks,
+[05:08.40]  it reads the files, it makes some
+[05:10.40]  changes, and then again, it reads the
+[05:11.92]  llinter outputs and it says, "Okay, the
+[05:14.00]  changes that the agent made are correct.
+[05:16.24]  We we've got the right code. We know
+[05:17.84]  that it's passed all the checks and
+[05:19.12]  balances.
+[05:23.12]  >> If you like if you and this is this is
+[05:25.60]  actually a broader question like if
+[05:26.80]  you've never if you're not a developer
+[05:29.12]  like should you even use this?
+[05:33.04]  >> Should you even use uh cursor or
+[05:35.36]  llinters or
+[05:36.88]  >> both?
+[05:37.84]  >> Yeah. If you're not a developer, there's
+[05:39.76]  kind of a spectrum of
+[05:42.32]  I don't want to look at the code, right?
+[05:45.36]  or I'm interested in just kind of
+[05:46.96]  building an app and I do want to take
+[05:48.96]  over the code and actually start to
+[05:50.48]  learn what it means to build products,
+[05:52.96]  build software. There's a growing number
+[05:54.88]  of tools I think that are making it
+[05:56.48]  easier for people who never really want
+[05:58.00]  to look at the code to build software.
+[06:00.00]  And I think that that will exist and
+[06:01.60]  grow and people will do that. But from
+[06:03.68]  what I've seen, you kind of reach a
+[06:04.96]  point where eventually you kind of have
+[06:07.20]  to look at the code and and it's going
+[06:09.44]  to make your life a lot easier as you
+[06:10.88]  start to figure out how the code works.
+[06:13.36]  You don't need to be an expert. Um, but
+[06:16.00]  you can start to kind of tune those
+[06:18.00]  skills and it gives you a superpower
+[06:19.76]  that previously was just a little bit
+[06:21.52]  harder to do. It's like you peeled back
+[06:23.44]  the layers of the abstraction to the
+[06:25.28]  code. The code is the source of truth
+[06:26.96]  and now you can just do whatever you
+[06:28.88]  want.
+[06:29.92]  >> Yeah. It's kind of like looking under
+[06:31.68]  the hood of the car.
+[06:33.20]  >> 100% works, right?
+[06:34.64]  >> The the analogy I like to give is in the
+[06:37.84]  future
+[06:39.52]  there will always be people who love
+[06:41.36]  their cars. you know, they go buy
+[06:43.04]  different parts and they pull up the
+[06:44.48]  engine and they tweak all of the
+[06:46.08]  different, you know, they buy parts
+[06:47.68]  online and they change everything about
+[06:48.96]  their engine setup or the exhaust or
+[06:50.48]  whatever. And then there's the millions
+[06:52.00]  and millions of people who just drive
+[06:53.36]  cars. And like both are are legit and
+[06:56.08]  valid and fine. There's going to be a
+[06:57.52]  ton of people who build software and can
+[06:59.92]  build products. And then there's also
+[07:01.44]  going to be people who, you know,
+[07:03.12]  arteasally write code by hand every day
+[07:05.44]  and don't use AI and that's the thing
+[07:07.20]  that they love. And that's also valid. I
+[07:09.20]  think both will coexist. Real quick, I
+[07:12.00]  need to tell you about something that's
+[07:14.08]  helping me sleep better at night as an
+[07:17.36]  entrepreneur. I was running multiple
+[07:19.84]  companies with money scattered
+[07:21.76]  everywhere. Zero spending visibility and
+[07:24.96]  making growth decisions pretty blind. I
+[07:28.08]  knew there had to be a better way. And
+[07:30.00]  my friend told me about Bracks. So, I
+[07:32.80]  switched and now I have mission control
+[07:36.08]  for every dollar. spend management and
+[07:38.80]  visibility, virtual cards for my team,
+[07:41.92]  and earning cash from the same day
+[07:44.80]  treasury product. I was leaving so much
+[07:47.52]  money on the table, but not anymore. I
+[07:50.72]  have a financial operating system for
+[07:53.12]  our businesses to make decisions so I
+[07:56.08]  can spend smarter and move faster. And
+[07:59.20]  it's been a total gamecher.
+[08:01.84]  I'm loving Brex so much. I reached out
+[08:05.12]  to them and asked them to sponsor the
+[08:07.20]  pod. Start sleeping better. Your
+[08:09.84]  financial OS is waiting. Brex is giving
+[08:13.20]  SIP listeners $7,500
+[08:16.64]  in perks at brex.com/sip.
+[08:21.92]  Cool. Um, okay. I took some notes on
+[08:24.08]  this. What else? What else do we need to
+[08:25.76]  learn?
+[08:26.40]  >> Yeah, I want to show uh a different
+[08:29.04]  screen. So going back to the normal kind
+[08:32.32]  of cursor window window that most of you
+[08:34.40]  are familiar with. I have a few rules
+[08:36.64]  and commands set up that are helpful in
+[08:39.04]  my project. So this one I'm writing a
+[08:42.08]  lot of content here like docs and
+[08:43.92]  educational material. And I've kind of
+[08:45.52]  built this mega prompt of everything
+[08:48.72]  that I like about writing. And there's
+[08:51.68]  some things on voice and tone. There's
+[08:53.36]  some things on, you know, being
+[08:55.28]  specific. But then I also just built
+[08:57.20]  this list of banned words. And I'm I'm
+[08:59.68]  sure I've cribbed some of these from
+[09:01.20]  different places online or books that
+[09:02.72]  I've read, but I've just tried to like
+[09:05.12]  delete the like marketing speak out of
+[09:08.08]  people's brains. So like missionritical,
+[09:10.48]  like performant, uh, seamless, like some
+[09:14.08]  of these things are fine and all rules
+[09:15.52]  can be broken, right? But this is just a
+[09:17.60]  helpful list of me trying to delete some
+[09:20.08]  of these overused words or overused
+[09:22.40]  phrases. And my most recent addition
+[09:24.80]  here is also trying to catalog some of
+[09:27.20]  the LLM patterns like the junk that it
+[09:29.60]  spits out. Like this is the most recent
+[09:31.60]  one I've seen people talking about like
+[09:33.12]  it's not just X, it's Y. And like once
+[09:36.72]  you see it, you can't unsee it where the
+[09:38.96]  LLMs all generate the same style of
+[09:41.36]  writing. So, uh, this has been helpful
+[09:43.76]  for me as kind of just a quick pass when
+[09:45.68]  I'm writing something. It's like, hey,
+[09:47.12]  am I am I making sure that I'm not doing
+[09:48.80]  anything, you know, completely robot
+[09:51.28]  sounding?
+[09:52.88]  >> Yeah, this is really smart. I've I
+[09:55.28]  should do this because I do a lot of
+[09:56.64]  writing. Um, and I do this manually
+[10:00.48]  right now. So, the fact that this can
+[10:02.00]  just be, you know, somewhat automated is
+[10:03.84]  really big. Beyond writing, what are
+[10:06.16]  other, you know, common use cases that
+[10:08.64]  you can, you know, use rules for?
+[10:10.56]  >> Yeah. Yeah. I'm happy to send you this
+[10:11.84]  prompt. By the way, another one is
+[10:13.52]  custom commands. So, this is a little
+[10:16.40]  bit more of a detailed command for
+[10:17.92]  things that I like to do when I'm
+[10:19.60]  reviewing code. So, if you're if you're
+[10:21.44]  newer to coding, some of these things
+[10:22.64]  might seem a little overwhelming, but
+[10:24.40]  you could kind of dial this up or dial
+[10:25.92]  this down. The idea holds true, though,
+[10:28.08]  which is that you have the agent, and
+[10:30.48]  inside of here now, I can run slashcode
+[10:33.20]  review. So, I've got this slash command,
+[10:35.04]  and that slash command is just driven by
+[10:37.68]  this file, this markdown file. We can
+[10:39.68]  make whatever we want. We could do code
+[10:41.28]  review, security review, um, vibe check,
+[10:44.24]  like we could we could do whatever we
+[10:45.60]  want here. And inside of my code review
+[10:48.00]  custom command here, it's just little
+[10:50.56]  gotchas that have kind of bit me in the
+[10:52.40]  past. Like, hey, did you think about
+[10:53.92]  what would happen when there's no
+[10:55.44]  internet? Did you think about what would
+[10:57.20]  happen when the application is loading
+[10:59.76]  information? Did you handle that with
+[11:01.20]  like a nice loading spinner? Did you did
+[11:03.60]  you write good tests? Did you write like
+[11:06.72]  smaller number of tests that are really
+[11:08.24]  good versus just spamming a bunch of
+[11:09.76]  garbage? Did you change the
+[11:12.00]  authentication? If you did, you might
+[11:14.08]  want to run and do a security review. Uh
+[11:16.48]  did you have, you know, places where we
+[11:18.96]  might want to speed things up with
+[11:20.16]  caching like some of these more advanced
+[11:22.32]  um software engineering terms and
+[11:24.56]  concepts? And just building these own
+[11:27.36]  kind of customized commands and
+[11:29.52]  customized prompts for your use case has
+[11:31.52]  been very helpful for me as well. Yeah,
+[11:33.76]  I'd imagine in the future, you don't
+[11:35.92]  have to quote me on this. Um, in the
+[11:37.92]  future, you would think that a lot of
+[11:39.36]  these like agents, so to speak, would
+[11:41.20]  come like stock with cursor.
+[11:44.08]  >> Yes.
+[11:44.48]  >> Um, because so many projects require
+[11:48.24]  >> require this.
+[11:49.44]  >> Yeah. This is a good time I can show you
+[11:51.52]  a couple other things which is one of
+[11:53.52]  these kind of code review bots. We used
+[11:56.16]  it so much internally just cursor
+[11:57.84]  building cursor for almost a year that
+[12:00.48]  we decided to actually turn it into a
+[12:02.08]  product and it's called bugbot and it
+[12:04.48]  allows you to do essentially what we
+[12:06.32]  just talked about. The code review
+[12:07.84]  prompt that I had was more of kind of my
+[12:09.84]  own preference, not just kind of finding
+[12:11.84]  bugs. But we have uh another one called
+[12:14.88]  bugbot, which just to give the context
+[12:18.00]  of this repo, I've got a docs repo for
+[12:20.40]  for cursor. Uh I wanted to add some docs
+[12:23.76]  about extensions. So I actually kicked
+[12:25.76]  this off with an agent and if I want to
+[12:28.40]  make any follow-up changes, I can just
+[12:30.00]  tag at cursor on GitHub and it will just
+[12:32.24]  go make the changes for me. But then I
+[12:34.88]  got this comment from Bugbot and Bugbot
+[12:38.40]  from Cursor was like, "Hey, by the way,
+[12:39.92]  I think you missed some of the other
+[12:41.84]  languages." So we have our docs
+[12:43.44]  internationalized to a bunch of
+[12:44.80]  different languages and I was like, "You
+[12:46.48]  missed you missed a few, bro." So I need
+[12:49.04]  to go through and pick some of those
+[12:50.32]  things. So this is the built-in code
+[12:52.24]  review bot basically, which you can make
+[12:54.32]  one uh you can make some that are
+[12:56.08]  custom. So with our CLI, which I can
+[12:58.40]  show in a second, you can run the CLI in
+[13:01.68]  your GitHub actions or whatever your
+[13:04.24]  deployment uh platform of choice, your
+[13:06.00]  CI platform of choice is. So this one,
+[13:07.84]  for example, you could audit your
+[13:09.84]  repository for security vulnerabilities
+[13:12.24]  and you just dump the CLI
+[13:15.92]  into this CI script and you can run the
+[13:19.68]  cursor agent. So the agent that I just
+[13:21.36]  showed that was in the cursor editor,
+[13:23.92]  the guey, you can run it headlessly. You
+[13:26.24]  can run it just behind the scenes
+[13:27.52]  through the CLI. It's the same the same
+[13:29.36]  logic, the same idea, the same power,
+[13:31.84]  but now I'm giving this prompt and I'm
+[13:33.92]  running it basically in automation and I
+[13:36.24]  can just automate away and do whatever I
+[13:37.68]  want. So you could automatically update
+[13:40.08]  your docs every time somebody on the
+[13:41.52]  team merges a PR. You could
+[13:43.28]  automatically fix things and push
+[13:45.44]  commits back to your branch if the CI
+[13:48.72]  fails. So if your test failed or
+[13:50.40]  something else fails. And this is just
+[13:52.16]  like a few of the ideas. There's so many
+[13:54.40]  different things you can do with this
+[13:55.68]  where you can have complete control and
+[13:57.28]  automation over what you're doing. And
+[13:59.28]  another thing I wanted to show is uh
+[14:01.12]  here was another example of where I used
+[14:03.52]  an agent to kick off a PR and I actually
+[14:06.00]  went ahead and included the screenshot
+[14:07.68]  down below. I got a report on X that
+[14:10.96]  this button didn't work. So I'm in Slack
+[14:13.28]  and I just kind of pasted in what they
+[14:15.28]  said and then I said at cursor here's
+[14:17.68]  the repo. Investigate this bug and fix
+[14:20.00]  it. And then it comes back and it says,
+[14:22.40]  "Okay, here's the fix." I go out to the
+[14:24.80]  PR. I look at the code. I go test it.
+[14:27.52]  I'm like, "Yeah, seems good." And it
+[14:29.44]  just saved me so much time. I didn't
+[14:31.44]  have to go open up the editor. I just
+[14:33.04]  kicked it off from Slack on my phone. It
+[14:35.44]  was amazing.
+[14:36.64]  >> Yeah. Like to first of all, I I actually
+[14:38.64]  had no idea this existed. I don't know
+[14:40.80]  if this is new or not. Um but this idea
+[14:44.16]  like this is this is cool because this
+[14:46.08]  is about a lot of people are vibe
+[14:47.92]  coding, a lot of people are prototyping
+[14:49.52]  but you know prototypes are cool but we
+[14:52.08]  you know we want to create people
+[14:53.52]  listening to this want to create
+[14:54.64]  production ready code and a big part of
+[14:56.72]  that is
+[14:58.00]  >> um you know software that scale software
+[14:59.92]  that's secure um being quick on you know
+[15:02.80]  when you do have customers being quick
+[15:04.40]  on fixing bugs. So I think
+[15:07.20]  >> what's cool about this is it um it gets
+[15:10.16]  us closer to there. It gets us there.
+[15:12.32]  >> Yeah. And the idea is basically that
+[15:14.08]  same cursor agent you can use in the
+[15:16.56]  editor, you can use it from Slack, you
+[15:18.72]  can use it uh from the web. So if you go
+[15:21.12]  to cursor.com/agents,
+[15:23.04]  same idea. I can just go here and kick
+[15:25.20]  off prompts and they can run in the
+[15:27.04]  cloud. So they run in this secure
+[15:29.04]  virtual sandbox. In the same way I can
+[15:31.12]  do it in the editor when I have local
+[15:32.64]  files on my machine. So I'm on the go.
+[15:34.88]  I'm like in the car and I can just go to
+[15:36.72]  curs.com/ aents and kick things off.
+[15:38.80]  Similar to other of the like vibe coding
+[15:40.64]  prototyping tools. Similar idea here
+[15:43.04]  where I can integrate with all of our
+[15:44.96]  kind of production repos and just fix
+[15:46.88]  little things like this like typo
+[15:48.72]  changes, docs issues, the padding's
+[15:51.36]  wrong. I want to change the color. Like
+[15:52.96]  little things like that to your point
+[15:55.20]  really helps with having great customer
+[15:57.76]  service and being able to turn around
+[15:59.20]  bug fixes super super fast. I can try to
+[16:01.92]  find and pull up um the the tweet from
+[16:04.80]  Linear, but Linear has this amazing
+[16:06.64]  policy where Oh, here it is. They have
+[16:09.12]  this amazing policy where they have a
+[16:11.36]  zero bug policy and they use cursor. If
+[16:15.84]  you look, this is inside of linear.
+[16:17.28]  Let's see if I can make this a little
+[16:18.16]  bigger. Oh, maybe not. Well, uh PM
+[16:21.12]  reports a bug. The AI categorizes it.
+[16:24.32]  The engineer who's triaging just tells
+[16:26.56]  cursor, "Hey, investigate this and fix
+[16:28.64]  it." It opens up the PR, they fix it,
+[16:32.00]  and they accept the change, and they
+[16:33.84]  just turn this around just incredibly
+[16:36.08]  fast for basically any issue that gets
+[16:37.76]  reported. And I think a lot of teams are
+[16:39.76]  going to start operating in this way.
+[16:41.20]  This isn't going to solve like it's not
+[16:42.80]  going to say just build me a billion
+[16:44.16]  dollar SAS, make no mistakes, but this
+[16:46.16]  is like bugs, small things, you know,
+[16:48.64]  little things, the the drudge work of
+[16:50.48]  building software. Well, I also think
+[16:52.64]  that, you know, if I'm, you know, if I'm
+[16:54.64]  a customer and I'm on a I'm on Linear's
+[16:56.64]  website and I see that, you know, Linear
+[16:58.80]  has a zero bug policy and I'm, you know,
+[17:01.36]  comparing Jira to Linear and I see
+[17:03.52]  zerobug policy, I might be more likely
+[17:06.24]  to buy the software that says that
+[17:09.28]  >> 100%.
+[17:10.32]  >> So, there's like real value, right? Like
+[17:12.16]  there's real like positioning and
+[17:14.00]  marketing value when you when you
+[17:15.68]  actually say something like that, which
+[17:17.36]  is huge, alpha,
+[17:18.48]  >> a million%. And the last thing I'll just
+[17:20.72]  show quickly is like I mentioned, we
+[17:23.04]  have the headless way you can use cursor
+[17:25.12]  agent. You can also use this in the CLI.
+[17:27.68]  If you're the type of person who prefers
+[17:29.84]  like Vim or you prefer Jet Brains or you
+[17:32.72]  prefer other editors or maybe you just
+[17:35.12]  really like the terminal, I think more
+[17:37.04]  advanced engineers love this stuff. So I
+[17:39.12]  could say in here like let's add uh end
+[17:42.88]  to end test with whatever tool you want.
+[17:45.92]  I could just say playright or you could
+[17:47.44]  just not even say what tool. uh for
+[17:49.76]  testing
+[17:51.84]  submitting prompts in the chat. Sure.
+[17:55.76]  And it's it's the same idea, right? It's
+[17:57.76]  it it looks similar, it feels similar.
+[17:59.68]  It it has the ability to work with
+[18:01.76]  basically any AI model, call different
+[18:04.24]  tools, which are essentially like
+[18:05.92]  skills. So you you give the model skills
+[18:08.64]  to go read files, write files, search
+[18:10.40]  your codebase, look up things on the
+[18:12.00]  web. It's like you're training it with
+[18:13.60]  all these skills and then it can go and
+[18:15.68]  make changes. uh you give it this kind
+[18:17.84]  of ambiguous or maybe not ambiguous but
+[18:20.24]  this broad task like just go add tests
+[18:22.64]  make it good make it make it great and
+[18:24.56]  it can go and kind of figure out what
+[18:25.92]  you want to do it can run terminal
+[18:27.60]  commands it says hey what do you want to
+[18:29.44]  do you want to allow kind of installing
+[18:31.52]  things I'm just going to put it on yolo
+[18:33.44]  mode run all commands great just do
+[18:36.56]  whatever you want that's fine this is
+[18:38.16]  like full vibe um and it can manage the
+[18:40.48]  to-dos it's going to go install the
+[18:42.08]  dependencies set up the configuration
+[18:43.84]  file so very similar thing here with
+[18:46.56]  what I was showing kind of in the the
+[18:48.96]  visual editor.
+[18:50.88]  >> This is cool. This is very cool. I mean,
+[18:52.48]  I personally
+[18:54.40]  >> I'm I'm not super advanced. So,
+[18:56.24]  personally, this is like a bit a little
+[18:58.80]  bit It's cool to see, but a little bit
+[19:00.56]  daunting to me personally.
+[19:02.40]  >> Yeah, I feel that.
+[19:03.04]  >> Um, but like I know that there's, you
+[19:06.08]  know, I'll call them real developers
+[19:07.92]  like see, you know, who who do feel more
+[19:10.24]  comfortable in an environment like that.
+[19:12.40]  Yeah, it's I personally do not daily
+[19:15.04]  code with a CLI. I I like being able to
+[19:18.88]  stop and review the code in the editor,
+[19:21.20]  kind of click through the files. That's
+[19:22.96]  just the way I've built software forever
+[19:24.64]  and it still clicks with my brain, but
+[19:27.28]  some people definitely enjoy that way
+[19:28.88]  for sure.
+[19:29.76]  >> Before we head out, is there anything
+[19:32.08]  we're missing around if someone is going
+[19:34.00]  to use cursor today, you know, how how
+[19:36.96]  can they get the most out of it? I think
+[19:38.88]  that for a lot of people they have this
+[19:40.96]  tendency to make their conversation this
+[19:44.88]  append only they just continue in one
+[19:47.52]  chat forever and I don't think they
+[19:50.16]  realize I noticed this with a lot of
+[19:51.84]  people getting started people who are
+[19:53.28]  just kind of graduating from vibe coding
+[19:55.12]  into building a real production app and
+[19:57.28]  they're like it was great at first but
+[19:59.84]  then it got bad and they're trying to
+[20:01.60]  figure out like why why did it get bad
+[20:03.52]  did it get bad because there's just a
+[20:05.76]  lot more code now did they secretly make
+[20:07.68]  the model's worse? Is there some
+[20:09.28]  conspiracy? And almost always when I
+[20:11.52]  work with uh people and and try to debug
+[20:13.84]  what went wrong, they're just trying to
+[20:16.32]  give the model way too much stuff. So
+[20:18.56]  like I mentioned with that context
+[20:19.68]  window, if it gets up to 100% cursor can
+[20:22.32]  automatically summarize and and keep
+[20:24.00]  going, but you you don't really actually
+[20:26.16]  want to do that because as you if you
+[20:28.16]  get to like 80 or 90%, it's just very
+[20:30.88]  likely that there's so much junk in
+[20:32.72]  there, so much context that the model
+[20:35.28]  can get confused. And there's actually
+[20:37.04]  been some early research that has shown
+[20:39.12]  uh in long context tasks, especially
+[20:41.52]  with models that can have a million
+[20:42.88]  tokens of context or just a ton of
+[20:44.64]  stuff. You don't really want to be kind
+[20:46.56]  of running that as your daily way of
+[20:48.40]  coding where it's like ah just give it
+[20:50.00]  500,000 tokens of context. It just gets
+[20:52.32]  really confused and they they have
+[20:54.48]  measured this kind of quality drop off
+[20:56.80]  as you get further and further up that
+[20:59.28]  uh chain. So I would just be very
+[21:00.72]  mindful about how much context you're
+[21:02.56]  providing and for new tasks for new
+[21:04.64]  features start a new chat you know start
+[21:06.96]  a new window and kind of start from
+[21:08.64]  scratch again.
+[21:09.60]  >> What's the craziest thing you've seen
+[21:11.28]  built with cursor? Like in terms of
+[21:13.28]  software you know I've seen some tweets
+[21:15.28]  people being like oh people using curs
+[21:17.44]  you know platforms like cursor they can
+[21:19.12]  only build you know little software
+[21:20.56]  apps. Is that true or can can you build
+[21:23.36]  you know some serious software apps?
+[21:25.44]  Yeah, I think a few that have been fun
+[21:28.08]  for me. One is is seeing the new
+[21:33.28]  generation of people who can just build
+[21:35.60]  software now that previously wouldn't
+[21:37.20]  have been able to do that and see what
+[21:38.96]  they come up with that is just
+[21:40.16]  completely it's it's not what I would
+[21:42.80]  have ever imagined. So, we did a meet up
+[21:44.88]  a couple days ago and a few people
+[21:47.60]  brought their parents, their parents
+[21:49.52]  brought their kids to the meetups and
+[21:51.28]  there was a six-year-old kid coding with
+[21:54.16]  cursor which is just mind-blowing to me.
+[21:55.68]  I was stacking Legos and like sucking on
+[21:57.68]  my thumb or something when I was 6 years
+[21:59.36]  old. I don't know. And like six-year-old
+[22:02.32]  like building with AI is just amazing.
+[22:05.04]  Um, so that's one thing. The other thing
+[22:06.64]  that I've seen that's amazing when the
+[22:09.36]  marginal cost of writing software is
+[22:11.28]  zero, when coding is easy, when coding
+[22:14.40]  you can just generate a bunch of code,
+[22:16.40]  there are certain types of things you
+[22:18.00]  can build that previously you would just
+[22:19.60]  never do that. A great example is very
+[22:22.80]  very detailed and thorough debugging
+[22:25.44]  tools. So you run into a problem in your
+[22:27.76]  app and sure you can like add some
+[22:30.32]  logging. You can try to step through all
+[22:32.00]  of the editor things or you can ask the
+[22:35.04]  AI to write a complete visual interface
+[22:38.40]  for you to debug and figure out what the
+[22:40.24]  heck is going wrong. Now, this doesn't
+[22:41.84]  make sense for every single issue that
+[22:43.60]  you run into, but I've now seen a couple
+[22:45.60]  instances where people built these like
+[22:47.76]  custom heads up displays where they
+[22:50.16]  could step through what was going on the
+[22:51.68]  application or they built this like side
+[22:54.08]  byside AB test thing where they were
+[22:56.24]  migrating from app A to app B and they
+[22:59.12]  could like review each change along the
+[23:00.64]  way. You would never build custom
+[23:02.32]  software for that in the P. Like it it's
+[23:04.00]  throwaway. You would use it once and
+[23:05.60]  then be done with it. But when writing
+[23:07.84]  code isn't the hard part, it's like,
+[23:09.52]  well, heck yeah, I want a visual guey to
+[23:11.76]  watch this migration. That sounds
+[23:13.28]  awesome.
+[23:14.32]  >> Totally. And I also think I mean this
+[23:16.40]  whole era of they call it personal
+[23:18.00]  software, right?
+[23:18.80]  >> Yeah.
+[23:19.44]  >> So, you know, this idea that yeah, you
+[23:22.08]  might just want to create this
+[23:23.12]  disposable piece of software for this
+[23:25.12]  one use case and and it makes your life
+[23:27.76]  easier so you're doing it. Um, there's
+[23:29.68]  also this idea that there's there's
+[23:31.76]  probably a really big business to be
+[23:33.20]  created in creating personal software
+[23:35.44]  for companies too, right? Like a lot of
+[23:37.44]  people listen to this show, startup
+[23:39.36]  ideas podcast, so a lot of people here
+[23:41.36]  have ideas and
+[23:44.00]  >> you know I I think that if you're trying
+[23:46.64]  to, you know, one of the the simplest
+[23:48.64]  businesses to start is go and just use
+[23:51.36]  cursor and build personal software for
+[23:53.28]  for some vertical. You know, is it
+[23:55.76]  healthcare companies? Is it fintech
+[23:58.08]  companies? Is it, you know, boring
+[24:00.48]  businesses? I think that there's a huge
+[24:02.16]  opportunity there.
+[24:03.28]  >> Yeah. Quick plug. I actually wrote a
+[24:04.80]  blog post about personal software.
+[24:06.32]  Robb.com/personal software that talks a
+[24:08.24]  little bit about this. It's super
+[24:10.08]  inspiring and exciting for me. Like this
+[24:11.92]  whole era of people being able to just
+[24:13.68]  build things that they want. I've seen
+[24:15.92]  so many people build amazing things in
+[24:18.32]  this way. And you mentioned that uh you
+[24:20.56]  were talking with Logan about Nano
+[24:22.24]  Banana from Google. And I've seen people
+[24:25.76]  talking on X recently about the
+[24:29.04]  capabilities of that model are so good
+[24:31.36]  you can just go into cursor and build a
+[24:33.60]  vertical of some AI generation image
+[24:36.56]  generation app that is going to be 10
+[24:39.12]  times better than anything else that
+[24:40.64]  exists. So removing backgrounds or
+[24:42.96]  trying on clothes or architecture like
+[24:46.00]  before and after photos like things that
+[24:48.08]  people who haven't caught up to the
+[24:49.60]  speed of technology, they haven't seen
+[24:51.28]  the latest versions of the models are
+[24:53.28]  like, "Wow, how the heck did they build
+[24:55.44]  this? This must have taken so much
+[24:57.44]  work." And in reality, it's like it's
+[24:58.88]  just a model call now. And you're making
+[25:00.88]  it accessible to hundreds of millions
+[25:03.28]  more people basically.
+[25:04.48]  >> Have you seen Peter Levelvel's tweets
+[25:06.08]  over the last 24 hours about Nana
+[25:08.08]  Banana? He's like,
+[25:09.28]  >> "Yeah,
+[25:10.40]  >> his his mind is blown of how good it is,
+[25:13.52]  right?" So, and he, you know, can you
+[25:15.68]  actually pull up his his axe account?
+[25:17.68]  >> Yeah, I'm pretty sure I saw what you're
+[25:19.20]  talking about. He was he was dropping
+[25:21.12]  some uh amazing knowledge for people
+[25:23.76]  just like the thing I love that he does
+[25:25.76]  is I think he inspires a lot of people
+[25:28.24]  to just think bigger and really try to
+[25:31.12]  say you could also be a entrepreneur.
+[25:33.52]  You could also just build these amazing
+[25:35.12]  things.
+[25:36.00]  >> Yeah. I think he just he he saw what you
+[25:39.36]  know obviously he's been in the space
+[25:40.48]  for a while cuz he's he's been building
+[25:42.08]  photo AI. Um so he's been playing with
+[25:45.20]  the models and I think he said it's you
+[25:46.88]  know Oh my god.
+[25:48.72]  >> Show us what's inside Area 51. That's
+[25:50.56]  another use case.
+[25:52.64]  >> No, it's true.
+[25:54.96]  >> Yeah, he had one about um
+[25:58.16]  >> Oh, this is a good one. If you're not
+[25:59.68]  building a mini startup with Nano Bonano
+[26:01.60]  today and launching it tomorrow, you're
+[26:03.12]  missing the opportunity of a lifetime.
+[26:05.28]  This image model just made hundreds of
+[26:07.20]  new startups and apps possible. Your
+[26:09.36]  only limit is creativity and how fast
+[26:11.28]  you can ship. So true. Like that's
+[26:13.84]  banger advice,
+[26:16.00]  >> right? So I think like your point is
+[26:17.92]  with cursor
+[26:20.56]  uh you just call the model like go and I
+[26:23.12]  mean you have to come up with a good
+[26:24.40]  idea, right? Yeah. Um and you have to
+[26:26.80]  have some distribution or understand how
+[26:28.56]  to get distribution.
+[26:31.04]  But there's this like window right now
+[26:33.68]  to create software with this model.
+[26:35.60]  >> Yeah. Like imagine this in an app form.
+[26:38.88]  It's like a you can drag the map around
+[26:40.88]  on the web and then you can like turn it
+[26:42.88]  into exactly this fancy um image that
+[26:45.60]  you want to see. And then maybe on this
+[26:47.60]  image there's different button filters.
+[26:49.44]  You can apply different styles. Like
+[26:51.52]  maybe there's a a slider that slides it
+[26:54.88]  throughout history. So you you do the
+[26:57.20]  arrow pointing at San Francisco like
+[26:59.28]  downtown on the Embaradero and then you
+[27:01.52]  can slide it from 1930 all the way to
+[27:04.72]  2020. And you know back in the day on
+[27:07.12]  the Embaradero there was the like over
+[27:09.60]  before I think it was the earthquake or
+[27:11.12]  something there used to be a like above
+[27:13.68]  ground train I think or and that was all
+[27:16.88]  along the Embaradero. So you would see
+[27:18.48]  that and then you would see it go away
+[27:19.92]  and the models are going to know about
+[27:21.36]  that like that would be that would be
+[27:22.96]  really cool.
+[27:24.08]  >> The other thing to think about is you
+[27:26.16]  know a lot of people talk about personal
+[27:27.44]  software for these utilities but I
+[27:29.28]  actually think personal software as
+[27:32.32]  distribution software is something that
+[27:34.56]  not a lot of people have talked about.
+[27:35.92]  So, how do you create a piece of
+[27:38.40]  software that, you know, goes viral on X
+[27:40.96]  or or gets a lot of traction that uh
+[27:44.72]  builds you the distribution that you can
+[27:46.96]  basically use it almost as a lead magnet
+[27:48.96]  to get and then sell your actual piece
+[27:50.96]  of software? Yeah, I actually I'll uh
+[27:54.00]  I'll show you something that I I don't
+[27:56.40]  know exactly how to put it into a blog
+[27:59.36]  post yet, but what you've described I've
+[28:01.20]  been sitting on for a while and I've
+[28:02.80]  been thinking about and I I've been
+[28:04.88]  calling it a distribution engineer. I
+[28:06.80]  just keep Apple notes because you know
+[28:08.40]  why not? And indie hackers know this,
+[28:11.28]  right? They build in public. It's not
+[28:13.84]  necessarily about getting followers.
+[28:15.84]  It's about getting distribution. And
+[28:17.76]  it's the same when you look at basically
+[28:19.28]  any other part of building software. If
+[28:21.28]  you build docs, well, you want people to
+[28:23.12]  read them, right? So, they need to be
+[28:25.44]  distributed. If you're building a
+[28:26.88]  community, you want it to be more than
+[28:28.24]  one person. So, you have to figure out
+[28:29.92]  distribution. Distribution is all you
+[28:31.52]  need. It's not really about necessarily
+[28:34.08]  just the product, but you want the
+[28:35.84]  product to actually get used. And there
+[28:38.24]  there's something here because in the
+[28:39.52]  past, I've talked about how front end
+[28:41.20]  and backend went to more product
+[28:42.72]  engineers. You were caring a lot more
+[28:44.08]  about the product. And now that product
+[28:45.92]  is becoming easier and easier to build,
+[28:48.00]  there is something here to this
+[28:49.52]  distribution angle where okay, I've got
+[28:51.44]  a product and I'm I'm an entrepreneur.
+[28:53.76]  I'm trying to get it out into the world.
+[28:55.12]  Figuring out distribution is huge. It's
+[28:57.60]  huge.
+[28:58.72]  >> Lee, always a pleasure having you on.
+[29:00.80]  You know, you just you're the goat, man.
+[29:03.12]  I I'm I'm excited that you're now at
+[29:05.68]  Cursor. Um I'm not affiliated with
+[29:07.92]  Cursor at all. I just think it's a cool
+[29:09.52]  product. Um and uh yeah, man. Let's
+[29:13.84]  let's get the comment section going for
+[29:15.60]  Lee. I'd love you to come back on. Um do
+[29:18.72]  like, you know, people listening, do
+[29:20.40]  like this video if you want more of this
+[29:21.84]  in your feed. Um and I'll include links
+[29:25.36]  to follow Lee on all social platforms.
+[29:28.80]  So go ahead and follow him there. Lee,
+[29:30.48]  anything you want to leave us with?
+[29:32.40]  >> Man, thank you so much. It's been uh a
+[29:34.48]  blast chatting and all your recent
+[29:36.24]  guests have been fire. So keep up the
+[29:37.68]  good work.
+[29:38.64]  >> I appreciate it. Uh take care, my man.
+[29:41.28]  See you.

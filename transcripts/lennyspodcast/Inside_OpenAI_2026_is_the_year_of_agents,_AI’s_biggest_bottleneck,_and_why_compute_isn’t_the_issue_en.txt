@@ -1,0 +1,2883 @@
+Title     : Inside OpenAI: 2026 is the year of agents, AI’s biggest bottleneck, and why compute isn’t the issue
+Video ID  : z1ISq9Ty4Cg
+URL       : https://www.youtube.com/watch?v=z1ISq9Ty4Cg
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2874
+Saved at  : 2026-06-21 01:01:06
+------------------------------------------------------------
+
+[00:00.00]  Who lead work on Codex? Codex is
+[00:02.28]  OpenAI's coding agent. We think of Codex
+[00:04.08]  as just the beginning [music]
+[00:05.16]  of a software engineering teammate. It's
+[00:06.76]  a bit like this really smart intern that
+[00:08.84]  refuses to read Slack, doesn't check
+[00:11.00]  DataDog [music]
+[00:11.68]  unless you ask it to. I remember
+[00:12.96]  Karpathy
+[00:14.20]  >> gnarliest bugs that he runs into that he
+[00:16.32]  just spends hours trying to figure out
+[00:18.08]  nothing else is solved. He gives it to
+[00:19.52]  Codex, lets it run for an hour and it
+[00:21.04]  solves it.
+[00:21.68]  >> Starting to see glimpses of the future
+[00:22.92]  where we're actually starting to have
+[00:24.24]  Codex be on call for its own training.
+[00:26.28]  Codex writes a lot of the code that
+[00:27.48]  helps like manage its training run, the
+[00:29.16]  game infrastructure. And [music] so we
+[00:30.76]  have a Codex code review is like
+[00:32.44]  catching a lot of mistakes. It's
+[00:33.64]  actually caught some like pretty
+[00:34.48]  interesting configuration mistakes. One
+[00:36.08]  of the most mind-blowing examples of
+[00:37.68]  acceleration the Sora Android app, like
+[00:39.44]  a fully new app. We built it in 18 days
+[00:42.16]  and then 10 days later, so 28 days total
+[00:44.40]  we went to the public. How do you think
+[00:46.08]  you win [music] in this space?
+[00:47.52]  >> One of our major goals with Codex is to
+[00:49.08]  get to productivity.
+[00:50.16]  >> If we're going to build a super
+[00:50.80]  assistant, it has to be able to [music]
+[00:51.80]  do things. One of the learnings over the
+[00:53.04]  past year is that for models to do
+[00:54.68]  stuff, they're much more effective when
+[00:56.12]  they can use a computer. It turns out
+[00:57.52]  the best way for models to use computers
+[00:58.95]  [music] is simply to write code. And so
+[01:00.56]  we're kind of getting to this idea where
+[01:01.80]  if you want to build any agent, maybe
+[01:03.28]  you should be building a coding agent.
+[01:04.80]  >> When you think about progress on Codex,
+[01:07.08]  I imagine you have a bunch of evals and
+[01:08.68]  there's all these public benchmarks.
+[01:10.20]  >> A few of us are like constantly on
+[01:11.84]  Reddit. You know, there's a there's
+[01:13.08]  praise up there and there's a lot of
+[01:14.36]  complaints. What we can do as we as a
+[01:15.76]  product team is just try [music] to
+[01:16.80]  always think about how are we building a
+[01:18.28]  tool so that it feels like we're
+[01:19.36]  maximally accelerating people rather
+[01:21.00]  than building a tool that makes it more
+[01:22.76]  unclear what you should do as the human.
+[01:24.28]  >> Being at OpenAI, I can't not ask about
+[01:26.56]  how far you think we are from AGI. The
+[01:28.08]  current under appreciated limiting
+[01:29.10]  [music] factor is literally human typing
+[01:31.16]  speed or human multitasking speed.
+[01:35.20]  Today my guest is Alexander Imbiricos,
+[01:37.60]  product lead for Codex, OpenAI's
+[01:39.68]  incredibly popular and powerful coding
+[01:41.80]  agent. In the words of Nick Turley, head
+[01:43.88]  of ChatGPT and former podcast guest,
+[01:46.00]  Alex is one of my all-time favorite
+[01:48.12]  humans I've ever worked with and
+[01:49.80]  bringing him and his company into OpenAI
+[01:51.72]  ended up being one of the best decisions
+[01:53.68]  we've ever made. Similarly, Kevin Weil,
+[01:55.84]  OpenAI CPO, said Alex is simply the
+[01:58.28]  best. In our conversation, we chat about
+[02:00.56]  what it's truly like to build product at
+[02:02.52]  OpenAI, how Codex allowed the Sora team
+[02:05.12]  to ship the Sora app, which became the
+[02:07.04]  number one app in the App Store in under
+[02:08.92]  1 month. Also, the 20x growth Codex is
+[02:11.92]  seeing right now and what they did to
+[02:13.16]  make it so good at coding, why his team
+[02:15.52]  is now focused on making it easier to
+[02:17.16]  review code, not just write code, his
+[02:19.68]  AGI timelines, his thoughts on when AI
+[02:21.84]  agents will actually be really useful,
+[02:23.80]  and so much more. A huge thank you to Ed
+[02:26.08]  Bay, Nick Turley, and Dennis Yang for
+[02:28.04]  suggesting topics for this conversation.
+[02:29.88]  If you enjoy this podcast, don't forget
+[02:31.16]  to subscribe and follow it in your
+[02:32.76]  favorite podcasting app or YouTube. And
+[02:35.16]  if you become an annual subscriber of my
+[02:37.12]  newsletter, you get a year free of 19
+[02:39.96]  incredible products, including a year
+[02:42.24]  free of Devin, Lovable, Replit, Bolt,
+[02:44.60]  Linear, Superhuman, Descript, Warp,
+[02:47.80]  Granola, Magic Patterns, Raycast,
+[02:49.08]  Jasper, D Mob, and Posthog, and Stripe
+[02:51.12]  Atlas. Head on over to Lenny's
+[02:52.64]  Newsletter.com and click product pass.
+[02:54.96]  With that, I bring you Alexander
+[02:56.60]  Imbiricos after a short word from our
+[02:58.44]  sponsors.
+[03:00.16]  Here's a puzzle for you. What do OpenAI,
+[03:02.44]  Cursor, Perplexity, Vercel, Plaid, and
+[03:05.12]  hundreds of other winning companies have
+[03:07.00]  in common? The answer is they're all
+[03:09.08]  powered by today's sponsor, WorkOS. If
+[03:12.20]  you're building software for
+[03:13.24]  enterprises, you've probably felt the
+[03:14.76]  pain of integrating single sign-on,
+[03:16.80]  SCIM, RBAC, audit logs, and other
+[03:19.48]  features required by big customers.
+[03:21.68]  WorkOS turns those deal blockers into
+[03:23.88]  drop-in APIs with a modern developer
+[03:26.20]  platform built specifically for B2B
+[03:28.16]  SaaS. Whether you're seed stage startup
+[03:30.40]  trying to land your first enterprise
+[03:31.76]  customer or a unicorn expanding
+[03:33.72]  globally, WorkOS is the fastest [music]
+[03:35.88]  path to becoming enterprise ready and
+[03:37.80]  unlocking growth. They're essentially
+[03:39.72]  Stripe for enterprise features. Visit
+[03:42.32]  workos.com to get started or just hit up
+[03:44.80]  their Slack support where they have real
+[03:46.32]  engineers in there who answer your
+[03:47.72]  questions super fast. WorkOS allows you
+[03:50.16]  to build like the best with delightful
+[03:52.48]  APIs, comprehensive docs, and a smooth
+[03:55.08]  developer experience. Go to workos.com
+[03:57.92]  to make your app enterprise ready today.
+[04:01.16]  This episode is brought to you by Finn,
+[04:03.12]  the number one AI agent for customer
+[04:05.20]  service. If your customer support
+[04:07.04]  tickets are piling up, then you need
+[04:08.72]  Finn. Finn is the highest performing AI
+[04:11.16]  agent on the market with a 65% average
+[04:14.00]  resolution rate. Finn resolves even the
+[04:16.12]  most complex customer queries. No other
+[04:18.64]  AI agent performs better. In
+[04:20.44]  head-to-head bake-offs with competitors,
+[04:22.04]  Finn wins every time. Yes, switching to
+[04:25.20]  a new tool can be scary, but Finn works
+[04:27.36]  on any help desk with no migration
+[04:29.20]  needed, which means you don't have to
+[04:30.80]  overhaul your current system or deal
+[04:32.48]  with delays in service for your
+[04:33.72]  customers.
+[04:34.45]  >> [music]
+[04:34.56]  >> And Finn is trusted by over 6,000
+[04:36.44]  customer service leaders and top
+[04:38.20]  companies like Anthropic, Shutterstock,
+[04:40.32]  Synthesia, Clay, Vanta, Lovable,
+[04:42.04]  monday.com, and more. And because Finn
+[04:44.08]  is powered by the Finn AI engine, which
+[04:46.32]  is a continuously improving system that
+[04:48.20]  allows you to analyze, train, test, and
+[04:50.00]  deploy with ease, Finn can continuously
+[04:52.40]  improve your results, too. So if you're
+[04:54.28]  ready to transform your customer service
+[04:56.04]  and scale your support, give Finn a try
+[04:58.12]  for only 99 cents per resolution. Plus,
+[05:00.84]  Finn comes with a 90-day money-back
+[05:02.60]  guarantee. Find out how Finn can work
+[05:04.44]  for your team at fin.ai/lenny.
+[05:07.88]  That's fin.ai/lenny.
+[05:14.00]  Alexander, thank you so much for being
+[05:16.20]  here and welcome to the podcast. Thank
+[05:18.12]  you so much. I've been following for
+[05:19.32]  ages and I'm excited to be here. I'm
+[05:21.36]  even more excited. I really appreciate
+[05:22.96]  that.
+[05:24.12]  I'm going to start with your time at
+[05:25.80]  OpenAI.
+[05:27.28]  So you joined OpenAI about a year ago.
+[05:29.72]  Before that, you had your own startup
+[05:31.32]  for about 5 years.
+[05:33.16]  Before that, you were a product manager
+[05:34.52]  at Dropbox.
+[05:36.16]  I imagine OpenAI is very different from
+[05:38.16]  every other place you've worked.
+[05:40.56]  Let me just ask you this. What is most
+[05:43.00]  different about how OpenAI operates and
+[05:45.20]  what's something that you've learned
+[05:46.24]  there that you think you're going to
+[05:47.16]  take with you wherever you go, assuming
+[05:48.88]  you ever leave? By far, I would say the
+[05:51.16]  speed and ambition of working at OpenAI
+[05:54.24]  are just like dramatically more than
+[05:55.64]  what I can imagine. And you know, I
+[05:57.92]  guess it's kind of an embarrassing thing
+[05:59.08]  to say because you you know, everyone
+[06:00.36]  who's a startup founder thinks like, "Oh
+[06:01.72]  yeah, my startup moves super fast and
+[06:03.60]  the talent bar is super high and we're
+[06:05.08]  super ambitious." But I have to say like
+[06:07.32]  working at OpenAI just kind of like made
+[06:08.84]  me reimagine what it what that even
+[06:10.72]  means. We hear this a lot about, you
+[06:12.44]  know, feels like every AI company is
+[06:14.04]  just like, "Oh my god, I can't believe
+[06:15.64]  how fast they're moving."
+[06:16.96]  Is there an example of just like, "Wow,
+[06:18.36]  that wouldn't have happened this quickly
+[06:19.84]  anywhere else?" The most obvious thing
+[06:21.28]  that comes to mind is just like the the
+[06:22.80]  explosive growth of Codex itself.
+[06:26.24]  I think it's wild since we bumped our
+[06:27.44]  thermal number of it, like you know,
+[06:28.36]  it's like the the 10x thing of Codex's
+[06:31.00]  scale was just like super fast in a
+[06:33.44]  matter of months. And it's like well
+[06:35.44]  more since then.
+[06:36.88]  And you know, like once you've lived
+[06:38.48]  through that or at least in speaking for
+[06:39.68]  myself, like having lived through that
+[06:41.24]  now, I feel like anytime I'm going to
+[06:43.28]  spend
+[06:44.60]  my time on like, you know, building tech
+[06:47.28]  product, there's that kind of that speed
+[06:49.52]  and scale that I now need to to to meet.
+[06:52.44]  If I think of like what I was doing at
+[06:53.76]  my startup, it moved like way slower.
+[06:56.04]  And I
+[06:57.04]  you know, there's always this balance
+[06:58.16]  with startups of like how much do you
+[07:00.36]  commit to an idea that you have versus
+[07:02.20]  like find out that it's not working
+[07:04.40]  uh and then pivot. But I think one thing
+[07:06.68]  I've realized at OpenAI is like the the
+[07:08.56]  amount of impact that we can have and in
+[07:10.16]  fact need to have to do a good job is so
+[07:12.08]  high that it is a I have to be like way
+[07:13.88]  more ruthless with how I spend my time
+[07:15.24]  now. Before we get to Codex, is there a
+[07:17.48]  way that they've structured the org or I
+[07:19.84]  don't know, the way that OpenAI operates
+[07:21.32]  that allows the team to move this
+[07:22.92]  quickly? Because everyone everyone wants
+[07:24.36]  to move super fast. I imagine there's a
+[07:26.24]  structural approach to allowing this to
+[07:28.60]  happen. I mean, so one thing is just the
+[07:30.24]  technology
+[07:31.92]  that we're building with has like just
+[07:33.52]  transformed so many things, you know,
+[07:35.80]  from like both how we build, but also
+[07:37.72]  like what kinds of things we can enable
+[07:39.96]  for users.
+[07:41.32]  And you know, we spend most of our time
+[07:43.24]  talking about like the sort of
+[07:45.16]  improvements in the foundation models,
+[07:46.60]  but I I believe that even if we had no
+[07:48.80]  more progress today with models, which
+[07:50.12]  is absolutely not the case, but if even
+[07:51.88]  if we had no more progress,
+[07:53.52]  we are way behind on product. There's so
+[07:55.40]  much more product to build. So I think
+[07:57.20]  like just like the moment is right, if
+[08:00.24]  that makes sense. Mhm. But I think
+[08:02.04]  there's a lot of sort of
+[08:02.84]  counterintuitive things that surprised
+[08:04.56]  me when I arrived as far as like how
+[08:05.92]  things are structured.
+[08:07.28]  One example that comes to mind is like
+[08:09.44]  when I was working at my startup and and
+[08:10.92]  before that when I was at Dropbox, it
+[08:12.04]  was like very important, you know,
+[08:13.68]  especially as a PM to like always kind
+[08:15.24]  of rally the ship and it was kind of
+[08:16.44]  like make sure you're pointed in the
+[08:17.52]  right direction and then you can like
+[08:18.84]  accelerate in that direction.
+[08:21.12]  But here, I think because we don't
+[08:24.16]  exactly know like what capabilities will
+[08:26.28]  even come up soon and we don't know
+[08:27.80]  what's going to work
+[08:29.44]  uh technically and then we also don't
+[08:31.28]  know what's going to land even if it
+[08:32.48]  works technically, it's much more
+[08:34.24]  important for us to be very like humble
+[08:37.72]  and learn a lot more empirically and
+[08:39.32]  just try things quickly. And like the
+[08:41.60]  org is is set up in that way to to be
+[08:43.80]  incredibly bottoms up. You know, this is
+[08:46.12]  again one of those things that like as
+[08:47.32]  you were saying, everyone wants to move
+[08:48.32]  fast. I think everyone likes to say that
+[08:49.80]  they're bottoms up or at least a lot of
+[08:50.96]  people do,
+[08:52.08]  but OpenAI is like truly truly bottoms
+[08:54.04]  up and that's like been a learning
+[08:55.44]  experience for me.
+[08:56.80]  That now like
+[08:58.72]  it it'll be interesting if I ever work
+[09:00.20]  at
+[09:01.04]  I don't think that it'll ever
+[09:02.32]  it'll even make sense to work at a
+[09:03.68]  non-AI company in the future. I don't
+[09:05.36]  even know what that means. But if I were
+[09:06.88]  to imagine it or go back in time, I
+[09:08.44]  think I would like run things totally
+[09:09.76]  different. What I'm hearing is kind of
+[09:11.24]  this ready
+[09:13.04]  fire aim is the approach more than ready
+[09:16.40]  aim fire. And there's something
+[09:18.68]  and as you process that cuz that may not
+[09:21.00]  come across well, but I actually have
+[09:22.56]  heard this a lot at AI companies is
+[09:24.56]  because you don't know and Nick Turley
+[09:26.12]  shared I think the same sentiment.
+[09:27.56]  Because you don't know how people will
+[09:28.80]  use it, it doesn't make sense to spend a
+[09:30.80]  lot of time making it perfect. It's
+[09:32.88]  better to just get it out there in a
+[09:34.44]  primordial way, see how people use it,
+[09:36.56]  and then go big on that use case. Yeah.
+[09:39.76]  It's like to to okay, to use this
+[09:41.28]  analogy a little bit, I feel like there
+[09:42.72]  there is an aim component, but the aim
+[09:44.48]  component is much fuzzier. You know,
+[09:46.08]  it's kind of like roughly
+[09:47.88]  what do we think can happen? Like
+[09:49.48]  someone um I've learned a ton from
+[09:51.44]  working here is a is a research lead and
+[09:53.44]  he likes to say that like at OpenAI,
+[09:56.24]  we can you can have really good
+[09:57.88]  conversations about something that's
+[09:59.00]  like a year plus from now.
+[10:01.16]  And you know, there's a lot of ambiguity
+[10:02.20]  in what will happen, but but like that's
+[10:03.60]  a right sort of timeline. And then we
+[10:05.44]  can have really good conversations about
+[10:07.00]  what's happening like in like low months
+[10:08.96]  or low or weeks.
+[10:10.52]  But there's kind of this like awkward
+[10:12.00]  middle ground, which is like as you
+[10:13.64]  start approaching a year, but you're not
+[10:14.96]  at a year where it's like very difficult
+[10:16.96]  to reason about, right? And so as far as
+[10:18.60]  like aiming, I think we want to know
+[10:20.00]  like, okay, what are some of the futures
+[10:22.00]  that we're trying to build towards? And
+[10:23.28]  like a lot of the problems we're dealing
+[10:24.80]  with in AI like such as alignment or
+[10:26.36]  problems you need to be thinking out
+[10:27.36]  like really far out into the future.
+[10:29.88]  So we're kind of aiming fuzzily there.
+[10:31.72]  But when it comes down to the more
+[10:32.76]  tactically like, oh yeah, like what
+[10:34.44]  product will we build and therefore how
+[10:36.12]  will people use that product? That's the
+[10:38.56]  place where we're much more like, let's
+[10:39.88]  find out empirically. That's a good way
+[10:41.64]  of putting it.
+[10:42.84]  Something else that when people hear
+[10:44.20]  this,
+[10:45.16]  they
+[10:46.16]  people sometimes hear companies like
+[10:47.72]  yours saying, okay, we're going to be
+[10:49.28]  bottoms-up, we're going to try a bunch
+[10:50.32]  of stuff, we're not going to have
+[10:51.68]  exactly a plan of where it's going in
+[10:53.24]  the next few months. The key is you'll
+[10:55.00]  hire the best people in the world. And
+[10:57.88]  so that feels like a really key
+[10:59.16]  ingredient in order to be this
+[11:00.68]  successful at bottoms-up work. And just
+[11:02.72]  supervising basically. Um
+[11:05.68]  I was just like, again, surprised or
+[11:07.80]  even shocked when I arrived at like the
+[11:09.36]  level of like individual like drive and
+[11:11.52]  like
+[11:12.92]  autonomy that everyone here has.
+[11:15.52]  So I think like
+[11:16.88]  the way that Open AI runs like many you
+[11:19.08]  can't like read this or be on the listen
+[11:21.00]  to a podcast and go like, I am I'm just
+[11:22.52]  going to deploy this to my company.
+[11:24.60]  Um you know, maybe this is a harsh thing
+[11:26.60]  to say, but I think like yeah, very few
+[11:27.80]  companies have the talent caliber to be
+[11:29.40]  able to do that.
+[11:30.80]  So it might need to be like
+[11:32.76]  adjusted if you were going to implement
+[11:34.24]  this. Okay, so let's talk Codex. You
+[11:36.56]  lead work on Codex. How's Codex going?
+[11:39.00]  What numbers can you share? Is there
+[11:40.20]  anything you can share there? Also just
+[11:42.20]  not everyone knows exactly what Codex
+[11:43.44]  is. Explain what Codex is.
+[11:45.20]  Totally, yeah. So I had the very lucky
+[11:47.80]  job of of living in the future and
+[11:49.40]  leading products on Codex.
+[11:51.04]  Um and Codex is
+[11:53.24]  Open AI's coding agent. So super
+[11:55.68]  concretely that means it's an IDE
+[11:57.68]  extension, like a VS Code extension,
+[12:00.04]  uh that you can install or terminal tool
+[12:01.60]  that you can install. And when you do
+[12:02.80]  so,
+[12:03.76]  you can then basically pair with Codex
+[12:05.92]  to answer questions about code, write
+[12:07.48]  code,
+[12:08.60]  uh you know, run tests, execute code,
+[12:10.88]  and do a bunch of the work in sort of
+[12:12.60]  that like thick middle section of the
+[12:14.76]  software development life cycle,
+[12:16.72]  which is all about uh you know, writing
+[12:18.76]  code that you're going to get into
+[12:19.40]  production.
+[12:20.48]  Uh more broadly,
+[12:22.56]  we think of Codex as like it's the what
+[12:24.72]  it currently is is just the beginning of
+[12:27.00]  a software engineering teammate.
+[12:29.04]  And so, you know, when we when you when
+[12:30.48]  we use a big word like teammate, like
+[12:31.84]  some of the things we're imagining are
+[12:33.00]  that it's not only able to to write
+[12:35.40]  code, but actually it participates like
+[12:37.72]  early on in like the ideation and
+[12:39.44]  planning phases of writing software, and
+[12:41.32]  then further downstream in terms of like
+[12:43.04]  validation, deploying, and like
+[12:44.56]  maintaining code.
+[12:46.44]  To make that a little more fun, like one
+[12:48.16]  thing I like to imagine is like if you
+[12:49.20]  think of what Codex is today, it's a bit
+[12:51.00]  like this like really smart intern that
+[12:52.96]  like refuses to read Slack, and like
+[12:55.40]  doesn't check DataDog or like Sentry
+[12:57.68]  unless you ask it to. And so like no
+[12:59.48]  matter how smart it is, like how much
+[13:00.80]  you're going to trust it to write code
+[13:01.96]  without you also working with it, right?
+[13:03.76]  So that's how people use it mostly today
+[13:05.20]  is they pair with it.
+[13:06.52]  But we want to get to the point where,
+[13:08.32]  you know, it can work
+[13:09.92]  like just like a new intern that you
+[13:11.28]  hire, and you don't only ask them to
+[13:12.48]  write code, but you ask them to
+[13:13.44]  participate across the cycle. And so you
+[13:15.64]  know that like even if they don't get
+[13:16.92]  something right the first try, they're
+[13:17.84]  eventually going to be able to iterate
+[13:19.04]  their way there. I thought the way
+[13:21.32]  I thought the point about not reading
+[13:22.32]  Slack and DataDog was it's just not
+[13:23.84]  distracted, it's just constantly
+[13:25.12]  focused, and is always in flow. But I
+[13:27.68]  get what you're saying there is it
+[13:28.60]  doesn't have all the context on
+[13:30.00]  everything that's going on.
+[13:31.60]  And like that's not only true when it's
+[13:33.00]  performing a task, but again, if you
+[13:34.36]  think of like the best human teammates,
+[13:35.80]  like you don't tell them what to do.
+[13:37.76]  Right? Like maybe when you first hire
+[13:39.44]  them, you have like a couple meetings
+[13:40.92]  and you're like, hey, like you kind of
+[13:42.68]  learn like, okay, this is this these
+[13:44.20]  prompts work for this teammate, these
+[13:45.48]  prompts don't, right? This is how to
+[13:46.52]  communicate with this person. Then
+[13:47.88]  eventually you give them some starter
+[13:48.92]  tasks, you delegate a few tasks. But
+[13:50.52]  then eventually you just say like, hey,
+[13:51.60]  great, okay, you're working with this
+[13:53.20]  set of people in this area of the code
+[13:55.44]  base.
+[13:56.08]  You know, feel free to work with other
+[13:57.24]  people in other parts of the code base
+[13:58.36]  too, even. And uh yeah, you tell me what
+[14:00.40]  you think makes sense to be done.
+[14:02.20]  Right? And so, you know, we think of
+[14:03.76]  this is like proactivity, and like one
+[14:05.20]  of our major goals with Codex is to like
+[14:07.00]  get to proactivity.
+[14:09.28]  I think this is
+[14:10.68]  this is like critically important to
+[14:13.08]  like achieve the mission of Open AI,
+[14:14.24]  which is to deliver the benefits of AGI
+[14:15.64]  to all humanity. You know, I like to
+[14:17.44]  joke today that like AI products, and
+[14:19.36]  it's it's a half joke,
+[14:20.84]  they're actually like really hard to
+[14:22.04]  use,
+[14:23.08]  because you have to like be very
+[14:24.92]  thoughtful about
+[14:26.64]  when it could help you. And if you're
+[14:28.80]  not prompting a model to help you, it's
+[14:31.04]  probably not helping you at that time.
+[14:33.28]  And if you think of how many times like
+[14:34.56]  the average user is prompting AI today,
+[14:36.44]  it's probably like tens of times. But if
+[14:38.40]  you think of how many times people could
+[14:40.12]  actually get benefit from a really
+[14:41.92]  intelligent entity, it's thousands of
+[14:44.68]  times per day. And so a large a large
+[14:46.44]  part of our our goal with Codex is to
+[14:47.96]  figure out like, what is the shape of an
+[14:50.40]  actual teammate agent that is sort of
+[14:52.24]  helpful by default? When people think
+[14:54.36]  about Cursor and even Cloud Code, it's
+[14:57.36]  like IDE that helps you code and kind of
+[14:59.60]  auto-completes code and maybe does some
+[15:01.76]  agentic work. What I'm hearing here is
+[15:03.52]  the vision is is different, which is
+[15:05.56]  it's a teammate. It's like a remote
+[15:07.56]  teammate
+[15:08.64]  building code for you that you talk to
+[15:10.12]  and ask to do things. And it also does a
+[15:12.92]  IDE auto-complete and things like that.
+[15:15.32]  Is that is that a kind of a
+[15:16.28]  differentiator in the way you think
+[15:17.40]  about Codex? It's basically this idea
+[15:19.52]  that like
+[15:21.08]  we want the way like if you're a
+[15:22.72]  developer and you're trying to get
+[15:24.08]  something done, we want you to just feel
+[15:25.52]  like you have superpowers and you're
+[15:26.84]  able to move much, much faster. But we
+[15:29.40]  don't think that in order for you to
+[15:31.44]  reap those benefits,
+[15:33.08]  you need to be sitting there constantly
+[15:34.64]  thinking about like, how can I invoke AI
+[15:36.48]  at this point to do this thing? We want
+[15:38.44]  you to be able to sort of like plug it
+[15:39.76]  in to the way that you work and have it
+[15:41.52]  just start to do stuff without you
+[15:42.60]  having to think about it. Okay, I have a
+[15:44.16]  lot of questions on these lines, but
+[15:45.92]  just how's it going? Is there any stats,
+[15:47.28]  any numbers you can share about how
+[15:48.52]  Codex is doing? Yeah, it's been Codex
+[15:50.40]  has been growing like absolutely
+[15:51.52]  explosively
+[15:52.92]  since the launch of GPT-5 back in
+[15:54.52]  August. Um listen, definitely some
+[15:56.60]  interesting like product insights to
+[15:57.96]  talk about as to like how we unlocked
+[15:59.52]  that growth if you're interested. But
+[16:01.60]  again, the last the last thought we
+[16:02.76]  shared there was like we were like well
+[16:04.56]  over 10x
+[16:06.00]  since August. In fact, it's been like
+[16:07.32]  20x since then.
+[16:08.88]  Um also, the Codex models are serving
+[16:11.08]  many many trillions of tokens a week
+[16:13.60]  now, and it's basically like our most
+[16:15.56]  served coding model. Um one of the
+[16:17.60]  really cool things that we've seen is
+[16:18.84]  that
+[16:19.76]  the way that we decided to set up the
+[16:21.00]  Codex team
+[16:22.16]  uh was to build a you know, a really
+[16:23.88]  tightly integrated
+[16:25.48]  product and research team that are
+[16:27.12]  iterating on the model and the harness
+[16:28.40]  together.
+[16:29.84]  And it turns out that lets you just do a
+[16:31.32]  lot more and try many more experiments
+[16:33.16]  as to how these things will work
+[16:34.16]  together.
+[16:35.12]  And so, we were just training these
+[16:37.40]  models for use in our first-party
+[16:39.16]  harness that we were very opinionated
+[16:40.68]  about.
+[16:42.32]  And then what we've started to see more
+[16:43.48]  recently actually is that other major
+[16:46.20]  sort of API coding customers are now
+[16:47.96]  starting to adopt these models as well.
+[16:50.12]  And so we've reached a point where
+[16:51.16]  actually the Codex model is the most
+[16:52.92]  served coding model in the API as well.
+[16:55.80]  You uh hinted at this
+[16:58.56]  what unlocked this growth. I am
+[17:00.00]  extremely interested in hearing that. It
+[17:01.92]  felt like before, I don't know, maybe
+[17:03.88]  this was before you joined the team. It
+[17:05.04]  just felt like Cloud Code was killing
+[17:06.56]  it. Just everyone was sitting on top of
+[17:08.28]  Cloud Code. It was by far the best way
+[17:10.56]  to code. And then all of a sudden Codex
+[17:12.20]  comes around. I remember Karpathy
+[17:14.12]  tweeted that he just like has never seen
+[17:17.12]  a model like this.
+[17:18.56]  I think the tweet was the gnarlies bugs
+[17:20.80]  that he runs into that he just spends
+[17:22.68]  hours trying to figure out, nothing else
+[17:24.40]  has solved. He gives it to Codex, lets
+[17:26.28]  it run for an hour, and it solves it.
+[17:28.76]  What did what did you guys do? We have
+[17:30.60]  the strong sort of mission here at Open
+[17:32.88]  AI to, you know, basically to build AGI.
+[17:35.48]  Um and so we we think a lot about what
+[17:39.08]  how can we shape the product so that it
+[17:41.08]  can scale?
+[17:42.36]  Right? You know, earlier I was
+[17:43.28]  mentioning like, hey, like if you're an
+[17:44.52]  engineer, you should be getting help
+[17:45.72]  from an from AI like thousands of times
+[17:47.64]  per day, right? And so
+[17:49.52]  we thought a lot about the primitives
+[17:51.12]  for that when we launched our first
+[17:52.88]  version of Codex,
+[17:54.36]  uh which was Codex Cloud.
+[17:56.24]  And that was basically a product that
+[17:57.52]  had its own computer, lived in the
+[17:58.60]  cloud, you could delegate to it.
+[18:00.56]  And you know, the sort of the coolest
+[18:02.48]  part about that was you could run many,
+[18:03.76]  many tasks in parallel.
+[18:05.80]  But some of the challenges that we saw
+[18:08.16]  are that it's a little bit harder to set
+[18:11.52]  that up both in terms of like
+[18:12.92]  environment configuration, like giving
+[18:14.36]  the model the tools it needs to validate
+[18:16.64]  its changes, and to learn how to prompt
+[18:18.56]  in that way. And sort of my my analogy
+[18:21.04]  for this is going back to this teammate
+[18:22.20]  analogy. It's like if you hired a
+[18:23.36]  teammate, but you're never allowed to
+[18:25.92]  get on a call with them, and you can
+[18:27.48]  only go back and forth, you know,
+[18:28.84]  asynchronously
+[18:30.40]  over time. Like that works for some
+[18:31.76]  teammates.
+[18:32.76]  And eventually that's actually how you
+[18:34.08]  want to spend most of your time, so
+[18:35.20]  that's still the future. But it's hard
+[18:37.00]  to initially adopt.
+[18:38.92]  And so we still have that vision of like
+[18:40.72]  that's what we're trying to get you to,
+[18:41.88]  a teammate that you delegate to and then
+[18:43.32]  is proactive. And we're seeing that
+[18:45.24]  growing, but
+[18:46.84]  the key unlock is actually first you
+[18:48.48]  need to land with users in a way that's
+[18:50.28]  like much more intuitive and like
+[18:52.16]  trivial to get value from.
+[18:54.24]  So the way that most people discover
+[18:56.40]  like the vast majority of users discover
+[18:58.08]  Codex today is either they download an
+[19:00.08]  IDE extension, or they run it in their
+[19:02.20]  CLI, and the agent works there with you
+[19:05.28]  on your computer interactively.
+[19:07.44]  And uh it works within a sandbox, which
+[19:09.04]  is actually like a really cool piece of
+[19:10.16]  tech to to help that be safe and secure.
+[19:12.96]  But it has access to all those
+[19:14.52]  dependencies.
+[19:15.92]  So if the agent needs to do something,
+[19:17.44]  like it needs to run a command, it can
+[19:18.76]  do so within the sandbox, we don't have
+[19:20.08]  to set up any environment. And if it's a
+[19:21.88]  command that doesn't work in the
+[19:22.80]  sandbox, it can just ask you. And so you
+[19:25.04]  can get into this like really strong
+[19:26.68]  feedback loop using the model. And then
+[19:28.28]  over time like our team's job is to like
+[19:30.40]  help
+[19:31.36]  turn that feedback loop into you sort of
+[19:33.96]  as a byproduct of using the product
+[19:35.88]  configuring it so that you can then be
+[19:37.12]  delegating to it down the line. And
+[19:38.92]  again, analogy,
+[19:40.24]  you know, keep going back to it, but
+[19:41.24]  like if you hire a teammate and you ask
+[19:43.12]  them to do work, but they you just give
+[19:44.28]  them like a fresh computer from the
+[19:45.80]  store,
+[19:46.88]  it's going to be hard for them to do
+[19:47.80]  their job, right? But if as you work
+[19:49.44]  with them side by side, you could be
+[19:50.84]  like, oh, you don't have a password for
+[19:52.20]  this service we use. Here's the password
+[19:53.92]  for this service. You know, yeah, don't
+[19:55.92]  worry. Feel free to run this command."
+[19:57.84]  Then it's like much easier for them to
+[19:59.36]  then go off and do work for hours
+[20:00.88]  without you. So, what I'm hearing is the
+[20:02.92]  initial version of Codex was almost too
+[20:04.40]  far in the future. It's like a remote in
+[20:06.48]  the cloud uh agent that's coding for you
+[20:09.24]  asynchronously. And what you did is,
+[20:11.72]  okay, let's actually come back a little
+[20:13.48]  bit. Let's integrate into the way
+[20:14.96]  engineers already integrate into IDEs
+[20:16.88]  and locally
+[20:18.28]  and help them kind of on-ramp to this
+[20:19.96]  new world. Totally. And this is it was
+[20:23.08]  quite interesting because
+[20:25.00]  we we dogfood product a ton at OpenAI.
+[20:28.48]  So, you know, dogfood we as in we use
+[20:30.00]  our own product. And so, Codex has been
+[20:31.96]  accelerating OpenAI
+[20:33.68]  over the course of the entire year and
+[20:35.28]  the cloud product was a massive
+[20:37.28]  accelerator to the company as well.
+[20:39.60]  Um
+[20:40.68]  it just turns out that this is one of
+[20:42.84]  those places where the signal we got
+[20:44.64]  from dogfooding is a little bit
+[20:46.04]  different from the signal you get from
+[20:47.56]  like the general market because at
+[20:48.76]  OpenAI, you know, we train reasoning
+[20:50.60]  models all day and so, we're very used
+[20:52.40]  to this kind of prompting and like, you
+[20:54.32]  know, think up front, run things
+[20:55.76]  massively in parallel.
+[20:57.60]  And uh you know, it will take some time
+[20:59.76]  and then come back to it later
+[21:00.72]  asynchronously. And so, you know, now
+[21:03.32]  when we build, we still get a a ton of
+[21:04.92]  signal from dogfooding internally, but
+[21:07.80]  uh you know, we're also very cognizant
+[21:10.08]  of like the different ways that
+[21:11.20]  different audiences use the product.
+[21:12.80]  >> That's really funny. It's like live in
+[21:14.40]  the future, but maybe not too far in the
+[21:16.08]  future. And I could see how everyone at
+[21:18.08]  OpenAI is living very far in the future
+[21:20.16]  and sometimes that won't that won't work
+[21:22.00]  for everyone. Yeah.
+[21:23.68]  What about just like uh intelligence,
+[21:25.92]  training data? I don't know. Is there
+[21:27.00]  something else that helped Codex
+[21:29.28]  accelerate its ability to actually code?
+[21:31.56]  Is it like better, cleaner data? Is it
+[21:34.32]  more just models advancing? Is there
+[21:36.00]  anything else that really helped it
+[21:37.12]  accelerate? Yeah, so there's like a few
+[21:39.20]  components here. Um
+[21:41.12]  I guess, you know, you were mentioning
+[21:42.76]  models and the models have improved a
+[21:43.96]  ton. In fact, um just last Wednesday, we
+[21:47.24]  shipped GPT-5.1 Codex Max.
+[21:49.72]  A very, you know, accurately named
+[21:51.64]  model. Uh
+[21:53.28]  that is that is awesome. It is awesome
+[21:55.32]  both because it is um for any given task
+[21:58.44]  that you were using GPT-5.1 Codex for,
+[22:01.16]  it's like, you know, roughly uh 30%
+[22:03.84]  faster at accomplishing that task.
+[22:05.88]  But also, it unlocks a ton of
+[22:06.92]  intelligence. So, if you use it at our
+[22:08.76]  higher reasoning levels, it's just like
+[22:10.48]  even smarter. Um and you know, that that
+[22:12.76]  feedback that or that tweet you were
+[22:14.12]  saying like Karpathy made about like,
+[22:15.76]  "Hey, give this your gnarly bugs." like,
+[22:17.80]  you know, obviously there's a a ton
+[22:18.88]  going on in the market right now, but
+[22:20.16]  like Codex Max is definitely like
+[22:21.92]  carrying that mantle of uh you know,
+[22:24.20]  tackling the hardest bugs. Um so, that
+[22:26.24]  is
+[22:27.04]  that is super cool. But, I will say it's
+[22:28.72]  like
+[22:29.92]  some of what how we're thinking about
+[22:31.88]  this is evolving a little bit from being
+[22:33.24]  like, "Yeah, we're just going to think
+[22:34.08]  about the model and like let's just like
+[22:35.44]  train the best model." to really
+[22:37.04]  thinking about like what is an agent
+[22:39.16]  actually overall.
+[22:41.00]  Right?
+[22:42.12]  And you know, I'm not going to try to
+[22:43.52]  define agent exactly, but at least the
+[22:45.00]  stack that we think of it as having is
+[22:46.44]  just like you have this model,
+[22:48.40]  really smart reasoning model,
+[22:50.12]  that knows how to do a specific kind of
+[22:51.44]  task really well, so we can talk about
+[22:52.72]  how we make that possible. But then
+[22:54.52]  actually, we need to serve that model
+[22:57.40]  through an API into a harness and both
+[23:00.40]  of those things also have a really big
+[23:02.16]  role here. So, for instance,
+[23:04.16]  one of the things
+[23:05.76]  that we're really proud of is you can
+[23:06.72]  have GPT-5.1 Codex Max work for really
+[23:08.96]  long periods of time. That's not like
+[23:11.08]  normal, but you can set it up to do that
+[23:12.68]  or that might happen. But now routinely
+[23:14.64]  we'll hear about people saying like,
+[23:15.76]  "Yeah, it ran like overnight." or it ran
+[23:17.48]  for 24 hours. And so, you know, for a
+[23:20.04]  model to work continuously for that
+[23:21.48]  amount of time, it's going to exceed its
+[23:23.08]  context window. And so, we have a
+[23:24.80]  solution for that which we call
+[23:25.80]  compaction.
+[23:27.12]  Um
+[23:28.08]  that compaction is actually a feature
+[23:29.72]  that uses like all three layers of that
+[23:31.36]  stack. So,
+[23:33.24]  you need to have a model that has a
+[23:35.80]  concept of compaction and knows like,
+[23:37.24]  "Okay, as I start to approach its
+[23:38.40]  context window, I might be asked to like
+[23:40.36]  prepare to be run in a new context
+[23:42.00]  window." And then at the API layer, you
+[23:44.68]  need an API that like understands this
+[23:46.28]  concept and like has an endpoint that
+[23:47.64]  you can hit to do this change. And at
+[23:49.20]  the harness layer, you need a harness
+[23:50.44]  that can like prepare the payload for
+[23:51.88]  this to be done. And so, like shipping
+[23:54.12]  this compaction feature that now just
+[23:55.36]  like made this behavior possible to like
+[23:56.88]  anyone using Codex, actually meant
+[23:58.72]  working across all three things and I
+[24:00.04]  think that's like increasingly going to
+[24:01.44]  be true. Another maybe like
+[24:04.64]  under-appreciated version of this is is
+[24:06.68]  if you think about all the different
+[24:08.36]  coding products out there, they all have
+[24:09.64]  like very different tool harnesses with
+[24:11.52]  like very different opinions on how the
+[24:12.88]  model should work.
+[24:14.56]  And so, if you want to train a model to
+[24:15.80]  be good at like all the different ways
+[24:17.48]  uh it could work, like, you know, maybe
+[24:19.40]  you have a strong opinion that it should
+[24:20.76]  work using semantic search. Right? Maybe
+[24:22.92]  you have a strong opinion that it should
+[24:24.12]  like call the spoke tools. Or maybe you
+[24:26.16]  have like in our case a strong opinion
+[24:27.48]  that it should just use like the shell,
+[24:29.84]  work in the terminal.
+[24:31.60]  You know, you can be much you can move
+[24:32.76]  much faster if you're just optimizing
+[24:34.00]  for one of those worlds. Right? And so,
+[24:36.60]  the way that we built Codex is that it
+[24:37.88]  just uses the shell, but in order to
+[24:39.44]  make that like safer and secure, we have
+[24:42.40]  a sandbox that the model is used to
+[24:43.88]  operating in.
+[24:45.32]  So, I think one of the biggest
+[24:46.60]  accelerators to go all the way back to
+[24:47.80]  your to your answer question is just
+[24:49.00]  like we're building all three things in
+[24:50.80]  parallel and like kind of tuning each
+[24:52.80]  one and um you know, constantly
+[24:55.12]  experimenting with how those things work
+[24:56.88]  with like a tightly integrated product
+[24:58.40]  and research team.
+[24:59.60]  How do you think you win in this space?
+[25:02.44]  Do you think it it'll even it'll always
+[25:04.52]  be this kind of like race with other
+[25:06.40]  models constantly kind of leapfrogging
+[25:08.24]  each other? Do you think there's a world
+[25:09.84]  where someone just runs away with it and
+[25:11.76]  no one else can ever catch up? Is there
+[25:13.12]  like a path to just we win? Again, comes
+[25:15.56]  back to this idea of like building a
+[25:17.00]  teammate.
+[25:18.12]  And
+[25:19.12]  not just a teammate that, you know, uh
+[25:22.16]  participates in team planning and
+[25:23.32]  prioritization. Not just a teammate
+[25:24.68]  that,
+[25:25.64]  you know, really tests its code and like
+[25:27.08]  helps you maintain and deploy it.
+[25:28.92]  But even a teammate, you know, like if
+[25:30.16]  you think again, an engineering
+[25:31.32]  teammate, they can also like schedule a
+[25:32.88]  calendar invite, right? Or move standup.
+[25:35.52]  Or do whatever, right? And so,
+[25:38.08]  in my mind,
+[25:39.68]  if we just imagine that
+[25:42.24]  every day or every week some like crazy
+[25:44.48]  new capability is just going to be
+[25:45.76]  deployed by a research lab, it's just
+[25:47.80]  impossible for us like, you know, as
+[25:49.48]  humans to keep up and like use all this
+[25:51.04]  technology. And so, I think we need to
+[25:53.44]  get to this world where
+[25:55.28]  you kind of just have like
+[25:57.40]  an AI teammate or a super assistant that
+[25:59.32]  you just talk to and it just knows how
+[26:01.84]  to be helpful like on its own.
+[26:04.20]  Right? And so, you don't you don't have
+[26:05.24]  to be like reading the latest tips for
+[26:07.24]  how to use it and you just like you plug
+[26:08.48]  it in and it just provides help.
+[26:10.52]  And so, that's kind of the shape of what
+[26:12.60]  I think we're building and I think that
+[26:13.84]  will be like a very sticky like winning
+[26:15.84]  product if we can do so. So, the shape
+[26:17.52]  that I'm in my head at least I have is
+[26:19.08]  that we build, you know, maybe a fun
+[26:21.96]  topic is like is chat the right
+[26:23.12]  interface for AI? I think chat is a very
+[26:25.36]  good interface
+[26:26.92]  when you don't know what you're supposed
+[26:28.32]  to use it for.
+[26:29.56]  Uh in the same way that if I think of
+[26:30.96]  like I'm like on a Teams or in Slack
+[26:32.92]  with a teammate, chat is pretty good. I
+[26:34.52]  can ask for whatever I want, right? It's
+[26:36.04]  like kind of the common denominator for
+[26:38.08]  everything. So, you can chat with a
+[26:39.80]  super assistant about whatever topic you
+[26:41.76]  want, whether it be coding or not.
+[26:43.84]  And then if
+[26:45.08]  you are like a functional expert in a
+[26:46.84]  specific domain such as coding, there's
+[26:48.68]  like a GUI
+[26:50.00]  that you can pull up to go really deep
+[26:52.56]  and like look at the code and like work
+[26:54.00]  with the code. So, I think like what we
+[26:56.12]  need to build as OpenAI is basically
+[26:59.04]  this idea of like you have chat,
+[27:00.44]  ChatGPT, and that is a tool that's like
+[27:02.48]  ubiquitously available to like everyone.
+[27:04.40]  You start using it even like outside of
+[27:06.12]  work, right? To just help you. You
+[27:08.16]  become very comfortable with the idea of
+[27:09.48]  being accelerated with AI. And so, then
+[27:11.60]  you get to work and you just can
+[27:12.84]  naturally just, yeah, I'm just going to
+[27:14.32]  ask it for this and I don't need to know
+[27:16.00]  about all the connectors or like all the
+[27:17.68]  different features. I'm just going to
+[27:19.08]  ask it for help and it'll surface to me
+[27:21.28]  the the best way that it can help at
+[27:22.68]  this point in time. And maybe even chime
+[27:24.20]  in when I didn't ask it for help.
+[27:26.32]  Um so, in my mind if we can get to that,
+[27:28.12]  I think that's, you know, that's how we
+[27:30.28]  we really build like the winning
+[27:31.28]  product. This is so interesting because
+[27:33.72]  at with the my chat with Nick Charney,
+[27:35.32]  the head of ChatGPT, I think he shared
+[27:37.40]  that the original name for ChatGPT was
+[27:39.36]  super assistant or something like that.
+[27:41.24]  Yeah. And it's interesting that there's
+[27:43.72]  like that approach to the super
+[27:45.76]  assistant and then there's this Codex
+[27:47.08]  approach. It's almost like the B2C
+[27:48.80]  version and the B2B version.
+[27:50.96]  And what I'm hearing is the idea here
+[27:52.28]  is, okay, you start with coding and
+[27:53.48]  building and then it's doing all this
+[27:55.20]  other stuff for you, scheduling
+[27:56.20]  meetings, I don't know, probably posting
+[27:58.04]  in Slack. Uh I don't know, shipping
+[28:01.00]  designs. I don't know. Is that Is the
+[28:02.44]  idea there this is like the the business
+[28:04.52]  version of ChatGPT in a sense or is
+[28:06.40]  there or or is there something else
+[28:07.80]  there?
+[28:08.76]  Yeah, so you know, so we're getting to
+[28:10.04]  the like
+[28:11.12]  the like one-year time horizon
+[28:12.52]  conversation. A lot of this might happen
+[28:14.56]  sooner, but in terms of fuzziness, I
+[28:15.96]  think we're at the one-year. So, I'll
+[28:17.08]  give you like
+[28:18.44]  a contention and like a plausible way to
+[28:20.04]  get there, but as for how it happens,
+[28:21.52]  who knows. So, basically,
+[28:23.88]  if we're going to build a super
+[28:24.68]  assistant, it has to be able to do
+[28:25.76]  things,
+[28:26.76]  right? So, like we're going to have a
+[28:28.20]  model and it's going to be able to do
+[28:29.32]  stuff affecting your world.
+[28:31.80]  And one of the learnings I think we've
+[28:33.24]  seen over the past year or so is that
+[28:36.36]  for models to do stuff, they're much
+[28:37.92]  more effective when they can use a
+[28:39.08]  computer.
+[28:41.40]  Right? Okay. So, now we're like, "Okay,
+[28:43.56]  we need the super assistant that can use
+[28:44.76]  a computer." Right? Or many computers.
+[28:47.20]  And now the question is, okay, well, how
+[28:48.48]  should it use the computer?
+[28:50.24]  Right? And there's lots of ways to use a
+[28:51.64]  computer. Uh you know, you could try to
+[28:53.60]  hack the OS and like use accessibility
+[28:55.36]  APIs. Maybe a bit easier is you could
+[28:57.12]  point and click.
+[28:58.52]  That's a little slow, you know, and
+[29:00.60]  unpredictable sometimes.
+[29:02.36]  Um and another way, it turns out the
+[29:04.20]  best way for models to use computers is
+[29:05.96]  simply to write code.
+[29:07.60]  Right? And so, we're kind of getting to
+[29:08.92]  this idea where like, "Well, if you want
+[29:10.28]  to build any agent, maybe you should be
+[29:11.84]  building a coding agent." And maybe
+[29:14.72]  to the user, a non-technical user, they
+[29:16.48]  won't even know they're using a coding
+[29:17.68]  agent the same way that no one thinks
+[29:18.92]  about are they using the internet or
+[29:20.12]  not. It's just they're more just like,
+[29:21.08]  "Is Wi-Fi on?"
+[29:22.36]  Right? So,
+[29:24.04]  I think that what we're doing with Codex
+[29:25.84]  is we're building a software engineering
+[29:27.76]  teammate and as part of that, we're kind
+[29:29.88]  of building an agent that can use uh a
+[29:32.28]  computer by writing code. And so, we're
+[29:34.96]  already seeing like some pull for this.
+[29:36.92]  It's like quite early, but we're
+[29:38.36]  starting to see people like who are
+[29:39.56]  using Codex for like coding-adjacent
+[29:41.76]  product purposes.
+[29:43.84]  And so, as that develops, I think we'll
+[29:45.96]  just naturally see that like, "Oh, it
+[29:47.56]  turns out like we should just always
+[29:48.72]  have the agent write code if there is a
+[29:50.20]  coding way to solve a problem instead of
+[29:52.28]  you know, even if you're doing in
+[29:53.12]  financial analysis, right? Like maybe
+[29:54.68]  write some code for that. So basically
+[29:56.08]  like you know, you were like, hey, is
+[29:57.16]  this like the two ends of of
+[29:59.16]  of this product for the super assistant,
+[30:00.68]  right? Of ChatGPT. In my mind like just
+[30:02.84]  coding is a core competency of any agent
+[30:05.04]  including ChatGPT. And so like what
+[30:06.80]  really what we think we're building is
+[30:08.12]  like that competency. But so here's
+[30:10.64]  here's like the really cool thing about
+[30:11.72]  agents writing code is that you can
+[30:13.36]  import code.
+[30:15.04]  Right? Code is like composable.
+[30:17.32]  Interoperable.
+[30:18.48]  Right? Cuz if if we you know, one very
+[30:21.24]  reductive view we could have for an
+[30:22.84]  agent is it's just going to be given a
+[30:24.28]  computer and it's just going to like
+[30:25.52]  point and click and and you know,
+[30:27.52]  go around. But
+[30:29.44]  you know, that is the future and then
+[30:31.00]  how we get there is difficult to sort of
+[30:33.68]  chart a path because a lot of the
+[30:35.48]  questions around building agents aren't
+[30:37.20]  like can the agent do it, but it's more
+[30:39.28]  about well,
+[30:41.00]  how can we help the agent understand the
+[30:42.64]  context that it's working in and like
+[30:44.12]  the team that's using it, you know,
+[30:45.80]  probably has a way that they like to do
+[30:47.28]  things. They have guidelines. They
+[30:48.92]  probably want certain deterministic
+[30:50.52]  guarantees about what the agent can or
+[30:52.20]  cannot do.
+[30:53.84]  Or they want to know that the agent
+[30:54.88]  understands sort of this detail. Like an
+[30:57.32]  example would be,
+[30:58.84]  you know, if we're looking at a crash
+[31:01.12]  reporting tool hitting a connector for
+[31:03.08]  it,
+[31:03.92]  every sub-team is probably has a
+[31:05.60]  different meta prompt for like how they
+[31:07.32]  want the crashes to be analyzed.
+[31:10.16]  Right? And so we start to get to this
+[31:11.72]  thing where like, yeah, we have this
+[31:12.76]  agent sitting in front of a computer,
+[31:13.92]  but we need to make that configurable
+[31:16.12]  for the team or for the user, right? And
+[31:18.08]  let them like
+[31:19.28]  stuff that the agent does often, we
+[31:20.92]  probably just want to like build in as a
+[31:22.72]  competency that this agent has that it
+[31:24.16]  can do. So
+[31:25.80]  I think
+[31:27.12]  we end up with this generalizable thing
+[31:28.68]  that you were saying of like an agent
+[31:30.32]  that can just write its own scripts for
+[31:31.88]  whatever it wants to do.
+[31:33.40]  But I think that the the really key part
+[31:36.60]  here is can we make it so that
+[31:39.00]  everything that the agent has to do
+[31:40.20]  often or that it does well, we can just
+[31:42.24]  like remember and store
+[31:44.32]  so that the agent doesn't have to write
+[31:45.52]  a script for that again, right? Or maybe
+[31:47.24]  like if I just joined a team and you are
+[31:48.68]  already on the same team as me,
+[31:50.44]  I can just like use all those scripts
+[31:51.96]  that the agents have written already.
+[31:53.68]  Yeah, it's like if this is our teammate,
+[31:56.08]  we can they can share things that it's
+[31:58.00]  learned from working with other people
+[31:59.08]  at the company. Just makes sense as a
+[32:00.68]  metaphor.
+[32:01.76]  Yeah. It feels like you're in the
+[32:03.88]  Karpathy camp of agents today are not
+[32:05.80]  that great and mostly slop and maybe in
+[32:08.00]  the future they'll be awesome. Does that
+[32:09.60]  resonate?
+[32:10.92]  I think so I think coding agents are
+[32:12.32]  pretty great. I think
+[32:14.00]  Uh that's right. Yeah.
+[32:16.12]  >> Yep. And then I think like agent side
+[32:18.40]  outside of coding, it's still like very
+[32:20.44]  early.
+[32:21.48]  And you know, this is just my opinion,
+[32:22.80]  but I think they're going to get a whole
+[32:23.96]  lot better once they can use coding to
+[32:25.72]  and like in a composable way. Mhm.
+[32:28.20]  This is it's kind of the fun part of
+[32:29.48]  like when you're building for software
+[32:30.72]  engineers. Like I
+[32:32.24]  in my setup we were building for
+[32:33.44]  software engineers too for a lot of that
+[32:34.96]  journey and they're just such a fun
+[32:36.68]  audience to build for because
+[32:39.32]  you know, they also like building for
+[32:40.88]  themselves and are often like even more
+[32:43.40]  creative than we are in thinking about
+[32:44.84]  how to use the technology.
+[32:46.64]  Um and so like by building for software
+[32:48.36]  engineers, you get to just observe a ton
+[32:49.88]  of emergent behaviors and like
+[32:51.76]  things that you should do and build into
+[32:52.92]  the product.
+[32:53.96]  I love how you you say that cuz a lot of
+[32:55.64]  people building for engineers get really
+[32:57.04]  annoyed cuz the engineers are so they're
+[32:59.12]  just always complaining about stuff.
+[33:00.40]  They're like, ah, this sucks. Why did
+[33:01.56]  you build it this way?
+[33:03.12]  I love that you enjoy it, but I think
+[33:04.60]  it's probably because you're building
+[33:05.76]  such an amazing tool for engineers that
+[33:08.04]  can actually solve problems
+[33:09.80]  and just you know, code for them.
+[33:12.00]  Um kind of along those lines, you know,
+[33:13.48]  there's always this talk of
+[33:15.16]  what will happen to jobs, coding, do you
+[33:17.20]  have to learn coding, all these things?
+[33:19.28]  Clearly the way you're describing it is
+[33:20.56]  it's a teammate. It's going to work with
+[33:22.04]  you making more superhuman. It's not
+[33:23.92]  going to replace you. What's the way you
+[33:25.32]  just think about the impact on the field
+[33:27.80]  of engineering having this super
+[33:30.00]  intelligent engineering teammate? I
+[33:32.92]  think there's there's two sides to it,
+[33:34.44]  but the one we were just talking about
+[33:36.36]  is this idea that maybe every agent
+[33:39.16]  should actually use code and be a coding
+[33:41.56]  agent.
+[33:42.72]  And in my mind that's just like a small
+[33:44.08]  part of this like broader idea that
+[33:45.84]  like, hey, as we make code even more
+[33:47.40]  ubiquitous. I mean, you could probably
+[33:48.48]  claim it's ubiquitous today even pre-AI,
+[33:50.12]  right? And as you make code even more
+[33:52.00]  ubiquitous, it's actually just going to
+[33:53.40]  be used for many more purposes.
+[33:56.28]  And so there's just going to be a ton
+[33:58.08]  more need for people with this like
+[33:59.76]  humans with this competency.
+[34:01.68]  So
+[34:02.56]  that's my view. I think this is like
+[34:04.68]  quite a complex topic. So you know, you
+[34:06.96]  know, it's something we talk about a lot
+[34:08.00]  and we have to kind of see how it pans
+[34:09.28]  out, but I think what we can do
+[34:11.52]  what we can do basically as a product
+[34:13.08]  team building in the space is just try
+[34:14.48]  to always think about how are we
+[34:16.20]  building a tool so that it feels like
+[34:17.44]  we're like maximally accelerating
+[34:19.64]  uh people.
+[34:20.92]  You know, rather than building a tool
+[34:22.64]  that makes it like more unclear what you
+[34:25.16]  should do as the human. Right? Like I
+[34:27.08]  think like to
+[34:28.64]  to you know, give an example right now
+[34:30.36]  like
+[34:31.44]  nowadays when you work with a coding
+[34:32.96]  agent, um it writes a ton of code, but
+[34:35.16]  it turns out writing code is actually
+[34:36.44]  one of the most fun parts of software
+[34:37.92]  engineering for many software engineers.
+[34:40.04]  And so then you end up reviewing AI
+[34:41.32]  code.
+[34:42.24]  Right? And that's often a less fun part
+[34:45.80]  of the job for many software engineers,
+[34:47.80]  right? And so I actually think like we
+[34:49.80]  see that like this this comes out plays
+[34:51.56]  out all the time in like a ton of micro
+[34:53.00]  decisions and so we as a product team
+[34:54.28]  are always thinking about like, okay,
+[34:55.20]  how do we make this more fun? How do we
+[34:56.32]  make you feel more empowered? Where is
+[34:58.00]  this not working? And I would argue that
+[34:59.52]  like reviewing agent written code is
+[35:01.32]  like a place that
+[35:02.68]  today is like less fun and so you know,
+[35:05.00]  then I think, okay, what can we do about
+[35:06.32]  that? Well, we can ship a code review
+[35:07.56]  feature that like helps you both
+[35:09.28]  confidence the AI written code. Okay,
+[35:10.64]  cool.
+[35:12.08]  You know, another thing we could do is
+[35:12.96]  we can make it so that the agent's like
+[35:14.12]  better able to validate its work.
+[35:16.72]  And you know, it it gets all the way
+[35:17.84]  down into like micro decisions. Like if
+[35:19.32]  you're going to have the an agent
+[35:21.32]  capability to validate work and let's
+[35:23.32]  say you have like I'm thinking of Codex
+[35:24.76]  web right now. Like you have a a pane
+[35:27.12]  that sort of reflects the work the agent
+[35:28.52]  did. What do you see first? Do you see
+[35:30.08]  the diff or do you see the image preview
+[35:31.72]  of the code it wrote?
+[35:33.24]  Right? And you know, I think if you're
+[35:35.28]  thinking about this from perspective
+[35:36.48]  like, how do I empower the human? How do
+[35:37.60]  I make them feel like as as accelerated
+[35:39.28]  as possible? Like you obviously see the
+[35:41.16]  image first, right? You shouldn't be
+[35:42.56]  reviewing the code unless first you
+[35:44.80]  know, you've seen the image unless it's
+[35:46.04]  maybe it's been like reviewed by an AI
+[35:47.48]  and now it's time for you to take a
+[35:48.48]  look. When I had Michael Turalda, CEO of
+[35:50.88]  Cursor on the podcast, he had this kind
+[35:52.64]  of vision of us moving to something
+[35:55.52]  beyond code.
+[35:57.00]  And I've seen this rise of something
+[35:58.56]  called spec driven development where you
+[36:00.32]  kind of just write the spec and then the
+[36:02.48]  code, you know, the AI writes the code
+[36:04.16]  for you and so you kind of start working
+[36:05.56]  at this higher abstraction level.
+[36:07.72]  Is that something you see where we're
+[36:09.20]  going? Just like engineers not having to
+[36:10.96]  actually write code or look at code and
+[36:12.56]  there's going to be this higher level of
+[36:14.08]  abstraction that we focus on.
+[36:16.00]  Yeah, I mean, I think
+[36:17.76]  I think there's like constantly these
+[36:18.92]  levels of abstraction and they're
+[36:20.00]  actually already played out today.
+[36:22.48]  Right? Like today like coding agents
+[36:24.56]  mostly it's like prompt to patch.
+[36:27.52]  Right? We're starting to see people
+[36:29.60]  doing like spec driven development or
+[36:31.20]  like plan driven development. That's
+[36:32.76]  actually one of the ways people ask
+[36:34.36]  like, hey, how do you run Codex on a
+[36:35.52]  really long task? Well, it's like often
+[36:37.12]  collaborate with it first to write like
+[36:38.84]  a plan.md like a markdown file that's
+[36:40.56]  your plan.
+[36:41.72]  And once you're happy with that, then
+[36:43.20]  you ask it to to go off and do work and
+[36:44.92]  if that plan has verifiable steps, it'll
+[36:46.56]  like work for much longer.
+[36:48.36]  Um so we're totally seeing that.
+[36:50.80]  I think spec driven development is like
+[36:52.28]  an interesting idea. It's not clear to
+[36:54.64]  me that it'll work out that way cuz a
+[36:56.48]  lot of people don't write like don't
+[36:57.76]  like writing specs either.
+[36:59.80]  But it it seems plausible that some some
+[37:01.72]  people will work that way. You know,
+[37:03.24]  like uh
+[37:04.76]  a bit of a joke idea though is like if
+[37:06.12]  you think of like
+[37:07.36]  um the way that many teams work today,
+[37:09.72]  they're they often like don't
+[37:10.80]  necessarily have specs, but the team is
+[37:13.00]  just really self-driven and so stuff
+[37:14.44]  just gets done and so almost that is
+[37:15.72]  like I'm coming up with this on the
+[37:17.08]  spot. So it's you know, not a good name,
+[37:18.40]  but like chatter driven development.
+[37:21.04]  Where it's just like stuff is happening,
+[37:22.76]  you know, on social media and like in
+[37:24.36]  your team communications tools and then
+[37:25.84]  as a result like code gets written and
+[37:27.84]  deployed.
+[37:29.04]  Right? So
+[37:30.24]  yeah, I think I'm a little bit more
+[37:31.68]  oriented in that way of
+[37:33.92]  you know, I don't even necessarily want
+[37:35.64]  to have to write a spec. Like sometimes
+[37:37.16]  I want to only if I like writing specs.
+[37:39.96]  Right?
+[37:41.04]  Other times I might just want to say
+[37:42.76]  like, hey, here's like the customer, you
+[37:44.68]  know, service channel and like tell me
+[37:46.28]  what's interesting to know, but if it's
+[37:47.84]  a small bug, just fix it. I don't want
+[37:49.64]  to have to write a spec for that,
+[37:51.72]  I have this sort of
+[37:53.72]  uh hypothetical future
+[37:55.96]  uh that I like to share with sometimes
+[37:57.68]  with people as a provocation which is
+[37:58.84]  like in a world where we have like truly
+[38:00.84]  amazing agents, like what does it look
+[38:02.20]  like to be a solopreneur?
+[38:04.36]  Um
+[38:05.32]  and uh you know, one terrible idea for
+[38:07.84]  how it could look is that it's actually
+[38:09.40]  is a mobile app. And um every idea that
+[38:13.08]  it the agent has to do is just like
+[38:15.16]  vertical video on your phone.
+[38:17.44]  And then you can like swipe left if you
+[38:19.60]  think it's a bad idea and you can like
+[38:21.08]  swipe right if it's a good idea and like
+[38:22.52]  you can press and hold and like speak to
+[38:24.60]  your phone if you want to give feedback
+[38:26.12]  on the idea before you swipe.
+[38:28.48]  You know, and in this world like
+[38:29.56]  basically what your job is just like
+[38:31.04]  plug in this app into like every single
+[38:32.92]  like signal system, you know, system of
+[38:35.44]  record and then you just sort of sit
+[38:36.80]  back and like swipe. I don't know. I
+[38:39.04]  love this. So this is like Tinder meets
+[38:40.88]  TikTok meets Codex. It's pretty
+[38:43.12]  terrible. No, this is great. So the idea
+[38:45.48]  here is this thing is this agent is
+[38:46.80]  watching and right listening to you,
+[38:48.92]  paying attention to the market, your
+[38:50.52]  users and it's like, well, I hear
+[38:51.92]  something I should do. It's like a
+[38:53.20]  proactive engineer. Just like, here, we
+[38:54.68]  should build this feature or fix this
+[38:55.80]  thing.
+[38:56.64]  Exactly. I think it's a really good
+[38:58.44]  idea. Communicating with you in like the
+[38:59.84]  lowest like effort way.
+[39:01.52]  >> the gyms, like the the modern way we
+[39:03.40]  communicate.
+[39:05.00]  Yeah, swipe left or right and in
+[39:07.04]  vertical feed. And then the Sora video.
+[39:09.24]  Okay, I see how this all connects now. I
+[39:11.56]  see.
+[39:11.84]  >> Yeah, to be clear, we're not building
+[39:13.56]  that, but like, you know, it's a fun
+[39:14.76]  idea. I mean, you can see now like in
+[39:16.76]  this example though, like one of the
+[39:18.00]  things that it's doing is it's consuming
+[39:19.44]  external signals, right? I think the
+[39:21.52]  other really interesting thing is like
+[39:23.20]  if we think about like what is the most
+[39:24.60]  successful like
+[39:26.36]  AI product to date?
+[39:28.64]  Um
+[39:29.64]  I would argue um funny actually not to
+[39:32.96]  confuse things at all, but like with the
+[39:34.60]  first time we used in the the brand
+[39:36.52]  Codex at OpenAI was actually the model
+[39:38.16]  powering GitHub Copilot. This is like
+[39:39.76]  way back in the day years ago.
+[39:41.60]  Uh so we decided to reuse that that
+[39:43.20]  brand recently um cuz it's just so good.
+[39:45.40]  You know, Codex, code execution. But
+[39:47.88]  I think actually like
+[39:49.80]  auto completion in IDEs is like one of
+[39:51.52]  the most successful AI products today.
+[39:54.44]  And part of what's so magical about it
+[39:56.16]  is that
+[39:57.88]  when the it can surface like ideas for
+[40:00.84]  helping you
+[40:02.00]  really rapidly.
+[40:03.48]  When it's right, you're accelerated.
+[40:05.00]  When it's wrong, it's not like that
+[40:06.60]  annoying. It can be annoying, but it's
+[40:08.08]  not that annoying. Right? And so you can
+[40:10.00]  create this like mixed initiative system
+[40:11.72]  that's like contextually responding to
+[40:13.84]  like what you're attempting to do.
+[40:16.04]  And so in my mind, this is like
+[40:18.60]  a really interesting thing for us as
+[40:20.36]  OpenAI as we're building.
+[40:22.12]  So for instance, you know, when I think
+[40:23.92]  about launching a browser, which we did
+[40:26.20]  with Atlas, right? Like in my mind,
+[40:29.16]  one of the really interesting things we
+[40:30.28]  can then do is we can then like
+[40:32.16]  contextually surface like ways that we
+[40:33.96]  can help you as you're going about your
+[40:35.80]  day. Right? And so we break out of this
+[40:37.88]  like
+[40:38.92]  you know, we're just looking at code or
+[40:40.40]  we're just in your terminal um into this
+[40:42.56]  idea that like, "Hey, like a real
+[40:43.80]  teammate is dealing with a lot more than
+[40:45.32]  just code, right? They're dealing with a
+[40:47.00]  lot of things that are web content." So
+[40:48.48]  like,
+[40:49.44]  you know, how can we help you with that?
+[40:51.24]  Man, there's so much there. I love this.
+[40:53.16]  Okay, so auto complete on web with the
+[40:55.16]  browser, that's so interesting. Just
+[40:56.56]  like here's all the things that
+[40:58.20]  we can help you with as you're browsing
+[40:59.44]  and
+[41:00.28]  going about your day. I want to talk
+[41:01.72]  about Atlas. I'll come back to that. Uh
+[41:03.84]  Codex, code execution, did not know
+[41:05.56]  that. That's really clever.
+[41:07.24]  I I get it now. Okay, and then this
+[41:09.52]  chatter. What is a chatter driven
+[41:10.84]  development? Uh I had a No, this is a
+[41:13.36]  really good idea. But it reminds me I
+[41:15.00]  had John G Donji on the podcast, CTO of
+[41:17.48]  Block, and they they have this product
+[41:19.56]  called Goose, which is their own
+[41:20.64]  internal agent
+[41:22.88]  thing. And he talked about an engineer
+[41:25.60]  at Block just uh has Goose watch him
+[41:29.64]  with like his screen and listens to
+[41:31.96]  every meeting and proactively does work
+[41:35.48]  that he should probably want to do. So
+[41:37.40]  ships a PR, sends an email, drafts a
+[41:39.92]  Slack message. So he's doing exactly
+[41:42.44]  what you're describing in in kind of a
+[41:43.92]  very early way.
+[41:45.40]  Yeah, that's super interesting. And you
+[41:47.08]  know, I bet you the so if we go if we
+[41:49.44]  went and asked them what the bottleneck
+[41:51.00]  to that productivity is, did did they
+[41:52.72]  share what it is? Uh probably looking at
+[41:55.00]  it and just making sure this is the
+[41:56.12]  right the right thing to do. Yeah.
+[41:58.08]  Yeah, so like we see this now. Like we
+[41:59.56]  have a Slack integration for Codex.
+[42:01.56]  People love, you know, if there's like
+[42:02.80]  something that you need to do quickly,
+[42:04.32]  people will just like at mention Codex.
+[42:05.64]  Like, "Why do you think this bug is
+[42:06.96]  happening?" Right? Doesn't have to be an
+[42:08.44]  engineer. Even like maybe, you know,
+[42:09.68]  data scientists often in here are using
+[42:11.76]  Codex a ton to just like answer
+[42:13.36]  questions. Like, "Why do you think this
+[42:14.36]  metric moved? What happened?"
+[42:16.48]  So questions, you know, you get the
+[42:18.04]  answer right back in Slack, it's
+[42:19.20]  amazing, super useful.
+[42:20.92]  But when it's as for when it's writing
+[42:22.40]  code,
+[42:23.48]  then you have to go back and look at the
+[42:24.56]  code.
+[42:25.52]  Right? And so
+[42:27.08]  the real like I think bottleneck right
+[42:28.80]  now is like validating that the code
+[42:30.64]  worked and like writing code review.
+[42:33.08]  So in my mind, if we wanted to get to
+[42:34.72]  something like you know, the friend you
+[42:37.04]  were talking about's world, I think we
+[42:39.44]  we really need to figure out how to get
+[42:41.04]  people to configure their coding agents
+[42:43.16]  to be much more autonomous on those
+[42:44.68]  later stages of the work. It makes
+[42:46.32]  sense. Like you said, writing code I
+[42:48.28]  used to be an engineer, I was an
+[42:49.28]  engineer for 10 years. Really fun to
+[42:51.08]  write code, really fun to just get in
+[42:52.36]  the flow, build, architect, test.
+[42:54.56]  Not so fun to look at everyone else's
+[42:55.88]  code and just have to go through and be
+[42:57.84]  on the hook if it is doing something
+[42:59.48]  dumb that's going to take down
+[43:00.40]  production. And now that building has
+[43:02.40]  become easier, what I've always heard
+[43:04.04]  from companies that are really at the
+[43:05.16]  cutting edge of this is the bottleneck
+[43:07.16]  is now like figuring out what to build
+[43:08.76]  and then it's at the end of like a Okay,
+[43:10.36]  we have all this all 100 PRs to review.
+[43:12.88]  Who's going to go through all that?
+[43:14.52]  Right. Yeah.
+[43:16.96]  This episode is brought to you by Jira
+[43:18.72]  Product Discovery. The hardest part of
+[43:20.84]  building products isn't actually
+[43:22.24]  building products. It's everything else.
+[43:24.64]  It's proving that the work matters,
+[43:26.36]  managing stakeholders, trying to plan
+[43:28.24]  ahead. Most teams spend more time
+[43:30.36]  reacting than learning, chasing updates,
+[43:32.56]  justifying roadmaps, and constantly
+[43:34.40]  unblocking work to keep things moving.
+[43:36.60]  Jira Product Discovery puts you back in
+[43:38.80]  control. With Jira Product Discovery,
+[43:41.16]  you can capture insights and prioritize
+[43:43.32]  high impact ideas. It's flexible, so it
+[43:45.88]  adapts to the way your team works and
+[43:47.68]  helps you build a roadmap that drives
+[43:49.20]  alignment, not questions. And because
+[43:51.60]  it's built on Jira, you can track ideas
+[43:53.76]  from strategy to delivery, all in one
+[43:56.12]  place. Less chasing, more time to think,
+[43:58.80]  learn, and build the right thing. Get
+[44:01.08]  Jira Product Discovery for free at
+[44:03.24]  atlassian.com/lenny.
+[44:05.92]  That's atlassian.com/lenny.
+[44:08.64]  What is the impact of Codex been on the
+[44:11.32]  way you operate as a product person as a
+[44:13.32]  PM? It's clear how engineering is
+[44:15.52]  impacted. Uh
+[44:17.32]  code is written for you.
+[44:19.60]  What has it done to the way you operate
+[44:21.20]  in the way PMs operate at at OpenAI?
+[44:23.84]  Yeah, I mean I think mostly I just feel
+[44:25.80]  like much more empowered.
+[44:28.00]  Um
+[44:29.40]  I've always been sort of more technical
+[44:31.04]  leaning PM. And especially when I'm
+[44:32.92]  working on products for engineers, I
+[44:34.04]  feel like it's necessary to like, you
+[44:35.44]  know, dogfood the product. But even
+[44:37.24]  beyond that, I I I just feel like I can
+[44:39.08]  do much much more
+[44:40.92]  as a PM. And uh you know, Scott Belsky
+[44:42.88]  talks about this idea of like
+[44:43.64]  compressing the talent stack. I'm not
+[44:45.32]  sure if I'm phrased that right.
+[44:46.88]  But it's basically this idea that like
+[44:48.48]  maybe the boundaries between these roles
+[44:50.00]  are a little bit like less needed than
+[44:52.48]  before because people can just do much
+[44:54.36]  more. And every time you someone can do
+[44:56.76]  more, you can like skip one
+[44:58.24]  communication boundary and make the team
+[45:00.32]  like that much more efficient.
+[45:02.32]  Right? So I think
+[45:04.20]  I think we see it
+[45:06.20]  you know, in a bunch of functions now,
+[45:08.24]  but I guess since you asked about like
+[45:09.56]  product specifically,
+[45:11.16]  uh you know, now like answering
+[45:12.88]  questions much much easier. You you
+[45:15.04]  know, just ask Codex for thoughts on
+[45:16.44]  that. Uh a lot of like PM type work,
+[45:19.24]  understanding what's changing, again,
+[45:20.88]  just ask Codex for help with that. Um
+[45:23.88]  prototyping is often faster than writing
+[45:26.16]  specs. This is something that a lot of
+[45:27.40]  people have talked about.
+[45:29.24]  I think something that
+[45:31.24]  I don't think it's super surprising, but
+[45:32.44]  something that's slightly surprising is
+[45:33.56]  like we see
+[45:34.80]  like we're mostly building Codex for to
+[45:36.48]  write code that's going to be deployed
+[45:37.64]  to production.
+[45:39.08]  But actually we see a lot of throwaway
+[45:40.76]  code written with Codex now. It's kind
+[45:42.60]  of going back to this idea of like, you
+[45:43.76]  know, ubiquitous code.
+[45:45.40]  So you'll see
+[45:46.76]  uh you know, someone wants to do an
+[45:48.68]  analysis. Like if I want to understand
+[45:49.92]  something, it's like, "Okay, just give
+[45:51.28]  Codex a bunch of data, but then ask it
+[45:52.72]  to build like an interactive like data
+[45:54.12]  viewer for this data." Right? You would
+[45:55.60]  That's just like too annoying to do in
+[45:56.84]  the past, but now it's just like totally
+[45:58.64]  worth the time of just getting an agent
+[46:00.40]  to go do something.
+[46:01.64]  Um
+[46:02.72]  similarly, I've seen like some pretty
+[46:04.56]  cool prototypes on our design team about
+[46:06.20]  like if you want to
+[46:08.60]  well, like a designer basically wanted
+[46:09.76]  to build an animation.
+[46:11.16]  And this is the coin animation in Codex.
+[46:13.88]  And it was like normally it'd be too
+[46:15.76]  annoying to program this animation, so
+[46:17.28]  they just vibe coded a animation editor.
+[46:20.40]  And then they use the animation editor
+[46:21.80]  to build the animation, which they then
+[46:22.88]  checked into the repo.
+[46:24.60]  Actually, our designers are there's a
+[46:25.68]  ton of acceleration there and like
+[46:27.52]  speaking of compressing the talent
+[46:28.56]  stack, I think our designers are very
+[46:29.76]  PM-y.
+[46:31.52]  So, you know, they they do a ton of
+[46:33.48]  product work and like they actually have
+[46:35.60]  like an entire like vibe coded sort of
+[46:38.00]  side prototype
+[46:39.56]  of the Codex app. And so a lot of how we
+[46:41.00]  talk about things is like we'll have
+[46:42.28]  like a really quick jam cuz there's like
+[46:43.84]  10,000 things going on. And then the
+[46:45.80]  designer will like go think about how
+[46:46.80]  this should work, but instead of like
+[46:48.12]  talking about it again, they'll just
+[46:49.16]  like vibe code a prototype of that in
+[46:50.88]  their like standalone prototype. We'll
+[46:52.68]  play with it. If we like it, they'll
+[46:54.12]  vibe code that prototype into or vibe
+[46:56.68]  engineer that prototype into an actual
+[46:59.32]  PR to land. And then depending on their
+[47:01.44]  comfort with the code base, like Codex
+[47:02.96]  UI is in Rust, that's a little harder.
+[47:04.56]  Maybe they'll like land it themselves or
+[47:06.20]  they'll like get close and then an
+[47:07.36]  engineer can help them like land the PR.
+[47:09.68]  Um
+[47:10.76]  you know, we recently shipped the Sora
+[47:12.36]  Android app.
+[47:13.60]  Um and uh that was one of the most sort
+[47:16.60]  of
+[47:17.44]  mind-blowing examples of acceleration
+[47:19.20]  actually cuz the usage of Codex
+[47:21.64]  internally at OpenAI is obviously really
+[47:23.44]  really high, but it's been growing uh
+[47:26.32]  over the course of the year both in
+[47:27.64]  terms of like now it's basically like
+[47:29.16]  all technical staff use it. Uh but even
+[47:31.44]  like the intensity and know-how of how
+[47:32.76]  to make the most of coding agents has
+[47:34.00]  gone up by a ton. And so the Sora
+[47:36.32]  Android app, right? Like a fully new
+[47:37.76]  app,
+[47:38.84]  we built it
+[47:40.28]  in 18 days. It went from like zero to
+[47:43.32]  launch to employees. And then 10 days
+[47:45.68]  later, so 28 days total, we went to just
+[47:47.88]  like GA to the public.
+[47:50.12]  And that was done just like with the
+[47:51.40]  help of Codex.
+[47:53.28]  So pretty insane velocity. I would say
+[47:56.00]  it was like a little bit
+[47:58.08]  I don't want to say easy mode, but there
+[48:00.32]  is one thing that Codex is really good
+[48:02.16]  at if you're a company that's like
+[48:03.40]  building software on multiple platforms.
+[48:05.68]  So you've already figured out like some
+[48:06.96]  of the underlying like APIs or systems.
+[48:09.28]  Asking Codex to sit like to port things
+[48:11.36]  over is really effective cuz it has like
+[48:13.80]  something it can go look at. And so the
+[48:15.16]  engineers on that team
+[48:16.72]  uh were basically having Codex
+[48:18.76]  go look at the iOS app, produce plans of
+[48:21.12]  work that needed to be done, and then go
+[48:22.48]  implement those. And it was kind of
+[48:23.84]  looking at iOS and Android at the same
+[48:25.04]  time. And so, you know, basically it was
+[48:27.12]  like 2 weeks to launch to employees, 4
+[48:28.72]  weeks total.
+[48:29.80]  Insanely fast. What makes that even more
+[48:32.36]  insane is it was the it became the
+[48:34.08]  number one app in the App Store.
+[48:36.28]  I don't
+[48:37.24]  this just boggles the mind. Okay, so
+[48:39.68]  Yeah, so imagine there's the number one
+[48:40.96]  app in the App Store with like a handful
+[48:43.44]  of engineers.
+[48:44.84]  Uh I think it was like
+[48:47.20]  two or three possibly
+[48:49.12]  uh
+[48:49.96]  in a handful of weeks.
+[48:51.44]  Yeah.
+[48:52.88]  This is absurd.
+[48:55.56]  So
+[48:56.52]  yeah, so that's a really fun um
+[48:59.04]  example of acceleration and then like
+[49:01.48]  Atlas is the other one that I think
+[49:03.64]  Ben did a podcast the the the
+[49:06.12]  engine on Atlas
+[49:07.64]  uh sharing a little bit about how we
+[49:08.96]  built there.
+[49:10.04]  You know, many Atlas is is actually I
+[49:12.72]  mean it's a it's a browser, right? And
+[49:14.40]  building a browser is really hard. Um
+[49:17.08]  and so
+[49:18.28]  we uh
+[49:19.72]  had to build a lot of difficult systems
+[49:22.00]  in order to do that. And basically we
+[49:24.68]  got to the point where that team has a
+[49:26.48]  ton of power users of Codex
+[49:28.92]  right now. And
+[49:30.48]  you know, got to the point where they
+[49:31.44]  they were basically we you know, we were
+[49:32.88]  talking to them about it cuz a lot of
+[49:34.24]  those engineers are people I I to work
+[49:35.40]  with uh before at my startup. And so
+[49:37.96]  they'd say, you know, before this would
+[49:39.08]  have taken us like 2 to 3 weeks for two
+[49:41.64]  to three engineers.
+[49:43.12]  And now it's like one engineer, one
+[49:45.36]  week.
+[49:46.68]  Um so, massive acceleration there as
+[49:48.56]  well. And what's quite cool is that uh
+[49:51.20]  you know, we we shipped Atlas on on Mac
+[49:52.76]  first, but now we're working on the
+[49:54.08]  Windows version.
+[49:55.44]  You know, that So, the team now is like
+[49:56.76]  ramping up on Windows, and they're
+[49:57.88]  helping us make Codex better on Windows,
+[49:59.48]  too. Which is admittedly earlier. Like,
+[50:02.16]  just the model we we shipped last week
+[50:04.00]  is the first model that natively
+[50:06.16]  understands PowerShell. So, you know,
+[50:08.12]  PowerShell being
+[50:09.48]  uh the native like shell language on
+[50:11.80]  Windows. So, yeah, it's been it's been
+[50:14.84]  really awesome to see like the whole
+[50:16.04]  company getting accelerated by Codex
+[50:17.96]  like from
+[50:19.36]  And you know, most obviously also
+[50:21.96]  research and like improving how quickly
+[50:23.52]  we train models and how well we do it,
+[50:25.20]  and then even like uh design as we
+[50:27.20]  talked about and and marketing. Like,
+[50:28.84]  actually we're at this point now where
+[50:30.60]  uh my product marketer is often also
+[50:32.52]  making string changes just directly from
+[50:34.04]  Slack. Or like updating docs directly
+[50:36.16]  from Slack. These are amazing examples.
+[50:39.08]  You guys are living at the bleeding edge
+[50:41.24]  of what is possible, and this is how
+[50:43.28]  other companies are going to work. Uh
+[50:45.24]  just shipping again, what became the
+[50:47.24]  number one app in the App Store and just
+[50:48.48]  beloved all over the It just like took
+[50:50.04]  over the I don't know, the world for at
+[50:52.52]  least a week. Uh built, you said in 28
+[50:55.16]  days and like I don't know, 10 days, 18
+[50:57.84]  days just to get like the core of it
+[51:00.04]  working.
+[51:00.40]  >> Yeah, so it's like 18 days we had a
+[51:01.84]  thing that employees were playing with,
+[51:03.44]  and then 10 days later we were out. And
+[51:05.48]  you said just a couple engineers. Yeah.
+[51:07.88]  Two or three. Okay. And then Atlas, you
+[51:09.52]  said it was took a week to build.
+[51:11.72]  >> No, no, no. So, Atlas is not the whole
+[51:13.20]  week, but Atlas was like
+[51:15.08]  a really meaty project. Yeah. Um and so
+[51:17.52]  I was talking to one of the engineers on
+[51:18.80]  Atlas um
+[51:20.16]  about like, you know, just how
+[51:22.20]  what they use Codex for. And it's
+[51:23.12]  basically like, we use Codex for
+[51:24.08]  absolutely everything. I was like, okay.
+[51:25.80]  Well, like you know, how would you how
+[51:27.84]  would you measure the acceleration? And
+[51:29.00]  so, basically the the answer I got back
+[51:30.48]  was
+[51:31.68]  previously would have taken two to three
+[51:33.24]  weeks for two to three engineers, and
+[51:34.76]  now it's like one engineer, one week. Do
+[51:36.64]  you think this eventually moves to
+[51:38.12]  non-engineers doing this sort of thing?
+[51:39.64]  Like, does it have to be an engineer
+[51:40.88]  building this thing? Could sort of built
+[51:42.64]  been built by a I don't know, a PM or a
+[51:44.24]  designer? I think we will very much get
+[51:46.12]  to the point where Well, basically where
+[51:47.92]  the boundaries are a little bit blurred.
+[51:50.24]  Right? Like
+[51:51.92]  I think we you're going to want someone
+[51:53.08]  who's like understands the details of
+[51:54.72]  what they're building, but what details
+[51:56.12]  those are will evolve. Kind of like how
+[51:58.36]  now like, if you're writing Swift, you
+[52:00.08]  don't have to speak assembly.
+[52:02.76]  You know, there's a handful of people in
+[52:03.84]  the world, and it's really important
+[52:05.00]  that they exist and like speak assembly.
+[52:07.68]  Uh maybe more than a handful, right? But
+[52:09.40]  that's like a specialized function that
+[52:10.80]  like most
+[52:12.24]  companies don't need to have.
+[52:14.48]  So, I think we're just going to
+[52:15.24]  naturally see like an increase in layers
+[52:17.56]  of abstraction.
+[52:19.08]  And then the cool thing is now we're
+[52:20.56]  we're entering like the language layer
+[52:21.92]  of abstraction, like natural language.
+[52:24.36]  And then natural language itself is
+[52:25.64]  really flexible.
+[52:27.28]  Right? Like, you could have engineers
+[52:28.28]  talking about like a plan, and then you
+[52:30.56]  could have engineers talking about a
+[52:31.44]  spec, and then you could have engineers
+[52:32.52]  talking about just you know, a product
+[52:34.36]  or an idea. So, I think we can also like
+[52:35.96]  start moving up those layers of of
+[52:37.56]  abstraction as well.
+[52:39.64]  But
+[52:40.56]  you know, I I do think this is going to
+[52:41.92]  be gradual. I don't think it's going to
+[52:43.24]  go up to like all of a sudden like
+[52:44.40]  nobody ever writes anything and like,
+[52:46.00]  you know, any code and it's just specs.
+[52:47.76]  I think it's going to be much more like,
+[52:48.80]  okay, we've set up our coding agent to
+[52:50.68]  be really good at like previewing the
+[52:52.80]  build or like at running tests. Maybe
+[52:54.68]  that's the first part, right? That most
+[52:55.92]  people have set up. And it's like, okay,
+[52:57.40]  now we've set it up so that it can like
+[52:59.16]  execute the build and it can like see
+[53:01.32]  the results of its own changes, but you
+[53:02.92]  know, we haven't yet built a good
+[53:04.12]  integration harness so that it can like
+[53:06.00]  in the case of Atlas, like By the way, I
+[53:07.16]  don't know if they've done any of this
+[53:08.20]  or not. I think they've done a lot of
+[53:09.32]  this, but
+[53:10.56]  you know, maybe the next stage is like
+[53:12.48]  enable it to like load a few sample
+[53:14.52]  pages to see how well those work, right?
+[53:16.08]  So, then okay, now we're going to like
+[53:17.32]  set up set up through that. And I think
+[53:19.16]  for some time at least we're going to
+[53:20.44]  have humans kind of curating like which
+[53:22.24]  of these
+[53:23.40]  connectors or systems or components that
+[53:24.92]  it the agent needs to be good at talking
+[53:26.64]  to.
+[53:27.68]  And then, you know, in the future there
+[53:29.32]  will be an even greater unlock where
+[53:30.56]  Codex tells you how to set it up or
+[53:32.48]  maybe sets itself up in a repo. What a
+[53:34.56]  wild time to be alive.
+[53:36.36]  Wow. I'm curious just the second-order
+[53:38.28]  effects of this sort of thing, just how
+[53:39.56]  quickly it is to build stuff. What does
+[53:41.44]  that do? Does that mean distribution
+[53:43.08]  becomes much, much more important? Does
+[53:44.72]  it mean
+[53:45.80]  uh ideas are just worth a lot more? It's
+[53:48.08]  interesting to think about how quick how
+[53:50.40]  that changes. I I'm curious what you
+[53:52.20]  think. I still don't think ideas are
+[53:53.68]  worth as much as
+[53:56.08]  maybe some a lot of people think.
+[53:58.12]  I think still think execution is really
+[53:59.64]  hard, right? Like, you can build
+[54:00.48]  something fast, but you still need to
+[54:01.64]  execute well on it. Still needs to make
+[54:03.64]  sense and be a coherent thing overall.
+[54:06.12]  Um yeah, and distribution is massive.
+[54:08.56]  Yeah. Just feels like everything else is
+[54:10.16]  now more important. Everything that
+[54:11.76]  isn't the building piece, which is
+[54:13.64]  coming up with the idea, getting to
+[54:14.88]  market, profit,
+[54:17.40]  all that kind of stuff.
+[54:18.04]  >> Yeah. I I think we might have been in
+[54:20.12]  this weird temporary phase where
+[54:23.64]  you know, for a while like you could you
+[54:25.12]  could just it was so hard to build
+[54:26.96]  product that
+[54:29.40]  you mostly just had to be really good at
+[54:31.00]  building product, and it maybe didn't
+[54:32.16]  matter if you like had a intimate
+[54:33.96]  understanding of a specific customer.
+[54:36.96]  Um
+[54:37.80]  but now I think we're getting to this
+[54:39.12]  point where actually like, if I could
+[54:40.68]  only choose like one thing to
+[54:41.84]  understand, it would be like really
+[54:43.68]  meaningful understanding of like
+[54:45.76]  the problems that a certain customer
+[54:47.20]  has.
+[54:48.52]  Right? If I could only if I could only
+[54:49.80]  go in with one like core competency.
+[54:52.08]  So, I think that that's
+[54:53.92]  that's ultimately still what's going to
+[54:55.28]  matter most, right? Like, if you're
+[54:56.32]  starting a new company today and you
+[54:58.56]  have
+[54:59.56]  like a really good understanding and
+[55:01.16]  like network of customers that are
+[55:02.56]  currently underserved by AI tools, I
+[55:04.40]  think you're like you're set.
+[55:06.12]  Right? Whereas if you're like good
+[55:07.79]  [clears throat] at building like, you
+[55:08.80]  know,
+[55:09.64]  websites, but you don't have any
+[55:11.12]  specific customer to build for, I think
+[55:12.40]  you're in in for a much harder time.
+[55:14.20]  Bullish on vertical AI startups is what
+[55:16.80]  I'm hearing.
+[55:18.28]  Yeah, I completely agree. There's like,
+[55:19.80]  you know, there's like the general thing
+[55:21.04]  that can solve a lot of problems, and
+[55:22.16]  then there's like, we're going to solve
+[55:23.24]  presentations incredibly well, and we're
+[55:24.88]  going to understand the presentation
+[55:26.00]  problem uh better than anyone, and we're
+[55:28.20]  going to uh
+[55:30.16]  plug into your workflows and and all
+[55:31.64]  these other things that matter for a
+[55:32.88]  very specific problem.
+[55:34.64]  Okay. Incredible.
+[55:36.44]  When you think about progress on Codex,
+[55:39.32]  I imagine you have a bunch of evals, and
+[55:40.88]  there's all these public benchmarks.
+[55:42.84]  What's something you look at to tell
+[55:44.00]  you, okay, we're making really good
+[55:45.48]  progress? I imagine it's not going to be
+[55:46.72]  the one thing, but what do you focus on?
+[55:47.96]  What's like something you're trying to
+[55:48.88]  push? What's like a KPI or two? One of
+[55:51.68]  the things that I'm constantly reminding
+[55:53.28]  myself of is that
+[55:55.08]  a tool like Codex sort of naturally is a
+[55:57.32]  tool that you would you know, become a
+[55:58.40]  power user of.
+[55:59.92]  Right? And so, we can accidentally spend
+[56:01.64]  a lot of our time thinking about
+[56:02.96]  features that are like very deep in the
+[56:04.48]  user adoption journey.
+[56:06.28]  Um and so, we can kind of end up
+[56:08.72]  over-solving for that. And so, I think
+[56:10.52]  it's like just critically important to
+[56:11.92]  like go look at like your like D7
+[56:13.60]  retention.
+[56:14.84]  Right? Just go try the product. Like,
+[56:16.68]  sign up from scratch again.
+[56:18.48]  Um I have a few too many like ChatGPT
+[56:20.28]  Pro accounts that I've just like
+[56:22.36]  in order to maximally correctly dog food
+[56:24.24]  like sign up for on my Gmail, and they
+[56:25.68]  charge me like 200 bucks a month. I need
+[56:27.24]  to expense those.
+[56:28.56]  But uh
+[56:29.72]  uh
+[56:30.60]  you know, like I think just like
+[56:32.48]  the feeling of being a user and the
+[56:34.20]  early retention stats are still like
+[56:35.88]  super important for us because you you
+[56:38.12]  know, as much as this category is is
+[56:40.32]  taking off, I think we're still in the
+[56:41.68]  very early days of like people using
+[56:43.08]  them.
+[56:44.08]  Um
+[56:44.88]  another thing that we do that
+[56:47.32]  that may might be I think we might be
+[56:49.08]  the most
+[56:50.72]  like user feedback {slash} social media
+[56:53.00]  pilled team out there in this space
+[56:55.68]  is like a few of us are like constantly
+[56:57.60]  on Reddit
+[56:58.92]  and Twitter.
+[57:00.04]  And you know, there's uh there's praise
+[57:02.16]  up there, and there's a lot of
+[57:03.12]  complaints, but we take the complaints
+[57:04.44]  like very seriously and look at them.
+[57:06.64]  And I think that
+[57:08.08]  again, because you can use a coding
+[57:09.52]  agent for so many different things,
+[57:11.52]  um it often is like kind of broken in
+[57:13.56]  many sort of ways for like specific
+[57:15.52]  behaviors.
+[57:16.84]  Um and so, we we actually monitor a lot
+[57:18.44]  just like what the vibes are on social
+[57:20.16]  media pretty often. Especially I think
+[57:23.28]  for for Twitter X, um
+[57:26.24]  it's a little bit more hypey.
+[57:28.20]  And then Reddit is a little more
+[57:30.12]  negative, but real actually.
+[57:32.92]  Um so,
+[57:34.36]  I've started increasingly paying
+[57:35.60]  attention to like how people are talking
+[57:36.96]  about using Codex on Reddit actually.
+[57:39.04]  This is uh important for people to know.
+[57:40.92]  Which subreddits do you check most? Is
+[57:42.84]  there like an r/Codex or I mean, the
+[57:44.96]  algorithm's pretty good at surfacing
+[57:46.16]  stuff, but like r/Codex is is there.
+[57:48.64]  Okay. I'll take. Very interesting. And
+[57:51.12]  then uh if people tag you on Twitter,
+[57:52.52]  you still see that, but maybe not as
+[57:54.32]  powerful as seeing it on Reddit.
+[57:56.16]  Well, yeah, the interesting Well, the
+[57:57.20]  thing with Twitter is it's a little bit
+[57:58.20]  more one-to-one even if it's like in
+[57:59.76]  public. Whereas like with Reddit,
+[58:00.96]  there's a like really good upvoting
+[58:02.04]  mechanics, and like maybe most people
+[58:04.16]  are still not bots. Unclear.
+[58:06.44]  Um so, you get you get like good signal
+[58:07.88]  on what matters and what other people
+[58:08.88]  think. So,
+[58:10.68]  interestingly Atlas, I want to talk
+[58:12.44]  about that briefly.
+[58:13.72]  You guys launched Atlas. I tweeted
+[58:15.80]  actually that I tried Atlas, and then
+[58:18.16]  I I don't love the AI-only
+[58:21.20]  search experience. I just like I just
+[58:23.04]  want to Google sometimes or whatever.
+[58:24.88]  Like, just waiting for the AI to give me
+[58:26.12]  an answer. I'm like, I don't want to And
+[58:27.52]  there was no way to switch, so I just
+[58:28.60]  tweeted, "Hey, I'm I'm switching back. I
+[58:30.36]  don't It's not a great." And I feel like
+[58:32.12]  I made some PMs at OpenAI sad. And I saw
+[58:34.52]  someone tweet, "Okay, we have this now."
+[58:36.36]  Which I imagine was always part of the
+[58:37.52]  plan. It's probably an example of we
+[58:39.20]  just ship We got to ship stuff. See how
+[58:40.72]  people use it, and then we figure it
+[58:41.84]  out.
+[58:42.64]  Uh so, I guess one is that
+[58:45.00]  I don't know, is there anything there?
+[58:46.00]  And two, I'm just curious, why are you
+[58:47.00]  guys building a web browser? So, I I
+[58:49.20]  worked on Atlas for a bit. Um I don't
+[58:51.00]  work on it now. Um but
+[58:53.76]  you know, like the a bit of the
+[58:55.08]  narrative here for for me to tell my
+[58:56.64]  story a bit was like, I was working on
+[58:57.80]  this like screen sharing like pair
+[58:59.52]  programming startup. Right? And then we
+[59:01.60]  joined OpenAI.
+[59:03.04]  And so, the idea was really to build a
+[59:04.48]  contextual desktop assistant.
+[59:06.84]  And the reason I believe that's so
+[59:08.20]  important is because
+[59:09.84]  I think that
+[59:11.12]  it's really annoying to have to give all
+[59:12.64]  your context to an assistant and then to
+[59:14.20]  figure out how it can help you.
+[59:16.44]  Right? And so, if it could just like
+[59:17.72]  understand what you were trying to do,
+[59:19.20]  then it could maximally accelerate you.
+[59:21.84]  Um and so, I I I would you know, I still
+[59:24.04]  think of Codex actually as like a
+[59:25.24]  contextual assistant. Um from a little
+[59:27.44]  bit of a different angle, like starting
+[59:28.72]  with coding tasks.
+[59:30.12]  But um
+[59:32.24]  the
+[59:33.40]  some of the some of the thinking at
+[59:34.88]  least for me personally, I can't speak
+[59:36.32]  for the whole product, but it was that
+[59:38.84]  a lot of work is done in the web, and if
+[59:41.88]  we could build a browser, then we could
+[59:43.32]  be contextual for you, but in a much
+[59:45.36]  more first-class way. We weren't hacking
+[59:47.36]  like other desktop software which have
+[59:49.04]  like very varied support for for like
+[59:51.92]  what content they're rendering to the
+[59:53.04]  accessibility tree. Uh, we wouldn't be
+[59:54.68]  relying on screenshots, which are a
+[59:56.12]  little bit slower and unreliable.
+[59:58.36]  Instead, we we we could like be in the
+[60:00.08]  rendering engine, right? And like
+[60:01.52]  extract whatever we needed to to help
+[60:03.60]  you. Um,
+[60:05.00]  and also, I like to think of like, you
+[60:07.04]  know, in video games, like, I don't know
+[60:08.92]  if you've played like, I don't know, say
+[60:10.88]  Halo, right? Like, you walk up to an
+[60:12.88]  object. I mean, this is true for many
+[60:13.96]  games. You press Now, it's been a long
+[60:15.64]  time. This is embarrassing. Press X
+[60:18.88]  and it just does the right thing, right?
+[60:20.96]  And I was one of those guys who always
+[60:22.16]  read the instruction manual for every
+[60:23.32]  video game that I bought. And I remember
+[60:24.88]  the first time I read about a contextual
+[60:26.20]  action and I just thought it was like
+[60:27.20]  this really cool idea. And, uh,
+[60:29.88]  you know, the
+[60:31.60]  the thing about a contextual action is
+[60:32.88]  we need to know what you are attempting
+[60:34.04]  to do. We have a little bit of context,
+[60:36.20]  and then we can
+[60:37.32]  and then we can help. Uh, and I think
+[60:40.00]  this is critically important because,
+[60:42.12]  you know, imagine this world that we
+[60:43.24]  reach, right? Where where we have agents
+[60:45.20]  that are helping you thousands of times
+[60:46.56]  per day.
+[60:48.00]  Um, imagine if the only way we could
+[60:50.28]  tell you that we helped you is if we
+[60:51.48]  could like push notify you.
+[60:54.40]  So, you get a thousand push
+[60:55.84]  notifications a day of an AI saying
+[60:57.68]  like, "Hey, I did this thing. Do you
+[60:59.04]  like it?" It gets super annoying, right?
+[61:01.40]  Whereas, imagine going back to software
+[61:03.00]  engineering, like, I was looking at a
+[61:05.04]  dashboard and I noticed some like key
+[61:07.04]  metric had like gone down.
+[61:09.64]  And, you know, at that point in time, an
+[61:11.68]  AI could like maybe go take a look and
+[61:13.60]  then surface the fact that it has an
+[61:15.20]  opinion on why this metric went down and
+[61:16.64]  maybe a fix right there right when I'm
+[61:18.64]  looking at the dashboard. Right? That
+[61:20.36]  would be like that would much more keep
+[61:21.88]  me in flow
+[61:23.12]  and enable the agents to take action on
+[61:25.20]  like many more things. So, in my mind,
+[61:27.16]  like,
+[61:28.28]  part of why I'm excited for us to have a
+[61:29.96]  browser is that I think we have then
+[61:32.12]  like much more context around like what
+[61:35.84]  we should help with. Users have much
+[61:37.44]  more control over what they want us to
+[61:39.44]  look at. It's like, "Hey, if you want to
+[61:40.60]  open If you want us to like take action
+[61:42.12]  on something, you can open it in your AI
+[61:43.24]  browser. If you don't, then you can open
+[61:44.72]  it in your other browser." Right? So,
+[61:46.04]  like really clear control and
+[61:47.08]  boundaries. And then, we have the
+[61:49.84]  ability to build UX that's like mixed
+[61:51.44]  initiative so that we can surface
+[61:53.64]  contextual actions to you like at the
+[61:55.12]  time that they're helpful, as opposed to
+[61:56.72]  just like randomly notifying you.
+[61:58.44]  Hearing the vision for Codex being the
+[61:59.80]  super assistant. It's not just there to
+[62:01.96]  code for you. It's trying to do a lot
+[62:03.76]  for you as a teammate and as this kind
+[62:05.28]  of super teammate that makes you awesome
+[62:06.96]  at work. So, I get this.
+[62:09.84]  Speaking of that, are there other
+[62:11.96]  non-engineering
+[62:13.48]  common use cases for Codex? Just ways
+[62:15.44]  that non-engineers We talked about it,
+[62:17.04]  you know, designers prototyping,
+[62:18.52]  building stuff. Are there any kind of
+[62:20.60]  other unexpected ways people are using
+[62:22.28]  Codex that aren't engineers? I mean,
+[62:24.48]  there's a load of a load of unexpected
+[62:26.24]  ways, but I think like most of what
+[62:29.08]  we're seeing like real traction with
+[62:31.04]  people using things are still for now
+[62:32.52]  like very like
+[62:34.52]  I would say coding adjacent or like sort
+[62:36.76]  of tech-oriented places where there's
+[62:38.84]  like a mature ecosystem. Um, or, you
+[62:41.32]  know, maybe you're doing data data
+[62:42.56]  analysis or something like that. I
+[62:44.96]  personally am expecting that we're going
+[62:47.00]  to see a lot more of that over time. Um,
+[62:49.40]  but for now, like, we're keeping the
+[62:50.60]  team like very focused on just coding
+[62:52.08]  for now cuz there's so much more work to
+[62:53.36]  do. For people that are thinking about
+[62:55.24]  trying out Codex, is there like a
+[62:57.68]  Does it work for all kinds of code
+[62:59.00]  bases? Uh, what what code does it
+[63:01.24]  support? If you're like, I don't know,
+[63:03.68]  SAP, can you add Codex and start
+[63:05.96]  building things? What's kind of like the
+[63:07.64]  sweet spot? Where does it start to not
+[63:09.48]  be amazing yet? This I'm really glad you
+[63:12.40]  asked this question, actually, because
+[63:13.88]  the best way to try Codex is to give it
+[63:15.84]  your hardest tasks,
+[63:17.52]  which is a little different than some of
+[63:19.48]  the other coding agents. Like, you know,
+[63:22.08]  some tools you might think, "Okay, let
+[63:23.36]  me like start easy or just like, you
+[63:25.36]  know, like vibe code something random
+[63:27.48]  and decide if I like the tool." Whereas,
+[63:29.64]  like, we're really building Codex to be
+[63:31.80]  the like professional tool that you can
+[63:33.52]  give your like hardest problems to.
+[63:35.96]  Um, and you know, that writes like
+[63:37.24]  high-quality code in your like enormous
+[63:39.20]  code base that is in fact not perfect
+[63:41.16]  right now.
+[63:42.32]  So, yeah, I think if you're going to try
+[63:43.32]  Codex, you want to try it on like a real
+[63:45.64]  task that you have, and not necessarily
+[63:48.32]  like dumb that task down to something
+[63:49.72]  that's like trivial, but actually like,
+[63:52.56]  you know, like, a good one would be like
+[63:54.12]  you have a hard bug and you don't know
+[63:55.36]  what what's causing that bug and you ask
+[63:56.76]  Codex to like help figure that out. Or
+[63:58.48]  like to implement that, you know, the
+[63:59.80]  fix. I love that answer. Just give it
+[64:02.00]  your hardest problem. I will say like,
+[64:03.80]  you know, if you if you're like, "Hey,
+[64:04.80]  okay, but well, the hardest problem I
+[64:06.12]  have is that I need to build like a new
+[64:07.88]  unicorn business." Like, obviously,
+[64:09.32]  that, you know,
+[64:10.68]  it's not going to work.
+[64:11.92]  Uh, not yet. So, I think it's like give
+[64:14.92]  it like the hardest problem, but
+[64:16.68]  something that is still like one like
+[64:19.28]  question, right? Or one task, um, to
+[64:21.80]  start. That's if you're testing, and
+[64:23.00]  then over time, you can learn how to use
+[64:24.20]  it for like bigger things. Yeah, what
+[64:25.84]  languages does does it support?
+[64:27.48]  Basically, the way we've trained Codex
+[64:29.12]  is like there's a distribution of
+[64:30.44]  languages that we support, and it's like
+[64:32.04]  fairly aligned with like the frequency
+[64:34.12]  of these languages in the world. So,
+[64:36.16]  unless you're writing some like very
+[64:37.48]  esoteric language or like some private
+[64:39.08]  language, it should do fine in your
+[64:40.20]  language. If someone was just getting
+[64:42.00]  started, is there a tip you could share
+[64:44.60]  to help them be successful? Like, if you
+[64:46.04]  could just whisper a little tip into
+[64:48.16]  someone just setting up Codex for the
+[64:49.48]  first time to help them have a really
+[64:51.00]  good time.
+[64:52.08]  What's something you'd whisper?
+[64:53.84]  I might say try a few things in
+[64:55.48]  parallel.
+[64:56.68]  Right? So, you could try giving it a
+[64:57.80]  hard task. Um,
+[65:00.12]  maybe ask it to understand the code
+[65:01.52]  base. Uh, formulate a plan with it
+[65:04.68]  around an idea that you have, and kind
+[65:06.76]  of build your way up from there. And
+[65:08.00]  like, sort of the meta idea here is it's
+[65:10.16]  again, it's like you're building trust
+[65:12.28]  with a new teammate.
+[65:13.76]  Right? And so, like, you wouldn't go to
+[65:15.16]  a new teammate and just give them like,
+[65:16.36]  "Hey, do this thing. Here's zero
+[65:17.72]  context." You would start by like first
+[65:19.20]  making sure they understand the code
+[65:21.24]  base, and then you would like maybe
+[65:22.68]  align on a plan and approach, and then
+[65:24.12]  you would have them go off and do it bit
+[65:25.40]  by bit.
+[65:26.32]  Right? And I think if you use Codex in
+[65:27.56]  that way, you'll just sort of naturally
+[65:28.92]  start to understand like the different
+[65:30.20]  ways of prompting it because it is it's
+[65:32.20]  a super powerful like agent and model,
+[65:34.68]  but it is it is a little bit different
+[65:36.28]  to prompt Codex than other models. Just
+[65:38.32]  a couple more questions. One, we touched
+[65:40.84]  on this a little bit.
+[65:42.60]  As AI does more and more coding, there's
+[65:45.32]  always this question of should I learn
+[65:46.60]  to code? And what do I should I spend
+[65:48.48]  time doing this sort of thing?
+[65:50.08]  For people that are trying to figure out
+[65:52.24]  what to do with their career, especially
+[65:53.52]  if they're into software engineering,
+[65:55.04]  computer science, do you think there are
+[65:56.76]  specific elements of computer science
+[65:58.92]  that are more and more important to lean
+[66:01.12]  into? Maybe things they don't need to
+[66:03.08]  worry about. Like, what do you think
+[66:04.08]  people should be leaning into skill-wise
+[66:06.76]  in as this becomes more and more of a
+[66:08.72]  thing in our workplace?
+[66:11.20]  I think there's like a couple
+[66:13.12]  angles you could go at this from.
+[66:15.56]  Um, I think the
+[66:18.24]  Well, the easiest one to think of at
+[66:20.40]  least is just like be a doer of things.
+[66:23.80]  Um, I think that, you know, with coding
+[66:26.04]  agents um, getting better and better
+[66:28.28]  over time, it's just what you can do as
+[66:31.64]  even like someone in college or a new
+[66:33.36]  grad is just like so much more than what
+[66:35.28]  that was before. And so, I think you
+[66:37.40]  just want to be taking advantage of
+[66:38.68]  that.
+[66:39.80]  And definitely when I'm looking at like
+[66:41.20]  hiring folks who are earlier career,
+[66:42.68]  it's like definitely something that I
+[66:43.84]  think about is how
+[66:45.88]  how productive are they using the latest
+[66:47.56]  tools?
+[66:48.48]  Right? They should be like super
+[66:49.52]  productive. And if you think of it in
+[66:51.28]  that way, they actually have like less
+[66:52.80]  of a handicap than before versus a a
+[66:55.04]  more senior career person because,
+[66:57.12]  you know, the divide is actually getting
+[66:58.56]  smaller because they've got these
+[66:59.48]  amazing coding agents now. Um, so,
+[67:01.40]  that's one thing, which is just like, I
+[67:02.56]  guess the thing the advice is just like
+[67:04.88]  learn about whatever you want, but just
+[67:06.48]  make sure you spend time doing things,
+[67:07.84]  not just like fulfilling homework
+[67:09.44]  assignments, I guess.
+[67:11.24]  I think the other side of it, though, is
+[67:12.64]  that it's still deeply worth
+[67:15.12]  understanding like what makes a good
+[67:17.76]  like overall software system. So, I
+[67:20.40]  still think that like skills like really
+[67:22.32]  strong systems engineering skills
+[67:24.88]  or even like really effective like
+[67:27.44]  communication and collaboration with
+[67:28.88]  your team. Skills like that, I think,
+[67:30.68]  are are important. They're going to
+[67:32.08]  continue to matter for for quite some
+[67:34.44]  time. Like, I don't think it's going to
+[67:35.56]  be like all of a sudden, uh,
+[67:38.52]  the AI coding agents are just able to
+[67:40.12]  build like perfect systems without your
+[67:42.16]  help. I think it's going to look much
+[67:43.76]  more gradual, where it's like,
+[67:46.00]  "Okay, we have these AI coding agents.
+[67:48.44]  They're able to validate their work."
+[67:50.52]  It's still important and like that for
+[67:51.88]  example, like, thinking of an engineer
+[67:53.92]  who was working on Atlas since we were
+[67:55.04]  talking about it, he set up Codex so
+[67:57.24]  that it can like verify its own work,
+[67:58.76]  which is a little bit non-trivial
+[68:00.04]  because of the the nature of the Atlas
+[68:01.16]  product. So, the way that he did that
+[68:02.64]  was he actually prompted Codex like,
+[68:04.08]  "Hey, why can't you verify your work?
+[68:05.84]  Fix it." And like did that on a loop.
+[68:08.00]  Right? And so,
+[68:09.64]  you still like at various phases are
+[68:11.76]  going to want a human in the loop to
+[68:12.88]  like help configure the coding agent to
+[68:14.96]  be effective. And so, I think like you
+[68:17.76]  still want to be able to reason about
+[68:19.08]  that. So, maybe it's like less important
+[68:20.72]  that you can like
+[68:22.32]  type really fast and like you understand
+[68:24.16]  exactly how to write Not that anyone
+[68:26.00]  writes a, you know, for each loop or
+[68:27.32]  something, right? But, it is
+[68:30.04]  or, you know, you don't need to know how
+[68:30.96]  to implement like a specific algorithm.
+[68:32.52]  But, I think you need to be able to
+[68:33.36]  reason about the different systems and
+[68:34.52]  like what makes like effective a
+[68:36.40]  software engineering team effective. So,
+[68:38.20]  I think that's uh the other really
+[68:39.44]  important thing. And then like maybe the
+[68:40.76]  last angle that you could take is
+[68:43.24]  I think if you're on the frontier of
+[68:45.40]  knowledge for a given thing,
+[68:47.80]  I still think that's like deeply
+[68:49.04]  interesting to go down. Partially
+[68:50.24]  because that knowledge is still going to
+[68:52.32]  be like
+[68:54.12]  uh,
+[68:55.16]  you know, agents aren't going to be as
+[68:56.36]  good at that, but also partially because
+[68:58.24]  I think that like by trying to advance
+[68:59.56]  the frontier of a specific thing, you'll
+[69:01.04]  actually like end up like being forced
+[69:03.68]  to take advantage of coding agents and
+[69:05.64]  like using them to accelerate your own
+[69:08.00]  workflows as you go. What's an example
+[69:09.68]  that when you when you talk about being
+[69:10.76]  at the frontier of something? Codex
+[69:12.28]  writes a lot of the code that helps like
+[69:13.56]  manage its training runs, the key
+[69:15.68]  infrastructure.
+[69:17.00]  Uh, you know, we move pretty fast, and
+[69:19.04]  so we have a Codex code review is like
+[69:21.88]  catching a lot of mistakes. It's
+[69:23.08]  actually caught some like pretty
+[69:23.92]  interesting configuration mistakes.
+[69:25.88]  And, uh, you know, we're starting to see
+[69:27.80]  glimpses of the future where
+[69:29.72]  we're actually starting to have Codex
+[69:31.72]  even like be on call for its own
+[69:33.40]  training, which is pretty interesting.
+[69:35.96]  Um so, there's lots there.
+[69:37.88]  Uh wait, what does that mean to be on
+[69:39.12]  call for its own training? So, it's
+[69:40.20]  running, it's training, and it's like,
+[69:41.60]  "Oh, something broke. Someone needs" And
+[69:43.40]  it it does it like alert people or it's
+[69:44.92]  like, "Here, I'm going to fix the
+[69:45.88]  problem and re- Yeah, this is an early
+[69:47.76]  idea that we're like figuring out. But
+[69:49.88]  the basic idea is that, you know, during
+[69:51.44]  a training run, there's like a bunch of
+[69:52.72]  graphs that like today like humans are
+[69:54.32]  looking at and it's like really
+[69:55.40]  important to like look at those. Um we
+[69:57.68]  call this babysitting.
+[69:59.04]  Because it's very expensive to train, I
+[70:00.52]  imagine, and very important to move fast
+[70:02.60]  and Exactly. And there's a lot of
+[70:04.24]  there's a lot of systems underlying uh
+[70:06.28]  the training run. And so, like a system
+[70:07.76]  could go down or there could be an error
+[70:09.16]  somewhere that gets introduced. And so,
+[70:10.96]  we might need to like fix it or pause
+[70:13.08]  things or I don't know, there's lots of
+[70:14.28]  actions we might need to take. And so,
+[70:16.28]  basically having Codex like run on a
+[70:17.92]  loop to like evaluate how those charts
+[70:20.16]  are moving over time,
+[70:21.64]  um this sort of this idea that we have
+[70:23.44]  to like how to enable us to like train
+[70:25.04]  like way more efficiently. I love that.
+[70:26.96]  This is very much along the lines of
+[70:28.84]  this is the future of agents. It's Codex
+[70:31.16]  isn't just for building code, right?
+[70:32.56]  It's it's a lot more than that.
+[70:34.80]  Yeah.
+[70:35.96]  Okay. Last question. Uh being at OpenAI,
+[70:39.00]  uh I can't not ask about your AGI
+[70:41.64]  timeline and how far you think we are
+[70:43.32]  from AGI. I know this isn't what you
+[70:44.84]  work on,
+[70:45.84]  but there's a lot of opinions, a lot of
+[70:48.28]  I don't know, timelines. How far do you
+[70:50.40]  think that we are from a
+[70:51.88]  uh humanly human version of AI, whatever
+[70:55.52]  that means to you? For me, I think that
+[70:58.96]  it's a little bit about like when do we
+[71:00.56]  see the acceleration curves kind of go
+[71:02.12]  like this or I don't know which way I'm
+[71:03.28]  mirrored here.
+[71:04.40]  Right? When do we see the hockey stick?
+[71:06.24]  And I think that the current limiting
+[71:09.00]  factor, I mean, there's many, but I
+[71:10.52]  think a current underappreciated
+[71:11.80]  limiting factor is like literally human
+[71:13.68]  typing speed or human multitasking speed
+[71:16.76]  on like writing prompts.
+[71:19.08]  Right? And like, you know, you were
+[71:20.20]  talking about it's like you can have an
+[71:21.24]  agent like watch all the work you're
+[71:22.28]  doing, but if you don't have the agent
+[71:24.36]  uh also validating its work,
+[71:26.52]  then you're still bottlenecked on like,
+[71:27.88]  can you go review all that code, right?
+[71:29.84]  So, my view is that we need to um
+[71:33.80]  unblock those productivity loops from
+[71:36.16]  like humans having to prompt and humans
+[71:37.68]  having to like about manually evaluate
+[71:39.28]  all the work. And so, if we can like
+[71:40.96]  rebuild systems to let the agent like be
+[71:43.28]  default useful,
+[71:44.88]  we'll start unlocking hockey sticks.
+[71:47.52]  Unfortunately, I don't think that's
+[71:48.40]  going to be binary. I think it's going
+[71:49.84]  to be very dependent on what you're
+[71:50.88]  building, right? So, like I would
+[71:52.32]  imagine that like next year, if you're a
+[71:53.92]  startup,
+[71:55.64]  and you're building a new new pieces
+[71:57.12]  like, you know, some new app or
+[71:58.08]  something,
+[71:59.36]  it'll be possible for you to set it up
+[72:00.68]  on a stack where agents are like much
+[72:02.08]  more self-sufficient
+[72:04.44]  than not, right? But now, let's say I I
+[72:06.56]  don't know, you mentioned SAP, right?
+[72:07.80]  Let's say you work in SAP. Like they
+[72:09.48]  have many like complex systems and
+[72:11.00]  they're not going to be able to just
+[72:11.88]  like get the agent to be self-sufficient
+[72:13.40]  overnight in those systems. So, they're
+[72:15.28]  going to have to slowly like maybe
+[72:16.76]  replace systems or update systems
+[72:19.32]  to allow the agent to like handle more
+[72:20.96]  of the work end to end.
+[72:22.56]  And so,
+[72:23.48]  basically my sort of long answer to your
+[72:25.24]  question, maybe boring answer, is that I
+[72:27.12]  think starting next year, we're going to
+[72:28.44]  see like early adopters like starting to
+[72:30.68]  like hockey stick their productivity.
+[72:33.08]  Um and then over the years that follow,
+[72:34.72]  we're going to see larger and larger
+[72:35.96]  companies like hockey stick their
+[72:37.12]  productivity. And then somewhere in that
+[72:39.68]  fuzzy middle is like when that hockey
+[72:41.96]  sticking will be like
+[72:43.84]  flowing back into the AI labs and that's
+[72:46.00]  when we'll we'll basically be at the AGI
+[72:48.00]  tier. I love this answer. It's very
+[72:49.76]  practical and it's something that comes
+[72:51.72]  up a lot on this podcast, just like the
+[72:53.56]  time to review all the things AI is
+[72:55.32]  doing is really annoying and a big
+[72:57.04]  bottleneck. I love that you're working
+[72:58.72]  on this because it's one thing to just
+[73:00.52]  make coding much more efficient and do
+[73:02.44]  that for people, it's another to
+[73:04.68]  take care of that final step of, okay,
+[73:06.36]  is this actually great? And that's so
+[73:08.36]  interesting that your sense is that's
+[73:10.20]  the limiting factor. It comes back to
+[73:11.80]  your earlier point of
+[73:13.56]  even if AI did not advance anymore, we
+[73:16.04]  have so much more potential to unlock if
+[73:18.56]  we uh
+[73:19.96]  as we learn to use it more effectively.
+[73:22.24]  Uh so, that is a really unique answer.
+[73:23.76]  I've never heard that perspective on
+[73:25.24]  what is the big unlock. Human typing
+[73:27.32]  speed to review basically what AI is
+[73:28.96]  doing for us. Mhm. So good. Okay. Uh
+[73:32.96]  Alexander, we covered a lot of ground.
+[73:35.16]  Is there anything that we haven't
+[73:36.68]  covered? Is there anything you wanted to
+[73:38.24]  share, maybe double down on before we
+[73:40.84]  get to our very exciting lightning
+[73:42.92]  round?
+[73:43.84]  I think one thing is that the Codex team
+[73:45.92]  is growing.
+[73:47.12]  And uh as I was just saying, we're still
+[73:49.12]  somewhat limited by human thinking speed
+[73:50.72]  and human typing speed. We're working on
+[73:52.68]  it. So, um
+[73:54.80]  if you're an engineer um or a
+[73:57.24]  salesperson or I'm hiring for product
+[73:59.64]  product person,
+[74:00.92]  uh please hit us up. I'm not sure the
+[74:03.00]  best way to give contact info, but I
+[74:05.52]  guess you can go to a jobs page or do
+[74:07.24]  they have contact for you? Actually, do
+[74:08.96]  you do listeners have contact for you?
+[74:10.36]  Before they send me like, "Hey, I want
+[74:11.84]  to apply to Codex." Uh I do have a
+[74:13.72]  contact form at lennyrachitsky.com. I'm
+[74:15.84]  afraid of all the amazing people that
+[74:17.44]  are here
+[74:17.80]  >> Okay. ping me, but there you go, we
+[74:19.04]  could try that. Let's see how that goes.
+[74:20.72]  >> yeah, or another maybe an easier way we
+[74:22.28]  can edit all that out. Or if it's up to
+[74:24.28]  you. But uh yeah, or I would just say
+[74:26.28]  you can drop us a DM. Uh for example,
+[74:28.80]  I'm amber rico on Twitter and hit me up
+[74:31.52]  if you're interested in joining the
+[74:32.40]  team. What a dream job for so many
+[74:34.44]  people.
+[74:35.60]  What's a sign they will I don't know,
+[74:38.08]  what's like a way to filter people a
+[74:39.36]  little bit so they're not flooding your
+[74:41.32]  inbox? So, specifically if you want to
+[74:43.80]  join the Codex team, then you need to be
+[74:46.00]  a technical person who uses these tools.
+[74:49.04]  And I think I would just ask yourself
+[74:50.24]  the question,
+[74:51.52]  uh hey, let's say, you know, I were to
+[74:53.24]  join OpenAI and work on Codex
+[74:55.76]  over the next 6 months, you know, and
+[74:57.80]  crush it, what does the life of a
+[74:59.88]  software engineer look like then? And I
+[75:01.24]  think if you have an opinion on that,
+[75:02.56]  you should apply. And if you
+[75:04.12]  don't have an opinion on that and have
+[75:05.48]  to think about it first,
+[75:07.80]  you know, depending on how long you have
+[75:08.88]  to think about it, I guess that would be
+[75:09.96]  the filter, right? Like I think
+[75:11.76]  there's a lot of people thinking about
+[75:12.96]  the space and so, we're
+[75:15.16]  we're very interested in folks who
+[75:17.52]  sort of have already been thinking about
+[75:20.32]  like what the future should look like
+[75:21.44]  with agents. And like we don't have to
+[75:22.68]  agree on where where we're going. But I
+[75:24.60]  think we want people who like are very
+[75:25.96]  passionate about the topic, I guess.
+[75:28.04]  It's very rare to be working on a
+[75:30.00]  product that has this much impact and is
+[75:31.96]  at such a
+[75:33.28]  bleeding edge of what's possible. It's a
+[75:36.16]  what a cool role for the right person.
+[75:37.64]  So, I'm it's awesome that you have an
+[75:39.56]  opening and this audience is
+[75:42.04]  a really good fit potentially for for
+[75:44.72]  that role. So, I hope we find someone,
+[75:46.28]  that would be incredible. With that,
+[75:48.16]  we've reached our very exciting
+[75:50.12]  lightning round. I've got five questions
+[75:52.00]  for you, Alexander. Are you ready?
+[75:54.36]  I don't know what these are, but I'm
+[75:55.72]  excited. Let's do it. Uh they're uh the
+[75:58.36]  same questions asked everyone except for
+[76:00.16]  the last one. So, uh
+[76:02.52]  probably not a surprise. I should
+[76:04.04]  probably make them more more often a
+[76:06.20]  surprise. Okay, first question, what are
+[76:08.16]  a couple books that you recommend most
+[76:09.60]  to other people? Two or three books that
+[76:11.52]  come to mind.
+[76:12.88]  I have been reading a lot of science
+[76:15.16]  fiction recently. And I'm sure this has
+[76:17.24]  been recommended before, but the
+[76:18.64]  Culture.
+[76:20.68]  I think it's Ian Banks is the name of
+[76:22.20]  the author.
+[76:23.40]  Part of why I love it is because it's
+[76:24.72]  like
+[76:25.76]  basically relatively recent writing
+[76:28.56]  about a future with AI, but it's an
+[76:31.08]  optimistic future with AI.
+[76:33.32]  Um and I think, you know, a lot of
+[76:34.64]  sci-fi is like fairly dystopian.
+[76:36.88]  Um but this is like people uh sort of
+[76:39.28]  the joke at least on the Culture
+[76:41.00]  subreddit is that let me let me see if I
+[76:43.20]  can get this right. It is a
+[76:45.44]  like space communist utopia.
+[76:48.12]  Or or like I think it's a gay space
+[76:49.88]  communist utopia.
+[76:51.92]  Um and uh I just think it's like really
+[76:53.88]  fun to think about um like to use the
+[76:56.60]  Culture as a way to think about like
+[76:57.84]  what kind of world can we usher in and
+[76:59.32]  like what decisions can we make today to
+[77:00.88]  help usher in that world. Well, I've not
+[77:03.00]  I I don't think anyone's recommended
+[77:04.16]  that. I know you're reading, you
+[77:05.76]  mentioned before we started recording,
+[77:06.88]  Lord of the Rings right now. Uh if you
+[77:09.20]  want another AI-ish
+[77:11.20]  sci-fi book, uh have you read Fire Upon
+[77:13.64]  the Deep?
+[77:15.00]  No, I haven't.
+[77:15.68]  >> Okay. It's uh incredibly good. It's like
+[77:18.64]  uh a sci-fi space opera sort of epic
+[77:21.88]  tale
+[77:22.84]  with uh super intelligence.
+[77:25.04]  Cool. Yeah, somewhat mostly not
+[77:27.24]  optimistic, but somewhat optimistic.
+[77:29.92]  Okay, next question. Is there a
+[77:31.80]  favorite recent movie or TV show that
+[77:34.80]  you've really enjoyed?
+[77:36.24]  Yeah, there's an anime called Jujutsu
+[77:37.68]  Kaisen,
+[77:38.92]  which I really like. Um
+[77:40.92]  again, it's got a kind of a slightly
+[77:42.40]  dark topic of like demons.
+[77:45.12]  Um but what I love about it is that the
+[77:47.16]  hero is really nice. And I think there's
+[77:49.04]  this new wave of like anime and cartoons
+[77:51.76]  where
+[77:52.68]  the protagonists are
+[77:55.08]  really friendly and like people who care
+[77:57.36]  about the world rather than being like
+[77:59.44]  sort of like if you look at like some
+[78:01.36]  older anime like that started the genre
+[78:03.68]  like, you know, there was there was like
+[78:05.28]  Evangelion
+[78:06.80]  uh or Akira. And like those characters,
+[78:08.92]  the protagonists are like deeply flawed,
+[78:11.08]  like quite unhappy.
+[78:13.12]  Um they they didn't start the genre, but
+[78:15.24]  it was like a trend for a while to sort
+[78:16.96]  of
+[78:17.96]  poke fun at the idea that in these in
+[78:19.92]  these cartoons, the protagonist was very
+[78:22.16]  young but being given a ridiculous
+[78:23.52]  amount of responsibility to like save
+[78:25.00]  the world.
+[78:26.08]  And so, there was kind of a a wave of
+[78:27.56]  like
+[78:28.80]  uh content that was like critiquing this
+[78:30.88]  by making the character like basically
+[78:32.44]  go through like serious like mental
+[78:34.08]  issues in the middle of the show.
+[78:36.44]  Um and I'm not saying this is better,
+[78:38.04]  but at least it's quite fun to have like
+[78:39.52]  these like really positive protagonists
+[78:42.12]  or just trying to help everyone around
+[78:43.24]  them. I love how much we're learning
+[78:44.68]  about your personality hearing these
+[78:47.16]  recommendations. Yeah. Nice
+[78:49.28]  protagonists, optimistic futures. I
+[78:52.20]  think you know, if you don't believe it,
+[78:53.68]  you can't will it into existence. Mhm.
+[78:56.08]  You need a balance. This is your
+[78:57.48]  training data.
+[78:59.12]  Is there a product you recently
+[79:01.24]  discovered that you really love? Could
+[79:02.92]  be an app, could be some clothing, could
+[79:05.16]  be some kitchen gadget, tech gadget,
+[79:08.04]  a hat.
+[79:09.04]  Yeah, so I have been like quite into
+[79:12.84]  uh you know, combustion engines
+[79:15.20]  um and cars. Actually, the reason I came
+[79:18.44]  to America initially was cuz I wanted to
+[79:20.44]  work on like US aircraft. Um but you
+[79:23.04]  know, now I work in software.
+[79:24.76]  And so for the longest time I've
+[79:26.72]  basically only had like quite old sports
+[79:29.16]  cars.
+[79:30.24]  Old just cuz they were more affordable.
+[79:32.36]  And then recently
+[79:36.56]  We got a Tesla instead.
+[79:38.80]  And I have to say that I find the Tesla
+[79:40.92]  software like quite inspiring.
+[79:43.04]  In particular, it has like the
+[79:44.76]  self-driving feature and you know, I've
+[79:47.04]  mentioned a few times like today like I
+[79:49.20]  think it's really interesting to think
+[79:50.56]  about how to build like mixed initiative
+[79:51.96]  software that makes you feel maximally
+[79:53.52]  empowered as a human.
+[79:55.72]  Maximally in control, but yet you're
+[79:57.08]  getting a lot of help.
+[79:58.60]  And I think they did a really good job.
+[80:00.92]  With enabling sort of the car to drive
+[80:03.16]  itself, but All these different ways
+[80:05.40]  that you can adjust what it's doing
+[80:06.92]  without turning off the self-driving. So
+[80:08.56]  like you can accelerate and you know,
+[80:10.12]  it'll like listen to that. You can turn
+[80:11.76]  a knob to change its speed. You can
+[80:13.76]  steer slightly. Um
+[80:16.16]  I think it's a it's actually a master
+[80:17.36]  class in like building an agent. That
+[80:20.16]  Still leaves the human in control. This
+[80:21.76]  reminds me Nick Turley's whole
+[80:23.52]  mantra was are we maximally accelerated?
+[80:25.96]  Yeah.
+[80:26.20]  >> It was like it's completely infiltrated
+[80:28.04]  everything at OpenAI which makes sense.
+[80:30.08]  That tracks.
+[80:31.80]  Uh two more questions. Do you have a
+[80:34.20]  life motto that you often think about
+[80:36.92]  come back to in work or in life that's
+[80:38.68]  been helpful? I don't know if I have a
+[80:40.56]  life motto, but maybe I can tell you
+[80:42.12]  about the number one value
+[80:44.20]  Company value from my startup. Love it.
+[80:46.16]  Which is still something that sticks
+[80:47.44]  with me, which is to be kind and candid.
+[80:51.12]  That tracks.
+[80:53.12]  Kind and candid. Wow. Yeah, and we had
+[80:55.52]  to put them together because we
+[80:58.20]  As founders realized that we
+[81:01.04]  Often would be nice.
+[81:04.16]  And it wasn't actually the right thing
+[81:06.72]  to do.
+[81:07.84]  We would like delay the difficult
+[81:08.96]  conversations and we were not candid.
+[81:11.00]  And so every time we would like remind
+[81:12.60]  ourselves of this motto and then we
+[81:13.80]  would become more candid and then 6
+[81:15.12]  months later we would realize that we
+[81:16.52]  were in fact not candid 6 months ago.
+[81:18.72]  And we needed to be even more candid.
+[81:20.72]  So then the question is like okay, like
+[81:22.72]  How could how should we be candid? It's
+[81:24.04]  like okay, well Let's let's think of
+[81:25.96]  being candid as an act of kindness, but
+[81:27.60]  also think of that both in terms of
+[81:29.12]  doing it and willing ourselves to do it,
+[81:30.44]  but also in terms of how we frame it to
+[81:31.88]  people. That is a beautiful
+[81:34.52]  way of summarizing how to how to lead
+[81:36.56]  well. What's the The book about dare
+[81:39.60]  challenge directly but care deeply.
+[81:42.00]  Radical candor. Oh yeah, yeah, right.
+[81:43.88]  Yeah. Yeah, so it's like another way of
+[81:45.00]  thinking about radical candor. Okay,
+[81:46.88]  last question. I was looking up your
+[81:48.28]  last name just like hey, what's the
+[81:50.44]  what's the story here? So your last name
+[81:51.76]  is Imbrios. And I was talking to
+[81:53.88]  ChatGPT.
+[81:55.32]  And it told me the most famous
+[81:56.52]  individuals with the surname are
+[81:58.96]  The influential Greek poet and
+[82:00.72]  psychoanalyst Andreas Imbrios.
+[82:04.00]  And his relative the wealthy shipping
+[82:05.88]  magnate and art collector George
+[82:08.00]  Imbrios.
+[82:09.60]  So the question is which of these two do
+[82:11.28]  you most identify with?
+[82:13.28]  The Greek poet and psychoanalyst or the
+[82:15.96]  wealthy shipping magnate and art
+[82:17.40]  collector?
+[82:18.88]  I think it's it's going to have to be
+[82:20.24]  the poet because Uh
+[82:22.84]  He
+[82:24.00]  He loved the island that our family's
+[82:26.12]  from. Wait, you know these people? Okay,
+[82:28.76]  this is not news to you. Okay.
+[82:30.48]  >> Well, I mean it's an enormous family,
+[82:32.00]  but it's like Greek. So you know, these
+[82:34.04]  big families everyone like everyone's
+[82:35.80]  your uncle. You know what I mean? Like
+[82:37.24]  my mother's Malaysian and also like
+[82:38.64]  everyone is my uncle or aunt in Malaysia
+[82:40.84]  too if that makes sense. Yeah. But
+[82:43.88]  Yeah, he he loved this island that the
+[82:46.52]  family sort of like initiated from.
+[82:48.92]  I believe I don't actually know where
+[82:50.60]  that shipping magnate I think it was New
+[82:52.24]  York or something, but anyway, we all
+[82:54.12]  came from this island called Andros.
+[82:56.08]  Which is a really beautiful place and
+[82:58.40]  it's like there's more like livestock
+[82:59.76]  there than than humans.
+[83:01.92]  Not too many tourists go there.
+[83:04.24]  But I think he like part of what I think
+[83:06.72]  is really cool is like he published a
+[83:07.88]  lot and a lot of his writing is about
+[83:09.28]  like the beauty of that island, which I
+[83:11.36]  think is super cool.
+[83:12.76]  Wow, that was an amazing answer. Two
+[83:14.80]  more questions. Where can folks find you
+[83:16.08]  if they want to follow you online and
+[83:17.56]  you know, maybe reach out and then how
+[83:18.80]  can listeners be useful to you? I I'm
+[83:20.60]  one of those people who has social media
+[83:22.24]  only for the purposes of having work.
+[83:24.28]  You know, my phone my phone turns black
+[83:25.72]  and white at like 9:00 p.m. at night.
+[83:27.64]  But yeah, so Twitter or X at nbrico.
+[83:32.16]  And
+[83:33.72]  yeah, if you post in r/codex I'll
+[83:35.32]  probably see it.
+[83:36.80]  So you know, you can go there.
+[83:39.16]  How can listeners be useful?
+[83:42.04]  I would say please try Codex.
+[83:43.96]  Please share feedback. Let us know what
+[83:45.64]  to improve. We pay a ton of ton of
+[83:47.44]  attention to feedback. I think it's like
+[83:49.44]  Honestly like the growth has been
+[83:51.24]  amazing, but it's still very early
+[83:52.60]  times.
+[83:53.80]  So we still pay a lot of attention and
+[83:55.64]  hope to do so forever.
+[83:57.12]  And also I would say if you're
+[83:59.64]  interested in in working On the future
+[84:02.40]  of coding agents and then agents
+[84:03.64]  generally, then please
+[84:05.52]  Apply to our job site and or message me
+[84:08.56]  in those social media places.
+[84:10.36]  Alexander, this was awesome. I always
+[84:11.92]  love meeting people working on AI
+[84:14.20]  because it always feels like there's
+[84:16.04]  very I don't know
+[84:17.68]  Sterile, scary, mysterious thing. And
+[84:20.28]  then you meet the people building these
+[84:21.52]  tools and they're always just so
+[84:23.20]  awesome. And you especially just so nice
+[84:26.48]  and
+[84:27.56]  uh As you like the examples you shared
+[84:30.20]  optimism and kindness, you know, this is
+[84:32.32]  what we want to be. This is these are
+[84:34.40]  the kinds of people we want to be
+[84:35.36]  building these tools that are going to
+[84:36.40]  drive the future. So um I'm I'm really
+[84:39.44]  thankful that you did this.
+[84:40.92]  Um
+[84:41.52]  Grateful to have met you and thank you
+[84:43.76]  so much for being here.
+[84:45.04]  Yeah, thanks so much for having me. This
+[84:46.40]  is fun.
+[84:48.60]  Thank you so much for listening. If you
+[84:50.24]  found this valuable, you can subscribe
+[84:51.80]  to the show on Apple podcast, Spotify,
+[84:54.24]  or your favorite podcast app.
+[84:56.48]  Also, please consider giving us a rating
+[84:58.48]  or leaving a review as that really helps
+[85:00.64]  other listeners find the podcast. You
+[85:02.88]  can find all past episodes or learn more
+[85:04.96]  about the show at lennyspodcast.com.
+[85:08.24]  See you in the next episode.

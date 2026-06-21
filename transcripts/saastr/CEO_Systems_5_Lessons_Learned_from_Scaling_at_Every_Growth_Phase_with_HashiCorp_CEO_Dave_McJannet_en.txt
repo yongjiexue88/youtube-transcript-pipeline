@@ -1,0 +1,969 @@
+Title     : CEO Systems: 5 Lessons Learned from Scaling at Every Growth Phase with HashiCorp CEO Dave McJannet
+Video ID  : KJk5B3R9rBw
+URL       : https://www.youtube.com/watch?v=KJk5B3R9rBw
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 960
+Saved at  : 2026-06-20 23:12:53
+------------------------------------------------------------
+
+[00:00.78]  foreign
+[00:04.92]  I should probably start just with a
+[00:06.60]  quick little background of me since no
+[00:08.22]  one's ever heard of me I I'm the CEO of
+[00:10.20]  a company called hashicorp anybody here
+[00:12.18]  use our products in your Ops teams I
+[00:15.30]  actually bet it's much more than that
+[00:16.74]  because people don't realize that we are
+[00:18.48]  the company behind products like
+[00:20.40]  terraform Vault console Nomad vagrant
+[00:23.82]  Packer and a whole bunch of other Ops
+[00:25.80]  products that probably are if you're
+[00:27.66]  using Cloud infrastructure almost
+[00:28.86]  certainly you're using the good news is
+[00:30.30]  we make them open source so that's
+[00:32.34]  probably why you're not paying us
+[00:33.42]  anything but which is just how the model
+[00:34.92]  works so I've been in the in the startup
+[00:37.92]  ecosystem for a lot longer than I might
+[00:39.60]  care to admit
+[00:40.98]  um they're going on 20 years and I've
+[00:43.74]  kind of been intrigued by two things
+[00:45.96]  always one is I really like
+[00:48.18]  infrastructure I think infrastructure is
+[00:49.74]  really really cool I like knowing that
+[00:51.84]  when I go swipe my credit card at that
+[00:53.94]  gas station or whatever whatever
+[00:55.56]  application I'm using I know that it
+[00:58.08]  goes through products that we envisioned
+[00:59.52]  and built it doesn't matter to me that
+[01:01.08]  other people didn't don't know that we
+[01:03.24]  get a real visceral satisfaction out
+[01:04.86]  that I think that's one of the criteria
+[01:06.54]  for company buildings you really have to
+[01:07.98]  think what you're doing is cool I think
+[01:09.24]  infrastructure is cool I know that's
+[01:10.50]  weird number two I've been really
+[01:12.48]  obsessed with the notion of company
+[01:14.28]  building I think uh I think company
+[01:16.92]  building is a fundamentally team Pursuit
+[01:20.06]  where a group of people are aligned
+[01:22.44]  around a common idea and we win together
+[01:25.08]  we generate value together people pay us
+[01:28.14]  a dollar for our services or our
+[01:29.70]  products because that has value to them
+[01:31.26]  and that is inherently satisfying so I
+[01:33.72]  spent 20 plus years doing that I've
+[01:36.06]  actually done that inside some larger
+[01:37.98]  companies I spend a good amount of time
+[01:39.66]  at Microsoft earlier in my career and so
+[01:42.36]  I kind of got to see what scale looks
+[01:44.04]  like you know you want to see what it
+[01:45.48]  looks like to refresh a revenue report
+[01:47.22]  and have millions of dollars appear
+[01:49.32]  every time you refresh it that's what it
+[01:51.18]  looks like at Microsoft when you refresh
+[01:52.80]  revenue reports it is at an enormous
+[01:54.72]  enormous scale
+[01:56.58]  I also had then spent uh some time at
+[01:59.28]  one of these companies is projecting one
+[02:01.86]  of these companies here uh around 60
+[02:04.38]  million in Revenue uh one of them around
+[02:06.90]  100 million and then I did actually a
+[02:10.32]  handful of companies from zero through
+[02:11.88]  their IPO process so you'll see some
+[02:14.64]  commonalities here these are all
+[02:16.56]  infrastructure companies
+[02:18.24]  um they are all deeply under the
+[02:20.70]  coverage things you're not necessarily
+[02:22.02]  aware of
+[02:23.28]  when I look at web methods in particular
+[02:25.02]  you've probably never heard of web
+[02:25.92]  methods but it jumps out at me because
+[02:27.36]  it's an example of the craziness that
+[02:29.28]  happens in the financial markets that
+[02:30.72]  sometimes distracts us where methods
+[02:32.70]  went public on 15 million dollars in
+[02:35.16]  revenue and opened on the first day at
+[02:37.56]  seven billion dollars in valuation right
+[02:39.84]  that was in 2001. seven or eight years
+[02:42.78]  later after executing double-digit
+[02:44.76]  growth rates all through that time they
+[02:46.32]  sold for about 400 million dollars
+[02:48.66]  right so what that tells us is what we
+[02:51.66]  should be focused on is not so much
+[02:53.46]  worrying about the externalities we
+[02:54.84]  should be focused on the business
+[02:55.80]  building aspects of what we do because
+[02:58.02]  that's what's repeatable
+[03:00.36]  what strikes me with that lens backwards
+[03:02.82]  which looks very deliberate but in
+[03:04.20]  hindsight but in fact was fairly
+[03:05.70]  serendipitous is that there's in immense
+[03:08.22]  repeatability to the to the business
+[03:09.96]  building process and that's why a lot of
+[03:11.94]  you are serial entrepreneurs
+[03:13.80]  to me it's really these three things
+[03:15.66]  pick the market find the people build
+[03:19.02]  the systems those are the three aspects
+[03:21.60]  whether you're building a restaurant or
+[03:23.76]  whether you're building a car wash or
+[03:25.14]  whether you're building a software
+[03:26.16]  company that we do and you might say
+[03:28.32]  well hold on a second
+[03:30.06]  that's kind of backwards I don't pick a
+[03:31.74]  market I build a product and I take it
+[03:33.66]  to Market
+[03:34.98]  then I try and scale that product and I
+[03:37.62]  would I would suggest that that's a very
+[03:39.48]  inward looking view if you're looking
+[03:41.82]  from the lens of your customer we all
+[03:44.76]  participate in markets right if I am
+[03:48.18]  going to decide to do something
+[03:50.34]  buy a cup of coffee you know go to a gas
+[03:52.74]  station that decision is based on my
+[03:54.84]  Alternatives I'm spend so much money on
+[03:57.60]  that category so picking the market is
+[04:00.72]  actually what we do not Building
+[04:02.76]  Products ultimately your products will
+[04:04.86]  be delivered into a into you know behind
+[04:07.26]  that mission of what Market you want to
+[04:08.70]  enter but you are picking a market I
+[04:10.50]  think that's the most important thing
+[04:13.14]  if I'm a restaurateur for example and I
+[04:16.20]  say hold on a second I can I'm a chef I
+[04:18.96]  can cook lots of different things I'm
+[04:20.22]  gonna open a restaurant business I have
+[04:22.20]  a choice I want to either open a
+[04:24.42]  high-end Steakhouse or I can open a a
+[04:27.78]  family style business right I'm picking
+[04:31.44]  a market right in the overall world
+[04:33.72]  there's only so much money I'm going to
+[04:35.82]  spend on high-end steakhouses there's
+[04:37.56]  only so much money I'm going to spend on
+[04:39.00]  on family-based restaurants when I make
+[04:42.18]  a decision as to where I'm going to
+[04:43.20]  spend my money it's against the market
+[04:45.06]  in which you're participating my
+[04:47.10]  favorite line from uh Frank slootman is
+[04:50.22]  you know
+[04:51.48]  only the government can print money the
+[04:53.70]  rest of us have to take it from somebody
+[04:54.96]  else right which I think is a pretty
+[04:56.70]  profound state which tells us we all
+[04:58.44]  participate in markets which are
+[05:00.42]  somewhat finite and for me to take money
+[05:02.46]  from the high-end restaurant business I
+[05:04.92]  have to take it from somebody else
+[05:06.18]  that's just how markets work markets are
+[05:08.40]  fights so pick your Market wisely
+[05:11.40]  if I'm going to pick a high-end
+[05:12.72]  Steakhouse obviously the people that I'm
+[05:15.36]  going to find are those that you know
+[05:17.34]  are dressed a certain way that allow me
+[05:19.74]  to charge a certain price you know I'm
+[05:21.54]  going to walk into this high-end
+[05:22.62]  restaurant with a maitre d that that is
+[05:24.90]  going to make sure I feel like I'm about
+[05:26.22]  to spend 500 bucks versus if I'm going
+[05:28.98]  to be at a family restaurant I might
+[05:30.60]  hire high school kids to do the same
+[05:32.76]  thing my product development processes
+[05:34.92]  are going to be different my lead to
+[05:36.60]  cash processes are going to be different
+[05:37.92]  because the way that I go to market is
+[05:40.38]  predicated on the market that I pick
+[05:42.00]  those people are different and lastly
+[05:45.12]  the systems are different so like I said
+[05:47.28]  how I build how I cook the food how I do
+[05:49.98]  all the things related to the product
+[05:51.36]  development process are just different
+[05:53.70]  so it turns out picking the market is
+[05:55.62]  the singular most important thing you're
+[05:57.54]  going to do
+[05:59.04]  if I were to give an example of it's
+[06:00.78]  like what Facebook has done right
+[06:02.52]  they've deliberately said we were a
+[06:04.56]  social media company but I want to be a
+[06:05.94]  metaverse company right they are making
+[06:07.50]  a decision as to which Market they're
+[06:09.06]  going to participate in for whatever
+[06:10.56]  reason they believe that that's going to
+[06:12.48]  be a big spend category I do
+[06:14.16]  infrastructure I'm happy to sell them
+[06:15.72]  the software that underpins it I have no
+[06:17.28]  idea whether that's a good Market or not
+[06:18.72]  but they are making the decision what
+[06:21.42]  they then have to do is they have to go
+[06:22.80]  find the people that know how to do that
+[06:25.86]  so on the product introduction side who
+[06:29.16]  knows how to build metaverse products
+[06:31.86]  I'm not sure maybe it's the folks from
+[06:33.78]  Linden Labs back in the day like they
+[06:35.52]  know how to do that there are other
+[06:36.84]  folks that do much better than me on the
+[06:39.18]  lead to cash on the customer acquisition
+[06:40.86]  side again how do I acquire customers
+[06:43.02]  that's a totally different game relative
+[06:45.18]  to being a social media company and
+[06:46.92]  they're gonna have to find the people
+[06:47.82]  that know how to do that
+[06:49.44]  the systems associated with all those
+[06:52.02]  aspects are also going to be different
+[06:53.76]  so that basic model is how we think
+[06:55.92]  about repeatable business building
+[06:57.00]  whether it's a car wash or a restaurant
+[06:58.56]  or whatever it might be my favorite
+[07:00.72]  example is actually the folks at
+[07:01.98]  snowflake who have been really in the
+[07:03.30]  news
+[07:04.20]  we were all looking at this Market 15
+[07:06.24]  years ago of like data explosion I made
+[07:08.94]  the decision I think this technology
+[07:10.56]  called Hadoop is going to be the way
+[07:12.00]  that data storage is done uh Bob mughley
+[07:15.18]  and team said you know I think actually
+[07:16.44]  the cloud data warehouse is how this is
+[07:18.36]  all going to be solved they made a
+[07:19.98]  decision do I build a data warehouse
+[07:21.72]  where I build a cloud data warehouse
+[07:23.88]  what Market do I want to be in they
+[07:26.40]  decided hey all the net you did is going
+[07:28.02]  to be generated largely around Cloud
+[07:29.58]  therefore we're going to build a data
+[07:31.50]  warehouse in Cloud because we think that
+[07:33.24]  spend category is going to grow they
+[07:35.16]  could have easily said I want to build a
+[07:36.42]  data warehouse for the private Data
+[07:37.80]  Center and they would have been wrong
+[07:39.18]  because it turns out picking the market
+[07:41.46]  is like I said the single most important
+[07:43.44]  thing that we do when we build
+[07:44.46]  businesses
+[07:45.90]  they then set out to find the people and
+[07:48.84]  they actually went and hired the team
+[07:50.10]  from Oracle that built the original
+[07:51.48]  relational uh or sorry analytic data
+[07:53.94]  warehouse for Oracle uh the database
+[07:56.04]  incumbent and on the go to market side
+[07:57.78]  they hired a group of people from EMC
+[07:59.46]  why because their customers are
+[08:01.86]  Enterprise customers they needed to hire
+[08:03.84]  sales people that knew how to how to
+[08:05.52]  reach those particular people all
+[08:07.62]  predicated on the market that they chose
+[08:09.26]  the systems that they built again
+[08:11.82]  customer acquisition systems you know
+[08:14.10]  new product introduction systems lead to
+[08:16.20]  Cache systems all predicated that this
+[08:18.90]  is the market we're going after
+[08:20.58]  so I'm always stuck by struck by those
+[08:24.12]  three aspects and we get a lot of advice
+[08:27.06]  particularly from our VC friends around
+[08:29.58]  picking markets and hiring people we
+[08:31.62]  certainly get a lot of feedback around
+[08:33.02]  hiring people uh everyone's got opinions
+[08:36.12]  about that one most of which I tend to
+[08:38.52]  disagree with but such is the nature of
+[08:40.98]  advice that we get what we don't talk
+[08:43.02]  about is the really really hard bit
+[08:44.58]  about the systems Building Systems
+[08:47.16]  building means the hard day-to-day
+[08:49.02]  execution that actually builds companies
+[08:50.64]  we can all talk strategy we can all talk
+[08:52.44]  about the right kind of people but it's
+[08:54.24]  waking up every single day and building
+[08:55.86]  the systems that builds companies
+[08:58.44]  and doing that over extended periods of
+[09:00.24]  time is how we build valuable companies
+[09:02.52]  so what I want to talk about
+[09:04.44]  just for the next 15 minutes or so are
+[09:06.90]  the core aspects of system building that
+[09:09.00]  we've learned from progressing through
+[09:10.38]  those different stages of growth at the
+[09:12.54]  companies we participated in
+[09:14.46]  the very very first one is this notion
+[09:16.62]  of phases I think this is the most
+[09:19.02]  profound thing that we've observed over
+[09:21.78]  the course of time I've worked for some
+[09:23.16]  CEOs that are really really good at this
+[09:24.90]  is understanding the different phases of
+[09:27.84]  growth that companies go through
+[09:31.08]  we use this sound bite a lot it says you
+[09:33.84]  know we're all if you're the founder of
+[09:35.22]  our company CEO of a company if you're
+[09:36.60]  on the exact team of a company we all
+[09:37.98]  get a lot of advice
+[09:39.66]  but it's not that the advice is wrong
+[09:42.36]  it's just that it's not typically
+[09:44.28]  matched to the phase of my company
+[09:46.80]  so for example someone might say you
+[09:48.60]  know what you should really do a product
+[09:50.04]  like growth model
+[09:51.66]  and you should really build marketing
+[09:53.28]  automation Machinery you should really
+[09:54.60]  invest deeply in HubSpot and all the
+[09:56.34]  things that come with that stack to
+[09:57.84]  allow you to do this product like growth
+[09:59.16]  motion
+[10:00.18]  well should I
+[10:02.04]  depends where I am in my face if I am
+[10:04.14]  just in the discovery phase of whether I
+[10:06.06]  have product Market fit that might be a
+[10:07.74]  waste of money right so it's not that
+[10:09.66]  the advice is wrong it's just not
+[10:11.70]  matched to the phase
+[10:14.16]  so for the last several companies we've
+[10:15.90]  done we've actually mentally had this
+[10:18.66]  identical model of phases which is there
+[10:21.42]  are you know very distinct phases your
+[10:23.70]  company goes through for us you know
+[10:26.16]  these dollar values roughly match our
+[10:28.86]  experience for you it'll be different
+[10:30.84]  depending on what Market you're in
+[10:33.18]  from zero to ten million dollars you're
+[10:35.04]  literally just trying to figure out
+[10:36.48]  patterns
+[10:38.04]  from 10 to 30 million you're trying to
+[10:40.26]  figure out how to reproduce those
+[10:41.58]  patterns and that's when you're largely
+[10:43.50]  at a product Market fit in our business
+[10:45.84]  um there's something magical about the
+[10:47.16]  30 million dollar number in my
+[10:48.66]  experience uh when we can get products
+[10:51.12]  of 30 million dollars they'll get to a
+[10:52.86]  hundred right so that 30 million dollar
+[10:54.60]  number really is important to us at 100
+[10:56.70]  million you're just scaling out that
+[10:58.20]  Playbook repeatability then there's
+[11:00.18]  early scale then there's mid scale and
+[11:01.80]  then typically around a billion dollars
+[11:03.12]  people diversify their product portfolio
+[11:04.92]  and say okay one product isn't enough
+[11:07.02]  we're going to start going to adjacent
+[11:09.18]  markets and growing
+[11:11.04]  this has enormous enormous implications
+[11:13.14]  for everything like let's just talk
+[11:14.82]  about it through the lens of picking
+[11:16.08]  markets
+[11:17.16]  from zero to ten you're actually just
+[11:18.90]  trying to discover what markets you're
+[11:20.52]  in what do your buyers compare you to
+[11:23.52]  like hey I might think I'm a database
+[11:25.68]  but actually if it turns out your
+[11:27.12]  customers don't think you're a database
+[11:28.38]  you're not competing for database
+[11:29.94]  dollars you're competing for some other
+[11:31.68]  dollars maybe there are no dollars in
+[11:33.36]  that in that market maybe you should
+[11:35.10]  change your thesis if that's what you
+[11:37.20]  think you're doing
+[11:39.18]  if your product doesn't have have fit
+[11:41.70]  people aren't reacting to the product at
+[11:43.92]  zero to ten there's no point in putting
+[11:45.84]  gas on the fire to expand it so this
+[11:47.94]  notion of pattern matching is the very
+[11:49.86]  first phase of the company life
+[11:51.84]  for what it's worth when I first joined
+[11:53.40]  hashicorp six and a half years ago we
+[11:54.90]  were at zero and I had the inside sales
+[11:57.00]  folks sit outside my office for a reason
+[11:59.04]  because I wanted to hear every single
+[12:00.90]  phone call they did I wanted to say what
+[12:03.00]  are people reacting to what are they not
+[12:04.56]  reacting to where are they where are
+[12:06.06]  they calling BS on what we do that was
+[12:08.28]  the 0 to 10 phase right it didn't matter
+[12:10.50]  I had marking automation systems it's
+[12:12.18]  irrelevant it's like do people believe
+[12:14.94]  in what I'm selling and will they buy
+[12:17.22]  from me even if it's experimental
+[12:19.98]  at 30 million right now you're at a
+[12:22.50]  slightly different scale now you got a
+[12:23.64]  bunch more sales people right you've
+[12:25.80]  just you've established that maybe that
+[12:27.18]  market is right the same thing holds
+[12:29.76]  true for the people's side of it and
+[12:31.62]  this is obviously we all understand but
+[12:33.18]  if you hire someone from Microsoft and
+[12:34.80]  say come and help me build my company at
+[12:36.90]  10 or 30 million dollars it's going to
+[12:38.52]  be really really hard for them because
+[12:40.20]  they just haven't seen it before it's a
+[12:42.42]  different different game and the hard
+[12:44.28]  part about startups and scaling startups
+[12:46.20]  in my view is this phase shifting notion
+[12:48.60]  which causes you to reinvent the company
+[12:50.64]  at every step along the way and that is
+[12:52.98]  hard that is why as I was joking you
+[12:56.34]  know if you look at my corporate photo
+[12:57.90]  from seven or ten years ago it looks
+[12:59.76]  different from my corporate photo today
+[13:00.96]  because it is hard to do this it is
+[13:04.14]  Relentless Relentless Relentless and
+[13:06.18]  most people trip through these phases so
+[13:09.06]  the first and foremost this notion of
+[13:10.68]  phases is critically important for your
+[13:12.90]  Market picking for your people and for
+[13:15.66]  your systems building comment and make
+[13:17.82]  on Market in fact I saw the folks at
+[13:19.68]  snowflake do this really really well
+[13:21.24]  when they got to 500 million 700 million
+[13:23.64]  they actually changed the market they
+[13:25.44]  picked a different Market they used to
+[13:26.82]  be in the data warehouse market ah
+[13:28.44]  that's not a big enough market and they
+[13:30.30]  deliberately shifted their Market to
+[13:32.40]  more to a more broad data platform
+[13:34.38]  market right why because it increases
+[13:36.36]  their addressable Market they are
+[13:37.92]  picking a different Market if they'd
+[13:39.96]  done that early it would have failed
+[13:41.22]  because they didn't have enough money
+[13:42.48]  enough repeatability of what they were
+[13:43.92]  doing to be able to make that real
+[13:46.32]  on the system side
+[13:48.96]  this is also why people say hey you got
+[13:51.72]  to replace that VP all the time because
+[13:54.18]  if the VP doesn't understand that they
+[13:56.70]  are having to re-architect the systems
+[13:58.92]  for the next phase everybody falls
+[14:01.56]  right so when people are not far enough
+[14:03.24]  out in front to architect for the next
+[14:05.28]  phase next phase next phase that's when
+[14:07.38]  companies hit a wall
+[14:10.02]  let's just talk about what I mean by
+[14:11.52]  systems
+[14:12.96]  I'm a big fan of Ray dalio the
+[14:14.88]  Bridgewater CEO and we actually have
+[14:17.16]  plaques of this framework uh around our
+[14:20.94]  office and always have when I talk about
+[14:23.64]  systems I mean that mechanism that can
+[14:27.06]  repeatably machine something into an
+[14:29.82]  outcome
+[14:30.84]  so I say hey my goal here is to build
+[14:33.48]  you know a car how do I take the inputs
+[14:36.48]  and repeatably output certain outcomes
+[14:40.56]  that the system is the machine in the
+[14:43.20]  middle it is the repeatable repeatable
+[14:45.06]  machine in the middle and that's what we
+[14:47.04]  are building when we build systems right
+[14:49.50]  this is the hard part of what we do each
+[14:51.48]  and every day I'll give you an example
+[14:54.12]  let's just say for example I want to
+[14:55.86]  build an expense processing system in my
+[14:57.54]  Financial finance organization I want to
+[14:59.70]  be able to predictably take a bunch of
+[15:01.44]  inputs somebody playing expenses and
+[15:04.26]  invoices and I want to Output those
+[15:06.36]  expenses paid within 14 days and an
+[15:08.52]  error rate of less than 0.1 percent that
+[15:10.20]  is a system someone has to build that
+[15:12.60]  system your system is comprised of
+[15:14.22]  people so your company's comprised of
+[15:15.96]  people and systems so this notion of
+[15:19.20]  systems is the essence of company
+[15:22.02]  building in my view if you pick the
+[15:24.06]  right market then with good execution
+[15:26.22]  you have the opportunity to build the
+[15:28.20]  systems to make that company successful
+[15:29.76]  if you pick the wrong Market no amount
+[15:31.98]  of execution is going to help you but
+[15:33.48]  this is what execution looks like to us
+[15:35.36]  obviously your systems are very
+[15:38.46]  different from other people's systems
+[15:39.84]  and there's a reason for that is because
+[15:41.40]  kind of the characteristics of your
+[15:43.20]  company are in fact the systems of that
+[15:45.60]  company that's what makes it repeatable
+[15:48.18]  if I were to Envision what the employee
+[15:50.34]  experience is like at something like
+[15:52.08]  Oracle I can imagine what their uh you
+[15:55.38]  know play expense reporting system is
+[15:56.88]  it's probably not pleasant why because
+[15:59.48]  unlike us you know we have a slightly
+[16:02.76]  different view of the importance of
+[16:04.20]  people and culture in the building of
+[16:06.12]  these systems so the actual full view of
+[16:08.22]  this of the dalio systems view is this
+[16:10.02]  one which is it is built on top of your
+[16:12.36]  culture and your people right so we had
+[16:15.30]  an expense system back in the early days
+[16:16.92]  where our head of Finance said just to
+[16:19.02]  just submit your expenses and uh and if
+[16:22.20]  you don't submit them uh you don't get
+[16:24.30]  paid
+[16:25.56]  and his comment when we released it was
+[16:28.26]  if you don't submit your expenses we'll
+[16:30.54]  have assumed you've been you know
+[16:32.22]  abducted by aliens or something to that
+[16:33.90]  effect everybody thought hey that's kind
+[16:35.28]  of funny but it actually worked right
+[16:38.28]  today if you forget your expenses we
+[16:40.14]  have a mechanism for actually correcting
+[16:42.42]  that back then right we didn't because
+[16:45.00]  we couldn't afford it
+[16:49.08]  systems workers our culture was very
+[16:50.94]  very particular
+[16:52.38]  our systems are built on culture and
+[16:54.30]  people
+[16:56.40]  the third learning I would I would just
+[16:58.44]  just pause it as this one is is a
+[17:01.02]  company is comprised of four distinct
+[17:03.00]  plans and we draw it like this
+[17:06.78]  it is in this order too a company is
+[17:09.48]  built both on a financial plan that then
+[17:11.64]  drives the people plan that gender has
+[17:13.26]  the product plan that drives the go to
+[17:14.70]  market plan and that reinforms the
+[17:16.62]  financial plan it is in that order and I
+[17:18.48]  don't mean hey I want to build a
+[17:19.92]  financial plan to generate 10 million
+[17:22.32]  dollars next year that's not what I mean
+[17:23.76]  I mean I'm going to put in an Excel
+[17:25.86]  spreadsheet that says we're going to
+[17:27.06]  build X dollars in new excellent
+[17:29.34]  expansion x and x and renewals X in this
+[17:33.90]  geography X from this uh from this
+[17:36.72]  product category and X from this segment
+[17:39.18]  so very very detailed financial plan
+[17:41.46]  which drives our business companies are
+[17:44.28]  driven by a financial plan there's a
+[17:45.84]  reason for it because it dictates the
+[17:47.82]  Investments we're going to make so we
+[17:49.62]  always start that says great what are we
+[17:51.54]  trying to get to next year
+[17:52.92]  extra 10 million in revenue is going to
+[17:54.90]  be decomposed this way very very
+[17:56.82]  specifically that is my thesis for how
+[17:59.64]  this is going to unfold I might be wrong
+[18:01.14]  but I'm going to have a thesis right
+[18:03.24]  that then informs
+[18:04.86]  and if I think I'm going to generate you
+[18:06.36]  know 2 million dollars of that in the
+[18:07.56]  United Kingdom I better have some sales
+[18:09.18]  people in the United Kingdom right if
+[18:11.40]  it's going to generate uh X from this
+[18:13.50]  product category I better have
+[18:14.82]  developers building that product
+[18:15.96]  category and it drives my my resource
+[18:17.82]  allocation system that then drives the
+[18:20.16]  product plan in terms of what I can
+[18:21.24]  commit to and then that then informs to
+[18:23.22]  go to market plan with respect to how do
+[18:25.80]  I get users on this journey with us
+[18:28.14]  right so it is the very very tight
+[18:30.06]  linkage of those four things that
+[18:32.34]  actually systematically makes our
+[18:33.96]  business go
+[18:35.46]  I know this is obvious from the outside
+[18:37.08]  but this
+[18:39.84]  actually took us a long time to figure
+[18:41.58]  out
+[18:43.02]  this actually dovetails into the idea
+[18:45.48]  that a company's like an orchestra and
+[18:47.10]  when I do a an onboarding every which I
+[18:49.32]  do every month uh to new employees I say
+[18:52.56]  hey A company's like an orchestra I
+[18:54.24]  could be in your seat you could be in
+[18:55.62]  mine somebody has to be in all these
+[18:57.66]  seats and then they say well hey what
+[18:59.58]  are our objectives what are the company
+[19:00.84]  objectives well
+[19:02.88]  how can I have one set of company
+[19:04.86]  objectives that Cascade into into okrs
+[19:07.98]  if I have four different plans if you're
+[19:09.84]  in the finance organization right your
+[19:11.82]  objective is to build an expense
+[19:13.62]  processing system this quarter right if
+[19:16.14]  you're in the sales organization your
+[19:17.58]  objective is to close x amount of
+[19:19.02]  dollars in this category this quarter so
+[19:21.48]  actually your whole company decomposes
+[19:23.34]  into these four categories whether you
+[19:25.20]  like it or not and understanding that
+[19:27.60]  there is no unified set of objectives
+[19:29.40]  across all of them but rather actually
+[19:31.74]  objectives across all four of the Court
+[19:33.54]  the wheels of your car is sort of the
+[19:36.00]  core learning of the systems of your
+[19:38.22]  company uh that we've learned from the
+[19:40.62]  inside
+[19:43.20]  Okay cool so we have these four
+[19:44.82]  different plans that doesn't feel very
+[19:47.88]  systemy to me
+[19:49.56]  I would posit that actually accompanies
+[19:52.50]  nothing more than a set of Interlocking
+[19:54.00]  Systems so this is actually how we draw
+[19:55.98]  it we go great
+[19:58.56]  early on in your life maybe when you're
+[20:00.78]  10 million dollars you start hiring
+[20:02.22]  execs that are going to run each of
+[20:04.98]  these different functions right for what
+[20:07.74]  it's worth you know I believe Finance
+[20:10.26]  person HR person has a product I
+[20:14.10]  actually split uh sales marketing and
+[20:16.62]  customer success into three different
+[20:17.94]  functions uh inside the go to market
+[20:20.16]  organization I don't believe it's a good
+[20:22.26]  idea to put those all in one person for
+[20:24.96]  what it's worth not until you get much
+[20:26.40]  much later but conceptually those are
+[20:28.62]  the four aspects of your company when
+[20:30.60]  you hire those execs what they will then
+[20:32.82]  do for you is build the systems right
+[20:35.46]  that's why we need them early on in your
+[20:37.68]  life you know actually early on in our
+[20:39.48]  life in this last company I built all
+[20:41.10]  those systems it wasn't very fun then I
+[20:43.32]  brought in execs and I said you're going
+[20:44.76]  to build the extension of this system
+[20:46.20]  and the extension of this system I was
+[20:47.52]  deeply involved in all of them you are
+[20:49.86]  architecting this if you're the founder
+[20:51.42]  of your company for a long time it
+[20:53.28]  probably wasn't until we got to about
+[20:54.42]  100 million dollars in Revenue that I
+[20:56.46]  fully relinquished some aspects of this
+[20:58.56]  hey you're running Finance I trust you
+[21:00.00]  to do this it was until we hit much much
+[21:02.34]  larger than that that I was willing to
+[21:03.96]  relinquish to go to market system so
+[21:06.06]  your role goal in orchestrating this as
+[21:08.10]  a CEO founder if that's who some of you
+[21:10.02]  are will change it's not like oh I'm
+[21:12.66]  going to hire ahead of finance and
+[21:13.68]  they're going to build all the systems
+[21:14.58]  no they don't know how to do that
+[21:15.72]  because they don't understand the
+[21:16.86]  culture of their company they don't
+[21:17.88]  understand the people and they don't
+[21:19.14]  understand your business well enough to
+[21:20.34]  be left alone to do it over time you're
+[21:22.74]  trying to get them to do this uh
+[21:24.66]  unmanaged or lightly managed what they
+[21:27.72]  are what they are doing underneath them
+[21:30.48]  is hiring sub sort of directors of
+[21:33.12]  functions and you can see how this
+[21:34.80]  Cascades into org structure across the
+[21:37.62]  different aspects so that should say
+[21:39.24]  cash collection system on the on the
+[21:41.22]  left right how do we invoice our
+[21:42.90]  customers and and have that have that
+[21:45.24]  cash be received well whoever runs
+[21:47.64]  Finance is going to hire a controller or
+[21:49.62]  somebody on underneath them and their
+[21:52.14]  job is to create that repeatable system
+[21:53.70]  on the people side it's your talent
+[21:55.74]  acquisition system their job of the of
+[21:58.50]  the of the TA lead is to do that on the
+[22:00.90]  product side the hard part is how do we
+[22:02.64]  take feedback from the market and
+[22:04.08]  repeatably machine that into into
+[22:05.88]  Innovation that gets brought to market
+[22:07.38]  right that's a new product introduction
+[22:09.18]  system
+[22:10.26]  on the lead to Cash System just an
+[22:12.06]  example of a system that gets built in
+[22:13.50]  the go to market side ultimately it
+[22:15.90]  looks like this your company is just a
+[22:18.48]  composition of different systems Within
+[22:20.34]  These core functions all not very very
+[22:22.44]  complicated but you can also see like I
+[22:24.72]  said how this ultimately manifests in
+[22:26.82]  org structure so you have someone
+[22:28.80]  running the product system or the go to
+[22:31.02]  market system you have the lead to Cash
+[22:32.94]  System you have a sale to Renewal system
+[22:34.56]  you have a resource allocation system
+[22:36.12]  perhaps maybe those are the big ones you
+[22:37.98]  measure right we run Process reviews on
+[22:41.40]  each of these systems so we don't just
+[22:43.62]  say let's have someone create the system
+[22:45.42]  I don't trust people to create the
+[22:46.74]  systems because people aren't always
+[22:48.18]  great at the system design
+[22:50.40]  we run Process reviews every month I
+[22:53.28]  want to see what the system looks like
+[22:54.48]  we'll talk about results at the end of
+[22:56.64]  the quarter but I want to see the system
+[22:58.02]  because I'm trying to enforce the entire
+[23:00.24]  organization to understand that their
+[23:01.86]  job is about systems building their job
+[23:04.08]  is about anticipating phases and
+[23:05.94]  re-architecting those systems for the
+[23:07.50]  next phase our lead to Cash System when
+[23:09.66]  we had 10 million dollars in Revenue
+[23:10.92]  obviously looked very different from the
+[23:12.48]  lead to Cash System when we are today
+[23:13.92]  that had to get re-architected
+[23:15.78]  re-architect re-architected and most
+[23:17.40]  people aren't that great at that
+[23:18.72]  truthfully the people that do well in
+[23:20.22]  startups are people that can do that
+[23:21.54]  right it's a sort of a different breed
+[23:23.10]  of people
+[23:25.56]  really really importantly is you have to
+[23:28.28]  shift those systems by phase and this
+[23:31.02]  sort of the point I was making right
+[23:33.30]  the system design of the go to market
+[23:35.58]  side which tends to be the most acute
+[23:37.38]  the different phases is acute right
+[23:40.28]  re-architect re-architect re-architect
+[23:42.66]  re-architect
+[23:43.92]  and I think like I said this is where
+[23:45.60]  many companies struggle I was actually
+[23:47.82]  talking with some Public Market
+[23:48.96]  investors a couple weeks ago in in New
+[23:51.48]  York and I said hey what do you look for
+[23:54.18]  in companies like what's interesting to
+[23:55.86]  you and they said hey we look for two
+[23:57.30]  things number one
+[23:58.86]  companies that obviously have product
+[24:00.24]  Market fit cool and then with number two
+[24:02.70]  we look for those that can transcend
+[24:05.16]  certain Revenue break points and they
+[24:07.50]  say typically it's 500 million dollars
+[24:09.00]  in a billion and you're like well
+[24:11.04]  can you talk a bit more about why that
+[24:12.66]  is and they go well it's pretty
+[24:13.56]  straightforward is because getting from
+[24:15.42]  zero to 500 million is about product
+[24:16.98]  Market fit and minor execution getting
+[24:19.26]  from 500 million plus a lot of companies
+[24:21.60]  hit a wall because of this exact notion
+[24:24.18]  is because the system design that's
+[24:26.34]  required to get from 500 to a billion is
+[24:28.38]  totally different than what got you to
+[24:29.88]  500 million sometimes it happens earlier
+[24:31.74]  because previously it only mattered that
+[24:34.20]  I had enough quota capacity for example
+[24:36.06]  if I'm a sales driven organization to
+[24:38.16]  hit the 500 million dollar number when
+[24:40.20]  numbers get really really big it's like
+[24:41.88]  do I have enough quarter capacity in
+[24:43.62]  Japan in these two regions with enough
+[24:45.30]  leads to support them it's an
+[24:46.74]  operational challenge so it's a system
+[24:48.66]  design challenge it's a process uh it's
+[24:51.66]  a process scrutiny all the time to make
+[24:53.94]  sure that those systems are appropriate
+[24:55.20]  for the next bit and most people aren't
+[24:56.76]  good at that so you're like noted makes
+[24:59.16]  sense to me we are obsessed obsessed
+[25:01.80]  obsessed with phase shifts
+[25:03.84]  those systems really just visually look
+[25:06.48]  like that
+[25:08.58]  the last point maybe to talk through
+[25:10.44]  obviously I can talk about the stuff all
+[25:11.82]  day I find it fascinating this is like
+[25:13.56]  uh like there's like a dark art that
+[25:15.12]  nobody really talks about is for this
+[25:17.40]  notion of system design
+[25:19.68]  whose responsibility is it to redesign
+[25:22.14]  the systems
+[25:24.30]  someone showed me this picture years ago
+[25:26.04]  and it kind of resonated because it just
+[25:28.68]  makes sense
+[25:30.90]  management structures are about ladder
+[25:32.94]  time Horizons so if I'm an individual
+[25:35.22]  contributor sales rep like we give them
+[25:37.20]  six month quotas they are only focused
+[25:39.48]  on six months I can assure you if you're
+[25:41.58]  a developer you're focused on the next
+[25:42.96]  six months the next couple of quarters
+[25:44.22]  what I have to do the managers of those
+[25:46.68]  people maybe they're thinking 12 months
+[25:48.54]  out
+[25:49.44]  the leadership team that reports to me
+[25:51.24]  they're thinking 18 months out and my
+[25:53.82]  job is 36 months but the leadership team
+[25:55.98]  I kind of go back to the point where we
+[25:57.84]  get a lot of pressure from our investors
+[25:59.16]  hey this person's not scaling this
+[26:00.66]  person's not scaling you've got to
+[26:02.16]  replace them
+[26:03.72]  implicitly this is what they're
+[26:05.10]  referring to they don't think about it
+[26:06.54]  this way but implicitly they're saying
+[26:07.98]  hey there are phase shifts ahead if the
+[26:10.80]  person running HR is not 18 months ahead
+[26:14.36]  anticipating the new system that's
+[26:16.32]  required for the next phase the whole
+[26:19.08]  company is going to trip and it's your
+[26:20.40]  fault and they're right right so the
+[26:23.34]  leadership team becomes critically
+[26:24.90]  critically critically important at
+[26:26.58]  scaling companies
+[26:28.08]  because they have to have the 18-month
+[26:29.88]  time Horizon
+[26:31.08]  and obviously this is what makes high
+[26:33.48]  scale companies really really hard is
+[26:35.58]  because you transfer transitions so many
+[26:37.50]  phases so many phases so many phases so
+[26:39.96]  quickly that it actually gets past
+[26:41.70]  people
+[26:42.72]  and so the ideal person in your
+[26:45.66]  leadership team is someone who's both
+[26:47.46]  seen startups but also seen scale and
+[26:49.68]  they know how to get there because that
+[26:51.00]  way they can say I know what it looks
+[26:52.08]  like at scale but obviously that's not
+[26:54.30]  going to work but I kind of know what
+[26:55.26]  we're building towards I'm gonna I'm
+[26:56.94]  gonna I'm gonna go I'm gonna get there
+[26:58.32]  in four stages and this is how we're
+[26:59.58]  gonna do it so this notion of time
+[27:01.62]  Horizons is critical critical critical
+[27:03.66]  to company building
+[27:06.00]  is think about the the leadership team
+[27:08.70]  they really are most focused on the
+[27:10.92]  systems if you think about it they're
+[27:12.18]  focused on the systems and the people
+[27:14.46]  the only person that's focused on the
+[27:16.08]  market is me
+[27:18.36]  my job is to make sure that I am 36
+[27:21.60]  months out
+[27:22.86]  in terms of making sure we're picking
+[27:24.54]  the right Market to be in so that we
+[27:26.40]  don't run out of Tams so that we don't
+[27:27.78]  run out of opportunities so we can
+[27:29.58]  continue to grow at the horrendous Pace
+[27:31.44]  that our investors expect
+[27:33.30]  that is my job
+[27:34.92]  that is what makes the CEO job so so
+[27:37.32]  difficult in my opinion is because
+[27:39.48]  technology markets move so quickly you
+[27:42.66]  have to figure out how to stay ahead of
+[27:44.22]  the way ahead of the way ahead of the
+[27:45.30]  way in fact my favorite interview years
+[27:47.34]  ago with Bill Gates and uh Warren
+[27:50.40]  Buffett someone said to him hey Warren
+[27:52.92]  you guys are great friends why don't you
+[27:54.18]  ever invest in Microsoft and Warren
+[27:56.10]  Buffett's answer was because technology
+[27:58.20]  is like surfing a wave like you can be
+[28:00.24]  on the wave and then boom you fall off
+[28:01.62]  the wave and you're done and you can't
+[28:02.88]  catch back up because the markets move
+[28:04.80]  so fast and so it's just really really
+[28:06.48]  unpredictable
+[28:08.28]  and that is exactly why Market picking
+[28:11.70]  is our problem so I'm always 36 months
+[28:13.98]  out Market wise but I'm also forcing the
+[28:16.80]  leadership team to accept that their job
+[28:18.72]  is Phase face should phase shift
+[28:20.22]  and that's why you get the feedback like
+[28:21.54]  I said that hey that person's got to go
+[28:24.36]  because they're not making the next
+[28:25.50]  phase because they haven't seen the next
+[28:27.54]  phase and I go I'm not sure I agree if
+[28:29.76]  you look at my leadership team over the
+[28:31.02]  last couple of companies we've done like
+[28:32.70]  there's actually a lot of first timers
+[28:34.02]  in there because it is systems thinkers
+[28:36.72]  not experience that wins if you can
+[28:40.32]  think about our re-architect that system
+[28:42.36]  your job and leadership team is not to
+[28:43.98]  pick the market it is to re-architect
+[28:45.78]  the systems regularly that is something
+[28:48.18]  that can be learned systems thinkers are
+[28:50.76]  the ones that do that best
+[28:54.42]  we've gone through these phases here
+[28:57.66]  um you know what without given the
+[28:58.98]  specifics of our Revenue we're we're a
+[29:00.84]  public company now we've gone through
+[29:01.98]  all of these all these phases here but
+[29:04.32]  we are absolutely dogged about
+[29:06.18]  re-architect re-architect re-architect
+[29:08.04]  re-architect and I would say I spend all
+[29:09.66]  my time making sure that the company
+[29:11.46]  doesn't trip if I get it wrong if I'm
+[29:13.68]  not 36 months ahead the company does
+[29:15.60]  trip right and we've been very very
+[29:17.94]  fortunate that I work for uh once you
+[29:20.22]  know in particularly was really really
+[29:21.18]  good at this that just sort of
+[29:22.74]  introduced us to this notion of of
+[29:24.54]  fascia fascia fascia facial phase shift
+[29:28.74]  so if I were to summarize it I have one
+[29:30.96]  more thing I'll add after this one you
+[29:32.94]  know for us scaling systems really about
+[29:34.56]  these five things the notion of phase
+[29:36.96]  shifts really matters
+[29:38.88]  goals systems outcomes
+[29:41.94]  finest plan people plan product plan go
+[29:44.34]  to market plan
+[29:45.84]  your company is ultimately a set of
+[29:47.34]  Interlocking Systems people come and go
+[29:49.08]  systems endure right so if someone were
+[29:51.78]  to leave your Finance team tomorrow you
+[29:53.34]  could replace them with somebody else
+[29:55.08]  because the system already exists
+[29:57.72]  that'll get them for the next six months
+[29:59.64]  12 months but the system exists and
+[30:02.04]  that's how it works
+[30:03.96]  the last thing I leave you with here
+[30:05.46]  because we've been in the startup world
+[30:06.66]  you know I've been doing it for 20 plus
+[30:08.46]  years and we have we've actually had
+[30:10.50]  this slide in one of our decks for quite
+[30:12.48]  a long time which we jokingly refer to
+[30:14.70]  as the the three IPS of startup life the
+[30:17.22]  first one really really matters I think
+[30:18.72]  this is what makes Silicon Valley so
+[30:20.28]  unique and so repeatable
+[30:22.08]  we jokingly call it intellectual
+[30:24.18]  philanthropy which is kind of a dumb
+[30:25.74]  phrase but it reminds me it makes an IP
+[30:27.72]  work
+[30:28.86]  the startup world is small you cross
+[30:31.08]  paths with people multiple times both on
+[30:33.42]  the upswing and the downswing we should
+[30:35.34]  all have a lot of humility humility
+[30:37.02]  about the downswing we all encounter
+[30:39.06]  downswings right we're all just
+[30:41.58]  struggling to survive right we should be
+[30:44.28]  helping each other and so we do it's all
+[30:46.32]  in the execution right ideas are free
+[30:48.60]  you can read a book about Andy Grove
+[30:50.70]  building Intel you can't do it
+[30:53.46]  just because you read the book so
+[30:55.02]  there's no harm in sharing the
+[30:56.34]  information with others in our ecosystem
+[30:57.84]  number two we are paranoid this actually
+[31:00.12]  comes from Microsoft they are paranoid
+[31:02.34]  someone's trying to kill me all day all
+[31:04.32]  day all day and I'm not going to let
+[31:06.12]  that happen that's a hard way to live
+[31:07.44]  but it's also the way you survive
+[31:09.06]  because markets are fights right
+[31:11.52]  no matter how well you do or while you
+[31:13.50]  did a thing assume someone else is about
+[31:15.30]  to do it better right we are paranoid
+[31:18.06]  paranoid paranoid about markets and
+[31:19.86]  execution and the last one is actually
+[31:22.38]  probably the most important to me which
+[31:24.18]  is startups are about elevating into the
+[31:26.70]  information flow
+[31:27.96]  once you're in the information flow of
+[31:29.88]  the market it's actually not that hard
+[31:31.26]  to figure out what to build what what
+[31:33.36]  people are reacting to what to sell
+[31:35.60]  elevating into that market information
+[31:37.38]  flow is how it's done you know as a
+[31:40.38]  company today we interface with probably
+[31:42.84]  a thousand of the global 2000 who who
+[31:45.54]  share their infrastructure plans with us
+[31:47.28]  every time we meet with them it's not
+[31:49.32]  that hard to figure out what to build
+[31:51.66]  for them getting to that point where you
+[31:54.36]  have the credibility to engage in that
+[31:55.92]  market information flow really really
+[31:57.60]  hard
+[31:58.80]  that's my ask if you have the
+[32:00.54]  opportunity to get into the information
+[32:01.98]  flow you will get the rest of it right
+[32:03.78]  we're out of time thank you for coming
+[32:05.64]  today and and hanging out appreciate it
+[32:08.29]  [Music]

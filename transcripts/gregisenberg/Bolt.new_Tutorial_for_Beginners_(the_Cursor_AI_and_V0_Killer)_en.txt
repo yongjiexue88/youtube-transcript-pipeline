@@ -1,0 +1,779 @@
+Title     : Bolt.new Tutorial for Beginners (the Cursor AI and V0 Killer)
+Video ID  : lDMhK8DamuE
+URL       : https://www.youtube.com/watch?v=lDMhK8DamuE
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 770
+Saved at  : 2026-06-21 02:23:03
+------------------------------------------------------------
+
+[00:00.40]  people are saying that bolt this new
+[00:02.80]  tool is replacing cursor AI they're
+[00:05.84]  saying it's easier they're saying non
+[00:08.16]  technical people could use this and
+[00:11.00]  create a prototype in 20 minutes or less
+[00:13.72]  even easier than cursor AI we dive into
+[00:17.84]  it I brought my main man Ross Mike on
+[00:20.24]  the Pod he explains things so simply uh
+[00:23.28]  for anyone who wants to build their
+[00:24.80]  ideas this pod is for you
+[00:27.67]  [Music]
+[00:36.80]  all right let's make some history so
+[00:39.08]  we've got Ross Mike Mickey Michael back
+[00:42.92]  on the show he's here to talk about
+[00:46.64]  bolt and you know they say it's a cursor
+[00:50.60]  killer they say it's a VZ zero killer uh
+[00:54.56]  what what are what are people going to
+[00:56.12]  get out of this video if they if they
+[00:58.08]  make it through yeah think well again
+[01:01.04]  first and foremost thank you for having
+[01:02.32]  me here it's it's always a pleasure and
+[01:04.28]  I I never want to take it for granted so
+[01:05.72]  thank you so much for that Greg but in
+[01:08.08]  terms of what bolt Z bolt new seems to
+[01:10.76]  be is I think it's looking like a a
+[01:14.20]  culmination of all the different tools
+[01:16.16]  people have been playing with all placed
+[01:18.84]  into one and although it's it's early it
+[01:22.04]  recently just launched a couple days ago
+[01:24.48]  um you cannot deny whether you're a
+[01:26.68]  developer non-developer that this thing
+[01:28.40]  has potential there's been some issues
+[01:30.44]  some bugs people have been experiencing
+[01:32.28]  but again this just launched and from my
+[01:35.40]  first few plays and attempts this this
+[01:38.88]  is mind-blowing and I think no better
+[01:40.76]  way to you know test it out than to
+[01:42.92]  build something I think that's right
+[01:45.08]  yeah and through that process through
+[01:46.40]  the building people can learn and write
+[01:49.16]  some
+[01:49.92]  notes I don't know what do you want
+[01:52.08]  people to do while they're listening
+[01:53.64]  honestly to me it's just like I hope
+[01:55.08]  it's just an encouragement to just keep
+[01:57.20]  playing with these tools right I don't
+[01:59.16]  think I'm confident to say any of them
+[02:01.28]  is perfect but at some point they will
+[02:03.68]  be or they'll get really really really
+[02:05.68]  really really good and you've put in the
+[02:08.20]  groundwork to keep testing iterating
+[02:10.44]  playing Breaking learning that when they
+[02:12.56]  do become really really good you're not
+[02:14.16]  starting from scratch you've already
+[02:15.92]  have this knowledge now you're starting
+[02:17.56]  to build and ship fast that's that's
+[02:20.28]  that's my goal if this encourages you to
+[02:22.12]  play after work late at night instead of
+[02:24.64]  watching a show and you're just on bolt
+[02:26.48]  or some other AI tool then that's a win
+[02:29.52]  all right let me share my
+[02:31.84]  screen and to
+[02:34.28]  preface don't really have a project
+[02:36.44]  planned but I was just thinking there is
+[02:39.48]  this um company called uh foul. and
+[02:43.44]  basically what they do is they're an
+[02:45.72]  aggregator of all the different um
+[02:50.16]  image um AI models and they turn them to
+[02:53.52]  simple API so let's say for example a
+[02:57.16]  simple text to image AI model like flux
+[03:01.36]  I can click on this and they basically
+[03:05.00]  what they do is they take these models
+[03:06.48]  they wrap them through their with their
+[03:07.88]  API and they make it so that with this
+[03:11.60]  one snippet of code I can use their AI
+[03:15.00]  model and have access to it for some
+[03:16.76]  reason this is not working no it is so
+[03:18.60]  if I click run on this this is an image
+[03:21.24]  model and the prompt is extremely close
+[03:23.80]  up single tiger eye direct blah blah
+[03:26.40]  blah blah blah and you get this let's do
+[03:27.84]  something different let's do two dudes
+[03:31.36]  on a
+[03:32.80]  podcast
+[03:34.56]  virtually talking about AI let's see
+[03:38.64]  what we get hopefully nothing weird yeah
+[03:42.52]  I'm scared you know what it's pretty
+[03:46.40]  it's pretty good so what we're what
+[03:49.24]  we're going to do is we're going to use
+[03:51.20]  their API and build uh a website that
+[03:55.00]  you can enter a text prompt to and it'll
+[03:57.60]  give you an image and we're going to use
+[03:59.28]  Bolt
+[04:00.56]  uh with the best of our ability so what
+[04:02.84]  how does that sound GRE is that a good
+[04:04.40]  should we go with that let's do it
+[04:07.04]  perfect okay so what I'm going to do is
+[04:08.76]  I'm going to start with bolt and I know
+[04:12.16]  that for a project like this it's
+[04:13.96]  probably best I use something like
+[04:15.76]  nextjs so what I'm going to do is I want
+[04:19.48]  to build a simple
+[04:22.96]  SAS um project using
+[04:27.16]  nextjs can you please
+[04:30.24]  just
+[04:31.28]  build a simple landing page make sure
+[04:37.68]  you're using next js14 best
+[04:42.36]  practices so with v0 if you guys
+[04:45.68]  remember the last VI uh video I was
+[04:47.32]  talking about v0 is owned by versel
+[04:50.28]  which is one of the maintainers of
+[04:51.92]  nextjs so when you use v0 by default
+[04:55.04]  it's going to use nextjs bolt on the
+[04:57.72]  other hand is is is not owned by uh
+[05:00.76]  versel so I specify with both that I
+[05:03.64]  wanted to use nextjs just because it's a
+[05:07.44]  framework I'm familiar with and it's uh
+[05:09.96]  one of the most popular Frameworks to
+[05:11.56]  build web applications with so I hit
+[05:14.48]  that prompt and now what I like about
+[05:16.88]  bolt is I'm not just getting the code
+[05:19.00]  for a single file it's building on my
+[05:21.36]  project it's building on my layouts it's
+[05:23.84]  building out my landing page it's
+[05:25.96]  installing the packages which is the
+[05:27.80]  biggest thing right when you set up a
+[05:30.08]  framework or a code basee sometimes
+[05:32.16]  you're going to need external packages
+[05:33.80]  to do you know different
+[05:36.12]  functionality bolt installs those
+[05:38.68]  packages for you which is a great thing
+[05:40.44]  and might I add this landing page is
+[05:42.68]  pretty good as a starter base so we have
+[05:45.04]  our landing page now what I'm going to
+[05:47.24]  do is I'm going to take I'm going to go
+[05:48.84]  on flux and again this is the AI model
+[05:52.04]  we want to use I'm going to scroll on
+[05:54.04]  the documentation and there's a couple
+[05:55.72]  things it tells me here right so it says
+[05:58.88]  I I need to call call the API first I
+[06:00.64]  need to install this package I need to
+[06:03.64]  get an API key and then I need to use
+[06:06.88]  this code and then it has more
+[06:09.08]  instruction down line so I'm going to
+[06:10.80]  just follow the instructions and
+[06:13.44]  say and install this right here so let
+[06:16.60]  me take this package or actually let's
+[06:19.44]  say I this is my developer mind talking
+[06:21.84]  I don't even want to do that I want to
+[06:24.92]  say I want to build a text to image
+[06:30.52]  AI
+[06:32.16]  application I'm going to
+[06:35.96]  use file.
+[06:38.92]  a um what should I
+[06:43.64]  do and the reason I want to prompt this
+[06:46.04]  is I already used file dot before so I
+[06:48.72]  know how it works and I don't want to
+[06:50.00]  cheat and just copy code and do it like
+[06:51.68]  I'm a developer I want to use the a
+[06:53.60]  model so let's see what
+[06:55.20]  happens shh don't tell anyone but I've
+[06:58.24]  got 30 plus start up ideas that could
+[07:00.88]  make you millions and I'm giving them
+[07:04.00]  away for free these aren't just random
+[07:07.96]  guesses they're validated Concepts from
+[07:11.24]  entrepreneurs who built hundred million
+[07:14.20]  plus businesses I've compiled them into
+[07:17.92]  one simple
+[07:19.48]  database compiled from hundreds of
+[07:22.44]  conversations I've had on my podcast but
+[07:26.04]  the main thing is most of these ideas
+[07:28.80]  don't need a single investor some cost
+[07:32.36]  nothing to start I'm pretty much handing
+[07:35.04]  you a cheat sheet the idea bank is your
+[07:37.92]  startup
+[07:38.88]  shortcut just click below to get
+[07:42.12]  access your next cash flowing business
+[07:45.04]  is waiting for
+[07:46.52]  you uh so it bugged it does this
+[07:49.56]  sometimes you just hit send again it's
+[07:52.28]  pretty quick I will
+[07:53.84]  say yeah and you you you you know what
+[07:57.08]  for a first iteration this is great like
+[08:00.08]  I remember v0 when it first launched it
+[08:03.00]  was pretty bad like and and like anyone
+[08:05.64]  who was a developer you is a developer
+[08:07.80]  using it was it was terrible um but like
+[08:11.88]  you know two three months in it's one of
+[08:14.28]  the best ones out there so I have no
+[08:16.00]  doubt the same thing with bolt and this
+[08:18.44]  being their first version is is
+[08:21.00]  fantastic so let's see what it did so it
+[08:23.56]  says it up updated package.json it
+[08:27.16]  created some stuff so let's look at the
+[08:29.60]  preview so I'm going to refresh
+[08:33.48]  here let's see what happened um let me
+[08:37.60]  lower my screen here okay so we're going
+[08:40.52]  to go to code oh it's still downloading
+[08:43.20]  some package one thing I will say about
+[08:44.80]  bolt is because everything is online it
+[08:48.08]  is a bit slower so you will have to be a
+[08:50.80]  bit more patient with
+[08:52.68]  it so let's see
+[08:55.96]  preview let's refresh
+[09:00.52]  okay it
+[09:02.60]  broke okay so I know why it broke but I
+[09:05.24]  would love for the AI to fix itself it's
+[09:08.80]  not showing me anything please
+[09:14.52]  fix so okay this issue pops up but I
+[09:18.48]  already prompted that this should that
+[09:20.76]  it should try to fix itself let's see
+[09:22.28]  what it
+[09:23.36]  does the one thing about bolt I would
+[09:25.56]  say Greg is it's a little slow that's
+[09:28.72]  the only thing but um in my opinion I
+[09:32.84]  think that will not be an issue because
+[09:34.84]  with how great the product is I don't
+[09:36.68]  know if they have funding or they'll get
+[09:38.12]  funding they'll probably get funding in
+[09:39.56]  scale servers that shouldn't be an issue
+[09:41.08]  at all to be
+[09:42.24]  honest I feel like there's just a lot of
+[09:44.32]  people trying it out right now yeah that
+[09:46.60]  too that too and like it's
+[09:49.20]  uh okay so all right so I got this error
+[09:52.56]  what I'm going to do is I'm going to
+[09:53.88]  copy this and I'm going to say
+[09:58.00]  here's and error I got please fix this
+[10:02.92]  now I I know how to fix this but I I
+[10:04.84]  want the AI model to fix it and push
+[10:06.84]  comes to shove if it doesn't I
+[10:09.04]  will yeah there's so many people using
+[10:11.32]  it if it's this slow my
+[10:13.36]  goodness dude you remember you remember
+[10:15.68]  cursor initially it was so slow yeah and
+[10:19.24]  then they got that $60 million injection
+[10:21.48]  and then it became fast all of a
+[10:25.76]  sudden so I guess that's what bolt is
+[10:28.00]  maybe waiting for
+[10:31.36]  yeah okay let's see if this fixes it
+[10:35.12]  it's running the
+[10:37.32]  code okay perfect so it fixed my issue a
+[10:40.84]  little buggy a little shaky but if you
+[10:43.32]  copy the error that it's giving you and
+[10:45.68]  you tell it here's the error I got
+[10:47.12]  please fix it it looked like it worked
+[10:50.04]  so now what I'm going to do is I'm just
+[10:52.04]  going to type something random uh a
+[10:56.12]  handsome man if I click gener nothing's
+[10:59.80]  going to happen cuz nothing's supposed
+[11:01.60]  to happen we just have the layout so now
+[11:03.76]  what I'm going to say
+[11:05.16]  is
+[11:06.68]  um how do I make the text generation
+[11:12.80]  work using
+[11:14.72]  fou so what I'm prompting is I want it
+[11:17.48]  to kind of tell me what I need to do
+[11:19.36]  because it needs an external API key so
+[11:22.96]  what it saying is certainly let's
+[11:24.48]  implement the text generation
+[11:26.04]  functionality we'll need to set up a
+[11:28.12]  file. a client create a form for user
+[11:30.96]  input and handle the image generation
+[11:33.36]  process here's how we can do it so it's
+[11:36.28]  Pro providing me a step by step what's
+[11:37.96]  going to do and if we look at the API
+[11:40.44]  remember here it says install the client
+[11:42.48]  so that's exactly what bolt is
+[11:45.68]  doing now it tells me here I made the
+[11:48.20]  following changes it tells me what it
+[11:50.12]  did but here's the work I need to do it
+[11:53.00]  says to make this work replace your your
+[11:55.84]  file key here in EnV local for file with
+[11:59.60]  the actual uh API key so if I go on my
+[12:03.36]  code it's telling me there's a file
+[12:05.60]  called EnV and Vis short for
+[12:08.96]  environment. local so if I go on my
+[12:11.08]  codebase I see that there's a file right
+[12:13.12]  here so it's telling me this key right
+[12:16.04]  here this your file uh key here needs to
+[12:19.36]  be a key that I get from fou and
+[12:21.96]  basically how I would do that is I'd go
+[12:23.72]  on my profile and pull that key I'm just
+[12:26.08]  going to move this right here get my key
+[12:29.24]  real quick so that nobody cuz I'm using
+[12:30.80]  a live account all right I don't mind
+[12:33.12]  sharing this screen here so just for
+[12:35.24]  anybody looking the way you'd get your
+[12:36.72]  API Keys is you'd go on API keys I
+[12:39.84]  created mine and I'm going to paste this
+[12:42.48]  here you're going to see it but I'll
+[12:43.48]  delete it anyone who tries to spam it
+[12:45.24]  please don't um and I'll save it so
+[12:48.60]  it'll tell me that's what I need to do
+[12:50.36]  and it also says make sure you have the
+[12:51.92]  latest version of file AI server client
+[12:56.00]  um and what I can do is I can run this
+[12:58.48]  command myself s but I think it already
+[13:00.48]  did that for me so I'm not going to do
+[13:02.28]  that so I'm just going to hit refresh
+[13:04.28]  real quick and let's see if this works
+[13:07.56]  uh
+[13:08.84]  futuristic city
+[13:11.60]  with um uh Chick-fil-A I don't know why
+[13:16.24]  I would do that but okay so it says an
+[13:19.04]  error occurred while image generating
+[13:21.76]  let's go to our terminal and basically
+[13:25.60]  what I'm going to do is I'm going to
+[13:28.64]  copy the error it gives me
+[13:31.52]  here because I'm again I'm not a
+[13:33.72]  developer so I don't know what's going
+[13:34.96]  on so I'm just going to paste this error
+[13:36.60]  and say fix this for me again I know the
+[13:39.20]  issue but I just want to give people
+[13:41.40]  sort of a workflow to play with if it
+[13:43.28]  breaks like if this if you get an error
+[13:45.64]  here you go to code you look at the
+[13:47.48]  janky text you get here copy paste it
+[13:50.08]  over here say it's not working and then
+[13:52.68]  let it give you a
+[13:53.92]  fix so let's see if okay things look
+[13:58.56]  good
+[13:59.92]  it said
+[14:01.16]  preview um uh futuristic city with
+[14:04.68]  Chick-fil-A that'll be our prompt is the
+[14:07.52]  Chick-fil-A gonna be in
+[14:09.40]  there that's let's let's see how
+[14:11.80]  advanced okay so for some reason this
+[14:13.52]  broke again let's
+[14:16.32]  see
+[14:18.08]  why
+[14:20.92]  um so what I'm going to do is again I
+[14:23.72]  know the fix GRE but I want to just show
+[14:26.64]  people that if you handle it with enough
+[14:29.56]  grit and you keep on going it should be
+[14:32.04]  fine so let me just paste that one more
+[14:34.04]  time so I can get the error so can
+[14:37.65]  [Music]
+[14:39.20]  fail and then it failed so what I'm
+[14:41.40]  going to do is I'm going to
+[14:43.52]  copy this
+[14:46.40]  error all this red that I get right here
+[14:49.76]  paste it here and be like fix this error
+[14:53.36]  but what I'll also do is when I go to
+[14:55.56]  foul and if you guys remember when I
+[14:58.16]  went to the model itself I think it was
+[15:01.32]  this one and I clicked on API there was
+[15:04.56]  some code snippet it gave me so what I'm
+[15:06.40]  going to do is I'm going to
+[15:08.32]  say fix this error here's an example
+[15:12.72]  from files docs because again you can't
+[15:16.24]  always assume the AI knows everything
+[15:18.52]  and this is where um I know we just jump
+[15:20.76]  straight into bolt but if I want to
+[15:22.24]  build an actual application I would do
+[15:24.28]  research first on what I need how it
+[15:27.12]  would work how it works what the set up
+[15:29.24]  looks like but here we're just trying to
+[15:31.60]  have fun and show both so I would have
+[15:33.28]  done enough research on foul to know how
+[15:35.16]  it works what's needed what's not um and
+[15:38.44]  then with that information I'd give it
+[15:39.92]  to the AI model and it would probably
+[15:42.16]  not make the mistakes it makes now so
+[15:44.52]  let's hope this
+[15:46.48]  time this
+[15:48.60]  works it worked it worked I didn't think
+[15:52.12]  it would it worked Chick-fil-A though I
+[15:54.64]  don't see Chick-fil-A yeah wait wait
+[15:56.44]  wait wait see the chickfila I don't see
+[15:58.04]  the Chick-fil-A either or
+[15:59.48]  a modern Chick-fil-A chick wait am I
+[16:03.92]  spelling it right
+[16:05.64]  chickfila wait that's not how I mean I
+[16:07.64]  think you might I think you might need
+[16:09.16]  to put there's like dashes yeah we'll do
+[16:12.48]  that a modern Chick-fil-A in 20
+[16:27.44]  567 so
+[16:30.08]  okay I would I would honestly say that
+[16:31.96]  that wasn't bad in terms of like I mean
+[16:34.32]  this image is terrible but in terms of
+[16:37.24]  the workflow I think Greg you you can
+[16:39.40]  see that yeah it has like there's some
+[16:41.56]  you know bugs that they the team I know
+[16:43.68]  is working on fixing but for the most
+[16:46.56]  part again if you have GD and you just
+[16:48.20]  keep on pressing giving it the air
+[16:49.96]  telling it to fix it I mean we did this
+[16:52.12]  in what maybe less than 20
+[16:54.92]  minutes yep crazy right and what's cool
+[16:59.16]  about this is and this is what I love
+[17:01.60]  about um what you would call it bolt is
+[17:05.28]  I could click on deploy here and they
+[17:08.96]  partnered up with a platform called
+[17:11.44]  netlify and it's literally oneclick
+[17:13.68]  deployment so I just clicked the deploy
+[17:15.44]  button it's going to build my
+[17:17.12]  application check if there are any
+[17:18.60]  errors or any issues it needs to fix
+[17:21.16]  before deploying my application and then
+[17:23.96]  once the build like once it's compiled
+[17:26.08]  the code and the build is good and my
+[17:28.40]  application is ready for production it
+[17:30.44]  will literally deploy it to netlify and
+[17:32.72]  give me a URL that I could
+[17:35.48]  share so let's and nlii you could you
+[17:39.04]  know is awesome it's super reliable
+[17:41.72]  right it's not just any one it's one of
+[17:44.48]  the best out there it's not your you
+[17:47.04]  know toy like it's a dude in his room
+[17:49.64]  with five servers so it says there's an
+[17:51.60]  error here what we're going to do is
+[17:53.68]  we're going to say fix this problem
+[17:55.52]  because I don't even know what the issue
+[17:56.64]  is nor do I want to look at it and yeah
+[17:59.84]  netfi is a great deployment platform
+[18:02.76]  there are I mean if we go on their site
+[18:06.16]  there are pretty netlify I promise I
+[18:09.44]  don't watch Netflix if we yeah so like
+[18:11.96]  there are big companies that use netlify
+[18:14.64]  um so it's it's a great partnership um
+[18:17.76]  on both uh and let's see okay it failed
+[18:20.96]  again which is fantastic let's see why
+[18:29.64]  so what I'm going to do is I'm going to
+[18:30.84]  say the build keeps on
+[18:34.24]  failing can you please fix it and let's
+[18:38.28]  see on the code tab what errors there
+[18:40.36]  are I'm going to
+[18:43.96]  do let's see I'm going
+[18:46.88]  to okay I know what the error is but I'm
+[18:49.60]  not going to cheat I'm just going to
+[18:51.28]  copy
+[18:52.28]  this and paste this here and say this is
+[18:56.24]  the
+[18:57.28]  error I'm
+[18:59.76]  getting I paste that and let's see if it
+[19:02.72]  fixes it I apologize for the for
+[19:05.68]  oversight such a nice
+[19:07.68]  model and like what do you prefer are
+[19:10.08]  you a cursor guy are you a bolt guy now
+[19:13.44]  um you know what I am still a cursor guy
+[19:17.16]  for the simple fact that I enjoy
+[19:19.64]  programming I enjoy coding like this
+[19:22.04]  sort of robs me of the fun uh but I do
+[19:26.44]  like bolt maybe for quick Proto
+[19:28.80]  protyping like if I wanted to let's say
+[19:31.60]  work on an app um and I needed like a
+[19:35.76]  quick prototype just to see like just
+[19:38.08]  just to like visualize how things would
+[19:39.84]  work I would just prompt engineer it
+[19:42.08]  through bolt but the reason why I think
+[19:44.60]  I personally like cursor it it allows me
+[19:46.76]  to code but I also have my junior
+[19:48.92]  engineer with me uh bolt and repet they
+[19:53.04]  seem like they're taking they're taking
+[19:55.48]  the wheel right with cursor uh you're
+[19:58.80]  sort of still in charge right um and and
+[20:02.40]  and it's two different tools right I
+[20:03.80]  definitely do think bolt and repet are
+[20:05.48]  on one side of the spectrum and then you
+[20:08.32]  have um like cursor and v0 on another
+[20:12.88]  side let's see what error I'm getting
+[20:14.60]  because it's giving me another error it
+[20:16.12]  says cannot find a module so I'm just
+[20:17.84]  going to copy this and say fix this
+[20:23.92]  error so I guess it really depends on
+[20:26.52]  what you're looking for
+[20:29.08]  100% I if I were like so I'll give you
+[20:32.44]  my take if I'm a non-
+[20:34.40]  teie um like a non- technical person I'm
+[20:37.40]  a Founder I want to start a startup or I
+[20:40.00]  just I'm just a builder a business
+[20:41.44]  person I would focus a lot on Bolt And
+[20:46.56]  replit if you are someone who wants to
+[20:50.04]  know more of the nitty-gritty then I
+[20:52.64]  would also use cursor right but if
+[20:55.28]  you're someone who just wants to instant
+[20:57.36]  prototype um you know see like you know
+[21:00.12]  see stuff like build a simple POC then
+[21:02.76]  bolt and repet are great but if you're I
+[21:04.84]  I truly believe you're trying to build
+[21:06.20]  something um that you uh that you want
+[21:08.84]  users to use you're going to have to get
+[21:11.48]  your hands dirty let's see if
+[21:15.04]  it yeah see it keeps have so it keeps uh
+[21:19.52]  now it's having a type issue so what I'm
+[21:21.04]  going to do is again this is where um
+[21:23.48]  the B team needs some improvements to
+[21:26.00]  make so I'm just going to say fix this
+[21:27.92]  problem
+[21:29.56]  but the one thing that I would say
+[21:30.84]  especially for non-tech non-technical
+[21:33.52]  person if I was non-technical I would
+[21:35.88]  rather deal with this than trying to
+[21:38.04]  figure out how to deploy something and
+[21:40.40]  this is why you're you know repet and
+[21:42.52]  bolt for non-technical people in my
+[21:45.08]  opinion are the clear winner just have
+[21:46.72]  to enter again when it poops like that
+[21:48.80]  because it handles the end to endend
+[21:51.80]  right versus with cursor like you can
+[21:53.60]  build something but deployment is a
+[21:55.44]  whole different animal in it of itself
+[21:59.24]  okay so let's see
+[22:01.28]  if if it's I think it fixed that
+[22:07.48]  issue I get so
+[22:10.28]  nervous totally like please get it right
+[22:13.84]  even though I know the issue and I can
+[22:15.04]  fix it
+[22:16.88]  myself we believe you we believe you I
+[22:20.48]  appreciate that thank you oh broke again
+[22:23.68]  what is it this
+[22:25.56]  time Dr off okay so
+[22:31.12]  I can literally fix it with one line and
+[22:34.12]  I'm going to do it but let's see check
+[22:38.12]  validity okay so maybe let's do a little
+[22:40.76]  learning here it says type error cannot
+[22:42.72]  find module V or its corresponding type
+[22:45.84]  declaration and then it says import
+[22:47.84]  drawer and then you see VA so basically
+[22:50.60]  what this is saying is um it can't find
+[22:54.08]  V and V is used for whatever this file
+[22:56.80]  is but when I look at my codebase let's
+[23:00.48]  run this code base
+[23:02.92]  again when I look at my code
+[23:06.00]  base um let give it a second to
+[23:09.80]  load yeah when I look at my code base it
+[23:12.28]  doesn't need a drawer so I don't even
+[23:14.76]  know why that file exists so what I'm
+[23:17.92]  going to say is I'm going to copy
+[23:23.64]  this uh let me just copy this right here
+[23:30.68]  I keep getting I I got this error I
+[23:36.52]  don't seem to be
+[23:38.80]  using
+[23:40.32]  drawer so please remove it and remove
+[23:45.24]  any other files or folders I'm not using
+[23:50.56]  and run this
+[23:53.12]  build so this is where like on Twitter
+[23:55.84]  I've been getting some responses people
+[23:57.36]  are like ah but like it's sort of buggy
+[23:59.48]  this is stand the third this is where
+[24:01.48]  like when it comes to deploying it
+[24:04.36]  because you need to make sure that all
+[24:06.04]  your packages and all your files are
+[24:07.68]  good that it bugs out on deployment but
+[24:10.68]  if if the way these companies build and
+[24:14.16]  grow is any indication of how Bol will
+[24:16.60]  be I have no doubt by within the next
+[24:18.72]  week this issue should be
+[24:23.40]  solved so okay it's going to build again
+[24:26.36]  17th time is the charm
+[24:30.16]  it's okay this is this is the real the
+[24:32.32]  real deal right like we we're sharing it
+[24:34.40]  warts and all 100% so it okay so I'm
+[24:37.68]  going to cheat and I'm going to make
+[24:39.80]  this work myself so it says here cannot
+[24:43.68]  find module rad xui so I'm going to do
+[24:46.12]  is I'm just going to copy this basically
+[24:48.56]  saying there's this module it needs but
+[24:50.76]  it hasn't downloaded so I'm just going
+[24:52.68]  to download it manually
+[24:59.24]  and couldn't you go to let's say clode
+[25:01.04]  or something like that and just be like
+[25:02.64]  here's my issue I could the one thing is
+[25:05.52]  I don't know if I can download my
+[25:07.36]  codebase now what would be sick is if
+[25:09.60]  they allowed me to download my code base
+[25:12.52]  right and I could run this through
+[25:14.72]  cursor like can I I don't think there's
+[25:18.04]  an
+[25:19.48]  option like can I tell it can I download
+[25:23.08]  the code
+[25:24.96]  base like if I could download this code
+[25:27.60]  base then that would be a sick way to
+[25:30.24]  build like if I could download this code
+[25:32.64]  run it through cursor fix my issues and
+[25:35.68]  then place it back here um it says oh I
+[25:39.48]  have to use their editor I I don't want
+[25:40.92]  to do that so let's just let me just
+[25:44.48]  cheat right now and make sure
+[25:45.96]  everything's installed and then let's do
+[25:49.28]  a build
+[25:51.72]  myself so this is where the tough part
+[25:53.80]  with bolt is is the deployment part is a
+[25:55.68]  little finicky when you have external
+[25:57.44]  packages uh but other than that I mean
+[26:00.88]  in 20 minutes we had uh well it's
+[26:03.28]  building right now but we had a working
+[26:04.60]  prototype in 20 minutes um and that's
+[26:08.56]  just great in my opinion not just any
+[26:11.20]  working prototype like this is this is
+[26:13.92]  valuable stuff right like it's super
+[26:16.00]  super valuable I think if you have an
+[26:18.68]  audience and you know you can build your
+[26:21.52]  ideas here and distribute to your
+[26:23.24]  audience or do meta ads build you know
+[26:26.20]  just Arbitrage there like there's a lot
+[26:27.76]  of opportun to build
+[26:30.56]  build I actually have a question for you
+[26:32.64]  Greg what does like with all these AI
+[26:35.20]  tools what do you think someone who's
+[26:36.72]  maybe not so technical but is learning
+[26:39.04]  to be technical learning these tools
+[26:41.24]  what's the best positioning for them
+[26:43.36]  like what are they to do with
+[26:45.60]  thisinformation like let's say they know
+[26:47.44]  how to Market they know the business
+[26:49.04]  side and now they're getting into
+[26:50.84]  prototyping what should they be doing
+[26:52.60]  because this is actually a question for
+[26:53.72]  myself to someone who knows how to build
+[26:56.24]  like what you know let's say I I I have
+[26:58.68]  I I have this skill what should I be
+[27:00.52]  doing what should people um who know how
+[27:02.80]  to use these tools be doing quick ad
+[27:05.44]  break let me tell you about a business I
+[27:07.64]  invested in it's called boring
+[27:09.44]  marketing.com so a few years ago I met
+[27:12.76]  this group of people that were some of
+[27:14.92]  the best SEO experts in the world they
+[27:18.04]  were behind getting some of the biggest
+[27:20.72]  companies found on Google and the secret
+[27:23.20]  sauce is they've got a set of technology
+[27:25.88]  and AI that could help you
+[27:28.68]  outrank your competition so for my own
+[27:31.08]  businesses I wanted that I didn't want
+[27:33.24]  to have to rely on Mark Zuckerberg I
+[27:35.04]  didn't want to depend on ads to drive
+[27:37.64]  customers to my businesses I wanted to
+[27:39.92]  rank high in Google that's why I like
+[27:42.12]  SEO and that's why I use boring
+[27:44.40]  marketing.com and that's why I invested
+[27:46.80]  in it they're so confident in their
+[27:48.60]  approach that they offer a 30-day Sprint
+[27:50.72]  with 100% money back guarantee who does
+[27:53.84]  that nowadays so check it out highly
+[27:55.88]  recommend boring marketing.com
+[27:58.44]  I mean just because you know how to
+[28:00.68]  build a product doesn't mean you know
+[28:02.16]  how to build a product that retains and
+[28:05.16]  drives engagement and word of mouth so
+[28:08.20]  those that's a whole separate ability of
+[28:11.64]  product
+[28:13.00]  optimization that cursor or bolt or
+[28:16.72]  whoever or whatever isn't going to help
+[28:19.16]  you do um that requires you to speak to
+[28:23.92]  your customers speak to users understand
+[28:26.48]  what they like understand what they
+[28:27.72]  don't like you you know go on social
+[28:29.84]  platforms like Reddit and and understand
+[28:32.00]  people's pain points add this feature
+[28:33.76]  here add that feature there but I still
+[28:36.36]  think that the number one way to learn
+[28:38.64]  that is by like being in the arena
+[28:40.68]  putting out the product and and
+[28:44.08]  committing to
+[28:46.52]  optimizing just like you're committing
+[28:48.28]  to building right and you're committ
+[28:49.96]  like this is what I want people to to
+[28:51.92]  really get from a lot of the tutorials I
+[28:53.56]  do is if you could commit to building
+[28:55.80]  and you could commit to learning commit
+[28:58.32]  to learning how to build commit to
+[28:59.60]  learning how to Market commit to
+[29:00.84]  learning how to optimize like that
+[29:03.28]  that's the future makes sense makes
+[29:06.24]  sense and I guess maybe a self selfish
+[29:08.84]  question for the devs I I know a lot of
+[29:10.68]  devs um that are very talented that
+[29:14.72]  could build great products like without
+[29:17.32]  AI but don't have a lick of
+[29:20.96]  understanding of how it comes when it
+[29:22.36]  comes to marketing It sharing it
+[29:24.96]  promoting it and all that stuff and what
+[29:26.68]  would you say for the devs who know how
+[29:28.32]  to cope but don't know the other side is
+[29:32.04]  it should they partner up with people or
+[29:34.12]  is it a skill that can be learned my
+[29:36.92]  message to them would be the best songs
+[29:39.72]  aren't on the Billboard
+[29:42.16]  100
+[29:44.32]  meaning just because you create the best
+[29:46.72]  possible product doesn't mean that
+[29:48.56]  you're going to be
+[29:50.08]  successful so just like how people like
+[29:53.36]  you will come on a pod and be like you
+[29:54.88]  should learn how to code and go and
+[29:56.44]  build stuff and like your training
+[29:58.52]  wheels are bolt and then move to cursor
+[30:00.80]  and then maybe like a you know a real ID
+[30:03.08]  I don't know
+[30:05.12]  um the same is true to devs devs should
+[30:10.32]  start by putting out content seeing what
+[30:12.84]  works uh building a community themselves
+[30:15.56]  seeing what works and and commit to the
+[30:18.72]  process so like if I'm someone like you
+[30:21.52]  like I'm like you're doing it you're
+[30:23.36]  putting out content you've got a great
+[30:24.88]  YouTube channel and stuff like that but
+[30:27.36]  um
+[30:28.92]  committing even even more you know what
+[30:31.48]  does that look
+[30:33.32]  like that makes sense I and I think a
+[30:35.72]  lot of uh a lot of people are especially
+[30:38.20]  devs are afraid of the content piece but
+[30:40.36]  while you were uh giving us some great
+[30:42.64]  advice I was trying to make this work
+[30:44.32]  and I think this is where yeah both just
+[30:47.36]  needs to fix so the issue is that it
+[30:51.16]  installed a bunch of files and
+[30:54.80]  dependencies that I'm probably not going
+[30:56.88]  to use and in order for me to make it
+[30:59.52]  work I would have to go line by line so
+[31:03.12]  what I would say for now is we have this
+[31:05.56]  amazing
+[31:06.72]  prototype
+[31:09.32]  randev and we're just going to wait a
+[31:11.56]  couple days for both to fix this but in
+[31:13.84]  terms of iterating building um right in
+[31:18.52]  this moment I think Bolt's one of the
+[31:20.04]  best it minus the bugs that like we just
+[31:23.16]  experienced right
+[31:25.12]  now cool anything else you want to let
+[31:27.96]  let people know yeah I would say just
+[31:30.28]  keep playing with the tools keep update
+[31:32.48]  with the tools um like I said in my
+[31:34.92]  first video um it it's really just
+[31:37.36]  taking part right like if you knew bolt
+[31:41.12]  released like two three days ago then
+[31:43.40]  that means you're you're doing the right
+[31:44.80]  thing and I would just explore and learn
+[31:46.76]  these new tools just because a new tool
+[31:48.32]  drop doesn't mean you have to use it uh
+[31:50.84]  but I think the more you play with it
+[31:52.96]  the more you learn the the more you
+[31:54.76]  start to develop a workflow and just a
+[31:57.44]  simple fact that with a couple prompts I
+[31:59.36]  didn't write any code with a couple
+[32:00.88]  prompts we build something where I can
+[32:02.44]  say two
+[32:04.92]  guys on a
+[32:07.72]  podcast talking about
+[32:10.56]  AI again this was just a couple promps I
+[32:14.24]  didn't write any code I gave it some
+[32:17.52]  documentation
+[32:20.44]  and we could do this right um obviously
+[32:24.20]  there's a lot more uh to building a
+[32:27.88]  full-fledged application and I know
+[32:29.88]  that's something we plan on doing uh
+[32:32.04]  Greg but for now this is bolt. new and I
+[32:34.48]  hope everyone has fun playing with it
+[32:36.76]  absolutely comment like subscribe if you
+[32:39.60]  want more Bolt videos from us M Mike uh
+[32:43.88]  has an incredible YouTube channel Ross
+[32:47.24]  Mike go and subscribe there um and uh
+[32:51.36]  anywhere anywhere else you want people
+[32:53.16]  to go yeah YouTube's fine um Twitter is
+[32:56.04]  Ross Mickey um and yep say hi and if you
+[32:59.84]  have any questions leave them in the
+[33:01.04]  comments below um I tried to respond to
+[33:03.64]  every single comment on the last YouTube
+[33:05.36]  channel at some point it would have been
+[33:07.24]  a full-time job so I'll try my best if
+[33:09.44]  you have any questions leave them in the
+[33:11.04]  comments below and Greg as always thank
+[33:12.60]  you so much for the
+[33:14.56]  opportunity thank you I really
+[33:16.24]  appreciate it later
+[33:19.90]  [Music]
+[33:28.36]  baby

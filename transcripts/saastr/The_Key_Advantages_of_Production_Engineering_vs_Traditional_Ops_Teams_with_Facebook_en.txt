@@ -1,0 +1,482 @@
+Title     : The Key Advantages of Production Engineering vs Traditional Ops Teams with Facebook
+Video ID  : hnM5Ks-cHC4
+URL       : https://www.youtube.com/watch?v=hnM5Ks-cHC4
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 473
+Saved at  : 2026-06-20 23:39:54
+------------------------------------------------------------
+
+[00:05.12]  uh
+[00:05.68]  hi folks i'm nandini chavagal i'm a
+[00:08.48]  production engineering manager
+[00:10.56]  at facebook i've been there for the last
+[00:13.28]  one year
+[00:14.16]  before that i was a director of
+[00:16.48]  infrastructure
+[00:17.36]  engineering at proofpoint security as a
+[00:21.20]  service
+[00:22.08]  and at proof point i've gone through
+[00:25.20]  many roles including director of quality
+[00:27.92]  and
+[00:28.40]  director of infrastructure in my prior
+[00:31.36]  life
+[00:31.76]  before that i used to be a software uh
+[00:34.64]  engineer so you can
+[00:36.48]  say that i've been around the block
+[00:39.52]  a few times um so as i start i want to
+[00:43.84]  make sure that
+[00:44.72]  uh i understand the audience so uh is
+[00:48.08]  there a way alex that we could get the
+[00:50.16]  audience to
+[00:51.12]  answer whether they are in uh
+[00:53.84]  traditional ops the sre or devops role
+[00:56.80]  or production engineering
+[00:58.96]  all right it looks like we have mostly
+[01:02.40]  a combination of traditional ops or sre
+[01:05.92]  or devops um so we'll go with that and i
+[01:09.60]  hope
+[01:10.00]  at the end of this session you would
+[01:12.88]  understand what is production
+[01:14.48]  engineering
+[01:15.44]  and how would you make that what are the
+[01:18.64]  key advantages of production engineering
+[01:21.20]  and if you would like to move to that
+[01:23.12]  model how would you
+[01:24.40]  try and move to that model and
+[01:27.76]  in the slides that we will post later i
+[01:29.92]  will probably put some additional
+[01:31.92]  reading
+[01:32.64]  since we have mostly uh traditional ops
+[01:35.28]  and sres here
+[01:38.56]  so as i see the evolution of operations
+[01:41.92]  we have had uh and a large number of
+[01:45.44]  companies do have traditional ops where
+[01:48.48]  you have software engineers developing
+[01:51.04]  software
+[01:52.08]  and suddenly you get a package i call it
+[01:55.28]  the throw it over the wall model
+[01:56.96]  but you get a package to be deployed to
+[01:59.12]  production
+[02:00.08]  and after that somehow the operations
+[02:02.88]  handles everything
+[02:04.32]  they handle the deployment they handle
+[02:06.48]  the
+[02:07.60]  on-call they handle the monitoring of it
+[02:10.24]  and if anything were to
+[02:12.00]  happen they would get called first so
+[02:14.48]  you you may also have a
+[02:16.64]  knock or a something like that picking
+[02:20.16]  up a lot of the calls
+[02:23.12]  google and a few other companies
+[02:25.28]  introduced the concept of
+[02:26.72]  sre where they used to hire developers
+[02:31.76]  into the sre role so that people
+[02:34.72]  understand how to develop and they used
+[02:36.96]  to make sure
+[02:37.76]  that they have actually the google sre
+[02:40.40]  manifesto has about
+[02:42.00]  principles um so the
+[02:45.12]  five percent of the ops works kind of
+[02:47.68]  goes to the development team the sre
+[02:49.84]  load cannon
+[02:52.16]  uh but the most important parts and the
+[02:55.20]  parts that really
+[02:56.48]  should be carried over is the blameless
+[02:59.08]  postmortems
+[03:00.40]  um the keeping of the slo sla sli
+[03:03.76]  and the error budgets and also the
+[03:06.72]  practice of reliability engineering
+[03:09.44]  so suddenly now we have gone from throw
+[03:13.28]  it over the wall to
+[03:15.12]  a little bit more skin in the game for
+[03:18.32]  the engineering
+[03:19.76]  organization for the software
+[03:21.60]  engineering organization to participate
+[03:23.76]  in the
+[03:24.48]  operational aspects of the service some
+[03:27.52]  of
+[03:28.40]  the teams may also be called devops by
+[03:31.28]  the way devops is actually a way of
+[03:34.00]  doing things rather than um rather than
+[03:37.52]  an
+[03:37.76]  organizational structure so i would veer
+[03:40.80]  away from devops
+[03:42.24]  titles uh so this is what google came up
+[03:45.76]  with and it was a
+[03:47.84]  it was an amazing uh evolution of
+[03:50.40]  operations
+[03:51.36]  it definitely made a lot more sense now
+[03:54.48]  for
+[03:55.20]  engineers to participate in the error
+[03:57.60]  budgets and
+[03:58.40]  understanding what is happening
+[04:01.60]  and that is the genesis of
+[04:04.64]  production engineering because a lot of
+[04:06.80]  production engineers
+[04:08.40]  uh the the leaders of production
+[04:10.72]  engineers actually came from
+[04:12.32]  google and so they said they understood
+[04:15.28]  what was happening at facebook where
+[04:17.68]  uh operation engineers were monitoring
+[04:20.00]  the site and things were always crashing
+[04:22.24]  and it was
+[04:22.88]  higher uh more constantly and this was
+[04:26.08]  in the
+[04:26.56]  late uh uh 2010 and early
+[04:30.24]  uh 2011 and 12.
+[04:33.28]  uh pedro kanohati uh and santosh
+[04:38.24]  along with jay parrik they started this
+[04:42.88]  organization called production
+[04:44.48]  engineering and they slowly
+[04:46.72]  uh took the sre model but then improved
+[04:49.84]  it and made sure that
+[04:52.16]  that production engineers are more
+[04:54.48]  embedded
+[04:55.20]  into the facebook engineering structure
+[04:59.76]  and that is what i will go over now
+[05:03.36]  and as you can see on one end of the
+[05:06.96]  spectrum you have throw it over the wall
+[05:09.44]  and on the other end you have really
+[05:12.08]  embedded
+[05:13.36]  production engineers who are taking part
+[05:15.92]  in the
+[05:16.96]  uh the whole software development
+[05:19.76]  process
+[05:20.96]  alongside or in partnership with the
+[05:23.92]  software engineering team
+[05:25.44]  and the other cross-functional teams it
+[05:27.84]  is not just software engineering that we
+[05:29.84]  partner with
+[05:32.80]  all right production engineering is a
+[05:35.60]  hybrid of systems and
+[05:37.52]  software engineering i i am trying to
+[05:40.48]  keep it simple
+[05:41.52]  instead of going through the entire
+[05:43.44]  production engineering manifesto
+[05:47.04]  the reason why we have to be a hybrid of
+[05:49.44]  systems and software is we have to be
+[05:51.68]  able
+[05:52.00]  to go up and down the stack and
+[05:55.12]  we will come come to that in a few
+[05:57.12]  minutes
+[05:59.44]  and the reason why we have to be
+[06:01.04]  software engineers is because we have to
+[06:03.44]  be able to understand and contribute to
+[06:06.00]  the software throughout the software
+[06:09.44]  development life cycle and i'll come to
+[06:11.36]  that in a second
+[06:13.60]  let's take the first part embedded model
+[06:16.56]  so
+[06:17.20]  we don't sit near the uh
+[06:20.72]  software engineers we don't sit next to
+[06:23.04]  the software engineers
+[06:24.48]  we sit with the software engineers so it
+[06:26.80]  is a totally embedded model
+[06:28.88]  we are in all of their meetings um and
+[06:32.32]  so i don't want to use there because
+[06:34.56]  there is no them and us
+[06:36.24]  ah so we are us um so
+[06:39.36]  we are in all the meetings that are in
+[06:42.32]  uh that are happening in the team
+[06:44.40]  uh we understand the backlog we
+[06:47.44]  understand the roadmap we understand
+[06:50.96]  we understand all of the diffs that are
+[06:53.52]  happening
+[06:54.08]  sometimes we are reviewing the devs um
+[06:57.84]  and we are also in the on call
+[07:01.44]  and we are not the only people in on
+[07:04.00]  call actually the software engineers and
+[07:06.24]  production engineers are actually all
+[07:08.32]  added into the on-call as equals so
+[07:11.28]  uh if there are 10 people in the team
+[07:14.32]  and eight of them
+[07:15.52]  are software engineers two of them are
+[07:17.28]  production engineering
+[07:18.80]  then we go on call once uh
+[07:21.92]  through that cycle as well so that is
+[07:24.48]  one of the
+[07:25.36]  items that you want to think about when
+[07:28.08]  you are in an embedded model
+[07:31.20]  and the role in software development
+[07:33.44]  life cycle
+[07:34.24]  is very critical if
+[07:37.28]  if production engineers as production
+[07:40.32]  engineers our focus
+[07:41.76]  is on reliability scalability efficiency
+[07:44.56]  and
+[07:44.96]  efficiency if we focus
+[07:48.08]  only on those aspects
+[07:51.20]  then we miss a lot of the business
+[07:53.28]  problems that we are trying to solve
+[07:55.52]  and that will not provide us a lot good
+[07:58.72]  longer term vision
+[08:00.48]  so the way i look at pe's
+[08:03.60]  role and software development life cycle
+[08:05.84]  is that
+[08:06.64]  you're involved right from the
+[08:07.92]  requirements you have to understand the
+[08:10.00]  business problem
+[08:12.48]  maybe not to an ex extreme detail as
+[08:15.92]  uh as the person who would write the
+[08:18.80]  feature
+[08:19.28]  itself but you need to understand enough
+[08:21.92]  because you need to be able to look at
+[08:23.68]  the architecture and say
+[08:25.28]  is this going to be a good
+[08:29.44]  candidate to go into production what are
+[08:31.68]  the right metrics to measure what are
+[08:33.60]  the reliability metrics to measure
+[08:35.92]  will this scale if you are using 10
+[08:38.72]  resources for 10
+[08:44.00]  10 transactions if you go to a million
+[08:48.40]  transactions will you have a million
+[08:50.32]  resources is the scaling well
+[08:52.72]  so these are things that a production
+[08:55.52]  engineer can
+[08:56.72]  contribute to right at the architecture
+[08:58.80]  phase instead of
+[09:00.80]  solving it in a reactive manner so think
+[09:03.92]  about it as proactive
+[09:05.68]  during development and testing we talked
+[09:07.60]  about it you're reviewing diffs
+[09:09.68]  along with the engineers and you
+[09:12.48]  production engineers are also
+[09:14.16]  contributing
+[09:15.20]  to the reliability aspects so you are
+[09:17.60]  coding alongside for that particular
+[09:20.40]  uh project as well and then when it
+[09:23.52]  comes to production you do want to make
+[09:25.44]  sure that all the error budgets the
+[09:27.36]  dashboards everything so
+[09:29.28]  everything is ready and on-call is not
+[09:32.08]  just
+[09:33.52]  production engineers responsibility the
+[09:35.76]  entire
+[09:36.72]  software the entire team including
+[09:39.52]  software engineers and production
+[09:41.12]  engineers around
+[09:43.52]  i talk about productivity and tooling
+[09:45.68]  because a lot of times we see
+[09:47.92]  that um so
+[09:50.96]  sure now you're in production but you
+[09:52.88]  may be having
+[09:54.40]  a set of issues that uh that
+[09:58.24]  any person on call is spending 50
+[10:00.72]  percent of their time
+[10:02.32]  now imagine in a 10 team uh 10 percent
+[10:05.84]  team
+[10:06.48]  if you're spending 50 percent of one
+[10:08.72]  person's time
+[10:09.68]  on call that is a lot of productivity
+[10:11.76]  that has gone waste
+[10:13.44]  uh so these are things that you want to
+[10:15.92]  understand look at the on-call summaries
+[10:18.24]  and
+[10:18.48]  understand how we can eliminate the
+[10:21.60]  on-call
+[10:22.88]  workload or reduce backlog that you can
+[10:25.60]  contribute to on an ongoing fashion
+[10:28.56]  same with tooling facebook has an
+[10:30.80]  amazing amount of tooling to be able to
+[10:33.68]  understand how we can do some of the
+[10:37.20]  things very easily whether it is
+[10:38.72]  dashboarding whether it is
+[10:41.76]  looking at the trends whether it is
+[10:43.44]  looking at the errors and double
+[10:44.96]  clicking into it
+[10:46.72]  so these are things the that the
+[10:49.76]  that several teams in the infrastructure
+[10:52.72]  organization have developed
+[10:55.20]  for the productivity aspects
+[10:59.68]  um i talked about production engineering
+[11:02.40]  focus
+[11:03.12]  uh we have reliability um
+[11:06.24]  keeping the service up and running and
+[11:09.92]  not only just keeping the site up and
+[11:12.40]  running but
+[11:13.04]  also to make sure that the answers given
+[11:15.84]  if you are an api service
+[11:17.76]  are correct and on time so think about
+[11:20.40]  all of the metrics there that come into
+[11:22.40]  picture
+[11:23.20]  scalability i talked to you about it if
+[11:25.28]  you have 10 resources
+[11:27.04]  for 10 transactions will it really scale
+[11:29.84]  as you
+[11:30.48]  go to millions of transaction
+[11:34.08]  similar things performance what are the
+[11:36.56]  cpu and memory usage that you're using
+[11:39.44]  and all of your reliab
+[11:42.48]  all of the uh the layers underneath are
+[11:46.32]  they performant enough or
+[11:47.92]  are you going to end up in a
+[11:51.12]  in a waiting uh manner where
+[11:54.24]  you are you're dependent on a service
+[11:56.88]  which is synchronous let's say
+[11:58.80]  and then you are kind of uh getting
+[12:02.32]  uh getting stuck in those layers dev
+[12:05.44]  efficiency we talked about
+[12:07.04]  it how can you make all the developers
+[12:09.60]  more efficient
+[12:10.88]  by by developing tool sets
+[12:14.08]  by utilizing the tools and by leveraging
+[12:18.08]  some of the
+[12:18.88]  tools at facebook we do have a lot of
+[12:21.04]  these things
+[12:22.16]  but if you are not at facebook you could
+[12:24.48]  consider how
+[12:25.44]  are some of the other open source uh
+[12:28.00]  software
+[12:28.80]  or other vendors that could be uh used
+[12:31.52]  to improve your developer efficiency
+[12:33.84]  and this includes not just software
+[12:36.08]  engineers it also includes ml
+[12:38.32]  engineers as well
+[12:42.00]  here's a pyramid i will spend a few
+[12:43.84]  minutes on but uh the
+[12:46.72]  slides are available for you to refer to
+[12:48.96]  later and this
+[12:50.32]  is one of the important parts of the
+[12:53.44]  production engineering at facebook
+[12:55.68]  so at the bottom you have server
+[12:57.60]  hardware and provisioning and server
+[12:59.60]  monitoring and life cycle
+[13:01.44]  a lot of ops and sres tend to focus
+[13:05.44]  here and the reason why it is not bad is
+[13:09.60]  you have
+[13:10.24]  somebody has to do this and we have to
+[13:12.64]  get it down
+[13:13.76]  but after this as as the engagement
+[13:16.64]  matures you really want to move
+[13:18.56]  up and up and you want to understand how
+[13:21.12]  are you
+[13:21.60]  monitoring the service how are you
+[13:23.36]  deploying it
+[13:24.64]  uh is the deployment going easy or you
+[13:27.60]  know you have
+[13:28.64]  you you need uh manual handholding to be
+[13:33.12]  in
+[13:33.68]  to ensure that a service is deploying to
+[13:36.72]  production
+[13:37.36]  and it is not deploying without any uh
+[13:40.24]  issues so you may want to have
+[13:42.24]  gatekeepers so you can roll out for the
+[13:44.80]  traffic for
+[13:45.52]  five percent ten percent before you get
+[13:47.60]  200
+[13:49.28]  uh scaling and disaster recovery are you
+[13:52.24]  uh
+[13:52.96]  how are you doing if one whole data
+[13:54.80]  center goes off
+[13:56.08]  or other issues so this is where we look
+[13:59.28]  at some of these best practices and
+[14:01.28]  implement that
+[14:02.88]  we talked about performance tuning to
+[14:04.96]  see what
+[14:06.16]  resources are being used and how we can
+[14:08.32]  make sure
+[14:09.20]  and then the one person stuff the the
+[14:11.92]  team that i personally am
+[14:13.84]  supporting we are in uh in this
+[14:17.44]  top area because we have worked um
+[14:21.36]  we have we use the facebook's
+[14:23.76]  infrastructure so we're not
+[14:25.20]  in involved in the server hardware
+[14:27.04]  provisioning but we
+[14:28.48]  have definitely matured our uh
+[14:31.84]  our engagement with our uh suite
+[14:34.16]  partners
+[14:34.96]  uh to be able to do scaling performance
+[14:38.48]  tuning and definitely contributing
+[14:40.80]  to the reliability of our services
+[14:45.44]  so you really want to see where you are
+[14:47.68]  and how you can get to the next stage of
+[14:49.76]  maturity
+[14:51.68]  how would one get started on
+[14:54.80]  pe so like i talked about it is hard
+[14:58.64]  it is not easy which is why you need
+[15:02.56]  not just yourself it cannot be a
+[15:04.40]  grassroots kind of
+[15:06.00]  evolution you do need some amount of
+[15:10.00]  management uh buy-in as well so
+[15:13.04]  you the you plus the management will
+[15:15.52]  need to set a vision of
+[15:17.20]  how this would work and how you would
+[15:19.28]  make it work and how this would
+[15:21.20]  be good for the overall company because
+[15:23.52]  you are involved in the entire sdlc
+[15:26.08]  so you want to get the alignment between
+[15:28.32]  the
+[15:29.44]  current organization and the software
+[15:32.16]  engineering organization and anybody
+[15:34.24]  else
+[15:34.80]  your program management and others as
+[15:37.36]  well
+[15:38.56]  as you bring in the pe you have to
+[15:41.76]  change your own culture
+[15:43.28]  thinking and skill set as well so this
+[15:46.24]  is something that is very important
+[15:48.00]  without
+[15:49.44]  without the cultural aspects of
+[15:51.60]  blameless postmortems and
+[15:53.68]  things like that it becomes very hard
+[15:55.76]  for uh
+[15:56.88]  you to get involved in a in an easier
+[15:59.68]  manner
+[16:00.80]  and finally there are some pathways i
+[16:04.00]  i mentioned earlier that you have to
+[16:06.00]  understand how to get into
+[16:08.16]  the mindset of the developers by by
+[16:10.72]  being a peer
+[16:12.24]  you're not this is not a subservient
+[16:14.64]  relationship you are a peer because you
+[16:16.88]  are an engineer as well
+[16:18.40]  who can code well who can who has
+[16:20.72]  analytical skills
+[16:22.08]  who has business thinking skills because
+[16:25.12]  you really have to
+[16:27.60]  do this in partnership with your
+[16:29.76]  software engineering
+[16:30.88]  organization
+[16:34.00]  all right i want to quickly go over this
+[16:36.72]  one so that we can get to the discussion
+[16:38.56]  part of it the
+[16:39.44]  top takeaways are to choose your
+[16:42.56]  operation model because
+[16:44.08]  it drives the culture the culture of the
+[16:47.68]  company the culture of the software
+[16:49.76]  development it drives the velocity
+[16:51.60]  because
+[16:52.88]  as i mentioned if you have uh
+[16:56.08]  throw it over the wall model then you
+[16:58.16]  really
+[16:59.28]  are developing very fast only to get
+[17:02.00]  stuck in the operational area
+[17:04.32]  or if you're using the sre model then
+[17:07.36]  only five or fifty percent of this thing
+[17:09.68]  is coming into the
+[17:11.36]  sre part of it you really want it to be
+[17:14.16]  smooth
+[17:15.04]  throughout the development life cycle it
+[17:17.60]  is probably slower initially but then
+[17:20.40]  you go slow initially to be able to go
+[17:22.64]  fast
+[17:23.60]  and this will enable growth in your
+[17:26.48]  entire organization because you have a
+[17:29.04]  much smoother pipeline
+[17:30.80]  of features from requirements all the
+[17:34.32]  way to production and successful
+[17:36.08]  production
+[17:36.80]  so that's what i would like to have you
+[17:40.16]  all take away and i hope that
+[17:43.76]  you can you can look at how to
+[17:46.48]  incorporate production engineering in
+[17:48.40]  your own
+[17:49.20]  uh company uh happy to help and
+[17:52.32]  uh and and lead you as needed
+[17:55.84]  um i think my contact uh
+[17:59.20]  is in is in the initial slides thank you
+[18:02.64]  all appreciate you
+[18:03.68]  joining us
+[18:24.80]  you

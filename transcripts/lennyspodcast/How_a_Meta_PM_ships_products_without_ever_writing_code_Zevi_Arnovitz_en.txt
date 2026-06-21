@@ -1,0 +1,1732 @@
+Title     : How a Meta PM ships products without ever writing code | Zevi Arnovitz
+Video ID  : 1em64iUFt3U
+URL       : https://www.youtube.com/watch?v=1em64iUFt3U
+Language  : English (en)
+Generated : No (manually created)
+Snippets  : 887
+Saved at  : 2026-06-21 00:59:48
+------------------------------------------------------------
+
+[00:00.08]  You are a product manager shipping product  
+[00:02.80]  without knowing how to write code, 
+barely knowing how to review code.
+[00:06.08]  I have zero technical background, did 
+music in high school ... when Sonnet  
+[00:10.08]  3.5 came out. I remember watching a YouTube 
+video building apps using Bolt or Lovable.  
+[00:15.84]  It basically felt like someone came up to 
+me and said, "You have superpowers now."
+[00:19.36]  These days, you're using Cursor with Claude Code.
+[00:22.16]  If you're non-technical like me, code 
+is terrifying, but AI just makes it so  
+[00:26.40]  much possible. In the next coming years, I 
+think everyone's going to become a builder.  
+[00:29.60]  Titles are going to collapse and 
+responsibilities are going to collapse.
+[00:33.12]  The main challenge people have is 
+reviewing the code that AI has written.
+[00:36.40]  It's very difficult for me to catch 
+mistakes. What I'll do is basically  
+[00:41.04]  /review. This tells Claude to start reviewing 
+its own code, but what's even cooler is I have  
+[00:47.12]  Codex as well as Cursor open. I will 
+have each of them review the code.
+[00:52.16]  This comes back to this quote. I think 
+everyone's always hearing. It's not that  
+[00:54.88]  you will be replaced by AI. You'll be replaced 
+by someone who's better at using AI than you.
+[00:59.84]  It's the best time to be a junior, contrary 
+to what a lot of people are saying,  
+[01:02.80]  how there's no more junior roles 
+out there. Yeah, that's true,  
+[01:05.76]  but also when else in history could you get out 
+of school and just build a startup on your own?
+[01:11.84]  Today, my guest is Zevi Arnovitz. Zevi is a 
+PM at Meta. Prior to that, he was a PM at Wix,  
+[01:17.52]  and this is a truly remarkable conversation that 
+every non-technical product person needs to hear.  
+[01:23.52]  Zevi is super young and has no technical 
+background, but as a smart, young,  
+[01:28.32]  ambitious person, has learned how to use 
+Cursor and Claude Code to build significant  
+[01:32.72]  and real products completely on his own, and he's 
+created his own very clever and effective workflow  
+[01:38.32]  that everyone listening can copy.
+To make that copying even easier,  
+[01:42.08]  at the top of the show notes of this episode, you 
+can download all of the prompts and /commands and  
+[01:46.00]  start doing all of this yourself. Zevi shows you 
+how to work with cursor to quickly add your ideas  
+[01:51.92]  to Linear to explore your idea with AI, how to 
+develop your plan, how to then build the thing,  
+[01:58.00]  and then have different LLMs review 
+your code and update your documentation,  
+[02:02.00]  and then use all of this as a learning opportunity 
+to develop your own sense of how things work. 
+[02:06.96]  I haven't stopped thinking about 
+this conversation since we had it,  
+[02:10.48]  and everyone needs to pay attention to what 
+AI is unlocking for non-technical people.  
+[02:15.36]  A huge thank you to Tal Raviv for encouraging 
+me to meet Zevi. If you enjoy this podcast,  
+[02:19.68]  don't forget to subscribe and follow it in 
+your favorite podcasting app or YouTube. 
+[02:23.36]  It helps tremendously. And if you become 
+an annual subscriber of my newsletter,  
+[02:27.60]  you get 19 premium products for free for 
+an entire year including Lovable, Replit,  
+[02:34.08]  Bolt, Gamma, n8n, Linear, Devin, PostHog, 
+Superhuman, Descript, Wispr Flow, Perplexity,  
+[02:38.72]  Warp, Granola, Magic Patterns, Raycast, 
+ChatPRD, Mobbin, and Stripe Atlas. Head  
+[02:42.56]  on over to lennysnewsletter.com and click 
+product pass. With that, I bring you Zevi  
+[02:47.04]  Arnovitz after a short word from our sponsors.
+This episode is brought to you by 10Web,  
+[02:52.96]  the company that pioneered AI website building 
+before ChatGPT. In the last three years, over two  
+[02:58.96]  million websites have been generated with 10Web's 
+vibe coding platform. 10Web's vibe coding platform  
+[03:04.16]  is a powerful way to build websites. Think of it 
+as lovable for WordPress, front end and backend.  
+[03:10.64]  Users can build any website at any complexity, 
+e-commerce, portfolios, information websites,  
+[03:16.96]  blogs, and it comes with the WordPress admin 
+panel and thousands of ready to use plugins. 
+[03:21.92]  10Web also offers website generation as an API 
+as a service for SaaS companies, marketplaces,  
+[03:27.68]  hosting providers, MSPs and agencies. SaaS 
+companies can embed it via API so that users  
+[03:33.52]  can launch AI generated sites directly inside 
+of their platform, connected to their own data.  
+[03:38.80]  Agencies and MSPs can get a white label 
+dashboard to manage clients and resell under  
+[03:44.08]  their brand. Hosting providers can self-host 
+the API builder on their own infrastructure. 
+[03:49.36]  Check it out at 10web.io/lenny and use code 
+Lenny for exclusive free credits and 30% off  
+[03:56.88]  API or white labeled solutions. That's the number 
+10web.io/lenny, vibe coding platform as an API.  
+[04:06.80]  Today's episode is brought to you by DX, the 
+developer intelligence platform designed by  
+[04:11.28]  leading researchers. To thrive in the AI era, 
+organizations need to adapt quickly, but many  
+[04:17.04]  organization leaders struggle to answer pressing 
+questions like, which tools are working? How are  
+[04:22.00]  they being used? What's actually driving value?
+DX provides the data and insights that leaders  
+[04:27.84]  need to navigate this shift. With DX, companies 
+like Dropbox, Booking.com, Adyen, and Intercom  
+[04:33.92]  get a deep understanding of how AI is providing 
+value to their developers and what impact AI is  
+[04:39.28]  having on engineering productivity. To learn 
+more, visit DX's website at getdx.com/lenny,  
+[04:46.56]  that's getdx.com/lenny. Zevi, thank you so 
+much for being here and welcome to the podcast.
+[04:56.64]  Thanks for having me, Lenny. 
+I'm a huge fan of the show and  
+[04:59.92]  tons of people that I've admired most and 
+learned the most from. I've been on here,  
+[05:02.96]  so it's a crazy moment for me. 
+I'm really excited for this.
+[05:06.32]  I really appreciate that. I want 
+to start by reading actually a note  
+[05:09.68]  I got about you from Tal Raviv, 
+who is a previous podcast guest,  
+[05:14.56]  many times newsletter collaborator. One of 
+the most AI forward product managers that  
+[05:18.80]  I know I've learned a ton from him. So here's 
+what he said about you when he introduced us. 
+[05:22.96]  Zevi is the most hands-on vibe coding PM I know, 
+and I've personally learned so much from him. His  
+[05:28.24]  engineers at Meta ask him to teach them how 
+to do what he does. Every time we get coffee,  
+[05:33.60]  I repeatedly get this feeling of 
+everyone needs to be hearing this.
+[05:37.28]  That's so nice.
+[05:38.32]  And so that's the goal. That's the goal of this 
+conversation is to help more people hear what you  
+[05:41.84]  figured out. We're going to get very hands-on. 
+We're going to do a lot of show versus tell,  
+[05:46.64]  showing people what you've figured out about how 
+to be a PM, a non-technical PM building stuff. I  
+[05:52.40]  want to give people a little bit of background 
+on you because I think this is going to inspire  
+[05:55.84]  a lot of listeners to feel like they can also 
+do what we're about to show you. This is going  
+[06:00.40]  to look very advanced, but just give people a 
+little bit of sense of just your background.
+[06:05.04]  I'm very non-technical. I have zero technical 
+background. Did music in high school. A lot of  
+[06:10.80]  Israelis do technology units in the Army. I was 
+not in a tech unit. And basically a year ago,  
+[06:18.00]  I was traveling with my wife for three 
+months in Asia and we were in Japan and  
+[06:23.36]  that was around when Sonnet 3.5 came out. 
+And I remember watching a YouTube video.  
+[06:29.84]  I think it was either Greg Isenberg or Riley 
+Brown and they were basically building apps using,  
+[06:37.04]  it was either Bolt or Lovable, just using AI.
+And it was like a crazy moment for me because  
+[06:42.88]  I was watching this and it basically felt like 
+someone came up to me and said, "Hey Zevi, there's  
+[06:48.16]  this cool new technology you should check out. You 
+should really give it a try. Oh, and by the way,  
+[06:52.64]  you have superpowers now." And the second I got 
+home from Japan, I didn't even unpack my bags,  
+[06:58.00]  ran to my computer, opened Bolt, opened an 
+account, and for the past year I've been building. 
+[07:03.36]  And the last thing I'll say on that is we talked 
+about this a bit before we started recording,  
+[07:07.28]  but I was prepping with Claude for the episode 
+and I was trying to clarify what my goal is for  
+[07:15.20]  this episode. And Claude said, "If people 
+walk away thinking how amazing you are,  
+[07:20.16]  you failed. And if people walk away and 
+open their computer and start building,  
+[07:23.52]  you've succeeded." So I really hope that 
+we can inspire some people to do the same.
+[07:27.68]  I love that so much. I feel like that should 
+be the goal for my podcast. If you're like,  
+[07:31.60]  "I love that guest." It's less of a win. 
+If it's just like, "Oh, I'm so inspired  
+[07:35.60]  to do the thing that they figured out, that 
+is the real win." I love, Claude is the best.
+[07:41.44]  I agree.
+[07:42.72]  Okay. So let's dive in and give people, let's 
+start with kind of a high level overview of  
+[07:47.12]  how you operate and you use AI in your job. What 
+are the core tools and just what's kind of like  
+[07:52.96]  the frame of reference for the workflow 
+that you figured out and how you operate?
+[07:56.88]  This all started where I was a project's 
+power user. I love projects, GPT projects.
+[08:03.04]  ChatGPT projects?
+[08:04.00]  Yeah, exactly. GPT projects and Claude projects, 
+which are basically a shared folder of chats which  
+[08:10.08]  share both custom instructions and shared 
+knowledge base. And I think it was around  
+[08:15.92]  when GPT started using memory where I thought 
+it was interesting, but it really annoyed me  
+[08:23.28]  because I do a bunch of different things. I'm 
+a terrible runner, I'm a PM, I was a student,  
+[08:31.28]  psychology student, so I had all these 
+different facets of life. And what happened was  
+[08:37.44]  the memory feature was mixing stuff up.
+So like I talked to GPT about running  
+[08:41.60]  and it would say, "Oh yeah, after this 5K, you're 
+going to crush all your next product reviews." And  
+[08:46.96]  it's like, okay, I understand that you have that 
+in your memory, but it's just not relevant. And  
+[08:52.80]  projects basically allows you to compartmentalize 
+and have things within the right context. So  
+[09:01.68]  tracking back to the story I told when we came 
+back from Japan, I started building this app. 
+[09:05.84]  The first thing I noticed was that these products 
+were built in a way where, and when I say these  
+[09:11.60]  products, I mean Bolt and Lovable, were built in 
+a way where they were super eager to write code.  
+[09:16.88]  So their system prompt was you're a coding 
+agent. So when you'd write something, they'd  
+[09:21.20]  straight away start coding. So at the beginning 
+of a project, this was super fun and exciting  
+[09:25.04]  because they just go and start building your app.
+But later on when things got more complex, this  
+[09:30.72]  created much more problems because planning 
+is really important when you're implementing  
+[09:35.28]  something technical and let's say you're 
+implementing payments or something that's  
+[09:40.24]  going to be a change to your database. If 
+the coding agent is just like, "All right,  
+[09:45.60]  I got it." And just starts writing code, 
+this always results in terrible things,  
+[09:49.60]  some really gnarly bugs that I had.
+And to mitigate this, what I did was I created  
+[09:54.56]  sort of a CTO. So again, I'm not technical. I 
+have been in product for a while, but I know  
+[10:02.08]  zero stuff about code. So basically what I did was 
+I created a CTO with the custom prompt of it being  
+[10:11.20]  the complete technical owner of the project. So I 
+told it, "I own the problem. I own how we want the  
+[10:17.12]  users to feel. You're the complete owner of how 
+this is going to be built. I want you to challenge  
+[10:22.40]  me. I don't want you to be a people pleaser."
+All these things that kind of mitigate the  
+[10:26.32]  regular ChatGPT-isms. I always think about this 
+where for some reason, the easiest way for me to  
+[10:32.80]  think about AI is to imagine it as people. And 
+I think ChatGPT would probably be the worst CTO  
+[10:39.52]  because it's such a people pleaser and it's so 
+sycophantic where ... Just a short story I had  
+[10:46.48]  a few weeks ago, I was trying to learn about 
+Bun JavaScript, which was acquired by Anthropic  
+[10:52.48]  and I was trying to understand what they do.
+So I was talking to GPT and this wasn't within my  
+[10:57.44]  co-founder CTO project and I asked it if it's 
+similar to a different framework that I have  
+[11:04.48]  in my app called Zustand, which nothing 
+to do at all with what Bun JavaScript  
+[11:10.48]  does. And basically GPT goes, "Oh yeah, it's 
+exactly the same." And then it started talking  
+[11:16.08]  about what it meant and I was like, "Wait, 
+no, these are not the same at all." And it  
+[11:20.72]  said the most terrifying and hilarious thing.
+He goes, "Oh, I'm sorry. I thought you were  
+[11:24.16]  just making this up and I was riffing 
+with you." And I was like, "Oh no, no,  
+[11:28.80]  no, this is terrible." So basically if regular 
+ChatGPT was a CTO, that would be the CTO who goes  
+[11:34.40]  along with your dumbest ideas. So creating 
+the project allowed me to mitigate that.
+[11:40.08]  So this is, just to be super clear, you have 
+a ChatGPT project that you've given a prompt  
+[11:45.36]  to be your CTO of your product 
+and being a non-technical person,  
+[11:51.04]  this is kind of like the thing you talk to 
+when, and we'll get to what you're actually  
+[11:55.84]  using to build when you have questions about 
+architecture and decisions that are technical.
+[12:00.40]  Yeah. So now I'll show my full workflow 
+and I don't involve GPT anymore,  
+[12:05.60]  but I definitely would recommend, even though the 
+technology has gone ... So when I started this,  
+[12:11.36]  there was no plan mode or ask mode. It was just 
+build on these products on Lovable and Bolt,  
+[12:17.44]  and they've progressed a ton. A lot of what 
+I had as workflows have become ingrained  
+[12:22.16]  in these products, which is really interesting.
+I would still recommend start with a project for,  
+[12:27.92]  first of all, the reason that I said, and also 
+it kind of puts you in a place where you're in  
+[12:31.84]  a chatbot and not writing code. So you take the 
+time to converse and to learn, which I think is  
+[12:37.28]  critical. And the second thing is if you're 
+non-technical like me, code is terrifying.  
+[12:44.40]  It's the scariest thing in the world to look at, 
+and I look at it as kind of like exposure therapy. 
+[12:49.52]  I think if you see this where I'm working like 
+in Claude or in Cursor, you might be excited to  
+[12:56.40]  start using those, but I would really recommend 
+starting slow with a GPT project, beautiful UI,  
+[13:03.04]  super simple, then maybe graduate to like a Bolt 
+or a Lovable, and then go to Cursor in light mode,  
+[13:09.52]  slowly, slowly, gradually ease 
+in until you open a terminal,  
+[13:13.84]  go full dark mode, go full dev. So I would 
+really recommend doing this gradually.
+[13:18.88]  That is awesome advice. And so just to be clear,  
+[13:22.00]  these days you're using Cursor with Claude Code 
+powering it. And what I love about that is that  
+[13:28.40]  you've never written code. The way you put 
+it, you're afraid of even looking at code.
+[13:32.55]  Yeah, 100%.
+[13:32.56]  You can do exposure therapy, and I love 
+that Cursor is useful to you. And what  
+[13:39.60]  you're telling us is that graduating 
+from a ChatGPT project that is kind of  
+[13:43.76]  your technical co-founder kind of taught you 
+enough to feel more comfortable going straight  
+[13:48.80]  to cursor. You said that you actually went 
+to Bolt and Lovable kind of in the interim  
+[13:53.52]  and then you went just straight to Cursor. What's 
+the reason to just go straight to Cursor? Is it  
+[13:57.92]  just Cursor can do everything and once you get the 
+hang of it, it's actually the most powerful tool?
+[14:02.88]  Yeah, I think I graduated from each tool when I 
+kind of outgrew it. So Bolt was awesome until I  
+[14:08.72]  was trying to connect payments to my app 
+and I kind of started losing it and then  
+[14:12.56]  I graduated to Cursor and I've actually fallen 
+in love with Claude. So I'm using Claude Code,  
+[14:16.80]  but that also runs within Cursor, and 
+I think this is Tal who told me this. 
+[14:22.16]  I'm not sure who he's quoting, but code is 
+just words at the end of the day. So it's  
+[14:27.04]  just files on your computer. So basically you 
+can be working on the same project and carry  
+[14:31.68]  it from app to app. And especially now, 
+I can work with multiple models and apps  
+[14:36.72]  on my project. So start slow, but definitely 
+there's a lot of places you can graduate to.
+[14:42.80]  Awesome. Okay. Should we dive into 
+screen share showing how you operate?
+[14:47.04]  Awesome. I pulled up cursor. Can you see it?
+[14:49.68]  Mm-hmm.
+[14:50.56]  Perfect. So within my code base, what you can see 
+here on the left, these are all my code files.  
+[14:56.96]  Here on the right is Cursor. So this is 
+basically like having AI, which has access  
+[15:02.16]  to all the code. And here in the middle, I have 
+Claude Code running. And what you can see here,  
+[15:06.24]  I'm going to close cursor for a second. 
+What you can see here are all my /commands. 
+[15:10.72]  Basically what /commands are, they are reusable 
+prompts that I save within the code base that  
+[15:16.64]  I can run by writing / and then the name of 
+the file. So here you can see Create Issue,  
+[15:22.56]  which is the first command that I'm going to 
+use. And basically what this tells Claude,  
+[15:26.16]  it says the user is meant development and 
+thought of a bug or a feature and improvement,  
+[15:30.48]  capture it fast so they can keep working.
+And then it basically says, this is the  
+[15:34.56]  format that I want you to capture the linear 
+issue in, and it explains a bunch of things  
+[15:40.88]  what exactly Claude needs to do to get there. 
+So the way I invoke this is basically I'll do  
+[15:47.60]  /create issue and this injects this prompt 
+into Claude. So it says, "I'm ready to help  
+[15:54.40]  you to capture this issue, what's on your mind."
+So basically when I'll do this is if I'm working  
+[15:58.80]  on a big project and I suddenly come across 
+a bug or have an idea that I don't want to  
+[16:03.52]  work on right now, but I want to work on later, 
+I'll do this really quick and Claude's main goal  
+[16:08.24]  is to quickly capture what I'm thinking about. 
+So quickly to run through my full workflow. So  
+[16:14.32]  basically it starts with creating an issue. 
+So this is the create issue /command, which  
+[16:19.68]  basically tells Claude that I'm mid-development 
+and it should quickly capture what I'm thinking  
+[16:24.08]  about and create an issue within linear.
+Then later on, when I want to pick this up,  
+[16:29.12]  I have the exploration phase. Exploration 
+phase is basically telling Claude,  
+[16:33.68]  we're going to only explore what we want to 
+solve here. It could either pull from linear  
+[16:37.84]  or I can just speak freely to it. And what it 
+will do is it will analyze and understand the  
+[16:43.28]  issue and just ask clarifying questions. 
+The next phase after we've done finished  
+[16:47.92]  exploration phase is we're going to create a plan.
+So you can see create plan. This basically has  
+[16:53.76]  a template that I love for creating plans, and 
+the output of this at the end of the day will be  
+[16:58.96]  a markdown file with our plan that we can end up 
+building along with code. After creating the plan,  
+[17:04.48]  we have execute plan. After execution, we 
+have review and then we have peer review,  
+[17:10.00]  which is really cool and we'll get into 
+later on, and at the end, we update the docs. 
+[17:14.24]  So this is updating documentation and everything 
+so that agents can write better code later on. So  
+[17:19.04]  I think what we'll do is we're going to build a 
+feature live for my app, which I think is really  
+[17:23.28]  cool. But first what I'd like to do is show 
+you the app so you have some context. So this  
+[17:28.56]  is StudyMate. It's a platform for students, which 
+allows them to upload study materials and create  
+[17:36.64]  interactive tests based on their own materials.
+So here we can go to the top. Let's upload a PDF.  
+[17:46.88]  We can decide what pages we want to be quizzed 
+on. We can decide the number of questions,  
+[17:52.72]  the difficulty level. And basically what happens 
+behind the scenes is we send the information the  
+[17:59.12]  user uploaded along with the system prompt and 
+any other augmentations the users decided to  
+[18:04.96]  Gemini and we create a quiz. These are challenging 
+questions that are meant to assess comprehension.  
+[18:12.48]  You even have some hints and once we do a few 
+of these, we can submit ... I got them right?
+[18:21.20]  Terrible results.
+[18:22.48]  Yeah, lucky.
+[18:23.52]  And so just to be really clear about this, this 
+is like a side business that you have, an app that  
+[18:27.68]  you built that's making money. That's like a thing 
+you vibe coded having no technical experience.
+[18:32.15]  Yeah, this is my weekend 
+project. Yeah. This is what I do.
+[18:34.56]  Amazing.
+[18:35.20]  On weekends. Yeah. So you get basically 
+deep explanations into why each  
+[18:41.12]  question was wrong or each question was 
+right. And at the moment, StudyMate only  
+[18:45.84]  has multiple choice questions. And I was doing 
+some competitor research over the last weekend  
+[18:51.44]  and I saw competitors who had true or false 
+questions and also fill in the blank questions,  
+[18:56.40]  which I loved. So I think that'd be really cool 
+if we could build that live. How's that sound?
+[19:00.56]  I love it. Crossing your fingers, this all 
+work. I just want to highlight the stuff  
+[19:05.76]  you shared right before this in cursor. So this 
+is a huge deal, what you describe here. This is  
+[19:10.64]  essentially what you've figured out is a way as 
+a person that has no idea how to write any code,  
+[19:16.00]  how to build a product in Cursor as a product 
+manager using this series of /commands that  
+[19:22.64]  you've concocted that you're going to be sharing 
+with listeners. They can download all these and  
+[19:27.20]  just use them directly. They don't have to figure 
+out all these prompts that you've figured out.
+[19:31.04]  Yeah, 100%. Basically what happened 
+was I formulated the backbone of this  
+[19:36.00]  with the CTO, and it was basically 
+within the system prompt of the CTO  
+[19:40.64]  project that I had within GPT. So it 
+said, step one, we do this. Step two,  
+[19:44.32]  we do this. And now I'll keep building. And if I 
+see something that happens over and over again,  
+[19:51.04]  I'll just create a /command and then it 
+will be automated within the workflow.
+[19:54.88]  Amazing. So just to summarize the /command. 
+So one is create an issue in Linear, which  
+[20:00.64]  I love. Linear is awesome. Shout out Linear.
+[20:02.88]  That's also from the product pass.
+[20:04.40]  From the product pass. Oh my God, what a value? 
+Okay. So step one is create the issue in linear.  
+[20:09.60]  So it's a command. So this prompt /command you've 
+created, just create issue. Then it's explore,  
+[20:16.08]  which is explore the idea, help me ideate on 
+what this could be. And this is Claude helping  
+[20:21.76]  you think through the feature and product. 
+And then it's actually create the plan. 
+[20:27.04]  And so it's like the AI helping you build the plan 
+to build the product. Then it's actually execute,  
+[20:33.76]  which is just build the thing. 
+And then there's this review,  
+[20:37.04]  peer review step, which is awesome that 
+you'll share. And then there's document,  
+[20:41.20]  update documentation based on the 
+new feature that we're adding. Sweet.
+[20:44.64]  Yeah. Cool. So let's go ahead and start 
+building. So I'm going to use Wispr Flow  
+[20:52.08]  to dictate and basically this starts with /create 
+issue. So this basically sends that prompt. And I  
+[21:01.52]  love this because I usually do this during when 
+I'm building something else. So basically it  
+[21:07.84]  tells Claude that I'm mid building something and 
+I don't have a lot of time to waste time on this. 
+[21:12.24]  So just ask some brief questions so that 
+you have enough to capture within linear.  
+[21:16.40]  So I want to add fill in the blank questions to 
+StudyMate. I want this to be 30% of tests to be  
+[21:25.28]  generated as fill in the blank questions. 
+I want there to be six potential answers  
+[21:30.72]  for two blank spots, and of course there's only 
+going to be two correct answers. So one correct  
+[21:36.48]  answer and two incorrect answers for each spot 
+and I want the interface to be drag and drop. 
+[21:43.76]  So that's just basically a quick 
+think of how I want this to work.  
+[21:49.84]  So it's going to ask me a few questions. Quizzes 
+are 100% multiple choice, question structure,  
+[21:56.32]  single sentence passage to blanks and priority. 
+So one and two are correct, and this is  
+[22:05.84]  not high priority. It's a nice to have feature.
+So now basically what Claude is going to do is  
+[22:12.96]  it's going to use MCP, which is basically 
+a technology that was created by Anthropic,  
+[22:20.08]  which gives AI the ability to use tools. So 
+this is connected to my linear. So what it's  
+[22:25.36]  going to do now is it's going to use everything 
+we've said and create an issue within Linear.
+[22:30.40]  And by the way, as this is loading, I just 
+love the way, the way you described this,  
+[22:34.40]  especially doing voice mode, it's like exactly 
+how you would talk to an engineer describing a  
+[22:39.36]  feature, "Here's what I want." And then they 
+ask you questions, here's the clarification.
+[22:43.76]  Yeah. So at first when I was doing this with 
+the CTO, I would do it with ChatGPT voice mode,  
+[22:50.40]  and that was crazy. That literally felt like 
+ideating with a person. It would push back,  
+[22:55.52]  ask questions, and maybe one day the coding tools 
+will get there too, but that was exactly ... It  
+[23:02.32]  really felt like sitting with my CTO. Great. So 
+created STU88. So if we open up Linear now, we  
+[23:09.28]  should be able to see ... Let's see where STU88.
+There it is. Fill in the blank questions with drag  
+[23:17.28]  and drop interface. So it has a TLDR, it has the 
+current state. It did a little bit of research on  
+[23:22.48]  the code base, I think, expected outcomes, some 
+context. So yeah, so this is basically ready for  
+[23:28.80]  me to pick up when I'm interested in building. 
+So now let's say a few days go by, I finished the  
+[23:34.16]  current project I'm working on, I can pick it up.
+So when I pick it up, I do /exploration phase,  
+[23:39.84]  which is what we said. And then instead of 
+pressing enter, I'll press tab and I'll show  
+[23:44.24]  you this. So basically, exploration phase, what 
+it does is it will take an argument. This is  
+[23:51.04]  basically a placeholder within the prompt, 
+which allows me to enter something that is  
+[23:57.76]  extra context for the AI. So I can say here, 
+Linear STU88, which is referencing the ticket.  
+[24:07.60]  And now what it's going to do is it's going 
+to go, it's going to fetch the Linear ticket.
+[24:12.64]  And what's the idea? What's 
+the goal of the exploration  
+[24:14.64]  phase? This ideate on the idea. Is that the-
+[24:17.52]  Exactly.
+[24:17.92]  Okay.
+[24:18.32]  So it's both for the CTO to deeply 
+understand the problem that we're  
+[24:22.72]  trying to solve and also understand 
+the current state of the code base,  
+[24:26.32]  what files need to be affected, and how is 
+the best way to implement this technically.  
+[24:31.60]  And usually what happens is right now, Claude 
+is just basically reading a bunch of files,  
+[24:35.76]  understanding the basic structure of the 
+code, and then it's going to come back with  
+[24:39.68]  a bunch of clarifying questions that will 
+decide how we end up implementing this.
+[24:44.56]  So it feels like it's talking 
+to your engineering manager.
+[24:48.32]  Exactly, exactly. 100% this 
+is how I think about it.
+[24:51.84]  And you said that you're a CTO, 
+so you used to use ChatGPT prompt  
+[24:56.48]  to have a CTO in there. Now the 
+CTO's living inside here in Cursor?
+[25:00.80]  Yeah, because of the way the tools have developed 
+and they've become so good at both exploration and  
+[25:07.52]  code execution. So now it's just a habit that 
+I call it a CTO, but it's basically all in one.  
+[25:13.68]  The same agent will both do the exploration and 
+write the plan and end up executing the code.
+[25:19.04]  Got it. So it's basically it's 
+Claude Code. Is there a prompt  
+[25:21.60]  you gave it to act like that? To 
+act like the right kind of CTO?
+[25:26.88]  Yeah, so within the Claude.md, which is 
+basically the system prompt that's loaded  
+[25:32.96]  within Claude's context in every conversation, I 
+have some basic stuff like this is our workflow,  
+[25:39.44]  this is how we work. Within exploration 
+phase, I want you to challenge my thinking,  
+[25:43.20]  all kinds of stuff like that that can 
+be loaded within the Claude.md file.
+[25:47.60]  Cool. One last question before we move on here,  
+[25:49.92]  just because I'm thinking about it as this 
+happens, the Linear issue that you generated,  
+[25:55.12]  how often is it actually great and ready? How 
+often do you have to edit it? What's the quality  
+[26:00.72]  of the Linear ticket that it generates? Because 
+a lot of people are probably wondering just like  
+[26:05.04]  all these terrible linear issues are being 
+created by AI. Are they actually any good?
+[26:08.64]  It's completely different because I'm a company 
+of one. So a lot of the context is within here  
+[26:15.76]  and there's no need for me to talk to other teams 
+and understand. It's basically very accessible,  
+[26:20.80]  and also I can easily see when 
+Claude understood something wrong. 
+[26:26.16]  I don't want to say that I would create Linear 
+issues at work like this, but definitely if you're  
+[26:31.36]  building your own side project, they're pretty 
+quality. And also, it just kicks off when I want  
+[26:38.40]  to start working on it. I wouldn't say it's ready 
+to be built. It's ready to start being explored.
+[26:43.92]  Got it. So it's just the beginning of an idea. 
+Actually, let's come back after we go through this  
+[26:47.52]  flow of how you would approach this if you were 
+at say Meta or another, maybe a smaller company,  
+[26:52.48]  how this workflow might work at a larger 
+company that isn't just your own startup.
+[26:56.72]  Yeah. Interesting.
+[26:57.44]  Let's come back to that.
+[26:58.64]  Cool. All right. So this is Claude coming back. 
+I have a comprehensive understanding of the code  
+[27:05.04]  base. I thoroughly analyzed StudyMate live 
+codebase and understand the current system,  
+[27:11.20]  feature quest and key areas that it's identified. 
+Usually I'd spend a lot of time going over this  
+[27:17.60]  because this is super, super important, but 
+just for the sake of development right now,  
+[27:21.04]  we're going to brush through this.
+Now Claude basically comes back after it's  
+[27:26.00]  gone through the code base and understood the 
+way it currently works. It's basically telling  
+[27:30.72]  me what the current understanding is. So it's 
+talking about how the app is set up at the moment,  
+[27:36.32]  how the data is structured, what it understood 
+from the feature quest, and what it has identified  
+[27:43.12]  as key areas, and then it asks me some questions.
+So it's asking about the scope, it's asking about  
+[27:48.32]  the data model, the UX/UI of the feature, how 
+it should be validated, how it should be graded,  
+[27:54.64]  what changes need to be happened to the AI 
+system prompt and all kinds of questions  
+[27:59.20]  about the app. I've prepared answers to all these 
+questions beforehand because I don't think we all  
+[28:04.00]  want to sit through this. So I'm just going to 
+paste that in and we'll see what Claude says.
+[28:08.24]  Awesome. I love it. And I love just scanning those 
+questions I was asking. It's like such smart,  
+[28:13.92]  sophisticated, important questions instead of 
+just, "Cool, here I go, I'm going to build it."
+[28:18.16]  Yeah, and I think this is the big difference 
+between just vibe coding and going along with the  
+[28:22.96]  vibes and really building serious apps. I spend 
+a lot, a lot of time going back and forth and  
+[28:29.44]  understanding. Also, a very cool /command that I 
+haven't showed yet is learning opportunity, which  
+[28:36.64]  basically when something is really difficult for 
+me to understand, I'll do /learning opportunity  
+[28:42.32]  and then talk about what I want to learn.
+And this basically primes Claude and says,  
+[28:47.28]  "I am a technical PM in the making. I 
+have mid-level engineering knowledge.  
+[28:51.60]  I understand architecture and basically I want 
+you to explain what we're currently working on  
+[28:58.00]  using the 80/20 rule." So this is a great way to 
+learn. I would definitely take this and every time  
+[29:02.88]  you kind of see something that you don't fully 
+understand, I would definitely use this to learn. 
+[29:08.72]  Great. So Claude basically comes back and says how 
+it understands the current data model and how it's  
+[29:16.16]  going to implement. Yeah, so it's ready to create 
+the plan. So basically what I'm going to do now  
+[29:21.04]  is I'm going to go and do /create plan and while 
+Claude is doing this, I'm going to show really  
+[29:29.36]  quick what this looks like. So basically, these 
+plans are from a template that I found on Twitter. 
+[29:36.88]  I forgot who it was, but it was just a 
+template that really resonated with me. And  
+[29:41.36]  it's basically saying, based on our exchange, 
+create a markdown file that will be the plan,  
+[29:47.20]  include clear, minimal, concise steps, track the 
+status. So this basically has like status trackers  
+[29:52.96]  on each task that Claude updates as it's going 
+through and it will have a TLDR, some critical  
+[29:58.40]  decisions that we've made and the plan itself.
+So Claude has finished writing the plan,  
+[30:03.60]  so we'll be able to look and see exactly what the 
+plan is. So it has a TLDR, it has the critical  
+[30:10.08]  decisions we've made and the tasks broken down. 
+And this is a perfect plan and it's also a really  
+[30:16.00]  good way to write this because a lot of times, 
+I'll use different models to execute certain  
+[30:21.28]  stuff. So Cursor has an amazing model called 
+Composer, which is superfast. So a lot of things  
+[30:27.84]  that are not that complex, I'll use Composer.
+Gemini 3 that just came out is unbelievable  
+[30:34.56]  at UI. So a lot of times, I'll split 
+the plan into backend and front end,  
+[30:38.40]  and then I'll have Gemini just read the plan and 
+do the front end. So having this as a markdown  
+[30:44.00]  file is really good. And also going forward, 
+it's really good to have within the app so that  
+[30:48.72]  later on, if an agent is writing code in a certain 
+area, I can see what's already been done there. 
+[30:54.80]  So what we're going to do now is we're going to 
+execute the plan. So now I think we're going to  
+[31:00.80]  do this with Cursor just because Composer is so 
+freaking fast. So what we can do is basically  
+[31:06.64]  just say execute and then we can tag the file. And 
+Composer is ridiculously fast. So that's it. It's  
+[31:15.20]  off. It basically understands what the plan is and 
+it's going to go ahead and start writing the code.
+[31:20.72]  Let me ask you a question while this is happening.
+[31:22.80]  Awesome.
+[31:23.12]  I have many questions, so this is 
+a good time to ask a few of them.  
+[31:26.00]  You said that Lovable and Bolt and other 
+apps in that space are just not enough to  
+[31:32.24]  build really serious apps and you have to move 
+to Cursor to do that. Tell us more about that.  
+[31:36.96]  Just what's the limitation you ran into with 
+those products and why you switched to Cursor?
+[31:42.48]  I started using Cursor and Claude Code a few 
+months ago and I haven't looked back, but at that  
+[31:50.88]  time, these teams have been moving like crazy. 
+So I don't want to say I wouldn't trust them. I  
+[31:56.00]  don't know what the current state is. But for me, 
+it was basically the issue of I felt that Bolt was  
+[32:02.56]  being very opinionated on how I should do things. 
+And I felt like my knowledge has gotten to a point  
+[32:08.24]  where I can graduate and be more in control.
+By the way, I think that the main difference  
+[32:13.28]  between all these tools is basically the harness. 
+So the models are all the same models. I'll run  
+[32:18.72]  Claude within Cursor, I'll run it within Claude 
+Code, and it's also the models that Claude is also  
+[32:23.44]  the model that is underlying Bolt and Lovable, 
+but basically, Bolt and Lovable will add a bunch  
+[32:29.60]  of levels in the middle that will take all kind 
+of guesswork and hard decisions out for the user. 
+[32:36.96]  So the user doesn't have to make these hard 
+decisions. So it's also very easy to build,  
+[32:40.96]  but the flip side of that is that you have 
+less control. And basically Claude Code is  
+[32:44.88]  just taking Claude and shoving it straight in 
+your code system and giving it full tools and  
+[32:49.60]  to do whatever it wants, but also with that comes 
+a lot of decisions that you need to make. So I  
+[32:54.96]  don't know if you can't build really amazing 
+production apps using Bolt or Lovable now,  
+[33:01.20]  but I think basically if you want the most cutting 
+edge abilities of the models and you want to  
+[33:06.40]  be able to make all the decisions on your own, 
+it's probably best to be on one of these tools.
+[33:12.96]  What I'm feeling and hearing is 
+that planning work that you did,  
+[33:16.24]  that's the stuff that Lovable, Bolt, and 
+would you put Replit in that bucket too?
+[33:20.88]  Yeah, for sure. Lovable, Bolt, Replit, Base44.
+[33:24.40]  v0.
+[33:25.52]  Yeah, v0, all same bucket.
+[33:27.20]  So essentially, they're doing that 
+planning for you. And as you said,  
+[33:32.88]  they're very opinionated. They try 
+to make it easy. So it's just like,  
+[33:35.68]  "Here's how to do it. Here's the way we think 
+is best for people." And what you're saying is  
+[33:40.64]  once you're trying to get a little more serious 
+about it or want to go in a different direction,  
+[33:44.88]  you don't have the power to change how 
+they plan. So Cursor lets you do that.
+[33:49.12]  Yeah, I don't want this to come out like 
+I'm badmouthing them. Base44, let's say.
+[33:53.27]  No, absolutely.
+[33:53.28]  Yeah. Base44 does an amazing job at basically 
+taking all the complex guesswork out of  
+[33:58.72]  building product and just allows you 
+to just go with the vibes and build,  
+[34:03.36]  but it will do sign in with Google 
+for you and it will do a database,  
+[34:07.12]  but then you don't have decisions on what database 
+am I using. Do I need sign in with Google this way  
+[34:12.40]  or another way? It would just do it out of the 
+box. So that's basically the trade-off there.
+[34:16.80]  Awesome. Shout out Maor, the founder of Base44.
+[34:21.36]  Yeah. Maor Shlomo. Yeah. He's amazing.
+[34:24.40]  Okay. I just love how this is like the way you're 
+like flinging, what's the word? Slinging models  
+[34:32.24]  like Gemini 3 for frontend. I love that you've 
+never written any code and you're just like,  
+[34:37.84]  "Cool, use Gemini for this and Claude 
+for this. And I'm just working on Cursor,  
+[34:41.84]  talking to this CTO, helping you build 
+stuff and build significant product."
+[34:48.00]  Yeah. We just live in the craziest of times where 
+basically the world changes once a week, it feels  
+[34:56.08]  like. And there is just no boundaries. You can 
+use all of these just on your regular MacBook  
+[35:03.84]  or regular laptop. And I have these moments, 
+I call them time machine moments, which is  
+[35:10.40]  basically this week, for instance, I was prepping 
+for the podcast using Claude with a project. 
+[35:17.12]  I was building, I was fully localizing StudyMate 
+from Hebrew to English, which I did in two days,  
+[35:22.56]  which would probably take a dev team weeks. And 
+I was building a personal site, which went from  
+[35:28.16]  no domain, no nothing, to live on a domain within 
+an hour and a half. And I was doing all three of  
+[35:33.36]  these in parallel. And there was a point where 
+basically all three of the agents were running,  
+[35:39.92]  so I didn't have anything to do.
+I just had to let them think,  
+[35:42.88]  and these are the time machine moments where I 
+feel like I was in the future and I just stick  
+[35:46.88]  my head out of the time machine and whoever's 
+next to me, at the moment it was my wife,  
+[35:51.20]  I'll just say, "We live in the future." And she'll 
+be like, "Huh, what?" And I'll be like, "No, no,  
+[35:55.60]  don't worry about it." But it's just basically so 
+crazy that all these things are just an API away.  
+[36:01.84]  You can use anything. So I think it's an awesome 
+time to be curious and optimistic and hardworking.
+[36:08.56]  These are my favorite kinds of podcast guests. 
+People that are living in the future, figuring  
+[36:13.04]  out all these things and then are just kind of 
+come back, as you said, poke your head out of the  
+[36:17.28]  rocket ship and just like, "Hey, here's this thing 
+that I figured out. Here's where we're going."
+[36:20.96]  Yeah, best time to be alive. So 
+awesome. So it looks like it's finished.  
+[36:27.36]  So now what we're going to do is we're going 
+to run the app locally and we'll be able to see  
+[36:32.16]  what Composer ended up building and we're 
+going to see if anything else is needed  
+[36:38.40]  on our end to maybe do some manual 
+review. Does that sound good?
+[36:42.72]  Sounds great. And I love, that was 
+like, I don't know, a few minutes  
+[36:45.36]  where if it was a human engineer, it'd 
+be like days, maybe a week for work.
+[36:50.55]  For sure. Yeah, for sure. No, Composer 
+like the one thing is it's just so,  
+[36:55.04]  so blazing fast, keeps you in flow. 
+So yeah, full features take minutes.
+[37:00.48]  And it probably costs a 
+couple bucks in AI credits.
+[37:04.24]  I don't even look. I used to be so stingy about 
+paying for products and now I'm just basically,  
+[37:10.72]  I look at it all as tuition, 
+as stuff that I'm paying for  
+[37:14.72]  learning. So I don't know how much it 
+costs, but it's definitely worth it.
+[37:18.72]  That explains why they're the 
+fastest growing products in history.
+[37:21.76]  100%.
+[37:23.04]  Your marketing website sets the tone for 
+your brand and is the one touchpoint that  
+[37:27.28]  every single one of your customers sees. 
+In today's age, if you're still having  
+[37:31.20]  a hard time making small changes and simple 
+updates to it, you are doing something wrong.  
+[37:35.84]  That is why so many companies from 
+early stage startups to Fortune 500s,  
+[37:40.00]  including companies like DoorDash, Zapier, 
+Perplexity, and ElevenLabs turn to Framer,  
+[37:44.72]  the website builder that turns your .com from a 
+formality into a tool for growth. Framer works  
+[37:50.24]  like your team's favorite design tool and comes 
+with real-time collaboration, a robust CMS with  
+[37:56.00]  everything you need for great SEO and advanced 
+analytics that includes integrated AB testing. 
+[38:01.28]  Changes to your Framer site go live to the web 
+in seconds with a single click and without any  
+[38:06.64]  help from engineering. Whether you want to 
+launch a new site, test a few landing pages  
+[38:10.72]  or migrate your full.com, Framer has programs for 
+startups, scale-ups, and large enterprises to make  
+[38:16.24]  going from idea to live site as easy and fast as 
+possible. Learn how to turn your website into a  
+[38:23.04]  growth engine from a framer expert or get started 
+building for free today at framer.com/lenny,  
+[38:29.20]  that's framer.com/lenny. Rules 
+and restrictions may apply.
+[38:33.44]  So now we have this feature, which basically 
+we built and I can ask it to make some changes  
+[38:39.60]  because it's running locally and once 
+it's ready, I'll be able to ship it to  
+[38:43.12]  users. So now the next phase after I've 
+QA'd it and basically tested it manually,  
+[38:49.68]  I'll have Claude review its own work. So 
+what I'll do is I'll reopen Claude Code.
+[38:56.40]  I love this because this is one of the things 
+that comes up a lot in this podcast is writing  
+[38:59.92]  code is now so easy. The main challenge people 
+have is reviewing the code that AI has written.
+[39:04.76]  100%.
+[39:05.04]  And what you're doing here is you're 
+having Claude review its own code.
+[39:08.64]  Yeah, so this is another thing where it's 
+very difficult for me to catch mistakes.  
+[39:13.76]  So my review process has gone through a bunch 
+of iterations to really be as good as possible  
+[39:19.52]  and to catch as many things as possible. So 
+I'll always manually QA at first to make sure  
+[39:25.28]  if I can see any mistakes that Claude made. 
+And then what I'll do is basically /review. 
+[39:32.16]  And this tells Claude to start reviewing its own 
+code. But what's even cooler and something that  
+[39:39.20]  I'm really proud of is I will usually do multiple 
+reviews and I'll have Codex, which is ChatGPT's  
+[39:47.36]  competitor to Claude Code, as well as cursor open, 
+and I will have each of them review the code. And  
+[39:55.52]  then what I do is I have a /command called peer 
+review, which is really interesting. And basically  
+[40:02.24]  what it does is it's going to take Claude, 
+which is usually the agent who I'm working with. 
+[40:07.76]  And just to put this in a mental model, this 
+is basically my dev lead that I'm working with.  
+[40:16.64]  The /command is basically saying, "You're the dead 
+lead on this project. Other team leads within the  
+[40:22.88]  company have looked at your code and reviewed 
+it and found these issues." Don't take what  
+[40:27.68]  they said at face value. The reason is you have 
+more context than them and you led this project. 
+[40:33.44]  You need to either explain why the stuff they 
+found are not real issues and wrong or fix them  
+[40:40.00]  yourself. And it's really cool because the way 
+I look at these things is I look at the models,  
+[40:45.52]  I try to imagine them as people and I 
+can really tell you how each one of these  
+[40:51.60]  would be as a real human because they have-
+[40:54.87]  Each model.
+[40:54.88]  Yeah. Each model has such distinct 
+characteristics. So let's say Claude, she would  
+[41:00.56]  be the perfect CTO. She's very communicative. 
+She's very smart. She doesn't just go with the  
+[41:07.04]  flow and do whatever you tell her. She's very 
+opinionated, but also super collaborative, which  
+[41:12.16]  is I think why I'm always drawn to Claude because 
+I need to do so much learning and it's your dream,  
+[41:20.32]  a very communicative, but very opinionated 
+dev lead, but then there's also Codex. 
+[41:27.04]  So I use Codex 5.1 Max, whatever. I don't 
+know, they're not the best at naming models,  
+[41:33.92]  but GPT's model. I always imagine it as like 
+the best coder within the company who comes  
+[41:40.88]  to the office with a hoodie and sandals and 
+sits in a dark room. And you basically only  
+[41:46.48]  bother him when you have the worst bugs and you 
+say, "Listen, we have this bug and it will just  
+[41:50.56]  close the door for two hours and come out and say, 
+I fixed it." And you're like, "Wait, what? Are you  
+[41:55.52]  going to tell us what happened or whatever?"
+And he's like, "Don't worry about it. I fixed  
+[41:57.92]  it." It's like really not communicative, but 
+it solves all the worst problems. And let's  
+[42:03.92]  say Gemini is like a crazy scientist who's 
+super artsy, super talented at designing,  
+[42:10.24]  but if you sit next to it and watch it work, 
+it's terrifying. You would fire that person  
+[42:14.80]  instantly. This might be just my experience, 
+but when I'm using Gemini within antigravity,  
+[42:19.92]  which is Google's new competitor to 
+Cursor, when it's writing code, you can  
+[42:25.68]  see the steps it's taking and it's terrifying.
+You'll say, "I want you to redesign the top of  
+[42:30.56]  the dashboard." And you're looking at its thought 
+process and it will say, "Oh, first things first,  
+[42:35.20]  I'll delete the dashboard." And then it'll be 
+like, "Nope, that was a mistake. I'll bring  
+[42:38.96]  it back." And then it will say, "Oh, can I 
+edit the database?" And you're like, "No,  
+[42:44.32]  do not edit the database. You're just doing a 
+redesign." And then it will end up designing  
+[42:47.84]  something beautiful. So the way there is a 
+rollercoaster and very scary, but at the end  
+[42:53.52]  of the day, Gemini is very good at design.
+So I think that using all these models  
+[42:59.84]  and basically playing to their strengths 
+and mitigating their weaknesses by using  
+[43:04.08]  other models is a game changer for me. So I'll 
+do peer review a bunch of times and I'll have  
+[43:10.48]  other models review other models code and kind 
+of have them fight it out basically. Sometimes  
+[43:18.24]  Claude Code will get really sassy and be like, 
+"This has been raised for the third time. And  
+[43:22.48]  for the third time I'm telling you, this is 
+not an issue. This is by design." So it's  
+[43:26.56]  just a really cool thing that I've added 
+and I haven't seen many people doing it.
+[43:31.12]  That is such an incredible rant/way 
+to understand what's going on. Okay,  
+[43:38.24]  awesome. So we just ran the review. 
+So show us what we saw there and let's  
+[43:42.32]  actually try this peer review. I'm really 
+excited to see what you learned there.
+[43:45.44]  Yeah. So basically Claude has reviewed its code 
+and it's found a bunch of bugs, a critical bug  
+[43:51.44]  it found in the prompt, some high bugs, some 
+medium bugs, and now what I'll do is I'll do  
+[43:57.60]  the same thing with the other models. So Codex has 
+a built-in code review that you can do, or I just  
+[44:05.04]  like to say review all the code in this branch.
+Of course, branch is referring to the GitHub  
+[44:13.28]  branch that we're working on. We're not working 
+on the live code base. And then I'll do this with  
+[44:18.40]  Composer say with, let's do it with Composer One. 
+So I'll do /review here as well. And basically  
+[44:27.20]  these are both going to run and do a in-depth 
+review similar to what Claude does. But again,  
+[44:32.32]  because of the differences between the models, 
+they're all going to catch different things and  
+[44:36.32]  they're all going to look differently, 
+and this is a really cool way to work. 
+[44:40.08]  It's basically if you had other team leads 
+within the company review the code. Here,  
+[44:44.64]  you can see how fast Composer is. I think GPT 
+probably will take a bunch of time. Like I said,  
+[44:49.68]  it's in its own dark room right now reviewing 
+code and we'll come back in a few minutes.
+[44:55.20]  Okay, cool. So we can let these 
+run in. We don't actually have to  
+[44:57.92]  go through the whole process, but is 
+the idea once you get these results,  
+[45:00.24]  you run peer review and you copy and paste 
+kind of these results. Is that the idea?
+[45:04.08]  Exactly. I'll copy and paste the results. I'll 
+do peer review and then I'll say dev lead one  
+[45:08.32]  and then paste from one of the models. And then 
+I'll say dev lead two and paste from the other  
+[45:12.16]  model and basically have them fight it out 
+until I feel like we have no more issues.
+[45:17.52]  Incredible.
+[45:18.24]  For me, this is super important 
+because I'm not technical and  
+[45:21.20]  I'm not a developer. And I'll also 
+use /learning opportunity a bunch  
+[45:25.52]  during this to learn about stuff that I 
+don't understand or don't fully grasp.
+[45:31.12]  Incredible. What a clever solution to solving 
+this code review problem where it's like,  
+[45:35.20]  I don't know what you ... I don't know how to 
+recode, so what am I going to even ... Yeah.
+[45:39.68]  Yeah.
+[45:40.08]  Okay. Incredible. Let's wrap up this 
+workflow. Is there anything else that's  
+[45:45.20]  important in this workflow? And again, 
+all this stuff is going to be available  
+[45:48.48]  where people can just plug this stuff into 
+their Cursor account and use it themselves.
+[45:52.72]  100%. The one thing I'll say is that I think just 
+like working in general with AI and even just like  
+[46:01.52]  working on any product, doing constant 
+postmortems is critical. So a lot of  
+[46:08.16]  times we'll find all these kind of bugs or 
+maybe Claude will fail to execute something  
+[46:13.36]  correctly. And at the beginning when I 
+started vibe coding, I would basically  
+[46:17.44]  just keep running at it like running at the 
+wall and until it worked. And once it worked,  
+[46:21.28]  I was like, "All right, awesome. This works. 
+Let's keep going." But I've learned over time  
+[46:25.84]  that updating documentation and tooling is 
+one of the biggest hacks for productivity. 
+[46:31.20]  So when Claude will fail to do something or I'll 
+see this really bad bug that shows that Claude  
+[46:37.84]  really didn't understand something, I'll ask it, 
+"What in your system prompt or tooling made you  
+[46:42.88]  make this mistake?" And Claude will kind of like 
+go introspective and think of what made it create  
+[46:48.80]  that mistake. And then I'll say, "Okay, great. 
+Let's update your tooling and documentation so  
+[46:52.96]  that this mistake never occurs again." And 
+I do this every time I'm either building  
+[46:57.36]  an internal tool or anything. And 
+I think this is just like working. 
+[47:03.60]  If you end up doing a bunch of mistakes and 
+then end up releasing the feature to users,  
+[47:08.40]  so you're like, "All right, it's a big success." 
+But going back and even when you've succeeded,  
+[47:13.60]  looking and understanding what you did and 
+what you could have done better is critical.  
+[47:17.20]  And also using AI, this is probably one of the 
+biggest unlocks. Going back to your prompts,  
+[47:22.56]  understanding what was not good enough, iterating 
+on them and then seeing how AI's responses get  
+[47:28.56]  better, I think that's probably one of the most 
+important things and one of the things that  
+[47:33.36]  divides between people who are okay with using AI 
+and the people who actually know how to use it.
+[47:38.16]  That is such good advice. So what 
+I'm hearing is when the models do  
+[47:43.76]  something dumb, make a mistake, you ask it 
+to reflect on what the mistake it made was,  
+[47:48.40]  and then you update the /command prompts 
+with that knowledge so that in the future,  
+[47:54.08]  it's not making that same mistake, 
+and it just keeps getting better.
+[47:56.08]  Exactly.
+[47:56.20]  These things just keep getting smarter 
+and smarter. So you're building up this  
+[47:58.48]  really incredible prompt that 
+just gets better and better.
+[48:01.12]  Exactly. Not always the /commands. 
+It will sometimes update  
+[48:05.92]  different documentation or its tooling, 
+but basically it's understanding what  
+[48:09.44]  the root cause of the mistake 
+that the AI made and fixing it.
+[48:15.44]  Awesome. So the models are getting smarter 
+and then there's also the other parts of  
+[48:20.24]  your workflow can get smarter as you 
+find flaws in the way it does stuff.
+[48:25.52]  100%. Yep.
+[48:26.64]  Amazing. Okay. Is there anything else there 
+before I move in a couple other directions?
+[48:31.12]  I think that's it. I think we covered pretty 
+much everything. Basically, just to wrap this up,  
+[48:35.04]  what I do is I do a bunch of code review and 
+then update the documentation so that everything  
+[48:39.84]  is documented. So the next time I try to build a 
+feature in this area, there won't be any mistakes.  
+[48:45.60]  And then I'll do a bunch of testing. I'll do some 
+user testing as well before I release this to  
+[48:50.00]  general availability. Obviously we're not going to 
+release this. This was just a show, but hopefully  
+[48:54.64]  maybe by the time the podcast comes out, I'll 
+have done this correctly and release the feature.
+[48:59.20]  It's incredible that this was not possible, I 
+don't know, two years ago, maybe a year ago,  
+[49:04.48]  you are a product manager shipping a 
+product without knowing how to write code,  
+[49:11.04]  barely knowing how to review code. You said you're 
+afraid of looking at code. As a product manager,  
+[49:15.60]  you're building a product in Cursor using 
+all of these different AI models. You're  
+[49:21.68]  making money with this product. We're so used to 
+this now, but it's insane what is now possible.
+[49:29.04]  It's the best time to be live. 100%. 
+I think that I understand the fear,  
+[49:35.04]  but AI just makes it so much possible. Just 
+a quick side note here, my brother, who I'm  
+[49:39.76]  building one of the apps with is an entrepreneur. 
+He has a beautiful business that helps old people  
+[49:45.44]  and seniors understand to use technology and 
+AI better. And he's basically doing the same  
+[49:52.64]  kind of learning as me, and he's replaced 
+all of the tools he was paying for. I think  
+[49:56.56]  he was paying for Zapier and Airtable, and he's 
+basically built a full-fledged CRM system and  
+[50:03.44]  automation system for his business completely 
+alone. So for the people who are curious,  
+[50:10.32]  optimistic, hardworking, this is 
+the best time to be a builder.
+[50:14.64]  And what I love about this conversation 
+we're having here is it feels like the  
+[50:18.00]  biggest barrier for a lot of people is like, 
+how do I get started? What exactly do I do?  
+[50:22.72]  I open up cursor. It looks very intimidating. 
+I don't know how to write code. I don't know  
+[50:27.04]  how to build stuff. I don't know about 
+databases. And so you're going to be  
+[50:30.56]  sharing all these /commands and basically 
+this whole workflow with the audience.
+[50:34.24]  Yeah.
+[50:34.64]  Okay.
+[50:34.88]  And like I said, just start at GPT. 
+Start on GPT, tell it what your idea is,  
+[50:40.32]  tell it to explain to you what are 
+even the first steps of thinking,  
+[50:43.04]  what are the decisions you need to 
+make? And just be inquisitive, learn.  
+[50:48.88]  Don't rush things. It's very important to just 
+dive in and really spend the time to learn.
+[50:55.92]  And you share this. One of your /commands is 
+learning opportunity, and it's how you learn  
+[50:59.92]  a lot of these things. Just teach me this 
+thing and how this database issue works.
+[51:04.40]  Exactly.
+[51:05.28]  Okay. There's a couple directions I want to 
+make sure we touch on. One is coming back to  
+[51:08.32]  a question I asked earlier about how this might 
+work at a larger company. Say it's not like Meta,  
+[51:12.72]  but just like, I don't know, a thousand person 
+company, 500 people. How much of this can you  
+[51:17.20]  plug and play into a workflow as a PM at a 
+larger company? What would be your advice for  
+[51:22.24]  someone that may want to start trying to ship 
+code, at least showing people what's possible?
+[51:28.00]  I think that first making your code base AI native 
+is a really important step, and I think this needs  
+[51:34.80]  to be done by technical people. So basically my 
+codebase has a ton of just plain text in it. So it  
+[51:43.44]  will have a bunch of markdown files that explain 
+to agents how to work in certain areas of the code  
+[51:48.72]  base and high level structure so that the 
+agents navigate through the code base easier. 
+[51:54.24]  And I think that if this is set up in 
+a really good way, I still don't think  
+[52:00.40]  PMs should be shipping heavy database 
+chain migrations or any big project,  
+[52:06.32]  but contained UI projects, especially if 
+you just build it, create the PR and send  
+[52:13.36]  it to a dev to do the final finishes. I 
+think that's definitely something that's  
+[52:18.00]  possible. And I think we're going to see 
+that a lot in the next coming years. I  
+[52:20.88]  think basically everyone's going to become a 
+builder, so it should be really interesting.
+[52:25.28]  Okay. So your advice here is as a PM, maybe don't 
+go right to Cursor, start building, shipping,  
+[52:31.68]  trying to ship features to production, especially 
+complicated features. Do you think we'll get  
+[52:35.36]  there? Do you think in a couple years, PMs will 
+be doing this and it'll feel less scary and crazy?
+[52:42.16]  If there are PMs. Yeah, I think titles are 
+going to collapse and responsibilities are  
+[52:49.44]  going to collapse and everyone's just going to 
+be building. I definitely think that the models,  
+[52:55.28]  the context window is getting bigger, the models 
+are getting smarter and I definitely see how PMs  
+[53:02.16]  or any other background can be writing. At the 
+moment, I wouldn't wait for that. I would use this  
+[53:07.84]  as a collaborative learning opportunity to work 
+with your dev team. It's going to be difficult. 
+[53:14.48]  A lot of developers are very, very 
+skeptic about the current state,  
+[53:18.40]  and I think that it's going to be a lot 
+of sales work on your end to convince,  
+[53:22.40]  but if you're able to convince, and I think 
+teams that are really sold on this and want  
+[53:27.52]  to take the time to work on their workflow 
+about how can our team become more AI native,  
+[53:33.92]  I think that these teams are going to probably 
+be a few years in the future and they're going  
+[53:38.80]  to look back at the few weeks they spent 
+setting this up as the best time they spent.
+[53:43.52]  Let me ask you another question around just the 
+job of a PM. One of the biggest fears people have  
+[53:48.80]  with these AI tools for PMs for every function I 
+imagine is just you start to rely on these things,  
+[53:56.24]  your skills start to atrophy, you're 
+producing all this slop that looks great,  
+[54:01.28]  cool, amazing strategy doc. No, it's 
+actually not at all good. Are these Linear  
+[54:05.28]  tickets or just products that are half-baked?
+What's your take on these two parts of just like,  
+[54:10.56]  how has this impacted your craft as a PM? 
+Do you feel like this is weakening your  
+[54:16.48]  skills because you're so reliant on these 
+tools and just how do you keep the quality  
+[54:20.96]  of this stuff up and not just like, "Eh, 
+it's just a bunch of AI generated slop."
+[54:25.52]  I have a very strong disagree to this and I've 
+heard it a bunch. I remember when I started using  
+[54:32.08]  Tal Raviv has this whole course on building a PM 
+Copilot using projects, which is probably one of  
+[54:40.88]  the best courses that you can take. And when I 
+started working with my own Copilot, I remember  
+[54:46.72]  people at work looking and saying like, "Oh, so 
+you're basically outsourcing your thinking." And  
+[54:51.36]  to me, that's just the worst way to look at it.
+And I think for some reason, these people usually  
+[54:59.20]  have a high correlation with the kind of person 
+who doesn't like to show their presentation when  
+[55:03.60]  it's only 10% done or doesn't want to ask for help 
+a lot. I think that there's a misconception with a  
+[55:10.72]  lot of PMs that the job is always having the right 
+answers and being the smartest person in the room.  
+[55:16.64]  And at least how I was trained and how I believe 
+the role of the PM is, it's the exact opposite. 
+[55:22.24]  It's basically harnessing anything that can get 
+us as quick as possible to delivering the right  
+[55:29.04]  solution to users. And I just think this is 
+like that really smart person that has context  
+[55:34.88]  or your mentor or whatever, but is just always 
+available and doesn't judge you and can really  
+[55:40.88]  help you. So if you're using it to just create 
+your outputs and then putting them out there,  
+[55:46.80]  yeah, that's AI slot, but it's also human error.
+I think it's really important that you own your  
+[55:52.48]  own outputs. If you put anything out there or show 
+something in a product review and you say, "Oh,  
+[55:58.80]  sorry, that was built by AI." That's your mistake. 
+I think if you use these intentionally and really  
+[56:06.24]  take the time to understand how to use AI in 
+the correct way, it's one of the biggest game  
+[56:10.80]  changers that will make you much better as a PM.
+And another thing here is that, especially for  
+[56:16.96]  more junior PMs, it allows you to play at such 
+a higher level than you would normally. I think  
+[56:23.76]  that at Wix, I wasn't thinking of what's the 
+marketing strategy of the company and how will  
+[56:29.76]  the onboarding be completely revamped within 
+the whole product. But on my side product,  
+[56:35.28]  I can just do whatever decisions I want and think 
+of the strategy and marketing and the messaging. 
+[56:39.76]  And this is basically just getting me reps, 
+which is one of the most important things  
+[56:44.32]  at the beginning of your career. So I understand 
+the fear that how do you outsource certain stuff  
+[56:51.52]  and you're not owning 100% of everything, but I 
+think the upside is so much more valuable. And I  
+[56:58.72]  think the only way that AI makes you worse 
+at your job is if you're using it wrong.
+[57:03.04]  Is there anything that you've learned about 
+reducing the sloppiness of the output,  
+[57:08.64]  just like a tip for keeping the quality 
+high of the stuff that it produces?
+[57:13.92]  Similar to people, setting up AI for success, 
+for the task at hand. So if I just brought in  
+[57:23.68]  a junior to write a deck or something and I 
+didn't give it any guideline, I just said, "Give  
+[57:30.16]  a strategy deck." He would probably just go online 
+and find top strategy deck and just reproduce  
+[57:36.48]  that, which is basically what AI is doing. 
+It's basically just fed all of the internet. 
+[57:40.80]  So instead of that, guiding it and giving it 
+context on what your style of writing is and  
+[57:48.24]  what you're trying to solve and all these 
+different things, I think that's probably  
+[57:51.68]  one of the biggest unlocks. So that's just a quick 
+tip. And also Cursor has a /command called deslop,  
+[57:58.88]  which is basically going back over the code. 
+I don't know if this is integrated into the  
+[58:03.84]  product yet, but it's on Twitter. Their 
+founders have been talking about this,  
+[58:07.68]  so that's definitely something I would run after 
+just to make sure that no slop is left behind.
+[58:12.56]  That is so funny, deslop. Okay. One more question,  
+[58:17.60]  which may lead to something else, but kind 
+of going in a whole different direction.  
+[58:21.52]  You used AI to help you actually interview for 
+the job that you got at Meta. Talk about how  
+[58:28.64]  you did that, because a lot of people right now 
+are struggling to find a job reading about all  
+[58:32.40]  these people using AI to help them interview. You 
+actually did it. What did you use? What worked?
+[58:37.68]  I feel like the analogy here is I have 12 nieces 
+and nephews and you can see how people who have  
+[58:44.40]  grown up in a different world, how their mind is 
+formed differently. So if you ask me, how do you  
+[58:50.56]  answer a phone, I'll do this. But a child now, 
+when you say, "How do you answer the phone?"  
+[58:55.60]  They'll do this. They'll do the iPhone answer. And 
+I feel like people who are growing up now in their  
+[59:04.00]  professional lives were the same just with AI.
+So every time I'm faced with a new challenge  
+[59:08.24]  or problem, I think AI first how to solve 
+it. So Meta reached out and said they'd  
+[59:14.00]  like me to interview. Straight away, I opened 
+up a project within Claude. I started looking  
+[59:19.04]  online for all the best information out there, 
+things that I resonated with. I took a ton of  
+[59:24.32]  frameworks and stuff from Ben Erez who has 
+written a guest post for you, who I think  
+[59:30.40]  is one of the best minds out there right now.
+And basically I created a project which was my  
+[59:35.84]  coach, which I would come and consult what to 
+do at each phase. I would mock interview with,  
+[59:42.00]  and this was amazing. Also, I created 
+a game in Base44, which helped me ... I  
+[59:48.16]  was really struggling with segmentation 
+within the product questions, so thinking  
+[59:51.76]  of the correct segments. So I basically just 
+created a quiz game, which creates questions  
+[59:56.40]  and different segmentations and I have to choose.
+So this was like, I spun this up. It's a web app  
+[60:02.24]  that I would play sometimes when I was on the 
+bus to work. So basically, I think Ben talks  
+[60:08.16]  about this a bunch, so I don't just go read Ben's 
+stuff, but just creating a project and feeding it  
+[60:14.40]  with all the best information on the internet and 
+then mocking a bunch. I will say that the biggest  
+[60:19.52]  game changer for me was doing human mocks.
+So cold outreaching to people on LinkedIn and  
+[60:26.72]  having them do actual mocks for me, I think that 
+at the end of the day, especially for the Meta PM  
+[60:32.80]  prep, which is super competitive and difficult, 
+I think there's no way to get around that.
+[60:38.88]  That is so cool they use that post. I wasn't 
+aware. We're going to link to it. And in that  
+[60:42.88]  post, Ben shares all these prompts you can feed 
+ChatGPT to help you prepare for interviews,  
+[60:48.00]  do mocks online. It's a really important point 
+to say that those take you to a point, but it's  
+[60:53.68]  actually better to use humans. I actually have a 
+post coming out soon in collaboration with Noam  
+[60:59.12]  Segal about how everyone is using AI to interview.
+And one of the most interesting ways I've heard  
+[61:05.04]  people and that we've found in this research was 
+that people use it to get feedback. They record  
+[61:08.88]  the interview and then it gives them feedback. 
+Here's where you could have done better.  
+[61:12.80]  Here's what you missed because the feedback 
+loop is so missing. No one ever tells you,  
+[61:16.72]  here's what you did badly in this interview. 
+No one tells you that, and AI can do that.
+[61:21.60]  So I'll add two things to that. One, which 
+is exactly this. So I'll mock with AI. Also,  
+[61:27.76]  I did something really cool where there's 
+a question bank online free by Louis Lynn,  
+[61:33.44]  which basically is an always updating bank 
+of questions that people are asked in real  
+[61:37.60]  interviews. And I basically used Comet, which 
+is the Perplexity's browser. And I had the  
+[61:44.48]  agent run all kinds of analyses on what the most 
+asked questions are. And that's how I knew how  
+[61:49.60]  to prioritize what questions I would mock.
+And then at the end of these mocks, I would  
+[61:56.16]  tell Claude within the project, "You're my coach 
+and I don't want you to make me feel good. I want  
+[62:02.00]  you to make me as ready as possible for these 
+interviews. So give me feedback, like you said."  
+[62:07.76]  And the other thing that I did was really cool 
+was some questions where I didn't have time to  
+[62:11.12]  mock. I would ask Claude to play the candidate, 
+and then it would just give me a really good  
+[62:16.00]  answer. And I could also learn from that, like 
+learning from someone who does a perfect answer.
+[62:20.88]  Oh, man. I really love the way you phrased 
+it, that people kind of in your generation,  
+[62:24.80]  the default is, "I have something I need 
+to do. Let's go to AI immediately and help  
+[62:30.08]  me prepare for this thing, help me figure it out."
+[62:32.56]  Yeah.
+[62:33.44]  And this comes back to this quote that I always 
+think about, which I think everyone is always  
+[62:36.88]  hearing, but it's such an important quote that 
+it's not that you will be replaced by AI at  
+[62:42.23]  least for a long time. It's you'll be replaced 
+by someone who's better at using AI than you.
+[62:47.36]  I agree.
+[62:48.56]  And that's what these conversations are for 
+to help people keep up with all that and to  
+[62:51.84]  learn some of these skills. And again, see 
+where the future is going and start to learn  
+[62:56.00]  how to get there yourself. Okay. Zevi, before 
+we get to our very exciting lightning round,  
+[63:01.20]  I'm going to take us to a recurring segment 
+on this podcast I call Failure Corner. 
+[63:05.68]  And why I love this segment is people 
+come on this, just even this conversation,  
+[63:09.76]  it's like all these amazing things 
+you figured out, everything is going  
+[63:12.48]  so well. People rarely hear the things that 
+don't go well, and those are often the most  
+[63:17.28]  interesting and impactful stories. So 
+the question is just, what's the story  
+[63:22.16]  of a time you failed in your career and 
+what did you learn from that experience?
+[63:26.80]  Yeah, I love this. I love this. I love Failure 
+Corner, big fan. So I'll tell a story about  
+[63:34.32]  when I started at Wix. So basically I started 
+within Wix as a student program and straight  
+[63:38.72]  out of the student program, you get put into a 
+certain team. So I was in the editor, which is  
+[63:45.52]  the core product of Wix. And the other 
+PMs were just the best PMs almost at Wix. 
+[63:51.20]  There's four other people had much more experience 
+than me and they were ridiculously good. And I  
+[63:56.16]  remember coming in and thinking like, my first 
+product review, I'm going to blow these people's  
+[64:00.72]  socks off. They're not going to believe how 
+good of a PM I am. And I basically didn't  
+[64:05.92]  really share what I was thinking. I would 
+work tons of hours alone and I was like,  
+[64:11.36]  "I'm going to kill this product review. They're 
+going to be so impressed." And I ended up failing  
+[64:16.00]  miserably. My product review was not good.
+It wasn't the format they expected. They  
+[64:21.04]  had a ton of questions that I missed and 
+I felt awful when it was over. I was like,  
+[64:26.08]  "Ah, you're such an idiot." And I saw that 
+everyone was like, "All right, cool. Yeah,  
+[64:29.92]  just come back in two weeks and we'll keep getting 
+at this." And I understood in that moment that  
+[64:36.24]  they had zero expectation of me being a 10X PM, 
+but the expectation of me was being a 10X learner. 
+[64:42.48]  And the second I understood that, my whole mindset 
+shifted. And I think this is probably the best tip  
+[64:48.48]  that I give now to junior PMs is basically be the 
+best learner you can be at the beginning. No one  
+[64:55.68]  expects you to know all the answers and no one 
+expects you to be good. So basically what I did  
+[64:59.52]  was I took each person on the PM team, there 
+was four other PMs and I assessed what their  
+[65:05.52]  strength is and used them as a mentor for that.
+So Neri who's still my mentor till today,  
+[65:11.04]  he has the best product sense of 
+anyone I've met. Oya is super,  
+[65:14.80]  she's like a methodology expert. She just thinks 
+in frameworks. Yahra, who is the head of product,  
+[65:20.96]  basically can look at a product and then instantly 
+understand the third and fourth order effects  
+[65:25.76]  of them, the system thinking. So every time I 
+had an issue with one of these areas, I would  
+[65:29.84]  come to one of them and consult them, and this 
+does two things. First of all, I learned a ton. 
+[65:35.04]  And the second thing is that when the 
+next time, the next product review,  
+[65:39.52]  my success felt to them like their success 
+because it wasn't this kid who's trying  
+[65:44.00]  to show us up how cool he is. It was like our 
+mentee kind of making us all proud. And it was  
+[65:51.60]  such a great shift for me. And basically at the 
+end of the day, I really excelled through this.
+[65:57.52]  That is an awesome story. And this idea of 
+learning is such a good thread throughout  
+[66:02.72]  this whole conversation that AI is good at 
+getting stuff done, but it's also really  
+[66:06.88]  good at helping you learn how to do the thing 
+and to be this partner, this thought partner,  
+[66:11.28]  the way you talked about the interview process 
+you went through and this learning opportunity  
+[66:16.32]  /command. So awesome. Great story. Zevi, okay. 
+Before we get to our very exciting lightning  
+[66:22.48]  round, is there anything else that you wanted to 
+share? Anything you want to leave listeners with?
+[66:25.84]  Yeah. So kind of to tie back into the first 
+thing I said where if people walk away thinking,  
+[66:33.76]  "Zevi's so cool." Then I've failed here. I 
+think that it's just the best time to be alive,  
+[66:40.56]  I think. It's the best time to be a junior 
+contrary to what a lot of people are saying how  
+[66:46.72]  there's no more junior roles out there and people 
+get out of school and you can't find a role. 
+[66:52.00]  Yeah, that's true. But also when else in 
+history could you get out of school and  
+[66:55.92]  just build a startup on your own with a couple 
+of friends completely bootstrapped. And I see  
+[67:02.64]  more and more people towards the end of my 
+time at Wix, I was interviewing and I saw  
+[67:09.52]  more and more people building their own stuff 
+with AI. And I think contrary to what a lot of  
+[67:15.52]  people think, it's the best time to be a junior.
+It's the best time to be a learner. And I think  
+[67:19.84]  if any listener is listening to this and you're 
+a curious person, you're a hardworking person,  
+[67:26.24]  I want to say kind, I'm not sure, but if you're a 
+kind person and a good communicator, you have such  
+[67:31.92]  an unfair advantage and you can give more value 
+to companies than most people who have 20 years of  
+[67:36.96]  experience. So I really hope people get inspired 
+by this and start killing it with their projects.
+[67:44.08]  Amazing. So many ways to be inspired 
+from this conversation. Zevi, with that,  
+[67:47.68]  we've reached our very exciting lightning round. 
+I've got five questions for you. Are you ready?
+[67:52.72]  Yep, let's do it.
+[67:54.32]  What are two or three books that you find 
+yourself recommending most to other people?
+[67:58.56]  So I'll take one from each kind of genre. So in 
+fiction, I love The Fountainhead by Ayn Rand,  
+[68:06.56]  one of my favorite books. Really makes you 
+think, really makes you feel. Business books,  
+[68:12.08]  I'm a big fan of Shoe Dog, the Nike 
+story, one of my favorite books.
+[68:15.28]  I just finished reading that. So funny.
+[68:17.36]  Amazing.
+[68:17.76]  This is great. It was great.
+[68:18.88]  Yeah. I love Shoe Dog. And then more on 
+the psychology side Mindset by Carol Dweck,  
+[68:25.20]  who coined the term growth mindset. 
+It's just such an amazing book. It  
+[68:30.00]  kind of sounds like a self-help book, but 
+then you understand that it's completely  
+[68:34.00]  psychological and is based on research 
+and that book completely changed my life. 
+[68:39.84]  Really, I was always with a fixed mindset, and 
+then after reading that, I kind of understood  
+[68:44.80]  that it was something holding me back. 
+And since then, I've been really,  
+[68:47.44]  really trying to cultivate a growth mindset. 
+So I really recommend everyone reading that.
+[68:51.68]  Again, connects to that thread of the way you 
+described it, being a 10X learner versus a 10X  
+[68:56.64]  doer. Okay. Next question. Favorite recent 
+movie or TV show you have really enjoyed?
+[69:02.16]  Yeah, actually, my wife is really into film, so 
+we watch a lot of TV. It's probably our favorite  
+[69:08.08]  together time. I just finished watching The Pitt,  
+[69:11.76]  which was amazing. It was really good. 
+And my first recommendation to everyone  
+[69:16.88]  is if you haven't seen Severance run to 
+see Severance, one of my favorite shows.
+[69:20.96]  Is there a favorite product that you have 
+recently discovered that you really love?
+[69:24.40]  This is a good question. I'm always trying new 
+products. I'll always have three or four browsers  
+[69:30.72]  installed on my computer and all this different 
+kind of stuff, and I recently discovered a Loom  
+[69:36.00]  alternative. I was kind of disappointed with Loom. 
+They were taking so much money and the product,  
+[69:42.96]  I don't know, I just didn't love it. And 
+there's an open source alternative called Cap,  
+[69:47.28]  which is just really well-crafted. You can 
+see that the person was really sweating the  
+[69:53.28]  details and it's just a really, really great 
+alternative. So I've been using that recently.
+[69:58.16]  There's also a product called Supercut 
+that I love that's also a Loom alternative.  
+[70:02.80]  Shout out. Okay. Two more questions. Do 
+you have a favorite life motto that you  
+[70:06.32]  find yourself coming back to in work or in life?
+[70:09.60]  Yeah. I'm kind of between two right now. One, 
+which has become a Twitter meme basically,  
+[70:14.48]  which is you can just do things. I feel 
+like that is basically going always in my  
+[70:19.36]  head every time I do something that I'm 
+just shocked at the speed and ability to  
+[70:24.48]  do things now so you can just do things, and 
+the second one I stole from my brother. His  
+[70:30.00]  motto is nobody knows what the fuck they're 
+doing. And I just love that. And I think it  
+[70:34.88]  kind of makes you take life more lightly. So 
+yeah, nobody knows what the they're doing.
+[70:39.52]  I think people see these companies on the outside 
+and it feels like everything they've got all  
+[70:43.52]  figured out. And if you're ever on the inside of 
+a company that's doing really well, you're like,  
+[70:47.28]  how is this staying on the rails? How is this 
+still a thing that is working? Doesn't make any  
+[70:51.20]  sense. It's all about to fall apart. Yeah. Okay.
+Last question. You've had a long entrepreneurial  
+[70:59.84]  thread throughout your career. There's a 
+couple other real world businesses you've  
+[71:04.24]  started in the past. You did a thermal 
+clothing business and then like a hummus  
+[71:08.80]  delivery thing. So maybe pick one of those 
+and just tell the story of what that's about.
+[71:13.04]  Yeah, I'd love to. Really fun that you asked about 
+this. So I'll tell the thermal clothing because  
+[71:19.44]  I think it's really cool. So in high school, 
+I was selling thermal clothes in 10th grade  
+[71:24.48]  for one of my sister's friends or something, 
+and basically it was just packs of thermal  
+[71:30.08]  clothing, shirt and pants. I grew up in 
+Jerusalem, so it's a bit chillier there. 
+[71:34.80]  So it was perfect for the weather. And in 10th 
+grade, when I was selling them, they were like 20,  
+[71:40.88]  $25 a piece and I was making like $4 a sale, 
+and if you look in the food chain, I was like  
+[71:47.28]  sixth or seventh down the line. So this was like 
+crazy margins. So during the summer I thought  
+[71:52.08]  about it like I should just go straight to the 
+importer. So throughout the summer I called the  
+[71:57.84]  importer and at first he was really, really mad.
+He was like, no, you have to work for me for years  
+[72:02.00]  to get to this state. And I said, listen, man, 
+I'm finishing school soon. This is not going to be  
+[72:06.32]  my career. Either do it or not. And we basically 
+negotiated throughout the whole summer. And this  
+[72:13.36]  was also like how I did things before ChatGPT. 
+So he would throw out something, he'd say, "Oh,  
+[72:20.16]  the import tax has gone up." And I'll just search 
+Google, like Import Tax Israel and start reading. 
+[72:25.44]  And I'll be on the phone with him and I'll be 
+like, "Hey, I would just basically stall." And  
+[72:29.84]  then I'd somehow come back with a challenge. 
+And I ended up getting a really great price,  
+[72:36.72]  like 12 and a half dollars a piece. So I was 
+making 100% profit and I spread throughout a  
+[72:42.80]  bunch of different schools. Each school, I had the 
+coolest people in school selling for me. And then  
+[72:49.76]  a really fun thing that I did was we had a really 
+awesome basketball team and our basketball team  
+[72:54.96]  would basically be 30 points up within the first 
+half and it kind of got boring for the crowd. 
+[73:01.12]  So I wrote a song, like a basketball 
+chant about Thermal Clothes that  
+[73:05.20]  basically has my number within it. And 
+the end of it was if you join in now,  
+[73:11.68]  we'll give you a discount. And it was with drums 
+and everything. And still when I go to Jerusalem,  
+[73:16.88]  I know some people who I don't even know 
+my number by heart because they know it  
+[73:20.48]  by the tune. And sometimes when I walk in 
+Jerusalem, people stop me and say like,  
+[73:24.24]  "Hey, it's Thermal Zevi." So that was 
+just a really cool experience as a kid.
+[73:29.12]  This explains so much just the marketing 
+genius of that move. Oh man. Okay. Zevi,  
+[73:36.08]  this was incredible. Two final questions. 
+Where can folks find you if they want to reach  
+[73:40.40]  out and maybe follow up on some of the stuff? 
+We'll link to the scripts and prompts and all  
+[73:44.48]  that in the show notes so you don't have to read 
+that, and then how can listeners be useful to you?
+[73:50.24]  Awesome. So I've been helped throughout my 
+whole career a ton, so I love helping any  
+[73:56.32]  way I can. So reach out on LinkedIn or on X. 
+I'd really love to help whoever I can. How can  
+[74:03.76]  listeners be useful to me? So if you're a student, 
+try StudyMate, tell me what you think. If you're  
+[74:09.68]  in Israel and you are not using dictation 
+yet, try Dibur2text. Tell me what you think.
+[74:14.24]  Amazing. I just love how much you're giving 
+away and how useful that's going to be to so  
+[74:18.72]  many people. So again, we'll link to that in 
+the show notes. Zevi, you're awesome. Thank  
+[74:22.48]  you so much for being here. Thank you so much for 
+sharing so much. This is going to help, I think,  
+[74:25.60]  a lot of people and I think it's going to 
+help people get over the hump on. Okay,  
+[74:28.80]  I see all these people doing cool stuff. 
+Here's how I can actually do this stuff. So  
+[74:33.36]  thank you so much for being 
+here and for sharing so much.
+[74:35.76]  Thank you for having me. And 
+if you build something cool  
+[74:38.24]  with some stuff that I learned here, 
+hit me up, send me. I'd love to see.
+[74:43.36]  Amazing. Zevi, thank you so much for being here.
+[74:45.52]  Thank you.
+[74:46.08]  Bye everyone. Thank you so much for listening. If 
+you found this valuable, you can subscribe to the  
+[74:51.60]  show on Apple Podcast, Spotify, or your favorite 
+podcast app. Also, please consider giving us a  
+[74:57.68]  rating or leaving a review as that really helps 
+other listeners find the podcast. You can find  
+[75:02.72]  all past episodes or learn more about the show at 
+lennyspodcast.com. See you in the next episode.

@@ -1,0 +1,856 @@
+Title     : Create an AI Voice Character app only using AI in less than 40 min (Cursor, Next.js, Daily Bots)
+Video ID  : 2ukMoQRsL6w
+URL       : https://www.youtube.com/watch?v=2ukMoQRsL6w
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 847
+Saved at  : 2026-06-21 02:23:49
+------------------------------------------------------------
+
+[00:00.56]  people are using AI to create voice
+[00:04.44]  character apps that are printing money
+[00:08.56]  if you are technical or you aren't
+[00:10.92]  today's episode is a
+[00:13.36]  mustat characters are the new apps and
+[00:17.16]  no one's talking about it we literally
+[00:19.88]  created a
+[00:21.24]  weatherman weatherman a fully working
+[00:24.16]  weatherman character app in this episode
+[00:27.36]  and you could do the same thing it might
+[00:29.60]  look like a toy but all the best
+[00:31.76]  startups look like toys enjoy this
+[00:35.92]  [Music]
+[00:43.20]  episode all right I got my main man Eric
+[00:46.08]  here he's been building a bunch of these
+[00:50.12]  voice chat apps think about it as like
+[00:53.44]  an audio chat gbt and I dragged him on
+[00:57.20]  here to give people a how to tutorial on
+[01:00.64]  how to do it yourself uh Eric thanks for
+[01:03.28]  coming on and what do you think people
+[01:04.72]  will learn if they make it through this
+[01:07.60]  video yeah thanks for having me Greg um
+[01:10.64]  I think first of all you find out just
+[01:13.32]  how awesome it is that we have this sort
+[01:16.44]  of these tools available and how quickly
+[01:18.72]  you can spin up something um that will
+[01:21.88]  kind of wow both yourself and and your
+[01:24.28]  friends I remember when I first started
+[01:25.88]  playing around with this stuff um to
+[01:28.04]  build like voice agents and voice voice
+[01:30.16]  Ai and all that it like you experienced
+[01:34.04]  chat BT for the first time and you're
+[01:36.08]  like holy [ __ ] this is cool but then you
+[01:37.76]  talk to chat gbt and and it's almost
+[01:40.00]  like this 10x Improvement in
+[01:43.24]  experience um I'd say I'd say yeah I'd
+[01:47.24]  say you just kind of learn just how
+[01:49.20]  exciting all this stuff is and how easy
+[01:51.80]  it is and I I'll say that you know um if
+[01:54.80]  you
+[01:55.60]  don't know anything about coding you
+[01:59.00]  know there are things that you have to
+[02:01.76]  kind of pick up along the way like what
+[02:03.76]  is GitHub what does cloning a repo mean
+[02:06.76]  what does it mean to deploy something
+[02:08.40]  but uh what I want to focus on for this
+[02:11.96]  kind of session is just like the cool
+[02:14.88]  stuff how do we get this spot running uh
+[02:18.44]  how do we configure its personality um
+[02:20.84]  all that so I have everything kind of
+[02:22.20]  set up beforehand but beautiful uh I'm
+[02:24.68]  sure we can provide links and resources
+[02:27.04]  to kind of help along with the actual
+[02:29.52]  like
+[02:30.44]  yeah setup of things let's let's let's
+[02:33.80]  dive in let's get right into
+[02:35.76]  it sounds good I'll just share my
+[02:39.60]  screen and by the way while you're
+[02:42.00]  pulling that up I think my goal for
+[02:44.00]  everyone is build your own ideas like
+[02:47.44]  you're going to watch this and you're
+[02:48.60]  going to get a bunch of ideas around
+[02:50.68]  what sort of voice sort of apps could I
+[02:53.20]  create and Eric has been creating a few
+[02:55.04]  of these they've been going viral on
+[02:57.32]  social so if he can do it you can do it
+[02:59.68]  too too so let's let's dive
+[03:03.96]  in awesome we're going in all right uh
+[03:08.28]  so first things first I think I should
+[03:11.76]  give a quick overview of like just the
+[03:14.32]  tools what I'm what I'm using what I'm
+[03:16.56]  familiar with um I'm sure most people
+[03:19.44]  watching are familiar with kind of the
+[03:22.24]  AI landscape in terms of things like
+[03:25.40]  cursor so this is my code editor cursor
+[03:28.48]  hooked up with you know all the cool um
+[03:31.40]  llms to help with
+[03:33.68]  coding um and then the main kind of star
+[03:36.76]  of the show here that is going to be
+[03:39.72]  really doing all the heavy lifting in
+[03:41.52]  terms of the voice in terms of the back
+[03:43.48]  end um is this company called daily and
+[03:48.36]  Daily's really cool I actually just
+[03:50.52]  first heard of them I think this year
+[03:53.08]  when they announced um not daily Bots
+[03:56.40]  actually daily Bots was something that
+[03:58.04]  they announc a bit after
+[04:00.24]  um but it was through this other Library
+[04:02.52]  called pip cats and pip cat was a
+[04:05.40]  library more focused on devs but just
+[04:07.96]  kind of make it a lot easier to
+[04:09.72]  interface with AI and allow you to kind
+[04:12.92]  of um build voice assistance but what
+[04:16.00]  daily Bots when they came out with this
+[04:18.80]  I was like oh this is going to be kind
+[04:22.16]  of gamechanging because now you don't
+[04:23.80]  even have to handle all the llm calls
+[04:25.84]  and stuff with Pip cat daily is doing
+[04:28.04]  that themselves and so all you do is you
+[04:31.04]  know sign up you go on to this dashboard
+[04:34.84]  and you get this API key and then
+[04:38.92]  there's this repo here where they have a
+[04:40.92]  demo up it just runs in the browser um
+[04:45.68]  and I have that set up over here I just
+[04:47.92]  clone the
+[04:49.20]  repo uh which basically just means you
+[04:51.20]  download it to your system open it up
+[04:54.36]  and you get this you get this demo
+[04:56.40]  screen uh now what you have to do from
+[05:00.08]  here is connect the demo to the actual
+[05:04.52]  daily backend over here with this API
+[05:07.12]  key this is sort of your your key to uh
+[05:10.40]  unlock the daily Services um so you put
+[05:13.64]  it in this m. local file here um I'm
+[05:18.36]  realizing that this is a uh key that I'm
+[05:22.36]  showing uh so I'll have to you know
+[05:25.28]  regenerate it later but it's okay um but
+[05:28.52]  once that is all set up realize that
+[05:31.40]  right now like no code has been written
+[05:34.12]  all all that's been done is just you're
+[05:35.76]  just downloading
+[05:38.20]  this repository you're signing up for
+[05:41.16]  this service you're getting a key you're
+[05:42.60]  pasting it in this file uh and then
+[05:46.28]  you're running it with uh one command
+[05:49.56]  over here just yarn Dev that basically
+[05:54.60]  just starts up the server you're heading
+[05:56.92]  to this little local post URL and then
+[06:01.92]  bam you're over here
+[06:04.60]  um shh don't tell anyone but I've got 30
+[06:08.48]  plus startup ideas that could make you
+[06:11.24]  millions and I'm giving them away for
+[06:14.60]  free these aren't just random guesses
+[06:18.36]  they're validated Concepts from
+[06:20.60]  entrepreneurs who built $100 million
+[06:23.60]  plus businesses I've compiled them into
+[06:27.28]  one simple database
+[06:29.84]  compiled from hundreds of conversations
+[06:32.84]  I've had on my podcast but the main
+[06:35.84]  thing is most of these ideas don't need
+[06:39.04]  a single investor some cost nothing to
+[06:42.52]  start I'm pretty much handing you a
+[06:44.60]  cheat sheet the idea bank is your
+[06:47.28]  startup
+[06:48.28]  shortcut just click below to get
+[06:51.48]  access your next cash flowing business
+[06:54.44]  is waiting for
+[06:57.64]  you so let's try it out I
+[07:01.80]  wonder how this is going to go with the
+[07:04.20]  whole like audio thing but we can just
+[07:07.04]  start with the defaults and see what
+[07:09.96]  happens just testing if it works um take
+[07:14.04]  some
+[07:16.36]  time
+[07:22.16]  okay so let's see
+[07:26.48]  um I'm sure you saw the
+[07:30.76]  like audio wave form appearing Greg but
+[07:33.84]  did you you didn't hear anything right
+[07:35.48]  because I heard it through
+[07:37.16]  my airpods yeah I didn't hear anything
+[07:40.76]  okay so let's try let's try this hello I
+[07:44.72]  am example but your assistant I can help
+[07:47.20]  answer questions and provide information
+[07:48.88]  on a wide range of topics what would you
+[07:51.28]  like to talk about do you hear that yeah
+[07:54.20]  I heard that I heard that should I
+[07:56.04]  answer it no I just ended the call I
+[07:58.64]  just wanted to test the oh wow that was
+[08:01.52]  okay so what did I just listen to okay
+[08:04.28]  awesome cool we got audio working with
+[08:06.64]  the okay awesome you you just listen to
+[08:09.36]  the bot The Voice bot now um that was an
+[08:14.16]  llm response so daily on their back end
+[08:17.08]  was calling um the llm that we specified
+[08:20.88]  which is over here uh together AI
+[08:24.92]  they're provider a bunch of AI models um
+[08:28.20]  the one that we're using is llama 3.1
+[08:31.96]  70b
+[08:34.80]  and the place that it's getting you know
+[08:38.00]  the how to respond kind of information
+[08:40.00]  from is this configuration file so the
+[08:43.24]  whole point of this daily bot thing is
+[08:47.12]  to take away all the complexity of like
+[08:50.40]  you know the actual hard AI stuff and
+[08:52.88]  then just put in front of you like super
+[08:54.84]  easy um configuration tools to change
+[08:59.16]  like how you want the bot to behave um
+[09:03.48]  and then the voice right voice is really
+[09:06.84]  important it would kind of suck if you
+[09:08.68]  couldn't change the voice um along with
+[09:13.16]  along with this is really cool um
+[09:15.84]  function calling tools that you can give
+[09:18.52]  to the bot to actually do stuff um and
+[09:21.80]  by stuff I mean
+[09:25.16]  like system stuff like computer stuff
+[09:28.12]  calling apis getting data um making an
+[09:31.60]  Instagram post whatever computers do
+[09:34.12]  already on the internet you can get an
+[09:37.60]  AI voice but to do um and even better to
+[09:42.32]  respond like to commands that you just
+[09:44.76]  tell it like hey you know what's the
+[09:46.36]  weather and then give you the weather
+[09:48.76]  now we're going to kind of get into how
+[09:50.52]  all that is set up you know later on but
+[09:53.12]  just kind of like putting it out there
+[09:55.48]  um this is the configuration file you
+[09:58.44]  can see over here there's a bunch of
+[10:00.68]  characters that they kind of put in uh
+[10:03.16]  by default with these
+[10:05.56]  prompts and whenever I'm working with AI
+[10:07.96]  stuff I'm always like the first thing
+[10:09.76]  that I think to myself is like show me
+[10:11.84]  the prompt um I want to know what
+[10:14.12]  exactly is going into the llm and so the
+[10:17.40]  default is this it's like you are an
+[10:19.84]  assistant called example poot you can
+[10:22.08]  ask me anything and then some
+[10:24.84]  instructions on how to speak so that the
+[10:28.24]  audio comes out corre correctly cuz
+[10:30.44]  what's happening uh on the back end is
+[10:35.40]  essentially the daily bot system is
+[10:39.12]  taking in the audio from the microphone
+[10:41.68]  and then it is converting that audio
+[10:43.56]  into text using something called a stt
+[10:46.64]  or speech to text provider and then that
+[10:50.08]  text is being piped into the llm the AI
+[10:54.00]  model the AI model does its thing it
+[10:56.92]  outputs its response as text and then
+[11:00.12]  daily takes that text and then pipes it
+[11:02.56]  into a TTS so a text to speech provider
+[11:07.12]  uh and then with that speech that it
+[11:09.44]  gets it's piping it out to your browser
+[11:12.24]  and so it's this whole [ __ ] system
+[11:14.84]  that it's doing um and there's a lot of
+[11:17.12]  complexity to that there's a lot of you
+[11:18.84]  know things to be aware of in terms of
+[11:21.88]  performance in terms of like you know
+[11:25.32]  how to handle errors all those things um
+[11:28.60]  which would be nightmare if you are
+[11:31.04]  developing that yourself but of course
+[11:33.96]  you know we're in the age of AI now and
+[11:36.00]  good tools and DA's handling all that
+[11:38.40]  and so we can just sort of focus on hey
+[11:41.24]  how what should our assistant do is it
+[11:44.28]  even assistant at all maybe it's uh you
+[11:46.44]  know they've got some pretty cool
+[11:48.44]  characters here theyve got a jenzy
+[11:49.88]  middle schooler they got a skateboard
+[11:52.68]  meme guy um and I think what I kind of
+[11:57.84]  did beforehand is configure the function
+[12:01.60]  calling the tool calling um just a
+[12:03.64]  simple weather man so I configured the
+[12:07.00]  function call the tool to get the the
+[12:10.16]  weather um and uh display it you know
+[12:14.64]  talk about it Etc so these preset
+[12:17.84]  characters so these are pre-built
+[12:21.12]  characters if you wanted to build your
+[12:22.68]  own character could you do that oh yeah
+[12:26.28]  no you just edit the file you just you
+[12:28.32]  just add just your character in so you
+[12:30.12]  can see here um the character selection
+[12:33.92]  screen over here is a is a direct one to
+[12:36.48]  one with this file so as soon as we edit
+[12:39.96]  like for example I can demonstrate it we
+[12:42.64]  have default we can just name this like
+[12:44.48]  Eric right and
+[12:47.44]  then
+[12:49.52]  refresh the default character should be
+[12:51.96]  name Eric so that's proof oh cool it's
+[12:55.04]  just it's just the file yeah right and
+[12:57.56]  that's why this gets really interesting
+[12:59.32]  and and for people listening it's I
+[13:01.80]  think that if you think of characters as
+[13:04.72]  the new
+[13:06.00]  apps then there's a huge opportunity and
+[13:09.64]  not many people are talking about this
+[13:11.40]  around just ideating on characters
+[13:14.84]  figuring out what's going to work and
+[13:18.20]  launching them yeah that's actually
+[13:21.64]  really good point I had even really
+[13:23.48]  thought that too deeply but I think that
+[13:26.60]  kind of idea is bouncing around a lot um
+[13:29.24]  um on the internet especially one thing
+[13:32.56]  that I can think of um Nikita Nikita
+[13:35.24]  beer which I'm sure most people are
+[13:37.88]  aware of at this point that are into
+[13:39.72]  like the tech scene he recently tweeted
+[13:42.24]  out like you know social apps are kind
+[13:45.00]  of dead after iOS what like 18 or yeah
+[13:49.12]  iOS 18 the contact sync is um very much
+[13:54.28]  restricted and what Nikita said in that
+[13:56.88]  tweet was that uh initially he thought
+[13:59.32]  like AI character chat apps were kind of
+[14:02.96]  a fad but after seeing like a bunch of
+[14:05.88]  the retention graphs he's like okay this
+[14:08.20]  is not going away and people really like
+[14:10.64]  talking to these characters um and that
+[14:14.20]  the kind of future of Highly retentive
+[14:17.64]  engaging consumer apps and you know
+[14:19.64]  non-consumer apps too will probably have
+[14:21.76]  something to do with you know creating a
+[14:24.88]  character that does something acts in a
+[14:27.24]  certain way totally yeah and I think
+[14:30.12]  it's B2B and B Toc I think it's just
+[14:32.48]  going to be the way that we're going to
+[14:33.72]  interact with content and this is just a
+[14:36.84]  new form of content where where else do
+[14:39.12]  you want to take
+[14:40.56]  this so let me demonstrate the function
+[14:45.32]  calling and kind of Step through that
+[14:46.88]  because I was um that's what the prep
+[14:49.20]  this morning was was about uh before the
+[14:51.92]  call I kind of just wanted to make sure
+[14:53.44]  that because I haven't actually I hadn't
+[14:55.72]  actually implemented function calling
+[14:57.64]  into um actually at all I haven't really
+[15:00.64]  made use of it but especially in the
+[15:02.60]  case of like the voice agent um that's
+[15:04.92]  something I never done before so I want
+[15:06.32]  to kind of Step through myself and
+[15:07.92]  figure it out um ran into some snags
+[15:10.68]  that I'm I'm glad I caught myself on
+[15:13.16]  before the before the call I can just
+[15:14.80]  kind of streamline through how this all
+[15:17.52]  works
+[15:18.84]  um I'll kind of Step through like the
+[15:21.12]  actual documentation so maybe viewers
+[15:23.48]  can kind of get a sense of like oh you
+[15:26.56]  know you're never going to be able to
+[15:27.92]  figure out everything on the first go
+[15:30.20]  you're going to want to develop this
+[15:32.04]  habit this practice of being able to
+[15:33.88]  read documentation um understand it and
+[15:37.68]  sort of apply what it's what it's you
+[15:39.72]  know saying sure but also now in the age
+[15:42.08]  of AI it's like if you don't understand
+[15:44.28]  something ask chbt ask Claude um and so
+[15:48.72]  here we are on the daily Bots
+[15:51.60]  documentation um you can check it out
+[15:54.60]  yourself just about you know general
+[15:56.36]  information on how it's all working
+[15:59.00]  we're interested in function calling so
+[16:02.08]  what exactly is function calling you
+[16:04.08]  know people talk about it a lot um
+[16:07.48]  basically you have an llm you have an AI
+[16:10.44]  that takes in text and outputs text how
+[16:12.76]  the hell can it do anything except
+[16:15.00]  output text well short answer is it
+[16:17.24]  can't do anything other than output text
+[16:19.64]  you need to build the system around it
+[16:21.80]  you know to actually take the text that
+[16:23.64]  it outputs with and do stuff with it now
+[16:26.08]  what llms can do if they're sufficiently
+[16:29.12]  smart enough is follow instructions
+[16:32.52]  really well um and so function calling
+[16:35.60]  is
+[16:36.32]  essentially you having an llm you having
+[16:39.20]  an AI model that is smart enough to
+[16:41.76]  understand what a function is and what a
+[16:44.08]  function call is and like what a
+[16:46.00]  response is and kind of follow all those
+[16:49.12]  instructions to Output an answer that
+[16:51.40]  your system around it can then take and
+[16:53.88]  do something with it so the LM isn't
+[16:55.88]  actually doing anything the LM is always
+[16:57.56]  just outputting text but the system you
+[16:59.88]  build around it can take that output and
+[17:01.96]  do whatever you want um that's a kind of
+[17:05.20]  core Insight here I I think it can get
+[17:07.80]  confusing when people talk about AI um
+[17:10.36]  AI can't you know AI is often referred
+[17:13.60]  to as like talked about this like
+[17:15.44]  blackbox system thing and a lot of it is
+[17:18.16]  a blackbox but I think we can gain a lot
+[17:20.60]  of insight in s of understanding like
+[17:23.28]  how things actually work so this kind of
+[17:25.96]  provides some information about you know
+[17:28.00]  what goes on in terms of function
+[17:29.80]  calling and this was what I was kind of
+[17:32.00]  focused on is adding it to the Daily
+[17:35.12]  part and so my code changes here uh very
+[17:39.56]  minimal are basically just adding this
+[17:43.16]  weather tool so over here in config I
+[17:47.16]  have um set up just a little bit of code
+[17:50.04]  to
+[17:50.96]  Define um the tool to the
+[17:54.40]  llm name is really important we'll kind
+[17:57.40]  of get to that later but we want to make
+[17:58.92]  sure that our names are align and we're
+[18:00.76]  sure of what we're naming the tool um
+[18:04.20]  and
+[18:05.20]  then let's see we want to obviously
+[18:09.12]  describe you know what kind of
+[18:11.32]  parameters we give to the tool so
+[18:14.28]  parameters aren't something that is
+[18:16.60]  necessary um but probably you want
+[18:21.08]  because you know if you're going to do
+[18:23.12]  like to get if if you want to get the
+[18:24.72]  weather you want to get the weather for
+[18:25.88]  a given location right and so um
+[18:29.84]  specifying to the AI that oh you know
+[18:33.36]  you can pass in a location is pretty
+[18:36.36]  important um and then all this stuff
+[18:39.36]  that I've done is basically um following
+[18:42.80]  the instructions here so that the AI
+[18:46.32]  model on the other hand uh on the other
+[18:48.80]  end knows what's going on with all these
+[18:51.20]  functions so the AI model is sort of
+[18:53.12]  like okay I have access to these
+[18:56.80]  functions um this is the format that I
+[19:00.24]  need to respond with and this is really
+[19:02.96]  important this is really important that
+[19:04.20]  the AI does respond with this format
+[19:06.96]  because what daily is doing on the other
+[19:08.76]  end is waiting for a message that you
+[19:12.52]  know starts with angle bracket function
+[19:15.20]  and ends with that and and that's how
+[19:17.64]  daily understands oh okay the AI model
+[19:21.12]  is trying to get the weather and so over
+[19:23.92]  here in page. TSX I'm essentially
+[19:27.12]  defining you know what actually happens
+[19:30.00]  when the AI calls AKA outputs you know I
+[19:34.20]  want to call get weather and this is
+[19:36.64]  where actually the magic happens in
+[19:38.92]  terms of the function calling we can see
+[19:41.88]  get uncore weather is aligned is a same
+[19:45.36]  as get underscore weather it's very
+[19:47.32]  important um if they're not online you
+[19:49.56]  can run into issues where the AI is
+[19:51.40]  calling a function that doesn't exist
+[19:53.60]  you know and so this is kind of the
+[19:56.96]  alignment point and then this is what
+[19:59.24]  we're actually doing you know the system
+[20:02.12]  the server is doing in terms of um like
+[20:05.64]  the code it's it's calling this route uh
+[20:10.40]  API weather so where the hell is that
+[20:13.12]  well you know there's a folder called
+[20:14.68]  API here um I guess before we started uh
+[20:20.20]  we didn't even specify that we're
+[20:21.64]  working in nextjs but you know nextjs is
+[20:24.92]  essentially this framework that allows
+[20:26.84]  you to set up a server that runs um
+[20:30.32]  react but also allows you to specify
+[20:33.16]  Roots uh pages that uh run code and so
+[20:37.60]  over here you can see there's a
+[20:38.88]  directory called API there's a directory
+[20:41.00]  called weather um the names lining up
+[20:44.84]  with here are not a coincidence over
+[20:47.48]  here in the route. TS file uh we are
+[20:52.00]  specifying what actually happens when um
+[20:55.20]  we're fetching that route and so I'll
+[20:58.72]  just put it up
+[21:02.80]  here now if you read through this
+[21:06.16]  closely you'll see that um we're not
+[21:09.60]  actually getting the
+[21:10.80]  weather we're we're
+[21:13.00]  specifying like the function liter
+[21:14.88]  called get nonsense weather was
+[21:16.00]  specifying a bunch of these things uh
+[21:17.84]  the reason why I I did that was one
+[21:20.20]  because didn't have a lot of time to to
+[21:21.92]  prep but also I think it's going to be
+[21:23.12]  pretty funny um to actually get some
+[21:25.92]  kind of you know you I'm gonna read I'm
+[21:28.20]  gonna read a couple of these you know
+[21:30.04]  conditions and stuff like that just cuz
+[21:31.24]  some people won't be able to see it on
+[21:32.96]  on their screen so Sunny you know you
+[21:35.64]  got Sunny rainy cloudy peculiar
+[21:38.84]  Whimsical flying
+[21:41.20]  pigs flying
+[21:43.84]  pigs good place so this is actually kind
+[21:47.24]  of good that we specifying these kinds
+[21:50.12]  of more wacky sayy things because a
+[21:52.36]  potential thing that could happen right
+[21:55.76]  is what are we telling the AI to do
+[21:58.20]  we're tell them to be a weather man
+[22:00.00]  right and so let's say like you know the
+[22:03.00]  function calling didn't work and the AI
+[22:05.56]  doesn't actually like do the code like
+[22:09.20]  execute the code that we tell her to
+[22:11.12]  well we're still telling them to be a
+[22:12.32]  weather man and so most likely what the
+[22:14.84]  AI is going to do is hallucinate some
+[22:17.00]  kind of you know weather report and so
+[22:19.48]  what this actually in hindsight um I
+[22:22.72]  realize is like oh because we're
+[22:25.44]  specifying like nonsense phenomena like
+[22:27.52]  flying pigs cats and dogs if the AI says
+[22:30.76]  those things we can be sure that it's
+[22:32.84]  it's working um we can also be sure that
+[22:35.08]  it's working by looking at the logs here
+[22:37.64]  and just making sure that um nextjs is
+[22:41.36]  telling us that the server is accessing
+[22:44.20]  the API weather route um but you know
+[22:48.00]  that's bit a bit more boring than the AI
+[22:50.92]  saying flying pigs and realizing oh yeah
+[22:53.48]  it's actually getting that that thing
+[22:55.20]  there's another reason why it's
+[22:57.16]  important to specify which
+[23:01.48]  is you know I think about it as like Tik
+[23:03.96]  Tock moments it's like how do you
+[23:05.36]  reverse engineer someone screen
+[23:08.44]  capturing recording your product and if
+[23:13.08]  someone uses this product and it says
+[23:15.40]  it's rain you know raining pigs or
+[23:17.80]  singing rainbows like that is that could
+[23:21.88]  go viral your character could go viral
+[23:24.64]  so as you're designing your character
+[23:26.24]  and thinking about you know the Ultimate
+[23:28.96]  Experience that you want to create I
+[23:30.64]  think it is important to add constraints
+[23:33.32]  and try to think about what's the type
+[23:34.72]  of thing that will get you free
+[23:37.60]  distribution oh yeah and you're you're
+[23:40.44]  the king of that so I know you know
+[23:42.48]  that I mean I want to say King I'm
+[23:45.80]  working on I'm working on a Tik Tok I
+[23:47.56]  promise you um okay so let's let's let's
+[23:50.56]  get some zy weather reports shall we
+[23:52.80]  let's do it let's do it I can't believe
+[23:54.76]  we're making a weather man this is like
+[23:56.44]  insane and by the way it's like a mid
+[23:58.80]  hurricane right here in Miami so this is
+[24:01.40]  like perfect it's not it's not looking
+[24:03.36]  good well it's not really looking good
+[24:04.68]  here in in New York either it's bit bit
+[24:06.60]  cloudy but at least there there's no
+[24:09.48]  hurricane
+[24:11.04]  um hope you're staying
+[24:13.88]  safe
+[24:16.00]  okay so I have it loaded up on my phone
+[24:21.24]  and
+[24:23.92]  um I guess it will be I think I can like
+[24:28.40]  show my phone on the camera see and
+[24:30.76]  we'll zoom in
+[24:32.16]  yeah quick ad break let me tell you
+[24:35.00]  about a business I invested in it's
+[24:36.92]  called boring marketing.com so a few
+[24:40.04]  years ago I met this group of people
+[24:42.24]  that were some of the best SEO experts
+[24:45.24]  in the world they were behind getting
+[24:47.88]  some of the biggest companies found on
+[24:50.04]  Google and the secret sauce is they've
+[24:52.56]  got a set of technology and AI that
+[24:55.60]  could help you outrank your competition
+[24:58.64]  so for my own businesses I wanted that I
+[25:01.20]  didn't want to have to rely on Mark
+[25:02.56]  Zuckerberg I didn't want to depend on
+[25:04.64]  ads to drive customers to my businesses
+[25:07.60]  I wanted to rank high in Google that's
+[25:09.76]  why I like SEO and that's why I use
+[25:12.16]  boring marketing.com and that's why I
+[25:14.64]  invested in it they're so confident in
+[25:16.64]  their approach that they offer a 30-day
+[25:18.48]  Sprint with 100% money back guarantee
+[25:21.64]  who does that nowadays so check it out
+[25:23.80]  highly recommend boring marketing.com
+[25:25.84]  try to get as close to the mic as
+[25:28.04]  possible
+[25:29.08]  um and so on my phone I've I'm accessing
+[25:32.36]  the same page that is running on my
+[25:35.92]  computer and so this is um running the
+[25:39.40]  code that is also on my screen right now
+[25:42.20]  and so you can see when I go to the
+[25:45.80]  character kind of selection screen we
+[25:48.44]  have Eric there that I edited and then
+[25:50.48]  all the way at the bottom we have the
+[25:52.80]  weather man so let's talk to the weather
+[25:55.08]  man hey uh I am located in New York City
+[25:58.96]  can you give me the weather for New York
+[26:02.08]  City folks it's your lucky day I've got
+[26:05.32]  the forecast for the Big Apple and it's
+[26:07.08]  looking like a real tree we've got
+[26:09.04]  Cloudy Skies but don't let that fool you
+[26:11.88]  there's a chance of whimsical singing
+[26:13.56]  rainbows that's right you heard me right
+[26:16.48]  it's going to be a day of magic and
+[26:17.84]  wonder in New York city so grab your
+[26:19.84]  umbrella and your best singing voice and
+[26:21.56]  get ready to take on the
+[26:23.36]  day that is so good how good is that
+[26:28.00]  yeah that's awesome validation we got it
+[26:30.36]  we got it says singing singing rainbows
+[26:32.24]  that's not a that's a viable weather
+[26:34.84]  thing but it's tot that's that's working
+[26:37.52]  yeah I mean the reality I I honestly
+[26:39.92]  thought that it was gonna suck that's
+[26:43.24]  the I thought it was going to be like
+[26:45.04]  kind of bad and it would it that was
+[26:47.84]  really really
+[26:49.32]  good yeah it's it's pretty cool so I
+[26:52.12]  think uh viewers watching you would have
+[26:54.12]  seen actually on on my screen too that
+[26:56.88]  we got the log here um what this log is
+[27:00.80]  telling us is that the system the server
+[27:03.12]  actually did access API weather and
+[27:05.48]  provided this location and so everything
+[27:07.52]  is working sort of as as we wanted to
+[27:10.72]  which is super exciting it means then
+[27:13.52]  we're we're having we have this platform
+[27:16.20]  kind of to just like build off of and
+[27:18.00]  make tiny changes and I think that's
+[27:20.64]  kind of uh thing I want to emphasize in
+[27:23.92]  building anything is you want to
+[27:28.28]  especially when you're starting out make
+[27:29.88]  sure that your changes that you're
+[27:31.72]  making to things or when you're building
+[27:33.80]  something are small and like
+[27:36.64]  understandable um I I feel like in this
+[27:39.80]  new world of AI that that we're in um
+[27:42.64]  there's so much like hype around
+[27:45.24]  one-shotting things like oh I just sent
+[27:46.96]  one prompt to chat gbt and built this
+[27:49.24]  whole game like that's cool but you're
+[27:51.36]  never going to learn anything by just
+[27:53.12]  like telling it to build you a whole
+[27:54.52]  entire app and then like you have no
+[27:56.72]  idea how old the files kind of like rout
+[27:58.96]  together um and so I think it's really
+[28:01.72]  helpful to kind of build off of
+[28:03.60]  something that already exists which is
+[28:05.36]  why I didn't bother trying to integrate
+[28:08.36]  daily Bots myself but instead just
+[28:10.12]  literally took the repo that um they put
+[28:13.64]  up as a demo and just adding onto it um
+[28:18.00]  so yeah important stuff and and you can
+[28:20.84]  turn this you know that weatherman app
+[28:22.92]  into an IOS app you know it doesn't
+[28:24.84]  necessarily need to be web um so that's
+[28:27.72]  totally
+[28:28.64]  possible um is there anything else
+[28:31.56]  before is there anything else you want
+[28:33.40]  to talk about here um I think the last
+[28:36.20]  thing I want to do is just show them
+[28:38.08]  your app because your app is basically
+[28:41.88]  like to me it's like a fin like it's
+[28:44.08]  what you can actually end up creating
+[28:46.28]  that's like the finished product um but
+[28:48.72]  is there anything else in terms of the
+[28:50.60]  tutorial that you think it's really
+[28:52.00]  important people know I mean I guess we
+[28:54.72]  could go into like deployment yeah let's
+[28:59.04]  yeah actually getting it live cuz it's
+[29:00.44]  it's it's live now I've already I've
+[29:02.24]  already deployed but I can go through
+[29:03.96]  like how to do that and the platform
+[29:07.68]  so um
+[29:10.76]  nextjs let's just start with nextjs
+[29:12.76]  nextjs is this framework that uses react
+[29:16.32]  which is this way to build websites and
+[29:19.48]  nextjs was created by a company called
+[29:21.52]  versel verel really cool company they do
+[29:24.32]  a lot of programming stuff what versel
+[29:27.76]  also
+[29:28.64]  has done is built this platform that
+[29:30.76]  allows you to take your nextjs app which
+[29:33.04]  you can develop for free because it's an
+[29:34.68]  open source framework and host it online
+[29:38.48]  on the web and so they make it super
+[29:41.92]  easy um you can type in one command and
+[29:47.04]  your app is going to be live on the
+[29:50.36]  internet
+[29:52.52]  um I think we can just kind of provide
+[29:55.08]  links in the description in terms of
+[29:58.16]  like the documentation to actually
+[30:00.32]  install um the stuff that you need but
+[30:04.44]  essentially uh Vel has this
+[30:08.64]  tool the CLI command line interface tool
+[30:12.96]  um that allows you to kind of use the
+[30:16.72]  command line
+[30:18.24]  to um do things on the versel
+[30:21.68]  platform and so what I did to get my uh
+[30:27.28]  daily bot demo with my weatherman live
+[30:31.80]  is literally just
+[30:35.28]  Vel um actually yeah that's it that's
+[30:39.56]  literally you just type you just type
+[30:41.36]  Vel obviously way just you got to like
+[30:44.28]  log in so that it connects to your Vel
+[30:47.36]  account and everything but you log in
+[30:49.88]  you type Vel um and right deploy yeah
+[30:56.92]  learn how to deploy type you type this
+[30:58.84]  out and it deploys anyone could do that
+[31:02.04]  yeah I've I've already done that so it
+[31:03.96]  should I think it's going to just
+[31:05.72]  trigger another deployment but
+[31:07.36]  essentially it's just going to go
+[31:08.20]  through this step and I can show you
+[31:10.24]  actually uh what's going on on on CES
+[31:13.32]  and over here deployment building
+[31:17.72]  um so I guess it usually takes like a
+[31:21.96]  minute and a half um but where they
+[31:24.36]  deploy it is this link
+[31:28.40]  here and
+[31:29.88]  [Music]
+[31:33.04]  so yeah I could let me just leave this
+[31:36.48]  up I'll just leave this up um yeah so
+[31:38.68]  people can check out yeah check we'll
+[31:40.96]  put it we'll put it in the YouTube
+[31:43.28]  description um so people can check it
+[31:45.40]  out
+[31:47.16]  yeah but it will be it'll be deployed
+[31:51.00]  and oh it actually took much uh much
+[31:54.44]  less time um and essentially yeah just
+[31:57.04]  going to
+[31:58.44]  that uh URL on any device we'll pull it
+[32:02.92]  up I can pull it up here and you can see
+[32:06.20]  it's right there
+[32:08.20]  so that's the point it's you text it to
+[32:11.04]  your friend they can try it out that's
+[32:14.12]  cool that's awesome okay and you know
+[32:17.84]  can you can you show us what kind of a
+[32:20.92]  final version would be which is in my
+[32:22.84]  opinion like one of your apps um could
+[32:26.00]  you show us
+[32:28.04]  maybe a video or or a version of what it
+[32:31.68]  looks like I guess I can start with um
+[32:35.28]  one of the apps that I've worked on that
+[32:37.88]  I'm really excited about that uses all
+[32:39.36]  this kind of voice stuff is an app that
+[32:42.44]  allows you to basically have a FaceTime
+[32:45.04]  call uh with a
+[32:47.20]  vtuber so I don't know if a lot of
+[32:49.96]  people are yet familiar with what a VBA
+[32:52.52]  is but essentially the people that
+[32:55.16]  create content a lot of them stream on
+[32:57.60]  twit twitch and YouTube but they don't
+[33:00.16]  stream using their real face they use
+[33:04.24]  software to essentially um embody an
+[33:07.96]  avatar
+[33:09.92]  and I'd say
+[33:12.08]  99% of these avatars these YouTubers
+[33:15.28]  embody anime characters um because the
+[33:18.44]  whole kind of technology and Trend
+[33:21.52]  started in Japan um and this just kind
+[33:24.48]  of the way the culture has gone people
+[33:26.68]  love anime and these vtubers are crazy
+[33:29.44]  popular they have like millions of
+[33:32.92]  followers they're making millions of
+[33:35.32]  dollars a year um from subscriptions
+[33:39.00]  from selling merch
+[33:40.64]  Etc and I had this idea of like oh wait
+[33:44.92]  I can use all these cool new tools
+[33:48.00]  coming out these um voice apis daily Etc
+[33:51.48]  to create an app where you can have your
+[33:54.60]  own personal face on call with a vtuber
+[33:57.44]  because when you're watching a vicho
+[33:58.80]  like they're they're an influencer
+[34:00.16]  they're they're someone you're watching
+[34:01.20]  they're Creator you can't have like a
+[34:02.60]  personal call with them and so I I
+[34:05.60]  realize that with AI and all this all
+[34:07.68]  this cool stuff you can you can build
+[34:09.32]  that and so um this why I created
+[34:13.36]  um yeah so this is mji in terms of the
+[34:16.64]  kind of going to exactly like did I draw
+[34:20.72]  her no I bought this model um on a
+[34:24.96]  website called nzima nzima is a
+[34:27.12]  Marketplace for these kinds of anime
+[34:29.12]  models there's a whole cottage industry
+[34:31.28]  of people rigging um illustrating these
+[34:35.08]  models for vber streamers to use but I
+[34:37.76]  bought one not to stream with like as
+[34:40.24]  myself but to put in this app and so
+[34:43.88]  what this app is using is um not exactly
+[34:46.92]  daily Bots um I'm actually using pip cat
+[34:49.76]  that I showed earlier because it gives
+[34:51.48]  me more control as a Dev and so that's
+[34:53.76]  kind of I guess going into a bit more of
+[34:56.00]  like oh you know once you learn a bit
+[34:58.72]  more about how these systems work you
+[35:01.04]  are going to want to use tools that
+[35:03.04]  allow you to have more control over um
+[35:06.48]  how data is passed around and whatnot
+[35:09.24]  but I can enter the call right now and
+[35:12.04]  we can show people yeah let's talk let's
+[35:14.24]  talk to her yeah okay so hopefully this
+[35:17.80]  I think this has been pretty popular
+[35:19.28]  lately it's called Uh Coco Cloud can you
+[35:22.28]  see it it's it's
+[35:25.68]  blue wow it looks so
+[35:29.60]  pretty yeah can you see what what other
+[35:32.24]  color is there it's blue and one one
+[35:34.64]  other color can you
+[35:38.00]  see I see a little bit of white swirl
+[35:41.16]  too yes yes you got it the white SCE
+[35:44.32]  okay so we're going to try it and I'm
+[35:45.88]  going to give you some to to try it and
+[35:48.56]  I want you to let me know what what you
+[35:50.44]  think
+[35:51.88]  okay okay I'm so
+[35:55.32]  excited all right
+[35:58.72]  she excitedly takes a small sip of this
+[36:00.68]  morning and her eyes widen she favors
+[36:03.24]  the taste before giggling so yummy she
+[36:06.24]  exclaimed it's so sweet and
+[36:09.36]  creamy thank you for narrating that it's
+[36:11.60]  actually pretty good it's actually
+[36:12.52]  pretty good I like
+[36:13.96]  it you're welcome I like it
+[36:17.72]  to how would you rate it out of
+[36:24.60]  10 and that's what you guys can create
+[36:27.32]  that's what you can create that's the
+[36:29.32]  end result that and and that that's just
+[36:31.28]  so
+[36:32.12]  cool that is so cool how long how long
+[36:36.52]  does well first of all did you build
+[36:38.48]  that
+[36:40.24]  yourself uh yeah yeah well I mean it's
+[36:43.56]  kind of you know did I write every line
+[36:46.56]  of code that is running on the system no
+[36:48.84]  but in terms of like the actual app yeah
+[36:52.36]  and the sort of like the server
+[36:53.64]  architecture and all that amazing so
+[36:56.28]  that's the thing you know
+[36:58.04]  a few years ago well first of all it
+[36:59.72]  wasn't this wasn't even possible a few
+[37:01.48]  years ago but you would need a large
+[37:03.28]  team to do that raise Venture Capital
+[37:05.20]  here you are you know in a room wearing
+[37:08.56]  a hoodie uh throwing out apps characters
+[37:11.84]  you love to see it um Eric this has been
+[37:14.60]  a blast if people like this there's a
+[37:17.52]  few things that you got to do one is
+[37:20.60]  like it on YouTube so more people see
+[37:23.04]  this um like it like like like uh and
+[37:26.76]  the second is comment I think I just
+[37:29.32]  would love to see uh what you what you
+[37:32.00]  thought of this do you have any ideas
+[37:34.04]  around this um Eric and I will be in the
+[37:36.80]  comments and we will be replying um and
+[37:39.08]  then subscribe you know I'm not going to
+[37:40.80]  continue making these videos unless I
+[37:42.56]  see that subscribe button go up uh
+[37:44.52]  subscribe but number go up so don't
+[37:47.04]  forget to do that Eric where could
+[37:48.96]  people learn more about you and and the
+[37:51.08]  apps that you're building characters
+[37:52.60]  You're Building I should say just follow
+[37:55.08]  me on on Twitter sx.com the everything
+[37:58.20]  app um the link will be I guess in the
+[38:00.68]  description but yeah that's that's where
+[38:02.92]  I'm posting all the unfiltered takes and
+[38:06.32]  and progress updates and stuff love it
+[38:09.36]  all right we'll have to catch you catch
+[38:11.24]  you around awesome thanks so much for
+[38:13.68]  having you Greg of course anytime later

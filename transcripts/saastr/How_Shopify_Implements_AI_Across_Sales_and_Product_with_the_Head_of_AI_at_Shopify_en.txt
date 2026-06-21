@@ -1,0 +1,973 @@
+Title     : How Shopify Implements AI Across Sales and Product with the Head of AI at Shopify
+Video ID  : S2R4LaWyGPU
+URL       : https://www.youtube.com/watch?v=S2R4LaWyGPU
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 964
+Saved at  : 2026-06-20 22:48:50
+------------------------------------------------------------
+
+[00:00.08]  please join me in welcoming two amazing
+[00:02.00]  speakers we have Rina ceri she is a
+[00:04.80]  managing partner at glassing ventures
+[00:06.72]  and Mike Tamir head of AI at Shopify
+[00:09.60]  they are going to be talking about how
+[00:10.68]  Shopify is implementing an AI system
+[00:12.84]  across their sales and product theme so
+[00:15.08]  we are so thrilled to have both Rina and
+[00:17.20]  Mike dive in a little bit more to what's
+[00:19.28]  going on in the ecosystem and here some
+[00:21.20]  real world examples of how Mike is doing
+[00:23.24]  this work at Shopify thank you so much
+[00:25.68]  Taylor hello everyone what Mike and I
+[00:28.08]  thought um about doing today is how does
+[00:31.72]  one think about AI adoption both at an
+[00:35.12]  individual level in a business context
+[00:37.72]  as well as the critical work that Mike
+[00:40.28]  is doing at Shopify and has previously
+[00:42.72]  done at Uber sasana amongst others as
+[00:46.36]  well as in The Cutting Edge work he does
+[00:48.32]  um teaching at UC Berkeley so by way of
+[00:52.36]  background um I'm managing partner at
+[00:54.44]  glasswing ventures we are an AI
+[00:56.32]  originalist firm we in fact founded
+[00:59.40]  glass back in
+[01:01.20]  2016 with the goal of investing in AI
+[01:04.16]  native companies that solve real
+[01:06.56]  problems for the Enterprise and cyber
+[01:09.04]  security markets Mike with that would
+[01:11.64]  you like to do a little bit more on your
+[01:13.20]  background I think I would be doing it a
+[01:15.12]  diservice oh I think you did you did
+[01:17.56]  more more than enough but just to recap
+[01:20.20]  I I'm at one of the distinguished ml
+[01:23.52]  scientists in running ml Andi functions
+[01:27.16]  here lovely so let's delin the first
+[01:31.44]  part of this conversation I will do a
+[01:33.44]  bit of level setting around what's going
+[01:36.12]  on with AI from on Enterprise adoption
+[01:38.88]  and where we are in that cycle an
+[01:40.80]  important um level setting um point is
+[01:44.44]  the fact that today there are many
+[01:48.08]  initiatives across large and midsize
+[01:51.16]  Enterprises around AI in fact that we
+[01:54.40]  tell our AI native companies not to lead
+[01:57.56]  with AI when they're speaking to
+[01:58.88]  prospective customers
+[02:00.40]  because it's such a top of Mind topic
+[02:02.88]  that it's a superficial indication of
+[02:05.16]  interest but most of the engagement with
+[02:08.68]  few notable exceptions is still at that
+[02:11.96]  superficial level with early sort of
+[02:15.48]  measurements if any on the impact on the
+[02:18.68]  Enterprise on an adoption basis now we
+[02:22.36]  have seen a few green shoots if you will
+[02:25.68]  in the space particularly for example
+[02:28.68]  what we saw with clay
+[02:30.52]  and the impact that they have had by
+[02:33.04]  bringing AI from a project silo or
+[02:37.16]  customer interface type level usage to
+[02:40.60]  their Core Business where they automated
+[02:44.32]  700 humans and over two-thirds of
+[02:48.00]  customer success is now ai supported and
+[02:50.88]  generated and contributed 40 million to
+[02:53.88]  their bottom line and it is because they
+[02:56.84]  brought it to their core product to
+[02:58.88]  their Core Business business and as we
+[03:02.08]  expect in the mid and long term the
+[03:04.56]  impact is sizable but they are
+[03:06.88]  noteworthy because they are one of the
+[03:08.76]  few companies and again Mikael talked to
+[03:10.92]  what Shopify is doing as another leader
+[03:13.44]  in that category that have brought AI to
+[03:16.88]  the Core Business
+[03:19.76]  so what is the mindset what is the
+[03:22.64]  actual work that needs to be done around
+[03:25.92]  building the infrastructure to leverage
+[03:28.52]  AI for the core business and the highest
+[03:30.72]  impact I would articulate it along three
+[03:34.04]  dimensions one is software and the
+[03:37.24]  technology infrastructure and how
+[03:40.00]  whether it's the debt whether it's the
+[03:41.96]  tech decisions whether it's the data
+[03:43.76]  availability Etc but getting the
+[03:46.44]  Enterprise or the facets of the business
+[03:48.40]  to be AI ready the other piece is really
+[03:52.20]  around cleaning the data so one is the
+[03:54.84]  algorithmic side of Technology side one
+[03:56.52]  is the data that you're going to feed
+[03:58.32]  and often times
+[04:00.24]  there is a almost naive assumption that
+[04:02.96]  the data will be easy to leverage oh
+[04:04.88]  it's an asset and we'll use it and
+[04:06.68]  leverage it and it turns out that
+[04:08.04]  oftentimes is the biggest problem and
+[04:10.48]  thirdly culture culture of adopting Ai
+[04:13.44]  and again we we'll delve more into this
+[04:16.88]  as as we proceed in the discussion so
+[04:19.80]  where are we heading therefore as as we
+[04:22.08]  try to um adopt AI in the Enterprise I
+[04:25.68]  have a term that I use called ambient AI
+[04:29.28]  which is B basically that we let's think
+[04:31.80]  of ourselves as professionals and
+[04:33.60]  productivity sort of driven
+[04:36.00]  professionals we will be surrounded in
+[04:38.64]  and leveraging AI in this co-pilot
+[04:42.08]  Dynamic and for one to rep one's mind
+[04:46.28]  around what does it mean for me um to be
+[04:49.28]  leveraging ambient AI if the input is
+[04:53.68]  you the business individual leader
+[04:56.92]  contributor your activities and your
+[05:00.04]  environment and you think of that as the
+[05:01.88]  input into ambient into your existing AI
+[05:05.20]  tools that you've surrounded yourself
+[05:06.84]  protocal piloting Dynamic the outputs
+[05:10.40]  are insights that you wouldn't have been
+[05:12.68]  able to derive on your own and secondly
+[05:16.24]  the automation of the mundane the low
+[05:19.88]  productivity highly repeatable to free
+[05:22.84]  one up to be more valuable so as we
+[05:25.36]  think about our roles as professionals
+[05:27.56]  and what will make us successful going
+[05:29.24]  forward
+[05:30.48]  worth considering that in addition to
+[05:32.64]  the well-tried high impact hyper
+[05:35.00]  productivity people and professionals
+[05:37.12]  will have one leg up if in fact they are
+[05:40.68]  leveraging the tools if in fact they are
+[05:43.12]  intelligent business workers not simply
+[05:45.32]  in the intellectual sense but leveraging
+[05:47.92]  the int intelligent
+[05:49.56]  tools and as we shift to the
+[05:52.80]  Enterprise it's really these topics of
+[05:55.96]  data infrastructure and culture and I
+[05:58.76]  will use the this layout and framework
+[06:01.36]  to turn it over to Mike to talk about
+[06:05.28]  the impact starting with the data my
+[06:08.36]  first question stated here in fact how
+[06:11.00]  do you know if you have the right data
+[06:13.40]  and is data really the claim that I made
+[06:15.80]  is the often times the biggest
+[06:17.24]  bottleneck and the biggest
+[06:19.20]  problem for this business audience not
+[06:22.08]  necessarily a technical audience how do
+[06:24.64]  we think about that change
+[06:27.20]  first absolutely so you couldn't be more
+[06:30.52]  correct that data is often the messiest
+[06:33.28]  and and the time that you think you're
+[06:35.60]  you're while we have the data why don't
+[06:37.96]  we just get to the building the models
+[06:40.08]  um when in reality it's one of these
+[06:41.60]  Iceberg uh cliches where most of the
+[06:44.60]  time you spend is on Gathering the data
+[06:47.64]  and cleaning the data and making sure
+[06:49.08]  that it's ready that it's of the right
+[06:50.36]  quality and even once you begin the
+[06:52.00]  modeling you're not done modeling is
+[06:53.88]  really an iterative process where you
+[06:56.32]  train your models you see what signal
+[06:58.16]  you're getting from it you see how your
+[06:59.84]  performances and this speaks to
+[07:01.28]  measurement and making sure that you
+[07:02.52]  have the right measures and of course
+[07:04.72]  every different ml technique is going to
+[07:06.72]  be slightly different but very gener
+[07:09.20]  generally um and certainly when you hear
+[07:12.32]  about llms and a lot of the modeling
+[07:15.28]  techniques are invogue um it's trial and
+[07:18.20]  error right a model will see an example
+[07:20.96]  of this is what information we have and
+[07:22.96]  this is what we're trying to predict
+[07:24.56]  it'll take the information that you give
+[07:27.24]  it of what we have ahead of time and
+[07:29.32]  make its own prediction and then look at
+[07:32.24]  how far it missed right how far is what
+[07:34.76]  it tried to predict from the truth of
+[07:37.40]  what it should have predicted and then
+[07:39.52]  it'll take that error right we hear
+[07:42.00]  about failure is the key to learning
+[07:44.20]  this could be more true than in machine
+[07:45.88]  learning machine learning literally
+[07:47.72]  takes that error and with a bed of math
+[07:50.20]  tries to adjust all the little prameters
+[07:53.88]  all the little calculations that it
+[07:55.84]  makes along the way from input to Output
+[07:58.92]  in order to to make that error just a
+[08:01.52]  little bit smaller the next time and
+[08:04.24]  this leads into uh a lot of the things
+[08:06.36]  that you have to do with your data as
+[08:07.60]  best practices so if I take all of my
+[08:10.40]  training data and I teach my model with
+[08:12.44]  my training data to close that gap
+[08:14.72]  between its predictions and what it
+[08:16.52]  should have done then I might be
+[08:18.00]  overfitting so overfitting is if your if
+[08:20.80]  your model has taken that time to close
+[08:23.80]  the gap between its predictions and what
+[08:26.12]  it should have done maybe what it's done
+[08:28.36]  is just learned for those specific
+[08:30.40]  examples that you gave it to learn from
+[08:32.84]  right and so it has overfit to those
+[08:35.28]  specific examples but we don't want to
+[08:37.52]  build models that can just take the
+[08:39.60]  inputs you give it and give the outputs
+[08:41.48]  that you told it to learn we already
+[08:44.08]  have that data what we want it to do is
+[08:45.76]  to learn the pattern and to learn the
+[08:47.60]  pattern means we have to do all of these
+[08:49.32]  different things in order to to
+[08:52.24]  constrain the model in various ways so
+[08:55.12]  that it predicts not just on the data
+[08:57.56]  that you're giving it but it also
+[08:59.04]  predicts effectively on the data that
+[09:01.68]  it's never seen before we usually call
+[09:03.60]  that validation data and ultimately test
+[09:06.16]  data different stages for figuring out
+[09:09.32]  when is uh how is this model going to
+[09:11.56]  predict accurately out of samp out of
+[09:14.16]  the training samp and so if I am a p&l
+[09:17.20]  owner in XYZ business and I've had this
+[09:20.92]  data for 20 years and Mike team is
+[09:24.44]  helping me sort this out why is it
+[09:27.00]  taking them multiple weeks what's so
+[09:29.20]  hard hard about what's so hard about it
+[09:32.52]  and there's two parts of this which also
+[09:34.12]  speaks to to I think the culture right
+[09:36.28]  um especially in a world where you can
+[09:38.36]  talk to an llm and it seems like it's
+[09:40.00]  giving you right answers and you want to
+[09:41.80]  say you only live once let's just use
+[09:43.36]  whatever the answers are and I'm not
+[09:45.36]  going to name any deployments that have
+[09:47.24]  happened in the last several months but
+[09:48.72]  we all know news headlines where maybe
+[09:50.96]  that didn't work out so well so having
+[09:53.24]  the culture of checking your results and
+[09:55.56]  making sure that you have the right
+[09:57.00]  metrics to evaluate whether it's an M or
+[10:00.20]  a more traditional model that's not
+[10:02.64]  generating text or generating images but
+[10:04.92]  just estimating numbers or estimating
+[10:07.36]  classes of of whatever the task is
+[10:10.04]  having that culture where you are
+[10:12.20]  focusing on what are your metrics and
+[10:13.92]  you're evaluating those results is
+[10:16.04]  really important on the why is it taking
+[10:18.52]  so long side of things when you take the
+[10:21.08]  data and we're gonna have a very nice
+[10:22.28]  concrete example of this towards the end
+[10:24.12]  of this talk it can be very uh the goal
+[10:27.28]  the business goal that you have might be
+[10:29.60]  something like I want to make more sales
+[10:31.88]  or I want to Delight my customer Fe
+[10:34.64]  customers and see that in feedback
+[10:36.84]  whatever that metric is we have to
+[10:38.92]  translate that speaking to the culture
+[10:41.00]  of measuring our results we have to
+[10:42.76]  translate that to a concrete metric and
+[10:45.40]  so this is going to be some sort of
+[10:46.76]  mathematical function of saying how bad
+[10:48.92]  did my prediction Miss from what I said
+[10:52.80]  the right answer was and hopefully it's
+[10:54.72]  very close and you get some some
+[10:56.68]  fireworks now figuring out that answer
+[11:00.40]  is actually very complicated it's
+[11:02.28]  complicated in finance it's complicated
+[11:04.64]  in producing recommendations to or
+[11:07.72]  returning a search for a query there
+[11:10.12]  that gap between what I want to
+[11:13.08]  mathematically measure which is how the
+[11:15.12]  machine is going to learn based on that
+[11:17.32]  error and what my actual product result
+[11:20.44]  is really matters another area where you
+[11:23.88]  really have to think about what matters
+[11:26.28]  is how the data is actually structured
+[11:28.24]  if I give a bunch of examples where of
+[11:31.32]  this is the kind of input and this is
+[11:32.68]  output I would expect or this is the
+[11:33.88]  kind of output I would not expect that's
+[11:36.28]  going the model is going to learn that
+[11:38.40]  specific pattern so if you give it bad
+[11:40.28]  examples or you give it dirty examples
+[11:42.56]  either examples with the wrong answers
+[11:44.44]  or examples where where a negative case
+[11:47.48]  doesn't isn't as informative as a almost
+[11:50.60]  positive case and we're going to get
+[11:52.28]  again to a concrete example of that soon
+[11:54.60]  having that clean data is really going
+[11:56.60]  to be the lifeblood of how the model
+[11:58.40]  learned and ultimately how the product
+[12:00.52]  is
+[12:01.44]  successful all right continuing our
+[12:03.64]  discussion on the infrastructure side if
+[12:06.72]  you are a productivity business user you
+[12:10.20]  can only affect the decisions that get
+[12:13.04]  made at the INF the infrastructure level
+[12:15.44]  so much what should one know what
+[12:18.40]  constitutes a modern AI stack that
+[12:21.44]  enterprises can scale on the bases of
+[12:24.00]  ultimately that's going to be a little
+[12:26.32]  bit dependent on the use case in the
+[12:28.76]  context right every company is going to
+[12:30.44]  have slightly different needs and going
+[12:32.00]  to have slightly different uh
+[12:33.40]  applications when it comes to doing the
+[12:35.96]  the more advanced training and deep
+[12:37.60]  learning models that I've been
+[12:38.84]  describing you're going to need gpus for
+[12:41.72]  one thing right which means you may need
+[12:43.76]  a single GPU and you're a very small
+[12:45.52]  startup and you're you're trying to just
+[12:47.20]  work on a budget you may need a cluster
+[12:49.96]  of gpus in which case you need
+[12:51.44]  infrastructure Management in the last
+[12:53.68]  several years uh there's been obviously
+[12:55.96]  a very big shortage of gpus and so the
+[12:59.32]  has historically been the the existence
+[13:02.00]  of cloud platforms AWS gcp Azure has
+[13:06.24]  been very helpful in sporadic needs oh I
+[13:09.04]  need a I need to rent a GPU for a few
+[13:11.92]  hours to do my training and then I don't
+[13:13.68]  need it anymore versus purchasing or
+[13:16.72]  long-term rental right where you reserve
+[13:18.72]  it instance for days or for months and
+[13:21.56]  that's going to end up costing thousands
+[13:23.56]  of dollars in often time so being able
+[13:26.04]  to size up what kind of training you
+[13:28.12]  need and then picking what level of are
+[13:31.92]  you going to need it at CL are you going
+[13:33.84]  to need it as a reserved instance maybe
+[13:35.80]  you buy your own infrastructure which is
+[13:37.88]  also a you often cheaper answer if you
+[13:40.40]  have if you already have an
+[13:42.00]  infrastructure an non-rem infrastructure
+[13:43.84]  system that's really going to depend on
+[13:46.12]  what your AI training expectations are
+[13:48.96]  are anticipated so I'm going to throw a
+[13:51.20]  curve ball if we think about the
+[13:52.92]  migration that enterprises made from on
+[13:56.00]  premise to the cloud the underlying B
+[13:59.44]  prop was L the variability is fairly
+[14:02.88]  cheap you can ramp up fairly fast in
+[14:05.72]  fact I I have this term that I use that
+[14:07.80]  it's a variable fixed cost on your p&l
+[14:10.84]  meaning that you can scale it up and
+[14:12.64]  down the line will always be there for
+[14:14.48]  you as a business and that's the cloud
+[14:16.12]  cost as we move to the world of AI
+[14:19.44]  nativeness and leveraging it is your
+[14:23.36]  belief that the existing
+[14:26.80]  incumbents will actually whatever you're
+[14:29.16]  seeing with the large Foundation models
+[14:31.56]  providers will become the Swiss army
+[14:34.24]  knife so I'm speaking for example to the
+[14:35.76]  AWS and Amazon approach where they're
+[14:37.92]  saying listen you want to use open AI
+[14:40.08]  you want to use
+[14:41.60]  anthropic we have our offering we have
+[14:43.92]  Bedrock you don't have to switch it's
+[14:45.48]  going to be one more feeder so does this
+[14:47.92]  line remain or do we have a new fixed
+[14:50.28]  variable line it's it's a very good
+[14:53.08]  question and certainly when you talk to
+[14:55.28]  AWS you talk to gcp they all have
+[14:57.28]  Partnerships and obviously aour are very
+[14:59.04]  much or so with with open AI they have
+[15:01.48]  these Partnerships but and it's worth
+[15:04.16]  being aware of this using a first-party
+[15:06.76]  solution with say open AI or with
+[15:08.44]  anthropic is going to have different
+[15:09.68]  performance different latency than if
+[15:12.00]  you do it via an intermediary like a
+[15:14.44]  cloud so you maybe get some Simplicity
+[15:16.60]  by not having to on board different
+[15:18.56]  vendors and different different support
+[15:20.68]  but there is going to be an impact in
+[15:23.00]  terms of performance and that's
+[15:24.32]  something that might be a temporary
+[15:26.00]  problem is certainly a very real
+[15:27.52]  consideration he's at a high point in
+[15:29.56]  this moment in time the delta in
+[15:31.20]  performance or do we believe it persists
+[15:33.32]  and your view is it's right now it's
+[15:36.48]  worth not ignoring for the use cases
+[15:38.56]  that I've had and something else maybe
+[15:40.72]  hopefully transient for 24 is the option
+[15:44.16]  for ad hoc gpus when you go higher than
+[15:47.12]  like an L4 if you need an a100 or h100
+[15:50.08]  something that can host some of these
+[15:52.68]  larger large open source large language
+[15:55.00]  models we talked about commodity models
+[15:56.60]  what if you want to do something like a
+[15:58.32]  70 B in llama or minro or mix or any of
+[16:02.00]  these those are going to be very hard to
+[16:03.84]  get on an ad hoc basis and you're going
+[16:06.52]  to end up having to pay the price for a
+[16:08.56]  reserve instance if you want to be able
+[16:10.16]  to serve something like that and and
+[16:12.04]  those are you've now touched on the
+[16:13.52]  trade-offs between using open source
+[16:15.28]  platforms versus existing World Garden
+[16:18.00]  incumbents Culture how do you
+[16:20.16]  effectively Implement AI from a cultural
+[16:23.16]  process people point of view one of the
+[16:27.00]  both beautiful but also double-edged
+[16:29.56]  things that is happening with the ease
+[16:32.76]  of libraries in the olden days 10 years
+[16:36.04]  ago um if you want to if you want to to
+[16:38.92]  to put together a model a neural net
+[16:41.20]  model you would probably have to layer
+[16:42.68]  it pull put it up layer by layer you'd
+[16:45.04]  have to design it yourself the for the
+[16:47.52]  most part now you get a pre-train
+[16:49.92]  something that is to say a model that
+[16:51.28]  somebody else has trained and then
+[16:52.40]  you're just going to tweak its decisions
+[16:54.36]  a little bit to adapt it to your
+[16:55.80]  particular day or the days of coding up
+[16:58.64]  your own specific classification model
+[17:01.08]  or or there's a whole host of supervised
+[17:03.52]  and unsupervised Etc models that you
+[17:05.92]  might want to do the days of have of
+[17:07.32]  having to have ml experts do that by
+[17:09.88]  hand or that usually doesn't happen at
+[17:12.96]  most you're doing tweaks you're doing
+[17:14.52]  minor Corrections and what that means
+[17:16.96]  also is that you can have non-experts
+[17:19.36]  who are not used to a lot of the things
+[17:20.72]  that I've already touched on like how do
+[17:22.52]  you make sure that your models not cold
+[17:23.96]  or fitting how do you make sure that
+[17:25.60]  your data is clean how do you trust then
+[17:28.28]  have the right metric so that you don't
+[17:30.04]  have an embarrassing situation where
+[17:31.44]  your llm offered free x of service and
+[17:35.84]  now you're on the hook for actually
+[17:37.36]  backing up whatever your llm did even
+[17:39.80]  though it wasn't trained or aligned it's
+[17:42.08]  called for that particular mistake so
+[17:45.88]  enabling your engineers in order to
+[17:48.60]  leverage all of these great use cases
+[17:50.68]  including the models that seem to take
+[17:53.04]  care of themselves sometimes deceptively
+[17:55.08]  and making sure that you still have very
+[17:57.20]  rigorous metric supervision and
+[18:00.00]  evaluation of how your models are doing
+[18:02.80]  and when the worst cases are going to
+[18:04.52]  happen making sure that you stratify
+[18:07.00]  another technical term that means you
+[18:08.80]  consider all the different situations
+[18:11.60]  carved up into little boxes so that you
+[18:13.56]  make sure you're not just performing
+[18:14.64]  well on one you're performing across the
+[18:16.64]  board of all of the different use cases
+[18:18.64]  having that strong culture to back up
+[18:21.48]  the performance of your model before you
+[18:23.28]  go into release is probably one of the
+[18:25.76]  biggest issues in terms of having a
+[18:27.72]  strong ml culture when year as it gets
+[18:30.68]  easier and easier for non-experts to
+[18:33.20]  start leveraging these tools and if in a
+[18:35.60]  five minute conversation with a business
+[18:37.72]  owner you have the opportunity to
+[18:39.96]  completely overwhelm them by throwing
+[18:42.08]  all sorts of technical ml
+[18:45.12]  terms if that is not what they have done
+[18:47.84]  day in and day out but they're very good
+[18:49.52]  at running the p&l and all of a sudden
+[18:51.48]  we are in a new paradigm how can they
+[18:54.76]  stress test what you are doing they
+[18:57.28]  don't speak your language you throw the
+[18:59.60]  three-letter acronyms like where do they
+[19:02.60]  find
+[19:03.68]  themselves oh that's a wonderful
+[19:05.56]  question I I I love it yeah so so it's
+[19:08.68]  very easy to throw technical acronyms
+[19:11.60]  and to maybe you go deeper than is
+[19:14.48]  really necessary you when you're coming
+[19:17.16]  from a technical perspective
+[19:19.12]  understanding exactly what a Transformer
+[19:20.92]  model does or what a multi-head
+[19:22.52]  attention network does and why you need
+[19:24.40]  rotary versus non-rotary embed EMB
+[19:27.24]  positional embeddings or different
+[19:29.00]  softmax L loss functions and temperature
+[19:31.92]  that honestly doesn't make a big
+[19:33.80]  difference in terms of making the
+[19:35.04]  business decision oh is this model going
+[19:38.40]  to perform the way I want is it going to
+[19:40.56]  perform out of sample that is say when
+[19:43.20]  we're live are we cleaning our data are
+[19:45.64]  we using do we have metrics that match
+[19:48.48]  what the model was trained to do our our
+[19:51.32]  our loss function our leading metric how
+[19:53.64]  did my my prediction match the truth
+[19:56.36]  versus what the product is supposed to
+[19:58.80]  do and asking questions about why those
+[20:01.36]  match is going to be the most valuable
+[20:03.32]  thing for you to dig in on because
+[20:05.68]  that's what's ultimately going to
+[20:06.96]  determine the performance of how your
+[20:08.60]  product that's AI driven is going to
+[20:11.00]  succeed I I couldn't agree more so let
+[20:14.24]  me turn it over to you to Del into some
+[20:17.28]  of these
+[20:18.92]  examples yeah shop Shopify is one of one
+[20:22.80]  of the largest e-commerce Platforms in
+[20:24.52]  North America and in particular that
+[20:27.04]  means making sure that we can answer a
+[20:29.56]  fundamental question of if a buyer has a
+[20:33.32]  query and is searching for a query which
+[20:36.36]  products would match that query right
+[20:38.56]  which ones are relevant matches and
+[20:40.40]  which ones are irrelevant matches now
+[20:42.56]  that becomes relevant when there's a
+[20:44.12]  particular Merchant who's a single shop
+[20:46.76]  who is using Shopify and wants you want
+[20:49.16]  to and you somebody goes to that shop
+[20:51.20]  and wants to search for particular
+[20:53.16]  prodject products within that shop we
+[20:54.76]  also have a shop app where you're
+[20:56.52]  searching much other e-commerce
+[20:58.76]  experience across multiple merchants and
+[21:01.00]  multiple pro products that are hosted
+[21:03.60]  across several different providers right
+[21:06.44]  and so search relevance in those search
+[21:09.32]  contexts those kind of search context
+[21:11.00]  that as an end user you're very familiar
+[21:12.76]  with are first and foremost very
+[21:16.00]  important now there's also just making
+[21:18.60]  sure that you have high quality right if
+[21:21.44]  I search for boots and I end up with
+[21:24.72]  boot socks and boots and ski ski boots
+[21:28.24]  and lot of things that might not be
+[21:29.72]  relevant I need to be able to evaluate
+[21:32.16]  that and I need to be able to evaluate
+[21:33.76]  that say on the first and different
+[21:37.04]  results to make sure that when we do
+[21:39.68]  these key searches we're giving the end
+[21:42.44]  user buyers the right kinds of results
+[21:45.32]  and to do that we need to have an
+[21:47.36]  evaluation me right how does this
+[21:49.92]  product match with this quy and again
+[21:52.40]  this goes back to what I've been banging
+[21:54.88]  banging the drum on all along is you
+[21:57.32]  need to care about your metric
+[21:59.04]  so this is as much a metric as a product
+[22:01.84]  itself Mike if I may interject because I
+[22:04.52]  think we can't stress the metric Point
+[22:06.80]  enough it's also not all metrics are
+[22:09.04]  created equal across different
+[22:11.08]  businesses so what's a good enough
+[22:13.36]  metric I'm going to make up basic
+[22:16.08]  example if I search for an item on
+[22:19.44]  Shopify the boot example and I get the
+[22:23.12]  right item 50% of the time that might be
+[22:27.64]  great or not you will tell us what's
+[22:29.96]  relevant in one context but completely
+[22:34.32]  insufficient in another context so tell
+[22:37.28]  us a little bit about not all results
+[22:39.20]  are created equal back to this metric
+[22:41.48]  point it context matters sure yeah and
+[22:44.76]  maybe to your point in product search
+[22:46.96]  there there's two Dimensions that or two
+[22:49.08]  two principle directions that you might
+[22:52.08]  want to have relevance in right one
+[22:54.56]  might be I'm looking for a product and
+[22:56.88]  so I want to see that product right want
+[22:58.80]  I'm looking for boots I want boots
+[23:00.64]  another might be I'm shopping for boots
+[23:03.64]  and so I'm going to buy boots and I'm
+[23:05.24]  going to buy socks that match the boots
+[23:06.92]  and I'm going to buy maybe some cleaner
+[23:09.64]  that that makees sure that my boots stay
+[23:11.40]  in in Nice condition in the weather in
+[23:13.44]  the winter time so cross selling and
+[23:16.36]  relevance right and these can actually
+[23:18.32]  be two different metrics and maybe what
+[23:20.72]  you would want to do is have one metric
+[23:22.64]  that shows for direct relevance and
+[23:25.20]  another that shows complimentary
+[23:27.96]  relevance right and then it is somewhat
+[23:30.08]  a product decision of how much you want
+[23:31.84]  to balance these but it's also something
+[23:33.40]  that you can balance with GM with with
+[23:35.72]  your your bottom line right with how
+[23:38.44]  much new you know if we balance for say
+[23:42.04]  50% are going to be direct on the nose
+[23:44.92]  relevant 50% are going to be more
+[23:47.56]  complimentary maybe if we tweak that to
+[23:49.44]  6040 or 7030 you might actually see a
+[23:52.48]  change in your bottom line and that's
+[23:54.12]  the sort of that's the way your product
+[23:56.28]  your end goal is going to be determined
+[23:58.80]  by certain parameters that you choose in
+[24:01.24]  your actual model deployment and so back
+[24:03.72]  to this interdependency between your
+[24:06.72]  teams and your organization and the the
+[24:10.04]  p&l owner or the merchandiser whoever is
+[24:12.56]  responsible for the business unit and
+[24:14.48]  that bottom line H how does that
+[24:17.36]  interaction back and forth work whatever
+[24:19.56]  tweaking you are doing on 40 or 50% or
+[24:23.00]  2% Improvement has ramifications in
+[24:26.16]  terms of their bottom line but also the
+[24:28.40]  sources that you have leveraged so if we
+[24:31.12]  wanted to we express the metric in terms
+[24:33.04]  of results for the End customer in this
+[24:35.56]  example what about from an Roi
+[24:38.08]  perspective how much do you have to put
+[24:40.12]  in to get what out yeah so there's a
+[24:43.00]  couple aspects to that one is as a data
+[24:46.04]  person obviously I love seeing the
+[24:48.28]  numbers and letting the numbers tell me
+[24:50.00]  and so having experimentation being able
+[24:52.36]  to experiment with to take the simple
+[24:54.76]  example of how to you balance these two
+[24:56.36]  kinds of experiences is one answer and
+[24:59.00]  then you need to invest in
+[25:01.00]  experimentation Frameworks right and
+[25:02.92]  hopefully you again these things get
+[25:04.76]  easier and easier as there's existing
+[25:07.04]  open source Frameworks and and tools
+[25:09.00]  that vendors that you can leverage for
+[25:10.68]  that that's one answer the other answer
+[25:12.48]  is really keeping close communication
+[25:14.76]  with your stakeholders this really
+[25:16.04]  speaks to the the the culture aspect of
+[25:18.92]  it right just having ml ml engineers and
+[25:22.00]  ml scientists working in a vacuum and
+[25:24.28]  coming up and saying this is your model
+[25:27.08]  I'm going to go work on the next fun
+[25:28.48]  technical thing is a mistake and it's
+[25:30.36]  been a mistake and we've seen different
+[25:31.68]  versions of this back when you my job
+[25:33.60]  title was called data scientist and that
+[25:35.20]  was all all that was the only kind of
+[25:36.88]  title there was you what you need is to
+[25:40.24]  have a pretty mix you need to have
+[25:42.56]  engineering for serving you need to have
+[25:44.16]  your ml scientists and engineers and you
+[25:46.32]  need to have product you need to have
+[25:47.68]  product every in the trenches with your
+[25:50.84]  ml Builders so that way they can
+[25:54.60]  understand what are the pros and cons of
+[25:57.16]  not just making a tweak in a parameter
+[25:59.88]  and what a metric is but also that key
+[26:03.00]  that that key value that I keep driving
+[26:05.08]  home which is does does your end goal
+[26:08.68]  product metric and what you want to get
+[26:11.68]  there match your your metrics that your
+[26:14.72]  model is trying to learn from and that's
+[26:16.64]  going to make a huge difference in terms
+[26:18.72]  of what the what you actually see when
+[26:21.28]  you get your bottom line results got it
+[26:24.04]  vectorization and multimodal llms llms
+[26:27.36]  most people have heard in one form or
+[26:29.08]  another multimodal is initially we
+[26:31.36]  started with text to text now it's text
+[26:33.52]  to image text to video 2D to 3D Etc
+[26:37.16]  theorization in plain English and then
+[26:39.88]  how that come Bears relevance in the
+[26:41.84]  context of the exchange we've just had
+[26:44.36]  yeah we had in the good old days it was
+[26:46.04]  keyword search right and people have
+[26:47.68]  learned oh I just put in one in the good
+[26:49.88]  old days maybe 15 years ago when you're
+[26:51.80]  searching you search for one word you
+[26:53.32]  don't really phrase it in a sentence you
+[26:54.88]  don't talk to Google that way at least
+[26:56.60]  you used not to do that because it's
+[26:58.80]  just looking for the main words it's
+[27:00.84]  ignoring the we call the unimportant
+[27:02.88]  words and trying to match those in the
+[27:05.36]  products or what or whatever it is that
+[27:07.36]  you want to do you want to search for
+[27:09.48]  right documents if you're doing if
+[27:11.32]  you're doing a search on web pages for
+[27:13.80]  is it's a somewhat complex to topic
+[27:16.80]  which really can be boiled down to to a
+[27:19.80]  very simple image which is in a
+[27:22.40]  multi-dimensional space and you can
+[27:23.88]  imagine three every word in its context
+[27:27.84]  and every image in its context can be
+[27:30.60]  represented as a point in that space and
+[27:33.68]  if you're doing your vectorization
+[27:36.08]  correctly then similar words from
+[27:39.16]  similar context or similar images are
+[27:41.44]  going to end up located in that similar
+[27:45.44]  part of the space right so all your cat
+[27:48.16]  pictures are going to end up here all
+[27:50.08]  your dog pictures are going to end up
+[27:51.56]  close to the cat pictures but not the
+[27:53.20]  same place all of your I fireworks
+[27:55.96]  predictions we've seen a lot of those
+[27:57.12]  are going to end up way far away from
+[27:58.72]  those and the words corresponding to
+[28:00.84]  those are going to be in if you do it
+[28:03.56]  right your image vectorization where
+[28:05.56]  you're pictures end up as a point in
+[28:07.80]  that space are going to end up in the
+[28:09.68]  same part of that space as your words so
+[28:12.44]  if I describe cat it's going to end up
+[28:15.08]  where the cat pictures are if I if I
+[28:16.76]  describe a dog it's going to end up
+[28:18.64]  where the dog pictures are and when I
+[28:20.52]  say in context what I what if I say bank
+[28:23.36]  if I say bank I could say the robbers
+[28:25.64]  were leaving the bank and they were
+[28:27.68]  going at high speed and crashed into the
+[28:29.56]  river bank and I've said Bank twice here
+[28:31.96]  and those are very different words right
+[28:33.52]  one is going to be in the the second one
+[28:36.48]  in that context is a place by a river
+[28:38.76]  the first one is a place that has money
+[28:40.56]  and so modern techniques for
+[28:42.44]  vectorization have done a very good job
+[28:45.00]  of looking at the rest of the sentence
+[28:46.80]  looking at that context and figuring out
+[28:48.96]  that the first instance of the word goes
+[28:50.76]  where with pictures of Industry
+[28:52.72]  industrial places that manage money and
+[28:54.84]  the other one has pictures of rivers and
+[28:56.88]  that sort of thing it what Mike just
+[28:59.04]  described is about 80% of the backbone
+[29:02.52]  of gen and why we have the ability to
+[29:05.76]  interact with some of the applications
+[29:07.52]  in plain English and get humanlike
+[29:09.68]  interactions because all leveraging
+[29:11.64]  these Vector Technologies and delivering
+[29:13.84]  what's called embeddings which is really
+[29:16.48]  leveraging the vectorization through
+[29:18.40]  deep learning just so that folks
+[29:20.36]  actually internalize what this all needs
+[29:23.44]  yeah and and when you hear embeddings
+[29:25.04]  it's it's pretty much a synonym to how
+[29:27.04]  I'm using the word iation it's embedding
+[29:29.84]  the word or the image into a vector
+[29:33.08]  space so Mike you're using this and how
+[29:36.40]  you're constructing the whether it's the
+[29:38.76]  merchandising the images the text the
+[29:40.64]  descriptors pricing are you leveraging
+[29:43.28]  AI for dynamic pricing of any kind so
+[29:45.88]  Dynamic pricing is is a complicated area
+[29:49.08]  and very generally I know from past
+[29:51.48]  lives you never want to do Dynamic
+[29:53.12]  pricing you want to do Dynamic discounts
+[29:56.36]  as a as a product framing bit of advice
+[30:00.68]  now certainly having tools helping U
+[30:03.16]  Merchants to understand things like
+[30:05.12]  demand and supply curve and how that
+[30:08.04]  those trade-offs are that's certainly
+[30:09.56]  something and that that Shopify is
+[30:12.12]  interested in providing for merchants as
+[30:14.60]  as the first-party customers of Shopify
+[30:17.60]  we want to give them the tools so they
+[30:19.04]  can be effective entrepreneurs real
+[30:21.68]  quick just to frame the evolution of
+[30:23.64]  what's going going on here right we
+[30:25.24]  started with keyword matching then we
+[30:27.56]  might pair vectors right and typically I
+[30:30.40]  had on the priv previous slide Crossing
+[30:32.44]  coding and two towers these are just
+[30:33.84]  very technical neural network
+[30:35.64]  architectures where we actually look at
+[30:37.08]  the vectors at the same time versus
+[30:39.12]  looking at the
+[30:40.32]  vectors separately and if you want if I
+[30:43.28]  do a query I don't want to have to
+[30:45.24]  compare that query to every single
+[30:48.08]  product across all of Shopify let alone
+[30:51.00]  even maybe in a single the large
+[30:52.84]  Merchant and because it's not skillable
+[30:55.16]  if you have hundreds of millions to
+[30:57.08]  billions of products search for you
+[30:58.76]  can't do that not scalable we mean is
+[31:01.16]  very expensive to from a compute
+[31:03.20]  perspective y expensive yeah expensive
+[31:05.64]  and and obviously prohibitively it would
+[31:08.08]  take too much time in order to return it
+[31:10.12]  that dollars so that's one side of and
+[31:13.72]  and that is in terms of serving in terms
+[31:15.76]  of giving results when pres somebody
+[31:19.28]  produces a query you're you're going to
+[31:21.36]  want to sever those now if you want to
+[31:22.92]  just look at quality and you can do just
+[31:24.72]  smaller quality checks then you can look
+[31:26.72]  at them simultaneously you can get a
+[31:28.24]  little bit more information the same
+[31:30.36]  story is now true with llms llms if you
+[31:34.48]  domain adapt them right that is say you
+[31:36.56]  train them on your data and have them
+[31:38.64]  learn your specific behaviors that you
+[31:40.88]  want to see correctly can be very good
+[31:44.04]  at also taking in a slower context I I
+[31:48.08]  look through this query I have this
+[31:50.00]  product are they relevant together or
+[31:52.64]  I'm I have this product what are the
+[31:54.64]  relevant features what are the
+[31:56.04]  attributes what are the what are the
+[31:57.52]  sorts of
+[31:58.40]  structured features if you have a
+[32:00.20]  t-shirt you might it might have a v-neck
+[32:01.96]  it might have a turtleneck it might have
+[32:04.32]  different colors what sorts of thing can
+[32:06.24]  I extract about this image and this
+[32:08.40]  product description that I can use in
+[32:10.28]  search queries down the line and so llms
+[32:13.36]  are remarkably almost too good to be
+[32:16.08]  true effective at this sort of work good
+[32:20.20]  what's the cons they're very slow and
+[32:22.24]  they're very expensive and if you pay a
+[32:23.92]  commodity llm which right now does
+[32:27.12]  usually beat out open source lolms
+[32:29.76]  you're going to end up paying per token
+[32:31.96]  and you can't scalably if you have the
+[32:34.64]  right size of a business do this for
+[32:37.08]  every query or every kind of use case so
+[32:40.76]  what do you do you might want to take an
+[32:42.96]  open source model and do what we call
+[32:45.24]  distillation distillation is a technical
+[32:47.08]  term it means I have a small model I
+[32:50.20]  have the answers that I've gotten my big
+[32:51.76]  model I know what goes into the big
+[32:53.60]  model and what comes out of the big
+[32:54.64]  model and so I train my little model to
+[32:57.60]  learn to meit the big model answers
+[32:59.72]  right and how's that different than fine
+[33:01.64]  tuning uh so fine-tuning is you might
+[33:04.64]  have any size model the parameters are
+[33:07.44]  already trained on a lot of data by
+[33:09.20]  someone else for their data and that
+[33:12.68]  data might be close to your but it's not
+[33:14.32]  exactly the same data as yours so if I'm
+[33:16.96]  going to fine-tune my model I'm going to
+[33:19.12]  take my specific data and I'm going to
+[33:22.24]  adapt to my specific domain on my data
+[33:25.72]  the base model so for an l M context
+[33:28.32]  llms are really remarkably great at
+[33:31.84]  grammar and understanding the subtle in
+[33:34.16]  these days understanding the subtleties
+[33:35.60]  of language and often doing multilingual
+[33:38.00]  things and there's a lot of Baseline
+[33:39.56]  things that I don't want to put in the
+[33:40.84]  work on that right that work has been
+[33:42.80]  done and it's been done very effectively
+[33:44.60]  and there's no re to have no reason to
+[33:46.60]  have everyone be another open AI or
+[33:49.24]  another anthropic when it comes to
+[33:50.72]  Baseline but when it comes to my
+[33:52.40]  specific dat or whatever it is I'm going
+[33:54.72]  to want it to be extra extra good at
+[33:57.00]  those nuances and there are all sorts of
+[33:59.04]  ways of fine tuning there are all sorts
+[34:00.72]  of ways of there's a whole lot of
+[34:02.60]  technical literature on different ways
+[34:04.56]  that you can adapt your model to your
+[34:06.96]  specific data that's spine tuning is
+[34:09.28]  what the main line and so back to your
+[34:11.28]  example you were going to do the llm the
+[34:13.44]  large language model and then almost
+[34:15.08]  like a small language model that's
+[34:17.24]  separate from fine-tuning you're fine
+[34:18.92]  tuning on top of the llm this is above
+[34:21.04]  and beyond sits on top of it I just want
+[34:22.88]  to make sure people C anage of it okay
+[34:25.56]  yeah so you fine tune your smaller open
+[34:28.28]  source and when I say smaller it might
+[34:29.76]  be 7 to 70 billion not so small just
+[34:32.76]  small compared to the bigger ones right
+[34:34.76]  you might find tune it in order to mimic
+[34:38.32]  the performance of the large commodity
+[34:41.28]  model got it I know we have some more
+[34:43.40]  context but what do you wish I had asked
+[34:46.00]  you about your work that we didn't get
+[34:48.44]  to maybe it'd be worthwhile just
+[34:50.36]  spending 60 seconds to talk about the
+[34:52.44]  difference about the data issues because
+[34:54.32]  we we we Easter egged that yeah so in
+[34:56.96]  particular let's think about search
+[34:58.88]  results how do you get data you want to
+[35:01.28]  train your model to produce good
+[35:03.68]  examples for a query and know how to
+[35:06.16]  avoid bad examples for a query how do
+[35:08.20]  you train your model to do that there's
+[35:09.48]  lots of ways we can do it we can have
+[35:11.12]  humans do it and come up with thousands
+[35:12.96]  thousands of examples and that could be
+[35:14.20]  expensive we can ask an llm to do that
+[35:16.36]  and that is a new dimension in terms of
+[35:18.08]  data management that's now available but
+[35:20.16]  now we're trusting our llm for the
+[35:22.88]  answers that we're going to build our
+[35:25.36]  entire foundations on and so you need to
+[35:27.20]  have other ways of validating that
+[35:30.08]  information making sure that it's not
+[35:31.76]  wrong that you're not just trusting the
+[35:33.12]  LM to avoid what's comant be known
+[35:35.84]  hallucina is hallucinations inations
+[35:38.68]  absolutely and so with your so you could
+[35:40.92]  also use your own data right you can
+[35:42.60]  have positive examples oh those are the
+[35:44.24]  things I searched for something I bought
+[35:46.32]  it I clicked on it I bought it that's
+[35:48.24]  definitely a success it gets really
+[35:50.36]  subtle when you have negative examples
+[35:52.20]  right because if I search for boots and
+[35:54.76]  I show a Christmas tree that's not going
+[35:58.04]  to the model is not going to learn much
+[35:59.60]  from saying oh that was wrong right it's
+[36:02.08]  going to learn a lot more by showing its
+[36:03.76]  sneakers or by showing its sandals and
+[36:05.60]  saying that's because it's closer to
+[36:09.36]  what would off sensibly be correct so
+[36:11.44]  thinking about that data and working
+[36:13.12]  with product working with how do we
+[36:15.16]  carve up the different space of possible
+[36:17.16]  answers and understanding how you can
+[36:19.84]  think about what's negative example
+[36:21.88]  versus what's a positive example in
+[36:23.60]  combination with maybe asking your llm
+[36:25.40]  to find things that are close but not so
+[36:27.20]  not but no cigars so as speaked that's
+[36:30.16]  really where a lot of this we talked
+[36:31.64]  about data work is the bottom of the
+[36:33.32]  iceberg I think that takes so much time
+[36:35.20]  that's where a lot of the hard work
+[36:36.28]  comes
+[36:37.40]  in and any prospects for automating the
+[36:40.84]  data prep and what data scientists and
+[36:43.04]  data Engineers do because it's so
+[36:45.12]  laborious and boring for them and
+[36:47.08]  they're so expensive and can create so
+[36:49.72]  much value yeah and I it's it's a a
+[36:53.44]  little bit of a of a skilla and peribus
+[36:55.52]  right there's a balance here between
+[36:56.96]  trusting trusting your llm implicitly
+[37:00.08]  and never supervising it versus versus
+[37:03.48]  using you not using an llm and then
+[37:05.72]  being stuck paying humans to do things
+[37:07.84]  that maybe an llm can do for you and so
+[37:10.96]  finding out different layers of I'm
+[37:12.84]  going to generate some candidates with
+[37:14.28]  my LM then I'm going to have humans
+[37:15.76]  evaluate the quality of their results or
+[37:18.12]  maybe I'm going to have llms find the
+[37:20.68]  potential negative values and but have
+[37:23.28]  humans actually curate those values and
+[37:25.00]  make sure that they're actually good
+[37:26.68]  negative values balances of those and
+[37:28.84]  ask and then paying you the the people
+[37:31.08]  that you spend the big bucks hiring in
+[37:32.80]  order to do the statistics and make sure
+[37:34.52]  that this this layering of strategies is
+[37:37.48]  correct that's a great place for them to
+[37:39.72]  spend time rather than cing up neural
+[37:42.08]  networks from Scrat which is I think of
+[37:44.48]  the past so with that I think we started
+[37:47.28]  our discussion with there is a lot of
+[37:48.80]  trial and error and I think we're ending
+[37:50.88]  with trust and verify but thank you so
+[37:54.48]  much Mike Gina thank you so much for the
+[37:57.08]  very informa of session and for all the
+[37:59.12]  details thank you

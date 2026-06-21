@@ -1,0 +1,2316 @@
+Title     : Building a magical AI code editor used by over 1m developers in 4 months: Inside Windsurf
+Video ID  : 5Z0RCxDZdrE
+URL       : https://www.youtube.com/watch?v=5Z0RCxDZdrE
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2307
+Saved at  : 2026-06-21 01:09:59
+------------------------------------------------------------
+
+[00:00.08]  A lot of the bets we're making inside
+[00:01.44]  the company are for things that are not,
+[00:03.20]  you know, 3, four weeks away. We should
+[00:04.96]  be cannibalizing the existing state of
+[00:06.56]  our product every 6 to 12 months. Every
+[00:08.40]  6 to 12 months, it should make our
+[00:09.84]  existing product look silly. It should
+[00:11.44]  almost make the form factor of existing
+[00:13.04]  product look dump. How do you know when
+[00:14.80]  it's time to hire someone? I wanted the
+[00:16.72]  company to almost be like this
+[00:17.92]  dehydrated entity. Every hire is like a
+[00:20.40]  little bit of water and we only go back
+[00:22.24]  and hire someone when we're back to
+[00:23.60]  being dehydrated. Any other skills you
+[00:25.28]  think people should be investing more in
+[00:26.96]  with the rise of AI, building more and
+[00:28.48]  more of our products? engineers are now
+[00:30.32]  able to produce more technology. The ROI
+[00:33.20]  of building technology has actually gone
+[00:35.04]  up. This actually means you hire more.
+[00:36.72]  The best thing to do is just get your
+[00:38.16]  hands dirty with all of these products.
+[00:39.84]  You could be a force multiplier to your
+[00:41.36]  organization in ways in which they never
+[00:42.88]  even
+[00:44.45]  [Music]
+[00:46.04]  anticipated. Today, my guest is Verun
+[00:48.40]  Mohan. Baroon is the co-founder and CEO
+[00:50.80]  of Windservef which has quickly become
+[00:52.72]  one of people's favorite AI coding tools
+[00:54.88]  and is basically the main competitor to
+[00:56.56]  cursor with over 1 million users 4
+[00:58.72]  months in. In our conversation, Veroon
+[01:01.20]  shares what makes Windsurf unique, why
+[01:03.36]  they decided to invest heavily in
+[01:04.80]  enterprise sales very early in their
+[01:06.80]  history, why agency is going to be the
+[01:08.96]  most important skill for engineers and
+[01:10.48]  product builders to build. also the
+[01:12.40]  story of how they started out as a GPU
+[01:14.32]  infrastructure company and realized
+[01:16.00]  there was a much bigger opportunity up
+[01:17.60]  the stack and the two pivots that got
+[01:19.44]  them to where they are today. He also
+[01:21.12]  gives a live demo advice for being
+[01:22.88]  successful Windsurf and so much more.
+[01:25.20]  There's so much to learn about where
+[01:27.52]  things are heading for engineers and
+[01:28.88]  product builders in general in this
+[01:30.56]  conversation and I'm really excited to
+[01:31.92]  bring it to you. Thank you to everyone
+[01:33.36]  on LinkedIn and Twitter and my
+[01:34.56]  newsletter community for suggesting
+[01:36.32]  great questions to dig into with Verun.
+[01:38.88]  If you enjoy this podcast, don't forget
+[01:40.40]  to subscribe and follow it in your
+[01:41.68]  favorite podcasting app or YouTube.
+[01:43.36]  Also, if you become a yearly subscriber
+[01:45.36]  of my newsletter, you get a year free of
+[01:48.24]  Perplexity Pro, Notion Plus, Linear,
+[01:51.52]  Granola, and Superhum. Check it out at
+[01:54.52]  lennisnewsletter.com. With that, I bring
+[01:56.32]  you Verun
+[01:58.52]  Mohan. This episode is brought to you by
+[02:01.36]  Brex, the financial stack used by one in
+[02:04.32]  every three US venture-backed startups.
+[02:07.36]  Brex knows that nearly 40% of startups
+[02:09.60]  fail because they run out of cash. So,
+[02:11.84]  they built a banking experience that
+[02:13.68]  focuses on helping founders get more
+[02:15.52]  from every dollar. It's a stark
+[02:17.44]  difference from traditional banking
+[02:18.96]  options that leave a startup's cash
+[02:20.72]  sitting idle while chipping away at it
+[02:22.48]  with fees. To help founders protect cash
+[02:24.96]  and extend runway, Brex combined the
+[02:27.60]  best things about checking, treasury,
+[02:29.44]  and FDIC insurance in one powerhouse
+[02:32.48]  account. You can send and receive money
+[02:34.72]  worldwide at lightning speed. You can
+[02:36.80]  get 20x the standard FDIC protection
+[02:39.52]  through program banks, and you can earn
+[02:41.60]  industry-leading yield from your first
+[02:43.36]  dollar while still being able to access
+[02:45.28]  your funds anytime. To learn more, check
+[02:47.76]  out Bre at
+[02:51.72]  brex.com/banking-solutions. That's
+[02:55.96]  brex.com/bankingsolutions. This episode
+[02:57.60]  is brought to you by Product Board, the
+[02:59.68]  leading product management platform for
+[03:01.52]  the enterprise. For over 10 years,
+[03:03.52]  ProductB has helped customer- centric
+[03:05.36]  organizations like Zoom, Salesforce, and
+[03:07.84]  Autodesk build the right products
+[03:09.84]  faster. And as an end-to-end platform,
+[03:12.08]  Product Board seamlessly supports all
+[03:14.24]  stages of the product development life
+[03:15.76]  cycle. From gathering customer insights
+[03:17.84]  to planning a road map to aligning
+[03:19.68]  stakeholders to earning customer buyin,
+[03:22.00]  all with a single source of truth. And
+[03:24.40]  now product leaders can get even more
+[03:26.48]  visibility into customer needs with
+[03:28.56]  product board pulse, a new voice of
+[03:30.72]  customer solution. Built-in intelligence
+[03:32.96]  helps you analyze trends across all of
+[03:34.72]  your feedback. And then dive deeper by
+[03:36.64]  asking AI your follow-up questions. See
+[03:39.12]  how Product Board can help your team
+[03:40.96]  deliver higher impact products that
+[03:42.88]  solve real customer needs and advance
+[03:45.28]  your business goals. For a special offer
+[03:47.52]  and free 15-day trial, visit
+[03:51.24]  productboard.com/lenny. That's
+[03:58.92]  productboard.comleny. Verun, thank you
+[04:00.72]  so much for being here and welcome to
+[04:02.40]  the podcast. Buddy, thanks for having
+[04:04.48]  me. Longtime listener. Oh, I really
+[04:06.40]  appreciate that. I'm so excited to have
+[04:07.76]  you here. I feel like just you guys have
+[04:09.20]  become this overnight success, which is
+[04:11.52]  definitely not an overnight success, but
+[04:12.96]  I feel like I've been hearing about
+[04:14.24]  Windsurf more and more as people's
+[04:16.24]  favorite AI tool. And I just don't think
+[04:18.56]  people know the story behind Windsurf,
+[04:20.48]  behind Kodium, the company that you
+[04:22.00]  built. So I thought it'd be good to
+[04:24.00]  maybe just start there and have you just
+[04:26.56]  briefly share the history of Kodium and
+[04:28.80]  how Windsurf emerged out of Kodium.
+[04:31.12]  Yeah, so the company was actually
+[04:32.96]  started close to four years ago. Uh as
+[04:35.04]  you as you know AI coding was not a
+[04:37.04]  thing four years ago. Chat GPT was not
+[04:38.88]  out four years ago. At the time we
+[04:40.88]  actually started out building GPU
+[04:42.88]  virtualization and compiler software
+[04:44.80]  right uh before this I worked in
+[04:46.64]  autonomous vehicles. My co-founder who
+[04:48.40]  I've known since middle school uh worked
+[04:50.40]  on ARVR at Meta. And for us we believe
+[04:54.00]  deep learning would touch many many
+[04:55.44]  industries right it wouldn't just touch
+[04:57.44]  uh like sort of autonomous vehicles it
+[04:59.04]  would touch financial services defense
+[05:01.04]  uh healthcare. And we believe these
+[05:03.20]  applications were hard to build these
+[05:04.80]  deep learning applications. So we made
+[05:06.72]  it possible for you to effectively run
+[05:08.88]  these complex applications on computers
+[05:11.76]  without GPUs and we would handle all the
+[05:14.08]  complexity of being able to actually run
+[05:15.52]  the workload on the GPUs for you, right?
+[05:18.00]  And we were able to optimize these
+[05:19.44]  workloads a ton. And then the middle of
+[05:21.56]  2022 rolled around and we had a couple
+[05:24.16]  million in revenue. We were managing
+[05:25.84]  upwards of 10,000 sort of GPUs. We had
+[05:28.00]  eight people at the time. We were free
+[05:29.60]  cash flow positive. Uh but I think what
+[05:31.92]  we felt was when once these generative
+[05:33.84]  models started to get very good uh we
+[05:35.76]  sort of felt a lot of what we built was
+[05:37.68]  not as valuable and this was like a very
+[05:39.52]  very hard moment for us at the company.
+[05:41.20]  We were only eight people at the time
+[05:42.80]  but we felt hey would people be training
+[05:45.28]  these very bespoke sentiment classifier
+[05:47.76]  models anymore that were like very very
+[05:49.76]  custom models or would they just ask
+[05:51.72]  GPTN is this a positive or negative
+[05:54.24]  sentiment? probably is going to be the
+[05:55.92]  latter, right? And in a world in which
+[05:57.60]  everyone was going to run generative AI
+[05:59.20]  models, why would an infrastructure
+[06:01.20]  company be a differentiator? Because
+[06:03.28]  everyone is going to run the same kind
+[06:04.96]  of infrastructure down the line. So
+[06:06.40]  instead, what we decided to do was we
+[06:08.12]  believe generative AI was almost going
+[06:10.24]  to be like the next internet. And in
+[06:11.76]  that case, what we should go out and do
+[06:12.96]  is build the next great apps like uh
+[06:15.04]  Google, like Amazon. And we vertical
+[06:17.04]  integrated and actually took our
+[06:18.48]  infrastructure, our inference
+[06:19.68]  infrastructure to go out and build
+[06:21.44]  Kodium uh at the time. And at that time
+[06:24.08]  we were early adopters of GitHub copilot
+[06:25.92]  and we thought the coding space was
+[06:27.68]  going to get tremendously disrupted in
+[06:29.76]  the next coming years. So we actually
+[06:31.36]  took our infrastructure we ran our own
+[06:33.12]  models at massive scale. We even trained
+[06:34.80]  our own models. In the very beginning it
+[06:36.80]  was very very simple. It's purely an
+[06:38.32]  autocomplete sort of model right which
+[06:40.88]  basically means that as the user was
+[06:42.40]  typing we'd complete the next one or two
+[06:44.16]  or three or four lines of code. But we
+[06:46.48]  provided the product entirely for free
+[06:48.48]  in all the IDEs that developers coded.
+[06:51.52]  Right? That meant VS Code, Jet Brains,
+[06:53.60]  Eclipse, Visual Studio, Vim, Emacs. And
+[06:56.80]  the reason why we were able to build it
+[06:58.16]  for free was because of our
+[06:59.04]  infrastructure background. We were able
+[07:00.48]  to optimize these workloads a ton. And
+[07:03.84]  uh I guess very quickly after that, some
+[07:06.08]  large businesses also wanted to work
+[07:07.68]  with us and we built out the kind of
+[07:09.36]  this enterprise motion to to work with
+[07:11.04]  these large companies like Dell, JP
+[07:12.72]  Morgan, Chase. And for them, the bigger
+[07:14.64]  thing wasn't just, hey, could we
+[07:16.08]  autocomplete code or could we chat with
+[07:17.60]  the codebase, it was, could you offer us
+[07:19.36]  a secure offering that was also
+[07:21.28]  personalized to all the private data
+[07:22.72]  inside the company. So, we took our
+[07:24.08]  infrastructure and made it so that we
+[07:25.36]  invested a ton in making sure that we
+[07:27.60]  deeply understood these large companies
+[07:29.60]  code bases, right? And that's what we
+[07:31.60]  were working on until 6 months ago. And
+[07:33.76]  it's not that we've stopped working on
+[07:35.12]  that, but basically what we realized 6
+[07:37.20]  months ago was we were getting limited
+[07:38.96]  by the IDEs that we were already working
+[07:41.28]  in. So VS Code, which is a very popular
+[07:43.52]  ID, had a ceiling for the AI
+[07:45.92]  capabilities we could showcase our
+[07:47.36]  users. And because of that, we decided
+[07:49.04]  to go out and fork VS Code and build our
+[07:50.64]  own ID with some of these new agentic
+[07:52.88]  capabilities. And over time, in the last
+[07:54.72]  couple years, the model capabilities
+[07:56.48]  have also been growing exponentially
+[07:58.84]  year-over-year. That's that's sort of
+[08:00.56]  where we are right now. Like I I skipped
+[08:02.16]  a lot of pieces there. Uh but but that's
+[08:04.32]  that's where we landed. There's so many
+[08:06.32]  interesting threads there. One is just
+[08:07.68]  there's always this question of just
+[08:08.88]  where value will acrue in AI. And it's
+[08:11.12]  so interesting you guys started almost
+[08:12.64]  at the bottom layer of infrastructure
+[08:14.80]  GPUs and then you went to what people uh
+[08:17.60]  call GP a GPT wrapper not not actually
+[08:20.00]  but uh so I guess any just like lessons
+[08:22.96]  there just thoughts on just where you
+[08:24.72]  think value will end up in this world of
+[08:26.88]  AI in the stack of AI tools. Maybe I can
+[08:29.12]  start by just saying like one thing
+[08:30.80]  about startups that I that I think are
+[08:32.40]  like really true. It's very unlikely the
+[08:34.80]  first thing that you believe you should
+[08:36.48]  go work on uh is going to be the right
+[08:38.16]  thing which is like a very hard thing to
+[08:40.24]  kind of wrangle with being a startup
+[08:43.04]  founder, right? Uh you need to kind of
+[08:45.04]  be irrationally optimistic that what
+[08:47.20]  you're going to do is going to be
+[08:48.40]  differentially important because
+[08:49.68]  otherwise why would you go out and do
+[08:51.04]  what you're doing and if it's if it's if
+[08:53.36]  it's obvious then a bigger company would
+[08:54.88]  have already done it, right? Uh but then
+[08:56.56]  you also need to be really really
+[08:58.16]  realistic because most ideas that are uh
+[09:00.72]  that are I guess uh non-conventional are
+[09:02.72]  usually bad ideas, right? Uh so so it's
+[09:05.68]  it's this weird kind of tight rope you
+[09:07.92]  need to you need to kind of uh you know
+[09:10.24]  kind of balance on top of where you're
+[09:12.40]  kind of pushing for a future that you
+[09:13.92]  believe is true, but all the while
+[09:15.60]  you're getting new information. You need
+[09:17.04]  to kind of kill the beliefs that you
+[09:18.96]  had. And if I were to start with the
+[09:20.72]  infrastructure piece, we first went in
+[09:22.96]  with the assumption that model
+[09:24.24]  architectures were going to be really
+[09:25.60]  really heterogeneous. Working from an
+[09:27.84]  autonomous vehicle background, there
+[09:29.12]  were many different types of model
+[09:30.24]  architectures out there. There were
+[09:31.60]  convolutional neural networks, graph
+[09:33.12]  neural networks, recurrent neural
+[09:34.64]  networks, LSTMs, uh sort of lighter
+[09:37.92]  neural nets with with frustr networks,
+[09:40.32]  right? And there were maybe like tens of
+[09:41.84]  architectures we were dealing with. And
+[09:43.20]  at that point we were like the
+[09:44.48]  complexity of this is so high that it's
+[09:46.56]  very clear if someone offloaded the
+[09:48.16]  complexity there would be a lot of
+[09:49.36]  value. Fast forward to the middle of
+[09:50.96]  2023 everything looks like it's going to
+[09:52.88]  be a transformer. So now our hypotheses
+[09:54.96]  are just wrong. So at this point then
+[09:57.84]  most of the value is probably not going
+[09:59.52]  to acrew at purely the at least this is
+[10:01.20]  our belief at the infrastructure layer.
+[10:02.80]  It's going to acrue somewhere else.
+[10:04.32]  Where is the layer that you can actually
+[10:05.60]  differentiate on? And we believe the
+[10:07.44]  application layer is a very very deep
+[10:09.36]  layer to go out and differentiate on
+[10:10.88]  right. What are the number of ways we
+[10:12.48]  can build better user experiences,
+[10:14.72]  better workflows for developers? We
+[10:16.48]  think there's effectively no ceiling on
+[10:18.56]  that on how much better we can make the
+[10:20.32]  lives of developers. Basically, you
+[10:22.56]  touched on the second thread that I
+[10:24.08]  thought was really interesting here is
+[10:25.12]  just how you guys pivoted uh from ideas
+[10:27.68]  that were working like you were making
+[10:29.20]  money, people loved it. You said you had
+[10:30.80]  millions of dollars of ARR revenue and
+[10:33.12]  then you just like no, we're going to
+[10:34.32]  completely change the business. So, the
+[10:36.24]  question there is just like how do you
+[10:37.68]  what have you learned about knowing what
+[10:38.96]  to follow? And one thing I heard there
+[10:40.32]  that was really interesting is just once
+[10:41.84]  your assumptions change about that you
+[10:43.68]  built your idea on, it's time to rethink
+[10:45.84]  this idea and maybe try something else.
+[10:47.60]  You know, I I think the way we sort of
+[10:49.52]  think about this is, you know, even when
+[10:52.16]  we're working right now, we just accept
+[10:54.08]  that we're going to get a lot of things
+[10:55.28]  wrong. We're just going to get a lot of
+[10:57.28]  things wrong. Um, obviously that's a
+[10:59.44]  very big moment because that was a bet
+[11:01.04]  the company moment in the sense that we
+[11:02.88]  basically said told our investors, hey,
+[11:04.80]  you know, we're making money on this. We
+[11:06.08]  had already raised $28 million of
+[11:07.52]  capital and we were just like, "Hey,
+[11:08.72]  we're just going to pivot entirely from
+[11:10.32]  this." And we did that overnight, right?
+[11:12.08]  This wasn't this thing where we just
+[11:13.44]  said, "Hey, maybe a quarter, one or two
+[11:15.52]  quarters." Because one of the things we
+[11:16.80]  knew that's very important for startups
+[11:18.24]  is focus. And if you're if you're trying
+[11:20.72]  to do another thing that you think is
+[11:22.08]  big and you're focused on something that
+[11:23.44]  you don't believe is valuable, you're
+[11:24.80]  guaranteed going to fail at the thing
+[11:26.08]  you think is going to be big, right? So
+[11:27.68]  that's like a that's a very obvious
+[11:29.12]  thing uh there. But I think once you go
+[11:31.28]  in with the assumption that a lot of
+[11:32.48]  your hypotheses are going to be wrong,
+[11:34.40]  but you will do the most concentrated
+[11:37.04]  work possible to go out and validate
+[11:38.88]  these hypothesis and you won't be in
+[11:40.64]  love with your ideas. Like I think
+[11:42.08]  ideas, it's awesome when you have a
+[11:43.60]  great idea, but you should never be too
+[11:45.44]  in love with your ideas and you have an
+[11:47.60]  organization that is very truth
+[11:49.12]  seeeking. I think a lot of people at the
+[11:50.88]  company have had their ideas tested over
+[11:52.48]  and over again. Even just building
+[11:54.16]  Windsor, that is not a complete company
+[11:55.76]  pivot, but that's a big decision that we
+[11:57.68]  made at the company. you kind of need to
+[11:59.84]  make some bets and sometimes you're
+[12:02.48]  wrong and sometimes you're right. But if
+[12:03.84]  you have an organization that comes out
+[12:05.60]  and you feel like morale is not going to
+[12:07.36]  be low if you made the wrong decision um
+[12:09.92]  that that's the best right that means
+[12:11.60]  you have optionality for the rest of
+[12:13.52]  time and and Lenny one thing that I try
+[12:15.68]  to tell the company about this is this
+[12:19.28]  year the total amount of engineering
+[12:20.96]  output we will have is much larger than
+[12:23.12]  the engineering output we've we've had
+[12:25.28]  since the beginning of the company's
+[12:26.64]  creation till now. So that almost means
+[12:29.12]  every year is a new lease on life for
+[12:31.20]  us, right? It's almost a new way for us
+[12:33.52]  to test out an entirely new set of
+[12:35.60]  hypothesis. And maybe we were wrong
+[12:37.52]  about our original hypothesis like in
+[12:39.52]  the in the first place. What what makes
+[12:41.60]  us more smart than everyone else to be
+[12:43.84]  right, you know, more times than them.
+[12:46.24]  That's so empowering. Makes me think
+[12:48.00]  about Ori Lavine was on the podcast,
+[12:49.76]  Co-founder Ways, and he has this phrase
+[12:51.60]  that he he wears on his shirt. His book
+[12:53.20]  is called this. Fall in love with the
+[12:55.04]  problem, not the solution. And that
+[12:56.80]  feels like that's exactly what you're
+[12:58.04]  describing. Okay. So let's talk about
+[13:00.04]  windsurf. Uh what's the simplest way for
+[13:02.24]  people to understand what is windsurf?
+[13:04.48]  Yeah. So windsurf is an IDE, right? It's
+[13:07.68]  an application to go out and and build
+[13:10.08]  software and build applications. Um the
+[13:13.04]  the you know the crazy thing is a lot of
+[13:14.88]  people who use the product don't even
+[13:16.80]  probably know what an IDE is. Uh which
+[13:19.52]  is which is crazy and we'll get in we'll
+[13:21.12]  get into that in a second. But why did
+[13:23.76]  we go out and build windsurf and what is
+[13:25.60]  windsurf? Maybe why couldn't we have
+[13:27.20]  just done this on top of conventional
+[13:28.72]  ids like visual studio code. So maybe
+[13:31.84]  just to get into this a little bit as we
+[13:33.92]  saw that AI was getting more and more
+[13:35.52]  powerful the way people go out and build
+[13:37.36]  technology we thought the interface for
+[13:38.96]  that was going to change remarkably. It
+[13:40.88]  was not going to be a conventional pure
+[13:42.56]  text editor where you the user is
+[13:44.80]  writing a handful of lines of code or
+[13:46.40]  most of the code and the IDE provides uh
+[13:49.60]  like maybe some basic feedback on what
+[13:53.12]  the user is doing right or wrong and the
+[13:54.64]  basic feedback could be hey there's a
+[13:56.24]  bug in your software or compiler error
+[13:57.92]  in your software. it could do much more,
+[13:59.76]  right? It could actually go out and and
+[14:02.48]  modify large chunks of code. And one of
+[14:04.80]  the key pieces that we recognized was
+[14:07.12]  with this new paradigm with with AI, AI
+[14:09.84]  was probably going to write well over
+[14:10.96]  90% of the software. In which case, the
+[14:12.72]  role of a developer and what they're
+[14:14.08]  doing in the ID is maybe reviewing code.
+[14:16.48]  Maybe it's actually like a little bit
+[14:17.92]  different than what it is in the past.
+[14:19.12]  And we'll see this very soon with with
+[14:21.20]  Windsor. um maybe you know when we were
+[14:23.60]  using the product actually a good chunk
+[14:25.52]  of the user's time is actually reviewing
+[14:26.96]  what the AI is outputting so we needed
+[14:28.88]  to build custom review flows into the
+[14:30.96]  IDE to actually make it so that it it
+[14:33.60]  was easier to actually go ahead and do
+[14:34.88]  that right because the developer is not
+[14:36.40]  spending all their time writing code and
+[14:38.24]  this is the fundamental premise on why
+[14:40.00]  we built the product we thought we were
+[14:41.36]  going to get limited a ton if we had
+[14:43.20]  very very basic UI out there and I'll
+[14:45.60]  give you even a simple example here we
+[14:48.08]  have this autocomplete product right
+[14:49.52]  that completes a handful of lines of
+[14:50.96]  code Now we've actually launched this
+[14:52.80]  offering called windsurf tab that
+[14:54.56]  basically shows you refactors as well
+[14:57.04]  and these refactors are almost inline
+[14:59.44]  refactors and we were able to build a
+[15:01.12]  custom UI for that in windsurf but in VS
+[15:04.00]  code we needed to because of the access
+[15:05.68]  to the APIs we needed to dynamically
+[15:08.00]  generate images right alongside the
+[15:10.40]  user's cursor uh because we just didn't
+[15:12.48]  have access to the capabilities to
+[15:14.48]  showcase and edit properly and what we
+[15:16.48]  realized is immediately by porting over
+[15:18.08]  to Windsorf our acceptance rate tripled
+[15:21.20]  same ML models it just tripled. So what
+[15:23.92]  that I guess gave us confidence in is
+[15:26.08]  yeah like you could argue technology is
+[15:27.76]  very important and I think techn is very
+[15:29.36]  important but if our users are getting
+[15:31.12]  very little value from the technology
+[15:32.96]  we're sort of building you need to
+[15:34.72]  really clarify maybe we do need to build
+[15:36.56]  a new surface and interface and that's
+[15:38.40]  what winds surface. So the big bet you
+[15:40.40]  took there just to make this super clear
+[15:41.76]  is you were initially working within
+[15:44.16]  existing IDs that everyone was familiar
+[15:46.56]  with and then it was like this isn't
+[15:48.16]  going to get us where we need to go.
+[15:49.76]  We're going to try to convince people to
+[15:51.20]  switch to something completely new
+[15:52.64]  because it's going to be so much better.
+[15:54.24]  It's our own IDE. I think I think maybe
+[15:57.36]  people may not recognize just how risky
+[15:59.20]  that is. Convincing engineers to use
+[16:00.72]  something completely new. That's a huge
+[16:02.16]  deal. Yeah. No, of course. And one of
+[16:04.72]  the key pieces that I just maybe Lenny
+[16:07.28]  that would be important to share is we a
+[16:10.48]  lot of our developers do use Visual
+[16:12.16]  Studio Code. Uh but there are lots of
+[16:13.92]  people that write in languages like Java
+[16:16.08]  uh sort of uh C++ and so on and so forth
+[16:18.48]  and they might use the Jetrains family
+[16:20.00]  of ids that like Intelligj and for us we
+[16:22.88]  actually still committed to building on
+[16:24.48]  those platforms right we just felt
+[16:26.24]  though that one of the dominant IDs
+[16:28.16]  which was visual studio code was
+[16:30.00]  limiting the the sort of user interface
+[16:33.28]  that we could give to our actual
+[16:34.80]  customers. What is the current state of
+[16:37.20]  traction for Windsor? You hear all these
+[16:39.04]  crazy numbers about all the competitors
+[16:40.56]  in your space. So what can you share
+[16:41.60]  there for folks just to know? Yeah, so
+[16:43.60]  maybe a handful. We launched the product
+[16:45.84]  like a bit over four months ago and in
+[16:47.52]  that period of time over a million
+[16:48.72]  developers have tried the product and
+[16:50.56]  obviously we have many hundreds of
+[16:51.84]  thousands of monthly active users right
+[16:53.92]  now. I love how like these days like oh
+[16:56.40]  million no big deal like it's just the
+[16:58.40]  numbers are absurd these days like we're
+[17:00.40]  just getting used to just 100 million AR
+[17:02.88]  here million users in four months there.
+[17:05.28]  It's just like oh of course how could
+[17:07.60]  you not have that? Uh but that's absurd.
+[17:09.92]  It's just like an insane time right now.
+[17:12.56]  You touched on something that I wanted
+[17:13.76]  to get to later, but I may as well bring
+[17:15.12]  it up now. The question of just how
+[17:17.76]  engineering will change in the future.
+[17:19.44]  You throw out the stat that like 90% of
+[17:21.36]  code is going to be written by AI in the
+[17:24.16]  future. Daario from Thropic recently
+[17:25.84]  said the same thing. Uh you guys have a
+[17:27.92]  really interesting glimpse into just how
+[17:30.00]  things will look in the future. So I
+[17:31.84]  guess the question just how do you think
+[17:33.88]  coding specifically will look in the
+[17:36.16]  next few years? How different will it be
+[17:38.08]  from today? I think when when we think
+[17:40.24]  about what is an engineer actually doing
+[17:42.00]  it probably falls into three buckets
+[17:43.76]  right um what should I solve for how
+[17:46.56]  should I solve it and then solving it
+[17:48.64]  and I guess like everyone who's working
+[17:50.72]  in the space is probably increasingly
+[17:52.40]  convinced that solving it which is just
+[17:54.40]  the pure I know how I'm going to do it
+[17:56.56]  and just going and doing it AI is going
+[17:58.40]  to handle vast majority if not all of it
+[18:00.96]  right um in fact it probably actually
+[18:03.04]  with some of the work that we've done in
+[18:04.80]  terms of deeply understanding code bases
+[18:06.80]  how should I solve it is also going get
+[18:08.64]  closer and closer to getting done,
+[18:10.48]  right? If you deeply understand the
+[18:12.00]  environment inside an organization, if
+[18:13.84]  you deeply understand the codebase, how
+[18:15.60]  you should solve it given best practices
+[18:17.44]  when the company also gets solved. So I
+[18:19.28]  think what engineering kind of goes to
+[18:21.44]  is actually what you wanted engineers to
+[18:23.36]  do in the first place, which is what are
+[18:25.04]  the most important business problems
+[18:26.32]  that we do need to solve. what are the
+[18:28.16]  most important capabilities that we need
+[18:30.00]  our application our product to have and
+[18:32.40]  actually going and prioritizing those
+[18:33.76]  and actually going and making the right
+[18:35.20]  technical decision to go out and doing
+[18:36.56]  it right and I think that's where
+[18:38.80]  engineering is probably heading towards
+[18:40.72]  now does that mean that no one needs a
+[18:42.56]  CS degree I think I think that's maybe a
+[18:44.88]  little bit overplayed uh a little bit
+[18:47.04]  just because you know maybe maybe here's
+[18:49.12]  here's maybe my argument for that a lot
+[18:51.36]  of developers nowadays that build full
+[18:53.44]  stack applications at least until like a
+[18:55.20]  handful of years ago they probably went
+[18:56.40]  to college and took an operating system
+[18:57.76]  of course, right? And in theory, they're
+[18:59.68]  not really like playing around with the
+[19:01.12]  operating system like the kernel like
+[19:03.12]  very frequently. But do those principles
+[19:05.04]  help them in understanding why their
+[19:06.80]  applications are slow? Do they help them
+[19:08.80]  in understanding why why some design
+[19:11.28]  decisions are better than the other?
+[19:12.56]  Yeah, that makes them a much better
+[19:13.92]  engineer than than another engineer. And
+[19:16.00]  I think that idea and the understanding
+[19:18.24]  of what's going on at the bottom will
+[19:20.16]  make a good engineer even better, right?
+[19:23.04]  Um, but also at the same time, it
+[19:24.64]  empowers a bunch of people that never
+[19:26.08]  understood all of those things, how to
+[19:27.84]  actually build as well, which is another
+[19:29.36]  remarkable sort of thing that fell out
+[19:31.92]  through this whole process. I don't know
+[19:33.52]  if you have kids, but just like say you
+[19:34.88]  had kids or you had a niece or nephew
+[19:36.80]  going into college, let's say, would you
+[19:39.84]  suggest they do soft, they do computer
+[19:42.00]  science, or would you suggest like
+[19:44.16]  you're not going to have a good time if
+[19:45.92]  that's the career you choose right now?
+[19:47.60]  Yeah, I think you know, maybe I think
+[19:49.36]  back a little bit. So I I went to MIT, a
+[19:51.28]  lot of us at the at the company went to
+[19:52.80]  MIT together uh on the engineering team
+[19:54.96]  and uh I I think like when I think about
+[19:56.80]  what we learned the most at at on for
+[19:59.28]  engineering or computer science, it was
+[20:01.36]  not exactly like how do you write code,
+[20:03.60]  right? That's maybe that is like almost
+[20:05.68]  a given that you can you can kind of
+[20:07.20]  write code after after going to college.
+[20:09.04]  It's more like the principles of how you
+[20:10.88]  think about a problem and how you break
+[20:12.80]  it down, right? And how you solve it in
+[20:14.48]  an interesting way, right? So an example
+[20:16.00]  that of a class that I really enjoyed
+[20:17.44]  was our distributed systems class. And
+[20:19.36]  there you're kind of reading through
+[20:20.56]  literature and understanding how how
+[20:23.28]  some design decisions were kind of made.
+[20:25.28]  And I think it's more like a problem
+[20:26.80]  solving kind of course, right? And a a
+[20:29.68]  major. It's a major of how you solve
+[20:31.44]  problems given some constraints of how,
+[20:33.52]  you know, how computers today function,
+[20:35.04]  right? Like here's the speed at which
+[20:36.72]  memory sort of operates. Here's the
+[20:38.32]  speed at which you know, here's how much
+[20:39.76]  computation you can do in one one cycle
+[20:41.84]  or one second. And and based on that,
+[20:43.60]  you can make some trade-offs and solve a
+[20:44.96]  solve a problem. So I I don't know if if
+[20:47.52]  I would say that you shouldn't go get a
+[20:49.20]  computer science degree. I think
+[20:50.16]  computer science is almost synonymous
+[20:51.36]  with problem solving. In that case, I
+[20:53.20]  think it's pretty valuable. Is
+[20:54.88]  everything you learn in your computer
+[20:56.24]  science degree useful? I'd say a lot of
+[20:58.00]  things that I learned in my computer
+[20:59.12]  science degree are not useful. I'll give
+[21:00.56]  you an example. I took a parallel
+[21:01.92]  computing class in Julia and I don't
+[21:04.00]  think Julia is a very popular
+[21:05.28]  programming language anymore. Am I very
+[21:07.04]  sad that I took the class? No. The
+[21:08.32]  principles of parallel computing are
+[21:09.60]  still very useful, I would say, today.
+[21:11.84]  So what I'm hearing is skills that you
+[21:13.60]  still want to build whether it's
+[21:15.12]  computer science or maybe some version
+[21:16.64]  of computer science is uh kind of like
+[21:19.12]  building the mental model of how
+[21:21.36]  computers and systems work parallel
+[21:23.52]  processing memory hard drives internet
+[21:26.48]  things like that. Okay. And then there's
+[21:27.76]  just like problem solving skills being
+[21:29.60]  able to solve interesting problems. Is
+[21:31.60]  there any other skills you think people
+[21:33.20]  should be investing more in with the
+[21:34.80]  rise of AI building more and more of our
+[21:36.40]  products? I think one of the things
+[21:38.16]  that's maybe a little bit undervalued is
+[21:40.64]  this kind of agency piece and I think
+[21:42.72]  about this a lot which is you know you
+[21:45.68]  have a lot of people they could go
+[21:46.72]  through college and go through school
+[21:47.84]  and they're basically told exactly what
+[21:49.44]  to do on a pet and you know they're
+[21:51.12]  given these very very I would say uh
+[21:53.84]  well-defined paths that they need to
+[21:55.44]  take and I think I think maybe in
+[21:59.44]  society and just school we we don't
+[22:01.40]  prioritize how do you how do you make
+[22:03.44]  sure you get people with real agency
+[22:05.60]  that want to build something, right? Uh
+[22:07.76]  like their goal is not just to maybe
+[22:09.36]  graduate from college and then get a job
+[22:10.80]  at a big tech company where they're told
+[22:12.80]  exactly what to do or where to put the
+[22:14.48]  pixel on, you know, for for this one
+[22:16.72]  website. Um and I think that's maybe a
+[22:18.72]  skill set that is undervalued just right
+[22:21.44]  now probably in the last, you know,
+[22:23.20]  maybe 10 10 years or so. And I think
+[22:25.20]  that's going to be really really
+[22:26.32]  important. You know, a skill for us for
+[22:28.48]  a startup obviously these are skills
+[22:29.92]  that we just look for. We look for
+[22:32.16]  people that are really high agency
+[22:33.60]  because we just recognize that by
+[22:36.08]  default if we don't innovate and do
+[22:37.68]  crazy things, we're going to die. The
+[22:39.28]  company's just going to die. So, we just
+[22:40.96]  look for this, right? But I would say
+[22:42.56]  like for most software engineering jobs,
+[22:44.48]  that's probably not the case, right?
+[22:46.08]  Just think about, you know, big company
+[22:47.84]  X and what they're hiring for on the
+[22:49.68]  average software engineering interview.
+[22:51.12]  It probably doesn't look like that. I
+[22:52.96]  love how you phrase that. If we don't uh
+[22:54.80]  do crazy things and innovate, we're
+[22:56.32]  going to die. Yeah, that that would be a
+[22:57.92]  great title for this podcast episode.
+[22:59.44]  And I think I's 100% true. There's just
+[23:02.00]  a lot of crazy things happening and a
+[23:03.68]  lot of innovation happening. And if you
+[23:05.44]  can't keep up, uh, you'll die. So, let's
+[23:08.32]  talk about hiring. You have a really
+[23:09.84]  interesting approach to hiring. There's
+[23:11.28]  a few questions I have here. One is just
+[23:13.36]  how do you I know you try to stay really
+[23:15.84]  lean. That's a common theme across all
+[23:18.08]  the AI startups these days. How do you
+[23:20.48]  know when it's time to hire someone? I
+[23:22.80]  love the idea of being a lean company,
+[23:24.32]  but I don't idolize it in the way that
+[23:26.64]  hey, like it is a dream to be a 10% or
+[23:29.68]  20% company that's making, you know, 50,
+[23:32.08]  100, 200 million in revenue. That's like
+[23:34.16]  not I think what we idolize inside the
+[23:36.56]  company. I think what we idolize is be
+[23:38.72]  the smallest company we can be to
+[23:41.76]  satisfy our ambitions, right? That's
+[23:44.40]  what the goal is. And maybe Lenny, the
+[23:46.08]  way I would sort of put that out there
+[23:47.28]  is if I told you, hey, I'm going to
+[23:49.28]  build an autonomous vehicle and I said,
+[23:51.04]  "Our team is 10 people." You should
+[23:53.04]  rightfully say, "Hey, Verun, you're not
+[23:54.80]  serious." And you'd be right. I'm not
+[23:57.12]  serious at that point. So, I think the
+[23:59.52]  answer is what is the minimum number of
+[24:01.76]  people to go out and build the crazy
+[24:04.00]  ambition project that you have? And I
+[24:05.76]  think the project we are trying to go
+[24:07.36]  out and do, which is completely
+[24:08.72]  transform the way software gets built. I
+[24:10.40]  we've mentioned this inside the company.
+[24:11.68]  Our goal is to reduce the time it takes
+[24:13.20]  to build apps and technology by 99%.
+[24:15.92]  Right? It is a it is a tremendously sort
+[24:17.92]  of ambitious goal and it is it's not
+[24:20.00]  possible for us to be a 10 20 30 40
+[24:22.40]  person engineering team in the long term
+[24:23.84]  and actually satisfy that goal. We think
+[24:25.44]  it's there's a very very high ceiling.
+[24:27.92]  So that's maybe the first key piece
+[24:29.84]  there. It's like actually you know if we
+[24:31.68]  can crack actually being a fairly
+[24:33.60]  sizable company but still operate as if
+[24:36.08]  we're a startup that's the dream right
+[24:38.08]  that's that's the that's the dream. Um,
+[24:39.92]  in terms of hiring philosophy, the way
+[24:41.44]  we sort of think about things is we only
+[24:43.84]  hire for a role if we're actually
+[24:45.28]  underwater for that function. So let's
+[24:48.64]  say we're going out and building
+[24:49.68]  inference technology. Unless we're
+[24:51.76]  underwater there, we will not go out and
+[24:53.44]  hire hire someone to go out and work
+[24:55.60]  work for that, right? And the reason for
+[24:57.36]  that is I actually think this is like
+[24:59.44]  this is a this is a future, right? when
+[25:01.68]  when you hire for a role and you already
+[25:03.52]  have enough people there. What you you
+[25:05.60]  know you get a lot of weird politics
+[25:07.12]  that ultimately ends up happening and
+[25:08.64]  it's not because people are bad people.
+[25:10.48]  I don't I think most people are really
+[25:12.48]  well-intentioned but what happens when
+[25:14.16]  you have people that join a company and
+[25:15.76]  in reality you didn't really need them.
+[25:17.92]  they will go out and manufacture some
+[25:19.60]  other thing that they should go work on,
+[25:21.28]  right? right? They should they will go
+[25:22.16]  out and figure out something else to
+[25:23.36]  work on and realistically it's not that
+[25:25.84]  important but they will go out and try
+[25:27.20]  to convince the rest of the organization
+[25:28.48]  that it is important right and I just
+[25:30.72]  think as a startup we don't have the
+[25:32.08]  bandwidth to go out and deal with that
+[25:33.84]  right uh for me I would like to see
+[25:35.60]  everyone just almost like be be like
+[25:38.00]  raising their hands up being like I'm
+[25:39.44]  dying like we need we need one more
+[25:41.04]  person and that's when we go out and and
+[25:42.64]  hire someone and one of the analogies I
+[25:44.24]  like to give is we I wanted the company
+[25:46.16]  to almost be like this dehydrated entity
+[25:48.64]  right and every hire is is like a little
+[25:50.96]  bit of water, right? And and we only go
+[25:53.60]  back and hire someone when we're when
+[25:55.04]  we're back to being dehydrated.
+[25:57.28]  I love this metaphor so much. Uh and it
+[26:00.24]  sounds uh it sounds painful. It sounds
+[26:02.48]  painful that you need to be underwater
+[26:04.16]  and raising your hand. I'm about to die
+[26:06.16]  and dehydrated, but I also know that
+[26:08.08]  it's a really exciting way to work. Like
+[26:10.32]  it sounds hard, but if you're in it,
+[26:12.80]  it's just like I guess talk about just
+[26:15.52]  that side of it because I think it could
+[26:17.28]  sound like this is terrible. I don't
+[26:18.80]  want to work this way. You know what I
+[26:20.32]  actually think, Lenny? It's it's it's
+[26:22.32]  really good for a handful of reasons,
+[26:23.76]  which is that a lot of the PE we respect
+[26:25.44]  and trust the people that work at the
+[26:27.44]  company. So, this forces ruthless
+[26:29.80]  prioritization. You know, you have a
+[26:31.60]  team that's going out and doing
+[26:32.64]  something, they will never ask to work
+[26:34.16]  on something that's not important. In
+[26:35.52]  fact, if there are two things that
+[26:36.72]  they're working on, they're just going
+[26:38.00]  to just tell me, "Hey, there are two
+[26:40.00]  things on my plate. I just don't have
+[26:41.44]  the ability to do two. I can only do
+[26:43.12]  one." And they will pick the one that's
+[26:44.48]  most important. And this actually goes
+[26:46.08]  back to one thing that I think is true
+[26:47.44]  about startups and just companies in
+[26:48.88]  general. You don't win by doing, you
+[26:51.28]  know, 10 things kind of well. You win by
+[26:53.68]  doing like one thing really well and
+[26:55.52]  maybe you fail nine things. This is the
+[26:57.44]  thing that I've told the company. This
+[26:58.88]  is very different than school, right? In
+[27:00.96]  school, you optimize for your total GPA,
+[27:03.28]  but for companies, I just need to get an
+[27:04.96]  A+ on the one class that matters and
+[27:07.12]  then I can get an F in all the other
+[27:08.56]  classes. Uh, and an F in all the other
+[27:10.72]  classes doesn't mean, you know, being,
+[27:12.48]  you know, just doing illegal things.
+[27:13.92]  that that basically means you just depp
+[27:15.76]  prioritize things that don't matter. you
+[27:17.92]  know that actually forces this
+[27:19.36]  organizational prioritization that is
+[27:20.96]  just really really good right and you
+[27:23.52]  know Douglas and I Douglas being my
+[27:25.20]  co-founder we can tell the company these
+[27:26.80]  are the two things that are the most
+[27:28.08]  important but if we go out and tell
+[27:29.44]  these are the two things that are the
+[27:30.56]  most important to the company and then
+[27:32.24]  we put the company has 20% more people
+[27:34.80]  than necessary what do those what's
+[27:36.96]  going to ultimately happen right it's
+[27:38.72]  almost a forcing function for ruthless
+[27:40.56]  prioritization to have fewer people or
+[27:43.20]  people that just that are just
+[27:44.72]  underwater internally at the company
+[27:46.72]  everyone listening that works at a big
+[27:48.56]  company uh knows exactly what you mean
+[27:50.48]  when you describe when there's just too
+[27:52.48]  many people. They will all find work to
+[27:53.84]  do and they will all be pitching ideas.
+[27:55.76]  You know, they all want to show impact.
+[27:56.88]  They want to do well in their
+[27:58.00]  performance reviews. That's just the
+[27:59.60]  nature of of too many people at a
+[28:01.68]  company. And so, I think this all really
+[28:03.64]  resonates to even get even deeper on
+[28:06.24]  just what it looks like when someone's
+[28:07.44]  underwater to tell you it's time to
+[28:08.96]  hire. Is it just someone coming to you,
+[28:10.88]  Verun? We need I need someone on this
+[28:13.12]  team. This is just not possible. Like,
+[28:14.56]  what does that look like even more
+[28:16.00]  practically? Yeah, I think it's
+[28:17.52]  basically along those lines. It's that
+[28:19.44]  hey, there's some pressure to get
+[28:21.12]  something done in a in a short period of
+[28:23.12]  time. By the way, one of the things that
+[28:24.64]  we do believe though for software, if
+[28:26.08]  you want to do great things, um it's not
+[28:28.08]  possible to just say, hey, I want to get
+[28:29.36]  it done in one month. If it is like
+[28:31.12]  because you have to think about it from
+[28:32.64]  this perspective, if a software project
+[28:34.08]  could get built in two to three weeks,
+[28:35.92]  what does that really mean about like
+[28:37.44]  the true complexity and differentiation
+[28:38.96]  of what you built? Like it's probably
+[28:40.56]  not very high unless you believe you are
+[28:42.40]  way smarter than everyone else. But I
+[28:43.92]  think that's hubris, right? I think we
+[28:46.08]  actually have a very exceptional
+[28:47.60]  engineering team but also at the same
+[28:49.12]  time I don't think our engineering team
+[28:50.56]  is so exceptional that we can do things
+[28:52.32]  in three weeks that the rest of the
+[28:53.76]  world can't do in like six to nine
+[28:55.12]  months. That's kind of stupid to believe
+[28:56.80]  that. So I think basically it comes down
+[28:59.44]  to that person coming out and being like
+[29:01.52]  hey look like I don't have enough time
+[29:03.36]  to do X. Us having a conversation to be
+[29:05.76]  like okay uh what can you do then? And
+[29:08.32]  if the answer is I I can only do less
+[29:10.40]  than that then maybe we make a decision
+[29:12.24]  actually oh wow that's great. Maybe we
+[29:14.16]  actually should depp prioritize. Why?
+[29:15.84]  Because this is actually also another
+[29:17.28]  thing that's very hard even for people
+[29:19.12]  like me and my co-founder. It's that we
+[29:21.20]  also want to do a lot of things, right?
+[29:22.80]  There's an urge to do a lot of things.
+[29:24.64]  But if you if we are forced to make a
+[29:26.64]  decision constantly on like we cannot do
+[29:28.88]  X, it's very clarifying. It's very
+[29:31.68]  clarifying uh because our engineering
+[29:33.60]  interview process is also like extremely
+[29:35.60]  low acceptance rate. So it's not very
+[29:37.44]  easy for us to very quickly spin up
+[29:38.96]  people and have them join the company uh
+[29:41.20]  really really quickly either. Um, so I
+[29:43.84]  think um I think it's clarifying for
+[29:45.52]  everyone. It's clarifying for the person
+[29:46.80]  that wants more people. We can just tell
+[29:48.56]  them, hey, like look, we don't we don't
+[29:50.88]  believe you should be doing this other
+[29:52.56]  thing. Um, and it's also clarifying for
+[29:54.32]  us because we can also get on the same
+[29:56.08]  page with them, right? And sometimes we
+[29:57.84]  just kind of agree, hey, like our teams
+[29:59.76]  are very flexible that hey, actually we
+[30:01.68]  do need to get something done. And one
+[30:03.28]  of the things that we've kind of tried
+[30:04.72]  to make sure is true on our engineering
+[30:06.32]  team is people's value to the company
+[30:08.64]  does not have anything to do with the
+[30:10.16]  size of their team. There are projects
+[30:12.40]  inside the company. There are directly
+[30:13.92]  responsible individuals for these
+[30:15.20]  projects um inside the company. And if
+[30:17.28]  we feel like one project is very
+[30:18.64]  important, then people can move from one
+[30:19.92]  project to the next. Right? There's no
+[30:21.60]  notion of someone owning people at the
+[30:23.44]  company. That is a very bad and gnarly
+[30:25.92]  idea. Right? In fact, the person that is
+[30:27.92]  the most valuable at the company is the
+[30:29.36]  person that can do the most crazy sort
+[30:31.36]  of project out there with as few people
+[30:33.04]  as possible. And that's what you should
+[30:34.40]  be rewarding internally. How many people
+[30:36.40]  do you have at Kodium at this point? So
+[30:38.24]  we have we have close to 160 people and
+[30:40.56]  the engineering team is over 50 people
+[30:42.16]  right now. Awesome. Oh what what what's
+[30:44.24]  the other bigger functions? So so we
+[30:46.00]  have go to market we have a yeah oh
+[30:48.32]  right okay I want to talk about that the
+[30:49.92]  sales learning that you guys had. Okay.
+[30:51.92]  Uh well let's close out this hiring
+[30:53.44]  conversation. So we talked about what
+[30:54.96]  you look for to tell you it's time to
+[30:57.28]  hire. What do you look for in the people
+[30:59.60]  that you interview and hire? One of the
+[31:01.76]  key pieces that we look for we have a
+[31:03.36]  very high technical bar. So assuming
+[31:04.96]  that they actually meet the technical
+[31:06.24]  bar, I think we sort of look for people
+[31:08.56]  that are really really passionate about
+[31:10.08]  the mission of what we're actually
+[31:11.36]  trying to solve and people that are
+[31:12.96]  willing to work very hard. Um I think
+[31:15.12]  one of the things that we don't try to
+[31:16.48]  do is convince people, hey look, we are,
+[31:19.20]  you know, we're a very chill company and
+[31:20.88]  it's great to work here. I think no,
+[31:22.56]  this is a very exciting space. It's very
+[31:24.56]  competitive. You should expect us to
+[31:26.24]  lose if the people at the company are
+[31:28.00]  not, you know, kind of uh they're not
+[31:30.32]  working very hard. And I think one of
+[31:31.84]  the biggest dog whistles I sort of hear
+[31:33.44]  is when I ask people like how hard are
+[31:34.96]  you willing to work? Some people
+[31:36.48]  actually ultimately say, "Hey, I work
+[31:38.24]  very smart and I basically ask them a
+[31:40.48]  question, if we have many smart people
+[31:42.96]  at our company that also work hard, uh
+[31:45.20]  what's the differentiator going to be?
+[31:47.04]  Are you just going to pull them down?"
+[31:48.48]  Right? Because I think one of the things
+[31:49.76]  that's true about companies is it's like
+[31:51.28]  this massive group project. And uh and I
+[31:54.16]  think the the thing about a person that
+[31:55.92]  is is not pulling their weight that's
+[31:58.00]  bad is not it's not the productivity,
+[31:59.60]  right? At some point when the company
+[32:00.72]  becomes many hundreds of engineers, I'm
+[32:02.56]  not going to be thinking about the one
+[32:03.60]  engineer that's not pulling their
+[32:04.80]  weight. It's the team of people they
+[32:06.48]  work with that are almost basically
+[32:08.40]  saying, is this the bar internally at
+[32:10.24]  the company? Is this the expectation?
+[32:12.48]  And I guess Lenny, if I told you you
+[32:14.32]  have a team of five people and you know
+[32:16.32]  the four other people you're working
+[32:17.68]  with just don't care. How much are you
+[32:19.92]  going to feel like you should care? Not
+[32:21.68]  too much. Exactly. So for us, for us, I
+[32:24.64]  think that's what we more care about,
+[32:26.16]  right? We have a culture where where
+[32:27.92]  it's like it's very collaborative. It's
+[32:29.92]  it's not an individual sport, but people
+[32:31.92]  feel like they can rely on other people
+[32:33.68]  to get complex sort of tasks done. So
+[32:36.00]  the question you asked there just
+[32:37.28]  basically is how hard are you willing to
+[32:39.04]  work? How hard do you want to work? And
+[32:41.92]  I I know some people there there's, you
+[32:43.60]  know, this whole group of folks that are
+[32:44.96]  just like work life balance. I don't
+[32:46.72]  want to how dare you ask me to work
+[32:48.32]  crazy hours. And I I I'd love just the
+[32:51.60]  filter up front of if you work here, you
+[32:54.00]  will work really hard. work work a lot
+[32:55.84]  of hours. It's a crazy it's a crazy
+[32:57.84]  space to be in and we will win by
+[33:00.00]  working smart and also really hard.
+[33:02.16]  Yeah. Uh you said at some point earlier
+[33:04.64]  that your uh engineering pass rate is
+[33:07.52]  you said it was like 6% of candidates
+[33:09.52]  something like that. Yeah, it's probably
+[33:11.28]  post a take-home it's probably that
+[33:13.04]  actually. So the takehome itself filters
+[33:15.28]  uh probably another you know 10 15x on
+[33:18.48]  top of that. Here's a question that I've
+[33:20.16]  been hearing more and more is just how
+[33:21.36]  do you do interviews these days with
+[33:23.20]  tools like Windsurf out there that solve
+[33:24.72]  all your problems? We're okay with
+[33:26.40]  people using the tools because I think
+[33:27.92]  one of the worst things is like if
+[33:30.32]  someone comes here and doesn't like
+[33:31.60]  using these tools like we believe
+[33:32.88]  they're massive productivity
+[33:33.92]  improvements. We do bring people like
+[33:35.92]  into the company like on site so we can
+[33:38.08]  actually like see how they think through
+[33:39.76]  problems on a on a whiteboard and all
+[33:42.00]  these other pieces. So, so we do want to
+[33:44.08]  see how they think on their feet and
+[33:45.52]  hopefully they're not just like taking
+[33:46.96]  what we're saying, putting it in a voice
+[33:48.80]  translator and sticking it into
+[33:49.92]  Tatsubishi and getting the answer out.
+[33:51.52]  So, there is a way to do this. My
+[33:53.52]  viewpoint on this is is uh the tools are
+[33:56.32]  really really important, but I do think
+[33:58.08]  we still look for some problems solving
+[33:59.60]  ability, right? Like if the only way you
+[34:01.52]  can solve a hard problem is like put it
+[34:02.96]  into chat GBT, I think I think that's
+[34:04.96]  like a concern to us. Today's episode is
+[34:08.00]  brought to you by KOD. I personally use
+[34:10.32]  KOD every single day to manage my
+[34:12.96]  podcast and also to manage my community.
+[34:14.96]  It's where I put the questions that I
+[34:16.40]  plan to ask every guest that's coming on
+[34:18.24]  the podcast. It's where I put my
+[34:19.76]  community resources. It's how I manage
+[34:21.68]  my workflows. Here's how KOD can help
+[34:23.84]  you. Imagine starting a project at work
+[34:26.24]  and your vision is clear. You know
+[34:28.08]  exactly who's doing what and where to
+[34:29.84]  find the data that you need to do your
+[34:31.44]  part. In fact, you don't have to waste
+[34:33.36]  time searching for anything because
+[34:35.04]  everything your team needs from project
+[34:36.64]  trackers and OKRs to documents and
+[34:38.88]  spreadsheets lives in one tab, all in
+[34:41.36]  KOD. With Kod's collaborative all-in-one
+[34:43.68]  workspace, you get the flexibility of
+[34:45.44]  docs, the structure of spreadsheets, the
+[34:48.24]  power of applications, and the
+[34:50.16]  intelligence of AI, all in one easy to
+[34:53.04]  organize tab. Like I mentioned earlier,
+[34:55.44]  I use Kota every single day. And more
+[34:57.52]  than 50,000 teams trust KOD to keep them
+[35:00.24]  more aligned and focused. If you're a
+[35:02.08]  startup team looking to increase
+[35:03.28]  alignment and agility, Kota can help you
+[35:05.28]  move from planning to execution in
+[35:07.44]  record time. To try it for yourself, go
+[35:09.60]  to
+[35:10.76]  kod.io/lenny today and get 6 months free
+[35:13.28]  of the team plan for startups. That's
+[35:16.84]  cooda.io/lenny to get started for free
+[35:18.88]  and get six months of the team plan. k
+[35:21.20]  cod.io/lenny / Lenny. Okay, let's talk
+[35:24.56]  about this go to market sales experience
+[35:26.56]  that you guys had. So, you started
+[35:27.68]  without obviously like most people start
+[35:30.08]  started building without sales team and
+[35:32.16]  then you realized from what I hear that
+[35:34.00]  that was a huge miss and a big
+[35:35.28]  opportunity to talk about there because
+[35:36.56]  that's that's really unique I think that
+[35:38.00]  you guys have a large sales team and go
+[35:39.52]  to market team. Yeah, we actually made
+[35:41.36]  this decision pretty early in the
+[35:42.96]  company's history. I would say like we
+[35:45.04]  hired our VP of sales uh over a year ago
+[35:47.92]  actually and the go to market team is
+[35:49.60]  now over 80 people inside the company.
+[35:52.00]  So it's a pretty sizable function inside
+[35:54.40]  the company. Yeah. Maybe a little bit of
+[35:56.56]  a backstory here. So when we started the
+[35:58.80]  company actually we had a handful of
+[36:00.08]  angels that actually were operators go
+[36:02.08]  to market operators. So an example of
+[36:03.68]  one was Carlos Delator who used to be
+[36:05.92]  the CRO of MongoDB and I think for us we
+[36:08.48]  never viewed enterprise sales and sales
+[36:10.24]  as like a very negative thing. I think
+[36:11.68]  this is like a interesting thing that
+[36:13.36]  technical founders sometimes don't
+[36:15.28]  really like. They think sales is like a
+[36:17.20]  very negative sort of part of the
+[36:18.72]  process. Everything should be productled
+[36:20.52]  growth and I think it's it's it's not
+[36:23.20]  that black and white. Like I think
+[36:24.72]  enterprise sales is really valuable. But
+[36:27.36]  maybe when we were a GPU virtualization
+[36:29.60]  company and we were an infrastructure
+[36:30.80]  company, the reason why we never hired a
+[36:32.24]  salesperson is I didn't know how to
+[36:33.76]  scale the function. I was the one who
+[36:36.32]  was selling the product. So ultimately
+[36:38.32]  speaking, if it was hard for me to sell
+[36:39.84]  the product incrementally, I didn't know
+[36:41.28]  how we could make that into a process
+[36:43.92]  that we could then go and scale, right?
+[36:46.16]  If I couldn't if I can do one like I
+[36:48.40]  didn't know how we could take the
+[36:49.28]  revenue of the business from a couple
+[36:50.56]  million to hundreds of millions and I
+[36:52.72]  let alone even tens. So if I didn't know
+[36:54.72]  how to do that, how could I go out and
+[36:56.00]  hire someone and make them scale it out?
+[36:57.84]  Um on the other hand for Kodium very
+[36:59.60]  quickly a lot of large enterprises sort
+[37:01.12]  of reached out to us and from that alone
+[37:03.60]  in in the middle of sort of 2023
+[37:06.72]  uh we started I guess me and a handful
+[37:08.96]  of other folks at the company started
+[37:10.64]  selling the product and we were doing
+[37:12.56]  tens of pilots concurrently with large
+[37:14.56]  enterprises and we were very quickly
+[37:16.96]  able to understand that there was a
+[37:18.48]  large enterprise motion that needed to
+[37:19.92]  be built in the space. So by the end of
+[37:22.56]  2023, we actually hired our our VP of
+[37:25.12]  sales and uh and very quickly after that
+[37:27.52]  scaled a sales team and uh yeah, I mean
+[37:30.48]  I mean look, if you want to sell to the
+[37:32.00]  Fortune 500, it is very hard to do that
+[37:33.84]  purely by swiping a credit card. Let's
+[37:36.32]  talk about cursor. I hate I don't want
+[37:38.08]  to spend too much time on competitors,
+[37:39.44]  but that's what everyone's always
+[37:40.56]  thinking about when they think of you
+[37:41.68]  guys. You guys are kind of the leading
+[37:43.28]  players, I think, in the space. Also,
+[37:45.04]  there's co-pilot, but that's different.
+[37:46.80]  So what's the simplest way to understand
+[37:48.80]  how you guys are different from cursor
+[37:50.64]  and also just how you think you win in
+[37:52.48]  the space long term? So I think maybe
+[37:54.48]  maybe a handful of things that I could I
+[37:56.32]  could share. So on the product side, I
+[37:58.08]  think we've invested a lot in making
+[37:59.44]  sure codebase understanding for very
+[38:01.04]  large code bases is is really high
+[38:02.80]  quality. And that's just because of
+[38:04.32]  where we started, right? We work with
+[38:05.76]  some of the world's largest companies
+[38:07.28]  like Dell, JP Market Jace, companies
+[38:09.20]  like Dell have singular code bases that
+[38:10.80]  are over 100 million lines of code,
+[38:12.32]  right? So being able to understand that
+[38:14.00]  really, really quickly to make large
+[38:15.60]  scale changes is something that we spent
+[38:17.36]  a lot of time doing. And that requires
+[38:18.96]  us like actually building our own models
+[38:20.96]  that can consume large chunks of their
+[38:23.28]  codebase in parallel across thousands of
+[38:25.04]  GPUs and almost rank them to be able to
+[38:27.36]  find out what the most important sort of
+[38:28.80]  snippets of code are for any question
+[38:30.64]  that are asked about the codebase.
+[38:32.24]  Right? So we've gone out and built large
+[38:33.84]  distributed systems based on our
+[38:35.04]  infrastructure background to go out and
+[38:36.64]  do that. That's maybe one. Let me
+[38:38.40]  actually follow that thread because I
+[38:39.76]  think people may misunder underestimate
+[38:42.24]  just how big of a deal that is. So when
+[38:44.96]  we talk about we had the founders of
+[38:46.40]  bolt and lovable on the podcast. So
+[38:48.48]  those products they build something from
+[38:50.00]  scratch. They build they write the code
+[38:51.60]  for you. So that versus just loading say
+[38:55.76]  windurf on your million code base say at
+[38:59.12]  Airbnb or Uber like it understanding
+[39:01.84]  what the hell you have and how it works
+[39:03.84]  and where to go change things without
+[39:05.60]  breaking it is insanely hard. And so
+[39:08.72]  what I'm hearing is that's kind of a big
+[39:10.32]  differentiator. You guys started there
+[39:11.84]  actually and then Windsorf is now
+[39:13.68]  building on that advantage. That's
+[39:15.36]  right. Yeah. So we that's like a big
+[39:17.12]  thing that we spent a lot of time on
+[39:19.20]  which is just understanding sort of what
+[39:21.04]  the what the codebase is doing and
+[39:22.80]  actually like one of the other things is
+[39:24.56]  what are all the user interactions with
+[39:26.48]  respect to the codebase and happy to
+[39:28.16]  show that also um you know in in a bit
+[39:30.72]  here. Um the second key piece probably
+[39:33.04]  is we're not only tied to the to
+[39:36.24]  windsurf actually this is probably like
+[39:37.76]  a weird statement given even we are
+[39:39.76]  talking about windsurf which is that
+[39:41.44]  actually we're pretty focused on
+[39:43.60]  supporting ids like jet brains right uh
+[39:46.40]  you know jet brains or intelligj has
+[39:48.56]  over 70 to 80% of all java developers
+[39:51.04]  code in in jet brains uh based ids right
+[39:54.24]  um the reason why we don't feel as big a
+[39:56.72]  need to almost build a competing product
+[39:58.48]  to jetrains is jetrains is actually a
+[40:00.00]  very sort extensible product in a way
+[40:02.08]  that VS code is not. VS code is not very
+[40:04.48]  extensible. So I think for us our goal
+[40:06.24]  here is not only just to satisfy a
+[40:07.76]  subset of users that can actually switch
+[40:09.20]  onto our ID, but we want to give this
+[40:11.04]  agentic sort of experience to every sort
+[40:12.80]  of developer out there. And if that's if
+[40:14.64]  that means they're Java developers that
+[40:15.92]  write in Jetrains, that's fine. We work
+[40:17.84]  with a large lot of large enterprises
+[40:19.44]  that have 10 plus thousand developers
+[40:21.12]  where over 50% of the developers are on
+[40:23.40]  Jetrains, right? It's a very large large
+[40:26.32]  product. And by the way, that company
+[40:27.84]  itself, it's a privately held company
+[40:29.20]  that makes many hundreds of millions of
+[40:30.72]  dollars a year, right? So it's a very
+[40:32.80]  very large company. So for us, that's
+[40:34.80]  another key piece. We actually like want
+[40:36.64]  to meet developers sort of where they
+[40:38.32]  are and if they if they use a different
+[40:40.32]  platform, we'll we'll work on that too.
+[40:42.24]  The third key piece, and this probably
+[40:43.68]  sounds another key piece for
+[40:45.28]  enterprises, is u we we work in like a
+[40:48.24]  lot of very secure environments, right?
+[40:49.92]  Uh we have fed RAM compliance, right? We
+[40:52.16]  have which means we can sell to like
+[40:53.84]  very large government entities. uh we
+[40:55.92]  have a hybrid mode of actually using the
+[40:57.60]  product which means that all the code
+[40:59.20]  that lives that is like indexed actually
+[41:01.12]  lives on the tenant of the user right
+[41:02.88]  code is one of the most important IP
+[41:04.40]  pieces of IP for the company so I think
+[41:06.88]  just if you were to look at it from like
+[41:08.40]  a big company perspective there are many
+[41:10.32]  reasons why like over the years of just
+[41:12.24]  like building an enterprise product
+[41:13.76]  we've handled a lot of complexities that
+[41:15.52]  large companies want to see but that's
+[41:17.68]  part of it is because of the history of
+[41:19.04]  how we got here in the first place okay
+[41:21.68]  Verun enough teasing let's do a live
+[41:23.68]  demo of wind surf so folks and see what
+[41:25.52]  it's like and then I'm just going to ask
+[41:26.72]  you a bunch of questions as we're going
+[41:28.08]  through it. So I'll let you pull up a
+[41:30.08]  little shared screen where you have wind
+[41:31.92]  surf pulled up. Great. So some context.
+[41:34.72]  This is a very basic React project.
+[41:37.12]  There's nothing in it right now. So if
+[41:38.72]  you were to open any sort of file, it's
+[41:40.72]  it's the default React app project. And
+[41:44.56]  I have this basic image here. Uh, you
+[41:47.36]  can pass Windsorf images of what you'd
+[41:49.20]  like the project to kind of look like of
+[41:51.52]  of what I would like an Airbnb for dogs
+[41:54.48]  website to kind of look like. Beautiful.
+[41:56.56]  Beautiful mockup. By the way, I love
+[41:58.24]  that this is like all you need. This is
+[42:00.16]  all you need. This is all you need. Uh,
+[42:02.08]  so basically what we're going to do is
+[42:04.64]  we're going to say, hey, um, this one of
+[42:07.04]  the cool parts about windserve is it can
+[42:08.88]  actually work in an existing project
+[42:10.48]  already, right? So, I can basically say,
+[42:13.00]  "Hey, change this React
+[42:15.96]  app to show an Airbnb for dogs website
+[42:22.00]  based on this image and preview it. So
+[42:26.00]  now it'll just go out and start
+[42:27.52]  executing code, reading through the
+[42:29.88]  repository. Obviously, it doesn't know
+[42:31.84]  what the current codebase actually looks
+[42:34.08]  like and it'll go out and analyze the
+[42:36.00]  codebase to actually find out the set of
+[42:38.24]  changes necessary. So we'll go ahead and
+[42:40.08]  wait and see what it's see what it's
+[42:41.92]  going to do. But while we're doing that
+[42:44.00]  um let's let's continue the
+[42:45.28]  conversation. Awesome. Okay. So first of
+[42:47.44]  all the you kind of start so you open up
+[42:49.44]  Windsurf you had a boilerplate React
+[42:52.16]  project ready to go and Windsurf had
+[42:54.32]  never really seen this code before. You
+[42:56.00]  ask it to do stuff on your codebase
+[42:58.56]  which is just like change this to Airbnb
+[43:00.96]  for dogs using this design. That's
+[43:02.88]  right. That's exactly right. Yeah. Okay
+[43:04.64]  cool. So we'll let it run and we'll
+[43:06.00]  talk. So, let me ask you this question
+[43:08.08]  that I've been asking everyone that
+[43:09.60]  comes on that is building a product that
+[43:12.08]  helps engineers build products and
+[43:13.76]  product managers build products and
+[43:15.04]  designers. Say you could sit next to
+[43:17.04]  every single new user that uh opens up
+[43:19.28]  Windsurf and whisper a couple tips in
+[43:20.80]  their ear to help them be successful
+[43:22.88]  with the product. What would be a couple
+[43:24.72]  tips you'd share? Tip number one is just
+[43:28.08]  be a little bit patient and both patient
+[43:31.36]  and explicit, right? uh when you ask the
+[43:34.48]  application to go out and make some
+[43:36.00]  changes, it could actually go out and
+[43:37.76]  make many irrelevant changes, right? And
+[43:40.80]  one of the things that I think prevents
+[43:42.48]  this the most is just be really really
+[43:44.48]  explicit or as explicit as possible. And
+[43:46.56]  one of the things I I sort of ask people
+[43:48.24]  to do is in the beginning start by
+[43:49.84]  making smaller changes, right? If
+[43:51.52]  there's a very large directory, don't go
+[43:53.20]  out and make it refactor the entire
+[43:54.80]  directory, right? Uh because then if
+[43:56.56]  it's wrong, it's going to like basically
+[43:58.56]  destroy 20 files. And I think from
+[44:01.28]  there, one of the key pieces I think
+[44:02.88]  that comes from the users that use the
+[44:04.80]  product is they sort of learn what the
+[44:06.24]  hills and valleys of the product are.
+[44:08.08]  And the analogy I like to give are kind
+[44:09.92]  of similar to autocomplete, right? When
+[44:11.68]  you use a product like autocomplete, you
+[44:13.44]  would think a product that is suggesting
+[44:15.36]  things but only getting accepted 30% of
+[44:17.68]  the time would be really really
+[44:18.72]  annoying. But the reason why it's not
+[44:20.56]  very annoying is actually because you've
+[44:23.76]  actually learned that hey 70% of the
+[44:26.16]  time I don't need to accept this or or u
+[44:29.28]  and the times that I do I know how to
+[44:31.12]  get value from it right and you also
+[44:32.88]  know beforehand if a if a if a if a sort
+[44:36.24]  of command that you write is very
+[44:38.08]  complex you just expect hey like the
+[44:39.68]  autocomplete is not going to work for it
+[44:41.52]  right so I think it's almost like a like
+[44:43.36]  understand what the hills and valleys of
+[44:44.80]  the product are the crazy thing is every
+[44:46.80]  3 months that kind of gets changed and
+[44:48.48]  reevaluated it right. It almost becomes
+[44:50.48]  the case that that it becomes materially
+[44:52.40]  better than it was in the past. So I
+[44:54.40]  think I think maybe patience and being
+[44:56.24]  explicit are are maybe the two important
+[44:57.84]  key pieces I would I would tell users.
+[44:59.76]  And I think something that was kind of
+[45:00.96]  between the lines there is like get a
+[45:03.52]  gut feeling of what the model is capable
+[45:06.32]  of like how specific to be versus how
+[45:08.40]  abstract it can be. And there's kind of
+[45:09.92]  this like gut feeling you start to build
+[45:11.68]  over time. That's right. Yeah. Um and
+[45:14.16]  with that it feels like we have a an
+[45:17.04]  actual preview. And guess what? We have
+[45:19.12]  a a nice cute dogs. A nice dog app. And
+[45:22.48]  one of the cool parts is that we've also
+[45:24.56]  done beyond just just modifying code is
+[45:27.20]  actually being able to point to
+[45:28.32]  different pieces. And I guess I could
+[45:30.24]  just kind of say I could point to
+[45:32.64]  different elements and say, "Hey, like
+[45:34.16]  make the background." And this is not
+[45:37.20]  great design, but I could basically say
+[45:40.08]  if I took this
+[45:41.96]  element, make this background red,
+[45:46.32]  right? and just take a particular
+[45:48.56]  element and just change it and make it
+[45:50.24]  red and it should go out and be able to
+[45:52.16]  go out and do this. the preview aspect
+[45:54.16]  of the product of being able to showcase
+[45:55.84]  the app while it's getting built helps
+[45:57.76]  in that now actually you can live
+[45:59.44]  entirely in app app world right you
+[46:02.00]  don't even maybe even need to look at
+[46:03.36]  the code granted this looks hideous but
+[46:05.36]  uh but in some ways if I wanted to I
+[46:07.28]  could go out and do that right um this
+[46:09.36]  is what happens when there's no more
+[46:10.56]  designers like yeah when there's no more
+[46:11.84]  designers like maybe the answer the
+[46:13.84]  answer is like when you ask me what
+[46:15.60]  should people be doing they should study
+[46:17.12]  great taste having great taste because I
+[46:19.52]  think taste is also very very hard right
+[46:22.24]  um But maybe the other key piece, Lenny,
+[46:24.00]  that I wanted to showcase here is like
+[46:25.44]  obviously you could keep going here,
+[46:26.80]  like I could I could take different
+[46:28.16]  components and kind of change them, you
+[46:30.00]  know, like we have like a lot of plans
+[46:32.24]  here that are beyond just like point
+[46:33.84]  andclick uh changing components. But one
+[46:36.32]  of the cool pieces is the AI um they
+[46:38.80]  there's like an AI review flow as well,
+[46:40.72]  right? Which is kind of like what I was
+[46:42.32]  saying, the goal of AI is now changed a
+[46:43.92]  lot in that it is now modifying large
+[46:46.08]  chunks of code for you. And the job of a
+[46:48.88]  developer now is to is to actually
+[46:50.96]  review a lot of the code that the AI is
+[46:52.40]  generated. And granted, right now during
+[46:54.32]  this during this podcast, I'm not going
+[46:55.92]  to review all the code that's getting
+[46:57.04]  generated. But let's say I want to go
+[46:58.40]  out and modify some of this code, right?
+[46:59.92]  And this is where if you're an actual
+[47:01.36]  developer that actually wants to go
+[47:02.56]  modify it, maybe I don't like my
+[47:04.16]  variable name being called title. I want
+[47:05.68]  it to be called title string, right?
+[47:07.60]  Instead, like this. And if I wanted to
+[47:10.32]  go out and make that change and make the
+[47:12.40]  change to go out and and say title
+[47:14.24]  string, right? And that's what I'm going
+[47:15.60]  to do. I'm just going to tell the AI to
+[47:17.56]  continue. And the cool part about this
+[47:19.84]  is Windinsurf not only kind of knows
+[47:21.92]  about what the agent has done, it also
+[47:24.24]  knows everything that the user has done.
+[47:25.68]  Like our goal here is to have this
+[47:27.28]  almost flow-like state where everything
+[47:29.20]  the user has done, the AI also knows.
+[47:32.08]  And it it's able to predict the intent.
+[47:34.00]  And as you can see, it said, I noticed
+[47:35.68]  that the interface property title was
+[47:37.28]  changed to title string. And then it now
+[47:39.12]  has gone out and modified all the
+[47:41.04]  locations within the app from title to
+[47:42.96]  title string. And now it no longer says
+[47:45.52]  that. So this is where like even if I'm
+[47:47.60]  writing software and I want to go and
+[47:49.76]  make point changes, the AI can go out
+[47:51.76]  and quickly make these changes for on
+[47:53.92]  the user's behalf. Imagine doing a
+[47:55.84]  refactor or migration and you just
+[47:57.92]  change one part of the code. You can
+[47:59.36]  just tell the AI to continue the rest,
+[48:01.36]  right? And because it deeply understands
+[48:02.96]  the codebase, it should go out and find
+[48:05.04]  all the corresponding places to go out
+[48:06.64]  and make the change. And obviously now
+[48:08.40]  when I reload my app, there's no no bug
+[48:10.40]  in the app, right? It still loads
+[48:11.76]  properly. I could obviously tell it to
+[48:14.00]  do even cooler things like make the make
+[48:16.16]  the app retro, right? Um I don't know
+[48:18.64]  what that means, but I guess I could do
+[48:20.08]  that and it should go ahead and make the
+[48:21.68]  change correspondingly for me. But yeah,
+[48:23.84]  that's maybe the you know highlevel sort
+[48:25.92]  of parts there where the AI is not only
+[48:28.40]  kind of able to operate entirely in
+[48:30.24]  appspace but also on the code on the
+[48:32.72]  code space of the users going out and
+[48:34.72]  modifying code and to bridge the gap
+[48:36.80]  between the two. So, it should add
+[48:38.00]  leverage to not only non-developers that
+[48:39.68]  are just purely building apps, but also
+[48:41.52]  developers that are just hands- on
+[48:43.20]  keyboard, too. Amazing. That's by the
+[48:45.76]  way, it's if you're not on YouTube, you
+[48:47.28]  can't see that you can just select any
+[48:48.88]  element of the page and then uh
+[48:51.12]  reference that in your ask of here's
+[48:52.88]  what I want changed. Uh I didn't know
+[48:54.56]  that was a feature and that is extremely
+[48:56.12]  cool. So, interestingly, so having just
+[48:58.80]  looked at lovable and bolt and replin
+[49:00.64]  and apps like that, it's basically doing
+[49:02.72]  all the things those apps do. Oh, wow.
+[49:04.32]  There's the retro version. That's good.
+[49:08.00]  I like that it built on your red and
+[49:10.16]  made it really nice, actually. Actually,
+[49:11.52]  the red looks way better now. Yeah, with
+[49:13.12]  the little green button. This is great.
+[49:15.20]  Okay, so I don't think people realize
+[49:17.04]  this about apps like Windsurf, but it
+[49:18.80]  could actually do a lot of agentic work
+[49:20.56]  for you where you just tell it here, I
+[49:22.72]  want you to do this versus it's
+[49:24.16]  autocompleting code for you. The big
+[49:26.16]  difference is you need to start it with
+[49:27.52]  some codebase. You have this kind of
+[49:28.80]  boilerplate React project. Is there a
+[49:31.20]  reason you guys aren't taking that step
+[49:33.52]  and just doing that automatically for
+[49:35.44]  you? Is it because you're targeting
+[49:36.96]  engineers and they don't need that or is
+[49:38.56]  there other reasons? Lenny, the
+[49:40.08]  interesting thing is like the base app
+[49:41.60]  that you saw for this was also generated
+[49:43.28]  by windsurf. The reason why we sort of
+[49:45.52]  didn't generate it is installing all the
+[49:47.76]  dependencies takes like 3 or 4 minutes
+[49:49.76]  and for the demo I didn't want to wait
+[49:51.44]  but totally actually most of the users
+[49:53.52]  within within uh of the product probably
+[49:56.00]  0 to one build these apps and if I can
+[49:58.24]  say one interesting thing is when we
+[49:59.76]  launched windsurf actually we tked
+[50:02.24]  everyone at our company to go out and
+[50:03.76]  build an app with Windsorf that included
+[50:05.52]  our go to market team and our sales team
+[50:07.76]  and there was a crazy stat that I think
+[50:09.44]  people would find surprising but we've
+[50:10.80]  saved over half a million dollars of of
+[50:13.04]  SAS products we were going to buy
+[50:14.88]  because our go to market team has now
+[50:16.48]  built apps instead of buying them. Like
+[50:18.48]  our head of partnerships instead of
+[50:20.40]  buying a partner portal product has
+[50:22.56]  actually built his own partner portal,
+[50:25.44]  right? And that was that you know he had
+[50:28.56]  never built software in the past. So and
+[50:31.60]  we've actually come up with ways inside
+[50:33.20]  the company to deploy these apps easily
+[50:34.88]  in a secure way. And we're actually now
+[50:37.28]  like building very very custom software
+[50:39.20]  for our company to operate more
+[50:40.56]  efficiently which is I would not have
+[50:42.64]  expected this probably 6 months ago.
+[50:44.48]  That is incredibly interesting. Uh you
+[50:46.72]  don't need to name company names but I
+[50:48.48]  guess what's a space you're least
+[50:49.84]  bullish on that you think is going to
+[50:51.20]  have the most problem here with company
+[50:53.20]  people building their own version of
+[50:54.40]  these sorts of products? You know, I
+[50:57.12]  think maybe my viewpoint are these very
+[51:00.16]  very verticalized niche products I think
+[51:04.00]  are going to get they're going to get
+[51:06.80]  competed down a ton. And I think sales
+[51:09.36]  products are an example of one of these
+[51:11.04]  things, right? You and and maybe this is
+[51:13.84]  a I don't want to be like very negative,
+[51:15.76]  but it's very hard inside a company like
+[51:17.84]  ours to task our best engineers to build
+[51:19.76]  a best-in-class sales product. there's
+[51:21.76]  not enough interest to do that or to
+[51:24.00]  build a best-in-class legal legal
+[51:26.96]  software product or finance software
+[51:28.80]  product. It's very very hard for us to
+[51:31.04]  right and actually that's a very big
+[51:32.88]  moat for these companies that they were
+[51:34.40]  that built these products that they were
+[51:35.68]  able to come out have an opinionated
+[51:37.28]  stance on how to do this hire good
+[51:39.36]  enough engineers to go out and build the
+[51:40.92]  software and our company's unwilling to
+[51:43.28]  do that. So previously we would go out
+[51:44.96]  and buy the technology right uh because
+[51:47.04]  there would be no alternative but now
+[51:49.12]  one of the crazy things that uh is that
+[51:51.20]  the domain specialists now have access
+[51:53.60]  to build the tools that they ultimately
+[51:55.80]  wanted right which is actually crazy
+[51:58.32]  right if you think about why why were
+[52:00.32]  these software companies able to exist
+[52:02.40]  uh these vertical software companies the
+[52:04.16]  reason is because they had many features
+[52:05.92]  the kitchen sink of features worked for
+[52:07.92]  a lot of companies but each individual
+[52:09.92]  company only wanted 10% of the features
+[52:11.92]  but the problem is each indiv individual
+[52:13.60]  company was not capable of maintaining a
+[52:15.20]  piece of software or building the custom
+[52:17.28]  piece of software for 10% of the
+[52:18.64]  features. But that is now changed
+[52:20.16]  entirely. Now they can and there's
+[52:22.32]  always Yeah, there's always been the
+[52:23.36]  story of like why would I spend any time
+[52:24.72]  building my own software if I could just
+[52:26.64]  but now it's like five minutes of time
+[52:28.56]  like it's five minutes and maybe even
+[52:30.48]  more custom to your to your system,
+[52:32.80]  right? Like how many times have you
+[52:34.08]  bought a piece of bought a software and
+[52:35.52]  you you're almost like why is there no
+[52:37.20]  integration to X and I actually use X?
+[52:40.16]  How annoying is that? that actually
+[52:41.52]  makes the software less useful to you.
+[52:43.44]  So, I think what's cool is when you go
+[52:44.88]  back, if someone zooms back to the
+[52:46.24]  beginning of when you started the demo,
+[52:47.92]  it's basically a PM talking to an
+[52:50.48]  engineer. Hey, uh, build me a Airbnb for
+[52:55.04]  dogs. Here's a stupid mock that I made
+[52:57.92]  like with some boxes. Like, that's
+[52:59.84]  that's almost like a bad PM uh, talking
+[53:02.32]  to an engineer and it just actually
+[53:04.48]  works. That's what's insane about this.
+[53:06.32]  And so that's why this example you're
+[53:07.92]  sharing of go to market folks building
+[53:10.48]  their own things. It's like they don't
+[53:11.76]  need to know anything about product
+[53:13.84]  building. It's just describe it in some
+[53:15.68]  ridiculous way and draw a couple boxes
+[53:18.32]  of what you want it to look like and it
+[53:19.68]  makes something which shows that agency
+[53:21.12]  is what matters. If you have a product
+[53:22.48]  manager that has an idea, there's no
+[53:24.24]  reason for why that idea cannot be like
+[53:26.48]  more well fleshed out, right? Like how
+[53:28.72]  many times do you have a product manager
+[53:30.16]  that just continualize ideas but it just
+[53:32.72]  feels like they are extremely unsure on
+[53:35.28]  how to execute on it. They just want to
+[53:36.88]  say things for the sake of saying things
+[53:39.36]  but for the people that have ideas and a
+[53:41.28]  lot of I guess agency they can go out
+[53:43.12]  and like prove out what they want
+[53:44.72]  without any sort of external resources.
+[53:47.12]  I think uh even more acutely for product
+[53:49.52]  folks listening to this uh it's the the
+[53:52.08]  salesperson coming to you being like hey
+[53:53.84]  I want this thing it's going to help me
+[53:55.60]  with my sales team and you're like I
+[53:57.20]  don't have a million things to build I
+[53:58.64]  don't have time for this and so that
+[54:00.40]  problem goes away which I think will
+[54:02.08]  make a lot of product leaders really
+[54:03.64]  happy the model that this is sitting on
+[54:06.80]  is it sonnet yeah so just to break down
+[54:09.92]  how it ultimately works we have a model
+[54:12.16]  that does planning and I would say right
+[54:14.08]  now sonnet is a really really good
+[54:15.76]  planning model I OpenAI's GPT40 is also
+[54:18.88]  good. But the crazy thing is what we try
+[54:21.76]  to do is we try to make the the
+[54:24.48]  anthropic based model or sonnet model
+[54:26.32]  try to do as much of the highle planning
+[54:27.92]  as possible. And then what we try to do
+[54:30.08]  internally is run all the models
+[54:31.52]  necessary to do high quality retrieval
+[54:33.60]  for the agent. As you could see the
+[54:35.12]  agent needed to understand what the rest
+[54:36.56]  of the codebase ultimately did. U we
+[54:38.72]  actually make sure we run models to
+[54:40.24]  actually chunk up the entire codebase
+[54:41.52]  and understand the codebase. Uh so that
+[54:43.76]  obviously it would not be a good idea if
+[54:45.52]  we had a 100 million line codebase to
+[54:47.28]  send that entire codebase to anthropic.
+[54:49.44]  First of all, you couldn't do that.
+[54:50.72]  That's over 1.5 billion tokens of code,
+[54:53.12]  right? So obviously that would be three
+[54:54.40]  orders of my three or four orders of my
+[54:56.16]  larger than the largest context lengths
+[54:57.68]  right now. But you also wouldn't want to
+[54:59.76]  do that from like a cost and latency
+[55:01.28]  standpoint too. So that's like one. And
+[55:03.20]  the second piece that you saw was the
+[55:04.88]  model is able to very quickly make edits
+[55:07.20]  to the to the software as well. We have
+[55:08.96]  custom models that we built that are
+[55:10.56]  post-trained on top of popular open
+[55:12.32]  source models that can make these edits
+[55:14.88]  really really quickly to the codebase.
+[55:16.72]  And and the reason why you would want to
+[55:18.16]  do that is it's a faster and b also that
+[55:20.96]  model can actually have more of the
+[55:22.72]  codebase in context too. So it can be
+[55:25.36]  better at applying changes than even
+[55:27.44]  anthropics model too. So I think the way
+[55:29.84]  we like to think about it is our only
+[55:31.44]  goal is how do we build the best product
+[55:32.88]  possible, right? How do we build the
+[55:34.40]  best product possible and how do we how
+[55:35.84]  do we make the ceiling as high as
+[55:37.20]  possible? And we will go out and build
+[55:38.80]  models and train models wherever
+[55:40.24]  necessary. But if we're not going to be
+[55:41.60]  good at good at a task and we think the
+[55:43.44]  open source is better or anthropic is
+[55:44.80]  better, we'll go and just use the open
+[55:46.08]  source or anthropy. And so the models
+[55:48.32]  you guys are building those are built on
+[55:49.84]  open source models that people are
+[55:51.20]  releasing. Yeah. Interestingly, the one
+[55:52.72]  that does retrieval is actually
+[55:54.08]  completely pre-trained inhouse that
+[55:55.76]  actually does that. But yeah, for for a
+[55:58.32]  lot of different pieces, it's it's based
+[55:59.92]  on open source for interestingly for the
+[56:02.24]  one that does uh that does the edits and
+[56:04.56]  autocomplete that is also in-house. Like
+[56:07.04]  as you're typing, we actually do some
+[56:08.56]  autocomplete related stuff. I'm happy to
+[56:10.16]  show that, but I think a lot of users
+[56:11.44]  are familiar with that capability. Um so
+[56:14.16]  I think the way we like to look at it is
+[56:15.60]  like what could we be best at and we
+[56:17.28]  will go ahead and trade. But if we're
+[56:18.88]  not going to be best at it, we should
+[56:20.24]  not just for the sake of ego go out and
+[56:22.00]  trade something. This may be getting too
+[56:24.00]  technical, but just is there anything
+[56:25.44]  interesting around what you train on?
+[56:27.28]  Yeah. So, one of the one of the
+[56:28.80]  interesting things that we have from our
+[56:30.40]  users, and this is like where we try to
+[56:32.56]  think like why would we be any better?
+[56:34.56]  It's that actually every hour we get
+[56:37.60]  probably tens of millions of pieces of
+[56:39.36]  feedback from our users. We get a lot of
+[56:41.20]  feedback on what they like and what they
+[56:43.04]  don't like. For something like
+[56:44.32]  autocomplete, we get a lot of preference
+[56:46.16]  data. A lot of preference data. And the
+[56:48.48]  preference data is weird. It doesn't
+[56:49.84]  look like data that you find on the
+[56:51.12]  internet. It's like data as the user is
+[56:53.44]  typing, right? Imagine you're typing
+[56:55.44]  typing um some code in a codebase. The
+[56:58.00]  code's going to be incomplete as you're
+[56:59.28]  typing it, right? It's not going to be
+[57:00.88]  in a full-fledged form. It's not like it
+[57:02.56]  is on GitHub. But we have a lot of data
+[57:04.88]  that looks like this. So, we are
+[57:06.96]  uniquely well positioned to actually
+[57:08.56]  build a good model that can complete
+[57:10.08]  code even when it's in an incomplete
+[57:11.68]  state when the models that are out
+[57:13.92]  there, the frontier models that consume
+[57:15.52]  very little code that looks like this.
+[57:17.44]  So for that case we're like hey we can
+[57:19.20]  go out and do a much better job
+[57:20.96]  potentially right and we'll go out and
+[57:22.72]  train models on all the preference data
+[57:24.56]  we have the same is kind of true in
+[57:25.92]  retrieval right there's a way to find
+[57:28.16]  out are we retrieving the right data
+[57:29.60]  right did the user accept the code
+[57:30.88]  change after that was the retrieval
+[57:32.72]  actually a good retrieval a signal that
+[57:34.16]  we can get so basically the way we like
+[57:37.12]  to look at it is if something is just
+[57:38.64]  purely like code planning there's not a
+[57:41.20]  great reason why we would be the best at
+[57:42.88]  that right I think that would that would
+[57:45.12]  not be a I can't come up with a coherent
+[57:47.36]  argument for that. But for something
+[57:48.80]  that looks more along the lines of, hey,
+[57:50.72]  here's an intermediate codebase that is
+[57:52.64]  is very gnarly and here are some changes
+[57:54.88]  that need to get made and we we know the
+[57:57.44]  evolution of the code or we've seen the
+[57:58.80]  evolution of code across millions of
+[58:00.24]  users. Um, we feel like we can do a
+[58:02.40]  great job with it. I think what's
+[58:04.08]  interesting about this is this is
+[58:05.36]  another uh
+[58:07.72]  differentiator for companies that end up
+[58:09.84]  winning in the space is you just have
+[58:11.04]  more and more of that data than other
+[58:12.32]  companies if you're ahead. Yeah, this is
+[58:14.80]  sort of why maybe at a high level like
+[58:16.80]  we like the 0ero to1 app building
+[58:18.88]  product space. I think it's really it's
+[58:20.88]  like a good product space, but
+[58:22.32]  ultimately I think it needs to boil down
+[58:23.92]  to you understanding the code because
+[58:25.52]  otherwise you're living at too high a
+[58:27.92]  plane where it's not clear why you would
+[58:30.72]  be able to be the best at that compared
+[58:32.32]  to everyone else. It's not really clear
+[58:35.20]  as a company. You mean as a company? It
+[58:37.44]  feels like it might get like competitive
+[58:38.96]  in a way that it's not clear like where
+[58:42.32]  you would continue to differentiate over
+[58:44.08]  and over with time. I see. Because if
+[58:46.08]  they're just sitting on top of sonnet
+[58:47.68]  and just doing what every other sonnet
+[58:49.60]  rapper is doing, there's not a lot of
+[58:52.20]  differentiation or or it depends on how
+[58:54.72]  you do it. But maybe if I was to say
+[58:56.32]  this, if you're if the inputs you're
+[58:57.84]  consuming are just web elements, like
+[58:59.92]  extremely high level web elements, then
+[59:02.40]  then the interface might be like high
+[59:04.72]  level enough that it's it's hard to
+[59:06.96]  maybe get better than maybe what the
+[59:08.56]  frontier models are doing just across
+[59:10.48]  the board. You just better off just
+[59:12.16]  plugging in for everything. Got it.
+[59:14.72]  Awesome. One thing I wanted to come back
+[59:16.32]  to that I wrote down that I think is
+[59:17.60]  really important for people to
+[59:18.96]  understand. You talked about how with
+[59:20.88]  Windsurf it's not necessar there's like
+[59:23.04]  a boilerplate code base that you you
+[59:25.36]  want to start with because it's actually
+[59:26.88]  because it's not a abstracted 0 to1 app
+[59:29.04]  builder. It's a actual IDE you're coding
+[59:31.12]  in. And you talked about how it has to
+[59:33.76]  install dependencies which is kind of
+[59:35.12]  this painful thing and the the reason it
+[59:37.04]  has to do that is because it's running
+[59:38.16]  locally on your machine versus in the
+[59:40.96]  cloud like say lovable and replet and
+[59:43.44]  all these guys. Although I think Bolt
+[59:45.12]  runs in your browser in this really cool
+[59:46.64]  way. Uh so that's an important
+[59:48.56]  distinction. This is like you're running
+[59:49.76]  this locally on your machine and has all
+[59:51.20]  the all the libraries you need to
+[59:52.96]  actually run it. No, I think that's
+[59:54.96]  important. I think we believe a lot of
+[59:57.44]  people sort of build software in what
+[59:59.84]  are called like code spaces and things
+[60:01.20]  in a remote machine. I just think it's
+[60:03.20]  that a lot of developers like building
+[60:05.12]  locally. for what you said. Uh like if
+[60:07.12]  you're doing things that are more than
+[60:08.16]  just full stack applications, you might
+[60:10.00]  have dependencies on your machine that
+[60:11.44]  are just like system dependencies that
+[60:13.28]  are just gnarly to install. Let's
+[60:14.64]  imagine you're building a GPU based
+[60:16.16]  application and the Nvidia drivers are
+[60:17.88]  necessary. You just want to give people
+[60:20.00]  the flexibility to build where they can
+[60:21.60]  build. And I think you know the IDE and
+[60:24.00]  building locally has been a thing that
+[60:25.28]  people have done for you know decades.
+[60:26.80]  So probably it's not going to go away in
+[60:28.48]  the next like couple years. I love that
+[60:30.24]  your sales folks now are running like
+[60:31.76]  local host servers and well with the
+[60:34.48]  browser previews it's easier, right? You
+[60:36.16]  kind of just like open it up on the
+[60:37.44]  side. Yeah. Yeah. Oh my god. Okay, I
+[60:39.76]  have a few more questions just about how
+[60:41.04]  you think and operate at uh at Kodium.
+[60:43.92]  So you guys are kind of at the forefront
+[60:45.76]  of how product teams are going to
+[60:48.08]  operate like you are seeing the future
+[60:49.84]  every day. And so I'm curious if there's
+[60:52.08]  ways you guys have structured your
+[60:53.44]  teams, engineers, product design that
+[60:55.92]  might be different from how other
+[60:57.04]  companies are doing it or have tried
+[60:58.64]  stuff that has worked really well or
+[60:59.76]  tried stuff that has been a huge
+[61:01.12]  disaster. You know, one interesting
+[61:03.28]  decision that we kind of have for core
+[61:05.28]  engineering is that we don't have pure
+[61:07.52]  product managers for for the core
+[61:09.84]  engineering side of the company. And by
+[61:12.24]  the way, that's purely because we build
+[61:14.00]  for developers and our our product is is
+[61:17.76]  built by developers. So I think the
+[61:19.76]  intuition from our own developers are
+[61:22.24]  are is is hopefully hopefully valuable.
+[61:24.40]  If not, we might be hiring the wrong
+[61:26.08]  type of people. So I think like our
+[61:27.92]  developers are in some sense flexing to
+[61:29.60]  be like more product conventional
+[61:31.36]  product managers. Now on the other hand,
+[61:32.72]  if we were building something that
+[61:33.84]  looked more like Uber or the persona was
+[61:35.76]  very different and we didn't ourselves
+[61:37.52]  understand it. I think we would not be
+[61:39.20]  the organization wouldn't look the way
+[61:40.56]  it looks. uh for the enterprise side of
+[61:44.08]  the company because we do work with a
+[61:46.16]  lot of large enterprises where the
+[61:47.44]  requirements are not something that like
+[61:48.80]  our engineers would automatically
+[61:50.32]  understand, right? I don't think our
+[61:51.44]  engineers wake up and they're like we
+[61:53.04]  need Fed ramp, right? Uh like this is
+[61:55.20]  probably something that a lot of
+[61:56.16]  customers come to us with and tell us.
+[61:58.48]  We have people that kind of like flex in
+[62:00.32]  this product strategy role that
+[62:01.68]  understand kind of what the what the
+[62:03.60]  customer wants and understands the
+[62:05.68]  technical capabilities that we have to
+[62:07.28]  under to best kind of build a a product
+[62:10.64]  uh that would that would sort of help
+[62:12.00]  them at scale. So I think I think we
+[62:14.40]  have an interesting organization in this
+[62:16.08]  regard but mostly I would say because we
+[62:17.84]  are a developer based product right um I
+[62:20.08]  would say that's true and then also kind
+[62:22.16]  of like what you said for the
+[62:23.28]  engineering team itself we are you know
+[62:25.84]  the the team structure is it's it's
+[62:27.76]  fairly flat we try to go with two pizza
+[62:29.92]  teams teams that are fairly small just
+[62:32.32]  because I think the problem is when a
+[62:33.68]  team gets too big the person leading the
+[62:35.52]  team is no longer able to get in the
+[62:36.80]  weeds of the technology itself and I
+[62:39.28]  think in a space that's moving this
+[62:40.72]  quickly I think it's dangerous to have
+[62:42.64]  leaders that don't understand the
+[62:44.00]  technology deeply and are like and not
+[62:45.68]  building it's like very very dangerous
+[62:47.68]  because there's too much like armchair
+[62:49.84]  quarterbacking and uh so so I think I
+[62:52.48]  think that's like maybe maybe uh maybe
+[62:55.04]  like one other decision we made and then
+[62:57.12]  teams are very very flexible so if we
+[62:59.68]  decide something is a new priority we're
+[63:01.92]  very quick to kind of like change the
+[63:04.00]  way a team looks and and it's very
+[63:06.24]  centrally planned in this regard the two
+[63:09.20]  pizza team concept I saw a tweet long
+[63:11.12]  ago where someone from in India was like
+[63:13.36]  there's all these talk about two in
+[63:14.56]  pizza teams but pizzas in India are much
+[63:16.32]  smaller and so the teams end up being
+[63:18.16]  smaller and they're like why can't we
+[63:19.20]  build as much as these teams in the
+[63:21.56]  US oh man okay so how many PMs do you
+[63:25.92]  have so you said you have 150 employees
+[63:28.00]  something like that yeah we have so in
+[63:30.00]  terms of like the product strategy
+[63:31.44]  function we have we have uh we have
+[63:33.20]  three people in that role right now I
+[63:35.36]  see so it's like product it's like there
+[63:37.60]  and their title is like is product
+[63:39.20]  strategy not necessarily product
+[63:40.56]  management that's right Interesting. And
+[63:42.56]  then 50 engineers. You said 80ish sales
+[63:44.72]  folks. Yes, that's right. And then
+[63:46.88]  obviously we have functions like
+[63:48.64]  recruiting, you know, parts of GNA like
+[63:50.88]  finance, right? We have marketing at the
+[63:52.88]  company, right? So some other some other
+[63:55.04]  functions internally as well. What's
+[63:56.96]  interesting and this is something you
+[63:58.40]  hear all the time with companies like
+[64:00.32]  Dario for example from Anthropic talking
+[64:01.92]  about how 90% of code is going to be
+[64:03.52]  written by AI. Uh but all at the same
+[64:06.00]  time all you guys are hiring engineers
+[64:07.44]  like crazy. Yeah. Is do is there is that
+[64:10.24]  contradictory? Is that contradictory?
+[64:11.84]  Will there be an inflection point of
+[64:13.44]  like, all right, now we don't need them
+[64:14.80]  anymore. You know, I think it really
+[64:16.08]  comes down to do you get incremental
+[64:17.84]  value by adding more engineers
+[64:19.20]  internally? Like I'm going to take first
+[64:20.80]  of all, you know, maybe just to set the
+[64:22.72]  record straight, if AI is writing over
+[64:24.24]  90% of the code, that doesn't mean
+[64:26.48]  engineers are 10x as productive, right?
+[64:29.12]  Engineers spend more time than just
+[64:30.56]  writing code. They review code, test
+[64:32.32]  code, debug code, design code, deploy
+[64:34.48]  code, right? Navigate code. There's
+[64:36.48]  probably like a lot of different things
+[64:37.76]  engineers do. There's this one famous
+[64:39.68]  law in parallel computing. It's called
+[64:41.12]  Almdall's law. I don't know if I don't
+[64:43.04]  know if you've heard about it, but it
+[64:44.24]  basically says if you have a graph of
+[64:45.60]  tasks and you have this critical path
+[64:47.52]  and you take any one task and
+[64:49.44]  parallelize it a ton, which is make it
+[64:51.28]  almost take zero amount of time, there's
+[64:53.04]  still limit of the amount of of how much
+[64:55.04]  faster it made the whole process go. So
+[64:56.88]  maybe put simply, let's say you have a
+[64:58.48]  100 units of time and only 30 units of
+[65:00.96]  time is being spent writing software and
+[65:02.40]  I took the 30 and made it three. I only
+[65:04.32]  took the 100 and made it 73. it's still
+[65:06.32]  only 27% improvement right in the grand
+[65:08.56]  scheme of things. So I think look we're
+[65:10.88]  definitely seeing over 30 maybe close to
+[65:12.88]  40% productivity improvements but I
+[65:14.48]  think for the vision that we're solving
+[65:15.84]  for I I think like you know even if I
+[65:18.40]  were to say the company in the longtale
+[65:20.08]  had 200 engineers probably be too low
+[65:22.24]  still at that point. So the question is
+[65:24.64]  like how much more productivity do you
+[65:26.08]  get per person you know actually maybe
+[65:28.80]  just to even say one other thing for
+[65:30.72]  some of these large companies let's say
+[65:32.56]  you took the CIO of a company like JP
+[65:34.80]  Morgan Chase right her budget on
+[65:37.68]  software every year is $17 billion and
+[65:40.24]  you there's over 50,000 engineers inside
+[65:42.48]  the company right and you told her hey
+[65:45.12]  like each of these engineers are now
+[65:47.20]  able to produce more technology that's
+[65:49.12]  effectively what you've done right the
+[65:51.44]  right calculus that JP Morgan Chase or
+[65:53.20]  any of these companies will make is the
+[65:56.16]  ROI of building technology has actually
+[65:58.32]  gone up. So the opportunity cost of not
+[66:00.80]  investing more into technology has gone
+[66:02.80]  up which means that you should just
+[66:04.40]  invest even more and maybe in the short
+[66:06.08]  term you have even more engineers. Right
+[66:08.16]  now that's not true across the board.
+[66:09.76]  There are some companies that are happy
+[66:10.96]  with the amount of technology they're
+[66:12.16]  building and there's a ceiling on the
+[66:13.36]  amount of technology they want to build.
+[66:14.88]  But for companies that actually have a
+[66:16.32]  very high technology technology ceiling,
+[66:19.04]  this doesn't mean you stop. This
+[66:20.40]  actually means you hire more. This is a
+[66:22.56]  great bullc case for engineers. I feel
+[66:24.56]  like there's like the canary in the coal
+[66:25.92]  mine for the engineering profession is
+[66:27.20]  when companies like yours slow down on
+[66:29.36]  hiring engineers. That's not happening.
+[66:32.08]  I think is also hiring a lot. Yeah,
+[66:34.00]  everyone is. So, I think that's really
+[66:35.44]  promising. I think if you're in college
+[66:37.04]  still makes sense to get into
+[66:38.72]  engineering at this point. Yeah. Okay.
+[66:40.88]  Let me ask you this question as a kind
+[66:42.64]  of a a final question maybe. What's
+[66:45.28]  maybe the most
+[66:46.84]  counterintuitive thing you've learned
+[66:49.40]  about building AI products, building
+[66:52.08]  wind surf in this just being in this
+[66:53.84]  space? I think one of the weird things
+[66:55.84]  is online everyone is very excited about
+[66:58.24]  the short-term wins that we're making,
+[67:00.40]  right? Like what we're putting out maybe
+[67:01.84]  weekly. We do these waves every couple
+[67:03.60]  weeks, but actually like a lot of the
+[67:05.60]  bets we're making inside the company are
+[67:07.28]  for things that are not, you know, 3,
+[67:09.04]  four weeks, maybe three, six months,
+[67:10.80]  nine months away. That's what we're
+[67:12.56]  working on internally because I think
+[67:14.24]  this is kind of like Lenny what I was
+[67:16.00]  mentioning to you before like one of the
+[67:18.48]  goals that I tell everyone at our
+[67:20.00]  company is we should be cannibalizing
+[67:21.36]  the existing state of our product every
+[67:22.80]  6 to 12
+[67:24.28]  months. Every 6 to 12 months it should
+[67:26.64]  make our existing product look silly. It
+[67:28.80]  should almost make the form factor of
+[67:30.24]  existing product look dumb. So it
+[67:32.48]  there's this weird tension where you
+[67:34.72]  want to have a product in market and you
+[67:36.56]  want to incrementally iterate and listen
+[67:38.24]  to users and keep making it making it
+[67:40.16]  better and better. But I would say we
+[67:42.08]  were the first aentic IDE product out
+[67:44.32]  there, right? We that's what we landed
+[67:46.16]  with and I think that the value of that
+[67:49.04]  is going to depreciate very quickly
+[67:50.32]  unless we continue to reprove ourselves
+[67:52.56]  and we will need to reprove ourselves in
+[67:54.40]  ways in which our users are not even
+[67:55.76]  asking. So there's this tension here
+[67:58.56]  where incremental feels very safe,
+[68:00.88]  right? Add this one more button. Users
+[68:02.88]  say, "Hey, I would like to be able to
+[68:04.24]  have this drop down to do X." But that
+[68:06.08]  is not the reason why we're going to
+[68:07.44]  win. That's just that's like a you know
+[68:09.52]  that's almost table stakes. Yeah, we'll
+[68:10.88]  decide to do some of these. We might not
+[68:12.48]  decide to do a lot of these things, but
+[68:14.08]  it's like it's these longer term efforts
+[68:16.00]  inside the company that almost disrupt
+[68:17.84]  the existing product that are ultimately
+[68:19.52]  the reason why we're going to succeed.
+[68:21.28]  Um, and it's this weird tension that you
+[68:23.12]  need to have in your head of you can't
+[68:24.72]  also not listen to your users at all
+[68:26.56]  because they're the reasons they're the
+[68:28.32]  reason you exist. This reminds me of a
+[68:30.40]  recent podcast guest. We had Gar from
+[68:32.40]  captions on the podcast and he he told
+[68:34.88]  us that he had he has two road maps.
+[68:36.56]  They have two road maps at the company.
+[68:37.92]  They have the the the real road map like
+[68:40.00]  the typical road map based on feature
+[68:41.84]  request and user feedback and data and
+[68:43.92]  things like that. And then they have the
+[68:44.88]  secret road map which is completely not
+[68:47.60]  informed by users or data. It's just
+[68:49.60]  them making bets on where they think the
+[68:51.52]  world is going. That's right. And I love
+[68:53.60]  that he calls it the secret road map
+[68:54.80]  just to make it very mysterious. That's
+[68:56.48]  very smart. Okay. I have one more
+[68:58.48]  question. I
+[68:59.40]  apologize. What's one thing that you
+[69:01.44]  wish you had known before starting
+[69:03.28]  Kodium? Honestly, I I wish I had maybe
+[69:07.20]  humility is like the the wrong term, but
+[69:09.76]  this idea of just being okay with being
+[69:12.08]  wrong faster. Um like I always think
+[69:14.96]  about things on like when we make
+[69:16.56]  decisions, me and my co-founder, uh we
+[69:18.80]  always talk about it. We're almost like,
+[69:20.16]  "Hey, I wish we had made the decision to
+[69:21.68]  do this a couple months earlier. We
+[69:23.84]  always talk about this." And the weird
+[69:26.24]  thing is outside looking at everyone's
+[69:27.68]  like, "Wow, like actually, you know, the
+[69:29.36]  decision was made at the right time."
+[69:30.80]  But in my head, I'm always banging my
+[69:32.64]  head being like, what if we had made it
+[69:34.16]  a couple months earlier? And I think
+[69:36.88]  part of that is, you know, I I waxed
+[69:38.72]  poetically about like, oh, you need to
+[69:40.40]  be irrationally uh sort of optimistic
+[69:42.64]  and uncompromisingly realistic, but it's
+[69:44.56]  very hard to do this in practice, right?
+[69:46.48]  Because you drink your own Kool-Aid,
+[69:47.84]  too. It's very because if you're not
+[69:49.12]  drinking your own Kool-Aid, you you
+[69:50.56]  won't get up out of bed, right? The
+[69:52.24]  answer is already solved. It's not
+[69:53.60]  actually any of these startups. The
+[69:54.80]  answer is Microsoft is going to be the
+[69:57.04]  be the winner in any software category,
+[69:59.12]  right? Isn't that isn't that the answer?
+[70:00.72]  Uh just because of distribution,
+[70:02.32]  resources, and capital, right? Uh
+[70:04.40]  they're going to commoditize every
+[70:05.60]  space. So I think I think in some ways
+[70:09.44]  you this this amount of of just
+[70:12.64]  understanding that hey like reevaluate
+[70:15.04]  your hypothesis and get into an
+[70:16.88]  uncomfortable space way more frequently
+[70:19.60]  uh is is something I need to remind
+[70:21.28]  myself even to this day and probably
+[70:23.20]  something that I didn't know coming in
+[70:24.64]  and starting the company. Right? I we
+[70:26.32]  started the company at like peak zerp
+[70:28.08]  time at that time probably like
+[70:30.16]  everything seemed like it was going to
+[70:31.44]  moon and there was probably a lot of
+[70:33.04]  irrational confidence I would say uh
+[70:35.04]  that we shouldn't have had maroon we
+[70:37.20]  covered so much ground what an
+[70:38.72]  incredible conversation I learned so
+[70:40.24]  much just just sitting here listening
+[70:41.84]  and asking you questions is there
+[70:43.60]  anything else that you wanted to share
+[70:44.80]  before or I leave listeners with any
+[70:47.12]  last piece of nuggets or wisdom uh
+[70:49.28]  before I let you go to to be honest I
+[70:51.84]  could give predictions about the space
+[70:53.68]  uh probably most of them are going to be
+[70:55.60]  Um, I think the best thing to do is just
+[70:57.52]  get your hands dirty with with all of
+[70:59.52]  these products. And uh, I think one of
+[71:02.24]  the most obvious things that's going to
+[71:04.08]  happen is in the next year there will be
+[71:06.40]  a tremendous amount of alpha for anyone
+[71:08.32]  that is able to take maximum advantage
+[71:10.08]  of these tools, right? Just imagine how
+[71:12.40]  many of your co-workers just don't even
+[71:13.92]  know the existence of these tools, don't
+[71:15.76]  know what they can do, and how much less
+[71:17.68]  productive they will be. Um, and uh, and
+[71:20.16]  just I would just say get your hands as
+[71:22.88]  dirty as possible, as quickly as
+[71:24.16]  possible. And when you say get your
+[71:25.44]  hands dirty, basically it's like
+[71:26.72]  download with surf, start coding, ask it
+[71:28.64]  to build things for you. Yeah. Build
+[71:30.16]  apps, build apps. Um, start using it for
+[71:33.20]  maybe even making making mocks,
+[71:35.28]  modifying your existing codebase. Like
+[71:37.76]  there's probably ways in which you could
+[71:39.04]  be a force multiplier to your
+[71:40.24]  organization in ways in which they never
+[71:41.84]  even anticipated, right? Imagine if you
+[71:44.16]  were a product manager that could
+[71:45.36]  actually very quickly make edits to the
+[71:46.88]  codebase and and just start pushing
+[71:49.12]  changes yourself. You probably get a
+[71:50.80]  tremendous amount of respect from your
+[71:52.16]  own engineering peers. you could
+[71:53.76]  probably get way more done because of
+[71:55.04]  that. Um, it's just I feel like the
+[71:57.44]  there's no there's no sort of uh ceiling
+[71:59.76]  at that point. I think this is such an
+[72:01.68]  under estimated point you're making
+[72:03.84]  here. There's apps that can build things
+[72:05.84]  from scratch and then there's apps like
+[72:08.00]  this that can edit your existing
+[72:09.44]  codebase if you're PM at like what's
+[72:11.36]  what are the what's the largest company
+[72:12.88]  you work with like people wise? Probably
+[72:15.12]  like publicly I'd say let's just say JP
+[72:17.92]  Morgan Chase for now. They have over
+[72:19.60]  50,000 developers. Okay. So you could be
+[72:21.28]  a PM at JP Morgan Chase and be like, I
+[72:23.92]  have a I have a problem I need to solve.
+[72:25.52]  I want to move this metric. I want to
+[72:27.76]  change the step in the signup flow. You
+[72:30.24]  you just open up Wind Surf and tell it
+[72:32.64]  to do the thing you want. And then can
+[72:34.56]  you push straight to GitHub and do a
+[72:37.20]  Yeah, actually you could do that. Okay.
+[72:39.76]  PR. Yeah, it could make a PR for you.
+[72:41.92]  This is insane. Okay. The future is out
+[72:44.08]  of control. Okay, we're doing this. That
+[72:46.24]  was such an important point at the end
+[72:47.36]  there because I think people may not
+[72:48.40]  realize this. They see all these other
+[72:49.52]  apps, they're like, "Oh, build all these
+[72:50.72]  prototypes." But this is like
+[72:52.40]  legitimately something a PM can actually
+[72:54.40]  do work with. Yeah. When you think about
+[72:56.48]  the people at least that I I don't know,
+[72:58.24]  Lenny, who you respect the most, they
+[73:00.16]  are the people that somehow despite
+[73:01.52]  their title, their level of agency and
+[73:03.60]  just output just to the all the way down
+[73:06.24]  to the weeds to the highest level
+[73:08.40]  strategy is just perfection, right? They
+[73:10.64]  know when to go all the way down. And I
+[73:12.96]  think, you know, sometimes you see
+[73:14.64]  people that talk about roles and they
+[73:16.08]  irrationally feel like, oh, because I'm
+[73:17.60]  this role, I'm not allowed to touch
+[73:18.88]  this. Well, now everything's open
+[73:20.40]  season, right? And I think this is an
+[73:22.32]  opportunity to almost go all the way
+[73:24.24]  down to the weeds and all the way up to
+[73:26.00]  the top, right? Um, and just be
+[73:27.68]  effective on every level. Unbelievable.
+[73:30.80]  All right. Well, with that, we'll leave
+[73:32.16]  folks. Uh, Arun, thank you so much for
+[73:34.56]  being here. Awesome. Thanks a lot. What
+[73:37.04]  an incredible conversation. Thanks, Run.
+[73:38.56]  And bye, everyone.
+[73:42.08]  Thank you so much for listening. If you
+[73:43.76]  found this valuable, you can subscribe
+[73:45.28]  to the show on Apple Podcasts, Spotify,
+[73:47.76]  or your favorite podcast app. Also,
+[73:50.40]  please consider giving us a rating or
+[73:52.24]  leaving a review as that really helps
+[73:54.16]  other listeners find the podcast. You
+[73:56.40]  can find all past episodes or learn more
+[73:58.56]  about the show at
+[74:00.68]  lennispodcast.com. See you in the next
+[74:02.40]  episode.

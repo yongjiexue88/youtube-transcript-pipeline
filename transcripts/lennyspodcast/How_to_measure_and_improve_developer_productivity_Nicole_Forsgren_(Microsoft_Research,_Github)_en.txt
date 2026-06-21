@@ -1,0 +1,2094 @@
+Title     : How to measure and improve developer productivity | Nicole Forsgren (Microsoft Research, Github)
+Video ID  : dP8NmcEkxJI
+URL       : https://www.youtube.com/watch?v=dP8NmcEkxJI
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2085
+Saved at  : 2026-06-21 01:34:56
+------------------------------------------------------------
+
+[00:00.06]  starting with what is your problem or
+[00:02.46]  what is your goal I would say this is a
+[00:04.74]  bigger challenge than most people
+[00:06.54]  recognize or realize eighty percent of
+[00:08.64]  the folks that I work with this is their
+[00:10.26]  biggest problem even at like executive
+[00:11.94]  levels teams will have gone off for
+[00:13.80]  several months and they're tackling
+[00:15.54]  something and they'll come back with
+[00:16.68]  uncertainty and they'll say like well
+[00:18.00]  you told me to improve developer
+[00:19.86]  experience I'm like okay what do you
+[00:21.42]  mean by this are you talking about inner
+[00:23.40]  and outer loop are you talking about
+[00:24.78]  friction are you talking about culture
+[00:26.52]  but if you're talking about culture this
+[00:28.38]  is totally different than if you're
+[00:29.58]  talking about friction in tool chains if
+[00:31.26]  you're on different pages you're heading
+[00:33.06]  in completely different directions
+[00:36.98]  welcome to Lenny's podcast where I
+[00:39.72]  interview world-class product leaders
+[00:41.16]  and growth experts to learn from their
+[00:42.72]  hard-winning experiences building and
+[00:44.22]  growing today's most successful products
+[00:46.08]  today my guest is Nicole forsgren this
+[00:49.26]  is actually my first recording back
+[00:50.64]  since going on Batley for the past
+[00:52.32]  couple of months and what an awesome
+[00:54.06]  episode to get back into the swing of
+[00:56.04]  things Nicole is the developer
+[00:58.62]  productivity expert having written the
+[01:00.84]  award-winning book accelerate and she's
+[01:02.94]  been the co-author of the state of
+[01:04.50]  devops report year after year she's
+[01:06.60]  currently a partner at Microsoft
+[01:08.34]  research leading developer productivity
+[01:10.38]  research and strategy and she's helped
+[01:12.60]  some of the biggest companies in the
+[01:13.68]  world move faster improve product
+[01:15.72]  quality and transform their cultures in
+[01:18.60]  our conversation we get into the weeds
+[01:20.58]  of how to go about measuring and
+[01:22.50]  improving your engineering team's
+[01:24.00]  productivity and experience we talk
+[01:26.22]  about the Dora framework and the space
+[01:27.90]  framework and how to actually Implement
+[01:29.94]  them to understand how your engineering
+[01:31.68]  team is doing Nicole also shares
+[01:33.60]  benchmarks for what Elite companies are
+[01:35.64]  at we talk about why moving faster turns
+[01:38.40]  out to be one of the best ways to
+[01:39.84]  improve quality and stability plus
+[01:42.30]  pitfalls you want to avoid and also a
+[01:44.34]  preview of a new book that she's working
+[01:46.02]  on and so much more enjoy this episode
+[01:48.54]  with Nicole forsgrin after a short word
+[01:51.30]  from our sponsors
+[01:53.52]  today's entire episode is brought to you
+[01:55.92]  by DX a platform for measuring and
+[01:58.44]  improving developer productivity DX is
+[02:00.96]  designed by the researchers behind
+[02:02.58]  Frameworks such as Dora space and devex
+[02:05.28]  including Nicole forsgren who is my
+[02:07.62]  guest for this very episode if you've
+[02:09.84]  tried measuring developer productivity
+[02:11.40]  you know that there are a lot of basic
+[02:12.84]  metrics out there and a lot of ways to
+[02:14.58]  do this wrong and getting that full view
+[02:16.62]  of productivity is still really hard DX
+[02:19.38]  tackles this problem by combining
+[02:20.94]  qualitative and quantitative insights
+[02:23.04]  based on the very research Nicole and
+[02:24.78]  her team have done giving you full
+[02:26.28]  clarity into how your developers are
+[02:27.90]  doing DX is used by both startups and
+[02:30.54]  Fortune 500 companies including
+[02:32.58]  companies like twilio amplitude eBay Rex
+[02:35.76]  toast Pfizer and Procter Gamble to learn
+[02:39.06]  more about DX and get a demo of their
+[02:40.92]  product visit their website at getdx.com
+[02:44.00]  Lenny that's getdx.com Lenny
+[02:48.72]  thank you
+[02:51.50]  Nicole Welcome to the podcast
+[02:54.30]  thank you so much I'm excited to be here
+[02:56.40]  I'm excited to have you here I actually
+[02:59.04]  skipped this question usually with
+[03:00.78]  guests but I thought it'd be actually
+[03:02.16]  really valuable to spend a little time
+[03:03.60]  on your background you have such a
+[03:05.34]  unique role and unique set of
+[03:07.14]  experiences could you just talk briefly
+[03:09.36]  about the things you've been up to in
+[03:11.16]  your career where you've worked and then
+[03:13.20]  what you're up to now and what you focus
+[03:14.82]  on these days sure and I appreciate the
+[03:17.34]  question because you're right I sort of
+[03:18.90]  had this like Choose Your Own Adventure
+[03:21.00]  background so I started as a software
+[03:23.28]  engineer at IBM I was uh writing
+[03:27.48]  software for like large Enterprise
+[03:29.04]  systems which meant I ended up running
+[03:31.26]  them I was so I was also a sis admin I
+[03:33.72]  was wrecking the stacking I was I was
+[03:35.70]  running these really really large labs
+[03:37.32]  and then I kind of stumbled into this
+[03:40.50]  seven day March for several years and I
+[03:42.60]  was like there has to be a better way
+[03:44.46]  and we're hearing like rumors of it but
+[03:45.96]  like management was not buying in and so
+[03:48.36]  I decided to win this battle with data
+[03:52.02]  and I was like I should go do a PhD me
+[03:55.14]  and so ended up kind of taking a slight
+[03:57.84]  pivot into uh PhD and management
+[04:01.74]  information systems which some people
+[04:03.96]  are less familiar with but it's
+[04:05.28]  basically a cross between Tech and
+[04:07.80]  business and I ended up getting a fairly
+[04:09.96]  technical PhD so I went to a school I
+[04:13.38]  went to University of Arizona which has
+[04:15.24]  a very very technical degree but I liked
+[04:17.88]  that it crossed with business because
+[04:19.26]  then I had the ability to make these
+[04:21.90]  strong business case statements right so
+[04:24.24]  it was like how is or is the way that we
+[04:28.62]  develop and deliver software tied to
+[04:31.08]  outcomes at the individual level right
+[04:33.06]  can I be more productive can I have
+[04:36.36]  better work-life balance and the team
+[04:38.46]  level is the team more productive is the
+[04:40.38]  team more efficient and the
+[04:42.12]  organizational level right this is what
+[04:44.10]  I was really interested in originally do
+[04:46.14]  I see better Roi do I see better
+[04:48.18]  efficiency because then I could sell it
+[04:50.46]  to people right and so that was really
+[04:52.86]  kind of what I originally went into and
+[04:55.08]  and I was a professor for a handful of
+[04:56.76]  years because like if you're doing
+[04:58.14]  research like traditionally that's
+[05:00.06]  that's the job in Academia I also had a
+[05:02.04]  master's in accounting because that
+[05:03.60]  really helped me make that kind of like
+[05:04.86]  Financial tie and understanding
+[05:06.42]  financial statements and then after you
+[05:08.94]  know a handful of years kind of walked
+[05:10.44]  away from tenure because Academia was
+[05:13.26]  not convinced that devops was a thing
+[05:14.76]  right the devops wasn't real and stayed
+[05:18.06]  a devops report who we you know I was
+[05:20.16]  doing with Dora devops research and
+[05:22.02]  assessment uh in collaboration with just
+[05:24.42]  humble and Gene Kim and we started that
+[05:26.82]  work with puppet so shout out to Alana
+[05:28.86]  Brown for starting that Nigel Karsten
+[05:30.84]  and the the team there uh we kind of
+[05:33.54]  pivoted away and you know Chef uh the
+[05:37.08]  little configuration management startup
+[05:38.64]  at the time uh hired me and they're like
+[05:41.34]  we'll give you half time to do research
+[05:42.90]  and have time to help our engineering
+[05:44.34]  practices improve that's cool yeah I
+[05:47.10]  mean they were incredible because like
+[05:48.72]  what startup is gonna be like yeah do
+[05:50.22]  research so I was there for a year and a
+[05:52.32]  half and then left to you know do door
+[05:55.14]  full time we had it we actually had a
+[05:57.48]  SAS offering so we continued this data
+[05:59.64]  devops report just under the Dora banner
+[06:01.62]  and we had a SAS offering because so
+[06:04.02]  many large companies were like I want my
+[06:06.18]  own customized
+[06:07.70]  measurement reading and report and then
+[06:11.40]  the joke there you know when we met with
+[06:13.26]  Gartner they were like you know your
+[06:14.70]  superpower here was that you tricked
+[06:16.14]  people into strategy which was not only
+[06:18.06]  how do I Benchmark that was kind of our
+[06:20.10]  top of the funnel because everyone wants
+[06:21.36]  to know how they compare
+[06:22.74]  but the important thing is what should
+[06:24.36]  you do next what's the most important
+[06:26.88]  Next Step so it's how do I measure what
+[06:29.10]  do I do next
+[06:30.54]  and that gave me this incredible view
+[06:33.36]  into
+[06:35.18]  advising large organizations into this
+[06:39.00]  transformation journey and then we built
+[06:41.10]  out this amazing partner Network because
+[06:42.48]  we weren't actually Consulting we just
+[06:43.98]  had this SAS piece but then how do you
+[06:45.54]  act on it we were then acquired by
+[06:48.18]  Google so I was CEO and co-founder so I
+[06:50.28]  kind of LED that that acquisition and
+[06:52.08]  then the integration and building out
+[06:53.34]  these teams in Google and after that
+[06:55.26]  point uh I joined GitHub which is you
+[06:58.62]  know this the largest uh developer
+[07:00.84]  Network so I had this amazing
+[07:02.10]  opportunity to do more grounded and
+[07:04.50]  applied research again I was VP research
+[07:06.42]  and strategy and uh then I went over to
+[07:09.72]  MSR where I kind of wear a couple hats
+[07:11.88]  so right now I have a research lab there
+[07:14.94]  with an incredible team uh it's the
+[07:17.22]  developer experience lab where we do a
+[07:18.90]  bunch of work across productivity
+[07:20.88]  community and well-being
+[07:22.86]  and then I also help with Microsoft's
+[07:26.16]  you know kind of cross company effort to
+[07:28.74]  improve their developer infrastructure
+[07:30.66]  so it's like sort of kind of this this
+[07:32.76]  round effort into like how do I really
+[07:36.60]  remain engaged in measuring applying
+[07:40.26]  thinking about this work both in like
+[07:42.84]  very applied concrete pieces and
+[07:45.96]  Incredibly forward-looking work with MSR
+[07:48.78]  amazing and just to clarify MSR this is
+[07:51.48]  at Microsoft yeah thank you yeah MSR is
+[07:53.82]  Microsoft research Okay cool so you've
+[07:56.58]  shared a couple of these terms devops
+[07:58.70]  developer productivity I'm curious what
+[08:01.20]  the term you like to use for this area
+[08:03.84]  you focus on develop productivity
+[08:06.18]  developer experience devops what's kind
+[08:07.92]  of the way the best way to think about
+[08:09.24]  this I really love that you asked this
+[08:11.28]  question because I think they're very
+[08:12.90]  related Concepts that people sometimes
+[08:15.06]  you know conflate but but I see them as
+[08:17.46]  being different so related but different
+[08:19.50]  so productivity I think is you know
+[08:22.14]  basically how much we can get done and
+[08:24.06]  how much we can do over time
+[08:26.10]  and I think that's why it's so important
+[08:27.66]  to have this holistic measure right
+[08:29.10]  because we can't just brute force it
+[08:30.78]  right so that's why when my team and I
+[08:33.48]  and a bunch of my peers study
+[08:35.76]  productivity we include this community
+[08:37.44]  effect right because software is a team
+[08:39.42]  sport we joke right and also why
+[08:41.64]  well-being is so important right because
+[08:43.50]  we see that when you do productivity the
+[08:45.66]  right way we see sustainability we see
+[08:47.88]  well-being we see reductions in Burnout
+[08:49.80]  now developer experience is very related
+[08:53.94]  and very tied to this and it contributes
+[08:56.28]  to productivity but developer
+[08:58.56]  experiences like if you think about who
+[09:00.54]  your users are right developers really
+[09:02.22]  are you are your users in this software
+[09:05.46]  engineering in the software development
+[09:07.56]  piece and so it's you know developer
+[09:10.44]  experience is sort of like what is it
+[09:12.06]  like to write software is this a
+[09:14.10]  friction free process is this a very
+[09:15.90]  predictable and certain experience right
+[09:19.56]  can we reduce this uncertainty and
+[09:22.20]  increase the predictability here to
+[09:24.12]  contribute to productivity
+[09:26.64]  and then how does devops fit into that
+[09:28.56]  just so that we kind of have the mental
+[09:29.88]  model of these terms people have sort of
+[09:32.46]  co-opted the terms and some people named
+[09:33.90]  their tools devops I'm maybe a little
+[09:35.88]  more old school so uh when I was doing a
+[09:39.00]  bunch of my devops research it was the
+[09:41.10]  capabilities and tools and processes
+[09:43.26]  that we can use to improve our software
+[09:46.02]  development and delivery end to end so
+[09:48.36]  that it's faster and it is more reliable
+[09:50.34]  so devops was kind of this technical
+[09:53.12]  architectural cultural practices that
+[09:56.10]  enable us to do this work better so that
+[09:58.62]  it is yes like more productive we have a
+[10:01.62]  better developer experience that was
+[10:03.30]  kind of this like again this very
+[10:04.80]  holistic picture so what I love about
+[10:07.26]  this topic is that I've never met a
+[10:09.90]  founder or a leader who is not thinking
+[10:12.96]  we need to move faster we need our
+[10:15.06]  Engineers to be more productive we need
+[10:17.22]  to get things out the door quicker we
+[10:19.38]  want Engineers to be happier like nobody
+[10:21.90]  doesn't want that and so that's why I'm
+[10:24.36]  excited to dig into a lot of these
+[10:25.62]  things is that roughly what you find as
+[10:27.54]  well that nobody's ever like we're good
+[10:29.28]  we don't need any of this we don't need
+[10:30.78]  to focus on this area you know what I'll
+[10:32.94]  say yes and right so
+[10:36.96]  and it kind of goes back to like why I
+[10:39.12]  got into this because on the one hand
+[10:41.64]  you won't say anyone who's saying uh
+[10:44.58]  like we're we don't really need to go
+[10:46.44]  faster everything's fine but at the same
+[10:49.02]  time very often I will come into
+[10:52.50]  scenarios or I'll find myself in
+[10:54.36]  scenarios where people are like
+[10:56.28]  I mean it would be nice if we were going
+[10:57.96]  faster but do we really need to show me
+[11:01.08]  the business case what's the ROI or if
+[11:04.68]  we go too fast we'll have an instability
+[11:07.20]  right what are our safety measures are
+[11:10.38]  we going to lose reliability what is
+[11:12.60]  happening right when I first started
+[11:13.98]  like ITIL and itsm right the the old
+[11:17.16]  school kind of change management
+[11:18.36]  processes
+[11:19.82]  the common knowledge was that you had to
+[11:23.82]  have at least a two-week
+[11:26.04]  wait for change approvals in order to
+[11:28.56]  get that stability turns out that's not
+[11:30.84]  right right it was just kind of
+[11:33.48]  an old wives tale right
+[11:36.18]  and so we kind of have this weird
+[11:40.02]  balance of I want to move faster but is
+[11:43.56]  it worth the investment
+[11:45.24]  what am I gonna get for it are you sure
+[11:48.24]  this is the priority or I've been in
+[11:52.38]  I've been in meetings where it's like oh
+[11:54.84]  yes absolutely right like this is this
+[11:57.90]  is a priority but it's the lowest
+[11:59.46]  priority and I'm like
+[12:01.38]  right so so then what we want to do is
+[12:04.50]  we want to have these
+[12:06.30]  these kind of pointed conversations or
+[12:09.36]  these kind of like Socratic type
+[12:11.40]  questions and conversations where it's
+[12:12.90]  like help me understand more what your
+[12:15.90]  concerns are are your concerns around
+[12:17.94]  reliability when you move faster we're
+[12:20.28]  not just trying to like all the guard
+[12:22.02]  rails down and Sprint for no purpose of
+[12:25.20]  sprinting and this is where kind of the
+[12:26.58]  Dora and devops research program comes
+[12:28.98]  into play where it's we don't just want
+[12:31.62]  to move fast and take all guard rails
+[12:33.54]  down we want to implement good technical
+[12:35.76]  practices like
+[12:37.32]  automated testing good architectural
+[12:40.02]  practices so that when you move fast you
+[12:42.72]  are also more stable right we want to be
+[12:45.66]  thinking about improving the developer
+[12:47.22]  experience so that when we are faster we
+[12:49.38]  are also Saving Time right and then we
+[12:51.00]  can highlight a handful of Statistics
+[12:52.56]  like what is your
+[12:55.68]  typical time for feature delivery what
+[12:58.80]  is your typical time to First PR what is
+[13:01.74]  your typical time to steady state
+[13:04.02]  productivity what is your typical time
+[13:05.94]  for code review and PR process and if we
+[13:10.20]  are to do like back of the napkin math
+[13:13.08]  what sorts of time are you spending here
+[13:16.74]  and if we do a rough look at industry
+[13:19.44]  what are your peers spending here
+[13:22.14]  and are we losing time right and if we
+[13:25.50]  could turn this into
+[13:26.88]  a value calculation
+[13:29.82]  what does that look like so that we can
+[13:31.80]  think about
+[13:33.36]  the priority and the strategy here and
+[13:36.54]  and I think that's where it becomes
+[13:40.20]  a more focused conversation
+[13:43.56]  this is a great segue too something I
+[13:45.30]  was going to get to a little bit later
+[13:46.20]  but let's just get into it which is the
+[13:48.30]  Dora framework and then there's also the
+[13:50.70]  space framework can you just talk about
+[13:52.74]  what these two are when you use one
+[13:54.24]  versus the other and then how that
+[13:55.62]  essentially helps you measure and then
+[13:57.66]  improve productivity and and uh and
+[13:59.94]  developer experience sure sure
+[14:02.28]  absolutely and I'm so glad you brought
+[14:03.72]  this up so Dora is it's an entire
+[14:06.96]  research program now many people when
+[14:08.94]  they hear Dora now they think of the
+[14:11.34]  Four Keys or the Dora four or the four
+[14:13.44]  metrics and I think that's what the
+[14:15.72]  research program and and the company
+[14:17.70]  ended up becoming most known for and so
+[14:21.00]  that was the software delivery
+[14:23.34]  performance metrics and those are
+[14:27.00]  there's two speed and two stability
+[14:28.68]  metrics so the speed metrics are lead
+[14:31.14]  time so how long does it take to get
+[14:33.66]  from code committed to code running in
+[14:35.34]  production deployment frequency how
+[14:38.22]  often do you deploy code
+[14:40.26]  and then the stability metrics are mttr
+[14:44.10]  uh meantime to restore so if something
+[14:46.32]  happens how long does it take you to
+[14:48.12]  come back and then change fail rate for
+[14:51.36]  every change that is pushed you know
+[14:54.54]  what's the rough percentage of incidents
+[14:57.54]  or like that require human intervention
+[14:59.94]  right now the thing that was really
+[15:01.92]  interesting is when we started measuring
+[15:04.20]  these we found that they move in tandem
+[15:08.40]  now like with
+[15:10.38]  very strong significance right from a
+[15:14.10]  statistical standpoint now what this
+[15:16.14]  means is now we say speed and stability
+[15:18.18]  move together most people only think
+[15:20.28]  about this from the speed standpoint
+[15:21.66]  which means when you move faster you are
+[15:23.16]  more stable
+[15:24.42]  which means you're you're pushing
+[15:25.98]  smaller changes more often right so if
+[15:27.60]  you're pushing all the time it's going
+[15:28.92]  to be very very small changes which
+[15:30.06]  means you have a smaller blast radius
+[15:31.80]  which means when you push you have an
+[15:34.44]  error in production it's going to be
+[15:36.18]  easier to debug right uh it's going to
+[15:38.58]  be much easier to figure all that out uh
+[15:40.68]  your mean time to restore and mitigate
+[15:42.54]  it's going to be much faster
+[15:44.22]  but that also means is the reverse when
+[15:46.86]  you push changes less frequently you
+[15:49.50]  will have more unstable systems because
+[15:52.50]  when you push less frequency you will
+[15:54.72]  have very very large batch changes which
+[15:58.20]  means you'll have a very high very large
+[16:00.96]  blast radius which means when you do
+[16:03.18]  have a resulting
+[16:05.64]  bug error you will have to disentangle
+[16:09.32]  this big you know
+[16:12.00]  ball of mud right and figure out which
+[16:14.58]  piece actually caused the error
+[16:16.98]  figure all of that out
+[16:20.04]  that ended up being a big surprise right
+[16:22.92]  because
+[16:23.76]  refer to my prior comment about I you
+[16:25.86]  know ITIL and itsm if you're forcing a
+[16:28.92]  two-week
+[16:30.60]  pause for change approvals
+[16:33.96]  you're causing this batching up of
+[16:35.82]  changes and sometimes people were
+[16:37.20]  waiting if two weeks is good a month
+[16:39.12]  must be better or three months must be
+[16:40.86]  better or six months must be better and
+[16:43.20]  I mean just think about the merge
+[16:44.40]  conflicts you're causing right you're
+[16:46.08]  just causing so many challenges and
+[16:48.48]  figuring out how to push this code into
+[16:49.92]  production
+[16:51.72]  so many people think of those four
+[16:53.58]  metrics one because we found that speed
+[16:55.68]  and stability moved together and two
+[16:57.18]  because we started publishing benchmarks
+[16:59.22]  on what this looks like for low medium
+[17:02.82]  high and then Elite performers for many
+[17:04.80]  times
+[17:05.82]  this I believe may have been interesting
+[17:08.54]  uh I'm not sure if it was useful or
+[17:11.04]  helpful but I think it was interesting
+[17:12.60]  because it gave people at least
+[17:16.02]  something to shoot for something to aim
+[17:18.30]  for I will definitely say what's most
+[17:20.64]  important is knowing where you are and
+[17:22.32]  the progress that you're making right it
+[17:24.48]  doesn't matter if frankly you're a high
+[17:26.52]  performer or you're an elite performer
+[17:28.86]  it matters that you know where you are
+[17:30.78]  and you're making progress right
+[17:33.12]  you know can you push daily or on demand
+[17:35.58]  or
+[17:36.72]  is your only technical capability you
+[17:39.42]  can push twice a year right just know
+[17:42.06]  where you are and is it a business
+[17:43.68]  decision or a technical capability
+[17:45.24]  that's basically what it comes down to
+[17:46.92]  I'm gonna jump in real quick just to
+[17:49.08]  highlight what you're talking what you
+[17:50.88]  just said which I think is extremely
+[17:52.50]  important and powerful and people might
+[17:54.54]  kind of move on too quickly uh I also
+[17:57.60]  want to ask you what actual benchmarks
+[17:58.86]  are if you can share those whatever you
+[18:00.60]  want to share there but before I ask
+[18:01.62]  that essentially what you're sharing
+[18:03.54]  right now is just I feel like the 64 000
+[18:06.30]  question of this episode is just how do
+[18:08.82]  I move faster as a team and what I'm
+[18:12.06]  hearing is essentially it's ship smaller
+[18:14.82]  things is kind of at the core of it and
+[18:17.40]  also if we're if quality is low you're
+[18:20.94]  also saying the answer is more
+[18:23.28]  often ship smaller things is that
+[18:24.96]  roughly the message yes absolutely it
+[18:28.08]  ends up being much much safer amazing so
+[18:30.66]  I think that's an extremely important
+[18:32.34]  takeaway uh that I think people would I
+[18:35.64]  don't know that's surprising to me to
+[18:36.96]  hear that it's uh quality comes from
+[18:39.48]  Shipping faster and and also to ship
+[18:42.00]  faster and move help your team move
+[18:43.62]  faster it's Chip smaller things and and
+[18:45.90]  just deploy more often yep amazing okay
+[18:48.84]  great I know we'll talk more about this
+[18:51.06]  but let me go back to the question I was
+[18:52.68]  going to ask because yeah okay are you
+[18:54.90]  are there benchmarks you can share just
+[18:56.52]  right now that you think would be useful
+[18:58.02]  to people and they said it was
+[18:58.92]  interesting and maybe not as useful to
+[19:00.18]  people as you imagine yeah uh so I will
+[19:02.52]  admit I I only have the 2019 benchmarks
+[19:06.60]  top of mind the team at Google has
+[19:08.76]  continued that work since I left uh it's
+[19:10.86]  been led by uh Dr Dustin Smith Nathan
+[19:14.46]  Harvey continues the work so huge shout
+[19:16.86]  out to that team many others uh
+[19:18.60]  participate you can go to dora.dev and
+[19:22.44]  find all of the continued reports
+[19:24.42]  they've integrated all of this work but
+[19:26.88]  I will say they've they've remained
+[19:28.74]  fairly consistent so so really quickly
+[19:30.78]  I'll share the Elite Performance so
+[19:33.42]  deployment frequency you can deploy on
+[19:35.28]  demand
+[19:36.18]  lead time for changes takes less than a
+[19:38.40]  day time to restore is less than an hour
+[19:41.16]  and your change fail rate is between
+[19:43.26]  zero and fifteen percent amazing okay
+[19:45.78]  I'm writing these down these are
+[19:47.22]  extremely valuable and I will mention
+[19:49.62]  people will say well this is kind of
+[19:51.12]  like
+[19:52.08]  a chunk of time right it's not super
+[19:54.18]  precise
+[19:55.92]  Precision isn't really super important
+[19:58.08]  here right like I don't it doesn't
+[19:59.58]  really matter if you can like if your
+[20:01.80]  lead time is
+[20:03.00]  if it's less than a day it's less than a
+[20:04.86]  day right like that's fine from a
+[20:06.66]  business
+[20:07.80]  perspective it doesn't matter if it's
+[20:09.78]  like
+[20:11.22]  four hours or like four hours and two
+[20:13.98]  minutes right
+[20:17.04]  General categories
+[20:19.92]  are fine now I will say like the next
+[20:22.32]  category for lead time for changes by
+[20:23.82]  the day is if uh lead time is between a
+[20:27.30]  day and a week and this is for for good
+[20:29.46]  for hot yeah between Elite and high
+[20:31.62]  Elite is less than a day and high is
+[20:33.42]  between a day and a week
+[20:35.34]  and then it goes between a week and a
+[20:36.90]  month and between a month and six months
+[20:39.06]  right so so you can ask people and they
+[20:42.42]  can tell you right they can kind of
+[20:43.62]  hunch it
+[20:44.78]  and this is from it's a committing code
+[20:47.46]  into the repo and going out into
+[20:49.92]  production to it to about like ring zero
+[20:53.58]  so you don't like don't worry if it's
+[20:55.92]  like oh well now we need to think about
+[20:57.72]  like the global deploy and like which is
+[20:59.64]  the final endpoint it's like how long
+[21:02.04]  does it take to get
+[21:04.56]  through your deployment pipeline because
+[21:09.24]  are you going to be surprised do you
+[21:11.64]  have fast feedback loops how does your
+[21:14.40]  deployment pipeline work does your
+[21:17.40]  deployment pipeline work right
+[21:20.70]  or are you going to commit code
+[21:23.28]  are you going to wait for that final
+[21:24.78]  review for about three months
+[21:27.36]  is something going to happen or break
+[21:29.10]  and when it comes back to the developer
+[21:31.32]  because something happened or broke
+[21:32.64]  because that kind of happens right are
+[21:34.86]  they going to have to insert themselves
+[21:36.90]  back in the code re-review all the
+[21:38.64]  things that happened three months ago
+[21:39.96]  all so many other things happened
+[21:42.78]  that's incredibly difficult which to
+[21:45.30]  your prior question this is how it
+[21:47.52]  relates to the developer experience if
+[21:50.04]  something happened less than a day and
+[21:53.04]  like it's a surprise and it's not great
+[21:54.54]  but like whatever right something
+[21:56.04]  happened Downstream and I gotta fix it
+[21:58.50]  I'm still sitting in my code right in my
+[22:01.32]  head I've got that mental model I know
+[22:03.18]  what happened maybe it's not great but
+[22:05.22]  it's fine
+[22:06.30]  if it happened three months ago
+[22:09.18]  and I get interrupted first of all
+[22:11.64]  interruptions like suck that's not fun
+[22:13.68]  second of all now I've got a like
+[22:16.58]  re-remember
+[22:18.14]  re-read all of this code maybe reload an
+[22:22.02]  entire new workspace instead of
+[22:24.00]  libraries and everything because I
+[22:25.80]  maybe it's a whole quarter ago and like
+[22:28.14]  we thought we were done
+[22:31.38]  and I got to do the whole thing all over
+[22:33.14]  if a listener is working at a startup I
+[22:36.00]  imagine they're hearing this and they're
+[22:37.02]  like takes a data ship that we ship all
+[22:40.26]  day a thousand times a day I imagine
+[22:42.36]  these benchmarks are more valuable for
+[22:44.82]  larger companies is there a kind of
+[22:46.74]  buckets you think about for like here's
+[22:48.96]  the size of company this is meant for
+[22:51.30]  and then do you think about anything
+[22:52.50]  differently for a startup say I don't
+[22:54.18]  know 10 people if anyone is only
+[22:56.76]  listening to this I just got the biggest
+[22:58.50]  smile because we saw no statistical
+[23:01.62]  significance between small companies and
+[23:04.50]  large companies the only statistical
+[23:06.48]  significant statistically significant
+[23:08.52]  difference was with retail I'll come
+[23:10.32]  back to that it's so funny because large
+[23:12.78]  companies would say oh but this isn't
+[23:15.24]  fair for us we have more complex code
+[23:16.98]  bases we have so many things to do small
+[23:19.56]  companies just don't have to deal with
+[23:21.00]  this small companies would come to me
+[23:22.98]  and they would say oh but this isn't
+[23:24.36]  fair large companies have so much money
+[23:26.22]  they have so many resources they don't
+[23:27.78]  have to deal with all the things this
+[23:29.04]  doesn't apply to me
+[23:30.48]  wow so it's like either way
+[23:33.60]  and on days when I was feeling real
+[23:35.04]  snarky I'd be like pick your excuse
+[23:37.58]  you've got your like drop down now when
+[23:42.12]  I say retail was a bit of an outlier
+[23:45.24]  they had a statistically significant
+[23:47.40]  difference
+[23:48.78]  their difference was that they were
+[23:50.22]  actually better why now I can't tell you
+[23:53.58]  why I can in a research paper we'd have
+[23:56.04]  a discussion section and this is where
+[23:57.48]  you like get to guess
+[23:59.10]  right
+[24:00.72]  I would surmise and we do this in the
+[24:04.14]  report that it's probably because retail
+[24:06.90]  went through the retail apocalypse right
+[24:09.66]  if you didn't survive like if you
+[24:12.06]  weren't just killing it you did not
+[24:13.56]  survive
+[24:14.88]  so many retail firms just did not make
+[24:18.72]  it through you had to be at the top of
+[24:20.58]  your game there was no such that my
+[24:22.80]  Black Black Friday there's no such thing
+[24:25.02]  as not having systems that are
+[24:27.36]  performing incredibly well there's no
+[24:29.40]  such thing as not being in the cloud
+[24:30.84]  because if you cannot make it through
+[24:32.48]  you know
+[24:34.46]  bursting on demand
+[24:37.08]  bursting like magic sometimes I joke
+[24:38.82]  right you're not gonna make it
+[24:41.34]  and so I suspect if I were to guess
+[24:45.60]  if you're not already a high performer
+[24:47.70]  in the retail space
+[24:51.24]  natural selection got rid of you that is
+[24:54.06]  really interesting that makes a lot of
+[24:55.14]  sense
+[24:56.04]  so I'm looking at these thresholds again
+[24:58.14]  and I'm thinking from the perspective of
+[25:00.54]  a Founder who's just like I wish my
+[25:02.04]  engineering team moved faster
+[25:03.78]  essentially you're saying if deploy
+[25:06.18]  times if they deploy more than once a
+[25:08.40]  day if their deploy frequency is on
+[25:10.32]  demand or I think it was hourly was kind
+[25:12.48]  of the other bucket it was that part of
+[25:13.98]  it yeah and then their meantime their
+[25:17.10]  fail rate is like less than 10 percent
+[25:18.66]  and their mean time to recovery is less
+[25:21.36]  than an hour basically you're doing
+[25:23.28]  great that's kind of the message of this
+[25:25.44]  framework at least and if you're not
+[25:28.02]  doing it through like brute force and
+[25:29.76]  killing yourself now can I can I jump in
+[25:33.00]  here because then people are like but
+[25:35.28]  how do I do this so let's say that like
+[25:37.98]  you're not in that category and you're
+[25:39.84]  like
+[25:40.62]  because this is the next this is the
+[25:42.72]  piece of criticism I'll get about Dora
+[25:44.34]  right people are like
+[25:46.98]  well all you've done is make me feel bad
+[25:50.04]  you gave me these metrics you've judged
+[25:53.16]  me now I feel bad and then I'm like
+[25:57.06]  so there's Dora there I wrote a book
+[25:58.62]  called accelerate right which is like
+[26:00.66]  the first four years of the research
+[26:03.24]  compiled and put together and expanded
+[26:05.52]  in a few things and I'll joke there's a
+[26:07.50]  whole rest of the book right
+[26:09.96]  Dora is best known for the four metrics
+[26:12.36]  but there's an entire research program
+[26:14.22]  supporting it so it's not just these
+[26:17.58]  four metrics what we find is that if you
+[26:20.64]  improve a set of capabilities I loved
+[26:22.80]  your question around what is devops
+[26:24.06]  devops is not a tool chain you buy
+[26:25.56]  marketing teams label tool chains devops
+[26:27.78]  because they wanted your money devops is
+[26:30.30]  a set of capabilities they're technical
+[26:32.16]  capabilities their architectural
+[26:33.66]  capabilities their cultural capabilities
+[26:35.52]  they are lean management practices
+[26:38.96]  that predict
+[26:42.06]  speed and stability and then speed
+[26:44.52]  instability gives you money
+[26:46.44]  right because like it's your ability to
+[26:48.66]  create these features that give you
+[26:50.52]  money so when you work backwards if you
+[26:52.80]  want money like you get the features
+[26:54.18]  fast if you want the features fast and
+[26:56.28]  stable you do the things and the things
+[26:58.68]  are technical capabilities like
+[27:01.20]  automated testing
+[27:02.82]  cicd and cicd is continuous integration
+[27:06.72]  continuous deployment is that right yes
+[27:10.74]  um trunk-based development
+[27:13.44]  using a Version Control System
+[27:15.90]  right
+[27:17.10]  so do you have good technical practices
+[27:20.88]  do you have good architectural practices
+[27:23.52]  like do you have a Loosely coupled
+[27:25.62]  system
+[27:26.46]  are you using the cloud or like if
+[27:29.10]  you're not in the cloud for whatever
+[27:30.18]  reason are you using the underlying
+[27:34.14]  architectural pieces that enable good
+[27:37.08]  cloud
+[27:38.46]  to do the cloud right or if you're in
+[27:40.26]  the cloud and you're not realizing
+[27:41.46]  benefits is it because you're doing
+[27:42.48]  Cloud wrong right do you have a good
+[27:44.58]  culture
+[27:47.94]  so you know you don't you don't just
+[27:50.76]  like magically go fast and have
+[27:52.62]  stability right so working backwards
+[27:54.78]  which pieces are you struggling at now
+[27:56.94]  uh you kind of noted down the benchmarks
+[27:59.94]  if you go to dora.dev the the team at
+[28:02.82]  Google was lovely we uh we worked really
+[28:05.94]  closely with the team they're keeping
+[28:07.14]  this updated you can take a quick check
+[28:09.00]  there's a button there that says quick
+[28:10.26]  check you can plug in where you kind of
+[28:12.30]  think you are like I said you can hunch
+[28:14.10]  it
+[28:15.00]  and it'll tell you where you are in the
+[28:16.74]  benchmarks today
+[28:18.18]  and what industry you're in and then the
+[28:20.40]  cool part is it'll say now like you'll
+[28:22.86]  want to ask yourself
+[28:24.42]  like where am I struggling but it'll say
+[28:26.88]  for your performance profile and for the
+[28:30.78]  industry that you're in statistically
+[28:32.64]  over the last several years these are
+[28:34.92]  probably your constraints
+[28:36.96]  AKA these are probably the things that
+[28:39.36]  you're struggling in right now right
+[28:40.92]  like for people in finance who are high
+[28:44.64]  performers they tend to struggle with
+[28:47.94]  these four things right whether it's
+[28:49.92]  like culture or continuous integration
+[28:52.32]  or
+[28:53.58]  whatever I love that you're getting
+[28:55.50]  tactical with how to actually improve
+[28:57.00]  these already which is the bread and
+[28:58.14]  butter of this podcast and so we'll link
+[29:00.78]  to this quick check because there's
+[29:01.92]  door.dev Quick Check and by the way they
+[29:04.26]  do not collect your name they do not
+[29:05.64]  collect your info there is no there's no
+[29:08.22]  lead any lead gen anything everything's
+[29:11.16]  just there
+[29:12.24]  and then there's deep dives into every
+[29:13.92]  single one of the capabilities
+[29:15.54]  amazing and also your book talks about
+[29:17.40]  all these things so people should go
+[29:18.72]  check out the book obviously it's on
+[29:19.98]  Amazon search accelerate is that right
+[29:22.14]  yep okay so we were talking about Dora
+[29:24.72]  this may be a good time to talk about
+[29:26.10]  space which I think is a different
+[29:27.84]  framework you recommend what is that all
+[29:30.42]  about okay so space is a way to measure
+[29:35.04]  we say productivity developer
+[29:36.72]  productivity but it's a little bit more
+[29:38.82]  than that space is a good way to measure
+[29:41.40]  any type of complex creative work now
+[29:44.64]  how do they relate
+[29:46.98]  let's say you go through the quick check
+[29:50.46]  it points out like four things and you
+[29:52.38]  decide you want to improve continuous
+[29:53.76]  integration and culture right
+[29:56.88]  well now you're like cool but how am I
+[29:59.40]  going to actually measure them
+[30:01.20]  this is where space comes in because
+[30:03.66]  space helps you figure out space gives
+[30:06.84]  you a framework to pick the right
+[30:09.42]  metrics
+[30:12.06]  now some people are like well space you
+[30:14.10]  didn't give me the exact metrics people
+[30:15.66]  love Dora because it's like here's the
+[30:17.16]  exact four you need
+[30:18.74]  well space is like when you want to
+[30:21.54]  measure something that's complex
+[30:23.46]  creative work maybe like developer
+[30:25.62]  productivity there's also an example at
+[30:27.72]  the bottom for Incident Management
+[30:30.72]  when you have something you want to
+[30:32.40]  measure it says within your context
+[30:34.74]  within the metrics you have available to
+[30:37.26]  you here's how to pick
+[30:40.50]  that's what space is good for now we
+[30:42.84]  called it space because it stands for
+[30:45.66]  the five Dimensions that you want to
+[30:47.58]  measure so s is satisfaction and
+[30:51.06]  well-being
+[30:53.28]  so satisfaction well-being is kind of
+[30:55.14]  self-explanatory now some people might
+[30:57.00]  jump in here and say oh well you're just
+[30:58.74]  you know touchy feeling this actually
+[31:00.90]  matters because we find that
+[31:02.22]  satisfaction well-being ends up being
+[31:03.66]  incredibly highly correlated with all of
+[31:06.36]  the other dimensions of productivity and
+[31:08.70]  doing things well and as soon as
+[31:11.84]  satisfaction well-being things like uh
+[31:14.52]  sustainability if you're satisfied as
+[31:16.50]  soon as that starts falling off other
+[31:18.24]  things start to break so this can be an
+[31:20.22]  incredibly strong and important signal
+[31:22.44]  p is performance this is going to be the
+[31:24.66]  outcome of a process
+[31:26.22]  so reliability
+[31:28.88]  within Dora the mttm or change fail rate
+[31:32.16]  right those are both performance metrics
+[31:33.96]  and so you pick one to kind of measure
+[31:35.88]  as performance yep uh a is activity
+[31:40.02]  anytime you have a count or a number of
+[31:42.48]  something these we see all the time
+[31:44.52]  because they're super easy to instrument
+[31:46.08]  and automate right number of pull
+[31:48.48]  requests number of check-ins number of
+[31:51.42]  something that's a
+[31:53.34]  C is communication collaboration
+[31:55.86]  this can be how people work and talk
+[31:58.32]  together it can be meetings it can be
+[32:00.00]  collaboration it can also be how our
+[32:01.74]  systems communicate together it can be
+[32:04.08]  the search ability of a code base
+[32:06.42]  and then e is efficiency and flow so
+[32:09.24]  this is going to be the flow through the
+[32:11.28]  system it can be the time through the
+[32:13.08]  system if we think about SRE or Incident
+[32:15.84]  Management can be the number of hops a
+[32:18.24]  ticket takes until it reaches the right
+[32:19.80]  person
+[32:21.48]  now to use space correctly we want to
+[32:24.72]  use at least three dimensions at a time
+[32:27.12]  because that helps us balance
+[32:29.34]  turns out Dora is actually an
+[32:31.02]  implementation of space so Dora would be
+[32:33.54]  space four
+[32:35.34]  mostly that outer loop hmm
+[32:38.64]  so again once you've found something
+[32:40.68]  that you want to improve
+[32:42.90]  find the metrics that make sense to you
+[32:45.72]  try to have them be in balance or
+[32:47.70]  intention so you don't like throw
+[32:48.78]  something out of whack but pick three
+[32:51.90]  So when you say door is an
+[32:53.04]  implementation of space one has five
+[32:55.20]  buckets one has four how does how do you
+[32:58.26]  actually think about that so space is
+[33:00.72]  there to help you think about how you
+[33:02.58]  want to pick metrics right so a lot of
+[33:04.08]  time I see people so let me half step
+[33:06.84]  back I used to advise people on how to
+[33:09.42]  pick metrics right for years people
+[33:11.34]  would would pull me in to advise on Dora
+[33:14.04]  or accelerate right they would ask me
+[33:16.14]  questions but it ended up being metrics
+[33:18.78]  questions a lot
+[33:20.22]  how do I pick the right metrics
+[33:22.50]  to improve what I'm doing right like I
+[33:24.84]  said they had the Dory numbers
+[33:27.00]  they would pick their constraints and
+[33:28.74]  they wanted to improve but how do I
+[33:30.42]  improve how do I measure this
+[33:32.70]  how do I show Improvement
+[33:34.80]  and so we would start thinking really
+[33:36.72]  critically about which metrics were the
+[33:38.76]  right metrics to pick
+[33:40.32]  and I would always say make sure you
+[33:42.12]  pick balanced metrics make sure you
+[33:44.46]  picked pick metrics that are intention
+[33:48.06]  and I could say it but people have a
+[33:51.30]  hard time wrapping that around their
+[33:52.38]  heads because they kept picking things
+[33:54.12]  like number of lines of code never
+[33:56.16]  picked number of lines of code oh wow
+[33:57.66]  number of still every month I didn't
+[33:59.46]  even know about this number of pull
+[34:01.20]  requests number of commits
+[34:03.96]  and I was like these are all activity
+[34:05.94]  metrics and so finally I pulled a few of
+[34:08.16]  my friends together and I was like
+[34:09.72]  let's come up with a framework to help
+[34:11.82]  people think about it and so there are
+[34:14.10]  five broad categories
+[34:16.50]  pick three because that will help Force
+[34:20.04]  you through the mental exercise of what
+[34:22.92]  could I possibly pick
+[34:25.08]  you don't need all five right this isn't
+[34:27.36]  we're not playing bingo we're not
+[34:28.92]  playing blackout Bingo you don't need
+[34:30.18]  all of them
+[34:31.14]  but try to have at least three
+[34:33.96]  cross different dimensions now one
+[34:35.82]  example here I was working with a group
+[34:37.74]  that wanted to improve their pull
+[34:38.88]  requests very generally they just said
+[34:41.46]  improved pull requests so they were
+[34:42.78]  thinking about pinging someone every 15
+[34:45.96]  minutes and I was like oh this is going
+[34:47.64]  to be bad
+[34:48.72]  because we know from other literature
+[34:51.00]  and research like nursing you'll get
+[34:53.10]  alert fatigue where people will just
+[34:54.96]  start tuning out alerts
+[34:57.00]  either they'll turn them off or they
+[34:58.68]  will just stop hearing them so like
+[35:00.96]  number of alerts right they're like
+[35:03.30]  let's just think about number of alerts
+[35:05.34]  and I said well but if we think about
+[35:07.02]  efficiency and flow
+[35:09.14]  how much time do you have to work
+[35:13.20]  on your coding
+[35:14.94]  so those two are balanced
+[35:18.90]  so we need to protect time to work
+[35:21.72]  as well as
+[35:24.60]  code review time right pull request time
+[35:28.68]  and so sometimes we can think about
+[35:30.66]  those and then and then we I think we
+[35:32.22]  added a satisfaction metric are you
+[35:34.02]  satisfied with the pull request
+[35:36.48]  process and the selection of the
+[35:38.34]  reviewer
+[35:39.60]  how do you go about actually capturing
+[35:41.22]  and measuring this say satisfaction so
+[35:43.86]  for satisfaction I would I would
+[35:45.90]  generally ask right go ahead and ask now
+[35:48.48]  the ones that you instrument you can
+[35:50.64]  instrument and pull out of systems all
+[35:52.08]  the time right go ahead and grab that
+[35:53.58]  string for a satisfaction metric I would
+[35:56.16]  only pull that
+[35:57.48]  like periodically right once every few
+[36:00.12]  months like a survey to your engineering
+[36:01.98]  like a survey yep absolutely
+[36:04.44]  awesome and don't don't discount what
+[36:07.26]  people say right sometimes I hear
+[36:09.12]  actually not sometimes a lot of times I
+[36:10.56]  hear people say oh but people lie
+[36:12.90]  first of all what is their incentive to
+[36:14.58]  lie why would they lie about having a
+[36:17.10]  bad system
+[36:18.84]  uh because it's bad and they want it
+[36:20.70]  fixed right
+[36:22.62]  if it's absolutely a hostile work
+[36:24.66]  environment they might lie and then tell
+[36:26.94]  you what's good then you have bigger
+[36:28.62]  problems right
+[36:30.60]  also
+[36:32.64]  do we ever see bad data from our systems
+[36:35.40]  or incomplete data for my systems
+[36:37.80]  that's a lie
+[36:39.84]  but we find ways to deal with it we see
+[36:42.48]  it we acknowledge it we look for holes
+[36:45.06]  in our system data
+[36:46.62]  we try to deal with it right
+[36:49.50]  that's also a lie so I think there are
+[36:52.26]  better ways to think about and deal with
+[36:55.50]  that
+[36:56.58]  and then try to work with it right
+[36:58.20]  because then I I wrote a paper with Mick
+[37:01.44]  Kirsten on this several years ago on how
+[37:06.00]  data from people and data from systems
+[37:08.64]  are really important complements because
+[37:10.44]  we can get certain insights from people
+[37:12.30]  that we'll never get from systems right
+[37:14.46]  like let's look at lead time from
+[37:16.26]  changes for example right from commit to
+[37:17.88]  deploy
+[37:19.08]  the speed might be fine but people might
+[37:22.02]  tell you it's taking absolute heroics
+[37:24.06]  right it's some ridiculous Rube Goldberg
+[37:26.76]  machine the system will never tell you
+[37:29.22]  that
+[37:30.96]  or you could get data on
+[37:34.32]  your version control system
+[37:36.42]  I worked with a company several years
+[37:38.22]  ago and we found out that there was a
+[37:40.74]  significant portion code that was just
+[37:42.30]  not going into any Version Control
+[37:44.16]  System you're never going to find that
+[37:46.38]  out from your systems because it's not
+[37:48.72]  in the systems
+[37:50.58]  and it was mission critical I can see
+[37:53.10]  why people come to you asking for advice
+[37:54.90]  on metrics because you have this
+[37:56.10]  framework of here's the type of metrics
+[37:58.08]  you want and then I think and especially
+[38:00.54]  from engineering team there's going to
+[38:02.34]  be this like how do I optimize and make
+[38:04.02]  sure I'm doing the right thing and
+[38:05.10]  measuring the right things for someone
+[38:06.96]  that wants to do this and you know an
+[38:10.02]  hour-long podcast isn't going to give
+[38:11.28]  them all the answers what do you
+[38:12.78]  recommend they go read or go do or look
+[38:15.78]  at to help them figure that out one I I
+[38:18.84]  hate to be this person uh but I'll point
+[38:21.12]  to a few of my papers because I will say
+[38:22.80]  I write things down because I get asked
+[38:26.04]  them so often and I want to make sure it
+[38:28.56]  is broadly applicable or like broadly
+[38:30.36]  available I guess this space paper for
+[38:32.88]  sure it's at ACM and I think the year we
+[38:36.00]  published it it was like the most read
+[38:37.32]  paper
+[38:38.52]  um at acmq yeah so we tried to make it
+[38:41.46]  as
+[38:42.90]  readable as possible so the space paper
+[38:45.42]  is nice because it outlines this
+[38:47.04]  framework and it gives examples of
+[38:49.32]  metrics in every single category and so
+[38:51.78]  hopefully people can look at this and
+[38:53.34]  they can say okay here's an example to
+[38:56.22]  use here right here are some of the
+[38:58.02]  things that I could possibly use and
+[39:00.24]  we're seeing that space is being used
+[39:02.04]  lots and lots of different places
+[39:04.68]  another good one could be the paper that
+[39:07.50]  I mentioned with Mick Kirsten and it was
+[39:09.90]  about we talked about using
+[39:12.00]  data from people and data from systems
+[39:14.28]  we used we wrote it up in the devops
+[39:16.32]  context because I want to say this was
+[39:17.70]  written in like 2016 or 2017 or
+[39:20.40]  something but it helps you think through
+[39:23.52]  what types of data are good in which
+[39:25.62]  situations right because you will never
+[39:29.22]  find yourself in a situation when you
+[39:31.50]  don't want both types of data
+[39:34.08]  even teams that I've worked with that
+[39:36.00]  are
+[39:36.92]  the most advanced they have absolute
+[39:41.46]  instrumentation in every possible
+[39:43.62]  scenario
+[39:46.32]  in the most detailed way
+[39:49.02]  they will still survey
+[39:51.54]  their developers at least once a year
+[39:53.40]  because you can get new insights right
+[39:58.04]  one book that I love it's
+[40:01.20]  it's a little dense but it's really
+[40:03.00]  interesting that I love is how to
+[40:04.92]  measure anything
+[40:06.48]  and it's by Hubbard
+[40:10.20]  and there are parts of it they're like
+[40:11.76]  real stats heavy but he has this portion
+[40:13.98]  in the front that's like
+[40:16.98]  in covering intangibles and it's so it's
+[40:19.32]  like what what happens when you don't
+[40:21.48]  have data you have no data you're
+[40:24.36]  starting from nothing what are good ways
+[40:26.52]  to hunch
+[40:27.60]  data
+[40:29.16]  and I really love that because he he
+[40:31.32]  covers some really good ground there
+[40:34.20]  today's entire episode is brought to you
+[40:36.60]  by DX a platform for measuring and
+[40:39.12]  improving developer productivity DX is
+[40:41.64]  designed by the researchers behind
+[40:43.26]  Frameworks such as Dora space and devex
+[40:46.02]  including Nicole forsgren who is my
+[40:48.30]  guest for this very episode if you've
+[40:50.58]  tried measuring developer productivity
+[40:52.08]  you know that there are a lot of basic
+[40:53.52]  metrics out there and a lot of ways to
+[40:55.26]  do this wrong and getting that full view
+[40:57.30]  of productivity is still really hard DX
+[41:00.06]  tackles this problem by combining
+[41:01.68]  qualitative and quantitative insights
+[41:03.72]  based on the very research Nicole and
+[41:05.46]  her team have done giving you full
+[41:06.96]  clarity into how your developers are
+[41:08.64]  doing the x is used by both startups and
+[41:11.22]  Fortune 500 companies including
+[41:13.26]  companies like twilio amplitude eBay Rex
+[41:16.44]  toast Pfizer and Procter Gamble to learn
+[41:19.74]  more about DX and get a demo of their
+[41:21.60]  product visit their website at getdx.com
+[41:25.04]  that's getdx.com Lenny
+[41:29.94]  you also mention Offline that you might
+[41:32.04]  be working on a book that will answer a
+[41:34.08]  lot of these questions is that something
+[41:35.40]  you're up for chatting about yeah
+[41:37.20]  absolutely so as I mentioned I tend to
+[41:39.54]  write write things down when I get asked
+[41:42.66]  questions on it a lot and so this is one
+[41:44.70]  in particular so we'll be covering you
+[41:46.86]  know I'm I'm starting to go through and
+[41:48.48]  I'm covering some of these and I think
+[41:49.92]  some of the important topics in
+[41:51.84]  particular are
+[41:53.10]  you know starting with what is your
+[41:55.68]  problem or what is your goal and being
+[41:57.96]  super super crisp on it right like what
+[42:01.02]  is it that we're
+[42:02.34]  trying to answer
+[42:04.14]  and
+[42:05.46]  I would say this is a bigger challenge
+[42:08.16]  than most people recognize or realize
+[42:10.98]  like
+[42:12.30]  I'm making the setup right like 80 of
+[42:15.12]  the folks that I work with this this is
+[42:17.52]  their biggest problem
+[42:19.02]  even at like executive levels they'll
+[42:21.60]  they'll ask their team or teams will
+[42:23.22]  come back with uncertainty and they'll
+[42:24.30]  say like well you told me to improve
+[42:26.64]  developer experience
+[42:28.68]  and like okay great what do you mean by
+[42:31.02]  that
+[42:31.74]  and then teams will have gone off for
+[42:33.60]  several months and they're tackling
+[42:35.70]  something and they'll come back and
+[42:36.84]  they'll be like oh well that wasn't what
+[42:38.40]  I meant I'm like okay what do you mean
+[42:39.96]  by this are you talking about
+[42:43.08]  inner and outer loop are you talking
+[42:44.94]  about friction are you talking about
+[42:46.38]  culture because sometimes they're
+[42:48.42]  talking about culture and if you're
+[42:49.62]  talking about culture this is an
+[42:51.60]  incredibly valid answer but if you're
+[42:53.40]  talking about culture this is totally
+[42:55.44]  different than if you're talking about
+[42:56.40]  friction in tool chains
+[42:58.50]  right
+[43:00.36]  and if you're on different pages you're
+[43:03.24]  heading in completely different
+[43:04.38]  directions so like that that's one thing
+[43:07.56]  we cover which seems obvious but trust
+[43:10.68]  me it is not and then even like how do
+[43:13.56]  you we're going to do kind of a rough
+[43:15.06]  version of like how do you start
+[43:16.32]  measuring from nothing and also the
+[43:19.62]  measurement Journey
+[43:21.24]  right like how do you think about
+[43:23.88]  the trade-offs between and the
+[43:26.28]  proportion of measurement between
+[43:28.34]  subjective data right data from people
+[43:31.62]  so you have Azure interviews and you
+[43:33.54]  have surveys and objective data stuff
+[43:36.00]  you get from systems because when you
+[43:38.10]  first start off you'll be relying much
+[43:40.14]  more on data from people because you can
+[43:42.24]  get it relatively quickly
+[43:43.92]  but as you kind of transition through
+[43:46.74]  this measurement Journey
+[43:48.54]  you'll get more and more data from your
+[43:50.58]  systems because it's scalable it can be
+[43:52.92]  engineered you can be doing you know
+[43:54.42]  much more with it and also you should be
+[43:56.82]  thinking about you know don't let the
+[43:58.38]  perfect be the enemy of the good right
+[44:00.24]  so like how do we think about this very
+[44:01.86]  very strategically how do we transition
+[44:03.98]  through this how do we think about what
+[44:07.08]  each piece of data is for and also like
+[44:10.32]  lots and lots of examples right so I
+[44:12.00]  have included like example interview
+[44:13.86]  scripts how do you select people how do
+[44:16.14]  you screen people examples survey
+[44:18.18]  scripts what are some of the analyzes we
+[44:19.98]  should do and trying to make this
+[44:22.14]  incredibly accessible so like basically
+[44:23.82]  anyone can do this so you do not need to
+[44:26.16]  be a data scientist but if you have one
+[44:27.66]  on staff like you can hand them some of
+[44:29.76]  this and just like let them run
+[44:31.98]  I think this book is going to do
+[44:33.36]  extremely well uh definitely come back
+[44:35.28]  on when it is out I think you said maybe
+[44:37.28]  year-ish kind of time frame yeah
+[44:39.18]  probably about a year by the time we get
+[44:40.62]  all the way through if people want to be
+[44:42.30]  notified when it's out can they sign up
+[44:44.04]  on your site for a newsletter or
+[44:45.42]  anything like that is there any way to
+[44:46.50]  kind of be uh on in the loop as it
+[44:48.78]  approaches oh yeah absolutely yeah I'll
+[44:50.88]  add I'll add a link for that also if
+[44:53.28]  anyone is doing some of this work now if
+[44:56.88]  they have you know major questions that
+[44:59.70]  they would love to me to answer if they
+[45:01.68]  have success stories if they have case
+[45:04.02]  studies if they have anything that they
+[45:05.94]  you know would love to be included you
+[45:07.98]  know I I remember when I wrote
+[45:09.42]  accelerate before there were a couple
+[45:10.62]  folks that reached out after and they
+[45:11.94]  were like oh I wanted to have something
+[45:13.44]  included now I've looked today I've
+[45:15.36]  learned right if if there's anything
+[45:17.16]  that folks would love to you know be you
+[45:20.34]  know in discussion with me about I I'm
+[45:22.44]  always eager to chat and nerd out about
+[45:24.72]  you know devex and especially
+[45:26.40]  measurement measurement Journeys so
+[45:28.50]  awesome I usually ask that this this at
+[45:30.78]  the end and I have more questions but
+[45:31.98]  while we're here how would people reach
+[45:33.66]  out to you what's the best way to
+[45:34.68]  contact you on my website I've got
+[45:37.70]  info.nicolfe at gmail okay yeah awesome
+[45:40.86]  okay a few more questions awesome thanks
+[45:42.84]  what are the most common pitfalls that
+[45:46.02]  companies run into when they're trying
+[45:47.16]  to roll out any sort of developer
+[45:49.14]  experience developer productivity system
+[45:51.54]  measurements improvements
+[45:53.58]  I think one I just mentioned right like
+[45:55.44]  not being
+[45:57.18]  clear or not understanding what it is
+[45:59.46]  that they're looking for
+[46:01.50]  because then you can have you know a
+[46:03.48]  thousand flowers bloom and everyone's
+[46:04.80]  kind of running in a different direction
+[46:06.84]  I think another one is not
+[46:10.80]  not pursuing this in both a top-down and
+[46:13.50]  a bottom-up structure right and I think
+[46:16.26]  that
+[46:17.22]  can really help Drive success
+[46:20.58]  and and having
+[46:22.26]  you know good communication throughout
+[46:24.48]  is super super important right so
+[46:28.14]  getting
+[46:29.52]  your ICS bought in and helping them
+[46:32.76]  understand that
+[46:34.38]  this is for them we want to understand
+[46:36.24]  what they're doing knowing what
+[46:37.80]  vocabulary they use you know what
+[46:39.54]  terminology they use is super important
+[46:41.30]  and then
+[46:43.08]  chatting with leaders right and
+[46:46.14]  understanding like what their
+[46:47.88]  motivations are or helping them
+[46:49.56]  understand what the motivations could be
+[46:51.36]  you know this kind of Harkens back to
+[46:53.46]  one of our earliest Chats on why I even
+[46:55.56]  got into this and how I see two
+[46:57.78]  different sides to the conversation on
+[46:59.22]  like why is devops even a thing why
+[47:00.60]  should we even ship faster like
+[47:03.60]  there are so many people that I talk to
+[47:05.52]  that are super passionate about devex
+[47:07.74]  right now and they're like how can I
+[47:09.36]  convince my executive team this is
+[47:11.34]  important because their developers are
+[47:14.22]  just completely burning out or they use
+[47:16.74]  computers and anger every day and so
+[47:18.48]  it's like how can we have the right
+[47:22.14]  tools to socialize this to our leaders
+[47:24.24]  as well right because this should be a
+[47:28.02]  priority this needs to be a strategic
+[47:30.12]  piece and how can we help pull together
+[47:32.88]  the right value points
+[47:35.34]  to communicate this and to understand
+[47:37.86]  what their priorities are so that we can
+[47:40.38]  see how this fits in right you've been
+[47:43.38]  working in this space for a long time
+[47:45.06]  probably longer than anyone that has
+[47:47.52]  ever worked on this area of developer
+[47:49.74]  experience productivity what have you
+[47:51.36]  seen change most from the time you
+[47:53.52]  started working in the space too today
+[47:55.86]  what kind of progress has been made
+[47:58.20]  we have these increasingly large complex
+[48:00.90]  systems right so like 10 or 15 years ago
+[48:03.06]  like the internet was around but like
+[48:04.68]  things were really different now almost
+[48:06.60]  every company has a really large complex
+[48:09.54]  system right
+[48:11.82]  we also have a shortage of developers or
+[48:14.22]  at least a reported perceived shortage
+[48:16.08]  of Developers
+[48:17.58]  more companies are technology driven or
+[48:21.48]  at least they understand they're
+[48:22.56]  technology driven it's like I understand
+[48:24.48]  a handful I remember a handful of years
+[48:26.28]  ago when I met with
+[48:27.78]  a financial institution whose CTO
+[48:30.12]  insisted to me that he was not a tech
+[48:32.16]  company like that that's not real
+[48:34.56]  anymore that doesn't happen anymore at
+[48:36.18]  least like very very rarely
+[48:39.24]  so all of these things come together
+[48:41.82]  and suddenly many more companies are
+[48:44.04]  like
+[48:45.06]  we have to be better at this and that
+[48:48.84]  was not always the case like five to ten
+[48:51.00]  years ago I used to have to really
+[48:52.68]  explain why this was a pressing concern
+[48:55.92]  and why it would continue to be a
+[48:57.12]  present concern and now in the last six
+[49:00.60]  to nine to 12 months we have
+[49:03.12]  this AI moment happening
+[49:05.58]  and it just poured gas on top of
+[49:07.62]  everything because
+[49:10.32]  now what's important like we've always
+[49:13.14]  said that like ideas aren't important
+[49:14.58]  execution is important but now this is
+[49:17.10]  absolutely true because
+[49:19.86]  it's not just about
+[49:21.84]  what it is that you build it's about
+[49:25.08]  creating absolutely novel incredibly new
+[49:29.78]  experiences and doing them at a speed
+[49:32.76]  that no one has seen before
+[49:35.40]  and the only way to do this
+[49:38.46]  have this software pipeline
+[49:41.46]  that is fast and is safe and is stable
+[49:45.72]  and is reliable
+[49:48.18]  and that's where we're seeing this
+[49:51.00]  really interesting
+[49:53.64]  convergence and
+[49:56.82]  pressure isn't quite the right word but
+[49:58.44]  it's really forcing the discussion
+[50:01.62]  and
+[50:03.50]  strategy and prioritization right
+[50:07.02]  I'm glad you touched on AI that was
+[50:08.88]  actually exactly where I was going to go
+[50:10.08]  next
+[50:11.30]  yeah obviously productivity AI
+[50:14.82]  engineering something that's top of mind
+[50:16.26]  for a lot of people there's a lot of
+[50:17.70]  layoffs that have been happening there's
+[50:19.26]  a lot of talk we don't need as many
+[50:20.58]  engineers
+[50:22.02]  actually we had dinner not too long ago
+[50:24.60]  with few I'd say 10x engineers and those
+[50:28.20]  are folks that people sometimes say like
+[50:30.12]  they don't need co-pilot they're not
+[50:31.74]  going to use any of these tools they're
+[50:32.76]  already amazing and they were the
+[50:34.26]  opposite they're like this is making me
+[50:35.82]  100 more effective and efficient and I
+[50:38.52]  love it so clearly good things are
+[50:40.80]  happening there
+[50:41.94]  I don't know the question is
+[50:43.20]  specifically but I guess have you seen
+[50:44.82]  the impact of AI on engineering
+[50:47.40]  productivity and has that shifted how
+[50:49.56]  you think about developer experience and
+[50:51.54]  productivity beyond what you already
+[50:53.40]  just shared
+[50:54.48]  absolutely so yes and right I think this
+[50:58.98]  is a super interesting open question so
+[51:01.80]  can I answer it just with a whole bunch
+[51:03.00]  of questions absolutely we're absolutely
+[51:05.52]  seeing
+[51:06.66]  an impact and we continue to explore
+[51:10.02]  this
+[51:11.28]  so like I have an interesting question
+[51:14.22]  to see like how it'll change the space
+[51:15.90]  framework what's open here I think a few
+[51:18.60]  things will remain right satisfaction is
+[51:20.28]  still going to be there performance is
+[51:21.48]  still going to be their activity still
+[51:22.80]  going to be there
+[51:24.00]  how you communicate with people and with
+[51:25.74]  the tool efficiency and flow is still
+[51:27.60]  going to be there I believe it will
+[51:29.52]  change and add a dimension like trust or
+[51:32.82]  reliability right how do I Rely can I
+[51:35.10]  rely on it well I have an over Reliance
+[51:36.96]  on it and what we're seeing is that
+[51:39.60]  probably unsurprisingly
+[51:42.30]  people really fundamentally shift the
+[51:44.82]  way they
+[51:47.70]  work when they work with an AI enabled
+[51:50.70]  tool like GitHub copilot or like you
+[51:53.16]  know tab 9 or others because now instead
+[51:55.32]  of just writing code or like having a
+[51:56.82]  short like autocomplete you spend more
+[51:59.04]  time reviewing code than writing code
+[52:00.66]  right there's this wonderful paper out
+[52:02.88]  that uses the cups model uh I'll I'll
+[52:05.64]  share it with you a team at MSR did it
+[52:08.58]  the fines that you know
+[52:10.50]  about 50 of your time now is spent
+[52:12.84]  reviewing versus writing
+[52:15.60]  but it'll be interesting to see how that
+[52:18.00]  changes things longitudinally right
+[52:20.04]  because because other you know some of
+[52:21.60]  my colleagues also did a paper that
+[52:22.86]  showed that you know you can do certain
+[52:25.20]  tasks like build an HTTP server or you
+[52:27.48]  know 50 faster
+[52:29.40]  but I don't think that's what
+[52:31.26]  productivity is about when you're using
+[52:33.06]  an AI tool frankly right anyone who's
+[52:35.22]  looking at that and like dear CEOs or
+[52:38.16]  whoever who are like now I can lay off
+[52:39.60]  half my Workforce that's not what this
+[52:41.40]  is about right it's not about taking a
+[52:43.62]  task and cutting your time in half
+[52:45.48]  because now what we've enabled is your
+[52:50.58]  ability to do certain things faster and
+[52:53.28]  then free up some of your cognitive
+[52:54.84]  space so that you can do harder things
+[52:57.36]  with this new
+[53:00.36]  co-pilot sidecar or something right
+[53:03.48]  but also because now you're accepting
+[53:06.24]  text and then reviewing it we've changed
+[53:09.54]  what your mental model is so we've
+[53:11.76]  changed the friction model that you
+[53:13.98]  expect we've changed the cognitive load
+[53:15.66]  of what you expect we're changing
+[53:17.96]  Reliance on code so what does this mean
+[53:20.52]  for Reliance or over Reliance what does
+[53:22.62]  this mean for learning
+[53:24.30]  what does this mean for novices versus
+[53:26.34]  experts
+[53:27.78]  how do we measure productivity right
+[53:29.82]  there are a handful of us that are
+[53:31.08]  having these discussions on what does
+[53:33.06]  this mean and how do we communicate it
+[53:34.92]  thoughtfully again we really need to
+[53:36.90]  have these kind of holistic balanced
+[53:38.70]  metrics
+[53:39.90]  because if we
+[53:41.82]  if it's an oversimplification we really
+[53:43.80]  risk losing the force for the trees
+[53:46.02]  right but it's also like super
+[53:47.58]  interesting and super compelling I think
+[53:49.20]  how can we think about you know learning
+[53:51.84]  or like onboarding to new code bases or
+[53:54.06]  new languages for folks who already know
+[53:56.28]  computational learning I I think it's
+[53:58.32]  also very different for folks who are
+[53:59.82]  just learning programming languages and
+[54:01.62]  don't already know things like
+[54:02.82]  computational thinking
+[54:04.98]  if someone was excited to kind of go
+[54:07.98]  down this road of we're going to focus
+[54:09.90]  on developer experience we're going to
+[54:11.28]  focus on helping our Engineers be more
+[54:12.96]  productive what are the next step or two
+[54:15.72]  that they should take in your opinion
+[54:17.52]  just broadly knowing that you don't know
+[54:19.08]  any specifics about the say the company
+[54:21.18]  that's thinking about this right now I
+[54:22.98]  think if you're like walking away from
+[54:26.22]  this podcast and you're like you know
+[54:28.08]  I'm already working on this or I think
+[54:29.82]  this is a thing that's that's happening
+[54:31.56]  right I would say just like go check
+[54:33.84]  your work basically right like has this
+[54:36.72]  been
+[54:38.28]  written down is there a clearly defined
+[54:42.12]  challenge problem something start there
+[54:45.42]  absolutely right because that is going
+[54:47.76]  to be the thing that reduces confusion
+[54:50.82]  the best right absolutely and then see
+[54:53.94]  if there's any data and data can be very
+[54:56.46]  Loosely defined right is there any
+[54:58.50]  signal that is related to
+[55:02.04]  the problem
+[55:03.84]  like I'd start there
+[55:05.58]  and you can do that you can do that in a
+[55:07.44]  week you can hunt something down sounds
+[55:09.18]  like something you could do in a day
+[55:10.20]  yeah well depending depending on
+[55:13.70]  how scattered Things Are
+[55:16.08]  are there any companies that you look at
+[55:18.06]  as good models of they do this really
+[55:20.10]  well I think Google does this incredibly
+[55:22.38]  well and and sometimes I hesitate to
+[55:24.42]  mention Google because they're like you
+[55:26.16]  know some people like light we can't be
+[55:27.60]  Global and we aren't really Advanced but
+[55:29.22]  the thing I love about Google's approach
+[55:32.10]  is that they've really taken kind of
+[55:33.84]  this measurement phase approach to
+[55:35.40]  things right even when they roll it out
+[55:36.78]  in new places
+[55:38.10]  um they're very systematic in how they
+[55:40.56]  measure things they have incredible
+[55:42.48]  Telemetry and tooling and
+[55:43.68]  instrumentation and they continue
+[55:47.30]  to invest time in
+[55:51.36]  developer experience surveys and they
+[55:53.58]  triangulate them and one thing that I
+[55:55.62]  also love being able to point out here
+[55:57.06]  is if there is ever a disagreement
+[55:59.22]  between the surveys and the
+[56:02.40]  instrumentation which is incredibly
+[56:04.26]  Advanced almost every time every time
+[56:06.54]  that I've ever heard of the surveys are
+[56:08.28]  correct and not the instrumentation
+[56:10.98]  amazing
+[56:12.72]  I have just a couple more questions
+[56:13.98]  unrelated to this topic is there
+[56:15.72]  anything else that you thought you think
+[56:17.40]  would be useful to share or leave people
+[56:19.74]  with around this General space I would
+[56:23.40]  say
+[56:24.30]  that
+[56:26.88]  like thinking about what it is you want
+[56:29.28]  to do
+[56:30.36]  is always important right like getting
+[56:32.70]  crisp the ability to communicate clearly
+[56:35.22]  is always one of the best things uh one
+[56:37.32]  of I think one of my superpowers and one
+[56:39.84]  of the things that I've been working
+[56:40.68]  with my teams on doing and kind of
+[56:42.24]  teaching them is and one of the things
+[56:44.34]  that's really leveled up our work in
+[56:45.66]  general is
+[56:47.10]  making your work incredibly accessible
+[56:48.98]  and accessible not necessarily like the
+[56:52.26]  accessibility definition of the word but
+[56:54.24]  making it very easy to understand what
+[56:56.64]  you're doing for your key audiences and
+[56:59.22]  so
+[57:00.42]  thinking about
+[57:02.10]  doing that for anything that you know
+[57:04.08]  anyone who's listening for all of your
+[57:05.40]  work
+[57:06.12]  is super important right so who is it
+[57:09.24]  that your audience is
+[57:10.74]  what's their role
+[57:12.36]  what words resonate with them and then
+[57:15.24]  always being able to translate your work
+[57:16.80]  into
+[57:17.82]  a few sentences or a paragraph or left
+[57:19.68]  or less
+[57:21.54]  I love it a lot of the listeners of this
+[57:23.34]  podcast are product managers and this is
+[57:25.86]  so core to the work of a PM so I think
+[57:27.90]  this is perfect speaking really directly
+[57:30.36]  to a lot of the listeners okay so just a
+[57:33.36]  couple more questions before this
+[57:34.62]  podcast asks you a few questions
+[57:36.36]  including just like what are people
+[57:37.74]  asking you for advice often around and
+[57:40.74]  are there any other Frameworks that you
+[57:42.06]  find really useful and so there's a
+[57:43.14]  couple things I just want to touch on
+[57:44.28]  see if there's something interesting
+[57:45.90]  there
+[57:46.74]  the first is you have this framework
+[57:48.90]  that you call the four box framework I'm
+[57:51.06]  curious what that is and what it's all
+[57:52.92]  about yes I love this four box framework
+[57:55.80]  I've used it for years I actually pulled
+[57:57.72]  it out first when I was a professor and
+[57:59.88]  I still to this day get LinkedIn
+[58:02.94]  messages from my students saying that
+[58:04.44]  it's like the most useful thing they've
+[58:06.18]  ever used so
+[58:07.80]  here's what it is I literally pulled
+[58:09.90]  this out on napkins at bars at
+[58:12.00]  conferences to this day so here we go
+[58:13.50]  draw four boxes on
+[58:17.22]  piece of paper two on the top two on the
+[58:19.86]  bottom so they'll be kind of aligned
+[58:23.04]  the first two to the left of them write
+[58:26.10]  the word words
+[58:29.16]  and Below them write the word data
+[58:34.26]  and then between the two on the top draw
+[58:36.60]  an arrow between them so it'll say words
+[58:39.00]  box Arrow box right is that making sense
+[58:42.18]  then on the bottom it'll say data box
+[58:44.46]  Arrow box
+[58:46.92]  okay so on the top half
+[58:49.86]  this is where if you want to think about
+[58:52.40]  measuring something or testing something
+[58:54.90]  you have to start with words so
+[58:58.44]  as an example let's just say I think
+[59:03.54]  that customer satisfaction gets us more
+[59:06.36]  money
+[59:07.56]  or customer satisfaction gets us return
+[59:09.54]  customer so let's do customer
+[59:10.62]  satisfaction so the first box you'll put
+[59:12.78]  customer satisfaction inside the box and
+[59:14.88]  you'll put return customers in the
+[59:16.32]  second box
+[59:18.12]  now always start with words do not start
+[59:21.24]  with data you always start with words
+[59:22.62]  and then you'll go around to a couple
+[59:24.54]  people stakeholders managers others and
+[59:27.84]  you'll say do you agree with do you
+[59:30.00]  agree with this is this actually what
+[59:31.92]  we're doing
+[59:33.00]  it can turn into a sentence
+[59:36.24]  and then in the boxes below it this is
+[59:38.82]  your data how are we going to measure
+[59:40.62]  customer satisfaction it could be a
+[59:43.38]  survey and so like this is where you'll
+[59:45.06]  go and you'll say like what data points
+[59:47.82]  do we have that could proxy for what
+[59:50.40]  could be our data points for
+[59:52.38]  customer satisfaction and this is where
+[59:54.18]  it gets tricky because you could say
+[59:55.32]  well customer satisfaction could be
+[59:56.76]  returned customers but we think it leads
+[59:58.80]  to return customers so we can't use that
+[60:00.12]  here
+[60:00.84]  but return customers or could be so like
+[60:04.02]  that's where you kind of like roll this
+[60:05.76]  out
+[60:06.96]  so house would measure customer
+[60:08.52]  satisfaction that made this hard on
+[60:09.78]  myself like a csat score yet csat NPS we
+[60:16.62]  could say the amount of money that they
+[60:18.00]  spent
+[60:18.90]  it's a stretch
+[60:21.30]  okay now
+[60:22.98]  return customers let's go to the next
+[60:24.90]  box
+[60:26.58]  how are we going to measure return
+[60:27.72]  customers
+[60:29.10]  depending on our context let's say that
+[60:30.90]  this is an online business
+[60:32.40]  we could say that it's
+[60:34.44]  returned customers as measured through
+[60:36.54]  the website
+[60:37.74]  we could say that it's returned
+[60:39.06]  customers we could just ask them right
+[60:40.80]  maybe we have a follow-up survey
+[60:42.90]  return customers maybe we're going to do
+[60:44.94]  a stretch here maybe we say it's a
+[60:46.50]  referral link
+[60:49.86]  this helps us get super clear on what it
+[60:52.08]  is we're going to measure now the reason
+[60:54.42]  I like this is because if some of our
+[60:56.76]  now this data analysis we'll just do
+[60:59.10]  correlations here right if we have
+[61:00.30]  longitudinal over time that's fine you
+[61:01.86]  can hand this to like a data scientist
+[61:03.96]  you can hand this to somebody you can
+[61:05.46]  say what data do we have let's go run
+[61:07.26]  this if something here falls apart now
+[61:10.50]  you can point to the
+[61:12.66]  data boxes
+[61:14.58]  and we can get mad about the things in
+[61:17.82]  the data boxes and we can say what's
+[61:19.68]  wrong is the data poor quality are we
+[61:22.32]  missing data was this a bad proxy right
+[61:24.90]  proxy stands in for something else was
+[61:26.40]  this was this ridiculous right one of
+[61:28.68]  the things I made up right like it was
+[61:30.66]  just a bad idea
+[61:32.70]  instead of
+[61:34.98]  getting mad at Lenny for his really
+[61:36.96]  stupid idea or getting mad at Nicole
+[61:38.76]  because this was a really bad idea we
+[61:40.62]  can say this was problematic what's
+[61:42.60]  wrong here or we can go back up to the
+[61:44.94]  words at the top and we can say
+[61:46.86]  this is not actually something that is
+[61:49.20]  probably going to hold or this is not
+[61:51.54]  something we want to test right now or
+[61:54.18]  this is something instead and it it
+[61:56.88]  makes things incredibly clear it helps
+[61:59.82]  you communicate what it is you want to
+[62:01.44]  do fairly quickly
+[62:04.74]  I love it here's my
+[62:06.54]  check it out it's ugly nice zoom in
+[62:09.78]  right okay now I will say advanced mode
+[62:12.66]  you can start with the same four box
+[62:14.22]  framework and you can say what data do
+[62:16.80]  we have available
+[62:18.38]  what do we think the relationships are
+[62:20.52]  but then you have to go back up to words
+[62:22.92]  and then say
+[62:24.54]  for these data points and we think that
+[62:27.12]  they like represent something and we
+[62:29.46]  think uh we think this is the
+[62:31.08]  relationship between them what do they
+[62:33.30]  represent if I turn this into a sentence
+[62:36.26]  what do they represent
+[62:39.06]  and then you want to like double check
+[62:40.92]  because you know spurious correlation is
+[62:42.42]  one of my favorite websites instead of
+[62:44.22]  charts so you'll want to go chat with
+[62:45.96]  someone interview make sure things are
+[62:47.64]  actually right
+[62:49.38]  but the challenge is I will see people
+[62:51.72]  run
+[62:53.64]  every correlation they could think of
+[62:55.56]  but they haven't turned it into a word
+[62:58.56]  or a sentence that you can communicate
+[63:00.30]  to someone else they don't do the check
+[63:05.16]  and and they don't do that before one
+[63:07.68]  before running the correlations and two
+[63:10.02]  if it's there right all of our data is
+[63:12.30]  so interrelated that we quite often will
+[63:14.52]  find spurious correlations but it can be
+[63:16.98]  really helpful just to have that laid
+[63:18.54]  out like even if it's just on a Post-It
+[63:20.52]  right to say what are the things I
+[63:22.86]  expect to see what is this actually
+[63:24.30]  testing what relationship do I suspect
+[63:26.58]  is there mm-hmm
+[63:28.50]  amazing there's actually I have a
+[63:30.06]  newsletter post a guest post on how to
+[63:32.10]  do a correlation analysis Center
+[63:33.62]  regression analysis so folks can awesome
+[63:36.54]  oh that's so great plug and play all
+[63:39.24]  kinds of makes it easy for you so what
+[63:42.00]  I'm taking away from this is this is an
+[63:43.80]  awesome framework especially for
+[63:45.18]  thinking about a hypothesis you may have
+[63:46.92]  in this case it's like customer
+[63:49.02]  satisfaction is going to lead to more
+[63:51.06]  return customers here's how we're going
+[63:52.44]  to measure it and then you basically run
+[63:54.12]  the test and see if it's true and if
+[63:55.50]  it's not maybe you need to pick
+[63:56.82]  different metrics maybe you need to pick
+[63:58.20]  a different conclusion
+[63:59.58]  and within like the Dora framework we
+[64:01.68]  would say if we want to improve our
+[64:03.54]  speed and stability we think improving
+[64:06.54]  build time would help and then how would
+[64:08.46]  I measure build time right these are the
+[64:10.50]  data points I have available to us yep
+[64:12.18]  to Circle back I love it it's all
+[64:13.98]  connected
+[64:15.12]  okay and then last question I asked you
+[64:18.42]  what advice people often ask you for and
+[64:21.96]  you said that it's around making
+[64:23.46]  decisions and I'm curious what advice do
+[64:26.04]  you give people about making decisions
+[64:28.10]  yes uh so this one comes up in business
+[64:31.98]  but also comes up uh personally and
+[64:35.40]  among my mentees so many times it starts
+[64:38.70]  with you know being very cursive about
+[64:40.08]  your objectives and definitions but then
+[64:42.24]  it comes down to you know really clearly
+[64:44.64]  defining what your criteria is what's
+[64:48.24]  important
+[64:49.56]  and then among that criteria what's most
+[64:51.72]  important some of my friends know I have
+[64:54.00]  a decision making spreadsheet
+[64:57.18]  but I have shared out with a handful of
+[64:58.98]  friends on you know should you take a
+[65:01.38]  job where should you move uh what are
+[65:04.20]  the different things really useful you
+[65:05.58]  should do it is it's well it's funny
+[65:08.28]  though because
+[65:09.60]  what's interesting is many times I will
+[65:11.94]  like I'll share it with someone and I've
+[65:13.50]  got a couple that are just funny right
+[65:16.02]  but walking through the spreadsheet is
+[65:18.48]  often all you need to do in order to
+[65:21.84]  know what the decision is and by that I
+[65:23.76]  mean
+[65:24.48]  so we walked through the decision I had
+[65:25.86]  one where I was like where should I move
+[65:27.00]  next or like what job should I take
+[65:28.92]  right so when I started Dora I I did
+[65:30.84]  this uh starting Dora I thought was my
+[65:33.72]  lowest once I walked through the
+[65:35.46]  spreadsheet it became my high so what
+[65:37.44]  you do is you outline like of all of
+[65:39.54]  your options what do you want to do and
+[65:41.04]  then you say what are the criteria that
+[65:42.66]  are important to me
+[65:44.04]  so if it's for a job is it something
+[65:46.32]  like uh
+[65:48.06]  total comp
+[65:49.44]  cash money
+[65:51.00]  prestige
+[65:52.92]  team
+[65:54.48]  job predictability
+[65:56.64]  work-life balance
+[65:58.86]  identify the criteria that are most
+[66:00.66]  important to you
+[66:01.98]  now it's really interesting because
+[66:03.54]  sometimes I will only get that far what
+[66:06.48]  I'm working with
+[66:08.28]  someone I'm mentoring or coaching and
+[66:10.38]  they will say
+[66:12.06]  I know what my answer is we don't even
+[66:14.52]  get to the next step
+[66:16.32]  but just identifying the criteria that
+[66:19.32]  are important is it now when I was
+[66:21.66]  thinking about where I wanted to move
+[66:22.92]  next it was proximity to an airport the
+[66:26.76]  relative texting the food scene that was
+[66:28.86]  real high for me uh you know a handful
+[66:30.72]  of things
+[66:31.92]  that was important now the next thing I
+[66:34.68]  do is for each criteria
+[66:37.20]  what's their relative weight what's
+[66:40.02]  their importance and I make it add up to
+[66:42.36]  100 percent
+[66:45.18]  and then I like this is the easy part
+[66:47.40]  right like you just put it in a little
+[66:48.84]  spreadsheet and I then I give everything
+[66:50.52]  to score and I just multiply it out now
+[66:53.04]  this is where I'm data informed and I'm
+[66:54.96]  not data driven there have been times I
+[66:57.48]  make a decision where you know the whole
+[66:59.76]  like flip a coin and like
+[67:01.50]  whatever it's wherever it lands on what
+[67:04.92]  your reaction is tells you what it
+[67:06.66]  should actually be there have been times
+[67:08.70]  where I can multiply it out and then
+[67:10.56]  I'll actually like fudge the numbers to
+[67:12.00]  get what I want but it's still slightly
+[67:13.80]  off
+[67:15.42]  let's pray your data informed same thing
+[67:17.94]  in business there are many times where
+[67:20.58]  you actually run the numbers and it'll
+[67:22.80]  give you a class or a category of things
+[67:25.56]  and then you choose
+[67:27.66]  now
+[67:29.22]  this is where you know one of my
+[67:31.02]  favorite quotes I heard somewhere about
+[67:32.70]  strategy comes into play right and
+[67:35.10]  that's that the key to having a good
+[67:37.32]  strategy is knowing what not to do and
+[67:40.14]  the key to executing a good strategy is
+[67:42.12]  actually not doing it
+[67:44.16]  um
+[67:46.14]  so you can have many options right as a
+[67:48.90]  leader and as an executive we have many
+[67:50.64]  options and we only fund some of them
+[67:53.16]  if you fund everything
+[67:56.58]  things are going to fail
+[67:58.92]  so being able to think through and
+[68:00.72]  identify what your criteria are
+[68:04.16]  identifying that criteria what's your
+[68:06.66]  selection criteria what's your
+[68:08.16]  evaluative criteria ranking them and
+[68:11.40]  then deciding what the cutoff is
+[68:14.16]  is important you can't fund everything
+[68:16.62]  you don't get to pick everything
+[68:18.96]  amazing I love the spreadsheet idea I've
+[68:21.30]  made versions of it but it's always uh I
+[68:23.82]  think like you said a lot of times the
+[68:25.32]  exercise is just tell you what you
+[68:27.42]  already think and just gives you like
+[68:28.80]  yeah all right you're right you probably
+[68:30.36]  should just do that thing you already
+[68:31.32]  thought you should do yep
+[68:33.48]  have you thought about making a public
+[68:35.04]  template of this spreadsheet even though
+[68:36.54]  it is simple I bet it would be really
+[68:38.22]  helpful to people
+[68:39.72]  I have and this actually might be a good
+[68:41.94]  forcing function maybe okay awesome so
+[68:44.34]  if uh if you do it I'll put in the show
+[68:46.62]  notes it'll probably be near the bottom
+[68:48.06]  at the end of the episode but that'd be
+[68:49.80]  awesome perfect is there anything else
+[68:51.30]  that you want to share before we get to
+[68:53.04]  a very exciting lightning round uh no I
+[68:55.38]  think that's it well Welcome to our very
+[68:57.54]  exciting lightning round I've got six
+[68:59.94]  questions for you are you ready
+[69:01.52]  absolutely all right first question what
+[69:04.80]  are two or three books that you've
+[69:06.12]  recommended most to other people
+[69:08.64]  we actually had the perfect segue
+[69:10.38]  because the book I've recommended
+[69:11.58]  absolutely the most is called good
+[69:13.14]  strategy bad strategy by Richard rumelt
+[69:16.26]  another one is designing your life by uh
+[69:19.44]  Bill Burnett and Dave Abbott Dave Evans
+[69:21.48]  uh and the last one is probably Ender's
+[69:24.18]  Game horses got card um no comment right
+[69:27.72]  now on uh
+[69:30.18]  some of his political commentary but I
+[69:32.88]  used to have extra copies in my office
+[69:35.46]  when I was a professor and I would just
+[69:36.96]  hand it out to my students it's a fun
+[69:38.88]  like just easy nonsense read but
+[69:41.58]  I absolutely love it such a such a good
+[69:44.04]  pick haven't read it in a long time and
+[69:46.68]  are they making a show of that at all
+[69:48.36]  that'd be that'd be something they made
+[69:50.22]  a movie and I was afraid I wasn't gonna
+[69:51.90]  like it so I just didn't read it because
+[69:53.40]  I didn't want it to ruin the book
+[69:55.26]  but at least Harrison Ford was in it
+[69:58.62]  okay I'm not gonna check it out they're
+[70:00.24]  making a movie of three body problem I
+[70:01.68]  don't know if you've read that but that
+[70:02.70]  is I'm really excited it's on my list
+[70:04.98]  oh man best best sci-fi ever next
+[70:08.10]  question actually very correlated what
+[70:10.80]  is a favorite recent movie or TV show
+[70:12.96]  I've been going through like some real
+[70:15.06]  just easy fun watches lately uh
+[70:18.72]  I'm re-watching suits again but Ted
+[70:21.96]  lasso is a favorite and I just tore
+[70:24.78]  through never have I ever which is fun
+[70:26.58]  because John Mcenroe narrates it which
+[70:29.88]  is hilarious John mcenro the tennis
+[70:31.50]  player yeah it's a riot yeah it's so
+[70:34.44]  funny
+[70:35.70]  I love it next question what's a
+[70:38.58]  favorite interview question that you
+[70:39.90]  like to ask people when you're
+[70:41.16]  interviewing them I love questions that
+[70:43.98]  I can kind of spin around hard decisions
+[70:46.20]  that people have had to make and how
+[70:48.24]  they made them I love hearing their
+[70:49.98]  thought process
+[70:51.90]  and I get a little nervous when people
+[70:53.40]  just like yellow and shoot from the hip
+[70:54.84]  constantly so what is it you look for
+[70:57.54]  there that gives you a sense that
+[70:58.80]  they're someone you may want to hire
+[71:00.36]  work with I just like hearing if they
+[71:02.58]  have some sort of process right if they
+[71:05.10]  have some kind of decision-making
+[71:06.24]  process if they have criteria if they
+[71:08.40]  have like how do they do evaluation
+[71:11.40]  what is a favorite product you've
+[71:13.26]  recently discovered that you love I have
+[71:15.12]  a big one and a little one um my big one
+[71:16.92]  is probably sleep eight so I live in
+[71:19.80]  Arizona it gets it gets hot here
+[71:21.42]  sometimes oh he ate sleep or yeah ate
+[71:23.76]  sleep yeah the other way around
+[71:25.32]  um yeah so that one's fun because it
+[71:27.24]  cool it makes the bed cold and also
+[71:29.28]  gives me some some data which is
+[71:32.04]  probably like a little bit off but in
+[71:33.66]  the approximations fund
+[71:35.82]  um and then Korean face masks they're
+[71:38.64]  just fun yeah you can get some some
+[71:40.56]  pretty good ones for like just a couple
+[71:42.18]  dollars and that's always fun self-care
+[71:44.88]  first mention of that one of Korean face
+[71:46.92]  masks right listen everyone get on board
+[71:49.38]  I just did the uh Tick Tock there's a
+[71:52.32]  filter now where you could see how you
+[71:53.70]  look when you age and I'm not happy with
+[71:56.52]  how it turned out and so I might look
+[71:59.10]  into this
+[72:00.18]  I had some basal cell uh cancer on my
+[72:03.06]  forehead a few years ago and so I am
+[72:05.22]  much more careful with my skin and you
+[72:07.68]  can get like one of my favorites is
+[72:09.24]  cosrx you can get 10 for like 15 so it's
+[72:12.84]  fun to just like chill at the end of the
+[72:14.16]  day with a good with a good face mask I
+[72:15.90]  was gonna ask you for a specific pick
+[72:17.40]  and so we got one yep amazing
+[72:20.46]  this next question I ask everyone and
+[72:23.52]  it's especially appropriate to you but I
+[72:25.32]  don't know if you'll have an answer but
+[72:27.18]  something relatively minor you've
+[72:28.50]  changed in your product development
+[72:29.64]  process that has had a big impact on
+[72:32.22]  your team's ability to execute and I
+[72:33.84]  feel like you have a big perspective on
+[72:35.82]  this so I'm curious what you have as an
+[72:38.10]  answer uh I think I alluded to this
+[72:40.02]  earlier I would say that it's you know
+[72:43.28]  helping everyone so I've done this
+[72:45.90]  before but I think it's helping everyone
+[72:47.28]  to ask who's our audience and how will
+[72:49.80]  we share this now
+[72:51.12]  and it's sort of interesting because
+[72:52.74]  right now I'm wearing two hats
+[72:55.14]  one is at MSR Microsoft research we need
+[72:58.76]  very ambitious research right so like
+[73:02.10]  h2h3 I mean what is H3 the third half uh
+[73:06.72]  oh Horizon three
+[73:08.84]  like five to ten years out which right
+[73:11.70]  now is like who even knows right
+[73:14.60]  in computers yeah AI has like completely
+[73:18.06]  upended how we kind of think of Horizons
+[73:20.10]  and so when we're when we're thinking
+[73:22.56]  really ambitiously and very very very
+[73:24.42]  forward looking
+[73:26.22]  what's our check-in how do we evaluate
+[73:28.56]  this and then how can we easily
+[73:30.18]  communicate it to our core audience and
+[73:32.16]  so here who's our audience and how do we
+[73:34.92]  bring the far near
+[73:37.32]  and then for the other hat I'm wearing
+[73:39.12]  I'm working with octo kind of across all
+[73:41.94]  of Microsoft to
+[73:44.46]  take a data informed approach to really
+[73:46.38]  improve and up level our Central
+[73:48.60]  developer infrastructure
+[73:50.64]  and so as we're thinking very very
+[73:53.46]  tactically what is our long-term vision
+[73:56.16]  and how do we align with several of our
+[73:58.02]  broad stakeholders and so there it's
+[74:00.36]  who's our audience and how do we bring
+[74:02.10]  the near far
+[74:04.44]  I love that
+[74:05.88]  final question what is one tactical
+[74:08.52]  piece of advice that listeners can do
+[74:11.46]  this week to help improve their
+[74:13.38]  developer productivity or developer
+[74:15.36]  experience and move it in the right
+[74:16.44]  direction you know if you walk away from
+[74:18.54]  this podcast right now
+[74:20.04]  you could take a look at what's
+[74:22.14]  happening in New York today is it
+[74:24.06]  written down is it clear do you have any
+[74:27.42]  existing data and efforts and if not go
+[74:30.60]  find a handful of developers and ask
+[74:33.12]  them how they feel about their work
+[74:36.60]  tools and their work process and what
+[74:38.40]  the biggest barriers to their
+[74:39.54]  productivity are
+[74:40.98]  also pick up a copy of accelerate on
+[74:43.32]  Amazon or your local retail
+[74:45.24]  establishment Nicole this was amazing I
+[74:47.46]  think we're going to help a lot of
+[74:48.54]  companies move faster have better and
+[74:50.88]  happier Engineers which is going to
+[74:52.38]  create infinite value in the world thank
+[74:54.96]  you so much for being here two final
+[74:56.58]  questions where can folks find you
+[74:58.20]  online if they want to reach out and how
+[75:00.54]  can listeners be useful to you I'm on
+[75:03.42]  Twitter and Bluesky
+[75:05.22]  um Nicole FV and my website is
+[75:08.30]  nicolefe.com and my all my contact
+[75:11.16]  information is there and as we mentioned
+[75:14.34]  previously I'm working on a new project
+[75:15.90]  and a new book digging into exactly
+[75:18.42]  these ideas right how can we measure
+[75:20.82]  better how can we improve and what does
+[75:23.22]  that measurement process look like both
+[75:24.84]  for kind of one-time really quick you
+[75:27.78]  know unofficial measurement pieces and
+[75:29.70]  if we want to do kind of very formal
+[75:31.62]  longer term measurement pieces so if
+[75:34.26]  anyone is interested in that or has any
+[75:36.66]  success stories they'd love to share I
+[75:38.88]  would love to hear more about it so
+[75:41.52]  please reach out and share I'd love to
+[75:43.74]  hear more
+[75:44.58]  awesome Nicole thank you again for being
+[75:47.04]  here hey thank you Lenny bye everyone
+[75:52.10]  thank you so much for listening if you
+[75:54.54]  found this valuable you can subscribe to
+[75:56.16]  the show on Apple podcast Spotify or
+[75:58.80]  your favorite podcast app also please
+[76:01.20]  consider giving us a rating or leaving a
+[76:03.30]  review as that really helps other
+[76:04.98]  listeners find the podcast you can find
+[76:07.32]  all past episodes or learn more about
+[76:09.30]  the show at lennyspodcast.com
+[76:12.24]  see you in the next episode

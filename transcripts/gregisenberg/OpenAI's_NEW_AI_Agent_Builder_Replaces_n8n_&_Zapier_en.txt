@@ -1,0 +1,813 @@
+Title     : OpenAI's NEW AI Agent Builder Replaces n8n & Zapier
+Video ID  : dYb6DGBhBBk
+URL       : https://www.youtube.com/watch?v=dYb6DGBhBBk
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 804
+Saved at  : 2026-06-21 02:02:42
+------------------------------------------------------------
+
+[00:00.00]  Amir, by the end of this pod, what are
+[00:02.20]  we going to learn? I'm going to first
+[00:03.84]  talk through what OpenAI came out of
+[00:05.84]  yesterday with the agent builder, the
+[00:07.92]  chat kit, the widgets, and we're going
+[00:09.68]  to build a demo chatbot using the chat
+[00:13.12]  kit SDK on a website, and we're going to
+[00:16.32]  essentially have it pull data from our
+[00:18.36]  vector store, our multi-agent workflows,
+[00:20.88]  and have it answer questions. This
+[00:22.52]  chatbot is going to let you know whether
+[00:23.84]  you're actually a customer or a lead,
+[00:25.88]  and then get the information from you to
+[00:27.36]  pass it on to your sales team or answer
+[00:29.00]  a support ticket. So, Amir, are people
+[00:30.88]  going to understand how to use agent
+[00:33.44]  builder by the end of this? That's
+[00:35.72]  exactly what we're going to cover. I'm
+[00:36.80]  going to try my best to show them what
+[00:38.36]  it takes to actually build your own
+[00:40.36]  agent workflow using the new agent
+[00:42.04]  builder, how it's different from the
+[00:44.48]  other kind of tools out there, and how
+[00:46.96]  you can get started as well. Okay, let's
+[00:48.80]  start.
+[00:49.42]  [Music]
+[00:57.72]  Cool. All right, let's jump into it. So,
+[00:59.20]  the key things that came out of the dev
+[01:02.12]  day yesterday was agent builder, chat
+[01:04.52]  kit, and the widgets. And I'm going to
+[01:05.72]  talk through what each individual one
+[01:07.32]  actually is and what it means. So,
+[01:09.92]  typically, you know, anytime we've been
+[01:11.32]  wanting to build multi-agent workflows,
+[01:13.96]  we've had to use custom code to actually
+[01:16.40]  kind of create a parallel sequence or a
+[01:19.60]  multi-agent orchestration using code and
+[01:21.68]  say, "Okay, this assistant one, talk to
+[01:23.28]  assistant two, and then pass through
+[01:25.12]  data or set of instructions."
+[01:27.48]  What OpenAI has done with their new
+[01:29.20]  update is they've created a visual
+[01:31.00]  interface for you to actually build
+[01:33.28]  workflows using agents and actually
+[01:36.60]  create parallel agents if you wanted to
+[01:38.28]  or sequential like steps in an agent
+[01:40.48]  workflow, and have it call tools, do web
+[01:43.16]  search, or file all visually instead of
+[01:45.20]  using code. So, it's really interesting
+[01:47.08]  because you can essentially now pull
+[01:48.88]  data as context from our vector store,
+[01:50.96]  so it's like a storage file, and then
+[01:53.32]  also evaluate the responses, refine it,
+[01:55.84]  and then create even guardrails for
+[01:58.20]  safety and quality of the agent
+[01:59.60]  responses. The key takeaway here is that
+[02:01.96]  it's essentially reducing the barrier
+[02:03.72]  for
+[02:04.96]  non-technical people to get started with
+[02:06.76]  building multi-agent workflows. And what
+[02:09.44]  this all means and how it ties in
+[02:10.64]  together is essentially goes into chat
+[02:12.48]  kit and widgets. So, what chat kit is is
+[02:14.72]  now
+[02:15.76]  a new capability
+[02:18.04]  where it's essentially an SDK, and you
+[02:20.60]  can connect your
+[02:23.20]  um
+[02:23.88]  agent builder workflow into chat kit and
+[02:26.64]  then serve it on a front end. So, in
+[02:29.00]  simple terms,
+[02:30.32]  you know, anytime you've seen a chatbot
+[02:32.24]  on a website, um that's typically
+[02:34.32]  connected to a third-party service that
+[02:36.56]  is pulling data and you've kind of
+[02:37.92]  created these responses.
+[02:39.60]  In this demo today, we're going to
+[02:40.76]  recreate our own that's trained on our
+[02:42.44]  own data and has a set of instructions,
+[02:44.48]  and we're going to use chat kit for it.
+[02:45.92]  So, what we're going to do is we're
+[02:46.88]  going to build a workflow in
+[02:49.76]  the agent builder, and then we're going
+[02:51.56]  to take that workflow ID or that kind of
+[02:54.16]  template, put it into chat kit UI, set
+[02:56.52]  up a server, add it to our website, and
+[02:59.00]  then essentially have customers interact
+[03:00.52]  with the chatbot to get the information
+[03:02.32]  to learn more about our product or
+[03:03.72]  answer a specific support ticket.
+[03:05.76]  The last thing is the widgets. Widgets
+[03:07.68]  are essentially a new set of dynamic
+[03:10.80]  components that you can add into chat
+[03:12.72]  interfaces and conversations that can
+[03:15.20]  display data. So, say for example, if
+[03:16.96]  you have um uh uh
+[03:19.56]  your agent connected to a Shopify store
+[03:21.64]  and you're pulling through the MCP,
+[03:23.44]  you're pulling Shopify information, you
+[03:25.16]  can create a custom component that
+[03:26.84]  displays it to the user that says, "Oh,
+[03:28.60]  here's like what you ordered,
+[03:30.56]  um here's the you know, estimated
+[03:31.96]  delivery time, and here's how it was
+[03:33.32]  sold, and you know, you have your
+[03:34.48]  details." It's like a dynamic UI
+[03:36.24]  essentially as part of the chat
+[03:37.20]  interface.
+[03:38.84]  God bless you, Amir.
+[03:40.60]  Yeah. Yeah.
+[03:41.68]  All right, great. Let's jump into it.
+[03:43.80]  Okay, so, we covered all three big major
+[03:46.28]  updates. Obviously, Sora 2 in the API,
+[03:48.84]  uh GPT-5 thrown in the API, but I think
+[03:50.56]  what's really interesting is just the
+[03:52.04]  door and opportunities this opens up for
+[03:54.48]  a lot of people that want to start
+[03:55.64]  building multi-agent workflows. So, the
+[03:57.68]  first thing that we're going to get into
+[03:58.96]  is jumping into actually the OpenAI
+[04:02.36]  agent builder.
+[04:03.88]  And how it works is you have a set of
+[04:05.84]  nodes that you can connect. So, each
+[04:08.00]  node is representative of specific set
+[04:10.40]  of actions. So, you can collect um you
+[04:12.84]  can add tools. So, for example, if you
+[04:15.00]  want to pull relevant information or you
+[04:16.76]  want to add guardrails, and I'll show
+[04:18.32]  what that looks like and what that
+[04:19.32]  means, or MCPs. And you can also add
+[04:21.96]  logic, so you can determine how you want
+[04:24.28]  the agent to proceed based on logic and
+[04:26.64]  conditions that you set. And then you
+[04:28.40]  can also transform data as well.
+[04:31.00]  In this specific demo,
+[04:33.00]  what we want to do is we build want to
+[04:34.48]  build a build build a workflow that
+[04:36.84]  achieves two things.
+[04:38.44]  It
+[04:39.88]  receives a customer it receives a user
+[04:41.80]  input and it determines whether or not
+[04:44.36]  this user is an existing customer
+[04:47.44]  or a new lead. It classifies it, and
+[04:50.16]  then based on that logic, passes on to
+[04:52.40]  two separate agents. Agent number one is
+[04:55.72]  if it's a existing customer, answer the
+[04:57.96]  support ticket using existing
+[05:00.56]  knowledge-based data. So, I've actually
+[05:02.60]  scraped our entire knowledge base and
+[05:05.48]  data pertaining to our product and gave
+[05:07.08]  it as a vector store, so it's
+[05:08.36]  referencing that as context. Or agent
+[05:10.72]  number two, if the agent is
+[05:13.36]  determines and classifies this as a
+[05:15.00]  lead, it then
+[05:17.28]  um
+[05:18.16]  uh asks for information about the
+[05:20.24]  customer to then, you know, as a next
+[05:22.36]  step, pass it on to our
+[05:24.68]  you know, to our database or message us
+[05:26.88]  on Slack, for example, if we have a
+[05:28.36]  Slack MCP. And it's meant to capture
+[05:30.28]  that data and then play back to the
+[05:31.88]  customer and say, "Hey, we'll follow up
+[05:33.00]  for a demo, and let's book book you for
+[05:34.44]  a demo." So, what we've done here is
+[05:37.84]  essentially
+[05:39.16]  we have a start input here, which is
+[05:40.88]  input as text, which is a message that
+[05:42.36]  you get.
+[05:43.64]  Next is the classifier. This classifier
+[05:45.92]  agent essentially we've we've named it
+[05:47.96]  and we gave it a prompt. And we
+[05:49.40]  basically say, "Hey, you know, we want
+[05:51.64]  you to look at the inquiry and tell us
+[05:53.28]  if this is an existing customer with a
+[05:55.40]  support ticket or a new lead. And we
+[05:57.88]  want you to analyze the message and
+[05:59.80]  determine whether or not how you get to
+[06:01.48]  that conclusion." And we gave some
+[06:03.00]  examples as well. So, like, here's an
+[06:04.64]  example of what a new lead would look
+[06:06.00]  like, or here's an example of someone
+[06:08.12]  that is um an existing customer.
+[06:11.56]  Once Once it's done that,
+[06:13.68]  we have a logic in place that says,
+[06:16.00]  "Classify that inquiry as an existing
+[06:18.12]  customer with a support question or a
+[06:20.24]  new user"
+[06:21.64]  based on that data, and essentially um
+[06:24.20]  if once it's once it's been classified,
+[06:27.28]  from here, if it's an existing customer,
+[06:29.56]  cuz the response here is essentially um
+[06:32.20]  like we're saying, the response is new
+[06:34.40]  customer. Oh, I got my cat in front of
+[06:36.68]  you right here. If
+[06:38.80]  uh
+[06:39.40]  if if it's um if it's a new customer,
+[06:42.44]  uh pass it on to the lead agent. If it's
+[06:45.28]  an existing customer
+[06:47.52]  uh pass it on to support agent. And how
+[06:49.08]  it works is essentially
+[06:50.64]  um based on this logic here, we say if
+[06:52.64]  the input is an existing customer,
+[06:55.52]  pass it on to the customer support
+[06:57.60]  agent.
+[06:59.08]  And this customer support agent
+[07:00.36]  essentially it's trained on our data,
+[07:02.88]  and it has a set of rules that it
+[07:04.64]  follows and helps them troubleshoot any
+[07:06.80]  questions they may have. Okay, how did
+[07:08.72]  you How did you come up with those
+[07:10.32]  instructions?
+[07:11.68]  Um so, you can actually write the
+[07:13.28]  instructions yourself, but what's really
+[07:15.08]  cool is you can actually either use
+[07:17.28]  ChatGPT to say,
+[07:19.08]  "I want you to act as a prompt generator
+[07:21.68]  or a helpful assistant that can help me
+[07:23.16]  generate prompts. I want to achieve X.
+[07:25.84]  Tell me how we can get there." So, I
+[07:27.52]  usually most of the time use ChatGPT or
+[07:29.48]  just from putting so many prompts, I
+[07:31.64]  know how to get there. Um
+[07:33.56]  you can use it to give
+[07:35.48]  a prompt back to you. You're essentially
+[07:36.92]  it's very meta, you're using an agent to
+[07:38.36]  create agents agent prompts. And um
+[07:42.32]  what you can also do as well as if you
+[07:43.96]  ever write a simple prompt, so say for
+[07:45.68]  example,
+[07:47.04]  um you want to enhance this. So, you can
+[07:49.16]  say, use the enhance button here to say,
+[07:51.96]  "Enhance this and enhance this prompt
+[07:55.52]  and provide a better
+[07:57.36]  better uh structure format." You know,
+[07:59.92]  this is kind of more um like a styling
+[08:02.48]  change that we're making here, but if
+[08:03.68]  you wanted to kind of say, "I want you
+[08:05.04]  to enhance this to
+[08:06.52]  you know, respond this way or have this
+[08:08.16]  tone," then you can automatically do
+[08:09.92]  that in here as well.
+[08:12.64]  So, we've now essentially have
+[08:13.96]  capabilities to create these separate
+[08:17.48]  agents within the builder and connect it
+[08:21.08]  to different tools and settings. So,
+[08:23.72]  what that means is you can determine the
+[08:25.84]  level of reasoning. So, like for
+[08:27.52]  example, one agent you want it to do
+[08:29.28]  high-level thinking, you want your
+[08:31.00]  solving a very specific problem, and the
+[08:32.92]  other you want it to be very minimal and
+[08:34.44]  just execute on the task at hand. Um you
+[08:37.72]  can connect different tools. So, if
+[08:39.92]  there's specific functions, MCPs, or
+[08:43.08]  vector stores, you can do that as well.
+[08:44.88]  And you can also transform how you want
+[08:46.92]  the output format of the text to be. So,
+[08:49.20]  in this instance, for example, I can
+[08:51.24]  change this to say, "I want this to be
+[08:53.16]  in a JSON format." And I can add a
+[08:55.16]  schema to say, "In your response, just
+[08:57.88]  this is how you should respond. Do not
+[08:59.32]  even respond in regular text." But for
+[09:01.44]  now, we're just going to do regular text
+[09:02.68]  just cuz it's easier.
+[09:04.08]  And at the same time, you can also
+[09:05.76]  connect it to um different tools. In
+[09:09.36]  this case, I connect it to a vector
+[09:10.96]  store, which is a set of documents I've
+[09:13.72]  created
+[09:15.00]  um as context for the agent to
+[09:16.76]  reference.
+[09:18.96]  Um and then from there,
+[09:21.20]  if it's not existing customer and it's a
+[09:23.12]  new lead, I have a sales agent lead. And
+[09:26.68]  this sales agent lead right here, again,
+[09:28.80]  is
+[09:29.68]  helpful and knowledgeable in capturing
+[09:31.56]  data about this lead. It'll ask them
+[09:33.48]  around kind of
+[09:35.04]  "What's your website URL? What's your
+[09:36.76]  company name? What's your email?
+[09:39.08]  How many visits do you get per per
+[09:40.56]  month?" Like let's say we're building an
+[09:41.68]  analytics tool here. "And what are you
+[09:43.36]  currently using?" It'll gather that and
+[09:45.08]  structure the data so that next step,
+[09:47.40]  you can pass it on to let's say your
+[09:48.68]  database or a Slack notification or add
+[09:51.00]  it to your CRM.
+[09:53.08]  Any uh
+[09:54.40]  questions so far? No, tak- taking it all
+[09:56.96]  in.
+[09:58.36]  well I mean actually one quick question.
+[10:00.80]  The reason why you'd want minimal
+[10:02.28]  reasoning versus advanced reasoning is
+[10:05.48]  that just from a speed and cost
+[10:07.40]  perspective?
+[10:08.72]  Exactly. So
+[10:10.48]  the criteria around minimal or high
+[10:13.68]  reasoning is entirely dependent on the
+[10:15.88]  task at hand and what you want the
+[10:17.56]  actual agent to do. So do you want the
+[10:19.76]  agent to solve a very complex problem?
+[10:21.88]  Then you probably want high reasoning.
+[10:23.88]  Or do you want the agent to just execute
+[10:25.76]  knowing that's going to be a very simple
+[10:26.92]  task at hand? Because
+[10:29.44]  you know maybe in this instance because
+[10:30.88]  of the support agent I would probably
+[10:32.20]  maybe do
+[10:33.48]  medium, but if it's a sales agent it's
+[10:35.72]  pretty simple it's like just take the
+[10:37.64]  data and ask them questions like
+[10:40.36]  what's your company name? There's no
+[10:41.72]  thinking really required for that.
+[10:44.44]  Cool. Yeah. Cool. My cat is just wants
+[10:46.44]  to be in the spot.
+[10:49.08]  And then basically if you wanted to use
+[10:51.24]  as the next step just for the for this
+[10:53.08]  demo just as a lot of configuration I'm
+[10:54.60]  not going to do that, but you can
+[10:56.04]  actually add an MCP. So say for example
+[10:58.00]  if you wanted to add HubSpot and update
+[11:01.24]  your CRM, you can add that here, you can
+[11:03.64]  authenticate, add your token, and then
+[11:05.72]  connect that so that this agent for
+[11:07.84]  example can pull contacts from your
+[11:09.52]  HubSpot or push data as well to update
+[11:12.40]  your leads list in there if I wanted to.
+[11:14.88]  Yeah, and if you don't know what an MCP
+[11:16.36]  is I have a whole video with Ross Mike
+[11:19.04]  I'll include it in the show notes
+[11:20.76]  clearly explain what an MCP is, but in
+[11:23.32]  in layman's terms like what is it
+[11:25.12]  quickly? In layman's terms an MCP is
+[11:27.56]  essentially
+[11:28.80]  a new interface for LLMs to interact
+[11:30.60]  with with external tools. Typically web
+[11:33.20]  apps use APIs to pull and push data, in
+[11:35.92]  this instance LLMs use MCP model context
+[11:38.56]  protocol to actually push and pull data
+[11:40.68]  with an LLM. And the MCPs that are
+[11:42.96]  available at launch are the ones that
+[11:45.00]  you showed?
+[11:46.24]  Yeah, so right now
+[11:48.52]  we have kind of the existing open AI
+[11:50.40]  connectors that are like the official
+[11:52.56]  ones and then there's some third-party
+[11:53.88]  services as well. Hopefully over time we
+[11:56.00]  can get more of the official MCPs in
+[11:57.92]  there. Right. Intercom, customer
+[12:00.32]  service, Shopify e-com.
+[12:03.00]  Yeah. Yeah. And
+[12:04.96]  at the end of this I'll talk about kind
+[12:06.20]  of
+[12:07.88]  how this compares to Claude and kind of
+[12:10.48]  where where there's opportunities for
+[12:11.92]  improvement as well and and kind of how
+[12:13.20]  this differentiates. Okay, you'll keep
+[12:14.92]  it real for us at the end of it.
+[12:16.16]  >> Yeah, I'll keep it very real. I think
+[12:17.56]  what's really interesting here as well
+[12:18.76]  is you know typically when it comes to
+[12:20.64]  AI and workflows especially for people
+[12:22.64]  that are just have their like on the
+[12:27.08]  they're just getting started with AI
+[12:28.68]  adoption and they're just getting
+[12:29.88]  started with AI fluency. And AI fluency
+[12:32.60]  I think is determined around kind of do
+[12:34.60]  you understand how to prompt? Do you
+[12:36.12]  understand how to give the right amount
+[12:37.44]  of context? Can you take responsibility
+[12:39.56]  for the output and understand that you
+[12:40.92]  need to
+[12:41.92]  refine this agent constantly because I
+[12:44.16]  think
+[12:45.24]  from experience working with a lot of
+[12:46.52]  companies I've seen that people that
+[12:48.52]  have
+[12:49.60]  still
+[12:50.68]  early AI adopters or like they're still
+[12:53.64]  like not they're late adopters, but
+[12:55.44]  early in their AI fluency stage they
+[12:57.76]  have
+[12:59.44]  issues with building trust with agents
+[13:02.36]  with the inputs and with the outputs
+[13:04.36]  that they get.
+[13:05.76]  And what that means is if the agent gets
+[13:07.92]  a wrong once they immediately lose
+[13:10.04]  trust. And
+[13:12.20]  that comes down to you know
+[13:14.28]  understanding how to prompt, how to give
+[13:15.80]  the right amount of context, and knowing
+[13:17.28]  that you have to iterate on this and you
+[13:18.64]  can't get it right. Why I'm sharing this
+[13:20.52]  is because this agent builder
+[13:23.12]  has guardrails in place to help you kind
+[13:27.08]  of refine this process. So you can
+[13:29.48]  actually preview it in here if you
+[13:31.00]  wanted to and we'll show what a preview
+[13:32.36]  of that looks like, but you can also
+[13:33.88]  build guardrails to say okay like I want
+[13:36.56]  you to hide personal information if this
+[13:38.08]  comes through or I want you to moderate
+[13:39.92]  this if there's anything that harmful
+[13:41.48]  coming in or if someone tries to
+[13:42.68]  jailbreak this or if it hallucinates.
+[13:44.48]  Hallucination is a big big big part of
+[13:45.92]  this where you know as you use more
+[13:47.52]  context agents performance degrade over
+[13:49.96]  time. So you can actually implement
+[13:52.28]  guardrails to ensure that your input and
+[13:55.20]  your output is actually structured the
+[13:56.92]  way you want it to be. So let's run an
+[13:59.68]  example of what this actual workflow
+[14:01.36]  looks like. So we're going to click on
+[14:02.68]  preview and you can actually test the
+[14:04.24]  preview in here and say hi I'm
+[14:06.44]  interested
+[14:09.12]  in Humboltics
+[14:10.96]  demo.
+[14:12.04]  So this is just an example app that I
+[14:13.88]  have and
+[14:16.44]  the classifier is now going to determine
+[14:18.04]  if this is
+[14:19.68]  an existing
+[14:21.24]  user
+[14:22.36]  or a new lead. And then the it's
+[14:23.96]  reasoning is saying oh this is uh
+[14:27.60]  and you know this is the new lead. And
+[14:30.00]  it's now asking me can you first share a
+[14:32.16]  few details about your business? So I'll
+[14:34.12]  say my website is called the mirror
+[14:35.32]  mxc.com, company is a mirror co, email
+[14:38.20]  is a mirror example whatever
+[14:39.96]  example.com, and I'm doing about 10k
+[14:43.40]  monthly visits.
+[14:45.64]  Uh and I'm using Google Analytics
+[14:49.80]  for basic traffic.
+[14:51.96]  And what it's doing now it's it's
+[14:53.80]  pulling information around the vector
+[14:55.88]  store that we added, the files, and
+[14:57.76]  saying okay cool. I'm going to recommend
+[14:59.72]  a plan based on their needs and then
+[15:02.24]  also prompt them to book a demo if they
+[15:04.56]  wanted to. So it says okay cool we got
+[15:07.00]  your details based on 10k visits and
+[15:09.04]  interest in heat maps and funnels
+[15:11.40]  I recommend your our plus plan to get
+[15:12.96]  started with. You can also book a demo
+[15:14.60]  right here or get started with a free
+[15:16.00]  trial.
+[15:17.08]  And if we wanted to we can have an MCP
+[15:18.56]  that pushes all this data to our
+[15:19.72]  database or to a slack or sets a demo
+[15:22.04]  automatically or even just like in
+[15:24.08]  through here creates an account if we
+[15:25.44]  wanted to.
+[15:27.04]  That's cool. Now that we have this
+[15:29.24]  builder workflow built out, what's
+[15:31.20]  interesting is that we can actually
+[15:33.64]  get this
+[15:35.00]  incorporated into a chat UI window. You
+[15:37.84]  can either use chat kit which I talked
+[15:40.00]  about earlier which is a new interface
+[15:41.72]  for you to actually embed
+[15:44.88]  chatbots into your website or you can
+[15:46.88]  build your own custom agent SDK if you
+[15:48.76]  wanted to. So you just have to pay paste
+[15:50.52]  over the workflow ID and the API keys
+[15:52.84]  that you have and you can build
+[15:55.36]  yeah build the your own chatbot. So what
+[15:57.24]  does that actually look like? Let's just
+[15:59.68]  infer make sure that we have everything
+[16:01.08]  set up properly. We publish this.
+[16:04.48]  And what's really cool is
+[16:06.48]  we're now removing a lot of the
+[16:08.28]  developer dependency. What does that
+[16:10.24]  mean? So if for example in a setting
+[16:13.32]  you have a customer support team that
+[16:14.96]  has built this agentic workflow,
+[16:17.52]  they can get the chatbot installed in
+[16:19.48]  their site and make changes and not have
+[16:21.84]  to rely on engineering team to actually
+[16:24.16]  deploy that for them. It's all happening
+[16:25.84]  live on the front end. So what that
+[16:28.08]  actually means is say for example you
+[16:30.40]  have a website we've now used chat kit
+[16:32.84]  to integrate this on the front end. It's
+[16:34.16]  just a script we've installed.
+[16:36.76]  And now we have a fully working chatbot
+[16:39.84]  trained on our data and the multi-agent
+[16:42.16]  workflow.
+[16:43.64]  If I wanted to come back and change this
+[16:45.36]  workflow to add more agents or add more
+[16:47.00]  tools,
+[16:48.60]  we can just publish directly through it
+[16:50.08]  from agent builder and I don't have to
+[16:52.84]  go to the engineering team say hey can
+[16:54.32]  you deploy this for me?
+[16:55.88]  And the cost of running this is just the
+[16:58.68]  amount of tokens, right? Exactly. You
+[17:01.88]  hook up your open AI open AI API keys
+[17:05.28]  and just your servers associated with
+[17:06.84]  it.
+[17:09.04]  Cool. So we essentially now have kind of
+[17:11.28]  like a chatbot that can now accept leads
+[17:14.08]  on our website so I can just say
+[17:16.32]  I'm interested
+[17:18.68]  in a demo. I have
+[17:21.32]  uh Google Analytics but I want
+[17:25.20]  Humboltics.
+[17:28.08]  10k monthly visits.
+[17:31.24]  And
+[17:32.80]  this will now determine that I'm
+[17:33.88]  actually a lead and respond and
+[17:37.16]  essentially say hey let's let's get you
+[17:38.40]  booked in for a demo. We got your
+[17:39.92]  information. Let's proceed. And you can
+[17:41.84]  you know
+[17:42.88]  the the agent builder has logs so you
+[17:44.60]  can track all that.
+[17:46.44]  Perfect.
+[17:47.64]  Yep.
+[17:49.64]  Crazy.
+[17:50.28]  >> So
+[17:51.72]  it's pretty interesting. You can also
+[17:53.36]  yeah if you wanted to have this
+[17:54.96]  completely as this customer support bot
+[17:56.64]  so that if you have issues you can just
+[17:58.52]  say
+[17:59.52]  actually you know I'm an existing
+[18:01.28]  customer I'm an existing customer
+[18:03.08]  actually or let's just start a new chat.
+[18:06.36]  I'm an existing
+[18:07.80]  customer
+[18:09.68]  help me add
+[18:11.84]  a workflow
+[18:13.76]  site to track.
+[18:15.80]  And hopefully it determines that I'm
+[18:18.08]  actually an existing customer and it'll
+[18:20.52]  give me insight on how to actually add
+[18:22.64]  it to
+[18:24.12]  how to start tracking it.
+[18:26.48]  There you go.
+[18:28.40]  So we have essentially built
+[18:31.44]  a fully working chatbot using context
+[18:35.16]  and rag to first determine if you're a
+[18:37.40]  new customer
+[18:38.76]  or a lead
+[18:39.92]  if you're an existing customer or a lead
+[18:41.44]  and then either solve your inquiry if
+[18:43.00]  you have an issue with the product or
+[18:44.56]  get information and get you set up. Um
+[18:48.24]  yeah. So it's fully working and what's
+[18:51.08]  really interesting is that you can
+[18:52.04]  actually customize
+[18:54.12]  um
+[18:55.20]  the the widget as well using the
+[18:56.84]  playground. So if you want to kind of
+[18:58.08]  have disclaimers or composers
+[19:00.32]  it's fully customizable and it's really
+[19:02.36]  simple to get set up with.
+[19:04.12]  You can just either use an embed code on
+[19:06.12]  your website you just have to stand up a
+[19:08.96]  server to get this working or you can
+[19:11.04]  kind of build a very custom agent
+[19:14.60]  fully working within your app if you
+[19:16.08]  have an app experience you want to have
+[19:17.80]  where you have a chatbot working with
+[19:19.00]  it.
+[19:19.76]  Um
+[19:21.28]  yeah. So any what do you think so far?
+[19:24.20]  I mean someone's going to ask like okay
+[19:26.20]  well why is this better than Intercom or
+[19:30.04]  a SaaS product I can go and use? Like
+[19:31.96]  why do I need to create this myself?
+[19:35.24]  I think it's a good question. So
+[19:37.08]  I mean so first of all there's there's
+[19:38.88]  two use cases here. If you want to build
+[19:40.72]  use this internally
+[19:42.48]  I think the multi-agent builder right
+[19:44.36]  here is still
+[19:46.80]  there's still a lot of value out here
+[19:48.04]  right? Where if you wanted to have a
+[19:49.08]  multi-agent orchestration and say you
+[19:51.36]  want to connect an MCP like Slack where
+[19:53.20]  it sends information.
+[19:54.96]  That's still like useful in a sense
+[19:56.84]  where you have these back-end
+[19:58.32]  automations with multiple agents working
+[20:00.76]  together to get a task done for you.
+[20:03.08]  Um
+[20:03.84]  Now,
+[20:05.28]  if, you know, I'd say you are a startup,
+[20:08.76]  mid-size company, and you want to save
+[20:10.48]  on costs, and you have the engineering
+[20:12.00]  engineering capabilities, then
+[20:14.52]  using these agent builders to then
+[20:17.12]  integrate with chat chat kit to get it
+[20:18.92]  on your app on your website could be a
+[20:20.72]  huge time-saver in the in the future or
+[20:22.56]  a cost-saver as well. Like, there is a
+[20:24.92]  learning curve and a um
+[20:27.28]  investment initially, but over time I
+[20:28.88]  think you can have a lot of time savings
+[20:30.48]  and cost savings as well. I also think
+[20:32.48]  it's a little more a little more custom.
+[20:35.68]  You can really really fine-tune it
+[20:37.32]  exactly how you want it, right? Exactly.
+[20:40.72]  Yeah, you have full control over it. Um
+[20:43.28]  you own it in a way. Like, you
+[20:45.28]  essentially own the workflow in the
+[20:46.52]  system. Um there's a lot of great tools.
+[20:48.52]  Like, if you're looking for something
+[20:49.36]  out of the box, like, you know, Lindy
+[20:50.88]  and Gum Loop, they're all great tools,
+[20:52.84]  but if you want to build something more
+[20:53.88]  custom for yourself, then this is this
+[20:55.24]  is the way to go.
+[20:56.68]  Cool.
+[20:57.68]  Anything else?
+[20:59.04]  Um and then yeah, I think the the you
+[21:01.44]  know, obviously the key the key takeaway
+[21:03.60]  here is, okay, like,
+[21:05.28]  you know, what
+[21:06.56]  one of the key takeaways here. Yeah.
+[21:08.24]  It's a visual drag-and-drop tool. It's a
+[21:10.24]  low barrier entry for non-technical
+[21:12.32]  people. I think there's still some
+[21:13.36]  dependency where you got to have some
+[21:14.44]  technical knowledge, but I think the
+[21:16.08]  multi-agent workflow is very
+[21:17.12]  interesting. You know, in common times
+[21:19.56]  you you see people using one chat window
+[21:22.04]  for like a multiple tasks, and you know,
+[21:24.96]  that's not the right way to do it. You
+[21:25.92]  want to break up tasks into subtasks.
+[21:28.68]  Um
+[21:29.24]  I do think the Claude code SDK is still
+[21:31.84]  capable um based on the model and the
+[21:33.88]  sub-agent orchestration. The only
+[21:35.64]  challenging thing is to get
+[21:37.16]  non-technical people playing with this,
+[21:38.72]  they can't use a CLI. Like, that scares
+[21:40.68]  them, you know?
+[21:42.68]  So, what's interesting is we've taken
+[21:44.28]  the capabilities of what these agent
+[21:45.96]  agents workflows look like, and we've
+[21:47.40]  built an interface on top. People that
+[21:49.04]  are already familiar with an A an A N or
+[21:51.48]  Zapier.
+[21:52.68]  Um
+[21:53.48]  You know, Claude app is very similar
+[21:56.04]  like in terms of the projects and MCP
+[21:57.80]  tools you can build in it. Same thing
+[21:59.16]  with like the projects in ChatGPT.
+[22:02.12]  Um I'm curious to see how kind of this
+[22:04.08]  evolves over time where we have more MCP
+[22:06.44]  capabilities. Right.
+[22:08.04]  >> Um just a quick note on that. So,
+[22:10.76]  this you you are right. Like, the CLI,
+[22:12.88]  the terminal, is daunting for people.
+[22:15.80]  And it's the equivalent I'm old enough
+[22:17.64]  to to remember using MS-DOS
+[22:20.96]  to access a computer, which was
+[22:22.80]  basically a terminal. And computers
+[22:25.44]  didn't hit, you know, mainstream
+[22:26.88]  adoption until there was some graphical
+[22:28.80]  user interface on top of it. Microsoft
+[22:31.80]  Windows
+[22:33.68]  uh or you know, Windows XP I think it
+[22:35.48]  was or or Windows 3.1. So, I think it's
+[22:38.44]  that's this moment in in AI, right?
+[22:41.48]  We're putting We're putting canvases on
+[22:43.88]  top of uh
+[22:47.64]  you know, sort of the hardcore technical
+[22:50.96]  hood. Like, the average person doesn't
+[22:52.76]  want to be chilling in a terminal.
+[22:55.64]  Exactly. Yeah, yeah, exactly. And I
+[22:57.36]  think, you know, as we think about the
+[22:59.60]  models, like, there there's so much
+[23:01.56]  emphasis on using LLMs and agent
+[23:04.44]  workflows for engineering and coding
+[23:07.32]  that the the knowledge workers, the
+[23:09.12]  non-technical people, have been kind of
+[23:10.48]  left behind. The experience is great for
+[23:13.28]  coding, but it's like but how do we
+[23:15.20]  cater this for non-people that actually
+[23:16.52]  want this kind of use case, which I
+[23:17.56]  think is
+[23:18.48]  a broader use case as well. Um so, you
+[23:21.64]  know, a lot of people the common
+[23:22.88]  questions they have is like, how do I
+[23:24.28]  actually get started with this? How do I
+[23:26.36]  get started with agent builder? So, it's
+[23:28.04]  available in platform.openai.com's
+[23:31.36]  um
+[23:32.00]  It's not to ChatGPT, it's in in the
+[23:33.60]  platform side of things. Um I would say
+[23:36.84]  to get started, think about the use case
+[23:39.40]  and what it is that you actually want to
+[23:40.76]  achieve here. You know, for me it was
+[23:42.24]  like, it'd be really cool to just have
+[23:44.08]  my own custom support agent so I don't
+[23:46.12]  have to pay $150 a month
+[23:48.20]  and have it do exactly what it's
+[23:49.40]  currently doing right now, but also be
+[23:51.16]  able to actually capture leads, and I
+[23:52.48]  own it, I control it, and I can build
+[23:53.92]  more, you know, um
+[23:55.68]  integrations afterwards.
+[23:57.56]  Then you work backwards. You say, okay,
+[23:58.88]  what does this existing workflow look
+[24:00.24]  like, and how do we actually build
+[24:01.80]  multiple agents that can play a part in
+[24:03.56]  this, and have them be very specialized?
+[24:06.12]  The next step is I think
+[24:08.04]  building your data context, right?
+[24:10.56]  Capture your data, figure out what
+[24:12.16]  structure your data should look like,
+[24:13.48]  where you want to store it, what should
+[24:14.72]  the context be, clean up your data, and
+[24:16.80]  then add it as a vector store, as a as a
+[24:18.92]  file for your agent to reference. And I
+[24:21.00]  show it in the in the agent builder how
+[24:22.84]  you can actually uh reference that.
+[24:25.20]  Then,
+[24:26.04]  you know, the goal is to try to use as
+[24:27.64]  little context as possible to get the
+[24:29.40]  most out of it. Context has a huge
+[24:31.44]  impact on performance, and it degrades
+[24:33.00]  it over time. And then if you need to,
+[24:35.12]  use multiple agent workflows like we
+[24:36.92]  like you saw. Classifier, then we have
+[24:39.52]  the sales sales lead, then we have the
+[24:41.16]  customer support bot. Specify the roles,
+[24:43.84]  and then from there determine if you
+[24:45.04]  need external tools and MC you know,
+[24:46.60]  like MCPs or web search. Um I would say
+[24:49.72]  Claude is definitely ahead of the game
+[24:51.20]  when it comes to MCPs. Um They're the
+[24:54.08]  ones that
+[24:54.92]  invented that whole process.
+[24:56.44]  >> Yeah, they invented it, right? So,
+[24:57.96]  there's a lot more directory and uh the
+[24:59.96]  directory is a lot more capable, and
+[25:01.44]  there's a lot more features available
+[25:02.84]  when it comes to MCPs in Claude.
+[25:05.04]  You know, OpenAI's got to step it up.
+[25:06.24]  They got to they got they got to
+[25:08.52]  They got to make it easier to to get
+[25:10.08]  more MCP capabilities in there cuz
+[25:11.52]  that's the most important thing.
+[25:13.40]  Um and yeah, I uh I hope I hope it was
+[25:15.44]  helpful in terms of just kind of what
+[25:16.64]  came out and how you can get started.
+[25:18.68]  So,
+[25:20.24]  uh yeah, so this is like super clear,
+[25:22.04]  and that's why I wanted to have you on
+[25:23.56]  to just break this down.
+[25:25.60]  Um for the average founder who's
+[25:28.24]  listening to this, like, where are the
+[25:29.92]  opportunities? Like, what should they be
+[25:31.56]  thinking about?
+[25:33.44]  So, the average founder that is uh
+[25:36.48]  listening to this, where are the
+[25:37.72]  opportunities?
+[25:39.32]  Two parts. I think the
+[25:41.44]  unrelated, but OpenAI's app capabilities
+[25:44.28]  that are still available in ChatGPT is
+[25:46.04]  huge, right? It's like, we're now seeing
+[25:49.40]  ChatGPT as a new distribution and new,
+[25:51.68]  to your point, interface layer to have
+[25:53.64]  it interact with your app. So, that's I
+[25:56.60]  would say from a growth standpoint, use
+[25:58.92]  apps as a distribution channel.
+[26:02.40]  Specifically with agent builder and the
+[26:05.36]  chat kit UI,
+[26:07.64]  get this in front of your non-technical
+[26:09.56]  team members. Give this to your product
+[26:11.16]  managers. Give this to your customer
+[26:12.48]  support team. Give this to your
+[26:13.92]  go-to-market sales team. Give them an
+[26:16.08]  engineer to support them with building
+[26:17.60]  out the MCPs and workflows and standing
+[26:19.56]  up a server, and see what they can
+[26:21.92]  create with this. Enable them to save
+[26:24.12]  time.
+[26:25.16]  And tell them to share this video and
+[26:28.08]  like and comment so that it spreads to
+[26:30.64]  the world. Yes, exactly.
+[26:33.36]  Amir, thanks for coming on and breaking
+[26:35.24]  it down so clearly. I'll include links
+[26:37.36]  to follow Amir
+[26:39.48]  uh where he shares knowledge on all all
+[26:41.36]  this sort of stuff in the show notes. Uh
+[26:43.76]  appreciate you being generous with your
+[26:45.56]  sauce and uh so clear in your thinking.
+[26:49.24]  I've been help.
+[26:50.32]  Later. Thank you Thank you, sir.

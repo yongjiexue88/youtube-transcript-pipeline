@@ -1,0 +1,1627 @@
+Title     : Lessons Learned in Scaling Your Team & Revenue from $1M ARR to $1B+ | Cloudflare CRO Chris Merritt
+Video ID  : YkmDl59sDkg
+URL       : https://www.youtube.com/watch?v=YkmDl59sDkg
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1618
+Saved at  : 2026-06-20 23:06:32
+------------------------------------------------------------
+
+[00:00.78]  foreign
+[00:04.92]  I'm here today to talk about like the
+[00:07.02]  last 30 years I've been working the last
+[00:10.02]  10 we've been building cloudflare I'm
+[00:12.54]  going to talk to you about that today
+[00:13.32]  the Lessons Learned caveat very big
+[00:16.38]  caveat
+[00:18.30]  this is one company's experience I've
+[00:20.76]  been doing this for 10 years across the
+[00:23.22]  whole Arc from a million in run rate to
+[00:26.28]  approaching a billion
+[00:27.90]  and
+[00:29.34]  I'm going to share my experiences their
+[00:31.32]  mind I didn't get them out of a book I
+[00:33.84]  didn't copy paste out of some Harvard
+[00:36.12]  text these are my insights and I'm just
+[00:38.64]  going to share the things I thought were
+[00:39.84]  relevant
+[00:42.30]  contextually we're not allowed to
+[00:43.80]  promote so I'm not promoting but we're
+[00:45.54]  helping to build a better internet we
+[00:46.92]  work with a lot of companies we process
+[00:48.78]  about 20 of the web that's context
+[00:52.44]  lots of customers very long tails so
+[00:55.38]  millions of customers some spend nothing
+[00:57.48]  some spend a lot with us and this is
+[00:59.58]  just a representative sample of the
+[01:01.14]  customers that we have
+[01:03.72]  I've been with the company for a long
+[01:05.16]  time
+[01:05.88]  50 employees about when I joined Steve
+[01:09.60]  Wozniak does not work with cloudflare
+[01:11.64]  but this is the only photo that I could
+[01:13.20]  find from the early days we're about 50
+[01:15.24]  people fast forward
+[01:17.58]  we went across the threshold Republic
+[01:19.38]  actually three years ago yesterday and
+[01:22.80]  very interesting like a little tidbit on
+[01:24.96]  this is of the 10 people that are in
+[01:27.96]  this picture that were involved with the
+[01:30.36]  company
+[01:31.38]  seven of them
+[01:33.42]  seven so a seven to three ratio seven
+[01:36.00]  were back when it was 50 people that
+[01:37.92]  were involved then so I've been it's
+[01:39.84]  this long longevity and that's like my
+[01:42.30]  experience I don't think that's normal
+[01:43.80]  in the space but it's my experience so
+[01:45.96]  as I talk about this I've been there a
+[01:47.58]  long time and a lot of the other folks
+[01:48.84]  have as well super excited to share some
+[01:51.06]  of the things that I think are important
+[01:52.68]  and I I had like this long list of I
+[01:55.98]  want to talk about this I want to talk
+[01:57.18]  about this so I'm talking I have to give
+[01:58.62]  you some reference so the way I thought
+[02:00.84]  about bringing it up is in the three
+[02:02.88]  phases this is not some textbook phasing
+[02:05.88]  these are mine so like less than 50
+[02:09.66]  in terms of ARR so Lefty less than 50
+[02:12.42]  million dollars in ARR phase one phase
+[02:14.82]  two 50 to roughly 250 million the lines
+[02:18.78]  are like a little blurry and then from
+[02:20.76]  there marching across a billion dollars
+[02:23.16]  and cloudflare is on a long journey like
+[02:25.32]  there will be more phases but these are
+[02:27.00]  the three that are relevant to us today
+[02:29.82]  all right let's unpack let's get
+[02:31.32]  straight into it phase one I have some
+[02:34.32]  props and the things that as I was
+[02:37.26]  thinking about
+[02:38.46]  today is like magic eight ball like the
+[02:41.58]  future is somewhat uncertain in phase
+[02:44.52]  one if you flip it over like your goal
+[02:47.58]  is to make things more certain by the
+[02:50.46]  end of this phase
+[02:51.78]  so as I was thinking about what what if
+[02:54.12]  I were to go back and retell the story
+[02:55.86]  on what I thought was important and what
+[02:57.84]  were the lessons that I learned one it's
+[03:00.54]  Builders so hiring the team you need
+[03:03.24]  capacity I showed up there was nobody
+[03:05.22]  else building out the revenue part of
+[03:07.56]  the organization so you're like I need
+[03:09.30]  capacity and as you think about adding
+[03:11.46]  capacity what I really focused on was
+[03:13.98]  Builders people that were willing to
+[03:16.80]  show up when it was not obvious this
+[03:18.90]  thing was going to be a success right
+[03:20.76]  the magic eight ball like future
+[03:22.38]  uncertain you've got to find people that
+[03:24.84]  are like enthusiastic and irrational
+[03:27.42]  some combination of those two things
+[03:29.58]  that want to build we had plenty of
+[03:31.74]  people that were looking for a job I
+[03:34.14]  wasn't looking for those people looking
+[03:36.12]  for people that were willing to show up
+[03:37.62]  and do what it takes and some of the
+[03:39.60]  stories that like really represent that
+[03:41.34]  is we hired somebody as a salesperson
+[03:43.16]  four weeks in I said Travis I've got a
+[03:46.62]  lot of customers that need somebody to
+[03:48.78]  talk to because it's not going well can
+[03:50.94]  you do this thing at the time it was
+[03:52.62]  almost 10 years ago can you do this
+[03:54.42]  thing called customer success and you
+[03:56.76]  just said yes so you're looking for the
+[03:58.86]  mentality of I will do whatever it takes
+[04:01.08]  to make this thing successful and I'd
+[04:03.54]  categorize those folks as builders
+[04:07.08]  this next one is prepare to be
+[04:08.82]  embarrassed
+[04:11.04]  and it's really around a couple of axes
+[04:13.98]  the first is in the beginning when
+[04:16.26]  you're figuring out the product and your
+[04:19.26]  scaling and you have lots of people that
+[04:22.08]  are starting to tug on the service it's
+[04:24.30]  not going to work all the time it's
+[04:26.40]  embarrassing and if you're good at what
+[04:27.90]  you do like one of the most I I think
+[04:30.78]  one of the best determinants of great
+[04:32.94]  people that are out in the market is
+[04:34.32]  will you sell to people you know are you
+[04:37.50]  willing to bring the service to your
+[04:39.18]  friends are you willing to bring it to
+[04:40.56]  family are you willing to bring it to
+[04:42.00]  former colleagues and you're looking for
+[04:43.98]  people that are willing to do that
+[04:45.06]  because they're like irrationally
+[04:46.38]  enthusiastic
+[04:48.12]  and when it doesn't go well they're
+[04:50.52]  going to be embarrassed you're going to
+[04:52.56]  be embarrassed so my my learnings I look
+[04:56.16]  back is I was embarrassed all the time
+[04:59.48]  embarrassed by well did you oversell the
+[05:02.46]  work yeah we're not really all that yet
+[05:05.10]  we're still figuring it out did you
+[05:07.44]  oversell the product
+[05:09.30]  like where have you gotten yourself into
+[05:11.34]  this uncomfortable position and as I
+[05:13.50]  look back like embrace the embarrassment
+[05:15.54]  that's part of this phase
+[05:17.94]  and I I really
+[05:20.64]  we'll talk about how you squeeze that
+[05:22.14]  out across the other phases but in this
+[05:23.88]  phase like be prepared because you're
+[05:25.38]  embarrassed a lot
+[05:27.54]  and I and I the next is around celebrate
+[05:30.06]  the wins this is talked about a lot but
+[05:32.16]  I made a little like a little
+[05:33.60]  modification in here it's like celebrate
+[05:35.82]  the Big W wins everybody will talk about
+[05:38.16]  celebrate little wins I think the big
+[05:40.38]  W's are important if you celebrate
+[05:42.30]  everything it feels like everybody's
+[05:44.34]  getting a trophy and I that's great for
+[05:47.52]  kids soccer
+[05:49.26]  there are some studies that suggest
+[05:50.88]  that's not great for kids soccer like
+[05:52.92]  I'm not here to unpack that but what I
+[05:55.14]  will talk about is
+[05:57.66]  celebrate the big wins in the beginning
+[05:59.70]  in this phase we celebrated the winds
+[06:02.10]  not with a person it wasn't about that
+[06:04.38]  person it wasn't even about that team it
+[06:06.36]  was about the whole company we crossed
+[06:07.86]  over a threshold and delivered x million
+[06:10.44]  or or finish the project we actually
+[06:12.24]  bought a pinball machine for the company
+[06:14.58]  and in hindsight
+[06:17.16]  like you weren't like though sure that
+[06:18.84]  was a good idea somebody was like let's
+[06:20.04]  get kombucha and then somebody else said
+[06:21.78]  I don't want to bring you know
+[06:22.98]  uncultured processed
+[06:25.56]  drinks to the organization get people
+[06:27.54]  sick like let's let's do a pinball
+[06:29.10]  machine so we did a pinball machine and
+[06:31.08]  like that is a part of our heritage and
+[06:33.90]  it's a reflection of celebrating the
+[06:36.18]  wins
+[06:37.26]  I kind of would focus on the big W's
+[06:39.18]  don't celebrate them all but make it a
+[06:40.86]  team win and try to like memorialize it
+[06:43.32]  that pinball machine is a part of our
+[06:45.48]  culture
+[06:47.94]  the next is painful for me personally I
+[06:50.70]  was with a smaller company prior to
+[06:52.38]  cloudflare that didn't work and we got
+[06:54.90]  over our skis on capacity and like the
+[06:57.12]  worst days are when you're rolling and
+[06:59.04]  we're going through an environment where
+[07:00.54]  there are some reductions in force like
+[07:02.76]  if you've done that and you didn't have
+[07:04.98]  to do that because it wasn't Market
+[07:06.36]  downturn it was because you got over
+[07:08.64]  your skis you got overzealous you're
+[07:11.28]  irrationally enthusiastic and you hired
+[07:13.62]  to that standard
+[07:16.02]  it's not awesome you made a mistake so I
+[07:19.20]  like when we were thinking about it this
+[07:20.94]  time is we're sort of constantly on this
+[07:23.46]  tension of I need more capacity
+[07:26.34]  but I don't want to go over capacity if
+[07:28.68]  you get too many people sitting around
+[07:30.18]  with not enough work they get bored and
+[07:33.18]  that's where the drama starts so as I
+[07:35.40]  think about like the the call to action
+[07:38.46]  here is I would rather have a little bit
+[07:41.22]  more demand being asked asking people to
+[07:43.98]  do a little bit more than maybe the
+[07:45.48]  capacity model suggests and be a little
+[07:48.36]  bit under capacity there's tension
+[07:50.40]  because in the beginning
+[07:51.66]  sort of ramp up the team and show growth
+[07:53.88]  and take load off of people but I would
+[07:56.28]  pull back a little bit that's if I were
+[07:58.14]  giving myself advice for the next time I
+[07:59.94]  do this like under capacity versus over
+[08:02.76]  capacity I think wins
+[08:05.70]  and then this this like to wrap up this
+[08:08.04]  section like the thing you're trying to
+[08:10.26]  do in getting past the you know future
+[08:12.66]  out come uncertain is you're trying to
+[08:16.74]  like learn and you're trying to get
+[08:18.00]  these Loops in place and how how much
+[08:20.34]  can I learn how fast can I learn how
+[08:22.32]  much can I absorb you will be asked
+[08:26.16]  in various forms what did you learn
+[08:28.38]  lately and where I think it comes down
+[08:30.24]  for me I was asked at a board level all
+[08:32.52]  the time like what have you learned what
+[08:33.84]  have you learned what have you learned
+[08:34.98]  and I'm like no no like here are the
+[08:36.60]  results let's talk about that like what
+[08:38.10]  have you learned what have you learned
+[08:39.36]  in the early phase you have to be really
+[08:42.54]  clear with like what's the Insight that
+[08:44.34]  you've gleaned
+[08:45.90]  what can you take away like doesn't have
+[08:48.66]  to be something that you were good at
+[08:50.10]  could be something you failed at but you
+[08:51.60]  learned and I like keep a cheat sheet of
+[08:54.24]  what you've learned flip over the back
+[08:55.98]  page and keep the back part of your
+[08:58.14]  notebook full of well this customer
+[09:00.18]  doesn't this customer type does not like
+[09:02.34]  this service or these service
+[09:04.38]  disruptions cause these problems
+[09:06.42]  Downstream so I think about this
+[09:09.00]  over the whole course of this phase keep
+[09:11.88]  documenting what you've learned
+[09:13.92]  it's really important it'll come in
+[09:15.54]  handy when you're under pressure like on
+[09:17.28]  the stage like what have I learned well
+[09:18.36]  I don't remember let me go to my book
+[09:22.02]  all right phase one
+[09:23.94]  get rid of the uncertainty
+[09:25.86]  phase two like
+[09:27.72]  you're kind of irrationally enthusiastic
+[09:29.94]  in the beginning phase two like you've
+[09:32.76]  got something cooking you have something
+[09:35.22]  that is working and now you're ramping
+[09:37.86]  right this is I felt a little bit odd
+[09:40.44]  about was it 50 to 250 million is it 50
+[09:43.14]  to 150 million I don't know make it your
+[09:46.32]  own like this is this is just sharing my
+[09:48.60]  own observations and my own experience
+[09:50.58]  but it's it definitely starts post the
+[09:54.36]  oh
+[09:55.50]  not not really working like it's working
+[09:57.84]  now and you're in this constant scaling
+[10:00.78]  and ramping phase
+[10:02.82]  consistency I I
+[10:07.02]  love endurance
+[10:09.18]  events and like this is all about
+[10:11.82]  looking for a little prop here it's like
+[10:15.96]  how good are you at working out
+[10:18.48]  and maintaining consistency this is like
+[10:20.70]  one of those power bar things and
+[10:24.42]  the key to long-term performance is
+[10:27.48]  consistency and in this phase how good
+[10:30.60]  are you at looking at the same metrics
+[10:32.46]  over and over even when they don't tell
+[10:34.20]  you the story that you like if you don't
+[10:36.36]  like the story don't change the metrics
+[10:38.76]  right away maybe you can but like
+[10:40.40]  deprecate those things slowly if you
+[10:42.72]  don't think it actually matches the
+[10:44.10]  business
+[10:45.00]  but actually watch the metrics and try
+[10:48.12]  to get consistency in there like in this
+[10:50.22]  phase consistency really matters
+[10:53.58]  and it ties into my next Point around
+[10:55.38]  using winches
+[10:58.20]  a winch if you're on like a if you're on
+[11:00.00]  a boat and you're trying to get a line
+[11:01.98]  to stay you pull on it to get the sheet
+[11:04.62]  in like typically a winch is what you
+[11:06.78]  put in place so that the line doesn't go
+[11:08.40]  back out when the wind pulls on the sail
+[11:10.86]  right you lock it in and you lock it in
+[11:13.26]  you lock it in sometimes people use
+[11:14.94]  winches on pulling out a car that goes
+[11:17.52]  in a ditch
+[11:18.90]  right winches the whole idea is that it
+[11:21.42]  only goes one way when you pull it in it
+[11:23.46]  doesn't slide back and I think about
+[11:25.56]  this in the construct of building
+[11:27.24]  long-term durable Revenue get get
+[11:30.06]  customers that you think actually going
+[11:31.68]  to renew that have a good experience
+[11:36.66]  crap or throwing not awesome examples of
+[11:42.00]  what your business will be long term
+[11:43.44]  into your stack of customers and they're
+[11:46.14]  trading that's not helpful you're
+[11:48.96]  burning Cycles on the business if you're
+[11:50.58]  learning that's cool
+[11:52.38]  but if you're just adding revenue or
+[11:55.14]  adding customer types that you don't
+[11:56.70]  think have sort of long-term potential
+[11:58.68]  like they're going to roll back on you
+[12:00.78]  and it's like letting line out it's like
+[12:03.24]  letting slack out into sale it's not
+[12:04.98]  going to hold the power so I think about
+[12:06.54]  like try to have something ratchet to
+[12:09.12]  where you're adding it and you know it's
+[12:10.44]  going to stick and you add it and you
+[12:11.82]  know it's going to stick and you add it
+[12:13.20]  and you know it's going to stick so
+[12:14.82]  that's my that's my sort of reference
+[12:16.80]  around winches
+[12:19.20]  learn how to say I don't know a lot back
+[12:23.22]  to the earlier phase it's about being
+[12:24.78]  embarrassed this phase you don't have
+[12:26.64]  all the answers because you're growing
+[12:28.32]  really fast
+[12:30.36]  and in my experience
+[12:32.76]  there were a lot of things I didn't know
+[12:34.62]  and you know if you go back I've I mean
+[12:37.14]  early 50s now is in my mid-40s in this
+[12:40.14]  phase and I don't think I was that
+[12:42.66]  comfortable saying I don't know this
+[12:44.58]  frequently so I have a trick
+[12:46.68]  like learn how to say I don't know
+[12:48.24]  differently like oh I haven't cracked
+[12:50.16]  the code yet that's a good proxy for I
+[12:52.62]  don't know
+[12:53.70]  like that's acceptable and learn how to
+[12:57.60]  say I don't know what other languages I
+[12:59.22]  don't know pick something that you like
+[13:00.48]  but you will not have all the answers
+[13:02.34]  and be comfortable saying I don't know
+[13:05.16]  especially when it comes to being
+[13:06.78]  inspected going through board meetings
+[13:09.72]  you will not have all the answers they
+[13:11.58]  are paid to ask smart questions and
+[13:14.16]  they're trying to find like how do you
+[13:15.72]  think about it are you self-aware so I
+[13:18.96]  find ways to say I don't know
+[13:23.46]  and also be prepared for like always be
+[13:26.82]  asked for a little more I find this
+[13:28.20]  phase as I look back I was talking about
+[13:30.12]  you know be consistent and what's the
+[13:32.34]  key to being an endurance athlete well
+[13:34.74]  it's consistency
+[13:36.48]  you're working hard in this phase you're
+[13:39.00]  expending a lot of calories to get the
+[13:42.00]  scaling motion to work to be consistent
+[13:44.70]  durable repeatable
+[13:46.62]  and you're kind of getting you're
+[13:48.18]  getting a little worn out in here but
+[13:50.34]  you're gonna chronic you're consistently
+[13:52.56]  being asked for a little more like hey I
+[13:55.80]  know you did that I need a little bit
+[13:57.18]  more so be prepared for that and I I
+[14:00.48]  don't know if I'm suggesting to keep a
+[14:01.92]  little bit in reserve just be prepared
+[14:03.90]  to be asked for more constantly
+[14:07.20]  like constantly this is this is a
+[14:10.68]  product of success
+[14:12.66]  they'll ask other questions if it's not
+[14:15.12]  working
+[14:16.68]  but if it's working I'm like a little a
+[14:19.20]  little more let's go a little bit faster
+[14:20.64]  can you give me three percent faster can
+[14:22.50]  you give me five percent faster and you
+[14:24.54]  need to be prepared to answer that and
+[14:26.52]  the answer can't be oh my god did you
+[14:28.56]  not just listen to what I just you know
+[14:30.36]  we just put up all these results why are
+[14:32.22]  you asking for more like that's the job
+[14:35.16]  of scaling it's uncomfortable
+[14:38.70]  and it goes on my next point which is
+[14:40.56]  like no coasting we have this
+[14:43.44]  um it's become very obvious that if you
+[14:45.72]  watch the duration of being at a company
+[14:48.66]  and building from a million dollars in
+[14:50.46]  Revenue to a billion dollars in Revenue
+[14:52.34]  you don't get there by slowing down and
+[14:55.44]  like backing off the pedals you're
+[14:57.54]  constantly pushing harder and harder and
+[15:00.72]  harder and you want people around you
+[15:03.20]  this is a very important part of my own
+[15:06.18]  DNA and the culture that we're building
+[15:08.04]  no coasting you can't show up and like
+[15:11.76]  oh I'm I'm tired for the next three days
+[15:13.98]  or the next three months like it's okay
+[15:15.78]  to take PTO there's all this unlimited
+[15:17.88]  PTO it's intentional to try to give you
+[15:20.94]  the flexibility to take the time that
+[15:22.68]  you need but when you're shown up we
+[15:24.72]  expect you to show up and care and work
+[15:26.52]  hard and I I think that this is a key
+[15:29.22]  element of this 50 to 250 million you're
+[15:31.86]  going to get tired your teammates are
+[15:33.60]  going to get tired make sure they have
+[15:35.88]  time to take time off
+[15:37.50]  but when they're at work and working
+[15:39.30]  like you got to be pulling no coasting
+[15:41.28]  and that does not change I I wasn't sure
+[15:44.76]  where to put this which phase but it
+[15:47.28]  landed here and I think it's applicable
+[15:48.84]  across all the phases
+[15:51.84]  all right phase three there's like
+[15:54.48]  something happens in phase two phase
+[15:57.96]  three we showed the the sort of public
+[16:00.66]  offering phase and if you look really
+[16:02.52]  closely if you want to go back like
+[16:04.38]  everybody had an orange tie on or some
+[16:07.56]  orange glasses some orange flare and it
+[16:11.52]  was an incredible event
+[16:14.82]  but it is it is over so fast I have not
+[16:17.94]  taken this tie out of the packaging
+[16:19.68]  since I wore it on that day
+[16:22.08]  um if anybody needs one and they are an
+[16:24.30]  orange branded company and they're going
+[16:25.92]  to be you know up there with Stacy
+[16:27.42]  Cunningham or her replacement on the
+[16:29.64]  NYSC the NASDAQ I'd got one you can
+[16:31.56]  borrow it it's like collecting dust it's
+[16:34.20]  over like it is an ephemeral thing as
+[16:37.32]  you move into this phase
+[16:39.90]  you've crossed the line you're no longer
+[16:42.12]  in the sort of
+[16:45.06]  you're not in the like uh outcome
+[16:47.46]  uncertain phase you're not in the well
+[16:50.28]  we don't have any of these scaling
+[16:51.48]  mechanisms in place you're expected to
+[16:53.46]  be able to endure
+[16:55.50]  at this 250 mil and you could say it
+[16:58.08]  happens 150 million a lot of companies
+[16:59.88]  go public in there a lot of companies
+[17:01.38]  get bought in there I'm not over
+[17:04.26]  rotating on whether it's 250 or 100 or
+[17:06.72]  150 or 500.
+[17:08.76]  markets determine that but there's a
+[17:10.56]  point at which you cross the line and
+[17:13.08]  you're expected to have a lot of
+[17:14.58]  endurance
+[17:16.74]  this is not easy but recognize the shift
+[17:19.74]  it's very different the last phase was
+[17:22.68]  about like being creative and flexible
+[17:25.02]  and figuring it out like those things
+[17:26.58]  don't go away but you're expected to be
+[17:28.62]  able to do this repeatably every day day
+[17:31.62]  in day out and that is very different
+[17:35.94]  it's sort of like it dovetails into my
+[17:39.54]  next theme which is around
+[17:41.76]  governance
+[17:43.68]  there's always somebody looking over
+[17:46.44]  your shoulder in this phase it's quite
+[17:49.20]  different than the other phases you
+[17:50.52]  don't have a lot of oversight certainly
+[17:52.98]  in Phase One when you're less than 50
+[17:54.72]  million in Revenue it's many ways it
+[17:56.82]  just you know just us kids running the
+[17:58.74]  company that changes in phase two and
+[18:01.32]  phase three it's it's gone
+[18:03.36]  governance is cool and it exists
+[18:06.42]  to provide a framework so that you feel
+[18:09.24]  comfortable to continue to operate you
+[18:11.70]  can't see everything and know everything
+[18:13.20]  and deep dive into everything anymore
+[18:15.38]  Embrace governance it'll make your life
+[18:18.06]  a lot easier it certainly did with me
+[18:20.46]  our internal audit folks like they
+[18:23.04]  actually can be your best friends they
+[18:25.50]  can be helpful and that is not obvious
+[18:28.08]  in the early part of the phase this is
+[18:29.64]  where I think a lot of folks that are in
+[18:31.86]  my shoes they don't like people showing
+[18:34.26]  up and putting their fingers in your pie
+[18:36.24]  and sort of checking the temperature and
+[18:38.28]  checking whether it tastes good too much
+[18:40.62]  salt like you're kind of offended
+[18:42.30]  especially if you've been doing this for
+[18:44.04]  a long time
+[18:45.84]  like hey I like take a look at the
+[18:48.06]  charts aren't they great
+[18:49.80]  like no process matters and I I can't
+[18:53.22]  overstate that it changes a lot in this
+[18:55.74]  last phase at least it did for us
+[18:58.56]  and if you embrace it it becomes much
+[19:01.56]  easier to deal with and you sleep a
+[19:03.66]  little better because you can't know
+[19:05.04]  everything
+[19:09.84]  just like today I'm kind of
+[19:11.58]  uncomfortable up here like there are
+[19:13.44]  really smart people that are judging
+[19:15.66]  every word that comes out of my mouth
+[19:17.04]  I'm kind of used to it now in terms like
+[19:19.20]  I'm always uncomfortable this phase is
+[19:22.44]  not easy you don't get to do the easy
+[19:24.96]  things
+[19:26.22]  nobody brings you hey I've got this this
+[19:28.98]  problem that you can solve with like a
+[19:30.78]  flick of your pen like those things are
+[19:32.70]  they're in the rear view you are only
+[19:35.04]  working on uncomfortable things
+[19:38.28]  like I'm doing an uncomfortable pause
+[19:40.02]  right now do you feel a little
+[19:41.34]  uncomfortable watching me
+[19:43.92]  it's uncomfortable it never stops
+[19:46.80]  my day is a series of uncomfortable
+[19:48.96]  conversations
+[19:50.70]  my CFO said that a few years ago and I
+[19:53.16]  just kind of laughed I'm like yeah
+[19:54.72]  you're right and I don't want to talk
+[19:56.64]  about that anymore can we talk about
+[19:57.84]  something else but it's true so
+[19:59.94]  recognize that that happens in this
+[20:01.50]  phase and be prepared for it
+[20:04.44]  it's very different than the other
+[20:06.00]  phases you have this happy go lucky
+[20:08.28]  you're getting to work across customer
+[20:10.38]  problems and things that you're
+[20:12.06]  naturally oriented to and naturally like
+[20:14.34]  you're probably not going to be doing
+[20:16.32]  that a lot in this you're going to be
+[20:17.64]  looking at the things that nobody else
+[20:18.96]  can solve
+[20:20.16]  and there's a lot of that that's
+[20:21.60]  required of your you as a leader in this
+[20:23.70]  phase
+[20:25.08]  be comfortable being uncomfortable
+[20:31.20]  it kind of goes in the next part you
+[20:32.58]  everything gets measured
+[20:34.50]  and it's not your choice
+[20:37.56]  you may drive metrics and you may
+[20:40.26]  suggest metrics
+[20:42.84]  and others will drive metrics and others
+[20:45.24]  will suggest metrics and kind of back to
+[20:46.98]  this governance thing everybody's going
+[20:48.96]  to measure things and it's internal then
+[20:50.70]  you have these external metrics that
+[20:52.26]  some smarty pants with a spreadsheet is
+[20:54.12]  doing and like it's really good it's
+[20:56.34]  just a really long list
+[20:58.38]  so all you can't keep it all straight
+[21:00.72]  but you have a responsibility to be
+[21:03.48]  aware that everything is getting
+[21:05.04]  measured so be mindful that you have to
+[21:07.74]  be able to absorb a lot of information
+[21:09.38]  and you have to be able to understand
+[21:11.10]  the context of what they're measuring
+[21:12.84]  and that like that's also quite
+[21:14.88]  different from the earlier phases
+[21:16.26]  because usually you're driving the
+[21:18.24]  metrics and you're defining what metrics
+[21:21.00]  matter in the earlier phases this is
+[21:22.56]  quite different you no longer get to
+[21:24.06]  define those
+[21:27.24]  I debated whether to put this one up
+[21:29.10]  here
+[21:30.06]  board Dynamics I'll say this about your
+[21:34.08]  board changing over time in the
+[21:36.48]  beginning typically like in our industry
+[21:38.90]  if it's venture or somebody putting
+[21:42.12]  money in oftentimes they'll take a board
+[21:43.44]  seat so your board is people that have
+[21:45.84]  put money
+[21:47.28]  and or they've found in the company or
+[21:50.76]  they're really close to one of those two
+[21:52.98]  groups everybody's interested in the
+[21:55.98]  outcome of the company and typically
+[21:57.42]  they have a lot of skin in the game
+[21:59.46]  fast forward through the process a lot
+[22:02.10]  of some of those folks will still be
+[22:03.48]  involved
+[22:04.62]  and you will bring in experts you'll
+[22:06.60]  bring in people that are professional
+[22:07.80]  board members you'll bring in people
+[22:09.06]  that are really smart in certain lines
+[22:10.86]  of the business whether that's go to
+[22:12.24]  market or product or engineering or
+[22:14.40]  audit or like there's a bunch like it
+[22:17.94]  changes
+[22:19.50]  and it can be subtle you'll have people
+[22:21.90]  roll off and you won't even realize that
+[22:23.88]  they're there anymore you'll have people
+[22:25.86]  roll on and you'll meet new people and
+[22:27.96]  the Dynamics have changed just like
+[22:30.72]  they've the Dynamics change across
+[22:32.40]  phases your board changes too and
+[22:36.48]  be mindful of that take advantage of
+[22:38.94]  them they're really smart people that
+[22:40.68]  are engaged with the company oftentimes
+[22:43.02]  like the work to be done just changes at
+[22:45.24]  the board level and you should try to
+[22:47.16]  develop a really good relationship with
+[22:48.42]  your board and be mindful that the
+[22:50.64]  composition will change over time
+[22:53.40]  all right I had a slew of things and I'm
+[22:56.10]  like God doesn't really fit in one phase
+[22:57.66]  doesn't fit there but I thought it was
+[22:59.04]  important
+[23:00.12]  so I'm going to cover them here these
+[23:01.62]  are like always do the following
+[23:05.04]  I don't know if I should use those words
+[23:06.54]  like always and never kind of
+[23:08.36]  challenging when you're up on stage and
+[23:10.86]  being recorded but let's try it
+[23:13.68]  experiments
+[23:16.38]  I use and I put this in quotes for a
+[23:18.54]  reason I use experiments as like a magic
+[23:22.08]  like open sesame or get out of jail free
+[23:24.84]  term
+[23:26.40]  learn how to like give yourself the
+[23:29.04]  latitude to try things doesn't take a
+[23:31.56]  big plan we're just going to run an
+[23:33.00]  experiment over here
+[23:34.80]  it gives you the latitude to try stuff
+[23:37.20]  and not know the outcome like if you do
+[23:39.84]  15 pages and you will in 24 months it's
+[23:42.48]  going to look like this and we guarantee
+[23:44.70]  that the outcome are like this well
+[23:46.02]  that's that's great that's kind of not
+[23:47.64]  what I'm describing I'm describing the
+[23:49.44]  when you don't know the outcome call an
+[23:52.38]  experiment and then everybody at least
+[23:54.54]  my experience has been people's anxiety
+[23:56.76]  level drops they're like oh okay the
+[23:59.22]  experiments are cool go ahead
+[24:00.96]  how much do you need for that how much
+[24:02.40]  time do you need what can I do to help
+[24:03.66]  you it's just change like the Lexicon of
+[24:06.00]  using experiments versus making plans
+[24:08.28]  and making changes it puts people at
+[24:10.98]  ease and my belief is that if you put
+[24:12.78]  people at ease you'll execute better
+[24:15.42]  so I like it's like a magic Elixir I'm
+[24:18.06]  sharing that with you and folks back in
+[24:20.10]  the office now go that's why he uses
+[24:21.96]  that experiments term all the time
+[24:26.28]  this is obvious the first part is
+[24:28.14]  obvious do things that don't scale it's
+[24:30.60]  true you will do them if you can be
+[24:32.70]  intentional about it it's a little bit
+[24:35.10]  easier
+[24:36.24]  you will do things that seem really odd
+[24:39.42]  and like ah like you can only do this
+[24:41.46]  for a few weeks because I don't think
+[24:42.90]  this is going to work yeah but you gotta
+[24:44.40]  solve a problem now and you're going to
+[24:45.90]  learn something the thing that I
+[24:47.64]  appended to it is take an inventory
+[24:51.24]  keep a list of those things that you did
+[24:53.82]  that you knew were not going to scale
+[24:56.04]  because you're going to have to go back
+[24:57.84]  and fix a lot of those when you go oh
+[25:00.12]  well we only did it for six it was only
+[25:01.80]  supposed to be here for six weeks well
+[25:03.06]  we're six months in or six years in and
+[25:05.10]  it's still running
+[25:06.84]  what are you gonna do about it you have
+[25:08.76]  to like you're you are creating debt
+[25:12.06]  when you do things that don't scale
+[25:15.78]  and it's it'll help you if you kept a
+[25:19.56]  list of things or at least a a list in
+[25:22.44]  your mind or a list on the back of a
+[25:24.00]  notebook so that you're not sort of
+[25:26.46]  surprised me like oh my God I totally
+[25:28.14]  forgot we did that
+[25:29.58]  keep a list
+[25:33.72]  show up and care
+[25:36.66]  I had this like appended to the no
+[25:38.52]  coasting reference but I thought it was
+[25:40.08]  worth mentioning
+[25:42.06]  across all the phases and back to this
+[25:44.46]  notion where I started with Builders
+[25:46.08]  wanted
+[25:47.52]  you want people to show up and care
+[25:50.10]  about what you're building
+[25:52.38]  and that starts with you
+[25:55.56]  if you are like ah this is an
+[25:57.54]  interesting company I don't really know
+[25:58.92]  anything about the space that's fine
+[26:00.86]  like get into it
+[26:03.78]  figure out what the customers are going
+[26:05.82]  to be using you for get into like the
+[26:08.40]  problems that have existed and why
+[26:10.62]  if you can't get yourself excited about
+[26:13.20]  why you're showing up and doing the work
+[26:15.12]  that you're doing or about the use case
+[26:16.74]  how are you going to build a team that
+[26:19.08]  is going to pull when things are hard
+[26:22.08]  care about it I think that the the
+[26:24.56]  [Music]
+[26:25.80]  the downside
+[26:27.96]  when you do this wrong like
+[26:30.12]  you don't really care the work is going
+[26:32.70]  to show it and all that scaling that you
+[26:35.04]  did before it's going to be like on a
+[26:36.90]  really sandy Foundation it's not going
+[26:38.52]  to work
+[26:40.08]  test for this always and some people may
+[26:43.98]  show up and care for a while and then
+[26:45.96]  they don't
+[26:47.04]  that may be a good example if you if
+[26:49.20]  your answer if you're talking with
+[26:51.24]  somebody about performance problems
+[26:52.50]  you're like yeah but you were great and
+[26:54.18]  you were perfect for this phase like but
+[26:56.70]  maybe they don't care anymore maybe they
+[26:58.56]  just sort of ran out of it and that's
+[27:00.18]  okay
+[27:01.74]  it's an always required
+[27:05.70]  I can't overstate this this matters a
+[27:08.46]  lot because the intensity as you're
+[27:10.68]  going through building these companies
+[27:12.12]  they take a lot out of you and if you
+[27:14.22]  don't care about what you're building
+[27:15.96]  it's really hard to do a great job
+[27:24.00]  this is like a
+[27:26.10]  the embarrassed piece is like learn to
+[27:28.08]  say I'm sorry
+[27:29.76]  and
+[27:32.40]  you say I'm sorry a lot and you have to
+[27:34.98]  mean it people are watching they're
+[27:37.98]  going to try to figure out well do you
+[27:39.36]  really care do you really care that I
+[27:41.70]  tried to do something because you asked
+[27:43.08]  me to do it it didn't work like get on
+[27:45.18]  my back
+[27:46.20]  do you feel do you feel bad about it
+[27:49.26]  and it's it's constant like it's this is
+[27:51.78]  hard but you have to mean it when you
+[27:54.12]  really care about what you're building
+[27:56.76]  and it doesn't go well and there are
+[27:59.52]  down certainly like people
+[28:01.20]  people are involved you have to be able
+[28:03.12]  to say I'm sorry whether that's a
+[28:04.44]  customer internal or you know your home
+[28:06.66]  team your family team where you're like
+[28:08.16]  hey I let you down I had to do this
+[28:09.54]  thing at work
+[28:10.62]  I'm really sorry it's the it's the four
+[28:13.50]  reels part like really mean it
+[28:16.44]  and going back to being like an
+[28:18.00]  endurance athlete like learn to live
+[28:20.22]  with your setbacks but get back up and
+[28:22.50]  keep going
+[28:24.54]  be honest
+[28:26.52]  um
+[28:27.36]  kind of a part of like I don't know
+[28:29.58]  haven't cracked a code yet look at
+[28:32.34]  yourself I'm like you know what you
+[28:35.10]  think is going well and what you think
+[28:36.60]  is not going well be honest with
+[28:38.52]  yourself be honest with your bored be
+[28:40.20]  honest with your team
+[28:41.76]  bad news does not age well there's all
+[28:44.58]  these little axioms it's true
+[28:48.60]  and then as Leaders whether you're an
+[28:50.58]  individual contributor that people look
+[28:52.02]  up to or if you're running an
+[28:54.06]  organization
+[28:56.04]  these things scale because you have a
+[28:57.90]  collection of people showing up and
+[28:59.22]  working hard and working on a problem
+[29:00.72]  that they care about
+[29:02.10]  if it worked
+[29:03.66]  make sure that everybody feels like that
+[29:06.30]  win small W or Big W make sure that that
+[29:09.12]  win is shared you get good feedback
+[29:12.12]  share it if there is terse or pointed
+[29:15.48]  feedback that something didn't work like
+[29:17.46]  step up and say ah you're right first of
+[29:20.52]  all recognize what is being described
+[29:24.00]  take the blame so that you can get on
+[29:25.68]  fixing it
+[29:27.24]  it's all about moving forward and
+[29:28.92]  getting on with fixing it's never about
+[29:30.30]  being perfect it's all about making
+[29:32.52]  progress and I think about like sharing
+[29:34.38]  the credit and taking the blame as a way
+[29:35.94]  to do that faster how do you go faster
+[29:39.30]  and the last is thank you I know we're
+[29:41.16]  out of time many customers here thank
+[29:43.86]  you for listening to me thank you for
+[29:45.00]  taking the time there's a q a session
+[29:46.56]  it's that way and it's 30 minutes
+[29:49.32]  thanks very much well thank you for
+[29:51.18]  following over here I think I saw a lot
+[29:53.76]  of the faces that are here now maybe 30
+[29:56.70]  minutes ago but yes
+[29:59.46]  yes yes thank you thank you for
+[30:01.62]  validating that
+[30:04.62]  what can I do to help like I'm I'm here
+[30:07.32]  to serve what questions can I answer
+[30:10.56]  and I will try I will do my best to
+[30:12.36]  answer your questions directly and not
+[30:14.76]  avoid them too much uh yeah just to
+[30:17.04]  remind the have Ike to get your uh
+[30:20.88]  question answered so we'll be looking
+[30:22.80]  around for you yes and I will direct you
+[30:24.96]  back to a mic if you just call it out
+[30:27.12]  good afternoon uh thank you for the the
+[30:29.46]  other uh talk as well you mentioned at
+[30:31.44]  the end that you have to be in it to win
+[30:32.76]  it you have to be really excited about
+[30:33.84]  work and there might be a time where
+[30:35.40]  somebody's been a great performer for
+[30:36.78]  let's say eight years and then the
+[30:38.52]  passion dies in their eye and you
+[30:40.20]  mentioned maybe it's time to maybe let
+[30:41.70]  them do something else if you've found
+[30:44.22]  experience either finding that something
+[30:45.48]  else internally or is it in your best
+[30:47.40]  interest to find something else
+[30:48.36]  externally because it's hard to lose
+[30:49.92]  that much institutional memory but I
+[30:52.02]  also understand if you're checked out
+[30:53.40]  you're checked out so what are your
+[30:54.48]  thoughts oh I I love that question it's
+[30:56.46]  a hard like I love you going it's
+[30:58.38]  straight to like that's not an easy
+[31:00.36]  warm-up question that's like straight at
+[31:02.16]  it thank you for doing that
+[31:04.92]  um
+[31:07.14]  if you're I think I would start with the
+[31:09.42]  end in mind where you said like there's
+[31:11.04]  there's a bunch of Ip if you've had
+[31:12.72]  somebody at the company for a while
+[31:15.00]  we historically have not required people
+[31:18.18]  to come in knowing the industry so you
+[31:21.36]  invest a lot in folks learning the
+[31:23.46]  industry and and oh by the way the
+[31:25.14]  industry is moving so
+[31:26.82]  they've picked up things while the
+[31:28.92]  company has been picking up things so
+[31:30.18]  you've all learned it sort of at a pace
+[31:33.36]  and it's it's reasonable for folks to
+[31:36.96]  get fatigued I think it's very normal
+[31:39.60]  the question is like is it a I'm
+[31:42.48]  fatigued and I just want to do something
+[31:44.28]  else
+[31:45.48]  and is that something like a different
+[31:47.46]  function or is that just I just want to
+[31:49.26]  work on a separate set of problems we're
+[31:51.48]  helping to build a better internet
+[31:52.44]  that's our that's sort of our charge do
+[31:54.54]  you want to keep doing that or is it you
+[31:56.28]  want to go and help you know insert
+[32:00.12]  solving other problems
+[32:02.22]  and I I try to Pivot on like what
+[32:04.26]  problem do you want to solve and if
+[32:05.46]  you're just tired solving this problem
+[32:07.44]  for a while what's the facility to give
+[32:09.72]  you time to recharge and is that
+[32:11.82]  measured in minutes SEC you know seconds
+[32:13.92]  minutes days weeks
+[32:16.74]  longer than that there are there are
+[32:18.78]  mechanisms I always try to retain the IP
+[32:21.48]  because you spent we spend a lot of time
+[32:24.12]  hiring people we all do you put a lot of
+[32:26.52]  energy into it
+[32:27.96]  sometimes you get those wrong and
+[32:29.94]  sometimes people just are not a great
+[32:31.68]  fit later and your responsibility is to
+[32:33.90]  make them find you know is to help them
+[32:35.82]  not make them help them find something
+[32:37.86]  else
+[32:38.88]  I try to have a bias towards finding
+[32:41.34]  something internal first or at least
+[32:43.26]  trying to solve the fatigue first thanks
+[32:45.42]  for the question
+[32:49.26]  somebody please have another question
+[32:52.08]  I have one ah thank you
+[32:54.36]  uh the the question on the strategies of
+[32:57.48]  retention of people while you're growing
+[33:00.24]  from the first to the second phase yes I
+[33:03.00]  can imagine akamais and companies like
+[33:05.64]  that might be going through your your
+[33:08.18]  AES especially the good ones so what
+[33:11.16]  type of things did you do in this
+[33:13.14]  first and second stage to retain and
+[33:16.14]  motivate the team to continue batting
+[33:18.60]  and investing in cloudflare yeah thank
+[33:20.94]  you question just to put some more
+[33:22.62]  context on it phase one is is like when
+[33:25.20]  you're still roughly small and figuring
+[33:26.88]  it out I I put a number in there was
+[33:28.62]  less than 50 million in Revenue
+[33:31.08]  but let's just say you're going from
+[33:32.52]  tens of millions to hundreds of millions
+[33:34.68]  in Revenue across that curve how do you
+[33:37.20]  retain people and what do you do I I
+[33:39.78]  kind of go back to our earlier point
+[33:41.10]  which is like are you still interested
+[33:43.14]  in the problem
+[33:44.52]  and
+[33:46.56]  if you're a high Growth Company often
+[33:49.20]  across that Spectrum you're adding other
+[33:52.20]  use you're adding other use cases
+[33:54.30]  specifically meaning your portfolio of
+[33:56.10]  services is expanding
+[33:57.96]  and
+[34:00.18]  that does two things one it gives you
+[34:02.76]  more problem surface area for people to
+[34:04.98]  engage with
+[34:06.24]  but it does the other thing is well just
+[34:08.58]  it makes it harder it's confusing so
+[34:13.26]  the surface area is like a double-edged
+[34:15.90]  sword but I use that as a as a way to go
+[34:18.36]  back and talk about well there's all
+[34:19.68]  kinds of problems that we're trying to
+[34:21.06]  solve what is the problem that you want
+[34:22.74]  to solve and that you were asking a
+[34:24.72]  specific question around like
+[34:26.52]  competitors or others coming in you know
+[34:29.94]  burning down the list of your employees
+[34:31.64]  you have to assume that's always going
+[34:34.14]  to happen and if
+[34:36.18]  if you take pride in who you're bringing
+[34:38.52]  into the team
+[34:39.78]  so as soon as somebody else gets when
+[34:41.28]  did they want it like you should kind of
+[34:42.96]  celebrate like ah we've built something
+[34:44.70]  others want and I think about embracing
+[34:47.52]  that
+[34:48.54]  not hiding from it in fact some of the
+[34:52.08]  best stories start with
+[34:54.30]  well I had this the competitor called me
+[34:56.94]  and they tried to recruit me and it
+[34:58.26]  makes you like it makes you
+[34:59.22]  uncomfortable when one of your employee
+[35:00.96]  says that and they say but I use it as
+[35:02.94]  an opportunity I learned about their
+[35:04.32]  product and then your anxiety level
+[35:06.12]  comes down a little bit so it's a
+[35:07.92]  culture of just assume your best people
+[35:10.86]  are constantly getting asked to come and
+[35:13.50]  do something else it's better to have
+[35:15.90]  that transparency so that one you can
+[35:18.42]  figure out like
+[35:19.92]  are some of your best employees like a
+[35:22.80]  little loose in the saddle better to get
+[35:24.84]  ahead of it and then if competitors are
+[35:28.20]  coming in
+[35:30.18]  I would almost use that as validation
+[35:31.98]  you don't want to lose your team
+[35:34.44]  like that's not the goal but the goal is
+[35:36.24]  to retain people but try to get these
+[35:37.98]  things to the surface that might cause
+[35:40.68]  somebody to be more
+[35:43.02]  loosen the saddle and willing to go
+[35:44.94]  somewhere else so I think it's um
+[35:48.30]  if I were to sort of encapsulate and
+[35:49.80]  play it back I would say don't make a
+[35:51.48]  taboo assume your competitors are going
+[35:54.72]  to burn down your employee lists and try
+[35:57.24]  to use it to your advantage somehow
+[35:59.82]  thank you for the question
+[36:01.44]  didn't have a stock answer for that
+[36:05.22]  um Chris thanks for uh talk which was
+[36:07.68]  very enjoyable and
+[36:10.74]  I have the dreaded two-part question the
+[36:13.56]  first part is Oh you talked about the
+[36:15.48]  importance of measurement along the
+[36:17.34]  different stages of your company's
+[36:19.80]  growth and evolution what did you
+[36:22.50]  measure
+[36:23.60]  and then the part two is looking back on
+[36:26.94]  what you wish you had measured instead
+[36:28.86]  oh wow that's such a good question so
+[36:30.78]  I'll try to answer the first one while
+[36:32.04]  it gives me time to think through an
+[36:33.78]  answer for the second one so what did we
+[36:35.40]  measure and then
+[36:37.44]  what do we wish we'd measured
+[36:40.74]  um
+[36:42.30]  I'd say like all along our journey there
+[36:44.64]  are a set of met here here's the
+[36:46.20]  learning that I would share
+[36:47.64]  along your journey you're going to
+[36:49.20]  measure things that are obvious you're
+[36:51.48]  going to measure growth rates you're
+[36:52.86]  going to measure growth rates around
+[36:54.72]  product categories and you're going to
+[36:56.16]  measure productivity and you're going to
+[36:57.66]  measure CAC ltvs all these things like
+[37:00.00]  plenty of metrics have been defined to
+[37:01.98]  measure
+[37:02.88]  and I'm not sure you're going to make up
+[37:05.70]  a lot of new ones but you'll probably
+[37:07.14]  make up a few that are very specific to
+[37:09.36]  your business
+[37:11.42]  what I if I look back so we did all
+[37:15.12]  those just to answer a question like we
+[37:16.26]  did all those standard metrics and I
+[37:18.12]  think you you start with kind of none
+[37:20.04]  and then you have too many and then you
+[37:22.44]  shrink back you're like actually these
+[37:23.76]  are the ones better
+[37:26.04]  that's like the arc for us on the ones
+[37:28.20]  that we did measure the ones that I wish
+[37:30.06]  that we'd measured
+[37:32.46]  you when you go through this public
+[37:34.92]  process you are you have the standard
+[37:37.80]  metrics that you you know Revenue gross
+[37:41.28]  margin ebitda like all the standard
+[37:43.92]  things that you can find in our investor
+[37:45.78]  relations website
+[37:47.88]  then there's the secondary measures like
+[37:49.68]  they want to know your customer accounts
+[37:51.18]  these are non you know these are
+[37:52.50]  typically like not on the the income
+[37:54.90]  statement of the balance sheet they want
+[37:56.22]  to know retention rates they want as
+[37:57.96]  much
+[37:58.86]  detailed information as they can to
+[38:00.72]  inform their models
+[38:02.88]  and that's to be expected what I think
+[38:05.16]  that I wish that we'd measured earlier
+[38:07.44]  is some of those things and the
+[38:09.84]  component pieces the secondary measures
+[38:12.18]  were something that you evolve into and
+[38:14.70]  I I wish that we'd measure some of those
+[38:17.46]  component pieces way earlier and I we
+[38:21.18]  have good hygiene on these things back
+[38:22.86]  to my comment around governance is cool
+[38:24.48]  we had
+[38:25.44]  making sure that we're measuring the
+[38:26.88]  right things but
+[38:28.98]  when something is a public measure you
+[38:31.44]  want as much runway as possible so it's
+[38:33.96]  not like did we not measure it it's like
+[38:35.88]  could you have done it a little bit
+[38:36.96]  earlier
+[38:38.10]  and I would pay attention to those
+[38:39.54]  secondary measures
+[38:43.68]  hi Chris
+[38:45.18]  um what phase did you start focusing on
+[38:47.64]  international market sales and what do
+[38:49.74]  you have any tips for that
+[38:53.10]  um were you born Global yes like it's a
+[38:56.34]  good question so
+[38:57.72]  we were born a little bit Global and
+[39:03.30]  I would say that our International poll
+[39:06.90]  so we try to invest behind demand and
+[39:09.72]  when our service like our services for
+[39:11.64]  developers fingers on keyboards
+[39:13.62]  practitioners Network Engineers Security
+[39:15.72]  Professionals and if if English was
+[39:18.78]  because we didn't translate the website
+[39:20.22]  if English was a primary language or a
+[39:23.46]  secondary language or Google translate
+[39:25.02]  was really good in that local dialect
+[39:27.06]  like that's what our map looked like in
+[39:29.70]  the beginning
+[39:30.96]  and that was that's where we started and
+[39:34.26]  we kind of go back to these sort of
+[39:35.58]  funny these funny internal meetings
+[39:37.80]  you'd have where you're like well who's
+[39:39.06]  covering
+[39:40.98]  Australia
+[39:43.08]  we don't have anybody in Australia we're
+[39:44.64]  not Incorporated there we you know can
+[39:46.26]  barely spell it
+[39:47.76]  and then you get like oh well you cover
+[39:49.50]  Australia like you can use
+[39:52.20]  and you go down this list of carving up
+[39:54.72]  the world which seems funny in hindsight
+[39:57.36]  but you start somewhere
+[39:59.40]  and then
+[40:00.72]  you know skip over the covering it from
+[40:03.66]  Super remote then you start putting
+[40:05.34]  people out there so we went down the
+[40:07.08]  list of
+[40:08.58]  typical like here's where our demand is
+[40:11.22]  coming from here's where we're going to
+[40:13.20]  go we had the benefit of having demand
+[40:16.08]  already not everybody has that benefit
+[40:18.12]  some companies have to go out and spend
+[40:20.52]  a lot of money to drive demand and you
+[40:22.08]  want somebody close as you're spending
+[40:23.52]  that money we were reacting to demand in
+[40:25.92]  the beginning and then investing behind
+[40:27.60]  it and I that's I think a Hallmark of
+[40:29.58]  our business but if you look at like the
+[40:32.10]  other stories around like now you know
+[40:34.56]  there's demand coming out of certain
+[40:36.00]  markets
+[40:37.02]  we would take people that understood the
+[40:39.66]  product
+[40:41.52]  we're a practitioner driven you have to
+[40:43.74]  understand the product to get the win
+[40:45.72]  and get to somebody to to have the
+[40:48.60]  experience of success using your service
+[40:50.64]  so we would take our team and sort of
+[40:53.04]  like you go to UK you go to Australia
+[40:57.72]  you go to and you know insert
+[41:00.84]  part of the world that we wanted to do
+[41:02.58]  more in so we were very uh prescriptive
+[41:04.62]  in having people rotate out before we'd
+[41:08.40]  opened a remote office we always wanted
+[41:10.32]  somebody to seed
+[41:12.96]  preferably permanently
+[41:15.18]  but at the very least for months and
+[41:17.82]  preferably for years and that motion has
+[41:21.18]  worked for us and then but I would say
+[41:23.22]  it did start with
+[41:25.02]  invest behind demand other businesses
+[41:28.14]  don't have that luxury and like there
+[41:30.12]  are people that are more well educated
+[41:31.68]  to talk through that
+[41:37.68]  all right so I have uh two questions but
+[41:40.80]  they're quick the first is uh how do you
+[41:43.56]  close the gap between forecasting
+[41:47.10]  and CRM data
+[41:50.28]  and your team's behavior and execution
+[41:54.42]  so that's the first question how much
+[41:56.34]  time do we have
+[41:59.52]  I'm gonna have to time box this one keep
+[42:01.56]  keep going and the second is just a yes
+[42:03.78]  and or no question is like do you
+[42:05.82]  believe in playbooks for business can I
+[42:09.78]  start with that one I'm going to start
+[42:12.12]  reverse order
+[42:13.56]  um thank you for the question
+[42:15.00]  um
+[42:15.66]  the first is around closing gaps and
+[42:18.38]  managing through what you can see in the
+[42:20.94]  data versus what you think reality looks
+[42:23.46]  like and then the the second was do I
+[42:25.74]  believe in playbooks
+[42:29.76]  The Playbook one is a real um I'll start
+[42:32.76]  there because I I think this one's kind
+[42:34.68]  of fun
+[42:35.70]  I think it's playbooks are good I think
+[42:37.92]  they have a purpose
+[42:39.54]  I talked about the phases phase one
+[42:42.12]  being small phase two being Super Hyper
+[42:44.22]  growth and you definitely have something
+[42:45.96]  in phase three being you know it's more
+[42:48.06]  of a proper going concern public more
+[42:50.76]  more than likely a public entity
+[42:55.02]  I think if you take you hire someone
+[42:56.88]  somebody has a Playbook or you bring
+[42:58.32]  your own playbooks if you take them too
+[43:00.54]  early and just say hey here's what we're
+[43:01.98]  gonna do
+[43:04.26]  I think it's like super high beta it
+[43:06.84]  might work out
+[43:08.34]  but the likelihood that the context for
+[43:10.68]  what those Playbook and I'm talking
+[43:12.24]  about people bringing playbooks for a
+[43:13.92]  second
+[43:14.94]  if you bring a playbook in you say we're
+[43:17.22]  going to deploy this
+[43:18.90]  I don't think context was really
+[43:20.88]  considered in those in that Playbook
+[43:22.62]  generation it was created in a separate
+[43:24.90]  environment
+[43:26.76]  maybe it works I've seen it not work
+[43:29.58]  more frequently than not so I don't
+[43:31.68]  start with playbooks as a starting point
+[43:33.44]  I will start with like what are we what
+[43:36.60]  are the physics of what we're doing and
+[43:38.76]  then build up our own playbooks and then
+[43:40.92]  and then say oh well we don't need to
+[43:42.66]  recreate the wheel let's copy paste this
+[43:44.88]  portion of somebody else's Playbook that
+[43:46.56]  we admire
+[43:47.64]  but I I have a very specific like no
+[43:50.10]  playbooks first and I not everybody in
+[43:52.92]  my role feels this way so I'm an end of
+[43:56.16]  one I know others that are like I bring
+[43:58.56]  this Playbook and we're gonna hit this
+[44:00.48]  hard
+[44:01.74]  um you should
+[44:03.96]  evaluate which one you think resonates
+[44:06.12]  in the environment
+[44:08.04]  then the question around
+[44:09.96]  how do we close the gap
+[44:12.18]  on what you can and I'll reframe it as
+[44:14.64]  what you can see versus what you think
+[44:16.98]  is going to happen
+[44:18.36]  and that's like a
+[44:21.54]  there's a lot of software chasing that
+[44:23.46]  right now there's a lot of smarts I
+[44:25.68]  don't know if you're one one of these
+[44:26.82]  companies is like a leading question it
+[44:28.26]  is a leading question thank you
+[44:30.30]  um
+[44:31.50]  I should have you come up here and tell
+[44:33.66]  us how the industry thinks about
+[44:36.66]  automating this
+[44:38.40]  um I think it's an art and science when
+[44:40.14]  it comes to forecasting and I don't
+[44:43.02]  think I can sort of articulate the six
+[44:46.02]  things three or art and three are
+[44:48.00]  science in like 30 seconds but I'm happy
+[44:50.04]  to take that offline
+[44:54.96]  hi
+[44:56.46]  um Roxanne I'm very much in phase one so
+[44:58.74]  we'll appreciate any learning that you
+[45:00.30]  have from that this is more kind of a
+[45:02.16]  culture leadership question we'd love to
+[45:03.90]  know what you've seen be effective and
+[45:05.64]  maybe not effective in terms of
+[45:07.20]  instilling a culture of ethics and
+[45:09.06]  inclusion in sales teams I think there's
+[45:11.16]  often so much pressure on sales teams
+[45:13.08]  and so this is a place that lawyers get
+[45:15.12]  nervous and then on the same side it's
+[45:16.98]  historically not been the most inclusive
+[45:18.84]  in a broad range of metrics so we'd just
+[45:20.64]  love to know how you've seen you know
+[45:22.08]  things uh work or not work there
+[45:24.48]  say more about your question just double
+[45:26.46]  click a little bit more yeah so I mean
+[45:28.44]  on the ethics side like um
+[45:31.32]  his uh if you talk to a lawyer and you
+[45:34.08]  ask them about anti-bribery they will
+[45:35.64]  give anecdotes about hey if a sales team
+[45:37.74]  feels a lot of pressure and they hear
+[45:39.66]  from the organization we care about
+[45:41.04]  what's doing right but wink wink make
+[45:43.02]  your numbers they'll feel a need to cut
+[45:45.60]  corners and then on the inclusion side
+[45:47.46]  kind of just I'm sure all the things
+[45:49.44]  you've seen like not um having an
+[45:51.84]  archetype for what that you know great
+[45:53.58]  go-getter sales person looks like that
+[45:55.56]  might not affect me um you know Etc
+[45:59.04]  um and thank you so much for this I know
+[46:00.30]  it's a spicy question yeah
+[46:03.00]  thank you for the question that's a
+[46:04.92]  there's a lot of nuance to that and I
+[46:07.08]  feel like there's two separate topic
+[46:08.28]  areas one being
+[46:10.26]  how hard do you stress the system
+[46:12.78]  and expect people to color in the lines
+[46:17.64]  that's
+[46:19.98]  really contextual
+[46:22.68]  there are bright lines around if you put
+[46:25.32]  this on the front page of the New York
+[46:26.76]  Times or you know maybe it's some
+[46:28.92]  version of
+[46:30.54]  insert like maybe it's the economist I
+[46:33.24]  don't know who it's like everybody would
+[46:34.74]  consider sort of unbiased I'm not going
+[46:36.66]  to make a comment on that but he put it
+[46:38.88]  on the front page of where people would
+[46:40.08]  read and expect sort of a balanced
+[46:41.58]  perspective would you see it the same
+[46:43.74]  way
+[46:45.24]  um
+[46:46.26]  said differently would you know if your
+[46:48.00]  grandmother knew this about what was
+[46:49.74]  happening would she agree and
+[46:54.12]  as a leader
+[46:56.04]  I think your responsibility is to make
+[46:58.68]  sure that you're on the right side of
+[47:00.00]  that and you're demonstrating the
+[47:01.14]  behaviors and you're articulating when
+[47:03.84]  it challenges you when I got into a
+[47:06.84]  situation where I was like ah I'm pushed
+[47:09.18]  really hard to make decisions and to set
+[47:11.70]  the tone for
+[47:13.14]  you described it as performance versus
+[47:15.78]  like uh now my words coloring inside the
+[47:18.36]  lines and staying inside a process
+[47:21.48]  if it feels wrong if there's like
+[47:24.06]  something in your gut that tells you
+[47:25.62]  it's wrong listen to it
+[47:27.90]  and
+[47:30.30]  going back to this like governance is
+[47:32.34]  cool comment it applies early you just
+[47:35.76]  may not have an internal audit team you
+[47:38.28]  may not have somebody that's looking
+[47:39.66]  over the shoulder but there are people
+[47:41.58]  around you that you can draw in and back
+[47:44.76]  to this concept of you may not have all
+[47:47.22]  the answers just learn how to say I
+[47:49.56]  don't know and check yourself but it
+[47:52.38]  typically starts when you know something
+[47:54.18]  feels wrong and how do you express that
+[47:56.70]  to the team I think it's typically
+[47:58.20]  through stories
+[48:00.30]  um here's the situation that was
+[48:01.68]  uncomfortable for me or for me here's
+[48:04.02]  what I did about it and outline a
+[48:05.76]  process and typically It Like It lines
+[48:07.92]  up with a um I don't know the answer but
+[48:10.56]  I'm going to talk about the process and
+[48:12.54]  if I follow this process I'll feel good
+[48:14.04]  about the answer that's that's the
+[48:16.08]  Ethics Line that that's my comment
+[48:17.76]  around your ethics question
+[48:19.56]  um
+[48:20.88]  and then on the the inclusion side
+[48:25.98]  we're all on a journey to try to have
+[48:28.08]  the most diverse teams
+[48:29.82]  and diverse teams win because you get a
+[48:33.96]  very strong mesh of I hadn't thought of
+[48:36.00]  it that way thank you for pushing me
+[48:38.46]  I hadn't thought I had
+[48:39.72]  a local market in this way thank you for
+[48:41.82]  bringing that context to the surface
+[48:44.04]  so that
+[48:45.30]  my reference point and the way I
+[48:48.48]  visualize this is like how do I have the
+[48:50.64]  strongest mesh of people on the team and
+[48:54.72]  you're right if it's all everybody looks
+[48:56.76]  the same like those fibers are going to
+[48:58.26]  rip really fast
+[48:59.70]  whereas if I have folks that have
+[49:01.86]  diverse experience and I think it's an
+[49:04.68]  and I create an environment where people
+[49:07.44]  can speak up
+[49:08.88]  and they feel safe and
+[49:12.00]  and listen to like I think it's as much
+[49:14.04]  about the safe and listen to
+[49:16.32]  and then having a team that values
+[49:19.98]  diversity of opinion and the debate and
+[49:23.22]  then a little bit of the Socratic method
+[49:24.60]  without turning into chaos because at a
+[49:27.42]  certain point like you got to kind of
+[49:28.50]  line up and that's not your question
+[49:29.64]  around inclusion but I think it these
+[49:32.82]  things start to become related so as
+[49:35.46]  long as you're uh you're mindful around
+[49:37.32]  I think about it in terms of a mesh a
+[49:39.60]  strong mesh and I'm happy to talk to
+[49:40.86]  folks offline about that
+[49:45.18]  okay Chris thank you question so this is
+[49:48.42]  regarding like public companies like uh
+[49:51.24]  you have seen what has happened in the
+[49:52.68]  market and how do you manage uh negative
+[49:55.86]  reflexivity especially if the market cap
+[49:58.56]  goes from say close to 100 billion to
+[50:00.78]  let's say 20 billion and especially
+[50:03.18]  regarding two key vectors uh in terms of
+[50:06.90]  sticking towards growth and then
+[50:09.78]  um so again in terms of sticking towards
+[50:11.70]  growth like keep on driving the growth
+[50:13.38]  and then maintaining or retaining key
+[50:16.20]  employees the word that sticks in the in
+[50:18.36]  what you just asked like is not being
+[50:20.28]  overly reacted you said reflexive not
+[50:23.28]  being overly reactive by understanding
+[50:25.44]  your question
+[50:28.02]  like how do you not be overly reactive
+[50:30.30]  yeah especially I think the reflexity
+[50:33.14]  reflexivity is a term that George Soros
+[50:36.00]  introduced which basically says that if
+[50:38.70]  the market cap goes down then the
+[50:40.86]  chances are that organization starts
+[50:42.84]  taking behaviors which is different than
+[50:45.26]  producing the value and it impacts
+[50:47.94]  actually two different vectors Vector
+[50:49.80]  one being chasing growth growth growth
+[50:52.38]  you can't do that because now you have
+[50:54.24]  constraints in terms of almost Capital
+[50:55.56]  you deploy and then retaining talented
+[50:58.68]  employee becomes harder because
+[51:00.06]  especially in the growth companies some
+[51:02.28]  amount of their compensation is based on
+[51:04.98]  equity and things level
+[51:07.44]  I think there's a certain amount of how
+[51:09.36]  you measure expect how do you manage
+[51:10.80]  expectations and keep your true north
+[51:14.04]  um
+[51:15.54]  I
+[51:16.56]  I go back to like what is what is the
+[51:19.80]  problem set that you're trying to solve
+[51:21.18]  and it is there still a problem set that
+[51:25.22]  exists in the construct of your business
+[51:27.60]  model
+[51:28.56]  and over time like how do you maintain
+[51:30.30]  consistency between those two so this is
+[51:33.18]  the problem we're solving this is the
+[51:34.98]  business model it's probably going to
+[51:36.24]  evolve it's going to evolve with
+[51:37.86]  competitors that evolve with market
+[51:39.60]  dynamics and how do you have as little
+[51:42.30]  daylight sort of pulling you off that
+[51:44.70]  path it's almost like that you've seen
+[51:46.80]  the E-Trade commercials like follow the
+[51:49.50]  green line
+[51:50.64]  I I think about that as as you're asking
+[51:52.86]  the questions
+[51:54.00]  there's it's good to be reactive to new
+[51:57.36]  information you should be willing to
+[51:59.10]  recalculate when you have new
+[52:00.96]  information do a recalc but don't do a
+[52:04.62]  constant recalc and whipsaw the team and
+[52:06.90]  don't do a constant recalc if you know
+[52:09.06]  that there are long cycles and you just
+[52:10.86]  happen to be in an off cycle so I I
+[52:13.32]  think there's more to that but those are
+[52:15.24]  the some of the the framing that I would
+[52:17.16]  put in place I'm happy to talk about
+[52:18.66]  more of that offline
+[52:23.52]  I'm curious about
+[52:25.74]  how you think about goal setting and how
+[52:27.66]  that's changed as cloud4 Fair has grown
+[52:30.60]  so at our organization we've sort of
+[52:32.94]  tripled in size over the past two years
+[52:35.36]  and it felt like early on what worked
+[52:38.34]  well was inspirational outrageous
+[52:40.86]  impossible goals big bee hags right yeah
+[52:43.62]  and now the board is like predictability
+[52:46.62]  and I'm curious and in my view that
+[52:49.26]  leads to sort of more mediocre outcomes
+[52:50.94]  or it can and I'm curious about your
+[52:53.16]  experience with that
+[52:58.14]  I think it's
+[52:59.28]  um like two I have two different axes
+[53:01.80]  I'm thinking about responding to and
+[53:03.36]  like your your question like change the
+[53:05.46]  change the axes
+[53:07.38]  on me as I was as I was listening the
+[53:09.54]  first is I think about goals in that
+[53:12.06]  I like to have a team-based system first
+[53:14.82]  when we're small
+[53:16.62]  how do you have everybody doing all the
+[53:19.08]  work required to hit that goal and like
+[53:21.72]  not auguring in on well I only care
+[53:24.60]  about this thing so I think team goals
+[53:27.30]  are a good way for organizations to have
+[53:31.34]  concentration on the bigger outcome and
+[53:34.56]  not losing sight because they just want
+[53:36.36]  to do the thing I I describe
+[53:38.76]  Builders wanted as compared to
+[53:40.86]  individuals that just want to do a job
+[53:43.20]  so that's where I thought your question
+[53:45.54]  was starting that's I thought I thought
+[53:47.10]  about that I think it's important to
+[53:48.30]  call out then there's a question like
+[53:52.56]  as you start to get traction and you
+[53:55.32]  want to continue to have really big
+[53:58.10]  audacious goals
+[54:00.72]  um
+[54:01.98]  a Big Town
+[54:03.18]  I love a big addressable Market
+[54:08.82]  an unfair share of that
+[54:11.94]  and
+[54:13.56]  the thing that keeps me awake and it
+[54:15.54]  hasn't come up yet is I I worry about us
+[54:17.76]  living up to our full potential so I
+[54:20.28]  think setting big goals helps you sort
+[54:22.44]  of stay on that path maybe a little bit
+[54:24.00]  of like stay on the green line
+[54:28.44]  the question is do you create goals that
+[54:31.86]  are unachievable
+[54:34.62]  because it's like a little bit of
+[54:36.36]  bravado
+[54:38.64]  the downside of setting those goals is
+[54:41.22]  you create a let me say an upside of
+[54:43.56]  doing it right you create a culture of
+[54:45.06]  success and like success repeated it
+[54:48.06]  equals confidence
+[54:49.74]  and I think confidence matters a lot
+[54:52.04]  especially when it's not obvious what
+[54:54.42]  the outcome is going to be confidence
+[54:57.24]  matters having people show up and care
+[54:59.22]  and keep the enthusiasm and the
+[55:00.78]  endurance
+[55:02.04]  a culture of success will help you ride
+[55:04.86]  over those speed bumps a lot easier so
+[55:08.10]  I don't think these two things are you
+[55:10.38]  know having big aspirations and setting
+[55:14.28]  big long-term goals I don't think
+[55:16.26]  there's anything wrong with that and I I
+[55:18.00]  really like those things because it it
+[55:20.16]  keeps you on the path of living up to
+[55:22.50]  your full potential
+[55:25.26]  if you just set those and they're not
+[55:27.66]  grounded in fact along these little
+[55:29.34]  micro steps along the way you run the
+[55:31.20]  risk of losing this culture of success
+[55:33.84]  and I think that's the guard rail that I
+[55:35.94]  would manage around if you don't feel
+[55:37.50]  like people are being successful or
+[55:39.24]  don't think they can be successful
+[55:42.06]  problem
+[55:43.20]  and you have to reconcile those two
+[55:45.56]  often that's just a function of timing
+[55:48.20]  and how you set sort of stretch versus
+[55:52.10]  near-term we know we can do this
+[55:55.26]  and then that gets down the rabbit hole
+[55:56.82]  of like forecasting
+[55:58.26]  thank you for the question it's like
+[56:00.00]  it's a very insightful question and it
+[56:01.92]  gives me like anxiety because you live
+[56:04.80]  through this you want the tension
+[56:06.24]  between culture of success but always
+[56:09.06]  can I have a little more please can you
+[56:11.04]  go a little faster like that's the too
+[56:14.04]  much daylight behind between those is is
+[56:16.26]  problematic
+[56:18.36]  what are some surprising
+[56:21.00]  um examples I guess of challenges and
+[56:24.18]  failures that you've had to overcome the
+[56:26.58]  learning learning and building the
+[56:28.08]  muscle for an Enterprise large
+[56:29.58]  Enterprise go to market motion oh
+[56:32.22]  it's say it again just the first part of
+[56:34.32]  your question well
+[56:36.06]  what are the like the
+[56:37.26]  amazing examples or surprising stories
+[56:39.06]  you have of
+[56:41.82]  building the large Enterprise go to
+[56:43.56]  market motion okay how much time do we
+[56:45.72]  have on this one um
+[56:48.30]  I think if you've done my job long
+[56:49.92]  enough
+[56:50.88]  you look when you get up in the morning
+[56:52.80]  and you look at yourself in the mirror
+[56:54.96]  like I see so many disappointments and I
+[56:58.62]  wish that we'd done this differently
+[57:01.38]  um
+[57:07.08]  we're a company that's gone from sort of
+[57:08.76]  like heavy practitioner Focus
+[57:12.18]  and starting off at the lower end of the
+[57:15.48]  market in in some of the categories and
+[57:17.94]  then moving up as the product matures
+[57:23.52]  the Enterprises have different
+[57:25.32]  expectations
+[57:27.66]  than
+[57:29.76]  a practitioner that is just doing this
+[57:32.64]  on a hobby site as an example
+[57:35.04]  and I what I
+[57:36.78]  what I think is a challenge is if your
+[57:38.64]  business has this really like a lot of
+[57:40.80]  uh surface area between the two
+[57:45.06]  many companies will abandon the low end
+[57:49.02]  to go after the high end
+[57:51.54]  and there's like a whole I'm sure
+[57:53.94]  somebody here across saster is doing a
+[57:56.34]  really smart strategy talk on
+[57:59.16]  low end high-end wear too we've always
+[58:02.04]  had the mentality of like we want if you
+[58:04.26]  want to help build a better internet if
+[58:06.42]  you really want to serve
+[58:08.40]  and create
+[58:10.38]  a set of services that
+[58:12.42]  are all about use cases on the internet
+[58:14.10]  they should be across all categories
+[58:16.38]  and that is
+[58:19.50]  back to earlier around the goals like
+[58:21.18]  that's a big goal to have a service that
+[58:23.58]  fits that surface area
+[58:25.80]  so you we could have
+[58:29.46]  moved our Focus up and had our roadmap
+[58:32.58]  become more and more focused and
+[58:33.78]  Enterprise and sort of abandoned alone
+[58:35.28]  we didn't do that we think about sort of
+[58:36.90]  stretching like how do you stretch the
+[58:39.24]  product anchor it you will not leave the
+[58:41.28]  practitioner there's lots of reasons why
+[58:42.90]  you don't want to leave them
+[58:44.94]  you don't want to leave exposed Your
+[58:46.50]  Flank exposed we're building something
+[58:48.12]  for the long term Etc
+[58:50.40]  but
+[58:53.94]  more tension so we've tacked down and
+[58:55.74]  said we will not abandon the
+[58:56.94]  practitioner we will not abandon the low
+[58:58.50]  end
+[58:59.22]  and it gives us like well you have to be
+[59:01.32]  low cost you have to be low priced you
+[59:04.08]  have to be really easy to use like all
+[59:06.42]  these things are not bad for the
+[59:08.58]  Enterprise so that I would say the
+[59:10.80]  examples of where that has not gone well
+[59:13.80]  is maybe where we've not thought about
+[59:15.90]  stretching or we've tried to stretch too
+[59:18.00]  fast or we've left something thin that
+[59:20.70]  at the Enterprise level like
+[59:22.62]  has to be Enterprise grade and where I
+[59:25.20]  think we've gotten it wrong sometimes is
+[59:26.64]  sometimes an Enterprise customer will
+[59:28.38]  adopt features that are really early and
+[59:31.08]  are really practitioner we typically get
+[59:33.24]  things shaken out at the practitioner
+[59:34.68]  level over and then over time move them
+[59:36.78]  to the Enterprise level where we've
+[59:39.00]  skipped that step I think that's where
+[59:41.46]  when I look in the mirror I'm like I
+[59:43.20]  wish that I'd done that differently and
+[59:44.82]  probably had a little bit more
+[59:47.12]  patience in allowing our biggest
+[59:51.66]  customers to get access to features and
+[59:54.18]  put them in the really critical
+[59:55.50]  environments I probably should have
+[59:56.64]  shaken it out longer at the low end so
+[59:59.04]  like that's probably the one example I
+[60:00.84]  would give you and I I'm sensitive that
+[60:02.70]  I'm now keeping you from your next
+[60:04.26]  session I need to give up the stage
+[60:08.10]  foreign
+[60:09.19]  [Music]

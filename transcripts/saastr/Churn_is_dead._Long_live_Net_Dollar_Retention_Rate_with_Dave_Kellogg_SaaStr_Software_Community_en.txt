@@ -1,0 +1,1644 @@
+Title     : Churn is dead. Long live Net Dollar Retention Rate with Dave Kellogg | SaaStr Software Community
+Video ID  : v3sjDEUJ-mM
+URL       : https://www.youtube.com/watch?v=v3sjDEUJ-mM
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1635
+Saved at  : 2026-06-20 23:39:27
+------------------------------------------------------------
+
+[00:05.04]  good morning everybody
+[00:06.08]  thanks for being here bright and early
+[00:08.16]  i'm dave kellogg and today we're going
+[00:10.16]  to talk really
+[00:11.20]  about understanding sas businesses in
+[00:13.36]  general how to think about them
+[00:15.20]  how to value them we're going to do that
+[00:17.28]  through the lens of sas metrics
+[00:19.20]  and today with a particular focus on
+[00:21.68]  understanding the
+[00:22.88]  healthiness of the install base of a sas
+[00:24.64]  company so that's going to
+[00:26.24]  quickly bring us to talking about churn
+[00:28.16]  a topic about which i've blogged a lot
+[00:30.24]  um and to net dollar retention which i
+[00:32.64]  think is actually a more effective way
+[00:34.64]  to get at what churn is trying to
+[00:36.16]  measure so uh let's jump in
+[00:39.28]  quick introduction about me uh so first
+[00:41.92]  who is this guy so i've been a ceo
+[00:44.24]  of sas startups for over 10 years at two
+[00:46.40]  different companies
+[00:47.36]  i took host analytics from 8 million in
+[00:49.36]  arr to 50 million
+[00:50.80]  and mark logic from 0 to 80 million uh
+[00:53.84]  in addition to that i have 10 years as a
+[00:55.52]  cmo
+[00:56.40]  at two different companies uh one versus
+[00:58.32]  where we went from one to fifteen
+[00:59.76]  and business objects where he had kind
+[01:01.12]  of an epic run from 30 million
+[01:03.60]  to over a billion in revenue uh not
+[01:05.76]  valuation revenue the old-fashioned
+[01:07.28]  thing
+[01:07.84]  uh and then ten combined years on five
+[01:10.24]  different boards aster data and granular
+[01:12.64]  and three other boards today elation
+[01:14.56]  noxio and prophecy
+[01:16.48]  i'm also an advisor and angel investor
+[01:18.80]  works a lot of companies and that's just
+[01:20.64]  a sample
+[01:21.60]  and i'm also a blogger which we'll talk
+[01:23.12]  more about in a minute so
+[01:24.96]  you know so that's who i am why do i
+[01:26.88]  care about this topic
+[01:28.48]  well it's a two-line proof which is
+[01:31.28]  metrics are key to fundraising and
+[01:33.04]  fundraising is key to success
+[01:34.56]  right any further questions and
+[01:37.12]  certainly now
+[01:38.16]  you know in today's silicon valley and
+[01:39.68]  this has changed over the last 20 years
+[01:41.60]  today silicon valley now more than ever
+[01:45.04]  right the ability to raise money is what
+[01:46.72]  separates the winners
+[01:48.16]  from the runners-up and and the losers
+[01:50.64]  so
+[01:51.36]  in the formula you know this is not a
+[01:52.80]  race you know vc back sass is not a race
+[01:55.28]  or a strong kick at the finish you know
+[01:57.04]  like a quarter mile
+[01:58.16]  wins the race in my opinion it's a race
+[02:00.64]  where you get in first
+[02:02.00]  early um by by driving high growth with
+[02:05.20]  the right unit economics
+[02:06.96]  and if you've done that if you're a
+[02:08.56]  leader with good growth at the right
+[02:10.56]  unit economics
+[02:12.00]  you can then raise lots of capital and
+[02:14.72]  you set up a virtuous cycle right
+[02:16.64]  the more capital you raise the faster
+[02:18.72]  you grow the faster you grow
+[02:20.96]  with the right unit economics comma the
+[02:23.44]  more capital you can raise
+[02:24.96]  so that's the name of the game that's
+[02:26.40]  why this matters so much
+[02:28.24]  um you know the other reasons i care
+[02:30.16]  about it are one it's a big impact on
+[02:32.08]  valuation and ergo dilution
+[02:34.96]  second i'm a huge believer in really
+[02:36.88]  trying to understand the guts or the
+[02:38.56]  drivers of a sas business
+[02:40.56]  and looking at sas metrics helps you do
+[02:42.64]  that i think every ceo should have a
+[02:44.64]  driver-based model
+[02:45.92]  where you play with sales productivity
+[02:47.92]  sales turnover sales ramp time
+[02:50.16]  marketing is a percent of sales cost per
+[02:52.48]  cell you put these various drivers in
+[02:54.96]  and you can see what happens to your
+[02:56.80]  business see their impact
+[02:58.80]  and to understand driver based models
+[03:00.88]  you want to understand sas metrics
+[03:02.72]  and finally the last point is more of a
+[03:04.32]  pet peeve i loathe the general
+[03:06.64]  lack of rigor i see when some people
+[03:09.12]  discuss sas metrics
+[03:10.64]  where they talk about metrics without
+[03:12.08]  defining them or without knowing what
+[03:14.08]  they're counting
+[03:15.84]  and there's a lot of that that happens
+[03:17.60]  when we get down to churn so so part of
+[03:19.84]  this is if we're going to look at these
+[03:21.36]  metrics
+[03:22.00]  let's make sure we understand how you're
+[03:23.60]  supposed to calculate them how people
+[03:25.36]  game them um and how they're supposed to
+[03:28.00]  work
+[03:28.72]  um so onward so that's kind of the intro
+[03:32.24]  um i do blog a lot about this stuff
+[03:35.36]  uh my blog's at kellogg.com and
+[03:38.48]  some of the topics i cover are sas
+[03:40.40]  businesses in general kind of all
+[03:42.08]  aspects of sas businesses particular
+[03:44.72]  emphasis on sas metrics
+[03:46.72]  strategy sales marketing which is my
+[03:49.20]  background
+[03:49.92]  uh and more so if you have a chance if
+[03:51.92]  you like the material today
+[03:54.24]  swing on over to cal blog and take a
+[03:56.40]  look
+[03:57.44]  among other things i'll be posting the
+[03:58.96]  slides to this presentation there
+[04:01.36]  so we have three topics today uh the
+[04:03.60]  first is
+[04:04.48]  understanding a sas business uh and
+[04:06.56]  we're gonna talk about why it's hard to
+[04:07.92]  understand the sas business
+[04:09.36]  we're gonna talk about how to think
+[04:10.64]  about a sas business um
+[04:12.40]  and then we're gonna talk about kind of
+[04:13.84]  basic unit economics
+[04:15.68]  um second section we're gonna talk about
+[04:17.60]  the trouble with churn
+[04:18.88]  um because it turns out much as i love
+[04:20.80]  churn i
+[04:22.00]  increasingly am kind of skeptical when
+[04:24.72]  companies talk about churn rates
+[04:26.56]  and we'll talk about the three problems
+[04:28.48]  i see with churn rates
+[04:29.92]  that kind of undermine it as a good
+[04:31.60]  metric
+[04:33.04]  and by the way churn rates are used in
+[04:35.20]  other calculations so if churn gets
+[04:37.44]  polluted so do the downstream metrics
+[04:39.44]  from churn
+[04:40.32]  which is another problem we'll talk
+[04:41.68]  about um and by the way even the concept
+[04:44.32]  of
+[04:44.64]  churn itself can be a little bit elusive
+[04:47.20]  so so we'll talk about that in that
+[04:48.80]  second
+[04:49.20]  section the trouble with churn and then
+[04:51.92]  finally long live you know king is dead
+[04:53.52]  along with the king
+[04:54.40]  uh long long-lived net dollar retention
+[04:56.48]  we'll talk about this this is actually
+[04:58.32]  more of a public company sas metric than
+[05:00.48]  a private company sas metric
+[05:02.00]  and this is kind of in my mind the rare
+[05:04.32]  case where the public company sas metric
+[05:06.72]  is better
+[05:07.52]  than the private company sas metric so
+[05:09.76]  for those of us who have spent all our
+[05:11.44]  time in the private world
+[05:12.56]  i'll introduce you to what net dollar
+[05:14.08]  retention is then we'll talk about it as
+[05:16.32]  a valuation driver
+[05:17.60]  uh we'll talk about how to calculate it
+[05:19.28]  we'll talk about how to game it it too
+[05:21.28]  is gameable um and then we'll talk about
+[05:24.40]  kind of a new twist on it which is how
+[05:26.16]  to manage it uh and then as kind of a
+[05:28.64]  preview we'll end
+[05:30.16]  by talking about um the metric i see
+[05:32.64]  coming after it
+[05:33.52]  uh there's a request to the chat for uh
+[05:35.68]  defining churn which i'll get to i'm
+[05:37.20]  gonna try and keep one eye on the chat
+[05:38.88]  it's hard to be honest
+[05:40.08]  i got three monitors up um i'll define
+[05:42.40]  chern uh in a second
+[05:44.08]  in short it's arr that leaks out of your
+[05:46.24]  bucket uh and that will mean more in
+[05:48.16]  just a minute than it did right now
+[05:50.08]  so that's what we're going to talk about
+[05:52.72]  but first let's just go look at the
+[05:54.00]  profit and loss statement we'll start
+[05:55.44]  here
+[05:56.08]  uh and this you know they say the
+[05:57.68]  average american family has 2.5 children
+[05:59.68]  right like there is no
+[06:00.80]  actual average american family this is
+[06:03.04]  the average sas company for each of
+[06:04.96]  these lines
+[06:06.24]  i took the median off meritek and they
+[06:09.20]  have a great
+[06:10.16]  kind of public comparables website on
+[06:12.80]  their website microsite on their website
+[06:15.20]  and i took the median company so this is
+[06:17.04]  the median revenue the median cogs the
+[06:18.96]  medium gross profit
+[06:20.32]  and i just laid it out into a p l so
+[06:22.08]  this is many ways comes the typical
+[06:23.84]  public sas company by the way it
+[06:26.32]  actually looks a fair bit like alteryx
+[06:29.52]  not in all respects altera says better
+[06:31.28]  gross margins
+[06:32.72]  and other things but if you had to say
+[06:34.48]  who was closest to this kind of just
+[06:36.32]  eyeballing it in the data set
+[06:38.16]  it's not miles away from alteryx but in
+[06:41.04]  any case this is
+[06:42.24]  not alteryx this is the typical medium
+[06:44.48]  sas company
+[06:46.24]  uh and the answer of where customer
+[06:48.24]  success fits into the p l is uh sales
+[06:50.16]  and marketing by the way
+[06:51.44]  uh good question so i'm trying to keep
+[06:53.28]  one eye on that but in any case
+[06:55.44]  the reason it's hard to understand the
+[06:57.20]  sas business when you look at the p
+[06:58.72]  l there's kind of there's actually two
+[07:00.08]  different reasons there's well called
+[07:01.20]  the usual suspects here
+[07:03.04]  and then the next slide we'll talk about
+[07:04.40]  the more conceptual reason but the usual
+[07:06.72]  suspects are first the public companies
+[07:08.40]  don't disclose arr any recurring revenue
+[07:10.64]  right they don't disclose it
+[07:11.92]  uh an arr is your subscription base how
+[07:14.80]  many people are signed up if you will
+[07:17.12]  revenue is basically a math problem
+[07:18.88]  right if you know arr
+[07:20.88]  then you revenue is simply a calculation
+[07:23.04]  and it is a lagging indicator not a
+[07:24.72]  leading indicator
+[07:25.68]  which is why financial analysts don't
+[07:27.28]  really look at revenue as much
+[07:29.20]  they look at billings quote unquote and
+[07:31.36]  billings is a public company sas metric
+[07:33.36]  it's revenue plus change in deferred
+[07:35.04]  revenue
+[07:35.84]  and it's a way to try and impute what
+[07:38.80]  bookings are
+[07:40.08]  but they aren't released i.e new sales
+[07:42.08]  don't get released so you have to kind
+[07:43.44]  of triangulate on it
+[07:45.28]  arr needs to be implied in the same way
+[07:47.76]  churn is typically not disclosed
+[07:50.00]  so you really as a public company
+[07:51.92]  investor are getting fairly
+[07:53.68]  limited visibility into the core engine
+[07:56.00]  driving a sas business
+[07:57.44]  now if you think about it it's kind of a
+[07:59.92]  one-way transformation which is
+[08:01.36]  given arr i can in a deterministic way
+[08:04.48]  calculate a p l given a p l it's
+[08:07.60]  non-deterministic to get arr
+[08:09.60]  right i can come up with an infinite
+[08:11.12]  number of solutions that will generate
+[08:12.56]  that piano maybe not infinite but i can
+[08:14.24]  come up with a lot of different
+[08:15.20]  solutions that will generate the same p
+[08:16.80]  l so it is tricky to interpret public
+[08:20.24]  companies sas metrics in fact i once
+[08:22.08]  met ironically a public company cfo who
+[08:24.72]  didn't actually understand sas unit
+[08:26.24]  economics
+[08:26.96]  because public company investors can't
+[08:29.04]  see them so
+[08:30.24]  crazy stuff the other problem with
+[08:33.52]  trying to understand a sas business is
+[08:36.88]  it's actually two businesses um you have
+[08:39.60]  this overall business that has 465
+[08:42.16]  million dollars in revenue
+[08:43.84]  and it's composed of two very different
+[08:45.28]  businesses one the recurring business
+[08:47.76]  all those existing customers who
+[08:49.44]  hopefully renew every year
+[08:51.20]  right and every year give you revenue
+[08:54.24]  we'll call that the recurring business
+[08:56.08]  and next to that is a other business
+[08:58.00]  called a customer acquisition business
+[08:59.52]  which is out
+[09:00.48]  getting customers and and look i'll walk
+[09:03.60]  down the p
+[09:04.16]  l let's just assume it costs the same to
+[09:06.32]  serve either type of customer so 23
+[09:08.88]  cost of goods sold so each business has
+[09:11.12]  a 77
+[09:12.00]  gross margin now that that's where the
+[09:14.80]  similarity kind of
+[09:16.08]  ends if we look you could argue that 100
+[09:19.68]  of sales and marketing in a sas company
+[09:21.92]  is to get new customers
+[09:23.60]  it's not entirely true somewhere
+[09:25.76]  typically around 10 percent might be the
+[09:27.36]  cost of customer success
+[09:28.88]  to keep those existing customers but but
+[09:31.44]  just to make the math simple
+[09:33.12]  um i put all of sales marketing into
+[09:35.60]  this business that's out getting new
+[09:37.04]  customers and none
+[09:38.40]  into the business that's recurring right
+[09:40.16]  keep the math simple i split r d i just
+[09:42.48]  said
+[09:42.88]  half of r d is to keep existing
+[09:44.72]  customers happy and renewing
+[09:46.24]  half is to put in you know shiny new
+[09:48.24]  features that attract new customers
+[09:50.24]  um i split gna on a similar basis
+[09:52.24]  probably should prorated it by revenue
+[09:54.00]  didn't do it
+[09:54.72]  but i i just put g a 50 50. um and when
+[09:57.92]  you do this exercise what pops out
+[10:00.00]  is you see that a sas business is kind
+[10:02.00]  of a weighted average
+[10:04.00]  of this incredibly profitable recurring
+[10:06.64]  business with 55
+[10:08.08]  operating margins and this incredibly
+[10:10.32]  unprofitable customer acquisition
+[10:12.16]  business
+[10:13.12]  now the good news about the business on
+[10:14.56]  the right is that it is feeding people
+[10:17.36]  to the business
+[10:18.08]  on the left right and in many ways you
+[10:20.64]  know in order to make things simple i
+[10:22.48]  tend to be very black and white and kind
+[10:23.84]  of do dichotomies right just like
+[10:25.28]  putting all of sales and marketing into
+[10:26.72]  the new business business
+[10:28.48]  the other way to think about this is
+[10:30.64]  private equity cares a lot about the
+[10:32.32]  middle column the recurring business
+[10:34.08]  right and lenders who lend to private
+[10:36.00]  equity care a lot about that because
+[10:37.68]  that's the annuity portion of a sas
+[10:39.44]  business
+[10:40.24]  and venture capitalists care a lot about
+[10:41.84]  the right side right because
+[10:43.68]  they want to know how fast you can grow
+[10:45.44]  this thing and how efficiently you can
+[10:47.04]  add new customers
+[10:48.72]  now in the dark recesses of virtually
+[10:51.28]  every board member's mind
+[10:52.64]  at one point or another somebody thought
+[10:55.20]  look at what happens when you turn off
+[10:56.80]  sales and marketing
+[10:58.08]  gosh i have this incredibly profitable
+[10:59.92]  recurring business
+[11:01.12]  right and obviously you can't do that as
+[11:03.44]  mentioned you need some sales and
+[11:04.72]  marketing to keep the repairing business
+[11:06.32]  going
+[11:07.20]  and and then you'll well in effect
+[11:09.04]  you'll stop growing but will you right
+[11:10.64]  that's what net dollar retention is
+[11:12.08]  actually measuring what happens to this
+[11:13.52]  business if you kind of just
+[11:14.80]  leave it alone right and and the fantasy
+[11:17.12]  and it is a fantasy is what if it grew
+[11:18.64]  all by itself
+[11:19.68]  right that recurring business if it
+[11:21.36]  could just grow if i could get rid of
+[11:23.04]  that other business
+[11:24.16]  how much is that recurring business
+[11:26.00]  worth and the answer is of course as
+[11:28.08]  mentioned twice already
+[11:29.52]  it doesn't grow all by itself i'm
+[11:31.92]  oversimplifying to make the point clear
+[11:33.92]  but by the way it does grow at 40 of the
+[11:37.20]  cost of new logo customer acquisition
+[11:40.00]  if you look at the customer acquisition
+[11:42.00]  cost ratio
+[11:43.28]  for example in the key bank survey that
+[11:45.12]  i'm citing down below
+[11:46.80]  you'll see that the expansion cac or the
+[11:49.28]  customer acquisition cost of expansion
+[11:51.20]  arr
+[11:52.16]  is about 40 i.e less than half
+[11:55.20]  of the cost of new logo arr so this
+[11:57.84]  thing doesn't grow all by itself but
+[11:59.68]  gosh it certainly does grow a lot
+[12:01.92]  cheaper
+[12:02.88]  than that very expensive new customer
+[12:05.12]  acquisition business
+[12:06.48]  now let's go back to private company
+[12:09.12]  land
+[12:09.60]  because i started us in public company
+[12:11.68]  land with the kind of average public sas
+[12:14.00]  company but look in in private company
+[12:16.64]  land which is where
+[12:17.60]  most of the people i think on this call
+[12:20.00]  come from
+[12:20.88]  um we get to see the underlying sas
+[12:23.20]  engine and now for the person who asked
+[12:24.64]  about the definition
+[12:26.16]  here's what i call the sas leaky bucket
+[12:28.40]  which is i think of a sas company
+[12:30.40]  as a leaky bucket full of arr right
+[12:32.96]  every quarter sales dumps more water in
+[12:35.36]  uh every quarter customer success tries
+[12:37.52]  to minimize
+[12:38.40]  the leakage out right so we start with a
+[12:41.36]  certain amount of ar
+[12:42.64]  3.9 million in this case in 2q of 19 we
+[12:46.24]  added 525k of new arr
+[12:49.20]  of which 400 was new logo 125 was
+[12:52.40]  expansion
+[12:53.04]  right so new arr comes in two basic
+[12:55.20]  flavors right from new customers
+[12:57.20]  or from existing customers and then
+[12:59.92]  despite their valiant efforts
+[13:01.60]  a hundred units of ar leaked out of the
+[13:04.24]  bucket
+[13:04.96]  um therefore leaving us with 4.3 million
+[13:07.92]  in ending arr
+[13:09.20]  right and you could just keep running
+[13:10.72]  that thing every quarter
+[13:12.48]  obviously ending arr in one quarter is
+[13:14.24]  starting a r the next
+[13:15.68]  um and you could get some good metrics
+[13:17.28]  just off this right like how fast
+[13:19.28]  is your ending arr growing year over
+[13:21.52]  year
+[13:22.32]  in fact if you only had two numbers to
+[13:25.28]  give you the value of a sas company
+[13:27.28]  it would be ending arr and growth rate i
+[13:29.76]  could then tell you roughly what that
+[13:31.20]  company is worth
+[13:32.00]  kind of a first order evaluation another
+[13:34.24]  interesting metric is net new arr
+[13:36.16]  so if you subtract the churn from all of
+[13:38.24]  the new arr how much did the water level
+[13:40.24]  in the bucket change
+[13:42.16]  there's a lot of ways to look at
+[13:43.44]  expansion one simple way it's just
+[13:45.12]  expansion as a percent of new arr
+[13:47.44]  people don't talk about this enough i
+[13:48.80]  think it's a real simple to understand
+[13:50.16]  metric
+[13:50.88]  to me when it's less than 20 maybe
+[13:52.72]  you're not exploiting your expansion
+[13:54.24]  opportunity
+[13:54.88]  much as much as you should be when it's
+[13:57.36]  over 40
+[13:58.64]  uh maybe you're not getting as much new
+[14:00.48]  logo as you should be right so
+[14:02.00]  so i personally like it running in the
+[14:03.36]  20s and 30s um
+[14:05.12]  and then there's net expansion which is
+[14:06.40]  kind of all in uh
+[14:08.48]  if we uh not all that if we take new er
+[14:12.08]  sorry if we take expansion er minus
+[14:14.56]  churn arr
+[14:15.44]  what do you have left so that's kind of
+[14:17.12]  your net expansion of the pool and you
+[14:18.64]  can see this company is not doing
+[14:19.84]  particularly well on that metric
+[14:21.44]  and went up 25k ie expansion offset
+[14:24.00]  churned by 25k into q19 but then
+[14:27.20]  it immediately went negative and offset
+[14:29.04]  the increase of 3q19 so so this company
+[14:31.04]  is actually struggling with that for
+[14:32.24]  that metric
+[14:33.60]  but anyway once you're looking inside of
+[14:35.68]  sas companies
+[14:36.96]  uh kind of leaky bucket and you can see
+[14:39.68]  the the arr
+[14:41.12]  engine as i might call it you can then
+[14:43.60]  calculate
+[14:44.40]  these kind of core sas unit economics
+[14:47.84]  metrics so uh yeah new logo to me
+[14:51.36]  uh is is a lot of different terms for it
+[14:53.84]  some people call it net new which i
+[14:55.60]  don't like
+[14:56.48]  to me when you get arr you either get it
+[14:58.72]  from a new logo
+[14:59.84]  i.e someone who's not an existing
+[15:01.60]  customer or you get it from an existing
+[15:04.08]  customer so new arr
+[15:06.08]  from a somebody you're not doing
+[15:07.44]  business with is what i'll call new logo
+[15:09.12]  arr
+[15:09.76]  i'll some people call it new biz arr
+[15:11.84]  some people call it net new arr but i
+[15:13.76]  think it's misleading
+[15:14.96]  um and when you get arr like if you if
+[15:17.52]  you were an existing customer paying me
+[15:18.88]  100 units and you expanded your contract
+[15:21.04]  to 120
+[15:22.16]  uh that would be expansion arr sometimes
+[15:25.12]  called upsell
+[15:26.56]  and there are fine distinctions between
+[15:28.00]  those terms but the gross motto
+[15:29.92]  that's a good set of definitions so
+[15:32.80]  probably
+[15:33.60]  my favorite sas metric is the customer
+[15:35.36]  acquisition cost ratio
+[15:37.20]  which is how much are you spending to
+[15:38.88]  put a dollar of ar
+[15:40.24]  in that bucket right so it's last period
+[15:42.88]  sales and marketing expense divided by
+[15:44.72]  this period's new arr
+[15:47.12]  for sas metrics nuts that's actually the
+[15:49.12]  inverse of the magic number which
+[15:51.04]  scale ventures uh came up with uh i
+[15:53.52]  prefer it
+[15:54.08]  in this form um because it's more
+[15:56.08]  intuitive to me to say how much did a
+[15:57.68]  dollar of arr
+[15:58.88]  cost me so i like the cac ratio uh very
+[16:01.76]  important sas metric
+[16:02.88]  you know typically runs around 1.3 you
+[16:05.20]  know below 1.3 is getting to be quite
+[16:06.96]  good below one is really good
+[16:08.40]  best i've ever seen was point four um
+[16:11.12]  anything between one point five and two
+[16:12.88]  people start to scratch their eyebrows
+[16:14.56]  above two people get nervous above three
+[16:16.40]  people won't talk to you roughly
+[16:18.56]  so um lifetime value uh is
+[16:22.48]  one over the churn rate and this is
+[16:24.48]  actually customer lifetime i made a
+[16:25.76]  mistake on the slides it's a little
+[16:26.88]  confusing but but the lifetime value is
+[16:28.88]  basically the arr per year
+[16:30.72]  times the lifetime and but the lifetime
+[16:33.84]  is one over the churn rate so if you
+[16:35.52]  have a ten percent churn rate we would
+[16:37.04]  say your average customer lifetime is
+[16:38.40]  ten years
+[16:39.52]  um now this is where it gets interesting
+[16:42.24]  um
+[16:43.28]  because there's this notion of well wait
+[16:45.12]  a minute you know is a kaka of two too
+[16:47.36]  high
+[16:47.92]  right if i'm spending two dollars to get
+[16:49.28]  a dollar of ar is that really too much
+[16:51.92]  it's on the high side compared to
+[16:53.12]  averages but for my business is it too
+[16:55.36]  high and to answer that question the
+[16:56.88]  best way to do so is say wait a minute
+[16:58.48]  you paid two dollars for something
+[16:59.92]  what's it worth right if you have a very
+[17:02.80]  high churn rate just so you have 50
+[17:04.72]  churn rate it's a terrible deal right
+[17:06.32]  because you you paid two dollars
+[17:08.40]  to get a dollar and a half right because
+[17:10.64]  they went one year and half of them
+[17:12.00]  churned you only got a dollar and a half
+[17:13.44]  back so that's not good
+[17:15.04]  um but say you have a 10 year ltv well
+[17:17.60]  gosh if i have a cac ratio of two and a
+[17:19.52]  10-year ltv
+[17:20.88]  then my ltv to cac is five and that's
+[17:23.36]  pretty good i'm getting back five times
+[17:24.80]  what i
+[17:25.28]  paid which helps pay for all those other
+[17:27.12]  expenses right like r d and g and
+[17:29.04]  everything else so
+[17:30.00]  so ltv to cac for me for a long time was
+[17:32.08]  kind of the ultimate sas metric
+[17:33.92]  like this is it this is the one that
+[17:35.28]  kind of explains everything it's kind of
+[17:37.20]  a balanced scale
+[17:38.40]  between how much you're paying for cac
+[17:40.24]  versus how much you're getting back in
+[17:41.68]  ltv
+[17:42.32]  right and conversely by the way if you
+[17:43.84]  have a really low cac great but if you
+[17:45.52]  have a very high churn
+[17:46.96]  well great you can acquire customers
+[17:48.56]  return after a year very cheaply who
+[17:50.16]  cares
+[17:50.88]  right it's not a great business so
+[17:53.52]  another metric
+[17:54.80]  which is very popular and i mentioned it
+[17:56.16]  here because vcs look at it a lot is cac
+[17:58.24]  payback period
+[17:59.60]  and this is kind of my unique way of
+[18:01.04]  calculating it it produces the same
+[18:02.64]  answer
+[18:03.20]  but if you just take your cac ratio and
+[18:04.80]  divide it by subscription gross margin
+[18:06.72]  you get in years the cac payback period
+[18:09.20]  what does that mean
+[18:10.16]  if your cac is two i.e you're spending
+[18:12.40]  two dollars to acquire
+[18:14.08]  uh well let's say your cac is 1.5 make
+[18:16.32]  the math easy you're spending
+[18:18.00]  uh 1.5 to acquire a dollar of arr
+[18:21.52]  and your subscription gross margins are
+[18:24.20]  75.75 75
+[18:26.48]  then that means you get paid back your
+[18:29.12]  cac
+[18:29.60]  in two years right 1.5 divided by 0.75
+[18:32.48]  is 2.
+[18:33.28]  so how many years of gross profit does
+[18:35.52]  it take to pay back the sales and
+[18:37.04]  marketing costs
+[18:38.24]  of acquisition a lot of people love this
+[18:40.64]  metric you know vcs in general kind of
+[18:42.56]  like
+[18:42.88]  all-in-one metrics because they're
+[18:44.32]  trying to make an investment decision
+[18:46.32]  i always feel like operators don't love
+[18:48.16]  these metrics as much because if it's
+[18:49.60]  too high i don't know which side of it
+[18:51.04]  is broken
+[18:52.16]  right if my payback period is too long
+[18:54.24]  is it because my cat's too high or my
+[18:55.60]  subscription margin is too low
+[18:56.96]  and as an operator i want to go fix it
+[18:58.96]  so in some ways operators look at sas
+[19:01.04]  metrics a little bit differently
+[19:02.56]  uh than investors so you think we're
+[19:05.60]  good hey we just did sas unit economics
+[19:07.36]  101.
+[19:08.24]  um that's the we looked at the public
+[19:10.08]  company view of a sas company
+[19:12.24]  we looked at the private company view we
+[19:13.92]  examined really what are the core key
+[19:15.44]  metrics the leaky bucket
+[19:17.12]  cac lt vitacak churn we're good right
+[19:20.16]  well no not so fast uh increasingly
+[19:23.44]  over the last several years i personally
+[19:25.20]  and i've blogged a lot about churn
+[19:26.96]  i've become increasingly skeptical about
+[19:28.64]  churn rates um
+[19:30.00]  and i almost entitled this section kind
+[19:32.24]  of tongue-in-cheek
+[19:33.12]  why private equity firms recalculate all
+[19:35.20]  your metrics
+[19:36.56]  because people play games sometimes with
+[19:38.16]  their sas metrics and in the vc
+[19:39.92]  side frankly i don't see as much
+[19:41.60]  recalculation but when you meet pe
+[19:43.84]  people
+[19:44.24]  they will literally take all your
+[19:45.44]  financials and just recalculate
+[19:46.80]  everything
+[19:47.44]  you know you're gonna say your churn is
+[19:48.80]  you know only ten percent they're like
+[19:50.00]  well we'll figure out what your term
+[19:51.04]  rate is
+[19:51.60]  just give us uh the data and we'll
+[19:53.68]  calculate all the metrics right and and
+[19:55.76]  the reasons we're going to talk about in
+[19:56.96]  here are some of the reasons why so
+[19:58.96]  so turn in my mind has kind of three
+[20:00.96]  fatal flaws or not fatal but you know
+[20:03.28]  in reality look the title of the speech
+[20:04.96]  is somewhat dramatized i wouldn't say
+[20:06.40]  sharon is quite dead
+[20:07.36]  i would say sharon is wounded and the
+[20:10.00]  problems with churn
+[20:11.12]  are threefold uh first there's too many
+[20:14.00]  darn ways to calculate churn
+[20:15.76]  um and that makes it ambiguous which one
+[20:19.20]  are you talking about when you tell me a
+[20:20.96]  churn rate
+[20:21.76]  and and by the way you know it could
+[20:24.00]  easily double the number and any number
+[20:26.08]  that if you don't know how it's defined
+[20:27.52]  is off by a factor of two
+[20:29.04]  it's kind of a big deal so it's a little
+[20:31.60]  bit too gameable it's a little bit too
+[20:33.20]  misunderstood
+[20:34.80]  second churn is used in downstream
+[20:36.96]  metrics like ltv to cac
+[20:38.88]  it's implicitly in there and
+[20:40.80]  unfortunately if you pollute churn you
+[20:42.72]  pollute everything downstream
+[20:44.32]  of churn so in my mind churned in flicks
+[20:46.80]  kind of collateral damage
+[20:48.72]  on ltv uh there's the question of in a
+[20:51.76]  sas company what goes into cogs to
+[20:53.60]  compute gross margin on the last slide
+[20:55.68]  the answer of cogs in his subscription
+[20:58.24]  cogs to the sas company is the cost of
+[20:59.92]  running the service
+[21:01.04]  so in the old days if you had a data
+[21:02.64]  center you'd have all your data center
+[21:04.24]  costs and your tech ops cost in there
+[21:06.48]  in the modern days it'll be the check
+[21:07.76]  you write to amazon and all likelihood
+[21:09.76]  uh for actual and the people you have in
+[21:12.16]  the check to amazon for running your sas
+[21:13.92]  service
+[21:15.12]  um let me just see there's a couple
+[21:17.36]  other questions up here
+[21:18.96]  there's a lot of questions about new
+[21:20.00]  logo i think we got that one covered
+[21:22.00]  right
+[21:22.72]  um the new logo is somebody you haven't
+[21:24.88]  done business with before
+[21:27.12]  uh do i recommend a reporting system
+[21:28.56]  we'll come back to that so in any case
+[21:30.32]  back
+[21:30.64]  back here to the to the content off the
+[21:32.32]  q a um churning flex collateral damage
+[21:34.80]  on downstream metrics and finally
+[21:36.72]  churn if you get into the details there
+[21:38.88]  is kind of a dark
+[21:39.84]  rabbit hole of offsets and timing that
+[21:42.08]  even makes churn ar that one number
+[21:44.08]  forget rates just churn ar itself a tad
+[21:47.44]  ambiguous um and let's jump in i'll
+[21:49.76]  explain what i mean by each of these
+[21:52.08]  so problem one number one is there's
+[21:53.92]  actually at least
+[21:55.52]  four ways to calculate churn rates you
+[21:57.68]  can either say before expansion or
+[21:59.92]  after so if i had 100 units of ar in my
+[22:02.56]  bucket
+[22:03.28]  and 10 units leaked out from people who
+[22:05.36]  didn't renew
+[22:06.56]  and 15 units of expansion happened did i
+[22:09.52]  have
+[22:10.32]  10 units of churn or did i have negative
+[22:12.80]  five units of turn
+[22:14.00]  right am i looking at churn before
+[22:16.32]  expansion or after
+[22:18.16]  gross churn is before expansion net
+[22:21.04]  churn is after
+[22:22.08]  and sometimes people reverse those two
+[22:24.08]  terms it's not that uncommon
+[22:26.56]  um so another confusion factor in churn
+[22:29.20]  what does that mean
+[22:30.48]  um is it net of or net uh but in any
+[22:33.60]  case by definition gross is what leaked
+[22:35.28]  out of the bucket
+[22:36.32]  net is what leaked out of the bucket
+[22:37.92]  offset by expansion
+[22:39.36]  right so you have which one are we
+[22:41.04]  talking about so that's the numerator
+[22:43.44]  and then in the denominator we have well
+[22:45.52]  what are we dividing this by
+[22:47.44]  churn as compared to what either the two
+[22:50.72]  most
+[22:51.12]  common flavors are one the entire arr
+[22:53.92]  base
+[22:54.40]  right my whole subscription base or my
+[22:57.44]  available to renew base now how could
+[22:59.20]  those be different you might ask well
+[23:00.64]  the answer is multi-year contracts
+[23:02.80]  right just say you do only two-year
+[23:05.28]  contracts
+[23:06.24]  if you have a ar base of 100 units only
+[23:09.20]  50 comes up for renewal every year
+[23:11.52]  right if you do three-year contracts
+[23:13.28]  only a third of it comes up
+[23:14.88]  every year if you do a blended average
+[23:17.20]  as i did at my last company of one two
+[23:19.36]  three and the occasional five-year
+[23:21.12]  contract
+[23:22.16]  some blended average of those contract
+[23:24.80]  durations
+[23:25.60]  come up every year for renewal so so so
+[23:28.80]  this is a huge swing factor on churn and
+[23:30.96]  it's
+[23:31.60]  it's hard to argue which is right or
+[23:33.20]  rich is wrong if you're kind of trying
+[23:34.88]  to value the annuity as a financial
+[23:36.88]  person
+[23:37.60]  i guess you should get the benefit of
+[23:39.12]  this multi-year con contract so let's
+[23:41.20]  divide by 100 instead of dividing by 50
+[23:43.36]  because mathematically they can't get
+[23:44.96]  out of those contracts if you have a
+[23:46.32]  history of renewing them and people not
+[23:47.92]  breaking out
+[23:48.88]  then in reality that that's kind of the
+[23:50.88]  true churn rate
+[23:51.92]  but on the other hand if you're trying
+[23:53.12]  to understand the health of your
+[23:54.40]  business
+[23:55.12]  you know if 10 units leaked out against
+[23:57.12]  100 that's 10 percent not bad
+[23:59.36]  if 10 units leaked out against 50
+[24:01.12]  because only half the base is up for
+[24:02.48]  renewal
+[24:03.28]  20 i'm getting pretty nervous i don't
+[24:05.28]  know about you
+[24:06.48]  so the issue is you make the matrix you
+[24:09.12]  have four different ways of calculating
+[24:10.72]  this metric and to me it's a huge
+[24:12.24]  problem
+[24:12.88]  and people often try to dress up one is
+[24:15.04]  the other they'll kind of deliberately
+[24:16.48]  confuse net and gross they'll
+[24:17.84]  deliberately confuse
+[24:19.44]  uh arr with atr and you know obviously
+[24:22.48]  the most favorable metric
+[24:23.92]  is net is number four the one and by the
+[24:25.68]  way i've ranked them in order of if i
+[24:27.20]  could only see one i'd want to see gross
+[24:29.12]  atr
+[24:30.00]  if i could only see two i'd want to see
+[24:31.68]  gross and net etr
+[24:33.20]  if i can see three i'd want to see the
+[24:35.04]  same order on arr based churn rates
+[24:37.44]  so so you know my kind of quip
+[24:40.64]  on this is you know other than not
+[24:42.88]  knowing what the numerator is and not
+[24:44.48]  nobody know what the denominator is it's
+[24:46.16]  a great ratio right so
+[24:48.08]  so there's a problem to me with churn
+[24:49.44]  rates you can argue this is not a lethal
+[24:51.20]  problem pe firms will just go
+[24:52.48]  recalculate this for you
+[24:53.76]  a rigorous vc will kind of grill you to
+[24:55.92]  make sure you're actually telling them
+[24:57.12]  what uh you know
+[24:58.00]  they understand which box they're in
+[24:59.44]  when you answer but
+[25:01.20]  that's only the first problem uh let's
+[25:03.20]  talk about the second problem
+[25:04.72]  um the second problem is we alluded to
+[25:06.72]  uh and there's really kind of two
+[25:07.76]  problems in here
+[25:09.04]  is that churn blows up stuff downstream
+[25:11.12]  uh downstream so to the extent that
+[25:12.56]  churn is now less meaningful than we'd
+[25:14.24]  like it to be
+[25:15.28]  now ltv is less meaningful right or
+[25:17.44]  lifetime really it's not uh
+[25:18.80]  this is where i made that same mistake
+[25:19.76]  again it's really the customer lifetime
+[25:21.52]  uh which
+[25:22.16]  affects ltv uh is now blown up as well
+[25:24.48]  right so if your churn rate is ten
+[25:25.68]  percent one over ten is ten year
+[25:26.96]  lifetime oops just kidding it was
+[25:28.32]  actually 20.
+[25:29.20]  oh now it's a five-year lifetime so so
+[25:31.20]  this metric is now polluted by the
+[25:32.96]  pollution inherent in churn
+[25:34.64]  so four different churn rates means you
+[25:36.24]  effectively have four different ltvs so
+[25:38.16]  that's the first problem
+[25:39.36]  um the the second problem is that very
+[25:41.92]  low churn rates break a lot of these
+[25:43.76]  ratios if you have negative
+[25:45.28]  churn right you know net churn that's
+[25:47.60]  negative
+[25:48.32]  you expand more than you uh shrink then
+[25:50.80]  you have infinite ltv
+[25:52.16]  well i don't like that i mean i don't
+[25:53.52]  like a key metric that breaks when
+[25:54.96]  you're in a desirable
+[25:56.08]  condition because you want to have
+[25:57.36]  negative churn so i don't want to know
+[25:58.96]  how negative
+[26:00.08]  and now the metric's broken because i
+[26:01.44]  can't measure it so that's not very
+[26:02.72]  encouraging
+[26:03.44]  the other problem is more of a math
+[26:04.64]  problem is when churn rates are very low
+[26:07.12]  a lot of it ends up heavily in the
+[26:08.64]  future you get a very high
+[26:10.16]  you know very long lifetime and a very
+[26:11.68]  high lifetime value but like half the
+[26:13.76]  lifetime values after year 10 right or
+[26:15.68]  after year 25
+[26:17.04]  um and look a four-year-old company
+[26:18.64]  talking about a 25-year customer
+[26:20.24]  lifetime does make me at least
+[26:21.68]  uncomfortable right
+[26:22.64]  right like how credible is that so you
+[26:24.40]  say your customer lifetime is
+[26:25.92]  six times longer than you existed um so
+[26:28.88]  so that's a little dubious
+[26:30.96]  the other problem uh with these very low
+[26:32.88]  churn rates is you get these very
+[26:34.80]  long lifetimes so either you have the
+[26:37.04]  heavily future weighted problem or you
+[26:38.72]  have the arbitrary
+[26:40.40]  cap uh problem so one time i was working
+[26:43.04]  with a banker to sell my last company
+[26:45.04]  and i saw them calculating ltv and i saw
+[26:47.44]  that formula
+[26:48.40]  in the spreadsheet and i'm like what are
+[26:50.00]  you doing and the answer is well
+[26:52.48]  because of the long lifetime problem if
+[26:54.80]  the churn gets too low the lifetimes get
+[26:56.88]  too high so i'm going to cap it at 10
+[26:58.72]  years
+[26:59.28]  so we're going to calculate it and we'll
+[27:00.56]  take the minimum of 10 years in the
+[27:01.76]  calculated value
+[27:02.88]  and as soon as i see that kind of stuff
+[27:04.40]  around a sas metric it just makes me
+[27:06.08]  super uncomfortable right
+[27:07.76]  because now i have four different churn
+[27:10.00]  rates i have the
+[27:11.12]  low churn problem and the super long ltv
+[27:13.52]  problem and now i'm inserting an
+[27:15.36]  arbitrary cap kind of silently
+[27:17.68]  and it's just making me very skeptical
+[27:19.84]  and by the way as mentioned if we've
+[27:21.60]  blown up
+[27:22.16]  lifetime value we've then blown up
+[27:24.08]  lifetime value to cac
+[27:25.68]  so the metric that i once blogged as
+[27:27.76]  being the ultimate sas metric
+[27:29.76]  is now kind of polluted as well because
+[27:33.20]  all these downstream problems coming
+[27:34.80]  from churn
+[27:36.48]  now um let me just take a quick so
+[27:39.92]  uh problem number three churn a r itself
+[27:43.36]  can be non-obvious so this is really in
+[27:44.96]  the detail so i'm not gonna spend too
+[27:46.16]  much time here
+[27:47.60]  but there are timing issues on
+[27:49.44]  calculating churn i'll just give you a
+[27:51.04]  couple examples
+[27:52.16]  say somebody at renewal time drops 30
+[27:55.44]  units of product a
+[27:56.64]  and adds 40 units of product b do we
+[27:59.68]  count that as 30 units of churn and 40
+[28:01.92]  of upsell
+[28:02.72]  right which is going to drive up my
+[28:03.92]  churn rate and my expansion rates
+[28:05.84]  potentially not net expansion but
+[28:07.84]  my upsell is percent of new er will go
+[28:10.08]  up right
+[28:11.12]  do i look at it that way or do i look at
+[28:12.88]  it as just 10 units of upsell
+[28:14.80]  uh and and i wouldn't agonize over this
+[28:17.20]  one too much because as it turns out
+[28:19.44]  most people most finance and ops people
+[28:21.68]  this is not a hard question they just go
+[28:23.36]  that's 10 units of upsell
+[28:24.80]  now if i'm a product manager i sure as
+[28:26.80]  heck would like to know which products
+[28:28.24]  are losing customers in which are
+[28:29.44]  gaining customers
+[28:30.40]  so the product management perspective on
+[28:31.84]  this might be different but the finance
+[28:33.60]  perspective is what i call account level
+[28:35.44]  churn hey
+[28:36.24]  we care about this customer they went up
+[28:38.32]  by 10 discounts of 10 units of expansion
+[28:41.28]  and effectively that 30 units of what
+[28:42.88]  some people call product churn is
+[28:44.08]  effectively invisible
+[28:45.44]  because it's been completely offset so
+[28:47.68]  in any case that that's one problem
+[28:49.44]  um which is at renewal time how do we
+[28:52.72]  offset shrinkage and expansion not that
+[28:54.88]  hard but it makes chern er a little
+[28:56.40]  ambiguous
+[28:57.20]  the other problem is what i call upsell
+[28:58.56]  along the way which is somebody
+[29:00.80]  starts out at 100 units six months later
+[29:02.88]  they expand to 140
+[29:04.48]  and they renew at 130. and the question
+[29:07.04]  is gosh is this 30 units
+[29:08.88]  of expansion or is this 40 units of
+[29:11.20]  expansion and 10 units of churn
+[29:13.60]  uh how do i count that and look the
+[29:15.44]  company itself i'm going to argue is
+[29:16.88]  schizophrenic
+[29:17.84]  because when you're making the
+[29:19.04]  fundraising deck right you want to call
+[29:20.72]  this 30 units of upsell
+[29:22.80]  or expansion but when you're doing csm
+[29:25.28]  comp plans
+[29:26.16]  you want to say darn it mr and mrs csm
+[29:28.80]  you lost 10 units on that contract you
+[29:30.88]  couldn't renew it at full value
+[29:32.64]  so so i'd argue the company itself even
+[29:34.40]  gets a little bit confused
+[29:35.84]  um and then finally we'll talk about
+[29:37.60]  this more at the end but built-in
+[29:38.96]  expansion
+[29:40.00]  so just say you sign a deal where it's a
+[29:42.16]  three-year contract hundred and year one
+[29:43.76]  120 year two 140
+[29:45.68]  in year three if you're going to think
+[29:48.48]  about like ltv to
+[29:49.84]  calculations um this is more of a cat
+[29:52.40]  thing than a churn thing um
+[29:54.88]  but how what's the cat how much arr
+[29:58.40]  did we acquire for that sales and
+[29:59.92]  marketing cost did we require
+[30:01.76]  some might argue 360 units well that's
+[30:04.08]  not a orr
+[30:04.96]  we got 360 units of revenue but but of
+[30:07.04]  are we got 100 units the initial arr
+[30:09.68]  and then we count it as 20 units of
+[30:10.96]  expansion in year two and year three
+[30:13.04]  or do we flatten it out and say it's 120
+[30:14.88]  across three years or if you want to be
+[30:16.48]  aggressive do you say no we acquired 140
+[30:18.80]  units of ar we just haven't realized it
+[30:20.64]  yet
+[30:22.40]  so which is it do it terminal ar average
+[30:24.48]  ar initial ar if i'm doing ltv to cac i
+[30:27.04]  need to know the answer to that
+[30:29.04]  so look as was once said about cash and
+[30:31.92]  profit there's a semi-famous quote that
+[30:34.40]  but cash is a fact profit is an opinion
+[30:37.36]  uh i feel the same way about ar
+[30:39.20]  insurance
+[30:39.76]  that ar is a fact uh churn and churn
+[30:43.12]  rates are an opinion
+[30:44.40]  so um and that's what makes me
+[30:46.08]  uncomfortable with churn and that's why
+[30:48.24]  i was kind of thinking how can we solve
+[30:50.48]  this problem because
+[30:51.92]  it's just so detailed few people really
+[30:54.08]  want to talk about the four ways to
+[30:55.44]  calculate it the four different ltvs the
+[30:57.36]  timing and offsets
+[30:58.56]  i mean all that stuff kind of just you
+[31:00.40]  know bores people
+[31:01.84]  confuses people so how do we try and
+[31:04.72]  answer the question that we're trying to
+[31:06.24]  answer which is how healthy
+[31:07.60]  is your installed base uh without just
+[31:10.08]  getting kind of sucked into the weeds
+[31:12.08]  and the answer is to zoom out not in
+[31:14.32]  right and i have one word for you
+[31:16.00]  cohorts right so let's talk about
+[31:19.04]  uh net dollar retention so net
+[31:22.08]  our retention actually i'm going to just
+[31:23.20]  take a quick look at the q a here
+[31:25.68]  uh so how does uncontrollable turn
+[31:27.52]  versus controllable churn fit into this
+[31:29.52]  i mean first
+[31:30.24]  that's a great question those terms are
+[31:32.96]  super undefined
+[31:33.92]  in my mind right and even then i think
+[31:37.12]  like what's the example
+[31:38.64]  uh the example of my last company would
+[31:40.24]  be that oh they got a new cfo
+[31:42.24]  and they churned or worse yet they got
+[31:43.92]  acquired and then churned so we're going
+[31:46.16]  to call that uncontrollable
+[31:47.68]  right we couldn't control that so we
+[31:49.20]  shouldn't really count that kind of
+[31:50.56]  churn
+[31:51.12]  but the issue is it's not that simple
+[31:52.88]  right because let's just say the reality
+[31:54.88]  was
+[31:55.36]  they bought the solution they were not
+[31:57.04]  super happy with it got acquired and
+[31:59.04]  then churned
+[32:00.00]  oh that's quite different now isn't it
+[32:01.68]  because if they were super happy with it
+[32:03.20]  maybe they would have fought to the
+[32:04.32]  death to keep the system
+[32:05.76]  rather than just use the system the
+[32:07.12]  parent company told them to use and
+[32:08.48]  maybe that would have worked or maybe it
+[32:09.68]  wouldn't have
+[32:10.56]  so to me controllable versus
+[32:12.16]  uncontrollable churn it is a concept
+[32:14.32]  people talk a lot about
+[32:16.08]  but but i get super uncomfortable
+[32:18.24]  because i think it could easily be a
+[32:19.60]  cop-out
+[32:20.40]  right you know what like my last company
+[32:22.16]  they got a new cfo and they didn't renew
+[32:24.24]  we can blame the two cfo but if the new
+[32:26.56]  cfo asked the head of finance
+[32:28.48]  how they like the solution and that
+[32:30.08]  person was only lukewarm
+[32:31.68]  the new cfo would say gosh just use my
+[32:33.52]  system then i've got a great one
+[32:35.20]  right so i'm i'm skeptical on the notion
+[32:37.44]  of uncontrollable churn
+[32:39.44]  um do i care more about logo churn or ar
+[32:42.00]  churn i tend to look at sas businesses
+[32:43.76]  through an
+[32:44.16]  arr lens um and i do that because
+[32:49.68]  partially because the last sas business
+[32:51.20]  i ran was bimodal we had a corporate
+[32:53.12]  sales channel that had a 25k
+[32:55.28]  ar asp and we had a field sales that had
+[32:58.32]  a 75k
+[32:59.20]  ar asp and and therefore
+[33:03.04]  if you looked at things like customer
+[33:04.72]  counts they weren't that meaningful
+[33:06.80]  because we actually had
+[33:08.00]  almost no average customers right there
+[33:09.84]  there were no 50k err
+[33:11.52]  customers so because in my mind the more
+[33:14.16]  your customers all look the same
+[33:15.84]  the more you can just look at counts
+[33:17.60]  right just counting the number of people
+[33:19.20]  who churned
+[33:19.84]  as opposed to looking at the arr that
+[33:21.44]  churned the more your business is
+[33:23.76]  two three different businesses all in
+[33:25.68]  one right the more to me you need to
+[33:28.08]  nettle all out and just look at ar
+[33:30.24]  um so i don't do a lot of count based
+[33:32.00]  metrics but a lot of people do they'll
+[33:33.44]  define churn as
+[33:34.32]  we had 100 customers 90 renewed
+[33:36.88]  therefore churn is ten percent
+[33:38.96]  i i greatly prefer to look at archer so
+[33:40.96]  thank you for asking that
+[33:42.24]  yeah usage based pricing and sas with
+[33:44.16]  seasonality that's a tough question if
+[33:45.60]  we have time we'll come back to it
+[33:46.88]  at the end um where do you put the cost
+[33:50.48]  of retention support customer success et
+[33:52.48]  cetera so
+[33:53.28]  you're right i left customer support out
+[33:55.36]  of cogs they do belong in cogs
+[33:57.68]  customer success in my opinion does not
+[33:59.76]  belong in cogs
+[34:01.76]  it belongs in sales um and most
+[34:04.16]  companies will put customer success in
+[34:05.84]  sales i have seen
+[34:07.12]  on occasion people put customer success
+[34:09.68]  into cogs
+[34:11.12]  and the argument for that is if it's
+[34:13.84]  really a set of services to kind of keep
+[34:15.84]  you and get you
+[34:16.72]  up and running it's a cost of running
+[34:18.40]  the service uh if it's really about
+[34:20.88]  renewing contracts it should be in sales
+[34:23.12]  in my mind some might argue g
+[34:24.72]  a and if it's about trying to drive up
+[34:26.80]  sell and expansion then it definitely
+[34:28.48]  belongs in sales
+[34:30.32]  which well i won't go to the next level
+[34:32.40]  on that so
+[34:33.36]  uh let me just go back to q a do i see
+[34:35.20]  anything else here
+[34:36.48]  oh darn i was looking only at the top of
+[34:37.92]  the q a i'm sorry uh
+[34:40.72]  what about customer support we got that
+[34:42.24]  one long term contract
+[34:45.04]  what goes into acquisition versus
+[34:47.60]  recurring yeah
+[34:48.64]  so the question let me answer that one
+[34:50.40]  if you do a five-year contract for 100
+[34:52.16]  units of ar
+[34:53.28]  and i had that split sas business um
+[34:56.40]  where does the revenue go and the answer
+[34:58.00]  is in year one it would go in the
+[34:59.36]  right-hand column
+[35:00.48]  and in years two three four five it
+[35:02.32]  would go into the center column the
+[35:03.76]  recurring business
+[35:04.88]  uh that's where the revenue goes the the
+[35:06.80]  more interesting question uh
+[35:08.16]  randy is where's the cac go
+[35:11.92]  how much especially if that contract's
+[35:13.76]  expanding
+[35:14.96]  if i take that sales marketing cost to
+[35:16.56]  acquire that arr
+[35:18.08]  am i dividing it by the tcv am i
+[35:20.24]  dividing it by the starting ar the
+[35:21.76]  average ar the terminal arr by the way
+[35:23.76]  the sales comp plan
+[35:25.36]  what do you want to incent your sales
+[35:26.88]  force to do is all tied up in that
+[35:29.36]  so uh let me just go down here sorry the
+[35:31.52]  q and a have been
+[35:32.96]  at the top of it uh so
+[35:36.08]  good good good how do you factor mid
+[35:38.00]  contract churn versus contract renewal
+[35:41.04]  yeah oh wow you have mid-contract churn
+[35:42.80]  well at first that's not a good sign in
+[35:44.40]  my line
+[35:45.20]  i've seen very little of it frankly i've
+[35:48.16]  always surprised that you don't see
+[35:49.84]  more cancellations of multi-year
+[35:51.52]  contracts like you sign a three-year
+[35:53.68]  contract
+[35:54.88]  and people they kind of just assume it's
+[35:57.12]  going to renew every year and i'm like
+[35:58.56]  well
+[35:59.04]  just because they signed the contract if
+[36:00.24]  they're really unhappy with the system
+[36:01.52]  you may not
+[36:02.16]  get that you know it's not a renewal
+[36:04.24]  it's a payment but you may not get that
+[36:05.84]  payment
+[36:06.64]  in year two and maybe in fact if you
+[36:09.20]  want to optimize getting that payment
+[36:10.64]  you might be better off treating it like
+[36:12.00]  a renewal even though it isn't
+[36:13.76]  so um now mid-contract churn means
+[36:16.32]  somebody's pretty unhappy
+[36:18.08]  and the question is look if uh let me
+[36:20.56]  pick the
+[36:21.12]  i think that's what you're hitting on
+[36:22.16]  say it was a three-year contract and
+[36:23.60]  they decided to stop paying in years two
+[36:25.20]  and three
+[36:26.00]  uh first you could sue them if you want
+[36:27.68]  to right a contract is a contract
+[36:29.60]  i don't recommend suing customers as it
+[36:31.84]  is a great strategy
+[36:33.36]  but technically speaking a contract is a
+[36:35.12]  contract and if you're seeing a lot of
+[36:36.80]  that to me there's a big problem
+[36:38.64]  uh because frankly uh i've seen very
+[36:41.68]  little of it
+[36:42.40]  and and i've worked with some companies
+[36:44.72]  where there are kind of serious product
+[36:46.24]  issues people are not that happy but
+[36:47.84]  they're still paying
+[36:49.20]  so um but the short answer is it's not
+[36:52.88]  churn it's actually well what is it let
+[36:55.84]  me think about that so somebody refuses
+[36:57.44]  to renew it wasn't upfront
+[36:58.88]  it's a great question right because it's
+[37:00.16]  not in the atr base
+[37:02.24]  right uh so it won't show up in atr is
+[37:05.04]  because you're going to have 100 units
+[37:06.32]  of churn that was you know it's in the
+[37:07.76]  numerator but it's not in the
+[37:09.04]  denominator
+[37:10.24]  um technically speaking it's actually
+[37:12.80]  bad debt
+[37:13.84]  right but but you should take it out of
+[37:15.68]  the ar pool so so personally i would
+[37:17.76]  probably put it in adjustments i mean
+[37:19.44]  just to be clear
+[37:20.48]  this is now the like the advanced level
+[37:22.72]  but in that leaky bucket i have one
+[37:24.56]  other row called adjustments
+[37:26.48]  and i would put that into an adjustment
+[37:29.36]  it's
+[37:30.00]  i might put in deterrent i need to think
+[37:31.36]  more about that i'd probably just put
+[37:32.40]  that one to term but goes to adjustments
+[37:33.84]  is like currency
+[37:35.04]  like just say you have some of your r
+[37:36.64]  and euros and some of it's in dollars
+[37:38.40]  and the size of the pool changed due to
+[37:40.32]  the currency rate changing
+[37:41.60]  that would definitely be an adjustment
+[37:43.28]  in the leaky bucket i guess
+[37:44.88]  now i'm convinced yours would actually
+[37:45.92]  be churned uh and i would count it in
+[37:47.68]  the period in which it occurred
+[37:49.20]  and if i had much of it i'd be very
+[37:51.04]  concerned quite frankly because
+[37:52.96]  um to a certain extent i'd also stop
+[37:55.84]  doing multi-year deals because if you're
+[37:57.28]  giving someone a price lock for a
+[37:58.48]  multi-year deal and they're not renewing
+[38:00.56]  you you gave something and got nothing
+[38:02.64]  so anyway let's uh come off the q and a
+[38:04.88]  back to the uh
+[38:06.56]  back to our regularly scheduled content
+[38:08.24]  here uh so look
+[38:09.60]  this problem trying to figure out how
+[38:11.28]  healthy the installed base is
+[38:12.88]  is a great problem for cohort analysis
+[38:15.20]  where we just step back
+[38:16.72]  rather than stepping in because you step
+[38:18.48]  in it's quicksand
+[38:19.84]  we step back and say let's just grab a
+[38:22.16]  cohort typically all customers
+[38:24.16]  what were they worth one time period ago
+[38:26.24]  let's just say a year ago
+[38:27.44]  and now what are they worth today now
+[38:29.84]  that's net dollar retention today's
+[38:31.60]  value
+[38:32.00]  of their arr right in arr there's some
+[38:34.48]  questions of that it's just annual
+[38:35.68]  recurring revenue
+[38:36.88]  if you agree to pay me a hundred units a
+[38:38.88]  year for to use my service your arr
+[38:41.28]  value is a hundred
+[38:42.80]  um so what were they worth a year ago
+[38:44.72]  what are they worth now and the beauty
+[38:46.56]  of this metric is three things one it's
+[38:48.08]  easy to calculate
+[38:49.12]  it's easy to understand and it's hard to
+[38:51.68]  game
+[38:52.24]  and that's my biggest problem with churn
+[38:54.08]  ultimately is it's easy to gain
+[38:55.68]  i got four different ways plus some
+[38:57.20]  other things i could do to fudge it
+[38:58.96]  so now there are a few bad apples who
+[39:01.20]  survivor bias this
+[39:02.48]  unbelievably public companies actually
+[39:04.72]  do this and what they're effectively
+[39:06.72]  saying is well excluding the customers
+[39:08.48]  who aren't doing business with us
+[39:09.92]  anymore
+[39:10.72]  the cohort almost definitionally
+[39:12.56]  expanded by n percent
+[39:14.48]  right so instead of taking a set of
+[39:16.56]  customers a year ago
+[39:18.16]  and looking at what they're worth today
+[39:19.76]  they do it backwards they take a set of
+[39:21.68]  customers today
+[39:22.88]  and look at what they were worth a year
+[39:24.40]  ago and that's survivor bias because
+[39:26.40]  we've excluded everybody
+[39:27.68]  who's not a customer today so the only
+[39:30.32]  way to gain
+[39:30.88]  that dollar retention rate is the
+[39:32.16]  survivor bias hit uh and sadly some
+[39:34.48]  people do but most people do not
+[39:36.64]  so look the idea of cohorts is not new
+[39:39.68]  virtually every s1
+[39:41.20]  this is data dogs will show by year
+[39:44.48]  the value of cohorts so the purple is
+[39:46.48]  all the customers and acquired in 2013
+[39:49.12]  and how they've evolved over time and
+[39:50.64]  value etc etc
+[39:52.48]  so so look the idea of looking at
+[39:54.64]  cohorts and sas is not
+[39:56.24]  new uh the idea of making this kind of
+[39:59.20]  chart
+[39:59.68]  is not new and this kind of chart is my
+[40:01.76]  mind not only is it not new it's quite
+[40:03.20]  standard
+[40:04.48]  but what is newer is netting this out to
+[40:06.72]  a single number because if you get a
+[40:08.16]  single number you can benchmark it right
+[40:10.08]  it's hard to benchmark this chart
+[40:12.00]  i i can't readily compare it to other
+[40:14.16]  charts i mean i can look at it but
+[40:15.84]  but benchmarks i can do off data
+[40:19.20]  so and by the way net dollar retention
+[40:21.52]  is actually a very popular metric right
+[40:23.36]  so there's martin casado and andreessen
+[40:25.52]  uh in a tweet stream about what metrics
+[40:27.76]  he likes to see it's either on a board
+[40:29.28]  deck or an investor back i can't
+[40:30.48]  remember
+[40:31.12]  uh but you've got net and gross dollar
+[40:32.72]  attention and by the way remember i said
+[40:34.16]  some people to find them inverse of how
+[40:35.84]  i do
+[40:36.24]  he's one of them right so you can see
+[40:37.92]  he's saying that gross
+[40:40.00]  includes churning down cell and net does
+[40:42.40]  not but but in any case so a real
+[40:44.16]  example of where
+[40:45.28]  you know people use those terms in
+[40:48.24]  backwards relative to each other but in
+[40:49.92]  any case
+[40:50.80]  both metrics are important in his mind
+[40:52.24]  and in mine as well
+[40:54.48]  you have alex clayton a great sas
+[40:55.92]  blogger uh who uh has done blog posts
+[40:58.72]  about that dollar retention rate in ipos
+[41:01.12]  uh recently this guy zach kuckoff put a
+[41:03.36]  tweet up showing the net retention of
+[41:05.20]  ipos at
+[41:06.24]  uh of sas tools selling to developers
+[41:09.12]  and you can see snowflake 158 twilio
+[41:11.28]  155. those are really epic
+[41:13.12]  numbers by the way uh elastic 142.
+[41:16.24]  and then finally john ma who i think
+[41:18.24]  writes uh
+[41:19.36]  public comps i think is the name of his
+[41:20.96]  uh newsletter uh you can see
+[41:23.20]  here's what it takes to go public in
+[41:24.56]  2020 the average one had 330 million in
+[41:27.52]  ar
+[41:28.08]  49 revenue growth and 120 net dollar
+[41:31.52]  retention so so this is a popular metric
+[41:34.32]  and i think it is popular for the
+[41:35.52]  reasons we cite it it's it's easy to
+[41:37.44]  understand it's easy to calculate and
+[41:38.80]  it's hard to gain
+[41:40.40]  um so what is a good net dollar
+[41:42.56]  retention rate about 115 right i think
+[41:44.80]  below 100 people that start to get
+[41:46.88]  scared
+[41:47.68]  right because it's saying that your ar
+[41:49.36]  pool kind of decays
+[41:51.12]  by itself it doesn't expand it kind of
+[41:52.72]  if left alone it shrinks
+[41:54.64]  uh and that's not good uh not for
+[41:56.56]  lenders or not for private equity people
+[41:58.24]  or not even for vc people
+[41:59.68]  nobody wants to see the ar pool
+[42:01.20]  shrinking um so so i'd say 100 is a
+[42:03.60]  practical minimum
+[42:04.56]  i think between 100 and 105 it's kind of
+[42:07.28]  considered very
+[42:08.80]  uh 110 is i think kind of the minimum
+[42:11.60]  good
+[42:12.00]  and 116 is median and i think 120 starts
+[42:14.96]  to be very good and
+[42:16.16]  anything much above 120 530 is getting
+[42:18.56]  into the epic
+[42:19.60]  category um
+[42:22.64]  uh i'm going to keep going here so uh
+[42:25.20]  net dollar retention
+[42:26.40]  you know this was kind of an unpleasant
+[42:28.24]  surprise which is i did some
+[42:30.56]  linear regressions and i said hey how
+[42:32.16]  much does net dollar retention
+[42:33.60]  drive sas multiples if it's so important
+[42:36.96]  i bet it's a big driver of sas multiples
+[42:39.12]  and the answer is oops it's not
+[42:41.12]  the r squared is only 0.06 between that
+[42:43.68]  dollar retention
+[42:44.72]  and enterprise value the next 12 months
+[42:47.20]  revenue
+[42:48.00]  so it's not a valuation driver i now
+[42:50.48]  think of it as a
+[42:51.76]  as a financing enabler right okay so a
+[42:54.00]  higher one
+[42:54.88]  isn't necessarily by itself going to
+[42:56.80]  drive a higher valuation
+[42:58.32]  but i could tell you if you don't have a
+[43:00.00]  high enough one you're not going to be
+[43:01.68]  able to raise money
+[43:02.80]  so it's still a super important metric
+[43:04.72]  it just doesn't happen to be
+[43:06.16]  a good driver evaluation like ar growth
+[43:09.20]  is so the r squared between
+[43:10.64]  ar growth and enterprise value multiple
+[43:13.60]  is
+[43:14.08]  0.5 and then rule of 40 which is the
+[43:17.68]  balance of uh revenue growth and
+[43:19.84]  operating profit in effect its
+[43:21.52]  revenue growth minus free cash flow or
+[43:23.92]  plus free cash flow is the rule of 40.
+[43:26.40]  and uh ironically you can see here that
+[43:28.72]  the rule of 40 at one point in time
+[43:30.56]  better explained multiples than growth
+[43:33.20]  than just revenue growth
+[43:34.72]  and now in these kind of frothy times
+[43:37.04]  the the better
+[43:38.00]  predictor of your multiple is just
+[43:39.68]  simply how fast you're going
+[43:41.36]  not how well you're balancing growth in
+[43:42.96]  profit um so that's kind of an
+[43:44.56]  interesting comment on the times because
+[43:46.00]  for a long time the rule of
+[43:47.52]  40 was a better predictor of your
+[43:49.36]  multiple right how well you balance
+[43:51.12]  growth and profit matter more to your
+[43:52.72]  valuation
+[43:53.36]  simply than just how much you're growing
+[43:55.44]  but right now it's kind of just uh
+[43:57.36]  what is it just a full speed ahead grow
+[44:00.08]  as fast as you can
+[44:01.52]  and that's a better predictor of
+[44:02.64]  valuation now to move forward let's
+[44:05.28]  start to wrap this up
+[44:06.56]  uh three pithy quotes to ponder uh
+[44:09.36]  they're all basically saying you know
+[44:10.72]  what gets
+[44:11.44]  measured gets managed and various
+[44:13.28]  correlations and when i was younger i i
+[44:15.84]  i viewed that less skeptically i was
+[44:18.40]  like oh if you want to manage something
+[44:19.84]  you should measure it
+[44:20.80]  uh and now i kind of have a negative
+[44:22.64]  connotation on the word manage which is
+[44:24.40]  like and this is
+[44:25.52]  expressed by uh the economist justin
+[44:27.92]  wolfers down there with goodheart's law
+[44:29.44]  when a measure becomes a target it
+[44:30.96]  ceases to be a good measure
+[44:32.48]  i've actually blogged about this on
+[44:33.92]  pipeline coverage called the
+[44:35.52]  self-fulfilling 3x pipeline coverage
+[44:37.60]  fallacy uh or prophecy the
+[44:39.52]  self-fulfilling prophecy
+[44:40.88]  um so because you kind of ruined the
+[44:43.28]  metric by making it a target because now
+[44:44.80]  everyone's managing the metric and it
+[44:46.40]  kind of loses its predictive value it's
+[44:48.16]  kind of what good hearts law is saying
+[44:49.68]  but but to flip that over uh and to play
+[44:52.08]  the the operator side of this hey if i'm
+[44:53.92]  running a sas business
+[44:55.68]  and i know that ndr matters a lot to my
+[44:57.76]  ability to raise funding if not my
+[44:59.60]  valuation why don't i just build it in
+[45:02.96]  why don't i when i make a contract with
+[45:04.64]  a customer say hey
+[45:06.40]  we think you're going to expand your
+[45:07.76]  usage over time we think you're going to
+[45:10.00]  have a hundred units of usage in year
+[45:11.60]  120 and year two and 140 and year three
+[45:14.88]  and how about i give you a price lock on
+[45:17.04]  those three numbers
+[45:18.00]  and i'll give you a 10 cushion if we
+[45:19.84]  estimate it wrong and you're gonna pay
+[45:21.52]  me those three numbers over the next
+[45:23.04]  three years
+[45:24.16]  and wouldn't that be nice you get price
+[45:25.92]  protection you get some cushion on
+[45:27.44]  expansion
+[45:28.40]  and uh and i get built-in ndr
+[45:31.76]  so right there i have just locked in a
+[45:33.68]  near 20 that dollar expansion rate
+[45:35.92]  right uh i've traded away potentially
+[45:38.56]  some ar now but in my example i actually
+[45:40.64]  didn't
+[45:41.04]  because the usage was naturally
+[45:42.56]  expanding so i didn't really trade away
+[45:44.48]  anything other than the price lock
+[45:47.20]  and it creates this notion of pre-sold
+[45:49.52]  expansion the first time i saw this i
+[45:50.96]  was at a board meeting and there was a
+[45:52.16]  row in the spreadsheet called pre-sold
+[45:53.84]  arr
+[45:54.48]  and i was like what the heck is that and
+[45:56.64]  the answer was
+[45:57.60]  it was this it was the 20k of expansion
+[45:59.84]  in year 2 and the 40k of expansion in
+[46:01.44]  year 3.
+[46:02.32]  uh i did a tweet a while ago about what
+[46:04.24]  do you call this and the consensus
+[46:05.92]  average was initial arr
+[46:07.52]  kind of average ar in this case and then
+[46:09.20]  terminal arr
+[46:11.04]  so look this complicates as we talked
+[46:13.04]  about earlier calculations and sales
+[46:14.96]  comp compilations
+[46:16.08]  but the good news is you're locking an
+[46:17.44]  expansion up front um
+[46:19.20]  and that's great if you're going to get
+[46:20.40]  measured on this metric why not build it
+[46:22.08]  in
+[46:23.12]  there's a very similar thing that is bad
+[46:25.60]  in my opinion which is price ramping
+[46:27.28]  and the difference between the left
+[46:28.40]  column and the right column is in the
+[46:29.68]  right column
+[46:30.48]  the usage and value is not changing over
+[46:32.64]  time all we're doing is tilting the
+[46:34.16]  price
+[46:34.80]  we're actually in effect saying you
+[46:36.48]  really owe me 120k a year
+[46:38.88]  but it's kind of a financing strategy
+[46:40.80]  i'm to tip that line
+[46:42.56]  and uh it will drive on an arr basis
+[46:45.60]  epic net dollar retention
+[46:47.52]  but on a revenue basis asc606 will
+[46:49.92]  flatten it out it will see right through
+[46:51.68]  this trick
+[46:52.56]  and you will just end up with 120k per
+[46:54.56]  year in gaap revenue and
+[46:56.40]  this also has all the downsides of the
+[46:58.24]  left-hand column uh and in my mind it's
+[47:00.32]  playing accounting game so
+[47:01.76]  there's a real shade of gray here guys
+[47:04.08]  between what i think is good and what i
+[47:05.60]  think is bad
+[47:06.48]  but the fact of the matter is if the
+[47:07.76]  usage is actually expanding and you lock
+[47:10.00]  it in that's smart if you're just
+[47:11.68]  tilting the price and it's really a
+[47:13.44]  financing game
+[47:14.40]  it's probably not good so uh to finish
+[47:17.44]  this up the next frontier
+[47:18.88]  is uh i think the next metric we're
+[47:20.56]  going to see private companies start to
+[47:21.84]  look at is now kind of
+[47:23.44]  second billing in public companies rpo
+[47:26.80]  remaining performance obligation it's
+[47:28.88]  the amount of contracted arr you have
+[47:31.44]  under contract that
+[47:32.56]  is not kind of currently either been
+[47:35.36]  billed which is revenue
+[47:36.64]  or been paid in advance which is
+[47:38.24]  deferred revenue so
+[47:40.00]  if you're not releasing rpo there is no
+[47:42.24]  other way to see it
+[47:43.68]  the the only way a company can you can
+[47:46.00]  know a company's rpo is if they tell you
+[47:48.16]  because it does not appear in the
+[47:49.28]  balance sheet people sometimes confuse
+[47:51.04]  deferred revenue with rpo
+[47:52.96]  and they're not the same thing because
+[47:54.32]  it only ends up as deferred revenue
+[47:56.24]  if they've paid you in which case it
+[47:58.08]  ends up in your balance sheet is
+[47:59.04]  liability
+[48:00.16]  so this is not tracked much by private
+[48:02.40]  sas companies
+[48:03.36]  but i think it's the next public company
+[48:05.60]  metric the private company is going to
+[48:06.80]  start to look at either as they get
+[48:08.16]  bigger and start to think about going
+[48:09.36]  public
+[48:10.08]  or just because investors private
+[48:11.52]  company investors are going to want to
+[48:12.80]  know
+[48:13.36]  because the sas company that has booked
+[48:15.04]  a bunch of three-year contracts that
+[48:16.48]  that largely get paid
+[48:18.08]  is arguably worth more than one that
+[48:20.00]  hasn't so
+[48:21.12]  that's remaining performance obligation
+[48:22.96]  let's uh wrap this up here with
+[48:24.40]  takeaways
+[48:25.36]  look a sas company is really the sum of
+[48:27.04]  two businesses a recurring business
+[48:29.04]  and a non-recurring business union
+[48:30.80]  economics are great
+[48:32.32]  but churn can be problematic when this
+[48:34.72]  churn gets polluted it pollutes
+[48:36.24]  downstream metrics the solution to all
+[48:38.08]  this is to zoom out do a court based
+[48:40.00]  analysis to say
+[48:41.12]  how big was the base a year ago how big
+[48:42.88]  is it today that's called net dollar
+[48:44.80]  retention
+[48:45.68]  a good rate is around 115 hey if this
+[48:49.20]  matters so much why don't we just build
+[48:51.20]  it in
+[48:51.76]  so we don't have to make it kind of a
+[48:53.12]  guessing game and then going forward
+[48:55.20]  little preview for the future i think
+[48:56.96]  startups are increasingly going to look
+[48:58.40]  not only at
+[48:58.96]  ndr which is affect the public company
+[49:00.72]  metric but now rpo
+[49:02.80]  so uh thank you all for coming i will
+[49:05.52]  post the slides
+[49:07.20]  and uh you can reach me at my blog or on
+[49:10.24]  twitter at cal blog if you have
+[49:12.08]  further questions again thanks for
+[49:14.24]  coming good luck and
+[49:15.76]  happy expansion
+[49:37.04]  you

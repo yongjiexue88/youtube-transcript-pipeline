@@ -1,0 +1,1853 @@
+Title     : How We Built a $10M+ AI Agent Stack (614 Meetings Automated)
+Video ID  : kCox5Z9layY
+URL       : https://www.youtube.com/watch?v=kCox5Z9layY
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1844
+Saved at  : 2026-06-20 22:27:06
+------------------------------------------------------------
+
+[00:00.00]  We are going to go through as much
+[00:01.88]  detail as we can on our agent staff.
+[00:04.16]  We've talked a lot about it at this
+[00:05.36]  event, but we're going to go into as
+[00:07.00]  much detail as we can, show you back
+[00:08.44]  end, show you how they really work on
+[00:09.80]  the other side. Really, we could do an
+[00:11.64]  hour on each, and maybe we'll do that
+[00:13.12]  over the course of the year on our live
+[00:14.44]  webinars. We're going to do as much as
+[00:15.56]  we can in this session just to really
+[00:17.60]  give you a sense of how they work.
+[00:19.60]  Maybe it's our 401 class.
+[00:22.27]  >> [clears throat]
+[00:22.80]  >> I'll let Amelia kick it off. I will do a
+[00:24.96]  deep dive. We won't do all of our 20
+[00:26.72]  agents, but it looks like we're going to
+[00:27.72]  do about seven or eight of the ones that
+[00:28.96]  that really make a difference.
+[00:29.84]  >> Yeah, I tried to force rank maybe the
+[00:31.24]  top ones that we use every day.
+[00:33.24]  I had actually used Gamma last night
+[00:35.12]  when I was tired after the VIP party to
+[00:37.44]  make you a little agent card stack, if
+[00:39.84]  you will.
+[00:40.92]  Some of my favorite some are not, so
+[00:42.28]  I'll explain the differences. And
+[00:43.92]  they've been used over a million times,
+[00:45.80]  and collectively our agents have had
+[00:47.28]  multi-millions numbers of interactions.
+[00:50.12]  And so, I thought it'd be fun to just
+[00:51.04]  make a little Everyone's been asking us
+[00:52.80]  what our stack is this week, and so I
+[00:54.28]  thought I would make them as Pokémon
+[00:55.48]  cards.
+[00:56.44]  So that you can also collect them all if
+[00:58.36]  you want. Catch them all. All right, so
+[01:00.80]  a few of them here that we'll go through
+[01:02.08]  today, but just to give you a quick
+[01:03.16]  rundown of some of our top agents that
+[01:04.76]  we use every day. So, 10K, you've heard
+[01:06.92]  us talking about. Hopefully you came to
+[01:08.20]  the session on Tuesday, where I walked
+[01:09.92]  people through how to build your own AI
+[01:11.56]  VP marketing. 10K is our AI VP marketing
+[01:14.68]  that we use. If you did miss that
+[01:16.40]  session, it's on the live stream, so you
+[01:17.76]  can go back. I do a whole hour on how to
+[01:20.08]  deploy your own AI VP marketing.
+[01:22.60]  QB, who we now call QB, uh
+[01:25.72]  is our AI VP of customer success. He's
+[01:28.00]  handled all the sponsors you guys see
+[01:29.36]  here today. With some few human
+[01:31.32]  interactions, of course, but he's done a
+[01:32.88]  lot of the heavy lifting to help the
+[01:34.56]  sponsors and our customers that we're
+[01:36.72]  loading into the SaaS Annual this week.
+[01:39.76]  There's Annie, who you guys all know,
+[01:41.28]  because that's the SaaS Annual website.
+[01:43.28]  She actually turned into an agent the
+[01:44.84]  more that we did with her. She has a
+[01:46.88]  Porky Pass app. She has a few other
+[01:48.24]  things she can do, and so started as a
+[01:50.24]  website, turned into an agent. We'll
+[01:51.92]  explain how that works next.
+[01:53.84]  Amelia AI, which you can can demo over
+[01:55.88]  there if you want. That's our inbound
+[01:57.72]  agent that runs off Qualify from
+[01:59.32]  Salesforce. She we've had her since like
+[02:01.76]  last summer, I think.
+[02:03.68]  And she is the one that is driving all
+[02:05.04]  of our inbound sales, handling all of
+[02:07.44]  our attending questions like you guys
+[02:08.64]  have been asking your Wi-Fi and this and
+[02:10.20]  that. Where's this? Where's that? That's
+[02:11.96]  Amelia AI. So, she's part seller, part
+[02:14.32]  customer support, part marketer. She
+[02:16.36]  does a lot of things. Then there's Agent
+[02:18.44]  Force. I made it look like a ghost
+[02:19.72]  because we use Agent Force primarily to
+[02:21.44]  follow up with leads that our sales team
+[02:23.32]  never wanted to follow up with. So, I
+[02:25.04]  call that one. You can call it Agent
+[02:26.32]  Force. I sometimes call I call it King
+[02:28.04]  Boo cuz he's a ghost. So, she's an Agent
+[02:30.48]  Force. We're reviving our dead leads
+[02:32.60]  that we never followed up with. But, the
+[02:34.60]  other ones we use for sales as well. So,
+[02:36.20]  Ava, that's Artisan. You guys have all
+[02:38.24]  seen Ava on their booth this week. We
+[02:40.00]  use her for a mix of both cold and warm
+[02:42.32]  outbound. And then Monaco, who's newer
+[02:44.28]  to our stack, we use it for completely
+[02:46.08]  cold outbound
+[02:47.44]  to prospects and companies that look and
+[02:50.16]  match our ICP. So, it's really Monaco's
+[02:53.04]  really good at taking look-alikes for
+[02:55.36]  companies that you already have and that
+[02:56.72]  you've already closed and then just
+[02:58.16]  automatically filling your pipeline with
+[03:00.16]  companies that look exactly like that.
+[03:03.44]  >> You're listening to the official SaaStr
+[03:05.28]  AI podcast brought to you by
+[03:08.60]  Hey everybody, starting a business can
+[03:10.08]  get expensive fast. Website here, email
+[03:12.88]  somewhere else, business phone with
+[03:14.52]  another provider. Northwest Registered
+[03:16.76]  Agent gives you a complete business
+[03:18.48]  identity in one place with free tools,
+[03:21.08]  resources, and built-in privacy from day
+[03:23.28]  one. Get more at
+[03:24.68]  northwestregisteredagent.com/saastrfree.
+[03:27.64]  [music]
+[03:28.48]  That's
+[03:28.92]  northwestregisteredagent.com/saastrfree.
+[03:33.48]  S A A S T R F [music] R E E.
+[03:37.88]  Starting a tech company is thrilling.
+[03:39.44]  It's also really messy. Just got to ask
+[03:41.32]  anyone who's done it or anyone who's
+[03:43.16]  tried. Better yet, ask EY. They've seen
+[03:45.76]  startups in their best [music] moments.
+[03:47.12]  Go to ey.com/techstartups
+[03:49.32]  to learn more.
+[03:50.92]  >> We do have other agents we've deployed.
+[03:52.72]  I don't know how much you want to touch
+[03:53.64]  on these, Jason, but I just wanted to
+[03:55.08]  show the top.
+[03:55.76]  >> Yeah, we can keep going. If you haven't
+[03:56.88]  seen it though, you can and we'll update
+[03:58.80]  it with all the content from today and
+[04:00.24]  this week. But if you go to
+[04:01.04]  sasur.ai/agents,
+[04:03.28]  that's continually updated with
+[04:04.76]  everything here, the best sessions, all
+[04:06.48]  the decks, all the slides. It's good
+[04:08.24]  today, but by next week it'll have
+[04:09.68]  everything from here organized for you.
+[04:11.16]  So, you can come back to that.
+[04:13.56]  >> Cool. So, let's start with 10K. If you
+[04:15.24]  missed any of our previous demos on what
+[04:18.04]  10K does, cuz he does a lot of the heavy
+[04:19.68]  lifting for us.
+[04:21.72]  One thing I wanted to preface cuz we
+[04:22.96]  just showed you our stats. Some of the
+[04:24.24]  ones that we built ourselves, we built
+[04:25.80]  on Replit. So, I'll call out in these
+[04:27.20]  slides what it's built on, what's
+[04:28.88]  powering all of our different
+[04:29.92]  go-to-market agents.
+[04:31.88]  But one kind of common theme I noticed
+[04:33.60]  as I was building out this deck and just
+[04:35.20]  thinking about our stack of AI agents,
+[04:37.08]  if you will, cuz folks were just asking
+[04:38.48]  us, like, "Hey, what's in your stack?
+[04:40.04]  What are you guys using?" is a lot of
+[04:41.80]  these did not start as full-blown
+[04:43.92]  agents. It's just something where we
+[04:45.96]  wanted to replace something. I wanted to
+[04:47.88]  replace our Notion dashboard cuz I got
+[04:49.64]  tired of copy-pasting things from our
+[04:51.88]  different data sources. And so, 10K
+[04:54.04]  really started as just a dashboard back
+[04:56.24]  in January. That was his thing. I just
+[04:58.28]  wanted to hook up to Marketo and
+[05:00.04]  Salesforce and really simplify life. And
+[05:02.56]  it really was just a dashboard for a few
+[05:04.92]  weeks.
+[05:06.04]  But then 10K evolved, if you will, and
+[05:08.48]  now does a whole lot more. He owns the
+[05:10.24]  number. He helps us track our daily
+[05:12.04]  revenue across all of go-to-market. He
+[05:14.24]  helps with our forecasting, which is
+[05:15.56]  super important and helpful for
+[05:16.60]  something like this where you have
+[05:17.96]  really time-sensitive maybe releases or
+[05:19.96]  product things that you guys are doing
+[05:21.24]  as equivalents. He knows all of our
+[05:23.36]  campaign performance now, so he's
+[05:24.88]  tracking all of our marketing campaigns
+[05:26.96]  in real time. He pushes out our our
+[05:28.96]  daily marketing ideas. We we've been
+[05:31.04]  talking about this week, our top three
+[05:32.44]  ideas that we get every day for
+[05:34.36]  Sasquatch comes from our AI VP of
+[05:36.80]  marketing.
+[05:38.64]  And it's interesting, too. I did a
+[05:39.84]  little test comparison this week where
+[05:41.24]  on Tuesday I I rebuilt our AI 10K VP of
+[05:43.96]  VP of marketing on Replit. And then
+[05:45.64]  yesterday I did a a little bit live with
+[05:47.12]  Elena on Lovable. And actually the ideas
+[05:49.20]  that came out with were different. It's
+[05:51.12]  like the LLMs were so different that it
+[05:53.08]  came out with four different ideas.
+[05:54.36]  [clears throat]
+[05:54.64]  >> to rebuild 10k Lovable as much as you
+[05:56.68]  could. And
+[05:58.08]  what was different?
+[05:59.28]  >> So the
+[06:00.12]  the biggest like the dashboard still you
+[06:02.00]  know kind of looks similar. Like there
+[06:03.72]  were elements that were the same but the
+[06:05.44]  underlying brain was different because
+[06:08.16]  the biggest test for me was like when I
+[06:09.52]  gave it to Replit I think the top four
+[06:10.84]  ideas it gave was like more email based
+[06:13.28]  and then the ones that Lovable came out
+[06:14.68]  with were more like okay you need to do
+[06:16.48]  ads, you need to spend on this, you need
+[06:18.08]  to do ads.
+[06:18.84]  >> The ideas that these seeming brain we
+[06:21.32]  got to be careful not to
+[06:22.84]  anthropomorphize AI but the ideas that
+[06:25.32]  the Lovable version were different than
+[06:26.64]  Replit.
+[06:27.16]  >> Exactly. Yeah. [clears throat] But they
+[06:28.60]  I gave them both the same spec and the
+[06:30.16]  same inputs.
+[06:31.40]  >> We could run it we should run an
+[06:32.64]  experiment. We'll follow up we should
+[06:34.44]  get them both running for real and have
+[06:36.80]  them debate and argue their three ideas
+[06:38.84]  a day. They each come up with three
+[06:39.96]  ideas a day. It's too many. Let's have
+[06:41.80]  them compare and contrast because for
+[06:44.00]  reasons that we probably are not smart
+[06:46.28]  enough to understand 10k is very biased
+[06:48.84]  on email marketing right? And the
+[06:51.16]  version on Lovable is very biased on
+[06:52.24]  advertising
+[06:54.96]  >> advertising brand
+[06:56.88]  >> brand Sounds a little like sounds a
+[06:58.44]  little like Elena.
+[06:59.48]  >> I know.
+[07:00.76]  >> That's pretty interesting that they came
+[07:03.12]  to different conclusions.
+[07:04.68]  >> It actually matches the marketing style
+[07:06.60]  of those internal teams. I don't know.
+[07:09.08]  Maybe it's unintentional that however
+[07:10.76]  their internal teams are using it for
+[07:12.40]  marketing is like
+[07:13.48]  >> Oh yeah Replit's nerdier and Lovable is
+[07:15.08]  more marketing.
+[07:16.24]  >> So it's a little funny.
+[07:17.04]  >> Yeah it is. We'll thread some stories in
+[07:18.92]  this
+[07:19.68]  about how it is surprising how seeming
+[07:22.12]  agents with seemingly similar data sets
+[07:24.68]  and LLMs come to different good but
+[07:26.72]  different conclusions. I'll share a
+[07:27.92]  story from this morning later. The one
+[07:30.28]  thing I would add to this Amelia if you
+[07:31.40]  were here on
+[07:32.56]  the first day in the morning for the two
+[07:33.92]  hour session Amelia gave you a recipe.
+[07:35.36]  She gave you the skills. We'll post it
+[07:36.60]  online. You can build your own 10k. We
+[07:37.80]  don't want to duplicate it here. But the
+[07:39.52]  one thing I would add I think Amelia hit
+[07:41.80]  on it. The simplest way you can get some
+[07:44.08]  of this done, like the most basic
+[07:45.72]  version of this and Amelia show you
+[07:47.08]  we'll go deeper, but this headless
+[07:49.16]  Salesforce idea that's in the media if
+[07:50.72]  you haven't tried it, it's really effing
+[07:52.92]  powerful, okay? And and they just
+[07:55.56]  Salesforce just launched something
+[07:56.56]  called headless Salesforce if you're on
+[07:57.84]  Salesforce and
+[07:59.72]  it some of that is actually a product
+[08:01.36]  that doesn't even exist yet. It's on
+[08:02.92]  Mulesoft which they bought years ago and
+[08:04.72]  a bunch of stuff that most folks are
+[08:05.84]  never going to use. You're not using
+[08:07.08]  Who's using in the room who's using
+[08:07.96]  Mulesoft? Okay, nobody, okay? But most
+[08:10.64]  of you are using Salesforce. The
+[08:11.68]  Salesforce API is really good. So if you
+[08:13.44]  do nothing else, spin up a Replit or
+[08:15.72]  Lovable or Vercel
+[08:18.52]  and tell it
+[08:19.92]  and then just get tell it you want to go
+[08:21.56]  into Salesforce and build I want a type
+[08:24.40]  of dashboard or analytics I don't get
+[08:26.16]  today, okay? And we'll show you a lot
+[08:28.44]  For example, for me, I wanted I want
+[08:30.80]  real-time visibility into attendance and
+[08:32.52]  ticket sales here every hour. That just
+[08:34.32]  doesn't work in Salesforce, right? So
+[08:36.24]  that actually took two APIs, Visual and
+[08:38.04]  Services, but my point is now I can
+[08:40.28]  interact with Salesforce data in a way I
+[08:41.64]  never could. And this is you can get a
+[08:42.64]  quick Our's started off as a dashboard
+[08:44.84]  for tickets and attendance, but it could
+[08:46.20]  have been a Salesforce dashboard. You do
+[08:47.96]  not if you really want to do something
+[08:49.48]  cool,
+[08:50.80]  just go to go to you can do it in Cloud
+[08:53.00]  Code, too, but go but I actually think
+[08:54.40]  Replit, Lovable, or Vercel are easier
+[08:55.92]  these connect. And just say connect
+[08:57.64]  connect me to Salesforce with their
+[08:59.00]  connectors and I want it to do this and
+[09:01.44]  watch some magic happen. They already
+[09:02.96]  works headless and intelligent. You can
+[09:04.36]  get 10% of what we do in an hour and
+[09:07.24]  maybe do something really cool that you
+[09:08.60]  would never be able to do with it
+[09:09.64]  Salesforce on its own cuz these agents
+[09:11.08]  are so powerful.
+[09:11.88]  >> Yep.
+[09:13.04]  So just a little bit of the back end of
+[09:14.96]  10K. So I I did a a version of this for
+[09:17.08]  each of our agents that I showed as our
+[09:18.48]  top agents. Uh so 10K was built on
+[09:20.76]  Replit. His first commit was in January
+[09:22.56]  of this year. So he's really not even
+[09:24.40]  he's only 4 months old, actually. Uh
+[09:26.88]  but it's funny I asked each of the
+[09:28.04]  agents how many commits we've done. So
+[09:29.36]  this one has almost a thousand, which is
+[09:30.80]  a lot. Uh seven to eight commits a day,
+[09:33.24]  so that's between myself and Jason. And
+[09:35.20]  then for fun I put how many lines of
+[09:36.40]  code each one of them was, but the more
+[09:38.88]  of the And then there's there's 10K has
+[09:40.64]  the most external APIs wired into it.
+[09:43.48]  So, this is what we mean when we say
+[09:45.64]  headless Salesforces. We're using
+[09:47.44]  Salesforce just directly via the API
+[09:49.32]  without logging in directly to
+[09:50.68]  Salesforce.
+[09:52.32]  I still log in to Salesforce. Jason
+[09:53.72]  doesn't have a Salesforce login. I still
+[09:55.40]  have to like use the authenticator app
+[09:57.12]  when it's like going to move things
+[09:58.84]  around.
+[10:00.28]  That's not in the API yet, but so that's
+[10:03.00]  that's what we mean by headless if you
+[10:04.12]  guys are wondering what what all that
+[10:06.00]  means. Bizzabo, so that's what we use
+[10:07.36]  for ticketing. That's how you guys all
+[10:08.48]  bought your tickets. And then Marketo,
+[10:10.36]  which was our marketing automation
+[10:13.08]  platform,
+[10:14.24]  is still holding up to this for now. And
+[10:15.72]  then Slack, that's how we get our daily
+[10:18.36]  Every day when we get our daily
+[10:19.52]  marketing ideas, we get an email with
+[10:20.92]  it, but we also get a Slack update. QB
+[10:23.04]  also has Slack, so QB will Slack us a
+[10:24.88]  morning customer report essentially of
+[10:27.16]  hey, here are the accounts you need to
+[10:28.76]  follow up with. Here are some of the
+[10:30.16]  sponsors who maybe didn't finish what
+[10:31.52]  they were supposed to be doing. Here are
+[10:32.92]  people that are overdue. And then it'll
+[10:34.64]  also Slack us and say, "Hey, here are
+[10:36.28]  some folks
+[10:38.32]  in your customer base that we think you
+[10:40.64]  need to follow up with cuz maybe they
+[10:41.96]  haven't done anything or they're super
+[10:43.28]  behind on things or they're approaching
+[10:45.40]  a deadline that they haven't quite met
+[10:47.32]  yet. So, it can do a lot of that
+[10:48.60]  automated for us. And so, I really like
+[10:50.68]  that.
+[10:51.48]  10K and Slack. And then you'll see Clerk
+[10:54.00]  in there too, but
+[10:55.80]  those ones at the top are really I think
+[10:57.72]  one through six are the main ones for
+[10:59.20]  10K.
+[11:02.12]  And then we talked about this a little
+[11:03.36]  bit, but I wanted to just force rank
+[11:04.60]  kind of like the top three things I
+[11:06.12]  think 10K does for us. He had a
+[11:07.64]  different list of what he thinks he does
+[11:09.40]  for us. The top three things well, but
+[11:11.64]  yes, number one, he is still a
+[11:12.84]  dashboard, but he is a living breathing
+[11:14.88]  dashboard. So, we can talk to 10K. So,
+[11:16.48]  to Jason's point, he can just talk to
+[11:18.48]  any of our data from Salesforce,
+[11:20.44]  Marketo, Bizzabo, and he can ask a
+[11:22.52]  question of like how many VCs are coming
+[11:24.24]  to SaaStr? How many CMOs do we have
+[11:26.08]  coming to the summit today? What
+[11:27.48]  sessions are maybe looking a little bit
+[11:28.88]  late? Should we move them around? Add
+[11:30.24]  any speaker? And so, we can just talk to
+[11:32.20]  our data every day.
+[11:34.00]  I think an interesting point here is I
+[11:35.52]  don't know if you guys heard the session
+[11:36.48]  with Denise yesterday from Snowflake,
+[11:37.92]  but it's also on our YouTube channel.
+[11:39.68]  She was talking about how she she has
+[11:41.96]  this like bold statement that the
+[11:43.12]  dashboard is dead, but really it's
+[11:44.36]  because she has dashboards, but she has
+[11:46.84]  agents. She just talks to her agents.
+[11:49.16]  And for her at scale
+[11:51.28]  having you know her she's got multiple
+[11:52.92]  versions of 10K. For her the biggest
+[11:55.60]  thing at scale was that and she doesn't
+[11:56.96]  have to argue anymore between sales and
+[11:59.36]  marketing what the number is. What the
+[12:01.20]  number just is the number and so for us
+[12:03.80]  it's still I think a prevalent approach
+[12:06.04]  for your guys at scale to have something
+[12:07.96]  that is yes a dashboard, but it's one
+[12:09.84]  that we all agree on because it's
+[12:11.88]  directly connected to the API and so
+[12:13.76]  there's never any nuance or people lying
+[12:16.40]  about the numbers or maybe pulling it
+[12:18.48]  from the wrong dates or
+[12:20.76]  trying to make it look better than it
+[12:22.52]  is.
+[12:23.68]  Um, it's the numbers are just the number
+[12:25.20]  because it's just pulling it directly
+[12:26.40]  from the API and so I think that was a
+[12:28.16]  good insight that she brought up that I
+[12:29.32]  hadn't really thought about previously.
+[12:33.40]  >> I think I hit that
+[12:35.36]  with Amjad's session.
+[12:40.88]  The
+[12:42.16]  So if you were there I don't want to be
+[12:44.16]  too duplicative.
+[12:46.80]  There are not too much to add. Um, I I
+[12:49.36]  guess it's just a reminder that um,
+[12:54.00]  Amelia said when she had the lines of
+[12:55.76]  code of the commits it's in six to seven
+[12:58.12]  commits a day and anyone that's a
+[12:59.76]  developer engineer might roll their eyes
+[13:01.68]  and say you shouldn't be doing six to
+[13:02.92]  seven code commits a day. It's like a
+[13:04.48]  bad sign. But we're not we are tech from
+[13:06.80]  the perspective of Replit we're doing
+[13:08.16]  six to seven commits. From the
+[13:09.44]  perspective of us as
+[13:12.64]  the boss of the agents or the agents of
+[13:14.32]  the boss of us, we're just improving the
+[13:16.16]  application each day, right?
+[13:18.88]  And
+[13:20.20]  so I guess just the lesson from this
+[13:21.92]  email when last week
+[13:23.92]  10K started to create better emails than
+[13:26.20]  humans is just how much if you keep
+[13:29.24]  engaging with the agents every day, they
+[13:31.68]  will get better and better and that's
+[13:33.48]  the key. Whether it's just to train
+[13:34.60]  something like Artisan or Monica or
+[13:37.64]  something or Qualified, if you train
+[13:39.36]  them, they will get better and better
+[13:40.60]  every day. Or if you have agents that
+[13:42.48]  are somewhat more alive like 10K and QB
+[13:45.32]  or if you talk to them more every and
+[13:46.80]  every day, their context windows will
+[13:48.48]  get richer and richer and they will
+[13:49.52]  perform better. And then somehow last
+[13:51.60]  week, they will create a better human
+[13:53.68]  out of the blue than a human can. When I
+[13:55.16]  asked Amjad, CEO of Replit, how he did
+[13:57.24]  it, he didn't quite know. When I asked
+[13:58.64]  her Ed Fielden sure he didn't quite
+[14:00.20]  know. But that That's the key is the
+[14:02.56]  more time today
+[14:05.08]  The whole open cloud thing is really
+[14:07.00]  dangerous that you can Not just that it
+[14:09.00]  has security issues and breaches and can
+[14:10.72]  leak your confidential information. But
+[14:12.64]  I I think it also confused people that
+[14:14.24]  an autonomous agent requires no work. It
+[14:16.08]  can go off on its own. The number one
+[14:18.12]  lesson we've learned
+[14:20.08]  is the more time you invest with the
+[14:21.60]  agents just like most humans,
+[14:24.08]  the better they get. And just like most
+[14:25.60]  humans, you don't really need to go over
+[14:27.68]  the basics with your agents if they're
+[14:29.48]  well if they're if they're performing
+[14:30.88]  well. If they're not performing well,
+[14:32.56]  you have to go over the basics again and
+[14:34.52]  again. But even your best people the
+[14:36.60]  more if you can just spend a little bit
+[14:38.64]  of time with them each day or each week,
+[14:40.28]  they will get better when you start to
+[14:41.96]  mind meld with them and it's literally
+[14:43.12]  the exact same with agents. And that's a
+[14:45.20]  little bit different than the narrative
+[14:46.44]  on on people that aren't doing it,
+[14:48.36]  right? They think it's the opposite.
+[14:49.64]  >> Yep.
+[14:50.92]  Okay. So, QB, we've I realized we did a
+[14:53.96]  a workshop a while ago on how we built
+[14:55.76]  QB. But he is our AI VP of Engineering
+[14:58.16]  at Replit. So, we can do a fresh one
+[14:59.56]  after this where we walk through how we
+[15:01.56]  built QB. Kind of what he does now cuz
+[15:03.64]  when we did that webinar or podcast a
+[15:05.40]  while back, it was like he was he didn't
+[15:07.48]  have all the features and functionality
+[15:09.28]  he has now cuz we we keep shipping Yeah.
+[15:12.72]  lines of code into him. But he Again, he
+[15:14.92]  started as
+[15:16.36]  10K was just a dashboard. QB was just a
+[15:18.92]  project management tool. So, we had an
+[15:20.48]  antiquated project management tool we
+[15:22.40]  were using for customer support
+[15:23.76]  basically to manage all of our sponsors,
+[15:25.84]  um to get information from them. And you
+[15:27.80]  know, because South by Southwest are
+[15:29.64]  like kind of niche and weird, no project
+[15:32.00]  management tool was great at this,
+[15:33.20]  right? They were all like
+[15:34.08]  out-of-the-box, just you get what you
+[15:35.92]  get, and there wasn't a lot of
+[15:37.44]  customizations we can do. And so it
+[15:38.88]  required a ton of human follow-up,
+[15:41.96]  manual emails, manual calling people,
+[15:44.56]  texting people. It was a lot of manual
+[15:47.08]  labor outside of the project management
+[15:48.96]  tool that we had in years past. And so
+[15:51.24]  we started this as a vibe coding project
+[15:54.08]  of I just wanted to save us some time,
+[15:56.68]  maybe get some budget have save us quite
+[15:58.92]  a bit of of of budget and by building
+[16:01.40]  him versus like having humans follow up
+[16:03.12]  with these folks all the time. And so he
+[16:05.40]  he really turned into a sponsor what I
+[16:07.60]  call now a self-service agent where he
+[16:09.88]  can manage questions, he can intake
+[16:12.64]  logos, he can intake websites, he can
+[16:14.68]  remember all these things about our
+[16:16.44]  different customers.
+[16:18.20]  And he really has become not only a
+[16:19.80]  self-service agent, but also a
+[16:21.64]  personalized asset management. So he's
+[16:23.24]  collecting all the I used to be a pain
+[16:24.68]  in the butt for us to get everybody's
+[16:25.92]  logo so that we can put them on the
+[16:27.08]  sponsor wall, put them on all the signs
+[16:29.00]  here. It was honestly annoyingest
+[16:32.28]  because they people email you files and
+[16:33.60]  then they're too big, but now you just
+[16:35.20]  upload it to our agent, it's much
+[16:36.40]  better. But the better part of QB now is
+[16:40.28]  even though he started as just a
+[16:41.36]  dashboard, quickly I realized, "Okay,
+[16:43.40]  this agent's pretty good to the point
+[16:45.04]  where he can send each of our
+[16:47.08]  There's almost like 150 sponsors cuz we
+[16:49.12]  have some non like booth sponsors, too.
+[16:52.12]  Um and he can email them personalized,
+[16:53.88]  right? This is something that no human
+[16:55.20]  can do. Like no human CSM wants to have
+[16:57.84]  100 accounts. They all want to have like
+[16:59.56]  five. And so that was the magic of QB
+[17:01.96]  was that he knows all of our sponsors
+[17:04.24]  cold. He knows all their assets, he
+[17:06.32]  knows their logos, he knows what they
+[17:07.48]  do. He can he uses whatever platforms to
+[17:10.96]  research about them. Like he knows more
+[17:12.76]  about our sponsors than like probably
+[17:14.24]  some of your best CSMs know your top
+[17:15.92]  customers.
+[17:17.16]  >> Can we try to ask QB some questions we
+[17:18.84]  never tried before?
+[17:19.68]  >> it.
+[17:20.12]  >> Let's see what happens.
+[17:21.96]  >> Yeah, QB. Here's QB.
+[17:23.48]  >> It's QB.
+[17:24.92]  Okay, let's ask QB. This is your show,
+[17:27.16]  right? Let's ask QB
+[17:29.08]  >> Yeah.
+[17:29.32]  >> What What sponsors are most at risk of
+[17:31.24]  not renewing?
+[17:31.96]  >> Okay.
+[17:32.64]  >> No idea what he's going to say. Never
+[17:33.92]  asked. Um but QB has a lot of data.
+[17:36.32]  Let's find out. You probably wrote
+[17:37.72]  something else you were going to ask,
+[17:38.68]  right?
+[17:40.52]  >> I think it's a good thing to ask today,
+[17:42.24]  right?
+[17:42.56]  >> fail the task or it might surprise us.
+[17:44.84]  Let's find out what QB has to say.
+[17:52.44]  >> He's thinking.
+[17:54.68]  But while he thinks, I'll just show you
+[17:55.84]  guys around QB a little bit if you've
+[17:57.04]  never seen the front. You can go to
+[17:58.12]  salesforce-sponsors.com. You can play
+[17:59.92]  around with QB. He does
+[18:01.52]  You'll hit a wall eventually if you're
+[18:02.84]  not a sponsor of ours cuz you'll have to
+[18:04.20]  log in so that you don't get their data
+[18:06.08]  or anything weird like that, but you can
+[18:07.80]  see like he started as a dashboard, so
+[18:09.20]  he's still He's still our project
+[18:10.68]  management tool here. He's got all the
+[18:12.44]  information about the events. You know,
+[18:13.84]  there's certain sponsor loading times
+[18:15.44]  that they had here. This is where they
+[18:17.56]  all picked their
+[18:18.84]  their booth that on the floor that you
+[18:20.68]  see here now. These are all the things
+[18:22.68]  he did originally, which again, these
+[18:25.12]  are all things that a human had to do
+[18:26.68]  and he created these nice overlays for
+[18:28.44]  our maps, which our designer used to
+[18:30.12]  have to do, but now he can work on the
+[18:31.28]  stages and
+[18:32.80]  uh
+[18:33.76]  there's a lot he can do, but now he's
+[18:35.92]  So, here's his assessment.
+[18:38.28]  >> Who's at risk?
+[18:39.16]  >> Who's at risk? Uh
+[18:40.80]  Artisan, I That's a fair one. He's
+[18:42.52]  flagging that they they never really
+[18:44.32]  logged into And it's a
+[18:46.44]  He flagged
+[18:47.12]  >> That's a signal.
+[18:47.92]  >> And
+[18:49.00]  >> They never talked to me. They had a
+[18:50.08]  customer success. They never talked to
+[18:51.60]  me, right?
+[18:52.16]  >> talked to QB, but they did talk to me a
+[18:53.84]  lot.
+[18:55.04]  >> So, we lost that contact, okay? Okay,
+[18:57.28]  flag that one.
+[18:59.12]  >> Salesforce, interesting. He says they
+[19:01.00]  they were incomplete
+[19:02.92]  and they went dark for a little bit.
+[19:05.32]  That's a good flag, but again, I talked
+[19:07.00]  to the Salesforce team and so does David
+[19:09.08]  a lot.
+[19:10.68]  Google found same thing like these are
+[19:12.60]  folks we It's funny. He flagged all the
+[19:14.40]  people that we the human spend more time
+[19:16.32]  on than Mayjet.
+[19:18.88]  Uh there's a few others here, Pylon.
+[19:22.32]  >> Pylon complained the most to him.
+[19:24.08]  >> Okay, I saw that.
+[19:25.04]  >> That's why he said it cuz I asked him
+[19:26.12]  before cuz cuz QB reached out to all the
+[19:29.16]  spo- instead of a human reaching out to
+[19:30.52]  him, QB reached out on his own, talked
+[19:32.32]  to them, asked what their issues were,
+[19:33.72]  and how we could help. And Pylon said
+[19:35.72]  their logo was wrong and a bunch of
+[19:37.36]  other thing They complained a lot. So
+[19:39.12]  >> That's a medium risk.
+[19:40.00]  >> I can't quite read it from here, but I
+[19:41.16]  mean it sounds right. It's not a higher
+[19:42.76]  risk.
+[19:43.60]  >> It's a medium risk.
+[19:44.32]  >> checked the logo before it went live,
+[19:46.40]  but their amount of frustration was a
+[19:48.20]  signal
+[19:49.08]  >> yeah.
+[19:49.84]  >> that a human might not know how to rank
+[19:51.52]  properly or hide from or ignore, right?
+[19:53.60]  >> sure.
+[19:54.04]  >> Yeah.
+[19:55.16]  Any other interesting ones that he
+[19:56.20]  thought?
+[19:58.60]  >> Lightfield and Monaco never did their
+[20:00.28]  VIP nominations. That's a That's a good
+[20:02.76]  That's a fringe thing that we do for
+[20:04.20]  folks.
+[20:05.28]  We let our sponsors nominate some of
+[20:06.56]  their customers to come to SaaStr. He's
+[20:08.40]  saying they never did it, but they are a
+[20:09.96]  They're some of our top sponsors, and so
+[20:12.36]  maybe it's a it wasn't a high ROI for
+[20:14.48]  them.
+[20:14.92]  >> Okay.
+[20:16.20]  Ask QB one last question and we'll move
+[20:17.48]  on. You can do it I know it'll take a
+[20:18.56]  second. Um you don't even need to be in
+[20:19.96]  power mode, but keep it in there, right?
+[20:21.88]  Who What sponsors did you talk to that
+[20:23.44]  seemed happiest?
+[20:24.32]  >> Okay.
+[20:25.08]  >> It's the flip side, right? Let's just
+[20:26.28]  see what he says cuz he talked to them.
+[20:28.72]  >> What seemed
+[20:30.28]  He'll forgive my typos.
+[20:33.92]  >> This is why I think traditional customer
+[20:35.72]  success is just dead.
+[20:38.28]  They won't talk to 120 people and like
+[20:41.68]  all all they want is a commission on the
+[20:43.48]  renewal. They'll hide issues. They won't
+[20:46.16]  surface issues because it doesn't help
+[20:47.88]  them help them hit their number goal in
+[20:51.00]  the long run.
+[20:52.40]  Uh I think QB's better.
+[20:54.56]  Who's that Is this who's the happiest?
+[20:55.80]  Is that what he says?
+[20:56.36]  >> Yeah, so he says there's no explicit
+[20:58.60]  This is great signals in the chat yet,
+[21:00.40]  but here's who I think have the highest
+[21:01.80]  signals of satisfaction.
+[21:03.76]  Vivint cuz they wanted to post more on
+[21:05.52]  social.
+[21:06.72]  Launch Pad just returned a lot to the
+[21:08.36]  chats.
+[21:09.56]  Gamma
+[21:10.92]  seems pretty happy with what they're
+[21:12.16]  doing. They never pushed back, never
+[21:13.64]  escalated. That is a good signal
+[21:15.28]  actually.
+[21:16.68]  Then he lists out a lot of sponsors all
+[21:18.12]  at once.
+[21:19.24]  Asked once, got the answer and left
+[21:20.96]  pattern. So that's a good sign, too.
+[21:22.60]  They got what they needed from QB. And
+[21:24.56]  so he's saying that those folks are
+[21:26.12]  probably fine cuz they got them what
+[21:27.32]  they needed and they went on their merry
+[21:28.96]  way.
+[21:29.32]  >> Yeah.
+[21:30.80]  >> So pretty good then.
+[21:31.60]  >> I think this I know you guys think I
+[21:32.72]  think this is pretty good. And again
+[21:35.52]  this agent and agent's kind of a loose
+[21:37.88]  definition, but this agent's less than
+[21:39.44]  90 days old, right?
+[21:40.64]  >> Correct. Yeah.
+[21:41.80]  >> And again, it started off as a just
+[21:43.40]  dashboard to track assets.
+[21:46.04]  Almost a pre-AI workflow. There's a lot
+[21:47.92]  of asset trackers. If you're in the
+[21:49.16]  creative industry, you're doing
+[21:50.00]  anything. Now we can talk to it and it
+[21:52.68]  can identify issues and I think that
+[21:55.16]  analysis was pretty good. We never done
+[21:56.72]  it before. That was I just made that up.
+[21:57.88]  I didn't know I thought it was pretty
+[21:58.88]  good. I'm listening. Top 15% of CSMs
+[22:02.00]  I've ever worked with already. And you
+[22:03.80]  can already see looking at it, okay,
+[22:05.00]  that's good, but it lacks some of the
+[22:07.08]  context of the conversations that we
+[22:09.16]  had. And so we'll probably me and I will
+[22:11.12]  probably ramble think about that and
+[22:12.88]  we'll talk with QB later. How could we
+[22:14.88]  integrate some of that context, right?
+[22:16.88]  >> email.
+[22:18.24]  >> Well, for sure. A simple thing is to
+[22:19.40]  hook up to your email.
+[22:20.96]  We could hook up to
+[22:23.00]  Sorry, what's the application where we
+[22:24.12]  listen on your phone?
+[22:25.12]  >> Oh, WhisperFlow?
+[22:25.88]  >> WhisperFlow, any of these things that
+[22:27.28]  have APIs. Maybe we just hook them up.
+[22:29.08]  And actually, if they have an API, it's
+[22:30.12]  really easy. It goes and figures out
+[22:32.32]  what the best emails are in WhisperFlows
+[22:33.96]  in in 10 or 15 minutes. And maybe we ask
+[22:36.36]  again in a month. Maybe we'll do it on
+[22:38.36]  on the agents on our podcast and we'll
+[22:39.56]  say our complaints. We've never done it
+[22:40.92]  before, but I would already give that
+[22:42.44]  like a B. It missed a whole It only has
+[22:45.48]  the context it has. It missed the human
+[22:47.28]  side, but for the digital side
+[22:48.92]  >> Pretty good.
+[22:49.32]  >> It was pretty good in remembering all
+[22:50.40]  the chats it had with maybe 500 or 1,000
+[22:52.68]  people for shrinking issues and
+[22:53.96]  identifying them.
+[22:56.00]  Better than a human hiding from issues.
+[22:58.56]  So that's QB.
+[22:59.60]  >> That's QB. He's got an interesting uh
+[23:01.00]  API stack that differs from 10K. So,
+[23:02.80]  they they have a lot of crossover, but
+[23:04.48]  noticeably, too, he's got he's got
+[23:06.92]  Clerk is number one on the list cuz
+[23:08.16]  that's what we use for single sign-on.
+[23:09.72]  And so, that was what I thought I've
+[23:11.24]  talked about it previously. It's gotten
+[23:12.48]  easier in Replit now that it's native,
+[23:14.04]  but it used to be a little hard to
+[23:16.20]  actually hook that whole thing up. And
+[23:17.92]  I'm not again, I'm not a technical
+[23:19.08]  person. It was pretty hard for me to
+[23:20.12]  figure out single sign-on.
+[23:21.88]  But, I got it done in a weekend, and now
+[23:23.24]  it's even easier. And so, that one has
+[23:25.24]  remained top of the list cuz you got to
+[23:26.52]  imagine people are inviting other people
+[23:28.72]  to interact with QB, and they can just
+[23:30.60]  add it on their own. They can catch up.
+[23:32.36]  They can see what other folks are doing
+[23:33.60]  with QB within their org. And so, that
+[23:35.72]  one makes the top of the list for QB.
+[23:38.08]  >> Yeah, it's a pretty simple stack to get
+[23:39.52]  that much value. It's not even logging
+[23:40.92]  into Salesforce, is it?
+[23:42.20]  >> No, it's funny. When I It's funny when I
+[23:44.12]  went through it, I was like, all this
+[23:45.36]  time I really thought QB had Salesforce,
+[23:47.24]  which we'll hook up next.
+[23:48.92]  So, he can write some of this
+[23:49.80]  information back to it. But, he's an
+[23:51.68]  That's That answer he just gave you was
+[23:53.48]  without even having any Salesforce data.
+[23:55.08]  So, it'll get even better.
+[23:58.80]  We've already talked about this, so
+[24:00.08]  we'll move on to the next one. So, Annie
+[24:02.24]  is somebody you all know cuz this is our
+[24:04.44]  SaaS for Annual.com. Did not again, did
+[24:06.84]  not start as an agent much like QB and
+[24:09.24]  10K. Started as just a replacement cuz
+[24:12.16]  last year's SaaS for Annual.com was on
+[24:14.44]  Squarespace, and we were just limited by
+[24:16.88]  how much we could do on SaaS for
+[24:18.32]  Annual.com cuz we're not developers.
+[24:20.52]  We're not
+[24:21.08]  >> We're just limited to Squarespace. You
+[24:22.72]  can't vibe. You can't change it.
+[24:24.48]  All you can do is put images and some
+[24:25.80]  videos on
+[24:26.88]  It wasn't enough this year. So, we just
+[24:28.40]  I quickly built a V1 on Replit. It's
+[24:30.56]  okay. It has a little some purple
+[24:32.12]  gradients, but
+[24:33.84]  but we could get it to do whatever we
+[24:35.28]  wanted to do, right?
+[24:36.60]  >> Correct. Yeah. And so, again, started as
+[24:38.32]  a website. I don't even remember Oh, I
+[24:40.40]  guess I saw that I slide when we did it.
+[24:41.60]  But, now it does a lot for us, right?
+[24:43.60]  So, I asked actually our SaaS for Annual
+[24:45.96]  website, which we just call Annie cuz
+[24:47.36]  Annual,
+[24:48.92]  how it would describe itself as an agent
+[24:50.56]  cuz I was like, okay, 10K is our We call
+[24:52.64]  it our AIVP working. We call QB our AIVP
+[24:55.16]  you It it
+[24:56.48]  I said, Annie, what would you call
+[24:57.72]  yourself?
+[24:58.56]  >> Yeah.
+[24:58.76]  >> And it said it's our AI event producer
+[25:00.88]  hybrid because it's managing
+[25:03.00]  >> and what's the hybrid?
+[25:04.20]  >> I think hybrid of producer and also
+[25:07.48]  technical yeah, event manager it said it
+[25:09.88]  was and it was also our technical
+[25:11.84]  producer because it has all the website
+[25:13.80]  and the agenda stuff.
+[25:15.00]  >> I It's always interesting when you ask
+[25:16.80]  when you ask somebody including an agent
+[25:18.16]  what they want their title to be.
+[25:20.20]  Sometimes I remember asking Amelia years
+[25:21.80]  ago what title she wanted. She said VP
+[25:23.16]  marketing. She said I don't get that's
+[25:24.60]  your title. Came right out of her mouth
+[25:26.12]  when she started. Now she's CDA of Gus
+[25:28.44]  or but Annie came up with quite a title.
+[25:30.36]  >> It really
+[25:30.84]  >> Quite a title, yeah.
+[25:31.92]  >> I was like you're
+[25:32.52]  >> I've never I'm not sure that that spec
+[25:34.32]  is on job bite but I like it, yeah.
+[25:37.32]  >> I was like are you trying to say that
+[25:38.32]  you did some of the physical stuff?
+[25:40.48]  That didn't quite work out.
+[25:42.60]  But yeah, it was a little funny. But it
+[25:43.64]  does again, it runs I was like okay, but
+[25:45.68]  to your credit you are running the
+[25:46.84]  website, you're running the agenda, you
+[25:48.80]  are sending a lot of the sending
+[25:50.76]  newsletters you guys hopefully all read
+[25:52.28]  this morning, that's all coming from
+[25:53.52]  Annie.
+[25:54.00]  >> Yep.
+[25:55.24]  >> And then obviously I it
+[25:57.12]  became a gentle when I added this now
+[26:00.28]  famous parking passes app which was
+[26:02.80]  previously if you don't know the story
+[26:04.56]  for you guys to get a parking pass to
+[26:05.84]  come to Gus or
+[26:06.80]  we had to have a human on our team split
+[26:08.84]  up the 5,000 page PDF. So what I did is
+[26:11.68]  I first I just used Claude Philbrick to
+[26:13.56]  split up the PDFs at all the addresses
+[26:15.40]  to the bottom of the PDFs and then I
+[26:17.20]  hooked it up into Replit
+[26:19.08]  in our existing website at the time and
+[26:20.92]  said hey, can you help me create just
+[26:23.08]  some a gentle
+[26:24.80]  workflow so that you can automatically
+[26:26.60]  send a parking pass from this long doc
+[26:29.00]  of PDFs that's now been separated to
+[26:31.08]  people who need it. So when you guys
+[26:32.32]  request a parking pass, you just put in
+[26:34.00]  if you're an attendee, sponsor, speaker,
+[26:35.76]  how many days you need and then it sends
+[26:37.12]  you your parking pass automatically
+[26:38.44]  versus you guys having to Previously it
+[26:40.88]  was a form fill last year, fill out the
+[26:42.64]  form, wait for one of us to send you
+[26:44.76]  your parking pass and that took a while
+[26:46.64]  to
+[26:50.56]  >> in the bathroom, something else I think
+[26:52.56]  it's doing that I don't give it enough
+[26:53.72]  credit for is it because I've hooked it
+[26:55.60]  up to Vector, it can see our active
+[26:57.72]  website visitors and run targeted
+[26:59.52]  campaigns to folks based on what they're
+[27:01.28]  doing on the website. Qualify does a bit
+[27:02.72]  of that, too, so there's a little
+[27:04.60]  funnel action there, but this is Annie,
+[27:06.36]  built on Replit, first commit back in
+[27:08.00]  November, that's when we swapped off of
+[27:09.48]  Squarespace.
+[27:10.76]  He, she, or she and Annie has the most
+[27:13.84]  commits out of all of our agents and the
+[27:16.00]  highest amount of commits per day, and I
+[27:17.76]  think that's cuz we were just you know
+[27:19.32]  Saster AI economy became a living,
+[27:21.84]  breathing agent and kind of co-pilot for
+[27:24.08]  the event as it calls itself an event
+[27:25.96]  for this year versus it just literally
+[27:27.48]  being a website that was static.
+[27:31.56]  >> Can we do a Can I ask Annie some
+[27:32.60]  questions?
+[27:33.12]  >> Sure.
+[27:33.64]  >> You know what's interesting on the side
+[27:34.76]  I
+[27:35.52]  It's interesting these 46,000 lines of
+[27:37.60]  code. It doesn't really matter how many
+[27:38.60]  lines of code you have. I think again, a
+[27:40.48]  lot of engineers and maybe critical of
+[27:42.40]  it on X, but I wrote a Saster post
+[27:44.80]  literally 2 weeks ago about 10K.
+[27:47.32]  So that it was $257 a month and I think
+[27:49.72]  18,000 lines of code. Now we're adding
+[27:52.44]  apps inside of it, micro apps, another
+[27:54.24]  46, 50,000 lines of code.
+[27:57.32]  There's clearly some slop that has gone
+[27:59.08]  in if you've gone from 18, 16,000 lines
+[28:00.96]  of code to 45,000 a week.
+[28:03.52]  But it's also part of adding more and
+[28:04.76]  more apps in one scenario. That probably
+[28:07.40]  eventually will slightly break, but it
+[28:09.80]  is It's just as an aside, it is a lot of
+[28:12.16]  That's a lot of Going from 18 to 45 in 2
+[28:14.44]  weeks is uh If it kept going at that
+[28:16.96]  logarithmic or exponential rate, we we
+[28:18.84]  would have a larger code base than
+[28:20.96]  Salesforce or Meta. I mean, I'm
+[28:22.36]  exaggerating.
+[28:23.84]  Um
+[28:25.04]  Annie, cuz I Let's see how well it does.
+[28:27.52]  >> Okay.
+[28:28.64]  >> Write me a follow-up email to everyone
+[28:30.48]  at Saster AI 2026 trying to get them to
+[28:33.12]  come to 2027.
+[28:34.28]  >> Okay.
+[28:39.52]  >> See how it does.
+[28:43.16]  >> Since today is the last day
+[28:46.20]  and you are on stage, right? No.
+[28:50.24]  >> What did you say?
+[28:51.40]  >> Oh, I just told Annie write me a
+[28:53.16]  follow-up email to AI annual 2026 to
+[28:55.12]  come to AI annual 2027
+[28:57.64]  since today is the last day and you are
+[28:59.16]  on stage right now, smiley face.
+[29:00.96]  >> It's a little generic. Let's see how
+[29:02.04]  good it is.
+[29:02.68]  >> Okay, it said subject line, that's a
+[29:04.88]  wrap. It said it wrote it as you.
+[29:07.52]  >> Okay, which we didn't ask it to do.
+[29:09.28]  >> I didn't ask it to do that. It is
+[29:10.48]  interesting. Like I I ran this
+[29:12.52]  experiment the other day with like a
+[29:13.64]  final email to our database and I asked
+[29:15.92]  Annie to do an email to the database and
+[29:18.40]  then I asked 10K student emails to the
+[29:20.20]  database and see which one did better.
+[29:22.96]  It's funny, they were actually equal in
+[29:25.08]  like their conversion rates, but one of
+[29:27.08]  actually 10K wrote it as Jason and Annie
+[29:30.52]  wrote it as like one of those fully
+[29:31.84]  designed HTML emails,
+[29:34.32]  but the content was the Jason one was
+[29:37.32]  more like punchier, the Annie one was a
+[29:39.12]  little bit funnier, so it's a little
+[29:40.24]  funny now that now Annie has swapped to
+[29:42.36]  writing it as Jason.
+[29:44.80]  Um
+[29:46.16]  That's a wrap on Saster. Lock in 2027
+[29:48.44]  today at the lowest price we'll ever
+[29:49.72]  offer. Preheader, I'm writing this from
+[29:51.44]  the stage.
+[29:52.68]  2027 tickets are not live yet, but they
+[29:54.48]  will be later today
+[29:55.96]  and they'll never be cheaper than they
+[29:57.20]  are right now.
+[29:59.52]  I'm writing this from the stage at
+[30:00.64]  Saster AI annual.
+[30:02.80]  About to do the closing, so forgive the
+[30:04.40]  brevity. 10 days, 10,000 AI leaders, the
+[30:07.48]  CEOs of Clavio, Gamma, Webflow, Rubrik,
+[30:09.56]  Clean,
+[30:10.60]  all on one campus at the Deploy Summit.
+[30:13.20]  Six AI workshop tracks, the pitch comps,
+[30:15.08]  and more first meeting introductions
+[30:16.56]  than any week of the year. Thank you for
+[30:18.32]  being here. None of this works without
+[30:20.24]  you. Now the ask, come back next year.
+[30:23.28]  >> It was pretty good.
+[30:24.16]  >> It's pretty good.
+[30:24.72]  >> I it's not a 10 like that crazy Replit
+[30:26.72]  one where we pulled every attendee, but
+[30:27.88]  it's it's better than 95% of humans
+[30:30.12]  would do and it did it in minutes and
+[30:32.28]  you can see the context.
+[30:34.20]  It has the agenda built into it, right?
+[30:35.76]  So it's able to pull the speakers that
+[30:37.08]  we had this year. It knows the numbers
+[30:38.72]  of folks that are coming. Knows the type
+[30:39.84]  of tickets. Someone that joined your
+[30:41.68]  team on the marketing team last month
+[30:43.20]  will be unable to write this email in a
+[30:44.60]  week. They wouldn't know that unless
+[30:46.08]  unless they had could access five the
+[30:47.92]  data themselves. It's pretty good. I I
+[30:49.80]  think it's that that passes the test,
+[30:51.60]  right?
+[30:52.16]  >> You guys are going to get that email
+[30:53.12]  later.
+[30:54.00]  >> They might do this email. And then Annie
+[30:56.88]  and then I'll share a story with you and
+[30:58.04]  go Annie is So Annie's hooked into
+[31:01.72]  Bizzabo and recent.
+[31:03.60]  >> Anything else do you have a slide?
+[31:05.12]  >> It's not hooked into Salesforce.
+[31:06.68]  >> It's not hooked into Salesforce, but she
+[31:08.88]  is hooked up to Marketo to send like the
+[31:10.64]  attendee list over. Okay. For now.
+[31:13.36]  >> Annie has a different set of contacts.
+[31:15.04]  I'll tell you a quick story. Surprised
+[31:17.16]  me.
+[31:19.20]  I think it's interesting. So this
+[31:20.56]  morning we were coming to get here
+[31:23.28]  and I said to Amelia everything's been
+[31:24.56]  great I think it's been great.
+[31:25.52]  Congratulations Amelia, great job. I
+[31:27.52]  think it's an amazing job.
+[31:28.80]  >> Thank you.
+[31:29.20]  >> Um
+[31:30.44]  but there's been so much going on. I
+[31:32.00]  think I thought we forgot to remind
+[31:33.68]  folks to come to the Founder VC Brunch
+[31:35.44]  at 11:00 in the VC Lounge over there. I
+[31:37.48]  said she's You're right, I forgot. I'm
+[31:38.88]  like
+[31:40.40]  Can I ask 10K to do it real quick?
+[31:43.24]  Cuz it's risky. I'm doing it literally
+[31:44.48]  in five I'm sending an email in five
+[31:46.40]  minutes to a thousand something people,
+[31:48.12]  yeah. And but she gave me the permission
+[31:50.24]  because it's not high. What if the
+[31:51.36]  email's a little bit off? It's to you
+[31:52.88]  guys. It's not the end of the world. But
+[31:54.80]  what's interesting is but she says no,
+[31:55.96]  ask Annie cuz Annie sends better emails
+[31:57.68]  like you saw. So I said okay, go to
+[31:59.32]  Annie and I said Annie,
+[32:00.92]  please look at everyone coming that's
+[32:02.16]  either a VC, a founder, or CEO and
+[32:03.84]  invite them to the brunch. Annie's like
+[32:06.28]  I don't know how to do that. I only see
+[32:08.28]  17 people coming that are VCs or CEOs.
+[32:11.52]  >> I don't know what
+[32:13.68]  >> How come I don't have all the data? How
+[32:15.88]  do you think there's only 17 founder CEO
+[32:17.84]  VCs? And she I should have screenshotted
+[32:20.08]  an app. She was very direct that she's
+[32:21.44]  unable to do this. Like she's she's like
+[32:23.80]  Oh, you know what she said? You're going
+[32:24.68]  to have to upload me a spreadsheet for
+[32:26.24]  me to be able to do this job. I'm like
+[32:27.64]  you have access. So it's a reminder that
+[32:30.32]  agents they get confused. Their context
+[32:32.68]  is great, but so Annie had the great
+[32:34.44]  enough context to write a really good
+[32:35.76]  email with all the speakers and type of
+[32:37.44]  but it didn't it couldn't remember that
+[32:39.08]  it had access it couldn't put together
+[32:40.48]  so good. So then I go to 10K with me and
+[32:42.64]  he told me not to use.
+[32:44.20]  But 10K has access to even more of our
+[32:45.72]  sales force and others.
+[32:46.52]  >> the most.
+[32:47.04]  >> And then it's like no problem. It did a
+[32:48.60]  deep analysis. It it went through 10,000
+[32:51.28]  records here in in minutes. It pulled up
+[32:53.16]  all the founders VCs
+[32:55.72]  came up with a list and then it said
+[32:56.88]  hold on. I confuse light light field CRM
+[32:59.72]  with light speed venture fund. Those are
+[33:01.72]  not 55 VCs. Those are SDRs. I'm removing
+[33:04.28]  them from the list. Prepared the list
+[33:06.12]  and said can I send you a sample? Send
+[33:07.56]  me a sample. It was pretty darn good. It
+[33:09.00]  was about it was almost as good.
+[33:10.44]  >> Okay.
+[33:11.00]  >> And
+[33:12.20]  they said can I send it all to 1500
+[33:13.72]  people? Then it researched and said oh
+[33:14.76]  we've never used this version of the API
+[33:16.36]  at Resend to do a mass send. I
+[33:18.04]  researched it and it'll work fine.
+[33:19.52]  >> Yeah.
+[33:20.00]  >> Can I send it? I said yeah, send it.
+[33:23.40]  I I approved it.
+[33:25.04]  Great. It was a good email.
+[33:27.08]  >> But?
+[33:27.68]  >> But
+[33:29.40]  Annie used a prohibited email to send
+[33:31.56]  it. An email where you're not allowed to
+[33:33.20]  use from the sending. It's in the
+[33:35.00]  memory. It's in the rules. Broke a rule
+[33:37.56]  for multi years now.
+[33:39.72]  If you hired a marketing manager they
+[33:41.12]  might use an email they would they might
+[33:42.88]  use
+[33:44.16]  They might send email
+[33:46.04]  a gungho SDR might email people they're
+[33:47.88]  not supposed to email. And I I I will
+[33:50.32]  add this later and I said Annie how
+[33:52.60]  could you this is in the core memory how
+[33:54.28]  could you prohibit it? She's like
+[33:55.12]  there's no excuse.
+[33:56.68]  I did not I forgot to read the memory
+[33:59.24]  Annie said. I forgot to read the
+[34:01.32]  And then it's worse than Annie said it's
+[34:02.60]  worse than that. Because this is
+[34:04.48]  irreversible. When you send an email
+[34:06.20]  from the wrong address I cannot undo it
+[34:08.20]  she said. My job is to call in the
+[34:10.20]  architect and the way Replit works is
+[34:12.40]  Replit runs on Claude but when you have
+[34:14.52]  something complicated it actually brings
+[34:16.48]  in open AI 55 it calls it the architect
+[34:19.48]  for approval. It brings in a different
+[34:20.88]  model to look at something take another
+[34:23.36]  look at see and see if it's any good
+[34:24.68]  call the architect. It said there's no
+[34:26.20]  excuse this is exactly the thing I'm
+[34:27.60]  supposed to call the architect to and I
+[34:29.12]  didn't. I'm terribly sorry there's
+[34:30.92]  nothing I can do about it. What should I
+[34:32.40]  do? Uh sure, you want me to block
+[34:34.68]  anybody that emails you? She started to
+[34:36.52]  scramble for ideas. So,
+[34:39.56]  it's pretty interesting one that Andy
+[34:41.36]  couldn't do it even though it was
+[34:43.48]  a million that was better for regular
+[34:44.72]  that couldn't find it.
+[34:46.28]  Um
+[34:47.04]  10K did it, but because of the and it
+[34:49.44]  was partly my fault because of the
+[34:51.56]  pressure of time. I wanted to do this in
+[34:53.08]  an Uber coming here too fast. I didn't
+[34:54.96]  slow it down a little bit, but um when I
+[34:57.92]  started on this journey, this would have
+[34:59.56]  seemed like a huge issue to me. That's
+[35:00.80]  unacceptable. How could
+[35:02.72]  >> First, it wouldn't have gotten done.
+[35:04.12]  >> Yeah, we got but when I started on this
+[35:05.44]  journey, it would have bothered me
+[35:06.56]  because I'm like, how can you send to an
+[35:08.20]  email that is prohibited? But you got to
+[35:09.64]  step back. A human could have made this
+[35:11.52]  mistake, too, right? So, this is why
+[35:13.44]  you're going to get better. Remember I
+[35:14.88]  was reminding me slow it down just a
+[35:16.20]  little bit because these agents are so
+[35:18.00]  productive. Andy could have sent a
+[35:19.56]  thousand not just a thousand emails, but
+[35:21.36]  a thousand different emails by the time
+[35:23.24]  we started this session. There's no way
+[35:24.96]  I could have reviewed and interacted.
+[35:26.24]  And so, they not only did they come to
+[35:28.24]  different outcomes,
+[35:29.96]  you've got to spend more time with them.
+[35:31.72]  >> Yep.
+[35:32.16]  >> Because they will inadvertently in goal
+[35:34.00]  seeking cut corners. And it just And
+[35:35.76]  it's like there's no I'm sorry, there's
+[35:37.76]  no excuse. It's clearly you're not
+[35:39.64]  allowed to use this email address and I
+[35:40.88]  used it anyway. Um so, a story of the
+[35:43.20]  day. But humans do the same thing.
+[35:45.44]  >> Our agent is forgiven.
+[35:46.64]  >> Yeah.
+[35:47.11]  >> [laughter]
+[35:47.92]  >> Okay, I'm going to tell you about Amelia
+[35:49.40]  AI and also I think my Pokémon card is
+[35:51.08]  very cute, but
+[35:52.64]  All right, so Amelia AI launched last
+[35:54.60]  summer post post last after before this
+[35:57.04]  after.
+[35:58.20]  I wanted to solve some of the inbound
+[36:00.60]  issues we were having on then our
+[36:02.20]  Squarespace website which was we had a
+[36:04.52]  lot of folks and engagement on our SaaS
+[36:06.28]  from justsaas.com,
+[36:08.48]  but we weren't able to really fully
+[36:09.92]  capture a lot of it. I couldn't really
+[36:11.40]  do anything with it. To book a meeting,
+[36:13.20]  it was similar to a parking pass
+[36:14.56]  unfortunately. You had to talk tell our
+[36:17.36]  team in a contact form which sponsorship
+[36:19.88]  you wanted,
+[36:21.88]  how much like budget you had,
+[36:24.20]  and who we should follow up with. And
+[36:25.72]  then then I would personally round robin
+[36:27.84]  it as as quickly as I could which
+[36:29.56]  sometimes was not as quickly as I wanted
+[36:31.08]  to be and then one we had slightly more
+[36:33.44]  folks on the sales team and then I would
+[36:34.76]  round-robin it to one of our AEs and
+[36:36.64]  then our AEs would take a slight delay
+[36:38.60]  and then they would follow-up so it'd be
+[36:39.92]  like a kind of like two or three day
+[36:41.36]  process if you inbound it to our website
+[36:43.60]  so then
+[36:44.64]  we added a million AI which runs off
+[36:46.28]  qualified from Salesforce now.
+[36:49.04]  And she just does this automatically so
+[36:51.52]  we did spend a lot of time with my FDA
+[36:53.40]  qualified cam
+[36:56.04]  training her like going through again
+[36:57.64]  the nuances okay because it's for SAS or
+[36:59.60]  we have two different customer buckets
+[37:01.88]  right there's all of you guys so all of
+[37:03.20]  our our kind of like self-serve
+[37:04.76]  customers if you will that can just buy
+[37:06.20]  a ticket off the website but then
+[37:07.60]  there's all the spawn potential sponsors
+[37:09.20]  and current sponsors that are also
+[37:10.96]  hitting the website coming to the
+[37:12.00]  website looking for information so we
+[37:13.96]  built all that nuance context back into
+[37:16.60]  qualified when we first launched her so
+[37:18.28]  qualified I would say I put the most
+[37:20.48]  amount of training into it does also
+[37:22.24]  scrape sasurannual.com in real time
+[37:24.88]  sasur.com in real time so it's every day
+[37:27.64]  it's updating crawling all of our
+[37:28.92]  websites so that's why million AI is so
+[37:30.68]  good some of it is context I've built
+[37:33.08]  into her so anytime I push a release to
+[37:35.32]  10K cuber and I also try and make sure I
+[37:38.32]  push it to qualified if it's not already
+[37:39.84]  there if it's something on the back end
+[37:41.36]  I try and make sure I put it into her
+[37:42.68]  memory so she has it too.
+[37:44.72]  And that's why million AI is pretty good
+[37:46.00]  cuz she's got an all she's got maybe one
+[37:48.24]  of the biggest knowledge bases all of
+[37:50.20]  all of our agents.
+[37:51.20]  >> know it's the most trained agent we
+[37:52.32]  have.
+[37:52.44]  >> It's the most trained agent so that's
+[37:53.84]  why it's pretty good
+[37:55.52]  but you can see that knowledge
+[37:57.80]  she's a pretty good rep million AI
+[38:00.04]  she's booked a lot of meetings for us
+[38:01.56]  she's had 2.2.2.2
+[38:04.16]  >> down for a minute cuz it's so important.
+[38:05.40]  >> Yeah um
+[38:08.44]  >> The and every
+[38:10.08]  everyone should have an agent on your
+[38:12.00]  website automating inbound I'll get to
+[38:14.48]  that in a minute there's no excuse I'm
+[38:15.76]  shocked how many folks I've talked to
+[38:17.56]  that are running AI startups that just
+[38:19.80]  have a contact me form okay I'm going to
+[38:21.40]  come back to that next. But, by by
+[38:23.72]  adding a essentially adding AI to a
+[38:27.76]  old school Calendly or Chili Piper type
+[38:30.16]  link, we booked 614 good meetings out of
+[38:32.72]  that we did.
+[38:33.20]  >> Just for this annual
+[38:34.84]  >> Yeah, 614 meetings pro- and our average
+[38:37.48]  ticket size is about 85k.
+[38:40.12]  So, that's pretty pretty good pretty
+[38:42.08]  high ROI to book 614. Now, obviously
+[38:44.24]  they didn't all close or we'd have 60
+[38:46.32]  million worth of sponsors here instead
+[38:48.24]  of 10 million.
+[38:50.76]  That's pretty efficient agent, right?
+[38:52.20]  Pretty good pretty good, right? And
+[38:53.72]  almost zero complaints booking it this
+[38:55.64]  way, right?
+[38:56.56]  >> The only way was like sometimes uh
+[38:59.40]  like she so she'll right right now
+[39:00.96]  she'll round robin to her up so myself
+[39:02.72]  but primarily David and so it's weighted
+[39:04.56]  heavily to book it'll book a lot most
+[39:06.52]  with most of the meetings to David cuz
+[39:08.00]  that's how I programmed her round
+[39:09.04]  robining and then some of the meetings
+[39:10.64]  with me. Like if I happen to be free
+[39:12.88]  or if it's if it's kind of categories
+[39:15.32]  I'm good at at closing deals
+[39:17.64]  which is like you know the gammas the
+[39:19.28]  >> It weighs that?
+[39:20.12]  >> It weighs that. Yeah, it weighs like the
+[39:22.24]  it weighs our salesforce data.
+[39:24.60]  Like okay, what does Amelia close the
+[39:26.00]  most of type of sponsors? What does
+[39:27.72]  David close the most of? Which David has
+[39:29.20]  a big mix cuz he just has a lot of the a
+[39:31.20]  lot of the customer base. But mine's
+[39:33.56]  pretty more nuanced so it kind of
+[39:34.76]  weights that and then it'll say, "Okay,
+[39:36.88]  for a while it was giving me all the
+[39:38.80]  Agented companies cuz it was like, "Oh,
+[39:40.20]  David has a lot of like old school
+[39:41.72]  companies." So it was giving me all the
+[39:43.80]  Agented companies is like, "Give Amelia
+[39:45.56]  AI real Amelia all the Agented
+[39:48.40]  companies." I was like, "No, no, no,
+[39:49.32]  that's going to be a everybody doing.
+[39:50.44]  You got to stop weighing against that."
+[39:52.32]  And so it was pretty funny for a while.
+[39:53.68]  So, we opened it up but she'll weigh
+[39:55.56]  against that and kind of book our
+[39:57.24]  meetings accordingly which is pretty fun
+[39:59.08]  and then
+[40:00.12]  it's funny our I think our I think I got
+[40:02.04]  a now that Slime Bot is hooked up it was
+[40:04.84]  like, "Hey, you should get back in the
+[40:06.96]  round cuz I'm off the round robin for
+[40:08.60]  the last like 2 months." It was like,
+[40:10.00]  "Hey, do you want to put yourself back
+[40:11.08]  on the round robin and qualify?" I was
+[40:13.64]  like, "Maybe in 2 more weeks but it it
+[40:16.16]  was pretty funny."
+[40:16.92]  >> I want to ask you about this. Is there
+[40:17.96]  any Is there anything worth seeing
+[40:19.12]  itself? Do you have a This is one we're
+[40:20.48]  going to look at live or not?
+[40:21.56]  >> In Qualified? I do. I
+[40:22.92]  >> But so let me let me just Sorry, just to
+[40:24.56]  go back to your brand. Let me just
+[40:25.44]  understand that slide. Cuz this is new
+[40:27.92]  to me, too, guys.
+[40:29.32]  675,000 meetings we're going to do. 2.25
+[40:32.80]  million sessions on annual.com and
+[40:35.60]  saster.com together, probably?
+[40:37.52]  >> The annual Just the annual.
+[40:39.40]  >> Just the website for this event had 2.25
+[40:42.20]  million sessions?
+[40:43.16]  >> I think so. Maybe it's Saster annual,
+[40:45.00]  too. Or saster.com, too.
+[40:47.20]  >> I don't think so. And 402 So,
+[40:49.96]  interactions is probably individual
+[40:51.40]  chats with the agent. 402,000
+[40:54.04]  chats the agent handled. Um that's not
+[40:56.12]  That's pretty pretty effective. Um
+[40:58.40]  I want to So, let me let me show you if
+[40:59.88]  there's anything to see. Just But the
+[41:01.00]  point I want to make is
+[41:02.48]  To me, this seems like the most Captain
+[41:04.32]  Obvious thing to do. I'm shocked that
+[41:06.48]  100% of people don't do it. Replace
+[41:09.00]  whatever you have at least on the part
+[41:11.60]  of your websites that where you're
+[41:12.84]  trying to interact with prospects and
+[41:14.44]  leads, and have an agent that qualifies
+[41:16.56]  them, that's extremely well trained.
+[41:18.36]  It's so much better for the prospect and
+[41:20.00]  the customer to talk Okay, do Should I
+[41:22.64]  sponsor Saster? I'm whoever. I'm
+[41:26.16]  I'm
+[41:27.04]  I'm Monica. Is there anybody like me
+[41:28.80]  doing AI sales agents here? Yes, there's
+[41:32.12]  10 other folks doing like this, right?
+[41:34.12]  How Here's my ICP. Here's what I want.
+[41:36.52]  Here are the agents. It should be able
+[41:37.84]  to answer all your questions honestly
+[41:39.56]  without drama, and give you all the data
+[41:41.20]  that you want that is fresh. It's not
+[41:42.56]  dated. It's not last year's prospectus
+[41:44.08]  or data. And then it can decide with
+[41:46.32]  some intelligence who to send that lead
+[41:48.24]  to in real time, and they can schedule
+[41:49.52]  the meeting instantly with the agent.
+[41:51.68]  Like it's You saw the metrics. We could
+[41:53.72]  We have two and a half three people. We
+[41:55.12]  could never hit the number of metrics
+[41:56.56]  that you saw, the 2 million sessions,
+[41:57.76]  600 something employments. We would need
+[41:59.56]  like three BDRs that would quit every
+[42:01.64]  three months. So, I know this is like
+[42:04.32]  Qualified is not the only vendor.
+[42:05.60]  There's plenty of other vendors. Just
+[42:06.68]  buy somebody that does this, train the
+[42:09.04]  agent, and I can't imagine you won't
+[42:10.64]  have a lift versus a crappy chatbot.
+[42:12.96]  >> Yeah. Uh two things I'll just briefly
+[42:14.72]  show on Qualified. So, this is her
+[42:16.20]  context studio just for annual. So, if I
+[42:18.72]  just show you guys the top travel here
+[42:20.20]  if you can see it. There's annual,
+[42:21.72]  there's London which it was on, and then
+[42:23.16]  it has a slightly different one for
+[42:24.36]  annual in person which is the demo
+[42:25.64]  counter over there. Because we just
+[42:27.20]  wanted to compact her memory a little
+[42:28.56]  bit for SaaStr annual. We were like, she
+[42:30.04]  doesn't need to have all of SaaStr.com
+[42:32.32]  in her brain for SaaStr annual. So, we
+[42:34.32]  we kind of toned her back for the
+[42:35.48]  in-person one so that you guys would
+[42:36.64]  have better interactions with Amelia AI
+[42:38.64]  when you ask her about more like venue
+[42:40.00]  specific things versus things on
+[42:41.72]  SaaStr.com. Um but this is her brain.
+[42:43.84]  You can see she literally was updated
+[42:45.16]  this morning automatically. So, she's
+[42:46.72]  pulling in sessions that we updated on
+[42:48.52]  the website. So, that again, if you ask
+[42:50.28]  her a question and I made a change on
+[42:52.24]  Annie with our SaaStr annual website,
+[42:54.08]  Qualified already knows this. So, she's
+[42:55.40]  going to give you the right answer if
+[42:56.28]  you say, "Hey, where did this session
+[42:58.00]  move to? What's the agenda for today?"
+[42:59.72]  She can give you that right answer. Uh
+[43:02.16]  which is pretty cool. And then another
+[43:03.28]  cool thing it does is it does do a lot
+[43:04.80]  of email campaigns for us. So, you guys
+[43:06.16]  probably got some of these email
+[43:07.88]  campaigns. So, you'll see here, she's
+[43:09.04]  got two basic like
+[43:11.04]  I don't know if you call it top of
+[43:11.92]  funnel, middle funnel, whatever funnel.
+[43:13.80]  Um but she's got two uh
+[43:16.32]  uh triggered campaigns here that the
+[43:18.08]  agent will do automatically based on
+[43:19.56]  what you do with her either on the
+[43:20.72]  website, whether you chat with her or
+[43:22.20]  not. Uh she has these two top performing
+[43:25.72]  uh trigger campaigns as I call them. So,
+[43:27.28]  one is for sponsors. So,
+[43:29.00]  if you visit the sponsor page and you
+[43:31.00]  don't quite fill it out, but we know who
+[43:32.52]  you are either in Marketo or Salesforce,
+[43:34.48]  the agent will send you a follow-up and
+[43:35.68]  say, "Hey, do you want to book a meeting
+[43:36.84]  with David? Here are some similar um
+[43:39.60]  um similar companies um and the that are
+[43:42.28]  current sponsors of yours. Here's the
+[43:43.84]  meeting router to book the meeting. It
+[43:45.56]  also will exclude anybody who's a
+[43:46.96]  current sponsor so that if they were
+[43:48.44]  just browsing the website cuz they're a
+[43:49.68]  current sponsor, maybe don't send them,
+[43:51.72]  "Hey, do you want to sponsor?" cuz
+[43:52.72]  they're already a sponsor.
+[43:54.04]  >> So, if you don't finish, if you don't
+[43:55.88]  finish the flow and ask to talk to a
+[43:57.52]  human, but you started, the agent will
+[43:59.48]  follow up. It'll find It'll find similar
+[44:01.44]  customers, lookalikes.
+[44:03.28]  >> Yep.
+[44:03.80]  >> It will make sure you're not already a
+[44:05.24]  customer, and then it will follow up on
+[44:06.72]  its own with you, right?
+[44:08.20]  >> yeah.
+[44:08.72]  >> Yeah, no human can do that.
+[44:10.28]  >> Just no.
+[44:12.24]  Uh and then similar thing for um
+[44:14.20]  tickets, maybe I reversed them there in
+[44:15.96]  my mind, but uh similar thing for
+[44:17.48]  tickets. So, if you hit the website and
+[44:18.64]  we know who you are, and you don't buy a
+[44:20.24]  ticket, uh but we know through either
+[44:22.40]  like website tracking, geolocation, or
+[44:24.80]  you're already in our salesforce, uh it
+[44:26.52]  will email you a VIP code, which a lot
+[44:28.96]  of you used to come to Zastro. So, it
+[44:30.60]  sold hundreds of thousands of dollars of
+[44:32.32]  tickets by either you if if you talked
+[44:34.40]  to Amelia AI on the website, she gave
+[44:36.12]  you a code, and then if you didn't use
+[44:37.84]  it, she followed up with you. And if
+[44:39.28]  you're on the website, and maybe you
+[44:40.60]  didn't interact with her, but it's been
+[44:41.76]  a couple days, and now you're visiting
+[44:43.00]  the website again, she would just send
+[44:44.44]  you a VIP code to try and get you to
+[44:45.80]  come to Zastro. So,
+[44:47.48]  pretty good.
+[44:48.80]  >> It It doesn't It's a niche thing. It One
+[44:50.28]  interesting thing it does
+[44:53.16]  that I think
+[44:54.32]  is hard for humans is it actually And
+[44:57.52]  again, this wouldn't work with
+[44:58.92]  enterprise deals, but it automates
+[45:00.76]  discounting.
+[45:01.60]  >> Correct.
+[45:02.28]  >> So, there are
+[45:04.24]  most folks one way or another keen here
+[45:06.24]  with the discount. We would like not to
+[45:08.56]  do it, but it's such a piece of human
+[45:10.08]  psychology we can't help it. If you buy
+[45:11.92]  a ticket tomorrow, you're going to get
+[45:13.28]  by far the cheapest price ever. Do
+[45:15.20]  everybody a favor, buy a ticket
+[45:16.48]  tomorrow. It'll be half price, so that's
+[45:18.44]  an inherent discount. But no matter what
+[45:20.16]  the price is, we have so much data over
+[45:21.60]  the years that says it's better to mark
+[45:22.96]  it up 20% and give people a 20%
+[45:24.84]  discount. We hate it. As bad as we hate
+[45:27.32]  it, we have the data to prove you have
+[45:28.84]  no choice, right? It It's a
+[45:30.76]  So, but what we can do is rather than
+[45:32.44]  like humans forget a code or make
+[45:34.12]  up, if you ask for it, the agent just
+[45:36.12]  gives you the right discount. And it can
+[45:37.84]  change over time going up to that.
+[45:39.08]  There's no reason to give people a
+[45:39.92]  discount today, the three people that
+[45:41.60]  will buy a ticket today. There's no
+[45:42.76]  reason, right? And it just because you
+[45:45.48]  can't We'd all love to not have
+[45:47.32]  discounting, but to truly guardrail it
+[45:49.48]  so it's automated, it's a gift because
+[45:51.52]  it removes friction from the sales
+[45:52.92]  process. And it's again, I don't think
+[45:54.68]  humans are able to do this. And almost
+[45:57.04]  all, especially sales reps, when they
+[46:00.00]  have no ability to close a deal, they'll
+[46:01.76]  instantly discount again. When they
+[46:03.56]  smell when a human smells a deal going
+[46:05.60]  away and they already gave you 20% off,
+[46:07.80]  the next answer is "Will you buy my
+[46:09.48]  product for 25? Are you listening? You
+[46:11.80]  don't have a core integration I need.
+[46:13.40]  How about 30% off?" Uh "I think I'm
+[46:15.92]  going to buy a competitor. How about 34%
+[46:17.92]  off?" And it doesn't move the needle. It
+[46:20.28]  creates a lot of issues. So, you can
+[46:21.28]  create guardrails here. I didn't get the
+[46:23.44]  throwouts. I watched what um
+[46:26.12]  Amelia AI was doing. It's super
+[46:28.12]  efficient because it removes all the
+[46:29.04]  drama from discounting, right? It's
+[46:30.56]  almost like a uh a
+[46:32.52]  a pseudo CPQ system, um but it does it
+[46:35.32]  in real time because you have rules,
+[46:36.72]  right?
+[46:37.12]  >> Yep.
+[46:38.32]  Just a couple of these I'm going to
+[46:39.48]  touch on cuz I don't want to get Adam up
+[46:40.88]  here so he can do his uh demo.
+[46:42.44]  >> out of time.
+[46:43.56]  >> Okay, I'll talk a little bit about Agent
+[46:44.60]  Force. I showed it a little bit with
+[46:45.84]  Adam Alfano, who was here yesterday. Uh
+[46:47.80]  was the president of SMB. Um
+[46:50.32]  this is actually the This is actually
+[46:51.84]  the 1.0 Agent Force builder. There's a
+[46:53.40]  better one now that we're on. Um
+[46:55.80]  Cuz Lizzie just upgraded me, but
+[46:57.92]  the I think the goal here of Agent Force
+[47:00.16]  What I learned this week actually was I
+[47:02.44]  think a lot of us are like, "Okay, it's
+[47:03.76]  Salesforce, so it's going to be really
+[47:05.00]  hard to deploy Agent." Like, "All the
+[47:07.08]  other things that Adam put into
+[47:08.24]  Salesforce were kind of hard. Like, how
+[47:10.12]  easy can it be to get my Agent Force up
+[47:13.00]  and running?" And there's a nuanced
+[47:14.80]  quick answer I'll give you, which is
+[47:16.60]  one, how we use our Agent Force, which
+[47:19.00]  is for ghosted leads, is a very bounded
+[47:22.44]  use case right now. We will use it for
+[47:24.28]  other things, but right now King Boo's
+[47:25.92]  really good at Agent Force at reviving
+[47:28.40]  leads we never followed up with. Um some
+[47:31.08]  of them are still older leads. Some of
+[47:32.28]  them are still newer leads where he's
+[47:33.72]  doing more of a reengagement campaign of
+[47:35.92]  leads who maybe said no to me and David,
+[47:37.96]  and he's going back out to them later
+[47:39.16]  and be like, "Hey, do you want to just
+[47:40.12]  come this after and see what it's like
+[47:41.56]  for next year?" And so again, he's his
+[47:44.20]  primary goal is to follow up with folks
+[47:46.48]  that didn't give us a yes. Um
+[47:48.68]  But I really like Agent Force because to
+[47:50.12]  that point now, one, it's gotten a lot
+[47:51.44]  better since we launched it back in
+[47:52.72]  October. There's a 2.0 builder. Um
+[47:55.52]  it has the highest open rate. And why is
+[47:57.84]  that just quickly I'll touch on is
+[47:59.32]  because it has all of our sales force
+[48:00.68]  data and so it's got a lot of now also
+[48:03.48]  it has all of our qualified data since
+[48:05.52]  call or since sales force bought
+[48:06.96]  qualified and momentum which we were
+[48:08.92]  using a separate agent so now it's got
+[48:10.40]  all of that in it and so it's got the
+[48:12.24]  most context automatically everything
+[48:14.48]  you guys just saw on qualified
+[48:15.72]  >> kept asking Emily is this one related to
+[48:17.12]  sales force is this one related to it
+[48:18.64]  The agent force the advantage is if you
+[48:20.40]  run on sales force
+[48:21.44]  >> It's not
+[48:21.84]  >> will be true when hubspot finally
+[48:23.12]  launches agents But it has every it has
+[48:25.00]  it all so you can do it in agent force
+[48:28.08]  Uh maybe do it in agent force right
+[48:29.80]  >> Yeah
+[48:29.84]  >> But you can because it's got and if
+[48:31.28]  you're on if you're on sales force
+[48:32.48]  because it just has the maximum context
+[48:34.68]  right
+[48:35.08]  >> is a path of least resistance and I know
+[48:36.88]  the team over there at the booth will
+[48:37.84]  help you get set up
+[48:38.68]  >> Yeah
+[48:39.20]  >> Today if you want them to
+[48:41.52]  So it it really okay it just has a lot
+[48:43.40]  of context you don't have to move things
+[48:44.72]  from one place to other if you were
+[48:46.12]  already using things like qualified or
+[48:47.68]  momentum it just got even better
+[48:49.08]  honestly kind of overnight
+[48:50.52]  >> Yeah
+[48:50.68]  >> And so it was a gift that they bought
+[48:52.08]  those agents we purchased you see
+[48:53.92]  >> So are are we out of time in this one
+[48:55.56]  >> Uh I would I just want to hit artisan
+[48:57.24]  and momentum real quick if that's okay
+[48:58.92]  >> Uh Okay Artisan how do we use artisan so
+[49:01.96]  Ava who you guys have seen in the booth
+[49:03.36]  too we use her for slightly warm
+[49:05.60]  outbound and so a lot of campaigns that
+[49:08.00]  are not in qualified not in agent force
+[49:10.88]  we listen we have a big go to market
+[49:12.56]  motion here for I'm realizing we have a
+[49:14.64]  lot of different agents that do a lot of
+[49:15.96]  different nuance things
+[49:17.84]  we use Ava for what I call slightly warm
+[49:19.84]  outbound so these are folks where we
+[49:21.96]  have
+[49:23.20]  Past sponsors past customers past
+[49:25.28]  attendees if you will Um between
+[49:27.08]  attendees and sponsors and I would go
+[49:28.96]  into things like okay if their email is
+[49:30.60]  still valid cool we can load it into Ava
+[49:32.92]  she can interact with them if if they're
+[49:35.00]  if they've moved on she can help find
+[49:36.44]  like the right contact information
+[49:37.68]  whatever
+[49:38.64]  and she can also build look-alikes which
+[49:40.32]  it's pretty good at and then she can
+[49:42.20]  help us I use this primarily for us on
+[49:45.08]  the ticket side so if you have something
+[49:46.48]  that's a lower ASP you can use something
+[49:48.72]  like an artisan to do as I call it
+[49:50.92]  As I call it lukewarm
+[49:53.24]  outbound as a sales agent cuz she again
+[49:55.96]  she she's also hooked up to the website
+[49:57.56]  so she knows everything we've done. I
+[49:59.40]  get really segmented with Ava so I give
+[50:01.64]  her super specific campaigns like here
+[50:03.92]  are alumni of SaaStr Annual 2024.
+[50:07.20]  Here's what was different about 2024
+[50:08.96]  specifically versus now 2026 so that
+[50:11.40]  when you email these people you have
+[50:13.24]  that specific context to use in your
+[50:15.08]  emails when you're doing their
+[50:16.44]  follow-ups.
+[50:17.72]  >> Yep. And one insight I had to synthesize
+[50:19.76]  all
+[50:20.04]  >> is an all right just about out of time.
+[50:21.08]  Like yeah. So I'm going to
+[50:22.96]  I was having a conversation with an AI
+[50:24.56]  CEO last night that their own product is
+[50:26.84]  kind of at the bleeding edge and um and
+[50:29.64]  also had a marketing and synthesize
+[50:31.36]  everything they're like oh this doesn't
+[50:32.48]  work we haven't gotten this to work. And
+[50:34.24]  I went through one simple heuristic with
+[50:35.80]  her with both of them that the head of
+[50:37.28]  marketing and the CEO
+[50:38.88]  for your A another way to think about
+[50:40.08]  this you have your A leads. Your A leads
+[50:41.64]  are so hot a human's going to follow up
+[50:43.20]  but in 60 seconds. Like someone comes in
+[50:44.92]  and says I want to buy a million dollar
+[50:46.44]  sponsorship or half million even your
+[50:49.08]  laziest rep is feeling out there at the
+[50:51.52]  mall or watching movies is going to
+[50:53.16]  respond to that email in 60 seconds.
+[50:54.92]  Like I got a million dollar budget I'd
+[50:56.52]  like to sign today. Don't put an AI on
+[50:59.52]  those accounts. Put it on the B leads.
+[51:01.36]  The B leads are the ones
+[51:03.12]  that have some signal some score but
+[51:06.00]  they're not worth the a human's time in
+[51:08.44]  your organization. Every organization of
+[51:10.84]  size humans will just not follow up with
+[51:12.44]  the B leads. The C or D leads may or may
+[51:14.88]  not have gold in them it's a topic we'll
+[51:16.52]  run out of time on but put or something
+[51:18.92]  like Artisan on the ones already in your
+[51:20.64]  database that you have contacts with
+[51:22.88]  that have some score some signal but a
+[51:24.96]  human it's not worth a human's time.
+[51:26.76]  That's 500K in gold for us. Okay? This
+[51:29.56]  is not we don't have a business or even
+[51:31.16]  a business but we need the 500,000 so
+[51:32.80]  you you can eat. Okay? Without 500,000
+[51:35.32]  it'd be bring your own sandwich. Okay?
+[51:37.44]  The Artisan got us an extra 500,000
+[51:40.08]  dollars so they didn't have to That's
+[51:41.12]  the B leads. You said
+[51:42.96]  I want Let me hold you one more of the
+[51:44.08]  break but that if you think Think it
+[51:45.28]  that way and you train it you'll realize
+[51:46.88]  it's going to work because you have B
+[51:48.68]  leads in your database.
+[51:50.00]  >> Yeah. Um I haven't even Arisen a lot of
+[51:51.92]  content. We can do that one more later.
+[51:53.80]  I can maybe squeeze some I can help
+[51:55.76]  answer questions for the AMA later. I
+[51:57.44]  don't know when. Okay, Monaco, this is
+[51:59.24]  our last one, our newest one. So,
+[52:01.12]  Monaco, who's also here, uh
+[52:03.76]  references
+[52:05.40]  I found it Oh, I did a little copy paste
+[52:07.40]  error there. Um the Monaco is the one
+[52:10.32]  that you guys can see here. This one I
+[52:11.92]  put on cold outbound. So, even though
+[52:13.68]  Artisan can do cold outbound, the reason
+[52:16.04]  I like Monaco work is technically we're
+[52:18.84]  not their ICP cuz we have this giant
+[52:20.88]  Agent Stack, Sam will be the first
+[52:22.24]  person to tell you this. But, I like it
+[52:24.00]  because I basically gave it the best
+[52:25.72]  sponsors across all the years, and it
+[52:27.68]  said, "Amelia, I got it."
+[52:30.44]  It took all of our ICP data, all of our
+[52:33.32]  close one history. Uh we did have to
+[52:35.28]  export it from Salesforce, which is a
+[52:36.48]  little nuance, but uh and then Monaco
+[52:38.64]  auto just automatically found lookalikes
+[52:40.64]  and booked a bunch of meetings, closed
+[52:42.16]  us some pretty big logos still for
+[52:43.64]  Salesforce in a very short amount of
+[52:45.24]  time. So, this is the one that I think
+[52:47.28]  idles the least amount of time out of
+[52:49.52]  all of our agents cuz it is
+[52:50.96]  self-filling. It'll just keep going out
+[52:53.04]  to different ICPs. It'll keep filling
+[52:54.84]  your funnel. And so, I like Monaco for
+[52:56.68]  that reason cuz I really don't have to
+[52:57.84]  think about it, which is quite nice.
+[52:59.64]  >> Yeah.
+[53:00.48]  >> So, that's why we added to our stack
+[53:01.72]  even though it's not I know we're not
+[53:03.12]  their ICP and it's not perfect, but I
+[53:04.72]  really like it.
+[53:05.96]  >> Yeah, it's a We're out of time, and
+[53:07.52]  we'll do another follow-on deep dive,
+[53:09.00]  but the Monaco one is cool because it
+[53:10.92]  fills its own funnel.
+[53:12.40]  If you can get it to work, if you can
+[53:13.56]  train it, if they think you're the ICP,
+[53:15.80]  it is the only tool we right now that
+[53:17.44]  that constantly fills it with
+[53:19.08]  lookalikes. It's just doing a clever use
+[53:20.72]  of lookalikes. And as you dig into these
+[53:22.16]  things, just like B leads are good for
+[53:24.12]  SDRs,
+[53:25.60]  some of the art underneath is just
+[53:26.84]  getting good at lookalikes. If your
+[53:28.24]  sponsor
+[53:29.40]  is is Oracle, is Light Field like in
+[53:31.52]  that their sponsor is Salesforce, why
+[53:32.84]  isn't HubSpot here? They should be here.
+[53:34.76]  But, it's not that hard to figure out
+[53:36.00]  that since everybody but HubSpot is
+[53:37.56]  here, they should be here, right? And
+[53:39.36]  so, maybe the team followed up with the
+[53:40.72]  wrong person at HubSpot. So, Monaco will
+[53:42.28]  say, "We'll go out and figure out, okay,
+[53:44.28]  who is the right person at HubSpot to
+[53:45.68]  talk to?"
+[53:46.92]  And what it did a real instantly good
+[53:48.60]  job of then we got a break. That deal
+[53:50.04]  may or may not close, but it instantly
+[53:51.76]  identified a really good buyer and gets
+[53:53.80]  you a meeting, okay? So, this whole
+[53:55.96]  look-alike thing, it's actually not that
+[53:58.32]  A lot of this stuff, if you you're going
+[54:00.04]  to realize in a year is not that
+[54:01.16]  complicated, okay? It's just clever. And
+[54:03.72]  these What you saw today when you looked
+[54:05.24]  at the back ends of a lot You saw forms
+[54:07.64]  that look like other forms for web. It's
+[54:09.88]  the There There's some clever wrappers
+[54:11.92]  and guardrails and things, but you can
+[54:13.40]  do all of this yourself. You can do it
+[54:15.24]  all yourself, so. Thanks, everybody. All
+[54:17.64]  right. Thanks, everybody.
+[54:22.12]  >> Costs can add up quickly when you start
+[54:23.40]  a business. So, stop paying for five
+[54:25.04]  different services. Northwest Registered
+[54:27.04]  Agent gives you a complete business
+[54:28.52]  identity in one place with free tools
+[54:30.80]  and resources to actually launch your
+[54:32.32]  business for real. Get more [music] at
+[54:34.20]  northwestregisteredagent.com/saasterfree.
+[54:37.36]  That's northwestregisteredagent.com/s a
+[54:38.24]  a s t r f r e e.
+[54:45.32]  EY knows you don't start a company to
+[54:46.72]  burn cycles on regulatory hoops or
+[54:48.64]  discounted cash flows, [music]
+[54:50.04]  but you can't ignore it. That's how risk
+[54:51.64]  compounds. What you can do is work with
+[54:53.92]  EY. They'll help you get it right early
+[54:55.96]  so you can stay in builder mode. Go to
+[54:58.04]  ey.com/techstartups
+[54:59.80]  to learn more.
