@@ -9,7 +9,7 @@ import subprocess
 group_path = "/Users/yongjiexue/Documents/GitHub/youtube-transcript-pipeline/transcripts/subagent_tasks/group_07.json"
 clean_base_dir = "/Users/yongjiexue/Documents/GitHub/youtube-transcript-pipeline/transcripts/clean_transcripts"
 api_key = "AIzaSyDPgHA3CXNvTwaMjmHrNpWUQh7XxhiRnzI"
-model_name = "gemini-2.5-flash-lite"
+model_name = "gemini-3-flash-preview"
 
 def get_video_title(filepath, filename):
     try:

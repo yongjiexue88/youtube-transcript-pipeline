@@ -7,7 +7,7 @@ import subprocess
 import requests
 
 API_KEY = "AIzaSyDPgHA3CXNvTwaMjmHrNpWUQh7XxhiRnzI"
-MODEL = "gemini-2.5-flash-lite"
+MODEL = "gemini-3-flash-preview"
 GROUP_JSON_PATH = "/Users/yongjiexue/Documents/GitHub/youtube-transcript-pipeline/transcripts/subagent_tasks/group_03.json"
 CLEAN_TRANSCRIPTS_DIR = "/Users/yongjiexue/Documents/GitHub/youtube-transcript-pipeline/transcripts/clean_transcripts"
 TEMP_SUMMARY_PATH = f"/Users/yongjiexue/Documents/GitHub/youtube-transcript-pipeline/transcripts/temp_summary_{os.getpid()}.txt"

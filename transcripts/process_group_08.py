@@ -65,7 +65,7 @@ Format your response exactly as a markdown block with the video title as the hea
 Write the analysis in Chinese, keeping technical terms or product names in English where appropriate. If the video is a general tutorial/advice rather than a case study of a specific startup, note that it's a general topic and summarize its key takeaways within the questions above, referencing examples given in the video.
 """
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key={api_key}"
     headers = {"Content-Type": "application/json"}
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
@@ -75,8 +75,8 @@ Write the analysis in Chinese, keeping technical terms or product names in Engli
         }
     }
 
-    backoff = 2
-    for attempt in range(10):
+    backoff = 3
+    for attempt in range(8):
         try:
             response = requests.post(url, headers=headers, json=payload, timeout=60)
             if response.status_code == 200:
@@ -98,14 +98,13 @@ Write the analysis in Chinese, keeping technical terms or product names in Engli
 
     raise Exception(f"Failed to analyze {os.path.basename(filepath)} after all attempts.")
 
-def save_summary_safely(output_file, summary_text):
-    # Find conflicting python PIDs
-    pids = []
+def get_target_pids():
     my_pid = os.getpid()
+    target_pids = []
     try:
         res = subprocess.run(["ps", "aux"], capture_output=True, text=True)
         for line in res.stdout.split('\n'):
-            if "python" in line and "youtube-transcript-pipeline" in line:
+            if "python" in line and ("process_group" in line or "group_tasks" in line):
                 if "grep" in line or "process_group_08" in line:
                     continue
                 parts = line.split()
@@ -113,38 +112,12 @@ def save_summary_safely(output_file, summary_text):
                     try:
                         pid = int(parts[1])
                         if pid != my_pid:
-                            pids.append(pid)
+                            target_pids.append(pid)
                     except ValueError:
                         pass
     except Exception as e:
-        print(f"Error listing processes: {e}")
-        pids = []
-
-    pids = list(set(pids))
-
-    # Pause other processes
-    for pid in pids:
-        try:
-            os.kill(pid, signal.SIGSTOP)
-        except Exception:
-            pass
-
-    try:
-        # Write to temp_summary.txt
-        temp_path = "/Users/yongjiexue/Documents/GitHub/youtube-transcript-pipeline/transcripts/temp_summary.txt"
-        with open(temp_path, 'w', encoding='utf-8') as temp_f:
-            temp_f.write(summary_text)
-
-        # Run save_summary.py
-        cmd = f"python3 /Users/yongjiexue/Documents/GitHub/youtube-transcript-pipeline/transcripts/save_summary.py {output_file} {temp_path}"
-        os.system(cmd)
-    finally:
-        # Resume other processes
-        for pid in pids:
-            try:
-                os.kill(pid, signal.SIGCONT)
-            except Exception:
-                pass
+        print(f"Error finding pids: {e}")
+    return list(set(target_pids))
 
 def main():
     api_key = get_api_key()
@@ -156,47 +129,73 @@ def main():
     with open(group_path, 'r', encoding='utf-8') as f:
         group_data = json.load(f)
 
-    tasks = group_data["tasks"]
-    for task_path in tasks:
-        print(f"\n========================================")
-        print(f"Processing task: {task_path}")
-        print(f"========================================")
-        with open(task_path, 'r', encoding='utf-8') as tf:
-            task_data = json.load(tf)
+    # Pause other python scripts during execution
+    paused_pids = get_target_pids()
+    print(f"Found other running subagent PIDs to pause: {paused_pids}")
+    for pid in paused_pids:
+        try:
+            print(f"Pausing process {pid}...")
+            os.kill(pid, signal.SIGSTOP)
+        except Exception as e:
+            print(f"Failed to pause {pid}: {e}")
 
-        channel = task_data["channel"]
-        files = task_data["files"]
-        output_file = task_data["output_file"]
+    try:
+        tasks = group_data["tasks"]
+        for task_path in tasks:
+            print(f"\n========================================")
+            print(f"Processing task: {task_path}")
+            print(f"========================================")
+            with open(task_path, 'r', encoding='utf-8') as tf:
+                task_data = json.load(tf)
 
-        # Check existing output
-        processed_count = 0
-        if os.path.exists(output_file):
-            with open(output_file, 'r', encoding='utf-8') as out_f:
-                for line in out_f:
-                    if line.startswith("# "):
-                        processed_count += 1
+            channel = task_data["channel"]
+            files = task_data["files"]
+            output_file = task_data["output_file"]
 
-        print(f"Channel: {channel}, Total files: {len(files)}, Processed: {processed_count}")
+            # Check existing output
+            processed_count = 0
+            if os.path.exists(output_file):
+                with open(output_file, 'r', encoding='utf-8') as out_f:
+                    for line in out_f:
+                        if line.startswith("# "):
+                            processed_count += 1
 
-        # Skip already processed
-        remaining_files = files[processed_count:]
-        for idx, filename in enumerate(remaining_files):
-            real_idx = processed_count + idx
-            filepath = f"/Users/yongjiexue/Documents/GitHub/youtube-transcript-pipeline/transcripts/clean_transcripts/{channel}/{filename}"
-            print(f"[{real_idx + 1}/{len(files)}] Processing {filename}...")
+            print(f"Channel: {channel}, Total files: {len(files)}, Processed: {processed_count}")
 
-            if not os.path.exists(filepath):
-                print(f"File not found: {filepath}. Skipping.")
-                continue
+            # Skip already processed
+            remaining_files = files[processed_count:]
+            for idx, filename in enumerate(remaining_files):
+                real_idx = processed_count + idx
+                filepath = f"/Users/yongjiexue/Documents/GitHub/youtube-transcript-pipeline/transcripts/clean_transcripts/{channel}/{filename}"
+                print(f"[{real_idx + 1}/{len(files)}] Processing {filename}...")
 
-            # Analyze
-            summary = analyze_transcript(filepath, api_key)
+                if not os.path.exists(filepath):
+                    print(f"File not found: {filepath}. Skipping.")
+                    continue
 
-            # Save summary safely without race conditions
-            save_summary_safely(output_file, summary)
+                # Analyze
+                summary = analyze_transcript(filepath, api_key)
 
-            # Add a small delay between requests to avoid rate limits
-            time.sleep(3)
+                # Write to temp_summary.txt
+                temp_path = "/Users/yongjiexue/Documents/GitHub/youtube-transcript-pipeline/transcripts/temp_summary.txt"
+                with open(temp_path, 'w', encoding='utf-8') as temp_f:
+                    temp_f.write(summary)
+
+                # Run save_summary.py
+                cmd = f"python3 /Users/yongjiexue/Documents/GitHub/youtube-transcript-pipeline/transcripts/save_summary.py {output_file} {temp_path}"
+                os.system(cmd)
+
+                # Add a small delay between requests to avoid rate limits
+                time.sleep(5)
+    finally:
+        # Resume other python scripts
+        print(f"Resuming paused processes: {paused_pids}")
+        for pid in paused_pids:
+            try:
+                print(f"Resuming process {pid}...")
+                os.kill(pid, signal.SIGCONT)
+            except Exception as e:
+                print(f"Failed to resume {pid}: {e}")
 
     print("ALL TASKS IN GROUP_08 COMPLETED SUCCESSFULLY.")
 

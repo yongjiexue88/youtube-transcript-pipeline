@@ -39,6 +39,7 @@ CHANNELS = {
     "microconf": "MicroConf (@MicroConf)",
     "lennyspodcast": "Lenny's Podcast (@LennysPodcast)",
     "gregisenberg": "Greg Isenberg (@GregIsenberg)",
+    "starterstory": "Starter Story (@starterstory)",
 }
 
 EXPECTED_COUNTS = {
@@ -48,6 +49,7 @@ EXPECTED_COUNTS = {
     "microconf": 23,
     "lennyspodcast": 357,
     "gregisenberg": 422,
+    "starterstory": 171,
 }
 
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash-lite")
@@ -268,7 +270,15 @@ def dedupe_keep_order(items: Iterable[str]) -> list[str]:
 
 def load_videos(channel: str) -> list[Video]:
     channel_dir = TRANSCRIPTS_DIR / channel
-    files = sorted([p for p in channel_dir.iterdir() if p.is_file() and p.suffix.lower() in {".txt", ".md"}])
+    files = sorted(
+        [
+            p
+            for p in channel_dir.iterdir()
+            if p.is_file()
+            and p.suffix.lower() in {".txt", ".md"}
+            and not p.name.endswith("_analysis_report.md")
+        ]
+    )
     videos = []
 
     for path in files:
