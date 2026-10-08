@@ -1,0 +1,52 @@
+{
+  "skill": "not-a-tool-presence",
+  "version": "0.1.0",
+  "source_book": "麦克老李职场通识与大厂生存学 — 麦克老李",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "每次跟老外老板开会或者参加酒会我都很紧张，只会盲目点头说 yes，怎么看起来自信一点？",
+      "expected_behavior": "应激活 not-a-tool-presence, 引导用户采取无欲则刚的平等心智，克制点头频率，并教导笑脸重置技术（Smile Reset）以释放不可随意操纵的骨气信号。",
+      "notes": "典型的讨好者/过度附和调整场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "老板在评估里说我缺乏 assertiveness 和 gravitas，开会太像个打杂的执行者，怎么改？",
+      "expected_behavior": "应激活 not-a-tool-presence, 指导其从体态眼神、肢体语言控制及重置面部表情切入，扭转执行者标签，建立领袖形象感知。",
+      "notes": "缺乏领导力气场评估纠偏场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "How to look confident and assert authority during client negotiations when there is a language barrier?",
+      "expected_behavior": "应激活 not-a-tool-presence, 指导在谈判桌上如何通过挺拔坐姿、平视眼神、克制情绪波动和迅速收起笑脸来阻断对方的心理强势。",
+      "notes": "商务谈判中的跨文化体态防守场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "新入职的实习生第一天加入，我作为他的 Mentor，该怎么和他沟通，帮他快速融入团队？",
+      "expected_behavior": "不应激活本 skill, 因为作为导师带新人需要展现高度的亲和力（warmth）、关怀与耐心，过度展现严肃、收回笑脸的强势气场反而会吓退新人、增加融入阻碍。",
+      "notes": "限制场景:  mentoring 与团队融入沟通。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "老板在方案评审中对我的设计方案提出了异议，我该怎么有说服力地向他陈述风险并表达不同意见？",
+      "expected_behavior": "不应激活本 skill, 应激活 disagreement-conversation 进行专业异议推敲。",
+      "notes": "跨 skill 混淆诱饵: 属于具体工作方案上的意见分歧应对场景。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "在公司的高管酒会上，VP 突然端着杯子向我走来跟我说起一个我听不懂的本地体育梗，我该怎么维持气场？",
+      "expected_behavior": "应同时联动 not-a-tool-presence（控制赔笑和谄媚体态，维持严肃专注）和 small-talk-briefing（利用极简名单与 AI 检索破局），既不假笑迎合，又展现体面倾听与适度反问。",
+      "notes": "边界: 突发性高层寒暄与流行文化阻断场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 个 should_trigger, 2 个 should_not_trigger, 和 1 个 edge_case。重点测试 mentoring 限制与跨部门异议混淆。"
+}

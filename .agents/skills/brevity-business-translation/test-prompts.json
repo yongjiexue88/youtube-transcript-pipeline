@@ -1,0 +1,52 @@
+{
+  "skill": "brevity-business-translation",
+  "version": "0.1.0",
+  "source_book": "麦克老李职场通识与大厂生存学 — 麦克老李",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我周报不知道怎么写，感觉写了一大堆技术参数，怎么给总监看？",
+      "expected_behavior": "应激活 brevity-business-translation, 精简技术背景，并映射翻译为时间、金钱、客户满意度与战略机会四大商业指标。",
+      "notes": "典型的冗长技术性周报精简场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "老板说我开会表现不积极，让我更 vocal。明天要跟 VP 开会汇报我的大促备战进度，怎么改？",
+      "expected_behavior": "应激活 brevity-business-translation, 提炼出符合高层利益的商业结论，用 2-3 句话进行简练表述，提升 executive presence。",
+      "notes": "向上级做简明高可见度汇报场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Help me rewrite this project update for VP review: we refactored the caching library to use Redis and optimized database queries by adding index.",
+      "expected_behavior": "应激活 brevity-business-translation, 翻译成：优化缓存与索引，使响应时效提升 X%，节省了 Y% 硬件成本。",
+      "notes": "英文纯技术底层描述翻译为高管商业成果场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我的代码遇到一个诡异的内存泄露，帮我做个性能根因分析（RCA）并提供核心调用栈排查。",
+      "expected_behavior": "不应激活本 skill, 因为技术排错和根因分析需要保留和深挖具体的代码堆栈细节，不属于商业精炼汇报范畴。",
+      "notes": "诱饵: 纯技术排错与根因分析场景。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "老板突然在 Slack 里通知我们团队要合并到别的组了，主管也换人了，我很慌，该怎么办？",
+      "expected_behavior": "不应激活本 skill, 应激活 reorg-navigation 技能进行重组卡位引导。",
+      "notes": "跨 skill 混淆诱饵: 属于组织架构重组变局场景。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我因为部署失误导致了线上报错率飙升，需要给 VP 发一封邮件解释。",
+      "expected_behavior": "应激活 brevity-business-translation 剔除情绪化道歉并翻译为 ECD 修复步骤；同时此场景涉及事故沟通，属于边界模糊场景，需与 guided-reporting 做联动防卫。",
+      "notes": "边界: 事故沟通中包含自责与自证的修正场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 个 should_trigger, 2 个 should_not_trigger, 和 1 个 edge_case。混淆测试测试重组场景以防互相抢词。"
+}

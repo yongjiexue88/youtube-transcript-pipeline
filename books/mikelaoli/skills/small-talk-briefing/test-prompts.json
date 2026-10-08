@@ -1,0 +1,52 @@
+{
+  "skill": "small-talk-briefing",
+  "version": "0.1.0",
+  "source_book": "麦克老李职场通识与大厂生存学 — 麦克老李",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "下周就是超级碗（Super Bowl）比赛了，周一开会前大家肯定要寒暄聊球，我完全不懂，帮我准备点谈资？",
+      "expected_behavior": "应激活 small-talk-briefing, 为用户提取焦点球队的四分卫、主教练名字，结合 AI 故事线生成极简破冰话术。",
+      "notes": "典型的重大赛事职场破冰背景准备场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "中午和美国同事吃饭，他们总是在聊 NFL 和中场秀歌手，我插不上话觉得很尴尬，怎么参与？",
+      "expected_behavior": "应激活 small-talk-briefing, 指引用户用 4-6 个名字和中场秀嘉宾（如 Bad Bunny）的背景做 3 分钟极速调研，融入对话。",
+      "notes": "商务午餐冷场寒暄场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Help me prepare some simple sports conversation starters for a networking lunch with US stakeholders next Monday.",
+      "expected_behavior": "应激活 small-talk-briefing, 生成包含核心体育概念（如 AFC, NFC）及焦点人物故事线的一两句英文破冰问题。",
+      "notes": "英文高级关系网络酒会前体育话题准备场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "同事们在激烈争论海鹰队今年防守组的具体 3-4 战术变阵、以及四分卫在口袋被撕裂时的传球防守空隙，拉我站队表态，我该怎么说？",
+      "expected_behavior": "不应激活本 skill, 因为这属于高精度的赛事技战术研讨。本技能仅适用于极简寒暄，在深层专业讨论中盲目跟进极易露怯。应引导用户使用 not-a-tool-presence 保持聆听或转移话题。",
+      "notes": "限制场景: 专业硬核体育技战术辩论。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "老板发邮件宣布我们组下周起要换业务线（Reorg），还要搬办公室，我不知道怎么跟新主管磨合？",
+      "expected_behavior": "不应激活本 skill, 应激活 reorg-navigation 技能进行组织重组应对。",
+      "notes": "跨 skill 混淆诱饵: 属于处理组织架构重组危机场景。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "同事在聊泰勒·斯威夫特去看她男朋友 Travis Kelce 橄榄球赛的事，我只听说过这事但不知道详情，该怎么切入？",
+      "expected_behavior": "应激活 small-talk-briefing, 引导用户不要装懂，而是使用泰勒斯威夫特主动提问融入的『故事梗』，以展现好奇心的方式反向发问（『听说泰勒也在学习哨声规则，你们谁能给我解释一下为什么那个判罚那么重要？』），安全切入社交。",
+      "notes": "边界: 利用知名娱乐/体育跨界八卦反向提问破冰场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 个 should_trigger, 2 个 should_not_trigger, 和 1 个 edge_case。"
+}

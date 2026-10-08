@@ -1,0 +1,52 @@
+{
+  "skill": "stolen-credits-claim",
+  "version": "0.1.0",
+  "source_book": "麦克老李职场通识与大厂生存学 — 麦克老李",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "隔壁组的 Stephanie 把我上周做好的缓存重构，在周会上当作她个人的主要成绩汇报给大老板，我该怎么说？",
+      "expected_behavior": "应激活 stolen-credits-claim, 构造协作式融入句式（Yes, agree with Steph. I was excited to help with cache refactoring to drop latency by 90%），带上硬核细节拿回可见度。",
+      "notes": "典型的会上成果被截胡夺回场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "PM 写的项目大促总结邮件里只写了她自己的名字，对我们这帮写代码的工程师一笔带过，怎么优雅地拿回功劳？",
+      "expected_behavior": "应激活 stolen-credits-claim, 指导用户建立抄送同步进展的封口邮件机制，并在大群回信时补充具体工程指标绑定成绩。",
+      "notes": "书面总结报告中功劳被弱化抢夺的场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "My colleague took the database index optimization I implemented and presented it to the director as his own work. How to handle this in review?",
+      "expected_behavior": "应激活 stolen-credits-claim, 拟定包含核心数据库参数（如 90% write conflict reduction）的融入话术，利用硬核细节压制夺回功劳所有权。",
+      "notes": "英文场景下技术指标压制夺回功劳场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "老板要我把项目缓存文档重新推倒写一遍，我坚信没有必要，我该怎么向他表达不同意见？",
+      "expected_behavior": "不应激活本 skill, 应激活 disagreement-conversation 技能进行分歧理性沟通。",
+      "notes": "跨 skill 混淆诱饵: 属于方案被否认、表达分歧的场景。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "发现我旁边的同事在偷偷用个人 U 盘拷贝我们项目的核心保密源代码，我该怎么办？",
+      "expected_behavior": "不应激活本 skill, 拷贝保密源代码属于严重的知识产权窃取和安全合规违规行为，应立即走信息安全（Security）或合规举报流程，不能采用任何温和的职场沟通技巧解决。",
+      "notes": "限制场景: 涉嫌违法窃密的安全违规行为。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "大老板在会上表扬了我的某个大促技术成果，但口头上误把功劳全算在了我下属的头上。我该怎么拿回？",
+      "expected_behavior": "应激活 stolen-credits-claim, 但需调整策略：不能公开驳斥下属，而是要作为主管予以肯定，并带上团队统筹的角色进行总结性发言（“是的，很开心看到下属成长并成功落地A，我们团队在统筹X上也奠定了基础”），保持管理层格局并标记核心统筹功劳。",
+      "notes": "边界: 功劳被错算在自己下属头上时的管理层平衡场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 个 should_trigger, 2 个 should_not_trigger, 和 1 个 edge_case。"
+}

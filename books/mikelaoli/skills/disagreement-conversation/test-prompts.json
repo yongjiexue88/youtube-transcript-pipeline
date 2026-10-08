@@ -1,0 +1,52 @@
+{
+  "skill": "disagreement-conversation",
+  "version": "0.1.0",
+  "source_book": "麦克老李职场通识与大厂生存学 — 麦克老李",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "老板提出了一个很不合理的架构迁移方案，我明知这样会让生产环境报错飙升，怎么跟他说？",
+      "expected_behavior": "应激活 disagreement-conversation, 先首肯战略目标，再客观罗列报错率升高的业务 concern，最后带上至少一个替代方案供其决策。",
+      "notes": "典型的工作方案分歧沟通场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "怎么优雅地跟老板唱反调？我很怕他觉得我不服管教、没有大局观。",
+      "expected_behavior": "应激活 disagreement-conversation, 引导用户脱离情绪争论，通过高调宣誓『战略对齐』来打消老板防心，转换为 Lens（视角）差异，建立专业形象。",
+      "notes": "向上向上表达异议并消除负面声誉场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "My boss is asking me to deprioritize security patches to ship a new feature. How should I push back?",
+      "expected_behavior": "应激活 disagreement-conversation, 翻译重构为：'I fully support accelerating the launch. However, skipping security patches raises safety concerns A and B. Can we deliver alternative plan C to mitigate this?'",
+      "notes": "英文优先级冲突 Pushback 场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "发现公司的财务报表涉嫌夸大收入数据，老板让我配合签字确认，我不同意，怎么跟他说？",
+      "expected_behavior": "不应激活本 skill, 因为夸大财务数据属于严重的财务欺诈违法合规行为。在涉及法律、合规红线和职业道德的场景下，绝对不能使用 'Disagree and Commit' 的职业顺从规则，应立即通过合规渠道或 HR 进行上报举报。",
+      "notes": "限制场景: 触犯法律合规底线的分歧纠纷。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "老板在会上无视了我的核心贡献，把项目成功的功劳全部算给了合作的 PM Stephanie，我该怎么在会上拿回属于我的成绩？",
+      "expected_behavior": "不应激活本 skill, 应激活 stolen-credits-claim 技能夺回成果所有权。",
+      "notes": "跨 skill 混淆诱饵: 属于处理工作成果功劳被抢夺的场景。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我已经向老板陈述了工期过短的所有风险，但老板听完后依然脸色铁青、坚决要求执行。我该如何收场？",
+      "expected_behavior": "应激活 disagreement-conversation, 提示用户进入 Disagree and Commit 表态阶段，使用模板：'Understood. I will fully align and execute this plan with the team.'，切断争执并转换心态执行。",
+      "notes": "边界: 沟通破裂后需要立刻执行妥协的收场场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 个 should_trigger, 2 个 should_not_trigger, 和 1 个 edge_case。重点测试合规红线排除和抢功场景混淆。"
+}

@@ -1,0 +1,52 @@
+{
+  "skill": "reorg-navigation",
+  "version": "0.1.0",
+  "source_book": "麦克老李职场通识与大厂生存学 — 麦克老李",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "听说我们整个事业部下个月要重组了，总监也要换人，我很慌，怎么在这波变局里保住自己甚至晋升？",
+      "expected_behavior": "应激活 reorg-navigation, 执行 90 天重组生存框架，指导用户在动荡中保持激进客观，诊断新老板的 currency，并卡位架构裂缝。",
+      "notes": "典型的重组降临前的焦虑应对与布局场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我们组已经被拆分了，换了个空降的新老板，对我们的历史技术栈完全不懂，怎么快速跟他建立信任？",
+      "expected_behavior": "应激活 reorg-navigation, 引导用户进行 Day 0-30 的静默与信息获取，摸清老板核心货币，不抱怨，通过解决空缺建立信任。",
+      "notes": "空降新老板信任重建场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Our team is being reorganized under a new product vertical next week. What is the 90-day survival playbook?",
+      "expected_behavior": "应激活 reorg-navigation, 翻译提供 Day 0-30 (Info), Day 30-60 (Find Cracks), Day 60-90 (Punch Above Weight) 的系统步骤。",
+      "notes": "英文重组 90 天生存策略申请场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "由于项目彻底亏损，公司宣布本周五关闭我们业务线，所有员工拿 N+3 赔偿收拾东西直接走人，我该怎么保住位置？",
+      "expected_behavior": "不应激活本 skill, 因为部门撤销且开始清退裁员意味着重组生存无施展空间。应引导用户理性接受赔偿，转向准备外部简历、寻找跳槽机会。",
+      "notes": "限制场景: 终极裁员清退场景。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "新老板嫌我本周的技术进展汇报写得太长了，全是数据库术语，我该怎么重写？",
+      "expected_behavior": "不应激活本 skill, 应激活 brevity-business-translation 技能进行汇报精简与指标翻译。",
+      "notes": "跨 skill 混淆诱饵: 属于日常汇报内容精炼场景。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "重组刚宣布，我发现原来的交接漏洞导致有个财务对账大漏洞没人管。我想去主动『填补裂缝』，但担心得罪原负责的同事，去不去？",
+      "expected_behavior": "应激活 reorg-navigation, 引导用户权衡：这属于典型的『裂缝（crack）』，去能建立极大可见度；但需要采用 not-a-tool-presence 保持强力职业化体态，并先与同事沟通，以『协助团队解决隐患』的姿态切入，防范政治越界风险。",
+      "notes": "边界: 填补重组裂缝时的跨团队政治越界边缘场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 个 should_trigger, 2 个 should_not_trigger, 和 1 个 edge_case。"
+}

@@ -1,0 +1,52 @@
+{
+  "skill": "guided-reporting",
+  "version": "0.1.0",
+  "source_book": "麦克老李职场通识与大厂生存学 — 麦克老李",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我每次把开发方案发给经理，他都要微调甚至让我重写，怎么发邮件让他直接放行？",
+      "expected_behavior": "应激活 guided-reporting, 采用 “Action + Result C + Any objections” 的话术形式获取默认许可，避免引发开放式微观修改。",
+      "notes": "典型的防微观管理汇报放行场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "怎么在周会上向总监汇报我做好的促销流量承接预案，避免他临时挑刺？",
+      "expected_behavior": "应激活 guided-reporting, 陈述已经预设并测试过的动作，引向关键稳定性保障结果，用闭合式提问收尾。",
+      "notes": "会议现场争取通过权场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Slack message to my skip manager to confirm our deployment plan for tomorrow morning.",
+      "expected_behavior": "应激活 guided-reporting, 转化为：'We plan to deploy at 8 AM, which will ensure zero downtime. Any objections?'",
+      "notes": "越级/横向同步并默认锁定行动场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "由于项目扩张，我需要跟老板申请增加 50% 的额外资金和 2 个全职工程师名额预算。",
+      "expected_behavior": "不应激活本 skill, 因为大额预算与人头名额审批属于重大的、不可逆（one-way door）财务决策，老板绝不可能在 'Any objections' 话术下默认签字，需采取正式提案汇报流程。",
+      "notes": "诱饵: 重大预算追加申请场景。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "老板在会上对我的某个技术实现方案提出了异议，我坚决不同意他的看法，我该怎么和他在会上沟通？",
+      "expected_behavior": "不应激活本 skill, 应激活 disagreement-conversation 技能进行分歧谈判表达。",
+      "notes": "跨 skill 混淆诱饵: 属于处理已产生的分歧纠纷场景。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "大促即将开始，我决定临时跳过某项安全合规检测直接上线以保证速度，怎么向 VP 汇报？",
+      "expected_behavior": "不应激活本 skill, 越过合规红线在高危环境下进行引导式放行是极其危险的行为。应引导用户首先评估合规红线，并采用正式的风险共担提案而非简单问 'Any objections' 掩盖风险。",
+      "notes": "边界: 涉及系统安全合规的擦边球决策汇报场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 个 should_trigger, 2 个 should_not_trigger, 和 1 个 edge_case。"
+}
