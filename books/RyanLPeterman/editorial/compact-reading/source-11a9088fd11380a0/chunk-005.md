@@ -1,0 +1,30 @@
+# Amazon VP: Stack Ranking & PIPs, Working With Bezos, His Promotions | Ethan Evans
+Source: source-11a9088fd11380a0 | Chunk 5 of 5
+Video: https://www.youtube.com/watch?v=40-ENZmqcz0
+All caption text retained; paragraphs merge caption fragments without changing words.
+
+[48:23.04–49:10.72; L1292–L1315] Narrative two is, you know, Ryan actually doesn't contribute much. he thinks he does and he spends all this time doing code reviews, but look at how little he's actually written himself and really he's just busy nitpick nitpicking people and churning away. And sure, his numbers look good, but those numbers are actually a sign of the problem. Now, I've taken your same performance and spun it two ways. My point that people aren't going to like is a manager can do that. And maybe they're doing that because they're a jerk and they've decided you threaten them and they want to get rid of you. Maybe they just have a different view. You think you're doing really valuable stuff and they don't and they're saying what they honestly believe. But the point is performance that you would think is really easy to measure like look at these numbers. Look how many valuable code reviews I did can be used either way. Nothing about
+
+[49:13.04–50:02.96; L1316–L1338] software engineering performance is so objective. And so bad managers, truly bad or evil managers do get caught eventually. But clever managers, you just want to get rid of one person would be able to do that because they're in the driver's seat. And more importantly, they get to make the preemptive strike. They get to tell the story about why that person's a problem before that person ever knows it's happening. And so it's kind of like, yes, you can slap the mosquito after it bites you, but it doesn't take away being bitten. I mean, it's it's unfortunate that that's true, but it also illustrates the power of storytelling in a way. The exact same facts can be spun as a bad thing or a good thing. So, people are going to hear this and believe like, oh, see, managers are just like personally firing people because they hate them. I am sure that happens. It's not in a manager's best
+
+[50:05.60–50:41.28; L1339–L1356] interest. They they are judged on accomplishing their goals. that, you know, good managers are trying to find partners they can work with that will help everyone achieve. I just want to be honest that if you do have a difficult boss and you make them angry and they're a vindictive sort of person, beware they hold like you're bringing a knife to a gunfight. They're the one with the gun and you're probably going to lose. If you have a boss like that, don't get in the knife or gunfight. Either figure out what you can allow you to make friends with them or find a different manager. That's the actual point. Don't think that somehow HR is going to come investigate and rescue you.
+
+[50:42.80–50:42.80; L1357–L1357] >> Definitely
+
+[50:43.36–50:43.36; L1358–L1358] >> that just isn't what they do.
+
+[50:44.96–50:57.52; L1359–L1365] >> Um I want to be mindful of your time and so I have you know one last question for you which is that if you could go back to your career right at the beginning when you had just graduated and entered the industry and give yourself some advice what would that advice be?
+
+[51:00.16–51:47.60; L1366–L1387] >> So I'll answer in two ways. One of them I did and one of them I really didn't. The thing I would do is always prefer high growth. My whole career was in companies that were growing very rapidly. And I compare that, people talk about a career ladder. Well, my ladder was always an escalator. I could climb, but it was also moving up for me. And so, the reason I got where I went is because Amazon grew 100fold while I was there from 10,000 people to a million. Revenue grew like 80 times. The escalator went up and I rode it. I also climbed. So, that part I would keep the same. The thing I would change is probably not surprising you. I would wake up much sooner to jobs are still with other humans. It's great to be an expert. It's great to be right, but build the skills to have the relationships, make the friends, get to
+
+[51:50.24–52:23.12; L1388–L1401] know lots of people, and you don't have to be an extrovert to do that. I was a classic introvert. I've certainly learned to be more extroverted, but with online tools like LinkedIn or pick your tool, you can make a reputation and build connections from the safety of your keyboard in your darkened room all by yourself. And so do do whatever works for you, but get known because it works so much better. You know, Amazon called me for the job, not the other way around. And you want that happening, so build that reputation.
+
+[52:24.72–52:33.44; L1402–L1407] >> Awesome. Well, thank you so much for your time, Ethan. Um, you know, at the end of the interview, like to give you an opportunity. Where can people find you or is there something you'd like people to check out?
+
+[52:34.40–52:56.16; L1408–L1417] >> So, the easiest place to find me is either Ethan EvansVP on LinkedIn or Ethan Evans.com, my website. I'm well known for teaching classes about how to get past the promotion hurdle we've talked a lot about. So, if my style of straight talk in this interview works for you, then that's what I do all the time. And if that's your flavor of ice cream, then I'm your vendor.
+
+[52:58.16–52:59.84; L1418–L1419] >> Thanks so much, Ethan. Really appreciate your time.
+
+[53:00.56–53:02.24; L1420–L1421] >> Yeah, my pleasure, Ryan. Thank you for having me.
+
+[53:03.20–53:24.64; L1422–L1433] >> Hey, thanks for watching the show. I don't sell anything or do sponsorships, but if you want to support, you can subscribe on YouTube or you can leave a review on Spotify. And I'm always looking for new guests to interview. So, if anyone comes up who you think you really want to hear their career story, uh, let me know and I'll try to reach out to them and get them on the show. Thanks for listening as always and I'll see you next time.

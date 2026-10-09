@@ -1,0 +1,108 @@
+{
+  "section": {
+    "id": "source-0ff73d892aeb9a09",
+    "source_id": "source-0ff73d892aeb9a09",
+    "title": "Reasoning through hard interview problems without perfect recall",
+    "kind": "coaching",
+    "deck": "A live whiteboard exercise preserves the useful partial reasoning, clarifications, and remaining gaps in three familiar algorithm problems.",
+    "blocks": [
+      {
+        "type": "qa",
+        "question": "How would you find the minimum insertions, deletions, or replacements needed to convert one string into another?",
+        "answer": [
+          "Neetcode recognizes edit distance and begins with recursion rather than claiming to remember every detail. Matching characters let the comparison advance without an edit. A mismatch creates three possible actions\u2014insert, delete, or replace\u2014and exploring those choices supplies a recursive starting point that can be memoized.",
+          "He then sketches a two-dimensional dynamic-programming grid, with dimensions corresponding to the strings and expected O(n \u00d7 m) time. The exchange does not finish the transition formula, boundary cases, or implementation. He briefly says \u201cmaximum\u201d while describing possible recursive results despite the prompt asking for a minimum; the correct-looking direction should not be mistaken for a fully checked recurrence."
+        ],
+        "speaker": "Neetcode",
+        "evidence": [
+          {
+            "start": 0.08,
+            "end": 166.48
+          }
+        ],
+        "followups": [
+          {
+            "question": "What does one cell of the grid represent?",
+            "answer": [
+              "He works toward the edit distance between prefixes of the two words, with later cells derived from previously solved subproblems. The host clarifies that interpretation, and Neetcode agrees. He admits that mapping each edit action to a neighboring cell is the part requiring more careful thought and would usually start writing code to make it precise.",
+              "He says deriving the DP from the recursive solution is easier than jumping straight to the grid. A concrete example can show why different actions are needed, but this verbal sketch stops before completing all cases. The host\u2019s diagnosis is that the candidate is going in the right direction and still needs time for case analysis."
+            ],
+            "speaker": "Neetcode",
+            "evidence": [
+              {
+                "start": 169.76,
+                "end": 347.84
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "qa",
+        "question": "How would you find the median of two sorted arrays?",
+        "answer": [
+          "He knows binary search is associated with the problem but does not remember the elimination rule. He constructs an example with overlapping values and duplicates and talks about time management: elaborate diagrams might help reasoning but consume limited interview time.",
+          "A brief exchange corrects the task from finding a target to finding the median. With nine total elements in his example, he knows the fifth ordered element is the goal. He tests whether part of one array can safely be eliminated and recognizes that comparisons must involve both arrays. He then considers comparing the arrays\u2019 medians and flags odd/even and off-by-one complications.",
+          "The segment ends with a partial reconstruction, not a complete algorithm or correctness argument. He says it has been about five years since making his solution video and uses the struggle to show how first-principles reasoning can get him closer without instant recall. The host moves on rather than supplying a finished solution."
+        ],
+        "speaker": "Neetcode",
+        "evidence": [
+          {
+            "start": 312.16,
+            "end": 629.28
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "How would you count placements of n queens on an n-by-n board with no mutual attacks?",
+        "answer": [
+          "He proposes backtracking over placements and skipping moves already attacked by another queen. Sets or similar hash structures can record occupied rows and columns. The challenge is identifying diagonal membership without scanning the board.",
+          "He derives one diagonal key by noting that increasing a row while decreasing a column keeps their sum constant. After some hesitation he derives the other direction from the row-column difference. With row, column, and both diagonal keys, a tentative placement can be checked through quick membership lookups before recursing.",
+          "The host accepts the overall direction. Neetcode does not provide code, a complete enumeration scheme, or a verified time complexity; he notes that the search tree is large and probably exponential, even though each membership lookup is constant time. His belief that the approach is optimal is not proved in the exchange."
+        ],
+        "speaker": "Neetcode",
+        "evidence": [
+          {
+            "start": 627.52,
+            "end": 943.44
+          }
+        ],
+        "followups": [
+          {
+            "question": "Are the diagonal keys just a way to test quickly whether a diagonal is occupied?",
+            "answer": [
+              "Yes. Neetcode confirms that the goal is a key-based membership lookup, then completes the distinction between constant sums on one diagonal direction and constant differences on the other. The clarification helps him finish the reasoning he had been reconstructing."
+            ],
+            "speaker": "Neetcode",
+            "evidence": [
+              {
+                "start": 833.04,
+                "end": 894.32
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "related": [],
+    "omissions": []
+  },
+  "coverage": {
+    "source_id": "source-0ff73d892aeb9a09",
+    "sha256": "c6b5377d9e99701fb29d2f659cf3939eaa982cba51f79afb742a76a917edc929",
+    "reviewed_chunks": [
+      1,
+      2
+    ],
+    "status": "included",
+    "reason": "Read every assigned compact-reading chunk in full; retained all substantive discussion and ordered question rounds."
+  },
+  "editorial": {
+    "theme": "hiring",
+    "question_rounds": 3,
+    "followup_count": 2,
+    "notes": "All three substantive problem prompts are distinct QA blocks. The transcript contains verbal sketches and partial derivations, not completed code. The unresolved median algorithm, edit-distance transition ambiguity, and unverified N-Queens complexity are retained explicitly."
+  }
+}

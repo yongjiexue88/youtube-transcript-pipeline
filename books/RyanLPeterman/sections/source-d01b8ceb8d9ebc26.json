@@ -1,0 +1,444 @@
+{
+  "section": {
+    "id": "source-d01b8ceb8d9ebc26",
+    "source_id": "source-d01b8ceb8d9ebc26",
+    "title": "Ryan Williams: LeetCode, P vs NP, and Fine-Grained Lower Bounds",
+    "kind": "interview",
+    "deck": "Ryan Williams explains fine-grained complexity, the strong exponential time hypothesis, and a space-time simulation, and argues that doubted hypotheses still guide useful research.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The host introduces Ryan Williams as an MIT professor who won the Gödel Prize for theoretical computer science. Williams argues that researchers understand polynomial-time computation less deeply than they think. Algorithm results keep surprising people, while lower bounds usually match what researchers expected but are hard to prove. Williams also argues that a hypothesis can be useful even when Williams doubts it, because trying to refute strong ETH leads to new methods. Editorial note: the conversation moves from a LeetCode three-sum question to fine-grained complexity, SAT and its variants, space-time simulation, and research habits. The host is not named in the transcript.",
+        "evidence": [
+          {
+            "start": 0.16,
+            "end": 4302.8
+          }
+        ],
+        "heading": "Ryan Williams's view: bold hypotheses, even doubted ones, drive progress in complexity theory"
+      },
+      {
+        "type": "qa",
+        "question": "Can three-sum be solved in less than n squared time?",
+        "answer": [
+          "Williams first describes the standard methods. Brute force tries every triple and takes n cubed time. A faster method sorts the numbers, then for each number runs a finger search with one pointer at each end of the remaining list. That gives n squared time overall.",
+          "Williams says beating n squared is possible, though not obvious. The improvement applies the finger search to small groups of neighboring sorted numbers rather than single numbers. A preprocessed lookup for pairs of groups lets the search skip work. Williams uses an n to the 1.5 preprocessing cost as an example, and says the approach starts from the finger search and speeds up its moves."
+        ],
+        "evidence": [
+          {
+            "start": 42.08,
+            "end": 506.04
+          }
+        ],
+        "followups": [
+          {
+            "question": "Is the unit of work a single integer or a group of integers?",
+            "answer": [
+              "A group. Williams says the lookup is more involved than a simple table. The method works in a model called the linear decision tree model, where Williams says an n to the 1.5 solution is possible. The core idea is preprocessing that makes the finger moves faster."
+            ],
+            "evidence": [
+              {
+                "start": 405.08,
+                "end": 443.28
+              }
+            ],
+            "speaker": "Ryan Williams"
+          },
+          {
+            "question": "What is the intuition behind the faster three-sum bound?",
+            "answer": [
+              "The host reads out a bound with logarithm factors raised to the two-thirds power and calls it crazy. Williams says several algorithms of this kind exist. They all modify the n squared method, using different lookup tables and compression tricks, and then speed up the search with preprocessing."
+            ],
+            "evidence": [
+              {
+                "start": 446.52,
+                "end": 506.04
+              }
+            ],
+            "speaker": "Ryan Williams"
+          }
+        ],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "What is fine-grained complexity, and how does it differ from P versus NP?",
+        "answer": [
+          "Williams says fine-grained complexity studies canonical problems that are taught to undergraduates. Their canonical algorithms have resisted major improvement for decades, so the question is whether those algorithms are optimal. The focus is the exact running time a problem needs, not only whether it is polynomial.",
+          "Williams contrasts this with P versus NP. P allows any polynomial, even one with a huge exponent, so showing that a problem is outside P only shows that it needs super-polynomial time. Fine-grained work asks whether an n cubed algorithm can be improved to n to the 3 minus epsilon, and whether a small gain on one problem can give a small gain on another.",
+          "The main tool is a reduction that carries speedups. Williams's example is subset sum, which has an obvious 2 to the n algorithm. Williams reduces it to a two-sum instance with about the square root of 2 to the n numbers. Williams says two-sum can be solved in linear time on that list, which gives a square root of 2 to the n algorithm for subset sum. Williams says this relates problems that look unrelated under P versus NP."
+        ],
+        "evidence": [
+          {
+            "start": 507.88,
+            "end": 837.28
+          }
+        ],
+        "followups": [
+          {
+            "question": "Why is it acceptable for a reduction to blow up the instance?",
+            "answer": [
+              "Williams says the reduction is not required to be polynomial-time. What matters is that a faster two-sum algorithm would give a faster subset sum algorithm. The host restates it as a small time loss that is smaller than the overall gain, and Williams agrees that the whole chain is what counts.",
+              "Williams compares this to a surprise. Sorting and binary search give a shortcut for finding a pair of numbers with a given sum, which avoids trying all pairs. Williams says that kind of shortcut can then be used to get a subset sum algorithm that avoids trying all subsets."
+            ],
+            "evidence": [
+              {
+                "start": 838.52,
+                "end": 1018.24
+              }
+            ],
+            "speaker": "Ryan Williams"
+          }
+        ],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "What is the strong exponential time hypothesis, and why does it matter?",
+        "answer": [
+          "Williams calls strong ETH a severe strengthening of the P versus NP question. P versus NP asks whether SAT has a polynomial-time algorithm. Strong ETH says that SAT, and the k-SAT version with clauses of width k, cannot be solved much faster than 2 to the n time. Williams says the exact details of k-SAT matter less than the overall claim.",
+          "Williams notes that SAT is solved well in practice and used heavily for verification. The worst case is different: no known algorithm solves it much faster than 2 to the n. Williams says the hypothesis is far stronger than P versus NP, since it says the cost is close to 2 to the n, not just super-polynomial."
+        ],
+        "evidence": [
+          {
+            "start": 1020.12,
+            "end": 1149.32
+          }
+        ],
+        "followups": [],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "Does Williams believe strong ETH is true, and why?",
+        "answer": [
+          "Williams says the answer is no: Williams is on record as not believing the hypothesis. Williams began thinking about it as an undergraduate, and early in graduate school tried to solve CNF-SAT faster than 2 to the n. Other NP-complete problems, such as subset sum, already had faster algorithms, and 3-SAT does too. Williams saw no clear reason SAT should be the exception.",
+          "Each attack Williams tried on the hypothesis failed in a ridiculous way, with no real chance of solving the original problem. Williams says studying those failures led to other results. Williams says the truth value of strong ETH matters less than its effect on research. Believing it is false pushes Williams to discard natural algorithms and think in new directions. Williams finds that very useful, even without a refutation.",
+          "Williams calls this a minority view. A close friend who helped propose the hypothesis stressed that it was deliberately not named a conjecture. It was put forward as a lower bound to get people thinking, more controversial than other widely discussed statements such as P versus NP. Williams says hypotheses at the edge of understanding can be enlightening."
+        ],
+        "evidence": [
+          {
+            "start": 1149.8,
+            "end": 1416.28
+          }
+        ],
+        "followups": [
+          {
+            "question": "Why might someone still believe strong ETH?",
+            "answer": [
+              "Williams says the hypothesis gives a convenient world view. SAT can be reduced to many problems that look unrelated, such as edit distance and various pattern matching problems. Those problems have natural polynomial-time algorithms. An improvement on any of them would also give a faster-than-2 to the n algorithm for SAT. So believing the hypothesis makes those textbook algorithms look optimal."
+            ],
+            "evidence": [
+              {
+                "start": 1419.04,
+                "end": 1475.8
+              }
+            ],
+            "speaker": "Ryan Williams"
+          }
+        ],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "What are the main forms of SAT?",
+        "answer": [
+          "Williams says the most common form is conjunctive normal form, or CNF. Modern SAT solvers read it from DIMACS CNF files. Each line is a clause, which is an OR of literals. A literal is a variable or its negation. The formula is an AND of the clauses. The width of a clause is its number of literals, and k-SAT limits every clause to width k.",
+          "Williams lists other forms. Formula SAT allows any expression built from ORs, ANDs, and negations, with nested parentheses. Bounded-depth circuits, called AC circuits, use layers of ORs and ANDs with a constant number of layers. Williams notes that the name refers to alternating ORs and ANDs, not electrical alternation. CNF is a special case of such a circuit: an AND of ORs."
+        ],
+        "evidence": [
+          {
+            "start": 1478.44,
+            "end": 1691.84
+          }
+        ],
+        "followups": [
+          {
+            "question": "Does the best known exponent change as k grows?",
+            "answer": [
+              "The host states that improvements over 2 to the n exist for small values of k, and that larger k is harder. Williams agrees that this is the intuition. Williams says the best known algorithms all approach an exponent of 2 as k grows, moving from values like 1.99 toward 1.999. The curve drops quickly, and the exponent behaves predictably for known algorithms. Asked whether the curve has been plotted, Williams describes its shape in words."
+            ],
+            "evidence": [
+              {
+                "start": 1693.8,
+                "end": 1762.04
+              }
+            ],
+            "speaker": "Ryan Williams"
+          }
+        ],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "What is the intuition for beating 2 to the n for 3-SAT?",
+        "answer": [
+          "Williams starts with one clause on three variables. Exactly one of the eight assignments to those variables makes that clause false. Only that one is ruled out, and the other seven could still be part of a satisfying assignment.",
+          "Williams says a simple algorithm tries one of those seven assignments and recurses on the remaining formula. A naive search would branch eight ways. Using the clause gives seven branches, which removes three variables at the cost of seven recursive calls instead of eight. That is a slight improvement over 2 to the n. Williams says better algorithms exist, using the same general idea of setting variables to force constraints that rule out many assignments."
+        ],
+        "evidence": [
+          {
+            "start": 1764.24,
+            "end": 1889.44
+          }
+        ],
+        "followups": [],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "Are there analogies between SAT circuits and neural networks?",
+        "answer": [
+          "Williams says a majority gate can replace ORs and ANDs, and that the resulting model is basically equivalent. A majority gate outputs one when at least half of its inputs are one. With majority gates and negations, Williams says a constant number of layers of a typical neural network can be simulated. Williams calls these threshold circuits.",
+          "Williams says threshold circuits still work on Boolean inputs. Once inputs are real-valued, lower bounds become a different kind of problem and can be stronger. Williams gives an example: some functions need depth three in a neural network and cannot be computed at depth two. Williams says the real domain gives a very different picture from the discrete one."
+        ],
+        "evidence": [
+          {
+            "start": 1890.84,
+            "end": 2042.64
+          }
+        ],
+        "followups": [],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "Why did Williams assign only 80 percent confidence that P is not equal to NP?",
+        "answer": [
+          "Williams says the figure first stood near 75 percent. A college classmate, Scott Aaronson, challenged that number, and Williams settled on 80 percent. The host notes that most people state much higher confidence.",
+          "Williams's main point is that researchers do not understand polynomial-time computation as deeply as they think. Algorithms keep surprising people with unexpected speed. Lower bounds, by contrast, usually match what researchers expected, though they are hard to prove.",
+          "Williams says intuition about P versus NP has often been revised over the years. Williams asks whether, in such a field, confidence about the answer was simply misplaced. Williams says complexity theory is full of statements that are easy to write down and very hard to settle."
+        ],
+        "evidence": [
+          {
+            "start": 2112.28,
+            "end": 2288.36
+          }
+        ],
+        "followups": [],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "Why does Williams give NEXP not equal to EXP only 45 percent?",
+        "answer": [
+          "Williams confirms the 45 percent figure. Williams says the belief is that NEXP equals EXP is more likely than the two being different. Williams frames the question as a special case of P versus NP, restricted to SAT instances that are highly compressible.",
+          "In that case, a small machine, exponentially smaller than the instance, outputs the character at a given line and column of the CNF file. The question is whether such an instance can be decided in time polynomial in the decompressed size. Williams offers one hypothesis for why SAT solvers work in practice: the real world is structured and governed by a few rules, so the instances that arise are very compressible.",
+          "Williams calls the conjecture overkill, since it is not even a well-formed mathematical statement. The hypothesis is that highly compact representations can be solved efficiently, which would make such instances special rather than arbitrary."
+        ],
+        "evidence": [
+          {
+            "start": 2304.4,
+            "end": 2509.44
+          }
+        ],
+        "followups": [],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "Why was the 80 percent NEXP versus coNEXP estimate so contentious?",
+        "answer": [
+          "Williams starts with NP versus co-NP. Co-NP holds the complements of NP problems, such as unsatisfiability. Checking unsatisfiability costs the same time as checking satisfiability, but no short proof of unsatisfiability is known in general. Williams says most people do not believe NP equals co-NP, and that NP differing from co-NP would imply P differs from NP.",
+          "Williams then describes the exponential analogue with a little birdie, meaning advice. The advice is the total count of yes-inputs of a given length, which takes about n bits to write down. An NEXP machine can guess the no-inputs, verify each one, and check the guessed total against the advice. Once that is done, every input is accounted for, so the rest must be yes-inputs. Williams says this is how advice would let NEXP handle co-NEXP questions."
+        ],
+        "evidence": [
+          {
+            "start": 2511.92,
+            "end": 2818.64
+          }
+        ],
+        "followups": [
+          {
+            "question": "Where would the little birdie's advice come from?",
+            "answer": [
+              "Williams says the advice might itself be constructible in NEXP. If it is, the machine could compute the advice and use it to settle the question. Williams presents this as an open possibility, not a result."
+            ],
+            "evidence": [
+              {
+                "start": 2781.72,
+                "end": 2818.64
+              }
+            ],
+            "speaker": "Ryan Williams"
+          }
+        ],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "What was known before Williams's time and space result?",
+        "answer": [
+          "Williams says the problem is this. Given an algorithm that runs in time T, can it be simulated with much less memory than T while still computing the same result? For an arbitrary circuit, the natural method uses about T space as well as T time.",
+          "Williams says that in 1975, Hopcroft, Paul, and Valiant, building on work by Patterson and Valiant, showed that time T algorithms in a multi-tape Turing machine model can be simulated in space T divided by log T. The result was extended to random-access models and other models in the late 1970s and early 1980s, so T over log T was known for reasonable models.",
+          "Williams says the saving came with a hidden cost: the space-efficient simulation needs exponential time. Many researchers therefore expected T over log T to be close to the best possible, and did not expect something like T to the 0.9 space.",
+          "Williams calls it a big surprise that any time-T algorithm can be simulated in about square root of T space, again with exponential running time. Williams says this holds for any such algorithm, including ones that produce pseudorandom or cryptographic output, and that this was not obvious."
+        ],
+        "evidence": [
+          {
+            "start": 2820.0,
+            "end": 3112.48
+          }
+        ],
+        "followups": [],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "What was the trick behind simulating time T in about square root of T space?",
+        "answer": [
+          "Williams says the key was reading the tree evaluation paper by James Cook and Ian Mertz very carefully, alongside the earlier work on space-bounded computation. Hopcroft, Paul, and Valiant modeled space-bounded computation by writing pieces of computation into blank memory, which means erasing memory first. Williams says that model turned out to be more restrictive than its authors expected.",
+          "Williams uses a swap example from basic programming. Swapping two registers normally needs a temporary register, but XOR-ing the registers, or adding and subtracting them, swaps them in three steps without one. Williams says this is the starting point for asking why it matters to always write into erased memory.",
+          "Williams says Cook and Mertz studied tree evaluation with a small stack, and their computation wrote into erased memory. They realized that allowing computations to XOR bits into existing memory saves a lot of space. Careful XOR operations let useful content be recovered without storing everything at once, and unneeded content cancels out. Williams describes this as the high-level idea, not the full argument."
+        ],
+        "evidence": [
+          {
+            "start": 3134.12,
+            "end": 3463.36
+          }
+        ],
+        "followups": [
+          {
+            "question": "Is the square-root version just an extension of the same method?",
+            "answer": [
+              "Williams says the square root is the optimal trade-off in this tree evaluation setting. The computation is split into intervals of about square root of T steps, so there are about square root of T intervals, each with about square root of T steps. The simulation keeps only a constant number of these interval records in memory at any time. Williams says this is not obvious, and that the square root is a sweet spot where the trade-off balances."
+            ],
+            "evidence": [
+              {
+                "start": 3405.6,
+                "end": 3463.36
+              }
+            ],
+            "speaker": "Ryan Williams"
+          }
+        ],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "What was it like to become convinced the square-root result was correct?",
+        "answer": [
+          "Williams says long experience has taught Williams to distrust one's own ideas, since one can be deceived by oneself many times. The first two or three times the idea came up, Williams judged it impossible and set it aside. Convincing oneself was slow, and Williams suspected either a bug in the Cook and Mertz work or a misreading of it.",
+          "Williams says the only way through was to write the argument down again and again in different ways, adding detail, shortening it, and explaining it differently. When Williams submitted it to a theory conference, Williams was still not fully confident it was correct, and was exhausted. Williams sent it to two trusted colleagues. One did not read past the abstract. The other said a footnote was where the argument began to be believable.",
+          "Williams then turned that footnote into a fuller part of a later revision, which Williams called the warm-up. Williams wanted the argument to be airtight so that others would believe it, and says it took a long time for Williams to believe it."
+        ],
+        "evidence": [
+          {
+            "start": 3464.64,
+            "end": 3660.56
+          }
+        ],
+        "followups": [],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "What keeps Williams working on hard problems?",
+        "answer": [
+          "Williams says the aim is to avoid bashing one's head against a wall. If Williams does take on a hard problem, Williams wants the process to be enjoyable. Williams enjoys the grind of understanding something, and without that enjoyment Williams would not do it.",
+          "Other work is mostly opportunistic. Williams takes something new, integrates it fully with what Williams already knows, follows every consequence to its logical end, and sees what happens."
+        ],
+        "evidence": [
+          {
+            "start": 3662.04,
+            "end": 3744.8
+          }
+        ],
+        "followups": [],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "How does Williams pick a good research direction?",
+        "answer": [
+          "Williams says the best kind of direction is one where the researcher cannot lose. Williams sets up a hypothesis H, so that if H is true good things follow, and if not-H is true other good things still follow. Williams calls such opportunities a win-win, and says they are hard to find but important.",
+          "Williams says Williams often looks at a method or technique rather than one specific problem. Williams asks what else can be done in that space of ideas, and often solves problems by taking an idea from one place and putting it somewhere else."
+        ],
+        "evidence": [
+          {
+            "start": 3746.68,
+            "end": 4032.52
+          }
+        ],
+        "followups": [
+          {
+            "question": "Is there a concrete example of a win-win direction?",
+            "answer": [
+              "Williams describes a research program on the orthogonal vectors problem. If that problem can be solved in nearly linear time, SAT could be solved in about the time of subset sum, which Williams says would break strong ETH in a radical way. Williams has also shown earlier that improving SAT running time can give circuit complexity lower bounds.",
+              "Williams says the hypothesis in that program is technical. If it is true, Williams gets a fast algorithm for orthogonal vectors, an algorithm for SAT, and circuit lower bounds. If it is false, it can be used to prove a different circuit lower bound. Either way, Williams says, a new limitation is proved.",
+              "Williams says the usual path is less clean. Williams reads an algorithm idea, tries to apply it to SAT, and it fails. Williams then studies the failure, extracts what can be used, and often finds another kind of algorithm. Williams says this is how Williams proved circuit lower bounds that first helped earn a job at Stanford: an attempted SAT algorithm worked for a large class of circuits, including some with no known lower bounds."
+            ],
+            "evidence": [
+              {
+                "start": 3839.88,
+                "end": 4032.52
+              }
+            ],
+            "speaker": "Ryan Williams"
+          }
+        ],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "What books would Williams recommend for learning complexity theory?",
+        "answer": [
+          "Williams says the answer depends on how deep the reader wants to go. Williams first recommends Avi's book, which Williams calls really nice.",
+          "For a gentler introduction, Williams suggests the early chapters of Lance Fortnow's The Golden Ticket, which imagines a world where P equals NP. For a more technical book, Williams mentions The Nature of Computation, which Williams recalls as by Mertens and Moore. Williams also recommends Sipser's Introduction to the Theory of Computation as a concise, well-written textbook."
+        ],
+        "evidence": [
+          {
+            "start": 4033.72,
+            "end": 4108.48
+          }
+        ],
+        "followups": [],
+        "speaker": "Ryan Williams"
+      },
+      {
+        "type": "qa",
+        "question": "What advice would Williams give an earlier self, knowing what Williams knows now?",
+        "answer": [
+          "Williams says one lesson came by accident: no one needs permission to work on very hard problems. In complexity theory, few people know what to do beyond simple structural results, which levels the field. The knowledge is open, so younger researchers can learn it and think about it without anyone's say-so.",
+          "Williams says another lesson is to avoid inertia. Researchers should now and then ask where they are heading and whether their current direction will lead where they want to be. Williams says this applies to life generally, not only research.",
+          "In research, Williams reevaluated each year's work by comparing what was known then with what is known now. Williams says this self-evaluation matters in a PhD program, because there are no easy metrics for progress. The only option is to compare the past self with the present self."
+        ],
+        "evidence": [
+          {
+            "start": 4112.12,
+            "end": 4302.8
+          }
+        ],
+        "followups": [],
+        "speaker": "Ryan Williams"
+      }
+    ],
+    "related": [],
+    "omissions": [
+      "Cold-open teaser and host introduction, 00:00.16 to 00:41.00. The introduction facts appear in the overview.",
+      "Sponsor read for WorkOS, 34:04.84 to 34:53.76.",
+      "Closing thanks, 1:11:45.24 to 1:11:53.96.",
+      "Host channel calls, guest-suggestion request, and keyboard Kickstarter promotion, 1:11:56.20 to 1:12:50.32.",
+      "Laughter, repeated caption fragments, and filler words throughout, for example at 08:37.80 and 38:53.14."
+    ]
+  },
+  "coverage": {
+    "source_id": "source-d01b8ceb8d9ebc26",
+    "sha256": "96cadf8b18bb86bc21f6ddbaaf18c63e828fcf83559e8b1ecc34409903bdb774",
+    "reviewed_chunks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "status": "included",
+    "reason": "All 5 chunks were read in full (about 11,268 words; runtime about 1:12:50). Kept 17 initiating rounds and 8 follow-ups. Ryan Williams is the only named speaker; the host is not named in the transcript, so host turns are described as the host. Figures stated as Williams's own estimates, not verified: the 75 and 80 percent P versus NP confidence, and the 45 percent NEXP versus EXP estimate. The three-sum bound the host reads out, the n to the 1.5 preprocessing example, and the linear decision tree remark are as spoken and unchecked. The 1975 date, the Patterson and Valiant, Cook and Mertz, and Hopcroft, Paul, and Valiant attributions, the k-SAT exponent trend, and the Stanford job link are Williams's own account. Book details are as spoken: Avi's book is named only by first name, and Mertens and Moore are given with 'I think'. Caption issues: the co-proposer of strong ETH is not named because the caption name ('Russell and Piazzo') looks garbled; the theory conference is not named because the caption reads 'stock conference'; the 3-SAT example is once called 2-SAT, and the text treats it as 3-SAT because the example uses a three-variable clause; the direction of the 80 percent NEXP versus coNEXP figure is ambiguous in the captions, so the block describes Williams's reasons without assigning a direction; the approximate 1.9 exponent for the 3-SAT bound is left out as unclear in the captions."
+  },
+  "editorial": {
+    "theme": "craft",
+    "question_rounds": 17,
+    "followup_count": 8,
+    "notes": "All 5 chunks were read in full (about 11,268 words; runtime about 1:12:50). Kept 17 initiating rounds and 8 follow-ups. Ryan Williams is the only named speaker; the host is not named in the transcript, so host turns are described as the host. Figures stated as Williams's own estimates, not verified: the 75 and 80 percent P versus NP confidence, and the 45 percent NEXP versus EXP estimate. The three-sum bound the host reads out, the n to the 1.5 preprocessing example, and the linear decision tree remark are as spoken and unchecked. The 1975 date, the Patterson and Valiant, Cook and Mertz, and Hopcroft, Paul, and Valiant attributions, the k-SAT exponent trend, and the Stanford job link are Williams's own account. Book details are as spoken: Avi's book is named only by first name, and Mertens and Moore are given with 'I think'. Caption issues: the co-proposer of strong ETH is not named because the caption name ('Russell and Piazzo') looks garbled; the theory conference is not named because the caption reads 'stock conference'; the 3-SAT example is once called 2-SAT, and the text treats it as 3-SAT because the example uses a three-variable clause; the direction of the 80 percent NEXP versus coNEXP figure is ambiguous in the captions, so the block describes Williams's reasons without assigning a direction; the approximate 1.9 exponent for the 3-SAT bound is left out as unclear in the captions."
+  }
+}

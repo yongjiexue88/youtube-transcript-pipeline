@@ -1,0 +1,557 @@
+{
+  "section": {
+    "id": "source-6625b13a9321c984",
+    "source_id": "source-6625b13a9321c984",
+    "title": "Casey Muratori: Premature Optimization, Clean Code, and the History Behind Software Slogans",
+    "kind": "interview",
+    "deck": "Casey Muratori traces the history behind the premature-optimization slogan, argues that object hierarchies and Clean Code rules misread older ideas and hide performance costs, and shares career and AI views.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Casey Muratori, a game-technology programmer who also researches computing history, argues in this interview that software slogans lose their meaning once they are cut off from the context that produced them. In his account, the \"premature optimization\" line was aimed at programmers who obsessed over cycle-shaving, not at programmers who ignore performance. He argues that object-oriented domain-model hierarchies took the wrong lesson from Sketchpad, and that the Clean Code rules about tiny functions and unknown types carry performance costs the book does not disclose. His remedies are basic performance education, bottom-up development grounded in working code, and reading technical papers. The conversation then covers his career, the parts of a game engine, and his views on AI-assisted programming. Everything below is Muratori's own view or recollection. His historical claims come from his research for conference talks and are not independently verified here.",
+        "evidence": [
+          {
+            "start": 68.48,
+            "end": 7004.48
+          }
+        ],
+        "heading": "Muratori's view: slogans need their history, and design needs contact with reality"
+      },
+      {
+        "type": "qa",
+        "question": "Where does the line \"premature optimization is the root of all evil\" come from, and why does it matter?",
+        "answer": [
+          "Muratori says the phrase matters mainly because people keep repeating and reinterpreting it, so its effects reach far beyond anything Knuth meant in context. Some readers take it with nuance. Others take it bluntly to mean that performance can be ignored until the end of a project, when the slow spots will be found and fixed. He notes that it is about 50 years old, which he calls an incredibly lasting impact for a rule of thumb. He gave a conference talk on its history because earlier reading had shown him how much he did not know. He calls this kind of computer-history digging dumpster diving and says he enjoys it. He adds that he is not a professional historian, so even a thorough read for a talk is shallow compared with what access to personal papers would allow.",
+          "Muratori traces two threads that converge around 1974. The first is the software crisis of the late 1960s and early 1970s. Early hardware was simple, so programming meant translating a straightforward description of a computation into machine instructions, close to what hand-optimizing assembly is today. As computing power grew in the 1960s, people wanted payroll systems, data analysis and graphical displays, and programmers were not ready. Abstractions that now go unnoticed, such as calling a library function to load a JPEG, required a cultural shift. The crisis was the recognition that existing methods would not scale.",
+          "The second thread is Knuth at Stanford learning to use execution profiles to see where a program spends its time and to guide where development effort goes. Muratori stresses that sampling and instrumenting profilers were brand-new concepts then, not tools everyone assumed they could have. He says Knuth and some students instrumented Fortran programs in 1970, though not very rigorously.",
+          "Knuth was also committed to structured programming, which Muratori describes as a set of ideas for improving the situation rather than a neat solution. In Muratori's reading, Knuth's message was that programmers could not spend all their time on tightly optimized assembly. They had to pick their battles and accept concessions to maintainability, and a routine that accounts for little runtime should not be obscured with hand-unrolled loops. Muratori adds that no optimizing compiler like LLVM existed, so such transformations were done by hand. He says the 1974 paper on structured programming with go to statements is the first print appearance he knows of, though Knuth may have said it in lectures earlier. He reads the passage as nuanced: be seriously concerned about efficiency, but know that an optimization matters before applying it, because needless optimization adds a cognitive burden for maintenance and debugging. Muratori reads the phrase as Knuth's way of reminding himself to think before deciding, and he cautions that he does not want to put words in Knuth's mouth."
+        ],
+        "evidence": [
+          {
+            "start": 68.48,
+            "end": 852.8
+          }
+        ],
+        "followups": [
+          {
+            "question": "So is this an engineering trade-off, with the lesson being to be mindful of where the cost is paid?",
+            "answer": [
+              "Muratori agrees, and adds that the audience determines what counts as the root of all evil. Today many programmers give optimization little or no thought, so the phrase sounds like encouragement to ignore performance, and he would highly dispute it as a good thing to say now. In the early 1970s, he says, the problem ran the other way: much of programming was clever assembly tricks to shave a cycle. To an auditorium full of people absorbed in that, the line corrects a pendulum swung too far in one direction. In his view it was still hyperbole, but less of an exaggeration then than it would be now."
+            ],
+            "evidence": [
+              {
+                "start": 856.64,
+                "end": 991.84
+              }
+            ],
+            "speaker": "Casey Muratori"
+          }
+        ],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "qa",
+        "question": "Did anything surprise you in the research behind your talks?",
+        "answer": [
+          "Muratori says constantly, and first names the personal side of the history. The people involved were friends and competitors, and that is lost when computing history is told in a sterile way. His example is Dijkstra, who kicked off the structured-programming line of thought, though Muratori declines to call it a revolution. Dijkstra's typewritten notes on structured programming were written at a low point. Muratori says Dijkstra and a part-time team at the Eindhoven university had done pioneering distributed-computing work, now widely recognized. Because they sat in a mathematics department that did not see it as math, the department disbanded the team, and Dijkstra was unsure what to do with his life. Muratori avoids calling that an existential crisis, preferring to quote the historical figures. His advice is to read what such people wrote beyond their technical papers, because it makes the story felt.",
+          "Two smaller finds did not make the talk. The first is a handwritten-annotated note by Tony Hoare about an idea he chose not to pursue, because after Hoare raised it at a conference, Peter Naur replied that multipass compilers are easy and he had just written a nine-pass one. Muratori says that, perhaps overreading with hindsight, the note pretty much describes static single assignment form, a standard compiler technique developed in the 1980s. He wonders half-seriously whether Naur accidentally set compiler science back by roughly 15 to 20 years.",
+          "The second is Margaret Hamilton's published defense of the Apollo flight software. Critics had pointed to its alarms as a failure, but Muratori says, from memory and without recalling the venue, that the computer was being used in a configuration it was not meant for and, instead of crashing, switched to backup modes and landed. He sees that as a triumph of fault-tolerant engineering. He says the episode shows that the more things change the more they stay the same: a successful project would draw the same pile-on on Twitter today."
+        ],
+        "evidence": [
+          {
+            "start": 993.44,
+            "end": 1470.24
+          }
+        ],
+        "followups": [
+          {
+            "question": "What made you conclude that Dijkstra was depressed?",
+            "answer": [
+              "Muratori says Dijkstra was a straight shooter, so no interpretation was needed. In a handwritten retrospective from later in life, Dijkstra says outright that he was very depressed in that period and gives his reasons. Muratori adds that Dijkstra could be wrong about the source of his depression, so he does not claim it is true just because Dijkstra said it.",
+              "He also observes that academics of that era produced a voluminous record and benefit from being forthcoming. It would be much harder to learn what people at a company such as Lockheed were thinking, he guesses, because of classification and because they have no habit of writing everything up."
+            ],
+            "evidence": [
+              {
+                "start": 1472.08,
+                "end": 1576.24
+              }
+            ],
+            "speaker": "Casey Muratori"
+          }
+        ],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "qa",
+        "question": "What is the people side of Dijkstra's \"Go To Statement Considered Harmful\"?",
+        "answer": [
+          "Muratori calls the story relatively simple and gives it as Dijkstra told it. At a conference in Tennessee, Dijkstra was talking outside with Brian Randell and others, the equivalent of the bar conversations at modern conferences, and gave an example of a problem with goto. Muratori says it involved enumeration and that he can explain it later, but the interview does not return to it. The listeners urged him to publish, since arguments over goto had been growing since about 1959. Dijkstra wrote it up under the title A Case Against the Goto Statement and sent it to Communications of the ACM.",
+          "Niklaus Wirth, whom Muratori describes as a language designer and the creator of Pascal, was the editor in charge. As Muratori tells it, Wirth did not want to wait for refereeing, so he ran the piece as a letter to the editor and retitled it Go To Statement Considered Harmful. Muratori says that confrontational title was not Dijkstra's own plan.",
+          "The reaction was bad. According to Knuth, Dijkstra received abusive and even threatening letters, much as would happen today. Muratori adds that by all accounts Dijkstra enjoyed pushing people's buttons, and he names Alan Kay, who liked Dijkstra, as the best source for that. Muratori therefore treats the letter as a flash point rather than the first attack on goto, and he calls Wirth's title a clickbait doozy."
+        ],
+        "evidence": [
+          {
+            "start": 1577.76,
+            "end": 1922.48
+          }
+        ],
+        "followups": [
+          {
+            "question": "How did these arguments play out in print, compared with social media today?",
+            "answer": [
+              "Muratori explains that it was a periodical, usually soft-bound, with a table of contents and a letters section. Some historians have digitized personal papers, and he says one can find online a personal exchange between Dijkstra and an advocate of functional programming that reads like a flame war conducted on paper, since there were no quick Twitter replies. Knuth's contribution was different. He published open letters to the authors of the book Structured Programming, including Dijkstra, reviewing it and saying what he did not find compelling. Muratori says it reads as respectful, so he does not count it as a flame war.",
+              "He adds that Dijkstra numbered his writings with EWD labels himself, and some non-technical ones, such as trip reports, are online with personal anecdotes. For a real heart-to-heart he found nothing beyond what appeared in papers. He laments that computer historian is not a job anyone pays for, and says he would almost take it."
+            ],
+            "evidence": [
+              {
+                "start": 1923.84,
+                "end": 2108.88
+              }
+            ],
+            "speaker": "Casey Muratori"
+          }
+        ],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "qa",
+        "question": "What is the 35-year mistake in your talk?",
+        "answer": [
+          "Muratori says the idea came from a practical problem. In editors such as the 3D graphics editors he has worked on, a user can multi-select a mix of objects, say text, shapes and hand-drawn strokes, and the interface should show which properties can be edited across them, such as color, and apply the edit to all. Many programs never solve this architectural problem and are frustrating as a result. While rewatching a demo of Ivan Sutherland's Sketchpad, a light-pen graphics program from the early 1960s, he wondered how Sutherland had solved it in assembly with almost no tools. Sketchpad could constrain two lines to be perpendicular, a feature he says AutoCAD offered only around 2007. Reading the thesis and code, he realized the design was essentially an entity component system, which he calls the state of the art for real-time architecture, operating on one property across many different things at once.",
+          "His editorial point is that object-oriented teaching struggled with this problem for a long time. He says the pedagogy was to build a domain-model hierarchy, such as employees divided into contractors and full-time or part-time staff, and that this architecture does not suit cross-cutting operations. He says he documents this fully in the talk. The irony he calls the mistake is that Sketchpad's architecture showed the solution, one that could arguably be framed in an object-oriented way, yet the 1980s and 1990s took away a different lesson. In his account Alan Kay looked at Sketchpad and took from it the ability to hold a shape without knowing what it was and ask it to draw, which Muratori finds much less interesting and rarely architecturally useful. He softens the claim: bad is too strong in the absolute, since sometimes high-level Smalltalk-style thinking is appropriate, but it was bad in the way it was applied."
+        ],
+        "evidence": [
+          {
+            "start": 2110.0,
+            "end": 2488.88
+          }
+        ],
+        "followups": [
+          {
+            "question": "Why doesn't a class hierarchy work for this problem?",
+            "answer": [
+              "Muratori says it is easy to see. In a hierarchy modeled on the real world, a shape has derived circles and triangles, and encapsulation is drawn around the most derived class. A circle has a radius but a shape does not. When something has to work across many shapes, such as changing scale or color, it cannot know what is inside those encapsulated classes. The usual fix is to add accessors and iterators at the top that probe the lower classes. That in effect rebuilds the Sketchpad-style architecture on top of the hierarchy and leaves the hierarchy doing nothing for you.",
+              "He does not say deriving is useless, since saying one thing is like another and borrowing its implementation can help. His objection is to teaching people that building the hierarchy makes the architecture work. Most real needs are cross-cutting operations over data inside the derived classes, and virtual functions at the top of a tall hierarchy are a poor fit. His alternative is still object-oriented, but the first-class objects are the things shapes are built from, such as a radius or a center, not the on-screen triangle and circle. He believes many object-oriented programmers already think this way and would not object."
+            ],
+            "evidence": [
+              {
+                "start": 2489.84,
+                "end": 2742.64
+              }
+            ],
+            "speaker": "Casey Muratori"
+          },
+          {
+            "question": "Why not put color in the base class and let each shape use it?",
+            "answer": [
+              "Muratori says that is what tends to happen. Base classes accumulate every property any derived class might need, which he says were once called fatty base classes, with accessors for primary, secondary and tertiary colors. Nothing is wrong with running a program that way, but then the hierarchy gives no encapsulation benefit because everything was forced into the base, and a single class called shape would do.",
+              "On the entity-component alternative, he says he does not personally use ECS and does not want to advocate it. The idea is to turn the design on its side. The physics system knows how physics data is stored, and any entity that participates holds a handle valid across systems, so encapsulation stays around the system. Something can have several physics handles, or none, in which case the physics system simulates nothing for it. Whether it is the world's best architecture he will not argue, but he says it is a lot better than domain-model hierarchies."
+            ],
+            "evidence": [
+              {
+                "start": 2745.2,
+                "end": 2933.04
+              }
+            ],
+            "speaker": "Casey Muratori"
+          }
+        ],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "qa",
+        "question": "How does your \"Clean Code, Horrible Performance\" video fit this trade-off, and why is Clean Code in quotes?",
+        "answer": [
+          "Muratori says the quotes are there because clean code, like object-oriented programming, means different things to different people, and two programmers rarely agree on whether code is clean. His video targeted the specific advice in the book Clean Code. One piece is that code should not know the types it operates on, so it works through base classes, effectively dynamic dispatch in many languages. The other is that functions should be very small, with numbers he calls strange, around four or five lines.",
+          "In a compiled language such as C++, he says, tiny virtual functions on types the compiler cannot see, or that live in another module, are a toxic combination. The compiler can inline a four-line function it can see, but not one behind a virtual call. He also corrects a misreading of the short video. He does not think virtual calls themselves cost much, since the cost depends on prediction and is less than people think. In a hardcore optimization scenario you would avoid them, but that was not the bad part. The real cost is that the compiler cannot merge code, inline, remove waste, unroll loops or widen them to use SIMD, because it cannot see what is on the other end.",
+          "He says the video was not an attack on readable or maintainable code. He has no trouble maintaining functions of 30 or 50 lines, does not find five a magic number, and finds it easy to write code where types are known at compile time without making it hard to read."
+        ],
+        "evidence": [
+          {
+            "start": 2987.92,
+            "end": 3287.36
+          }
+        ],
+        "followups": [
+          {
+            "question": "Would you recommend that software engineers read Clean Code?",
+            "answer": [
+              "Muratori calls it a mixed bag and says he does not disagree with everything in it. Giving variables understandable names, for example, is good advice he follows himself. His objection is to handing out rules of thumb without telling readers about the problems that come with them.",
+              "He sees a tendency, rooted in the misuse of \"premature optimization is the root of all evil,\" to treat performance as something books and courses need not discuss. He says the book Refactoring opens by saying performance concerns are usually fine, which he considers fundamentally untrue. In his view such books should discuss in detail the performance problems their advice is likely to cause. A reader who understands the trade-off can decide it is acceptable, which he says is a different engineering approach from not worrying about performance until the end.",
+              "He adds that he does not really do AI work, but suspects this matters more now, since people instructing AI tools on how to structure code should include performance trade-offs in those instructions. He allows that he could be wrong about that."
+            ],
+            "evidence": [
+              {
+                "start": 3288.8,
+                "end": 3512.96
+              }
+            ],
+            "speaker": "Casey Muratori"
+          }
+        ],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "qa",
+        "question": "What are the high-value performance considerations that cost little to think about?",
+        "answer": [
+          "Muratori's first answer is awareness: roughly understanding the performance characteristics of the hardware, and of the network if there is one. A little awareness goes a long way. For example, someone who knows that network latency and throughput are different things can batch work properly up front, whereas someone who does not may get far into a project before discovering that the whole design is serial and can never run well over a network.",
+          "The lowest-hanging fruit, he says, is to get some education in how a machine works, what makes it fast or slow and what it struggles with. He calls that the highest-impact, lowest-cost step, because the training is done once and then acts as an alarm bell when he cannot see a path to a design running well. As long as the team can see how they would optimize it later, optimization work can be delayed, and they will not paint themselves into a corner where only scrap and rewrite remains."
+        ],
+        "evidence": [
+          {
+            "start": 3514.0,
+            "end": 3691.52
+          }
+        ],
+        "followups": [],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "qa",
+        "question": "Where does bad code come from?",
+        "answer": [
+          "Muratori says that in everything he has seen on past projects, bad code comes from roughly one source: not dealing with the actual thing that is happening. He finds that upfront design, making many decisions without implementing anything, universally leads to the worst code. He says he personally cannot hold all the details of complex software in his head, including what happens when instructions reach the CPU. A design worked out ahead of time forgets important details, which produces the hilarious APIs where one must create many objects, connect them, build a filter graph and call compile, when all that was wanted was one function that low-pass filters a buffer. The cause, in his view, is that the designers never looked at what the real code looks like when solving the problem.",
+          "Maybe some people have brains large enough to do it upfront, but he has never met one. A narrowly specified problem such as a single mathematical operation with known inputs and output can be worked out on paper. For something like a web browser, he says, the details are where the complexity lies, and designing without them gives bad results."
+        ],
+        "evidence": [
+          {
+            "start": 3696.64,
+            "end": 3880.96
+          }
+        ],
+        "followups": [
+          {
+            "question": "How do you avoid writing bad code?",
+            "answer": [
+              "Muratori tries to start from actual solutions and work up, bottom-up rather than top-down, though he notes that top-down is not quite the same as upfront design. If a project needs a rasterizer, he builds one, sees what it does and how it is most straightforwardly called, and makes an API out of that. Abstraction then comes from working code instead of being pushed down from the top, only to discover that it is a poor way to use a rasterizer. This guarantees an architecture that is at least good for one use. To make it reusable, he builds several varied users of the rasterizer together and makes abstraction decisions that work across all of them. He would question anyone who says they can design a rasterizer API for many people without writing any of it, unless they have written many before and so have already done what he describes."
+            ],
+            "evidence": [
+              {
+                "start": 3881.84,
+                "end": 3975.44
+              }
+            ],
+            "speaker": "Casey Muratori"
+          },
+          {
+            "question": "Is the design-doc-before-code process common at large companies a terrible idea?",
+            "answer": [
+              "Muratori calls it an absolutely terrible idea, but says a slight modification would satisfy him. If the time before coding is spent writing experimental test code, such as a little rasterizer, and the document records which API those experiments showed to be good, that follows his procedure almost exactly. He does not usually produce upfront documentation because he works on smaller teams, but it seems reasonable for communicating research to a wider audience, as long as the due diligence of checking that it works in practice was done."
+            ],
+            "evidence": [
+              {
+                "start": 3977.68,
+                "end": 4077.76
+              }
+            ],
+            "speaker": "Casey Muratori"
+          },
+          {
+            "question": "So the design is a kind of paired prototyping, building as you go to get a sense of reality?",
+            "answer": [
+              "Muratori agrees. He would be comfortable with a team that wants to document before developing, perhaps a very large organization with good reasons, provided the process is not just typing on paper. The API decisions should come from usage code the team has actually implemented, at least experimentally. He does not want to hear that the team thought it all the way through, because he has seen people believe that, himself included, and then forget an important thing and make a really stupid design."
+            ],
+            "evidence": [
+              {
+                "start": 4079.2,
+                "end": 4152.32
+              }
+            ],
+            "speaker": "Casey Muratori"
+          }
+        ],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "qa",
+        "question": "What is \"the only unbreakable law\" in software engineering?",
+        "answer": [
+          "Muratori says he gave that lecture while trying to name one thing about architecture that is probably not wrong, since most architecture ideas are observations, not laws. The only one that feels like a real law to him is Conway's law. He says a physicist would laugh at calling it a law and that it is more a hypothesis than a theory, but it is the software-engineering claim he would bet on being validated if we ever could test it.",
+          "His version of the argument applies to any set of workers, human or AI agents, whose communication with each other is slower than each one's internal computation. To gain from parallelization you must decide who works on what. In his car example, one person designs the body and another the wheels. That decision locks in that iteration across the boundary will be slower than within either part, so the degree of harmony between the two designs suffers. The consequence Conway's paper points out, which Muratori places in the 1960s at least and possibly the 1950s, is that products come to resemble the structure of the organization that produced them. The boundary will be visible in the object, because the interface between parts is not as good as the parts themselves. The pithy form is that products look like the org chart, which he calls a downstream consequence of the rule."
+        ],
+        "evidence": [
+          {
+            "start": 4154.32,
+            "end": 4442.88
+          }
+        ],
+        "followups": [
+          {
+            "question": "Is this the idea that shipping your org chart is a bad thing at big tech companies?",
+            "answer": [
+              "Muratori says part of why he treats it as unbreakable is that it is somewhat unavoidable. It is something to be aware of and mitigate. Where lines are drawn has consequences for what ships, so over time one should try to place the boundaries where they hurt the product least. He suspects the same will become true for AIs, which will need to partition problems in ways that respect that lower communication bandwidth. He also finds it a good explanation for why something is not integrated into something else: because they were two different teams, and integrating them would cost much more."
+            ],
+            "evidence": [
+              {
+                "start": 4446.16,
+                "end": 4556.88
+              }
+            ],
+            "speaker": "Casey Muratori"
+          }
+        ],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "qa",
+        "question": "How did you get into programming, and what have you worked on?",
+        "answer": [
+          "Muratori says he started programming very young because his father worked at Digital Equipment Corporation, maker of the PDP-11 and the VAX. He describes the company as a case study in how failing to adapt to a technological change leads to demise, with parts absorbed by Intel and Compaq. He grew up on the east coast, got a Microsoft internship while pretty young, and came west around 1995, before everything was on the web. He has worked in the game industry since, almost always on technology, and says he is famously terrible at game design.",
+          "He is proudest of a character animation system he wrote at Rad Game Tools, apart from a texture compressor written by Jeff Roberts. He says the first version, released in 1999, was awful because he was new. The second, around 2001, he thinks was done well, at a time when people thought licensable game technology of that kind could not meet performance and integration demands. He says it is still in use with a largely unchanged architecture and that he recently learned Larian uses it in Baldur's Gate 3. He adds that it is not a product one would make today, since engines are now monolithic. He also worked briefly on the walk system for The Witness, by Jonathan Blow and team, of which he thinks the design was good and the implementation partly janky."
+        ],
+        "evidence": [
+          {
+            "start": 4557.84,
+            "end": 4841.92
+          }
+        ],
+        "followups": [
+          {
+            "question": "What drew you toward games and away from a Microsoft career?",
+            "answer": [
+              "Muratori says the full answer is probably all BS, and that he is more affected by the people around him than he used to admit. He was only ever an intern. The group he was to join had a manager who had a massive flame-out with upper management and walked out the week before the interns arrived. The interns were handed to a test lead and a colleague, and his first task was a parser for animated cursor files, which he found meaningless. He did not know assembly at the time, and says that with a team that taught him to write device drivers in assembly he might still be at Microsoft.",
+              "Instead, he says, a brash youngster gravitates toward people doing impressive or technologically interesting things. The people he found impressive were colleagues leaving Microsoft to do a startup, and if they had stayed, he thinks he might have too. This is his best reconstruction in hindsight."
+            ],
+            "evidence": [
+              {
+                "start": 4844.0,
+                "end": 5150.4
+              }
+            ],
+            "speaker": "Casey Muratori"
+          },
+          {
+            "question": "Moving across the country for a startup sounds risky. Why did you do it?",
+            "answer": [
+              "Muratori agrees it was risky, and says a startup then meant scrappy people in a crummy office, not venture funding and free sodas. He did not really know why he did it, other than having had bad experiences with education, wanting no more school and wanting to work, and this was the easiest way.",
+              "He does not regret it. Later work let him spend months on things like a linear least-squares solver or the walk system, which he sees as the kind of deep, single-problem work, with paper reading and a small novel contribution, that people do in a master's or PhD thesis. He says he was lucky to get that, and had he not, he could imagine regretting skipping graduate study."
+            ],
+            "evidence": [
+              {
+                "start": 5151.6,
+                "end": 5299.2
+              }
+            ],
+            "speaker": "Casey Muratori"
+          },
+          {
+            "question": "Was there pay at that startup, and what did you take from it?",
+            "answer": [
+              "Muratori says it was pretty rough and did not last long. He soon moved to an actual game company and then to Rad Game Tools, where he stayed for quite some time. His negative takeaway is that startups are hard and probably not worth doing without many people and lots of funding.",
+              "The positive one is that he worked with Chris Hecker, to whom he gives basically complete credit for teaching him to read technical papers. Before that he thought math was stupid and had no idea what to do with a SIGGRAPH proceedings. He learned to use CiteSeer, a precursor to Google Scholar, and to crawl references. He says without that experience he would not have given the two talks discussed here, since they consist of him crawling every reference back and back, and he does not know whether he would have learned that without someone conveying the importance of reading the scholarship."
+            ],
+            "evidence": [
+              {
+                "start": 5301.12,
+                "end": 5442.72
+              }
+            ],
+            "speaker": "Casey Muratori"
+          }
+        ],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "qa",
+        "question": "For someone young, should they take the common big-company path or the chance on a startup?",
+        "answer": [
+          "Muratori calls it a really tough question and says the advice is to think about what you want to do every day. The things he regrets are times he chose or had to do things he was not happy doing daily. Both paths are blind bets: a startup might work out and a big company might be interesting, or not. So optimize for the day-to-day experience you want, and keep checking. If six months in you do not like what you do every day, get out.",
+          "He suggests imagining honestly what working at a startup will be like: is it thrilling, being on the edge, collecting war stories about pulling off the demo? If that sounds exciting, he says you should do it, even if you expect the startup to fail, much like backpacking across Europe or playing guitar at a nightclub. The question is whether you will look back and be glad you did it. He thinks most people, if honest and free of motivated reasoning, can guess better than his advice would.",
+          "The big-company side may suit someone who values security or stability, for example while dating, looking for a partner or starting a family, because not everything fulfilling in a life centers on computing."
+        ],
+        "evidence": [
+          {
+            "start": 5444.4,
+            "end": 5690.64
+          }
+        ],
+        "followups": [],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "qa",
+        "question": "What are the big software pieces in a video game?",
+        "answer": [
+          "Muratori says the biggest mental shift from the input-process-output model taught in programming is that a game or any simulation keeps a world state and updates it at a regular interval. Nothing waits for input; everything is always happening in real time. The components are built around this idea, with the depth depending on sophistication. For networked games, the client's world state may be provisional: the authoritative simulation runs on a server, and the client predicts motion forward from the last information it has to avoid waiting on latency. The host relates this to online-game lag, where other players keep moving and then jump into place when the connection catches up, and Muratori confirms."
+        ],
+        "evidence": [
+          {
+            "start": 5692.56,
+            "end": 5995.2
+          }
+        ],
+        "followups": [],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "table",
+        "title": "Main components of a game, as Muratori describes them",
+        "headers": [
+          "Component",
+          "Role as Muratori describes it"
+        ],
+        "rows": [
+          [
+            "World state (entities)",
+            "Stores what is in the world, where it is, what state it is in and what it is doing now."
+          ],
+          [
+            "Update step",
+            "Advances the world state. Can include physical simulation and game AI such as pathfinding or deciding whether to attack the player."
+          ],
+          [
+            "Renderer",
+            "Presents the world state. Traditionally a major part of big-budget games, where visuals are a selling point, and much smaller in indie pixel-art games."
+          ],
+          [
+            "Asset streaming",
+            "Loads textures, models, world data, physics and collision models on demand from disk and caches them for the renderer and physics, instead of loading everything up front."
+          ],
+          [
+            "Audio and music",
+            "Triggers sounds, ambient effects and music from the world state, using streamed assets."
+          ],
+          [
+            "Networking",
+            "Lets clients talk to a server that runs the authoritative simulation. Clients predict world state forward to hide latency, which matters for competitive multiplayer."
+          ]
+        ],
+        "evidence": [
+          {
+            "start": 5748.16,
+            "end": 5981.04
+          }
+        ]
+      },
+      {
+        "type": "qa",
+        "question": "Why is it \"not even slightly crazy\" that NASA does not allow recursion?",
+        "answer": [
+          "Muratori explains that in a procedural language, calling a function gives you storage on the program stack for locals and saves the return address so execution comes back to the right place. Neither is something you could not implement yourself: you can break the work into pieces, use a state machine, or keep your own stack and push data onto it. Recursion only lets you reuse code someone already wrote, which is convenient because it is built into the language.",
+          "The catch, he says, is that using recursion assumes there is room on the stack, with no real way to check. One could try to compute how many recursion levels remain, but a compiler change to the stack layout would invalidate the calculation. If NASA wants astronauts not to crash into the moon, it is far more logical to turn the algorithm into a loop with an explicit stack and a state machine. That can be reasoned about clearly, gives exact bounds and behaves the same regardless of the compiler. He assumes NASA is not doing this for fun but because lives, or at minimum millions of dollars of equipment, are at risk, and a stack overflow there is not just a restart."
+        ],
+        "evidence": [
+          {
+            "start": 5997.2,
+            "end": 6189.92
+          }
+        ],
+        "followups": [],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "qa",
+        "question": "You replied to the vibe-coding tweet that software would get a lot worse. Has that proved accurate?",
+        "answer": [
+          "The host places the tweet in February 2025, about a year and a half earlier. Muratori says the \"whole lot worse\" part depends on something that may not happen: that typing a request into a computer and shipping the result to production becomes a common way of working, including for people without a computer-science background. He says a person well trained in computer science using AI today can make substantially better code than someone who knows nothing about the field using the same tool, and that the difference is dramatic from what he has seen. His concern was that nobody who knows computer science would check the code, and in the worst case some random person in marketing types a request and crosses their fingers.",
+          "He frames it as a race between two curves. One is how good and autonomous AI becomes, able to make better decisions without the user. The other is how quickly it is adopted by people who are less capable and pay less attention to its output. If the AI is always good enough for what it is being adopted for, software need not get significantly worse. If the curves go the other way, he says, there is a lot of trouble. He feels the situation is on a knife's edge and offers no prediction.",
+          "Muratori hopes the AI curve wins. He understands people who dislike AI and want it to fail, and says he is no fan of AI himself. But with so many people using it, he thinks it would be bad if it stopped improving now, as he believes would have been true six months ago and is probably still true. For software not to be terrible, he says, one has to hope the AIs are significantly better again in six months, which he sees as the only way out of the current situation, though he is unsure whether that is fair."
+        ],
+        "evidence": [
+          {
+            "start": 6191.68,
+            "end": 6449.28
+          }
+        ],
+        "followups": [],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "qa",
+        "question": "Why did you reply \"slopify\" to Shopify's internal AI memo?",
+        "answer": [
+          "The host reads the tweet as leadership pushing the adoption curve harder than the AI's capabilities. Muratori says he also just liked the pun. What he finds most unfortunate about how companies adopt AI is their reasoning that not getting in early would be a disaster, so everyone must adopt now, before they know whether it can do what they want or whether the outcomes will be good. He understands why they believe it is critical.",
+          "To him it is terrifying, because the sane approach with any technology is to measure its capabilities, see whether it solves your problems faster than your current method, and put it into a workflow once it is a net positive. A team whose job is to assess it is a good idea, but he does not think everyone should be told to use a ton of tokens, or that people should be running 3,000 agents on a cluster talking to each other. He does not think adoption has gone in the best way for software quality.",
+          "He tempers this with a caveat he adds to most AI criticism: software was not exactly a five-nines industry to begin with, and its quality was pretty low going into the AI era. Some AI uses may make things worse, but he calls the narrative that software was amazing until AI ruined everything completely ridiculous and untrue."
+        ],
+        "evidence": [
+          {
+            "start": 6450.88,
+            "end": 6621.92
+          }
+        ],
+        "followups": [],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "qa",
+        "question": "Do you have a top technical book recommendation for engineers?",
+        "answer": [
+          "Muratori says no, and uses the question to pitch reading technical papers, both historical and current. He says the industry would benefit from people being more aware of what is happening in their field. It is daunting at first: papers are confusing, hard to find, and seem to take too long if you do not know how to skim them to decide whether a section is worth your time. But he says that a few months of reading a paper at night or on a lunch break gets you your bearings. You learn where the good papers are and where they are published, and how to spend your time on them.",
+          "He thinks this is tremendously valuable in nearly all fields, perhaps excluding a few small ones where people do not write many papers. He says he finds it so rewarding that he reads papers in disciplines he does not work in, such as security research, even though games rarely involve that kind of threat model, simply because there is so much good material to learn from."
+        ],
+        "evidence": [
+          {
+            "start": 6624.08,
+            "end": 6723.04
+          }
+        ],
+        "followups": [
+          {
+            "question": "How would a generalist find a first paper worth reading?",
+            "answer": [
+              "Muratori suggests pulling up the proceedings of USENIX, finding a paper that sounds interesting, or trying the best-paper award of a conference, which he says USENIX tends to have. He says those proceedings usually cover operating systems and systems design, topics most people can relate to. By contrast, he says, opening a SIGGRAPH proceedings would turn up something like neural networks for cloth simulation, which someone outside graphics cannot relate to.",
+              "Another option is Google Scholar. If you are curious about a consensus algorithm such as Paxos that came up at work, you can type it in and get a list of papers with cited-by counts, which he says is, to a certain extent, an indicator of how influential a paper was. He adds that it will not be for everyone and some people may bounce off, but it is worth a try."
+            ],
+            "evidence": [
+              {
+                "start": 6724.88,
+                "end": 6866.56
+              }
+            ],
+            "speaker": "Casey Muratori"
+          }
+        ],
+        "speaker": "Casey Muratori"
+      },
+      {
+        "type": "qa",
+        "question": "If you could advise yourself at the start of your career, what would you say?",
+        "answer": [
+          "Muratori says he would tell himself to get into low-level programming earlier. By his rough estimate he did not learn to analyze or write assembly properly until roughly the last decade (the captions garble the year). He had always wanted to know how, and the advice would have been to go down the hall and ask someone to show him how they write this.",
+          "He thinks many young people fear appearing not to know things, and that this is a real impediment to learning. He says it was probably true of him. Saying \"I don't understand this, please explain it to me\" is among the most useful things you can do, and most people will happily oblige if they are not unkind. Some very good engineers are poor at explaining what they do, so the first explanation may not be good, but if you keep asking you will find someone who can explain clearly. He adds that today he would not need this advice, because the internet has so much good information and he could have taught himself, which was not possible when he started."
+        ],
+        "evidence": [
+          {
+            "start": 6868.08,
+            "end": 7004.48
+          }
+        ],
+        "followups": [],
+        "speaker": "Casey Muratori"
+      }
+    ],
+    "related": [],
+    "omissions": [
+      "Cold-open teasers and the first minute of banter, including the Dijkstra clip, the video-game question answered later, and the promise to keep AI mentions to a minimum, from 00:00.24 to 01:06.08, are represented once in the overview and the first question.",
+      "A compliment to the show around 04:52.48 to 05:36.32 and a few asides about pronunciation and memory are omitted.",
+      "Sponsor reads for WorkOS and Jira, starting partway through the 48:05.68 to 48:53.04 caption block and running to 49:45.44, are omitted.",
+      "Closing thanks, the call for comments and guest suggestions, and the keyboard Kickstarter promotion from 01:56:46.48 to the end are omitted."
+    ]
+  },
+  "coverage": {
+    "source_id": "source-6625b13a9321c984",
+    "sha256": "6ece3dff59470172e371bdd7a624f80a9f662e1184ec1c364258b4170dcd5786",
+    "reviewed_chunks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "status": "included",
+    "reason": "All 10 compact chunks were read in full (about 1 hour 57 minutes; chunks overlap by a few segments). Kept 16 initiating rounds, 14 follow-ups and one summarizing table. The host is not named in the transcript, so the host appears unnamed. Historical claims (Knuth, Dijkstra, Wirth, Hoare and Naur, Hamilton, Sketchpad as an entity component system, the AutoCAD 2007 date, Conway's paper date) are Muratori's own recollections or readings from his talk research, and several are hedged by him; none were verified. The transcript does not explain the 35-year figure. Auto-captions garble some names and one year, so uncertain names were left out or described as unclear. The February 2025 tweet date and the year-and-a-half interval come from the host. The manifest lists source-1b6652cb04b62a22 as a title-overlap candidate; it was not examined for overlap."
+  },
+  "editorial": {
+    "theme": "craft",
+    "question_rounds": 16,
+    "followup_count": 14,
+    "notes": "All 10 compact chunks were read in full (about 1 hour 57 minutes; chunks overlap by a few segments). Kept 16 initiating rounds, 14 follow-ups and one summarizing table. The host is not named in the transcript, so the host appears unnamed. Historical claims (Knuth, Dijkstra, Wirth, Hoare and Naur, Hamilton, Sketchpad as an entity component system, the AutoCAD 2007 date, Conway's paper date) are Muratori's own recollections or readings from his talk research, and several are hedged by him; none were verified. The transcript does not explain the 35-year figure. Auto-captions garble some names and one year, so uncertain names were left out or described as unclear. The February 2025 tweet date and the year-and-a-half interval come from the host. The manifest lists source-1b6652cb04b62a22 as a title-overlap candidate; it was not examined for overlap."
+  }
+}

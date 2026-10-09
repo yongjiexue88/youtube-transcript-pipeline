@@ -1,0 +1,604 @@
+{
+  "section": {
+    "id": "source-5f7cf6e81e665bd5",
+    "source_id": "source-5f7cf6e81e665bd5",
+    "title": "Martin Odersky: Languages as Contracts for Humans and AI",
+    "kind": "interview",
+    "deck": "The Scala creator compares language tradeoffs, explains functional reasoning and capability safety, and reflects on the culture and surprises of building a language.",
+    "blocks": [
+      {
+        "type": "qa",
+        "question": "What is functional programming, and why should an imperative programmer care?",
+        "answer": [
+          "Functional programming emphasizes values and functions that transform those values. An imperative program commonly changes variables, array elements or object fields; a functional program more often produces a new result from its inputs. Odersky likens the latter to familiar mathematical reasoning: evaluating a polynomial does not secretly change the polynomial or another value elsewhere.",
+          "The practical advantage is predictability. Hidden mutations, global variables and effects on object fields enlarge the context a reader must understand before trusting a function. Keeping most of a program pure makes local reasoning easier. Real programs still interact with the world, so his goal is to postpone effects and keep a mostly pure core, rather than pretend that effects can disappear."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 40,
+            "end": 178
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "What inconvenience does that approach introduce?",
+        "answer": [
+          "An imperative programmer has to learn a different way to express computation. Odersky believes the initial effort can pay back in clearer code and less debugging, but he cautions against treating maximum purity as the goal. Wrapping every effect in a monadic framework can become inconvenient, and he would not necessarily choose that style for his own Scala programs.",
+          "His practical preference is roughly “95 percent” pure computation with a small, explicit effectful remainder. That is an illustrative design heuristic, not a measured threshold. Documenting a necessary effect can be a reasonable stopping point; the benefit depends on whether the discipline improves the program people actually need to maintain."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 178,
+            "end": 295
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "Do studies prove that functional programming produces more correct software?",
+        "answer": [
+          "Odersky does not offer a conclusive quantitative answer. Studies of programming paradigms and type systems are difficult to design and their interpretations are disputed. For a small program, recursion versus a loop may largely be a matter of taste; he expects the ability to reason locally to matter more as a system grows.",
+          "His own judgment favors the combination of functional programming and static types. Proof-oriented languages provide another reason for that preference: their functional foundations fit mathematical reasoning. He presents this as a technical intuition and research direction, rather than an established numerical productivity claim."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 295,
+            "end": 402
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "Why choose Scala today?",
+        "answer": [
+          "Scala was designed to combine object-oriented and functional programming into one coherent language. Odersky values the combination because functions and immutable values need to live within modules, components and interfaces. He thinks functional communities sometimes underestimate the importance of those boundaries, although ML-family languages provide powerful module systems.",
+          "The attraction is therefore more than having two sets of syntax available. A programmer can organize a component with objects and interfaces while implementing its transformations with functional techniques."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 402,
+            "end": 515
+          }
+        ],
+        "followups": [
+          {
+            "question": "What convenience does the object-oriented side add compared with a language such as Haskell?",
+            "answer": [
+              "Odersky calls it the “power of dot”: an object gives an IDE a useful context for discovering its methods and fields. A large collection of free functions offers less immediate guidance. This is a convenience of navigation and organization, rather than a claim that functional languages cannot express the same computation."
+            ],
+            "evidence": [
+              {
+                "start": 470,
+                "end": 515
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "qa",
+        "question": "Which languages would you choose for systems programming?",
+        "answer": [
+          "Odersky makes memory safety a central selection criterion. For work close to hardware, embedded systems and other low-level settings, he highlights Rust. For middleware, cloud services and application servers, he sees Go as a strong choice. These are different layers of the stack, so he does not treat one language as a universal winner."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 515,
+            "end": 566
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "Where do Rust and Go fit relative to Scala?",
+        "answer": [
+          "Rust offers control over performance and a small memory footprint without relying on a garbage collector. Scala normally assumes garbage collection and enough memory to support it, although Odersky says modern collectors have greatly improved pause behavior. He thinks Rust is sometimes used higher in the application stack than its benefits justify, imposing intellectual and implementation costs where garbage collection would be acceptable.",
+          "Go deliberately limits expressiveness to encourage a recognizable style. That can make an unfamiliar codebase easier to read and reduces the temptation to build elaborate abstractions. Odersky welcomes the addition of generics, while acknowledging the cultural advantages that came from the language’s earlier simplicity."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 567,
+            "end": 763
+          }
+        ],
+        "followups": [
+          {
+            "question": "Can Scala run with garbage collection switched off?",
+            "answer": [
+              "Not as a normal production option in the discussion. Odersky describes research into custom allocators and type-system rules that could prevent dangling references, but distinguishes those experiments from capabilities programmers can depend on today. His practical answer is to use Scala’s garbage collector."
+            ],
+            "evidence": [
+              {
+                "start": 711,
+                "end": 763
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "qa",
+        "question": "What does Zig offer compared with Rust?",
+        "answer": [
+          "Odersky admires Zig’s compile-time computation and inlining model. He finds it conceptually clean and powerful compared with Rust’s macro facilities. Scala’s inline functions pursue a related idea: replace a call with the function body early enough to specialize and optimize the result.",
+          "He emphasizes a distinction in Scala’s design: inlining should not introduce fresh type errors after a function has been accepted. He believes Zig permits more flexibility at that stage, and compares the diagnostic risks with difficult C++ template-instantiation errors. His remarks about Zig are an informed comparison with explicit limits to his familiarity, not a comprehensive audit."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 763,
+            "end": 943
+          }
+        ],
+        "followups": [
+          {
+            "question": "What does an inline function actually do?",
+            "answer": [
+              "An inline annotation directs the compiler to substitute the function’s body at a call site, making arguments such as a known lambda visible to further optimization. Odersky distinguishes this guaranteed language-level transformation from an optimizer that may independently decide whether inlining is worthwhile."
+            ],
+            "evidence": [
+              {
+                "start": 850,
+                "end": 943
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "qa",
+        "question": "Which dynamically typed languages stand out to you?",
+        "answer": [
+          "Python stands out for its reach, readable syntax and ecosystem. Scheme appeals to Odersky for its theoretical foundations. He separates popularity from conceptual interest: the language with the larger ecosystem need not be the one that teaches the most elegant underlying model."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 945,
+            "end": 983
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "How does Scala compare with Python?",
+        "answer": [
+          "The languages have moved closer in some surface features. Python has added optional typing and pattern matching, while closures, generics and stronger types have spread widely across programming languages. Scala 3’s syntax can also look more familiar to a Python programmer.",
+          "The differences remain significant. Scala’s type checking is built into the language’s normal mode of operation; Odersky sees Python’s optional checks as less comprehensive and less central to its culture. Python is also an excellent glue language for fast native libraries such as numerical and data-processing packages. Similar syntax does not make their runtimes, guarantees or ecosystem strengths interchangeable."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 983,
+            "end": 1110
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "Which languages and experiences influenced Scala?",
+        "answer": [
+          "Odersky began with an imperative background and studied under Niklaus Wirth, encountering the Pascal and Modula tradition. ML, OCaml and Haskell subsequently changed his view of programming. Work with Philip Wadler on Pizza explored how functional techniques could be made accessible on the Java platform.",
+          "Writing a Java compiler before Java 1.0 also changed his initially dismissive view of the language: the platform offered practical value. Scala became a later attempt to bring together Java-style objects, the modular strengths of OCaml and functional programming ideas associated with Haskell. The design grew from implementing and using languages, not simply listing desirable features."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 1112,
+            "end": 1248
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "Did Java’s ownership and licensing create problems for that experimentation?",
+        "answer": [
+          "Odersky recalls an early period in which experimentation around Java was relatively open, alongside restrictions on what could be branded as Java. He places Microsoft’s competing direction and the much later Android dispute in that history. During the early development period he describes, ownership questions were not his central concern.",
+          "This is his retrospective account of the platform’s history. The interview does not establish the exact legal scope of any license or settle later disputes."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 1248,
+            "end": 1350
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "How does Scala use the Java Virtual Machine?",
+        "answer": [
+          "A Scala compiler can emit JVM bytecode, an intermediate representation that the runtime can interpret and then compile into native machine code with a just-in-time compiler. Targeting bytecode lets a language make use of the platform without being Java itself.",
+          "Odersky says the more difficult design work is often interoperability with Java libraries: mapping Scala’s concepts onto the APIs and conventions those libraries expect. Scala also has targets beyond the JVM, including JavaScript and native compilation."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 1350,
+            "end": 1520
+          }
+        ],
+        "followups": [
+          {
+            "question": "So Scala source becomes bytecode, which the JVM runs?",
+            "answer": [
+              "Yes. That is the basic separation between the source language, its compiler and the execution platform."
+            ],
+            "evidence": [
+              {
+                "start": 1505,
+                "end": 1520
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "qa",
+        "question": "What advantage does that bytecode platform have over compiling directly to native code?",
+        "answer": [
+          "Scala can also use LLVM through Scala Native, so native compilation is an available direction. The JVM nevertheless supplies a mature combination of Java-library interoperability, garbage collection and runtime facilities. Loading snippets interactively for a REPL is a natural fit for that environment and can require substantially more work with a conventional native binary."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 1520,
+            "end": 1592
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "Why are compilers difficult to build?",
+        "answer": [
+          "Users expect a compiler to combine sophisticated type inference, understandable errors, fast compilation and efficient generated code. Those requirements can conflict, and language features accumulate interactions over time. A modern compiler is therefore a complex artifact even when the initial language looks manageable.",
+          "Odersky also identifies an advantage over distributed systems: a compiler invocation is generally deterministic and reproducible. Given the same input, a developer can replay the failure. That makes some forms of debugging easier than chasing timing-dependent behavior across services."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 1594,
+            "end": 1687
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "How long did your early Java compiler take?",
+        "answer": [
+          "The initial compiler took roughly three months of half-time work in Odersky’s recollection. That was a small early language, and the figure should not be mistaken for the effort required to maintain a production compiler over decades. Much of a compiler’s complexity comes from features and requirements added over ten or twenty years."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 1687,
+            "end": 1769
+          }
+        ],
+        "followups": [
+          {
+            "question": "Did you build it from scratch or use compiler libraries?",
+            "answer": [
+              "He used a library for assembling bytecode, while writing the rest of the compiler himself."
+            ],
+            "evidence": [
+              {
+                "start": 1720,
+                "end": 1769
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "qa",
+        "question": "Why did Twitter adopt a relatively obscure language such as Scala?",
+        "answer": [
+          "Odersky recalls Twitter encountering reliability and memory-management problems with its Ruby stack while still a small company. Investors favored the solidity of Java, but engineers familiar with OCaml wanted a more expressive language. Scala could satisfy both preferences: a JVM platform with a functional flavor and less ceremony.",
+          "Twitter’s visibility then helped other companies notice Scala. In his account, many adopters were moving from dynamic languages such as Ruby, PHP or JavaScript, attracted by type inference that retained a lightweight feel while gaining static checking and a mature runtime. This is his recollection of the adoption story, not a claim that every team followed that path."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 1769,
+            "end": 1875
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "How will AI change what programming languages need to provide?",
+        "answer": [
+          "Odersky worries that generated code can exceed the amount humans can realistically review. AI also increases the ability to find and exploit weaknesses, so simply producing more code faster does not solve the trust problem. He thinks languages can help, although they are not a complete solution.",
+          "One direction is to make interfaces and types more precise. A compact, reviewable contract can express requirements and constrain an implementation produced by AI. That only works if the implementation cannot casually evade the contract through casts or unsafe escape hatches. The programmer’s role may shift toward stating requirements, reviewing boundaries and establishing confidence that generated implementations obey them.",
+          "Another direction is capability safety: control not only whether a program accesses valid memory, but which resources it is allowed to read, write or retain. Scoped permissions matter when an agent can interact with secrets, files or other services. Odersky describes Scala work in this area as experimental and incomplete. He does not present it as a production guarantee already available to every Scala user."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 1875,
+            "end": 2176
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "What would a capability-aware type system prevent?",
+        "answer": [
+          "Consider a function temporarily allowed to write to a log file. Merely closing the file after a call is insufficient if the function can hide the file reference in a variable, closure or lazy stream and use it later. Odersky’s proposed discipline records captured capabilities in types, so a function cannot make that permission escape its permitted scope.",
+          "The same idea applies to an arena allocator: a reference must not outlive the memory arena that owns it. It also applies to access to secrets. The type system must remember that a value carries a capability, prevent unauthorized escape and prevent code from forging the capability in the first place. These examples explain the intended design, while the earlier qualification about experimental implementation still applies."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 2177,
+            "end": 2347
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "Which languages lack memory safety, and why is that the first requirement?",
+        "answer": [
+          "Odersky clearly identifies C and C++ as memory-unsafe in their ordinary low-level programming models, and credits Rust for making low-level control compatible with memory safety. He is less certain about the full guarantees of several other languages mentioned and does not give a definitive classification of all of them.",
+          "Memory safety is foundational for capability enforcement because unrestricted memory operations can counterfeit or bypass the objects that represent permissions. Capability safety adds a further layer; a valid pointer alone does not establish that a program should possess or use the resource it points to."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 2347,
+            "end": 2411
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "If machines write most code, which language-design priorities will change?",
+        "answer": [
+          "Convenience of writing becomes less important than it was when a human typed every statement. Odersky uses shorthand such as increment operators as an example: a machine can write a longer equivalent expression without inconvenience. Readability retains value because people may still need to inspect generated code.",
+          "He expects high-level ways to specify required behavior and forbid unwanted behavior to become more important. Formal verification is exciting because AI may generate both a program and a proof. But a complete formal specification can be as difficult to write as the program, or harder, so natural-language instructions will remain part of the process.",
+          "He proposes treating prompts as durable, first-class program information rather than losing them in a chat history. A retained statement of intent could guide later changes and preserve the relationship between requirements and code. This is his proposed direction for future agent-oriented languages, not a feature he claims all tools already implement."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 2412,
+            "end": 2618
+          }
+        ],
+        "followups": [
+          {
+            "question": "Would this be something like prompt provenance for a piece of code?",
+            "answer": [
+              "Yes, with a practical purpose beyond recording history. If a user changes one requirement, the tool should make a small corresponding change instead of nondeterministically regenerating a whole program and disturbing behavior that has already been reviewed. Keeping the prompt with the program supplies the context for that incremental edit."
+            ],
+            "evidence": [
+              {
+                "start": 2577,
+                "end": 2618
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "qa",
+        "question": "Will there be more or fewer software engineers ten years from now?",
+        "answer": [
+          "Odersky predicts fewer engineers with a higher qualification threshold. In his analogy, overseeing an automated factory requires different and often deeper knowledge than performing one manual operation within it. He expects logic and mathematics to become more important for keeping AI-generated work on course.",
+          "This is a forecast offered in the interview. Its outcome depends on how automation, demand and engineering roles develop; the transcript does not establish a future headcount."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 2620,
+            "end": 2675
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "Which languages should programmers learn to broaden their thinking?",
+        "answer": [
+          "He recommends exposure to a systems language to understand the relationship between hardware and software. C is simple and close to the machine, so it can teach the underlying mechanisms; someone choosing systems programming as a career should then seriously consider Rust’s safety model and abstractions.",
+          "He also recommends learning a proof-oriented language, such as Lean or Coq, to sharpen an otherwise vague intuition about correctness. Scala occupies a middle ground in his view, combining expressive programming with strong types. The learning sequence serves different educational purposes rather than suggesting that one language is sufficient for every task."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 2677,
+            "end": 2778
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "table",
+        "title": "What each language direction teaches",
+        "headers": [
+          "Direction",
+          "Value Odersky emphasizes",
+          "Qualification"
+        ],
+        "rows": [
+          [
+            "C, then Rust for sustained systems work",
+            "Hardware and memory mechanisms; then safe low-level control",
+            "C is useful educationally despite the safety limits he identifies."
+          ],
+          [
+            "Lean or Coq",
+            "Precise meaning of correctness and proof",
+            "Formal specifications still take effort and do not arise automatically."
+          ],
+          [
+            "Scala",
+            "Expressive combinations of functions, objects and strong types",
+            "Abstractions require restraint; the JVM remains an important design influence."
+          ],
+          [
+            "Python",
+            "Readable glue around a broad ecosystem of native libraries",
+            "Optional typing does not provide the same normal checking discipline as Scala."
+          ],
+          [
+            "Go",
+            "A comparatively uniform style for cloud and middleware code",
+            "Deliberate limits trade expressiveness for ease of shared understanding."
+          ]
+        ],
+        "evidence": [
+          {
+            "start": 983,
+            "end": 1110
+          },
+          {
+            "start": 567,
+            "end": 711
+          },
+          {
+            "start": 2677,
+            "end": 2778
+          }
+        ]
+      },
+      {
+        "type": "qa",
+        "question": "Which technical book would you recommend?",
+        "answer": [
+          "Odersky recommends Structure and Interpretation of Computer Programs. He drew on its material in his teaching, while using a different language and stronger static typing. The recommendation reflects the book’s way of developing programming concepts, not a requirement to adopt the original language or reproduce the course exactly."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 2778,
+            "end": 2810
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "Why did you choose academia rather than industry?",
+        "answer": [
+          "A research project introduced him to the appeal of a question whose answer was genuinely unknown. He enjoyed working toward a solution that might exist or might not, rather than executing a predetermined implementation plan.",
+          "Academia also supplied long-term independence. He contrasts the possibility of much higher industry compensation with changing corporate priorities and employment risk. Tenure lets him define a research agenda over a long horizon, although obtaining grants and attracting students still demand persuasion and effort. Working with students is itself part of the reward."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 2812,
+            "end": 2908
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "Looking back at Scala, what succeeded and what would you change?",
+        "answer": [
+          "Odersky judges the technical experiment of combining functional and object-oriented programming a success. The ecosystem was harder. Giving users a nearly complete set of functional abstractions from the start brought together communities with different values and encouraged some people to over-abstract. A gradual introduction might have allowed a more stable common culture to form.",
+          "He uses Go as a contrast: its early lack of generics was limiting, but established habits could moderate how later features were used. Scala offered more expressive freedom immediately. That freedom needs responsibility, because a sophisticated abstraction can make a simple task less understandable even to its author.",
+          "He also regrets how strongly Scala inherited Java’s object model. Universal methods such as equality and hash code are convenient for interoperability, but he would prefer more precise compile-time control over which types support which operations, as in type-class-based approaches. The interoperability choice provided value while constraining later design."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 2908,
+            "end": 3256
+          }
+        ],
+        "followups": [
+          {
+            "question": "Why can someone else’s preferred abstraction style become a problem?",
+            "answer": [
+              "Libraries shape how an ecosystem expects programs to be written. A prominent monadic framework may make programmers feel that the entire application must adopt that model, although Odersky would not necessarily do so. A manager importing a highly abstract Haskell style into a small team can create code that others struggle to maintain. He describes examples of projects suffering that fate, while emphasizing that many Scala projects succeed and much community advice is sensible."
+            ],
+            "evidence": [
+              {
+                "start": 3075,
+                "end": 3229
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "qa",
+        "question": "At the beginning, would you have predicted Scala’s eventual reach?",
+        "answer": [
+          "No. With only a handful of users outside his group, Odersky expected it might remain a footnote. Its growth surprised him. In retrospect, he attributes the opportunity to a gap between convenient but less robust dynamic-language stacks and solid but ceremonious statically typed platforms.",
+          "Type inference helped Scala feel lightweight while retaining a dependable platform. Other languages later adopted similar features, but he would not have foreseen the scale of the initial opportunity."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 3256,
+            "end": 3342
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "What advice would you give your younger self?",
+        "answer": [
+          "Take technical risks and be willing to pursue an unusual idea rather than simply follow the mainstream. Odersky encourages time spent on a project that seems wild but compelling, while adding a modest qualification: retain enough direction to keep a career moving. The advice is to make room for nonconformity, not to abandon all discipline."
+        ],
+        "speaker": "Martin Odersky",
+        "evidence": [
+          {
+            "start": 3344,
+            "end": 3385
+          }
+        ],
+        "followups": []
+      }
+    ],
+    "related": [],
+    "omissions": [
+      "Opening montage repeats later exchanges; sponsor segments and closing channel/keyboard promotion do not add to the technical interview. Source ranges: 0–40 seconds, 1415–1505 seconds, 3394–3449 seconds."
+    ]
+  },
+  "coverage": {
+    "source_id": "source-5f7cf6e81e665bd5",
+    "sha256": "3262b7f8c3ada4de890030f36988c97eb1f04bcbe54cc3162433595292b134b4",
+    "reviewed_chunks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "status": "included",
+    "reason": "Read every complete compact chunk, preserving all caption words; condensed the full discussion in source order."
+  },
+  "editorial": {
+    "theme": "languages",
+    "question_rounds": 27,
+    "followup_count": 7,
+    "notes": "All five chunks read in full. Distinct initiating questions retained in order with related clarifications nested; forecasts, empirical uncertainty and experimental capability research explicitly attributed."
+  }
+}

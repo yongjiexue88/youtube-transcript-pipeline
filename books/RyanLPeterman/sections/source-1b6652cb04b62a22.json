@@ -1,0 +1,111 @@
+{
+  "section": {
+    "id": "source-1b6652cb04b62a22",
+    "source_id": "source-1b6652cb04b62a22",
+    "title": "Include performance in the definition of maintainable code",
+    "kind": "interview",
+    "deck": "Casey Muratori argues that abstraction rules should explain their compiler costs so engineers can make deliberate, recoverable tradeoffs.",
+    "blocks": [
+      {
+        "type": "qa",
+        "question": "What do you mean by putting “clean code” in quotation marks?",
+        "answer": [
+          "Muratori is criticizing particular prescriptions associated with the book Clean Code, rather than readability or maintainability as goals. Different programmers mean different things by “clean” or object-oriented code, so the label alone cannot resolve the argument.",
+          "He focuses on a combination: hiding concrete types behind interfaces or base classes and requiring extremely short functions. Either practice can have a rationale, but together they can keep a compiler from seeing what code actually does. He does not think a function becomes unmaintainable merely because it is 30 or 50 lines long, or that knowing concrete types makes source inherently hard to read.",
+          "The cost is not chiefly that one virtual call is catastrophically slow. Small functions can be inexpensive when the compiler can inline them. When the target remains opaque, the compiler may lose opportunities to combine code, remove work, unroll loops, or use SIMD. The degree depends on language, visibility, prediction, and compilation or linking capabilities. His objection is to teaching the structure without teaching that consequence."
+        ],
+        "speaker": "Casey Muratori",
+        "evidence": [
+          {
+            "start": 0,
+            "end": 298.6
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "table",
+        "title": "The compiler tradeoff Muratori emphasizes",
+        "headers": [
+          "Design situation",
+          "What the compiler may know",
+          "Consequence to consider"
+        ],
+        "rows": [
+          [
+            "Small visible function with known type",
+            "Its body and target can be identified",
+            "Inlining may erase the call boundary"
+          ],
+          [
+            "Small function behind an unknown virtual target",
+            "The implementation may remain opaque",
+            "Inlining and broader loop transformations can be blocked"
+          ],
+          [
+            "Maintainable code with explicit performance reasoning",
+            "The engineer understands constraints and a future path",
+            "A cost can be accepted deliberately instead of discovered too late"
+          ]
+        ],
+        "evidence": [
+          {
+            "start": 70.84,
+            "end": 288.28
+          }
+        ]
+      },
+      {
+        "type": "qa",
+        "question": "Would you tell engineers not to read Clean Code?",
+        "answer": [
+          "He calls it a mixed bag rather than simply forbidding it. Clear variable names are one example of advice he agrees with. His criticism is that rules need an honest explanation of likely performance costs and the difficulty of later repairs.",
+          "He objects to using “premature optimization” as a reason to omit performance from design education. Deliberately accepting a known cost because it will not harm the product is different from deciding to ignore performance until the end. He similarly criticizes broad assurances that refactoring-related performance concerns will usually be fine.",
+          "He speculates that this judgment may become even more useful when directing AI to structure code: performance constraints could be part of the instructions. He explicitly says he does little AI work and might be wrong, so that extension should remain a tentative inference."
+        ],
+        "speaker": "Casey Muratori",
+        "evidence": [
+          {
+            "start": 300.92,
+            "end": 524.52
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "What low-cost performance knowledge has the highest value?",
+        "answer": [
+          "Learn the basic performance characteristics of the machine and system you are building for. Knowing the difference between network latency and throughput, for example, can lead to batching rather than a deeply serial design that cannot use the network effectively.",
+          "Muratori favors education and awareness over prematurely tuning every detail. With enough understanding, you can notice when there is no credible path to making an architecture run well and revisit the decision before it becomes expensive. If you can explain how later optimization will work, most implementation-level optimization can wait.",
+          "The objective is to avoid a design corner in which the only fix is a rewrite. He does not supply a benchmark or a universal list of forbidden abstractions; he asks engineers to retain a reasoned path from the current design to the required performance."
+        ],
+        "speaker": "Casey Muratori",
+        "evidence": [
+          {
+            "start": 526.12,
+            "end": 676.44
+          }
+        ],
+        "followups": []
+      }
+    ],
+    "related": [],
+    "omissions": []
+  },
+  "coverage": {
+    "source_id": "source-1b6652cb04b62a22",
+    "sha256": "705ef96b9c7f1fb93fd17e65830289085871441b7c09ec0318d29d4d9d2ee628",
+    "reviewed_chunks": [
+      1
+    ],
+    "status": "included",
+    "reason": "Read every complete compact chunk, preserving all caption words; condensed the full discussion in source order."
+  },
+  "editorial": {
+    "theme": "craft",
+    "question_rounds": 3,
+    "followup_count": 0,
+    "notes": "Read the complete single chunk. All three initiating questions retained. Critiques of books and compiler consequences are attributed to Muratori; no benchmark, universal slowdown, or external assessment is invented."
+  }
+}

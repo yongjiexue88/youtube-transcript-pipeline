@@ -1,0 +1,65 @@
+{
+  "section": {
+    "id": "source-deae94e8883282bf",
+    "source_id": "source-deae94e8883282bf",
+    "title": "Memory safety is a property of the tools you build with",
+    "kind": "interview",
+    "deck": "Simon Peyton Jones argues that unsafe foundations make security fixes permanently expensive.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Peyton Jones describes C as unsafe because programs pass pointers, mutate shared memory, and can perform operations without protective checks on array bounds or memory access. His concern is structural: a programming model that permits these failures leaves programmers and security teams repeatedly repairing them after deployment.",
+        "evidence": [
+          {
+            "start": 0.0,
+            "end": 52.64
+          }
+        ],
+        "heading": "Why the foundations matter"
+      },
+      {
+        "type": "paragraph",
+        "text": "He uses a deliberately vivid analogy: infrastructure built from an unsuitable material remains difficult to secure even after enormous effort goes into patching it. Buffer overruns and incorrect pointer manipulation are his concrete examples. He argues that languages such as Haskell, OCaml, or ML prevent many such errors by construction. His estimate that almost all exploits would disappear is his rhetorical claim in this conversation, not an independently established measurement or a promise that memory safety eliminates every security risk.",
+        "evidence": [
+          {
+            "start": 57.24,
+            "end": 103.08
+          }
+        ],
+        "heading": "The cost of repairing preventable failures"
+      },
+      {
+        "type": "qa",
+        "question": "Do modern low-level languages improve this situation?",
+        "answer": [
+          "Yes. Peyton Jones says a rewrite in Rust would leave infrastructure in a much better position. He explicitly acknowledges uncertainty about Rust’s precise bounds-checking behavior, while arguing that enforceable restrictions on invalid memory access are the important improvement. His point is broader than a preference for functional programming: a low-level language can also offer stronger safety guarantees."
+        ],
+        "evidence": [
+          {
+            "start": 104.4,
+            "end": 142.4
+          }
+        ],
+        "followups": [],
+        "speaker": "Simon Peyton Jones"
+      }
+    ],
+    "related": [],
+    "omissions": []
+  },
+  "coverage": {
+    "source_id": "source-deae94e8883282bf",
+    "sha256": "289914c675aa44625ecf0065b3f4be6227db8e6c782f5fc5df6b783d0aeb1450",
+    "reviewed_chunks": [
+      1
+    ],
+    "status": "included",
+    "reason": "Full clip read. Opening is an answer whose initiating question is absent; it is presented as narrative rather than inventing a question. One actual subsequent host question is retained."
+  },
+  "editorial": {
+    "theme": "languages",
+    "question_rounds": 1,
+    "followup_count": 0,
+    "notes": "Full clip read. Opening is an answer whose initiating question is absent; it is presented as narrative rather than inventing a question. One actual subsequent host question is retained."
+  }
+}

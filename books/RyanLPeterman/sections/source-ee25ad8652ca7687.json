@@ -1,0 +1,119 @@
+{
+  "section": {
+    "id": "source-ee25ad8652ca7687",
+    "source_id": "source-ee25ad8652ca7687",
+    "title": "Give the compiler information before you reach for clever code",
+    "kind": "interview",
+    "deck": "Bjarne Stroustrup explains why abstraction and performance need not be enemies.",
+    "blocks": [
+      {
+        "type": "qa",
+        "question": "Does being closer to the machine necessarily make C faster than C++?",
+        "answer": [
+          "Stroustrup rejects the simple ranking. He says the languages share the relevant machine model, and equivalent code can generate equivalent results, while C++ can express more compile-time computation and give optimizers additional information. His claim that C++ is often as fast or faster is an argument about available facilities and compiler information, not a guarantee for any arbitrary pair of programs.",
+          "The useful distinction is between abstraction that introduces unavoidable work and abstraction a compiler can remove or use. More information can allow a better implementation than a programmer gets from a lower-level expression that hides structure."
+        ],
+        "evidence": [
+          {
+            "start": 0.0,
+            "end": 61.36
+          }
+        ],
+        "followups": [
+          {
+            "question": "Does abstraction still impose a cost?",
+            "answer": [
+              "Stroustrup invokes zero-overhead abstraction: the abstraction can be compiled away. He goes further and argues that “negative overhead” is possible when a higher-level expression gives the compiler enough information to produce a better result. The term describes that possibility, not a rule that every abstraction improves speed."
+            ],
+            "evidence": [
+              {
+                "start": 62.64,
+                "end": 91.68
+              }
+            ],
+            "speaker": "Bjarne Stroustrup"
+          }
+        ],
+        "speaker": "Bjarne Stroustrup"
+      },
+      {
+        "type": "qa",
+        "question": "Could an expert with unlimited time write better assembly?",
+        "answer": [
+          "In principle, yes, he says. In practice, people do not have unlimited time and generally cannot outperform modern optimizers across an entire program. Expert hand tuning is most realistic for a small portion of the code. Using modern, high-level facilities for the rest preserves time for the places where specialized work actually pays off.",
+          "Manual optimizations are also tied to machines and compilers. A trick that worked on one generation can become a slowdown on the next. Stroustrup says his first improvement step is often to remove the old clever code and measure again. Pointer-heavy structures, extra allocations, and unnecessary memory accesses can obstruct optimizers and hurt cache behavior.",
+          "He describes a fluid-dynamics-related example where simplifying an existing performance example reduced code size and improved execution by about 20 percent. He treats that as evidence for the technique, not a forecast of the gains a reader will get. His operational advice is to build with high-level facilities, measure whether performance is sufficient, identify where time is actually spent, and optimize those locations only when needed."
+        ],
+        "evidence": [
+          {
+            "start": 96.2,
+            "end": 374.72
+          }
+        ],
+        "followups": [
+          {
+            "question": "Is the “cleverness” you criticize manual work that can hide optimization opportunities?",
+            "answer": [
+              "Yes. Stroustrup emphasizes how much architecture and compiler behavior have changed. Code that was correctly optimized for the 1990s can be worse today because the assumptions behind its cleverness no longer hold."
+            ],
+            "evidence": [
+              {
+                "start": 378.16,
+                "end": 411.24
+              }
+            ],
+            "speaker": "Bjarne Stroustrup"
+          }
+        ],
+        "speaker": "Bjarne Stroustrup"
+      },
+      {
+        "type": "flow",
+        "title": "A measurement-led performance workflow",
+        "steps": [
+          {
+            "title": "Express the program clearly",
+            "text": "Use high-level facilities for the ordinary code."
+          },
+          {
+            "title": "Measure the result",
+            "text": "Check actual speed rather than guess."
+          },
+          {
+            "title": "Locate the cost",
+            "text": "Identify where execution time is spent."
+          },
+          {
+            "title": "Tune what matters",
+            "text": "Apply specialized optimization to the measured bottleneck."
+          }
+        ],
+        "caption": "Arrows show the sequence Stroustrup recommends, organized by the editor. Repeat the measurement after each change.",
+        "editorial": true,
+        "evidence": [
+          {
+            "start": 351.48,
+            "end": 374.72
+          }
+        ]
+      }
+    ],
+    "related": [],
+    "omissions": []
+  },
+  "coverage": {
+    "source_id": "source-ee25ad8652ca7687",
+    "sha256": "b29471d4658cfdab233a3cd88c951cd5d86d05076b795d1610d5add118e14cba",
+    "reviewed_chunks": [
+      1
+    ],
+    "status": "included",
+    "reason": "All compact reading chunks read in full; substantive discussion paraphrased with source ranges."
+  },
+  "editorial": {
+    "theme": "languages",
+    "question_rounds": 2,
+    "followup_count": 2,
+    "notes": ""
+  }
+}

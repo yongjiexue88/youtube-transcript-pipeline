@@ -1,0 +1,26 @@
+# Bjarne Stroustrup (Creator of C++) On Why C++ Is Faster Than C
+Source: source-ee25ad8652ca7687 | Chunk 1 of 1
+Video: https://www.youtube.com/watch?v=htY1IFhrGGc
+All caption text retained; paragraphs merge caption fragments without changing words.
+
+[00:00.00–00:18.44; L10–L17] Generally with programming languages, there's this you know, high-level intuition that the closer to the machine you are, the higher the performance is. And um, you know, I I tend to see C as closer to the machine than C++ for instance. Um, you know, that's not the case.
+
+[00:19.52–01:01.36; L18–L33] >> It's not the case. It's not as good as compile time calculation as C++ is. And anyway, we have exactly the same machine model because C borrowed the C++ 11 machine model. Um, so if you write the same code in both languages, it's you get the same result. Except the C++ compilers can do more at compile time. And so C++ runs as fast or faster than C in most cases. There's more information. If if if you give the optimizer some more information, it can do a better job.
+
+[01:02.64–01:14.12; L34–L39] >> Ah, okay. Yeah, cuz that was what I was going to ask you was you had said somewhere that C++ can be more performant than C, but I tend to think that more abstraction costs you something.
+
+[01:14.76–01:31.68; L40–L46] >> It's compiled away. This is why I talk about zero overhead abstraction. And people are beginning to take me to task for that because that's underestimating the and understating the ability of the C++ plus compiler. We can do negative overhead uh, abstraction.
+
+[01:36.20–01:42.96; L47–L50] >> What if I was really good at writing assembly and I had all the time in the world to write it? Could that How about How does that compare?
+
+[01:44.56–03:06.52; L51–L85] >> If you are very smart and you have infinite time, uh, you can do better. Um, by and large, we are not as smart as the optimizers anymore. And we don't have infinite time. So, if we are smart enough, we can only do a small piece of code. And now the question is did we get enough time to use our smarts? Uh this is even starting to affect uh clever code. I gave a talk to uh Slack last year, which is the group of very performant interested people from the finance industry. And my title was don't be clever. Actually, the written title was don't be too clever, but I can't pronounce parentheses. Um and I got out alive. Um and my main point was that C++ is good enough for uh more than 98% of your code. So, if you want time to be clever, you use these techniques that I showed modern C++. And that way you get time so you can do
+
+[03:09.48–04:32.28; L86–L120] all the clever optimizations. The problem is clever optimizations these days tend to be machine dependent. That is, if you get a new computer or if you get a new version of the compiler, you might actually have pessimized your code. I've seen this repeatedly ever since the uh the ages. Uh and there there there there's people who does nothing but uh um using different optimizations on the next generation hardware. And um my standard techniques for um for for improving things actually is to first throw away the clever stuff. And then see if you run fast or slow. Usually you run faster. Because clever stuff tend at least 9090s store style clever stuff, which is there's a lot of it still today. Because the techniques carry on in people's heads and some of the code remains. Uh tend to use a richness of pointers. And that gives the compilers and optimizers problems. They also sometimes use more allocations.
+
+[04:34.32–05:47.92; L121–L151] Which is not good. You want to minimize memory access. You want to maximize your cache performance and things like that. And compilers are getting very good at that. And I have seen this kind of thinking. I wrote a paper about it together with a friend of mine in Spain doing fluid dynamics. And uh uh we we we threw away uh the clever stuff for a uh uh actually a performance uh test suite example. So it was not toy. And we got only 20% improvement. You know, by reducing the code to about 80% of uh what it was before. And so some people didn't think that was significant. I thought it was a significant proof that the technique was appropriate. You apply optimizations only when you need them. Knuth says don't do premature optimization. But he also pointed out that 2 to 3% is where you uh where you stop optimize. Which is exactly the number I'm using.
+
+[05:51.48–06:14.72; L152–L161] And so, first build the stuff using high-level facilities, see if it's good enough, and if it isn't uh, and you have to time it. You don't guess, you time. Uh, then you uh, then you figure out where the time is spent, and then you optimize that. But, a lot of the time you don't need to go to that stage. It's It's fast enough.
+
+[06:18.16–06:32.48; L162–L168] >> I see. So, when you say cleverness here, it's uh, like human-level uh, manual management that eke out performance. Yes. And you're saying that actually, if you don't do that, the compiler you're giving the compiler more to optimize, and they can do a good job.
+
+[06:34.16–06:51.24; L169–L175] >> It's and it's much much better than it used to be. Code that was cleverly and correctly optimized in 1990s are often pessimized today because machine architectures have changed. And the compilers have improved.

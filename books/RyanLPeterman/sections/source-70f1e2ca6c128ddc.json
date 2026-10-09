@@ -1,0 +1,556 @@
+{
+  "section": {
+    "id": "source-70f1e2ca6c128ddc",
+    "source_id": "source-70f1e2ca6c128ddc",
+    "title": "Leonardo de Moura: Lean, Formal Proofs, and the Future of Verified Software",
+    "kind": "interview",
+    "deck": "De Moura explains how Lean checks proofs, why AI may make verification practical, and why hybrid human and AI work is expected rather than an end to handwritten math.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "De Moura argues that Lean is both a programming language and a platform for machine-checked proofs. Tests can show that bugs are present but not that they are absent, while a proof can cover every case. AI now writes and maintains many proofs, so verification becomes practical and people focus on specifications. The view expects hybrid workflows, in which people still write some proofs and set the goals, rather than an end to human work.",
+        "evidence": [
+          {
+            "start": 0.4,
+            "end": 4023.04
+          }
+        ],
+        "heading": "De Moura's view: AI makes machine-checked proofs practical, and people still write the specifications"
+      },
+      {
+        "type": "qa",
+        "question": "What is Lean, and how can it show that a program has no bugs when testing cannot?",
+        "answer": [
+          "De Moura describes Lean as a programming language and a platform. Users write code, state properties of that code, and prove them. The proofs are machine-checkable, and independent checkers can verify them. The host frames this with Dijkstra's remark that testing shows the presence of bugs, not their absence."
+        ],
+        "evidence": [
+          {
+            "start": 59.2,
+            "end": 86.96000000000001
+          }
+        ],
+        "followups": [
+          {
+            "question": "How does Lean connect to software written in other languages?",
+            "answer": [
+              "De Moura separates two cases. Lean programs can be reasoned about directly, much like mathematical definitions. For other languages there are two routes. Shallow embedding translates a program into Lean, and a tool that maps Rust into Lean already exists. Deep embedding writes the other language's semantics in Lean, so a C program becomes a Lean data structure that can be reasoned about."
+            ],
+            "evidence": [
+              {
+                "start": 90.56,
+                "end": 175.12
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          },
+          {
+            "question": "What is a step-by-step example of proving a property of a C program?",
+            "answer": [
+              "The example is an array access. The index must stay between zero and the array size, which can be written as a mathematical statement. Users would build automation, and triples state what must hold before and after a statement. The proof works like metadata on the C code, checked line by line. Proofs must stay modular to scale."
+            ],
+            "evidence": [
+              {
+                "start": 178.4,
+                "end": 307.6
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          }
+        ],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "Is the proof a second software layer on top of the code, and could the process run in reverse?",
+        "answer": [
+          "De Moura agrees that the proof works as a second layer, which must stay clean and easy to edit. The reverse is also possible: a person writes what they want mathematically, and AI synthesizes code that is checked against that specification.",
+          "The guest cites a colleague, Kim Morrison, who asked AI to translate zlib, a C compression library, into Lean, pass its test suite, and prove that decompression restores the original data. The project succeeded in about a week, according to the guest, and the optimized version still kept its proofs. The guest calls it surreal, since six months earlier it would have seemed like science fiction."
+        ],
+        "evidence": [
+          {
+            "start": 308.96,
+            "end": 435.92
+          }
+        ],
+        "followups": [
+          {
+            "question": "Is a specification even better than a comprehensive test suite?",
+            "answer": [
+              "De Moura says yes. Tests show the presence of bugs, while a proof covers all possible cases, including corner cases a test suite may miss. Property-based testing is popular, and people who write properties can now prove them rather than only test them."
+            ],
+            "evidence": [
+              {
+                "start": 437.12,
+                "end": 513.12
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          }
+        ],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "How much more work is a good specification than a good test suite?",
+        "answer": [
+          "De Moura says the effort varies. Developers often know the properties they care about, even when the full specification is unclear. A simple, inefficient program can serve as the specification. That is easier to write than a clever optimized version, and AI can produce the optimized version and prove that it matches the naive one. Specifications are not always easy to find."
+        ],
+        "evidence": [
+          {
+            "start": 538.8,
+            "end": 618.08
+          }
+        ],
+        "followups": [],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "Jane Street has invested heavily in formal verification. What is the main drawback: how much more time does verified software take to write?",
+        "answer": [
+          "De Moura points to a verified microkernel that was done by hand before AI tools. AWS has used formal verification for about a decade, but only for the most safety-critical components, because it was expensive. Writing the specification is not the most painful part. The main cost is writing proofs by hand and maintaining them as code changes.",
+          "De Moura says AI is very good at writing and maintaining proofs. In one example, de Moura asked an AI to rewrite proofs without a feature that was about to change, even though the proofs had been written by someone else and de Moura did not know what they covered. The AI produced new proofs. This is crucial for making formal verification mainstream."
+        ],
+        "evidence": [
+          {
+            "start": 648.48,
+            "end": 792.24
+          }
+        ],
+        "followups": [],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "You describe Lean as a proof assistant. Is it typical for one to also be a programming language?",
+        "answer": [
+          "De Moura says some proof assistants, especially those based on dependent type theory, are programming languages too. Definitions can be programs with types and structures. Lean is close to Haskell, a functional language, with support for proofs."
+        ],
+        "evidence": [
+          {
+            "start": 803.76,
+            "end": 854.56
+          }
+        ],
+        "followups": [
+          {
+            "question": "Are there major uses of Lean as a programming language, without the proofs?",
+            "answer": [
+              "Yes. Much of Lean's own tooling is written in Lean, including the Lake build system and a documentation authoring system. At AWS, a compiler for AI accelerators, about half a million lines of Lean, uses Lean mainly as a programming language. Proofs about its design are a bonus that can expose problems."
+            ],
+            "evidence": [
+              {
+                "start": 861.6,
+                "end": 904.56
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          },
+          {
+            "question": "What tooling and proof layers does a proof assistant need?",
+            "answer": [
+              "De Moura says the tooling is familiar. Lake plays the role of Cargo, and editors such as VS Code give completion. The main difference is the InfoView, a panel beside the file that gives constant feedback on code and proofs. Proofs are often written in tactic mode, a domain-specific language in which each step changes the goal shown in the InfoView until no goals remain. Some users treat this as a game."
+            ],
+            "evidence": [
+              {
+                "start": 919.68,
+                "end": 1063.08
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          }
+        ],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "Is Lean itself verified in Lean?",
+        "answer": [
+          "De Moura says Lean is too large and changing too fast to have a full specification, since users keep asking for new behavior. Only the kernel must be trusted. The kernel checks that each proof has the type claimed for it. The default kernel is not verified. Another kernel, written in Lean, has been verified against Lean's semantics. Several independent kernels, including some written in other languages, are the best way to confirm results."
+        ],
+        "evidence": [
+          {
+            "start": 1069.92,
+            "end": 1148.4
+          }
+        ],
+        "followups": [],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "Which Lean results have impressed you most recently?",
+        "answer": [
+          "De Moura cites a gold medal at the International Mathematical Olympiad, which was once thought impossible. Such problems are now used as a benchmark, though de Moura says they are still very hard. De Moura also cites a unit-distance conjecture. An OpenAI proof of it was informal, so Kim Morrison posted a formalization challenge. A one-million-line formal proof followed, which de Moura estimates would take experts months by hand."
+        ],
+        "evidence": [
+          {
+            "start": 1267.04,
+            "end": 1376.48
+          }
+        ],
+        "followups": [
+          {
+            "question": "How long did the formal version take after the challenge?",
+            "answer": [
+              "De Moura recalls about a month from the informal result to a solved challenge, with the formal version completed about two weeks or less after the challenge was posted. These are recollections, not checked dates."
+            ],
+            "evidence": [
+              {
+                "start": 1379.36,
+                "end": 1402.8
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          }
+        ],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "How popular is Lean among mathematicians compared with software engineers?",
+        "answer": [
+          "De Moura says Lean first grew with mathematicians, after the Mathlib library began in 2017. A large formalization project begun in early 2020 checked a result from a Fields medalist, which the mathematician had not published and was unsure of. The team used the InfoView to guide them, and they simplified a proof without fully understanding it. De Moura says this drew the math community, since people can trust a formal proof without trusting its author.",
+          "A prominent mathematician began using Lean after that project and became absorbed in it."
+        ],
+        "evidence": [
+          {
+            "start": 1404.32,
+            "end": 1572.0
+          }
+        ],
+        "followups": [
+          {
+            "question": "When you say addicted, do you mean the game-like proving?",
+            "answer": [
+              "De Moura says professors report that students split in their views of Lean. People who enjoy problem solving, including International Mathematical Olympiad medalists, tend to love it, because each proof gives a satisfying solve. De Moura describes being a Lean developer rather than a user, and says proving things can be addictive."
+            ],
+            "evidence": [
+              {
+                "start": 1573.44,
+                "end": 1625.52
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          }
+        ],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "How is Lean used in the IMO gold-medal work, such as AlphaProof?",
+        "answer": [
+          "De Moura says DeepMind surprised people with a silver medal in 2024. Startups have since earned gold."
+        ],
+        "evidence": [
+          {
+            "start": 1638.08,
+            "end": 1667.6
+          }
+        ],
+        "followups": [
+          {
+            "question": "So the specification is the hard part, and the AI fills in the proof?",
+            "answer": [
+              "Each problem must first be written as a Lean statement, which Mathlib makes easier, since problems use concepts such as real numbers. The proof then has to be supplied. Sometimes the solver must also define an object that has the required properties."
+            ],
+            "evidence": [
+              {
+                "start": 1740.4,
+                "end": 1796.96
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          },
+          {
+            "question": "Can Lean and LLMs generate novel mathematics, or only verify existing results?",
+            "answer": [
+              "De Moura says there is evidence that AI can find novel proofs, but not yet that it can invent new mathematical concepts, which some current challenges require. De Moura expects people to keep investing in this and does not bet against AI, but has not seen evidence yet that AI can come up with new math."
+            ],
+            "evidence": [
+              {
+                "start": 1801.28,
+                "end": 1844.96
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          }
+        ],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "When should someone consider formalizing something in Lean?",
+        "answer": [
+          "De Moura says the main cases are when a result is safety-critical or when the author does not understand it well. Formalizing deepens understanding, much as implementing an algorithm does. Proved properties also allow bolder optimizations, since developers no longer need to fear changing code they do not fully understand. AI can prove a property or find a counterexample."
+        ],
+        "evidence": [
+          {
+            "start": 1931.92,
+            "end": 1998.4
+          }
+        ],
+        "followups": [
+          {
+            "question": "If formalization costs fall over three to five years, how does that change software and handwritten math?",
+            "answer": [
+              "De Moura says both would change dramatically. Large labs only recently began training for formal verification, so current results should improve. Costs should fall, and languages such as Lean may become more mainstream. When AI writes most of the code, the level of specification matters more than how the code is written."
+            ],
+            "evidence": [
+              {
+                "start": 2001.36,
+                "end": 2092.16
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          }
+        ],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "Could handwritten math or handwritten proofs end within ten years?",
+        "answer": [
+          "De Moura expects some handwritten work to remain. People will still write proofs as artifacts for communication, and others will polish them for human readers. Hybrid workflows are expected, and a workflow with no AI at all would be surprising. Some people find this future uncomfortable, but de Moura finds it exciting, because software development is painful and many steps are repetitive patching that AI removes."
+        ],
+        "evidence": [
+          {
+            "start": 2107.44,
+            "end": 2209.04
+          }
+        ],
+        "followups": [
+          {
+            "question": "Does this future mean fewer mathematicians or computer scientists?",
+            "answer": [
+              "A question raises the worry that fewer mathematicians and computer scientists would be needed. De Moura says AI can bring more people in. Humans stay in the loop, since someone must say what is needed and understand the abstractions. Many people like prototyping but not productization, and AI can take over that part."
+            ],
+            "evidence": [
+              {
+                "start": 2210.32,
+                "end": 2331.52
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          }
+        ],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "You worked on the Z3 SMT solver. What is it, and how does it differ from a SAT solver?",
+        "answer": [
+          "De Moura describes Z3 as a solver with background theories such as arithmetic and arrays, built for test-case generation and software verification. Z3 is fully automatic and push-button, while Lean is interactive, with automation that the user can guide. Z3 is not a programming language. It works more like a constraint solver, and can prove only simple things."
+        ],
+        "evidence": [
+          {
+            "start": 2350.64,
+            "end": 2413.52
+          }
+        ],
+        "followups": [
+          {
+            "question": "What is an example of inputs and outputs to Z3?",
+            "answer": [
+              "A Sudoku can be encoded as constraints, which Z3 solves almost at once. For a suspected security bug, a code path can be turned into constraints. Z3 then reports that the path is unsatisfiable, so it cannot run, or gives an input that reaches it. Properties with many universal quantifiers become undecidable, and the hand-coded heuristics often failed. Lean was started to prove the absence of bugs, a gap that Z3 did not fill well."
+            ],
+            "evidence": [
+              {
+                "start": 2422.8,
+                "end": 2540.08
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          },
+          {
+            "question": "Does it typically terminate in practice, despite being undecidable?",
+            "answer": [
+              "Bounded hardware problems, such as searching for a bug in the first ten steps, usually work well, because programs and hardware are correct for simple reasons. Non-trivial properties often time out. A colleague at Amazon named this proof instability, since changing the order of terms can break a proof. In Lean, the user controls the steps, so the proof stays stable."
+            ],
+            "evidence": [
+              {
+                "start": 2552.64,
+                "end": 2675.6
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          }
+        ],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "What was the most technically challenging part of building Z3 or Lean?",
+        "answer": [
+          "De Moura says Lean is much harder than Z3. Z3's interface is SMT-LIB, a simple, low-level language built for tools, where a program passes a file and gets back yes or no. Lean is a full programming language with libraries, a user interface, a language server and a build system. Z3's users were sophisticated software developers, while Lean's first users were mathematicians with different expectations. Others want Lean as a programming language, and de Moura's background is automated reasoning rather than programming languages."
+        ],
+        "evidence": [
+          {
+            "start": 2755.2,
+            "end": 2889.04
+          }
+        ],
+        "followups": [
+          {
+            "question": "Was there a single component that was especially hard?",
+            "answer": [
+              "The guest says the switch from C++ to Lean was painful. The guest was building Lean with co-founder Sebastian before the nonprofit existed. The guest recalls wanting to cry when Lean finally compiled, and calling Sebastian to say it was insane. Sebastian was excited too."
+            ],
+            "evidence": [
+              {
+                "start": 2898.4,
+                "end": 2951.28
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          },
+          {
+            "question": "What made the switch from C++ to Lean hard?",
+            "answer": [
+              "The team had to implement Lean with only the features needed to compile itself, about 100,000 lines of human-written code. The first file failed to compile. Each fix exposed a difference between the old and new versions that had to be reconciled. Dependent types made the work harder, and some proofs had to be written with no interactive help, which de Moura compares to assembly programming. Many people thought the team would fail."
+            ],
+            "evidence": [
+              {
+                "start": 2956.88,
+                "end": 3068.16
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          }
+        ],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "What are the pros and cons of the different proof assistants?",
+        "answer": [
+          "De Moura admits to bias. Users value Lean's extensibility, since Lean is implemented in Lean. Users can add automation in the same file, and AI can write these extensions. Asked to isolate a problem in Lean, AI often writes a Lean meta-program to test its conjecture about the cause.",
+          "Others have built on Lean. A French mathematician built a teaching environment with point-and-click suggestions and a proof language that reads like a textbook, in English or French. Other teams built domain-specific languages, such as Veil for protocol verification, and talked to the Lean team only after they finished. Interactivity, a large library, an active community and quick responses to users are, in the guest's view, why people stay. An early mathematician user could request a feature and get it the same day."
+        ],
+        "evidence": [
+          {
+            "start": 3070.4,
+            "end": 3380.64
+          }
+        ],
+        "followups": [],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "What is the difference between dependent type theory and higher-order logic?",
+        "answer": [
+          "De Moura first chose higher-order logic because it was easier to implement. Jeremy convinced de Moura that serious mathematicians would want dependent type theory, which is more powerful for abstract objects. In it, types depend on values. A structure field can be a proof that x is greater than y, so the structure cannot be built without that evidence. A function can require a proof that y is not zero. Such proofs were once annoying to write, but AI can now synthesize them."
+        ],
+        "evidence": [
+          {
+            "start": 3389.84,
+            "end": 3542.56
+          }
+        ],
+        "followups": [
+          {
+            "question": "In higher-order logic, could you express the same things?",
+            "answer": [
+              "De Moura says no. Higher-order logic loses the dependencies. In Lean, a function can take a group and return a new group, treating the structure as a first-class object, which the guest says is a mess in higher-order logic. Mathematicians the guest has talked with agree. Listening to what a community needs matters if it is to be served."
+            ],
+            "evidence": [
+              {
+                "start": 3550.56,
+                "end": 3635.68
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          }
+        ],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "Where is Lean going, and what are you excited about?",
+        "answer": [
+          "De Moura says a nonprofit behind Lean began in 2023. The project became a product with a team of engineers only after the nonprofit existed. The main push now is Lean as a programming language, where people prove properties of their programs. AWS made the largest donation so far to these nonprofits, aimed at that path, which de Moura says lacks funding.",
+          "De Moura says they no longer write tests but properties, and AI proves most of them. Proofs also enable optimizations for free: an AI can optimize code and supply a proof that the result computes the same thing."
+        ],
+        "evidence": [
+          {
+            "start": 3651.84,
+            "end": 3789.12
+          }
+        ],
+        "followups": [
+          {
+            "question": "Is this the decade of formal verification of software?",
+            "answer": [
+              "De Moura says the team is very excited to make it happen. Scalability is key. Math statements are usually small with cheap proofs. Software statements are large and their proofs are shallow, but they must manipulate big objects."
+            ],
+            "evidence": [
+              {
+                "start": 3803.68,
+                "end": 3847.28
+              }
+            ],
+            "speaker": "Leonardo de Moura"
+          }
+        ],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "What top technical book would you recommend for learning Lean and formal verification?",
+        "answer": [
+          "De Moura points to the Lean website, which hosts several books on functional programming, theorem proving and mathematics in Lean, plus one on the mechanics of proof that is good for teaching.",
+          "De Moura says learning Lean with an AI agent is now very efficient. A learner can talk in natural language, ask for examples, and split the screen between Lean code, the InfoView and an agent that explains what is happening. The agent can tailor the lesson to what the learner already knows."
+        ],
+        "evidence": [
+          {
+            "start": 3861.36,
+            "end": 3971.92
+          }
+        ],
+        "followups": [],
+        "speaker": "Leonardo de Moura"
+      },
+      {
+        "type": "qa",
+        "question": "If you could go back to the start of building Z3 and Lean, what advice would you give yourself?",
+        "answer": [
+          "The guest first jokes that the answer will stay a secret, since ignorance is bliss. Then the advice is to build people skills. The guest describes being very introverted, and says that working with a community was hard and that these skills matter a lot."
+        ],
+        "evidence": [
+          {
+            "start": 3988.72,
+            "end": 4023.04
+          }
+        ],
+        "followups": [],
+        "speaker": "Leonardo de Moura"
+      }
+    ],
+    "related": [],
+    "omissions": [
+      "Cold-open teaser and episode lead-in, 00:00.40 to 00:59.20.",
+      "Sponsor read for an enterprise-features API (single sign-on, audit logs), 30:47.84 to 31:38.64.",
+      "Closing thanks, guest-request appeal and keyboard Kickstarter promotion, 1:07:07.04 to 1:08:04.56."
+    ]
+  },
+  "coverage": {
+    "source_id": "source-70f1e2ca6c128ddc",
+    "sha256": "59ba48bdeb171c371f15057778a9eb3e3abe7759e7ff4eb1de33e65080d59dfd",
+    "reviewed_chunks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "status": "included",
+    "reason": "Read all 5 compact chunks in full (about 68 minutes, 10,161 source words). Kept 18 initiating rounds and 17 follow-ups, in source order. The guest, Leonardo de Moura, is named in the title, so answers carry that speaker; the host is not named and host questions carry no speaker. The guest is referred to by name or as the guest, since the transcript states no pronouns for the guest. The captions are auto-generated: Lean, Z3, Mathlib, InfoView and SMT-LIB are written in standard form, and third-party names are kept generic where captions disagree. The formalization timeline (about a month, then about two weeks or less), the IMO and DeepMind results, the zlib translation duration, the AI-capability claims and the funding statement are the guest's recollections or estimates, not verified facts. The manifest lists no title-overlap sources."
+  },
+  "editorial": {
+    "theme": "ai",
+    "question_rounds": 18,
+    "followup_count": 17,
+    "notes": "Read all 5 compact chunks in full (about 68 minutes, 10,161 source words). Kept 18 initiating rounds and 17 follow-ups, in source order. The guest, Leonardo de Moura, is named in the title, so answers carry that speaker; the host is not named and host questions carry no speaker. The guest is referred to by name or as the guest, since the transcript states no pronouns for the guest. The captions are auto-generated: Lean, Z3, Mathlib, InfoView and SMT-LIB are written in standard form, and third-party names are kept generic where captions disagree. The formalization timeline (about a month, then about two weeks or less), the IMO and DeepMind results, the zlib translation duration, the AI-capability claims and the funding statement are the guest's recollections or estimates, not verified facts. The manifest lists no title-overlap sources."
+  }
+}

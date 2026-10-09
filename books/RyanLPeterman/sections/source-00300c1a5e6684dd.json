@@ -1,0 +1,479 @@
+{
+  "section": {
+    "id": "source-00300c1a5e6684dd",
+    "source_id": "source-00300c1a5e6684dd",
+    "title": "Adrien Friggeri: Data Tooling, Promotions, and Scope at Meta",
+    "kind": "interview",
+    "deck": "Adrien Friggeri traces a path from a Facebook data science team through Instagram experiments, internal developer tools, and Clubhouse back to Meta, and explains how he built promotions and scope through impact and early agreement.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Adrien Friggeri describes moving from a Facebook data science team to Instagram experiments, internal developer tools, Clubhouse, and back to Meta, where he worked on smart glasses. His view is that impact and early agreement with managers matter more than titles, and that sharing credit builds a career. He calls not joining Instagram's team one of his biggest career mistakes. Editorial framing: the interview runs in career order, and the host asks each question.",
+        "evidence": [
+          {
+            "start": 3.44,
+            "end": 3323.6
+          }
+        ],
+        "heading": "Adrien's view: impact and early agreement matter more than titles"
+      },
+      {
+        "type": "qa",
+        "question": "What was the first team you joined, and why did you pick it?",
+        "answer": [
+          "Adrien says he was pre-allocated to a team then called data science, around 2011 or 2012, because of his PhD in social network analysis. Big data was emerging, and the team did early A/B testing at scale, measurement, and the data pipelines behind company counts. He joined a group of about 20 people, and the team joked that its work was mostly large-scale counting."
+        ],
+        "evidence": [
+          {
+            "start": 43.44,
+            "end": 123.76
+          }
+        ],
+        "followups": [
+          {
+            "question": "Did you see yourself as a data scientist or a software engineer?",
+            "answer": [
+              "His manager told him that software engineers have power at the company and should not box themselves into a narrow area. Adrien has always considered himself a software engineer, though his titles varied. Around 2014, product analytics roles were renamed data scientist, and the group grew from about 20 or 30 PhD data scientists to about 500, mostly doing product analytics. That caused an identity crisis, but he says impact mattered more than the title."
+            ],
+            "evidence": [
+              {
+                "start": 125.36,
+                "end": 230.48
+              }
+            ],
+            "speaker": "Adrien Friggeri"
+          },
+          {
+            "question": "What was the difference between the old data science function and product analytics today?",
+            "answer": [
+              "Adrien says the earlier data scientists built the A/B testing tools and defined the algorithms and sampling methods. Today's data scientists mostly use those tools, which let the function scale.",
+              "His first project studied how rumors spread, meaning memes rather than fake news, with researchers including one who later became his manager. False rumors spread faster than true ones, and pointing out a falsehood did not really limit spread. The work took six to eight months and produced two or three papers, and it changed how much reshares were weighted in News Feed."
+            ],
+            "evidence": [
+              {
+                "start": 232.07999999999998,
+                "end": 441.92
+              }
+            ],
+            "speaker": "Adrien Friggeri"
+          }
+        ],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "What was the story behind your first senior-level promotion, at Instagram?",
+        "answer": [
+          "After the rumor work, Adrien met Instagram's co-founder and CTO. Facebook had acquired Instagram in September 2012, and the core team had about 30 people. Instagram had no personalization and no A/B testing. He started with the Explore tab, adding personalization, and needed a way to measure whether it worked. Product leaders said they had bigger priorities during Instagram's move from AWS to Facebook infrastructure.",
+          "He built the testing system anyway, with a product manager giving cover. He reused Facebook's system. Because Instagram ran on different infrastructure, he added a custom Facebook API endpoint, allowlisted to Instagram's app ID, to log exposures. He calls that hacky and probably expensive. He also added user hashing, connected the logs to the data warehouse, ran a server-side A/A test, and worked with mobile engineers on small experiments.",
+          "He says he did not know promotions existed. He was an IC4, and when his manager announced an IC5 promotion, he had to ask what the level meant. He then handed the A/B testing system to a newly created team that owned it."
+        ],
+        "evidence": [
+          {
+            "start": 444.08,
+            "end": 761.92
+          }
+        ],
+        "followups": [
+          {
+            "question": "Was reaching out to senior people and peers unusual early in your career?",
+            "answer": [
+              "Adrien says early Facebook was bottom-up: if you needed something you could not do alone, you found someone to help. In his first six months he joined about six hackathons, usually on Thursday evenings, working through the night on projects unrelated to his day job. He says that was the culture."
+            ],
+            "evidence": [
+              {
+                "start": 763.44,
+                "end": 844.32
+              }
+            ],
+            "speaker": "Adrien Friggeri"
+          }
+        ],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "Were there cultural differences between the early Instagram team and Facebook?",
+        "answer": [
+          "Adrien says he never officially joined the Instagram team. His data science group worked like consultants, embedding in other teams while his reporting line stayed the same, and he had two managers in his first few years. Instagram felt like a startup within a startup. Facebook had about 2,000 employees, and the core Instagram team of 30 to 40 people fit in one conference room, with a focus on design and craft over data."
+        ],
+        "evidence": [
+          {
+            "start": 845.12,
+            "end": 942.0
+          }
+        ],
+        "followups": [
+          {
+            "question": "What do you mean by your biggest career mistake, and where would your career be if you had joined Instagram?",
+            "answer": [
+              "He calls not joining Instagram one of his biggest career mistakes, but not a serious regret. His career might have grown faster, since colleagues who stayed reached senior levels sooner. He calls it a road not taken and says the counterfactual is hard to know."
+            ],
+            "evidence": [
+              {
+                "start": 943.04,
+                "end": 993.44
+              }
+            ],
+            "speaker": "Adrien Friggeri"
+          }
+        ],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "Can you tell the story behind your IC7, or senior staff, promotion?",
+        "answer": [
+          "Adrien worked on projects that brought data to non-data teams. One project to count users of a Facebook product needed machine learning and inference, but the tools were poor. He built a library to run data pipelines inside the machine learning framework. He says a pipeline that took about 300 lines in a standard system could take about 20 with the library. That convinced him to build tools that help others move faster.",
+          "Half the company used Jupyter and half used RStudio, and setup depended on outdated wikis. He proposed that everyone have a Jupyter instance, pitched a two-to-three-month trial to his manager, and built the first version of Bento. At first it was only a setup script. The vision was to connect it to company tools, so a user could open a browser, type Bento, and get a notebook with internal libraries ready.",
+          "Bento on demand later let users request a temporary instance instead of a shared dev server. Adrien helped lead the work and built the team by hiring people who were already building tools on their own time. He became a tech lead manager and was promoted to TLM2, which he says is equivalent to senior manager and to senior staff engineer in the industry."
+        ],
+        "evidence": [
+          {
+            "start": 995.28,
+            "end": 1325.28
+          }
+        ],
+        "followups": [],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "What is the step-by-step process for getting internal tooling from an idea to something everyone uses?",
+        "answer": [
+          "Adrien says Bento did not try to win adoption within existing workflows. The team targeted bootcamp, the onboarding program for new hires, and told everyone who worked with data that this was the way to set up. The company was growing fast, so many newcomers did not know the legacy systems, and others followed their peers onto the new tool.",
+          "The team also maintained legacy setups that had gone unmaintained. Doing that built trust with users."
+        ],
+        "evidence": [
+          {
+            "start": 1327.12,
+            "end": 1433.04
+          }
+        ],
+        "followups": [
+          {
+            "question": "Was the approach an easy sell because the company was growing, and did leadership support matter too?",
+            "answer": [
+              "Adrien summarizes the approach in two steps. First, use network effects to get a group of users through an easy path. Second, give value to people on legacy systems. Once trust was built, the team offered Bento features in place of a 25-step manual recipe. The host notes that developer tools usually need people to leave something they already use, but new hires in a growing company choose on a fresh slate, so the product may have been an easy sell.",
+              "Adrien also went to the head of analytics and another leader, said teams had real pain, and offered help. One leader said it was a good first step, but there were about 20 other things to fix. They agreed to take it one step at a time. Adrien then moved into the developer infrastructure organization to build a team focused on data developer tools, since no team then built tools for data science and machine learning."
+            ],
+            "evidence": [
+              {
+                "start": 1435.44,
+                "end": 1555.76
+              }
+            ],
+            "speaker": "Adrien Friggeri"
+          }
+        ],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "You took on a performance risk to build something that could flop. Is that harder today, and how should someone take risks for bigger rewards?",
+        "answer": [
+          "Adrien says the stakes for underperforming are higher now, but the approach is the same. Align with your manager first, because people are judged against expectations. He told his manager he would step away from assigned work and asked for two or three months to explore the idea. He called it a calculated risk that the team agreed to.",
+          "He thinks doing your own project in secret is riskier, since you can show up after three months with a result nobody knew about. His advice is to overcommunicate and be ready to hear no. Later, when he tried to build consensus for other ideas, he was sometimes told no."
+        ],
+        "evidence": [
+          {
+            "start": 1558.72,
+            "end": 1690.56
+          }
+        ],
+        "followups": [],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "What was the thinking behind moving into a tech lead manager role?",
+        "answer": [
+          "The team was building a product that had to scale, and it needed more people. Adrien could hire a manager with a different vision or try management himself. The move was driven by a wish to lead the team he had assembled, not by a plan to become a manager. The team needed a manager, and he became that manager."
+        ],
+        "evidence": [
+          {
+            "start": 1692.4,
+            "end": 1740.96
+          }
+        ],
+        "followups": [],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "After reaching IC7, you left Meta to start your own company. What was the thinking, and how did it go?",
+        "answer": [
+          "Adrien had spent about seven years at the company, and he admits some hubris. He had built a platform used by about 60 percent of people doing data there, and he thought the outside world would need one too. He found he was not an entrepreneur at that time. He liked deep technical problems and had underestimated the work of rebuilding alone what a team of six had built over two years. He jokes that he took a sabbatical instead of starting a company."
+        ],
+        "evidence": [
+          {
+            "start": 1743.68,
+            "end": 1849.28
+          }
+        ],
+        "followups": [
+          {
+            "question": "What were the skill gaps between being a successful tech lead and being an entrepreneur?",
+            "answer": [
+              "An entrepreneur must delegate the hard parts. Adrien says that whenever something got interesting, he would have to hand it to someone else, leaving his own involvement superficial. He was not drawn to the work of getting people to use the product."
+            ],
+            "evidence": [
+              {
+                "start": 1851.92,
+                "end": 1893.2
+              }
+            ],
+            "speaker": "Adrien Friggeri"
+          },
+          {
+            "question": "After the sabbatical, what led you back to Meta?",
+            "answer": [
+              "When the pandemic hit, Adrien was stuck in a small New York apartment. He bought a house in Denver and needed a stable job. He had several offers, but returned mainly to work with a director he admired, who had run an early Facebook open source program and was willing to hire him. The interview was behavioral, since he was returning."
+            ],
+            "evidence": [
+              {
+                "start": 1895.36,
+                "end": 1970.08
+              }
+            ],
+            "speaker": "Adrien Friggeri"
+          }
+        ],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "What did you do after returning to Meta, and why did you join Clubhouse?",
+        "answer": [
+          "Adrien returned in the summer of 2020 and spent about seven months on data infrastructure. A friend then connected him with a Clubhouse co-founder, as the app was growing fast. He was not serious at first, but the hype made it exciting. He joined when the company had about 10 or 11 people."
+        ],
+        "evidence": [
+          {
+            "start": 1971.84,
+            "end": 2031.76
+          }
+        ],
+        "followups": [
+          {
+            "question": "What did you contribute at Clubhouse?",
+            "answer": [
+              "He joined to help the data stack. There was no machine learning and no machine-learned feed ranking, and the notifications were spammy. He built the early analytics systems, including A/B testing so the team could measure its work, and introduced machine learning to filter notifications."
+            ],
+            "evidence": [
+              {
+                "start": 2032.96,
+                "end": 2078.16
+              }
+            ],
+            "speaker": "Adrien Friggeri"
+          },
+          {
+            "question": "What was the internal culture like?",
+            "answer": [
+              "Adrien describes it as very hands-on, with eager, talented, self-driven engineers. Many came from Coinbase or Facebook, and they wanted to build an authentic social network."
+            ],
+            "evidence": [
+              {
+                "start": 2079.36,
+                "end": 2107.36
+              }
+            ],
+            "speaker": "Adrien Friggeri"
+          }
+        ],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "After Clubhouse, you went back to Meta a second time. Why?",
+        "answer": [
+          "Adrien had unfinished business at Meta and seriously considered an offer from Apple. He chose Meta for two reasons. A former manager, then the engineering director behind Ray-Ban Stories, wanted to work with him again. He had also never worked on a product or on hardware, and wanted to move beyond being the data person."
+        ],
+        "evidence": [
+          {
+            "start": 2109.04,
+            "end": 2167.52
+          }
+        ],
+        "followups": [
+          {
+            "question": "Was a referral through a trusted former manager the key to the role?",
+            "answer": [
+              "Not entirely. He had no interest in a tech lead role from the start, and returned as an IC7. After Ray-Ban Stories launched in September 2021, it had quality and growth problems, so he reviewed the growth data for about a year, which built trust with the organization. After a reorg at the end of 2022, he asked to move to the smart glasses project. He had no hardware experience, but argued that his product sense justified it.",
+              "Another engineer was the tech lead for the whole program. Over a couple of years, Adrien took on more scope and supervised the user experiences across that hardware line, which later included wearables."
+            ],
+            "evidence": [
+              {
+                "start": 2179.52,
+                "end": 2330.72
+              }
+            ],
+            "speaker": "Adrien Friggeri"
+          }
+        ],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "Were there growing pains in switching into the new domain?",
+        "answer": [
+          "Adrien says the organization was growing and maturing, so the pains reached him early. He struggled with the long lead times of hardware work, including validation and getting products into users' hands. It got easier once internal dogfooding started and feedback arrived."
+        ],
+        "evidence": [
+          {
+            "start": 2331.52,
+            "end": 2381.36
+          }
+        ],
+        "followups": [],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "What advice do you have for ramping up in a completely different domain?",
+        "answer": [
+          "He starts with a social network exploration: talk to people and ask who else to talk to. Do not fear basic questions, since everyone knows a newcomer is new. He also gets hands-on. Although he never officially worked on firmware, he read the code and made a few changes. He then picks a hard problem he roughly knows how to solve, because he learns by doing."
+        ],
+        "evidence": [
+          {
+            "start": 2383.36,
+            "end": 2448.88
+          }
+        ],
+        "followups": [],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "What scope got you promoted to IC8, principal engineer?",
+        "answer": [
+          "Adrien became responsible for all experiences on a device, across dozens of teams and about 35 product managers. Partner teams owned the operating system layer. His job was coordination, architecture, and hitting milestones. For a product such as Ray-Ban Meta, the experiences include on-device AI, music, photo capture, and the companion app.",
+          "IC5 surprised him. For IC6 he asked his manager to put him forward, and IC7 took a couple of review cycles. For IC8, his manager had never run that promotion, so they worked out the packet together, and Adrien wrote much of it. He built consensus with several vice presidents early, and asked a director for monthly check-ins on the gap to that level. Six months later, the director supported the promotion because he had been involved throughout."
+        ],
+        "evidence": [
+          {
+            "start": 2451.04,
+            "end": 2645.12
+          }
+        ],
+        "followups": [
+          {
+            "question": "Is identifying champions even more important for the highest-level promotions?",
+            "answer": [
+              "The host says champions matter most at the highest levels. Adrien agrees, but says the underlying impact still has to be there. Building consensus early keeps calibration from becoming a debate. His IC promotion took two cycles, and in the first, his manager socialized the idea without formally nominating him."
+            ],
+            "evidence": [
+              {
+                "start": 2647.12,
+                "end": 2718.0
+              }
+            ],
+            "speaker": "Adrien Friggeri"
+          }
+        ],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "When a role is limited to one person, such as the only tech lead for a program, how do you secure scope?",
+        "answer": [
+          "One engineer was the tech lead for the whole program. Adrien saw that much of the experience work could be handled by someone focused on it. He took it off the lead's plate so the lead could focus on the wider program, while the lead kept the systems work. The two built trust. After about a year, Adrien asked leadership to formally recognize the role, so he could describe it in one sentence.",
+          "He rejects the idea that taking scope is stealing. It is a problem only if you do not talk to the person. He asked the engineer first, who agreed, and he asked again later about a related area. Overcommunicating is the consistent theme."
+        ],
+        "evidence": [
+          {
+            "start": 2720.88,
+            "end": 2916.24
+          }
+        ],
+        "followups": [
+          {
+            "question": "Is giving up scope a win for the person who gives it away?",
+            "answer": [
+              "The host suggests that handing off scope can help a senior engineer grow into a bigger role. Adrien agrees, and says he has pushed junior engineers to take ownership, which helps them and lets him delegate more."
+            ],
+            "evidence": [
+              {
+                "start": 2922.72,
+                "end": 2969.12
+              }
+            ],
+            "speaker": "Adrien Friggeri"
+          }
+        ],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "You have a skill set heavy in software engineering and data. What career experiences were possible only through that mix?",
+        "answer": [
+          "Adrien says he has always aimed to be well-rounded, with product and design sense as well as engineering and data. He calls himself a product hybrid, able to hold a deep product conversation and debug firmware the next day. He cites an author's view, attributed to Robert Heinlein, that a competent person should be able to do many things, and says he takes that to heart.",
+          "In wearables he built prototypes, designed his own circuit boards, and hacked together demos that were not production ready. He is not a hardware engineer, but those prototypes let him bring something concrete to product conversations."
+        ],
+        "evidence": [
+          {
+            "start": 2972.4,
+            "end": 3099.6
+          }
+        ],
+        "followups": [],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "Your career has been a series of bumping into the right people. Do you have tips for maximizing luck with people opportunities?",
+        "answer": [
+          "Adrien says none of his work happened in a vacuum. Early on he had rough edges and strong opinions that did not help him, and he learned that people succeed together. He says trust and respect mean people show up when you need them, but you should not help others in order to get something back.",
+          "He also says do not be afraid to ask. For career changes, he never applied through a job website. He reached out to people he knew and asked for small favors, with an easy way to say no. People are busy, so silence is not a verdict. On luck, he says taking more shots increases the odds."
+        ],
+        "evidence": [
+          {
+            "start": 3101.6,
+            "end": 3274.56
+          }
+        ],
+        "followups": [],
+        "speaker": "Adrien Friggeri"
+      },
+      {
+        "type": "qa",
+        "question": "If you could go back to yourself right after graduating college in France, what advice would you give?",
+        "answer": [
+          "He would say to be a good person, invest in things that are fun, and invest in relationships with co-workers. Credit matters less than it seems, since everyone gets credit for something. He was very credit-driven early on. He would also tell himself to be patient, since he sometimes pushed for promotions before he was ready, and to stay curious and enjoy the work."
+        ],
+        "evidence": [
+          {
+            "start": 3276.32,
+            "end": 3323.6
+          }
+        ],
+        "followups": [],
+        "speaker": "Adrien Friggeri"
+      }
+    ],
+    "related": [],
+    "omissions": [
+      "Cold-open teasers and lead-in, 00:00.16 to 00:38.56. The teaser on impact and early consensus is covered in full at 44:07.12 to 45:18.00. The host intro (00:03.44 to 00:08.16) is used only for framing.",
+      "Sign-off, LinkedIn pointer, and channel appeal (support, reviews, guest suggestions), 55:25.20 to 56:16.64."
+    ]
+  },
+  "coverage": {
+    "source_id": "source-00300c1a5e6684dd",
+    "sha256": "5ab508fd7e47c3d61dc056f381013cb5f1623e326bf1c01954f11b7fdeff6982",
+    "reviewed_chunks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "status": "included",
+    "reason": "Read all 5 compact chunks in full (about 56 minutes; source has 10,878 words). Kept 17 initiating rounds and 12 ordered follow-ups. Overlapping caption windows (for example at 12:20, 24:14, 36:09 and 48:23) were read once. No sponsor copy was found; the host says the show takes no sponsorships. The speaker is named by the manifest spelling, Adrien Friggeri; the auto-generated captions spell it Adrian. Pronouns he and his follow the host introduction. Named colleagues and managers are mostly omitted because caption spellings are uncertain. Caption errors were corrected where the intended word was clear (for example the author Robert Heinlein). Estimates and unverified claims, all attributed to the speaker as his own recollection: the team's start year (around 2011 or 2012, from a garbled caption), Instagram's acquisition date and early team size, the 60 percent platform user share, Facebook's headcount, Clubhouse's team size, the TLM2 equivalence to senior staff engineer, the 25-step recipe, and the pandemic reference (captioned as 'CO happened'). Editorial framing is labelled in the overview only."
+  },
+  "editorial": {
+    "theme": "career",
+    "question_rounds": 17,
+    "followup_count": 12,
+    "notes": "Read all 5 compact chunks in full (about 56 minutes; source has 10,878 words). Kept 17 initiating rounds and 12 ordered follow-ups. Overlapping caption windows (for example at 12:20, 24:14, 36:09 and 48:23) were read once. No sponsor copy was found; the host says the show takes no sponsorships. The speaker is named by the manifest spelling, Adrien Friggeri; the auto-generated captions spell it Adrian. Pronouns he and his follow the host introduction. Named colleagues and managers are mostly omitted because caption spellings are uncertain. Caption errors were corrected where the intended word was clear (for example the author Robert Heinlein). Estimates and unverified claims, all attributed to the speaker as his own recollection: the team's start year (around 2011 or 2012, from a garbled caption), Instagram's acquisition date and early team size, the 60 percent platform user share, Facebook's headcount, Clubhouse's team size, the TLM2 equivalence to senior staff engineer, the 25-step recipe, and the pandemic reference (captioned as 'CO happened'). Editorial framing is labelled in the overview only."
+  }
+}

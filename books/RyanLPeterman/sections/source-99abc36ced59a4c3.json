@@ -1,0 +1,125 @@
+{
+  "section": {
+    "id": "source-99abc36ced59a4c3",
+    "source_id": "source-99abc36ced59a4c3",
+    "title": "Use risk and trust to set review depth",
+    "kind": "interview",
+    "deck": "An Instagram engineering leader distinguishes core-system scrutiny from fast peripheral changes and explains the conditions behind accepting with required fixes.",
+    "blocks": [
+      {
+        "type": "qa",
+        "question": "How do you decide how deeply to review a code change?",
+        "answer": [
+          "The guest allocates review effort according to risk. Live production code and the core architecture receive close examination. A gated, noncritical leaf component may receive only a high-level review, including a check for serious problems such as security risks, because the blast radius and cost of rewriting it are smaller.",
+          "His trust in a known teammate is part of the calculation. This is not a philosophy he applies automatically to a new colleague, nor one he claims all Meta engineers share. He separates correctness and architectural risk from forcing every implementation to match his personal style."
+        ],
+        "speaker": "Guest",
+        "evidence": [
+          {
+            "start": 3.6,
+            "end": 166.88
+          }
+        ],
+        "followups": [
+          {
+            "question": "Do colleagues push back on quick approvals?",
+            "answer": [
+              "Yes. His team knows it can explicitly request a deep review in the description or test plan, or return an approved change to review. The author may know that a superficially small component has a subtle performance or design issue. That signal changes the reviewer’s time allocation even if the component is still peripheral."
+            ],
+            "evidence": [
+              {
+                "start": 154.48,
+                "end": 228.24
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "title": "Match review effort to the cost of a mistake",
+        "headers": [
+          "Change",
+          "Review emphasis",
+          "Reason in the guest’s account"
+        ],
+        "rows": [
+          [
+            "Live production or core architecture",
+            "Thorough correctness and structural review",
+            "Mistakes can affect many engineers and be costly to repair"
+          ],
+          [
+            "Gated peripheral component",
+            "High-level review plus serious-risk checks",
+            "Smaller blast radius and easier testing or replacement"
+          ],
+          [
+            "Author requests deeper review",
+            "Revisit the change in detail",
+            "The author may see a hidden issue the reviewer missed"
+          ],
+          [
+            "Unfamiliar teammate or uncertain fix",
+            "Ask for another review before landing",
+            "The necessary trust is not yet established"
+          ]
+        ],
+        "evidence": [
+          {
+            "start": 3.6,
+            "end": 355.84
+          }
+        ]
+      },
+      {
+        "type": "qa",
+        "question": "Why ask how to accept a change instead of how to reject it?",
+        "answer": [
+          "He wants to identify what truly prevents safe progress: major architectural problems and critical bugs. He is less interested in making another engineer write the code exactly as he would. Greater experience can make reviewers more comfortable with several valid approaches.",
+          "He takes conditional approval unusually far. If he spots a bug that would break production, he may leave a clear warning and approve while explicitly requiring the author to fix it first. He says trusted colleagues have not landed such a known defect in his experience. For someone new, or a fix he doubts they can make correctly, he asks to be contacted again before landing.",
+          "The title and opening excerpt can obscure that condition. He is not claiming that deliberately shipping a known production-breaking bug is acceptable; he is relying on the author to resolve it before shipping. His reported track record does not prove that this convention is safe in every workflow."
+        ],
+        "speaker": "Guest",
+        "evidence": [
+          {
+            "start": 247.2,
+            "end": 372.72
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "paragraph",
+        "heading": "Speed is adjusted through feedback",
+        "text": "The guest applies a similar idea to rollouts: if a small release produces healthy metrics and little adverse feedback, he may expand more quickly, then pull back when negative signals appear. He and the host accept some risk as the cost of learning and progress, while agreeing that repeatedly breaking production means moving too fast. This is a judgment based on system risk and visible feedback, not a fixed rollout schedule.",
+        "evidence": [
+          {
+            "start": 367.36,
+            "end": 454.8
+          }
+        ]
+      }
+    ],
+    "related": [],
+    "omissions": [
+      "Opening excerpt repeats the later conditional-approval exchange and is represented once.",
+      "Closing clip and feedback request (7:36 onward) omitted."
+    ]
+  },
+  "coverage": {
+    "source_id": "source-99abc36ced59a4c3",
+    "sha256": "ca410e8ac7754d83923f56f36a13e678c352ec40b3fae9dbbc202674152bafe3",
+    "reviewed_chunks": [
+      1
+    ],
+    "status": "included",
+    "reason": "Read every complete compact chunk, preserving all caption words; condensed the full discussion in source order."
+  },
+  "editorial": {
+    "theme": "craft",
+    "question_rounds": 2,
+    "followup_count": 1,
+    "notes": "Read the complete single chunk. One risk-review round with a sequential follow-up, then the distinct acceptance-philosophy round and a rollout paragraph. Speaker identity is not supplied in the captions; avoid borrowing a name from a related episode. Approval is accurately described as conditional on fixing the known defect before landing."
+  }
+}

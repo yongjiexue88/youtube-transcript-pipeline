@@ -1,0 +1,426 @@
+{
+  "section": {
+    "id": "source-ee0bbf94a641fdda",
+    "source_id": "source-ee0bbf94a641fdda",
+    "title": "Joakim Recht: Uber Distinguished Engineer on Promotions, Influence, and Engineering Regrets",
+    "kind": "interview",
+    "deck": "Joakim Recht recounts building Uber's stateful-platform effort into a distinguished-engineer career and argues that scope, trust and hands-on code, not promotion tactics, drive influence.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Joakim Recht, who reached distinguished engineer at Uber, argues that promotion and influence follow the real scope of the work, and that scope grows when an engineer removes waste for more and more people. In Recht's view, that requires staying hands-on: writing code regularly, leading by example, and earning the trust of the people one wants to influence, rather than delegating upward and directing from documents. Recht says promotion committees are unavoidably imperfect, that organisational politics is mostly noise to stay away from, and that top-down decisions engineers did not believe in were what finally pushed Recht to leave Uber for a startup. Recht also gives a candid account of engineering choices at Uber that did not scale. Everything below is Recht's own account and opinion; the host's questions set the order.",
+        "evidence": [
+          {
+            "start": 51.04,
+            "end": 5148.32
+          }
+        ],
+        "heading": "Scope follows the work, and trust follows hands-on code"
+      },
+      {
+        "type": "qa",
+        "question": "What was the initial problem you were solving, and what is the story behind the project that eventually got you promoted to distinguished engineer?",
+        "answer": [
+          "Recht says that soon after joining Uber, the Denmark office was asked to build a new data store, because Uber's single large Postgres instance, with many replicas, was projected to run out of capacity. The office built an object store called Schemaless, based on sharded MySQL, and Recht's job was mostly to manage, operate, monitor and scale those MySQL shards. The early setup was bare-metal machines configured with Puppet, so every master promotion or replacement meant hand-editing Puppet and hoping for the best, which got harder as the system grew.",
+          "Containerization was still new, and Kubernetes had only just reached its first alpha, when Recht began asking why the databases should not run in Docker. That would allow different MySQL versions side by side and let several databases share one host. A sharded MySQL setup, Recht says, needed at least nine physical servers per database, which was expensive and badly utilised. The second idea, then uncommon, was to declare a goal state instead of running procedural steps: say that you want a database made of nine clusters of three nodes each, and let a system make it so. Recht describes this as GitOps plus an orchestration and monitoring layer, because plain GitOps is a one-way push with no feedback. Built first for Schemaless, it made scaling, monitoring and operations much better.",
+          "The next step was to do the same for every database type. At the time each technology had its own team doing bare-metal work, host management, provisioning and decommissioning with its own toolchain, which Recht calls wasteful. That became the Odin effort: one platform able to operate an entire stateful fleet. Recht says it took a long time, partly to persuade teams that had built their own tooling and partly to make it work with technologies never designed for containers, such as HDFS and Kafka, where host names are baked in and moving data around is hard. The scope grew from the team's own databases to the company's stateful workloads. Recalling numbers loosely, Recht says it ended up with around 120,000 physical servers and around half a million databases, operated by a team of roughly twenty, while separate database teams kept the Cassandra and MySQL expertise. Fleet tasks that normally take heavy manual effort, such as a one-click kernel upgrade, became routine."
+        ],
+        "evidence": [
+          {
+            "start": 51.04,
+            "end": 483.76
+          }
+        ],
+        "followups": [
+          {
+            "question": "Was the main motivation capacity savings and engineering time, with fragmented machines wasting capacity?",
+            "answer": [
+              "Recht agrees with the host's summary and adds a third benefit, consistency. Availability should be the same everywhere, and problems such as a failing disk should be discovered by shared tooling once, rather than every team inventing its own way to check that servers work."
+            ],
+            "evidence": [
+              {
+                "start": 486.4,
+                "end": 532.8
+              }
+            ],
+            "speaker": "Joakim Recht"
+          }
+        ],
+        "speaker": "Joakim Recht"
+      },
+      {
+        "type": "qa",
+        "question": "You did not have a grand plan to manage all of Uber's stateful workloads, so how did you convince people to start running databases in Docker?",
+        "answer": [
+          "Recht credits the freedom of early Uber, which also came with a cost: at one point someone counted around 52 different database technologies in use. Because few people had to approve it, adopting the approach for Recht's own team was easy. The harder part came when the team realised it should be done for everything.",
+          "Recht says they deliberately did not try to convince everyone at once. They would start with what the Denmark office owned, then move to teams owned by friends in other departments, then to increasingly resistant groups. They also knew the platform would not be ready on day one anyway. Recht prefers not to force anything on anybody, and would rather build something, make sure it works, and let sceptics see it running elsewhere. Recht says this incremental approach helped a lot and also took a very long time."
+        ],
+        "evidence": [
+          {
+            "start": 533.84,
+            "end": 672.8
+          }
+        ],
+        "followups": [
+          {
+            "question": "What was the main pushback from other teams, and how did you answer it?",
+            "answer": [
+              "The most common objection, Recht says, was that a team already had something that worked, so a replacement was waste. Recht calls that a local view rather than a company-wide one, since the aim was to improve stateful workloads in general, not one team's setup.",
+              "Recht concedes the cost. Uber lacked a full software-defined network, so a new host means a new host name and a random port, and logical moves are not possible. That makes some storage technologies very hard, and teams had to rebuild working tooling under a different paradigm. Recht says the payoff was real and often free. One example is NUMA, aligning memory with the CPUs a database process runs on, which matters for data-heavy workloads and for scheduling. A shared platform can handle that, whereas a single team seldom gets around to it. The more of these benefits the platform accumulated, Recht says, the more people came around."
+            ],
+            "evidence": [
+              {
+                "start": 673.76,
+                "end": 825.12
+              }
+            ],
+            "speaker": "Joakim Recht"
+          }
+        ],
+        "speaker": "Joakim Recht"
+      },
+      {
+        "type": "qa",
+        "question": "Was this a bottom-up effort, and when did leadership get involved?",
+        "answer": [
+          "Recht says the effort could only go so far from below. Uber's stateful side was split in two: the online databases (MySQL, Postgres, Cassandra and similar) and the data stack (HDFS, Kafka, Pinot and similar), which sat in a completely different org whose management chains met only at the CEO. The data-stack side initially said the idea sounded nice but they did not care.",
+          "Over time more support built up the management chain, and eventually leadership declared Odin the future and said teams would no longer be allowed to run their own servers. Recht says the mandate helped adoption, because stragglers always exist however good the product is, and full alignment is hard to reach alone."
+        ],
+        "evidence": [
+          {
+            "start": 826.56,
+            "end": 929.12
+          }
+        ],
+        "followups": [],
+        "speaker": "Joakim Recht"
+      },
+      {
+        "type": "qa",
+        "question": "For people interested in the career side, how did your career grow at each step of this?",
+        "answer": [
+          "Recht describes a self-admittedly naive hope that promotion is not always fair, but pretty fair, and tied to the scope of the work and the number of people affected by it, not through direct authority. Odin followed a natural expansion: first inside the team, then the local org, then the wider platform, then beyond. Running a project of that scope to success, Recht says, produces a series of promotions that happen almost automatically, and it drags the whole team along.",
+          "Recht acknowledges some luck: one project lasted a very long time, whereas many people are shuffled around or see projects cancelled, which makes it harder, though not impossible, to show expanding scope. Recht's promotions tracked the work. Background work came first, then the first version of the platform, which Recht thinks earned a promotion. Expansion to standard MySQL and Cassandra then led, Recht believes, to principal engineer (title names changed along the way). Handing the project to the team so Recht could do other things led to distinguished. Recht says that progression was never the reason for doing the work."
+        ],
+        "evidence": [
+          {
+            "start": 930.24,
+            "end": 1144.08
+          }
+        ],
+        "followups": [
+          {
+            "question": "What are the typical ways to have your work influence more and more engineers?",
+            "answer": [
+              "Recht names a personal driver: a dislike of doing the same thing many times. Replacing a database host by hand a few times makes it something to automate or abstract away. The same question then extends from one's own waste to the waste of the team and of others, and Recht says that is where scope expansion comes from. Recht jokingly refers to this as the lazy engineer idea. The drawback is the depth-first rabbit hole: a task needs a tool, the tool needs a better build system, and so on, which can badly sidetrack the real work. Recht sees natural leverage in it, because tooling lets software act on one's behalf and help others.",
+              "On scaling oneself and being a force multiplier, Recht prefers helping others work better and faster, ideally by removing their problem entirely, over mentoring or pushing designs down. The question Recht asks is what people could do if they no longer had to do that thing."
+            ],
+            "evidence": [
+              {
+                "start": 1145.2,
+                "end": 1357.84
+              }
+            ],
+            "speaker": "Joakim Recht"
+          }
+        ],
+        "speaker": "Joakim Recht"
+      },
+      {
+        "type": "qa",
+        "question": "You said promotions are typically fair, based on the impact of the work. What does it mean when you say they are sometimes not?",
+        "answer": [
+          "Recht has sat on promotion committees for a long time and says the format changed a great deal. The first one covered all of platform engineering. Managers, VPs, senior directors and senior engineers sat in a room for a day to go through every engineer, with Recht guessing the number was somewhere in the hundreds, with no preparation or written material. Each manager said how good each person was and, unsurprisingly, thought everyone should be promoted, so a point system was improvised. In that setup, Recht says, outcomes depended on how well the manager could present the case: a weak manager meant a weak case, though a good manager could also be attached to weak work. Recht links this unfairness partly to Uber's early culture problems.",
+          "Structure improved, but Recht says objective judgment is impossible. An engineer may depend on another team that never delivers, or a nearly finished project may be cancelled by management for reasons that are not the engineer's fault. A committee must then choose between promoting on code that nobody used and denying someone who did good work, trading fairness against motivation. Some engineers also feel treated unfairly because they excelled compared with a weak team, or lived on an island and had not realised other groups were much stronger. Recht recalls Uber moving from Python and JavaScript to Go when nobody knew Go, and committees judging some groups' output as simply not good enough.",
+          "Recht says that feels unfair to people who were not prepared for what they entered. That is why Recht wrote a guide to what it means to be a software engineer at Uber, which Recht expects differs from Meta or Google. The title, something like beating the promo committee, was just catchy. Recht regrets that people prepare packets and collect peer feedback without correction along the way, only to be turned down."
+        ],
+        "evidence": [
+          {
+            "start": 1359.52,
+            "end": 1746.8
+          }
+        ],
+        "followups": [
+          {
+            "question": "The guide is less about promo packets and more about becoming a stronger engineer. What was in it?",
+            "answer": [
+              "Recht says its core was good engineering practice, and above all this claim: \"If you're not writing code, you're not a software engineer.\" Recht applies this at every level. The amount may vary, but code should be written regularly, ideally every day. Recht advises against overthinking it or assuming that higher levels need more advanced code, and says they have never seen anyone who keeps writing code fail to grow along with it.",
+              "Secondary advice was to write good code, write good commit messages, review code, and make code easy to review. Recht says this craft is rarely taught in college, which is mostly theory, and is learned by watching others, though AI can help now. Engineers also need to articulate their work, for example in design documents. Recht's second philosophy is that running code beats perfect code. Aiming to handle every case before committing can mean a month of work with no feedback, possibly on the wrong track."
+            ],
+            "evidence": [
+              {
+                "start": 1748.32,
+                "end": 1989.36
+              }
+            ],
+            "speaker": "Joakim Recht"
+          }
+        ],
+        "speaker": "Joakim Recht"
+      },
+      {
+        "type": "qa",
+        "question": "Common advice is to scale yourself by delegating and becoming a tech lead who stops writing code. What is your view?",
+        "answer": [
+          "Recht does not subscribe to that idea at all, and sees it often. Part of it is taste: Recht has always liked writing code and says they would probably still do it without a job. But Recht also gives reasons. If an engineer stops writing code, the system keeps evolving and the engineer loses touch with it. Designs grow more idealistic and detached from reality, and when they are handed off, the implementers wonder who the person with the whiteboard and documents is, because the real problems are different.",
+          "Recht defines scaling oneself as enabling as many people as possible to work efficiently, not cloning oneself, which rarely works. That is easier when people trust you, know that you understand their pain points, know your suggestions usually work, and know you listen. As people rotate in and out, a leader who is not hands-on loses touch with both people and system. Recht says the result can be hostility, with people not saying so to the leader's face. Recht personally dislikes being told what to do by someone without skin in the game, while staying open to input, and promises to stay out of others' work in return."
+        ],
+        "evidence": [
+          {
+            "start": 1990.64,
+            "end": 2320.88
+          }
+        ],
+        "followups": [
+          {
+            "question": "Why don't engineers trust management, even when a VP says the same thing an engineer does?",
+            "answer": [
+              "Recht says top-down direction from people who do not know the team creates mistrust and sometimes plain hostility. In the worst case, people say it is a good idea and then simply do none of it, which Recht calls the most annoying outcome. Recht traces the distrust to a feeling that the speaker does not really know what is going on. The idea might be right, but without a connection to the speaker it is hard to take at face value.",
+              "Recht is unsure whether this is human nature or personal, and suspects it may be partly Danish, since there is little structure there, but says authority alone does not take one all the way in the Bay Area either. When people say yes but do not believe it, they do not take ownership, and the project may get done but not well. Recht says earning real belief takes more effort than people would like."
+            ],
+            "evidence": [
+              {
+                "start": 2322.16,
+                "end": 2482.88
+              }
+            ],
+            "speaker": "Joakim Recht"
+          }
+        ],
+        "speaker": "Joakim Recht"
+      },
+      {
+        "type": "qa",
+        "question": "You had to influence many people to scale your project across Uber. How do you influence other engineers and avoid that situation?",
+        "answer": [
+          "Recht says someone somewhere will never be convinced, and 100 percent is not the goal. Recht believes in leading by example: if you say what will be built, you help build it and take on much of the pain. The higher the level, the more one is told to concentrate on the hard things only the senior person can do, but Recht says there are very few of those. Recht argues that the person who had the idea tends to keep the interesting parts, such as new algorithms or the fun work, whereas most of the time the hard work should be delegated down, to people who can barely manage it, with support to keep them on track. The senior engineer keeps the boring work, since at that level there is nothing left to prove.",
+          "Recht says taking the grind earns a lot of credit and lets others grow much faster, because a challenged team works and grows faster. Leading by example mostly means writing code, plus improving documentation or fixing odd bugs, which usually brings little glory. Recht is a strong believer in it."
+        ],
+        "evidence": [
+          {
+            "start": 2485.84,
+            "end": 2683.84
+          }
+        ],
+        "followups": [
+          {
+            "question": "That is the opposite of the usual advice to take the hardest, most impressive parts and push the easy work to others. What are the downsides of your approach?",
+            "answer": [
+              "Recht does not list downsides. Instead, Recht argues that easy work often hides problems. Looking at why a team has so many bugs can lead to bad reviews or bad testing, and the easy task can grow into something non-trivial that really did need a senior person.",
+              "To engineers who ask how to find the right project to get promoted or grow scope, Recht gives the same advice: forget that and write some code that works, however small. Each time, ask whether the work is the right thing, because building a system often creates work for other people, who then have more systems to manage and configure. Consider the net result and how to improve it. Recht's philosophy is that scope then comes by itself, and engineers who worry about finding the right scope should relax and focus on providing value. In most cases it works, Recht says, and where it does not, that is back to the fairness problem, but Recht considers it by far the most successful route."
+            ],
+            "evidence": [
+              {
+                "start": 2686.56,
+                "end": 2881.2
+              }
+            ],
+            "speaker": "Joakim Recht"
+          }
+        ],
+        "speaker": "Joakim Recht"
+      },
+      {
+        "type": "qa",
+        "question": "As you advanced, did your role become more political?",
+        "answer": [
+          "Recht first asks what political means, then describes what changed. There is more talking and more fighting, because one must promote ideas and, perhaps worse, listen to everyone else's. There is also more exposure to reality. As a junior engineer it seems someone has a grand plan and everything is under control. Later, Recht says, one realises nobody is in control, and decisions can rest on a vision from the shower or on a conversation with another person who does not know either, and that becomes the strategy. Recht finds this scary for a rational engineer, says it is not for everybody, and did not like it at all.",
+          "Recht's coping approach was to abstract from it and do their own thing. Recht has seen many people get sucked into weeks of planning. Because Recht does not need others to tell them how to do things, they do not tell others either. Recht was never a career planner and has a strong aversion to projects that look like dead ends, which Recht left to others, saying no a lot, perhaps too much in some people's view. That works only if one's own work is significant enough to fill one's scope. Recht also has low patience for talking about doing something for days and ending with a vague plan for next year."
+        ],
+        "evidence": [
+          {
+            "start": 2882.56,
+            "end": 3162.32
+          }
+        ],
+        "followups": [
+          {
+            "question": "Some people avoid promotion to avoid that stuff. Do you regret reaching such a high level and having to deal with politics?",
+            "answer": [
+              "Recht says there were 'if only' moments, but that it depends on how well one resists pressure, how confident one is in oneself, and how much one cares about other people's opinions. Caring a lot makes it hard.",
+              "Recht credits the remote setup. The Denmark office worked with San Francisco teams, so its days were uninterrupted and meetings came in the evening, pulling people in for only a couple of hours a day. Nobody could grab them in a hallway to join a discussion. Recht says the physical and time-zone distance helped a lot."
+            ],
+            "evidence": [
+              {
+                "start": 3164.48,
+                "end": 3283.92
+              }
+            ],
+            "speaker": "Joakim Recht"
+          }
+        ],
+        "speaker": "Joakim Recht"
+      },
+      {
+        "type": "qa",
+        "question": "You said the best outcome is when the other person thinks the idea is theirs. What do you mean?",
+        "answer": [
+          "Recht says it does not happen often, but those are the best days: overhearing someone argue with conviction, months later, an idea that Recht had put forward and that they had not liked, without crediting Recht. The Odin resistance is an example. A team that had to rebuild tooling it already had could initially see only the cost, and later came to see the benefits without being forced.",
+          "Recht may have nudged a few times, or the environment may have changed the person a little. Recht describes the feeling not as being proved right but as pride that those people are now on the right track, reached without force."
+        ],
+        "evidence": [
+          {
+            "start": 3284.56,
+            "end": 3419.28
+          }
+        ],
+        "followups": [],
+        "speaker": "Joakim Recht"
+      },
+      {
+        "type": "qa",
+        "question": "You reportedly pick mentees outside your own org and disperse them to increase your influence. How do you pick mentees?",
+        "answer": [
+          "Recht says mentoring sounds appealing but is very inefficient as a way to scale, because it is one person talking to one other person. Recht therefore aimed mainly at a network and at two-way conversations, in which the other person also shares something. Mentoring inside one's own team raises the question of who is actually learning what, and close-range advice can be given informally in group settings.",
+          "With people further away there is more work and also more benefit. Recht can learn what they do, give input on their work, and plant seeds. Recht has seen people who complained about getting bad projects start to think another way of working might be possible, which can rub off inside their teams and eventually the wider org. That is why Recht prefers mentees who are not very close."
+        ],
+        "evidence": [
+          {
+            "start": 3421.6,
+            "end": 3594.56
+          }
+        ],
+        "followups": [
+          {
+            "question": "How can a promising mentee signal potential and set up mentoring naturally?",
+            "answer": [
+              "Recht would not open with a request for mentoring, which can sound like a large responsibility. Better to ask for help with something specific, or to talk about a design or product, and go from there. Cold outreach works most of the time, though Recht did not receive many such requests. Recht also suggests showing up at talks and asking questions, which Recht reads as a good signal of interest.",
+              "Recht thinks a mentor should not disqualify someone who does not know what to say, since needing mentoring is the point. Willingness to learn can be gauged in a 10 to 15 minute chat. Recht prefers mentoring to be informal, and disliked the various mentoring programmes Uber tried, because what people need is individual and does not suit a plan or schedule. It is also fine to say the mentoring has run its course."
+            ],
+            "evidence": [
+              {
+                "start": 3595.76,
+                "end": 3803.6
+              }
+            ],
+            "speaker": "Joakim Recht"
+          }
+        ],
+        "speaker": "Joakim Recht"
+      },
+      {
+        "type": "qa",
+        "question": "Why did you leave Uber?",
+        "answer": [
+          "Recht says it is not a nice story, because they were actually happy there. Joining in 2014, Recht found a crazy-paced, very hot company, with people arriving from Google, Netflix and Amazon, and felt imposter syndrome as someone from small tech. Recht hit the ground running and expected to be gone after three or four years. But the newcomers were not much better, Recht says, and they changed jobs often, which makes long projects hard to sustain. Despite a performance and promotion culture that felt unnatural for a Danish workplace, it was fun. The Denmark office had outsized influence and senior engineers almost from the start, most of them grown internally. Recht says it produced two distinguished engineers out of about 70 people in a company of roughly 4,500 engineers, and the work was the kind others only read about in blog posts.",
+          "Then management changed, and with it the engineering culture. Recht's local manager, who was also the site lead, left, then the office's first distinguished engineer, then many people in the US. Management became more top-down. Earlier, especially in platform engineering, engineers took part in design decisions, and even when they did not get their way, they understood the reasoning and could stand behind it. Recht gives the cloud move as an example. Uber had been running on-premises, with benefits and downsides, and the decision to move was based on price. Recht says no engineer believed it would be cheaper and that it was not true on its own; it became cheaper only because platform costs had to be cut by almost 50 percent, which Recht says could also have been done on-premises.",
+          "Recht says this top-down style drained senior engineers. Staying would have meant working in an environment where Recht could not stand behind decisions. A peer or manager suggested staying, doing their own thing and taking the money, but Recht felt they could not witness what others were going through. Having tried to change how things were done without effect, Recht concluded that Uber no longer needed engineers at that level. Recht calls it a sad, self-inflicted loss of good people, many of whom have gone to Databricks."
+        ],
+        "evidence": [
+          {
+            "start": 3805.12,
+            "end": 4246.8
+          }
+        ],
+        "followups": [],
+        "speaker": "Joakim Recht"
+      },
+      {
+        "type": "qa",
+        "question": "Why a startup rather than Databricks or another big company?",
+        "answer": [
+          "Recht gives two reasons. Databricks had a local office and wanted to build much the same infrastructure Recht had already built once, and Recht wanted some change. The second reason is that being a senior hire is scary. In a new place one has no personal reputation, only whatever reputation comes from outside. Recht has often seen senior people arrive to fix something they fixed elsewhere and find that it never transfers cleanly. They meet resistance, and some colleagues cheer when they fail. Some companies ease them in, but there is still much catching up and proving to do.",
+          "Recht did not want a natural move to another large company to do the same work. If a move was happening anyway, Recht reasoned, it might as well be drastic, the opposite end from 4,500 engineers. Recht notes the other options remain open, including Databricks, or even Uber, which Recht does not want, so going all in on a startup made sense."
+        ],
+        "evidence": [
+          {
+            "start": 4248.08,
+            "end": 4441.6
+          }
+        ],
+        "followups": [
+          {
+            "question": "How has the startup compared with your expectations?",
+            "answer": [
+              "Recht says it has been interesting and a lot of fun. It is an AI enterprise automation startup that builds a great deal every day in a space nobody has been in before, which keeps Recht on the edge. Recht likes building a whole product instead of only infrastructure, which Recht loves but says leaves one disconnected from reality. Fundraising and the worry of running out of money are stressful. It has been harder than expected, but for now still worth it, though not financially so far, and Recht hopes eventually."
+            ],
+            "evidence": [
+              {
+                "start": 4443.92,
+                "end": 4515.44
+              }
+            ],
+            "speaker": "Joakim Recht"
+          }
+        ],
+        "speaker": "Joakim Recht"
+      },
+      {
+        "type": "qa",
+        "question": "What is the biggest engineering mistake you saw at Uber that was only obvious in hindsight?",
+        "answer": [
+          "Recht says many choices did not scale, but were right when made, and Recht is not sure they would do it differently. The 50-odd databases came out of a philosophy of letting builders build and not letting anyone block them. Ten years in that is an insane strategy that will kill you, Recht says, but early on there is no need for structure because nobody knows what will succeed. The hard part is knowing when to expand and when to contract. Recht says Uber should have been better at the transition from full freedom to more structure, though Recht has not reflected much on how.",
+          "Recht's main illustration is distributed tracing. After Jaeger was built, there was a mandate to enable tracing across thousands of microservices that nobody could fully understand. Recht guesses a first email went out in 2015 saying all teams must implement it, with a deadline three months later. The same message followed, and the push dragged on until perhaps 2017 or 2018, after which the emails stopped without it ever really getting done. Recht says this inability to drive global change made many projects hard, and calls it an engineering culture problem and a major source of waste.",
+          "Recht adds one concrete example, while acknowledging that someone may be angry about it. A team proposed a software networking stack, in which service traffic would go through an ingress and be routed across a software network, implemented in Node. Recht recalls a platform tech talk around 2016 and thinking the plan was insane, but Recht was not yet senior and assumed the senior people knew what they were doing. Recht says they did not, and the decision caused a lot of pain and many years of untangling."
+        ],
+        "evidence": [
+          {
+            "start": 4518.4,
+            "end": 4813.12
+          }
+        ],
+        "followups": [],
+        "speaker": "Joakim Recht"
+      },
+      {
+        "type": "qa",
+        "question": "What was it like to experience Uber's cultural backlash around 2017?",
+        "answer": [
+          "Recht says Denmark and Silicon Valley differ a lot, and found the news bewildering, having assumed everyone was just coding and having fun. The distance was a help. With a nine-hour time difference the office's days stayed quiet and it could keep executing while people left or were fired and board members and the CEO were pushed out.",
+          "Recht's impression of Uber's culture was that performance reviews, promotions and even salary negotiation were all about the individual and not the team, which Recht finds baffling. The Denmark office never fully adopted that mindset, so for them the change was smaller. Recht cites scandals they could not understand, such as misuse of someone's private data and a board member's remark about women on the board during a company-wide livestream after a harassment scandal. Recht had mixed feelings, glad of the distance but sometimes watching with popcorn. On visits to US offices before 2017, Recht found it odd to be offered whiskey on a Tuesday afternoon."
+        ],
+        "evidence": [
+          {
+            "start": 4815.52,
+            "end": 5073.03
+          }
+        ],
+        "followups": [],
+        "speaker": "Joakim Recht"
+      },
+      {
+        "type": "qa",
+        "question": "Knowing what you know now, what advice would you give yourself at the start of your career?",
+        "answer": [
+          "Recht says to try things and not be afraid because something looks hard or because others seem much better. They might be better, but one can get there; it is not rocket science, just computers, and anyone who likes computers is well off if they keep going. Recht advises letting curiosity lead, and not assuming that the current work is the best available, because something better probably exists or soon will. Do not discard it just because the present work is fun. Recht admits it is hard to tell what is better than what one has, so sometimes one simply has to take a chance."
+        ],
+        "evidence": [
+          {
+            "start": 5075.92,
+            "end": 5148.32
+          }
+        ],
+        "followups": [],
+        "speaker": "Joakim Recht"
+      }
+    ],
+    "related": [],
+    "omissions": [
+      "Cold-open teaser montage (00:00.00 to 00:51.04): short excerpts of later answers and the host's lead-in; represented once in the overview and the relevant rounds.",
+      "Closing thanks and guest's pointer to LinkedIn for their writing (01:25:49.84 to 01:26:16.00) omitted as channel logistics.",
+      "Host's closing channel request to engage with the podcast, leave reviews and suggest guests (01:26:17.36 to end, about 01:26:51) omitted as promotion; the host states there are no sponsorships.",
+      "No sponsor reads appear in the source."
+    ]
+  },
+  "coverage": {
+    "source_id": "source-ee0bbf94a641fdda",
+    "sha256": "16cda3044d04aeaf4cde19b4c44dd2064497eca98ccd75a5732866d07fd6048c",
+    "reviewed_chunks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "status": "included",
+    "reason": "Read all 7 compact chunks in full (about 87 minutes; 16,178 source words). Kept 15 initiating rounds and 9 follow-ups in original order; the host's clarifying or restating remarks are folded into the follow-up they belong to. All figures and claims are Recht's own recollections or opinions and are not verified: about 120,000 servers, about half a million databases, a team of about 20, about 52 database technologies, two distinguished engineers among about 70 in the Denmark office out of roughly 4,500 engineers (the captions read 'four and a half thousand years', interpreted as engineers), tracing mandate dates, and the promotion-title sequence (Recht is unsure of title names). Caption quality is uneven: 'Docker' appears as 'DA', 'Pinot' as 'Pino', and 'Uber had on-prem' appears as 'Google had on-prem', and the Databricks and Jaeger names were normalised from captions. The line about Uber not needing 'interviewers at that level' is read as 'engineers'. Profanity in the captions is paraphrased. The host is not named in the transcript."
+  },
+  "editorial": {
+    "theme": "career",
+    "question_rounds": 15,
+    "followup_count": 9,
+    "notes": "Read all 7 compact chunks in full (about 87 minutes; 16,178 source words). Kept 15 initiating rounds and 9 follow-ups in original order; the host's clarifying or restating remarks are folded into the follow-up they belong to. All figures and claims are Recht's own recollections or opinions and are not verified: about 120,000 servers, about half a million databases, a team of about 20, about 52 database technologies, two distinguished engineers among about 70 in the Denmark office out of roughly 4,500 engineers (the captions read 'four and a half thousand years', interpreted as engineers), tracing mandate dates, and the promotion-title sequence (Recht is unsure of title names). Caption quality is uneven: 'Docker' appears as 'DA', 'Pinot' as 'Pino', and 'Uber had on-prem' appears as 'Google had on-prem', and the Databricks and Jaeger names were normalised from captions. The line about Uber not needing 'interviewers at that level' is read as 'engineers'. Profanity in the captions is paraphrased. The host is not named in the transcript."
+  }
+}

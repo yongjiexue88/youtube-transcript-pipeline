@@ -1,0 +1,354 @@
+{
+  "section": {
+    "id": "source-3cd3328907a7fa93",
+    "source_id": "source-3cd3328907a7fa93",
+    "title": "Vlad Feinberg: Kernels, Research Taste, and Landing a Frontier Lab Job",
+    "kind": "interview",
+    "deck": "Vlad Feinberg, a Google DeepMind pre-training area lead, describes the skills, research habits, and hiring signals that matter for frontier AI labs.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "In Feinberg's view, frontier labs hire for kernel and low-level engineering that makes LLM training and serving faster, plus research judgment: knowing the literature and estimating which ideas will work before trying them. Feinberg says the best evidence of fitness is work that others can use. Feinberg argues AI will not replace all roles, because people stay accountable for resource decisions, so people should build these skills now.",
+        "evidence": [
+          {
+            "start": 6.64,
+            "end": 3770.16
+          }
+        ],
+        "heading": "Feinberg's view: frontier-lab jobs reward systems depth, research habits, and proof of work"
+      },
+      {
+        "type": "qa",
+        "question": "What skills are in demand at frontier labs, and what does the work look like?",
+        "answer": [
+          "Feinberg says the post offered a few tangible directions, not a complete list. The directions covered are kernel development and low-level engineering that speed up LLM runtime. Feinberg says demand for this skill is very strong across labs and projects. LLMs also tie research and product together more tightly than earlier machine learning did.",
+          "When a research project changes a network's architecture or reworks serving, such as KV caching, the team must implement the change efficiently. Feinberg says the core task is software that runs at large scale with high throughput and low latency. Feinberg calls this fundamental work, tied to classic back-end engineering."
+        ],
+        "evidence": [
+          {
+            "start": 32.28,
+            "end": 163.92000000000002
+          }
+        ],
+        "followups": [],
+        "speaker": "Vlad Feinberg"
+      },
+      {
+        "type": "qa",
+        "question": "Does DeepMind split applied work from research, as some other labs do?",
+        "answer": [
+          "Feinberg hesitates to draw a sharp line. Teams have different focus areas. One team uses Gemini models to improve search results, which is an applied use. Feinberg says product work still needs hard research, such as making answers factual, citing sources, and judging whether a source is sarcastic or a joke.",
+          "Feinberg says classic LLM research teams still exist, including pre-training and post-training teams that build the models. Those teams also act as site reliability engineers for training runs. Feinberg says the two roles cannot be separated, and that research matters only to the extent it can be delivered. Feinberg sees a spectrum from research to applied work, and says everyone now needs to move across it."
+        ],
+        "evidence": [
+          {
+            "start": 166.4,
+            "end": 318.2
+          }
+        ],
+        "followups": [
+          {
+            "question": "Where do software engineering and pure AI research roles sit on that spectrum?",
+            "answer": [
+              "Feinberg says much of the team's new work rests on infrastructure. The team works on distillation, where a teacher model passes statistics about its training data to a student model. Those statistics come from a large model run over trillions of tokens, which costs millions of dollars in compute. So every operation and every byte counts, and much of the work is standard software engineering.",
+              "Feinberg says the distillation infrastructure has been rebuilt over three or four generations. Each rebuild revisited the research methods in use and widened what the system could do. One rewrite, which Feinberg puts at roughly four months, made distillation research much faster. Feinberg says recent Flash model results depended on these infrastructure investments. The design work covered abstractions, storage, and reads and writes across data centers."
+            ],
+            "evidence": [
+              {
+                "start": 319.4,
+                "end": 524.48
+              }
+            ],
+            "speaker": "Vlad Feinberg"
+          },
+          {
+            "question": "Is there a crossover point where a back-end engineer placed on a model-architecture problem makes a bigger jump than infrastructure work?",
+            "answer": [
+              "Feinberg says research differs from software engineering in its risk and reward. Research taste is an intuition about which path to take through a graph of milestones. A software project is mostly a fixed sequence of steps. A research project is a stochastic graph, where some ideas fail, so people must explore it.",
+              "Feinberg cites a post by Professor Jacob Steinhardt that frames research as a Markov decision process with unreliable transitions and some hidden nodes. Feinberg says the key skill is estimating, before trying an approach, how likely it is to work and how much time it will take. Feinberg says that estimate is what people often call research taste."
+            ],
+            "evidence": [
+              {
+                "start": 525.32,
+                "end": 788.52
+              }
+            ],
+            "speaker": "Vlad Feinberg"
+          }
+        ],
+        "speaker": "Vlad Feinberg"
+      },
+      {
+        "type": "qa",
+        "question": "What concrete examples show a back-end engineer falling short on a research team?",
+        "answer": [
+          "Feinberg says the first gap is context on the research landscape. Research calls for a humble view that much related work already exists. A researcher must know the field's current frontier before extending it. Feinberg says the first skill is a literature review that follows a topic's citation tree.",
+          "Nobody has time to read every paper, so researchers must judge which papers are high value without reading them fully. Reading research papers also needs machine learning and computer science background, and often math and coursework. Feinberg says a researcher needs that understanding of existing methods, since improving a method requires knowing what is already there.",
+          "Feinberg says LLM research is organized around scaling laws. The practical question is whether a team can predict the final test loss of a scaling recipe as compute grows. Feinberg contrasts this with ImageNet work, where validation runs estimate final error. Each LLM pre-training run uses more compute than any before it, so a team gets one large attempt, and methods that work on small data often break at scale.",
+          "Feinberg describes a recipe as a function from a compute budget to a training routine. Paired with an accurate prediction rule, it lets a team decide how to improve the recipe. Feinberg credits earlier scaling studies, including the Kaplan and Chinchilla papers, with making that view feasible."
+        ],
+        "evidence": [
+          {
+            "start": 791.12,
+            "end": 1200.2
+          }
+        ],
+        "followups": [],
+        "speaker": "Vlad Feinberg"
+      },
+      {
+        "type": "qa",
+        "question": "How do you judge whether a candidate can help push the frontier, such as their grasp of the literature and mathematical maturity?",
+        "answer": [
+          "Feinberg agrees that mathematical maturity makes frontier papers easier to read. Feinberg calls the recent key papers table stakes and expects candidates to know them. The broader skill is reading a paper at that level and understanding it well enough to implement its idea.",
+          "Feinberg says ideas from papers may not apply to the lab's domain directly. A candidate who understands an idea deeply can iterate on it and improve it there. Feinberg says the key evidence is the ability to pick up an arbitrary paper and see how far its ideas carry over to Google's setting."
+        ],
+        "evidence": [
+          {
+            "start": 1201.6,
+            "end": 1300.24
+          }
+        ],
+        "followups": [],
+        "speaker": "Vlad Feinberg"
+      },
+      {
+        "type": "qa",
+        "question": "Beyond distillation and kernels, what other areas matter in frontier AI research?",
+        "answer": [
+          "Feinberg names programming-language research first. Abstractions at the language level can speed up kernel development. Feinberg cites ThunderKittens, which lets a developer write kernels through a few functions instead of large amounts of C++. Feinberg says the skill is less about PL research itself than a passion for these abstractions and for low-level hardware. Hardware-specific domain-specific languages belong to this area too.",
+          "Feinberg names reinforcement learning. Deep RL methods such as PPO now run in production systems, a point that was once in doubt. Feinberg says the field has a rich literature, which a learner should enter through the basics before moving to value-based and policy-gradient methods.",
+          "For back-end engineers, Feinberg points to distributed systems and optimization. Training a network across many GPUs raises questions of asynchrony, gradient staleness, and pipelining. Feinberg says these system choices affect convergence and final model quality, and can be studied apart from LLMs. That makes them a good starting point for infra-minded engineers."
+        ],
+        "evidence": [
+          {
+            "start": 1301.4,
+            "end": 1507.84
+          }
+        ],
+        "followups": [],
+        "speaker": "Vlad Feinberg"
+      },
+      {
+        "type": "qa",
+        "question": "Do the demands differ between labs, such as DeepMind and Anthropic?",
+        "answer": [
+          "Feinberg says the skill set is probably similar across frontier labs. Differences lie in business strategy, product offerings, and customers, which follow each lab's specialties. Feinberg sees a lot of overlap in what labs look for. After the post came out, people from OpenAI and Anthropic said they agreed with its advice, which Feinberg reads as some evidence of that overlap."
+        ],
+        "evidence": [
+          {
+            "start": 1509.2,
+            "end": 1568.72
+          }
+        ],
+        "followups": [],
+        "speaker": "Vlad Feinberg"
+      },
+      {
+        "type": "qa",
+        "question": "If people expect software engineering to shrink, will LLMs also take over research work, so there is no reason to favor research?",
+        "answer": [
+          "Feinberg says the research skill set will matter more. Handling stochastic parts of planning will be a larger share of most jobs. Feinberg says people should start building the habit of leveraging AI in their own work, even outside software. Building systems around LLMs to do one's job better is what will set people apart.",
+          "Feinberg says some fear about AI is intentionally used in marketing, and does not think AI will replace all roles. Organizations allocate resources toward goals, and those decisions must trace to a human. Feinberg says people cannot hand off blame to AI. LLMs understand law and can review a contract, but they cannot represent a client in court or be disbarred. A professional must check the output."
+        ],
+        "evidence": [
+          {
+            "start": 1569.96,
+            "end": 1763.88
+          }
+        ],
+        "followups": [
+          {
+            "question": "Was fear about AI the original motivation for the post?",
+            "answer": [
+              "Feinberg says the post was meant to be constructive. Feinberg mentions a viral long-form post about an AI permanent underclass, and says it is easy to get stuck in that loop. Feinberg argues that people have agency over the future and should invest in skills that matter for tomorrow now.",
+              "Feinberg says the post also answers the question people ask most after a talk, such as a Princeton lecture: how to work at DeepMind."
+            ],
+            "evidence": [
+              {
+                "start": 1766.0,
+                "end": 1848.88
+              }
+            ],
+            "speaker": "Vlad Feinberg"
+          }
+        ],
+        "speaker": "Vlad Feinberg"
+      },
+      {
+        "type": "qa",
+        "question": "What signals matter most when marketing yourself to a frontier lab?",
+        "answer": [
+          "Feinberg says the strongest signal is evidence of building something that others use, such as kernel work. A candidate can take an open-source LLM and optimize it. The improvement does not need to help in every setting, and it does not need to speed up GPU execution.",
+          "Feinberg says the serving stack around LLMs is a distributed system that manages KV cache memory, load balancing, and request queuing. Projects such as vLLM and SGLang welcome help. Feinberg also names TensorRT demos and Dynamo, a system for disaggregated serving. A project that uses or improves those components would be a very positive signal."
+        ],
+        "evidence": [
+          {
+            "start": 1849.84,
+            "end": 1962.04
+          }
+        ],
+        "followups": [],
+        "speaker": "Vlad Feinberg"
+      },
+      {
+        "type": "qa",
+        "question": "Does the advice change for an internal transfer, such as an infrastructure engineer moving into a frontier team?",
+        "answer": [
+          "Feinberg says the advice so far assumed an external hire. Many large organizations do not build frontier models, but still use them. Feinberg gives the example of a colleague from the search side who moved onto Feinberg's team. That colleague's approach was to help the product area adopt the technology as well as possible. Feinberg says there is a large gap in applying and serving LLMs effectively inside such an organization.",
+          "Feinberg says becoming the person who closes that gap creates business value and raises the standing of the organization. It also makes that person the natural partner for the research side, so models work well inside that org. Feinberg says transferring is then optional. The work is already cutting edge, because it puts new technology into a product people use."
+        ],
+        "evidence": [
+          {
+            "start": 1963.88,
+            "end": 2111.8
+          }
+        ],
+        "followups": [],
+        "speaker": "Vlad Feinberg"
+      },
+      {
+        "type": "qa",
+        "question": "What was the concrete invitation in the post, given that Feinberg was hiring?",
+        "answer": [
+          "Feinberg says the post tests for intent, mathematical maturity, and grit. The listed exercises cover basic knowledge of scaling laws, willingness to implement a real transformer, and the routine math used to size LLMs. Feinberg asks for handwritten work on the scaling-book exercises, with a video of doing them, plus the transformer exercise in the post. Candidates who can work in the New York office are offered an interview.",
+          "Feinberg says quite a few people have replied, and a couple of submissions are moving through the interview loop. The post drew a response within about a week. Headcount is limited, but the exercises build self-development and prepare people for interviews elsewhere. Feinberg offers referrals to other hiring teams."
+        ],
+        "evidence": [
+          {
+            "start": 2113.8,
+            "end": 2259.44
+          }
+        ],
+        "followups": [],
+        "speaker": "Vlad Feinberg"
+      },
+      {
+        "type": "qa",
+        "question": "Can you give a high-level overview of pre-training and its main challenges?",
+        "answer": [
+          "Feinberg says the pre-training area delivers product models. These include the Flash model and a related model that power AI overviews and AI mode in Search. Other first-party models serve ads and YouTube. The team is also a technical point of contact for the Google-Apple partnership. Beyond these deliverables, the team does research to keep them state of the art and to support the Pro series model.",
+          "Feinberg says that research falls into three areas. The first is distillation. The second is inference co-design, which means designing neural architectures that run efficiently on the target hardware, including network topology, matrix shapes, and attention head counts. The third is new quantization methods, which change what is feasible for the other two.",
+          "Feinberg explains quantization as cutting the space that a network's weights take. Weights trained in 32-bit floats can often be stored at 4 bits with simple methods and keep quality. Quantizing runtime activations as well cuts the electricity needed for the math. Feinberg puts about 99 percent of AI hardware operating cost on power, a figure not verified here. The research goal is to push past the four-bit range."
+        ],
+        "evidence": [
+          {
+            "start": 2312.2,
+            "end": 2593.64
+          }
+        ],
+        "followups": [],
+        "speaker": "Vlad Feinberg"
+      },
+      {
+        "type": "qa",
+        "question": "Why is a low model flops utilization (MFU) not actually low?",
+        "answer": [
+          "Feinberg defines MFU as the flops a network performs divided by the flops the accelerator could have performed in the same time. Full MFU would need the matmul unit busy the entire time, with no memory reads or other operations. Feinberg says that would not be a useful computation.",
+          "Real networks apply activation functions, run attention, and write outputs to memory. Those steps use the memory bus or vector units, or run more slowly than matmuls on the hardware. So a network does not run at the chip's rated speed, and a low-looking MFU is expected.",
+          "Feinberg says inference co-design uses all of the chip's rates: communication between chips, memory bandwidth, parameter reads, matmul flops, and vector flops. A network's shapes should use those units well. Feinberg says the shapes also affect training quality, so the work is a joint optimization. Because hardware rates change, the best shapes change too."
+        ],
+        "evidence": [
+          {
+            "start": 2596.48,
+            "end": 2841.0
+          }
+        ],
+        "followups": [],
+        "speaker": "Vlad Feinberg"
+      },
+      {
+        "type": "qa",
+        "question": "Why did Jeff Dean give a spot bonus, and what was the story behind it?",
+        "answer": [
+          "Feinberg says the bonus came at the start of the Gemini program, for people who launched the first version of Bard. Feinberg's contribution was small. Feinberg helped with supervised fine-tuning for an early Bard version. At the time, Feinberg was doing pure research in Google Brain and focused on first-author papers at top venues.",
+          "Feinberg says a manager encouraged the team to join the effort. That push led Feinberg to hyperparameter tuning and engineering work to run the model on older TPUs. Jeff Dean recognized that small start, which Feinberg says grew into more LLM investment and eventually the current role.",
+          "Feinberg's lesson is that the value lies less in the fine-tuning itself than in joining a project that matters to the business. Some of that work is not glamorous, such as hyperparameter tuning or optimizing the XLA compiler to fit a program into a memory limit. Feinberg says such work matters for getting into very high-value projects."
+        ],
+        "evidence": [
+          {
+            "start": 2843.2,
+            "end": 3013.8
+          }
+        ],
+        "followups": [],
+        "speaker": "Vlad Feinberg"
+      },
+      {
+        "type": "qa",
+        "question": "What is your favorite war story from working on Gemini?",
+        "answer": [
+          "Feinberg's favorite story is Flash 2.0, a very fast, low-latency model that is still good, which Search uses to answer quickly in AI mode. Earlier Flash models were dense, even though Mixture-of-Experts (MoE) models add capacity. An MoE model holds more parameters, which must be spread across many chips. Routing a token to an expert on a distant chip adds communication to each forward pass, and latency grows with the number of chips.",
+          "Pipelining offered a way around that cost. A team member proposed applying pipeline prefill to MoE models. Instead of splitting experts across machines, this approach splits layers across machines, so experts can stay on one machine or a few. Communication can then run behind computation, since one layer works on early tokens while the previous layer works on later ones. Feinberg says this serving change helped make MoE latency attractive, and that the Gemini 2.0 report describes an MoE series.",
+          "Feinberg says the model was bigger than any the flash-scale team had trained, and training took about 40 days. A small team of about five people rotated shifts, handing off SRE-style work to keep the job alive. Tuned data iterators had to keep up, and any gap or indexing issue needed a fast fix, since it wasted GPU time."
+        ],
+        "evidence": [
+          {
+            "start": 3014.96,
+            "end": 3423.0
+          }
+        ],
+        "followups": [
+          {
+            "question": "What were nights and weekends like during that stretch?",
+            "answer": [
+              "Feinberg says the 40 days involved little sleep, with dual shifts across the Paris and Mountain View offices. The payoff came when the model launched around the time DeepSeek V3 came out.",
+              "Feinberg describes a Wall Street Journal article that framed the moment as a red scare about Chinese open-source models. A friend sent a leaderboard screenshot that seemed to show Gemini far behind, but Feinberg says the article's rows were badly written. The article now shows a Flash 2.0 thinking model well ahead of DeepSeek V3, which Feinberg says may have undercut its open-source narrative."
+            ],
+            "evidence": [
+              {
+                "start": 3425.72,
+                "end": 3537.8
+              }
+            ],
+            "speaker": "Vlad Feinberg"
+          }
+        ],
+        "speaker": "Vlad Feinberg"
+      },
+      {
+        "type": "qa",
+        "question": "If you could advise yourself just after college, what would you say?",
+        "answer": [
+          "Feinberg's first advice is to chase the problems people face today. Feinberg says a person should not avoid a smaller or less glamorous part of a big problem, even if it is not fancy research math. Working on what matters shows what moves the frontier. Feinberg calls for humility in how to approach problems.",
+          "Feinberg's second piece of advice is professional: be the co-worker others want to see succeed. Feinberg contrasts this with workplace leaders who squeeze people for short-term results. Feinberg says the most effective people are kind, and cites a mentor who first introduced Feinberg to computer science as one example.",
+          "Feinberg says a generous approach can look naive when viewed as workplace game theory, but it builds collaboration and a willingness to help. That trust matters for large projects that need several people and skill sets to finish. Feinberg's summary is to be the kind of person other people want to see succeed."
+        ],
+        "evidence": [
+          {
+            "start": 3539.36,
+            "end": 3770.16
+          }
+        ],
+        "followups": [],
+        "speaker": "Vlad Feinberg"
+      }
+    ],
+    "related": [],
+    "omissions": [
+      "Cold open teaser 00:00.00 to 00:05.20 and host pre-roll about the scaling-book invitation 00:14.44 to 00:30.60 omitted; the invitation itself is covered at 35:13.80 to 37:39.44.",
+      "Sponsor read for WorkOS 37:41.60 to 38:29.80 omitted.",
+      "Host closing reflection 01:02:51.24 to 01:03:05.12 omitted.",
+      "Channel call for comments and guest suggestions, and a keyboard product promotion with Kickstarter links, 01:03:05.80 to 01:04:02.44 omitted."
+    ]
+  },
+  "coverage": {
+    "source_id": "source-3cd3328907a7fa93",
+    "sha256": "b001156f202ea1a720b4d7e4ac73359f06b88da063ac41c6d375f204c68d1459",
+    "reviewed_chunks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "status": "included",
+    "reason": "Read all 5 chunks in full, in order (about 64 minutes, 10,021 words). Kept 15 initiating rounds and 4 follow-ups, covering all 19 host questions. Feinberg is the only speaker named in the title; the host is named Ryan only in the transcript, so the host is not named in the section. Auto-generated captions were used, so model and product names (for example the smaller Flash-family model, Flash 2.0 thinking, Dynamo, TensorRT, vLLM, SGLang) appear as spoken, not checked. Colleague and mentor names are left out because captions may garble them. Claims that are the speaker's own figures or estimates and are not verified here: about 99 percent of AI hardware operating cost from power; about 40 days of training with a rotation of about five people; the roughly four-month distillation rewrite; the response to the post within about a week; and the account of the Wall Street Journal leaderboard correction. The manifest lists no speaker names beyond the title. No overlap with other sources was checked."
+  },
+  "editorial": {
+    "theme": "hiring",
+    "question_rounds": 15,
+    "followup_count": 4,
+    "notes": "Read all 5 chunks in full, in order (about 64 minutes, 10,021 words). Kept 15 initiating rounds and 4 follow-ups, covering all 19 host questions. Feinberg is the only speaker named in the title; the host is named Ryan only in the transcript, so the host is not named in the section. Auto-generated captions were used, so model and product names (for example the smaller Flash-family model, Flash 2.0 thinking, Dynamo, TensorRT, vLLM, SGLang) appear as spoken, not checked. Colleague and mentor names are left out because captions may garble them. Claims that are the speaker's own figures or estimates and are not verified here: about 99 percent of AI hardware operating cost from power; about 40 days of training with a rotation of about five people; the roughly four-month distillation rewrite; the response to the post within about a week; and the account of the Wall Street Journal leaderboard correction. The manifest lists no speaker names beyond the title. No overlap with other sources was checked."
+  }
+}

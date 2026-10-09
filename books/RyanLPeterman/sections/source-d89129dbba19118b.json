@@ -1,0 +1,691 @@
+{
+  "section": {
+    "id": "source-d89129dbba19118b",
+    "source_id": "source-d89129dbba19118b",
+    "title": "Michael Bolin: Meta Build Tools, OpenAI Codex, and Working with Agents",
+    "kind": "interview",
+    "deck": "Michael Bolin traces a career from Google and Meta developer tooling to leading the open-source Codex repository at OpenAI, and explains how he works with coding agents and why he still advises engineers to learn the lower layers.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Michael Bolin, introduced by the host as tech lead of the open-source Codex repository at OpenAI and a former distinguished engineer at Meta, uses the interview to walk through his career and his current way of working. His view is that the best projects start from dissatisfaction with something concrete, that careers go best when personal enjoyment overlaps with what an employer values, and that influence depends on how a point is made as much as on being right. On Codex, he describes a workflow in which models write most of the code while humans still own the security-critical parts, and he argues that engineers should keep digging into lower layers of abstraction, because the quality of the questions asked of an agent shapes the quality of the result.",
+        "evidence": [
+          {
+            "start": 0.08,
+            "end": 4749.6
+          }
+        ],
+        "heading": "Bolin's view: follow the problems you care about, and keep your depth as the tools improve"
+      },
+      {
+        "type": "qa",
+        "question": "The host found a dead link on Bolin's old website for something called Chickenfoot. What was it?",
+        "answer": [
+          "Bolin says it was his master's thesis project, a Firefox extension that put a small coding tool and read-eval-print loop in a browser sidebar. The goal was end-user programming for the web, with functions such as enter and click. A user could pass a string, and the tool would find the matching text box and fill it in.",
+          "Much of the work went into the heuristics underneath: for an instruction like entering a first name, the tool looked for those words in the page and chose the nearest text box. Bolin sees a similarity to what agents do today, except that agents now work in true natural language rather than a small JavaScript console."
+        ],
+        "evidence": [
+          {
+            "start": 44.72,
+            "end": 136.07999999999998
+          }
+        ],
+        "followups": [
+          {
+            "question": "So it parsed the page, and you could name a field in the console?",
+            "answer": [
+              "Bolin confirms. The tool relied on accessibility tags and the alt text of images, and it worked well. He says it was especially good on Craigslist, one of the simplest sites to automate. Friends of his built automated tasks with it and made real money from them."
+            ],
+            "evidence": [
+              {
+                "start": 137.04,
+                "end": 164.72
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "What drew Bolin to Google and to Google Calendar, and what was the culture like?",
+        "answer": [
+          "Bolin says he got online in the 1990s, when finding anything meant trying five search engines. A roommate pointed him to a newer search engine in March 2000, which struck him as better. He contrasts Yahoo's cluttered pages with Google's sparse, principled design, and he noticed that good people were taking jobs there.",
+          "In Bolin's account, Google understood the web better than Microsoft did at the time, since Microsoft had dismantled the Internet Explorer project while Google was web-forward. With the engineering quality and impact, it was the place he most wanted to go coming out of school."
+        ],
+        "evidence": [
+          {
+            "start": 165.6,
+            "end": 245.28
+          }
+        ],
+        "followups": [
+          {
+            "question": "What was the culture like, in terms of product versus infrastructure?",
+            "answer": [
+              "Bolin says founders keep a soft spot for whatever the company was first good at, which at Google meant information retrieval and infrastructure. Products such as Gmail were what drew him in, but they did not carry the same standing inside the company as search.",
+              "Calendar, he says, was mostly consumer-facing and was also sold to enterprises, though his team was not the one making the money. He compares the team to a call center."
+            ],
+            "evidence": [
+              {
+                "start": 245.84,
+                "end": 302.96
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "Why did Bolin leave Google after four years, given that the departure read as bittersweet?",
+        "answer": [
+          "Bolin says the financial picture changed once the four-year mark passed. The deeper problem, he says, was a bad habit of working hard on things that mattered to him but not to Google. He lists Calendar, which was important, Google Tasks, a small feature with two to three orders of magnitude fewer users, and the JavaScript infrastructure and Closure toolset. He wrote the book on Closure out of motivation.",
+          "He is proud of that work, but says it was not the best career move, since others were being recognized while he was working hard on the wrong things. He calls it the harder-not-smarter mistake, and decided to look for a place where what excited him matched what the company cared about."
+        ],
+        "evidence": [
+          {
+            "start": 304.08,
+            "end": 405.36
+          }
+        ],
+        "followups": [],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "How did Bolin get involved in build tooling for Facebook's Android codebase?",
+        "answer": [
+          "Bolin says Facebook was planning a phone with HTC, forking Android, and this time the project was going to ship. An earlier attempt to put an HTML5 Facebook on phones had clearly not worked. Mobile would make or break the company, and a friend told him that to be a product person he should pick up Java or Objective-C rather than stay on JavaScript. He chose Java.",
+          "Unlike most projects, this one had a hard deadline, because a build had to go to HTC to be burned into phones. Part of the Android code had been inherited from a contractor and should have been thrown away, and the Ant-based build was so hard to modularize that the team had to hack it to support even four or five modules.",
+          "Facebook had a hackathon culture, so Bolin used one to build a new build system in the style of Google's. He says there was already a Python-based system in a similar mold, whereas his was in C++. His thinking was that either it would work and he would be happy as a developer, or he was not sure he would last at the company."
+        ],
+        "evidence": [
+          {
+            "start": 408.4,
+            "end": 613.2
+          }
+        ],
+        "followups": [
+          {
+            "question": "If you had not fixed this, would you have quit the company?",
+            "answer": [
+              "Bolin says he would at least have switched projects. He wanted a way to be happy coming in to write code every day. He credits colleagues for the fact that almost everyone told him this was a very bad idea, yet nobody said no. At Google, he felt, people said no more often. One senior Android engineer was the exception and backed him.",
+              "Bolin says he got something dramatically better, at least twice as fast, in a relatively short time. That turned heads, and the team went with his version."
+            ],
+            "evidence": [
+              {
+                "start": 615.92,
+                "end": 692.0
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "What gave Bolin the conviction that his build tool could beat the alternatives and become the default?",
+        "answer": [
+          "Bolin says his Java experience told him the existing process should not be that slow. Most of the pushback was that deviating from the standard meant risking being stuck if the standard improved a hundredfold, which he finds ironic at a company that built its own PHP virtual machine and language. He guesses the fear came from mobile timelines and a senior person apparently going off on a science project.",
+          "He also framed the work narrowly: only an Android build system, not a takeover of the company. He made it capable of supporting more but never pushed it. About a year later the iOS developers asked to use it, which he found heartening."
+        ],
+        "evidence": [
+          {
+            "start": 693.12,
+            "end": 802.16
+          }
+        ],
+        "followups": [
+          {
+            "question": "How did he influence people at a new company where he had no credibility?",
+            "answer": [
+              "Bolin says one prolific senior Android engineer, also ex-Google, advised him to do it fast before anyone cancelled the work, and promised support if it succeeded. That engineer welcomed a faster development cycle and was among the first to praise it.",
+              "Bolin also admits a mistake. Coming from Google, he thought of Facebook as a bunch of college kids and several times argued that Google did things a certain way. People told him they did not care, and he says they were mostly right: what worked at Google would not necessarily work there."
+            ],
+            "evidence": [
+              {
+                "start": 803.04,
+                "end": 889.04
+              }
+            ],
+            "speaker": "Michael Bolin"
+          },
+          {
+            "question": "What was the technical reason it was so much faster?",
+            "answer": [
+              "Bolin says he sat down with the existing tool and asked what it was actually doing. It restarted from scratch whenever anything changed, which made incremental builds slow. He worked out what depended on what, including the complicated Android resources, so results from unchanged steps could be cached.",
+              "He adds that adding a module in the old setup took around 200 lines of XML build script that nobody understood, so nobody modularized. Buck made new modules simple, which produced more modules and more incremental builds. The host summarizes this as less redundant work."
+            ],
+            "evidence": [
+              {
+                "start": 890.88,
+                "end": 993.84
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "Why did Bolin move on to IDE work, and how did his editor win out over a competing one?",
+        "answer": [
+          "After Buck, Bolin says, he spent a brief stint on iOS Messenger and still did not like it. The code came from an acquisition and still required hand-written reference counting, and Xcode did not feel right to him. Facebook always had the biggest app on both platforms, so it hit the scaling limits of mobile tools first, which he found interesting as a dev tools person because the problems had real business value.",
+          "Apple told the team that Xcode was struggling because the project was too big. That made it seem justifiable to build an editor as a nicer layer over the compiler tooling, especially as Facebook had moved from Git to Mercurial and Xcode would never handle its bespoke needs. He did not feel the same about Android, where IntelliJ had been made to work at scale.",
+          "Another team was building a web-based IDE on an abandoned Google open-source project written in Google Web Toolkit. Bolin tried to build credibility there, even speeding up their build, but concluded it made little sense for the React company not to build its tools on its own technology. As with Buck, he scoped his editor narrowly, to iOS only."
+        ],
+        "evidence": [
+          {
+            "start": 995.6,
+            "end": 1272.0
+          }
+        ],
+        "followups": [
+          {
+            "question": "Why did leadership side with Bolin's editor when it had no users yet?",
+            "answer": [
+              "Bolin says the other team had existing users, perhaps a thousand. He gives two reasons for the outcome. One was his argument about the technology stack. The other was that his editor, which the captions render as \"New Clyde\", was a desktop application, and an Xcode replacement needed to talk to the simulator and plug-in phones. He also thinks the credibility earned with Buck made leadership willing to gamble on another of his projects."
+            ],
+            "evidence": [
+              {
+                "start": 1272.72,
+                "end": 1342.08
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "How did Bolin react to the promotion to E8, described by the host as principal level in the industry?",
+        "answer": [
+          "Bolin says he was very excited. Having felt out of step with his employer at Google, he saw the promotion as validation that he was growing in more than technical skill: he was learning what it means to do work that is in line with the employer. That was as satisfying to him as the promotion itself."
+        ],
+        "evidence": [
+          {
+            "start": 1342.96,
+            "end": 1386.32
+          }
+        ],
+        "followups": [],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "What are the pros and cons of open-sourcing the technology a company builds?",
+        "answer": [
+          "Bolin says companies have benefited so much from open source that, when something is not the secret sauce, sharing it feels right. He applies the same view to Codex. Even if no one adopts a tool, it serves as a reference for how something can be done, and in better cases it brings meaningful contributions. He recalls that Uber and Airbnb adopted Buck, as later companies hit the problems Facebook had met first.",
+          "On Google's internal Blaze, available externally as Bazel (the captions render it as \"basil\"), Bolin says Facebook was open source first and wondered whether that added pressure on Google, and he believes the Buck team got some unofficial credit from people who worked on Google's tool. He also sees open source as a recruiting signal that a company is at the leading edge of an area."
+        ],
+        "evidence": [
+          {
+            "start": 1388.72,
+            "end": 1485.36
+          }
+        ],
+        "followups": [
+          {
+            "question": "Is open-sourcing a bottoms-up engineer decision, or does leadership back it?",
+            "answer": [
+              "Bolin says it was bottoms-up in both of his cases. React and PyTorch are the big success stories where the value to the company is unquestionable, but he sees a longer tail of projects where managers get grumbly if engineers seem to do too much open source, depending on the economy. He says the work was not met with much resistance. It usually yields a conference talk or two and a blog post, and those posts pay dividends over time because they have a longer shelf life than people expect."
+            ],
+            "evidence": [
+              {
+                "start": 1485.36,
+                "end": 1564.24
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "After the promotion, what did Bolin do next, and what is the \"hero quest\"?",
+        "answer": [
+          "Bolin says he got a little over his skis by trying to help with web speed. Load time on facebook.com was poor and the architecture stale, and many colleagues had worked on web for a long time while he had been in mobile and dev tools. He and another engineer compiled V8 from source to see whether generating JavaScript differently would help. None of it panned out.",
+          "He concluded that different people suit different projects. He is better when a project involves writing a lot of code from the beginning, whereas this effort was about looking at data and talking to many people, which is not his strength."
+        ],
+        "evidence": [
+          {
+            "start": 1561.76,
+            "end": 1660.24
+          }
+        ],
+        "followups": [
+          {
+            "question": "What does hero quest mean?",
+            "answer": [
+              "Bolin calls it embarrassing, because it involves ego. Engineers say that if only someone would come in and cut this Gordian knot, and he assumed that since he knew JavaScript, he could be that person. He says he did not succeed, and that he has had to relearn the lesson at least once since.",
+              "He can do many things, but a smaller subset is what he genuinely enjoys, and he will be much more successful staying within that subset while trying to expand it over time. In his words, people do not all have to be the best at everything, and should accept and embrace that."
+            ],
+            "evidence": [
+              {
+                "start": 1662.0,
+                "end": 1716.64
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "How did Bolin find the next senior-level problem, and why was the virtual file system worth building?",
+        "answer": [
+          "Bolin credits some luck. Small summits of engineers brainstormed what would bite the company later, and one concern was that the monorepo would keep growing until it hit scaling limits. A manager gathered a few strong engineers to build a virtual file system, and Bolin says that for quite a while he was the worst engineer on the project.",
+          "He explains the benefit for a monorepo. Most people need only a subset of its files, so with a virtual file system, cloning or updating to another commit does not write every file to disk, a cost that otherwise grows with the repository. When the operating system asks for a file, the system fetches its contents as if everything were laid out."
+        ],
+        "evidence": [
+          {
+            "start": 1719.52,
+            "end": 1820.96
+          }
+        ],
+        "followups": [
+          {
+            "question": "What was the part of the project Bolin thinks he was better at?",
+            "answer": [
+              "Bolin says the second part of the project was the one he was better at. Existing tools are used to reading every file, and ripgrep is one example. If a tool materializes all the files, the benefits of the virtual file system are lost, so the development flow and tools had to be redesigned around it. The host sums the idea up as lazy loading of a huge file system, and Bolin agrees."
+            ],
+            "evidence": [
+              {
+                "start": 1825.84,
+                "end": 1891.44
+              }
+            ],
+            "speaker": "Michael Bolin"
+          },
+          {
+            "question": "What did Bolin build for file search, and how fast was it?",
+            "answer": [
+              "Editors normally find files by walking the whole file system, which would undo the benefits. Bolin and a colleague who now works on the Codex team built a service called Miles, as the captions give it. It ingested new commits from trunk on a schedule and tracked only the names of added and removed files. The colleague devised an index that supported fuzzy matching, such as typing only the capital letters of a camel-case name or misspelling it.",
+              "Bolin recalls the index handling over a million files in about 10 to 20 milliseconds, faster than Xcode or VS Code out of the box. It became a service used well beyond file search, and when he left he recalls around 30 servers spread around the world."
+            ],
+            "evidence": [
+              {
+                "start": 1891.44,
+                "end": 2052.32
+              }
+            ],
+            "speaker": "Michael Bolin"
+          },
+          {
+            "question": "Was the index a trie, or something else?",
+            "answer": [
+              "Bolin says it was not. The design used two parallel arrays, one for the file names and one for an integer index. Each entry also carried a 64-bit mask with one bit per lowercase letter, capital letter, digit and a few symbols, set if that character appeared in the file name, so a search could skip many candidates immediately.",
+              "The parallel arrays suited CPU cache behavior, since memory is read linearly, and could easily be partitioned for parallelism. Bolin adds that it was not out of a textbook, and that he should write it up some day."
+            ],
+            "evidence": [
+              {
+                "start": 2053.36,
+                "end": 2146.16
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "What did Bolin learn about influence and conflict that delayed a promotion?",
+        "answer": [
+          "Bolin says most people at the E8 level and above do not write code. They spend their time on influence, writing the large document and getting teams on board. For a senior engineer who writes code, he says, reaching the expected impact means spending at least some time influencing others.",
+          "His problem was that he was so confident in his insights that he came down too hard. When Microsoft acquired GitHub, the editor he had built relied on GitHub technology, and he feared it would be replaced because VS Code would not let it stay a project. He says that turned out to be true. But he was anxious, pushed people, and did not account for people being happy with what they were doing and not wanting their cheese moved. He received a talking-to, and his promotion waited.",
+          "From the coaching that followed, Bolin says, he became more aware of what triggers him, including technical decisions, and tries to notice that and not act in the moment. If he is not in the best place to have the conversation, he might talk to the person's manager rather than charge in like a bull in a china shop."
+        ],
+        "evidence": [
+          {
+            "start": 2153.92,
+            "end": 2338.24
+          }
+        ],
+        "followups": [
+          {
+            "question": "He was right about the editor in hindsight but told to calm down. How does he feel about that?",
+            "answer": [
+              "Bolin says that about a year later he had conversations in which he asked to balance the ledger a little, and they worked it out. He agrees with the host that the learning was about how he went about it, not what he was right about."
+            ],
+            "evidence": [
+              {
+                "start": 2340.08,
+                "end": 2392.48
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "What drew Bolin from Meta to OpenAI?",
+        "answer": [
+          "Bolin interviewed at OpenAI at the end of 2023, after spending 2023 at Meta on developer tools built on language models, including a lighter in-house Copilot-style tool that the transcript names CodeCompose. Feedback often asked why it was not as good as GPT-4, and his answer was that the team was working with Llama 2. As an engineer rather than a researcher, he wanted to build the experiences with the best model.",
+          "He gives three more reasons. He respected the people moving to OpenAI and felt he could work with more senior people there. He told many people it felt like starting at Google in 2000, once the company had found its footing and product-market fit. And he wanted a large user base again: he went to Facebook hoping for consumer scale but ended up building developer tools for roughly 20,000 colleagues. Codex, he says, has what he recalls as over a million weekly users, growing almost vertically, against the 20,000 to 40,000 developers he could affect at Meta."
+        ],
+        "evidence": [
+          {
+            "start": 2396.48,
+            "end": 2579.28
+          }
+        ],
+        "followups": [
+          {
+            "question": "How does a research-led culture compare with an engineering-led one?",
+            "answer": [
+              "Bolin says it was certainly an adjustment, and that anyone coming from the big consumer tech companies who says otherwise is not being honest. He loves the harness work he does on Codex, but argues that if the model were not very good, nothing done on the harness would matter.",
+              "He values sitting next to the research team and working closely with it. Building the product with the people who build the model was another reason to leave Meta. He thinks that kind of co-development was possible at Meta only to a degree, and the impact was not the same."
+            ],
+            "evidence": [
+              {
+                "start": 2584.64,
+                "end": 2710.72
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "What is the story of Codex's launch, and how did it come together after a rocky start?",
+        "answer": [
+          "Bolin says the Codex CLI launched in April 2025 as a one-more-thing moment at the end of a livestream, demoed live and open-sourced. It was good but rushed. Open source brought pull requests and, as he recalls, 10,000 to 20,000 stars within a week or two. The team, he says, was not staffed to drive it as needed.",
+          "A month later the company launched the cloud version, where Codex runs in a container and tasks can start from a phone. Bolin recalls about seven engineers and some researchers, a better-staffed effort. He thinks the long-term vision is correct but a bit ahead of its time: adoption was big at first but not as sticky as hoped, and by mid-summer local agents had the stronger product-market fit.",
+          "The team shifted over the summer, adding people to the CLI as GPT-5 approached. Bolin had prototyped a VS Code extension a couple of times and felt strongly that the terminal forces compromises that an editor does not. He describes August as a crazy month: GPT-5, a refreshed terminal interface with support for the open-weights model, and the extension. He treats that as the inflection behind today's growth."
+        ],
+        "evidence": [
+          {
+            "start": 2667.12,
+            "end": 2956.56
+          }
+        ],
+        "followups": [
+          {
+            "question": "Why does Bolin believe the long-term direction is remote and in the cloud?",
+            "answer": [
+              "Bolin says the users for whom the cloud version is sticky want automation, such as handing an agent every GitHub issue or Linear ticket that comes in on a private repository. He acknowledges costs and potential abuse, but that cannot all happen on a laptop.",
+              "He expects individuals may still spend more time with a local agent, but most agent compute time will be in the cloud once setup, which takes more work today, is done. The VS Code extension already has a button to move a conversation to the cloud, and he expects people to throw work over and bring it back when it is done."
+            ],
+            "evidence": [
+              {
+                "start": 2957.76,
+                "end": 3073.44
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "How has Bolin's own AI workflow changed, and how much of his code does he write by hand?",
+        "answer": [
+          "Bolin says he is now a bigger user of the Codex app than he expected, after a period of living in the VS Code extension sidebar. He does look at the code. For true throwaway prototypes he will not, which he finds freeing, but for code that ships in Codex itself, which affects everyone else, he still reviews it.",
+          "He has developed a sense of when the model can handle a change without being babysat, so he writes a lot up front. He keeps four or five clones of the repository and likes the multitasking in the app, treating it as a game of how much throughput he can get. It can feel hectic, but he gets more done, and he almost feels bad writing code by hand."
+        ],
+        "evidence": [
+          {
+            "start": 3074.48,
+            "end": 3193.12
+          }
+        ],
+        "followups": [
+          {
+            "question": "What share of his code is written by hand versus by the model?",
+            "answer": [
+              "Bolin says the model writes about 80 to 90 percent. He gives debugging a test or a CI failure as an example of where he tells the model to add print statements and investigate, which he finds freeing."
+            ],
+            "evidence": [
+              {
+                "start": 3194.48,
+                "end": 3210.56
+              }
+            ],
+            "speaker": "Michael Bolin"
+          },
+          {
+            "question": "Which work is in the remaining hand-written part, and which in the model's share?",
+            "answer": [
+              "Bolin says he asks himself each time whether to write something, and the answer is almost always no. The exceptions are lower-level work. The harness he works on is in Rust and does operating-system-specific things, and he spends much time on the sandboxing that upholds the security integrity of Codex, so that the model cannot go outside the bounds the user sets. He does more of that by hand because it must be correct and well tested. Sometimes he writes the groundwork and lets the model fill in the rest.",
+              "He also uses the model to split an oversized pull request into reviewable commits, which would once have taken much of his time."
+            ],
+            "evidence": [
+              {
+                "start": 3212.56,
+                "end": 3317.2
+              }
+            ],
+            "speaker": "Michael Bolin"
+          },
+          {
+            "question": "Do humans still review code, or do agents handle it?",
+            "answer": [
+              "Bolin likes the approach where the agent does several rounds of review until it is confident the change is worth a human's time, but people still look at everything before it lands. The team has an AGENTS.md file like others do, and humans still catch gaps, such as context that has not yet been written down.",
+              "He notes that people now use AI to write pull request summaries, and the summaries across the team are getting much better, covering the why and the what. Combined with the earlier Codex review, he says this helps the team get through a larger volume of review faster."
+            ],
+            "evidence": [
+              {
+                "start": 3320.4,
+                "end": 3404.4
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "Why is the Codex CLI open source, and how does Codex discover what is available in its environment?",
+        "answer": [
+          "Bolin says he is not the most zealous about open source but sympathizes with it. If a tool runs on a user's machine, people care what it does, and in the domain of AI agents it matters that people can inspect it. The project also receives contributions and bug reports it would otherwise miss, and it shows the world how this is done. He has written one blog post about the agent loop and plans more, though time is the limit."
+        ],
+        "evidence": [
+          {
+            "start": 3420.4,
+            "end": 3499.68
+          }
+        ],
+        "followups": [
+          {
+            "question": "How does Codex find what tools and resources are available?",
+            "answer": [
+              "Bolin lists a few routes. The model, as trained, is fond of ripgrep and uses it well to find things. An AGENTS.md file or README can say which tools matter in a repository. When a user connects MCP servers, their tool definitions are injected at the start of the conversation, so that is not discovery by Codex but information placed in front of it. A large part remains the model doing the heavy lifting of finding things, which he confirms when the host asks."
+            ],
+            "evidence": [
+              {
+                "start": 3518.56,
+                "end": 3590.16
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "Which technical books and other resources have helped Bolin educate himself across such varied projects?",
+        "answer": [
+          "Bolin first names a roughly thousand-page operating systems textbook from Addison-Wesley. He reached the virtual file system project having never written C, since his undergraduate work was theoretical. When colleagues said things he could not follow, he asked his manager what to read, was pointed to that book, and read it cover to cover, taking it to Hawaii.",
+          "He finds it both freeing and a little bananas how far engineers can get without knowing how computers work, because of the layers of abstraction. His advice is to actively go deeper through the layers. He saw others solve problems he could not because he did not know there was cruft between two layers that, if removed, could bring a tenfold improvement. He also recommends the O'Reilly Rust books as well written and thorough.",
+          "Outside books, he recommends capture-the-flag security competitions. They build an adversarial mindset and force breadth, like a computer decathlon, and are more fun as a game. One challenge led him to open GDB and reverse a tic-tac-toe game, which widened his toolkit."
+        ],
+        "evidence": [
+          {
+            "start": 3618.96,
+            "end": 3914.24
+          }
+        ],
+        "followups": [
+          {
+            "question": "What is a CTF, in practice?",
+            "answer": [
+              "Bolin describes a competition, usually in information security. In the Jeopardy style, a set of crafted challenges carries point values, with a fixed time limit, individually or in teams. Each challenge hides a flag, a secret piece of text that a solver can obtain only by reverse engineering or otherwise doing what the challenge intends, and submitting it proves the solve. He compares it to an escape room in a terminal."
+            ],
+            "evidence": [
+              {
+                "start": 3792.72,
+                "end": 3871.2
+              }
+            ],
+            "speaker": "Michael Bolin"
+          },
+          {
+            "question": "With AI tools that handle tasks like GDB, what should people early in their careers learn?",
+            "answer": [
+              "Bolin says everyone is struggling to answer this and he has no great answer. He still comes back to forcing yourself through the layers of abstraction, because for now the questions asked of the agent affect the quality of what comes out. Without the right questions, he says, a person may not get the best engineering solution.",
+              "He expects this to change, perhaps with another layer removed, and says things seem to be happening faster than expected. Experienced people can lean on the taste they have built, but he has not pinned down what asking the right question means for someone starting out."
+            ],
+            "evidence": [
+              {
+                "start": 3914.24,
+                "end": 4013.2
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "How does Bolin think about the very high expectations at senior-staff levels and above, and is it stressful?",
+        "answer": [
+          "Bolin says it was never not stressful. He sat in calibrations, discussing others' levels and impact and wanting to be fair, and he imagined someone doing the same for him. At E8, one is compared to a director who may have over a hundred people, and it is hard to match that impact.",
+          "Many senior engineers, he says, do it through a different form of people management, writing the right document and aligning people. They remain individual contributors because technical credibility makes their words land differently than a director's. Influencing 50 to 100 people that way is, in his words, director-level impact.",
+          "For those who mostly code, project choice matters, and it cannot be one that is merely fun. Bolin often decided not to write a fun feature himself and let someone else do it. On Codex he asks which code he personally should write to maximize impact, and if someone else could do it about 80 percent as well, he lets them. He looks for force multipliers such as the virtual file system, which he knew would unlock things later.",
+          "He also says senior managers do not get enough recognition for pairing the right senior engineer with the right project. Some senior engineers are excellent fixers and coders but not idea generators, and a manager can see that a hard project needs a person who would never have chosen it."
+        ],
+        "evidence": [
+          {
+            "start": 4014.96,
+            "end": 4285.52
+          }
+        ],
+        "followups": [],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "A former colleague praised Bolin's ability to start projects. What advice does he have for engineers who want to build something from scratch?",
+        "answer": [
+          "Bolin says good projects often come from being a bit dissatisfied with something. He admits he often charged ahead without thinking about the best way to build it. His example is weather icons in Google Calendar: he mostly knew JavaScript, cobbled together the backend, and stored the weather data as a blob of XML. His tech lead asked why he had not discussed protocol buffers and binary formats. He had been so set on the feature that he never asked anyone whether there was a better way."
+        ],
+        "evidence": [
+          {
+            "start": 4287.76,
+            "end": 4374.96
+          }
+        ],
+        "followups": [
+          {
+            "question": "The host notes many people simply wait on a slow build. What gave Bolin the confidence he could make it better?",
+            "answer": [
+              "Bolin credits his time at Google. He never worked on the Blaze team or touched its code, but he knew a tool with that shape existed and was much better, which he calls an existence proof. Whether he could build it was still to be seen. He says prior art gives him confidence, and that he thinks of himself as a coding machine who can build a prototype and test the basic hypothesis that a way forward should exist. If you are determined, he says, you find a way. The host adds that people who see world-class infrastructure at big companies often go elsewhere and rebuild it."
+            ],
+            "evidence": [
+              {
+                "start": 4389.68,
+                "end": 4479.52
+              }
+            ],
+            "speaker": "Michael Bolin"
+          }
+        ],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "What advice does Bolin have for engineers who want to write better, given how clear his technical writing is?",
+        "answer": [
+          "Bolin says reading good writing is a start, since patterns get picked up consciously or not. He then stresses thinking at a high level about what he is trying to convey and what readers would really want to know, and outlining a lot up front. He asks whether the points follow linearly, and whether any jump from one point to the next is too big, such as something a reader could reasonably miss. He feels he has a reasonable sense of where such gaps arise, and says that for technical writing, anticipating them and adding the example the reader needs to make the jump matters a great deal."
+        ],
+        "evidence": [
+          {
+            "start": 4481.68,
+            "end": 4563.6
+          }
+        ],
+        "followups": [],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "Can Bolin explain the three-step plan for impact from his career note?",
+        "answer": [
+          "Bolin says step one is figuring out what you really like to do. It is good to broaden that, but also to be honest with yourself, and he ties this to his hero quest, which failed because he was working on things he did not truly love. Step two is working out what is really valuable to your employer, and he says that at Google he did not do this well. He did work he was excited about, but it was not AdWords for Google. Step three is finding the intersection and leaning into it.",
+          "He says the more you can do that, the more successful you will be, but the intersection is not always there. If it is not, you may have to find somewhere else to make it happen."
+        ],
+        "evidence": [
+          {
+            "start": 4563.6,
+            "end": 4625.04
+          }
+        ],
+        "followups": [],
+        "speaker": "Michael Bolin"
+      },
+      {
+        "type": "qa",
+        "question": "Knowing everything he knows now, what advice would Bolin give himself at the start of his career?",
+        "answer": [
+          "Bolin says he should have been open to learning more things sooner and been gentler with himself, as many beginners should. He observes that people have a soft spot for their first programming language, since it first let them do something, and that this is also a hazard. Having finally become productive, a person is tempted to hold on, not knowing how long the next foothold will take.",
+          "In his case he thinks he went too deep on JavaScript, and it took a long time before he wrote C++. Being more curious and flexible about project types and what he was willing to learn would have been the biggest shift. The host points out that Bolin's later stories, such as Objective-C and C++ for Miles, show deliberate effort to learn rather than openness, and suggests that Codex may lower the hurdle, for example by asking it to write something in Rust from JavaScript knowledge. Bolin agrees that it opens many doors."
+        ],
+        "evidence": [
+          {
+            "start": 4626.72,
+            "end": 4744.4
+          }
+        ],
+        "followups": [],
+        "speaker": "Michael Bolin"
+      }
+    ],
+    "related": [],
+    "omissions": [
+      "Opening teaser montage that previews later answers (00:00.08 to 00:44.72), represented once in the overview and the relevant rounds.",
+      "Garbled exchange about candidates and who wrote the CLI (58:21.20 to 58:36.64) omitted because the captions are unclear.",
+      "Host aside about blank test plans in diffs (56:45.28 to 56:56.88) omitted as banter.",
+      "Closing thanks and sign-off (01:19:06.32 to 01:19:09.60) omitted.",
+      "Host's closing promotion of an ergonomic keyboard project and requests for comments and feedback on the show (01:19:10.80 to 01:20:02.48) omitted."
+    ]
+  },
+  "coverage": {
+    "source_id": "source-d89129dbba19118b",
+    "sha256": "90d710916ac0026bb75d9fbbcd7ee4c09d111c80e068982b197563c5b0757b7a",
+    "reviewed_chunks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "status": "included",
+    "reason": "All 8 chunks were read in full (about 80 minutes). Kept 21 initiating rounds with 21 follow-ups, in source order. The transcript is auto-generated, so some names and terms are uncertain: the captions render the editor as \"New Clyde\" (also \"Newly\" and \"Newcloud\"), Google's Blaze as \"basil\" for Bazel, and several colleague names; colleague names were left out for that reason, and the editor is left as captioned. Figures such as stars, user counts, build speedups, file-search latency, server counts, team size and the 80 to 90 percent code share are Bolin's own recollections or estimates and are unverified; Bolin himself is unsure of the user count. Claims about Google, Meta, Microsoft and Uber or Airbnb adoption are Bolin's account, not independently verified. The guest is referred to as he, following the source title (\"How His Career Grew\"); the host is referred to only as the host, since the transcript gives no pronouns for the host."
+  },
+  "editorial": {
+    "theme": "ai",
+    "question_rounds": 21,
+    "followup_count": 21,
+    "notes": "All 8 chunks were read in full (about 80 minutes). Kept 21 initiating rounds with 21 follow-ups, in source order. The transcript is auto-generated, so some names and terms are uncertain: the captions render the editor as \"New Clyde\" (also \"Newly\" and \"Newcloud\"), Google's Blaze as \"basil\" for Bazel, and several colleague names; colleague names were left out for that reason, and the editor is left as captioned. Figures such as stars, user counts, build speedups, file-search latency, server counts, team size and the 80 to 90 percent code share are Bolin's own recollections or estimates and are unverified; Bolin himself is unsure of the user count. Claims about Google, Meta, Microsoft and Uber or Airbnb adoption are Bolin's account, not independently verified. The guest is referred to as he, following the source title (\"How His Career Grew\"); the host is referred to only as the host, since the transcript gives no pronouns for the host."
+  }
+}

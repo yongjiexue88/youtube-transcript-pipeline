@@ -1,0 +1,150 @@
+{
+  "section": {
+    "id": "source-054cafd98518a73a",
+    "source_id": "source-054cafd98518a73a",
+    "title": "Match the database architecture to the workload",
+    "kind": "interview",
+    "deck": "Mike Stonebraker connects specialization, GPU constraints, and the difficulty of building a database.",
+    "blocks": [
+      {
+        "type": "qa",
+        "question": "Does one database architecture serve every workload well?",
+        "answer": [
+          "Stonebraker explains the argument behind his “one size fits none” position through three designs: a stream-processing engine, a column store for analytical warehouses, and a conventional row-oriented relational system. He says their implementations look fundamentally different, and that using a design poorly suited to the workload can give up an order of magnitude in performance. This is his characterization of the systems and comparisons discussed, not a benchmark supplied by the transcript.",
+          "He still sees value in a common parser above different implementations. He points to specialized column and vector systems as examples of why specialization persists, and criticizes the PostgreSQL capabilities he describes for very large analytical workloads. Those observations belong to the interview’s context; they should not be treated as a current feature inventory for every product or extension.",
+          "At the same time, he recommends PostgreSQL as a practical starting point: it is free, has a large community, supports many data-type implementations, and makes experienced developers comparatively easy to find. His distinction is between a useful general-purpose default and requirements at the extreme end, such as the transaction or warehouse scales he uses as examples. Those figures illustrate his argument rather than define universal migration thresholds."
+        ],
+        "evidence": [
+          {
+            "start": 0.08,
+            "end": 195.76
+          }
+        ],
+        "followups": [],
+        "speaker": "Mike Stonebraker"
+      },
+      {
+        "type": "qa",
+        "question": "Do GPUs create new opportunities for database optimization?",
+        "answer": [
+          "Probably, Stonebraker says, but the work must fit the hardware. He contrasts the same-operation, many-data style of GPU computation with indexing, and warns that the path from storage through a CPU to a GPU can become the limiting bandwidth bottleneck. Attaching an accelerator does not remove the need to design the surrounding data movement."
+        ],
+        "evidence": [
+          {
+            "start": 198.07999999999998,
+            "end": 252.72
+          }
+        ],
+        "followups": [
+          {
+            "question": "Why is an index traversal a poor fit for this kind of parallelism?",
+            "answer": [
+              "A B-tree lookup for one person’s salary follows a pointer at each level before it can determine the next access. Those dependent memory reads do not parallelize in the same way as independent operations across many data elements. Stonebraker uses this concrete lookup to explain why the workload, not the presence of a GPU, determines the opportunity."
+            ],
+            "evidence": [
+              {
+                "start": 255.04,
+                "end": 298.0
+              }
+            ],
+            "speaker": "Mike Stonebraker"
+          }
+        ],
+        "speaker": "Mike Stonebraker"
+      },
+      {
+        "type": "qa",
+        "question": "Was the original Ingres implementation written from scratch?",
+        "answer": [
+          "Yes. Stonebraker says the original version was written from scratch, including the components the host is asking about. The short answer does not provide further implementation details."
+        ],
+        "evidence": [
+          {
+            "start": 298.0,
+            "end": 315.36
+          }
+        ],
+        "followups": [],
+        "speaker": "Mike Stonebraker"
+      },
+      {
+        "type": "qa",
+        "question": "What was the hardest component to implement?",
+        "answer": [
+          "The query optimizer. Stonebraker answers directly rather than telling a longer development story."
+        ],
+        "evidence": [
+          {
+            "start": 317.92,
+            "end": 321.52
+          }
+        ],
+        "followups": [
+          {
+            "question": "Why was query optimization especially hard?",
+            "answer": [
+              "He characterizes it as algorithmically difficult. The clip does not unpack a particular optimization algorithm or failure case."
+            ],
+            "evidence": [
+              {
+                "start": 323.52,
+                "end": 329.44
+              }
+            ],
+            "speaker": "Mike Stonebraker"
+          }
+        ],
+        "speaker": "Mike Stonebraker"
+      },
+      {
+        "type": "table",
+        "title": "Keep the design questions separate",
+        "headers": [
+          "Question",
+          "Consideration from the discussion"
+        ],
+        "rows": [
+          [
+            "What workload dominates?",
+            "Streaming, analytical scans, and indexed lookups can favor different designs."
+          ],
+          [
+            "What is the whole data path?",
+            "Storage and CPU–GPU bandwidth may limit acceleration."
+          ],
+          [
+            "What is the pragmatic default?",
+            "A community and available talent can make a general-purpose database valuable."
+          ],
+          [
+            "When is specialization worth it?",
+            "Judge the actual scale and workload rather than assume one architecture always wins."
+          ]
+        ],
+        "evidence": [
+          {
+            "start": 0.08,
+            "end": 329.44
+          }
+        ]
+      }
+    ],
+    "related": [],
+    "omissions": []
+  },
+  "coverage": {
+    "source_id": "source-054cafd98518a73a",
+    "sha256": "9211098cdf5d1108cef49f813f60bb23fb92da5e38cb00f22954a06cf9da3af2",
+    "reviewed_chunks": [
+      1
+    ],
+    "status": "included",
+    "reason": "Full clip read; four distinct initiating questions and two follow-ups preserved. The host question about Ingres starts inside a merged caption paragraph, so its evidence range intentionally overlaps the end of the index explanation."
+  },
+  "editorial": {
+    "theme": "systems",
+    "question_rounds": 4,
+    "followup_count": 2,
+    "notes": "Full clip read; four distinct initiating questions and two follow-ups preserved. The host question about Ingres starts inside a merged caption paragraph, so its evidence range intentionally overlaps the end of the index explanation."
+  }
+}

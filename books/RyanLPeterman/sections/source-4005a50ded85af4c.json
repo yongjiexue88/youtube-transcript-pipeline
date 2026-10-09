@@ -1,0 +1,516 @@
+{
+  "section": {
+    "id": "source-4005a50ded85af4c",
+    "source_id": "source-4005a50ded85af4c",
+    "title": "Leslie Lamport: Concurrency, Paxos, Byzantine Generals, and Thinking by Writing",
+    "kind": "interview",
+    "deck": "Lamport explains how algorithms, invariants, and written proofs shaped his work on concurrent and distributed systems, from the bakery algorithm to Paxos.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Lamport argues that the reliable way to understand a concurrent or distributed system is to state an algorithm, name an invariant about its state, and write the proof down. He says informal code hides the issues that matter for synchronization. The conversation follows his key work in order: the bakery algorithm, the paper on ordering events, Byzantine faults, Paxos and Raft, then writing as a thinking tool, LaTeX, and his view of his own abilities. The host introduces Lamport as a Turing Award winner.",
+        "evidence": [
+          {
+            "start": 0.16,
+            "end": 4162.72
+          }
+        ],
+        "heading": "Lamport's view: write the algorithm down, state the invariant, and prove it"
+      },
+      {
+        "type": "qa",
+        "question": "What problem does the bakery algorithm solve, and how did Lamport first come across it?",
+        "answer": [
+          "Lamport says Edsger Dijkstra introduced the problem in a 1965 paper, which Lamport treats as the start of concurrent programming theory. Dijkstra structured a program as semi-independent tasks that must synchronize. Time-sharing made this urgent, since a shared printer could produce garbled output if two programs used it at once. Dijkstra's answer was a critical section, a piece of code arranged so that at most one process runs it at a time.",
+          "Lamport says he first learned of the problem in 1972, from a Communications of the ACM article that gave a solution."
+        ],
+        "evidence": [
+          {
+            "start": 85.52,
+            "end": 230.4
+          }
+        ],
+        "followups": [
+          {
+            "question": "How did the bakery idea develop after Lamport's first attempt?",
+            "answer": [
+              "Lamport's simple two-process algorithm had a bug, which the editor pointed out in a letter. The lesson was that concurrent programs are hard to get right and need a proof of correctness. The bakery idea came from a deli counter, where customers take numbered tickets. Dijkstra's version had no central server, so each process had to choose its own number."
+            ],
+            "evidence": [
+              {
+                "start": 235.44,
+                "end": 387.28
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          },
+          {
+            "question": "Why was the bakery algorithm notable, and who doubted it?",
+            "answer": [
+              "Lamport says its proof showed a surprising property. Mutual exclusion was assumed to need atomic reads and writes of shared registers. Bakery did not need that, because each shared value had one writer. A reader overlapping a write could see any value, and the algorithm still worked.",
+              "His colleague Anatol Holt found the result so remarkable that he did not believe it. Lamport wrote the proof on a whiteboard, and Holt went home convinced it must be wrong. He never found a flaw."
+            ],
+            "evidence": [
+              {
+                "start": 390.88,
+                "end": 507.28
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          }
+        ],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "What was unsatisfactory about Dijkstra's solution, and why was bakery different?",
+        "answer": [
+          "Lamport says Dijkstra's original solution allowed starvation. If many processes kept trying to enter the critical section, one might never get in. Lamport recalls that the next solution, by Donald Knuth, measured efficiency by how long a process might wait. He believes bakery was the first with first-come, first-served order: if one process picked its number before another, it entered first. He also thinks bakery was simpler than the alternatives."
+        ],
+        "evidence": [
+          {
+            "start": 524.16,
+            "end": 598.48
+          }
+        ],
+        "followups": [],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "What was the month in the Netherlands with Dijkstra, in 1976, like?",
+        "answer": [
+          "Lamport says Dijkstra wrote short papers, called EWDs, and sent them to colleagues. One described the first concurrent garbage collection algorithm, by Dijkstra and associates. Lamport saw that the free list could be part of the regular data structure instead of needing its own coordination. That simplified the algorithm, and Dijkstra made him an author on the next version.",
+          "Lamport says the idea seemed obvious to him but was not obvious to most people. Dijkstra told him he had a remarkable ability at abstraction, which Lamport says he only came to appreciate in recent years."
+        ],
+        "evidence": [
+          {
+            "start": 618.0,
+            "end": 817.28
+          }
+        ],
+        "followups": [
+          {
+            "question": "What came out of the visit?",
+            "answer": [
+              "Lamport says the month produced one published result, a variant of the bakery algorithm. It came from weekly discussions with Dijkstra and a colleague."
+            ],
+            "evidence": [
+              {
+                "start": 821.84,
+                "end": 851.92
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          }
+        ],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "What is the story behind the paper on time, clocks, and the ordering of events in distributed systems?",
+        "answer": [
+          "Lamport says a paper on distributed databases executed operations as if they occurred in a sequence that could differ from their actual order. He drew on special relativity, where one event can influence another only if a signal could travel between them below light speed. He applied the same idea to messages: one event happens before another if the first could have affected the second through messages actually sent.",
+          "Lamport says this happens-before definition surprised people, and it was the first of his papers he would call a scientific result about distributed systems. He admits it broke a rule he had been warned about, since it put two ideas in one paper."
+        ],
+        "evidence": [
+          {
+            "start": 897.04,
+            "end": 1075.52
+          }
+        ],
+        "followups": [
+          {
+            "question": "Why did the state machine idea matter, and why did readers miss it?",
+            "answer": [
+              "Lamport says the paper's ordering algorithm let any distributed system be described as a state machine, where each command changes the state and produces a value. He calls this the practical idea in the paper, yet readers ignored it. Twice people told him the paper said nothing about state machines, so he reread it to be sure."
+            ],
+            "evidence": [
+              {
+                "start": 1077.6,
+                "end": 1208.96
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          },
+          {
+            "question": "Why does Lamport prefer invariants to reasoning about sequences of events?",
+            "answer": [
+              "Lamport says a concurrent program is best understood through an invariant, a Boolean property of the state that holds at each point and guarantees the right answer. Reasoning about sequences is hard, because the number of possible executions grows exponentially with the number of processes. Lamport says the work in an invariant proof grows roughly quadratically, so invariant proofs are easier to get right.",
+              "He says much distributed-systems theory spent years on partial orderings. That approach produced many papers but is not the practical method, apart from exceptions such as bakery."
+            ],
+            "evidence": [
+              {
+                "start": 1212.88,
+                "end": 1404.48
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          }
+        ],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "What is the story behind the Byzantine generals problem?",
+        "answer": [
+          "Lamport says his ordering work assumed no failures, but a distributed system should keep running when a computer fails. He assumed the worst case, that a failed process might do anything. His algorithm implemented a state machine under that assumption, using digital signatures so a faulty process could relay messages but not forge another's signature.",
+          "When Lamport joined SRI, colleagues were working on the same problem. Few people knew of digital signatures in 1975, but Lamport knew of them through Whit Diffie, a friend and co-author of the Diffie-Hellman paper. He says Diffie called building them an open problem, and he sketched a first signature algorithm on a napkin. By his rough estimate it needed about 128 bits to sign one bit, but signing a hash of the document made it workable."
+        ],
+        "evidence": [
+          {
+            "start": 1468.8,
+            "end": 1608.8
+          }
+        ],
+        "followups": [
+          {
+            "question": "How did the SRI approach differ, and why did it need four processes?",
+            "answer": [
+              "Lamport says the SRI group framed the problem as agreement on one command, repeated for each command, which he found a nicer abstraction. Without signatures, their algorithm needed four processes to tolerate one fault, against three with signatures. The original paper contained both algorithms, and Lamport co-authored it. Marshall Pease wrote the general algorithm, which Lamport calls brilliant and nearly incomprehensible."
+            ],
+            "evidence": [
+              {
+                "start": 1614.72,
+                "end": 1821.84
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          },
+          {
+            "question": "Why was the algorithm largely ignored?",
+            "answer": [
+              "Lamport says the SRI group had a contract to build a multiprocess computer for flying airplanes, so they took malicious failures seriously. Each three-process design could be defeated by some plausible sequence of failures. Lamport adds that digital signatures were expensive at the time, which is why the algorithm was largely ignored."
+            ],
+            "evidence": [
+              {
+                "start": 1824.48,
+                "end": 1962.16
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          },
+          {
+            "question": "Why did Lamport choose a story about generals?",
+            "answer": [
+              "Lamport says Dijkstra's dining philosophers problem was not especially interesting in itself, but its story made it popular. Lamport decided his result needed a story too. In his version, four generals must agree on whether to attack or retreat, and one of them might be a traitor."
+            ],
+            "evidence": [
+              {
+                "start": 1963.92,
+                "end": 2048.88
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          }
+        ],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "Was there an earlier version of the problem, called the Chinese generals problem?",
+        "answer": [
+          "Lamport says Jim Gray had described a related problem as an impossibility result, which gave Lamport the idea of using generals. He first thought of Albanian generals, since Albania was largely closed to the outside world. His boss pointed out that Albanians exist, so Lamport chose Byzantine, since there are no Byzantines around."
+        ],
+        "evidence": [
+          {
+            "start": 2062.96,
+            "end": 2123.28
+          }
+        ],
+        "followups": [],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "What made the Byzantine problem worth extra work?",
+        "answer": [
+          "Lamport says the problem mattered because computers would fly airplanes. In the 1970s oil crisis, designers wanted fuel-efficient planes with smaller control surfaces, which were aerodynamically unstable. A pilot could not make the constant adjustments needed, but a computer could. People assumed three computers could tolerate one fault, without realizing that arbitrary faults needed four. Lamport believes that result needed to be well known."
+        ],
+        "evidence": [
+          {
+            "start": 2125.36,
+            "end": 2220.64
+          }
+        ],
+        "followups": [],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "How does Lamport choose problems, given that most of his work was in private companies?",
+        "answer": [
+          "Lamport says he worked for private companies, not in academia or government. Some problems came to him when an engineer had a need. Paxos was one such case, because someone actually wanted an algorithm that did what it did."
+        ],
+        "evidence": [
+          {
+            "start": 2223.44,
+            "end": 2281.04
+          }
+        ],
+        "followups": [],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "What is the story behind Paxos?",
+        "answer": [
+          "Lamport says Paxos addressed the same problem as the Byzantine work, building a fault-tolerant state machine. By then, industry cared most about failures in which a computer simply stopped, and Paxos handles that class of faults. Lamport joined Digital Equipment's Systems Research Center in 1985. Its group had come from Xerox PARC, had built one of the first distributed operating systems, and had invented Ethernet.",
+          "The group's system kept shared storage consistent across computers. Lamport did not believe that was possible, and he tried to write an impossibility proof. He eventually concluded that the group's code was itself an algorithm that worked. The group had code that did the job, but no algorithm written down."
+        ],
+        "evidence": [
+          {
+            "start": 2297.84,
+            "end": 2443.92
+          }
+        ],
+        "followups": [
+          {
+            "question": "What did Lamport mean by code versus an algorithm?",
+            "answer": [
+              "Lamport says most programmers start by writing code, but he thinks in algorithms. An algorithm is more abstract than a program and can be implemented in any code. Since about 2000, much of his work has been persuading people who build concurrent systems to write an algorithm for the synchronizing core first. Code mixes many concerns unrelated to concurrency, which makes the synchronizing part hard to get right."
+            ],
+            "evidence": [
+              {
+                "start": 2446.0,
+                "end": 2590.72
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          },
+          {
+            "question": "Why did the Paxos paper take about eight years to publish?",
+            "answer": [
+              "Lamport says the referees found the paper acceptable but not terribly important, and he was in no hurry to publish. A new editor later decided to publish it, since it had been accepted but needed revision. Keith Marzullo wrote the interim update and a preface that kept the framing of an ancient system. Lamport says Butler Lampson recognized the algorithm's importance and promoted building systems with Paxos as state machines."
+            ],
+            "evidence": [
+              {
+                "start": 2594.24,
+                "end": 2722.8
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          },
+          {
+            "question": "How was the Paxos paper presented, and who understood it?",
+            "answer": [
+              "The host recalls Lamport dressing as an Indiana Jones-style archaeologist for the talk. Lamport says the lecture may have gone well, but almost nobody understood the algorithm's significance. Butler Lampson was the exception. Lamport says Lampson understood building systems and was one of the original people at Xerox PARC who built distributed personal computing."
+            ],
+            "evidence": [
+              {
+                "start": 2724.48,
+                "end": 2852.88
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          }
+        ],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "What did Lamport think of the Raft paper, which seems to solve the same problem as Paxos?",
+        "answer": [
+          "Lamport says the Raft authors sent him a draft, and he replied to send it back with either an algorithm or a proof, though he does not recall which. He says he never read the later versions. Someone whose judgment he values read them and said Raft was basically the Paxos paper, with some of Paxos's unfinished tales filled in and described differently.",
+          "Lamport explains Paxos in two phases. The first phase elects a leader, and it can be done once for a whole run of decisions, as long as the leader stays the same. The second phase repeats for each decision. Engineers usually describe it in the opposite order, repeating the second phase until the leader fails. Starting fresh, Lamport says, the first phase's work could be built into the initial state."
+        ],
+        "evidence": [
+          {
+            "start": 2795.76,
+            "end": 2972.32
+          }
+        ],
+        "followups": [
+          {
+            "question": "Is Raft easier to understand than Paxos?",
+            "answer": [
+              "Lamport says many people find Paxos hard, and he does not see why. He has explained it to some people in five minutes. The Raft authors taught Paxos to one class and Raft to another, and students found Raft easier. Lamport says a bug was later found and fixed in Raft, and he believes the version students found easier was the one with the bug.",
+              "For Lamport, understanding means being able to write a proof. For most people, he says, it is a warm, fuzzy feeling, and Raft gave them more of that feeling because it follows the order programmers already think in."
+            ],
+            "evidence": [
+              {
+                "start": 2974.0,
+                "end": 3084.96
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          }
+        ],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "What is the story behind LaTeX?",
+        "answer": [
+          "Lamport says he was starting to write a book, and TeX was the basic typesetting system he had to use. He needed macros to make TeX do what he wanted, and he figured a little extra effort could make them usable by others. Before TeX he had used Scribe, which let authors describe a document's logical structure and left formatting to the system. Scribe did not format well, but Lamport liked the idea that the ideas matter more than the typesetting."
+        ],
+        "evidence": [
+          {
+            "start": 3106.88,
+            "end": 3187.68
+          }
+        ],
+        "followups": [
+          {
+            "question": "How did the book with Addison-Wesley come about?",
+            "answer": [
+              "Lamport says Peter Gordon, an Addison-Wesley editor, convinced him to write a book. At the time, Lamport did not expect people would pay for a book about software. The publisher introduced him to a typographic designer whose work became the typography of the standard LaTeX styles. Lamport says he did most of the work in his spare time, over six to nine months."
+            ],
+            "evidence": [
+              {
+                "start": 3190.4,
+                "end": 3256.64
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          }
+        ],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "What did Lamport mean by 'thinking without writing'?",
+        "answer": [
+          "Lamport says the remark was meant for people building computer systems. Write a description of an idea before trusting it. He recalls a maxim to write the instruction manual before the program. He did not follow that advice with LaTeX, but while writing the book he found some things hard to explain and changed them."
+        ],
+        "evidence": [
+          {
+            "start": 3280.8,
+            "end": 3339.2
+          }
+        ],
+        "followups": [
+          {
+            "question": "Why is writing good for thinking?",
+            "answer": [
+              "Lamport says it is easy to fool yourself. When his algorithms grew complicated, his usual proof style broke down, because too many details had to be tracked. He devised a hierarchical proof, a sequence of steps where each step has its own proof, which can be a paragraph or a further sequence of steps. A step that does not follow from the stated steps shows the proof is wrong, even if the theorem is true.",
+              "When he presented this to roughly 20 mathematicians in a small seminar, their reaction was angry, and he thought they might physically attack him. He believes the fear was that they would have to write proofs for a computer, though he says the method needs only organization, not formalism. Writing a proof exposes steps the author left unstated. Lamport says thinking you know something you have not written down only feels like knowing it, and that is where errors enter."
+            ],
+            "evidence": [
+              {
+                "start": 3341.52,
+                "end": 3595.52
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          }
+        ],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "Why did Lamport's career stay in industry rather than academia?",
+        "answer": [
+          "Lamport says he started out programming and took jobs that led him into what is now called computer science. He did not realize until the mid-to-late 1970s that computer science was a field in its own right. At one point he had to choose between computer science and teaching math at a university. He chose computer science for fairly random reasons. Until about the mid-1980s he did not think computer science was something people needed a university to learn, and he did not think teaching it would be fun."
+        ],
+        "evidence": [
+          {
+            "start": 3598.72,
+            "end": 3706.64
+          }
+        ],
+        "followups": [],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "Did Lamport feel like a failure for not finding a grand theory of concurrency?",
+        "answer": [
+          "Lamport says many people doing this work looked for a Turing machine of concurrency, an abstraction that would capture concurrent computing. Nobody has found one, though some think they have. Petri nets were a big topic in the 1970s, and a community still works on them, but they were language-based, and Lamport was never interested in languages.",
+          "He now thinks the Turing machine of concurrency is the state machine, described only by a state and a next-state relation, with no commands. A Turing machine describes what is possible. A state machine can also describe things that are not possible."
+        ],
+        "evidence": [
+          {
+            "start": 3709.28,
+            "end": 3843.44
+          }
+        ],
+        "followups": [
+          {
+            "question": "Why are infinite values useful in state machines?",
+            "answer": [
+              "Lamport says that when he describes an algorithm, he lets a variable take any integer, although a real program would use bounded integers. People often assume that because something is infinite, it is more complicated. Lamport says they have it backwards: infinity simplifies arithmetic, which is far messier on a finite set of integers. He says mathematics is the most powerful way to describe a state machine."
+            ],
+            "evidence": [
+              {
+                "start": 3846.56,
+                "end": 3961.2
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          },
+          {
+            "question": "Why are programming languages the wrong tool for concurrency?",
+            "answer": [
+              "Lamport says many programmers and computer scientists are hung up on languages, and they keep inventing new ones. A semantics for any of them would be given in terms of a state machine. Code has real advantages, mainly efficiency. For understanding, though, Lamport says you cannot beat mathematics, and language-based attempts to reason about concurrency are the wrong approach."
+            ],
+            "evidence": [
+              {
+                "start": 3963.12,
+                "end": 4025.2
+              }
+            ],
+            "speaker": "Leslie Lamport"
+          }
+        ],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "How can someone who does not consider himself smart achieve so much?",
+        "answer": [
+          "Lamport says psychologists have observed that people who are good at something often do not notice it, because it seems simple to them. The reverse also holds: people who are bad at something tend to overrate themselves. He says the gift he has is not raw intelligence but abstraction. He realized only in the last ten or so years how much better he is at abstraction than most people."
+        ],
+        "evidence": [
+          {
+            "start": 4068.8,
+            "end": 4141.2
+          }
+        ],
+        "followups": [],
+        "speaker": "Leslie Lamport"
+      },
+      {
+        "type": "qa",
+        "question": "Looking back, what would Lamport tell himself just after college?",
+        "answer": [
+          "Lamport says he learned early not to waste time on questions he does not have to answer. He does not dwell on what he should have done, because that is a question he does not have to answer."
+        ],
+        "evidence": [
+          {
+            "start": 4145.92,
+            "end": 4162.72
+          }
+        ],
+        "followups": [],
+        "speaker": "Leslie Lamport"
+      }
+    ],
+    "related": [],
+    "omissions": [
+      "00:00.16 to 01:23.44: cold-open teaser clips and host lead-ins. The host introduction is summarized in the overview, and the teasers repeat material covered later.",
+      "14:14.24 to 14:41.68: banter about Dutch beer during the Netherlands visit. Filler.",
+      "54:19.60 to 54:22.32: aside about billing time to another project. Filler.",
+      "1:09:25.76 to 1:10:17.68: promotion for an ergonomic keyboard, channel feedback and guest mentions, and closing sign-off."
+    ]
+  },
+  "coverage": {
+    "source_id": "source-4005a50ded85af4c",
+    "sha256": "a44596f59170399aac1f246c358cdeed44c9d0cf0aee4de4dbfb66f82019fa29",
+    "reviewed_chunks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "status": "included",
+    "reason": "Read all 5 chunks in full, in order (about 70 minutes, 10,189 words). Kept 16 initiating rounds and 16 follow-ups. The host is unnamed in the transcript, so host questions are paraphrased in third person. Auto-captions garble many names and terms; these were normalized from context: Dijkstra, Paxos, Lampson, Knuth, Pease, Diffie, Holt, Marzullo, Gray, Petri nets, Xerox PARC, and Digital Equipment's Systems Research Center (captioned as \"deck circ\"). The Netherlands co-author is left as \"a colleague\" because the caption is unclear. Lamport's own figures are unverified recollections: about 128 bits for an early signature, four versus three processes for one fault, the invariant-versus-behavioral proof complexity comparison, roughly 20 mathematicians, and six to nine months on LaTeX. The general-case process counts and the \"one-third of errors\" remark are garbled in captions, so they are omitted. Lamport's accounts of the Raft bug, the Raft classroom comparison, his own abstraction gift, the Albanian-generals naming, and the state-machine history are speaker claims, not checked. Chunks overlap by about 30 to 60 seconds; overlapping text was used once. The manifest reports no duplicate or title-overlap sources for this ID."
+  },
+  "editorial": {
+    "theme": "systems",
+    "question_rounds": 16,
+    "followup_count": 16,
+    "notes": "Read all 5 chunks in full, in order (about 70 minutes, 10,189 words). Kept 16 initiating rounds and 16 follow-ups. The host is unnamed in the transcript, so host questions are paraphrased in third person. Auto-captions garble many names and terms; these were normalized from context: Dijkstra, Paxos, Lampson, Knuth, Pease, Diffie, Holt, Marzullo, Gray, Petri nets, Xerox PARC, and Digital Equipment's Systems Research Center (captioned as \"deck circ\"). The Netherlands co-author is left as \"a colleague\" because the caption is unclear. Lamport's own figures are unverified recollections: about 128 bits for an early signature, four versus three processes for one fault, the invariant-versus-behavioral proof complexity comparison, roughly 20 mathematicians, and six to nine months on LaTeX. The general-case process counts and the \"one-third of errors\" remark are garbled in captions, so they are omitted. Lamport's accounts of the Raft bug, the Raft classroom comparison, his own abstraction gift, the Albanian-generals naming, and the state-machine history are speaker claims, not checked. Chunks overlap by about 30 to 60 seconds; overlapping text was used once. The manifest reports no duplicate or title-overlap sources for this ID."
+  }
+}

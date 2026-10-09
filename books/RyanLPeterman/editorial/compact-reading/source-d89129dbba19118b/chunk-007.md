@@ -1,0 +1,68 @@
+# OpenAI Codex Tech Lead: How His Career Grew And How He Uses Codex | Michael Bolin
+Source: source-d89129dbba19118b | Chunk 7 of 8
+Video: https://www.youtube.com/watch?v=hN5ZFzWFhhg
+All caption text retained; paragraphs merge caption fragments without changing words.
+
+[01:08:03.76–01:08:05.28; L1891–L1892] get to E8 and you're like oh you know it's a D1 a director
+
+[01:08:07.28–01:08:11.20; L1893–L1895] >> and you're like how do I have as much impact as a person who has maybe like over a hundred people
+
+[01:08:12.96–01:08:17.84; L1896–L1898] >> in their or so that's hard a lot of people do it again a lot of people who are I see who do it do it more by
+
+[01:08:21.36–01:09:08.64; L1899–L1920] >> uh a different form of people management right where they're trying to you know like write the right doc and get the people aligned and do that sort of thing and the and the reason that they do it and are not a director is that oftentimes the the people I've talked to people who are in this like that they're like well I have this technical credibility or because I built this thing like when I go to the team and talk to them it lands differently than if like a engineering director does or some version of that right happens a lot um and so then you know when you when you say you're influencing you know 50 to 100 people as a senior IC then you're like oh okay that's like you know D1 impact um you know whereas as as if you're a coder. I see. Um, uh, you know, being really thoughtful about the projects that you pick and it can't
+
+[01:09:11.68–01:09:56.64; L1921–L1941] just be a like this is fun for me type of project. I mean, you know, if you actually care about, you know, not getting fired or getting you're getting like Sam or better. Um, and even when I would start a project, certainly like the later I went on, I would think a lot about like, okay, like I maybe there's this feature I just want to write it because it's fun. And I'd be like, uh, no, I should let somebody else do that and think about, okay, I mean, it's kind of like with with Codeex now, like what code do should I personally write to maximize my impact versus if someone else could do it about as well as me, let's say 80% as good, I should probably let, you know, have someone else do that. Um and but but even then you know if you're leading a fivep person project is that still you know still getting to
+
+[01:09:58.16–01:10:35.76; L1942–L1956] E8 E9 impact still hard. Um so really finding that that uh project that's a force multiplier. So, you know, like like uh like the virtual file system was a really great project because that was gonna, you know, we knew that down the road like this was really going to unlock so many things, prevent us from from being completely blocked, right? Um actually another big part of it is um and you know one of my managers talked to me about it is um you know not actually recognizing senior managers enough who are the person who um pairs the senior IC with the right project
+
+[01:10:38.72–01:11:25.52; L1957–L1978] >> and uh because some senior engineers are amazing uh you know fixerscoders but they're not the idea cumber upers with and um they're the but they're the person you want for like you know very difficult um technical projects. I don't want to like out anybody here but I have people in mind and um but but you know a lot of times it's the manager who realizes like oh this project needs this person right and like that person would have never realized it themselves. one of your old colleagues, Adam Ernst, I think I asked him, you know, what are some other engineers that you admire and why? And you know, he he mentioned your name, of course. And specifically, he talked about your ability to start projects was really good. And obviously, I mean, you look at all these projects, right? I mean, a lot of them you created them out of nowhere, like it was just
+
+[01:11:27.76–01:12:12.24; L1979–L2000] you had an idea and you went off and built a prototype, you came back and you were very convincing that it was a better solution. Do you have any advice for engineers who they have a a problem and a solution and they want to like build a project from scratch? I mean I think I don't know a lot of good projects I think come from being a little bit dissatisfied about about something, right? And I think um you know it's funny like sometimes I uh for better or for worse I was just so charging ahead and just like building the thing that like not really thinking about um like what the best way to do it was. So, actually a really funny example is um Google Calendar. So, going back really far. I was like, I want weather. I want to have weather all little icons showing the weather in Google Calendar and I was like, I'm going to do it, you
+
+[01:12:13.60–01:12:54.96; L2001–L2021] know. And I had mostly been JavaScript especially and not done any of the backend stuff. And I just like charged through and I cobbled things together and uh you know, made it happen. And then then my tech lead was like, "Wait, how are you um how are you storing that information about like the weather and stuff and I was like, "Oh, I I just like, you know, threw a blob of like XML and everything like thing." He's like, he's like, "We should have talked about protocol buffers or I was like, you know, like binary formats and save bytes that I like I was just so, you know, set on weather of all things that like I never bothered to ask anybody if there was like a better way to do what I was doing." I was like, "It's done." So I I mean I guess that's a a unique skill of yours is the digging into the satis
+
+[01:12:57.44–01:13:07.92; L2022–L2027] dissatisfaction and solving your own problems. Seems like almost every single one of these projects is I want my I want something to happen. This this shouldn't be this way and then you went and you solved it.
+
+[01:13:09.04–01:13:09.04; L2028–L2028] >> Yeah.
+
+[01:13:09.68–01:13:28.56; L2029–L2038] >> Yeah. Um but I think another unique thing that I see is a lot of people they they get to work and they I don't know they're they're in their dev environment. I'm sure there were many other people who saw with the buck story for instance they go oh wow this build is really slow oh well like I guess I'm going to go to the micro kitchen and get call it builds
+
+[01:13:30.00–01:13:32.16; L2039–L2040] >> what gave you the confidence to know that you could make it so much better
+
+[01:13:34.72–01:13:49.44; L2041–L2049] >> I mean that one was you know I I have to credit like having been at Google I never worked on the Blaze team I never knew how that like worked I never touched their code or anything but I was like I know that there's a thing out there that has this shape and is a lot better in this thing. So that's an existence proof.
+
+[01:13:51.04–01:13:55.76; L2050–L2052] >> Um whether I could do it or not like TBD, right? But I think that was helpful on that one.
+
+[01:13:56.96–01:14:25.76; L2053–L2068] >> Um you know I yeah I mean there's a lot of I guess prior art that gives me you know confidence and things and I think and you know I usually generally identify myself as a coding machine. I guess with codeex now everyone wants a coding machine but um that you know I felt that I always had confidence like you know build a prototype correctly right and at least answer that question or like the basic my test my basic hypothesis like spiritually should there be a way forward to this thing that I think should exist and you know generally I could you know you're if you are determined you find a way
+
+[01:14:28.00–01:14:39.52; L2069–L2075] >> yeah I've noticed that pattern um a lot of people who go to big companies they see this worldclass infrastructure and then they go to the other company. Oh, you don't have this, you don't have this. And they build their, you know, those new versions of it.
+
+[01:14:41.68–01:14:50.24; L2076–L2080] >> I've read a lot of your writing at this point, and it is so clear. It's some of the best examples of good technical writing. What advice would you have for engineers who want to write better?
+
+[01:14:52.56–01:15:37.92; L2081–L2102] >> I mean, I think a lot of it is well, I think reading other good writing is a is a certainly a good start, right? You started maybe, you know, consciously or subconsciously start to pick up patterns of like what what is out there. I think um you know really high level thinking about like what what is it that I'm trying to convey? What would someone actually really want to know um and and outlining a lot up front, right? Is that a lot of people give that feedback, but it's it's impressive how how really important that is and just being like does this set of things like linearly follow? I think is a big thing. And and and then asking yourself, oh, I went from this point to this point. Was that too big of a jump? Is there something that like somebody actually like would have reasonably missed? And I think uh personally I feel like that's I have
+
+[01:15:40.56–01:16:03.60; L2103–L2113] I have reasonable feel for like what where that gap would arise. And like and then if you can kind of anticipate that and magically put in the example that like someone would have that someone needed to make that jump. Um I think like that at least for for technical writing is like is is a big deal. you have that career note that I love and at the at the beginning of it uh you lay out this three-step plan for impact.
+
+[01:16:06.48–01:16:11.76; L2114–L2117] >> Can you explain that three three stuff on early? Feel like that's a good algorithm for people to use in their careers.
+
+[01:16:12.48–01:16:54.40; L2118–L2138] >> Step one is uh figure out what you really like to do, right? And you know, as I mentioned, like [sighs] it's good to broaden that, but it's also good to to be honest with yourself so you don't know. and like the the quote the hero quest that I went on that that didn't pan out because I I was working on stuff that I didn't really, you know, truly love. Um, and then two, step two was figuring out what your employer is, what's really valuable to them, right? And as I talked about at Google, I I didn't do a good job of that. I did stuff that I was really excited about, but it wasn't, you know, it wasn't uh, you know, AdWords for Google or anything like that. Um, yeah. And then step three is like find that intersection and then just really lean into that. Um, and you know, the more that you can do that, I
+
+[01:16:56.24–01:17:05.04; L2139–L2144] think the more successful, you know, you're going to be and and and the and the challenge is sometimes it's not always there, right? And maybe you have to go, you know, find somewhere else to make that happen.
+
+[01:17:06.72–01:17:47.60; L2145–L2166] >> Okay. And then, yeah, last question for you is, uh, if you go back to yourself at the beginning of your career knowing everything you know now, what advice would you give yourself? I think I should have been open to learning more things sooner and and I I you know to be a little gentle to myself and I think other people are in that situation is that you know there's so much to learn when you're starting and then whatever your first programming language is I think it's funny I think everyone has a soft spot for they'll like make excuses for it like ever like oh this no it's a totally good language and I think it's because it's like the first thing that enabled you to do a thing you know do anything right and And then it's like, oh, okay, I can finally do something. It's such a relief. And um and but it's also like a
+
+[01:17:51.12–01:18:28.08; L2167–L2187] hazard because like then you kind of want to hold on to that thing because like you're finally productive and now you're like, ah, it took so long to get to this foothold. I don't know how long it's going to take to get to the next foothold. So I think like in you know, my particular case, I probably did maybe went too deep with JavaScript and like like I said, it took a long time before I wrote NEC. Um, and I think uh, you know, I if I had been a little bit more curious and a little more flexible in terms of what like types of projects I was willing to take on or things I was willing to learn and you know it came eventually, but I think if uh that is probably the biggest thing that maybe could have made a shift for me earlier. Yeah, I I gather from your story there was um a point with the Xcode where you
+
+[01:18:31.12–01:18:42.56; L2188–L2193] said you you you hated Objective [laughter] C and then you you were you were coming up with like ways to compile the Objective C into Java or Java into Objective C or something like that maybe and then
+
+[01:18:43.68–01:18:46.00; L2194–L2195] >> you know also talking about the C++ for miles. It was like
+
+[01:18:47.52–01:18:53.60; L2196–L2199] >> it it seemed like a very concerted okay I'm going to I'm going to learn this as opposed to like just kind of being open to it. So
+
+[01:18:54.56–01:19:04.40; L2200–L2205] >> yeah. Yeah, makes sense. Well, maybe with codecs in the future, it'll be less of a hurdle for people. You could just kind of say, "Hey, I know JavaScript. Write this in Rust or whatever." No, it's true. Opens a lot of doors.
+
+[01:19:06.32–01:19:06.32; L2206–L2206] >> Sure.
+
+[01:19:06.96–01:19:09.60; L2207–L2209] >> Awesome. Well, thank you so much for your time. I appreciate it. All right. Thank you, Ryan.
+
+[01:19:10.80–01:19:16.80; L2210–L2213] >> Thank you for listening to the podcast. It's a passion project of mine that I've really enjoyed building. Another passion project that I've been working on kind

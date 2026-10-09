@@ -1,0 +1,111 @@
+{
+  "section": {
+    "id": "source-e763d45a670dd9ac",
+    "source_id": "source-e763d45a670dd9ac",
+    "title": "A technically successful framework can still be the wrong project",
+    "kind": "interview",
+    "deck": "A Meta distinguished engineer recounts building, canceling, and fully removing ComponentScript.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The guest spent roughly two years building ComponentScript to reduce duplicated UI work across iOS and Android. Existing applications used ComponentKit and Litho. He says React Native did not fit the needed pattern at that time: a large native application embedding small cross-platform pieces in several places. He explicitly allows that React Native’s architecture has changed since then; his criticism describes the situation his team faced, not a current universal limitation.",
+        "evidence": [
+          {
+            "start": 0.0,
+            "end": 89.56
+          }
+        ],
+        "heading": "The requirement was integration, not just cross-platform rendering"
+      },
+      {
+        "type": "paragraph",
+        "text": "An initial attempt to support the full React implementation proved too difficult. He then designed a smaller React-like API on top of the existing native frameworks. It worked: teams shipped features, full screens and small units could interoperate, and nested native/cross-platform embeddings were possible. Yet the framework did not gain the adoption he expected. The lesson is that satisfying technical requirements does not by itself make a platform successful; he had overlooked other factors that determined whether people would use it.",
+        "evidence": [
+          {
+            "start": 91.8,
+            "end": 181.36
+          }
+        ],
+        "heading": "Working code was only part of the outcome"
+      },
+      {
+        "type": "qa",
+        "question": "How did the failed project affect performance reviews, and should an engineer fear canceling a project?",
+        "answer": [
+          "The guest describes negative performance feedback as the signal that forced him to face the problem. A new manager saw the work with fresh eyes and told him it was not working. Rather than protect the framework indefinitely, he took responsibility for ending it.",
+          "That meant helping teams migrate their existing products and features to native code, React Native, or another chosen approach, and deleting the framework entirely. He did not leave a permanent remnant that someone else would need to maintain or clean up. He also shared the lessons. In his account, this responsible closure earned goodwill and helped his standing in the immediate aftermath. It does not mean every failed project improves a review; the point is what accountable cleanup looked like in this case."
+        ],
+        "evidence": [
+          {
+            "start": 182.96,
+            "end": 288.0
+          }
+        ],
+        "followups": [],
+        "speaker": "Meta distinguished engineer"
+      },
+      {
+        "type": "qa",
+        "question": "Looking back, what signals should you have acted on sooner?",
+        "answer": [
+          "He says he knew during the project’s last year that it was not going well. His instinct as a prolific coder was to write more code and convert more features until adoption took off. That response avoided the harder conclusion that the project itself might be wrong. He wishes he had acted on the unease sooner and found another useful way to contribute."
+        ],
+        "evidence": [
+          {
+            "start": 288.0,
+            "end": 334.28
+          }
+        ],
+        "followups": [],
+        "speaker": "Meta distinguished engineer"
+      },
+      {
+        "type": "flow",
+        "title": "Close a failed platform responsibly",
+        "steps": [
+          {
+            "title": "Recognize the mismatch",
+            "text": "Treat adoption and outcome as evidence, not just technical elegance."
+          },
+          {
+            "title": "Help dependent teams move",
+            "text": "Make a practical migration path available."
+          },
+          {
+            "title": "Remove the leftover burden",
+            "text": "Delete the abandoned framework rather than preserve a permanent orphan."
+          },
+          {
+            "title": "Share the lesson",
+            "text": "Explain what failed and what the organization learned."
+          }
+        ],
+        "caption": "Arrows show an editorial reconstruction of the guest’s cleanup sequence.",
+        "editorial": true,
+        "evidence": [
+          {
+            "start": 182.96,
+            "end": 334.28
+          }
+        ]
+      }
+    ],
+    "related": [],
+    "omissions": []
+  },
+  "coverage": {
+    "source_id": "source-e763d45a670dd9ac",
+    "sha256": "20a6fc270b481d6864051632211cebec96ccac9299027efa914163ec98162e01",
+    "reviewed_chunks": [
+      1
+    ],
+    "status": "included",
+    "reason": "All source text read. Opening narration begins without its host prompt; actual later questions are separate. The exact performance-rating phrase is unclear in the captions and is not invented."
+  },
+  "editorial": {
+    "theme": "systems",
+    "question_rounds": 2,
+    "followup_count": 0,
+    "notes": "All source text read. Opening narration begins without its host prompt; actual later questions are separate. The exact performance-rating phrase is unclear in the captions and is not invented."
+  }
+}

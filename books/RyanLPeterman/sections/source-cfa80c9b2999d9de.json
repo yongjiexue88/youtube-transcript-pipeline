@@ -1,0 +1,561 @@
+{
+  "section": {
+    "id": "source-cfa80c9b2999d9de",
+    "source_id": "source-cfa80c9b2999d9de",
+    "title": "Thariq Shihipar: How Anthropic Builds, Harnesses, and Where Engineering Is Heading",
+    "kind": "interview",
+    "deck": "Thariq Shihipar of the Claude Code team describes how Anthropic works with its models, from harnesses, loops and verification to writing, maintenance and career advice, and argues that taste, context and technical depth remain human.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Thariq Shihipar, an engineer on the Claude Code team at Anthropic, argues that the most useful habit is to treat Claude as a thought partner and to work one level of abstraction above the code: build the system that builds the system. In Thariq's view, harnesses, verification, skills and context matter more as models improve, while taste, domain knowledge, clear intent and technical understanding stay with people. The host probes onboarding, autonomy, prompting, code maintenance, writing, career visibility and whether anyone should still learn to code. Product and model names follow the auto-generated captions and were not independently checked.",
+        "evidence": [
+          {
+            "start": 28.4,
+            "end": 4190.76
+          }
+        ],
+        "heading": "Thariq's view: move up an abstraction level, but keep taste, context and technical depth"
+      },
+      {
+        "type": "qa",
+        "question": "If an engineer joined from a less AI-focused company, what should they start doing to onboard onto the Claude Code team?",
+        "answer": [
+          "Thariq's top tip, for people inside and outside Anthropic, is to treat Claude as a thought partner and give it the context it needs to work out next steps. Start from whether Claude can do the task, and if not, ask why not.",
+          "Thariq also recommends asking whether the work can move up an abstraction level: instead of building the product, build the system that builds it."
+        ],
+        "evidence": [
+          {
+            "start": 28.4,
+            "end": 111.12
+          }
+        ],
+        "followups": [
+          {
+            "question": "Does Claude replace the onboarding buddy completely?",
+            "answer": [
+              "Thariq says teams still assign onboarding buddies, but for social and cultural reasons more than technical ones. Someone good at working with Claude can get most technical onboarding from it. A buddy still helps with how the team works, how to win buy-in, and simply having a friend at work."
+            ],
+            "evidence": [
+              {
+                "start": 112.52000000000001,
+                "end": 172.0
+              }
+            ],
+            "speaker": "Thariq"
+          }
+        ],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "Why is there such a big gap between how Anthropic staff talk about AI capability internally and how the outside world sees it?",
+        "answer": [
+          "Thariq says Anthropic has a decent record of its claims proving true over a long enough time scale. Many engineers there are no longer in the IDE, and Thariq reports that some large enterprise customers say they have not typed a line of code in six months.",
+          "Anthropic treats it as part of its job to learn to work at a higher abstraction level, so a day spent failing to get Claude to do something autonomously is not wasted: it shows where Claude falls short.",
+          "Thariq says the calculation differs in an ordinary job where the task is to produce output. Automation is an investment that can fail, and a boss will not be happy with someone who spent the time on harness setup and shipped no code. The odds of payoff rise as models improve, but an individual still has to take the leap. Thariq calls the gap mostly cultural: Anthropic tries to live in the future and builds what it learns into the product and harness."
+        ],
+        "evidence": [
+          {
+            "start": 173.8,
+            "end": 292.64
+          }
+        ],
+        "followups": [],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "What practices make a big difference at Anthropic that people rarely show on Twitter?",
+        "answer": [
+          "Thariq points to using Claude Code for knowledge work. If you can describe a task as code-like steps, the model can carry them out. Thariq does personal accounting with Python scripts through Claude Code instead of Excel, and edits video with FFmpeg and rendering libraries.",
+          "In Thariq's view most knowledge work reduces to code and coding agents, and other people do this less than they could."
+        ],
+        "evidence": [
+          {
+            "start": 293.84000000000003,
+            "end": 375.4
+          }
+        ],
+        "followups": [],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "How important is the harness compared with the model?",
+        "answer": [
+          "Thariq calls the harness super important and rejects the idea that better models make it unnecessary. As models improve, the harness has to become more complicated so the model can do more.",
+          "Thariq's example is auto mode, a classifier tied to the actions that would otherwise trigger a permission prompt. With earlier models, which Thariq names as Opus 4 and perhaps Opus 4.5, turns lasted a few minutes and pressing enter was tolerable. Now Claude can run for hours, so it must work safely and follow instructions. Thariq calls auto mode and sandboxing complicated software.",
+          "Longer runs also raise the question of how Claude reports eight hours of work. Anthropic uses artifacts for this, which Thariq treats as a form of prompting. Thariq calls harness engineering an unintuitive mix of science and art, and says pieces such as auto mode and workflows have become load-bearing."
+        ],
+        "evidence": [
+          {
+            "start": 378.32,
+            "end": 535.64
+          }
+        ],
+        "followups": [],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "What share of changes at Anthropic is fully autonomous, compared with pairing with a model as a year ago?",
+        "answer": [
+          "Thariq says it depends on what counts as autonomous and on the function. A designer might hand over a Figma file that Claude Code reads through a Figma MCP, but the designer has still done real work. Anthropic's goal is for Claude to handle the glue work, such as rewriting that file in React.",
+          "Thariq frames the question as: what is the unique work I must do today? The more time spent on that, the better. If the work only translates what someone else did, Thariq asks whether Claude can do it. Even a fully generated PR usually reflects decisions and context the person supplied."
+        ],
+        "evidence": [
+          {
+            "start": 536.64,
+            "end": 640.0
+          }
+        ],
+        "followups": [
+          {
+            "question": "How close are we to telling Claude \"here is the ticket, don't tell me until you're done\"?",
+            "answer": [
+              "Thariq says it depends on the ticket. With a spec written precisely enough, Claude can probably do it. But a typical GitHub issue raises earlier questions: is it worth fixing, is it several requests combined, and does it fit a cohesive product vision.",
+              "In practice, Thariq says, people have not worked out what they want or the unknowns in the problem. Writing code used to surface those questions. Now people need new ways to find what they do not yet know, and chatting with Claude can help.",
+              "Thariq names a failure mode: tagging Claude with a one-sentence request and no context, disliking the result, and iterating forever instead of working out quickly what you actually want."
+            ],
+            "evidence": [
+              {
+                "start": 642.52,
+                "end": 748.84
+              }
+            ],
+            "speaker": "Thariq"
+          }
+        ],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "At Meta, intern projects were almost line-by-line specified. If Claude can handle that, what does an intern do at Anthropic?",
+        "answer": [
+          "Thariq says there is a great deal of new work nobody has done before, such as evaluating new coding behaviors or measuring Claude's performance across millions of users and tasks with trade-offs, especially on the research side. Specs are harder to write and less existing experience applies.",
+          "Experience still helps with getting work done and learning, though Thariq notes interns also gain those skills at college. Internships are now less about writing React code. Fresh eyes help, and interns need to be more proactive and opportunistic than in a pipeline-style program."
+        ],
+        "evidence": [
+          {
+            "start": 750.88,
+            "end": 888.8
+          }
+        ],
+        "followups": [],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "How far away is computer and browser use from wide adoption?",
+        "answer": [
+          "Thariq says the models have improved a lot and calls Opus 5 a really good computer use model. Edge cases remain: it cannot type a password for Thariq because the passwords are in a password manager, so it gets stuck.",
+          "Thariq expects APIs and MCPs to take over many uses of computers. Claude Tag, for example, rolls many things into APIs so Claude can work on a user's behalf without literally clicking through a virtual computer. Some tasks have no API and still need a browser."
+        ],
+        "evidence": [
+          {
+            "start": 891.16,
+            "end": 981.88
+          }
+        ],
+        "followups": [
+          {
+            "question": "Why does computer use feel so slow?",
+            "answer": [
+              "Thariq says it is hard to make a small model very good at the task, because it needs much knowledge about how things fit together, and smart models are slower. Many people expected this sooner, and it has been harder than expected.",
+              "Thariq passes on someone else's remark that a computer is a state machine whose whole state you do not control. Add the wrong item to a DoorDash cart and you need a new flow to undo it, where you can err again. In code you control the state and can undo with git; in computer use, actions are harder to review or reverse."
+            ],
+            "evidence": [
+              {
+                "start": 984.16,
+                "end": 1060.68
+              }
+            ],
+            "speaker": "Thariq"
+          }
+        ],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "If someone had infinite compute, what workflows would you tell them to run?",
+        "answer": [
+          "Thariq says the difference is smaller than people think. Thariq uses a Max subscription on weekends and has almost never hit a five-hour limit. Much of Anthropic's heavy compute goes into probing model capabilities, such as testing math ability, rather than everyday work.",
+          "People can reproduce the practice by thinking at a higher level. Thariq's example is a funnel in which Claude drafts feedback for a user. Thariq monitors it and asks Claude for improvement ideas, annotates features with events Claude can access, and runs a morning loop to check which events fired and what changed. Thariq says this takes fairly modest compute.",
+          "More often Thariq sees people hit limits the opposite way: they start with a small task such as refactoring a function, then iterate through follow-on effects. Stating goals, letting Claude explore and write out a schema, and then letting it run would probably give the same output."
+        ],
+        "evidence": [
+          {
+            "start": 1062.48,
+            "end": 1243.88
+          }
+        ],
+        "followups": [
+          {
+            "question": "What is loop engineering, and would it hit limits on a Max plan?",
+            "answer": [
+              "Thariq defines loop engineering as setting up a system that prompts Claude rather than prompting Claude directly. With Claude Tag this comes naturally: ask it to do something every day and that is a loop.",
+              "Around ten loops, for example to triage feedback and implement fixes, take real work on skills, triage quality and verification so changes land. At that level Anthropic has something monitoring issues the team could never have kept up with, which raises velocity. Thariq says full autonomy is possible in some cases but is a lot of work, and like hiring someone it has to be worth it."
+            ],
+            "evidence": [
+              {
+                "start": 1245.12,
+                "end": 1366.16
+              }
+            ],
+            "speaker": "Thariq"
+          }
+        ],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "What is the next big shift that will spread across the industry?",
+        "answer": [
+          "Thariq names Claude Tag first. In Thariq's description, Claude Code is good at implementing code, and Claude Tag covers the rest of the software life cycle: feedback, code review, babysitting, CI/CD and incidents. Thariq expects each part of the life cycle to become a routine or loop.",
+          "Thariq also expects generative interfaces. Artifacts will become a larger way to read and interact with Claude, and Thariq uses them for almost everything. If Claude Tag finishes work and produces a report, an artifact can make it readable on a phone."
+        ],
+        "evidence": [
+          {
+            "start": 1367.28,
+            "end": 1467.36
+          }
+        ],
+        "followups": [
+          {
+            "question": "What are artifacts, and how do people use them?",
+            "answer": [
+              "Thariq describes an artifact as Claude uploading a web app for you to use. Artifacts can now call your MCP, for example to read, sort and tag your inbox, or show a coding plan with diagrams, file snippets and schemas.",
+              "As Claude does more jobs, Thariq says, text in and text out is not enough for everything, and Claude is getting better at building the right interface at the right time. Thariq encourages asking how you could interact differently, to learn, understand or stay in the loop. It is still early."
+            ],
+            "evidence": [
+              {
+                "start": 1468.84,
+                "end": 1559.88
+              }
+            ],
+            "speaker": "Thariq"
+          }
+        ],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "Do engineers at Anthropic use different daily-driver models, or just the most intelligent one?",
+        "answer": [
+          "Thariq says the aim is to get the most out of frontier models with well-shaped tasks and a good verification harness. For now there is not enough compute for everyone to run Fable at 100 percent of rate limits, but Thariq does not see choosing a model as a durable skill.",
+          "Today Thariq uses Fable for planning, brainstorming, finding unknowns, writing detailed specs and building verification aids such as schemas, and Opus 5 with workflows for implementation. Thariq expects people to think much less about model choice by next year."
+        ],
+        "evidence": [
+          {
+            "start": 1561.96,
+            "end": 1656.68
+          }
+        ],
+        "followups": [],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "Is prompting a durable skill, given that each model has its own spiky intelligence?",
+        "answer": [
+          "Thariq says prompting is more than the typed text. It includes skills, data and everything built up as context. When Anthropic staff write small prompts, they have spent a lot of time on the harness, verification and skills. Thariq thinks it stays valuable to improve at it.",
+          "Each model has quirks to learn and later unlearn. Citing a recent Anthropic post about removing 80 percent of Claude Code's system prompt, Thariq says one finding was to remove examples from tool descriptions. Examples used to be needed for good output, but now they mostly steer the model wrongly, because Claude is good at sticking to your intent.",
+          "So the skill being built is the skill to adapt. Thariq's first model was GPT-2, where getting JSON out was remarkable, and that experience still helps with prompting Fable 5."
+        ],
+        "evidence": [
+          {
+            "start": 1658.48,
+            "end": 1854.92
+          }
+        ],
+        "followups": [],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "Is there any tribal knowledge or quirky tip for today's models?",
+        "answer": [
+          "Thariq pushes back on advice like \"just believe in yourself\". Thariq reads Jared's post about the Riemann hypothesis as mostly giving the model permission to use compute, not encouragement. Thariq's habit is to say a problem is hard, that Claude may use sub agents and workflows, and that it should use its own judgment.",
+          "Thariq explains that models by default do what the average user wants: respond and start fast, and finish without spending a crazy amount of compute. To change that, nudge the model, for example \"don't work yet, brainstorm with me\", or invite it to use workflows. Overnight, Thariq may set the slash goal and let it run. The common thread is giving permission."
+        ],
+        "evidence": [
+          {
+            "start": 1856.12,
+            "end": 1976.28
+          }
+        ],
+        "followups": [
+          {
+            "question": "How did you prove that removing so much of the system prompt made things better?",
+            "answer": [
+              "Thariq says Anthropic used user metrics, internal and external evals, and internal reports. Some changes are hard to catch: there is no eval for Claude finishing its work and telling the user to go to sleep.",
+              "The team removed lines, ran evals, watched reports and adjusted. Thariq says this was a full-time job for several people over a long period, so Anthropic published what it learned rather than recommending everyone repeat it."
+            ],
+            "evidence": [
+              {
+                "start": 1977.88,
+                "end": 2055.32
+              }
+            ],
+            "speaker": "Thariq"
+          }
+        ],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "Claude Code is excellent on objective work but hit or miss on taste. How do you instill a style, for example in front end work?",
+        "answer": [
+          "Thariq's method is to stay in the loop and give references, ideally with data. An HTML file beats a screenshot and a Figma file beats a raster image, because Claude can read a value such as a border radius from the Figma component and copy it. References in code are best.",
+          "For a non-designer, Thariq starts by admitting how much is unknown, including what good looks like. Ask Claude for help: say you lack design vocabulary, find reference sites, mark what you like and dislike, then ask for several mock-ups. Thariq prefers self-contained HTML mock-ups, then starts a new session to implement one.",
+          "Thariq argues that knowing what good output looks like will become more valuable. Thariq says Jared prompted the Riemann hypothesis work but could not tell whether it was correct until Lev, whom Thariq calls one of the world's best mathematicians, worked with it and asked follow-ups the Anthropic people could not follow. Domain knowledge is how you get good outputs; otherwise Claude might solve something and you would not know. The hardest part, Thariq says, is knowing when something is good enough and when to push harder."
+        ],
+        "evidence": [
+          {
+            "start": 2102.84,
+            "end": 2338.4
+          }
+        ],
+        "followups": [],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "How much glue writing, such as launch posts, updates and design docs, is now written by LLMs at Anthropic?",
+        "answer": [
+          "Thariq's rule of thumb is that if you would be happy to show someone the prompt, you can send them the output. Often the prompt just collects context. Before each one-on-one, Thariq has Claude read Slack messages, GitHub messages and PRs and compile a report of what Thariq did. The manager lacks that context, and Thariq is comfortable with them knowing the prompt.",
+          "For data readouts, Thariq suggests showing you have read the result, for example with small edits or a sanity check of the numbers. For a pitch or new concept, people want to know you believe in it. Even if Claude's idea is excellent, Thariq would say that Claude generated it and that Thariq thinks it is great. What people dislike is feeling misled.",
+          "Some writing depends on individual words. Anthropic's internal essays arguing for a direction are generally human-written, and Thariq says having Claude write your essay is looked down on, because every word should be intentional."
+        ],
+        "evidence": [
+          {
+            "start": 2340.6,
+            "end": 2567.0
+          }
+        ],
+        "followups": [
+          {
+            "question": "So routine writing is AI-written but human-reviewed, and novel thinking stays human?",
+            "answer": [
+              "Thariq agrees and adds that writing is a way of thinking, so if you need to think more about a readout, summarize it yourself. Gathering context is different: no one will hold it against you, and acknowledging the shortcut is good."
+            ],
+            "evidence": [
+              {
+                "start": 2568.92,
+                "end": 2626.52
+              }
+            ],
+            "speaker": "Thariq"
+          }
+        ],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "Is there a \"prompt blame\", like git blame, that shows which prompt produced a change?",
+        "answer": [
+          "Thariq says this is tough, because a prompt includes context and skills, so a basic-looking prompt may not be basic. Thariq treats a PR as no different from an artifact now, since Claude writes nearly all the code.",
+          "When Thariq sends a PR, Thariq usually attaches an artifact of every prompt sent to Claude, including failed approaches, so reviewers see what was considered. For a one-shot, Thariq says so and shares the prompt. Thariq wants to avoid sending a 10,000-line PR and being asked how much was read, so for large PRs Thariq shows the work as much as possible."
+        ],
+        "evidence": [
+          {
+            "start": 2628.76,
+            "end": 2735.08
+          }
+        ],
+        "followups": [],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "With AI generating so much code, what works for code ownership and maintenance?",
+        "answer": [
+          "Thariq says to revisit what matters. Naming used to matter because it reflected how a team thought about an abstraction, but it matters less now, as do many stylistic things. A team should decide which opinions still matter.",
+          "On maintenance, Thariq stresses scaffolding: a verification harness and skills. Thariq's team uses the simplify skill a lot, but does not want the model to simplify by default before the work is correct, which wastes tokens.",
+          "Thariq wants a harness that gives real confidence Claude tests every part; a PR to Claude Code returns a recording of the feature in use. Thariq suggests about a hundred times more testing code than before: fixtures for everything, production data pulled to build mock databases on the fly, and Storybooks for front end.",
+          "The human part is deciding where the code base should go. Thariq's example is undo: in a single-player app it can stop working after four or five steps and few notice, while a multiplayer app needs composable operations. If you know your direction, put it in your skills. For Thariq, maintainability means having a vision of what the code base is good at.",
+          "Thariq expects every code base to face a moment of asking the model to rewrite all of it, for example in a faster language or as WebAssembly in the browser. Thariq says maintainability still matters but the mental model needs updating."
+        ],
+        "evidence": [
+          {
+            "start": 2739.0,
+            "end": 3042.2
+          }
+        ],
+        "followups": [
+          {
+            "question": "A friend leaves tech debt because the next model will refactor it. Is that sensible?",
+            "answer": [
+              "Thariq says it is not completely wrong and depends on the case. It is the classic startup trade-off between refactoring and delivering customer value.",
+              "Thariq suggests thinking on shorter time scales and delivering value over the next month or two. If a project is meant to deliver value over six or twelve months, it may make sense to wait a little for the next model, while making the short-term delivery really good."
+            ],
+            "evidence": [
+              {
+                "start": 3043.92,
+                "end": 3124.08
+              }
+            ],
+            "speaker": "Thariq"
+          }
+        ],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "Friends at big tech companies see more incidents as AI use rises. What has worked at Anthropic to prevent breakages at higher velocity?",
+        "answer": [
+          "Thariq calls this a byproduct of moving faster and says Anthropic's uptime is not where it wants it either. Thariq notes that Anthropic is only around six years old and that no company has grown so fast, partly because Claude let it build more products faster.",
+          "Thariq's approach is to use Claude to improve uptime. The team asks what the dream testing and deployment environment would be: replaying requests across mock databases and fixtures, and chaos-testing everything."
+        ],
+        "evidence": [
+          {
+            "start": 3124.96,
+            "end": 3204.8
+          }
+        ],
+        "followups": [],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "Does everyone on your team have their own set of miscellaneous tools and scripts?",
+        "answer": [
+          "Thariq says yes, and that it is partly the job. People sometimes build their own harnesses for a while to see if they are useful, and integrate them if they work.",
+          "Many have unique Claude Tag setups. Thariq has it manage calendar invites: anyone can tag Claude in a channel, and Thariq accepts what it puts on the calendar. Others use it for email, and Thariq has seen multi-Claude tmux setups showing around 50 Claude Code sessions."
+        ],
+        "evidence": [
+          {
+            "start": 3206.96,
+            "end": 3320.68
+          }
+        ],
+        "followups": [],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "Should software engineers post on Twitter or X to build visibility?",
+        "answer": [
+          "Thariq says to share your work externally as much as you can, though some employers do not allow it; side projects are an option. Before joining Anthropic, Thariq worked with different companies, built things, and wrote and talked about them. Thariq says this increased their \"surface area of luck\", and that the bar is much lower than people think.",
+          "Thariq says they give this advice to many people and almost none follow it, while everyone who did is in a job they are excited about or running their own company. The recipe: ignore your resume, choose an interesting project, work hard and lock in, then ship it and write about it. There will be reasons not to, but if the first attempt fails, do it again.",
+          "Twitter may not be the right place; Reddit or Hacker News might fit better. The goal is to find people who like what you do. People want high-quality content, which is a lot of work, and Thariq says there is no shortcut such as asking Claude to run your Twitter account. Engage authentically. Thariq compares it with going to the gym daily: simple, disciplined and easy to quit, and Thariq says they have not seen anyone who kept trying fail."
+        ],
+        "evidence": [
+          {
+            "start": 3324.4,
+            "end": 3521.52
+          }
+        ],
+        "followups": [
+          {
+            "question": "Can you give an example of expanding your luck surface area?",
+            "answer": [
+              "Thariq describes how they got the job at Anthropic. Thariq did a fellowship at Good Fire, an interpretability AI company, doing applied research on using interpretability to make better products, and agreed up front that the goal was to share what Thariq built.",
+              "Thariq built an interpretability visualization and posted it. It got about 500 likes, which was big at the time. Several people saw it, some sent direct messages, and Thariq got an intro into a role at Anthropic. The project took about a month, and Thariq was paid for it.",
+              "Thariq says there is no shortcut: do interesting, novel work, work hard and be proud of it."
+            ],
+            "evidence": [
+              {
+                "start": 3532.2,
+                "end": 3655.48
+              }
+            ],
+            "speaker": "Thariq"
+          }
+        ],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "Boris said coding is largely solved. Should people still learn to code?",
+        "answer": [
+          "Thariq says being technical is really important: knowing how computers and programs work, what a back-end service or a cache is, what memory allocation is.",
+          "Thariq argues that only a great mathematician can tell whether someone really made progress on a hard open problem, and likewise only a great engineer can tell whether great software was built. To stay in the loop, reflect on your process and use Claude as a thought partner. Thariq cites Karpathy that learning should feel like effort: if Claude explains something and you only nod along, you have not learned it.",
+          "On \"coding is solved\", Thariq reads Boris as meaning that we no longer get stuck the old ways. Coding used to be high variance, with a bug taking a day or two weeks, and software projects rarely went well. Hiring someone to build software for a car dealership would almost certainly end in being scammed, not from malice but because software was so hard. Now coding can be used for things never done before. That is still a lot of work, but no longer a rare, difficult thing that mostly fails."
+        ],
+        "evidence": [
+          {
+            "start": 3657.8,
+            "end": 3905.0
+          }
+        ],
+        "followups": [
+          {
+            "question": "The host used to be shocked when software worked first try and now expects it. How should we read that shift?",
+            "answer": [
+              "The host says the expectation has flipped: now the host is surprised when Claude's code does not work on the first attempt.",
+              "Thariq says humans get used to abundance quickly. Thariq cites an article about a modern apartment's wonders, such as music on demand suited to your mood, where once you would have hired a musician. Thariq believes more people are paid to make music now than ever and music reaches more people, and expects the same for software and math: given abundance, people want software in everything."
+            ],
+            "evidence": [
+              {
+                "start": 3907.16,
+                "end": 3993.08
+              }
+            ],
+            "speaker": "Thariq"
+          },
+          {
+            "question": "Does the earlier FFmpeg example suggest technical people still have an edge?",
+            "answer": [
+              "The host notes that a non-technical person might not think to call FFmpeg to automate video editing.",
+              "Thariq agrees and says knowing how computers work matters. In Thariq's view the best CEOs tend to be technical, citing Zuckerberg and Elon. Thariq says they probably have not written code in a long time, but they understand systems and constraints."
+            ],
+            "evidence": [
+              {
+                "start": 3996.0,
+                "end": 4060.28
+              }
+            ],
+            "speaker": "Thariq"
+          }
+        ],
+        "speaker": "Thariq"
+      },
+      {
+        "type": "qa",
+        "question": "If you could go back to when you entered the industry, what advice would you give yourself?",
+        "answer": [
+          "Thariq describes it as two wolves. The first is to believe in yourself. When Thariq joined, it was rarer to believe in younger people, which Thariq links to the idea behind Y Combinator. Thariq suggests seeing yourself not as someone being trained but as someone who can do something incredible right away, and wishes they had done and shared bigger, bolder things.",
+          "The second is to learn from people. Young people tend to fail in one of two ways: not being bold enough, or being so bold that they never learn what others tried and why it failed. Everyone has a different failure mode. Thariq thinks they did not use mentors enough and had to relearn many things. Thariq adds that there is probably no universal advice, only things to think about when entering."
+        ],
+        "evidence": [
+          {
+            "start": 4062.28,
+            "end": 4190.76
+          }
+        ],
+        "followups": [],
+        "speaker": "Thariq"
+      }
+    ],
+    "related": [],
+    "omissions": [
+      "Opening teaser clips and lead-in, 00:00.00 to 00:27.20, omitted; the real question starts at 00:28.40.",
+      "Sponsor read for WorkOS, 34:16.72 to 35:00.96, omitted.",
+      "Laughter and the brief repeated exchange on first-try expectations, 01:05:17.64 to 01:05:40.08, folded into the follow-up at 01:05:07.16.",
+      "Closing thanks, 01:09:53.12 to 01:09:56.28, omitted.",
+      "Channel call for comments and likes, guest suggestions, and ergonomic keyboard Kickstarter promotion, 01:09:58.76 to 01:10:52.84, omitted."
+    ]
+  },
+  "coverage": {
+    "source_id": "source-cfa80c9b2999d9de",
+    "sha256": "8f85e37ac9df90babc12770df3cfb334c2dbf86de087866d28bbc9cd7ab79ab2",
+    "reviewed_chunks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "status": "included",
+    "reason": "All 6 chunks were read in full (about 71 minutes, 13,971 words). 21 initiating rounds were kept with 11 follow-ups, in source order. The captions are auto-generated, and the guest's first name appears as Tariq or Derek in places; the title spelling Thariq is used. Model and product names (Fable, Fable 5, Opus 5, Claude Tag, auto mode, workflows, slash goal) follow the captions and are not independently verified. The Riemann hypothesis story (Jared, Lev), the 80 percent system-prompt reduction, the six-month enterprise claim, Anthropic's age, the 500-likes figure and the Karpathy attribution are Thariq's own statements as captioned and are unverified. The host is not named in the transcript, so no host name is used. The caption word \"Sonic\" in the model-choice answer is unclear and was left out. Some follow-up question wording is editorial paraphrase of the host's remarks."
+  },
+  "editorial": {
+    "theme": "ai",
+    "question_rounds": 21,
+    "followup_count": 11,
+    "notes": "All 6 chunks were read in full (about 71 minutes, 13,971 words). 21 initiating rounds were kept with 11 follow-ups, in source order. The captions are auto-generated, and the guest's first name appears as Tariq or Derek in places; the title spelling Thariq is used. Model and product names (Fable, Fable 5, Opus 5, Claude Tag, auto mode, workflows, slash goal) follow the captions and are not independently verified. The Riemann hypothesis story (Jared, Lev), the 80 percent system-prompt reduction, the six-month enterprise claim, Anthropic's age, the 500-likes figure and the Karpathy attribution are Thariq's own statements as captioned and are unverified. The host is not named in the transcript, so no host name is used. The caption word \"Sonic\" in the model-choice answer is unclear and was left out. Some follow-up question wording is editorial paraphrase of the host's remarks."
+  }
+}

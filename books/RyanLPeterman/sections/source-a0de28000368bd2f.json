@@ -1,0 +1,119 @@
+{
+  "section": {
+    "id": "source-a0de28000368bd2f",
+    "source_id": "source-a0de28000368bd2f",
+    "title": "Choose a language for the port you need, not the rewrite you imagine",
+    "kind": "interview",
+    "deck": "Anders Hejlsberg explains the compatibility and runtime constraints behind TypeScript’s native compiler port.",
+    "blocks": [
+      {
+        "type": "qa",
+        "question": "What problem motivated moving the TypeScript compiler to native code?",
+        "answer": [
+          "Hejlsberg identifies performance and scalability. In the compute-heavy compiler workload he describes, native code offered an improvement over JavaScript execution. He estimates a two-to-threefold difference, while explicitly noting workload dependence. A second opportunity was using multiple cores through shared-memory concurrency.",
+          "He explains why the existing execution model made that difficult for the compiler’s object graphs: isolated workers could compute, but passing rich data between them imposed serialization or communication costs rather than simply handing another worker the shared structures. His answer describes the constraints driving this compiler project, not an exhaustive statement of every contemporary JavaScript concurrency facility. He also notes why mutable shared state is hard to reason about and why the language’s single-threaded tradition has useful safety properties."
+        ],
+        "evidence": [
+          {
+            "start": 0.16,
+            "end": 170.0
+          }
+        ],
+        "followups": [],
+        "speaker": "Anders Hejlsberg"
+      },
+      {
+        "type": "qa",
+        "question": "Why choose Go rather than another systems language?",
+        "answer": [
+          "The crucial decision was to port, rather than redesign from a clean slate. The existing compiler’s semantics, algorithms, diagnostics, and behavior were compatibility obligations for its users. A newly designed compiler might make different choices and therefore behave like a different language in subtle cases.",
+          "Preserving that implementation also preserved its assumptions: garbage collection, first-class functions and closures, and pervasive shared or circular structures. Hejlsberg says Go checked the most important boxes for this workload: mature native code generation across major platforms, garbage collection, and shared-memory concurrency. He chose the option that reached the desired performance and scalability gains with less additional engineering work."
+        ],
+        "evidence": [
+          {
+            "start": 172.4,
+            "end": 284.56
+          }
+        ],
+        "followups": [
+          {
+            "question": "What about Rust did not fit this particular port?",
+            "answer": [
+              "Hejlsberg points to the lack of built-in garbage collection and the effort required to fit the compiler’s circular data structures to a different ownership model. Parent pointers, recursive types, and symbol graphs were everywhere in the existing implementation. He says the team tried that direction but it ceased to be a straightforward port. His argument is about the work required to preserve this compiler, not a claim that Rust cannot represent such systems at all."
+            ],
+            "evidence": [
+              {
+                "start": 287.04,
+                "end": 364.32
+              }
+            ],
+            "speaker": "Anders Hejlsberg"
+          },
+          {
+            "question": "Could a separate garbage-collection library solve the mismatch?",
+            "answer": [
+              "He says external strategies can impose restrictions and integration concerns that do not disappear merely by adding a library. He valued garbage collection engineered into the language so the compiler code could treat memory reclamation as a separate concern. Even then, it still needed to avoid retaining data unnecessarily; he notes that reference-counting strategies share that obligation."
+            ],
+            "evidence": [
+              {
+                "start": 366.4,
+                "end": 438.96
+              }
+            ],
+            "speaker": "Anders Hejlsberg"
+          }
+        ],
+        "speaker": "Anders Hejlsberg"
+      },
+      {
+        "type": "table",
+        "title": "The decision followed project constraints",
+        "headers": [
+          "Constraint",
+          "Why it mattered in this port"
+        ],
+        "rows": [
+          [
+            "Compatibility",
+            "Preserve existing diagnostics, algorithms, and semantic behavior."
+          ],
+          [
+            "Native execution",
+            "Improve the compute-intensive workload."
+          ],
+          [
+            "Shared-memory concurrency",
+            "Use available cores without rebuilding around isolated object graphs."
+          ],
+          [
+            "Garbage collection and closures",
+            "Preserve assumptions already embedded throughout the compiler."
+          ]
+        ],
+        "evidence": [
+          {
+            "start": 0.16,
+            "end": 438.96
+          }
+        ]
+      }
+    ],
+    "related": [],
+    "omissions": []
+  },
+  "coverage": {
+    "source_id": "source-a0de28000368bd2f",
+    "sha256": "3aabb6ac2bc9448d1be1e84f1cf6bd9eb561f16911369215b3dabe692b6eb31a",
+    "reviewed_chunks": [
+      1
+    ],
+    "status": "included",
+    "reason": "All compact reading chunks read in full; substantive discussion paraphrased with source ranges."
+  },
+  "editorial": {
+    "theme": "languages",
+    "question_rounds": 2,
+    "followup_count": 2,
+    "notes": ""
+  }
+}

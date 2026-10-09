@@ -1,0 +1,158 @@
+{
+  "section": {
+    "id": "source-1f8e66c58d2a4c8b",
+    "source_id": "source-1f8e66c58d2a4c8b",
+    "title": "Owning storage means owning its failure modes",
+    "kind": "interview",
+    "deck": "James Cowling explains why Dropbox built Magic Pocket and how workload specialization, predictable memory, and an elastic fallback made it viable.",
+    "blocks": [
+      {
+        "type": "qa",
+        "question": "Why did Dropbox migrate away from S3?",
+        "answer": [
+          "Cowling describes a longstanding strategic desire to control the company’s storage destiny, especially when Dropbox’s central business was file synchronization and sharing. Building its own storage system also produced major cost savings before the company went public.",
+          "Hard technical work helped attract a strong, small engineering team whose members later contributed elsewhere, including synchronization and distributed databases. But ownership creates continuing obligations: after building the system, the company must keep maintaining and investing in it. He considers the project difficult to reproduce without enormous investment and does not recommend that other companies casually follow it."
+        ],
+        "evidence": [
+          {
+            "start": 0,
+            "end": 119.32
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "qa",
+        "question": "Could Amazon negotiate a deal that would keep Dropbox on S3?",
+        "answer": [
+          "Dropbox already received deeply discounted rates. Cowling says the new system ultimately had cost advantages that Amazon could not match: experimental shingled magnetic recording disks and a design tightly optimized for Dropbox’s known workload. S3 had to serve many different workloads. He emphasizes that the historical choice made sense for this company at that time, rather than advising every company to build storage today."
+        ],
+        "evidence": [
+          {
+            "start": 121.64,
+            "end": 205.68
+          }
+        ],
+        "followups": [
+          {
+            "question": "What did knowing the workload let you optimize?",
+            "answer": [
+              "Files were often accessed soon after upload for sharing or preview generation, then became colder. Dropbox could write first to storage optimized for inexpensive reads and writes, then move data in bulk to a more storage-efficient, static system. Taking the cold write path offline temporarily did not interrupt the live upload path.",
+              "Knowledge of block sizes, access frequency, deletion patterns, and even rack power consumption supported further tuning. Failures could alter that power budget: a bad disk batch increased re-replication, making racks run hotter. The optimization reached physical infrastructure at multi-exabyte and roughly million-drive scale."
+            ],
+            "evidence": [
+              {
+                "start": 207.2,
+                "end": 359.4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "qa",
+        "question": "Why did the storage nodes move from Python to Go and then Rust?",
+        "answer": [
+          "The prototype was Python, which he considers reasonable for I/O-bound work but problematic here for concurrency, memory control, and safe refactoring. Go worked well for the larger system’s concurrent servers and data movement. The problem was unpredictable memory consumption on the storage nodes.",
+          "An out-of-memory restart resembled disk failure and triggered recovery. A sudden load spike on a small set of files could restart nodes, then force much more expensive reconstruction from replicas. He recalls that one incoming stream could become roughly seven streams of recovery load. More load caused more failures, creating congestion collapse.",
+          "Rewriting the storage-node component in Rust coincided with removing the conventional filesystem and controlling the new disks through their draft interfaces. He does not reliably recall the exact interface name. The combined project improved reliability and shifted spending toward disks rather than RAM, compute, network, and other overhead. This account identifies the behavior the rewrite needed to control, rather than treating a language switch as a magic solution."
+        ],
+        "evidence": [
+          {
+            "start": 361.56,
+            "end": 614.88
+          }
+        ],
+        "followups": [
+          {
+            "question": "Did a postmortem reveal the failure mechanism?",
+            "answer": [
+              "He says the mechanism was evident during the incident. Physical infrastructure made the fix difficult: adding RAM meant dispatching people to installed machines. He uses that constraint as an argument for appreciating cloud flexibility even while explaining Dropbox’s decision to own hardware."
+            ],
+            "evidence": [
+              {
+                "start": 616.2,
+                "end": 672
+              }
+            ]
+          },
+          {
+            "question": "What other unknowns did the system need to survive?",
+            "answer": [
+              "Two server-delivery trucks crashed in one week, delaying capacity for weeks even though their drivers were safe. Customers still needed to store data. The team therefore planned capacity buffers, guarded against memory spikes and congestion collapse, and used a structured failure-mode exercise listing possible problems and their consequences before designing protections."
+            ],
+            "evidence": [
+              {
+                "start": 672,
+                "end": 778.12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "qa",
+        "question": "Did you use emergency settings that reduced durability?",
+        "answer": [
+          "Never for user-data durability, Cowling says. That guarantee was nonnegotiable. Emergency controls could stop background tasks or test loads to relieve CPU and memory pressure.",
+          "A system called Trampoline provided another escape: near a capacity threshold, Dropbox could write new data to S3 and move it back later. Access to elastic external capacity let it run owned capacity nearer the edge without weakening durability. He gives thirty petabytes as an illustrative large fallback volume and says the path was exercised in tests, even though actual emergency use was uncommon."
+        ],
+        "evidence": [
+          {
+            "start": 779.72,
+            "end": 877.88
+          }
+        ],
+        "followups": []
+      },
+      {
+        "type": "flow",
+        "title": "The congestion-collapse feedback loop",
+        "steps": [
+          {
+            "title": "Hot-file load rises",
+            "text": "A small set of files creates concentrated demand."
+          },
+          {
+            "title": "Nodes exhaust memory",
+            "text": "Restarts look like storage failures."
+          },
+          {
+            "title": "Recovery multiplies work",
+            "text": "Reconstruction loads additional replicas."
+          },
+          {
+            "title": "Pressure spreads",
+            "text": "Additional load can trigger further node failures."
+          }
+        ],
+        "caption": "Editorial synthesis. Arrows show how one failure increases the load that can cause the next; the last step can feed back into more memory exhaustion.",
+        "editorial": true,
+        "evidence": [
+          {
+            "start": 426.48,
+            "end": 574.88
+          }
+        ]
+      }
+    ],
+    "related": [],
+    "omissions": []
+  },
+  "coverage": {
+    "source_id": "source-1f8e66c58d2a4c8b",
+    "sha256": "03ed702101dfb9b1699b3e112077164b7df3fac80055894f2e746e1a598a6008",
+    "reviewed_chunks": [
+      1,
+      2
+    ],
+    "status": "included",
+    "reason": "Read every compact-reading chunk in order; preserved substantive exchanges and recorded repetitive trailer and housekeeping omissions."
+  },
+  "editorial": {
+    "theme": "systems",
+    "question_rounds": 4,
+    "followup_count": 3,
+    "notes": "Both chunks read. Normal interview clip receives its own section. The title’s largest-ever claim is not repeated as an independently established ranking. Exact disk-control acronym is uncertain and omitted; project names retained where context is clear."
+  }
+}

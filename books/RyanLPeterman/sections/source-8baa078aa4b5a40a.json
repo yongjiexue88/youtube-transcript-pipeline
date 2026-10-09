@@ -1,0 +1,91 @@
+{
+  "section": {
+    "id": "source-8baa078aa4b5a40a",
+    "source_id": "source-8baa078aa4b5a40a",
+    "title": "Use types and capabilities to make delegated work inspectable",
+    "kind": "interview",
+    "deck": "Martin Odersky argues that generated implementation needs concise contracts and explicit limits on authority.",
+    "blocks": [
+      {
+        "type": "qa",
+        "question": "How might AI-generated code change programming-language design?",
+        "answer": [
+          "Odersky sees a control problem: a human asked to review a mountain of generated implementation can lose a practical understanding of what the system will do. He also worries about tools that can discover or exploit vulnerabilities. Programming languages are only part of the response, but he believes they can make the critical guarantees easier to inspect.",
+          "He expects attention to shift toward interfaces, types, requirements, and higher-level specifications. A precise type or interface can become a contract between a human and the code-generating system—something concise enough to review and strong enough to constrain the implementation. In his view, this requires closing escape hatches that undermine the claimed guarantees, rather than merely adding advisory annotations.",
+          "He also proposes capabilities: explicit, fine-grained authority over resources and effects. An agent should be given the particular read, write, or secret-access permissions it needs, so there are meaningful things it cannot do. He treats memory safety as a necessary starting point, while emphasizing that control over files, data, and secrets involves more than memory alone.",
+          "Odersky says Scala work in this direction was available experimentally in the context of the interview. He does not present it as a completed universal solution. He also hopes AI could help migrate existing software when the target design is clear. That is a proposed path toward safer systems, not evidence that a wholesale migration has already happened."
+        ],
+        "evidence": [
+          {
+            "start": 0.0,
+            "end": 310.0
+          }
+        ],
+        "followups": [
+          {
+            "question": "What would a capability guarantee look like in practice?",
+            "answer": [
+              "He gives a file-lifetime example. A program receives access to a file for a limited scope and should not keep using it after returning control to the environment. Without a constraint, it might save the file in a variable or hide access inside a returned closure or stream.",
+              "In the type-system approach he describes, a value that retains access to the file must expose that capability in its type. The environment can then require a returned type that holds no such capability. This makes retained access visible and gives the system a way to reject an escape. He relates the idea to ensuring that pointers do not outlive an arena and to controlling which secrets a component can access: the recurring question is what authority can remain beyond an allowed scope."
+            ],
+            "evidence": [
+              {
+                "start": 312.16,
+                "end": 471.44
+              }
+            ],
+            "speaker": "Martin Odersky"
+          }
+        ],
+        "speaker": "Martin Odersky"
+      },
+      {
+        "type": "flow",
+        "title": "A contract for delegated implementation",
+        "steps": [
+          {
+            "title": "Specify the task",
+            "text": "State the requirements and interface."
+          },
+          {
+            "title": "Limit the authority",
+            "text": "Give access only to defined resources and effects."
+          },
+          {
+            "title": "Expose retained access",
+            "text": "Make capabilities visible in the values and types."
+          },
+          {
+            "title": "Check the boundary",
+            "text": "Reject capabilities that escape the permitted scope."
+          }
+        ],
+        "caption": "Arrows show an editorial arrangement of Odersky’s proposed control model. The discussion describes a direction and experimental work, not a guarantee for every existing agent system.",
+        "editorial": true,
+        "evidence": [
+          {
+            "start": 79.84,
+            "end": 471.44
+          }
+        ]
+      }
+    ],
+    "related": [],
+    "omissions": []
+  },
+  "coverage": {
+    "source_id": "source-8baa078aa4b5a40a",
+    "sha256": "f25ddfdd8e1b1db094a8da8d2606e12b0f2e9aaf27b804c9e32216a72186aafc",
+    "reviewed_chunks": [
+      1
+    ],
+    "status": "included",
+    "reason": "All compact reading chunks read in full; substantive discussion paraphrased with source ranges."
+  },
+  "editorial": {
+    "theme": "ai",
+    "question_rounds": 1,
+    "followup_count": 1,
+    "notes": ""
+  }
+}

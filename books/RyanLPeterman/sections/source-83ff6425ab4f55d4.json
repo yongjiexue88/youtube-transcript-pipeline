@@ -1,0 +1,104 @@
+{
+  "section": {
+    "id": "source-83ff6425ab4f55d4",
+    "source_id": "source-83ff6425ab4f55d4",
+    "title": "Compilation, dynamic behavior, and types are separate design choices",
+    "kind": "interview",
+    "deck": "Roberto Ierusalimschy explains why language labels do not fully describe implementation or performance.",
+    "blocks": [
+      {
+        "type": "qa",
+        "question": "Is “compiled versus interpreted” mainly a distinction in the implementation?",
+        "answer": [
+          "Ierusalimschy agrees that one can compile Python or interpret C. The more revealing question is which implementation is easy for the language’s semantics. A dynamic language can create code while the program is running. If compiled execution must preserve an operation such as eval, the runtime may need a compiler available as a library so that new code can be compiled during execution.",
+          "A compiler can instead accept a restricted subset and refuse programs that use certain dynamic features. That still compiles code, but it changes what the implementation supports. Conversely, interpreting C is possible, though he expects such an implementation to be slow. “Compiled,” “dynamic,” and “statically typed” therefore should not be treated as interchangeable labels."
+        ],
+        "evidence": [
+          {
+            "start": 0.0,
+            "end": 96.72
+          }
+        ],
+        "followups": [],
+        "speaker": "Roberto Ierusalimschy"
+      },
+      {
+        "type": "qa",
+        "question": "What role does a type system play in compilation?",
+        "answer": [
+          "The answer depends on what the type system guarantees. In the C-style example, known types help determine representation: the compiler knows the space required for an integer or floating-point value and can choose an appropriate operation and register. For A + B, known operand types can make it possible to emit a direct integer addition.",
+          "In a dynamic language, that same syntax can mean integer addition, mixed-number arithmetic, string concatenation, or another operation. Runtime checks and conversions may be needed to distinguish them. Unknown representation can also lead to more dynamic allocation. Types can reduce this work when the compiler can rely on them.",
+          "Ierusalimschy cautions that type annotations are not automatically runtime guarantees. He uses TypeScript as an example of a system where the type written by a programmer is not by itself sufficient justification for a machine representation. His point is that an optimizer needs reliable facts about the values, not just reassuring labels."
+        ],
+        "evidence": [
+          {
+            "start": 100.96000000000001,
+            "end": 263.04
+          }
+        ],
+        "followups": [
+          {
+            "question": "Could type inference recover unambiguous types for a language such as Lua?",
+            "answer": [
+              "He rejects the unrestricted version of that proposal and describes inference for fully dynamic behavior as a very difficult problem. An analysis may produce types too general to enable useful specialization, or may work only if programs follow a restricted pattern.",
+              "A programmer can still help performance by following an informal type discipline: for example, not reusing the same variable for unrelated kinds of value. The language need not enforce that discipline for an implementation to benefit from predictable behavior. This is an account of where inference and specialization become useful, rather than a claim that every analysis of a dynamic program is impossible."
+            ],
+            "evidence": [
+              {
+                "start": 264.88,
+                "end": 378.6
+              }
+            ],
+            "speaker": "Roberto Ierusalimschy"
+          }
+        ],
+        "speaker": "Roberto Ierusalimschy"
+      },
+      {
+        "type": "table",
+        "title": "Do not collapse these distinctions",
+        "headers": [
+          "Dimension",
+          "Question it answers"
+        ],
+        "rows": [
+          [
+            "Compilation or interpretation",
+            "How does this implementation execute code?"
+          ],
+          [
+            "Dynamic behavior",
+            "Can the running program change or create code and meanings?"
+          ],
+          [
+            "Type guarantees",
+            "What representation and operations can the compiler safely assume?"
+          ]
+        ],
+        "evidence": [
+          {
+            "start": 0.0,
+            "end": 378.6
+          }
+        ]
+      }
+    ],
+    "related": [],
+    "omissions": []
+  },
+  "coverage": {
+    "source_id": "source-83ff6425ab4f55d4",
+    "sha256": "c27d859e2be79e9549e140e8b17585a58d0ffd85c59158ca0f63a8a1b3d14946",
+    "reviewed_chunks": [
+      1
+    ],
+    "status": "included",
+    "reason": "All compact reading chunks read in full; substantive discussion paraphrased with source ranges."
+  },
+  "editorial": {
+    "theme": "languages",
+    "question_rounds": 2,
+    "followup_count": 1,
+    "notes": ""
+  }
+}
