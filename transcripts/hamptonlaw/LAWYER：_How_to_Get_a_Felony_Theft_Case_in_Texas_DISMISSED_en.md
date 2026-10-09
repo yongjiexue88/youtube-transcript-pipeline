@@ -1,16 +1,3 @@
-# LAWYER: How to Get a Felony Theft Case in Texas DISMISSED
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `T5vzFGEMNQw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=T5vzFGEMNQw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:39:15 |
-
----
-
 felony theft is there a way to potentially get your case
 
 dismissed hi I'm Jeff Hampton with the Hampton Law Firm I want to welcome you to our YouTube channel and today I want to break down Texas law as it relates to theft what makes it a misdemeanor what makes it a felony what can you do to prepare yourself to defend your case and get your life back and by the way if you wait around to the end of

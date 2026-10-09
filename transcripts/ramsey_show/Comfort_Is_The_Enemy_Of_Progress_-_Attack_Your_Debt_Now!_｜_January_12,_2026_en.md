@@ -1,16 +1,3 @@
-# Comfort Is The Enemy Of Progress - Attack Your Debt Now! | January 12, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Bzh5sylPry4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Bzh5sylPry4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:50:03 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

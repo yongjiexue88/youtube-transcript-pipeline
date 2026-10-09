@@ -1,16 +1,3 @@
-# They Make $1.4M/Year With AI
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `b5JhfGHafZA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=b5JhfGHafZA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:29:11 |
-
----
-
 these guys went from0 to $120,000 a month with an AI app and the
 
 crazy part is they did it in less than a year I drove out to Miami Florida to ask them exactly how it works and how one platform got them 10,000 paying users in a matter of days so was a sort of like a

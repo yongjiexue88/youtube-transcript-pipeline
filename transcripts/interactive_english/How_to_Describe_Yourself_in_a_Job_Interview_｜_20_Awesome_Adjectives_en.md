@@ -1,16 +1,3 @@
-# How to Describe Yourself in a Job Interview | 20 Awesome Adjectives
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qrHrQc5AWPk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qrHrQc5AWPk) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:38:23 |
-
----
-
 Today i have an awesome lesson to help you build your vocabulary,
 
 because i'm going to tell you 20 great adjectives to describe yourself.

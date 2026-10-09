@@ -1,16 +1,3 @@
-# How to feel confident in speaking English￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `m86DKKUZlQI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=m86DKKUZlQI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:45:35 |
-
----
-
 here are three tips to help you feel
 
 less awkward in your English conversations the first tip remember

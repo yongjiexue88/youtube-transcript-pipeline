@@ -1,16 +1,3 @@
-# When Life Hits Hard, Stay Focused on What You Can Control | May 13, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0cwJG8eB3N4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0cwJG8eB3N4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:32:30 |
-
----
-
 This is an ad for Better Help. If you've ever said, "I'm not in crisis, so I don't need therapy." I want you to reconsider. The time to take care of your mental health is before things fall apart, and talking to someone can help.
 
 Get started at betterhelp.com/ramy and save 10%.

@@ -1,16 +1,3 @@
-# 100 Most Common Words in English | YOU NEED TO KNOW THESE WORDS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3TNQ7TrC4wE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3TNQ7TrC4wE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:41:07 |
-
----
-
 what's up everyone today I have a super
 
 useful lesson for you because I'm gonna talk to you about the 100 most common

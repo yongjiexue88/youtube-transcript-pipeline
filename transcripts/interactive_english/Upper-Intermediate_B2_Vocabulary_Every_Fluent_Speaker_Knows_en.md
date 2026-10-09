@@ -1,16 +1,3 @@
-# Upper-Intermediate B2 Vocabulary Every Fluent Speaker Knows
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oSAQVzy3-sI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oSAQVzy3-sI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:37:47 |
-
----
-
 Let's learn some B2 vocabulary to help you supercharge your fluency. And I say that because these are words that you will actually hear and use when you're
 
 in a conversation. And if you are someone who wants to develop your overall English fluency, please subscribe, turn on notifications. That way I can become your teacher. My name is Wes. The channel is Interactive English. It is all about helping you reach your fluency goals. Now, let's begin with five essential B2 nouns. And

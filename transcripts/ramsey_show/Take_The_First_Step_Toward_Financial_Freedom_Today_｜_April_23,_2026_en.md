@@ -1,16 +1,3 @@
-# Take The First Step Toward Financial Freedom Today | April 23, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MRbew8SjlQE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MRbew8SjlQE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:35:19 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

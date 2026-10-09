@@ -1,16 +1,3 @@
-# 75 Difficult Words to Pronounce (Fine-tune Your Pronunciation)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BDBIilAqVj8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BDBIilAqVj8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:02:57 |
-
----
-
 today i am going to teach you 75
 
 difficult words to pronounce in english and i'm gonna do it all in under 45 minutes so this it is a long lesson buckle up and what i've done is i've taken well some of the very best of my pronunciation lessons and i've just put them together into this one and there's

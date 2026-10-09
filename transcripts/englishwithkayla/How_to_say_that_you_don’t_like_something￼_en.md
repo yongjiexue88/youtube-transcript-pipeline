@@ -1,16 +1,3 @@
-# How to say that you don’t like something￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8t11lXuf-IU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8t11lXuf-IU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:53:43 |
-
----
-
 do you like pizza yes i like if somebody
 
 asks you a question if you like something the answer is we love lingua marina we love silicon

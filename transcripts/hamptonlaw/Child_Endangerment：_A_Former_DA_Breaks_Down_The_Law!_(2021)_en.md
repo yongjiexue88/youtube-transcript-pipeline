@@ -1,16 +1,3 @@
-# Child Endangerment: A Former DA Breaks Down The Law! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IoFZEUZTarM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IoFZEUZTarM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:54:52 |
-
----
-
 [Music] hello welcome to the Hampton Law Firm I'm Jeff Hampton with the Hampton law firm and today's video is about child
 
 endangerment what must be proven what

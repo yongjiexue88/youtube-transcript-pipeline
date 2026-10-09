@@ -1,16 +1,3 @@
-# My App Made $120K in 24 Hours
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DkmStHS8NP0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DkmStHS8NP0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:11:38 |
-
----
-
 There's a well-known secret in the app space [music] right now, and it's arguably the fastest way to see whether your idea is good or not. Well, I met a guy who executed this perfectly.
 
 >> I had zero experience with mobile apps, so I wasn't sure if it would work.

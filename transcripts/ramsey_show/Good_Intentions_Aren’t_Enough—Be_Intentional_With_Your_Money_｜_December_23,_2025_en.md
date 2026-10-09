@@ -1,16 +1,3 @@
-# Good Intentions Aren’t Enough—Be Intentional With Your Money | December 23, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tcxezRpLYXM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tcxezRpLYXM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:52:56 |
-
----
-
 George Camel here with a quick PSA before the calls start coming in. If you want to leave the money stress in 2025, you need a plan that works. So take what you learn today and put it to work in every dollar. Download the app and start for free today.
 
 Normal is broke and common sense is weird. So, we're here to help you transform your life. From the Ramsey

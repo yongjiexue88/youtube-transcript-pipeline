@@ -1,16 +1,3 @@
-# LAWYER: 5 Favorite Tricks Cops Use During DWI Stops
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_O0U8sIOGkg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_O0U8sIOGkg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:38:51 |
-
----
-
 you've been pulled over a police officer walks up to you and starts asking you questions about drinking and driving what do you do hey everybody Jeff Hampton with Hampton criminal defense attorneys here I want to talk to you about five things you need to be aware of and ready for if a police officer pulls you over and starts asking you questions about drinking and driving number one don't talk so much now this
 
 might sound obvious but the moment you start getting talkative with a police officer when he pulls you over over and in fact this pretty much applies to getting pulled over for anything if you start talking enough you're going to give the officer a reason to want to investigate you maybe start your car start listening to what you're saying and start thinking that if maybe you're nervous or

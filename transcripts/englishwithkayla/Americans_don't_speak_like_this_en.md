@@ -1,16 +1,3 @@
-# Americans don't speak like this
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `e2B3iRvu410` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=e2B3iRvu410) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:34:04 |
-
----
-
 what are some of your favorite things to
 
 do on the weekend Americans do not sound

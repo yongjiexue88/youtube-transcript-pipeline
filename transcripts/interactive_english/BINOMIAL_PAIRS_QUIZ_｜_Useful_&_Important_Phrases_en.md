@@ -1,16 +1,3 @@
-# BINOMIAL PAIRS QUIZ | Useful & Important Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uEs_Vby87kc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uEs_Vby87kc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:19:07 |
-
----
-
 hey everyone welcome to today's lesson my name
 
 is wes the channel is interactive english and in case this happens to be

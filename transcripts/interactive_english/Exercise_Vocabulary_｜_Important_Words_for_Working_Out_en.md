@@ -1,16 +1,3 @@
-# Exercise Vocabulary | Important Words for Working Out
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OeNQbxbtPOU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OeNQbxbtPOU) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:43:31 |
-
----
-
 So today, we're going to teach you guys some vocabulary words.
 
 And showing you guys words that you can use when you're working out next. As you can see, I'm working out really hard.

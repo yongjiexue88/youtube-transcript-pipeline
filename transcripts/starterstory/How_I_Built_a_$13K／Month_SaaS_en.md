@@ -1,16 +1,3 @@
-# How I Built a $13K/Month SaaS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `R4BS_UiTBPw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=R4BS_UiTBPw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:14:15 |
-
----
-
 Every SAS founder should grow their app like this. >> This is Aayush, a guy from India who built an app that makes over $150,000 a
 
 year and he grew it using one formula, the Reddit and SEO playbook.

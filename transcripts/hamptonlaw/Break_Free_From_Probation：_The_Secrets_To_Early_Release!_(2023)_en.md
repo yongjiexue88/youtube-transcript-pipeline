@@ -1,16 +1,3 @@
-# Break Free From Probation: The Secrets To Early Release! (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9s7KKLhakmw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9s7KKLhakmw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:42:38 |
-
----
-
 you took probation you had no idea how hard it was going to be maybe you've been a model probationer you've done everything that the judge asked from you and your probation officers asked from you can you get off of probation early
 
 well many times the answer can be yes now I'm going to talk to you for a few minutes about Texas law and how it applies to you but maybe you're not in Texas take a few minutes do a Google search figure out exactly what your state law says or call an attorney a

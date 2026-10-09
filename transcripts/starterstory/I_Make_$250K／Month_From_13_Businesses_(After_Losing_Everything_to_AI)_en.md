@@ -1,16 +1,3 @@
-# I Make $250K/Month From 13 Businesses (After Losing Everything to AI)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `spiC5m6AJNs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=spiC5m6AJNs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:11:53 |
-
----
-
 I just run a portfolio of small internet businesses doing around 250k per month.
 
 Meet Jackie. He's built dozens of projects online that have made him millions. An SEO agency, a couple B2B SaaS products, even [music] an e-com brand. He's tried every business model under the sun. He's really seen it all.

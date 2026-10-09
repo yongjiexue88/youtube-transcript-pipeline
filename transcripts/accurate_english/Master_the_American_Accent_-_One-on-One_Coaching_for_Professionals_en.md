@@ -1,16 +1,3 @@
-# Master the American Accent - One-on-One Coaching for Professionals
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `E4YtBTOpP2U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=E4YtBTOpP2U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:24:01 |
-
----
-
 If you're a regular viewer of my channel, you probably already know that I love teaching advanced English for professionals. But what you may not know about me is that for the past 25 years,
 
 I've been director of a training center here in Los Angeles that specializes in teaching the American accent. We offer one-on-one accent reduction coaching for corporate professionals and for actors who need to speak clearly and confidently. Do you feel like your accent is holding you back from job promotions, from acting jobs, or just

@@ -1,16 +1,3 @@
-# 几百块和几万块的自行车真有区别吗？自行车好玩在哪里？Is there really a difference between bikes at different prices?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pF-B9H85MFg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pF-B9H85MFg) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:47:22 |
-
----
-
 朋友 你骑过二八大杠吗
 
 我猜没有但你的妈妈也许曾坐在后座上搂着年轻的爸爸

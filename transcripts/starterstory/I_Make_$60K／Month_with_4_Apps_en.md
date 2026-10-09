@@ -1,16 +1,3 @@
-# I Make $60K/Month with 4 Apps
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KpVPST_P4W8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KpVPST_P4W8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:25:23 |
-
----
-
 I run four different businesses that currently make $60,000 per month. How does this guy make $60,000 a month from four very different online businesses?
 
 Well, it's all thanks to one simple marketing strategy. I spent a lot of money on Facebook ads. It never really worked. I tried Google ads.

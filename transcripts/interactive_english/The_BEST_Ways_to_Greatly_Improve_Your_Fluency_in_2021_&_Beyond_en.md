@@ -1,16 +1,3 @@
-# The BEST Ways to Greatly Improve Your Fluency in 2021 & Beyond
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `edVwkq03Yh4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=edVwkq03Yh4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:21:19 |
-
----
-
 so if you are thinking that this year 2021 you would like to improve your english and and you just really want to take it to the next level i want to talk to you about five things that i absolutely think you should do if you really want to improve and and reach your fluency goals that's coming up [Music] hey everyone my name is wes this is interactive english and the channel in case this is your first time here it's all about just helping you practice and improve your english so that you can reach your fluency goals and in this lesson i want to talk to you about 2021.
 
 kind of just more of a statement and then i'll explain to you what i mean and that is make time not excuses

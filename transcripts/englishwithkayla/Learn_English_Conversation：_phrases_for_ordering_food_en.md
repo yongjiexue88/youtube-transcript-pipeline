@@ -1,16 +1,3 @@
-# Learn English Conversation: phrases for ordering food
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bMHH5jwUSzs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bMHH5jwUSzs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:54:02 |
-
----
-
 calling someone on the phone in English can be really nerve-wracking it can make you feel nervous because you don't know exactly what to say and you feel like you might make a mistake and the person won't be able to understand you well in today's English lesson we are going to work on a phone conversation calling and ordering food I'm going to teach you some common phrases that
 
 you might need to use in the conversation and I'm going to teach you some common questions that might be asked to you on the phone as well it's always a good idea to practice a conversation before you have it because it just helps you feel confident and prepared now listen to this English conversation and then we'll study the natural phrases in the conversation that you might have not heard in your English textbook in our more natural

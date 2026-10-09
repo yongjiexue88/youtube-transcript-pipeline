@@ -1,16 +1,3 @@
-# 18 American English idioms and phrases explained
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LXRYmhIVsF0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LXRYmhIVsF0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:06:07 |
-
----
-
 hi friends welcome back to english with kayla on today's lesson we are going to
 
 be learning 18 essential american english idioms

@@ -1,16 +1,3 @@
-# 经典密码如何害死玛丽女王？你的账号密码会被破解吗？Will your account password be cracked?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yH3K9Yhdr68` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yH3K9Yhdr68) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:58:21 |
-
----
-
 一五八六年苏格兰的玛丽女王因叛国罪入狱
 
 狱中几年她一直用加密信件和外面的同党联络

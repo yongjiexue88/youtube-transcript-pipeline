@@ -1,16 +1,3 @@
-# Useful everyday English phrase
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RmbHHA_F-d8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RmbHHA_F-d8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:21:29 |
-
----
-
 when you want to assure someone that
 
 something will happen when the timing is

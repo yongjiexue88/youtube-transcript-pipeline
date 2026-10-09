@@ -1,16 +1,3 @@
-# Super Confusing Words for English Learners | BUILD YOUR VOCABULARY
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `z8q4tvrmwKo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=z8q4tvrmwKo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:13:53 |
-
----
-
 english is full of confusing words like
 
 these first two words that i have for you between and among they're both

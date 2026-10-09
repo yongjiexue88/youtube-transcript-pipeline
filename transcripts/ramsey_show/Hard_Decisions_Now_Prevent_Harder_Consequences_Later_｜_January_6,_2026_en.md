@@ -1,16 +1,3 @@
-# Hard Decisions Now Prevent Harder Consequences Later | January 6, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KoS8i2GGo-c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KoS8i2GGo-c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:50:56 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

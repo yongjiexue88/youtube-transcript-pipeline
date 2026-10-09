@@ -1,16 +1,3 @@
-# COPY MY AMERICAN ACCENT! 🇺🇸 (How to 100% Improve Your Speaking Fluency)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hssDaafb2wM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hssDaafb2wM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:42:32 |
-
----
-
 I'm going to teach you all about the American accent, which is my English accent because I am from the United States. And this is a practice lesson.
 
 So, I want you to participate and actually say these words and sentences with me. And if you are someone who wants to improve and develop your speaking fluency, please subscribe, turn on notifications. That way, I can become your teacher. My name is Wes.

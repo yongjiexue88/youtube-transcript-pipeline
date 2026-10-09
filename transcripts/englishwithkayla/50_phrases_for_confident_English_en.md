@@ -1,16 +1,3 @@
-# 50 phrases for confident English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FGmAkHZlqf8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FGmAkHZlqf8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:43:22 |
-
----
-
 are you ready to learn how to speak confidently in English and show others
 
 that you are confident in yourself in

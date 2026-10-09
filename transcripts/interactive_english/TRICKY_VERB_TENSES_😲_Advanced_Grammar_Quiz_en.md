@@ -1,16 +1,3 @@
-# TRICKY VERB TENSES  😲 Advanced Grammar Quiz
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TFNi5N48nEo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TFNi5N48nEo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:15:40 |
-
----
-
 hey everyone my name is wes this is
 
 interactive english the channel's all about trying to help you practice and improve your english skills and today we're going to be talking about well english grammar i

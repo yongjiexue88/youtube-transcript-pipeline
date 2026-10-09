@@ -1,16 +1,3 @@
-# Criminal Mischief Charges In Texas? Learn How To Win Your Case! (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XpE_VWseMHU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XpE_VWseMHU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 15:56:30 |
-
----
-
 criminal mischief have you been arrested for criminal mischief what is it is there a way to defend it can you get your criminal mischief case
 
 dismissed hi I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about the crime of criminal mischief by the way if you wait around to the end of this video I'll also give you a free ebook what to do if you have been charged with a crime in Texas now maybe

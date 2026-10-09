@@ -1,16 +1,3 @@
-# Use this English phrase when you are successful!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `H73FqIAq_OI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=H73FqIAq_OI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:09:00 |
-
----
-
 this is one of those english phrases that you can use in your daily conversations it's really common for a
 
 native speaker to say in english when

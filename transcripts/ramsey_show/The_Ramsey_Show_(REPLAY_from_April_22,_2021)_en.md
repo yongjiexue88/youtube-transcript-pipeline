@@ -1,16 +1,3 @@
-# The Ramsey Show (REPLAY from April 22, 2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ndYf6uJ-yX8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ndYf6uJ-yX8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:28:31 |
-
----
-
 [Music]
 
 this is the ramsey show you can be intentional

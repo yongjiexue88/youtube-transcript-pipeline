@@ -1,16 +1,3 @@
-# 年轻人也会得肾病？肾透支的真相，比“雄风不再”更可怕【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fHGE9KePsMI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fHGE9KePsMI) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:30:06 |
-
----
-
 这是你的尿一切正常的话它应该呈现出如柠檬水一般的淡黄色微熏 清澈透明但如果你的尿像啤酒或者像可乐 茶水
 
 别笑这有可能是肾病的信号

@@ -1,16 +1,3 @@
-# There's No Financial Progress Without A Plan | August 11, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NF1bEFo8wQA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NF1bEFo8wQA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:12:51 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

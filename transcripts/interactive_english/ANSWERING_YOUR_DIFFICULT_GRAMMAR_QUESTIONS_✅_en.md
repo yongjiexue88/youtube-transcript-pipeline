@@ -1,16 +1,3 @@
-# ANSWERING YOUR DIFFICULT GRAMMAR QUESTIONS ✅
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HJjvPXO1wNU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HJjvPXO1wNU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:38:34 |
-
----
-
 all right hello hello hello what's up
 
 everyone my name is Wes this is

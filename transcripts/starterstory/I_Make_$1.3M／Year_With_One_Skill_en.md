@@ -1,16 +1,3 @@
-# I Make $1.3M/Year With One Skill
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dXKzST0FE-A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dXKzST0FE-A) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:34:02 |
-
----
-
 this guy makes $1.3 million a year with
 
 a business model that's going to change the world the product eyes service he

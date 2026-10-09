@@ -1,16 +1,3 @@
-# Different Ways to Say "Yes" & "No" | Useful English Expressions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FWg3SAacJQU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FWg3SAacJQU) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:41:59 |
-
----
-
 Want to have a fun listen today?
 
 Don't answer with "Yes" or "No." Use these words instead.

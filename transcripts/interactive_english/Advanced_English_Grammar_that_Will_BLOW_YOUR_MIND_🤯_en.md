@@ -1,16 +1,3 @@
-# Advanced English Grammar that Will BLOW YOUR MIND 🤯
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EzCYag46_XY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EzCYag46_XY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:37:33 |
-
----
-
 I'm going to teach you some grammar that will blow your mind. It's confusing,
 
 it's tricky, and I'm going to try to clear it all up for you. And if you are someone who enjoys fine-tuning your fluency skills and learning about grammar, please subscribe, turn on notifications. That way I can become your teacher. My name is Wes, the channel is Interactive English. It is all about helping you reach your fluency goals. Let's go ahead and jump into it.

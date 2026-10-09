@@ -1,16 +1,3 @@
-# Non Disclosure in Texas: 5 Tips To Clean Up Your Criminal Record (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YH7PnXvRuCA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YH7PnXvRuCA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 20:02:48 |
-
----
-
 hello everyone welcome to the Hampton Law Firm I wanted to take a couple of minutes to talk about the subject what is a non disclosure if you like this
 
 content I encourage you to subscribe to our YouTube channel below and get more great criminal content as it relates to Texas law all right I going to talk today I want to explain to you the ins and outs of what is a non-disclosure and it's important what is it how do you know if you qualify uh maybe you qualify for something else and we're going to jump into

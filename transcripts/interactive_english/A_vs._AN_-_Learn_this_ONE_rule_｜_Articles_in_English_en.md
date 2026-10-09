@@ -1,16 +1,3 @@
-# A vs. AN - Learn this ONE rule | Articles in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UvSWjOttZOs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UvSWjOttZOs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:25:44 |
-
----
-
 today i have a great lesson for you
 
 actually it's an awesome lesson which is

@@ -1,16 +1,3 @@
-# If You ACE This Quiz, Your English is Excellent! 💯
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JmaPX-jyE9o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JmaPX-jyE9o) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:01:06 |
-
----
-
 and ace this quiz, then your English is
 
 excellent. And this is something I I really do believe that if you're able to ace this, then okay, you are well on

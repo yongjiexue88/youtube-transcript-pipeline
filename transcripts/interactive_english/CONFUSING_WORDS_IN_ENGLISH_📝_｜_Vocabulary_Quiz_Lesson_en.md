@@ -1,16 +1,3 @@
-# CONFUSING WORDS IN ENGLISH 📝  | Vocabulary Quiz Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2HhESbmc4VQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2HhESbmc4VQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:21:00 |
-
----
-
 Hey everyone, welcome to today's lesson.
 
 My name is Wes. This channel is called Interactive English and it's really just all about helping you practice and improve your English skills. We try to do a little bit of everything. And if this is your first time, please write to me in the comments. Tell me your name.

@@ -1,16 +1,3 @@
-# Use this phrase when something is broken
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VPwG33hodAI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VPwG33hodAI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:04:17 |
-
----
-
 i was driving the other day and i saw a really interesting billboard with a
 
 great natural english phrase the

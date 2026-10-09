@@ -1,16 +1,3 @@
-# Indecent Exposure In Texas: Learn the Law & Your Criminal Defenses (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_3SKyhce1uw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_3SKyhce1uw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 15:58:57 |
-
----
-
 indecent exposure have you been charged with indecent exposure in Texas can it be beaten how should you prepare your
 
 defense hi I'm Jeff Hampton with the Hampton law firm and I'm want to welcome you here today to our YouTube channel because I want to talk to you about the crime of indecent exposure there's a lot of bad information out there about this crime and people become confused about what it is and what it isn't and quite frankly there are a lot of police officers who are confused about

@@ -1,16 +1,3 @@
-# 25 Important English Idioms in 6 minutes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gdU1sFMI5uo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gdU1sFMI5uo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:57:32 |
-
----
-
 let's learn 25 useful English expressions in six minutes all of these
 
 expressions contain the words out of and we're going to pronounce that T like a fast D or like a rolling R sound out of

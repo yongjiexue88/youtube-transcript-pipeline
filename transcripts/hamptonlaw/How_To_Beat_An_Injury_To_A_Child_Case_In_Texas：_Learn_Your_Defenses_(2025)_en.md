@@ -1,16 +1,3 @@
-# How To Beat An Injury To A Child Case In Texas: Learn Your Defenses (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cqw1pBKxxlw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cqw1pBKxxlw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 15:59:10 |
-
----
-
 have you been arrested for an injury to a child have you been arrested for spanking your
 
 child hi I'm Jeff Hampton with the Hampton law firm and I want to welcome you to our YouTube channel today today I want to talk to you about spanking disciplining your child under Texas criminal law is that a crime should you be charged with injury to a child by the way if you wait around to the end of this video I'll also give you a free ebook what to do if you have been charged with a crime in Texas okay

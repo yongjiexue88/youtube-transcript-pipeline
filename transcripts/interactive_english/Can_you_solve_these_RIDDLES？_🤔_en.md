@@ -1,16 +1,3 @@
-# Can you solve these RIDDLES? 🤔
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7xGW_ZCALlg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7xGW_ZCALlg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:01:22 |
-
----
-
 here are some riddles to test your
 
 mental language skills I'll give you

@@ -1,16 +1,3 @@
-# 校门口的小鸡🐣去哪儿了？中国的蛋鸡🐓产业经历了什么？What has China's egg-laying hen industry gone through?【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8PcKwS8-nk0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8PcKwS8-nk0) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:30:16 |
-
----
-
 你小时候买过学校门口的小鸡吗
 
 有些还是染色的小鸡崽

@@ -1,16 +1,3 @@
-# Techniques to improve your English - Advice from a speaker of 20 languages
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `B-4psNH7dZc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=B-4psNH7dZc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:48:05 |
-
----
-
 hi i'm lisa i believe this video will
 
 inspire you a lot to continue to study english you will listen to my conversation with the famous polyglot a polyglot is a person who

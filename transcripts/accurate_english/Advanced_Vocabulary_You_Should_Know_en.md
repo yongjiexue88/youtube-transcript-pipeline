@@ -1,16 +1,3 @@
-# Advanced Vocabulary You Should Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vqZxNCR6TE8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vqZxNCR6TE8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:39:31 |
-
----
-
 hi I'm Lisa let's learn some Advanced English vocabulary from a recent news
 
 [Music] topic you are an advanced speaker of English so you should be able to understand newspaper articles and magazine articles when you read them in English and you should be able to have conversations about these topics with native speakers but it's not that easy

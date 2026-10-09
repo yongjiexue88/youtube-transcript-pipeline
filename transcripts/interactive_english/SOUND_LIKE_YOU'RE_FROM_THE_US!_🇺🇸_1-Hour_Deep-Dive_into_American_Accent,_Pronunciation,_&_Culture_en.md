@@ -1,16 +1,3 @@
-# SOUND LIKE YOU'RE FROM THE US! 🇺🇸 1-Hour Deep-Dive into American Accent, Pronunciation, & Culture
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rSt_efdPN8Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rSt_efdPN8Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:40:45 |
-
----
-
 We are about to do a deep dive into the American accent. And when I say deep, I mean deep. Of course, I am from the US and I want to share with you what truly makes up the American accent so that you have a better understanding as to why people sound the way they do. And if you are someone who is interested in learning more about accent, pronunciation, even US culture, please
 
 subscribe, turn on notifications, that way I can become your teacher. My name is Wes, the channel is Interactive English. It's all about helping you reach your fluency goals. Let's get the ball rolling by talking about the American accent in general, the standard

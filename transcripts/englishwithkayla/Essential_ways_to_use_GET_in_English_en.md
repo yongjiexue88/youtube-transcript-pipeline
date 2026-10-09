@@ -1,16 +1,3 @@
-# Essential ways to use GET in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FAeajzN_z90` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FAeajzN_z90) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:59:56 |
-
----
-
 one thing i've noticed that my english students struggle with is how to use
 
 this verb get i'll teach you how to make

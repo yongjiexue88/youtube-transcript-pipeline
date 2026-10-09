@@ -1,16 +1,3 @@
-# Part 6 - 10 More Advanced English Words for More Fluent English | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OqsDYc-oStE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OqsDYc-oStE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:05:07 |
-
----
-
 let's learn 10 more advanced English
 
 words so that you can feel more confident about your English and at the

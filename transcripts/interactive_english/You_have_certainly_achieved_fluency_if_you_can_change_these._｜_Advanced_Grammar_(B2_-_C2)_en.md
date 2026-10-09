@@ -1,16 +1,3 @@
-# You have certainly achieved fluency if you can change these. | Advanced Grammar (B2 - C2)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `L6ymIk7ScKo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=L6ymIk7ScKo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:07:16 |
-
----
-
 You are fluent if you can change these.
 
 And I want to just let you know that if you are someone who enjoys developing

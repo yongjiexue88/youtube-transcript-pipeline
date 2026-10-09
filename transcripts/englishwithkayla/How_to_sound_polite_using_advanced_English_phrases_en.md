@@ -1,16 +1,3 @@
-# How to sound polite using advanced English phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NdYoWlt04G4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NdYoWlt04G4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:03:57 |
-
----
-
 in this english lesson we will review 25
 
 important english phrases that you must

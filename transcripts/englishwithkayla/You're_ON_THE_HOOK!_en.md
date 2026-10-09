@@ -1,16 +1,3 @@
-# You're ON THE HOOK!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mwfTbQ-ciCk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mwfTbQ-ciCk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:02:46 |
-
----
-
 this next phrase can be said in two ways
 
 to mean two different things you can tell someone that they are on the hook for something this means that

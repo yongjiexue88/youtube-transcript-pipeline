@@ -1,16 +1,3 @@
-# Use this useful English phrase!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dkUeDmHymMg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dkUeDmHymMg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:54:43 |
-
----
-
 you'll get a ton of views from this english phrase when you say that someone
 
 has to live up to something it means

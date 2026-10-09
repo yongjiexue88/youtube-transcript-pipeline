@@ -1,16 +1,3 @@
-# LAWYER: Is It Worth It To Carry a Gun In Your Car?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1MYeZoEIq_g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1MYeZoEIq_g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:28:36 |
-
----
-
 if you are pulled over for a traffic stop and you happen to be carrying this is a dangerous situation if you are not prepared what should you say what should you do should you tell the cop you are carrying or should you just keep your mouth closed what can you do to make sure you don't get in a standoff with the police so that you can drive away
 
 and be on your way down the road in this video I am covering five tips if you are concealed carrying during a traffic stop and if you wait around till the end of this video we'll actually talk about whether or not concealed carrying with a permit in your vehicle is really worth it tip number one you must know your state laws for carrying during a traffic stop

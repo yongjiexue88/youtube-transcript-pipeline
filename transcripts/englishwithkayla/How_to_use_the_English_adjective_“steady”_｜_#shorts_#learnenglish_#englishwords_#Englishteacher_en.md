@@ -1,16 +1,3 @@
-# How to use the English adjective “steady” | #shorts #learnenglish #englishwords #Englishteacher
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aSEGc9u__go` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aSEGc9u__go) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:29:55 |
-
----
-
 we use the adjective steady in english
 
 in just a few different ways a steady hand means you hold your hand still and you don't move it a steady relationship means it is a

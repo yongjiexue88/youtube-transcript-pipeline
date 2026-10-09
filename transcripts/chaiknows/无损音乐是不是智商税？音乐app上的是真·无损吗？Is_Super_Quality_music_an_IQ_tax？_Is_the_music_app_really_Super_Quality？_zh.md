@@ -1,16 +1,3 @@
-# 无损音乐是不是智商税？音乐app上的是真·无损吗？Is Super Quality music an IQ tax? Is the music app really Super Quality?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-z_RHaJ72zE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-z_RHaJ72zE) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:41:02 |
-
----
-
 自从流量不值钱音乐软件提供的音质是越来越高了
 
 除了传统的有损哦不是标准品质还有无损格式到了今天竟然还有比无损更无损的品质

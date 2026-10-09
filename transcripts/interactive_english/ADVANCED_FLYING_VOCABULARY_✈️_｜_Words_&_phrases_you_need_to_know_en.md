@@ -1,16 +1,3 @@
-# ADVANCED FLYING VOCABULARY  ✈️  | Words & phrases you need to know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MTGvqz4wOAE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MTGvqz4wOAE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:08:01 |
-
----
-
 hello and welcome to today's lesson we
 
 are going to talk about some Advanced

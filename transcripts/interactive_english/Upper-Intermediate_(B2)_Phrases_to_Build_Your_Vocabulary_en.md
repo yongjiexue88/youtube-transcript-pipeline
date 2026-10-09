@@ -1,16 +1,3 @@
-# Upper-Intermediate (B2) Phrases to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Mkxixi-Xi7M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Mkxixi-Xi7M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:14:01 |
-
----
-
 hello and welcome to another lesson in
 
 which I am going to test your vocabulary

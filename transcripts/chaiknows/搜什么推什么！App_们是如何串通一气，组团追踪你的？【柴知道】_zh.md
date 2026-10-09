@@ -1,16 +1,3 @@
-# 搜什么推什么！App 们是如何串通一气，组团追踪你的？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `S9COHBhJJlM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=S9COHBhJJlM) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:44:58 |
-
----
-
 此时此刻 掏出手机在社交 app 上发一条“塞尔达天下第一”的动态半小时后你就能在另一个 app 上看见一堆塞尔达攻略视频和 Switch 广告如果再搜一条“一个人旅游要注意些什么”
 
 下一秒社交 app 就会给你推“同城异性交友”

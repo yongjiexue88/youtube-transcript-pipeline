@@ -1,16 +1,3 @@
-# Intermediate to Advanced Grammar (B1 - C2) + Lesson Notes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `btAQt2SKenk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=btAQt2SKenk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:11:49 |
-
----
-
 hello and welcome to today's lesson I
 
 have well I think this is a fun

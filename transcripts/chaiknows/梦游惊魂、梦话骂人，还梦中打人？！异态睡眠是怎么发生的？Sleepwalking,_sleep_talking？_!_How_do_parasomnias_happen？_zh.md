@@ -1,16 +1,3 @@
-# 梦游惊魂、梦话骂人，还梦中打人？！异态睡眠是怎么发生的？Sleepwalking, sleep talking? ! How do parasomnias happen?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `j2MB2JMd9Vw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=j2MB2JMd9Vw) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:48:20 |
-
----
-
 注意看这个男人叫大壮他在深夜里像行尸走肉一般游荡
 
 打开冰箱门倒光饮料这位暴怒的老人也不简单他睡着睡着就突然坐起来翻身打人至于你自己肯定在夜里说过无穷无尽的梦话

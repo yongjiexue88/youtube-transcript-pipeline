@@ -1,16 +1,3 @@
-# Work up the courage to speak English #shorts #englishstudying
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hb6ZxO91hdA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hb6ZxO91hdA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:18:35 |
-
----
-
 have you ever worked up the courage to record yourself speaking in english
 
 a common english phrase is work up the

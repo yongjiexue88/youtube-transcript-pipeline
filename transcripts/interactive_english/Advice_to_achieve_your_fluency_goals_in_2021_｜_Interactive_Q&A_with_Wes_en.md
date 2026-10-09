@@ -1,16 +1,3 @@
-# Advice to achieve your fluency goals in 2021 | Interactive Q&A with Wes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QMe5Ti5U7oA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QMe5Ti5U7oA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:21:59 |
-
----
-
 hello hello hello hello
 
 hello and welcome to today's lesson

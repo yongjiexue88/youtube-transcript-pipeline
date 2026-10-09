@@ -1,16 +1,3 @@
-# 【ENG SUB】相机镜头为什么这么贵？30元和30000元的镜头有什么区别？What is difference between a 30 yuan and a 30,000 yuan lens?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mhULkSIyp-w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mhULkSIyp-w) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 14:05:38 |
-
----
-
 其实也有又轻、又小还很便宜的相机镜头我们买过一款最大光圈1.4的 50mm定焦镜头只要30多块钱当然 更多的镜头是你我买不起的比如徕卡这款同规格的定焦镜头要三万多块钱购买三块512g 的 iPhone12 Pro Max
 
 凑齐九个镜头高效致贫相机镜头为什么这么贵？

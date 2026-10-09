@@ -1,16 +1,3 @@
-# This App Makes $25,000/Month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HBCwzfFbopE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HBCwzfFbopE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:23:10 |
-
----
-
 I built a simple countdown timer into a 25K per month app. Meet Lucas, a
 
 solopreneur from Germany who built arguably the world's simplest app. In

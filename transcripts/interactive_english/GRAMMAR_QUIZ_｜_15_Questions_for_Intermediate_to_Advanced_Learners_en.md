@@ -1,16 +1,3 @@
-# GRAMMAR QUIZ | 15 Questions for Intermediate to Advanced Learners
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xYQmzafwaFc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xYQmzafwaFc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:07:02 |
-
----
-
 let's just go ahead and start the quiz this is a grammar quiz for beginner to intermediate english learners and i will give you the question and then i will give you a moment to think of the answer and then we will talk about it so here is your first question you have less than um hour to complete this quiz
 
 which article are you going to use a an

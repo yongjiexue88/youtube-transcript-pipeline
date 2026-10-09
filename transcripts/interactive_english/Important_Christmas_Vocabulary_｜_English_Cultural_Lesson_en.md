@@ -1,16 +1,3 @@
-# Important Christmas Vocabulary | English Cultural Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dTRSyhwgrzk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dTRSyhwgrzk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:47:18 |
-
----
-
 hello and welcome welcome to our super
 
 holiday extravaganza listen at least

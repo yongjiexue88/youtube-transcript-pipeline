@@ -1,16 +1,3 @@
-# DWI or DUI - What Is The Difference in Texas? How To Fight Your Case (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QiHUxXyhjk0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QiHUxXyhjk0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:54:34 |
-
----
-
 DUI DWI is there a
 
 difference hi I'm Jeff Hampton with the Hampton Law Firm today I want to talk to you about DWI and DUI is there a

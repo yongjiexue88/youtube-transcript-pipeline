@@ -1,16 +1,3 @@
-# US Election Aftermath (What happens now?) | Reading + Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aYz0utJLS0w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aYz0utJLS0w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:23:26 |
-
----
-
 Hey everyone, welcome to today's lesson.
 
 My name is Wes and this is Interactive English, the channel. It's really it's just all about trying to help you practice and improve your English skills so that you can achieve English fluency.

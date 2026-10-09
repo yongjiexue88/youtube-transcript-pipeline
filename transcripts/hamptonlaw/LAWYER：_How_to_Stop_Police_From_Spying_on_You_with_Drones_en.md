@@ -1,16 +1,3 @@
-# LAWYER: How to Stop Police From Spying on You with Drones
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `q19pCzJEd4c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=q19pCzJEd4c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:29:31 |
-
----
-
 did you know that police might be using drones to spy on you right now and believe it or not some of these drones may even look like real birds today we'll explore number one whether police drones flying above your home is trespassing number two we're going to talk about whether you can take them down if you see them and the number three we're going to talk about
 
 the legality of law enforcement using drones around private property stick around till the end of this video to see what these birdlike drones look look like and to find out where they are currently being used for surveillance police departments all over the country are currently using drones to spy on their residents over 1,400 law enforcement agencies are currently using drone Technologies to interact with their people in fact just a few days ago in Arlington Texas a suburb of Dallas Texas

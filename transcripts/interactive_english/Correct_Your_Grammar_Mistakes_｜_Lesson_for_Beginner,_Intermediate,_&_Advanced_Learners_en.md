@@ -1,16 +1,3 @@
-# Correct Your Grammar Mistakes | Lesson for Beginner, Intermediate, & Advanced Learners
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BBVsrdwuLeE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BBVsrdwuLeE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:26:29 |
-
----
-
 hello and welcome to today's lesson
 
 thank you guys so much for joining me my

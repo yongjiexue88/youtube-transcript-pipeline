@@ -1,16 +1,3 @@
-# 22 English Expressions You SHOULD Know - My Conversation With a Native Speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SrPznQoGH1Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SrPznQoGH1Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:45:43 |
-
----
-
 hi i'm lisa i'd like to teach you some more english expressions that native speakers use all the time let's continue listening to native speakers in los angeles i believe that this is one of the most effective ways for you to improve your english and to reach that true level of fluency that final step of fluency
 
 [Music]

@@ -1,16 +1,3 @@
-# 3 IMPORTANT phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sfUA8RUOJ6M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sfUA8RUOJ6M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:47:23 |
-
----
-
 listen up I have three phrases that will
 
 really help you emphasize an important

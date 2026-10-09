@@ -1,16 +1,3 @@
-# 8 Things Americans don't want you to do
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `i8DQhw5bUsU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=i8DQhw5bUsU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:58:23 |
-
----
-
 you guys it's time to learn about
 
 American culture in this lesson I'll

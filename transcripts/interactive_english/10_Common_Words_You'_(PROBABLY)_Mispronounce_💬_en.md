@@ -1,16 +1,3 @@
-# 10 Common Words You' (PROBABLY) Mispronounce 💬
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RlF5ly41FPY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RlF5ly41FPY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:30:42 |
-
----
-
 Let's talk about 10 words that people often mispronounce. That's coming up.
 
 Hey everyone, my name is Wes. This is Interactive English, which is all about helping you practice and improve your English skills. And today I have a pronunciation lesson for you. I want to teach you 10 words that learners often mispronounce.

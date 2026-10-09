@@ -1,16 +1,3 @@
-# What this phrase really means in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tYA7tL3gYVo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tYA7tL3gYVo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:02:56 |
-
----
-
 this is a useful phrase to know because it's kind of confusing to english learners the phrase is brownie points
 
 so if you get brownie points for

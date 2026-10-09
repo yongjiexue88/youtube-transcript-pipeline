@@ -1,16 +1,3 @@
-# You are DEFINITELY FLUENT if you can change these.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DJg0cWx8yIE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DJg0cWx8yIE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:04:33 |
-
----
-
 If you can change these, then you're
 
 fluent. Now, of course, fluency means a

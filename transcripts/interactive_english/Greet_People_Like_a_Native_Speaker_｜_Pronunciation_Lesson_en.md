@@ -1,16 +1,3 @@
-# Greet People Like a Native Speaker | Pronunciation Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rPwrg1G-52E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rPwrg1G-52E) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:49:46 |
-
----
-
 What's up everyone! How are you doing? That right there is actually today's lesson.
 
 I'm going to show you how to say different greetings just like a native English speaker.

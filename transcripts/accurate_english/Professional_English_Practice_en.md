@@ -1,16 +1,3 @@
-# Professional English Practice
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Sgl8fWShZxw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Sgl8fWShZxw) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-03 07:30:51 |
-
----
-
 in this video you will learn about some common habits to avoid if you would like to sound like
 
 a leader and if you would like to sound confident instead of insecure and maybe you need to break

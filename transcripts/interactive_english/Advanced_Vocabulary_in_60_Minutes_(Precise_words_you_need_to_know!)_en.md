@@ -1,16 +1,3 @@
-# Advanced Vocabulary in 60 Minutes (Precise words you need to know!)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uLN6IdRtDhg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uLN6IdRtDhg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:06:41 |
-
----
-
 Today is all about one thing, building your vocabulary. I'm going to teach you a lot of different words, mostly advanced words, to help you be more precise so that you can say exactly what you want to say. I've taken some of my very best vocabulary lessons and put them right here in this video. So, if you are interested in building your vocabulary, I recommend that you subscribe, turn on notifications, so that you'll learn about future lessons, like future vocabulary lessons, and I can become your teacher.
 
 My name is Wes, and really Interactive English, it's all about trying to help you reach your fluency goals.

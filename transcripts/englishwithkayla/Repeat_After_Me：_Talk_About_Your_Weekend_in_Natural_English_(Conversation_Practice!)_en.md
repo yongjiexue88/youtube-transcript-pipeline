@@ -1,16 +1,3 @@
-# Repeat After Me: Talk About Your Weekend in Natural English (Conversation Practice!)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XM3-SzYrG1g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XM3-SzYrG1g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:36:15 |
-
----
-
 Has anyone ever asked you, "What are you doing this weekend?" and you just froze.
 
 Or maybe you answered the question and you gave a really boring answer like nothing.

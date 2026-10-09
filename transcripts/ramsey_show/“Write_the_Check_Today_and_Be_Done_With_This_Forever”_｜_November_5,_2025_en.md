@@ -1,16 +1,3 @@
-# “Write the Check Today and Be Done With This Forever” | November 5, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Uis33B4KmOA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Uis33B4KmOA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:00:00 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

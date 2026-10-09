@@ -1,16 +1,3 @@
-# 11 Advanced English Expressions from Real Conversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ANGepUU6DYI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ANGepUU6DYI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:33:41 |
-
----
-
 I'm going to throw you a bone.
 
 Wouldn't you just love to be a fly on the wall?

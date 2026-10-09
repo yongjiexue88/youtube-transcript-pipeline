@@ -1,16 +1,3 @@
-# How to Beat a Drug Possession Charge in Texas (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `W-0TEuhSSCk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=W-0TEuhSSCk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:59:17 |
-
----
-
 hello everyone welcome to the Hampton Law Firm today I want to talk to you for a few minutes about drug possession and how you might be able to get your drug possession case dismissed now don't forget to subscribe to our YouTube channel for more gr criminal defense content just like this now in this video here's what my goal is my goal is to explain to you the ins
 
 and outs of drug possession in Texas and what is it exactly that the government must prove Beyond A Reasonable Doubt when they are trying to prove that you possessed

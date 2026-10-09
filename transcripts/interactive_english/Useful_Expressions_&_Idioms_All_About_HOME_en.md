@@ -1,16 +1,3 @@
-# Useful Expressions & Idioms All About HOME
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-3F-BoHMZIQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-3F-BoHMZIQ) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:42:29 |
-
----
-
 Today, we're talking about home expressions and home idioms.
 
 Right now, we're in my hometown for the holidays.

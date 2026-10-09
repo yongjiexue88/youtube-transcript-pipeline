@@ -1,16 +1,3 @@
-# From Zero to $42K/Month in 90 Days with AI
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0T55DRYqeeA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0T55DRYqeeA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:24:38 |
-
----
-
 It took me 14 days to build codeguide.dev and within 90 days we've gone from 0 to 42K per month. This is
 
 CJ, a longtime member of Starter Story.

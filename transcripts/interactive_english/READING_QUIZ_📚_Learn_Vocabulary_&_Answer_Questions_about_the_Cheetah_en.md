@@ -1,16 +1,3 @@
-# READING QUIZ 📚 Learn Vocabulary & Answer Questions about the Cheetah
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nCM4TSq31lk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nCM4TSq31lk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:48:18 |
-
----
-
 would you like to practice and improve your reading skills well I'm gonna help
 
 you do just that [Music]

@@ -1,16 +1,3 @@
-# I Built a $10K/Month App With This One System
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-VlJIgj6gM4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-VlJIgj6gM4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-26 14:01:42 |
-
----
-
 Most people build an app and have no idea it's going to work and then they're shocked when it makes zero dollars. But what if I told you before you build you could predict that it will work?
 
 >> We took the app from 3,000 [music] to 10,000 MRR in less than 8 months.

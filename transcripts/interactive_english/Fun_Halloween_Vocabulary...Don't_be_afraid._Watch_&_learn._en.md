@@ -1,16 +1,3 @@
-# Fun Halloween Vocabulary...Don't be afraid. Watch & learn.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7MiuAFzpUcE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7MiuAFzpUcE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:48:32 |
-
----
-
 and I think we are live hello and
 
 welcome everyone to our live lesson

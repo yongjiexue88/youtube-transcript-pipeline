@@ -1,16 +1,3 @@
-# Amazing Vocabulary Vlog in the Big Apple (New York City)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FWQ20NdK7h0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FWQ20NdK7h0) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:52:00 |
-
----
-
 Now you're in New York...
 
 So a couple of months ago, Ioana and I traveled

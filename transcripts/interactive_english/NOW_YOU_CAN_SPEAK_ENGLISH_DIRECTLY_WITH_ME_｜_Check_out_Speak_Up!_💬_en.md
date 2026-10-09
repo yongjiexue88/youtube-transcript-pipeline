@@ -1,16 +1,3 @@
-# NOW YOU CAN SPEAK ENGLISH DIRECTLY WITH ME | Check out Speak Up! 💬
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `iDwC5pCfx3I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=iDwC5pCfx3I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:21:05 |
-
----
-
 hey everyone my name is wes this is interactive english the channel is just all about trying to help you practice and improve your english and today i want to talk to you about speaking and
 
 specifically how you can speak with me because i i think

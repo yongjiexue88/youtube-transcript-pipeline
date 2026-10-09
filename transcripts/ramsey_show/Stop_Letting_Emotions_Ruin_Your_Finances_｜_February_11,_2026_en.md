@@ -1,16 +1,3 @@
-# Stop Letting Emotions Ruin Your Finances | February 11, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nh1EX4jpBa4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nh1EX4jpBa4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:45:35 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

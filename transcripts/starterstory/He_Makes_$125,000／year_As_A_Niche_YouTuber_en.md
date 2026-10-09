@@ -1,16 +1,3 @@
-# He Makes $125,000/year As A Niche YouTuber
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DZTApvWzMuY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DZTApvWzMuY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:34:38 |
-
----
-
 300 is all Sherman shares made in his
 
 first year on YouTube now he makes a full-time income as a YouTuber living in the most expensive city in the world New

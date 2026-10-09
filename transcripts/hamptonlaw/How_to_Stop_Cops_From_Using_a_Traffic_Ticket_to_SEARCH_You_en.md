@@ -1,16 +1,3 @@
-# How to Stop Cops From Using a Traffic Ticket to SEARCH You
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aZzLpI7pBJE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aZzLpI7pBJE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:28:17 |
-
----
-
 imagine getting a ticket not for speeding not for running a stop sign but simply because a cop didn't like something you said then before you know it the same ticket now becomes the police officer's excuse to pat you down and search you sound legal I'm Jeff Hampton former prosecutor turned the people's lawyer and in today's video I'm going to cover number one how cops try to use citations simple tickets as a way to trap
 
 you into a search and what you can do to stop them and then number two if cops try to get you out of your car doing a routine traffic stop and give you a citation are they allowed to search the inside of your car stick around because knowing your rights in this situation could be the difference between going home free or being caught in a legal nightmare Situation Number One cops write

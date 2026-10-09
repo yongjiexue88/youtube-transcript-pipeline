@@ -1,16 +1,3 @@
-# aisle vs isle | English vocabulary lesson #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uQN3EZ9ElCc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uQN3EZ9ElCc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:09:17 |
-
----
-
 so i'm going to teach you two words that sound the same but are spelled differently listen up the first word is
 
 isle we talk about going down the aisles at a

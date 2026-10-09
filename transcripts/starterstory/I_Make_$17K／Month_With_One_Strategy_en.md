@@ -1,16 +1,3 @@
-# I Make $17K/Month With One Strategy
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4KfFB-dh71Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4KfFB-dh71Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:12:01 |
-
----
-
 I dare you to try this strategy. I promise it'll work. >> This is Ben, and he built an app that just hit $17,000 a month.
 
 >> I saw how big this problem was, so I had to solve it. >> But here's what I love about his story.

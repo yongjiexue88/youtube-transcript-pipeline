@@ -1,16 +1,3 @@
-# 15 minutes of quick English lessons | English Subtitles | English with Kayla
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZSJF062CW4s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZSJF062CW4s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:09:40 |
-
----
-
 five ways to say that you are in trouble
 
 in english pay attention you're screwed

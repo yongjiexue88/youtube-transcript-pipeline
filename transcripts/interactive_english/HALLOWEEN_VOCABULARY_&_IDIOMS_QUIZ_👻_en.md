@@ -1,16 +1,3 @@
-# HALLOWEEN VOCABULARY & IDIOMS QUIZ 👻
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `82Y6QWUvhMA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=82Y6QWUvhMA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:32:19 |
-
----
-
 hey everyone my name is Wes this is interactive
 
 English which is all about helping you

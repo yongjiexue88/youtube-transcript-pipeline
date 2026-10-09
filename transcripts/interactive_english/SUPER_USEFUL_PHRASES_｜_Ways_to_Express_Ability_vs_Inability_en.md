@@ -1,16 +1,3 @@
-# SUPER USEFUL PHRASES | Ways to Express Ability vs Inability
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `42TqcC-srXA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=42TqcC-srXA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:48:41 |
-
----
-
 I am going to teach you many useful
 
 phrases that you can use to talk about

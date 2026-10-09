@@ -1,16 +1,3 @@
-# Fluent English Practice with a Native Speaker - phrasal verbs and idioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZUkU-nEtf9U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZUkU-nEtf9U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:33:45 |
-
----
-
 hi I'm Lisa let's improve your English
 
 fluency I will teach you some common Expressions that native speakers use so that you can sound like a native speaker as well [Music]

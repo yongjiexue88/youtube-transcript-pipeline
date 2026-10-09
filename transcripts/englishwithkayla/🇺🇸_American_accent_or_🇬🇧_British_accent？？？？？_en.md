@@ -1,16 +1,3 @@
-# 🇺🇸 American accent or 🇬🇧 British accent?????
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2BkhUp3Tu44` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2BkhUp3Tu44) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:20:50 |
-
----
-
 do you sound American or British let's
 
 find out say this word are you American

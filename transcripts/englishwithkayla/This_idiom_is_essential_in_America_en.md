@@ -1,16 +1,3 @@
-# This idiom is essential in America
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `783RZkbrGKk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=783RZkbrGKk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:45:53 |
-
----
-
 how can I say that I made something
 
 super easy or routine in my life a super

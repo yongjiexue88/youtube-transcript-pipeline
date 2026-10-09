@@ -1,16 +1,3 @@
-# The Ramsey Show (REPLAY from March 8, 2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Cuw5PXp8b8E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Cuw5PXp8b8E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:29:52 |
-
----
-
 this is the ramsay show [Music] you can be intentional about your character you can have money and a career you are the hero in your story
 
 live from the headquarters of ramsey solutions broadcasting from the dollar car rental studio this is the dave the ramsey show where

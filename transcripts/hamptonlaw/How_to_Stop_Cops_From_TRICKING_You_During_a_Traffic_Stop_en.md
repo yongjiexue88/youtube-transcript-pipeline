@@ -1,16 +1,3 @@
-# How to Stop Cops From TRICKING You During a Traffic Stop
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FiG4jWwh_bI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FiG4jWwh_bI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:23:36 |
-
----
-
 you're driving home after a great night out with friends when suddenly flashing red and blue lights appear in your rearview mirror your heart begins to pound I mean you weren't speeding you weren't swerving why exactly are the cops pulling you over what happens next could be the difference between you driving away or being detained searched
 
 or even arrested I'm Jeff Hampton former prosecutor turned the people's lawyer and today I'm covering five tricks cops

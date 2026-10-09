@@ -1,16 +1,3 @@
-# How to Stop Cops From "Seeing Through Walls" to Spy on Your Home!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZfvmdX631Gc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZfvmdX631Gc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:30:24 |
-
----
-
 I love technology and all the benefits it provides as much as anyone but I was pretty shocked to learn that police have access to technology that allows them to see through walls like Superman and as a result they may be invading your privacy
 
 a new technology allows for the first time both law enforcement military and First Responders to be able to detect people like you and me standing or sitting behind a wall from a distance as far as a football field in this video we will break down how this technology Works how the cops are using it and whether or not it's legal for the cops to use it to potentially invade your privacy

@@ -1,16 +1,3 @@
-# TEST (for non-native speakers) - Advanced English Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FOTI5Hay6zg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FOTI5Hay6zg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:03:40 |
-
----
-
 in this video I will give you an advanced English vocabulary test in the
 
 previous videos I have been teaching you advanced English words and if you have been watching the videos you have learned 100 advanced English words and

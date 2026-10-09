@@ -1,16 +1,3 @@
-# 25 Most Common English Verbs You NEED to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BscXUHD0eNw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BscXUHD0eNw) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:38:00 |
-
----
-
 Okay. Are you read? You sure? Are you guys ready?
 
 I hope so because today we are going to talk to you about the 25 most common verbs in English.

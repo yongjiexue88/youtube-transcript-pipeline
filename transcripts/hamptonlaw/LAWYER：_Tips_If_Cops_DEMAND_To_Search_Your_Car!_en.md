@@ -1,16 +1,3 @@
-# LAWYER: Tips If Cops DEMAND To Search Your Car!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `c6M_JrtOYW4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=c6M_JrtOYW4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:41:13 |
-
----
-
 is it ever okay to give consent for the police to search you or your car in short the answer is no in fact that's part of the reason why I wanted to Pur do this video here today I'm Jeff Hampton with Hampton criminal defense attorneys in the north Texas area and I wanted to respond to several comments that I had I posted a video not long ago entitled are drug dogs really reliable
 
 the shocking truth about your rights during searches and as a resulted that I had a number of comments on that video that I wanted to address in this follow-up video to get into more depth on some of those points one of the questions I received is one of the viewers asked me a question they said Is there a time when I should give consent to search to

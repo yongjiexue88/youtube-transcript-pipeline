@@ -1,16 +1,3 @@
-# Practice English speaking in conversation course for free￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ASrHX-QqzSI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ASrHX-QqzSI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:04:15 |
-
----
-
 hi it's nice to meet you i'll be the
 
 leasing agent today tell me what you are on the hunt for size-wise i'm just looking for a nice one-bedroom apartment my budget is about eleven

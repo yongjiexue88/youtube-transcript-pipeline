@@ -1,16 +1,3 @@
-# Can you call someone this in English?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `N9DCvHUQmM0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=N9DCvHUQmM0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:01:53 |
-
----
-
 you can describe someone or something as
 
 a cash cow if it makes you a lot of

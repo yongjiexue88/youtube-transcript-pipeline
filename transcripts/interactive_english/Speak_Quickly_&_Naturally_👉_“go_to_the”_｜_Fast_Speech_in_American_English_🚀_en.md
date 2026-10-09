@@ -1,16 +1,3 @@
-# Speak Quickly & Naturally 👉 “go to the” | Fast Speech in American English 🚀
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KoY5Q5Px-9Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KoY5Q5Px-9Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:02:20 |
-
----
-
 i want to quickly talk to you about the phrase go to the all right now when i
 
 say go to the you're probably listening

@@ -1,16 +1,3 @@
-# VOCABULARY TO HELP YOU UNDERSTAND THE PANDEMIC 😷
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fy0t-y6m6F0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fy0t-y6m6F0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:28:39 |
-
----
-
 hey everyone welcome to today's lesson
 
 thank you guys so much for joining me

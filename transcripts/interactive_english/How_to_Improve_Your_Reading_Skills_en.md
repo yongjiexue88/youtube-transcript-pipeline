@@ -1,16 +1,3 @@
-# How to Improve Your Reading Skills
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Sq4rysS2Oqs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Sq4rysS2Oqs) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:52:48 |
-
----
-
 Because good reading skills will improve your overall English language skills!
 
 So let me tell you how you can improve your reading!

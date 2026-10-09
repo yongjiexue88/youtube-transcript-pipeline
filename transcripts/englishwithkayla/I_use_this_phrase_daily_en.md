@@ -1,16 +1,3 @@
-# I use this phrase daily
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dCcKV-Rem2c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dCcKV-Rem2c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:49:39 |
-
----
-
 this recently that i use this english phrase almost daily so the phrase is to
 
 put your finger on something you're not

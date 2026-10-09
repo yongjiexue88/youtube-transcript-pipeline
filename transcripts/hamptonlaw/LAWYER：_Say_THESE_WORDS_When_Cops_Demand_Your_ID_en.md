@@ -1,16 +1,3 @@
-# LAWYER: Say THESE WORDS When Cops Demand Your ID
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sB4wCXihRLg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sB4wCXihRLg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:20:23 |
-
----
-
 Imagine you're sitting in your car looking at your phone, minding your own business, when suddenly a police officer walks up to your window, demands to see your ID, all because a passer by claimed you looked suspicious. But wait, you
 
 haven't done anything wrong. You haven't committed a crime. Can the cop actually demand to see your ID just because you look suspicious? I'm Jeff Hampton, the people's lawyer, and in this video, I'm breaking down number one, whether cops can demand your ID and force you out of your car purely because you look suspicious. Number two, the legal standards cops must follow in this situation. And number three, the exact words you can use to stop cops when they profile you and violate your rights, all because they claim you look suspicious.

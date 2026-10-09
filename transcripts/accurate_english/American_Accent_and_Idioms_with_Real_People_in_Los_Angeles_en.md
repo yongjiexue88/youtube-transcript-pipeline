@@ -1,16 +1,3 @@
-# American Accent and Idioms with Real People in Los Angeles
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8fTyQcHykuk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8fTyQcHykuk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:56:17 |
-
----
-
 one of the best ways to learn new expressions is to listen to native speakers having everyday conversations
 
 in this video I will show you a conversation that I had with someone that I met at a car wash in Los Angeles and when I was waiting for my car I saw

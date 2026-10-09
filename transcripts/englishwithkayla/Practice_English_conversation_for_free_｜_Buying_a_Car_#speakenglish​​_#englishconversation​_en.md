@@ -1,16 +1,3 @@
-# Practice English conversation for free | Buying a Car #speakenglish​​ #englishconversation​
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RCsSe85LaKc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RCsSe85LaKc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:09:48 |
-
----
-
 hi friends welcome to today's english
 
 speaking conversation practice

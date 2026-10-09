@@ -1,16 +1,3 @@
-# Learn 17 Idioms and American accent with a native speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4ffZinh-ZHw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4ffZinh-ZHw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:52:59 |
-
----
-
 in this video we will continue the series of me talking to interesting people in Los Angeles we will analyze the way the person is speaking and you will learn many different idiomatic expressions that native speakers use all the time I will also teach you some rules related to the pronunciation of those expressions and some general rules about the American accent and for every expression that you learn I will give you other example sentences that way you
 
 can memorize them and then you can start using them when you're speaking English there's a lot I'm going to teach you in this video let's get started you will

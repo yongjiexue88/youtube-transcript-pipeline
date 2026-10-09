@@ -1,16 +1,3 @@
-# Useful Proverbs to Share WISDOM | Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mfUGE62qZuo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mfUGE62qZuo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:04:17 |
-
----
-
 hey everyone welcome to today's lesson
 
 which i i think is a very fun lesson

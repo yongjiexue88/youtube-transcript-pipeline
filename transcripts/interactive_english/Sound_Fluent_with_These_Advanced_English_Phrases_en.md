@@ -1,16 +1,3 @@
-# Sound Fluent with These Advanced English Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZbuWkRgjizs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZbuWkRgjizs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:36:26 |
-
----
-
 Let's take your vocabulary to the next level, because I want to teach you 12 high-level phrases to help you sound incredibly fluent in both professional and personal conversations. And if you are someone who enjoys building your vocabulary, please subscribe, turn on notifications. That way I can become your teacher. My name is Wes, the channel is Interactive English. It is all about helping you reach your fluency goals. So, let's go ahead and get started with our first phrase, which is to put your thumb on the scale. This means to unfairly influence the outcome
 
 of a situation in order to gain an advantage. Now, to give you a little more nuance, this is often used in a negative context because it implies a

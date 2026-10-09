@@ -1,16 +1,3 @@
-# Agree or disagree? "love is blind" | #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2StcgXOHV7Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2StcgXOHV7Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:23:52 |
-
----
-
 agree or disagree love
 
 is blind in order to agree or disagree

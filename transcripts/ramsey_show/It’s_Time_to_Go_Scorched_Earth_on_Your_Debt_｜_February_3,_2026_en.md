@@ -1,16 +1,3 @@
-# It’s Time to Go Scorched Earth on Your Debt | February 3, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AEbWacyDI4Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AEbWacyDI4Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:46:46 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

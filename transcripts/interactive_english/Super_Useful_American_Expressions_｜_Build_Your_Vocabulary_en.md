@@ -1,16 +1,3 @@
-# Super Useful American Expressions | Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rdZmbSNORKc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rdZmbSNORKc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:13:27 |
-
----
-
 let's talk about some super useful
 
 american expressions they're very common

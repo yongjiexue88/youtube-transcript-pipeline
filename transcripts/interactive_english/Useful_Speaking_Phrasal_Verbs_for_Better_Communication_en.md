@@ -1,16 +1,3 @@
-# Useful Speaking Phrasal Verbs for Better Communication
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_iD3uw_faJc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_iD3uw_faJc) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:36:30 |
-
----
-
 Today I'm going to talk to you about phrasal verbs that have to do with speaking.
 
 That's coming up.

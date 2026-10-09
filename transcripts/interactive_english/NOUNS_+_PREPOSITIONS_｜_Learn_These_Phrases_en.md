@@ -1,16 +1,3 @@
-# NOUNS + PREPOSITIONS | Learn These Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qbPyknd3lkY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qbPyknd3lkY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:27:39 |
-
----
-
 hey everyone welcome to today's lesson
 
 my name is Wes this is interactive English which are channel it's all about helping you practice and improve your English and today is really a true

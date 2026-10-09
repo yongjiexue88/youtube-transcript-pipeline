@@ -1,16 +1,3 @@
-# 9 Tips for Sounding Polite in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jVXKhgkk-9g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jVXKhgkk-9g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:42:54 |
-
----
-
 okay so do you want to know how to use your English to actually sound polite
 
 and show respect in any situation

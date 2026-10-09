@@ -1,16 +1,3 @@
-# My app failed, then I changed one thing, and made $80K
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hYW9YDwHE20` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hYW9YDwHE20) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:19:27 |
-
----
-
 After launching my app and seeing no success, I rebuilt it and it made $80,000 in 6 months. Meet Praneeth, a
 
 builder from India who quit his software engineering job to go all in on building apps. But, after launching the first version of his app, he saw pretty much no success. So, he decided to make a simple pivot that changed everything.

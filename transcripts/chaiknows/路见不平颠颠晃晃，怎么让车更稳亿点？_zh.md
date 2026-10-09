@@ -1,16 +1,3 @@
-# 路见不平颠颠晃晃，怎么让车更稳亿点？
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9a1KZxQnOIU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9a1KZxQnOIU) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:48:55 |
-
----
-
 前方道路颠簸注意减速慢行
 
 一条长路注定有一些时间是颠簸的

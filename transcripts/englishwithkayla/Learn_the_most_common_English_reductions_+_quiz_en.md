@@ -1,16 +1,3 @@
-# Learn the most common English reductions + quiz
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tX75GMdHkj0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tX75GMdHkj0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:56:52 |
-
----
-
 my English students are so surprised
 
 when I tell them about this the reason

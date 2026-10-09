@@ -1,16 +1,3 @@
-# 25 Jobs & Occupations | Vocabulary Lesson (Live-Stream)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eq7ExJKi7zw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eq7ExJKi7zw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:25:19 |
-
----
-
 hey everyone welcome to another interactive english
 
 lesson my name is wes and

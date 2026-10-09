@@ -1,16 +1,3 @@
-# 搜索引擎怎么搜不到信息了？因为互联网正在孤岛化 Why can't search engine find information? Because the internet is silosing
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sSIZux7qtO0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sSIZux7qtO0) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 14:02:03 |
-
----
-
 柴司的每期视频都会在微信公众号上
 
 配上一篇精美的文字稿但你在搜索引擎中却搜不到它们

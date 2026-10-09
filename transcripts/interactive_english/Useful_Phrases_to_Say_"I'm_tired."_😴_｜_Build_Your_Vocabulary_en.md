@@ -1,16 +1,3 @@
-# Useful Phrases to Say "I'm tired." 😴 | Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jcP3KvF9Ivc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jcP3KvF9Ivc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:00:07 |
-
----
-
 today I want to talk to you about a very
 
 common statement in English it's something that people say all the time you've probably even said it and that is

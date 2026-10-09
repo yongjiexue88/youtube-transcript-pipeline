@@ -1,16 +1,3 @@
-# This English phrase isn’t what it seems… 🧐
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xRPZAUrJeXo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xRPZAUrJeXo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:14:45 |
-
----
-
 take this first phrase I like the idea
 
 of it now this phrase it sounds like it

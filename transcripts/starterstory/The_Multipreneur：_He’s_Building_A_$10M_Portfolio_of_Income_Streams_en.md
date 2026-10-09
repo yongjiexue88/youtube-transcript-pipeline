@@ -1,16 +1,3 @@
-# The Multipreneur: He’s Building A $10M Portfolio of Income Streams
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nzVcbrLl9VU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nzVcbrLl9VU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:32:28 |
-
----
-
 this is Alex a guy who started a newsletter in his dorm room and then sold it for Millions but after selling that business he felt lost and spent months trying to figure out what idea he would pursue next it basically took me 12 months of doing every cliche thing
 
 that an entrepreneur does when they're looking for meaning this year he found a new opportunity a new identity to become a multipreneur the goal to launch a bunch of different tiny businesses and then CEOs to run them over the next 5 to

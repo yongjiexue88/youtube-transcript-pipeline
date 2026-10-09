@@ -1,16 +1,3 @@
-# three common time phrases in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VHcX4_5egTk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VHcX4_5egTk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:02:26 |
-
----
-
 i find in my own english vocabulary as a
 
 native speaker i won't just say we don't

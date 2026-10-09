@@ -1,16 +1,3 @@
-# 25 Most Common Adjectives You NEED to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Me2WXc_BGD8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Me2WXc_BGD8) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:36:06 |
-
----
-
 So today, we have a really fun lesson for you.
 
 We are talking about the 25 most common adjectives in English.

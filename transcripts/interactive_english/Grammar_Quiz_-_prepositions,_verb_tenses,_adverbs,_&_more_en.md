@@ -1,16 +1,3 @@
-# Grammar Quiz - prepositions, verb tenses, adverbs, & more
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FvnOdQ6MmcY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FvnOdQ6MmcY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:00:52 |
-
----
-
 this is a comprehensive grammar quiz and
 
 if you enjoy practicing and improving

@@ -1,16 +1,3 @@
-# 4 Ways To Defeat A Juvenile Assault Charge In Texas (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dJpFyBmDND8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dJpFyBmDND8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:01:10 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm today I wanted to jump on this video real quick and go over uh a subject that's brought up to me quite frequently about juvenile crimes specifically what if my child was involved in some sort of assault situation at school what kind of options do I have does that they're going to actually be charged with a crime and is
 
 this something that has to remain on my child's record and thanks for joining us if you wait till the end of this video I will also give you a free ebook what to do if you've been charged with a crime in Texas all right so let's jump right into this maybe your child was at school

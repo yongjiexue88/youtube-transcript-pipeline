@@ -1,16 +1,3 @@
-# 玩了 1 个月，为什么我对 AI 耳机拔草了？【柴知道 | 柴司新玩具】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JiTmAzVPXio` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JiTmAzVPXio) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:35:09 |
-
----
-
 这不是广告也不是别的科技博主都收到了的样机而是我自费自费 1199 元买到的  OlaFriend AI耳机
 
 AI 在哪里呢注意看豆包豆包普通的蓝牙运动耳机要多少钱

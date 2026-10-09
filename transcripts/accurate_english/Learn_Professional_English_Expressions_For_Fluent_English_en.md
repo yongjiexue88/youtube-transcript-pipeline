@@ -1,16 +1,3 @@
-# Learn Professional English Expressions For Fluent English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Mk9_hOaYuRU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Mk9_hOaYuRU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:48:59 |
-
----
-
 hi i'm lisa let's learn some professional words and expressions that native speakers use [Music]
 
 one of the main ways that you can recognize a native speaker compared to a non-native speaker is the expressions they use generally native speakers use so many of

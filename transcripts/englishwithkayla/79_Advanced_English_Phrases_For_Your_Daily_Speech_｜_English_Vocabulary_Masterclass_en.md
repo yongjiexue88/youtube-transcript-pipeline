@@ -1,16 +1,3 @@
-# 79 Advanced English Phrases For Your Daily Speech | English Vocabulary Masterclass
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Os62Tpm_EF4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Os62Tpm_EF4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:34:26 |
-
----
-
 This first phrase, it adds excitement to your everyday English. You'll hear this phrase in television shows and in movies because it's kind of dramatic. It adds excitement again. But you can actually use it in your everyday life as well. The phrase is it's go time. This phrase mean it's it's time to start something. But we use this one is something serious or something we've been planning for for a long time.
 
 For instance, maybe if you are in a theater production, you know, you're about to put on a play or a musical and it's time to begin, you say it's go time. This means get excited. It's time to go. Or if you are preparing for a presentation, you say, "Okay, it's go time in 5 minutes." This is a fun way to say it's time to begin. All right, it's go time. It's go time.

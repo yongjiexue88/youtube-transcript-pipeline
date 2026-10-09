@@ -1,16 +1,3 @@
-# WAYS TO SAY "I'M SICK" 🤒  | Learn these Super Useful Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6zatfYBY-kU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6zatfYBY-kU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:11:31 |
-
----
-
 oh god
 
 i'm not really that sick that was just

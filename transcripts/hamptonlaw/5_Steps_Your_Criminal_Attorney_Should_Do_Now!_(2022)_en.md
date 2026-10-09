@@ -1,16 +1,3 @@
-# 5 Steps Your Criminal Attorney Should Do Now! (2022)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `omH4T-7X0Zs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=omH4T-7X0Zs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:56:30 |
-
----
-
 you've hired a criminal attorney what should your criminal attorney be doing for
 
 you today first all I'm Jeff Hampton with the Hampton Law Firm today I want to talk to you about five steps your criminal defense attorney should be doing for you right now by the way if you wait around to the end of this video I'll also give you a free ebook what to do if you've been charged with a Prime in Texas and if you are in the north Texas area I'd be happy to provide you a

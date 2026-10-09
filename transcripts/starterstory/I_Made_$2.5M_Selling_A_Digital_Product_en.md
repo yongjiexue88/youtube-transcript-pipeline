@@ -1,16 +1,3 @@
-# I Made $2.5M Selling A Digital Product
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OKl0C3zg0LU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OKl0C3zg0LU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:30:24 |
-
----
-
 this guy made over $2.5 million selling
 
 digital products and the crazy part is he creates them using a free platform notion I flew out to Denver Colorado to ask him more about these products why they sell like hot cakes and the simple launch strategy that created a million-dollar business essentially overnight I had made a template for myself launched it and I think we did

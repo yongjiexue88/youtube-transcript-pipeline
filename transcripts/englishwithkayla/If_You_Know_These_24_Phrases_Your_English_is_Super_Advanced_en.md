@@ -1,16 +1,3 @@
-# If You Know These 24 Phrases Your English is Super Advanced
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mb_KeeFAfY4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mb_KeeFAfY4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:30:52 |
-
----
-
 Are you looking to add to your English vocabulary, so you can sound like a master in English? Well, in today's lesson, I have 24 phrases for you. And if you already know all of these phrases, your English is definitely super advanced, but I'm guessing you might not know all of them. So, make sure to study today's lesson to expand your vocabulary to talk about things in a natural way, just like a native speaker would.
 
 In today's lesson, I'll teach you the natural phrases. And if you want to go further in the lesson and have me be your teacher, make sure to visit englishwithkayla.com or the link below, where you can join my membership and be my student there.

@@ -1,16 +1,3 @@
-# Top English Jokes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `P6eHmp-fH4M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=P6eHmp-fH4M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:56:45 |
-
----
-
 do you want to become fluent in English so that you can be in conversation with
 
 an American and understand all of the

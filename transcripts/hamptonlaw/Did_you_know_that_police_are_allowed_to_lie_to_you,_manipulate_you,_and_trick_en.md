@@ -1,16 +1,3 @@
-# Did you know that police are allowed to lie to you, manipulate you, and trick
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hWmi04Msc0o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hWmi04Msc0o) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:12:25 |
-
----
-
 Did you know that police are allowed to lie to you, manipulate you, and trick you during an investigation, even if you've done nothing wrong? In the United States, it's not just permitted, it's actually standard practice. From street stops to interrogation rooms, police are legally allowed to use deception to get what they want. Your words, your cooperation, your consent, and yes,
 
 sometimes, a confession to a crime you didn't commit. But what if you knew their playbook? What if you could see 10 steps ahead and already knew what was coming? I'm Jeff Hampton, the people's lawyer, and in this video, we're going to cover the deeply manipulative tactics that cops are allowed to use against you and exactly how you can prepare yourself

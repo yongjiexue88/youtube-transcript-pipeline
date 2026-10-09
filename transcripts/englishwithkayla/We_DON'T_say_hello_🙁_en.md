@@ -1,16 +1,3 @@
-# We DON'T say hello 🙁
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Bo3i6LyShIU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Bo3i6LyShIU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:37:11 |
-
----
-
 did you guys know that Americans say
 
 this instead of hello sometimes when

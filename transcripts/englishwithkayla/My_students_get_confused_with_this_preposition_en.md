@@ -1,16 +1,3 @@
-# My students get confused with this preposition
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uAFslGOU3lI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uAFslGOU3lI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:49:30 |
-
----
-
 i've noticed that a lot of my students confuse when to say to and when to say
 
 four so i'm going to teach you the tricks of when you need to use for when

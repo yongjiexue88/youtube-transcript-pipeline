@@ -1,16 +1,3 @@
-# LAWYER: Say THESE WORDS If a Cop “Smells Drugs”
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0fBwAU7410k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0fBwAU7410k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:36:54 |
-
----
-
 how to avoid being arrested in a drug investigation I want to talk for a few minutes about drug investigations and they can really range anywhere from simple possession like possession of marijuana all the way up to uh delivery
 
 and manufacturing of drugs which literally can hold up to a first-degree felony life in prison so I think it's important to understand some of the concepts and some of the things that the police are looking for in order to establish probable cause to arrest you for a drug offense let's start with the most basic one the one where most people will find themselves in a situation if they're hanging around other people

@@ -1,16 +1,3 @@
-# Pronounce the 50 US States Just Like an American 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cWy0b2txvVo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cWy0b2txvVo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:20:19 |
-
----
-
 I think many of you out there may be familiar with the different states in the US but do you know how to pronounce them all correctly that's coming up
 
 [Music]

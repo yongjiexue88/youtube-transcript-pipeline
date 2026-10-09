@@ -1,16 +1,3 @@
-# LAWYER EXPLAINS: How to FIGHT Search Warrants
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-L3ygch8M40` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-L3ygch8M40) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:38:05 |
-
----
-
 hey everybody Jeff Hampton with Hampton criminal defense attorneys what do cops and lawyers know about search warrants that you don't listen I want to give you just a quick primer walk you through from start to finish some important information to know about search warrants in case you are a loved one find yourself on the wrong end of an officer showing up trying to execute a search warrant now look
 
 we all know that fourth the Fourth Amendment of the United States Constitution is designed to provide protection against unreasonable search and seizures just because police show up at your house claiming or maybe your private property or your business claiming they have a search warrant does that mean they can just do whatever they want let's examine that first do the police let's examine this first question here do

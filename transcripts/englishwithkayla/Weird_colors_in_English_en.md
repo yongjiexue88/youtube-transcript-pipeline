@@ -1,16 +1,3 @@
-# Weird colors in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `V9KKoZlZad4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=V9KKoZlZad4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:42:46 |
-
----
-
 this is not called Tan in English do you
 
 know the color name it's beige this one it's not green we call it

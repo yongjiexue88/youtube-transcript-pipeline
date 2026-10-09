@@ -1,16 +1,3 @@
-# Can Trump’s Plan Clean Up America’s Financial Mess?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UD0ZOogTW5w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UD0ZOogTW5w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:18:31 |
-
----
-
 [Music]
 
 this inflation thing is a big deal so in the first 90 days The Strokes that you

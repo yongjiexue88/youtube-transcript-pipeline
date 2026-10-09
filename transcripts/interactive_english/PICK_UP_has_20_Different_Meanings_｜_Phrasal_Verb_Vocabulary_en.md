@@ -1,16 +1,3 @@
-# PICK UP has 20 Different Meanings | Phrasal Verb Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JZKmEbxTmiY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JZKmEbxTmiY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:29:39 |
-
----
-
 today I'm gonna talk to you about one phrasal verb with 20 different meanings
 
 and that phrasal verb is pick up

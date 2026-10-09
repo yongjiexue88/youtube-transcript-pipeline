@@ -1,16 +1,3 @@
-# Learn English vocabulary watching TikTok with an American teacher
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `flGLUyW49NE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=flGLUyW49NE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:03:48 |
-
----
-
 hi friends welcome back to english with kayla today's english lesson will teach you some really interesting english phrases and we're going to be learning these english phrases not from a textbook not even really from me but we're going to be watching some of the most popular tick-tockers on the internet and will be breaking down their english so that you can learn english in a really fun way let's get started this first creator is one of my favorites on tick tock her tik tok name is jeannie weeney her real name is
 
 sandra jeannie quan i believe she's actually canadian and she's been a flight attendant she makes lots of interesting tick tocks about her experiences as a flight attendant this is someone who works on an airplane serving the drinks and keeping the passengers safe and she has some really really funny and interesting stories so let's watch one of her tech talks and i'll be stopping the stories that she tells

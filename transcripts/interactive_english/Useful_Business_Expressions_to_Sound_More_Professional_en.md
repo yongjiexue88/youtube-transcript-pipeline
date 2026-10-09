@@ -1,16 +1,3 @@
-# Useful Business Expressions to Sound More Professional
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EXY48QcBOvI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EXY48QcBOvI) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:33:49 |
-
----
-
 - Today, I'm gonna talk to you about some business expressions that we use all the time.
 
 That's coming up.

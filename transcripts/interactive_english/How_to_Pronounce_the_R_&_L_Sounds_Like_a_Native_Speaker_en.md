@@ -1,16 +1,3 @@
-# How to Pronounce the R & L Sounds Like a Native Speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_WMvPDYqnSk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_WMvPDYqnSk) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:51:15 |
-
----
-
 Let's get ready to rumble!
 
 Today, we're going to talk to you about how to make the R and L sounds.

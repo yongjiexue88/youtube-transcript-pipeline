@@ -1,16 +1,3 @@
-# 用ChatGPT写科普稿是一种怎样的（痛苦）体验？【柴司ChaiCo】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zjfPidJPHX4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zjfPidJPHX4) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:45:56 |
-
----
-
 我们之前做了一期视频介绍 ChatGPT 的原理之后网上的很多教程都把 ChatGPT 说得神乎其神但如果观察一下目前大部分内容都还停留在"惊叹"
 
 或者"玩具"层面真正借助 ChatGPT 或者其他 AI 大模型做严肃创作的

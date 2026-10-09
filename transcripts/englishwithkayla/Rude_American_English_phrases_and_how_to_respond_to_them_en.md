@@ -1,16 +1,3 @@
-# Rude American English phrases and how to respond to them
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ejXFcY08B-E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ejXFcY08B-E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:58:53 |
-
----
-
 are Americans ruin well we've been known
 
 to be rude maybe you've been called Sherlock or you've been told to touch grass and in today's English lesson I'm

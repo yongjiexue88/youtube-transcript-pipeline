@@ -1,16 +1,3 @@
-# 30+ Ways to Use the Word ASS | American Expressions 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7mJibYFFPSo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7mJibYFFPSo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:27:09 |
-
----
-
 hey everyone today I just want to talk
 
 to you about one word and that word is

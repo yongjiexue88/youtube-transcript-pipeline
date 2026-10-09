@@ -1,16 +1,3 @@
-# Phrases for Casual Conversation (improve your speaking fluency)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sRw8Q64FrD8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sRw8Q64FrD8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:08:12 |
-
----
-
 welcome to today's lesson in which we
 
 are going to talk about phrases for

@@ -1,16 +1,3 @@
-# Advanced Adjectives to Impress Your Friends | Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vgZCPm4Acos` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vgZCPm4Acos) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:10:23 |
-
----
-
 let's talk about some advanced adjectives that you can use to impress
 
 your friends like this one so called so

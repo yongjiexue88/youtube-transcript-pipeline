@@ -1,16 +1,3 @@
-# The Ramsey Show (REPLAY from February 25, 2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zIJOg4rOtkU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zIJOg4rOtkU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:30:27 |
-
----
-
 this is the ramsay show [Music] you can be intentional about your character you can have money and a career you are the hero in your story
 
 live from the headquarters of ramsey solutions broadcasting from the dollar car rental studios it's the ramsey show where debt is dumb cash is king and the paid off home mortgage has taken the place of the bmw as the status symbol of

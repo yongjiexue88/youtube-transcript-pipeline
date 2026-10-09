@@ -1,16 +1,3 @@
-# “体检十年”查不出癌症，癌症筛查还值得做吗？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ta4utFoTs3M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ta4utFoTs3M) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:31:03 |
-
----
-
 你做过癌症筛查吗体检的癌症筛查值得做吗
 
 我们查了北京的几家体检机构和医院

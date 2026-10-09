@@ -1,16 +1,3 @@
-# Useful English Expressions w/ BABY 👶 #learnenglish #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZkECAPoqXk0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZkECAPoqXk0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:57:35 |
-
----
-
 English Expressions that are all related
 
 to babies to cry like a baby if you say

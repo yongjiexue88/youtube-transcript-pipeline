@@ -1,16 +1,3 @@
-# Learn Advanced English Vocabulary from the New York Times Newspaper
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eCptiecm0ZM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eCptiecm0ZM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:38:04 |
-
----
-
 hi I'm Lisa let's learn some Advanced
 
 English words from the newspaper [Music]

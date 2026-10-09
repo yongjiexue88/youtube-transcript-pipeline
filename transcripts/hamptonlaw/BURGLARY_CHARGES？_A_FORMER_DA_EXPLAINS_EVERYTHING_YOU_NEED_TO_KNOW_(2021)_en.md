@@ -1,16 +1,3 @@
-# BURGLARY CHARGES? A FORMER DA EXPLAINS EVERYTHING YOU NEED TO KNOW (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XQD99JLb2VM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XQD99JLb2VM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 17:19:37 |
-
----
-
 [Music] hello everyone I'm Jeff Hampton with the Hampton Law Firm today I want to talk to you about burglary charges in Texas what is the law what are some defenses to consider and what should you do if you're facing a charge of burglary in Texas by the way if you wait around to the end of this video I'll also send you a free ebook what to do if you are charged with a crime in Texas and I if
 
 you enjoy what you hear today I encourage you to subscribe to our YouTube channel we've got many other videos that cover everything related to criminal defense for every question you might have okay so today let's talk a little bit about Texas burglary charges now there's different types of burglary that can qualify as a misdemeanor for instance burglary of a motor vehicle or B or burglary of a coin operated machine

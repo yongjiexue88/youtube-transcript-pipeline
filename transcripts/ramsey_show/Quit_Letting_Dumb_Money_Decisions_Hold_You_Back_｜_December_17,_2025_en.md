@@ -1,16 +1,3 @@
-# Quit Letting Dumb Money Decisions Hold You Back | December 17, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wNTSKRdUdqw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wNTSKRdUdqw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:53:53 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

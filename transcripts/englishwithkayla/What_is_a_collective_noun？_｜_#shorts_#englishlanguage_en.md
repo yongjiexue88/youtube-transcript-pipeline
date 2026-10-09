@@ -1,16 +1,3 @@
-# What is a collective noun? | #shorts #englishlanguage
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Hqwxu56q3gA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Hqwxu56q3gA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:25:05 |
-
----
-
 collective nouns are considered to be
 
 singular nouns but they refer to a group

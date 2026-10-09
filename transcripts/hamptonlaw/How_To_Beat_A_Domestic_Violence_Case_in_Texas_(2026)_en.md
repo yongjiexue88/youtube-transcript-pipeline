@@ -1,16 +1,3 @@
-# How To Beat A Domestic Violence Case in Texas (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `goXxD10Irz4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=goXxD10Irz4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:39:36 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to go over all the
 
 defenses that we can think of in the time frame we H we have here today related to domestic violence

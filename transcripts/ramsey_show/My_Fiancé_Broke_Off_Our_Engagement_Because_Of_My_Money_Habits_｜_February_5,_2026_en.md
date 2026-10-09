@@ -1,16 +1,3 @@
-# My Fiancé Broke Off Our Engagement Because Of My Money Habits | February 5, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hLmbqW7dPio` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hLmbqW7dPio) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:46:22 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

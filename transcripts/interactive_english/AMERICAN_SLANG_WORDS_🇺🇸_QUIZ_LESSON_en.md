@@ -1,16 +1,3 @@
-# AMERICAN SLANG WORDS 🇺🇸  QUIZ LESSON
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FdocSXPK07E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FdocSXPK07E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:32:55 |
-
----
-
 Hey everyone, my name is Wes. This is
 
 Interactive English, which is all about helping you guys practice and improve your English skills. And today we're going to do another practice lesson.

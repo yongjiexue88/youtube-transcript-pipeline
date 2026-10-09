@@ -1,16 +1,3 @@
-# Help me "pick out" my dress | #shorts #englishteacher
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8asABVU8ECo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8asABVU8ECo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:18:10 |
-
----
-
 i just finished my workout for the day and i was wondering if you could help me pick out my outfit out your favorite yellow or tan
 
 if you didn't guess it already the phrasal verb for today is pick

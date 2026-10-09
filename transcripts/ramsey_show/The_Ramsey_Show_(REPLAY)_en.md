@@ -1,16 +1,3 @@
-# The Ramsey Show (REPLAY)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `77V-iA57yZA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=77V-iA57yZA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:28:03 |
-
----
-
 this is the ramsay show [Music] you can be intentional about your character you can have money and a career you are the hero in your story
 
 [Music]

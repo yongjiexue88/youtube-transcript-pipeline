@@ -1,16 +1,3 @@
-# 整牙能拯救你的脸吗？能不能整牙如换头？Can Teeth Reshaping Save Your Looks? Can teeth reshaping be like facelifting?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9RZmdt7YAL4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9RZmdt7YAL4) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:44:19 |
-
----
-
 你的脸好看吗你对着镜子照照心里就有数了你的牙齐吗不用照了不齐根据正畸学鼻祖的定义理想的咬合关系应该满足这些条件长这样你可以检查下自己的牙齿是否满足这些条件不是的话也没关系因为放眼全人类能拥有这种完美咬合关系的人
 
 连 10% 都不到“不整齐”才是常态因为跟老祖宗们相比我们平时吃的食物又精细又松软

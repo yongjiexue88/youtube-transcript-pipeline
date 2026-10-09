@@ -1,16 +1,3 @@
-# Walk the Path to Achieving English Fluency 💬
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OkUdXwHbPMA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OkUdXwHbPMA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:22:09 |
-
----
-
 so i want to talk to you about your english learning journey from the very beginning when you first learn how to say things like hello all
 
 the way up to the point where you well maybe you

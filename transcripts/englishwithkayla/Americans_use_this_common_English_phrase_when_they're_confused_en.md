@@ -1,16 +1,3 @@
-# Americans use this common English phrase when they're confused
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JqxdaUg3SvA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JqxdaUg3SvA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:04:55 |
-
----
-
 okay one two three four five
 
 five ah i lost track today's english

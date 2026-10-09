@@ -1,16 +1,3 @@
-# 3 phrases for expensive 💰🤑
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KsGIm9iVVOk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KsGIm9iVVOk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:22:52 |
-
----
-
 here are three words and phrases in
 
 English that mean that something is expensive take notes because these are

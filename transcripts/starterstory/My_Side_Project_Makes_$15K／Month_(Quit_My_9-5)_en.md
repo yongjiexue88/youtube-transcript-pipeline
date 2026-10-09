@@ -1,16 +1,3 @@
-# My Side Project Makes $15K/Month (Quit My 9-5)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZGwQoRw7mh8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZGwQoRw7mh8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:22:26 |
-
----
-
 My name is Ben and I turned my side project into a full-time job.
 
 >> This is Ben, a regular dude in a regular 9 to-5 who always wanted to start his own business. He was always starting different side projects, but nothing really worked until one day he changed his entire approach.

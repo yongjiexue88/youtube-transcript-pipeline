@@ -1,16 +1,3 @@
-# English Pronunciation Tips for Russian and German Speakers | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IW4g5Jl3wps` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IW4g5Jl3wps) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:07:10 |
-
----
-
 in this video I would like to help you fix a common pronunciation mistake that Russian and German speakers make when they're speaking English first I will
 
 show you a short video with my Russian student she will teach you how to fix these common mistakes and how to pronounce the sounds correctly but watch the video until the end because I will come back and I'll teach you one more rule and give you some more opportunities to practice one of the common problems and one that I used to have I was making the end D sound in a

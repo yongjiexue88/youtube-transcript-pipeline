@@ -1,16 +1,3 @@
-# Are these the hardest words to say in English?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `em948XPrrs4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=em948XPrrs4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:28:50 |
-
----
-
 listen up I bet you are not pronouncing
 
 these English words the correct way let

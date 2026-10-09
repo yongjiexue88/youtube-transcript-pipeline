@@ -1,16 +1,3 @@
-# The Underdog: He Turned His Last $4,000 Into $48M
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IuoscQiQQLg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IuoscQiQQLg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:32:56 |
-
----
-
 what's your story [Music] I mean we bootstrapped this thing from day one and we need it to be profitable
 
 we didn't have any money to put in we couldn't afford to lose this is Aaron

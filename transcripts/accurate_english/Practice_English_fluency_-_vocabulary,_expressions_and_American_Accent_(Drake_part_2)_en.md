@@ -1,16 +1,3 @@
-# Practice English fluency - vocabulary, expressions and American Accent (Drake part 2)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Y-tUn27tCbY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Y-tUn27tCbY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:35:09 |
-
----
-
 hi I'm Lisa let's take your English to
 
 the next level the final level of fluency let's practice listening to a native speaker and let's learn the expressions and the vocabulary that he's using so that you can speak the same way [Music]

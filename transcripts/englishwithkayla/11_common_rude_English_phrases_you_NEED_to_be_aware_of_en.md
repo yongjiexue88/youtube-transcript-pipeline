@@ -1,16 +1,3 @@
-# 11 common rude English phrases you NEED to be aware of
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JBcGKKWtb6I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JBcGKKWtb6I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:53:42 |
-
----
-
 do you know when Americans are being
 
 rude to you in this English lesson I'll

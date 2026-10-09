@@ -1,16 +1,3 @@
-# I Found a Business for Sale and Rebuilt It Into $20K/Month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4BsxnGRbF4k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4BsxnGRbF4k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:18:47 |
-
----
-
 The number one question I get is, "How do I come up with a good business idea?" But the truth is, you don't have to. And this video is proof. Meet Adrian, a solo
 
 developer from Austin who had a different approach. I copied a successful app and now it makes me $20,000 a month. >> A year ago, he saw a successful app for sale, but instead of buying it, he rebuilt it himself and now it makes $20,000 a month. >> If something is working, you have a moral obligation to copy it.

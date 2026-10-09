@@ -1,16 +1,3 @@
-# Professional Communication Skills in English - 5 TIPS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vNU8Fu-44Jk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vNU8Fu-44Jk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:43:04 |
-
----
-
 hi i'm lisa in this video you will learn
 
 five important tips that i believe will help you communicate more effectively in a professional environment in english

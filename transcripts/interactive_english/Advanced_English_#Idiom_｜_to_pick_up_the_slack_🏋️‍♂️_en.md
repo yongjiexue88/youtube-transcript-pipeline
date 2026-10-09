@@ -1,16 +1,3 @@
-# Advanced English #Idiom | to pick up the slack 🏋️‍♂️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WdYcIq-Q-uA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WdYcIq-Q-uA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:55:27 |
-
----
-
 to pick up the slack this is a great
 
 idiom when talking about working with a

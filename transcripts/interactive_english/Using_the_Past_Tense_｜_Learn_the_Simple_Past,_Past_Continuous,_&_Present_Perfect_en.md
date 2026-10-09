@@ -1,16 +1,3 @@
-# Using the Past Tense | Learn the Simple Past, Past Continuous, & Present Perfect
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `657u7YiSj5k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=657u7YiSj5k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:37:28 |
-
----
-
 all right what's up everyone my name is
 
 Wes this is interactive English which is the place you want to be because we are all about helping you guys practice and improve your English skills and the way we're going to do that today we have a fun lesson for you because we're going to talk to you about three different verb tenses I'm going to talk to you about the simple past the past Progressive and the past perfect that's right I'm going to talk to you about all three of those verb tenses now I'm not

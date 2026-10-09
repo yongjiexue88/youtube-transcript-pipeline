@@ -1,16 +1,3 @@
-# LAWYER EXPLAINS: 12 Lies the Police Love to Use
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Akwt6BoEsXY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Akwt6BoEsXY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:37:07 |
-
----
-
 when the police go fishing they're going to use whatever bait they can to get you to start talking and lying straight to your face is one of their favorite tricks and it's legal lie number one I
 
 can't help you if you don't talk to me that's absolutely not true here's the reality the more you talk the more there is a chance they're going to interpret whatever you say or manipulate what you say to use against you the more you talk

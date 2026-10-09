@@ -1,16 +1,3 @@
-# It’s Time To Set Boundaries And Start Saying “No!” | December 3, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3iVaJeFB_QA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3iVaJeFB_QA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:56:07 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

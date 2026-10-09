@@ -1,16 +1,3 @@
-# Biting off more than you can chew 🍽️🍴🥢🥣
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sfiZ6LsJsfo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sfiZ6LsJsfo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:22:40 |
-
----
-
 have you ever bit off more than you can
 
 chew this English phrase means have you

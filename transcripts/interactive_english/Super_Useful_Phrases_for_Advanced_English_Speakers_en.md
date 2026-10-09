@@ -1,16 +1,3 @@
-# Super Useful Phrases for Advanced English Speakers
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_Cq_ZTH2SOc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_Cq_ZTH2SOc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:52:22 |
-
----
-
 I just want to give you a heads up because this is not your average
 
 run-of-the-mill lesson I'm going to

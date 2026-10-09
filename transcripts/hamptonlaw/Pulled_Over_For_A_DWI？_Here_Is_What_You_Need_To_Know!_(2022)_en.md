@@ -1,16 +1,3 @@
-# Pulled Over For A DWI? Here Is What You Need To Know! (2022)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VEur4aksrwk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VEur4aksrwk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:55:42 |
-
----
-
 what should you do during a DWI traffic
 
 stop hi I'm Jeff Hampton with the Hampton Law Firm today I'm going to break down what should you do from the

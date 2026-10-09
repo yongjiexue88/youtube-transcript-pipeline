@@ -1,16 +1,3 @@
-# The BEST BOOKS for Beginner, Intermediate, & Advanced Learners 📚
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BgFuII5c1J0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BgFuII5c1J0) |
-| **Language** | Vietnamese (auto-generated) (vi) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:44:32 |
-
----
-
 em muốn sao chưa up and that I think it
 
 is so hard for when you want to improve

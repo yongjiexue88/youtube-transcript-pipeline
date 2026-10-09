@@ -1,16 +1,3 @@
-# How to Use the Word LIKE in English 👍
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OC_EQtPnjig` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OC_EQtPnjig) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:32:42 |
-
----
-
 hey everyone welcome to today's lesson
 
 which is both a grammar and vocabulary

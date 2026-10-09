@@ -1,16 +1,3 @@
-# 178 advanced English Phrases and Idioms for Everyday Conversations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `o4IiputsC64` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=o4IiputsC64) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:46:34 |
-
----
-
 Have you ever had a food that you tried at first and you didn't like it, but the more and more you tried it or you were exposed to it, the more you started to
 
 actually enjoy it or you liked the taste? In English, we call this an acquired taste. I'm sure you're really familiar with the concept. For this concept, I think of sushi because most people in the United States, Americans,

@@ -1,16 +1,3 @@
-# I Built A $1M App In 5 Hours
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `u8sW-NhGfXw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=u8sW-NhGfXw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:30:34 |
-
----
-
 this is Dawson and he built a million
 
 doll Pere crypto app all by himself and

@@ -1,16 +1,3 @@
-# COOKING PHRASAL VERBS 👨‍🍳 Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Qp8iBKtgcrQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Qp8iBKtgcrQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:10:13 |
-
----
-
 today i want to talk to you about phrasal verbs that are all related to
 
 food and cooking because well this is

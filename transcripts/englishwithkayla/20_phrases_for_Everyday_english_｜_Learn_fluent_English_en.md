@@ -1,16 +1,3 @@
-# 20 phrases for Everyday english | Learn fluent English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `G3oeFhg7uz4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=G3oeFhg7uz4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:04:59 |
-
----
-
 hello friends my name's kayla i'm an american english teacher and today i'm going to teach you 20 phrases for everyday life if you're speaking american english let's get started anything goes when there are no rules to
 
 something so there's no rules that you have to follow there's no laws there's no regulations you can just say anything

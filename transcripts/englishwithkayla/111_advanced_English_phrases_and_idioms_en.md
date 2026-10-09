@@ -1,16 +1,3 @@
-# 111 advanced English phrases and idioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `put40144k6s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=put40144k6s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:55:51 |
-
----
-
 so I'm standing here by the stove
 
 because this first idiom is kind of from

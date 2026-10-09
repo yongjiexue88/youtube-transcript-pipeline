@@ -1,16 +1,3 @@
-# 20 Common English Expressions  with a Native Speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `V4tnk9CLs1c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=V4tnk9CLs1c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:43:54 |
-
----
-
 hi i'm lisa this is another video where
 
 i help you sound like a native speaker i

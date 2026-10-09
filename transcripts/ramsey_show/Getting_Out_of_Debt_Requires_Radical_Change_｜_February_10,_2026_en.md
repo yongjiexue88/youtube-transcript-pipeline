@@ -1,16 +1,3 @@
-# Getting Out of Debt Requires Radical Change | February 10, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KdHpo0JJdfY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KdHpo0JJdfY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:45:45 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

@@ -1,16 +1,3 @@
-# You Can’t Drift Into Financial Peace | March 13, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `j0tsWRnRQIs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=j0tsWRnRQIs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:41:10 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

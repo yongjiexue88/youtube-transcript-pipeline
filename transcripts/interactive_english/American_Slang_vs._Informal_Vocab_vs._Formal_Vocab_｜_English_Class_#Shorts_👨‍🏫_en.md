@@ -1,16 +1,3 @@
-# American Slang vs. Informal Vocab vs. Formal Vocab | English Class #Shorts 👨‍🏫
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KRvlJNw6GGg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KRvlJNw6GGg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:59:52 |
-
----
-
 class today we're going to learn how to
 
 say things in a formal way an informal

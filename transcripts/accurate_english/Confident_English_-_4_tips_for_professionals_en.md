@@ -1,16 +1,3 @@
-# Confident English - 4 tips for professionals
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zP3HyDMG4Ek` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zP3HyDMG4Ek) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:06:44 |
-
----
-
 in this video I would like to give you some advice about what you need to do to feel more confident when you're speaking English almost all of the students that
 
 I see in Los Angeles are very very advanced they're fluent in English they're professionals working in the United States or they're actors working in Hollywood but they still often don't

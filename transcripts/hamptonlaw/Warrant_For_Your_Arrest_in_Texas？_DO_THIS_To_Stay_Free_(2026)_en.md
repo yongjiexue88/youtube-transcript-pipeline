@@ -1,16 +1,3 @@
-# Warrant For Your Arrest in Texas? DO THIS To Stay Free (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gIc-XsuLpXk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gIc-XsuLpXk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:55:31 |
-
----
-
 do you have a warrant for your arrest what can you do about it what are some of the steps that you can take to protect
 
 yourself hi I'm Jeff Hampton with the Hampton Law Firm thank you for joining us today on our YouTube channel today I'm going to talk exactly about this issue what if you have a warrant for your arrest what if somebody you found out maybe you got a phone call from a detective maybe a detective came by and put a card at your door maybe you found out you had a warrant for your arrest from someone else maybe your employer or

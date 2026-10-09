@@ -1,16 +1,3 @@
-# Practice Expressions, Vocabulary and Accent with the Newspaper
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Xvrs4vR04Jo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Xvrs4vR04Jo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:35:50 |
-
----
-
 hi I'm Lisa let's learn some Expressions
 
 that native speakers use on a daily basis by looking at real life examples from a recent newspaper article we will also talk about some common grammar mistakes that many of my Advanced students make and of course you will get a chance to practice your accent by repeating after me there's a lot to learn in this video so if you're ready for a challenge let's get started

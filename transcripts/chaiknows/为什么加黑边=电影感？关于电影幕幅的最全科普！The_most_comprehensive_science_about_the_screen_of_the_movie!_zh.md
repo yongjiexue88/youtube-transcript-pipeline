@@ -1,16 +1,3 @@
-# 为什么加黑边=电影感？关于电影幕幅的最全科普！The most comprehensive science about the screen of the movie!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `a6kwJhmA9KI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=a6kwJhmA9KI) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 14:01:51 |
-
----
-
 这是1940年的电影《魂断蓝桥》
 
 费雯丽和罗伯特泰勒饰演的男女主角

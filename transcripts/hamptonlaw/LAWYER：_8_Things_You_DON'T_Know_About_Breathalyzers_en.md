@@ -1,16 +1,3 @@
-# LAWYER: 8 Things You DON'T Know About Breathalyzers
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3zpWtB-m3SM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3zpWtB-m3SM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:37:53 |
-
----
-
 why the breathalyzer test can be a scam
 
 we all know that breathalyzer tests are used in every single Police Department across the country to gather evidence to

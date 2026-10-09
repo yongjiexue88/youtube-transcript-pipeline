@@ -1,16 +1,3 @@
-# How to use the English phrase "with a grain of salt" #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MtPxIaI-hxY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MtPxIaI-hxY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:11:12 |
-
----
-
 if you want to tell someone that they
 
 should be skeptical and not completely

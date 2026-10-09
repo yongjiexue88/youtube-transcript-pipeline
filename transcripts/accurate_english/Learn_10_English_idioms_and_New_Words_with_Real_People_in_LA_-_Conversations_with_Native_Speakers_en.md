@@ -1,16 +1,3 @@
-# Learn 10 English idioms and New Words with Real People in LA - Conversations with Native Speakers
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pw7DjicwukI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pw7DjicwukI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:54:32 |
-
----
-
 in this video we will continue our series of listening to native speakers and how they talk and the expressions they're using I will teach you the meaning of those expressions and then I will give you other example sentences so that you can master those expressions [Music]
 
 you will meet a young man named Michael I went to an exciting event in downtown Los Angeles every year the Los Angeles Times newspaper announces the 101 best

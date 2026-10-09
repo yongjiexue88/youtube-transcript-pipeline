@@ -1,16 +1,3 @@
-# Practice & Improve your English! 👍
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XYhR3oVDgdY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XYhR3oVDgdY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:55:55 |
-
----
-
 [Music]
 
 interactive English is a series of

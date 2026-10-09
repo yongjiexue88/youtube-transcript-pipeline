@@ -1,16 +1,3 @@
-# Learn English Phrasal Verbs with “up”  | Speak Everyday English | Common Phrasal Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aM1N64xs_W8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aM1N64xs_W8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:13:05 |
-
----
-
 you really need to step up your game so
 
 instead of saying they woke up we just say they're woke let's

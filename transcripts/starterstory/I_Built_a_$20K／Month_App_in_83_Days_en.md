@@ -1,16 +1,3 @@
-# I Built a $20K/Month App in 83 Days
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `r4R_Hlw7sbo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=r4R_Hlw7sbo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:10:31 |
-
----
-
 This started as a fun side project, but we turned it into a real business. Meet Brian. He and his girlfriend built a really simple mobile app, and in less than 3 months, they grew it to over $20,000 [music] a month. We set a number and didn't start building until we hit it.
 
 You might think he validated the idea like everyone else, but no. He did something I've never seen before, and it's called [music] the commitment metric. We made sure that people committed to this product before writing a single line of code. So, I brought Brian onto the channel to break it all down for me.

@@ -1,16 +1,3 @@
-# american accent - American T sound - pronunciation of american english | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CdOgNXwCUYE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CdOgNXwCUYE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:13:05 |
-
----
-
 hi it's Lisa moyen again your accent reduction trainer today I'm going to
 
 teach you a valuable tip that's going to make you sound more American it has to do with the pronunciation of the letter T I'm going to say one word two different ways and I want you to ask yourself which one sounds more

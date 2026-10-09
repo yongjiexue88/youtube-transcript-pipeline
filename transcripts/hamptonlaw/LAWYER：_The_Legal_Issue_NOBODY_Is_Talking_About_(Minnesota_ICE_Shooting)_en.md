@@ -1,16 +1,3 @@
-# LAWYER: The Legal Issue NOBODY Is Talking About (Minnesota ICE Shooting)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wXwN_FCANtY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wXwN_FCANtY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:04:04 |
-
----
-
 [screaming] You've seen the footage. ICE agents demanded that she get out of the car.
 
 She then chooses to accelerate the SUV.

@@ -1,16 +1,3 @@
-# How to Use the 1st Conditional | Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1f57PKKwClc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1f57PKKwClc) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:45:13 |
-
----
-
 If you watch this lesson, you will learn how to use the first conditional.
 
 Just like that.

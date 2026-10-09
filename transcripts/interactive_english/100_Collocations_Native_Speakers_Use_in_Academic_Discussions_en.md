@@ -1,16 +1,3 @@
-# 100 Collocations Native Speakers Use in Academic Discussions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jAYhLE6bfk8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jAYhLE6bfk8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:39:08 |
-
----
-
 I want to teach you some powerful and highfrequency academic collocations that you can use in presentations, academic writing, IELTS or TOEFL, even when
 
 you're having a more intellectual conversation. And if you are someone who wants to supercharge your vocabulary, please subscribe, turn on notifications, that way I can become your teacher. My name is Wes. The channel is Interactive English.

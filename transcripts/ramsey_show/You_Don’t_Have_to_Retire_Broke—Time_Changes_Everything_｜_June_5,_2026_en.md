@@ -1,16 +1,3 @@
-# You Don’t Have to Retire Broke—Time Changes Everything | June 5, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NCwqBJLs3v4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NCwqBJLs3v4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:28:45 |
-
----
-
 This is an ad for Better Help. The time to fix your budget is before you're in debt, and the time to deal with stress is before it becomes a crisis. Talking to someone can help you find a path forward. Go to betterhelp.com/ramy
 
 to get 10% off.

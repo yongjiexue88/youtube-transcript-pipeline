@@ -1,16 +1,3 @@
-# Financial Stability Starts With Changing How You Think About Money | May 25, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sMJCL1PO8Qo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sMJCL1PO8Qo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:30:49 |
-
----
-
 This is an ad for Better Help. You work so hard to be the strong one for everyone else, but you're running on empty. The pressure to show up doesn't just disappear, it takes over your life.
 
 And talking to someone can help. Go to betterhelp.com/ramsey for 10% off.

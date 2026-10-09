@@ -1,16 +1,3 @@
-# LAWYER: 5 NEW Rules Every Gun Owner Must Know (NEW COURT RULING)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `W8M1pwWXL30` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=W8M1pwWXL30) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:20:48 |
-
----
-
 An officer should respect your right to legally carry. But what happens if an officer finds out you are carrying, he gets antsy, and now he draws down on you? What happens when in that split second you're frozen, your heart's pounding, and you have to decide what to say and what to do before you make your next move? In 2025, the United States Supreme Court changed all the rules.
 
 They've made it crystal clear.

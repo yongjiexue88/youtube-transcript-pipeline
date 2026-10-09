@@ -1,16 +1,3 @@
-# Word stress and linking practice - American Accent with Real People in LA
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9ccodqiI7sc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9ccodqiI7sc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:55:57 |
-
----
-
 let's practice the American accent with real people in Los Angeles I have conversations with people that I meet in Los Angeles I analyze the way they are speaking and then I create lessons based
 
 on those conversations so that you can improve your American accent in this video we will focus on words dress natural connected speech and thought groups and the American are sound the

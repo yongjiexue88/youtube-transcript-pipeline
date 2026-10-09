@@ -1,16 +1,3 @@
-# READING YOUR POSITIVE COMMENTS | Share the Love 💖
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kCxQmBL8f0Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kCxQmBL8f0Y) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:32:28 |
-
----
-
 - Today we're sharing some positive and loving comments from you guys.
 
 As you probably know by now, the internet can be kind of a dark place at times.

@@ -1,16 +1,3 @@
-# LAWYER: Police LIES & DUMB Questions: 10 Best Responses!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `n_O22leD58g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=n_O22leD58g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:34:13 |
-
----
-
 when the police go fishing it's important to spot the stupid questions they're trained to ask you and how to deal with the lies they're allowed to tell you you mean cops are allowed to lie to you legally yes they are the
 
 Supreme Court has ruled that the police are allowed to lie to you about almost anything I'm going to cover the stupid questions that cops will ask you and why they will ask them to you but first let's look at lie number one the first lie I've seen cops use is to tell you your fre to go but you're not free to stay how is this a lie

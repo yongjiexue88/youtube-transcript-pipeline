@@ -1,16 +1,3 @@
-# We’re all in the same boat 🛶 #learnenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PHNqgzG7BDs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PHNqgzG7BDs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:17:25 |
-
----
-
 if you use the phrase in English we're
 
 in the same boat I'm in the same boat

@@ -1,16 +1,3 @@
-# The C words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `U_cyjKMfUy4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=U_cyjKMfUy4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:29:50 |
-
----
-
 what do you call something that is in
 
 the opposite corner from you I say kitty

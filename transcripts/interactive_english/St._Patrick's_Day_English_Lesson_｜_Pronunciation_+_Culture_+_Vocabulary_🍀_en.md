@@ -1,16 +1,3 @@
-# St. Patrick's Day English Lesson | Pronunciation + Culture + Vocabulary 🍀
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QVxM-G3Bkik` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QVxM-G3Bkik) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:20:47 |
-
----
-
 Hey everyone, my name is Wes. Welcome to today's lesson. Um, today I think it's a
 
 fun lesson. It's a cultural lesson because what we're going to talk about, what I want to teach you about is St.

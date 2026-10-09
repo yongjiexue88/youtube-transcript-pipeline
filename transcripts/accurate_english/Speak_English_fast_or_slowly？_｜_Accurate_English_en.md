@@ -1,16 +1,3 @@
-# Speak English fast or slowly? | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KBsTxWPBt8Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KBsTxWPBt8Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:07:21 |
-
----
-
 in this video I would like to give you some advice about a very common question that a lot of my students ask me should I speak English quickly so that I can sound more like a native speaker or should I slow down my answer is it
 
 depends and it depends on the following

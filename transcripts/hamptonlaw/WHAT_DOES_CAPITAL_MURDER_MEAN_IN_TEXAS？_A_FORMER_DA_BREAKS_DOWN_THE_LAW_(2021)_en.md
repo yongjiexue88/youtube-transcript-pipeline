@@ -1,16 +1,3 @@
-# WHAT DOES CAPITAL MURDER MEAN IN TEXAS? A FORMER DA BREAKS DOWN THE LAW (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_oKjiJJNSV0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_oKjiJJNSV0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:43:31 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm thanks for joining us today on our YouTube video today I want to talk to you about capital murder in Texas what is the difference between murder and capital murder and when does
 
 there when is there a decision that's made whether to move forward with a capital murder case as as opposed to a murder charge so we're going to talk about that today and if you wait around to the end of this video I'll also offer you a free ebook what to do if you've been charged with a crime in Texas okay

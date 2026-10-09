@@ -1,16 +1,3 @@
-# Useful Idioms with the word TRAIN
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yXc1yfr-cuU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yXc1yfr-cuU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:00:48 |
-
----
-
 we are at a train station getting ready
 
 to get on a train so I thought I would teach you a few different expressions with the word train and the first one is

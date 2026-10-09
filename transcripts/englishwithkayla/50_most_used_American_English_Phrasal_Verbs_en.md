@@ -1,16 +1,3 @@
-# 50 most used American English Phrasal Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jaIwSm9Gbwk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jaIwSm9Gbwk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:43:50 |
-
----
-
 are you ready to add 50 powerful phrasal
 
 verbs to your English vocabulary in this

@@ -1,16 +1,3 @@
-# (part 2) Advanced  English Vocabulary You MUST Know for Buying a House in the United States
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `b0ONuxfTDoc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=b0ONuxfTDoc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:33:20 |
-
----
-
 hi I'm Lisa it's time for you to
 
 practice English fluency again welcome to another video with real people in Los Angeles we will continue our series with

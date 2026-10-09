@@ -1,16 +1,3 @@
-# "My Boyfriend Won't Marry Me Until I Pay Off All My Debt" | November 17, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7X7AJaupYRw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7X7AJaupYRw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:58:20 |
-
----
-
 [Music] brought to you by the Every Dollar app.
 
 Start budgeting for free today.

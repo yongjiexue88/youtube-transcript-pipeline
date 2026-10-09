@@ -1,16 +1,3 @@
-# Criminal Defense Secrets: How To Make A Jury Believe You Are Innocent! (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mdRdAm1UfHE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mdRdAm1UfHE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:44:26 |
-
----
-
 how to make a jury believe you are
 
 innocent hey guys I'm Jeff Hampton with Hampton criminal defense attorneys today I want to talk to you about presumption of innocence now first of all I want to talk to you for a couple of minutes about what is this concept of presumption of innocence does it how does it affect a criminal jury trial but then more importantly how do you apply this concept in the situation of convincing a jury that you're actually innocent of a criminal case now before

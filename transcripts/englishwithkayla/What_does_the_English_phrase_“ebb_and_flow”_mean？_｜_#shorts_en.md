@@ -1,16 +1,3 @@
-# What does the English phrase “ebb and flow” mean? | #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wogoFtxNDDk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wogoFtxNDDk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:27:20 |
-
----
-
 i want to teach you about a natural english phrase that you can use when you want to say things come and go the phrase is ebb and flow if you
 
 work at a restaurant and you want to say

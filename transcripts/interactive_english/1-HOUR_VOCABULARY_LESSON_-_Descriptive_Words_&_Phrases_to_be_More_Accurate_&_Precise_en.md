@@ -1,16 +1,3 @@
-# 1-HOUR VOCABULARY LESSON - Descriptive Words & Phrases to be More Accurate & Precise
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zfJAxhbz6PE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zfJAxhbz6PE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:49:01 |
-
----
-
 I want to teach you some advanced vocabulary to help you be more accurate and precise when you're describing people, places, or even the way that you
 
 move. So, if you are someone who enjoys building your vocabulary, please subscribe, turn on notifications, that way I can become your teacher. My name is West, the channel is Interactive English. It's all about trying to help you reach your fluency goals. So, in this hour-long mega lesson, I'm going to

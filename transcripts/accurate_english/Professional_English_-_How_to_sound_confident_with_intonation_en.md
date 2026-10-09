@@ -1,16 +1,3 @@
-# Professional English - How to sound confident with intonation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `15BmeupFpxg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=15BmeupFpxg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:30:26 |
-
----
-
 in this video we will discuss English intonation we will talk about what it is
 
 and why it matters and we'll talk about the typical intonation errors and how using the wrong intonation could lead people to misunderstand your message or to even get a wrong impression of

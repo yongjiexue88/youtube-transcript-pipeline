@@ -1,16 +1,3 @@
-# Am I blocking you from working
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `T956sBQj9Gk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=T956sBQj9Gk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:08:44 |
-
----
-
 Am I blocking you from working? Am I blocking shut up?
 
 Am >> I telling you to shut up right now? I can take you to jail right now for that. If I had to deal with him, you come over here and tell me to shut up my own call.

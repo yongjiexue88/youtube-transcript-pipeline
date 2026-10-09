@@ -1,16 +1,3 @@
-# LAWYER: Say THESE WORDS to Get Out of Jury Duty
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `C0pC1ScehVw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=C0pC1ScehVw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:42:55 |
-
----
-
 how to get out of jury
 
 duty hi I'm Jeff Hampton with Hampton criminal defense attorneys it's happened to each and every one of us we got that dreaded notice in the mail you've received a summons for jury duty of course everyone the first thing that people ask me I get this question probably multiple times a week people will ask me on the Street they'll call me they'll ask me the question Jeff how do I get out of jury duty let's discuss

@@ -1,16 +1,3 @@
-# Used to vs Use to | Confusing Grammar You Should Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FeykGJ5N2W8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FeykGJ5N2W8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:16:18 |
-
----
-
 let's talk about the difference between
 
 used to and used to now they they can be a

@@ -1,16 +1,3 @@
-# 29 essential English phrases for studying abroad
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `s9t56LCngHM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=s9t56LCngHM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:55:20 |
-
----
-
 does moving to study abroad in the
 
 United States or another English-speaking countries sound super

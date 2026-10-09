@@ -1,16 +1,3 @@
-# Different Ways to Say "Thank You!" | Useful English Expressions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cufWcpdmT6Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cufWcpdmT6Q) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:43:03 |
-
----
-
 I'm so thankful to have you join our class today.
 
 Stick around to find out more ways to say, "Thank you."

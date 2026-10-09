@@ -1,16 +1,3 @@
-# 25 Useful Words that You Should NOT Mispronounce
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cE24nAsus7c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cE24nAsus7c) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:47:11 |
-
----
-
 Today, we'll talk about 25 difficult words
 
 for English learners to pronounce.

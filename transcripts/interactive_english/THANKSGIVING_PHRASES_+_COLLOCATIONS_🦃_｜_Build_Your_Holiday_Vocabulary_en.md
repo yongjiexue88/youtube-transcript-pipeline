@@ -1,16 +1,3 @@
-# THANKSGIVING PHRASES + COLLOCATIONS 🦃  | Build Your Holiday Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `o6C7FMGVHbs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=o6C7FMGVHbs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:11:58 |
-
----
-
 Fall is in the air, and this is the first phrase that I would like to teach you. So, if you say that something is in the air, what it means is that well, you are aware of something or that that something is in the immediate surroundings. So, you could say that well, like love is in the air. This is another common phrase, but if we were were talking about fall, you could say fall is in the air or or autumn is in the air, either one.
 
 it starts to become fall. The the temperatures are getting colder.

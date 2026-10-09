@@ -1,16 +1,3 @@
-# Make The Most of Your Financial Choices—They Matter | December 22, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eksQnwuq6W8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eksQnwuq6W8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:53:09 |
-
----
-
 Hey, before we get rolling, listen up.
 
 If you want to win with money in 2026,

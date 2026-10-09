@@ -1,16 +1,3 @@
-# The English idiom “Grasping at straws” | #shorts #englishlesson #englishidioms #americanenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CZGlekRi5kI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CZGlekRi5kI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:29:46 |
-
----
-
 have you ever gotten so desperate to solve a problem that you are grasping at straws instead of saying
 
 that someone is willing to try anything

@@ -1,16 +1,3 @@
-# Practice English conversation for free | Birthday party
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `E300VzSMElw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=E300VzSMElw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:11:06 |
-
----
-
 you need a speaking partner but there's
 
 no one to speak english with around

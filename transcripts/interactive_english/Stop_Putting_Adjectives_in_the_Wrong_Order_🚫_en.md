@@ -1,16 +1,3 @@
-# Stop Putting Adjectives in the Wrong Order 🚫
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `d55Ixdx4fGA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=d55Ixdx4fGA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:36:07 |
-
----
-
 what's up everyone welcome to interactive English my name is Wes and what this channel is all about is just helping you guys practice and improve your English skills that's why you're here and that's what we're going to help you do and today we have a special grammar lesson for you I'm going to talk about something and we are going to practice it as well and that is adjectives word order this is something
 
 that is very useful and it's very important because we use adjectives all the time when we're speaking when we're writing and you're also going to hear them quite often when you're listening or reading so I want to take a moment so to give a quick shout out to those who are with me right now hello dr. daya

@@ -1,16 +1,3 @@
-# English phrasal verb "run out" #shorts #learnenglish #americanaccent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EMpCL_fYAgI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EMpCL_fYAgI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:19:25 |
-
----
-
 there are 24 hours in a day but i still
 
 feel like i'm always running out of time to get everything

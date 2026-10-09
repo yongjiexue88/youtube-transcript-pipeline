@@ -1,16 +1,3 @@
-# SPEAK FAST (and clearly) like an American 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7fhooHoP-SQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7fhooHoP-SQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:05:56 |
-
----
-
 have you ever wondered to yourself why
 
 is it difficult to understand the

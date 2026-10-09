@@ -1,16 +1,3 @@
-# 21 Professional English Expressions You Should Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Vv498nkR9U4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Vv498nkR9U4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:47:37 |
-
----
-
 hi i'm lisa let's learn some professional english expressions so that you can feel more confident communicating at an english-speaking workplace we will
 
 continue the series of me having conversations with native speakers who work in los angeles they talk about

@@ -1,16 +1,3 @@
-# 14 English idioms for real conversations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AlRSFmG27QA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AlRSFmG27QA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:00:09 |
-
----
-
 isn't it just the worst when you're in a conversation with an english speaker and
 
 you have to say i'm sorry what was that

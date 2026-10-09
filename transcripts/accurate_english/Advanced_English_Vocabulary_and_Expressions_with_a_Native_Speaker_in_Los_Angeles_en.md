@@ -1,16 +1,3 @@
-# Advanced English Vocabulary and Expressions with a Native Speaker in Los Angeles
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `urBcIlcmVp4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=urBcIlcmVp4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:40:48 |
-
----
-
 hi i'm lisa in this video you will
 
 listen to my conversation with a native speaker in los angeles talking about her job you will learn the advanced vocabulary and expressions that she is using so that you can sound more like a native speaker [Music]

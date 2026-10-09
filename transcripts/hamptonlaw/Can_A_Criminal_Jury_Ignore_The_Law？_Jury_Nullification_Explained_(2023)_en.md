@@ -1,16 +1,3 @@
-# Can A Criminal Jury Ignore The Law? Jury Nullification Explained (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `98D2iJD_wWM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=98D2iJD_wWM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:49:11 |
-
----
-
 the secret power that jurors have can
 
 jurors ignore the law should they does

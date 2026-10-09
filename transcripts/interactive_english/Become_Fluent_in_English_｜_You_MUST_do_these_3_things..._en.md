@@ -1,16 +1,3 @@
-# Become Fluent in English | You MUST do these 3 things...
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fIZ0ehicy3k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fIZ0ehicy3k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:31:15 |
-
----
-
 In today's lesson, I want to talk to you about three important keys to helping you achieve English fluency. That's coming up.
 
 [music] Hey everyone, my name is Wes. This is Interactive English, which is all about helping you practice and improve your English skills. And today, I want to talk to you about fluency. Because many of you out there would would like to become fluent in English.

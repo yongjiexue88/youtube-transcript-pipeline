@@ -1,16 +1,3 @@
-# How to Use Social Media to Learn English (Facebook, Instagram, Twitter, Snapchat)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WHzAqb-fkM8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WHzAqb-fkM8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:47:25 |
-
----
-
 just about all of us have it and pretty
 
 much all of us use it I'm talking about

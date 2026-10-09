@@ -1,16 +1,3 @@
-# Advanced (C2) Phrases to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QCIsv3AadCA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QCIsv3AadCA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:04:03 |
-
----
-
 let's learn some advanced c2 phrases to
 
 help you build your vocabulary and c2 is

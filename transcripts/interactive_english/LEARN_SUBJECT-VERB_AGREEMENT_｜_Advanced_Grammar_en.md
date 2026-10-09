@@ -1,16 +1,3 @@
-# LEARN SUBJECT-VERB AGREEMENT | Advanced Grammar
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gpPYs_iGn00` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gpPYs_iGn00) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:43:03 |
-
----
-
 so today I am going to talk to you about
 
 a very useful way that you can improve

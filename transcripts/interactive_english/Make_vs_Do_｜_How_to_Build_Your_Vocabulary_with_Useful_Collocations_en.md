@@ -1,16 +1,3 @@
-# Make vs Do | How to Build Your Vocabulary with Useful Collocations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `E0VoB140NWY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=E0VoB140NWY) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:41:05 |
-
----
-
 Today I'm going to talk to you about some common
 
 words that are used with some common verbs.

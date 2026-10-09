@@ -1,16 +1,3 @@
-# Criminal Jury Selection Secrets: Win Your Self Defense Case! (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `E2wbyvPN7Wo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=E2wbyvPN7Wo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:43:23 |
-
----
-
 criminal jury selection secrets for
 
 self-defense hi I'm Jeff Hampton with Hampton criminal defense attorneys today I want to talk to you about jury selection and the importance maybe you're charged with a violent crime maybe you're an attorney and you're trying to prepare for representing someone with a violent crime and now you're trying to figure out wait a minute how am I going to make sure and take care of things to show that

@@ -1,16 +1,3 @@
-# The Ramsey Show (REPLAY for January 1, 2024)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Uw23vLNqlwQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Uw23vLNqlwQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:19:36 |
-
----
-
 [Music]
 
 live from the headquarters of ramsy solutions it's the Ramsey show where we help people build wealth do work that they love and create amazing relationships I'm Ramsey personality George camel joined by my good friend Dr John deloney who's having a spectacular week by the way congrats on your book launch John very exciting building a non-anxious life is now in the hands of

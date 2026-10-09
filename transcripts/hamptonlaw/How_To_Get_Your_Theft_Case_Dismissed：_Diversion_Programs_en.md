@@ -1,16 +1,3 @@
-# How To Get Your Theft Case Dismissed: Diversion Programs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `553blciGFbg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=553blciGFbg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:11:53 |
-
----
-
 hello I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I'm going to talk to you about theft cases in Texas and what you can do
 
 to get your theft case dismissed now today we're going to talk specifically about two ways to get your case dismissed number one is conditional dismissals number two are diversion programs all right now if you wait around to the end of this video I'm also going to give you a free ebook what to do if you've been charged with a crime in Texas let's Jump Right In All right

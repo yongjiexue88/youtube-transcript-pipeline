@@ -1,16 +1,3 @@
-# Advanced Irregular Verbs You Need to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `iMtFzWeDibo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=iMtFzWeDibo) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:44:57 |
-
----
-
 Today, I want to teach you some advanced irregular verbs that you need to know.
 
 That's coming up.

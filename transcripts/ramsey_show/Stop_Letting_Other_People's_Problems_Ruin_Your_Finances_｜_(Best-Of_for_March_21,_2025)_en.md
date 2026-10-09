@@ -1,16 +1,3 @@
-# Stop Letting Other People's Problems Ruin Your Finances | (Best-Of for March 21, 2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `O4NuOPB4Hdw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=O4NuOPB4Hdw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:15:57 |
-
----
-
 [Music]
 
 brought to you by the every dooll app start budgeting for free

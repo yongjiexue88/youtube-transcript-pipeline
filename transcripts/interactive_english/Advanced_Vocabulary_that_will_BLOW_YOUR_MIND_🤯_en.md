@@ -1,16 +1,3 @@
-# Advanced Vocabulary that will BLOW YOUR MIND 🤯
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8jzR_O9V6wo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8jzR_O9V6wo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:46:50 |
-
----
-
 I want to help you build your vocabulary
 
 by teaching you some super Advanced

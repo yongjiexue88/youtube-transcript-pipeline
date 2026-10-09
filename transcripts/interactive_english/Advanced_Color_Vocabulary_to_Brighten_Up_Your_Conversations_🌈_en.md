@@ -1,16 +1,3 @@
-# Advanced Color Vocabulary to Brighten Up Your Conversations 🌈
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ym3y24xyA7Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ym3y24xyA7Y) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:48:40 |
-
----
-
 I guarantee this will be one of the most colorful English lessons you will ever watch.
 
 What's up everyone? My name is Wes. This is interactive English,

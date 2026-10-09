@@ -1,16 +1,3 @@
-# How My App Hit $60K/Month in 2 Months
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XifgHi9R5Rc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XifgHi9R5Rc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:14:45 |
-
----
-
 Our SaaS made $30,000 in 4 days. This is
 
 Lara. She's the co-founder of Cleo, which launched last month and did $30,000 MRR in 4 days. Now, I know what

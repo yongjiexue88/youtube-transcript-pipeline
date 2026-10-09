@@ -1,16 +1,3 @@
-# BUSINESS ENGLISH | Quiz for Working Professionals
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fYusw4dgvaU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fYusw4dgvaU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:17:24 |
-
----
-
 Welcome to today's lesson. Thank you so much for joining me. This channel, Interactive English, it's all about trying to help you improve your English skills. And today, this is I it's a quiz
 
 lesson. And we're going to be talking about business English, which is something that I I have some other lessons, but I haven't done really a quiz lesson on business English just yet. So, that's what we're going to be focusing on in this lesson. So, I'm I'm really excited about it. And just because we're talking about business English, I know people would think, well, it's a lot more formal and there are some things we're going to talk about because it is a more it's an environment in which people would be more professional. However, that being

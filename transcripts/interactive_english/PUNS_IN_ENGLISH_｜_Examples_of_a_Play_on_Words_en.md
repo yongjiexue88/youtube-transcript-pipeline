@@ -1,16 +1,3 @@
-# PUNS IN ENGLISH | Examples of a Play on Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tpKQd4k0Zn0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tpKQd4k0Zn0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:26:43 |
-
----
-
 hello everyone welcome to today's lesson
 
 so this if this is your first time here

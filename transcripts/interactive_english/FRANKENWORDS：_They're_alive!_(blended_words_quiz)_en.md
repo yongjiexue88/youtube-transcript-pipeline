@@ -1,16 +1,3 @@
-# FRANKENWORDS: They're alive! (blended words quiz)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WVY3jlHizGk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WVY3jlHizGk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:09:02 |
-
----
-
 Franken words. They're alive. And yeah,
 
 you may be wondering, what the heck are you talking about? What are Franken words? So, this is I I think it's a fun

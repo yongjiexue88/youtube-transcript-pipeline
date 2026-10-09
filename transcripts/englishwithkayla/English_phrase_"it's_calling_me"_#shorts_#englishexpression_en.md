@@ -1,16 +1,3 @@
-# English phrase "it's calling me" #shorts #englishexpression
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eTgIZx0AcxY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eTgIZx0AcxY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:10:37 |
-
----
-
 have you ever heard a native english speaker say that something is calling
 
 them now someone could actually be

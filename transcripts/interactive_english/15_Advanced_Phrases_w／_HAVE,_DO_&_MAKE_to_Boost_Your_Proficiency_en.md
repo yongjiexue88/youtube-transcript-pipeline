@@ -1,16 +1,3 @@
-# 15 Advanced Phrases w/ HAVE, DO & MAKE to Boost Your Proficiency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wlHUr36_5zs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wlHUr36_5zs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:41:10 |
-
----
-
 I want to teach you some everyday words and phrases to help you build your vocabulary but in a very practical way
 
 because this is vocabulary that we use

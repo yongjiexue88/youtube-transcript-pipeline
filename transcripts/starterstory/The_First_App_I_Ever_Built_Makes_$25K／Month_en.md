@@ -1,16 +1,3 @@
-# The First App I Ever Built Makes $25K/Month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Q4k8JNYKJT0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Q4k8JNYKJT0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:09:18 |
-
----
-
 I went from a college student who had never built anything in his life before to creating my first project with over 100,000 users and making $25,000 a month. >> This is Kian. He's 21, [music] still in college, and just 5 months ago, he shipped his very first [music] app idea to the world. >> I used Cursor to build the entire project.
 
 Took me about a week to build everything. >> What I love about his app idea is that it's dead simple. It's not some crazy trend or viral idea. It's just a useful tool for a very niche audience, which is why it's already making him $25,000 [music] a month.

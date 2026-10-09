@@ -1,16 +1,3 @@
-# Present Simple vs Present Continuous | How to Improve Your Grammar
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZwF8dilg-pc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZwF8dilg-pc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:42:03 |
-
----
-
 what's up everyone welcome to today's
 
 lesson which is a super awesome grammar

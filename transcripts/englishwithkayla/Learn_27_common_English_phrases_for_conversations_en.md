@@ -1,16 +1,3 @@
-# Learn 27 common English phrases for conversations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UHPMtdmOAqs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UHPMtdmOAqs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:54:12 |
-
----
-
 there are so many English phrases that
 
 are just not taught in your textbook in

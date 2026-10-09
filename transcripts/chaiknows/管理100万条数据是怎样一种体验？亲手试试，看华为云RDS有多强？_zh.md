@@ -1,16 +1,3 @@
-# 管理100万条数据是怎样一种体验？亲手试试，看华为云RDS有多强？
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LerewXu9QC4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LerewXu9QC4) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:35:32 |
-
----
-
 柴司的办公室就设在北京五环外一座普普通通的写字楼里在同一楼层里 还有其他十几家
 
 同样迷你的团队包括几家电商公司我们天天都能看到他们打包 点货

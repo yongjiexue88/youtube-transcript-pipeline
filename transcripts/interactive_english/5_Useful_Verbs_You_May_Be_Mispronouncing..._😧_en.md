@@ -1,16 +1,3 @@
-# 5 Useful Verbs You May Be Mispronouncing... 😧
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MSX4EZgzBDw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MSX4EZgzBDw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:53:14 |
-
----
-
 Can you correctly pronounce these five verbs right here? Let's begin with
 
 alleviate. Has four syllables, the stress is on that second syllable.

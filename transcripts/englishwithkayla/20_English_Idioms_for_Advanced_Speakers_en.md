@@ -1,16 +1,3 @@
-# 20 English Idioms for Advanced Speakers
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AG6gjp75aiQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AG6gjp75aiQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:40:30 |
-
----
-
 what's the number one thing that you can do in order to impress others in your
 
 English conversations it might not be

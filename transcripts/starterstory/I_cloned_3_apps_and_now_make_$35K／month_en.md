@@ -1,16 +1,3 @@
-# I cloned 3 apps and now make $35K/month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8BtHk-oNlN0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8BtHk-oNlN0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:22:18 |
-
----
-
 My name is Samuel and I run three apps making $35,000 a month.
 
 >> You might think you need to come up with a completely new idea. But I just met a

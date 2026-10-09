@@ -1,16 +1,3 @@
-# Don't Let Fear Drive Your Financial Decisions | April 7, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7Hv_YK1TgPo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7Hv_YK1TgPo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:37:46 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

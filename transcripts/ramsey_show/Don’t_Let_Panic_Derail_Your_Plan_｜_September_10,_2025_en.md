@@ -1,16 +1,3 @@
-# Don’t Let Panic Derail Your Plan | September 10, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3hzme1h4DLs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3hzme1h4DLs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:08:19 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

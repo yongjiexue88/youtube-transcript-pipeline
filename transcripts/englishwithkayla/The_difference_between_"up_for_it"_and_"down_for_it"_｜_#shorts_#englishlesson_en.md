@@ -1,16 +1,3 @@
-# The difference between "up for it" and "down for it" | #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BjoV099aQVE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BjoV099aQVE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:24:39 |
-
----
-
 is there a difference between the english phrases i'm up for it
 
 and i'm down for it not really

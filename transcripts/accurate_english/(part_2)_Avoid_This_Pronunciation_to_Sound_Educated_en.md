@@ -1,16 +1,3 @@
-# (part 2) Avoid This Pronunciation to Sound Educated
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LAb_r9gmrYw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LAb_r9gmrYw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:54:10 |
-
----
-
 let's learn to correctly pronounce some English words that are commonly mispronounced by some native speakers some of these words are difficult to pronounce because of the consonant combinations they're just simply difficult to say and another reason they're difficult to pronounce is because often there's another word with a similar pronunciation but a different meaning and people confuse those two words some of these words are not advanced words they're everyday words
 
 and you probably know the meaning other words are quite advanced for non-native speakers of English so if you're learning them for the first time let's make sure you learn how to pronounce them correctly let's get started the

@@ -1,16 +1,3 @@
-# Don’t Say ‘I’m Fine’: Better Ways to Answer 'How Are You?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rahm4sy9Cvw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rahm4sy9Cvw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:38:22 |
-
----
-
 If you're watching this English lesson, it tells me that you are an intermediate
 
 or advanced English learner and you're not okay with just using basic English or sounding robotic. In this English lesson, I'm going to teach you some better ways to respond to how are you?

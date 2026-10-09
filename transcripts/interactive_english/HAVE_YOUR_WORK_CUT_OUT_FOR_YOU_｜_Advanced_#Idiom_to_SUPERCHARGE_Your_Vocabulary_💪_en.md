@@ -1,16 +1,3 @@
-# HAVE YOUR WORK CUT OUT FOR YOU | Advanced #Idiom to SUPERCHARGE Your Vocabulary 💪
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qx2wB333V_E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qx2wB333V_E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:55:52 |
-
----
-
 to have your work cut out for you this
 
 means to have something very difficult

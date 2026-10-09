@@ -1,16 +1,3 @@
-# Passenger Rights In A Traffic Stop? A Former Prosecutor Explains Your Rights And What To Do! (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vbDzzi4ytKs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vbDzzi4ytKs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:51:48 |
-
----
-
 can you get in trouble as a passenger in someone else's car are there passenger rights what if someone in the car is doing something illegal but you weren't
 
 driving hi I'm Jeff Hampton with the Hampton Law Firm today I want to talk about that question what if you are in a vehicle maybe you're just in the passenger seat and maybe the driver of that vehicle has drugs in the car maybe they're carrying something illegally you didn't know anything about it what rights do you have can you still get in trouble by the way if

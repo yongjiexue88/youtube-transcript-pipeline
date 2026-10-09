@@ -1,16 +1,3 @@
-# 5 Life-Saving Tips If You Get Arrested: A Former Prosecutor Explains! (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-QK2uMX7pLc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-QK2uMX7pLc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:51:32 |
-
----
-
 you find yourself being arrested what should you do should you talk how do you
 
 cooperate hi I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I'm going to talk to you exactly about that five rules you should

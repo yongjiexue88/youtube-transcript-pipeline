@@ -1,16 +1,3 @@
-# How to use the English word THOUGH
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oZ_4N3NgSaE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oZ_4N3NgSaE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:51:05 |
-
----
-
 hi friends in this English video I will
 
 teach you exactly how to use the very

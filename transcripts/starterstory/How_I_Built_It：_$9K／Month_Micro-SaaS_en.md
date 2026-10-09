@@ -1,16 +1,3 @@
-# How I Built It: $9K/Month Micro-SaaS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `npcL7oRZQlI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=npcL7oRZQlI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:23:53 |
-
----
-
 My app does one thing and makes 9K a month. This is Leandro and he built an app that literally does just one thing.
 
 If you want to build a successful plugin, you need to understand this. But before the success, he was freelancing and doing side jobs until he came across a framework that changed everything. It

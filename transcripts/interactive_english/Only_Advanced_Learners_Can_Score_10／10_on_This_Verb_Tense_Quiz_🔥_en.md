@@ -1,16 +1,3 @@
-# Only Advanced Learners Can Score 10/10 on This Verb Tense Quiz 🔥
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `joT0WOyVzF0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=joT0WOyVzF0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:56:37 |
-
----
-
 Can you get 10 out of 10 on this verb
 
 tense quiz? We're about to find out. And if you are someone who enjoys practicing

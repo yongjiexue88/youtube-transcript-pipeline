@@ -1,16 +1,3 @@
-# How to pronounce words and expressions related to money and finance - with an American accent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BVdulAzxZCc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BVdulAzxZCc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:58:57 |
-
----
-
 in this video I would like to teach you how to correctly pronounce some words related to money and finance these are
 
 words that are very common but so often they are mispronounced first I will

@@ -1,16 +1,3 @@
-# 10 Ways to Apologize in English with a Perfect American Accent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EJ0uPP3Jrwk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EJ0uPP3Jrwk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:58:27 |
-
----
-
 in this video I would like to teach you how to apologize in English we will also review some grammar rules related to using these expressions correctly and finally as usual I will
 
 teach you how to say these expressions with the good clear American accent

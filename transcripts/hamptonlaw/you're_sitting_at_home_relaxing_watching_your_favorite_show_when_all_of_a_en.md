@@ -1,16 +1,3 @@
-# you're sitting at home relaxing watching your favorite show when all of a
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WU9USxvL3so` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WU9USxvL3so) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:27:24 |
-
----
-
 you're sitting at home relaxing watching your favorite show when all of a sudden you notice from the corner of your eye what looks like a person on the other side of your window looking into your window as you look over you notice it's a police officer staring through your window scanning the inside of your home can police officers legally do this and more importantly how can you use
 
 the law to stop cops from snooping on your property I'm Jeff Hampton former prosecutor turned people's lawyer and I've seen cops push the limits of the law in order to see what's going on inside people's homes in this video I'll break down number one what cops are legally allowed to do when they are trying to look through the windows of your home and how you can use

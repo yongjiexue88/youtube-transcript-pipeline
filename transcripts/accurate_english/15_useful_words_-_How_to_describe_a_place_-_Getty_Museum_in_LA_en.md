@@ -1,16 +1,3 @@
-# 15 useful words - How to describe a place - Getty Museum in LA
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fc86POa1RdY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fc86POa1RdY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:55:14 |
-
----
-
 hi I'm Lisa in this lesson we will
 
 continue the video series where you listen to how native speakers talk you will hear me talking to people in Los Angeles the goal of this video is for you to expand your knowledge of English vocabulary specifically adjectives

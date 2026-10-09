@@ -1,16 +1,3 @@
-# Useful Idioms You Absolutely NEED TO KNOW for 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `B-XrsKwOzMo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=B-XrsKwOzMo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:43:43 |
-
----
-
 I want to teach you some important and
 
 useful idioms that you can use in 2025

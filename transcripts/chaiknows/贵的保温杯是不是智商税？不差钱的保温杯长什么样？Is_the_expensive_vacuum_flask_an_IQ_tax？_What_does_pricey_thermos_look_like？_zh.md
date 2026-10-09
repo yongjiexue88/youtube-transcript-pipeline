@@ -1,16 +1,3 @@
-# 贵的保温杯是不是智商税？不差钱的保温杯长什么样？Is the expensive vacuum flask an IQ tax? What does pricey thermos look like?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WuIbxb7vav0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WuIbxb7vav0) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:59:14 |
-
----
-
 朋友 你还年轻吧
 
 没事 早晚会老的到时候你就会渴望一款永远不会凉的保温杯

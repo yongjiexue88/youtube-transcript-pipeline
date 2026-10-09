@@ -1,16 +1,3 @@
-# 148 Top Advanced Phrasal Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `N_JIIi5-YSM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=N_JIIi5-YSM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:35:32 |
-
----
-
 These first 10 phrasal verbs all contain the word down. Close down. When
 
 something closes down or if you close

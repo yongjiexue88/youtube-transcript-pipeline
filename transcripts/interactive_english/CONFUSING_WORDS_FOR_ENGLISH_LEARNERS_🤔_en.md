@@ -1,16 +1,3 @@
-# CONFUSING WORDS FOR ENGLISH LEARNERS 🤔
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gQsMwLUVNUo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gQsMwLUVNUo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:47:32 |
-
----
-
 hello what's up I hope that you're having a
 
 great day whenever you might be watching this I have a super super cool lesson that we

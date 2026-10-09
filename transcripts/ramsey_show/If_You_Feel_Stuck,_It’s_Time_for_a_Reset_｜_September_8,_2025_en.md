@@ -1,16 +1,3 @@
-# If You Feel Stuck, It’s Time for a Reset | September 8, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `q79cWhv6m9U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=q79cWhv6m9U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:09:05 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

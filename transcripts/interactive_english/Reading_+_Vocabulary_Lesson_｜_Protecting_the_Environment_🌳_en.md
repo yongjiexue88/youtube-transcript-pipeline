@@ -1,16 +1,3 @@
-# Reading + Vocabulary Lesson | Protecting the Environment 🌳
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_VtovqESHaE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_VtovqESHaE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:22:38 |
-
----
-
 hello everyone welcome to today's lesson
 
 uh my name is wes this is interactive

@@ -1,16 +1,3 @@
-# My Apps Failed Until I Discovered This Playbook ($35K/month apps)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-OPKa8DIzKU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-OPKa8DIzKU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:16:43 |
-
----
-
 I'm a French guy that was lucky enough to build three successful SAS in the e-commerce industry. >> This is Loic, a founder from France who's built three separate successful SAS apps to over $50,000 a month. But
 
 it's important to note that it did not start this way. >> I spent the first 5 years building an app nobody used. 5 years of building in the dark with zero users and zero revenue until something happened that changed his entire outlook on what makes a successful idea. >> If I was starting over, this is what I would do.

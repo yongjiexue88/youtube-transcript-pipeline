@@ -1,16 +1,3 @@
-# 锟斤拷�⊠是怎样炼成的——中文显示「⼊」门指南【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zSstXi-j7Qc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zSstXi-j7Qc) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:49:58 |
-
----
-
 2022 年 一则娱乐新闻冲上了热搜
 
 但网友们很快发现这里的「⼊」并不是我们常用的中文「入」

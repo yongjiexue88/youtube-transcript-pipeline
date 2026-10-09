@@ -1,16 +1,3 @@
-# What’s it like at an American football game? #learnenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `02wFNODlP1c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=02wFNODlP1c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:48:30 |
-
----
-
 my name's kayla i'm an american english teacher and i'm going to take you along with me to an american football game
 
 last sunday was the vikings versus the

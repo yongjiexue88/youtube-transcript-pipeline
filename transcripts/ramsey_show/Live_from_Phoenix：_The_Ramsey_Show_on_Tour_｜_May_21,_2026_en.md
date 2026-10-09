@@ -1,16 +1,3 @@
-# Live from Phoenix: The Ramsey Show on Tour | May 21, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `W4EC_e_5P_0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=W4EC_e_5P_0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:31:19 |
-
----
-
 I have a sister. Before she even said I
 
 do, leading up to the wedding, she said, "I will get pregnant immediately. Like, I expect you to set up my baby registry.

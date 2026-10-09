@@ -1,16 +1,3 @@
-# 6 common English speaking mistakes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nH2ucmx8Uyc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nH2ucmx8Uyc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:53:14 |
-
----
-
 I know that you've been tempted to use
 
 Google Translate or other translation

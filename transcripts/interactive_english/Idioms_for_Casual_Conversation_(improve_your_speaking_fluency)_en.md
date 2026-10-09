@@ -1,16 +1,3 @@
-# Idioms for Casual Conversation (improve your speaking fluency)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `e0zdyA2nZbI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=e0zdyA2nZbI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:10:03 |
-
----
-
 hello and welcome to today's lesson in
 
 which case we are going to talk about idioms and learning different idioms

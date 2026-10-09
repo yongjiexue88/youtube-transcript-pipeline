@@ -1,16 +1,3 @@
-# How to connect English words to sound like a native speaker | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6fcdSQEon7E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6fcdSQEon7E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:09:49 |
-
----
-
 in this video I'd like to teach you the importance of connecting words together when you're speaking English it's really important that you learn how to connect words there are three big benefits to
 
 learning how to link words linking means connecting let me give you an example first of what to do and what not to do

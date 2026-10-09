@@ -1,16 +1,3 @@
-# LAWYER: Can Cops Arrest You for Social Media "Threats?"
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dWAvBroRrRk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dWAvBroRrRk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:40:59 |
-
----
-
 are you threatening me if you ever been online and you've ever had a communication with someone and you're talking to them and they respond to you and you think they're threatening you or maybe you've said something to someone and they totally misunderstood what you said and now they think you're threatening them well today I want to go through exactly that issue let's say you end up having some some type of online communication with people how do
 
 you know if what you said is an actual threat or not a threat should you be arrested for it is that stalking is it an actual crime how do you know if they were serious or if it was a joke in fact

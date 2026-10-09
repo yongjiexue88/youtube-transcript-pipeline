@@ -1,16 +1,3 @@
-# Fluent English Practice - Learn 35 Expressions from a Native Speaker - DRAKE
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `73NSbL9i50M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=73NSbL9i50M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:38:46 |
-
----
-
 hi i'm lisa my goal with all of the videos on this channel is to help you reach that final level of fluency [Music]
 
 this channel is for advanced learners of english who don't always feel confident about their english skills because they can't quite express themselves the way they can in their native language sometimes it's because they have a strong accent so i teach the rules of

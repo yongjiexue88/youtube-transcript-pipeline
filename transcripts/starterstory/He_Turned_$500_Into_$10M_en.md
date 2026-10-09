@@ -1,16 +1,3 @@
-# He Turned $500 Into $10M
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CnE_fLDqa7M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CnE_fLDqa7M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:34:31 |
-
----
-
 this is Karthik he turned 500 bucks into
 
 10 million dollars by building four

@@ -1,16 +1,3 @@
-# Live from Charlotte: The Ramsey Show on Tour | May 5, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `I5GASzHuqkE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=I5GASzHuqkE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:33:38 |
-
----
-
 How much should I expect my boyfriend to
 
 be paying on an engagement ring?

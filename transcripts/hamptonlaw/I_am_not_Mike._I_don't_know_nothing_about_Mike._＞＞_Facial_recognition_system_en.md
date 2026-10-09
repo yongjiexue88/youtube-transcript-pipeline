@@ -1,16 +1,3 @@
-# I am not Mike. I don't know nothing about Mike. >> Facial recognition system
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `q92ut2cB0-c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=q92ut2cB0-c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:00:25 |
-
----
-
 I am not Mike. I don't know nothing about Mike. >> Facial recognition system and it came up >> 100% 100% match.
 
 >> An AI facial recognition system flagged this man as a 100% match for someone who

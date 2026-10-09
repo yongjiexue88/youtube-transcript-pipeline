@@ -1,16 +1,3 @@
-# LIVE: Q&A with Interactive English + Big Announcement
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YRaDzaqiJ3k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YRaDzaqiJ3k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:40:55 |
-
----
-
 so blue it is very blue what's up
 
 everyone welcome to this live lesson

@@ -1,16 +1,3 @@
-# You are obviously fluent in English if you can understand these
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HfOQQ85XkNw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HfOQQ85XkNw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:55:27 |
-
----
-
 I imagine that you want to achieve some
 
 level of English fluency and I have one

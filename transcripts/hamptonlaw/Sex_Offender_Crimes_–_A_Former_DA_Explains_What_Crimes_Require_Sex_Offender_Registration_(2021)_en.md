@@ -1,16 +1,3 @@
-# Sex Offender Crimes – A Former DA Explains What Crimes Require Sex Offender Registration (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BPSNVcUdUco` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BPSNVcUdUco) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:07:50 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk about sex offender crimes and specifically I want to explain what are the requirements what types of crimes require you to register as a sex offender under Texas law and is there anything you can do about it is there a way around it all right so if you wait around to
 
 the end of this video I'll also give you a free ebook what to do if you've been charged with a crime in Texas okay let's jump right into this now here's the reality in the state of Texas short of a murder charge a sex crime is probably one of

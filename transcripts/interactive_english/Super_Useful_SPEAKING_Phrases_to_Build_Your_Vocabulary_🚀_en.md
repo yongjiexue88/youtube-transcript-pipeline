@@ -1,16 +1,3 @@
-# Super Useful SPEAKING Phrases to Build Your Vocabulary 🚀
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `k75nWSvMfyA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=k75nWSvMfyA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:36:14 |
-
----
-
 I want to help you upgrade, enhance, and develop your speaking fluency. And what better way to do that than with phrases that have to do with speaking. So, if
 
 you are someone who would like to improve your overall speaking skills, please subscribe, turn on notifications.

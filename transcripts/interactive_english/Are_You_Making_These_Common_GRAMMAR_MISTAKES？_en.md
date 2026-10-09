@@ -1,16 +1,3 @@
-# Are You Making These Common GRAMMAR MISTAKES?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9w0B3eIGJcI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9w0B3eIGJcI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:05:20 |
-
----
-
 Let's talk about some confusing grammar and I promise you will learn something
 
 new. And if you enjoy learning new things and improving your skills, please subscribe, turn on notifications. That way I can become your teacher. My name is Wes. The channel is Interactive English. It's all about trying to help you reach your fluency goals. And today

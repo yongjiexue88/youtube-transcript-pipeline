@@ -1,16 +1,3 @@
-# LAWYER: 5 DWI Mistakes Cops Are Counting on You to Make!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yGHFpc6uiWA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yGHFpc6uiWA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:25:11 |
-
----
-
 you're pulled over and the officer starts asking you questions about drinking and driving you feel yourself start getting nervous and then suddenly the officer demands that you get out of the car to take sobriety tests what do you do I'm Jeff Hampton the people's lawyer and I have seen literally thousands of DWI traffic stops so today
 
 I'm exposing five tricks cops use during

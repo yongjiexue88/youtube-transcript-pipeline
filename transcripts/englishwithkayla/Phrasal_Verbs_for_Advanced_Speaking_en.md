@@ -1,16 +1,3 @@
-# Phrasal Verbs for Advanced Speaking
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XaMy4A7t3ts` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XaMy4A7t3ts) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:35:09 |
-
----
-
 If you're already good English speaker, you're probably watching this lesson and you're thinking, "How can I get to the advanced level?" In this lesson, I'll teach you phrases that will help you do this. You'll be in an English conversation with a native speaker and you'll hear someone say, "I think I'm going to go through with it." Or, "I'm going to make up for it." And you might think, "What exactly do they mean?" Well, these are beyond basic phrases. These are phrasal verbs and in today's lesson, I'm going to teach you advanced phrasal verbs just like these ones that will help you understand native speakers and by the end of this lesson, you will thoroughly understand these phrasal verbs enough to use them in your own English speaking.
 
 Let's get started with this lesson. Often times, you'll hear native speakers say that they come up against something. This means they have a difficulty or a problem that they weren't expecting. >> thing I come up against?

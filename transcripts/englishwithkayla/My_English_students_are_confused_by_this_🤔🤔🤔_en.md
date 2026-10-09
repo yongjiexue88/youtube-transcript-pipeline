@@ -1,16 +1,3 @@
-# My English students are confused by this 🤔🤔🤔
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `knDKtW08afM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=knDKtW08afM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:54:00 |
-
----
-
 i've noticed that english learners get really confused when native speakers use
 
 the phrase make do

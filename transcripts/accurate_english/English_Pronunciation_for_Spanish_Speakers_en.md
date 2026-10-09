@@ -1,16 +1,3 @@
-# English Pronunciation for Spanish Speakers
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DERX7US1hbk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DERX7US1hbk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:08:29 |
-
----
-
 in this video we will talk about how to fix a very common mistake that Spanish speakers [Music]
 
 make when Spanish speakers speak English they often add an extra sound in front

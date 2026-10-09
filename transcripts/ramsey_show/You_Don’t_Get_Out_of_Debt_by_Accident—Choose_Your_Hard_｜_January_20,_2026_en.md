@@ -1,16 +1,3 @@
-# You Don’t Get Out of Debt by Accident—Choose Your Hard | January 20, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wyqLz2bBw_c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wyqLz2bBw_c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:48:46 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

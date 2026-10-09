@@ -1,16 +1,3 @@
-# The Underdog: From Life Changing Accident to $100M/Year
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BeRKQkU5Ceo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BeRKQkU5Ceo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:26:25 |
-
----
-
 I mean man my life has been so wild when I was 19 years old I was going off a big jump and I landed on my back shattered my spine and was paralyzed instantly that was literally Rock Bottom
 
 this is Ryan Chen a guy who let no

@@ -1,16 +1,3 @@
-# How Important is Grammar to Becoming Fluent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2ffWhF2gQB4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2ffWhF2gQB4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:32:42 |
-
----
-
 how important do you think it is to study grammar that is what today's conversation is all about what's up
 
 everyone my name is Wes this is interactive English which is all about helping you practice and improve your

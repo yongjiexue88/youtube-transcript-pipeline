@@ -1,16 +1,3 @@
-# Sound Smarter Instantly with These B2 Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8csCgOaVWwY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8csCgOaVWwY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:52:34 |
-
----
-
 Let's learn some B2 vocabulary to help you supercharge your fluency. Now, let's begin with five essential B2 nouns. And
 
 the first one is what's one that I really like and I use it quite often and that is nonsense. This refers to words, ideas, or behavior that is foolish,

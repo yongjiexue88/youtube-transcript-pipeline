@@ -1,16 +1,3 @@
-# When Unexpected Consequences Force You to Grow Up | January 29, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OlZK9zVBG44` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OlZK9zVBG44) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:47:21 |
-
----
-
 [music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

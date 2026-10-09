@@ -1,16 +1,3 @@
-# Financial Peace Requires More Than Good Intentions | May 20, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dxm5XmyBIsM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dxm5XmyBIsM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:31:29 |
-
----
-
 This is an ad for BetterHelp. Stress from money problems doesn't just stay in your bank account. It shows up everywhere in your life. Talking to someone can help you sort it out. Go to betterhelp.com/ramsey to get 10% off.
 
 Brought to you by the Every Dollar app.

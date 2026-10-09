@@ -1,16 +1,3 @@
-# Useful (C1) #Collocations with BROADEN 🌅
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vqifd2YRLfk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vqifd2YRLfk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:58:29 |
-
----
-
 are Dum never broaden your horizons Yep broaden this means to increase the range
 
 of something and there are some great cations with this verb these are words

@@ -1,16 +1,3 @@
-# LAWYER: 3 Tricks Police Use to Trespass Without a Warrant
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MSj215JUhLY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MSj215JUhLY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:28:20 |
-
----
-
 if cops claim emergency can they trespass into your home for nearly half
 
 a century cops and courts have used two

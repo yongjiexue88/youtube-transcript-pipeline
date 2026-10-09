@@ -1,16 +1,3 @@
-# How I Built It: $37K/Month Notion App
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WuzxmeUP6ro` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WuzxmeUP6ro) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:27:19 |
-
----
-
 I just spent 6 days working on it
 
 creating like a small MVP and now we are

@@ -1,16 +1,3 @@
-# Advanced Vocabulary to Understand American Politics 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IpSm0EQc9h4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IpSm0EQc9h4) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:46:37 |
-
----
-
 Today, I want to teach you some advanced vocabulary words related to politics.
 
 Hey everyone, my name is Wes. This is Interactive English,

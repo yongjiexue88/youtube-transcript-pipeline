@@ -1,16 +1,3 @@
-# You survived the attack, but one sentence on a 911 call or a statement you made
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2nw9htwLYv0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2nw9htwLYv0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:12:05 |
-
----
-
 You survived the attack, but one sentence on a 911 call or a statement you made to the police suddenly gets you arrested. And in that moment, shaking,
 
 breathless, still trying to process exactly what just happened, you have no idea what to say. But if you say the wrong thing in the heat of the moment, you could lose your freedom, your savings, your good name, all the things

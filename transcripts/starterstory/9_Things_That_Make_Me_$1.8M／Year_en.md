@@ -1,16 +1,3 @@
-# 9 Things That Make Me $1.8M/Year
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GFnBp8lMIf4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GFnBp8lMIf4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:27:40 |
-
----
-
 best kept secret in business is this
 
 product right [Music]

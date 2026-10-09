@@ -1,16 +1,3 @@
-# 1-HOUR LESSON - Improve Your Writing ✍️ (Academic, Professional, & Descriptive)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gFXE9n7hrOI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gFXE9n7hrOI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:51:26 |
-
----
-
 I want to help you develop your overall writing skills and that is why I put
 
 together this 1hour Mega lesson covering

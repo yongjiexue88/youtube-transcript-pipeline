@@ -1,16 +1,3 @@
-# What Is A State Jail Felony? A Former DA Breaks Down The Law! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UOHN7Hy5IQ4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UOHN7Hy5IQ4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:40:53 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel and Welcome to our video series today on what is a state gel felony
 
 today I want to break down the understanding of what a state jail felony is in Texas and what you can do about it what are some of your options what does the law provide for

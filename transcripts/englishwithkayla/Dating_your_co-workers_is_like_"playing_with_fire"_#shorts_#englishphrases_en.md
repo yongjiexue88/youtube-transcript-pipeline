@@ -1,16 +1,3 @@
-# Dating your co-workers is like "playing with fire" #shorts #englishphrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wp2___zYAkc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wp2___zYAkc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:14:17 |
-
----
-
 you should never date your co-workers because that is like playing with fire
 
 the phrase playing with fire is used to

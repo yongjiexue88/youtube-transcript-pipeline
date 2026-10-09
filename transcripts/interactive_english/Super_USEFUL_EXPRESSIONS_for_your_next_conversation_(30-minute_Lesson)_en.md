@@ -1,16 +1,3 @@
-# Super USEFUL EXPRESSIONS for your next conversation (30-minute Lesson)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fz8BNxx8SYg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fz8BNxx8SYg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:02:49 |
-
----
-
 let's learn some super useful English
 
 expressions for casual conversation and

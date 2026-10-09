@@ -1,16 +1,3 @@
-# Learn 10 idioms Americans actually say
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `razX9LyZLJA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=razX9LyZLJA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:00:40 |
-
----
-
 i tell my english students that they have to learn idioms in order to be able
 
 to have a real conversation with native

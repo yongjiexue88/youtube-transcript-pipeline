@@ -1,16 +1,3 @@
-# My Two Apps Make $150K/Month Each
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `32vqaJa90kw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=32vqaJa90kw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:10:24 |
-
----
-
 A few days ago, I came across this insane post on X. My app [snorts] hit 3
 
 million ARR in 8 months. I had to know

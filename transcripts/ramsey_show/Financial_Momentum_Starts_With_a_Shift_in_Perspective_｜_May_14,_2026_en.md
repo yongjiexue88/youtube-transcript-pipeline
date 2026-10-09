@@ -1,16 +1,3 @@
-# Financial Momentum Starts With a Shift in Perspective | May 14, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uID7rkPWDtA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uID7rkPWDtA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:32:19 |
-
----
-
 This is an ad for Better Help. May is mental health awareness month and we're all surrounded by non-stop noise, screens, notifications, comparison, and our bodies are on high alert. You don't have to carry it all alone. Go to betterhelp.com/ramy and get 10% off.
 
 [music] Brought to you by the EveryDoll app.

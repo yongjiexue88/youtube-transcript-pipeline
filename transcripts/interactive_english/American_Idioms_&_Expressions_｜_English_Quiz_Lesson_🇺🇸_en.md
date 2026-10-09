@@ -1,16 +1,3 @@
-# American Idioms & Expressions | English Quiz Lesson 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `06euY-_OcUs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=06euY-_OcUs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:28:01 |
-
----
-
 hey everyone welcome to today's lesson
 
 my name is Wes this is interactive

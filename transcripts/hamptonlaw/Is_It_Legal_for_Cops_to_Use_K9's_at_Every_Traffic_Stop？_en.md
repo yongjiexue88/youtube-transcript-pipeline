@@ -1,16 +1,3 @@
-# Is It Legal for Cops to Use K9's at Every Traffic Stop?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xtFXIQ6fN3Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xtFXIQ6fN3Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:33:27 |
-
----
-
 one of the biggest threats that cops will use when they really want to search your car and they have nothing else to go off of is the threat of bringing out a drug sniffing dog but can they legally do this and when they do bring out drug sniffing dogs those dogs are supposed to be fair and impartial right well Alex shot doesn't think so Alex shot a Houston Resident was driving down
 
 the road in Bear County Texas when a cop pulled him over for a Ticky Tac reason after the Bear County Deputy approached Mr shot he asked him for consent to search his truck Mr shot smartly refused

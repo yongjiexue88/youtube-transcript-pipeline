@@ -1,16 +1,3 @@
-# English phrase "pick your brain" #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7XHdtY57LXY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7XHdtY57LXY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:13:24 |
-
----
-
 a really interesting way that you can say you are going to ask someone a ton
 
 of questions is to say that you are

@@ -1,16 +1,3 @@
-# DWI In Texas: The Ultimate Guide to Winning Your Case (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YJ5V4rHNgHw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YJ5V4rHNgHw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:35:03 |
-
----
-
 today I want to give you the Ultimate Guide to DWI in
 
 Texas hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel DWI in Texas we're going

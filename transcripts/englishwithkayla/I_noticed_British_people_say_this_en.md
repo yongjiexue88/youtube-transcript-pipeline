@@ -1,16 +1,3 @@
-# I noticed British people say this
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2qqg5FgO4rY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2qqg5FgO4rY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:50:29 |
-
----
-
 this is one of the biggest differences
 
 that i've noticed between british english and american english this throws

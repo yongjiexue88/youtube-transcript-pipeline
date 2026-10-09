@@ -1,16 +1,3 @@
-# 30 Invisible English Phrases You Should Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Bl32WnfV4pM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Bl32WnfV4pM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:31:00 |
-
----
-
 Have you ever listened to a native English speaker and thought, "I understand everything they're saying. I understand the grammar. I understand the vocabulary.
 
 And I'm just as smart as them, but I don't sound like that." Well, in today's English lesson, I'm going to teach you 30 invisible phrases that native

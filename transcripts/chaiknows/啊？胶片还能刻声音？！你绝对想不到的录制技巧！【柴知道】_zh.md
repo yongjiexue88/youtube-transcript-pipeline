@@ -1,16 +1,3 @@
-# 啊？胶片还能刻声音？！你绝对想不到的录制技巧！【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `H5-v27Hq35U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=H5-v27Hq35U) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:38:14 |
-
----
-
 1937 年美国拍摄了一部促进“大萧条”时期
 
 黑人就业的短片 We Work Again

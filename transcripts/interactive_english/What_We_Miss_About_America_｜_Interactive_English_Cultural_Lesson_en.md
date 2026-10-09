@@ -1,16 +1,3 @@
-# What We Miss About America | Interactive English Cultural Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yTHnIMe3XX8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yTHnIMe3XX8) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:36:18 |
-
----
-
 Today we want to talk to you guys about things we miss about the US.
 
 Easy. I like how you're...

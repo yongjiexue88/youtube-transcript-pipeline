@@ -1,16 +1,3 @@
-# Essential travel vocabulary lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VAqL8qo7eFs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VAqL8qo7eFs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:51:59 |
-
----
-
 in today's English lesson I will teach
 
 you all of the essential travel English

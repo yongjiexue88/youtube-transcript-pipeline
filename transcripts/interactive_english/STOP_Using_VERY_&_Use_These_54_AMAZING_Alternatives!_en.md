@@ -1,16 +1,3 @@
-# STOP Using VERY & Use These 54 AMAZING Alternatives!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `87aAeZVn310` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=87aAeZVn310) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:17:22 |
-
----
-
 Today I have a very important lesson for you. But let let's just get this out of here because I want to help you supercharge your vocabulary by teaching you over 50 words and phrases to help you avoid using the word very. That's coming up.
 
 Hey everyone, my name is Wes. The channel is Interactive English. It's all about trying to help you practice and improve your English skills. So, if that's what you want to do, hit that subscribe button, turn on notifications so that you will learn about future lessons. Today, I have well, it's a very

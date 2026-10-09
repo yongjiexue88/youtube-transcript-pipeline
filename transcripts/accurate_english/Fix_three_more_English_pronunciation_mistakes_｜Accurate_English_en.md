@@ -1,16 +1,3 @@
-# Fix three more English pronunciation mistakes |Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MYUlaCETwjg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MYUlaCETwjg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:07:50 |
-
----
-
 in this video I would like to help you fix three common English pronunciation mistakes and at the same time I will teach you how to correctly pronounce some difficult English words related to food let's look at the word salmon the
 
 first thing I'd like to teach you about this difficult word is that the L is silent a lot of my students don't know this and they say Salman I would like some Salamone so remember the L in salmon is silent let's look at some

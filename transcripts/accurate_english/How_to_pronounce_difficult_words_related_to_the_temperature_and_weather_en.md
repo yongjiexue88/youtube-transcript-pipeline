@@ -1,16 +1,3 @@
-# How to pronounce difficult words related to the temperature and weather
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1I9z9tg6F58` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1I9z9tg6F58) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:57:19 |
-
----
-
 let's learn how to correctly pronounce some difficult English words related to the temperature and the weather talking about the weather is such a common topic we talk about the weather in social situations and even with strangers for example in the supermarket there are some difficult English words related to talking about weather and maybe you make these mistakes too but after we learned these words we will practice saying them in natural sounding sentences the first
 
 word is thermometer that's a difficult

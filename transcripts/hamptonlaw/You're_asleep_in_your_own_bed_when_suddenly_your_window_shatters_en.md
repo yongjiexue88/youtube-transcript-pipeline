@@ -1,16 +1,3 @@
-# You're asleep in your own bed when suddenly your window shatters
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zVnx6ECXkCQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zVnx6ECXkCQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:08:03 |
-
----
-
 You're asleep in your own bed when suddenly your window shatters. You think it's a break-in, so you grab your legal firearm and you use it in self-defense.
 
 But then suddenly you hear the word police and now cops want to charge you with attempted murder. Sound insane? It

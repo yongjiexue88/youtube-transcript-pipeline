@@ -1,16 +1,3 @@
-# I built a $14K/month SaaS using Discord
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9r0qPeSJGog` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9r0qPeSJGog) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:14:37 |
-
----
-
 I built my first SAS around six, seven months ago. And last month, I did over $40,000 in revenue.
 
 >> This is Sam, a university student who built a SAS with zero coding [music] background. But here's the even crazier part. He validated this idea in a way I've never seen before. Discord. [music]

@@ -1,16 +1,3 @@
-# Useful TRAVEL PHRASES That You Need to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `iQbmS7fEtso` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=iQbmS7fEtso) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:02:36 |
-
----
-
 let's learn some indispensable travel phrases that you
 
 really should know and these are phrases

@@ -1,16 +1,3 @@
-# How to pronounce the article THE - 3 rules| Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hTPUJDJqThw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hTPUJDJqThw) |
-| **Language** | Dutch (auto-generated) (nl) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:10:06 |
-
----
-
 [Muziek]
 
 in deze video ipod shouter naald wanneer

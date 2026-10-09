@@ -1,16 +1,3 @@
-# I Quit YouTube & Built a $1M App (Without My Audience)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `laRliIVNZgU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=laRliIVNZgU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:20:20 |
-
----
-
 I decided like I didn't want to do it anymore. So, I basically just went ghost on the internet because I wanted to build something real that was detached from my face. Remember this guy, Sebastian Georgu? If you've been around YouTube the last few years, you might have seen him flashing cars, flexing on camera, making millions, and building a YouTube channel that hit nearly 1 million subscribers. But then he disappeared. No uploads, no flexing, just gone. So I reached out, bro, what
 
 happened? And what he told me completely blew my mind. Instead of doubling down on being an influencer, Sebastian walked away from it completely. He decided to build a software business behind the scenes, no YouTube, no personal brand.

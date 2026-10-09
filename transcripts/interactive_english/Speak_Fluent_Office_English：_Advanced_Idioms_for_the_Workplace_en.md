@@ -1,16 +1,3 @@
-# Speak Fluent Office English: Advanced Idioms for the Workplace
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hUqcqN-W9AE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hUqcqN-W9AE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:48:17 |
-
----
-
 let's learn some advanced work idioms to
 
 help you build your vocabulary I'm going

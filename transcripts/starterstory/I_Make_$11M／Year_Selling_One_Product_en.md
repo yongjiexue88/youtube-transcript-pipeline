@@ -1,16 +1,3 @@
-# I Make $11M/Year Selling One Product
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5C3YCTL-36c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5C3YCTL-36c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:33:51 |
-
----
-
 this guy made 11 million dollars in two years with just one product how by capitalizing on one of the biggest marketing opportunities in years user generated content Oliver brocato started tabs chocolate in his college apartment just two years later he was a millionaire by age 21.
 
 all right Albert tell us what business you built and how much money you make yeah man um so I sell sex chocolate on the internet in essence we created an edible for sex we took the most popular and effective natural supplements that typically come in a pill or powder format and we transformed it into a very luxurious high-end experience this year we're gonna do about 11 million dollars in Revenue

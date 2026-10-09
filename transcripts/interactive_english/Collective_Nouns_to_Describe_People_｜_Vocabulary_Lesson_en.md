@@ -1,16 +1,3 @@
-# Collective Nouns to Describe People | Vocabulary Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JkQQm97gmmw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JkQQm97gmmw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:23:58 |
-
----
-
 hey everyone my name is wes this is interactive
 
 english and the channel it's just about trying

@@ -1,16 +1,3 @@
-# 歪，秦始皇吗？插头乱成这样，你还管不管了！？为什么世界上有这么多不同的插头和插座？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `71XTICFclV8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=71XTICFclV8) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:34:19 |
-
----
-
 喂 是柴司吗有群众反映说世界上的插头插座很乱
 
 麻烦的很 意见很大你们去看一下这个事情的来龙去脉定位一下责任人我们才好协调解决嘛哎 哎知道了 知道了好 好 好

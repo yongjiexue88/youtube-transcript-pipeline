@@ -1,16 +1,3 @@
-# Masterclass Understand Real Podcasts English Conversations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uuKRpaCiIlY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uuKRpaCiIlY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:32:00 |
-
----
-
 Let's get studying, and today's lesson, we're going to break down a clip from the Tim Ferriss podcast. If you haven't
 
 heard of him, he wrote the book The 4-Hour Work Week. His podcast is really good. He has some really interesting guests. In this clip, the particular

@@ -1,16 +1,3 @@
-# part 3 - 10 Advanced English Words  for Fluent English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VO2ij0mFUAQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VO2ij0mFUAQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:05:47 |
-
----
-
 let's learn 10 more advanced English
 
 words that you can use instead of a simple word with the word very learning

@@ -1,16 +1,3 @@
-# Advanced Vocabulary About the Housing Crisis | Read & Put Words in Context
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Y51AiUfBmDc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Y51AiUfBmDc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:25:31 |
-
----
-
 hey everyone welcome to another interactive english
 
 live lesson my name is wes and if this is your first time here please write to me in the chat write to me in the comments i love hearing from new people but what this channel is all about just just about helping people practice and improve their english skills and today's lesson is related to both

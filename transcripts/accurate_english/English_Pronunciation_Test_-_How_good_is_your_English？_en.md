@@ -1,16 +1,3 @@
-# English Pronunciation Test - How good is your English?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `lovYCX2Lv0g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=lovYCX2Lv0g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:34:12 |
-
----
-
 hi I'm Lisa Let's test your English pronunciation we all know that English pronunciation can be a real challenge whether you're an intermediate or Advanced student of English this test is designed to give you an idea of your current pronunciation abilities [Music]
 
 some of these words are everyday words but other words you may not be familiar with I will teach you the meaning of those more advanced words we will look at English words that are spelled with the letters CH the most common pronunciation of these two letters is

@@ -1,16 +1,3 @@
-# How I Used Reddit To Build a $25K/Month Business
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3X4VneEHvig` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3X4VneEHvig) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:21:51 |
-
----
-
 Started off really slow, but we're doing about $25,000 a month in revenue now.
 
 >> This is OV niche. He's a solarreneur who built a $25,000 per month business in just 15 months with one strategy. This was the post that took me from single thousands of users to tens of thousands of users. >> And what's even crazier is that he used this strategy to get thousands of users without spending a dime on marketing.

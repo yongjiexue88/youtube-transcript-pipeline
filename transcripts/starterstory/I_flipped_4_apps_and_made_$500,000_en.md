@@ -1,16 +1,3 @@
-# I flipped 4 apps and made $500,000
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PmyXmpkTIdc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PmyXmpkTIdc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:17:41 |
-
----
-
 I build apps and flip them. I've done this four times and made over $500,000.
 
 This is Lots, a London-based founder who treats apps like real estate. He builds them fast, grows them to about 20k a month, and then flips them for all cash deals. My philosophy is to stack cash

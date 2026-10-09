@@ -1,16 +1,3 @@
-# English pronunciation lesson for Chinese speakers
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VvFWX2I7Nz8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VvFWX2I7Nz8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:07:37 |
-
----
-
 in this video I'd like to help you fix a very common English pronunciation mistake that a lot of my Chinese students make a very common question
 
 that I get from my Chinese students is to teach them the difference between words like thin and thing or sin and

@@ -1,16 +1,3 @@
-# Learn the Different Types of Pleas in a Courtroom and Their Consequences (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KfMLftLEC88` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KfMLftLEC88) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:50:08 |
-
----
-
 what you need to know about plea deals before you enter the
 
 [Music]

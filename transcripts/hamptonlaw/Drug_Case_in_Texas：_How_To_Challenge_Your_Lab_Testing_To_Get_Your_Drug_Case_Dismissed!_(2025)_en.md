@@ -1,16 +1,3 @@
-# Drug Case in Texas: How To Challenge Your Lab Testing To Get Your Drug Case Dismissed! (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yEU5o2redX4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yEU5o2redX4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:12:18 |
-
----
-
 hello welcome to the Hampton Law Firm I'm Jeff Hampton and today's video we're going to talk about drug lab testing we talk about a drug case how do we know if the drugs were tested properly how do we even know if the drugs are actually illegal thanks for joining us today and here's the thing if you'll wait around to the end of this video I'm going to also make an available to
 
 you a free ebook what to do if you've been charged with a drug crime in Texas all right so today I'm going to talk about the ins and outs of the requirements of labs whenever they're testing drugs and some specific things that I think your criminal attorney should be looking into if you're facing a drug charge in Texas now first things first how do I know if

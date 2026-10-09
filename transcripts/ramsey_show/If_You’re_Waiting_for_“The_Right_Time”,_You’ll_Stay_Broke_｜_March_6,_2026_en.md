@@ -1,16 +1,3 @@
-# If You’re Waiting for “The Right Time”, You’ll Stay Broke | March 6, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8fuaAKkxX-Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8fuaAKkxX-Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:42:11 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

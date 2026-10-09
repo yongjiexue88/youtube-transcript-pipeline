@@ -1,16 +1,3 @@
-# The Rhythm Mistakes Almost All English Learners Make
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BCbZ_BGT2m4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BCbZ_BGT2m4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:22:14 |
-
----
-
 Do you speak English clearly, but it still doesn't sound natural? Do you have a hard time understanding native speakers? There are two big reasons that native speakers are hard to understand.
 
 First, we use a lot of idiomatic expressions. And second, and this is just as important, written English and spoken English are quite different. In this video, I'm going to focus on the second point. Native speakers don't give every word the same weight. In English,

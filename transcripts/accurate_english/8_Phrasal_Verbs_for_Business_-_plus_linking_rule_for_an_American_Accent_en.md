@@ -1,16 +1,3 @@
-# 8 Phrasal Verbs for Business - plus linking rule for an American Accent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `A72MZwKC0Q0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=A72MZwKC0Q0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:59:48 |
-
----
-
 in this video I will help you to speak English more clearly and at the same time speak English naturally like native speakers do we will learn one important
 
 rule about connecting words together connecting words together is also called linking when you link words you will

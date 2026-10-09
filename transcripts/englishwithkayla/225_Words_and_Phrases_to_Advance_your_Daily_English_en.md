@@ -1,16 +1,3 @@
-# 225 Words and Phrases to Advance your Daily English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PEMOG6ELZ_c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PEMOG6ELZ_c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:42:43 |
-
----
-
 for today's vocabulary lesson there'll be 35 words in alphabetical order make
 
 sure to watch all the way to the end to

@@ -1,16 +1,3 @@
-# Learn the Difference...TOO vs ENOUGH | Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QGBetTni4hA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QGBetTni4hA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:25:54 |
-
----
-
 hey everyone welcome to today's lesson
 
 my name is Wes this is interactive

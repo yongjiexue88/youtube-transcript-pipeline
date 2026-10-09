@@ -1,16 +1,3 @@
-# AI 暴击搜索引擎：我活不活无所谓，我只要你死【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xe-MWx7vE2k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xe-MWx7vE2k) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:33:55 |
-
----
-
 2019 年一篇名为《搜索引擎百度已死》的文章传遍了中文互联网文中痛斥百度的搜索结果中充满了百家号里的垃圾内容
 
 堪称是当年泼在百度头上的另一瓶水

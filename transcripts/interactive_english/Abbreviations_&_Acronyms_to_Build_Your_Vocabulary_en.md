@@ -1,16 +1,3 @@
-# Abbreviations & Acronyms to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `onlXcyDeXYc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=onlXcyDeXYc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:31:57 |
-
----
-
 so if you want to improve your English
 
 fluency then you need to know abbreviations and acronyms they are so

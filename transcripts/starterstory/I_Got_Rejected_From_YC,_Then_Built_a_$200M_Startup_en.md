@@ -1,16 +1,3 @@
-# I Got Rejected From YC, Then Built a $200M Startup
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PSx0vcUY-sk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PSx0vcUY-sk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:24:47 |
-
----
-
 All right, Saba, what's your story? Meet Saba. I grew up in the
 
 middle of nowhere. I was always like relatively entrepreneurial, but never had any major direction. The self-made entrepreneur who transformed no money, no validation, no funding into a multi-million dollar success story. If other people have done it, why are they so special? Why can't we do it? In 2018 with his co-founder Tim, they spotted an opportunity to start an online business.

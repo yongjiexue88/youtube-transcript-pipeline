@@ -1,16 +1,3 @@
-# Under Investigation? Find Out If Hiring a Criminal Lawyer Will Make You Look GUILTY! (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `x3Fh6y0T758` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=x3Fh6y0T758) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:50:33 |
-
----
-
 does hiring a criminal lawyer make you look
 
 guilty hi I'm Jeff Hampton with the Hampton Law Firm I want to welcome you to our YouTube channel today I want to talk about this because I hear this all the time I'll have people call me and say I got a call from a detective and they're wanting me to come in and talk to them or I think I might be under investigation does hiring a criminal lawyer make me look guilty let me just start right out of

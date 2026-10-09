@@ -1,16 +1,3 @@
-# I Built a $1M SaaS Using YouTube
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VZ1XspToV1E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VZ1XspToV1E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:19:36 |
-
----
-
 If any viewers is watching this and does a video on YouTube for 45 days, if they don't make at least $5,000, I'll just PayPal you $500.
 
 >> This is Vasco. He built an AI app that in just 2 years went from 0 to $70,000 a

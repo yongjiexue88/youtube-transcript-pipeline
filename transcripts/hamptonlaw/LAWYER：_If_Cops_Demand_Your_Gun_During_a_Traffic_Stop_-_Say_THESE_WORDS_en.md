@@ -1,16 +1,3 @@
-# LAWYER: If Cops Demand Your Gun During a Traffic Stop - Say THESE WORDS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `REFxINEo6o4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=REFxINEo6o4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:34:30 |
-
----
-
 we've all been there we're driving down the road maybe a little bit in a hurry and maybe we're driving just a tad bit too fast suddenly there's lights behind us there's Sirens going off and now we know we're being pulled over let's say you pull over on the side of the road and now the officer walks up to your car Taps on your window and says hey
 
 I need to see any guns that you have in your car do you have to comply do you have to tell him you have a gun what if you have a concealed carry permit do you know if

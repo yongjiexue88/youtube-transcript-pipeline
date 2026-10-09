@@ -1,16 +1,3 @@
-# 25 Advanced Adjectives to Describe Places
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XIga6wpPbo0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XIga6wpPbo0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:08:59 |
-
----
-
 Let's talk about some advanced adjectives that you can use to describe places. And let's go ahead and begin and talk about some words you can use to describe like well the landscape, mountains, beaches, uh lakes. So the
 
 first word that I have for you is serene. It just means calm and peaceful.

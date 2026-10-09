@@ -1,16 +1,3 @@
-# You Can’t Build Wealth While Carrying Other People's Problems | January 1, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `69Dy3uh-pDo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=69Dy3uh-pDo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:51:33 |
-
----
-
 George Camel here with a quick PSA before the calls start coming in. If you want to leave the money stress in 2025, you need a plan that works. So take what you learn today and put it to work in every dollar. Download the app and start for free today.
 
 Normal is broke and common sense is weird. So we're here to help you transform your life. From the Ramsey

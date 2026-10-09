@@ -1,16 +1,3 @@
-# How he makes $250K per month from a simple app (Letterly Breakdown)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wvYej-2KWDg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wvYej-2KWDg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:16:54 |
-
----
-
 My name is Anton and my app makes $250,000 a month. >> This is [music] Anton. He spent years on failed apps until he finally figured it out. What did he change? Well, it's not what you'd expect. >> Our secret is, and let me show you why.
 
 >> Most founders think more features equals more value. But Anton proved the opposite. And the proof is in his [music] app that makes millions. Every point of friction kills your revenue.

@@ -1,16 +1,3 @@
-# 缝合怪还是割韭菜？10分钟带你彻底搞懂混动技术！10 minutes to help you thoroughly understand hybrid electric technology!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5tOwLlryaUU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5tOwLlryaUU) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:43:21 |
-
----
-
 在我们发燃油车广告的时候
 
 评论里会说笑死大人已经是电动车的天下了

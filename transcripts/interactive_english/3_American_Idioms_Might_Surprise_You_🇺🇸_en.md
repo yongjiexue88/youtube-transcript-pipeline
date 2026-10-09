@@ -1,16 +1,3 @@
-# 3 American Idioms Might Surprise You 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Wbqlgd7tlYU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Wbqlgd7tlYU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:54:16 |
-
----
-
 something is a game-changer. You would use this when you want to say that something is going to significantly
 
 alter a situation. So, once again, this

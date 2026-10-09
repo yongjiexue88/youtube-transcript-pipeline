@@ -1,16 +1,3 @@
-# How To Beat A Public Lewdness Charge In Texas (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Zw73InGxrR4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Zw73InGxrR4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 15:36:30 |
-
----
-
 public ludus what is it can you defeat your charges of public
 
 ludus hi I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about a crime that people don't really talk about much and you don't see it as often it's called the crime of public loudness now if you wait around to the end of this video I'm also going to leave you I'm going to provide you a free ebook what to do

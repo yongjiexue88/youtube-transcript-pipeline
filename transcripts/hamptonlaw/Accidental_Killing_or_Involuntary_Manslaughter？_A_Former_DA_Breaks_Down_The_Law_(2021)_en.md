@@ -1,16 +1,3 @@
-# Accidental Killing or Involuntary Manslaughter? A Former DA Breaks Down The Law (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Roq7nbWuKgc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Roq7nbWuKgc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:40:13 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel and Welcome to our video series today speaking about how do you know if
 
 an if an encounter that takes place was it an accidental killing or was it manslaughter and this is a question I actually get frequently that bring up the issue how do you know if it was an accidental death why do some people be get charged with manslaughter and some people do not

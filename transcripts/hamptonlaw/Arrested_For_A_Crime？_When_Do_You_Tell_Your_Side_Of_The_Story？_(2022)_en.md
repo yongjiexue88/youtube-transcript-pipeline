@@ -1,16 +1,3 @@
-# Arrested For A Crime? When Do You Tell Your Side Of The Story? (2022)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gMVmgBDCtuE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gMVmgBDCtuE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:53:28 |
-
----
-
 when do you get to tell your side of the story during a criminal
 
 case hi I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I'm going to talk about just that when do you get to tell your side you feel like everybody else has already made up their mind about whether you're guilty or not when do you get to set the record straight and let everybody know what really happened by the way if you wait around till the end of this video I'll also give you a free ebook what to do if you have been charged with a crime in Texas now you've

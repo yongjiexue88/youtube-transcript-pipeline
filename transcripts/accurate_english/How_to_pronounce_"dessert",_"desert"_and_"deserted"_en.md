@@ -1,16 +1,3 @@
-# How to pronounce "dessert", "desert" and "deserted"
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CD0B4JnixNI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CD0B4JnixNI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:32:58 |
-
----
-
 let's learn to correctly pronounce some very confusing words how do we say this word you say it did you say desert or did you say dessert did you stress the first syllable or the second syllable actually this spelling can be pronounced in two different ways and there are two different meanings you probably know the meaning of the first word it's desert desert we stress the first syllable a
 
 desert is a dry area of land this is a

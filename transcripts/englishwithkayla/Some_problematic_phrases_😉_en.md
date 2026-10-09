@@ -1,16 +1,3 @@
-# Some problematic phrases 😉
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `az9p-Lb64s0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=az9p-Lb64s0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:45:45 |
-
----
-
 hey Kayla what's a good phrase to say
 
 that something happened with no problems if you want to say that something happened with no problems and no issues

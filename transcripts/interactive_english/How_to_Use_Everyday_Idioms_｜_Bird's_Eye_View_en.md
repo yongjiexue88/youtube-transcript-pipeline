@@ -1,16 +1,3 @@
-# How to Use Everyday Idioms | Bird's Eye View
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MvlZxPgB0X4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MvlZxPgB0X4) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:52:12 |
-
----
-
 We have an amazing view! And today, I'm going to talk to you about...
 
 So today I want to talk to you about an idiom

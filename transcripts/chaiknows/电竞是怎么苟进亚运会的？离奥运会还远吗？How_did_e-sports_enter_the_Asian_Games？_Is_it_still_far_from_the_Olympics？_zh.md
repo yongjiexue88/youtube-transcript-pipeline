@@ -1,16 +1,3 @@
-# 电竞是怎么苟进亚运会的？离奥运会还远吗？How did e-sports enter the Asian Games? Is it still far from the Olympics?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fxnyMoJB0Bw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fxnyMoJB0Bw) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:42:38 |
-
----
-
 杭州亚运会在 9 月 24 日开幕了
 
 其中票最抢手的项目是

@@ -1,16 +1,3 @@
-# 60秒完成“微体检”，HUAWEI Watch 4 是怎么做到的？
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_HNx7j9qKW4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_HNx7j9qKW4) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:43:43 |
-
----
-
 只要最短 60 秒时间你就能用 HUAWEI Watch 4 做一次快速微体检得到心脏 血管 压力等结果
 
 如果结果显示你“压力山大”你就可以

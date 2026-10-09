@@ -1,16 +1,3 @@
-# Use These Advanced English Phrases to Sound Like a Native 🔥
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qQyusE3jKmE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qQyusE3jKmE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:54:40 |
-
----
-
 to cross that bridge when we come to it or to cross that bridge when we get to it. It means to deal with a problem if and when it arises. And really an emphasis on the if and when. Because basically what you're saying is that you're you're not going to stress out over a future problem because it might not ever occur. Instead, you're going to focus on the present and deal with issues as they come up.
 
 >> That's like step 37. And we're still on step four. Cross that bridge when we get there. >> We shake hands. and forget all this ever happened. >> We'll cross that bridge when we get to it. >> Then there's to get the short end of the stick. This means to be treated unfairly or to get the worst outcome. So, this idiom originates from the practice of drawing straws or drawing sticks. You hold them out, people choose, and whoever gets the shortest stick or shortest straw has to do the undesirable

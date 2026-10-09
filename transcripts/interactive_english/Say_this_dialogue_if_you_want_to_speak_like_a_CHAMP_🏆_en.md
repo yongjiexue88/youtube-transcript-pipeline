@@ -1,16 +1,3 @@
-# Say this dialogue if you want to speak like a CHAMP 🏆
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `O9pYeJg9KSw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=O9pYeJg9KSw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:56:23 |
-
----
-
 Welcome, welcome, welcome to today's speaking practice. That's right. This is a speaking practice and I want you to
 
 actually speak and practice your skills and try to copy and shadow what I'm

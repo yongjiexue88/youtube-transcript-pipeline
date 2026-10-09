@@ -1,16 +1,3 @@
-# Learn English Useful Phrases for Daily Conversation watching Gilmore Girls
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `83N7l83AHjA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=83N7l83AHjA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:40:22 |
-
----
-
 do you want to hear about one of the best ways to level up your English it's
 
 by listening to conversation and learning phrases with context in today's

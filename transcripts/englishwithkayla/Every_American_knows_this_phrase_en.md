@@ -1,16 +1,3 @@
-# Every American knows this phrase
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xjWv_u69y5w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xjWv_u69y5w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:42:38 |
-
----
-
 if you're learning English take notes
 
 this is a really good phrase that will help you so this phrase is really casual but it's

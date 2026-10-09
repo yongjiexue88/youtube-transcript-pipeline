@@ -1,16 +1,3 @@
-# DISABLE the NEW Device Network Cops Are Using to Spy on You
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zP7BLVNjvkI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zP7BLVNjvkI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:19:18 |
-
----
-
 If you value your privacy, you've probably worried a little bit about your Ring camera watching you or Alexa listening to you. And that fear makes sense. But while everyone's debating how individual devices are violating our privacy, almost no one's talking about the secret Amazon network that's quietly connecting all of us behind the scenes.
 
 And if you don't understand what Amazon is doing, you're about to allow police to know everything about you without ever needing a warrant. I'm Jeff Hampton, the People's Lawyer, and in this video I'm breaking down number one, >> what Amazon Sidewalk actually is. Number two, how it expands surveillance way beyond your home. And number three, why the real risk isn't the device on your counter, it's the privacy data highway built by Amazon.

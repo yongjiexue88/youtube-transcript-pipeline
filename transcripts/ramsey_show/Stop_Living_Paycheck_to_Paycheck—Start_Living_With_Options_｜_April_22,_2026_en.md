@@ -1,16 +1,3 @@
-# Stop Living Paycheck to Paycheck—Start Living With Options | April 22, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wtbSof0Rx68` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wtbSof0Rx68) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:35:29 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

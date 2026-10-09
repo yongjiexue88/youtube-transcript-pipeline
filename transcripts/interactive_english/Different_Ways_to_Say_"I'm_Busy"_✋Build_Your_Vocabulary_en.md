@@ -1,16 +1,3 @@
-# Different Ways to Say "I'm Busy" ✋Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zizryBoEk3c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zizryBoEk3c) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:06:12 |
-
----
-
 Are you a busy person? If so, then this lesson is for you because I'm going to teach you some different ways
 
 in which you can tell someone "I'm busy." That's coming up.

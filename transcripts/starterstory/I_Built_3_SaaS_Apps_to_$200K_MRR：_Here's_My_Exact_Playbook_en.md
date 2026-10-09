@@ -1,16 +1,3 @@
-# I Built 3 SaaS Apps to $200K MRR: Here's My Exact Playbook
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `67zh8_yiPh4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=67zh8_yiPh4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:17:49 |
-
----
-
 Right now, we have five apps and we're doing just over [music] 200 grand MRR.
 
 This is Mike, a founder from Australia who built five different SaaS apps that make a combined $200,000 MRR. But,

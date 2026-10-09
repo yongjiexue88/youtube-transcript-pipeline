@@ -1,16 +1,3 @@
-# LAWYER: How to Stop Cops From Taking Your Home Security Footage
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8OtZ_AfkeIU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8OtZ_AfkeIU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:27:18 |
-
----
-
 if you've got a home security system whether it's just a doorbell camera or a full Network surveillance system you probably feel much more secure but what happens when that sense of security is interrupted by the police knocking at your door or worse they show up with a
 
 warrant I'm Jeff Hampton former prosecutor turned people's lawyer and today we're going to talk about something that affects each and every one of us in this video I'm breaking down the three main ways police can legally get access to your security footage and what you can do to protect yourself from it first up let's talk about emergencies in life or death situations like kidnappings or violent crimes police have

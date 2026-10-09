@@ -1,16 +1,3 @@
-# Stop Hoping Someone Else Will Fix Your Money | December 15, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XVPj9bNpEM0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XVPj9bNpEM0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:54:20 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

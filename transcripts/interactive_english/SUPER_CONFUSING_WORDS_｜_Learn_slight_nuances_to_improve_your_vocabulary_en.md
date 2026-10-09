@@ -1,16 +1,3 @@
-# SUPER CONFUSING WORDS | Learn slight nuances to improve your vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VL_062B-Oug` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VL_062B-Oug) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:10:38 |
-
----
-
 Hello and welcome to today's lesson. I
 
 have a vocabulary lesson for you in

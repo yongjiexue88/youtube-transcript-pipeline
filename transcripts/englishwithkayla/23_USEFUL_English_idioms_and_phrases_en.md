@@ -1,16 +1,3 @@
-# 23 USEFUL English idioms and phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zVBGjs3mXZs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zVBGjs3mXZs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:50:55 |
-
----
-
 if you want to feel more confident and
 
 natural when you speak English it's very

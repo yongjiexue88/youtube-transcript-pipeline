@@ -1,16 +1,3 @@
-# Your English grammar is EXCELLENT if you can answer these
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `A7VGgI5-adY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=A7VGgI5-adY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:01:54 |
-
----
-
 If you can correctly answer these grammar questions, then well, your grammar skills are excellent. So, I have a quiz for you and I want to test your
 
 knowledge of English grammar. And I do think this is a little more challenging mostly for intermediate to advanced learners. So, let's go ahead and jump into it with our first question, which is right here. She speaks English as though she m a native. Now, I love it

@@ -1,16 +1,3 @@
-# Practice English speaking and conversation for 70 minutes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Kl1_HcKNkHU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Kl1_HcKNkHU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:55:01 |
-
----
-
 so if you want to talk about travel let's get started practice the
 
 conversation on screen hey are you

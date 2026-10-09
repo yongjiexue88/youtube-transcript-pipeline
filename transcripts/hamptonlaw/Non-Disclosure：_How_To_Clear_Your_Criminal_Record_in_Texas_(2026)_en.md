@@ -1,16 +1,3 @@
-# Non-Disclosure: How To Clear Your Criminal Record in Texas (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ljESuht9j_I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ljESuht9j_I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:34:37 |
-
----
-
 how do you clear your criminal record did you make a mistake in the past maybe you completed a
 
 probation let's talk today about how to get that charge off your record thanks

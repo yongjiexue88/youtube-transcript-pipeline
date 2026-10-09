@@ -1,16 +1,3 @@
-# Natural English phrases for conversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1Vg8gPBi-wE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1Vg8gPBi-wE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:57:38 |
-
----
-
 you should be learning English from someone who really teaches you phrases
 
 that are not out of date and not

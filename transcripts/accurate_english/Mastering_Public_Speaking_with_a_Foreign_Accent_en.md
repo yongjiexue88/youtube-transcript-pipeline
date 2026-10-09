@@ -1,16 +1,3 @@
-# Mastering Public Speaking with a Foreign Accent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dP3CUzmVCQ8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dP3CUzmVCQ8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:48:35 |
-
----
-
 hi i'm lisa in this video i will teach you some common expressions that native speakers use in a professional environment you will listen to my conversation with a young man who works in the professional world he uses a lot of different expressions that i think will be useful for you to know in addition we will analyze the way he's speaking we will analyze his accent so that you can also practice speaking with the standard american accent
 
 before you watch the video with my conversation with the native speaker i want to give you an example of how a non-native speaker might say something and then how a native speaker might say the same thing using some common expressions and these are expressions that you will hear the native speaker using in this video for example a non-native speaker might

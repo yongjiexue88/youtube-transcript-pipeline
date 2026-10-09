@@ -1,16 +1,3 @@
-# 35 Friendly English phrases for everyday conversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zzR2dIVtE-4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zzR2dIVtE-4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:53:31 |
-
----
-
 one of the most important parts of
 
 speaking a new language and speaking

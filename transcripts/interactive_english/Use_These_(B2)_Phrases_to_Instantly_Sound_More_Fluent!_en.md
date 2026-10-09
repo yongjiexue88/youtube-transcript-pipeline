@@ -1,16 +1,3 @@
-# Use These (B2) Phrases to Instantly Sound More Fluent!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cxExOyY3kH4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cxExOyY3kH4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:44:36 |
-
----
-
 let's learn some B2 phrases that you
 
 absolutely need to know and I say this

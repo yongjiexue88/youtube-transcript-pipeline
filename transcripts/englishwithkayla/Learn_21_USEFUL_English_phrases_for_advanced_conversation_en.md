@@ -1,16 +1,3 @@
-# Learn 21 USEFUL English phrases for advanced conversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `46NXAoiUKeU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=46NXAoiUKeU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:50:08 |
-
----
-
 don't waste your time studying English
 
 from a dictionary or a textbook in

@@ -1,16 +1,3 @@
-# IT DOESN'T DO IT JUSTICE. (Advanced C2 Phrase) #interactiveenglish #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FfUptv3geec` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FfUptv3geec) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:59:26 |
-
----
-
 the Grand Canyon is breathtaking
 
 pictures don't do it justice to do

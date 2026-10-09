@@ -1,16 +1,3 @@
-# American Culture Quiz 🇺🇸  (ONLY 3% CAN PASS THIS TEST)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TffOC4_lqMU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TffOC4_lqMU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:15:59 |
-
----
-
 hey everyone welcome to today's lesson
 
 this is uh i've been looking forward to this lesson for a while because we are going to talk well a little bit about american culture so i have a quiz

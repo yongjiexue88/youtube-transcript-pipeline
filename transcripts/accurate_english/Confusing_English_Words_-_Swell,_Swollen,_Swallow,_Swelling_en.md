@@ -1,16 +1,3 @@
-# Confusing English Words - Swell, Swollen, Swallow, Swelling
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GvaMyCjUiOc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GvaMyCjUiOc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:57:04 |
-
----
-
 let's learn the difference between some confusing English words swell swelled swollen swallow do you confuse some of
 
 those words a lot of my students confuse the meaning of those words first I will teach you the meaning and after that we will practice saying them in sentences so that you can practice word stress and linking and finally after that I will teach you some idiomatic expressions that contain these words this video is sponsored by I taki

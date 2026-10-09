@@ -1,16 +1,3 @@
-# STOP SAYING UM, AH, ER, LIKE... | Avoid Using Fillers for Effective Speaking
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `W0mEQ0IyfL8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=W0mEQ0IyfL8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:11:13 |
-
----
-
 So this lesson is uh like um so you know
 
 it's about fillers. So I have a new word for you and that is dfluency. It's not a word you need to know for just everyday conversation but in linguistics it refers to interruptions in the regular flow of speech. So fillers are an example of disfluency and we use fillers

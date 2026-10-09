@@ -1,16 +1,3 @@
-# Learn the English texting abbreviation “IYKYK” | #shorts #englishlesson #englishslang
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `g5T3LSL5c-s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=g5T3LSL5c-s) |
-| **Language** | Portuguese (auto-generated) (pt) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:34:28 |
-
----
-
 e é final you não a New York woman and
 
 taxing baby em inglês and I wake just

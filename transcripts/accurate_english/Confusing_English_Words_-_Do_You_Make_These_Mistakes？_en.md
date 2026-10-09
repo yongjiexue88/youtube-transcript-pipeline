@@ -1,16 +1,3 @@
-# Confusing English Words - Do You Make These Mistakes?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `E-OnlJC-svU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=E-OnlJC-svU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:21:34 |
-
----
-
 If you follow my channel, you're already an advanced English speaker. My goal is to take your English to the final level of fluency. Let's advance your English vocabulary so that you can speak English with confidence and with accuracy. In this video, I will teach you some commonly confused words. For example,
 
 what is the difference between appraise versus apprise? Or when do we say in

@@ -1,16 +1,3 @@
-# Advanced (C2) Vocabulary in 60 Minutes | Phrases, Verbs, Nouns, and Adjectives You Should Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MrsC3GCo9vs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MrsC3GCo9vs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:56:11 |
-
----
-
 This is a massive vocabulary lesson
 
 because in the next hour I am going to teach you many different C2 phrases, verbs, nouns, adjectives. And if you're wondering what that means, C2, this is Cambridge's highest level of proficiency and really just means that, well, you are a proficient speaker of English. And what I would encourage you to do is just take your time. As you go through the lesson, think about the examples, probably rewatch the lesson a week from

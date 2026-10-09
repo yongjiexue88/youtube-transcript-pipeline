@@ -1,16 +1,3 @@
-# Learn essential English phrases for staying in a hotel
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xzxEaDy5Tw4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xzxEaDy5Tw4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:54:22 |
-
----
-
 if you're traveling to the United States there's a very good chance that you'll need to stay in a hotel if you stay in a hotel you'll need to know these essential vocabulary words and phrases
 
 and some American cultural knowledge whether it's a fancy hotel or a cheap

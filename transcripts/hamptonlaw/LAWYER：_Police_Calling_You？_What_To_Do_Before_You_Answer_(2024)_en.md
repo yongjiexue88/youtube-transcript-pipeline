@@ -1,16 +1,3 @@
-# LAWYER: Police Calling You? What To Do Before You Answer (2024)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `M-FNFzrWERk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=M-FNFzrWERk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 21:04:42 |
-
----
-
 hey everybody I just wanted to take a couple of minutes here and uh answer a question that comes up all the time probably at least once a week I get calls from uh potential clients that reach out to me or current clients and they say hey Jeff I got a phone call from a detective what should I do should I call it back what exactly should I say well in
 
 this video I want to explain the real reason why the detective would call someone why they would potentially call you and why they would want to meet up with you um and it's not exact what you might think it is so and how and it will

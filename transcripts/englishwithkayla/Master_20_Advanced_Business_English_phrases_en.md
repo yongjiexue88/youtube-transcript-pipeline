@@ -1,16 +1,3 @@
-# Master 20 Advanced Business English phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dDAhejfmoCI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dDAhejfmoCI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:53:24 |
-
----
-
 in today's lesson I'm going to teach you
 
 20 phrases that will be very useful in

@@ -1,16 +1,3 @@
-# Debt Is the Enemy of Your Freedom | September 17, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RvzMMBElIsc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RvzMMBElIsc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:07:46 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

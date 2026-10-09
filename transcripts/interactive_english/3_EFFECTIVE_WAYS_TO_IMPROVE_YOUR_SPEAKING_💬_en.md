@@ -1,16 +1,3 @@
-# 3 EFFECTIVE WAYS TO IMPROVE YOUR SPEAKING 💬
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-fFjhzX9WnE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-fFjhzX9WnE) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:54:12 |
-
----
-
 This is one of the most common questions that English learners ask.
 
 And I'll tell you the answer!

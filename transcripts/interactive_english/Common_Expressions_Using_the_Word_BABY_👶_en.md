@@ -1,16 +1,3 @@
-# Common Expressions Using the Word BABY 👶
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hZqXoGRhTCA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hZqXoGRhTCA) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:45:25 |
-
----
-
 So today I want to teach you English expressions that are all related to babies.
 
 You're not looking at the camera.

@@ -1,16 +1,3 @@
-# How I Used Reddit to Hit $17K MRR (With ZERO Audience)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BaWUPamqWlA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BaWUPamqWlA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:22:47 |
-
----
-
 I built a 17K MR SAS with less than 100
 
 followers on X. A few weeks back, I got a cold DM from a guy named Diego. He

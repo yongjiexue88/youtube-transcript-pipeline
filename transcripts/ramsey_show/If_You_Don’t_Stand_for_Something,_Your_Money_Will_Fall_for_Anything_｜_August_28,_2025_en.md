@@ -1,16 +1,3 @@
-# If You Don’t Stand for Something, Your Money Will Fall for Anything | August 28, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `19qeeKs0LW4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=19qeeKs0LW4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:10:35 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

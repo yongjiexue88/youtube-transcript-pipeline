@@ -1,16 +1,3 @@
-# Don’t make this mistake 😫
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xWMa-SIWhsk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xWMa-SIWhsk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:52:34 |
-
----
-
 can you recommend me the best book for
 
 learning english okay never say recommend me you can say

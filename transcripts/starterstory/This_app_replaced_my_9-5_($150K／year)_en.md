@@ -1,16 +1,3 @@
-# This app replaced my 9-5 ($150K/year)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `w3zxMrwWrt0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=w3zxMrwWrt0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:20:01 |
-
----
-
 I'm Chris and I turned a really simple wish list app into a 150k a year business and now 2 months ago I quit my job. >> Meet Chris. He built a simple app that pays him six figures a year.
 
 >> I didn't do any marketing the standard way. >> But what's even crazier is that he did it all without having to quit his full-time job. So what did he build?

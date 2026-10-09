@@ -1,16 +1,3 @@
-# 玩黑胶到底在玩什么？黑胶里的音乐更特别吗？What exactly is playing vinyl? Is the music on vinyl more special?【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7I_VgNRU4VA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7I_VgNRU4VA) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:39:41 |
-
----
-
 这是一台唱片机装上黑胶打开开关你就能听到一段充满仪式感的音乐
 
 甚至只要借助一张白纸

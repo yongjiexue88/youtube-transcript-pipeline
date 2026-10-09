@@ -1,16 +1,3 @@
-# Expunction - 5 Tips To ERASE Your Criminal Record (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rxS1DOHsVoQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rxS1DOHsVoQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 20:19:42 |
-
----
-
 hey everybody I wanted to hop on here for a few minutes and talk about a subject associated with uh clearing your criminal record that is an expunction let's talk about what is an expunction now uh if you like what you're going to hear today if you like the content that we're providing here at the Hampton Law Firm on our YouTube channel I encourage you to subscribe to our YouTube channel
 
 and uh for more great free content uh plenty of videos for you to refer and look to know everything related to Texas a law all right so today I want to explain the ins and outs of an ex function what is it how does it work and

@@ -1,16 +1,3 @@
-# How We Built a $10K/mo SaaS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3eY71OS4MFw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3eY71OS4MFw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:19:52 |
-
----
-
 My name is Joseph and I'm Teimmo.
 
 Together, we built Cedari to 10K MR.

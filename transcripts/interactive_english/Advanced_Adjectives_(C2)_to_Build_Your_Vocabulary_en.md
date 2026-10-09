@@ -1,16 +1,3 @@
-# Advanced Adjectives (C2) to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KLZrMur4Z40` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KLZrMur4Z40) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:02:20 |
-
----
-
 let's learn some advanced c2 adjectives
 
 to help you build your vocabulary and i

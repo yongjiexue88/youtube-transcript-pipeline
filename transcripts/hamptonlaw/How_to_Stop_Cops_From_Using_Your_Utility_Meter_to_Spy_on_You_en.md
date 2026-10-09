@@ -1,16 +1,3 @@
-# How to Stop Cops From Using Your Utility Meter to Spy on You
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Y9rXGbayJa4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Y9rXGbayJa4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:20:34 |
-
----
-
 You probably never agreed to let cops monitor your sleeping habits, but if you have a smart utility meter in your house, they can. And they don't even need a warrant because that little gray box logs your daily routine in minute-by-minute detail. And law enforcement is pulling this data from across the US. I'm Jeff Hampton, the people's lawyer, and in today's video, I'm going to show you how your electricity usage is being spied on by the cops without your knowledge or your consent.
 
 and they don't even need a search warrant. But stick around to the end because I'm going to show you exactly how to protect yourself and the specific steps you can take to stop cops from spying on your smart meter. We've all heard of smart meters. Smart meters are advanced digital electric meters that utilities installed to monitor electricity consumption in near real time.

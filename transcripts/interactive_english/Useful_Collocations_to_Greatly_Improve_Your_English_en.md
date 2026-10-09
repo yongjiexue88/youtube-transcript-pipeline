@@ -1,16 +1,3 @@
-# Useful Collocations to Greatly Improve Your English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ojr7ZWqX3_M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ojr7ZWqX3_M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:15:00 |
-
----
-
 Hello. Welcome to today's lesson. I was
 
 gonna say it's been uh I feel like it's been a little bit of a little while since I've done a live class, but today

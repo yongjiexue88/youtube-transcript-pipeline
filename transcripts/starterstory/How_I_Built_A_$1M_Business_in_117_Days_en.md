@@ -1,16 +1,3 @@
-# How I Built A $1M Business in 117 Days
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `E_sPvPHwpuk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=E_sPvPHwpuk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:22:59 |
-
----
-
 A few weeks ago, I got a DM on X from this guy named Yasser. We got to chatting and he told me something I couldn't believe. He took his app from 0 to 1 million in just7
 
 days. And what's even crazier is he did it with zero audience. When I launched, I only had 16 followers. I brought Yaser onto the channel to talk about how he did it and he shared everything, including a breakdown of the tweet that changed his life, how to make millions with AI agents, and what most people get wrong when it comes to building their MVP. This one you can't miss. I'm Pat

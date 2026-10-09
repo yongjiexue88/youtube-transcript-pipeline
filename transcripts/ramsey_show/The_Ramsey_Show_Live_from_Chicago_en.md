@@ -1,16 +1,3 @@
-# The Ramsey Show Live from Chicago
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `o3fGWA4pQ5g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=o3fGWA4pQ5g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:03:03 |
-
----
-
 Heat [Music]
 
 [Applause]

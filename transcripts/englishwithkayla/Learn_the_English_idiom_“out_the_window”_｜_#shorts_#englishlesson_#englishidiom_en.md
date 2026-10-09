@@ -1,16 +1,3 @@
-# Learn the English idiom “out the window” | #shorts #englishlesson #englishidiom
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LpxMueKbbWg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LpxMueKbbWg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:30:15 |
-
----
-
 even though you might feel like coronavirus is not really a risk right
 
 now don't let caution go out the window the

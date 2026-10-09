@@ -1,16 +1,3 @@
-# Do You Want to Reduce Your English Accent?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hb2w-rMrmHc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hb2w-rMrmHc) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:43:12 |
-
----
-
 Today, I am going to tell you three different
 
 ways that you can reduce your English accent.

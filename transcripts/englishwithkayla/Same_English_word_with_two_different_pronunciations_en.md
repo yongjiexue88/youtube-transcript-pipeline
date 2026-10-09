@@ -1,16 +1,3 @@
-# Same English word with two different pronunciations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `K0JFUoVFM7s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=K0JFUoVFM7s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:08:39 |
-
----
-
 do you know the two ways to pronounce
 
 this word it's close and close close and

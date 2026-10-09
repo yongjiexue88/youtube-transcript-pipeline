@@ -1,16 +1,3 @@
-# Super Useful Phrasal Verbs for Everyday English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wsK2_cVMpB4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wsK2_cVMpB4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:58:11 |
-
----
-
 what's up everyone today I'm coming at
 
 you with a phrasal verb lesson so these

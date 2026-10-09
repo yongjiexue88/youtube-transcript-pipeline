@@ -1,16 +1,3 @@
-# If I Had Known This… I Would Sound Fluent in English!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-Au3spuzM44` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-Au3spuzM44) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:52:39 |
-
----
-
 mixed conditionals this is Advanced
 
 grammar and these sentences can be a

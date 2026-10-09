@@ -1,16 +1,3 @@
-# How I Built It: $23K/month micro-saas
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NvtsM8Nk72c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NvtsM8Nk72c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:21:39 |
-
----
-
 So, I'm Andy Cloak. I'm the founder of Data Fetcher and I make $23,000 a month in recurring revenue. >> This is Andy. He's a solo founder who lives in London and he built a successful micro SAS with one simple strategy.
 
 >> So, step one is you want to find a I brought him onto the channel to break down exactly how he built this $23,000 per month business. In this video, we'll go over the genius platform strategy hiding in plain sight, his six-step framework for finding $20,000 per month ideas, and a few business ideas that you can build in 2025. All right, let's get into it.

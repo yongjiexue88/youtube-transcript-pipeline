@@ -1,16 +1,3 @@
-# Money Chaos Doesn’t Have to Be Forever | September 18, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `X_UxUr5QAhA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=X_UxUr5QAhA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:07:29 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

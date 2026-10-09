@@ -1,16 +1,3 @@
-# How to fix your advanced grammar mistakes - 4 TIPS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `x2U_AEiqP8w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=x2U_AEiqP8w) |
-| **Language** | Dutch (auto-generated) (nl) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:58:42 |
-
----
-
 in deze video een like te geven je voor tips wijk oude stad peking advanced level grammar mistakes of van 2 cm is tex
 
 alle mijn student in los angeles of advanced and their concert florent however there still making some grammar

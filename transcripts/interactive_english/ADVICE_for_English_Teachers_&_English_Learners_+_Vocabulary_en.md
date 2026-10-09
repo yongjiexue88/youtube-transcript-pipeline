@@ -1,16 +1,3 @@
-# ADVICE for English Teachers & English Learners + Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2mAcTakk94w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2mAcTakk94w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:28:25 |
-
----
-
 hey everyone welcome to today's lesson
 
 my name is Wes this is interactive

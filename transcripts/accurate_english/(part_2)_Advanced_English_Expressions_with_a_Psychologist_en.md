@@ -1,16 +1,3 @@
-# (part 2) Advanced English Expressions with a Psychologist
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Mu-ijoD2Iqc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Mu-ijoD2Iqc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:44:15 |
-
----
-
 hi i'm lisa this is another video to
 
 take your english to the final level of fluency you're going to listen to a conversation that i have with a native speaker in los angeles i will teach you a lot of different expressions that the native speaker is using and we will talk about some pronunciation rules

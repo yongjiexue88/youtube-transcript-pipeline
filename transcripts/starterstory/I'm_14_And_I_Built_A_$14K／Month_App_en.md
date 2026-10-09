@@ -1,16 +1,3 @@
-# I'm 14 And I Built A $14K/Month App
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dWeoSKLt_fc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dWeoSKLt_fc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:11:28 |
-
----
-
 My name is Evan and I scaled an app called Locked to $14,000 per month in only a few months. Meet Evan. He just launched a mobile app and 4 months later it's doing $14,000 a month. But here's
 
 what makes this story different. He didn't launch with a huge audience or run paid ads. He only had one strategy

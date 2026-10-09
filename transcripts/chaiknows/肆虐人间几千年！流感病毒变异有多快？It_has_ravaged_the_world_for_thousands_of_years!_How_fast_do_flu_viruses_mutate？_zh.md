@@ -1,16 +1,3 @@
-# 肆虐人间几千年！流感病毒变异有多快？It has ravaged the world for thousands of years! How fast do flu viruses mutate?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `n5tpFu_Aw6A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=n5tpFu_Aw6A) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:46:50 |
-
----
-
 1918 年冬春交际时一种传播力极强人 禽 畜通吃的流感病毒 H1N1 在美国堪萨斯州悄悄蔓延
 
 并最终在一个军营中爆发

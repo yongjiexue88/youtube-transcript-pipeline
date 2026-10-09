@@ -1,16 +1,3 @@
-# Awesome Listening & Speaking Practice | Transportation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `r13bhCmpZoM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=r13bhCmpZoM) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:53:16 |
-
----
-
 Hi there and welcome! Today we're going to do your favorite speaking practice: describing nouns
 
 Today's topic is transportation and this is a listening and speaking activity.

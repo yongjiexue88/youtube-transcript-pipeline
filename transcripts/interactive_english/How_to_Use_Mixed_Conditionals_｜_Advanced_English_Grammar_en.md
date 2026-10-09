@@ -1,16 +1,3 @@
-# How to Use Mixed Conditionals | Advanced English Grammar
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xB5oEk-PmZg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xB5oEk-PmZg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:42:23 |
-
----
-
 hello and welcome to today's lesson and
 
 today we are going to have a very very

@@ -1,16 +1,3 @@
-# How to Stop Cops From Using an Air Freshener to Get Around Your Rights
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qW_GxopzAQo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qW_GxopzAQo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:22:36 |
-
----
-
 Can a cop pull you over for an air freshener hanging from your car's rearview mirror? The Supreme Court said yes. This happened to Richard H. Hot.
 
 Hotton. Richard was driving through Wisconsin with an air freshener, one of those pine tree air fresheners on his rearview mirror and he got pulled over by cops. All because what? He got

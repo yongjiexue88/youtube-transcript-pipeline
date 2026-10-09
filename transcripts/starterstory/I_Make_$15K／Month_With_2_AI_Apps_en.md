@@ -1,16 +1,3 @@
-# I Make $15K/Month With 2 AI Apps
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `G4nsGvL4Fo0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=G4nsGvL4Fo0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:27:00 |
-
----
-
 I personally used to think that I could never ship a profitable product because I was not amazing at coding reaching this point where I'm earning 15K all my products it's it feels unreal how did this guy build two SAS products to $115,000 Mr as an average coder well
 
 it's because of his approach on how to find winning ideas nich down as much as possible I only need 0.1% of the market

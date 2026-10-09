@@ -1,16 +1,3 @@
-# If Cops IGNORE Your "No Trespassing" Signs - Say THIS (Simple Phrase)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xpz6B_3B7JI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xpz6B_3B7JI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:54:16 |
-
----
-
 You probably think your backyard is off limits to the cops. I mean, if it's attached to your property, they can't just walk back there without a warrant, right? Wrong. In real cases, people with fenced yards, no trespassing signs, and full ownership still had cops walk right into their yard.
 
 And when that happens, the cops can use anything they see to point a finger at you. I'm Jeff Hampton, the people's lawyer, and in this video, I'm going to show you the four tricks cops use to trespass on your property, and if you'll stick around to the end, I'll also show you the exact way you can set up your property to stop cops from invading your privacy. But before we get into the tricks, there is a crucial legal term you must know, curtilage. You see, most people assume the Fourth Amendment draws a clear, bright line around your backyard.

@@ -1,16 +1,3 @@
-# You Don't Get Ahead By Coincidence | April 17, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `G6LLsSqODhM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=G6LLsSqODhM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:36:08 |
-
----
-
 [music] >> Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

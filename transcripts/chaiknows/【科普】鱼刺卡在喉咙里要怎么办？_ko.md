@@ -1,16 +1,3 @@
-# 【科普】鱼刺卡在喉咙里要怎么办？
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VX5TOGV4RY8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VX5TOGV4RY8) |
-| **Language** | Korean (auto-generated) (ko) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 14:35:37 |
-
----
-
 자주 답장 출시 다양 읽어 밥 한 덩이 너 영원히 쓰려고 거동 가지는
 
 리코더 걸 알아서 너희 배달 하나님 형 red 파랑 매로 붉어 촘 정말

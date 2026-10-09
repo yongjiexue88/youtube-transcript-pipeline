@@ -1,16 +1,3 @@
-# Interference With Public Duties Charge in Texas: Is it Illegal to Record an Arrest? (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xQIVRRiOvOA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xQIVRRiOvOA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:59:52 |
-
----
-
 interference with public duties what does that even mean is there a way that you can defend your interference with public duties
 
 case hi I'm Jeff Hampton with the Hampton Law Firm I want to welcome you to our YouTube channel and today I want to talk about a crime that very few people know what it's called but if you've been arrested for it you know what it's all about I'm going to talk to you about interference with public public duties and by the way if you wait around to

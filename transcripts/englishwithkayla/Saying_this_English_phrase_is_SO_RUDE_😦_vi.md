@@ -1,16 +1,3 @@
-# Saying this English phrase is SO RUDE 😦
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jBPUC1CLfEI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jBPUC1CLfEI) |
-| **Language** | Vietnamese (auto-generated) (vi) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:07:27 |
-
----
-
 If you know to Face the English Speaking
 
 you were there on something you the sea

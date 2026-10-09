@@ -1,16 +1,3 @@
-# LAWYER: 9 Things to NEVER Say to a Judge
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4oeBHMiRCUE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4oeBHMiRCUE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:40:17 |
-
----
-
 I've seen clients say the wrong thing at the wrong time to a judge and when you do that you'll land yourself in some serious trouble so here are nine things you never want to say in front of a judge and we're going to start with the least offensive and work our way up if the judge says something wrong never interrup him I had a client that I represented years ago
 
 he was charged with theft from his employer he was standing in front of the judge and as he was about to do his plea the judge looked at him and said what have we learned here today well the client said well judge I've learned that I shouldn't be stealing things from my employer he goes That's right from what I can tell it looks like you've stolen about $500 from your employer

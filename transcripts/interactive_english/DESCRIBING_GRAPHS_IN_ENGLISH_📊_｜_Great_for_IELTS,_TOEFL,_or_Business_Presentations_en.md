@@ -1,16 +1,3 @@
-# DESCRIBING GRAPHS IN ENGLISH 📊 | Great for IELTS, TOEFL, or Business Presentations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tApPdt_Y8jE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tApPdt_Y8jE) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:33:59 |
-
----
-
 - You know what's more exciting than a graph?
 
 Describing it.

@@ -1,16 +1,3 @@
-# Intermediate Listening & Speaking Activity | Describe Words Around the Home
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `C7L6jGWEUW4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=C7L6jGWEUW4) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:42:10 |
-
----
-
 Welcome to our global classroom.
 
 Are you ready for a new lesson? It's time for describing nouns.

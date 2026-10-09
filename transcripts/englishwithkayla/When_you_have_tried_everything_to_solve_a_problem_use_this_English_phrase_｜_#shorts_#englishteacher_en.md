@@ -1,16 +1,3 @@
-# When you have tried everything to solve a problem use this English phrase | #shorts #englishteacher
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Ma7VcLl-Des` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Ma7VcLl-Des) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:32:57 |
-
----
-
 if you have tried just about everything
 
 to solve a problem you can use the phrase i've tried every

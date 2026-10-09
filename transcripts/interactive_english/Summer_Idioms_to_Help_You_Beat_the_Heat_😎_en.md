@@ -1,16 +1,3 @@
-# Summer Idioms to Help You Beat the Heat 😎
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RX12T3J0R9s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RX12T3J0R9s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:48:49 |
-
----
-
 I'm going to teach you these expressions, come rain or shine. And I'll tell you what that means in just a second.
 
 What's up, everyone? In today's lesson,

@@ -1,16 +1,3 @@
-# LAWYER: Lies Police Love to Use (And How to Shut Them Down)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YoKsuZGI9G4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YoKsuZGI9G4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:21:48 |
-
----
-
 think police have to tell the truth.
 
 Unfortunately, they don't. Not during questioning, not during traffic stops, not even during arrests. In fact, they are trained at the academy to lie when it suits them. And most of what they say, it sounds reasonable until it wrecks your life.

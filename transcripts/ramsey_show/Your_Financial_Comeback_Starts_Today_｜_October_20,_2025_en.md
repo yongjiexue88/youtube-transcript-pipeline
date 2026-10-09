@@ -1,16 +1,3 @@
-# Your Financial Comeback Starts Today | October 20, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `snA4zki844k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=snA4zki844k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:02:50 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

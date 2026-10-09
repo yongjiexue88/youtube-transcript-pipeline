@@ -1,16 +1,3 @@
-# I built a $100K/month AI app
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DV7bBCAABg4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DV7bBCAABg4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:19:19 |
-
----
-
 I built an AI platform that makes almost $100,000 a month. This is Dustin, and
 
 just 2 years ago, he came across an idea that changed his life. I saw very quickly where the world was headed, and almost like a revelation, saw what the next 3 years would look like. So, he did something crazy. With no money and no coding experience, he taught himself how to build apps, and he built an MVP.

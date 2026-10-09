@@ -1,16 +1,3 @@
-# I Built an App with Cursor, Made $30K, and Quit My Job.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jpSY4MlWX50` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jpSY4MlWX50) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:24:30 |
-
----
-
 I prompted my way to $30,000 without writing a single line of code. This guy made $30,000 from an app he built on his
 
 morning commute. How? Two tools, Cursor

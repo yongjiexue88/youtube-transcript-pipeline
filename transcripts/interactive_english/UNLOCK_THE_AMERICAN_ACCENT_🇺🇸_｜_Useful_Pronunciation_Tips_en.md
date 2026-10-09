@@ -1,16 +1,3 @@
-# UNLOCK THE AMERICAN ACCENT 🇺🇸 | Useful Pronunciation Tips
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Q_A2DUy9bro` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Q_A2DUy9bro) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:08:50 |
-
----
-
 today i have 10 pronunciation tips to
 
 help you improve your speaking fluency

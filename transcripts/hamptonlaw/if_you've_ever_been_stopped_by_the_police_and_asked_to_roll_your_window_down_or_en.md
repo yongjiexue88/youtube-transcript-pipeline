@@ -1,16 +1,3 @@
-# if you've ever been stopped by the police and asked to roll your window down or
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `x-ZCHJrd8yo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=x-ZCHJrd8yo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:32:18 |
-
----
-
 if you've ever been stopped by the police and asked to roll your window down or maybe even up you might wonder
 
 can I refuse can I actually say no to the officer and if I do what can I do to protect myself from what the officer might do next in this video I'm breaking down how to protect yourself in three key situations number one when officers want to check your window tent and they demand that you roll your window up so they can use their window tent meter number two is

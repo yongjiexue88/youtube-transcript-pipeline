@@ -1,16 +1,3 @@
-# 40 Super Useful Phrases to Show that You Care
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jXVdz6tM6is` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jXVdz6tM6is) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:09:27 |
-
----
-
 we all have close relationships family
 
 friends colleagues so i want to teach

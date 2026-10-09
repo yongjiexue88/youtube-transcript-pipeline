@@ -1,16 +1,3 @@
-# English Idioms That Will Blow Your Mind 💥
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `I13lZlLLdkQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=I13lZlLLdkQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:55:16 |
-
----
-
 I want to hit the ground running. And we'll begin with that idiom right there, to hit the ground running. This means to immediately work hard and successfully at a new activity. And it really has a
 
 positive connotation. So, this is a great idiom that you can use when talking about work or just any activity that you're really excited to do. The project begins next week. We really need to focus so that we can hit the ground running.

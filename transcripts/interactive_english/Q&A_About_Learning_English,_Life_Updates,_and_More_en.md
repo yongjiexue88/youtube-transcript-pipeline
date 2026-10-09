@@ -1,16 +1,3 @@
-# Q&A About Learning English, Life Updates, and More
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ACG6bimWkd4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ACG6bimWkd4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:37:59 |
-
----
-
 all right so I think this may be working
 
 right now I'm gonna have to see so I

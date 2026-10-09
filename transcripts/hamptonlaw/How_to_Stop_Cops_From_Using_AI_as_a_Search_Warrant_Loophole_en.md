@@ -1,16 +1,3 @@
-# How to Stop Cops From Using AI as a Search Warrant Loophole
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `J6fyJdOclq4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=J6fyJdOclq4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:24:14 |
-
----
-
 you're driving home ready to unwind when
 
 suddenly flashing lights appear behind you an officer pulls you over walks up to your window starts asking you a few questions and then suddenly he pulls out the Cuffs he Yanks you out of your car and arrest you for a crime a crime you

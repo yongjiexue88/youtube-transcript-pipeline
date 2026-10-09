@@ -1,16 +1,3 @@
-# Master Fast Native English Speaking
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_VcKkk4vxyw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_VcKkk4vxyw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:51:31 |
-
----
-
 do you want to understand and speak fast
 
 flu in English in this English lesson

@@ -1,16 +1,3 @@
-# Idioms and Advanced Grammar Practice with Native Speaker in LA
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7-nacBzEQJ0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7-nacBzEQJ0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:53:59 |
-
----
-
 in this video we will continue the series of listening to native speakers in Los Angeles I analyze the expressions
 
 they're using and I teach you some useful common everyday idiomatic expressions we will also review an advanced grammar rule and I will give you some practice sentences and we will learn the correct pronunciation of some difficult words we have a lot of topics to talk about let's get started you will

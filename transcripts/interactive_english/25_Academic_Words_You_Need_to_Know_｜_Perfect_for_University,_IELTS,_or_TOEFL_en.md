@@ -1,16 +1,3 @@
-# 25 Academic Words You Need to Know | Perfect for University, IELTS, or TOEFL
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `iTJgIgCtNi4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=iTJgIgCtNi4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:23:01 |
-
----
-
 let's talk about 25 important academic
 
 words that you should know that's coming up

@@ -1,16 +1,3 @@
-# British vs. American Accent - Differences - 5 Most Common Words | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zI3nBFtEAQM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zI3nBFtEAQM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:01:37 |
-
----
-
 in this video I would like to teach you five of the most common English words that are pronounced differently in British English versus American English you can decide how you wish to pronounce
 
 them depending on if you'd like to speak with an American accent or a British accent at the end of this video we will

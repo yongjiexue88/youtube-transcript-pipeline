@@ -1,16 +1,3 @@
-# SUPER USEFUL PHRASES | Binomial Pair Quiz
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Ip0tLocuHjA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Ip0tLocuHjA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:08:28 |
-
----
-
 i read you um and clear
 
 which word completes that sentence i

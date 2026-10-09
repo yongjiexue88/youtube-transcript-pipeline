@@ -1,16 +1,3 @@
-# 21 everyday English expressions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `i5n5ibP91ds` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=i5n5ibP91ds) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:51:41 |
-
----
-
 do you want to sound like a fluent
 
 native natural English speaker even

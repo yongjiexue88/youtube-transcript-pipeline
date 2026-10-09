@@ -1,16 +1,3 @@
-# 50 Advanced English adjectives to describe people
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kyLwbsq1nz0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kyLwbsq1nz0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:02:28 |
-
----
-
 personable
 
 personable if someone is personable they

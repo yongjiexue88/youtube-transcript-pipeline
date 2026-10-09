@@ -1,16 +1,3 @@
-# ADVANCED SCIENCE VOCABULARY | Words & Phrases You Should Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `67PIzr-Pukk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=67PIzr-Pukk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:06:08 |
-
----
-
 science is what we're going to talk
 
 about today and I have some I think

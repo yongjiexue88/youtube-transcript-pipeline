@@ -1,16 +1,3 @@
-# Shortcuts Won’t Help You Get Ahead With Money | May 4, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XiAs3A1qoqg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XiAs3A1qoqg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:33:48 |
-
----
-
 This is an ad for Better Help. You work so hard to be the strong one for everyone else, but you're running on empty. The pressure to show up doesn't just disappear, it takes over your life.
 
 And talking to someone can help. Go to betterhelp.com/ramsey for 10% off.

@@ -1,16 +1,3 @@
-# Super Useful Idioms & Phrases for the US Election 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `e5WT0kQjaew` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=e5WT0kQjaew) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:03:28 |
-
----
-
 We just had an election in the US. It's
 
 big news and we will talk about that.

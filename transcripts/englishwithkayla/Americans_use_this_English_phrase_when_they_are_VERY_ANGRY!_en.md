@@ -1,16 +1,3 @@
-# Americans use this English phrase when they are VERY ANGRY!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sIPFynlgwyg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sIPFynlgwyg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:05:46 |
-
----
-
 here's a tip from a native english speaker english speakers won't just say
 
 i'm really angry they might say i'm

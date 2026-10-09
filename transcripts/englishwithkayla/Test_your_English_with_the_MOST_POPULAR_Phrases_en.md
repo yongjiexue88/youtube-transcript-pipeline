@@ -1,16 +1,3 @@
-# Test your English with the MOST POPULAR Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YYYwaDqUQxM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YYYwaDqUQxM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:39:22 |
-
----
-
 If you're trying to make progress in your English, it's important to check out what level you're speaking at. In today's lesson, I'll help you figure out what level you're speaking at and what level of phrases you are learning by categorizing 23 phrases into my English levels. Today, we're going to be going over phrases that are elementary level, intermediate level, intermediate, advanced, advanced English, fluent, and
 
 of course, master level English. Let's

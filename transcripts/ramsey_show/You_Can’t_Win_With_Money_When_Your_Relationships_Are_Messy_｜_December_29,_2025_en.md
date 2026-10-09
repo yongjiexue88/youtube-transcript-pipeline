@@ -1,16 +1,3 @@
-# You Can’t Win With Money When Your Relationships Are Messy | December 29, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_gmkgvVGyGQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_gmkgvVGyGQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:52:09 |
-
----
-
 This episode is filled with some of our best calls and advice, but unless you take what you hear and put it to work in your own life, you'll be stuck with the same money stress in 2026. So, make a change and download Every Dollar today.
 
 Normal is broke and common sense is weird. So, we're here to help you transform your life from the Ramsey Network in the Fair Winds Credit Union studio. This is the Ramsay Show and I'm Rachel Cruz hosting this hour with Jade Warshaw and we're answering your questions. So, give us a call at 888255225

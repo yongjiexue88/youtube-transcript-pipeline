@@ -1,16 +1,3 @@
-# Using Subtitles to Enhance Your English Skills
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7DpTGGT-prg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7DpTGGT-prg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:49:08 |
-
----
-
 all right hello hello people English
 
 learners students friends I hope you guys are having a wonderful day so in

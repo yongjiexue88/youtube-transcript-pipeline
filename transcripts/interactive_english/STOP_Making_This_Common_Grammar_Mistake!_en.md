@@ -1,16 +1,3 @@
-# STOP Making This Common Grammar Mistake!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OZOMzFn7RYI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OZOMzFn7RYI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:45:46 |
-
----
-
 I recommend that you watch this lesson
 
 or I recommend you to watch this lesson

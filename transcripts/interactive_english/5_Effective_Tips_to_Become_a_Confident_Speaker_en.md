@@ -1,16 +1,3 @@
-# 5 Effective Tips to Become a Confident Speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PipnD-LoA64` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PipnD-LoA64) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:17:53 |
-
----
-
 so often i hear from learners that they want to become a more confident speaker so in today's
 
 lesson i want to share with you five different suggestions that i think will really help you build your confidence when you are speaking and

@@ -1,16 +1,3 @@
-# LAWYER: 10 Tips to Protect Yourself When Police Get Rude!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gvuDpgIASao` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gvuDpgIASao) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:32:56 |
-
----
-
 when police encounters get out of hand it's critical to know the dos and don'ts of how to deal with good cops gone bad so that police don't escalate the situation and use the lawful but awful
 
 techniques they've been trained to use against you one of the most common lawful but awful techniques the police use is the taser many people think being

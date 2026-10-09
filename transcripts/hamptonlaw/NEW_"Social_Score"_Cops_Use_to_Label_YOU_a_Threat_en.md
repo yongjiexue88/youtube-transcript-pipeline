@@ -1,16 +1,3 @@
-# NEW "Social Score" Cops Use to Label YOU a Threat
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fTTAhJNii1E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fTTAhJNii1E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:04:55 |
-
----
-
 Imagine this. You call 911 in an emergency. And the dispatcher pulls up your location. And your name shows up with a red flag next to it. You've never been arrested. You've never been charged, but some system out there decided to flag you as a potential risk.
 
 So, what decides this so-called red flag? And how close are we to a system that scores your entire life? I'm Jeff Hampton, the people's lawyer. And in this video, I'm breaking down number one, how cops are secretly scoring you and keeping a watch list in your community. And number two, specific actions you can take to stop cops from flagging you on their madeup watch list.

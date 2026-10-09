@@ -1,16 +1,3 @@
-# Pronunciation English Lesson | Q&A w/ Interactive English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `F_1MQLvwwx4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=F_1MQLvwwx4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:23:38 |
-
----
-
 hey everyone welcome to today's lesson this is
 
 it's going to be an interactive q a that

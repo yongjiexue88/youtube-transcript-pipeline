@@ -1,16 +1,3 @@
-# 225 Useful Collocations You MUST Know | 1-Hour Vocabulary Masterclass
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Uxk9CbwW-7Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Uxk9CbwW-7Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:42:07 |
-
----
-
 Prepare yourself because I am going to teach you over 225 phrases to truly help
 
 you build your vocabulary. And I say truly build your vocabulary because I'm going to teach you different collocations which are words that are frequently used together. Now, many of these words you may already be familiar with, and that is a good thing because you should be using these collocations in order to sound more natural and fluent because if you tell me something like, I would like to raise my vocabulary, I understand you, it's grammatically correct, but it sounds awkward, you're not going to use the verb raise when talking about vocabulary.

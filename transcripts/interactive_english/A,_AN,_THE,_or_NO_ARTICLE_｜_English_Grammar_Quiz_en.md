@@ -1,16 +1,3 @@
-# A, AN, THE, or NO ARTICLE | English Grammar Quiz
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `e03NtUMDhCk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=e03NtUMDhCk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:14:15 |
-
----
-
 Hello and welcome to today's lesson. I
 
 have a fun grammar lesson for you. And I

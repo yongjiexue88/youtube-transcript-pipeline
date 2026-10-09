@@ -1,16 +1,3 @@
-# CLEAR THE AIR | Advanced (C2) #Idiom to Build Your Vocabulary 💪
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BeFdbcBUjDk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BeFdbcBUjDk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:56:51 |
-
----
-
 okay let's clear the air so to clear the
 
 air means to remove the bad feelings

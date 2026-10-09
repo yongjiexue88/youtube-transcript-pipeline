@@ -1,16 +1,3 @@
-# How to describe people’s clothing in English | #shorts #learnenglish #englishvocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JcwE9irXkug` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JcwE9irXkug) |
-| **Language** | Portuguese (auto-generated) (pt) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:28:11 |
-
----
-
 e deve também traz is really nice em
 
 inglês foi Sai daí Styles of style and

@@ -1,16 +1,3 @@
-# I Make $5M/Year With 3 Businesses
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zTKYJWAEl78` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zTKYJWAEl78) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:30:15 |
-
----
-
 this guy makes over $5 million a year running three different businesses and the crazy part is he started from nothing I flew out to Denver Colorado to ask him exactly how he got started how he runs all these businesses at the same time and the marketing strategy he used to go from Zer to 22 million with his first business we generated and still generate a lot of our leads to Tim started out as a solopreneur he was all in on one business but this business had
 
 a problem the more it grew the more hours he had to work every day then one

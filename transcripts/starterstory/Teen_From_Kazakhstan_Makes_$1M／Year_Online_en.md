@@ -1,16 +1,3 @@
-# Teen From Kazakhstan Makes $1M/Year Online
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YtyJ4reSQY0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YtyJ4reSQY0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:19:09 |
-
----
-
 I built one of the biggest design agencies in Silicon Valley and we make around $80,000 a month. This is Mark, a 19-year-old from Kazakhstan who built a million-dollar business in just 10 months. And he did it with a brilliant strategy. can actually work and can actually bring you more customers.
 
 Mark repeated this formula and went viral every time and this grew his business fast. So, I brought Mark onto the channel to break down his entire playbook and in this video we'll dive into his step-by-step free work in public formula that gets clients overnight, his exact playbook on how to go from zero to 10,000 followers fast and why following this playbook is the fastest way to build a million-dollar business. All right, I think you guys are going to like this one.

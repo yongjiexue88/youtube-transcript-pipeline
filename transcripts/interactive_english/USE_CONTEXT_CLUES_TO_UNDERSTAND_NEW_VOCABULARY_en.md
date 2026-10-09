@@ -1,16 +1,3 @@
-# USE CONTEXT CLUES TO UNDERSTAND NEW VOCABULARY
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oO9CXNfo0-I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oO9CXNfo0-I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:28:48 |
-
----
-
 hello and welcome to today's lesson
 
 thank you guys so much for joining me and today is a very useful English

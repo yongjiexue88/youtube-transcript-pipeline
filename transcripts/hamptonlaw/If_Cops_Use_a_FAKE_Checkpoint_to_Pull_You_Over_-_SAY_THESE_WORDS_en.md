@@ -1,16 +1,3 @@
-# If Cops Use a FAKE Checkpoint to Pull You Over - SAY THESE WORDS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fvcaqHZnOjE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fvcaqHZnOjE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:26:35 |
-
----
-
 roadside drug checkpoints banned by the United States Supreme Court in 2000 but if you think that stopped the police think again they got creative in this
 
 video I'm revealing five ways cops use fake checkpoints to pull you over and how these sneaky tactics could land you in serious trouble if you wait around till the end of this video I'll reveal to you the most common tricks cops use to trick you into a checkpoint stop

@@ -1,16 +1,3 @@
-# I Built This $5M/Year Business From A Van
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6iqo7lNR_m0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6iqo7lNR_m0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:30:52 |
-
----
-
 this is Jeremy a guy who makes over $5
 
 million a year selling toothpaste online

@@ -1,16 +1,3 @@
-# What do Americans call their friends?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `INQOHDt9PNM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=INQOHDt9PNM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:38:49 |
-
----
-
 here's my perspective on this post
 
 that's going really viral

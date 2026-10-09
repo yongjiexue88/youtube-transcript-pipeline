@@ -1,16 +1,3 @@
-# Stop Translating! Learn This B1 Vocabulary to Speak with Confidence
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3e2CbmWPN9U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3e2CbmWPN9U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:59:15 |
-
----
-
 The lesson that I have for you today is very very I'm going to add one more very
 
 important because we're talking about B1 vocabulary and this vocabulary is commonly used. So it's more at an inter intermediate level but I I think these phrases are word phrases that you should definitely know and really be able to actively use when you're having a conversation. And that is why I say these are B1. This is B1 vocabulary you need to know so that it'll allow you to just speak more confidently. And also I

@@ -1,16 +1,3 @@
-# How to Use the 2nd Conditional | Useful Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IGhR1EP0OxY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IGhR1EP0OxY) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:43:54 |
-
----
-
 If I were you, I would watch this lesson.
 
 Because we're going to talk about the second conditional.

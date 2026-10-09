@@ -1,16 +1,3 @@
-# ADVANCED BANKING VOCABULARY 🏦  | Words and phrases you need to know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8RHGW3Utsps` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8RHGW3Utsps) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:14:39 |
-
----
-
 Hello and welcome to today's lesson. I
 
 have I think it's a it's a fun vocabulary lesson for you and we're going to be talking about something that I think we can all relate to because it is part of our everyday lives. So, the

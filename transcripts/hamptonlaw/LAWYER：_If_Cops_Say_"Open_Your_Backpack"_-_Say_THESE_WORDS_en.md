@@ -1,16 +1,3 @@
-# LAWYER: If Cops Say "Open Your Backpack" - Say THESE WORDS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ElG0vaUBcSo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ElG0vaUBcSo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:36:17 |
-
----
-
 can police search your backpack without your permission or even without a warrant the answer is actually more complicated than you might think I'm Jeff Hampton as a former prosecutor turned the people's lawyer I'm going to explain to you your rights when cops want to search your backpack we're going to cover three specific situations involving the search of your backpack one maybe you're sitting at a park bench
 
 and cops walk up and they demand to search that backpack number two you get pulled over in a traffic stop cops look over see your backpack in your car they demand to search it finally number three we're going to cover if cops just walk up to you and you're walking down the road and they say hey what do you got in that backpack we will dive into case law for each situation

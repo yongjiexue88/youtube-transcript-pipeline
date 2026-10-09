@@ -1,16 +1,3 @@
-# Learn 30 English phrases to sound more polite
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OnaahoCV2_U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OnaahoCV2_U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:47:36 |
-
----
-
 do you worry sometimes when you're speaking English that you are not sounding as polite as you would like to be in today's lesson I'll teach you 30
 
 phrases that will help you be polite and

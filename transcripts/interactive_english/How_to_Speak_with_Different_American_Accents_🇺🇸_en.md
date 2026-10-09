@@ -1,16 +1,3 @@
-# How to Speak with Different American Accents 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mXpW_WyZpmQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mXpW_WyZpmQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:06:06 |
-
----
-
 i want to talk to you about some different and well-known accents in the
 
 united states and as i present these

@@ -1,16 +1,3 @@
-# Advanced Expressions (C2) to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BSyjjmq2V-o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BSyjjmq2V-o) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:05:34 |
-
----
-
 hey everyone i have a great lesson for
 
 you today because we are going to talk

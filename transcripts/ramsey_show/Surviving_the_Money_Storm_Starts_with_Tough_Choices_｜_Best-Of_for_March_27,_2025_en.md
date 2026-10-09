@@ -1,16 +1,3 @@
-# Surviving the Money Storm Starts with Tough Choices | Best-Of for March 27, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PGI2JpcJmok` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PGI2JpcJmok) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:15:09 |
-
----
-
 [Music]
 
 brought to you by the every dooll app start budgeting for free

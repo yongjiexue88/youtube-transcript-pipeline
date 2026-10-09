@@ -1,16 +1,3 @@
-# Future of Work Vocabulary You MUST Know in the Age of AI! 🦾
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_CbosWQu-50` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_CbosWQu-50) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:59:30 |
-
----
-
 I have an incredibly
 
 incredibly important vocabulary lesson for you. And I know I I say this every week, but this time I really mean it. I want to talk to you about the the future of vocabulary, covering a topic that is

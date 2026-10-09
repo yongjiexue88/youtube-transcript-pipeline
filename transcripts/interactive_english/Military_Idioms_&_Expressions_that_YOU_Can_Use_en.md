@@ -1,16 +1,3 @@
-# Military Idioms & Expressions that YOU Can Use
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4j2-SNvecfs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4j2-SNvecfs) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:47:03 |
-
----
-
 Hey everyone. My name is Wes. This is interactive English,
 
 which is all about helping you practice and improve your English skills and

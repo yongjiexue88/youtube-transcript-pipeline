@@ -1,16 +1,3 @@
-# Small Talk Dialogues in English | COMMON ENGLISH PHRASES TO USE IN CONVERSATION | English Speaking
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hu3D-5j47n4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hu3D-5j47n4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:12:26 |
-
----
-
 today i'm going to teach you about the
 
 art of small talk because it can get awkward

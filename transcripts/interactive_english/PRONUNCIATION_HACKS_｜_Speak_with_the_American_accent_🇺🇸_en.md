@@ -1,16 +1,3 @@
-# PRONUNCIATION HACKS | Speak with the American accent 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PTPARnU1f-Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PTPARnU1f-Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:15:02 |
-
----
-
 let's talk about how to sound more
 
 American and the the very first thing

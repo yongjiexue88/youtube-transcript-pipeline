@@ -1,16 +1,3 @@
-# Evading Arrest Charges in Texas? Do This To Win Your Case! (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ApXhxVuVnmo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ApXhxVuVnmo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 15:36:43 |
-
----
-
 evading arrest what does that mean what if you didn't do anything wrong is there a way to be able to get your case
 
 dismissed hi I'm Jeff Hampton with the Hampton Law Firm today I want to talk to you about the subject of evading arrest what does Texas criminal law require the prosecutor to prove in order to convict you and is there a way to defend this to protect your freedom and your future by the way if you wait around to the end of this video I'll give you a free ebook what to do if you have been charged with a crime in Texas now listen if here's

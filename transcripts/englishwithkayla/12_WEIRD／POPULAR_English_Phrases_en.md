@@ -1,16 +1,3 @@
-# 12 WEIRD/POPULAR English Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CvpOer-ibkE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CvpOer-ibkE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:45:45 |
-
----
-
 have you ever heard an English phrase
 
 that just had you so confused because

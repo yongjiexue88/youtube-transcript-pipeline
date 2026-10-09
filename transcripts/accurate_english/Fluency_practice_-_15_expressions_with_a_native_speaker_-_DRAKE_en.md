@@ -1,16 +1,3 @@
-# Fluency practice - 15 expressions with a native speaker - DRAKE
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HPy8afJS-Do` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HPy8afJS-Do) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:33:55 |
-
----
-
 hi I'm Lisa it's time to take your
 
 English to the next level of fluency the final step to fluency is being able to understand and to use everyday Expressions that they don't teach you in English classes I believe that's the best way to become fluent and to feel more confident about your English [Music]

@@ -1,16 +1,3 @@
-# English Phrases to say ANGRY or ANNOYED | Advanced English Vocabulary*
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vGZBY5HBdCY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vGZBY5HBdCY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:11:35 |
-
----
-
 when my neighbors are loud and annoying
 
 it drives me up a wall it grinds my

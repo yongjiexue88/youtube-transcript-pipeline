@@ -1,16 +1,3 @@
-# 50 most important English phrasal verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qJx5BMKi5kA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qJx5BMKi5kA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:56:26 |
-
----
-
 hi there are you ready to learn the 50
 
 most important English phrasal verbs

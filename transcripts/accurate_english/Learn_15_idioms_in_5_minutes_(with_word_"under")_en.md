@@ -1,16 +1,3 @@
-# Learn 15 idioms in 5 minutes (with word "under")
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RvvBL3wyZ8w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RvvBL3wyZ8w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:56:50 |
-
----
-
 I'm going to teach you 15 useful English idiomatic expressions in five minutes
 
 [Music]

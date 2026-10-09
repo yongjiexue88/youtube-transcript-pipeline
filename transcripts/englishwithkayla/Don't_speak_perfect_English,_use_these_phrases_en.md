@@ -1,16 +1,3 @@
-# Don't speak perfect English, use these phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `owcuBux0pLE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=owcuBux0pLE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:00:31 |
-
----
-
 do you speak perfect english well i don't either and most native english speakers actually don't speak perfect textbook english in today's english lesson i'm going to take you through a conversation at a restaurant and i'll compare what a textbook would tell you to say versus what native speakers actually say when they're in this situation let's get started with the conversation hello what would you like to order this evening may i please have the steak can i do the steak instead of just saying may i please have
 
 whatever it is at a restaurant english speakers will often just say can i do the so in this

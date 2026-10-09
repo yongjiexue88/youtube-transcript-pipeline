@@ -1,16 +1,3 @@
-# CONFUSING WORDS IN ENGLISH (Even for native speakers!)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-oqw8FdcL94` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-oqw8FdcL94) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:27:59 |
-
----
-
 do you ever get confused by certain
 
 English words honestly I do it does it

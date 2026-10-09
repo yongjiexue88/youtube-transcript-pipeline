@@ -1,16 +1,3 @@
-# Confusing Grammar in English | Lesson for Advanced Learners
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4kQDswQLXRs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4kQDswQLXRs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:18:15 |
-
----
-
 today i have an advanced grammar quiz
 
 lesson for you my name is wes this is interactive

@@ -1,16 +1,3 @@
-# LAWYER: How To Get a No Bill by a Grand Jury to Dismiss Your Texas Case (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `I02pnuXyaHo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=I02pnuXyaHo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 21:03:07 |
-
----
-
 hey everybody I wanted to take just a couple of minutes to talk to you about a
 
 uh a tool that is rarely used by

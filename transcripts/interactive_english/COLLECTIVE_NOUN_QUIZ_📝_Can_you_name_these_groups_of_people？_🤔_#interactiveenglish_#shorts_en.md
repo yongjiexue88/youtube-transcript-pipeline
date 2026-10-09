@@ -1,16 +1,3 @@
-# COLLECTIVE NOUN QUIZ 📝 Can you name these groups of people? 🤔 #interactiveenglish #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8cGzl_BRTxM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8cGzl_BRTxM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:59:06 |
-
----
-
 do you know the names of these groups of
 
 people let's find out what would you

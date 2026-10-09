@@ -1,16 +1,3 @@
-# SPEAK FAST LIKE AN AMERICAN 🇺🇸 #shorts #americanenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ikttIN7zqnI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ikttIN7zqnI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:58:01 |
-
----
-
 speak fast like an American here's a
 
 sentence for you I'm going to get an

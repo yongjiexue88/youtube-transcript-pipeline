@@ -1,16 +1,3 @@
-# Think You're Fluent? This English Grammar Quiz Will Test You!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gN4L0EfgB2U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gN4L0EfgB2U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:51:52 |
-
----
-
 today you are going to test your grammar
 
 skills so I have a quiz for you and this

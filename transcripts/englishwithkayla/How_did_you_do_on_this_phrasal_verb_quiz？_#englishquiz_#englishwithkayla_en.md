@@ -1,16 +1,3 @@
-# How did you do on this phrasal verb quiz? #englishquiz #englishwithkayla
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zjgQf6ZLkNA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zjgQf6ZLkNA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:20:58 |
-
----
-
 I have to go to class today because my teacher won't let me the test if I miss
 
 it well my teacher not let me mix up the

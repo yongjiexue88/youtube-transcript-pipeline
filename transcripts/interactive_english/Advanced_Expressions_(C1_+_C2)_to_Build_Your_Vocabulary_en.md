@@ -1,16 +1,3 @@
-# Advanced Expressions (C1 + C2) to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IOoND9VopY4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IOoND9VopY4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:56:34 |
-
----
-
 let's learn some Advanced expressions
 
 and this lesson is going to be extremely

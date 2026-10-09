@@ -1,16 +1,3 @@
-# Have you ever "dragged" someone? #shorts #englishlesson #slang
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1scH1wMfYJc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1scH1wMfYJc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:13:16 |
-
----
-
 do you know the english slang to drag
 
 someone if you're literally dragging someone it

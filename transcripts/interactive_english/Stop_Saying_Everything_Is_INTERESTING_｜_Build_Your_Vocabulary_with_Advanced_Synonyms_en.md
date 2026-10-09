@@ -1,16 +1,3 @@
-# Stop Saying Everything Is INTERESTING | Build Your Vocabulary with Advanced Synonyms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `r1EZUyWGGqU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=r1EZUyWGGqU) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:32:17 |
-
----
-
 - Do you find yourself constantly describing things as,
 
 'interesting?' Wouldn't it be better if you found some more precise words

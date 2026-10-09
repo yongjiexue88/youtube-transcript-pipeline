@@ -1,16 +1,3 @@
-# Use this English idiom when you have nothing left
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NShh4YuPkDM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NShh4YuPkDM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:05:03 |
-
----
-
 here is a really natural english idiom
 
 that you can use to say that you are either very tired or exhausted and you

@@ -1,16 +1,3 @@
-# FAMOUS MOVIE QUOTES EXPLAINED | Improve Your English Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IhjT9UhFu6I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IhjT9UhFu6I) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:46:03 |
-
----
-
 If you like, movies, love learning English, and you also want to understand a little more about American pop culture.
 
 Well then this lesson is for you.

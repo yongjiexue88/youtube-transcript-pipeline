@@ -1,16 +1,3 @@
-# Casual WORK EXPRESSIONS to Sound More Natural & Professional
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PKnGy5kAH24` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PKnGy5kAH24) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:45:14 |
-
----
-
 I'm going to teach you some useful work Expressions that you can use to sound more natural and professional and I'm
 
 not talking about very formal Expressions but ones that you can use

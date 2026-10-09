@@ -1,16 +1,3 @@
-# Learn how to say "I just can't help it" in English | #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7vOgeM9C8t0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7vOgeM9C8t0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:24:51 |
-
----
-
 [Music]
 
 i just can't help it when i hear that song i have to dance

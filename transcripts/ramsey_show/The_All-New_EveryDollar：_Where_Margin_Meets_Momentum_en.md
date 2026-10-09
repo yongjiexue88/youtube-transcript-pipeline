@@ -1,16 +1,3 @@
-# The All-New EveryDollar: Where Margin Meets Momentum
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `48bAJbNnCp4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=48bAJbNnCp4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:06:27 |
-
----
-
 [Music]
 
 [Music]

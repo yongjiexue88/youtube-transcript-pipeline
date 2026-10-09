@@ -1,16 +1,3 @@
-# 50 most useful American English phrasal verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kVSLGXQd09k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kVSLGXQd09k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:52:36 |
-
----
-
 hi there are you ready to learn 50 of
 
 the most useful English phrasal verbs

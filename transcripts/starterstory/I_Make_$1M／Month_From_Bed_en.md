@@ -1,16 +1,3 @@
-# I Make $1M/Month From Bed
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dphK9rh2F5U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dphK9rh2F5U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:29:55 |
-
----
-
 this guy made $1 million a month selling
 
 bed sheets online and the crazy part is

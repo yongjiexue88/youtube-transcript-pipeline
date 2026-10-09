@@ -1,16 +1,3 @@
-# I Built a $1M SaaS 100% with No Code (Bubble)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `x9TUDb4sLE0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=x9TUDb4sLE0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:23:42 |
-
----
-
 After six failed SAS ideas, my seventh made millions. This is Jacob. He built a million-dollar SAS 100% with no code.
 
 So, you don't need to know how to actually code. You don't need to know code syntax. The tool he built it with and grew it from 0 to $1 million ARR.

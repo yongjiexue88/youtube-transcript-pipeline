@@ -1,16 +1,3 @@
-# New Year's Vocabulary | Useful Words to Celebrate the New Year
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AZNZPC_0RYU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AZNZPC_0RYU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:47:05 |
-
----
-
 hello everyone hello and welcome to our
 
 last lesson of 2017 I can't believe this

@@ -1,16 +1,3 @@
-# Break The Debt Spiral And Regain Your Life | March 11, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-8zFpsc2L6M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-8zFpsc2L6M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:41:35 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

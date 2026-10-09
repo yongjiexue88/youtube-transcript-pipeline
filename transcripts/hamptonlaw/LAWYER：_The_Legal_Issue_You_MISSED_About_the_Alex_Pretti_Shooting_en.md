@@ -1,16 +1,3 @@
-# LAWYER: The Legal Issue You MISSED About the Alex Pretti Shooting
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Ht4N8weNFYo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Ht4N8weNFYo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:02:46 |
-
----
-
 You've seen the clips from Minnesota.
 
 Alex Prey, he's on the ground. Ice agents are on top of him, pushing him down. Shots then ring out. And within hours, once again, the internet already reached a verdict.

@@ -1,16 +1,3 @@
-# Turn down, turn up and turn over
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1XH6LaMcbmo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1XH6LaMcbmo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:49:15 |
-
----
-
 Do you know the difference between the phrases turn down, turn up, and turn
 
 over? Let's talk about it. So, turn down

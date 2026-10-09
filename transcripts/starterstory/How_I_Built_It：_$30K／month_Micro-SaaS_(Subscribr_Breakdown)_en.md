@@ -1,16 +1,3 @@
-# How I Built It: $30K/month Micro-SaaS (Subscribr Breakdown)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7KqlwjBM_tM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7KqlwjBM_tM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:16:34 |
-
----
-
 My name is Gil and I vipcoded an AI app that makes over $30,000 a month.
 
 >> Meet Gil, a developer who built a SAS to $30,000 a month thanks to one simple strategy, >> which was, I think, the the key thing that made this successful.

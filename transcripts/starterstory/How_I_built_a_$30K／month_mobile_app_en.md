@@ -1,16 +1,3 @@
-# How I built a $30K/month mobile app
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `T5zMsTw8GWQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=T5zMsTw8GWQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:18:28 |
-
----
-
 My app has been downloaded 5 million times and I did it all by myself.
 
 >> This is John Makavoy, a gentleman from Scotland who taught himself how to code and built [music] something incredible.

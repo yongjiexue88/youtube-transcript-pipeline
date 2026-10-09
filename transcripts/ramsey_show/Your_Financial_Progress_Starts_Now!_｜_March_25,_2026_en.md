@@ -1,16 +1,3 @@
-# Your Financial Progress Starts Now! | March 25, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `C2D3Q56suLQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=C2D3Q56suLQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:39:37 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

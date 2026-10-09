@@ -1,16 +1,3 @@
-# I Turned One Website Into $1M/Year
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7pCgbhUWW54` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7pCgbhUWW54) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:30:06 |
-
----
-
 this guy makes over $1 million a year
 
 with one website and the crazy part is

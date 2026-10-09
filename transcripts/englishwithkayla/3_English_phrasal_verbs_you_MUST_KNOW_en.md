@@ -1,16 +1,3 @@
-# 3 English phrasal verbs you MUST KNOW
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fDKI9Bm5RHU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fDKI9Bm5RHU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:05:19 |
-
----
-
 three english phrasal verbs that relate to money that you need to know the first
 
 phrasal verb that's very important is to

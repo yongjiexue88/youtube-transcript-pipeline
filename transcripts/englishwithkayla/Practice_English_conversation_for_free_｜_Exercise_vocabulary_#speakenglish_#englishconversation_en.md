@@ -1,16 +1,3 @@
-# Practice English conversation for free  | Exercise vocabulary #speakenglish #englishconversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UI9rZ4P0QGc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UI9rZ4P0QGc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:08:02 |
-
----
-
 hey friends welcome to today's english lesson today lesson is a english conversation lesson
 
 and i hope that you actually speak out

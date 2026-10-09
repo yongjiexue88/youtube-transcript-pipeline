@@ -1,16 +1,3 @@
-# Every American knows these Idioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `m-qQW957J-M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=m-qQW957J-M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:04:25 |
-
----
-
 a native english speaker might not just say hey that's annoying stop
 
 of course this makes sense but they might try these two idioms to say to

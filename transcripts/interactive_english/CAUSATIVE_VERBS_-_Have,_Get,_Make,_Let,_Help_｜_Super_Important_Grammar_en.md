@@ -1,16 +1,3 @@
-# CAUSATIVE VERBS - Have, Get, Make, Let, Help | Super Important Grammar
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xF0votPJOAE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xF0votPJOAE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:03:54 |
-
----
-
 I have a question for you and just tell me which one you think is correct I help
 
 my friends make dinner or I help my

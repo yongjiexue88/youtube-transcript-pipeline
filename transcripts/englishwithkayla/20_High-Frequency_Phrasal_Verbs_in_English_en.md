@@ -1,16 +1,3 @@
-# 20 High-Frequency Phrasal Verbs in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pKkm4_iOb0A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pKkm4_iOb0A) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:31:19 |
-
----
-
 You want to upgrade your English by learning phrasal verbs. This is a really good strategy because phrasal verbs are used in everyday English conversations.
 
 And in today's lesson, I'm going to teach you 20 what I call high-value

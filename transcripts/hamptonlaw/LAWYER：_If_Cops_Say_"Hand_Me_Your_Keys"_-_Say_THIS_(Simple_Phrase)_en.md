@@ -1,16 +1,3 @@
-# LAWYER: If Cops Say "Hand Me Your Keys" - Say THIS (Simple Phrase)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RP868romhzU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RP868romhzU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:52:15 |
-
----
-
 You're sitting in your car during a traffic stop. The police officer has your license and registration.
 
 Everything seems routine, but then he leans down to your window, stares at you, and says the words that catch you off guard. Turn off the engine and hand me your keys. Now, here's the thing.

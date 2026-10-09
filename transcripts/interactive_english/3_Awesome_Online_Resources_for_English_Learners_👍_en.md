@@ -1,16 +1,3 @@
-# 3 Awesome Online Resources for English Learners 👍
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NIiAkmYWfKY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NIiAkmYWfKY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:51:35 |
-
----
-
 I don't think he's working hello and
 
 welcome today we're going to talk about three different online resources that

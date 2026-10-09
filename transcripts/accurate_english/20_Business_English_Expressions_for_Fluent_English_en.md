@@ -1,16 +1,3 @@
-# 20 Business English Expressions for Fluent English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `j1u9YNQQ3as` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=j1u9YNQQ3as) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:46:50 |
-
----
-
 hi i'm lisa my goal at accurate english
 
 is to help you communicate at the english-speaking workplace with confidence clarity and accuracy

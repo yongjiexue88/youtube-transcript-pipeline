@@ -1,16 +1,3 @@
-# Can you come the answer?! #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IynMsd8G53g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IynMsd8G53g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:14:01 |
-
----
-
 i'm going to teach you guys about a really useful phrasal verb today the phrasal
 
 verb is come up with or to come up with

@@ -1,16 +1,3 @@
-# LAWYER: Say THESE WORDS to Keep Police OFF Your Property
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qndpXjF8uRU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qndpXjF8uRU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:32:28 |
-
----
-
 nobody wants people walking all over their property especially if it's the police and look we all know that we can kick trespassers off of our property that's why we put up no trespassing signs and sometimes we have to call out the police to remove trespassers from our private property but what can you do if the trespasser happens to be the police what if a police officer shows up at your property asking
 
 you questions and they refuse to leave in order to answer this question we need to break the Down based upon whether the officers are trying to come to your front door or whether they are just on your property line Situation Number One what if a police officer is not trying to get into your home but he is entering your private property the areas around your home and within your private property are known as curtilage under

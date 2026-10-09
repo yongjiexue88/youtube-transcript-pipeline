@@ -1,16 +1,3 @@
-# Reading + Vocabulary Lesson | HELP FIGHT HUNGER
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wbpz03igkfI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wbpz03igkfI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:22:26 |
-
----
-
 hey everyone welcome to today's
 
 lesson thank you guys so much for joining me my name is wes this is interactive english and

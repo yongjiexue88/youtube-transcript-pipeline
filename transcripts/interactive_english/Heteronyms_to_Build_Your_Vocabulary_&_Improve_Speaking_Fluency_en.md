@@ -1,16 +1,3 @@
-# Heteronyms to Build Your Vocabulary & Improve Speaking Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZrcskGfbjAU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZrcskGfbjAU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:33:46 |
-
----
-
 hey everyone my name is Wes this is interactive English which is all about helping you guys practice and improve your English skills so if that is what you're looking to do please subscribe to our Channel and join our community and take your English to the next level so today I have a it is both a vocabulary lesson as
 
 well as a speaking lesson because we're

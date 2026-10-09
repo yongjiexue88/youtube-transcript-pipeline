@@ -1,16 +1,3 @@
-# Sound more like an American speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9POsu-Zvc3w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9POsu-Zvc3w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:44:30 |
-
----
-
 how do you know if the D is silent in
 
 these English words well when a word

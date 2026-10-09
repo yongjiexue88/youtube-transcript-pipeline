@@ -1,16 +1,3 @@
-# Repeat After Me: Talk About Your Job in Real English (Conversation Practice!)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6wqXGunAu54` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6wqXGunAu54) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:37:15 |
-
----
-
 Have you ever been speaking English in a real conversation and somebody asked you, "What do you do?" Maybe you've heard this question before. You know the vocabulary that you need to respond, but you still feel like you sound so awkward. In today's lesson, we're going to help you by teaching you the natural vocabulary that you need to speak about your job and other situations. And I'm going to give you real speaking practice in this lesson. So speak along with me.
 
 And if you want to learn more about these phrases and practice more English with me, make sure to visit englishwithkayla.com or check out the link below in the description. All right, let's level up your English. Let's get started. Let's get started with some common expressions that have to do with your general work life. So, the first expression we're going to use is I work in blank

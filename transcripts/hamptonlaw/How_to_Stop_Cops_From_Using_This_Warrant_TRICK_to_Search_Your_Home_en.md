@@ -1,16 +1,3 @@
-# How to Stop Cops From Using This Warrant TRICK to Search Your Home
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VTWbEQZjuvc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VTWbEQZjuvc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:23:25 |
-
----
-
 It's a quiet evening at home with your family when suddenly, knock, two police
 
 officers are at your front door. You walk up to your door. You look through the peepphole and suddenly you hear the police officer say, "We have an arrest warrant for Alex Johnson. We have reason to believe he might be here. We need to come in and look. Open the door now. You

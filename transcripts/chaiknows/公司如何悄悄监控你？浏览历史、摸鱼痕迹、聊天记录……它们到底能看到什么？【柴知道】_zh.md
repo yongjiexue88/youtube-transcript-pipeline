@@ -1,16 +1,3 @@
-# 公司如何悄悄监控你？浏览历史、摸鱼痕迹、聊天记录……它们到底能看到什么？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zPvb2FiP08c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zPvb2FiP08c) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:29:12 |
-
----
-
 这是上班摸鱼刷视频的你你一定觉得自己藏得很好但公司早就一清二楚
 
 2021 年国美在一份处罚通报中点名了多位员工他们用了哪些 App 摸鱼消耗了多少流量都列得明明白白除此之外你应该还看到过许多大厂以员工摸鱼 泄密为由

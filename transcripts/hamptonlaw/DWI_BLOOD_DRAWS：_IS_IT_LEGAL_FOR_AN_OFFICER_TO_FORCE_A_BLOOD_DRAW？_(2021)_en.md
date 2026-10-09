@@ -1,16 +1,3 @@
-# DWI BLOOD DRAWS: IS IT LEGAL FOR AN OFFICER TO FORCE A BLOOD DRAW? (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0xeFOFLOq2s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0xeFOFLOq2s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:43:44 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about DWI blood draws is it legal for a
 
 police officer to forcibly take your blood if you're under investigation for a DWI so we're going to talk about the law as it relates to that in Texas today and then if you wait around to the end this video I'm also going to give you a free eBook The Ultimate Guide to DWI

@@ -1,16 +1,3 @@
-# Learn 19 Advanced English Phrases and Idioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tzTM8H_-rSI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tzTM8H_-rSI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:42:34 |
-
----
-
 do you want to upgrade your English speaking to sound more witty and eloquent in today's English lesson I
 
 have a guide to 19 English phrases and

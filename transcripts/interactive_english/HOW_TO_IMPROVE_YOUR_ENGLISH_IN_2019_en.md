@@ -1,16 +1,3 @@
-# HOW TO IMPROVE YOUR ENGLISH IN 2019
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hQELaCaScPM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hQELaCaScPM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:38:26 |
-
----
-
 all right what's up everyone my name is
 
 Wes this is interactive English which

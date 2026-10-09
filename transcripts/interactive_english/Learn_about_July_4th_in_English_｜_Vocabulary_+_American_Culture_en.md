@@ -1,16 +1,3 @@
-# Learn about July 4th in English | Vocabulary + American Culture
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `I9NNOd220L0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=I9NNOd220L0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:26:05 |
-
----
-
 hello everyone welcome to today's lesson
 
 my name is Wes this is interactive English and if this is your first time here this channel it's just all about helping you guys practice and improve your English and today I have it's kind of a cultural lesson because we're talking about a holiday in the United States an American holiday but it's also a vocabulary lesson because I'm going to talk about different words and phrases that are associated with this holiday which I first just want to say to all of

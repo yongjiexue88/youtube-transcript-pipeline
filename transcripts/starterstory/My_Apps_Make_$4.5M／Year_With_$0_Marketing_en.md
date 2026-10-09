@@ -1,16 +1,3 @@
-# My Apps Make $4.5M/Year With $0 Marketing
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vLLBzUZr6-s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vLLBzUZr6-s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:25:14 |
-
----
-
 My Shopify app, Kaching Bundles, is currently making me $4.5 million a year, and we spend almost zero dollars on marketing. How does this guy make over $4 million a year without spending thousands of dollars on marketing? Well, the answer is something you probably wouldn't expect. All of our growth is coming either from or Eric started his
 
 journey as a designer making just $2 an hour. Then he stumbled onto an opportunity that would change his life forever. I think there's still a lot of opportunity building in platforms and I'm personally researching. I spent over an hour talking to Aricos about all his different Shopify apps and how anybody can start building these things from scratch. And good news, he shared everything, including how to find platform specific ideas to build, how to run an async team with 90% margin, and

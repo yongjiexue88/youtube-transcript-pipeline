@@ -1,16 +1,3 @@
-# 25 Academic English Words You Should Know | Great for University, IELTS, or TOEFL
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CVHg6k6sRjc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CVHg6k6sRjc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:48:08 |
-
----
-
 I want to teach you 25 academic words
 
 that you should know and these words

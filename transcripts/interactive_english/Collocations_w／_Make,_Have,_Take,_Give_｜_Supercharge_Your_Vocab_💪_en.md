@@ -1,16 +1,3 @@
-# Collocations w/ Make, Have, Take, Give | Supercharge Your Vocab 💪
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kEr50Srvnnw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kEr50Srvnnw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:56:47 |
-
----
-
 Let's really build your vocabulary. And
 
 I know I say that a lot, but this time I really mean it. I want to help you supercharge your vocabulary with some common and useful collocations. You notice these verbs: make, have, take, give. We use them all the time. And

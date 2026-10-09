@@ -1,16 +1,3 @@
-# DWI License Suspension: Can I still Drive? How to Get Your License Back! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uxVcuS52yDg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uxVcuS52yDg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:58:01 |
-
----
-
 hello everyone welcome to the Hampton Law Firm I'm Jeff Hampton with the Hampton law firm and I wanted to jump on here and talk to you about a subject today what if I've been arrested for DWI
 
 and my license has been suspended is there a chance I can still drive all right thanks for joining us here today I want to I want to go over with you um the ins and outs of DWI license suspension and the exact steps you can take write down the list of what's required in order to be a ble to get uh your license back what you can do to be able to still operate a vehicle in spite of a DWI situation that

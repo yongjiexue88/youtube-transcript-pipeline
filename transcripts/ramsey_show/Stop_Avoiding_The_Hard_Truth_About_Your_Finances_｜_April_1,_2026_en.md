@@ -1,16 +1,3 @@
-# Stop Avoiding The Hard Truth About Your Finances | April 1, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rYAiNQyEuNE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rYAiNQyEuNE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:38:37 |
-
----
-
 [music] >> Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

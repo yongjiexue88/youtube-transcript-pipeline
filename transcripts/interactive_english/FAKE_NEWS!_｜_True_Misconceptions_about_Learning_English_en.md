@@ -1,16 +1,3 @@
-# FAKE NEWS! | True Misconceptions about Learning English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JMh5Cb6yFLg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JMh5Cb6yFLg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:45:27 |
-
----
-
 hello everyone and welcome to our
 
 wonderful lesson today I have something

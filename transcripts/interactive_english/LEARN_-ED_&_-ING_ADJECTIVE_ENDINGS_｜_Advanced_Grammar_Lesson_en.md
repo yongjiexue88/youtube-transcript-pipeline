@@ -1,16 +1,3 @@
-# LEARN -ED & -ING ADJECTIVE ENDINGS | Advanced Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Ph0HMsViBaQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Ph0HMsViBaQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:48:44 |
-
----
-
 all right what is up everybody I hope
 
 you're having a wonderful Saturday or if

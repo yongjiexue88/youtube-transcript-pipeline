@@ -1,16 +1,3 @@
-# ADVANCED COURTROOM VOCABULARY 👨‍⚖️ | Incredibly Useful Words & Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8umdJfJaVno` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8umdJfJaVno) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:09:23 |
-
----
-
 hello and welcome to today's lesson in
 
 which we are going to learn courtroom

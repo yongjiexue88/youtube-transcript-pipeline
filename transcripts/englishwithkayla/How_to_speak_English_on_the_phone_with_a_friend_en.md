@@ -1,16 +1,3 @@
-# How to speak English on the phone with a friend
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YZbl52QLLzY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YZbl52QLLzY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:00:59 |
-
----
-
 do you need real-life English conversation practice but you have nobody to speak with well in today's
 
 lesson I've prepared a conversation for

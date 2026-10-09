@@ -1,16 +1,3 @@
-# How to Overcome Your Anxiety and Fear of Speaking
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VS-MwImS3N0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VS-MwImS3N0) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:50:35 |
-
----
-
 Does alcohol help you speak a foreign language better?
 
 Yes! No! Maybe? I'll tell you the answer to that question in today's video.

@@ -1,16 +1,3 @@
-# LAWYER: If Cops Say "Open the Gun Case" - Say THESE WORDS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tCflyOn4qhg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tCflyOn4qhg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:27:35 |
-
----
-
 can cops assume a container has a gun in it and then open it without a warrant it
 
 depends in this video I'm going to cover a little known legal concept that as the people's lawyer I have seen cops use this as a way to be able to search whenever and however they want and we're going to talk about how you can protect yourself from it look normally cops

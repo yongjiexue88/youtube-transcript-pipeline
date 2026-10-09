@@ -1,16 +1,3 @@
-# Don't make these pronunciation mistakes!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZPQusZSwkMg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZPQusZSwkMg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:38:17 |
-
----
-
 hi I'm Lisa how good is your English
 
 pronunciation are you confident that you're pronouncing English words correctly I will give you a little test so that you can find out [Music]

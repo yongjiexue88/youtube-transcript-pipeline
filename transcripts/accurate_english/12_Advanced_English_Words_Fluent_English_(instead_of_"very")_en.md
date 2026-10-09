@@ -1,16 +1,3 @@
-# 12 Advanced English Words Fluent English (instead of "very")
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IFjJ9c5A938` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IFjJ9c5A938) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:50:36 |
-
----
-
 hi I'm Lisa in this video I would like
 
 to help you expand your English vocabulary so that you could communicate more effectively in English I will teach you some advanced words that you can use instead of the word very for example

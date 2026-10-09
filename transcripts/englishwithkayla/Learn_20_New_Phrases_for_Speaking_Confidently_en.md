@@ -1,16 +1,3 @@
-# Learn 20 New Phrases for Speaking Confidently
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qwUhOFs7OwY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qwUhOFs7OwY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:42:23 |
-
----
-
 get ready to actually take a pretty deep
 
 dive into the way that English speakers

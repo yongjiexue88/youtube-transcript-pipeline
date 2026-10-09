@@ -1,16 +1,3 @@
-# I vibe coded a $12K/month mobile app (Stoppr Breakdown)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `orYTlk_BhW8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=orYTlk_BhW8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:17:59 |
-
----
-
 I cloned a very successful app, and first month of revenue, I made $5,000.
 
 This is David Adias, a guy from France who, up until 6 months ago, had a regular job. That was until he saw an opportunity that most people would miss.

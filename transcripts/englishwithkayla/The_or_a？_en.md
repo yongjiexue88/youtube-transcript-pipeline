@@ -1,16 +1,3 @@
-# The or a?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9cV0PVsTjGs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9cV0PVsTjGs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:50:37 |
-
----
-
 so if you're confused about using the
 
 versus a i'm going to help you out in this video if you definitely know what

@@ -1,16 +1,3 @@
-# Fix these common comma mistakes  - Do you know the rules of English punctuation?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5jE9a_g31-Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5jE9a_g31-Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:44:29 |
-
----
-
 hi i'm lisa how do you feel about your
 
 writing skills in english good spoken english is very

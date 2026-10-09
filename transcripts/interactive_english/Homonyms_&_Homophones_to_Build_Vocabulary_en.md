@@ -1,16 +1,3 @@
-# Homonyms & Homophones to Build Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `woQMvu-ITqY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=woQMvu-ITqY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:33:57 |
-
----
-
 what's up everyone my name is Wes this
 
 is interactive English which is all

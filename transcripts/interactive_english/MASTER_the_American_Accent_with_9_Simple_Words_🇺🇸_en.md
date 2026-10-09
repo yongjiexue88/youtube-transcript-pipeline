@@ -1,16 +1,3 @@
-# MASTER the American Accent with 9 Simple Words 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NQRd7qb_CMg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NQRd7qb_CMg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:49:38 |
-
----
-
 let's talk about some words to help you master the American accent now as
 
 someone who is learning English as a second language you should never feel

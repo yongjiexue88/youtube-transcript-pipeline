@@ -1,16 +1,3 @@
-# You can use this phrase to describe a sports game sometimes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `o7-VxFBD7VU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=o7-VxFBD7VU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:58:40 |
-
----
-
 oh my gosh did you watch the end of the soccer game last night i couldn't believe it it was such a nail-biter if
 
 you describe something as a nail biter

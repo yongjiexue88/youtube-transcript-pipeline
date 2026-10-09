@@ -1,16 +1,3 @@
-# Learn this alternative to saying "very good" in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GXPqnJUUFPM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GXPqnJUUFPM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:00:40 |
-
----
-
 how was your food this evening it was
 
 exceptional thank you when you use this

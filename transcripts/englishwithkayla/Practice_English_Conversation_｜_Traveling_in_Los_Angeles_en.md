@@ -1,16 +1,3 @@
-# Practice English Conversation | Traveling in Los Angeles
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XMVrYv0TwpQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XMVrYv0TwpQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:01:30 |
-
----
-
 do you wish that you had more opportunities to actually speak english
 
 with a native speaker well in today's

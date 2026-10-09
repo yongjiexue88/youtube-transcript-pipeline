@@ -1,16 +1,3 @@
-# Debt Only Holds You Back, It Never Propels You Forward | January 15, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zOVKJlSqYp8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zOVKJlSqYp8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:49:26 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

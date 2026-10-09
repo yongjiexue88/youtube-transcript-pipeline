@@ -1,16 +1,3 @@
-# Important English Phrasal Verb
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UFll-nnoSpY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UFll-nnoSpY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:01:07 |
-
----
-
 so this phrasal verb call out
 
 can be really interesting if you call out someone it means you

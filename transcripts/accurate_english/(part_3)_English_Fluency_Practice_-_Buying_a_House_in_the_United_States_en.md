@@ -1,16 +1,3 @@
-# (part 3)  English Fluency Practice  -  Buying a House in the United States
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `u_eB3YOIcI0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=u_eB3YOIcI0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:33:09 |
-
----
-
 let's take your Advanced English to the final level of fluency understanding native speakers and speaking like a native speaker [Music]
 
 in this video not only will you enrich your vocabulary with Advanced words and phrases but you'll also have the unique opportunity to listen to an experienced real estate agent from Los Angeles Raquel will explain to us the process of

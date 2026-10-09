@@ -1,16 +1,3 @@
-# They didn't stop at the protest, and they didn't stop at the clinic
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7xZIZnMUbZU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7xZIZnMUbZU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:09:02 |
-
----
-
 They didn't stop at the protest, and they didn't stop at the clinic. They followed phones home, and no one knew they were doing it. This isn't fiction.
 
 It's real tech being used by real cops right now. I'm Jeff Hampton, the people's lawyer, and in this video, I'm going to break down number one, how easy it is for police and private companies to trace where you've been, who you were with, and what you were doing. Number two, how this surveillance system actually works. And number three, what you can do today to stop cops from turning your phone into a silent informant.

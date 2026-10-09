@@ -1,16 +1,3 @@
-# Improve your English Vocabulary in 2022
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tQVLATIDS2Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tQVLATIDS2Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:42:27 |
-
----
-
 hi i'm lisa it's the new year and it's
 
 the perfect time for you to make new goals to improve your english in this video i will give you some tips and techniques on how to become more fluent in english this year by developing a more powerful vocabulary i will also show you a method which was very effective for me when i was learning french it helped me to master french vocabulary and to become fluent in french i believe it will help you take your english to a more advanced level [Music]

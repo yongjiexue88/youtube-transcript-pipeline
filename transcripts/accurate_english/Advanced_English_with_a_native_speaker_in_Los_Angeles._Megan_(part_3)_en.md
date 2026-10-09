@@ -1,16 +1,3 @@
-# Advanced English with a native speaker in Los Angeles.  Megan (part 3)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jaZBO_qQkbw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jaZBO_qQkbw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:45:08 |
-
----
-
 hi i'm lisa welcome to another accurate
 
 english video you are already an advanced speaker of english and my goal is to take you from advanced to truly fluent so that you can sound like a native speaker

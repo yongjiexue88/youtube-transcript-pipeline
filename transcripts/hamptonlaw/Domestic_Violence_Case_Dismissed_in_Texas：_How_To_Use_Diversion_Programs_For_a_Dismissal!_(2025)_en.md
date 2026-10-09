@@ -1,16 +1,3 @@
-# Domestic Violence Case Dismissed in Texas: How To Use Diversion Programs For a Dismissal! (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VKsj3OVoySE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VKsj3OVoySE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:55:37 |
-
----
-
 [Music] hello everyone welcome to the Hampton Law Firm I'm Jeff Hampton with the Hampton law firm and I want to talk to you for a few minutes today about a subject matter that is brought up on occasion where a client will ask me hey Jeff listen um I've been arrested for a domestic violence charge what's this diversion program option um and is it a
 
 good fit for me we're doing a series of videos about domestic violence and just some of your rights so that you know what to expect if you're facing a domestic violence charge and I think it was I thought it was important that we cover just some

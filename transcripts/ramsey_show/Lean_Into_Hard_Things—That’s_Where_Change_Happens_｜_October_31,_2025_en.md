@@ -1,16 +1,3 @@
-# Lean Into Hard Things—That’s Where Change Happens | October 31, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6C5pCmFtb8c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6C5pCmFtb8c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:00:40 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

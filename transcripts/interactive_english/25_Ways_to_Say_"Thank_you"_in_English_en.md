@@ -1,16 +1,3 @@
-# 25 Ways to Say "Thank you" in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BlA9CLJsEy0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BlA9CLJsEy0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:04:31 |
-
----
-
 we just hit 500 000 subscribers which is an amazing
 
 landmark and i just want to say thank

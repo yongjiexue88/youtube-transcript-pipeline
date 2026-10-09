@@ -1,16 +1,3 @@
-# Common Idioms & Expressions with the Word OUTSIDE
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xMt4YfQFV_0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xMt4YfQFV_0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:22:35 |
-
----
-
 today i want to teach you some very useful expressions that all have the word outside that's coming
 
 up

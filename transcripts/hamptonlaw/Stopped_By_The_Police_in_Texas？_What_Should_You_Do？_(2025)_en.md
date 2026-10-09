@@ -1,16 +1,3 @@
-# Stopped By The Police in Texas? What Should You Do? (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `M4NtlC0hA5Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=M4NtlC0hA5Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:37:58 |
-
----
-
 have you been stopped by the police what should you do if you get pulled over by the
 
 police hi I'm Jeff Hampton with the Hampton Law Firm today we're going to go over in our video series what exactly you should do not if but when a police

@@ -1,16 +1,3 @@
-# 3-WORD PHRASES VERBS to Supercharge Your Vocabulary 💪
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DRuPVFisLVQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DRuPVFisLVQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:03:18 |
-
----
-
 three-word phrasal verbs that is what I
 
 want to teach you today in order to help

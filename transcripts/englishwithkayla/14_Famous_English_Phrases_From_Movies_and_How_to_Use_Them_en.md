@@ -1,16 +1,3 @@
-# 14 Famous English Phrases From Movies and How to Use Them
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `m16gpVbG9YQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=m16gpVbG9YQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:39:47 |
-
----
-
 If you love watching movies to learn English and you need to learn some new English phrases, this lesson is for you.
 
 In today's English lesson, I'll teach you 14 phrases that come from English-speaking movies that English speakers say in their everyday conversations. These 14 phrases are some of the most important ones that we get from movies and they're really fun to learn how to use as well. So, let's get started. You're going to master these 14 phrases in today's lesson and you'll hear English speakers use them all the time. The first phrase is may the odds

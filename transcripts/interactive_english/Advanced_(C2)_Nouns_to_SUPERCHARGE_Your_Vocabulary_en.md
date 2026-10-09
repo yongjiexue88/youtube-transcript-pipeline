@@ -1,16 +1,3 @@
-# Advanced (C2) Nouns to SUPERCHARGE Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `x3IAgqivDls` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=x3IAgqivDls) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:53:38 |
-
----
-
 let's learn some Advanced C2 nouns to
 
 help you supercharge your vocabulary and

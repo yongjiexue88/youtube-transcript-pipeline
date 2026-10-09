@@ -1,16 +1,3 @@
-# If you know these 20 Phrases You've Mastered the English Language
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bdNFrdnpHZA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bdNFrdnpHZA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:40:12 |
-
----
-
 If you know all of the phrases in today's English lesson, then you are a master at speaking English. In today's video, I'll teach you 19 new phrases that might be new or they might be reinforced by this video. And we're going to go all the way from elementary level, so some pretty basic idioms, all
 
 the way into a master level of English.

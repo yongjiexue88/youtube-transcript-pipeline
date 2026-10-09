@@ -1,16 +1,3 @@
-# Get Your Finances In Order Now So You Can Enjoy Your Life Later | January 8, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WPJ8c9zr8ok` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WPJ8c9zr8ok) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:50:28 |
-
----
-
 [music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

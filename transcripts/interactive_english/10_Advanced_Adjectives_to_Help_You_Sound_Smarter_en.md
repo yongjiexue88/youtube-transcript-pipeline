@@ -1,16 +1,3 @@
-# 10 Advanced Adjectives to Help You Sound Smarter
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BjLPyY_9aIc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BjLPyY_9aIc) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:41:45 |
-
----
-
 Would you like to sound smarter when you're speaking in English?
 
 Of course you do. So, that's why today I'm going to tell you ten different adjectives to help you sound smarter.

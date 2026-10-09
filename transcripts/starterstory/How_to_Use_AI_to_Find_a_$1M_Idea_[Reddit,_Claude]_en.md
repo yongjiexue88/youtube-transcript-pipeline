@@ -1,16 +1,3 @@
-# How to Use AI to Find a $1M Idea [Reddit, Claude]
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `L_FY6aW9cJ4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=L_FY6aW9cJ4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:24:14 |
-
----
-
 The human brain is not wired to come up with a good business idea. Ego, bias,
 
 and overthinking, it often gets in the way. So, what if you could outsource the whole process to AI? AI.

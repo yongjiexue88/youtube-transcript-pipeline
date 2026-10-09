@@ -1,16 +1,3 @@
-# How to learn more English vocabulary | #shorts #learnenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ODruMUI1zj0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ODruMUI1zj0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:15:35 |
-
----
-
 if you are learning english and you want
 
 to study more vocabulary you're going to

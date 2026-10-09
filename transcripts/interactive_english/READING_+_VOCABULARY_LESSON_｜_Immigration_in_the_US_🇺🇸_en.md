@@ -1,16 +1,3 @@
-# READING + VOCABULARY LESSON | Immigration in the US 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aJGBsQlbkdk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aJGBsQlbkdk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:22:49 |
-
----
-
 hey everyone uh my name is wes this is interactive english thank you guys so much for joining me today uh
 
 so this lesson is

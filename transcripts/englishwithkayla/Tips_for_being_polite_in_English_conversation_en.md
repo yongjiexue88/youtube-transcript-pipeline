@@ -1,16 +1,3 @@
-# Tips for being polite in English conversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `B16UxWAw_hY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=B16UxWAw_hY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:57:20 |
-
----
-
 in today's English lesson I'll show you
 
 exactly how to speak politely in English

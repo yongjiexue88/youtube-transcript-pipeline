@@ -1,16 +1,3 @@
-# English Pronunciation - vowel changes in stressed and unstressed syllables | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MaVq4_BeBD4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MaVq4_BeBD4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:11:56 |
-
----
-
 [Music]
 
 I'd like to teach you another very important rule about English pronunciation that a lot of my students have problems with a lot of people make this mistake listen carefully I'm going to say some words in two different ways

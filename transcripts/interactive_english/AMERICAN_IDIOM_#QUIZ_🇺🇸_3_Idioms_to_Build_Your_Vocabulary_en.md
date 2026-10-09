@@ -1,16 +1,3 @@
-# AMERICAN IDIOM #QUIZ 🇺🇸 3 Idioms to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AyLGfaMe4sY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AyLGfaMe4sY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:56:40 |
-
----
-
 do you know your American idioms let's
 
 find out the home the last part of

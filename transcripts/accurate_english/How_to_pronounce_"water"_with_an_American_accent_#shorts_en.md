@@ -1,16 +1,3 @@
-# How to pronounce "water" with an American accent  #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zy8AkzH1Rxw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zy8AkzH1Rxw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:41:04 |
-
----
-
 a lot of non-native speakers of English struggle with the pronunciation of this word I will teach you how to say it perfectly with an American accent first
 
 round your lips for the w w w and then

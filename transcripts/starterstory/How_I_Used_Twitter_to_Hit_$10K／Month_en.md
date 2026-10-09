@@ -1,16 +1,3 @@
-# How I Used Twitter to Hit $10K/Month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VYT-ip21P08` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VYT-ip21P08) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:15:12 |
-
----
-
 I never in my wildest imaginations expect to get numbers like this.
 
 >> Meet Rob Hallum, a solo developer you've probably seen all over X in the last few months. But what you might not know about Rob is that he wasn't always successful. He failed for years until he discovered one platform that changed everything. X.

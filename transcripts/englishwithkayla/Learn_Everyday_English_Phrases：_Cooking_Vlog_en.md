@@ -1,16 +1,3 @@
-# Learn Everyday English Phrases: Cooking Vlog
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FeFL6bM0JW8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FeFL6bM0JW8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:02:46 |
-
----
-
 Hi friends. Today's English lesson will teach you some cooking vocabulary, some phrasal verbs that are helpful for the kitchen, and it will teach you exactly how Americans actually sound when they're speaking about food and cooking.
 
 So, let's get started. Today's English lesson won't just be me sitting down teaching you. I'm actually going to be cooking something. And today I will be cooking chicken noodle soup for my family. I don't think that there is a more American dish than chicken noodle soup.

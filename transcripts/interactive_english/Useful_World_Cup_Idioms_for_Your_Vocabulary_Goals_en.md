@@ -1,16 +1,3 @@
-# Useful World Cup Idioms for Your Vocabulary Goals
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ynJBUyVFZwo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ynJBUyVFZwo) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:37:19 |
-
----
-
 So since everyone is so excited for the World Cup,
 
 I thought this would be a good opportunity to talk to you about some popular soccer idioms and expressions.

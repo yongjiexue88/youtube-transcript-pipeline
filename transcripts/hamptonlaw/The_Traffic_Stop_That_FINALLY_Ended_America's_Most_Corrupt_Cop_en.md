@@ -1,16 +1,3 @@
-# The Traffic Stop That FINALLY Ended America's Most Corrupt Cop
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_qwzBNXCIUo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_qwzBNXCIUo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:17:48 |
-
----
-
 You going to lose your badge. >> I ain't going to lose. Hands behind your back. You doing AH YOU TAKE OFF STOP.
 
 STEP OUT OF THE CAR. AND COME ON.

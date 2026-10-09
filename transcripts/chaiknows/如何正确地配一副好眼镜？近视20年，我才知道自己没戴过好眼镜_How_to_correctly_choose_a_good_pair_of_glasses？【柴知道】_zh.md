@@ -1,16 +1,3 @@
-# 如何正确地配一副好眼镜？近视20年，我才知道自己没戴过好眼镜 How to correctly choose a good pair of glasses?【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zZ3-HDynP2o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zZ3-HDynP2o) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:40:05 |
-
----
-
 我戴了 20 年眼镜做了两期关于眼镜的视频
 
 而每期都有人说我戴的眼镜不好左右稍微有点点变形还是能看得出来

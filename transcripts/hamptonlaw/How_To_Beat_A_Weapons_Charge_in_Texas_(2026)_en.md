@@ -1,16 +1,3 @@
-# How To Beat A Weapons Charge in Texas (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JlgtZLbLsAU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JlgtZLbLsAU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:37:43 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about how to beat a weapons charge in
 
 Texas by the way if you wait around to the end of this video I will also give you a free ebook what to do if you've been charged with a crime in Texas now

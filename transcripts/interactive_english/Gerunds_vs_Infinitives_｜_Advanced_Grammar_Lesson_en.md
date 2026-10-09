@@ -1,16 +1,3 @@
-# Gerunds vs Infinitives | Advanced Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `U8OG1qWCqeE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=U8OG1qWCqeE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:50:46 |
-
----
-
 all right this should be
 
 uh turning on soon if it hasn't turned

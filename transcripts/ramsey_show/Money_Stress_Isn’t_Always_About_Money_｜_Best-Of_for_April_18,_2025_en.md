@@ -1,16 +1,3 @@
-# Money Stress Isn’t Always About Money | Best-Of for April 18, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9YFXQva2-8Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9YFXQva2-8Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:14:48 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free

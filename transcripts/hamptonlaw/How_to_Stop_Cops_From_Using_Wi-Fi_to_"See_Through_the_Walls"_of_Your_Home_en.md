@@ -1,16 +1,3 @@
-# How to Stop Cops From Using Wi-Fi to "See Through the Walls" of Your Home
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LngDW3t36nc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LngDW3t36nc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:56:30 |
-
----
-
 You might think police need a warrant to find out what's happening inside your home. But with new surveillance technology, they may be able to track every movement through your walls using your Wi-Fi signal without ever stepping inside. That means they could learn whether you're home, where you're at in your home, watch you as you move from room to room while most people have no idea this technology even exists. And if you don't understand how this works, you won't know that your privacy rights are being violated.
 
 I'm Jeff Hampton, the people's lawyer.

@@ -1,16 +1,3 @@
-# Common English phrases for your daily conversations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HDSgGnTvlS4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HDSgGnTvlS4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:59:29 |
-
----
-
 have you ever noticed that the english that you learned in your classroom doesn't sound exactly like the english
 
 that american english speakers like

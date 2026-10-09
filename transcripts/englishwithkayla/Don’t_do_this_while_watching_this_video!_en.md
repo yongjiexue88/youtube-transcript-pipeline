@@ -1,16 +1,3 @@
-# Don’t do this while watching this video!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ojWgSuzY50s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ojWgSuzY50s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:19:22 |
-
----
-
 do you know someone who is often
 
 distracted or daydreaming well you could

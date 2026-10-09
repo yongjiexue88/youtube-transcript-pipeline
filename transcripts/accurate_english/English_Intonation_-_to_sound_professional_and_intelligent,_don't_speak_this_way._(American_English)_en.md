@@ -1,16 +1,3 @@
-# English Intonation - to sound professional and intelligent, don't speak this way. (American English)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gzHmWg3ylFg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gzHmWg3ylFg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:00:18 |
-
----
-
 in this video I would like to talk to you about the importance of English intonation how you use intonation will
 
 affect whether you sound confident or insecure whether you sound professional

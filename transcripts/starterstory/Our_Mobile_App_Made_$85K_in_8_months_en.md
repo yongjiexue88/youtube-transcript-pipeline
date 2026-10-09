@@ -1,16 +1,3 @@
-# Our Mobile App Made $85K in 8 months
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nsn94Ad47GY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nsn94Ad47GY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:17:04 |
-
----
-
 My name is Jack Sweeney >> and I'm Nick Sweeney and we're the co-founders of Coherence. We have over 15,000 downloads and around $85,000 in
 
 revenue. Meet Jack and Nick Sweeney, two brothers who built a mobile app this year that's already made $85,000.

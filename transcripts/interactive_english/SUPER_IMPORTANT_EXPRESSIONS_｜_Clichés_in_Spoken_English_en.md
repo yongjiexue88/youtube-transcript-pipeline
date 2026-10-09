@@ -1,16 +1,3 @@
-# SUPER IMPORTANT EXPRESSIONS | Clichés in Spoken English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `k300AKXetyY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=k300AKXetyY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:02:25 |
-
----
-
 vocabulary that you need to know and the
 
 reason why I say that is because I I

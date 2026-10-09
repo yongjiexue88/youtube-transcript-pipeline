@@ -1,16 +1,3 @@
-# Master 131 Advanced English Phrasal Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `83Nd5pWz92Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=83Nd5pWz92Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:31:10 |
-
----
-
 If you're a really good English speaker, you're probably watching this lesson and you're thinking, "How can I get to the advanced level?" In this lesson, I'll teach you phrases that will help you do this. You'll be in an English conversation with a native speaker and you'll hear someone say, "I think I'm going to go through with it." Or, "I'm going to make up for it." And you might
 
 think, "What exactly do they mean?"

@@ -1,16 +1,3 @@
-# Every year, more than a million Americans are arrested for driving under the influence
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BLXElb3rBM0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BLXElb3rBM0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:09:29 |
-
----
-
 Every year, more than a million Americans are arrested for driving under the influence. In nearly every case, one of two chemical tests is used as the cornerstone of the cop's case against you. Either a breath test or a blood test. We're told these devices, these scientific truth machines, are absolutely infallible. That a reading is absolute and unchangeable. And if you're just a fraction of a percent over 008, it means you're guilty. But what if all of that is a lie? But what if these machines are deeply flawed, subject to error, misuse, and manipulation? What if
 
 innocent people have been convicted, wrongfully convicted, because courts have accepted this junk science? What if even blood tests, the so-called gold standard, carry hidden flaws and dangers? I'm Jeff Hampton, the people's lawyer, and in this video, I'm ripping the veil off both DUI breath tests and blood testing. We'll examine the case law, the scandals, the forensic science, and the rights you need to know.

@@ -1,16 +1,3 @@
-# Advanced Verbs (C2) to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dOM4D9nUt0k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dOM4D9nUt0k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:59:42 |
-
----
-
 I'm sure you relish learning new
 
 vocabulary and in today's lesson I want

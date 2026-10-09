@@ -1,16 +1,3 @@
-# SUPER-USEFUL ADVERBS | Take the quiz to become an adverb all-star! 📝
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vKv9VV74fZU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vKv9VV74fZU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:18:40 |
-
----
-
 hello hey everyone welcome to another
 
 english lesson today it's uh

@@ -1,16 +1,3 @@
-# COMMON ACRONYMS IN AMERICAN ENGLISH 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aKI90pOtMqY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aKI90pOtMqY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:30:58 |
-
----
-
 Hey everyone, happy 2020.
 
 Hope you all had a wonderful New Year and we are back. Back for more lessons.

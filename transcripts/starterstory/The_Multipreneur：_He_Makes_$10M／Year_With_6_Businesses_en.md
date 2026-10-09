@@ -1,16 +1,3 @@
-# The Multipreneur: He Makes $10M/Year With 6 Businesses
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `akM6P97_0B8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=akM6P97_0B8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:29:33 |
-
----
-
 this guy makes over $10 million a year with six different businesses and the best part he started them all with 0 I drove out to Miami Florida to ask him exactly how he built these businesses and the blueprint he uses to make over $5 million a year in profit
 
 instead of charging $1,500 a month we charge on average $1.5 million a year

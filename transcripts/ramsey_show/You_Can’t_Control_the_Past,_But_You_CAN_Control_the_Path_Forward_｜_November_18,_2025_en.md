@@ -1,16 +1,3 @@
-# You Can’t Control the Past, But You CAN Control the Path Forward | November 18, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `36xS1_EZUMM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=36xS1_EZUMM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:58:09 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

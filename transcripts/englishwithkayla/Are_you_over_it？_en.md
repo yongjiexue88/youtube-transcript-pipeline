@@ -1,16 +1,3 @@
-# Are you over it?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `l1Cbzbi6QzM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=l1Cbzbi6QzM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:15:43 |
-
----
-
 I don't know about you but I am so over
 
 these so if you've heard this phrase to

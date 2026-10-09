@@ -1,16 +1,3 @@
-# ADVANCED HEALTH VOCABULARY ❤️  | Words & phrases you need to know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PXuIa2LLkUo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PXuIa2LLkUo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:01:17 |
-
----
-
 This is an incredibly important topic
 
 because we're talking about health. This is something that we discuss all the time with friends, colleagues, family members, and I I really want to go deep and talk about some advanced vocabulary when it comes to both physical and mental health. We're going to look at some idioms, individual words, useful phrases. And before we begin, if you are

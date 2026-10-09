@@ -1,16 +1,3 @@
-# You've probably seen stories about new age verification laws and assumed they
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3qMDYS10zX8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3qMDYS10zX8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:55:40 |
-
----
-
 You've probably seen stories about new age verification laws and assumed they were still a long way off from affecting your life. But in California, that system is already taking shape where the devices you use every day may be forced to know your age, sort you into a category, and then share that information with both apps and cops
 
 behind the scenes. And once that infrastructure is in place, it won't stop in California. Other states are already moving in the same direction.

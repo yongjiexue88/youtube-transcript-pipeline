@@ -1,16 +1,3 @@
-# How To Beat A Theft Case:  What The Government Must Prove! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `V7OYVX4evWU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=V7OYVX4evWU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:16:36 |
-
----
-
 hello I'm Jeff Hampton with the Hampton Law Firm thank you for joining us here today I'm going to talk to you today's video is about theft what does the State
 
 of Texas have to prove what are the actual elements of the offens of theft in Texas all right so if you wait around to the end of this video I'm also going to give you a free resource what to do if you've been charged with a crime in Texas it's a free ebook by the way if you enjoy what you see here today and if you like it I encourage you to subscribe to our YouTube channel we try to keep up and give you uh weekly content just like

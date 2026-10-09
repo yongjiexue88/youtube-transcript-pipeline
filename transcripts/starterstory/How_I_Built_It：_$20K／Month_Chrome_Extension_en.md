@@ -1,16 +1,3 @@
-# How I Built It: $20K/Month Chrome Extension
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ty9ZcimL6VE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ty9ZcimL6VE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:28:23 |
-
----
-
 learned how to build an extension and
 
 launched my first extension within like

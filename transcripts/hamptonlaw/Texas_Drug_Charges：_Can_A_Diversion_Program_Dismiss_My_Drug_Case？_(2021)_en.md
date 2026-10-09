@@ -1,16 +1,3 @@
-# Texas Drug Charges:  Can A Diversion Program Dismiss My Drug Case? (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SkupGHqeVqw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SkupGHqeVqw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:16:19 |
-
----
-
 hello this is Jeff Hampton with the Hampton law firm uh Welcome to our video
 
 series here today I'm going to talk to you a few minutes about drug cases in

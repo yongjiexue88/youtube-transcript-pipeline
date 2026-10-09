@@ -1,16 +1,3 @@
-# 5 English Words You Are Probably Pronouncing Incorrectly - Common Mistakes|Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `p28E_6TvnRs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=p28E_6TvnRs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:02:09 |
-
----
-
 in this video I would like to teach you how to correctly pronounce five words that you are probably not saying correctly a lot of my advanced English
 
 students make these mistakes and maybe you do too and after that we will practice saying

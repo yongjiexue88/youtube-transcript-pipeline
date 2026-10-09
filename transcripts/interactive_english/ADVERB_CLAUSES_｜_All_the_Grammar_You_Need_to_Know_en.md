@@ -1,16 +1,3 @@
-# ADVERB CLAUSES | All the Grammar You Need to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KffFRuV9l8E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KffFRuV9l8E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:34:59 |
-
----
-
 hello and welcome to another super
 
 amazing incredible fantastic I don't

@@ -1,16 +1,3 @@
-# LAWYER: If Cops Say "We Just Want to Talk" - Say THIS (One Sentence Script)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xL8WFDW4N4U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xL8WFDW4N4U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:18:34 |
-
----
-
 You're kicking back, relaxing on your couch, watching TV, when suddenly you hear knocking at your front door. You figure it's your buddy from down the street, so you walk right up, open the door, and right in front of you are two plainclothes detectives staring at you.
 
 They smile, and they're even polite, but then one of them decides to ask you the seven most dangerous words in the English language. We just want to talk to you. Now, here's what happens next.

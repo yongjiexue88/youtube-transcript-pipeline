@@ -1,16 +1,3 @@
-# Understand these rude American English phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `haK2L_fgSTI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=haK2L_fgSTI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:13:24 |
-
----
-
 do you want a cookie cool what a
 
 surprise you're wearing that you just ate my food

@@ -1,16 +1,3 @@
-# Use this phrase to show you’re annoyed or disappointed ☹️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cjNv3A03kiY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cjNv3A03kiY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:15:08 |
-
----
-
 now we can also use I don't believe you
 
 to express a more negative emotion for

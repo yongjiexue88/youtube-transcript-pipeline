@@ -1,16 +1,3 @@
-# Different American Accents
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2OTdI1htB6w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2OTdI1htB6w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:47:14 |
-
----
-
 hi i'm lisa a lot of learners of english
 
 ask me which american accent do you teach aren't there different accents in the united states and when you're watching american films and tv shows or when you're listening to the news which american accent are they speaking those are some of the topics that we will discuss in this video in addition you will hear a sample of different accents from different parts of the united states and you will listen to my conversation with

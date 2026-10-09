@@ -1,16 +1,3 @@
-# You Won’t Win With Money by Accident | October 14, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6APrJ53enUA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6APrJ53enUA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:03:46 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

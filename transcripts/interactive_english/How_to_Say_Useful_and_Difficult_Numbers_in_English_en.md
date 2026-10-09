@@ -1,16 +1,3 @@
-# How to Say Useful and Difficult Numbers in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hVSIpMqoS78` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hVSIpMqoS78) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:42:12 |
-
----
-
 today I am going to talk to you about
 
 how to say difficult numbers in English

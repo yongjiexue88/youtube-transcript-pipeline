@@ -1,16 +1,3 @@
-# 21 Phrases Needed to Speak Fluent English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wQbzHZpRaCQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wQbzHZpRaCQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:49:38 |
-
----
-
 I promise you that if you learn these 21
 
 English phrases today you will feel more

@@ -1,16 +1,3 @@
-# Domestic Violence: A Former DA Explains How To Remove An Emergency Protective Order (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fUsipMuz4d4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fUsipMuz4d4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:16:50 |
-
----
-
 hello I'm Jeff Hampton with the Hampton Law Firm welcome to uh our YouTube channel today I wanted to talk about a subject that's brought up by people who are facing domestic violence charges I'll sometimes get calls from clients and they'll say Jeff listen my the alleged victim my my wife my husband my girlfriend my boyfriend they don't want to prosecute but I have an emergency protective order in place how do
 
 I get it removed So today we're going to break down emergency protective orders everything you need to know about it um what if you don't know if you have one what if you don't have the paperwork for it we'll go over all that today and I encourage you if you wait around to the end of this video I will provide you a free resource what to do

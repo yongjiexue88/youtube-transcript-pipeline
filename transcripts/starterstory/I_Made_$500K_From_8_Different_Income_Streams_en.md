@@ -1,16 +1,3 @@
-# I Made $500K From 8 Different Income Streams
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `47QXbPGyzBI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=47QXbPGyzBI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:13:45 |
-
----
-
 I built 80 different income streams that together had made over $500,000.
 
 [music] This is Floren, a developer who's made over $500,000 online. I tried

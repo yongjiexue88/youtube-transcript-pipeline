@@ -1,16 +1,3 @@
-# Reading + Vocabulary Lesson | EARTHQUAKES 😟
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pFF-iS9cT1M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pFF-iS9cT1M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:17:37 |
-
----
-
 hello everyone welcome to today's lesson
 
 thank you very much for joining me this is well to me it's a very important lesson this is going to be uh one of the fundraiser a fundraiser lesson which we do from time to time so uh what how this

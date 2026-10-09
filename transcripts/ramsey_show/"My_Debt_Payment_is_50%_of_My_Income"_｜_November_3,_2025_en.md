@@ -1,16 +1,3 @@
-# "My Debt Payment is 50% of My Income" | November 3, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `u-aQEiG3kSM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=u-aQEiG3kSM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:00:26 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

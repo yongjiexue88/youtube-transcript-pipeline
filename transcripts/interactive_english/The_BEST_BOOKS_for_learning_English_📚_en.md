@@ -1,16 +1,3 @@
-# The BEST BOOKS for learning English 📚
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dHzj-e0iSLE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dHzj-e0iSLE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:18:53 |
-
----
-
 Hello everyone. Welcome to today's
 
 lesson. My name is Wes. The channel is

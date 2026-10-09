@@ -1,16 +1,3 @@
-# Learn the prefix “ill-“ in English | #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ibkawdA3sCA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ibkawdA3sCA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:27:09 |
-
----
-
 when a word in english starts with the
 
 prefix ill it means that it is being poorly

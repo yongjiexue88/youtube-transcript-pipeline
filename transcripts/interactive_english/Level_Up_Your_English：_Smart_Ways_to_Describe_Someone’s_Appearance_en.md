@@ -1,16 +1,3 @@
-# Level Up Your English: Smart Ways to Describe Someone’s Appearance
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3oJYLxwW4Wo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3oJYLxwW4Wo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:41:32 |
-
----
-
 Would you say that you are effervescent,
 
 voluuptuous, disheveled, or maybe you have prominent features? Let's find out because I'm going to teach you some advanced vocabulary that you can use to talk about someone's appearance. And these are incredibly descriptive words.

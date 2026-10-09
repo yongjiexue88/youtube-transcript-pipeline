@@ -1,16 +1,3 @@
-# Pronounce 25 Major US Cities Just Like an American 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GPRfB1m1QN4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GPRfB1m1QN4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:14:25 |
-
----
-
 let's talk about how to correctly pronounce 25 major u.s cities and what
 
 i'm going to do is i will give you

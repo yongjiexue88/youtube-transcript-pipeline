@@ -1,16 +1,3 @@
-# Build Your English Vocabulary 👉 PROCESS  (Word of the Day)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HtidNuBkDok` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HtidNuBkDok) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:51:05 |
-
----
-
 Welcome, welcome, welcome to our global classroom!
 
 Today we have a special lesson for you because I'm going to show you the process that goes into making these videos.

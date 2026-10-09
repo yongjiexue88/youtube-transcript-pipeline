@@ -1,16 +1,3 @@
-# The most confusing things about the US
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EzeFxxSmWT0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EzeFxxSmWT0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:37:03 |
-
----
-
 tell me which one of these things is the
 
 most confusing about Americans we use

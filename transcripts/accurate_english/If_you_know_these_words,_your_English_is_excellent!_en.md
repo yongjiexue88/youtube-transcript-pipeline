@@ -1,16 +1,3 @@
-# If you know these words, your English is excellent!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rM6FUF-X1_o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rM6FUF-X1_o) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:29:10 |
-
----
-
 hi I'm Lisa let's find out if your English is truly Advanced I will give you a little vocabulary test to find
 
 out educated native speakers of English

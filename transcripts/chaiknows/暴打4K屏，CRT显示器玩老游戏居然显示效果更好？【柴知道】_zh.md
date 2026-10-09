@@ -1,16 +1,3 @@
-# 暴打4K屏，CRT显示器玩老游戏居然显示效果更好？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yVk3WlnVRTc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yVk3WlnVRTc) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:34:06 |
-
----
-
 这是 1997 年的游戏《恶魔城X月下夜想曲》
 
 用 4K 显示器装上模拟器后

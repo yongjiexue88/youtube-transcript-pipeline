@@ -1,16 +1,3 @@
-# Too much information! 😳
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vjJpIH-RMsk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vjJpIH-RMsk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:14:37 |
-
----
-
 this next phrase
 
 TMI stands for too much information if

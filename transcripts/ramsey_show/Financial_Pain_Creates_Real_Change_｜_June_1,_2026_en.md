@@ -1,16 +1,3 @@
-# Financial Pain Creates Real Change | June 1, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wohT7yUO1Uc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wohT7yUO1Uc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:29:39 |
-
----
-
 This is an ad for Better Help. May is mental health awareness month and it's a good reminder that money problems take behavior change. Talking to someone can help you make progress. Go to betterhelp.com/ramsey to get 10% off.
 
 Brought to you by the Every Dollar app.

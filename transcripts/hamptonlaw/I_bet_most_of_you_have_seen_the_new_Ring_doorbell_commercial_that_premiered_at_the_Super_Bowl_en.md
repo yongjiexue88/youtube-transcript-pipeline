@@ -1,16 +1,3 @@
-# I bet most of you have seen the new Ring doorbell commercial that premiered at the Super Bowl
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KRb5tstaeO8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KRb5tstaeO8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:00:49 |
-
----
-
 I bet most of you have seen the new Ring doorbell commercial that premiered at the Super Bowl. I mean, it looks so sweet and innocent, right? AI linking together everyone's doorbell cameras to help find a lost puppy. But if you're thinking like a lawyer, you probably see a bigger problem.
 
 I'm Jeff Hampton, the people's lawyer, and in this video, I'm breaking down number one, how Ring's new search party feature works. Number two, how cops are licking their chops to use this as a surveillance tool. and number three, what you need to do to stop this creepy surveillance. And stick around to the end because I'm going to show you something that makes me furious about this commercial.

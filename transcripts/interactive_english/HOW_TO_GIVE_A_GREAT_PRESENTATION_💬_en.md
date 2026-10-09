@@ -1,16 +1,3 @@
-# HOW TO GIVE A GREAT PRESENTATION 💬
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CyrpA2MeR48` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CyrpA2MeR48) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:37:47 |
-
----
-
 what's up everyone my name is Wes this
 
 is interactive English which of course

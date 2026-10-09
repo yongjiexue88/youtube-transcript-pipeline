@@ -1,16 +1,3 @@
-# Copy Me! The Secret to Clear, Confident English Speaking
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fI6GxDZXfo4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fI6GxDZXfo4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:32:51 |
-
----
-
 Huh? Sorry. What did you say?
 
 In this lesson, we're going to take your English, the words that you know, and we're going to help you speak confidently and more clearly so you don't hear what I just said all of the time cuz I can be so frustrating when you're getting to be at an advanced level of English, but people cannot understand you. Today, we're going to use the number one technique to sounding more clear and confident in English.

@@ -1,16 +1,3 @@
-# I make $120K/year from 3 mobile apps
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SJOFUBNHYqU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SJOFUBNHYqU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:16:27 |
-
----
-
 This is Pre. This year, he's already launched three apps that are making over $10,000 a month. We've gone from zero to
 
 120K in the past year. His strategy is simple. Find a personal problem and build an app that solves it. That's it.

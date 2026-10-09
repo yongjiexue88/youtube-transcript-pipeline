@@ -1,16 +1,3 @@
-# These sleepy phrases are super common in the US
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `X7RYFd7yfVo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=X7RYFd7yfVo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:47:33 |
-
----
-
 what do you say when someone is so tired
 
 that they can't work anymore they are

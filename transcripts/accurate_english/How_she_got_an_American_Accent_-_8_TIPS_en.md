@@ -1,16 +1,3 @@
-# How she got an American Accent - 8 TIPS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8NPGAF8Wf3A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8NPGAF8Wf3A) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:59:12 |
-
----
-
 in this video you will get some advice from one of my students who completely transformed her accent she sounds so
 
 good and sometimes people even think she's a native speaker of English she will tell you exactly what she did and how she practiced I believe she will really inspire you and after we watched the video with her I will come back and I will give you some very important advice about practicing and also some advice about learning languages in general you did a lot of work on your

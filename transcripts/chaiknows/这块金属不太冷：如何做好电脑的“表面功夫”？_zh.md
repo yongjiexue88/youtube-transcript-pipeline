@@ -1,16 +1,3 @@
-# 这块金属不太冷：如何做好电脑的“表面功夫”？
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XCfGz1Itp0I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XCfGz1Itp0I) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:43:32 |
-
----
-
 这两台轻薄本最大的区别是什么
 
 是外壳外壳很重要对于轻薄本来说尤其重要

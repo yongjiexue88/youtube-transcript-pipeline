@@ -1,16 +1,3 @@
-# 40 Advanced English Sentences That I Use Every Day
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CaQllbI9d6s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CaQllbI9d6s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:33:01 |
-
----
-
 If you ask me, I'll tell you that you cannot learn natural English just by studying a textbook.
 
 There's a phrase I'm going to teach you today, and I'm going to teach you 40 powerful phrases that I actually use in my everyday life. In this lesson, I'll teach you the phrase, I'll give you real-life examples of using the phrase in a sentence, and I'll give you some tips so that you can use it correctly in your life as well. Let's study these 40 phrases together. If you want to learn more about this lesson and have access to all my membership lessons, make sure to visit englishwithkayla.com.

@@ -1,16 +1,3 @@
-# Get in the Driver’s Seat of Your Own Life | April 28, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `R1ZRbU8oNAQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=R1ZRbU8oNAQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:34:42 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

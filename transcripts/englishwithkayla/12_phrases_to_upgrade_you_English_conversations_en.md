@@ -1,16 +1,3 @@
-# 12 phrases to upgrade you English conversations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wtf0XWlrcbs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wtf0XWlrcbs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:56:36 |
-
----
-
 do you ever wonder why you can't understand exactly what English speakers are saying well it's because you
 
 probably learned textbook English and this lesson I'm going to interpret the

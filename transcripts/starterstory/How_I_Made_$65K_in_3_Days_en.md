@@ -1,16 +1,3 @@
-# How I Made $65K in 3 Days
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BNr1JOQdSN0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BNr1JOQdSN0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:20:38 |
-
----
-
 I launched my app and made $65,000 in 3 days with zero audience.
 
 >> Meet Devon, an indie hacker from India who failed at multiple startups before stumbling across a strategy that would change everything. >> Lifetime deals are a cheat code because it gives you and most importantly,

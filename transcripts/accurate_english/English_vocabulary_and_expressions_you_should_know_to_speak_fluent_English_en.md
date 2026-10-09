@@ -1,16 +1,3 @@
-# English vocabulary and expressions you should know to speak fluent English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RHGYHDyOMks` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RHGYHDyOMks) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:39:16 |
-
----
-
 hi i'm lisa if you would like to take your english fluency to the next level and speak english like a native speaker this video will help you this is a new video from my series real people in los angeles
 
 [Music]

@@ -1,16 +1,3 @@
-# How to Stop Cops From TRICKING You While CAMPING
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `F49XfeRhkvA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=F49XfeRhkvA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:25:01 |
-
----
-
 Picture this. It's a warm summer night and you're parked at a scenic overlook in your RV. Kids are asleep in the back.
 
 Stars are shining overhead. You're sipping a cold drink, unwinding from a long day on the road. When suddenly, bam, a sharp knock at your RV door. You

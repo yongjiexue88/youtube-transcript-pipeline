@@ -1,16 +1,3 @@
-# You're driving home from dinner
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UxGbU_Xi13Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UxGbU_Xi13Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:59:06 |
-
----
-
 You're driving home from dinner. Maybe you had a glass of wine 2 hours ago. You feel completely fine, but then you see those lights in your rearview mirror.
 
 The cop walks up to your window, and before you can even hand him your license, he leans in and says the five words that completely ruin your night. I think I smell alcohol. Now, here's the thing. What you say in the next few seconds will determine whether you get to drive home or end up in handcuffs in the back of a squad car.

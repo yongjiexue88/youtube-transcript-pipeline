@@ -1,16 +1,3 @@
-# Meet The Kid Who Made $1M with ChatGPT
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `irEi7DVBHdA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=irEi7DVBHdA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:33:13 |
-
----
-
 this kid made over one million dollars
 
 in one year with a business idea that

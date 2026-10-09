@@ -1,16 +1,3 @@
-# Part 2 - 10 More Advanced English Words for Fluent English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `04MdmS-3_fo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=04MdmS-3_fo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:06:05 |
-
----
-
 in this video I'm going to teach you 10 more advanced English words so that you
 
 can feel more confident and more fluent when you're speaking English in addition you will be practicing linking connecting words together and stressing the correct word in sentences when you practice these new words today let's get started the first word is very rainy

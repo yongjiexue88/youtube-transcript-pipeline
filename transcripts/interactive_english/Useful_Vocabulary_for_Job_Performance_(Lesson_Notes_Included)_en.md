@@ -1,16 +1,3 @@
-# Useful Vocabulary for Job Performance (Lesson Notes Included)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fplxQPLyWxI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fplxQPLyWxI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:11:36 |
-
----
-
 Hello and welcome to today's lesson. I
 
 have well it's a vocabulary lesson for you in which I want to teach you different words and phrases that you can use to talk about a person's job performance. So these are words and phrases that are related to work. These are words and phrases that you'll come across in the workplace. And this is a quiz lesson for you because I'd like you to participate.

@@ -1,16 +1,3 @@
-# It starts the same way for far too many concealed carry license holders
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7bbULd6DwxY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7bbULd6DwxY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:10:20 |
-
----
-
 It starts the same way for far too many concealed carry license holders. Blue lights, cold steel handcuffs, and now a mug shot that erases a clean life. Sure, the concealed carry holder, he survived the threat, but he lost everything in the courtroom. Why?
 
 Because nobody told him there are actually two fights you must prepare for when you choose to carry. I'm Jeff Hampton, the people's lawyer. And in this video, I'm going to walk you through number one, the top concealed carry mistakes cops are counting on you to make. And number two, the specific words you can use to shut cops down.

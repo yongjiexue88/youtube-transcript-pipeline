@@ -1,16 +1,3 @@
-# Count those shots
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HE1SQS-5TKM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HE1SQS-5TKM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:59:52 |
-
----
-
 Count those shots. Those were approximately 40 rounds fired by two Harris County Sheriff's deputies through a window and a door into an apartment where a woman was standing doing absolutely nothing wrong. Her name is Ebony Pouncy. She was shot five times.
 
 She now has permanent nerve damage. She has drop foot and she has psychological trauma that will follow her the rest of her life. And the worst part is she never even knew that it was the cops on the other side of the door. Now this video blew up all over the internet for millions of views and the number one question that everyone was asking in the comments is can she shoot back at the cops when they are unlawfully shooting at her?

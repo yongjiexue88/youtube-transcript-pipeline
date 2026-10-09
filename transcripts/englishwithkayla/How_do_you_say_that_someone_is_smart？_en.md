@@ -1,16 +1,3 @@
-# How do you say that someone is smart?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DBFFWEE19UI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DBFFWEE19UI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:50:20 |
-
----
-
 how do you say that someone is smart in
 
 english here are four phrases that you

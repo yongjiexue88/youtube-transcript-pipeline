@@ -1,16 +1,3 @@
-# 13 Scary Words  👻   | Useful Vocabulary Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-UiyMsD1zHY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-UiyMsD1zHY) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:45:26 |
-
----
-
 Ahh.... Oh, my. I didn't see you there.
 
 You really got me petrified, terrified, aghast.

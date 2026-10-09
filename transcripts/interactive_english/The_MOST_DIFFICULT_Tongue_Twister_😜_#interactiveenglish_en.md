@@ -1,16 +1,3 @@
-# The MOST DIFFICULT Tongue Twister 😜 #interactiveenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6SOnJ3nlnWI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6SOnJ3nlnWI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:02:00 |
-
----
-
 she sells seashells by the seashore this
 
 is the beginning of a very famous and

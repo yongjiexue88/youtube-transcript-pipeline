@@ -1,16 +1,3 @@
-# There are two ways to say this word
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `g7106DWZbo0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=g7106DWZbo0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:53:03 |
-
----
-
 i actually don't know how to pronounce
 
 the word actually you heard it right

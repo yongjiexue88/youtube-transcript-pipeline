@@ -1,16 +1,3 @@
-# Learn Vocabulary in Barcelona with Interactive English in Barcelona | Travel VLOG
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JTRy8csznco` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JTRy8csznco) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:55:00 |
-
----
-
 We are on our way to...
 
 Welcome to the incredible city of Barcelona!

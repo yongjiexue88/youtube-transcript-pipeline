@@ -1,16 +1,3 @@
-# How to Stop Cops From Using This NEW Trick During a Traffic Stop
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZG7wPR3NFJo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZG7wPR3NFJo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:22:51 |
-
----
-
 You're driving home. You're sober.
 
 You're not carrying. In fact, you're doing nothing wrong. Suddenly, you see flashing lights hit your rear view mirror and now you have to pull over.

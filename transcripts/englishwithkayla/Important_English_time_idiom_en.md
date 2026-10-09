@@ -1,16 +1,3 @@
-# Important English time idiom
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DOvfgrKu_q4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DOvfgrKu_q4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:58:23 |
-
----
-
 when someone does something that's really helpful and it almost saves you
 
 in a way and they did it at the exact time that

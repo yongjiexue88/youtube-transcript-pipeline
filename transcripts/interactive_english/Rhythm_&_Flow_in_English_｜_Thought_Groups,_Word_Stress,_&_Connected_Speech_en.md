@@ -1,16 +1,3 @@
-# Rhythm & Flow in English  | Thought Groups, Word Stress, & Connected Speech
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `A0n65zB430k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=A0n65zB430k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:11:22 |
-
----
-
 so Rhythm and flow in English it's so important for your speaking fluency as well as your comprehension because it it's just going to make it so much easier for other people to understand what you're saying and we're really going to have a look at three different things thought groups stress and a little bit of connected speech we're going to talk about linking and I just I don't want to just tell
 
 you about this and have you hear it I also want to show it to you and the way that I'm going to do this and demonstrate this to you is with a poem and because it is Christmas

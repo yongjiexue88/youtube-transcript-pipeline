@@ -1,16 +1,3 @@
-# STOP saying "in a long time"
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mhLTD-icCY8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mhLTD-icCY8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:00:47 |
-
----
-
 americans won't just say that something
 
 is going to happen a long time from now

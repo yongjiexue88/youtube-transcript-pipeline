@@ -1,16 +1,3 @@
-# Super Useful Idioms & Expressions | Learn American English 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9_Ti0Fss3lI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9_Ti0Fss3lI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:28:18 |
-
----
-
 today i want to teach you some common
 
 american idioms and expressions that's

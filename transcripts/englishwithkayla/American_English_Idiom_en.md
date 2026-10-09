@@ -1,16 +1,3 @@
-# American English Idiom
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OUljZbi8Qoc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OUljZbi8Qoc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:06:40 |
-
----
-
 are you still buying things online yeah
 
 i like to shop your shopping is really

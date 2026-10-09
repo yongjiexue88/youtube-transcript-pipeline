@@ -1,16 +1,3 @@
-# Descriptive Collocations to Give Your Vocabulary a BOOST
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FzD3NHyP9ek` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FzD3NHyP9ek) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:03:54 |
-
----
-
 I want to teach you some descriptive collocations that you can use for everyday conversation. Now, collocations are incredibly helpful when building your vocabulary because these are words
 
 that are often used together. So, you will hear them in everyday conversation.

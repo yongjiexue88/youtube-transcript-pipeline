@@ -1,16 +1,3 @@
-# 从天堂到天台，为什么币圈总在爆仓？Why are cryptocurrency constantly being liquidated?【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vkcWeX1FojY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vkcWeX1FojY) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:30:41 |
-
----
-
 这是你的比特币 25 年 11 月 4 日它在 24 小时内从 10.7 万美元跌到 10.2 万美元
 
 带动整个加密货币市场下跌导致全市场 48.8 万人爆仓

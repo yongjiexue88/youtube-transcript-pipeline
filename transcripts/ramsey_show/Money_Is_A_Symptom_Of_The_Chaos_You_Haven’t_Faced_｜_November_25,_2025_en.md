@@ -1,16 +1,3 @@
-# Money Is A Symptom Of The Chaos You Haven’t Faced | November 25, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CDLUsM1oBGY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CDLUsM1oBGY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:57:15 |
-
----
-
 [music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

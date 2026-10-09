@@ -1,16 +1,3 @@
-# LEARN THE FUTURE TENSE  | Will + (Be) Going To
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VF9Gd8tPJeU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VF9Gd8tPJeU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:46:56 |
-
----
-
 all right hello hello hello what's up
 
 hope you're having a good Saturday a good weekend and if you're watching this some other time just hope you're having a good day so today we have a super special lesson

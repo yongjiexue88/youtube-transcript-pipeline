@@ -1,16 +1,3 @@
-# You’re on a roll! #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6rRKiWmpBoY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6rRKiWmpBoY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:21:49 |
-
----
-
 on a roll I'm on a
 
 roll when you hear an English speaker

@@ -1,16 +1,3 @@
-# Key Word Transformation Quiz | How to change sentences?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZKAZWfBQjtY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZKAZWfBQjtY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:31:35 |
-
----
-
 so if you really want to improve your
 
 English fluency this lesson will help

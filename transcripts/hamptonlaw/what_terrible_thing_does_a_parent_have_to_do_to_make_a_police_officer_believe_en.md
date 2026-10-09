@@ -1,16 +1,3 @@
-# what terrible thing does a parent have to do to make a police officer believe
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zy5AdmfCaFw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zy5AdmfCaFw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:34:28 |
-
----
-
 what terrible thing does a parent have to do to make a police officer believe that they should be arrested I'm Jeff Hampton and as a former prosecutor turned the people's lawyer I've seen cops arrest people for some really dumb things but what happened to a Suburban mother in Texas has got to be right at the top of cops choosing to invade people's lives and government overreach at its finest a Suburban mom from Waco Texas was both arrested and charged for child endangerment for allowing her son her 8-year-old son to walk home alone
 
 but here's the catch it was only half a mile and all of it was in their neighborhood in this video I'm breaking down how cops get away with this what you can do to protect yourself from your car and neighbors who want to use the cops against you and finally how you can protect yourself against cops if they try to pull this against you your kids or your grandkids meet Heather Wallace a mother of three a college graduate with a degree in education

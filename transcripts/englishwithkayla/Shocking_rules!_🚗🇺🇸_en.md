@@ -1,16 +1,3 @@
-# Shocking rules! 🚗🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qMwwMXXqTgw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qMwwMXXqTgw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:26:06 |
-
----
-
 here are the three most surprising
 
 things about driving in the United States for my English students when the

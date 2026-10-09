@@ -1,16 +1,3 @@
-# Learn Thanksgiving Vocabulary | Fun English Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fUEUa7pfL_U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fUEUa7pfL_U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:48:08 |
-
----
-
 hello hello hello
 
 Happy Thanksgiving and that right there

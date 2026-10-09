@@ -1,16 +1,3 @@
-# Want to Sound Fluent? Advanced Words Native Speakers Actually Use!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YMD4t-JcHzE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YMD4t-JcHzE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:58:52 |
-
----
-
 Let's learn some impressive vocabulary
 
 that I think you should know. Now, these

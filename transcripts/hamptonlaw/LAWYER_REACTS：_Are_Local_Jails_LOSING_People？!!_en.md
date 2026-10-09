@@ -1,16 +1,3 @@
-# LAWYER REACTS: Are Local Jails LOSING People?!!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NJd34nb2ekQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NJd34nb2ekQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:41:24 |
-
----
-
 one of my clients was arrested and went to jail and we couldn't find him the next day I was astonished but as it turns out jails lose people all the time these are fellow Americans that are supposed to be presumed innocent until proven guilty but unfortunately the system failed them and they were lost in jail so I want to go over with you what happened to my client how
 
 he got him out of jail and how you can make sure you protect yourself or your loved one from being a victim of being lost in the system one day the white of my client called me crying her husband had just been arrested for spanking his 11-year-old daughter he had now been arrested and charged with the crime of injury to a child bodily injury a third deegree felony

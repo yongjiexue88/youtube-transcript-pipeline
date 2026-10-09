@@ -1,16 +1,3 @@
-# How to Improve Your Speaking Fluency | Q&A w/ Interactive English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4oUzRumjB7c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4oUzRumjB7c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:19:50 |
-
----
-
 hey everyone welcome to today's lesson my name is wes
 
 this is interactive english the channel

@@ -1,16 +1,3 @@
-# Sound More American FAST: Master Connected Speech in 45 Minutes!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rjCwER1Cy7Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rjCwER1Cy7Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:45:27 |
-
----
-
 let's talk about American fast speech
 
 and I really want to do a deep dive and

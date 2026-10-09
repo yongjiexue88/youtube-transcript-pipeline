@@ -1,16 +1,3 @@
-# Grammar Quiz on English Articles | A - An - The - No Article
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ntXFE_loTHM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ntXFE_loTHM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:24:11 |
-
----
-
 hey everyone my name is wes this is interactive
 
 english and our channel it's all about just helping you practice and improve your english skills and

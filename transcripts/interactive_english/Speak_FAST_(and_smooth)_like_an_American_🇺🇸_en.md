@@ -1,16 +1,3 @@
-# Speak FAST (and smooth) like an American 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FOM74AuYqR4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FOM74AuYqR4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:11:16 |
-
----
-
 hello and welcome to today's lesson in
 
 which we are going to talk about

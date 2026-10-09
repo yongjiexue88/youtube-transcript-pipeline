@@ -1,16 +1,3 @@
-# Phrasal Verbs Q&A with Interactive English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `a_OZMnh45X4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=a_OZMnh45X4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:26:15 |
-
----
-
 hey everyone welcome to today's lesson which is a
 
 live q a all about phrasal verbs

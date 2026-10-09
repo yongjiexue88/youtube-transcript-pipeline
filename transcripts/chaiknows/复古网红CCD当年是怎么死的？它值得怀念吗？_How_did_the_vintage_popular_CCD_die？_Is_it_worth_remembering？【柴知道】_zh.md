@@ -1,16 +1,3 @@
-# 复古网红CCD当年是怎么死的？它值得怀念吗？ How did the vintage popular CCD die? Is it worth remembering?【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ufkBSMNGo1k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ufkBSMNGo1k) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:37:13 |
-
----
-
 从去年开始一类叫 CCD 的老相机突然回光返照 死而复生
 
 它们看起来像是十几年前就被淘汰的电子垃圾

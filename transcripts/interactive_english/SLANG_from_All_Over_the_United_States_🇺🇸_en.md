@@ -1,16 +1,3 @@
-# SLANG from All Over the United States 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4XIgw1HVJ_U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4XIgw1HVJ_U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:28:23 |
-
----
-
 today we're guessing slang it's coming up
 
 [Music]

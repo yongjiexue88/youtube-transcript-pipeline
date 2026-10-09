@@ -1,16 +1,3 @@
-# Small Financial Wins Lead To Big Financial Impact | March 27, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Z2wr8ZrqcIY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Z2wr8ZrqcIY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:39:15 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

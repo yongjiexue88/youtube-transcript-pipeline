@@ -1,16 +1,3 @@
-# You Can’t Heal Your Finances Without Changing Your Habits | March 9, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4Ihpr-h4YSI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4Ihpr-h4YSI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:42:01 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

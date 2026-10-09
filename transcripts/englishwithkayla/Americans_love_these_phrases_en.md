@@ -1,16 +1,3 @@
-# Americans love these phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WAmFFIgli00` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WAmFFIgli00) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:27:14 |
-
----
-
 the reason that you can't easily
 
 understand English speakers it's not

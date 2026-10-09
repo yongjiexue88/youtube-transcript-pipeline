@@ -1,16 +1,3 @@
-# Use PREFIXES to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OmGxZ28znXE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OmGxZ28znXE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:43:25 |
-
----
-
 hello hello hello welcome to today's
 
 lesson my name is Wes this is interactive English and it is the place that you want to be if you're looking to learn and improve your English skills and today I have a very cool lesson for

@@ -1,16 +1,3 @@
-# How to become TRULY fluent in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `d-bZjr8Ckiw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=d-bZjr8Ckiw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:52:42 |
-
----
-
 in this video I'm going to give you my number one tip for fluency in English I
 
 [Music]

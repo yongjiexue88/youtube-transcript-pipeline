@@ -1,16 +1,3 @@
-# native English speakers mispronounce these words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9jbbUXkBF2Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9jbbUXkBF2Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:03:32 |
-
----
-
 here are three words that are extremely
 
 difficult to pronounce in the english language i hear people mess these up

@@ -1,16 +1,3 @@
-# LAWYER: How to Get Your DWI in Texas DISMISSED!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pHXOEQaYmFQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pHXOEQaYmFQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 21:05:56 |
-
----
-
 hey everyone I just wanted to take a couple of minutes here to talk to you about a uh DWI case I got off the phone with a client a few minutes ago and it reminded me of the case when we represented him last year how there was some local police officers here in Fort Worth area that tried to kind of pull a fast one on him as
 
 it relates to his DWI traffic stop and as I was thinking about that situation it made me think you know there's probably a lot of people in Texas that are fighting their DWI case and they may not even be aware maybe their lawyer hasn't explained any of to them they may not be aware that there are some issues related to their traffic stop that could affect this case going away regardless of what their blood alcohol level may be

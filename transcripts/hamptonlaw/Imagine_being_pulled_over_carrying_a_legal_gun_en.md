@@ -1,16 +1,3 @@
-# Imagine being pulled over carrying a legal gun
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ibb2Kt9SbE4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ibb2Kt9SbE4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:06:44 |
-
----
-
 Imagine being pulled over carrying a legal gun. You have a clean record and you do everything that's required under your state laws, but five minutes later, you find yourself standing there in handcuffs as a cop is not only digging through your trunk and searching, but tearing up the inside of your car. No drugs, no smell of marijuana, and no real legal cause. All you said was, "Officer, for safety sake, I want you to know I'm carrying a legal firearm." Most gun owners have no idea that by saying or doing the wrong thing in this situation could lead to a full-blown search where cops can justify destroying your car.
 
 I'm Jeff Hampton, the people's lawyer, and in this video, we're going to walk through number one, how courts really see stops, handcuffs, and car searches when you're armed. Number two, when an officer can legally cuff you, quote, for safety, but still hasn't technically arrested you. And then number three, how to make sure telling an officer, "I have a gun," doesn't automatically give the police the right to search your car. And wait around till the very end, and I'll give you the exact sentence, the specific few words that you can use to not only stop cops from taking something like this too far, but to actually destroy their qualified immunity so that you can hold them accountable if they don't follow the law.

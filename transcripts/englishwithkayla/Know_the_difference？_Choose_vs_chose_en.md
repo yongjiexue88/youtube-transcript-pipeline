@@ -1,16 +1,3 @@
-# Know the difference? Choose vs chose
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UbFu7MjV3tw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UbFu7MjV3tw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:26:41 |
-
----
-
 when speaking English do you know when
 
 to choose choose and when to choose

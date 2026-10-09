@@ -1,16 +1,3 @@
-# Advanced (C1) #Idiom | TO FALL FLAT
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0uqyL0Xs140` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0uqyL0Xs140) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:57:12 |
-
----
-
 your attempts at mockery fall flat fall
 
 flat this is an idiom but we're going to

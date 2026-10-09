@@ -1,16 +1,3 @@
-# Advanced English Vocabulary with a Native Speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `63p92Oe7lgE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=63p92Oe7lgE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:47:01 |
-
----
-
 hi i'm lisa in this video we will continue the series of listening to native speakers in los angeles talking about their jobs
 
 and their lives i believe it's one of the best ways for you to reach that final level of fluency learning the advanced vocabulary that native speakers use and of course learning the common everyday expressions that native speakers use all the time but you don't necessarily learn these expressions in your english classes

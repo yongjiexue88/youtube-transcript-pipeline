@@ -1,16 +1,3 @@
-# Statutory Rape Laws In Texas: A Former DA Breaks Down The Law! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `45qY_ynssG0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=45qY_ynssG0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 17:00:12 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about the statutory rape laws in Texas
 
 what is the Romeo and Juliet law when does someone know whether or not the statutory rape laws apply and when they do not we're going to talk about that here today and if you wait around till the end of this video I'll also give you a free ebook what to do if you have been charged with a crime in Texas okay let's

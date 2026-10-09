@@ -1,16 +1,3 @@
-# I Make $2.4M/Year With 6 YouTube Channels
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `G5cbMnFXcj0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=G5cbMnFXcj0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:31:20 |
-
----
-
 This is Charlie. He makes $200,000 a
 
 month with six different YouTube channels. And the crazy part is he's actually an introvert. I flew out to California to get his story and ask him exactly how he got good at YouTube and the monetization strategy he uses to make over $2.4 million a year.

@@ -1,16 +1,3 @@
-# TAKE THE IDIOM QUIZ 📝 | COMMON & USEFUL AMERICAN IDIOMS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rHM8T7puxuc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rHM8T7puxuc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:36:52 |
-
----
-
 what's up everyone my name is Wes this
 
 is interactive English and in case this

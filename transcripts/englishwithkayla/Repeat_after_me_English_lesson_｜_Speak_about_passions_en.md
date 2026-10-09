@@ -1,16 +1,3 @@
-# Repeat after me English lesson | Speak about passions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JcVi5l6Ca8w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JcVi5l6Ca8w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:10:57 |
-
----
-
 life is all about things you are
 
 passionate about or the things that make

@@ -1,16 +1,3 @@
-# AMERICAN FAST SPEECH 🇺🇸 (Boost your speaking fluency & listening comprehension)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `W3gg_8Qf7Ho` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=W3gg_8Qf7Ho) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:07:04 |
-
----
-
 I want to help you improve your speaking
 
 fluency. And the way that we're going to do that is by talking about fast speech.

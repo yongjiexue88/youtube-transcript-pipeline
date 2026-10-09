@@ -1,16 +1,3 @@
-# 中国人为什么爱在拍照时比V？Why do Chinese love this hand gesture when taking photos？【柴知道ChaiKnows】【冷知识Trivia】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qHpX4t9r5Fc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qHpX4t9r5Fc) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 14:21:01 |
-
----
-
 ChaiKnows, Let's paddle in the ocean of knowledge
 
 When you couldn't help posing a V sign in different photos Did you ask yourself why - - Why couldn't I help posing a V sign?

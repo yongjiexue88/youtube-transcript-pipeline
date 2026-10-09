@@ -1,16 +1,3 @@
-# English words that are actually German 🇩🇪 #interactiveenglish #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eNOowk8cTQ8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eNOowk8cTQ8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:00:15 |
-
----
-
 right now I am in Germany so I thought
 
 I'd teach you some wool loan words that

@@ -1,16 +1,3 @@
-# LIVE ENGLISH LESSON 🚨 | Q&A with Wes, Ioana, and Emi
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xWzEXPeDJtE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xWzEXPeDJtE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:34:07 |
-
----
-
 hey what's up welcome to today's English
 
 lesson and if this is your first time here at interactive English we're all about helping you guys practice and improve your English skills and this is a great opportunity for you to ask some questions and even if you're watching this a little later it's great for your listening skills to practice those listening skills and see if you can follow along in our conversation and again even later

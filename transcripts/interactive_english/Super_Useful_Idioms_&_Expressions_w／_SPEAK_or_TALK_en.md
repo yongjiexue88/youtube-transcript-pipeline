@@ -1,16 +1,3 @@
-# Super Useful Idioms & Expressions w/ SPEAK or TALK
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `X9QuyPJVdpk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=X9QuyPJVdpk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:03:27 |
-
----
-
 in this lesson i am going to speak my
 
 mind and i'm going to tell you exactly

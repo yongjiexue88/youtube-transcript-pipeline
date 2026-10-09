@@ -1,16 +1,3 @@
-# American Accent Rules and US Presidential Election
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kKVXi4EtrpA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kKVXi4EtrpA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:48:46 |
-
----
-
 hi i'm lisa let's learn some rules about
 
 the american accent while at the same time learning some expressions related to american politics and specifically the presidential

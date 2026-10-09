@@ -1,16 +1,3 @@
-# Phrases Native Speakers Use ALL THE TIME | Binomial Pairs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TFtwUv4DAaQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TFtwUv4DAaQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:18:04 |
-
----
-
 today i want to teach you some useful and common phrases that people use in
 
 everyday conversation my name is wes

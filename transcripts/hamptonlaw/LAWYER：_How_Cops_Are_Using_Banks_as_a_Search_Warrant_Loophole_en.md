@@ -1,16 +1,3 @@
-# LAWYER: How Cops Are Using Banks as a Search Warrant Loophole
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6Zt6y8YuoyM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6Zt6y8YuoyM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:31:53 |
-
----
-
 think your financial life is private think again right now the federal government could be watching every transaction you make every deposit every credit card swipe even the coffee you bought this morning all without your consent and all without a warrant I'm Jeff Hampton and as a former prosecutor turned people's lawyer I have seen the ugly side of government overreach but what's happening by the feds under the bank secrecy act
 
 it takes it to a whole new level by the end of this video you'll learn how millions of Americans are unknowingly under Financial surveillance and what you can do to protect yourself now how the federal government is working with your bank is actually pretty simple when a bank submits an inquiry with your financial details the federal government actually compiles that inquiry into a searchable database now here's

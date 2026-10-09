@@ -1,16 +1,3 @@
-# The Ramsey Show (Replay for March 29, 2024)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0duRCl9GQNw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0duRCl9GQNw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:19:24 |
-
----
-
 [Applause] [Music] live from the headquarters of Ramsey Solutions it's the Ramsey show where we help people build wealth do work that they love and create amazing relationships I'm George camel joined by Jade warshaw this hour the number to call is 8825 5225 don't be scared you jump in
 
 we'll talk about your life and your money that's all we want to do is help you take the right Next Step and maybe talk you off the ledge if you're about to do something stupid that's always a fun call the preventative medicine versus the emergency surgery all right let's kick it off with Maria in Denver Colorado what's going on Maria hi thanks for taking my call um so

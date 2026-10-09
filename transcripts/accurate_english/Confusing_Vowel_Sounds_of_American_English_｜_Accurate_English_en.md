@@ -1,16 +1,3 @@
-# Confusing Vowel Sounds of American English | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-4FrdWmL0lk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-4FrdWmL0lk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:10:58 |
-
----
-
 hi this is Lisa moissan director of
 
 accurate English in Los Angeles in this video I would like to help you fix a very common vowel sound mistake a lot of

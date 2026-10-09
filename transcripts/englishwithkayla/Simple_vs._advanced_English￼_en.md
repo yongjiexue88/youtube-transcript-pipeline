@@ -1,16 +1,3 @@
-# Simple vs. advanced English￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6Q6imd0abJE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6Q6imd0abJE) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 16:56:42 |
-
----
-
 okay make sure that you relax today take it easy
 
 this phrase is also very polite and friendly to use in your english conversations if you want

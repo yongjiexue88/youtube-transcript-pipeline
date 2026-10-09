@@ -1,16 +1,3 @@
-# STOP Speaking boring English!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `acQozavFDy8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=acQozavFDy8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:02:02 |
-
----
-
 did you know that you can upgrade your english just by replacing some of your
 
 simple sentences with natural

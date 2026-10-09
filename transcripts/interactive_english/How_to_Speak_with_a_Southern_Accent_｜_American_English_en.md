@@ -1,16 +1,3 @@
-# How to Speak with a Southern Accent | American English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CB_nhquynN0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CB_nhquynN0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:12:20 |
-
----
-
 welcome to today's lesson we're talking
 
 about the southern accent so the first

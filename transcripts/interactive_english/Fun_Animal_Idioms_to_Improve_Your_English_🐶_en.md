@@ -1,16 +1,3 @@
-# Fun Animal Idioms to Improve Your English 🐶
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xaUrIX57C6o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xaUrIX57C6o) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:44:21 |
-
----
-
 Today, I'm going to teach you ten amazing, incredible, super, awesome idioms.
 
 And they're all about animals.

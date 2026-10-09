@@ -1,16 +1,3 @@
-# Listen to this English grammar tip
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `56SyD5-H95g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=56SyD5-H95g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:52:18 |
-
----
-
 one really interesting thing about the
 
 english language that i can't explain

@@ -1,16 +1,3 @@
-# Learn 200 Important Business Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vFEIVq8AI50` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vFEIVq8AI50) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:48:22 |
-
----
-
 if you find someone in your workplace
 
 doing something in the easiest I'll say

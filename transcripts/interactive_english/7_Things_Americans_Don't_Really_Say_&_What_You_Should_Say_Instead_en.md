@@ -1,16 +1,3 @@
-# 7 Things Americans Don't Really Say & What You Should Say Instead
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PWzCtm5ESJc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PWzCtm5ESJc) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:06:37 |
-
----
-
 Today I want to talk to you about seven things that native English speakers don't really say
 
 and what you should say instead That's coming up (Intro)

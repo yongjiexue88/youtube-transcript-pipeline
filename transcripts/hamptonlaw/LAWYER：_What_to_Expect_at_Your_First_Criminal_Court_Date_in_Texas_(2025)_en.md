@@ -1,16 +1,3 @@
-# LAWYER: What to Expect at Your First Criminal Court Date in Texas (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `riuDxYDlrK4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=riuDxYDlrK4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 21:04:15 |
-
----
-
 hey everybody I wanted to take a few minutes here to put together a quick video to explain what I have many many clients that call me uh they want to know the answer to the question they say okay I've been arrested um now I'm out of jail what should I expect are the next steps after my arrest so in this video I'm going to walk you through
 
 the procedure of what to expect uh if you've been arrested in tant County Dallas County area and now you're waiting to see what the next steps are now I want to invite you to subscribe to our YouTube channel right below here there's more great content just like this that we can provide you for absolutely free uh but the goal here today is to give you a quick rundown

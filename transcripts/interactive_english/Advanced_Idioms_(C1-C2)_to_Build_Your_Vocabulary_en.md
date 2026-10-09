@@ -1,16 +1,3 @@
-# Advanced Idioms (C1-C2) to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eEn2wyDZiyM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eEn2wyDZiyM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:57:09 |
-
----
-
 you really need to be on the ball if
 
 you're going to follow this lesson because I am going to teach you different C1 and C2 idioms to help you

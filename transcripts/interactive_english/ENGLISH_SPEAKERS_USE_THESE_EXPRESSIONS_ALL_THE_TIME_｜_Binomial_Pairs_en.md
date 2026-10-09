@@ -1,16 +1,3 @@
-# ENGLISH SPEAKERS USE THESE EXPRESSIONS ALL THE TIME | Binomial Pairs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wIqGS268Rck` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wIqGS268Rck) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:20:43 |
-
----
-
 - Are you sick and tired of boring English lessons?
 
 I am gonna teach you some very very fun expressions.

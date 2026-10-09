@@ -1,16 +1,3 @@
-# Speak Like a Leader: Advanced Phrases Every Professional Must Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Tn5XiN-GAuE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Tn5XiN-GAuE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:59:03 |
-
----
-
 I want to teach you how to speak and
 
 communicate just like a leader and with

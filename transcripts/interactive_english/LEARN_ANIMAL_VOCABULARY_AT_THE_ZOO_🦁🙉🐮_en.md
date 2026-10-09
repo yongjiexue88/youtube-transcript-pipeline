@@ -1,16 +1,3 @@
-# LEARN ANIMAL VOCABULARY AT THE ZOO 🦁🙉🐮
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MEm9O65a4Qw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MEm9O65a4Qw) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:51:38 |
-
----
-
 Today's lesson is all about animals.
 
 Yea, that's a dog.

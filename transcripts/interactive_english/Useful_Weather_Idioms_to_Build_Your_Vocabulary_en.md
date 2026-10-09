@@ -1,16 +1,3 @@
-# Useful Weather Idioms to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Fw3Jrs4pElA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Fw3Jrs4pElA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:00:56 |
-
----
-
 Let's talk about the weather. Now th
 
 this of course is a very common topic.

@@ -1,16 +1,3 @@
-# 15 Phrases to Help Level Up Your English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fZ4XZjk8bRg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fZ4XZjk8bRg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:36:45 |
-
----
-
 Hey, don't you step out of line. You wouldn't want to have to foot the bill for this. Sometimes it's good to get out
 
 of your bubble. Do you know what these English phrases mean? Or would you get a

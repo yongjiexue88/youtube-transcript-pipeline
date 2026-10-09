@@ -1,16 +1,3 @@
-# English lesson: Do you know the difference?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XyX_VHLt5AU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XyX_VHLt5AU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:57:37 |
-
----
-
 one of the main ways that i use this phrasal verb is when i'm on my computer
 
 i have many different tabs open

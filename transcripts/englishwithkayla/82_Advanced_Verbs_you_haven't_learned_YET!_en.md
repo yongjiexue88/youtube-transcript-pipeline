@@ -1,16 +1,3 @@
-# 82 Advanced Verbs you haven't learned YET!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `t_pFLx0BDCE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=t_pFLx0BDCE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:43:04 |
-
----
-
 today's English lesson is very important
 
 because we are going to add some verbs

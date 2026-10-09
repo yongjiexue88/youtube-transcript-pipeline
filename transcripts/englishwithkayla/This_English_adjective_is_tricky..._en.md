@@ -1,16 +1,3 @@
-# This English adjective is tricky...
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1ZJc57XIEm0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1ZJc57XIEm0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:57:27 |
-
----
-
 so it's kind of odd to describe someone
 
 who's not your boyfriend or your girlfriend or your husband or your wife

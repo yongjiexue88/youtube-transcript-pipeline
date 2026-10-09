@@ -1,16 +1,3 @@
-# I taught my friend this English word
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `b-tBr-K4kA0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=b-tBr-K4kA0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:44:37 |
-
----
-
 I was talking to my friend the other day she's not a native English speaker and she said the weather is going to be very unstable and uncertain one word that she
 
 can use instead of saying all of this is

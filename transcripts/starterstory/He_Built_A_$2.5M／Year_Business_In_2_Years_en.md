@@ -1,16 +1,3 @@
-# He Built A $2.5M/Year Business In 2 Years
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `i6kCkGmJc9M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=i6kCkGmJc9M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:32:48 |
-
----
-
 Carl Hughes built a $2.5 million year business in just two years with one strategy putting ourselves in people's minds as the premium provider he invited us into his home in Chicago to show us exactly how he did it and how he found a niche where he could charge tens of thousands of dollars per month to just a handful of clients but before he started the business Carl was plagued by self-doubt I just didn't have the confidence to think I could do it I didn't believe I was the kind of person who could start their own company now he's running multiple million dollar businesses with a 10year goal to hit a $100 million in total revenue and his plan to reach that goal has nothing to do with starting new businesses I got to meet a couple people who had done this thing called entrepreneurship through acquisition in this video Carl shares what most people get wrong when they go to start a productize service and he gives a step-by-step breakdown of how he would start all over again with nothing I initially started draft dodev not even as a company there was no website there was no landing page I'm Pat walls and this is starter story yeah thanks for having me dude good to see you Pat tell me about who you are and what you built my name is Carl Hughes I run draft.
 
 Dev what we do there is we create technical content aimed at software Engineers for marketing purposes so this is for companies that want to reach software developers we've grown in 3 years to over $2.5 million in Revenue we've got a full-time team of six or seven and then hundreds of contractors literally hundreds around the world in 54 countries so that's where I'm at today wow and so how does that work how does the service work draft. essentially what clients will do is they'll come to us and buy a package of 12 24 48 pieces

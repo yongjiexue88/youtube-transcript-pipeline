@@ -1,16 +1,3 @@
-# My Coding Game Makes $1M Per Month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tMkpiFIW8Xg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tMkpiFIW8Xg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:24:57 |
-
----
-
 I built an online learning platform for software engineers to almost $1 million in monthly revenue, sitting usually around 30k a day at the moment. How does this guy make a million dollars a month when he has hundreds of competitors in a saturated market and a lot of that growth is due to something I call the purple how strategy. Lane is a software engineer who decided to start a side project called boot.dev. He started to make a little money until one day he came across a marketing channel that would explode his business.
 
 The big shift was going from just blogging to starting with.

@@ -1,16 +1,3 @@
-# English speaker have the weirdest idioms about this animal... #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `huSYpEnblAM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=huSYpEnblAM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:15:44 |
-
----
-
 here are three english idioms you can
 
 use that involve horses

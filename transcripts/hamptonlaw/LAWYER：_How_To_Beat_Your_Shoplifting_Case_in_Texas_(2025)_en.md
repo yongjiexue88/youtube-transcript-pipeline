@@ -1,16 +1,3 @@
-# LAWYER: How To Beat Your Shoplifting Case in Texas (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ev2tXTDSwSo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ev2tXTDSwSo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:09:02 |
-
----
-
 hello I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about shoplifting charges what does the state have to prove and when we look at a situation like this what can we do to defend your shoplifting charges now if you stick around till the end of this video I'm going to give you a free ebook what to do
 
 if you have been charged with a crime and Texas today I want to cover the ins and outs of shoplifting give you kind of a few examples that maybe you have heard of within the last five or six years um and apply it maybe to a

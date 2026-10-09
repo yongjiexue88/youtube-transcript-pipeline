@@ -1,16 +1,3 @@
-# 5 WORDS w/ CRAZY SPELLING & DIFFICULT PRONUNCIATION
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PcHCqWg-vMU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PcHCqWg-vMU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:56:04 |
-
----
-
 five words with crazy spelling which
 
 makes them difficult to pronounce like

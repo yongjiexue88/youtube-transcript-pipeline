@@ -1,16 +1,3 @@
-# Learn to Use ACTIVE and PASSIVE VOICE | Advanced Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8x4K9INW2Zg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8x4K9INW2Zg) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:31:28 |
-
----
-
 Today I want to talk to you about using active and passive voice that's coming up
 
 Hey everyone, my name is Wes. This is interactive English which is all about helping you practice and improve your English skills today

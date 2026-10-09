@@ -1,16 +1,3 @@
-# Pronunciation of English L sound after long vowels.  Accent reduction  | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HryCg1E9VAU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HryCg1E9VAU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:11:27 |
-
----
-
 hi I'm Lisa moyen in this video I would like to teach you another technique that will make your English sound more like a native speaker sounds it has to do with the pronunciation of the letter L when the L is at the end of the word and when there is a vowel that comes before the L
 
 specifically when there's a long vowel let's take a look at these words listen to the way I'm pronouncing this word I'm going to say this word two different times the first time it will sound like

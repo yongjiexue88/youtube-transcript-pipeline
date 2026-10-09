@@ -1,16 +1,3 @@
-# BECOME FLUENT IN 2020 | 7 Things You Need to Do 🎉
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hdAtrT8jWM4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hdAtrT8jWM4) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:44:42 |
-
----
-
 Let's talk about how you can improve your English in 2020 that's coming up.
 
 Hey everyone, my name is Wes. This is Interactive English, which is all about helping you practice and improve your English skills.

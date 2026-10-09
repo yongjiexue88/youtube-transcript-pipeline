@@ -1,16 +1,3 @@
-# LAWYER: Protect Yourself From Cops When Traveling With a Gun
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OPuYfl2hvZE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OPuYfl2hvZE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:26:09 |
-
----
-
 did you know that simply crossing a state line with your firearm could turn you into a criminal overnight it's true
 
 and it's something that catches well-meaning people off guard and the worst part about it you may have broken the law and you don't even know it until it's too late I'm Jeff Hampton a former prosecutor turned people's lawyer and if you're like me you take your rights as well as your responsibilities with your Firearms very seriously whether you're planning a road trip or moving to a new state learning how to travel with a firearm across state lines is an absolute must a little knowledge can save

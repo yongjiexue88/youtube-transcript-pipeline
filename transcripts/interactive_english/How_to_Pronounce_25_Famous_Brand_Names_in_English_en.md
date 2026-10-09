@@ -1,16 +1,3 @@
-# How to Pronounce 25 Famous Brand Names in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `45BL1Gono94` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=45BL1Gono94) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:49:13 |
-
----
-
 Today we're going to talk about brands names and how to pronounce them.
 
 So, before we begin today's lesson, we'd like to remind you to subscribe to our channel

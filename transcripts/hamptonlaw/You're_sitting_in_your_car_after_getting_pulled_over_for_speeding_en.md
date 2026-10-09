@@ -1,16 +1,3 @@
-# You're sitting in your car after getting pulled over for speeding
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HwO3wHCfrcw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HwO3wHCfrcw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:51:41 |
-
----
-
 You're sitting in your car after getting pulled over for speeding. The officer walks back to your window to give you your license. Everything seems routine until the officer leans down, grabs for your phone, and says the three words that shock you and could violate your privacy. Unlock your phone. Now, here's
 
 the thing. What you say in the next 5 seconds will determine whether you're able to drive away with your constitutional rights intact or whether you'll find yourself outside of the car and handing over all your most private intimate details to a stranger with a gun and a badge. And the response that most people give, it's the exact response that sets the trap for the cops to get access to everything they want.

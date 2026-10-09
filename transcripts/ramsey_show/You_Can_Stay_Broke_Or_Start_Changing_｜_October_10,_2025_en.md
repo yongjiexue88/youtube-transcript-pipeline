@@ -1,16 +1,3 @@
-# You Can Stay Broke Or Start Changing | October 10, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bRu57zaN5gw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bRu57zaN5gw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:04:08 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

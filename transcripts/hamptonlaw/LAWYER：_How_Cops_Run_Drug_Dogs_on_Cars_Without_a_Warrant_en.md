@@ -1,16 +1,3 @@
-# LAWYER: How Cops Run Drug Dogs on Cars Without a Warrant
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Z4g0tzJpvSo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Z4g0tzJpvSo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:49:40 |
-
----
-
 the shocking truth about drug dog searches and your constitutional
 
 rights hi I'm Jeff Hampton with the Hampton Law Firm today I want to talk about drug dog searches you may be shocked to learn what the United States Supreme Court says about whether a drug dog search is legal and what are some of the things you need to know in order to protect your rights if the police are attempting an illegal search by the way if you wait around to

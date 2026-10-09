@@ -1,16 +1,3 @@
-# Financial Shortcuts Won't Build Longterm Wealth | January 21, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Eb2KhAljStw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Eb2KhAljStw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:48:32 |
-
----
-
 [music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

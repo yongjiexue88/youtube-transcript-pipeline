@@ -1,16 +1,3 @@
-# Interference With Emergency Call In Texas: How To Beat Your Case! (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RHXGBIG8Mis` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RHXGBIG8Mis) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 15:56:16 |
-
----
-
 interference with an emergency call what is it can the case be dismissed what does the prosecutor have to prove in
 
 court hi I'm Jeff Hampton with the Hampton Law Firm today I want to talk to you about the crime of interference with an emergency call and by the way if you wait around to the end of this video I'll also give you a free ebook what to do if you've been charged with a crime inch T all right let's jump into this listen interference with an emergency call

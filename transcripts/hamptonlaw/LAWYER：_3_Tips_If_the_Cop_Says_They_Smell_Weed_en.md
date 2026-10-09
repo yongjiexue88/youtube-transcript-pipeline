@@ -1,16 +1,3 @@
-# LAWYER: 3 Tips If the Cop Says They Smell Weed
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EJUScL_fgSg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EJUScL_fgSg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:36:40 |
-
----
-
 can the odor of marijuana by itself establish probable cause for an officer to search your car on a traffic stop we're going to talk about that today and really the answer is it depends it depends on what state you're in and it depends on the facts of your situation but I'm going to jump into this because I want to read to you a story that I found that actually kind of goes perfectly along with
 
 this and maybe yourself or other people that you know have found themselves in this situation so one example is this gentleman by the name of Orlando Dixon he had actually just been driving he went to pick up his daughter and as he stopped at a red light he noticed a cop car behind him and even though he wasn't speeding he wasn't doing anything illegal he began to get

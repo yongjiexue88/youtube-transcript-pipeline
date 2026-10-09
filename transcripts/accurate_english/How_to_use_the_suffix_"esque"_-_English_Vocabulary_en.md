@@ -1,16 +1,3 @@
-# How to use the suffix "esque" - English Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OJu4Xtpj7hE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OJu4Xtpj7hE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:37:13 |
-
----
-
 a suffix is something that goes at the end of the word we add the suffix ask to
 
 mean like or similar to or resembling or

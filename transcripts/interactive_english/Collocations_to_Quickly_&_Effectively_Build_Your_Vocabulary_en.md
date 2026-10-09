@@ -1,16 +1,3 @@
-# Collocations to Quickly & Effectively Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pr16hC82ET8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pr16hC82ET8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:02:15 |
-
----
-
 let's build your vocabulary with
 
 collocations and these are words that

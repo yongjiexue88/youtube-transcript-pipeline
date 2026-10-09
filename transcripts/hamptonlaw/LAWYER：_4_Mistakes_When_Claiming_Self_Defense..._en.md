@@ -1,16 +1,3 @@
-# LAWYER: 4 Mistakes When Claiming Self Defense...
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kaznGp_MVvc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kaznGp_MVvc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:35:16 |
-
----
-
 what happens when police don't believe your right to self-defense I've seen some crazy examples when self-defense can go terribly wrong and if the police don't believe you and your story you could even end up in jail so don't make these four mistakes when claiming self-defense especially the last one we've all been there we're driving down the road minding our own business suddenly some idiot comes speeding past us Cuts us off pulls out in front of us
 
 and slows down and gives us the middle finger maybe they even pull up next to you and slow down and start threatening you then it maybe causes you to start speeding up in their Direction the two of you start exchanging comments and the next thing you know you're both speeding down the highway now let me insert a real case that we saw the aggressor who started the whole thing gets out of his car pulls out a knife

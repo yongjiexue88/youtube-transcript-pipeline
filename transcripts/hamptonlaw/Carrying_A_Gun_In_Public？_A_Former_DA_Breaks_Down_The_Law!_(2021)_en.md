@@ -1,16 +1,3 @@
-# Carrying A Gun In Public? A Former DA Breaks Down The Law! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ymoNi1K5gZw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ymoNi1K5gZw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 17:19:19 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about perhaps a subject that I get more questions about than just about anything else that I deal with and it's about carrying guns it's about carrying weapons in public what are the rules what are the laws what can I get in trouble for what am I permitted to do now I'm not going to be able to cover all of
 
 this in a 5 to 10 minute video with you because there's a lot that can be discussed but I do want to give you kind of a brief overview especially if you may be facing a weapons or maybe a gun or a knife some type of weapons charge in Texas I want to spend a few minutes breaking down the law for you and kind of going over some of

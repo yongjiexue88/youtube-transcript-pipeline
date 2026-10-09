@@ -1,16 +1,3 @@
-# This strang English slang word is
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cipbS9THOfU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cipbS9THOfU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:58:47 |
-
----
-
 this word has caught on a bit according
 
 to my resources online its origin is in

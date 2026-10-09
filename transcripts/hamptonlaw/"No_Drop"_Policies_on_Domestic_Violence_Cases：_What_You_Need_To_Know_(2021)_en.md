@@ -1,16 +1,3 @@
-# "No Drop" Policies on Domestic Violence Cases: What You Need To Know (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DvBCU4xb4OU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DvBCU4xb4OU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:56:07 |
-
----
-
 hey everybody I wanted to hop on real quick and answer a question from a perspective client that called me recently and said hey Jeff listen how do these no drop policies from these District Attorney's offices in Texas how do they affect my domestic violence defense we're going to talk about that today I want to invite you to subscribe to our YouTube channel if you like what you're hearing here you can get some more great uh criminal defense content
 
 uh help you understand uh the criminal law as it relates to Texas all right so today I'm going to explain to you the specifics I'm going to focus in pretty close to the tan County District Attorney's offices policies here today but it applies to most DA's offices in Texas but we're going to talk about their policies and specifically how they're no drop policy they call it quote unquote No drop policy affects your defense and what you need to know about it okay so as we do that stay to

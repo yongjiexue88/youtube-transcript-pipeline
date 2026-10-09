@@ -1,16 +1,3 @@
-# Identity Theft Charges? A Former Prosecutor Explains The Law And How To Defend Your Case! (2022)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HnCkX7ly4oU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HnCkX7ly4oU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 14:00:24 |
-
----
-
 identity theft what is it how does Texas punish identity theft what can you do about it if you're
 
 innocent hi I'm Jeff Hampton with the Hampton Law Firm today I want to talk to you about the broad umbrella term of identity theft many people talk about identity theft they have no idea what they're talking about they don't know what the actual crimes are they don't know what Texas law has to say about it I want to break that down for you here today and by

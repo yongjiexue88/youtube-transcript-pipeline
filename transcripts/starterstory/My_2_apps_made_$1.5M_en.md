@@ -1,16 +1,3 @@
-# My 2 apps made $1.5M
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9WWvLj-NqEE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9WWvLj-NqEE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:18:07 |
-
----
-
 Within the last 12 months, I've built two apps that have generated 1.5 million in revenue. >> This is Kletchi, a 22-year-old from Nigeria who moved to the US with nothing but a dream to build a business.
 
 >> You know, I moved to the US with literally only $100 my name >> with his back against the wall in just a few months to prove himself. Kletchi built two apps that changed his life.

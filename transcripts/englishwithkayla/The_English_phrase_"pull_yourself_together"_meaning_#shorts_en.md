@@ -1,16 +1,3 @@
-# The English phrase "pull yourself together" meaning #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Hdqn_a4gl1s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Hdqn_a4gl1s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:17:10 |
-
----
-
 so there are two ways to use this if
 
 someone is crying maybe they're crying over

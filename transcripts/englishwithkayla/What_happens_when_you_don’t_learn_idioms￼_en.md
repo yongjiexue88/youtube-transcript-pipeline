@@ -1,16 +1,3 @@
-# What happens when you don’t learn idioms￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9Z5u3oLU0XI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9Z5u3oLU0XI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:53:25 |
-
----
-
 hey kayla are you home right now
 
 yep what's shaking nothing i'm just sitting here

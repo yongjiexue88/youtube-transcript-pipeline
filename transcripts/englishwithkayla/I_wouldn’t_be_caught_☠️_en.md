@@ -1,16 +1,3 @@
-# I wouldn’t be caught ☠️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xS_HysMQ0XM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xS_HysMQ0XM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:16:52 |
-
----
-
 I wouldn't be caught dead doing the
 
 thing I wouldn't be caught dead with someone stupid enough to drive that car

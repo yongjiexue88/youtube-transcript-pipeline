@@ -1,16 +1,3 @@
-# Advanced Vocabulary Lesson | Take the Quiz & Learn New Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `r797xj-suuM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=r797xj-suuM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:33:37 |
-
----
-
 so today is all about building your
 
 vocabulary and I will make this promise

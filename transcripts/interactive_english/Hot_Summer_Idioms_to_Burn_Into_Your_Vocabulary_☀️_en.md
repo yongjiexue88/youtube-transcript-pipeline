@@ -1,16 +1,3 @@
-# Hot Summer Idioms to Burn Into Your Vocabulary ☀️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8exxv6AckcQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8exxv6AckcQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:02:43 |
-
----
-
 so it is very hot outside right now and
 
 that's why in today's lesson i wanted to

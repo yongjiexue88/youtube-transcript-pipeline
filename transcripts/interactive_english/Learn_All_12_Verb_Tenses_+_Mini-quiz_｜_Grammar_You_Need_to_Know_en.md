@@ -1,16 +1,3 @@
-# Learn All 12 Verb Tenses + Mini-quiz | Grammar You Need to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QFvMCgbRG4I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QFvMCgbRG4I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:11:41 |
-
----
-
 right now i want to teach you all 12 english verb tenses and then i'm going to give you a quiz to see how much you've learned and how much you remember so let's first talk about well how do we get to 12. so in english there are three
 
 main tenses that refers to time we have

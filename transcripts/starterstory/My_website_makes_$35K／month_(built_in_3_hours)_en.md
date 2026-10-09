@@ -1,16 +1,3 @@
-# My website makes $35K/month (built in 3 hours)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LWPN-PAhtLA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LWPN-PAhtLA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:17:23 |
-
----
-
 Cursive directory. We built it in a weekend and now it makes 35k per month.
 
 >> This is Pontis, a developer bored on his

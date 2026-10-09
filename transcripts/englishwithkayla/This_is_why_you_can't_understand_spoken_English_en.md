@@ -1,16 +1,3 @@
-# This is why you can't understand spoken English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PB9-yNDbOjE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PB9-yNDbOjE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:38:37 |
-
----
-
 I need to go and see if my food is done
 
 no this is not how English speakers in

@@ -1,16 +1,3 @@
-# CORRECT YOUR GRAMMAR MISTAKES 🚫 (Lesson Notes Included)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hJBes6ueDy8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hJBes6ueDy8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:10:52 |
-
----
-
 Hello and welcome to today's lesson.
 
 We're going to be talking about correcting your mistakes. And what I've

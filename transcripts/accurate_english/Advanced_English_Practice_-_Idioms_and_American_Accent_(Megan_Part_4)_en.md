@@ -1,16 +1,3 @@
-# Advanced English Practice - Idioms and American Accent  (Megan Part 4)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `txxiMuTA5K8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=txxiMuTA5K8) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-03 07:44:57 |
-
----
-
 hi I'm Lisa do you know what it means when a native speaker of english says
 
 i caught the bug or if they say i decided to dive head first or if you're in los angeles and someone

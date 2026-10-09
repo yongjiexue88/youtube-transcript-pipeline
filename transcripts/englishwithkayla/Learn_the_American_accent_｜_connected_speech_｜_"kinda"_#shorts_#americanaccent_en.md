@@ -1,16 +1,3 @@
-# Learn the American accent | connected speech | "kinda" #shorts #americanaccent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ivgbRQPaFZE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ivgbRQPaFZE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:20:48 |
-
----
-
 native english speakers are always using
 
 connected speech or english reductions

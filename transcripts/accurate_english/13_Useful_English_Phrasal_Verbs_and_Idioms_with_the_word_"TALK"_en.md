@@ -1,16 +1,3 @@
-# 13 Useful English Phrasal Verbs and Idioms with the word "TALK"
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `lcwxxw8AHWU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=lcwxxw8AHWU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:49:46 |
-
----
-
 hi i'm lisa let's learn 13
 
 useful phrasal verbs and idiomatic expressions containing the word talk these are expressions you will hear regularly when you listen to native speakers and if you use these expressions you will sound more fluent when you're speaking english [Music]

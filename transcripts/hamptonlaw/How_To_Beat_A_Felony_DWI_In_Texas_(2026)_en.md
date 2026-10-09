@@ -1,16 +1,3 @@
-# How To Beat A Felony DWI In Texas (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pSOgxp_fyPo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pSOgxp_fyPo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:56:56 |
-
----
-
 felony DWI what makes a DWI a felony and
 
 what can you do about it if you or a loved one is facing a felony DWI what are some of the things you should be doing right

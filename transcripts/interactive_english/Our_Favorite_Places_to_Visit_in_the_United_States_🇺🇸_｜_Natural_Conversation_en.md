@@ -1,16 +1,3 @@
-# Our Favorite Places to Visit in the United States 🇺🇸 | Natural Conversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sqk85q2PSoU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sqk85q2PSoU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:29:55 |
-
----
-
 today we're going to talk to you about the best places to visit if you travel to the United States that's coming up [Music]
 
 in today's lesson we are going to share

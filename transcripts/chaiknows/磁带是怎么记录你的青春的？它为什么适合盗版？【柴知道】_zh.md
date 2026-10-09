@@ -1,16 +1,3 @@
-# 磁带是怎么记录你的青春的？它为什么适合盗版？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `--X4DhES-9k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=--X4DhES-9k) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:36:20 |
-
----
-
 这是一盒普普通通的磁带是属于我们这一代人的青春回忆
 
 在那个流媒体还没有占领世界的年代哪个80后 90后没听过磁带呢

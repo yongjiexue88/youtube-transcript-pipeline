@@ -1,16 +1,3 @@
-# Learn informal questions that native English speakers ask
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `iPThjwUwcpo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=iPThjwUwcpo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:04:39 |
-
----
-
 today's english lesson will teach you many phrases and questions that you did
 
 not learn in your english class if you

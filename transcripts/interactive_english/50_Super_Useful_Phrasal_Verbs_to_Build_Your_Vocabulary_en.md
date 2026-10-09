@@ -1,16 +1,3 @@
-# 50 Super Useful Phrasal Verbs to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KQwib1WCrww` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KQwib1WCrww) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:35:53 |
-
----
-
 I want to help you supercharge your vocabulary and teach you 50 super
 
 advanced phrasal verbs to help you fine-tune your English fluency. And if you'd like to get the lesson notes, click on the link down below in the description. Join my email community.

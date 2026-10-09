@@ -1,16 +1,3 @@
-# 控水没用，但娱乐管用——如何拯救溺水的人？How to save a drowning person?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ktv4ZoJcam8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ktv4ZoJcam8) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:44:37 |
-
----
-
 这是 2022 年的一段视频一位小朋友因为溺水而失去意识
 
 奶奶焦急的把他背在背上试图让他把水吐出来但并不见效如果一位溺水的人就在你的身旁

@@ -1,16 +1,3 @@
-# 5 Legal Myths Cops Hope You Still Believe
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ljZi0UaBmEQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ljZi0UaBmEQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:14:57 |
-
----
-
 Imagine you're driving home when suddenly you see blue lights flashing behind you and now you realize you're being pulled over. Now imagine the officer walks up to your window, knocks on the window, says you're going to have to get out because he has probable cause to search you, your car, and all of your property, and you don't realize that he's using a legal myth to get around your rights. In this video, I'm breaking down number one, the specific legal myths cops use to get around your rights, and number two, the exact phrases, the specific legal terms you can use to stop them dead in their tracks.
 
 Stick around until the end because missing the difference between myth and reality can cost you your privacy, your time, and maybe even your freedom. Myth number one, if you're arrested, police can search anything you have. Your bags, your purse, or any other property. The reality police can search you and the area immediately around you that you can grab, but they cannot just search anything and everything else that's not within your immediate reach.

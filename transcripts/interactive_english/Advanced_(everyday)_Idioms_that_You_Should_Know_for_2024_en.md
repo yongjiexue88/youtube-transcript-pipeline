@@ -1,16 +1,3 @@
-# Advanced (everyday) Idioms that You Should Know for 2024
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `92ZddQDjVYg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=92ZddQDjVYg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:06:52 |
-
----
-
 Hello and welcome to today's lesson. We
 
 are going to talk about some useful and

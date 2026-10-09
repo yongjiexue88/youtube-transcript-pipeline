@@ -1,16 +1,3 @@
-# How to be fluent in English - 8 Things you MUST do!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yyATcjaHDlw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yyATcjaHDlw) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-03 07:44:04 |
-
----
-
 - Hi, I'm Lisa.
 
 Do you want to take your English to that final level of fluency, but you feel stuck at your current level?

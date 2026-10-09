@@ -1,16 +1,3 @@
-# Advanced (C1) #Idiom | to set foot in (some place)🦶
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_41BCne-ky0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_41BCne-ky0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:58:41 |
-
----
-
 I haven't set foot in a bar in years to
 
 set foot in some place this means to go

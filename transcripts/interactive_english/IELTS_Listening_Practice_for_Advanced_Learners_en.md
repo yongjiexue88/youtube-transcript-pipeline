@@ -1,16 +1,3 @@
-# IELTS Listening Practice for Advanced Learners
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `325suNPGctM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=325suNPGctM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:19:39 |
-
----
-
 hello and welcome to today's lesson in case this happens to be your first time watching one of our videos on this channel my name is wes the channel interactive english it's all about just trying to help you improve your english skills we with vocabulary
 
 grammar pronunciation and today

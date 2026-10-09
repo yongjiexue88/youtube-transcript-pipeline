@@ -1,16 +1,3 @@
-# LAWYER: SAY THIS When Cops Use The "Reid Technique" Against You
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gvTSVKfFZ00` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gvTSVKfFZ00) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:05:15 |
-
----
-
 We've all heard the stories. A suspect gets called in, says that they're innocent, but ends up walking out in handcuffs. But in this case, the detectives didn't threaten prison time.
 
 They threatened his dog. And within hours, a 21-year-old man signed a confession to killing his own father, who wasn't even dead. I'm Jeff Hampton, the people's lawyer. And in this video, I'm breaking down number one, the exact way cops got away with doing this to Thomas Perez.

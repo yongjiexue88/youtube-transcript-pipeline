@@ -1,16 +1,3 @@
-# The Ramsey Show (Replay for December 27, 2024)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `84whUjGRXrc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=84whUjGRXrc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:16:52 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

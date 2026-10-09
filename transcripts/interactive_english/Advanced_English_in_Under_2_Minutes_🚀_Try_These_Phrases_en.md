@@ -1,16 +1,3 @@
-# Advanced English in Under 2 Minutes 🚀 Try These Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rubASGctshw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rubASGctshw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:52:46 |
-
----
-
 advanced phrases that native speakers use to be more precise, descriptive, and persuasive when both speaking and writing. To strike a chord with someone, this means to resonate emotionally or
 
 intellectually. I hope that this lesson

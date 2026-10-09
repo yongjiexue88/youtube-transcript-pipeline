@@ -1,16 +1,3 @@
-# 4 Things You Won't Learn in an English Textbook
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Avo3WOhzezE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Avo3WOhzezE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:21:29 |
-
----
-
 today i want to talk to you about four things that you will not learn in a textbook that's coming up
 
 [Music]

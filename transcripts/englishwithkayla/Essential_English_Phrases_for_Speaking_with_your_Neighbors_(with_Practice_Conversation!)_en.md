@@ -1,16 +1,3 @@
-# Essential English Phrases for Speaking with your Neighbors (with Practice Conversation!)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EO4kt0s63Ik` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EO4kt0s63Ik) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:46:24 |
-
----
-
 if you want to learn how to speak to
 
 your neighbors so that you are friendly

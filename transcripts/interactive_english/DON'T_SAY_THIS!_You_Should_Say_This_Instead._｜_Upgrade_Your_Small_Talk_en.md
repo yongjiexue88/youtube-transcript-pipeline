@@ -1,16 +1,3 @@
-# DON'T SAY THIS! You Should Say This Instead. | Upgrade Your Small Talk
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yNmuF0LskdM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yNmuF0LskdM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:57:24 |
-
----
-
 Don't say this.
 
 I'm going to tell you what to say instead. Now, of of course you can say anything you want. I really just want to help you upgrade your small talk. So, really this is about developing your fluency skills, developing your communication skills, and

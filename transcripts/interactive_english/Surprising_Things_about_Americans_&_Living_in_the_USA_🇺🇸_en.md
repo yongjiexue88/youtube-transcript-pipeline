@@ -1,16 +1,3 @@
-# Surprising Things about Americans & Living in the USA 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rO6Md_-t4No` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rO6Md_-t4No) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:45:03 |
-
----
-
 welcome everyone to our wonderful
 
 Saturday lesson I hope you're having a

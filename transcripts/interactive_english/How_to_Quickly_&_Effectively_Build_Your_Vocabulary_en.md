@@ -1,16 +1,3 @@
-# How to Quickly & Effectively Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UIT0knqhmQ8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UIT0knqhmQ8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:49:45 |
-
----
-
 all right so welcome welcome welcome if
 
 you are joining us in this live lesson

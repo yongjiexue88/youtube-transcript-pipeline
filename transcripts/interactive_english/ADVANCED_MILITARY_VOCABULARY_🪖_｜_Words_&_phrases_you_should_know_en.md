@@ -1,16 +1,3 @@
-# ADVANCED MILITARY VOCABULARY 🪖 | Words & phrases you should know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6Rzsggq29fk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6Rzsggq29fk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:07:38 |
-
----
-
 welcome to today's lesson we are going
 
 to be talking about Advanced military

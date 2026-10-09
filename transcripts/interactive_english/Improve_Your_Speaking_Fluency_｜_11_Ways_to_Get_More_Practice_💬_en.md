@@ -1,16 +1,3 @@
-# Improve Your Speaking Fluency | 11 Ways to Get More Practice   💬
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KGj5Q3OqYvA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KGj5Q3OqYvA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:31:02 |
-
----
-
 today I want to talk to you about how to
 
 get more speaking practice that's coming

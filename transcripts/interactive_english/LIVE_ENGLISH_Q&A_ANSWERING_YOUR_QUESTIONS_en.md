@@ -1,16 +1,3 @@
-# LIVE ENGLISH Q&A ANSWERING YOUR QUESTIONS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8XNOU9OAFCA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8XNOU9OAFCA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:37:03 |
-
----
-
 what's up everyone welcome my name is
 
 Wes this is interactive English which of

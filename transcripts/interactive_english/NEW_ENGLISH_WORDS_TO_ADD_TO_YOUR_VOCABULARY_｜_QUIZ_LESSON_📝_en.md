@@ -1,16 +1,3 @@
-# NEW ENGLISH WORDS TO ADD TO YOUR VOCABULARY | QUIZ LESSON 📝
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Qrsre17SGMY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Qrsre17SGMY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:32:39 |
-
----
-
 so today we are going to talk about some
 
 new English words of 2018 that's coming

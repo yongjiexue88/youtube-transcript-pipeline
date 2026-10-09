@@ -1,16 +1,3 @@
-# Listening & Speaking GAME  | Intermediate Vocabulary Describing People
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `O-bDHB6BZHA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=O-bDHB6BZHA) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:50:22 |
-
----
-
 What's up everyone! Today we're going to do an activity called...
 
 The nouns we are going to describe today are people.

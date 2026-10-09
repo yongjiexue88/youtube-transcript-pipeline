@@ -1,16 +1,3 @@
-# How to Pronounce Numbers Like a Native Speaker (Don't confuse 30 and 13!)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-fnPFp1cZd8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-fnPFp1cZd8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:25:00 |
-
----
-
 Have you ever mixed up numbers like 50
 
 and 15 in English? You hear a price, but

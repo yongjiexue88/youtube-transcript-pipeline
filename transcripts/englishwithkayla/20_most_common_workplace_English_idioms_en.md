@@ -1,16 +1,3 @@
-# 20 most common workplace English idioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mRDprGmdyQ0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mRDprGmdyQ0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:03:22 |
-
----
-
 if you are an english learner and you're planning on working with american english speakers you need to know these
 
 20 idioms that will help you understand

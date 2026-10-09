@@ -1,16 +1,3 @@
-# Speak Quickly & Naturally by LINKING These Common Words 💬
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jNqQ0AulDvc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jNqQ0AulDvc) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:41:24 |
-
----
-
 Today, I'm going to teach you five common English reductions.
 
 Which is something many, many, many English learners really want to learn.

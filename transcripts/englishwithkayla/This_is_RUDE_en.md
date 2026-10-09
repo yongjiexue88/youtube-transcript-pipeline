@@ -1,16 +1,3 @@
-# This is RUDE
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `V2ConSf5GbE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=V2ConSf5GbE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:27:34 |
-
----
-
 did you think Amy was being rude to me
 
 last night no I didn't pick up on it no

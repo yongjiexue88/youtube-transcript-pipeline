@@ -1,16 +1,3 @@
-# Using Pictures to Improve Your English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Ee1sL-AtxZ0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Ee1sL-AtxZ0) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:45:51 |
-
----
-
 Today, I want to talk to you about something that will make it easier for you to learn and improve your English skills.
 
 And that is...

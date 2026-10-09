@@ -1,16 +1,3 @@
-# Practice English conversation for free | Friendship #speakenglish #englishconversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mkPw3GFBVgs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mkPw3GFBVgs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:10:45 |
-
----
-
 so there's other english teachers on youtube that will teach you the phrases
 
 and you're supposed to just sit and watch and listen but in today's english lesson

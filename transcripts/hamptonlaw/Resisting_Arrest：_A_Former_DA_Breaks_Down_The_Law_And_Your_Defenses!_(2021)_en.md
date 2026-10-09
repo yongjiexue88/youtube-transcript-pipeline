@@ -1,16 +1,3 @@
-# Resisting Arrest: A Former DA Breaks Down The Law And Your Defenses! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EJIxC_S8LmE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EJIxC_S8LmE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:08:34 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel and today I want to talk to you about resisting arrest what has to be proven and is
 
 there a way to defend it if you wait around to the end of this video I will also give you a free ebook what to do if you have been charged with a crime in Texas okay let's jump right into this now it may be tempting for many people when they pick up a resisting arrest charge to think that it's not that big of a deal maybe it's not that important

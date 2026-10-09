@@ -1,16 +1,3 @@
-# CHALLENGING RIDDLES IN ENGLISH | Critical Thinking Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mi1Zd6Ku2tA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mi1Zd6Ku2tA) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:41:33 |
-
----
-
 So I have a riddle for you.
 
 What has two hands but cannot clap?

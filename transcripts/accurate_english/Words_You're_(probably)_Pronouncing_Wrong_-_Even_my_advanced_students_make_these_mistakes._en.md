@@ -1,16 +1,3 @@
-# Words You're (probably) Pronouncing Wrong - Even my advanced students make these mistakes.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WJ86suMymeo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WJ86suMymeo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:29:23 |
-
----
-
 let's make your English accurate English
 
 I will teach you the correct pronunciation of some commonly mispronounced words even my Advanced students make some of these mistakes let's look at the first word this word is commonly mispronounced do you know how to pronounce it it means not in the correct position or not functioning properly not going as planned not going

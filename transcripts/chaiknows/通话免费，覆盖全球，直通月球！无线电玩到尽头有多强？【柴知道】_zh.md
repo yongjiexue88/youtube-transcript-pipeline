@@ -1,16 +1,3 @@
-# 通话免费，覆盖全球，直通月球！无线电玩到尽头有多强？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tkRFRNu-LEY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tkRFRNu-LEY) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:37:24 |
-
----
-
 这个玩意儿是上个月柴司策划蹲点抢购到的“薯条对酱机”它的最大输出功率不到 10mW 只要距离超过 300 米信号就就弱了再高级一些的像保安用的对讲机信号能覆盖一个商场或者小区
 
 而这个玩意儿是“业余无线电”的电台

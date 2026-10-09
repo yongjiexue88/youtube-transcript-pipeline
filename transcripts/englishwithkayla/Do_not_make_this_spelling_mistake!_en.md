@@ -1,16 +1,3 @@
-# Do not make this spelling mistake!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jy8fl5NHscA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jy8fl5NHscA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:08:14 |
-
----
-
 in english these two words can be very
 
 confusing the words are desert

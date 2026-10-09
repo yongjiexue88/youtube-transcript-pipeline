@@ -1,16 +1,3 @@
-# Advanced Vocabulary and Accent Practice with The New York Times
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NYKIA5kXamc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NYKIA5kXamc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:34:51 |
-
----
-
 hi I'm Lisa I make videos for advanced
 
 Learners of English so that you can take your English to the final level of fluency a lot of people believe that English is easy in the beginning when you first start to learn it but then when you get to an advanced level you realize that there are still so many things that you need to know to sound like a native speaker and this is especially true for vocabulary

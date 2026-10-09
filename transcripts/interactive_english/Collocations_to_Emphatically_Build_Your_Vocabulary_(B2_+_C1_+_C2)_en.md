@@ -1,16 +1,3 @@
-# Collocations to Emphatically Build Your Vocabulary (B2 + C1 + C2)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7ZWPkvnT9Eo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7ZWPkvnT9Eo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:06:42 |
-
----
-
 In this lesson, I am going to help you emphatically build your vocabulary. And
 
 I just trying to emphasize it emphatically, uh, immensely, greatly build your vocabulary. And learning collocations is

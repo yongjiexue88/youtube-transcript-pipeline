@@ -1,16 +1,3 @@
-# Fast English speaking practice | English conversation with a native speaker | Practice answering
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-OgcnzS7c2E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-OgcnzS7c2E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:05:52 |
-
----
-
 today's english lesson is all about how
 
 to speak fast english and how to

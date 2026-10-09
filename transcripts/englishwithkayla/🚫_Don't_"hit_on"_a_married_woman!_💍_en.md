@@ -1,16 +1,3 @@
-# 🚫 Don't "hit on" a married woman! 💍
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BbiWSjiFbmQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BbiWSjiFbmQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:00:06 |
-
----
-
 it's very awkward when you're married if
 
 you get hit on this phrasal verb to hit

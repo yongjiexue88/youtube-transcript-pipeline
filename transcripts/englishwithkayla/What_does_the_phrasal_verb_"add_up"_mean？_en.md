@@ -1,16 +1,3 @@
-# What does the phrasal verb "add up" mean?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fZINAhGx-js` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fZINAhGx-js) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:02:09 |
-
----
-
 here is an incredibly useful phrasal
 
 verb add up if something adds up it

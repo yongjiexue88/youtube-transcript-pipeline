@@ -1,16 +1,3 @@
-# Super Descriptive Adjectives to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eZwxIdz-1Kc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eZwxIdz-1Kc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:12:08 |
-
----
-
 i want to teach you some super descriptive adjectives related to the five senses sight hearing smell touch
 
 taste and i want to teach you some common collocations words that are

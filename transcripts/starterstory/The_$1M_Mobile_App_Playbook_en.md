@@ -1,16 +1,3 @@
-# The $1M Mobile App Playbook
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hKqLceTPLWM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hKqLceTPLWM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:20:12 |
-
----
-
 What if I told you that success has nothing to do with coding? Well, what I'm going to share with you today is the difference between apps that make millions and apps that die with zero downloads. Don't believe me? Well, here's proof. Meet Steven, a founder who took his mobile app from 0 to $40,000 MR
 
 and then sold it for a life-changing amount. Steven's not a famous influencer. He's an actual founder in the arena who discovered a playbook that changed his life forever. You might remember him from his last starter story video.

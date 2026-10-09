@@ -1,16 +1,3 @@
-# 听个歌为什么要外接“小尾巴”？真的能让音乐更好听吗？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `el4NBqkfhWk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=el4NBqkfhWk) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:41:45 |
-
----
-
 今年 9 月的一个周末我闲逛进了一家唱片店看到里面的一位大哥拿包装着一大坨砖头在听歌
 
 自从音乐软件们逐步支持无损格式以来我就老是看到有人给手机插上了一堆“砖头”或者“尾巴”不一定都这么壮观但也显得很专业的样子

@@ -1,16 +1,3 @@
-# "good for you" #englishphrase #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Q9x7vwhKVIs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Q9x7vwhKVIs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:16:13 |
-
----
-
 ever heard an american say good for you
 
 well this phrase can be either super nice or super rude

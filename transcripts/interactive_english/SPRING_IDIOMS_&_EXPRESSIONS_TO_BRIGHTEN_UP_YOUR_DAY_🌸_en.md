@@ -1,16 +1,3 @@
-# SPRING IDIOMS & EXPRESSIONS TO BRIGHTEN UP YOUR DAY  🌸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PRdorgubA48` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PRdorgubA48) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:39:03 |
-
----
-
 Okay. Check this out. I swear that one month ago
 
 these trees right here were basically naked.

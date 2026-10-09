@@ -1,16 +1,3 @@
-# I sold my company
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `v-uhjlMg9L0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=v-uhjlMg9L0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:13:07 |
-
----
-
 So, I [music] am flying to New York City today to have a meeting that could change [music] the rest of my life.
 
 Today, I might be selling my company, Starter Story, for a life-changing amount of money. It feels crazy [music] right now, and I don't really know exactly how to feel about it. So, I figured let's document it.

@@ -1,16 +1,3 @@
-# Advanced Vocabulary and Accent Practice for Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4IilduKDwwA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4IilduKDwwA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:29:40 |
-
----
-
 true English fluency means being able to
 
 understand news articles and being able to talk about a wide variety of subjects

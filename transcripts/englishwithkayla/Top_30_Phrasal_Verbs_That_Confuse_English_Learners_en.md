@@ -1,16 +1,3 @@
-# Top 30 Phrasal Verbs That Confuse English Learners
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `N0e7JzMwa0I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=N0e7JzMwa0I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:40:51 |
-
----
-
 one thing that is holding a lot of English Learners back from speaking English fluently is they're not studying
 
 phrasal verbs enough in today's English

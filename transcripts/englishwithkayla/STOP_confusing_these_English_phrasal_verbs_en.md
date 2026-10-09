@@ -1,16 +1,3 @@
-# STOP confusing these English phrasal verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LaLbNYgoBWg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LaLbNYgoBWg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:02:36 |
-
----
-
 hello friends in this english lesson i will teach you 11 essential phrasal
 
 verbs that are easy to mix up so you'll

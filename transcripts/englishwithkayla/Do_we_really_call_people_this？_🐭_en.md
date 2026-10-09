@@ -1,16 +1,3 @@
-# Do we really call people this? 🐭
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MzbhobJ6sg8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MzbhobJ6sg8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:17:17 |
-
----
-
 did you know that sometimes in English we call people guinea pigs you'll be my
 
 guinea pig and protege now this is not

@@ -1,16 +1,3 @@
-# Strange but common English phrase
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jwWAfXczgHM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jwWAfXczgHM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:23:02 |
-
----
-
 if you're learning English listen closely because you'll need to know this
 
 phrase in the United States schools

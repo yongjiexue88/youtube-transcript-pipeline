@@ -1,16 +1,3 @@
-# 10 WORDS ENGLISH HAS TAKEN FROM FRENCH, GERMAN, & SPANISH
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tFkCEssitco` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tFkCEssitco) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:42:18 |
-
----
-
 Have you ever stolen anything?
 
 English has.

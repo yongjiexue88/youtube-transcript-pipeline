@@ -1,16 +1,3 @@
-# try not to overuse this English word #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `odeOVeHwowo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=odeOVeHwowo) |
-| **Language** | Dutch (auto-generated) (nl) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:12:16 |
-
----
-
 want in die nodig english speakers zij
 
 weet iemand is desko de leds kunnen dat

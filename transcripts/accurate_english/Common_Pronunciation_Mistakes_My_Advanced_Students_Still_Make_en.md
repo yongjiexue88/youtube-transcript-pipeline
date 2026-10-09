@@ -1,16 +1,3 @@
-# Common Pronunciation Mistakes My Advanced Students Still Make
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sVFA8fuvRgQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sVFA8fuvRgQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:34:39 |
-
----
-
 hi I'm Lisa let's learn some commonly
 
 mispronounced English words and let's make sure that you are pronouncing them correctly [Music]

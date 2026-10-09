@@ -1,16 +1,3 @@
-# Should you say prefer or rather?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WE8kjeldGnQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WE8kjeldGnQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:43:30 |
-
----
-
 do you know the difference between saying I'd prefer and I'd rather in
 
 English these phrases can mean the exact

@@ -1,16 +1,3 @@
-# Discipline Matters Most in the Hard Times | August 29, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ysaP88JxydE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ysaP88JxydE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:10:20 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

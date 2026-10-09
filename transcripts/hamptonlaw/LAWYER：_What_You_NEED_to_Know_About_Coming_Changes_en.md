@@ -1,16 +1,3 @@
-# LAWYER: What You NEED to Know About Coming Changes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Ibk63sISjz8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Ibk63sISjz8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:41:40 |
-
----
-
 gun rights are on the rise I want to cover with you today what new rights do you have when it comes to possessing firearms now I'm going to walk you through all this because there's some new applications based upon some Supreme Court standards that have been set and really there's a particular case a seminal case known as the bruan case which is actually New York State Rifle
 
 and Pistol Association versus bruan that completely changed the landscape of everything related to gun rights in our country in the United States so one of the things I want to do is take a couple of few uh few moments here and talk to you about how the new changes in the law can actually expand into even more areas

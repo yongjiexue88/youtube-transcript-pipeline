@@ -1,16 +1,3 @@
-# part 7 - Ten More Advanced English Words for More Fluent English | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7kHmM_35nK8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7kHmM_35nK8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:04:55 |
-
----
-
 let's learn 10 more advanced English words this is video number 7 let's get
 
 started the first word is mediocre

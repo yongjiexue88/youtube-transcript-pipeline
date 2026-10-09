@@ -1,16 +1,3 @@
-# Practice English with a  Native Speaker in Los Angeles
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WsjQgs7TH6I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WsjQgs7TH6I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:37:46 |
-
----
-
 in this video you will learn a lot of vocabulary and expressions that native speakers use so that you can feel more confident about your English we will continue this series with my conversations with real people in Los Angeles in this video you will meet Isaiah and you will listen to him describe his job he works at an exclusive gym in Los Angeles called Equinox I'm excited to teach you the expressions and the vocabulary that he was using I want you to be able to express yourself the same way plus we will practice fast
 
 and reduced speech you will learn a lot in this video foreign

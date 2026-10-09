@@ -1,16 +1,3 @@
-# I Make $100K/Year From 2 AI Side Projects
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CoqAxV6b6j4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CoqAxV6b6j4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:23:32 |
-
----
-
 I make 100k a year from my side projects while keeping my full-time job. Meet Romsri, an app builder from India who runs two profitable AI side projects while keeping a full-time job. I only work on my apps 1 to 2 hours a week. In this video, Romrey breaks down how he manages all of this and why he has no plans to quit his full-time job.
 
 Building with AI is simple because if you're building apps on the side, this episode is a mustwatch. I'm Pat Walls and this is Starter Story.

@@ -1,16 +1,3 @@
-# Building Wealth Means Learning the Art Of Patience | November 10, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fN8f2JBzbSU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fN8f2JBzbSU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:59:26 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

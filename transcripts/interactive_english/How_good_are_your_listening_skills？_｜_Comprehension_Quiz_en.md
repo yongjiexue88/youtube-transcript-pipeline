@@ -1,16 +1,3 @@
-# How good are your listening skills? | Comprehension Quiz
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IXF6FgitbZc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IXF6FgitbZc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:35:19 |
-
----
-
 what's up everyone welcome to today's
 
 listening challenge if this is your

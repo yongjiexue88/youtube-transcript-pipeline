@@ -1,16 +1,3 @@
-# 别笑，你也找不到底盘在哪！为什么一聊“底盘”，车企就吹“悬架”？【柴知道：车圈化简】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MZNP8rARBEk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MZNP8rARBEk) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:30:29 |
-
----
-
 凭直觉选 快问快答请问这辆车的底盘在哪里
 
 选 A 的朋友恭喜你答错了这是大多数人心中的“底盘”会剐蹭 会进水但实际上它属于车身的一部分叫车身地板选 B 的朋友恭喜你还不如选 A 呢 这是动力电池

@@ -1,16 +1,3 @@
-# American Accent listening quiz | English Listening Quiz #1 American Athletes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `X0AYAvET-Ug` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=X0AYAvET-Ug) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:10:22 |
-
----
-
 how well are you able to understand new english vocabulary in a conversation with a native speaker well in today's lesson i'm going to test your abilities and teach you some cultural knowledge that will be useful and interesting to you so stick with me and let's begin today's lesson today's lesson includes three kind of prepared stories that i have for you about some of my favorite american athletes americans do love sports
 
 so it's a great way to learn about american culture and just maybe some interesting facts that you haven't heard before after each story i tell you i'm going to test your knowledge i'm going to do this by giving you questions and seeing if your listening was accurate these questions will mostly be multiple choice so hopefully they shouldn't be too hard make sure to comment how successful you were in today's quiz

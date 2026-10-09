@@ -1,16 +1,3 @@
-# Advanced Verbs to Describe the Way Things Move
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7b-jv9235aQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7b-jv9235aQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:59:27 |
-
----
-
 hey everyone today I want to teach you
 
 some new verbs and they are well they're

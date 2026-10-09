@@ -1,16 +1,3 @@
-# You're at home relaxing, maybe watching TV, maybe you're asleep WHEN SUDDENLY, BANG, BANG, BANG
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cmZX0U8vEnI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cmZX0U8vEnI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:08:26 |
-
----
-
 You're at home relaxing, maybe watching TV, maybe you're asleep WHEN SUDDENLY, BANG, BANG, BANG. POLICE, we have a warrant. Open the door. Your stomach drops. Do the cops have to show it to you? Can they come in without it? What can you say without making it worse?
 
 Let's be clear, having a warrant does not give cops unlimited power. And what you say next will absolutely decide whether your rights get protected or run over. I'm Jeff Hampton, the people's lawyer. And in this video, I'm going to show you number one, what a real warrant is supposed to look like. Number two, how cops use and abuse the system to

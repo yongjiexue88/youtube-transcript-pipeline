@@ -1,16 +1,3 @@
-# 戴了一个月 AI 眼镜，我向菩萨许了 3 个愿🙏【柴知道｜柴司新玩具】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3E5TJrrBwT4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3E5TJrrBwT4) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:31:36 |
-
----
-
 在过去的一个多月里我一直坚持戴着这副自费购买
 
 配了近视镜片的小米 AI 眼镜

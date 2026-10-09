@@ -1,16 +1,3 @@
-# English Articles Rules - Don't use "A" and "AN with these nouns
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IA-b5rNMMxo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IA-b5rNMMxo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:23:20 |
-
----
-
 Hi, I'm Lisa. English articles a and the
 
 can be so confusing. Why do we sometimes

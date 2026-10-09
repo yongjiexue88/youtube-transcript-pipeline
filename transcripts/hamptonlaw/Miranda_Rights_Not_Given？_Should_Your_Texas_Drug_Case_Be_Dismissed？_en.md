@@ -1,16 +1,3 @@
-# Miranda Rights Not Given? Should Your Texas Drug Case Be Dismissed?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wfWZ87AvlRw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wfWZ87AvlRw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:11:13 |
-
----
-
 hello welcome to the Hampton Law Firm I'm Jeff Hampton and today's video is going to be talking a little bit about drug cases and statements that you may have made to the police if you gave a statement to the police and they did not read you your Miranda Rights can your drug case be dismissed all right so if you'll wait around to the end of this video uh I'm going to also give you a free ebook what to do if you've been charged with a drug crime in Texas now
 
 today I want to cover the ins and outs of Miranda rights as it relates specifically to drug cases and what do I mean by that I have a lot of clients who will contact me and say I was in a car

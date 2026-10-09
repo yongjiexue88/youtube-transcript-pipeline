@@ -1,16 +1,3 @@
-# A Financial Plan Only Works If It Matches Your Reality | December 25, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ymgF2kbe8PQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ymgF2kbe8PQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:52:32 |
-
----
-
 George Camel here with a quick PSA before the calls start coming in. If you want to leave the money stress in 2025, you need a plan that works. So take what you learn today and put it to work in every dollar. Download the app and start for free today.
 
 Normal is broke and common sense is weird. We're here to help you transform your [music] life. From the Ramsey Network in the Fair Winds Credit Union studio, this is the Ramsay Show.

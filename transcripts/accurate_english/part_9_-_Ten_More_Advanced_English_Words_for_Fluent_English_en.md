@@ -1,16 +1,3 @@
-# part 9 - Ten More Advanced English Words for Fluent English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8DvYYiU5xYo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8DvYYiU5xYo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:04:07 |
-
----
-
 let's learn 10 more advanced English words so that you can expand your vocabulary and after that we will practice these new words in sentences so that you can also practice improving your accent this is video number 9 you
 
 have already learned 80 advanced English words and after this we will reach 90

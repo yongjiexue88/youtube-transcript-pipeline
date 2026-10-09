@@ -1,16 +1,3 @@
-# 显卡怎么成了国际博弈的工具？它是如何踏入风口浪尖的？How did the graphics card become a tool for international gaming?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `O-nyi6tSTiM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=O-nyi6tSTiM) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:44:27 |
-
----
-
 2022 年 8 月美国政府发布禁令禁止显卡厂商英伟达向中国出售 A100 和 H100 显卡
 
 有一些朋友还不知道这回事而知道的朋友有些也不清楚为什么偏偏是显卡

@@ -1,16 +1,3 @@
-# 10 English Proverbs about LOVE
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XkTReqnkEDA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XkTReqnkEDA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:51:31 |
-
----
-
 hi I'm Lisa let's learn some common English Proverbs about [Music] love understanding and using English Proverbs will help you to understand native speakers because Proverbs are used all the time in this video we will focus specifically on Proverbs related to love romance and relationships these are words of wisdom that are passed down through generations words of advice and warning about something related to love maybe the exact same proverb exists in your language let me know in
 
 the comments below or maybe there's something similar that expresses the same type of advice I really enjoyed reading your comments from the previous video that I made on Proverbs thank you so much for those comments at the end of this video I would like to share with you some of the Proverbs that I learned about from all over the world based on your comments it was so interesting

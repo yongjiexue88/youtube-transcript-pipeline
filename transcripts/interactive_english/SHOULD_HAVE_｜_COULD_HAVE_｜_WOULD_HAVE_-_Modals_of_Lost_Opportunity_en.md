@@ -1,16 +1,3 @@
-# SHOULD HAVE | COULD HAVE  | WOULD HAVE - Modals of Lost Opportunity
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LPpZEq8d66g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LPpZEq8d66g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:09:17 |
-
----
-
 i should have joined the interactive english community or i could have joined the interactive english community or i
 
 would have joined the interactive english community so today i want to

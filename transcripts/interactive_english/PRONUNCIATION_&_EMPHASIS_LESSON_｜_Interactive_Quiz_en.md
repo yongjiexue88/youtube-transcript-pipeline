@@ -1,16 +1,3 @@
-# PRONUNCIATION & EMPHASIS LESSON | Interactive Quiz
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `n6g4BPST6pw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=n6g4BPST6pw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:31:09 |
-
----
-
 so if you are interested in practicing
 
 your pronunciation and improving your

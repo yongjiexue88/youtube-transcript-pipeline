@@ -1,16 +1,3 @@
-# This phrase doesn't mean what you think...
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ehl5wrfYthM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ehl5wrfYthM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:59:08 |
-
----
-
 our friends in the south of the united
 
 states love this phrase especially women

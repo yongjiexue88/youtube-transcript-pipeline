@@ -1,16 +1,3 @@
-# 12 GOOD Words to IMPROVE YOUR VOCABULARY
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sFJIW7fx7zc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sFJIW7fx7zc) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:53:28 |
-
----
-
 Today, we're talking about 12 good words.
 
 That is...12 synonyms to use instead of the word "good."

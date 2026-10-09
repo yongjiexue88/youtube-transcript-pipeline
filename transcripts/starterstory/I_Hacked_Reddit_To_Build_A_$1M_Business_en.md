@@ -1,16 +1,3 @@
-# I Hacked Reddit To Build A $1M Business
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ptT0tfzeu8I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ptT0tfzeu8I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:29:43 |
-
----
-
 this thing made me a millionaire no not
 
 the dollar bill I'm talking about this

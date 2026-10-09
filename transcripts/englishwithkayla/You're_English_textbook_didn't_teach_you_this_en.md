@@ -1,16 +1,3 @@
-# You're English textbook didn't teach you this
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `h1uPTh8tNh0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=h1uPTh8tNh0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:59:49 |
-
----
-
 so your english textbook taught you to say that i'm not going outside today
 
 because it's raining or because of the rain but

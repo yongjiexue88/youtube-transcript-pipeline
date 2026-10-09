@@ -1,16 +1,3 @@
-# Don't Always Say 'I THINK' | Useful Phrases to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jyp1aRx832g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jyp1aRx832g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:53:24 |
-
----
-
 useful phrases take one action I think
 
 you are going to love this lesson cut

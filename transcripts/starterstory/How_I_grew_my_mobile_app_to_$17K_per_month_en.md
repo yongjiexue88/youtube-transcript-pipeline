@@ -1,16 +1,3 @@
-# How I grew my mobile app to $17K per month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8kM-JcKpcDs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8kM-JcKpcDs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:15:42 |
-
----
-
 Yeah, I literally don't know how to code at all. >> Meet George, a college student who had never written a single line of code in his life. That was until he discovered coding with AI. >> I truly believe that anyone can build a mobile app these days.
 
 >> In just a couple months, he came up with an idea, he built it, and then he launched it to the App Store. >> I went from idea to the app store in 1 month. Now, that app that he built generates over $17,000 a month. George is proof that with a little determination, anybody can do this.

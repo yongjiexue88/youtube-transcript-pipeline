@@ -1,16 +1,3 @@
-# Easy & Important Word Stress Rules for Better Pronunciation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oaFezPi2gkk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oaFezPi2gkk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:45:15 |
-
----
-
 What's up everyone? How's it going?
 
 Thanks for joining us today. I have a

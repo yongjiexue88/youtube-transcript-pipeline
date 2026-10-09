@@ -1,16 +1,3 @@
-# Advanced Vocabulary for Talking About Babies
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eL_PvVT1bfY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eL_PvVT1bfY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:31:41 |
-
----
-
 today I want to talk to you about vocabulary that well it's all about when
 
 you have a baby hey everyone

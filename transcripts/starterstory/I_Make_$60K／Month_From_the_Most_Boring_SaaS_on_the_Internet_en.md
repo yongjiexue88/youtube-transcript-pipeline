@@ -1,16 +1,3 @@
-# I Make $60K/Month From the Most Boring SaaS on the Internet
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LRX8TWC2hTM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LRX8TWC2hTM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:12:11 |
-
----
-
 to the outside [music] world, it's really boring, but now we're making about 60k a month. >> If you look online right now, literally everyone [music] is chasing the same AI app ideas. But, what if I told you that building in a boring [music] niche is actually where the real money's at?
 
 >> What started as a side project has since grown into a full-time business.

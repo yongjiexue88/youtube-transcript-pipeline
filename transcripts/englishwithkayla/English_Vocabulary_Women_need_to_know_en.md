@@ -1,16 +1,3 @@
-# English Vocabulary Women need to know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Fo-SAMQfznw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Fo-SAMQfznw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:05:30 |
-
----
-
 i have so many beautiful ladies that
 
 watch my english channel and i know a lot of women who are learning english need to know very

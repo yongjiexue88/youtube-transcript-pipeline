@@ -1,16 +1,3 @@
-# Can You Say These Words Right? 😬 Identical Spelling, Different Sounds!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UhAbAPUJ4iI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UhAbAPUJ4iI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:52:24 |
-
----
-
 Can you correctly pronounce these five words right here? Now, you'll notice that all of these words end with o u g h
 
 and you would think that they probably have the same pronunciation, but that is

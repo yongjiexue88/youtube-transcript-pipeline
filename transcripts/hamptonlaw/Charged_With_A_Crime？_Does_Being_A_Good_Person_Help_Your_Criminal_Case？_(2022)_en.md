@@ -1,16 +1,3 @@
-# Charged With A Crime? Does Being A Good Person Help Your Criminal Case? (2022)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xfKCDoVvr30` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xfKCDoVvr30) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:53:02 |
-
----
-
 does being a good person help your criminal
 
 case hi I'm Jeff Hampton with the Hampton Law Firm I want to welcome you to our YouTube channel today I want to answer the question that I get asked all the time but hey Jeff look I got arrested for a criminal case but I'm a good person I'm not a criminal shouldn't that matter for something by the way if you wait around till the end of this video I'll also give you a free ebook what to do if you have been charged with a crime in Texas okay let's answer

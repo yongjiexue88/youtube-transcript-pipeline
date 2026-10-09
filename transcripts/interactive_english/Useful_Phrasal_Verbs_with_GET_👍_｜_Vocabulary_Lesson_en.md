@@ -1,16 +1,3 @@
-# Useful Phrasal Verbs with GET 👍  | Vocabulary Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hAtgXJ7YxOc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hAtgXJ7YxOc) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:51:50 |
-
----
-
 Today, we are going to talk to you about three different phrasal verbs and their different meanings with...
 
 Hello and welcome to our global classroom.

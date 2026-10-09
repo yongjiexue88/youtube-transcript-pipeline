@@ -1,16 +1,3 @@
-# Fine-Tune Your Pronunciation - 25 Advanced Words with Silent Letters
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RgSuqRZuJSk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RgSuqRZuJSk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:23:45 |
-
----
-
 let's talk about some silent letters that you will not pronounce when you say these advanced words [Music]
 
 hey everyone my name is wes from interactiveenglishvideos.com and the channel it's all about helping you practice and improve your english and today i it's a pronunciation lesson but also a little bit of vocabulary because i want to talk to you about 25 words and i think these are more advanced words and i want to teach you how to pronounce them and all of them have a silent letter

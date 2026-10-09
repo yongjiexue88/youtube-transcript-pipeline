@@ -1,16 +1,3 @@
-# 10 Words English Learners Often Mispronounce
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ImSyYuWhOa0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ImSyYuWhOa0) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:40:07 |
-
----
-
 Have you ever wondered how to pronounce these 10 difficult words?
 
 Keep on watching to find out.

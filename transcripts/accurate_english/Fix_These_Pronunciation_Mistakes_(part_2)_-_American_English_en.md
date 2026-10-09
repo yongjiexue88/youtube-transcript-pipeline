@@ -1,16 +1,3 @@
-# Fix These Pronunciation Mistakes (part 2)  - American English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `i76laUY6EUo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=i76laUY6EUo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:34:22 |
-
----
-
 hi I'm Lisa my goal with accurate
 
 English is to transform your English and to take it to the final level of fluency accurate pronunciation is a big part of that [Music]

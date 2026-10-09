@@ -1,16 +1,3 @@
-# Fast English speaking practice | repeat after me | English conversation with a native speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pyrkcHAu04s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pyrkcHAu04s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:11:51 |
-
----
-
 welcome back to english with kayla my name's kayla i'm an english teacher from the united states and today i want you to imagine that you
 
 are going to get coffee with your new english-speaking friend me so we are going to go on a coffee date

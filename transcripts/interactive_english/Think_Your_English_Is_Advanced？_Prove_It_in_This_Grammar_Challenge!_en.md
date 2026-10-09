@@ -1,16 +1,3 @@
-# Think Your English Is Advanced? Prove It in This Grammar Challenge!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `J95wi05lvtE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=J95wi05lvtE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:39:43 |
-
----
-
 Let's talk about some confusing English grammar. And if you would like to improve your grammar skills, please subscribe, turn on notifications. That way, I can become your teacher. My name is Wes. The channel is Interactive English. It's all about trying to help you reach your fluency goals. And if you'd like to get the lesson notes here, check out the link down below in the description. Join our email community.
 
 From time to time, I will send you these notes so that you can practice and review. So, this is going to be a quiz lesson. I will give you a moment to think of the answer and then I'll tell you the answer and explain why this can be a bit confusing. So, here is your first question. I didn't m wake up this

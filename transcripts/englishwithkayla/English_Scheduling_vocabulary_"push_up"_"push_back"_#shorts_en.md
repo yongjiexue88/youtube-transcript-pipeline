@@ -1,16 +1,3 @@
-# English Scheduling vocabulary "push up" "push back" #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZFlAMjTBhec` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZFlAMjTBhec) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:09:34 |
-
----
-
 when scheduling an appointment in the
 
 united states it might be useful to know

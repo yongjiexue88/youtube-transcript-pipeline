@@ -1,16 +1,3 @@
-# My App Makes $20K/Month: How I Found A Simple Idea And Turned It Into A Profitable Business
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PIXXEAfo6MY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PIXXEAfo6MY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:11:11 |
-
----
-
 I built a mobile app that makes me $20,000 per month.
 
 >> This is Ethan. He's 19 years old and a year ago he dropped out of college and started building apps. >> Because my product solved a very specific pain point that no other apps solved, it converted very well.

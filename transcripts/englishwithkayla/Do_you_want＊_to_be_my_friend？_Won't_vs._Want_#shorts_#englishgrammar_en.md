@@ -1,16 +1,3 @@
-# Do you want* to be my friend? Won't vs. Want #shorts #englishgrammar
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SFn4Wa8sfPc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SFn4Wa8sfPc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:21:17 |
-
----
-
 won't and want won't is a contraction or
 
 a shortened version for will not

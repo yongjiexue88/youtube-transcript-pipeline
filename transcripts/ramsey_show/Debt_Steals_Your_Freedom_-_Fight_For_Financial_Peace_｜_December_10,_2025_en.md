@@ -1,16 +1,3 @@
-# Debt Steals Your Freedom - Fight For Financial Peace | December 10, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xX_I-et3Om0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xX_I-et3Om0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:54:59 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

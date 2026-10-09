@@ -1,16 +1,3 @@
-# Important Phrasal Verbs for When You Get Sick 😷
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zbzWuSkUHCQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zbzWuSkUHCQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:30:31 |
-
----
-
 I want to teach you some phrasal verbs that you need to know if you get sick
 
 that's coming up hey everyone my name is

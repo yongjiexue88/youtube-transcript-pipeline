@@ -1,16 +1,3 @@
-# TOP 10 REASONS TO LEARN ENGLISH 💬
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `H5-PrI2hc48` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=H5-PrI2hc48) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:18:28 |
-
----
-
 Hey everyone, welcome to today's lesson.
 
 I think this is I think it's a very fun lesson because I am going to talk to you

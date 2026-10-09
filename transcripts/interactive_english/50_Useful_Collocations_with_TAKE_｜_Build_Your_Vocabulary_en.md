@@ -1,16 +1,3 @@
-# 50 Useful Collocations with TAKE | Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `28N8JezOOfg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=28N8JezOOfg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:24:57 |
-
----
-
 i'm so happy that you are taking part in
 
 this lesson because i am going to teach you many different collocations with the

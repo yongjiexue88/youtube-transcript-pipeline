@@ -1,16 +1,3 @@
-# Improve your Speaking and Conversation Skills with me
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `M5TxSQ8ud90` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=M5TxSQ8ud90) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:08:17 |
-
----
-
 gonna wanna cuz gotta give me lemmy okay
 
 it may sound a little strange saying one right after the other but those are some

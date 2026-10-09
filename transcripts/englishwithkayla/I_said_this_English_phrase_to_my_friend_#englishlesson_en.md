@@ -1,16 +1,3 @@
-# I said this English phrase to my friend #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eNGa65EPl8M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eNGa65EPl8M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:20:26 |
-
----
-
 the other day my friend and I were going to go meet at a restaurant and we left
 
 at the same time in two separate cars

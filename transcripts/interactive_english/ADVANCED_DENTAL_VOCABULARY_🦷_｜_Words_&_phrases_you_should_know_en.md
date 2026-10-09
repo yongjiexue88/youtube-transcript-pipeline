@@ -1,16 +1,3 @@
-# ADVANCED DENTAL VOCABULARY 🦷   | Words & phrases you should know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `v4Nx-tBHkvU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=v4Nx-tBHkvU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:10:24 |
-
----
-
 hello and welcome to today's lesson
 
 sorry I had a little bit of a mishap I just spilled water all over myself but

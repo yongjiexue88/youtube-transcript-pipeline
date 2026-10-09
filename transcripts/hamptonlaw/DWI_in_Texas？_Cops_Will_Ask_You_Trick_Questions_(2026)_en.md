@@ -1,16 +1,3 @@
-# DWI in Texas? Cops Will Ask You Trick Questions (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_CN-gyEv9ck` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_CN-gyEv9ck) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 21:06:09 |
-
----
-
 hey guys hey I just got a couple minutes here I wanted to share something with you real quick okay just finished up with a meeting with a DWI client and
 
 prospective client came in had a bunch of questions after they were trying to make a decision about what they wanted to do and after they hired they stopped before they made their way out the door they stopped and they said Mr Hampton does it matter what I said to the police officer during my DWI arrest he asked me some questions I thought they were kind of weird does

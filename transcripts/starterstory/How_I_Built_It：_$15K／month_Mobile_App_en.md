@@ -1,16 +1,3 @@
-# How I Built It: $15K/month Mobile App
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gpn1jEoWT4A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gpn1jEoWT4A) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:23:21 |
-
----
-
 I turned a simple habit tracker into a 15K MR business. Sebastian Ro always
 
 wanted to build his own apps. So he decided to quit his job and give himself 12 months to figure it out. No plan, no idea, just a dream to build. I quit my job with no idea, just 12 months of runway.

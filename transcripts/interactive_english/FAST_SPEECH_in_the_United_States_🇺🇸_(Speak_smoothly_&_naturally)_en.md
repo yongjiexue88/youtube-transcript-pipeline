@@ -1,16 +1,3 @@
-# FAST SPEECH in the United States 🇺🇸 (Speak smoothly & naturally)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8qWn9rj8KiA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8qWn9rj8KiA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:10:15 |
-
----
-
 welcome to today's lesson in which we
 
 are going to be talking about fast

@@ -1,16 +1,3 @@
-# 20 pronunciation mistakes even my advanced English students make.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-s2hzlO6-ys` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-s2hzlO6-ys) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:41:16 |
-
----
-
 hi i'm lisa in this video i will teach
 
 you to fix some common pronunciation mistakes that even my advanced students of english still make i will show you how to pronounce 20 words that are commonly mispronounced and you will have a chance to say them in natural sounding sentences you will repeat the sentences after me and you will say them in a good clear american accent and finally at the end of the video i will give you a little quiz a self-test to make sure that you have fixed the pronunciation mistake permanently [Music]

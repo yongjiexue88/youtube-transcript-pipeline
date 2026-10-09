@@ -1,16 +1,3 @@
-# 1-HOUR PRONUNCIATION LESSON | 100+ Words to Fine-tune Your Pronunciation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5K7Xehf7JkQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5K7Xehf7JkQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:50:48 |
-
----
-
 I want to help you improve and develop
 
 your pronunciation skills and that is

@@ -1,16 +1,3 @@
-# 20 BEST movies for english learners
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VJ9pLnokGS4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VJ9pLnokGS4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:52:19 |
-
----
-
 do you learn English by watching movies in this English video I'm going to tell
 
 you about 20 movies that I would recommend to English Learners that want to speak like an American English speaker I'm going to start with eight movies for intermediate to beginner type

@@ -1,16 +1,3 @@
-# Accent & Pronunciation Training | 25 Sentences to Enhance Your Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AC_eh1wDDQA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AC_eh1wDDQA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:37:10 |
-
----
-
 I told ChatGPT, "Give me 25 sentences in English that are commonly used but difficult to pronounce for ESL learners because of pronunciation or connected speech." And I want to go over these sentences right now, practice them with you so that you can improve your overall speaking fluency. And if you are someone who wants to develop your skills when it comes to pronunciation, connected speech, or accent, please subscribe, turn on notifications. That way I can become your teacher. My name is West, the channel is Interactive English.
 
 It is all about helping you reach your fluency goals. So, the way it turned out, ChatGPT organized this into three different groups. And the first 10 sentences have to do with connected speech.

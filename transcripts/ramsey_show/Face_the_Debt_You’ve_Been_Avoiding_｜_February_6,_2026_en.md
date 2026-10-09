@@ -1,16 +1,3 @@
-# Face the Debt You’ve Been Avoiding | February 6, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FBKi2Efa7_w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FBKi2Efa7_w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:46:10 |
-
----
-
 Brought to you by the Every [music] Dollar app. Start budgeting for free today.
 
 [music] Normal is broke and common sense is weird. So, we're here to help you transform [music] your life. From the Ramsey Network in the Fair Winds Credit Union studio, this is the Ramsay Show and I'm Rachel Cruz hosting this hour with Dr. John Deloney [music] and we're answering your calls at8255225.

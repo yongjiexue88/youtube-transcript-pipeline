@@ -1,16 +1,3 @@
-# Simple English phrases vs. Natural English Idioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kXtIDsVGbN0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kXtIDsVGbN0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:02:12 |
-
----
-
 every day my english students ask me
 
 what idioms do american speakers

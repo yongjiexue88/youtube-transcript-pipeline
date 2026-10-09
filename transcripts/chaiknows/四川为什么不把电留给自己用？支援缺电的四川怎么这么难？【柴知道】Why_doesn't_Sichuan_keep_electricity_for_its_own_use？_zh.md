@@ -1,16 +1,3 @@
-# 四川为什么不把电留给自己用？支援缺电的四川怎么这么难？【柴知道】Why doesn't Sichuan keep electricity for its own use?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `smwYTnKGNJA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=smwYTnKGNJA) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:49:05 |
-
----
-
 夏天的热点到了冬天也凉了但我们还是想热一热聊聊 2022 年夏天四川省电力不足的事情
 
 四川是我国发电量排名前五的大省

@@ -1,16 +1,3 @@
-# How to Use the Past Perfect | Advanced Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Jnw9SYABhJU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Jnw9SYABhJU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:43:40 |
-
----
-
 hello and welcome oh I sounded like a newscaster um welcome everyone to listen today I hope
 
 everyone's doing really really well if

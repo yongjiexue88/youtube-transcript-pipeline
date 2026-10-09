@@ -1,16 +1,3 @@
-# Advanced Vocabulary to Describe People (like politicians)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Ihm-v09oAWA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Ihm-v09oAWA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:04:57 |
-
----
-
 let's talk about some Advanced
 
 vocabulary words that you can use to

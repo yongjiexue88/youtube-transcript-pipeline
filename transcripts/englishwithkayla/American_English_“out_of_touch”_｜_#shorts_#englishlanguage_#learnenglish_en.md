@@ -1,16 +1,3 @@
-# American English “out of touch” | #shorts #englishlanguage #learnenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Tq_hd-Dmw0k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Tq_hd-Dmw0k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:29:39 |
-
----
-
 okay boomer so out of touch
 
 when someone is out of touch they don't know the latest developments of technology pop culture or the way

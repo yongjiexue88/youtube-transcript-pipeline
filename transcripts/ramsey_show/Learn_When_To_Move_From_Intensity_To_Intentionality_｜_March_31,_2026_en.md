@@ -1,16 +1,3 @@
-# Learn When To Move From Intensity To Intentionality | March 31, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UjGT0tm3s1w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UjGT0tm3s1w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:38:50 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

@@ -1,16 +1,3 @@
-# SUPER ADVANCED VOCABULARY | Descriptive words to be more precise
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eK6TOVHZmEQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eK6TOVHZmEQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:05:32 |
-
----
-
 let's build your vocabulary and by the
 
 end of the lesson I promise you will

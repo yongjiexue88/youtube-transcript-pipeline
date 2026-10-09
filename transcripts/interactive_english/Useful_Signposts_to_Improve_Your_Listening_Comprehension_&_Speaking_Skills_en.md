@@ -1,16 +1,3 @@
-# Useful Signposts to Improve Your Listening Comprehension & Speaking Skills
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WF9NHb2EnQM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WF9NHb2EnQM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:41:28 |
-
----
-
 welcome to today's lesson which is going
 
 to be very helpful because I'm going to

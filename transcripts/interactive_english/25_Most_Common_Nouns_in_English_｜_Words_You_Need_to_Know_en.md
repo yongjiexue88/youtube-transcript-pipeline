@@ -1,16 +1,3 @@
-# 25 Most Common Nouns in English | Words You Need to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HepVl7q4Bco` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HepVl7q4Bco) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:37:08 |
-
----
-
 Today we are going to talk to you about the 25 most common nouns in English. That's coming up.
 
 I keep doing this It's your thing now Yeah Welcome to today's lesson.

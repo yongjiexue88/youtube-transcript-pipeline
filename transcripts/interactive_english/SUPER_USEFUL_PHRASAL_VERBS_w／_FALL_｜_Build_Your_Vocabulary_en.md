@@ -1,16 +1,3 @@
-# SUPER USEFUL PHRASAL VERBS w/ FALL | Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XUa637ZuDh0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XUa637ZuDh0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:14:16 |
-
----
-
 let's talk about fall phrasal verbs and
 
 i'm not really talking about the fall season i'm talking about phrasal verbs

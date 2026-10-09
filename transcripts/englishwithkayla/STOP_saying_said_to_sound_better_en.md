@@ -1,16 +1,3 @@
-# STOP saying said to sound better
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WDcrcHFCY6c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WDcrcHFCY6c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:47:43 |
-
----
-
 here's a secret to help you improve your english speaking and writing do not
 
 overuse the word said let's talk about

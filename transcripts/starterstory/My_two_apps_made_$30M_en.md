@@ -1,16 +1,3 @@
-# My two apps made $30M
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `w8oUlfgvcTI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=w8oUlfgvcTI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:19:44 |
-
----
-
 I built two companies doing over $30 million in sales by copying already successful businesses.
 
 >> Meet Will. After the real estate crash in 2008, he lost everything and had to start from scratch. >> We didn't see it coming and we just totally got crushed. >> Then he came across the opportunity to build a SAS, but he didn't do it in the conventional way.

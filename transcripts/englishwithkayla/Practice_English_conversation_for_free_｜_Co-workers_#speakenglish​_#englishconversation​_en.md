@@ -1,16 +1,3 @@
-# Practice English conversation for free | Co-workers #speakenglish​ #englishconversation​
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SvrEwd4RTfg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SvrEwd4RTfg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:10:29 |
-
----
-
 can you really practice english with no
 
 speaking partner yes because in today's lesson we are

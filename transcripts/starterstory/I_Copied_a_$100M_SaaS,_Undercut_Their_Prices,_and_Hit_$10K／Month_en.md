@@ -1,16 +1,3 @@
-# I Copied a $100M SaaS, Undercut Their Prices, and Hit $10K/Month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_KaFS4Dxs5k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_KaFS4Dxs5k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:21:59 |
-
----
-
 I met a guy who has the perfect strategy for finding micro SASS ideas.
 
 >> I think anyone can build a business like mine. >> And with this simple strategy, he's been able to build a pretty successful business. >> Today, EUFO makes 11,000 MR.

@@ -1,16 +1,3 @@
-# 人类为什么看不到月之暗面？嫦娥六号：嘿嘿我偏要看～ Why can't humans see the far side of the moon? 【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7eNAadpin7g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7eNAadpin7g) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:39:09 |
-
----
-
 你有没有注意过人类文明史上所有关于月亮的图片
 
 都一模一样细想一下 这非常诡异

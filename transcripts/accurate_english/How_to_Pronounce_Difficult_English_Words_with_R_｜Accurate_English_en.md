@@ -1,16 +1,3 @@
-# How to Pronounce Difficult English Words with R |Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DIF9iBQWXbc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DIF9iBQWXbc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:09:20 |
-
----
-
 [Music]
 
 in this video I'd like to teach you how to fix a common mistake related to the herb sound the reason that the ER sound

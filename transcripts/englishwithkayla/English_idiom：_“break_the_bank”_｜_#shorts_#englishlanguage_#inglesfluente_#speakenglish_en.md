@@ -1,16 +1,3 @@
-# English idiom: “break the bank” | #shorts #englishlanguage #inglesfluente #speakenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Gp6rv5l3ilQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Gp6rv5l3ilQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:33:27 |
-
----
-
 great english idiom that means something
 
 is very expensive is it breaks the bank

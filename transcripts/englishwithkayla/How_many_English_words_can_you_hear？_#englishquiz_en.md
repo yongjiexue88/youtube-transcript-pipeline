@@ -1,16 +1,3 @@
-# How many English words can you hear? #englishquiz
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dBL9HGVrfy8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dBL9HGVrfy8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:25:14 |
-
----
-
 here is your English listening quiz
 
 which word on screen am I saying money

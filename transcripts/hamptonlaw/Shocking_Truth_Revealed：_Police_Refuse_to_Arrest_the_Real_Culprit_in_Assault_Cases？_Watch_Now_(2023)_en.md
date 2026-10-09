@@ -1,16 +1,3 @@
-# Shocking Truth Revealed: Police Refuse to Arrest the Real Culprit in Assault Cases? Watch Now (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8wfZQIv87Tk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8wfZQIv87Tk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:50:20 |
-
----
-
 have you been arrested for assault but the police refused to arrest the real culprit in the [Music]
 
 case hi I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk about maybe you've been arrested for assault but it was the other guy who was really at fault why didn't the police arrest him and by the way if you wait around to the end of this video I'll also give you a free ebook what to do if you have been charged with a crime in Texas so we see

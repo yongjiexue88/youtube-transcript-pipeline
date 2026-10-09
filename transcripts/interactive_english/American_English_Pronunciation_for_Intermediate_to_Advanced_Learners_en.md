@@ -1,16 +1,3 @@
-# American English Pronunciation for Intermediate to Advanced Learners
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `l2QMvJ51CXo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=l2QMvJ51CXo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:20:00 |
-
----
-
 hello welcome to today's lesson my name
 
 is wes in case this is your first time here the channel is interactive english and the channel's all about trying to help you practice and improve your your grammar your pronunciation vocabulary just anything related to learning english and today i i have it's a it's a pronunciation lesson and we're going to be doing it's a little bit of a pronunciation quiz but really i'm going to talk about um quite a few different parts of pronunciation

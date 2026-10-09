@@ -1,16 +1,3 @@
-# 50 common American English Idioms and phrases to use in conversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UJdFrpG1i8Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UJdFrpG1i8Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:08:12 |
-
----
-
 hello friends welcome back to english with kayla this english lesson will
 
 teach you 50 very natural and incredibly

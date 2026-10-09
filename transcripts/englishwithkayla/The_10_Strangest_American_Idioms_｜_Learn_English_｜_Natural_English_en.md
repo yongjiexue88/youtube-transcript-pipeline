@@ -1,16 +1,3 @@
-# The 10 Strangest American Idioms | Learn English | Natural English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yR2-K3TfjEo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yR2-K3TfjEo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:12:56 |
-
----
-
 but really you guys let me tell you
 
 american english speakers have some of the strangest idioms that we actually use and i'm

@@ -1,16 +1,3 @@
-# Your Money Isn’t the Problem—Your Plan Is | March 4, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YPKWqqRGdME` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YPKWqqRGdME) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:42:34 |
-
----
-
 [music] >> Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

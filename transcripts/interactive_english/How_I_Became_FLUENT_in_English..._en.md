@@ -1,16 +1,3 @@
-# How I Became FLUENT in English...
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BJM8hRuBqv4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BJM8hRuBqv4) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:52:22 |
-
----
-
 How I became fluent in English, and how you can, too!
 
 Full disclosure: I was born and raised in Romania, so my first language is Romanian.

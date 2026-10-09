@@ -1,16 +1,3 @@
-# Americans work late hours...
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `poFnB-D-0k8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=poFnB-D-0k8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:02:38 |
-
----
-
 when you're working do you stop right at
 
 the time that you are required to work to or do you burn

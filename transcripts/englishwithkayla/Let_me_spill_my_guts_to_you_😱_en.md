@@ -1,16 +1,3 @@
-# Let me spill my guts to you 😱
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UHcdpHzB7SQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UHcdpHzB7SQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:17:35 |
-
----
-
 to spill one's guts now you know this
 
 American idiom spilled one's guts so if

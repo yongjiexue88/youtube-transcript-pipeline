@@ -1,16 +1,3 @@
-# Sound Like a Native  Say These Instead of 'Yes,' 'No,' and 'I’m Tired'
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4uAP1bVMZL8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4uAP1bVMZL8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:36:37 |
-
----
-
 Do you ever feel like you're using the same words in English all of the time?
 
 Like yes, yes, no, I don't know, no, I'm

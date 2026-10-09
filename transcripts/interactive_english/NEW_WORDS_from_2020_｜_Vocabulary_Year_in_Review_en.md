@@ -1,16 +1,3 @@
-# NEW WORDS from 2020 | Vocabulary Year in Review
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `r3pPGuY5-UE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=r3pPGuY5-UE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:22:11 |
-
----
-
 hey everyone welcome to today's lesson
 
 my name is wes this is interactive english and here at this channel if this is your first time here uh we're

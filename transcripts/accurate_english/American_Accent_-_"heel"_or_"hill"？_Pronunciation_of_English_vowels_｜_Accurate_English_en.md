@@ -1,16 +1,3 @@
-# American Accent - "heel" or "hill"?   Pronunciation of English vowels | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3dasuQ9u8i0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3dasuQ9u8i0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:12:50 |
-
----
-
 hi my name is Lisa moyen and I'm the director of a school called accurate English I'm also the author of the book called mastering the American accent
 
 today I would like to help you fix a very common mistake that almost all of my students make when they first come to see me for lessons it has to do with a

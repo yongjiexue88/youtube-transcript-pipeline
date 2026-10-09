@@ -1,16 +1,3 @@
-# New Year's Resolutions | Listening, Vocabulary, & MORE...
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vKRZrsZO5Gw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vKRZrsZO5Gw) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:42:39 |
-
----
-
 Happy New Year! Wait, say that again. What? Happy New Year! Happy New Year! Happy New Year! Happy New Year!
 
 Today we're going to talk to you about New Year's resolutions.

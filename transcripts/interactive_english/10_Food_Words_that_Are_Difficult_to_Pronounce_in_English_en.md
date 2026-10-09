@@ -1,16 +1,3 @@
-# 10 Food Words that Are Difficult to Pronounce in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `45VH3YBGxk8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=45VH3YBGxk8) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:28:46 |
-
----
-
 - Today's lesson is delicious.
 
 The reason is because I'm going to teach you how to say 10 difficult food words correctly.

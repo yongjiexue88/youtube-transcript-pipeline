@@ -1,16 +1,3 @@
-# English time phrases to sound like a native
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gB2E8tb1108` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gB2E8tb1108) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:03:14 |
-
----
-
 in today's english lesson i will teach you some very important time phrases
 
 that will help you talk about the time that you will do things or things in the

@@ -1,16 +1,3 @@
-# Fluent English phrases for the grocery store
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `p46qyVkG6nE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=p46qyVkG6nE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:59:01 |
-
----
-
 do you need to practice speaking English but you don't have a speaking partner in
 
 today's English lesson I will go over a

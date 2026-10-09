@@ -1,16 +1,3 @@
-# 50 Advanced English Phrases About Weather
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nbFnv00H3Qg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nbFnv00H3Qg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:43:39 |
-
----
-
 are you ready to level up your
 
 vocabulary so that you can describe and

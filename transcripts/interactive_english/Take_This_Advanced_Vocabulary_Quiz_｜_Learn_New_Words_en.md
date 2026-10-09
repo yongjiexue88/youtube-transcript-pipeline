@@ -1,16 +1,3 @@
-# Take This Advanced Vocabulary Quiz | Learn New Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1TGWI9AHNR4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1TGWI9AHNR4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:36:18 |
-
----
-
 today I am going to test your knowledge
 
 of some advanced English vocabulary

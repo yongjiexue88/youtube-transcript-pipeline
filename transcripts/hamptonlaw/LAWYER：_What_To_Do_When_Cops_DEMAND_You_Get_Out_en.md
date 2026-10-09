@@ -1,16 +1,3 @@
-# LAWYER: What To Do When Cops DEMAND You Get Out
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MXd0kz4XjRk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MXd0kz4XjRk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:38:19 |
-
----
-
 a Firearms instructor was pulled over for some obvious reasons and he was eventually asked to step out of the vehicle but should he have complied his second amendment rights were not violated but did the officers violate his fourth amendment rights by searching his vehicle and what should you do if the police ever demand that you exit your vehicle two guns D gets pulled over and his actions are exactly correct starting out
 
 he starts off by remaining in the vehicle and waited for the officer this might seem obvious but don't ever get out of your vehicle unless the officer instructs you to do so 99 out of 100 times when the officer pulls you over and approaches you he's not there to be your friend and getting out of the vehicle quickly could be seen as furtive movement that could escalate

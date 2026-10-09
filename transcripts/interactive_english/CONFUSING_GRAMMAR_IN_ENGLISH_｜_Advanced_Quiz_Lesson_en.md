@@ -1,16 +1,3 @@
-# CONFUSING GRAMMAR IN ENGLISH | Advanced Quiz Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_d3zNlATCDQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_d3zNlATCDQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:31:23 |
-
----
-
 If you want to improve your grammar skills, then this lesson is for you because I am going to talk to you about some confusing grammar in English. Hey everyone, my name is Wes. This is Interactive English. And if this is your first time here, I want to hear from you.
 
 I want you to write your name in the comments because we always love hearing from from new people. And today is all about helping you practice and improve your grammar because this this is important. You know grammar is is basically talking about the structure of language. We need to use the appropriate grammar to communicate clearly so that we all understand each other.

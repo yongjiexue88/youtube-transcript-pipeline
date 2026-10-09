@@ -1,16 +1,3 @@
-# Advanced English Vocabulary You’ll Actually Use (C2 Level)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8iLhWTPReJY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8iLhWTPReJY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:47:46 |
-
----
-
 I want to teach you some Advanced C2
 
 phrases to help you build your vocabulary and C2 is cambridge's highest

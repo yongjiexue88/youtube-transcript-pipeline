@@ -1,16 +1,3 @@
-# Discipline With Money Leads To More Control | April 27, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tByzgwmsyL0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tByzgwmsyL0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:34:54 |
-
----
-
 [music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

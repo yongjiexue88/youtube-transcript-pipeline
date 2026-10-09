@@ -1,16 +1,3 @@
-# are you outta your mind?!  #shorts #englishlesson #englishphrase #connectedspeech
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VxE9vwxdW7E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VxE9vwxdW7E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:19:15 |
-
----
-
 are you out of your mind who asks
 
 someone if they are out of their mind or you can say it

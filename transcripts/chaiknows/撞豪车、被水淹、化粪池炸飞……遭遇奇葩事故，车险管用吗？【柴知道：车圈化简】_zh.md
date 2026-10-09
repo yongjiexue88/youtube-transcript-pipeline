@@ -1,16 +1,3 @@
-# 撞豪车、被水淹、化粪池炸飞……遭遇奇葩事故，车险管用吗？【柴知道：车圈化简】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `he3tDOQbc-0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=he3tDOQbc-0) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:33:29 |
-
----
-
 你的车吻过劳斯莱斯吗
 
 它在车库里游过泳自动“泊”过车吗它撞过大运 丢过人吗

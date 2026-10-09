@@ -1,16 +1,3 @@
-# 4 Accent Tips I Teach My Professional Clients
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qbaXa_TAekk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qbaXa_TAekk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:21:50 |
-
----
-
 Hi, I'm Lisa. Have you ever explained
 
 something at work and someone asked you to repeat it? And maybe you explained it again and they still didn't understand.

@@ -1,16 +1,3 @@
-# BEAUTIFUL IDIOMS & EXPRESSIONS ABOUT ART 🎨
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6lOk2cb1xII` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6lOk2cb1xII) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:37:51 |
-
----
-
 We are in Paris! The city of lights or the city of arts and culture.
 
 So today we're going to talk to you about some idioms and expressions that are related to art.

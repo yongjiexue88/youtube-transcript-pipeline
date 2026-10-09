@@ -1,16 +1,3 @@
-# 10 Adjectives to Help You Sound Like a SUPER GENIUS 🤓 | Advanced Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CG5b9Ajb1vM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CG5b9Ajb1vM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:19:24 |
-
----
-
 so let's make everyone a super genius
 
 [Music]

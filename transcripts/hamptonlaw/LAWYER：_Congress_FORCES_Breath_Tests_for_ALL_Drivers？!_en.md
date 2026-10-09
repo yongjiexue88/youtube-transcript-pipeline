@@ -1,16 +1,3 @@
-# LAWYER: Congress FORCES Breath Tests for ALL Drivers?!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vwaVO1sPFi8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vwaVO1sPFi8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:43:41 |
-
----
-
 is Congress taking away your freedom by forcing you to give mandatory breath tests in your
 
 car hey everybody this is Jeff Hampton with Hampton criminal defense attorneys listen I'm doing a little bit different type of video here today because I not one to usually get very political and I don't get into a lot of political conversations or discussions but there's a new law that has actually already been passed that I've got a bunch of notes here that I wanted to go over with

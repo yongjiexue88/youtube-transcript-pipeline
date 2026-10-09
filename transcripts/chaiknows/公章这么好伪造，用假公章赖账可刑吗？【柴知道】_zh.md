@@ -1,16 +1,3 @@
-# 公章这么好伪造，用假公章赖账可刑吗？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ju93PYCpQng` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ju93PYCpQng) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:42:48 |
-
----
-
 在生意场上混谁不需要学习一些商战技巧呢
 
 有经理划破对手共享单车的

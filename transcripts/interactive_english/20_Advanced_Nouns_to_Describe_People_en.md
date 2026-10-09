@@ -1,16 +1,3 @@
-# 20 Advanced Nouns to Describe People
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WTSpeu5k_RY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WTSpeu5k_RY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:22:20 |
-
----
-
 today i am going to teach you 20 nouns
 
 that describe people that's coming up

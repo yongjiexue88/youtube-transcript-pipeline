@@ -1,16 +1,3 @@
-# Diet Vocabulary | English Vocabulary Help Podcast #25
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ViPNf40aiMA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ViPNf40aiMA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:06:32 |
-
----
-
 hi friends welcome back to the english vocabulary help podcast my name is kayla
 
 i'm an american english teacher i live in the united states and this is my vocabulary podcast where

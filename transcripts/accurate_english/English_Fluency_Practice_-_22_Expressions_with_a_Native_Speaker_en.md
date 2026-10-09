@@ -1,16 +1,3 @@
-# English Fluency Practice - 22 Expressions with a Native Speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `M5ej4s4WzNQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=M5ej4s4WzNQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:33:34 |
-
----
-
 hi I'm Lisa let's take your English
 
 fluency to the next level we're continuing my series with conversations with real people in Los Angeles I teach

@@ -1,16 +1,3 @@
-# The Ramsey Show on Tour in Denver | May 15, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TnFqj5WYg1k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TnFqj5WYg1k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:32:06 |
-
----
-
 [music]
 
 Cliff and I have been married for 2 years now. We currently reside in [music] the house that Cliff used to share with his ex-wife.

@@ -1,16 +1,3 @@
-# My mobile app made $800K in 365 days
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LYdJ3dfNCVs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LYdJ3dfNCVs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:15:34 |
-
----
-
 I built probably 10 apps that all failed. >> Louie is a guy from Canada who spent years building apps that went nowhere until one day he decided to try something different. >> Instead of just building another app, I studied Tik Tok. >> Before writing a single line of code, he found a real problem thousands of people were talking about in plain sight. Then he simply started making content about it and the rest is history. Immediately after building, it hit the top of the app store and in just one year it made over $800,000.
 
 >> From this video alone, he made 12.5K in sales in one day. >> This story blew my mind. So, I asked Louis to come on to the channel and break down exactly how he did it. In this video, we'll dive into how to find your idea by studying Tik Tok comments, the simple video he created that generated $12,500 in sales, and his

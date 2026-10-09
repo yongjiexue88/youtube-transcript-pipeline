@@ -1,16 +1,3 @@
-# How To Beat A Possession Of Marijuana Charge In Texas (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nnJHz0NZzbA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nnJHz0NZzbA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 14:17:55 |
-
----
-
 have you been charged with marijuana possession maybe THC oil is there a way to defend your case can you get it dismissed and get it off your
 
 record hi I'm Jeff Hampton with the Hampton Law Firm I want to welcome you to our YouTube channel today I want to talk to you about the subject of marijuana possession we'll dabble a little bit into THC oil specifically in terms of that crime and then I want to I want to encourage you to wait around to the end of this video because if you do I will also provide

@@ -1,16 +1,3 @@
-# How to have a better American accent￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bfQNSQJr9a0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bfQNSQJr9a0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:27:58 |
-
----
-
 here are the most important tips to improving your American accent when you
 
 speak English Americans tend to really

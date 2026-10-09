@@ -1,16 +1,3 @@
-# Can a Criminal Case Be Dismissed Based Upon A Victim's Request? (2022)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Bx0qipcmm6s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Bx0qipcmm6s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:52:44 |
-
----
-
 does a criminal case get dismissed if the victim wants to dismiss the
 
 charges hi I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk about if a victim decides they don't want to push forward with a criminal case should the case go away by the way if you wait around to the end of this video I'll also give you a free ebook what to do if you have been charged with a crime in Texas okay

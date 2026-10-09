@@ -1,16 +1,3 @@
-# How I Work: $77K/Month Solopreneur
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `D4fkiQfzw_I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=D4fkiQfzw_I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:10:41 |
-
----
-
 So, but basically, I work all days all year long. I love my day so much that I want to repeat it every single day. I don't like Sundays. It's my my fun is actually making stuff. So, I don't see why I would take a day off. And when I go on holiday, usually I I go mad.
 
 I've met like hundreds of people who talked [music] about their brilliant idea. The idea is in their head or maybe on their computer, but they haven't shipped it. And on the other side, I cannot recall a single person who told me like, "Hey, I have tried 10 times

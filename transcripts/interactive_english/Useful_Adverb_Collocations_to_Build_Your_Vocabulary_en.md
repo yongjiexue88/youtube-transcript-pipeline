@@ -1,16 +1,3 @@
-# Useful Adverb Collocations to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Dn_e5nYSnQs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Dn_e5nYSnQs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:09:08 |
-
----
-
 today i am going to teach you 50
 
 different collocations and if you don't know what collocations are those are

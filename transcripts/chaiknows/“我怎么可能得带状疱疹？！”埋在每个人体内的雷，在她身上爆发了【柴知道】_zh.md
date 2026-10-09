@@ -1,16 +1,3 @@
-# “我怎么可能得带状疱疹？！”埋在每个人体内的雷，在她身上爆发了【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XaMIZmcyAk8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XaMIZmcyAk8) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:38:42 |
-
----
-
 清明节前夕我们的设计师六月姐姐在群里请假
 
 说自己的手臂上长满了水疱

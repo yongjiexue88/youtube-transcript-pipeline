@@ -1,16 +1,3 @@
-# Advanced English Vocabulary Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UuzSiGC9k1w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UuzSiGC9k1w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:44:26 |
-
----
-
 you guys have you ever wondered why you
 
 can't actually understand native English

@@ -1,16 +1,3 @@
-# 5 Common GRAMMAR MISTAKES English Learners Often Make
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `E1wyYB1hL9Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=E1wyYB1hL9Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:26:03 |
-
----
-
 we all make grammar mistakes i make grammar mistakes and today i want to
 
 talk to you about five grammar mistakes that you could be

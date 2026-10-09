@@ -1,16 +1,3 @@
-# Common beachy idioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `f24_vW7p1Cc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=f24_vW7p1Cc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:49:22 |
-
----
-
 what do english speakers mean when they say it's like burying your head in the
 
 sand so english speakers use this phrase

@@ -1,16 +1,3 @@
-# BEACH or BITCH? | How to Pronounce These Words Correctly
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NGRdOZexP3I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NGRdOZexP3I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:28:30 |
-
----
-
 today I'm gonna teach you how to correctly pronounce these two words
 
 right here Beach and [ __ ] that's coming

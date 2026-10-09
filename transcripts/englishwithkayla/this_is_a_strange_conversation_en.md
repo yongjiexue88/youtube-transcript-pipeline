@@ -1,16 +1,3 @@
-# this is a strange conversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `krhHbDCSmi8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=krhHbDCSmi8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:28:42 |
-
----
-
 hello cable company how can I help you
 
 today hi I have a question about my bill

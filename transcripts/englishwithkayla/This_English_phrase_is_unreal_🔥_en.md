@@ -1,16 +1,3 @@
-# This English phrase is unreal 🔥
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QdJ1uSmJiiY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QdJ1uSmJiiY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:14:51 |
-
----
-
 if you say unreal now this can express that
 
 something is so cool so beautiful or

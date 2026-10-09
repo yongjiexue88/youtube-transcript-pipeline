@@ -1,16 +1,3 @@
-# This is a cool idiom 😎🇺🇸￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0kHBo9I0EbA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0kHBo9I0EbA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:56:07 |
-
----
-
 have not told me about anything and i
 
 don't know any information about it they

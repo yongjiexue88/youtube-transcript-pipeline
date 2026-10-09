@@ -1,16 +1,3 @@
-# Advanced Grammar in 60 Minutes (Improve Your English Fluency)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `c7xWLw3cWI4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=c7xWLw3cWI4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:46:01 |
-
----
-
 The next hour is all about grammar. And I am going to teach you a variety of things that are really more upper intermediate to advanced grammar. And learning this is incredibly helpful because it's going to allow you to speak and write more accurately. In addition, and I think this is the most important thing, you'll be able to avoid making simple mistakes. So when it comes to the English language, verbs are perhaps
 
 well, some of the most important words because they're very descriptive and they really shape the way that we communicate. So it is very important that you understand all of the different verb tenses and I want to teach you all of them right now. I want to teach you all 12 English verb tenses and then I'm going to give you a quiz to see how much you've learned and how much you remember. So let's first talk about well, how do we get to 12? So in English there are three main tenses that refers

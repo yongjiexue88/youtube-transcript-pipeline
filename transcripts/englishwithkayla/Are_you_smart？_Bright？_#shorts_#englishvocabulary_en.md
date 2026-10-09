@@ -1,16 +1,3 @@
-# Are you smart? Bright? #shorts #englishvocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `578Gev_P1-E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=578Gev_P1-E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:21:07 |
-
----
-
 here are some phrases that you can use
 
 to say that someone is intelligent or

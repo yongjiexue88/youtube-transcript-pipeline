@@ -1,16 +1,3 @@
-# USEFUL LISTENING SKILLS | Main Idea - Key Details - Make Inferences - Interpret Meaning
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jdtSQKkgHsE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jdtSQKkgHsE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:29:12 |
-
----
-
 hey everyone welcome to today's lesson
 
 my name is Wes this is interactive English which are channel it's all about helping you practice and improve your English skills and today I want to talk to you about a skill that is very important and that is listening but not only that I want to talk to you about different listening skills especially very important listening skills because listening I think is well it's something

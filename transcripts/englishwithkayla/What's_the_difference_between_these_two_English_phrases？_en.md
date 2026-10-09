@@ -1,16 +1,3 @@
-# What's the difference between these two English phrases?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `o_WLChtzrtI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=o_WLChtzrtI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:08:21 |
-
----
-
 let's meet at the restaurant tomorrow
 
 let's meet in the restaurant tomorrow

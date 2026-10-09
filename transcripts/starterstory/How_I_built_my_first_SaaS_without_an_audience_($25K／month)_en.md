@@ -1,16 +1,3 @@
-# How I built my first SaaS without an audience ($25K/month)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FCGpgPZqmkY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FCGpgPZqmkY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:15:04 |
-
----
-
 I took everything that I knew and built my first SAS. >> Meet Hassam, a non-technical guy who launched an app with Cursor.
 
 >> So, I spent literally all day for the next 48 hours building it out. And this is what I did. But he had no audience,

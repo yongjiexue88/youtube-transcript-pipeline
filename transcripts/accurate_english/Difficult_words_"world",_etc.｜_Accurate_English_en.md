@@ -1,16 +1,3 @@
-# Difficult words "world", etc.| Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wIoD11Q8WQk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wIoD11Q8WQk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:12:28 |
-
----
-
 [Music]
 
 Hi, I'm Lisa Moyes and I'm an accent reduction trainer. Today I'd like to help you fix the pronunciation mistake that a lot of my students make of some difficult words. The word we're going to look at first is the word world. If

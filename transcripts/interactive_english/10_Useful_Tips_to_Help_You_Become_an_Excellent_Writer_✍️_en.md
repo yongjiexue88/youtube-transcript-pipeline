@@ -1,16 +1,3 @@
-# 10 Useful Tips to Help You Become an Excellent Writer ✍️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QpUv4CXBCdg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QpUv4CXBCdg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:43:55 |
-
----
-
 hello and welcome to today's lesson
 
 thanks for joining me my name is Wes

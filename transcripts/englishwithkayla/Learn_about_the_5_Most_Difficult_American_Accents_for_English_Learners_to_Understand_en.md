@@ -1,16 +1,3 @@
-# Learn about the 5 Most Difficult American Accents for English Learners to Understand
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PW8mgsbwZis` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PW8mgsbwZis) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:49:31 |
-
----
-
 have you ever been confused when you hear American English speakers sound like this hey yo my man let me tell you
 
 something right now bro coffee course a

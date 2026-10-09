@@ -1,16 +1,3 @@
-# Dumb Financial Decisions Stunt Your Financial Growth | October 15, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MwyEqFKh9QQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MwyEqFKh9QQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:03:34 |
-
----
-
 [Music] Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

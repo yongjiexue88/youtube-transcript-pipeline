@@ -1,16 +1,3 @@
-# 座椅通风，豪车才配？电车怎么把价格给家人们打下来的？【柴知道：车圈化简】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QsJ-wdcGOWs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QsJ-wdcGOWs) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:31:46 |
-
----
-
 这是有座椅通风时车上的你这是没有座椅通风车上冷热不均的你很多夏天坐车的朋友都体验过“正面透心凉 背面桑拿房”的酸爽感
 
 而“座椅通风”就是能救你于水火的神仙功能

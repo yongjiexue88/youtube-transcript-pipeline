@@ -1,16 +1,3 @@
-# 10 Advanced Adjectives to Help You Sound More Intelligent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `lHYjSqXex8M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=lHYjSqXex8M) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:35:00 |
-
----
-
 I think all of us would like to sound more intelligent and competent when we're speaking English
 
 So today I'm going to tell you ten great adjectives to help you do just that.

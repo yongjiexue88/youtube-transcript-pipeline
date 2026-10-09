@@ -1,16 +1,3 @@
-# Fluent American english speaking practice
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7nyt9qPsR8M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7nyt9qPsR8M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:09:11 |
-
----
-
 hi friends welcome back to english with kayla my name's kayla i teach you natural english vocabulary today you guys seem to like when i walk
 
 around and teach you english vocabulary

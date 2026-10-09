@@ -1,16 +1,3 @@
-# The Truth About Refusing a Police Search - Will It Make You Look Guilty? Find Out Now! (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wotKWsP0Oqs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wotKWsP0Oqs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:50:59 |
-
----
-
 you've been pulled over or maybe an officer walks up to you they ask to search should you say yes or say no does
 
 it make you look guilty if you refuse to

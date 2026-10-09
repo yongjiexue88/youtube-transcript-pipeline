@@ -1,16 +1,3 @@
-# Use this English phrase if someone nasty…
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cWbrVVRODk0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cWbrVVRODk0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:16:59 |
-
----
-
 if you want to tell someone that they
 
 need to be careful about the way that they're speaking either to another

@@ -1,16 +1,3 @@
-# When I don’t have a lot of time I use this English phrase…
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tjDG54jmrw0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tjDG54jmrw0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:19:52 |
-
----
-
 when you don't have time for small talk you might just tell someone to cut to
 
 the chase let cut to the chase now this

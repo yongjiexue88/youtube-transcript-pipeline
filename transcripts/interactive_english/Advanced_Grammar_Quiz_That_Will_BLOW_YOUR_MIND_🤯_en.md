@@ -1,16 +1,3 @@
-# Advanced Grammar Quiz That Will BLOW YOUR MIND 🤯
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dPgaNbdPvNs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dPgaNbdPvNs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:00:30 |
-
----
-
 I have some advanced grammar for you that is going to blow your mind. And
 
 what this really is all about is just trying to finetune your English fluency

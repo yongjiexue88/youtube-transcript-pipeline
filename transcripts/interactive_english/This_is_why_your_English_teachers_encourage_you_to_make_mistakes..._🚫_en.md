@@ -1,16 +1,3 @@
-# This is why your English teachers encourage you to make mistakes... 🚫
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gbauIno9aBw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gbauIno9aBw) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:46:17 |
-
----
-
 Today we are going to give you some of the best advice when it comes to learning English.
 
 Before we begin, we'd like to remind you to please subscribe to our channel for more lessons on how to practice and improve your English.

@@ -1,16 +1,3 @@
-# Drug Possession Defense: How an Illegal Traffic Stop Can Get Your Drug Case Dismissed (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YMo5zrt6mUw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YMo5zrt6mUw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:55:51 |
-
----
-
 [Music] hello everyone welcome to the Hampton Law Firm I'm going to take a few minutes today to talk about drug cases and what happens if you were pulled over in your vehicle but the traffic stop was illegal
 
 what if the police pulled you over illegally how does it affect your case can your drug case be dismissed don't forget to subscribe to our YouTube channel for more great content just like this because today I want to get into the ins and outs of what is required for a police officer to pull you over legally and if they pull you over illegally how does it affect your potential drug case now

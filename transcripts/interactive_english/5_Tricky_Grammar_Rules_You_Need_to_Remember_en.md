@@ -1,16 +1,3 @@
-# 5 Tricky Grammar Rules You Need to Remember
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Yc1HfOzwzsM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Yc1HfOzwzsM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:20:30 |
-
----
-
 [Music]
 
 hey everyone my name is wes this is interactive english the channel

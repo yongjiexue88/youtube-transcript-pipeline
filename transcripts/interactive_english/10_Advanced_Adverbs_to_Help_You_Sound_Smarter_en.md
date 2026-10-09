@@ -1,16 +1,3 @@
-# 10 Advanced Adverbs to Help You Sound Smarter
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TAxjkGjfiDk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TAxjkGjfiDk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:10:30 |
-
----
-
 today I have a vocabulary lesson for you
 
 which is all about advanced adverbs

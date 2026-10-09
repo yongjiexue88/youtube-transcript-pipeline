@@ -1,16 +1,3 @@
-# You Don’t Have to Stay Broke | August 25, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `g3m796vtP3k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=g3m796vtP3k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:11:12 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

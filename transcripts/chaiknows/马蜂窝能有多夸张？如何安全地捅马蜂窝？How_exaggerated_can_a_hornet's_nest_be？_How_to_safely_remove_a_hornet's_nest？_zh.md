@@ -1,16 +1,3 @@
-# 马蜂窝能有多夸张？如何安全地捅马蜂窝？How exaggerated can a hornet's nest be? How to safely remove a hornet's nest?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3iixj4kqUWY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3iixj4kqUWY) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:52:12 |
-
----
-
 快看。你能发现这尊大佛哪儿有问题吗？
 
 没错，就是这在佛祖的头上挂了一枚硕大的马蜂窝凑近点，你甚至能看见上面的马蜂每年夏秋两季马蜂总会把蜂巢修筑在树上，房檐上，电线杆上，空调外机上，甚至是你挂在室内的衣服上马蜂怎么把窝造得这么大如何安全的“捅”马蜂窝

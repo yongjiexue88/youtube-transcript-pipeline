@@ -1,16 +1,3 @@
-# Finance Hacks Won’t Save You, Habits Will | March 12, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `c4zuLia9hOU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=c4zuLia9hOU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:41:24 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

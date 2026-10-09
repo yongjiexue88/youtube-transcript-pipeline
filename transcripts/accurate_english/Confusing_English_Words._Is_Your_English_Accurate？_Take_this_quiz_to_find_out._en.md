@@ -1,16 +1,3 @@
-# Confusing English Words.  Is Your English Accurate?  Take this quiz to find out.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3tXarrHyAeo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3tXarrHyAeo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:29:55 |
-
----
-
 how do we pronounce these two words are they the same or different do you confuse the pronunciation of these two words how about the meaning are you able to use them correctly and how about these two words and these two words are pronounced the same even though the spelling is different one of them is with an a r and the other one with an e r and do you know what they mean
 
 let's learn some English words that can be confusing even to native speakers

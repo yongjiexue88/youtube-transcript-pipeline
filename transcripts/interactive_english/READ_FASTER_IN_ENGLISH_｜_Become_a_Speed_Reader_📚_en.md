@@ -1,16 +1,3 @@
-# READ FASTER IN ENGLISH | Become a Speed Reader 📚
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SPWFQOOybiU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SPWFQOOybiU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:51:08 |
-
----
-
 okay I think we are live um welcome
 
 everyone Welcome to our Saturday um

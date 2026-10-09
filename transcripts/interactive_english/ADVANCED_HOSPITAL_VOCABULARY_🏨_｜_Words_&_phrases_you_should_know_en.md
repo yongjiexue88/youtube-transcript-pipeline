@@ -1,16 +1,3 @@
-# ADVANCED HOSPITAL VOCABULARY 🏨  | Words & phrases you should know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4WHHTGr6VbA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4WHHTGr6VbA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:15:34 |
-
----
-
 hello welcome to today's lesson which is
 
 really about trying to help you build your vocabulary i have these well

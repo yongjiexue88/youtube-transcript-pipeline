@@ -1,16 +1,3 @@
-# 降价、亏本、刷榜……车企为什么非要冲销量？淡定一点会死吗？【柴知道：车圈化简】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `darKqE2xsSQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=darKqE2xsSQ) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:31:25 |
-
----
-
 2025 年 3 月中汽协一纸倡议想叫停国内的汽车销量周榜
 
 但半年过去了周榜是一张也没少发

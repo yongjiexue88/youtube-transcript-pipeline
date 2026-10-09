@@ -1,16 +1,3 @@
-# If you use these four words during a traffic stop, it will force a cop to
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RvjF2VW73hY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RvjF2VW73hY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:13:54 |
-
----
-
 If you use these four words during a traffic stop, it will force a cop to either let you go, or he'll have to justify why he's holding you. I'm Jeff Hampton, and in this video, I'm going to show you what to say, when to say it, and how this new Supreme Court ruling makes it more powerful than ever to use these four words to end a traffic stop.
 
 A new unanimous Supreme Court decision has now shifted the balance of power during a traffic stop. In the US Supreme Court case of Barnes versus Felix, the court changed the rules about how we can evaluate police officers behavior during not only a traffic stop, but any encounter with a cop. Under the new Barnes ruling, everything the police do from the moment they light you up till the moment they detain you or even try to use force against you can be evaluated and used to determine if that police officer acted reasonable. This shift makes the four words I'm about to share with you here in just a moment even more powerful for motorists who want to protect their rights during a traffic stop.

@@ -1,16 +1,3 @@
-# SEXUAL INNUENDOS 💋 How to understand these suggestive remarks....
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9NcPvk4cVEs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9NcPvk4cVEs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:16:42 |
-
----
-
 let's talk about sex actually i want to
 
 talk to you about sexual innuendos so that you know if somebody else is

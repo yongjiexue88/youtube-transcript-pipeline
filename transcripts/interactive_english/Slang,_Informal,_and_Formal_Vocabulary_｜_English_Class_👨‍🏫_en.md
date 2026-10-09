@@ -1,16 +1,3 @@
-# Slang, Informal, and Formal Vocabulary | English Class 👨‍🏫
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `I4HnJlbod2Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=I4HnJlbod2Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:59:16 |
-
----
-
 class today let's talk about how to say
 
 things in a formal way an informal way

@@ -1,16 +1,3 @@
-# The Best Financial Plans Don’t Rely On Debt | May 27, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kbxuZN0sKjE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kbxuZN0sKjE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:30:22 |
-
----
-
 This is an ad for BetterHelp. Stress from money problems doesn't just stay in your bank account. It shows up everywhere in your life. Talking to someone can help you sort it out. Go to betterhelp.com/ramsey to get 10% off.
 
 Brought to you by the EveryDoll app.

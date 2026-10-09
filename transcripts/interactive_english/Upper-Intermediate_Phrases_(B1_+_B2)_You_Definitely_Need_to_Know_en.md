@@ -1,16 +1,3 @@
-# Upper-Intermediate Phrases (B1 + B2) You Definitely Need to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZWdj9eY1zPM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZWdj9eY1zPM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:54:16 |
-
----
-
 I'm going to teach you some common phrases that you absolutely need to know
 
 they're that common and I'm going to

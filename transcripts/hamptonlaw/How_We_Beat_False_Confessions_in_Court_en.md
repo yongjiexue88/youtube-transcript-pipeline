@@ -1,16 +1,3 @@
-# How We Beat False Confessions in Court
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `G3XFnFbYnOI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=G3XFnFbYnOI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:40:32 |
-
----
-
 Martin tank Cliffe was only 17 when he came home and he found his mother murdered and his father clinging to life
 
 so he immediately called 911 the police show up and instead of consoling him because his family has been murdered they immediately Rush him off to Police Headquarters and begin to use harsh interrogation techniques to have him try to admit to a crime he never committed during this period of time they began to tell him things like hey we've already found your skin under your mother's fingernails oh

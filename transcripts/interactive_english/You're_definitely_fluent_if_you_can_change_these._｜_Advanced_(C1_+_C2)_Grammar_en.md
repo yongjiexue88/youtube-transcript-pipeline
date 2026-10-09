@@ -1,16 +1,3 @@
-# You're definitely fluent if you can change these. | Advanced (C1 + C2) Grammar
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BD_b87_vVms` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BD_b87_vVms) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:09:12 |
-
----
-
 you are fluent if you can change these
 
 and if fluency is something that you

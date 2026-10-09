@@ -1,16 +1,3 @@
-# To talk about a subject briefly
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hXHfuOwJXA0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hXHfuOwJXA0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:03:51 |
-
----
-
 if you want to say that you have just explained something very briefly or
 
 you've just given a short explanation

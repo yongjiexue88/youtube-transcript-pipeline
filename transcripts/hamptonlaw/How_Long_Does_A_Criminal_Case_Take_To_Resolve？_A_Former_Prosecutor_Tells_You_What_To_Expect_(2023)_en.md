@@ -1,16 +1,3 @@
-# How Long Does A Criminal Case Take To Resolve? A Former Prosecutor Tells You What To Expect (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gSoXFaL0Vac` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gSoXFaL0Vac) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:52:33 |
-
----
-
 how long does a criminal case take to
 
 resolve hi I'm Jeff Hampton with the Hampton Law Firm thanks for joining us on our YouTube channel today I'm going to talk about exactly this topic I get this question probably multiple times a week hey Jeff how long is it going to take for a criminal case to resolve and what should I expect and by the way if you wait around to the end of the video I'll give

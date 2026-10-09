@@ -1,16 +1,3 @@
-# I vibe coded a $20K/month mobile app in 14 days
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CwHD6Fg-Mjs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CwHD6Fg-Mjs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:18:19 |
-
----
-
 I'm 23 years old and my apps do over a million dollars in sales a year.
 
 >> This is [music] Connor, a 23-year-old kid who cracked the code on building apps that actually make money.

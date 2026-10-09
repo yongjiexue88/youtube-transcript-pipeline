@@ -1,16 +1,3 @@
-# Does this English word confuse you? Here’s how to use it￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mZwO5gAeaoY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mZwO5gAeaoY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:53:36 |
-
----
-
 i hear a lot of my english students get
 
 confused by using the word should

@@ -1,16 +1,3 @@
-# Winter Words, Idioms, and Expressions to Help Your Fluency ⛄
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jxMQPPnagTs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jxMQPPnagTs) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:41:15 |
-
----
-
 Winter is coming.
 
 Actually that's a lie. It's already here.

@@ -1,16 +1,3 @@
-# 20 book recommendations for English learners
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PE--uccdhpg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PE--uccdhpg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:52:56 |
-
----
-
 if you didn't already know reading is
 
 the best way to expand your vocabulary

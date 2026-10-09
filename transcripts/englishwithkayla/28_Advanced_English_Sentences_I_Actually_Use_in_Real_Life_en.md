@@ -1,16 +1,3 @@
-# 28 Advanced English Sentences I Actually Use in Real Life
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nKSAZgVnprQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nKSAZgVnprQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:31:29 |
-
----
-
 I'm going to give you heads up. We're going to keep things moving and make great time. If any of those three phrases are new to you and a big confusing in today's English lesson, I'm going to teach you those three phrases plus 25 more that I actually use in my
 
 everyday English conversations.

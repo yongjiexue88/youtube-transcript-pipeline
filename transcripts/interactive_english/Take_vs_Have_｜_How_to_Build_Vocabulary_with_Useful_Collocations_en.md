@@ -1,16 +1,3 @@
-# Take vs Have  | How to Build Vocabulary with Useful Collocations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4klTtD4NT_Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4klTtD4NT_Y) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:38:49 |
-
----
-
 Today I want to take some time and have a lesson that will help you build your vocabulary
 
 with these two verbs right here

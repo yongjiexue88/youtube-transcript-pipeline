@@ -1,16 +1,3 @@
-# I Built A Micro-Version Of A $1B SaaS. Now I Make $50K/Month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Nnpz1wsTjBI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Nnpz1wsTjBI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:09:57 |
-
----
-
 Every good business idea is already taken. [music] You've heard it, you've probably believed it, but that is completely wrong. >> Me and my brother Daniel have bootstrapped this SaaS from zero to 50K monthly. >> Meet David. He saw a billion-dollar company that was blowing up everywhere, and instead of thinking that he missed his chance, he built a tiny version of it. >> The plan was really simple. Find one common pain point and triple down on it.
 
 >> And just a few months later, that business hit $50,000 a month. So, I asked David to come on to the channel to break it all down, and in this episode, we'll dive into the $1 billion company that he copied, why you do not need to reinvent the wheel to build a successful business, and his playbook for starting over if he had to do the same thing again in 2026. All right, let's dive in.

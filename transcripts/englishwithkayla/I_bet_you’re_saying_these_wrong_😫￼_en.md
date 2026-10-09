@@ -1,16 +1,3 @@
-# I bet you’re saying these wrong 😫￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uYuLwAVTPTQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uYuLwAVTPTQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:23:11 |
-
----
-
 I bet you're saying these American brand
 
 names incorrectly let's review Fanta

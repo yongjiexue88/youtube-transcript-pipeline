@@ -1,16 +1,3 @@
-# COMMONLY CONFUSED WORDS IN ENGLSH | Prefixes Un-  vs Dis-  | Build English Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PraVZaXHpYI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PraVZaXHpYI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:29:07 |
-
----
-
 today I want to help you build your vocabulary by talking about some commonly confused words that's coming up
 
 hi everyone my name is Wes this is interactive English which is all about helping you practice and improve your English skills and today it's more of a vocabulary lesson even though there is a little bit of grammar to it because I want to talk to you about some commonly confused words with the prefixes on and

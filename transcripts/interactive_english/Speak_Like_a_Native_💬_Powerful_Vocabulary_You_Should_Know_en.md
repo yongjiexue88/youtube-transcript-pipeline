@@ -1,16 +1,3 @@
-# Speak Like a Native 💬  Powerful Vocabulary You Should Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tQXQuxEgWUo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tQXQuxEgWUo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:37:01 |
-
----
-
 Let's learn some powerful words. I'm talking about some powerful nouns, verbs, adjectives, adverbs that are really going to help you build your vocabulary. And I think this This is, of
 
 course, vocabulary you need to know.

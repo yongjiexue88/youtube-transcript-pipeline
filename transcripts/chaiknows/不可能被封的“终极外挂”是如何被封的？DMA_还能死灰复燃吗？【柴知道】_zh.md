@@ -1,16 +1,3 @@
-# 不可能被封的“终极外挂”是如何被封的？DMA 还能死灰复燃吗？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jK6fVJjxyrg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jK6fVJjxyrg) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:29:22 |
-
----
-
 这是你玩游戏时的画面
 
 这是挂哥玩游戏时的画面透视自瞄装备显示敌人位置显示全图物资显示一应俱全这些灵视拉满的开挂画面是柴司小陈在某公益科技辅助技术交流群里

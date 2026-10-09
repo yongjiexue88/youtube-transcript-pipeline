@@ -1,16 +1,3 @@
-# Wisdom With Money Means Moving Slowly | January 9, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UKt5bLW6w1Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UKt5bLW6w1Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:50:16 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

@@ -1,16 +1,3 @@
-# LAWYER: Say THESE WORDS When Cops Put a "Time Limit" on Your Rights
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Wcwb1WJ-_MA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Wcwb1WJ-_MA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:22:04 |
-
----
-
 You think you've got rights. You watch enough TV to know the line. You have the right to an attorney. You have the right to remain silent.
 
 But what if I told you those rights come with an invisible countdown? A countdown police know about. They use it and they weaponize it. Because after the time runs out, the law gives them the green light to do the one thing you thought was illegal.

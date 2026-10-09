@@ -1,16 +1,3 @@
-# 25 Super Useful Phrases You Will Use Again and Again
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `j7YqHhUpsSA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=j7YqHhUpsSA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:24:42 |
-
----
-
 let's talk about some very common english expressions that you should know
 
 that's coming up [Music]

@@ -1,16 +1,3 @@
-# English phrase "To bite off more than you can chew" #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QpVaQPir3W8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QpVaQPir3W8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:11:03 |
-
----
-
 here is a really interesting food idiom
 
 that i want to share with you the idiom is to bite off more than you

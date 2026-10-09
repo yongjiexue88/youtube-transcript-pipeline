@@ -1,16 +1,3 @@
-# How To Create Doubt For A Not Guilty Verdict! The Secret to Winning a Criminal Trial! (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VIRPOGmmlns` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VIRPOGmmlns) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:43:57 |
-
----
-
 criminal defense Secrets is it possible to expose doubt for a not guilty
 
 verdict hi I'm Jeff Hampton with Hampton criminal criminal defense attorneys the simple answer is yes it is but it's so

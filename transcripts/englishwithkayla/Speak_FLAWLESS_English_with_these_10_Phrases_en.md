@@ -1,16 +1,3 @@
-# Speak FLAWLESS English with these 10 Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pIESSRMQAj8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pIESSRMQAj8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:45:53 |
-
----
-
 if you want to speak English flawlessly
 
 you need to learn the 10 idioms and phrases in today's lesson I'll teach you

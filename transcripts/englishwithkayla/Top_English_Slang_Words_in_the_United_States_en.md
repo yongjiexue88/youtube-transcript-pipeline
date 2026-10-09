@@ -1,16 +1,3 @@
-# Top English Slang Words in the United States
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RAAnNAM84U0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RAAnNAM84U0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:03:05 |
-
----
-
 the united states is a really
 
 interesting place there's people in

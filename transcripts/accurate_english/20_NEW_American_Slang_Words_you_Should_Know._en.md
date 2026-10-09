@@ -1,16 +1,3 @@
-# 20 NEW American Slang Words you Should Know.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `d7d_9aBfY_c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=d7d_9aBfY_c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:51:57 |
-
----
-
 hi I'm Lisa how do you feel about your
 
 knowledge of English slang words in this

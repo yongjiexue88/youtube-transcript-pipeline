@@ -1,16 +1,3 @@
-# Fix Your Grammar Mistakes  -  Don't Add an S to These  Common Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `p_2IoQa_f-8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=p_2IoQa_f-8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:22:40 |
-
----
-
 Hi, I'm Lisa. Let's fix some very common
 
 grammar mistakes that even my advanced students sometimes make. Adding an S to

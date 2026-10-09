@@ -1,16 +1,3 @@
-# Do Americans really sound like this???
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VnetOHDItK0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VnetOHDItK0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:34:24 |
-
----
-
 it's time to make breakfast no this is
 
 not how Americans sound when they're actually speaking English in a casual conversation let me show you how

@@ -1,16 +1,3 @@
-# This phrase is not what it sounds like...
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KeeKWGr0o7M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KeeKWGr0o7M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:57:02 |
-
----
-
 this english phrase makes me giggle a little because i think of it in a
 
 literal sense to beat the clock

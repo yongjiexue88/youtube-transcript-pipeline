@@ -1,16 +1,3 @@
-# Does having an accent matter? | Natural English Conversation + Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1WTqYDgKmig` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1WTqYDgKmig) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:34:26 |
-
----
-
 today you are going to do two things you are going to listen to a natural English conversation as well as learn some new vocabulary that's coming up what's up
 
 everyone my name is Wes this is interactive English which is all about helping you practice and improve your English skills and the way we're going to do that today is that we have a conversation that we want you to listen to but not only that we want to teach you some new vocabulary that you are going to hear when listening to this conversation and that is a great way to learn some new words as well as see how they're used in context

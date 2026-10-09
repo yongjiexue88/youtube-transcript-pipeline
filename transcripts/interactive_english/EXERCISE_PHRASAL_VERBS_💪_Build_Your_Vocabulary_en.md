@@ -1,16 +1,3 @@
-# EXERCISE PHRASAL VERBS 💪 Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mxpsHUUWRxw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mxpsHUUWRxw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:18:27 |
-
----
-
 Today, I want to work out your English muscles, and the way we're going to do that is I'm going to teach you some different phrasal verbs that are related to fitness and exercise. And I know
 
 phrasal verbs can be very confusing because you have the verb followed by the preposition, and if that preposition changes, then you have a an entirely new phrasal verb. The other thing that I know makes them a little confusing is that many phrasal verbs have multiple meanings. The good news is that in today's lesson, I just want to talk to you about one meaning of these phrasal verbs that's related to fitness and exercise. So, in case this is your first time here, my name is Wes. I am going to be your fitness phrasal verb instructor

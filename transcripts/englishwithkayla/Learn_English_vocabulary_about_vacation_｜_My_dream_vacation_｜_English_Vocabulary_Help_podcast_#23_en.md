@@ -1,16 +1,3 @@
-# Learn English vocabulary about vacation | My dream vacation | English Vocabulary Help podcast #23
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BpLUbtFkjvg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BpLUbtFkjvg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:07:22 |
-
----
-
 Hi friends, welcome back to the English Vocabulary Help podcast. My name's Kayla. I teach English online at English with Kayla. And I'm an English teacher from the United States, and my passion is teaching you natural English vocabulary that you won't find in a textbook. In today's episode, I asked for some suggestions on Instagram, and of course, you guys delivered some excellent ideas for vocabulary that you want to learn.
 
 Right when I saw somebody suggested

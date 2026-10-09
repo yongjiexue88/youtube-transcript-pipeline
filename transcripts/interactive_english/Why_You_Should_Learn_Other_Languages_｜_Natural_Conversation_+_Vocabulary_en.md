@@ -1,16 +1,3 @@
-# Why You Should Learn Other Languages | Natural Conversation + Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aymxsXz0aRI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aymxsXz0aRI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:28:35 |
-
----
-
 in today's lesson we're gonna help you practice your listening skills as well
 
 as teach you some new words

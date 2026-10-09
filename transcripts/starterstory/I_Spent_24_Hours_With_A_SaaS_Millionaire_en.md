@@ -1,16 +1,3 @@
-# I Spent 24 Hours With A SaaS Millionaire
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `iVy5J7iE-3Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=iVy5J7iE-3Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:10:51 |
-
----
-
 This is Jeremy. He might be one of the most successful solopreneurs of all time. But before we get into that, we got to go back.
 
 It all started with a DM. "Hey Pat, I just sold my SaaS for millions and I wanted to share the secret with you." I gave him a quick call and when he told me about the strategy, I just couldn't believe it. Is this actually real? Did he just get lucky? And will this secret strategy still work in 2026? Only way to find out well, I decided to travel to the hills of Los Angeles, knock on his door and have him show me everything.

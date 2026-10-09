@@ -1,16 +1,3 @@
-# 7 Super-Useful Expressions with the Word BRIDGE
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `U8SO0Os7n5g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=U8SO0Os7n5g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:19:52 |
-
----
-
 today i want to teach you some very useful expressions that all have the word bridge that's
 
 coming up

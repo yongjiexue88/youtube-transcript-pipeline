@@ -1,16 +1,3 @@
-# Use these 11 Slang Phrases for DAILY ENGLISH
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dpjxDGDFvfk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dpjxDGDFvfk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:46:00 |
-
----
-
 if you're learning English you might have times where even if you're Advanced
 
 you'll hear new words and phrases that

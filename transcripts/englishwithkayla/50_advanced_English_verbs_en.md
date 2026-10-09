@@ -1,16 +1,3 @@
-# 50 advanced English verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nVJD51wfe4Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nVJD51wfe4Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:54:30 |
-
----
-
 the crazy thing about the English language is there are an endless amount
 
 of verbs that are really Advanced that

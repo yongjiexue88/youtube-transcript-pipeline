@@ -1,16 +1,3 @@
-# Case Dismissed - Does It Automatically Come Off My Criminal Record? (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PTJQ9ORrFFg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PTJQ9ORrFFg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 21:02:25 |
-
----
-
 hey everybody uh welcome to the Hampton Law Firm I wanted to take a couple of minutes to talk about a subject that people are always confused about and the question is people get excited hey Jeff my case has been dismissed my criminal case has been dismissed doesn't the arrest just automatically come off my record we're going to talk about that here today and don't forget subscribe subscribe to our YouTube channel for more great content just like
 
 this for clarity when it comes to laws in Texas as specifically to criminal laws in Texas Texas as we continue to give you uh content every week to keep you update on the law and changes in the law all right so I'm going to explain in detail in this particular video we're going to talk about in detail someone's case is dismissed I want you to understand that is just

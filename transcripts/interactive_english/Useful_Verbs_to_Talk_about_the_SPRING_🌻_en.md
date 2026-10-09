@@ -1,16 +1,3 @@
-# Useful Verbs to Talk about the SPRING 🌻
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qMkRJt-bVW0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qMkRJt-bVW0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:29:16 |
-
----
-
 so spring is here it's my favorite time
 
 of the year so I wanted to teach you some very common and useful verbs that

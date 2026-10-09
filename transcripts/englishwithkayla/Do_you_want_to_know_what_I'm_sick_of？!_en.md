@@ -1,16 +1,3 @@
-# Do you want to know what I'm sick of?!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hnrJvzHurAI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hnrJvzHurAI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:31:26 |
-
----
-
 do you want to know what I'm sick of shoot I'm sick of all of the
 
 responsibilities in this house falling

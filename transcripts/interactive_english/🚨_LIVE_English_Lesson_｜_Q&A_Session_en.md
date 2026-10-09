@@ -1,16 +1,3 @@
-# 🚨 LIVE English Lesson | Q&A Session
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ispzhKI5_k0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ispzhKI5_k0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:35:30 |
-
----
-
 what's up everyone welcome my name is
 
 Wes and this is interactive English and if this is your first time here I want you to know that interactive English we are all about helping you practice and improve your English skills we're coming out with new lessons each week and we try to make them a little more interactive we want you guys to participate in these lessons whether it

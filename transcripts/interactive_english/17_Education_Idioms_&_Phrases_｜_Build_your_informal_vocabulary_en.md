@@ -1,16 +1,3 @@
-# 17 Education Idioms & Phrases | Build your informal vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4HHiBC0TFgk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4HHiBC0TFgk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:59:56 |
-
----
-
 hey everyone welcome to today's lesson
 
 which is all about idioms and

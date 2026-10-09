@@ -1,16 +1,3 @@
-# STOP being Confused by these English Phrases!!!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nSodEfY7pEo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nSodEfY7pEo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:18:55 |
-
----
-
 did your English teacher forget to teach you these phrases I think so because a
 
 lot of English Learners are so confused

@@ -1,16 +1,3 @@
-# Don’t Let Money Drama Keep You Broke | September 16, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Sx7Xoj6WUuc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Sx7Xoj6WUuc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:07:57 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

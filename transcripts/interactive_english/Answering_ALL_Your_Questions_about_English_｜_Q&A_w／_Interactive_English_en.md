@@ -1,16 +1,3 @@
-# Answering ALL Your Questions about English | Q&A w/ Interactive English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `98nbIeKHYjk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=98nbIeKHYjk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:20:36 |
-
----
-
 hello everyone my name is wes this is interactive english and this channel in case this happens to be your first time joining uh me is just it's all about trying to help you practice and improve your english and today it's going to be a bit more interactive because what i want to do is i want to take some of your questions that you may have if it's related to vocabulary or pronunciation uh
 
 grammar anything and of course

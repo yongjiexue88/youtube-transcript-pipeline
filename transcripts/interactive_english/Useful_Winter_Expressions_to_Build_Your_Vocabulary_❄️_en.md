@@ -1,16 +1,3 @@
-# Useful Winter Expressions to Build Your Vocabulary ❄️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `P82G_6hFVL8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=P82G_6hFVL8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:20:53 |
-
----
-
 today i want to teach you some common and useful winter expressions that's
 
 coming up [Music]

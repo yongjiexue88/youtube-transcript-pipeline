@@ -1,16 +1,3 @@
-# A Life Built on Debt Is a Life Built on Risk | April 29, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oarL5yMmOWA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oarL5yMmOWA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:34:29 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

@@ -1,16 +1,3 @@
-# Learn to upgrade your English to speak naturally
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `epydclHqZM0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=epydclHqZM0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:02:19 |
-
----
-
 what idioms do english speakers use in
 
 their daily conversations in this video

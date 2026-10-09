@@ -1,16 +1,3 @@
-# LAWYER: 5 Tips Whenever Cops Want to See Your Guns
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZNUw2G9WWOk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZNUw2G9WWOk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:35:48 |
-
----
-
 can you refuse a police officer if he demands to see your guns well it depends we're going to look at two different situations one if an police officer an ATF Agent shows up at your front door and he demands to see your guns number two we're going to look at a situation where if you get pulled over for a traffic stop and now a police officer wants to search your car to see your gun maybe
 
 they claim officer safety or something we're going to look at both of these examples and exactly what you should do okay number one let's talk about an ATF agent or an off shows up at your front door knocks on the front door and says hey buddy listen we have record that you purchase two or more weapons two or more firearms and we have record of this right here

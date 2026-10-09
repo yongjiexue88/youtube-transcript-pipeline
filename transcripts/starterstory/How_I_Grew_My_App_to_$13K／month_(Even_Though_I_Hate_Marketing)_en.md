@@ -1,16 +1,3 @@
-# How I Grew My App to $13K/month (Even Though I Hate Marketing)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Adl5_lJfkEE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Adl5_lJfkEE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:14:56 |
-
----
-
 Almost 1 million people have visited my website, thanks to this strategy. This is Banu, a builder from India who built a $13,000 MRR SaaS, but here's the crazy
 
 part. He spends $0 on marketing and

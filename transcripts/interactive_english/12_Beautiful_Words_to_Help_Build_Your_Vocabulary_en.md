@@ -1,16 +1,3 @@
-# 12 Beautiful Words to Help Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nt80f7bE3RI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nt80f7bE3RI) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:48:29 |
-
----
-
 Have you seen anything beautiful today?
 
 Well now you have.

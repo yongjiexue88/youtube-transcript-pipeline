@@ -1,16 +1,3 @@
-# Rude English Phrases and How to Avoid Them
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GX6fWUiI8BA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GX6fWUiI8BA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:32:40 |
-
----
-
 Have you ever been in an English conversation and you're not sure, but you think that the person you're speaking to is being rude? Or you say
 
 something that's completely correct, it's grammatically correct, but the person seems suddenly offended or they come off really cold? In this lesson, I'm going to teach you 25 phrases that are rude even if they're grammatically correct, so that you can know if there are some red flags in a conversation, if somebody is annoyed or offended, or you

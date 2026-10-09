@@ -1,16 +1,3 @@
-# I can teach you English... #englishphrase #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yUGQpEiM-4Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yUGQpEiM-4Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:23:36 |
-
----
-
 yes i can help you learn english for
 
 free but there is a catch when you do something nice

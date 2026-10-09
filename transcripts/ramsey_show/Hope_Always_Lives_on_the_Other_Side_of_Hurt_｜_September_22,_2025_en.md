@@ -1,16 +1,3 @@
-# Hope Always Lives on the Other Side of Hurt | September 22, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Px8Qu_2PDdA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Px8Qu_2PDdA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:07:08 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

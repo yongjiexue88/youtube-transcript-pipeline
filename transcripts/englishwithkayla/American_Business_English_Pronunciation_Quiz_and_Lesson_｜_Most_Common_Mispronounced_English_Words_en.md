@@ -1,16 +1,3 @@
-# American Business English Pronunciation Quiz and Lesson | Most Common Mispronounced English Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eTyFPmnA-OA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eTyFPmnA-OA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:13:47 |
-
----
-
 [Music]
 
 even if you have a really high level of english

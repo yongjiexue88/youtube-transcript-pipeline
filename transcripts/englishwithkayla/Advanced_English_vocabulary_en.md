@@ -1,16 +1,3 @@
-# Advanced English vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sap9F9tQL84` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sap9F9tQL84) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:05:37 |
-
----
-
 americans have a lot of unique ways in
 
 english to say that there's a problem

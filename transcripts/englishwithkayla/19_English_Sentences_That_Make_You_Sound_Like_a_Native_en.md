@@ -1,16 +1,3 @@
-# 19 English Sentences That Make You Sound Like a Native
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qqjEUhVQxz4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qqjEUhVQxz4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:32:31 |
-
----
-
 Maybe you've been speaking English for a while, but when you actually speak in a conversation, you feel a little bit awkward and unnatural. Today, I'm going to fix that instantly because I'm going to teach you some sentences that native speakers like myself actually use in our conversations. And these phrases will help you understand movies, television shows, podcasts, and just conversations with native speakers. The best part about these sentences is they are the phrases that native speakers actually use to communicate and they are reflective of the way we think too in English.
 
 So they will instantly upgrade your English speaking if you use them in your conversations. The way this lesson will work is I will teach you the definitions. I'll teach you what exactly these sentences mean, but I'll also teach you how to use them. And I'll teach you the small details that English learners usually miss when they're learning phrases like this.

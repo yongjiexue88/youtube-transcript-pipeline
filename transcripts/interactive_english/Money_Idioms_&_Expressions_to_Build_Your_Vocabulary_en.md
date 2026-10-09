@@ -1,16 +1,3 @@
-# Money Idioms & Expressions to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-mpsuWw27DY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-mpsuWw27DY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:30:06 |
-
----
-
 today's lesson is all about money hey
 
 everyone welcome to interactive English my name is Wes and we are all about

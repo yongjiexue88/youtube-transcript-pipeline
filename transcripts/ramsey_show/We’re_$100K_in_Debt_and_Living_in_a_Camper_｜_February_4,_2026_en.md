@@ -1,16 +1,3 @@
-# We’re $100K in Debt and Living in a Camper | February 4, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZTooddQV_14` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZTooddQV_14) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:46:34 |
-
----
-
 [music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

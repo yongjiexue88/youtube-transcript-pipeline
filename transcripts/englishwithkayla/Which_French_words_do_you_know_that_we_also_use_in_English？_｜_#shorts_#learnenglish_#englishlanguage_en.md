@@ -1,16 +1,3 @@
-# Which French words do you know that we also use in English? | #shorts #learnenglish #englishlanguage
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3sSBcj05A0I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3sSBcj05A0I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:35:08 |
-
----
-
 did you know that 30 of english words
 
 come from the french language

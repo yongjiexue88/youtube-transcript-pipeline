@@ -1,16 +1,3 @@
-# Have you heard this useful phrase?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Ke-ZWq2Qtyc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Ke-ZWq2Qtyc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:14:15 |
-
----
-
 a phrase that's so common especially in
 
 the English-speaking workplace is to get

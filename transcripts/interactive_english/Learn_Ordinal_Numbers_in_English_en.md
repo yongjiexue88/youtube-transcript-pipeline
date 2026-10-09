@@ -1,16 +1,3 @@
-# Learn Ordinal Numbers in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jiNJG87duMc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jiNJG87duMc) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:50:12 |
-
----
-
 Today, I'm going to teach you something that is so cool.
 
 Something that you probably always wanted to learn.

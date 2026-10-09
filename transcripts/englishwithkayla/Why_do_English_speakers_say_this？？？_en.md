@@ -1,16 +1,3 @@
-# Why do English speakers say this???
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-b4YCHarB_g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-b4YCHarB_g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:57:09 |
-
----
-
 the most natural idiom to use to say
 
 that you need to ask someone that's very knowledgeable some questions is to say that you need to pick their

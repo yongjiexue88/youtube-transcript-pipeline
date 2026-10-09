@@ -1,16 +1,3 @@
-# Speak Advanced English like an American (213+ phrases)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2JEJXaIlUhA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2JEJXaIlUhA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:45:34 |
-
----
-
 another day another dollar this is such
 
 an American phrase because it really

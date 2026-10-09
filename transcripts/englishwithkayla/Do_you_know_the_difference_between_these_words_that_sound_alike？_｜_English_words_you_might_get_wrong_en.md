@@ -1,16 +1,3 @@
-# Do you know the difference between these words that sound alike? | English words you might get wrong
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QofIhBsdC7k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QofIhBsdC7k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:12:17 |
-
----
-
 [Music]
 
 hi guys welcome back to english with kayla i'm an american english teacher and i teach you natural english that you cannot find in a textbook today's lesson is all about the advanced

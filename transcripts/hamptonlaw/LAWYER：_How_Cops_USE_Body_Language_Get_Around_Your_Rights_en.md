@@ -1,16 +1,3 @@
-# LAWYER: How Cops USE Body Language Get Around Your Rights
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AgwJPZaZlWg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AgwJPZaZlWg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:35:31 |
-
----
-
 can body language really give police consent to search you normally the police have two methods to search you or your property obtain a search warrant or your permission even if you don't verbally consent to a search the police are allowed to interpret your body language to believe you do consent to a search I'll explain how that's legal here in a minute but I have said this over
 
 and over and over again that it is critical that you are clear with the police officer that you do not consent to the search you must expressly state to the police officer I do not consent

@@ -1,16 +1,3 @@
-# on THE way or on MY way???
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sBlQ9_vM1Lc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sBlQ9_vM1Lc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:48:01 |
-
----
-
 do you know the difference between on the way and on my way both of these
 
 phrases can mean the exact same thing if

@@ -1,16 +1,3 @@
-# VERB TENSE QUIZ | Grammar Lesson for Intermediate to Advanced Learners
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `p078c3xeHFk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=p078c3xeHFk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:33:04 |
-
----
-
 hey everyone my name is Wes this is
 
 interactive English which if this is your first time here we are all about helping you practice and improve your English skills and the way that we are going to do that today is this is this is all about practice and I am going to

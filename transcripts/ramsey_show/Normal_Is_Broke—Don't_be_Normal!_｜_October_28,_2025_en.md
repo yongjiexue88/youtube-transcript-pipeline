@@ -1,16 +1,3 @@
-# Normal Is Broke—Don't be Normal! | October 28, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Tcbinv_66Js` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Tcbinv_66Js) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:01:37 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

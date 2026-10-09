@@ -1,16 +1,3 @@
-# 5 Tips for How to Talk to Cops Like a Lawyer!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ET37ax_gWl4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ET37ax_gWl4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:29:43 |
-
----
-
 have you ever found yourself face to face with a police officer your heart is racing you're unsure what to say or do
 
 while most police interactions are just routine they can quickly spiral into something much more serious suddenly you're not just a person talking to a police officer you're now a suspect now

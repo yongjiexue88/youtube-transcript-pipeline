@@ -1,16 +1,3 @@
-# I make $10K/month from 28 apps
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vw2Yc4Y1PsU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vw2Yc4Y1PsU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:15:54 |
-
----
-
 In eight months, I build and ship over 28 apps. >> This is Max, a full-time developer who spent years building apps with no success. >> I had my like mobile pet project. I really wanted to grow and I like spent so much time on it, like try different techniques. Nothing worked out >> until one day he decided to try something different. [music] Instead of trying to build the perfect app, he'd ship dozens of apps really fast. I have a record. One app I've built in 2 hours.
 
 >> In just 8 months, he shipped 28 apps and

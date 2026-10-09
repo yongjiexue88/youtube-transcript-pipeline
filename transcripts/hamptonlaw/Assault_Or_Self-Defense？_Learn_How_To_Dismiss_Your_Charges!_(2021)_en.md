@@ -1,16 +1,3 @@
-# Assault Or Self-Defense? Learn How To Dismiss Your Charges! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `S1aeF535LvY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=S1aeF535LvY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:41:06 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm was it assault or was
 
 it self-defense that's what we're going to talk about here

@@ -1,16 +1,3 @@
-# Start READING to Start Improve Your English | Reading Comprehension Quiz (La Tomatina)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MxyhF3YA1tk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MxyhF3YA1tk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:54:10 |
-
----
-
 today we are going to practice and
 
 improve your reading skills that's

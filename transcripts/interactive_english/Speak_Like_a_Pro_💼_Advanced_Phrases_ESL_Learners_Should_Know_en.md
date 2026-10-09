@@ -1,16 +1,3 @@
-# Speak Like a Pro 💼 Advanced Phrases ESL Learners Should Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5Z7z5j7O1QE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5Z7z5j7O1QE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:53:29 |
-
----
-
 advanced phrases that native speakers use when both speaking and writing. Hang by a thread. This phrase pretty much means what it says. You are in a dangerous situation or state in which you are unlikely to survive or succeed.
 
 You can use this phrase to emphasize the

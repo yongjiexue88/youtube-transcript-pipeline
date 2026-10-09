@@ -1,16 +1,3 @@
-# How to Listen for Inferences | Improve Your Listening Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CJk_v6dhjX0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CJk_v6dhjX0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:43:14 |
-
----
-
 okay hello and welcome to our super
 
 awesome super super cool live lesson I

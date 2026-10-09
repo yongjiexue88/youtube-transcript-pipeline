@@ -1,16 +1,3 @@
-# 12 Idioms You Must Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Ap2gLuQ3-II` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Ap2gLuQ3-II) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:36:56 |
-
----
-
 Sometimes you understand the English words, but you don't understand the English idioms and phrases that come natural to speakers like myself. In today's lesson, we're going to go over 12 idioms and phrases that are really used in everyday conversations. And by the end of this video, you'll be able to understand them and use them confidently in your English. If you want the learning resources that go along with this lesson, this is the last week of the founding member discount to my
 
 monthly membership. And you can visit englishwithwithkayla.com to join. You get learning resources, add free podcasts and videos every single week along with community support and some feedback from myself on different challenges that are going on. Okay,

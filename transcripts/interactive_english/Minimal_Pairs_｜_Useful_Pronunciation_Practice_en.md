@@ -1,16 +1,3 @@
-# Minimal Pairs | Useful Pronunciation Practice
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SLBxBwE_y6U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SLBxBwE_y6U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:39:19 |
-
----
-
 hello hello hello welcome to today's
 
 live lesson my name's wes

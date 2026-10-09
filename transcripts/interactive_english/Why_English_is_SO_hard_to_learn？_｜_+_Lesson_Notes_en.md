@@ -1,16 +1,3 @@
-# Why English is SO hard to learn? | + Lesson  Notes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `J2YDI1lpYOw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=J2YDI1lpYOw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:11:25 |
-
----
-
 Hello and welcome to today's lesson.
 
 Today [sighs] we're going to talk about why English is

@@ -1,16 +1,3 @@
-# What's the most difficult language skill to learn?  | Natural Conversation + Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZBqGjxfiwvU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZBqGjxfiwvU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:30:05 |
-
----
-
 If you'd like to improve your listening skills, then today's lesson will help because we're going to have you listen to a natural English conversation.
 
 So, some of you have asked us that to practice your listening skills, you would like to hear a natural conversation or just hear us speaking about a topic in general. So, that's what we've done today. We've chosen a topic and you guys are just going to listen to us talking about it. And you're not only going to listen to the conversation, but you're also going to see if you can try to identify some vocabulary words that I'm going to go over with you right now.

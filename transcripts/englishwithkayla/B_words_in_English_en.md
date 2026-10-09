@@ -1,16 +1,3 @@
-# B words in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rP9TQ7HRTtA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rP9TQ7HRTtA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:29:29 |
-
----
-
 hey Kayla what do you call a drink
 
 that's not water a beverage it's really polite to say

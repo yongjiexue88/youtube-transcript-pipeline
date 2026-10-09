@@ -1,16 +1,3 @@
-# Texas Diversion Programs - How To Get Your Criminal Case Dismissed (2024)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2xfDCTI4Gww` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2xfDCTI4Gww) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 21:02:43 |
-
----
-
 good afternoon everyone I wanted to put together a quick video to talk about a subject that I know is very important to you if this is your first uh criminal offense maybe this is your first arrest and you're facing a charge and I want to speak specifically about tant County if this if you're facing your first criminal charge out of tan County the subject is how to get a criminal case
 
 dismissed through a diversion program in Texas now I want to encourage you if you like what you're seeing here and you like the free content we're providing I encourage you to subscribe to our YouTube channel below here and uh we'll get you more free content there's much of information that you can learn about criminal laws in Texas but in this video we're going to explain the diversion programs in Taran County Texas and specifically how they can be used to get your criminal case dismissed um now

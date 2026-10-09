@@ -1,16 +1,3 @@
-# do you know all of the meanings?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QBNXhNBERQg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QBNXhNBERQg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:36:04 |
-
----
-
 I'm always surprised that English
 
 Learners don't know what this phrasal

@@ -1,16 +1,3 @@
-# YouTube Vocabulary that You Need to Know ▶️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SBsumuJ9dCQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SBsumuJ9dCQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:26:30 |
-
----
-
 if you enjoy watching youtube just like i do then these are some words that you
 
 need to know [Music]

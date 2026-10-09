@@ -1,16 +1,3 @@
-# Upper-Intermediate (B2) Phrases to Supercharge Your Vocabulary 💪
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TyceVYt_474` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TyceVYt_474) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:55:59 |
-
----
-
 let's learn some incredibly useful B2
 
 phrases which it's more Upper Intermediate and I say these phrases are

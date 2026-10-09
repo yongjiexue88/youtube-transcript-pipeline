@@ -1,16 +1,3 @@
-# You may be surprised by these American phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rNK6KDZs-pI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rNK6KDZs-pI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:46:15 |
-
----
-
 American English speakers won't just say
 
 that someone was being mean or

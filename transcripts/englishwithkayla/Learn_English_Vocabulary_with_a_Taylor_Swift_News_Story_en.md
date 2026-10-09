@@ -1,16 +1,3 @@
-# Learn English Vocabulary with a Taylor Swift News Story
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4vN6mX5f6_4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4vN6mX5f6_4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:43:14 |
-
----
-
 do you ever feel like you struggle to add new vocabulary to your English in
 
 this lesson I'm going to show you how you can use a simple news article to add

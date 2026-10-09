@@ -1,16 +1,3 @@
-# Expressions Native Speakers Use ALL THE TIME | Binomial Pairs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bSH7Uk1a2NU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bSH7Uk1a2NU) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:06:25 |
-
----
-
 - If you wanna learn expressions that you can use in everyday conversation, then you need to learn binomial pairs.
 
 That's coming up.

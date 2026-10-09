@@ -1,16 +1,3 @@
-# Which phrase describes your parents?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cxCxsD4KB00` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cxCxsD4KB00) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:39:36 |
-
----
-
 go hard on someone or to go soft on
 
 someone so I think of these phrases as

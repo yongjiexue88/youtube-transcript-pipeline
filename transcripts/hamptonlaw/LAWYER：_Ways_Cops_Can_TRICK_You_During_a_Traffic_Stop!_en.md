@@ -1,16 +1,3 @@
-# LAWYER: Ways Cops Can TRICK You During a Traffic Stop!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FzicxQXtrCo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FzicxQXtrCo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:34:45 |
-
----
-
 I'm going to put you in a scenario imagine you're driving down the road minding your own business then suddenly you see flashing lights behind you Sirens start going off and you realize
 
 you have a police officer behind you pulling you over you weren't speeding you didn't commit a traffic violation and you're definitely not drunk when the cop comes up to your window and starts asking you questions what do he allowed to do is he allowed to search your car I've had a number of people call my office wanting legal help telling me that they believed if a police officer pulled them over

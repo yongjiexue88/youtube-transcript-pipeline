@@ -1,16 +1,3 @@
-# Useful SPEAKING Phrases to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NkxSgCbcnaY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NkxSgCbcnaY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:06:28 |
-
----
-
 wow speak of the devil i i was just
 
 talking about you out loud to myself

@@ -1,16 +1,3 @@
-# LAWYER: When You Should Record Cops & Is It Worth It?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kKLrVZ8VVoY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kKLrVZ8VVoY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:35:59 |
-
----
-
 recording police interactions is mostly legal but that doesn't mean you won't run into any trouble I believe that having your own video is key to defending yourself in court and it helps to fight police misconduct so knowing
 
 how to do it the right way is key to your success even though filming encounters is protected under the First Amendment a lot of police departments don't like being on camera so how can you safely record the police and what should you do if the cops push back after defending thousands of Cl cents here's what I have learned check out this video of a man from Texas being arrested was

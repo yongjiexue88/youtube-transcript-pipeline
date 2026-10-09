@@ -1,16 +1,3 @@
-# Essential English phrase 🇺🇸 🗣️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3ulQyktYk5k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3ulQyktYk5k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:23:20 |
-
----
-
 if you're learning English let me teach you this essential phrase if you need to
 
 solve a problem it's very common to say

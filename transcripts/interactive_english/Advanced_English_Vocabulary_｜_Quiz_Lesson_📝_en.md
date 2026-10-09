@@ -1,16 +1,3 @@
-# Advanced English Vocabulary | Quiz Lesson 📝
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `iCCxi4uLv2s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=iCCxi4uLv2s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:26:44 |
-
----
-
 hello and welcome to today's lesson
 
 my name is wes this is interactive

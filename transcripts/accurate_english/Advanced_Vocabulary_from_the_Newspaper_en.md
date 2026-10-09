@@ -1,16 +1,3 @@
-# Advanced Vocabulary from the Newspaper
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LIyF5YekTjE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LIyF5YekTjE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:40:35 |
-
----
-
 hi i'm lisa i'd like to help you understand the vocabulary in newspaper articles in this video i will teach you some advanced professional vocabulary from an article that i was reading last week in the los angeles times newspaper while i was reading it i said to myself there are so many important words and some common expressions in this article that my advanced students probably don't know i wish
 
 i could teach them these words because these words are important to know i will show you some sentences from the article and i will teach you the meaning of those words i will also give you sample sentences using the words in different situations and we will also practice the pronunciation of some difficult words [Music]

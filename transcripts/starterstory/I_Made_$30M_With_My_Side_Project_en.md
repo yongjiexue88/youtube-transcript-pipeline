@@ -1,16 +1,3 @@
-# I Made $30M With My Side Project
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uBGbvKScavk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uBGbvKScavk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:31:03 |
-
----
-
 [Music] ready when I graduated after that I
 
 really had no clue what I wanted to do and so I tried a ton of different

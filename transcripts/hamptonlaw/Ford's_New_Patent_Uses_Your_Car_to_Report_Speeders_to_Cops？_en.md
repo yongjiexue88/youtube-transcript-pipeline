@@ -1,16 +1,3 @@
-# Ford's New Patent Uses Your Car to Report Speeders to Cops?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HvOj4nGCJBw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HvOj4nGCJBw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:28:50 |
-
----
-
 is Ford Motor Company developing technology that not only spies on You by telling cops if you are speeding but can it also this technology can it also determine if people around you are speeding apparently so now I usually do
 
 more scripted completely edited out videos where we go over legal Concepts but this was an article that was sent to me that I thought was pretty shocking and it actually goes along with exactly some of the videos I've done recently related to FedEx and flock safety also

@@ -1,16 +1,3 @@
-# 国行 iPhone 无线充电功率腰斩，到底是谁的锅？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IZ-r4K8Fwgc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IZ-r4K8Fwgc) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:35:47 |
-
----
-
 这是苹果今年发布的 iPhone 16 系列和第 10 代 Apple Watch 手表
 
 对于国行用户来说它们最大的“提升”是

@@ -1,16 +1,3 @@
-# Do you struggle with this in English?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `lbQgENv-lR4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=lbQgENv-lR4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:54:18 |
-
----
-
 i've noticed that one of the hardest things for my english students to learn
 
 is really advanced phrases to express

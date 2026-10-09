@@ -1,16 +1,3 @@
-# Can An Open Container Lead To A DWI Arrest in Texas: Learn the Law And Your Defenses! (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GRATxVE3iXQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GRATxVE3iXQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 17:19:50 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about open container laws in Texas and
 
 how can they affect a possible DWI case

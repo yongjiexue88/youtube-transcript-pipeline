@@ -1,16 +1,3 @@
-# How I Built a $12K/Month Micro-SaaS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `W48emwbUlUE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=W48emwbUlUE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:13:17 |
-
----
-
 My strategy is simple. I turn customer pain into contents. >> This is Vicos, a guy from India who built a simple piece of software that makes $12,000 per month. But what's way more interesting than that is how he finds customers. He's not going viral or chasing Tik Tok trends. His approach is much smarter than that. >> I create content for one specific problem for one specific customer.
 
 >> So, I brought Vikos onto the channel to break down his entire playbook. And in this episode, we'll dive into how to find business ideas hiding in plain sight. Why chasing views and impressions is a complete waste of time and his three-step playbook on what he would do if he had to start over today.

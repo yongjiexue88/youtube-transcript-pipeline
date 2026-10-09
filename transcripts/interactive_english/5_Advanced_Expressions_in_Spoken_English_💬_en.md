@@ -1,16 +1,3 @@
-# 5 Advanced Expressions in Spoken English 💬
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aXuM1bwpWR4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aXuM1bwpWR4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:21:55 |
-
----
-
 today i want to teach you some advanced expressions to help you improve your overall fluency that's coming up [Music] hey everyone my name is wes this is interactive english and the channel is all about trying to help you practice and improve your english skills and today i want to teach you some advanced expressions that i think are very useful and they're pretty common in in places like the united states now i want to go ahead and say that these expressions are
 
 are often used in spoken english so

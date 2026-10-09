@@ -1,16 +1,3 @@
-# Don't be a "deer in the headlights" while speaking English #shorts #idioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6Bam0Gc-6vs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6Bam0Gc-6vs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:21:27 |
-
----
-
 english we say someone is just a deer in
 
 the headlights when they have no idea what's going on

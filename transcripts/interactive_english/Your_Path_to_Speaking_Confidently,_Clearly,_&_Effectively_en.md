@@ -1,16 +1,3 @@
-# Your Path to Speaking Confidently, Clearly, & Effectively
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-hKyxNopd2Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-hKyxNopd2Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:21:41 |
-
----
-
 today i want to tell you about how you
 
 can speak confidently speak clearly and speak effectively

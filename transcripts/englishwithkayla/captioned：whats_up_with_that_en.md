@@ -1,16 +1,3 @@
-# captioned:whats up with that
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0afU6tAFtuk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0afU6tAFtuk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:59:38 |
-
----
-
 did you hear rachel quit her job last week yeah what's up with that english
 
 learners sometimes get confused by this

@@ -1,16 +1,3 @@
-# English phrasal verb: To hold out #shorts #english
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DVcLovjldbg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DVcLovjldbg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:14:10 |
-
----
-
 let's talk about this phrasal verb hold
 
 out if you hold out for something you

@@ -1,16 +1,3 @@
-# American Accent Workout 💪 Linking, Reductions & Real Dialogues 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4l3m0_xDOuo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4l3m0_xDOuo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:38:33 |
-
----
-
 This lesson is all about the American
 
 accent. And I know it can sound very fast if you're on the street or watching a movie or TV show, which is why I titled this American fast speech. And if you are someone who enjoys learning more

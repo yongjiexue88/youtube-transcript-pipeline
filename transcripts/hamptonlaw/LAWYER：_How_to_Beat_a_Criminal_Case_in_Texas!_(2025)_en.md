@@ -1,16 +1,3 @@
-# LAWYER: How to Beat a Criminal Case in Texas! (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7TOhTkIJIK0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7TOhTkIJIK0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 21:03:39 |
-
----
-
 hey everybody I wanted to take a minute to put together a quick video to talk to you about the top five ways to beat a criminal case in Texas all right so
 
 listen uh don't forget to subscribe we put together this content frequently for uh for everyone for free subscribe to our YouTube channel right down here below subscribe to our YouTube channel U if you hit that button you'll get a lot of free content free value to explain more criminal uh defense issues in the state of Texas just laws under the state of Texas all right now in this video I'm going to explain to you the top five ways to attack to uh beat a criminal

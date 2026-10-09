@@ -1,16 +1,3 @@
-# Phrasal Verb Quiz | Advanced Grammar & Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JAOVGTNkUkc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JAOVGTNkUkc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:35:43 |
-
----
-
 hello and welcome to today's lesson my
 
 name is wes and this is interactive english and if this is your first time here with us we are all about helping you guys practice and improve your english skills and the way that we will do that today is is very fun it's very useful because i have an interactive quiz that i'm going to give you and i want all of you to participate in this quiz and take this quiz with me and this quiz is all about phrasal verbs i am

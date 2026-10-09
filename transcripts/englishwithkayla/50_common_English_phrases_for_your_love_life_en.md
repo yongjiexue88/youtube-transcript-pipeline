@@ -1,16 +1,3 @@
-# 50 common English phrases for your love life
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `u1j3uWGO58g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=u1j3uWGO58g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:44:01 |
-
----
-
 today's English video will teach you 5050 phrases for your love life let's
 
 get started I'll teach you all the phrases you need to know for talking

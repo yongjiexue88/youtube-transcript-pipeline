@@ -1,16 +1,3 @@
-# Level up your English with these POWERFUL Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CPYV7rQjL-8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CPYV7rQjL-8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:45:26 |
-
----
-
 I'll teach you 35 English words that are
 
 powerful enough to advance anyone's

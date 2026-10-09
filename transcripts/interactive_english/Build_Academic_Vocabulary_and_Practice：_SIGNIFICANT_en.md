@@ -1,16 +1,3 @@
-# Build Academic Vocabulary and Practice: SIGNIFICANT
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2TGlQyxDfMg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2TGlQyxDfMg) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:55:26 |
-
----
-
 Hello and welcome to our global classroom. Today we're going to teach you a very very very significant word.
 
 The word significant means something that's important. For example, a significant event.

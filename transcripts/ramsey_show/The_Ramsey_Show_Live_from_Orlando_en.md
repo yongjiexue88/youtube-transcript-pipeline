@@ -1,16 +1,3 @@
-# The Ramsey Show Live from Orlando
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sqtKXCRZfHE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sqtKXCRZfHE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:01:22 |
-
----
-
 [music]
 
 [music]

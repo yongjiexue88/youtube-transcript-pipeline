@@ -1,16 +1,3 @@
-# Getting Out of Debt Takes More Effort Than It Took to Get You In | April 21, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cNbiJAmj9mU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cNbiJAmj9mU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:35:42 |
-
----
-
 [music] >> Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

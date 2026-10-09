@@ -1,16 +1,3 @@
-# best podcasts for learning english
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YQvaqXj-dUY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YQvaqXj-dUY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:01:08 |
-
----
-
 one of the best tools that you can use to study english is podcasts of course i
 
 have a podcast called the english vocabulary help podcast but if you're

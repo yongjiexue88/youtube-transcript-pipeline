@@ -1,16 +1,3 @@
-# Can you pronounce these American beers?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AEnAVgUmp90` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AEnAVgUmp90) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:44:09 |
-
----
-
 here are six brands of American Beer
 
 that you don't know how to pronounce Bud

@@ -1,16 +1,3 @@
-# November Short English Lesson Compilation | English with Kayla | Short American English Lessons
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EpGzQ3uCWvM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EpGzQ3uCWvM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:11:59 |
-
----
-
 american english spelling verse british english spelling favorite behavior
 
 color practice

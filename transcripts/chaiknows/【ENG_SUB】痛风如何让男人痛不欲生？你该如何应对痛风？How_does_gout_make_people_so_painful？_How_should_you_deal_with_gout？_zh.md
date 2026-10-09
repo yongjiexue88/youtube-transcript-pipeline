@@ -1,16 +1,3 @@
-# 【ENG SUB】痛风如何让男人痛不欲生？你该如何应对痛风？How does gout make people so painful? How should you deal with gout?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `H4CmdZoWzxs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=H4CmdZoWzxs) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 14:04:45 |
-
----
-
 得了痛风病酒不敢喝，痛风痛痛痛
 
 痛风这个问题，说痛风第一就是很痛

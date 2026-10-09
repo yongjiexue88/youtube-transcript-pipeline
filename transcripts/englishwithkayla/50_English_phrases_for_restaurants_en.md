@@ -1,16 +1,3 @@
-# 50 English phrases for restaurants
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IcRaoKOTmsk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IcRaoKOTmsk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:53:51 |
-
----
-
 today I will teach you 50 Advanced
 
 English phrases that you must know when

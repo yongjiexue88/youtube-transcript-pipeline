@@ -1,16 +1,3 @@
-# How to make your textbook English sound more natural
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kYUl6bLvoF4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kYUl6bLvoF4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:59:38 |
-
----
-
 have you ever wondered why your english
 
 sounds so strange to native english speakers well in today's english lesson

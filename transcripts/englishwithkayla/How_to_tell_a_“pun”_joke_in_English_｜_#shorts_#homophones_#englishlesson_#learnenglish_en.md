@@ -1,16 +1,3 @@
-# How to tell a “pun” joke in English | #shorts #homophones #englishlesson #learnenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ovV66Y3rqOA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ovV66Y3rqOA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:35:42 |
-
----
-
 i'm going to teach you about a special kind of joke we use a lot in english
 
 it's called a pun a pun is a joke based

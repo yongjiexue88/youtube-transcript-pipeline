@@ -1,16 +1,3 @@
-# 25 Advanced English Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2DWBTDkywII` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2DWBTDkywII) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:44:09 |
-
----
-
 today we're learning phrases that are Advanced and I promise you your English
 
 teacher did not teach you these in the

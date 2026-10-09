@@ -1,16 +1,3 @@
-# Criminal Trial Or Plea Deal? What You Must Know to Choose Wisely (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Eu2O0qqGipc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Eu2O0qqGipc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:54:24 |
-
----
-
 plea or trial how do you know what to do
 
 what is the right

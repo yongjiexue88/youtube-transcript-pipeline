@@ -1,16 +1,3 @@
-# English Fluency Practice with a native speaker - DRAKE is back with a life update!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sVxUv_lMrSw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sVxUv_lMrSw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:35:38 |
-
----
-
 in this video you will learn a lot of vocabulary and expressions by listening to a native speaker I'm excited that your favorite native speaker Drake is
 
 back we will continue the series of my conversations with real people in Los Angeles you will listen to Drake describing his new life in Las Vegas I'm

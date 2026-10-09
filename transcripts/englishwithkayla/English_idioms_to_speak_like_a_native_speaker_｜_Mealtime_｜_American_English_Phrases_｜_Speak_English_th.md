@@ -1,16 +1,3 @@
-# English idioms to speak like a native speaker | Mealtime | American English Phrases | Speak English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gdjiQmJH39o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gdjiQmJH39o) |
-| **Language** | Thai (auto-generated) (th) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:13:39 |
-
----
-
 นะแต่ว่าเธอที่ชื่อเน็ต DM  to  You นะ
 
 you  Mister  know  are  you  willing อะเมียว่าสามเณรนี่ไลท์ซิตี้ does  a  d

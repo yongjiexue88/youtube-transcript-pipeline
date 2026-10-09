@@ -1,16 +1,3 @@
-# 10 Important English Phrases for your Conversations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VihL_2J2C1Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VihL_2J2C1Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:48:12 |
-
----
-
 if you're wanting to level up your English speaking one of the most important things that you need to do is
 
 learn more phrases that English speakers

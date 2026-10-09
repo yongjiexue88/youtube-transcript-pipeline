@@ -1,16 +1,3 @@
-# How old were you when you first began learning English? | #shorts #bilingual #polyglot #english
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yFEeVuG6DgI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yFEeVuG6DgI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:35:26 |
-
----
-
 how old were you when you started learning english or another second language did you know that research shows us that
 
 learners of two languages score better

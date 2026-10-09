@@ -1,16 +1,3 @@
-# 真心话：你真的需要智驾吗？5年后，你的智驾还能用吗?【柴知道：车圈化简】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8p2RLNvfBBg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8p2RLNvfBBg) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:37:03 |
-
----
-
 2024 年一大堆车企老板都开了直播
 
 吹

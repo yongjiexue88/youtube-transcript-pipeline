@@ -1,16 +1,3 @@
-# 17 Writing Tips That Will Help You Write Like a Pro!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TZRTVzJC7Zw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TZRTVzJC7Zw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:45:00 |
-
----
-
 writing is an incredibly useful way to
 
 communicate and that's why we should continue to improve our writing skills

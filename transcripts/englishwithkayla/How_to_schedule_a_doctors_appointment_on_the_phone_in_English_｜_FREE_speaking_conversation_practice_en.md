@@ -1,16 +1,3 @@
-# How to schedule a doctors appointment on the phone in English | FREE speaking conversation practice
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `i541-I_ejQo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=i541-I_ejQo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:06:14 |
-
----
-
 hi friends welcome back to english with kayla my name's kayla i'm an american english teacher and today we are going to be reviewing a conversation that gives all english learners anxiety
 
 and this is calling on the phone to schedule a doctor's appointment now this conversation also gives me anxiety do you ever just feel like you're going to call someone on the phone to schedule an appointment it's a very formal conversation and they're going to ask you questions and you won't know the answers and you'll feel stupid i have this same problem so don't worry we're going to review all

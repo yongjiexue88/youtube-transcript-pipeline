@@ -1,16 +1,3 @@
-# I Locked Myself In A Room, Made 17 Apps, & Sold 2 for $265,000
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zPijWd9uk-I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zPijWd9uk-I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:25:35 |
-
----
-
 I built and sold two apps for $265,000 after teaching myself to code in just two month this guy locked himself in a hotel room taught himself the code and started building and just two months after I launched my first time he started small but over the course of that year he built over 17 apps most of them failed except for a couple which he then sold for a combined quarter of a million so what did you do
 
 right I grew my apps from 0 to 7,000 of

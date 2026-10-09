@@ -1,16 +1,3 @@
-# LAWYER: How to Stop Cops From Using FAKE Emergencies to Get In Your Home
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `lz5_9mglPnE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=lz5_9mglPnE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:23:09 |
-
----
-
 You're at home, music playing, totally relaxed, when suddenly cops are knocking at your front door. You turn down the volume and you don't answer. But suddenly, cops kick down your front door, claiming it was an emergency. Can they really do this without a warrant?
 
 I'm Jeff Hampton, the people's lawyer, and in today's video, I'm covering the legal loopholes cops use to invade your home and what you can do to stop them.

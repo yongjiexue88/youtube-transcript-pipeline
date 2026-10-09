@@ -1,16 +1,3 @@
-# If you laugh, you're fluent.  Understanding jokes in English.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SWZcUtnfN-8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SWZcUtnfN-8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:21:09 |
-
----
-
 If you understand native speakers when they're telling jokes, that's a sign that you have reached one of the final levels of fluency. In this video, you will improve your English fluency by learning some words and expressions in English jokes. I will tell you some jokes and you can test your fluency by whether or not you understand them. If you understand these, your English is probably quite fluent.
 
 Have you ever been in a conversation where everyone started laughing, but you had no idea what was so funny?

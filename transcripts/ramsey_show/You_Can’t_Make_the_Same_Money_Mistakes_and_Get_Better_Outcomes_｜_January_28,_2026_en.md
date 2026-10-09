@@ -1,16 +1,3 @@
-# You Can’t Make the Same Money Mistakes and Get Better Outcomes | January 28, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Hhe_dMGxddc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Hhe_dMGxddc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:47:31 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

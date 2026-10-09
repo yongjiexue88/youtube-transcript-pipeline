@@ -1,16 +1,3 @@
-# LAWYER: Say THESE WORDS If Cops Shove Their Foot in Your Door
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1j7s27BHfh4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1j7s27BHfh4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:24:04 |
-
----
-
 imagine you hear a knock at your door it's calm and it's casual so you assume it's a friend or maybe a family member coming by to check on you you walk over you open the door and suddenly before you even realize what's going on a police officer has now shoved their foot into the doorway of your door now you can't close the door what happens next could determine whether
 
 you stay in control or get pulled into a legal nightmare I'm Jeff Hampton former prosecutor turned people's lawyer and I have seen police officers use exactly this tactic to get into people's home without a warrant in this video I'll break down exactly what to do if this happens to you how you can protect your rights and stop cops from shoving their foot into your doorway you're a law-abiding citizen you've been told

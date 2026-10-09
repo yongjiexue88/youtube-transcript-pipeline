@@ -1,16 +1,3 @@
-# Practice this phone call in English #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2x6LOUrOEHk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2x6LOUrOEHk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:06:23 |
-
----
-
 hi my name's kayla i'm an english teacher and today let's practice an
 
 english conversation that gives many

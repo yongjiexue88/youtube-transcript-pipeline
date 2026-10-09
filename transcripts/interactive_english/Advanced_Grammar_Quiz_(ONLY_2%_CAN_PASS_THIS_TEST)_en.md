@@ -1,16 +1,3 @@
-# Advanced Grammar Quiz (ONLY 2% CAN PASS THIS TEST)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `lbHFL1PlImo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=lbHFL1PlImo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:13:03 |
-
----
-
 let's see how well you know your grammar so i'm gonna give you a question i'll give you a moment to think of the answer and then i will tell you the answer and explain why it is correct so let's begin
 
 with our first question right here if somebody were to say whatever you do don't leave me alone talking to wes he's so um okay how would you complete that sentence are you going to use a bored or

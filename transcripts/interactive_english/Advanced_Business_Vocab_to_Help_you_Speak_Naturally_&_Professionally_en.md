@@ -1,16 +1,3 @@
-# Advanced Business Vocab to Help you Speak Naturally & Professionally
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wrcbalPgkqE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wrcbalPgkqE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:38:58 |
-
----
-
 Right now, you are going to learn a lot
 
 of powerful business English vocabulary.

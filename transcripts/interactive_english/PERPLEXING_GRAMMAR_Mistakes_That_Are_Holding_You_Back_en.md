@@ -1,16 +1,3 @@
-# PERPLEXING GRAMMAR Mistakes That Are Holding You Back
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YwX5B8-vg_I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YwX5B8-vg_I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:03:09 |
-
----
-
 I want to see how much you already know
 
 when it comes to some perplexing grammar

@@ -1,16 +1,3 @@
-# DWI Reduced To Obstruction Of A Highway? Does It Make Sense To Consider This Plea Offer? (2022)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7fWbdZCpVfc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7fWbdZCpVfc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:56:42 |
-
----
-
 can a DWI be reduced to a lesser charge should you even consider it if it's
 
 offered hi I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk about negotiations I want to pull back the curtain and share some information with you most attorneys don't tell you does it make sense to take a reduction what DW cases should you expect you might receive a reduction offer on and should you even consider it based upon your options by

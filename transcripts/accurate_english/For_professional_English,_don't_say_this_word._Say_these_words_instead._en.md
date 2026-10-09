@@ -1,16 +1,3 @@
-# For professional English, don't say this word. Say these words instead.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YB_6VQs_1Js` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YB_6VQs_1Js) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:00:39 |
-
----
-
 in this video I would like to talk to you about what some people consider the most overused English word today people
 
 say it all the time and maybe you do too it's okay to say in casual conversations

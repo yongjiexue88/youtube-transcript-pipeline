@@ -1,16 +1,3 @@
-# 蓝牙怎么这么多毛病？还依然长盛不衰？Why is Bluetooth still popular with so many problems?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kFrxWGWHEPY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kFrxWGWHEPY) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 14:00:43 |
-
----
-
 看 这个鼠标又在表演瞬移了
 
 没错 柴司的破蓝牙鼠标就是这么日常抽风

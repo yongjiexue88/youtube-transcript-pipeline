@@ -1,16 +1,3 @@
-# WHERE TO PLACE ADVERBS? | ADVANCED ENGLISH GRAMMAR
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `T0igXeCdRaA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=T0igXeCdRaA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:40:30 |
-
----
-
 today I have a very useful lesson for
 
 you it is a grammar lesson and it is all about adverbs what's up guys my name is

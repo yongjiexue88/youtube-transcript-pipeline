@@ -1,16 +1,3 @@
-# Learn 51 English phrasal verbs for fluent English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Fir-kRPoVYw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Fir-kRPoVYw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:51:13 |
-
----
-
 hi there are you ready to learn some of the most useful phrasal verbs in the English language in this English video I
 
 will teach you some phrasal verbs that might be new to you and some that might be review but all of the phrasal verbs

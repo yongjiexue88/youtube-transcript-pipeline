@@ -1,16 +1,3 @@
-# Learn Useful English Vocabulary 👉 Ignorant 👈
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Rmp4Ituiu64` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Rmp4Ituiu64) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:54:27 |
-
----
-
 Dragons are real.
 
 That's ridiculous!

@@ -1,16 +1,3 @@
-# Advanced Vocabulary and Fluency Practice with the News
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LTBaTccA2Hw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LTBaTccA2Hw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:23:43 |
-
----
-
 Let's improve your professional English by learning advanced vocabulary and expressions from a recent news article.
 
 At the end of the lesson, I will read parts of the article and you will have a chance to repeat after me so that you can improve your speaking fluency and your accent. This article is from the Los Angeles Times. The article talks about the fact that 50% of all American

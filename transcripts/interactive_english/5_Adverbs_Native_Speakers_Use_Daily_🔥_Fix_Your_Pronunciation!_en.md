@@ -1,16 +1,3 @@
-# 5 Adverbs Native Speakers Use Daily 🔥 Fix Your Pronunciation!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ENnkvBHflJk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ENnkvBHflJk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:53:40 |
-
----
-
 Can you correctly pronounce these five common and useful adverbs? Let's find out. We'll begin with particularly.
 
 There are five syllables. The stress is on that second syllable. Particularly. I

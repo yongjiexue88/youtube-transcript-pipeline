@@ -1,16 +1,3 @@
-# Improve Your Listening Skills to Effectively Learn English | Live-Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XjcfroceOQs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XjcfroceOQs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:24:57 |
-
----
-
 hey everyone welcome to today's lesson my name
 
 is wes and this is interactive english

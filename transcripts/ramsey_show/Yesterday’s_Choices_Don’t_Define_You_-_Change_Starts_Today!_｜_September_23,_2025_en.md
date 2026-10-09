@@ -1,16 +1,3 @@
-# Yesterday’s Choices Don’t Define You - Change Starts Today! | September 23, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zvpZplaBYd4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zvpZplaBYd4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:06:58 |
-
----
-
 [Music]
 
 [Music]

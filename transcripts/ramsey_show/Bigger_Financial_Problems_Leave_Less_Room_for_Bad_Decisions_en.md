@@ -1,16 +1,3 @@
-# Bigger Financial Problems Leave Less Room for Bad Decisions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PSDvwz_P-6c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PSDvwz_P-6c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:38:13 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

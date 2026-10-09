@@ -1,16 +1,3 @@
-# Popular Phrases for Advanced English Speakers
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5vRXUfKsRgA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5vRXUfKsRgA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:44:58 |
-
----
-
 learning English should feel natural and
 
 it should feel easy so in today's lesson

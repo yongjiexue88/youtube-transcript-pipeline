@@ -1,16 +1,3 @@
-# 最清晰“加息”讲解：美国通胀人民币贬值，美联储加息我亏钱，凭啥？The clearest "Interest Rate Hike" explanation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OY3-jg4PttQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OY3-jg4PttQ) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:49:30 |
-
----
-
 跟你一样柴司的小陈是一位有文化的韭投资者他遵循书本的教诲定投了纳斯达克 100 等美股指数坚信自己早晚能挣钱但近一年来他每天早上醒来都发现自己本就贫寒的家境又雪上加霜了亿点点而且每次暴跌都伴随着同样的新闻美国又通胀了美联储又加息了小陈不禁要问你们美国通胀为什么受伤的竟是我「加息」到底是什么操作
 
 当前美国正在经历着四十年来最严重的通货膨胀美国的通货膨胀问题 U.S. Inflation Inflation Number 就算你不做投资肯定也多少从新闻里看到了美国今年的通货膨胀很厉害通货膨胀的直观感受就是你买东西的价格上涨了衡量物价上涨的重要指标叫「消费者物价指数」也就是 CPI 一般来说通胀

@@ -1,16 +1,3 @@
-# Fluency Practice with Phrasal Verbs and Idioms - and American Accent Exercise
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xmJh8f5i9Do` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xmJh8f5i9Do) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:31:58 |
-
----
-
 let's Advance your English fluency by learning some useful phrasal verbs and expressions that you can use in professional situations and you will
 
 practice your accent at the same

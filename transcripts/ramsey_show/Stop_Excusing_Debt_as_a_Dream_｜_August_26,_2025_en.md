@@ -1,16 +1,3 @@
-# Stop Excusing Debt as a Dream | August 26, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aM3xWJHfVQs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aM3xWJHfVQs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:10:57 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

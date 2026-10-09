@@ -1,16 +1,3 @@
-# STOP TRANSLATING from English to Your Native Language
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uyeaHub9lY4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uyeaHub9lY4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:49:57 |
-
----
-
 hello everyone and welcome welcome
 
 welcome to our lesson to our life lesson

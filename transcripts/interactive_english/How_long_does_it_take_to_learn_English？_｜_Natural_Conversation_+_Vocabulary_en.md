@@ -1,16 +1,3 @@
-# How long does it take to learn English? | Natural Conversation + Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RAQORlJEjRk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RAQORlJEjRk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:10:06 |
-
----
-
 Today I want you guys to listen to a natural English conversation.
 
 What's up everyone? My name is Wes. This is Interactive English which is all about helping you practice and improve your English skills. And the way we're going to do that today is by listening to a natural English conversation.

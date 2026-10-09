@@ -1,16 +1,3 @@
-# Learn English Vocabulary with Conversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `C5H4PDfiYzg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=C5H4PDfiYzg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:44:49 |
-
----
-
 a really great way to learn English is
 
 with context now in today's English

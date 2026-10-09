@@ -1,16 +1,3 @@
-# I shipped my app in 12 hours and now it makes $15K/month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `k2jecxFu2as` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=k2jecxFu2as) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:16:05 |
-
----
-
 I'm a part-time indie hacker and I built the MVP of my app in just 12 hours.
 
 >> Meet Lewis, a dude from India who spent his nights and weekends building projects. [music] But after failing with 15 of them, he decided he would try something different. >> I started building at noon and I wanted [music] to know if I could take an idea all the way to revenue before midnight.

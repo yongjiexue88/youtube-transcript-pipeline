@@ -1,16 +1,3 @@
-# DWI in Texas: How Long Does a DWI Case Take to Resolve in Texas (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TXpfOwzdTwM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TXpfOwzdTwM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:57:49 |
-
----
-
 [Music] hello everyone welcome to the Hampton Law Firm I'm Jeff Hampton uh and I wanted to take a few moments today to talk to you about DWI cases I get people
 
 ask me all the time client calls me prospective client maybe a brand new client that hires on one of the things they asked me is they say Jeff how long is this DWI case going to take well we're going to talk about that today and in this video I'm going to explain to you the ins and outs of the timeline of

@@ -1,16 +1,3 @@
-# They Built A $2M Business To Fund Their Dreams
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `e6COsh5wfNA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=e6COsh5wfNA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:32:38 |
-
----
-
 these two roommates built a $1.8 million year business in 2 years they've worked with some of the biggest names on the internet and have done over 1 billion views on YouTube with a simple formula for going viral but they have a confession their business is not profitable we had like $40,000 of just debt for like months and months and months they choose not to be profitable for a reason
 
 because their goal is to build a business that optimizes for having fun rather than profits and like Mr Beast in invest every dollar back into creating their own content and chasing their dreams make as much cash here and then dump that all into building the next Disney they invited me into their wacky studio in Chicago broke down all the ways they make money and showed me just how fun

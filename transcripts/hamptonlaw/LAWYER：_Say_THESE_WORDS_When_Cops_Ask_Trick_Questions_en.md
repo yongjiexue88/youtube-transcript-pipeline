@@ -1,16 +1,3 @@
-# LAWYER: Say THESE WORDS When Cops Ask Trick Questions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FnTYdCo47tg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FnTYdCo47tg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:20:09 |
-
----
-
 You've probably heard cops say, "You don't mind if I take a quick look?" Right? But here's what most people don't realize. If you say yes, or even if you say no, that might be enough for cops to get you out of the car, not only search the inside of the car, potentially destroy the car, detain, or maybe even arrest you. And the wildest part, the Supreme Court has said the cops don't even have to tell you, you're allowed to refuse.
 
 I'm Jeff Hampton, the people's lawyer. And in this video, I'm going to show you number one, the specific consent traps cops love to use to get into your car. And number two, how you can spot them to stop cops from using these traps against you before it's too late.

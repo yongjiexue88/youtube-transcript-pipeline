@@ -1,16 +1,3 @@
-# Write Smarter, Not Harder 💡 | 7 Tips to Instantly Improve Your Academic Writing
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oLX7oyZB5Ng` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oLX7oyZB5Ng) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:15:50 |
-
----
-
 if you spend time writing in english or
 
 you would like your writing to be a bit more professional i want to talk

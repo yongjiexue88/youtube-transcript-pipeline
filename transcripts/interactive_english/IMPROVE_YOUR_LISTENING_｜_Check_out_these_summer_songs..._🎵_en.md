@@ -1,16 +1,3 @@
-# IMPROVE YOUR LISTENING | Check out these summer songs... 🎵
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Lyn2NLH-3tI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Lyn2NLH-3tI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:27:34 |
-
----
-
 today i want to talk to you about music that is all related to the summer that's coming up [Music] hey everyone my name is wes from interactiveenglishvideos.com and this channel is all about helping you practice and improve your english and today is a lesson to help you improve your
 
 listening skills because many of you out there will ask me questions like oh i need to improve my listening and i i really enjoy listening to music so what are some different songs that that i should listen to and that is a really difficult question to answer because it's different for everyone so what i want to do in this lesson is really get a little more specific to help

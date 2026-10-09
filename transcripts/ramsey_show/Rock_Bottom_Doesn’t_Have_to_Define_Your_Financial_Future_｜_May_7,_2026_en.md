@@ -1,16 +1,3 @@
-# Rock Bottom Doesn’t Have to Define Your Financial Future | May 7, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5d7w82oKE4Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5d7w82oKE4Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:33:19 |
-
----
-
 This is an ad for Better Help. If you've ever said, "I'm not in crisis, so I don't need therapy." I want you to reconsider. The time to take care of your mental health is before things fall apart, and talking to someone can help.
 
 Get started at betterhelp.com/ramsey and save 10%.

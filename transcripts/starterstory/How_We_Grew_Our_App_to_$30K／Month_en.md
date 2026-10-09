@@ -1,16 +1,3 @@
-# How We Grew Our App to $30K/Month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ST2ROUFbdvU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ST2ROUFbdvU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:15:23 |
-
----
-
 This is Alejandro and Mario, two founders who built an app that makes $30,000 a month. But here's what's
 
 crazy. They did not actually build the app first. >> I basically made a fake product demo and it got 80K views. >> They made a video using fake footage, posted it on TikTok, it blew up, and only then did they actually build it.

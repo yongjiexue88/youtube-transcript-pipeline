@@ -1,16 +1,3 @@
-# Common Work Expressions That You Need to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bl0uIYs6-NI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bl0uIYs6-NI) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:46:49 |
-
----
-
 Today I'm going to talk to you about some useful business expressions that you need to know.
 
 Hey everyone, my name is Wes. This is Interactive English, which is where you want to be to practice and improve your English skills.

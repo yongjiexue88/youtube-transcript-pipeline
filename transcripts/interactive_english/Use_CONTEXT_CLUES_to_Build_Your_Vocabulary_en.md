@@ -1,16 +1,3 @@
-# Use CONTEXT CLUES to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CqgB2fDLwaA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CqgB2fDLwaA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:11:04 |
-
----
-
 hello welcome to today's lesson in which
 
 we are going to talk all about building

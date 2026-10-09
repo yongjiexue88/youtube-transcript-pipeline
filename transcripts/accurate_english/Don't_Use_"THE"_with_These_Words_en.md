@@ -1,16 +1,3 @@
-# Don't Use "THE" with These Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `27biY40mdV0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=27biY40mdV0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:23:30 |
-
----
-
 Hi, I'm Lisa. Let's learn when to say
 
 'the' and when to leave it out. You probably already know that English articles a and the can be very

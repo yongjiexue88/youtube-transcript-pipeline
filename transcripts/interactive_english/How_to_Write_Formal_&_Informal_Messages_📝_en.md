@@ -1,16 +1,3 @@
-# How to Write Formal & Informal Messages 📝
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Y7iDcdJ46DA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Y7iDcdJ46DA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:50:05 |
-
----
-
 okay so should be starting momentarily
 
 so welcome welcome welcome to another

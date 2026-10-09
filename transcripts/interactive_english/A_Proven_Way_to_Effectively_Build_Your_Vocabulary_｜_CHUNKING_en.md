@@ -1,16 +1,3 @@
-# A Proven Way to Effectively Build Your Vocabulary | CHUNKING
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `921Oi8wT-wI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=921Oi8wT-wI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:03:40 |
-
----
-
 in today's lesson i want to talk to you about another great technique to help you build grow and develop your vocabulary and the way that you can do
 
 this especially if you would like to do it quickly is with chunking now chunking

@@ -1,16 +1,3 @@
-# This is why you MUST learn idioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eoQajnbu8JA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eoQajnbu8JA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:54:10 |
-
----
-
 [Music]
 
 hey kayla what's up oh funny you should call i was just thinking about you

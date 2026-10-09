@@ -1,16 +1,3 @@
-# Advanced Vocabulary in 30 Minutes (Descriptive words you should know)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LjjyzKItKNk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LjjyzKItKNk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:03:00 |
-
----
-
 you can use to talk about movement
 
 places and people this is also a quiz

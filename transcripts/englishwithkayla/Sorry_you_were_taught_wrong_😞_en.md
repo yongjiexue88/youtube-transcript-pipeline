@@ -1,16 +1,3 @@
-# Sorry you were taught wrong 😞
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8d6xnUuXBOo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8d6xnUuXBOo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:18:26 |
-
----
-
 your English teacher taught you the wrong way to use these phrases here's how native English speakers really sound
 
 instead of saying you are going to say a

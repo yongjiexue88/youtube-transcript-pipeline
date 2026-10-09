@@ -1,16 +1,3 @@
-# Don’t make this English grammar mistake￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5EoQJzOn_es` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5EoQJzOn_es) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:53:52 |
-
----
-
 do not say i have been studying english
 
 since two years this is the most common

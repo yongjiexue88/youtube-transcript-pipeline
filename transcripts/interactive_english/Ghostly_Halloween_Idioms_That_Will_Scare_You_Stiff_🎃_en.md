@@ -1,16 +1,3 @@
-# Ghostly Halloween Idioms That Will Scare You Stiff  🎃
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `h7gDtiU92aI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=h7gDtiU92aI) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:44:59 |
-
----
-
 Today I'm going to teach you 11 spooky, scary Halloween idioms.
 
 I'm sure you're wondering, "Why 11?" Because 11 is an odd number and we are all about

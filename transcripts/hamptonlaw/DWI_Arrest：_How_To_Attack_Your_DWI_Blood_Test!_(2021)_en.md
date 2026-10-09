@@ -1,16 +1,3 @@
-# DWI Arrest: How To Attack Your DWI Blood Test! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jM8a9E7wi6A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jM8a9E7wi6A) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:17:00 |
-
----
-
 hello welcome to the Hampton Law Firm I'm Jeff Hampton uh with the Hampton law firm and we're here today I'm going to put together a quick video for you to talk about DWI and blood tests so one of
 
 the things we're going to discuss is how do you attack a DWI blood result and how

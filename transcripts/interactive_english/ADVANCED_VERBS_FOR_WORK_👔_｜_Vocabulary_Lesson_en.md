@@ -1,16 +1,3 @@
-# ADVANCED VERBS FOR WORK 👔 | Vocabulary Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WbHkaXrx0lE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WbHkaXrx0lE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:28:09 |
-
----
-
 [Music] hey everyone my name is Wes from
 
 interactive English videos calm and the

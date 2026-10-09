@@ -1,16 +1,3 @@
-# FIND YOUR MISTAKES 🚫 Learn How to Correct Yourself
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `alsWWfTuQto` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=alsWWfTuQto) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:24:34 |
-
----
-
 hey everyone welcome to today's lesson
 
 this is interactive english for those of

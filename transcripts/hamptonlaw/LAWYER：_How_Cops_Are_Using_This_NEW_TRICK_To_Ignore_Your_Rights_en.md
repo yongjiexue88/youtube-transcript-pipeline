@@ -1,16 +1,3 @@
-# LAWYER: How Cops Are Using This NEW TRICK To Ignore Your Rights
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `P0veDvXgljs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=P0veDvXgljs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:22:53 |
-
----
-
 It's a Friday night and you're finally kicking back after a long exhausting week. The radio's on pumping your favorite songs. Maybe a little louder than usual, but certainly nothing wild.
 
 Then out of nowhere, there's loud knocking at the door. You open the door and boom, there's two cops staring at you, flashlights in your face, acting like you have just committed a crime.

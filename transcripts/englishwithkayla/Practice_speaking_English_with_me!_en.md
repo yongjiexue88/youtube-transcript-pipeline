@@ -1,16 +1,3 @@
-# Practice speaking English with me!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `F1ZKIuDJDP4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=F1ZKIuDJDP4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:42:03 |
-
----
-
 let's practice this natural English
 
 conversations you start with the red

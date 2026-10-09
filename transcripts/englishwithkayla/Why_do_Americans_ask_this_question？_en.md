@@ -1,16 +1,3 @@
-# Why do Americans ask this question?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ASVzhBCHpmY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ASVzhBCHpmY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:08:32 |
-
----
-
 excuse me do we have beef this is an
 
 american english slang phrase the phrase

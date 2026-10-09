@@ -1,16 +1,3 @@
-# I Built 4 SaaS Apps to $100K MRR: Here's My Exact Playbook
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xeUhKuJbeWQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xeUhKuJbeWQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:16:17 |
-
----
-
 This is everything I know about building a successful SaaS. This is Tibo, a dude
 
 from France I've been following for a while who's launched dozens of products online. But, recently I noticed that he's been on an absolute tear.

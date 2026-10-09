@@ -1,16 +1,3 @@
-# Learn American English on Instagram with me | Q & A 4/21/21
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QmeoRffsduw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QmeoRffsduw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:09:22 |
-
----
-
 hi friends i hope that you like my new haircut i will be answering questions all day
 
 today for q a tuesday so drop your

@@ -1,16 +1,3 @@
-# 10 most interesting English idioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-w7LOFRhUvs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-w7LOFRhUvs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:59:49 |
-
----
-
 did you know that the english language
 
 actually has some really interesting

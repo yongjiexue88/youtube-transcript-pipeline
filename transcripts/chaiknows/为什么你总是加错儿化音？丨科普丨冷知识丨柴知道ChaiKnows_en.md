@@ -1,16 +1,3 @@
-# 为什么你总是加错儿化音？丨科普丨冷知识丨柴知道ChaiKnows
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1RWfK6rzlc4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1RWfK6rzlc4) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 14:14:39 |
-
----
-
 Hey, there is nothing she doesn't know there's nothing she doesn't ask round There is nothing she doesn't take charge of If she questions somone, it will be completely If you ask a person from Beijing and a person from South China read this sentence seperately the sentence you get will be compeletely different Is there any rules of 儿(-r) sound?
 
 Why do you always find the wrong way to add 儿？

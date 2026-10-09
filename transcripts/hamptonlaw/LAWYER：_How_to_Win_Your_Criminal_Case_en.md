@@ -1,16 +1,3 @@
-# LAWYER: How to Win Your Criminal Case
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `F-bhcJg9ypk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=F-bhcJg9ypk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:39:28 |
-
----
-
 how to avoid a conviction if you have been charged with a crime hi I'm Jeff Hampton the managing partner of Hampton criminal defense attorneys and I want to answer the question I get all the time how do I avoid a conviction if I've been charged with a crime well the the number one thing you need should you should do right out of the gate is you should hire an attorney early in
 
 the process and the reason why I say that is there is work being done behind the scenes soon after you've been arrested the file is being sent by the detective straight to the district attorney's office a DA is laying eyes on it and making assumptions and determinations based on only one side of the story which is the police in fact there's many times there's decisions made to both file a case

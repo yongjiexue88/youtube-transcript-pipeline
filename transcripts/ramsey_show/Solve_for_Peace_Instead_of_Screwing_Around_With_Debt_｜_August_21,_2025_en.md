@@ -1,16 +1,3 @@
-# Solve for Peace Instead of Screwing Around With Debt | August 21, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BMx5fxbsYvw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BMx5fxbsYvw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:11:36 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

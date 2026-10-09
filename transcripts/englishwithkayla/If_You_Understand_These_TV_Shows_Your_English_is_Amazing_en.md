@@ -1,16 +1,3 @@
-# If You Understand These TV Shows Your English is Amazing
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZIe57Bws1_E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZIe57Bws1_E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:36:03 |
-
----
-
 Do you think that you have really good English? Let's put that to the test.
 
 Today, I've prepared clips from four of my favorite television shows, and we're going to see if you know the phrases in this show. But don't worry if you don't know, if you don't feel advanced. You're going to learn a lot from this lesson cuz it's going to feel really easy. It's going to feel just like binge watching your favorite television shows.

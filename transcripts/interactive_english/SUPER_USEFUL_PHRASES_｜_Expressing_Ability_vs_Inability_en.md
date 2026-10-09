@@ -1,16 +1,3 @@
-# SUPER USEFUL PHRASES | Expressing Ability vs Inability
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5FcYMrQyTCI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5FcYMrQyTCI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:12:13 |
-
----
-
 hello and welcome to today's lesson this
 
 is it's going to be a vocabulary lesson

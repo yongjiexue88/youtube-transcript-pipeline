@@ -1,16 +1,3 @@
-# How to Read New Vocabulary & Understand the Meaning 📖
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fqkUFlRPOsQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fqkUFlRPOsQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:23:36 |
-
----
-
 so in this lesson i want to talk to you about how you can use reading to build your vocabulary and
 
 build your vocabulary effectively that's

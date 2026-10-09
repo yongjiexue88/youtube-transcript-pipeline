@@ -1,16 +1,3 @@
-# SHOPPING PHRASAL VERBS TO IMPROVE FLUENCY 🛍
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8TEYjgWtncw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8TEYjgWtncw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:40:45 |
-
----
-
 hello and welcome today we are talking
 
 about a super fun lesson shopping phrasal verbs [Music]

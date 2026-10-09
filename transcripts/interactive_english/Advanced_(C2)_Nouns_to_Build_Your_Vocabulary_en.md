@@ -1,16 +1,3 @@
-# Advanced (C2) Nouns to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `W4tahPeQiyA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=W4tahPeQiyA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:00:17 |
-
----
-
 I think you will be in awe of the nouns
 
 that I'm going to teach you and I'm sure that you will learn something new and ah

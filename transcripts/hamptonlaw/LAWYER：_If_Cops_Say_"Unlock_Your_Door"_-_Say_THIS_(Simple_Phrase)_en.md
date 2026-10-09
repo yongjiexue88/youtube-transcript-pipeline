@@ -1,16 +1,3 @@
-# LAWYER: If Cops Say "Unlock Your Door" - Say THIS (Simple Phrase)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wtohUUmcVMo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wtohUUmcVMo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:17:34 |
-
----
-
 You're driving home from work, when suddenly you see red and blue lights behind you. A cop's pulling you over for some ticky-tack traffic violation. The cop walks up to your window, and as you hand him your license, he tries to open your door. It's at that moment he leans in close and says the three words that stops you dead in your tracks, "Unlock your door." Now, here's the thing.
 
 And the response that most people give is exactly the wrong thing to say that allows cops to now do a full search and completely invade your privacy. But I'm not just going to show you the mistake, I'm going to give you the word-for-word script that keeps cops out of your car, and I'm going to give you specific Supreme Court case law that will back up everything you say. But stick around to the end because even if you say and do everything just right, cops will still try to use the oldest trick in the book in order to get around your rights and still get inside your car.

@@ -1,16 +1,3 @@
-# Police Stopped Your Car? Follow These Steps to Protect Your Rights
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2_YrDaRgbsk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2_YrDaRgbsk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:55:55 |
-
----
-
 what to do if the police stop your car imagine you're driving down the road you've done nothing wrong and all of a sudden you see lights behind you what do you do what do you say how do you
 
 act hi I'm Jeff Hampton with the Hampton Law Firm thanks for joining us here today and on today's version of what we're doing on my YouTube channel I'm going to spend a little bit time a little bit of time going through a stepbystep approach about how to protect yourself if you end up getting pulled over by a police officer during a traffic stop all right and by

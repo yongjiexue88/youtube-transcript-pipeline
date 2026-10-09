@@ -1,16 +1,3 @@
-# How To Get Domestic Violence Charges Dismissed: Affidavits of Non Prosecution (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AHxKnqeJLII` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AHxKnqeJLII) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:57:36 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm I wanted to take a couple of minutes to answer a question I probably get two or three times a week uh does an Affidavit of non-prosecution help my domestic violence case I want to
 
 encourage you to subscribe to our YouTube channel for more great criminal defense content just like this but today I want to go into the specifics the ins

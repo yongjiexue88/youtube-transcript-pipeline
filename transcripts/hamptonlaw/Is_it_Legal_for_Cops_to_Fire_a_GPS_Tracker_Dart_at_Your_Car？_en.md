@@ -1,16 +1,3 @@
-# Is it Legal for Cops to Fire a GPS Tracker Dart at Your Car?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7234gp1VEkE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7234gp1VEkE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:34:00 |
-
----
-
 the police have new technology that is essentially GPS tracker guns that can be shot at your car and track your every
 
 move before I tell you all you need to know about this new weapon for cops there are a few questions you should be asking can cops legally shoot a GPS tracker gun at your car if so can you

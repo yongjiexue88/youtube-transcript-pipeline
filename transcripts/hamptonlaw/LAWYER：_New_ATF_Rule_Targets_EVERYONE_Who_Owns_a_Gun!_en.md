@@ -1,16 +1,3 @@
-# LAWYER: New ATF Rule Targets EVERYONE Who Owns a Gun!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cZD05CTmDL0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cZD05CTmDL0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:31:23 |
-
----
-
 do you own a firearm are you thinking about selling it watch out the ATF may
 
 have just labeled you an unlawful arms

@@ -1,16 +1,3 @@
-# THE SHORTEST WORD IN ENGLISH  #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xugVXDeP7dc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xugVXDeP7dc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:57:26 |
-
----
-
 a is the shortest word in English just
 
 listen to how short it is this video is

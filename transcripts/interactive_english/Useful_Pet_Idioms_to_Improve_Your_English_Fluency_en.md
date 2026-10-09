@@ -1,16 +1,3 @@
-# Useful Pet Idioms to Improve Your English Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xa_yaZu2x_c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xa_yaZu2x_c) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:45:39 |
-
----
-
 Today, we're going to kill two birds with one stone.
 
 You're going to watch a really fun video, and I'm

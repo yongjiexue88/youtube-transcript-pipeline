@@ -1,16 +1,3 @@
-# Posting Bail For Someone in Texas? DO THIS First! (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `U_0Kkd68ahI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=U_0Kkd68ahI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:54:09 |
-
----
-
 do it mean to post bail for someone if you post bond for a loved one or a friend are you at
 
 risk hi I'm Jeff Hampton with the Hampton Law Firm thanks for joining us here today on a YouTube channel today I want to talk about that I want to talk about posting a bond for someone what happens if you post bail are you at risk if you wait around to the end of this video I'll also give you a free ebook what to do if you've been charged with

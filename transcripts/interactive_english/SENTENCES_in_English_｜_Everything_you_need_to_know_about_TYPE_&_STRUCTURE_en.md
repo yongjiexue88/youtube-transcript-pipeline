@@ -1,16 +1,3 @@
-# SENTENCES in English | Everything you need to know about TYPE & STRUCTURE
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `T-UEyF5_KEo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=T-UEyF5_KEo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:29:45 |
-
----
-
 hey everyone welcome to today's lesson
 
 thank you for joining me my name is Wes

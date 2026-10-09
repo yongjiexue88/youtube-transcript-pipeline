@@ -1,16 +1,3 @@
-# Fall Idioms to Help Build Your Vocabulary 🍁
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FpjqN_qixvg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FpjqN_qixvg) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:46:13 |
-
----
-
 Today, I want to talk to you about some fall idioms that you can use in everyday conversation.
 
 Hey everyone. My name is Wes. This is interactive English, which is where you want to be to practice and improve your English skills.

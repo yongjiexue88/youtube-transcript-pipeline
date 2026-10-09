@@ -1,16 +1,3 @@
-# Innuendos in English | Examples to Improve Your Comprehension
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_YSk5KWmBb4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_YSk5KWmBb4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:21:23 |
-
----
-
 Hey everyone, welcome to Interactive
 
 English. My name is Wes. I almost forgot what I was going to say just for a second. Uh, this channel, it's all about

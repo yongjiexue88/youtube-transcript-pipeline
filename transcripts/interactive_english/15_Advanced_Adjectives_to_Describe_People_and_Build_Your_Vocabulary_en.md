@@ -1,16 +1,3 @@
-# 15 Advanced Adjectives to Describe People and Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PIGQVLCR-CU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PIGQVLCR-CU) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:53:28 |
-
----
-
 Today's lesson is all about building your vocabulary.
 
 What's up everyone? My name is Wes. This is interactive English,

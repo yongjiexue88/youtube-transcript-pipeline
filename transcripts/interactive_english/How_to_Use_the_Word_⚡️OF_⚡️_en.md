@@ -1,16 +1,3 @@
-# How to Use the Word ⚡️OF ⚡️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bdN5xSIE9Tk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bdN5xSIE9Tk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:27:16 |
-
----
-
 hey everyone what's up welcome to
 
 today's lesson my name is Wes this is

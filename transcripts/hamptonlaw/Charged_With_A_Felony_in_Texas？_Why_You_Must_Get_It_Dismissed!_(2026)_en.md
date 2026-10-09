@@ -1,16 +1,3 @@
-# Charged With A Felony in Texas? Why You Must Get It Dismissed! (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Oktsl80r3sU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Oktsl80r3sU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:35:15 |
-
----
-
 have you been charged with a felony what are your options what could you do to fight
 
 back hi I'm Jeff Hampton with the Hampton Law Firm thanks for joining us on our YouTube channel today today I want to talk to you about felony charges in Texas what can you do about it what are some of your defenses if you are convicted of a felony what are the long longterm uh ramifications what are the

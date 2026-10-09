@@ -1,16 +1,3 @@
-# Advanced English Practice with a native speaker (DRAKE)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `g9Fq4wCmeJ4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=g9Fq4wCmeJ4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:32:12 |
-
----
-
 my goal is to help you reach that final level of fluency in this video we will
 
 learn some common expressions with the native speaker of English Drake your favorite native speaker is back he's very good at explaining the meaning of English expressions and he gives excellent sample sentences that way you truly understand the meaning of the expressions and you'll be able to use them yourself all of the Expressions contain the word name and I will explain

@@ -1,16 +1,3 @@
-# How To Get Your Criminal Trespass Dismissed! What Must The Government Prove!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cov6yDZ1L9Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cov6yDZ1L9Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:07:39 |
-
----
-
 hello I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about the subject of Criminal Trespass what does the State of Texas have to prove are there some defenses that you can rely upon if you're facing a charge like this
 
 I appreciate you joining us today if you wait around till the end of this video I'll will also give you a free ebook what to do if you have been charged with a crime in Texas okay let's jump right into this now Criminal Trespass as defined under Texas law first of all it's pretty simple right Criminal Trespass is being somewhere you're not supposed to be right somewhere that

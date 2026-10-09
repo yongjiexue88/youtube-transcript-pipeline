@@ -1,16 +1,3 @@
-# Learn the most useful English sentences for daily life
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eL_XiyVsiRA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eL_XiyVsiRA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:50:25 |
-
----
-
 let's talk about some of the most popular sentences in the English
 
 language in this English lesson I'll

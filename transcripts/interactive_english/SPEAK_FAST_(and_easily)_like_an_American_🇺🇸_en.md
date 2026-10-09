@@ -1,16 +1,3 @@
-# SPEAK FAST (and easily) like an American 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Jr-MkVYU7_8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Jr-MkVYU7_8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:03:41 |
-
----
-
 Let's talk about fast speech. And the
 
 reason why I want to go over this topic is because often I hear people say, "Look, they I they understand me when we're having these lessons right now, but if they're watching a movie or TV show or just out on the street somewhere, it's really a lot more difficult to understand what people are saying." So, when I talk about speaking

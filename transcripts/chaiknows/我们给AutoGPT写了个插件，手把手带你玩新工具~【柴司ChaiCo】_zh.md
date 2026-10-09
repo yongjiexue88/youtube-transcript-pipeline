@@ -1,16 +1,3 @@
-# 我们给AutoGPT写了个插件，手把手带你玩新工具~【柴司ChaiCo】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JGpYBFvnwWg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JGpYBFvnwWg) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:45:32 |
-
----
-
 自从 ChatGPT 火了之后每隔一阵就会有新的基于 GPT 的产品出现
 
 搞得大家是又激动又紧张

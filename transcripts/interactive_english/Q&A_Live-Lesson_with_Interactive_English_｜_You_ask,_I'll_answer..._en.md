@@ -1,16 +1,3 @@
-# Q&A Live-Lesson with Interactive English | You ask, I'll answer...
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `H1pdcNkUYvM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=H1pdcNkUYvM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:25:09 |
-
----
-
 hey everyone welcome to today's lesson this is
 
 a q a a question and answer session

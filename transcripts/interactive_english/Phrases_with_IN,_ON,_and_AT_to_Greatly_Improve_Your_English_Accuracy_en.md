@@ -1,16 +1,3 @@
-# Phrases with IN, ON, and AT to Greatly Improve Your English Accuracy
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8K7OvmxLygk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8K7OvmxLygk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:02:05 |
-
----
-
 some very helpful phrases. And mostly
 
 what I want to do is reinforce the prepositions in, on, and

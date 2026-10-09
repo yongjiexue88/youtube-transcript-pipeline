@@ -1,16 +1,3 @@
-# Learn 16 Useful English Idioms and Expressions That Native Speakers Use
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `84MB5MzHiPY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=84MB5MzHiPY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:54:44 |
-
----
-
 in this video we will continue the series of listening to how native speakers talk in addition I will give
 
 you some tips for understanding fast speech you will hear the conversation that I had with a young man named Drake Drake works as a host at the Cheesecake

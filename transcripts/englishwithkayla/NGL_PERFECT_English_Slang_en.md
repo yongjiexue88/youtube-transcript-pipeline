@@ -1,16 +1,3 @@
-# NGL PERFECT English Slang
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XuSDDlUMUtU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XuSDDlUMUtU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:15:53 |
-
----
-
 I'm not going to lie those shoes are pretty ugly I'm not going to lie this
 
 party is super boring I'm not going to

@@ -1,16 +1,3 @@
-# The Ramsey Show (REPLAY from November 15, 2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `iawe_kUYG5M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=iawe_kUYG5M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:26:25 |
-
----
-
 [Music]
 
 this is the ramsay show [Music] you can be intentional about your character you can have money and a career you are the hero in your story

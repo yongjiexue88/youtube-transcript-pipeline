@@ -1,16 +1,3 @@
-# Understanding KAMALA HARRIS and DONALD TRUMP - English Vocabulary and Expressions from Politics
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qkQtWbrQc-k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qkQtWbrQc-k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:27:38 |
-
----
-
 the biggest Topic in the news right now is the American presidential election let's Advance your English fluency by learning some Expressions that the candidates Camala Harris and Donald Trump were using in their campaign speeches you will learn both some political vocabulary and some useful everyday Expressions that you can use in order to sound like a native speaker and to help you reach true fluency make sure that
 
 you get my free downloadable PDF titled 20 essential English expressions for professionals you can get it by clicking on the link below it contains 20 of the most common professional idioms and their definitions along with

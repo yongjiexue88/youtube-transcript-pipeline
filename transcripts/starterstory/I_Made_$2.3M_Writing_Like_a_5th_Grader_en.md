@@ -1,16 +1,3 @@
-# I Made $2.3M Writing Like a 5th Grader
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9pP4qSrt5GU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9pP4qSrt5GU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:33:23 |
-
----
-
 The internet has created a new opportunity. If you can write like a fifth grader, you can make millions. And I just found living proof. This is Mason, an average kid who went from earning $10 an hour packing boxes to making $2.3 million by the age of 21.
 
 All by learning one skill, copywriting.

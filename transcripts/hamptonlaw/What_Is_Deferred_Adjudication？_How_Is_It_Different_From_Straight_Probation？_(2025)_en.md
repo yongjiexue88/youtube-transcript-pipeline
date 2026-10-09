@@ -1,16 +1,3 @@
-# What Is Deferred Adjudication? How Is It Different From Straight Probation? (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PBRb76rP-P4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PBRb76rP-P4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 20:54:48 |
-
----
-
 hey everybody I wanted to take a couple of minutes here to put together a quick video to talk about what is the difference what is well first of all what is deferred adjudication and what is the difference between deferred adjudication and straight probation and don't forget if you'd like more great criminal defense content about Texas criminal law don't forget to subscribe to our YouTube channel for more great content as
 
 we continue to provide content to you every week all right let's talk about for a moment I'm I'm going to explain for you the ins and outs of deferred adjudication and what

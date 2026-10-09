@@ -1,16 +1,3 @@
-# Learn the Meaning of the Most Confusing Questions in English ADVANCED
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vW6Hp5YE5eU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vW6Hp5YE5eU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:41:35 |
-
----
-
 one of the worst part about being an
 
 English language learner is when somebody asks you a question and you

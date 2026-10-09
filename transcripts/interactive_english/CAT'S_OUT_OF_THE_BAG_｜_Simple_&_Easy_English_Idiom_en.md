@@ -1,16 +1,3 @@
-# CAT'S OUT OF THE BAG | Simple & Easy English Idiom
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `r1S2_wgMSs4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=r1S2_wgMSs4) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:47:54 |
-
----
-
 Today, I'm going to teach you a new idiom with the help
 
 of my little furry friend, Georgie here.

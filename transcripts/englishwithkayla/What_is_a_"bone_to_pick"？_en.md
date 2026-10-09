@@ -1,16 +1,3 @@
-# What is a "bone to pick"?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3Ouh1sHGUwI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3Ouh1sHGUwI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:47:14 |
-
----
-
 hey kayla hey how are you
 
 not good i've got a bone to pick with

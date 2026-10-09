@@ -1,16 +1,3 @@
-# Los Angeles Fire -- Vocabulary You Should Know - from the news
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZXTGKxQprpU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZXTGKxQprpU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:26:41 |
-
----
-
 you probably know that I live in Los Angeles first I would like to thank all of you who have messaged me asking me if I and my family are okay we are fortunate that our neighborhood was not affected by the fires but our hearts break for many of our friends and for the thousands and thousands of La residents who have lost their homes in this video I will teach
 
 you some vocabulary from the news about the Los Angeles Fire disaster and then at the end of the video you will have a chance to practice your pronunciation and your accent by reading parts of the article I

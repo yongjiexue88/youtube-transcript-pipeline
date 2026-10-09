@@ -1,16 +1,3 @@
-# Do you know these money phrases? ￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Bu8cPN4R2nU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Bu8cPN4R2nU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:54:26 |
-
----
-
 here's your english quiz to see if you know these money words and phrases
 
 something that costs a lot of money is

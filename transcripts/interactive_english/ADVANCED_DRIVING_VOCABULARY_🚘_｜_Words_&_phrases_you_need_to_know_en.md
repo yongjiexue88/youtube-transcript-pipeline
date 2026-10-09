@@ -1,16 +1,3 @@
-# ADVANCED DRIVING VOCABULARY 🚘    | Words & phrases you need to know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `08o4nWu9QMI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=08o4nWu9QMI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:09:37 |
-
----
-
 hello welcome to today's lesson we are
 
 going to talk about driving vocabulary

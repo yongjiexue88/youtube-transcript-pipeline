@@ -1,16 +1,3 @@
-# 4 Tips for Understanding Native Speakers of English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1TXYByHi2Zs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1TXYByHi2Zs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:26:54 |
-
----
-
 do you struggle to understand native speakers when they talk fast do you ever
 
 feel like native speakers are skipping sounds or even swallowing words when they talk you're not alone I hear this

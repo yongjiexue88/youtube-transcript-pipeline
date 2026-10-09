@@ -1,16 +1,3 @@
-# How to improve your English with phrasal verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Vro5r3wOF0I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Vro5r3wOF0I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:50:18 |
-
----
-
 here is a secret to increase your
 
 English vocabulary don't just learn

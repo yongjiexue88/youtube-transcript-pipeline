@@ -1,16 +1,3 @@
-# 15  Common  Idioms with an American Accent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NF9IUdBrOb8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NF9IUdBrOb8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:56:34 |
-
----
-
 let's learn 15 common and useful English idiomatic expressions so that you can sound more like a native speaker all of
 
 these expressions contain the word hit let's learn four rules about how to pronounce hit correctly before we get started first of all make sure you differentiate between hit and heat we

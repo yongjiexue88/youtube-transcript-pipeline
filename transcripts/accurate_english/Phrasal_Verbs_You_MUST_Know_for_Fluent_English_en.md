@@ -1,16 +1,3 @@
-# Phrasal Verbs You MUST Know for Fluent English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sRRi8OpkbUk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sRRi8OpkbUk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:31:21 |
-
----
-
 do you know the difference between the phrasal verbs to fill someone in and to
 
 fill in for someone and do you confuse

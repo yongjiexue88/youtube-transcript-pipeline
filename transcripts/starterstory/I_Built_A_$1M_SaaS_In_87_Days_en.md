@@ -1,16 +1,3 @@
-# I Built A $1M SaaS In 87 Days
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WctFUP4w0sc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WctFUP4w0sc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:28:52 |
-
----
-
 this guy built a million dooll SAS in
 
 just 87 days and the crazy part is he

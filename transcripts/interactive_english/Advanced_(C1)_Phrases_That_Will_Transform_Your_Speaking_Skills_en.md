@@ -1,16 +1,3 @@
-# Advanced (C1) Phrases That Will Transform Your Speaking Skills
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vqWvqUTHHkM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vqWvqUTHHkM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:57:32 |
-
----
-
 let's learn some Advanced C1 phrases to
 
 help you build your vocabulary and first

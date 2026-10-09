@@ -1,16 +1,3 @@
-# Quit Sabotaging Your Finances And Build Wealth | March 20, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7pYr0lVOurw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7pYr0lVOurw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:40:12 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

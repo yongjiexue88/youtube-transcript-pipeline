@@ -1,16 +1,3 @@
-# 10 advanced phrases for daily English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Yv8-QU6-gSQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Yv8-QU6-gSQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:57:45 |
-
----
-
 you want to speak English fluently so in
 
 today's lesson we're going to listen to a conversation so you can learn 10

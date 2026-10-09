@@ -1,16 +1,3 @@
-# LAWYER: Say THESE WORDS to Beat ANY Speeding Ticket
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0-6QiKfpqS4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0-6QiKfpqS4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:19:57 |
-
----
-
 If you just got a speeding ticket, your brain likely thinks one of two things.
 
 Maybe I should just pay the ticket. Or if I say the right thing, maybe the judge will kick it. Here's the bad news.

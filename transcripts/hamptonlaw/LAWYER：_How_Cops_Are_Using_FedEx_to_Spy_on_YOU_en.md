@@ -1,16 +1,3 @@
-# LAWYER: How Cops Are Using FedEx to Spy on YOU
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zqODtCiK0-M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zqODtCiK0-M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:29:19 |
-
----
-
 did FedEx give cops a fourth amendment loophole to spy on you they sure did
 
 number one how is this possible number two how in the world is this legal in this video I'm going to break down how the company FedEx is now working with cops to spy on you and how they have found a fourth amendment loophole to not only spy on you but spy on everyone with

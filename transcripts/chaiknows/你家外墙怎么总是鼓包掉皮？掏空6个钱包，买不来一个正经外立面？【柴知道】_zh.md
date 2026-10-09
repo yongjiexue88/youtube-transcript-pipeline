@@ -1,16 +1,3 @@
-# 你家外墙怎么总是鼓包掉皮？掏空6个钱包，买不来一个正经外立面？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `s2kPU6k1m6Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=s2kPU6k1m6Q) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:40:38 |
-
----
-
 这是柴司隔壁的小区 6 万多一平米我们掏空 6 个钱包也买不起
 
 但令人欣慰哦不 是令人惋惜的是它的外墙也一样会鼓包 掉皮

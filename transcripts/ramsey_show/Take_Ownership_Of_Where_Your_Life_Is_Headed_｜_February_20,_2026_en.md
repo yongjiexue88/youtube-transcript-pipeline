@@ -1,16 +1,3 @@
-# Take Ownership Of Where Your Life Is Headed | February 20, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `l2bYFJCSitA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=l2bYFJCSitA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:44:08 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

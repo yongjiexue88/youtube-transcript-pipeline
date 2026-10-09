@@ -1,16 +1,3 @@
-# Useful Tongue Twisters to Help You Practice Pronunciation 😜
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qZAJidoaxSo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qZAJidoaxSo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:20:24 |
-
----
-
 hey everyone welcome to today's lesson my name
 
 is wes this is interactive english and

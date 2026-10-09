@@ -1,16 +1,3 @@
-# 婚房到底归谁的？婚前婚后买、写不写名字，有什么影响？【柴知道：人生大题】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Hq-LPOBVsPY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Hq-LPOBVsPY) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:37:52 |
-
----
-
 让我们先恭喜本期策划芭乐
 
 她要在今年结婚啦鼓掌

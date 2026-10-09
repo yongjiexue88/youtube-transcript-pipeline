@@ -1,16 +1,3 @@
-# EPONYMOUS ADJECTIVES | Advanced Vocabulary You Probably Don't Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ptYd0IO1AEk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ptYd0IO1AEk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:19:11 |
-
----
-
 in today's lesson i guarantee that you
 
 will learn something new just keep watching

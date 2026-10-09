@@ -1,16 +1,3 @@
-# 130+ Advanced English Phrases for Everyday Conversations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uXFCla1rKZY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uXFCla1rKZY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:39:40 |
-
----
-
 If you know all of the phrases in today's English lesson, then you are a master at speaking English. Let's get started. We're going to start with some elementary English phrases. Do you know what it means if something slips someone's mind? Must have slipped my mind. I was going to buy milk at the store yesterday, but it slipped my mind.
 
 This means that you forgot it. So, this is a pretty basic idiom of saying I forgot to do it. And this is a great idiom to use. If you told your friend that you were going to call them and you wanted to talk to them, but you just got really busy and you just forgot, you unintentionally forgot, you could say, "I meant to call you last night, but it slipped my mind." This means it slipped through my mind. I forgot on accident.

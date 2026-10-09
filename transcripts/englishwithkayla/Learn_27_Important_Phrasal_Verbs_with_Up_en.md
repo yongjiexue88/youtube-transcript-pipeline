@@ -1,16 +1,3 @@
-# Learn 27 Important Phrasal Verbs with Up
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BL5ae9R28Mc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BL5ae9R28Mc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:46:53 |
-
----
-
 in today's English lesson we're going to actually level up your English in a very
 
 effective way by studying phrasal verbs

@@ -1,16 +1,3 @@
-# Should you say "soon" or "later"?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WOmEYHpud5c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WOmEYHpud5c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:32:12 |
-
----
-
 do you know the difference between saying soon and later in English let me
 
 teach you about it if I'm coming to your

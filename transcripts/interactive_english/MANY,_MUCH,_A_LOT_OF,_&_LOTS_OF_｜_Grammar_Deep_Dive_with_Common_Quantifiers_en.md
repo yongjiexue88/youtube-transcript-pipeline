@@ -1,16 +1,3 @@
-# MANY, MUCH, A LOT OF, & LOTS OF | Grammar Deep Dive with Common Quantifiers
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EeiYA8xz3hE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EeiYA8xz3hE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:13:39 |
-
----
-
 many much a lot of lots of so these are
 
 very common and useful quantifiers we

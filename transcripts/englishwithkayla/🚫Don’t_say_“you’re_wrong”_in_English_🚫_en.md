@@ -1,16 +1,3 @@
-# 🚫Don’t say “you’re wrong” in English 🚫
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Y4zBtyiJfGI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Y4zBtyiJfGI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:16:24 |
-
----
-
 when someone is really incorrect about
 
 something and you don't want to just say oh you're totally wrong because sometimes that can come off as a little bit rude instead in English we'll say

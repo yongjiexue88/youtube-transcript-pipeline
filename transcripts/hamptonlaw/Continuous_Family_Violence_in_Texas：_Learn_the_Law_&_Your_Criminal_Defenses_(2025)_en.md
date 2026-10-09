@@ -1,16 +1,3 @@
-# Continuous Family Violence in Texas: Learn the Law & Your Criminal Defenses (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Wjv-Qtz8cX0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Wjv-Qtz8cX0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:08:47 |
-
----
-
 hello I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about the subject of the continuous domestic
 
 violence law in Texas in Texas there was

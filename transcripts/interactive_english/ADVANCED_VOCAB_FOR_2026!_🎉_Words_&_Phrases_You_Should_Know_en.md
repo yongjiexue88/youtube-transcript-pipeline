@@ -1,16 +1,3 @@
-# ADVANCED VOCAB FOR 2026! 🎉 Words & Phrases You Should Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DfaYzwF77GA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DfaYzwF77GA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:58:41 |
-
----
-
 I want to teach you some incredibly useful and advanced words that you can use and that I think you should know for 2026. So, I say that this vocabulary is
 
 very useful because I think these are words and phrases that are trending.

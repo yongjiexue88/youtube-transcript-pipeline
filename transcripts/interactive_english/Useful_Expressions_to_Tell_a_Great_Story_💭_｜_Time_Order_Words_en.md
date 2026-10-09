@@ -1,16 +1,3 @@
-# Useful Expressions to Tell a Great Story 💭 | Time Order Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `W5HnORt-cZ8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=W5HnORt-cZ8) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:34:58 |
-
----
-
 Previously on interactive English. Which answer best completes the sentence?
 
 I would be 88 years old.

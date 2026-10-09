@@ -1,16 +1,3 @@
-# Your Overspending Will Eventually Catch Up With You | Best-Of for March 26, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xcDd2Ms2G6I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xcDd2Ms2G6I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:15:20 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

@@ -1,16 +1,3 @@
-# Useful Shopping Phrasal Verbs to Improve Your English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tmQEtbzOew0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tmQEtbzOew0) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:35:15 |
-
----
-
 Who doesn't love shopping? I know I do.
 
 But you know what's even better than shopping?

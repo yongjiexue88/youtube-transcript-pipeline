@@ -1,16 +1,3 @@
-# LAWYER: If Cops Say "I'll Call For a K-9" - Say THIS (One Sentence)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DFZVaoYS_z4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DFZVaoYS_z4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:56:05 |
-
----
-
 You just got pulled over for a ticky-tack traffic violation. When the officer walks up to your front window, takes your license and insurance, goes back to the cruiser, and walks back up to write you a ticket. Normal traffic stop, right? Should be over in less than 5 minutes.
 
 But then he walks back to your window and says something to you that changes everything. Hang tight, I'm calling a K9 unit out here. Now your heart is pounding. You're not carrying anything illegal.

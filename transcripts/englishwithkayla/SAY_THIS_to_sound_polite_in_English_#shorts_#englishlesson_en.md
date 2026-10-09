@@ -1,16 +1,3 @@
-# SAY THIS to sound polite in English #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QuTUDk0_Wfo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QuTUDk0_Wfo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:20:22 |
-
----
-
 okay i have to hurry up getting ready because i am running late
 
 the phrasal verb i'll teach you today is

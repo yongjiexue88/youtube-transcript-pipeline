@@ -1,16 +1,3 @@
-# 🚨 CRIME VOCABULARY | Words & phrases you need to know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `edItk0GSjbs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=edItk0GSjbs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:16:59 |
-
----
-
 hello and welcome to today's lesson
 
 thank you guys so much for joining me i

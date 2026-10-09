@@ -1,16 +1,3 @@
-# English Expressions with a native speaker - Drake
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AmjShXQceVU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AmjShXQceVU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:41:48 |
-
----
-
 hi i'm lisa in this video you will learn
 
 some very common english expressions that you need to know to sound fluent when you're speaking english [Music]

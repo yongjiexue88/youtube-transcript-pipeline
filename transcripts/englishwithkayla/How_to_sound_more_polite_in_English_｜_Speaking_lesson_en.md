@@ -1,16 +1,3 @@
-# How to sound more polite in English | Speaking lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Vna2qYkFOUs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Vna2qYkFOUs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:11:17 |
-
----
-
 [Music] sorry that was really rude and i shouldn't be rude because today's
 
 lesson is all about

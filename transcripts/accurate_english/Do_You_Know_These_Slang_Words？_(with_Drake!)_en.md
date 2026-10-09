@@ -1,16 +1,3 @@
-# Do You Know These Slang Words? (with Drake!)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `14t8ZDcGOPQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=14t8ZDcGOPQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:30:38 |
-
----
-
 let's take a break from professional English and let's learn some slang words
 
 and that way your English will be well-rounded and you'll be able to communicate with a wide variety of people and you'll feel more confident in

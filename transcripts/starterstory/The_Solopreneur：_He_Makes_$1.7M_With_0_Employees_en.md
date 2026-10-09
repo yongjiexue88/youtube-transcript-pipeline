@@ -1,16 +1,3 @@
-# The Solopreneur: He Makes $1.7M With 0 Employees
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `v6IF-lVuvbs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=v6IF-lVuvbs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:34:12 |
-
----
-
 This is Justin. He built his online business to $1.7 million a year, working
 
 only five hours a day. And the crazy part is he runs it all by himself.

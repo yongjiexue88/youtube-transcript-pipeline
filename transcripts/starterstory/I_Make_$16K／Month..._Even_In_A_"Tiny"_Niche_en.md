@@ -1,16 +1,3 @@
-# I Make $16K/Month... Even In A "Tiny" Niche
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hYF4fQYlrso` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hYF4fQYlrso) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:13:35 |
-
----
-
 Meet Nick, a founder from Ukraine who built an app that solved his own problem. >> Your app should be the best one for one specific person. >> But what he didn't realize was that hundreds of other people felt the same way. >> I built something better, faster, and cheaper than the competition.
 
 >> So he built it in 6 weeks, launched it, and today this Microsass makes over $16,000 a month. [music] >> I did a bunch of research and could not find a solution. Most founders try to build a tool for everyone. But Nick took a [music] different approach.

@@ -1,16 +1,3 @@
-# Advanced (C1) Verbs to Level Up Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_NkFvqGJPkQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_NkFvqGJPkQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:55:16 |
-
----
-
 let's learn some Advanced C1 verbs to
 
 help you build your vocabulary and this

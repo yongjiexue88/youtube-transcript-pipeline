@@ -1,16 +1,3 @@
-# 手机电池集体“注水”，背后究竟发生了什么？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ptWkBXOMorA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ptWkBXOMorA) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:36:43 |
-
----
-
 这是青海湖电池这是金沙江电池这个是蓝海电池
 
 而这位更是重量级叫冰川电池你之前未必注意过但现在你知道了从去年开始各家手机厂商纷纷给电池起名字

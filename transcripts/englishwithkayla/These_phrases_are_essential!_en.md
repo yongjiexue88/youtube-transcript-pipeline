@@ -1,16 +1,3 @@
-# These phrases are essential!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QbnmKQIa_8g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QbnmKQIa_8g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:38:11 |
-
----
-
 hey Kayla are you awake huh sorry I was
 
 just taking a cat nap no there's no cats

@@ -1,16 +1,3 @@
-# AMERICAN FAST SPEECH 🇺🇸 (Improve your speaking fluency & listening comprehension)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TPNT_bN7IVA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TPNT_bN7IVA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:08:23 |
-
----
-
 If you are someone who thinks, you know,
 
 in a class like an English class, I can easily understand what the teacher is saying or maybe you easily understand what I'm saying. But when it comes to

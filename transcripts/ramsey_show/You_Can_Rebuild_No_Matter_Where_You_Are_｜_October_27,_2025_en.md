@@ -1,16 +1,3 @@
-# You Can Rebuild No Matter Where You Are | October 27, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2gvFdBx3XsU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2gvFdBx3XsU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:01:47 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

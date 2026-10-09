@@ -1,16 +1,3 @@
-# AI越狱，模型破甲…大模型是如何被玩坏的？当一名遵纪守法的“好AI”有多难？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `i_3TNCkBgmA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=i_3TNCkBgmA) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:29:03 |
-
----
-
 如果你对AI说
 
 那肯定会被拒绝但如果

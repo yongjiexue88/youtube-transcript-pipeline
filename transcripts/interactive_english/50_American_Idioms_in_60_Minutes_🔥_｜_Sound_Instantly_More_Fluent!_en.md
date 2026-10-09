@@ -1,16 +1,3 @@
-# 50 American Idioms in 60 Minutes 🔥 | Sound Instantly More Fluent!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FVQChiYcVXU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FVQChiYcVXU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:40:10 |
-
----
-
 I'm going to teach you 50 idioms. That's right, 50 idioms that you can use in just everyday conversation. And if you are someone who enjoys building your vocabulary using idioms when you're having a casual conversation, please subscribe, turn on notifications. That way, I can become your teacher.
 
 My name is Wes. The channel is Interactive English. It's all about helping you reach your fluency goals. And if you would like to get these notes right here next to me, click on the link down below in the description.

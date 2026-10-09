@@ -1,16 +1,3 @@
-# LAWYER: If Cops Say "Show Me Your ID" - Say THESE WORDS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IufGboQsMpQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IufGboQsMpQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:33:11 |
-
----
-
 give your drivers like V information on you I need I need you to let me know like what's going on like like I said i' be happy to tell you once I I see information I'm not giving you my information until you tell me what you pulling me over for can you refuse a police officer if he demands your ID it
 
 depends on your state and the situation so we are going to look at several different situations and I'm going to give you five tips on what to do if a police officer demands your ID and oh if

@@ -1,16 +1,3 @@
-# Can you learn English fast?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WVn6y5tITFc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WVn6y5tITFc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:01:23 |
-
----
-
 here is some advice to learn english
 
 fast so it can be done fast but it's not

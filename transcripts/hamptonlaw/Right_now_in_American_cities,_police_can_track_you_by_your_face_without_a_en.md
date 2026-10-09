@@ -1,16 +1,3 @@
-# Right now in American cities, police can track you by your face without a
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `lDROz8iBxqM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=lDROz8iBxqM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:06:26 |
-
----
-
 Right now in American cities, police can track you by your face without a warrant, without your consent, and sometimes in open defiance of local law.
 
 Imagine every sidewalk, every store, every protest now becomes a live police lineup you never consented to be a part of. I'm Jeff Hampton, the people's lawyer, and in this video, I'm going to break down number one, how cops are using facial recognition software to spy on you. Number two, what the Constitution has to say about all of this, and crucially number three, what specific steps you can take to not only protect your privacy, but stop cops from using these surveillance systems against you. Make sure and stick around to the end, because you're going to walk away with specific tools that actually beat facial recognition software.

@@ -1,16 +1,3 @@
-# Corrupt Cop Gets FIRED & ARRESTED - New Video Shows Why
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VQMRW2m-zEM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VQMRW2m-zEM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:53:20 |
-
----
-
 Hey, stay in the car.
 
 Stay in the car. Dude, I'm stopping you.

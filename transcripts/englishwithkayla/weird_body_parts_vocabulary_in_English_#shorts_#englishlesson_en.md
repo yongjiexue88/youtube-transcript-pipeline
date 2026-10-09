@@ -1,16 +1,3 @@
-# weird body parts vocabulary in English #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aBAf-ZLWb3g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aBAf-ZLWb3g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:12:40 |
-
----
-
 here are some really funny english
 
 vocabulary words for various different

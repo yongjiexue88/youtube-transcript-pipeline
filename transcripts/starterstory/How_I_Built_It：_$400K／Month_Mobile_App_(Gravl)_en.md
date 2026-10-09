@@ -1,16 +1,3 @@
-# How I Built It: $400K/Month Mobile App (Gravl)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2dfMUtHlQik` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2dfMUtHlQik) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:17:32 |
-
----
-
 Last month, we made over $440K.
 
 >> Meet Julian, a developer from Argentina who built an app that makes over $400,000 a month. But it didn't start that way. Before the success, Julian was a dude at the gym who discovered a different app that he thought was pretty cool. However, instead of just using it himself, he thought, "What if I built something better?" And that's exactly what he did. He built an MVP, posted about it on Reddit, and the rest is history. I posted this thread on how I

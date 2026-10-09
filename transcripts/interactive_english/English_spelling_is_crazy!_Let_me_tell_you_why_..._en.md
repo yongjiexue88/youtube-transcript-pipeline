@@ -1,16 +1,3 @@
-# English spelling is crazy! Let me tell you why ...
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `03-PPyVTcDI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=03-PPyVTcDI) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:37:38 |
-
----
-
 Today I'm going to try and help you answer this very popular question:
 
 Why don't we pronounce English words the way they're spelled?

@@ -1,16 +1,3 @@
-# LAWYER: Is It Worth It To Take a Lie Detector Test?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fSVKaqaguWo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fSVKaqaguWo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:39:13 |
-
----
-
 Li detector test can be a terrific tool to get a criminal case dismissed however many courts don't allow these type of test results to be used as evidence so today I want to share with you the untold story of lie detector tests and how to use them to get a criminal case dismissed Hollywood tries to make it look like a lie detector test is a rock solid proof of establishing whether someone lied or told
 
 the truth but in reality it's much more complicated than that so I'm going to walk you through one of my own cases where one of our c 's best option to get their criminal case dismissed was to pass a polygraph examination in exchange for a dismissal my client was charged with aggravated sexual assault the alleged victim had provided several interviews claiming they had been raped however the story began to change

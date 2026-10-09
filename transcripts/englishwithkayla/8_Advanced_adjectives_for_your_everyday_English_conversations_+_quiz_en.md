@@ -1,16 +1,3 @@
-# 8 Advanced adjectives for your everyday English conversations + quiz
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RlvCSHiSmsE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RlvCSHiSmsE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:59:22 |
-
----
-
 one of my favorite Parts about being an
 
 English teacher is answering your questions about English words that are

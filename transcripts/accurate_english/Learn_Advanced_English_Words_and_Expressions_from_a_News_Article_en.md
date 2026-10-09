@@ -1,16 +1,3 @@
-# Learn Advanced English Words and Expressions from a News Article
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2Pvfb0r-PQQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2Pvfb0r-PQQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:28:38 |
-
----
-
 you are truly fluent in English when you're able to understand the Expressions that native speakers use let's learn some very common Expressions to take your English to the final level of
 
 fluency for example a non-native speaker

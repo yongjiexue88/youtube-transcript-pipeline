@@ -1,16 +1,3 @@
-# Can I say "I'M L❤️VING IT"? | Stative verbs in the continuous tense? (Advanced Grammar)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Z2Fu_sVbXbs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Z2Fu_sVbXbs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:17:31 |
-
----
-
 i love this or i'm loving this are these
 
 sentences the same are they different is one of them even correct let's find out [Music]

@@ -1,16 +1,3 @@
-# 8 Useful Proverbs to Offer Advice | ADVANCED EXPRESSIONS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rTEbQIs21e4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rTEbQIs21e4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:20:39 |
-
----
-
 today i'm going to teach you some proverbs that you can use to give people
 
 some great advice that's coming up

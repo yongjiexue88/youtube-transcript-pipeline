@@ -1,16 +1,3 @@
-# April 30, 2023
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zY3_kk5zdeo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zY3_kk5zdeo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:25:39 |
-
----
-
 hey did you have to pay to get into this art show no I skirted around the front
 
 table

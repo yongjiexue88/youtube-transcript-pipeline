@@ -1,16 +1,3 @@
-# If You Want to Succeed at Work, Learn These English Idioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `scjyfE6daeo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=scjyfE6daeo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:57:13 |
-
----
-
 I want to help you develop your vocabulary skills and teach you some useful idioms that can help you grow your career. These are These are phrases that you will absolutely hear and can use in a work context, especially because in places like the United States, I think business and the work environment, it is a little more casual, which means that idioms are still commonplace when people communicate. So,
 
 this is a It's a quiz lesson. Of course, I want you to participate. Write your answers in the chat, in the comments, just so I know that you're you're actively thinking about this vocabulary and hopefully learning new things. I guarantee, I know I say this a lot, but I guarantee that you're going to learn something new.

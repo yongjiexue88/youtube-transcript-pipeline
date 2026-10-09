@@ -1,16 +1,3 @@
-# AMERICAN IDIOMS 🇺🇸  Important phrases you need to know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oVPgrG0LnpQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oVPgrG0LnpQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:12:25 |
-
----
-
 hello and welcome to today's lesson so I
 
 have a fun lesson to test your knowledge

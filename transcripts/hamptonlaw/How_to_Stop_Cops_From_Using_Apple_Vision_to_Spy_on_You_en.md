@@ -1,16 +1,3 @@
-# How to Stop Cops From Using Apple Vision to Spy on You
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XkCkilZ7EaQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XkCkilZ7EaQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:26:46 |
-
----
-
 are cops able to monitor anyone from anywhere from cameras all over the city and they can see you from more places than just behind their desk as a former prosecutor now turned people's lawyer I have seen firsthand how technology has shaped law enforcement and not always for the better imagine this you're going about your day as normal and somewhere nearby a police officer is accessing
 
 live video surveillance camera feeds from all over the City he's then comparing them to police databases and

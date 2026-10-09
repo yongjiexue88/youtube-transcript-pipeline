@@ -1,16 +1,3 @@
-# Useful Water Phrases to Build Your Vocabulary 💦
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `l0G0Eo0rcWA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=l0G0Eo0rcWA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:01:47 |
-
----
-
 this is the pool there's water in the pool so i'm going to teach you some useful phrases
 
 to get your feet wet or you could say to

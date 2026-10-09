@@ -1,16 +1,3 @@
-# You know YOU'RE FLUENT when ... | English Fluency Test
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `taievgDEDPU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=taievgDEDPU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:16:31 |
-
----
-
 how fluent are you in english let's find
 
 out in today's lesson i want to talk to you about 17 different signs

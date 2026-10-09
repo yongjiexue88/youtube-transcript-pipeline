@@ -1,16 +1,3 @@
-# Formal titles in the United States | #shorts #englishlesson #speakenglish #englishtips
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `u9xv2yS1Jeg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=u9xv2yS1Jeg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:33:51 |
-
----
-
 addressing someone formally in the united states especially in writing
 
 the most common titles that we use are

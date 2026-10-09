@@ -1,16 +1,3 @@
-# When Money Feels Confusing, Clarity Matters Most | April 13, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rYuP7e6oeHM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rYuP7e6oeHM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:36:59 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

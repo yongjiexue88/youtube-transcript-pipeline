@@ -1,16 +1,3 @@
-# Useful Listening & Speaking Activity | Describe Words Around the Home
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4qtdmq9J7DM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4qtdmq9J7DM) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:44:07 |
-
----
-
 Hello and welcome to today's lesson - Describing Nouns!
 
 In this lesson, we are going to describe nouns

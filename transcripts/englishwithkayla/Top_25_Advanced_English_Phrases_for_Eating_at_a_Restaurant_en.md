@@ -1,16 +1,3 @@
-# Top 25 Advanced English Phrases for Eating at a Restaurant
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IlPwkqfc4oI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IlPwkqfc4oI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:39:55 |
-
----
-
 one place that is incredibly important to have confidence at while speaking English is a restaurant when you're speaking English at a restaurant I want you to feel confident all the way from making a reservation sitting at the table ordering paying for your food and leaving I don't want you to feel awkward or feel like you don't know exactly what you need to say to get what you want so in today's lesson I'm going to teach you the top 25 important phrases that you
 
 must know in English for being at a restaurant let's get started with this lesson let's talk about making a reservation making a reservation means scheduling or what we naturally say in English booking a table in advance so

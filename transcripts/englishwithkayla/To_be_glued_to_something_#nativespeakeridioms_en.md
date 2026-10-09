@@ -1,16 +1,3 @@
-# To be glued to something #nativespeakeridioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HInhAfbAI-U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HInhAfbAI-U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:21:10 |
-
----
-
 recently I said to my son hey let's turn
 
 off the TV soon I don't want you to just

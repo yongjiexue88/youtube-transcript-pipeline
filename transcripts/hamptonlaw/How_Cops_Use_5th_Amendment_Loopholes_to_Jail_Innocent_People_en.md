@@ -1,16 +1,3 @@
-# How Cops Use 5th Amendment Loopholes to Jail Innocent People
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `geVjaJEHfpM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=geVjaJEHfpM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:27:51 |
-
----
-
 can police arrest you take you to trial
 
 you'd be found not guilty by a jury and

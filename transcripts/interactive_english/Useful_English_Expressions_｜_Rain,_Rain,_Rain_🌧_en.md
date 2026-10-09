@@ -1,16 +1,3 @@
-# Useful English Expressions | Rain, Rain, Rain 🌧
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `027p-bAeqnw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=027p-bAeqnw) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:43:45 |
-
----
-
 It's raining outside.
 
 Which means... It's a good time to talk about some rainy expressions.

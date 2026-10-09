@@ -1,16 +1,3 @@
-# Helpful Study Tips to Improve Your English Skills
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kYMJbcfXIaU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kYMJbcfXIaU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:49:18 |
-
----
-
 I think I am live hello and welcome to
 
 our live lesson today it's a beautiful

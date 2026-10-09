@@ -1,16 +1,3 @@
-# don't sell yourself short! #shorts #englishteacher
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `royXLKR3n8M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=royXLKR3n8M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:22:39 |
-
----
-
 my students say that they can't speak english or they're not good enough or my english is
 
 bad i say don't sell yourself short the

@@ -1,16 +1,3 @@
-# 10 Useful Slang Words that ALL Americans Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `L_z6YgILIG8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=L_z6YgILIG8) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:53:15 |
-
----
-
 Yo are you down with today's lesson because you're going to have a blast and I'm
 
 going to tell you what all that means because today we're talking about slang.

@@ -1,16 +1,3 @@
-# Useful Time Expressions to Help Improve Your Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XeC8fL0eAA8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XeC8fL0eAA8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:46:34 |
-
----
-
 hello hello hello how's it going I hope
 
 you guys are having an awesome day out

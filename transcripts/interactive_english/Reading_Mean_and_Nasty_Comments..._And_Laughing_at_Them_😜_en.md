@@ -1,16 +1,3 @@
-# Reading Mean and Nasty Comments... And Laughing at Them 😜
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uw7KKFTnB2g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uw7KKFTnB2g) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:34:12 |
-
----
-
 - So, we really, really, really love hearing from you guys
 
 and it's such positive community but today

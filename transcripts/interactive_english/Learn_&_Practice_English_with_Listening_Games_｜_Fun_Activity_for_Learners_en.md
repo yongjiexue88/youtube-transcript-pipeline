@@ -1,16 +1,3 @@
-# Learn & Practice English with Listening Games | Fun Activity for Learners
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `l_NXp123Wrs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=l_NXp123Wrs) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:46:43 |
-
----
-
 Right now, we are on a road trip.
 
 Let me...oh I can't turn it around.

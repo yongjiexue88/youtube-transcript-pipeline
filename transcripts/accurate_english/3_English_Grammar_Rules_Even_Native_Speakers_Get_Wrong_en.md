@@ -1,16 +1,3 @@
-# 3 English Grammar Rules Even Native Speakers Get Wrong
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `D3gpkJoTUkk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=D3gpkJoTUkk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:50:48 |
-
----
-
 Hi, I'm Lisa. Do you ever hear native
 
 speakers making grammar mistakes? Is it

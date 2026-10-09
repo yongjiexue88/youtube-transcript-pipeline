@@ -1,16 +1,3 @@
-# How to Use the Zero Conditional | English Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DI0Z1wVgBko` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DI0Z1wVgBko) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:46:05 |
-
----
-
 Today, I'm going to talk to you about the zero conditional.
 
 They're basically "if" statements.

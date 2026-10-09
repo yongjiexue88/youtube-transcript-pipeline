@@ -1,16 +1,3 @@
-# Speak Like a Native 💬 Compelling Vocabulary You MUST Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RFeFPCui_9Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RFeFPCui_9Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:58:15 |
-
----
-
 speak and communicate just like me. And that's why I want to teach you this compelling vocabulary that I think you
 
 need to know. And if you are someone who enjoys supercharging your vocabulary, please subscribe, turn on notifications.

@@ -1,16 +1,3 @@
-# Listening & Speaking GAME | Advanced Vocabulary Naming People
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_WVbD3PI8iU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_WVbD3PI8iU) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:54:03 |
-
----
-
 Hello and welcome to our global classroom! Today's activity is describing nouns.
 
 Today we're going to describe nouns that are people. This will help you practice your listening and speaking.

@@ -1,16 +1,3 @@
-# 50 Common English phrases for phone calls
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yFndRpN_IAk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yFndRpN_IAk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:55:41 |
-
----
-
 do you get nervous speaking on the phone in English this lesson will teach you 50 common phrases that will help you sound friendly polite and it will just help you be functional in your phone calls in English these phrases are super common in the United States some of them you might have heard but some of them might be confusing to you at first but these are phrases that natives use every day to either make plans schedule appointments or begin or end a phone call
 
 so pay attention and use the link below to download the free pdf guide that will show you all 50 of these phrases now let's get started with the lesson when you speak on the phone you obviously need to know if the other person can hear you and you need to

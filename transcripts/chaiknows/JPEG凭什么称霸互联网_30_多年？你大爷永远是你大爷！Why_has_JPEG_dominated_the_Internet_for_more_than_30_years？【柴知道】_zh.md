@@ -1,16 +1,3 @@
-# JPEG凭什么称霸互联网 30 多年？你大爷永远是你大爷！Why has JPEG dominated the Internet for more than 30 years?【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NpbhFTmUvts` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NpbhFTmUvts) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:39:52 |
-
----
-
 1992 年的那个夏天一位跟您一样的绅士在黑暗的房间里死死盯着电脑
 
 一旁的调制解调器疯狂闪烁竭尽全力让这张 720×575 像素的图片

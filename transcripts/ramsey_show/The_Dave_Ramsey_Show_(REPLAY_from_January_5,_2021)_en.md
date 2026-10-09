@@ -1,16 +1,3 @@
-# The Dave Ramsey Show (REPLAY from January 5, 2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KlckJRQufHM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KlckJRQufHM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:31:50 |
-
----
-
 welcome to the dave ramsey show [Music] you can be intentional about your character you can have money and a career you are the hero in
 
 your story

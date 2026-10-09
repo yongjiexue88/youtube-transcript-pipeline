@@ -1,16 +1,3 @@
-# Do you use follow up or follow through?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CUj35E9Mv0U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CUj35E9Mv0U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:59:15 |
-
----
-
 follow up and follow through are two
 
 very important english phrasal verbs you

@@ -1,16 +1,3 @@
-# English Proverbs about Money
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wOslV5-XYts` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wOslV5-XYts) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:51:19 |
-
----
-
 Hi, I'm Lisa. In this video, I will teach you 15 English proverbs about money. I will also teach you how to pronounce some difficult English sounds.
 
 [Music]

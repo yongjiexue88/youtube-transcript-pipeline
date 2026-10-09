@@ -1,16 +1,3 @@
-# SUPER USEFUL PHRASAL VERBS w/ SPRING | Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vOE4DcSvsjg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vOE4DcSvsjg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:08:05 |
-
----
-
 spring is upon us and you may not know
 
 that just looking at those trees in the background but today i don't want to teach you about the spring season i want

@@ -1,16 +1,3 @@
-# SUFFIXES to Help You Grow Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xl9tQSmXAdc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xl9tQSmXAdc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:41:52 |
-
----
-
 welcome to today's lesson which is all
 
 about helping you guys build grow and expand your vocabulary and I'm gonna tell you how you can do this very easily as well that's coming up what's up

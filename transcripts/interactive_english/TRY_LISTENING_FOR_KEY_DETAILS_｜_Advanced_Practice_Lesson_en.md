@@ -1,16 +1,3 @@
-# TRY LISTENING FOR KEY DETAILS | Advanced Practice Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TYz8BY9N7Cc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TYz8BY9N7Cc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:41:18 |
-
----
-
 hello and welcome today I have a super
 
 duper super duper useful lesson for you

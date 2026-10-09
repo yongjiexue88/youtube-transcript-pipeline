@@ -1,16 +1,3 @@
-# Did you make it on time, or in time? #englishlesson #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nfv3VyggyXA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nfv3VyggyXA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:15:55 |
-
----
-
 so i'm going to tell you the difference between being on time and being
 
 somewhere in time when you are on time it means you

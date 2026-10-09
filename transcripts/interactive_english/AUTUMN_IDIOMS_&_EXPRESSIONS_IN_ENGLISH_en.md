@@ -1,16 +1,3 @@
-# AUTUMN IDIOMS & EXPRESSIONS IN ENGLISH
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `O2soNSGbnUI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=O2soNSGbnUI) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:43:22 |
-
----
-
 Welcome everyone! Today, we are in a park in Madrid on a beautiful fall morning.
 
 So what we thought we'd do today is take this

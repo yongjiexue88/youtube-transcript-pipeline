@@ -1,16 +1,3 @@
-# Try This! 5 Tricky English Adjectives Every Learner Should Master 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MsLwsZPJPNc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MsLwsZPJPNc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:54:31 |
-
----
-
 Can you correctly pronounce these five
 
 adjectives right here? These are longer words which definitely makes them a little trickier to pronounce like the first one, unprecedented. This is a word

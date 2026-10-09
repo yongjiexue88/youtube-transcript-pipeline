@@ -1,16 +1,3 @@
-# Reading + Vocabulary Lesson | Vaccines 💉
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YXEOf5I5FAo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YXEOf5I5FAo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:19:28 |
-
----
-
 hello everyone welcome to today's lesson
 
 i have well this lesson is consist of

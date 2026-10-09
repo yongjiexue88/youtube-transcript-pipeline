@@ -1,16 +1,3 @@
-# USEFUL HALLOWEEN VOCABULARY 👻 | Words & phrases you should know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DzY7ARuxkjY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DzY7ARuxkjY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:16:30 |
-
----
-
 happy halloween all right so i hope that you are having
 
 a wonderful day i hope that you're going to have a wonderful halloween whether you are celebrating this holiday or not if you like halloween please go ahead

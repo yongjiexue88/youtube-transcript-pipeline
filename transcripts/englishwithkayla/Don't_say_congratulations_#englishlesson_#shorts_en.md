@@ -1,16 +1,3 @@
-# Don't say congratulations #englishlesson #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZVkWTSJgwdw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZVkWTSJgwdw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:17:27 |
-
----
-
 hi friends my english tip for you today is to not use the word congratulations for a
 
 compliment i see lots of english learners use this

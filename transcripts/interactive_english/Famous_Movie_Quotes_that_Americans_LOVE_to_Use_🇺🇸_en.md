@@ -1,16 +1,3 @@
-# Famous Movie Quotes that Americans LOVE to Use 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `73SWECvS2BM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=73SWECvS2BM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:09:50 |
-
----
-
 famous movie quotes so this is going to be more of a cultural lesson a casual
 
 fun lesson which is why i have not shaved i'm rocking the stubble right now but i want to teach you some very famous movie quotes that americans love to use

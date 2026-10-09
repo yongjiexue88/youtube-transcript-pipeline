@@ -1,16 +1,3 @@
-# Learn everyday English phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ihhagLyGr9s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ihhagLyGr9s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:56:16 |
-
----
-
 do you know of a reason why you feel
 
 like you can study English for hours and

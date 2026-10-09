@@ -1,16 +1,3 @@
-# How This $250K/Month SaaS Got Its First 100 Users (Steal This Playbook)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `l4WEqPX52Cg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=l4WEqPX52Cg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:12:20 |
-
----
-
 I've now scaled two separate products to over 3 million in annual recurring revenue. >> This is Joseph and his SaaS makes over $250,000 a month. But, this episode is not how to go viral on TikTok or get millions of downloads. Nope, this video is about a foolproof way to get your first 100 paying SaaS customers. Because, if you can get 100, you can get thousands.
 
 >> When it comes to the first 100 customers, capture the low-hanging fruits. >> I brought Joseph onto the channel to break down his exact steps to go from zero to 100 customers fast. And in this episode, we'll dive into what you can do in the next hour to rank on search engines, why trolling subreddits can actually turn into a million-dollar business, and the exact playbook that you can follow if you're starting over with a new SaaS in 2026. If you're building anything in SaaS right now, well, this is an episode you cannot miss.

@@ -1,16 +1,3 @@
-# ⚡ LIVE ENGLISH LESSON ⚡ Q&A with Interactive English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YwgBdTUNkso` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YwgBdTUNkso) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:31:46 |
-
----
-
 everyone welcome to today's live lesson
 
 so this is a lesson that we do pretty

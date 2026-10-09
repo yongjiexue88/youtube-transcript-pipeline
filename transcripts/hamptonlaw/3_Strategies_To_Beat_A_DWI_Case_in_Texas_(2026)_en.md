@@ -1,16 +1,3 @@
-# 3 Strategies To Beat A DWI Case in Texas (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `O_UMMjVVHrw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=O_UMMjVVHrw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:39:56 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about three ways to beat a DWI
 
 Case by the way if you wait around to the end of our video I'll also give you a free eBook The Ultimate Guide to your DWI defense in Texas now before we get

@@ -1,16 +1,3 @@
-# How to Stop Cops From Using a “Welfare Check” to Search Your Home
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xZcjOey7CfE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xZcjOey7CfE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:23:50 |
-
----
-
 imagine you're relaxing at home when suddenly police start pounding on your front door demanding they come inside all in the name of a welfare check before you can even respond they kick down your door and detain you why all because a neighbor made a baseless claim and cops used a legal loophole to justify invading your home this isn't a rare case and it happens much more than
 
 you think but if it actually happens to you do you know your rights I'm Jeff Hampton former prosecutor now the people's lawyer and I've seen cops over the years use a lot of creative ways to justify getting into your house all in the name of making sure that you're okay in today's video I'm breaking down the true story of when cops take it too far and what

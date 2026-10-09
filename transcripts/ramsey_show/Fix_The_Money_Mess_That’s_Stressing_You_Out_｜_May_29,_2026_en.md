@@ -1,16 +1,3 @@
-# Fix The Money Mess That’s Stressing You Out | May 29, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6eim-QN5Iso` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6eim-QN5Iso) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:29:54 |
-
----
-
 This is an ad for Better Help. The time to fix your budget is before you're in debt, and the time to deal with stress is before it becomes a crisis. Talking to someone can help you find a path forward. Go to betterhelp.com/ramsey
 
 to get 10% off.

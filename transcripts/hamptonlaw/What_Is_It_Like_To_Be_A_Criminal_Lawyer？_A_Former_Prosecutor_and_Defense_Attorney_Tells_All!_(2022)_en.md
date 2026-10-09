@@ -1,16 +1,3 @@
-# What Is It Like To Be A Criminal Lawyer? A Former Prosecutor and Defense Attorney Tells All! (2022)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BcWFJxyrqL4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BcWFJxyrqL4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:56:14 |
-
----
-
 what's it like to be a criminal lawyer a day in the life of a criminal
 
 attorney hi I'm Jeff Hampton I'm a criminal defense attorney and I actually am the owner and the managing partner of the Hampton Law Firm I'm going to do a video a little different than I normally do I have had literally thousands of people ask me what's it like to be a criminal attorney what are some of the best parts of your job what are some of the worst parts of your job what are some of

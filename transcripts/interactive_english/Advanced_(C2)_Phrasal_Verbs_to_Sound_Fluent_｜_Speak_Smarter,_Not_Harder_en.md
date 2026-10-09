@@ -1,16 +1,3 @@
-# Advanced (C2) Phrasal Verbs to Sound Fluent | Speak Smarter, Not Harder
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ndMHM6H0Gls` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ndMHM6H0Gls) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:57:39 |
-
----
-
 Let's learn some advanced C2 phrasal
 
 verbs. And I think these are incredibly useful phrases because we use them quite often in casual conversation even though

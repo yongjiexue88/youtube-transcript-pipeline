@@ -1,16 +1,3 @@
-# Level Up Your English in Under 3 Minutes (B2 Adjectives)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Zu1vmEd4I2A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Zu1vmEd4I2A) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:52:15 |
-
----
-
 Let's learn some B2 vocabulary to help you supercharge your fluency. And I say
 
 that because these are words that you will actually hear and use when you're

@@ -1,16 +1,3 @@
-# I got "passed up" for the teaching job #shorts #englishteacher
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `lxGo2IL4Y20` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=lxGo2IL4Y20) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:20:40 |
-
----
-
 today's phrasal verb i will teach you is
 
 pass up when you do not want to take advantage of an opportunity you can pass it up i had to pass up a

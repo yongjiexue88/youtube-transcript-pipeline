@@ -1,16 +1,3 @@
-# 画饼十几年，永远在跳票，固态电池为何总是“下次一定”？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JPIvEZDom_U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JPIvEZDom_U) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:32:56 |
-
----
-
 在 2024 年柴司策划小卡就说要写“固态电池”选题
 
 因为“2025 年是固态电池元年”

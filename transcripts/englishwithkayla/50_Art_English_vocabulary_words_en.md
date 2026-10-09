@@ -1,16 +1,3 @@
-# 50 Art English vocabulary words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HTawlPOlhqQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HTawlPOlhqQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:03:37 |
-
----
-
 hi friends welcome back to english with kayla in today's english lesson i will
 
 be doing some art with you

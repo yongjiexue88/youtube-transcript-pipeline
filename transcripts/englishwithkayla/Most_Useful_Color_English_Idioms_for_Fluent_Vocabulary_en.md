@@ -1,16 +1,3 @@
-# Most Useful Color English Idioms for Fluent Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `X56OYVkBPUc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=X56OYVkBPUc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:49:10 |
-
----
-
 the beautiful part about learning a new
 
 language is learning new phrases that

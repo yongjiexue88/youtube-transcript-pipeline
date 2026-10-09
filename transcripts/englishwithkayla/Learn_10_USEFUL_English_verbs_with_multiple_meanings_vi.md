@@ -1,16 +1,3 @@
-# Learn 10 USEFUL English verbs with multiple meanings
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PZHQLNcjPbs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PZHQLNcjPbs) |
-| **Language** | Vietnamese (auto-generated) (vi) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:05:21 |
-
----
-
 đã hackphon rồi Con gái chạy người tuyệt
 
 thật máy Intel email message and

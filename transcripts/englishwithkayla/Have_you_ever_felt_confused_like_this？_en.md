@@ -1,16 +1,3 @@
-# Have you ever felt confused like this?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `G8C-1Uaenfk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=G8C-1Uaenfk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:48:11 |
-
----
-
 hello hey kayla hey what's up nothing
 
 much i'm just really spent from all the

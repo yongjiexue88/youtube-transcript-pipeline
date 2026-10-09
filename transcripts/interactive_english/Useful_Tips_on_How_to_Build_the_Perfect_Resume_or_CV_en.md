@@ -1,16 +1,3 @@
-# Useful Tips on How to Build the Perfect Resume or CV
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9l6atz6RHWk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9l6atz6RHWk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:42:52 |
-
----
-
 today I am going to talk to you about
 
 how you can build the perfect and ideal

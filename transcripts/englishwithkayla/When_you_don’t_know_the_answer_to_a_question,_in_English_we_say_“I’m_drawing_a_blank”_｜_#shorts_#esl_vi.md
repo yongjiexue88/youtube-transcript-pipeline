@@ -1,16 +1,3 @@
-# When you don’t know the answer to a question, in English we say “I’m drawing a blank” | #shorts #esl
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2iWVEBuhC-A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2iWVEBuhC-A) |
-| **Language** | Vietnamese (auto-generated) (vi) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:29:31 |
-
----
-
 Em nói trước em không Wind live and work
 
 here có như chó khác em sẽ lại thơm

@@ -1,16 +1,3 @@
-# 12 English Words that People Say WRONG 😳  | Pronunciation Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RxWCKwXjiuQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RxWCKwXjiuQ) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:54:39 |
-
----
-
 Do you want to sound like an English learner or like an English speaker?
 
 If you want to sound like an English speaker, do NOT mispronounce these words!

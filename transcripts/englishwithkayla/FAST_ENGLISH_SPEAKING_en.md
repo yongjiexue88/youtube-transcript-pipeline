@@ -1,16 +1,3 @@
-# FAST ENGLISH SPEAKING
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xFecC4p1zbo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xFecC4p1zbo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:35:56 |
-
----
-
 so you want to be able to understand fast native English speakers here's a
 
 tip it might be hard to understand us

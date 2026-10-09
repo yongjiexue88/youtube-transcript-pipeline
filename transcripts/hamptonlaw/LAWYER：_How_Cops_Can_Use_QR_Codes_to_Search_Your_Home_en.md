@@ -1,16 +1,3 @@
-# LAWYER: How Cops Can Use QR Codes to Search Your Home
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eZjOdAIqgzU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eZjOdAIqgzU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:21:03 |
-
----
-
 You see a flyer from your local police department. Friendly colors, a badge, a QR code that reads free house checks while you're on vacation. Seems helpful, right? But what if scanning that QR code meant you give complete and total access to the police, to your home cameras, your data, and even your legal rights?
 
 What if it opened the door to a kind of surveillance system watching you that you didn't even know you agreed to?

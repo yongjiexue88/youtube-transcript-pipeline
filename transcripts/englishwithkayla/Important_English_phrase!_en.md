@@ -1,16 +1,3 @@
-# Important English phrase!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NQG2RBsGVFs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NQG2RBsGVFs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:40:51 |
-
----
-
 here's a really great phrase that will help you in your professional English if
 
 you say something is on the line it

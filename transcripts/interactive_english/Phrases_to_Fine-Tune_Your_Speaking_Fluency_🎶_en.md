@@ -1,16 +1,3 @@
-# Phrases to Fine-Tune Your Speaking Fluency 🎶
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CqkE6ySEMjE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CqkE6ySEMjE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:06:28 |
-
----
-
 I want to teach you some very common and
 
 useful phrases but we're going to pay

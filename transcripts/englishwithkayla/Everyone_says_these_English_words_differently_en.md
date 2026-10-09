@@ -1,16 +1,3 @@
-# Everyone says these English words differently
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Cev5yugIwls` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Cev5yugIwls) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:41:18 |
-
----
-
 people just cannot seem to agree how to
 
 actually say these words in English so let me tell you how I say them my name's Kayla I'm an American English teacher poem I don't say poem I say poem

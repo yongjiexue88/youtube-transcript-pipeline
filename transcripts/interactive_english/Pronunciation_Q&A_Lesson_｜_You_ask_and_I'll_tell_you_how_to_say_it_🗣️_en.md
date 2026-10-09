@@ -1,16 +1,3 @@
-# Pronunciation Q&A Lesson | You ask and I'll tell you how to say it 🗣️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_NHiiBTfkAQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_NHiiBTfkAQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:29:02 |
-
----
-
 all right we are live I first just want to say
 
 hello to all of you out there today we

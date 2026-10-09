@@ -1,16 +1,3 @@
-# 19 Phrases Native English Speakers Use Every Day
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xuq3La6VrKU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xuq3La6VrKU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:31:37 |
-
----
-
 Are you ready to take it up a notch?
 
 Let's go down the rabbit hole.

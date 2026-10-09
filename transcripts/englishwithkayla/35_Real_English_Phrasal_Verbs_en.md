@@ -1,16 +1,3 @@
-# 35 Real English Phrasal Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9OCZAfll_qA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9OCZAfll_qA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:34:39 |
-
----
-
 Learning English should be fun. It shouldn't be so stiff or so boring. And
 
 one really important part of upgrading your English is [music] practicing phrasal verbs. In today's English lesson, I'm going to teach you some really important advanced [music] phrasal verbs. We're going to have some fun while doing it. We're getting out of my normal space. We're getting out and about so [music] that I can teach you real life English. Make sure to visit englishwithwithkayla.com so I can teach you more English there and you can join my monthly membership so [music] we can communicate and we can learn together.

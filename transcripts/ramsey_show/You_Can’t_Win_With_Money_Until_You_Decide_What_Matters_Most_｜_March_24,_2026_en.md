@@ -1,16 +1,3 @@
-# You Can’t Win With Money Until You Decide What Matters Most | March 24, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sxoYy1FFt2Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sxoYy1FFt2Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:39:51 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

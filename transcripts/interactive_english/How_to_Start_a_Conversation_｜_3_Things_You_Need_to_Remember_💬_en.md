@@ -1,16 +1,3 @@
-# How to Start a Conversation | 3 Things You Need to Remember 💬
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oM_SKD-tQZc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oM_SKD-tQZc) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:45:37 |
-
----
-
 If you want to have a meaningful conversation in English, then all you need to do is...
 
 Hey everyone, my name is Wes. This is Interactive English, which is all about helping you practice and improve your English skills.

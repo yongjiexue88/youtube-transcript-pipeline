@@ -1,16 +1,3 @@
-# I Built a Niche App to $9K MRR
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7vz6b_Ohdl0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7vz6b_Ohdl0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:12:57 |
-
----
-
 Everyone thinks you need a huge idea to make money, but Jonathan did the opposite. His tiny open-source project makes $9,000 a month. This one post got
 
 us thousands of users in one day. His approach is genius. He did not build something that works for everyone.

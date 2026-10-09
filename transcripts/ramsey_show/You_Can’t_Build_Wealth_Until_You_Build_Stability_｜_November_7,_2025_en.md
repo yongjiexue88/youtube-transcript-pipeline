@@ -1,16 +1,3 @@
-# You Can’t Build Wealth Until You Build Stability | November 7, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Tr05I448PMw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Tr05I448PMw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:59:36 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

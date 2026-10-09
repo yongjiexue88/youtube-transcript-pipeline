@@ -1,16 +1,3 @@
-# Professional Writing for Business, University, IELTS, TOEFL ✍️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `V2Tv5vf2XOA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=V2Tv5vf2XOA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:13:14 |
-
----
-
 here are 13 tips to help you write
 
 professionally and what we're going to do is we're going to start with the big picture which is an idiom that means

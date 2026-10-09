@@ -1,16 +1,3 @@
-# My AI App Makes $100K/Month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `miEUhwSR2-0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=miEUhwSR2-0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:22:10 |
-
----
-
 I walked away from my career to build my own thing. >> This is Nico, and he did something that, let's be honest, is really hard. He gave up his entire career. >> I didn't really know what I was doing.
 
 >> He was on the traditional path until two letters made him rethink everything.

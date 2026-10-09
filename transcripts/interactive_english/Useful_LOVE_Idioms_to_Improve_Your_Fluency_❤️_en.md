@@ -1,16 +1,3 @@
-# Useful LOVE Idioms to Improve Your Fluency ❤️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SSU7doHqaX4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SSU7doHqaX4) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:51:26 |
-
----
-
 What words do you love?
 
 Do you love idioms?

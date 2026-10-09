@@ -1,16 +1,3 @@
-# 🚫 DON'T MAKE THESE GRAMMAR MISTAKES THAT EVEN NATIVE SPEAKERS MAKE
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Pm-R0bMSa2M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Pm-R0bMSa2M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:07:48 |
-
----
-
 mistakes. It's something as a an English
 
 learner, it may be on your mind. And

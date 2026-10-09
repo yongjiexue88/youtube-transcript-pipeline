@@ -1,16 +1,3 @@
-# English phrases for meeting someone
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bixVT5CxrKg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bixVT5CxrKg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:57:01 |
-
----
-
 if you are looking to improve any part
 
 of your English conversation today's

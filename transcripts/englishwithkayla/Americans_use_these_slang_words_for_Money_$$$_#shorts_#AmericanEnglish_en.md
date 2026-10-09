@@ -1,16 +1,3 @@
-# Americans use these slang words for Money $$$ #shorts #AmericanEnglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KzY6KnzzA08` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KzY6KnzzA08) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:17:43 |
-
----
-
 here are english words that all mean
 
 money in the united states

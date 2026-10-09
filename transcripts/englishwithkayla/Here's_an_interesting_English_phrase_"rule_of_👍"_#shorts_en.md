@@ -1,16 +1,3 @@
-# Here's an interesting English phrase "rule of 👍" #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kgyZ7RaT1_w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kgyZ7RaT1_w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:17:35 |
-
----
-
 a good rule of thumb is i before e
 
 except after c but it's just a rule of thumb instead of just saying something is a guide or a

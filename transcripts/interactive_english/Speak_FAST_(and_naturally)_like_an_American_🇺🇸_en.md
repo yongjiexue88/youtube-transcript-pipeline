@@ -1,16 +1,3 @@
-# Speak FAST (and naturally) like an American 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Jlppzwc_z_g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Jlppzwc_z_g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:11:58 |
-
----
-
 hello and welcome to today's lesson in
 
 which we are going to talk about well

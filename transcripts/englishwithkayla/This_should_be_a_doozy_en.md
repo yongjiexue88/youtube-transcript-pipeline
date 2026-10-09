@@ -1,16 +1,3 @@
-# This should be a doozy
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CjBSo6IgGJw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CjBSo6IgGJw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:47:51 |
-
----
-
 hello hey mom hey what's up i'm calling
 
 because i wanted to tell you about the score i got on my test

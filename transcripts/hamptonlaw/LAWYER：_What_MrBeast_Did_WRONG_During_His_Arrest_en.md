@@ -1,16 +1,3 @@
-# LAWYER: What MrBeast Did WRONG During His Arrest
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YiWszjD8rCY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YiWszjD8rCY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:40:46 |
-
----
-
 Mr Beast AKA Jimmy Donaldson was arrested now it was just a prank by his good friend arak but if Jimmy were my client we'd have to have a serious talk about the four things he did wrong during his arrest Jimmy's first mistake happened immediately see if you can catch it hey how you doing look I stopped you for your tent man yeah this is my car right off
 
 the bat he starts talking to the police officer the only thing you have to provide to a police officer after you get pulled over is your ID and your insurance no matter how nice he's trying to be to you remember you don't have to answer his questions and everything you say can and will be used against you and here's Jimmy's second mistake oh it's yours you know

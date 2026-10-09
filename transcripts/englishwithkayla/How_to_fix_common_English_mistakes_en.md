@@ -1,16 +1,3 @@
-# How to fix common English mistakes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kVm8Mt08Dac` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kVm8Mt08Dac) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:57:56 |
-
----
-
 hi friends welcome back to English with Kayla in today's lesson I'm going to
 
 show you how you can make fewer mistakes

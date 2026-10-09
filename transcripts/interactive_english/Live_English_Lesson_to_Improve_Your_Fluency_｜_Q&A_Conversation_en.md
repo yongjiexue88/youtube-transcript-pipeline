@@ -1,16 +1,3 @@
-# Live English Lesson to Improve Your Fluency | Q&A Conversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `x-katOrtA40` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=x-katOrtA40) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:36:28 |
-
----
-
 hello hello hello what's up my name is
 
 Wes this is interactive English in case

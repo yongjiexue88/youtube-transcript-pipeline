@@ -1,16 +1,3 @@
-# Be careful calling someone this in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `o4HiS2G7fRk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=o4HiS2G7fRk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:04:36 |
-
----
-
 english speakers will not just say that someone is very clean they might say that they are very tidy
 
 or they're very organized or they might

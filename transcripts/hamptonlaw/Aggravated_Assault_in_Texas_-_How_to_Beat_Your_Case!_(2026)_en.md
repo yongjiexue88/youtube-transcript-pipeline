@@ -1,16 +1,3 @@
-# Aggravated Assault in Texas - How to Beat Your Case! (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GNs6NuxIxlk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GNs6NuxIxlk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:59:44 |
-
----
-
 hello everyone welcome to the htam law firm Are You facing an aggravated assault deadly weapon charge in Texas today I want to talk about exactly that subject aggravated assault deadly weapon
 
 and what can you do to fight the case you want to make sure that you have a clear plan of action so that you can make sure you stay out of jail and you can get this arrest uh removed from your

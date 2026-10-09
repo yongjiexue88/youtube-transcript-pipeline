@@ -1,16 +1,3 @@
-# 3 phrases you NEED to know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ldsoWZRy6UI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ldsoWZRy6UI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:51:59 |
-
----
-
 what do you call a guest that you make when you're making it based off no
 
 information we call that taking a shot in the dark

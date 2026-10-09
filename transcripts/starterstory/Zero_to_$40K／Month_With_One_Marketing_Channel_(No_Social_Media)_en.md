@@ -1,16 +1,3 @@
-# Zero to $40K/Month With One Marketing Channel (No Social Media)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `E_rX4JJrYkY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=E_rX4JJrYkY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:12:39 |
-
----
-
 This is how every indie hacker should grow their apps. >> This is Mickey, a guy from Spain who launched his app just seven months ago.
 
 And today, he's already making over $40,000 a month. >> This app was profitable from day one.

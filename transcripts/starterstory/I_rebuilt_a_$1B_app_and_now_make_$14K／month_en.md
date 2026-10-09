@@ -1,16 +1,3 @@
-# I rebuilt a $1B app and now make $14K/month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `88BbTpbWVpY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=88BbTpbWVpY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:18:58 |
-
----
-
 When I heard Skype was shutting down, I saw an opportunity. >> This is Dennis, a self-taught developer who came across a golden opportunity, a
 
 tweet. When I saw the tweet, I thought, why not me? >> Right after seeing this tweet, he got to work. He built a prototype in a weekend and got his first paying customers almost immediately. >> After I did this, I got my first sale in minutes. In just 7 months, he went from nothing to a $14,000 per month app. And

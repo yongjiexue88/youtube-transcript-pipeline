@@ -1,16 +1,3 @@
-# LAWYER: 5 Tips to Beat A Drug Trafficking Charge In Texas (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Lnb5x3FqFRg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Lnb5x3FqFRg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:08:03 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to discuss with you the topic how to beat a drug trafficking charge in Texas we're going to talk about five ways that you can do that now if you'll wait around to the end of this video I'm also going to give you a free ebook how to beat a drug charge in Texas
 
 all right let's Jump Right In now before I identify the five possible ways that you can beat a drug trafficking charge in Texas I think it's important that we look at the three main things that you

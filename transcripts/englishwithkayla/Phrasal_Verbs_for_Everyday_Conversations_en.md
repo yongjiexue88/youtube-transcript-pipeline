@@ -1,16 +1,3 @@
-# Phrasal Verbs for Everyday Conversations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fz6NjqGj11w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fz6NjqGj11w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:35:40 |
-
----
-
 Are you ready to learn one of the trickiest parts of the English language?
 
 In today's English lesson, I'm going to teach you the phrasal verbs that will help you in your everyday conversation so that you don't clam up. There's an

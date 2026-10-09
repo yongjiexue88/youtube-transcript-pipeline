@@ -1,16 +1,3 @@
-# ADVANCED AMERICAN PHRASES YOU NEED TO KNOW 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `O2xM6mVfrVw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=O2xM6mVfrVw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:15:29 |
-
----
-
 let's not table this conversation it's
 
 very important so please scoot over make

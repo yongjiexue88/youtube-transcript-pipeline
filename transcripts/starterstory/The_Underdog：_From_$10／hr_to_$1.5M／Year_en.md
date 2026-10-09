@@ -1,16 +1,3 @@
-# The Underdog: From $10/hr to $1.5M/Year
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WGVxAmmJUmY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WGVxAmmJUmY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:28:33 |
-
----
-
 what's your story I lived with my parents working as
 
 a waiter part-time to make I think $10

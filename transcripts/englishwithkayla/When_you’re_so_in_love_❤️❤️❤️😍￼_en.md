@@ -1,16 +1,3 @@
-# When you’re so in love  ❤️❤️❤️😍￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_00tEo9oCSI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_00tEo9oCSI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:14:29 |
-
----
-
 another great idiom for relationships is
 
 to be head over heels for someone you're

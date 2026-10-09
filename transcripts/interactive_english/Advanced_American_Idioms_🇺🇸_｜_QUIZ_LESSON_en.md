@@ -1,16 +1,3 @@
-# Advanced American Idioms 🇺🇸  | QUIZ LESSON
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LlbbezgA48w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LlbbezgA48w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:20:19 |
-
----
-
 hey everyone my name is wes this is
 
 interactive english the channel is just

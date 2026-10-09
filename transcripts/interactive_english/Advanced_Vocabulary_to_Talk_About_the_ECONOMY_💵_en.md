@@ -1,16 +1,3 @@
-# Advanced Vocabulary to Talk About the ECONOMY 💵
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vf5-01rcPwA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vf5-01rcPwA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:04:21 |
-
----
-
 Let's build your vocabulary
 
 by learning some very, very, very useful

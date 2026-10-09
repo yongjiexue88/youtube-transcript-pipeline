@@ -1,16 +1,3 @@
-# NEW Tricks Cops Use to Search Your Home When You're NOT There
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8AOmPE1PZX8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8AOmPE1PZX8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:18:19 |
-
----
-
 Imagine going on vacation. You lock the front door, everything's in order, but by the time you come home, your front door's destroyed, your house has been trashed, all because cops decided they wanted to break in. Cops claimed they smelled something decomposing, so they put a battering ram through your front door, but there was no dead body, and the smell was coming from the neighbor's trash. I'm Jeff Hampton, the people's lawyer, and in over 22 years of handling criminal defense cases, I've seen it all when it comes to cops trying to find a way to get into your home when you're not there.
 
 And in almost every case, the justification was either illegal, or it was based on something that wouldn't hold up under cross-examination. But by then, your door's already broken, and your privacy's already gone. So, in this video, I'm going to give you the exact tricks cops love to use to get into your home when you're not there, and the specific steps you can do to keep them out and make sure they don't violate your privacy rights. But first, trick number one, cops love to create emergencies to trick their way into your home.

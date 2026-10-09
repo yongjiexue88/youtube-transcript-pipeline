@@ -1,16 +1,3 @@
-# How to Find & Correct Your Grammar Mistakes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oqcSzzyG0Wo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oqcSzzyG0Wo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:30:47 |
-
----
-
 now we all make mistakes whenever we're
 
 learning other languages and to be

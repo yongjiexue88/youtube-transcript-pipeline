@@ -1,16 +1,3 @@
-# How are Phrasal Verbs different from Simple Verbs?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-cvasnatB5A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-cvasnatB5A) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:40:03 |
-
----
-
 if you feel like you're stuck at your current English level and you can't make
 
 any progress towards becoming a fluent

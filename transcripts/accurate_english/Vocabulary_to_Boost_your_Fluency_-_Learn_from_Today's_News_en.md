@@ -1,16 +1,3 @@
-# Vocabulary to Boost your Fluency - Learn from Today's News
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OV_mk8yD_ZE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OV_mk8yD_ZE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:22:54 |
-
----
-
 Hi, I'm Lisa. Let's learn some advanced
 
 vocabulary and expressions from a news article so that you can take your already advanced English to the next level, the final level of fluency. My

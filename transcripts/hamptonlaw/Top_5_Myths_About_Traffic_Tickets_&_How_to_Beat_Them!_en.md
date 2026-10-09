@@ -1,16 +1,3 @@
-# Top 5 Myths About Traffic Tickets & How to Beat Them!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `61H4rT5V0OI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=61H4rT5V0OI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:30:06 |
-
----
-
 what are the top five traffic ticket myths when a cop is trying to write you a ticket and what can you do to protect
 
 yourself if you find yourself in court I

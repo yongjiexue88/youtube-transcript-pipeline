@@ -1,16 +1,3 @@
-# Arrested And Your Property Was Taken By The Police? A Former Prosecutor Explains What To Do! (2022)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XKvdZHFUAzw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XKvdZHFUAzw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:53:15 |
-
----
-
 you've been arrested the police seized your property you're innocent do you have a right to get your property back from the
 
 police hi I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk about that what if you were a loved one was actually arrested wrongfully They seized your evidence and now you want it back

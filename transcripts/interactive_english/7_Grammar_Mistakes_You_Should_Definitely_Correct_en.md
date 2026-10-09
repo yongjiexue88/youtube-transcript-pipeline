@@ -1,16 +1,3 @@
-# 7 Grammar Mistakes You Should Definitely Correct
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GGDdzDcYkKo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GGDdzDcYkKo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:14:34 |
-
----
-
 let's talk about seven glaring grammar
 
 mistakes that i hear english learners

@@ -1,16 +1,3 @@
-# 1-HOUR LESSON - C2 Vocab Every Serious Learner Must Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VKfsFwWU8LQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VKfsFwWU8LQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:36:46 |
-
----
-
 Let's take your advanced vocabulary to the moon like a rocket because I am going to teach you some super useful advanced C2 level words and phrases. And
 
 if you are someone who enjoys building your vocabulary, please subscribe, turn on notifications. That way I can become your teacher. My name is Wes. The channel is interactive English. It is all about helping you reach your fluency goals. So, this vocabulary is at a C2

@@ -1,16 +1,3 @@
-# ADVANCED PHARMACY VOCABULARY 💊  | Words & phrases you should know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `b_4j7MsJLKg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=b_4j7MsJLKg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:12:36 |
-
----
-
 hello and welcome to today's lesson I
 
 have a vocabulary lesson for you and

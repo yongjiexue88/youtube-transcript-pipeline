@@ -1,16 +1,3 @@
-# Advanced English Adjective “Brand-New” | #shorts #englishlesson #naturalenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TcF6nn5IECo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TcF6nn5IECo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:30:44 |
-
----
-
 there is nothing like getting a brand
 
 new pair of shoes the advanced english adjective that i'm going to teach you about today is brand new we say something is brand

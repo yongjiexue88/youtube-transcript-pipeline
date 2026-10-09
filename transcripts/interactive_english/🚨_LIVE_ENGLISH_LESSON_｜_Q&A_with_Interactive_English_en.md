@@ -1,16 +1,3 @@
-# 🚨 LIVE ENGLISH LESSON | Q&A with Interactive English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pnDfCjSFmu0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pnDfCjSFmu0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:33:24 |
-
----
-
 what's up everyone wow this is starting
 
 is this starting or no it's the heartache I don't know yes alright I've been live now just staring at the camera what's up everyone my name is Wes this is interactive English and welcome to today's interactive English lesson which is going to be a Q&A that I want to take questions from all of you and see if I can help you out and answer those questions that are related to learning English whether you have questions about pronunciation vocabulary grammar I will

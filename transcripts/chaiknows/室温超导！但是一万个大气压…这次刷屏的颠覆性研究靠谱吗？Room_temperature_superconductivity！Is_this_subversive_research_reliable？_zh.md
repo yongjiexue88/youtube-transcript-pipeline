@@ -1,16 +1,3 @@
-# 室温超导！但是一万个大气压…这次刷屏的颠覆性研究靠谱吗？Room temperature superconductivity！Is this subversive research reliable?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Hm3YQA0iHcc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Hm3YQA0iHcc) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:46:59 |
-
----
-
 前天晚上我们已经下班在家里吃火锅的时候同事在群里发说物理学又颠覆了罗切斯特大学的物理学家兰加·迪亚斯在美国物理学会年会（APS）上宣布实现了室温超导那上一次物理学“被颠覆”还是去年可控核聚变这是“奇异点”快来了于是我们赶紧吃完火锅想看看这个事儿是什么情况看了一晚上跟大家聊聊核心的结论就写在这篇售价 40 美金的论文里简单来说呢就是他们发现了一种由氢 氮和镥组成的材料
 
 在大约 21℃ 的环境中可以实现超导而之前的超导必须在超级超级低的低温下才能实现就算是所谓的“高温超导材料”这个“高”也只是高到零下两百度左右还是得用上液氮。

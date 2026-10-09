@@ -1,16 +1,3 @@
-# Common English Vocabulary Mistakes Professionals Make
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `G2zZVDj40k8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=G2zZVDj40k8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:03:18 |
-
----
-
 in this video I would like to help you to feel more confident in the english-speaking workplace I will teach
 
 you some commonly confused English words related to work and I will teach you also how to correctly pronounce them and after that we will practice saying them in natural sounding sentences all of my

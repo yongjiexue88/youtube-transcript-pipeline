@@ -1,16 +1,3 @@
-# QUANTIFIERS for Non-count Food Nouns 🍞🍕🍷| Grammar Quiz
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bU-qU8bN_q0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bU-qU8bN_q0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:30:08 |
-
----
-
 hey everyone welcome to another
 
 interactive English lesson with me my

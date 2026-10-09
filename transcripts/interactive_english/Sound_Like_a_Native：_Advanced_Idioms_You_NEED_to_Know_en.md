@@ -1,16 +1,3 @@
-# Sound Like a Native: Advanced Idioms You NEED to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7PEu8vVQl4o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7PEu8vVQl4o) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:41:52 |
-
----
-
 Let's learn some advanced idioms to help you sound more natural when you're having a conversation more like a native speaker. And if you are someone who enjoys learning new idioms, building your vocabulary, please subscribe, turn on notifications, that way I can become your teacher. My name is Wes. The channel is Interactive English.
 
 It's all about helping you reach your fluency goals. So let's begin with an idiom that I like to use from time to time and that is to cross that bridge when we come to it or to cross that bridge when we get to it. It means to deal with a problem if and when it arises and really an emphasis on the if and when because basically what you're saying is that you're you're not going to stress out over a future problem because it might not ever occur.

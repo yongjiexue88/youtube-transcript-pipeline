@@ -1,16 +1,3 @@
-# Understand FAST Native English with Real Podcast Conversations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `H4pB4KM6CSA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=H4pB4KM6CSA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:34:59 |
-
----
-
 Do you ever feel like no matter what you do, you just can't get over the fact that English sounds so fast and especially when you meet a fast English speaker, it's really hard to understand them and you find yourself having to ask what or you know, asking someone to repeat themselves again because you feel like their speed is just so quick. We're going to work on that today.
 
 By the end of today's lesson, you'll have some really good practice listening to a fast and we're going to break down exactly why it sounds so fast and when we do

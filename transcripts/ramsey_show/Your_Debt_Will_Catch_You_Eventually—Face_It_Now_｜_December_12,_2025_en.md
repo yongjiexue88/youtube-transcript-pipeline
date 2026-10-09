@@ -1,16 +1,3 @@
-# Your Debt Will Catch You Eventually—Face It Now | December 12, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UJxgxrnce0Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UJxgxrnce0Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:54:35 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

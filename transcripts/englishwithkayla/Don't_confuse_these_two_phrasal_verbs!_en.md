@@ -1,16 +1,3 @@
-# Don't confuse these two phrasal verbs!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Lpgk9zeaKjk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Lpgk9zeaKjk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:57:57 |
-
----
-
 english learners always get a little bit confused with these two so pay close
 
 attention if you take down something you can say

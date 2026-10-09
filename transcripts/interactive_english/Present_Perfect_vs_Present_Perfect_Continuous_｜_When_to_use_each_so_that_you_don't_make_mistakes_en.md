@@ -1,16 +1,3 @@
-# Present Perfect vs Present Perfect Continuous | When to use each so that you don't make mistakes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jopAHmvPT-g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jopAHmvPT-g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:19:38 |
-
----
-
 i have studied english i have been studying english are these sentences the same or are they different let's find out [Music] hey everyone my name is wes this is interactive english and the channel is all about trying to help you practice and improve your english skills and today i want to help you improve your grammar because i want to talk about the difference between two verb tenses the present perfect tense and the present perfect continuous and these two verb tenses can confuse many english learners who may not be sure
 
 about how and when to use them as well

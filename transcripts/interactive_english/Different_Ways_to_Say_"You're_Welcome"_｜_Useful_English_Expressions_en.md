@@ -1,16 +1,3 @@
-# Different Ways to Say "You're Welcome" | Useful English Expressions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HPRcV4Y0t8s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HPRcV4Y0t8s) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:37:29 |
-
----
-
 Oh, sure. No problem.
 
 Don't mention it. You are welcome for this lesson because today

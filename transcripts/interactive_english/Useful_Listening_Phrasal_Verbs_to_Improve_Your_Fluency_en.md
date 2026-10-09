@@ -1,16 +1,3 @@
-# Useful Listening Phrasal Verbs to Improve Your Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pOGeILJ22sM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pOGeILJ22sM) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:54:24 |
-
----
-
 Listen up because today I am going to teach you some very useful phrasal verbs.
 
 What's up everyone? My name is Wes.

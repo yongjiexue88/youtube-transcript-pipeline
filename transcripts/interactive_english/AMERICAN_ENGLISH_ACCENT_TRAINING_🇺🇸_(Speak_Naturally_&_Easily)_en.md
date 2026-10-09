@@ -1,16 +1,3 @@
-# AMERICAN ENGLISH ACCENT TRAINING 🇺🇸 (Speak Naturally & Easily)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rCRR2c5dzDA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rCRR2c5dzDA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:44:11 |
-
----
-
 I want to talk to you about fast speech
 
 because this is something that people often tell me that when they're watching

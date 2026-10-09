@@ -1,16 +1,3 @@
-# English Fluency Practice with Today's News - vocabulary and accent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rSc8tpkzH9U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rSc8tpkzH9U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:24:17 |
-
----
-
 Hi, I'm Lisa. Let's improve your English
 
 fluency with the news so that you can communicate clearly and confidently about what's going on in the world. I will teach you advanced vocabulary from a newspaper article and I will help you improve your accent. At the end of this video, we will read the article together. I will pause to give you a chance to repeat so that you can practice your pronunciation. Many of you know that I live in Los Angeles and I like to bring you stories from my city.

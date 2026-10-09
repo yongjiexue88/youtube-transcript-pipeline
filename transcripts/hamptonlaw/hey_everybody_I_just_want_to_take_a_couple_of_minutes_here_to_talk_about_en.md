@@ -1,16 +1,3 @@
-# hey everybody I just want to take a couple of minutes here to talk about
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Tbim7Mwaue4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Tbim7Mwaue4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 19:36:22 |
-
----
-
 hey everybody I just want to take a couple of minutes here to talk about something that happens far too often to good L biding citizens airport gun cases
 
 now I want to encourage you to subscribe to our YouTube channel for more great content just like this today I'm going to talk to you about the ins and outs about how to defend an airport gun case

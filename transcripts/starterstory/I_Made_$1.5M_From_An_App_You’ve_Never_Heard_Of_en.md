@@ -1,16 +1,3 @@
-# I Made $1.5M From An App You’ve Never Heard Of
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bq3-qH-CpYQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bq3-qH-CpYQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:11:03 |
-
----
-
 95% of you do not realize that this is an industry. This is Jordan, and he's made over 1.5 million dollars from a single app. But, I can guarantee you've never heard of it.
 
 >> There's no mobile app. You cannot download it on your phone. Here's the thing. Jordan didn't just build another trending idea. He found a customer that almost nobody is building for. Then, [music] he went all in, and it worked.

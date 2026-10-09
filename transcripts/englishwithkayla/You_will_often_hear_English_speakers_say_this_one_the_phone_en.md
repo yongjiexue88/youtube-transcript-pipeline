@@ -1,16 +1,3 @@
-# You will often hear English speakers say this one the phone
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zLP_rnVfaSA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zLP_rnVfaSA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:03:07 |
-
----
-
 when i hear americans in the workplace
 
 say that they have described something

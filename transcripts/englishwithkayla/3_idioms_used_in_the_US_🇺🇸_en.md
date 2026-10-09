@@ -1,16 +1,3 @@
-# 3 idioms used in the US 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DWwt2UK9wKk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DWwt2UK9wKk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:51:41 |
-
----
-
 useful what does it mean to drop a
 
 bombshell so when you drop a bombshell

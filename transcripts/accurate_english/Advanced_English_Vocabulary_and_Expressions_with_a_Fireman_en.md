@@ -1,16 +1,3 @@
-# Advanced English Vocabulary and Expressions with a Fireman
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Yp9gsjwAZL0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Yp9gsjwAZL0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:42:14 |
-
----
-
 hi i'm lisa in this video you will
 
 listen to another conversation that i had with a native speaker in los angeles and i will teach you the everyday comment expressions that he was using these are the types of things that are generally not taught in english classes

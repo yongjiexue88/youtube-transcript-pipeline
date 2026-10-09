@@ -1,16 +1,3 @@
-# Learn 20 advanced English adjectives with examples
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `50xokh4QGw0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=50xokh4QGw0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:57:11 |
-
----
-
 in order to become a fluent English
 
 speaker you need to sound confident and

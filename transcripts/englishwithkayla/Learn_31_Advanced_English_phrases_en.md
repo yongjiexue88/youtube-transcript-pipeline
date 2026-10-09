@@ -1,16 +1,3 @@
-# Learn 31 Advanced English phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MIbX2qn2nC8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MIbX2qn2nC8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:48:41 |
-
----
-
 there's a better way to study English
 
 than just reading a dictionary in

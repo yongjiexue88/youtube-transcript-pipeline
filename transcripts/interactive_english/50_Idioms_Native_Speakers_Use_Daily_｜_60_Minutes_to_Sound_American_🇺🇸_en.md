@@ -1,16 +1,3 @@
-# 50 Idioms Native Speakers Use Daily | 60 Minutes to Sound American 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BcUlPYGdsJo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BcUlPYGdsJo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:44:22 |
-
----
-
 I have an incredible lesson for you teaching you over 50 different idioms and expressions that you can use in casual conversation and I'll teach you the meaning, talk about how they're used as well as give you a variety of examples. And because we're talking about vocabulary that is often used in spoken English, let's begin with some idioms and expressions that have the word speak or talk. I am going to speak
 
 my mind and I'm going to tell you exactly what I think about these idioms

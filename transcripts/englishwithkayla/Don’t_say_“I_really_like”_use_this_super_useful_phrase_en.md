@@ -1,16 +1,3 @@
-# Don’t say “I really like” use this super useful phrase
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `o-Vt5POl1IA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=o-Vt5POl1IA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:50:46 |
-
----
-
 in simple american english that you
 
 learned in your classroom you might just say i really enjoy walking

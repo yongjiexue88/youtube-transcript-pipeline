@@ -1,16 +1,3 @@
-# SPEAKING ACTIVITY 💬  Practice using descriptive vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `lJEUAKa_0As` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=lJEUAKa_0As) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:06:17 |
-
----
-
 so many people tell me that they want to
 
 practice their speaking skills but they

@@ -1,16 +1,3 @@
-# How to describe people with advanced English adjectives | Learn common English adjectives
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PBGYPKsa6K0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PBGYPKsa6K0) |
-| **Language** | Vietnamese (auto-generated) (vi) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:07:51 |
-
----
-
 khi bé yêu bên use English for four
 
 years of Mini và New Zealand incorrectly

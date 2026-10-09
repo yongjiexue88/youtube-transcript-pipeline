@@ -1,16 +1,3 @@
-# Focus On What You Can Control And Start Crushing Debt | March 16, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0jNs9D585F8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0jNs9D585F8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:40:59 |
-
----
-
 [music] >> Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

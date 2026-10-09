@@ -1,16 +1,3 @@
-# Sound Fluent in English – Use These (C1) Phrases Like a Native!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Bt8OTU34WKw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Bt8OTU34WKw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:02:09 |
-
----
-
 let's learn some Advanced C1 phrases to
 
 help you build your vocabulary and all

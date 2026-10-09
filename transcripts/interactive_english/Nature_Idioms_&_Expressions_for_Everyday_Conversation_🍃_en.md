@@ -1,16 +1,3 @@
-# Nature Idioms & Expressions for Everyday Conversation 🍃
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Nl1tkEZxlbg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Nl1tkEZxlbg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:47:15 |
-
----
-
 today we are at this beautiful and amazing spot which is lake bled slovenia
 
 so we thought it'd be a great opportunity to talk to you about some useful expressions that are all related to nature what's up everyone my name is

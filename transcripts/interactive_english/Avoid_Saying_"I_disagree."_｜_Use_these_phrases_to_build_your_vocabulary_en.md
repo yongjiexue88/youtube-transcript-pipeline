@@ -1,16 +1,3 @@
-# Avoid Saying "I disagree." | Use these phrases to build your vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yBV3La0cNiM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yBV3La0cNiM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:50:35 |
-
----
-
 hey how's it going you know I'm doing
 
 pretty well how are you not bad you know

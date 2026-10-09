@@ -1,16 +1,3 @@
-# What's the difference between chatty vs talkative?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jGL1ehWcZus` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jGL1ehWcZus) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:02:02 |
-
----
-
 native english speakers won't necessarily say that they just talk a
 
 lot they might use these two advanced

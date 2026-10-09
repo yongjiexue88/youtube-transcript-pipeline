@@ -1,16 +1,3 @@
-# Impressive B2 Vocab That Makes You Stand Out 🤩
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `V4H8gbf0PP4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=V4H8gbf0PP4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:51:47 |
-
----
-
 Let's learn some B2 vocabulary to help you supercharge your fluency. And now let's turn our attention to some useful B2 adverbs like simultaneously. This
 
 refers to something that is happening or being done at exactly the same time. It

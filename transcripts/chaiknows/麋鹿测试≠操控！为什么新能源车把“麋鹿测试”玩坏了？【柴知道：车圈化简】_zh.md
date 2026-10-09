@@ -1,16 +1,3 @@
-# 麋鹿测试≠操控！为什么新能源车把“麋鹿测试”玩坏了？【柴知道：车圈化简】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `U0PK_3_NIbI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=U0PK_3_NIbI) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:35:21 |
-
----
-
 在瑞典每年大约有 5000～6000 头驼鹿会像这样
 
 一头撞在车上所以瑞典人发明了“驼鹿测试”结果不知道是哪位不认鹿的大哥把它翻译成了“麋鹿测试”

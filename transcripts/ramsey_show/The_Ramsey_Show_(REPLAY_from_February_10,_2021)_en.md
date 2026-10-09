@@ -1,16 +1,3 @@
-# The Ramsey Show (REPLAY from February 10, 2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4k4V2sDpSF4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4k4V2sDpSF4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:31:17 |
-
----
-
 this is the ramsay show [Music] you can be intentional about your character you can have money and a career you are the hero in
 
 your story [Music]

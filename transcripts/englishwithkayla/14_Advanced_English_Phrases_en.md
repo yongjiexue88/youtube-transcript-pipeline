@@ -1,16 +1,3 @@
-# 14 Advanced English Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Hynz3kTLAkE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Hynz3kTLAkE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:35:19 |
-
----
-
 You've been studying English for a while. You feel like you're studying the books, you're watching TV, you're listening to podcasts, you're watching movies in English, but you're just not advancing in your vocabulary. Well, today's lesson is for you. I'll teach you the advanced phrases that you can actually use in your everyday conversations that are not normally taught by English teachers.
 
 I've been writing these phrases down as I use them in my own conversations, so I'm so excited to teach them to you today. Make sure to visit englishwithkayla.com if you want to learn more about this list of phrases. Now, let's get started with the lesson. Our first phrase is so common in English.

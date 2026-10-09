@@ -1,16 +1,3 @@
-# Fast English speaking practice | repeat after me | Practice the American accent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3eXbRLF7Hh8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3eXbRLF7Hh8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:02:54 |
-
----
-
 do you wish that you sounded exactly
 
 like an american english speaker well

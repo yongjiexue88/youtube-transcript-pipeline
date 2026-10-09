@@ -1,16 +1,3 @@
-# I Became A Venture Capitalist With Only $1,000
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `p3xa6mpxvOY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=p3xa6mpxvOY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:32:20 |
-
----
-
 this guy turned $1,000 into a $60
 
 million investment fund through a

@@ -1,16 +1,3 @@
-# Zero to $1.1B from Flipping Websites
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Km0FNcBI9CM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Km0FNcBI9CM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:34:21 |
-
----
-
 have helped people sell over a billion dollars of businesses meet Thomas he went from flipping websites in his dorm room for a hundred bucks to selling over one billion dollars in online businesses and it took a very very long time to get to that stage he invited me up to his office in New York City to tell his story and show me how anyone can become rich by buying and selling businesses my first deal was selling like a hundred dollars into 500 and now we regularly
 
 close eight figure transactions you are not going to make your living long-term buying things for a hundred dollars and selling them to 200 you will do if you can apply that same skill to buy for a million and sell for two million because all you're really trying to do is learn the process he shares a master class on how to flip businesses for profit how to negotiate deals

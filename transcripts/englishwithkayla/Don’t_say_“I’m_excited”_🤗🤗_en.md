@@ -1,16 +1,3 @@
-# Don’t say “I’m excited” 🤗🤗
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `y99zPyxh7hM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=y99zPyxh7hM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:53:15 |
-
----
-
 here are three ways in english that you
 
 can sound very natural to say that you

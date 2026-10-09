@@ -1,16 +1,3 @@
-# Managing Money Well Matters At Every Income Level | February 27, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TpGHXSCUy5g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TpGHXSCUy5g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:43:16 |
-
----
-
 [music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

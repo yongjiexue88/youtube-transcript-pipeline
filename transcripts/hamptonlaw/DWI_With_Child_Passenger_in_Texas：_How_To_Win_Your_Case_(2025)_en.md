@@ -1,16 +1,3 @@
-# DWI With Child Passenger in Texas: How To Win Your Case (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DbqG6SP8Rho` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DbqG6SP8Rho) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 14:00:07 |
-
----
-
 DWI with child passenger what is it is it a misdemeanor is it a felony is there a way to defend the
 
 case hi I'm Jeff Hampton with the Hampton law firm and I want to welcome you to our YouTube channel today I want to break down the ins and outs of the crime of DWI with child passenger and I want to welcome you to stay around to the end of this video because at the end of this video I'll give you a free eBook The Ultimate Guide to DWI defense in Texas okay now listen

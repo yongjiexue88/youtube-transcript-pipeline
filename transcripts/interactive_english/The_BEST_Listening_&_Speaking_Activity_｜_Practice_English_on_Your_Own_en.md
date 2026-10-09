@@ -1,16 +1,3 @@
-# The BEST Listening & Speaking Activity | Practice English on Your Own
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7K8Pe4WH6xs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7K8Pe4WH6xs) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:29:14 |
-
----
-
 Today I have a super cool, super amazing listening and speaking practice for you!
 
 Now every time I do a lesson, I'm just going to do that.

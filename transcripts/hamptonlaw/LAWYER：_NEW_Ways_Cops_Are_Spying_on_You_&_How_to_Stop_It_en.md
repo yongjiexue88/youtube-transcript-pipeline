@@ -1,16 +1,3 @@
-# LAWYER: NEW Ways Cops Are Spying on You & How to Stop It
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cgFPL-Mv47Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cgFPL-Mv47Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:02:10 |
-
----
-
 Let's do a quick thought experiment. You wake up. You check the weather. You drive to work. You grab a coffee. You text a friend. And then you drive home.
 
 Now imagine I can reconstruct your entire day. Where you went, who you were near, what route you took, what stores you entered, and which devices were around you without ever hacking you like some villain. Not because I'm a genius, but because the modern world leaves receipts. And you know who loves receipts more than the IRS? The police.

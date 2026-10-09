@@ -1,16 +1,3 @@
-# There's Always Hope When Facing Financial Hardship | February 13, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CtEilgeUYeE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CtEilgeUYeE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:45:13 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

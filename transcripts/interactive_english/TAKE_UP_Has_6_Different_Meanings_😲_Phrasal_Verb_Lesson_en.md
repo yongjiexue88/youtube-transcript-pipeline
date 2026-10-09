@@ -1,16 +1,3 @@
-# TAKE UP Has 6 Different Meanings 😲 Phrasal Verb Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3N7anhAkGE0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3N7anhAkGE0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:47:52 |
-
----
-
 today we're talking about this phrasal
 
 verb and its many different meanings

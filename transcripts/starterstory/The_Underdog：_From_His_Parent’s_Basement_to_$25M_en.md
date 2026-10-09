@@ -1,16 +1,3 @@
-# The Underdog: From His Parent’s Basement to $25M
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Gv2fzC96Z40` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Gv2fzC96Z40) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:31:38 |
-
----
-
 all right David what's your
 
 story I was working from my parents

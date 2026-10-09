@@ -1,16 +1,3 @@
-# Top 10 studying tips to learn English fast
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jWIO2uFEctQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jWIO2uFEctQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:04:06 |
-
----
-
 hi friends my name's kayla i'm an
 
 american english teacher i'm also a

@@ -1,16 +1,3 @@
-# HOW TO IMPROVE YOUR LISTENING SKILLS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `E-CLHF7zSOA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=E-CLHF7zSOA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:49:32 |
-
----
-
 all right so hello hello welcome to
 
 today's lesson my name is Wes from

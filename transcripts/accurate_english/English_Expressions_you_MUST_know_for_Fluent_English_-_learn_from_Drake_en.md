@@ -1,16 +1,3 @@
-# English Expressions you MUST know for Fluent English - learn from Drake
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4dGwNWLC0kY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4dGwNWLC0kY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:42:40 |
-
----
-
 hi i'm lisa one of the best ways for you to reach the final level of english fluency is to
 
 listen to native speakers and to practice speaking like they speak in this video you will listen to a native speaker teaching you the meaning of some very common english expressions that native speakers use all the time also i

@@ -1,16 +1,3 @@
-# Help Support Free English Education
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fkStsgVPcOg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fkStsgVPcOg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:33:24 |
-
----
-
 what's up everyone thanks for joining us
 
 today we just wanted to make this quick

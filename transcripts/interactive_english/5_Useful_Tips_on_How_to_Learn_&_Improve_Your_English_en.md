@@ -1,16 +1,3 @@
-# 5 Useful Tips on How to Learn & Improve Your English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `70UK4Pqtm6Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=70UK4Pqtm6Y) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:49:32 |
-
----
-
 Do you want to know how you can improve your English skills?
 
 Today we're going to give you 5 tips on how you can do just that.

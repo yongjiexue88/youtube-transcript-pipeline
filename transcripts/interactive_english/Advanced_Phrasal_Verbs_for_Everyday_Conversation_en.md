@@ -1,16 +1,3 @@
-# Advanced Phrasal Verbs for Everyday Conversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CZapHyjqdA4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CZapHyjqdA4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:05:09 |
-
----
-
 I want to teach you many different phrasal verbs. Not only that, I want to teach you some super advanced phrasal verbs that you can use in everyday conversation, but these are phrases that
 
 are really going to help you be more descriptive. And if you are someone who enjoys building your vocabulary, please subscribe, turn on notifications, then I can become your teacher. My name is Wes.

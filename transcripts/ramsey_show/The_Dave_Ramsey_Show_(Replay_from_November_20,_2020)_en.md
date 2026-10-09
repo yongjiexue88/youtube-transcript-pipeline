@@ -1,16 +1,3 @@
-# The Dave Ramsey Show (Replay from November 20, 2020)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MNPfY1g4uCc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MNPfY1g4uCc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:32:03 |
-
----
-
 welcome to the dave ramsey show [Music] you can be intentional about your character you can have money and a career you are the hero in
 
 your story

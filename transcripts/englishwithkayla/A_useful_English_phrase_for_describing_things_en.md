@@ -1,16 +1,3 @@
-# A useful English phrase for describing things
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YvkfNMfavTE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YvkfNMfavTE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:47:03 |
-
----
-
 one of the most common phrases that
 
 English speakers use that's kind of funny is to say that something is an

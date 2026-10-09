@@ -1,16 +1,3 @@
-# “尾货”里有多少假货，到底能不能买？一线从业者讲尾货的秘密【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BUZ9OdeqjGI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BUZ9OdeqjGI) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:34:44 |
-
----
-
 完全一样的两件衣服“外贸尾单”只要官网价格的 3 折
 
 甚至同一个品牌差不多的衣服

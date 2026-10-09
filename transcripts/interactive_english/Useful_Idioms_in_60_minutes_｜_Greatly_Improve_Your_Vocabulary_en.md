@@ -1,16 +1,3 @@
-# Useful Idioms in 60 minutes | Greatly Improve Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kE7XwFvTOPc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kE7XwFvTOPc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:05:08 |
-
----
-
 Today, you are going to learn a lot of
 
 idioms, and many of these idioms are from the United States, which is where I am from. My name is Wes, and the channel is Interactive English. And if you enjoy learning idioms, please subscribe, turn on notifications, so that way I can become your teacher. So, I am going to

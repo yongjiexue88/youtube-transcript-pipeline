@@ -1,16 +1,3 @@
-# Discipline Today Can Rewrite Your Financial Future | February 17, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PwqIGhBejj0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PwqIGhBejj0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:44:47 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

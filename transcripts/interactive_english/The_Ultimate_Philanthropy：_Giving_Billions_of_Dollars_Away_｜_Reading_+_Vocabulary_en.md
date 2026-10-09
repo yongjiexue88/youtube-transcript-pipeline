@@ -1,16 +1,3 @@
-# The Ultimate Philanthropy: Giving Billions of Dollars Away | Reading + Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QKF1cEYD614` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QKF1cEYD614) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:24:21 |
-
----
-
 hello and welcome to today's lesson my name is
 
 wes this is interactive english and the channel it's all about trying to help you practice and improve your english skills and and really just try to work toward english fluency and if this is your first time here please let me know tell me your name uh you can write it in the chat if you're watching this later write it in the comments i love hearing from new people uh here at the channel and i want to

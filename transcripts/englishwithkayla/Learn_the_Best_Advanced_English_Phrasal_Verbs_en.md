@@ -1,16 +1,3 @@
-# Learn the Best Advanced English Phrasal Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `r-h-FGkMXQQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=r-h-FGkMXQQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:06:53 |
-
----
-
 mastering english phrasal verbs is the
 
 best way to increase your vocabulary and

@@ -1,16 +1,3 @@
-# English word stress with Idioms | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TeTIoPLL4z0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TeTIoPLL4z0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:10:45 |
-
----
-
 today I'd like to teach you a new lesson to make you sound more like a native speaker of English most of my students complain that they don't really feel like they're speaking like a native speaker because they're not using a lot of everyday Expressions that native speakers use I encourage you to keep studying a lot of different expressions and try to use them as much as possible in
 
 this video I will teach you five new expressions and we will use these idiomatic expressions following the new rule that I'm going to teach you in this video let's learn the rule about which words we stress when we have an adjective and a noun for example if we

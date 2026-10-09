@@ -1,16 +1,3 @@
-# I used this English phrase ￼to make plans 🗓️✏️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `q3_THSBoLrc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=q3_THSBoLrc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:18:15 |
-
----
-
 the other day my friend said to me hey do you have plans for tomorrow and I
 
 said well I was planning on going to

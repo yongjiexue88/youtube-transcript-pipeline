@@ -1,16 +1,3 @@
-# Advanced Adjectives to Describe Personality & Behavior
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_vvKQPMBavU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_vvKQPMBavU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:01:03 |
-
----
-
 welcome to today's lesson in which i
 
 want to teach you some useful and

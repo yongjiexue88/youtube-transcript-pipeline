@@ -1,16 +1,3 @@
-# Advance English Vocabulary | Learn Clothing Vocabulary with pictures
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dcsGf3FOjFY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dcsGf3FOjFY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:07:13 |
-
----
-
 hi friends welcome back to english with kayla my name is kayla i'm an american
 
 english teacher and today i'm going to teach you all about the english clothing vocabulary that you have never

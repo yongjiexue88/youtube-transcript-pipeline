@@ -1,16 +1,3 @@
-# Be careful when calling something messy in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RSOLPGP7dBk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RSOLPGP7dBk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:02:16 |
-
----
-
 americans won't just say that something
 
 is messy they might say my kitchen is

@@ -1,16 +1,3 @@
-# 25 Words Learners Mispronounce | American Pronunciation + Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VOwv_fWCy1w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VOwv_fWCy1w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:27:47 |
-
----
-
 let's talk about 25 words that are
 
 difficult to pronounce that's coming up

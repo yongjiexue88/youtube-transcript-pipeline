@@ -1,16 +1,3 @@
-# Most popular phrasal verbs quiz
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4pNgLzB3Lt8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4pNgLzB3Lt8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:50:36 |
-
----
-
 half of the sentences in this English lesson will not make any sense that
 
 means today's lesson is a phrasal verb quiz I'm going to quiz you on some sentences and you get to decide which phrasal verb makes sense and I'll try to trick you in this quiz so be careful I've chosen some of the most important phrasal verbs in the English language for today's quiz let's see how many phrasal verbs you know in today's English lesson in today's English lesson you'll see a sent sentence on screen with a blank space I'm going to give you

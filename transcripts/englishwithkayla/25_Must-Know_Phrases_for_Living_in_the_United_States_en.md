@@ -1,16 +1,3 @@
-# 25 Must-Know Phrases for Living in the United States
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1XwkScHf5Bw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1XwkScHf5Bw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:48:01 |
-
----
-
 when you're learning English it's important not only just to study the
 
 language but to study the culture of the

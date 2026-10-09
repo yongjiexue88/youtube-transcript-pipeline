@@ -1,16 +1,3 @@
-# How American English speakers respond to a question positively
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7Dlt3pfgJI0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7Dlt3pfgJI0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:03:23 |
-
----
-
 so americans don't just say yes when
 
 they want to answer a question

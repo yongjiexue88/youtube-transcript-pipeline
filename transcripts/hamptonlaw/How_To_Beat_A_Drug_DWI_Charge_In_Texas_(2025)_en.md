@@ -1,16 +1,3 @@
-# How To Beat A Drug DWI Charge In Texas (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ogyDIW_dU-U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ogyDIW_dU-U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 14:01:22 |
-
----
-
 can you be arrested for DWI in Texas when you haven't been
 
 drinking hi I'm Jeff Hampton with the Hampton Law Firm I want to thank you for joining us today on our YouTube channel today I want to talk about exactly that is it possible to be arrested for DWI when you haven't had a single drink by the way if you wait around to the end of this video I'll also give you a free ebook the ultimate guide to DWI defense

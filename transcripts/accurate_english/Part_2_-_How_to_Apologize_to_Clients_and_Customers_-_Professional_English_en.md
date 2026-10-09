@@ -1,16 +1,3 @@
-# Part 2 - How to Apologize to Clients and Customers - Professional English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JmIaCnBuDeI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JmIaCnBuDeI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:58:14 |
-
----
-
 in this video I would like to teach you some common English expressions for apologizing in a business situation to
 
 your clients to your customers and to your co-workers in the previous video I

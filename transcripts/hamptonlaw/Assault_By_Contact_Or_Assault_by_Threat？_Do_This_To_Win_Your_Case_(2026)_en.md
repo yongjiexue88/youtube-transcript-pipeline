@@ -1,16 +1,3 @@
-# Assault By Contact Or Assault by Threat? Do This To Win Your Case (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fCNgqdGzeKo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fCNgqdGzeKo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:38:42 |
-
----
-
 assault by contact assault by
 
 threat I'm Jeff Hampton with the Hampton Law Firm today I want to talk to you about the subject have you been charged with assault by contact or an assault by threat is it possible to be able to get those charges dismissed by the way if you wait around till the end of this video I'll also provide you a free ebook

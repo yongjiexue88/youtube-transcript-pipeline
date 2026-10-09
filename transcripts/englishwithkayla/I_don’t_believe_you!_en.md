@@ -1,16 +1,3 @@
-# I don’t believe you!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PsM5D8nlB0E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PsM5D8nlB0E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:15:22 |
-
----
-
 so here's where learning English from a textbook and learning English from a teacher like myself that will show you how you need to understand these phrases
 
 culturally is quite different let's take

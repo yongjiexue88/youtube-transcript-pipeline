@@ -1,16 +1,3 @@
-# How to Spot Biased Jurors and Get Them Excused
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dMZmja7NIC4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dMZmja7NIC4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:42:10 |
-
----
-
 winning the jury selection game how do
 
 identify jurors that hold a bias against you and how to secure a winning verdict

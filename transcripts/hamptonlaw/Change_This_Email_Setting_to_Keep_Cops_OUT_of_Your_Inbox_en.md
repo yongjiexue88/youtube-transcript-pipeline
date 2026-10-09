@@ -1,16 +1,3 @@
-# Change This Email Setting to Keep Cops OUT of Your Inbox
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pxmz84O3kzg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pxmz84O3kzg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:02:29 |
-
----
-
 Imagine if police could walk into a storage unit, open a box labeled with your name, and read all your old letters, all without a warrant, no judge, no probable cause, no warning.
 
 That sounds unconstitutional, and it is.

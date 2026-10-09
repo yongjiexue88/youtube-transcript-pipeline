@@ -1,16 +1,3 @@
-# Make a good impression in English #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `y1V90UpzUfo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=y1V90UpzUfo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:23:55 |
-
----
-
 you want to make a great impression in
 
 English here are some friendly phrases

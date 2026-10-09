@@ -1,16 +1,3 @@
-# 视频网站的“蓝光”是怎么骗你的？——视频画质全解析【柴知道】How did the "Blu-ray" lie to you? ——Full analysis of video quality
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9IIAdstFGbc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9IIAdstFGbc) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:48:10 |
-
----
-
 不记得从哪天开始几个主流视频网站悄咪咪地在视频清晰度的选项后面加上了“蓝光”两个字但细看起来总觉得它好像还没有你自己下载的资源清晰所以我们对这种诡计心生疑惑到底怎么样才算是蓝光为什么有些 1080P 视频还是很糊如果能搞懂这个问题那不光能明白视频网站是怎么逗你的还能了解怎么衡量视频画质的好坏视频文件
 
 名里这一长串的东西到底是啥平时下载的 MP4 和 MKV 到底哪个更清晰为了把跟视频画质有关的故事梳理清楚本期的内容会稍微有点长那么话不多说开始吧

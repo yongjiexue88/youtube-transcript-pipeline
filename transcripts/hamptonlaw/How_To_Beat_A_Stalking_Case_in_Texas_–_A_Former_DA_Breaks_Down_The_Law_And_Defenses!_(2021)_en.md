@@ -1,16 +1,3 @@
-# How To Beat A Stalking Case in Texas – A Former DA Breaks Down The Law And Defenses! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0YZOgtC86UQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0YZOgtC86UQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:09:45 |
-
----
-
 hello I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I'm going to talk to you about the subject stalking what is the stalking law in Texas how do you defend it what are your options thanks for joining us if you wait around till the end of this video I'll also provide you a free ebook what to do if you have been charged with a crime in Texas okay okay
 
 let's jump right into this let's break down how the stocking laws work in Texas now I'm going to tell you when you look at the subject of stalking there's a very fine line between the crime of stalking and the crime of harassment very fine line okay so um one of the things we're going

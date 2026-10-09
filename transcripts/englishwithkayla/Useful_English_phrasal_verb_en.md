@@ -1,16 +1,3 @@
-# Useful English phrasal verb
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ABillIWeei4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ABillIWeei4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:05:53 |
-
----
-
 okay just bear with me while i respond
 
 back to this email and then we'll get started

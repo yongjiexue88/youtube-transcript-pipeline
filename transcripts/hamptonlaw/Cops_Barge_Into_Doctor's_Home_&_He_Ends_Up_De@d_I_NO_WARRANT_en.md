@@ -1,16 +1,3 @@
-# Cops Barge Into Doctor's Home & He Ends Up De@d I NO WARRANT
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NVI9vNE739o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NVI9vNE739o) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:15:59 |
-
----
-
 Okay. Okay. Just a second. Just a second.
 
 >> Yeah. One resisting, one resisting.

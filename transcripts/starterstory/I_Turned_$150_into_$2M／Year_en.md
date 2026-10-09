@@ -1,16 +1,3 @@
-# I Turned $150 into $2M/Year
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8yCXyCN_NR0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8yCXyCN_NR0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:28:44 |
-
----
-
 this guy turned $1150 into a $2 million
 
 AI app but what's even crazier is he

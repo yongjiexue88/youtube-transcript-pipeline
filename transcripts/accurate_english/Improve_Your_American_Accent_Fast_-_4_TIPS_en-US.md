@@ -1,16 +1,3 @@
-# Improve Your American Accent Fast - 4 TIPS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `h08SpPmQNwo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=h08SpPmQNwo) |
-| **Language** | English (United States) (en-US) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-03 07:42:53 |
-
----
-
 - Hi, I'm Lisa.
 
 In this video, you will learn four tips that will help you improve your accent fast.

@@ -1,16 +1,3 @@
-# Learn Tag Questions to Improve Your Fluency | Advanced Grammar
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QtuPSOOe-vw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QtuPSOOe-vw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:39:42 |
-
----
-
 all right I think I think everything is
 
 working now hello and welcome to today's

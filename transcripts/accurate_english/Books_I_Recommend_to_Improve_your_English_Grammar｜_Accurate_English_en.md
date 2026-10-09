@@ -1,16 +1,3 @@
-# Books I Recommend to Improve your English Grammar| Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UmPr1Ds1yQw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UmPr1Ds1yQw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:06:33 |
-
----
-
 if your English is already pretty fluent and your very advanced but you're still
 
 making some final advanced level grammar mistakes you're going to still feel insecure about your English there are some grammar books that I'd like to recommend to you these are books that I have been using for many years in teaching my classes and I believe they will help you one of the typical grammar

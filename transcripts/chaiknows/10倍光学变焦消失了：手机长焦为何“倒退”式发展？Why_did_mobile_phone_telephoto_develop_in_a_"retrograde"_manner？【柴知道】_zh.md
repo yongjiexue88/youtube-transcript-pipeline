@@ -1,16 +1,3 @@
-# 10倍光学变焦消失了：手机长焦为何“倒退”式发展？Why did mobile phone telephoto develop in a "retrograde" manner?【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qlLyDmme1Wk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qlLyDmme1Wk) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:40:18 |
-
----
-
 2019 年“一代神机”华为 P30 Pro 发布了
 
 它搭载了当年十分新奇的潜望式长焦镜头拥有 5 倍光学变焦能力一举让华为杀入高端手机市场

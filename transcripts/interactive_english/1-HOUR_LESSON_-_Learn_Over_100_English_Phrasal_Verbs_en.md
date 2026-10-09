@@ -1,16 +1,3 @@
-# 1-HOUR LESSON - Learn Over 100 English Phrasal Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DSJXxLHAJCY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DSJXxLHAJCY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:53:01 |
-
----
-
 buckle up that's a phrasal verb because
 
 I have a monster vocabulary lesson for

@@ -1,16 +1,3 @@
-# How to Use Modal Verbs | Should - Could - Would
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Y91wz9h0xLI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Y91wz9h0xLI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:46:20 |
-
----
-
 all right hello hello hello
 
 glad happy to be back hope you guys are

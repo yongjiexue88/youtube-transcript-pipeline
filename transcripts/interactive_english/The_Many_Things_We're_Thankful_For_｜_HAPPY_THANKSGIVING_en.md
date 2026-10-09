@@ -1,16 +1,3 @@
-# The Many Things We're Thankful For | HAPPY THANKSGIVING
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hMedupeK6Yo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hMedupeK6Yo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:39:32 |
-
----
-
 I rely I don't know that's a good
 
 question I think it says we're live

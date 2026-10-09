@@ -1,16 +1,3 @@
-# Peace Of Mind Will Always Override Taking On Debt | November 21, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dQka1iUXur8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dQka1iUXur8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:57:36 |
-
----
-
 [music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

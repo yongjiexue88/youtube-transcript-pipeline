@@ -1,16 +1,3 @@
-# unauthorized use of a motor vehicle auto theft what's the difference have you
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jb2kkQYrpC0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jb2kkQYrpC0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 15:58:41 |
-
----
-
 unauthorized use of a motor vehicle auto theft what's the difference have you been charged with one of these
 
 offenses listen if you are facing an unauthorized use of a motor vehicle in Texas you need to know what the law is and my name is Jeff Hampton with the Hampton law firm and today I want to go over with you the ins and outs of the crime of unauthorized use of a motor vehicle what does the State of Texas have to prove what is it that they would have to show in order to convict you and

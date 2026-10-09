@@ -1,16 +1,3 @@
-# Speak English Confidently: Daily Life Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xxRSGTxaLJE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xxRSGTxaLJE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:34:18 |
-
----
-
 Hey, snap out of it. You look sharp.
 
 We're doing it for the little guys. In today's English lesson, I'm going to teach you 14 natural idioms that will

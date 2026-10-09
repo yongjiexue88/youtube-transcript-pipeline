@@ -1,16 +1,3 @@
-# USB-C 一统天下❌ 加剧混乱✅ 为什么C口数据线还是不能混用？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fHHJnQjNNI0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fHHJnQjNNI0) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:37:38 |
-
----
-
 这是我们全公司最贵的一根顶配 USB-C 数据线支持 40Gbps 的高速传输文件
 
 和最高 240W 的功率充电

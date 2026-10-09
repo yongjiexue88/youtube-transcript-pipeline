@@ -1,16 +1,3 @@
-# Most common spoken English words | American English filler words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WxpFEq25vfc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WxpFEq25vfc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:49:58 |
-
----
-
 let me teach you this secret about the way that native English speakers speak
 
 in their everyday English the most

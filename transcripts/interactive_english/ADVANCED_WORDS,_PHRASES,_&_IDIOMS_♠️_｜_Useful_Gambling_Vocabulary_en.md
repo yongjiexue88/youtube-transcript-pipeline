@@ -1,16 +1,3 @@
-# ADVANCED WORDS, PHRASES, & IDIOMS ♠️ | Useful Gambling Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Mi2o00wn60E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Mi2o00wn60E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:50:27 |
-
----
-
 how well do you know your gambling
 
 vocabulary let's find out because I want

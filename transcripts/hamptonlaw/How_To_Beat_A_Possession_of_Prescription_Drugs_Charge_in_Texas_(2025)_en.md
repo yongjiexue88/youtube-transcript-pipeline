@@ -1,16 +1,3 @@
-# How To Beat A Possession of Prescription Drugs Charge in Texas (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `byN3J9Y6hFc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=byN3J9Y6hFc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 15:36:19 |
-
----
-
 were you arrested for possession of prescription drugs was it illegal why didn't the police understand what was going on is there a way to beat your
 
 case hi I'm Jeff Hampton with the Hampton Law Firm today I want to I want to welcome you to our YouTube channel and thank you for joining us but I want to talk to you about something that happens very frequently and that is someone being arrested and charged with possession of prescription drugs and listen that there's a lot here that we'll go through but if you wait around to

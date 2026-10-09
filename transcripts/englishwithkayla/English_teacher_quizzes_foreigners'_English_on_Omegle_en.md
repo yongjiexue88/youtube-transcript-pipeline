@@ -1,16 +1,3 @@
-# English teacher quizzes foreigners' English on Omegle
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BhdBHBkpu8c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BhdBHBkpu8c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:00:51 |
-
----
-
 hello hey what's up you seem nice yeah people from switzerland have like
 
 just amazing english people from switzerland don't speak english how's my english in today's english lesson i am doing something my mom told me never to do

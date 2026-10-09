@@ -1,16 +1,3 @@
-# Vocabulary - however, nevertheless, nonetheless, in addition, moreover, furthermore
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nLxL-O7OzWY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nLxL-O7OzWY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:26:55 |
-
----
-
 [Music] Hey everyone, my name is Wes from interactiveenglishvideos.com and today I have a a vocabulary lesson
 
 for you, but it's also a lesson to help you improve your overall English fluency because I'm going to talk to you about these words right here. And they are very important transition words. They are all adverbs and we use them quite often because they make our speech and our writing much easier to understand.

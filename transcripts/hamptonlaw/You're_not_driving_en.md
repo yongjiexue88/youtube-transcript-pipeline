@@ -1,16 +1,3 @@
-# You're not driving
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FiVUjbMoQvo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FiVUjbMoQvo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:23:00 |
-
----
-
 You're not driving. You're just scrolling your phone, riding shotgun.
 
 Then flashing lights, sirens, and

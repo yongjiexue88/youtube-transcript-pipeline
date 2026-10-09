@@ -1,16 +1,3 @@
-# Super Advanced Vocabulary that will BLOW YOUR MIND 🤯
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4gVXkiayVAc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4gVXkiayVAc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:01:40 |
-
----
-
 I have some vocabulary for you that's going to blow your mind. Well, I I say
 
 that and this is why I say that you are highly proficient if you know these words, but I think that you are very knowledgeable when it comes to vocabulary. So, some of them you may be familiar with, but if you are someone who enjoys building your vocabulary, please subscribe to the channel, turn on notifications, that way I can become your teacher. My name is Wes. The channel is Interactive English.

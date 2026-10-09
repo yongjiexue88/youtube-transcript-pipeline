@@ -1,16 +1,3 @@
-# 手机为什么会被冻关机？把7台手机塞进冰箱后，我们发现事情没那么简单 Why does the mobile phone freeze to shut down?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4INQjHkPGh8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4INQjHkPGh8) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:45:19 |
-
----
-
 这是一个真实的故事在几年前的一个冬夜在柴司打了一天工的小陈走进了零下十度的寒风掏出手机准备打个车
 
 在苦等 15 分钟后他的手机冻关机了你可能也经历过类似的场景这就是小陈要做这期选题的最初想法

@@ -1,16 +1,3 @@
-# How to Pronounce -ed Endings | Improve Your Pronunciation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `39gthPv9iSg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=39gthPv9iSg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:51:21 |
-
----
-
 hey all right hello and welcome good
 
 morning good afternoon or good evening

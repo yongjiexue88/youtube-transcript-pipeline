@@ -1,16 +1,3 @@
-# 12 common English phrases to sound more natural
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qW2SRUYV8tY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qW2SRUYV8tY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:59:13 |
-
----
-
 do you ever feel awkward in your english
 
 conversations well it might be because

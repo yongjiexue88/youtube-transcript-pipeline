@@ -1,16 +1,3 @@
-# Advanced Listening & Speaking Activity | Practice English on Your Own
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DMg_wrqwCK0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DMg_wrqwCK0) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:38:13 |
-
----
-
 How are your listening skills?  Do you feel like you could use some practice?
 
 Because if you do, I have a really really really really really awesome, really fun  listening practice.

@@ -1,16 +1,3 @@
-# Useful Shopping Idioms So You Can Shop Till You Drop 🛍️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3_-BR1tDXbU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3_-BR1tDXbU) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:20:30 |
-
----
-
 - Do you like shopping like I do?
 
 Because if you do, I have some new shopping idioms for you.

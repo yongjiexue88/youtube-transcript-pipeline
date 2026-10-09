@@ -1,16 +1,3 @@
-# Confusing Phrasal Verbs with Similar Meanings | Improve English Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `E6kikSWsBbM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=E6kikSWsBbM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:24:30 |
-
----
-
 we need to have a talk about phrasal
 
 verbs okay so phrasal verbs can be very

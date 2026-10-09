@@ -1,16 +1,3 @@
-# Advanced Adjectives to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `958yGO_JC8o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=958yGO_JC8o) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:07:26 |
-
----
-
 today's vocabulary lesson is all about
 
 helping you be a little more precise

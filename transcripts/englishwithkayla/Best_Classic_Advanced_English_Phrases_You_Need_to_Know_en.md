@@ -1,16 +1,3 @@
-# Best Classic Advanced English Phrases You Need to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fbUqw8CQOf8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fbUqw8CQOf8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:41:42 |
-
----
-
 in today's lesson we'll Master 20
 
 classic English phrases these phrases

@@ -1,16 +1,3 @@
-# LAWYER: Say THESE WORDS When Cops Come Knocking
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `09GJWmcPLMo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=09GJWmcPLMo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:36:11 |
-
----
-
 can I refuse to answer a cop who shows up at my front door imagine this here
 
 you are you're at home relaxing sitting on your couch watching TV as you sit there suddenly you see a what looks like a patrol car pull up to your house two

@@ -1,16 +1,3 @@
-# A phrase that we can all use 🧠
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `__PqBz9s0pM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=__PqBz9s0pM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:15:15 |
-
----
-
 now here's one phrase I think that
 
 everyone across the world across different languages has a way to say the

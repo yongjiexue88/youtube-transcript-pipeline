@@ -1,16 +1,3 @@
-# To be hard on someone
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bRZbtuF8QbM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bRZbtuF8QbM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:14:06 |
-
----
-
 Have you ever heard the English phrase to be hard on someone? It might not mean
 
 exactly what you think. Listen up. So, if you are hard on someone, we use this phrase to say that you are criticizing them too much or you're expecting too

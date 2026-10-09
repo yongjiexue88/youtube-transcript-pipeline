@@ -1,16 +1,3 @@
-# 12 BAD Words to IMPROVE YOUR VOCABULARY
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MaVt_mzmGtg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MaVt_mzmGtg) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:52:35 |
-
----
-
 Today, I'm going to give you 12 words...Bad Words!
 
 That will help you expand your vocabulary and improve your English.

@@ -1,16 +1,3 @@
-# ChatGPT如何一本正经地胡说八道？它是怎么变身“懂王”的？【柴司Chaico】How does ChatGPT talk nonsense seriously?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Sn3SCeoLs-c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Sn3SCeoLs-c) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:47:13 |
-
----
-
 在 ChatGPT 刚发布没几天的时候我们就迫不及待地想考考它它给出的答案让我们沉默了一会因为它基本上总结了我们这一期视频的内容而且字通句顺言简意赅甚至当你追问的时候它还能给你列出个 1 2 3 条来而且这个 1 2 3 也跟我们写的差不多随着进一步的探索我们发现它还能帮你改 bug 做翻译算数学题
 
 写心灵鸡汤和垃圾小说这是我们第一次见到如此能说会道的 AI 模型像所有用户一样我们感受到了一些小小的震撼但再往下玩我们又发现它好像会不懂装懂比如当我们问它《资治通鉴》的第一句话是什么意思时它给出了这样一个回答不懂古文的人也许会被看起来如此有道理的解释蒙骗过去但实际上这是 ChatGPT 在一本正经地

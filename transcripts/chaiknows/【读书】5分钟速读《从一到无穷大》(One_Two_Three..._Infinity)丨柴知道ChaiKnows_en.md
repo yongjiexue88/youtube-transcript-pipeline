@@ -1,16 +1,3 @@
-# 【读书】5分钟速读《从一到无穷大》(One Two Three... Infinity)丨柴知道ChaiKnows
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_Xobq5mfeT4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_Xobq5mfeT4) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 14:37:01 |
-
----
-
 In 1897, Tompson through the cathode-ray tube experiment proved that the atom which has ever been regarded as the minimum unit of universe can still be split.
 
 In 1900, Planck has found that the transfer of energy isn't continuous, but there is a unsplittable unit called quantum.

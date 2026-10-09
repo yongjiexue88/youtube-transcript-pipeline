@@ -1,16 +1,3 @@
-# Protect Your Wallet From Other People’s Chaos | August 12, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wzIZ4W-wtuU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wzIZ4W-wtuU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:12:41 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

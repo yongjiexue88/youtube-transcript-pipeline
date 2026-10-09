@@ -1,16 +1,3 @@
-# The Ramsey Show (Replay for May 27, 2024)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `q7KkK0KG_EQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=q7KkK0KG_EQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:19:10 |
-
----
-
 [Music]
 
 brought to you by the every dollar app start budgeting for free

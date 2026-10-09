@@ -1,16 +1,3 @@
-# Did you "come through" on your promise? | #shorts #englishphrase
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `x1sTPDoUa5I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=x1sTPDoUa5I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:24:32 |
-
----
-
 when someone has done something that was helpful to you you can say that they have come through or they came through let me explain i didn't think she would
 
 finish her part of the project but she came through i don't think he's

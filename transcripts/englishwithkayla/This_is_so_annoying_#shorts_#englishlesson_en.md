@@ -1,16 +1,3 @@
-# This is so annoying #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9hIsDarND3w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9hIsDarND3w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:14:56 |
-
----
-
 what are some of your common pet peeves
 
 a pet peeve is something that is very

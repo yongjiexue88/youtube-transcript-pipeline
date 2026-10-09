@@ -1,16 +1,3 @@
-# Debt Always Comes With Strings Attached | September 9, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fm_CSNjYQpo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fm_CSNjYQpo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:08:56 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

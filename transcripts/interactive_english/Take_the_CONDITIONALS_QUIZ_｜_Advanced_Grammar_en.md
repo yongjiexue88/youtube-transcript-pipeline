@@ -1,16 +1,3 @@
-# Take the CONDITIONALS QUIZ | Advanced Grammar
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SkrEZ9enm1I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SkrEZ9enm1I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:35:09 |
-
----
-
 what's up everyone welcome to today's
 
 lesson my name is Wes this is

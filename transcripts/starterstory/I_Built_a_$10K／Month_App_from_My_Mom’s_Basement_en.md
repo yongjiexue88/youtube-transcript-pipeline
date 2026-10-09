@@ -1,16 +1,3 @@
-# I Built a $10K/Month App from My Mom’s Basement
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qeY283nBhIA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qeY283nBhIA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:25:46 |
-
----
-
 I taught myself how to code and I built two apps that now make me $10,000 a month all from my mom's basement. How did this guy teach himself to code and then build two apps to $10,000 a month?
 
 Well, the answer lies in how he spends his time. I spend 1 hour a day marketing and I generated over 300 million views and made a,000 videos. The secret is

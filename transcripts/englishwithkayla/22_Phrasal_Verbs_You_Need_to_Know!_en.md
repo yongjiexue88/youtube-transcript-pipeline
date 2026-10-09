@@ -1,16 +1,3 @@
-# 22 Phrasal Verbs You Need to Know!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EqdRbQBugKA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EqdRbQBugKA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:39:32 |
-
----
-
 If you are in that intermediate or in that advanced English learning range and you just feel like you can't make progress and when you speak with native speakers, you're not feeling super confident in your English, today's video is for you. I'm going to teach you 22 useful phrasal verbs. English speakers like myself are using phrasal verbs in every single English conversation. So, you need to study these.
 
 These will be useful to you. You're an adult English learner, so learning from dictionary or textbook just is not going to work anymore. It's not going to help you feel confident while speaking. Studying chunks of language in the way that native speakers speak is going to be useful.

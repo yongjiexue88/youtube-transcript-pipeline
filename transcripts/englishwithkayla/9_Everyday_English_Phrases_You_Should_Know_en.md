@@ -1,16 +1,3 @@
-# 9 Everyday English Phrases You Should Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `y35kICueR0U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=y35kICueR0U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:38:32 |
-
----
-
 Hi friends, it's time to get your act
 
 together. Do you know what that means?

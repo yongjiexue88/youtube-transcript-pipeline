@@ -1,16 +1,3 @@
-# A common English phrase
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `epLCbX1KrGE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=epLCbX1KrGE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:22:06 |
-
----
-
 listen up because this is a really good English phrase when you want to say that
 
 you are doing something thoroughly you

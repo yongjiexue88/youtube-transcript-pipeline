@@ -1,16 +1,3 @@
-# 10 common English proverbs you should know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BUw-EAmj-uo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BUw-EAmj-uo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:51:44 |
-
----
-
 hi I'm Lisa let's learn 10 common
 
 English proverbs understanding English

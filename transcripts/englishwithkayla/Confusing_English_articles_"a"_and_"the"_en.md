@@ -1,16 +1,3 @@
-# Confusing English articles "a" and "the"
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2svXgQDkgrc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2svXgQDkgrc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:58:04 |
-
----
-
 one of my biggest takeaways from working
 
 with Advanced English Learners is that

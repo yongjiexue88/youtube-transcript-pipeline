@@ -1,16 +1,3 @@
-# IN / ON / AT - How do I use prepositions of place?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `P3WXMvwCfto` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=P3WXMvwCfto) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:05:21 |
-
----
-
 hmm which preposition should we use to
 
 complete this sentence in on or at

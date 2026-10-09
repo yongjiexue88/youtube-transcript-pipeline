@@ -1,16 +1,3 @@
-# Learn 13 Professional English Expressions from a native speaker. (Part 2 of Ross interview)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-jP_0fGDKY4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-jP_0fGDKY4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:48:21 |
-
----
-
 hi i'm lisa the more english expressions
 
 you know the more confident you're going to feel about your english in this video we will learn many useful

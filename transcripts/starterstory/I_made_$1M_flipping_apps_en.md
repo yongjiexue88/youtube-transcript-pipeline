@@ -1,16 +1,3 @@
-# I made $1M flipping apps
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `plrni3IBEyI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=plrni3IBEyI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:18:39 |
-
----
-
 I made $1 million building and selling apps using this five-step strategy.
 
 >> Meet Dominica. While working a 9 toive job, he set out on a challenge to build

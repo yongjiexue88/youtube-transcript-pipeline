@@ -1,16 +1,3 @@
-# if you've ever thought I'll just ask for a lawyer and the police have to stop
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YtBfNKCzeMk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YtBfNKCzeMk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:33:05 |
-
----
-
 if you've ever thought I'll just ask for a lawyer and the police have to stop questioning me think again in fact what
 
 if the cops ignore your request for a lawyer Believe It or Not There are tricks legal tricks that cops can use to

@@ -1,16 +1,3 @@
-# Make Sure You Learn These Useful Clothing Phrasal Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pWsytfFH-GI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pWsytfFH-GI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:42:38 |
-
----
-
 today I am gonna talk to you about something that is very useful it can be
 
 very challenging but it's stuff that we should know and that is phrasal verbs

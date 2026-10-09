@@ -1,16 +1,3 @@
-# SUPER USEFUL PHRASES | Build Your Vocabulary | Ways to Say "Happening Soon"
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HuA6dmbPQac` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HuA6dmbPQac) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:15:15 |
-
----
-
 in today's lesson i want to talk to you about different ways that you can say that something is coming up that something is about to happen it could be
 
 a birthday or a festival or maybe even

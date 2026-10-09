@@ -1,16 +1,3 @@
-# If Cops Say "I Need to Pat You Down" -- Say THIS (Simple Script)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dY8pKbLFIJQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dY8pKbLFIJQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:54:43 |
-
----
-
 You're on the side of the road during a routine traffic stop. You did everything right. You handed over your license and you declined to answer questions. But just as the officer's writing you a ticket, he pauses, looks at you, demands you get out of the car, looks you up and down and says the six words that freeze you dead in your tracks, "Mind if I pat you down?" Now, let me say something.
 
 In over 22 years as a criminal defense attorney, I've seen people survive traffic stops where cops have claimed they smelled drugs or tried to come up with some lame reason for why they had to search your car.

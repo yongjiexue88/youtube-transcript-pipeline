@@ -1,16 +1,3 @@
-# Learn THIS - THAT - THESE - THOSE | Demonstrative Pronouns & Adjectives
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KbpnzFhSMh4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KbpnzFhSMh4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:34:35 |
-
----
-
 what's up everyone welcome to today's
 
 lesson my name is Wes this is

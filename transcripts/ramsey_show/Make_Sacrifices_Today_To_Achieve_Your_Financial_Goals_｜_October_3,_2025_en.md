@@ -1,16 +1,3 @@
-# Make Sacrifices Today To Achieve Your Financial Goals | October 3, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `J-MqCs5bvG0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=J-MqCs5bvG0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:05:13 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

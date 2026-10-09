@@ -1,16 +1,3 @@
-# Learn 23 Essential English School Phrasal Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9HJrfW-LMTo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9HJrfW-LMTo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:03:30 |
-
----
-
 welcome to english class in today's
 
 lesson you will learn 23 important

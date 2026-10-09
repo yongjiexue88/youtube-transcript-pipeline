@@ -1,16 +1,3 @@
-# Why do 🇺🇸Americans always say “though”? ￼🧐
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wfQnE1bDtUs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wfQnE1bDtUs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:56:33 |
-
----
-
 if you're learning english you need to learn how to use the word though just
 
 like a native speaker let me teach you

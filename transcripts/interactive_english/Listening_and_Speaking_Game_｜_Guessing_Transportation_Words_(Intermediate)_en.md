@@ -1,16 +1,3 @@
-# Listening and Speaking Game | Guessing Transportation Words (Intermediate)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eXLta_gI5pk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eXLta_gI5pk) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:54:50 |
-
----
-
 Welcome to our global classroom! In today's activity, we will be ... describing nouns.
 
 Today's nouns are about transportation. This is a listening and speaking activity.

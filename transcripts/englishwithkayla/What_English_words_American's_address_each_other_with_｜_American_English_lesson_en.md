@@ -1,16 +1,3 @@
-# What English words American's address each other with | American English lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RA34pGZhzWw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RA34pGZhzWw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:08:23 |
-
----
-
 hi friends welcome to english with kayla
 
 i am an american english teacher and i

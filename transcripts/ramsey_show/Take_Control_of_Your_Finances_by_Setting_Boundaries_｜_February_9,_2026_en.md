@@ -1,16 +1,3 @@
-# Take Control of Your Finances by Setting Boundaries | February 9, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dPE35qFIzK0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dPE35qFIzK0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:45:58 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

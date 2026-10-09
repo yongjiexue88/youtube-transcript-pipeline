@@ -1,16 +1,3 @@
-# Upper-Intermediate (B2) Expressions | Strengthen Your Vocabulary 💪
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WdumVW_EvDE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WdumVW_EvDE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:50:03 |
-
----
-
 let's see if you know these B2
 
 Expressions which are are more Upper Intermediate and they are very common

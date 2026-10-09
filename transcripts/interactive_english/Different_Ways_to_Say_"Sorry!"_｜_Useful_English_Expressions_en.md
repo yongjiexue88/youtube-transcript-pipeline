@@ -1,16 +1,3 @@
-# Different Ways to Say "Sorry!" | Useful English Expressions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `G-dled4vOqo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=G-dled4vOqo) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:35:37 |
-
----
-
 Do you keep saying sorry but no one forgives you?
 
 Find out why in this lesson because today I'm going

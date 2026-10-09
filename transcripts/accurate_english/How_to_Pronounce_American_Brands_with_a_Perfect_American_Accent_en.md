@@ -1,16 +1,3 @@
-# How to Pronounce American Brands with a Perfect American Accent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xP8c-veeAEo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xP8c-veeAEo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:28:24 |
-
----
-
 hi I'm Lisa let's practice the American accent let's find out if you've been pronouncing some American brands correctly we will also learn the meaning behind some of the names of the brands for example what does Netflix mean and
 
 do you know the meaning of the noun and of the verb

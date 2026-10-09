@@ -1,16 +1,3 @@
-# Learn the Top 10 Conditional Sentences
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uVRP7xnClKs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uVRP7xnClKs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:37:25 |
-
----
-
 If I were you, I would keep watching this video all the way to the end. Okay?
 
 When you hear sentences like this, are they confusing to you? In today's lesson, it's not going to be your typical boring grammar lesson. This is real life English. So, I'm going to give you 10 conditional sentences that you will actually be using in your everyday English, and you'll hear English speakers like myself use these all of the time in conversations.

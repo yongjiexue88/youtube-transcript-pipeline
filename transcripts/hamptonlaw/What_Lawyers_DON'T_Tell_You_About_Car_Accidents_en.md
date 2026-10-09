@@ -1,16 +1,3 @@
-# What Lawyers DON'T Tell You About Car Accidents
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZrUy35bfLaI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZrUy35bfLaI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:39:59 |
-
----
-
 you got in a car accident what do you do wasn't even your fault well number one do not drive away now know this seems kind of obvious but I see people do this all the time it's one of those things where they just Panic they don't know what's going on maybe they're not sure if they have their insurance card with them or something like that and they just drive off
 
 they don't look like they don't think anybody got hurt or anything so they just think it's not a big deal that's a huge issue number one a reason why I say that is because if you drive off and you panic and you drive away there's a very high probability you're going to end up being charged with either a hit and run if someone was injured or you can end up looking at a failure to stop

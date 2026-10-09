@@ -1,16 +1,3 @@
-# Small Steps Lead to Big Change | September 29, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CPAJr-aZ9L4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CPAJr-aZ9L4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:06:01 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

@@ -1,16 +1,3 @@
-# Avoid This Pronunciation for Professional English (American) - 10 Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `h_i2jDbMGwA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=h_i2jDbMGwA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:54:56 |
-
----
-
 in this video I will teach you ten words that you may be pronouncing incorrectly
 
 even if you're an advanced speaker of English these words are commonly mispronounced by some native speakers that's why I always tell you be careful

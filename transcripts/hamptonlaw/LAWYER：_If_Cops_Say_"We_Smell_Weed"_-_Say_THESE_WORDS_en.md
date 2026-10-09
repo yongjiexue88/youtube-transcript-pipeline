@@ -1,16 +1,3 @@
-# LAWYER: If Cops Say "We Smell Weed" - Say THESE WORDS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rNE4UxF6k8I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rNE4UxF6k8I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:21:35 |
-
----
-
 You're driving home from work. You haven't done anything wrong. But out of nowhere, a patrol car signals you to pull over. You see the flashing lights.
 
 Your heart rate spikes. Your mind begins to race. You expect the cop to walk up to your window and say something about you maybe speeding or maybe you didn't use your turn signal. But instead, the cop walks up, knocks on your window, you

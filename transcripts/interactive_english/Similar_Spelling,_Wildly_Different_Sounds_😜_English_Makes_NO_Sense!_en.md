@@ -1,16 +1,3 @@
-# Similar Spelling, Wildly Different Sounds 😜 English Makes NO Sense!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hQejPMg0uoI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hQejPMg0uoI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:52:00 |
-
----
-
 Can you correctly pronounce these four words right here? All of them ending with e a r. Now, you would think that the pronunciation is the same, but it's not. They're all different, which is why English can be a bit crazy when it comes to pronunciation. And this is when people will make small mistakes. So, let's start with fear. And you hear that ear sound. And when you have fear, that
 
 that emotion of danger. And there are other words that also have the ear pronunciation such as clear.

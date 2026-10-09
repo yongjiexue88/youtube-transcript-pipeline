@@ -1,16 +1,3 @@
-# BORROW vs LEND | Confusing English Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4Yx4ZVpj7-A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4Yx4ZVpj7-A) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:55:14 |
-
----
-
 Can you please borrow me some money?
 
 I just need to lend a little money.

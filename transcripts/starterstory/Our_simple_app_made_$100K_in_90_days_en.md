@@ -1,16 +1,3 @@
-# Our simple app made $100K in 90 days
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1nfPvJKrYYQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1nfPvJKrYYQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:20:49 |
-
----
-
 A few weeks ago, I came across a tweet that blew my mind. This app got $250,000
 
 downloads and made $100,000 in revenue in just three months.

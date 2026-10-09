@@ -1,16 +1,3 @@
-# Learn Popular American English Idioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qvjIkzv5nfA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qvjIkzv5nfA) |
-| **Language** | Thai (auto-generated) (th) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:06:42 |
-
----
-
 ขอให้แฟน Walker  Black  Pink เลยชุดเทวะ
 
 มานี่มิสเทวาไอเมะ mature  and  Today  I

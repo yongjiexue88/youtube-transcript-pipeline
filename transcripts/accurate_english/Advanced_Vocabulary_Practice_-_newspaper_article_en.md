@@ -1,16 +1,3 @@
-# Advanced Vocabulary Practice - newspaper article
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3fMncCPhFJM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3fMncCPhFJM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:37:03 |
-
----
-
 hi I'm Lisa let's learn some Advanced
 
 English vocabulary from the newspaper

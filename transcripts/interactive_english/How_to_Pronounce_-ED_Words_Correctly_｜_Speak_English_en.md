@@ -1,16 +1,3 @@
-# How to Pronounce -ED Words Correctly | Speak English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ltvpVuVThSw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ltvpVuVThSw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:10:43 |
-
----
-
 today I am going to help you perfect
 
 your pronunciation by teaching you about

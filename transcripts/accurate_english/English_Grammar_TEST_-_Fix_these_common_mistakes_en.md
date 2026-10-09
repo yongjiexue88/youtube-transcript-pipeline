@@ -1,16 +1,3 @@
-# English Grammar TEST - Fix these common mistakes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dZNpVXD04dU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dZNpVXD04dU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:37:28 |
-
----
-
 are you still making grammar mistakes even though you've studied English for a long time let's take this test to find out [Music]
 
 at Accurate English we teach all aspects

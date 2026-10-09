@@ -1,16 +1,3 @@
-# Popular Internet & Computer Symbols to Improve Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `z_nyDN4RoNQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=z_nyDN4RoNQ) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:40:17 |
-
----
-
 Today I'm going to talk to you about some common internet symbols that you probably see every day
 
 and what those words are in English.

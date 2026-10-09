@@ -1,16 +1,3 @@
-# Learn English Phrases with Subtitles |English with Kayla January Compilation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tDB1RoRQZjI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tDB1RoRQZjI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:10:11 |
-
----
-
 begin and start mean the exact same
 
 thing in english these words can be confusing because you think that they are different but they can be used exactly the same

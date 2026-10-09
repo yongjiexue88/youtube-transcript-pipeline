@@ -1,16 +1,3 @@
-# Three common train idioms explained  ￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `P0Leto91Fs4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=P0Leto91Fs4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:51:02 |
-
----
-
 what does it mean to lose your train of
 
 thought if someone says that they lost their

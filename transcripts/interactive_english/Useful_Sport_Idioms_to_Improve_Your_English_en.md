@@ -1,16 +1,3 @@
-# Useful Sport Idioms to Improve Your English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3PIx-pZ37K8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3PIx-pZ37K8) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:11:31 |
-
----
-
 - If you are someone who loves sports, then you are definitely going to love this idiom lesson.
 
 What's up, everyone? My name's Wes. This is Interactive English which is the place that you want to be to practice and improve your English skills.

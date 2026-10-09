@@ -1,16 +1,3 @@
-# How I Built It: $17K/Month Open Source SaaS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RPM4ImzcIFc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RPM4ImzcIFc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:13:56 |
-
----
-
 Here is everything I know about marketing in open source.
 
 >> This is Nevo. His app makes $17,000 a

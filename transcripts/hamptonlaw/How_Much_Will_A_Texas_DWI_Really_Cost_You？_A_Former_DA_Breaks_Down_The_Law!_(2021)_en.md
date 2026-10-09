@@ -1,16 +1,3 @@
-# How Much Will A Texas DWI Really Cost You? A Former DA Breaks Down The Law! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZKbbAHgjlA4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZKbbAHgjlA4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 17:38:02 |
-
----
-
 [Music] hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about DWI Pro perhaps one of the most uh
 
 frequently asked questions that I received is Jeff how much does a DWI really cost like if you pick up a DWI what can you expect to pay monetarily right what is it going to cost me MoneyWise and I'll be happy to answer that for you here today and by the way if you wait around to the end of this video I'll also provide you a free eBook The Ultimate Guide to DWI defense in

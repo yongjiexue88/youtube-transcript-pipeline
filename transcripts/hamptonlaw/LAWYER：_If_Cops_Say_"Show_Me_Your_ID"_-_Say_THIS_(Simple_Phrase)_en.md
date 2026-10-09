@@ -1,16 +1,3 @@
-# LAWYER: If Cops Say "Show Me Your ID" - Say THIS (Simple Phrase)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-lwz6g4v-dc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-lwz6g4v-dc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:18:02 |
-
----
-
 You're walking down the sidewalk, or maybe you're just sitting in your car.
 
 You're doing nothing wrong when a cop walks up to you and says, "Show me your ID." For most people, they lock up because they don't know if they have to show their ID, and they don't know what's going to happen if they say no.

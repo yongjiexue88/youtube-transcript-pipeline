@@ -1,16 +1,3 @@
-# The 3rd Conditional EASILY EXPLAINED | English Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `O7dVZ5u-C20` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=O7dVZ5u-C20) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:42:52 |
-
----
-
 If I had taken my medicine, I would not have felt sick.
 
 If I had studied for the test, I would have gotten a good grade.

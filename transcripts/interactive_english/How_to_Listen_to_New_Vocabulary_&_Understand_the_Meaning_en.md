@@ -1,16 +1,3 @@
-# How to Listen to New Vocabulary & Understand the Meaning
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bLLtzWWqEVU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bLLtzWWqEVU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:32:09 |
-
----
-
 Today is all about helping you practice
 
 and improve your listening skills. And you're going to do that to help you understand and build your vocabulary.

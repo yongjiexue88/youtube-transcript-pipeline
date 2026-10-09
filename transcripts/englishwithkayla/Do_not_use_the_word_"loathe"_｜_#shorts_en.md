@@ -1,16 +1,3 @@
-# Do not use the word "loathe" | #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DMjmTfT8YjE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DMjmTfT8YjE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:25:15 |
-
----
-
 i'll say it once if you want to sound
 
 like a native english speaker do not say that you loathe something

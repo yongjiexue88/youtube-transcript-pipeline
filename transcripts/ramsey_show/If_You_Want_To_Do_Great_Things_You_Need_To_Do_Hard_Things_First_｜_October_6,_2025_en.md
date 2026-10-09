@@ -1,16 +1,3 @@
-# If You Want To Do Great Things You Need To Do Hard Things First | October 6, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BwjOOtw5tUQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BwjOOtw5tUQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:05:04 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

@@ -1,16 +1,3 @@
-# LAWYER: How to Protect Yourself if Cops Find Ammo in Your Car
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `H9xmRvQ5_BU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=H9xmRvQ5_BU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:25:53 |
-
----
-
 as a gun owner you need to know your rights when dealing with the police especially if they happen to see something as simple as a single bullet in your car could that single bullet
 
 give the cops all they need to do a full-blown search of your vehicle as a former prosecutor turned people's lawyer I've seen how something as simple as a speeding ticket can get out of control very quickly if a police officer sees a bullet in your car this is one of these scenarios that catches people off guard and if you're not careful could land you in serious trouble in

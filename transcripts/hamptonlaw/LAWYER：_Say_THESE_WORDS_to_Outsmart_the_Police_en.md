@@ -1,16 +1,3 @@
-# LAWYER: Say THESE WORDS to Outsmart the Police
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `X0gXPB5VwRc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=X0gXPB5VwRc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:39:46 |
-
----
-
 from lying straight to your face to wasting your time here are five police Secrets they're hiding from you police officers can lie I had a client who received a phone call from a detective saying that he wanted to just ask him a couple of questions about a theft investigation and you know he said look man if you just give me a call let's have a conversation let's sit down
 
 and talk it through I'll cut you loose after I get a few of those answers from you well of course my client initially before he called me he decided okay I'm going to start having a conversation with the detective so he goes over and starts talking to him and the first thing the detective starts doing is asking him questions but then that leads to an interrogation where

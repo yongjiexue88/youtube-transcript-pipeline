@@ -1,16 +1,3 @@
-# Natural American Accent - linking consonants| Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gfd2r1sxGOc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gfd2r1sxGOc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:08:14 |
-
----
-
 in this video I'd like to talk to you about the importance of connecting words together when you speak English to sound
 
 more natural and more fluent and to have better pronunciation we're going to talk

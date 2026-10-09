@@ -1,16 +1,3 @@
-# 8 Types of NOUNS | Improve Your Grammar
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eRxyqEZlsBo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eRxyqEZlsBo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:28:13 |
-
----
-
 hello everyone welcome to today's lesson
 
 my name is Wes this is interactive English and if this happens to be your first time watching one of our video lessons the channel it's all about trying to help you practice and improve your English skills whether it is vocabulary pronunciation grammar and today is more it's a grammar lesson

@@ -1,16 +1,3 @@
-# Weird, Strange, and Fascinating Expressions | English Tautologies
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_DhyWb1DX8c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_DhyWb1DX8c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:37:17 |
-
----
-
 what is up everyone I hope you're having a great day my name is Wes and this is
 
 interactive English which is all about helping you guys practice and improve your English skills and I realized just now looking at myself in the camera I think I need to get a haircut but that has nothing to do with today's lesson I actually have a very cool and exciting lesson for you which is all about English tautology we're going to be talking about English tautologies what they are what they mean and you know whether you can identify them in everyday conversation and how often you hear them so first and foremost let's

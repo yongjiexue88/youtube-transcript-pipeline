@@ -1,16 +1,3 @@
-# Learn English with Friends - Ross & Rachel Sex Tape | Improve Your Listening
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_iZ8ZiFrOiE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_iZ8ZiFrOiE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:09:59 |
-
----
-
 today you're going to learn english with
 
 one of the most famous tv american

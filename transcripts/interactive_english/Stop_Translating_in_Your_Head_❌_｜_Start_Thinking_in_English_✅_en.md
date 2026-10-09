@@ -1,16 +1,3 @@
-# Stop Translating in Your Head ❌  | Start Thinking in English ✅
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `C1BguLyBieA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=C1BguLyBieA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:14:02 |
-
----
-
 when you're learning English I think it's natural to translate from your
 
 native language to English but this is

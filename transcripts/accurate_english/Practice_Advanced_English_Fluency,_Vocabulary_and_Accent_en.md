@@ -1,16 +1,3 @@
-# Practice Advanced English Fluency, Vocabulary and Accent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PoMadUj5J6M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PoMadUj5J6M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:39:02 |
-
----
-
 hi i'm lisa my goal with every video i make for this channel is to take advanced learners of english to the final level of fluency i
 
 want to help you understand the vocabulary in newspaper and magazine articles and i want you to be able to use that vocabulary in both spoken and

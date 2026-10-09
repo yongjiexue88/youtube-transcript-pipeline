@@ -1,16 +1,3 @@
-# LAWYER: 10 Traffic Stop Rights You NEED to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-2-IuA_kZMQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-2-IuA_kZMQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:37:24 |
-
----
-
 10 rights every driver has in a traffic stop now most of us have been pulled over by the police at some point in fact most of us that's the only encounter we ever have with the police is during a traffic stop which is precisely the reason you need to know every right you have under the Constitution particularly the rights you're not aware of when a police officer pulls
 
 you over you have the right to say no it's amazing to me the number of people that admit to stuff when police officers approach them I see it all the time someone gets pulled over for traffic stop the officer walks up and says hey man what are you doing and I see people say things like ah man I've got a little marijuana in the car I hope

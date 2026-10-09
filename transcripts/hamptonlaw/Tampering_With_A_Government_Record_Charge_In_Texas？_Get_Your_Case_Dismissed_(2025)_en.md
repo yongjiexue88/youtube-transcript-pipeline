@@ -1,16 +1,3 @@
-# Tampering With A Government Record Charge In Texas? Get Your Case Dismissed (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `a_AwR7YVfqs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=a_AwR7YVfqs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 14:00:55 |
-
----
-
 tampering with a government record what does it mean is there a way to win your
 
 case hi I'm Jeff Hampton with the Hampton Law Firm today I want to talk to you about the subject or the crime of tampering with a government record there's a lot of misunder understandings about what this actual crime is is it a felony is it a misdemeanor we'll go over from a to the basics of this crime and I'll also provide a few defenses so you can have an understanding maybe

@@ -1,16 +1,3 @@
-# Useful Speaking Tips to Help You Prepare for the IELTS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bu1LN2VmF7w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bu1LN2VmF7w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:48:57 |
-
----
-
 hello and welcome if you guys are
 
 joining us this Saturday it's Saturday

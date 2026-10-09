@@ -1,16 +1,3 @@
-# “真实续航”=“标称续航”打5折？新能源车为什么总是“续航虚标”？【柴知道：车圈化简】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oC76DGNfjRk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oC76DGNfjRk) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:36:52 |
-
----
-
 每位司机朋友都知道一辆车的“标称续航”跟它真正能跑多远根本就不是一回事儿
 
 比如这份美国的研究找了 58 辆不同品牌的新能源车其中 48 辆的实际续航都低于标称续航而其中成绩最差的 3 辆

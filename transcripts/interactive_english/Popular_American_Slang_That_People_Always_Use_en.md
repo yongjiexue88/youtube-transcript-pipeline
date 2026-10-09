@@ -1,16 +1,3 @@
-# Popular American Slang That People Always Use
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qkPyic29AaA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qkPyic29AaA) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:38:37 |
-
----
-
 Today, I am going to blow your mind with some popular American slang.
 
 BOOM!

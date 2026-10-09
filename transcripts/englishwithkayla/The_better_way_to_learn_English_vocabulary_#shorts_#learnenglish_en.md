@@ -1,16 +1,3 @@
-# The better way to learn English vocabulary #shorts #learnenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eQfXy0D0Qzk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eQfXy0D0Qzk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:19:04 |
-
----
-
 watching movies and reading are going to
 
 work on different skills so reading is

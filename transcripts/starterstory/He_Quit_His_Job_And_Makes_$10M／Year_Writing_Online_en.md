@@ -1,16 +1,3 @@
-# He Quit His Job And Makes $10M/Year Writing Online
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OoFqTMPW_3E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OoFqTMPW_3E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:29:04 |
-
----
-
 this guy built a $10 million business thanks to one simple skill writing
 
 what's even crazier is that he started this business while he had a 9 to-5 job and didn't quit that job until he was making a million dollar a year he invited us into a studio in Miami Florida to tell us exactly how he made his first dollar and his exact routine to build a million-dollar business while he had a full-time job wake up at 4:30 a.m. write for 2 hours get back to my desk at 7:00 a.m.

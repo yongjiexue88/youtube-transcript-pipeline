@@ -1,16 +1,3 @@
-# The Ramsey Show (Replay for January 1, 2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kasEKDcJGmw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kasEKDcJGmw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:16:11 |
-
----
-
 [Music] brought to you by the every dooll app start budgeting for free
 
 [Music] today from the Ramsey Network it's the Ramsey Show I'm your host Jade warsha next to me is George Campell we've got a Rowdy studio audience uh over there

@@ -1,16 +1,3 @@
-# Theft? Robbery? Burglary? A Former DA Explains The Law And Defenses! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6w-gDl51xWY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6w-gDl51xWY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:00:55 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel I got a question for you theft
 
 robbery burglary what's the difference

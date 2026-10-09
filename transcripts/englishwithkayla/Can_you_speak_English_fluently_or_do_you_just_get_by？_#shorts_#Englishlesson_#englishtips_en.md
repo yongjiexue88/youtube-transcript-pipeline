@@ -1,16 +1,3 @@
-# Can you speak English fluently or do you just get by? #shorts #Englishlesson #englishtips
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dBWBzLI6S5E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dBWBzLI6S5E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:20:04 |
-
----
-
 are you fluent in english or do you know
 
 just enough to get by the phrasal verb that we'll

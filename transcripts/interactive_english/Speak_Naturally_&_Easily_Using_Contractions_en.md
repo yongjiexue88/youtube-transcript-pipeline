@@ -1,16 +1,3 @@
-# Speak Naturally & Easily Using Contractions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ORKEv_Ghmp0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ORKEv_Ghmp0) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:32:48 |
-
----
-
 So today I'm going to talk to you about a bunch of different English contractions.
 
 I think there's 28 of them.

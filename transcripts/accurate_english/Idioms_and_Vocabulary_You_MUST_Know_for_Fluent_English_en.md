@@ -1,16 +1,3 @@
-# Idioms and Vocabulary You MUST Know for Fluent English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wQIGDheYl_E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wQIGDheYl_E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:32:41 |
-
----
-
 hi I'm Lisa let's learn 25 important
 
 English words and common idiomatic expressions to describe someone's age and then at the end there will be a quiz so that you can test your knowledge of the words that you just learned [Music]

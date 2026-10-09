@@ -1,16 +1,3 @@
-# 1 HOUR LESSON - Advanced Grammar In Use
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2TkB_yr7nCc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2TkB_yr7nCc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:54:04 |
-
----
-
 I have an in-depth Advanced one-hour grammar lesson for you in which we are going to cover a variety of topics prepositions of place could have should have would have I have a challenging quiz for you and much more I've taken some of my best Advanced grammar lessons and put them together in this one video Lesson and if you are someone who enjoys
 
 improving your grammar skills Please Subscribe turn on notifications that way I can become your teacher my name is Wes

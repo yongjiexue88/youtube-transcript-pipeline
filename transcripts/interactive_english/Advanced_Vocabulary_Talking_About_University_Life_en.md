@@ -1,16 +1,3 @@
-# Advanced Vocabulary Talking About University Life
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dsq9254Ef_k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dsq9254Ef_k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:29:06 |
-
----
-
 so we are asked you can't switch this
 
 around which means today we're going to talk to you about some important and useful university words that's coming up

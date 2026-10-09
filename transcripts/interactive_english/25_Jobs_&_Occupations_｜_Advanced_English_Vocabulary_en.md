@@ -1,16 +1,3 @@
-# 25 Jobs & Occupations | Advanced English Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Wvge8RGKpy8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Wvge8RGKpy8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:25:33 |
-
----
-
 hey everyone welcome to another
 
 interactive english lesson my name is

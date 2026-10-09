@@ -1,16 +1,3 @@
-# It’s Not Too Late to Get Control of Your Money | September 30, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cv4aiEoBHfU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cv4aiEoBHfU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:05:51 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

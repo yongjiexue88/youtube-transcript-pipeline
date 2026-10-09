@@ -1,16 +1,3 @@
-# LAWYER: 10 Ways the Police TRY to Outsmart You
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `D4pW6NDzh3c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=D4pW6NDzh3c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:38:35 |
-
----
-
 hey everybody Jeff Hampton with the Hampton Law Firm here and today I want to talk to you about 10 ways the police will try to outsmart you now number one
 
 I want to talk about ways that the police want to talk to you and they're going to try to see if they can get a confession out of you even if you've done nothing wrong the number one way they'll outsmart you is to lie to you and people don't recognize this but the police are allowed to lie to you and when they bring you in for questioning or

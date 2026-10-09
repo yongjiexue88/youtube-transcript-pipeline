@@ -1,16 +1,3 @@
-# Avoid Saying ...UM...ER...UH 🚫  #interactiveenglish #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xkqtBMN6dMA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xkqtBMN6dMA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:00:34 |
-
----
-
 guys I think it's important that you try
 
 to avoid using some of those nasty

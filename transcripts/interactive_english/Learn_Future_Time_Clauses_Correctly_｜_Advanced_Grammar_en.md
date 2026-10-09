@@ -1,16 +1,3 @@
-# Learn Future Time Clauses Correctly | Advanced Grammar
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xxBDyxjTZbA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xxBDyxjTZbA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:44:42 |
-
----
-
 well hello hello and welcome to our
 
 lesson today have I got a fun lesson for

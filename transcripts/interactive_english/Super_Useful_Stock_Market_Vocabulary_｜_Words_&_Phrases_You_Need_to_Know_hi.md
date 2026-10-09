@@ -1,16 +1,3 @@
-# Super Useful Stock Market Vocabulary | Words & Phrases You Need to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zJUa-DT58cA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zJUa-DT58cA) |
-| **Language** | Hindi (auto-generated) (hi) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:44:21 |
-
----
-
 इस वक्त मैं एक शाम मनी एब्रॉड मेकिंग मनी
 
 नुव्वु

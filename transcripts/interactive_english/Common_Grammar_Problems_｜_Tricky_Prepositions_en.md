@@ -1,16 +1,3 @@
-# Common Grammar Problems | Tricky Prepositions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Kfni3VsYGvI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Kfni3VsYGvI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:50:35 |
-
----
-
 all
 
 right think this is about started so

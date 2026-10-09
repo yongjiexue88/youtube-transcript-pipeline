@@ -1,16 +1,3 @@
-# LAWYER: How to Beat Your DWI Breath Test in Texas
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RYcLaWdK4h4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RYcLaWdK4h4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 21:05:40 |
-
----
-
 hey everybody I wanted to take a few minutes here to share a video with you about giving a sample of your breath or
 
 blood this video is going to identify specifically if you consented to a

@@ -1,16 +1,3 @@
-# What's in my desk (vocabulary lesson) #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZXR8Cu-8RUY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZXR8Cu-8RUY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:14:46 |
-
----
-
 hi guys it's time for another english
 
 lesson of what's randomly in my desk so

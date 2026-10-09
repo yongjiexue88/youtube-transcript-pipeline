@@ -1,16 +1,3 @@
-# LAWYER: Can Cops Arrest You for "IGNORING" Them? NEW RULING!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9PiHO65Dswg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9PiHO65Dswg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:31:40 |
-
----
-
 can cops arrest you for acting weird
 
 what if you were just trying to avoid them that's exactly the subject of a brand new Court ruling that came out in the California Supreme Court known as people versus Flores it's causing an enormous amount of disruption and disagreement from both the law enforcement side as well as civil rights groups we need to examine how this is going to affect policing and whether or not the decision was right according to

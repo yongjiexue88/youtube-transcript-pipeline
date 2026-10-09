@@ -1,16 +1,3 @@
-# The best American vs British words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-GO4v77dJJI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-GO4v77dJJI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:17:51 |
-
----
-
 stuff that comes out of your nose when you sneeze americans say boogers
 
 british people say bogeys next up in

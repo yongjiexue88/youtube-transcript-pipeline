@@ -1,16 +1,3 @@
-# Learn these English phrases!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `T34y5VDvZBg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=T34y5VDvZBg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:52:09 |
-
----
-
 let's learn some new english phrases
 
 what do you say when you can't think of

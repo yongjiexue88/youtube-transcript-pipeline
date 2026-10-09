@@ -1,16 +1,3 @@
-# Short-Term Sacrifice Leads to Long-Term Financial Freedom | May 19, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zbIg2FJ4z-Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zbIg2FJ4z-Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:31:38 |
-
----
-
 This is an ad for Better Help. May is mental health awareness month and it's a good reminder that money problems take behavior change. Talking to someone can help you make progress. Go to betterhelp.com/ramsey to get 10% off.
 
 Brought to you by the EveryDoll app.

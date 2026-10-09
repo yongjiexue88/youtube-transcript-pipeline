@@ -1,16 +1,3 @@
-# English writing tip
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UzZhLm35RS8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UzZhLm35RS8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:01:45 |
-
----
-
 here is a really practical tip to help
 
 you become a better writer in english

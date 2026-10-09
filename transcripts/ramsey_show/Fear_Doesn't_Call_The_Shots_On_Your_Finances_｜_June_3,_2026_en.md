@@ -1,16 +1,3 @@
-# Fear Doesn't Call The Shots On Your Finances | June 3, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2MT__MJtW_Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2MT__MJtW_Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:29:09 |
-
----
-
 This is an ad for Better Help. The time to fix your budget is before you're in debt, and the time to deal with stress is before it becomes a crisis. Talking to someone can help you find a path forward. Go to betterhelp.com/ramy
 
 to get 10% off.

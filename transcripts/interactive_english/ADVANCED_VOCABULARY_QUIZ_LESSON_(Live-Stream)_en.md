@@ -1,16 +1,3 @@
-# ADVANCED VOCABULARY QUIZ LESSON (Live-Stream)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vhxShGts9_M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vhxShGts9_M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:25:40 |
-
----
-
 Hello and welcome to today's lesson. My
 
 name is Wes. This is Interactive English. And if this is your first time

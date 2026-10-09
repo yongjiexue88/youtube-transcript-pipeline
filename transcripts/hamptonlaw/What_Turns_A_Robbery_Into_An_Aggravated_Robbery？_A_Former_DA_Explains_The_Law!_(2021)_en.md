@@ -1,16 +1,3 @@
-# What Turns A Robbery Into An Aggravated Robbery? A Former DA Explains The Law! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NVMdE9yTSxs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NVMdE9yTSxs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:11:00 |
-
----
-
 hello I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I'm going to talk to you about robbery and aggravated robbery what turns a robbery into an aggravated robbery we're going to talk about the ins and outs of the law as it relates to these two offences and what seems to aggravate it up to a higher charge what type of circumstances exist on that now
 
 if you'll wait around to the end of our video I'll also give you a free resource what to do if you been charged with a crime in Texas okay let's jump right into this so what when someone is charged with a robbery what exactly goes into determining whether or not a charge ends up being a robbery or an aggravated robbery well let's look to the Texas Penal Code

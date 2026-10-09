@@ -1,16 +1,3 @@
-# Faceless: From Immigrant to $1M/Year
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TNZmNIYv050` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TNZmNIYv050) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:28:12 |
-
----
-
 What's your story?
 
 I'm an anonymous designer on X and I make $1.2 million a year. Being anonymous gives me some uh peace.

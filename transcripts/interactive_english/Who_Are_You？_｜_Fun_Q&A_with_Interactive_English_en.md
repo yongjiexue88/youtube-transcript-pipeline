@@ -1,16 +1,3 @@
-# Who Are You? | Fun Q&A with Interactive English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `u0Nw-C8ZAGA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=u0Nw-C8ZAGA) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:39:14 |
-
----
-
 What are you planning to do in the next five years Why don't you record more vlog videos?
 
 How old are both of you? Did you have any certificates after graduation?

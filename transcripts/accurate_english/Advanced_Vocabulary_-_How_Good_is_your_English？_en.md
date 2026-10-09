@@ -1,16 +1,3 @@
-# Advanced Vocabulary - How Good is your English?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `A1aCh9NU6dk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=A1aCh9NU6dk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:27:07 |
-
----
-
 hi I'm Lisa this is a perfect chance for you to advance your English fluency I will give you a multiple choice quiz to test your knowledge of English vocabulary you will also learn to use the words in different contexts and I will teach you how to pronounce the words perfectly some of these words are not as advanced as the words in the previous two tests so if you are an
 
 advanced learner of English there is a good chance that you may know many of these words let's take the test to find out let's look at the first word what does to mitigate mean a to intensify or

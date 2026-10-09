@@ -1,16 +1,3 @@
-# DWI With Child Under 15: A Former DA Breaks Down The Law! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2WjDTxt0cGo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2WjDTxt0cGo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:10:02 |
-
----
-
 hello I'm Jeff Hampton with the Hampton law firm and I want to welcome you to our YouTube channel today I'm going to talk to you about DWI with child under 15 years of age what are your options
 
 what are some of your defenses when you're facing a crime like this all right if you'll wait around also to the end of this video I'll provide you a free eBook The Ultimate Guide to DWI

@@ -1,16 +1,3 @@
-# How Americans pronounce these popular brands
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gY0cokj9cWc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gY0cokj9cWc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:50:53 |
-
----
-
 hi i'm an american english teacher i'm
 
 going to pronounce these brands duet me

@@ -1,16 +1,3 @@
-# I have to clean my house day in and day out... #englishphrase #esl #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hLZoLjtp1Dk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hLZoLjtp1Dk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:22:13 |
-
----
-
 want to say that you do something every day or most days you can say i do it
 
 day in and day out day in

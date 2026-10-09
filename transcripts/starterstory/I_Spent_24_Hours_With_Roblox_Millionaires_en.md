@@ -1,16 +1,3 @@
-# I Spent 24 Hours With Roblox Millionaires
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8xgnm6SynH4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8xgnm6SynH4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:25:05 |
-
----
-
 This is Cole. These are his two best friends. They all live in the same apartment and they claim to make millions off Roblox. Yes, this game. But before we
 
 get into all that, we got to go back. It all started with a tweet. Is there anybody actually making money with video games? Hundreds of people slid into my DMs, but one of them really stood out.

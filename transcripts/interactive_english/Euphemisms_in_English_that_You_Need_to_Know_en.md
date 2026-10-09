@@ -1,16 +1,3 @@
-# Euphemisms in English that You Need to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vUTv3uhn_ds` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vUTv3uhn_ds) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:07:12 |
-
----
-
 hey everyone today I want to talk to you
 
 about euphemisms in English now if

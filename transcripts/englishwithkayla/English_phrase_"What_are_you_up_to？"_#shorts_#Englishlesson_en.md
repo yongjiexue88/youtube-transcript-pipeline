@@ -1,16 +1,3 @@
-# English phrase "What are you up to?" #shorts #Englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rq_y7D7vNhg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rq_y7D7vNhg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:23:44 |
-
----
-
 instead of saying what are you doing english speakers will sometimes say
 
 what are you up to this is especially

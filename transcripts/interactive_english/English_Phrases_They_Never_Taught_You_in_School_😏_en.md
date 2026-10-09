@@ -1,16 +1,3 @@
-# English Phrases They Never Taught You in School 😏
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `m2qOyaOyb1s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=m2qOyaOyb1s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:54:53 |
-
----
-
 throw shade. Now, I'll be honest. This is an idiom that I don't really use. It is more informal and probably used mostly in the United States, but what it means is to subtly disrespect or
 
 criticize someone. So, it really does have a negative connotation. Jason Kid throws shade at the Celtics. Our group was ready to go. They were ready to celebrate. And in a way, he is slightly criticizing the other team, basically saying they weren't prepared, which is why they lost. >> So, what' you just stop by to throw shade? >> We're having fun doing sister stuff.

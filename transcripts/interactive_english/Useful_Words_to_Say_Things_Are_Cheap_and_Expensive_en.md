@@ -1,16 +1,3 @@
-# Useful Words to Say Things Are Cheap and Expensive
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VQc_rQsE1oI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VQc_rQsE1oI) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:33:12 |
-
----
-
 - Today we're learning some very useful vocabulary, keep on watching to learn some different ways to say cheap and expensive.
 
 Now these two words, cheap and expensive, are among

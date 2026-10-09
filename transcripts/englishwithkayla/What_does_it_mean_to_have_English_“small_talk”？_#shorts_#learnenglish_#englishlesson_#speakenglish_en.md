@@ -1,16 +1,3 @@
-# What does it mean to have English “small talk”? #shorts #learnenglish #englishlesson #speakenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HDuQbiuzm64` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HDuQbiuzm64) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:36:49 |
-
----
-
 in english when we have a quick conversation so that we're not just
 
 awkwardly sitting next to someone in silence like when you're waiting or

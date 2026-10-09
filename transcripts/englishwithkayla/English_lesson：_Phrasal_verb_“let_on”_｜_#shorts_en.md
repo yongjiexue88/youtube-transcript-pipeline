@@ -1,16 +1,3 @@
-# English lesson: Phrasal verb “let on” | #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oAvghz0uvWw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oAvghz0uvWw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:26:44 |
-
----
-
 when you use the phrasal verb let on or
 
 let on to something in everyday english

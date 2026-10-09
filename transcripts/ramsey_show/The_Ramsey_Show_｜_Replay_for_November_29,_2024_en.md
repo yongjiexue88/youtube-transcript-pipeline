@@ -1,16 +1,3 @@
-# The Ramsey Show | Replay for November 29, 2024
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `W-rrSlNanCc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=W-rrSlNanCc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:17:53 |
-
----
-
 brought to you by the every dooll app start budgeting for free
 
 [Music]

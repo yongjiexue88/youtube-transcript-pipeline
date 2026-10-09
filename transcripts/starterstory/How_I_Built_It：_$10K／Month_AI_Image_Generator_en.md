@@ -1,16 +1,3 @@
-# How I Built It: $10K/Month AI Image Generator
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mjCa8IFjM2E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mjCa8IFjM2E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:27:50 |
-
----
-
 when I started AI career which is at
 
 8,000 Mr currently I was still an

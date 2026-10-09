@@ -1,16 +1,3 @@
-# A Proven Plan Beats A Quick Fix Every Time | August 27, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9SrYkiFniOk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9SrYkiFniOk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:10:45 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

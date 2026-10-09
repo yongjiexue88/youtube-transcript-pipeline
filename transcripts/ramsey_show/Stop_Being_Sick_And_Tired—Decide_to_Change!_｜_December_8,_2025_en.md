@@ -1,16 +1,3 @@
-# Stop Being Sick And Tired—Decide to Change! | December 8, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fBN5fOm7w74` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fBN5fOm7w74) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:55:25 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start [music] budgeting for free today.

@@ -1,16 +1,3 @@
-# Sound Natural, Not Textbook! Advanced English Phrases Explained
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YbRQEajeRrA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YbRQEajeRrA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:53:01 |
-
----
-
 advanced phrases that native speakers use to be more precise, descriptive, and persuasive when both speaking and writing in no uncertain terms. This
 
 means in a very clear and direct way.

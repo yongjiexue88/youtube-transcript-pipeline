@@ -1,16 +1,3 @@
-# Financial Victories Don't Happen Without Sacrifices | December 16, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sppIipWwCgg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sppIipWwCgg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:54:06 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

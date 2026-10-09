@@ -1,16 +1,3 @@
-# 3 Essential phrasal verbs in 1 minute
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xwv7k3ljkPo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xwv7k3ljkPo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:28:23 |
-
----
-
 three essential phrasal verbs that
 
 you'll hear and use all of the time in

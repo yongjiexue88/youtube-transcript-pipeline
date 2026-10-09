@@ -1,16 +1,3 @@
-# Top Advanced English Adjectives
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZUf8mTDwxnw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZUf8mTDwxnw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:41:51 |
-
----
-
 one thing that I think is very
 
 overlooked when it comes to upgrading

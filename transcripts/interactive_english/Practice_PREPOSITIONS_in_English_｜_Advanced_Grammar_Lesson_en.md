@@ -1,16 +1,3 @@
-# Practice PREPOSITIONS in English | Advanced Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hDO-WnhotKg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hDO-WnhotKg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:24:46 |
-
----
-
 hello and welcome to today's lesson
 
 my name is wes this is interactive english and our channel is all about just trying to help everyone practice and improve their english skills and work toward achieving english fluency so today i have it's a bit of a practice

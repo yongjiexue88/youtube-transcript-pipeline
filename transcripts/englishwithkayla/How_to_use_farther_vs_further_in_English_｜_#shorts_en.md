@@ -1,16 +1,3 @@
-# How to use farther vs further in English | #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XPcUqaraBUI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XPcUqaraBUI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:27:29 |
-
----
-
 no they're definitely not the same so let's study some examples in english
 
 you use the word farther you're talking about the physical distance between two

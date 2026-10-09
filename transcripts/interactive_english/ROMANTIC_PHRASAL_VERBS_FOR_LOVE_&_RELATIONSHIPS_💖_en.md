@@ -1,16 +1,3 @@
-# ROMANTIC PHRASAL VERBS FOR LOVE & RELATIONSHIPS 💖
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `c-4oYYlaLGs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=c-4oYYlaLGs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:41:40 |
-
----
-
 today we're talking about dating phrasal
 
 verbs super fun topic so today we are

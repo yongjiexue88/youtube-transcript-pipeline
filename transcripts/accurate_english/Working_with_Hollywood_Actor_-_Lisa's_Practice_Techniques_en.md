@@ -1,16 +1,3 @@
-# Working with Hollywood Actor  - Lisa's Practice Techniques
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xRtxKnTavUI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xRtxKnTavUI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:00:29 |
-
----
-
 in this video I would like to show you how you can practice your American accent like a Hollywood actor first you
 
 will watch an actor performing a monologue and after that you will watch

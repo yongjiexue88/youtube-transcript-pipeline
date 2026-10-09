@@ -1,16 +1,3 @@
-# You’re Not Stuck You Just Need a Plan | May 1, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `isO5A6SJWiE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=isO5A6SJWiE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:34:02 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

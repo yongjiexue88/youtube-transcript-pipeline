@@ -1,16 +1,3 @@
-# COMMON TONGUE TWISTERS | Practice Your English Pronunciation 😜
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZCGnT25PZA4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZCGnT25PZA4) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:39:52 |
-
----
-
 Today we're talking about tongue twisters! We will twist your tongue.
 
 That's coming up!

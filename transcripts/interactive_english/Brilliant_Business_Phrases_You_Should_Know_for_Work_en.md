@@ -1,16 +1,3 @@
-# Brilliant Business Phrases You Should Know for Work
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bUANRgeON-Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bUANRgeON-Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:12:58 |
-
----
-
 Hello and welcome to today's lesson. I
 
 have a vocabulary lesson for you and

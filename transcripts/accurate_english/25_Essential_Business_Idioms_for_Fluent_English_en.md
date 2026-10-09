@@ -1,16 +1,3 @@
-# 25 Essential Business Idioms for Fluent English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JqJGKt_D1no` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JqJGKt_D1no) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:31:09 |
-
----
-
 let's learn some very common English Expressions that native speakers use at the workplace almost all of my students are professionals and they're quite fluent in English their grammar is excellent and their overall English vocabulary is quite good but one of their main concerns is they wish that they could use the Expressions that native speakers use and sometimes they don't understand native speakers because they're using various idiomatic expressions the world of business is filled with idiomatic expressions for
 
 example a non-native speaker might say

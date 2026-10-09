@@ -1,16 +1,3 @@
-# Favorite Words of the Holiday Season | Year in Review
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Vse1hvmCRCw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Vse1hvmCRCw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:38:45 |
-
----
-
 hello what's up everyone thank you for
 
 joining me this is our last live lesson

@@ -1,16 +1,3 @@
-# Fluent English Practice with the NEWSPAPER - and practice your accent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2sifxi438p4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2sifxi438p4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:31:45 |
-
----
-
 let's learn some Advanced English vocabulary by reading an article in the news we will read an interview with the CEO of a well-known company I will teach
 
 you the meaning of some Advanced words from the article and we will read it together you will repeat after me so that you can practice your accent at the end there will be a fill-in the blank quiz so that you can test your knowledge and find out how many of the words you remember the article is from Time

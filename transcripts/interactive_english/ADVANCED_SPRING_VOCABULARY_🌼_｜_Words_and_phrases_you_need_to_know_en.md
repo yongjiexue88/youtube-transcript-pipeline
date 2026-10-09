@@ -1,16 +1,3 @@
-# ADVANCED SPRING VOCABULARY 🌼 | Words and phrases you need to know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bvziedjcWZU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bvziedjcWZU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:15:11 |
-
----
-
 Hello and welcome to today's lesson.
 
 This is going to be an advanced vocabulary lesson. Because while spring

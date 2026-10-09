@@ -1,16 +1,3 @@
-# 千兆网下载跑不满，真是你的问题？Steam下载速度怎么这么快？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5EAnMf_4kHs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5EAnMf_4kHs) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:36:29 |
-
----
-
 我家本来用的是 300M 的网但办完后我接到一个电话你好 我们现在有一个活动每个月加 12 块钱就能升级成千兆网
 
 我没能扛住诱惑但交完钱之后不管是看视频还是下电影还是打游戏我的网络体验跟之前相比都几乎没有变化我都怀疑自己是不是遭受了“电信”诈骗直到我打开 Steam 下载游戏的那一刻才发现运营商的良心目前尚未完全泯灭

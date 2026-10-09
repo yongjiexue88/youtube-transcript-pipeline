@@ -1,16 +1,3 @@
-# 10 Common Slang Words Americans Say All the Time
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WU_Qie7reeE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WU_Qie7reeE) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:47:39 |
-
----
-
 Today, I'm going to talk to you about slang.
 
 How cool is that?

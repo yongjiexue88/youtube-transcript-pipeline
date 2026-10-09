@@ -1,16 +1,3 @@
-# Dangerous mistakes in English - pronunciation lesson at the Oscar award ceremony.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_GLGWFhSqIU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_GLGWFhSqIU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:53:47 |
-
----
-
 in this video we will kill two birds with one stone I will help you to avoid
 
 a dangerous and embarrassing pronunciation mistake that many of my students make and we will learn the correct pronunciation of some Hollywood actors and some Hollywood films that are

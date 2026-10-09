@@ -1,16 +1,3 @@
-# How to Answer Questions Native English Speakers ask
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EHhlbsGvGe4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EHhlbsGvGe4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:07:01 |
-
----
-
 hello friends welcome back to english with kayla my name is kayla i'm an
 
 american english teacher and i love to teach you how to speak english that you

@@ -1,16 +1,3 @@
-# LAWYER: If Cops Use the "Mirror Method" Against You - SAY THIS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nIM9hvV3e5w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nIM9hvV3e5w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:18:50 |
-
----
-
 Do you think you'd ever confess to a crime you didn't commit? I'd hope not.
 
 Most people start answering cops questions because they think they can just explain it, but they end up talking themselves into charges even when they did nothing wrong. And if you don't understand how police interrogation techniques actually work, you won't even realize you're being boxed in until it's too late. You're about to watch cops get everything they want out of this man.

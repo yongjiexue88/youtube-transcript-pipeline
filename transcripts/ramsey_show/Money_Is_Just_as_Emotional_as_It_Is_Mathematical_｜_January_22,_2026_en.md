@@ -1,16 +1,3 @@
-# Money Is Just as Emotional as It Is Mathematical | January 22, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DEDfj-MfuTk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DEDfj-MfuTk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:48:17 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

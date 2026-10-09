@@ -1,16 +1,3 @@
-# How To Build A $100M Podcast Empire
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Fk2J2U7669o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Fk2J2U7669o) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:33:44 |
-
----
-
 this is Danny Miranda the man who went from his parents basement to sitting down face to face with the most influential people in the world how did he do it with this laptop in this microphone he started a podcast but before I tell you about Danny I have to remind you about this incredible Joe Rogan Joe Rogan you would have heard of this guy he's got the most listened to podcast in the world Spotify bought the
 
 Joe Rogan podcast Joe Rogan just got a 100 million dollar deal from Spotify how in the world is a podcast worth 100 million dollars to find out I flew out to Austin Texas to sit down with Danny who might just be the next Joe Rogan he broke down exactly how he started a podcast with zero dollars how it makes money and how he's landed some of the biggest guests on

@@ -1,16 +1,3 @@
-# You're sitting in your car on the side of the road
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `warQzHjWAtE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=warQzHjWAtE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:55:20 |
-
----
-
 You're sitting in your car on the side of the road. Cops pulled you over for something minor, like maybe a broken taillight. The officer walks up to your window. You're completely polite, and before the officer even mentions a word, you hand him your driver's license and your insurance. But then he starts probing. He says, "Where are you headed?
 
 Where did you come from tonight?" And you answer the questions exactly like we've talked about on my previous videos. But then the officer does something you didn't expect. He leans back from your window. He crosses his arms. He looks at your car, scans front

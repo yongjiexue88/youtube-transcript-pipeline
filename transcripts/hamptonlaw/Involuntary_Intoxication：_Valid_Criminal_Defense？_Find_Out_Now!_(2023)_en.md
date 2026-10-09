@@ -1,16 +1,3 @@
-# Involuntary Intoxication: Valid Criminal Defense? Find Out Now! (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HtGTwMXgpok` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HtGTwMXgpok) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:49:23 |
-
----
-
 involuntary intoxication can you actually blame it on the drink is it a valid defense can you actually use it in
 
 court hi I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about a Nuance in the law known as involuntary intoxication as a defense in

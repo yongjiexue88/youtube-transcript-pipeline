@@ -1,16 +1,3 @@
-# What’s the difference between “its” and “it’s”? | #shorts #englishgrammar #englishlanguage
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XrWBpax-k4E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XrWBpax-k4E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:32:40 |
-
----
-
 spelling is important between these two
 
 words i'll show you why it's with no

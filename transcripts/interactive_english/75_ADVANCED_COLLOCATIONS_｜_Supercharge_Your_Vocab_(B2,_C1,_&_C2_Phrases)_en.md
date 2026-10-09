@@ -1,16 +1,3 @@
-# 75 ADVANCED COLLOCATIONS | Supercharge Your Vocab (B2, C1, & C2 Phrases)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IJGldlaS8jo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IJGldlaS8jo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:38:21 |
-
----
-
 Today, I want to help you supercharge your vocabulary by teaching you many different collocations, which are words that are frequently used together. And the phrases that I'm going to teach you today are really at a B2 to C2 level.
 
 So, if you are able to use them in conversation, it's just going to help you sound a lot more natural. And if you are someone who wants your vocabulary to take off like a rocket, please subscribe, turn on notifications. That way, I can become your teacher. My name is Wes. The channel is Interactive English. It's all about helping you reach your fluency goals. Let's begin at a B2 level. These are phrases that I think are pretty common. Upper intermediate essentials. And we'll start with the word crucial. This is an adjective that means extremely important

@@ -1,16 +1,3 @@
-# Slow and Steady Beats Get Rich Quick | September 15, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TBhWqG-jYH8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TBhWqG-jYH8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:08:08 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

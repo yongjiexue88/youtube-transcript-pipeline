@@ -1,16 +1,3 @@
-# This phrase is so relevant…“It’s one thing to do this”
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3GOZbuuMcIk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3GOZbuuMcIk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:14:22 |
-
----
-
 this next phrase is so relevant in
 
 American conversations the phrase is

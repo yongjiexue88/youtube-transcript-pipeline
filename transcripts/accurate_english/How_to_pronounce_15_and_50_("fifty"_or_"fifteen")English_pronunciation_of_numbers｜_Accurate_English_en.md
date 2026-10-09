@@ -1,16 +1,3 @@
-# How to pronounce 15 and 50 ("fifty" or "fifteen")English pronunciation of numbers| Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gxlnpgwGcOU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gxlnpgwGcOU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:12:14 |
-
----
-
 [Music] hi I'm Lisa moyen today I'd like to give you another lesson regarding pronouncing American English correctly it has to do with the very common mistake that a lot of my students make regarding pronouncing numbers in American English
 
 there are three different things that I would like to teach you about regarding pronouncing numbers the first thing that you need to know is for the numbers that

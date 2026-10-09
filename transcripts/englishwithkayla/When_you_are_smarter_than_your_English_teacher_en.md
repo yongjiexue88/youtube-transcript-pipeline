@@ -1,16 +1,3 @@
-# When you are smarter than your English teacher
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3MElgMI0exA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3MElgMI0exA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:01:34 |
-
----
-
 so here's the thing oftentimes english
 
 learners know the language better than

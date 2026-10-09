@@ -1,16 +1,3 @@
-# 医保DRG改革来了！它能让你安心看病吗？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EBPa55o29U4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EBPa55o29U4) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:38:57 |
-
----
-
 每一个自由而不羁的灵魂背地里都舍不得放弃医保
 
 我国 95% 的人都有医保你去医院看病医院给你做检查开药然后医保基金给医院按比例报销剩下的由你自负

@@ -1,16 +1,3 @@
-# 4 Important Phrasal Verbs with CHECK | Vocabulary Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `g9esdVrDDP4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=g9esdVrDDP4) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:44:33 |
-
----
-
 We have an amazing lesson for you today, we are talking
 
 about phrasal verbs with check, and I have four different

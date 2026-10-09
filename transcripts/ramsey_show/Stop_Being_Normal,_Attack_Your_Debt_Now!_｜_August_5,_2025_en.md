@@ -1,16 +1,3 @@
-# Stop Being Normal, Attack Your Debt Now! | August 5, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JVUpe8Y0HZQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JVUpe8Y0HZQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:13:39 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

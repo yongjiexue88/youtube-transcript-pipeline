@@ -1,16 +1,3 @@
-# Professional English - 16 Common Expressions with a Native Speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `P5f3IlUI6k8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=P5f3IlUI6k8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:49:16 |
-
----
-
 hi i'm lisa in this video we will focus
 
 on professional english i would like to help you communicate more confidently and more effectively at the workplace we

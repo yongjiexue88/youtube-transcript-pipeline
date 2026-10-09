@@ -1,16 +1,3 @@
-# English phrase: Let's meet in the middle
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0GUm09uI4T0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0GUm09uI4T0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:58:59 |
-
----
-
 this next phrase can be used
 
 for bargaining or it can just be

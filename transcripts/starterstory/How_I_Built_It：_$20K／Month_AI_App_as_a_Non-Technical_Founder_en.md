@@ -1,16 +1,3 @@
-# How I Built It: $20K/Month AI App as a Non-Technical Founder
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yue9in5oh64` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yue9in5oh64) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:26:36 |
-
----
-
 I've just built an AI Resume Builder is
 
 a side project that is currently doing

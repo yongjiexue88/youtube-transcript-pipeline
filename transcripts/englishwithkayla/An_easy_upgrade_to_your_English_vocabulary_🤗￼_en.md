@@ -1,16 +1,3 @@
-# An easy upgrade to your English vocabulary  🤗￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WiSqZJd6PHk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WiSqZJd6PHk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:13:57 |
-
----
-
 Here's an easy English advanced verb
 
 that you can learn here in 60 seconds and it will really help your English sound stronger and it will help you speak in a more native way, sounding more natural. So instead of just saying that you're going to understand something or like you're trying to understand something, another strong verb that you can use is you're trying to grasp something. I'm trying to grasp

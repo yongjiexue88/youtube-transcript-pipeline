@@ -1,16 +1,3 @@
-# Useful COLLOCATIONS in English (+ Lesson Notes)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VO8nS6NYHDY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VO8nS6NYHDY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:13:32 |
-
----
-
 all right welcome to today's lesson and
 
 we're just gonna hit the ground running I just have I have this first question for you right here we're not gonna waste

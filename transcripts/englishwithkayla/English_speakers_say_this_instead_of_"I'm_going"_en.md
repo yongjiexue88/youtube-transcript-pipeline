@@ -1,16 +1,3 @@
-# English speakers say this instead of "I'm going"
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `P7FFT6Y-MKU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=P7FFT6Y-MKU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:55:14 |
-
----
-
 sometimes english speakers won't just say hey i'm going they'll say i'm headed
 
 out we use this verb to head

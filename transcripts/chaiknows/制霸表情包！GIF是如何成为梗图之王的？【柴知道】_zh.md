@@ -1,16 +1,3 @@
-# 制霸表情包！GIF是如何成为梗图之王的？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NZPY9dasobs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NZPY9dasobs) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:36:10 |
-
----
-
 这是世界上的第一张GIF 拆开看的话其实就是 5 张图片循环的 PPT
 
 时至今日 GIF 已经完全统治了整个互联网动图界没有任何竞争对手谁的手机里不存着一大堆见得人或者见不得人的 GIF 呢

@@ -1,16 +1,3 @@
-# The Underdog: From Dead Broke to $30,000,000
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GGxUH6EXF9I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GGxUH6EXF9I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:31:13 |
-
----
-
 all right Casey what's your story I used to not look at my bank account because I didn't want to know how much was in there that's the position that I was in this is Casey a normal guy who had never started a business in his life but one day that all changed we had emptied our savings account we made the decision to move in with my mom
 
 and I quit the restaurant that moment changed my life forever then after a few months of work the idea was ready so we get the inventory we get the website launch hit go and guess what happened nothing nobody came nobody bought but in his darkest moments Casey

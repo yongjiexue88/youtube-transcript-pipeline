@@ -1,16 +1,3 @@
-# If girls say this it has a different meaning
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zi4-D2G8j2I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zi4-D2G8j2I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:40:59 |
-
----
-
 did you know there's actually a difference between a girl saying she's
 
 fine and a boy saying he's fine in

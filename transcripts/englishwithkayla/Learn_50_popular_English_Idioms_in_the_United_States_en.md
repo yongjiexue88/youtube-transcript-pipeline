@@ -1,16 +1,3 @@
-# Learn 50 popular English Idioms in the United States
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vbDqczAXywI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vbDqczAXywI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:55:58 |
-
----
-
 I promise you in today's English lesson
 
 all 50 of the English phrases and idioms

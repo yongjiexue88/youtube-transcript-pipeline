@@ -1,16 +1,3 @@
-# American Accent Workout 🇺🇸 Repeat These Sentences Every Day!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YLQs4n1grAQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YLQs4n1grAQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:38:00 |
-
----
-
 Let's learn and practice. That is the most important thing, the American accent. And we're going to practice with a lot of different sentences in order to help you fine-tune your fluency and speak smoothly. And if you're interested in developing your English fluency, please subscribe, turn on notifications.
 
 That way I can become your teacher. My name is West, the channel is Interactive English. It's all about helping you reach your fluency goals. So, we're really going to dive in to each sentence. And I have quite a few of them that we're going to practice together.

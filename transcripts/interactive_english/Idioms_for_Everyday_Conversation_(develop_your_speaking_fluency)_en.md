@@ -1,16 +1,3 @@
-# Idioms for Everyday Conversation (develop your speaking fluency)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oekK5PZxVAk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oekK5PZxVAk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:08:36 |
-
----
-
 Welcome to today's lesson and we are
 
 going to learn some idioms for everyday

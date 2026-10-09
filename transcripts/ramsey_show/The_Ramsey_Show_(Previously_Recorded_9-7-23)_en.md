@@ -1,16 +1,3 @@
-# The Ramsey Show (Previously Recorded 9-7-23)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vX3AKwr60-Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vX3AKwr60-Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:20:56 |
-
----
-
 [Music]
 
 [Music] live from the headquarters of Ramsey Solutions it's the ramsy show where we help people build wealth do work that

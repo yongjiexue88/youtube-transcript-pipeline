@@ -1,16 +1,3 @@
-# I Built a $100K/Month Android App
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0pp4X58q_0s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0pp4X58q_0s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:11:45 |
-
----
-
 But, right now, everybody and their grandma is vibe coding iOS apps. We even launched an iOS boot camp. But, what if I told you that iOS is not the only place to be making money? Something I've realized is that most people are sleeping on the potential of Android.
 
 Meet Steve. He's a guy who built a simple mobile app that makes over $100,000 a month, but almost all of his

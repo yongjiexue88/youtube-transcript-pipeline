@@ -1,16 +1,3 @@
-# If you Know These 20 Words your English is Excellent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ko18mmj5IAs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ko18mmj5IAs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:33:49 |
-
----
-
 In today's video, I'm going to take your English and upgrade it in just about 20 minutes. In today's lesson, I'm going to teach you 20 words that every single advanced English speaker should know and should be able to use. By the end of this video, you're going to have this list of 20 that you can confidently use in your everyday conversations to sound more intelligent or more professional or just feel like you understand English speakers better. Now, let's get started with the lesson.
 
 Make sure to check out Englishwithkayla.com if you want access to the PDF that goes along with today's lesson, a quiz, and access to my learning community.

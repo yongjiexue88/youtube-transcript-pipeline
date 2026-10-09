@@ -1,16 +1,3 @@
-# English idiom "no strings attached" #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `a3KykbyL6Fo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=a3KykbyL6Fo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:22:48 |
-
----
-
 if you want to do something nice for someone and there's no cost to them
 
 you're just a great person you can say there are no strings attached

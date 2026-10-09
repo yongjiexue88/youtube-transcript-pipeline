@@ -1,16 +1,3 @@
-# More advanced English with a native speaker in Los Angeles.  Grammar and idioms with Megan. (part 2)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BtVoMYlDy-Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BtVoMYlDy-Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:45:19 |
-
----
-
 hi i'm lisa if you're already an advanced speaker of english but you still sometimes feel insecure about your english then this channel is for you my goal is to make you feel confident about your english not only understanding native speakers but being able to speak like one as well in my opinion the best way to do that is to listen to native speakers and analyze the way
 
 they talk and this is why i like to film conversations that i have with native speakers i like to meet interesting people in los angeles people that i think you might enjoy meeting as well [Music]

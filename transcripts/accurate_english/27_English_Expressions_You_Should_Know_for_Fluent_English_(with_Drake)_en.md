@@ -1,16 +1,3 @@
-# 27 English Expressions You Should Know for Fluent English (with Drake)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5HWAECboAGI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5HWAECboAGI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:43:15 |
-
----
-
 hi i'm lisa if you would like to truly master the english language and be truly fluent you know that you need to learn common english expressions that are used on a daily basis in this video i will teach you a lot of different expressions that contain the word word in them for this video i
 
 decided to do it a little differently normally i explain the meanings of the expressions to you but in this case i decided i would ask a native speaker to teach them to you i thought it would be interesting to do it this way because then we can analyze how the native speaker is speaking and maybe they're going to use other expressions while they're teaching you the expression [Music]

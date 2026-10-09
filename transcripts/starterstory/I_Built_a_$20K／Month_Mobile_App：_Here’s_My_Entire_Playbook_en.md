@@ -1,16 +1,3 @@
-# I Built a $20K/Month Mobile App: Here’s My Entire Playbook
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yBjcmMhXSDk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yBjcmMhXSDk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:14:26 |
-
----
-
 I launched my app 6 months ago and now it makes over 20K a month. This is Matt,
 
 a regular guy who changed his life by building an app with AI. It took me 3 days to code the app with AI. But this is not a story about [music] how to build. It's a story about how fast apps can grow if you focus on the right things. I asked Ma to come on to the channel to break down exactly how he did all of this in just 6 months. And in this video, he breaks down exactly how he built a mobile app in 3 days with AI,

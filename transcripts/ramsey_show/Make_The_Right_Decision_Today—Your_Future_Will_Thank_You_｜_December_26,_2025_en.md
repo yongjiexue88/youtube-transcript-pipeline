@@ -1,16 +1,3 @@
-# Make The Right Decision Today—Your Future Will Thank You | December 26, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hYki9MZQycQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hYki9MZQycQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:52:23 |
-
----
-
 George Camel here with a quick PSA before the calls start coming in. If you want to leave the money stress in 2025, you need a plan that works. So take what you learn today and put it to work in every dollar. Download the app and start for free today.
 
 Normal [music] is broke and common sense is weird. So, we're here to help you transform your life. From the Ramsey Network and the Fair Winds Credit Union studio, this is the Ramsey Show.

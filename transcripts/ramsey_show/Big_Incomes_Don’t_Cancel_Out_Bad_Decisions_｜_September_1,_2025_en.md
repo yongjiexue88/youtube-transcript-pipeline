@@ -1,16 +1,3 @@
-# Big Incomes Don’t Cancel Out Bad Decisions | September 1, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7XQhMLORFJs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7XQhMLORFJs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:10:09 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

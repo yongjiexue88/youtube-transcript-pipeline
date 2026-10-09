@@ -1,16 +1,3 @@
-# “千兆路由器”的 Wi-Fi，为什么跑不到千兆？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JTH_H6hqqZw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JTH_H6hqqZw) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:34:56 |
-
----
-
 2024 年身处制造业高度发达的中国
 
 只要花几十块钱就能买到一个千兆路由器让 Wi-Fi 轻松跑到千兆是理所当然的我之前就是这么想的但研究了一下却发现没那么简单即使我办了千兆网买了“千兆路由器” Wi-Fi 也未必能跑到千兆

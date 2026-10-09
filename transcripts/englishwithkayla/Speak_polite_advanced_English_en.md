@@ -1,16 +1,3 @@
-# Speak polite advanced English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RPwGNfjgos0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RPwGNfjgos0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:51:50 |
-
----
-
 One of the most important things for speaking English is to be polite. Pay
 
 attention because you need to be polite in your conversations and this list of phrases will be a great help to you.

@@ -1,16 +1,3 @@
-# You Can’t Win With Money While Your Life Is In Financial Chaos | December 11, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `F1uTBLIGH-I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=F1uTBLIGH-I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:54:49 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

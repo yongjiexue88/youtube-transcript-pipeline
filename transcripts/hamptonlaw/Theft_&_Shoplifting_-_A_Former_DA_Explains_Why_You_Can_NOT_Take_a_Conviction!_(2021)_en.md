@@ -1,16 +1,3 @@
-# Theft & Shoplifting - A Former DA Explains Why You Can NOT Take a Conviction! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cUAKNNFD9Qc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cUAKNNFD9Qc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 19:01:19 |
-
----
-
 hello everyone welcome to the Hampton law firm Are You facing a theft charge or a shoplifting charge maybe this is your first arrest or your first time you've ever faced a theft and you don't know what to expect or maybe what the next steps are for you today I want to go over exactly what's available to you and what to expect if you've been charged with a theft in Texas all right don't forget to subscribe to our YouTube channel if you want more great content just like this and today my whole goal
 
 is to explain the ins and outs of theft what is theft what has to be proven Beyond A Reasonable Doubt and more importantly why it is so important that you must not take the plea deal that the prosecutor is going to offer you it's too important that you hear what has to be said on this video so let's let's get right into it by the way if

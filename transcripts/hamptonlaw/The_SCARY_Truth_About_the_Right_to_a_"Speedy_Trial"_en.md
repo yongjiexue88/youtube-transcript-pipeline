@@ -1,16 +1,3 @@
-# The SCARY Truth About the Right to a "Speedy Trial"
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KQtdf43LtOk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KQtdf43LtOk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:49:53 |
-
----
-
 do you qualify for a speedy trial is it the right option for your
 
 case hi I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about Speedy trials everyone wants to know do I have a right to a speedy trial but they don't usually ask the question is it really the best option for your case by the way if you around to the end of this video I'll also provide you a free ebook what to do if you have been charged with a crime in Texas okay so

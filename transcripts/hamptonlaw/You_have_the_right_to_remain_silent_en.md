@@ -1,16 +1,3 @@
-# You have the right to remain silent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PnEZ8Mpo1g4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PnEZ8Mpo1g4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:20:54 |
-
----
-
 You have the right to remain silent.
 
 You've heard that line a hundred times, right? Movies, TV shows, crime dramas, they all hammer it in. If you say, "I want a lawyer," boom, the cops have to stop. It's game over, right?

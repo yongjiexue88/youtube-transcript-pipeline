@@ -1,16 +1,3 @@
-# Learn to use the English phrase “I’m craving” #shorts #learnenglish #englishlesson #speakenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `z4g1T_8w6og` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=z4g1T_8w6og) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:13:17 |
-
----
-
 in english if you want to speak about a
 
 certain food that you want or a type of food that you

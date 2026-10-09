@@ -1,16 +1,3 @@
-# 开源=为爱发电？DeepSeek们到底怎么赚钱？How do Open-source Large Models Actually Make Money?【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gWxOUJdW0bA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gWxOUJdW0bA) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:33:41 |
-
----
-
 这是 2024 年的百度
 
 这是 2025 年的百度

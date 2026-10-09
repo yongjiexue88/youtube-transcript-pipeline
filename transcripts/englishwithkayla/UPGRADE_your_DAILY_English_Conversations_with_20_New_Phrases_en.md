@@ -1,16 +1,3 @@
-# UPGRADE your DAILY English Conversations with 20 New Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KFlBSsJXHcE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KFlBSsJXHcE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:46:08 |
-
----
-
 if you're ready to level up your English
 
 and stop feeling like you're speaking very slow and simply and starting to

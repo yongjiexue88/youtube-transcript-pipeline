@@ -1,16 +1,3 @@
-# American Accent Advanced Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GwgEY2JJXV8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GwgEY2JJXV8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:12:40 |
-
----
-
 hi it's Lisa mois again with another lesson to help you sound more American when you're speaking English however today's lesson is more difficult than usual so if you can't create this sound
 
 right away be patient with yourself cuz

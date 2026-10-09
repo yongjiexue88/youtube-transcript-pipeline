@@ -1,16 +1,3 @@
-# How many of these English words do you know? ￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4AdfmPARp-4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4AdfmPARp-4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:56:23 |
-
----
-
 are you guys ready for an english quiz
 
 name the object i'll show you the emoji

@@ -1,16 +1,3 @@
-# Learn 28 popular English Idioms in the United States
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WKa-RIuUpyk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WKa-RIuUpyk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:52:47 |
-
----
-
 one thing I love about teaching English
 
 is making sure to teach you the phrases

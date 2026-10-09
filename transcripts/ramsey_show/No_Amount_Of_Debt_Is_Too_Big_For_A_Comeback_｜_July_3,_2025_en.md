@@ -1,16 +1,3 @@
-# No Amount Of Debt Is Too Big For A Comeback | July 3, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `En4FFhHU-Dk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=En4FFhHU-Dk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:14:17 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

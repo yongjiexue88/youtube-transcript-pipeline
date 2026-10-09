@@ -1,16 +1,3 @@
-# useful impatient english phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `O5hCll_UIxQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=O5hCll_UIxQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:06:01 |
-
----
-
 i want to go over some phrases with you that are really important and you'll
 
 hear english speakers use when they are

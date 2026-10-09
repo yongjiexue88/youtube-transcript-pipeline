@@ -1,16 +1,3 @@
-# The Underdog: From $200K in Debt to $1M App Maker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `h9R6ZeNruuI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=h9R6ZeNruuI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:26:16 |
-
----
-
 yep start the
 
 story all that I had to my name was a debt of $200,000 my business had failed my possessions were gone my relationships had broken down my whole identity as a person disappeared this is Adam lidel

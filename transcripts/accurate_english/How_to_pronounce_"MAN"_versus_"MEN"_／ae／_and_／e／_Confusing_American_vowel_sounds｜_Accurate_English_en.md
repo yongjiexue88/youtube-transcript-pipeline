@@ -1,16 +1,3 @@
-# How to pronounce "MAN" versus "MEN" /ae/ and /e/ Confusing American vowel sounds| Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kvCIiuDfMdk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kvCIiuDfMdk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:10:22 |
-
----
-
 [Music]
 
 in this video I'd like to help you fix a very common mistake with two different vowel sounds the air and the air a lot

@@ -1,16 +1,3 @@
-# How to Stop Cops from SPYING on Your Home with Cameras!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Vej1-l71lvs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Vej1-l71lvs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:29:54 |
-
----
-
 are cops allowed to legally surround your home with cameras and stalk you day and night for as long as they wish without a warrant that is exactly what happened to an Illinois Man by the name of Travis Tuggle in this video I'm going to explain if police surround your home with pole cameras and they begin to stalk you day and night and they don't have a warrant is this legal and what
 
 you can do to protect yourself so that you don't face the same situation and fate as Travis Tuggle back in 2014

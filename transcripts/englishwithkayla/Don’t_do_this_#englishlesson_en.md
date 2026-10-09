@@ -1,16 +1,3 @@
-# Don’t do this #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CNRI84DcUgE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CNRI84DcUgE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:21:40 |
-
----
-
 the correct answer is wander off don't
 
 wander off when you're in the middle of

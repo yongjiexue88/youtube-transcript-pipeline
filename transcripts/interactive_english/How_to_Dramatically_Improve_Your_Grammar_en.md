@@ -1,16 +1,3 @@
-# How to Dramatically Improve Your Grammar
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `P9V-z-KyJQo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=P9V-z-KyJQo) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:35:27 |
-
----
-
 So today I want to talk to you about some common sense ways that you can improve your grammar.
 
 That's coming up.

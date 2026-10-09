@@ -1,16 +1,3 @@
-# PREPOSITION QUIZ | How advanced is your grammar?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uDhXOwXyVCg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uDhXOwXyVCg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:18:52 |
-
----
-
 hey everyone my name is wes this is interactive english the channel is all about trying to help you practice and improve your english skills and today is really just trying to help you improve your overall english fluency because we're going to talk about prepositions those those tiny little function words that i think can can be confusing for some english learners and i think prepositions is often where learners may make a small mistake
 
 and in that case when you make a mistake with prepositions people still understand what you're trying to say it's really just a matter of trying to help you speak accurately which again goes back to improving your overall fluency i will show you some sentences that are missing prepositions and i just want you to complete the sentence with whatever preposition you feel is correct i'll give you a moment to think of an answer

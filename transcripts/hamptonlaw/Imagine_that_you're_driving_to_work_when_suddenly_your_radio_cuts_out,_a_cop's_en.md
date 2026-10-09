@@ -1,16 +1,3 @@
-# Imagine that you're driving to work when suddenly your radio cuts out, a cop's
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yDr3sBXsF0I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yDr3sBXsF0I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:52:00 |
-
----
-
 Imagine that you're driving to work when suddenly your radio cuts out, a cop's voice comes over your speakers and tells you it's time to pull over. You look behind you. You see several cop cars and lights flashing and suddenly you find yourself detained only to find out later your car scanned your face and identified you as someone with a warrant and then forwarded your information and your location to the police who then arrested you without asking any questions. Sounds like something out of a movie, but unfortunately car manufacturers are already working on making this a reality.
 
 I'm Seth Hampton, the people's lawyer. And in this video I'm going to break down how Ford and many other car manufacturers are planning on installing the most invasive surveillance technology we have ever seen and how these car manufacturers are planning on sharing all of this data with the cops.

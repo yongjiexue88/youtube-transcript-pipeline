@@ -1,16 +1,3 @@
-# What to call the worst people in English￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4CCPplAwWPw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4CCPplAwWPw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:42:21 |
-
----
-
 here are two phrases that I absolutely
 
 want you to remember if you meet someone

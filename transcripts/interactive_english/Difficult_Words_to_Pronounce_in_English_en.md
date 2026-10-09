@@ -1,16 +1,3 @@
-# Difficult Words to Pronounce in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0m_wS6p2Tyo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0m_wS6p2Tyo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:13:21 |
-
----
-
 Hello and welcome to today's lesson.
 
 This it's going to be a a pronunciation

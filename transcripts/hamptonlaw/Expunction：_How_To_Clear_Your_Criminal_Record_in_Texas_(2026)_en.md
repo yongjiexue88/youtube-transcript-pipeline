@@ -1,16 +1,3 @@
-# Expunction: How To Clear Your Criminal Record in Texas (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bSgsGS5Qc8s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bSgsGS5Qc8s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:34:48 |
-
----
-
 clearing your criminal record do you need to take the steps to make sure an arrest or a charge is removed is it
 
 costing you a job

@@ -1,16 +1,3 @@
-# Learn 12 English phrases that Americans actually use
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oFVwQq4zFRc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oFVwQq4zFRc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:55:30 |
-
----
-
 I was able to get my friend to help me
 
 move even though they didn't want to help me I roped my friend into helping

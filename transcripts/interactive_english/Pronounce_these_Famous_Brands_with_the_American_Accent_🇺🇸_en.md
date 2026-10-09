@@ -1,16 +1,3 @@
-# Pronounce these Famous Brands with the American Accent 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `828TdxwC5qo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=828TdxwC5qo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:07:38 |
-
----
-
 today i want to teach you how to pronounce 20 famous and well-known
 
 american brands and yes i am going to

@@ -1,16 +1,3 @@
-# CORRECTING GRAMMAR MISTAKES 🚫 (Lesson Notes Included)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `B8GK6Ug3xpo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=B8GK6Ug3xpo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:14:29 |
-
----
-
 Hello and welcome to today's lesson.
 
 This time I have a grammar lesson for

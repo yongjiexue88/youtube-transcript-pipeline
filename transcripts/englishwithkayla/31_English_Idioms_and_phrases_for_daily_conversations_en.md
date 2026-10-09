@@ -1,16 +1,3 @@
-# 31 English Idioms and phrases for daily conversations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eOt53k7AyXg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eOt53k7AyXg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:53:06 |
-
----
-
 this video will teach you 31 English
 
 phrases and idioms that will be

@@ -1,16 +1,3 @@
-# I hate when this happens
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `H91Ge8g8GCI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=H91Ge8g8GCI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:26:25 |
-
----
-
 oh this class is so boring I know it
 
 just drags on drag on what does that

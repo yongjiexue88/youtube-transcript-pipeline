@@ -1,16 +1,3 @@
-# Use this phrase when something is strange and suspicious￼ 🤨￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YoXhLwzxhD8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YoXhLwzxhD8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:55:46 |
-
----
-
 this seems kind of strange and
 
 suspicious this is fishy

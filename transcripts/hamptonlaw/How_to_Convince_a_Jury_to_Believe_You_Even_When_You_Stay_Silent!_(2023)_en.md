@@ -1,16 +1,3 @@
-# How to Convince a Jury to Believe You Even When You Stay Silent! (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2y76wdrmnKI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2y76wdrmnKI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:43:10 |
-
----
-
 how to persuade a jury not to hold your silence against
 
 you hi I'm Jeff Hampton with the Hampton criminal defense attorneys today I want to talk to you about some criminal trial lawyer Secrets essentially secrets for the defense when you're picking a jury a lot of times when you're going into trial the most important aspect of a jury trial can many times be the jury selection process the problem is there may be certain constitutional rights that you have but how do you persuade a jury not to hold your silence against you when you have a Fifth Amendment right not to testify well listen we know

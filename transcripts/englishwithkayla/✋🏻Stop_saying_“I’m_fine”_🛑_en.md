@@ -1,16 +1,3 @@
-# ✋🏻Stop saying “I’m fine” 🛑
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BNAnGw50mj8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BNAnGw50mj8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:48:48 |
-
----
-
 this is why you need to stop saying I'm
 
 fine in English English speakers often

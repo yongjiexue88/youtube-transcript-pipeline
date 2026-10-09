@@ -1,16 +1,3 @@
-# Useful Proverbs to Share WISDOM | Advanced Expressions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fctX94Gwwcs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fctX94Gwwcs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:30:53 |
-
----
-
 today I want to teach you some very common proverbs that will help you share
 
 a little bit of wisdom with others that's coming up hey everyone my name is

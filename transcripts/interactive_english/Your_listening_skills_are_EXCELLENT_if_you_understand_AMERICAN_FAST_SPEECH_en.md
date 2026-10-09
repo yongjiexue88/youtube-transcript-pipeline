@@ -1,16 +1,3 @@
-# Your listening skills are EXCELLENT if you understand AMERICAN FAST SPEECH
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VfjOi_02ItY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VfjOi_02ItY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:46:21 |
-
----
-
 let's listen to American fast speech so
 
 this is all about trying to help you improve your listening comprehension and

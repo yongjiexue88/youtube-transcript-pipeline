@@ -1,16 +1,3 @@
-# The best idiom to use when something is over
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Q28Jo7bLWQs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Q28Jo7bLWQs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:03:14 |
-
----
-
 if we're going to stop something or quit
 
 something in the workplace we'll say we're going to pull the plug on it

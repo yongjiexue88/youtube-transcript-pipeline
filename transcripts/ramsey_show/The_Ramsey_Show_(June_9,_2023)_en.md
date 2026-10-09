@@ -1,16 +1,3 @@
-# The Ramsey Show (June 9, 2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `v-IwF34Ur_c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=v-IwF34Ur_c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:22:14 |
-
----
-
 foreign
 
 live from the headquarters of Ramsey Solutions broadcasting from the PODS moving in storage Studio this is the

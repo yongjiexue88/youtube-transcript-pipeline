@@ -1,16 +1,3 @@
-# How To Beat A Street Racing Charge In Texas: Racing on a Highway in Texas (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `x4aL8_5vE1I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=x4aL8_5vE1I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 15:59:37 |
-
----
-
 is street racing legal in Texas have you been arrested for street racing is there a way to beat a street racing charge in
 
 Texas hi I'm Jeff Hampton with the Hampton law firm and today I want to talk to you about the crime of racing on a highway many people refer to it as street racing and I want to talk to you about this today so that you'll understand what Texas law says has to be proven proven and what your defenses are is there a way to be able to defeat

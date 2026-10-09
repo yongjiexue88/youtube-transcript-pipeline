@@ -1,16 +1,3 @@
-# Practice speaking English with me #shorts #practiceenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gKnJyUOKwDo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gKnJyUOKwDo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:23:27 |
-
----
-
 duet me and practice this very natural
 
 english conversation

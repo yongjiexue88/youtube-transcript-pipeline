@@ -1,16 +1,3 @@
-# Ten Advanced English Words for More Fluent Speech
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `z5eNjLBneiA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=z5eNjLBneiA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:06:17 |
-
----
-
 one of the best ways to sound more fluent when you're speaking English is to use advanced words rather than simple
 
 words in this video I'm going to teach you some advanced words so that you can avoid using the word very in addition

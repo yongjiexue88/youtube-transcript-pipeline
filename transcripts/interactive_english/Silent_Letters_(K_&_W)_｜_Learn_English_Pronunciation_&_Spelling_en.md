@@ -1,16 +1,3 @@
-# Silent Letters (K & W) | Learn English Pronunciation & Spelling
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `chqwbSlCAOM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=chqwbSlCAOM) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:53:43 |
-
----
-
 Shhh...these are silent letters.
 
 I'm going to show you how to pronounce them correctly.

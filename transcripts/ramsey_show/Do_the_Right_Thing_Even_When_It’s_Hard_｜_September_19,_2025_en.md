@@ -1,16 +1,3 @@
-# Do the Right Thing Even When It’s Hard | September 19, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WhIyLzwoh1M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WhIyLzwoh1M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:07:19 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

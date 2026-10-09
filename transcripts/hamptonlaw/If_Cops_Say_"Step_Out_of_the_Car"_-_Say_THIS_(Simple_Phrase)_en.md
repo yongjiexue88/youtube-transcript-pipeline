@@ -1,16 +1,3 @@
-# If Cops Say "Step Out of the Car" - Say THIS (Simple Phrase)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FERAZ6Jo_p8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FERAZ6Jo_p8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:19:02 |
-
----
-
 You're driving home from work. The red and blue lights come on. A cop pulls you over for driving 5 miles over the speed limit. He walks up to your window, takes your license, goes back to his cruiser, and then comes back with a suspicious look on his face.
 
 Because instead of just handing you a ticket, he looks at you and says the four words that makes your stomach drop. Step out of the vehicle. Now, here's what happens. In the next 60 seconds, you're either going to get back in your car and drive away free, or you're going to hand that officer everything he needs to search you, test you, and maybe even arrest you.

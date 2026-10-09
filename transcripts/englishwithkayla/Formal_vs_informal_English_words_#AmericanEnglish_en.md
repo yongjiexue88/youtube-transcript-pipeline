@@ -1,16 +1,3 @@
-# Formal vs informal English words #AmericanEnglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qW9ZwGd1hsc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qW9ZwGd1hsc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:10:37 |
-
----
-
 there's a small difference between fluent speakers and advanced english speakers now fluent
 
 speakers know when to use the right word in the right context but

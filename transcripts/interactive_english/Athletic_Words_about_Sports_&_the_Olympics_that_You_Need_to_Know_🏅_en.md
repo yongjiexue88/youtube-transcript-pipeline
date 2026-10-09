@@ -1,16 +1,3 @@
-# Athletic Words about Sports & the Olympics that You Need to Know 🏅
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Ug4FOM6LWYk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Ug4FOM6LWYk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:45:37 |
-
----
-
 all right hello what is up guys welcome
 
 to another awesome lesson because today

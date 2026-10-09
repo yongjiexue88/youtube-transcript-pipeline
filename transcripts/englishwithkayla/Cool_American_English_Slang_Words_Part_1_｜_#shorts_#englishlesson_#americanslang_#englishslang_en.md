@@ -1,16 +1,3 @@
-# Cool American English Slang Words Part 1 | #shorts #englishlesson #americanslang #englishslang
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TrshrWkz-pg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TrshrWkz-pg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:28:48 |
-
----
-
 practice some popular american slang
 
 instead of saying car we'll say whip or ride like get in

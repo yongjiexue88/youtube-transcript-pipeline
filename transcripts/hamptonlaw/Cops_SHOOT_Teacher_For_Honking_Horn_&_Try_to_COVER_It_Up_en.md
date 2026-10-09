@@ -1,16 +1,3 @@
-# Cops SHOOT Teacher For Honking Horn & Try to COVER It Up
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0jGUWKslPVk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0jGUWKslPVk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:00:09 |
-
----
-
 Hit something.
 
 Don't call you that better.

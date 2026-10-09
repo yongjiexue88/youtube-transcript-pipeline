@@ -1,16 +1,3 @@
-# Steady Habits Build Lasting Wealth | May 12, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cA6Jg4wtVm8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cA6Jg4wtVm8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:32:40 |
-
----
-
 This is an ad for BetterHelp. May is Mental Health Awareness Month and you know that stress you keep pushing down?
 
 It's showing up everywhere in your relationships and in your health. If you need to talk to a licensed therapist, make today the day. Go to betterhelp.com/ramsey to get 10% off.

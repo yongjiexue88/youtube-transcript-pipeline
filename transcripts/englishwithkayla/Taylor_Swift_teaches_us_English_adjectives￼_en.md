@@ -1,16 +1,3 @@
-# Taylor Swift teaches us English adjectives￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PYCtWkwoYv0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PYCtWkwoYv0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:55:24 |
-
----
-
 and does something it's strategic a woman does the same thing it's calculated so what's the difference between strategic and calculated i'm an
 
 english teacher and i'm going to tell you it might seem like strategic and

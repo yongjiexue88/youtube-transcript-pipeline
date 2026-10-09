@@ -1,16 +1,3 @@
-# Illegal Drug Searches in Texas: Will an Illegal Search Get Your Texas Drug Case Dismissed? (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XiwLz_vggnI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XiwLz_vggnI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:12:05 |
-
----
-
 hello everyone welcome to the Hampton Law Firm I'm Jeff Hampton I wanted to hop on here today and talk for a couple of minutes I had a uh a prospective client that gave me a call and wanted to know about their drug case they said look Jeff I was pulled over I was arrested for a drug charge but I think the search was illegal what kind of effect is
 
 this going to have if my search was actually illegal will I be able to get my case dismissed now thanks for joining us today if you like the video and what you see here today I encourage you to sub subscribe to our YouTube channel maybe share the video or like what you see here um we're going to at the at the end of this video if you wait around to

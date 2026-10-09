@@ -1,16 +1,3 @@
-# LAWYER: Are Police Legally Allowed to Lie to You?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wi95zO3kjX4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wi95zO3kjX4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:53:56 |
-
----
-
 Can the police legally lie to you will
 
 they hi I'm Jeff Hampton with the Hampton Law Firm thank you for joining us on our YouTube channel today I'm going to talk exactly about that can the police lie to you is it legal to do it should you expect that they will do so by the way if you wait around to the end of this video I'll also give you a free ebook what to do if you have been charged with a crime in Texas okay

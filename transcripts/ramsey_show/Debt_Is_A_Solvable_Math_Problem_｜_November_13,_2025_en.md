@@ -1,16 +1,3 @@
-# Debt Is A Solvable Math Problem | November 13, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LEva3KyMfzw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LEva3KyMfzw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:58:44 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

@@ -1,16 +1,3 @@
-# what if the police show up at your front door pounding on the door demanding to
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FchuFXYGoNo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FchuFXYGoNo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:30:35 |
-
----
-
 what if the police show up at your front door pounding on the door demanding to come in you tell them to leave but they refuse now imagine this you crack the door open to see what's going on they shove their foot into the doorway to prevent you from closing the door what rights do you have in this situation how do you take back control in this moment I'm Jeff Hampton former prosecutor turned people's lawyer
 
 and I've seen Police use some really clever tactics to get what they want want at your front door in this video I'll cover number one

@@ -1,16 +1,3 @@
-# The NEW Ruling Cops Use to Search Your Home WITHOUT a Warrant
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ok3lY9nNa6Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ok3lY9nNa6Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:01:33 |
-
----
-
 Imagine you're at home minding your own business when suddenly you hear police welfare check open up. You have no idea what's going on, but you've watched my videos before and you know you have a constitutional right to remain within the privacy of your own castle, so you choose not to answer the door. The cops, they keep knocking and they say they are coming in. I'm Jeff Hampton, the people's lawyer, and in this video, I'm covering the new Supreme Court case that changed the Fourth Amendment and made it easier for cops to get into your home without probable cause.
 
 Stick around to the end because I'm going to show you how cops use this new welfare check to get into your home without probable cause and what you can do to limit cops from getting into your home. The Fourth Amendment to the United States Constitution is supposed to protect each and every one of us from unreasonable searches and seizures.

@@ -1,16 +1,3 @@
-# Is the American Dream Officially Dead? w/ @BenShapiro
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `41iMbOK1rYk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=41iMbOK1rYk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:18:16 |
-
----
-
 [Music]
 
 you met St up trouble a long time there has now been created in the United States a permission structure for uselessness this sort of idea that you can take all the right actions and that there is no correlation between that and success is such a lie and it's a malicious lie my plan is to not retire

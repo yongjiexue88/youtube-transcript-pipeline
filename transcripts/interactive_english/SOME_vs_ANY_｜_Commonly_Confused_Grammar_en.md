@@ -1,16 +1,3 @@
-# SOME vs ANY | Commonly Confused Grammar
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `95cQr7KvPiM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=95cQr7KvPiM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:20:09 |
-
----
-
 hey everyone welcome to today's lesson
 
 my name is wes this is interactive

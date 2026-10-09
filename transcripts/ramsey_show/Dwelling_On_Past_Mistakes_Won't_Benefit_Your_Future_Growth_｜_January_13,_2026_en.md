@@ -1,16 +1,3 @@
-# Dwelling On Past Mistakes Won't Benefit Your Future Growth | January 13, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kQRnBfo5Ivw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kQRnBfo5Ivw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:49:49 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

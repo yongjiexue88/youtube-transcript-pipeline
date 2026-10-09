@@ -1,16 +1,3 @@
-# Most Difficult Poem to Say in English | THE CHAOS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8j9SbnLu2ow` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8j9SbnLu2ow) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:06:04 |
-
----
-
 if you're able to pronounce all of the words in this poem correctly then your
 
 English pronunciation is better than

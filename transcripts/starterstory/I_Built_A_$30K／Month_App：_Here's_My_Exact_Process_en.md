@@ -1,16 +1,3 @@
-# I Built A $30K/Month App: Here's My Exact Process
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `P4QodeA_lQ0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=P4QodeA_lQ0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:09:50 |
-
----
-
 I decided to really lock in and focus on building one specific product and we've gone from zero to 30k MRR ever since.
 
 >> This is Benji [music] and in the last year he's built over 45 apps and his

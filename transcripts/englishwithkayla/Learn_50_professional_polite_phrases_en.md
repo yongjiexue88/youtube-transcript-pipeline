@@ -1,16 +1,3 @@
-# Learn 50 professional polite phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FR9iKnXKVqg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FR9iKnXKVqg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:48:29 |
-
----
-
 I truly believe that if you want to communicate more effectively in English
 
 you need to know exactly how to sound

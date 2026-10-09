@@ -1,16 +1,3 @@
-# 3-WORD PHRASAL VERBS THAT ARE GOOD TO KNOW
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HWW3uBxIv-s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HWW3uBxIv-s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:18:14 |
-
----
-
 welcome to today's lesson it's good to
 
 be back i feel like i've taken a short little

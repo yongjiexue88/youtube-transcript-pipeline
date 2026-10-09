@@ -1,16 +1,3 @@
-# If you know these VERBS your English is excellent!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NwrI0idS2VI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NwrI0idS2VI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:28:07 |
-
----
-
 how advanced is your English take this vocabulary quiz to find
 
 out educated native speakers of English

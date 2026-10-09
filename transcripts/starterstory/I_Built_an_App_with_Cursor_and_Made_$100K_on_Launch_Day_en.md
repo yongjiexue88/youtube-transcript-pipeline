@@ -1,16 +1,3 @@
-# I Built an App with Cursor and Made $100K on Launch Day
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4hMg_CZauJs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4hMg_CZauJs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:24:03 |
-
----
-
 I used AI to build an app that's now making $300,000 and I didn't write a single line of code. AI coding has changed the game forever. And this guy is proof. Alex Finn built and launched his app in just 3 months using Cursor.
 
 Every line of code was written with AI.

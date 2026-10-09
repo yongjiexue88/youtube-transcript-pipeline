@@ -1,16 +1,3 @@
-# Weird English rule
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `htJbltT1Rbs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=htJbltT1Rbs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:26:56 |
-
----
-
 excuse me ma'am do you sell fishes here
 
 you mean to say fish

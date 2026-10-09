@@ -1,16 +1,3 @@
-# Improve your English Listening Skills for Better Pronunciation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cWbtbKuScgk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cWbtbKuScgk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:06:59 |
-
----
-
 in this video I would like to help you to improve your English pronunciation by teaching you how to listen to English sounds I will give you a listening test and at the same time we will review four
 
 rules about the pronunciation of English vowels let's look at the following three

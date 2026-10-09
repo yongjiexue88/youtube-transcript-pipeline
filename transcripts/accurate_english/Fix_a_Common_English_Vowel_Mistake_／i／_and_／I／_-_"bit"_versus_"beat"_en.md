@@ -1,16 +1,3 @@
-# Fix a Common English Vowel Mistake /i/ and /I/ - "bit" versus "beat"
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4Ks-AmhahJ0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4Ks-AmhahJ0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:08:41 |
-
----
-
 in this video we will talk about a common vowel mistake and today we have
 
 one of my Russian students here this is Vera hi hi welcome this is a vowel that doesn't exist in most other languages Vera tell us about

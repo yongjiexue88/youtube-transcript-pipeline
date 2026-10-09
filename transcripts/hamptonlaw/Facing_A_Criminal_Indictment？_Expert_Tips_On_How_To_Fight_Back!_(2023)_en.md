@@ -1,16 +1,3 @@
-# Facing A Criminal Indictment? Expert Tips On How To Fight Back! (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `P0JR85TkSlY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=P0JR85TkSlY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:44:15 |
-
----
-
 are you facing an indictment how do you challenge it what can you do about
 
 it hi I'm Jeff Hampton with Hampton criminal defense attorneys today I want to talk to you about there's all the news today you know Trump is facing an indictment he's been indicted by a New York grand jury and a lot of people are asking the question what is an indictment how does this affect me if I facing indictment what should I know what are some ways to challenge

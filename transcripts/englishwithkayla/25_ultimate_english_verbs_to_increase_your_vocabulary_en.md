@@ -1,16 +1,3 @@
-# 25 ultimate english verbs to increase your vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sMZodjZeP9o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sMZodjZeP9o) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:51:20 |
-
----
-
 hi there are you feeling stuck in your English progress well in today's English
 
 lesson I'll teach you 25 Advanced

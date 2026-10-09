@@ -1,16 +1,3 @@
-# LAWYER: Say THESE WORDS When Cops Use This 5th Amendment LOOPHOLE
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RaRnsgFfZUI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RaRnsgFfZUI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:37:42 |
-
----
-
 you have the right to remain silent with the police right I mean it's the Fifth
 
 Amendment right no the Supreme Court has

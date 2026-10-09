@@ -1,16 +1,3 @@
-# What is fomo #englishlesson #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `W1Rq6-UpG5A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=W1Rq6-UpG5A) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:17:03 |
-
----
-
 this is a really popular acronym in the
 
 united states and it's really useful to know in english it's fomo fear of missing out when you have fomo

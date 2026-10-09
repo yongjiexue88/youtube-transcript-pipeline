@@ -1,16 +1,3 @@
-# GO OUT Has 8 Different Meanings  😱 Phrasal Verb Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AibICZquK6A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AibICZquK6A) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:53:51 |
-
----
-
 today I'm going to talk to you about a phrasal verb which is really going to help you improve your listening and speaking fluency
 
 [Music]

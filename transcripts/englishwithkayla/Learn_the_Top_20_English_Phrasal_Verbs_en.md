@@ -1,16 +1,3 @@
-# Learn the Top 20 English Phrasal Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tZVwAv3KfYo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tZVwAv3KfYo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:46:15 |
-
----
-
 today you guys are just hanging out with me in my house because I'm going to act
 
 out and teach you 15 very important

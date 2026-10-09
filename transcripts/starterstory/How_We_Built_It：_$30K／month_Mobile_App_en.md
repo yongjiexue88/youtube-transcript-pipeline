@@ -1,16 +1,3 @@
-# How We Built It: $30K/month Mobile App
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rCV-TVCnF6Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rCV-TVCnF6Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:17:15 |
-
----
-
 This is Eyal and Yali, two college students who built an app that at first crushed it with downloads. We were averaging 20 downloads a day right off the bat. But, they had a problem. Almost nobody stayed after the trial ended.
 
 Their conversion was horrible. If your product is nobody's going to buy it. >> They were stuck at $2,000 a month, and they had no idea what to do. So, they decided to scrap everything and go back into the cave. So, we shut down all marketing and spent 4 months completely rebuilding from the scratch. After doing this, on their second try, they hit $30,000 MRR in just 10 weeks. And I

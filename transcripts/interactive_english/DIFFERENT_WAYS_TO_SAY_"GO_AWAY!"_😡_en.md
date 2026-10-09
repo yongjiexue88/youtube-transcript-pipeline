@@ -1,16 +1,3 @@
-# DIFFERENT WAYS TO SAY "GO AWAY!" 😡
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8bf26hGXZsU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8bf26hGXZsU) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:11:45 |
-
----
-
 - Have you ever wanted to tell someone to go away?
 
 If so, I am going to teach you several useful ways that you can do just that.

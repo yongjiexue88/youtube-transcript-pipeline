@@ -1,16 +1,3 @@
-# I Make $1M/Year As An Introvert
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `trNGj1BN1GU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=trNGj1BN1GU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:29:22 |
-
----
-
 this guy makes $1 million a year with a business model built for introverts ghost writing and the best part is he did it all in Just 2 years I've never
 
 been a sales guy I'm an introvert which is why I became a writer I drove out to Miami Florida to ask him exactly how it works how he got started and the framework he used to go from0 to $65,000

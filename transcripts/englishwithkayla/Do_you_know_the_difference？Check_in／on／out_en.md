@@ -1,16 +1,3 @@
-# Do you know the difference?Check in/on/out
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ot5k1E5OksY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ot5k1E5OksY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:59:56 |
-
----
-
 let's talk about the difference between checking in on someone checking out
 
 someone and checking on someone

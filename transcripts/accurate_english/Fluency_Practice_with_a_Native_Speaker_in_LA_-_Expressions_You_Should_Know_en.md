@@ -1,16 +1,3 @@
-# Fluency Practice with a Native Speaker in LA - Expressions  You Should Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DRQ0qg5LXH8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DRQ0qg5LXH8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:24:46 |
-
----
-
 Let's improve your English fluency by learning directly from a native speaker in Los Angeles. You will listen to my conversation with a native speaker that I recently met. She used some common expressions, words, idioms, and slang
 
 that you need to know. I will teach you the expressions that she was using and then I will give you other sample sentences so that you can truly master these expressions. What is the difference between a native speaker of English and a non-native speaker of English? The native speaker uses expressions whereas the non-native speaker often uses the literal words.

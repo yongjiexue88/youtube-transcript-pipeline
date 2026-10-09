@@ -1,16 +1,3 @@
-# EMOJI SENTENCE GUESSING GAME 😉
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fqz4LRnpglw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fqz4LRnpglw) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:40:56 |
-
----
-
 Today we are going to do the emoji challenge.
 
 So basically for this challenge you have to act out as many emojis as you can.

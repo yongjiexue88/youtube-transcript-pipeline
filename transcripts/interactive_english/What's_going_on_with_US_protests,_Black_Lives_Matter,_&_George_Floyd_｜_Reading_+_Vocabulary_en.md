@@ -1,16 +1,3 @@
-# What's going on with US protests, Black Lives Matter, & George Floyd | Reading + Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rwNDwxjVbI4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rwNDwxjVbI4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:26:51 |
-
----
-
 hey everyone my name is Wes this is interactive English and if this is your first time
 
 here on the channel this we're all about just helping you practice and improve your English skills and again please if this is your first time write your name tell me where you're from write that in the chat or even if you're watching this later write that in the comments I love hearing from everyone well especially new people so

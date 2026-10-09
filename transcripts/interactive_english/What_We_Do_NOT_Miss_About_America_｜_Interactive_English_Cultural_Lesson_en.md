@@ -1,16 +1,3 @@
-# What We Do NOT Miss About America | Interactive English Cultural Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xahXXzvvUJ4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xahXXzvvUJ4) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:35:51 |
-
----
-
 You probably already know that we are from the United States, but right now we don't live there.
 
 And today, we want to talk to you about some of the things that we don't miss

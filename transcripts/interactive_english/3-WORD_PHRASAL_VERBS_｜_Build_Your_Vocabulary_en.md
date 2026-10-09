@@ -1,16 +1,3 @@
-# 3-WORD PHRASAL VERBS | Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xrY3g_B4tuI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xrY3g_B4tuI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:01:43 |
-
----
-
 let's learn some three word phrasal
 
 verbs okay that's right I said three word phrasal verbs and I don't want to waste your time so let's just begin and

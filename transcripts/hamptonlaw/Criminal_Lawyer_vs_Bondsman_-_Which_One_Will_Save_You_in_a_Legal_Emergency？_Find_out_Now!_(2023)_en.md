@@ -1,16 +1,3 @@
-# Criminal Lawyer vs Bondsman - Which One Will Save You in a Legal Emergency? Find out Now! (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RBxjFen99ko` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RBxjFen99ko) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:50:44 |
-
----
-
 you or a loved one has been arrested should you hire a criminal lawyer or a bondsman which one's more
 
 important hi I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I'm going to talk to you about that which should you do first maybe you got a phone call from a detective saying you have a warrant for your arrest maybe you had a loved one who's been arrested and they're sitting in jail which one makes more sense what should you do first should

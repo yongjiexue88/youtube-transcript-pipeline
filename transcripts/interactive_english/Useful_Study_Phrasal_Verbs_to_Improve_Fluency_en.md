@@ -1,16 +1,3 @@
-# Useful Study Phrasal Verbs to Improve Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DhO1q_dO-Ok` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DhO1q_dO-Ok) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:11:17 |
-
----
-
 - Today we are going to study study phrasal verbs.
 
 I'll explain that in just a moment.

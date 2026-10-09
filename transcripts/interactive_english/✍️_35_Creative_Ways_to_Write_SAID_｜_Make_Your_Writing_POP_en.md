@@ -1,16 +1,3 @@
-# ✍️ 35 Creative Ways to Write SAID | Make Your Writing POP
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uCyp7ZCxQaI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uCyp7ZCxQaI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:59:02 |
-
----
-
 let's talk about some creative ways that
 
 you can say the word said so why is this

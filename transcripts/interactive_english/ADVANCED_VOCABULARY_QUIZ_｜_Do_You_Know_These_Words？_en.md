@@ -1,16 +1,3 @@
-# ADVANCED VOCABULARY QUIZ | Do You Know These Words?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MayDJjvDuj4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MayDJjvDuj4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:40:02 |
-
----
-
 I think so all right what is up everyone
 
 so I hope I hope this is working this is the first time we've tried like setting an event and and trying this live so

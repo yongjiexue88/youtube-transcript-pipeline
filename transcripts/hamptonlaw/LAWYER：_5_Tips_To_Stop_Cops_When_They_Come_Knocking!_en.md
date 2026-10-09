@@ -1,16 +1,3 @@
-# LAWYER: 5 Tips To Stop Cops When They Come Knocking!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rKycv8txbuA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rKycv8txbuA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:32:41 |
-
----
-
 get ready for five tips if the cops come knocking and if you wait around till the end of this video I'll also provide you a strategy to obtain total privacy from the police and if the cops refuse to leave your front porch what you can do to make sure and protect your rights from a search let's start with the basic question can a cop walk up through your driveway up to your front door knock on
 
 the door and demand to talk to you now look if you provide an access way to the public let's say an entryway open gate a

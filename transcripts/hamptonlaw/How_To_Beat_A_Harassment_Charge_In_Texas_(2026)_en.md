@@ -1,16 +1,3 @@
-# How To Beat A Harassment Charge In Texas (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VJADjMFF5O4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VJADjMFF5O4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:57:35 |
-
----
-
 harassment what is the crime of harassment in Texas what is the state of Texas required to prove in order to convict
 
 you hi I'm Jeff Hampton with the Hampton Law Firm today I want to talk to you about the crime of harassment and I I want to thank you for coming to our YouTube channel and going over some of the law that we're going to provide to you under Texas Criminal statutes and this is kind of a strange statute because it changes all the time there's been a lot of developments

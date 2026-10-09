@@ -1,16 +1,3 @@
-# what in the _____? 🌎🤬😲
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sIXb9xO4gDs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sIXb9xO4gDs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:01:17 |
-
----
-
 here's a really good phrase that english speakers use instead of saying something
 
 very inappropriate we say what in the

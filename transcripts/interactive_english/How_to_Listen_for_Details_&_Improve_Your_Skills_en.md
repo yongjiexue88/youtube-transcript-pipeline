@@ -1,16 +1,3 @@
-# How to Listen for Details & Improve Your Skills
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JqBRd_gL_oo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JqBRd_gL_oo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:44:08 |
-
----
-
 hello and welcome to our live lesson
 
 today we're having a gorgeous Saturday

@@ -1,16 +1,3 @@
-# The Hampton Law Firm: The Criminal Defense Lawyers That Get Results!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Pr-ZlNxEla8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Pr-ZlNxEla8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:43:16 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm today I want to introduce our Law Firm to you and go
 
 over a little bit about what distinguishes our Law Firm from some of the other law firms in the north Texas

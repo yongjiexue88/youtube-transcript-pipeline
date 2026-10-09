@@ -1,16 +1,3 @@
-# English phrase "all over the place" #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XEqrPS5temc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XEqrPS5temc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:12:08 |
-
----
-
 okay i'm sorry i've been so disorganized
 
 lately i have just been all over the

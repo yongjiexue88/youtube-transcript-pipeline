@@ -1,16 +1,3 @@
-# HOW TO PRACTICE SPEAKING ENGLISH ON YOUR OWN
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QZSZevPTygo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QZSZevPTygo) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:40:47 |
-
----
-
 The one thing that learners tell us all the time is: "I want to practice my speaking skills"
 
 "I want to speak. Speak Speak Speak Speak".

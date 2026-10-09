@@ -1,16 +1,3 @@
-# The Ramsey Show (Replay of the 2022 Annual Giving Show)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ltobXiT_Y1M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ltobXiT_Y1M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:23:41 |
-
----
-
 foreign
 
 [Music] ERS of Ramsey Solutions broadcasting

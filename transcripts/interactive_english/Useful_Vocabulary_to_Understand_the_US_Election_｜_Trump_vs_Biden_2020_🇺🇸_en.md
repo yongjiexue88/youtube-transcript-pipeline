@@ -1,16 +1,3 @@
-# Useful Vocabulary to Understand the US Election | Trump vs Biden 2020 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bzqDdU2SSH0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bzqDdU2SSH0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:24:21 |
-
----
-
 let's talk about the u.s election so
 
 buckle up it's going to be a bumpy ride [Music] hey everyone my name is wes this is interactive english the channel that's all about trying to help you practice and improve your english and today it's more of a vocabulary

@@ -1,16 +1,3 @@
-# Confusing English Words  - "further" or "farther"? | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `H4qWAJQpIUc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=H4qWAJQpIUc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:02:32 |
-
----
-
 in this video I will teach you two rules about American English pronunciation and after that I will teach you the meaning of two commonly confused English words
 
 further and farther and finally we will

@@ -1,16 +1,3 @@
-# Practice Speaking in a real English conversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kplZI7TNFuM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kplZI7TNFuM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:04:27 |
-
----
-
 hi friends welcome back to english with kayla my name's kayla i'm an american
 
 english teacher and today's english

@@ -1,16 +1,3 @@
-# Advanced (C2) Verbs to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `U9IOamy4BGg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=U9IOamy4BGg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:57:45 |
-
----
-
 let's learn some Advanced C2 verbs and
 
 I'm going to get right to the point and we'll begin with our first verb which is

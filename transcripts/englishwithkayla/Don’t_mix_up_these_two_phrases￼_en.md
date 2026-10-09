@@ -1,16 +1,3 @@
-# Don’t mix up these two phrases￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Iv1PAbrRQug` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Iv1PAbrRQug) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:49:55 |
-
----
-
 here are two phrases that you absolutely
 
 need to know the difference between in english hit it off and hit up

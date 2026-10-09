@@ -1,16 +1,3 @@
-# LAWYER: How to Handle Police When They LIE to Manipulate You
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IbSQfrl0KjQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IbSQfrl0KjQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:30:42 |
-
----
-
 what are the police lies you should be looking out for that they can use to manipulate you in this video I'm going
 
 to cover the five lies Police use to

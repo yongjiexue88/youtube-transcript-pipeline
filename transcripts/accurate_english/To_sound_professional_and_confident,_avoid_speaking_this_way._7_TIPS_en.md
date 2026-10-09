@@ -1,16 +1,3 @@
-# To sound professional and confident, avoid speaking this way. 7 TIPS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oRTKJ3CcOMM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oRTKJ3CcOMM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:42:00 |
-
----
-
 hi i'm lisa in this video i will give
 
 you some tips about some bad habits to avoid when you're speaking english in a professional environment these bad habits can make you sound insecure and

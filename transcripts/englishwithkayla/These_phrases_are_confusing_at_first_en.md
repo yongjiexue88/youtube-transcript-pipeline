@@ -1,16 +1,3 @@
-# These phrases are confusing at first
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rgBFHO575EE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rgBFHO575EE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:36:52 |
-
----
-
 hello hey it's Kayla hey I just wanted
 
 to call and give you props on that book that you wrote what did you want to give

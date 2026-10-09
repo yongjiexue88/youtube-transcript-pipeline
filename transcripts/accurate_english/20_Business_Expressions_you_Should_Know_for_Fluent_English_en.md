@@ -1,16 +1,3 @@
-# 20 Business Expressions you Should Know for Fluent English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `T_M7WWfSPhU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=T_M7WWfSPhU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:46:32 |
-
----
-
 hi i'm lisa if you use english at work
 
 and if you would like to sound more confident and more like a native speaker i believe this video will help you a lot we will continue our series of listening to native speakers in los angeles you will listen to my conversation with a business coach also called an executive coach his name is gene sullivan he works with people who are already successful at their jobs he helps them develop their businesses

@@ -1,16 +1,3 @@
-# This language is second nature to you! #englishlesson #nativespeakeridioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2Nggp7PW1sU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2Nggp7PW1sU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:21:18 |
-
----
-
 second nature this is definitely an
 
 English phrase that's used all of the

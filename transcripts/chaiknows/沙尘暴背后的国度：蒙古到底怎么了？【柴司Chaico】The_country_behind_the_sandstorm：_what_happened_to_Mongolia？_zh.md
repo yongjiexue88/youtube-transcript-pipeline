@@ -1,16 +1,3 @@
-# 沙尘暴背后的国度：蒙古到底怎么了？【柴司Chaico】The country behind the sandstorm: what happened to Mongolia?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Fpfjd6FZquo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Fpfjd6FZquo) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:46:11 |
-
----
-
 老实说蒙古是一个存在感比较弱的国家
 
 即使它跟中国有漫长的边界线

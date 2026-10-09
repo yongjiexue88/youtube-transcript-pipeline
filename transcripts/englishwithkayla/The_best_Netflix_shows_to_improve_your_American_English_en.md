@@ -1,16 +1,3 @@
-# The best Netflix shows to improve your American English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OYE5vVjhqkg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OYE5vVjhqkg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:09:32 |
-
----
-
 hi guys welcome back to my channel my name's kayla i'm an english teacher from the united states and i teach you natural english netflix is an incredible
 
 resource for studying english whether you're a beginner intermediate or advanced english learner

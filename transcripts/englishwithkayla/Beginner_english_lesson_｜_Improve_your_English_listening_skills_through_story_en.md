@@ -1,16 +1,3 @@
-# Beginner english lesson | Improve your English listening skills through story
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7DcGJRhg3xE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7DcGJRhg3xE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:05:42 |
-
----
-
 hello i am kayla this is a beginner english lesson
 
 listen to my story

@@ -1,16 +1,3 @@
-# I make $40K/month with this one website
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EF3uyvHHBfM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EF3uyvHHBfM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:22:37 |
-
----
-
 I built a simple website that makes 40K a month. This is Angus Chang. He lives in Hong Kong and he built the simplest website I've ever seen. >> I built a website that literally does one thing. >> And what's even crazier is that he operates this business entirely as a solopreneur. Solo founder, zero employees, 100% bootstrapped.
 
 >> I bootstrapped this entire business by myself. >> I brought Angus onto the channel and he broke down how he found a silly idea that thousands of people also happen to need. why spending money on ads actually hurt his business and why having a big strategy is for losers. All right, let's dive in. I'm Pat Walls and this is Starter Story.

@@ -1,16 +1,3 @@
-# Advanced Vocabulary (slang) that You Should Know for 2024
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sTelk0ROFNE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sTelk0ROFNE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:06:19 |
-
----
-
 Let's learn some new English words. And
 
 I I say new because these are words that

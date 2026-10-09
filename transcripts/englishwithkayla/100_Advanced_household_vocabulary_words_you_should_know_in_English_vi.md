@@ -1,16 +1,3 @@
-# 100 Advanced household vocabulary words you should know in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `H0h5mNQN8UI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=H0h5mNQN8UI) |
-| **Language** | Vietnamese (auto-generated) (vi) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:07:33 |
-
----
-
 Em hãy quên rồi cũng đạt trên Whisper My
 
 name occur in American English teacher

@@ -1,16 +1,3 @@
-# Quiet The Chaos And Solve For Peace | January 16, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ytdhuTwFmvI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ytdhuTwFmvI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:49:11 |
-
----
-
 [music] >> Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

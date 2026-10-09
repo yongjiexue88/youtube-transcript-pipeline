@@ -1,16 +1,3 @@
-# Vocabulary and American Accent Practice with Recent News
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rv3HtWHR2lo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rv3HtWHR2lo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:27:22 |
-
----
-
 let's learn some Advanced vocabulary from the news and let's practice the American accent so that you can sound like a native
 
 speaker I will teach you some useful words and I will help you correct some of the most common pronunciation mistakes we will look at a news article about new research from Harvard University about the connection between technology and loneliness the headline of the article is how Tech creat created a recipe for loneliness have you been pronouncing this word correctly the E is

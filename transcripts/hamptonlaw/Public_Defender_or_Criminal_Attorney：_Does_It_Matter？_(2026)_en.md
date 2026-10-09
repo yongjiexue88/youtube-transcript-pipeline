@@ -1,16 +1,3 @@
-# Public Defender or Criminal Attorney: Does It Matter? (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jORMwUQMeyE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jORMwUQMeyE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:52:16 |
-
----
-
 public defender or private lawyer is there a difference does it
 
 matter hi I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I'm going to talk to you about the difference between having a private lawyer or having a public defender on a criminal case and by the

@@ -1,16 +1,3 @@
-# 【科普】中國人為什麼自帶繁簡轉換器？
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ANxcNvDh3BA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ANxcNvDh3BA) |
-| **Language** | Chinese (Taiwan) (zh-TW) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 14:21:55 |
-
----
-
 你很難順暢地讀出這段話
 
 因為你已經識別出這是一段歌詞即使你的語文老師從來沒教過你這些字應該怎麼讀

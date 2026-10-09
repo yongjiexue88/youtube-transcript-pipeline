@@ -1,16 +1,3 @@
-# POPULAR AMERICAN SLANG 🇺🇸  (Millennials & Gen Z)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AJdEpN82y0E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AJdEpN82y0E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:56:25 |
-
----
-
 let's learn some American slang and the
 
 words and phrases that I'm getting ready to teach you are mostly used by Millennials and gen Z technically speaking I am Gen X so I

@@ -1,16 +1,3 @@
-# Adult Court vs Juvenile Court - What Is The Difference? (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `j1ekaOFgGDE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=j1ekaOFgGDE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:54:48 |
-
----
-
 adult Court Juvenile Court what's the
 
 difference hi I'm Jeff Hampton with the Hampton Law Firm thank you for joining us on our YouTube channel today I want to talk to you today about the difference between adult court and juvenile court what is the difference how is the standard particularly under Texas law if you wait around to the end of this video I'll also give you a free ebook book what to do if you have been charged with a crime in Texas okay let's

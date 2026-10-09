@@ -1,16 +1,3 @@
-# Practice Speaking Faster English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Y7G0OlCKxpo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Y7G0OlCKxpo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:49:20 |
-
----
-
 are you sick of sounding slow and
 
 unnatural while speaking English in this

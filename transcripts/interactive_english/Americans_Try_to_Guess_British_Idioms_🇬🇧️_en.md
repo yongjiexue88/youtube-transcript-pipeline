@@ -1,16 +1,3 @@
-# Americans Try to Guess British Idioms 🇬🇧️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DO71UlCkrTA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DO71UlCkrTA) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:32:59 |
-
----
-
 - Today we are going to challenge each other
 
 with some British idioms.

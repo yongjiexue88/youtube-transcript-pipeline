@@ -1,16 +1,3 @@
-# How We Built It: $900K Open Source SaaS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `F8i0kkrQ8_o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=F8i0kkrQ8_o) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:21:29 |
-
----
-
 I'm Ule, co-founder of Papermark.
 
 >> And I'm Mark. We bootstrapped Papermark to 75K MR.

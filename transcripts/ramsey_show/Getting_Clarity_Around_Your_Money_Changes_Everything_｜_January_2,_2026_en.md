@@ -1,16 +1,3 @@
-# Getting Clarity Around Your Money Changes Everything | January 2, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1rMnanRBu4k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1rMnanRBu4k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:51:18 |
-
----
-
 Hey, before we get rolling, listen up.
 
 If you want to win with money in 2026,

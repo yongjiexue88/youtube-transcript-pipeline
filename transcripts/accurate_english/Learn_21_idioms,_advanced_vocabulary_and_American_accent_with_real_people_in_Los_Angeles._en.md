@@ -1,16 +1,3 @@
-# Learn 21 idioms, advanced vocabulary and American accent with real people in Los Angeles.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WgNW9T75dU8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WgNW9T75dU8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:50:11 |
-
----
-
 hi i'm lisa let's continue the series
 
 of listening to native speakers of english in los angeles you will listen to a conversation that i had with a native speaker in this video we will cover five different topics we will analyze the way the native speaker was using idiomatic expressions slang words

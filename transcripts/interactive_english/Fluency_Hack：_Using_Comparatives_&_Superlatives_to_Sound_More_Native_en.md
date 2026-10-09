@@ -1,16 +1,3 @@
-# Fluency Hack: Using Comparatives & Superlatives to Sound More Native
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `b7VoWnANjvk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=b7VoWnANjvk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:58:04 |
-
----
-
 I want to help you sound more fluent
 
 using comparatives and superlatives.

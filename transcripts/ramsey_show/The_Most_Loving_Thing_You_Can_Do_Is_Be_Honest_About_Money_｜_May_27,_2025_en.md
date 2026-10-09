@@ -1,16 +1,3 @@
-# The Most Loving Thing You Can Do Is Be Honest About Money | May 27, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `L6398lZQHDk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=L6398lZQHDk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:14:39 |
-
----
-
 Live from the headquarters of Ramsey Solutions, it's the Ramsay Show where we help people build wealth, do work that
 
 they love, and create actual amazing

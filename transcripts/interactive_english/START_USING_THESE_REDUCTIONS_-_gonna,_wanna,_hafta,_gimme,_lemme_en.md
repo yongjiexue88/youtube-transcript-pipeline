@@ -1,16 +1,3 @@
-# START USING THESE REDUCTIONS - gonna, wanna, hafta, gimme, lemme
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `erFBuGtRLig` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=erFBuGtRLig) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:04:57 |
-
----
-
 i'm going to have to insist that you participate in this lesson and you're
 
 going to want to watch this until the very end at which point you're going to

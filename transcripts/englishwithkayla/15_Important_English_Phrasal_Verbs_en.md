@@ -1,16 +1,3 @@
-# 15 Important English Phrasal Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WXusQbnyaZM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WXusQbnyaZM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:31:49 |
-
----
-
 English speakers never say, "I need to review my grammar." or "Let's conclude this meeting." Have you noticed that they're using words like, "I need to brush up on my English grammar." or
 
 "Let's wrap up this meeting." That's because native English speakers use phrasal verbs like the 15 that I'll teach you in today's lesson. The phrasal verbs in today's lesson are some of the most important and some natural ones that you can easily add to your advanced English vocabulary. If you want to learn more about this lesson and more with me, Kayla, your teacher, make sure to visit my website englishwithkayla.com or it will be linked below. Now, let's get started with the lesson.

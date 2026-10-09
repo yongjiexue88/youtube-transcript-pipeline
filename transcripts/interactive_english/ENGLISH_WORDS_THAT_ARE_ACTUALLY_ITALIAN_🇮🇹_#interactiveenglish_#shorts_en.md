@@ -1,16 +1,3 @@
-# ENGLISH WORDS THAT ARE ACTUALLY ITALIAN 🇮🇹 #interactiveenglish #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `J3Ac4LZUSq0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=J3Ac4LZUSq0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:00:02 |
-
----
-
 ciao so we are in Milan Italy and I want
 
 to quiz you on some English words that

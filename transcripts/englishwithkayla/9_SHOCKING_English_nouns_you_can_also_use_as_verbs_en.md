@@ -1,16 +1,3 @@
-# 9 SHOCKING English nouns you can also use as verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FZGWwTuRqsQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FZGWwTuRqsQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:58:44 |
-
----
-
 do you know what it means to table
 
 something or to summer or to ice

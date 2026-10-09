@@ -1,16 +1,3 @@
-# 高科技互联网❌广告公司✅平台是怎么靠广告赚钱的？How does the platform make money from advertising?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `slzhbapNjVc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=slzhbapNjVc) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:42:24 |
-
----
-
 起初 没有人在意这条广告
 
 它只是挂在《连线》杂志的网站上

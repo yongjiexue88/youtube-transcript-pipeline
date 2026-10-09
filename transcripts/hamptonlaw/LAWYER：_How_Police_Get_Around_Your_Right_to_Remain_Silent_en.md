@@ -1,16 +1,3 @@
-# LAWYER: How Police Get Around Your Right to Remain Silent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `B0p4wfAy0ms` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=B0p4wfAy0ms) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:28:04 |
-
----
-
 five ways cops trick you out of your Miranda Rights you have a right to remain silent we all know this is one of the most revered constitutional rights we should look to exercise when talking to the police but did you know police are trained specifically to make you feel so comfortable that you end up waving this very important right in this
 
 video we will examine the tricks cops use to get you to wave your Miranda

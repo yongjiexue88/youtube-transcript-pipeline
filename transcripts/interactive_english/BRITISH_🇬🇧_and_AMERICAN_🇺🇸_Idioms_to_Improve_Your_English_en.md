@@ -1,16 +1,3 @@
-# BRITISH 🇬🇧 and AMERICAN 🇺🇸 Idioms to Improve Your English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gRsCOwRS83g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gRsCOwRS83g) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:53:02 |
-
----
-
 Here we clap!
 
 Do I?

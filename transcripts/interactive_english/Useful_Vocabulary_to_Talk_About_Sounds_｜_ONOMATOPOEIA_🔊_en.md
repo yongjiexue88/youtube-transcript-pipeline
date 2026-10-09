@@ -1,16 +1,3 @@
-# Useful Vocabulary to Talk About Sounds | ONOMATOPOEIA 🔊
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Oe8YVPSoJGY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Oe8YVPSoJGY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:23:11 |
-
----
-
 today's lesson is really just about one
 
 word and that is onomatopoeia [Music]

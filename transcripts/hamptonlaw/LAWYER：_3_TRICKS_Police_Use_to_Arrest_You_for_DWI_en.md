@@ -1,16 +1,3 @@
-# LAWYER: 3 TRICKS Police Use to Arrest You for DWI
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3taFvUkdbZY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3taFvUkdbZY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:32:06 |
-
----
-
 we all know drinking and driving is a bad idea but can the police arrest you for DWI when you were never driving what
 
 if you're under 008 what if you only had

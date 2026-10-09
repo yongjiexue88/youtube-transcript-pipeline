@@ -1,16 +1,3 @@
-# Everyday Words & Phrases You REALLY Must Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ioSplfcmbgQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ioSplfcmbgQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:46:30 |
-
----
-
 I want to teach you some everyday words and phrases that you can use to build
 
 your vocabulary in a very practical way

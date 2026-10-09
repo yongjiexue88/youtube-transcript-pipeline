@@ -1,16 +1,3 @@
-# How I Built A $1M Business From This Starbucks
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `T_wEmB5MapE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=T_wEmB5MapE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:32:00 |
-
----
-
 all right what's your story 6 years ago
 
 I started a business today that business

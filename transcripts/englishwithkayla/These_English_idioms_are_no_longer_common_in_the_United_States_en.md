@@ -1,16 +1,3 @@
-# These English idioms are no longer common in the United States
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-Y0aVHNWvNI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-Y0aVHNWvNI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:06:18 |
-
----
-
 here's a tip for sounding like a native
 
 english speaker a native english speaker might not just say that looks easy

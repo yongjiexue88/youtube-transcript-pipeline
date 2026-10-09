@@ -1,16 +1,3 @@
-# Give better compliments to females ❤
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NgfcAFeuHOw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NgfcAFeuHOw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:41:47 |
-
----
-
 if you want to give better compliments
 
 to females in English listen up first of

@@ -1,16 +1,3 @@
-# Useful Words & Synonyms on How to Say You're SAD 🙁
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aLlxMBv-WJM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aLlxMBv-WJM) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:36:58 |
-
----
-
 Do you ever feel sad, blue, dejected?
 
 But there's no need to feel sad today because you're about to learn some new words.

@@ -1,16 +1,3 @@
-# Advanced Vocabulary (slang) that You Should Know for 2023
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `f7ndk0xhEFk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=f7ndk0xhEFk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:13:10 |
-
----
-
 hello and welcome to another live lesson
 
 in which I am going to teach you

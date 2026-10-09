@@ -1,16 +1,3 @@
-# Intentional Choices Create Peace in the Chaos | May 6, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LGNNuXYEViw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LGNNuXYEViw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:33:29 |
-
----
-
 This is an ad for Better Help. May is mental health awareness month and you know that stress you keep pushing down, it's showing up everywhere in your relationships and in your health. If you need to talk to a licensed therapist, make today the day. Go to betterhelp.com/ramsey to get 10% off.
 
 Brought to you by the EveryDoll app.

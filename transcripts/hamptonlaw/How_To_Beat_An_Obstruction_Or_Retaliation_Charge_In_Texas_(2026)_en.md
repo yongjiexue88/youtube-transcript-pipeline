@@ -1,16 +1,3 @@
-# How To Beat An Obstruction Or Retaliation Charge In Texas (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sdgi_WaEjUQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sdgi_WaEjUQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:57:13 |
-
----
-
 obstruction retaliation what does it mean are you facing a charge of obstruction or retaliation in
 
 Texas hi I'm Jeff Hampton with the Hampton Law Firm today I want to talk to you about the crime of obstruction or retaliation and if you wait around to the end of this video I'll also give you a free ebook what to do if you have been charged with a crime inch

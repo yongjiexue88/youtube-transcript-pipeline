@@ -1,16 +1,3 @@
-# How to speak English with energy and enthusiasm - Fix your monotone voice
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VY8dw2LboMU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VY8dw2LboMU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:41:34 |
-
----
-
 hi i'm lisa many of my students worry that their speech sounds flat and boring that it
 
 has no energy and that their voice might

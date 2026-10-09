@@ -1,16 +1,3 @@
-# You Can’t Hack Your Way Out of Debt | September 11, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NLwACw7Mj7c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NLwACw7Mj7c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:08:44 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

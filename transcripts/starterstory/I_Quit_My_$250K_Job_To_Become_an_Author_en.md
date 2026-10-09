@@ -1,16 +1,3 @@
-# I Quit My $250K Job To Become an Author
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `lWwZ-fsD8gM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=lWwZ-fsD8gM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:32:08 |
-
----
-
 this guy quit his $250,000 consulting job with one goal to break free from what he calls the default path aka the
 
 rat race I sort of just like quit it was

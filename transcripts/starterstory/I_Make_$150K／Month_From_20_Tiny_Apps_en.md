@@ -1,16 +1,3 @@
-# I Make $150K/Month From 20 Tiny Apps
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9sJ2R0rM3CA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9sJ2R0rM3CA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:13:25 |
-
----
-
 We built 20 different apps over the past 10 years. Meet Katie. Over the past few years, she's built a portfolio of 19 apps that collectively make $1.8 million
 
 a year. All our software products compound on each other. What she's done is really impressive. One platform, 19

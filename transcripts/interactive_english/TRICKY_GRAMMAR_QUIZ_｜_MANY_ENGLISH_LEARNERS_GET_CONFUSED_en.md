@@ -1,16 +1,3 @@
-# TRICKY GRAMMAR QUIZ | MANY ENGLISH LEARNERS GET CONFUSED
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pdL-UhB4JmM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pdL-UhB4JmM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:39:06 |
-
----
-
 hello and welcome welcome welcome
 
 welcome to our grammar quiz lesson I'm so excited how are you guys doing today

@@ -1,16 +1,3 @@
-# Ask me ANYTHING about learning English | Q&A w/ Wes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NR3D8fomJxI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NR3D8fomJxI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:18:00 |
-
----
-
 all right hello everyone i think that
 
 that we are live so first off i just want to say

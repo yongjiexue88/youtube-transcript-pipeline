@@ -1,16 +1,3 @@
-# Advanced Listening & Speaking Practice | Transportation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nO1nb_w5HGY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nO1nb_w5HGY) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:48:05 |
-
----
-
 Welcome to today's lesson, which is all about  describing nouns
 
 Today we're going to describe some transportation nouns.

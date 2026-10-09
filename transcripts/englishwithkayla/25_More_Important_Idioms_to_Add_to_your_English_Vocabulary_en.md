@@ -1,16 +1,3 @@
-# 25 More Important Idioms to Add to your English Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XgwHl34xb1s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XgwHl34xb1s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:47:48 |
-
----
-
 what's stopping you from speaking exactly like a native speaker it might
 
 not be your accent it actually just

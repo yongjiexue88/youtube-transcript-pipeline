@@ -1,16 +1,3 @@
-# 30 Contractions to Help You Speak Faster
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9m9x9LrI-JU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9m9x9LrI-JU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:53:04 |
-
----
-
 today I'm going to tell you how you can speak faster and more efficiently using
 
 contractions that's coming up what's up

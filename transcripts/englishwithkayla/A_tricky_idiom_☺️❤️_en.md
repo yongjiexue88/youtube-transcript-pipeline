@@ -1,16 +1,3 @@
-# A tricky idiom ☺️❤️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0ZjUekNS_1E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0ZjUekNS_1E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:14:59 |
-
----
-
 one idiom that I always like to quiz
 
 foreigners on is what does it mean to

@@ -1,16 +1,3 @@
-# Get Your Theft Case Dismissed – A Former DA Breaks Down The Statute of Limitations! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nmvlgK2SgZ4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nmvlgK2SgZ4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:09:22 |
-
----
-
 hello I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today we're going to be talking about theft cases in specifically the statute
 
 of limitations how long does the State of Texas have to actually file a theft

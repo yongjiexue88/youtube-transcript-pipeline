@@ -1,16 +1,3 @@
-# A Financial Reset Is Better Than Staying Broke | November 20, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WT4g8_PAIC0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WT4g8_PAIC0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:57:48 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

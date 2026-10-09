@@ -1,16 +1,3 @@
-# "breath" or "breathe" ?   3 Rules -Confusing English Words| Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fgeHYzicz70` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fgeHYzicz70) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:02:22 |
-
----
-
 let's learn two more confusing English words I will teach you three different rules about these words so that you can pronounce them correctly and after that I will teach you some common everyday idiomatic expressions that contain these words so that you can use them like native speakers do the two words are
 
 breath and breathe the first difference between them is one is a noun and one is a verb when there's

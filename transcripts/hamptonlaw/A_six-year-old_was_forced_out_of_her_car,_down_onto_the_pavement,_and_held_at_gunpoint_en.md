@@ -1,16 +1,3 @@
-# A six-year-old was forced out of her car, down onto the pavement, and held at gunpoint
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3aM2e2fCyyE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3aM2e2fCyyE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:10:55 |
-
----
-
 A six-year-old was forced out of her car, down onto the pavement, and held at gunpoint. All because an AI powered camera misread a license plate. And the cops treated the alert on that license plate like it was the gospel truth.
 
 >> See, I found I've been trying to find this vehicle cuz it keeps hitting the LPR. It's a stolen vehicle.

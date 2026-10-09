@@ -1,16 +1,3 @@
-# You Don’t Build Wealth by Ignoring Basic Financial Principles | December 30, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0kFK4nXBrl4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0kFK4nXBrl4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:51:57 |
-
----
-
 This episode is filled with some of our best calls and advice, but unless you take what you hear and put it to work in your own life, you'll be stuck with the same money stress in 2026. So, make a change and download every dollar today.
 
 >> [music]

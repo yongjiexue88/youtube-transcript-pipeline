@@ -1,16 +1,3 @@
-# I was thinking about it "in the back of my mind" #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bir38cSp0KM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bir38cSp0KM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:21:52 |
-
----
-
 what does it mean when an english speaker says they are thinking about something in the back of
 
 their mind let me explain if i'm thinking about

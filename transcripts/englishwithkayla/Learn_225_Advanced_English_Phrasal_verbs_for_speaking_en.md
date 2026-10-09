@@ -1,16 +1,3 @@
-# Learn 225 Advanced English Phrasal verbs for speaking
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yjNuQNMhD9U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yjNuQNMhD9U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:49:47 |
-
----
-
 so let's get started let's learn some phrasal verbs which contain in to opt in
 
 when you opt in to something it means

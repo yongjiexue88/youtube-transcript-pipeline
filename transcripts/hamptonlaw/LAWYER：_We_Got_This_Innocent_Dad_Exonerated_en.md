@@ -1,16 +1,3 @@
-# LAWYER: We Got This Innocent Dad Exonerated
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `V_OVV491w-s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=V_OVV491w-s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:41:56 |
-
----
-
 a man in north Texas was arrested after he spanked his 11-year-old child and she called the police now fortunately this was a case of overreaction and not real
 
 child abuse but how do you go about getting charges like this dropped how do us lawyers go about getting charges and cases dismissed the first step is to gather all the evidence defense attorneys have a right to all the evidence the prosecutor has so that the case can be investigated and a defense can be prepared the wife of a North Texas man called office in a panic

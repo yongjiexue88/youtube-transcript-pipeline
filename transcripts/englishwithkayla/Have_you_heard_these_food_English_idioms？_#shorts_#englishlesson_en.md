@@ -1,16 +1,3 @@
-# Have you heard these food English idioms? #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bAob4tRS01Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bAob4tRS01Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:15:06 |
-
----
-
 two food idioms that i want to teach you
 
 today first one is sweet talk if you

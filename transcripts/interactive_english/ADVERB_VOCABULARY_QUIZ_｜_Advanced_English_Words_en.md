@@ -1,16 +1,3 @@
-# ADVERB VOCABULARY QUIZ  | Advanced English Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zTCZGBnbE0I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zTCZGBnbE0I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:37:39 |
-
----
-
 what is up everyone I hope that you are
 
 feeling super smart today because I have

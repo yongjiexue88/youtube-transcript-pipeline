@@ -1,16 +1,3 @@
-# Assault Public Servant in Texas? How To Beat Your Criminal Case (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EYV4XUPeO-Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EYV4XUPeO-Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:41:25 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm today we're going to talk about assault public servant maybe you're facing an assault public servant charge and you have no idea how that possibly came about um and maybe you've
 
 got a loved one who you can't imagine how they could have been charged with this offense and I want to sit down with you today and spend a few moments breaking down the law what does Texas law have to say about being charged with an assault public servant and what can be done to defend those charges to protect your clean record and make sure you maintain your

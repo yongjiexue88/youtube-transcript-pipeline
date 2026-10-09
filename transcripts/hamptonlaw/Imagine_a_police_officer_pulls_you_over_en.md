@@ -1,16 +1,3 @@
-# Imagine a police officer pulls you over
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cvMzmaFI7MQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cvMzmaFI7MQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:16:59 |
-
----
-
 Imagine a police officer pulls you over.
 
 You're on the side of the road. It's late at night. The next thing you see is a flashlight beaming in your window. The officer leans in and says, "Mind if I check your trunk?" What you say next could be the difference between you staying in control or losing access to your car completely?

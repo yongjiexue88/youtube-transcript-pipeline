@@ -1,16 +1,3 @@
-# Fluency Practice with a Native Speaker - Expressions you SHOULD Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hw3np8E6uA0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hw3np8E6uA0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:30:10 |
-
----
-
 let's practice Advanced professional English with a native speaker so that you can reach the final level of fluency
 
 We are continuing with the series of my conversations with native speakers who talk about their

@@ -1,16 +1,3 @@
-# SONGS TO IMPROVE YOUR LISTENING FLUENCY 🎵
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QKZJciv6YSI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QKZJciv6YSI) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:45:11 |
-
----
-
 Today, I want to talk to you about what songs you should listen to if you would like to
 
 improve your English that's coming up.

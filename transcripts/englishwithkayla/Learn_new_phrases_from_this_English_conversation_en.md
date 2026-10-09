@@ -1,16 +1,3 @@
-# Learn new phrases from this English conversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7pkpJem6hDQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7pkpJem6hDQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:28:34 |
-
----
-
 welcome to parent-teacher conferences
 
 your daughter is in my class and she's

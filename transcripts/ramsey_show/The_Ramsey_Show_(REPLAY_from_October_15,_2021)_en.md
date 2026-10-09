@@ -1,16 +1,3 @@
-# The Ramsey Show (REPLAY from October 15, 2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-kHtLxqI5-c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-kHtLxqI5-c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:27:21 |
-
----
-
 four three
 
 [Music]

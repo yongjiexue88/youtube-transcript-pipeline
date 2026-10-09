@@ -1,16 +1,3 @@
-# English idiom for being motivated "Keep your eye on the ball" #shorts #englishidioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HjYeOxKbVBQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HjYeOxKbVBQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:10:53 |
-
----
-
 a really great idiom that i want to
 
 teach you in english today is eye on the

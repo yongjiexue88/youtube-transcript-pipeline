@@ -1,16 +1,3 @@
-# What it's like to live outside the US | Natural Conversation + Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1BjjsUraF28` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1BjjsUraF28) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:27:24 |
-
----
-
 [Music] everyone this is interactive English
 
 which are channel it's all about helping you practice and improve your English skills my name is Wes and I'm Jana and

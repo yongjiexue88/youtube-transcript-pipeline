@@ -1,16 +1,3 @@
-# NEW ENGLISH WORDS FROM 2021 | Build Your Vocabulary 🎊
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `y43NKBFbFXo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=y43NKBFbFXo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:15:49 |
-
----
-
 hello welcome to the very first live
 
 lesson of 2022 um so the first thing i want to say is happy new year and because it's uh a new

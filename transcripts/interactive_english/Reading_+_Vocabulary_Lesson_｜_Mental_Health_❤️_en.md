@@ -1,16 +1,3 @@
-# Reading + Vocabulary Lesson | Mental Health ❤️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rTVX1bZcUOk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rTVX1bZcUOk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:21:13 |
-
----
-
 hello and welcome to today's lesson
 
 my name is wes this is interactive

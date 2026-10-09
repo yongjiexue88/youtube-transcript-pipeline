@@ -1,16 +1,3 @@
-# 3 Grammar Mistakes Advanced Learners Often Make 😳
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CZDvRAgEM4k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CZDvRAgEM4k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:47:41 |
-
----
-
 today I want to talk to you about three grammar mistakes that English learners often make what's up everyone
 
 my name is Wes this is interactive English which is all about helping you

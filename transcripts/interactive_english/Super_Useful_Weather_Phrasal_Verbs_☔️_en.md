@@ -1,16 +1,3 @@
-# Super Useful Weather Phrasal Verbs ☔️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tcOK8dJOnpk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tcOK8dJOnpk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:05:55 |
-
----
-
 everyone today i want to talk to you
 
 about the weather and specifically i

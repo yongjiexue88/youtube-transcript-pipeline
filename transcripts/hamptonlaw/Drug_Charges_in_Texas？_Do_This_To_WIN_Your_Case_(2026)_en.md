@@ -1,16 +1,3 @@
-# Drug Charges in Texas? Do This To WIN Your Case (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hyyaYh-5YPM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hyyaYh-5YPM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:38:59 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about drug
 
 charges maybe you've been charged with drugs in possessing drugs or maybe

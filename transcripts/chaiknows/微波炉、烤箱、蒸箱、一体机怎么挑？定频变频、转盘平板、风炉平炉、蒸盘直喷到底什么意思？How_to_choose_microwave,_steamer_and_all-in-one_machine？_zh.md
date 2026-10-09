@@ -1,16 +1,3 @@
-# 微波炉、烤箱、蒸箱、一体机怎么挑？定频变频、转盘平板、风炉平炉、蒸盘直喷到底什么意思？How to choose microwave, steamer and all-in-one machine?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MAnk_hknrHE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MAnk_hknrHE) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:49:19 |
-
----
-
 这期视频的起因是柴司想买一台普通的微波炉热热饭菜但刚一搜索电商网站就问我要不要加 200 试试烤箱或者加 500 试试蒸箱
 
 不喜欢那来一台微烤一体机微蒸一体机蒸烤一体机微蒸烤一体机微蒸烤炸一体机

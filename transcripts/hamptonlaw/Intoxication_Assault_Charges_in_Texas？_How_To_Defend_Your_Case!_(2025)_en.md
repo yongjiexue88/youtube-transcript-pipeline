@@ -1,16 +1,3 @@
-# Intoxication Assault Charges in Texas? How To Defend Your Case! (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `89rCRNM2t50` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=89rCRNM2t50) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:57:24 |
-
----
-
 intoxication assault what is it what does the State of Texas have to prove is there a way that you can defend the
 
 charge hi I'm Jeff Hampton with the Hampton Law Firm today I want to break down the offense of intoxication assault in Texas I want to give you a few things to think about what does the State of Texas have to prove are there some defenses available if you or a loved one has been charged with this crime by the way if you wait around to the end of this video I'll also give you a free ebook your ultimate guide to DWI defense in Texas okay now

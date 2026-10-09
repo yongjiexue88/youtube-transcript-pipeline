@@ -1,16 +1,3 @@
-# Risk Is Always Part of the Equation When Taking On Debt | January 26, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rOmaPenGcP0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rOmaPenGcP0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:47:52 |
-
----
-
 [music] >> Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

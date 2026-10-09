@@ -1,16 +1,3 @@
-# Is perfect grammar necessary?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Q44otQ0qALY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Q44otQ0qALY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:32:24 |
-
----
-
 is perfect grammar necessary that's a
 
 topic that a lot of people disagree about let's talk about it in this [Music]

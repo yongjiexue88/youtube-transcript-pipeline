@@ -1,16 +1,3 @@
-# You Breathe Easier Without Payments Choking You | September 4, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gC_0he9r9p4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gC_0he9r9p4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:09:30 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

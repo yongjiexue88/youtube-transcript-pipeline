@@ -1,16 +1,3 @@
-# 20 POSITIVE PHRASAL VERBS TO SURVIVE 2020
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bIVgytdhHHo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bIVgytdhHHo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:23:54 |
-
----
-
 so 2020 it uh i think it's fair to say
 
 it's been a rough year i wanted to try and focus on something a little more positive so in today's lesson i want to teach you 20 phrasal verbs that all have a positive meaning that's coming up

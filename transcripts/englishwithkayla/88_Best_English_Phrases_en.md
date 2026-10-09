@@ -1,16 +1,3 @@
-# 88 Best English Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `me4ep67JF50` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=me4ep67JF50) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:37:05 |
-
----
-
 Let's start out with some phrasal verbs that contained up. So, the first phrasal verb on our list today is to board up.
 
 To board up is a pretty literal phrasal verb. When you board up your house, you're placing boards or wooden boards

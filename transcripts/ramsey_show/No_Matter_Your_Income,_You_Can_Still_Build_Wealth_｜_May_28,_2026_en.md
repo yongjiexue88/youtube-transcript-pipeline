@@ -1,16 +1,3 @@
-# No Matter Your Income, You Can Still Build Wealth | May 28, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JN2-w_du13Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JN2-w_du13Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:30:07 |
-
----
-
 This is an ad for better help. May is mental health awareness month and when
 
 life feels overwhelming, therapy can help you slow down, think clearly, and move forward. Visit betterhelp.com/ramsey to get 10% off.

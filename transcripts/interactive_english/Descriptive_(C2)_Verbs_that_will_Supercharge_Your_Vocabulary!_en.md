@@ -1,16 +1,3 @@
-# Descriptive (C2) Verbs that will Supercharge Your Vocabulary!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KOPMqIVbGEA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KOPMqIVbGEA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:43:20 |
-
----
-
 verbs. I love them because they give us
 
 a lot of information. And instead of using a boring verb like walk, you can use a descriptive verb like stagger. And

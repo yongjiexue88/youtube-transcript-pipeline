@@ -1,16 +1,3 @@
-# Learn to Understand Fast English with Mel Robbins
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `y77PiqxkveY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=y77PiqxkveY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:35:52 |
-
----
-
 Do you like learning English from podcasts? I bet you do. And I bet you've heard of this podcast before. Or if you haven't, you should check it out. And today, we're going to use a clip to learn how to understand fast English.
 
 We're going to break down the phrases and the different terms that can help you understand what these two are talking about in a podcast. And this is a great exercise if you just feel like sometimes English speakers are speaking way too fast and you can't understand them. This podcast is the Mel Robbins podcast. If you haven't heard of it, she's a motivational speaker.

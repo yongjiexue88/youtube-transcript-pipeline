@@ -1,16 +1,3 @@
-# HOW TO BEAT AN ASSAULT CHARGE IN TEXAS: A FORMER DA BREAKS DOWN THE LAW OF ASSAULT (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `r2Kvbx2NFno` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=r2Kvbx2NFno) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:59:42 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm thanks for joining us today on our YouTube channel today I want to talk to you about assault charges in Texas how to a beat how to
 
 beat an assault charge in Texas and I want to break down the law for you okay if you wait around to the end of this video I'll also give you a free ebook a free read Source what to do if you have been charged with a crime in Texas now maybe you're facing an assault charge how do you fight to keep this off your record how do you make sure that you may you don't have to face any potential jail time well the first thing we need to do is break down the crime of assault

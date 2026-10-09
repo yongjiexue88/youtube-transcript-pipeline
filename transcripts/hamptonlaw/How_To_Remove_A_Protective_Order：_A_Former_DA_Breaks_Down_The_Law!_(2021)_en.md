@@ -1,16 +1,3 @@
-# How To Remove A Protective Order: A Former DA Breaks Down The Law! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5HsQqc0izmw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5HsQqc0izmw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:59:54 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm thank you for joining us today on our YouTube channel and today I want to talk to you about protective order laws in Texas maybe you're facing a protective order or maybe you're issuing you've issued a protective order against someone else and maybe you want to know how to get it removed how does this process work uh if
 
 you wait around to the end of this video I'll also give you a free ebook what to do if you've been charged with a domestic violence case in Texas okay

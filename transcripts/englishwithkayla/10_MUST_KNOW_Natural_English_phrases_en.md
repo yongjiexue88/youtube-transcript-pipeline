@@ -1,16 +1,3 @@
-# 10 MUST KNOW Natural English phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QErg7-ITcvg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QErg7-ITcvg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:56:08 |
-
----
-
 have you ever wondered why even after
 
 years of studying English you still get

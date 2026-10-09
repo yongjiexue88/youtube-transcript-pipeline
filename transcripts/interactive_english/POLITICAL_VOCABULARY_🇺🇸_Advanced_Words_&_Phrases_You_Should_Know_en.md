@@ -1,16 +1,3 @@
-# POLITICAL VOCABULARY 🇺🇸 Advanced Words & Phrases You Should Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8IVrBCZpaYY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8IVrBCZpaYY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:51:13 |
-
----
-
 this is a bipartisan video to help you
 
 build your vocabulary with some Advanced

@@ -1,16 +1,3 @@
-# You turn your iPhone off because you think that nobody can see anything that's
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `l3ALFbPSLOs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=l3ALFbPSLOs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:51:11 |
-
----
-
 You turn your iPhone off because you think that nobody can see anything that's going on on your phone. But on newer iPhones, off doesn't always mean off because your phone can keep communicating with Apple's Find My Network for up to 24 hours after your phone goes black. And here's the scary part. Police don't need to hack your phone in order to use this Apple technology to spy on you.
 
 I'm Jeff Hampton, the people's lawyer, and in this video, I'm going to cover number one, an iPhone feature that can still track your location even if you've turned off the phone. Number two, how the cops can get access to this sneaky tracking data to spy on you. And finally, number three, the exact settings you need to disable right now to keep cops out of your phone. But let's start with explaining why you should even worry about this.

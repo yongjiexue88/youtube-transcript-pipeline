@@ -1,16 +1,3 @@
-# USEFUL RESTAURANT VOCABULARY YOU NEED TO KNOW 🍽️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cLFtJkGFjlY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cLFtJkGFjlY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:19:18 |
-
----
-
 Hello, welcome to today's lesson. Thank you for joining me. My name is Wes. The channel, it's Interactive English. The channel's all about trying to help you reach your fluency goal with so many different lessons related to vocabulary, pronunciation, grammar, a little bit of everything. And
 
 today, I think it's a very well, I said it's useful restaurant vocabulary. So, a

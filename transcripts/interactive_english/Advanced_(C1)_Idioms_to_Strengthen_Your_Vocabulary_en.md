@@ -1,16 +1,3 @@
-# Advanced (C1) Idioms to Strengthen Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `b9yp_wddmTI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=b9yp_wddmTI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:52:06 |
-
----
-
 I want to set the record straight learning these Advanced and common C1
 
 idioms will help you do two things you

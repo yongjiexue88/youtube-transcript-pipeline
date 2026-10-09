@@ -1,16 +1,3 @@
-# 17 idioms and expressions with a native speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `iAzqb9AY0P4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=iAzqb9AY0P4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:52:27 |
-
----
-
 In this video, I will teach you a lot of new and useful idiomatic expressions
 
 that native speakers use. You will listen to a conversation that I had with a native speaker in Los Angeles. You might remember Drake from one of my previous videos. Drake works at the Cheesecake Factory. He's a host in that restaurant. But with the situation that's going on in the world today with the Corona virus, so many people are not

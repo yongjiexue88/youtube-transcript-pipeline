@@ -1,16 +1,3 @@
-# How to pronounce the longest word in English  #interactiveenglish #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EkMAlnKYfb8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EkMAlnKYfb8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:00:23 |
-
----
-
 so I don't know why people are always
 
 mispronouncing this word all right it's

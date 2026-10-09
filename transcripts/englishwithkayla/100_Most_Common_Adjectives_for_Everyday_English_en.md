@@ -1,16 +1,3 @@
-# 100 Most Common Adjectives for Everyday English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FMxN6bOCv_o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FMxN6bOCv_o) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:39:02 |
-
----
-
 Let's be real. You chose this English lesson today because you are sick and tired of using the same old boring words
 
 to describe things and you want to know exactly how native English speakers use adjectives in a way that feel natural and will make you sound confident while speaking. In today's lesson, I have a

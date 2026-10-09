@@ -1,16 +1,3 @@
-# Why do Americans say like so much?!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `niSxfJLG_Oo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=niSxfJLG_Oo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:43:03 |
-
----
-
 one of the most Googled questions about
 
 American English speakers is why do we

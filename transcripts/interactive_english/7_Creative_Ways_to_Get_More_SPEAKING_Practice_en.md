@@ -1,16 +1,3 @@
-# 7 Creative Ways to Get More SPEAKING Practice
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `00bJgonDEr8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=00bJgonDEr8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:17:51 |
-
----
-
 hello welcome to today's lesson so this
 
 lesson i think um it's going to be

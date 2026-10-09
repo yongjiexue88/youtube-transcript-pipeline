@@ -1,16 +1,3 @@
-# we have a Second Amendment right to bear arms the problem courts have made the
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cCF8SKOY6tM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cCF8SKOY6tM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:32:43 |
-
----
-
 we have a Second Amendment right to bear arms the problem courts have made the rules so confusing that even a small mistake can land you in jail and facing serious charges in this video I'm breaking down the 10 mistakes cops are counting on you to make when carrying a firearm and more importantly what you can do to protect yourself mistake number one is to mix carrying while playing watch out for
 
 this one this is one of the most common mistakes I see people make when carrying in their car let's say you had a great night out with friends maybe you were out having dinner and maybe you had two or three glasses of wine and then you have to drive home suddenly a police officer pulls you over for speeding and all of a sudden he walks up to your front door

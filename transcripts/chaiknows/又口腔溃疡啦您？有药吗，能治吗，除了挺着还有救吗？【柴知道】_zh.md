@@ -1,16 +1,3 @@
-# 又口腔溃疡啦您？有药吗，能治吗，除了挺着还有救吗？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dPHJvqEnP1o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dPHJvqEnP1o) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:45:44 |
-
----
-
 一个人茶不思 饭不想可能是有心事也可能只是 口腔溃疡了
 
 你怎么又口腔溃疡了除了硬挺 还能怎么办

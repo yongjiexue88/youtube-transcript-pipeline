@@ -1,16 +1,3 @@
-# Native Speakers Will Be Impressed If You Say These 🤩
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tgVpbRGKIxg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tgVpbRGKIxg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:55:07 |
-
----
-
 It's not my first rodeo. You're going to use this to refer to a situation that someone has been in before. And really, you're going to end up using it as a standalone statement and you're reassuring the other person that you do have experience. So, the context in
 
 which you would use this idiom would be if someone's talking to you like you don't know what you're doing. You've never done this before. You don't have experience. And you want to let that person know, I do have experience. It's not my first rodeo. >> Don't Don't forget to support his head. >> I will. It's not my first rodeo. I can't wait to take him to his first rodeo.

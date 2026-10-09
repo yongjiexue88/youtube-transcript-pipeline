@@ -1,16 +1,3 @@
-# Arrested For A Crime In Arlington, Texas? Do This Now!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_TwxjvXcZNg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_TwxjvXcZNg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 15:59:50 |
-
----
-
 have you been arrested for a crime or a DWI in Arlington
 
 Texas welcome to the Hampton Law Firm today I want to talk to you specifically if you are facing a criminal charge in the Arlington Texas area I want to identify a few rights that you have and make sure that you're prepared for how to fight your case and know what your legal rights are to protect your future and your freedom all right and by the way if

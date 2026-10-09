@@ -1,16 +1,3 @@
-# 从“垃圾围城”到“垃圾荒”，垃圾分类还有意义吗？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pgiytzK7ymU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pgiytzK7ymU) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:31:11 |
-
----
-
 你最近可能看到过这样的视频讲中国的垃圾不够用了焚烧厂开始抢垃圾埋了 20 年的垃圾都挖出来返工了
 
 垃圾分类也不需要了

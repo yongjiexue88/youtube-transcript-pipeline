@@ -1,16 +1,3 @@
-# 10 Difficult Words to Pronounce in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YqQzPwvPM9E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YqQzPwvPM9E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:17:43 |
-
----
-
 Let's talk about difficult words to pronounce in English. And I know that there are many difficult words to pronounce, but today I want to have a look at 10 different words and really try to understand why these words may be a little challenging for English learners. Let me introduce myself. My name is Wes.
 
 This is Interactive English. The channel's all about trying to help you practice and improve your English skills. And today we're going to work on your pronunciation and have a look at 10 different words. And as we look at each word, I'm going to say the word several times.

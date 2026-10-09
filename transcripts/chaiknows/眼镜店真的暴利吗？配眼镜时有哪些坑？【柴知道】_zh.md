@@ -1,16 +1,3 @@
-# 眼镜店真的暴利吗？配眼镜时有哪些坑？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WiCEfTKkIRE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WiCEfTKkIRE) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:41:31 |
-
----
-
 眼镜行业历来被人们称为暴利
 
 那么一副眼镜生产成本究竟是多少

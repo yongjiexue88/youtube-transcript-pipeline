@@ -1,16 +1,3 @@
-# PREPOSITIONS OF PLACE - IN, ON, AT | Quiz Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3XcmJGU-wG0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3XcmJGU-wG0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:16:44 |
-
----
-
 hello and welcome to today's lesson i
 
 think this is going to be a very fun lesson and i also think it should be

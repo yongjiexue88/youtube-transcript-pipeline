@@ -1,16 +1,3 @@
-# Understand EVERYTHING in English | Improve Your Listening
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pdI6pDEhnjQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pdI6pDEhnjQ) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:34:20 |
-
----
-
 When it comes to learning a language listening is so important.
 
 So today, I want to talk to you about some different ways on how you can improve your listening skills to better your comprehension.

@@ -1,16 +1,3 @@
-# Don’t say “I understand”
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vdNiuFwYTcI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vdNiuFwYTcI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:51:51 |
-
----
-
 so today i'm not going to be one of those english teachers that tells you not to say things that make perfect sense but i am going to give you some
 
 lovely alternatives to saying i understand you so one phrase that's definitely common is to say that's clear

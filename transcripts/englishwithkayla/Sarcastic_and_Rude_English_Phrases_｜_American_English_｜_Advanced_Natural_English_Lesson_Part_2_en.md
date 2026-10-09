@@ -1,16 +1,3 @@
-# Sarcastic and Rude English Phrases | American English | Advanced Natural English Lesson Part 2
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nGhYQOw35Ts` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nGhYQOw35Ts) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:08:52 |
-
----
-
 nobody has time for that put on your pants your big boy and big girl pants
 
 and get to work and take a chill pill come on we haven't got

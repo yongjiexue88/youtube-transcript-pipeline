@@ -1,16 +1,3 @@
-# Marijuana Charges in Texas? 3 Ways to Get Your Case Dismissed! (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Yi9HQKW8x7g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Yi9HQKW8x7g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 19:01:36 |
-
----
-
 hello everyone I wanted to welcome you to the Hampton law firm and I wanted to hop on real quick and talk to you about how to get your marijuana charges dismissed in Texas all right I want to encourage you to subscribe to our YouTube channel for more great content just like this now today I want to explain to you the ins and outs of how
 
 to defend your marijuana charge in Texas

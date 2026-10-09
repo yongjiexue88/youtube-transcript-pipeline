@@ -1,16 +1,3 @@
-# 更年期的妈妈有多少难言之隐？怎么跟她好好相处？How to get along well with a menopausal mother?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GwiRc9KRGb0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GwiRc9KRGb0) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:41:55 |
-
----
-
 麦兜的妈妈麦太正处于更年期更年期的学名叫“围绝经期”
 
 意思是女性绝经前后的一段时期

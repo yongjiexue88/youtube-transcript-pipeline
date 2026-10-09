@@ -1,16 +1,3 @@
-# He Built A $600,000 One Person Business (with video editing)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BskeAo66er0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BskeAo66er0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:34:49 |
-
----
-
 I never made more than like 40 50k a year out of college and that's pre-tax so I was broke so I packed up my car drove like 1200 miles away that's where I kind of learned how to like talk to people Network do customer service write blogs all right so today we're meeting up with Scott he makes 50 000 a month making videos and he's going to show us exactly how he does it [Music] so yeah tell me tell me about what you do what do you want yeah so we run uh
 
 basically it's a productized service for B2B SAS companies so think about like an agency service except you're able to buy it kind of like an e-commerce product so it's it's short animated videos for B2B SAS companies to run as paid ads and and get customers in the door what's a typical client for who we work with we work with software companies that are primarily B2B so they have platforms like

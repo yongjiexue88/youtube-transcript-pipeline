@@ -1,16 +1,3 @@
-# 8 Words Native Speakers Don't Say & What You Should Say Instead
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rWn-x4yKwnQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rWn-x4yKwnQ) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:48:03 |
-
----
-
 Let's talk about some words that you should probably forget and I'll tell you
 
 what you should say instead.

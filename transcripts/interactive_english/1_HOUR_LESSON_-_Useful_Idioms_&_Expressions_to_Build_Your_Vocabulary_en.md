@@ -1,16 +1,3 @@
-# 1 HOUR LESSON - Useful Idioms & Expressions to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RNc3CDY0nnk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RNc3CDY0nnk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:54:39 |
-
----
-
 let's learn some useful idioms to help
 
 you build your vocabulary and this is

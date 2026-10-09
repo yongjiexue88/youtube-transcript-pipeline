@@ -1,16 +1,3 @@
-# 21 IMPORTANT sports daily English expressions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vj8nkhVqDZA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vj8nkhVqDZA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:52:10 |
-
----
-
 Sports in the United States are so
 
 popular and people care about them a lot

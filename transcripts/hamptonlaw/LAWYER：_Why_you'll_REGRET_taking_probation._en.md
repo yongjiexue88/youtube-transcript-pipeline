@@ -1,16 +1,3 @@
-# LAWYER: Why you'll REGRET taking probation.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GueBV6hKNNA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GueBV6hKNNA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:42:22 |
-
----
-
 so many people regret taking probation it sounds like a great deal no jail time and I only have to show up for a few appointments the problem is that sweet dream turns into a nightmare and you go to jail anyway we're going to cover all the regrets you need to know before taking probation and then I'll tell you what to do next regret number one is not
 
 understanding or knowing the full terms and conditions of your probation now what are terms and conditions these are the specific things that you're going to have to do in order to avoid going to jail you need to know this stuff before you walk into it now for example many probation officers they're going to require you to take regular check-ins with a probation officer mandatory drug tests that are going to be involved you're going to have curfews community service don't just assume that

@@ -1,16 +1,3 @@
-# The Ramsey Show (REPLAY for December 27, 2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PctjZtrg2cI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PctjZtrg2cI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:20:11 |
-
----
-
 [Music]
 
 live from the headquarters of Ramsey

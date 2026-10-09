@@ -1,16 +1,3 @@
-# Avoid this English grammar mistake
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OXwiN2dxJqM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OXwiN2dxJqM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:00:17 |
-
----
-
 yesterday i drawn a picture of my house
 
 that is incorrect in order to become a

@@ -1,16 +1,3 @@
-# LOVE VOCABULARY ❤️ | Words and phrases you need to know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ANN3RJw_864` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ANN3RJw_864) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:07:26 |
-
----
-
 advanced phrases for the language of
 
 love. I think this is fitting seeing that it is Valentine's Day and I wish you all a happy Valentine's Day. But if you are someone who enjoys learning new

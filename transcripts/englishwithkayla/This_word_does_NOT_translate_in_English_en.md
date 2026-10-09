@@ -1,16 +1,3 @@
-# This word does NOT translate in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nHZo2QkymeY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nHZo2QkymeY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:41:37 |
-
----
-
 here is the most common word that just
 
 does not translate correctly in the

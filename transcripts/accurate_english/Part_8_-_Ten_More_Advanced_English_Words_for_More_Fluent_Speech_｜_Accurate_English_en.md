@@ -1,16 +1,3 @@
-# Part 8 - Ten More Advanced English Words for More Fluent Speech | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IGiXy6QUj-k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IGiXy6QUj-k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:04:39 |
-
----
-
 let's learn 10 more advanced English words in this video we will pay special attention to syllable stress this is
 
 video number 8 you have already learned 70 advanced English words and let's keep

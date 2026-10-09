@@ -1,16 +1,3 @@
-# Should You Take The Fifth? Learn Your Rights! A Former Prosecutor Explains (2022)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CaNtL7XRIgk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CaNtL7XRIgk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:55:02 |
-
----
-
 take the fifth what does that mean should you do
 
 it hi I'm Jeff Hampton with the Hampton Law Firm today I want to talk you talk to you about taking the fifth everybody talks about that what does it mean your fifth amendment rights by the way if you wait around till the end of the video I'll also give you a free ebook what to do if you've been charged with a crime now let's jump right into

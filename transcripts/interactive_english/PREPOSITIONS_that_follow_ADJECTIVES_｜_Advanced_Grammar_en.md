@@ -1,16 +1,3 @@
-# PREPOSITIONS that follow ADJECTIVES | Advanced Grammar
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oEuwe6DM1sM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oEuwe6DM1sM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:29:23 |
-
----
-
 hey everyone my name is Wes this is
 
 interactive English and well what this

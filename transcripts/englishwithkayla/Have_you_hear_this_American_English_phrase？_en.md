@@ -1,16 +1,3 @@
-# Have you hear this American English phrase?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SaxfRVYQ6Fs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SaxfRVYQ6Fs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:04:07 |
-
----
-
 as a punishment the teacher made him write on a chalkboard 100 times well
 
 that will teach him a lesson the phrase

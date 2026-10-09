@@ -1,16 +1,3 @@
-# I'll explain why these words are confusing
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `apgsVGtyqj0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=apgsVGtyqj0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:35:19 |
-
----
-
 I bet that you don't actually know the
 
 difference between to persist and to

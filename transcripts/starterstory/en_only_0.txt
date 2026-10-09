@@ -1,16 +1,3 @@
-# How This App Makes $35K/Month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rGLXc1GmsaI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rGLXc1GmsaI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:11:21 |
-
----
-
 Right now, it's easier than ever to build apps, but distribution is harder than it's ever been. TikTok, paid ads, Reddit, what do you do? Well, today I think I found a solution. I partnered with one guy and we grew by 10,000%.
 
 This is Flo, a solo developer who built a really simple mobile app, but for over

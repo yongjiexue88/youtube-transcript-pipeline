@@ -1,16 +1,3 @@
-# Learn to Use SHADOWING and Improve Your Pronunciation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-QjLmgd6zwM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-QjLmgd6zwM) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:48:20 |
-
----
-
 So today, I want to talk to you about two online resources
 
 that you can use to improve your pronunciation.

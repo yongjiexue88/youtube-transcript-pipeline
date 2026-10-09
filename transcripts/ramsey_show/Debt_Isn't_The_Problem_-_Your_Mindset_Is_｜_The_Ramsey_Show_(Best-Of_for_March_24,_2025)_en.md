@@ -1,16 +1,3 @@
-# Debt Isn't The Problem - Your Mindset Is | The Ramsey Show (Best-Of for March 24, 2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qBQdDAcpEX0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qBQdDAcpEX0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:15:45 |
-
----
-
 [Music]
 
 [Music]

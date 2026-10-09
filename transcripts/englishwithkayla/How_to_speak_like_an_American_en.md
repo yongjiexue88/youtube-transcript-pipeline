@@ -1,16 +1,3 @@
-# How to speak like an American
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-ajJXGh37y8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-ajJXGh37y8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:46:36 |
-
----
-
 what do these three words have in common
 
 hedge wedge budge the D in these words

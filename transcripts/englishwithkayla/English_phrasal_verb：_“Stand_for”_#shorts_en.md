@@ -1,16 +1,3 @@
-# English phrasal verb: “Stand for” #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vrbqgMp14sU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vrbqgMp14sU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:25:46 |
-
----
-
 do you stand for do you stand for
 
 equality do you stand for education do you stand

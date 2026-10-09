@@ -1,16 +1,3 @@
-# Can you become fluent in 3 months? | Natural Conversation + Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DnOQubqyDpk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DnOQubqyDpk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:48:31 |
-
----
-
 is it possible to achieve English
 
 fluency in three months that's a good

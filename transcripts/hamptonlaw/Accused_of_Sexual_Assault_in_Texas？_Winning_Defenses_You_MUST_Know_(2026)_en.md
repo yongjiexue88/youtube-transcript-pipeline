@@ -1,16 +1,3 @@
-# Accused of Sexual Assault in Texas? Winning Defenses You MUST Know (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QRkW8bcefoQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QRkW8bcefoQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:37:33 |
-
----
-
 have you or a loved one been accused of sexual
 
 assault hi I'm Jeff Hampton with the Hampton Law Firm today I want to talk about sexual assault laws in Texas maybe

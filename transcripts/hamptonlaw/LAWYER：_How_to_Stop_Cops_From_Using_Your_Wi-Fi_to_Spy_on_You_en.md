@@ -1,16 +1,3 @@
-# LAWYER: How to Stop Cops From Using Your Wi-Fi to Spy on You
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BW0o62QJVRw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BW0o62QJVRw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:22:18 |
-
----
-
 It's 5:30 in the morning. A SWAT team breaks down the front door. Rifles, flashbangs, chaos. The woman inside, 68
 
 years old. She lives alone. She's never broken the law. Her mistake, a Wi-Fi network the cops thought was hers.

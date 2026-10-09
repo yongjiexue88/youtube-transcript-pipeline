@@ -1,16 +1,3 @@
-# WORD OF THE YEAR (2010 - Present) | Advanced Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KaQRAXJ61U0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KaQRAXJ61U0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:14:49 |
-
----
-
 hello and welcome to today's lesson it's
 
 been a little while since i i've done a live lesson so i'm really excited about this and this is well it's a vocabulary

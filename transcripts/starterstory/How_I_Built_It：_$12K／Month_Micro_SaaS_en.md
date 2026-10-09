@@ -1,16 +1,3 @@
-# How I Built It: $12K/Month Micro SaaS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TCGXT7ySco8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TCGXT7ySco8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:27:09 |
-
----
-
 two years ago I quit my job I started
 
 building trying uh experimenting and uh

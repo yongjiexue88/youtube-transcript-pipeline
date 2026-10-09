@@ -1,16 +1,3 @@
-# 10 English Expressions for Business - to sound like a native speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nlZK1L9TxU0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nlZK1L9TxU0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:57:44 |
-
----
-
 in this video I will teach you 10 English expressions that you can use at work when you expand your knowledge of using idiomatic expressions and phrasal verbs that is the true sign of fluency using common English expressions that native speakers use will make you feel more confident when you're communicating at work first we will learn the expressions and then we will practice saying them in natural sounding sentences that way you can also work on linking and word stress and pronouncing
 
 difficult vocabulary let's get started

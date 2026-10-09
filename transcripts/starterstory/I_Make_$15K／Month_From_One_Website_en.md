@@ -1,16 +1,3 @@
-# I Make $15K/Month From One Website
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qIlX7cQ2UdU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qIlX7cQ2UdU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:12:46 |
-
----
-
 There was two years where it just sat there and really did nothing while it just made me money.
 
 >> This is Maddox, a college student who built a simple website that made $15,000 a month. But it didn't start that way.

@@ -1,16 +1,3 @@
-# Phrasal Verbs with "GET"
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `f-r_bQiGVjE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=f-r_bQiGVjE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:36:18 |
-
----
-
 hi I'm Lisa in this video you will learn
 
 23 phrasal verbs with the verb to get

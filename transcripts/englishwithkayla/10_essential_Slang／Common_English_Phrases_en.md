@@ -1,16 +1,3 @@
-# 10 essential Slang/Common English Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `owCEn_XstmU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=owCEn_XstmU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:46:43 |
-
----
-
 after learning English for many years you may be wanting to add some new phrases to your vocabulary in today's
 
 lesson I've picked 10 phrases that most

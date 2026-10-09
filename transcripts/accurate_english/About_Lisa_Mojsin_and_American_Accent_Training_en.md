@@ -1,16 +1,3 @@
-# About Lisa Mojsin and American Accent Training
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EPZFbHXSwIU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EPZFbHXSwIU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:00:55 |
-
----
-
 welcome to the accurate English channel my name is Lisa moisten for the last 25
 
 years I've been teaching pronunciation and accent reduction in Los Angeles all of my students are already advanced speakers of English but they need to take that final step to fluency and usually that final step means speaking

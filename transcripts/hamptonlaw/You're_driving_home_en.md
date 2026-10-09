@@ -1,16 +1,3 @@
-# You're driving home
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dim-ZTNrMOc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dim-ZTNrMOc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:57:58 |
-
----
-
 You're driving home. You're carrying for protection. In fact, your gun is tucked away in the center console. You're doing everything right.
 
 But suddenly, you see red and blue lights in your rearview mirror. You pull over on the side of the road, the cops walk up to your window, and as you roll your window down, he leans in and says the one thing that makes your stomach drop. Are you carrying a gun? Now, I need you to hear this, because what you say and what you do in the next 5 seconds could actually save your life.

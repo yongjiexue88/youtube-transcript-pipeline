@@ -1,16 +1,3 @@
-# 26 Idioms for FLUENT ENGLISH SPEAKING
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-pfi17gfBK0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-pfi17gfBK0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:58:34 |
-
----
-
 you are an advanced English speaker but
 
 you want to get to that next level of

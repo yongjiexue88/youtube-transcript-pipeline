@@ -1,16 +1,3 @@
-# 🚨 LIVE ENGLISH Q&A LESSON | Interactive English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `77G_as7IFxY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=77G_as7IFxY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:30:33 |
-
----
-
 hey everyone welcome to a Q&A lesson
 
 that I have for you so my name is Wes

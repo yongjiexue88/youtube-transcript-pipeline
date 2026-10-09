@@ -1,16 +1,3 @@
-# How to tell the difference between chance vs chants #shorts #englishlesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XG3CtXJ_PH4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XG3CtXJ_PH4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:22:57 |
-
----
-
 can you pronounce these two english words they're pretty much the same chance and
 
 chance chance and chance a

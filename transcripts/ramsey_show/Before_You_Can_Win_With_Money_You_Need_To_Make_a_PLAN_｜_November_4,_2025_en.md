@@ -1,16 +1,3 @@
-# Before You Can Win With Money You Need To Make a PLAN | November 4, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QI3zQEXlW0Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QI3zQEXlW0Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:00:12 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

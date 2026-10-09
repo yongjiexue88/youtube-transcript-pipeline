@@ -1,16 +1,3 @@
-# LAWYER: How to Protect Yourself From a DUI Checkpoint
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Jiu0yLGFZ3g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Jiu0yLGFZ3g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:29:05 |
-
----
-
 what would you say and do if you're driving down the road you all of a sudden see a barrier in the roadway then you see cops standing around and you realize you've come up on a DWI checkpoint in this video I'm going to give you five tips on how to handle the cops during a DWI checkpoint and what you can do if the cops decide they're going to arrest you currently 38 states
 
 in the district of Colombia allow cops to set up roadblocks in order for them to stop your car and walk up to you to try to see if they can figure out if you've had something to drink are these checkpoints legal yes they are even

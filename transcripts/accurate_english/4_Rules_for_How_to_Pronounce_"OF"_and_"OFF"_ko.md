@@ -1,16 +1,3 @@
-# 4 Rules for How to Pronounce "OF" and "OFF"
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `M7jRoqoWwqg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=M7jRoqoWwqg) |
-| **Language** | Korean (auto-generated) (ko) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:02:47 |
-
----
-
 the seoul
 
 너 제프 아메리칸 put out here in and out

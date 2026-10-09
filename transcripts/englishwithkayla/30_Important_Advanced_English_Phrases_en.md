@@ -1,16 +1,3 @@
-# 30 Important Advanced English Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `__n1CcV4-lA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=__n1CcV4-lA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:45:07 |
-
----
-
 are you looking for idioms and English phrases that native speakers like myself
 
 actually use in our daily conversation

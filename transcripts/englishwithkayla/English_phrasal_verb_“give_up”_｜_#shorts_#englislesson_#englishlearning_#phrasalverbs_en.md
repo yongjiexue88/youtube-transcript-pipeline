@@ -1,16 +1,3 @@
-# English phrasal verb “give up” | #shorts #englislesson #englishlearning #phrasalverbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WtmllpbDcnM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WtmllpbDcnM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:31:42 |
-
----
-
 talk about the english phrasal verb give
 
 up when you give up it can mean that you

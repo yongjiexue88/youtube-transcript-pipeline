@@ -1,16 +1,3 @@
-# How I Built a $4M Business (Simple Strategy)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MLAH5OZ5FO8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MLAH5OZ5FO8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:21:09 |
-
----
-
 I'm Sean, co-founder, CEO of Alia. And by reading one very specific book, we went from $0 in revenue to 4 million ARR. This is Sean, and he runs a SAS tool doing over 4 million ARR. But it
 
 didn't start that way. >> It took us about 6 months to get from two customers to about 20 customers.

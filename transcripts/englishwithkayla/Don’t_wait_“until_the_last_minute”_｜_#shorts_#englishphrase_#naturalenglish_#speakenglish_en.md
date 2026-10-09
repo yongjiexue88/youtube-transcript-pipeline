@@ -1,16 +1,3 @@
-# Don’t wait “until the last minute” | #shorts #englishphrase #naturalenglish #speakenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `c-Lvor8GZwc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=c-Lvor8GZwc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:31:12 |
-
----
-
 stop waiting until the last minute to do
 
 things we use this phrase in english until the

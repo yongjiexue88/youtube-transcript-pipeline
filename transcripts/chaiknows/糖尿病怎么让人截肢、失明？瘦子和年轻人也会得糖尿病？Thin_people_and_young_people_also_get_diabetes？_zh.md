@@ -1,16 +1,3 @@
-# 糖尿病怎么让人截肢、失明？瘦子和年轻人也会得糖尿病？Thin people and young people also get diabetes?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0ojRydjO2Bc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0ojRydjO2Bc) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 14:00:11 |
-
----
-
 如果你正被糖尿病问题困扰
 
 治不完的并发症多年久治不愈离不开的降糖药竟是糖尿病足的早期信号

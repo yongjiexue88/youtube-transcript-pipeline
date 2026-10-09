@@ -1,16 +1,3 @@
-# WEIRD & STRANGE IDIOMS 😜 | Supercharge Your English Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `y-n-Tg51oeU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=y-n-Tg51oeU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:17:10 |
-
----
-
 let's talk about some weird and strange
 
 idioms in english and an idiom is a fixed

@@ -1,16 +1,3 @@
-# Pulled Over With A Gun In The Car? What Should You Do? Do This!! (2022)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3TJRHhfCSBk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3TJRHhfCSBk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:55:13 |
-
----
-
 pulled over with a gun what should you
 
 do hi I'm Jeff Hampton with the Hampton Law Firm thanks for joining us today today I'm going to talk about that you're driving down the road all of a sudden you see lights in your rear viw mirror you know you have a gun in the car what do you say what do you do by

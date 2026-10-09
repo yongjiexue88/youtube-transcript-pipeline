@@ -1,16 +1,3 @@
-# 7 Most Common English Grammar Mistakes + TEST - Do you make these mistakes?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xCBz-O8nHrc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xCBz-O8nHrc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:51:06 |
-
----
-
 Hi, I'm Lisa. In this video, I will help
 
 you to fix seven very common advanced

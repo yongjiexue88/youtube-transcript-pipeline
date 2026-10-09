@@ -1,16 +1,3 @@
-# Are Public Defenders Actually Free? A Former Prosecutor Explains The Shocking Truth! (2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MOfRJllPpSE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MOfRJllPpSE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:52:03 |
-
----
-
 public defenders are free
 
 right hi I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to talk to you about the subject people have this misunderstanding that public defenders are always free is that true if you wait

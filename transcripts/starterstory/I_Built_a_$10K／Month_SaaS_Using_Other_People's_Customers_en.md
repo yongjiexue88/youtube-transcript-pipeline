@@ -1,16 +1,3 @@
-# I Built a $10K/Month SaaS Using Other People's Customers
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LKARRA0MvY4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LKARRA0MvY4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:12:28 |
-
----
-
 My name is Ivan and I built Lancer. We managed to get to $10,000 a month the third or fourth month after launching.
 
 This is Ivan, a builder from Macedonia

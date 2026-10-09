@@ -1,16 +1,3 @@
-# Repeat after me English Speaking | 3 COMMON Reductions | Practice your American English Accent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nq1kowGAYlM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nq1kowGAYlM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:12:35 |
-
----
-
 i'm gonna be very honest with you guys
 
 reductions are the most confusing things

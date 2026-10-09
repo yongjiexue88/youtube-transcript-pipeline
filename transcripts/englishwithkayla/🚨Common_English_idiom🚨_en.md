@@ -1,16 +1,3 @@
-# 🚨Common English idiom🚨
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5eR1JHcmpIg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5eR1JHcmpIg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:00:25 |
-
----
-
 when you want to say that something comes really natural and once you learn
 
 it you'll never forget it you can say it's like riding a bike this popular phrase

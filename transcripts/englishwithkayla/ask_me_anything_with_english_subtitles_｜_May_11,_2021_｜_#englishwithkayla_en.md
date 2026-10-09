@@ -1,16 +1,3 @@
-# ask me anything with english subtitles | May 11, 2021 | #englishwithkayla
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LnGJ67jYW-0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LnGJ67jYW-0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:09:00 |
-
----
-
 hi friends welcome to q and a tuesday
 
 that means question and answer and this week i will

@@ -1,16 +1,3 @@
-# English proverbs you should know.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `s6eLzvMs3ak` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=s6eLzvMs3ak) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:39:44 |
-
----
-
 hi i'm lisa i will teach you some common
 
 english proverbs that all native speakers are familiar with and use on a regular basis and i will teach you some vocabulary from those proverbs

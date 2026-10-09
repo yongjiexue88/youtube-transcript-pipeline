@@ -1,16 +1,3 @@
-# I Built a $1M AI App [No Code]
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IZsQqarWXtY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IZsQqarWXtY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:31:29 |
-
----
-
 this is David he built an AI app that is
 
 now valued at over a million dollar and

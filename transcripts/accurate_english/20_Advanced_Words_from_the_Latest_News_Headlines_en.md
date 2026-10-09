@@ -1,16 +1,3 @@
-# 20 Advanced Words from the Latest News Headlines
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YxXs8_MoPHE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YxXs8_MoPHE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:26:27 |
-
----
-
 you read the news headlines but do you understand all of the words let's learn some English vocabulary from today's news headlines so that you can feel confident talking about current events in English that is real fluency do you know the meaning of the verb to derail or to sty or to Scorch or the phrasal
 
 verb to rack up and you know the meaning of cloud but what does it mean when we use it as a verb to Cloud something in

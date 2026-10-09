@@ -1,16 +1,3 @@
-# Your English textbook will never teach you this
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3H7tG1wOnN8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3H7tG1wOnN8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:59:27 |
-
----
-
 here's one of those weird english phrases that you'll never learn from a textbook if you hear an american english
 
 speaker say as in

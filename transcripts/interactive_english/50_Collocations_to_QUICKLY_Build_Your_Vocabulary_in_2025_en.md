@@ -1,16 +1,3 @@
-# 50 Collocations to QUICKLY Build Your Vocabulary in 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `d8N3ZSU0B_U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=d8N3ZSU0B_U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:30:20 |
-
----
-
 Today I'm going to teach you 50 different collocations. That's coming up. [Music] Hey everyone, my name is Wes. This is Interactive English, which is all about helping you practice and improve your English skills. And today it it's all about helping you build your vocabulary because I am going to teach you 50 different collocations. And if you don't know what a collocation is, it is a word or phrase that is often followed by another word or phrase. And there are many different types of collocations.
 
 But in today's lesson, I want to teach you 50 different adjective noun

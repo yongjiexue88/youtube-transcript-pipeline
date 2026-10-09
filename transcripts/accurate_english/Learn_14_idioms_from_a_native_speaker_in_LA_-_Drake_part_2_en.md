@@ -1,16 +1,3 @@
-# Learn 14 idioms from a native speaker in LA - Drake part 2
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AB5aWd49hb0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AB5aWd49hb0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:52:12 |
-
----
-
 Let's learn some common expressions that native speakers use. These are expressions that you probably did not learn in your English classrooms. The best way to learn these is by listening to native speakers talk.
 
 We will continue my conversation with Drake. Drake is a young man who works in a restaurant in Los Angeles, but right now he's not working. Many many people

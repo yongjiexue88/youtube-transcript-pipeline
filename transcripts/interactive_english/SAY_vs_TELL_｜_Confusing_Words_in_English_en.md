@@ -1,16 +1,3 @@
-# SAY vs TELL | Confusing Words in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NqZBXqFEksk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NqZBXqFEksk) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:49:00 |
-
----
-
 Today, I'm going to tell you a secret.
 
 Well, it's not really a secret, but you should listen carefully to what I'm about to say

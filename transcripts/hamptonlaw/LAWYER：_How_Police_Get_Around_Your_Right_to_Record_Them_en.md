@@ -1,16 +1,3 @@
-# LAWYER: How Police Get Around Your Right to Record Them
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VPixz5bOWQ4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VPixz5bOWQ4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:24:54 |
-
----
-
 recording police is mostly legal but that doesn't mean cops may not try to stop you I believe having your own video is key to protecting yourself and it's also critical to stopping police misconduct but can you be arrested for just being too close to a police officer
 
 what about if a cop thinks you're too close to him while you're recording him I'm Jeff Hampton former prosecutor turned people's lawyer and I've seen literally thousands of police interactions and I know how police officers try to get you to stop stop recording them and how they have a full bag of tricks that they use to make you believe you do not have this constitutional right one of those tricks is state laws that try to limit how close

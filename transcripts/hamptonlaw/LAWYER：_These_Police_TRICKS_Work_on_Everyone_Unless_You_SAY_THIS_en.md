@@ -1,16 +1,3 @@
-# LAWYER: These Police TRICKS Work on Everyone Unless You SAY THIS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3s0qqcnoADI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3s0qqcnoADI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:19:31 |
-
----
-
 If you think being polite and cooperative with the police will protect you, you're about to make the most expensive mistake of your life. Because most people don't get arrested because they're guilty, they get arrested because they talk. And I've seen two-minute conversations with a cop turn into a search, handcuffs, and a court date. All because someone answered one question they didn't have to.
 
 I'm Jeff Hampton, the people's lawyer, and in this video, I'm breaking down every single trick cops use to get you talking, explaining, and consenting. and the exact words you can use to shut them down so that you don't accidentally help them build a case against you. If you've ever been pulled over for a traffic stop, it's important to know that cops have a grabag of tricks that they can pull from to get you talking and you end up giving consent so they can search your car. First off, it's important to know that cops may actually pull you over for a minor violation, even if they're really interested in something else.

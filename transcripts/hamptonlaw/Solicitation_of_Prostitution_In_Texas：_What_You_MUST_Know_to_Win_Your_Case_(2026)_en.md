@@ -1,16 +1,3 @@
-# Solicitation of Prostitution In Texas: What You MUST Know to Win Your Case (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qhBXFp260ZE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qhBXFp260ZE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 16:00:03 |
-
----
-
 solicitation of prostitution new law
 
 what does it say how does it affect

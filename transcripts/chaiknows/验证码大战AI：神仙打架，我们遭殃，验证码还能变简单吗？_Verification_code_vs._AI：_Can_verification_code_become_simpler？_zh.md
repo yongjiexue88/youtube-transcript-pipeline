@@ -1,16 +1,3 @@
-# 验证码大战AI：神仙打架，我们遭殃，验证码还能变简单吗？ Verification code vs. AI: Can verification code become simpler?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vbVobSTnH6c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vbVobSTnH6c) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:47:36 |
-
----
-
 喂你是不是人啊你说你是那请证明一下你配做个人
 
 当你每天上网面对这些千奇百怪的验证码时你其实正在参加“图灵测试”

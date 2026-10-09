@@ -1,16 +1,3 @@
-# As Soon As You Learn Adverb Clauses, Your English Will Instantly Improve!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rIzMFnJWl18` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rIzMFnJWl18) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:43:07 |
-
----
-
 I'm going to teach you everything that you need to know about adverb clauses.
 
 And if you are someone who enjoys improving your grammar skills, please subscribe, turn on notifications. That way, I can become your teacher. My name is Wes. The channel is Interactive English. It's all about trying to help you reach your fluency goals. So, right now, we're going to talk about one of the coolest parts of grammar, adverb clauses. And I really mean that. I say that they're cool because they help you add more details whenever speaking or writing, allowing you to describe how, where, when, or why something happens.

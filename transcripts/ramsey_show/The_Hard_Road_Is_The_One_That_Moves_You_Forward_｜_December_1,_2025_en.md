@@ -1,16 +1,3 @@
-# The Hard Road Is The One That Moves You Forward | December 1, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2l41WqWw7iA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2l41WqWw7iA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:56:32 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

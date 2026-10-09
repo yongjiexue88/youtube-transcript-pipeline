@@ -1,16 +1,3 @@
-# When Life Gets Hard, Choose Financial Stability | April 16, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `tAapBX82ZYo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=tAapBX82ZYo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:36:23 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

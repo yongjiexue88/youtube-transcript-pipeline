@@ -1,16 +1,3 @@
-# THAT, WHICH, WHO? Important Relative Pronouns You Need to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8TdELMQKMms` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8TdELMQKMms) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:01:55 |
-
----
-
 this is the grammar lesson that will
 
 change your life because let's face it

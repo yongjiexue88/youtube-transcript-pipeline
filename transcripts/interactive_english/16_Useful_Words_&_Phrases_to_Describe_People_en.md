@@ -1,16 +1,3 @@
-# 16 Useful Words & Phrases to Describe People
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-rro1ekRUNo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-rro1ekRUNo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:28:43 |
-
----
-
 [Music] Hey everyone, my name is Wes. This is Interactive English, which is all about helping you practice and improve your English skills. And today I I want to help you build your vocabulary because I'm going to teach you some different words and phrases that you can use so that that you can be very specific if you want to talk about another person and describe their personality, their behavior. So there are different adjectives and and nouns that we can use to describe people.
 
 And I want to start with some adjectives. So the first word that I have for you is charismatic.

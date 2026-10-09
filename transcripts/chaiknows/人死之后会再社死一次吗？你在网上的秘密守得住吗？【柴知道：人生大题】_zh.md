@@ -1,16 +1,3 @@
-# 人死之后会再社死一次吗？你在网上的秘密守得住吗？【柴知道：人生大题】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `d0sB_AyFn54` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=d0sB_AyFn54) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:39:20 |
-
----
-
 人 终将一死
 
 并不是人人都怕死不过想想你的手机相册

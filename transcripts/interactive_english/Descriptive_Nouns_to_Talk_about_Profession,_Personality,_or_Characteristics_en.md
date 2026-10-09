@@ -1,16 +1,3 @@
-# Descriptive Nouns to Talk about Profession, Personality, or Characteristics
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8ehzGi-lQPY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8ehzGi-lQPY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:58:33 |
-
----
-
 today I want to teach you 20 different
 
 nouns to help you describe people and

@@ -1,16 +1,3 @@
-# LEARN ALL 12 VERB TENSES IN ENGLISH  🎊
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `57siOIS-qEU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=57siOIS-qEU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:33:13 |
-
----
-
 Hello. What's up everyone? My name is
 
 Wes and in case this is your first time

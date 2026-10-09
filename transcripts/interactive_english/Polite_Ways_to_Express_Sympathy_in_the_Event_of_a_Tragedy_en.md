@@ -1,16 +1,3 @@
-# Polite Ways to Express Sympathy in the Event of a Tragedy
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `doIOwBbWmlU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=doIOwBbWmlU) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:34:32 |
-
----
-
 Today I'm going to talk to you about different ways to express sympathy when there's a tragic or unfortunate event.
 
 In this lesson, I will talk to you about some very, very useful expressions.

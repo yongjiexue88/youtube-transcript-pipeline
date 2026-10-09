@@ -1,16 +1,3 @@
-# Imagine you take a photo of your kid's rash to send it to the doctor
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CtJj-mjH-2Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CtJj-mjH-2Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:06:08 |
-
----
-
 Imagine you take a photo of your kid's rash to send it to the doctor. And a few hours later, cops show up at your front door. They're there because your phone ratted you out. Now imagine that same snitch mode running on every photo you take, every DM you send, every file you save, all before it's encrypted, and all without a judge ever signing off on it.
 
 That's not science fiction. It's called clientside scanning. Cops and governments are actively pushing tech to turn it on, and big tech companies have pretty much built the machinery. I'm Jeff Hampton, the people's lawyer, and in this video, I'm breaking down number one, how cops are using clientside scanning to spy on your phone. Number two, how the laws in the US, the EU, and even the UK are quietly normalizing mass

@@ -1,16 +1,3 @@
-# How advanced is your English?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `JWy97ix9iNc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=JWy97ix9iNc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:22:23 |
-
----
-
 how advanced is your English let's see
 
 if you know these three phrases what

@@ -1,16 +1,3 @@
-# Advanced Phrasal Verbs Natives Use That Textbooks DON’T Teach 📚
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PWzoEcS92Pc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PWzoEcS92Pc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:00:05 |
-
----
-
 I am going to challenge you with some
 
 super advanced phrasal verbs to help you

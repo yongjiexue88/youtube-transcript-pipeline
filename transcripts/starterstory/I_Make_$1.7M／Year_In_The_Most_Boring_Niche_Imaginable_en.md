@@ -1,16 +1,3 @@
-# I Make $1.7M/Year In The Most Boring Niche Imaginable
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BHhg-l9AZpM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BHhg-l9AZpM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:10:13 |
-
----
-
 Nobody is paying attention to this problem. Right now, everyone and their grandma is busy chasing the latest AI trends. But what if the real money is in a category everyone's ignoring? This was a massive problem [music] hiding in a very sexy niche. Meet Bo. He built a
 
 business around one of the most boring topics imaginable, and today his business is doing almost $2 million a year with just six employees. We had real demand with almost no competition.

@@ -1,16 +1,3 @@
-# How to Stop Cops From TRICKING You to Search Your GARAGE
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qGUtHtLTdfo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qGUtHtLTdfo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:26:53 |
-
----
-
 your nosy neighbors hear noises they don't like and they think it's coming from your house so they call the cops and make a noise complaint the cops show up at your house and they see your garage door wide open can they just walk in and start looking around I'm Jeff Hampton former prosecutor turn the people's lawyer and today we're covering two primary points one can an officer ever force their way into your garage to look around or maybe walk into an open garage searching for either
 
 you or anything in the garage because your neighbor made a noise complaint then number two what if that garage is not part of your house but instead a detached garage does that change anything Can the police do more in that situation stick around because knowing your rights and exercising them the right way can be the key to stopping

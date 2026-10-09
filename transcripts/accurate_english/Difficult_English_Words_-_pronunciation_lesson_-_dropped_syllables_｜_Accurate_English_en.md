@@ -1,16 +1,3 @@
-# Difficult  English Words - pronunciation  lesson  - dropped syllables | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `lSKdLBkjWlU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=lSKdLBkjWlU) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-03 08:11:40 |
-
----
-
 Let's learn another important rule about English pronunciation that will help you to pronounce
 
 English words correctly.

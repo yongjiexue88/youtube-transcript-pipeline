@@ -1,16 +1,3 @@
-# LISTENING & SPEAKING ACTIVITY | Speak English on Your Own
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nGKyapPYKg8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nGKyapPYKg8) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:34:46 |
-
----
-
 Alright today, we have a super fun activity for you. It is a listening and speaking activity. That's coming up.
 
 So today's lesson, which is more of an activity, is going to help you guys practice your listening and speaking skills.

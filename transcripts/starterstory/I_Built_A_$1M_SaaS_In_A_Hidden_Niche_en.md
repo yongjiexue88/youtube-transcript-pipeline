@@ -1,16 +1,3 @@
-# I Built A $1M SaaS In A Hidden Niche
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NPpky92ZfjA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NPpky92ZfjA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:09:28 |
-
----
-
 We launched it about 19 months ago. Gone from zero to over a million in ARR over those 19 months. >> This is Zach. He built a million-dollar SAS in just over a year. But here's the
 
 crazy part. This is not your typical SAS model because he does something completely different. And it's the reason he's adding $10,000 [music] in MR

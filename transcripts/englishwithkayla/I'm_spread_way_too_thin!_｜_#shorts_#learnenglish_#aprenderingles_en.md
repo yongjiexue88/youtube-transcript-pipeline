@@ -1,16 +1,3 @@
-# I'm spread way too thin! | #shorts #learnenglish #aprenderingles
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xezz3LWvsto` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xezz3LWvsto) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:29:12 |
-
----
-
 instead of saying i'm way too busy or
 
 i'm overwhelmed you can say i'm spread way too thin

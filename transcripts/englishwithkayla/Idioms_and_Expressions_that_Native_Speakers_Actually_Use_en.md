@@ -1,16 +1,3 @@
-# Idioms and Expressions that Native Speakers Actually Use
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DAy4EfsEA3E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DAy4EfsEA3E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:40:41 |
-
----
-
 I don't speak perfect English and I
 
 don't think you should either in today's

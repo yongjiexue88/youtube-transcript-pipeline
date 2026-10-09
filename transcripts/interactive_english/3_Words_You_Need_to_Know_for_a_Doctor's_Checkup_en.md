@@ -1,16 +1,3 @@
-# 3 Words You Need to Know for a Doctor's Checkup
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SQUHFU9Ob0A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SQUHFU9Ob0A) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:01:34 |
-
----
-
 so let's learn some well vocabulary that
 
 you might encounter at a doctor's office

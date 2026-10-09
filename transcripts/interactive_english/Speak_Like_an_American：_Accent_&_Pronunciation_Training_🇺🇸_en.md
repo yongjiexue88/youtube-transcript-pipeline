@@ -1,16 +1,3 @@
-# Speak Like an American: Accent & Pronunciation Training 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `n8HK4rTTTdk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=n8HK4rTTTdk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:58:29 |
-
----
-
 Let's talk about the American accent.
 
 And the very first thing I want to say is that uh you know when it comes to English in your speaking fluency, you should not feel as though you need to speak with any particular accent, whether it's the US, Australia, the the UK. The most important thing is that people understand what you're saying.

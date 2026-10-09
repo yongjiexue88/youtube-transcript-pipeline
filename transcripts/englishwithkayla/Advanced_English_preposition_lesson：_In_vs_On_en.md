@@ -1,16 +1,3 @@
-# Advanced English preposition lesson: In vs On
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GPjLyB4jXCQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GPjLyB4jXCQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:54:52 |
-
----
-
 I want you to stop making the mistake of
 
 confusing in and on these are two

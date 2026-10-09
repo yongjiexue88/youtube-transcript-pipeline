@@ -1,16 +1,3 @@
-# 12 Powerful Phrases to Talk About Personality Without Sounding Boring!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rAeTX7qyxWI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rAeTX7qyxWI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:47:15 |
-
----
-
 let's talk about personality it's a very
 
 important topic and I want to teach you some useful phrases that you can use to

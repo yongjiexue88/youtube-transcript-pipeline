@@ -1,16 +1,3 @@
-# Super Confusing Words? | Useful HOMONYMS explained
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rH40nadmuMs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rH40nadmuMs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:01:24 |
-
----
-
 so I want you to listen carefully there
 
 are 30 cows in a field and 28 chickens

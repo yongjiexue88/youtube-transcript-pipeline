@@ -1,16 +1,3 @@
-# 🔥 FLUENCY TEST | What is your level of English?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `F_9a20dhj34` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=F_9a20dhj34) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:05:46 |
-
----
-
 Do you want to know your English level?
 
 Let's find out because I want to test

@@ -1,16 +1,3 @@
-# The Top 20 English Phrasal Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4U7-CFnOm1Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4U7-CFnOm1Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:32:21 |
-
----
-
 Let's start out with some simple everyday English phrasal verbs that you can start using in your everyday life.
 
 You can kind of picture how you'll use these phrasal verbs and you'll probably even hear them today. When you arrive somewhere and you are being greeted by whoever owns the house or whoever's business it is and they see you at the door they say come on in or they'll say go on in. Go on in.

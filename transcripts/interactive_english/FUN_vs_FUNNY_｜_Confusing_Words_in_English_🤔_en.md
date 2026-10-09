@@ -1,16 +1,3 @@
-# FUN vs FUNNY | Confusing Words in English 🤔
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YsTanVSWsak` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YsTanVSWsak) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:44:45 |
-
----
-
 Today, I'm going to talk to you about two English words
 
 that learners commonly confuse.

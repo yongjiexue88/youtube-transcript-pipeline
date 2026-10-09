@@ -1,16 +1,3 @@
-# Your Payments Are Keeping You From the Life You Want | May 22, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `izm6h2QCIys` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=izm6h2QCIys) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:31:04 |
-
----
-
 This is an ad for Better Help. May is mental health awareness month and when
 
 life feels overwhelming, therapy can help you slow down, think clearly, and move forward. Visit betterhelp.com/ramsey to get 10% off.

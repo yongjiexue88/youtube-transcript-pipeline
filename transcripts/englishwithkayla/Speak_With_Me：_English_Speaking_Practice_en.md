@@ -1,16 +1,3 @@
-# Speak With Me: English Speaking Practice
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PU3NMJdSyWY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PU3NMJdSyWY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:41:03 |
-
----
-
 that donut over there is really calling
 
 my name do you know what this means in

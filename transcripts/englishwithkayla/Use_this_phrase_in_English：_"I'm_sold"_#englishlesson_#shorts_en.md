@@ -1,16 +1,3 @@
-# Use this phrase in English: "I'm sold" #englishlesson #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DjmX6veCzG4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DjmX6veCzG4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:11:38 |
-
----
-
 if you want to say in english that you
 
 believe someone or you're very persuaded

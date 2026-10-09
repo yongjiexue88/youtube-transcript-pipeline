@@ -1,16 +1,3 @@
-# Confusing Words You Need to Know | Improve Your Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6_6xVRcQ66g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6_6xVRcQ66g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:44:20 |
-
----
-
 hello and welcome to today's lesson my
 
 name's Wes this is Interactive English the perfect place for you guys to practice and improve your English skills

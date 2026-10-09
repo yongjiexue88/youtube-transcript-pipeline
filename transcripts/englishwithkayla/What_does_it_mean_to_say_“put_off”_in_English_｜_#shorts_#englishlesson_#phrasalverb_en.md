@@ -1,16 +1,3 @@
-# What does it mean to say “put off” in English | #shorts #englishlesson #phrasalverb
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BM7vGAhuWcc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BM7vGAhuWcc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:30:25 |
-
----
-
 the phrasal verb put off has two
 
 different meanings and let's practice them today so you can either be put off by something

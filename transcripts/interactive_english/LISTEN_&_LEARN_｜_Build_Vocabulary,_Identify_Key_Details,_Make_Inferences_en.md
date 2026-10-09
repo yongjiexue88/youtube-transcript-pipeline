@@ -1,16 +1,3 @@
-# LISTEN & LEARN | Build Vocabulary, Identify Key Details, Make Inferences
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `L-vrjdghHQM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=L-vrjdghHQM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:24:07 |
-
----
-
 hey everyone welcome to today's lesson
 
 my name is wes and this is interactive

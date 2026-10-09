@@ -1,16 +1,3 @@
-# TRAVEL VOCABULARY - Useful words & phrases for your next trip ✈️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xGeEJBTagug` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xGeEJBTagug) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:18:39 |
-
----
-
 if you are like me and you plan on
 
 traveling in the near future then i want to teach

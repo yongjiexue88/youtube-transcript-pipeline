@@ -1,16 +1,3 @@
-# 20 Adjectives to Instantly Upgrade Your English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `M3vgGksZ6-s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=M3vgGksZ6-s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:38:01 |
-
----
-
 You do not want to be using the same overused, boring, basic adjective, just saying that things are good or bad. You need to upgrade your English instantly with these 20 adjectives in today's lesson. In today's lesson, I'll teach you 20 adjectives that really are the ones that speakers like myself use in
 
 their English. They're not going to be found in a textbook or in classroom English because these are the real life words that are either slang or just they

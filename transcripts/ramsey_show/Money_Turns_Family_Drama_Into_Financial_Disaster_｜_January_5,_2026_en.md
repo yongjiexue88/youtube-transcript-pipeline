@@ -1,16 +1,3 @@
-# Money Turns Family Drama Into Financial Disaster | January 5, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sm5AHi-jMnU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sm5AHi-jMnU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:51:05 |
-
----
-
 This episode is filled with some of our best calls and advice, but unless you take what you hear and put it to work in your own life, you'll be stuck with the same money stress in 2026. So, make a change and download Every Dollar today.
 
 [music]

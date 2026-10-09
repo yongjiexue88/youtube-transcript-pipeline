@@ -1,16 +1,3 @@
-# LAWYER: How Cops Use YOUR Cameras to Make Illegal Searches!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kGpLDuZOqyw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kGpLDuZOqyw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:26:58 |
-
----
-
 as a former prosecutor turned people's lawyer I have seen Police use some pretty extreme methods to spy on people
 
 like the use of drones or pole cameras but this tactic this takes it to a whole new level did you know that police in cities like New Orleans are watching live surveillance footage from cameras all over government cameras business cameras even your neighbor cameras all of this to justify stops and searches

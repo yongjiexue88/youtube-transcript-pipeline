@@ -1,16 +1,3 @@
-# English phrasal verb meanings: "back up" #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hw9c4GqGONc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hw9c4GqGONc) |
-| **Language** | Portuguese (auto-generated) (pt) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:12:49 |
-
----
-
 I knew Where a man to call back up my
 
 heart de resolver Back of Mine What is

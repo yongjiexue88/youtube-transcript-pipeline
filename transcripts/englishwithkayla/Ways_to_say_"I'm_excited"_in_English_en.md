@@ -1,16 +1,3 @@
-# Ways to say "I'm excited" in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `p8nQVuquJvI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=p8nQVuquJvI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:00:23 |
-
----
-
 there are many different ways in the english language to say that you are excited so maybe you need to start
 
 switching up your phrases that you use

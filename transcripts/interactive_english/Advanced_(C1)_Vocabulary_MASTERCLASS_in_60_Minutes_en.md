@@ -1,16 +1,3 @@
-# Advanced (C1) Vocabulary MASTERCLASS in 60 Minutes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `C2w_zVN8XLk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=C2w_zVN8XLk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:47:36 |
-
----
-
 Let's flex your vocabulary muscles because I want to teach you some advanced but still common words, phrases, and idioms to help you build your vocabulary. And if you are someone who enjoys building your vocabulary, please subscribe, turn on notifications.
 
 That way I can become your teacher. My name is Wes, the channel is Interactive English. It's all about trying to help you reach your fluency goals. Now, I say that this is advanced but still common vocabulary because I'm talking about C1 words and phrases.

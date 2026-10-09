@@ -1,16 +1,3 @@
-# How to Use the Present Perfect | Advanced Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IQ190KHbgPQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IQ190KHbgPQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:45:50 |
-
----
-
 hello hello hello welcome to another
 
 lesson have a very very very cool lesson

@@ -1,16 +1,3 @@
-# Learn over 100 food, shopping and restaurant English phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VRrnPIg0rK0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VRrnPIg0rK0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:50:45 |
-
----
-
 hello what would you like to order this evening may I please have the steak can I do the steak instead of just
 
 saying may I please have whatever it is

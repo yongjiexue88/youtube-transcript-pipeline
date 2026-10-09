@@ -1,16 +1,3 @@
-# Popular English Proverbs to Sound Like a Native Speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yegrza-wnw4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yegrza-wnw4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:38:55 |
-
----
-
 what's up everyone hello hello hello
 
 welcome to today's lesson

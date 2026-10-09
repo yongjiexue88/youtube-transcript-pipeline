@@ -1,16 +1,3 @@
-# SUPER CONFUSING WORDS | 1-Hour Vocabulary Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vruqFucWWZ0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vruqFucWWZ0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:49:27 |
-
----
-
 if you sometimes find English words
 
 confusing by the end of the lesson I

@@ -1,16 +1,3 @@
-# You'll Never Prosper When You're Tied Down With Payments | October 7, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `p-q1VMc8brE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=p-q1VMc8brE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:04:51 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

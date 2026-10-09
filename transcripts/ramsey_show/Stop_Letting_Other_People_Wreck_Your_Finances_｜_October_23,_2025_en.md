@@ -1,16 +1,3 @@
-# Stop Letting Other People Wreck Your Finances | October 23, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `r91QqrohlO8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=r91QqrohlO8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:02:13 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

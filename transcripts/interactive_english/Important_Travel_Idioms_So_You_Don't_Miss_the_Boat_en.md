@@ -1,16 +1,3 @@
-# Important Travel Idioms So You Don't Miss the Boat
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gy1Nl4KPoSc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gy1Nl4KPoSc) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:29:41 |
-
----
-
 - Today we're talking about travel idioms.
 
 That's coming up.

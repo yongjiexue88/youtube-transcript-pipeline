@@ -1,16 +1,3 @@
-# Things You Should NOT Say to Women (in English) 🚫
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `48UKsvkznrM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=48UKsvkznrM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:47:58 |
-
----
-
 hello and welcome to our lesson today
 
 today we are we have a special kind of

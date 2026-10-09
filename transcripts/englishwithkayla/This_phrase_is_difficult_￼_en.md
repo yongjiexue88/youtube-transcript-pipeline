@@ -1,16 +1,3 @@
-# This phrase is difficult ￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9ZUG1F4FRJQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9ZUG1F4FRJQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:52:44 |
-
----
-
 english is an easy language
 
 having said that i'm going to teach you

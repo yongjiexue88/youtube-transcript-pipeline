@@ -1,16 +1,3 @@
-# IDIOMS to Express Hope & Inspiration | Vocabulary Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `U4OBY5n2BvM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=U4OBY5n2BvM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:32:06 |
-
----
-
 if you'd like to express hope and
 
 inspiration then this lesson is for you

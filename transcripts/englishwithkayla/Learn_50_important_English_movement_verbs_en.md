@@ -1,16 +1,3 @@
-# Learn 50 important English movement verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vXYMGHhuYrI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vXYMGHhuYrI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:05:09 |
-
----
-
 in this lesson you will learn 50 advanced english verbs let's get started
 
 brush brush i brushed my teeth before i went to bed i brush my hair in the morning i brushed

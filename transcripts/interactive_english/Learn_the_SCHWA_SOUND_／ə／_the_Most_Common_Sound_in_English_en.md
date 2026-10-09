@@ -1,16 +1,3 @@
-# Learn the SCHWA SOUND /ə/ the Most Common Sound in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HaQUTdemPQ8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HaQUTdemPQ8) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:55:47 |
-
----
-
 It's not a word. It's a sound.
 
 And I know what you're thinking.

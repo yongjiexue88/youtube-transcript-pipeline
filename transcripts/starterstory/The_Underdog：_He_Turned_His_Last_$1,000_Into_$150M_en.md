@@ -1,16 +1,3 @@
-# The Underdog: He Turned His Last $1,000 Into $150M
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZEIPj7QbZeI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZEIPj7QbZeI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:26:52 |
-
----
-
 all right gam what's your story I come from a background with like literally zero money going like from shitty job to shitty job and I had only like $1,000 left it was like all my savings at that time I just felt okay like I need to be my own bus this is gam
 
 mubes a guy who set out on a mission to become an entrepreneur and make millions online I've been at it for now like if you combine all experiences close to 10 years and in the beginning things were

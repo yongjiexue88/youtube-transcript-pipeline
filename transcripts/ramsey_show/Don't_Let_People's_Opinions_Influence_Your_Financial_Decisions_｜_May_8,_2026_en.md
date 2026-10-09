@@ -1,16 +1,3 @@
-# Don't Let People's Opinions Influence Your Financial Decisions | May 8, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `n_u7YnBLEe8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=n_u7YnBLEe8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:33:07 |
-
----
-
 This is an ad for Better Help. May is mental health awareness month and we're all surrounded by non-stop noise, screens, notifications, comparison, and our bodies are on high alert. You don't have to carry it all alone. Go to betterhelp.com/ramsey and get 10% off.
 
 Brought to you by the Every Dollar app.

@@ -1,16 +1,3 @@
-# My embarrassing secret!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EdA-cj0SrHk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EdA-cj0SrHk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:56:50 |
-
----
-
 do you guys want to hear my embarrassing
 
 secret today well

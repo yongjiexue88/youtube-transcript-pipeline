@@ -1,16 +1,3 @@
-# Shut up or put up!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xfJl1idWCoY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xfJl1idWCoY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:16:32 |
-
----
-
 this next phrase be very careful with
 
 because if you use it in the wrong context it could potentially be pretty

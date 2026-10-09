@@ -1,16 +1,3 @@
-# If you're a sober driver who thinks you've got nothing to worry about during a
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kbHwmP9f4UU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kbHwmP9f4UU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:23:38 |
-
----
-
 If you're a sober driver who thinks you've got nothing to worry about during a traffic stop, this might be the most important video you've watched all year.
 
 This video is sponsored by Simply Safe.

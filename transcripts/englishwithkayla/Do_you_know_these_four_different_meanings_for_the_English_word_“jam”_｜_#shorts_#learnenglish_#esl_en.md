@@ -1,16 +1,3 @@
-# Do you know these four different meanings for the English word “jam” | #shorts #learnenglish #esl
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LIMIIJw6fco` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LIMIIJw6fco) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:36:02 |
-
----
-
 here are four different meanings for the word jam in english the easiest one is what we
 
 call fruit spread that we put on bread or toast i

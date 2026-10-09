@@ -1,16 +1,3 @@
-# Your Financial Chaos Ends Today | October 13, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BUhPInpHHY8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BUhPInpHHY8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:03:55 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

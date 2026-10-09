@@ -1,16 +1,3 @@
-# Make Your English More Impressive with These 12+ Letter Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Jby_kPBbh0k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Jby_kPBbh0k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:59:43 |
-
----
-
 sound impressive and I impressive just
 
 like the uh northern lights that you see there. Now the the reason why I say to sound impressive is is really for two reasons. The first is these are words that are a bit more advanced and I think some many of them you might be familiar with especially if you feel like you're more of a proficient speaker and that's good because I tried to choose words that you will actually come across if you're listening to a podcast or reading the news.

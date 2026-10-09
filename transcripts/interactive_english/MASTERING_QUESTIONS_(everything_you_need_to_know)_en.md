@@ -1,16 +1,3 @@
-# MASTERING QUESTIONS (everything you need to know)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AnCOdNhqz7k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AnCOdNhqz7k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:09:50 |
-
----
-
 mastering questions. So, I want you to
 
 participate in this lesson. I want you not only to answer questions in the comments, but actually speak out loud, practice saying these questions because that's going to help you improve your overall speaking fluency. And if that is one of your goals, please subscribe, turn on notifications. That way, I can become your teacher.

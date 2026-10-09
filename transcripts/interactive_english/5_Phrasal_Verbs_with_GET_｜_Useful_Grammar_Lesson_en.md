@@ -1,16 +1,3 @@
-# 5 Phrasal Verbs with GET | Useful Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `koMJWojuEr8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=koMJWojuEr8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:50:56 |
-
----
-
 all right let's see if this is
 
 working all right so hello hello hello I hope that uh

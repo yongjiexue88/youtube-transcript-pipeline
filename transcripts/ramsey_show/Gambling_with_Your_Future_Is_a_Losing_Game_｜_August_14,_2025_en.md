@@ -1,16 +1,3 @@
-# Gambling with Your Future Is a Losing Game | August 14, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `u8UD_KWbDng` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=u8UD_KWbDng) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:12:21 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

@@ -1,16 +1,3 @@
-# Don’t use the word “buddy” in American English #shorts #learnenglish #englishlesson #speakenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fxTY6FjX27I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fxTY6FjX27I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:37:20 |
-
----
-
 buddy is another word for friend in
 
 english but you want to be careful how you use

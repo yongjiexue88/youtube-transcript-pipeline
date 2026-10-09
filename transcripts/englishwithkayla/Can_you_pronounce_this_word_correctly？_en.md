@@ -1,16 +1,3 @@
-# Can you pronounce this word correctly?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `srhCjcQC0NQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=srhCjcQC0NQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:46:45 |
-
----
-
 how do you pronounce this word
 
 the word is pronounced Wednesday

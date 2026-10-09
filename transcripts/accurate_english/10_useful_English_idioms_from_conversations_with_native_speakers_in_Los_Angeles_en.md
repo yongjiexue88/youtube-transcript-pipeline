@@ -1,16 +1,3 @@
-# 10 useful English idioms from conversations with native speakers in Los Angeles
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Rc_ONEkNFR0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Rc_ONEkNFR0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:55:26 |
-
----
-
 in this video you will learn 10 idiomatic expressions that native speakers use we will continue our series of talking to interesting people in Los Angeles so that you can practice your American accent with native speakers of English I film our conversations and then we analyze the way their speaking first you will watch the video and then I will come back and I will explain the
 
 different idiomatic expressions we were using and I will give you different examples using those expressions in different sentences so that you can really master those expressions I had a

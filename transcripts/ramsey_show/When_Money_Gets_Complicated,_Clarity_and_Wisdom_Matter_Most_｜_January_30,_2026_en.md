@@ -1,16 +1,3 @@
-# When Money Gets Complicated, Clarity and Wisdom Matter Most | January 30, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hy2VTIXHCCk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hy2VTIXHCCk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:47:09 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

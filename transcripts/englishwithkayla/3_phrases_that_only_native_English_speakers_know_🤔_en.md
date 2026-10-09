@@ -1,16 +1,3 @@
-# 3 phrases that only native English speakers know 🤔
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Hro-KF8aGOc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Hro-KF8aGOc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:23:36 |
-
----
-
 let's review some idioms that you can
 
 learn to understand native English

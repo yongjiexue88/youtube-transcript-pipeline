@@ -1,16 +1,3 @@
-# Learn English slang phrases | Learn English watching TikTok | American Slang School #englishslang
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aYjdPjtmhyU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aYjdPjtmhyU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:12:09 |
-
----
-
 i get so many questions about american
 
 slang and my dms and honestly you can't get hip with american culture without being hip with the slang so in this

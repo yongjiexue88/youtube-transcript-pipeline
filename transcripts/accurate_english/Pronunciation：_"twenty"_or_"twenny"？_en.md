@@ -1,16 +1,3 @@
-# Pronunciation:  "twenty" or "twenny"?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uUZuh7wUhOs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uUZuh7wUhOs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:35:24 |
-
----
-
 let's look at this word how do you pronounce it do you say 20 or do you say 20. let's
 
 listen to how some native speakers pronounce it 21st century and you're traveling at 120

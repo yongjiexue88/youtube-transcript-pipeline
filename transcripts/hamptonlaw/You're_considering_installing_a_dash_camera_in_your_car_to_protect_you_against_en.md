@@ -1,16 +1,3 @@
-# You're considering installing a dash camera in your car to protect you against
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EqL81SPpgco` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EqL81SPpgco) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:17:40 |
-
----
-
 You're considering installing a dash camera in your car to protect you against the cops and from crazy drivers.
 
 But what if the footage that should keep you safe is actually manipulated and used against you? More and more drivers are installing dash cameras in their car to avoid false accusations from the police, road raers, and scammers. But people have no idea how quickly that same footage can be used and flipped against them. If you don't know exactly when to share it, what to delete, and how the law can use it against you, you could find yourself being tricked by cops to take your dash cam footage and use it against you.

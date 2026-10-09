@@ -1,16 +1,3 @@
-# SUPER USEFUL IDIOMS | Talk about Friends & Family
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WLz83DJ5gtw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WLz83DJ5gtw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:11:50 |
-
----
-
 hey everyone today i have a very fun
 
 idiom lesson for you about friends and

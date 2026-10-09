@@ -1,16 +1,3 @@
-# Confusing phone phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-E0mnqC2uik` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-E0mnqC2uik) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:51:21 |
-
----
-
 confusing but what does it mean when
 
 someone says to blow up your phone if

@@ -1,16 +1,3 @@
-# I Make $845,601 Writing This Online...
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5MaPEK-yVVY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5MaPEK-yVVY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:33:32 |
-
----
-
 what if I told you you could turn this blank Google doc into millions of dollars well that's what thousands of people are doing right now on the internet but nobody's talking about it so I found someone who would Alex Garcia
 
 a kid from Austin Texas who makes eight hundred thousand dollars a year writing five different email newsletters he invited me into his house and broke down everything including a step-by-step blueprint anyone can use to build a six-figured newsletter from scratch if you have those four things you have just about everything you need to run a successful newsletter we also broke down how to find the right Niche how to get advertisers to pay

@@ -1,16 +1,3 @@
-# MINIMAL PAIRS | Helpful Pronunciation Practice to Improve Your Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dvo2ehdbleQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dvo2ehdbleQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:36:40 |
-
----
-
 What's up everyone? I hope you're doing well. My name is Wes and if you haven't
 
 been here before, this is Interactive English, which is all about helping you guys practice and improve your English skills. So, see some people are here with me already today. If you are, say hello in the chat. I'd love to hear your name. And if even if you're watching this later, just write me a comment.

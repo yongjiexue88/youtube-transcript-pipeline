@@ -1,16 +1,3 @@
-# Connecting Words - Linking for Fluent Sounding English | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hYiA_BBkDE8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hYiA_BBkDE8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:59:31 |
-
----
-
 in this video I would like to teach you how to correctly pronounce some English expressions that contain three words we will connect them together because they are one unit these three words belong together so we will say them as one unit is only one word all of these
 
 expressions have the word and in the middle but we don't say the word and we only pronounce the sound mmm we eliminate the a and the D the first example is salt and pepper we don't say salt and pepper we reduce

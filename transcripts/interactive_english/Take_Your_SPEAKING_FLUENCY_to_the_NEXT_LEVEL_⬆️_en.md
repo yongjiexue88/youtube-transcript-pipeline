@@ -1,16 +1,3 @@
-# Take Your SPEAKING FLUENCY to the NEXT LEVEL ⬆️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZMkhSFUd6sE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZMkhSFUd6sE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:12:30 |
-
----
-
 let's talk about how you can improve
 
 your speaking skills and these these are

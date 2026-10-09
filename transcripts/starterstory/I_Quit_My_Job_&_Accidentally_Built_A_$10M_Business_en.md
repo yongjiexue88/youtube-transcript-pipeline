@@ -1,16 +1,3 @@
-# I Quit My Job & Accidentally Built A $10M Business
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gU9FtZIfb_M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gU9FtZIfb_M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:26:04 |
-
----
-
 this guy quit his job and built a $10 million business by accident and the crazy part is he did it using a marketing method that cost z i from the
 
 beginning knew that were going to be the secret to our growth I invited Ian to my

@@ -1,16 +1,3 @@
-# deadly conduct charges what does it even mean to be charged with deadly conduct
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `w_NhZqLZEpY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=w_NhZqLZEpY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 15:56:05 |
-
----
-
 deadly conduct charges what does it even mean to be charged with deadly
 
 conduct hi I'm Jeff Hampton with the Hampton Law Firm I want to welcome you to our YouTube channel today I want to talk to you about the crime of deadly conduct now there's a lot of misunderstanding about what this crime actually is what has to be proven by the state of Texas and so I want to not only explain it to you but I want to possibly show

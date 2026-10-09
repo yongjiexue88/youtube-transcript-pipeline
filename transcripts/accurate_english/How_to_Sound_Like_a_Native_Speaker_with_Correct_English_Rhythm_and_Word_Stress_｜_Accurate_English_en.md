@@ -1,16 +1,3 @@
-# How to Sound Like a Native Speaker with Correct  English Rhythm and Word Stress |  Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KbecjkaghwI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KbecjkaghwI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:10:33 |
-
----
-
 let's practice Rhythm and Melody let's practice word stress of American English
 
 listen to me saying these sentences and then I'll teach you the rule I watched

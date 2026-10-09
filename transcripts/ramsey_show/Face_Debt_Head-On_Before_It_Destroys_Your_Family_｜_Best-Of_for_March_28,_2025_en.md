@@ -1,16 +1,3 @@
-# Face Debt Head-On Before It Destroys Your Family | Best-Of for March 28, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RqpOKte50f8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RqpOKte50f8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:14:58 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free

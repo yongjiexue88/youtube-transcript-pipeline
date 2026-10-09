@@ -1,16 +1,3 @@
-# 7 of the MOST Useful English Phrasal Verbs and Idioms with the word "TALK"
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SJ9JmJPzRSE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SJ9JmJPzRSE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:11:42 |
-
----
-
 hi friends welcome back to english with kayla my name is kayla i'm an american english teacher and i
 
 teach real-life english that you can use in conversation

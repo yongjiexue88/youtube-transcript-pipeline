@@ -1,16 +1,3 @@
-# Have you heard of this English word???🤔
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `13Gsdxb4UtQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=13Gsdxb4UtQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:24:04 |
-
----
-
 have you ever heard an American English
 
 speaker say this super interesting

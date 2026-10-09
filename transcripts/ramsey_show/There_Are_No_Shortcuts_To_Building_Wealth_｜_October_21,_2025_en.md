@@ -1,16 +1,3 @@
-# There Are No Shortcuts To Building Wealth | October 21, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Z9kJUUF2RpY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Z9kJUUF2RpY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:02:37 |
-
----
-
 [Music] brought to you by the Every Dollar app.
 
 Start budgeting for free today.

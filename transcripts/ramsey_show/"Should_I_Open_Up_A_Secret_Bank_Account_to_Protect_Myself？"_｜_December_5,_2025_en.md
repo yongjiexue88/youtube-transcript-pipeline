@@ -1,16 +1,3 @@
-# "Should I Open Up A Secret Bank Account to Protect Myself?" | December 5, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GQgh4A7aPdU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GQgh4A7aPdU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:55:39 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start [music] budgeting for free today.

@@ -1,16 +1,3 @@
-# Public Intoxication: A Former DA Tells You How To Beat A Public Intoxication Charge (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9y4zI5ddVgA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9y4zI5ddVgA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:58:15 |
-
----
-
 hey everyone welcome to the Hampton Law Firm I want to take a couple of minutes here to talk about the subject of public
 
 intoxication and in this video I want to talk about what you need to know in order to be able to get your public intoxication charge dismissed and the

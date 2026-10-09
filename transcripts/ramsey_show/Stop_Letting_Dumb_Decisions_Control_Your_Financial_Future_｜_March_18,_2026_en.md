@@ -1,16 +1,3 @@
-# Stop Letting Dumb Decisions Control Your Financial Future | March 18, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AAoHsu9x7yw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AAoHsu9x7yw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:40:36 |
-
----
-
 [music] >> Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

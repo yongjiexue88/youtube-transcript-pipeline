@@ -1,16 +1,3 @@
-# 7 Super Useful Idioms to Improve Your Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NbxxchddqwE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NbxxchddqwE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:25:54 |
-
----
-
 so right now we're gonna walk right out that door and i'm gonna find some super useful and common idioms to
 
 help you improve your fluency let's go [Music]

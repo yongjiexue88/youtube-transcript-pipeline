@@ -1,16 +1,3 @@
-# The Ramsey Show (Replay for December 31, 2024)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wQbuLtEk7M0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wQbuLtEk7M0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:16:23 |
-
----
-
 [Music]
 
 brought to you by the every dollar app start budgeting for free

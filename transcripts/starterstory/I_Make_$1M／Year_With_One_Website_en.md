@@ -1,16 +1,3 @@
-# I Make $1M/Year With One Website
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7LZ0MTkNr34` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7LZ0MTkNr34) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:30:43 |
-
----
-
 this is Alex and he makes over a million
 
 dollars a year with a business model that nobody's talking about anymore a

@@ -1,16 +1,3 @@
-# The Health Vocab Native Speakers Use Every Day (Advanced Words & Phrases)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `__IQ-ZmoiyM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=__IQ-ZmoiyM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:56:10 |
-
----
-
 Let's build your vocabulary with what I
 
 think are very useful, pretty common words and phrases phrases. It is all about health. And if you enjoy building your vocabulary, please subscribe. My name is Wes.

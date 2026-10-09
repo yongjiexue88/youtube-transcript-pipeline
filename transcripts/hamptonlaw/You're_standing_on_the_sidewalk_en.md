@@ -1,16 +1,3 @@
-# You're standing on the sidewalk
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7cay-3Jpd_g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7cay-3Jpd_g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:53:44 |
-
----
-
 You're standing on the sidewalk. There's a traffic stop happening 20 ft in front of you. You don't know exactly what's going on, but you feel there's something off. So, you pull out your phone and you start recording.
 
 But suddenly, the officer looks up. He leaves what he's doing at that car during the traffic stop. He walks directly over to you with his finger in your face and he says the four words that freeze most people, "Stop recording me now." Now, here's what happens to most people when they hear those words. They freeze.

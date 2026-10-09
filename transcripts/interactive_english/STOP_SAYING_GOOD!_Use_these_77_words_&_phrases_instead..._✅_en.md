@@ -1,16 +1,3 @@
-# STOP SAYING GOOD! Use these 77 words & phrases instead... ✅
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `m6GWAFkjxyo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=m6GWAFkjxyo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:29:27 |
-
----
-
 good is not what I want you to say
 
 instead I want you to say this hi

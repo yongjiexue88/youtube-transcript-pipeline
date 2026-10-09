@@ -1,16 +1,3 @@
-# Useful Beach Vocabulary to Improve Your Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `lyW4kq9itXk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=lyW4kq9itXk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:32:18 |
-
----
-
 today I want to teach you vocabulary
 
 that you will use the next time you go

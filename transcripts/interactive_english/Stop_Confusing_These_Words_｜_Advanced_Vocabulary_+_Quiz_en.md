@@ -1,16 +1,3 @@
-# Stop Confusing These Words | Advanced Vocabulary + Quiz
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7pTyq_h5PWY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7pTyq_h5PWY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:35:55 |
-
----
-
 If you are looking to build, develop,
 
 and grow your vocabulary, then today's lesson is for you because I am going to talk to you about some confusing English

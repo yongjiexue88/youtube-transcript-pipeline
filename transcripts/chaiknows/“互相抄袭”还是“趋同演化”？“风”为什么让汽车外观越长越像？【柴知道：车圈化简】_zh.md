@@ -1,16 +1,3 @@
-# “互相抄袭”还是“趋同演化”？“风”为什么让汽车外观越长越像？【柴知道：车圈化简】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `O4AqRZCADjw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=O4AqRZCADjw) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:38:03 |
-
----
-
 你能从这 12 个轮廓里找出哪辆是保时捷吗
 
 好公布答案这 12 辆车分别是奔驰 宝马本田 奥迪沃尔沃 蔚来小鹏 智界比亚迪和特斯拉所以最后这两辆

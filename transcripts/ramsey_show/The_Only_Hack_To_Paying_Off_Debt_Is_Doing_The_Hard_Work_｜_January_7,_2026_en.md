@@ -1,16 +1,3 @@
-# The Only Hack To Paying Off Debt Is Doing The Hard Work | January 7, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XaQMB5bVMOs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XaQMB5bVMOs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:50:42 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

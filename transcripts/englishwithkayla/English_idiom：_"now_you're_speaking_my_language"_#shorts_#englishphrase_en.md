@@ -1,16 +1,3 @@
-# English idiom: "now you're speaking my language" #shorts #englishphrase
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `p04ZHh0Iwzw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=p04ZHh0Iwzw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:12:25 |
-
----
-
 a funny english phrase that you can use
 
 to agree with someone or to be really

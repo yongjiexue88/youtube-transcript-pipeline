@@ -1,16 +1,3 @@
-# I couldn’t fathom
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oGW-5YWqNnE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oGW-5YWqNnE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:16:13 |
-
----
-
 I couldn't fathom I couldn't fathom we
 
 don't actually use the verb to Fathom

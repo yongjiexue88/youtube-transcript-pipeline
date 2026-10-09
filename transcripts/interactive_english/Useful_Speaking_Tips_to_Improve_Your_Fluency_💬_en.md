@@ -1,16 +1,3 @@
-# Useful Speaking Tips to Improve Your Fluency 💬
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AMr2mSbORfc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AMr2mSbORfc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:25:07 |
-
----
-
 hey everyone my name is wes from interactive english which is all about
 
 helping you practice and improve your english skills and today i want to talk to you about

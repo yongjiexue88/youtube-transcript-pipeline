@@ -1,16 +1,3 @@
-# Learn English & Stay Motivated 🚴
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Yeo879Yjogg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Yeo879Yjogg) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:48:37 |
-
----
-
 Today, I want to talk to you about something that will really help you with learning English.
 
 Yeah...it's... It's this.

@@ -1,16 +1,3 @@
-# This English classroom is tough
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `q-ycx785EcE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=q-ycx785EcE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:36:45 |
-
----
-
 okay class who can tell me a phrase that
 
 means to insult someone

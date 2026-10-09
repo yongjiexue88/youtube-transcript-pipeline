@@ -1,16 +1,3 @@
-# How I Finally Built a $10K/Month SaaS (30 Failures)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rPguT9z6kRQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rPguT9z6kRQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:21:19 |
-
----
-
 We get the same complaints on every YouTube video. You just talk about successful ideas, but what about the failures? I hear you and I get it. So, today we're doing something a little different. Today, we're talking to Thomas, a guy who's failed with over 30 ideas. >> I failed way more often than I ever
 
 succeeded. >> After failing with over 30 ideas over many years, something finally clicked.

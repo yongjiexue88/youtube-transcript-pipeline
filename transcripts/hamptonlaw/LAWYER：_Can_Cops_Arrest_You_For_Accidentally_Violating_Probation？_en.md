@@ -1,16 +1,3 @@
-# LAWYER: Can Cops Arrest You For Accidentally Violating Probation?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WN54voUNsYw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WN54voUNsYw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:39:03 |
-
----
-
 violating probation is not always intentional even though the law makes it seem that way judges feel like probation is giving you a second chance so they get really upset if you mess it up but what if your probation violation is an honest misunderstanding or maybe your probation officer was being a jerk I defend my clients against this situation all the time here in Texas so I'm going to walk
 
 you through the four situations you're about to experience and what you should do to make sure you can avoid prison or jail as a result result of a possible probation violation the first situation you'll encounter is finding out that you have somehow violated your probation this can usually happen one of two ways either you get a special call from your probation officer inviting you in for a special meeting or

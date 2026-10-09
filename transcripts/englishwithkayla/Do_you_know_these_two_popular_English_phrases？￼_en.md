@@ -1,16 +1,3 @@
-# Do you know these two popular English phrases?￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BXYhxzvE6IY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BXYhxzvE6IY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:55:04 |
-
----
-
 here are two popular english phrases that you can use to say that you are going to try really hard so the first is you can say
 
 i will go to any length i will go to any

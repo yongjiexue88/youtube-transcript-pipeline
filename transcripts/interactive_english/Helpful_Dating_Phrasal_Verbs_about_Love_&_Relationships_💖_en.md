@@ -1,16 +1,3 @@
-# Helpful Dating Phrasal Verbs about Love & Relationships 💖
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZOfXwSYVk04` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZOfXwSYVk04) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:39:27 |
-
----
-
 Have I got a fun lesson for you today.
 
 Because we're talking about dating and phrasal verbs.

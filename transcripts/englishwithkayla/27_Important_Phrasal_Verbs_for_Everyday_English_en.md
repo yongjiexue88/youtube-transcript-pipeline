@@ -1,16 +1,3 @@
-# 27 Important Phrasal Verbs for Everyday English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4yLIO1VbYaU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4yLIO1VbYaU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:44:38 |
-
----
-
 the first set of phrasal verbs in our lesson is going to contain the word up
 
 listen up listen up when someone says

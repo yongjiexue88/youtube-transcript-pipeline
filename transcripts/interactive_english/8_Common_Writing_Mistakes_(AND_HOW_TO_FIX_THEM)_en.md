@@ -1,16 +1,3 @@
-# 8 Common Writing Mistakes (AND HOW TO FIX THEM)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-0HPxRZxoQE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-0HPxRZxoQE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:12:49 |
-
----
-
 Hello and welcome to today's writing
 
 lesson. We're going to switch things up a little bit and I want to talk to you about some common writing mistakes and

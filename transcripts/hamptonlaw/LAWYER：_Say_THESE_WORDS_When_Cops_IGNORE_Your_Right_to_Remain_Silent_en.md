@@ -1,16 +1,3 @@
-# LAWYER: Say THESE WORDS When Cops IGNORE Your Right to Remain Silent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IOsEshAToXM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IOsEshAToXM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:24:41 |
-
----
-
 what happens if you try to exercise your right to remain silent and the cops just ignore you we've all seen the movies where cops recite you your Miranda Rights but here is the real truth cops use sneaky tricks to sidestep your rights and most people have no idea how to respond to them I'm Jeff Hampton former prosecutor turned people's lawyer and in this video I'm breaking down
 
 the five tricks cops use to undermine your silence and more importantly what you can do to protect your constitutional rights during any any encounter before I jump into the cop's first trick let's remind ourselves why your Miranda Rights are so important The Landmark 1966 US

@@ -1,16 +1,3 @@
-# 12 Everyday English Slang Phrases for All Ages
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `dQVkTQ2FBSE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=dQVkTQ2FBSE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:42:11 |
-
----
-
 a really cool thing about any language
 
 is it's always changing and nowadays it

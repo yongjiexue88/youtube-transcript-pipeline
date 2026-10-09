@@ -1,16 +1,3 @@
-# 20+ ANIMAL GROUP NAMES | Useful Vocabulary Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cQ1p7est4UM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cQ1p7est4UM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:29:34 |
-
----
-
 hey everyone welcome to interactive
 
 English my name is Wes and this channel

@@ -1,16 +1,3 @@
-# Fix Your Prepositions Mistakes
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZgIWzKIpFBQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZgIWzKIpFBQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:21:20 |
-
----
-
 Is it in or on? Is it for or from? Is it
 
 by or with? English prepositions can be

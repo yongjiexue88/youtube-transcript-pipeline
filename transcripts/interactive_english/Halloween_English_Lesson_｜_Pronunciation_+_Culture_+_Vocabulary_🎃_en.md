@@ -1,16 +1,3 @@
-# Halloween English Lesson | Pronunciation + Culture + Vocabulary 🎃
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hW2Z-3w17ek` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hW2Z-3w17ek) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:23:46 |
-
----
-
 hey everyone welcome to interactive
 
 english in case this is the first time your first time here the channel it's all about just helping you practice and improve your english and today i i think it's a fun lesson we're gonna

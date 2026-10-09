@@ -1,16 +1,3 @@
-# Stop Letting Yesterday's Mistakes Control Today's Decisions | March 3, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `t5ng8FWcpQc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=t5ng8FWcpQc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:42:46 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

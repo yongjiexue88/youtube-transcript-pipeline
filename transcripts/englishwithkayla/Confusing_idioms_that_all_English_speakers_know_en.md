@@ -1,16 +1,3 @@
-# Confusing idioms that all English speakers know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `epvudhgB3mY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=epvudhgB3mY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:51:10 |
-
----
-
 hello hey Kayla can you talk
 
 um I'm a little tied up right now do you

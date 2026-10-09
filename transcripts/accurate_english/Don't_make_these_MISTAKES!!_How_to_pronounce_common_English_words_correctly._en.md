@@ -1,16 +1,3 @@
-# Don't make these MISTAKES!!  How to pronounce common English words correctly.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `smlhnHfkKD0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=smlhnHfkKD0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:57:57 |
-
----
-
 hi I'm Lisa in this video I will teach
 
 you how to correctly pronounce some very confusing English words many of my students are surprised to find out how these words are pronounced they realize that they had been saying them incorrectly let's learn the correct pronunciation so that you can feel more confident when you're speaking English

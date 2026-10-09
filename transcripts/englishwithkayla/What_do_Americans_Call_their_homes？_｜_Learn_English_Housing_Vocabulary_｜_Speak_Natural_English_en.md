@@ -1,16 +1,3 @@
-# What do Americans Call their homes? | Learn English Housing Vocabulary | Speak Natural English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aPeg9CKT8dY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aPeg9CKT8dY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:13:32 |
-
----
-
 hi friends welcome back to another english lesson today's lesson is all about the different types of homes in the united
 
 states i think you will find today's video very

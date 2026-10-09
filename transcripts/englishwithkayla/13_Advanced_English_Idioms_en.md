@@ -1,16 +1,3 @@
-# 13 Advanced English Idioms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cECLwzNxFzE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cECLwzNxFzE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:33:13 |
-
----
-
 Are you an advanced English speaker?
 
 Let's find out. Today, I'm going to quiz you on 13 English idioms. And if you

@@ -1,16 +1,3 @@
-# Perhaps or maybe?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `h1CkQF9llPg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=h1CkQF9llPg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:45:03 |
-
----
-
 what's the difference between perhaps
 
 and maybe these words can mean the exact

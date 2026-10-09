@@ -1,16 +1,3 @@
-# Learn Vocabulary in Dubrovnik with Interactive English | Travel VLOG
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LKPbO5gJof4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LKPbO5gJof4) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:50:50 |
-
----
-
 I want to show you something.
 
 Hello, and welcome to beautiful Dubrovnik. So on this trip we're going to be

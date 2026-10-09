@@ -1,16 +1,3 @@
-# I Make $250K/Month From 20 Apps
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `En34iY-rQc0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=En34iY-rQc0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:24:22 |
-
----
-
 My name is John Rush and I run 20 different projects doing 3 million error. John Rush started his career working for huge VCback startups. But
 
 after feeling unhappy and a bit bored with the VC life, he decided to throw it all out the window and instead launched his own apps as a solo founder. And over the past 3 years, he's built, launched, and now runs over 26 different apps. I

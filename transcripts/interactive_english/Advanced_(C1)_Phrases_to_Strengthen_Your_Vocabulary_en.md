@@ -1,16 +1,3 @@
-# Advanced (C1) Phrases to Strengthen Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XCgPBpKK97k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XCgPBpKK97k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:43:55 |
-
----
-
 If you want to greatly build your vocabulary, but sometimes you're unable to think straight, this lesson is for you because I want to teach you some useful C1 phrases to help you develop
 
 your overall vocabulary. And let's begin with a phrase that I just mentioned, not think straight. This means to be unable to use your mind in an effective way.

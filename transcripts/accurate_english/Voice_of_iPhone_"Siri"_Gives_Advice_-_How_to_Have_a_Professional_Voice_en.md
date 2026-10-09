@@ -1,16 +1,3 @@
-# Voice of iPhone "Siri" Gives Advice - How to Have a Professional Voice
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `w9-PstvOZ3Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=w9-PstvOZ3Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:47:26 |
-
----
-
 hi i'm lisa in this video we will talk
 
 about how to use your voice effectively when you're speaking english as you already know for professional english it's really important that your grammar is correct and also that you speak with a clear accent but the way your voice sounds can also be very important your voice can communicate whether you are nervous and insecure or whether you're confident

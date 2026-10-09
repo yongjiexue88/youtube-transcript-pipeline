@@ -1,16 +1,3 @@
-# No Matter Your Income, You Have To Know Where Your Money Is Going | August 22, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Ky9pz2jzEfA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Ky9pz2jzEfA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:11:24 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

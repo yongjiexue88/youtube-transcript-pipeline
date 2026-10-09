@@ -1,16 +1,3 @@
-# STOP SAYING BAD 🚫 Use these 46 words & phrases instead
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MMeisR1A14U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MMeisR1A14U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:20:04 |
-
----
-
 bad is not what i want you to say instead i want you to say
 
 hey everyone my name is wes this is interactive english the channel is just all about helping you practice and improve your english skills and today i have it's it's a vocabulary lesson for you it's really related to one word and that is bad first i want to say that i'm not telling you that you should never use bad of course you might use this word from time to time

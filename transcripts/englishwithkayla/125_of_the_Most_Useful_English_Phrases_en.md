@@ -1,16 +1,3 @@
-# 125 of the Most Useful English Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9jrYPIPDskE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9jrYPIPDskE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:38:11 |
-
----
-
 Let's start off with a quick explanation of four really common phrases that are taught at the elementary level of English. So, this is a level of English that maybe you learned in the classroom.
 
 And these are the phrases that you can start using right away in your English speaking even if you're not feeling confident. So, the first phrase is how's it going? How's it going? This is what

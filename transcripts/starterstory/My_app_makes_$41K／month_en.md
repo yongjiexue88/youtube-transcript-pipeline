@@ -1,16 +1,3 @@
-# My app makes $41K/month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `a1EXyJlSx9g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=a1EXyJlSx9g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:20:29 |
-
----
-
 I'm going to be honest. I get a lot of DMs from people who want to come onto the channel. I'm sure they're cool, but 90% of those DMs don't go anywhere. But
 
 what about the other 10%. Well, that's who you're going to meet today. This is Joe. He's never shared his story before, and he DM'd me and said, "I'm a solo founder and I make over $40,000 a month with this app." This sounded cool, so I had to know more.

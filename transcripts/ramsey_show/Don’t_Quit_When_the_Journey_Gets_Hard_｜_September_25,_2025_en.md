@@ -1,16 +1,3 @@
-# Don’t Quit When the Journey Gets Hard | September 25, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MJeuXvYiPic` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MJeuXvYiPic) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:06:37 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

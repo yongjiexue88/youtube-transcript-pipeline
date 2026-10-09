@@ -1,16 +1,3 @@
-# Euphemisms That Native Speakers Use All the Time
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `iaT6OphtS9o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=iaT6OphtS9o) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:46:26 |
-
----
-
 Today I am going to talk to you about, wait, wait, I'll be right back.
 
 I just got to go number one.

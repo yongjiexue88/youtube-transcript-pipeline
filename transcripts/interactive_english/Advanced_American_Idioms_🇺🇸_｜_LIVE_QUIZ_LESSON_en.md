@@ -1,16 +1,3 @@
-# Advanced American Idioms 🇺🇸  | LIVE QUIZ LESSON
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cSVpsfA-pfQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cSVpsfA-pfQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:23:02 |
-
----
-
 everyone welcome to today's lesson
 
 uh my name is wes this is interactive

@@ -1,16 +1,3 @@
-# New English Expressions. Do you use them?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eMaq-xV56h0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eMaq-xV56h0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:25:45 |
-
----
-
 let's learn some new English Expressions that a lot of native speakers are using
 
 however some people say that they hate these new expressions and they find them annoying when people use them I will teach them to you and you can make your own decision if you want to use them I'll explain what they mean how they are used and why a lot of people don't like them okay let's get started I recently

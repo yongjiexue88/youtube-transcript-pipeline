@@ -1,16 +1,3 @@
-# DWI Arrest: Field Sobriety Tests! Do They Prove Anything? (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `t-5_nRtxNSo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=t-5_nRtxNSo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:54:37 |
-
----
-
 hello I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I'm going to talk about the topic DWI field sobriety tests do they really
 
 prove that you're intoxicated now if you wait around to the end of our video today I will also provide you a free guide The Ultimate Guide to DWI defense

@@ -1,16 +1,3 @@
-# Income Isn’t the Problem—Your Money Plan Is | April 9, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `QGS9WJ-cg9I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=QGS9WJ-cg9I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:37:19 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

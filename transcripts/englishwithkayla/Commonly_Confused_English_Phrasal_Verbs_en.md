@@ -1,16 +1,3 @@
-# Commonly Confused English Phrasal Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XnreoGDb4sE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XnreoGDb4sE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:37:34 |
-
----
-
 Have you ever used an English phrase just slightly incorrect and you look back at it and you think, "Oh, how awkward was that?" In today's English lesson, I'm going to teach you 10 phrasal verbs that are confusing because they are so similar with one another. In
 
 today's lesson, I'll help you master the meaning of these 10 phrasal verbs, and I'll show you how they can be differently used even though they're similar to another phrasal verb. If you have any questions about this lesson and you absolutely want to master this lesson with a study guide and a quiz, make sure to sign up for my membership.

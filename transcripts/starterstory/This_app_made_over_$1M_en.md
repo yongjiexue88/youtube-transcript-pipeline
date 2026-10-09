@@ -1,16 +1,3 @@
-# This app made over $1M
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VfNRd5Rk0cM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VfNRd5Rk0cM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:20:59 |
-
----
-
 I am the founder of Rooted. It's been downloaded over four million times and made over a million in revenue.
 
 >> Meet Anna. She built an iPhone app with no coding experience that's been downloaded over 4 million times.

@@ -1,16 +1,3 @@
-# Useful Technology Phrasal Verbs for Surfing the Internet
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xhN9jSMkNFs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xhN9jSMkNFs) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:45:51 |
-
----
-
 Today, I want to talk to you about some useful phrasal verbs that you may use every day
 
 That's coming up.

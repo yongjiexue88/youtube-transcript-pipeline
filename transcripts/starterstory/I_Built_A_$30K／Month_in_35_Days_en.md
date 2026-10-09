@@ -1,16 +1,3 @@
-# I Built A $30K/Month in 35 Days
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vbEKEWtnndU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vbEKEWtnndU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:10:06 |
-
----
-
 Most people spend years searching for a business idea. This college student found his in an afternoon and then made $50,000 in 7 weeks.
 
 >> I'm a college student who built an app called Pep AI. We launched just 7 weeks ago and we've already hit $50,000 in total revenue. >> The difference isn't luck. It's knowing where to look and that's exactly what this episode today is about.

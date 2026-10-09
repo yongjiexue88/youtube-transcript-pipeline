@@ -1,16 +1,3 @@
-# off the Brown Roswell Police Department
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `d37wuKLqy64` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=d37wuKLqy64) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 10:57:17 |
-
----
-
 off the Brown Roswell Police Department.
 
 You know how fast you were just going, ma'am? >> I'm so sorry. I'm late for work.

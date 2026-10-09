@@ -1,16 +1,3 @@
-# 8 Ways to Say "JOIN" | Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UM7Ro3L0LWA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UM7Ro3L0LWA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:29:48 |
-
----
-
 so today I want to teach you different
 
 ways that you can say join to join

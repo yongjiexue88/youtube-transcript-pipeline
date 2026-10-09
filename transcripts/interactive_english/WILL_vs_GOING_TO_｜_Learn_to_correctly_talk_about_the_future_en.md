@@ -1,16 +1,3 @@
-# WILL vs GOING TO | Learn to correctly talk about the future
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `En83TEmL5z0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=En83TEmL5z0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:19:01 |
-
----
-
 what will you do what are you gonna do are these questions the same or are they different let's find out
 
 hey everyone my name is wes this is

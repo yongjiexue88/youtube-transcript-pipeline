@@ -1,16 +1,3 @@
-# Top 10 Phrasal Verbs for Everyday Conversations
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bPOt3fn9Sto` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bPOt3fn9Sto) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:37:53 |
-
----
-
 If you're looking for an English lesson that you can actually use to upgrade your English pretty instantly, this is the right one. You clicked on the correct lesson because today's lesson is short, but it will teach you 10 of the most popular phrasal verbs that you can add to your vocabulary and start using right away. And you'll be able to remember these because these are pretty easy, but again, they'll advance your English. If you want to learn more about this list and study with me each week in my English community, make sure to visit englishwithkayla.com and check out my membership.
 
 Now, let's get started with these 10 phrasal verbs that will really upgrade your daily conversations. Bring up.

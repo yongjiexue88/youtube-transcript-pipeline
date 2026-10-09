@@ -1,16 +1,3 @@
-# Advanced Vocabulary and Fluency Practice from the Presidential Debate
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bg0y5QZK0VE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bg0y5QZK0VE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:28:52 |
-
----
-
 let's continue the series of advanced vocabulary from the news this is your chance to take your English to the next
 
 level you will also have a chance to practice pronunciation and the American accent I will read parts of the article and I will pause to give you a chance to repeat after me let's learn some Advanced English vocabulary from a recent article about the American presidential election do you you know the meaning of the verb to hurl and how about the noun enity and how about the phrasal verb to take someone on you know

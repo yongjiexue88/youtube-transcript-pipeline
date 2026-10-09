@@ -1,16 +1,3 @@
-# Why learn another language? | Natural Conversation + Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Tx_ra36YVps` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Tx_ra36YVps) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:20:11 |
-
----
-
 today we are going to put your listening skills to the test as well as teach you
 
 some new vocabulary [Music]

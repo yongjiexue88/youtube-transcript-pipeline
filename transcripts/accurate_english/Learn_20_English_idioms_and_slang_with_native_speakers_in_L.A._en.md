@@ -1,16 +1,3 @@
-# Learn 20 English idioms and slang with native speakers in L.A.
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `9aXclNomerU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=9aXclNomerU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:54:22 |
-
----
-
 in this video we will continue our series of listening to how native speakers talk you will hear conversations that I have with people in Los Angeles I will teach you 20 different idiomatic expressions common
 
 words slang words and some difficult words to pronounce I spoke to four different people we will analyze the different expressions they were using these expressions are everyday common

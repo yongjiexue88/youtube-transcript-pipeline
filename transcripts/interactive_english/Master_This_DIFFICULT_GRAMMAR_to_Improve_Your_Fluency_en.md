@@ -1,16 +1,3 @@
-# Master This DIFFICULT GRAMMAR to Improve Your Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WjSnivf7VII` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WjSnivf7VII) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:04:08 |
-
----
-
 Let's talk about some difficult English
 
 grammar. So, if you are someone who

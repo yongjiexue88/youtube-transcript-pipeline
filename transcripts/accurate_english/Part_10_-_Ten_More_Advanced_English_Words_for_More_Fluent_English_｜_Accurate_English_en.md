@@ -1,16 +1,3 @@
-# Part 10 - Ten More Advanced English Words for More Fluent English | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GDQSj-nanmY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GDQSj-nanmY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:03:53 |
-
----
-
 let's learn in 10 more advanced English words that native speakers of English use regularly and that you should too
 
 [Music]

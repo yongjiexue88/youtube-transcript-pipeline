@@ -1,16 +1,3 @@
-# Common Expressions to Sound More American  🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gorqc0RBOf8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gorqc0RBOf8) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:53:38 |
-
----
-
 Today, I am going to teach you some very American expressions that's coming up.
 
 What's up everyone? Welcome to interactive English, which is the place you want to be to practice and improve your English skills.

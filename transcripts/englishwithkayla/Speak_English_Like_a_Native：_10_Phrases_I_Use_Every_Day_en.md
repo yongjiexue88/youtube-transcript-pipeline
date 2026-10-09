@@ -1,16 +1,3 @@
-# Speak English Like a Native: 10 Phrases I Use Every Day
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6CmJiwkQbTo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6CmJiwkQbTo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:38:53 |
-
----
-
 If you are an intermediate or advanced English learner, it might be challenging for you to actually level up your English because you're either finding lessons that are too easy and they're teaching you the everyday phrases that you already know, or you just can't find the exact lesson that's going to teach you phrases that you can actually use in your everyday English. I have a solution for you. Today's video will teach you 10 phrases that native English speakers like myself actually use in their everyday conversations.
 
 Make sure to visit englishwithka.com to learn more about these phrases and join my membership. But for now, let's get started with this lesson. Here's a phrase that's going to help you be encouraging and positive in your English. And I guarantee you, you haven't used this phrase like this before. The phrase is, "There you go." I

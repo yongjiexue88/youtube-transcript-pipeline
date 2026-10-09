@@ -1,16 +1,3 @@
-# 5 Ways To Beat A Drug Possession Charge! A Former DA Breaks Down Your Drug Defense! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qeQsGN6ehkQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qeQsGN6ehkQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:00:41 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I want to cover five strategies to help you beat your Texas drug possession charge and we're going to jump right into this but if you wait around to the end of this video I'm also going to give you a free ebook how to beat a drug charge in Texas all right
 
 now let's jump right into this what are our strategies if maybe you're facing a Texas drug possession charge and you're trying to figure out how to go about this you know one of the questions that's brought up to me all the time is people say well Jee I don't get it the rest of the country seems to be moving forward with legalization especially as it relates to marijuana and what about

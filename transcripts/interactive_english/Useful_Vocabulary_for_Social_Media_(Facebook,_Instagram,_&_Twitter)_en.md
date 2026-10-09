@@ -1,16 +1,3 @@
-# Useful Vocabulary for Social Media (Facebook, Instagram, & Twitter)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Kt5xBs3Banc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Kt5xBs3Banc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:23:25 |
-
----
-
 if you use social media I want to teach
 
 you some very useful words to know hey

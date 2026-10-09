@@ -1,16 +1,3 @@
-# How I Used Reddit to Build a $34K/Month SaaS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pvjalHFNM9Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pvjalHFNM9Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:14:05 |
-
----
-
 This is by far the best channel to get users on your products.
 
 >> Meet Roman, [music] a guy who launched his SAS just six months ago and already surpassed $30,000 MR.

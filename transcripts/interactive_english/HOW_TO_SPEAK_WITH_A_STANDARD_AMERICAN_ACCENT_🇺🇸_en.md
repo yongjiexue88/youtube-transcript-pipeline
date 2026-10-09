@@ -1,16 +1,3 @@
-# HOW TO SPEAK WITH A STANDARD AMERICAN ACCENT 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `FMWnR5ubIb4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=FMWnR5ubIb4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:54:54 |
-
----
-
 let's talk about the American accent but
 
 in this lesson we're going to talk about the standard American accent and I

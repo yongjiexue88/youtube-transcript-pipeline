@@ -1,16 +1,3 @@
-# Advanced English Expressions with a Native Speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wGsJEBOptNU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wGsJEBOptNU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:46:15 |
-
----
-
 hi i'm lisa let's continue our series of
 
 listening to native speakers in los angeles talking about their jobs we will analyze the expressions they're using i will teach you the meaning of those expressions and i will give you sample sentences so that you can practice using them in different contexts that's the true path to fluency being able to use the expressions that native speakers use in addition we will talk about some rules of english pronunciation and the american accent [Music]

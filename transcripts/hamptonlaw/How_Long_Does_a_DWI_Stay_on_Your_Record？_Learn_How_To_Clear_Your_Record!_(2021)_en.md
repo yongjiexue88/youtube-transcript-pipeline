@@ -1,16 +1,3 @@
-# How Long Does a DWI Stay on Your Record? Learn How To Clear Your Record! (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zEHdhYAtFVQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zEHdhYAtFVQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:10:47 |
-
----
-
 hello I'm Jeff Hampton with the Hampton Law Firm Welcome to our YouTube channel today I'm going to cover a subject that I get asked all the time Jeff how do I
 
 get my DWI case off my record now today

@@ -1,16 +1,3 @@
-# LAWYER: 10 Tricks Cops Use to Justify Illegal Arrests
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BwyvhQZX2TI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BwyvhQZX2TI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:25:38 |
-
----
-
 what would you do if the police suddenly walked up to your front door or your car window could one wrong move turn a simple encounter into a life-altering disaster what should you do or more importantly not do to protect yourself from being arrested by overzealous officers who have already decided that you have done something wrong I'm Jeff Hampton a former prosecutor turned the people's lawyer and if you're like me
 
 you take your rights and preserving those rights very seriously when police arrive unexpectedly how you choose to respond could make all the difference between walking away or spending the night in jail in this video I'm covering 10 things not to do if Cops show up so

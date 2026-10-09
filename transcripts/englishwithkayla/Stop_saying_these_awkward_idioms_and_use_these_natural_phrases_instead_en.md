@@ -1,16 +1,3 @@
-# Stop saying these awkward idioms and use these natural phrases instead
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DkaPGb-5vSc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DkaPGb-5vSc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:01:39 |
-
----
-
 do you ever worry about sounding awkward
 
 or confused in an english conversation

@@ -1,16 +1,3 @@
-# DON'T call people or things beautiful
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `kqTJoqJxLKU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=kqTJoqJxLKU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:48:37 |
-
----
-
 instead of saying beautiful i'm going to
 
 give you some really great alternative

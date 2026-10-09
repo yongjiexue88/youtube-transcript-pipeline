@@ -1,16 +1,3 @@
-# Advanced Vocabulary with a Native Speaker (part 3 with psychologist)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `j9gIk9g5dyM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=j9gIk9g5dyM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:43:40 |
-
----
-
 hello my advanced learners of english i'm lisa i have another video for you
 
 which will help you expand your english vocabulary and the usage of common english expressions so that you can go from advanced to truly fluent we will analyze another conversation that i had with a native speaker in los angeles a professional who used a lot of wonderful vocabulary and expressions that i want to make sure you can use as well

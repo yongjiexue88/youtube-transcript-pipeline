@@ -1,16 +1,3 @@
-# The most common question in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PPClkpfQNUM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PPClkpfQNUM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:44:47 |
-
----
-
 do not just say that the weather is nice
 
 or the weather is fine when someone asks

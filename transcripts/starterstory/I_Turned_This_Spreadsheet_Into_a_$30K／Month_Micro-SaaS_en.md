@@ -1,16 +1,3 @@
-# I Turned This Spreadsheet Into a $30K/Month Micro-SaaS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `d8PdJJcEtE0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=d8PdJJcEtE0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-26 14:01:34 |
-
----
-
 I built a marketing automation app for Shopify, which has made a total of $147,000 since launch. >> This is Jack. He spent a lot of time building spreadsheets [music] for clients until one day he thought, "What if I just turn this spreadsheet into an app?" Well, that's exactly what he did and just a few months later this spreadsheet turned app [music] makes him $30,000 per month. What's even crazier is that he wasn't technical.
 
 He built the whole thing with AI without knowing [music] how to code at all.

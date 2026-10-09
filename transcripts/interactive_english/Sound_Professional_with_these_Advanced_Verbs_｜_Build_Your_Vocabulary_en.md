@@ -1,16 +1,3 @@
-# Sound Professional with these Advanced Verbs | Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LqqE6g0r2ew` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LqqE6g0r2ew) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:14:49 |
-
----
-
 today I want to teach you verbs to help
 
 you sound more professional and I'm

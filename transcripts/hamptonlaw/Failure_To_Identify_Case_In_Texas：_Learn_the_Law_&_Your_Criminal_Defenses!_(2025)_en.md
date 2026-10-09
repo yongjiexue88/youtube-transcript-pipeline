@@ -1,16 +1,3 @@
-# Failure To Identify Case In Texas: Learn the Law & Your Criminal Defenses! (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `05EcK3k7Q0Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=05EcK3k7Q0Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 15:59:24 |
-
----
-
 were you arrested for a failed to ID charge maybe you got scared and you were afraid to tell the officer your real name maybe you had an active warrant now you find yourself facing a more serious
 
 charge hi I'm Jeff Hampton with the Hampton Law Firm today I want to talk about how to beat a fail to ID case

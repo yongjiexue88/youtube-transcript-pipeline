@@ -1,16 +1,3 @@
-# The $10M AI SaaS Playbook
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KcCnqLBhvXY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KcCnqLBhvXY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:25:55 |
-
----
-
 this is David Park and he built an AI
 
 app to $10 million a year in 2 years how

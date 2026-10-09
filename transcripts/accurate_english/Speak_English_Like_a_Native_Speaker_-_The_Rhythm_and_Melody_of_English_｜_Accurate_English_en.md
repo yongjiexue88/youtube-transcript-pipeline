@@ -1,16 +1,3 @@
-# Speak English Like a Native Speaker - The Rhythm and Melody of English | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pba8NBGSIGw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pba8NBGSIGw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:11:11 |
-
----
-
 Let's learn a few more very important rules about word stress, which is the rhythm and melody of English. Let's look at these two examples and we'll see how they are different and how this is so very important in order for you to sound more like a native speaker. New phone. New is an adjective.
 
 Phone is a noun. Look at this. We have a staircase. We go up on the word phone and we say it like this. New phone. I have a new phone. But look at the second

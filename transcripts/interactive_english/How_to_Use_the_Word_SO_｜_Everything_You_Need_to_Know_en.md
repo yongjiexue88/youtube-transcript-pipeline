@@ -1,16 +1,3 @@
-# How to Use the Word SO | Everything You Need to Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cZOn7dPtXu8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cZOn7dPtXu8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:38:13 |
-
----
-
 All right, what's up everyone? Thank you
 
 so much for joining me. My name is Wes.

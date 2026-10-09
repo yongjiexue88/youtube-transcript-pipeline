@@ -1,16 +1,3 @@
-# 4 INTERESTING English idioms about patience #shorts #learnenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `y5LqZd7Hz3k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=y5LqZd7Hz3k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:20:33 |
-
----
-
 or english phrases that you can tell someone when you need them to wait or be patient you can say patience is a virtue which
 
 means patience is a good quality to have

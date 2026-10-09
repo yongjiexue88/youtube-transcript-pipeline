@@ -1,16 +1,3 @@
-# Advanced Vocabulary and Pronunciation Practice from with the Newspaper
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qHVHkk8VB1o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qHVHkk8VB1o) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:36:07 |
-
----
-
 hi I'm Lisa do you know the meanings of
 
 the English verbs to flounder or to

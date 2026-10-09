@@ -1,16 +1,3 @@
-# Big Paychecks Won’t Fix Dumb Financial Decisions | October 29, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GOBsOCfcyUE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GOBsOCfcyUE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:01:08 |
-
----
-
 [Music] Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

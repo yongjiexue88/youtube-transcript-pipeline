@@ -1,16 +1,3 @@
-# 为什么你的头会秃成M、C、U型？拿什么拯救你的发际线？Why is your head bald into M, C, U shape? How can you save your hairline?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Iz2Y5mtOMQU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Iz2Y5mtOMQU) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:59:24 |
-
----
-
 来 朋友请撩起你的秀发
 
 虽然这么做有点秃然但如果你的发际线长得像字母 M C 或者 U 那你大概率是脱发了

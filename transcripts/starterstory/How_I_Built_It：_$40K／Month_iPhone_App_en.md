@@ -1,16 +1,3 @@
-# How I Built It: $40K/Month iPhone App
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `loXc0Tyi4R4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=loXc0Tyi4R4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:28:02 |
-
----
-
 so my mobile app puff count is currently doing $40,000 per month in recurring
 
 Revenue I honestly don't think you need any experience to build mobile apps because to be H like I didn't have any how did this guy build a $40,000 per month mobile app with no coding experience well it's all because of his unconventional approach to shipping marketing really is 95% of the success

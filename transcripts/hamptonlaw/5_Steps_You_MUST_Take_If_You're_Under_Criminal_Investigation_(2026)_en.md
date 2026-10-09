@@ -1,16 +1,3 @@
-# 5 Steps You MUST Take If You're Under Criminal Investigation (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BBa2IKpKfvU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BBa2IKpKfvU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:51:15 |
-
----
-
 did you receive a phone call from a detective did a detective show up at your house are they wanting you to answer questions about a criminal
 
 investigation hi I'm Jeff Hampton with the Hampton Law Firm today I want to talk to you about five steps you must take if you are under criminal investigation by the way if you wait around to the end of the video I'll give you a free ebook what to do if you have been charged with a crime in Texas so let's jump into this I I let's say

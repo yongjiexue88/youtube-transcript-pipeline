@@ -1,16 +1,3 @@
-# VERB TENSE QUIZ 📝  | Advanced Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Lp01IpEZlL4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Lp01IpEZlL4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:21:48 |
-
----
-
 hey everyone welcome to today's lesson
 
 my name is wes and this is interactive

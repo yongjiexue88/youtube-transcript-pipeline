@@ -1,16 +1,3 @@
-# 血型是如何分类的？除了ABO还有35类血型 How is the blood type classified?ABO and more【柴知道】【科普Science】【冷知识Trivia】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pRKhT5AZy20` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pRKhT5AZy20) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 14:19:23 |
-
----
-
 In 1900 An Austrian biologist, Karl Landsteiner Mixed 22 Vials of blood samples taken from his colleagues.
 
 Through observation, Landsteiner discovered mankind has different blood types.

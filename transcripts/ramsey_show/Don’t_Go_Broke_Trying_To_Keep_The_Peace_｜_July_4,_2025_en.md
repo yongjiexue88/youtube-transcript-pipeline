@@ -1,16 +1,3 @@
-# Don’t Go Broke Trying To Keep The Peace | July 4, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Hr5-HwZEM0I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Hr5-HwZEM0I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:14:06 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

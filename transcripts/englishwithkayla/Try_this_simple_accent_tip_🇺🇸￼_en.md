@@ -1,16 +1,3 @@
-# Try this simple accent tip 🇺🇸￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `LgR5kclK6yo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=LgR5kclK6yo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:51:31 |
-
----
-
 going to teach you this simple trick to
 
 help you with your american accent i was

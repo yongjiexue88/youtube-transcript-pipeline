@@ -1,16 +1,3 @@
-# Speak English Smoothly: Rhythm, Flow & Fast Speech Tricks 🇺🇸
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZtxEU_FtuBM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZtxEU_FtuBM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:00:20 |
-
----
-
 going to work on your rhythm and flow to develop a a smoother way of speaking.
 
 And we're really going to combine this with fast speech as well. And when I say fast speech, I'm I'm really talking about using connected speech. So, there

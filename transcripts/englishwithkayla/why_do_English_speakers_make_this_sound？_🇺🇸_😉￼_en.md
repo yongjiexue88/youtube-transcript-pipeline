@@ -1,16 +1,3 @@
-# why do English speakers make this sound? 🇺🇸 😉￼
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `4QVPcOvERto` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=4QVPcOvERto) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:56:15 |
-
----
-
 this next phrase is near and dear to my heart because i use
 
 this word okay the word is

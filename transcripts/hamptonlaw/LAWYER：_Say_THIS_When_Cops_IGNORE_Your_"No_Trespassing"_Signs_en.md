@@ -1,16 +1,3 @@
-# LAWYER: Say THIS When Cops IGNORE Your "No Trespassing" Signs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EfLNtMRnTb0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EfLNtMRnTb0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:25:25 |
-
----
-
 you are in your own backyard a place you consider private and protected but suddenly police show up looking for someone else and they decide to break down your gate is this legal and if you have no trespassing signs up all over the place does this do anything to stop the cops in this video we're breaking down what the law says about how you can protect your yard from unexpected visits from
 
 the cops you'll learn when cops can legally enter your property without a warrant and more importantly what you can do to stop cops from entering your property with those no trespassing signs because without the right precautions and your knowledge of the law you could be left unprotected and that could cost you dearly with the police so we all know that the United States Constitution the fourth amendment is designed to protect us from unreasonable searches

@@ -1,16 +1,3 @@
-# Speak Like a Native 💬 Powerful Vocabulary You MUST Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VRvh8G3ftfY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VRvh8G3ftfY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 09:59:57 |
-
----
-
 I want to teach you some powerful
 
 vocabulary that I think you must know.

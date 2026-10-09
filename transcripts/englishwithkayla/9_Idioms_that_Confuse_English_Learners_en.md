@@ -1,16 +1,3 @@
-# 9 Idioms that Confuse English Learners
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ipDxpT87gmw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ipDxpT87gmw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:37:45 |
-
----
-
 Today's lesson is going to be a tricky one because we're going over the idioms
 
 and phrases that really trip up

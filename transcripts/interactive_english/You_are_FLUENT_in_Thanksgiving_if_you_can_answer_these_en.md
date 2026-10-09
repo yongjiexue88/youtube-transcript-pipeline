@@ -1,16 +1,3 @@
-# You are FLUENT in Thanksgiving if you can answer these
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hm-V4XZQB_A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hm-V4XZQB_A) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:08:50 |
-
----
-
 You are fluent in Thanksgiving if you
 
 can answer these questions. So, I have a

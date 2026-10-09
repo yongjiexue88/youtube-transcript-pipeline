@@ -1,16 +1,3 @@
-# Compilation 161 Advanced English Phrasal Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oU5t9txn3PU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oU5t9txn3PU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:43:30 |
-
----
-
 to take in if you take in something it
 
 means that you're understanding it you're kind of processing it in your mind if somebody gives you some shocking information something very surprising or very tragic you might need a few extra

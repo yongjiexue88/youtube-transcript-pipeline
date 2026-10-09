@@ -1,16 +1,3 @@
-# The day I hit reset on my life
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xZDofUHbZHA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xZDofUHbZHA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:27:29 |
-
----
-
 what if I just went for
 
 it this was the question I asked myself one summer for probably the 39th time it

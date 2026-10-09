@@ -1,16 +1,3 @@
-# These words will surprise you
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `cfizbvadMvw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=cfizbvadMvw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:45:27 |
-
----
-
 four common nouns that are used as verbs
 
 in English that you absolutely need to

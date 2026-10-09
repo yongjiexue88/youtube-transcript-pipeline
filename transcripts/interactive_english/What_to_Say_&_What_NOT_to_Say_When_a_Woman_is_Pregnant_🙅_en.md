@@ -1,16 +1,3 @@
-# What to Say & What NOT to Say When a Woman is Pregnant 🙅
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `RxBDs31Nni8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=RxBDs31Nni8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:40:21 |
-
----
-
 hello and welcome this is Wes anyone pro
 
 interactive English hi

@@ -1,16 +1,3 @@
-# How Americans talk about money
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fcm5MZA5bAo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fcm5MZA5bAo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:46:27 |
-
----
-
 textbook English versus natural English
 
 money phrases

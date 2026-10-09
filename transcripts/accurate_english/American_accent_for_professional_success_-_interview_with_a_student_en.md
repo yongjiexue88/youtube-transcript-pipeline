@@ -1,16 +1,3 @@
-# American accent for professional success - interview with a student
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `-4pTM-NCQpw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=-4pTM-NCQpw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:09:07 |
-
----
-
 in this video we will talk about having
 
 success in the United States professionally if you come to work in

@@ -1,16 +1,3 @@
-# 35 Essential Vocabulary Words for Flying  ✈️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NcwJMB71_nY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NcwJMB71_nY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:31:56 |
-
----
-
 let's pack your bags and head to the airport because today I want to talk to
 
 you about words all related to flying

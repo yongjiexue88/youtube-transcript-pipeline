@@ -1,16 +1,3 @@
-# 10 Dessert Idioms (YUM!) to Help Improve Your Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `l8lHxnn7k-Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=l8lHxnn7k-Q) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:49:59 |
-
----
-
 Today we're talking about 10 Desert Idioms.
 
 Today were talking about desert idioms.

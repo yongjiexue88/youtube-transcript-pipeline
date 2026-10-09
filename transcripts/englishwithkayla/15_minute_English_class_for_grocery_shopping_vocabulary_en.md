@@ -1,16 +1,3 @@
-# 15 minute English class for grocery shopping vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pF1J5pnLo1I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pF1J5pnLo1I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:55:12 |
-
----
-
 this video will guide you to all of the
 
 vocabulary cultural knowledge and

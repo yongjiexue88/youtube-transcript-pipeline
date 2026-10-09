@@ -1,16 +1,3 @@
-# The Ramsey Show (REPLAY from March 11, 2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Qq8C8kusQiI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Qq8C8kusQiI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:29:43 |
-
----
-
 this is the ramsay show [Music] you can be intentional about your character you can have money and a career you are the hero in your story
 
 live from the headquarters of ramsey solutions broadcasting from the dollar car rental studio this is the ramsey show where america hangs out to have a conversation about your life and your money i'm john deloney joined

@@ -1,16 +1,3 @@
-# Useful Phrases to Express Your Opinion | Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BcWHKyNhhK4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BcWHKyNhhK4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:03:05 |
-
----
-
 let's talk about some very useful phrases that you can use when you want
 
 to share your opinion and i i think this

@@ -1,16 +1,3 @@
-# 20 advanced English verbs with examples
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5N31xBXehVs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5N31xBXehVs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:58:16 |
-
----
-
 they say that the secret to speaking
 
 fluid English is to expose yourself to

@@ -1,16 +1,3 @@
-# 5 Useful Phrasal Verbs with CHECK to Improve Your English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VKRc0QP9uJM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VKRc0QP9uJM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:48:22 |
-
----
-
 hello hello hello hope you're having a
 
 great day wherever you are in the world

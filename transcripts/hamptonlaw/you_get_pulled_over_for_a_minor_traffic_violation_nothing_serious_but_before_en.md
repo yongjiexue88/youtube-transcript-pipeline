@@ -1,16 +1,3 @@
-# you get pulled over for a minor traffic violation nothing serious but before
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `SLQIz928frw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=SLQIz928frw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:26:21 |
-
----
-
 you get pulled over for a minor traffic violation nothing serious but before you know it cops are detaining you and claiming they have a right to search your car then they start digging through your luggage and your personal belongings all under the excuse of an inventory search is this legal or is
 
 this just another loophole cops exploit to search your car without a warrant I'm Jeff Hampton former prosecutor turned the people's lawyer and in today's video I'm exposing how cops twist the law in order to justify inventory searches and more importantly what you can do to stop them let's get into it first of all what is an inventory search the Supreme Court nearly 50 years ago legitimized this inventory search in

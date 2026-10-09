@@ -1,16 +1,3 @@
-# Have you heard of this new English word? #shorts #englishvocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `H-4pfSITEBk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=H-4pfSITEBk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:19:36 |
-
----
-
 news alert dictionary.com just added
 
 hundreds of new english words to their website language

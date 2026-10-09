@@ -1,16 +1,3 @@
-# 15 Useful Words to Say You're HAPPY 😃
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `2gmp9_UnasA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=2gmp9_UnasA) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:49:22 |
-
----
-
 Ioana singing: If you're happy and you know it clap your hands"
 
 How are you today? Are you happy? Maybe so-so?

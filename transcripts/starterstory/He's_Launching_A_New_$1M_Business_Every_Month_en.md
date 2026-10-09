@@ -1,16 +1,3 @@
-# He's Launching A New $1M Business Every Month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `wqN-gjnpns8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=wqN-gjnpns8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:33:04 |
-
----
-
 this is Hunter hammett's he's launched four million dollar businesses in the last four months all of them productized services that use essentially the same strategy I flew out to Chicago to meet him and he broke down each of his businesses as well as the method he's using to launch a million dollar business every 30 days really what we're doing at the end of the day is just talking to our friends
 
 and seeing if it makes sense for us to build a business together but Hunter's journey is not some lucky overnight success story he started and failed multiple businesses over the last 15 years just decided like it's time to take a break and burned out now Hunter's goal is to build 12 million dollar businesses in 12 months and then turn those businesses into a cash flowing machine so

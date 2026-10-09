@@ -1,16 +1,3 @@
-# Conditional Dismissals: Learn How To Get Your Criminal Case Dismissed (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `X0RyYBKZdwk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=X0RyYBKZdwk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 21:02:10 |
-
----
-
 hey everybody Welcome to the Hampton Law Firm I wanted to take a couple of minutes here to do to explain a way to get a case a criminal case dismissed in Texas and that is the conditional dismissal now I want to remind you if you would uh like to get some more uh criminal defense um content videos
 
 information from us I want to encourage you to subscribe to our YouTube channel uh we have more great videos that cover all types of topics related to criminal defense but today I want to talk to you about the process of how to negotiate a conditional conditional dismissal and how it can affect your ability to get this to get a case off of your criminal record so one of

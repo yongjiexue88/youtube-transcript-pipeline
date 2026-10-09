@@ -1,16 +1,3 @@
-# LAWYER: Secret Programs to Get Your Criminal Case Dismissed in Texas
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Hz_lUnPfaEQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Hz_lUnPfaEQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 21:03:21 |
-
----
-
 good afternoon everyone I wanted to take a couple of minutes here to uh talk to you about a brand new way to get your criminal case dismissed now I want to encourage you to subscribe to our YouTube channel um we have some uh plenty of content for you to look at for criminal laws in Texas so I encourage you to do that free information for you there now in
 
 this video I'm going to talk to you for a few minutes about the ins and outs of a brand new program right off the press literally a brand new program that starting up here in November 2020 as a way to get a criminal

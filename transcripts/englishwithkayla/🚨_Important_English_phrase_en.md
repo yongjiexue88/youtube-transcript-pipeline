@@ -1,16 +1,3 @@
-# 🚨 Important English phrase
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nvPm-AmRouM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nvPm-AmRouM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:27:40 |
-
----
-
 listen up because I'm sure that you can
 
 use this English phrase in your English

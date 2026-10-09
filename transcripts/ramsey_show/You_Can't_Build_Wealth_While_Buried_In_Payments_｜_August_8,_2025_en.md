@@ -1,16 +1,3 @@
-# You Can't Build Wealth While Buried In Payments | August 8, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `PoM6Mc0boiQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=PoM6Mc0boiQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:13:05 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

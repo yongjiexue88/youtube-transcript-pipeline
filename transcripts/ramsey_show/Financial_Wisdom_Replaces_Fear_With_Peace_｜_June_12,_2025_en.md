@@ -1,16 +1,3 @@
-# Financial Wisdom Replaces Fear With Peace | June 12, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ppulW-nQN1Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ppulW-nQN1Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:14:29 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

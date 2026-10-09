@@ -1,16 +1,3 @@
-# Valentine's Day 💖 | Discussion of Useful Words & Phrases
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DssEqFZ6IVc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DssEqFZ6IVc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:46:05 |
-
----
-
 hello hello hello welcome to our
 
 beautiful lesson this the Saturday I

@@ -1,16 +1,3 @@
-# I Built Two Apps That Make $120K/Month
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `xWnqY2Mav4s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=xWnqY2Mav4s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:09:38 |
-
----
-
 Everyone wants to find the perfect app idea. So, you spend hours researching and scrolling YouTube for inspiration only to come out of the other side with nothing. But, what if I told you there was a better way? Meet Kyle. He finds his app ideas hiding in plain sight, and today those apps make over $120,000
 
 a month. He doesn't chase trends or shiny objects. He just looks at his own hobbies, his own personal problems, and builds stuff for himself. I think this method is so cool that I asked Kyle to come onto the channel to break down exactly how he does it.

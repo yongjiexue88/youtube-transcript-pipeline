@@ -1,16 +1,3 @@
-# Learn 60 Useful Phrases for Advanced English Speaking
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZCo-2Zz2PR8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZCo-2Zz2PR8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:49:00 |
-
----
-
 he didn't really want to talk to me he wasn't being very nice and I think that
 
 he's mad he gave me the cold shoulder

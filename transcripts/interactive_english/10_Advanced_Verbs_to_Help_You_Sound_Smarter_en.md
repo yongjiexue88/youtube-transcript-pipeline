@@ -1,16 +1,3 @@
-# 10 Advanced Verbs to Help You Sound Smarter
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bw6OPajGFRg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bw6OPajGFRg) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:28:11 |
-
----
-
 - Today I am going to talk to you about some advanced verbs to help you sound smarter.
 
 That's coming up.

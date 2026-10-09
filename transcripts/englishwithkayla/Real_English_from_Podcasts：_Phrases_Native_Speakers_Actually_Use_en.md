@@ -1,16 +1,3 @@
-# Real English from Podcasts: Phrases Native Speakers Actually Use
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CkOIqrLI7gQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CkOIqrLI7gQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:32:11 |
-
----
-
 Do you like podcasts? Podcasts are a great way to learn English and in today's episode I'm going to break down some clips from a wildly entertaining podcast called Financial Audit. The host
 
 is on YouTube. His name is Caleb Hammer.

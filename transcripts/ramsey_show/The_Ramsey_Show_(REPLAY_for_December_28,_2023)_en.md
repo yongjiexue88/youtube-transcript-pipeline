@@ -1,16 +1,3 @@
-# The Ramsey Show (REPLAY for December 28, 2023)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sRPuhPMKE5I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sRPuhPMKE5I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:20:01 |
-
----
-
 [Music]
 
 live from the headquarters of ramsy solutions it is the ramsy show where we help people build wealth do work that they love and create actual amazing

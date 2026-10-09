@@ -1,16 +1,3 @@
-# Vocabulary About the Economy | Read and Put New Words In Context
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WQ1eb-GpEbA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WQ1eb-GpEbA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:27:27 |
-
----
-
 hey everyone welcome to today's lesson
 
 my name is Wes and this is Interactive English in case this is your first time here the channel it's all about just helping you practice and improve your English and if this is your first time here please let me know write your name tell me where you're from write that in the comments because I'd love hearing from everybody especially new people to the channel so today's lesson it's it's about helping you build

@@ -1,16 +1,3 @@
-# I heard this is confusing 🤨
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `I-cKylicQ2E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=I-cKylicQ2E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:33:54 |
-
----
-
 here's the reason why Americans say in
 
 one hour instead of after one hour

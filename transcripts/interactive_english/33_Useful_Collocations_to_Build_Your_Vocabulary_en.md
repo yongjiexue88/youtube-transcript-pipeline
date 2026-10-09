@@ -1,16 +1,3 @@
-# 33 Useful Collocations to Build Your Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `V2TFJNuuSek` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=V2TFJNuuSek) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 08:47:27 |
-
----
-
 I want to start out today's lesson with a question.
 
 How would you complete this sentence? What?

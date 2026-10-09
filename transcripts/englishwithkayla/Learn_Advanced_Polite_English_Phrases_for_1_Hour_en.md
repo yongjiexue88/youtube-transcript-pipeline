@@ -1,16 +1,3 @@
-# Learn Advanced Polite English Phrases for 1 Hour
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `WHV8xmpWqw0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=WHV8xmpWqw0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:41:13 |
-
----
-
 do you worry sometimes when you're speaking English that you are not sounding as polite as you would like to
 
 be in today's lesson I'll teach you 30

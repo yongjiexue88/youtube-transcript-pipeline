@@ -1,16 +1,3 @@
-# 4 Tips for Clear Communication with a Foreign Accent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Zhjs4SWH1bs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Zhjs4SWH1bs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:36:33 |
-
----
-
 hi I'm Lisa in this video I will be
 
 sharing four useful tips that will quickly improve your accent these tips will help you sound more clear and more confident and more natural when you're speaking English [Music]

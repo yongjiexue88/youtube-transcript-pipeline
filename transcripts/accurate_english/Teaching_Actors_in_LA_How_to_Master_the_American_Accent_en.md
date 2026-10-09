@@ -1,16 +1,3 @@
-# Teaching Actors in LA How to Master the American Accent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `puVXL4pRoGw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=puVXL4pRoGw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:40:17 |
-
----
-
 hi i'm lisa do you want to truly master
 
 the american accent i will show you some techniques that i use when working with actors in hollywood [Music]

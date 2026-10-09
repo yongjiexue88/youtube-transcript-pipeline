@@ -1,16 +1,3 @@
-# 20 Ways Native Speakers Use the Word "Deal" - Common English Expressions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `iWSJUzLnJT4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=iWSJUzLnJT4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:55:43 |
-
----
-
 in order for you to have the language skills of a native speaker of English I recommend that you keep expanding your knowledge of idioms and common English expressions in this video I will teach you 20 different ways that native speakers of English use the word deal to
 
 mean many different things some of these expressions are commonly used in business situations but many of them are also used for other everyday situations let's get started the first expression

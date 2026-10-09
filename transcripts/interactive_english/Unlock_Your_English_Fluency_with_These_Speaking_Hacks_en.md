@@ -1,16 +1,3 @@
-# Unlock Your English Fluency with These Speaking Hacks
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `hxcbXoxLWrs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=hxcbXoxLWrs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:58:42 |
-
----
-
 I have some useful speaking hacks to
 
 help you dramatically improve your

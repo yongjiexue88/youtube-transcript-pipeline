@@ -1,16 +1,3 @@
-# Here's some vocabulary help
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `UE5KuMH-4uQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=UE5KuMH-4uQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:30:27 |
-
----
-
 hey Kayla what's a word that describes
 
 someone who really really wants to succeed or achieve a large goal I would

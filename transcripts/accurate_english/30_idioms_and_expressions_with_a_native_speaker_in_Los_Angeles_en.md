@@ -1,16 +1,3 @@
-# 30 idioms and expressions with a native speaker in Los Angeles
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6M8iGCBzRJE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6M8iGCBzRJE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:50:25 |
-
----
-
 hi I'm Lisa let's bring real life into
 
 the English learning experience in this video we will continue our series of listening to native speakers in Los Angeles you will listen to a conversation that I had with the native speaker we will analyze all the different expressions that the native speaker was using in addition I will give you other example sentences so that

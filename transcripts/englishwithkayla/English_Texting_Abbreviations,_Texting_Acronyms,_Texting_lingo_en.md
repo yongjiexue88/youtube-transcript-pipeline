@@ -1,16 +1,3 @@
-# English Texting Abbreviations, Texting Acronyms, Texting lingo
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0HXqQ7I0Sgo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0HXqQ7I0Sgo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:57:31 |
-
----
-
 hi guys welcome to today's English lesson I'm going to teach you the best phrases that you can use and your
 
 English text messages that are either

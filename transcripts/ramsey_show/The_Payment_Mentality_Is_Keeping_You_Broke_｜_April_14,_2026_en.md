@@ -1,16 +1,3 @@
-# The Payment Mentality Is Keeping You Broke | April 14, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `oILysjGKjQ4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=oILysjGKjQ4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:36:46 |
-
----
-
 [music] >> Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

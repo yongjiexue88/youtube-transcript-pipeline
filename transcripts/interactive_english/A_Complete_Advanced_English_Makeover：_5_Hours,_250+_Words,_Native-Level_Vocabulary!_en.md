@@ -1,16 +1,3 @@
-# A Complete Advanced English Makeover: 5 Hours, 250+ Words, Native-Level Vocabulary!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3JjJpXrhI50` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3JjJpXrhI50) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:39:32 |
-
----
-
 I am getting ready to share with you the best, the most detailed and amazing vocabulary lesson that is going to help you get a step closer to reaching your fluency goals. And if you are someone who enjoys building your vocabulary, please subscribe, turn on notifications.
 
 That way, I can become your teacher. My name is Wes. The channel is Interactive English. It's all about helping you reach your fluency goals. So, this lesson has it all. I've put the lesson together in five 1-hour blocks, and I

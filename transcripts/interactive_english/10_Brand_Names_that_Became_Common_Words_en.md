@@ -1,16 +1,3 @@
-# 10 Brand Names that Became Common Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `htZcevWhaqw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=htZcevWhaqw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:16:03 |
-
----
-
 let's talk about all of these things
 
 that you see around me right now and

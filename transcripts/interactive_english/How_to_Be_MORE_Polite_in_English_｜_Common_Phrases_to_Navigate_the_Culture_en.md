@@ -1,16 +1,3 @@
-# How to Be MORE Polite in English | Common Phrases to Navigate the Culture
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Fv9SXfCJO4k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Fv9SXfCJO4k) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:48:49 |
-
----
-
 Today were going to teach you about how to be more polite when speaking in English.
 
 Hi, and welcome to our global classroom.

@@ -1,16 +1,3 @@
-# English pronunciation for Portuguese speakers | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Dwbhhihk_bc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Dwbhhihk_bc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:08:03 |
-
----
-
 in this video we will talk about fixing the most common mistakes the Portuguese speakers of English make and today I
 
 have Roberto here Roberto is from Brazil

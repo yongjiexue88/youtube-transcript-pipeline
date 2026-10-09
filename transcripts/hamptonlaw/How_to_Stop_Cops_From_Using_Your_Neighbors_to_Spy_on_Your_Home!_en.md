@@ -1,16 +1,3 @@
-# How to Stop Cops From Using Your Neighbors to Spy on Your Home!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `q0YYIzH0Im4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=q0YYIzH0Im4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:27:08 |
-
----
-
 geot tracking cameras on every corner and social media surveillance it's no secret that technology is invading our privacy but here's the shocking part it's not just the government spying on you your neighbors might be helping them too as a former prosecutor turned the people's lawyer I'm diving into how the police use your neighbors to spy on your home legally and without a warrant you
 
 think your home is your Sanctuary protected by the Fourth Amendment right but as the case of Borg versus town of Westport showed it doesn't always play out the way we think it should imagine finding out that the police were using your neighbors cameras their home Securities cameras to conduct 13 weeks

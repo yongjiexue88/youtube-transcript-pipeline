@@ -1,16 +1,3 @@
-# Sound Smarter in English: Strong Verbs You Should Be Using
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `jBfTqiInSKY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=jBfTqiInSKY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:38:44 |
-
----
-
 Today's lesson will teach you 15 advanced English verbs and these are not the overused, boring, simple English
 
 verbs that you would learn in a textbook. These verbs are very powerful and they will help you either replace a boring old verb or just upgrade your English so you can sound more intelligent while you're speaking. Use these strong verbs in your daily conversations or in presentations or in writing. And I promise you, people will notice how smart you sound while you're speaking English.

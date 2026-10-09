@@ -1,16 +1,3 @@
-# For Professional English Use These Words Instead
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `I-NrY1UlvwM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=I-NrY1UlvwM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:23:09 |
-
----
-
 Hi, I'm Lisa. Is your speech too casual
 
 for a professional setting? I sometimes

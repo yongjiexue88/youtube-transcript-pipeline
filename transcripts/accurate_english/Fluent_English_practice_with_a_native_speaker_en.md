@@ -1,16 +1,3 @@
-# Fluent English practice with a native speaker
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HKINjHogyxo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HKINjHogyxo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:27:53 |
-
----
-
 how can we recognize a native speaker versus a non-native speaker besides their accent native speakers use a lot
 
 of expressions and phrasal verbs and idioms let's listen to this native speaker outside of that everybody yeah everybody kind of jumped at it like really went out of their way to make it work too like he said outside of that everybody kind of jumped at it like really went out of their way to make it work he used three different expressions

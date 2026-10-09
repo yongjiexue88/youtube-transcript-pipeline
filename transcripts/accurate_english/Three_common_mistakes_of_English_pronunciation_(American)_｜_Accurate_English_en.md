@@ -1,16 +1,3 @@
-# Three common mistakes of English pronunciation (American) | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aWG1s-9qMNg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aWG1s-9qMNg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:08:53 |
-
----
-
 in this video I would like to help you pronounce two very difficult English words and at the same time I will teach you three very important rules about American English pronunciation let's
 
 look at the word daughter a lot of my

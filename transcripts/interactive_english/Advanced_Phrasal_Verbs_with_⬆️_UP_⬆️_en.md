@@ -1,16 +1,3 @@
-# Advanced Phrasal Verbs with ⬆️ UP ⬆️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `l68QN2qzjc8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=l68QN2qzjc8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:15:21 |
-
----
-
 Hello and welcome to today's lesson. Uh
 
 my name is Wes in case this is your first time here. And the channel Interactive English, it's it's just all about trying to help you improve your English skills. And please, if that is what you would like to do, I would love it if you would subscribe so that I can then become your English teacher. And today I I have a fun lesson. I think

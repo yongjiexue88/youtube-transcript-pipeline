@@ -1,16 +1,3 @@
-# There Is Hope When Debt and Life Feel Overwhelming | January 14, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nUdt6SSrXqA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nUdt6SSrXqA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:49:38 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

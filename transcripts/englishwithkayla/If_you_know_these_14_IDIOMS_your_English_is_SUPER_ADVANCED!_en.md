@@ -1,16 +1,3 @@
-# If you know these 14 IDIOMS your English is SUPER ADVANCED!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `e83ViUou9jQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=e83ViUou9jQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:34:47 |
-
----
-
 Are you ready to learn some real-life advanced English phrases? Not just the boring phrases that you'll get out of a textbook. Those phrases aren't really going to help you, especially if you're advanced English speaker and you're speaking with native English speakers like myself. These are the real phrases that I actually hear when I'm speaking with my friends, my family, when I'm listening to podcasts, when I'm listening to movies, when I'm watching a television show.
 
 I write them down and I make sure to teach them to you so that you can understand them and use them in your everyday English. By the end of this lesson, you'll be able to use all of these phrases very confidently.

@@ -1,16 +1,3 @@
-# 5 Useful Ways to Improve Your English Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `zKyJeHWp3qs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=zKyJeHWp3qs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:50:24 |
-
----
-
 okay stirred okay
 
 hello

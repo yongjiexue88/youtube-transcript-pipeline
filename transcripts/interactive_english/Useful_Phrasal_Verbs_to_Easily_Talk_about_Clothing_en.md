@@ -1,16 +1,3 @@
-# Useful Phrasal Verbs to Easily Talk about Clothing
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gmQmyJf1Jp8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gmQmyJf1Jp8) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:40:27 |
-
----
-
 Welcome. Welcome. Welcome.
 
 Today I have a really cool lesson.

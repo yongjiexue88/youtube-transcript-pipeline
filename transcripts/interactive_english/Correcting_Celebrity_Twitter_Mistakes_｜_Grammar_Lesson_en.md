@@ -1,16 +1,3 @@
-# Correcting Celebrity Twitter Mistakes | Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `IW6RISoG1Bc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=IW6RISoG1Bc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:54:00 |
-
----
-
 everyone makes mistakes even celebrities
 
 and today I want to correct those

@@ -1,16 +1,3 @@
-# How to Remove the Hidden TV Settings Cops Use to Spy on You!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `aQYr3LHWs-s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=aQYr3LHWs-s) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:19:45 |
-
----
-
 You probably think turning off your smart TV means it stops listening. But what you don't realize is that these things could still be collecting data even when the screen's black. And that data could be accessed by cops or government agencies without your knowledge or consent. I'm Jeff Hampton, the people's lawyer, and in this video I'm breaking down number one, how smart TVs are being used to track citizens, and number two, the simple settings you need to change to keep your private life private.
 
 So, what data can a smart TV even collect in the first place? We all found out the truth in early January 2026. A Texas judge briefly issued a temporary restraining order aimed at stopping Samsung from collecting certain smart TV automated content recognition data from Texans. The order didn't stick, but now we know that automated content recognition data known as ACR data is what we should be concerned about.

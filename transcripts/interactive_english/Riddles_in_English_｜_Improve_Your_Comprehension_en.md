@@ -1,16 +1,3 @@
-# Riddles in English | Improve Your Comprehension
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `emXwlZ0p2cs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=emXwlZ0p2cs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:21:35 |
-
----
-
 Hello, welcome to today's lesson. My name is Wes. This is Interactive English. The channel is all about helping you practice and improve your English. And I know I say that all the time with the hundreds of lessons that we have, but it's true. Uh, I really just want to help you practice your English skills. And today, the way that I want to practice is more so really
 
 getting you to to really have to think critically and and think hard because today we're going to be doing some riddles in English. We're going to be looking at some English riddles. And I just I just want you to see if you can figure out [snorts] the answer and to sol and solve these riddles. So, this is

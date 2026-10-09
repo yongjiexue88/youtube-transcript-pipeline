@@ -1,16 +1,3 @@
-# LAWYER: Say THIS When Cops Take "Officer Safety" Too Far
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `laF4H4XeYGg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=laF4H4XeYGg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:33:42 |
-
----
-
 a cop pulls you over for speeding he gets out of his car and the moment he walks up to your window he's got attitude in fact the first thing he tells you is hey buddy I'm going to need you to get out of the car because I'm going to need to do a pat down search for safety reasons number one do you have to get out of
 
 the car number two do you have to let him perform a pat down search on you for officer safety what if the cop find something on you can he actually use it against you in court and what is this officer safety business that we hear cops using all the time we

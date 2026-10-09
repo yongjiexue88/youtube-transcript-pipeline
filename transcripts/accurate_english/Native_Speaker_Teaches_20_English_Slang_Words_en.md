@@ -1,16 +1,3 @@
-# Native Speaker Teaches 20 English Slang Words
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ScvzZ9au02Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ScvzZ9au02Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:49:32 |
-
----
-
 hi i'm lisa in this video we will learn
 
 some more modern slang words we will continue our series of listening to native speakers of english in los angeles so that you can learn all of the different details and the little nuances of american english normally

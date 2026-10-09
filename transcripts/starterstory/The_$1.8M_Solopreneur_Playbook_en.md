@@ -1,16 +1,3 @@
-# The $1.8M Solopreneur Playbook
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vedkm3ZmHIE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vedkm3ZmHIE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:31:48 |
-
----
-
 this guy is the highest paid solar
 
 preneur on the internet meet Brett

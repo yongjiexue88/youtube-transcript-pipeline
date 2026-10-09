@@ -1,16 +1,3 @@
-# STOP USING THIS VOCABULARY 🚫 Use these words & phrases instead...
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8BgDAl5Nk-A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8BgDAl5Nk-A) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:22:48 |
-
----
-
 today i want to talk to you about some vocabulary that well you you really don't need to be using anymore and what you should say instead that's coming up [Music]
 
 hey everyone my name is wes this is interactive english and the channel is just all about trying to help you

@@ -1,16 +1,3 @@
-# Building Wealth Is Simple (But Not Easy) | March 5, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `a_H0qg_PCsk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=a_H0qg_PCsk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:42:20 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

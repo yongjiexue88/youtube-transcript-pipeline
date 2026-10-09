@@ -1,16 +1,3 @@
-# US Regional Vocabulary You Need to Know 🇺🇸  (+ Lesson Notes)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `OimYIupXx4c` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=OimYIupXx4c) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:00:38 |
-
----
-
 this lesson is about the United States
 
 which is where I am from and I want to

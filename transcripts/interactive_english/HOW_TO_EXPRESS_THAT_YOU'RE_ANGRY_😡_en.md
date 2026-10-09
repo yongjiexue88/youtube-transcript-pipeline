@@ -1,16 +1,3 @@
-# HOW TO EXPRESS THAT YOU'RE ANGRY 😡
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `1QP2wlidRsU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=1QP2wlidRsU) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:29:27 |
-
----
-
 - Have you ever felt angry?
 
 Of course you have and after this lesson, you'll know many different ways to say just how angry you are.

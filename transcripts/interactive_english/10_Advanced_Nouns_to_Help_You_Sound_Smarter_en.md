@@ -1,16 +1,3 @@
-# 10 Advanced Nouns to Help You Sound Smarter
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NnfmOvS8Qfc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NnfmOvS8Qfc) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:33:39 |
-
----
-
 - If you would like to sound smarter and be smarter
 
 then this lesson is for you, because I'm going to tell you

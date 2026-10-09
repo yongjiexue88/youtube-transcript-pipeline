@@ -1,16 +1,3 @@
-# 贴个标就能收钱，“杜比”赚钱有天理吗？Is it fair for Dolby to make money by just putting a label on it?【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `evAwBOXE1Bc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=evAwBOXE1Bc) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:33:20 |
-
----
-
 你肯定在耳机手机音乐和视频网站以及音箱 电视 汽车电影院 游戏等等地方见到过这些杜比 logo 在 2024 财年杜比光靠贴标等方式收取“授权许可费”就入账 11 亿美元占全年收入的 93%
 
 基本全靠贴标挣钱了

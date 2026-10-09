@@ -1,16 +1,3 @@
-# on board exported
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TIML_iDcD2o` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TIML_iDcD2o) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:58:15 |
-
----
-
 one of my english language students just
 
 reminded me of a fantastic idiom that

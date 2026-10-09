@@ -1,16 +1,3 @@
-# Debt Robs Your Life of Margin | May 11, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `lejr2ze684A` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=lejr2ze684A) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:32:55 |
-
----
-
 This is an ad for Better Help. You work so hard to be the strong one for everyone else, but you're running on empty. The pressure to show up doesn't just disappear, it takes over your life.
 
 And talking to someone can help. Go to betterhelp.com/ramsey for 10% off.

@@ -1,16 +1,3 @@
-# Important Phrasal Verbs for Work and School
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GoRG-xy8ss0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GoRG-xy8ss0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:55:41 |
-
----
-
 in today's lesson I am going to be
 
 teaching you different phrasal verbs now phrasal verbs are are challenging for a

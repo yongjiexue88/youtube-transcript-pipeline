@@ -1,16 +1,3 @@
-# What it means "to be winded" #shorts #americanenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `DtORPTNNfE4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=DtORPTNNfE4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:10:13 |
-
----
-
 here are two phrases that i like to use
 
 when i'm speaking about my energy in english the first is when i'm exercising

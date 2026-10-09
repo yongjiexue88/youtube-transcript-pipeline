@@ -1,16 +1,3 @@
-# 150 english phrases for American English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CCY1hBX2C6M` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CCY1hBX2C6M) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:52:27 |
-
----
-
 Buckle in has anyone ever told you to Buckle in maybe you were inside of a car
 
 but if someone tells you to Buckle in and you're not in a car they're not talking about your seat Bel they're telling you to get prepared to do something that's very difficult or challenging when I took biology in college at the beginning of the semester my professor told me to Buckle in and I had to study so much for that class it was so difficult so he was telling me to prepare for a difficult semester of a course

@@ -1,16 +1,3 @@
-# Don't do this when speaking English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `_N8cIVkwKn8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=_N8cIVkwKn8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:58:33 |
-
----
-
 okay so anyway like i was saying um
 
 yeah so there was like

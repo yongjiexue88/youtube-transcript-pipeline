@@ -1,16 +1,3 @@
-# How to order in America
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `z2Z4kVwWb6E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=z2Z4kVwWb6E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:44:20 |
-
----
-
 Americans order food in a restaurant
 
 much differently than what your English

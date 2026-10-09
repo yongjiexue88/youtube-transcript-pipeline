@@ -1,16 +1,3 @@
-# 5 Ways on How to Achieve English Fluency
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NRTVxat66-s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NRTVxat66-s) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:39:41 |
-
----
-
 I think most English learners out there would like to achieve a certain level of fluency.
 
 And that's why today I'm going to talk to you about several keys to success

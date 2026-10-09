@@ -1,16 +1,3 @@
-# IDENTIFY THE MAIN IDEA | Practice Your Listening Skills
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `u26Ng43ZhEY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=u26Ng43ZhEY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:39:53 |
-
----
-
 yes okay I think we're live still trying
 
 to navigate the system hello and welcome

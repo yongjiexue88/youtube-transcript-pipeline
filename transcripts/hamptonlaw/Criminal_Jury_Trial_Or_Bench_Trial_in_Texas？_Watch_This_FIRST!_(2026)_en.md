@@ -1,16 +1,3 @@
-# Criminal Jury Trial Or Bench Trial in Texas? Watch This FIRST! (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `HfLT22whOaU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=HfLT22whOaU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:53:38 |
-
----
-
 hi I'm Jeff Hampton with the Hampton Law Firm welcome to my YouTube channel today I want to talk to you about the subject jury trial or bench trial what is the difference what makes
 
 sense by the way if you wait around to the end of this video I'll also give you a free ebook what to do if you have been charged with a crime in Texas okay so

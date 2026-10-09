@@ -1,16 +1,3 @@
-# Collocations to Supercharge Your Vocabulary (B2 + C1 + C2)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NG44swIzykA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NG44swIzykA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:56:58 |
-
----
-
 today I want to help you supercharge
 
 your vocabulary by learning many different collocations which are words that are frequently used together and

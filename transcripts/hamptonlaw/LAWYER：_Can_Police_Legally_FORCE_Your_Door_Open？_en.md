@@ -1,16 +1,3 @@
-# LAWYER: Can Police Legally FORCE Your Door Open?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZT6_mqse6CU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZT6_mqse6CU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:35:01 |
-
----
-
 can police legally hold your door open and if they do what can you do about it what happens if the police show up at your front door and you make the mistake of opening the door and you start talking but then you realize you made a huge mistake and you're ready to retreat back into your house what if you start to shut the door Can the police grab
 
 the door or can they shove their foot in the door in order to continue their investigation I want to show you how this usually goes down if the police come to your front door Cops show up at your front door and they start asking all kinds of questions and here's the problem if you actually open the front door they're going to do everything they can to get

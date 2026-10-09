@@ -1,16 +1,3 @@
-# How to Use the Definite Article (THE) & Zero Article (X) | Grammar Lesson
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mXyXuNdGx1k` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mXyXuNdGx1k) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:50:15 |
-
----
-
 All right, I think uh
 
 we are getting this show

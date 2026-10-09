@@ -1,16 +1,3 @@
-# Most people struggle with the word
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `rM-sMg9bJSo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=rM-sMg9bJSo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:50:10 |
-
----
-
 can you pronounce this word correctly
 
 the word is pronounced months months so

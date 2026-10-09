@@ -1,16 +1,3 @@
-# Do you work in a "dog eat dog" environment? #shorts #englishphrase #businessenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `uKvqDeSwjVs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=uKvqDeSwjVs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:18:27 |
-
----
-
 in the english language we have a very common expression that we use to describe a harsh and competitive environment
 
 the phrase is dog eat dog so if you have

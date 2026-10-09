@@ -1,16 +1,3 @@
-# How To Clear Your Domestic Violence Arrest From Your Criminal Record (2024)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `03k9D8qnfEc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=03k9D8qnfEc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:55:08 |
-
----
-
 hello everyone welcome to the Hampton Law Firm I'm Jeff Hampton with the Hampton law firm and I wanted to take a couple of minutes today to answer a question that a prospective client called me about and said hey Jeff I resolved my domestic violence case a couple of years ago I didn't go to jail I think it was dismissed what do I need to do to get
 
 it off my criminal record today what I'm going to do is we're going to cover the ins and outs of how do I get a domestic violence case and a

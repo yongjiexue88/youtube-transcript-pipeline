@@ -1,16 +1,3 @@
-# 面对奥密克戎，你需要囤呼吸机、制氧机吗？Facing Omicron, do you need to buy ventilators and oxygen concentrators?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Gk-xSLceR4s` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Gk-xSLceR4s) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:48:44 |
-
----
-
 由于众所周知的转变网上关于呼吸机的话题戏剧性地多了起来就连无人问津的我们也收到了一些厂商的推广询问
 
 但在我们回复之后就没有了下文

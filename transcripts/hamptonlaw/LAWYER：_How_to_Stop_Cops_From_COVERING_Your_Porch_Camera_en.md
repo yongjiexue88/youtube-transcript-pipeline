@@ -1,16 +1,3 @@
-# LAWYER: How to Stop Cops From COVERING Your Porch Camera
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8nno8ejpi7g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8nno8ejpi7g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:24:29 |
-
----
-
 imagine this a police officer walks up to your front door and notices a doorbell camera or a porch security cam but instead of acting professionally the police officer chooses to cover up the
 
 camera or even worse disable the camera

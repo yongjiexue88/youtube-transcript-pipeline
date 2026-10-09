@@ -1,16 +1,3 @@
-# How To Beat A Forgery Charge In Texas: Winning Strategies for a Dismissal (2026)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CmEIG5TpLZ8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CmEIG5TpLZ8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 14:01:09 |
-
----
-
 forgery what does it mean what is the crime of forgery maybe you or a loved one is facing this crime and you need some
 
 answers Welcome to our YouTube channel and I'm Jeff Hampton with the Hampton Law Firm today we're going to go from A to Z talk about the basics of Texas criminal law as it relates to the crime of forgery and if you wait around to the end of this video I'll also give you a free ebook what to do if you have been charged with a crime in Texas okay let's

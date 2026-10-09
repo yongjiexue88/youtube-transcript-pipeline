@@ -1,16 +1,3 @@
-# Don't let your English speaking "fall by the wayside" #Englishphrases #shorts #speakenglish
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `fcmArMsbl3U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=fcmArMsbl3U) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:19:47 |
-
----
-
 don't make time to study english every single day your vocabulary will just fall by the
 
 wayside his fall by the wayside is used to say

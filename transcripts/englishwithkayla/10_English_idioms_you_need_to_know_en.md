@@ -1,16 +1,3 @@
-# 10 English idioms you need to know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `TP_TiMoAwxU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=TP_TiMoAwxU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:01:50 |
-
----
-
 what is the secret to actually upgrading
 
 your english and sounding exactly like a

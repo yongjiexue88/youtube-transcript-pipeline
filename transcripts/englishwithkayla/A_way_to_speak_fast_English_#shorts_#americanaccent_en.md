@@ -1,16 +1,3 @@
-# A way to speak fast English #shorts #americanaccent
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `CBOomGl3XJo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=CBOomGl3XJo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:18:56 |
-
----
-
 i'm gonna have to teach you some more
 
 connected speech gonna have to going to

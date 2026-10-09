@@ -1,16 +1,3 @@
-# 25 Idioms Every American English Speaker Should Know
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `nQgceRzkO1g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=nQgceRzkO1g) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:47:03 |
-
----
-
 did you know there's a better way to learn English than just studying a
 
 dictionary in today's English lesson I'm

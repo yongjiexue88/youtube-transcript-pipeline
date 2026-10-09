@@ -1,16 +1,3 @@
-# Listening and Speaking GAME | Words that Describe People (Beginner)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `iBFX0BvAqOw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=iBFX0BvAqOw) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:55:35 |
-
----
-
 Hey everyone! It's time for your favorite activity...Describing Nouns.
 
 This is a listening and speaking activity. Today we're going to describe

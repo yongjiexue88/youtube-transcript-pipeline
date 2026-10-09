@@ -1,16 +1,3 @@
-# LAWYER: How to Stop a Criminal Investigation in Texas! (2025)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZgKJddi-Bt0` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZgKJddi-Bt0) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 21:04:27 |
-
----
-
 hey everybody today we're going to discuss the question is it bad for me to ignore a detective's phone call if they're trying to investigate me if I hire an attorney can an attorney do anything to stop uh an investigator from
 
 actually investigating me and getting a warrant for my arrest so hey everyone let I want to take a few minutes here to cover this subject that I know comes up all the time people ask me can something be done I have this detective he's trying to get all these answers from me I'm afraid to talk to him because I don't know what he's going to do if I give him information because I didn't do anything wrong in this video we're going to talk about the tactic that's used uh

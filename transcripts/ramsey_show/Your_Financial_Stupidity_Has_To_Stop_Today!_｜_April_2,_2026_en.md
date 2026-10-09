@@ -1,16 +1,3 @@
-# Your Financial Stupidity Has To Stop Today! | April 2, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NIRywRcWK2w` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NIRywRcWK2w) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:38:22 |
-
----
-
 Brought to you by the EveryDollar app.
 
 Start budgeting for free today.

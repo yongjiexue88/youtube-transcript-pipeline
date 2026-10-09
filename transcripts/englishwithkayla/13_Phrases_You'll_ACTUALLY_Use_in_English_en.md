@@ -1,16 +1,3 @@
-# 13 Phrases You'll ACTUALLY Use in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mogDqEi5Fqg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mogDqEi5Fqg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:42:00 |
-
----
-
 I want to teach you guys English in the best way that I know how by teaching you
 
 with lots of context in today's lesson

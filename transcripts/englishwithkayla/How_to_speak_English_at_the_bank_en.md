@@ -1,16 +1,3 @@
-# How to speak English at the bank
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `AZQgKIepwZY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=AZQgKIepwZY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:25:49 |
-
----
-
 hi welcome to the bank how can I help
 
 you today hello I need to put some

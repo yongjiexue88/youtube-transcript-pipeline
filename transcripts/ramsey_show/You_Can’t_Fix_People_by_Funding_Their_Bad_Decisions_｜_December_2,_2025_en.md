@@ -1,16 +1,3 @@
-# You Can’t Fix People by Funding Their Bad Decisions | December 2, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7DbsZKO4n0Y` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7DbsZKO4n0Y) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:56:17 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start [music] budgeting for free today.

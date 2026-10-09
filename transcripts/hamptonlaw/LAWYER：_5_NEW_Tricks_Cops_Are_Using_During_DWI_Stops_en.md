@@ -1,16 +1,3 @@
-# LAWYER: 5 NEW Tricks Cops Are Using During DWI Stops
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `eO1XGzyHRyA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=eO1XGzyHRyA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 13:30:57 |
-
----
-
 you've just been pulled over for a traffic violation and you hear the cops use the dreaded words sir have you been drinking what do you do you know that you're not intoxicated in this video I'm going to give you the five tricks cops use during DWI stops and five tips to
 
 protect yourself from being wrongfully arrested for DWI number one cops arrest

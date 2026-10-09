@@ -1,16 +1,3 @@
-# Hit And Run – Failure to Stop and Render Aid: A Former DA Breaks Down The Law (2021)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `VY19l0sE9KM` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=VY19l0sE9KM) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:08:18 |
-
----
-
 hello everyone I'm Jeff Hampton with the Hampton Law Firm today I'm going to talk to you about hit and run cases or as the
 
 law calls them failure to stop and render Aid what is the law what are some of the defenses what should you expect if you're facing a charge like this thanks for joining us if you wait around till the end of this video I will also give you a free book what to do if you have been charged with a crime in Texas okay so let's jump right into

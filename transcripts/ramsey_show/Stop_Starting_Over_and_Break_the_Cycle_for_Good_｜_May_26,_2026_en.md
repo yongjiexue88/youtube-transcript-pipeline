@@ -1,16 +1,3 @@
-# Stop Starting Over and Break the Cycle for Good | May 26, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `BOEs6ZQ2pbs` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=BOEs6ZQ2pbs) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:30:37 |
-
----
-
 This is an ad for Better Help. The time to fix your budget is before you're in debt, and the time to deal with stress is before it becomes a crisis. Talking to someone can help you find a path forward. Go to betterhelp.com/ramsey
 
 to get 10% off.

@@ -1,16 +1,3 @@
-# Learn how native English speakers use this phrase
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `t4VS8kpAJUo` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=t4VS8kpAJUo) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:07:49 |
-
----
-
 so a native english speaker might send
 
 in an application for college and once

@@ -1,16 +1,3 @@
-# How to Sound More Professional When You Speak English | Accurate English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `sJuRl2GPnCU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=sJuRl2GPnCU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 08:01:56 |
-
----
-
 In this video, I will give you a tip that will immediately make you sound more professional when you speak English.
 
 How often do you use the following words? Kind of, sort of, like, actually,

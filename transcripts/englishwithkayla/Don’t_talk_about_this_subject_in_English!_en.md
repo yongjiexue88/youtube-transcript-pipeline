@@ -1,16 +1,3 @@
-# Don’t talk about this subject in English!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `ZOGqmz4OLAw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=ZOGqmz4OLAw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:39:47 |
-
----
-
 United States it has really kind of
 
 awkward to talk about our age especially

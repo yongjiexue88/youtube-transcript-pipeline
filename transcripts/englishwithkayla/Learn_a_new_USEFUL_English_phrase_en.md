@@ -1,16 +1,3 @@
-# Learn a new USEFUL English phrase
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XORG1QfelDw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XORG1QfelDw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:17:56 |
-
----
-
 I have been studying English for hours
 
 on end have you heard this phrase before

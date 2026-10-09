@@ -1,16 +1,3 @@
-# This is the phrase I use to describe my friends in English
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `EtgyKae-gek` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=EtgyKae-gek) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:57:46 |
-
----
-
 my friend she is so
 
 humble

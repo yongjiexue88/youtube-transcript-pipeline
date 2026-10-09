@@ -1,16 +1,3 @@
-# Master Polite English Speaking
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `3fuEhfDLE7E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=3fuEhfDLE7E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:45:15 |
-
----
-
 you might be Advanced while speaking English but you may not be speaking
 
 politely in today's English lesson I'm

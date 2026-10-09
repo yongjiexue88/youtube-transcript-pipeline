@@ -1,16 +1,3 @@
-# Useful English Proverbs about Work
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `z97SoFQ1LHc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=z97SoFQ1LHc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:50:00 |
-
----
-
 hi i'm lisa in this video i will teach you some common english proverbs about work [Music]
 
 understanding the proverbs of a language is an important part to being fluent in that language you will not only understand how the people are thinking how the culture views the world but you will also be able to understand native speakers and by using the proverbs you will sound more fluent in the previous videos i taught you proverbs about love and proverbs about money and

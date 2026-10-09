@@ -1,16 +1,3 @@
-# Learn this Interesting and Useful English Idiom
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `7z9wtWr1n8Q` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=7z9wtWr1n8Q) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:18:47 |
-
----
-
 as an English learner it would be useful
 
 to know the phrase from Soup To Nuts the

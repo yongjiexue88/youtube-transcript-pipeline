@@ -1,16 +1,3 @@
-# He Made $10M with 3 iPhone Apps
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `5u9u8yzPEpA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=5u9u8yzPEpA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-20 14:26:43 |
-
----
-
 I taught myself to code with chat GPT
 
 and my apps have made over $10 million

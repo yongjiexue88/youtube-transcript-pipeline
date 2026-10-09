@@ -1,16 +1,3 @@
-# Common verbs followed by GERUNDS or INFINITIVES
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `o9oDb0EYvk4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=o9oDb0EYvk4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:13:47 |
-
----
-
 hello and welcome to another amazing and
 
 exciting this is a grammar but also a vocabulary

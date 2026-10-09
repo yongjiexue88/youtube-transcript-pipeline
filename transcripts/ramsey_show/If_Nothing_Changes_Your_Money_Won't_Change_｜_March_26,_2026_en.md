@@ -1,16 +1,3 @@
-# If Nothing Changes Your Money Won't Change | March 26, 2026
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `vIXi2NULN6E` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=vIXi2NULN6E) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:39:24 |
-
----
-
 [music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

@@ -1,16 +1,3 @@
-# The Word ANTICIPATE | Build Useful English Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `XIM2Tewr29U` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=XIM2Tewr29U) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:53:54 |
-
----
-
 Hello! And welcome to our global classroom.
 
 I know you've been anticipating this lesson.

@@ -1,16 +1,3 @@
-# I can’t believe he did this 🪿
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pbCRaCLqLmg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pbCRaCLqLmg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:17:09 |
-
----
-
 my husband said have you seen my car keys and I started looking all around
 
 the house I looked everywhere and then

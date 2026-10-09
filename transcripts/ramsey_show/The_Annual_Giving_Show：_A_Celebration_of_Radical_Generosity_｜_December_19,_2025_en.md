@@ -1,16 +1,3 @@
-# The Annual Giving Show: A Celebration of Radical Generosity | December 19, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `6MjMm8Tpdqk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=6MjMm8Tpdqk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 11:53:24 |
-
----
-
 Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

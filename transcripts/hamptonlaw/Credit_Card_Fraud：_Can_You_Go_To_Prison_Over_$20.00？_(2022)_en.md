@@ -1,16 +1,3 @@
-# Credit Card Fraud: Can You Go To Prison Over $20.00? (2022)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pSbmAG1Twwg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pSbmAG1Twwg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 18:59:32 |
-
----
-
 hey everybody Welcome to the Hampton Law Firm got a question for you is it possible to go to prison over a $20
 
 transaction that's exactly what we're going to talk about here today today I'm going to cover with you the topic of this video is debit and credit card abuse in Texas maybe you're facing a debit or credit card abuse charge in Texas and maybe this is your first criminal offense you need to know what uh is involved with the case what exactly has to be proven by the state of Texas and uh understand what exactly it

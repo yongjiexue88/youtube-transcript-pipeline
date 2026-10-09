@@ -1,16 +1,3 @@
-# 17 Phrasal Verbs with "PICK" - English Fluency Practice with Common Expressions
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `yWTNgtubSkc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=yWTNgtubSkc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:24:34 |
-
----
-
 To be truly fluent in English, you need to use phrasal verbs. They're similar to expressions, and native speakers use them in daily speech. We will focus on phrasal verbs with the verb to pick.
 
 What is the difference between to pick on, to pick at, and to pick over. When

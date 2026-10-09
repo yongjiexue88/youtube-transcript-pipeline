@@ -1,16 +1,3 @@
-# American restaurant will NEVER say "you're welcome"
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `gGi5QI7yqYc` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=gGi5QI7yqYc) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:41:28 |
-
----
-
 if you go to this American restaurant
 
 and say thank you they will not say

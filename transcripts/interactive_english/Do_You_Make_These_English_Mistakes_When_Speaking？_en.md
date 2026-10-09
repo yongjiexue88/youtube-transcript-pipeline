@@ -1,16 +1,3 @@
-# Do You Make These English Mistakes When Speaking?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `S5QQfkIag-I` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=S5QQfkIag-I) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:40:58 |
-
----
-
 Let's correct your grammar mistakes.
 
 Specifically, I want to focus on mistakes that you might be making when you're having a conversation. So, really, this is about fine-tuning your speaking fluency by avoiding or even just eliminating simple grammar mistakes. And if you are someone who would like to improve your speaking fluency, please subscribe, turn on notifications. That way, I can become your teacher. My name is Wes. The channel is Interactive English. It's all about helping you reach your fluency goals. So, the way that I want to approach this is telling you a story.

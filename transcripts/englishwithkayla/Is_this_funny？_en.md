@@ -1,16 +1,3 @@
-# Is this funny?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `z3WXrdPnNk4` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=z3WXrdPnNk4) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:32:40 |
-
----
-
 do you have a hard time understanding
 
 jokes in English Let's test you I have a

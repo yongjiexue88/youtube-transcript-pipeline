@@ -1,16 +1,3 @@
-# English phrase: You should talk #shorts
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Kh1a_XeoUNw` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Kh1a_XeoUNw) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 17:10:03 |
-
----
-
 you should talk and you shouldn't talk
 
 these two phrases pretty much mean the same thing in english if someone is

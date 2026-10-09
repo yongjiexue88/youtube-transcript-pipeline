@@ -1,16 +1,3 @@
-# How to Stop Cops From Suspending Your Texas License After a DWI Arrest!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `Pqg10vVoJyI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=Pqg10vVoJyI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 21:05:21 |
-
----
-
 hey guys hey guys got something important here I want to share with you for a second I'm Jeff Hampton with the Hampton Law Firm listen I just had a meeting with a client not too long ago just a short while ago and a lot of these questions were brought up and sometimes I just kind of make assumptions that people are aware of some of these things and of course not why would anyone know uh
 
 so one of the things that happens maybe if you're facing a DWI in Taran County right now people ask well what happens if my driver's license is there any ramifications or rep discs to my driver's license if I'm arrested for a DWI how do I protect my license great

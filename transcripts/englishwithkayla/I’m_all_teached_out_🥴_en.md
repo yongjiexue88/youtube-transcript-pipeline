@@ -1,16 +1,3 @@
-# I’m all teached out 🥴
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8TxdvN_M_lA` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8TxdvN_M_lA) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 16:16:42 |
-
----
-
 if you take a verb you add e d as the
 
 suffix and then you say out like we

@@ -1,16 +1,3 @@
-# 涨得比黄金猛，为什么内存条原地起飞？AI看得上我这200块破内存？【柴知道】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8QcPwNIaoKk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8QcPwNIaoKk) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:30:53 |
-
----
-
 2025 年 10 月柴司利润爆表我们把旧电脑上拆下的内存条挂上闲鱼瞬间被来自华强北的神秘买家
 
 以 90-200 不等的高价拍下

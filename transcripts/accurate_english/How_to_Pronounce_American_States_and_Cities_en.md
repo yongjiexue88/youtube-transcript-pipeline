@@ -1,16 +1,3 @@
-# How to Pronounce American States and Cities
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `8CJ3woGQWI8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=8CJ3woGQWI8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:22:01 |
-
----
-
 Have you ever said the name of an American city or state and noticed that
 
 Americans pronounce it completely differently than you expected? Which names of US places are hard for you to pronounce? Let's learn how to correctly pronounce some names of American cities and states that are commonly mispronounced by non-native speakers. I often hear my students mispronounce the name of this city. You say it.

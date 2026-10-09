@@ -1,16 +1,3 @@
-# 做试管婴儿的爸妈有多煎熬？可以定制男女、多胞胎吗？ Can test tube babies customize male and female, multiple births?
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `YpHCHm2z7KI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=YpHCHm2z7KI) |
-| **Language** | Chinese (zh) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 13:46:25 |
-
----
-
 这个世界上有越来越多的人不想要孩子但却一不小心......就中了可也有很多人朝思夜想想要个宝宝但就是怀不上大约每 10 对夫妻就有一对不孕不育如果育龄女性无避孕正常性生活至少 12 个月还没有怀孕那就是“不孕症”如果责任在男方那就是“不育症”不孕不育的原因很多比如女性输卵管阻塞男性的精子功能和质量异
 
 常等等这些问题 试管婴儿都能解决取几颗卵子 取好多精子放一起培养过几天再放回妈妈肚子里正常发育 分娩这就是试管婴儿的基本原理不过 只有真正经历过这一过程的人才知道它绝没有表面上看上去的这么轻松做试管婴儿需要付出多少代价可以选择生男生女吗

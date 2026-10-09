@@ -1,16 +1,3 @@
-# The Ramsey Show (REPLAY for July 4, 2024)
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `mDbcjtBPbqY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=mDbcjtBPbqY) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:18:57 |
-
----
-
 [Music]
 
 brought to you by the every dollar app start budgeting for free

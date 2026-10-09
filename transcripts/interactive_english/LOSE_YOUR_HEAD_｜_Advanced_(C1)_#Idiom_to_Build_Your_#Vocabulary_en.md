@@ -1,16 +1,3 @@
-# LOSE YOUR HEAD | Advanced (C1) #Idiom to Build Your #Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qA-a7NqTuBE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qA-a7NqTuBE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:57:00 |
-
----
-
 and you completely lose your head lose
 
 your head this means to lose control and

@@ -1,16 +1,3 @@
-# 1-HOUR VOCABULARY LESSON | 100 Phrases for Casual Conversation
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `84miCo1NYGk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=84miCo1NYGk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 07:47:02 |
-
----
-
 today I have a special treat for you
 
 because we have a special guest teacher

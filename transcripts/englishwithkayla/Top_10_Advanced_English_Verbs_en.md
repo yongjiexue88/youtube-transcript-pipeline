@@ -1,16 +1,3 @@
-# Top 10 Advanced English Verbs
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `GCyISsDb2s8` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=GCyISsDb2s8) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:36:26 |
-
----
-
 Let's take your English to the next level. Today, I'm going to teach you 10 of some of the best verbs that you can use in your everyday conversations. But I absolutely promise you these are not the verbs that you find in a textbook or in a dictionary. These are the ones that you'll hear in real conversation.
 
 If you find yourself listening to a podcast in English, watching a show, or just speaking with a new acquaintance, you're bound to hear these 10 verbs in your conversation. Let's get started.

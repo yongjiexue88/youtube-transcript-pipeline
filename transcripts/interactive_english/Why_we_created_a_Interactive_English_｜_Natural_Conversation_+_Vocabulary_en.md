@@ -1,16 +1,3 @@
-# Why we created a Interactive English | Natural Conversation + Vocabulary
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `NK0AVJU6-rU` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=NK0AVJU6-rU) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 08:25:19 |
-
----
-
 [Music] everyone my name is Wes and you wanna
 
 and we are the creators of interactive

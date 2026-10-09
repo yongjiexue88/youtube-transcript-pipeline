@@ -1,16 +1,3 @@
-# 5 SUPER LONG WORDS...VERY DIFFICULT TO PRONOUNCE
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bj36KIilDTQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bj36KIilDTQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:56:32 |
-
----
-
 can you correctly pronounce these five
 
 long words right here let's find out

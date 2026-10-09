@@ -1,16 +1,3 @@
-# The Names of Different Nationalities | Learn English Demonyms
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `pmTR4FuzkKE` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=pmTR4FuzkKE) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 10:29:54 |
-
----
-
 hello everyone welcome today I have
 
 another interactive English lesson for

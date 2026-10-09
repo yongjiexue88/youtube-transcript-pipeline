@@ -1,16 +1,3 @@
-# Confusing English Words - Same Spelling, Different Meaning - Take the Test
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `KCFUdfMxtKk` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=KCFUdfMxtKk) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-03 07:25:30 |
-
----
-
 Let's test your knowledge of English pronunciation. We will look at some commonly confused English words. For example, how do we say this word? Is it
 
 bow or bow? And this word is sometimes

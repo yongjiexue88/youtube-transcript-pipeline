@@ -1,16 +1,3 @@
-# LAWYER: If Cops Try to "Check" Your Gun - Say THESE WORDS
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `bwgWOyZZ_rI` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=bwgWOyZZ_rI) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-02 11:33:26 |
-
----
-
 if you're a responsible gun owner getting pulled over for a minor traffic violation can sometimes spiral out of control especially if the cop wants to run the serial number on your firearm but is the cop asking to do this even legal knowing the answer to this question could make the difference between you driving away free or ending up spending the night in handcuffs in this video I'm breaking down exactly what
 
 you need to know about your Fourth Amendment rights if cops decide they want to try to run the serial number on your gun we'll talk about Supreme Court case laww and what you need to say and what not to say if the cops try this with you I'm Jeff Hampton a former prosecutor turned the people's lawyer and I want you to picture this scenario for a second you're driving home

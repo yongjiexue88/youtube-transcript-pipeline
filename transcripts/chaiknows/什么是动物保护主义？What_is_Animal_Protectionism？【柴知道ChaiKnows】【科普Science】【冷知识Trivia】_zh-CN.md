@@ -1,16 +1,3 @@
-# 什么是动物保护主义？What is Animal Protectionism?【柴知道ChaiKnows】【科普Science】【冷知识Trivia】
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `MHwzesu4L2g` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=MHwzesu4L2g) |
-| **Language** | Chinese (China) (zh-CN) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 14:23:57 |
-
----
-
 柴知道柴知道在知识的海洋里狗刨远在非洲的保护区里远在非洲的保护区里 40个持枪守卫和18个饲养员 40个持枪守卫和18个饲养员不分昼夜轮流看护为的是保护世界上最后一头雄性北白犀不被偷猎者猎杀近在我们居住的小区也经常有好心人买猫粮也经常有好心人买猫粮定期投喂小区内的流浪猫定期投喂小区内的流浪猫有一些人甚至还会从菜市场有一些人甚至还会从菜市场购买活鱼活龟 放归自然
 
 购买活鱼活龟 放归自然以上这些行为经常被笼统地称为经常被笼统地称为“动物保护”但实际上动物保护是一个庞大的概念其中不同派别的理念也大相径庭

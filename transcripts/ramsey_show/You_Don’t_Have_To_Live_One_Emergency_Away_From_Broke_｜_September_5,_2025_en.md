@@ -1,16 +1,3 @@
-# You Don’t Have To Live One Emergency Away From Broke | September 5, 2025
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `0Nk68Jfe0YQ` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=0Nk68Jfe0YQ) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 12:09:19 |
-
----
-
 [Music] Brought to you by the Every Dollar app.
 
 Start budgeting for free today.

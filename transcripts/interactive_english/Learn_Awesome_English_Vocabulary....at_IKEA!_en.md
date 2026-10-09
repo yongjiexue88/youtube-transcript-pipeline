@@ -1,16 +1,3 @@
-# Learn Awesome English Vocabulary....at IKEA!
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `qVfve_uYuKY` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=qVfve_uYuKY) |
-| **Language** | English (en) |
-| **Type** | No (manually created) |
-| **Saved At** | 2026-06-05 09:46:56 |
-
----
-
 So today we are going to take you on a little field trip to..
 
 So the reason we are at IKEA is...first off we needed to buy some things.

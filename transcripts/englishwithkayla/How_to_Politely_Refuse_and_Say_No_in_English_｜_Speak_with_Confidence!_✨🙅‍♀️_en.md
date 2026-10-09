@@ -1,16 +1,3 @@
-# How to Politely Refuse and Say No in English | Speak with Confidence! ✨🙅‍♀️
-
-
-| Metadata | Value |
-| :--- | :--- |
-| **Video ID** | `75I8f2sU5Cg` |
-| **URL** | [Watch on YouTube](https://www.youtube.com/watch?v=75I8f2sU5Cg) |
-| **Language** | English (auto-generated) (en) |
-| **Type** | Yes (auto-generated) |
-| **Saved At** | 2026-06-05 15:41:23 |
-
----
-
 imagine this situation your friend asks
 
 you if you want to come to a concert tonight but you've already made plans
