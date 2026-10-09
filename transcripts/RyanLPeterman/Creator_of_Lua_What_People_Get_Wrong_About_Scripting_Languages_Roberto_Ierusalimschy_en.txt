@@ -1,0 +1,1542 @@
+Title     : Creator of Lua: What People Get Wrong About Scripting Languages | Roberto Ierusalimschy
+Video ID  : jCZnFKk6M9A
+URL       : https://www.youtube.com/watch?v=jCZnFKk6M9A
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1533
+Saved at  : 2026-10-08 08:15:05
+------------------------------------------------------------
+
+[00:00.00]  It's completely feasible that you won't
+[00:03.08]  have programming languages.
+[00:04.96]  >> This is Roberto, the creator of the Lua
+[00:07.40]  programming language, and I asked him
+[00:09.24]  all about programming language design.
+[00:11.60]  >> C++ I think is a good example of a
+[00:14.00]  language that is really, really complex.
+[00:16.64]  And JavaScript I think it's even worse.
+[00:19.28]  I always joke that the JavaScript the
+[00:21.16]  good part here
+[00:22.64]  a very thin book comparatively official
+[00:26.24]  JavaScript book.
+[00:28.36]  >> Given how [snorts] much AI has been
+[00:29.96]  progressing, would you still recommend
+[00:31.92]  people learn computer science today?
+[00:34.76]  >> If you really think about that, it's
+[00:37.08]  really difficult to recommend people
+[00:38.92]  learning anything.
+[00:41.32]  >> Here's the full episode.
+[00:46.48]  In 2023, Lua was the second highest
+[00:50.36]  programming language by growth according
+[00:52.44]  to contributors on GitHub.
+[00:55.40]  And I saw that it was also used in
+[00:58.28]  famous games like World of Warcraft and
+[01:00.36]  Roblox. And so, I wanted to ask you what
+[01:03.80]  kind of programming language is Lua and
+[01:05.96]  what sets it apart?
+[01:07.68]  >> Lua is a language that you usually use
+[01:10.88]  together with combined it with another
+[01:13.04]  language like C or C++ and then you have
+[01:16.60]  an architecture where
+[01:18.48]  Lua takes care of the more dynamic part
+[01:22.28]  of your program, things that change more
+[01:24.64]  frequently, things that are are not so
+[01:29.40]  resource intensive, the the hard parts
+[01:33.08]  you have written in C or C++. So, it's
+[01:36.24]  typically what is called a scripting
+[01:38.48]  language.
+[01:39.80]  There is a some confusion I think
+[01:42.08]  between scripting languages and dynamic
+[01:44.88]  languages. And people just I think
+[01:47.28]  consider that a dynamic language to be
+[01:49.52]  more or less the same thing as a
+[01:51.32]  scripting language.
+[01:53.04]  And they are not exactly the same thing.
+[01:55.32]  So, for instance, a big difference
+[01:58.08]  between Lua and several other scripting
+[02:01.96]  languages is that
+[02:03.52]  for scripting, you have two typical
+[02:05.76]  uses. You can have the the the that I
+[02:08.72]  call who has the main loop.
+[02:11.64]  So, you can you can have the program
+[02:14.12]  written in C
+[02:16.44]  and calling Lua
+[02:18.32]  or you have your program written in Lua
+[02:20.96]  calling C.
+[02:23.52]  And for several
+[02:26.36]  called scripting languages are actually
+[02:29.00]  you
+[02:30.00]  you don't have to, but it's much more
+[02:32.92]  easy to use if you have your program
+[02:35.56]  written in the scripting language and C
+[02:39.16]  language is only for your libraries.
+[02:42.32]  And Lua is very good fit when you want
+[02:44.92]  the reverse. You want the the the the
+[02:46.96]  program written in C and then you you
+[02:51.32]  have calls Lua from time to time. So,
+[02:55.60]  the point is that Lua is very good at
+[02:57.48]  this that you have the the the main loop
+[03:00.08]  the the the program written in C and
+[03:03.08]  then it calls Lua for some tasks or for
+[03:06.96]  whatever you you you want to do. And for
+[03:09.88]  instance, in games, this is very
+[03:12.32]  important to keep the the frame ratio of
+[03:16.64]  the game. So, for instance, you have the
+[03:18.48]  loop the loop keeps the rhythm of
+[03:20.43]  [snorts] the game and keeps everything
+[03:22.20]  and then at every frame it calls Lua
+[03:25.16]  Lua's updates all characters all images
+[03:28.32]  everything in in the game and then it
+[03:31.40]  return to C to do the renderization etc.
+[03:36.04]  So,
+[03:37.32]  it is a very good fit. But, the main
+[03:39.36]  point is that that it people sometimes
+[03:41.64]  call this the embedding
+[03:44.40]  versus extending. So, you can extend the
+[03:47.92]  scripting language with C or you can
+[03:50.32]  then can embed the scripting language
+[03:52.92]  into C.
+[03:55.44]  And so may several languages are very
+[03:58.44]  good only for extending while Lua is
+[04:01.32]  really good for both embedding and
+[04:04.24]  extending.
+[04:05.52]  >> Why is Lua good for embedding and Python
+[04:08.80]  it's almost the opposite?
+[04:10.72]  >> Because in Lua since the beginning Lua
+[04:13.20]  was thought about Lua as a library.
+[04:16.56]  Since the beginning Lua was written as a
+[04:19.28]  library. So I think that's the the main
+[04:22.40]  difference. Lua has a standalone program
+[04:25.44]  that I mean you can call Lua in your
+[04:27.52]  console, in your common line, but that
+[04:30.72]  program is just a client of the official
+[04:34.20]  client of the library following the the
+[04:36.80]  same API that any other program can use.
+[04:40.08]  So this idea of language as a library, I
+[04:43.40]  think it's not very common. It's
+[04:45.60]  something that is very particular in
+[04:48.44]  Lua.
+[04:49.12]  >> When you design a language as a library,
+[04:51.80]  what are the unique, I guess, um,
+[04:54.96]  design decisions?
+[04:56.28]  >> I think that goes
+[04:59.20]  a lot of small
+[05:01.28]  small and big details. For instance,
+[05:03.64]  your your idea of what is your global
+[05:06.60]  space or your about scopes of variables,
+[05:11.16]  about exception handling. For instance,
+[05:13.92]  it's very important that it's very
+[05:15.60]  common in Lua that you raise an
+[05:17.72]  exception in Lua but catch the exception
+[05:21.72]  in C. So all these things about how you
+[05:25.28]  do exception handling in the language.
+[05:28.08]  Another
+[05:29.48]  It's not a big deal but it's a For
+[05:31.20]  instance, most dynamic languages, that's
+[05:33.28]  almost a
+[05:34.24]  definition of a dynamic language. They
+[05:36.40]  have an eval
+[05:38.32]  function that you can give a piece of
+[05:41.00]  code and then it executes that code.
+[05:44.64]  In Lua we don't instead of eval we have
+[05:47.84]  a function that we call the load.
+[05:50.68]  That you give a piece of code and it
+[05:52.76]  returns a function
+[05:55.72]  an internal function like it was a Lua
+[05:58.24]  function that when you call that
+[06:00.04]  function, then you execute
+[06:02.76]  the the associated code. It does doesn't
+[06:07.16]  execute immediately. So, you have this
+[06:09.96]  clear separation between
+[06:13.04]  compiling like the the Lua code that you
+[06:16.40]  have and then you can do that in C. So,
+[06:18.48]  in C, you can get a piece of Lua code,
+[06:21.40]  you can compile it, check if it has
+[06:23.76]  errors, etc. Then you call that for
+[06:27.68]  instance for instance a different piece
+[06:29.32]  or you can even call several times. For
+[06:31.40]  instance, you can load functions from
+[06:33.84]  Lua into C, you keep them I mean in the
+[06:36.96]  Lua
+[06:38.68]  space and then you can call that same
+[06:41.24]  function again and again. It's not a big
+[06:44.28]  difference, of course, because for if
+[06:47.20]  you have a value, you can evaluate a
+[06:49.44]  function declaration and then returns
+[06:52.56]  that function. So, you you can If you
+[06:55.16]  have a value, you can do load. If you
+[06:57.20]  have load, you can do eval. But I think
+[07:00.84]  load it's
+[07:02.72]  it's simpler to use for that kind of
+[07:05.04]  thing that is when you think about
+[07:07.32]  libraries for instance. In Lua, you it
+[07:10.96]  doesn't have a global state. I think
+[07:12.92]  that's a I forgot that that that's a
+[07:14.96]  very important difference.
+[07:17.08]  When C starts, the first thing it has to
+[07:20.60]  do is to call create a new Lua state.
+[07:25.56]  And then everything you do, you do on
+[07:28.16]  that state.
+[07:30.28]  And that state is completely
+[07:33.28]  independent
+[07:35.00]  of everything else. So, C can for
+[07:37.88]  instance create another Lua state and
+[07:40.80]  both states are completely independent,
+[07:43.64]  completely there is no communication
+[07:46.80]  between them. And so this again shows
+[07:49.68]  that the
+[07:51.28]  And so for instance, C can use a state
+[07:53.56]  to do a lot of stuff and then it can
+[07:55.20]  close the state and all memory used by
+[07:58.60]  Lua released everything that Lua was
+[08:01.04]  using is released. For instance, if C
+[08:03.92]  doesn't need to use Lua anymore for a
+[08:06.56]  program, you release all
+[08:09.04]  all resources used by Lua and your
+[08:11.88]  program in C continues and then later it
+[08:14.28]  can again create another state, etc. So
+[08:18.64]  there's as I said there is several small
+[08:21.36]  or not so small decisions in the
+[08:24.04]  language but all the time we think about
+[08:26.84]  the language as
+[08:28.28]  is that good for embedding? Is that
+[08:30.92]  possible to to do embedding and things
+[08:33.96]  like that?
+[08:35.36]  >> When you think of the programming
+[08:36.76]  community generally, everyone is quite
+[08:40.08]  familiar with Python but not as familiar
+[08:42.92]  with Lua. I thought it might be
+[08:44.80]  interesting
+[08:46.24]  to compare the two languages. So if you
+[08:48.44]  compared Lua to Python, what are the
+[08:51.56]  pros and cons of each language design?
+[08:54.96]  >> Lua is a language that is intended to be
+[08:57.96]  used
+[08:59.68]  in in this idea for of
+[09:03.40]  scripting architecture.
+[09:05.44]  So the Lua for instance, it doesn't try
+[09:08.60]  having a lot of different libraries.
+[09:11.60]  If you have something that oh I want to
+[09:13.28]  write a a quick program for something
+[09:15.44]  that Python is much better. It has all
+[09:18.08]  the libraries you can dream about it. It
+[09:20.72]  has a lot of libraries built-in
+[09:23.52]  already into the language. So that the
+[09:25.56]  language is huge. It's I mean the the
+[09:28.44]  installation it's it's a huge so
+[09:31.24]  the
+[09:32.84]  download etc. But it
+[09:35.92]  it has exactly oh I need that. Oh, it's
+[09:38.08]  there. I need that. It's there. And Lua
+[09:40.36]  is almost the opposite. Some very
+[09:42.36]  minimalistic language because they did
+[09:44.84]  that thing embed Lua into your program.
+[09:47.24]  It doesn't use almost any resources.
+[09:50.44]  Most of the libraries, the important
+[09:52.36]  libraries that you you will use will be
+[09:55.48]  provided by the program itself. It will
+[09:57.96]  be the commands like you move a
+[09:59.56]  character or do some speech or things
+[10:02.48]  like that from the engine of of the game
+[10:05.48]  for in for instance if you think about
+[10:07.20]  games, but whatever it is. So, Lua is I
+[10:10.44]  think that's the the main big
+[10:12.68]  difference. It's They they have very
+[10:14.76]  different goals.
+[10:16.48]  >> I saw some benchmarks and I saw that Lua
+[10:18.68]  is much faster than Python. Why is that?
+[10:22.48]  >> That that
+[10:23.80]  Those benchmarks are are not exactly,
+[10:27.20]  but I think that the main point is
+[10:29.04]  exactly One things that Lua does have
+[10:32.64]  these
+[10:34.08]  focus on on performance. Again, in the
+[10:37.60]  realm of scripting languages doesn't
+[10:40.44]  want to compete with C or C++. But in
+[10:43.56]  the realm of dynamic mostly now it's
+[10:46.36]  dynamic language, not scripting
+[10:48.08]  languages. We have some focus on
+[10:50.52]  performance. So, I think this is a a
+[10:53.24]  first difference. Python is exactly is
+[10:55.32]  much more I think that it's a a decision
+[10:58.24]  that they make. Performance is not that
+[11:00.08]  important. It's more important to be
+[11:01.84]  flexible, to be easy to do whatever you
+[11:04.72]  want to do. That in Lua sometimes we do
+[11:07.72]  not put some features because we think
+[11:10.44]  that there is no way to implement that
+[11:12.60]  efficiently. But also I think some part
+[11:16.04]  of that performance difference comes
+[11:17.92]  exactly because of the the size of Lua.
+[11:21.04]  So, most of the virtual machine fits in
+[11:25.00]  your cache for instance. I think there
+[11:28.00]  is these two big things. One is that Lua
+[11:31.48]  doesn't have so many features. It's not
+[11:34.00]  so dynamic as Python. So, in Python
+[11:37.12]  there is a lot of in the interactions
+[11:39.12]  because everything can mean something
+[11:41.48]  else. In Ruby, we are a little more
+[11:44.20]  conservative on that side. And but I
+[11:47.24]  think also this thing of being small
+[11:49.52]  also makes it naturally faster.
+[11:52.96]  >> So, on the distinction between scripting
+[11:55.52]  languages and dynamic or I guess it
+[11:57.44]  seems like dynamic language is a
+[11:58.76]  superset. Scripting language is a is a
+[12:01.32]  subset of that. Am I understanding that
+[12:04.40]  JavaScript is a dynamic language, not a
+[12:08.32]  scripting language from your
+[12:09.60]  perspective?
+[12:10.72]  >> Yes, exactly. Yes, exactly. Because the
+[12:13.36]  scripting it came the the the the the
+[12:16.24]  original scripting language it was bash
+[12:18.92]  or the shells from Unix. Of this idea
+[12:22.24]  that there's a language that coordinates
+[12:25.04]  other stuff. So, for instance, it can be
+[12:27.84]  extending again, you can use But the
+[12:30.72]  this idea that you have
+[12:32.88]  two different language for instance, in
+[12:34.52]  in the shell is only useful because you
+[12:37.28]  have a lot of programs written in C
+[12:41.28]  that are controlled by shell. So, the
+[12:43.64]  scripting language has this very strong
+[12:45.76]  idea that you have this idea of a dual
+[12:48.16]  language architecture. This is So,
+[12:50.68]  scripting means it's like it is it's the
+[12:52.72]  name scripting. It means you it's like a
+[12:54.84]  the you coordinator. You you give a
+[12:57.48]  script to be executed by
+[13:00.84]  those other other things.
+[13:04.64]  >> You gave a talk a while ago and someone
+[13:06.92]  asked you a question of, you know, what
+[13:09.04]  books do you recommend for, you know,
+[13:11.56]  studying programming languages? And you
+[13:13.08]  said actually
+[13:14.40]  that you enjoyed studying the language
+[13:16.24]  design of other programming languages.
+[13:18.52]  >> I like reading books that describe the
+[13:21.16]  design of
+[13:23.08]  of the languages. I I think the
+[13:26.00]  best books are those written by the
+[13:28.56]  author of a language about the design of
+[13:31.52]  that language.
+[13:32.64]  >> What book recommendation do you think is
+[13:35.12]  best on language design?
+[13:37.32]  >> JavaScript the good parts, for instance.
+[13:40.40]  The the the it's
+[13:42.08]  kind of old now, but I think that's I
+[13:44.68]  think it's a very interesting book.
+[13:47.64]  Although I always joke that the
+[13:49.24]  JavaScript the good part
+[13:51.40]  a very thin book comparatively.
+[13:54.88]  >> Official JavaScript books like
+[13:57.56]  >> one hand of the language is the good
+[13:59.64]  parts.
+[14:01.36]  But but I I think that book is really
+[14:03.84]  interesting like because exactly it it
+[14:06.68]  discussed the language it discusses in
+[14:08.60]  the bad parts and it focus on the good
+[14:10.88]  parts but then explains why it's there,
+[14:13.80]  why it it was made that way, etc. That
+[14:17.44]  is a book that I like.
+[14:20.08]  >> When we were talking about Lua, it
+[14:21.80]  sounds like one of the things that sets
+[14:23.44]  Lua apart is the performance and how
+[14:26.72]  minimal it is.
+[14:28.24]  And when I was reading about Lua, I saw
+[14:30.16]  that there's Lua Jit. How does the Lua
+[14:33.28]  Jit work?
+[14:34.64]  >> Lua Jit
+[14:35.96]  the first thing that's completely
+[14:37.72]  different project. It doesn't have
+[14:40.08]  anything to do with us. But it's a
+[14:42.76]  incredible piece of of software that is
+[14:46.64]  is a just-in-time compiler for Lua
+[14:48.84]  that's and I think exactly one of the
+[14:52.04]  reasons
+[14:53.40]  it works so well on top of Lua is
+[14:56.00]  because of the simplicity
+[14:58.32]  of
+[14:59.04]  Lua. It's a very regular language. I
+[15:01.44]  mean it has a very as I said it doesn't
+[15:03.96]  have many exceptions or too many
+[15:07.48]  indirections or things that so it's not
+[15:11.64]  that dynamic. I mean everything can mean
+[15:14.56]  something completely different. So that
+[15:17.40]  I think that gives a very good language
+[15:20.56]  for a Jit. But the the the the the Mike
+[15:22.68]  Paul is the name of the the the guy that
+[15:25.52]  made the the in the I think he's still
+[15:28.28]  working on that on the first legit. He's
+[15:31.08]  It's unbelievable his work.
+[15:33.52]  >> What makes writing a legit difficult?
+[15:36.56]  >> The first thing that for me I don't want
+[15:39.36]  to get involved with legit is because
+[15:41.68]  it's machine dependent. It's not very
+[15:44.32]  productive. I mean, you you do a lot of
+[15:46.60]  work and it only works on that
+[15:48.56]  architecture. And then I want to running
+[15:51.20]  another architecture. But, Mike Paul he
+[15:54.40]  created a kind of
+[15:57.56]  pseudo pseudo assembler that he writes
+[16:00.88]  in this assembly and then he translates
+[16:03.60]  that assembler through real machine
+[16:05.84]  pulled of the different machines. So,
+[16:08.16]  trying to unify the different
+[16:10.40]  architectures. So, there is a a lot of
+[16:12.60]  work, but I I don't like it. I I think
+[16:15.04]  architecture I
+[16:18.08]  I like to study, but I don't like to to
+[16:20.76]  to to work with because I think it's
+[16:23.20]  very unstable. Each new version they
+[16:25.52]  change that or they change that the I
+[16:28.28]  mean they they change the ABI for
+[16:30.68]  something and then now the stack has to
+[16:32.96]  be aligned in in some very
+[16:35.80]  particular way. And so
+[16:38.80]  And [clears throat] the of course also
+[16:40.40]  to to get that performance that he gets
+[16:44.12]  he made the what's called the trace
+[16:47.04]  compiler. The idea of a trace compiler
+[16:49.96]  that instead of a function
+[16:52.72]  and compiling a function
+[16:55.24]  it could it works like a
+[16:57.88]  any legit that it tries to detect things
+[17:00.76]  that are executed frequently. And so it
+[17:03.80]  starts what's called a trace. It it gets
+[17:07.12]  recording everything that the code is
+[17:10.36]  doing including function calls, etc.
+[17:14.04]  Until it closes the loop.
+[17:17.20]  And then it compiles that loop
+[17:20.40]  including function calls, etc.
+[17:22.52]  Everything in line. It com-
+[17:24.72]  compiles that for that specific, for
+[17:27.60]  instance, so that number of happened to
+[17:29.92]  be an integer, so it compiles after the
+[17:32.96]  number will be an integer again, and
+[17:35.48]  there is a lot of checks just check if
+[17:37.72]  everything is as assumed, and then it
+[17:41.00]  executes the loop. And then this is
+[17:43.08]  very, very, very fast. But anything that
+[17:46.68]  is different, for instance, you call
+[17:48.92]  again that you call it frequently with
+[17:51.76]  integers, and suddenly you call through
+[17:53.88]  with a float, then at some part of the
+[17:56.52]  code it's it is
+[17:58.88]  it breaks the the the condition, and you
+[18:01.52]  have to to return to the interpreter
+[18:04.84]  part, and I think that's one of the
+[18:07.04]  worst parts is that you you have to
+[18:09.16]  translate the state that it's all
+[18:13.24]  compressed into registers, etc. For
+[18:16.40]  instance, you don't even have a call
+[18:17.92]  stack because you didn't
+[18:20.00]  do the call you didn't do the calls, you
+[18:22.08]  just inlined it. But then, oops,
+[18:24.48]  something went wrong. Now you have to
+[18:26.76]  continue interpreting, so you have to
+[18:29.20]  recreate the stack that you didn't
+[18:31.40]  create originally, etc. So, I mean, I
+[18:34.88]  even
+[18:36.13]  >> [laughter]
+[18:36.36]  >> even to think about that I have
+[18:39.36]  headaches.
+[18:40.84]  >> Standard Lua is portable, but to execute
+[18:43.68]  on a machine, it eventually gets
+[18:45.12]  converted into machine instructions
+[18:47.56]  somewhere. Where in the stack is it
+[18:50.08]  eventually translated to machine
+[18:51.76]  instructions?
+[18:52.84]  >> Lua is written in C. The interpreter is
+[18:55.84]  written in C, and then you so you you
+[18:59.32]  compile that into machine code, the
+[19:01.96]  interpreter, the Lua code. Then the
+[19:04.24]  point when you get some some
+[19:06.72]  some I mean, the Lua code the Lua
+[19:08.44]  interpreter code. When you get some Lua
+[19:10.88]  code,
+[19:12.00]  you do what is we call a
+[19:13.36]  pre-compilation,
+[19:15.08]  that is we we translate to an internal
+[19:17.84]  language,
+[19:19.24]  and then the interpreter is just a big
+[19:21.68]  loop.
+[19:22.92]  It's a loop with a switch. I mean,
+[19:25.00]  that's a a very big simplification, but
+[19:27.28]  that that in in general terms, a loop
+[19:30.08]  with a switch that get instruction,
+[19:33.24]  does a switch, and see all this
+[19:35.16]  instruction is the instructions are
+[19:37.88]  quite similar to a CPU. Move that, but
+[19:41.96]  then instead of creating it executes
+[19:44.84]  that structure. Move Move A to B, so it
+[19:48.64]  it does a
+[19:49.92]  move A to B and executes that, and again
+[19:52.88]  repeats, executes the next instruction.
+[19:55.84]  So, this is how a interpreter works and
+[20:00.00]  basically, so we we precompile a Lua.
+[20:03.64]  There is a compilation, but we compile
+[20:05.64]  for this virtual machine,
+[20:07.88]  and then we have this main
+[20:10.92]  interpreter loop that people call that
+[20:13.84]  just fetch each instruction. So, a jump
+[20:17.88]  is just a jump. You have an array of of
+[20:20.36]  byte codes. A jump will just go to that.
+[20:23.40]  You have a
+[20:24.64]  a counter that tells where you are in
+[20:27.04]  this array. A jump you just update that
+[20:30.04]  counter. It goes to another position of
+[20:32.08]  that array where you're going to So,
+[20:34.40]  it's like you s-
+[20:36.40]  you emulate the CPU in software. It's
+[20:40.32]  written in C,
+[20:41.84]  the the interpreter. This main loop is
+[20:44.16]  written in C.
+[20:45.96]  So, if you compile it in Linux, it will
+[20:48.32]  run in Linux or in a
+[20:51.24]  X86
+[20:52.84]  architecture, it will run in that
+[20:54.80]  architecture. If you compile that in the
+[20:56.80]  Mac, it will run in the Mac. It's a C
+[20:58.96]  program.
+[21:00.56]  >> Got it. Okay, so and that's that's the
+[21:02.24]  part that's not portable, and the C
+[21:04.04]  compiler handles that.
+[21:05.72]  >> Yes. Yes. Yes. The all portability of
+[21:08.28]  Lua comes on top of portability of C.
+[21:12.16]  >> How does JIT compare to ahead-of-time
+[21:14.72]  compilation in terms of performance?
+[21:17.72]  >> Both ahead-of-time Any kind of
+[21:19.76]  compilation is easily not easily, but it
+[21:23.08]  can be 10 times faster than interpreting
+[21:26.12]  or even 100 times faster than
+[21:28.88]  interpreting depending what you were are
+[21:31.20]  doing. But 10 times is a very good
+[21:34.56]  figure. Between ahead-of-time and
+[21:39.08]  trace compilation, then depends a lot of
+[21:42.52]  what you are doing.
+[21:44.88]  After trace compilation is particularly
+[21:48.60]  good for
+[21:50.76]  benchmarks.
+[21:53.36]  Because you're repeating it more or less
+[21:55.76]  they are very uniform. You are doing
+[21:57.72]  exactly the same thing again and again
+[21:59.84]  and again. So, then trace compilers
+[22:03.48]  shine. They I mean this is the best they
+[22:05.84]  can do.
+[22:07.16]  In real programs, that's
+[22:10.92]  depends a lot, but but but you I
+[22:14.24]  wouldn't say there is a clear winner
+[22:16.92]  between the two. I think depends a lot
+[22:18.96]  of the kind of problem.
+[22:20.52]  >> Is it possible to write an ahead-of-time
+[22:23.52]  compiler for Lua?
+[22:24.68]  >> Yes, there are there are
+[22:27.48]  several.
+[22:28.92]  None I mean I think I don't not sure if
+[22:32.48]  there is anyone on production quality,
+[22:35.92]  but for research etc. there are several.
+[22:39.44]  I I have a student who wrote one like a
+[22:42.44]  master thesis. We did
+[22:45.16]  simple Lua compiler ahead-of-time Lua
+[22:48.40]  compiler or something like that. The
+[22:50.48]  exactly because it was just
+[22:52.26]  [clears throat] it gets these opcodes
+[22:54.64]  and expands into
+[22:56.96]  into C code and then you
+[22:59.80]  send that through through a C compiler
+[23:02.52]  and then you have a head of time comp
+[23:05.08]  head of time compiler for Lua and it
+[23:07.84]  gave like three five times boosting
+[23:11.44]  performance. You very very
+[23:14.52]  as the title said it's like ridiculous
+[23:17.68]  simple compiler.
+[23:21.28]  >> I always hear there's there's compiled
+[23:23.56]  languages and there's dynamic or
+[23:26.00]  interpreted languages I guess.
+[23:28.08]  But really that distinction is in the
+[23:30.76]  tool chain not necessarily in the way
+[23:33.00]  that the symbols are laid out on the
+[23:34.60]  source code. Like I could write compiler
+[23:37.24]  or program that takes in Python code and
+[23:40.80]  then converts it into machine code and
+[23:44.04]  then I would have compiled Python.
+[23:46.08]  >> And you can interpret C code too. You
+[23:48.84]  can write an interpreter for C.
+[23:51.88]  Yes. But the the main difference is
+[23:54.20]  exactly what it's easy to For instance,
+[23:56.96]  as I said, one of the hallmarks of
+[23:59.60]  interpreted languages is the eval. So,
+[24:03.24]  if you want to compile the language and
+[24:06.20]  keep eval, you have to
+[24:08.44]  have a compiler as a library of your
+[24:12.28]  of your runtime because you may want to
+[24:14.76]  compile things
+[24:16.92]  during execution. This is the hallmark
+[24:19.40]  of a dynamic language. That's all. You
+[24:21.88]  can create code while running code. So,
+[24:26.44]  that part is that that's why
+[24:30.92]  more much more often than not
+[24:35.00]  dynamic languages are interpreted.
+[24:38.52]  But you can compile but then sometimes
+[24:40.96]  or some compilers do not handle eval at
+[24:44.32]  all. They say, "Oh, you can compile as
+[24:46.40]  long as your program doesn't have
+[24:48.56]  evals." The so there is some
+[24:50.84]  restrictions. And as I said, you can
+[24:54.24]  interpret C code I mean, but you'll be
+[24:58.08]  extremely slowly with it doesn't but
+[25:02.24]  >> I think one big difference I when I look
+[25:04.16]  at statically or you know static
+[25:06.64]  languages or compiled languages
+[25:08.72]  they they seem to have type systems in
+[25:10.76]  them or the type annotations.
+[25:13.56]  What is the role of a type system in the
+[25:16.16]  compilation process?
+[25:18.48]  >> Depends a lot of the on the type system.
+[25:22.08]  The several type systems like in C for
+[25:25.16]  instance are written to be an very
+[25:28.04]  important part of the compilation
+[25:30.56]  process. So if you have the right type
+[25:33.76]  system is much much easier to write a
+[25:37.12]  compiler.
+[25:38.64]  A trivial example is when the space for
+[25:41.56]  variables because if you know all this
+[25:44.12]  is an integer, this is a float, this is
+[25:46.84]  a double, you know exactly how many
+[25:49.28]  bytes of memory you need to that.
+[25:52.36]  Otherwise it's a massive more often than
+[25:55.32]  not you have to keep everything in the
+[25:56.96]  heap dynamically allocated and so
+[26:01.48]  huge
+[26:03.16]  penalty in performance. And for instance
+[26:05.76]  when you see it as I said a trivial you
+[26:07.96]  have an addition.
+[26:09.80]  A plus B. If you know the type of A
+[26:13.84]  A plus B, you have the type of A, the
+[26:15.92]  type of B, you have a compile time you
+[26:18.36]  know all this plus is a
+[26:20.88]  I'm adding two integers. I just generate
+[26:23.28]  the machine code to add integers and
+[26:26.08]  there everything it's fine. In a dynamic
+[26:28.00]  language as here plus
+[26:30.44]  I don't I I I compile
+[26:32.92]  to a virtual in the virtual language it
+[26:35.32]  is just piece of plus but then how do I
+[26:38.72]  at run time you have to check what is A?
+[26:41.32]  Oh, A is an integer, B is a float. Oh, I
+[26:44.04]  have to convert or B is a string or
+[26:46.68]  depending on the language you're if
+[26:48.84]  you're not doing addition you can be
+[26:50.64]  doing concatenation or you can just
+[26:53.12]  calling some and you have to do all that
+[26:56.04]  at runtime. So, types can be very, very
+[26:59.72]  important to compile efficiently, but of
+[27:05.00]  course you have to
+[27:07.16]  have a type system that
+[27:10.00]  that there are several language now like
+[27:12.00]  type type script that the
+[27:14.84]  types are kind of
+[27:16.88]  you do not guarantee that everything has
+[27:19.32]  the types you said
+[27:21.52]  they have. So, then it's impossible to
+[27:24.76]  use them to compile because oh, probably
+[27:27.80]  will be an integer, but if it's not I
+[27:30.00]  mean it's if it I have an integer
+[27:33.08]  register to put 20
+[27:35.44]  it must be a register or
+[27:38.32]  things will not work. So, but if you
+[27:40.48]  have the right type system they are
+[27:43.56]  essential for a good compilation.
+[27:46.16]  >> I know some programming languages have
+[27:47.60]  type inference, but if you did you ran
+[27:50.12]  type inference and you got a unambiguous
+[27:53.80]  set of types and then you use that in
+[27:56.88]  compilation. Like could you do that for
+[27:58.88]  Lua?
+[28:00.80]  >> Nope.
+[28:03.20]  I mean that's not computable, but a lot
+[28:06.44]  of people tried to to do
+[28:10.08]  in type inference for dynamic languages
+[28:13.72]  and it's really hard pro problem and
+[28:16.88]  it's very difficult to do anything
+[28:18.88]  useful in terms of performance. What you
+[28:22.44]  sometimes you get but you have a very
+[28:25.68]  restrict
+[28:27.32]  If you write your program in that
+[28:30.04]  specific way use for So, it's like you
+[28:34.04]  don't have the type but you write the
+[28:35.96]  program thinking about type and then if
+[28:39.40]  the program is that very particular
+[28:41.68]  format, then you can
+[28:45.24]  do type inference and everything goes
+[28:47.68]  well. Otherwise, either type inference
+[28:50.60]  doesn't work, or I mean, it works, but
+[28:53.56]  it actually it infers very generic types
+[28:57.20]  for everything, and so you cannot take
+[29:00.12]  advantage of of of the types. Because
+[29:03.12]  exactly the dynamic nature of the
+[29:05.72]  language. This This also happens if Lua
+[29:08.88]  JIT, for instance.
+[29:10.60]  You can get much much better performance
+[29:13.72]  if you have a kind of a type system in
+[29:16.80]  your in your mind. Usually, we do that,
+[29:19.76]  and you and you follow that type rules
+[29:23.08]  even without a type I mean, the compiler
+[29:25.60]  the language does not impose them on
+[29:28.28]  you, but you assume, "Oh, I'm going to
+[29:30.24]  follow those some type discipline. I'm
+[29:33.48]  not going to to to use the same variable
+[29:36.20]  to store integers and strings, etc." And
+[29:39.56]  then you can have much better results.
+[29:43.32]  >> OpenAI, [snorts]
+[29:44.36]  Anthropic, Cursor, and Vercel all use
+[29:47.64]  this product to make their lives better.
+[29:49.84]  And the problem it solves is when you're
+[29:51.76]  building SaaS or an ad product, and you
+[29:54.40]  want to sell to other companies, there's
+[29:56.32]  all these requirements you need to meet.
+[29:58.40]  There's SSL, there's SCIM, there's RBA,
+[30:02.04]  there's audit logs. These are all things
+[30:03.84]  that take time to integrate, but aren't
+[30:06.04]  the main focus of your app. WorkOS is an
+[30:08.36]  API layer that lets you meet all of
+[30:10.00]  these requirements in just a few lines
+[30:12.20]  of code. So, let's say you have a new
+[30:14.24]  SaaS product, and you want to sell to
+[30:15.92]  other
+[30:17.04]  WorkOS will solve all of these critical
+[30:19.04]  feature gaps for you.
+[30:21.04]  You can check them out at workos.com to
+[30:23.60]  learn more and get started, and I
+[30:25.76]  appreciate them for supporting my work
+[30:27.60]  and sponsoring this podcast. Earlier you
+[30:30.08]  mentioned that Lua can call C, and C
+[30:33.32]  could call Lua. And
+[30:36.64]  you mentioned we talked about the the
+[30:38.88]  compiler and the interpreter, and how do
+[30:41.56]  these pieces work together in the case
+[30:43.72]  where you're chaining different
+[30:45.36]  programming languages?
+[30:47.60]  >> Yeah, the the the main trick, I mean,
+[30:49.64]  it's not a trick, the technique
+[30:52.24]  for Lua calling C is a C pointers.
+[30:57.20]  Function pointers. There is a pointer to
+[31:00.16]  a function.
+[31:01.48]  This is part of the official C
+[31:04.60]  language. So, when you start Lua,
+[31:08.64]  suppose you are in C, yeah, as I said,
+[31:11.04]  you create a library.
+[31:13.60]  Uh all right, you create a state, a Lua
+[31:15.88]  state, and then you can register, you
+[31:18.48]  send to Lua
+[31:20.60]  C pointers, so function pointers, I
+[31:22.80]  mean, pointers to functions in your C
+[31:25.68]  library. Associated with names, Lua
+[31:28.96]  stores that in some data structure.
+[31:32.52]  Okay, so it says, "Oh, the function sign
+[31:36.04]  is associated with that pointer, etc."
+[31:38.80]  So, when it's it's doing the
+[31:41.36]  interpretation, "Oh, this instruction is
+[31:44.20]  call, instruction call. Let's see what
+[31:47.00]  it's calling. Oh, it's calling A. What
+[31:49.00]  is the value of A? Oh, it's a pointer to
+[31:51.92]  and then it calls that pointer." And
+[31:54.20]  then we do the call the the the C
+[31:57.28]  function to do that.
+[31:59.92]  And the when when C wants to call Lua, I
+[32:04.08]  I mean,
+[32:04.96]  a Lua function is just a data structure
+[32:08.20]  from the point of view of of C, just an
+[32:10.88]  array of byte codes of up codes, and
+[32:14.48]  then it's calls the Lua interpreter
+[32:17.72]  function, "Oh,
+[32:19.48]  please interpret that function for me."
+[32:22.92]  So, C can call Lua to interpret that
+[32:25.56]  function, and that function is running,
+[32:27.64]  and then can call a C function using a
+[32:30.68]  pointer, and you can have that in the
+[32:33.04]  stack several levels. So, you are
+[32:35.08]  running a Lua function that calls C, and
+[32:37.48]  C calls Lua again, and Lua calls C, and
+[32:40.72]  you have recursive stuff in that, etc.
+[32:43.92]  And everything works and it's just
+[32:46.72]  just works.
+[32:48.60]  >> In one of your talks on Lua, you
+[32:50.88]  mentioned that there's security benefits
+[32:52.88]  to using a scripting language. What are
+[32:55.48]  those benefits and how does it protect
+[32:57.36]  the hardware?
+[32:58.40]  >> It's not only hardware. Once I I I gave
+[33:01.92]  a talk here in in Brazil. I was called
+[33:05.32]  it to to give a talk in a PyCon
+[33:09.16]  a PyCon they they called the Python
+[33:11.40]  conference in Brazil. They called me for
+[33:14.04]  a talk. At the end of the talk I said,
+[33:16.20]  "Oh, Lua is we use it as a scripting
+[33:18.16]  language." As I said, emphasizing that
+[33:21.28]  thing that you have this dual language
+[33:24.00]  architecture and we I I know of case of
+[33:27.44]  Lua being used with C, with C++,
+[33:30.84]  with Fortran, with several different
+[33:33.12]  languages. And then someone in the
+[33:35.08]  audience says, "Oh, we also
+[33:37.72]  use Lua for scripting Python programs."
+[33:41.08]  And what what's that the case? They they
+[33:43.08]  they have a huge Python program
+[33:45.80]  for financial stuff that has a do a lot
+[33:49.32]  of financial transactions, etc. And they
+[33:52.56]  wanted to do script I mean to have a
+[33:55.08]  like
+[33:56.00]  a common line where you could write
+[33:58.24]  instructions to be executed by the the
+[34:02.76]  at runtime, for instance, for debugging
+[34:05.04]  or for inspecting, for
+[34:07.20]  whatever you need some kind of end-user
+[34:10.44]  programming.
+[34:11.68]  But they said exactly what I was talking
+[34:14.28]  about spaces. In Python,
+[34:17.68]  basically, if you have a common line
+[34:20.56]  then you're going to run Python, that
+[34:22.96]  Python can do whatever it wants to do
+[34:27.68]  in your program. There is no way to
+[34:29.40]  protect. So, if you gave that to the
+[34:32.16]  user, the user could do whatever it
+[34:34.48]  wanted to do.
+[34:36.60]  I mean
+[34:37.72]  for the program. And so, the program
+[34:39.36]  would break a lot of invariants of a lot
+[34:41.76]  of important stuff in the files it kept,
+[34:44.04]  etc. And so, what they did, they gave
+[34:47.76]  the thinking Lua because as I said, as
+[34:50.08]  Lua you create a state. For instance, as
+[34:52.72]  I just mentioned, you can only call C
+[34:55.68]  functions.
+[34:57.32]  That's is true in Python again, but the
+[35:00.00]  particularity You can only call C
+[35:03.04]  functions if you give the C pointer
+[35:06.16]  to Lua.
+[35:07.40]  So, have a very strict or any there
+[35:10.00]  there is very little as I said, there is
+[35:12.00]  a library. When you create a Lua state,
+[35:14.44]  it has
+[35:15.72]  no functions at all.
+[35:18.28]  There is nothing. I mean, you cannot
+[35:19.80]  open files. Everything there are we call
+[35:22.96]  standard libraries. Usually, you open
+[35:26.68]  a state and you register those standard
+[35:29.84]  libraries in Lua. So, you have the the
+[35:32.52]  minimum like you have mathematical
+[35:34.44]  functions, etc. But you can open a state
+[35:37.12]  and has no functions at all in Lua.
+[35:40.84]  It can only do things calling those
+[35:43.32]  specific functions you you you gave. So,
+[35:46.84]  they they used Lua to have this kind of
+[35:49.16]  control. You can write Lua code here,
+[35:51.76]  but that Lua code can only do very
+[35:54.32]  specific things in the Python program.
+[35:57.44]  You cannot call any Python function or I
+[36:01.36]  mean, build any kind of Python data
+[36:03.76]  structure, etc. So, was this a a nice
+[36:07.16]  example. In the case of hardware, it's
+[36:09.40]  the same thing. You cannot just go in
+[36:12.44]  the For instance, there is a a port a
+[36:15.16]  hardware port that controls the speed of
+[36:18.32]  the fan
+[36:19.72]  that that keeps the temperature of the
+[36:22.04]  CPU. And if you put that very low, you
+[36:25.32]  can really burn the CPU. I mean, because
+[36:27.84]  the CPU gets very hot. And so, we've you
+[36:30.60]  have a seat you cannot call C directly.
+[36:33.32]  You must call Bingo, and only Lua has
+[36:36.40]  access to that. So, if you can only
+[36:39.00]  program in Lua, it's a doll Lua, then
+[36:41.24]  you you check whether the the numbers
+[36:44.36]  you are giving are are precise or
+[36:46.92]  whatever it has to check, and then it
+[36:49.84]  calls
+[36:51.12]  >> It's kind of like a sandbox environment.
+[36:53.56]  >> Yes, exactly. Yes, sandbox is the exact
+[36:57.36]  word for that.
+[36:58.84]  >> I saw there's this, I guess, paper,
+[37:01.20]  maybe it was a
+[37:02.92]  article you wrote on the history of Lua
+[37:05.28]  with several other people, and I thought
+[37:07.48]  there were some interesting quotes in
+[37:08.80]  there I kind of wanted to ask you about.
+[37:10.40]  So, um one of them
+[37:13.40]  it says that there's this old joke that
+[37:16.20]  says that a camel is a horse designed by
+[37:19.16]  a committee.
+[37:20.28]  >> Yes, that's not mine. That's a real
+[37:24.16]  old joke.
+[37:25.92]  >> Does that mean that you think the best
+[37:28.32]  programming languages are designed by as
+[37:31.16]  few people as possible?
+[37:33.04]  >> Yes, I do think. Yes.
+[37:35.40]  Because there's one thing that that it's
+[37:38.52]  easy to to observe it it's is is this.
+[37:41.76]  If you have a committee
+[37:44.00]  writing a language,
+[37:46.48]  everyone wants to put something
+[37:50.60]  from themselves into the language. So,
+[37:53.76]  you have that your favorite mechanism,
+[37:56.84]  and you will fight whatever it takes to
+[37:59.72]  put your favorite mechanism into the
+[38:02.32]  language. And very few people will fight
+[38:06.84]  against
+[38:08.40]  putting anything in the language.
+[38:11.48]  I mean, some people say, "Oh, no, this
+[38:13.40]  is too much. This is too complicated."
+[38:15.24]  But people fight much more fiercely for
+[38:19.52]  to for put something they you in the
+[38:21.84]  language, then
+[38:23.44]  against putting something in the
+[38:25.60]  language. So, when you have a committee,
+[38:28.32]  the the tendency is so let's
+[38:30.96]  keep adding stuff to let's keep adding
+[38:33.28]  stuff, and people sometimes even do not
+[38:36.04]  understand. I mean, they were not sure
+[38:37.84]  if everybody there is really
+[38:40.92]  know the language
+[38:43.04]  well. Oh, well, I'm not putting that,
+[38:45.00]  but that fits with all the parts of the
+[38:47.36]  Oh, I didn't even know the language has
+[38:49.12]  this other part. I mean, so
+[38:51.68]  things sometimes do not fit together
+[38:53.96]  very well, etc. So, first you have a
+[38:56.76]  what's called a conceptual integrity.
+[38:59.92]  It's a name that give that everything
+[39:02.12]  fits together, everything
+[39:04.88]  it's designed if
+[39:07.00]  everything else in mind, etc. It's much
+[39:09.84]  easier to Yeah, I'm not saying I mean,
+[39:11.76]  Lua has several
+[39:14.08]  wrong stuff regarding because of with
+[39:17.48]  time, etc. There you make mistakes, but
+[39:20.88]  it's much easier to get things
+[39:24.08]  right if you have a small group of
+[39:27.08]  people that everybody knows what
+[39:29.16]  everybody else is thinking. I mean, you
+[39:32.04]  are deciding whether to put something in
+[39:34.36]  the language or not. It's much easier to
+[39:37.36]  change your mind
+[39:39.44]  if you do not put something, and then
+[39:41.88]  later you decide to add it to the
+[39:44.72]  language, than to add something, and
+[39:47.44]  then later you decide, "Oh, I shouldn't
+[39:49.92]  have
+[39:51.16]  that was not a good idea." So, when in
+[39:54.28]  doubt, our default is always don't put
+[39:57.76]  it. If you're not very sure, don't put
+[40:00.36]  it. We can always add that later, and so
+[40:03.76]  keep the door open through to
+[40:06.80]  change your mind.
+[40:08.72]  >> I saw in the original Lua programming
+[40:11.16]  language that there was no Boolean type,
+[40:13.20]  and I've never seen that before. Why was
+[40:16.76]  there no Boolean in the original Lua?
+[40:19.56]  >> Well, C doesn't have Booleans.
+[40:22.32]  I mean, the the the the original C and
+[40:24.56]  C90 up to C99
+[40:28.32]  using integers. If it's zero, it's
+[40:30.68]  false. If it's different from zero, it's
+[40:33.64]  true. And
+[40:36.20]  and people lived quite well with
+[40:39.08]  with that Lisp. I mean, there are
+[40:41.60]  several languages that don't have
+[40:43.48]  Booleans. And actually, we only put
+[40:46.96]  Booleans in Lua
+[40:48.88]  because we wanted false. True is
+[40:51.72]  completely useless in Lua. Nobody used
+[40:54.20]  true. And nobody such a joke, but it's
+[40:56.64]  too strong, but
+[40:58.28]  it's it's not very useful. You can use
+[41:01.56]  almost any other value for true.
+[41:04.20]  But the the the the the problem is that
+[41:05.92]  the in Lua the the
+[41:08.40]  nil, that special value nil,
+[41:12.68]  is in a table. It is equivalent to the
+[41:16.44]  key not being present.
+[41:20.16]  You all think better that was a good
+[41:22.08]  that
+[41:23.04]  decision, but it's very embedded in the
+[41:26.52]  design of the language. And it has with
+[41:28.88]  this strong concept that a table
+[41:32.36]  a key that is not present in
+[41:35.20]  in a table that is an associative array,
+[41:38.24]  it has a nil value. It's completely
+[41:40.52]  indistinguishable
+[41:42.48]  whether it's absent. I mean, absent
+[41:44.80]  means it has a nil value. Nil valent
+[41:47.36]  means it's absent. And so, sometimes you
+[41:50.40]  want to have a false value. And but you
+[41:53.56]  want to know what it is there in the
+[41:55.84]  table. And so, we needed a false. To
+[41:58.92]  have a false, you can put in the table
+[42:01.80]  and it's completely different from being
+[42:04.20]  absent. You know, there is a key and the
+[42:07.12]  key has a false value. So, we needed a a
+[42:11.72]  value. And if you're going to have a
+[42:13.32]  false, then
+[42:15.24]  we added true to maybe it would make
+[42:17.84]  sense to have false without true, but
+[42:19.76]  with true it's almost useless.
+[42:22.76]  >> Why not use zero as false if you're okay
+[42:25.48]  with one as true?
+[42:27.16]  >> It could be we could have used it, but
+[42:29.40]  that
+[42:30.64]  Among other things, that would be a a
+[42:33.04]  big change because exactly it didn't was
+[42:36.20]  that way, so we we added that late here
+[42:40.16]  in the language, so changing zero to
+[42:42.64]  false would be a very big
+[42:45.24]  incompatibility.
+[42:47.56]  But it could be for instance in in in
+[42:50.12]  Python, I think a lot of stuff are are
+[42:53.80]  false. I mean, zero is false, empty list
+[42:56.68]  is false, empty In JavaScript, I think
+[42:59.52]  it's even worse. I I don't re-
+[43:02.12]  don't recall exactly, but I mean
+[43:05.24]  This is kind of arbitrary. I mean, you
+[43:07.84]  we could have for instance
+[43:10.36]  nil, false, zero, empty string. I mean,
+[43:14.20]  it
+[43:14.96]  It just depends the kind of test that
+[43:17.12]  you use.
+[43:18.48]  It's not
+[43:19.76]  In dynamic languages, it's very easy.
+[43:22.56]  >> Python has the like you're describing
+[43:24.76]  the truthy values and the falsy values,
+[43:28.24]  or I guess they can be interpreted as
+[43:30.32]  false. And but it's it's more implicit,
+[43:34.36]  less explicit, and I know JavaScript is
+[43:37.44]  even further on that spectrum where you
+[43:39.56]  can do some really weird stuff that
+[43:41.68]  implicitly has some behavior. Do you
+[43:44.48]  think that design direction is good or
+[43:47.76]  bad?
+[43:48.72]  >> It's like a small compact, it's more
+[43:52.24]  easy to write stuff. And but you always
+[43:55.24]  have this balance in any language is
+[43:57.16]  almost anything. The more flexible you
+[44:00.32]  you
+[44:01.04]  the more flexibility you have,
+[44:03.56]  the less
+[44:05.92]  protection you have. In C, you have
+[44:08.40]  something like like that. People do not
+[44:10.60]  notice, but
+[44:12.12]  because C's typed.
+[44:14.16]  But, you can check whether an integer
+[44:17.80]  is true or false.
+[44:19.48]  You can check whether a float
+[44:21.88]  is true or false directly because again
+[44:24.28]  it checks whether the float is zero or
+[44:26.72]  different from zero. You can check
+[44:29.12]  whether a pointer is nil or different
+[44:32.96]  from nil because in C nil is a magic
+[44:36.48]  zero.
+[44:37.52]  So, it's kind of if you do not write any
+[44:40.56]  test, it has an implicit test like
+[44:43.28]  different from zero.
+[44:45.00]  And this zero can be a integer, can be a
+[44:48.88]  float, can be a pointer. So, in C also
+[44:52.20]  you have this kind of
+[44:53.88]  flexibility. It's just that you have to
+[44:56.44]  be more explicit usually.
+[44:59.28]  This
+[45:00.08]  avoids errors, but
+[45:02.08]  so this you have always this balance
+[45:04.16]  between
+[45:05.96]  easy to write and
+[45:07.92]  easy to make mistakes.
+[45:10.08]  >> I saw that
+[45:11.76]  Lua is one indexed instead of zero
+[45:14.44]  indexed, and I I had never seen a
+[45:17.16]  programming language like that in my
+[45:18.88]  experience.
+[45:20.16]  >> There was a lot of programming languages
+[45:22.64]  like that.
+[45:23.92]  >> So, yeah, why why is it one indexed?
+[45:26.68]  >> Because everything in the real world are
+[45:29.60]  one indexed. If you have a book, you
+[45:31.88]  have the the chapter one, chapter two.
+[45:34.52]  Nobody number chapters as zero, one,
+[45:37.80]  two, three. Only program- programmers
+[45:40.48]  are the only Even mathematicians, if you
+[45:43.16]  get a mathematic book, a book of
+[45:45.52]  mathematic, any sequence, it's A1 and
+[45:49.04]  A2, A3. If you get a matrix, the first
+[45:52.68]  element is A11, A12, and then A
+[45:56.52]  Everything
+[45:57.92]  is written with a Only
+[46:00.52]  in programming language that is this of
+[46:02.68]  zero.
+[46:03.64]  And the funniest part is that for
+[46:06.12]  instance Fortran
+[46:07.88]  that now it's it's very old language,
+[46:10.04]  but to index it from one. In Pascal you
+[46:13.40]  can choose I mean you write an array,
+[46:16.40]  you can say this array means index it
+[46:18.44]  from minus five to five. And so it's
+[46:22.08]  it's index it from whatever value you
+[46:24.24]  want to whatever value
+[46:26.68]  you want.
+[46:28.40]  Zero became
+[46:30.64]  extremely popular
+[46:33.16]  because of C.
+[46:35.08]  C uses zero and a lot of languages copy
+[46:39.80]  kind of inspired by by by C. They have
+[46:42.80]  the same operators, the same syntax for
+[46:45.72]  expressions.
+[46:47.36]  The Boolean
+[46:48.88]  operators for instance that is not
+[46:51.20]  standard mathematics. Almost all
+[46:53.72]  languages chose the same operator A to Z
+[46:57.92]  they are written in C.
+[47:00.68]  And so a lot of language copied C and
+[47:03.24]  then zero index it became very popular.
+[47:07.32]  And what is funny
+[47:09.48]  is that in C there is no indexing. In C
+[47:13.08]  indexing is just an illusion
+[47:15.96]  because what you have is pointer
+[47:17.72]  arithmetic.
+[47:20.80]  And C when you write A index it by I
+[47:23.68]  actually what you are saying get the
+[47:25.84]  contents of A plus Y.
+[47:29.72]  And so because in C you don't have
+[47:32.80]  indexing, you have
+[47:34.84]  this
+[47:36.44]  displacements or deltas I don't know how
+[47:38.96]  offsets.
+[47:40.24]  Then it must have index it by zero
+[47:42.68]  because of that because then the first
+[47:45.00]  element is the element that is at the
+[47:46.92]  the original address. So
+[47:50.16]  C doesn't have index indexing. So when
+[47:53.40]  you say A is index by zero, it doesn't
+[47:56.24]  index by zero because it doesn't index
+[47:58.44]  by anything. But it it have this
+[48:01.00]  illusion of indexing and then it's easy
+[48:03.96]  to think that it
+[48:05.36]  And then a lot of language that do not
+[48:07.52]  use pointer arithmetic do not have this
+[48:10.28]  restriction, do not have this semantics,
+[48:13.16]  copy it C and kept the the zero indexing
+[48:17.92]  as the thing. If you got a 12-year-old
+[48:21.16]  and try to explain to them
+[48:24.12]  the zero indexing,
+[48:26.12]  I I assure it's much much easier for
+[48:29.04]  them
+[48:30.16]  to write, "Oh, I I have a list of the
+[48:32.88]  first element." I always joke that is
+[48:35.00]  the first element is zero. And you write
+[48:38.80]  first you for one, but the first element
+[48:41.84]  one
+[48:42.92]  is not one, is zero.
+[48:45.84]  So,
+[48:46.80]  it has advantages zero for this first
+[48:49.48]  some specific operators mathematically.
+[48:53.12]  For instance, you want to do a circular
+[48:55.28]  buffer, zero is better. There are some
+[48:58.40]  small advantage, but it's much much more
+[49:01.84]  confusing.
+[49:03.16]  And as mIRC has this idea of end user
+[49:05.88]  programming,
+[49:07.40]  we always joke it's much easier to make
+[49:09.64]  life easier for the non-programmers.
+[49:14.12]  And I am sure that programmers can
+[49:18.44]  program whatever index they have to do
+[49:21.00]  because they are supposedly they are
+[49:23.04]  professional. They can learn that all
+[49:26.12]  indexing is from them to put all the end
+[49:30.00]  user the burden and of using something
+[49:32.84]  completely different from them indexing
+[49:35.20]  by zero. What does it mean the element
+[49:37.48]  index zero? They never saw and oh, are
+[49:40.24]  the chapters in the book? Yes, the first
+[49:42.04]  chapter is at zero, the second chapter
+[49:44.56]  is at one. It
+[49:46.24]  No, I'm not joking. When you try to
+[49:48.04]  explain that to non-programmer, even
+[49:50.28]  though
+[49:51.20]  they don't need to be 12
+[49:53.60]  I mean, just get anyone that is not
+[49:56.48]  an internet programmer think, "Oh, I
+[49:58.24]  have the absolute I mean, but they are
+[50:00.28]  grown-up. You are
+[50:02.28]  I mean, okay, you are a Christian. You
+[50:04.84]  are
+[50:05.96]  If zero and sure you can learn through
+[50:08.24]  truth to program if one or minus one or
+[50:11.72]  whatever it is the the base you have to
+[50:14.48]  use them. Sure.
+[50:16.16]  >> But do you think you see a lot of bugs
+[50:19.04]  cuz um
+[50:20.52]  maybe someone thinks it's zero.
+[50:22.52]  >> Unfortunately, I see some bugs.
+[50:25.96]  But as I always say, that's are the kind
+[50:28.40]  of bugs that
+[50:30.76]  just shows that you will be then do
+[50:34.32]  minimum testing.
+[50:36.60]  Because that kind of bug is not a kind
+[50:39.24]  of that kind of bug that always you
+[50:43.12]  try to anything you try to do
+[50:46.40]  in a the way.
+[50:48.56]  If you
+[50:49.52]  start from zero or start from one, you
+[50:52.36]  have a bug.
+[50:53.64]  So, the the most simple test that you
+[50:56.60]  can imagine to test anything related to
+[51:00.48]  an array, to a list, etc. And if you if
+[51:03.24]  you
+[51:04.12]  mistake zero to one, you you detect
+[51:07.60]  that. So, if you
+[51:09.84]  have that kind of bug, it just shows
+[51:12.20]  that you didn't
+[51:14.76]  test that code at all.
+[51:17.40]  >> There was this talk that you gave on the
+[51:19.28]  cost of adding uh
+[51:21.32]  language features to Lua and how there's
+[51:23.56]  a lot of hidden costs. And I think it
+[51:26.36]  today
+[51:27.72]  um implementation cost of software is
+[51:29.96]  going down due to, you know, AI code
+[51:32.76]  generation or LLMs.
+[51:35.24]  And I was wondering if that changes your
+[51:36.88]  thinking on
+[51:38.52]  um I guess the cost of adding features
+[51:41.04]  to a programming language.
+[51:43.44]  >> AI is something that
+[51:45.92]  we don't really know what is going to
+[51:49.16]  happen. If you go to an extreme
+[51:53.00]  it's com- completely feasible
+[51:56.84]  that we
+[51:58.12]  we won't have programming languages. And
+[52:00.72]  I mean
+[52:01.88]  because if you did the AI is writing all
+[52:05.00]  your code and is checking all your code
+[52:07.20]  and doing everything, in a few years
+[52:09.92]  maybe we don't need programming. AI can
+[52:12.00]  write machine code directly, it doesn't
+[52:14.00]  need programming languages. It
+[52:17.08]  It's easier for for them to compile or
+[52:19.64]  even generate the code directly. I mean,
+[52:22.00]  I don't know what is going to happen in
+[52:23.84]  a few years. So,
+[52:27.12]  I
+[52:28.00]  think it's very hard for me to
+[52:31.60]  talk anything about AI because I have
+[52:35.04]  and I think nobody have a clear idea
+[52:38.24]  what I mean, people have a maybe a clear
+[52:41.28]  idea what it happens in 1 year or 2
+[52:43.96]  years, but in 5 years, I I mean, anyone
+[52:47.60]  that says, "Oh, that's going to happen
+[52:49.48]  in 5 years." It's just
+[52:51.68]  I mean,
+[52:52.80]  it's
+[52:53.56]  just guess.
+[52:54.96]  So,
+[52:56.32]  I I think it's hard to to say anything.
+[52:59.72]  This is all because of AI. So,
+[53:03.60]  keeping the meaning thing, I mean, that
+[53:06.00]  is still have the for instance the Oh,
+[53:07.88]  why you still use programming languages?
+[53:10.44]  Because if you want the the user or the
+[53:13.76]  some
+[53:14.92]  human to be able to check the result of
+[53:18.08]  what the AI is doing etc. So, I still
+[53:21.96]  think that most of the things about
+[53:24.80]  programming language still hold. For
+[53:27.20]  instance, the the the cost of complexity
+[53:29.72]  of you understanding I mean, AI create a
+[53:32.48]  code for you and then you really
+[53:34.64]  understanding what that code does. I
+[53:37.32]  mean, it's even worse. I mean, it's much
+[53:39.60]  more important that the language should
+[53:42.56]  be clear and and has a
+[53:46.20]  not no hidden mechanisms because they I
+[53:50.76]  may use a hidden mechanism it doesn't
+[53:52.88]  have the concept oh that will be
+[53:54.68]  difficult for a human to understand that
+[53:57.68]  what is really happening here is is
+[54:00.52]  something it's a something that for
+[54:02.04]  instance oh I can use that but I'm for
+[54:04.48]  sure it's going to put a comment here
+[54:07.24]  because I'm sure that someone that reads
+[54:09.48]  that in 1 month it's not going to
+[54:12.28]  understand.
+[54:14.12]  AI doesn't have that kind of
+[54:16.60]  of
+[54:17.56]  of thinking and so it just use that that
+[54:20.56]  trick or that thing and it's so I think
+[54:24.12]  the AI if you think about this idea of
+[54:26.64]  AI generating code I think it's even
+[54:28.92]  more important for the language to be
+[54:31.04]  simple to be understandable for you to
+[54:34.36]  be able to really understand that the
+[54:36.56]  code that you are seeing does what you
+[54:39.32]  think it should it should do it it
+[54:41.72]  really understand what the code is
+[54:44.04]  doing. So this thing about simplicity I
+[54:47.36]  think it's it's very important. And
+[54:50.76]  I think
+[54:52.28]  the other part from the need maybe I may
+[54:55.20]  facilitate documentation I'm not sure if
+[54:58.32]  I need this thing about conceptual
+[55:00.80]  integrity for instance to keep things oh
+[55:03.68]  that makes sense etc. I really think
+[55:06.76]  that one of the main costs is that it
+[55:09.40]  it's the the the burden you put on the
+[55:11.68]  user to learn
+[55:14.08]  one more thing about it
+[55:16.20]  your language.
+[55:17.64]  So there's the other possibility I have
+[55:20.24]  said that implementation is the that is
+[55:23.00]  the the the part that AI can really
+[55:25.84]  help you.
+[55:27.76]  It's not a really re-
+[55:31.20]  really important cost.
+[55:32.88]  >> If you think about like a spectrum of
+[55:34.84]  simple to complex, what programming
+[55:37.64]  languages are, you know, the most simple
+[55:40.28]  ones that you think of that are easy to
+[55:42.16]  understand, less confusing side effects,
+[55:45.08]  and what programming languages are the
+[55:47.20]  most complex and have the most foot
+[55:49.40]  guns?
+[55:50.40]  >> This this famous quote comes from, I
+[55:53.36]  don't know from whom, that the simplest
+[55:57.52]  possible, but not simpler than that.
+[56:00.88]  Because you see, if you go to the
+[56:02.40]  extreme of simplicity, you could get for
+[56:05.84]  instance lambda calculus or Turing
+[56:08.00]  machines and say, "Oh, that's really
+[56:10.48]  simple." I mean, this is really simple,
+[56:12.92]  but it's completely impossible to to
+[56:15.56]  write any program in that. I mean, if
+[56:18.08]  you have really simple stuff, I think
+[56:20.64]  the extremes would be like that, but you
+[56:23.08]  don't want to be there. But for the
+[56:25.28]  other side,
+[56:26.60]  I think C++ I think is a good example of
+[56:29.52]  a language that I think it's really
+[56:31.72]  really complex.
+[56:33.44]  >> A question that comes up a lot is
+[56:35.92]  given how much AI has been progressing,
+[56:38.72]  you know, would you still recommend
+[56:40.08]  people learn computer science today?
+[56:43.52]  >> If you really think about that, it's
+[56:45.84]  really difficult to recommend people
+[56:47.68]  learning anything
+[56:49.52]  for a profession. I mean, we have no
+[56:51.92]  idea what AI will do in 5 years. If
+[56:55.20]  someone is entering university now, they
+[56:58.16]  are going to graduate in 4 years, 5
+[57:00.60]  years, or
+[57:02.40]  I think maybe three three and a half
+[57:05.04]  years or
+[57:06.16]  then
+[57:07.32]  nobody have
+[57:08.88]  any idea what it's what the world is the
+[57:13.08]  your profession will be like in in 4
+[57:15.92]  years from now. So, it's really hard to
+[57:18.52]  I mean to say, "Oh, yes, you can you
+[57:20.92]  still going to have me." Because now
+[57:22.48]  people say, "Oh, no." The the the
+[57:26.40]  manual tasks, the AI is very good, but
+[57:29.08]  it's you needed the the whole
+[57:30.76]  architecture, you needed the
+[57:33.12]  like a software engineer to do to
+[57:35.80]  see the big picture, etc. That it's now,
+[57:38.56]  but it you have no idea that that will
+[57:41.20]  be true in 4 years and or 5 years. So, I
+[57:45.60]  think I mean I like I enjoy programming.
+[57:49.24]  I I could do I mean some people say,
+[57:51.28]  "Oh, use the AI for that." I mean I
+[57:52.96]  program because I like that. But exactly
+[57:55.52]  but so if choose something that you
+[57:57.84]  like, but really for if you are really
+[58:00.04]  thinking about how am I going to live
+[58:02.36]  with that? I have no idea it's really I
+[58:05.60]  think it's a really
+[58:08.52]  hard time to
+[58:11.52]  to be choosing a profession.
+[58:13.84]  >> Yeah, I mean you've worked on Lua for
+[58:15.64]  such a long time. When you look back on
+[58:17.96]  it, what went well and what didn't go
+[58:21.24]  well?
+[58:22.32]  >> We had this privilege
+[58:24.56]  of
+[58:25.64]  not having to satisfy clients.
+[58:29.08]  So, we are the we don't have as I said
+[58:31.16]  for instance, you can choose to add some
+[58:33.08]  feature to the language because you do
+[58:34.80]  not have a pressure, "Oh, we need that
+[58:36.84]  feature that feature whatever it takes
+[58:40.24]  or etc." So, we have this privilege of,
+[58:43.44]  "Oh, we are not sure whether to put
+[58:45.48]  that, we don't put that, we can wait 1
+[58:47.56]  year or so." I think that it's it's much
+[58:50.40]  easier to do a
+[58:52.80]  a good project, a beautiful project. So,
+[58:55.92]  I'm not I'm not sure this is a
+[58:57.52]  recommendation.
+[58:59.20]  Try to work with
+[59:01.16]  without much pressure.
+[59:03.16]  People usually do not have
+[59:05.36]  this choice.
+[59:07.24]  >> What was your measure of success if
+[59:09.76]  you're working on a programming
+[59:11.00]  language? Like,
+[59:12.36]  you know, how did you know it was good?
+[59:14.72]  >> It's more important to receive sometimes
+[59:17.44]  that good people that I recognize that
+[59:21.24]  as we like the the result than a lot of
+[59:25.20]  people that I have no idea what they who
+[59:28.92]  they are etc. Like so I I
+[59:31.60]  I think this metric of quantity that is
+[59:34.24]  the standard metric nowadays in
+[59:37.44]  in the web it's got much worse that
+[59:39.84]  everything is just in the number of
+[59:41.52]  followers that me doesn't care who is
+[59:44.36]  following you just as as many people as
+[59:47.16]  possible. So sometimes for me it's much
+[59:49.52]  more important if someone that I really
+[59:51.96]  admire of thing all this that say
+[59:55.04]  something good about Lua than oh we have
+[59:57.68]  that many
+[60:00.24]  But of course it's good also to have
+[60:02.56]  some number of users and to be
+[60:04.40]  recognized but I think it says a balance
+[60:08.44]  between all of this.
+[60:10.28]  >> Do you recommend people study other
+[60:11.96]  programming languages to get better at
+[60:14.24]  programming? And so question is you know
+[60:17.40]  what are the top three programming
+[60:19.12]  languages that you think every engineer
+[60:21.52]  should learn in 2026 to kind of become
+[60:24.92]  better at programming?
+[60:26.96]  >> Haskell
+[60:28.68]  I think it's a
+[60:31.12]  it's an incredible language that it has
+[60:33.64]  everything you need to
+[60:35.44]  really learn about functional
+[60:37.84]  programming.
+[60:39.76]  I think one of the main benefits is much
+[60:43.52]  there is a old joke
+[60:45.80]  seen in the Haskell community that
+[60:50.28]  if you write a program in in
+[60:53.32]  Haskell and in C
+[60:56.12]  in C
+[60:57.68]  really spend one week
+[60:59.76]  to make it efficient
+[61:02.24]  and then you spend one year to make it
+[61:04.68]  correct.
+[61:07.44]  In Haskell you spend one week to make it
+[61:10.20]  correct and then you may spend one year
+[61:13.12]  to make it efficient.
+[61:15.68]  Again it's not my joke but
+[61:18.12]  I it has some truth not
+[61:20.84]  always true etc. but I think it gives
+[61:23.36]  the the idea. I think this is
+[61:26.24]  maybe the the the main the most
+[61:28.68]  important lesson of Haskell. But,
+[61:31.08]  Haskell has many other
+[61:33.64]  validity this thing about type
+[61:35.44]  inference, for instance, that I mean the
+[61:37.36]  entire language is built is
+[61:41.24]  types are optional everywhere, and yet
+[61:44.52]  it can do type inference for everything.
+[61:47.68]  It can infer the types correctly, etc.
+[61:51.52]  C or some
+[61:53.56]  low language I mean, you can also have a
+[61:57.40]  to learn some assembler or I mean to to
+[61:59.96]  see you. But, assemblers now are
+[62:02.04]  becoming too much complex. It would be
+[62:04.40]  to learn like the
+[62:06.28]  the 8080 assembler, very old assembler
+[62:09.64]  of a very
+[62:10.88]  but to have this exactly this idea of
+[62:13.28]  what a machine does, how it does stuff
+[62:16.20]  it exactly the basic level to have this
+[62:18.80]  understanding.
+[62:20.28]  Scheme is a language that I I like very
+[62:22.64]  much because of this exactly this
+[62:25.32]  economy of of ideas, very very few
+[62:29.00]  concepts, and it can do some amazing
+[62:32.40]  things with the
+[62:34.12]  with very few concepts. The one language
+[62:36.96]  that this is very very very old, but I
+[62:40.84]  still think it is Snowball.
+[62:43.64]  What was the first I think it was the
+[62:45.04]  first languages to have pattern matching
+[62:47.36]  and this idea of doing I mean, it's
+[62:50.32]  really strong patterns, etc. And I think
+[62:54.52]  it's sometimes it's interesting to see
+[62:57.08]  old languages because exactly nowadays a
+[63:00.60]  lot of languages tend to like I said,
+[63:02.64]  the zero indexing that people
+[63:05.24]  they copy a lot of they they tend to be
+[63:08.76]  too uniform in some aspects. And so,
+[63:12.24]  it's interesting to see some older
+[63:14.28]  languages that have some ideas that may
+[63:17.72]  maybe not even good ideas, but it's very
+[63:20.16]  interesting.
+[63:21.44]  >> Last question for you is
+[63:23.88]  you know, knowing everything you know
+[63:25.08]  now,
+[63:26.20]  if you could go back to when you had
+[63:29.28]  just started your career and give
+[63:31.76]  yourself some advice, what would you
+[63:33.60]  say?
+[63:34.76]  >> To know a lot of stuff, you really have
+[63:36.72]  to study a lot of stuff and it takes
+[63:39.36]  time it's the
+[63:40.92]  I I also joke about that people say,
+[63:43.40]  "Oh, learn Lua in 30 minutes or learn
+[63:46.40]  learn Python in 5 minutes or and I
+[63:50.20]  always say that I wanted to
+[63:52.20]  learn programming in 5 years."
+[63:57.80]  That's it.
+[63:59.16]  Really learn take our time. You have to
+[64:02.00]  learn that and that there is a lot of
+[64:03.80]  stuff
+[64:04.80]  stuff to learn. There is no magic. There
+[64:06.72]  is no
+[64:07.76]  You really have to learn I mean a lot of
+[64:10.76]  different things.
+[64:12.68]  >> Thank you so much for your time
+[64:13.64]  Professor. I really appreciate it. It
+[64:15.52]  was a lot of fun.
+[64:16.72]  >> Thank you.
+[64:17.96]  It's all my pleasure.
+[64:19.80]  >> Hey, thank you for watching this
+[64:20.80]  podcast. If you liked it and you want to
+[64:22.44]  see the show grow, please support with a
+[64:24.64]  comment or a like.
+[64:26.64]  Also, if you have any recommendations
+[64:28.48]  for people you want me to bring on,
+[64:30.44]  please drop a comment. Guests like
+[64:32.64]  Barbara Liskov, Mike Stonebraker, Mark
+[64:35.36]  Brooker, these were all people that I
+[64:37.40]  brought on because someone left a
+[64:39.24]  comment. On another note, aside from the
+[64:41.48]  podcast, I'm working on building the
+[64:43.32]  ergonomic keyboard that I wish existed.
+[64:45.80]  Here's a glance at the prototype. It's a
+[64:47.64]  split keyboard, so there's two sides.
+[64:50.64]  This is in the case. But yeah, we
+[64:52.12]  launched on Kickstarter and we hit our
+[64:53.92]  goal within 8 hours of launching. I
+[64:56.04]  really appreciate it if you were one of
+[64:57.40]  the people who grabbed one of the early
+[64:59.16]  units.
+[65:00.28]  We're now working on the long journey of
+[65:02.16]  building the tooling now. And so if you
+[65:03.92]  still want to pick one up, I've left the
+[65:06.12]  late pledges open on Kickstarter, so you
+[65:08.60]  can grab one there. I'll put a link in
+[65:10.20]  the description. Thank you again for
+[65:12.64]  watching the podcast, and I'll see you
+[65:14.80]  in the next episode.

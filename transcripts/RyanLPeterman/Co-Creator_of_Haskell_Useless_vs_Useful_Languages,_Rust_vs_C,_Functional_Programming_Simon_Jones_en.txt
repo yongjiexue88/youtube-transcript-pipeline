@@ -1,0 +1,2598 @@
+Title     : Co-Creator of Haskell: Useless vs Useful Languages, Rust vs C, Functional Programming | Simon Jones
+Video ID  : xcB_LF3cdqw
+URL       : https://www.youtube.com/watch?v=xcB_LF3cdqw
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2589
+Saved at  : 2026-10-08 08:16:52
+------------------------------------------------------------
+
+[00:00.00]  Why is the internet so insecure?
+[00:02.12]  Primarily, because all of our software
+[00:03.88]  infrastructure is written in unsafe
+[00:05.04]  languages.
+[00:06.08]  >> This is Simon Peyton Jones, co-creator
+[00:08.44]  of the functional programming language
+[00:10.08]  Haskell, and I asked him all about
+[00:12.28]  programming language design.
+[00:14.00]  >> If we rewrote all of our software
+[00:15.72]  infrastructure in Rust, things would be
+[00:17.40]  way, way better.
+[00:19.12]  I think that statically typed languages
+[00:21.52]  are huge boon for LLMs. I do large-scale
+[00:26.20]  systematic refactorings fearlessly
+[00:28.36]  because the type system keeps me safe.
+[00:29.80]  In fact,
+[00:30.96]  >> Would you recommend people learn how to
+[00:33.88]  program today?
+[00:35.00]  >> I think people have a right to be
+[00:35.88]  worried in the sense that I think
+[00:36.88]  there's going to be considerable
+[00:38.24]  dislocation.
+[00:39.96]  >> Here's the full episode.
+[00:45.76]  I wanted to start by asking you, what is
+[00:48.84]  functional programming in your words,
+[00:50.88]  and why does it matter to people who
+[00:53.84]  might use the other languages, the
+[00:55.68]  imperative languages?
+[00:57.24]  >> Functional programming is about
+[00:58.24]  programming with values instead of
+[01:00.44]  mutation. Um, so, uh, in a conventional
+[01:04.56]  imperative programming, computation
+[01:05.92]  proceeds by, um, like if I want to add
+[01:07.80]  up the numbers between 1 and 100, um, I
+[01:10.16]  have a a mutable cell containing a
+[01:12.04]  running total, and then, as computation
+[01:14.68]  proceeds, I keep adding, you know, I I I
+[01:17.52]  I I keep adding to my running total. So,
+[01:19.40]  there's a cell that changes its value
+[01:20.92]  over time. Computation proceeds step by
+[01:23.32]  step. There's a program counter.
+[01:25.12]  Now, that's very unlike mathematics. If
+[01:26.64]  I say 3 + 4 * 7, you don't think of a
+[01:29.80]  mutable cell that changes its value over
+[01:31.52]  time. You think, well, 3 + 4 is 7, 7 * 7
+[01:34.72]  is 49. That just The answer is 49. So,
+[01:37.68]  in a sense, it's more declarative than
+[01:40.72]  imperative. Um, another way to think of
+[01:44.00]  it is it's more like what a spreadsheet
+[01:45.12]  does. In a spreadsheet formula, if you
+[01:46.64]  put in a cell, you'd say,
+[01:49.32]  in A1, you put the formula equals A2 *
+[01:52.96]  A3 + 7,
+[01:55.44]  well, then, that's just a formula that
+[01:57.52]  is evaluated and you expect to compute
+[01:59.60]  the values of A2 and A3 automatically
+[02:01.64]  before computing A1. It wouldn't make
+[02:03.72]  any sense
+[02:05.00]  to compute A1 from the old values of A2
+[02:07.80]  and A3, right? So, and there's no notion
+[02:10.40]  of a program counter. There's no notion
+[02:11.88]  of do this and then do that.
+[02:13.84]  It wouldn't be sensible to say equals
+[02:15.92]  print X plus three.
+[02:18.72]  Because who knows when or even whether
+[02:20.64]  that cell will ever that formula will
+[02:22.12]  ever be evaluated. And then the surprise
+[02:24.36]  is
+[02:25.56]  that it is possible to do useful things
+[02:27.72]  in such a limited language. When I would
+[02:29.92]  learn programming, I learned it by
+[02:32.36]  writing machine code in which the
+[02:34.00]  fundamental mode of computation is
+[02:36.00]  registers and program counters, right?
+[02:38.44]  And mutation of registers as you go
+[02:40.12]  along and memory. Like computation and
+[02:42.84]  mutation seem to be inextricably
+[02:45.48]  interwoven, right? That's how
+[02:46.92]  computation gets done. Um so, it was a
+[02:49.48]  surprise to me when I learned that well,
+[02:51.52]  um it is possible to do useful things
+[02:54.56]  with functional programs.
+[02:56.76]  I still remember that amazing
+[02:58.36]  revelation. Now, um
+[03:01.28]  uh
+[03:02.24]  In fact, one way to look at it is this.
+[03:05.60]  Right back in the late 1920s, early
+[03:08.24]  1930s,
+[03:10.12]  Alan Turing was doing a PhD in Princeton
+[03:13.52]  under the supervision of Alonzo Church.
+[03:16.64]  Now, Alan Turing, as we all know,
+[03:17.96]  invented the Turing machine, which is
+[03:19.84]  fundamentally about mutation.
+[03:22.36]  Right? It has a little tape and you you
+[03:24.56]  can read things on the tape and then you
+[03:25.96]  write back new things onto the tape and
+[03:27.44]  it has an immutable program, right?
+[03:30.36]  Now, Alonzo Church at the very same time
+[03:32.84]  was working on something he called the
+[03:34.12]  lambda calculus, in which there's no
+[03:35.92]  notion of mutation. This is it the
+[03:37.84]  lambda calculus is like the essence of
+[03:39.72]  functional programming.
+[03:42.20]  Programs execute just by reduction. Um
+[03:45.16]  now, so these were two different models
+[03:47.04]  of computation. You might ask, what can
+[03:49.36]  you compute with the Turing machine and
+[03:51.56]  what can can
+[03:52.72]  with a lambda term. And the astonishing
+[03:54.88]  thing that turned out, which is
+[03:56.00]  completely non-obvious,
+[03:58.32]  is that anything you compute with a
+[04:00.48]  lambda term, you can compute with a
+[04:01.80]  Turing machine, and anything you compute
+[04:03.52]  with a Turing machine, you can compute
+[04:04.76]  with lambda calculus.
+[04:06.24]  So, that means that the two are
+[04:07.84]  identical from the point of view of
+[04:09.12]  their computational power.
+[04:11.60]  Big surprise to me.
+[04:13.72]  Okay, so they're equally powerful, and
+[04:15.76]  then then the question is, um
+[04:17.80]  you know, which which which might you
+[04:19.36]  want to choose? As I say, I started life
+[04:22.00]  from the my baseline of imperative
+[04:23.88]  programming, and of course that's the
+[04:25.12]  way you write programs, and functional
+[04:26.96]  programming is a kind of weird,
+[04:28.68]  anomalous, rather nerdy, academic thing.
+[04:32.16]  But,
+[04:34.28]  I became hooked on the idea that by
+[04:37.64]  excluding side effects by default, that
+[04:40.36]  is imperative programming has side
+[04:41.80]  effects by default, by excluding side
+[04:43.16]  effects by default, we could make
+[04:44.56]  programs that are easier to write,
+[04:46.08]  easier to maintain, easier to reason
+[04:47.80]  about.
+[04:48.84]  And then the question is, um
+[04:51.20]  uh what are the practical obstacles? Is
+[04:53.60]  it slower? Is it less convenient? And so
+[04:55.52]  forth. So, in effect, I've devoted my
+[04:57.44]  research life to exploring that
+[04:59.40]  hypothesis. The wonderful thing about
+[05:01.28]  being a researcher is you can take
+[05:02.92]  something which at the time, this is
+[05:04.68]  back in 19
+[05:07.76]  80
+[05:09.28]  back in 1980, uh functional programming
+[05:11.40]  was very nerdy, geeky, academic, um but
+[05:14.08]  I was allowed to
+[05:16.08]  spend my professional life just saying,
+[05:18.20]  "What would happen if you took that one
+[05:19.76]  idea, programming with values,
+[05:22.40]  and just ran with it? Where would you
+[05:23.88]  get?"
+[05:24.76]  Um and I think we've got somebody
+[05:26.40]  somewhere pretty interesting. I don't
+[05:28.00]  want to say that it's better
+[05:30.24]  fundamentally, because after all, uh
+[05:32.32]  Haskell on that journey started with
+[05:34.20]  functional programming, then we learned
+[05:35.60]  how to mix functional imperative
+[05:37.04]  programming together in a way that we
+[05:38.36]  might talk about later, right? So, it's
+[05:40.32]  not really an either or, it's more of a
+[05:42.48]  both and in the end.
+[05:44.56]  But, my uh position now is, as often
+[05:48.64]  say, when the limestone of imperative
+[05:52.40]  programming is worn away, the granite of
+[05:55.16]  functional programming will be revealed
+[05:56.72]  underneath.
+[05:57.80]  >> And why do you say that?
+[05:59.40]  >> Well, functional programming is the
+[06:00.36]  language of mathematics.
+[06:01.96]  Right, that's that's how we
+[06:04.32]  we fundamentally think about things when
+[06:06.00]  we want to be formal. Indeed, if we want
+[06:08.04]  to reason about and say what does this
+[06:09.68]  imperative program do, we have to wheel
+[06:11.32]  out a lot of mathematics and you know,
+[06:13.40]  whole triples and so forth. But that's
+[06:14.96]  all in the world of math, which is
+[06:16.44]  functional programming.
+[06:17.72]  Functional programming is just
+[06:18.56]  mathematics brought to life and made
+[06:20.04]  executable.
+[06:22.76]  So,
+[06:23.96]  you might wonder
+[06:25.36]  I suppose um
+[06:27.60]  you maybe saying, well, isn't imperative
+[06:30.76]  programming just enough?
+[06:32.88]  And I think that
+[06:34.96]  there you have to have to um
+[06:37.36]  uh just look at the broad sweep of
+[06:39.92]  things. I think what's happened is that
+[06:41.72]  from the world of functional
+[06:42.68]  programming, lots of ideas have got
+[06:44.44]  adopted into the imperative arena. Like
+[06:46.76]  so they grew up over here in functional
+[06:48.52]  programming
+[06:49.88]  and then they have been adopted by the
+[06:52.64]  imperative programming
+[06:54.20]  things. So, you I think garbage
+[06:55.60]  collection, you might think lambdas, you
+[06:57.16]  might think language integrated query,
+[06:59.60]  you might think about lots about type
+[07:01.04]  systems,
+[07:02.64]  polymorphism and static typing, tons of
+[07:05.20]  that. So, at least it has been an
+[07:07.64]  intellectually interesting experiment
+[07:09.04]  that has been a very fertile laboratory
+[07:11.32]  which to grow up ideas that can infect
+[07:13.28]  the mainstream. Now,
+[07:14.84]  um
+[07:15.60]  my
+[07:17.28]  instincts now is that we should start
+[07:20.04]  from functional programming and do
+[07:22.04]  imperative programming where necessary.
+[07:24.24]  I think probably the mainstream is we
+[07:26.24]  should start with imperative programming
+[07:28.12]  and sort of add bits of functional
+[07:29.64]  programming where possible.
+[07:31.64]  But and I'm not going to say that
+[07:33.48]  they're wrong to do that, just to say
+[07:35.28]  that I think there's a pretty
+[07:36.20]  interesting dialogue.
+[07:38.20]  Um now,
+[07:39.80]  you You to do have to think very
+[07:41.52]  differently about the act of
+[07:42.68]  programming, right? You do have to
+[07:43.76]  rewire your brain quite a bit. Um but
+[07:45.88]  just let me this is something we might
+[07:47.00]  want to come back to. I said easier to
+[07:48.60]  maintain.
+[07:50.40]  As programs get old, well just think of
+[07:52.00]  a 10-year-old program.
+[07:54.28]  Right? If you have um a piece of
+[07:56.48]  10-year-old code written by somebody
+[07:57.76]  who's long since left your company that
+[08:00.28]  mutates some more or less global
+[08:02.08]  variables,
+[08:03.60]  then you might be a little bit a bit a
+[08:04.60]  little bit afraid about Oh, and there's
+[08:06.40]  other bits of code scattered about that
+[08:08.56]  also read or write those mutual those um
+[08:11.52]  global variables, then you might be a
+[08:13.56]  little cautious about making
+[08:14.92]  modifications, right? Lest Oh, if I put
+[08:18.32]  these two things if I do B and then A
+[08:19.96]  instead of A and then B,
+[08:21.64]  maybe,
+[08:22.84]  you know, the global variable that I
+[08:24.20]  read in read somewhere deep inside the
+[08:26.52]  code is now not have the value that it
+[08:29.20]  was expected to. So,
+[08:31.20]  reading and writing um shared variables
+[08:34.36]  that are visible, you know, outside the
+[08:35.96]  scope sort of somewhat global variables
+[08:38.40]  is a form of coupling between bits of
+[08:40.76]  code that is very invisible.
+[08:42.92]  Right? Very invisible. So, functional
+[08:44.56]  programming forces that to become
+[08:46.08]  visible.
+[08:47.40]  It forces it into the open. And by the
+[08:49.68]  act of forcing it into the open, that
+[08:51.40]  strongly encourages a style of
+[08:53.12]  programming which you would don't have
+[08:54.36]  such interactions because they are
+[08:56.20]  painful to manage.
+[08:57.72]  Um so,
+[08:59.32]  um it encourages a uh
+[09:03.44]  uh a style in which programs execute in
+[09:05.48]  modular box without interacting. Now,
+[09:07.12]  every imperative programmer would want
+[09:08.80]  to do that. But I want them to do that
+[09:11.60]  in a provably secure way.
+[09:13.84]  So, you can know that these programs
+[09:15.64]  don't interact rather than just say,
+[09:17.44]  "I've done my best."
+[09:18.96]  >> Then I guess on the on the flip side
+[09:20.68]  then, what are the downsides of
+[09:23.00]  functional programming language?
+[09:25.40]  >> Oh, well, it can be very tiresome and
+[09:28.20]  inconvenient, right? So, you're
+[09:29.68]  somewhere deep in the ball you know, a a
+[09:32.00]  a subroutine of a subroutine of a
+[09:33.28]  subroutine of a some soft software
+[09:34.88]  stack, and you want to reach out and I
+[09:36.88]  don't know, grab the time of day.
+[09:40.16]  Oh dear.
+[09:41.56]  That's a side effect.
+[09:43.16]  But when in a pure functional language,
+[09:44.48]  the time of and it did there's a good
+[09:46.32]  reason because everybody else higher in
+[09:48.56]  the stack is assuming that if I call
+[09:50.36]  this function applied to, you know,
+[09:51.88]  seven, it will give me the same answer
+[09:53.80]  if I call it call it again applied to
+[09:55.72]  seven. But if it can interrogate the
+[09:57.40]  time of day, suddenly it might give a
+[09:58.52]  different answer.
+[10:00.40]  Right? So, this a simple a thing as look
+[10:03.52]  as asking for the time of day
+[10:05.40]  invalidates all set of assumptions and
+[10:07.24]  so is not by default allowed at all. And
+[10:10.16]  that can be a convenient because you all
+[10:11.48]  you say, "Look guys, all I want to do is
+[10:13.28]  get hold of the time of day. Don't give
+[10:14.60]  me grief."
+[10:16.40]  And so every functional programming
+[10:17.76]  language including Haskell um provides
+[10:19.72]  you with a little trapdoor.
+[10:21.48]  Haskell's is called unsafePerformIO.
+[10:25.64]  And it says,
+[10:26.92]  "Trust me. I'm going to do something
+[10:28.68]  that has side effects, but you can
+[10:30.56]  pretend there weren't any."
+[10:33.40]  All right. So, and it's called it is
+[10:35.88]  literally spelled u n s a f e perform
+[10:38.16]  i/o. It's the long name that has unsafe
+[10:40.92]  in the title so that you the programmer
+[10:42.56]  taking on the obligation to make sure
+[10:44.72]  that what you're doing is okay.
+[10:46.92]  Whereas in an imperative language,
+[10:48.72]  everything you do could be
+[10:50.36]  unsafePerformIO-ish.
+[10:53.04]  >> [laughter]
+[10:53.32]  >> I was watching one of your lectures and
+[10:55.72]  you did go over a little bit the history
+[10:58.12]  of functional programming languages
+[11:00.92]  and you mentioned somewhere that there
+[11:04.16]  was this idea of people building
+[11:06.00]  hardware for functional programming
+[11:08.20]  languages.
+[11:09.72]  This just made me curious because I
+[11:11.20]  didn't I only know the Von Neumann
+[11:14.44]  architecture. Do you have any idea what
+[11:17.00]  that might look like and some high-level
+[11:18.96]  thoughts?
+[11:20.68]  >> Well, I did it. Um and now I think it's
+[11:23.08]  probably a bad idea.
+[11:24.96]  Um but back in 19 when was Backus's
+[11:28.84]  Turing Award lecture? I I it was 1978 or
+[11:31.60]  there about.
+[11:32.76]  What was it called? Um
+[11:34.24]  >> Can programming be liberated from the
+[11:36.68]  von Neumann style?
+[11:38.32]  >> That's it. Now, he was saying two
+[11:39.88]  things. Firstly,
+[11:41.56]  he, the designer of Fortran, a
+[11:44.00]  quintessentially imperative language,
+[11:46.28]  the designer of Fortran was saying,
+[11:48.40]  "Guys, we should do functional
+[11:49.76]  programming."
+[11:51.68]  That was the That was what the talk was
+[11:53.12]  about. Um and um
+[11:56.24]  uh
+[11:57.40]  he introduced a language called FP
+[12:00.20]  for functional programming. It was a
+[12:01.16]  very particular, somewhat idiosyncratic
+[12:03.08]  functional programming language, but
+[12:04.12]  there was. So, that was rather amazing,
+[12:06.04]  right? This was 1977.
+[12:09.12]  Um
+[12:10.44]  he was saying, "Guys, give up on
+[12:12.00]  imperative programming. Just do
+[12:13.60]  functional programming. Here's how you
+[12:14.56]  do it."
+[12:15.60]  But, he also said in the same lecture,
+[12:18.32]  um
+[12:19.44]  "We might imagine designing new hardware
+[12:21.64]  to execute this new kind of language."
+[12:23.36]  So, if you like, we've got Turing
+[12:24.76]  machines, they let give rise to register
+[12:26.72]  machines and microprocessors and so
+[12:28.24]  forth. Maybe lambda calculus, perhaps if
+[12:30.68]  we designed a machine from the ground up
+[12:32.88]  to do lambda calculus,
+[12:35.52]  it would look different.
+[12:37.56]  So, that was of course very exciting.
+[12:40.64]  And
+[12:41.68]  um
+[12:42.80]  uh similar kind of thinking led to an
+[12:44.92]  actual commercial machine called the
+[12:46.28]  Lisp machine. That was a piece of
+[12:48.24]  hardware that was designed by Symbolics
+[12:50.52]  to execute Lisp programs. Lisp is a
+[12:53.12]  mostly functional programming language.
+[12:55.28]  Um
+[12:56.36]  And so, at the time I was, you know, in
+[12:58.92]  my early 20s, we were thinking, "Oh,
+[13:01.40]  crumbs, what would a piece of hardware
+[13:03.36]  look like that could was primarily
+[13:05.08]  designed to execute functional programs?
+[13:06.68]  Would it have a different kind of
+[13:07.44]  instruction set and architecture?" So,
+[13:09.96]  um
+[13:11.08]  the nearest we got to it actually was
+[13:12.64]  although it was a big strand of work
+[13:14.28]  then that was the um called the MIT data
+[13:17.36]  flow project. So, data flow languages,
+[13:19.76]  functional languages, they're definitely
+[13:21.00]  the same kind of category, right? And
+[13:23.84]  so, um
+[13:25.56]  the MIT had this great group led by
+[13:28.76]  Arvind called the MIT data flow group
+[13:30.68]  and they designed in the end a machine
+[13:33.04]  called monsoon.
+[13:35.00]  It was specifically designed to execute
+[13:37.12]  data flow programs, that is functional
+[13:38.52]  programs.
+[13:39.60]  It was based on uh you know a token
+[13:41.48]  store and matching and tokens flowing
+[13:43.44]  around and getting matched up and
+[13:44.92]  executing. You can imagine data flowing
+[13:47.60]  through a graph. When three arrives at a
+[13:49.80]  plus node and four arrives at the other
+[13:51.56]  input of the plus node, bam you can fire
+[13:53.36]  that plus node, right? And that hardware
+[13:55.40]  did all of that.
+[13:58.32]  At a similar kind of time in England my
+[14:00.72]  um
+[14:01.64]  colleagues uh Thomas Clark, Joe Stoy and
+[14:03.80]  others um built something called the SKI
+[14:05.88]  machine, SKIM.
+[14:07.36]  There's a paper about this in the
+[14:09.20]  um uh FDC conference. And SKIM was
+[14:12.48]  designed to execute SK combinators. So
+[14:15.28]  at the time
+[14:17.16]  David Turner has written a lovely paper
+[14:19.04]  in which he described how to take lambda
+[14:21.24]  calculus programs and translate them
+[14:23.32]  into SK combinators. So you can read
+[14:25.80]  about that in my book. It's a very
+[14:28.00]  simple translation that you can give the
+[14:29.44]  whole translation in half a dozen lines.
+[14:31.80]  But um then you have this message of
+[14:34.36]  this message of S's and K's. And S and K
+[14:37.16]  reduction is very very easy.
+[14:40.00]  Um so it's like the machine code of
+[14:42.64]  functional program. That's one way to
+[14:44.16]  think of it.
+[14:45.20]  >> What is a SK combinator just for
+[14:48.56]  context?
+[14:49.68]  >> There are three combinators, SK and I.
+[14:51.84]  So and they have simple reduction rules.
+[14:53.64]  Here they are.
+[14:54.88]  IX = X. KXY = X. SXYZ is X of Z applied
+[15:00.32]  to Y of Z. End of story. That's all.
+[15:03.12]  So it's very simple, right? So now all I
+[15:05.08]  got to do is take to take my lambda
+[15:06.72]  translate it into a giant tree of SK
+[15:09.68]  combinators, right? S applied to K
+[15:11.92]  applied to I of um
+[15:14.28]  three and um S of Z of just a huge tree
+[15:18.12]  of S's and K's.
+[15:19.72]  Right? Now simply apply the rewrite
+[15:21.44]  rules I gave you.
+[15:22.72]  And you have That's That is program
+[15:24.08]  execution.
+[15:25.24]  It's rather astonishing that that can
+[15:26.44]  execute arbitrarily complicated
+[15:28.44]  programs, but it can.
+[15:30.76]  Do you think that's rather amazing?
+[15:33.20]  Now, then I can take an arbitrary
+[15:34.88]  Haskell program, I can translate it into
+[15:37.76]  lambda terms, and I can translate those
+[15:39.88]  lambda terms into S and K, very simple
+[15:41.92]  transformation, and I can just write
+[15:43.80]  those Run those three rules, and it'll
+[15:45.68]  produce the output of the Haskell
+[15:46.80]  program. That's pretty amazing. And
+[15:48.68]  indeed, there is an implementation of
+[15:50.08]  Haskell that uses exactly this. It's
+[15:51.68]  called microHS, and my colleague Lennart
+[15:53.76]  Augustsson um has built it, and its
+[15:56.40]  execution mechanism is SK combinator
+[15:58.84]  reduction. And if you sit in microHS,
+[16:01.16]  you can ask it to show you the S's and
+[16:02.88]  K's that it produces. If we had a, you
+[16:05.04]  know, shared screen, I could probably
+[16:06.32]  show you. Um
+[16:08.80]  Uh So, long story short then, um
+[16:12.16]  uh
+[16:13.28]  the SKI machine was designed to take SK
+[16:16.84]  trees, big trees of S's and K
+[16:18.84]  combinators, and just execute them
+[16:20.44]  directly. So, it was built
+[16:22.96]  in hardware, and it ran perfectly well,
+[16:26.12]  um reasonably fast.
+[16:27.84]  Now, why didn't this catch on? Why don't
+[16:29.92]  we have
+[16:31.28]  um functional programming machines? I
+[16:32.64]  mean, at the time, it was a big idea. We
+[16:34.28]  even had a conference called
+[16:36.48]  Functional Programming Computer
+[16:37.80]  Architecture, FPCA. It was right there
+[16:40.92]  in the title of the conference.
+[16:43.96]  But slowly, we became aware that
+[16:47.28]  what was really happening is we were
+[16:49.28]  doing at run time what we could do
+[16:51.24]  instead at compile time.
+[16:53.72]  And that is always a bad idea.
+[16:56.28]  Imagine an interpreter for, I don't
+[16:58.04]  know, um Pascal or something.
+[17:01.44]  It'd be Or uh for Java. Like, we can
+[17:03.80]  compile Java to bytecode, and we could
+[17:05.76]  interpret the bytecode.
+[17:08.80]  Right? So, then we are We're doing
+[17:10.88]  something at run time. At run time, the
+[17:12.76]  interpreter is looking at the bytecode
+[17:14.32]  saying, dispatching to say which
+[17:15.80]  instruction, blah blah blah. right?
+[17:18.32]  Now, what does a JIT do? It takes a
+[17:20.08]  sequence of bytecode and says, "Oh, no,
+[17:21.48]  no.
+[17:22.64]  I'm going to take that sequence of
+[17:24.08]  bytecode and compile it to a sequence of
+[17:25.60]  machine instructions that, when
+[17:27.40]  executed, will do the same thing,
+[17:28.96]  right?"
+[17:30.80]  Much faster.
+[17:34.00]  Because it can take advantage of common
+[17:35.48]  of bytecode sequences, for example, to
+[17:37.36]  say, you know, if you swap and then
+[17:39.20]  swap, it's a no-op or something like
+[17:40.52]  that, right?
+[17:43.96]  So, what In fact, it turned out is this
+[17:46.64]  whole SKI business, and any other And
+[17:49.32]  indeed dataflow machines also, was
+[17:51.40]  simply doing at runtime what you could
+[17:53.36]  do better at compile time. We were
+[17:55.24]  building an interpreter in hardware.
+[17:58.92]  So, don't build the interpreter in
+[18:00.20]  hardware. Instead, build a compiler
+[18:02.56]  that translates
+[18:04.44]  your lambda term into a sequence of
+[18:06.52]  machine instructions that, when
+[18:08.32]  executed,
+[18:09.96]  will behave as if you had
+[18:12.36]  done this uh reduction business.
+[18:14.96]  And then you might think, well, machine
+[18:17.00]  instructions for what machine?
+[18:19.56]  Well,
+[18:20.56]  from a practical point of view, it was
+[18:22.76]  very hard to compete with Intel.
+[18:25.76]  Right? They were just spending
+[18:27.24]  Brazilians of man-years on making x86s
+[18:29.80]  go faster.
+[18:31.24]  And ARM likewise for ARMs. So, um we can
+[18:34.28]  leverage all of that work by compiling
+[18:36.00]  into their instruction set.
+[18:38.48]  But even if you say you are God, you are
+[18:41.32]  the chief executive in Intel, and can
+[18:43.44]  tell them to add new instructions or
+[18:46.24]  mechanisms to support functional
+[18:47.84]  programming, what would you add?
+[18:50.12]  Not very much.
+[18:53.48]  Little bits to do with um
+[18:55.60]  uh garbage collection barriers, I think.
+[18:58.40]  And and such like, but nothing major.
+[19:03.72]  So, in other words, I think the whole
+[19:07.00]  build hardware to execute functional
+[19:08.68]  programming directly turned out to be a
+[19:10.52]  mistake. Inspiring mistake, fun mistake,
+[19:13.36]  I had a great time, but a mistake.
+[19:15.60]  It's better to build a compiler.
+[19:17.84]  >> I would have thought there might be some
+[19:19.72]  unique opportunities for parallelism
+[19:23.12]  given the immutability in these
+[19:25.20]  functional programming languages. So,
+[19:27.84]  I Yeah, you described that that graph or
+[19:30.08]  that SK combinator graph. I imagine you
+[19:33.72]  could,
+[19:34.72]  you know,
+[19:35.68]  execute that all in parallel assuming
+[19:37.68]  there's no connections across
+[19:39.84]  the graph.
+[19:40.52]  >> And indeed, that was the data flow
+[19:41.96]  machine. The MIT data flow machine was
+[19:43.56]  all based on that idea. It's saying just
+[19:45.28]  throw the whole graph into the token
+[19:46.88]  store and just run all the nodes that
+[19:48.96]  are runnable.
+[19:50.48]  Right?
+[19:51.36]  But that's incredibly fine grained.
+[19:53.12]  You've got to imagine this big tree of a
+[19:55.64]  million nodes and your processor is sort
+[19:58.00]  of wandering around over it doing little
+[19:59.72]  things in parallel. There's a lot of
+[20:01.64]  memory traffic going on there. And if
+[20:03.16]  this these these little, you know,
+[20:04.40]  threads have to, you know, are operating
+[20:06.04]  on the same bit of tree, then the
+[20:07.16]  synchronization costs,
+[20:08.88]  um so, very, very fine grained computer
+[20:12.68]  parallel computation like this turns out
+[20:14.48]  to be impractical.
+[20:17.00]  Like or not impractical. You could do
+[20:18.64]  it, but it's very slow.
+[20:20.88]  Right? So, the data flow people, their
+[20:23.32]  history, if you look at the history of
+[20:24.72]  the MIT data flow project, they started
+[20:26.80]  with micro parallelism. Every individual
+[20:30.48]  instruction was a separate parallel
+[20:32.60]  computation that might take place and
+[20:34.80]  the token store would match it up.
+[20:36.40]  Right? And then they built more and more
+[20:38.56]  compiler technology that grouped these
+[20:40.28]  things together into larger units. So,
+[20:42.68]  they expanded from micro threads of
+[20:44.88]  single instruction threads into 10
+[20:46.80]  instruction threads or 100 instruction
+[20:48.32]  threads. Right?
+[20:49.88]  But even that never really caught on.
+[20:51.68]  So,
+[20:53.12]  you're right, though,
+[20:54.44]  that if I say in a Haskell program, E1 +
+[20:57.52]  E2,
+[20:58.96]  then I can do E1 and E2 in parallel. And
+[21:01.92]  GHC does support you in doing that, but
+[21:04.08]  you nowadays, rather than expecting the
+[21:06.24]  compiler to do that automatically for
+[21:08.56]  every sub-expression,
+[21:10.28]  you can spark a computation. You say E1
+[21:13.32]  par E2, and that says do E1 and E2 in
+[21:16.80]  parallel. There's a project at Carnegie
+[21:19.32]  Mellon
+[21:20.56]  for a strict parallel strict language
+[21:22.32]  called ML
+[21:24.08]  that has a very good variant of parallel
+[21:26.16]  ML going in a similar way. So,
+[21:28.24]  essentially we've moved away from the
+[21:30.24]  the dream of
+[21:31.80]  automatically getting parallel at very,
+[21:34.52]  very fine grain
+[21:36.44]  to programmer
+[21:37.72]  we give programmer clues about where
+[21:39.24]  it's a good idea to do parallelism, but
+[21:41.64]  um
+[21:42.20]  uh and still the compiler will try not
+[21:44.40]  to fork to too tiny grains.
+[21:47.16]  >> I was searching on YouTube and I've
+[21:49.32]  searched your name and this video came
+[21:51.16]  up and it said "Haskell is useless,
+[21:54.96]  Simon Peyton Jones."
+[21:56.57]  >> [laughter]
+[21:56.72]  >> And it's it's a video from a long time
+[21:58.84]  ago. It's someone's got a low-quality
+[22:01.52]  and a handheld camera. There's group of
+[22:04.40]  researchers that are all talking. Butler
+[22:06.68]  Lampson is across the table and it's
+[22:08.44]  it's a fun little video. And in the
+[22:10.40]  video, you lay out this two-dimensional
+[22:14.36]  graph where on on one dimension
+[22:17.04]  there is the useful versus useless axis
+[22:22.44]  and then on the other dimension there is
+[22:24.28]  the safe versus dangerous. And then
+[22:27.00]  you're placing programming languages on
+[22:29.36]  this two-dimensional graph and I think
+[22:32.12]  you started by putting C as it's very
+[22:36.08]  useful, but it's incredibly dangerous.
+[22:39.52]  And then you put Haskell on the the
+[22:41.84]  polar opposite side. It's You said it's
+[22:44.08]  useless,
+[22:45.40]  but it's very safe. What are the least
+[22:48.04]  safe and most useful languages and why
+[22:50.48]  do you place them there like C for
+[22:52.28]  instance?
+[22:52.64]  >> Well, yeah. So, um
+[22:54.56]  let's see. In C, you program by
+[22:56.60]  mutation. So,
+[22:58.40]  it's unsafe in the sense that any
+[22:59.56]  function can mutate any variable at any
+[23:01.24]  time. It has a lot, you you pass
+[23:02.68]  pointers around a lot and functions
+[23:04.68]  mutate the memory pointed to by those
+[23:06.80]  pointers. And moreover,
+[23:08.28]  typically they can mutate it anywhere.
+[23:09.76]  There's no array bounds checks or
+[23:11.36]  anything. So, it's kind of like super
+[23:13.36]  unsafe in the fact that this is
+[23:14.40]  demonstrated by the fact Can you imagine
+[23:16.64]  that that like all of these exploits
+[23:18.32]  that we get every day, right? Um
+[23:21.28]  that uh you know, MSRC is discovering in
+[23:23.44]  huge numbers, but but we've had you
+[23:25.00]  know,
+[23:25.84]  why is the internet so insecure?
+[23:28.32]  Primarily because all of our software
+[23:30.04]  infrastructure is written in unsafe
+[23:31.24]  languages. If we I mean
+[23:34.08]  if we'd written all of our
+[23:35.88]  you know, internet software and
+[23:37.60]  operating systems in Haskell or maybe in
+[23:39.92]  OCaml or ML,
+[23:41.92]  99% of all these exploits would be
+[23:44.20]  removed by construction.
+[23:47.64]  Like it's like we've built a boat out of
+[23:52.28]  paper clips and we're surprised that
+[23:53.96]  it's leaky.
+[23:55.16]  I mean, you shouldn't build boats out of
+[23:56.56]  paper clips, right? Because they have
+[23:58.12]  holes in them. You should build it out
+[23:59.96]  of a secure substance, right? But then
+[24:02.12]  it's too late. So, we spend incredible
+[24:05.04]  amounts of human ingenuity and effort
+[24:06.92]  patching the holes in our boat built of
+[24:09.20]  paper clips. It's tragic. It's tragic
+[24:12.96]  how much effort and ingenuity and money
+[24:16.00]  has been lost and waste of resources
+[24:18.36]  just because we wrote our um you know,
+[24:21.84]  computational infrastructure for the
+[24:23.24]  world in an insecure language. That's
+[24:25.76]  what I mean by unsafe.
+[24:27.56]  >> I mean, are there not vulnerabilities?
+[24:29.16]  Like if I wrote something in Haskell, I
+[24:31.40]  mean,
+[24:32.36]  there's got to be some new type of
+[24:34.32]  >> there are vulnerabilities. I just said
+[24:35.44]  99%. I didn't say 100.
+[24:37.60]  If I write a Haskell program that says,
+[24:40.56]  "Receive message. If the message says,
+[24:43.20]  'Tell me everything,' then spit out my
+[24:46.96]  entire database in reply."
+[24:49.28]  No language can stop you doing that,
+[24:51.08]  right?
+[24:52.20]  But, if you look at the program and it
+[24:53.84]  doesn't have any such things,
+[24:55.64]  right?
+[24:56.69]  >> [laughter]
+[24:58.48]  >> So, I mean
+[24:59.80]  So, you know, nothing can prevent you
+[25:01.40]  against high-level attacks to insecure
+[25:03.12]  programs. Or, I mean, another example
+[25:04.84]  might be deadlock, right? Two services,
+[25:07.76]  no matter how securely written, if A
+[25:10.24]  waits for B and B waits for A, deadlock.
+[25:12.76]  Sorry.
+[25:15.48]  No and no language is going to stop you
+[25:17.68]  doing that.
+[25:18.88]  Um you might hope for some high-level
+[25:20.68]  verification tools.
+[25:22.48]  But it's like
+[25:25.16]  Surely, if you're trying to do something
+[25:27.32]  hard, like prove that that doesn't
+[25:29.16]  happen, you want to have a foundation
+[25:31.08]  that is, you know, in which you've got
+[25:32.96]  some bedrock to stand on. If you're
+[25:34.80]  standing on sand and trying to prove
+[25:36.84]  some advanced property, it's very, very
+[25:38.88]  difficult. But, good point. I'm not
+[25:41.12]  talking about 100% security. Absolutely
+[25:43.08]  not. But, uh how many how many of how
+[25:45.72]  many uh exploits are based on buffer
+[25:47.80]  overruns?
+[25:49.36]  Or, you know, pointer manipulation
+[25:51.20]  that's gone wrong.
+[25:52.44]  If you couldn't have a buffer overrun,
+[25:53.92]  you couldn't do pointer manipulations
+[25:55.28]  gone wrong. Those Those exploits just
+[25:57.08]  wouldn't exist.
+[25:58.80]  >> So, I mean, C is maybe half a century
+[26:02.08]  old now.
+[26:03.44]  Um
+[26:04.00]  what about more modern versions of those
+[26:07.32]  lower-level languages like Rust?
+[26:09.72]  >> Much, much better. Much, much, much
+[26:11.64]  better, right? If we rewrote all of our
+[26:14.12]  software infrastructure in Rust,
+[26:16.40]  things would be way, way better.
+[26:18.92]  I I'm not actually even sure whether
+[26:20.64]  Rust has array bounds checks built in,
+[26:22.80]  but suppose it but it must have the
+[26:24.56]  ability
+[26:25.00]  >> to
+[26:26.44]  >> uh
+[26:27.56]  promise that you're not uh and actually
+[26:29.04]  not bound. I don't quite know quite know
+[26:30.24]  how, but if you compile all your code
+[26:31.36]  with that switched on,
+[26:32.76]  you're a way better situation. Way
+[26:34.88]  better.
+[26:37.24]  So, yes, this is not just functional
+[26:38.84]  programming, but you did ask about why I
+[26:41.00]  thought C was an insecure, unsafe
+[26:42.76]  language.
+[26:44.11]  >> [laughter]
+[26:44.84]  >> If we imagine that graph, there's that
+[26:47.08]  the upper right quadrant, which is
+[26:49.52]  useful and safe. And you know, you
+[26:52.40]  described that as Nirvana in the in in
+[26:55.36]  the video. And I guess maybe over time,
+[26:58.28]  I mean C's you know, somewhat really
+[26:59.84]  unsafe, really useful.
+[27:01.36]  >> Yes, so C I mean Rust has moved along
+[27:03.72]  the axis
+[27:05.00]  from
+[27:06.16]  useful but very unsafe
+[27:08.60]  to stay useful and become safer.
+[27:11.68]  Now, Haskell started life as being very
+[27:13.68]  safe but useless.
+[27:15.64]  So, it's worth just you know, rehearsing
+[27:17.16]  that because in the first version of
+[27:18.64]  Haskell, there was no IO.
+[27:21.00]  The only that a Haskell program was a
+[27:23.24]  function of type string to string.
+[27:25.52]  It's functional programming after all.
+[27:27.36]  It could do no IO. All it could do was
+[27:29.20]  take a string and produce a string.
+[27:31.88]  So, obviously that's not very useful.
+[27:34.76]  It's a little bit more useful. A
+[27:35.92]  language that is very very safe
+[27:38.12]  and completely useless is no-op
+[27:40.68]  that does nothing ever.
+[27:42.36]  Very safe
+[27:43.80]  but very useless. Haskell was a bit
+[27:45.24]  better, right? At least it lets you um
+[27:48.40]  apply a function to a string and get
+[27:49.80]  back another string.
+[27:52.28]  So, of course we then worked on how
+[27:53.92]  could we do IO in Haskell in a safe way.
+[27:56.16]  That will lead to, you know, monads and
+[27:57.88]  stuff. But But so, just as uh uh
+[28:01.04]  the you know, we're moving from C
+[28:03.24]  horizontally to go safer and safer
+[28:06.24]  um but
+[28:07.52]  uh but staying useful. So, from Haskell
+[28:10.48]  we're moving sort of vertically to get
+[28:12.48]  more and more useful without stopping
+[28:14.12]  being safe.
+[28:16.08]  And Nirvana is when we sort of meet up,
+[28:18.36]  right? So, but the point is not to say
+[28:20.48]  one is better than the other, but just
+[28:22.00]  to say that we both seek things that are
+[28:23.76]  useful and safe.
+[28:26.00]  >> And when I think of functional languages
+[28:28.68]  um in I guess in the mainstream or you
+[28:30.88]  know, what people are kind of thinking
+[28:32.12]  about, I hear Haskell. I also hear
+[28:34.84]  OCaml. Uh how do these two programming
+[28:37.32]  languages compare if someone was trying
+[28:38.96]  to pick a functional language to work
+[28:40.72]  with?
+[28:41.64]  >> So, OCaml is um a strict language that
+[28:44.12]  is called by value.
+[28:46.00]  So, when you say F applied to 3 + 4,
+[28:48.52]  it'll add 3 + 4 and then call F
+[28:51.16]  to get 7, right? In Haskell, if you say
+[28:52.64]  F of 3 + 4, it'll build a little
+[28:54.60]  suspension that says, "Well, if you ever
+[28:55.96]  need this 3 + 4,
+[28:57.84]  you can evaluate it, but maybe you'll
+[28:59.20]  never need it." And then it calls F.
+[29:01.28]  That's a lazy language. Right? Now, uh
+[29:05.00]  so because OCaml is strict, it has a
+[29:08.12]  defined order of evaluation.
+[29:11.48]  So if you say F of 3 + 4 and a second
+[29:14.52]  parameter 8 + 9, it'll evaluate 3 + 4
+[29:17.12]  and then 8 + 9 in that order.
+[29:20.04]  Right? So it makes sense to say you can
+[29:22.16]  say F of print hello, {comma} print
+[29:25.00]  goodbye.
+[29:27.60]  Right? Because you'll get hello and then
+[29:29.56]  goodbye printed.
+[29:31.24]  So once you have a defined order of
+[29:32.80]  evaluation, then it's pretty easy to
+[29:34.92]  incorporate IO.
+[29:37.44]  Right? Even though it's {quotes} a
+[29:39.04]  functional language,
+[29:41.24]  OCaml allows you to do IO without, you
+[29:44.60]  know, without saying unsafe before my IO
+[29:46.32]  or anything. In fact,
+[29:48.20]  it has a defined order of evaluation and
+[29:49.88]  it's perfectly kosher to do that.
+[29:52.40]  As a sort of unintended consequence of
+[29:55.36]  being called by value, it was also by
+[29:57.88]  default impure. Now, good Haskell good
+[30:00.12]  OCaml programmers won't use many side
+[30:01.80]  effects, but
+[30:04.80]  OCaml doesn't prevent you.
+[30:07.44]  Haskell prevents you. Why does it
+[30:09.24]  prevent you? Because if we'd allowed you
+[30:11.80]  to say F of print hello, {comma} print
+[30:14.60]  goodbye,
+[30:16.68]  those would be thunks, right? Not yet
+[30:18.36]  evaluated.
+[30:20.56]  Right? So if F happened to evaluate its
+[30:22.60]  first argument and then its second,
+[30:25.68]  we'd print hello and then goodbye. If it
+[30:27.44]  evaluated its second and then its first,
+[30:29.00]  we'd print goodbye and then hello. If it
+[30:30.24]  didn't evaluate either, we wouldn't
+[30:31.32]  print either of them.
+[30:32.76]  That doesn't sound very good from a uh
+[30:34.52]  you know, if you want to control what IO
+[30:35.84]  is happening. Right? Laziness forced
+[30:39.08]  Haskell to stay pure. Strictness allowed
+[30:42.20]  OCaml, which grew out of the ML
+[30:44.20]  tradition by the way, ML is another
+[30:46.04]  functional language that predated
+[30:47.28]  Haskell.
+[30:48.28]  It was always strict and it always had
+[30:50.40]  IO by default.
+[30:52.48]  Um
+[30:53.60]  it wasn't a goal, but that's just the
+[30:55.20]  way it worked out. At the time, nobody
+[30:57.04]  thought about it. It was just obvious.
+[31:00.28]  So, that's a big difference between
+[31:01.36]  OCaml and Haskell, right? Is that um
+[31:04.68]  Now then, since then they've both grown
+[31:06.52]  up. Haskell's gained sort of monads and
+[31:09.04]  I uh OCaml has gained lots of uh lots of
+[31:11.80]  fancy type systems. Some of them uh
+[31:13.96]  Haskell and OCaml have learned from each
+[31:15.44]  other. Um OCaml has gained an
+[31:17.56]  interesting effect system recently and a
+[31:19.36]  whole lot of new extensions. It's an
+[31:20.96]  absolute hotbed of innovation at the
+[31:23.00]  moment OCaml. So, I view OCaml and and
+[31:26.08]  Haskell as kind of um siblings.
+[31:28.28]  Um brothers and sisters, right? We love
+[31:30.28]  each other, we learn from each other, um
+[31:32.44]  we compete with each other, all of the
+[31:34.04]  things that siblings do.
+[31:35.60]  But, they're not the same, right? So,
+[31:37.40]  siblings don't say, "I'm I'm just better
+[31:39.60]  than you. You shouldn't exist." We say,
+[31:41.68]  "Let's Let's enjoy our life together."
+[31:43.28]  And that's what it That's the way it is.
+[31:44.92]  >> You described the laziness and the
+[31:46.56]  strict and as a programmer I my initial
+[31:50.24]  thought is I would like to control the
+[31:52.76]  order of execution. And when I say
+[31:55.68]  print X, I and then print Y, I I want it
+[31:59.32]  to happen that order, otherwise it would
+[32:01.04]  be a little unintuitive. What is the
+[32:03.52]  main benefit of laziness?
+[32:05.80]  >> Why is laziness good? Well, um
+[32:08.80]  uh John Hughes did did this rather well
+[32:11.16]  way ago, 1980 something. He wrote a
+[32:14.08]  program called Why Functional
+[32:15.12]  Programming Matters.
+[32:16.64]  Um
+[32:17.40]  and one of its main thesis was that lazy
+[32:19.20]  evaluation lets you um
+[32:21.96]  uh compose programs in a particularly
+[32:24.44]  modular way.
+[32:25.80]  So, imagine a program that is I mean,
+[32:27.68]  his classic example is a program that
+[32:29.08]  plays chess,
+[32:30.52]  right? So, one thing you could do is you
+[32:32.60]  could imagine building a tree of all
+[32:35.32]  possible moves starting from the
+[32:36.92]  position we're at.
+[32:38.36]  It would be a very, very big tree.
+[32:40.68]  You know, OCaml, it would be too big.
+[32:43.12]  Because first of all, I compute the
+[32:44.52]  tree,
+[32:45.64]  and then I'd start deciding what move to
+[32:47.12]  do. I couldn't possibly do that. But if
+[32:49.20]  the tree of all possible moves, you
+[32:50.64]  know, has more nodes in it than the
+[32:51.84]  number protons in the universe.
+[32:54.36]  So, let's not do that. Now,
+[32:56.76]  if instead you could build the tree Oh,
+[32:58.96]  having got this tree, supposing you had
+[33:00.76]  it, you could then walk over the tree
+[33:02.32]  saying, "Ah, let me do some mini-maxing
+[33:04.64]  and see Oh, this is looks like a good
+[33:06.48]  Let me go this way." I could explore the
+[33:08.20]  tree, right? Um
+[33:10.36]  Now then, so
+[33:12.52]  if you you know, OCaml, then you would
+[33:14.32]  have to put the tree generation and the
+[33:16.08]  tree exploration in one function.
+[33:19.72]  Right? In Haskell, with lazy evaluation,
+[33:22.00]  you can generate an infinite tree,
+[33:24.44]  and then the explorer that prunes the
+[33:26.68]  tree and explores just the bits of it
+[33:28.72]  that is necessary is completely
+[33:30.92]  modularly separated.
+[33:32.72]  Right? I can build a different generator
+[33:34.60]  and a different pruner. They're just
+[33:36.36]  completely separate programs.
+[33:38.68]  So, lazy evaluation is very powerful
+[33:40.80]  glue that lets you glue together um
+[33:45.48]  uh two programs that you'd like to be
+[33:48.16]  distinct. Strict evaluation forces you
+[33:50.80]  to merge them together.
+[33:53.24]  >> Yeah, this reminds me I mean um
+[33:55.48]  so, in Python, for instance, they have
+[33:57.64]  the idea of a generator where
+[33:59.56]  >> Yes.
+[34:00.00]  >> you can lazily retrieve things.
+[34:01.92]  >> Every strict language, every, you know,
+[34:04.24]  serious strict language has lazy
+[34:06.40]  evaluation in it. They're called
+[34:07.72]  iterators or generators.
+[34:10.16]  And so does OCaml.
+[34:11.72]  All right?
+[34:12.68]  But in Haskell, that's the default.
+[34:15.84]  Now, instead in Haskell, so this is a
+[34:17.40]  bit like Again, the two are converging
+[34:19.20]  on the middle, right? Haskell, lazy by
+[34:21.44]  default, but you can make things strict.
+[34:23.64]  You can put in exclamation marks to say,
+[34:25.48]  "Please evaluate this before the call."
+[34:28.36]  All right?
+[34:29.28]  Or the IO monad know how say evaluate,
+[34:30.84]  but that's a a more brutal strict strict
+[34:32.92]  annotation. So, in Haskell you can make
+[34:34.64]  things stricter.
+[34:36.64]  In OCaml you can make things lazier.
+[34:40.60]  All right? So, it really boils down to
+[34:43.32]  is what's the default.
+[34:45.76]  We both want to have a mixture of the
+[34:47.68]  two.
+[34:49.24]  And then it becomes a bit cultural as to
+[34:50.88]  which you prefer. Um
+[34:52.92]  I I don't know. Uh some people sometimes
+[34:54.92]  ask me, they say, "Well, if you were
+[34:56.76]  designing Haskell again, would you make
+[34:58.28]  it strict by default
+[35:00.56]  with really good support for laziness?"
+[35:02.96]  And I often say, "Well, I might."
+[35:05.52]  Uh yeah, that seemed attractive because
+[35:07.16]  frequently I found myself cursing
+[35:09.20]  laziness as an implementer.
+[35:11.32]  But, I strongly suspect that 10 years
+[35:13.48]  after that I'd be thinking,
+[35:15.16]  "Man, if only it was lazy by default."
+[35:19.68]  Oh, when I say strict by default I would
+[35:21.32]  or definitely mean strict but pure.
+[35:24.68]  Like, no side effects.
+[35:26.72]  >> A few times in our conversation you've
+[35:28.68]  mentioned the word monad. And it seems
+[35:31.60]  like it allows us to do the side effects
+[35:33.84]  and
+[35:34.72]  um
+[35:35.80]  what is a monad and yeah, how does it
+[35:38.52]  help us do side effects and preserve
+[35:40.44]  ordering?
+[35:41.48]  >> One
+[35:42.60]  way to think about it that's very um
+[35:45.52]  easy to understand and use is just to
+[35:47.36]  imagine that the do notation is somehow
+[35:50.00]  built into Haskell. So, you can say do
+[35:52.76]  print X semicolon print Y.
+[35:56.28]  And that has type
+[35:59.08]  IO unit.
+[36:00.56]  So,
+[36:01.48]  a value of type IO unit means I do some
+[36:04.56]  do some input output and return a value
+[36:06.44]  of type unit.
+[36:08.52]  An expression of type IO int
+[36:11.00]  is an expression that when you run it
+[36:13.28]  will do some
+[36:14.56]  IO and return an int.
+[36:17.32]  Okay? So, do let's you combine um
+[36:21.20]  IO performing computations together. So,
+[36:23.88]  uh
+[36:24.56]  print three
+[36:26.56]  has type
+[36:28.08]  IO unit.
+[36:30.56]  It does some IO,
+[36:32.20]  namely printing three, um
+[36:34.20]  get char
+[36:36.60]  has type IO char. It does some IO,
+[36:39.56]  namely reading a character from standard
+[36:41.32]  input, and returns a character.
+[36:44.44]  All right?
+[36:46.20]  Notice that's different from just char.
+[36:48.08]  So, you know, {quotes} x {quote} that
+[36:50.80]  has type char.
+[36:53.36]  It's just a character pure, right?
+[36:56.84]  Get char, the IO performing operation,
+[36:58.56]  has type
+[36:59.64]  IO char. It does some input output,
+[37:02.12]  and returns a character. Okay.
+[37:05.16]  The do notation lets you combine
+[37:07.20]  together,
+[37:08.36]  um
+[37:09.44]  IO performing computations.
+[37:12.52]  So, if you could say do,
+[37:14.44]  and then you say x {left arrow} get
+[37:16.64]  char,
+[37:18.04]  semicolon,
+[37:21.32]  put char x,
+[37:23.80]  then that x {left arrow} get char, that
+[37:26.00]  says run the get char computation,
+[37:28.84]  and get me the character, call it x.
+[37:31.64]  The put char x says
+[37:33.64]  run the put char computation to put x,
+[37:35.24]  and we combine them together with the do
+[37:36.60]  notation, and it combines two
+[37:39.04]  uh two computations to make one IO
+[37:41.56]  performing computation.
+[37:43.64]  Right?
+[37:45.52]  So, but these things are completely
+[37:47.00]  first class. That's what's new about
+[37:48.84]  monads compared to just make it into
+[37:51.08]  into C.
+[37:52.64]  x {left arrow} get char semicolon put
+[37:54.40]  char x.
+[37:56.12]  That's a computation whose type is IO
+[37:57.96]  unit.
+[37:59.84]  Right? Let me give it a name, so I can
+[38:01.44]  say let foo
+[38:03.24]  with type IO unit equals that do.
+[38:06.16]  Now, I can pass foo as an argument to
+[38:08.16]  something. I could put foo in a data
+[38:09.88]  structure. I could return foo as a
+[38:11.68]  result.
+[38:13.00]  It's a value just as much as three
+[38:16.60]  or plus.
+[38:21.08]  In particular, for example, I could say,
+[38:23.04]  "Do foo semicolon foo."
+[38:27.60]  That takes foo, uses it twice. Each time
+[38:31.44]  do foo semicolon foo says, "Do foo." and
+[38:33.68]  then do foo again.
+[38:35.92]  Right? So, I'll read a character and put
+[38:37.24]  it and then read a character and put it
+[38:38.28]  again.
+[38:40.00]  So, these values of type IO T for some
+[38:44.28]  type T are first-class values.
+[38:48.48]  Right?
+[38:49.64]  In C, I can't take X colon equals three
+[38:52.64]  semicolon, you know, Y plus four
+[38:55.96]  and pass that as an argument to
+[38:58.08]  something and expect it to happen
+[38:59.84]  wherever it's used, right? It's not a
+[39:01.44]  first-class value.
+[39:03.40]  >> When I first was learning this this
+[39:05.24]  monad idea, it seems like you've you've
+[39:07.96]  said in a few places it's a way to do
+[39:10.44]  the side effects, but keeps the language
+[39:12.28]  pure. But, when I saw it, my first
+[39:15.84]  thought was it's almost like this little
+[39:19.44]  you know, place where we segregate the
+[39:22.04]  dirty things we want to do, I guess.
+[39:23.80]  But, then how does that keep the
+[39:25.20]  language pure?
+[39:26.60]  >> Oh.
+[39:27.52]  Because because I mean yeah, we are
+[39:29.36]  lying here, but look, if your function
+[39:31.16]  has type int to int, can it do any IO
+[39:33.68]  any IO?
+[39:34.96]  >> No.
+[39:35.88]  >> No.
+[39:37.08]  If it has type int to IO int, it could
+[39:39.44]  do arbitrary IO.
+[39:42.64]  So, yes. So, it's nice pure int to int
+[39:45.88]  function or dirty int to int function.
+[39:49.00]  So, you might say, perhaps you're about
+[39:50.48]  to say, that's a bit of a blunt
+[39:51.76]  instrument.
+[39:53.88]  Either completely pure or completely
+[39:55.68]  dirty, right?
+[39:59.16]  It gets you a awfully long way.
+[40:03.08]  But, nevertheless, it would be cool if
+[40:05.40]  you could um say, "Oh, I am a int to um
+[40:11.08]  effectful
+[40:12.84]  doing reading of files only int."
+[40:17.92]  Right? So, you'd like to in the type
+[40:20.36]  you'd like to say what kind of effects
+[40:22.48]  can it have.
+[40:25.12]  Can it throw exceptions?
+[40:27.36]  Can it, you know, spawn new threads?
+[40:31.20]  So, you'd like to enumerate the effects
+[40:34.20]  this
+[40:35.48]  computation could have, right? That
+[40:37.24]  would be cool.
+[40:38.44]  That's called an effect system.
+[40:40.40]  And there's, you know, Brazilian
+[40:41.68]  programming language papers about effect
+[40:43.32]  systems. And it turns out that you can
+[40:45.76]  indeed in the type system of Haskell
+[40:48.40]  and indeed OCaml is is rapidly becoming
+[40:50.80]  same. Uh you can express
+[40:53.20]  just not just all or nothing, does it do
+[40:55.72]  IO
+[40:56.80]  game over
+[40:58.36]  but rather
+[40:59.84]  which particular effects does it do?
+[41:03.04]  Including no effects at all, that's
+[41:05.12]  pure.
+[41:05.92]  Right?
+[41:07.92]  A good place to start is a library
+[41:09.52]  called Bluefin, which my um colleague
+[41:11.80]  Tom Ellis has designed. It's a very nice
+[41:14.36]  take on how to do effect systems in
+[41:16.00]  Haskell.
+[41:17.60]  >> I guess the purity comes from that this
+[41:21.44]  is this this dirty stuff is signaled
+[41:24.36]  through the type system. So
+[41:25.68]  >> Correct.
+[41:26.96]  >> Okay.
+[41:27.32]  >> Correct. So, we can do it, but here it
+[41:28.80]  is and be aware.
+[41:31.56]  Yep. And because you have to thread, you
+[41:34.24]  know, because the type system gets in
+[41:35.64]  your face, you know, you you were trying
+[41:37.32]  to
+[41:38.48]  um
+[41:39.32]  uh like map, say.
+[41:41.16]  No.
+[41:42.20]  Map says I apply a function to every
+[41:43.44]  element of the list. Well, um
+[41:45.84]  uh
+[41:46.56]  so, it has type A to B to list of A to
+[41:48.32]  list of B. If you were to apply an
+[41:50.24]  IO-performing function, so it the
+[41:52.24]  function you're applying has type like
+[41:53.80]  int to IO of char
+[41:57.60]  you could map that over a list, but you
+[41:58.92]  just get a list of IO of chars.
+[42:01.40]  That hasn't done any IO yet, right?
+[42:04.64]  You want something that says, "Take a
+[42:06.52]  list of IO chars and perform those
+[42:09.08]  actions one at a time." So, I want a
+[42:10.32]  function that goes type from type list
+[42:12.60]  of IO char
+[42:14.12]  to IO of list of char.
+[42:17.40]  Right? And you might want to perform all
+[42:19.36]  those actions
+[42:21.12]  top to bottom, or maybe bottom to top.
+[42:23.16]  Who knows? That's what this
+[42:25.52]  function of type, you know, so yes, so
+[42:27.40]  you could do it in various ways.
+[42:29.20]  So, sometimes it gets in the way, right?
+[42:30.72]  You say, "Oh, you know, can't I
+[42:32.16]  just use map?"
+[42:33.87]  >> [laughter]
+[42:34.48]  >> Well, in Haskell, no, sorry.
+[42:36.92]  You you're going to have to do a little
+[42:38.40]  bit more work to tell me in what
+[42:39.92]  sequence you want your effects to
+[42:41.28]  happen.
+[42:43.40]  Because by default, Haskell does not
+[42:45.52]  specify sequence.
+[42:47.40]  Um so,
+[42:49.00]  the, you know, adding, uh, you know,
+[42:51.12]  monads to control effects does get in
+[42:52.96]  your face a bit.
+[42:54.36]  And that's a that's the tax we pay. In
+[42:56.56]  effect, that's part of the big
+[42:57.76]  experiment that Haskell is doing is to
+[42:59.92]  say, "Suppose we up front say we can
+[43:02.32]  we're willing to pay that tax."
+[43:04.80]  You know, how many followers can we get?
+[43:09.04]  Uh, and the more but I'm I will note
+[43:12.00]  that monads have infected quite a lot of
+[43:13.64]  other languages, like F Sharp is
+[43:15.04]  definitely a call by value impure
+[43:16.60]  language, and yet F Sharp had these
+[43:18.32]  workflows that were definitely monads,
+[43:20.08]  right? Um,
+[43:21.44]  and um,
+[43:22.52]  monads have, you know, appeared in Scala
+[43:24.20]  and in many other many other languages.
+[43:25.68]  So, something that's very monad-like has
+[43:27.44]  appeared lots elsewhere. It's been a
+[43:29.08]  very unifying concept.
+[43:31.48]  >> OpenAI, Anthropic, Cursor, and Vercel
+[43:35.24]  all use this product to make their lives
+[43:37.00]  better.
+[43:37.96]  And the problem it solves is when you're
+[43:39.84]  building SaaS or an ad product and you
+[43:42.48]  want to sell to other companies, there's
+[43:44.36]  all these requirements you need to meet.
+[43:46.52]  There's SSL, there's SCIM, there's RBAC,
+[43:50.12]  there's audit logs. These are all things
+[43:51.92]  that take time to integrate, but aren't
+[43:54.08]  the main focus of your app. WorkOS is an
+[43:56.40]  API layer that lets you meet all of
+[43:58.08]  these requirements in just a few lines
+[44:00.24]  of code. So, let's say you have a new
+[44:02.32]  SaaS product and you want to sell to
+[44:03.96]  other companies, WorkOS will solve all
+[44:06.44]  of these critical feature gaps for you.
+[44:09.12]  You can check them out at workos.com to
+[44:11.68]  learn more and get started. And I
+[44:13.84]  appreciate them for supporting my work
+[44:15.72]  and sponsoring this podcast.
+[44:17.52]  >> When I read [snorts] about Haskell and
+[44:19.60]  people's perception of Haskell, one
+[44:21.76]  thing that keeps coming up is that the
+[44:24.12]  type system is really powerful. And so,
+[44:27.12]  I kind of want to ask you maybe just
+[44:30.16]  even on the highest level, what is a
+[44:32.32]  type system in your words?
+[44:35.28]  >> Okay, so what does a type system do? It
+[44:37.88]  lets you reject silly programs
+[44:41.04]  up front.
+[44:43.52]  So, if I have a function that adds one
+[44:46.96]  to things
+[44:48.28]  and I apply it to a character or to an
+[44:51.00]  IO computation
+[44:54.36]  I'd like to that's going to fail at run
+[44:56.40]  time.
+[44:58.40]  All right? Because I can't add one to a
+[44:59.64]  character. Or maybe you overload plus,
+[45:01.60]  maybe I maybe I reverse reverse a list
+[45:03.68]  or something. If I give If I've got a
+[45:05.36]  list reverse I give it to somebody that
+[45:06.84]  just isn't a list
+[45:09.12]  then it's a bit silly to allow that and
+[45:10.84]  only fail at run time.
+[45:13.20]  So, fundamentally
+[45:15.08]  type systems are about rejecting at
+[45:17.36]  compile time programs that you do not
+[45:20.00]  want to run because they will fail
+[45:21.96]  at run time.
+[45:23.76]  Okay.
+[45:24.72]  Now
+[45:26.32]  um we've had static type systems for a
+[45:27.96]  long time um like uh you know, uh going
+[45:31.24]  back to Pascal um and and earlier uh but
+[45:35.52]  simple type systems are annoying because
+[45:38.76]  they get in the way.
+[45:40.08]  Imagine a function that reverses a list.
+[45:42.96]  In Pascal, you could write a function
+[45:44.72]  that reverses a list of integers.
+[45:46.80]  But if you wanted to reverse a list of
+[45:48.12]  characters
+[45:49.52]  sorry
+[45:52.08]  you can't that that function that
+[45:53.84]  reverses a list of integers it has type
+[45:56.20]  list of int list of int. So, you can't
+[45:58.12]  apply it to a list of characters.
+[46:00.88]  Game over.
+[46:02.88]  You have to write another copy of the
+[46:04.28]  code with a different type.
+[46:06.72]  That's a bit annoying.
+[46:08.52]  So, what are we going to do? We need
+[46:10.80]  polymorphism. We need a more powerful
+[46:13.04]  type system.
+[46:14.28]  We want to give reverse the type for all
+[46:16.56]  A
+[46:17.52]  list of A to list of A. So, that up
+[46:19.88]  front says, I work for any type A.
+[46:23.36]  You give me a list of integers, fine.
+[46:24.80]  I'll produce a list of integers. You
+[46:25.88]  give me a list of characters, fine. I'll
+[46:27.04]  produce a list of characters.
+[46:29.72]  Notice that's much better than just list
+[46:31.32]  to list.
+[46:32.56]  I want to keep the fact there's a list
+[46:33.84]  of integers, so I know if I apply, you
+[46:36.32]  know, when I look inside of this, I know
+[46:38.00]  I've got an integer.
+[46:39.28]  Um but also, if I just list to list, I
+[46:41.16]  might get back a a list of some
+[46:42.40]  completely different type, but I know
+[46:43.60]  that reverse returns a list with the
+[46:45.60]  same type of things.
+[46:47.60]  Right?
+[46:48.28]  So, parametric polymorphism, super
+[46:50.64]  valuable.
+[46:52.52]  Right? If you want a static type system,
+[46:54.44]  you must have parametric polymorphism.
+[46:57.36]  The message is,
+[46:59.64]  if your type system is too simple, it
+[47:01.76]  gets in the way. Very important lesson,
+[47:03.88]  because
+[47:04.88]  it means that we cannot really say is a
+[47:08.28]  type system useful or not unless we say
+[47:10.52]  which one, because we know that
+[47:12.72]  weak type systems are very inconvenient.
+[47:16.56]  It must at least have parametric
+[47:18.32]  polymorphism.
+[47:19.56]  And that is another idea that was born
+[47:21.76]  in the world of functional programming.
+[47:23.20]  It was born in ML, incidentally, Robin
+[47:25.08]  Milner's um
+[47:26.48]  famous dictum, well-typed programs don't
+[47:27.88]  go wrong. ML was a the first I think the
+[47:30.08]  first parametrically polymorphic
+[47:31.60]  function programming language, but
+[47:33.68]  generics in Java and object-oriented
+[47:36.16]  programming more generally is exactly
+[47:37.60]  the same idea.
+[47:38.92]  Right?
+[47:39.84]  So, there's an idea that was born in
+[47:41.24]  functional programming and made its way
+[47:42.44]  into the mainstream.
+[47:44.24]  >> And you mentioned polymorphism, and so
+[47:46.16]  there's this parametric polymorphism in
+[47:47.92]  the type system, but uh in the example
+[47:51.00]  you mentioned where maybe you want to do
+[47:54.00]  an operation on a list, and then the
+[47:55.92]  type of the input changes. Uh I was
+[47:58.88]  think just thinking what about when
+[48:00.40]  people do polymorphism
+[48:02.52]  in the classes?
+[48:04.04]  >> Yeah, okay. But so now you're into a
+[48:05.76]  whole more complicated world, right? So,
+[48:07.52]  as soon as you say class, you're talking
+[48:09.36]  static type system again, right? Um and
+[48:11.40]  so object-oriented programming is is
+[48:14.24]  another approach to polymorphism. So,
+[48:17.28]  in an object-oriented language, we say
+[48:20.72]  if we have a uh Ford that is a car and a
+[48:24.88]  car is a vehicle,
+[48:26.84]  then anything that works on vehicles
+[48:28.76]  should also work on cars and should also
+[48:30.48]  work on Fords.
+[48:31.84]  So,
+[48:33.12]  um the code that we write for cars works
+[48:36.36]  unchanged
+[48:38.60]  for
+[48:39.72]  vehicles and for Fords.
+[48:41.24]  Okay?
+[48:43.16]  Now, that's a form of polymorphism. Not
+[48:45.40]  parametric polymorphism, that's called
+[48:47.08]  what you might call object-oriented
+[48:48.68]  polymor- or subtype polymorphism.
+[48:51.36]  Okay. So, now we but polymorphism in the
+[48:53.48]  sense that the same code
+[48:57.24]  the same executable code, actually the
+[48:59.00]  same machine instructions, work on
+[49:00.88]  values of different types.
+[49:03.96]  Okay? In both cases.
+[49:05.92]  Both reverse a list, same machine
+[49:07.76]  instructions. Code that works on
+[49:09.56]  vehicles works on uh things on Fords,
+[49:11.04]  same machine instructions, right?
+[49:12.96]  Okay.
+[49:14.40]  That's what polymorphism in general
+[49:15.92]  means. Parametric polymorphism means
+[49:17.92]  this for all A, list of A's to list of
+[49:19.72]  A's stuff.
+[49:20.76]  Subtype polymorphism means if it works
+[49:22.76]  on vehicles, it works on any subtype of
+[49:24.16]  vehicles. Okay?
+[49:26.20]  Now, the interaction of the two, which
+[49:28.72]  you get by adding generics to an
+[49:31.32]  object-oriented language,
+[49:33.36]  is pretty complicated.
+[49:36.52]  Oh, and by the way, adding side effects
+[49:38.00]  as well.
+[49:39.36]  And that's why you'll that that and uh
+[49:41.36]  so
+[49:42.36]  uh your question involving classes and
+[49:44.56]  superclasses and so forth is smack in
+[49:46.88]  that complicated world.
+[49:48.68]  And I'm not sure it'll be very fruitful
+[49:50.68]  for us to you know, we'd we'd we'd have
+[49:52.12]  to get a lot more details of the type
+[49:53.60]  system sorted out and know what to say.
+[49:56.16]  Um but at this very high-level overview,
+[49:58.68]  my my sort of the big point I'm trying
+[50:00.72]  to make is weak type systems
+[50:03.84]  get in the way. Type systems are meant
+[50:05.76]  to reject programs that will go wrong,
+[50:07.72]  but my function that reverses a list
+[50:10.68]  of integers, it will also reverse the
+[50:12.36]  list of characters. So, it's tiresome to
+[50:14.04]  be told, "No, that is a bad program."
+[50:16.68]  Right? I want to be able to write that
+[50:17.88]  as that for a list of A to list of A.
+[50:20.12]  So,
+[50:21.12]  the idea of making type system more
+[50:22.76]  complicated is to say uh programs that
+[50:25.64]  you want to run, you can still write in
+[50:28.44]  your static type system. Now, um you
+[50:30.64]  might say, "Well, blimey, if that's all
+[50:32.64]  if that's all, why don't we just get rid
+[50:33.88]  of the static type system altogether?"
+[50:35.96]  Now, we could run all of those programs,
+[50:37.76]  but the trouble is you can run too many
+[50:39.08]  programs now. You can run programs that
+[50:41.20]  will crash at run time, and that's very,
+[50:43.48]  very, very bad, and we all know
+[50:46.08]  the costs of uh programs that that crash
+[50:48.60]  at deployment that you could have
+[50:50.60]  crashed before you even started to run
+[50:53.04]  them, let alone before you even run your
+[50:54.52]  first test.
+[50:56.52]  Right?
+[50:57.68]  Before you even linked it into an
+[50:59.24]  executable,
+[51:00.60]  that's really good. But, the biggest
+[51:02.68]  benefit of a static type system, in my
+[51:04.60]  humble opinion, is maintainability. If
+[51:07.40]  you have a program written in um I don't
+[51:09.36]  know, Pearl or Ruby,
+[51:11.28]  um or um
+[51:13.44]  Lisp in its inner basic form, um and it
+[51:16.92]  was written 15 years ago, and the
+[51:18.88]  original author has left, um and all of
+[51:21.56]  the people who were involved at the time
+[51:22.80]  it was written have left,
+[51:24.64]  then that program is very difficult to
+[51:26.84]  maintain.
+[51:29.16]  And it it becomes almost immutable.
+[51:31.20]  Nobody dares change it anymore. What
+[51:33.08]  they do is it's an immutable piece of
+[51:34.84]  software, and you do that stuff around
+[51:36.24]  the edges to impedance match what you
+[51:38.40]  really want to do to this now immutable
+[51:40.40]  blob.
+[51:41.48]  Now, of course, you have lots of tests.
+[51:43.44]  So, test-driven development, I'm totally
+[51:45.32]  with it. I love all any of all of that.
+[51:46.84]  But,
+[51:47.84]  still
+[51:49.64]  GHC, for example, is itself written in
+[51:51.96]  Haskell. It's 35 years old, and yet I do
+[51:55.00]  large-scale systematic refactorings of
+[51:57.48]  it,
+[51:58.52]  you know,
+[51:59.60]  fearlessly,
+[52:01.00]  because the type system keeps me safe.
+[52:02.40]  In fact, often what I'll do is I'll
+[52:04.32]  change a few types and then start
+[52:05.68]  compiling,
+[52:07.36]  and then a sort of wave of changes
+[52:09.04]  propagate through forced by, you know, I
+[52:10.84]  just get type errors. So, I know what to
+[52:12.36]  do.
+[52:13.60]  Whereas the thought that I've changed
+[52:15.60]  the representation of this data
+[52:16.72]  structure a little bit, but I've added a
+[52:17.84]  field to this data structure, where in
+[52:20.68]  the entire compiler might that field be
+[52:22.80]  read, written, or or freshly allocated?
+[52:27.12]  I can't imagine how anybody maintains
+[52:29.12]  30-year-old software and makes
+[52:30.96]  large-scale changes like that
+[52:33.08]  without a type system. It's
+[52:34.12]  unimaginable. So, for me,
+[52:36.04]  the benefit of type systems is
+[52:38.24]  maintainability. Oh, and designability,
+[52:40.28]  right? So, a type um I often write the
+[52:42.84]  types of my programs up front. I write
+[52:45.12]  the type, you know, the data types are
+[52:47.24]  super perspicuous.
+[52:49.84]  You know, if I say uh it's a bit like
+[52:52.16]  writing the classes of a of an of an
+[52:54.04]  object-oriented language, right? But, if
+[52:55.68]  you have no types, no classes, nothing,
+[52:57.88]  just, I don't know, S-expressions,
+[53:00.72]  >> [laughter]
+[53:02.00]  >> uh
+[53:02.60]  types are the way I design language.
+[53:04.36]  They're they're the way that I start
+[53:05.72]  writing my designs.
+[53:07.20]  >> I'm trying to understand uh other
+[53:09.04]  mindset, like let's say C, for instance,
+[53:11.24]  where I remember a lot of stuff when I
+[53:13.76]  was learning it in college, for
+[53:14.96]  instance,
+[53:16.32]  uh many times where I I'd add a
+[53:18.68]  character to a pointer or something, and
+[53:20.72]  it it just works cuz
+[53:22.60]  it interprets the character as a number.
+[53:25.64]  Um and so, is there any value to having
+[53:29.80]  that kind of type system, or is that
+[53:31.88]  just strictly unredeemable?
+[53:34.96]  >> Just use stronger.
+[53:37.00]  I think there's no benefit to weaker.
+[53:39.40]  >> Just off the top of my head, one thing I
+[53:41.64]  think of is there is a set of programs
+[53:44.72]  that will work but don't satisfy the
+[53:48.88]  type system.
+[53:49.84]  >> that's right.
+[53:50.64]  >> That and but those are
+[53:52.92]  I mean, I don't know if they're good.
+[53:54.16]  That's subjective.
+[53:54.88]  >> they may be good. So So So So uh uh that
+[53:58.72]  like I like we started, if you have
+[54:01.00]  Pascal
+[54:02.48]  and you write a function to reverse a
+[54:04.04]  list of integers, then if you apply it
+[54:05.92]  to a list of characters, the same
+[54:07.40]  machine instructions would work but it
+[54:09.96]  is rejected, right?
+[54:12.08]  So, we have rejected a perfectly decent
+[54:14.32]  program, bad,
+[54:16.12]  right? Our goal is to expand the
+[54:20.20]  collection of the programs that satisfy
+[54:21.84]  the type system
+[54:23.64]  to include as many as possible of the
+[54:25.88]  programs we want to run
+[54:27.84]  without including any of the bad
+[54:29.60]  programs that we don't want to run.
+[54:32.20]  Okay?
+[54:33.68]  Parametric polymorphism is a big step in
+[54:35.80]  that direction.
+[54:38.16]  Um other, you know, type system
+[54:40.00]  innovations are a big step in that
+[54:41.44]  direction, but there will always be some
+[54:43.92]  programs
+[54:45.48]  that would run perfectly well
+[54:50.04]  that the type system rejects.
+[54:53.72]  Imagine a tree that is um uh contains
+[54:58.04]  integers at every node.
+[55:00.32]  But
+[55:02.16]  if you are 17 deep in the tree or 34 or
+[55:06.92]  51
+[55:09.12]  if you're in a multiple of 17 deep, the
+[55:11.16]  integers can be characters instead. Or
+[55:13.80]  the integers all turn out to be
+[55:14.80]  characters, right?
+[55:17.28]  Now,
+[55:18.32]  you could write a program that generated
+[55:20.04]  such trees and you could write a program
+[55:21.76]  that consumed such trees knowing that
+[55:23.64]  every 17th
+[55:25.00]  um layer we switch to characters
+[55:27.12]  but most static type systems would make
+[55:29.40]  it pretty hard for you to accept that
+[55:31.16]  program. And yet, it will run.
+[55:35.96]  Now, you might say, "Oh, but I really
+[55:37.68]  want to write that program, guys. You
+[55:39.04]  know, don't get in my way." Well,
+[55:41.36]  then
+[55:42.44]  um
+[55:43.40]  uh then we should provide a way for you
+[55:45.88]  to bail out into dynamic typing.
+[55:48.72]  Right?
+[55:49.80]  What I'd like to do is to say, "Okay, so
+[55:52.12]  if all else fails, then at least you
+[55:54.24]  can, as it were, pair up a value with
+[55:56.72]  its type representation." As one reason
+[55:58.72]  we don't want to interpret an integer as
+[56:01.08]  a double-precision float, for example,
+[56:03.84]  is that, you know, they don't even have
+[56:05.44]  the same representation, which is just
+[56:06.96]  just nonsense. Right?
+[56:09.04]  One possible way, which it untyped
+[56:10.96]  languages let you do, is to tag every
+[56:12.92]  integer and every double-precision float
+[56:14.88]  with the fact, "I'm an integer. I'm a
+[56:16.36]  double-precision float." But that has a
+[56:17.56]  lot of overhead.
+[56:19.56]  So, one merit, and it's not I think it's
+[56:22.12]  not the biggest single merit, is a major
+[56:23.96]  merit of static type systems, is you
+[56:25.52]  have no tags.
+[56:27.60]  You know that if it says it's an
+[56:29.36]  integer, it's going to be an integer.
+[56:30.68]  You know that if it's a double-precision
+[56:32.44]  float, it's going to be double-precision
+[56:33.48]  float. Right?
+[56:35.12]  But if you're not sure, um maybe we
+[56:37.52]  could make a way to make a pair of a
+[56:40.92]  type representation and this value. The
+[56:43.32]  type representation is now like a
+[56:45.32]  runtime tag. It's like a little runtime
+[56:47.20]  data structure that describes the type.
+[56:49.60]  And then in your program, you could say,
+[56:51.20]  "Now I want to say, uh I've got this
+[56:53.48]  type dynamic. We'll call this pair a
+[56:55.84]  value of type dynamic." Now, when I want
+[56:58.80]  to take a value of type dynamic and
+[57:00.48]  treat it as a character, we'll say, "Ah,
+[57:02.88]  look Look at the type dynamic. See if it
+[57:05.52]  says it's character. If it is, return
+[57:06.84]  the character. If not, crash." Right?
+[57:08.80]  Runtime failure.
+[57:10.40]  That's fine. You can do that. So, um
+[57:12.84]  and uh Haskell has good support for
+[57:15.00]  dynamic typing where necessary. So, my
+[57:17.48]  uh my my story would be static typing
+[57:20.76]  should expand as as to carry as much as
+[57:23.12]  possible.
+[57:24.20]  And where you absolutely cannot do it,
+[57:26.40]  sorry, then use dynamic typing, and
+[57:28.56]  we'll provide facilities to support
+[57:29.84]  that.
+[57:30.92]  >> One thing I wanted to to talk with you
+[57:32.96]  about is the compiler. How does the GHC
+[57:35.68]  work on a on a high level?
+[57:37.48]  >> So,
+[57:38.52]  GHC takes a string like like any other
+[57:40.84]  compiler that the source code of the
+[57:42.40]  program, parses it.
+[57:45.32]  Um and then it um
+[57:48.44]  uh type checks it.
+[57:49.96]  Because that is this a type correct
+[57:51.00]  program.
+[57:52.56]  Then it converts it to lambda calculus.
+[57:58.32]  Now,
+[57:59.28]  Haskell the Haskell AST, the original
+[58:01.80]  source tree, has
+[58:04.04]  50 different data types, 50 different
+[58:06.12]  kinds of nodes, some of which have 30 or
+[58:08.52]  40 different variants.
+[58:10.80]  So, it's a really big, diverse,
+[58:13.80]  complicated data structure.
+[58:16.08]  The AST.
+[58:17.92]  Lambda calculus has this
+[58:19.80]  variant of the lambda calculus has
+[58:21.04]  eight.
+[58:24.00]  One to data type that maybe two or three
+[58:25.64]  data types with eight constructors.
+[58:27.80]  So, it's like taking a gigantic language
+[58:31.76]  and squeezing it down into a tiny one.
+[58:36.32]  And that tiny one we can then optimize,
+[58:38.20]  right? That's the optimizer works on
+[58:39.48]  that. So, the front end
+[58:41.72]  does parse, rename, type check, desugar
+[58:44.88]  into lambda calculus. That's the front
+[58:46.68]  end.
+[58:48.80]  The lambda calculus, particular
+[58:50.08]  language, is called GHC's core language.
+[58:52.88]  I'm quite proud of it cuz it's been very
+[58:55.32]  very stable.
+[58:57.76]  It's 35 years old and it has barely
+[59:00.84]  changed since birth.
+[59:02.40]  That's amazing, right? Because Haskell
+[59:04.12]  has changed a lot, a lot.
+[59:07.60]  Right? So, almost all of the innovation
+[59:10.48]  in Haskell
+[59:12.40]  has been in the front end.
+[59:14.64]  Very little
+[59:16.24]  in core.
+[59:18.56]  Now, the back end, the core optimizer,
+[59:20.60]  has changed a lot, too.
+[59:22.24]  But all of the changes that were useful
+[59:23.84]  there would have been useful 30 years
+[59:25.08]  ago, right?
+[59:26.68]  Yeah. So, they're two completely
+[59:28.36]  separable things. So, I'm quite proud
+[59:29.44]  about that. Core then we do a lot of
+[59:31.36]  core-to-core passes that simply take
+[59:33.08]  core program core program programs,
+[59:35.00]  right? Lots and lots. Long pipeline.
+[59:37.92]  Then we convert it um
+[59:40.84]  uh to C-- which is a prototypical
+[59:44.20]  imperative language. Think of it as a
+[59:46.12]  portable assembly code.
+[59:48.28]  Right? So, that bit is meant to be
+[59:50.28]  platform independent.
+[59:52.32]  So, it's simply that's the compiler that
+[59:54.48]  take your program I said if you take
+[59:55.68]  lambda calculus and compile it that's
+[59:57.92]  that step, right? I want to compile the
+[60:00.08]  lambda calculus into
+[60:02.04]  you know, machine instructions really.
+[60:04.32]  But I don't really mean machine instruc-
+[60:05.56]  I mean portable machine instructions.
+[60:07.68]  That's called C--
+[60:09.88]  Then I want to convert C-- into actual
+[60:12.12]  machine instructions for various
+[60:13.24]  platforms. And then we could either do
+[60:15.04]  that directly with a native code backend
+[60:16.64]  or go via LLVM.
+[60:18.76]  >> Interesting. I've never heard of C--
+[60:21.52]  What Why not just go directly to I would
+[60:23.80]  have thought maybe assembly or something
+[60:25.44]  like that?
+[60:26.40]  >> what happens in assembly in which for
+[60:28.08]  which processor, please?
+[60:30.92]  >> Oh, I see.
+[60:32.02]  >> [laughter]
+[60:32.44]  >> I guess it's the I would have thought
+[60:34.28]  the lambda calculus part was already
+[60:35.96]  portable. So, you just
+[60:37.08]  >> It is, yeah. You could go straight but
+[60:39.88]  but but so, there's work to go from
+[60:41.64]  lambda calculus you could go all the way
+[60:43.08]  to x86.
+[60:44.92]  Then throw all that away and now go from
+[60:46.64]  lambda calculus to pal PC.
+[60:49.32]  Oh dear, I've just duplicated a lot of
+[60:50.96]  work.
+[60:53.36]  By going from lambda calculus to C-- and
+[60:56.12]  then from C-- to x86 C-- We've set We've
+[60:59.60]  We've avoided duplicating
+[61:02.24]  the work that went from lambda calculus
+[61:04.32]  to C-- right?
+[61:06.04]  When you see it like that it's pretty
+[61:07.08]  obvious, isn't it? Like you got to You
+[61:09.00]  want to make the platform specific bit
+[61:11.84]  as small as possible.
+[61:14.16]  You would like to have as it were like a
+[61:16.16]  generic architecture. One that can do
+[61:18.24]  addition and has a program counter and a
+[61:19.96]  stack and so forth.
+[61:21.72]  That's all C-- just a portable assembly
+[61:23.80]  language.
+[61:24.84]  And then you say, "Oh, the nitty-gritty
+[61:26.32]  of, you know, whether you have double
+[61:28.68]  precision add and set the floating-point
+[61:30.72]  bit here and there." That, well, that's
+[61:32.12]  platform specific. The core is itself
+[61:34.16]  statically typed. You know, but it's
+[61:36.08]  always a surprising because no other
+[61:37.56]  compiler does has this property, no
+[61:39.16]  other production compiler.
+[61:40.88]  By core statically typed, I don't just
+[61:42.56]  mean that the initial the initial
+[61:43.80]  program was type correct.
+[61:45.84]  I mean that a core program, you can run
+[61:48.00]  a type checker on that. And I might say,
+[61:49.88]  "Why do you need to? Because after all,
+[61:51.44]  if GHC is correct, it started with a
+[61:53.76]  type correct core program
+[61:55.76]  because it came from a type correct
+[61:56.68]  Haskell program, assuming the desugaring
+[61:58.40]  was right, and all the optimizations, if
+[62:00.60]  they're right, will generate a type
+[62:02.48]  correct core program. So, why do you
+[62:04.00]  need to type check it?"
+[62:05.80]  Answer:
+[62:06.92]  to discover bugs in GHC.
+[62:09.28]  Now, these are serious bugs, right? If
+[62:11.12]  you ever take a type correct core
+[62:13.92]  program and an optimization pass
+[62:15.32]  produces a type incorrect
+[62:17.52]  core program,
+[62:19.36]  what will happen?
+[62:21.04]  If we don't have the type checker for
+[62:22.44]  core,
+[62:23.64]  we'll generate machine code and we'll
+[62:25.04]  run it and we'll get a seg fault.
+[62:28.96]  Now, we have to backtrack for any
+[62:30.52]  particular test program that now
+[62:31.96]  crashes,
+[62:34.20]  all the way to back up the pipeline, up
+[62:36.56]  the pipeline, up the pipeline, up the
+[62:37.80]  pipeline. Oh, it was this pass
+[62:41.08]  of GHC that was faulty.
+[62:43.52]  That's super hard to do because, you
+[62:45.60]  know, you're getting out GDB on some
+[62:47.60]  runtime failure
+[62:49.60]  that is an indirect and perhaps distant
+[62:51.40]  consequence
+[62:52.88]  of the fact you just generated a type,
+[62:55.40]  you know, you just made a you had a bug
+[62:57.28]  in the optimizer.
+[62:59.48]  So, it is amazing
+[63:01.76]  to have a type checker for core.
+[63:04.36]  Now,
+[63:05.20]  why does nobody else do this? Well, it's
+[63:07.28]  because their intermediate language,
+[63:08.76]  typically, and this I really am talking
+[63:10.36]  typically because I know of no other
+[63:11.88]  compiler that has this property, none,
+[63:14.12]  production compiler,
+[63:16.28]  typically then they're, you know,
+[63:17.20]  complex complex syntax trees decorated
+[63:19.40]  with all sorts of pragmatic information
+[63:21.24]  and things hanging on it onto it here
+[63:23.20]  and there and
+[63:24.76]  um
+[63:26.44]  um you know, there's no there's no type
+[63:28.80]  checker for it at all.
+[63:31.12]  And there's no hope of one.
+[63:33.20]  So, I'm very proud of the fact that core
+[63:35.20]  is statically typed and I'm also also
+[63:38.76]  think it's a
+[63:40.72]  The most delightful thing is that the
+[63:42.88]  way that it is statically typed it is a
+[63:45.00]  It's an implementation of something
+[63:46.16]  called system F.
+[63:48.44]  So, system F when I said lambda calculus
+[63:50.24]  lambda calculus as Alonzo Church had it
+[63:52.36]  was untyped had no type system at all.
+[63:55.48]  But Girard defined defined something
+[63:57.60]  called system F which is a statically
+[63:59.80]  typed lambda calculus a rather powerful
+[64:01.88]  one. And core is essentially system F.
+[64:06.16]  So, we literally adopted something from
+[64:08.12]  the nerdy theoretical computer science
+[64:10.88]  you know, logic community logic and
+[64:13.48]  mathematics community and adopted it
+[64:15.24]  directly in a in a production
+[64:17.00]  implementation.
+[64:18.72]  So,
+[64:19.84]  I'm very proud of that.
+[64:21.32]  Um I think core is
+[64:23.52]  and the fact that we can do we have 35
+[64:26.20]  years of worth of development that has
+[64:27.48]  been not just not impeding but actively
+[64:29.76]  aided by statically typed intermediate
+[64:31.20]  language is really
+[64:32.68]  a big marker in the ground.
+[64:35.00]  >> You know, watching all your talks,
+[64:36.24]  reading everything. One of the
+[64:38.00]  interesting data points that you brought
+[64:39.72]  up was that uh Haskell is talked about
+[64:43.60]  more than used when you compared Stack
+[64:46.76]  Overflow volume and you know, actually
+[64:49.12]  GitHub volume. Like who's actually using
+[64:50.96]  the programming language? Why do you
+[64:52.76]  think that is?
+[64:55.00]  >> So,
+[64:56.12]  Haskell embodies one
+[64:59.20]  key idea.
+[65:01.04]  Immutability changes everything. There's
+[65:03.24]  a quote from Pat Helland's talk that I
+[65:04.68]  think you also paper which I think you
+[65:06.64]  also looked at or read. Um So, it says
+[65:08.76]  programming with values changes
+[65:10.32]  everything about the way you think about
+[65:11.76]  programming.
+[65:13.08]  It's just
+[65:14.60]  mind-changing. It's not necessarily
+[65:16.24]  better, but it is different. And so,
+[65:18.96]  Haskell takes that idea and runs with
+[65:20.76]  it. Everything is driven by that one
+[65:22.60]  idea. Everything else is incidental.
+[65:25.24]  Uh in the early days, that meant we just
+[65:27.40]  said, "Well, guys, suck it up, you know,
+[65:28.96]  we'll keep um changing the language, and
+[65:31.24]  if it breaks your programs, too bad." Um
+[65:34.20]  so, it is, you know, a bit peculiar, and
+[65:35.96]  therefore, um oh also, it felt a bit
+[65:37.96]  academic, cuz initially, it was really
+[65:39.40]  not very powerful. It was taking the key
+[65:41.00]  idea, but you couldn't do very much with
+[65:42.60]  it. We talked about that, right?
+[65:44.48]  So, over time, GHC and on Haskell in in
+[65:47.44]  general has become more and more
+[65:48.64]  powerful. The type system has become
+[65:49.88]  less and less in your way, and more and
+[65:51.84]  more useful. The you know, all the
+[65:53.60]  obstacles that make functional
+[65:54.84]  programming harder become better. The
+[65:56.44]  compiler generates faster code, it
+[65:57.96]  compiles faster, and so forth. So, um
+[66:01.60]  uh
+[66:02.80]  So, it has become less, uh if you like,
+[66:05.04]  peculiar. Um so, we've become more and
+[66:07.32]  more taking into account the the um the
+[66:10.80]  uh the needs of our users. But in a way,
+[66:13.08]  the sort of cultural heritage is we
+[66:15.12]  never give up on the one core principle.
+[66:17.48]  We're just not going to give you
+[66:18.80]  unrestricted side effects. Sorry.
+[66:20.80]  Right?
+[66:21.72]  You want to say I'm fully before I am,
+[66:23.32]  and put up with the consequences. So,
+[66:25.36]  we're going to stick to one core
+[66:26.52]  principle, and then we'll we'll do lots
+[66:28.52]  of work around the edges to make that
+[66:29.56]  better. Right, so, um
+[66:31.96]  that does limit our community somewhat,
+[66:33.80]  right? It does mean you have to You
+[66:35.52]  really have to think in a different way.
+[66:37.12]  Immutability changes everything. That
+[66:38.60]  means you'd have to think a different
+[66:39.56]  way about about programming. Maybe you
+[66:41.28]  don't want to think in a different way.
+[66:42.36]  That's fine. Then don't use Haskell,
+[66:44.20]  right? So, uh so, in a way, we've um we
+[66:47.96]  we started from a very small user
+[66:49.44]  community, uh very sort of pure and
+[66:51.16]  nerdy one, and going going larger and
+[66:52.64]  larger, but all slowly, slowly, but all
+[66:54.80]  the time main- maintaining uh
+[66:56.40]  faithfulness to this core principle.
+[66:58.08]  >> I thought that was
+[66:59.64]  very unique about Haskell, because I
+[67:02.28]  feel a lot of the other programming
+[67:04.36]  languages are user-centric. I mean, if
+[67:07.48]  if people something, they work on it,
+[67:09.80]  they add it. Whereas, Haskell feels more
+[67:13.04]  principled or it's it's all starting
+[67:15.32]  from these ideas. And if you don't
+[67:19.48]  satisfy these ideas as a user, yeah,
+[67:22.16]  well, we yeah, that's that's fine.
+[67:24.92]  Um for instance, in one of your talks,
+[67:26.60]  you mentioned somewhere that there was a
+[67:28.64]  release of the compiler where if a file
+[67:32.20]  wasn't type correct, then the compiler
+[67:35.36]  would delete the file.
+[67:37.52]  >> Oh, wait. It would report with the error
+[67:38.60]  message first.
+[67:39.88]  >> Yeah, it reports there. But, I thought
+[67:41.64]  that was that was absurd. I mean, very
+[67:44.68]  hostile, I guess, to the I mean, well,
+[67:46.80]  it's it's if you're type safe, no
+[67:48.68]  problems. But,
+[67:50.08]  >> Oh, it was a mistake, right? It was a
+[67:51.80]  bug. It wasn't deliberate.
+[67:54.15]  >> [laughter]
+[67:55.24]  >> And it only happened, you know, how did
+[67:56.72]  the bug get, you know, get out? Because,
+[67:58.16]  of course, if it always did that, we'd
+[67:59.52]  have noticed.
+[68:00.84]  Um how did it get into a release? Well,
+[68:02.60]  it was because it was only on Windows
+[68:04.04]  and only when you compile a module that
+[68:05.48]  was not in the current directory.
+[68:07.64]  But, at that stage, our um
+[68:09.60]  our users were very forgiving. And, you
+[68:11.08]  know, somebody wrote to us and said,
+[68:12.24]  "Well, by the way, Simon, you might like
+[68:13.56]  to know that, you know, GHC does this.
+[68:14.92]  But, hey, don't worry about it, you
+[68:16.00]  know, I just copy all my files somewhere
+[68:17.68]  else before I compile and then I copy
+[68:19.44]  them back."
+[68:21.72]  So, of course, those days are long gone.
+[68:23.56]  We pay a lot more attention to our users
+[68:25.20]  and have much more rigorous CI testing
+[68:27.04]  than ever we did, right? So, um
+[68:29.44]  that's a that's a a story from a long
+[68:31.04]  time ago, but it's a good cultural story
+[68:32.80]  because it suggests that we've cared
+[68:34.92]  about our users very much, but we we we
+[68:37.76]  care about users who want in the in
+[68:39.72]  their hearts want to be principled.
+[68:41.40]  We're trying to appeal to One One of the
+[68:43.24]  things I like best about Haskell is
+[68:44.72]  people often say, "I just enjoy writing
+[68:47.64]  Haskell."
+[68:48.72]  Right? It's fun, right? My boss doesn't
+[68:51.60]  allow me to because, you know, it
+[68:55.00]  somehow doesn't fit with my production
+[68:56.52]  shop. And And I but but for me, I would
+[68:59.16]  go for I love writing this stuff every
+[69:02.24]  time. Every time. Yeah,
+[69:04.76]  that's that's very rewarding to me.
+[69:07.00]  >> There's also this interesting, I don't
+[69:09.16]  know if it's a cultural value, but it's
+[69:10.96]  a statement that you say often in the
+[69:13.12]  context of these older talks. You say
+[69:16.12]  that you avoid success at all costs.
+[69:19.68]  Could Could you explain what you mean by
+[69:21.20]  that phrase?
+[69:21.92]  >> Oh, yeah, this was just a little a
+[69:23.44]  little play on words.
+[69:25.56]  It was in a retrospective on Haskell I
+[69:27.48]  gave as an invited talk at and um
+[69:30.28]  Popple in a long time ago, probably 20
+[69:32.72]  years ago. Uh so, it's a it's a little
+[69:35.08]  play on words because it you can read it
+[69:36.84]  as either avoid success at all costs.
+[69:41.60]  And that's what we've been discussing.
+[69:43.20]  Success at all costs means compromise
+[69:44.96]  your principles in order to satisfy your
+[69:47.08]  users or think that you're satisfying
+[69:48.84]  users, you know, uh give them what they
+[69:51.24]  say they want. Uh where more if we build
+[69:53.52]  it, they will come kind of deal, right?
+[69:55.48]  So,
+[69:56.48]  avoid success at all costs. Or if you
+[69:59.36]  parenthesize the other way, it says
+[70:00.76]  avoid success
+[70:02.32]  at all costs.
+[70:05.44]  Or at all costs avoid success. And
+[70:07.84]  that's saying uh that's a little joke,
+[70:10.04]  but it says if you're too successful and
+[70:12.28]  have too many users, it becomes more
+[70:14.24]  difficult to make changes.
+[70:17.72]  And we experience that right now. So, I
+[70:19.84]  devote many many more of my personal
+[70:22.28]  cycles to backward compati-
+[70:25.00]  compatibility issues than ever I did.
+[70:28.24]  I've devoted hundreds of uh you know, uh
+[70:30.72]  hours and hours and well,
+[70:32.68]  days and days, weeks and weeks in the
+[70:33.88]  last year or two to the following what
+[70:36.88]  seems to be a very simple property. If
+[70:40.68]  if you can compile a program, a package,
+[70:43.60]  in a whole program with GHC 10.0 and we
+[70:46.12]  release GHC 10.2, you should be able to
+[70:48.32]  compile that same package unchanged with
+[70:50.64]  GHC 10.2.
+[70:53.36]  Seems reasonable, right?
+[70:55.72]  After all, 10.2 should just be better.
+[70:58.76]  But, no.
+[70:59.88]  GHC has never had that property.
+[71:02.20]  And making it have that property has
+[71:03.64]  turned out to be very, very
+[71:04.92]  time-consuming. Previously, we just
+[71:06.48]  never cared.
+[71:08.24]  Then we started to care, but thought it
+[71:10.20]  was a lot of work, and now we're
+[71:11.52]  investing the work.
+[71:13.08]  >> I guess that was from a long time ago. I
+[71:15.32]  think nowadays, software engineering,
+[71:18.08]  there's been a major shift in the last
+[71:19.68]  year where a lot of code is being
+[71:21.88]  generated by these models or these LLMs.
+[71:25.84]  How do you see programming language
+[71:27.52]  design shifting to accommodate a world
+[71:30.24]  where a lot of the code is no longer
+[71:32.48]  written by humans?
+[71:34.12]  >> I think it may be the best thing that's
+[71:36.36]  happened to statically typed languages
+[71:38.08]  for a long time.
+[71:40.20]  Because, as we've been discussing,
+[71:43.16]  with a static type system, you cut down
+[71:46.04]  the space of programs that the LLM can
+[71:48.24]  generate.
+[71:50.16]  Because it is perfectly capable of
+[71:51.96]  running the compiler and saying, "Oh,
+[71:53.04]  darn, that was a bad program. Better fix
+[71:54.64]  it."
+[71:56.24]  Right? So, a zillion iterations get done
+[71:59.60]  behind the scenes.
+[72:01.92]  Whereas in an untyped language, the
+[72:03.24]  first one it coughed up, you'd have had
+[72:04.68]  to run or run against its test suite, or
+[72:06.76]  who knows what, but it's it drastically
+[72:09.36]  tightens up that cycle.
+[72:11.36]  Right?
+[72:12.32]  So, I think that statically typed
+[72:15.08]  languages are huge boon for LLMs.
+[72:18.48]  Because it's too easy to
+[72:19.92]  Programs are just strings, right? We
+[72:21.24]  could um
+[72:23.28]  They can just generate the next
+[72:24.68]  plausible word, uh and you want you want
+[72:27.12]  to make any implausible programs,
+[72:28.64]  programs that really shouldn't run. You
+[72:29.96]  want to make them not run right away.
+[72:31.60]  Yeah.
+[72:32.56]  >> If there's a slider on, I guess, the
+[72:34.68]  strength of a type system, and you know,
+[72:37.68]  the other side is weak. What what do you
+[72:39.56]  see as the absolute strongest type
+[72:41.48]  systems among programming languages?
+[72:43.68]  >> Oh, Haskells, I think.
+[72:45.28]  Haskell is exploring the bleeding edge.
+[72:48.28]  There's an exception, which is that
+[72:49.80]  module systems
+[72:52.12]  are a um
+[72:54.40]  and in particular sort of a functor
+[72:56.12]  style module systems are explored much
+[72:59.36]  more deeply in um the ML OCaml world.
+[73:04.08]  And in the Haskell world we've
+[73:05.44]  essentially never gone there. But
+[73:07.36]  otherwise I think Haskell's right up
+[73:08.84]  there. Now, of course, a language like
+[73:11.04]  Scala
+[73:12.36]  um
+[73:13.28]  is also as the Scala has almost
+[73:17.12]  everything Haskell has. I think not
+[73:19.04]  quite. Um but it also has subtyping and
+[73:22.24]  object oriented type object object
+[73:23.72]  orientation. So that's a lot more
+[73:25.40]  complicated, a lot more complicated I
+[73:28.08]  think.
+[73:29.08]  um
+[73:30.80]  And they pay a price for it. I think
+[73:32.96]  well, you know, Martin Odetsky would
+[73:34.24]  agree that they pay a price for it. So
+[73:37.16]  uh in complexity it's probably more
+[73:39.40]  complicated than Haskell's.
+[73:42.28]  um
+[73:44.12]  Uh and maybe in terms of power. So maybe
+[73:46.08]  I should have said Haskell and Scala are
+[73:47.60]  the two lead Haskell, Scala, OCaml.
+[73:49.96]  Perhaps I'll just put them in an
+[73:50.84]  equivalence class for now. They're not
+[73:52.44]  strictly comparable. They all have
+[73:54.16]  things that we we in which they're more
+[73:55.56]  powerful than the other probably.
+[73:57.52]  >> What do you think are, you know, the
+[73:58.96]  important problems to solve in the
+[74:01.40]  future of programming languages today?
+[74:03.00]  Maybe, you know, what are the unsolved
+[74:05.12]  problems in the domain that are top of
+[74:07.12]  mind for you?
+[74:08.36]  >> I think it's actually hard to identify,
+[74:10.08]  you know, to say here's a problem we
+[74:11.72]  ought to solve, let's try to solve it.
+[74:13.16]  But I think
+[74:14.56]  another way to tackle is to say what are
+[74:16.60]  interesting, you know, new languages out
+[74:19.24]  there that are exploring very different
+[74:20.80]  parts of the design space. And there I
+[74:22.68]  think I do I do have a a candidate. So
+[74:25.20]  um the language that is my day job,
+[74:27.24]  right? I work for Epic and we're
+[74:28.84]  designing a a programming language
+[74:30.16]  called Verse.
+[74:32.04]  Now Verse is a very exotic language.
+[74:34.28]  It's it's really uh a functional logic
+[74:37.56]  language. Um
+[74:39.16]  So it's yet more expressive than
+[74:40.56]  Haskell. It has a static type system but
+[74:42.16]  a very different one to Haskell's. So if
+[74:44.80]  you like uh the way I think of it is
+[74:46.20]  like this. If you look at
+[74:48.00]  um
+[74:48.88]  uh C and Fortran, they look pretty
+[74:50.52]  different if you're an imperative
+[74:52.08]  programmer. But if you look at them, if
+[74:53.92]  you zoom out so you can see functional
+[74:56.12]  languages, then C and Fortran are pretty
+[74:57.72]  close together.
+[74:59.24]  Um you know, along with object-oriented
+[75:01.20]  languages, they're all in a clump,
+[75:02.24]  right? And then there's some functional
+[75:03.96]  languages, you know, Haskell and ML and
+[75:05.28]  OCaml and Scala out here. If you zoom
+[75:07.44]  out still further,
+[75:09.04]  then um the imperative languages and
+[75:11.24]  functional languages are all together,
+[75:12.32]  and Verse is way out here.
+[75:15.04]  Right? So Verse is exploring a very new
+[75:17.52]  point in the design space.
+[75:19.36]  But just like functional programming
+[75:21.20]  back in 1980,
+[75:23.48]  it seems sufficiently interesting and
+[75:25.04]  cool and unusual and weird that it's
+[75:27.04]  worth exploring, right? So back in 1980,
+[75:30.96]  nobody would said, "We're definitely
+[75:32.52]  going to do functional programming, and
+[75:33.68]  it's going to be useful for practical
+[75:34.68]  applications." They said, "That's pretty
+[75:35.72]  weird." Uh you know, by all means give
+[75:37.36]  it a try, guys. And that's kind of where
+[75:38.96]  I'm with Verse. Um Uh one difference is
+[75:41.48]  that back in 1980, we were purely
+[75:43.00]  academics. And now but Verse is being
+[75:45.12]  developed by well, Epic Games.
+[75:47.52]  Um so we've got some, you know, much
+[75:49.08]  more muscle behind it um than um
+[75:52.28]  uh you know, was behind functional
+[75:53.36]  programming to begin with. So we'll see.
+[75:54.88]  It's a very interesting intellectual
+[75:56.40]  endeavor.
+[75:57.80]  Adventure, I should say.
+[76:00.08]  >> Yeah, I think a lot of people, like
+[76:01.40]  students, they may be worried about AI
+[76:04.00]  or you know, studying computer science.
+[76:06.28]  Would you recommend people learn how to
+[76:09.12]  program today given that AI is uh
+[76:12.00]  starting to write reasonable code now?
+[76:13.88]  >> Oh, yeah. Yeah. So I think people are
+[76:16.16]  right to be worried in the sense that I
+[76:17.32]  think there's going to be considerable
+[76:18.88]  dislocation.
+[76:20.64]  Right?
+[76:21.76]  It's like, you know,
+[76:22.88]  if you were in the industrial
+[76:23.84]  revolution, then lots of people lost
+[76:25.52]  their jobs as, you know, spinners and
+[76:27.32]  weavers. Um
+[76:29.00]  and it wasn't easy for them to get a new
+[76:30.48]  job in the new economy. Now, the new
+[76:31.88]  economy had in the end had more jobs,
+[76:34.36]  but
+[76:35.44]  there was if you were one of the people
+[76:37.08]  who just lost their job, that was not a
+[76:38.32]  happy place to be.
+[76:39.96]  From our perspective, you know, Olympian
+[76:41.44]  perspective of a few hundred years
+[76:42.88]  later, we think, well, it's just a blip,
+[76:44.64]  right? If you're part of the blip,
+[76:46.76]  problem, right? So, I think they're
+[76:49.16]  right to be worried.
+[76:51.80]  Um we don't know how things will shake
+[76:53.68]  out. I'm actually optimistic that in the
+[76:56.20]  medium term, if we don't, you know,
+[76:57.36]  destroy ourselves with some truly
+[76:59.20]  existential thing, but from an
+[77:00.64]  employment market point of view, I'm
+[77:02.36]  optimistic that in the end, you know,
+[77:04.44]  we'll just be in a higher place that AIs
+[77:06.84]  will just be a
+[77:08.72]  a bigger power tool. I mean,
+[77:10.84]  everyone, we like using compilers,
+[77:12.48]  right? We don't like machine code
+[77:13.48]  anymore. Compilers make us more
+[77:14.96]  productive. Maybe LLMs can make us more
+[77:17.24]  productive. That's what I hope. I sort
+[77:19.36]  of believe modulo dislocation effects.
+[77:22.52]  Now,
+[77:24.36]  um
+[77:25.84]  should we
+[77:27.44]  teach children or even undergraduates
+[77:29.76]  how to program? So, I think still yes.
+[77:32.76]  Um
+[77:33.48]  um the reason is because
+[77:36.20]  um
+[77:37.32]  uh like one way to say it is co-pilots
+[77:40.04]  need pilots.
+[77:42.40]  Right? I think co-pilot is quite a good
+[77:43.84]  title that Microsoft gave their tools,
+[77:46.24]  right? Because it encourages you to
+[77:47.88]  believe it's your partner, not your
+[77:49.20]  boss.
+[77:50.36]  Um
+[77:51.20]  if LLMs spit out a pile of goop, and we
+[77:54.08]  literally do not understand what it
+[77:55.52]  does, we just try it and it kind of
+[77:56.72]  works,
+[77:57.92]  that might be okay if we're just
+[77:59.00]  throwing up a quick visualization. It
+[78:00.92]  might be less okay if the quick
+[78:02.40]  visualization is going to drive our
+[78:03.80]  policy um choices about as a nation
+[78:06.72]  whether to go into lockdown because of
+[78:08.04]  COVID, um or if this program is going to
+[78:11.56]  run my airplane or train signaling
+[78:13.56]  system.
+[78:15.32]  So, now those are, you know, extreme
+[78:17.32]  ends of the spectrum, you know, from
+[78:19.16]  quick and dirty things it really doesn't
+[78:20.68]  matter if it doesn't work, uh
+[78:22.84]  but it kind of does a lot of the time,
+[78:24.56]  absolutely fine, to
+[78:27.12]  this is a 30-year code base, it's going
+[78:28.84]  to last a long time. I really want to
+[78:30.56]  make sure that it like putting new stuff
+[78:32.52]  into GHC. If somebody sends me a pile of
+[78:34.72]  AI-generated code to put into GHC, I'm
+[78:36.60]  not going to put it in. Unless I've
+[78:38.24]  reviewed it, or somebody's reviewed it,
+[78:40.00]  because in 10 years time, I'm going to
+[78:42.24]  want to change that code. How do I even
+[78:43.60]  know what it does? If it's simply a
+[78:45.28]  magic incantation that somebody's done
+[78:46.92]  that kind of worked on the test they
+[78:48.52]  did, but maybe won't work in deployment,
+[78:50.44]  that's no good. So,
+[78:52.12]  I really want
+[78:53.84]  uh long-lived maintainable code to be
+[78:55.96]  well reviewed. Sorry. Um so, and to do
+[78:58.52]  that, I need reviewers who can write
+[79:00.08]  code, who know
+[79:01.36]  Um let me mention one other
+[79:03.84]  perspective. Um
+[79:06.04]  If you think about what every child
+[79:07.64]  should know,
+[79:09.44]  um
+[79:10.28]  when I um
+[79:12.24]  uh think about whatever a child should
+[79:14.00]  know about computing, I would include
+[79:16.12]  binary and bits.
+[79:19.08]  Not Oh, just as for physics, I would
+[79:21.12]  include atoms and molecules.
+[79:23.84]  Now, it's not that in real life anybody
+[79:25.64]  manipulates atoms or molecules, or takes
+[79:27.92]  decisions which are based directly on
+[79:30.08]  their knowledge of atom knowledge, but
+[79:31.64]  somehow knowledge that all matter is
+[79:33.84]  made up of atoms.
+[79:35.64]  You know, constituted of a finite number
+[79:37.20]  of elements that atoms could block
+[79:38.28]  together with. That knowledge underpins
+[79:40.68]  everything we understand about the
+[79:41.88]  natural world. If you literally have
+[79:43.76]  never been told that,
+[79:46.48]  you are sort of emasculated
+[79:48.68]  as a even as a citizen, let alone as a
+[79:50.88]  scientist. So,
+[79:52.56]  if you literally do not know that
+[79:54.32]  everything is composed of bits, that
+[79:55.72]  words and music and text and LLMs and
+[79:58.44]  everything's all just bits,
+[80:00.32]  I think you're crippled.
+[80:01.92]  So, I want every child to learn uh you
+[80:04.48]  know, it's like I want you to learn the
+[80:05.56]  bottom that they It's It's all bits,
+[80:08.04]  nothing else. It's all just bits.
+[80:11.40]  I give a talk. The talk is called Bits
+[80:14.16]  with Soul.
+[80:17.00]  Um they're easy to grab for. It's a talk
+[80:19.36]  I gave to an audience that was not
+[80:20.88]  computer science audience at all. It was
+[80:22.48]  a completely lay audience, ranging from
+[80:24.36]  14-year-olds to professors of quantum
+[80:26.04]  mechanics. Pretty difficult audience to
+[80:28.76]  address. Um and it was meant to be about
+[80:30.72]  um
+[80:31.68]  all about uh codes and coding and bits.
+[80:33.80]  So, um,
+[80:35.12]  and so it tries to get at the essence of
+[80:37.76]  why why do I think it's important that
+[80:39.68]  every every child, every person, every
+[80:41.84]  human being should understand something
+[80:44.00]  about the computational universe that
+[80:45.40]  surrounds them. And that's founded in
+[80:46.60]  bits. Now, just to to develop the
+[80:48.44]  analogy a bit further, I would then say,
+[80:49.72]  "And it also, I think I want them to
+[80:52.28]  also know about programming programs. I
+[80:55.32]  want them to know that computers
+[80:56.72]  fundamentally execute by following
+[80:58.40]  machine instructions blindly. Right?
+[81:00.68]  There is not magic. It's not hocus
+[81:02.36]  pocus. It's just remorseless and very
+[81:05.84]  dumb.
+[81:07.04]  Right? It's incredibly empowering then.
+[81:09.52]  Um,
+[81:10.32]  and also to learn the basics about how
+[81:12.04]  neural networks work. In the same talk,
+[81:14.56]  I explain how a a one neuron neural
+[81:17.20]  network works.
+[81:18.60]  Um,
+[81:19.56]  and that's enough. Uh, then then it's
+[81:21.60]  actually true to say, not distorting the
+[81:23.56]  facts to say, "Chat GPT is just a
+[81:25.28]  trillion of those
+[81:27.36]  wired together."
+[81:28.72]  Um, and astonishingly, that very simple
+[81:31.76]  So, so all Chat GPT is is
+[81:34.44]  a trillion floating point numbers and a
+[81:36.08]  lot of floating point arithmetic.
+[81:38.28]  That helps you to make sense of a
+[81:40.12]  question like,
+[81:42.12]  "Can Chat GPT have feelings?"
+[81:47.28]  Well,
+[81:48.64]  it gives you
+[81:49.96]  a I mean, of course that's a
+[81:51.00]  philosophical question, but informs
+[81:53.08]  your, you know, your discussion about it
+[81:54.92]  if you know that all it is
+[81:57.36]  is trillion floats and a lot of floating
+[81:59.48]  point arithmetic. That's all. Nothing
+[82:01.44]  more.
+[82:03.04]  Anyway, sorry, long answer to your
+[82:04.04]  question. But, so I I So, yes, basic
+[82:06.80]  programming, absolutely. Yeah. Becoming
+[82:09.28]  very skilled in how to use, you know,
+[82:12.72]  web Django framework 2.7, maybe not so
+[82:16.32]  much.
+[82:17.80]  Maybe. I think one thing that LLMs are
+[82:19.40]  very good at is knowing the arcane and
+[82:22.72]  complicated APIs that many of these
+[82:25.48]  frameworks present. When you There's
+[82:27.48]  just, you know, 10,000 functions you've
+[82:29.08]  got to know, and if an LLM's really good
+[82:32.00]  at knowing that, I don't want to learn
+[82:33.36]  them.
+[82:34.24]  >> You mentioned somewhere someone asked
+[82:36.00]  you, you know, what's your favorite
+[82:37.20]  programming language? And obviously
+[82:38.76]  Haskell's got to be number one.
+[82:40.20]  >> Yeah.
+[82:40.76]  >> But for your second favorite programming
+[82:42.96]  language, you said it was Excel.
+[82:45.48]  At that time, why was Excel your
+[82:47.80]  favorite programming language?
+[82:49.24]  >> Oh, because it's the world's most widely
+[82:51.04]  used functional programming language.
+[82:52.80]  The formula language is a functional
+[82:54.36]  language, isn't it?
+[82:56.28]  Doesn't have any side effects. You
+[82:58.04]  program entirely with values.
+[82:59.92]  So, the formula language of Excel is
+[83:03.44]  a functional programming language, a
+[83:05.60]  very weak one.
+[83:08.08]  It doesn't even let you define new
+[83:09.48]  functions.
+[83:10.72]  And it has a very limited collection of
+[83:12.12]  data types,
+[83:13.68]  namely just, you know, flat arrays and
+[83:15.52]  numbers and strings.
+[83:17.48]  So,
+[83:19.00]  when I was working for Microsoft, I took
+[83:20.56]  it as my
+[83:21.96]  uh my uh what's the word? Uh
+[83:24.40]  um war cry to say, "Let's take that
+[83:27.44]  idea. Excel is the world's most widely
+[83:29.80]  used functional language by three orders
+[83:32.12]  of magnitude."
+[83:35.12]  And oh, not it's the world's most widely
+[83:37.84]  used programming language by three
+[83:39.16]  orders of magnitude, not just functional
+[83:40.68]  language.
+[83:42.04]  Excel is used by many, many more
+[83:44.04]  programmers, users, domain experts than
+[83:47.80]  any any imperative language.
+[83:51.40]  Right?
+[83:52.60]  Imperative language has a few million
+[83:53.92]  users.
+[83:55.84]  Excel, hundreds of millions of users,
+[83:58.48]  right?
+[83:59.84]  Even if you just restricted users who
+[84:01.36]  are using formulae.
+[84:03.96]  So, how can we delight those users?
+[84:05.88]  Answer, take ideas from functional
+[84:07.92]  programming and use them to make Excel's
+[84:10.80]  formula language more powerful.
+[84:13.80]  It took me 20 years, but Excel did
+[84:16.72]  finally add lambda to Excel.
+[84:20.12]  Look it up. There are blog posts about
+[84:22.16]  it and and many YouTube videos about it.
+[84:25.00]  So, you can now program in Excel using
+[84:27.20]  full lambda as Alonzo Church originally
+[84:29.84]  defined it.
+[84:31.92]  You can write anything like because it
+[84:34.76]  lambda is computationally complete. You
+[84:36.52]  can write any computation in Excel now.
+[84:38.88]  It would be a bit slow, but you can.
+[84:41.20]  And much more practically, you can take
+[84:44.92]  formulae that previously you just copy
+[84:46.72]  pasted here and there
+[84:48.88]  and you wanted to make reusable, wrap
+[84:50.72]  them up in a lambda and now you can just
+[84:52.08]  call the lambda.
+[84:53.56]  And now, it is a proper grown-up
+[84:56.28]  functional language that is Turing
+[84:57.64]  complete.
+[84:59.80]  Just search for lambda Excel. Those two
+[85:02.00]  keywords will get you lots of raw
+[85:03.24]  material.
+[85:04.52]  >> Last question for you is knowing
+[85:06.44]  everything that you know now from your
+[85:08.08]  career, if you could go back to when you
+[85:10.32]  just graduated from college and give
+[85:12.52]  yourself some advice, what would you
+[85:13.96]  say?
+[85:15.00]  >> All of these people who you see very
+[85:17.80]  successful wandering around looking as
+[85:19.60]  if they made it. I guess you might class
+[85:22.16]  me among them now. Um Uh
+[85:24.60]  they are all of them just making it up
+[85:27.12]  as they go along.
+[85:28.56]  They feel insecure, uncertain, not sure
+[85:31.44]  what to do next, um not sure of what
+[85:33.92]  their next steps are, not sure of what
+[85:35.56]  next problem they're going to tackle,
+[85:37.52]  unsure about whether they what they're
+[85:38.68]  doing is going to be successful or not.
+[85:40.36]  Um and so, all of their confidence is I
+[85:43.12]  mean they project confidence maybe.
+[85:44.88]  That's partly a life skill. Um
+[85:46.96]  but often they're not. Um
+[85:49.12]  and so, the fact that, you know, in my
+[85:51.52]  in those days, of course, I felt very
+[85:52.84]  not confident. I would say, you know,
+[85:55.88]  since all of these um successful people
+[85:58.88]  are making it up as they go along, it
+[86:00.44]  it's fine for you to be as well.
+[86:02.40]  Um
+[86:03.40]  And they've been lucky, moreover.
+[86:05.56]  They've been lucky. Uh they've had some
+[86:08.36]  uh
+[86:09.08]  but if you want to be lucky,
+[86:11.00]  you do need to put yourself in a
+[86:12.28]  position where uh
+[86:14.52]  accidents can happen to you.
+[86:18.04]  And that means taking risks. So, if you
+[86:20.48]  want to be lucky, you need to be in a
+[86:22.60]  put yourself in positions where lucky
+[86:25.48]  things could happen.
+[86:27.12]  Right. Um and that means taking some
+[86:29.44]  kind of risk. So, if you're very
+[86:30.56]  conservative and have to take any risk,
+[86:31.88]  then it's very unlikely that the
+[86:33.40]  accident that is life-transforming will
+[86:34.92]  happen. That's a balance, of course. Um
+[86:38.04]  but it means that accidents are not so
+[86:39.24]  bad. And of course,
+[86:40.76]  um dying is bad, but
+[86:42.84]  lots of accidents may change your life
+[86:44.28]  in in in a way that might be surprising
+[86:46.60]  to you, but turns out to be not so bad
+[86:48.40]  in when retrospect.
+[86:50.16]  >> Awesome. Well, yeah, thank you so much
+[86:51.72]  for your time. I really appreciate it,
+[86:53.20]  Professor Jones.
+[86:54.24]  >> We will let you know if that's okay with
+[86:55.08]  you. Uh thanks. Bye.
+[86:56.64]  >> Hey, thank you for watching this
+[86:57.64]  podcast. If you liked it and you want to
+[86:59.28]  see the show grow, please support with a
+[87:01.48]  comment or a like.
+[87:03.48]  Also, if you have any recommendations
+[87:05.28]  for people you want me to bring on,
+[87:07.28]  please drop a comment. Guests like
+[87:09.48]  Barbara Liskov, Mike Stonebreaker, Mark
+[87:12.20]  Brooker, these were all people that I
+[87:14.24]  brought on because someone left a
+[87:16.08]  comment. On another note, aside from the
+[87:18.36]  podcast, I'm working on building the
+[87:20.16]  ergonomic keyboard that I wish existed.
+[87:22.64]  Here's a glance at the prototype. It's a
+[87:24.48]  split keyboard, so there's two sides. Um
+[87:27.52]  this is in the case. But yeah, we
+[87:29.00]  launched on Kickstarter and we hit our
+[87:30.80]  goal within 8 hours of launching. I
+[87:32.88]  really appreciate it if you were one of
+[87:34.28]  the people who grabbed one of the early
+[87:36.04]  units. Um we're now working on the long
+[87:38.36]  journey of building the tooling now. And
+[87:40.48]  so, if you still want to pick one up,
+[87:42.16]  I've left the late pledges open on
+[87:44.16]  Kickstarter, so you can grab one there.
+[87:46.36]  I'll put a link in the description.
+[87:48.32]  Thank you again for watching the
+[87:49.88]  podcast, and I'll see you in the next
+[87:52.08]  episode.

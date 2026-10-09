@@ -1,0 +1,1879 @@
+Title     : I Coached a Front-End Engineer to Sound Senior (Live)
+Video ID  : kt7HzEMHYbU
+URL       : https://www.youtube.com/watch?v=kt7HzEMHYbU
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1870
+Saved at  : 2026-10-08 10:51:08
+------------------------------------------------------------
+
+[00:00.00]  This is Kennan. He's a senior front-end
+[00:02.56]  engineer with 6 years of experience, and
+[00:04.88]  he's trying to land his next senior
+[00:06.40]  role.
+[00:07.28]  Kennan has the stories to get there. He
+[00:09.32]  re-architected a broken questionnaire
+[00:11.08]  that was costing his business real
+[00:12.56]  money.
+[00:13.52]  He chased down a bug that was super
+[00:14.88]  difficult to reproduce in production.
+[00:17.28]  And he introduced end-to-end testing to
+[00:19.20]  a team that fought back hard on the
+[00:20.88]  idea.
+[00:21.96]  But, like a lot of smart engineers, he
+[00:24.32]  just doesn't know how to tell his
+[00:25.48]  stories in a way that makes him sound
+[00:27.16]  senior instead of mid-level. I'm Steve
+[00:29.24]  Nguyen. I spent close to 20 years at
+[00:31.20]  Amazon, where I made it to principal
+[00:32.72]  engineer. And as a bar raiser, I
+[00:34.88]  personally conducted nearly a thousand
+[00:36.56]  interviews. In this video, the three
+[00:38.40]  things I'll help Kennan fix are
+[00:40.32]  front-loading his actions so his impact
+[00:42.24]  lands in the first 30 seconds, cutting
+[00:44.72]  keywords from his answers so his own
+[00:46.64]  contribution is unmistakable, and tying
+[00:49.64]  every story to a business impact so they
+[00:51.84]  aren't mistaken as mid-level. If you're
+[00:53.92]  in the Seattle area and preparing for
+[00:55.56]  interviews, apply to be a guest for an
+[00:57.52]  episode. The application is in the
+[00:59.60]  description. I'd love to help you land
+[01:01.72]  your dream job. Let's get to it.
+[01:03.76]  >> Kennan, thanks for coming by today.
+[01:05.40]  >> Sure.
+[01:05.64]  >> Let's start with your best behavioral
+[01:09.04]  story.
+[01:09.76]  >> Sure. So,
+[01:11.80]  the question that I think is best is
+[01:14.72]  tell me about a project that you
+[01:17.60]  architected and some trade-offs that you
+[01:19.16]  made.
+[01:19.68]  >> Okay.
+[01:20.16]  >> The background is that we had a
+[01:22.08]  onboarding questionnaire that all our
+[01:25.00]  customers who were going through
+[01:26.08]  financial coaching would have to do. Our
+[01:28.12]  company was moving towards a white
+[01:30.24]  labeling solution for our product. So,
+[01:33.44]  product wanted to revamp this
+[01:35.60]  questionnaire, and they wanted it to be
+[01:38.16]  fully customizable by our tenants so
+[01:40.12]  they could change all the questions. It
+[01:41.96]  was decided beforehand that that was too
+[01:44.60]  big a scope change. We just didn't have
+[01:47.28]  the back-end resources. So, when I came
+[01:49.64]  to take on the project, my role was to
+[01:52.80]  redesign the API and to re-architect the
+[01:56.88]  front end.
+[01:58.36]  So, there were two big issues
+[02:01.08]  technically that we had with the
+[02:02.56]  questionnaire. So, one of them was that
+[02:05.80]  the 17-page form all existed on a single
+[02:09.60]  URL path. So, whenever any bugs were
+[02:12.32]  reported, it was really hard to get the
+[02:15.32]  application into the same state that it
+[02:17.40]  was in.
+[02:18.60]  And secondly, we didn't have proper
+[02:21.12]  error handling. Customers were
+[02:22.68]  completing the questionnaire API
+[02:24.48]  endpoints were failing. It was only
+[02:26.24]  until they got to the coaching session
+[02:27.96]  that they found out that
+[02:30.12]  their answers hadn't been saved. So,
+[02:31.68]  there was
+[02:32.60]  the two kind of big issues to to solve.
+[02:34.76]  So, the first thing I did was I created
+[02:36.68]  a sequence diagram of our current flow,
+[02:39.56]  um all the calls that we needed to make
+[02:41.64]  from front end to back end,
+[02:43.80]  and
+[02:45.16]  proposed a solution to the back end.
+[02:47.52]  Now, my idea was to take off some of the
+[02:49.88]  logic from the front end and give it to
+[02:52.32]  uh the back end, um which would mean
+[02:55.16]  that we had less control. It would also
+[02:56.80]  mean that the API requests would be
+[02:59.48]  slightly slower, but it just meant it
+[03:01.52]  would make it easier for us to error
+[03:02.72]  handle any issues that came from the
+[03:05.20]  from the back end. Secondly, to solve
+[03:07.84]  that issue of being on a single URL
+[03:09.44]  path, broke it down into smaller page
+[03:12.76]  paths.
+[03:13.92]  Each page then had its own state
+[03:16.60]  management context, and then each
+[03:19.36]  reusable kind of functions. So, there
+[03:22.04]  were more functions, and there was kind
+[03:23.48]  of a wider space, but then that made it
+[03:25.16]  easier to test and to reason about going
+[03:27.08]  forward. With all that in place, uh the
+[03:29.72]  team and I were able to create the on
+[03:32.28]  this new flow, which was extensible and
+[03:35.72]  ready for any future upgrades for when
+[03:39.04]  the
+[03:39.92]  SAS partners wanted to configure it, but
+[03:41.40]  it was also a lot more reliable and
+[03:43.72]  fully tested compared to our
+[03:46.20]  what we had before.
+[03:47.28]  >> Got it. How long did this all take you?
+[03:49.20]  >> Yes, so this was a about a 2-month
+[03:51.36]  project.
+[03:52.36]  >> All right. How do you think that story
+[03:53.68]  landed?
+[03:54.52]  >> I think it's it gives a
+[03:57.88]  sort of baseline of what kind of what
+[03:59.80]  happened with the bits that I had to
+[04:01.52]  play.
+[04:02.52]  It maybe misses a bit of a a punch of
+[04:05.88]  the the impact that it had. Yeah, I
+[04:08.36]  think that's the
+[04:09.88]  parts that I kind of struggle with is
+[04:11.28]  trying to take my story
+[04:13.36]  and calibrate it for kind of a
+[04:16.00]  senior-level role.
+[04:17.36]  >> I think it's a good story. The all the
+[04:19.32]  ingredients are there. I think
+[04:22.48]  the problem is I gave maybe a little bit
+[04:24.36]  too much context to start off.
+[04:26.56]  >> Okay.
+[04:26.96]  >> I think that those details were
+[04:28.28]  necessary,
+[04:29.96]  but they were necessary for different
+[04:31.48]  parts of the story. So, I'm a big fan of
+[04:35.32]  leading with your actions and your
+[04:37.44]  behavior
+[04:38.92]  and providing just enough context to
+[04:41.08]  make sure that that those actions make
+[04:42.84]  sense.
+[04:43.92]  Does that make sense?
+[04:44.64]  >> Yes. Okay.
+[04:45.64]  >> So, I think you did a great job of like
+[04:47.72]  framing the project, but the thing is
+[04:49.20]  I'm not going to go and work on that
+[04:50.72]  thing. You don't need to tell me that
+[04:52.52]  your you know, your company
+[04:53.64]  white-labeled
+[04:55.20]  the the quiz.
+[04:57.20]  Um
+[04:58.80]  you know, you don't need to tell me how
+[05:00.12]  many questions there are on it.
+[05:02.60]  You know, and so I would have said
+[05:03.84]  something like, I I re-architected the
+[05:06.96]  questionnaire?
+[05:07.72]  >> Yes, a questionnaire. Onboarding
+[05:09.16]  questionnaire.
+[05:09.60]  >> yeah, I took an onboarding questionnaire
+[05:12.44]  that was pretty complicated,
+[05:15.44]  um but it was
+[05:17.04]  like fundamentally misdesigned.
+[05:20.20]  Because people would just get on a
+[05:21.60]  coaching call and realize that their
+[05:23.24]  answers hadn't been saved, but they had
+[05:24.48]  spent all of this money to get onto this
+[05:26.60]  coaching call.
+[05:28.04]  And so, I needed to to fix it.
+[05:30.92]  And we had some decisions about whether
+[05:32.32]  we wanted to fix it for the short term
+[05:34.44]  or the long-term and how extensible we
+[05:36.00]  wanted to be.
+[05:37.20]  >> Okay.
+[05:37.52]  >> Right?
+[05:38.04]  >> Yep.
+[05:38.60]  >> If I had just said that, it was a kind
+[05:40.24]  of a longer sentence. I might break it
+[05:42.12]  up into to two or three sentences or
+[05:44.16]  something like that. Anybody that has
+[05:45.88]  written software ever would just say,
+[05:48.36]  "Okay, I know exactly what he did."
+[05:50.16]  Right? I understand what the stakes are.
+[05:52.04]  I understand the problem space. Does
+[05:53.88]  that make sense?
+[05:54.80]  >> Yes, so that's the opening line, or is
+[05:57.48]  that kind of I give that and then I
+[05:59.08]  wait? Oh.
+[06:00.20]  >> Yeah, so I suggest people use like a
+[06:02.84]  think about it in terms of like a
+[06:04.08]  pyramid.
+[06:05.32]  So, at the very top is the entire story.
+[06:08.52]  So, if you look at
+[06:09.88]  behavioral interviews, like most of the
+[06:11.64]  guidance is to use like the STAR format,
+[06:14.44]  right? So, situation, task, action, and
+[06:16.88]  result. Or maybe even CAR or CAR, so
+[06:19.20]  context, action, result, optionally
+[06:21.68]  learning. The problem is that you end up
+[06:24.20]  telling a very chronological
+[06:26.80]  story. I'm not writing a a report on
+[06:29.36]  that. I I actually I don't care about
+[06:31.56]  the like the the story as it as it's
+[06:33.96]  being told from the company's
+[06:34.96]  perspective. What I really care about is
+[06:36.72]  like what did you do? Because
+[06:39.36]  based off of what you did, I'm going to
+[06:40.96]  map that to the context that I have for
+[06:43.32]  the company that's hiring you, and I'll
+[06:44.52]  be like, "Okay, Kennan was able to do it
+[06:47.60]  to solve a big problem over there that
+[06:50.00]  was kind of big and hairy, and he did it
+[06:52.12]  in a short amount of time. He could do
+[06:53.68]  that over here." We want to make sure
+[06:55.24]  that we we get to the action as quickly
+[06:57.48]  as possible. So, think about it in terms
+[06:59.00]  of a pyramid with three layers, right?
+[07:00.44]  So, the very first is like the headline.
+[07:02.92]  "Hey, tell me about the project that
+[07:04.28]  you're in the most proud of." Okay. You
+[07:06.36]  tell them about the the fact that you
+[07:07.92]  made an extensible questionnaire in a
+[07:10.12]  short amount of time. Errors never
+[07:12.20]  popped up again. Uh clients were super
+[07:14.56]  happy. Then, I think you want to tell
+[07:16.12]  like the 2-minute version of that story.
+[07:18.40]  You add a little bit more context. You
+[07:20.08]  talk about how you broke some things
+[07:21.64]  down. There might have been some
+[07:22.72]  gotchas. Uh there might have been some
+[07:24.60]  challenges and obstacles. And then, the
+[07:27.24]  base layer of your pyramid is like
+[07:29.80]  follow-up questions that the that the
+[07:32.76]  interviewer wants to have. So, maybe the
+[07:35.32]  interviewer cares about the specific
+[07:37.16]  technologies that you used. Did you use
+[07:39.40]  React, or did you use another library on
+[07:41.56]  top of it, or did you roll your own?
+[07:43.60]  What were some of the error cases that
+[07:45.24]  were there that were like particularly
+[07:46.96]  difficult? Maybe they want to go into
+[07:48.48]  the business side, and so they care
+[07:49.68]  about, you know, the coaching product
+[07:51.96]  and the offering, and like where you fit
+[07:54.40]  into the situation. You can't know
+[07:57.16]  what the interviewer is going to want to
+[07:59.84]  know more about, but you could at any
+[08:02.12]  given point talk about those things if
+[08:05.00]  they ask you those follow-up questions.
+[08:06.72]  But I think it's a mistake to try to
+[08:08.72]  anticipate what follow-up questions will
+[08:11.08]  be because that just blows your context
+[08:13.20]  up, and because you put at the beginning
+[08:14.48]  of your story, you are both going to
+[08:16.40]  probably choose incorrectly. It would be
+[08:18.04]  like winning the lottery if you were to
+[08:19.76]  choose the context that would magically
+[08:21.52]  fit the glove of the interviewer, but
+[08:23.64]  also it's just going to lead to this
+[08:25.56]  situation where you're going to provide
+[08:27.00]  context that you don't end up following
+[08:29.32]  up on.
+[08:30.56]  Does that make sense? This episode is
+[08:32.72]  brought to you by Linear. They just
+[08:34.68]  published something that I think is
+[08:36.28]  worth talking about. They opened with a
+[08:38.52]  new manifesto, "Issue tracking is dead."
+[08:42.36]  And what that means is that the
+[08:43.64]  behaviors around it, like the manual
+[08:45.52]  logging of issues, the prioritization
+[08:47.72]  back and forth, the grooming sessions
+[08:50.08]  where half the room is just trying to
+[08:51.60]  figure out what's even in the backlog,
+[08:54.16]  these things are a thing of the past
+[08:55.68]  with Linear.
+[08:56.88]  I lived this nightmare at Amazon. We had
+[08:59.12]  mechanisms for everything. And don't get
+[09:01.16]  me wrong, I'm a big believer in
+[09:02.72]  mechanisms, but more often than not, the
+[09:04.96]  process of tracking the work took as
+[09:06.88]  much energy as doing the work. You come
+[09:09.56]  out of a sprint planning meeting and
+[09:10.88]  think, "We just spent 2 hours so eight
+[09:13.56]  engineers could figure out what they
+[09:15.04]  already knew they needed to build."
+[09:17.52]  What Linear has done is rebuilt the
+[09:19.44]  platform so that the stuff happens
+[09:21.28]  automatically. Your code, your
+[09:23.36]  decisions, your customer feedback, all
+[09:25.72]  of that context all lives in one place,
+[09:28.28]  and Linear actually works from that. So
+[09:30.60]  when something comes in, the system
+[09:32.24]  already understands what it is and where
+[09:34.44]  it fits. Nobody has to triage it
+[09:36.56]  manually.
+[09:37.76]  If you're an engineering leader and you
+[09:39.48]  want your team building instead of
+[09:41.04]  administrating the work, check out
+[09:42.92]  Linear. The link is in the description.
+[09:46.12]  >> Yes. So, give the opener kind of short
+[09:49.20]  condensed version
+[09:50.72]  and then give out the details and then
+[09:52.96]  do you just kind of stop and wait? Do
+[09:54.20]  you invite any more? Do you say, "Is
+[09:56.48]  there any particular bit that you'd like
+[09:57.72]  to hear more on?"
+[09:58.60]  >> Yeah, exactly.
+[09:59.60]  >> Okay. Yeah.
+[10:00.36]  >> Yeah. And so, by prompting the
+[10:02.20]  interviewer to if there's any further
+[10:05.20]  follow-ups, you do a couple of things.
+[10:07.16]  One,
+[10:08.40]  it stops rambling because you could just
+[10:10.96]  be like, "To know about this particular
+[10:12.68]  detail, he needs context on this." You
+[10:14.04]  can get stuck in this infinite loop
+[10:16.36]  of just like trauma dumping
+[10:19.24]  on the interviewer. By stopping, you are
+[10:22.20]  inviting a conversation. You don't want
+[10:24.16]  it to be a monologue. You want it to be,
+[10:26.52]  you know, a conversation about stuff.
+[10:28.00]  This gives them an opportunity to lead
+[10:30.04]  you in the direction that they want to
+[10:32.48]  go in. Now, it could also be that you've
+[10:34.56]  answered the question to their
+[10:35.96]  satisfaction. In which case, you know, I
+[10:38.36]  used to train a a ton of interviewers. I
+[10:40.56]  told the interviewers, like, "If you got
+[10:42.56]  the data point that you needed,
+[10:45.04]  there's no need to follow up to take the
+[10:47.44]  story to its logical conclusion."
+[10:50.40]  >> Yeah.
+[10:51.40]  >> Right. So, sometimes you might be in an
+[10:52.68]  interview and they ask you a question
+[10:54.20]  and then you give an answer and they're
+[10:55.64]  like, "Great." And then they like move
+[10:57.52]  on and you might think to yourself like,
+[10:59.48]  "Oh, I must have answered that
+[11:00.96]  incorrectly." The way that you should
+[11:02.44]  actually interpret that is like they got
+[11:04.56]  what they needed.
+[11:05.20]  >> Yeah.
+[11:05.64]  >> It's just like much more efficient to
+[11:07.04]  move on. Right. So, you're giving them
+[11:08.60]  the opportunity to move on if they got
+[11:10.76]  what they needed.
+[11:11.92]  >> Yeah. So, I guess it's the idea the
+[11:13.72]  interviewer wants you. They want to get
+[11:16.20]  the idea. They want to get the data
+[11:17.52]  point from you.
+[11:18.40]  >> Yes.
+[11:19.00]  >> So, and they're trying to just get that
+[11:20.12]  as quickly as possible.
+[11:21.56]  >> They should if they're a good
+[11:22.48]  interviewer.
+[11:23.12]  >> Yeah. I guess it's that key thing. What
+[11:25.12]  is it that they're asking?
+[11:26.56]  >> Yes.
+[11:27.08]  >> On top of That's That needs to be in
+[11:28.64]  that opening top of the pyramid answer.
+[11:30.80]  >> And that 2-minute what I call it the
+[11:32.92]  behavioral core, in that two-minute
+[11:34.48]  core, what you want to do is you want to
+[11:36.64]  tease a particular line of conversation.
+[11:40.16]  And so, if they are interested in that,
+[11:42.24]  then when you ask them for the
+[11:43.48]  follow-up, they will be like, "Hey, can
+[11:44.96]  you flesh this particular aspect out?"
+[11:47.04]  And then you'd be like, "Of course." But
+[11:49.00]  if you do the upside down pyramid, where
+[11:51.28]  you give them everything, breadth and
+[11:53.24]  depth, that's when you're going to catch
+[11:55.16]  yourself rambling, that's when you're
+[11:57.56]  actually adding a lot of cognitive load
+[11:59.68]  to the interviewer.
+[12:01.36]  Cuz they're trying to filter the story
+[12:04.16]  in real time. One mental model I think
+[12:06.52]  is really helpful is like, think about
+[12:08.84]  the fact that you're the interviewer is
+[12:10.44]  writing notes down. In a perfectly
+[12:12.60]  efficient communication model, you would
+[12:15.04]  give them the line that they write down.
+[12:17.04]  And so, that's what you should strive
+[12:18.24]  for with these these summaries of the
+[12:20.32]  stories. Candidate works at a company
+[12:23.52]  where they had a inflexible and long
+[12:26.52]  questionnaire. There was no error
+[12:28.20]  handling, and uh oftentimes answers
+[12:32.00]  would be blank. This was a onboarding
+[12:34.04]  questionnaire for very expensive like
+[12:36.32]  coaching product. And so, customers were
+[12:39.12]  very unhappy
+[12:41.16]  um when this occurred. Candidate was
+[12:43.32]  able to build a uh flexible and
+[12:46.56]  comprehensive solution that eliminated
+[12:48.92]  all of the blank answers, allowed for
+[12:51.24]  variations in uh tests, and could
+[12:54.76]  guarantee correctness and like uptime of
+[12:57.80]  the questionnaire.
+[12:58.76]  >> Yeah.
+[12:59.32]  >> Right?
+[13:00.04]  >> Yeah.
+[13:00.40]  >> And so, then if you're going to
+[13:01.92]  interview with uh maybe a technically
+[13:04.08]  minded person, they would be like,
+[13:06.16]  "Okay, uh you say that it's flexible,
+[13:08.80]  what exactly does that mean? Okay, what
+[13:10.56]  what are the dimensions that were you
+[13:12.16]  were able to configure the different
+[13:14.28]  questions on? What was the backing data
+[13:16.52]  store?" Any number of different
+[13:18.52]  questions there. Could you group
+[13:19.72]  questions into like subgroups or
+[13:21.72]  something like that? You know, and then
+[13:22.92]  you'd be like, "Oh, glad you asked." And
+[13:24.76]  you can like go into it. You said you
+[13:26.32]  made it like really testable. What was
+[13:28.08]  your testing strategy? And so, I'm just
+[13:30.16]  assuming since, you know, you're the
+[13:32.04]  expert on this and you lived that
+[13:33.36]  experience, that yeah, of course, you
+[13:34.72]  could just go into any number of those
+[13:36.56]  different lines of questioning.
+[13:37.96]  >> Just like Kenan, I see smart people
+[13:40.16]  really struggle to know how much depth
+[13:41.84]  to give in their interview responses. If
+[13:44.28]  you're taking notes now, no need. I
+[13:46.68]  outlined it all here in my book, The
+[13:48.40]  Technical Behavioral Interview, an
+[13:50.16]  Insider's Guide.
+[13:51.56]  I go over a brain-dead story structure
+[13:53.60]  with 72 example stories across all
+[13:56.04]  levels from junior to staff and
+[13:57.80]  principal. They cover more than 130
+[14:00.32]  interview questions, more than you'll
+[14:02.08]  ever need. The link is in the
+[14:04.24]  description.
+[14:04.96]  >> Sure. Yeah, so
+[14:06.76]  when preparing or practicing like the
+[14:09.16]  story, cuz I guess the story could be
+[14:10.60]  used for other questions as well.
+[14:12.20]  >> Mhm.
+[14:12.72]  >> But
+[14:13.48]  how do you suggest to prepare for that
+[14:15.44]  kind of top pyramid? Is there a length
+[14:17.44]  of time
+[14:18.88]  or is it just trying to match it
+[14:20.80]  perfectly?
+[14:22.20]  >> You have to do some pattern matching and
+[14:24.00]  decoding of the question. Let's talk
+[14:25.76]  through it, right? So, what type of
+[14:27.60]  questions you think that this the story
+[14:29.40]  would be good for?
+[14:30.32]  >> Like the proudest project. The one that
+[14:33.28]  you that you led. There's a bit of where
+[14:36.08]  you've worked cross-functionally, maybe
+[14:38.24]  with working with a back-end engineers
+[14:41.00]  and design.
+[14:42.12]  >> So, cross-functional is kind of I think
+[14:44.36]  maybe too generic. I think if there was
+[14:47.12]  a disagreement there, that might be
+[14:48.76]  interesting.
+[14:50.12]  Um if there was a lack of requirements
+[14:53.12]  or guidance,
+[14:54.68]  that may be good. If there was a tight
+[14:56.36]  deadline,
+[14:58.08]  I think that would be good. Um if there
+[14:59.80]  were like stakeholders that were being
+[15:01.72]  unreasonable, that might be good as
+[15:03.72]  well.
+[15:04.80]  >> Yeah, I could say with there was the the
+[15:06.72]  deadline. It was our our team's
+[15:08.88]  quarterly goal.
+[15:10.32]  Um
+[15:11.20]  trying to think how to
+[15:12.88]  how to frame it in that the challenges
+[15:15.04]  that came up in trying to meet that that
+[15:17.12]  goal.
+[15:17.72]  >> So, this is your your proudest moment,
+[15:19.92]  and you talked about the fact that there
+[15:21.20]  was some cross-functional stakeholders.
+[15:23.84]  There were other teams that you were
+[15:24.96]  working with.
+[15:25.72]  >> Yeah.
+[15:26.36]  >> I think the fact that it was
+[15:27.60]  cross-functional, that's kind of a
+[15:29.24]  leveling indicator. So, like that might
+[15:31.32]  separate you from say a mid-level or an
+[15:33.64]  entry-level engineer. And so, I think
+[15:37.00]  there's an incongruity here between the
+[15:39.72]  functionality
+[15:41.28]  and what level and scope that you're
+[15:44.20]  you're operating at. So, personally, I
+[15:46.40]  think you might want to add a little bit
+[15:47.96]  more stakes. So, you could see a
+[15:50.48]  situation where there's a questionnaire
+[15:53.80]  that's malfunctioning
+[15:55.32]  that a junior engineer
+[15:57.44]  could have said like, "Hey, this this is
+[15:59.68]  my crowning achievement." And so, like
+[16:02.20]  what would make it difficult for a
+[16:03.84]  junior engineer put in that same
+[16:05.84]  situation as opposed to being a mid or
+[16:08.64]  senior engineer? That doesn't come out
+[16:10.08]  in the story.
+[16:11.28]  >> Right. Okay. It's a good point. I feel
+[16:13.64]  with
+[16:14.48]  I feel like I'd need to sort of wrestle
+[16:16.44]  with it again a bit more um to sort of
+[16:18.92]  bring that out.
+[16:19.68]  >> No, so to be clear,
+[16:21.20]  uh they would not ask you the question
+[16:23.04]  the way that I posed it. They're trying
+[16:25.12]  to make that determination as you tell
+[16:27.56]  that story. So, companies are going to
+[16:29.44]  be looking for four dimensions when
+[16:32.32]  they're evaluating you for a level. So,
+[16:34.20]  the first thing they're going to look at
+[16:35.28]  is the scope. Was the scope at the
+[16:37.60]  personal level? Was it at the team
+[16:39.36]  level? Was it at the
+[16:41.48]  intra-team level? Was it at the
+[16:43.00]  organizational level? Then they're going
+[16:44.68]  to be looking at impact, right? So,
+[16:46.76]  junior engineers are going to have a
+[16:49.44]  smaller or expectation of impact than a
+[16:51.68]  mid mid or a senior staff level. The
+[16:53.96]  contribution, right? So, I think a
+[16:55.88]  couple of times in the telling of your
+[16:57.68]  story you used we. That's not useful for
+[17:00.08]  an interviewer. We want to know exactly
+[17:02.12]  what Cannon did. You should just try to
+[17:04.16]  as much as you can excise the usage of
+[17:06.68]  the pronoun we whenever you're talking
+[17:09.24]  about what happened. And then finally,
+[17:10.84]  they're going to be looking at the
+[17:11.68]  difficulty, right? So, the difficulty
+[17:13.36]  can be in the code, it can be in the
+[17:15.04]  technology, but it could also be on
+[17:17.36]  other dimensions as well. So, I think
+[17:19.64]  what you want to do typically is you
+[17:21.36]  want to score what level each one of
+[17:24.08]  those dimensions are,
+[17:25.96]  and then the mean or the median of that
+[17:28.48]  is what the level of that story would be
+[17:31.68]  for the interviewer, okay? So, let's
+[17:33.68]  just go through it. What is the scope of
+[17:35.68]  your project here? Do you think it's a
+[17:37.56]  senior level scoped project or a mid or
+[17:39.64]  what?
+[17:40.08]  >> Yeah, I would say it was a senior level
+[17:41.24]  scoped project. It was uh a key part of
+[17:44.76]  our product, and there was a lot of
+[17:48.52]  reworking that needed to be done, and
+[17:51.44]  needed a a high-level
+[17:53.56]  view of all the work
+[17:55.72]  that had been done previously.
+[17:56.92]  >> Were you uh working within the team
+[17:59.36]  context on this project?
+[18:01.44]  >> Yes, this questionnaire was part of the
+[18:05.08]  product suite that my team was working
+[18:07.16]  on.
+[18:07.68]  >> So, if it was owned by your team, could
+[18:09.88]  other people on the team also use this
+[18:12.64]  as a story
+[18:14.12]  for their own behavioral interview?
+[18:16.44]  >> Right, okay. I would say that the the
+[18:18.80]  higher-level work of the the
+[18:21.44]  architecture and the working with the
+[18:23.64]  back end would have been the things that
+[18:26.16]  I had owned. The implementation was the
+[18:29.20]  the team's. So, I was part of working
+[18:31.36]  with the product manager and breaking
+[18:33.60]  down the stories, being able to make
+[18:35.48]  sure that all the work was covered in
+[18:38.36]  the sprints that we had. Yeah, then the
+[18:40.76]  implementation was the the team's.
+[18:42.96]  >> Okay, so that sounds like a senior-level
+[18:45.52]  scoped project.
+[18:46.60]  >> Okay.
+[18:46.92]  >> In terms of the contribution, I think
+[18:48.96]  you need to be a little bit more clear.
+[18:50.24]  I think you did a good job of it,
+[18:51.36]  actually, of talking about how you
+[18:53.32]  designed and architected the system, and
+[18:55.76]  that you did some of the implementation,
+[18:57.40]  but that some of the other
+[18:58.40]  implementation was done by other folks
+[19:00.08]  on the team. So, if you were able to
+[19:01.80]  clearly delineate that, they'll be like,
+[19:03.48]  "Oh, okay, cool. This wasn't a
+[19:04.92]  one-person job. This was a five-person
+[19:07.60]  job with uh Kennan at the top."
+[19:10.28]  >> Right, okay. That's actually something I
+[19:12.56]  did
+[19:13.40]  want to get some help about was trying
+[19:15.52]  to avoid the we, but not overblowing
+[19:18.80]  your side of the story and and like
+[19:20.84]  saying you did more than you actually
+[19:23.24]  did, but then also being
+[19:26.44]  confident in clearing the bit that you
+[19:28.48]  you did do.
+[19:29.60]  >> Yeah, so the way I think about it cuz
+[19:31.16]  it's really difficult. We don't want to
+[19:33.32]  take too much of the glory of what
+[19:36.16]  happened. I I interviewed somebody one
+[19:38.28]  time and he said that he was
+[19:41.24]  single-handedly responsible for
+[19:43.56]  Microsoft Azure. I'm like, you created
+[19:46.00]  Microsoft Azure? He's like, yes. And he
+[19:48.08]  was not interviewing for a very high
+[19:49.56]  position. And so I was like, seriously,
+[19:51.52]  dude, you did everything? And he was
+[19:53.52]  like, yes. So we don't want to be that
+[19:55.04]  guy. Yeah. But we also don't want to get
+[19:57.60]  into too much detail. Okay, so I'll I'll
+[20:00.48]  give you a mental model here. So there's
+[20:02.76]  this problem about measuring the length
+[20:05.44]  of any given shoreline. The granularity
+[20:08.32]  in which you measure the shoreline
+[20:10.72]  actually increases the length of the
+[20:13.00]  shoreline. I don't know if you've heard
+[20:14.32]  of this problem before.
+[20:15.28]  >> No, no.
+[20:16.16]  >> So if you were like, okay, well, how
+[20:17.40]  many miles of shore are there in Great
+[20:20.12]  Britain? And you say that the the
+[20:22.52]  granularity is 1 mile. You'll get one
+[20:24.60]  reading, right? Because if the pixel is
+[20:26.88]  like 1 mile long and then you'll be able
+[20:29.00]  to measure. But then you're like, oh,
+[20:30.68]  actually we're going to do it at the
+[20:32.04]  kilometer fidelity. Right? So that the
+[20:34.96]  shoreline actually increases because you
+[20:37.16]  have more detail. And then you're like,
+[20:39.16]  okay, we'll do it at the meter level.
+[20:40.84]  And then all of a sudden the shoreline
+[20:42.24]  gets to be really, really big. And so
+[20:44.48]  that's kind of the problem that a lot of
+[20:46.88]  people have with we. They go into this
+[20:49.08]  granularity that's like maybe too
+[20:51.00]  detailed about what ended up happening,
+[20:53.08]  and that's not useful for the
+[20:54.92]  interviewer. The interviewer is really
+[20:56.68]  wanting to know at a high level what the
+[20:58.04]  contribution was. They're not part of
+[21:00.08]  the project. They're not going to jump
+[21:01.40]  in. They don't need that level. They
+[21:03.00]  just need to know broadly what you did.
+[21:05.60]  Your actual contribution is a little bit
+[21:07.56]  muddy because you go at that higher
+[21:09.16]  granularity, but it's still true. You
+[21:11.72]  would be comfortable with saying
+[21:12.88]  something like, "Hey, I designed and
+[21:14.36]  architected the solution." You don't
+[21:16.24]  need to be like, "Well, actually I was
+[21:18.16]  responsible for like 84% of the design
+[21:21.16]  and architecture. There was another
+[21:22.68]  mid-level engineer whose job was to come
+[21:24.92]  in and build the small subsystem."
+[21:26.72]  >> Yeah.
+[21:27.00]  >> But it turns out that that small
+[21:28.28]  subsystem like didn't matter at all in
+[21:31.08]  like the broader implementation. You can
+[21:32.76]  just say confidently I designed and
+[21:34.36]  implemented it.
+[21:35.40]  >> Okay.
+[21:35.80]  >> Right?
+[21:36.40]  >> Yeah.
+[21:36.80]  >> You can't go to the earth-level
+[21:38.92]  granularity and be like, "I designed
+[21:40.64]  Microsoft Azure and implemented it and
+[21:42.40]  all of that other stuff." Right? You
+[21:43.48]  were part of that contribution. What you
+[21:45.08]  want to do is you just want to chunk up
+[21:46.96]  what your level of contribution is so
+[21:48.72]  that you can say it simply to the
+[21:50.96]  interviewer. Does that make sense?
+[21:52.64]  >> Yeah. No, that's very helpful. It's a
+[21:54.60]  very helpful mental model for sort of
+[21:56.64]  breaking that breaking that up.
+[21:58.32]  >> In terms of the impact, I think that was
+[22:00.28]  it was unclear to me. Now we have this
+[22:02.44]  like configurable
+[22:04.60]  questionnaire that's much more resilient
+[22:07.84]  and doesn't have very many errors and
+[22:09.80]  handles them gracefully, but I did not
+[22:11.64]  get a sense of like what the impact of
+[22:13.96]  that was.
+[22:14.92]  >> Yeah, so the impact was that we were
+[22:17.60]  able to release a much better version of
+[22:20.56]  the questionnaire in a shorter amount of
+[22:22.52]  time than it would have been to do the
+[22:24.12]  fully fledged one that product was
+[22:27.24]  aiming for. It was also something that
+[22:29.40]  was a lot better
+[22:31.36]  tested and would have allowed for
+[22:33.24]  building up for any changes going
+[22:35.44]  forward. It would have made it a lot
+[22:36.64]  easier and more robust to to do it. The
+[22:38.84]  struggle is that there aren't any
+[22:41.00]  particular metrics that I I have and I
+[22:44.32]  don't know what to Yeah, I'm I'm just
+[22:45.76]  trying to think I I'm you know, I'm not
+[22:47.32]  going to try and fabricate metrics. Um
+[22:49.60]  but it's to know Yeah, what to do when
+[22:52.80]  the story doesn't have a particular
+[22:55.44]  metric and is just trying to work out
+[22:57.48]  how you can still show impact.
+[22:59.08]  >> The thing here is impact I define as a
+[23:03.28]  measurable change and symmetric.
+[23:05.76]  Optimally, it would be a quantitative
+[23:07.68]  metric with a number that you could
+[23:09.68]  easily chart up or down. In the absence
+[23:11.52]  of that, I think providing a qualitative
+[23:13.60]  metric
+[23:14.76]  is okay. I think in this situation,
+[23:17.40]  you know, I asked about impact and you
+[23:18.72]  were basic you basically told me about a
+[23:20.44]  trade-off between like getting something
+[23:22.76]  out versus like all the bells and
+[23:24.68]  whistles that product wanted. And so,
+[23:26.20]  that's not exactly the type of impact
+[23:28.96]  >> Yeah.
+[23:29.36]  >> that we want to talk about. Now, you did
+[23:30.96]  say that time to creating like another
+[23:33.92]  questionnaire was shortened, but that
+[23:35.80]  doesn't give me a sense of the impact to
+[23:38.60]  the business.
+[23:40.20]  But, you would actually teed it up at
+[23:41.80]  the beginning of the story, which was
+[23:43.64]  like there are angry coaches on the
+[23:46.08]  other side.
+[23:47.44]  >> Yeah.
+[23:47.80]  >> So, that's a qualitative metric.
+[23:49.48]  >> Yeah.
+[23:49.92]  >> But, I think it's what you have, so you
+[23:51.44]  need to use it.
+[23:52.24]  >> Yes. Okay.
+[23:53.12]  >> It's going to be difficult with this
+[23:54.52]  type of work to draw a number back to
+[23:57.20]  say like a financial number, but
+[24:00.08]  you can increase the stakes if you know
+[24:02.48]  what the stakes are to your particular
+[24:04.12]  client. So, how much are these coaching
+[24:06.24]  programs?
+[24:07.08]  >> This initial session is the kind of a
+[24:10.48]  free coaching session that they then
+[24:12.68]  will pay few hundred pounds to
+[24:15.96]  to be able to join.
+[24:16.92]  >> But, it's part it's part of a broader
+[24:18.28]  package.
+[24:18.76]  >> Yes.
+[24:19.52]  >> So, what's the what's the high ticket
+[24:20.92]  number? I know there's a range, but
+[24:22.84]  >> Yeah, we'd be taking a a percentage of
+[24:24.72]  their savings when they choose to invest
+[24:27.32]  in with our platform.
+[24:28.40]  >> Got it.
+[24:28.92]  >> This is the entry way to that. And so,
+[24:31.48]  we'd be taking a percent of the savings.
+[24:34.16]  >> No, I mean it's so the percentage is the
+[24:35.48]  thing that reduces the much bigger
+[24:37.32]  number, right? So, is this for people
+[24:39.88]  with millions of pounds in their
+[24:41.08]  retirement savings, or is it for people
+[24:43.20]  that are really rich, or is it for like
+[24:45.08]  what's the
+[24:45.60]  >> It's Yeah, so there is actually it would
+[24:47.36]  be a for the
+[24:48.76]  a range of people from It's trying to
+[24:50.60]  get people who don't usually invest
+[24:52.48]  investing. That's a big market share.
+[24:54.56]  And so, that's where they're trying to
+[24:56.92]  get people
+[24:57.56]  >> No, see I mean again like just
+[25:00.60]  numbers like
+[25:02.52]  >> Okay, it'd be for people with 50,000 to
+[25:06.32]  a
+[25:07.20]  200,000 pounds wanting to invest with
+[25:09.68]  us.
+[25:09.80]  >> Got it. Okay. So So this is maybe what I
+[25:11.96]  would say. For this particular product
+[25:14.48]  the goal was to get people with, you
+[25:16.68]  know, 50,000, 100,000 pounds, millions
+[25:19.68]  of pounds
+[25:20.96]  who didn't usually invest investing
+[25:23.76]  with the guidance of these coaches. Now,
+[25:25.48]  it's very difficult to find and market
+[25:27.60]  to these people and so it's really
+[25:29.60]  important that we get a really detailed
+[25:31.60]  questionnaire so that we can give it to
+[25:33.32]  the coaches so the coaches can actually
+[25:35.00]  sell the product.
+[25:36.64]  If they don't have that information,
+[25:38.72]  they're not going to be able to make an
+[25:39.92]  effective pitch and then the company
+[25:41.64]  will lose a ton of money. Now, we were
+[25:43.28]  also white labeling these these
+[25:45.00]  questionnaires and so that means that
+[25:47.52]  other people from like other coaching
+[25:49.68]  practices would like use this product as
+[25:51.84]  well. So it's really important that it
+[25:53.16]  would be flexible. But first and
+[25:54.88]  foremost, for the business to make
+[25:56.64]  money, this questionnaire really needed
+[25:59.36]  to be rock solid.
+[26:00.64]  >> That's good.
+[26:02.40]  Yeah, yeah.
+[26:03.16]  >> So I think the the problem is that a lot
+[26:05.60]  of tech people, they kind of reduce
+[26:08.40]  their contribution. They don't really
+[26:10.24]  know how their work fits into the
+[26:12.36]  broader business that's there. Now, I'm
+[26:13.96]  in the coaching game so I understand
+[26:15.48]  that like onboarding is really really
+[26:17.28]  important. Either they're about to or
+[26:19.80]  they have just spent a a sizable
+[26:21.72]  investment or a percentage of the the
+[26:23.84]  funds that they're going to invest in
+[26:26.08]  like globally and they have the option
+[26:28.56]  to back out. Like there's a refund or a
+[26:30.44]  grace period. And so if that onboarding
+[26:32.88]  call is a really poor quality, that's
+[26:36.20]  literally going to lose a ton of money
+[26:37.80]  for the company that's there. So that So
+[26:39.76]  this is a way to like increase the
+[26:41.40]  stakes in the results cuz you don't
+[26:43.08]  actually have You're not privy to the to
+[26:45.64]  the actual profit and loss statement of
+[26:47.40]  this particular company. But you do know
+[26:49.88]  that it's important to make these people
+[26:51.76]  happy because you understand how their
+[26:53.08]  business works. Does that make sense?
+[26:55.12]  >> Yeah. No, that that's a really helpful
+[26:57.68]  reframing of it. The business impact of
+[27:00.60]  the of the questionnaire.
+[27:01.96]  >> And
+[27:02.96]  you know, anybody that works in
+[27:04.16]  technology knows about clients or
+[27:07.60]  partners or stakeholders that are losing
+[27:09.44]  money that are breathing down your neck
+[27:11.92]  because this piece of software isn't
+[27:13.52]  working the way that it should.
+[27:15.48]  Right? And so, maybe giving a summary of
+[27:17.92]  what I just elucidated about the
+[27:20.40]  particular business so that people can
+[27:22.60]  understand, "Okay, there's a whole bunch
+[27:24.36]  of like demanding people on the other
+[27:25.96]  side."
+[27:26.60]  >> Yeah.
+[27:27.24]  >> Okay. There's one other thing which is
+[27:30.28]  you had talked about trade-offs of being
+[27:33.48]  able to use this question in terms of
+[27:35.08]  trade-offs, but I actually didn't hear
+[27:36.48]  any trade-offs.
+[27:37.52]  >> Okay, right. The the trade-offs were the
+[27:40.00]  the tech decisions. For example, moving
+[27:42.76]  some of the logic from the front end to
+[27:44.96]  the back end.
+[27:45.92]  >> Okay.
+[27:46.48]  >> Um and the the benefit of getting a
+[27:48.92]  single endpoint rather than multiple
+[27:52.52]  endpoints was meant that there'd be
+[27:55.52]  potentially slower responses,
+[27:57.64]  but it was a simpler API to use.
+[28:00.64]  >> By endpoints, you mean
+[28:03.20]  >> like making API requests um from the
+[28:06.12]  front end to the back end.
+[28:07.64]  >> Why would there be more than one
+[28:08.72]  endpoint?
+[28:09.28]  >> In the old setup, we would have
+[28:12.12]  different REST endpoints for the user,
+[28:15.60]  for saving the status and the answers of
+[28:18.12]  the questionnaire to save their
+[28:19.72]  progress. And each of those were
+[28:21.28]  individual requests that had to be made
+[28:23.84]  each time.
+[28:24.72]  >> Got it. Okay. Why was that such a big
+[28:26.88]  decision, I guess, is my question. So,
+[28:29.04]  I'm just I'm just on the other side as a
+[28:31.16]  as a impartial listener. Like,
+[28:33.72]  personally, it sounds like an
+[28:34.72]  implementation detail.
+[28:36.24]  >> Yeah, in some ways it is
+[28:39.16]  it is a trade-off in the implementation
+[28:40.84]  detail. I guess that's maybe where I
+[28:42.32]  would take it. Is So, does the trade-off
+[28:44.24]  need to have
+[28:45.88]  sort of the biggest So, the biggest
+[28:47.68]  thing
+[28:47.76]  >> So, help me understand. So, whenever
+[28:49.40]  there's a trade-off, there is a decision
+[28:50.84]  to be made, and then there are pros and
+[28:52.48]  cons. One thing that I've come to
+[28:55.04]  realize when you're trying to explain a
+[28:57.12]  decision to other people
+[28:58.92]  is that we want to avoid blended
+[29:00.84]  reasons. You want to reduce the pros and
+[29:03.44]  the cons list of going from choice A to
+[29:05.64]  choice B down to the most impactful
+[29:10.52]  or like the biggest benefit or the
+[29:12.04]  biggest attractor of the decision that
+[29:14.60]  you're going to be making. Let's try to
+[29:16.08]  reframe it. You have a choice of having
+[29:17.84]  one endpoint or multiple endpoints. You
+[29:19.72]  needed do things like save partial
+[29:21.24]  state.
+[29:21.88]  >> What's the pro of having one endpoint?
+[29:24.36]  >> The pro of having one endpoint is that
+[29:27.16]  the front end only needs to make one
+[29:29.08]  request
+[29:30.44]  each time some data needs to be saved.
+[29:33.44]  >> Okay. And then the con is?
+[29:35.44]  >> We have less control on the front end of
+[29:38.68]  when
+[29:39.92]  different calls are made and handling
+[29:41.92]  different error cases based on the
+[29:44.68]  responses from that.
+[29:45.80]  >> Cuz you needed the back end people to
+[29:47.36]  implement all of the different error
+[29:50.00]  handling and all of the different edge
+[29:51.40]  cases.
+[29:52.08]  >> Yes, so we needed the back end to
+[29:54.96]  be able to handle any data rollbacks or
+[29:58.04]  um and so
+[29:58.88]  >> So, like the API itself, like the
+[30:00.52]  complexity for that one call is greatly
+[30:03.12]  increased both on the front end and on
+[30:04.68]  the back end, but you're going through
+[30:05.88]  one API.
+[30:06.60]  >> Yes.
+[30:07.16]  >> And so the pro is that you have one
+[30:08.68]  endpoint.
+[30:09.80]  >> Yes.
+[30:10.56]  >> For the other side of having many
+[30:11.88]  endpoints, what's the pro there?
+[30:14.08]  >> The front end maintains control over
+[30:16.76]  when
+[30:17.88]  the different parts get get saved. And
+[30:20.60]  it'll be a quicker responses cuz it's
+[30:22.64]  not having to do as much work on the
+[30:24.68]  back end.
+[30:25.00]  >> routing on the back side back end side.
+[30:27.96]  >> Okay. And then the con?
+[30:29.76]  >> The con is having to manage more logic
+[30:33.36]  on the front end when things go wrong
+[30:34.84]  for rollbacks and data
+[30:37.08]  >> Well, I mean, it's it's going to be
+[30:38.28]  functionally equivalent the amount of
+[30:39.92]  logic that you need for rollbacks with
+[30:41.48]  the one endpoint versus multiple, right?
+[30:43.48]  >> But yeah, it's so it'd be that the the
+[30:45.64]  sequence of events would mean that the
+[30:48.08]  front end would have to be keeping track
+[30:49.36]  of those.
+[30:50.64]  >> Somewhere on the front end is going to
+[30:51.88]  be an if statement that says, "Hey, if
+[30:53.64]  there's if it's this type of rollback,
+[30:55.00]  do this." With both cases, right?
+[30:57.36]  >> Yes, true.
+[30:59.04]  >> It's just me It just might be in a
+[31:00.12]  different place on the front end.
+[31:01.84]  >> Yes, that would be true.
+[31:03.08]  >> So, if if the detailed, you know, I'm
+[31:04.64]  obviously leading you down a road that
+[31:06.92]  you haven't prepared for, but I think
+[31:08.92]  the the takeaway here is whenever you're
+[31:11.00]  trying to explain a trade-off situation
+[31:13.28]  to another person, we want to explain it
+[31:15.52]  to other people like they're a
+[31:17.20]  5-year-old. We don't want like a laundry
+[31:19.60]  list of very subtle pros and cons.
+[31:22.36]  >> Yeah.
+[31:22.88]  >> We want it to be like the pro is this,
+[31:26.44]  the con is this,
+[31:27.44]  >> Yeah.
+[31:28.04]  >> the pro is this for the other thing, the
+[31:29.84]  con is this. We had to make a choice,
+[31:32.92]  right? And then we should be able to
+[31:34.20]  really we we take one or two use cases
+[31:36.96]  and then we kind of run them through
+[31:39.12]  those pros and cons.
+[31:40.44]  >> Yeah. No, no, that makes sense. It needs
+[31:42.60]  to be
+[31:44.36]  the distinction between the the pro and
+[31:46.20]  the con needs to be a lot sharper and
+[31:48.28]  needs to be clearer.
+[31:49.28]  >> Yeah.
+[31:49.96]  >> A lot sharper.
+[31:50.44]  >> Like the the consequences can be
+[31:54.28]  far-reaching, but you don't have enough
+[31:56.00]  time to actually explain like the entire
+[31:58.92]  landscape
+[32:00.56]  during the interview. You just need to
+[32:01.88]  be like, "Hey, there were two perfectly
+[32:03.84]  valid ways to go and do this.
+[32:06.36]  And it's there's no right answer such
+[32:08.48]  that everybody would be happy. If we did
+[32:10.32]  it one way, these people would happy. If
+[32:12.16]  if we did another way, these people
+[32:13.44]  would be happy. I don't think I really
+[32:15.64]  understood the difference between one
+[32:17.36]  point endpoint versus the other endpoint
+[32:19.20]  in terms of the front end complexity."
+[32:20.84]  >> Yeah.
+[32:21.36]  >> Cuz I think the front end complexity is
+[32:22.84]  essentially always going to be there. I
+[32:25.08]  think there will be knock-on effects to
+[32:26.40]  the back end complexity based off of one
+[32:28.52]  endpoint to many endpoints because
+[32:29.88]  there's probably going to be some amount
+[32:31.12]  of routing that occurs, likely from
+[32:34.08]  if you're in a microservices
+[32:35.48]  architecture, from teams that don't
+[32:36.68]  really talk with each other, work
+[32:38.24]  together a lot.
+[32:39.48]  >> Just thinking about it a bit more, I
+[32:41.12]  guess the yeah, the trade-off is in
+[32:43.64]  terms of yeah, who's needing to do the
+[32:45.28]  work and partly the lack of resource. So
+[32:48.60]  yeah, the the benefit of if it were just
+[32:50.72]  kept as a front end is that we wouldn't
+[32:52.84]  need a back end engineer. We have we
+[32:54.36]  would have the things that we could do.
+[32:56.48]  But the better solution would be to get
+[32:58.68]  somebody on the back end to to create
+[33:00.40]  that for us, but it would mean taking an
+[33:02.84]  engineer from a from another team.
+[33:05.16]  >> Yes.
+[33:05.60]  >> Same.
+[33:06.12]  >> So that that situation that you outlined
+[33:08.24]  there, if you talk to any dev or any dev
+[33:10.80]  manager, they'll be like, "Yeah, I get
+[33:12.92]  it."
+[33:13.32]  >> Yeah.
+[33:13.68]  >> Right? So you don't need to overexplain
+[33:15.84]  that.
+[33:17.04]  Does that make sense? So you can just be
+[33:18.32]  like, "Look, we had this one endpoint
+[33:20.00]  versus many endpoint thing. The long and
+[33:22.32]  the short of it is the way that we
+[33:24.24]  wanted to do it that was best would
+[33:26.20]  require a dedicated back end resource,
+[33:28.80]  and those teams were pushing back
+[33:30.28]  because of different priorities."
+[33:32.36]  >> Yeah.
+[33:32.76]  >> Every dev manager in the entire world,
+[33:34.64]  every engineer in the entire world that
+[33:36.20]  has has any amount of experience would
+[33:37.88]  be like, "Okay, cool. What you do?" Like
+[33:40.08]  they don't even need the details in that
+[33:41.84]  sense. So I think it's really important
+[33:43.88]  to trust that your counterparty, the
+[33:46.52]  person that's interviewing you, is a
+[33:48.20]  software developer or understands like
+[33:50.68]  these very common scenarios.
+[33:52.16]  >> Yeah. That's very helpful. I think that
+[33:54.12]  kind of again, taking a little bit step
+[33:56.16]  back,
+[33:57.24]  that's the the situation of why one
+[33:59.96]  option would be better than the other
+[34:01.40]  fundamentally. Um
+[34:03.12]  >> Yeah. So it's So suppose I asked you,
+[34:05.24]  like, "Hey, tell me about a time you had
+[34:06.60]  to make a really difficult trade-off."
+[34:08.20]  You could use this example. You could be
+[34:09.56]  like, "Look, we we had this
+[34:12.24]  questionnaire. It was super buggy. Our
+[34:14.60]  clients were very unhappy. It was
+[34:16.36]  costing them a lot in terms of potential
+[34:19.04]  clients. My job was to come in and fix
+[34:21.72]  it all and make it extensible. We wanted
+[34:23.88]  to move to a situation where like the
+[34:25.60]  back end had multiple endpoints. We
+[34:27.64]  didn't want to use the customer
+[34:29.28]  preferences endpoint to like save the
+[34:31.28]  state of the middle of the
+[34:32.96]  questionnaire. But that was kind of the
+[34:34.60]  architecture that was there.
+[34:36.32]  But when we tried to break up the APIs
+[34:38.44]  so that they were more single
+[34:40.04]  responsibility, turns out that needs
+[34:42.16]  like the support of a back-end engineer,
+[34:43.88]  which we didn't have because they had
+[34:45.52]  competing priorities. Cool. That's the
+[34:47.76]  tip of the pyramid, and I know exactly
+[34:50.84]  the situation that you were in if you
+[34:52.72]  said that to me, and I think that's a
+[34:54.32]  senior-level story, by the way. Like
+[34:56.60]  juniors don't run into that. Juniors
+[34:58.08]  will be like, "Tell me what I Tell me
+[34:59.44]  the code to
+[35:00.04]  >> need to write.
+[35:00.72]  >> Yeah, yeah. And so then, now that you've
+[35:02.68]  piqued my interest, then I would be
+[35:04.16]  like, "So, what happened?"
+[35:07.00]  >> Yeah, yeah. In the end, we
+[35:09.76]  pushed
+[35:10.88]  for this better architecture saying that
+[35:13.16]  if we want to make sure it's as stable
+[35:15.12]  as possible going forward for our Saturn
+[35:16.92]  and Stuart, we really do need this this
+[35:18.88]  change. And we were able Well, I'm using
+[35:21.48]  we.
+[35:22.64]  But then, another back-end engineer was
+[35:24.68]  taken off another project to be able to
+[35:26.44]  help us short-term to get this over the
+[35:28.56]  line.
+[35:28.80]  >> Okay. So, this is I think a situation
+[35:31.40]  where people use this term a lot, which
+[35:34.04]  is influence without authority. You
+[35:37.04]  have no authority as an individual
+[35:39.40]  contributor.
+[35:40.52]  You're a front-end engineer, a senior
+[35:42.64]  front-end engineer, and now you have
+[35:45.00]  this like resourcing problem.
+[35:47.60]  The solution to that is the solution to
+[35:49.52]  your technical problem. And so, I
+[35:52.00]  commend you for not wanting to use we,
+[35:54.84]  but I think it's a good opportunity here
+[35:56.52]  to talk about influencing
+[35:59.32]  leadership
+[36:00.72]  to get the resource that you need.
+[36:03.16]  >> Yeah.
+[36:03.56]  >> Right? Okay. And so, what I would say is
+[36:05.72]  something like, "Look, we needed a
+[36:07.80]  back-end engineer. That back-end
+[36:09.96]  engineer doesn't report into my manager,
+[36:11.72]  reports into a different different
+[36:13.64]  manager, but it was the right
+[36:15.32]  architecture because it doesn't make a
+[36:17.36]  ton of sense to just have like the one
+[36:19.12]  back-end API call for any number of
+[36:21.60]  operations on the front end. And so, I
+[36:23.64]  pushed my manager, I don't know what
+[36:25.72]  actually happened. I pushed my manager,
+[36:28.16]  and you know, I gave them the data
+[36:30.28]  to make a data-based argument to the to
+[36:33.88]  the other manager. And so, they were
+[36:35.88]  pushing back because of a competing
+[36:37.40]  priority, but I made the case that this
+[36:40.72]  was much more impactful than the
+[36:42.80]  priority that they were pushing back
+[36:44.60]  for.
+[36:45.12]  >> Yeah, that's a helpful way to to be able
+[36:47.12]  to frame it of the contribution I was
+[36:49.12]  able to make in that decision being kind
+[36:51.56]  of
+[36:52.52]  being made.
+[36:53.40]  >> Cuz your manager doesn't know whether
+[36:56.48]  this is the hill to die on cuz he needs
+[36:58.28]  to expend some of his reputational
+[37:00.96]  capital. If he's going to say like,
+[37:03.20]  "Hey, I need this I need this back-end
+[37:05.24]  resource."
+[37:06.44]  >> Right. Yeah, yeah, yeah.
+[37:07.36]  >> I think it's a good opportunity to show
+[37:10.84]  how you influenced your manager. So,
+[37:13.84]  anytime you use the word we, think about
+[37:17.28]  how you can be like, "I did something to
+[37:20.36]  affect somebody else." That was the
+[37:22.64]  ultimate cause or the the primary cause.
+[37:25.08]  The first thing that happened. You were
+[37:26.96]  the first domino to get knocked over,
+[37:29.44]  and then the thing happened at the end.
+[37:31.36]  Cuz you would not have gotten that
+[37:32.52]  resource had you not pushed, right? So,
+[37:34.24]  you pushed your manager, your manager
+[37:36.60]  pushed another manager, who pushed
+[37:38.56]  another person, who said, "Fine,
+[37:40.96]  we'll reassign this back-end engineer to
+[37:43.08]  the thing that that's needed." And so,
+[37:44.64]  you say we because there were four
+[37:46.32]  people in that chain.
+[37:47.56]  >> Yeah.
+[37:47.96]  >> But you need to be like, "Hey, I'm the
+[37:49.60]  first domino."
+[37:51.00]  >> Yes.
+[37:51.52]  >> Without me pushing my manager and giving
+[37:54.28]  and arming him with some data, none of
+[37:57.04]  this would have ever happened.
+[37:58.40]  >> When I'm tempted to kind of think of we,
+[37:59.80]  kind of think of the the the whole pie
+[38:02.32]  and then be like, "Okay, which was my
+[38:04.08]  bit?" And then try and think a bit more
+[38:05.64]  then about how that then impacted the
+[38:08.52]  >> Yeah, cuz I I don't think that a
+[38:10.92]  back-end engineer will just magically
+[38:13.00]  show up if you didn't ask for one.
+[38:14.76]  >> Right.
+[38:15.24]  >> And push for doing the right thing.
+[38:17.08]  Because you pushed for doing the right
+[38:18.52]  thing, the back-end engineer happened.
+[38:20.20]  It was just a Rube Goldberg machine of
+[38:23.04]  like organizational dynamics that
+[38:25.20]  eventually got you the person your
+[38:27.00]  counterpart on the other side.
+[38:28.56]  >> What you just heard me work through with
+[38:29.88]  Kennan is one of the biggest problems
+[38:31.60]  that people face during interviews.
+[38:33.48]  Taking credit for what they achieved.
+[38:35.72]  The biggest place they trip up with is
+[38:37.44]  simple. They use we instead of I.
+[38:40.80]  Every time you use the word we, the
+[38:42.76]  interviewer needs to get a clarification
+[38:45.04]  on what your contribution was.
+[38:47.16]  The easiest way to get around this is
+[38:48.84]  through my story framework called high
+[38:50.76]  signal storytelling. It's dead simple.
+[38:53.20]  For every story you have, you build it
+[38:55.32]  around what you did. This way, you don't
+[38:58.04]  have to do a tricky landing just to get
+[39:00.04]  to exactly what your contribution was.
+[39:02.04]  So, I think you're armed enough to redo
+[39:04.88]  that story a little bit. You think so?
+[39:07.76]  >> I would definitely. I It's given me
+[39:09.32]  plenty to to be able to think about and
+[39:11.72]  um to sharpen it.
+[39:13.04]  >> Yeah.
+[39:13.32]  >> To the to the different bits. Yeah.
+[39:14.64]  >> One, I won't call it a red flag or a
+[39:17.20]  yellow flag. If you're trying to style
+[39:19.36]  yourself as a senior engineer, and this
+[39:21.68]  is your most proud project, is that kind
+[39:24.52]  of like a ceiling to what you're capable
+[39:26.96]  of? Is this truly your best work?
+[39:29.56]  >> There's a couple of other projects I'd
+[39:30.72]  say that are
+[39:32.52]  maybe similar in the sense of I owned
+[39:36.08]  the front-end architecture, making
+[39:38.20]  decisions,
+[39:39.60]  taking the team along on decisions. I'd
+[39:42.00]  say that the other examples are maybe at
+[39:43.80]  that kind of similar level.
+[39:45.72]  There's another story where I introduced
+[39:49.04]  end-to-end testing for our application.
+[39:51.92]  And I guess that that's a slightly
+[39:53.16]  different approach. Again, it's a bit
+[39:55.32]  harder to quantify the business impact
+[39:57.24]  for that. Whereas I think this is
+[39:58.80]  working on a project that had a business
+[40:01.80]  need and a business impact.
+[40:04.00]  >> The reason I bring it up is the whole
+[40:06.08]  project took 2 months. So, I was looking
+[40:08.08]  at your resume and you have 6 years of
+[40:09.84]  experience. If we think about it, you
+[40:11.84]  know, 1/6 of the year is 2 months, and
+[40:15.04]  then there's 6 years, so that's like
+[40:16.56]  1/36 of your entire career.
+[40:19.20]  >> Yeah.
+[40:19.60]  >> Again, it's not a yellow flag or a red
+[40:21.92]  flag to me, but
+[40:23.44]  I would expect the project that you're
+[40:25.36]  most proud of to take maybe more time
+[40:29.12]  and be of larger scope than 1/36, close
+[40:32.32]  to 1/40th of your entire career.
+[40:34.64]  >> Yeah.
+[40:35.04]  >> Does that make sense?
+[40:36.40]  >> Yeah. Yeah.
+[40:37.48]  >> So, what you want is something where
+[40:39.44]  you're like that's really, really strong
+[40:41.60]  either in scope, contribution,
+[40:43.20]  difficulty, or uh impact.
+[40:45.64]  >> Yeah.
+[40:46.32]  >> Really, when people ask you this
+[40:48.24]  question, they're trying to determine a
+[40:49.60]  ceiling. And so, is there a way that you
+[40:52.04]  can move your ceiling up either in the
+[40:53.84]  way that you frame this particular story
+[40:55.56]  or if there's another story where the
+[40:56.88]  ceiling can be much higher?
+[40:58.12]  >> It's definitely a good thing to think
+[40:59.28]  about. I think scoring it within your
+[41:01.64]  system, that would help kind of give
+[41:04.56]  each story a bit of a metric that I can
+[41:06.68]  measure against as well.
+[41:08.04]  >> There could also be, say, a project that
+[41:11.20]  was shorter in duration, but the impact
+[41:13.32]  is really, really high. Or there could
+[41:15.64]  be something, again, maybe a more of a
+[41:18.16]  run-of-the-mill project that lasted a
+[41:19.72]  little bit longer, but the difficulty
+[41:21.96]  was exceptional. And so, what we want to
+[41:23.92]  do is we want to think about like what's
+[41:25.52]  one of these dimensions where it's like
+[41:27.04]  off the charts almost in terms of what
+[41:28.80]  your impact is. I think this story is a
+[41:31.24]  it's a pretty good story, but it's like
+[41:33.12]  medium medium high across all of those
+[41:35.52]  dimensions for a senior front-end
+[41:37.40]  engineer.
+[41:38.32]  >> Yeah, that's helpful feedback.
+[41:39.76]  >> Okay.
+[41:40.40]  >> What's the question that you're the most
+[41:42.16]  afraid of?
+[41:43.16]  >> The question I'm most afraid of is
+[41:45.84]  >> For the answer to this question and to
+[41:47.64]  hear me workshop Kennan's weakest
+[41:49.40]  interview story into one of his
+[41:50.80]  strongest, you can watch the YouTube
+[41:52.76]  members version or join my Substack. The
+[41:55.44]  link is in the description below. All
+[41:57.48]  right. Let's get back to it.
+[41:59.04]  >> Kennan, describe the most innovative
+[42:00.88]  thing that you've ever done at work.
+[42:02.52]  >> Sure. The most innovative thing I'd done
+[42:04.72]  at work was to introduce end-to-end
+[42:07.40]  testing in our application
+[42:10.04]  when we had only some unit testing and
+[42:12.84]  integration tests.
+[42:14.00]  >> Okay.
+[42:14.48]  >> This was a an initiative that I wanted
+[42:16.32]  to to lead and sort of pick up and so I
+[42:18.72]  created some proof of concepts using a
+[42:21.08]  couple of tools, Playwright and Cypress,
+[42:23.64]  and did some comparisons. And then I put
+[42:26.36]  together a group of other engineers who
+[42:28.40]  were interested in wanted to learn more
+[42:30.96]  about end-to-end testing. And we added
+[42:34.36]  some examples to our code. And then I
+[42:37.92]  presented this to our our tech leads
+[42:40.36]  weighing up the the pros and cons of
+[42:42.80]  Playwright and Cypress um and suggesting
+[42:45.92]  that we that we go with with Playwright.
+[42:48.20]  And they were happy for us to work with
+[42:50.08]  that. There were some issues um with
+[42:52.64]  getting things set up with our our
+[42:54.76]  back-end and DevOps engineers. We had
+[42:56.92]  limitations on what environments we
+[42:58.20]  could use. So that's what I had to kind
+[43:00.32]  of do create some work-around solutions.
+[43:03.12]  But then we were able to add the
+[43:05.28]  end-to-end testing for our our login
+[43:07.24]  flows and one of our again another one
+[43:08.96]  of our um coach sign-up flows where we
+[43:12.68]  where we didn't have any end-to-end
+[43:14.16]  testing before.
+[43:14.96]  >> You're forgetting the result.
+[43:16.60]  >> The result was that we now have that our
+[43:19.32]  our flows were being able to be fully
+[43:21.64]  tested end-to-end and we were able to
+[43:24.24]  catch any issues before releasing to to
+[43:26.88]  production based on the the new
+[43:29.20]  end-to-end tests that we had.
+[43:31.24]  >> What would be the optimal result?
+[43:33.36]  >> The entire application was end-to-end
+[43:36.12]  tested at all of our
+[43:37.28]  >> It's you know, you're you're saying that
+[43:38.92]  the challenge was that you needed to do
+[43:40.64]  end-to-end testing, that you did the
+[43:42.16]  end-to-end testing, the result was we
+[43:44.28]  now have end-to-end testing, but you
+[43:46.00]  need to bring it home.
+[43:47.56]  Right? Like what are the metrics that
+[43:49.32]  people care about? What does end-to-end
+[43:51.08]  testing benefit?
+[43:52.40]  >> The reliability of the application being
+[43:54.48]  able to make sure that customers are
+[43:56.52]  able to to use our our product and able
+[43:59.00]  to sign up to our
+[44:00.88]  >> So you have you have a product with
+[44:03.40]  fewer defects. You have like less
+[44:05.36]  operational things. You're able to catch
+[44:08.20]  things before they become a problem. So,
+[44:10.84]  an optimal answer would be now our
+[44:13.40]  testers are much more effective, the
+[44:15.20]  number of defects has drastically
+[44:17.20]  increased, and we've caught a bunch of
+[44:19.60]  issues before they ever reached to
+[44:21.20]  production, including a bug that would
+[44:23.60]  have taken our entire site down or
+[44:25.12]  something like that.
+[44:26.08]  >> I guess it there wasn't anything on that
+[44:28.64]  scale. It was a lot smaller scale. It's
+[44:31.32]  a bit harder just to to kind of measure
+[44:33.52]  that or to express the the impact.
+[44:36.68]  >> Yeah. And so, there's so there's one
+[44:38.60]  good thing, which is like I do think it
+[44:40.68]  is it does represent an innovation. So,
+[44:42.84]  the root of innovation is novelty. You
+[44:44.92]  didn't have it before, you introduced it
+[44:47.04]  to the system. It wasn't just like you
+[44:49.24]  just add some dependencies and it all of
+[44:51.24]  a sudden works. Like you had to work
+[44:52.88]  with a ton of people in order to achieve
+[44:54.76]  the result. So, I think that checks the
+[44:56.28]  box for innovation. But we really need
+[44:58.60]  to talk about the benefits of it.
+[45:01.80]  Think about it this way. What if you
+[45:03.64]  were trying to talk about a big refactor
+[45:06.52]  that you did? And you can talk about how
+[45:08.40]  hard it was, and you can talk about how
+[45:10.96]  long it took, how complicated everything
+[45:13.84]  was. But if after the refactor, the code
+[45:17.00]  just worked the way that it did before,
+[45:18.80]  but it's cleaner, I would really
+[45:20.56]  question like whether that was worth
+[45:23.52]  worth your time or not. If we're going
+[45:25.20]  to talk about like an a refactor, we can
+[45:27.16]  be like, "Oh, now time to feature is
+[45:30.60]  drastically reduced. It used to take us
+[45:32.56]  3 weeks to do a feature, now it takes us
+[45:34.84]  2 days because of the refactor." Then
+[45:36.88]  it'll be like, "Ah, okay, that it was
+[45:38.72]  worth it. That's what the impact is. You
+[45:40.32]  now get the savings
+[45:42.04]  >> Yes.
+[45:42.60]  >> from now until as long as this piece of
+[45:44.76]  software exists, you get to claim that
+[45:46.96]  impact. So, if we talk about end-to-end
+[45:48.60]  testing, I know end-to-end testing is
+[45:50.56]  just generally good. But if I'm a person
+[45:52.88]  that's writing the check, and you're
+[45:54.20]  like, "I just introduced end-to-end
+[45:55.60]  testing." And I'm like, "Cool. How is
+[45:58.12]  the world different now?" We need to be
+[46:00.00]  be to explain that.
+[46:01.16]  >> The benefits of the end-to-end testing
+[46:02.80]  is that it's Yeah, it's catching It's
+[46:04.48]  catching any issues that we could find
+[46:06.96]  before it becomes a a bigger production
+[46:09.56]  issue.
+[46:10.16]  >> Yes.
+[46:10.52]  >> And so, having that in place,
+[46:13.20]  it doesn't maybe seem as spectacular.
+[46:15.48]  It's just kind of doing its job sort of
+[46:17.00]  sort of in the background.
+[46:18.56]  When it with it in place, it we're able
+[46:20.12]  to more reliably make changes and and do
+[46:22.88]  go quicker.
+[46:23.92]  >> If you're like, "Hey, we you know, there
+[46:25.76]  are fewer defects and deployments are
+[46:27.84]  faster." I would expect for you to have
+[46:30.60]  a story or two, sub-story or two about
+[46:33.88]  some of the things that it caught or how
+[46:35.72]  much faster deployments are or the
+[46:37.44]  release cycle is.
+[46:38.80]  >> So, I think in this case is it would be
+[46:40.60]  more that the the application
+[46:42.36]  reliability
+[46:43.96]  had incre- had increased.
+[46:45.80]  >> Okay.
+[46:46.12]  >> Um
+[46:46.72]  >> Do you guys Did you guys have dedicated
+[46:48.24]  testers?
+[46:48.96]  >> No.
+[46:49.80]  >> Okay, so that might be a detail as well.
+[46:51.72]  You know, I come from big tech and we
+[46:53.76]  have a testing team or at least
+[46:55.32]  dedicated testers assigned to the dev
+[46:58.24]  teams that are there.
+[46:59.08]  >> Yeah.
+[46:59.44]  >> And those people are typically the ones
+[47:01.76]  that drive quality. So, either in unit
+[47:04.44]  tests, they might drive it in terms of
+[47:06.52]  integration testing, manual testing as
+[47:09.36]  well. And so, if they were like, "Hey,
+[47:11.72]  we introduced uh end-to-end testing,
+[47:14.48]  it saves us so much more time."
+[47:16.48]  >> Yeah.
+[47:16.88]  >> And so, now you're you're in a situation
+[47:18.76]  where I would paint the picture like,
+[47:20.64]  "Hey guys, I introduced end-to-end
+[47:22.48]  testing. We were a small shop. We didn't
+[47:25.04]  have dedicated testers. So, devs were
+[47:27.16]  expected to do their own testing. And
+[47:29.36]  so, we had a you know, a small
+[47:31.60]  smattering of unit tests and maybe an
+[47:34.12]  air and integration test, no concept of
+[47:36.28]  end-to-end testing."
+[47:37.40]  >> Yeah. Yeah, that's that's helpful to
+[47:39.72]  again perspective cuz yeah, this was a a
+[47:42.16]  smaller team.
+[47:43.76]  Engineers or even product would be
+[47:45.12]  having to do the testing.
+[47:46.68]  >> Yeah.
+[47:46.92]  >> So, this removed some of the time that
+[47:49.08]  product would need to be testing these
+[47:51.56]  these flows.
+[47:52.32]  >> Great. So, you can just be like, "We
+[47:53.44]  were so small that the product managers
+[47:55.68]  were the ones that were doing testing.
+[47:57.60]  Basically, and if you have an anecdote
+[47:59.96]  about a product manager that was very
+[48:01.60]  happy that we had end-to-end testing
+[48:03.20]  because now they didn't have to do it.
+[48:05.00]  >> Yeah.
+[48:05.44]  >> That could You could also add that as
+[48:06.80]  well.
+[48:07.28]  >> Yeah, the product manager was bought in
+[48:10.12]  with the idea of
+[48:11.16]  >> Of course he is. He's just really good
+[48:12.52]  at it. Tell me Tell me more about the
+[48:14.52]  software that you wrote so that I don't
+[48:16.00]  have to do more clicky clicky.
+[48:17.48]  >> Yeah, yeah, so that's going to be part
+[48:19.16]  of the impact. It's so
+[48:21.16]  building up the the issue up front of
+[48:24.68]  why we would want the end-to-end
+[48:26.92]  testing. So, for for example, in this
+[48:28.72]  story, small team, no QA individual QA,
+[48:32.68]  product managers are having to do it.
+[48:33.80]  It's a lot of time. It's extra um work
+[48:36.48]  that they would have to be doing. This
+[48:37.96]  is starting to bring some automation to
+[48:39.88]  them and saving product managers time.
+[48:42.56]  >> Yeah. So, I asked you about innovation.
+[48:45.44]  >> Yes.
+[48:45.88]  >> This can also be about taking initiative
+[48:47.64]  cuz you didn't have to do this. Hey, I I
+[48:50.20]  had this bias for action. I believe in
+[48:52.56]  testing end-to-end testing.
+[48:55.08]  So, I took some off-the-shelf things
+[48:56.92]  that everybody uses within industry and
+[48:58.48]  tried to apply it. Product manager was
+[49:00.52]  like, "Hell yeah, let's do it because
+[49:02.84]  they ended up having to do all the
+[49:04.16]  testing." Another way you can take this
+[49:05.72]  story as well, which is like there were
+[49:07.60]  some issues with the end-to-end testing.
+[49:10.28]  So, I might actually think about I You
+[49:12.40]  dangled that a little bit, so that was a
+[49:13.64]  good job there. There were some off
+[49:14.84]  issues. There were some staging issues
+[49:17.04]  as well. So, maybe some details around
+[49:19.12]  the off issues.
+[49:20.28]  >> There was a bit where I was trying to
+[49:21.96]  push for this. DevOps was saying,
+[49:24.60]  "Well, we can't just create a new test
+[49:25.92]  environment for you. Sorry."
+[49:27.44]  >> Great.
+[49:27.68]  >> And the back-end engineer was also
+[49:30.00]  there. And so
+[49:30.80]  >> That That for That quote is actually
+[49:33.36]  really great.
+[49:34.12]  >> Okay.
+[49:34.72]  >> So, when you're telling a story, you
+[49:36.32]  don't want to be like, "The DevOps team
+[49:38.24]  pushed back quite a bit." You can, I
+[49:40.08]  mean, that's what happened. That's the
+[49:41.60]  way that you told it. But, I love that
+[49:43.40]  quote that you said. It's like, "Hey
+[49:44.96]  Kennan, we can't just go and create
+[49:46.52]  another dev environment for you. Sorry,
+[49:48.24]  bro."
+[49:48.92]  >> Yeah.
+[49:49.24]  >> Something like that. That That really
+[49:50.84]  It's just like everybody that's been in
+[49:52.72]  that situation will have heard that sort
+[49:54.64]  of like pithy response to it.
+[49:56.04]  >> Yeah. And so that's where I had to kind
+[49:57.76]  of
+[49:58.64]  come up with a solution that could still
+[50:00.04]  work for the back end so we could use
+[50:01.84]  our current dev environment without
+[50:04.24]  polluting it. And so coming up with a a
+[50:06.80]  suffix for the for the the fake email
+[50:09.24]  accounts that we could use that could
+[50:10.92]  then be wiped. So we'd still be able to
+[50:14.68]  have our end-to-end testing on a dev
+[50:15.96]  environment but without needing to
+[50:17.88]  create a whole new
+[50:19.68]  dedicated test environment.
+[50:21.36]  >> Great. So you did like, you know, Steve
+[50:23.28]  plus
+[50:24.60]  >> And then
+[50:25.92]  yeah yeah.
+[50:26.76]  >> So yeah, I think just painting a little
+[50:29.68]  bit of a picture of the obstacles and
+[50:31.40]  challenges
+[50:32.56]  because at the end of the day you used
+[50:34.64]  off-the-shelf software. It wasn't just a
+[50:36.80]  matter of adding that dependency.
+[50:39.00]  >> Yeah. It's like the part the context is
+[50:41.20]  like a setting the stakes or
+[50:43.52]  and the the actual issues that were
+[50:46.20]  being faced. You know, when you cuz
+[50:47.80]  you're in your your company, whatever
+[50:49.84]  size it is, maybe you just
+[50:52.00]  you kind of assume maybe that's what
+[50:53.40]  other
+[50:54.28]  people are going through but you said
+[50:55.28]  yeah, bigger company would have a whole
+[50:56.92]  dedicated QA team or or product managers
+[50:59.40]  work differently. And you I guess it's
+[51:01.24]  yeah, trying to bring those nuances out
+[51:03.88]  to be able to make more sense of why
+[51:06.36]  there was an issue in your particular
+[51:07.72]  context.
+[51:08.44]  >> Yeah, I I also think it's nice that you
+[51:10.72]  had some pushback from other people cuz
+[51:12.68]  here you are trying to take initiative
+[51:14.44]  to increase the quality of the software.
+[51:16.52]  The interviewer and anybody that works
+[51:18.96]  in a corporate environment would
+[51:20.28]  understand people that are just like,
+[51:22.24]  "Dude,
+[51:23.24]  why are you adding more work for me?"
+[51:25.40]  You're like, "Cuz I care." A mid or a
+[51:27.48]  junior or somebody who didn't care so
+[51:29.60]  much about software quality, they would
+[51:31.68]  just get discouraged. Hey, I tried to
+[51:33.52]  introduce Cypress and some other
+[51:35.20]  end-to-end testing stuff. The DevOps
+[51:37.44]  team was just like, "Kick rocks." And so
+[51:40.24]  I gave it up. Obviously, you wouldn't
+[51:41.84]  use that story but like that's what a
+[51:43.72]  lot of people do. They come in, they
+[51:45.16]  want to do good, and then there's all of
+[51:46.96]  these obstacles and pushback and so they
+[51:48.96]  end up giving up. If you can tell this
+[51:50.44]  story for you being able to put
+[51:52.64]  end-to-end testing in place despite
+[51:54.36]  these obstacles and technical challenges
+[51:56.56]  and then do that last little bit where
+[51:58.24]  you're just like you talk about the
+[51:59.80]  impact. Again, quantitative impact would
+[52:02.40]  be the best.
+[52:03.16]  >> Yeah.
+[52:03.80]  >> We were able to prevent these many
+[52:05.04]  issues, but the qualitative impact of
+[52:07.44]  the product manager who doesn't have to
+[52:09.52]  do the testing, that's better than
+[52:11.48]  nothing. Right? So, quantitative,
+[52:13.72]  qualitative, then
+[52:15.76]  you know, trust me trust me, bro, it's
+[52:17.64]  better.
+[52:19.56]  That's the hierarchy.
+[52:20.44]  >> Yeah.
+[52:20.92]  >> Awesome. Kenan clearly isn't short on
+[52:23.04]  material, but what I noticed is that
+[52:25.04]  like a lot of senior-level engineers, he
+[52:27.24]  has a hard time selecting which stories
+[52:29.16]  to tell and how to tell them.
+[52:31.24]  This is the part that almost nobody gets
+[52:33.04]  taught.
+[52:34.00]  How do you know your stories are good
+[52:35.24]  enough for the level that you're
+[52:36.32]  targeting?
+[52:37.44]  There are four dimensions, the scope,
+[52:39.68]  your contribution, the impact, and the
+[52:41.88]  difficulty. Score each of your stories
+[52:44.24]  across these dimensions.
+[52:46.04]  As long as at least one or two of these
+[52:47.88]  things matches your target level, it's
+[52:49.92]  acceptable. If three or even four of
+[52:52.12]  these dimensions are at your target
+[52:53.52]  level, it's a great story.
+[52:55.28]  >> Do you have any other questions or
+[52:56.80]  comments, any last things?
+[52:58.72]  >> I'm wondering about you all kind of
+[53:00.52]  thinking in this new AI era about
+[53:03.88]  niching down into an area. Is it better
+[53:06.68]  to be kind of say you're a specialist
+[53:08.72]  even within front-end, you know, like
+[53:10.56]  say I do like web video applications or
+[53:13.60]  I do, you know, security? What would you
+[53:16.00]  suggest to people who are sort of now
+[53:17.68]  kind of looking for something and
+[53:18.96]  thinking about how they should
+[53:20.24]  >> So, yeah, I think you're talking about
+[53:21.24]  positioning.
+[53:22.12]  >> Yeah.
+[53:22.60]  >> So, what I would recommend is that you
+[53:25.40]  don't you shouldn't do it exclusionary.
+[53:27.84]  So, you're a front-end developer,
+[53:30.16]  front-end engineer. You should have a
+[53:31.96]  specialty in certain things where you
+[53:34.80]  can go really deep, but I wouldn't say I
+[53:37.56]  only do X. You would say something like,
+[53:40.08]  "I'm a security-focused front-end
+[53:41.84]  engineer." Or I'm a visual and
+[53:44.00]  analytics, you know, based front end
+[53:46.16]  engineer, or I'm an accessibility
+[53:48.24]  focused engineer, instead of saying I
+[53:50.68]  only do X.
+[53:52.64]  And I also think that that's really
+[53:54.28]  important. You know, the reality is that
+[53:58.00]  people talk about front end engineering
+[53:59.80]  as though it's just one thing, but it's
+[54:01.52]  actually many things.
+[54:03.96]  When you are interviewing, you want to
+[54:07.04]  like maximize your surface area. I think
+[54:09.32]  this is good advice independent of all
+[54:12.08]  of the AI stuff that's going on. What is
+[54:14.00]  your specialty?
+[54:15.20]  >> I would say that I have a this passion
+[54:17.56]  for for testing, testing strategy.
+[54:19.88]  >> Mhm.
+[54:20.28]  >> Yeah, that's where I'm most yeah,
+[54:22.28]  interested in.
+[54:23.04]  >> I would say that that is an a very AI
+[54:25.80]  proof affinity. Tell me about the number
+[54:28.32]  of vibe coders that are out there
+[54:30.76]  that prompt the AI to go and do a bunch
+[54:33.44]  of stuff, and it doesn't quite work, or
+[54:36.12]  it did work, but then they added a whole
+[54:38.00]  bunch of more features on top of it, and
+[54:39.80]  then it stopped working. That's
+[54:41.28]  essentially every vibe coded project. I
+[54:44.00]  was it it reminds me of an interview
+[54:46.04]  that I heard with Peter Steinberger.
+[54:48.32]  He's the person that did Open Claw.
+[54:50.08]  >> Okay, yeah, yeah.
+[54:51.60]  >> He was vibe coding, and
+[54:54.80]  there was some really, really difficult
+[54:57.36]  UX bug, UI bug that had occurred. And he
+[55:00.04]  just could not get it to to work. He
+[55:02.92]  could not squash the bug. I think what
+[55:04.60]  he ended up doing was creating like a
+[55:05.96]  command line
+[55:07.64]  version of the UI. Then when the UI
+[55:10.64]  fired off, it went into the command
+[55:12.28]  line. Finally, the AI was able to see
+[55:14.68]  the interleaving that was going on that
+[55:16.32]  manifested the bug. So, basically, they
+[55:18.76]  built a a harness for testing from the
+[55:21.68]  complicated UI that he was creating. And
+[55:23.96]  so, I think that there's going to be a
+[55:25.80]  lot more of that with people that are
+[55:30.20]  essentially just agentically coding UI
+[55:32.84]  that's out there. So, I I might actually
+[55:34.72]  think about using that somehow, it's
+[55:36.36]  kind of sliding that into your resume
+[55:38.44]  somehow.
+[55:39.76]  I fix your AI UI.
+[55:43.00]  Something like that.
+[55:44.36]  I don't know. I don't know. I'm not a
+[55:45.80]  marketing person.
+[55:47.28]  But something like because I do think
+[55:48.92]  that that's you want to be in a
+[55:50.40]  situation where where you're skating to
+[55:52.96]  where the puck is. So I do see a world
+[55:56.08]  where more people are dipping their toe
+[55:59.48]  into front-end engineering through
+[56:01.00]  agentic coding. And it actually turns
+[56:03.20]  out that I think um Codex is like really
+[56:06.40]  bad with UI or at least that's the the
+[56:08.80]  stereotype.
+[56:10.20]  And that cloud code can do like some of
+[56:12.72]  the UIs is just not quite there and
+[56:14.40]  there's a whole bunch of startups that
+[56:15.52]  are trying to make all of the the UIs
+[56:17.44]  like look really nice from agentic
+[56:19.32]  coding. And I think that problem is
+[56:21.16]  going to be solved. I think it's going
+[56:22.36]  to be able to create a pretty UI. But
+[56:24.96]  dude, there is some really really nasty
+[56:27.00]  UI bugs that are out there and I don't
+[56:28.92]  think anybody is really thinking about
+[56:31.16]  like testing on the front end in the way
+[56:33.24]  that I think an expert like you would
+[56:35.04]  be.
+[56:35.40]  >> Yeah, that I think that's helpful is
+[56:37.48]  skating to where the puck is. Yeah, it's
+[56:39.48]  right now it's trying to think of what
+[56:41.44]  people are doing in this this space and
+[56:44.64]  what kind of things are they going to
+[56:45.56]  need.
+[56:46.12]  >> Now it might not always be this way.
+[56:47.40]  Maybe in the next release of these
+[56:48.96]  frontier models it'll be really good at
+[56:50.52]  testing. But I doubt it. Like think
+[56:52.16]  about it this way like right now the
+[56:53.64]  bottleneck, so we're filming this in
+[56:56.04]  late May of 2026. Right now the
+[56:58.36]  bottleneck is in code review.
+[57:00.76]  Right now the big issues are around
+[57:03.08]  observability. How do we know that the
+[57:05.68]  thing that the agent made is correct?
+[57:07.84]  But I haven't heard that much.
+[57:10.12]  Maybe I'm wrong about this and I'm just
+[57:11.76]  ignorant of it around like testing on
+[57:13.76]  the UI. How many busted UIs have you
+[57:16.20]  seen from AI slop? A ton. I've created
+[57:19.32]  many of them on my own. And so I do
+[57:21.56]  think of if you're a a startup around
+[57:23.88]  observability, if you're startup around
+[57:26.24]  like AI code review, I think that may be
+[57:28.52]  solved within the next couple of months,
+[57:30.08]  maybe. UI testing, I think that that's
+[57:32.08]  durable. So I I would really style
+[57:33.88]  myself around that if you're looking for
+[57:35.24]  a job right now.
+[57:35.84]  >> Yeah, yeah. That's very helpful. Thank
+[57:37.80]  you. Thank you, Steve. This was very
+[57:39.84]  helpful. I think the the leveling of my
+[57:42.72]  stories, that's that's very helpful. And
+[57:45.96]  trying to get the impact earlier
+[57:49.04]  in That's the end.
+[57:50.04]  >> The action. You want the action. So,
+[57:52.04]  just a really quick recap. What you
+[57:53.64]  really want to do is you want to
+[57:54.68]  front-load your actions.
+[57:57.12]  Your actions need to be at the senior
+[57:58.96]  level, and then you give enough context
+[58:01.36]  so that those actions make sense. You we
+[58:03.56]  really want to front-load the action.
+[58:05.28]  All right, thanks so much, Kennan, for
+[58:06.68]  talking with me today. Hopefully, that
+[58:07.84]  was helpful.
+[58:09.08]  >> Thank you, Steve. Yes, it really was.
+[58:10.56]  >> If you want more details on how you can
+[58:12.28]  better your own interviews, as well as
+[58:14.28]  full frameworks to make it easier, check
+[58:16.48]  out my book. And Kennan, thank you for
+[58:18.76]  being willing to do this on camera. That
+[58:20.76]  takes real guts, and you leveled up
+[58:22.84]  right in front of everyone watching. I
+[58:24.72]  know that you'll do great in your
+[58:26.20]  interviews.
+[58:27.20]  >> Hi, I'm Kennan Burka. I'm a front-end
+[58:30.20]  engineer.
+[58:31.32]  Currently, a senior level, and I'm
+[58:32.76]  looking for a senior front-end engineer
+[58:34.84]  roles. Before today, when I'd go into a
+[58:37.72]  behavioral interview, I would just
+[58:39.76]  crossing my fingers and hoping that I
+[58:42.08]  would have the right answers. It has
+[58:43.92]  cost me some positions and some feedback
+[58:45.76]  that I've got that I'd missed out on
+[58:48.04]  explaining certain
+[58:50.36]  impact that I had had. I first came
+[58:52.56]  across Steve when the YouTube algorithm
+[58:55.00]  recommended one of his videos on how job
+[58:58.28]  seekers should behave today. I then
+[59:00.84]  started following him on
+[59:03.24]  YouTube and and LinkedIn, and just found
+[59:06.24]  his content very helpful for
+[59:09.88]  understanding how to behave as a
+[59:12.16]  engineer outside of the technical skills
+[59:14.64]  that's required. Even though I had some
+[59:17.56]  doubts about saying yes to Steve,
+[59:21.04]  I just found that I needed that help to
+[59:23.32]  sharpen my behavioral interview
+[59:24.96]  questions, and I hoped that there'll be
+[59:27.64]  other people out there who are similar
+[59:29.88]  to my situation that could also benefit
+[59:31.88]  from the advice Steve would's going to
+[59:33.60]  give to me. Now that we've wrapped up,
+[59:35.88]  the thing that I've learned that I
+[59:37.76]  didn't know this morning was to really
+[59:39.72]  get my actions said in the first 30
+[59:43.20]  seconds of answering the question and
+[59:45.96]  making a bigger deal of the impact that
+[59:49.76]  my actions had. The biggest thing that
+[59:52.12]  clicked for me was that each of the
+[59:54.48]  answers will be gauged by the
+[59:56.44]  interviewer as like a junior, mid, or
+[59:58.48]  senior, and that I really need to
+[60:00.24]  consider how they're going to see my
+[60:02.16]  answers come across when I give them.
+[60:04.64]  The way I'm feeling about behavioral
+[60:06.12]  interviews now is that I have a more
+[60:08.28]  understanding of what the interviewer
+[60:10.36]  really wants to hear. And going forward,
+[60:12.92]  I'm going to be shaping my story bank
+[60:16.48]  and ranking the the levels of the the
+[60:20.16]  impacts that they had so that I'm better
+[60:22.76]  prepared for going into the next
+[60:24.68]  interview with my sharpened stories. If
+[60:27.60]  you're unsure about this kind of
+[60:28.96]  coaching, maybe because you're worried
+[60:30.68]  about getting your answers out there and
+[60:32.76]  scrutinized by an expert, I would say
+[60:35.32]  that the value that you get from
+[60:37.44]  actually being able to have them
+[60:39.16]  sharpened will overcome any sort of
+[60:42.56]  anxiety that you have, and you'll feel a
+[60:44.72]  lot better about the answers that you
+[60:47.32]  have going forward.

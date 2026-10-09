@@ -1,0 +1,1521 @@
+Title     : Turing Award Winner: TPU vs GPU vs CPU, Computer Architecture, RISC vs CISC | David Patterson
+Video ID  : Pn4ZwlEh5nw
+URL       : https://www.youtube.com/watch?v=Pn4ZwlEh5nw
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1512
+Saved at  : 2026-10-08 08:16:07
+------------------------------------------------------------
+
+[00:00.08]  Well, if Moore's law puts a lot more
+[00:01.92]  transistors in a chip, how come they're
+[00:03.60]  not getting hotter and hotter?
+[00:05.36]  >> This is David Patterson, Turing [music]
+[00:07.28]  award winner, famous for his
+[00:08.72]  contributions to computer architecture.
+[00:10.80]  And we discussed the historic risk
+[00:12.80]  versus CISK debate
+[00:14.16]  >> and he said and CISK won. Well, that's a
+[00:16.56]  pretty myopic view. Everything is energy
+[00:19.60]  bound now. Register [snorts] allocation
+[00:22.00]  by the [music] compilers was so poor
+[00:24.48]  >> and his thoughts on modern GPU and TPU
+[00:27.12]  architecture. What's the highle
+[00:29.28]  differences between a CPU, [music]
+[00:31.36]  a GPU, and a TPU?
+[00:33.28]  >> What they realize for machine learning
+[00:34.96]  and AI?
+[00:36.64]  >> Here's the full episode.
+[00:42.32]  Maybe you could explain risk versus CISK
+[00:45.28]  kind of like what that debate was and
+[00:47.36]  why was it controversial.
+[00:49.60]  What happened is in kind of in you know
+[00:52.40]  the microprocessor was invented in the
+[00:54.96]  1970s and but in the beginning it was
+[00:57.20]  basically a toy. It'd be something that
+[00:58.80]  would go in microwaves and things like
+[01:00.48]  that. Those of us who believed in
+[01:02.48]  Moore's law believed eventually the uh
+[01:05.76]  microprocessor would be the way we did
+[01:07.84]  all our computing with the doubling of
+[01:09.68]  transistors every year or two.
+[01:11.84]  eventually there'd be enough transistors
+[01:14.08]  that on one of these microprocessors
+[01:15.76]  would be a serious computer.
+[01:19.04]  So the people who were designing
+[01:20.80]  microprocessors like in Intel and Texas
+[01:23.52]  Instruments weren't really computer
+[01:25.52]  architects. So they just imitated what
+[01:27.60]  the big companies did. So companies
+[01:29.84]  leading companies like IBM or at the
+[01:32.56]  time digital equipment corporation uh
+[01:34.72]  IBM for mainframes digital equipment for
+[01:36.72]  what were called minicomp computers they
+[01:38.48]  kind of drove the uh architecture the
+[01:41.12]  instruction set design. So what they
+[01:43.76]  were doing with Morris law was building
+[01:46.08]  more and more sophisticated
+[01:48.16]  u instructions. They had they had you
+[01:50.80]  know mini computers be the size of a a
+[01:53.76]  refrigerator or a couple of
+[01:54.88]  refrigerators and mainframes would be
+[01:56.96]  the size of many of those. So that's
+[01:59.20]  what they were doing with more hard
+[02:00.40]  sources. And the philosophy at the time
+[02:03.28]  was that by having a more sophisticated
+[02:06.32]  instruction set you kind of raise the
+[02:08.56]  level of abstraction closer to the
+[02:10.24]  software. So that had some inherent
+[02:12.40]  benefits over having something at a
+[02:15.04]  lower level. Now from a c some of us uh
+[02:19.68]  who were in that area like my friend
+[02:22.72]  John Hennessy at Stanford and I we
+[02:25.52]  thought that wasn't necessarily the
+[02:27.52]  right thing to do. Compilers would go
+[02:29.60]  from programming languages down to the
+[02:31.68]  instruction set. So why couldn't
+[02:33.04]  compilers hold that? And then the
+[02:34.88]  question is what's the right instruction
+[02:36.24]  set for this emerging microprocessor?
+[02:39.52]  And the prevailing wisdom of these more
+[02:41.76]  sophisticated instruction sets, complex
+[02:44.08]  instruction sets. And if you think of it
+[02:45.92]  like a vocabulary, it was like a having
+[02:49.36]  lots of polyelabic words in your
+[02:51.12]  vocabulary, you know. And the
+[02:53.52]  alternative was going to be what we
+[02:55.60]  called the reduced instruction set
+[02:57.12]  computer was having lots of reduced
+[02:59.28]  instructions like monoselabic words. So
+[03:01.92]  you might guess that for a program to
+[03:05.12]  execute these instructions, if they're
+[03:06.64]  simpler, they take more of them and if
+[03:09.60]  they're sophisticated, they take fewer,
+[03:11.68]  but the sophisticated ones might take
+[03:13.36]  longer to run. So kind of the question
+[03:16.24]  came down to what was that ratio? Um,
+[03:18.96]  and in the in the beginning in the 1980s
+[03:21.76]  when these debates were happening, there
+[03:23.20]  was this kind of very viciferous debates
+[03:26.16]  partly of like what those ratios are
+[03:27.76]  going to do, but a big part was kind of
+[03:29.36]  philosophical. Weren't weren't you doing
+[03:32.00]  damage to the software industry by
+[03:34.48]  lowering the instruction set level? So
+[03:36.40]  the gap between the programming
+[03:38.08]  languages and the instruction set was
+[03:40.24]  larger. That was kind of the ferocity of
+[03:42.48]  the debates. Well, after the dust
+[03:44.48]  settled a few years later and we started
+[03:46.16]  getting numbers, it turned out you
+[03:48.24]  needed like maybe 30% 40% more simple
+[03:51.68]  instructions to execute in a program,
+[03:54.32]  but you could run them four or five
+[03:56.00]  times faster. So the net was, you know,
+[03:58.48]  or five times faster say. So 3 or 4x
+[04:01.04]  speed up was the potential for risk over
+[04:04.16]  CISK.
+[04:05.60]  >> You mentioned that um I guess
+[04:07.52]  philosophical difference like that gap.
+[04:10.08]  Why why would that be controversial?
+[04:12.40]  >> I mean unfortunately I'd say computer
+[04:14.80]  architecture in the 1970s and even 1980s
+[04:18.72]  a lot of it was uh was kind of people
+[04:22.96]  designed this by using their intuition
+[04:25.28]  or using their gut. Their feelings was
+[04:27.36]  this is the right thing to do. And even
+[04:30.40]  the textbooks of the time were like
+[04:32.72]  cataloges. They here's a computer and
+[04:34.64]  just list all its features and here's
+[04:36.16]  another computer listing all its
+[04:37.84]  features. So it's pretty dissatisfying
+[04:40.96]  what was going on because these debates
+[04:43.52]  it would seem like we ought to be able
+[04:44.88]  to sign this, you know, scientifically
+[04:46.72]  with with numbers that are there. But
+[04:49.76]  absence of that, it was more like a
+[04:51.68]  philosophical debate like how many
+[04:53.52]  angels on the head of a pin, right? You
+[04:55.12]  could you could have arguments
+[04:57.04]  qualitatively but you couldn't settle
+[04:59.12]  the arguments and because there wasn't
+[05:01.84]  ways to settle the arguments
+[05:03.20]  quantitatively you know people would
+[05:05.20]  just argue about it. Would you say that
+[05:08.24]  you know risk versus cisk did one side
+[05:12.08]  win the war? Yeah. I was just reading
+[05:14.40]  there's some guy online who uh revisited
+[05:17.52]  it and he said and CISK won. Well,
+[05:19.76]  that's a pretty myopic view is uh in the
+[05:23.28]  PC era because of the importance of u
+[05:27.36]  distributing software in binary. So once
+[05:30.08]  the x86 was established and people the
+[05:32.64]  PCs would would ship software in
+[05:34.88]  binaries that was very hard to overcome.
+[05:36.88]  That was a huge uh impediment to
+[05:39.44]  changing the instruction set. So PCs are
+[05:42.00]  design defined by the x86 architecture
+[05:44.56]  largely.
+[05:46.64]  But about also in the 1980s there's this
+[05:50.00]  company in England u that wanted to do a
+[05:52.48]  personal computer they call it was the
+[05:53.92]  acorn personal computer and they decided
+[05:56.80]  they wanted to have their own they
+[05:58.24]  needed their own instruction set
+[05:59.52]  architecture to do that their own chip
+[06:00.88]  they were unsatis the chips they had
+[06:02.72]  available at the time they were doing it
+[06:04.64]  weren't fast enough and they were
+[06:07.36]  influenced by the papers that we did at
+[06:09.04]  Berkeley and so they built what they
+[06:10.80]  called the acorn risk machine
+[06:13.52]  and then uh one of the benefits of this
+[06:16.32]  kind of reduced instruction set is that
+[06:18.16]  it could be simpler, it would take less
+[06:20.24]  resources and take less energy to
+[06:22.40]  execute. And then several years later
+[06:25.04]  when Apple was looking for a
+[06:26.56]  microprocessor that could power, you
+[06:29.28]  know, one of their personal devices that
+[06:31.68]  this one was called the early forerunner
+[06:33.84]  of the iPhone called the Newton. They
+[06:36.16]  came to this company and said, "Boy, I
+[06:38.72]  really like it. Uh, let's get rid of the
+[06:41.12]  Acorn name." So they renamed it the
+[06:43.52]  acorn wrist machine arm and they
+[06:46.72]  recristened it the advanced wrist
+[06:48.40]  machine uh because to get rid of the
+[06:50.48]  acorn and then Apple used it um in the
+[06:53.92]  Newton. Now the new wasn't a commercial
+[06:55.92]  success but it demonstrated the benefits
+[06:58.56]  for risk architecture for mobile
+[07:00.16]  devices. So the Nokia came along just a
+[07:03.20]  few years later with their GDM uh
+[07:06.64]  cellular phone which is one of the first
+[07:08.16]  popular ones and they embraced ARM. And
+[07:10.96]  so ever since you know uh ARM has
+[07:13.36]  dominated all the mobile devices. So I
+[07:16.32]  think I just checked there's been 350
+[07:18.88]  billion
+[07:20.48]  uh ARM processors microprocessors with
+[07:23.12]  ARM technology in it today. So it's like
+[07:25.68]  today 99% of all processors in computers
+[07:29.20]  are risk
+[07:31.44]  even in personal computers. Apple
+[07:33.44]  switched over to ARM from from the x86
+[07:37.04]  architecture. So even PCs there's um
+[07:41.12]  there's a risk architecture is you know
+[07:43.84]  is significant and it's trying to
+[07:46.40]  starting to get in the cloud. The
+[07:47.52]  cloud's largely been defined by the x86
+[07:49.68]  server architectures but um Amazon and I
+[07:54.32]  think Amazon, Microsoft and Google all
+[07:56.16]  have their own development of ARM
+[07:57.68]  processors. So ARM is becoming or risk
+[07:59.76]  processor becoming more popular in the
+[08:01.44]  cloud. So right now you I'd say the x86
+[08:05.28]  architecture market is shrinking while
+[08:07.92]  the risk architecture market is um you
+[08:10.56]  know growing leaps and bounds.
+[08:12.32]  >> Well, how how could someone say CISK one
+[08:15.12]  when you mentioned like 99%
+[08:17.44]  >> Yeah. Well, that's just if you if if
+[08:19.84]  they're doing something in history and
+[08:22.08]  they define computers as personal
+[08:25.52]  computers and maybe servers and they go
+[08:28.00]  up through around 2000. If the story
+[08:31.20]  ended then you could well it looks like
+[08:33.76]  a CISK one but you know uh once we get
+[08:36.96]  into this uh postPC era I don't
+[08:39.52]  understand how somebody would reach that
+[08:41.20]  conclusion. [laughter]
+[08:43.44]  >> You mentioned the the energy expenditure
+[08:45.60]  so like um you know risk makes sense in
+[08:49.36]  places or maybe on mobile devices things
+[08:51.68]  like that.
+[08:52.80]  >> Well even in the cloud I mean everybody
+[08:54.64]  cares about we're we're everything is
+[08:56.48]  energy bound now. So it if u you know
+[09:00.32]  these days of course you're not dealing
+[09:02.16]  with millions of transistors but
+[09:03.60]  billions of transistors. So it matters
+[09:06.88]  somewhat less today. There's so many
+[09:09.28]  things going going on that you can hide
+[09:11.60]  that. I mean even what the x86
+[09:13.52]  architecture did is to compete is that
+[09:17.60]  it translated the x86 instructions in
+[09:20.40]  hardware into risk instructions. And so
+[09:22.72]  you had to pay that extra overhead of
+[09:24.64]  that translation step to get risk
+[09:26.40]  instructions and then you could ex any
+[09:28.64]  good ideas that the risk people had that
+[09:30.96]  the x86 could do. But it was worth it
+[09:34.64]  financially for that extra overhead
+[09:36.88]  because of the value of the PC software
+[09:39.92]  base. So it made a lot of sense for
+[09:42.00]  Intel to do that and they did that in
+[09:43.92]  the early 2000s. It you know it was a
+[09:46.96]  it's a great uh commercial idea. Is
+[09:50.16]  there any niche use case where CISK
+[09:52.80]  makes sense? Is there any, you know, is
+[09:54.64]  this an engineering trade-off or CISK is
+[09:56.88]  objectively worse?
+[09:57.84]  >> Yeah. So, if you want to, if we want to
+[09:59.20]  go kind of one level deeper into all of
+[10:02.08]  this, um,
+[10:04.24]  the what was actually going on in, you
+[10:07.44]  know, in designing computers, the hard
+[10:09.44]  part is the control. And so, what
+[10:12.00]  happened is in the beginning, it was
+[10:14.00]  kind of control was kind of ad hoc. you
+[10:16.64]  would figure out uh you put the gates
+[10:18.64]  together to make it to work. Uh a uh one
+[10:22.08]  of the computing pioneers, Maurice
+[10:23.84]  Welks, figured out a more elegant way to
+[10:25.92]  design control. And he said, "Well, we
+[10:28.64]  could just list all the control signals
+[10:31.04]  as the output of a memory and we could
+[10:34.16]  have something would keep track of where
+[10:36.16]  we were in the memory and and to issue
+[10:39.28]  those control signals." And he called
+[10:40.80]  this he called the this effort the
+[10:44.88]  instruction the the control signals you
+[10:47.36]  could think of instructions. So he
+[10:48.48]  called that a micro instruction and he
+[10:50.48]  called the programming of those
+[10:51.60]  instructions microprogramming.
+[10:53.92]  So where technology was in the 1960s
+[10:58.24]  that made a fair amount of sense and so
+[11:00.96]  IBM built these so-called micro program
+[11:04.64]  computers. So it was basically an
+[11:07.04]  interpreter with very simple
+[11:08.56]  instructions that would interpret this
+[11:10.88]  much more sophisticated instruction set
+[11:12.96]  above it. But you would play this
+[11:14.72]  interpretation overhead. And classically
+[11:17.04]  you know in computer science
+[11:18.40]  interpreting versus compiling uh is
+[11:21.04]  something like a factor of five or 10.
+[11:23.60]  But given you know the latencies of the
+[11:25.36]  memory technologies and the possibility
+[11:27.92]  of doing this out of readonly memory it
+[11:30.24]  made sense u up until the 60s and 70s
+[11:34.24]  and then but then the kind of the
+[11:35.44]  question came up as came around 1980 is
+[11:37.68]  like is this still a good idea? Should
+[11:39.60]  we have this microode interpreter inside
+[11:42.32]  there? And so the alternative is to
+[11:45.36]  think of well rather than uh we've got
+[11:47.84]  this microode interpreter in there why
+[11:49.84]  don't we just compile directly into
+[11:51.28]  those instructions and that's pretty
+[11:53.28]  close to the to the risk ideas. Uh the
+[11:56.88]  micro instructions themselves used to be
+[11:58.80]  you know like a 100 bits wide and really
+[12:01.36]  complicated. So if you if you make them
+[12:03.44]  not quite so long you make them kind of
+[12:06.40]  more natural still we can we could skip
+[12:09.36]  the interpretation step. So with the you
+[12:11.76]  know going going this level deeper kind
+[12:14.64]  of the question would be today would
+[12:16.16]  people invent an instruction set that
+[12:18.64]  was so sophisticated and needed a
+[12:20.40]  microode interpreter and probably they
+[12:22.40]  wouldn't do that. I mean you could do it
+[12:24.64]  you nothing prevents you from doing it
+[12:27.52]  but you wouldn't want to design an
+[12:28.88]  instruction set that was forced to use a
+[12:30.96]  micro card interpreter. you it might
+[12:33.04]  make sense in some very tiny
+[12:34.64]  applications possibly where you have you
+[12:37.84]  know thousand tens of thousands of
+[12:39.52]  transistors maybe this would a microcode
+[12:41.68]  interpret work but I think nobody today
+[12:43.76]  I don't think anybody's invented an
+[12:45.28]  instruction set in the last 20 years
+[12:47.12]  that u has anything that would need a
+[12:50.00]  microcoded interpreter
+[12:51.92]  >> you mentioned the compiler multiple
+[12:54.56]  times here and it seems like that's a
+[12:56.08]  critical piece that kind of makes risk
+[12:59.12]  work so well can you explain the role of
+[13:01.68]  the compiler and how it manages the
+[13:04.16]  relationship between software and
+[13:05.76]  hardware.
+[13:06.72]  >> Well, you you're writing in a
+[13:08.00]  programming language like C or C++ or
+[13:11.44]  maybe Python and um but the quality of
+[13:14.56]  the code that gets generated is is up to
+[13:16.80]  the compiler if you and a specific
+[13:19.84]  example is that it's useful when you
+[13:22.40]  construct computers to have registers
+[13:24.16]  and those registers are actually kind of
+[13:25.92]  visible in in the assembly language or
+[13:28.08]  the machine language programming.
+[13:30.16]  It can be 8, 16 or 32 these registers
+[13:33.12]  for the people programming that little
+[13:35.92]  level to use. Well, it used to be very
+[13:38.88]  difficult for compilers to to um
+[13:42.64]  allocate registers efficiently when they
+[13:45.36]  computers just weren't fast enough. We
+[13:46.96]  didn't have the algorithms that we could
+[13:48.72]  look at a section of code or a sub
+[13:50.80]  routine or something and say how can we
+[13:52.88]  most efficiently do registers? In fact,
+[13:55.68]  the C programming language which was
+[13:58.48]  invented to do systems programming
+[14:02.32]  in C before that to write an operating
+[14:04.64]  system people wrote them an assembly
+[14:06.08]  language believe it or not and but the
+[14:08.72]  Unix people showed uh Ken Thompson
+[14:11.20]  Dennis Richie showed that we could if we
+[14:13.68]  had a low-level language pretty
+[14:15.28]  low-level language we get the benefits
+[14:17.12]  of writing in something that it's much
+[14:18.72]  easier for humans to understand and
+[14:20.24]  debug
+[14:22.24]  because register allocation by the
+[14:24.48]  compilers was was so poor, they had to
+[14:27.68]  put in the ability for the programmer to
+[14:30.08]  give hints of what variables should go
+[14:31.60]  in registers. It was just easier for
+[14:33.68]  them to have the programmer step in and
+[14:36.40]  say, if the machine had eight registers,
+[14:38.08]  I want these six variables to be in
+[14:39.84]  these registers. Don't leave them in
+[14:41.20]  memory because it runs so much slower.
+[14:43.12]  Registers are so much faster. So, a big
+[14:46.48]  part of u the the CISK the risk argument
+[14:50.56]  was the compiler algorithms are getting
+[14:52.64]  better. they could handle these
+[14:53.92]  low-level instructions, they could
+[14:55.60]  allocate registers efficiently.
+[14:58.16]  Uh, and that was, you know, another
+[15:00.24]  reason in these debates about why it
+[15:02.40]  made sense to have a simpler
+[15:03.92]  architecture. What we did in the risk
+[15:06.24]  architectures, well, if registers are
+[15:08.16]  really important, uh, register
+[15:10.16]  allocation really important. One way to
+[15:11.60]  make it easier for the compiler was just
+[15:13.76]  to have a lot more of them. So,
+[15:15.68]  typically the CISK architectures of
+[15:17.44]  times would have eight or maybe 16
+[15:19.20]  registers. So, we we put in 32 and That
+[15:23.44]  was one of the arguments, right, is
+[15:25.52]  well, if it's hard to efficiently use a
+[15:27.84]  small number, let's give them plenty.
+[15:29.28]  So, even if it wasn't that good,
+[15:31.44]  there'll be enough registers. So, most
+[15:32.72]  of the time and and registers weren't
+[15:34.48]  that much more expensive to include in
+[15:36.32]  machines because of MOR's law. I saw
+[15:38.72]  somewhere in in uh one of the talks that
+[15:41.20]  he had given that somehow the compiler
+[15:44.88]  it's it's more easy for it to optimize
+[15:46.80]  the code for risk but in CISK there were
+[15:49.68]  these complex bigger ones and it almost
+[15:52.64]  never used them. Is that a shortcoming
+[15:54.56]  of the compiler? So what happened if we
+[15:57.36]  go back in the compiler days there's
+[15:59.84]  this argument is that by having more
+[16:01.60]  sophisticated instructions this would
+[16:03.84]  raise the level of extraction. that'll
+[16:05.52]  be a smaller gap. They'll make it easy
+[16:07.36]  for the compiler. But that was a
+[16:08.56]  philosophical argument. It it wasn't
+[16:10.88]  something that necessarily compiler
+[16:12.72]  people um could work. Compiler people
+[16:16.88]  weren't making that argument. It was the
+[16:18.72]  architects were making that argument.
+[16:20.80]  And as it turned out when we looked at
+[16:22.48]  the programs when we were doing the
+[16:24.32]  early research on CISK in versus risk is
+[16:28.08]  the compilers didn't really use those
+[16:29.52]  instructions. Often the compiler
+[16:30.96]  writers, the architects would come up
+[16:32.64]  with a sophisticated instruction and the
+[16:34.88]  compiler writers would say, "Well, we
+[16:36.56]  don't need that." In fact, we found
+[16:38.80]  examples where like for a procedure
+[16:40.80]  entry, there'd be a special instruction
+[16:43.04]  built in to do all this work that what
+[16:45.12]  the architects thought the compilers
+[16:46.48]  wanted and the compiler designers say,
+[16:48.16]  "Well, we don't need that. It's it's
+[16:50.64]  faster. It's actually faster for to use
+[16:52.96]  it with separate instructions than use
+[16:55.04]  your sophisticated instruction." And so,
+[16:56.96]  we found a bunch of examples like that.
+[16:58.96]  So you pay the extra overhead of the
+[17:00.88]  microode interpreter to have these
+[17:02.48]  sophisticated instructions and then the
+[17:04.32]  compiler doesn't even use them. Right?
+[17:06.32]  So th this is kind of a nonsensical
+[17:08.88]  situation that that we're in. uh and you
+[17:12.64]  know this is kind of like you know why
+[17:14.64]  why are there startups or why are there
+[17:17.36]  scientific you know breaking points like
+[17:20.40]  that as we looked at all the
+[17:21.60]  technologies with Moore's law you know
+[17:24.00]  ideas like caches with where compilers
+[17:27.20]  were in using sophisticated instructions
+[17:28.80]  the ability to allocate register more
+[17:30.64]  efficiently it made sense to change the
+[17:33.12]  directions away from these microcoded
+[17:34.88]  instruction set architectures to these
+[17:36.80]  simpler architectures
+[17:38.32]  >> when we talk about instruction sets I
+[17:40.24]  mean we're kind assuming that we're
+[17:42.00]  talking about these general purpose
+[17:44.24]  computer are these CPUs and I know GPUs
+[17:47.20]  are kind of talked about a lot and maybe
+[17:50.08]  there's other forms of computing are
+[17:52.32]  there instruction sets for those types
+[17:54.80]  of machines as well.
+[17:56.00]  >> So what happened is around 2000 is when
+[17:59.04]  GPUs came along and these were what we
+[18:02.00]  called domain specific architectures. So
+[18:03.92]  a GPU is a graphics processing unit. It
+[18:06.56]  had one job. it it didn't need to do
+[18:09.60]  everything that a general purpose
+[18:10.80]  processor needs to. Didn't have to
+[18:12.72]  support virtual memory. Uh it didn't
+[18:15.36]  have to support a compiler which is you
+[18:17.36]  know a pretty radical idea for
+[18:19.44]  architectures. It was just for graphics.
+[18:22.16]  And so around 2000 is when Nvidia and
+[18:25.76]  the other GPUs out there because they
+[18:27.44]  were trying to do you know the give you
+[18:30.32]  the graphics for games and give you the
+[18:31.76]  graphics for movies. So it was a niche
+[18:33.76]  product.
+[18:35.28]  So what happened kind of in the computer
+[18:37.36]  industry is it was driven by Moore's law
+[18:40.88]  which I've mentioned many times and also
+[18:43.44]  this lesserk known law called dinard
+[18:45.76]  scaling which is because kind of an
+[18:48.16]  interesting question well if Moore's law
+[18:49.92]  puts a lot more transistors on a chip
+[18:52.40]  how come they're not getting hotter and
+[18:54.24]  hotter as we double the number of
+[18:55.92]  transistors every year and the reason
+[18:57.52]  was this observation made by Bob Dinard
+[19:01.36]  that what as you added more transistors
+[19:04.80]  People would also lower the threshold
+[19:06.56]  voltage which the distinction between a
+[19:08.40]  zero and one and that had like a squared
+[19:11.52]  effect. So you would end up doubling
+[19:13.92]  them transistors but you'd lower the
+[19:15.60]  threshold voltage. So microprocessors
+[19:17.92]  stayed at like 20 or 30 watts. In fact
+[19:22.56]  uh we did a John and I eventually did a
+[19:25.28]  textbook and I was just checking and
+[19:27.36]  that came out in 1990 and we didn't even
+[19:29.04]  talk about power as an issue for the
+[19:31.12]  first three editions. You know, the the
+[19:32.96]  third one came out in 2000. Power wasn't
+[19:35.28]  even a topic because micro dinard
+[19:37.68]  scaling was going on and so
+[19:39.04]  microprocessors stayed in the tens of
+[19:41.44]  watts even as they got faster and
+[19:43.12]  faster. What happened is about 2005 or
+[19:46.64]  so, Dinard scaling stopped working and
+[19:49.20]  that was a shock, right? So, and Intel
+[19:52.08]  actually had a microprocessor that
+[19:55.04]  failed one of their generations because
+[19:57.68]  they just couldn't get the power down
+[19:59.68]  enough. it was too hot to be able to do
+[20:01.68]  that. Um and then so then what that
+[20:05.68]  forced us to go to multicore is that uh
+[20:09.52]  before that it was easiest for the
+[20:11.28]  programmer for everybody if there was
+[20:12.72]  one very sophisticated processor that
+[20:14.96]  did everything but we couldn't do that
+[20:16.96]  anymore. So it went from one
+[20:18.72]  sophisticated processor to two and then
+[20:21.28]  four and then eight simpler processors.
+[20:23.12]  Then it was up to the programmer to
+[20:25.44]  deliver on the potential of Morris law
+[20:27.44]  by paralyzing their code. So we stayed
+[20:30.80]  that way for about another 10 years and
+[20:34.16]  then Moore's law started slowing down.
+[20:36.96]  Uh so that the general purpose
+[20:38.80]  microprocessor was barely improving. It
+[20:40.96]  got a little better but it wasn't
+[20:42.32]  getting dramatically better. Um, in the,
+[20:45.44]  you know, in the 1980s, 1990s, 2000s,
+[20:50.88]  you you have a laptop and your friend's
+[20:52.96]  laptop would be like four times as fast
+[20:55.36]  as yours. And, you know, you were
+[20:56.88]  jealous. So, you would throw away
+[20:59.04]  perfectly good hardware because your
+[21:01.36]  friend's thing was so much faster
+[21:03.60]  because of the rapid change in
+[21:05.04]  performance. Well, that all ended in the
+[21:08.32]  2010s where the you never you wouldn't
+[21:10.64]  throw away a laptop because the new ones
+[21:12.56]  were hardly that much faster than the
+[21:14.40]  old ones. You throw them away when they
+[21:15.76]  break and slow down. Nevertheless,
+[21:18.16]  programmers were used to this dramatic
+[21:20.56]  improvement in performance every few
+[21:22.96]  years because they could add more
+[21:24.48]  features to their software and stuff
+[21:25.68]  like that. So, what were architects
+[21:27.36]  going to do? They'd already done the the
+[21:29.12]  multicore trick in 2005 or so. So around
+[21:33.76]  2015 the idea was we would do domain
+[21:36.24]  specific architectures like the GPUs. So
+[21:38.96]  we if we if you tell me I only have to
+[21:41.68]  run a narrow class of programs and I
+[21:44.08]  don't have to necessarily run all the
+[21:46.32]  operating systems everything else. Well
+[21:48.16]  yes I could shuffle those resources and
+[21:51.12]  do something much more efficient for
+[21:53.12]  something well. So you could do some
+[21:54.72]  things well and there's other things
+[21:56.64]  either you do poorly or not even at all.
+[21:59.04]  So then the question is okay what
+[22:00.80]  domain? So just coincidentally where we
+[22:04.00]  were technologically right around 2012
+[22:07.92]  2015 is when machine learning AI burst
+[22:11.12]  on the scene. Um and so that was it was
+[22:15.12]  evident what domain should we do and the
+[22:17.84]  domain was machine learning AI. So just
+[22:20.00]  coincidentally where we were
+[22:21.20]  technologically
+[22:22.96]  uh this new domain came along and then I
+[22:25.76]  I would say you know I I work for Google
+[22:28.08]  but I think it's fair to say Google was
+[22:30.56]  the one who really uh saw it was the
+[22:33.36]  certainly the first big company who
+[22:35.76]  understood the potential of machine
+[22:37.20]  learning AI and um and bet that they or
+[22:42.00]  feared that they were going to be
+[22:43.44]  swamped with demand and needed to do
+[22:45.92]  custom hardware. So the the translate
+[22:49.76]  tensor processing unit GPU that Google
+[22:52.80]  debuted in 2016 really kind of shocked
+[22:56.24]  the world and got people to realize that
+[22:58.96]  we should be uh designing hardware for
+[23:01.28]  machine learning and we could continue
+[23:04.16]  to improve performance dramatically for
+[23:06.48]  that one domain.
+[23:08.08]  >> What's the high level differences
+[23:09.84]  between a CPU, a GPU and a TPU? the the
+[23:14.72]  CPU has got to be this general purpose
+[23:16.72]  thing. And basically um even today they
+[23:20.40]  have these general purpose cores that
+[23:23.12]  each core is very similar to what the
+[23:25.84]  instruction sets or used to be like 20
+[23:29.12]  years before that. It's not a surprising
+[23:31.20]  design and it's just got lots of cores
+[23:32.96]  and modern ones today could have a h you
+[23:35.28]  know 50 or 100 cores in there. So that's
+[23:37.76]  that's the feature for graphics. uh what
+[23:40.80]  they decided to do which to do the
+[23:43.52]  graphics job is they need to get a lot
+[23:45.36]  of performance on the memory system. So
+[23:46.96]  they went to multi-threading. So they
+[23:49.28]  have hardware threads that you would
+[23:51.36]  send a memory request out and you the
+[23:53.76]  hardware would switch over to do
+[23:54.96]  something else while the when memory is
+[23:57.04]  coming out. So it's this highly threaded
+[23:59.28]  architecture and that's what they
+[24:01.04]  developed and could could run well for
+[24:03.28]  graphics.
+[24:04.80]  um a and graphics. It turns out um
+[24:08.48]  doesn't need very s doesn't need
+[24:11.60]  powerful floating point. It needs
+[24:14.32]  doesn't need wide floating point. So
+[24:15.84]  32-bit floating point is plenty for
+[24:17.68]  graphics even 16 bit. So they were doing
+[24:20.56]  pushing graphics with 16 and 32-bit
+[24:22.80]  floating point in this multi-threaded
+[24:24.80]  kind of architecture. And because it was
+[24:27.04]  kind of its own unique thing, it has its
+[24:28.64]  own own set of terminology
+[24:31.44]  um all to itself. it wasn't kind of out
+[24:33.76]  of the main branch of computer
+[24:35.20]  architecture. Uh so when you look at our
+[24:38.00]  textbooks, we have kind of like a
+[24:39.44]  Rosetta Stone which says here's the
+[24:42.32]  terms that Nvidia uses to describe DP2s.
+[24:45.12]  This is what it means in kind of normal
+[24:48.08]  um well normal in the mainstream
+[24:50.24]  processor design. So they were this
+[24:52.32]  niche product that happened to do pretty
+[24:54.96]  fast um single precision floating point
+[24:58.24]  and uh even half precision floating
+[25:00.24]  point and they were pretty cheap. They
+[25:02.64]  were like hundreds of dollars.
+[25:05.12]  Um
+[25:07.04]  so when people uh so kind of uh but some
+[25:12.24]  people were thinking boy for some
+[25:13.76]  applications if I could turn my program
+[25:16.64]  into like uh pretend that it was doing
+[25:20.16]  creating an image if I could turn my
+[25:22.48]  problem into image generation I could
+[25:24.16]  use these pretty cheap GPUs which had
+[25:27.20]  very good floatingoint performance per
+[25:29.28]  dollar compared to anything else. And so
+[25:31.76]  people started playing around with that.
+[25:33.68]  Uh and uh the founder CEO Jensen Wang
+[25:38.16]  really liked that idea. So in 2006,
+[25:42.72]  he funded an effort to create a
+[25:45.28]  programming language that that would
+[25:47.28]  kind of handle this multi-threaded
+[25:49.60]  hardware architecture that's for
+[25:50.96]  graphics to make it easier to program.
+[25:53.12]  And so that led to the invention of uh
+[25:56.16]  CUDA uh which I can't remember its
+[25:58.56]  acronym but it's really a a proprietary
+[26:01.44]  programming language for the
+[26:02.72]  multi-threaded GPU architecture to make
+[26:05.60]  it kind of easier to program. It was a
+[26:07.84]  it was a C like language but you can't
+[26:10.56]  just compile C programs and run it but
+[26:12.56]  it was C like but people actually liked
+[26:14.88]  it. You know it was certainly much
+[26:16.24]  better than trying to turn your program
+[26:17.84]  into an image generation but people
+[26:20.40]  liked it. But uh Jensen Wang his vision
+[26:22.80]  was try to get these teenagers in the
+[26:25.12]  basement who are playing the games to
+[26:26.40]  learn how to program these things. And
+[26:28.00]  he had a couple of markets that he was
+[26:29.76]  interested in like um you know uh some
+[26:33.20]  of the department of energy labs like uh
+[26:35.60]  fluid flow and some of things like you
+[26:37.76]  know some and he would build special
+[26:39.44]  purpose libraries that could handle that
+[26:41.28]  domain and then use his GPUs to do that
+[26:44.48]  kind of uh special purpose computing but
+[26:47.28]  breaking out of graphics. But that's
+[26:49.76]  kind of the heritage there. Now for the
+[26:51.52]  TPU program um and and so what's
+[26:54.88]  happened uh people started right from
+[26:56.88]  the very beginning people started using
+[26:58.24]  GPUs because they had much better single
+[27:00.64]  precision floatingoint performance than
+[27:03.52]  um than the CPUs. They had a lot more
+[27:06.24]  processors on them. So we had the
+[27:08.24]  potentially much more performance. So
+[27:09.76]  they're kind of one of the breakthrough
+[27:11.20]  moments moments in it was in 2012 when
+[27:16.88]  uh within the machine learning community
+[27:18.96]  this neural networking piece which had a
+[27:21.76]  few advocates but a lot of people didn't
+[27:23.44]  believe in it they went into a
+[27:25.44]  competition to see who could do the best
+[27:27.92]  image recognition in 2012 the so-called
+[27:31.60]  AlexNet beat all the competition this
+[27:33.92]  was this uh historic moment in the in
+[27:37.68]  the in machine learning learning in
+[27:39.68]  neural networking and once they did it
+[27:42.48]  and the guy who did that had taken a
+[27:44.24]  cuda course at the University of Toronto
+[27:46.48]  to learned how to use it and so he says
+[27:47.76]  well as long as I'm doing this I'll do
+[27:49.04]  it on a GPU so he was able to explore a
+[27:51.84]  lot more space on this cheap fast GPU so
+[27:55.28]  he entered it in the competition 2012
+[27:58.08]  and within he was the only one using
+[28:00.08]  neural networks and he crushed the
+[28:01.92]  competition and within a few years
+[28:03.76]  everybody switched over and not only
+[28:06.16]  they were doing neural networks but
+[28:07.44]  they're using GPUs
+[28:09.28]  So GPUs have this um heritage of being a
+[28:12.64]  graphics in graphics engine but more
+[28:16.40]  programmable and uh it started getting
+[28:19.52]  used for machine learning. When Google
+[28:22.08]  came along uh they decided you know it
+[28:24.72]  was a clean slate. They didn't they
+[28:26.24]  didn't care about graphics. So the at
+[28:28.96]  the heart of neural networking is a
+[28:31.04]  matrix multiply. That's the that's the
+[28:33.20]  thing. So they designed a a processor
+[28:36.00]  for at the time microp processor at the
+[28:37.68]  time had a giant matrix multiplying
+[28:39.84]  unit. That was the main thing and then
+[28:41.92]  they threw a bunch of stuff out that
+[28:43.28]  they didn't need. So a lot of general
+[28:45.52]  purpose computing is what's on the chip
+[28:47.76]  is maybe three levels of caches to try
+[28:50.88]  and have so you don't spend all your
+[28:52.88]  time going to the relatively slow
+[28:54.32]  memory. Well, for machine learning, they
+[28:56.32]  knew when their memory accesses were so
+[28:58.08]  they could schedule that. So they didn't
+[29:00.32]  a a hardware cache didn't make any
+[29:02.32]  sense. they would just have a memory
+[29:04.00]  that the software understood would
+[29:05.36]  transfer in time. So those were some of
+[29:07.28]  the innovations. Also they innovated on
+[29:09.36]  the floatingoint format. You didn't need
+[29:12.32]  uh uh you know scientific computing
+[29:15.60]  cares a lot about precision. They have
+[29:18.00]  you know most of it's done in 64-bit
+[29:19.76]  floating point where the exponent is you
+[29:22.40]  know less than 10 bits and most of it is
+[29:25.20]  is the uh precision you know the
+[29:27.52]  fraction can be 50 some bits. Well, they
+[29:30.56]  what they realized for machine learning
+[29:32.16]  and AI, they don't need all that
+[29:33.92]  precision. They needed the range. So,
+[29:35.76]  Google did the first floatingoint format
+[29:38.48]  where the exponent was bigger than the
+[29:40.16]  fraction. That's that was a radical idea
+[29:42.24]  that so-called brain float 16, the part
+[29:45.04]  of Google that was doing this was the
+[29:47.28]  brain research group. So, they brought
+[29:49.76]  out this architecture. They had this
+[29:52.48]  narrow floating point format. They had
+[29:54.80]  big matrix multiply unit. It only had
+[29:56.80]  one one processor in it. uh unlike the
+[29:59.68]  other ones, it was just dedicated
+[30:01.36]  machine learning and it just kind of
+[30:02.64]  blew the doors off of everybody in the
+[30:05.52]  field. It was uh you know like 30 times
+[30:08.32]  better at inference than the
+[30:10.48]  contemporary GPU and 80 times better
+[30:12.40]  than CPU by having this dedicated one.
+[30:15.20]  So when uh Google made this announcement
+[30:17.76]  at their annual retreat a year or so
+[30:20.64]  after um after they had deployed it
+[30:23.84]  inside uh it just shook everybody up.
+[30:26.40]  Intel started buying companies. Um you
+[30:29.52]  know Nvidia started modifying the design
+[30:33.12]  uh for to be mach
+[30:36.00]  learning and then a bunch of other
+[30:37.84]  competitors uh started uh uh
+[30:41.12]  hyperscalers started doing their own
+[30:42.48]  effort. So I think that was the watersh
+[30:44.16]  I think the TPU announcement was the
+[30:46.16]  watershed moment there.
+[30:48.32]  >> So it's it's almost like uh levels of
+[30:51.12]  specialization like the CPU is the most
+[30:53.20]  general. Well yeah if we could still if
+[30:55.36]  you know if we still had dinard scaling
+[30:57.84]  if we you know Morris law and dinard
+[30:59.52]  scaling where we be today with general
+[31:02.64]  purpose processors we should have 100
+[31:04.32]  terahertz
+[31:05.92]  you know microprocessors if we could
+[31:07.92]  build 100 terahertz microprocessors
+[31:09.84]  that's what we do we would the GPUs
+[31:12.40]  would still be a niche you know if we
+[31:14.16]  could do that it you know it raises all
+[31:16.40]  boats that would be fantastic if we
+[31:18.40]  could do that but that that's long in
+[31:21.36]  the history we haven't been able to do
+[31:23.36]  that for 20 years and so you know there
+[31:25.60]  were probably two or three gigahertz
+[31:27.76]  microprocessors in 2005 and that's kind
+[31:31.04]  of where they are barely improved today
+[31:33.60]  so we can't do that. So there's still
+[31:36.16]  areas where it's important to have CPUs.
+[31:38.64]  They're the right, you know, you need
+[31:40.56]  operating systems, compilers and things.
+[31:43.04]  Uh that they're the right solution, but
+[31:45.36]  things have been specialized. And then
+[31:47.84]  now in terms of industry terms, huge
+[31:50.80]  emphasis is being put into the AI
+[31:53.20]  accelerators or just AI in general is
+[31:56.24]  where the money is being invested. And
+[31:58.08]  so the question for any processor
+[32:00.32]  designers was how does my processor
+[32:03.44]  design fit into this AI universe and um
+[32:08.32]  what should I do? How should I change it
+[32:10.08]  for this important application?
+[32:12.48]  >> So you mentioned that kind of Moore's
+[32:14.64]  laws slowing down and I watched this
+[32:17.36]  other talk from Jim Keller saying that
+[32:20.72]  Moore's law isn't isn't dead. But is it
+[32:23.68]  controversial to say that it's slow? Oh,
+[32:25.52]  I mean not not to real engineers. The
+[32:28.80]  the Morris law is very simple. It says
+[32:30.88]  in a in a chip the number of transistors
+[32:33.92]  will double originally said every year
+[32:35.92]  and then he mended it uh to every two
+[32:38.72]  years. Just just look do the chips are
+[32:41.68]  the number of transistors doubled and no
+[32:44.24]  now I think what people assume that
+[32:47.68]  means if trans if we are no longer on
+[32:50.08]  Morris law that technology is not
+[32:52.16]  improving. That's not the same thing.
+[32:54.32]  it's not improving at the rate that
+[32:56.00]  Moore projected. And what was amazing
+[32:58.40]  about Moors law which lasted 50 years is
+[33:01.76]  that it it guided the investment of
+[33:04.32]  semigtory manufacturing. We need to
+[33:06.56]  deliver on doubling transistors every
+[33:08.48]  year or two. How are we going to do
+[33:10.72]  that? How are we going to build the
+[33:12.32]  equipment to do it? So it was a
+[33:13.52]  guideline for the whole industry which
+[33:15.84]  was kind of remarkable. So what we are
+[33:18.40]  doing now is there's pieces of the
+[33:21.20]  technology to get better and there's
+[33:22.64]  pieces that uh that don't improve at
+[33:25.76]  all. So one of the big pieces important
+[33:28.80]  pieces on a chip is the static RAM
+[33:31.44]  SRAMM. So that's hardly improving at
+[33:33.76]  all.
+[33:35.44]  Logic gates still continue to improve.
+[33:37.60]  They are the gates are getting better.
+[33:39.44]  So if you're doing like uh adders or
+[33:42.08]  multipliers, those are getting better.
+[33:43.36]  those pieces. It's not uniform
+[33:45.60]  improvement anymore. And we're also
+[33:47.76]  going to more exotic packaging to be
+[33:50.72]  able to deliver it. Uh so people not uh
+[33:54.00]  it, you know, forever it was a single
+[33:56.72]  chip was the best way to package
+[34:00.32]  everything fits on one chip and that's
+[34:02.16]  what we're going to build. And now
+[34:03.84]  there's these ideas of chiplets or
+[34:06.08]  packaging multiple chips together. the
+[34:08.08]  latest GPUs and I think the latest TPUs
+[34:11.20]  has actually two what are called full
+[34:13.44]  reticle design dyes package put into a
+[34:17.36]  package and uh so a full reticle design
+[34:20.72]  is uh the maximum you can build on a on
+[34:23.92]  a semiconductor it they have a step and
+[34:26.24]  repeat motor and there's you know in the
+[34:28.24]  old days you'd have many chips inside
+[34:29.92]  that now there's just one so two maximum
+[34:33.12]  reticle designs form a node so they're
+[34:35.84]  using packaging so if you from outside
+[34:38.72]  you can say well there look there's look
+[34:40.40]  how many transistors are it's quote
+[34:42.48]  Moore's law is continuing but if you see
+[34:44.96]  what's inside the chip you know that's
+[34:47.04]  that has tapered off and I think part of
+[34:48.96]  it is for a fair amount of the industry
+[34:52.24]  if you were in a semiconductor
+[34:54.00]  manufacturer and people ask you what you
+[34:55.76]  do is I make Moors law I I make I
+[34:59.28]  sustain Morris law what I do and if
+[35:01.12]  you've been doing that for decades and
+[35:02.48]  somebody says Morris law is over it's
+[35:04.08]  like it my my career is
+[35:06.96]  So I think there's an emotional side of
+[35:08.64]  it but you know just look at the data
+[35:11.20]  the data doesn't back up what Keller
+[35:12.96]  says but I also didn't say that the
+[35:16.32]  technology is not improving the
+[35:18.64]  technology is continuing to improve and
+[35:21.04]  specifically domain specific
+[35:22.64]  architectures but if you look at the
+[35:24.24]  general purpose architectures or even
+[35:26.48]  other memory technologies you know it
+[35:29.20]  used to be the DRAMs would improve by a
+[35:31.52]  factor of four in density every 3 years
+[35:33.44]  like clockwork and now it's maybe 10
+[35:36.40]  years between factors for so you can see
+[35:38.16]  plenty of evidence that Moore's law no
+[35:40.40]  longer applies.
+[35:41.92]  >> Is there um some new version or some
+[35:46.80]  analog to Mo's law that is kind of
+[35:48.72]  guiding uh you know microprocessor
+[35:52.24]  design and architecture these days? I I
+[35:54.88]  guess a question is uh both Nvidia and
+[35:59.60]  Google are continuing to deliver much
+[36:02.08]  faster processors for machine learning,
+[36:04.72]  tremendously better. What are they
+[36:06.48]  doing? Well, part of it is what I said
+[36:10.24]  about uh packaging, you know, to getting
+[36:12.88]  uh to to be able to get more transistors
+[36:15.28]  and you keep them closer together
+[36:16.88]  because distance matters. Uh part of it
+[36:19.20]  is innovating on the floatingpoint
+[36:20.64]  formats. So it you know unlike the
+[36:23.52]  supercomputers of 64-bit
+[36:26.08]  it's not even 64-bit not even 32-bit not
+[36:28.80]  even 16 bit but 8bit and 4bit floating
+[36:31.68]  point is as is going on so narrowing of
+[36:34.16]  the data types um the uh you know having
+[36:40.08]  kind of what's called the matrix
+[36:42.08]  multiply instructions so these powerful
+[36:44.88]  units that are put in there that can
+[36:46.72]  that can uh do special purpose
+[36:49.20]  applications that are very important get
+[36:51.28]  making those bigger and faster. So those
+[36:53.52]  are the things that are going on. But we
+[36:56.24]  don't have this simplifying guideline
+[36:59.68]  kind of underlying all this. You have to
+[37:02.00]  be aware of each piece of the
+[37:04.08]  technology, gauge how fast it's
+[37:06.64]  improving, how whether it's they can
+[37:09.52]  deliver on what's going on and then you
+[37:12.24]  assemble that together and make your
+[37:14.48]  bets. We're, you know, there's a paper
+[37:16.64]  that we've just got approved that I
+[37:18.96]  think we're going to put on archive
+[37:20.16]  soon, which is, uh, talking about the
+[37:23.12]  Google TPU line and pretty remarkably,
+[37:26.24]  uh, the Google TPU line particularly for
+[37:28.32]  training has stayed pretty constant in
+[37:31.36]  the basic architecture design, uh,
+[37:34.32]  things have gotten bigger and faster,
+[37:36.80]  but the if you look at the the the
+[37:39.28]  design of it, going back to the first
+[37:41.36]  training TPU, it's that block diagram
+[37:44.00]  still works.
+[37:45.12]  uh all these you know a decade later. So
+[37:47.84]  it you know the people who designed that
+[37:50.08]  in whatever 2015 or two did a really
+[37:52.80]  great job. Uh but the main components of
+[37:55.76]  a a big matrix multiply unit the
+[37:57.84]  so-called high bandwidth memory um uh a
+[38:01.84]  vector unit to go with the matrix unit
+[38:03.92]  and the basic building blocks are still
+[38:06.08]  there. I think in your career with the
+[38:08.64]  CPUs, benchmarks were a huge they played
+[38:11.12]  a huge role in in measuring which
+[38:14.80]  computer architectures were performant
+[38:16.40]  and not in this this new space of uh
+[38:20.00]  floatingoint operations for AI. Is there
+[38:22.56]  a benchmark that people use for GPUs and
+[38:25.20]  can you also apply it for TPUs?
+[38:27.84]  >> I was you know I and some friends were
+[38:30.64]  helped involved in called the ML Perf
+[38:32.72]  effort. So it was inspired by the spec
+[38:36.40]  CPU effort was the spec benchmarks that
+[38:40.00]  there were these competing companies and
+[38:41.68]  they'd all make claims about theirs was
+[38:44.00]  better than the others and they realized
+[38:45.12]  that wasn't good for the industry. So
+[38:47.20]  they agreed on a set of benchmarks. So
+[38:49.20]  the ML Perf effort is uh that's run now
+[38:52.48]  but what's called ML comments is an
+[38:53.92]  attempt to do that is if we're going to
+[38:56.08]  do this comparisons
+[38:58.24]  let's um let's let's not argue about
+[39:01.52]  what the benchmarks are. So that's a
+[39:03.84]  serious effort in that kind of
+[39:05.68]  interestingly what's happened I'd say is
+[39:08.80]  because
+[39:10.72]  uh there's two pieces to u the design
+[39:14.00]  there's the the machine learning
+[39:15.76]  libraries that are uh to implement a lot
+[39:19.20]  of features that you need for for these
+[39:21.84]  applications and the libraries will even
+[39:24.40]  be rewritten for specific applications
+[39:27.20]  rather than just having general
+[39:28.80]  libraries. This has turned out to be a
+[39:31.12]  big advantage for Nvidia because they
+[39:32.80]  have a large corporation with lots of
+[39:35.04]  people that are available, lots of
+[39:37.12]  engineers who could build these
+[39:38.48]  libraries for them. So, it's turned out
+[39:41.60]  um um not quite a it's not a it's not a
+[39:45.36]  neutral evaluation, right? It's it's the
+[39:49.12]  architecture plus the the libraries that
+[39:53.36]  go with it and the compiler too, but
+[39:56.24]  specifically the libraries that you
+[39:58.00]  tailor each time. So Nvidia brings out
+[40:00.80]  when they announce the new architecture
+[40:02.88]  they create a new set of they modify the
+[40:05.44]  libraries to run that really well or to
+[40:08.24]  run applications really well. So that's
+[40:10.80]  a powerful combination kind of in
+[40:13.20]  business terms people referred to
+[40:15.36]  Nvidia's having this CUDA moat but and
+[40:19.36]  part of it is CUDA the programming
+[40:21.20]  language but a big part of it is the
+[40:22.64]  libraries that Nvidia Nvidia makes. So
+[40:25.84]  this has made it difficult for for
+[40:27.76]  startups to be able to compete with
+[40:29.36]  Nvidia partly because
+[40:32.80]  you know they didn't put enough emphasis
+[40:35.04]  in the software and partly because you
+[40:37.52]  know Nvidia just has many more engineers
+[40:40.40]  than they do to be able to tailor the
+[40:42.00]  libraries. So it's the libraries plus
+[40:44.80]  the architecture that's this this
+[40:47.04]  powerful advantage why most people do
+[40:50.00]  things on GPUs. Now Google has been able
+[40:52.96]  to develop their own libraries. Uh they
+[40:55.52]  don't have as many engineers. They use
+[40:57.68]  compilers more uh than I think Nvidia
+[41:00.96]  does. So they they have a set of
+[41:02.80]  libraries that they can do. But up until
+[41:05.28]  recently, Google has
+[41:07.84]  it's all been internal. It's just for
+[41:09.44]  Google to use or you could use it via
+[41:11.44]  the cloud. Um but uh you these startups
+[41:15.36]  have u you know have to have a
+[41:18.00]  difficulty as a result. That's why the
+[41:20.72]  ML Perf hasn't been as popular. Not
+[41:22.96]  everybody runs them because uh Nvidia
+[41:25.68]  runs them really well, really better
+[41:28.24]  than everybody else. And the startups
+[41:30.00]  have a hard time showing off what they
+[41:31.76]  can do uh given they don't have the the
+[41:36.00]  engineering effort going into the
+[41:37.20]  libraries that you need to do well in ML
+[41:39.36]  Perf. you gave this popular talk about
+[41:42.40]  how to have a bad career and it's kind
+[41:44.88]  of uh the negation of advice to kind of
+[41:49.04]  have a good career and I was just
+[41:51.84]  wondering if you could kind of summarize
+[41:53.92]  maybe the the top three things that you
+[41:56.64]  kind of think people should take away.
+[41:58.16]  >> Yeah. So, yeah. Well, there's been a few
+[42:00.24]  things. So, the story is early in my
+[42:02.72]  career my f a good friend and I said,
+[42:04.40]  "How can we teach grad students how to
+[42:05.84]  give a good talk?" And we thought it'd
+[42:07.60]  be funny to explain how to give a bad
+[42:09.76]  talk and then if you didn't want to give
+[42:11.76]  a bad talk, this is so this is how to do
+[42:14.16]  it badly and if you don't here's the
+[42:15.76]  things to do not to do it badly. And so
+[42:17.92]  then I later did a how to have a bad
+[42:19.52]  career that's pretty much focused
+[42:21.04]  towards uh academia you know so for
+[42:23.68]  researchers to be able to do that. I
+[42:25.92]  later did a how to have a bad uh
+[42:30.40]  how to build a bad research center, how
+[42:32.08]  to build a bad research lab. And then
+[42:33.76]  recently I've been giving how to give AI
+[42:36.00]  a bad carbon footprint. That's my latest
+[42:37.92]  one. But I think the thing that might be
+[42:40.08]  more relevant is uh at the end of my
+[42:42.40]  talks I would I would kind of reflect on
+[42:44.24]  my career and talk about lessons
+[42:45.92]  learned. So I've written a paper called
+[42:48.64]  uh lesson I think it's lessons life
+[42:51.84]  lessons from the first half century of
+[42:53.84]  my career. I wrote that recently. And so
+[42:56.24]  those those are divided up into kind of
+[42:58.72]  career advice and personal advice there.
+[43:02.00]  On the the personal side, I'd say uh if
+[43:05.20]  you have a family, you know, make sure
+[43:06.80]  your families first, keep your family
+[43:08.96]  first. Um the technology we've invented
+[43:11.60]  makes it really easy for your, you know,
+[43:14.24]  to take your work home with you and not
+[43:16.48]  pay attention to your family. Uh, I had
+[43:18.40]  a when I was first here at Berkeley, I
+[43:20.96]  gave a senior faculty member a ride
+[43:23.28]  home, dropped him off late at night
+[43:24.96]  coming up from Silicon Valley and he
+[43:26.56]  said, "Well, Dave, if I had to do it
+[43:28.08]  over all over again, I wish I'd spent
+[43:31.20]  more time with the family." And I never
+[43:33.68]  wanted to say that. And nobody on their
+[43:35.68]  deathbed says, you know, I wish I'd
+[43:37.20]  spent more time in the office. So, so
+[43:39.76]  you got to, you know, whenever it's easy
+[43:41.36]  to kind of, you know, let the let your
+[43:44.80]  career overcome the needs of your
+[43:48.08]  family, but you just you got to just
+[43:49.84]  remember that. Uh, I would say in my
+[43:53.44]  life and kind of growing up in the 50s,
+[43:56.56]  you know, the idea was to be happy, you
+[43:58.56]  had to be wealthy. But those are
+[44:00.24]  actually two different goals, wealthy
+[44:01.52]  and happiness. So, I always made
+[44:03.20]  decisions towards happiness versus
+[44:05.12]  wealth. You come down with it. And I
+[44:07.20]  felt very good about that. Uh I and even
+[44:10.56]  now like why would I pick why would I
+[44:13.52]  pick something that made me wealthy and
+[44:15.12]  unhappy? Why would you do that? And so
+[44:18.80]  uh and in the field that we're in it
+[44:21.52]  turned out there was a lot of wealth to
+[44:23.60]  go with it. So you know optimizing
+[44:26.08]  happiness didn't mean you had to suffer
+[44:29.36]  uh beyond that. Um I think it's
+[44:32.00]  important to have fun. Personally, I
+[44:34.16]  think when you're a kid, you don't have
+[44:35.52]  to tell kids to play, but as an adult,
+[44:37.12]  you get so busy. You you don't think you
+[44:40.32]  have time to have fun. Uh, but you know,
+[44:42.48]  you only get to do this once. So, uh, so
+[44:45.28]  I right now I play soccer, I run my
+[44:47.20]  bicycle to the interview, uh, I lift
+[44:49.28]  weights, I body surf, I, you know, do
+[44:51.84]  things with my wife and family and my
+[44:53.68]  son. So, it it's important to have fun.
+[44:56.96]  I think uh on the career side is one of
+[45:01.28]  the uh pieces of advice is uh by a he
+[45:06.00]  wrote this book the habits of very
+[45:09.92]  effective people I think and he has a
+[45:12.08]  little quadrant and he divides it of
+[45:15.68]  urgent and not urgent and important and
+[45:17.84]  unimportant and kind of there's so many
+[45:20.96]  things in our technology like email and
+[45:22.88]  texting to for you to focus on the
+[45:25.36]  urgent things but you really shouldn't
+[45:26.56]  shouldn't be spending a lot of time on
+[45:28.56]  the unimportant urgent things. And it
+[45:30.72]  takes self-discipline to set aside time
+[45:33.76]  for the uh important non-urgent things.
+[45:37.76]  But if you don't block that out, you can
+[45:39.52]  just not have time to do anything. I get
+[45:41.68]  to see other people's calendars at
+[45:43.76]  Google and there's managers that every
+[45:45.52]  half hour from 8 to 6, five days a week
+[45:48.24]  are scheduled and I don't see how you
+[45:50.64]  have time to think and reflect on things
+[45:53.52]  like that.
+[45:54.96]  Um, other career advice things is, uh, I
+[45:59.44]  remember, uh, I kind of woke up one
+[46:02.00]  morning and it was like God spoke to me.
+[46:04.00]  I was like thunder struck. And it says
+[46:05.84]  it's not how many things you start, it's
+[46:07.52]  how many things you finish.
+[46:09.68]  It seems relatively obvious, but you
+[46:11.76]  know, I that's not the way I was acting.
+[46:13.76]  I had they had many things going on. But
+[46:16.24]  after that, it was like there's one main
+[46:18.08]  thing I'm doing at time. So when
+[46:19.44]  Hennessy and I wrote our textbook, that
+[46:21.92]  was the main thing. when I was
+[46:23.36]  department here, head here, that was the
+[46:25.68]  main thing I did. Uh I would do some
+[46:28.16]  other little things there. And John
+[46:30.32]  Hennessy, he he wrote a book too, a kind
+[46:32.64]  of a a career advice book based on his
+[46:35.76]  presidency. And one of the things he
+[46:37.76]  said in there, you know, you're only
+[46:39.04]  going to be remembered for the five or
+[46:41.04]  six things you've done in your life, not
+[46:42.56]  for the hundreds of little things. So to
+[46:44.96]  give yourself a chance to uh have some
+[46:47.84]  things you're really proud of, it's
+[46:49.92]  better to concentrate on a few of them
+[46:51.92]  hoping that some of them will turn out
+[46:53.44]  to be a big deal rather than scatter
+[46:55.92]  yourself to to um many things. But if
+[46:59.44]  you're interested, you can yeah, if you
+[47:01.04]  look for life lessons, David Patterson
+[47:04.40]  first half century, you can see the
+[47:06.00]  whole list of I think there's 16 lessons
+[47:10.16]  altogether.
+[47:11.84]  you mentioned that uh you you didn't
+[47:13.92]  want to reflect back on your life and
+[47:15.52]  feel like you didn't have enough family
+[47:17.84]  time and yeah, I've I don't think I've
+[47:20.80]  ever heard anyone say the opposite. Why
+[47:23.68]  do you think that is? Why is it that
+[47:26.24]  everyone looks back on their life and
+[47:28.08]  they never regret, you know, a lot of
+[47:31.36]  family time? I I imagine there's got to
+[47:34.00]  be at least one person that says, "I
+[47:35.76]  spent too much time with my family.
+[47:37.80]  [laughter]
+[47:38.24]  >> My career suffered."
+[47:39.20]  >> Yeah, my career suffered.
+[47:41.28]  Well, you know what's you know what's
+[47:43.04]  it's it's pretty philosophical. I mean
+[47:44.88]  what's what's what's life all about?
+[47:47.12]  What's success? Right? You have to you
+[47:49.52]  have to figure out what that means for
+[47:50.88]  you. I mean if if you have uh I don't
+[47:53.52]  know if you have financial goals of
+[47:56.00]  being a you know a millionaire or
+[47:58.80]  billionaire or something like that and
+[48:00.24]  that's how you judge your life.
+[48:03.28]  Okay. Good luck. You know it's pretty
+[48:06.00]  hard to make it. Uh it's pretty hard to
+[48:08.40]  do. Um but I think it's the you know I
+[48:12.00]  when I was finishing my PhD I read this
+[48:13.92]  book by studs Turkl called working where
+[48:16.56]  he interviewed all these people in his
+[48:17.92]  careers and they look back and what they
+[48:19.68]  liked and what they didn't like what
+[48:21.04]  what they felt about their careers and
+[48:22.24]  what I got out of it the people who
+[48:23.84]  worked with people like ministers or
+[48:25.76]  teachers or doctors uh felt really good
+[48:28.88]  about what they did with their careers
+[48:30.08]  and the people who did more ephemeral
+[48:31.76]  stuff um you know like uh you know
+[48:35.44]  technology things or airplanes or
+[48:37.92]  something like that are long gone didn't
+[48:39.52]  feel as good about it. It was the people
+[48:40.96]  that they worked with that they really
+[48:42.88]  cared about. And I went out with a
+[48:45.04]  retired engineering dean here and he uh
+[48:47.36]  into a meeting who I knew and he said,
+[48:49.36]  you know, Dave, as I flinked my ear, it
+[48:51.68]  was it wasn't the projects, it was the
+[48:53.36]  people that I worked at the matter and I
+[48:54.80]  thought I knew that from a long time
+[48:57.36]  ago. So that's I mean this is kind of
+[48:59.52]  senior persons offering advice. my I
+[49:02.32]  think you're going to care more about
+[49:04.32]  the people you've worked with uh and the
+[49:06.48]  people you've helped will be a bigger
+[49:08.40]  deal. That's part of and you know one of
+[49:10.08]  the other things about personal
+[49:11.20]  happiness is they studied happiness.
+[49:13.12]  Psychologists used to just study crazy
+[49:15.12]  people but they started like why are
+[49:16.48]  people happy and they know what the
+[49:18.96]  reasons are you know uh have a job that
+[49:21.68]  you like you know have friends and
+[49:23.84]  family helping other people helping
+[49:26.08]  other people makes you happy that they
+[49:27.92]  they know this having something kind of
+[49:31.12]  either a religious side of it doesn't
+[49:33.52]  have to be a formal religion but like
+[49:35.92]  contact with nature the grandeur of
+[49:37.52]  nature but the the kind of the list of
+[49:39.68]  things you need to do to be happy is
+[49:41.04]  well understood And uh and you know
+[49:44.40]  there these h and there's our world is
+[49:47.04]  filled with unhappy billionaires, right?
+[49:49.36]  If money was the thing that made you
+[49:51.12]  happy, why are these people very wealthy
+[49:53.68]  people so mad about things. So yeah,
+[49:57.76]  this is me passing on advice. In one of
+[50:00.56]  your talks, you had uh it said what
+[50:02.88]  worked well for me and it was kind of
+[50:05.04]  some reflections and one of the things
+[50:07.04]  in there I thought was unique and
+[50:08.96]  interesting. You mentioned that courage
+[50:12.08]  was a big part of your career and I I
+[50:15.04]  don't hear that too often. I was curious
+[50:16.56]  why you
+[50:17.60]  >> uh say courage is so important in a
+[50:19.44]  career. Yeah, I I I think that's I mean
+[50:22.40]  that might be partially my personal
+[50:24.96]  makeup, but you know I was uh I was I
+[50:29.12]  was kind of the youngest kid in my class
+[50:30.80]  and kind of small. It took me a while to
+[50:33.36]  grow despite age. So I was always small
+[50:36.88]  but I my parents encouraged me to go out
+[50:38.96]  for wrestling and uh wrestling gives you
+[50:41.92]  self-con physical self-confidence
+[50:43.68]  because you you know spend years doing
+[50:45.76]  that. that I did in high school and
+[50:47.12]  college. And so I think uh partly you
+[50:51.20]  know technically
+[50:52.88]  uh you know having courage to do things
+[50:54.72]  it kind of goes along with the advice is
+[50:57.28]  fortune favors the bold. Uh that's this
+[50:59.92]  that goes that's advice is 2,000 years
+[51:02.64]  old. I mean it's hard to figure this
+[51:04.88]  out. U Helen Keller wrote you know e
+[51:08.08]  even even trying to play it safe you
+[51:11.12]  still get caught. And so it turns out
+[51:13.52]  you might as well you might fail no
+[51:16.08]  matter what. And if you take a big
+[51:18.88]  chance if that's you can succeed if you
+[51:21.92]  don't take the chance you probably won't
+[51:23.36]  succeed if you play it safe. So fortune
+[51:25.52]  favors the gold. And I think it takes
+[51:26.96]  courage to do that. I think also it just
+[51:30.16]  for me intellectually I feel like if
+[51:33.52]  there's something not right I need to
+[51:35.60]  stand up and confront it. And I think
+[51:37.68]  that kind of ironically comes from the
+[51:39.92]  wrestling side of my personality where
+[51:42.16]  if I see something somebody getting
+[51:45.28]  picked on or something like that, I'm
+[51:46.88]  I'm going to stand and try and stop it.
+[51:48.80]  And I feel that that same responsibility
+[51:51.28]  intellectually if people are making bad
+[51:54.16]  arguments or doing doing something that
+[51:56.48]  we need to stand up and do it. And I
+[51:58.24]  feel good about that. The cautionary
+[52:00.08]  part about that is uh as because I guess
+[52:03.68]  one of my senior faculty members saw
+[52:05.92]  this nature of me. He said one of the
+[52:08.16]  sayings is friends come and go but
+[52:10.40]  enemies accumulate. This is an old
+[52:13.04]  saying. So if you think about it you
+[52:14.48]  kind of people you went to high school
+[52:15.60]  with a while friends you kind of forget
+[52:17.44]  but somebody who you really does dislike
+[52:19.60]  you never forget that you dislike that
+[52:21.92]  person. So standing up when it's
+[52:24.72]  important, but be careful when you make
+[52:26.24]  enemies because you know they're going
+[52:27.52]  to stick around for a long time.
+[52:29.44]  >> When you say something's gone bad
+[52:32.00]  technically, do you mean uh someone was
+[52:34.88]  incorrect?
+[52:35.68]  >> Yeah. When you know when they're weak,
+[52:37.36]  you know, either politically or, you
+[52:40.56]  know, or or technically when it's you
+[52:43.20]  it's a weak argument, right? that that I
+[52:45.68]  I think give us I think I really like
+[52:48.56]  there to be a marketplace of ideas and
+[52:50.56]  we hone the ideas by arguing them and so
+[52:54.00]  if it's a if it's a specious argument
+[52:56.40]  even if a person is you know a leader of
+[52:59.36]  a company and it just doesn't make sense
+[53:01.12]  I feel it's kind of the responsibil it's
+[53:04.08]  better for the company if somebody
+[53:05.68]  stands up and points that out than to
+[53:08.16]  just let them get away with it and then
+[53:10.72]  um and then and you know it's a little
+[53:13.92]  bit confrontational
+[53:15.12]  But, you know, as long as people all
+[53:17.28]  agree that, you know, this is for the
+[53:18.88]  greater good, we're going to we we need
+[53:20.64]  to get the right ideas out there. And
+[53:22.56]  so, let's argue about the ideas to to
+[53:25.04]  see uh you know, polish them to make
+[53:28.16]  them stronger. Uh I think that's
+[53:30.64]  important in science, in engineering, um
+[53:33.44]  and kind of uh in life too. There's a
+[53:36.64]  lot of stuff going on right now in the
+[53:40.00]  country that uh is worrisome and uh I've
+[53:44.00]  certainly stood up and wrote opeds about
+[53:47.20]  things that I think are wrong and need
+[53:48.96]  to be corrected and uh you know if
+[53:51.36]  people are afraid to do that
+[53:54.00]  it's hard to be um optimistic about the
+[53:56.72]  future if people are afraid to stand up
+[53:58.24]  when when there's wrongs and uh try and
+[54:01.36]  stop them. You also mentioned optimism
+[54:04.08]  in the talk and you had this story I
+[54:06.16]  wonder if you're willing to
+[54:07.52]  >> sure. [laughter] So I would say in
+[54:09.84]  engineering uh you know it's it's hard
+[54:12.80]  to know right uh but I think you need to
+[54:14.88]  be kind of optimistic or positive have a
+[54:17.52]  positive outlook because so many things
+[54:19.28]  could go wrong and then so my story
+[54:21.84]  personal story that illustrates it's
+[54:23.36]  going back to high school when I'm 16
+[54:25.76]  I'm dating this very attractive girl and
+[54:28.08]  I screw up my courage and ask her if we
+[54:31.60]  would be exclusive at the time we the
+[54:33.60]  phrase we used was going steady and she
+[54:36.08]  looked at me and said And you know, she
+[54:38.56]  was 16. She had dated other guys and
+[54:41.20]  thought we were pretty young. And she
+[54:42.64]  said, "Well, Dave, you're such a nice
+[54:44.48]  guy. I don't know how to say no." For
+[54:46.56]  me, as a logical person, I don't know.
+[54:48.96]  Sounded like a yes. And so I hugged her
+[54:51.52]  and said, "Great." And so she uh she in
+[54:55.20]  her mind, she thought, "Well, I'll let
+[54:56.72]  him down gently later." But we've been
+[54:58.72]  married 59 years now, and she she hasn't
+[55:03.20]  let me down yet. So that was a case
+[55:04.96]  where optimism uh paid off.
+[55:07.20]  >> I think everyone that hears a a healthy
+[55:10.24]  relationship for that long, they might
+[55:11.92]  wonder how you did it.
+[55:13.60]  >> I used to tell people uh you know if you
+[55:16.56]  go to if you go to weddings, the
+[55:18.48]  marriage vows are really great, right?
+[55:20.96]  But nobody can remember their wedding
+[55:22.08]  vows. I used to say remember your
+[55:23.12]  wedding vows, but nobody remembered
+[55:24.08]  that. So we boiled it down to nine magic
+[55:26.48]  words and it's just three sentences and
+[55:28.88]  they start IU, I got to say all three
+[55:31.52]  and it's I was wrong. you were right. I
+[55:34.80]  love you. Okay, those are the those nine
+[55:37.20]  words. And this applies to both both
+[55:40.40]  partners in a relationship, not just one
+[55:42.64]  partner. Uh but yeah, if you can say
+[55:44.96]  them all and no substitutions, I was
+[55:46.64]  wrong, you're right, you're a jerk. You
+[55:48.08]  know, you can't do that. It's if you can
+[55:50.32]  remember those nine words, that can help
+[55:51.68]  you have a a long relationship like uh
+[55:54.96]  my wife and I have. And then last
+[55:57.44]  question for you, like knowing
+[55:59.20]  everything you know now from your
+[56:00.88]  career, if you could go back to yourself
+[56:03.36]  when you had just entered the industry
+[56:05.76]  and give yourself advice, what would you
+[56:08.08]  say?
+[56:09.44]  >> I mean, I think when I got here because
+[56:12.08]  you know the imposttor syndrome, I was a
+[56:14.32]  UCLA
+[56:15.92]  graduate student and suddenly I'm a
+[56:17.36]  Berkeley professor. So that just doesn't
+[56:19.36]  seem like that was very intimidating.
+[56:22.16]  But I after a while I just thought well
+[56:24.16]  I'm probably not gonna get tenure so I
+[56:25.60]  should just have a good time. So I think
+[56:26.96]  I already I already had a right attitude
+[56:31.52]  about it. I think that first year I
+[56:33.68]  think it it was very stressful for my
+[56:36.48]  while I was trying to handle the
+[56:38.32]  imposttor syndrome and be a Berkeley
+[56:39.92]  professor but I think after that I
+[56:41.44]  handled it pretty well. I you know I I
+[56:44.00]  did all the things with the kids and
+[56:45.20]  stuff. So uh there's a version of that
+[56:48.16]  question is like is there anything I
+[56:49.76]  would do over again? There's one thing I
+[56:51.44]  would have I was chair of the u of this
+[56:55.36]  the architecture community the sig arch
+[56:57.68]  as it's called and they have an annual
+[56:59.44]  conference of the year and I was this
+[57:02.24]  was in the 1990s I think I was the chair
+[57:06.88]  and what I wasn't aware is at these
+[57:09.44]  conferences there were men who were
+[57:11.20]  harassing young women at this uh
+[57:14.00]  conference I just didn't think you know
+[57:18.16]  people like you know young people people
+[57:21.04]  like me nobody would do that only an
+[57:23.36]  idiot would do that can't possibly be
+[57:25.20]  happening but it was happening and I
+[57:27.12]  wish I somebody had said something to me
+[57:29.92]  about it uh and because I would have I
+[57:33.04]  would have straightened out any man
+[57:34.72]  doing I would have threatened his life
+[57:37.20]  if he were to do that today the only
+[57:39.44]  comforting thing is Serita a who is a
+[57:42.96]  famous computer architect uh she said
+[57:45.60]  she also was not aware that that was
+[57:47.84]  going on it became clear later you know
+[57:50.32]  I mean uh uh five or 10 years later it
+[57:52.96]  became more clear that this was going on
+[57:54.40]  and there were mechanisms but that's the
+[57:56.48]  one thing I wish you know if I could go
+[57:58.40]  back in time I would have figured that
+[58:01.36]  out and I would have straightened men
+[58:03.68]  out who were doing that and they
+[58:05.68]  wouldn't that would have stopped I
+[58:07.04]  believe that would have stopped them
+[58:08.48]  >> yeah [laughter]
+[58:10.16]  thank you so much for your time today I
+[58:11.76]  really appreciate it
+[58:13.04]  >> all right and thanks for the interview
+[58:15.28]  >> hey thank you for watching this podcast
+[58:16.88]  if you liked it and you want to see the
+[58:18.32]  show grow Please support with a comment
+[58:20.72]  or a like. Also, if you have any
+[58:23.28]  recommendations for people you want me
+[58:24.96]  to bring on, please drop a comment.
+[58:27.60]  Guests like Barbara Liskoff, Mike
+[58:29.76]  Stonereaker, Mark Brooker, these were
+[58:32.24]  all people that I brought on because
+[58:34.16]  someone left a comment. On another note,
+[58:36.48]  aside from the podcast, I'm working on
+[58:38.32]  building the ergonomic keyboard that I
+[58:40.24]  wish existed. Here's a glance at the
+[58:42.40]  prototype. It's a split keyboard, so
+[58:44.64]  there's two sides. um this isn't the
+[58:46.88]  case, but yeah, we launched on
+[58:48.32]  Kickstarter and we hit our goal within 8
+[58:50.56]  hours of launching. I really appreciate
+[58:52.32]  it if you were one of the people who
+[58:53.68]  grabbed one of the early units. Um we're
+[58:56.16]  now working on the long journey of
+[58:57.84]  building the tooling now and so if you
+[58:59.60]  still want to pick one up, I've left the
+[59:01.68]  late pledges open on Kickstarter, so you
+[59:04.32]  can grab one there. I'll put a link in
+[59:05.92]  the description. Thank you again for
+[59:08.24]  watching the podcast and I'll see you in
+[59:10.48]  the next

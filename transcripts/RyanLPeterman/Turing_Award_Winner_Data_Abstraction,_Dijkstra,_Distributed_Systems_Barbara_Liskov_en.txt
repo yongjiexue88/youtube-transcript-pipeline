@@ -1,0 +1,982 @@
+Title     : Turing Award Winner: Data Abstraction, Dijkstra, Distributed Systems | Barbara Liskov
+Video ID  : T9CGjbPZeaM
+URL       : https://www.youtube.com/watch?v=T9CGjbPZeaM
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 973
+Saved at  : 2026-10-08 08:17:49
+------------------------------------------------------------
+
+[00:00.00]  Don't do incremental work.
+[00:02.48]  >> This is Barbara Liskov. She's a Turing
+[00:04.80]  Award winner famous for her fundamental
+[00:06.88]  contributions to programming languages
+[00:08.92]  and distributed systems.
+[00:10.36]  >> Encapsulation is a crucial part of
+[00:12.84]  making modularity work. Your team is
+[00:15.64]  really only as strong as your weakest
+[00:17.68]  programmer.
+[00:18.84]  >> I asked her for stories from her career.
+[00:21.24]  That paper was the go-to statements
+[00:23.48]  considered harmful. Is Dijkstra in
+[00:25.84]  person also like his writing?
+[00:28.32]  >> He was not always as tactful as he might
+[00:30.48]  be.
+[00:31.36]  >> There were people saying, "Why did she
+[00:34.84]  get the Turing Award?" Why do you think
+[00:37.08]  that they said that about your work?
+[00:40.64]  Here's the full episode.
+[00:46.88]  You applied to multiple places and
+[00:50.16]  Princeton was one of them and they had
+[00:52.20]  rejected you on the grounds of you being
+[00:54.20]  a a woman. How did you get into
+[00:56.72]  programming in an environment that's so
+[00:58.72]  hostile?
+[01:00.12]  >> Okay, so this was when I got my
+[01:01.96]  bachelor's degree.
+[01:04.04]  And I applied to several graduate
+[01:07.72]  programs
+[01:09.24]  in math, which is what I majored in as
+[01:11.32]  an undergraduate.
+[01:13.04]  And
+[01:14.48]  I got this little card back. It was a
+[01:16.72]  postcard from Princeton saying, "We do
+[01:19.00]  not admit women."
+[01:20.72]  Which was surprising.
+[01:23.32]  Um I knew they didn't have women in
+[01:24.68]  their undergraduate program, but I
+[01:26.28]  hadn't realized it extended to the
+[01:28.28]  graduate program.
+[01:30.20]  Um
+[01:31.36]  but you know, it was how it was. So so
+[01:34.12]  what happened was I did get into
+[01:36.56]  Berkeley, which is where I did my
+[01:38.08]  undergraduate work. But I decided I
+[01:41.28]  really wasn't ready to do a a PhD in
+[01:43.76]  math and that I should get a job instead
+[01:46.96]  and just sort of see you know, see how
+[01:49.48]  things were.
+[01:50.84]  And uh the best job offer I got was as a
+[01:54.48]  programmer.
+[01:56.04]  So that's how I got computer science by
+[01:58.40]  a happy accident.
+[02:00.64]  >> You were consistently, at least at
+[02:02.28]  Berkeley, you were consistently a top
+[02:04.56]  student. So, it's it it is odd that you
+[02:08.08]  wouldn't even get an opportunity to play
+[02:10.12]  in some cases.
+[02:11.44]  >> But, that's how it was back then. It was
+[02:13.32]  just I hadn't realized it was more than
+[02:15.72]  an undergraduate thing. And Berkeley was
+[02:18.44]  co-ed. So, you know, there
+[02:21.60]  what I found was there weren't very many
+[02:24.00]  women in my classes. There were lots of
+[02:25.96]  women students,
+[02:27.72]  but very few of them majoring in math.
+[02:30.88]  And there were only maybe a couple of
+[02:33.20]  women in my classes.
+[02:35.24]  But,
+[02:36.40]  the uh the idea that a door was shut and
+[02:38.76]  women couldn't do things, that was not
+[02:40.68]  what went on at Berkeley.
+[02:42.60]  So, it was a different environment. Of
+[02:45.28]  course, nowadays in the top schools, the
+[02:49.28]  um women are about 50% in computer
+[02:51.88]  science.
+[02:53.56]  >> I want to talk about some of the the
+[02:55.60]  core problems that you were solving in
+[02:57.12]  your career. And so, I understand that
+[03:00.44]  there's the software crisis in the
+[03:02.20]  1970s. And uh I was wondering if you
+[03:04.92]  could give the context behind what the
+[03:07.60]  problem was at that time.
+[03:09.64]  >> Well, it was a huge problem at the time
+[03:11.60]  because
+[03:13.12]  uh people did not know how to build big
+[03:15.72]  programs that worked.
+[03:17.64]  And so, you would often pick up the
+[03:20.32]  newspaper and see an article about some
+[03:22.56]  company
+[03:23.88]  that had spent
+[03:25.80]  uh
+[03:26.72]  you know,
+[03:27.68]  millions of
+[03:29.08]  dollars and hundreds of man-years
+[03:32.92]  developing some software system for
+[03:35.32]  their company. And then in the end
+[03:37.68]  they'd have to throw it away because
+[03:39.04]  they it simply didn't work.
+[03:41.36]  The problem was
+[03:44.44]  that to get a big program that works,
+[03:46.36]  you need modularity.
+[03:48.36]  And you need to break your program up
+[03:49.96]  into small pieces.
+[03:52.40]  Each piece provides an interface with a
+[03:57.88]  hopefully complete description of what
+[04:00.32]  service it provides for you.
+[04:02.56]  And then inside is an implementation
+[04:05.32]  that's hidden and nobody pays any
+[04:06.76]  attention to it on the outside.
+[04:09.16]  And if you have a system organized like
+[04:12.04]  that, you can actually reason about its
+[04:13.80]  correctness one module at a time.
+[04:17.40]  But in those days, people didn't know
+[04:19.20]  how
+[04:20.44]  um
+[04:21.56]  they couldn't figure out how to design
+[04:23.00]  systems that were modular.
+[04:25.16]  And the only kind of modularity
+[04:27.76]  mechanism present in programming
+[04:29.40]  languages was a procedure.
+[04:31.92]  And procedures didn't match the kinds of
+[04:35.08]  modules you needed. Because if you think
+[04:37.68]  about a file system or a database or you
+[04:41.52]  know, Amazon or whatever, you know, they
+[04:44.72]  they aren't a procedure where you put
+[04:46.36]  something in and get something out.
+[04:48.08]  They're a much more complicated thing.
+[04:51.04]  So, there was no notion of a module that
+[04:53.92]  sort of matched the kind of things that
+[04:55.72]  people were looking for.
+[04:58.16]  >> So, when you saw that problem, you know,
+[05:00.28]  what were the early solutions like?
+[05:02.60]  >> Well, so people were proposing
+[05:04.12]  modularity and they were talking about
+[05:06.44]  how important modularity was.
+[05:09.36]  They didn't exactly know what a module
+[05:11.12]  was.
+[05:12.40]  And so, it wasn't like they could give
+[05:14.16]  you a rule, this is a module. It was
+[05:15.80]  just a chunk of code. In fact, there
+[05:18.36]  were papers written that talked about
+[05:20.00]  how big a module should be or and stuff
+[05:21.88]  like that, just a chunk of code. That's
+[05:24.32]  not going to work because you need
+[05:26.80]  to design these systems. So, you need a
+[05:28.52]  way of thinking of a design that sort of
+[05:30.84]  fits into this notion of modularity.
+[05:34.24]  They also didn't really know what the
+[05:35.88]  rules should be for modularity.
+[05:38.56]  And um
+[05:40.40]  it turned out that in some of the early
+[05:42.20]  work I did after grad school when I was
+[05:44.36]  working at Mitre,
+[05:45.92]  um I had already invented a notion of
+[05:48.16]  modularity that was sort of more
+[05:49.92]  complete than what people had been
+[05:51.40]  talking about just because I had a small
+[05:54.80]  team of programmers. We were building a
+[05:56.40]  complicated system
+[05:58.32]  and I wanted to keep us out of trouble.
+[06:02.04]  And so I had that sort of sitting there
+[06:04.36]  when I started to work on this topic.
+[06:08.04]  Um,
+[06:08.92]  and it enabled me to see this idea of
+[06:11.84]  data abstraction
+[06:13.72]  all of a sudden. I sort of saw that this
+[06:16.20]  thing I had, this kind of modularity
+[06:18.28]  mechanism, which consisted of basically
+[06:21.64]  what I just described,
+[06:23.64]  a a a bunch of code providing you with
+[06:26.56]  an access through a number of what I
+[06:29.00]  called operations. So you could call it
+[06:30.88]  in various ways and then inside was all
+[06:32.88]  hidden and whatever data it was using
+[06:35.08]  was not accessible to the outside.
+[06:37.80]  And then at some point I saw I could see
+[06:39.84]  this as a data abstraction. It could be
+[06:41.72]  a set, it could be a sequence, it could
+[06:43.84]  be, you know, and so forth. And um,
+[06:46.80]  and that meant we had a new type of
+[06:48.68]  module.
+[06:50.24]  Now when I look back at the papers from
+[06:52.04]  the time, I see that idea is almost
+[06:54.32]  there except people hadn't managed to
+[06:57.16]  pick it out.
+[06:58.80]  And so it was probably I think this
+[07:00.80]  happens in science a lot. There's sort
+[07:02.72]  of a time when an idea is ready and I
+[07:05.28]  happened to see it.
+[07:07.48]  >> You pieced these together and you put it
+[07:10.84]  into the Clue programming language that
+[07:13.24]  you're working on.
+[07:14.64]  How did you see it influencing the
+[07:16.72]  industry?
+[07:17.64]  >> The first thing that happened was I
+[07:19.56]  wrote a paper with um,
+[07:22.20]  a a a
+[07:23.48]  a man who was a graduate student at MIT,
+[07:25.40]  Steve Zilles, about this idea of data
+[07:27.80]  abstraction and it sketched a notion of
+[07:29.88]  what abstract data types would be and
+[07:31.64]  how a programming language could support
+[07:33.40]  them. And this was a very um,
+[07:36.44]  is a very impactful paper.
+[07:38.88]  And so there was a a big impact on the
+[07:42.32]  research community.
+[07:44.24]  And then
+[07:46.24]  Clu came along and that involved a lot
+[07:48.64]  of additional research in the in the
+[07:50.60]  programming language area.
+[07:52.64]  The next thing that happened, so people
+[07:55.12]  were watching this in the research
+[07:56.80]  community, but of course people who are
+[07:58.72]  in companies that want to write
+[08:00.16]  programs,
+[08:01.52]  they need a programming language.
+[08:04.20]  And
+[08:05.52]  I decided I wasn't going to try and turn
+[08:08.64]  Clu into a
+[08:10.52]  product because that would have required
+[08:13.00]  working in a company. In those days you
+[08:15.04]  didn't just put software out on the
+[08:16.52]  internet and people used it. There
+[08:19.04]  wasn't an internet yet for one thing.
+[08:21.80]  And and I was much more interested in
+[08:23.96]  doing research than in
+[08:26.68]  you know, working in a company. So I put
+[08:28.96]  Clu on the side. It had a user base.
+[08:32.04]  But I it but for companies to use a
+[08:34.48]  programming language in those days, they
+[08:36.00]  wanted a company behind that language.
+[08:39.08]  The next thing that happened was the
+[08:40.52]  government uh put out a call for uh a
+[08:44.24]  programming language they could use.
+[08:45.84]  This led to the Ada programming
+[08:47.44]  language.
+[08:48.76]  That um
+[08:50.04]  so you know, that was already a big
+[08:51.96]  impact if you think about it. That there
+[08:54.16]  there was a language explicitly being uh
+[08:56.64]  designed to have data abstraction in it.
+[08:59.04]  And then
+[09:00.24]  finally in the '90s Java came along.
+[09:03.48]  >> I thought it'd be interesting cuz you
+[09:04.96]  you worked on Clu. You designed that
+[09:07.32]  programming language to ask you about
+[09:09.00]  other programming languages. You said
+[09:11.28]  somewhere that there's something wrong
+[09:13.16]  with Python and I was curious to hear
+[09:14.60]  your thoughts of why.
+[09:16.36]  >> Python
+[09:18.00]  has modules, but it doesn't have
+[09:20.68]  encapsulation. So it allows code on the
+[09:24.04]  outside to muck around with what's going
+[09:26.08]  on on the inside of a module. And that's
+[09:28.40]  all I was talking about. Encapsulation
+[09:30.64]  is a is a crucial part of making
+[09:33.72]  modularity work.
+[09:36.04]  And when you're building big programs,
+[09:38.32]  so you have many programmers working on
+[09:40.16]  them,
+[09:41.08]  your team is really only as strong as
+[09:43.32]  your weakest programmer.
+[09:45.44]  So, it's nice if the compiler can
+[09:48.48]  enforce things and make certain kinds of
+[09:51.08]  bad behavior not possible. I mean,
+[09:53.64]  Python is you know, has another intended
+[09:56.40]  use. It's helping naive programmers
+[09:59.16]  learn quickly how to write programs and
+[10:00.96]  stuff like that.
+[10:02.60]  And people in the programming language
+[10:04.32]  world do think about issues like this.
+[10:07.04]  Like, you know, how to make
+[10:10.24]  languages safer and so forth. But, since
+[10:12.36]  I stopped working in that area, I'm no
+[10:15.08]  longer an expert in programming
+[10:16.68]  languages.
+[10:17.76]  >> What got you into distributed computing?
+[10:20.32]  >> I read a paper by Bob Kahn, who was with
+[10:24.00]  then Cerf considered to be, you know,
+[10:25.84]  the founders of the internet.
+[10:28.12]  And Bob talked about
+[10:30.80]  um
+[10:31.84]  his dream of distributed computing,
+[10:34.44]  where you would have a program composed
+[10:36.20]  of pieces on different computers
+[10:38.12]  connected by a network.
+[10:40.24]  And nobody knew how to build those
+[10:42.56]  programs. And so, I just thought, great
+[10:44.84]  problem.
+[10:46.49]  >> [laughter]
+[10:47.76]  >> And [snorts] I was looking for a new
+[10:49.00]  problem, so I jumped into distributed
+[10:50.92]  computing.
+[10:52.16]  And the first project was actually a
+[10:53.76]  programming language to write
+[10:55.12]  distributed programs in.
+[10:57.72]  And and then I started looking at other
+[11:00.44]  problems in the distributed systems
+[11:02.12]  area.
+[11:03.12]  >> What was that first programming language
+[11:05.20]  that
+[11:05.32]  >> It was called Argus. It was It was very
+[11:07.72]  strongly influenced by Clu.
+[11:10.04]  It was an object-oriented language.
+[11:12.80]  Had a special kind of object called a
+[11:14.80]  guardian,
+[11:16.20]  which was a module sitting at a single
+[11:18.56]  computer.
+[11:20.08]  And then guardians could compute
+[11:22.20]  communicate through remote procedure
+[11:23.72]  calls.
+[11:25.16]  One of the things you run into in
+[11:26.48]  distributed computing
+[11:28.84]  um is if you have a computation that
+[11:31.40]  starts at one guardian and then makes
+[11:33.92]  use of other guardians at other nodes in
+[11:35.72]  the network, in the end, you want that
+[11:38.60]  computation to either complete entirely
+[11:41.96]  or have no effect at all.
+[11:44.56]  And how do you do that? Well, I borrowed
+[11:47.72]  the notion of transactions coming out of
+[11:49.68]  the database field.
+[11:52.36]  And that was part of how Argus worked.
+[11:54.56]  It ran computations as atomic
+[11:56.36]  transactions.
+[11:57.80]  >> Oh, interesting. Like distributed
+[12:00.20]  transactions across those nodes.
+[12:03.20]  >> And I think it led right into the work I
+[12:05.00]  did on um viewstamp replication, which
+[12:07.64]  was
+[12:08.60]  um that was the beginning of cloud
+[12:10.68]  storage. I was thinking in terms of a
+[12:12.76]  file system, but it doesn't really
+[12:14.32]  matter what it is. You know, how do you
+[12:16.00]  have data out on the internet stored at
+[12:20.04]  multiple sites
+[12:22.08]  with correct behavior
+[12:24.84]  and always accessible as long as enough
+[12:28.80]  nodes are up and running and the network
+[12:30.68]  is working.
+[12:32.12]  >> I see. And what is viewstamp in this
+[12:34.24]  context?
+[12:35.44]  >> Oh, that had to do with some details of
+[12:37.52]  how the system worked. And it was a way
+[12:39.88]  of noticing when some nodes failed and
+[12:43.12]  other nodes had to take over, you could
+[12:45.36]  figure out which ones had the most
+[12:46.88]  recent state in them, so you could pick
+[12:48.72]  up and not lose anything that had not
+[12:51.40]  had that had happened in the past.
+[12:53.60]  >> Uh what what if the clocks are out of
+[12:55.60]  sync? Like
+[12:56.84]  >> Uh it had nothing to do with clocks
+[12:58.80]  because it was just numbers.
+[13:01.28]  In other words, we were in view 25, the
+[13:03.44]  next view was 26. So
+[13:05.44]  >> Oh, okay. Just incrementing some numbers
+[13:07.68]  that are passed around.
+[13:09.52]  >> This reminds me a lot of uh Leslie
+[13:11.56]  Lamport's work.
+[13:12.68]  >> Actually, yes.
+[13:14.40]  >> Did you ever work with him or
+[13:17.28]  >> No. Leslie and I developed what is
+[13:19.60]  essentially the same idea independently.
+[13:22.52]  And he had the system he called Paxos
+[13:25.52]  and I had this thing called view stamp
+[13:27.08]  replication.
+[13:28.56]  >> Oh, interesting. And they're essentially
+[13:31.68]  the same thing.
+[13:32.44]  >> They are. Yeah.
+[13:33.80]  >> Oh, are there pros and cons of the two
+[13:36.08]  approaches?
+[13:37.28]  >> Yeah, I mean that when you do this kind
+[13:39.68]  of system, there's a lots of little
+[13:41.16]  details you can play around with. So,
+[13:42.84]  you could, you know, decide to do it it
+[13:45.52]  gets technical, but you know, there's
+[13:46.96]  tiny differences. But no, they're
+[13:48.76]  basically the same. In fact, what
+[13:50.28]  happened was
+[13:51.88]  uh the first time that
+[13:54.68]  I was aware of that this was actually
+[13:56.52]  used in a real system was when the
+[13:59.08]  Google file system came along.
+[14:01.72]  And
+[14:03.08]  one of my former students who was a I
+[14:05.72]  think he was a consultant at Google
+[14:07.64]  looked at what was going on in there and
+[14:09.04]  he said, "Oh, he says that's view stamp
+[14:10.56]  replication." So, the people at Google
+[14:12.60]  seemed to think it was Paxos, but in
+[14:15.08]  fact, they are the same system.
+[14:17.60]  >> I also noticed like um when you were
+[14:20.60]  uh when you came up with abstract data
+[14:22.32]  types
+[14:24.16]  maybe I mean maybe it's just cuz there
+[14:25.72]  wasn't the internet wasn't as, you know,
+[14:28.68]  wasn't there that there was also the
+[14:30.72]  object-oriented stuff going on on the
+[14:32.96]  West Coast.
+[14:33.96]  >> Yes, Alan Kay was developing Smalltalk
+[14:37.28]  at the same time that I was working on
+[14:39.20]  Clu, and then at Carnegie Mellon uh Bill
+[14:43.00]  Wulf and Mary Shaw were working on
+[14:44.48]  Alphard, which was another data
+[14:46.04]  abstraction language.
+[14:48.80]  And you're right, there was no there was
+[14:50.36]  no internet, although there was the
+[14:51.68]  ARPANET.
+[14:53.20]  You know, so we did but it was like
+[14:55.76]  there were two independent streams of
+[14:57.64]  research going on and we weren't talking
+[14:59.56]  to each other.
+[15:01.00]  And so, I wasn't paying much attention
+[15:03.24]  to Smalltalk and
+[15:05.40]  on the West Coast, I don't think they
+[15:06.76]  were paying much attention to data
+[15:08.16]  abstraction.
+[15:10.00]  And this led to the Liskov substitution
+[15:13.20]  principle
+[15:14.76]  which I mean, the story is a sort of a
+[15:17.16]  cute one because
+[15:19.08]  in 1986, I think it was, I was asked to
+[15:22.80]  give a keynote at OOPSLA.
+[15:25.00]  OOPSLA is the object-oriented
+[15:26.68]  programming conference, and this was the
+[15:29.80]  second year it was happening.
+[15:32.24]  And so, I decided I think I'll read all
+[15:35.04]  those papers about Smalltalk, and there
+[15:37.08]  were other languages being developed
+[15:38.76]  that were based on Smalltalk, and see
+[15:40.36]  what's going on with them. And I
+[15:42.40]  discovered
+[15:44.08]  Um so, Smalltalk has this idea of
+[15:46.36]  inheritance in it, where you can have a
+[15:48.32]  class and a subclass which borrows from
+[15:51.04]  the way the class is implemented and
+[15:52.68]  changes it a bit.
+[15:54.68]  And Clu doesn't have that. Clu just has
+[15:57.20]  what we call clusters, and they're all
+[15:58.84]  independent.
+[16:00.64]  So, I saw that they were talking about
+[16:03.92]  this notion of classes and subclasses.
+[16:07.08]  And
+[16:08.36]  and then I saw that they were also
+[16:09.88]  talking about something they called type
+[16:11.56]  hierarchy.
+[16:13.28]  Where they wanted the type implemented
+[16:15.92]  by a class
+[16:17.80]  to be related in some way that they
+[16:20.16]  didn't understand to the type that was
+[16:22.00]  implemented by a subclass.
+[16:24.24]  I really thought about modules in terms
+[16:26.20]  of their specifications.
+[16:28.92]  This partly had to do with a class I
+[16:31.20]  developed at MIT
+[16:33.16]  that I developed jointly with my
+[16:34.44]  colleague John Guttag.
+[16:36.48]  And in that class, we taught the
+[16:38.16]  students how to do design, about
+[16:39.92]  modularity, data types, and so forth,
+[16:42.00]  but also how to write specifications,
+[16:44.56]  how to reason about correctness.
+[16:46.88]  And so, it had a big focus on think
+[16:50.40]  about the meaning of things first, and
+[16:53.20]  the implementation is something that's
+[16:54.64]  kind of hidden inside, and you don't
+[16:55.84]  worry about it very much. And so,
+[16:59.28]  that was a different way of thinking
+[17:00.60]  about things than what was going on in
+[17:02.36]  the
+[17:03.92]  on the West Coast, where they were
+[17:05.24]  really thinking in terms of
+[17:07.44]  classes and subclasses. And I even saw
+[17:09.72]  papers where they would describe the
+[17:12.28]  behavior of a class by explaining how
+[17:14.32]  its implementation was different from
+[17:16.12]  the implementation of the superclass.
+[17:18.32]  So, they were kind of focused on
+[17:19.84]  implementations in a way that we
+[17:21.40]  weren't. And so,
+[17:24.76]  when I read these papers about type
+[17:27.00]  hierarchy and I saw they just couldn't
+[17:29.28]  figure out what it was supposed to mean,
+[17:32.12]  I was thinking about it from the terms
+[17:33.92]  of meaning. And so, I was able to say it
+[17:36.84]  has to do with the behavior.
+[17:39.16]  And this subclass better behave like the
+[17:41.56]  superclass if you use it in an
+[17:43.68]  environment where the superclass is
+[17:45.56]  expected.
+[17:47.56]  And that became what ended up being
+[17:49.88]  called the Liskov substitution
+[17:51.40]  principle.
+[17:52.60]  And ultimately, Jeannette Wing and I
+[17:54.28]  wrote a paper on behavioral subtyping,
+[17:56.52]  which is the formal definition.
+[17:58.84]  >> And then, how did it get that name? Cuz
+[18:00.64]  you didn't go off on stage and say, "Hey
+[18:02.56]  everyone, here's the Liskov substitution
+[18:03.96]  principle."
+[18:06.32]  >> one day in the
+[18:07.80]  in the '90s, after the internet had
+[18:10.00]  arrived, I got an email saying, "Can you
+[18:12.80]  say if this is the correct
+[18:14.20]  interpretation of the Liskov
+[18:15.52]  substitution principle?" That's when I
+[18:17.76]  discovered
+[18:19.20]  that
+[18:19.76]  >> [laughter]
+[18:20.44]  >> there was such a name.
+[18:22.40]  And And I
+[18:24.64]  I don't think I had really been aware of
+[18:26.32]  how important it was until that point,
+[18:28.48]  because I wasn't thinking about this
+[18:29.92]  stuff. I was working on other stuff.
+[18:32.20]  >> In the academic community, it seems very
+[18:35.04]  reasonable to have multiple people have
+[18:37.76]  similar ideas. But it seems like some
+[18:40.56]  ideas stick
+[18:43.04]  more than others. For instance, like the
+[18:46.04]  Viewstamped Replication versus Paxos.
+[18:48.92]  They're the same thing. I'm wondering,
+[18:51.84]  like, in that case for instance, why
+[18:53.68]  would Paxos be more known than
+[18:56.76]  Viewstamped Replication?
+[18:57.84]  >> Yeah. So, what Leslie says is,
+[19:00.80]  "I went around giving all the talks, and
+[19:03.20]  she implemented it."
+[19:05.61]  >> [laughter]
+[19:07.88]  >> Really?
+[19:09.76]  >> Something up to that.
+[19:11.56]  >> Then he
+[19:13.20]  got notoriety for speaking about it.
+[19:16.36]  >> Yeah, he he he did give lots of talks
+[19:18.44]  about it and wrote several papers and so
+[19:20.60]  forth and I didn't realize it was the
+[19:23.36]  same system. But finally it became clear
+[19:26.24]  that they were the same system.
+[19:28.28]  >> I also wonder how much the name matters
+[19:31.20]  because Paxos is kind of catchy, you
+[19:33.44]  know.
+[19:33.52]  >> It is a cute name.
+[19:34.48]  >> It's a cute name, yeah.
+[19:35.40]  >> Yeah, right.
+[19:36.28]  >> So, I I could see maybe it has better
+[19:38.60]  marketing around the idea, I guess.
+[19:41.48]  >> I also think that
+[19:43.64]  this approach to solving this problem,
+[19:45.96]  which both Leslie and I picked up
+[19:47.44]  independently, in my case came from the
+[19:49.84]  work I'd been doing with transactions.
+[19:52.44]  Because in transactions there's a leader
+[19:55.60]  that
+[19:56.64]  you know, says now we're going to commit
+[19:58.40]  and ask everybody can we commit and if
+[20:00.44]  they all say okay, you know, it's
+[20:02.76]  but unlike in transactions
+[20:06.00]  of in transactions if the leader fails,
+[20:08.28]  there's what's called, you know, the
+[20:10.16]  this can be a real problem. Here we had
+[20:12.40]  to have a way of moving to a new leader
+[20:15.16]  if the old leader failed and that's the
+[20:17.28]  big step forward that happened in both
+[20:19.88]  Viewstamped Replication and and Paxos.
+[20:22.92]  Now, there was also Byzantine fault
+[20:25.52]  tolerance, which came along later that
+[20:28.72]  was developed. So,
+[20:30.28]  Viewstamped Replication I developed with
+[20:32.08]  my student Brian Oki. It was his PhD
+[20:34.84]  thesis.
+[20:36.24]  And then Paxos I developed with my
+[20:38.24]  student Miguel Castro. It was his PhD
+[20:41.20]  student thesis.
+[20:43.20]  And
+[20:44.40]  Miguel got interested in this problem
+[20:46.40]  because
+[20:47.80]  uh there was a DARPA request for
+[20:50.04]  proposals
+[20:51.68]  and there was one about this problem on
+[20:53.96]  the internet. By then there were
+[20:55.44]  Byzantine attacks and you know,
+[20:57.08]  malicious attacks and
+[20:59.40]  nodes that would
+[21:01.00]  purport to be working correctly, but
+[21:02.80]  actually they had been compromised and
+[21:04.76]  so forth and so
+[21:06.88]  Viewstamped application in Paxos only
+[21:09.04]  handled crashes and um
+[21:13.00]  if there were messages that were had
+[21:15.20]  been played with, you could tell when
+[21:16.88]  they arrived that they were bad. And
+[21:18.24]  that was about the extent of what we
+[21:19.76]  dealt with.
+[21:21.12]  But these malicious attacks with nodes
+[21:23.24]  that purported to be working when they
+[21:25.52]  weren't, that was a big step forward.
+[21:28.68]  And Miguel saw this request for
+[21:30.68]  proposals and he said to me, "Why don't
+[21:33.00]  we see whether we can come up with a
+[21:34.52]  protocol that works in the presence of
+[21:36.92]  Byzantine attacks?" And
+[21:39.64]  and I think by the way, Leslie is the
+[21:41.24]  one that invented the word Byzantine to
+[21:43.36]  >> I think he did.
+[21:43.96]  >> Yeah, right.
+[21:44.92]  >> I saw in the in the software crisis
+[21:46.68]  stuff. There's the paper with Dijkstra
+[21:48.68]  that you had mentioned was one of the
+[21:51.88]  papers you you wrote that said, "We need
+[21:54.60]  modularity." And that paper was the
+[21:57.12]  go-to statements considered harmful.
+[21:59.32]  >> Right.
+[22:00.16]  >> And I'm curious cuz Dijkstra, I mean,
+[22:02.88]  when I was studying computer science,
+[22:04.24]  you we all know his name. Did you ever
+[22:07.16]  meet him or work with him?
+[22:08.52]  >> Oh, yeah, many ti- I did never worked
+[22:10.04]  with him, but I did meet him multiple
+[22:12.20]  times. And uh you know, he had very
+[22:15.08]  interesting ideas. And that
+[22:18.24]  paper, uh go-to statement considered
+[22:20.84]  harmful, it's not actually a paper. It
+[22:23.56]  was a letter to the editor of the
+[22:25.12]  Communications of the ACM.
+[22:27.72]  But it was very impactful. And
+[22:31.04]  what was really important about that
+[22:32.88]  paper was that Dijkstra was talking
+[22:35.52]  about
+[22:37.20]  how difficult it is to reason about the
+[22:39.96]  correctness of code.
+[22:42.04]  And this was at a time when
+[22:44.92]  in the sciences,
+[22:47.20]  computer science was kind of dismissed
+[22:49.20]  as nothing much.
+[22:51.00]  And anybody can write code.
+[22:53.76]  And you know, Dijkstra was trying to
+[22:55.68]  make a point, which I think was actually
+[22:58.08]  important, that it it's not as trivial
+[23:00.76]  as you think it is. It's not trivial at
+[23:03.12]  all.
+[23:04.32]  Um and he was also pointing out that
+[23:06.20]  go-tos can be misused.
+[23:08.52]  >> And it was controversial at the time.
+[23:11.28]  >> It was, yeah.
+[23:12.12]  >> But today I I I don't I mean I've
+[23:15.20]  written code for yeah, over a decade.
+[23:17.68]  >> People don't use go-tos.
+[23:18.52]  >> have I have I haven't even seen a go-to
+[23:20.20]  in the code.
+[23:21.56]  So, what why was it controversial at the
+[23:23.72]  time?
+[23:24.76]  >> The programming languages were different
+[23:26.36]  then.
+[23:27.52]  Um first of all, there were people
+[23:29.12]  writing programs in assembler.
+[23:31.88]  In assembler, you have to use go-tos.
+[23:34.40]  Programming languages didn't have
+[23:36.76]  some of the constructs in them that we
+[23:38.36]  think of today.
+[23:40.20]  And uh so some people were using go-tos
+[23:43.40]  cuz they had to.
+[23:45.00]  And also
+[23:47.24]  um compilers didn't do all the kinds of
+[23:49.72]  optimizations that they do today. So,
+[23:51.96]  there was a concern if you didn't have
+[23:53.60]  go-tos, maybe your program wouldn't be
+[23:55.28]  efficient enough.
+[23:57.12]  And then
+[23:58.72]  uh there were people who used go-tos and
+[24:00.64]  wrote really good code, and they weren't
+[24:02.40]  offended that Dijkstra was saying your
+[24:04.92]  code is bad.
+[24:06.64]  So, there was a whole but and and
+[24:08.32]  Dijkstra was not the most um diplomatic
+[24:11.12]  person. So,
+[24:12.81]  >> [laughter]
+[24:13.84]  >> you know, so he he didn't write it in
+[24:15.72]  the you know, nice
+[24:17.32]  not you can imagine writing that paper
+[24:18.96]  more nicely where you said um
+[24:22.16]  So, it that but there were many reasons
+[24:24.72]  why it was controversial. You know,
+[24:26.08]  people were offended, but then there
+[24:27.96]  were also concerns about
+[24:31.16]  like programming languages don't have
+[24:32.60]  these features I need, what am I
+[24:33.96]  supposed to do?
+[24:35.56]  And then there were concerns about what
+[24:37.80]  the compiler was doing. And so, the
+[24:39.76]  world is very different now. But
+[24:41.56]  clearly, Dijkstra won the day.
+[24:43.56]  >> Yeah, he did.
+[24:44.12]  >> Because
+[24:45.20]  no go-tos.
+[24:46.87]  >> [laughter]
+[24:49.00]  >> And is Dijkstra in person
+[24:52.00]  also like his writing?
+[24:55.40]  >> Uh he was not always as tactful as he
+[24:57.56]  might be.
+[24:58.66]  >> [laughter]
+[25:00.00]  >> Yeah, but you know, he was a a very uh,
+[25:02.56]  distinguished researcher.
+[25:04.28]  >> Computer science has had such a huge
+[25:06.92]  impact on the industry.
+[25:09.24]  Why did you choose to stay in academia
+[25:11.56]  instead of going into industry?
+[25:14.00]  >> So,
+[25:15.60]  I like doing research.
+[25:18.52]  And I enjoy working with students.
+[25:21.40]  And
+[25:23.16]  I teaching was never my favorite thing,
+[25:26.04]  but I always felt teaching and research
+[25:28.16]  were very closely connected.
+[25:30.60]  Um, but also it was a different time.
+[25:33.40]  So,
+[25:35.60]  this business about how professors are
+[25:38.36]  all forming companies and so forth,
+[25:40.80]  which goes on today, that wasn't
+[25:42.24]  happening 20 years ago.
+[25:44.92]  Or maybe it was happening 20 years ago,
+[25:47.52]  but 30 years ago it wasn't. So, when I
+[25:49.52]  was young, it wasn't the thing that you
+[25:51.68]  did. It was sort of a
+[25:53.92]  either or sort of thing. So, I wasn't
+[25:56.52]  even thinking about doing stuff like
+[25:58.24]  that.
+[25:59.32]  I did work in a startup briefly at the
+[26:01.60]  end of the '90s. I didn't like it.
+[26:05.52]  I much prefer doing research and as a
+[26:08.60]  professor you have this it's it's a gift
+[26:11.56]  and a curse.
+[26:13.04]  The gift is you can do whatever you
+[26:15.04]  want. The curse is you have to figure
+[26:17.12]  out what it is that you're doing.
+[26:19.36]  But I like that freedom. And the fact
+[26:22.68]  that I just could go off in any I mean,
+[26:25.36]  my career is full of these interesting
+[26:27.72]  zigzags where I would switch to
+[26:29.52]  something else. I had the freedom to do
+[26:31.28]  that.
+[26:32.28]  >> What stops you from going off in a very
+[26:34.72]  useless direction?
+[26:36.32]  >> Uh, you won't get tenure.
+[26:38.87]  >> [laughter]
+[26:40.32]  >> Who's the judge?
+[26:41.84]  >> The community.
+[26:43.92]  Yeah, it's not you know, what what the
+[26:46.52]  way that you're viewed at your
+[26:47.96]  university
+[26:49.56]  has mostly to do with um,
+[26:52.76]  one a very important facet of it is how
+[26:55.44]  are you viewed in your research
+[26:56.76]  community.
+[26:58.92]  So,
+[27:00.00]  because that's one of the important
+[27:02.40]  things they want
+[27:04.40]  from their faculty if you're in a
+[27:06.04]  research university.
+[27:07.84]  >> You mentioned earlier that
+[27:09.68]  research and teaching were heavily
+[27:12.20]  related in your opinion.
+[27:13.96]  Why is that?
+[27:15.04]  >> Because when you teach, you have to
+[27:18.04]  teach from first principles.
+[27:20.72]  And if you're doing good research, you
+[27:22.60]  need to understand deeply
+[27:25.12]  what's working, what's not working, what
+[27:26.96]  assumptions you're making. It's It's
+[27:29.20]  really the same thought process.
+[27:31.88]  >> It's It sounds like in research
+[27:34.00]  I mean, and this is true in every walk
+[27:36.84]  of life. There's the I guess the
+[27:38.64]  direction that you take
+[27:40.60]  and then the work that you do towards
+[27:42.16]  that direction. And it sounds like for
+[27:44.20]  research the
+[27:45.80]  the direction is
+[27:48.36]  maybe the most important thing cuz you
+[27:51.08]  could have a phenomenal researcher
+[27:54.92]  doing an idea that
+[27:56.64]  has no you know, even if you did it at
+[27:58.92]  100% it's not going to lead to anything.
+[28:01.52]  >> So, you you know, I you tell students
+[28:04.04]  graduate students don't do incremental
+[28:05.92]  work.
+[28:07.32]  Don't you know, you've got you you can't
+[28:09.08]  just keep working on the same thing over
+[28:10.76]  and over just making little teeny
+[28:12.48]  improvements. You need to find You're
+[28:14.44]  right, you have to find a good problem,
+[28:16.36]  but you also have to find a problem
+[28:18.64]  that's amenable to a solution and one
+[28:21.92]  that matches your skill set.
+[28:24.80]  And
+[28:26.00]  you have to recognize when you're going
+[28:28.80]  in a good direction versus not going in
+[28:30.68]  a good direction.
+[28:32.40]  >> Looking back on your career, you say
+[28:34.68]  that it was luck and that it seems like
+[28:39.08]  things just
+[28:40.80]  fit together.
+[28:42.08]  >> I feel there was luck involved.
+[28:45.28]  There was a lot of hard work involved.
+[28:48.68]  There was
+[28:50.60]  um not allowing
+[28:54.28]  uh something negative to
+[28:57.04]  you know, cause you great difficulty.
+[29:00.60]  So, for example, when I
+[29:03.88]  finished my PhD, I would have liked a
+[29:05.80]  faculty position.
+[29:08.04]  But, I didn't have any good offers.
+[29:10.88]  So, I went back to Mitre, the company I
+[29:13.28]  had worked for initially as a
+[29:15.72]  researcher.
+[29:17.52]  Um in other words, I just kept on
+[29:19.48]  marching along and it turned out to be a
+[29:22.88]  very good choice because I was switching
+[29:25.48]  from AI to systems and this gave me I
+[29:28.40]  worked there for 4 years. Gave me 4
+[29:31.16]  years to make that transition without
+[29:34.12]  having to uh worry about students and
+[29:37.24]  teaching and all the other stuff, you
+[29:39.00]  know, so it worked out well.
+[29:41.04]  But, it also meant that I didn't, you
+[29:43.24]  know, feel really sorry for myself that
+[29:45.64]  I didn't get a job. It meant I just kept
+[29:47.68]  on going.
+[29:49.08]  And then, Title IX was about to be
+[29:51.56]  passed and finally
+[29:53.36]  academia was opening up to women and I
+[29:56.12]  was ready.
+[29:58.12]  But, I think, you know, when I talk to
+[30:00.20]  other people about their careers, they
+[30:01.84]  talk about doors opening and doors
+[30:04.16]  closing. So,
+[30:06.00]  um
+[30:07.00]  I didn't get the academic job I wanted,
+[30:09.16]  but I had this other opportunity. I
+[30:12.56]  majored in math and fortunately, I was
+[30:16.12]  offered a programming job. I mean,
+[30:18.80]  doors opened and then you have to
+[30:20.44]  decide, am I going to step through? And
+[30:23.16]  this is a pattern that people see in
+[30:25.28]  their careers. It's not just me, many
+[30:27.64]  people have
+[30:29.08]  have those kinds of choices that you
+[30:31.64]  make along the way, opportunities and
+[30:34.44]  things that aren't so great, you know,
+[30:36.08]  and you're sort of working your way
+[30:37.44]  through.
+[30:39.04]  >> I've interviewed a few people who have
+[30:41.16]  won Turing Awards and I've done research
+[30:44.04]  and
+[30:45.12]  watched a lot of these speeches that
+[30:47.08]  people give after they receive the award
+[30:49.80]  and I noticed something
+[30:51.76]  different in in your speech or some of
+[30:54.76]  the stuff that I read about uh your work
+[30:57.36]  which is that in yours it seems like
+[30:59.96]  when you got the Turing Award
+[31:02.08]  there were people saying
+[31:05.12]  why did she get the Turing Award? It was
+[31:07.56]  kind of negative commentary on that.
+[31:10.32]  And I didn't see that in the other
+[31:12.04]  cases. Why do you think that they said
+[31:14.92]  that about your work?
+[31:16.68]  >> So, I'm I'm not so sure this doesn't
+[31:18.84]  happen to other people by the way. It
+[31:20.44]  was just that my husband was out on the
+[31:22.16]  internet By the way, there was an
+[31:23.36]  internet by then.
+[31:24.48]  >> Okay.
+[31:24.92]  >> Okay. [laughter]
+[31:25.92]  As you know, the internet is not
+[31:27.40]  necessarily nice.
+[31:30.04]  >> I know that.
+[31:30.68]  >> Right.
+[31:31.92]  And um
+[31:33.48]  so
+[31:34.92]  I I can imagine that other people might
+[31:36.84]  have had the similar a similar
+[31:38.80]  experience had they bothered to look.
+[31:41.48]  Um
+[31:42.72]  but I also think that
+[31:46.32]  the world had changed so much and
+[31:49.76]  the work that I had done was so basic to
+[31:53.28]  what was going on
+[31:55.40]  that people really didn't understand
+[31:58.32]  that there was a before.
+[32:00.16]  I mean, my graduate students really
+[32:02.04]  didn't understand that there was a
+[32:03.60]  before because I discovered that at the
+[32:06.56]  time I got the award. It really hadn't
+[32:08.60]  struck them that data abstraction didn't
+[32:11.00]  always exist.
+[32:13.12]  So, I think that
+[32:15.32]  I mean, I viewed it as
+[32:18.20]  a in a way a huge compliment
+[32:21.16]  not really just to me, but to the group
+[32:23.60]  of researchers who you know, all
+[32:25.76]  together got us to the point where we
+[32:28.40]  had uh these modular programming
+[32:31.08]  languages and we understood about
+[32:33.64]  abstract data types and we understood
+[32:35.48]  about how to reason about correctness.
+[32:37.04]  All that stuff was so fundamental
+[32:40.24]  that people thought there was no time
+[32:42.52]  when it hadn't already existed.
+[32:44.40]  >> So, they took it for granted.
+[32:45.64]  >> They took it for granted. I mean, the
+[32:47.28]  Byzantine fault tolerance, you look at
+[32:49.08]  that, there's a protocol.
+[32:51.28]  And
+[32:53.24]  you can understand that there was a
+[32:54.68]  protocol, somebody invented that
+[32:56.12]  protocol.
+[32:57.48]  Um you know, so you get the credit for
+[33:00.00]  that. This was much more fundamental.
+[33:02.28]  This was the whole mindset you had about
+[33:04.68]  how to develop programs. And that's what
+[33:07.20]  people were talking about.
+[33:09.28]  And things had changed so much
+[33:11.84]  that all these inventions of mine and
+[33:14.32]  others were just there in the woodwork
+[33:17.60]  and people didn't realize that there was
+[33:19.76]  a time before.
+[33:21.28]  >> That's validating then. That it's it's
+[33:23.92]  so impactful and
+[33:26.16]  everyone uses all the time that they
+[33:27.92]  don't even know what it was like before
+[33:29.68]  what you did.
+[33:30.32]  >> So, I thought, you know, it's a huge The
+[33:32.08]  person who said it didn't mean it
+[33:33.48]  nicely, but I thought
+[33:35.56]  really it's a huge a huge compliment.
+[33:39.16]  And and a statement about where we are
+[33:41.20]  now as opposed to where we were then.
+[33:43.12]  So,
+[33:45.08]  >> Okay, well, that's all the questions I
+[33:46.52]  have for you. Thank you so much for for
+[33:48.44]  your time. Really appreciate it.
+[33:49.68]  >> You're welcome.
+[33:51.12]  >> Thank you for listening to the podcast.
+[33:52.76]  It's a passion project of mine that I've
+[33:54.92]  really enjoyed building. Another passion
+[33:57.04]  project that I've been working on kind
+[33:58.40]  of in secret is building an ergonomic
+[34:00.88]  keyboard that I wish existed and I
+[34:03.16]  finally have a prototype, so I'd love to
+[34:04.92]  show you what we've built. It's
+[34:07.28]  ultra-low profile and ergonomic and I
+[34:10.16]  couldn't find anything like it on the
+[34:11.44]  market, so that's why we built it. I'll
+[34:13.40]  put a link to the keyboard in the
+[34:14.60]  description. You can take a look and
+[34:16.20]  learn more about the project there. We
+[34:18.04]  could definitely use your support. Also,
+[34:20.04]  if you have any feedback for me about
+[34:21.68]  the show, I'd love to hear it. Comments
+[34:24.12]  on YouTube have led to guests coming on
+[34:26.12]  like Ilya Grigorik and David Fowler. I
+[34:29.16]  wasn't aware of them until someone
+[34:31.00]  dropped a comment. Also, feedback in the
+[34:32.96]  comments helped me learn to reduce the
+[34:34.60]  number of cliffhangers in the intros.
+[34:37.20]  So, your comments definitely make a
+[34:38.48]  difference. Please keep letting me know
+[34:40.16]  what you'd like to see more of in the
+[34:41.52]  show, and I'll see you in the next
+[34:42.92]  episode.

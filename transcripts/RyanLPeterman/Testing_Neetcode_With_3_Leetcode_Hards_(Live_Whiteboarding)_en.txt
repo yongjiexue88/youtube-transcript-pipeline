@@ -1,0 +1,391 @@
+Title     : Testing Neetcode With 3 Leetcode Hards (Live Whiteboarding)
+Video ID  : rbtO3a6Qb00
+URL       : https://www.youtube.com/watch?v=rbtO3a6Qb00
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 382
+Saved at  : 2026-10-08 08:08:31
+------------------------------------------------------------
+
+[00:00.08]  In this problem, given two strings, I
+[00:03.84]  let's call it word one and word two. I
+[00:06.80]  want you to return the minimum number of
+[00:09.52]  operations required to convert word one
+[00:12.88]  into word two. And the operations you
+[00:15.84]  can perform are either inserting a
+[00:18.08]  character, deleting a character, or
+[00:20.80]  replacing a character. How would you do
+[00:22.88]  this problem? Okay. So, I guess I'm just
+[00:26.40]  thinking in terms of like an example
+[00:28.40]  right now, but I do know like what this
+[00:30.80]  question is and I know like the patterns
+[00:32.56]  it falls into. Um, but I don't know like
+[00:36.40]  all the details. But, um, I do know off
+[00:39.28]  the top of my head that this problem can
+[00:40.72]  be solved with recursion and then that
+[00:42.96]  can like lend itself into the DP
+[00:44.72]  solution. So basically as I would go
+[00:48.00]  through this um I guess it's not
+[00:49.92]  necessarily true that they're going to
+[00:51.04]  be the same length and they don't have
+[00:52.88]  to be since we're we can insert, delete
+[00:54.64]  or modify. So it's 100% true that we can
+[00:58.08]  convert one to the other. It's just a
+[00:59.52]  matter of like the operations which I
+[01:00.88]  think you mentioned as part of the
+[01:02.40]  question. Um, so I guess uh there's
+[01:06.72]  three uh possibilities or maybe there's
+[01:10.16]  only two, but one is that they're equal.
+[01:12.88]  Um, in which case you just shift the
+[01:15.84]  pointer. So you can kind of just ignore
+[01:17.20]  that. And then same thing here. Now here
+[01:20.56]  where uh they're different, this is
+[01:23.52]  where it gets interesting because unless
+[01:25.20]  we can like predict the future, we don't
+[01:26.48]  really know which one would result in
+[01:28.88]  the minimum. So in terms of like the
+[01:30.80]  decision tree, it's just going to be a
+[01:32.40]  matter of like brute forcing. So
+[01:36.40]  um one would be to like delete the
+[01:40.24]  character, one would be to insert, and
+[01:44.24]  the other I guess would be to just
+[01:45.92]  modify. And in this case, we're trying
+[01:47.52]  to turn this word into that one. So we
+[01:50.64]  would modify this one. And
+[01:54.72]  that's going to be edit.
+[01:57.04]  And then so among these
+[01:59.76]  I guess the recursive way would be to
+[02:01.92]  just uh solve this recursively and then
+[02:04.64]  add like a cache which is dynamic
+[02:06.88]  programming. Um but what I would do if I
+[02:10.08]  was going to skip that recursive
+[02:11.20]  solution what I would do is just kind of
+[02:12.88]  roughly look at this try to figure out
+[02:14.88]  what like the equation would be. And
+[02:16.72]  when I say equation I mean like result
+[02:19.68]  is going to equal like some uh DP call
+[02:22.96]  maybe like the maximum of these three.
+[02:25.84]  And then so uh if I was going to do the
+[02:29.04]  actual DP solution which I think would
+[02:31.84]  end up being like n * m time complexity
+[02:35.28]  based on like the dimensions of this
+[02:36.80]  grid uh you can kind of imagine like you
+[02:40.00]  could take these two words and like
+[02:44.32]  make like a grid out of them and then
+[02:46.48]  you just like fill in that grid and it
+[02:48.72]  would tell you the solution.
+[02:49.76]  >> But what's the what's a cell in that
+[02:52.40]  grid represent?
+[02:53.60]  >> Yeah. So that's the hard part [laughter]
+[02:55.44]  and it depends on how you set it up. I
+[02:57.92]  always set it up a way that like most
+[02:59.68]  people don't like, but I guess so if
+[03:02.88]  this is the zero end, it would basically
+[03:05.44]  be like, okay, what's the edit distance
+[03:07.60]  of like the first character of each word
+[03:10.08]  that's over here? Over here, it would be
+[03:11.84]  a bit more interesting where it's like,
+[03:13.20]  okay, this portion of the word and this
+[03:15.60]  portion of the word. And so as you keep
+[03:17.92]  filling these in, what you notice is
+[03:19.52]  that like to if we're doing these three
+[03:22.40]  calls, uh to fill in the last cell, it
+[03:25.28]  would just be a matter of like looking
+[03:28.72]  um in whatever direction. So uh like if
+[03:34.72]  we were deleting a character from word
+[03:36.88]  one, then we'd probably just look that
+[03:38.96]  way. Uh yeah, or maybe I'm that
+[03:42.80]  opposite. But anyways, this is where it
+[03:45.68]  gets hard and this is where you actually
+[03:46.96]  have to start thinking and they usually
+[03:48.96]  I'll start writing the code at this
+[03:50.24]  point. Um because that actually does
+[03:53.36]  help me, but for some people maybe
+[03:55.04]  they'll figure it out in their head
+[03:56.40]  first. But if you go from the recursive
+[03:58.24]  solution to DP, it's a lot easier. I
+[04:01.12]  see. Okay. So the cell is the answer for
+[04:05.36]  the substring up until that uh N and M.
+[04:09.92]  And you you're saying you would give a
+[04:13.36]  formula for how to build up the next
+[04:16.48]  solution out of the existing ones that
+[04:19.28]  you've done so far.
+[04:20.32]  >> Yeah, that's right. And that kind of
+[04:21.92]  like I'd probably spend more time on
+[04:23.52]  this part just to make sure that I
+[04:25.12]  really like understand what's going on
+[04:26.80]  in terms of like the exact sub problem
+[04:30.08]  because we're allowed to delete, insert,
+[04:32.40]  or edit.
+[04:34.32]  So I assume that they're all valid. I
+[04:36.64]  assume like one of them like they they'd
+[04:38.72]  all be necessary at some point unless
+[04:40.80]  I'm like missing something off the top
+[04:42.32]  of my head right now. Maybe like there's
+[04:43.68]  a case where you'd never delete or you'd
+[04:45.52]  never insert. Um but
+[04:49.84]  like in this problem just going through
+[04:51.20]  the example I can see that we just edit
+[04:52.72]  twice. We'd edit here and then edit
+[04:54.48]  here. We wouldn't do any delete or
+[04:56.24]  insert. But maybe if I change the
+[04:57.60]  example, um,
+[05:00.40]  if I do this,
+[05:04.16]  uh, well, maybe I should have done the
+[05:06.32]  other way. But the idea is that like we
+[05:08.72]  delete one character from from one
+[05:10.64]  substring to get the other one.
+[05:12.16]  >> I see. Okay. Yeah. I mean, I think I I
+[05:15.84]  get what you're saying. You're clearly
+[05:17.36]  going in the the right direction here.
+[05:19.44]  We just would have to spend a bunch of
+[05:20.88]  time figuring out the case analysis.
+[05:23.44]  Um, okay. Let's let's try uh okay how
+[05:28.40]  about this one? I know this is a a very
+[05:31.76]  famous difficult problem which is um
+[05:35.44]  let's say I give you uh two sorted
+[05:39.36]  arrays and I want you to find the median
+[05:43.44]  number among the two sorted arrays. How
+[05:47.84]  would you how would you do that one?
+[05:49.84]  >> Okay, this one's always annoying. Um, so
+[05:52.56]  I'm going to like just try to craft an
+[05:54.40]  example that hopefully
+[05:56.80]  I can try to like derive the solution.
+[05:59.84]  Even though I kind of know it off the
+[06:01.20]  top of my head, I think you can reason
+[06:03.44]  about the general idea.
+[06:07.20]  Wonder if I can get a better.
+[06:09.84]  Okay, so I picked these two arrays. I
+[06:12.48]  might need to change the example because
+[06:14.08]  the example is going to tell us like
+[06:15.68]  what the solution is because I know
+[06:17.84]  there's going to be edge cases.
+[06:20.16]  For example, what if there's duplicates
+[06:22.00]  like between the two arrays? What if
+[06:24.08]  like one is further than the other? So,
+[06:25.76]  I might like modify this, but uh we have
+[06:28.40]  a couple duplicates and we have like
+[06:30.16]  this one is going to be there. So, we
+[06:33.68]  have like an array that's like kind of
+[06:35.84]  overlapping.
+[06:37.44]  Um I guess just for like
+[06:40.48]  so this the fact that I don't know how
+[06:42.24]  to solve this problem now. I'm already
+[06:43.60]  thinking like okay, how do I manage my
+[06:45.12]  time in a real interview? Because what I
+[06:47.12]  want to do is like create a line with
+[06:50.00]  all these elements. And maybe if I have
+[06:51.92]  extra time, I'd even like color code to
+[06:54.16]  help me think. But I know that the
+[06:57.12]  solution is going to be some form of
+[06:58.64]  binary search. And so I want to know
+[07:02.40]  like if I can figure out the trick
+[07:06.32]  because if I can do that, then I'll have
+[07:07.76]  a chance of solving it. And if I can't
+[07:09.84]  then I probably won't. I know it's going
+[07:12.48]  to be a matter of like setting up the
+[07:14.16]  pointers initially, left and right here,
+[07:17.36]  and then left and right here, because
+[07:19.60]  what we want to do right now
+[07:22.72]  is eliminate part of the array.
+[07:26.32]  But I don't remember how to do that.
+[07:28.02]  [laughter]
+[07:28.88]  So, okay, if I just had one array, what
+[07:31.36]  I would do, and you gave me a target,
+[07:33.68]  right?
+[07:34.00]  >> Yeah.
+[07:35.20]  >> So,
+[07:37.44]  I want to know
+[07:38.72]  >> Oh, wait. No, just find the median.
+[07:40.32]  >> Oh, yeah. Median. media yet. Okay,
+[07:42.72]  actually that I think that actually
+[07:44.08]  makes it easier because maybe it
+[07:45.84]  wouldn't be possible otherwise.
+[07:48.32]  Okay, so median. So what that means is
+[07:51.20]  we'd want like literally the middle
+[07:53.04]  number. Okay, so the clue now that I
+[07:56.32]  have is that like uh we have nine
+[07:59.92]  elements total at least in this example.
+[08:02.80]  So how can I like eliminate something?
+[08:05.60]  Can I like do I know for sure that like
+[08:09.12]  at least these three are not the median?
+[08:13.68]  Not really. Because if we have nine
+[08:16.64]  elements, I know the fifth one is the
+[08:18.48]  median and these like technically we
+[08:22.08]  could have like some elements here and
+[08:24.08]  then maybe that could be the median. So
+[08:25.84]  that's not going to work. So now I I
+[08:27.92]  know for sure that to solve this problem
+[08:30.40]  at each step we're going to have to look
+[08:32.40]  at both arrays. But I still don't know
+[08:35.12]  how to do. [laughter]
+[08:37.76]  And so um I'll probably go through an
+[08:41.28]  example. So now I'm thinking like can I
+[08:42.96]  just go through this example like
+[08:44.32]  without even trying to worry about the
+[08:45.68]  solution just like somehow like on pen
+[08:47.92]  and paper just like solve this problem
+[08:49.52]  by like eliminating like portions of the
+[08:52.00]  array at a time. I don't need to
+[08:54.64]  eliminate from both arrays. I'd really
+[08:56.56]  only need to do it from one array. Okay.
+[08:59.36]  So how can I do it? So knowing that this
+[09:01.20]  is the entire thing somehow can I like
+[09:04.24]  look at three or like look at the median
+[09:06.56]  in one of these to figure that out. I
+[09:08.56]  think probably that's it. I think
+[09:10.16]  probably I'd have to look at the median
+[09:11.76]  here and the median here do some kind of
+[09:15.20]  comparison
+[09:16.96]  to figure out what I was talking about
+[09:18.48]  earlier where like if we have like
+[09:21.68]  nine elements the fifth one is like the
+[09:24.96]  median that we're trying to find. And so
+[09:26.72]  really all we want to know is like are
+[09:28.00]  we here or are we here? So, I'm getting
+[09:30.40]  closer, [laughter] but um
+[09:35.28]  yeah, I know there's going to be some
+[09:36.80]  off like some off by ones here because
+[09:39.20]  like if there's just two elements, the
+[09:41.52]  median is different where if it's just
+[09:43.04]  like one element in the middle. So,
+[09:46.88]  this is where I'd get like a coffee,
+[09:48.85]  [laughter]
+[09:50.24]  but I'm definitely close. Like I I do
+[09:52.32]  not even remember this problem. I think
+[09:53.76]  it's been like 5 years since I made the
+[09:55.44]  video for it. I don't think I ever
+[09:57.36]  solved it again. But you can see that
+[09:59.28]  like from first principles you can
+[10:01.36]  actually like get like a little bit
+[10:03.92]  closer. [laughter]
+[10:06.00]  Okay, let's let's make things a little
+[10:08.08]  bit harder. So this question um given a
+[10:13.68]  n byn chessboard I want you to figure
+[10:18.48]  out the uh number of orientations
+[10:23.76]  where you could place n queens such that
+[10:27.52]  none of the queens are attacking each
+[10:29.28]  other. So you know queens they attack in
+[10:32.48]  all c cardinal directions and the
+[10:35.12]  diagonals.
+[10:36.88]  uh you need to find a number of distinct
+[10:40.48]  solutions where you could place n queens
+[10:42.96]  on this this board and none of them are
+[10:46.64]  um hitting one another.
+[10:49.76]  Okay, so
+[10:52.08]  I'm just setting up the grid because
+[10:53.92]  that's going to be like the most
+[10:55.04]  important part to like visualize this
+[10:56.96]  and I know that there's going to be
+[11:00.00]  a trick involved. So
+[11:04.72]  um okay so off the top of my head how do
+[11:06.48]  we like break down this problem? One is
+[11:08.32]  like we need to know are any queens
+[11:10.80]  attacking each other in terms of like
+[11:13.28]  the brute force solution the best way to
+[11:15.52]  do that would be some kind of just like
+[11:17.04]  trial and error like backtracking
+[11:18.56]  approach. I think that's the best way to
+[11:20.56]  do this uh problem from memory. Um, and
+[11:25.44]  then what what's straightforward is that
+[11:28.24]  if a queen is in the same like vertical
+[11:31.60]  or horizontal
+[11:34.00]  as another queen, it's pretty
+[11:35.84]  straightforward because we can literally
+[11:38.56]  just use some kind of like hash data
+[11:40.16]  structure just to keep track of like the
+[11:43.12]  row or like the column if it's going
+[11:47.04]  that way. Um, but the hard thing is the
+[11:49.36]  diagonals obviously because that's
+[11:52.64]  changing. Like there's no like diagonal
+[11:54.80]  here that tells you you're on like that
+[11:56.48]  diagonal. But there's a trick. And so
+[11:59.20]  people always ask, how would you know
+[12:00.64]  this? Um, that's a good question. I
+[12:03.92]  definitely didn't come up with it, but
+[12:05.28]  the trick is this that okay because so
+[12:08.24]  let's say I'm I'm on this square. Uh,
+[12:11.92]  this is row one and column one. And if
+[12:16.16]  I'm going along this diagonal,
+[12:19.28]  uh, okay, I drew that wrong. But if I'm
+[12:21.68]  going along that diagonal,
+[12:24.40]  uh, if I go this way, I just increased
+[12:28.24]  the row by one and I decreased the
+[12:31.36]  column by one. If I go that way, I just
+[12:35.52]  increased the column by one, but I like
+[12:39.12]  decrease the row by one. So the trick is
+[12:43.44]  that if I can like redraw this I guess
+[12:48.96]  uh this diagonal one + one is going to
+[12:54.08]  be two here. So like the sum of those
+[12:56.08]  values can be used to define the
+[12:57.68]  diagonal is basically uh the trick. So I
+[13:01.36]  would solve this problem
+[13:03.52]  pretty easily I guess just by having uh
+[13:07.60]  four hash data structures and the key
+[13:10.48]  for those uh data structures well two of
+[13:13.28]  them are just going to be like a row or
+[13:14.72]  and column set the other one is going to
+[13:16.24]  be different it's going to be uh this
+[13:18.80]  diagonal but also the other diagonal as
+[13:20.72]  well which will have I think the
+[13:22.56]  opposite
+[13:24.32]  uh like okay as we go this way
+[13:29.20]  it's just getting bigger. Um,
+[13:33.28]  okay. I actually don't remember that.
+[13:35.28]  But, um,
+[13:38.96]  okay. So, now I'm thinking about it. Let
+[13:40.80]  me just take like one second. [laughter]
+[13:49.04]  Um,
+[13:53.04]  >> so you're just trying to get quick
+[13:55.04]  diagonal membership like given, you
+[13:58.00]  know, is that is that occupied or not?
+[14:00.00]  >> Yeah, exactly. It's just like a key
+[14:01.28]  value lookup.
+[14:02.16]  >> Yeah.
+[14:02.64]  >> So,
+[14:04.64]  um,
+[14:06.16]  but as you're going this way, the
+[14:07.92]  diagonal is different. It's like 0 + 0,
+[14:11.68]  1 + 1, 2 + 2.
+[14:15.60]  So, okay. So I guess based on that uh I
+[14:19.52]  would say that if we want it to be
+[14:21.12]  constant the obvious thing that we can
+[14:23.20]  do instead of adding both of these is
+[14:25.20]  just taking the difference because uh we
+[14:28.96]  on this diagonal we chose to add them
+[14:30.80]  because then they would it would stay
+[14:32.00]  the same value along that and on this
+[14:33.68]  one we decide to take the difference
+[14:36.16]  because if we just add them it's not
+[14:37.76]  going to be the same. Um yeah so so the
+[14:41.36]  approach would work. It was just that
+[14:42.64]  that little trick. Um, but then other
+[14:46.56]  than that, it's just like a hashbased
+[14:48.00]  like lookup where we would um the
+[14:50.64]  backtracking would basically be for
+[14:52.24]  every single spot we either make a
+[14:54.32]  decision of like whether we put a queen
+[14:56.40]  there or we skip it. And um sometimes
+[15:00.32]  we'd want to skip it if we already know
+[15:02.24]  that there's like another queen
+[15:03.52]  attacking that one.
+[15:04.72]  >> Yeah.
+[15:05.36]  >> But yeah,
+[15:06.00]  >> I see. Okay. So you it's just brute
+[15:09.04]  force with a bunch of checks to make
+[15:11.68]  sure Okay. It's a valid step forward.
+[15:14.40]  >> Yeah. So, I think I don't know off the
+[15:16.64]  top of my head the complexity, but I'm
+[15:18.72]  pretty sure it'd be optimal because at
+[15:20.56]  each step, like each hash lookup would
+[15:22.32]  be constant, but in terms of like the
+[15:24.16]  complexity of this entire tree,
+[15:27.04]  um,
+[15:29.44]  it'd be pretty big. I don't know exactly
+[15:32.32]  like it might be n to the power of n,
+[15:34.24]  but it's definitely more than like
+[15:36.96]  it's definitely exponential or
+[15:38.80]  something.
+[15:39.68]  >> Yeah. Yeah, I see. Yeah, I think that
+[15:41.92]  would work. [laughter]
+[15:43.44]  Shot ad.

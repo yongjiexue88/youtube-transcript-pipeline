@@ -1,0 +1,3242 @@
+Title     : Casey Muratori: The Anatomy of a 35-Year Mistake, "Clean Code" Horrible Performance
+Video ID  : jHLbL1Eg4gM
+URL       : https://www.youtube.com/watch?v=jHLbL1Eg4gM
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 3233
+Saved at  : 2026-10-08 08:13:42
+------------------------------------------------------------
+
+[00:00.24]  The amount of stuff that you learn about
+[00:02.88]  what was going on at that time is just
+[00:04.96]  mind-boggling.
+[00:06.40]  >> This is Casey Muratori, video game
+[00:08.72]  developer and sometimes computer
+[00:10.40]  historian through his popular talks and
+[00:12.64]  I asked them all about the stories in
+[00:14.48]  computing he uncovered.
+[00:15.92]  >> Dystro was depressed at that time.
+[00:18.64]  >> He literally says like in this period I
+[00:20.96]  was very depressed because of these
+[00:23.12]  reasons. Look at the correspondence.
+[00:25.60]  They didn't have the ability to do like
+[00:27.20]  piffy Twitter replies, so it was just on
+[00:29.76]  paper.
+[00:31.04]  >> What drew you towards video gaming?
+[00:33.76]  >> There's a bunch of things I could say
+[00:36.00]  about that, but they're probably all BS.
+[00:38.88]  Here's the full episode.
+[00:44.96]  There's so much, you know, AI Doom
+[00:47.68]  content out there. I'm hoping that we
+[00:50.00]  can just talk about interesting things
+[00:52.88]  in software engineering and just see
+[00:54.96]  where it goes. So I'm not going to ask
+[00:57.04]  anything that's uh you know all this AI
+[00:59.84]  doom you're gonna you have two years
+[01:01.76]  left to be a software engineer. So
+[01:04.32]  >> fantastic. I will try to keep the AI
+[01:06.08]  mentions to a minimum. [laughter]
+[01:08.48]  >> There's this famous quote by Donald
+[01:10.88]  Kuth. The big part of it is premature
+[01:14.00]  optimization is the root of all evil.
+[01:16.88]  And I remember I've I've heard that
+[01:18.40]  before, but I I don't think I know the
+[01:20.64]  full history behind it. And you know,
+[01:23.44]  why is that significant?
+[01:26.00]  So I guess we can split that into two
+[01:27.52]  parts. Like what's the history behind it
+[01:28.96]  and why is this significant? The
+[01:30.48]  significant part is probably the easiest
+[01:32.72]  to answer because it's, you know, for
+[01:36.64]  whatever accident of history, it's
+[01:38.48]  something that people really remembered
+[01:40.24]  like it's stuck. And so the reason that
+[01:42.96]  it ended up being significant is people
+[01:44.80]  keep repeating it and they keep
+[01:46.72]  interpreting it or reinterpreting it. So
+[01:49.92]  the effects of that phrase far beyond
+[01:53.28]  what anyone may have done with it in
+[01:55.04]  context at the time or what they meant
+[01:56.88]  or any of those things or the history,
+[01:59.84]  the effects of it are like still felt to
+[02:01.68]  this day. Some people uh I think
+[02:04.16]  probably correctly you might say
+[02:07.76]  interpret the term with a fair bit of
+[02:09.84]  nuance and and say like oh well you know
+[02:12.32]  it can mean a number of different things
+[02:13.60]  or it's trying to capture something
+[02:14.96]  subtle or whatever. Other people are
+[02:17.20]  very blunt about it and just think like
+[02:18.64]  oh it just means I don't have to think
+[02:20.00]  about the performance of my code till
+[02:21.84]  like the end of the project right like
+[02:23.84]  like premature just means any
+[02:25.44]  consideration of performance is not
+[02:27.68]  worth it. eventually we'll see where the
+[02:29.28]  code is slow and we'll fix it or
+[02:30.48]  something, right? And so, uh, it's it's
+[02:33.84]  a significant phrase for that reason, at
+[02:35.92]  least to me. You still hear it to this
+[02:38.00]  day and it's at least, you know,
+[02:39.76]  depending on how, uh, you want to
+[02:41.92]  account for it, it's at least something
+[02:44.32]  that's 50 years old now. Uh, and so
+[02:48.08]  that's an incredibly lasting impact for
+[02:50.80]  a rule of thumb or however you want to
+[02:53.28]  look at it. So uh on the history side,
+[02:56.32]  this was really uh when I decided to to
+[02:58.48]  to do a talk on this, I knew I wanted to
+[03:00.72]  do another computer history talk um
+[03:02.64]  because I had given one before at at
+[03:04.80]  this was at something called the better
+[03:05.92]  software conference. It's you know
+[03:07.36]  there's been two of them so far and at
+[03:10.24]  the first one I did a history talk and I
+[03:12.24]  wanted to do another history talk and
+[03:13.68]  this was going to be like probably only
+[03:15.28]  going to do two of these and this second
+[03:16.56]  one. I wanted to do it on the history of
+[03:19.68]  this phrase because when I started
+[03:21.04]  looking into the history of this phrase
+[03:22.48]  a while back, I found that there was
+[03:24.08]  just a lot of stuff there that I didn't
+[03:26.40]  know. And this is true. I mean, I guess
+[03:29.84]  I would say every time I've ever looked
+[03:31.68]  at computer history, every every time
+[03:33.60]  I've go I I refer to it as dumpster
+[03:35.44]  diving, but it's not it's not like that
+[03:37.52]  makes it sound derogatory. I just think
+[03:39.76]  but I think of that as kind of what I'm
+[03:40.96]  doing but it's not really like it's
+[03:42.48]  actually a very enjoyable experience uh
+[03:45.04]  to go back through history and try to
+[03:46.40]  pick pick through what happened. But um
+[03:49.28]  so to do this talk I basically went and
+[03:51.04]  tried to do a a pretty detailed you know
+[03:53.36]  analysis of like how did this phrase end
+[03:56.24]  up being put in print? You know what
+[03:58.40]  were the worked examples at the time?
+[03:59.92]  What were they thinking about? Why might
+[04:01.36]  it have been said?
+[04:02.96]  >> What did you learn in doing all that
+[04:04.72]  research about these famous computer
+[04:06.96]  science phrases? The thing that shocks
+[04:09.36]  me, it shock it both times, even though
+[04:11.12]  I've now done it twice, the amount of
+[04:13.20]  stuff that you learn about what was
+[04:15.52]  going on at that time that you just had
+[04:17.60]  no idea is is just mind-boggling. And
+[04:20.88]  and I would point out that this is for a
+[04:23.60]  talk. You know, I'm not a historian. I
+[04:25.76]  don't do this for a living. I'm not at a
+[04:28.16]  university somewhere doing computer
+[04:29.76]  history research. So what I think of as
+[04:34.00]  a pretty thorough read for the history
+[04:35.52]  that I did for the talk is actually
+[04:37.28]  somewhat shallow. Like if you had time
+[04:40.00]  and the resources, you could go access
+[04:41.92]  some of these people's personal papers,
+[04:43.68]  make appointments to see things that are
+[04:45.28]  not really in the public record so much
+[04:46.88]  and so on. So even just with publicly
+[04:50.08]  available things that you can get, the
+[04:52.48]  amount of stuff that I found was just
+[04:54.32]  really kind of uh intriguing to me. And
+[04:58.00]  so um I'll give like a kind of a brief
+[05:01.12]  overview of sort of what what I thought
+[05:03.52]  was the story of this kind of phrase in
+[05:06.08]  a way. Um I think there are kind of two
+[05:10.40]  I guess I would say there there are sort
+[05:11.92]  of two threads that are good to
+[05:14.00]  understand that come together and this
+[05:16.32]  is what I tried to portray in the talk
+[05:17.60]  as well.
+[05:19.04]  The first thread is this idea um of a
+[05:22.96]  thing and you know we didn't really do
+[05:25.44]  an intro to this to this podcast but um
+[05:28.08]  so I'll just I'll say it now. I'm a big
+[05:29.52]  fan of your show. When when you said do
+[05:32.00]  you want to be on the podcast you didn't
+[05:33.20]  have to tell me what the show was. Like
+[05:34.16]  I've already watched it. I I love it. Uh
+[05:36.32]  and one of the people you had on for
+[05:37.92]  example was Barbara Liskoff. And in that
+[05:40.96]  interview she actually refers to
+[05:43.04]  something called the software crisis.
+[05:45.20]  Right. Um and I think you prompted or a
+[05:48.96]  question about this as well. Right? So,
+[05:51.92]  a lot of people don't really know about
+[05:54.00]  the software crisis. They don't know
+[05:55.36]  that that was a term. They don't know
+[05:56.56]  this something that happened because
+[05:57.52]  it's kind of ancient history now. It was
+[05:59.04]  in the sort of late 60s, early 70s. This
+[06:01.84]  was a thing. And what this was is
+[06:06.80]  originally, you know, computer hardware
+[06:09.20]  in a sense that you or I can't really
+[06:11.04]  conceive of it in practice because it
+[06:13.12]  was so far before our time, right?
+[06:15.76]  um that basically computer hardware
+[06:19.12]  originally was very simplistic. And so
+[06:21.36]  the things that you were going to do
+[06:22.56]  with it could be described very easily
+[06:25.44]  and really all you were trying to do
+[06:27.92]  when you programmed a computer was just
+[06:30.16]  translate a fairly straightforward
+[06:31.84]  definition of some computation into like
+[06:34.72]  machine instructions.
+[06:36.88]  The kind of thing that we would kind of
+[06:38.40]  think about today as like hand
+[06:40.80]  optimizing assembly code was really just
+[06:43.44]  all computer programming kind of was,
+[06:45.04]  right? It was just like, okay, we're
+[06:46.24]  going to we're going to take this
+[06:47.20]  problem description and and translate it
+[06:48.72]  in.
+[06:50.24]  But during the 60s, computing power was
+[06:52.56]  advancing to the point where people
+[06:54.24]  could consider doing much more
+[06:56.00]  significant things with it. They could
+[06:57.28]  run payroll systems. They could do
+[06:59.44]  analysis of of data sets. and they would
+[07:01.92]  want to be able to be flexible and
+[07:03.36]  change the sorts of computations they
+[07:04.88]  were doing and all these other sorts of
+[07:06.40]  things. They were starting to have
+[07:07.92]  graphical displays. Uh you know um Ivan
+[07:10.48]  Southerntherland sketchpad is like in
+[07:12.08]  the early 1960s, right? And so what they
+[07:15.84]  found was at that time programmers were
+[07:18.64]  not really ready to make that
+[07:20.16]  transition. They didn't think about
+[07:22.40]  things the way we kind of all now take
+[07:24.24]  for granted where it's like, oh yeah,
+[07:25.84]  you know, I built this library for
+[07:27.68]  loading JPEG images and now when I want
+[07:29.52]  to load a JPEG, I just call load JPEG
+[07:31.36]  and it's done. And you know, all of
+[07:33.28]  these things that we take for granted,
+[07:35.04]  that all had to that all had to be a
+[07:37.84]  cultural shift. The idea that there were
+[07:39.84]  going to be these um abstractions and
+[07:42.56]  these ways of of sort of breaking down a
+[07:44.88]  much more complex system into parts that
+[07:46.64]  we could manage, that actually was a
+[07:48.56]  transition that had to happen. And so
+[07:49.84]  the software crisis was kind of this
+[07:51.36]  period where people were starting to say
+[07:53.28]  the methods that we're using for
+[07:54.56]  programming will not scale to these
+[07:56.88]  larger problems that we want to do.
+[07:59.12]  We've got to figure out something uh to
+[08:01.20]  do about it. So that's one thread of
+[08:04.56]  history that's coming. Another thread of
+[08:07.20]  history that's coming that's you know
+[08:09.60]  it's a little bit more specific to
+[08:11.28]  Donald Kuth who was the first person to
+[08:13.28]  really put this into a worked example.
+[08:15.44]  like he's kind of who I would credit
+[08:17.20]  with the origin of this phrase, even if
+[08:19.04]  there are people who might debate that
+[08:20.56]  fact. And to me, it doesn't really
+[08:22.00]  matter who said the phrase, like the
+[08:23.28]  phrase lives on in on its own. So, you
+[08:25.44]  know, I I I wouldn't I wouldn't even
+[08:27.68]  argue with someone if they wanted to
+[08:29.12]  sort of uh make other claims about it.
+[08:32.00]  But just in general,
+[08:34.48]  he was going like like at Stanford at
+[08:38.64]  this time, he was sort of learning about
+[08:40.96]  the fact that you could do these
+[08:43.12]  profiles like taking actual execution
+[08:46.00]  profiles, figuring out where time was
+[08:47.84]  spent in the execution of a program and
+[08:51.04]  using that to guide your decision-m
+[08:52.80]  about how where are you going to spend
+[08:54.08]  time developing the software. Again,
+[08:56.32]  something that even today today
+[08:58.00]  performance is maybe not as much of an
+[09:00.32]  emphasis as it maybe should be in
+[09:01.68]  software, but even today with that in
+[09:04.48]  mind, most people understand the concept
+[09:06.96]  of an execution profile. They understand
+[09:08.72]  that you could go into Chrome and see
+[09:10.16]  like a network profile of how that's
+[09:11.60]  working. You could uh see a flame graph
+[09:13.60]  of of you know where time is being spent
+[09:15.44]  or all these sorts of things.
+[09:18.16]  Again, you have to remember if you
+[09:19.60]  rewind the clock back far enough, these
+[09:21.84]  were all brand new concepts, right? a
+[09:24.48]  sampling profiler, a block brace
+[09:26.16]  profiler, uh you know, a a binary
+[09:28.80]  instrumentation profiler. All these
+[09:30.40]  sorts of things were not just tools that
+[09:32.96]  everyone assumed that they could just go
+[09:34.64]  have and and had seen at some point.
+[09:36.96]  Some people may never have even realized
+[09:38.48]  that was was a thing, right?
+[09:41.28]  So that's another thread that's
+[09:42.48]  happening. And those two things converge
+[09:45.20]  effectively in 1974 roughly to get us
+[09:49.60]  this statement. Can is very much into
+[09:54.40]  this idea of structured programming
+[09:56.40]  which is sort of a a solution a proposed
+[09:59.60]  solution to the software crisis.
+[10:03.20]  Maybe a proposed solution is the wrong
+[10:04.64]  way to say it. It's a certain set of
+[10:06.80]  ideas that are trying to be employed to
+[10:09.92]  improve the situation. Let's say he's
+[10:12.32]  very much in into this and we can talk
+[10:14.88]  about what that is uh sort of a separate
+[10:16.96]  tangent if we want to later. He's very
+[10:19.52]  much into that. He's thinking about
+[10:20.96]  that. He's um he's thinking about this
+[10:23.76]  idea that programmers can't just be
+[10:26.80]  about writing all of this very tightly
+[10:29.84]  optimized assembly language code and
+[10:31.44]  that's all we're going to spend all our
+[10:32.56]  time doing. We have to be thinking
+[10:33.92]  bigger picture. We have to be picking
+[10:35.36]  and choosing our battles. We have to
+[10:37.68]  make concessions to maintainability. Uh
+[10:40.96]  you know if this particular routine is
+[10:43.20]  not really accounting for hardly any of
+[10:44.72]  our runtime, we should not be obuscating
+[10:46.80]  it with all of these like hand unrolling
+[10:48.48]  the loops and all these things. Remember
+[10:50.00]  again underlying all this they don't
+[10:52.00]  have like massive optimizing compiler
+[10:55.44]  kind of passes like we have with LLVM
+[10:57.44]  now right they don't have all of this
+[10:59.04]  extra stuff so if you wanted something
+[11:00.64]  unrolled you were going to unroll it
+[11:01.84]  yourself if you wanted some kind of loop
+[11:03.84]  hoist a loop invariant out you probably
+[11:05.52]  had to do that yourself like a lot of
+[11:06.88]  that stuff that we take for granted
+[11:08.40]  again not in there so um that sort of
+[11:12.80]  this he's very unstructured programming
+[11:14.64]  he's starting to see these execution
+[11:16.16]  time profiles they do a thing at
+[11:17.60]  Stanford in the n in in 1970 and he
+[11:19.60]  actually he does it with some students
+[11:20.80]  where they take a look at uh forrren
+[11:23.44]  programs and they instrument them to see
+[11:24.88]  where the time is being spent. Not in
+[11:26.96]  exactly the most rigorous way that you
+[11:28.64]  might imagine. That's another thing for
+[11:29.84]  my talk that I kind of go into. Um but
+[11:32.32]  he's sort of saying like look
+[11:34.88]  we we as programmers need to start
+[11:37.76]  taking the decision about what to
+[11:39.52]  optimize more seriously.
+[11:42.40]  And he kind of has a fairly nuanced take
+[11:44.08]  on it. If you actually read the section
+[11:46.72]  um of his 1974 paper uh structured
+[11:49.52]  programming with go-to statements where
+[11:51.28]  kind of the first time this was really
+[11:52.80]  put to print that I know of he he does
+[11:55.04]  he does say it in an ACM touring lecture
+[11:57.60]  a little earlier but he would have
+[11:59.68]  submitted like based on my timeline he
+[12:02.64]  would have submitted the manuscript for
+[12:04.80]  this publication prior to the lecture.
+[12:07.36]  So it was the first time that I know of
+[12:09.20]  that he actually committed it to paper
+[12:10.64]  would have been there but he may have
+[12:12.40]  said this a lot in lectures. He kind of
+[12:14.48]  obliquely refers to that in the touring
+[12:16.24]  lecture that maybe he had said this
+[12:18.00]  around you know around town so to speak.
+[12:20.48]  So you know where this was first uttered
+[12:23.52]  I don't think anyone knows but point
+[12:25.68]  being uh when he says that phrase kind
+[12:28.32]  of it's in this context of saying look
+[12:30.96]  we we need to be very concerned about
+[12:32.88]  efficiency. We shouldn't be leaving
+[12:34.96]  performance on the table when it
+[12:36.24]  matters. But at the same time, we need
+[12:38.32]  to know that it matters. If we don't
+[12:40.16]  know that it matters that we're going to
+[12:41.92]  apply this optimization, then you know
+[12:44.80]  that's a premature optimization and it
+[12:47.28]  has real costs. It it's going to make
+[12:49.76]  our maintenance and debugging of this
+[12:51.44]  program worse for all the same reasons
+[12:53.60]  that it would make it worse today. Like
+[12:54.96]  if we go into something and we start
+[12:56.72]  applying these like optimizations to it
+[12:59.28]  that are above and beyond the kind of
+[13:01.44]  structural things that we might be doing
+[13:02.80]  to that code otherwise that's creating a
+[13:05.60]  cognitive burden right um that other
+[13:07.92]  people are now going to have to deal
+[13:08.88]  with and you're going to have to deal
+[13:10.00]  with in the future. So I don't want to
+[13:12.72]  put too many words in Canuth's mouth
+[13:14.40]  certainly, but in general that's sort of
+[13:17.20]  the way that this comes together is
+[13:19.36]  those two things. This idea that we need
+[13:20.96]  to be more, you know, be doing things to
+[13:22.48]  solve the software crisis, have a more
+[13:24.24]  structured appro approach to
+[13:25.44]  programming, care about maintainability
+[13:27.04]  and debugability, composability,
+[13:28.64]  abstraction, all that stuff. But also at
+[13:31.92]  the same time, we do care about
+[13:33.44]  optimization. So how do you dovtail
+[13:34.96]  those things? Premature optimization is
+[13:36.32]  the root of all evil is kind of like
+[13:37.84]  this phrase he uses. I I would I would
+[13:40.08]  say if I had if I had to imagine his way
+[13:43.20]  of sort of reminding himself, think
+[13:45.52]  about all this before you make a
+[13:48.88]  decision, right? Um
+[13:52.08]  that would be kind of my take on it,
+[13:53.44]  right? And and where it comes from. So
+[13:54.80]  hopefully, I don't know, that's very
+[13:56.16]  long, but it's a very expansive
+[13:57.20]  question. So hopefully I've kind of
+[13:58.16]  wrangled most of the stuff into there.
+[14:00.16]  It sounds like this is really a
+[14:02.40]  engineering trade-off where the software
+[14:06.08]  crisis is about the maintainability and
+[14:10.32]  uh the the complexity for people to
+[14:12.80]  actually write and handle their code and
+[14:16.64]  then the trade-off between performance
+[14:19.20]  and I guess you know code that is
+[14:20.88]  maintainable and it sounds like this new
+[14:23.60]  quote is
+[14:25.60]  you know be mindful of where you pay
+[14:28.00]  that cost. Yes. And it's always
+[14:31.04]  important to understand the context in
+[14:33.44]  which this was said historically. It's
+[14:35.68]  why I want it to be a historical talk
+[14:38.64]  because who your audience is is a large
+[14:42.80]  determiner of what the root of all evil
+[14:44.80]  is. Right? If you talking if you're
+[14:47.44]  talking to a bunch of people who don't
+[14:48.88]  think about optimization at all, then
+[14:50.88]  you don't really need to say this phrase
+[14:52.32]  to them, right?
+[14:54.24]  And so if you fast forward to today when
+[14:56.16]  a lot of people don't really take
+[14:57.60]  optimization into account at all during
+[14:59.84]  their programming um or very very little
+[15:03.52]  uh this phrase doesn't make very much
+[15:05.04]  sense to someone who does care about
+[15:06.80]  performance because like why would you
+[15:07.92]  ever say that? It just kind of seems
+[15:08.96]  like it encourages people to not be
+[15:11.60]  mindful of the performance of their
+[15:12.88]  program.
+[15:14.64]  But if you rewind to that time
+[15:17.92]  and you understand that well a lot of
+[15:20.88]  the program you know they had the
+[15:22.48]  opposite problem. A lot of the programs
+[15:24.32]  at that time what what programming was
+[15:27.12]  was coming up with all these crazy
+[15:29.20]  little assembly tricks to like shave a
+[15:31.84]  cycle off here or there, right? And if
+[15:34.24]  you're talking to an auditorium full of
+[15:35.92]  people who are really into that sort of
+[15:37.60]  thing,
+[15:39.28]  uh then it really can be the root of all
+[15:41.20]  evil, right? It's like you guys are
+[15:42.48]  spending all your time on this, but we
+[15:45.28]  have this really big other problem and
+[15:47.28]  that is not the right trade-off, right?
+[15:49.04]  That is you've you've swung, you know,
+[15:51.44]  like calling it trade-offs is a great
+[15:53.28]  way to say it. You've swung the pendulum
+[15:55.20]  way too far in one of those directions
+[15:57.04]  at some point. And and so, you know, to
+[15:59.36]  some degree, while I wouldn't while I
+[16:01.60]  would highly dispute the the description
+[16:03.84]  root of all evil today as a good thing
+[16:06.24]  to say to somebody or or that it leaves
+[16:08.56]  a good impression, when we rewind to
+[16:10.24]  that time period, I think it makes a lot
+[16:11.84]  more sense because when you look at what
+[16:13.36]  people were actually spending their time
+[16:14.72]  doing, where their priorities were, I
+[16:17.20]  think that maybe that wasn't so much of
+[16:19.04]  an exaggeration. I mean, obviously, it's
+[16:20.56]  a hyperbole, but it's less of one. in
+[16:23.68]  your slides, there were so many quotes
+[16:26.08]  and snippets of really kind of digging
+[16:28.40]  into the true history. Was there
+[16:30.24]  anything you found that surprised you
+[16:31.84]  when you were doing the research?
+[16:33.44]  >> I mean, constantly. Uh, absolutely,
+[16:36.32]  constantly. And I mean, first of all,
+[16:39.04]  I'll just say that there's
+[16:42.80]  as a meta point, I'll I'll give you a
+[16:44.56]  specific thing that surprised me that's
+[16:46.48]  kind of funny. Um, that's that's more
+[16:49.28]  about like a technical thing. But first
+[16:51.44]  I want to talk about a broader picture
+[16:53.84]  which is one of the things that really
+[16:57.12]  hits home for me whenever I do these is
+[16:59.60]  the personal aspects of it like these
+[17:03.12]  people were like friends and competitors
+[17:06.48]  and like all these sorts of things and
+[17:08.80]  it's all kind of lost to us in a way
+[17:12.24]  when we think about computing history in
+[17:14.16]  like a sterile way like you know when I
+[17:18.32]  read up on what Dystra Dyster was the
+[17:20.96]  person who kind of kicked off the
+[17:23.12]  structured programming.
+[17:25.76]  I don't want to call it a revolution.
+[17:26.96]  That's a bit too probably grandiose, but
+[17:29.36]  kicked off that train of thought. Say uh
+[17:32.08]  he wrote a a thing called notes on
+[17:34.88]  structured programming. It was a
+[17:35.92]  manuscript or monograph. I don't I don't
+[17:38.56]  remember what they called, you know, got
+[17:40.16]  like a typewritten like it looks like
+[17:41.52]  exactly like a typewriter written thing,
+[17:43.92]  right? Um he when he wrote that he was
+[17:48.40]  like very depressed like he was having a
+[17:51.04]  lot of trouble in his life at that time.
+[17:52.80]  He had he had gone through this this
+[17:54.72]  situation where uh they had done what
+[17:58.00]  people today now recognize as like
+[18:00.16]  pioneering work in distributed computing
+[18:02.24]  like he and these other uh people at the
+[18:05.20]  Einhovven Technological University. I
+[18:07.04]  don't I apologize I can't say the proper
+[18:09.12]  name for it. It's it's you know it's
+[18:11.52]  well beyond my pronunciation
+[18:12.96]  capabilities. But point being um he had
+[18:15.84]  done this really foundational work in uh
+[18:19.44]  distributed computing and published it
+[18:21.92]  and people today now recognize it as
+[18:24.24]  that it is like undisputedly a massive
+[18:26.40]  contribution to distributed computing.
+[18:28.24]  He did it with a part-time team of
+[18:30.08]  people at the university who this wasn't
+[18:31.68]  their job. it was a mathematics
+[18:33.36]  department they were in and you know as
+[18:36.32]  a result of that uh basically they sort
+[18:38.96]  of just got dissolved like the the
+[18:40.80]  department of mathematics I guess like
+[18:42.08]  he wasn't really specific about it but
+[18:43.92]  in his notes like the department of
+[18:45.12]  maths was just like they disbanded the
+[18:46.72]  team he was like this you know this
+[18:47.84]  isn't math or whatever I don't know they
+[18:49.44]  just had a a pessimist view of it so um
+[18:52.00]  and he was really depressed about that
+[18:53.44]  and he wasn't sure what he should do
+[18:54.64]  with his life and like you know what's
+[18:56.16]  what what's the deal here right and he
+[18:57.84]  was having this sort of um I don't want
+[18:59.84]  to call it an existential crisis because
+[19:01.36]  I don't want again put words in his
+[19:03.04]  mouth. These are historical figures and
+[19:05.04]  you know I can that's why I try to use
+[19:06.64]  quotes to try to show you like what they
+[19:08.32]  said. Um but like that's it's just so
+[19:12.00]  relatable when you go through the
+[19:13.20]  history this way. It it's not just some
+[19:15.12]  random guy who wrote some math down in a
+[19:17.20]  paper. It's like people were really
+[19:18.56]  struggling with this and some of the
+[19:21.04]  most important aspects of computer
+[19:22.48]  history come out of these amazing human
+[19:24.96]  stories. And I found that absolutely
+[19:26.56]  fascinating. So, I'll just put that out
+[19:29.04]  there as one of the biggest rewarding
+[19:31.36]  things about looking into this history
+[19:32.96]  if you ever do it is if you can go find
+[19:35.20]  the actual writings of the people,
+[19:38.56]  like things outside of just their
+[19:40.16]  technical papers, it's just fascinating
+[19:42.64]  and it's so much more relatable and
+[19:46.16]  fascinating because you feel the story.
+[19:48.40]  It's not just this abstract computation
+[19:50.88]  uh computer science thing that happened.
+[19:52.72]  So that's one thing.
+[19:54.96]  But the other thing I was going to say
+[19:55.92]  is like when you read through this
+[19:57.60]  stuff, I'm just I just go through piles
+[19:59.44]  of documents and I'm just reading them
+[20:00.88]  and seeing, you know, does this fit into
+[20:04.00]  this story? You know, should it be part
+[20:05.76]  of what I'm telling or is it extraneous?
+[20:07.76]  Is it something that, you know, uh is
+[20:10.16]  interesting perhaps, but not actually
+[20:11.60]  part of it? And one thing that I found I
+[20:14.72]  when the VOD of this lecture uh or talk
+[20:17.76]  goes up I'm going to uh include this in
+[20:20.64]  the notes because I thought it was so if
+[20:22.08]  it didn't make it into the talk I found
+[20:24.72]  a thing
+[20:26.72]  uh like a a uh thing from Tony
+[20:30.40]  So, so Charles, Anthony, Richard
+[20:32.40]  uh, who again is another massive figure
+[20:34.32]  in computer science, right? Hora,
+[20:35.76]  Dystra, and Canuth are like, you know,
+[20:37.36]  the three amigos and like they they all
+[20:39.36]  write to each other, right? And they're
+[20:41.36]  very important people in computer
+[20:42.40]  science history. So, um, I found a thing
+[20:45.52]  by him that was like a a thing he did
+[20:49.12]  not decide to pursue. It's like this
+[20:51.36]  note where he's talking about, you know,
+[20:53.04]  he's talking about this thing that he's
+[20:54.56]  thinking of doing. And there's just a
+[20:57.04]  handwritten thing on him from later on
+[20:58.80]  in his life when he was I guess
+[21:00.40]  categorizing these documents. And he
+[21:02.32]  just writes down like I decided not to
+[21:04.56]  pursue this because you know I I talked
+[21:07.12]  about it at this conference that I was
+[21:09.28]  at and Peter Nauer who's like again
+[21:12.40]  another famous figure in computer
+[21:14.24]  science history. If you've ever heard
+[21:15.28]  the if you ever looked at um like
+[21:16.72]  contextfree grammarss and parsing you've
+[21:19.44]  probably heard Bakasau form. He's the
+[21:21.92]  ner in Bakasnau form. If you ever heard
+[21:23.76]  of the language Al Gallal, he was like a
+[21:25.60]  major, you know, figure in in
+[21:27.44]  standardizing that and writing up the
+[21:28.80]  standard and all this stuff, right? So
+[21:31.44]  anyway, Horus like yeah, I I proposed
+[21:34.16]  this thing. I went through I said it and
+[21:36.16]  like and Peter now was like ah making
+[21:38.56]  multipass compilers is easy. I I just
+[21:40.80]  wrote a nine pass one. So I was you know
+[21:43.28]  I decided not to pursue this, right? So
+[21:45.68]  what's the thing? I read through the
+[21:47.36]  thing and like maybe I'm just
+[21:50.80]  overreading it with the benefit of
+[21:54.24]  hindsight, but he pretty much describes
+[21:57.36]  static single assignment form like like
+[21:59.44]  SSA
+[22:00.96]  uh which is a very standard compiler
+[22:02.40]  technique developed in the 80s but this
+[22:04.40]  note is from the 60s. So it's like in my
+[22:07.92]  head I'm like did Peter Nau accidentally
+[22:10.72]  set back like computer like like
+[22:14.00]  compiler science by 20 years by like
+[22:17.20]  telling Tony well 15 let's say by
+[22:19.52]  telling Tony like this is not
+[22:21.68]  important when actually was would have
+[22:24.00]  been like very very important. So uh you
+[22:27.04]  find stuff like that all the time where
+[22:28.64]  you're like whoa what is this? I I saw
+[22:30.56]  another one too. Uh just one more I'll
+[22:32.72]  mention.
+[22:34.40]  Uh I I can't remember now. I'm sorry. Uh
+[22:36.96]  again, your brain kind of turns to mush
+[22:38.80]  when you try to dump this many documents
+[22:40.56]  into it for a talk. Uh uh there was a a
+[22:43.60]  pretty interesting thing I thought where
+[22:45.68]  uh uh Margaret Hamilton so the the
+[22:48.64]  person who you know managed the Apollo
+[22:51.76]  she was she was you know one of the core
+[22:53.84]  programmers originally on the project
+[22:55.28]  and then then was like the man like the
+[22:57.12]  manager of the whole OS like the whole
+[22:59.84]  like real-time software that ran the
+[23:02.40]  Apollo 11 well all the Apollo uh flight
+[23:05.68]  computer stuff right
+[23:07.76]  which I mean most people today herald is
+[23:10.00]  like a very very significant like
+[23:12.16]  real-time systems like achievement in
+[23:14.24]  that era, right? Like everyone pretty
+[23:15.76]  much agrees uh with that
+[23:18.72]  she had to write like a defense. I think
+[23:21.52]  it was in the AC the communication to
+[23:23.28]  the ACM maybe it was in data like they
+[23:24.88]  say apologize I can't remember the venue
+[23:28.08]  because like it had been pointed out as
+[23:31.44]  like a failure because people didn't
+[23:34.08]  understand the context that like the
+[23:36.00]  reason that the Apollo computer had to
+[23:37.60]  like trip those alarms was because that
+[23:39.60]  it had been used improperly like it was
+[23:41.36]  used in a configuration it wasn't
+[23:42.72]  supposed to and it actually rather than
+[23:44.80]  crashing went into backup modes and
+[23:47.20]  successfully landed like it it worked
+[23:49.36]  like it it actually was a triumph of
+[23:51.36]  like fault tolerant engineering and she
+[23:53.68]  had to write like a defense of this
+[23:54.96]  because people at the time were saying
+[23:56.56]  like oh that they screwed up like this
+[23:58.08]  is an example of of how why you wouldn't
+[24:00.00]  want to do engineering this way or like
+[24:01.68]  you know don't write the code this way
+[24:03.44]  and so um again stuff like that always
+[24:06.88]  makes me think like the more things
+[24:08.32]  change the more they stay the same
+[24:09.92]  exactly what would happen on Twitter now
+[24:11.52]  right like like some very successful
+[24:13.44]  thing that people did right they would
+[24:14.88]  just get like slandered and say that it
+[24:17.44]  was done wrong and there would be like a
+[24:18.72]  flame war and then they'd have to come
+[24:19.92]  out and have a thing, you know. So,
+[24:21.68]  anyway, uh those are just some examples,
+[24:23.76]  but there's so much great stuff in
+[24:26.08]  there. I highly recommend anyone who
+[24:27.60]  likes this kind of thing, you won't be
+[24:28.96]  disappointed if you go if you go
+[24:30.24]  dumpster diving, as I call it.
+[24:32.08]  >> When you said that you saw the human
+[24:34.64]  stories and that Dystra was depressed at
+[24:37.28]  that time, what did you see that made
+[24:40.16]  you realize that?
+[24:42.32]  >> One of the nice things about Dystra is
+[24:44.56]  that he's kind of a pretty straight
+[24:46.72]  shooter. And so I didn't actually have
+[24:49.76]  to do any interpretation. He literally
+[24:52.72]  talks about like being depressed. And
+[24:55.28]  like he has like a there's a paper uh
+[24:57.76]  not a paper like a thing that he did
+[25:00.64]  that's like a retrospective
+[25:02.80]  um on that's like handwritten by him
+[25:05.52]  later on in life and he literally says
+[25:07.92]  like in this period I was very depressed
+[25:10.32]  because of these reasons. Now he could
+[25:13.28]  be wrong about the source of his
+[25:14.80]  depression, right? Uh, so I don't want
+[25:16.64]  to claim that that just because he said
+[25:18.40]  it it's ne necessarily true or something
+[25:20.00]  like that. But one of the amazing things
+[25:23.44]  I I think one of the the really cool
+[25:26.64]  things about academics
+[25:29.04]  uh especially that era is they just
+[25:31.60]  produced a voluminous amount of material
+[25:34.32]  and so we don't have to guess that much
+[25:36.56]  in the private sector. I think it'd be a
+[25:38.24]  lot harder like if you wanted to know uh
+[25:40.64]  what people at you know maybe
+[25:44.08]  you know Lockheed or something were
+[25:46.24]  thinking or doing at that time I imagine
+[25:47.84]  it's much more difficult just because
+[25:49.68]  you know things are classified or
+[25:51.28]  they're not academics so they're not
+[25:52.32]  necessarily going to write them all up
+[25:53.84]  uh you know so a lot of the internal
+[25:55.12]  stuff when we read up academics don't
+[25:56.64]  really have that they don't have an
+[25:57.92]  incentive or a prohibition on writing up
+[26:00.48]  everything they do so they don't just
+[26:02.16]  have to have like a public-f facing
+[26:04.08]  statement of what they did or a public
+[26:06.00]  facing paper of what they and then oh
+[26:07.76]  there's this extra secret stuff. The
+[26:09.52]  academics don't have that restriction.
+[26:11.36]  They're sort of they benefit from being
+[26:14.00]  as forthcoming as possible about what
+[26:16.24]  they've accomplished. Usually
+[26:17.76]  >> I saw in the in the slides that you
+[26:20.40]  looked at go to considered harmful that
+[26:22.80]  FEMA. Do you have any sense of the the
+[26:25.36]  personal or people side of that?
+[26:27.74]  [laughter]
+[26:28.48]  Uh, so you're talking about the original
+[26:30.32]  like Dystra letter to the editor that's
+[26:32.32]  like Ed's Gdystra go-to cons uh
+[26:35.52]  statement considered harmful. This okay
+[26:38.64]  um the complete story is actually
+[26:40.40]  relatively simple. He according to him
+[26:44.64]  he was at a uh at a conference um uh in
+[26:49.12]  Tennessee
+[26:50.80]  where he was talking to Brian Randelle
+[26:54.24]  who's another computer science guy. um
+[26:56.56]  he he doesn't quite get the same level
+[26:58.56]  of uh name recognition as a canth or
+[27:01.28]  something like that. Uh but he has a lot
+[27:03.20]  of papers at that time. Like you can go
+[27:04.64]  find him. He's not an obscure he's not
+[27:06.16]  an obscure figure. I wouldn't say uh to
+[27:08.32]  anyone who reads the history. You'll see
+[27:10.00]  him come up. He's talking to Brian
+[27:11.76]  Randell and some other people outside.
+[27:13.84]  This is exactly like the same thing that
+[27:15.68]  happens at modern conferences. There's
+[27:17.68]  like the talks and then there's all the
+[27:20.00]  stuff that goes down at the bar, right?
+[27:21.84]  It's it's very much that they're
+[27:23.20]  outside. talking
+[27:25.52]  and according to him he's basically
+[27:28.64]  giving the same sort of example of a
+[27:32.72]  problem with the goto that he gives in
+[27:34.96]  the paper right this idea of enumeration
+[27:37.44]  we can talk about that later if but um
+[27:39.68]  but the sort of a side note
+[27:42.72]  he's sort of saying like here this is
+[27:44.56]  kind of a problem with with goto and one
+[27:47.04]  of the reasons that maybe it's not such
+[27:48.48]  a good idea and the people who are
+[27:51.60]  listening to him were like you know
+[27:53.04]  Brian and the others were like you
+[27:54.56]  should p like you should publish that
+[27:56.48]  that would be helpful because you know
+[27:58.32]  there's these arguments going on about
+[27:59.60]  whether goto is good or bad like that
+[28:01.20]  was kind of happening at the time
+[28:02.16]  already uh since since around 1959 even
+[28:05.52]  I think there'd kind of been a little
+[28:06.80]  bit of that had been kind of growing
+[28:09.04]  this idea that maybe go-to statements
+[28:10.88]  weren't weren't um the best idea
+[28:14.08]  uh as a way to structure your programs
+[28:16.32]  and so he does he goes back to Einhovven
+[28:20.16]  and he writes up this same thing he
+[28:23.04]  saying basically and he sends it to to
+[28:25.36]  communications of the ACM for
+[28:26.88]  publication.
+[28:28.72]  uh Nicholas Worth who is like the
+[28:31.44]  creator of Pascal right a very prominent
+[28:33.28]  figure also uh was very heavily involved
+[28:35.60]  in alol and all this sort of stuff like
+[28:37.28]  you know language designer guy he is the
+[28:40.24]  editor uh who is in charge of like
+[28:43.52]  getting this getting this thing
+[28:45.04]  published I guess I'm not exactly sure
+[28:46.72]  how things work at at the communications
+[28:48.24]  of the ACM
+[28:50.08]  he doesn't want to wait to have it
+[28:52.96]  published he doesn't want to take the
+[28:55.12]  time to like go through the referee
+[28:57.36]  process or whatever. I don't know like
+[28:59.36]  at that time what the requirements were
+[29:01.36]  for publishing a article in
+[29:03.68]  communications with the ACM but I'm sure
+[29:05.68]  that it involved a lot of procedure.
+[29:08.08]  wasn't just like, "Oh, hey, I'm, you
+[29:09.84]  know, I'm the creator of Pascal."
+[29:11.84]  Although that that time he wouldn't have
+[29:13.04]  been the creator of Pascal yet because
+[29:14.40]  Pascal comes later, I think, but but
+[29:15.92]  either way, he's like, "Hey, I'm this
+[29:17.44]  important guy. I'm just going to put
+[29:18.72]  this whatever I want communication."
+[29:20.40]  That's not how it worked. And so he
+[29:22.96]  decides that in order to get it
+[29:24.32]  published more quickly, he's just going
+[29:25.84]  to publish it as a letter to the editor
+[29:27.84]  because then there's no pro like any,
+[29:29.68]  you know, anything goes there as long as
+[29:31.12]  the editors are fine with the content, I
+[29:32.48]  assume. Like it doesn't have to be
+[29:33.44]  refereed, doesn't have to have any kind
+[29:34.80]  of review, it doesn't have to uh etc,
+[29:36.88]  etc.
+[29:38.56]  So, he turns it into a letter to the
+[29:40.56]  editor and he takes the name of the
+[29:43.76]  thing that Dystra sent, which was a case
+[29:46.48]  against the go-to statement. That was
+[29:48.48]  what Dyster wrote at the top of the
+[29:50.24]  thing as the title. He changes it for
+[29:53.36]  letters to the editor to Edgar Dystra
+[29:57.28]  go-to statement considered harm or
+[29:59.76]  considered harmful. Right?
+[30:02.00]  So, it wasn't it wasn't even Dyster's
+[30:05.44]  plan to like have it maybe be that
+[30:08.00]  confrontational,
+[30:09.76]  but that's what happens. Um, now this is
+[30:13.28]  not
+[30:14.80]  wellreceived to say the least. Uh, the
+[30:19.20]  according to can
+[30:21.44]  uh again I'm just trying to say who said
+[30:23.20]  what here. According to Canuth, Dystra
+[30:26.16]  said he got letters like like angry like
+[30:30.16]  threatening letters like uh in much the
+[30:32.64]  same way you would today, right? Like he
+[30:34.32]  got got people who were uh very abusive
+[30:36.88]  and at you know telling him off
+[30:39.84]  and I'm sure part of that is because by
+[30:42.00]  all accounts Dystra himself was also
+[30:44.40]  somebody who liked to push people's
+[30:45.68]  buttons. That's well acknowledged. Um I
+[30:47.84]  think Alan Kay is probably the best
+[30:49.20]  source for this. He talks about uh this
+[30:51.44]  uh he liked Dystra and they apparently
+[30:53.44]  got along well, but you know he he's
+[30:56.16]  often said that Dystra was someone who
+[30:57.68]  kind of leaned into the being uh sort of
+[31:01.36]  brash about stating things about
+[31:03.36]  programming and uh and kind of relished
+[31:06.40]  that position. So it probably didn't
+[31:08.40]  help that he was already sort of known a
+[31:10.16]  little bit in that way. But in general
+[31:12.72]  that's that's how it went down. And
+[31:15.29]  [clears throat]
+[31:16.72]  like I said, that wasn't the initial
+[31:20.24]  foray against goto statements by any
+[31:22.96]  stretch of the imagination, but it it
+[31:25.44]  just kind of
+[31:27.60]  maybe you call it the straw that broke
+[31:28.96]  the camel's back. It was like a it was
+[31:30.64]  like a flash point might be the way to
+[31:32.24]  say it. And so, and then the title of
+[31:34.80]  course be that Nicholas Berth picked uh
+[31:38.08]  is quite the doozy and kind of
+[31:40.08]  clickbaited everyone, you know, as I
+[31:41.76]  call it into that.
+[31:43.68]  It's funny. Yeah. Cuz I mean your social
+[31:45.84]  media, it's similar patterns, right?
+[31:47.60]  People have very explosive first lines
+[31:50.72]  and then the comments are full of all
+[31:52.96]  this [laughter] hate and stuff. In in
+[31:55.52]  their case, I'm guessing this is all
+[31:57.60]  papers. So you submit a letter to that.
+[32:00.00]  It's a physical thing and people are
+[32:02.48]  reading uh
+[32:03.84]  >> maybe a newspaper or something. I don't
+[32:05.04]  know what.
+[32:05.36]  >> Yeah, it's like a periodical like it
+[32:06.88]  comes, you know, as a bound. I mean, I
+[32:08.56]  guess there's all the things around us
+[32:10.00]  here are hard bound, but it's like
+[32:11.68]  usually was soft. It was a you know
+[32:13.36]  maybe a perfect binding uh kind of bound
+[32:17.28]  thing that has you you open it up table
+[32:19.20]  of contents and letters editor right and
+[32:22.08]  uh yeah like you can go find there are
+[32:26.00]  there are a few if you go look at
+[32:28.16]  people's personal papers which like like
+[32:29.76]  I said if I did this full-time I'm sure
+[32:32.48]  I could find out way more stuff than I
+[32:34.48]  did right
+[32:36.32]  but some people have gone and looked at
+[32:37.76]  the personal papers and occasionally
+[32:39.76]  some of them have been able to digitize
+[32:41.52]  some of those and put them online that
+[32:42.96]  we can look at and you can find for
+[32:45.76]  example online right now if you search
+[32:47.52]  for it uh
+[32:50.96]  there's a there's a back and forth
+[32:52.80]  letters personal letters between Dystra
+[32:55.52]  and a guy who is kind of into functional
+[32:57.60]  programming and promoting that and like
+[32:59.60]  you can look at the correspondence and
+[33:01.92]  it's kind of it's a little it's a little
+[33:05.36]  flame worry like like it it really like
+[33:08.08]  that's what they did they they didn't
+[33:09.76]  have the ability to do like pathy
+[33:11.20]  Twitter replies So it was just on paper.
+[33:15.04]  Uh and yeah and Canuth did something
+[33:18.24]  similar. It wasn't really a flame
+[33:19.92]  because he had a at least when reading
+[33:22.56]  it comes through as a tremendous amount
+[33:24.40]  of respect for the authors of the book
+[33:26.16]  structured programming which is uh
+[33:28.08]  Dystra and doll. Um he you know
+[33:32.40]  one of the things that he published was
+[33:33.92]  a series of open letters to them
+[33:36.48]  reviewing the book and talking about the
+[33:38.64]  things that he didn't find compelling in
+[33:39.92]  it. Right? like very respectful. So, it
+[33:43.04]  wasn't that one wasn't a a flame war.
+[33:45.52]  But that's what they Yeah, that's what
+[33:46.96]  they had to do because they didn't have
+[33:48.48]  social media. So, you know, Edgar
+[33:51.20]  Dystra's uh he wrote like all these
+[33:53.60]  things called EWD with a number. It was
+[33:56.24]  it was his initials basically. Um and
+[33:59.28]  then a number and that's like this like
+[34:01.52]  serialized list of all the things he
+[34:03.28]  wrote. And he like labels them this way.
+[34:05.28]  Like it's not like some historian
+[34:06.80]  characterized it after the fact. just
+[34:08.08]  like, "Oh, I'm doing a He's like, "I'm
+[34:10.16]  doing EWD 937 now." or whatever, right?
+[34:12.96]  It's hilarious. Uh, but anyway,
+[34:17.04]  several of those have been put online
+[34:19.36]  that are not necessarily technical.
+[34:21.76]  Like, for example, his trip reports. You
+[34:24.00]  can go read those and you can read about
+[34:25.68]  like, oh, like I went and I went and
+[34:27.76]  stayed at like such and such's house and
+[34:29.84]  like we went to dinner or whatever,
+[34:31.12]  right? So, you can find like some nice
+[34:33.04]  personal anecdotes in even the publicly
+[34:35.12]  available stuff. But in terms of like a
+[34:37.28]  real like heart-to-heart conversation, I
+[34:39.92]  didn't have access to anything like that
+[34:41.60]  that wouldn't have just been in a paper
+[34:43.44]  more or less normally. Um, so, you know,
+[34:47.04]  it's it's a shame. One of the problems
+[34:49.60]  with this stuff, it's so interesting,
+[34:52.40]  but it's not a job to do. Like, it's
+[34:55.04]  like if somehow it was a job, I probably
+[34:57.12]  would almost take that job. like like
+[34:59.44]  being the person who crawls through and
+[35:00.88]  tries to like redo this whole thing.
+[35:03.04]  But, you know, computer historian, no
+[35:05.04]  one's no one's hiring. Like that's not
+[35:07.36]  no one's interested in paying for that.
+[35:08.88]  So,
+[35:10.00]  >> you have this other talk and the title
+[35:12.32]  was just so catching. It was the big
+[35:14.72]  oops anatomy of a 35-year mistake.
+[35:18.24]  >> Yes.
+[35:18.72]  >> What is that 35-year mistake?
+[35:21.12]  >> Um, so this was a this was a kind of
+[35:24.64]  funny thing that happened to me that I
+[35:26.88]  uh then did a historical lecture on I
+[35:32.32]  I had worked on systems in the past that
+[35:35.36]  were basically like editors like you
+[35:37.84]  know you have to m like three 3D
+[35:39.68]  graphics editors like you have to multi
+[35:41.12]  select things and move them around and
+[35:43.20]  there's a bunch of like architecture
+[35:44.72]  things you have to learn to be able to
+[35:46.16]  write that kind of code and and certain
+[35:47.92]  kinds of problems you have to solve like
+[35:49.68]  a a very basic one that I would point
+[35:51.76]  out that hopefully most people can
+[35:53.28]  relate to would be if I have a bunch of
+[35:57.04]  things on the screen. Uh some of which
+[35:59.20]  have a color. So maybe maybe this is a
+[36:01.92]  drawing program and I've got some text
+[36:03.60]  and I've got some shapes and I've got um
+[36:05.76]  some uh strokes, you know, some some
+[36:08.64]  handdrawn stuff, whatever. And I want to
+[36:10.80]  be able to to select a bunch of them and
+[36:13.20]  I want the user interface to present to
+[36:15.68]  me which things I could edit on these
+[36:18.40]  shapes. So I want to be able to edit the
+[36:19.84]  color and I want it to apply to all of
+[36:21.28]  them. Right? This is just a basic
+[36:23.36]  architectural problem that you have to
+[36:24.72]  solve if you're going to write one of
+[36:25.68]  these programs and you want it to be any
+[36:26.72]  good. oftentimes you will see programs
+[36:29.12]  where the person didn't solve this
+[36:30.32]  problem and you can't do that. It's very
+[36:32.00]  frustrating, right? So a good program
+[36:34.40]  someone has solved that architectural
+[36:35.84]  problem in some way
+[36:38.56]  and I was watching um I just happened to
+[36:41.36]  be watching because sometimes I do like
+[36:42.96]  I like to watch old videos of computer
+[36:45.60]  science pioneer stuff and I was watching
+[36:48.08]  a a demo of Sketchpad. I'd seen it
+[36:50.24]  before, but I was watching a de demo of
+[36:52.16]  Ivan Southern Sketchpad. And Sketchpad,
+[36:54.16]  for those who don't know, is a
+[36:55.44]  groundbreaking computer graphics
+[36:57.28]  program. It's done with a light pen. Uh,
+[37:01.28]  and it was done in the early 60s. And
+[37:03.36]  you could draw things like you do in a
+[37:05.84]  modern CAD program and you could do
+[37:08.64]  stuff that even a lot of modern CAD
+[37:10.88]  programs don't really offer or only
+[37:13.04]  offered recently. I think in the talk I
+[37:14.64]  said in 2007 was the first time that
+[37:16.64]  like AutoCAD got some of these features.
+[37:19.20]  You could do stuff like say these two
+[37:21.04]  shapes like this line has to be
+[37:22.88]  perpendicular to that line, constrain
+[37:24.80]  it, and you could just do whatever you
+[37:26.08]  want with the drawing and it would like
+[37:27.36]  resolve for like making that happen. And
+[37:29.52]  these are very rare in programs even to
+[37:31.60]  this day. Like that's just not a common
+[37:33.20]  operation you would see in a drawing
+[37:34.48]  package today. So [clears throat]
+[37:38.00]  I was looking at this and I was like,
+[37:40.64]  how the heck did he solve this
+[37:43.52]  architectural problem? like how did he
+[37:47.60]  do this stuff in the early 1960s like in
+[37:51.68]  assembly language with no editing tools,
+[37:55.76]  no debugging tools. I mean, this would
+[37:57.52]  have been like, you know, either punch
+[38:00.48]  cards or one step away from punch cards.
+[38:02.32]  Like, it it would have been hard to
+[38:05.12]  develop this stuff.
+[38:07.28]  And when I went back and I went through
+[38:09.20]  his thesis and I looked at the code,
+[38:11.28]  it's actually documented how he did it.
+[38:13.20]  And I realized like, oh crap, this is
+[38:16.32]  actually like an entity component system
+[38:18.80]  basically like what we would now
+[38:21.12]  consider sort of stateofthe-art
+[38:24.72]  of real time architecture for doing
+[38:28.40]  these kind of operations meaning
+[38:30.32]  crosscutting like operating on this kind
+[38:33.76]  of property across many things at once
+[38:36.64]  that are all kind of different.
+[38:39.68]  And this was something that
+[38:41.28]  object-oriented programming, I'm
+[38:42.80]  editorializing now. Bunch of people will
+[38:44.80]  complain that I'm saying this, but this
+[38:46.00]  is just my opinion. Object-oriented
+[38:48.32]  programming and the pedagogy around it
+[38:50.88]  really struggled with that problem for a
+[38:52.80]  long time because there were teaching
+[38:54.64]  despite people who will now claim
+[38:56.48]  otherwise. I document it very completely
+[38:58.08]  in the talk. So I I don't think they
+[39:00.08]  have any leg to stand on. But the
+[39:01.84]  pedagogy at the time was all about build
+[39:03.76]  a domain model. The domain model looks
+[39:06.32]  like your hierarchy basically like I've
+[39:08.56]  got employees and employees I've got
+[39:10.96]  contractors and I've got derived like is
+[39:13.52]  this a full-time employee or a part-time
+[39:15.20]  employee like that was how they
+[39:17.44]  suggested these things should be
+[39:19.28]  implemented right and that kind of
+[39:21.52]  architecture doesn't work for these
+[39:24.08]  kinds of operations that I'm talking
+[39:26.16]  about identity component systems do and
+[39:28.88]  generally that kind of sort of uh
+[39:31.28]  rotated architecture I might call it uh
+[39:33.92]  does work for these.
+[39:36.16]  And so what I call the 35 mistake is the
+[39:38.88]  fact that
+[39:41.04]  I very ironically in my opinion
+[39:44.32]  sketchpad sort of showed in its
+[39:46.72]  architecture how you could solve this
+[39:48.56]  problem and how you could solve it in
+[39:50.24]  arguably an object-oriented way. I think
+[39:52.72]  if you squint at it, a person who does
+[39:54.56]  object-oriented programming could easily
+[39:56.16]  make an argument that you could do an
+[39:57.44]  object-oriented version of this. You
+[39:59.04]  don't have to violate any particular
+[40:00.64]  principles to do it. It's just not the
+[40:03.84]  hierarchy domain model way that people
+[40:07.44]  were conceptualizing it through a lot of
+[40:09.36]  the, you know, 80s and 90s, let's say,
+[40:12.40]  and even unfortunately to this day, but,
+[40:14.24]  you know, I think a lot of object
+[40:15.60]  ordering programs don't do that anymore.
+[40:18.00]  Ironically, that was in Sketchpad. The
+[40:20.40]  DNA was there and we could have had it
+[40:22.32]  right away because Ivan Sutherland
+[40:24.24]  figured it out. But weirdly enough, the
+[40:27.60]  whole idea of this sort of uh
+[40:29.76]  inheritance hierarchy with lots of
+[40:31.68]  encapsulation around it
+[40:34.48]  grew in part out of Sketchpad because
+[40:37.52]  like Alan K looked at it and said like,
+[40:39.68]  "Oh, the interesting part of this is the
+[40:42.40]  fact that you could take a a shape and
+[40:44.64]  not know what it was and just have this
+[40:46.80]  like draw a circle call on it or
+[40:48.48]  something." That was the part they took
+[40:50.08]  away from it, which is much less
+[40:51.20]  interesting in my opinion and not that
+[40:52.72]  architecturally useful in most cases.
+[40:55.60]  So in kind of this amusing way,
+[40:57.84]  Sketchpad contained in if if you know
+[41:00.48]  I'm editorializing it contained what I
+[41:03.28]  consider to be a good architectural
+[41:05.04]  idea, but the takeaway from it was a bad
+[41:07.68]  architectural idea is is how I would say
+[41:09.68]  it. And saying bad architectural idea is
+[41:11.60]  a little bit strong because as I say in
+[41:13.20]  the talk, I think there are times when
+[41:15.04]  you do want to think like a very high
+[41:17.04]  level, you might want to think about
+[41:18.24]  things in kind of the way that you know
+[41:20.88]  small talk thinks about them. Um, so I
+[41:23.28]  don't want to say bad idea in the
+[41:24.48]  absolute sense, but bad in the way it
+[41:26.08]  ended up being uh, you know, applied,
+[41:28.88]  let's say.
+[41:29.84]  >> Why is that class hierarchy not work for
+[41:32.32]  this problem?
+[41:33.36]  >> It's it's pretty easy to understand
+[41:34.96]  actually. So when you think through an
+[41:38.00]  inheritance hierarchy that's based on
+[41:39.76]  sort of what you see in the real world
+[41:42.32]  or what you're trying to model. So you
+[41:44.40]  say like uh the typical example and it's
+[41:46.88]  brought up tons of times by uh people
+[41:49.44]  who wrote the oop literature like be
+[41:51.36]  true strip uh like the small talk people
+[41:54.64]  is the idea is uh keeping it with a
+[41:57.04]  sketch pad example I'm going to have a
+[41:58.32]  shape from the shape I'm going to derive
+[42:00.40]  like triangle or circle and the
+[42:04.40]  encapsulation is around that thing. So a
+[42:07.28]  circle has a radius but shapes don't
+[42:10.48]  have radiuses. shapes don't necessarily
+[42:13.28]  know what that is, right? So, it tends
+[42:15.20]  to get deferred down and the
+[42:16.48]  encapsulation boundary is drawn around
+[42:19.52]  that sort of derived class that's like
+[42:21.60]  the most derived version of whatever
+[42:23.76]  this thing is, right?
+[42:25.92]  The problem is that creates a lot of
+[42:29.04]  headaches when now something that wants
+[42:31.12]  to work across a lot of shapes needs to
+[42:34.40]  actually do something intelligent with
+[42:37.92]  modifying say the scale of something or
+[42:41.12]  wanting to change its color because it
+[42:43.28]  doesn't really have a way to know what's
+[42:45.44]  going on in these highly encapsulated
+[42:47.60]  things.
+[42:49.52]  So typically what you end up having to
+[42:51.12]  do in those sit in those situations is
+[42:53.20]  you then have to take this inheritance
+[42:54.64]  hierarchy and kind of in a sense throw
+[42:56.56]  away the benefits of it. you end up
+[42:58.56]  having to make at the top all of these
+[43:00.80]  accessor iterator things that allow you
+[43:03.12]  to probe into that like lower class and
+[43:07.20]  say tell me all of the colors that you
+[43:09.68]  might be using and a name for them,
+[43:11.92]  right? Or and so in a sense what you end
+[43:14.40]  up having to do when you want the
+[43:16.00]  architecture to work is you have to
+[43:17.68]  rebuild the sketchpad version on top of
+[43:21.12]  the inheritance hierarchy version which
+[43:22.80]  doesn't really do anything for you,
+[43:24.08]  right? And it's not to say that there
+[43:25.84]  isn't some benefit that you can derive
+[43:28.56]  from having derived is kind of a pun
+[43:30.64]  here I guess that you can derive from
+[43:32.32]  having this idea of saying this thing is
+[43:35.60]  like this other thing. Please give me
+[43:37.60]  some of the implementation of it. That's
+[43:39.52]  not necessarily a bad thing in practice.
+[43:41.92]  The problem is when you teach people
+[43:43.60]  that this is how it's going to work.
+[43:45.04]  Like you just make this hierarchy and
+[43:46.40]  then your architecture is just supposed
+[43:47.76]  to work. it really illprepares them for
+[43:50.56]  the reality that like that's actually
+[43:52.16]  not going to solve most of most of the
+[43:53.76]  problems that you have are not going to
+[43:54.88]  be solved that way. Um and again it just
+[43:57.28]  comes from this fact that typically when
+[43:58.88]  we're working with computer programs
+[44:01.04]  most of the time what we need to do is
+[44:03.28]  create crosscutting operations that work
+[44:06.72]  with a lot of the data that's inside
+[44:08.80]  these derived classes. that's actually
+[44:10.80]  the thing that we want to do and it's
+[44:13.04]  really cumbersome and typically a bad
+[44:15.52]  fit for the problem space to put that
+[44:17.92]  into some virtual functions that are
+[44:20.16]  sitting at the top of this very uh sort
+[44:22.24]  of tall hierarchy. It's usually much
+[44:24.40]  better to do uh again even if you're
+[44:27.44]  doing object programming you don't have
+[44:28.96]  to stop doing objecting program you just
+[44:30.48]  have to think about it differently you
+[44:32.56]  have to think about what the objects are
+[44:34.24]  differently uh where you're drawing the
+[44:35.92]  encapsulation boundaries it just helps
+[44:37.76]  to think about it differently and say
+[44:39.52]  actually the more important things to
+[44:40.88]  model are what are the things that stuff
+[44:42.88]  is built out of how do I build a circle
+[44:46.24]  out of objects right what are those
+[44:48.88]  things a radius property a center
+[44:51.28]  property those maybe should be the
+[44:53.28]  objects that I'm thinking of as more
+[44:55.36]  first class citizens and this
+[44:57.12]  inheritance hierarchy stuff about what
+[44:58.64]  the objects are that I see on the screen
+[45:00.00]  like triangle and circle that's a
+[45:02.00]  distraction that's not the proper way to
+[45:03.84]  model the problem um and again I don't
+[45:06.72]  think I would be pissing off any
+[45:08.16]  object-oriented programmers by saying
+[45:09.84]  that today because I think a lot of them
+[45:12.08]  use architectures that do think about
+[45:15.04]  objects in that sort of rotated sense
+[45:17.84]  and not in the domain model hierarchy
+[45:19.76]  sense not that there aren't still people
+[45:21.04]  who are doing that but you know It's
+[45:22.96]  it's not the only way to to go nowadays.
+[45:25.52]  It's not the only way it's promulgated.
+[45:28.56]  Yeah, because I guess my immediate
+[45:29.76]  thought would have been in in that case
+[45:32.56]  the the base class has the notion of a
+[45:35.44]  color or some shared thing and we just
+[45:38.32]  operate if you're a shape then we assume
+[45:40.80]  you have a color and we but you're
+[45:42.64]  saying refactoring and putting up in
+[45:45.20]  there's suboptimal and there's you want
+[45:48.32]  all these uh subasses to have some
+[45:51.84]  handle to some radius property or
+[45:54.40]  something like that. is that
+[45:55.68]  >> what you just described is what tends to
+[45:57.84]  happen in systems that are architected
+[45:59.44]  this way. you end up with your derived
+[46:01.20]  class not really being very much of
+[46:03.20]  anything because in order to edit stuff
+[46:05.44]  you had to migrate it all up to the top
+[46:08.08]  and that there was actually terms for
+[46:09.76]  this uh in the old days I don't still
+[46:11.20]  use like fatty base classes right are
+[46:13.36]  things like that's like it just ends up
+[46:14.96]  your base class has like every type of
+[46:16.72]  property that any derived class might
+[46:18.56]  ever have like you have like get primary
+[46:20.64]  color get secondary color get tertiary
+[46:22.16]  color get right because it's like
+[46:23.36]  something needed three different colors
+[46:24.72]  or whatever uh and most things don't use
+[46:27.04]  those colors and all these other sorts
+[46:28.72]  of things
+[46:29.92]  And so um there's certainly nothing
+[46:32.08]  wrong with running a program that way.
+[46:33.44]  It's just again why did you bother with
+[46:35.20]  the hierarchy? Like you're not getting
+[46:36.88]  any actual encapsulation benefits from
+[46:38.88]  it because you just forced everything to
+[46:40.56]  the base class anyway. So why didn't you
+[46:42.00]  just make that be your thing? Just make
+[46:43.76]  one class called shape and be done.
+[46:46.16]  Right? So uh in terms of the the ECS
+[46:50.24]  style of implementation and I don't
+[46:51.84]  necessarily want to advocate for it or
+[46:53.76]  not because uh I I don't actually
+[46:55.76]  personally use ECS's or anything like
+[46:57.44]  that but they are very common. Now
+[47:00.32]  the idea there is to just turn it on its
+[47:02.16]  side and say look typically what we want
+[47:04.88]  to do is do things like okay there's
+[47:07.20]  stuff that has like physics on it like
+[47:09.44]  you know I'm I'm doing this thing and
+[47:10.56]  and I want to have like physical
+[47:12.00]  simulation of of entities. Well, the
+[47:14.64]  physics system is the thing that
+[47:15.92]  probably knows how that should be
+[47:17.12]  stored. So rather than having that be
+[47:19.68]  data in my derived class that is
+[47:22.24]  encapsulated around the derived class.
+[47:24.24]  Instead, why don't I just have the
+[47:25.84]  physics system knows what physics is.
+[47:28.72]  And then if you want to make something
+[47:30.32]  that participates in physics, you just
+[47:32.56]  have a handle for whatever this thing
+[47:34.72]  is, like a handle for my shape. That
+[47:36.64]  handle is valid in all the systems. So I
+[47:38.96]  can go look up the physics properties of
+[47:41.04]  the shape and gather it when I want to
+[47:43.84]  actually do something with it. But
+[47:45.36]  generally speaking, the encapsulation
+[47:47.20]  stays around the system. So physics
+[47:49.84]  properties are defined by the physics
+[47:51.60]  system because hey, that's who knows how
+[47:53.76]  physics should work and I just ask about
+[47:57.12]  my physics when I need to do something
+[47:58.64]  with it. And this kind of gets you out
+[48:00.32]  of that problem. And then now you can
+[48:02.24]  just compose things. Oh, I want to make
+[48:04.16]  something that has several physics
+[48:05.68]  elements in it. Fine. I can just have
+[48:07.36]  multiple physics handles if that's what
+[48:08.64]  I need or something like this. I can
+[48:10.00]  very flexibly like merge these things
+[48:11.76]  together. I want something to not have
+[48:13.52]  physics. I just don't ever insert the,
+[48:15.92]  you know, I don't ever ask the physics
+[48:17.12]  system to have a valid, you know, piece
+[48:19.76]  of data for this handle in it and it
+[48:21.28]  won't simulate any physics for it.
+[48:22.80]  Right? Whether that's the world's best
+[48:26.00]  architecture or not, I'm not going to
+[48:27.92]  argue for it or against it. It's just
+[48:29.68]  it's a lot better than domain model
+[48:31.36]  hierarchies. That I will say, right?
+[48:34.40]  OpenAI, Enthropic, Cursor, and Verscell
+[48:38.16]  all use this product to make their lives
+[48:40.00]  better. And the problem it solves is
+[48:42.56]  when you're building SAS or an AI
+[48:44.40]  product and you want to sell to other
+[48:46.32]  companies, there's all these
+[48:47.84]  requirements you need to meet. There's
+[48:49.76]  SSO, there's skim, there's arbback,
+[48:53.04]  there's audit logs. These are all things
+[48:54.88]  that take time to integrate but aren't
+[48:57.04]  the main focus of your app. Work OS is
+[48:59.36]  an API layer that lets you meet all of
+[49:01.20]  these requirements in just a few lines
+[49:03.44]  of code. So let's say you have a new SAS
+[49:05.84]  product and you want to sell to other
+[49:07.44]  companies. Work OS will solve all of
+[49:09.68]  these critical feature gaps for you. You
+[49:12.40]  can check them out at workos.com to
+[49:14.88]  learn more and get started. And I
+[49:17.04]  appreciate them for supporting my work
+[49:18.72]  and sponsoring this podcast. Jira
+[49:21.28]  byatlassian isn't just for tracking work
+[49:23.52]  anymore. Now you can pick your favorite
+[49:25.36]  AI agent to assign tasks to and they'll
+[49:28.08]  get access to the rich context that's
+[49:30.08]  already in Jira. When the agent is done,
+[49:32.32]  it surfaces a poll request. That way you
+[49:34.72]  can get more done with your favorite
+[49:36.32]  agents all in one place. Learn more at
+[49:39.28]  jira.dev. That's jir.dev.
+[49:44.00]  Appreciate them for sponsoring the
+[49:45.44]  podcast. And back to the show. [snorts]
+[49:47.92]  Earlier we talked about the the
+[49:49.68]  trade-off between I guess performant
+[49:52.48]  code and maintainable code and I saw you
+[49:56.80]  had this one video said you know in
+[49:59.12]  quotes clean code horrible performance
+[50:03.12]  I feel like this is on the same topic.
+[50:05.60]  What's your your take there on you know
+[50:08.80]  because you also put clean code in
+[50:10.96]  quotes. What does that mean?
+[50:12.56]  >> So it's a it's a fairly subtle topic
+[50:14.72]  right? Uh, and that's why the the quotes
+[50:16.88]  are there because um the first thing
+[50:18.80]  that I you have to point out is that
+[50:20.64]  clean code is clean code,
+[50:23.28]  object-oriented programming, a lot of
+[50:25.44]  these phrases, they mean different
+[50:27.04]  things to different people. And so if
+[50:29.04]  you're going to say that you're, you
+[50:30.40]  know, this code is clean, it's pretty
+[50:33.04]  hard to find two programmers who will
+[50:36.08]  agree on exactly whether it is or not,
+[50:38.96]  right? Like like they all have like
+[50:40.40]  different ideas about what is clean and
+[50:42.56]  what is not,
+[50:43.36]  >> right?
+[50:44.48]  So the reason I put that in quotes is I
+[50:46.16]  was talking about a very specific thing
+[50:47.36]  which is like literally like the book
+[50:49.60]  clean code like the thing where there's
+[50:51.36]  like here are the things that we would
+[50:52.64]  recommend that you do right so in that
+[50:55.60]  particular case what I was talking about
+[50:56.80]  is there's a certain set of ideas that
+[51:00.64]  is advocated in clean code as like these
+[51:02.88]  are the things you should do and they
+[51:05.12]  are like you should have uh everything
+[51:07.44]  should be kind of um I guess I would say
+[51:11.68]  dynamic dispatch or at least You
+[51:13.84]  shouldn't code shouldn't know the types
+[51:15.36]  it's operating on. Right? Saying it's
+[51:17.36]  dynamic dispatch is maybe it depends on
+[51:19.36]  the language whether that's going to be
+[51:20.56]  true or not. But when I write code I
+[51:22.64]  don't know what types I have. It's just
+[51:24.40]  I don't know like some base classes is
+[51:26.00]  what I'm operating on and they could be
+[51:27.36]  anything. Right? That's thing one. Thing
+[51:29.52]  two is functions should be very small.
+[51:31.68]  Uh in fact the the numbers are kind of
+[51:33.92]  weird. They're like four lines or five
+[51:36.08]  line. Like when you go look at the
+[51:37.44]  actual things that are claimed in some
+[51:38.80]  of the this literature it's it's really
+[51:40.72]  strange. you're just like, gosh, that's
+[51:42.80]  very small, right? Um, and I go through
+[51:46.88]  some of those things and I say, look, if
+[51:48.40]  we were to actually follow these, we get
+[51:51.20]  into a really bad state because a lot of
+[51:53.92]  the languages that people are going to
+[51:55.28]  be using to implement this stuff, like
+[51:56.96]  C++ for example, um, which even would be
+[51:59.60]  a fairly good case in a lot of because
+[52:01.68]  at least it's a compiled language and so
+[52:03.36]  on.
+[52:05.28]  In a a lot of cases, these things are
+[52:07.04]  kind of a recipe for disaster if you're
+[52:10.40]  if you're handing out types where you
+[52:12.48]  can't know the type at compile time or
+[52:14.64]  you can't know the type uh or it's or
+[52:16.40]  it's you know going to be in a different
+[52:17.68]  module. So, you know, unless you have
+[52:19.04]  like a really aggressive link time code
+[52:20.56]  generation, it's not going to be likely
+[52:21.76]  that you could figure this out and
+[52:23.28]  you're saying all the functions should
+[52:24.40]  be very small and of course they're
+[52:25.60]  going to be virtual because they're on
+[52:26.96]  these sort of types that you don't know
+[52:28.08]  what they are.
+[52:29.92]  This creates a really uh toxic
+[52:32.32]  combination for the compiler. Normally
+[52:36.00]  you can have I mean you can have small
+[52:39.04]  functions if you want them only four
+[52:40.32]  lines long. If the compiler can know
+[52:42.32]  that it can just inline that, right? If
+[52:44.24]  it can see clearly what you're doing and
+[52:46.24]  it can just merge those things in, we
+[52:48.00]  don't have a problem. If they're behind
+[52:49.52]  a virtual function, so it doesn't know
+[52:51.76]  like it can't guarantee that it is that
+[52:54.08]  type. Um it can't do that. And so when
+[52:58.32]  you talk about all this stuff, what
+[52:59.76]  you're what you're giving up people I
+[53:01.52]  think also because the video I mean the
+[53:03.20]  video was a very short video as part of
+[53:04.72]  like a series
+[53:06.56]  I think people sometimes get the wrong
+[53:07.84]  idea that I think that virtual function
+[53:09.28]  calls cost a lot. They do cost something
+[53:11.68]  but you know depending on how you want
+[53:13.36]  to look at it they actually don't cost
+[53:14.56]  that much. Uh because you know it
+[53:17.04]  depends on whether it's predicted
+[53:18.56]  correctly or not but in general like the
+[53:20.48]  cost of virtual function is less than
+[53:21.84]  you would think. A lot of times
+[53:24.24]  the actual reason that it slows things
+[53:25.92]  down is because the compiler cannot
+[53:27.60]  merge the code together, right? It can't
+[53:29.60]  inline stuff and remove and reduce the
+[53:31.68]  waste. Like that's the actual problem.
+[53:34.32]  So if you just want to call a virtual
+[53:35.76]  function, yeah, it if it was a really
+[53:38.24]  really uh hardcore optimization
+[53:40.56]  scenario, then you don't want anything
+[53:42.48]  probably calling a virtual function in
+[53:44.00]  general because there is some cost to
+[53:45.36]  that. Just calling a function has cost.
+[53:48.56]  But that wasn't the really bad part of
+[53:50.80]  it, right? So, it's that plus there's an
+[53:53.68]  additional thing which is that it can't
+[53:55.52]  unroll and go wide on things. If the
+[53:57.52]  compiler can see everything you're
+[53:58.80]  doing, it can use SIMD. It can like
+[54:01.20]  widen loops to operate on multiple
+[54:02.88]  things at once. It can unroll those
+[54:04.16]  loops. There's all these things it can
+[54:05.28]  do. If it's got these virtual functions,
+[54:06.80]  it's just like that's it. I don't know.
+[54:09.52]  I I can't make decisions about that. I
+[54:11.04]  have no idea what this thing on the
+[54:12.00]  other end is doing. Right? So, uh that
+[54:14.96]  was kind of my point on that. And uh
+[54:17.36]  again I it's not meant to be uh
+[54:19.76]  assailing the idea that your code should
+[54:21.68]  be easy to read or easy to maintain.
+[54:23.68]  It's just more like these guidelines
+[54:25.44]  seem really bad. And also I don't think
+[54:27.60]  we need them for code to be
+[54:29.20]  maintainable. I I don't have trouble
+[54:31.12]  maintaining functions that are 30 lines
+[54:32.80]  long or 50 lines long. I don't find that
+[54:34.72]  five is a magic number or something or
+[54:36.16]  that has to be really short. Uh and also
+[54:38.00]  I find that it's usually pretty easy to
+[54:39.52]  write code where I know what the types
+[54:41.04]  are. Um that those can be determined at
+[54:42.96]  compile time. Like I don't think that
+[54:44.88]  results in code that's particularly hard
+[54:47.36]  to read.
+[54:48.80]  >> When I was in college very and very
+[54:51.36]  early I remember people recommend that
+[54:53.84]  book say oh you should read clean code.
+[54:56.32]  >> So my understanding that you wouldn't
+[54:57.76]  recommend people who are software
+[54:59.76]  engineers to read that.
+[55:01.92]  >> I guess the way I would categorize it's
+[55:03.52]  a mixed bag. So I would I wouldn't
+[55:05.44]  actually say that I disagree with all
+[55:07.52]  all of the things in the book though. I
+[55:09.20]  mean some of the things are things that
+[55:10.80]  I definitely do myself like giving um
+[55:14.16]  variables like easy to understand names
+[55:17.36]  uh is something that I think would be
+[55:19.20]  and that's in that book uh is good
+[55:21.76]  advice right and so kind of more I
+[55:24.96]  wouldn't I wouldn't necessarily say do
+[55:26.48]  or don't read a book what I would say is
+[55:28.40]  like I think there's some things in this
+[55:30.32]  book that don't that aren't addressed
+[55:32.72]  properly like I don't think you want to
+[55:34.56]  tell people these rules of thumb and not
+[55:36.32]  tell them about these other problems
+[55:38.16]  That was exactly what I was uh pointing
+[55:40.72]  out there. And so usually it's more that
+[55:43.36]  it's like
+[55:45.92]  I find that often times there is this
+[55:49.44]  tendency
+[55:51.20]  um I guess I'll say to pretend
+[55:54.32]  that
+[55:55.84]  we don't have to talk about performance
+[55:57.84]  and we can just say like in fact
+[55:59.52]  premature optimization is root all evil.
+[56:01.36]  Bringing it back to there. I feel like
+[56:03.36]  there's this uh temptation and very
+[56:06.96]  prevalent practice of sort of taking
+[56:09.04]  that idea to mean we don't have to talk
+[56:12.16]  about performance when we're teaching
+[56:13.28]  people things at all. Or like when you
+[56:15.28]  write the book clean code, you don't
+[56:16.64]  have to talk about performance at all.
+[56:17.84]  can just include a thing that's
+[56:19.68]  basically like hey um you know there's
+[56:23.76]  performance issues but most of the time
+[56:25.44]  it's not a problem or something like
+[56:26.48]  that which is you know or if you look at
+[56:28.72]  uh refactoring the book refactoring very
+[56:32.00]  popular it literally says exactly that
+[56:33.36]  in like the opening thing it's like you
+[56:34.48]  know there there might be performance
+[56:35.76]  concerns but you know they're usually
+[56:37.68]  okay or something right and it's like
+[56:39.44]  that is not true I just think that's
+[56:41.68]  fundamentally not true I think these
+[56:43.20]  books should include detailed
+[56:46.00]  discussions of the actual performance
+[56:48.48]  problems that you are very likely to hit
+[56:50.32]  if you take some of their advice. Um
+[56:52.96]  because it's not that it means you can't
+[56:56.08]  do those things, but I'll quote you back
+[56:59.28]  to you. It's about trade-offs. There is
+[57:02.08]  always a trade-off that you're making.
+[57:04.56]  And sometimes if you understand the
+[57:06.88]  trade-off, you will make it. You'll say,
+[57:09.52]  I know this is going to cost this may be
+[57:11.52]  a serious performance problem for us,
+[57:13.52]  but I think that's okay. Like I think
+[57:15.76]  it's not like our performance won't
+[57:17.36]  suffer to the point where it's a problem
+[57:19.04]  for the product. I understand what
+[57:22.16]  that's is. There's a huge difference
+[57:24.80]  between that and just going like ah we
+[57:26.96]  don't worry about performance till the
+[57:28.00]  end, right? Like there's it's completely
+[57:29.60]  different, right? Those are two
+[57:30.56]  different engineering approaches. Uh and
+[57:33.12]  so what I try to do is encourage people
+[57:36.64]  to put that analysis back in, understand
+[57:39.28]  the performance trade-offs you're
+[57:40.48]  making, understand how much it might
+[57:42.80]  cost in the future to like make these
+[57:45.04]  fixes. And I I don't really do any AI
+[57:48.88]  stuff, but my sort of feeling is more so
+[57:52.40]  now than ever, I feel like that's got to
+[57:54.08]  be pretty important because you're
+[57:55.44]  instructing these AIs to do what they're
+[57:57.92]  going to do. And I feel like it would be
+[58:01.36]  a bad idea to not know about performance
+[58:04.48]  trade-offs because especially if an AI
+[58:07.20]  is going to be doing your bidding and
+[58:09.36]  structuring the code the way you want to
+[58:10.80]  structure it or doing whatever. It seems
+[58:12.88]  like a very straightforward part of the
+[58:14.08]  process to include performance stuff in
+[58:16.88]  those instructions, right? Like that
+[58:18.40]  would be a natural thing that we would
+[58:19.68]  want to understand and do, right? So I
+[58:21.92]  feel like
+[58:23.76]  really I've been just trying to get that
+[58:25.04]  more into the conversation. Uh, and I
+[58:27.92]  feel like it's it's as relevant now as
+[58:29.84]  it ever was, and arguably maybe more so.
+[58:31.68]  I don't know, but I could be wrong about
+[58:32.96]  that.
+[58:34.00]  >> What are some things that are in your
+[58:36.24]  mind, they're those high value
+[58:39.20]  performance things to consider that
+[58:41.04]  don't cost a whole lot to think about?
+[58:43.68]  >> So, to me, awareness is the number one
+[58:46.80]  thing, right? Understanding roughly the
+[58:49.44]  performance characteristics of the
+[58:51.44]  hardware that you're working on. Uh,
+[58:53.12]  which includes things like, you know, if
+[58:54.48]  there's a network, like what does that
+[58:55.76]  look like? and so on. Um, it's really
+[58:59.28]  about awareness more than anything else
+[59:01.84]  because a little bit of awareness can go
+[59:05.84]  a very long way. If you understand the
+[59:08.96]  basic concept that like you know a that
+[59:12.32]  network latency versus network
+[59:14.16]  throughput are different things, you can
+[59:16.40]  make upfront decisions about structuring
+[59:18.48]  code such that you batch things properly
+[59:21.28]  uh and so on and so forth. If you don't
+[59:23.12]  understand those things, you could get
+[59:24.40]  very far down a project only to realize
+[59:27.20]  that everything you designed and all the
+[59:29.36]  way it works is all very serial and
+[59:31.44]  really just cannot be accelerated over a
+[59:33.28]  network at all. Like it's never going to
+[59:34.80]  run uh reasonably or something like
+[59:36.56]  this, right? Uh and so I think the the
+[59:40.56]  lowest hanging fruit is just to get some
+[59:42.96]  education in performance. like get some
+[59:45.28]  education in how to think about the way
+[59:49.36]  a machine works and what makes it fast
+[59:51.60]  or slow, what it struggles with and what
+[59:53.36]  it doesn't and just to keep that in the
+[59:55.68]  back of your head because at the end of
+[59:58.00]  the day, if you have that knowledge, I
+[60:00.24]  think you're very unlikely to make the
+[60:02.32]  kinds of architectural decisions that
+[60:04.72]  will be hard to undo later, right?
+[60:08.00]  Um, and so that's really that's really
+[60:10.56]  the majority of it I think and that is
+[60:13.12]  by far the highest impact lowest cost
+[60:16.40]  thing you can do is just do that
+[60:17.52]  training once because once you have it
+[60:19.12]  it's with you forever once you
+[60:20.88]  understand how to think about
+[60:22.48]  performance it can always be there and
+[60:26.24]  at any time you can sort of have that
+[60:28.24]  alarm bell of like this I don't see you
+[60:32.16]  know you're always kind of looking like
+[60:33.44]  I don't see the path towards this
+[60:35.28]  running well and then So that's that
+[60:37.68]  your key to stop and go like uh maybe we
+[60:39.68]  need to rethink like how we were making
+[60:41.20]  some of these decisions. As long as you
+[60:43.68]  can see that path, you're pretty you can
+[60:46.00]  you can delay most like optimization
+[60:49.20]  work. As long as you can see the path
+[60:51.44]  like here is how we will optimize this.
+[60:54.16]  You're in pretty good shape because um
+[60:57.28]  if you're making those trade-offs
+[60:58.72]  correctly, you're not going to paint
+[61:00.80]  yourself into a corner where there's
+[61:02.32]  nothing that you can do other than scrap
+[61:04.32]  and rewrite. Right. you had this one
+[61:06.72]  video title. It said, you know, where
+[61:09.12]  does bad code come from? And so, yeah,
+[61:11.32]  [laughter] you know, I guess, yeah, my
+[61:12.56]  question to you is, you know, what's the
+[61:14.00]  answer to that? Where where does bad
+[61:15.68]  code come from?
+[61:18.24]  Yeah, that's a good question. Um, my
+[61:20.32]  feeling on where bad code comes from is
+[61:23.12]  that for everything that I've seen on
+[61:26.24]  projects in the past, the bad code all
+[61:29.04]  seems to come from roughly the same
+[61:31.52]  source. And that is not dealing with the
+[61:36.64]  actual thing that's happening, right? Um
+[61:41.44]  there's a lot of ideas in computer
+[61:44.08]  science about sort of doing upfront
+[61:47.52]  design and making a lot of decisions
+[61:49.52]  without ever really implementing
+[61:52.08]  anything, right?
+[61:54.48]  And I have found that universally that
+[61:57.76]  leads to the worst kind of code. And the
+[62:00.56]  reason for that is, you know, uh I hate
+[62:04.40]  to be pessimistic and I hate to be
+[62:06.72]  pessimistic about my own ability, but
+[62:08.88]  I'll just say for me personally,
+[62:11.44]  I am not able to correctly hold all of
+[62:16.40]  the details for most complex software in
+[62:19.44]  my head at once. There's just a lot of
+[62:22.16]  stuff going on at like when when the
+[62:26.00]  actual, you know, instructions hit the
+[62:28.32]  CPU. There's a lot going on down there
+[62:31.52]  that's very hard to keep all in your
+[62:33.52]  head. And so when you approach an
+[62:35.76]  upfront design, typically unless the
+[62:38.08]  problem is very is like stupidly simple,
+[62:40.56]  right?
+[62:42.64]  When you approach something with upfront
+[62:44.08]  design and you think you're going to get
+[62:45.92]  all of this architecture worked out
+[62:47.84]  ahead of time, you forget some important
+[62:51.28]  things. You make decisions without
+[62:53.28]  realizing, oh wait, there's this thing
+[62:55.60]  that has to happen there that means that
+[62:57.84]  this isn't really the right way for
+[63:00.24]  these pieces of code to interoperate.
+[63:03.04]  And so then you, you know, you end up
+[63:05.76]  seeing these hilarious APIs or something
+[63:08.08]  where it's like you're just like, how
+[63:09.60]  did this end up being the way that you
+[63:12.00]  do this, right? Like I have to create
+[63:13.52]  all these objects and I have to connect
+[63:15.04]  them together with these things and I
+[63:16.48]  have to create this weird like filter
+[63:18.24]  graph thing and then I have to call
+[63:19.28]  compile on it. but only like you end up
+[63:21.36]  with these like insane things. You're
+[63:22.80]  like all I wanted to do was call this
+[63:24.72]  one thing that said like low pass filter
+[63:26.48]  this buffer. It could have been one
+[63:27.76]  function call, right? It's like how did
+[63:29.60]  you get there? And the answer is because
+[63:31.20]  you weren't actually like dealing with
+[63:33.44]  the actual problem and looking at what
+[63:35.04]  the actual code looks like uh when you
+[63:37.92]  want to actually uh when you actually
+[63:39.92]  want to solve the problem in practice.
+[63:42.24]  And so my idea of where bad code comes
+[63:44.08]  from is usually just it's that it's this
+[63:46.24]  failure to engage with the actual
+[63:48.24]  reality of the situation.
+[63:50.72]  Um
+[63:52.96]  maybe there are people out there I
+[63:54.56]  certainly have never met any but maybe
+[63:56.32]  there are people out there whose brains
+[63:57.84]  are so expansive that they can actually
+[63:59.68]  hold all that in there and they can
+[64:01.12]  therefore just do it upfront. Um, but
+[64:04.32]  other than for very sort of constrained
+[64:06.80]  problem spaces, I've never seen that
+[64:08.96]  work. And and you know there, like I
+[64:11.12]  said, there are sometimes when that's
+[64:12.24]  the case with the trans like if you're
+[64:13.52]  just doing like I'm trying to do this
+[64:15.92]  particular mathematical operation, that
+[64:18.08]  might be a case where you can work it
+[64:19.04]  all out on paper because it's very
+[64:20.32]  specific like what it is. It takes these
+[64:22.00]  n inputs, produces this output, and I
+[64:23.84]  can work right. But when you're talking
+[64:25.36]  about architecture like, hey, it's a web
+[64:27.04]  browser, right? Some complicated thing.
+[64:29.92]  The details are all that matter to me,
+[64:32.96]  right? It's like it's where all the
+[64:34.48]  complexity lies and if you try to do the
+[64:36.80]  design without reckoning with them, it
+[64:39.68]  just leads to bad results in my
+[64:40.96]  experience. So,
+[64:41.84]  >> so how do you avoid writing bad code in
+[64:44.56]  that case?
+[64:45.68]  >> I I try to start with the actual
+[64:48.56]  solutions to the problems and work up
+[64:50.80]  from there. So, um
+[64:54.96]  one way to say it would be instead of
+[64:56.24]  top down programming, bottom up
+[64:57.60]  programming, right? Uh as much as
+[64:59.12]  possible. And top down programming isn't
+[65:00.48]  really the same as designing up front,
+[65:01.76]  but you know, I'm just saying like as a
+[65:03.92]  contrast there, try to start with the
+[65:06.72]  things that you know you need. Like it's
+[65:08.08]  like, okay, if I'm if I'm building this
+[65:09.44]  thing, it's got to have a rasterizer.
+[65:10.80]  All right, I'm going to start making a
+[65:11.76]  rasterizer. I'm going to see what kinds
+[65:13.12]  of stuff that does and how I would like
+[65:15.28]  what's the most uh straightforward way
+[65:17.36]  to call this and use it. Okay, let's
+[65:19.36]  make an API out of that, right?
+[65:21.44]  build it out of steps where the
+[65:23.68]  abstraction comes from actual working
+[65:27.04]  code that gets abstracted rather than
+[65:29.76]  pushing the abstraction down from the
+[65:31.60]  top where I say this is how I will
+[65:34.48]  abstract the rasterizer and now I go
+[65:37.68]  write the rasterizer in the thing that
+[65:39.36]  uses the rasterizer only to find that
+[65:41.60]  that is not a very good way to use a
+[65:43.28]  rasterizer right like so to me starting
+[65:46.40]  with that and working upwards is the
+[65:48.96]  best way to ensure that you will get an
+[65:50.96]  architecture uh that is at least good
+[65:53.60]  for one thing. Now, if you want it to be
+[65:55.52]  good for multiple things, you probably
+[65:57.44]  need a couple different like I want a
+[65:59.52]  few different varied things that would
+[66:01.36]  use this rasterizer that I will kind of
+[66:02.96]  work on together and I'll make
+[66:04.48]  abstraction decisions that work across
+[66:06.32]  all three of them. That's a good way to
+[66:08.16]  make a more reusable API that works for,
+[66:10.64]  you know, a lot of things. But I never
+[66:12.88]  want to just sit down and say, "How will
+[66:15.44]  I design an API for lots of people to
+[66:17.68]  use a rasterizer without actually
+[66:19.76]  writing any of it?" It's like, "No, no,
+[66:21.28]  no." Like, and I definitely can't do it.
+[66:23.44]  And I I question I I would question
+[66:25.76]  someone who says that they can, unless
+[66:28.16]  one caveat, they've written a lot of
+[66:29.76]  them before, right? If you've written
+[66:30.88]  tons before, then you've sort of done
+[66:32.32]  the thing that I'm talking about already
+[66:33.68]  and you might remember, oh, it's this
+[66:35.44]  way, right?
+[66:37.36]  I think there's a lot of common advice,
+[66:40.08]  especially at these these larger
+[66:41.68]  companies where there's this processes
+[66:45.12]  to, you know, write a design doc and
+[66:48.56]  kind of uh, you know, put together
+[66:50.40]  everything in advance, present it before
+[66:53.12]  you write any code. And sounds like
+[66:56.00]  you're saying that that's a terrible
+[66:57.44]  idea.
+[66:57.92]  >> I think that's an absolutely terrible
+[66:59.36]  idea. Now, that doesn't mean that I
+[67:01.76]  wouldn't be okay with that process with
+[67:03.20]  like a slight modification, right? If
+[67:05.52]  what you're doing during that time is
+[67:07.20]  writing test code in the way that I'm
+[67:09.36]  saying, so we're going to write a little
+[67:10.88]  experimental rasterizer. We're going to
+[67:12.32]  do those things. We're going to start
+[67:13.04]  and then our document that we're
+[67:14.56]  producing is here is what we have
+[67:17.04]  determined is a good API based on these
+[67:19.36]  experiments. I have no problem with
+[67:21.52]  that. That's really that's following my
+[67:24.24]  procedure pretty much to a tea. And you
+[67:27.36]  know, I don't tend to produce
+[67:28.72]  documentation because I work you know in
+[67:30.72]  on smaller teams. I don't have to have a
+[67:34.72]  thousand person org know exactly what it
+[67:36.80]  what I'm doing there or whatever.
+[67:39.76]  So I wouldn't produce upfront
+[67:40.88]  documentation normally in a in a case
+[67:42.40]  like that. But if you if you wanted to
+[67:44.32]  that seems totally reasonable, right?
+[67:45.68]  And that like is communicating our
+[67:47.76]  research into how this should be
+[67:49.76]  structured uh out to a wider audience.
+[67:52.40]  But we still did the due diligence of
+[67:53.92]  determining that it really does work in
+[67:55.44]  practice. It's not just our guess about
+[67:57.76]  what it will be.
+[67:59.20]  >> I see. Okay. So you're saying kind of
+[68:01.04]  this u pair design, pair prototype kind
+[68:04.64]  of, you know, like you just build as you
+[68:06.48]  go, but it's just so you get a sense of
+[68:08.48]  the reality of the design.
+[68:10.64]  >> Yeah. And I think I would be very
+[68:11.92]  comfortable with the team that wanted to
+[68:13.04]  work that way if they're like, look, we
+[68:14.24]  want to produce, we want to document
+[68:15.84]  this thing before we start developing
+[68:17.36]  it. That's just how we feel more
+[68:19.12]  comfortable, you know, with how we're
+[68:20.80]  going to do it. Maybe it's a very large
+[68:22.24]  org. Maybe we have some very good
+[68:24.08]  reasons for that. Um, then I would say
+[68:27.68]  totally fine. It's just I want I want to
+[68:30.00]  hear you know if I'm going to be
+[68:31.36]  comfortable with it I want to hear that
+[68:32.48]  that process is not we're just typing on
+[68:34.16]  paper. We are actually testing these API
+[68:37.52]  uh design decisions and they come from
+[68:39.68]  looking at actual usage code that we
+[68:42.48]  have made and that we have implemented
+[68:44.48]  at least uh experimental versions of so
+[68:47.84]  that we know they really do account for
+[68:49.92]  all the details that we're likely to
+[68:51.52]  encounter in practice. That's what I
+[68:54.48]  want to hear, right? I don't want to
+[68:55.68]  hear like ah we thought it through. Like
+[68:57.44]  I'm like did you did you think it all
+[69:00.08]  the way through? Because I've seen a lot
+[69:01.36]  of times where people thought they did
+[69:02.56]  and they didn't including myself. Like
+[69:04.40]  that is not that is not a I always think
+[69:06.08]  it all the way through. So it's like no
+[69:07.12]  this comes from a personal place of I
+[69:09.28]  forgot the thing. Like I forgot this
+[69:10.88]  important thing and I made a really
+[69:12.32]  stupid design. Right.
+[69:14.32]  >> There's another video you had. It was it
+[69:15.92]  was titled the only unbreakable law.
+[69:19.20]  >> Oh yeah.
+[69:19.76]  >> And you know what is the only
+[69:22.00]  unbreakable law in software engineering?
+[69:24.08]  So yeah, that was that was a a lecture I
+[69:26.88]  did um where I was trying to think of
+[69:30.32]  like if I was going to say one thing
+[69:32.24]  about architecture to people, right? If
+[69:33.92]  I was going to say one thing about
+[69:34.88]  architecture,
+[69:36.64]  what could I say that isn't probably
+[69:39.60]  wrong? Because you think about a lot of
+[69:41.52]  our ideas about architecture, it's like
+[69:42.96]  even the stuff I just said to you, who
+[69:45.04]  knows what we're going to be thinking 10
+[69:46.80]  years from now. It's like they're not
+[69:48.96]  really laws. They're just
+[69:52.16]  they're observations that we've had that
+[69:54.16]  maybe this is a good way to do things,
+[69:55.84]  but it's not really a law. Right? So, uh
+[69:59.36]  the only thing I've seen that feels like
+[70:01.36]  a real law to me is the thing I cover in
+[70:03.44]  this lecture, which is Conway's law. Uh
+[70:06.00]  and this is a a it's not a real law in
+[70:10.08]  the sense of like the laws of gravity or
+[70:13.04]  so like it's not a physics law like a a
+[70:15.20]  physicist would laugh at calling it a
+[70:16.80]  law. um you know, it's probably not even
+[70:20.08]  a theory. It's more like a hypothesis at
+[70:23.12]  this point, right? But in terms of
+[70:25.44]  things that I would place money on
+[70:30.40]  being validated as a law at some point
+[70:32.48]  if we ever had the means to do so. This
+[70:35.76]  would be one of the only software
+[70:37.44]  engineering things that I think uh would
+[70:40.00]  qualify and it is
+[70:43.84]  that if you would like to organize
+[70:49.60]  a series of like a set of people to work
+[70:52.56]  on something or in the modern parliament
+[70:54.80]  let's say agents. So it could be, it
+[70:56.88]  doesn't have to be a human. It's any
+[70:59.52]  system that has sort of its own internal
+[71:02.00]  processing like a human brain does or
+[71:04.08]  like a computer does.
+[71:06.64]  If you need to partition a problem into
+[71:10.56]  a set of workers in this way
+[71:14.16]  where the communication between those
+[71:16.24]  workers is slower than their own
+[71:18.40]  internal computation ability, which we
+[71:20.80]  would all agree is true about humans.
+[71:22.24]  It's true about two computers running an
+[71:24.48]  AI model as well, right? the amount of
+[71:26.00]  time it takes to send information back
+[71:27.28]  and forth to them is is significantly
+[71:29.28]  slower than what like the GPU can be
+[71:31.12]  processing directly on it on its own.
+[71:32.88]  Right? In systems that look like that,
+[71:35.12]  when you start to tackle a problem, in
+[71:38.16]  order to get the benefits of that
+[71:39.52]  parallelization,
+[71:41.12]  you will have to make decisions about
+[71:42.72]  who is working on what. At least some
+[71:44.88]  decision. For example, if we're making a
+[71:47.44]  car and you and I are the two people are
+[71:49.20]  going to make the car, I'm going to
+[71:51.04]  design the body of the car. you're gonna
+[71:52.56]  design the wheels,
+[71:54.96]  right? Just a decision someone could
+[71:56.88]  make.
+[71:58.48]  Once you've made that decision,
+[72:01.76]  you have now locked in the fact that the
+[72:06.16]  iteration
+[72:08.16]  on the design
+[72:10.16]  will be slower across that boundary than
+[72:13.28]  it is interior to either of the two
+[72:15.36]  parts. So for example, your ability to
+[72:18.56]  improve the design of the wheels on
+[72:21.12]  their own and my design ability to
+[72:24.00]  design the body of the car uh and
+[72:26.00]  improve that on its own will be much
+[72:28.16]  faster than our ability to design the
+[72:30.00]  interface between the wheels and the
+[72:31.44]  tire like or or it's not even just the
+[72:33.92]  interface. The
+[72:36.72]  degree of harmony between the designs.
+[72:38.72]  So the degree to which your wheels
+[72:40.48]  complement my body design and my body
+[72:42.40]  design complements your wheels that they
+[72:44.00]  there's that they all are considering
+[72:45.44]  the trade-offs together right
+[72:48.64]  and Melvin Conway's paper which lays
+[72:50.48]  this out uh this is a very early paper
+[72:53.12]  it's you know it's in the 60s at least
+[72:56.00]  was it in the 50s it's it's way back
+[72:58.64]  when that lays this out points out the
+[73:02.16]  consequence of this is that products
+[73:06.24]  or any and when I say product I mean
+[73:08.00]  anything that comes out of one of these
+[73:09.28]  design processes or development
+[73:10.56]  processes. Products will will have a
+[73:14.88]  similar structure to the organization
+[73:16.56]  that produced them. You will be able to
+[73:19.52]  see in the product evidence of this
+[73:23.20]  because the degree to which things are
+[73:26.24]  able to harmonize is restricted across
+[73:28.48]  that boundary. So when you look at the
+[73:30.40]  object, it will have that boundary
+[73:32.64]  visible in some way, right? It won't be
+[73:35.36]  quite as good at the interface between
+[73:38.48]  these two things or in the way that they
+[73:41.04]  work together as the things are
+[73:43.52]  themselves in inside like to themselves,
+[73:46.56]  right?
+[73:48.32]  And it gets sort of flattened like one
+[73:50.16]  way the the rule is pithly stated is
+[73:52.00]  like products look like the org chart,
+[73:54.40]  right? But that's not exactly what it
+[73:57.12]  says, but that's kind of a downstream
+[73:59.28]  consequence. And boy, do you ever see it
+[74:02.88]  in the real world. So, you know,
+[74:06.16]  >> I've heard that in in the context of
+[74:08.24]  these big tech companies, like almost
+[74:10.00]  like it's a like a bad thing to quote
+[74:12.72]  unquote ship your org chart or
+[74:14.80]  basically, you know, the product you put
+[74:17.04]  out there is has these uh inorganic
+[74:21.60]  >> Yes.
+[74:22.00]  >> You know, things. So, it sounds similar
+[74:23.76]  to what you're saying.
+[74:25.04]  >> Yeah. It's And I think like part of the
+[74:27.36]  reason I think it is kind of an
+[74:28.64]  unbreakable law is I think it's somewhat
+[74:30.32]  unavoidable. uh it's more something that
+[74:32.56]  you just have to be aware of and
+[74:34.00]  mitigate to the degree that you can like
+[74:36.08]  you just have to understand look that
+[74:39.36]  lower communication time uh whether it's
+[74:42.96]  humans or computers or whoever is doing
+[74:45.20]  this work that lower communication time
+[74:49.60]  uh or I should say that uh that lower
+[74:51.20]  communication bandwidth is what um that
+[74:55.36]  just means that we will like where we
+[74:58.24]  draw these lines has consequences for
+[75:00.16]  what we ship And so we really want to
+[75:03.12]  try over time to align those boundary
+[75:06.72]  drawings
+[75:08.40]  to places where it will have the least
+[75:11.20]  bad impact on the result of the product.
+[75:14.56]  And you know that's true for org charts.
+[75:16.96]  Like I said, I suspect it will also
+[75:18.48]  become true for AIs and things like that
+[75:20.80]  where it's like you will want to
+[75:22.56]  partition these problems in ways that
+[75:24.48]  respect that um that line drawing
+[75:27.60]  because that will be less good than the
+[75:30.56]  thing that can be wholly solved um you
+[75:33.04]  know by one one unit whatever that unit
+[75:35.68]  is. And so to me uh it's a very helpful
+[75:39.36]  construct for thinking about things.
+[75:40.80]  It's also a very good explanation for
+[75:42.32]  why you see some things somewhere you're
+[75:43.68]  like why isn't this just integrated in
+[75:45.44]  this? It's like because they were two
+[75:46.80]  different teams,
+[75:48.16]  >> you know? It's like I'm sorry. Like I'm
+[75:49.44]  so like I'm sorry that's just the
+[75:50.96]  answer. And you know, it costs a lot
+[75:52.96]  more for those two teams to have
+[75:54.16]  integrated this. That's not how we work,
+[75:56.88]  right?
+[75:57.84]  >> I I'd love to hear more about I guess
+[76:00.64]  your career and how you got into
+[76:03.12]  programming.
+[76:04.32]  >> I started programming when I was really
+[76:06.00]  little because my father worked at
+[76:07.84]  Digital Equipment Corporation, which is
+[76:10.56]  actually a very important company in
+[76:13.12]  that era. no longer exist, right? This
+[76:15.84]  was the they would they would be sort of
+[76:17.76]  like almost like a case study in how not
+[76:21.52]  adapting to a change in technology uh
+[76:25.84]  leads to your demise. They were one of
+[76:28.48]  the most important companies in the
+[76:30.24]  world for computing. If you ever heard
+[76:31.68]  of a PDP11 or a vax in computing
+[76:34.56]  history, that's them, right? They made
+[76:36.64]  these things that were foundational
+[76:38.32]  computers in computing history gone
+[76:40.88]  today, right? they were uh part of them
+[76:42.96]  got absorbed by Intel, part of them got
+[76:44.56]  absorbed by Compact, but they're they
+[76:46.56]  don't exist.
+[76:48.32]  So he worked for that company
+[76:50.96]  and so we always had computers in the
+[76:52.88]  home and I learned to program when I was
+[76:54.40]  little and that's just sort of always
+[76:56.96]  what I wanted to do. I really enjoyed it
+[76:59.36]  and so I ended up uh getting an
+[77:02.40]  internship at Microsoft when I was
+[77:04.48]  pretty young and I met some people
+[77:07.52]  there. I came out to I I should say I
+[77:11.36]  grew up on the east coast so nowhere
+[77:13.36]  near Microsoft. Um I met some people
+[77:15.76]  there. I ended up coming out to the west
+[77:17.12]  coast really early on. This would be in
+[77:18.88]  like 95. Uh so what didn't feel early at
+[77:22.48]  the time. It felt late in the computer
+[77:23.92]  history but nowadays it's like oh wait
+[77:26.32]  95. Oh my god. Like before before
+[77:28.40]  everything was on the web, right? Uh I
+[77:31.04]  ended up there was a web though. It was
+[77:32.88]  it was nent. Um, I ended up uh coming
+[77:36.88]  out and and working sort of in the game
+[77:38.96]  industry and that's what I did ever
+[77:41.36]  since. And I've mostly always worked on
+[77:44.80]  game technology. I'm famously like
+[77:47.76]  absolutely terrible at understanding
+[77:49.20]  game design. Uh, people who watch my
+[77:51.52]  stuff know this about me. Like I'm very
+[77:53.44]  very bad at I've tried to make games a
+[77:54.96]  couple times and I'm just I just cannot
+[77:56.48]  do the design side. I'm awful at it. Uh,
+[77:59.44]  but I really enjoy the engine stuff and
+[78:01.28]  I've I've uh feel like I I'm o okay at
+[78:04.48]  it and I've been able to contribute to
+[78:06.00]  projects. Um, so in general, most of the
+[78:09.44]  time if you've used code that was
+[78:11.52]  written by me, you probably uh used it
+[78:13.68]  in the context of like a video game that
+[78:15.60]  was using technology that I wrote. And
+[78:17.44]  so, you know, an example would be um I
+[78:20.48]  worked at Rad Game Tools on a character
+[78:22.16]  animation system. Uh, I wrote the entire
+[78:24.48]  thing myself that is used well, that's
+[78:26.88]  not entirely true. I really think myself
+[78:28.16]  except for the texture compressor which
+[78:29.84]  uh Jeff Roberts wrote. There was like
+[78:31.20]  this texture compressor that you could
+[78:32.56]  use um as part of the pipeline for the
+[78:35.12]  exporting and stuff like that.
+[78:37.60]  And it was a pretty cool project at the
+[78:39.28]  time. Um I'm really proud of it. The
+[78:41.60]  first version was awful uh as it is
+[78:43.84]  because I was pretty new at the time.
+[78:44.88]  The second version I thought we did a
+[78:46.00]  really nice job. And it was made at a
+[78:48.48]  time when people didn't think you could
+[78:50.88]  do licensable game technology of that
+[78:53.60]  kind because it was too hard to
+[78:55.44]  integrate into things like you couldn't
+[78:56.96]  get the performance or whatever. And we
+[78:58.64]  did a lot of things that I think were
+[78:59.84]  pretty innovative at the time and we
+[79:01.60]  were able to make something that was
+[79:02.72]  very successful. And it's uh I mean we
+[79:05.60]  released the first version of that in
+[79:07.36]  99. It's still in use today, largely
+[79:12.00]  unchanged from the architecture that I
+[79:14.64]  guess was the second version I did in
+[79:15.92]  like 2001 or something. Um, there are a
+[79:18.48]  few changes to architecture that people
+[79:19.76]  have made over the times, but it's
+[79:20.80]  largely unchanged. And I mean like I
+[79:23.12]  found out recently Balders's Gate 3,
+[79:24.72]  which was a big game um from Larian came
+[79:27.60]  out. I had no idea. It turns out they
+[79:29.12]  still use they use it, right? It's in
+[79:30.64]  their engine or whatever. So, I'm very
+[79:32.64]  proud of that product because I think it
+[79:34.32]  it it was in tons of games and was a
+[79:38.08]  very hard problem to solve and I think
+[79:39.28]  we solved it pretty well. It's largely
+[79:41.28]  irrelevant today. I would say it's still
+[79:43.20]  in some people's like engines over time,
+[79:45.04]  but like it's not the kind of product
+[79:46.96]  you would make today because nowadays
+[79:49.44]  engines are monolithic and you license
+[79:51.44]  them as a whole typically, right? Like
+[79:53.44]  you you wouldn't be getting like a
+[79:56.24]  character animation library. it's going
+[79:58.08]  to be something that's like built into
+[79:59.68]  Unreal Engine or built into Unity,
+[80:01.76]  right? So, it's not the kind of product
+[80:03.36]  you would probably consider making
+[80:04.56]  today. So, that that was mostly um like
+[80:07.20]  in terms of things that I've done that
+[80:08.64]  people might have actually have
+[80:09.76]  experienced or used.
+[80:12.16]  Uh like folks at home, if you've played
+[80:14.48]  games, you may have played something
+[80:15.84]  that I had a hand in at some point, but
+[80:18.64]  only the technology, not the design. Uh
+[80:21.12]  I also worked uh a little bit on The
+[80:22.96]  Witness um which was a game by Jonathan
+[80:25.20]  Blow uh and and team uh that I thought
+[80:28.96]  was absolutely fantastic and I did some
+[80:30.64]  work on uh I did some work on the walk
+[80:32.88]  system there that I was I was pretty
+[80:34.24]  proud of. I thought it came out pretty
+[80:35.28]  well. There's there's some parts of it
+[80:36.56]  that are really janky. I I don't think I
+[80:38.32]  did a very good job of the actual
+[80:39.68]  implementation of it, but the design was
+[80:41.92]  pretty good. Let's put it that way.
+[80:44.00]  >> Early in your career, so you worked at
+[80:45.36]  Microsoft and then and then you went to
+[80:48.24]  go
+[80:48.64]  >> I I was only ever an intern. I never
+[80:50.40]  actually like I mean I guess that's
+[80:51.68]  technically working there but I I didn't
+[80:53.20]  ever work there as like an employee
+[80:54.80]  employee right
+[80:55.76]  >> as a someone who's writing code. I mean
+[80:58.72]  there's a lot of different paths but
+[81:00.64]  there's one one path I imagine is you go
+[81:03.28]  and you work at one of these big tech
+[81:05.44]  companies and create their tech products
+[81:08.56]  I guess and then video gaming seems like
+[81:10.88]  another path and I think there's other
+[81:12.56]  paths as well of course. Um, what drew
+[81:15.76]  you to, you know, going towards video
+[81:18.08]  gaming and, you know, not continuing
+[81:21.44]  down a Microsoft path or something like
+[81:24.08]  that?
+[81:25.84]  >> I think that there's a bunch of things I
+[81:29.04]  could say about that, but they're
+[81:30.56]  probably all BS.
+[81:33.04]  The truth is probably that I'm probably
+[81:37.28]  more uh affected by the people around me
+[81:41.20]  than I would like to admit. I mean, I
+[81:43.76]  guess I don't have a problem aditting it
+[81:44.80]  now, but I mean, at the time, I probably
+[81:46.56]  wouldn't have have said that, right? I
+[81:49.28]  could envision a alternate past where I
+[81:52.08]  did stay at Microsoft and, you know, try
+[81:54.48]  to get a job there and work there
+[81:55.68]  instead of being just an intern and then
+[81:57.36]  going off and working at a different
+[81:58.64]  place.
+[82:00.16]  The reason that didn't happen was
+[82:02.16]  because of the people who I worked with
+[82:05.68]  there when I was an intern. I
+[82:08.64]  fundamentally really like like nowadays
+[82:11.44]  I fundamentally really love doing things
+[82:14.32]  like you know analyzing assembly code or
+[82:18.24]  looking at exactly how a micro
+[82:19.76]  architecture is working and these sorts
+[82:21.36]  of things. If I had gone to Microsoft
+[82:24.40]  and had just happened to be under some
+[82:28.00]  people who were doing that kind of work
+[82:29.60]  and had like taught me how to write like
+[82:31.28]  device drivers in assembly language or
+[82:33.12]  something like that, I I might still be
+[82:34.72]  there today. Right? That's not what
+[82:37.36]  happened. The capsule summary is the
+[82:40.00]  group that I was supposed to be in. The
+[82:42.00]  way that they did internships at that
+[82:43.52]  time was that a set of interns, say uh
+[82:47.04]  three or four of them would be uh
+[82:50.24]  underneath a particular manager who was
+[82:52.48]  going to like be managing those interns.
+[82:54.88]  So there were a couple of us who were
+[82:57.52]  supposed to be reporting to to this guy
+[82:59.52]  whose name I won't mention just in case
+[83:01.60]  for some reason. It's ancient. He
+[83:03.20]  probably wouldn't care at this point,
+[83:04.16]  but we're supposed to be reporting to
+[83:05.36]  this particular person
+[83:07.52]  and literally the week before we arrive,
+[83:11.68]  he has this massive flame out with upper
+[83:15.04]  management,
+[83:16.64]  leaves like just walks out of the
+[83:20.48]  building and has not been heard from
+[83:23.36]  since.
+[83:25.68]  So we show up and it's me um there was
+[83:29.68]  like uh me this a guy named Rudy a guy
+[83:33.04]  named Rajie uh and we're just interns
+[83:36.48]  show up we're like hey how's it going
+[83:39.20]  and we we report to this test guy this
+[83:42.80]  an SD uh guy named um Scott Leam really
+[83:46.32]  nice guy
+[83:48.32]  and we're like we're supposed to be like
+[83:49.76]  reporting to like a like a program like
+[83:51.36]  a you know a software or like what's
+[83:53.76]  going on like this one of the guys in
+[83:55.36]  the test or he's like, "Yeah, that that
+[83:57.66]  [laughter] guy's gone, right?" Like,
+[84:00.64]  he's out of here, right? Uh and and me
+[84:03.36]  and this other guy, Bruce Johnson, are
+[84:04.96]  going to like take care of the interns
+[84:07.52]  because
+[84:09.92]  right, we don't really know what you're
+[84:12.08]  going to do. Uh the first thing I think
+[84:14.40]  Bruce Bruce had me do was like an ANI
+[84:16.96]  cursor loader. There was there's this
+[84:18.32]  format I don't know uh ancient history
+[84:20.40]  now, but there's this format for
+[84:21.60]  animated cursors on Windows. If you ever
+[84:23.52]  see the stupid little walking dinosaur
+[84:25.28]  or the like this is no one uses these
+[84:27.60]  anymore, I don't think, but they were
+[84:28.96]  this thing that were in was in there. He
+[84:30.88]  had me write a parser for loading ANI
+[84:32.96]  files, right? Like it's just meaningless
+[84:35.04]  stuff. Uh, so my experience there was
+[84:37.92]  pretty lame. Like I was like, this is
+[84:39.28]  kind of dumb. Like I don't really want
+[84:41.36]  to work here, right? But it could have
+[84:43.36]  been totally different. Like if I had
+[84:45.12]  been on some team that had like really
+[84:47.28]  inspired me to like learn the stuff that
+[84:49.76]  I didn't know. I didn't know assembly
+[84:51.20]  language at that time really at all. I
+[84:53.20]  think the only thing I'd ever written
+[84:54.16]  assembly language was a joystick pulling
+[84:55.68]  routine for DOSs because the only way
+[84:57.12]  you could pull the joy joystick in DOSs,
+[84:59.04]  right? And I think that's really it. If
+[85:01.44]  I'm honest about it, I think most of it
+[85:03.12]  is that I think when you're even if
+[85:05.04]  you're a very brash youngster, which I
+[85:07.04]  was, and even if you think that you're
+[85:09.36]  very independent,
+[85:11.12]  um I think you definitely
+[85:14.40]  gravitate towards people who you see
+[85:16.72]  doing things you think are impressive
+[85:19.68]  or, you know, technologically
+[85:21.92]  interesting.
+[85:23.60]  And that is just not the experience I
+[85:25.44]  had at Microsoft. Now, there were some
+[85:26.88]  people who I like the people I went out
+[85:28.40]  to go work with were people in other
+[85:30.32]  parts of Microsoft who were leaving
+[85:31.92]  Microsoft to do like a startup company,
+[85:33.92]  right? And those were the people that I
+[85:36.00]  was really like impressed with. Like
+[85:37.52]  those were the people that I wanted to
+[85:38.72]  hang out with. So like if I just look at
+[85:40.88]  it in a rears like if those people had
+[85:42.80]  just been staying at Microsoft and doing
+[85:44.32]  something maybe I would have gone,
+[85:46.08]  right? And I think that's the truth of
+[85:48.56]  it as best I can determine at this
+[85:50.40]  point. Anyway,
+[85:51.60]  >> so you moved across the country to go
+[85:54.56]  and work with those people at a startup.
+[85:56.32]  >> Yes.
+[85:56.88]  >> That's feels pretty risky uh to do. You
+[86:00.48]  know,
+[86:00.88]  >> it it was especially because at that
+[86:02.64]  time a startup is not really what you
+[86:04.80]  think of as a startup today. Like
+[86:06.40]  startup is just like some scrappy people
+[86:08.08]  in like a crappy office doing stuff.
+[86:10.00]  Like nowadays you think startup it's
+[86:11.52]  like well we've got $10 million in VC
+[86:13.52]  funding and we you know like have free
+[86:16.24]  sodas and what like in the break room
+[86:18.88]  and a massage uh a masseuse comes in
+[86:21.60]  periodically or something like this
+[86:22.80]  right like I don't know what the what
+[86:24.24]  the now version of a startup is but it's
+[86:26.88]  very different right um so yeah it was
+[86:30.96]  it was pretty risky and I don't really
+[86:33.28]  know why I did it it was mostly just
+[86:35.52]  because I hadn't had really good
+[86:36.88]  experiences with education like I didn't
+[86:39.52]  really want to to do um like college or
+[86:44.72]  like I I didn't want to do any more
+[86:47.12]  education. Like I wanted to actually
+[86:48.40]  work for whatever reason and this seemed
+[86:51.60]  like a this was just the easiest way to
+[86:54.56]  do that. And I don't really regret it
+[86:56.64]  honestly. Um,
+[86:59.44]  I've been able to learn most of the
+[87:00.88]  things that I would have needed to like
+[87:02.72]  if I was going to go do a PhD or
+[87:04.24]  something like I've ended up doing work
+[87:06.00]  that I that is the sorts of stuff like
+[87:08.16]  I've I've been lucky enough to be in
+[87:10.24]  positions where I could go spend, you
+[87:12.32]  know, a few months writing like this,
+[87:15.36]  you know, uh, this particular like
+[87:18.00]  linear lease squares solver or something
+[87:19.60]  like that like the kinds of things you
+[87:21.04]  might have done as like a thesis or
+[87:22.56]  something. uh or or you know that that
+[87:26.24]  walks somebody might have done the
+[87:27.12]  witness those sorts of things are the
+[87:29.20]  kinds of things you would have done had
+[87:30.96]  you decided to get a master's degree or
+[87:32.64]  something like that so I'm fortunate
+[87:34.40]  enough that I've kind of been able to
+[87:36.56]  have that part of the education um
+[87:39.52]  because not everyone gets that
+[87:40.72]  opportunity like you may never get you
+[87:42.72]  know if you if you don't do a master's
+[87:44.80]  thesis or you don't do a PhD thesis you
+[87:46.96]  may never really get the chance to like
+[87:48.72]  really do a deep like work on a on one
+[87:51.92]  problem and like learn a lot about it,
+[87:53.92]  read a lot of papers, do you know may
+[87:55.84]  maybe make some novel contribution in in
+[87:58.32]  some very small way usually, right? But
+[88:00.80]  um and so that that I was just lucky
+[88:03.20]  enough to do. So I don't really regret
+[88:05.44]  not doing something like that. But I
+[88:07.60]  think you know had I not had that those
+[88:10.08]  opportunities and subsequently I could
+[88:12.64]  see being I could see being regretful
+[88:14.16]  about that because that is something
+[88:15.12]  that I do enjoy doing and if id never
+[88:17.36]  had the chance I would have been sad. So
+[88:19.20]  you you went and you traveled to this
+[88:21.12]  startup
+[88:22.72]  because there's there's no there's no
+[88:24.80]  funding it sounds like. So yeah, what
+[88:26.64]  did you So it's just a group of guys
+[88:28.80]  just was there pay or it's just
+[88:30.72]  >> not really no it was it was pretty
+[88:32.64]  rough. Uh and I it didn't last very
+[88:34.56]  long, right? Um I ended up going to work
+[88:37.12]  at an actual game company shortly after
+[88:38.64]  that called Gaspired Games. And then
+[88:40.56]  shortly after that I started work at Rad
+[88:42.32]  Game Tools which I stayed at for quite
+[88:43.84]  some time uh and where I did like that
+[88:46.08]  character animation system and stuff. So
+[88:47.44]  it was it was pretty quick into not
+[88:50.24]  doing that. But um it was still a pretty
+[88:52.80]  educational experience for me. And also
+[88:54.72]  uh what I will say is um at the time so
+[88:58.00]  uh I worked with there a guy named Chris
+[89:00.48]  Hecker who uh I have to give like
+[89:03.68]  basically complete credit to for
+[89:06.72]  teaching me basically about like reading
+[89:09.84]  technical papers.
+[89:11.84]  Like before that time, I just thought
+[89:14.72]  math was kind of stupid and an annoying
+[89:16.32]  thing you had to do like in class,
+[89:17.84]  right? And I I definitely didn't know
+[89:20.32]  anything about like
+[89:22.32]  reading a sigraph's proceedings really,
+[89:24.56]  right? Um and I may have been like aware
+[89:27.36]  I mean I was aware of sigraph. I knew
+[89:28.88]  what it was, but I don't think if you'd
+[89:30.72]  handed me, you know, that binder, I
+[89:33.52]  would have known what that was or what
+[89:35.44]  to do with it. like, you know, I think
+[89:38.24]  like the biggest takeaway that I got
+[89:40.24]  from that other than startups are hard
+[89:42.48]  and maybe don't do them uh unless you
+[89:44.64]  have a lot of people and a lot of
+[89:45.84]  funding and aren't really that much on
+[89:47.92]  the line like maybe uh but uh the
+[89:52.40]  biggest takeaway that I got from that
+[89:53.92]  that was positive was just a a a much
+[89:57.52]  deeper appreciation for math, a much
+[90:00.08]  deeper appreciation for research, how to
+[90:02.08]  read it. Um, that's where I learned to
+[90:04.40]  use like Sightseer, which would be like
+[90:06.00]  kind of the precursor to like Google
+[90:07.68]  Scholar or whatever, crawling references
+[90:09.76]  and all that stuff. In a lot of ways,
+[90:11.28]  you could say, uh, if I hadn't had that
+[90:13.36]  experience, I bet I wouldn't have given
+[90:14.48]  the two talks that we've talked about
+[90:16.24]  for most of the interview because what
+[90:18.80]  are those talks? They're me crawling
+[90:20.24]  every reference, right? They're just me
+[90:22.00]  going back and back and back and back
+[90:23.68]  and looking at everything that I can
+[90:25.52]  find. Um, and that's something that if
+[90:29.60]  you if no one ever conveys to you the
+[90:33.36]  importance of reading the scholarship
+[90:35.36]  and being aware of what's being done and
+[90:37.12]  also teaches you how to read a tech
+[90:38.72]  paper and how to parse through it. I I
+[90:41.68]  don't know that you get that, you know,
+[90:42.72]  I don't know that you get that.
+[90:44.40]  >> I remember early in my career, I think
+[90:46.40]  there's this, I guess, common path of
+[90:48.96]  like these, you know, big companies and
+[90:50.80]  then there's this thought of, oh, me and
+[90:53.04]  a couple buddies, let's go, let's go
+[90:54.88]  build [laughter] something. Now, now
+[90:56.64]  with your experience looking back, if
+[90:59.36]  you someone out there's uh young and
+[91:02.16]  thinking about starting, would you say
+[91:04.24]  go that common path or would you say
+[91:08.00]  take the the chance?
+[91:11.12]  >> You know, uh it's a really tough
+[91:14.48]  question and I think that the advice
+[91:17.44]  like the advice is that you have to
+[91:20.00]  think about what it is that you want to
+[91:23.28]  do every day. Like, so in my mind, the
+[91:28.80]  things I regret are the times when I've
+[91:31.84]  had to do things or chosen to do things
+[91:34.72]  that I wasn't really that happy doing
+[91:36.88]  every day, right?
+[91:39.04]  And so I think you just have to optimize
+[91:41.36]  for the experience you want to have
+[91:42.96]  because a startup might work out, it
+[91:44.64]  might not. It's always a risk, right?
+[91:47.20]  You may go to the big company um and you
+[91:50.72]  know it may be cool, there may be
+[91:52.08]  interesting things there or there might
+[91:53.28]  not be. like who know like you don't
+[91:54.72]  really know you're making a kind of
+[91:56.32]  blind decision
+[91:59.04]  and so I think you kind of have to
+[92:00.48]  optimize for what do you want your
+[92:02.32]  dayto-day to be like like what do you
+[92:04.40]  want the experience to be and you want
+[92:08.64]  to like keep a running t like you want
+[92:11.92]  to be aware of it like if you make a
+[92:13.60]  decision and six months in you are not
+[92:16.24]  liking what you're doing every day then
+[92:18.00]  you need to get out of that right like
+[92:20.08]  that's my opinion
+[92:22.24]  so I don't know I I think most people
+[92:24.48]  probably if they sit down and actually
+[92:28.16]  like clear their mind and aren't aren't
+[92:32.08]  engaging in too motivated a reasoning
+[92:33.92]  but just for themselves go what do I
+[92:36.56]  envision working at the startup will be
+[92:38.32]  like what will I actually be doing every
+[92:40.16]  day like am I going to like that is this
+[92:42.56]  going to be thrilling like trying to
+[92:44.00]  make this thing work and like being kind
+[92:46.24]  of on the edge um and you know uh do I
+[92:50.96]  want the the kind of war stories of like
+[92:53.44]  the things we had to do to pull off the
+[92:55.36]  demo or whatever, right? If all that
+[92:58.08]  sounds exciting to you and you want to
+[92:59.28]  have that experience, then you should do
+[93:00.72]  that thing. And and and I would say like
+[93:03.44]  really I really mean that like I don't
+[93:06.00]  even think you should take into account
+[93:07.20]  like even like let's say you know the
+[93:08.40]  startup's going to fail. If that's if
+[93:11.04]  you want to have that experience then
+[93:12.40]  you need to do it, right? It's just like
+[93:13.92]  anything else. It's like going and um
+[93:17.28]  backpacking across Europe or playing
+[93:19.12]  guitar at a nightclub. It's like you may
+[93:22.08]  know that these things are not
+[93:23.44]  profitable.
+[93:24.96]  It's just is that the experience you
+[93:26.56]  want to have? Are you going to look back
+[93:27.68]  on that six months or a year or five
+[93:29.28]  years or whatever the amount of time
+[93:30.72]  you're thinking of committing to it? Are
+[93:32.24]  you going to look back and say I'm glad
+[93:33.60]  I did that or are you going to be like
+[93:36.24]  that was the you know those that's time
+[93:38.16]  that I would have rather have spent some
+[93:39.68]  other way, right? And so I think most
+[93:42.32]  people can probably if they're honest
+[93:43.92]  with themselves at least make a pretty
+[93:45.36]  good guess. And that guess if they're
+[93:47.04]  honest with themselves is going to be
+[93:48.08]  better than any advice I'm going to give
+[93:49.28]  them. like my guess about what you
+[93:51.28]  should do is going to be worse than
+[93:52.24]  yours. So, you should just make that uh
+[93:54.64]  determination because another way to
+[93:56.48]  look at it is like you know that the big
+[93:57.84]  company side is like maybe you just want
+[94:00.48]  to have some security like maybe when
+[94:02.80]  you're starting out like I mean I'll
+[94:04.00]  just give some examples like maybe you
+[94:05.92]  want to uh spend a lot of time dating.
+[94:08.32]  You want to you want to uh find a
+[94:10.64]  partner and you want to have a
+[94:11.76]  relationship and you want to have a
+[94:12.96]  family.
+[94:14.48]  Maybe that's more important to you.
+[94:16.40]  Maybe the startup yeah might be fun.
+[94:18.80]  Maybe it would be more money if it
+[94:20.40]  worked out or whatever, but like maybe
+[94:21.76]  the stability is is actually going to be
+[94:23.92]  something that that you would that that
+[94:25.52]  you would really benefit from because
+[94:27.44]  the sorts of things that you imagine
+[94:29.28]  being fulfilling in your life are not
+[94:30.88]  all around what you're going to be doing
+[94:33.12]  in computing. I think you can know have
+[94:36.72]  some guess about those things when you
+[94:39.36]  if you just let yourself have some space
+[94:41.12]  to think about it and don't engage in
+[94:42.96]  too much motivated reasoning about it.
+[94:44.56]  Right?
+[94:46.00]  And uh and I think that would be the
+[94:47.68]  best way to make a decision if you're
+[94:48.96]  going to make one. That's my that's my
+[94:50.64]  feeling about it. Anyway,
+[94:52.56]  >> if we talked a lot about video game
+[94:54.16]  engineering, and I have no idea what
+[94:57.04]  goes into video games, if you were to
+[94:59.44]  just boil it down to the the big pieces
+[95:02.24]  that you need for a video game, what are
+[95:04.80]  those software components?
+[95:07.28]  So the biggest thing that's different
+[95:10.56]  about a video game is that the sort of
+[95:14.32]  original mental model that you're talked
+[95:16.40]  that you're taught in programming which
+[95:18.56]  is like the uh standard IO like I get
+[95:21.60]  some input in I process it I put some
+[95:24.08]  input out is like not how it works right
+[95:27.76]  so the biggest mental shift is just like
+[95:29.76]  oh the way that a video game or a
+[95:32.16]  simulation of any kind right works is I
+[95:35.76]  need to have some world state and I'm
+[95:38.08]  constantly updating that world state on
+[95:40.48]  a regular interval. Everything is always
+[95:42.56]  happening. There's no I wait for input
+[95:44.80]  and then I do something, right?
+[95:46.48]  Everything is always going because it is
+[95:48.16]  real time like the time is going um
+[95:51.20]  forward. So the components tend to be
+[95:54.00]  built around this idea and it depends on
+[95:56.80]  what level of sophistication you end up
+[95:58.48]  getting into but in general you need a
+[96:01.92]  way of storing that world state. So some
+[96:03.92]  kind of we usually call these entities.
+[96:06.16]  um like the things that make up a world,
+[96:08.16]  right? So, some way of modeling what is
+[96:10.40]  in the world, where are things in the
+[96:12.80]  world, what is their state, what are
+[96:15.12]  they doing right now. So, you need
+[96:17.28]  something that does that, something that
+[96:19.44]  is in charge of advancing that state.
+[96:22.16]  This is a mixture of several things. Uh
+[96:24.56]  it could involve physical simulation. It
+[96:27.44]  could involve AI. Uh not necessarily
+[96:30.32]  like large language model like the
+[96:31.84]  modern notion of AI, but like path
+[96:33.84]  finding. uh making a decision between
+[96:36.24]  whether I should attack the player or
+[96:37.60]  not like that sort of AI, right?
+[96:40.64]  Um
+[96:42.24]  so we have the the world some way of
+[96:44.00]  showing the world state, some way of
+[96:45.20]  advancing the world state, like an
+[96:46.56]  update step that may involve lots of
+[96:48.40]  things like that.
+[96:50.48]  Then some way of presenting the world
+[96:52.40]  state. So a renderer, right? And this is
+[96:54.72]  something that typically uh has
+[96:58.24]  uh I guess I would say it's it's
+[97:00.72]  traditionally been a very important part
+[97:03.68]  of a game because the visuals are often
+[97:08.56]  something that is a selling point for
+[97:10.96]  games.
+[97:12.56]  People produce trailers certainly in the
+[97:15.28]  AAA space. We're trying to show you how
+[97:17.12]  cool the new lighting looks and the
+[97:19.12]  whatever. So that is a pretty big
+[97:22.08]  component of games. Often times you go
+[97:24.64]  look at an indie pixel art game, it
+[97:26.64]  might be much smaller, right? Because
+[97:27.84]  that's a much smaller part of the
+[97:29.84]  problem. Now that's generally what what
+[97:33.60]  you know the shape looks like. There's a
+[97:35.44]  lot of little pieces there. Typically
+[97:38.24]  nowadays we would have some way of asset
+[97:40.24]  streaming, right? The the renderer needs
+[97:42.48]  to have things like textures loaded,
+[97:43.92]  models loaded, things like that. We need
+[97:45.76]  world data, physics, collision models,
+[97:47.36]  these sorts of things. they might be too
+[97:49.04]  big to fit in memory or we don't want to
+[97:50.48]  spend a lot of load time to load them up
+[97:52.56]  front. We want to stream them in as
+[97:53.84]  they're necessary. So there's typically
+[97:55.20]  like this thing that's sitting there
+[97:57.36]  constantly grabbing things off of disk,
+[97:59.28]  caching things, pulling them in and out
+[98:00.80]  of a cache that's being used uh by the
+[98:02.96]  renderer, by the physics, so on. So
+[98:04.88]  that's another common component that's
+[98:06.96]  new, didn't used to be there. Um there's
+[98:10.08]  going to be an audio and music system
+[98:11.84]  obviously that's in charge of like you
+[98:14.00]  know when sounds are triggered in the
+[98:15.76]  world ambient sound effects that are
+[98:17.36]  happening in the world music that's
+[98:18.64]  playing continuity again all of that's
+[98:21.04]  interacting with the entity with you
+[98:23.52]  know the world state to know which ones
+[98:25.04]  of those things are happening the update
+[98:26.72]  step which will be triggering things in
+[98:28.16]  that sound system and of course this the
+[98:30.00]  asset streaming to load what sounds are
+[98:31.92]  being played or load the music. So we
+[98:34.00]  typically have that and then um you know
+[98:37.04]  I'm trying to think not I'm trying not
+[98:38.80]  to leave out any major components. In a
+[98:41.12]  modern uh context there's often
+[98:43.12]  networking. So we want to have a way for
+[98:46.56]  multiple of these game clients to
+[98:47.84]  communicate with a server. So typically
+[98:49.60]  what that means is that world that uh
+[98:51.92]  state of the world is now might be
+[98:55.36]  provisional. It might be sort of a
+[98:57.68]  predicted model of the world that's not
+[99:00.16]  the real model of the world. the the
+[99:02.32]  simulator is actually the authoritative
+[99:05.04]  simulator is actually running on a
+[99:06.88]  server somewhere and I am merely
+[99:08.80]  communicating with it to find out what
+[99:10.48]  the world state is and then because I
+[99:13.44]  don't want to wait the late I don't want
+[99:15.92]  the latency of like going all the way
+[99:17.92]  around I am predicting the motion of
+[99:21.44]  things forward in time based on the last
+[99:23.68]  information I have right so that's
+[99:25.52]  another kind of way that things tie in
+[99:27.76]  if you want to start doing things like
+[99:29.20]  competitive multiplayer and all these
+[99:30.72]  sorts of things Right. That makes a lot
+[99:32.64]  of sense because like I I used to play
+[99:34.40]  video games and then like these MMO RP,
+[99:38.00]  you know, online games and when I start
+[99:41.04]  to lag, everyone continues forward.
+[99:43.92]  >> Yes.
+[99:44.32]  >> And then my internet catches up and then
+[99:46.48]  everyone jumps to where they actually
+[99:48.16]  supposed to be. Uh, okay. That makes a
+[99:51.12]  lot of sense. I pulled some of your top
+[99:53.92]  tweets. I thought it might be
+[99:55.20]  interesting to kind of discuss.
+[99:57.20]  >> I'm sorry. So [laughter]
+[99:59.12]  you someone said NASA does not allow
+[100:01.84]  recursion in their code. How crazy is
+[100:03.68]  that? And then you said not even
+[100:06.00]  slightly crazy. And it went really
+[100:08.00]  viral. Can you explain why that's not
+[100:10.64]  even slightly crazy?
+[100:12.32]  >> When you're writing functions in a
+[100:14.96]  programming in a procedural programming
+[100:16.32]  language like we have uh and that like
+[100:19.44]  NASA is probably using,
+[100:22.08]  you are able to use the program stack
+[100:25.76]  for storage. I mean, that's what it's
+[100:27.60]  there for. That's what local variables
+[100:29.20]  are. I call a function, I get some
+[100:30.88]  storage space on the stack. The compiler
+[100:32.40]  did that for me.
+[100:34.64]  It also saves the return address. So,
+[100:37.60]  when I make a function call, that
+[100:39.44]  program stack is keeping track of where
+[100:41.76]  in my code I was. So that when the thing
+[100:44.64]  that I called is finished, I get back
+[100:46.96]  there, not some other point. Right?
+[100:50.24]  Neither of those two things are things
+[100:52.00]  you couldn't implement yourself. Right?
+[100:54.16]  They're both things you could do. You
+[100:55.68]  could break the thing up into pieces.
+[100:57.60]  You could have ways of remembering what
+[101:00.00]  they were like a state machine. You can
+[101:02.08]  have your own stack that you push data
+[101:03.68]  on and access it. Right?
+[101:06.32]  So the only thing recursion really does
+[101:09.04]  is it allows you to leverage the fact
+[101:12.80]  that someone already wrote that code for
+[101:15.04]  you and it may be more convenient to use
+[101:16.96]  because it's built into the language.
+[101:18.56]  Now there are some things if you really
+[101:19.92]  want to get super technical about it.
+[101:21.36]  There are some things that happen at a
+[101:24.72]  CPU level when functions are called but
+[101:28.48]  we can put those aside for now. If you
+[101:29.92]  want to talk about them after we totally
+[101:31.04]  could. So the reason that I don't think
+[101:32.72]  it's crazy to go like we're not going to
+[101:34.00]  use recursion to implement an algorithm
+[101:36.80]  is because if you're doing that you're
+[101:39.36]  kind of just yolo swagging that there's
+[101:41.36]  room on the stack for whatever it was
+[101:43.04]  that you were doing, right? And you
+[101:45.60]  can't even really check unless you're
+[101:47.68]  going to do some kind of weird like we
+[101:50.16]  could sort of do a thing where we go
+[101:52.56]  like okay let's try to determine how
+[101:54.32]  many more iterations how many more
+[101:55.92]  recursion depths we have before we hit
+[101:58.24]  the end of our stack. We can do those
+[102:00.48]  calculations but it's like eh like and
+[102:03.28]  also if the compiler changed something
+[102:04.64]  about the layout it wouldn't be true
+[102:06.00]  anymore and so on and so forth. So it's
+[102:08.16]  like, so if I'm NASA and I'm like, hey,
+[102:11.76]  I don't want my astronauts to crash into
+[102:14.00]  the moon. It seems much more logical to
+[102:16.64]  say like, don't use recursion. Just
+[102:18.24]  figure out whatever this thing was that
+[102:19.68]  you're going to do, turn it into a loop,
+[102:21.20]  keep a stack, and make a state machine
+[102:23.44]  for it. We can reason about that much
+[102:24.88]  more clearly. We know exactly how long
+[102:26.16]  it's going to take. It doesn't matter
+[102:27.04]  what compiler gets. So it work the same
+[102:28.56]  way every time, and we'll know the
+[102:31.04]  bounds precisely, right? Very sensible
+[102:34.16]  to me, right? And again, you assume at
+[102:37.60]  NASA that they're not doing it for their
+[102:39.68]  health. They're doing it because they
+[102:42.08]  have, you know, hard constraints on the
+[102:44.72]  problem domain where someone's life is
+[102:46.56]  at risk. Um, and at or at a minimum many
+[102:50.96]  millions of dollars in equipment is at
+[102:53.12]  risk if you screw up. If if you stack
+[102:55.92]  fall like if you if you get something
+[102:57.92]  where you'd recursed too many times and
+[102:59.68]  hit the end of the stack that is not
+[103:02.48]  just a uh oh I rebooted the computer or
+[103:05.92]  the re or restarted the software right
+[103:07.84]  so so I don't know hopefully that makes
+[103:09.92]  sense
+[103:11.68]  >> Karpathy had this famous tweet that kind
+[103:14.56]  of coined the phrase vibe coding
+[103:16.56]  >> yes
+[103:17.12]  >> and then you said if you thought
+[103:19.28]  software was bad today buckle up because
+[103:22.08]  it's about to get a whole lot worse.
+[103:24.08]  Yes.
+[103:24.80]  >> It's been about a year and a half since
+[103:27.52]  that tweet came out. The tweet came out
+[103:29.28]  February of 2025. Would you say that
+[103:33.04]  that was an accurate prediction?
+[103:35.52]  To be clear, I think
+[103:39.36]  it the whole lot worse part is
+[103:41.52]  predicated on something that may not
+[103:44.08]  happen and that is that the idea that we
+[103:48.48]  just kind of type some stuff into a
+[103:49.76]  computer and ship it to prod, right?
+[103:51.52]  Basically like, "Hey, could you make me
+[103:53.12]  a thing?" and then publish it becomes a
+[103:55.76]  common way of doing things, right? For
+[103:58.40]  example, also done by people who maybe
+[104:01.20]  don't have a computer science
+[104:02.08]  background. I think it's fair to say and
+[104:05.44]  that I wouldn't be uh being sort of
+[104:08.16]  overly dismissive of AI at this point to
+[104:10.88]  say that a person who is well-trained in
+[104:14.40]  computer science using an AI to make
+[104:16.96]  code right now can make substantially
+[104:20.24]  better code than someone who doesn't
+[104:21.68]  know anything about computer science who
+[104:23.28]  is just given you know fable and types
+[104:26.48]  some stuff in right the difference is
+[104:29.28]  rather dramatic I would say from
+[104:31.04]  everything that I've seen
+[104:33.36]  So part part of my uh concern that I was
+[104:37.44]  trying to express at that tweet was like
+[104:39.68]  if the idea is like we're just going to
+[104:41.20]  type stuff in and we're not going to
+[104:42.56]  really be checking the code, you know,
+[104:44.64]  someone who knows computer science is
+[104:46.24]  not really going to be looking at it. Um
+[104:48.32]  worst case scenario, it's literally just
+[104:49.92]  like some random person in marketing
+[104:53.04]  somewhere who has no idea what
+[104:54.32]  programming is just types in and hits
+[104:56.56]  crosses their fingers, right? I think
+[104:58.56]  we're in for a world of hurt right now.
+[105:02.08]  It's a race. So, it's hard to say
+[105:05.36]  because it's basically a race of how
+[105:07.60]  good can you make the AI versus how much
+[105:10.64]  adoption does it get, right? It's a
+[105:12.24]  curve, right? It's like if you can make
+[105:14.08]  the AI good enough that the people who
+[105:16.40]  are adopting it at a particular rate are
+[105:18.88]  always using an AI that's good enough
+[105:20.72]  for what they're adopting it for, we
+[105:22.64]  wouldn't expect software to get
+[105:23.76]  significantly worse. If those curves go
+[105:25.84]  the other way, we're in a lot of
+[105:27.60]  trouble, right? So, we're I feel like
+[105:28.88]  right now we're we're almost kind of
+[105:30.32]  teetering on this knife's edge. It's
+[105:32.08]  it's really to me it feels like a foot
+[105:34.16]  race of like improving AI so it can be
+[105:38.16]  more autonomous and make better
+[105:40.00]  decisions without your without you
+[105:41.84]  needing to make them for it versus the
+[105:45.20]  capability level of people who are using
+[105:47.52]  it and the degree to which they're
+[105:48.72]  paying attention to its output. It's
+[105:50.16]  like these two curves that are just like
+[105:51.76]  ah, you know, like what's [laughter]
+[105:53.84]  what's gonna happen? I don't have a
+[105:56.72]  prediction. I don't know where we'll be
+[105:58.48]  in a year. Uh obviously for all of our
+[106:01.04]  sake, I'm hoping that the AI curve wins.
+[106:04.96]  Uh because I agree like I understand
+[106:09.28]  certainly the perspective of people who
+[106:12.32]  maybe just don't like AI and don't want
+[106:14.40]  there to be AI. I can understand the uh
+[106:18.64]  wanting it to fail. I I understand that,
+[106:21.36]  right? Um and I'm no fan of AI myself,
+[106:25.44]  so it's not like I like I'm going to
+[106:27.76]  criticize someone for taking that
+[106:29.20]  position.
+[106:30.88]  But at the end of the day, if you're
+[106:32.48]  talking about something that tons of
+[106:33.84]  people are using,
+[106:36.00]  you're gonna kind of want it to be good.
+[106:38.00]  Like I think at this point given the
+[106:40.08]  level of adoption of AI, I really don't
+[106:42.80]  think it's would be great if it stopped
+[106:45.36]  getting any better right now. Like if
+[106:47.44]  this was as good as it was going to get,
+[106:48.80]  I think that might be bad. Um certainly
+[106:52.16]  six months ago, I think that was true.
+[106:55.12]  Uh and I think it's probably still true
+[106:56.88]  today. So I think ideally if you want
+[107:00.64]  software to not be terrible, you have to
+[107:04.00]  kind of still be hoping that six months
+[107:05.84]  from now the AIs are again significantly
+[107:08.88]  better than they were, right? Like that
+[107:10.88]  that is the only way out of the current
+[107:13.68]  situation as I see it, right? Uh I don't
+[107:17.60]  know if that's fair, but that's my
+[107:19.12]  that's my sort of feeling on that. One
+[107:21.68]  of your other top tweets it was, you
+[107:24.24]  know, Shopify put out this internal memo
+[107:27.04]  and you just, you know, you replied, you
+[107:29.28]  know, slopify. Yes. [laughter]
+[107:30.88]  >> So, I guess it's cuz in this tweet, it's
+[107:33.36]  leadership pushing the adoption curve
+[107:35.60]  maybe harder than the capabilities of
+[107:38.08]  the AI in this case.
+[107:39.84]  >> Yeah. Uh, although I also just like the
+[107:41.76]  bot. One of the things that I think is
+[107:44.24]  most unfortunate about the AI adoption
+[107:47.36]  as I've seen it is just the because
+[107:52.08]  people think that it's going to be this
+[107:54.96]  major um I guess if I had to categorize
+[107:57.92]  the way it appears that companies are
+[107:59.68]  reasoning about it. They're assuming
+[108:01.52]  that if they don't get in early, it will
+[108:03.76]  be a big disaster for them, right? like
+[108:06.00]  like there's a tremendous like they
+[108:08.00]  don't just think oh well we can just
+[108:09.68]  wait until the AI does what we need it
+[108:11.36]  to do and then start using it. They're
+[108:12.72]  like, "No, we have to do it now." Like
+[108:14.64]  even before we know whether it can
+[108:16.32]  really do the thing that we want it to
+[108:17.44]  do or whether we know whether the
+[108:18.48]  outcomes will be good, everyone has to
+[108:20.08]  do it right now. Let's do this. Right.
+[108:22.32]  Um and I understand why they want why
+[108:24.72]  they're going about it that way because
+[108:25.68]  they think that that that is critical,
+[108:27.12]  right? They obviously believe that's
+[108:28.24]  very important.
+[108:30.00]  Um, and to me that's just that's just
+[108:32.72]  kind of terrifying because as with any
+[108:35.52]  technology, the sane way to do it is to
+[108:39.52]  measure its capabilities, see how well
+[108:42.00]  it is able to solve problems that you
+[108:43.60]  have, see if it solves them faster than
+[108:45.60]  the way that you were do doing it, and
+[108:48.88]  put it into a workflow at such a time as
+[108:51.44]  you've determined that it is a net
+[108:53.12]  positive. That's just the same like
+[108:54.96]  that's what you do with any technology,
+[108:56.72]  right? And you'd probably have like your
+[108:58.88]  team of people whose job it is to assess
+[109:00.88]  this thing and they're out there yolo
+[109:02.56]  swagging it, right? They've got 3,000
+[109:05.28]  agents working on this cluster talking
+[109:07.28]  to each other and doing, you know, god
+[109:09.04]  knows what, right? And uh so there's
+[109:12.08]  going to be that and someone's going to
+[109:13.76]  be doing that, but that is should not be
+[109:15.20]  every or right like you wouldn't just be
+[109:16.80]  like everyone needs to use a ton of
+[109:18.56]  tokens, right? Um
+[109:21.44]  so yeah, like I I do have concerns about
+[109:23.92]  that. I don't think that that the way AI
+[109:26.96]  adoption was done was was the best way
+[109:30.16]  for quality in software. But I would
+[109:34.32]  temper that statement with just the
+[109:36.40]  obvious fact that like we were not
+[109:38.56]  exactly a 59's uh industry to start out
+[109:42.72]  with. Like software quality was really
+[109:45.20]  pretty low rolling into the AI era. So I
+[109:49.44]  always try to just also caveat most of
+[109:52.32]  the things that I have to say that might
+[109:54.40]  be critical of a particular thing
+[109:55.76]  happening with AI with just the fact
+[109:57.04]  that like look it wasn't particularly
+[109:59.04]  great beforehand either. Uh a lot of
+[110:02.00]  this software was pretty low quality and
+[110:04.00]  so you can't
+[110:06.88]  some AI things may may make things worse
+[110:09.84]  but it's not like software was amazing
+[110:11.84]  and the AI showed up and ruined
+[110:13.52]  everything. That is completely
+[110:14.96]  ridiculous narrative that that is not
+[110:16.64]  true at all. Do you have any top
+[110:19.68]  technical book recommendations for any
+[110:21.92]  engineers that might be listening?
+[110:24.08]  >> Uh, no. I would probably use this
+[110:27.52]  opportunity to try to pitch reading
+[110:30.24]  technical papers. I think something that
+[110:33.44]  uh really the industry could use more of
+[110:35.92]  is people being more aware of what's
+[110:38.80]  happening um both like the historical
+[110:41.76]  papers but also just current papers. Uh
+[110:45.84]  it's daunting at first to be sure if you
+[110:48.88]  don't tend to read technical papers in
+[110:50.96]  your field. You will probably find it
+[110:54.88]  confusing. You won't know where to find
+[110:56.72]  them. You won't know how how to approach
+[110:59.28]  them. Um it will seem to take too long
+[111:01.60]  to read them because you don't know how
+[111:02.72]  to like skim them properly and determine
+[111:04.32]  whether it's worth your time to
+[111:05.68]  investigate a particular section of a
+[111:06.96]  paper and all that stuff. But if you're
+[111:08.96]  willing to spend uh a few months of just
+[111:13.12]  like I at night I look at a paper, you
+[111:16.64]  know, or on my lunch break I look at a
+[111:18.48]  paper, you know, if you're willing to
+[111:20.64]  spend a few months of just doing that,
+[111:22.32]  you will get your bearings and you will
+[111:23.92]  start to know where the good papers are
+[111:25.36]  in your field. You'll know how to find
+[111:26.72]  them. You'll know what where they tend
+[111:28.08]  to be published. Uh you'll be able to
+[111:31.20]  read them much more effectively. You'll
+[111:32.72]  be able to know how to spend your time
+[111:33.76]  on them. And I think in all but probably
+[111:37.68]  a few small fields that probably exist
+[111:40.40]  somewhere that maybe people don't tend
+[111:42.08]  to write much papers in or something
+[111:43.44]  like that, it's tremendously valuable.
+[111:45.60]  And I think it's so valuable that I read
+[111:48.16]  papers in disciplines I don't even do
+[111:50.64]  and I find it extremely rewarding. I I
+[111:53.36]  read security research papers all the
+[111:55.84]  time. I don't even work in a field where
+[111:57.84]  there are security research
+[111:59.36]  implications. Like games don't really do
+[112:01.60]  much of that. that they tend to be run
+[112:03.04]  like very sandboxed and they don't, you
+[112:04.88]  know, sometimes there are, but they're
+[112:06.64]  not that kind of thing. They're not like
+[112:07.84]  a, you know, web server authentication
+[112:10.48]  protocol or something like this.
+[112:13.28]  Uh, and I just find it incredibly
+[112:14.88]  rewarding because there's just so much
+[112:16.24]  good stuff out there that you can learn.
+[112:17.92]  So, I would say that would be it instead
+[112:20.24]  of a book wreck. I would say find a
+[112:22.56]  paper. Try reading a paper. How do I go
+[112:25.20]  and find that, you know, first paper or
+[112:28.16]  some place to get started that will be
+[112:30.08]  valuable
+[112:31.12]  >> for most people who are watching because
+[112:33.20]  they they might be like generalists or,
+[112:35.60]  you know, work work in in webdev or in
+[112:38.56]  just a a tech general tech org at a at a
+[112:41.12]  big tech company or something like that.
+[112:43.44]  I would say like pull up the proceedings
+[112:46.32]  of USNIX uh US NIX. Um
+[112:51.76]  look through it for a paper that sounds
+[112:53.12]  interesting to you and try reading that
+[112:54.40]  paper or uh oftentimes there's a awards
+[112:57.76]  I think USNIX has them where it's like
+[112:59.60]  best paper of the conference. Try
+[113:00.88]  reading the best paper conference. See
+[113:02.24]  what you think. Um because that's like a
+[113:04.64]  that's a collection of papers that's
+[113:06.08]  usually about like operating system
+[113:07.44]  stuff and you know systems design stuff.
+[113:09.60]  So it's going to be something that most
+[113:11.52]  people can relate to. It's not going to
+[113:13.12]  be really esoteric like if you were to
+[113:15.68]  open up the proceedings of sigraph for
+[113:17.52]  example it'd be like oh uh you know
+[113:21.84]  neural networks for cloth simulation or
+[113:24.64]  something you're like okay like
+[113:27.28]  this is not I can't relate to this
+[113:29.92]  because I don't do graphics or whatever
+[113:31.84]  right uh so usix might be a good place
+[113:34.24]  to start um but in general yeah like if
+[113:38.08]  you had another option would be to go to
+[113:41.28]  scholar.google google.com
+[113:44.00]  which is their search that just
+[113:45.36]  specializes in like papers and type in a
+[113:48.64]  topic description that you find
+[113:50.72]  interesting. So like um if you wanted to
+[113:53.60]  learn you know maybe maybe you were very
+[113:56.00]  interested in consensus algor Paxos or
+[113:58.32]  something and I don't know what that is
+[113:59.76]  or I it came up at work and I haven't
+[114:02.08]  really ever looked at it. You can just
+[114:03.36]  type that in Paxos and it'll just be a
+[114:05.28]  list of papers and they'll say a thing
+[114:06.80]  like cited by you can see how many
+[114:08.80]  citations they have. That's usually how
+[114:10.40]  influential that paper was. Like I mean
+[114:12.48]  to a certain extent. Um so you know
+[114:16.00]  those are some ways you could get
+[114:17.44]  started and find something that might
+[114:18.96]  interest you. Uh and you know it won't
+[114:21.76]  be for everyone. You may bounce off it
+[114:23.28]  but it be that'd be my recommendation is
+[114:25.04]  something to try. You you might you
+[114:26.56]  might find it interesting.
+[114:28.08]  >> And then yeah last question for you is
+[114:30.16]  if you could go back to the beginning of
+[114:31.92]  your career when you just entered the
+[114:34.16]  industry and give yourself some advice
+[114:35.92]  what would you say?
+[114:38.00]  So I think the advice I would have given
+[114:39.76]  to myself was to get into low-level
+[114:42.40]  programming earlier.
+[114:45.12]  Uh, I didn't really learn how to like
+[114:49.28]  properly analyze and or even really
+[114:52.00]  write assembly language code until
+[114:55.68]  probably like
+[114:58.48]  gosh 201 or 15 or like I mean it's
+[115:03.28]  recent um because I'm pretty old and you
+[115:07.44]  know it it's like last 10 years or so or
+[115:10.56]  something, right?
+[115:12.56]  And uh and I feel like I always
+[115:17.76]  I always wanted to know how to do it and
+[115:20.00]  just never seemed to. And like the the
+[115:23.36]  advice I would have given to myself that
+[115:25.12]  was like just just go like down the hall
+[115:28.64]  like what I was interested like go down
+[115:30.08]  the hall and like be like grab some be
+[115:32.40]  like show me how the heck you write this
+[115:34.88]  like just just show it to me. like
+[115:36.32]  right. I think one of the problems is uh
+[115:39.04]  a lot of people especially when they're
+[115:40.72]  young they are afraid of appearing like
+[115:43.92]  they don't know things and I think that
+[115:46.72]  can be a real impediment to learning.
+[115:48.56]  I'm sure it was for me and I probably
+[115:50.80]  like just didn't want to like literally
+[115:52.32]  say like I don't know I don't understand
+[115:53.76]  any of this stuff like can you explain
+[115:54.96]  it to me and uh and I think that's one
+[115:59.20]  of the most useful things you can do
+[116:00.72]  like I don't understand this please
+[116:02.40]  explain it to me is very useful and most
+[116:05.12]  people will be very happy to do that if
+[116:07.44]  they're not a dick like most people will
+[116:09.60]  be like oh sure like here you know um
+[116:12.08]  now they might not be good at explaining
+[116:13.84]  it there are plenty of engineers who are
+[116:16.24]  like really good at something and suck
+[116:18.16]  suck at like telling you how they do
+[116:20.72]  what they do. So you won't always get a
+[116:23.60]  great explanation, but sometimes you
+[116:26.48]  will. Sometimes you'll find the type of
+[116:28.16]  person who can explain very clearly how
+[116:30.32]  it is they do what they do. So if just
+[116:32.16]  keep asking, you'll get you'll get the
+[116:33.84]  good explanation. Nowadays,
+[116:36.80]  I wouldn't really need to give myself
+[116:38.16]  exactly that advice because the internet
+[116:40.08]  has so much great information on it. I
+[116:42.24]  could have taught myself. That did not
+[116:44.48]  exist at the time.
+[116:46.48]  >> Awesome. Well, thank you so much for
+[116:47.76]  your time, Casey. I really appreciate
+[116:48.96]  it.
+[116:49.36]  >> Thank you so much for having me. Like I
+[116:50.56]  said, I love the show. It was it was an
+[116:52.08]  honor to be invited on. So, thank you
+[116:53.36]  very much.
+[116:54.56]  >> Hey, thank you for watching this
+[116:55.76]  podcast. If you liked it and you want to
+[116:57.36]  see the show grow, please support with a
+[116:59.68]  comment or a like. Also, if you have any
+[117:02.56]  recommendations for people you want me
+[117:04.24]  to bring on, please drop a comment.
+[117:06.88]  Guests like Barbara Liskov, Mike
+[117:09.04]  Stonereaker, Mark Brooker, these were
+[117:11.52]  all people that I brought on because
+[117:13.52]  someone left a comment. On another note,
+[117:15.76]  aside from the podcast, I'm working on
+[117:17.68]  building the ergonomic keyboard that I
+[117:19.52]  wish existed. Here's a glance at the
+[117:21.76]  prototype. It's a split keyboard, so
+[117:24.00]  there's two sides. Um, this is in the
+[117:26.16]  case, but yeah, we launched on
+[117:27.60]  Kickstarter and we hit our goal within
+[117:29.68]  eight hours of launching. I really
+[117:31.28]  appreciate it if you were one of the
+[117:32.56]  people who grabbed one of the early
+[117:34.08]  units. Um, we're now working on the long
+[117:36.48]  journey of building the tooling now. And
+[117:38.48]  so, if you still want to pick one up,
+[117:40.24]  I've left the late pledges open on
+[117:42.24]  Kickstarter, so you can grab one there.
+[117:44.48]  I'll put a link in the description.

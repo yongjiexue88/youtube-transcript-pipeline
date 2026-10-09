@@ -1,0 +1,2078 @@
+Title     : How Anthropic Builds And How Engineering Will Change Soon | Thariq Shihipar
+Video ID  : 2Kch3tWMnw8
+URL       : https://www.youtube.com/watch?v=2Kch3tWMnw8
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2069
+Saved at  : 2026-10-08 08:14:05
+------------------------------------------------------------
+
+[00:00.00]  Most software we wrote before LLMs was
+[00:01.92]  not very good.
+[00:03.32]  >> This is Tariq. He's an engineer at
+[00:05.24]  Anthropic on the Claude code team, and I
+[00:07.48]  asked him all about how their
+[00:09.08]  engineering team makes the most out of
+[00:10.96]  the models today.
+[00:12.28]  >> Can you move up like a higher
+[00:14.20]  abstraction level, you know, like can
+[00:15.40]  you build the system that builds a
+[00:16.76]  system?
+[00:17.88]  >> Is there something that you feel's kind
+[00:19.76]  of the next big shift that is going to
+[00:22.44]  diffuse into the industry?
+[00:24.48]  >> Yeah, I think there are a few different
+[00:27.20]  ones.
+[00:28.40]  >> Here's the full episode.
+[00:34.24]  My goal with this conversation is to ask
+[00:37.20]  you as much as I can about how can you
+[00:39.84]  get the most out of the models
+[00:41.52]  specifically for software engineering so
+[00:44.08]  that people in the industry can kind of
+[00:45.80]  learn from the best practices where
+[00:48.48]  Anthropic's having success. And so to
+[00:51.36]  start the conversation off, I'd like to
+[00:53.16]  ask you let's say I was coming from a
+[00:57.16]  company that's maybe less AI pilled and
+[00:59.88]  I was onboarding onto your team, what
+[01:02.24]  are the most impactful things that you'd
+[01:04.60]  tell me to start doing to successfully
+[01:07.08]  onboard?
+[01:08.28]  >> I think the number one tip we have for
+[01:10.48]  you know, both people inside and and
+[01:12.00]  outside Anthropic is that like if you
+[01:13.96]  treat Claude like a thought partner and
+[01:15.96]  give it like the context that you need,
+[01:18.76]  then you can usually figure out the next
+[01:20.60]  steps, you know, and and so I think that
+[01:22.24]  like starting with okay, can Claude do
+[01:25.12]  it? If not, why not, you know, and
+[01:28.80]  uh
+[01:29.56]  using that as the starting place, I I
+[01:31.48]  think it's really important and I think
+[01:33.80]  just like always thinking about like
+[01:35.72]  okay, what's
+[01:37.40]  you know, reflecting on can you move up
+[01:40.28]  like a higher abstraction level, you
+[01:41.64]  know, like can you uh you know, set up a
+[01:44.56]  system? Can you build the system that
+[01:46.24]  builds a system, right? Instead of just
+[01:48.04]  like building, you know, the the product
+[01:51.12]  itself.
+[01:52.52]  >> I remember when we used to onboard
+[01:54.12]  people you would get assigned an
+[01:56.32]  onboarding buddy, so someone who kind of
+[01:59.20]  really knows the code base and you can
+[02:01.00]  ask all of your trivial setup questions
+[02:03.04]  to. It sounds like Claude fills in a lot
+[02:05.88]  of those gaps. And in practice, is it
+[02:09.88]  100% you don't need an onboarding buddy
+[02:12.28]  and you can just ask the model for
+[02:13.80]  everything?
+[02:14.56]  >> You do need an onboarding buddy, but
+[02:16.68]  more from like a kind of like social and
+[02:19.24]  cultural perspective than a technical
+[02:21.08]  perspective, you know what I mean? I
+[02:22.56]  think like from a technical perspective,
+[02:24.48]  you can basically just like work with
+[02:26.56]  Claude and you know, if you're like good
+[02:29.08]  at it, like you can get what you need to
+[02:30.64]  onboard, but I think just like having
+[02:32.88]  the context of you know, how to work
+[02:34.48]  with a team and also just like how to
+[02:36.96]  like, you know, get buying on what
+[02:38.96]  you're building or you know, understand
+[02:41.12]  like how the team works together or just
+[02:42.92]  even like have a friend to work with,
+[02:44.84]  you know, I think is really important.
+[02:46.44]  So, yeah, we still have onboarding
+[02:47.92]  buddies, but not
+[02:49.24]  um
+[02:49.88]  it's not like nearly as much technical
+[02:52.00]  lift as as it used to be.
+[02:53.80]  >> There's a big difference between the
+[02:56.08]  external perception of the AI
+[02:58.08]  capabilities and the internal Anthropic
+[03:01.48]  usage. Because I'll talk to friends,
+[03:03.08]  they say, yeah, what Boris is saying is
+[03:05.40]  the reality. And so, my question is, why
+[03:09.08]  is there such a big difference between
+[03:10.88]  that that internal perception and that
+[03:13.68]  external perception?
+[03:15.60]  >> I think we have a good track record kind
+[03:18.36]  of of when we make these like claims,
+[03:20.72]  you know, you're like, oh, you're you're
+[03:22.28]  like it turns out to be true on the long
+[03:25.00]  large enough time scale, you know, I
+[03:26.20]  think a lot of engineers are not really
+[03:28.24]  in the IDE anymore, you know, like yeah,
+[03:31.04]  the code being written is like I I
+[03:34.04]  talked to large enterprise customers
+[03:35.56]  where like, you know, they haven't like
+[03:37.12]  typed a line of code themselves in 6
+[03:38.84]  months, right? So, we think of it part
+[03:41.04]  of our jobs, you know, to figure out how
+[03:43.88]  to work at a higher abstraction level.
+[03:45.32]  And like if I spend like a day trying to
+[03:48.28]  figure out how to get Claude to the
+[03:50.16]  like, you know, do this autonomously and
+[03:52.24]  I fail, that's like fine, you know, and
+[03:54.56]  maybe even good, you know, cuz now I can
+[03:56.00]  be like, oh hey, like Claude is not good
+[03:57.96]  at this. How do we make it better, you
+[03:59.60]  know? But I think if you're working like
+[04:01.12]  an average job, you know, your job is to
+[04:03.60]  produce the output and like I think
+[04:05.92]  automation always has a cost cuz you're
+[04:07.84]  like it's an investment and if it works,
+[04:10.08]  then great, you'll make, you know, a
+[04:11.88]  return on your investment over time.
+[04:14.36]  Um but if it doesn't, then you've like
+[04:15.92]  wasted all this time. And so I think the
+[04:18.04]  nice thing about the models is that
+[04:20.44]  you know, generally the chance of the
+[04:22.36]  investment working out is higher and
+[04:24.00]  higher because like the models are
+[04:26.00]  getting smarter and smarter.
+[04:27.72]  Uh but you still have to sort of take
+[04:29.04]  that leap as an individual. Your boss is
+[04:31.52]  not going to be super happy with you if
+[04:32.80]  you're like, you know, uh
+[04:35.28]  if you've been working on your harness
+[04:36.88]  setup the entire time and like not
+[04:38.44]  shipping code.
+[04:39.80]  Um
+[04:40.76]  but yeah, I think it's mostly just like
+[04:42.68]  culture and thinking of it as our job to
+[04:45.00]  sort of live in the future and then we
+[04:46.12]  try and like build it into the product
+[04:47.84]  and our harness as well so that you
+[04:49.96]  don't have to do as much manual stuff,
+[04:52.64]  yeah.
+[04:53.84]  >> Are there examples that you come to mind
+[04:56.20]  when you think of things you don't see
+[04:58.16]  people doing on Twitter that are really
+[05:01.52]  having making a big difference at
+[05:03.00]  Anthropic that you'd kind of recommend?
+[05:05.64]  >> Like using Claude code for knowledge
+[05:07.76]  work, I think it's really valuable. The
+[05:09.80]  way a technical person does knowledge
+[05:11.64]  work, I think is very different than the
+[05:13.56]  way a non-technical person does
+[05:14.92]  knowledge work um these days because you
+[05:17.04]  can get the models to do it. And so I
+[05:19.16]  think like you know, increasingly if you
+[05:21.56]  can figure out like, hey, this is a
+[05:23.08]  task, the task is made up of code-like
+[05:26.92]  things, you know, and like how do I tell
+[05:29.40]  the model the code
+[05:31.80]  steps to take, you know,
+[05:34.04]  uh in order to do it, right? Uh
+[05:36.80]  you can like
+[05:38.52]  uh
+[05:39.08]  you know, I think you can do a lot more,
+[05:40.76]  right? So I I think I do like a lot of
+[05:42.80]  accounting with Claude code using But
+[05:45.36]  the personal side using like uh scripts
+[05:48.00]  and Python instead of Excel, you know?
+[05:50.24]  Or like I do video editing using FFmpeg
+[05:53.60]  and these libraries to render visuals
+[05:56.20]  and things like that. And so I think
+[05:58.28]  most of the knowledge work is like uh
+[06:01.48]  reducible to code and coding agents if
+[06:05.00]  you like think about it well, you know,
+[06:07.12]  and um
+[06:08.88]  I think that that's like one I think
+[06:11.20]  like big difference
+[06:13.00]  uh that I see like
+[06:15.40]  other people doing less of, I think.
+[06:18.32]  >> We talked a little bit about the the
+[06:20.32]  model and the harness. And
+[06:23.60]  uh I want to ask you, what's the
+[06:25.40]  relationship between the model and the
+[06:27.04]  harness in terms of getting the best end
+[06:28.84]  results? And obviously the model's
+[06:30.52]  important. So how important is the
+[06:32.08]  harness? And are there any examples you
+[06:34.20]  could kind of share?
+[06:35.96]  >> Yeah, I mean, uh the harness is super
+[06:38.12]  important. I I think you I I think that
+[06:41.44]  sometimes there's this idea that the
+[06:42.76]  harness doesn't matter because the
+[06:43.92]  models will get better and better. And
+[06:45.28]  if the model just does everything
+[06:47.28]  perfectly, then why do you need a
+[06:48.80]  harness at all, right? And I think that
+[06:51.20]  in practice, what we see is like the
+[06:53.36]  models get better and better. And so the
+[06:55.04]  harness needs to become more and more
+[06:56.92]  complicated uh
+[06:58.84]  to
+[07:00.12]  allow the model to do more things,
+[07:02.44]  right? And so um an example of this is
+[07:05.96]  uh auto mode. And so auto mode, you
+[07:08.76]  know, is a classifier that runs after
+[07:11.48]  every, you know, uh task that you
+[07:14.16]  normally have to ask a permission uh
+[07:16.04]  prompt for for Claude. And back when we
+[07:18.64]  were like, you know, Opus 4 or even Opus
+[07:21.08]  4.5 maybe like uh it was not so bad to
+[07:24.20]  hit enter on the permission prompts
+[07:25.72]  because like you were you know, the
+[07:27.56]  turns would only last a few minutes
+[07:29.12]  anyways, right? And now Claude is
+[07:31.32]  running, you know, can run for hours.
+[07:33.00]  And so you really need that ability for
+[07:36.12]  it to you know, like do work safely,
+[07:38.68]  stick to your instructions. And auto
+[07:40.84]  mode is really complicated software, You
+[07:42.92]  know, sandboxing is really complicated
+[07:44.48]  software.
+[07:45.76]  Um and then like, you know, you also
+[07:47.00]  think about things like, okay, like
+[07:48.68]  Claude could do so much more work now.
+[07:51.24]  Um
+[07:52.16]  how does it represent the work that it's
+[07:54.12]  done? Like, it's worked for like 8 hours
+[07:56.08]  and you want to know what it's done in 8
+[07:57.40]  hours, right? So,
+[07:59.00]  this is what we use artifacts for,
+[08:00.64]  right? And artifacts themselves are a
+[08:02.48]  form of prompting cuz like, how does
+[08:04.24]  Claude represent that in a useful way,
+[08:06.68]  right? Like, there's a lot of different
+[08:07.84]  ways that it could uh represent that
+[08:09.64]  information.
+[08:11.00]  Um and so, I think like roughly
+[08:13.48]  what we see is like the harness harness
+[08:16.08]  engineering is definitely like this like
+[08:18.32]  mix of science and art. I think it's
+[08:20.32]  very unintuitive in a lot of different
+[08:22.32]  ways. Um but I think it has like just
+[08:25.60]  big abilities to like unlock new parts
+[08:29.20]  of uh you know, like model behavior. And
+[08:33.04]  uh yeah, I just see the harnesses get
+[08:34.64]  more and more complicated and it's kind
+[08:36.60]  of harder and harder to like
+[08:38.96]  actually vibe coordinate your own, which
+[08:41.36]  is like a little bit unintuitive to me
+[08:42.88]  because of like how good the models have
+[08:44.12]  gotten. Uh but yeah, things like auto
+[08:47.20]  mode and workflows and things like that
+[08:49.04]  that which are like actually quite
+[08:50.84]  complicated pieces of software
+[08:53.64]  become like really load-bearing, I
+[08:55.64]  think.
+[08:56.64]  >> As LLMs have advanced, more and more of
+[09:00.68]  the human part can be taken out of the
+[09:03.40]  loop. You know, at Anthropic, what
+[09:05.60]  percent of
+[09:07.24]  your or your team's changes are fully
+[09:10.36]  autonomously made versus actually
+[09:12.72]  pairing with a model like people were
+[09:14.60]  doing more of like around a year ago?
+[09:18.36]  >> Um I think it's very dependent on, you
+[09:21.44]  know, what you consider autonomously
+[09:23.08]  made or
+[09:25.36]  um what
+[09:27.76]  uh what team or what function you're
+[09:29.84]  working on as well. You know, for
+[09:31.60]  example, a designer might give you a
+[09:33.44]  Figma file and then you pass the Figma
+[09:36.16]  file to Claude Code. Uh Cloud Code is
+[09:38.76]  great at using the Figma MCP, but like,
+[09:40.48]  you know, the designers put a lot of
+[09:41.72]  work in there.
+[09:43.20]  Um I think that like roughly
+[09:46.16]  um
+[09:46.84]  our goal is to sort of get Cloud being
+[09:49.20]  able to do all of the like
+[09:51.52]  uh
+[09:52.84]  the glue work that like ties everything
+[09:55.00]  together, right? So, like, okay, you've
+[09:56.08]  got like a Figma file. Do I really need
+[09:57.76]  to like rewrite that in React or
+[09:59.48]  something? Like, probably not, right?
+[10:00.56]  Like, I I think like that work has been
+[10:03.08]  done once, right? And so, the way I
+[10:05.32]  think about it is like, what's the
+[10:06.32]  unique work that I need to do every day,
+[10:08.96]  right? And uh the more I'm like doing
+[10:13.00]  that unique work, the better. And And
+[10:14.96]  like, I think there's just a ton of
+[10:16.28]  demand for
+[10:17.60]  you know, unique work and thinking. And
+[10:19.56]  the more I'm doing something I've done
+[10:20.88]  before, I'm like, okay, like, can can
+[10:23.20]  Cloud do this? Or like, if I'm just
+[10:25.08]  translating what someone else has done,
+[10:26.84]  you know, I'm like, oh, like, can Cloud
+[10:28.28]  do this as well?
+[10:29.68]  It's really blurring the lines of like,
+[10:31.88]  what what does it mean? Even Even if
+[10:33.52]  Cloud has fully generated this PR,
+[10:35.92]  you've probably done a lot of
+[10:38.24]  uh made a lot of decisions and and add a
+[10:40.00]  lot of context along the way, so.
+[10:42.52]  >> How close are we to a world where
+[10:43.80]  someone just says, "Hey, Cloud,
+[10:45.68]  here's the ticket. Just
+[10:47.68]  don't tell me till you're done."
+[10:50.88]  >> Yeah, so I mean, it depends on how good
+[10:52.44]  the ticket is. If someone has like
+[10:54.24]  perfectly written out essentially like a
+[10:56.04]  software spec for this ticket, then
+[10:58.44]  yeah, actually Cloud can probably do
+[11:00.08]  that, right? But I think that like um to
+[11:03.84]  start, you know, like let's say that we
+[11:05.44]  get a GitHub issue, that you know, is
+[11:08.28]  this worth fixing? Is this a feature
+[11:10.80]  like often times issues are like also
+[11:13.12]  feature requests or something where
+[11:14.48]  there might be like multiple things
+[11:15.72]  happening that maybe you combine
+[11:17.48]  together in a different way, you know
+[11:19.12]  what I mean? And so, I think that there
+[11:20.48]  is
+[11:21.44]  a a lot of that work is like, okay,
+[11:23.72]  what's the vision for the product? Where
+[11:25.36]  Where do we want to go? How do we like,
+[11:27.68]  you know,
+[11:28.76]  um
+[11:29.36]  make sure what we we're building is
+[11:30.68]  cohesive. And so, I I think for a
+[11:33.64]  specific spec like a specific enough
+[11:36.88]  spec, Claude can do it. In practice,
+[11:39.56]  people don't have haven't figured out
+[11:43.24]  what they really want, you know? And
+[11:45.52]  haven't figured out the unknowns or the
+[11:47.64]  shape of the problem and things like
+[11:49.24]  that. And maybe the way you would have
+[11:51.56]  done it before is like you start writing
+[11:53.00]  the code and you're like, "Oh, like what
+[11:54.16]  am I supposed to do now?" Like or like,
+[11:55.44]  you know, like you you figured out that
+[11:56.92]  way. Uh now, I think you need like new
+[11:59.20]  ways of figuring out what you don't know
+[12:01.08]  yet, right? And I think you can still
+[12:02.96]  chat to Claude really.
+[12:04.68]  Um but I think
+[12:06.32]  uh that's the hard part. And I think
+[12:08.36]  definitely a failure mode is like
+[12:10.60]  you you tag Claude tag and you're like,
+[12:12.60]  "Hey, please do this."
+[12:14.52]  You know, one sentence or less
+[12:16.16]  description, no previous context or
+[12:18.48]  memory,
+[12:19.80]  um and then it does it and you're like,
+[12:21.20]  "Oh, no, I don't like it." You know, and
+[12:23.00]  then you're like, you know, just
+[12:25.00]  iterating forever on that, right? Versus
+[12:26.84]  like figuring out what you actually want
+[12:28.84]  like really quickly.
+[12:30.88]  >> When I was working at Meta, like the
+[12:32.92]  ambiguity of the task really ranges
+[12:36.60]  often times proportional to people's I
+[12:39.04]  mean, levels aren't everything in
+[12:41.28]  software engineering, but it's roughly
+[12:43.76]  senior engineers kind of take that
+[12:46.28]  ambiguous uh business need and convert
+[12:49.08]  it into something that's a lot more
+[12:51.00]  concrete. And then people who are maybe
+[12:53.64]  newer in their careers, they kind of do
+[12:55.88]  the implementation work. Um and like
+[12:58.56]  intern projects were kind of almost line
+[13:01.12]  by line specified. If I was still uh
+[13:04.44]  working at Meta and I had an intern, I
+[13:06.08]  was like
+[13:07.40]  just kind of give the give Claude my
+[13:09.96]  intern's back and it would kind of do
+[13:11.80]  it.
+[13:12.72]  What kind of work does an intern do then
+[13:15.20]  at Anthropic if Claude can kind of
+[13:17.48]  handle it?
+[13:18.64]  >> What we see in practice is that there
+[13:21.44]  are just so many new types of work that
+[13:23.40]  no one has ever done before, right? And
+[13:25.48]  I think that like we all have to figure
+[13:27.16]  that out and so for example, how do you
+[13:30.00]  do an eval, you know what I mean,
+[13:32.12]  against like
+[13:34.44]  uh these new coding behaviors, right?
+[13:36.24]  Like how do you make sure like
+[13:38.68]  uh that like, you know, how do you
+[13:40.64]  measure Claude's performance across like
+[13:42.96]  millions and millions of users, uh
+[13:45.00]  million across doing all sorts of tasks.
+[13:47.40]  Sometimes these tasks might have
+[13:48.48]  trade-offs, you know, so I think there
+[13:49.92]  is a lot of new work to be done,
+[13:53.60]  especially like in the research side of
+[13:55.40]  things and um I think that like it's
+[13:58.96]  harder and harder to write those specs,
+[14:01.40]  but there's also less and less
+[14:02.88]  experience that is relevant, you know
+[14:05.88]  what I mean? And so like I think that
+[14:08.00]  yes, having some experience means that
+[14:09.88]  you can sort of like
+[14:11.32]  you know,
+[14:12.52]  you know how to get work done and you
+[14:15.08]  know how to like learn, but I think you
+[14:17.16]  also get those skills out of college and
+[14:19.04]  and you know, now I think as an intern
+[14:22.40]  trying to figure out like, okay, what
+[14:23.52]  are the things that people have not done
+[14:25.28]  before and and doing that I think is
+[14:26.88]  really exciting and I think that there
+[14:28.76]  is um
+[14:30.68]  Yeah, I think internships are less write
+[14:32.56]  the react code, you know what I mean,
+[14:34.44]  and there's so many new problems to
+[14:36.00]  solve. We need people to solve them.
+[14:37.96]  It's helpful if you have fresh set of
+[14:40.04]  eyes on it, you know? Um
+[14:42.60]  but it is definitely be more proactive
+[14:44.44]  and like opportunistic maybe than uh
+[14:47.16]  than before or if you're it was maybe
+[14:48.80]  more of like a pipeline.
+[14:51.16]  >> We talked a little bit about knowledge
+[14:52.92]  work and that makes me think of computer
+[14:55.72]  use and browser use and I want to ask
+[14:58.80]  you, you know, how far away is that from
+[15:01.72]  being widely adopted in the industry and
+[15:05.20]  impactful? Maybe you can talk about how
+[15:08.16]  Anthropic uses it since it feels like
+[15:09.84]  you're always far ahead.
+[15:11.24]  >> I I think computer and browser use the
+[15:12.80]  models have gone a lot better. Opus 5 I
+[15:15.32]  think is like a really good computer use
+[15:16.88]  model, but there are like these weird
+[15:18.68]  edge cases where like for example, it
+[15:21.04]  can't type a password on my behalf
+[15:22.84]  because my passwords are in one password
+[15:25.28]  or something and
+[15:26.64]  you know, it can't access that and so
+[15:28.40]  like it gets stuck and um I think
+[15:30.76]  there's still like those edge cases
+[15:32.12]  which are kind of UXE edge cases. Um
+[15:35.96]  and then I think also obviously computer
+[15:37.56]  uses also
+[15:39.12]  uh you know, the more and more people
+[15:41.24]  turn APIs and MCPs into like new ways to
+[15:45.16]  use Claude. I think that can also take a
+[15:47.96]  lot of the use cases that you're using
+[15:50.48]  computers for, right? And so going back
+[15:52.20]  to like oh yeah, knowledge work
+[15:53.40]  everything is code. I think like you
+[15:56.32]  know, there are some things where
+[15:57.84]  there's no API, there's no way to
+[16:00.68]  execute in code other than just like
+[16:02.60]  opening up your browser. But I think
+[16:04.32]  increasingly there are more and more
+[16:05.64]  ways and I think yeah, Claude tag is a
+[16:07.48]  great example of like we've just sort of
+[16:08.88]  like tried to
+[16:10.48]  roll up all these things into APIs that
+[16:13.36]  it can use and so
+[16:15.36]  um it feels like it can do a lot of work
+[16:17.40]  on your behalf even though even though
+[16:18.84]  it's not
+[16:20.52]  literally running like a virtual
+[16:21.88]  computer and clicking things, you know.
+[16:24.16]  >> I have noticed that whenever I use
+[16:26.68]  uh any kind of computer use tooling, it
+[16:29.28]  feels
+[16:30.36]  painfully slow. I I look at the cursor
+[16:32.56]  and it's sitting there for 10 seconds,
+[16:34.84]  moves over, you know, goes there for 10
+[16:36.80]  seconds. What where is all that latency
+[16:39.20]  coming from? Do you have a sense?
+[16:41.20]  >> I think that like it's hard to make a
+[16:42.88]  small model that's really really good at
+[16:44.52]  it. I think just cuz there's a lot of
+[16:46.44]  knowledge that you need to have about
+[16:48.64]  this task and how these things work
+[16:50.44]  together and stuff and so
+[16:52.68]  um you want like a smart model and smart
+[16:54.44]  models, you know, take a little bit
+[16:55.68]  longer time. It it's like I think a lot
+[16:58.40]  of people thought we'd get here sooner,
+[17:00.28]  but I think it's just been a harder task
+[17:01.56]  than we expected. Um I think like one
+[17:03.88]  thing I've someone's told me about
+[17:05.72]  computers before is that like
+[17:08.00]  it's a state machine where you don't
+[17:09.76]  control the entire state. If you are on
+[17:12.20]  the DoorDash website or something you
+[17:13.52]  want to add something to the cart and
+[17:15.12]  you add it incorrectly, now you have
+[17:17.64]  this new flow to like undo it. You know,
+[17:20.24]  now you need to go click and now you
+[17:22.16]  need to go delete it and you can make a
+[17:23.92]  mistake along that side as well, right?
+[17:25.84]  Whereas like in code, you can sort of
+[17:27.80]  like undo, get, you know, whatever. You
+[17:29.88]  control all of the state.
+[17:31.80]  Um but for computer use like each action
+[17:34.64]  is
+[17:35.72]  if not irreversible, it's like
+[17:38.28]  uh
+[17:38.84]  you know, much harder to review reverse
+[17:40.68]  than than others.
+[17:42.48]  >> Anthropic,
+[17:44.08]  um I get the sense that employees have a
+[17:47.56]  lot of budget in terms of the compute to
+[17:50.08]  kind of speed up whatever it is they
+[17:52.04]  need to do. And so, to if we were to
+[17:54.64]  spur the imagination of people who use
+[17:57.56]  the models to make them more productive,
+[18:01.16]  assuming they had infinite compute, like
+[18:03.44]  what what type of workflows would you
+[18:05.96]  start telling someone to do if they had
+[18:08.56]  infinite compute?
+[18:10.16]  >> I I think this difference is slightly
+[18:13.00]  more exaggerated than you'd think, I
+[18:15.40]  think. You know what I mean? I think
+[18:16.48]  that like, for example, I use my Mac sub
+[18:20.92]  on the weekends and I have almost never
+[18:24.08]  hit a 5-hour limit. I think the models
+[18:26.04]  are really smart and I think that like a
+[18:28.96]  lot of times when we're spending a lot
+[18:31.48]  of compute, we're just trying to find
+[18:34.08]  sort of capabilities or we're trying a
+[18:35.96]  bunch of different things and and it's
+[18:37.72]  more about like us figuring out model
+[18:39.32]  possibilities, you know what I mean?
+[18:41.40]  Than getting a lot of work done. When
+[18:43.52]  we're testing for math, for example,
+[18:45.16]  we're trying to understand how smart is
+[18:46.92]  the prob the the model and that is
+[18:49.56]  useful to us. That's useful output to
+[18:51.16]  work and it can also sometimes solve
+[18:53.64]  like the Riemann hypothesis or something
+[18:55.36]  or like not make progress, you know what
+[18:57.32]  I mean? People can replicate what we do
+[19:00.20]  at home just by thinking at a higher
+[19:02.16]  level of abstraction. For example, I'm
+[19:04.56]  trying to like get Claude to draft
+[19:06.48]  feedback for you. And so,
+[19:09.32]  I want the funnel for like Claude to
+[19:11.76]  draft with some feedback to the user has
+[19:13.80]  submitted feedback to be really good,
+[19:15.76]  right? And so I monitor that funnel and
+[19:18.20]  then I ask Claude
+[19:20.24]  I I had some ideas, but then I was also
+[19:22.16]  like, "Oh, what if I ask Claude to try
+[19:24.76]  and improve the funnel, you know?" And
+[19:26.80]  it'd be like, "Here are some ideas. Can
+[19:28.16]  you come up with some as well? Let's
+[19:29.52]  figure it out." All of those things you
+[19:31.96]  can kind of do yourself right now, you
+[19:33.60]  know, if you're like, "Okay, let me when
+[19:36.12]  I'm making a feature, let me like
+[19:38.48]  uh annotate it with the events, you
+[19:40.52]  know, let me make sure that Claude has
+[19:42.36]  access to those events. Uh let me run a
+[19:45.08]  loop in the morning every day to check,
+[19:48.12]  you know, what events are fired and what
+[19:51.00]  changes were made. Maybe even like let
+[19:53.12]  me proactively suggest some ideas,
+[19:54.96]  right? This can all happen, I think,
+[19:57.08]  within a fairly reasonable amount of
+[19:58.60]  compute. I actually what I see more
+[20:00.52]  often is people running into limits
+[20:02.28]  where they've actually done kind of the
+[20:04.08]  opposite. They've started with a small
+[20:06.16]  mid-scope task, you know, it's like,
+[20:07.84]  "Oh, hey, like uh you know, refactor
+[20:10.72]  this function in this way." And then
+[20:12.96]  Claude does it and and maybe it's like
+[20:15.12]  has some follow-on effects cuz like
+[20:16.76]  refactoring this has means you have to
+[20:18.40]  do some other work, too, and that's not
+[20:20.64]  exactly correct or like, you know, you
+[20:22.68]  you're iterating there and it's like,
+[20:24.12]  you know, you just spent a lot of time
+[20:26.04]  whereas
+[20:27.28]  uh
+[20:28.16]  if you had sort of like stepped up a
+[20:29.64]  level, told Claude your goals, then
+[20:32.16]  figure out like, "Okay, what are the
+[20:33.52]  details
+[20:34.64]  you know, do some exploration, uh maybe
+[20:37.44]  write out the schema or like, you know,
+[20:39.04]  and and then work with it. Then let it
+[20:40.96]  run. You could probably get the same
+[20:43.88]  output.
+[20:45.12]  >> I remember it was going kind of viral
+[20:47.36]  this idea of creating loops. Um
+[20:51.28]  and I mean that that does feel like a
+[20:53.04]  pretty
+[20:54.56]  uh expensive sort of thing to set up if
+[20:57.36]  you're just asking it to kind of keep
+[20:58.76]  hammering away. Maybe first could you
+[21:00.52]  define this loop engineering thing and
+[21:03.24]  then I'm curious how often do you use it
+[21:05.16]  and
+[21:06.08]  you know, would you hit limits if you
+[21:08.00]  were on a max plan doing that kind of
+[21:09.60]  stuff?
+[21:10.72]  >> Yeah, so I okay, so loop engineering
+[21:13.96]  roughly it's like
+[21:16.48]  instead of prompting Claude directly,
+[21:18.64]  you're setting up a system that prompts
+[21:20.44]  Claude. You know, and
+[21:23.16]  you don't have to think of it if you use
+[21:25.40]  Claude tag a lot of this comes
+[21:26.84]  naturally. You just ask it like, hey,
+[21:29.04]  every day do this thing, you know, and
+[21:32.12]  that will that's a loop. You can
+[21:35.84]  definitely do that sort of work right
+[21:37.16]  now, but I think if you're trying to set
+[21:38.84]  up like let's let's say like
+[21:40.76]  10 loops or something, you know, that
+[21:42.84]  are like uh
+[21:45.24]  triaging your feedback and implementing
+[21:48.00]  and things like that. We do that sort of
+[21:49.84]  work, but we also spend a lot of time
+[21:51.88]  making sure our skills and things like
+[21:54.52]  that are useful, you know, and like are
+[21:57.24]  good at like triaging
+[21:59.52]  that we can
+[22:00.96]  how we're good at verification and so
+[22:03.36]  that we can like make sure that the
+[22:04.48]  changes land, you know, and then I think
+[22:07.84]  at that level, you know, what it means
+[22:10.28]  is like now we have someone monitoring
+[22:12.56]  issues that we just could never have
+[22:14.52]  kept on top of before, right? And it
+[22:16.96]  just like increases our software
+[22:18.20]  development velocity and it's worth a
+[22:19.68]  lot of value to us. And so yeah, I think
+[22:22.08]  that like if you're kind of at the scale
+[22:23.68]  of like, okay, you want it to
+[22:25.60]  essentially be autonomously running, you
+[22:28.20]  know,
+[22:29.36]  doing a software engineering job. For
+[22:30.96]  certain cases, I think it can do that if
+[22:33.20]  you set up the verification well, if you
+[22:35.56]  set up your skills well, if you give it
+[22:36.92]  the right data sources, but um it is a
+[22:39.28]  lot of work, right? And I think that
+[22:40.64]  like you have to make sure that that
+[22:42.28]  work is valuable to you in the same way
+[22:43.72]  that like if you hire someone, you know,
+[22:45.08]  you have to make sure that work is
+[22:46.16]  valuable.
+[22:47.28]  >> We've talked a little bit about
+[22:48.40]  Anthropic being kind of
+[22:50.60]  just ahead because that's the job of the
+[22:52.48]  company on adopting AI. Is there
+[22:55.24]  something that you feel is kind of the
+[22:57.04]  next big shift that maybe Anthropic's
+[22:59.64]  already felt that you feel
+[23:01.88]  is going to diffuse into the industry
+[23:04.16]  and if so, what might that be?
+[23:06.40]  >> Yeah, I think there are few different
+[23:09.12]  ones. Obviously, Claude Tag, I think, is
+[23:12.00]  our, you know, the way we do a lot of
+[23:13.64]  our work right now, right? And I think
+[23:15.28]  the way I think about it is that Claude
+[23:17.16]  Code is really good at the
+[23:18.72]  implementation of code, and Claude Tag
+[23:20.68]  is for the rest of the software
+[23:22.56]  development life cycle, you know, so
+[23:24.08]  like so
+[23:25.72]  getting feedback,
+[23:27.48]  uh you know, doing code review, like
+[23:30.28]  babysitting, building CICD, incidents,
+[23:34.04]  like, you know, all of these other
+[23:35.40]  things, Claude Tag is really good at.
+[23:37.60]  At a high level, turning every part of
+[23:40.28]  your software development life cycle
+[23:41.68]  into kind of like a a routine or a loop
+[23:45.12]  using Claude Tag or something like that,
+[23:47.12]  I think is probably where things are
+[23:49.28]  headed, you know?
+[23:50.96]  Um I think probably generative
+[23:53.64]  interfaces are still to come, and I
+[23:55.92]  think that like artifacts and, you know,
+[23:59.76]  uh yeah, basically artifacts, I think,
+[24:01.72]  are going to be like an increasingly
+[24:03.60]  large way of how you like interact and
+[24:05.88]  read with Claude. And and so I think
+[24:07.56]  that, you know, I use artifacts for
+[24:09.04]  almost everything, and and so I think
+[24:10.32]  that like we're going to see that also
+[24:12.04]  become big, and I think that's also ties
+[24:15.12]  into Claude Tag, right? So like let's
+[24:16.80]  say that you are um on your phone and
+[24:20.00]  Claude Tag has done a bunch of work for
+[24:21.28]  you. It creates a report. The report is
+[24:23.40]  readable, you know, on your phone
+[24:25.16]  because it's made the like the artifact
+[24:27.36]  look really great.
+[24:28.84]  >> Could you explain
+[24:30.40]  uh artifacts a little bit or kind of
+[24:31.92]  what are they and how do people use
+[24:33.32]  them?
+[24:34.28]  >> Artifacts are basically
+[24:36.60]  um
+[24:37.96]  Claude can upload essentially a web app
+[24:40.40]  for you to use, you know? And I think
+[24:41.92]  that
+[24:42.96]  uh
+[24:44.28]  you can use it in a really wide range of
+[24:47.88]  capabilities. They can now, for example,
+[24:50.20]  call your MCP. So you can make an
+[24:52.08]  artifact, for example, to read your
+[24:54.52]  inbox, you know, and like display it or
+[24:57.20]  sort it or tag it, right? As like a one
+[24:59.88]  way. You can also use artifact to uh
+[25:02.52]  show you a plan for coding, right? And
+[25:04.32]  then in that it might show like diagrams
+[25:06.36]  and file snippets and code and schemas.
+[25:09.28]  Um and so it shows you like sort of uh
+[25:12.12]  it's like an interactive
+[25:14.36]  display for the tap for the job you're
+[25:16.72]  doing right now, you know? And as Claude
+[25:18.52]  does more and more, you know, like jobs,
+[25:21.68]  we're realizing that like just text in
+[25:24.16]  text out is probably not useful for
+[25:26.68]  everything, right? And Claude is doing
+[25:29.12]  is better and better at creating
+[25:30.64]  essentially the exact interface for you
+[25:32.44]  at the right time. Um I think that
+[25:35.08]  there's like a lot more to do there, and
+[25:37.36]  I think
+[25:38.32]  it's another one of those things where
+[25:39.48]  you have to think about like, oh, like
+[25:41.60]  you know, could I be interacting with
+[25:42.84]  Claude in a different way, right? Like
+[25:44.44]  could I interact with it through an
+[25:45.64]  artifact? Could I
+[25:47.68]  you know, use it to like learn more or
+[25:49.84]  like to understand it better or stay in
+[25:51.28]  the loop or
+[25:53.04]  um
+[25:54.20]  improve some of my like own knowledge
+[25:56.00]  work or something. So,
+[25:57.92]  um
+[25:58.76]  yeah, I I I think it's pretty exciting.
+[25:59.88]  We're still kind of early to it.
+[26:01.96]  >> Does the daily driver model vary among
+[26:04.84]  engineers, or do people typically just
+[26:07.04]  pick the most intelligent one that's
+[26:09.28]  available at Anthropic?
+[26:11.12]  >> I do think, you know, similarly with
+[26:13.20]  models, if you use the smart models and
+[26:14.80]  you use them well and you give them
+[26:17.04]  task where they can, you know, are
+[26:18.76]  well-shaped and you've spent some time
+[26:20.16]  setting up a good verification harness
+[26:21.76]  and things like that, you can get a lot
+[26:23.44]  out of them.
+[26:24.60]  I don't think it's like choosing which
+[26:26.48]  model at the right time, you know? I
+[26:28.72]  think it's like, oh, how do you get the
+[26:30.28]  most out of the frontier models
+[26:33.84]  um because I think technology works the
+[26:36.68]  way it does, right? Like everything gets
+[26:37.92]  more abundant, more available.
+[26:40.12]  Um and so I think we're in this current
+[26:43.52]  weird spot where, you know, we don't
+[26:44.92]  quite have enough compute for everyone
+[26:47.28]  to have Fable at 100% of the rate
+[26:48.80]  limits.
+[26:49.88]  Um but I don't think this is like a
+[26:51.16]  durable skill to build figuring out like
+[26:54.24]  oh when do you use Fable and when do you
+[26:55.68]  Sonic, right? So
+[26:58.52]  I think it's like unintuitive there.
+[27:00.96]  But I think in practice if you're today
+[27:03.68]  what I would do is like I use Fable for
+[27:05.80]  planning, for brainstorming, for finding
+[27:08.36]  unknowns, for coming up with the
+[27:09.64]  detailed spec and I'd use Opus 5 to
+[27:11.84]  implement it.
+[27:13.96]  And I would probably use Opus 5 with
+[27:16.12]  workflows
+[27:17.60]  using like a verification aid like
+[27:19.44]  schema or like harness that's built with
+[27:21.28]  Fable, right? So I'd use Fable for those
+[27:23.36]  high leverage task.
+[27:25.92]  And yeah, Opus 5 for the execution and
+[27:29.16]  implementation.
+[27:31.32]  But yeah, I think increasingly probably
+[27:33.08]  next year I I I think you're just not
+[27:34.52]  going to be thinking that much about
+[27:36.68]  like which model.
+[27:38.48]  >> You mentioned that skill of I guess
+[27:40.56]  prompting and I've heard some people
+[27:44.56]  they say
+[27:46.04]  it's not too durable of a skill because
+[27:49.04]  it's kind of it's really specific to a
+[27:51.04]  model. Like these models they almost
+[27:52.96]  have their own unique
+[27:55.60]  I guess spiky intelligence. So if you if
+[27:58.04]  you knew everything that was very
+[27:59.68]  specific to let's say today's Fable and
+[28:02.68]  you're a master of today's Fable
+[28:05.00]  I mean maybe you don't need to know any
+[28:06.60]  of that stuff like a year from now and
+[28:09.60]  Fable 3 or 4 or 5 whatever comes out.
+[28:13.08]  Let's say you were talking to software
+[28:15.56]  engineer who's looking for career advice
+[28:18.00]  and they're thinking hey should I really
+[28:20.52]  become a master of engineering my
+[28:23.44]  prompt?
+[28:24.64]  >> I do want to say prompting is like
+[28:26.20]  little bit more than just a prompt you
+[28:28.04]  put in. It's also you know, you might
+[28:29.84]  have done made a skill or you might have
+[28:31.72]  like you know, added some data or
+[28:33.12]  something. It's not just a prompt you
+[28:34.96]  write but it's like everything you've
+[28:36.08]  done before that builds up into your
+[28:37.92]  context, right? So
+[28:40.28]  sometimes people see us write small
+[28:42.08]  prompts and they're like oh what is that
+[28:43.80]  mean? But we we just spent so much time
+[28:46.04]  on
+[28:47.16]  the the
+[28:48.44]  harness and the verification and and the
+[28:50.24]  skills. So,
+[28:51.68]  um
+[28:52.36]  I think it will be like really valuable
+[28:54.40]  to just keep better at prompting. I
+[28:56.60]  think to what you're saying about each
+[28:58.48]  model is different, you're right. Like I
+[28:59.88]  think each model is kind of its owns
+[29:02.68]  kind of like almost organic digital
+[29:05.12]  thing, you know? And so, there are
+[29:06.76]  quirks you have to learn and you do have
+[29:09.48]  to unlearn them. So,
+[29:11.56]  we recently wrote about like how we
+[29:13.72]  removed 80% of the system to prompt from
+[29:15.64]  Claude code, right? Um and one of the
+[29:18.56]  learnings we had was like we needed to
+[29:20.20]  remove examples from the tool
+[29:22.72]  descriptions. And you know, this used to
+[29:24.68]  be the only way you could get good
+[29:26.40]  output from the models was through
+[29:29.00]  tools, right? Or or through examples,
+[29:31.16]  right? So, you'd have to be like, "Hey,
+[29:32.88]  this is the right tool. Use this. Here
+[29:35.24]  Here's an example of writing a
+[29:37.88]  file well and here's an example of not
+[29:39.56]  doing it well."
+[29:40.68]  Um
+[29:41.64]  and now we found that like examples are
+[29:43.88]  mostly negative, I think, unless um
+[29:47.24]  you really see Claude doing something
+[29:48.64]  you don't like because
+[29:50.32]  uh it's just like quite imaginative.
+[29:52.28]  It's good at sticking to your intention
+[29:54.00]  and working with you. Um and so, we
+[29:55.96]  removed a lot of examples. So, in that
+[29:58.32]  case, yes, you do have to sort of like
+[30:00.12]  adapt, but the skill you're building is
+[30:03.36]  the skill to adapt. You learned how to
+[30:05.96]  use Fable and now you know a lot about
+[30:08.28]  Fable, but you also know how to learn
+[30:10.44]  You learned how to work with a model,
+[30:12.68]  right? And so, Fable 5.5 comes out, you
+[30:14.92]  need to
+[30:15.96]  learn how to use it again as well,
+[30:19.24]  but you'll be much faster cuz you're
+[30:21.04]  better at learning.
+[30:22.52]  You're better working with Fable 5, you
+[30:24.36]  know? And I think for me, I think the
+[30:26.32]  first model I worked with was GPT-2, and
+[30:29.04]  I remember like it was it was so hard to
+[30:31.04]  get
+[30:32.20]  a JSON output out of GPT-2. Like if you
+[30:35.08]  could just
+[30:36.08]  get it to like choose one of the
+[30:38.36]  categories that you gave it, that would
+[30:40.04]  be like incredible, you know? And so,
+[30:42.60]  um I think that but like
+[30:45.08]  building that skill, GPT-2 is such a
+[30:47.56]  different model than Fable 5, but I feel
+[30:50.12]  like the skill I spent doing that has
+[30:52.92]  like helped me be better at prompting
+[30:54.92]  Fable 5.
+[30:56.12]  >> Is there any like tribal knowledge or
+[30:57.84]  quirky tips in today's models where
+[31:00.20]  you'd say
+[31:01.40]  someone should should know that to get
+[31:03.44]  more when they prompt?
+[31:04.80]  >> I actually need to counter one I think
+[31:06.52]  that people have been saying where it's
+[31:07.84]  like, "Oh, just believe in yourself." or
+[31:09.84]  something. I I know that
+[31:11.72]  Jared
+[31:13.16]  Jared's post about the Riemann
+[31:14.40]  hypothesis had like he was just like,
+[31:16.32]  "Keep going. Just believe in yourself."
+[31:18.48]  I think in this case it was mostly just
+[31:20.76]  Jared saying it's okay to use compute to
+[31:23.72]  solve this problem and I'm giving you
+[31:25.40]  permission to do it, you know? And I
+[31:27.76]  think that like that's not exactly the
+[31:29.60]  same as
+[31:31.04]  you know, I believe in you, you know
+[31:34.08]  what I mean? It's really just like
+[31:35.84]  letting the model use compute. So, I
+[31:38.36]  think that that is something I would
+[31:41.04]  I like to tell the models right now is
+[31:42.92]  like, "Okay, hey, I think this is a hard
+[31:44.56]  problem. Use sub agents, you know? Use
+[31:47.00]  workflows. Like if you need it, right?
+[31:49.00]  So, like I always tell it to like use
+[31:51.00]  its own judgment, but I'm giving you
+[31:55.84]  permission to do this stuff, right? And
+[31:58.60]  I think that
+[31:59.92]  uh
+[32:00.72]  you have to sort of remember that the
+[32:01.96]  models by default, you know, do what
+[32:04.48]  maybe the average user wants, which is
+[32:06.08]  like they want it to respond and start
+[32:08.36]  doing work as fast as possible.
+[32:11.44]  Roughly like complete the task, but not
+[32:13.84]  spend like a crazy amount of compute on
+[32:15.68]  it, you know? And so, I think that like
+[32:18.56]  um you have to sort of if you want the
+[32:20.76]  model to do it differently, you have to
+[32:22.04]  nudge it slightly, right? So, you might
+[32:23.80]  have to be like, "Okay, hey, like I
+[32:25.84]  don't want you to do any work yet. I
+[32:27.36]  want you to brainstorm, you know? I want
+[32:29.20]  you to like think with me, right?" Um
+[32:32.12]  and if you prompt it that way, it will
+[32:33.40]  start doing that. If you want it to
+[32:35.32]  spend a lot of compute, if you're like,
+[32:36.72]  hey,
+[32:37.52]  you know, sometimes I'll say like
+[32:39.72]  Yeah, hey, I think this is a hard
+[32:40.64]  problem. Uh feel free to use workflows.
+[32:43.16]  If I'm running overnight, I might just
+[32:44.56]  be like, hey, I'm going to sleep, you
+[32:46.04]  know, set the slash goal or something
+[32:47.44]  and then
+[32:48.52]  uh let it let it run. So,
+[32:51.00]  um
+[32:51.76]  yeah, I think there is a
+[32:54.36]  uh just like giving it permission to do
+[32:56.28]  the thing you want.
+[32:57.88]  >> When you recently removed so much of the
+[33:00.32]  system prompt,
+[33:01.88]  uh how did you prove that
+[33:04.32]  the end result was better?
+[33:06.44]  >> We have a bunch of user metrics just
+[33:08.32]  like how, you know, how much do people
+[33:10.40]  like the output of Claude? Do you
+[33:12.12]  something you get that survey and you
+[33:13.52]  see it. Um
+[33:15.24]  we run evals against, you know, our
+[33:18.76]  internal eval uh and external evals to
+[33:21.64]  see like how it performs at these
+[33:23.52]  different tasks. Um
+[33:25.44]  but I think it is hard like sometimes
+[33:27.44]  you don't realize that they're not If
+[33:29.88]  Claude is telling the user if it does
+[33:32.16]  all its work and then it's like, hey,
+[33:33.80]  maybe you should go to sleep, there's no
+[33:35.48]  eval for Claude tells you to go to
+[33:36.92]  sleep, you know what I mean? And now
+[33:38.04]  we're like have to like catch this like
+[33:40.00]  new behavior. Um so, it is hard. I think
+[33:42.80]  we spent a lot of time
+[33:44.64]  basically just um
+[33:46.44]  you know, like removing lines in the
+[33:47.68]  system prompt, running evals, uh seeing
+[33:50.04]  how it works, seeing how people uh
+[33:52.08]  reported it internally, and then like
+[33:54.36]  adjusting, but it was like a full-time
+[33:56.12]  job for several people over long periods
+[33:58.36]  of time. And so,
+[34:00.12]  I don't think I'd necessarily recommend
+[34:01.96]  everyone do this. I think that's kind of
+[34:04.36]  why we wrote that post about what we
+[34:06.28]  learned from like adjusting the system
+[34:08.48]  prompt. And we think that's pretty
+[34:10.32]  general. So, hopefully you don't have to
+[34:12.44]  like now
+[34:13.68]  go through this like crazy iteration
+[34:15.32]  process.
+[34:16.72]  >> OpenAI, Anthropic, Cursor, and Vercel
+[34:20.48]  all use this product to make their lives
+[34:22.24]  better.
+[34:23.20]  And the problem it solves is when you're
+[34:25.08]  building SaaS or an ad product and you
+[34:27.72]  want to sell to other companies, there's
+[34:29.60]  all these requirements you need to meet.
+[34:31.80]  There's SSL, there's SCIM, there's RBAC,
+[34:35.44]  there's audit logs. These are all things
+[34:37.24]  that take time to integrate, but aren't
+[34:39.40]  the main focus of your app. WorkOS is an
+[34:41.72]  API layer that lets you meet all of
+[34:43.40]  these requirements in just a few lines
+[34:45.56]  of code. So, let's say you have a new
+[34:47.60]  SaaS product and you want to sell to
+[34:49.28]  other companies, WorkOS will solve all
+[34:51.76]  of these critical feature gaps for you.
+[34:54.48]  You can check them out at workos.com to
+[34:56.96]  learn more and get started. And I
+[34:59.12]  appreciate them for supporting my work
+[35:00.96]  and sponsoring this podcast.
+[35:02.84]  >> I think a lot of people
+[35:05.40]  when they use Claude code, they get
+[35:07.40]  excellent results when it's kind of
+[35:09.88]  getting
+[35:11.44]  very objective work done.
+[35:13.76]  But when it's kind of prompting models
+[35:15.96]  to do beautiful or tasteful work, it's
+[35:18.72]  kind of not always, you know, it's
+[35:20.32]  pretty much more hit and miss. And so,
+[35:23.00]  you know, how do you best instill like a
+[35:25.44]  very particular style you're going for
+[35:27.72]  or particular taste in the models
+[35:30.24]  outputs when it's a much more subjective
+[35:32.88]  domain, maybe like front end?
+[35:35.08]  >> The way you do it is sort of like you
+[35:37.28]  stay in the loop. I think you give it
+[35:39.32]  references, right? And I think the more
+[35:41.16]  references you give it with data, the
+[35:44.36]  better. So, like it's better to give an
+[35:46.80]  HTML file than a screenshot, right? It's
+[35:48.64]  better to give a Figma file than like a
+[35:51.72]  raster image or something, right? Cuz
+[35:53.60]  now it if Claude wants to know the
+[35:55.68]  border radius of this thing, it's like,
+[35:57.20]  oh, what's the Figma component border
+[35:59.80]  radius and let me just copy it over. And
+[36:02.64]  so, I think giving it a bunch of
+[36:04.20]  references, ideally in code, is a really
+[36:07.16]  good way, right? Of like getting it to
+[36:09.28]  stick to this. Um
+[36:11.04]  I think if not, you can then ask it to
+[36:14.40]  if you don't have like
+[36:16.24]  uh let's say you're not a designer.
+[36:18.16]  There's probably Step one is being like,
+[36:20.68]  okay, now I'm not a designer. There's a
+[36:22.48]  lot I don't know about design, you know?
+[36:25.64]  And like there's was lot I don't know
+[36:26.84]  about iteration. I don't even know what
+[36:29.04]  good looks like, right? And I think this
+[36:30.64]  is like part of the art of working with
+[36:33.36]  a designer is like they will just know
+[36:35.20]  what good looks like and they'll be like
+[36:36.60]  this isn't good enough in this way,
+[36:38.32]  right? And they like prompt it. And that
+[36:40.68]  I think is also a skill that will keep
+[36:42.28]  getting valuable and even more valuable
+[36:45.00]  over time is just like what is good
+[36:47.28]  output? What is worth doing, right? Like
+[36:49.00]  I think uh for example with the uh the
+[36:51.64]  Riemann hypothesis, Jared prompted it,
+[36:54.00]  but he had no idea if it was correct
+[36:56.24]  until like Lev who's like, you know,
+[36:59.16]  one of the world's best mathematicians
+[37:01.32]  who was like, you know, okay, like how
+[37:02.68]  do I
+[37:04.16]  is this correct, right? And he worked
+[37:06.64]  with it and he asked it like tons of
+[37:08.56]  follow-up questions.
+[37:10.36]  And we could not follow that at all. We
+[37:12.28]  had no idea what he was saying, right?
+[37:14.28]  But he was like really intrigued. And
+[37:16.00]  and so I think
+[37:17.12]  more and more being that like high-cased
+[37:19.12]  user and like knowing a lot about a
+[37:21.36]  problem in a domain space is how you get
+[37:23.44]  good outputs, right? That's how you
+[37:25.68]  these problems. Uh
+[37:27.24]  otherwise like maybe Claude did solve
+[37:29.32]  like physics or something and but you
+[37:30.72]  just wouldn't know it, right? Like
+[37:31.76]  you're like
+[37:32.72]  uh
+[37:33.44]  you you don't know enough about it. And
+[37:35.16]  so I think when you're talking about
+[37:37.16]  design, the first thing you do is like
+[37:38.68]  how do you become more tasteful with
+[37:40.20]  design, right? And so you can ask Claude
+[37:42.96]  that as well, right? Like you can be
+[37:44.28]  like, "Hey, I'm not a designer. I want
+[37:46.08]  to be better at design. I don't even
+[37:47.68]  have the language. First maybe let's
+[37:49.52]  find some reference sites." And that and
+[37:51.08]  then maybe you pull some reference sites
+[37:52.64]  and then you're like, "This is what I
+[37:53.88]  like or this is what I don't like,
+[37:55.32]  right?" And then you
+[37:57.16]  sort of build up that, you know, those
+[37:59.44]  references and you give Claude it. And
+[38:01.44]  and now maybe you tell it, "Hey, let's
+[38:03.04]  do some exploration. This is sort of my
+[38:05.04]  taste." And then it'll do like a few
+[38:07.36]  different mock-ups, right? And I like to
+[38:09.36]  do these mock-ups all in HTML because
+[38:10.96]  it's all self-contained, easy to edit.
+[38:13.28]  And then once you have that
+[38:15.48]  you know, that reference, now it's a
+[38:17.56]  reference. So now you can be like you
+[38:19.36]  can make a new session and be like,
+[38:20.64]  "Hey, this is a mock-up of a design I
+[38:22.88]  want. Uh start implementing this and,
+[38:25.76]  you know, it will have all of it in code
+[38:27.68]  and you can start getting there." Um but
+[38:30.12]  I think that like the really hard part
+[38:32.48]  is just knowing like, "Oh, when is
+[38:34.16]  something good enough?" You know, uh
+[38:35.72]  versus like when can you, you know, push
+[38:38.64]  harder, right? And you see this with a
+[38:40.12]  lot of the math proofs, too, right? Or
+[38:41.72]  and when like Terence Tao is like,
+[38:43.48]  "Okay, enough with the half-complete
+[38:45.56]  theorems. Just do the full theorem." You
+[38:47.84]  know, and and so I think like it sounds
+[38:50.28]  simple, but it takes a lot of domain
+[38:52.32]  knowledge and expertise to get to the
+[38:54.60]  point to be like, "Okay, like you it
+[38:56.88]  seems like you're smart enough to have
+[38:58.40]  done that. Now do this."
+[39:00.60]  >> When I was a software engineer,
+[39:03.04]  there was a lot of um
+[39:05.28]  I guess it was like glue writing work
+[39:07.40]  kind of where you you finish some work
+[39:09.84]  and you write a launch post or
+[39:12.44]  you are part of some work stream and you
+[39:14.92]  got to post an update every 2 to 4 weeks
+[39:18.44]  or maybe you have a direction doc or
+[39:21.48]  design doc and all this like writing
+[39:24.44]  around the software uh that you actually
+[39:27.36]  write.
+[39:28.48]  And curious your thoughts on if that's
+[39:31.44]  changed at all at Anthropic, how much of
+[39:34.68]  that is written by LLMs and how much of
+[39:37.24]  that is, you know, human-written still.
+[39:40.28]  >> Mhm. My rule of thumb is like if I would
+[39:42.56]  be happy to show someone the prompt, I
+[39:45.68]  would send them the output, right? And
+[39:47.28]  so uh a lot of times the prompt is just
+[39:51.04]  collecting context is the most common
+[39:52.92]  one, right? So, for example, uh before
+[39:55.88]  every one-on-one with my manager, I ask
+[39:57.88]  Claude to, you know, read every Slack
+[40:00.72]  message and GitHub message and, you
+[40:02.92]  know, a
+[40:03.68]  PR and compile like, you know, a report
+[40:07.48]  of what I did, right? And uh that's
+[40:10.16]  context that my manager doesn't have
+[40:11.72]  because, you know, they haven't been
+[40:13.56]  literally reading every PR or something.
+[40:15.84]  And so I don't feel bad if like, you
+[40:17.92]  know,
+[40:18.80]  like my manager could also run this
+[40:21.08]  command, but it doesn't have my context.
+[40:23.12]  And I don't feel bad with them knowing
+[40:24.88]  that this is the prompt I used to
+[40:26.76]  generate this command, right? So,
+[40:29.24]  um I think likewise, like if you're
+[40:31.16]  sharing updates or something like that,
+[40:33.48]  you know, like uh you might want to
+[40:36.12]  prove that you've read it. You know, I
+[40:38.32]  think this is important. And And
+[40:39.80]  sometimes like little edits are ways of
+[40:42.08]  proving that you have also understood
+[40:44.04]  this work, right? And so, if it's just
+[40:46.12]  like a data readout, you know, maybe
+[40:48.12]  you're you're sanity checking like the
+[40:51.04]  numbers make sense and this like these
+[40:53.00]  are all the numbers you intended to
+[40:54.20]  include. And as part of that, maybe you
+[40:56.20]  format it differently or you add like a
+[40:58.12]  little sentence in on your behalf,
+[41:00.08]  right? And but I think ultimately, it's
+[41:02.12]  a data readout.
+[41:03.68]  Everyone knows the prompt you wrote is
+[41:05.48]  like, "Hey, like generate a readout on
+[41:07.80]  this feature based on this." And And
+[41:09.68]  you're fine, right? But like, I think if
+[41:11.60]  you're pitching like a new concept or
+[41:13.36]  new idea and your prompt is like, "Help
+[41:15.24]  me come up with a new concept for, you
+[41:17.52]  know, this product, right?" Like, you
+[41:19.72]  probably at least
+[41:22.20]  people want you to know that want to
+[41:23.92]  know that you've like believed in it,
+[41:25.60]  right? And so, like even if you think
+[41:27.36]  Claude's idea is incredible and just
+[41:29.56]  verbatim you wouldn't change anything,
+[41:31.08]  what I would say is like, I'd be like,
+[41:32.32]  "Hey, Claude generated this. Um but I
+[41:34.84]  think it's great. You know, like I or
+[41:37.00]  I've did like a hundred different
+[41:38.32]  generations and I think this was really
+[41:39.84]  good. And here is like something, you
+[41:42.24]  know, that I want to send you, right?"
+[41:44.75]  >> [snorts]
+[41:44.88]  >> Um and so, I think that like it's good
+[41:47.76]  to be upfront about it, I think, right?
+[41:49.84]  Because I do think what people don't
+[41:51.76]  like is when they feel like they've been
+[41:53.24]  like misled a little bit. Like, "Oh,
+[41:54.80]  like you We thought we you were doing
+[41:57.52]  this work, but, you know,
+[42:00.00]  um it it's really Claude, right?" And I
+[42:02.08]  think that like um
+[42:04.60]  writing sometimes can have a lot of like
+[42:06.88]  there's some parts of writing where
+[42:08.80]  individual words matter. You know, like
+[42:11.00]  funnily like tweets are I of a good
+[42:12.36]  example of this where like the
+[42:13.80]  individual tweet matters, right? So,
+[42:16.16]  um
+[42:17.08]  you like more and more you can't use
+[42:19.20]  Claude to do that because it's like like
+[42:21.96]  every word has some thought that you've
+[42:23.92]  put into it and some intention that
+[42:25.36]  you've put into it. So, like, you know,
+[42:27.00]  yeah, a pitch or an essay or something
+[42:29.20]  like that. We do a lot of like internal
+[42:30.76]  essays at Anthropic being like, "Hey,
+[42:32.36]  this is why I think we should do this."
+[42:34.08]  And that's generally like all
+[42:35.60]  human-written. It's very like looked
+[42:38.84]  down upon, I think, to have like Claude
+[42:41.28]  like your essay written by Claude, you
+[42:42.72]  know what I mean? Um because like every
+[42:44.84]  word is something that you like are
+[42:47.00]  intentional about.
+[42:48.92]  >> So, it sounds like the proportion
+[42:51.16]  of the writing that's all that boring
+[42:54.24]  route writing, like the data readouts,
+[42:56.44]  the
+[42:57.48]  the one-on-one updates, the work stream
+[42:59.24]  updates, that's increasingly becoming
+[43:01.88]  AI, but always reviewed by human. And
+[43:04.72]  then the novel thoughts, novel
+[43:07.32]  direction, is still very human-written.
+[43:10.28]  And And feels like it should remain that
+[43:12.64]  way even if the models were a little bit
+[43:15.12]  better, too.
+[43:16.60]  >> Yeah, I think it's like if you're, you
+[43:18.84]  know, it's a like writing is also way of
+[43:21.24]  thinking, right? And so like maybe if
+[43:22.68]  you need to think about the data stream
+[43:24.64]  or data readout more, then maybe you
+[43:26.24]  need to like summarize it, you know? And
+[43:27.96]  And so,
+[43:29.04]  um but yeah, I I I think like especially
+[43:30.64]  gathering context is one of those things
+[43:32.44]  where no one will ever like hold it
+[43:34.44]  against you, kind of, right? Like uh
+[43:36.96]  oh, like, you know, you did a bunch of
+[43:39.00]  research and, you know, Claude did this,
+[43:41.16]  but yeah, like I don't want to ask my
+[43:42.76]  agent to do the same research. Like, you
+[43:44.52]  know, it's a shortcut, but like just
+[43:46.52]  acknowledging it is good.
+[43:48.76]  >> Someone I also was talking to, they had
+[43:51.08]  this thought of it would be valuable to
+[43:54.92]  have almost like a git blame, but it's
+[43:57.68]  like like a prompt blame of
+[44:00.56]  cuz it would be nice to reverse look up
+[44:03.28]  what was the prompt that generated this
+[44:05.00]  change to kind of debug things. Do you
+[44:07.44]  have any sort of meta version control on
+[44:11.08]  the prompts that generated the software
+[44:12.96]  or is it still very vanilla, you know,
+[44:15.80]  get history?
+[44:17.68]  >> Yeah, that is a little bit tough because
+[44:19.72]  again like, you know, what goes into a
+[44:21.52]  prompt is not just the prompt but also
+[44:24.08]  the context and skills and things like
+[44:25.76]  that. So like maybe, you know, a prompt
+[44:28.00]  might seem basic but isn't. Uh I think
+[44:31.76]  I it's kind of hard to judge. But I do,
+[44:34.48]  you know, like going back to like when
+[44:36.56]  I'm giving a PR, I don't think a PR at
+[44:38.60]  this point is any different than an
+[44:40.24]  artifact or something. Like Claude is
+[44:41.92]  doing basically all the code writing,
+[44:44.16]  right? So if I send someone a PR, I
+[44:46.08]  usually also attach an artifact of every
+[44:49.92]  prompt I sent to Claude,
+[44:52.00]  um including failed like approaches and
+[44:54.68]  things like that, you know?
+[44:56.28]  Um so that they can see like, okay, I've
+[44:58.56]  considered a lot of other things, you
+[45:00.84]  know? And if I haven't, if this is just
+[45:02.48]  a one-shot, I just tell people. I'm
+[45:04.28]  like, "Hey, this is the one-shot
+[45:06.08]  example. This is the prompt I used,
+[45:07.80]  right?" Um
+[45:09.40]  and uh I think that's like usually
+[45:12.40]  impressive and interesting to them as
+[45:13.84]  well because they're like, "Oh, like
+[45:14.96]  it's cool that Claude could one-shot
+[45:16.36]  this." Um but the worst is when you get
+[45:20.20]  like
+[45:21.24]  you know, you you just I'm just trying
+[45:22.44]  to avoid cases where I send in like this
+[45:24.36]  10,000 line PR and they're like, "Did
+[45:27.48]  you like how much have you like read
+[45:29.68]  this or like, you know, like how much
+[45:30.96]  did you work with Claude on it?" And if
+[45:33.04]  I'm doing like a large PR, I am going to
+[45:35.08]  like show my work as much as possible.
+[45:39.00]  >> On maintaining code because AI can
+[45:42.08]  generate such high volumes of code at
+[45:45.00]  this point, do you have any tips on
+[45:47.64]  what's worked well at Anthropic for code
+[45:49.84]  ownership and maintenance?
+[45:52.20]  >> I do think you have to revisit
+[45:54.28]  like what is important with code
+[45:56.28]  maintenance, right? And so I think that
+[45:57.84]  like there are some things where like
+[45:59.76]  naming used to be really important,
+[46:02.04]  right? Because like it was like how you
+[46:04.04]  as a team thought about this like
+[46:05.68]  abstraction and feature. Um but I think
+[46:08.48]  naming is becoming less and less
+[46:09.96]  important. A lot of stylistic things in
+[46:12.12]  code are becoming less and less
+[46:13.48]  important, you know? And I think that
+[46:15.56]  like this is not the same to me as
+[46:18.32]  maintenance, right? So I think that like
+[46:21.04]  um
+[46:22.36]  if you you might want to sit down and be
+[46:24.32]  like, okay, like what things really
+[46:26.16]  matter now, what don't, what opinions do
+[46:28.08]  we have that don't matter. So that's
+[46:30.28]  one. And then I think on the second on
+[46:32.12]  the maintenance side is sort of like
+[46:34.04]  having good scaffolding, right? So I
+[46:37.32]  think that it's like uh having a good
+[46:39.72]  verification harness, having a good like
+[46:43.20]  uh sort of skills. We use the simplify
+[46:45.48]  skill a lot. I think that like you know,
+[46:47.92]  sometimes even from model perspective,
+[46:49.96]  like it might do a lot of work. And then
+[46:51.76]  like even just giving it permission to
+[46:53.12]  be like, "Hey, I think this is the right
+[46:55.52]  uh idea. Let's simplify it." gives it
+[46:58.68]  that permission to do it, right? But
+[47:00.00]  like you actually don't want a model to
+[47:02.32]  by default do work and then simplify,
+[47:05.92]  right? Because uh maybe it's not
+[47:07.84]  correct, right? Like you don't want it
+[47:09.28]  to simplify work that's not correct.
+[47:10.76]  It's like um you're wasting tokens,
+[47:13.24]  right? And so I think this is also how
+[47:15.04]  humans think, right? They're like you
+[47:17.28]  know, you think generatively, you try an
+[47:19.08]  approach, and then maybe you like
+[47:20.44]  simplify and abstract a little. Um so I
+[47:23.56]  think there's like some work inside your
+[47:25.68]  own code base or like setting up the
+[47:27.64]  skills and that those practices where
+[47:29.80]  you like you know, you're not just
+[47:31.24]  submitting
+[47:32.84]  like the first take, but you've like
+[47:34.20]  simplified it and tried it. Um and then
+[47:37.36]  like yeah, having a really good
+[47:38.44]  verification harness where you feel like
+[47:40.80]  you're catching you know, like you have
+[47:43.40]  a good
+[47:44.60]  belief that Claude is like testing every
+[47:46.84]  part of it.
+[47:48.20]  Uh like you know, when you submit a PR
+[47:50.00]  to Claude code, you get a recording back
+[47:52.20]  of it using the feature and testing it
+[47:54.00]  as an example, right? Um and you can
+[47:57.04]  just get really, really creative with
+[47:58.88]  different ways to like
+[48:00.80]  uh, test stuff. Like I think you should
+[48:02.32]  basically have
+[48:03.72]  on the order of I'd say more like a
+[48:05.52]  hundred times more testing code than
+[48:07.92]  you've ever had before. You know what I
+[48:09.36]  mean? So like,
+[48:10.88]  uh,
+[48:11.48]  you should have
+[48:12.72]  uh, fixtures for everything. You can
+[48:14.04]  just pull production code and create
+[48:15.60]  fixtures and mock-ups on the fly for for
+[48:17.72]  databases. You can uh, have storybooks
+[48:20.52]  for front-end and things like that. And
+[48:22.40]  you can have all these different ways of
+[48:24.08]  testing and verifying your code. And
+[48:25.92]  that I think is really valuable for
+[48:27.36]  maintainability, right? It's like um,
+[48:30.76]  just having like all these ways of
+[48:32.52]  verifying it.
+[48:33.84]  Uh, and then uh, yeah, of course like
+[48:36.32]  there's just like the human element of
+[48:37.76]  like where do you want your code base to
+[48:40.40]  go? If you know that's the case,
+[48:43.36]  probably you start thinking about like,
+[48:45.16]  you know, how you'd replay and undo and
+[48:47.04]  redo becomes really important, right?
+[48:48.60]  Like just like that sort of stuff. And
+[48:51.04]  so the but if you're single player only,
+[48:53.60]  that actually matters a little bit less.
+[48:56.12]  You know, like you like the average user
+[48:58.48]  is not going to undo a hundred times or
+[49:00.80]  something, right? And so like, you know,
+[49:03.00]  many like single player applications
+[49:05.40]  undo stop working
+[49:07.32]  pretty quickly. Like, you know, like
+[49:08.52]  after like four or five times, right?
+[49:10.28]  Um, just cuz it's not that important.
+[49:11.64]  But in multiplayer, the ability to
+[49:13.32]  compose different things together is
+[49:15.00]  really important or compose different
+[49:16.56]  operations together is really important.
+[49:17.80]  And so, um,
+[49:19.44]  that's just an example where like if you
+[49:21.04]  know the direction of your code base,
+[49:22.28]  there are things you care about and you
+[49:23.36]  want the models to know. And uh, you
+[49:25.56]  know, you can include that in your
+[49:26.44]  skills. You can also just like
+[49:28.60]  you know, like that's sort of what
+[49:29.92]  maintainability means to me is like
+[49:31.76]  having a vision for what your code base
+[49:33.12]  is good at, where you're where you're
+[49:34.40]  going, you know, keeping it in line.
+[49:37.52]  Um, I do think the models are getting
+[49:38.88]  better and better and better. And like
+[49:41.32]  almost every code base probably I think
+[49:43.92]  will have this moment where you're like,
+[49:45.24]  do you just ask the model to rewrite all
+[49:47.60]  of it? You know?
+[49:49.48]  Um, and like because now you're like,
+[49:52.80]  oh, like I can do it in the most
+[49:54.28]  performant language. I can mix and match
+[49:57.32]  like you know like there's not a reason
+[49:58.72]  that every software in the world
+[50:00.56]  shouldn't run in web assembly in the
+[50:02.16]  browser. You know what I mean? There's
+[50:03.56]  not a reason why
+[50:05.36]  I don't know like your Xbox game can't
+[50:08.64]  run in your browser actually, right?
+[50:09.96]  Like the Xbox like the hardware like the
+[50:12.64]  consoles are much weaker than your
+[50:14.68]  average like MacBook right now. You know
+[50:16.84]  what I mean? But it's just like the code
+[50:18.64]  base, right? [snorts] Um but we could
+[50:21.64]  like and and so I I think probably over
+[50:23.92]  the next year or two like everyone's
+[50:25.76]  going to need to think about that,
+[50:27.20]  right?
+[50:28.32]  And so I I don't think you want to spend
+[50:30.44]  too much time
+[50:32.20]  like worrying about maintainability in
+[50:34.20]  this like way that might not matter
+[50:35.52]  anymore. I'm not saying maintainability
+[50:37.00]  doesn't matter. You just have to update
+[50:38.20]  your mental model of like what does it
+[50:39.44]  mean for like code to be maintainable,
+[50:42.20]  you know?
+[50:43.92]  >> I was talking to this friend um
+[50:46.48]  who was saying that
+[50:48.20]  he leaves tons and tons of tech debt
+[50:51.80]  leaving around because the next you know
+[50:54.36]  the next iteration why why waste time
+[50:56.44]  fixing that now when the next iteration
+[50:58.56]  of Fable's going to one shot all this
+[51:00.72]  tech debt and refactor this for me. So
+[51:04.12]  kind of funny.
+[51:05.40]  >> Yeah, I I don't think that's completely
+[51:07.32]  incorrect. It depends on the
+[51:09.28]  circumstance, right? Like I think this
+[51:10.64]  is also just a classic thing in
+[51:12.52]  startups, right? Where you're like, you
+[51:14.52]  know, even in normal human engineer you
+[51:16.48]  always have this problem of like um
+[51:18.84]  hey, do I refactor or do I do tech debt
+[51:21.36]  or do I deliver more customer value?
+[51:23.44]  Would refactoring help me deliver more
+[51:25.12]  customer value right now? I do think
+[51:27.36]  that like just generally I think you
+[51:29.28]  should think on your projects on shorter
+[51:31.88]  time scales. So you're like okay, how do
+[51:33.96]  I deliver value over the next month or
+[51:35.96]  two? And if you the project you're
+[51:37.88]  talking about is delivering value over
+[51:39.80]  six months or 12 months, you know, then
+[51:42.92]  maybe yeah, maybe like wait for the next
+[51:44.88]  model a little bit, you know, and then
+[51:46.44]  like that like
+[51:48.64]  just deliver value on like the short
+[51:50.36]  time scale scale, make sure it's like,
+[51:52.56]  you know, really good. And if the models
+[51:54.00]  are not quite good
+[51:55.40]  enough, like they might get there soon.
+[51:57.56]  It depends very much on the like
+[51:58.96]  specific case, right? But and I'm not
+[52:01.28]  saying this is true of everything, but
+[52:02.60]  like just something you should keep in
+[52:04.08]  mind.
+[52:04.96]  >> I've talked to some friends who work at
+[52:06.68]  big tech companies like Google,
+[52:09.12]  Facebook, those types of places.
+[52:11.16]  And then they as they've become more and
+[52:14.28]  more AI pilled, one thing that people
+[52:17.40]  have noticed is there's a lot more
+[52:19.08]  incidents or SEVs in in their usage.
+[52:22.64]  And
+[52:23.68]  it's natural in those organizations cuz
+[52:25.88]  they they read the code less and there's
+[52:27.96]  more code flying out. You know, what
+[52:30.04]  countermeasures have worked really well
+[52:32.04]  for Anthropic to prevent breakages given
+[52:36.04]  that the code velocity is so much
+[52:37.40]  higher?
+[52:38.36]  >> Yeah, I I think this is something that
+[52:40.20]  like is a byproduct of moving faster
+[52:43.40]  sometimes and we have to figure it out.
+[52:45.00]  Like I think that
+[52:46.96]  uh you know,
+[52:48.20]  I don't think our uptime is exactly
+[52:49.76]  where we want it to be either, but also
+[52:52.24]  as a company we're a little like almost
+[52:54.64]  6 years old I think around, right? So
+[52:56.32]  it's like no company has grown this fast
+[52:58.96]  before and a lot of that is because we
+[53:00.96]  were enabled to like create more
+[53:02.08]  products faster than ever before, right?
+[53:04.36]  And so you can use Claude to make your
+[53:06.84]  uptime better, right? And I think that
+[53:08.48]  like the way we think about this is just
+[53:09.84]  like really good what's the dream
+[53:12.40]  testing environment, the dream like you
+[53:14.96]  know, deployment environment. Like can
+[53:16.92]  you like you know, take requests and
+[53:19.48]  replay them across like, you know, mock
+[53:21.72]  databases and fixtures across
+[53:23.28]  everything? Can you chaos monkey
+[53:24.80]  everything, you know?
+[53:26.96]  >> In my personal workflows, I have so many
+[53:30.28]  more custom random tools and scripts
+[53:33.60]  that just make everything faster.
+[53:35.92]  And just curious, you know, on your team
+[53:39.24]  at Anthropic for instance, does everyone
+[53:41.92]  have a set of
+[53:43.80]  miscellaneous tools that help them,
+[53:46.64]  you know, get random things done?
+[53:48.92]  >> Yeah, everyone does for sure. Like I I
+[53:51.12]  think
+[53:51.92]  part of this is is the job. Like I think
+[53:54.00]  that sometimes uh
+[53:56.08]  what we try and do is we play around
+[53:57.48]  with harnesses. Like sometimes some
+[53:58.96]  people on the team build their own
+[54:00.00]  harnesses for a little bit to figure out
+[54:02.48]  like, "Oh, is this like useful or not?"
+[54:05.28]  You know, and then they they figure out
+[54:06.56]  if it works and if not, they like
+[54:08.00]  integrate it, right? So, I think there's
+[54:09.68]  like that's part of the job uh in some
+[54:12.12]  ways. Um
+[54:13.80]  I think like other examples of like sort
+[54:16.12]  of like misc stuff people will do. A lot
+[54:18.84]  of people will have like
+[54:20.16]  uh unique Claude tag setups. I think
+[54:22.88]  Claude tag is one of these things where
+[54:24.48]  like, you know, you can have it like I
+[54:27.36]  have it scheduled my calendar invites,
+[54:29.08]  right? And so like if someone
+[54:30.72]  wants to like schedule something with
+[54:32.00]  me, then I'm just like, "Hey, you can
+[54:33.08]  just like tag Claude here in this
+[54:34.44]  channel and I'll accept whatever it like
+[54:36.96]  puts on my calendar, you know what I
+[54:38.28]  mean?" So, um I think there's like some
+[54:40.88]  stuff like that. I know like a lot of
+[54:42.76]  people use it for like email. I I think
+[54:45.00]  that um
+[54:46.96]  I've seen like some people do like
+[54:49.84]  interesting like multi-Clauding sort of
+[54:51.84]  like
+[54:52.84]  tmuxing like setups, right? Like where
+[54:55.48]  like what's the ideal scenario for you
+[54:57.48]  to like display like 50 different Claude
+[55:00.00]  codes and, you know, what's the best way
+[55:02.12]  to for you to figure out what's going on
+[55:04.00]  at any one time? So, um
+[55:06.84]  yeah, I think there's a lot of different
+[55:08.80]  ways and we're trying to make Claude
+[55:10.00]  code more hackable as well so that like,
+[55:12.20]  you know, more people can
+[55:14.32]  uh sort of like even
+[55:16.60]  uh make their own version of Claude code
+[55:18.76]  like more different and everyone might
+[55:20.68]  have their own little twist on it.
+[55:24.40]  >> Your role at Anthropic's really
+[55:25.68]  interesting cuz of the external
+[55:27.76]  visibility that you have and um I think
+[55:30.96]  a lot of people when they give career
+[55:32.84]  advice,
+[55:34.20]  visibility's a a good thing,
+[55:36.84]  but they don't have this level of
+[55:38.32]  external visibility. And so, do you
+[55:40.36]  recommend to software engineers like
+[55:42.76]  they should be posting on Twitter and X
+[55:45.04]  and, you know, if so, what what advice
+[55:47.52]  would you give in that sense?
+[55:49.24]  >> Generally,
+[55:50.92]  the thing I say to people that you
+[55:52.40]  should share your work
+[55:54.56]  externally as much as you can,
+[55:55.68]  especially
+[55:56.88]  um I think within certain companies like
+[55:59.84]  you might not be able to, but like maybe
+[56:01.60]  you have side projects or something like
+[56:03.16]  that. I think just um before I joined
+[56:05.80]  Anthropic, what I did was like I spent a
+[56:07.84]  bunch of time working with different
+[56:09.64]  companies, building stuff, and writing
+[56:11.52]  about it, and talking about it. Um and
+[56:14.60]  uh like this was really valuable cuz it
+[56:17.92]  like increased my surface area of luck,
+[56:20.28]  you know? And so, I think that like uh
+[56:24.88]  it's really
+[56:26.56]  like the bar is much lower than you
+[56:28.52]  think. Like basically, whenever someone
+[56:29.96]  asked me for advice, I'm like, "Okay,
+[56:31.88]  I I'll I'll sit them down. I'll be like,
+[56:33.16]  "I know statistically I I tell this
+[56:35.68]  advice to a lot of people, and almost no
+[56:37.68]  one does it. Um and everyone who's done
+[56:40.12]  it is like either in a job that they're
+[56:42.24]  pretty excited about or running their
+[56:43.60]  own company.
+[56:45.04]  Um
+[56:45.64]  and there are reasons why you're not
+[56:46.76]  going to want to do it, but like this is
+[56:48.32]  it. Like I'm just going to tell you.
+[56:49.84]  One, like I don't care about your
+[56:50.80]  resume. Like like, you know, don't do
+[56:52.80]  that. Um you have to choose like an
+[56:54.96]  interesting project to work on. You have
+[56:56.72]  to work really hard on it. You have to
+[56:58.24]  like lock in, and then you have to ship
+[57:01.16]  it and write about it. Like you have to
+[57:02.52]  do it. You can't like There's going to
+[57:04.88]  be so many reasons why you don't want
+[57:06.12]  to. It's like not good enough yet, or
+[57:07.60]  like you haven't like you think the
+[57:09.52]  write-up is not very interesting or
+[57:10.96]  something, but you have to do it, and
+[57:14.24]  you can't get discouraged, you know?
+[57:15.84]  Like maybe the first one might not work,
+[57:17.16]  but you have to do it again. Um
+[57:19.60]  and maybe Twitter is not the right
+[57:20.88]  place. Maybe it's Reddit. Uh maybe
+[57:22.80]  there's a specific Reddit or Hacker News
+[57:24.76]  or something like that. Part of what
+[57:26.24]  you're trying to do is you're just
+[57:27.00]  trying to find people who like like what
+[57:28.88]  you're doing, right? But I think that
+[57:30.76]  like people in general want to really
+[57:35.00]  like you know we since consume more
+[57:37.84]  content than ever right and you know
+[57:39.68]  this right like I think that like people
+[57:42.24]  want really high quality content high
+[57:44.40]  quality content as you know is a lot of
+[57:46.20]  work and so I think going back to like
+[57:48.72]  what we said before about like would you
+[57:50.92]  show someone the prompt you did right
+[57:52.64]  like I think a lot of times people are
+[57:54.40]  like oh what's the shortcut like oh like
+[57:56.48]  should I just ask Claude to manage my
+[57:58.28]  Twitter account and is that how I like
+[58:00.04]  grow and and I'm like no like like you
+[58:02.16]  should not do that right like you have
+[58:03.48]  to sort of engage authentically
+[58:06.16]  you have to like post like you know do
+[58:08.36]  good work and talk about it and I think
+[58:10.16]  like build up networks and things like
+[58:12.40]  that but I think that as long as that's
+[58:14.64]  one of your goals and you try hard at it
+[58:16.96]  I've been seeing anyone not succeed at
+[58:19.44]  it but it is really hard it's kind of
+[58:21.40]  like saying like oh I want to like go to
+[58:23.68]  the gym every day or I want to like lose
+[58:25.68]  weight or something you know like there
+[58:27.04]  are simple things that you can do that
+[58:29.44]  take a lot of discipline and are easy to
+[58:31.36]  get discouraged with and
+[58:33.56]  um
+[58:34.40]  but like worth doing if you do it and I
+[58:36.12]  think like posting or more specific more
+[58:38.60]  specifically like writing about your
+[58:40.28]  work is like I think really really
+[58:41.52]  valuable.
+[58:42.52]  >> You mentioned luck surface area. Do you
+[58:44.84]  have an example that kind of illustrates
+[58:47.68]  the value of expanding your luck surface
+[58:50.40]  area?
+[58:52.20]  >> Yeah I mean okay how did I get my job at
+[58:54.76]  Anthropic? I did
+[58:57.56]  a fellowship with a company called Good
+[58:59.68]  Fire where I did like some applied
+[59:01.72]  research and so they they're an
+[59:03.20]  interpretability AI company and I was
+[59:05.72]  trying to figure out like how do I use
+[59:06.92]  interpretability to in like to make
+[59:08.68]  better products and so I learned about
+[59:10.84]  their research
+[59:12.56]  and I uh like felt like I want to work
+[59:17.12]  on a project and it was really important
+[59:19.44]  for me to like share it and so like I
+[59:21.76]  when I agreed to work with them I was
+[59:23.56]  like that's my goal is I want to like
+[59:25.76]  share what I'm building I think that's
+[59:27.72]  good for you as well because good fire
+[59:29.36]  is a startup and you know, people I want
+[59:31.56]  they want people to learn about them.
+[59:33.56]  And so this is what something I'm going
+[59:34.60]  to do. So I built this like
+[59:35.92]  interpretability visualization and I
+[59:38.16]  shared about it. This is my first like
+[59:39.52]  big post on Twitter but it was only 500
+[59:41.40]  likes or something. Like at like now
+[59:43.52]  like you know, that's like not very much
+[59:45.56]  to me but like it's like back then it
+[59:46.84]  was like a huge post and um several
+[59:49.72]  people saw it and like some of them DM'd
+[59:51.52]  me about it and then uh like I then got
+[59:56.68]  an intro into
+[59:59.00]  you know, like uh into a role here and
+[60:01.68]  so
+[60:02.60]  um
+[60:03.32]  I think that like I spent like a month
+[60:05.60]  on that project I think in particular.
+[60:07.64]  So it wasn't like you know, crazy um
+[60:11.72]  and uh yeah, it just like showed people
+[60:15.00]  that I could like do interesting work
+[60:17.76]  and um
+[60:19.08]  and I got paid for it too. So it wasn't
+[60:20.24]  like I was doing it for free.
+[60:21.96]  Um
+[60:23.24]  And and there's plenty of examples of
+[60:24.72]  like I think people are happy to do that
+[60:26.80]  sort of thing for you. You know, like if
+[60:28.08]  you like sort of show that kind of
+[60:30.32]  initiative. Um but yeah, you have to
+[60:34.28]  like it it it is like you really have to
+[60:36.88]  like do interesting and novel work and
+[60:38.44]  work work hard and be proud of your work
+[60:40.36]  as well. You know, there's not like a
+[60:42.32]  shortcut to that I think but
+[60:44.76]  um if you do I think everyone is always
+[60:47.12]  looking for interesting work and wants
+[60:48.68]  to support you and you know, wants to
+[60:50.76]  hire you or um
+[60:53.00]  yeah, give you money like
+[60:55.48]  uh lots of good things.
+[60:57.80]  >> I see this tagline going out a lot with
+[61:00.88]  some of the stuff Anthropic's been um
+[61:03.64]  maybe like I think it's like Boris went
+[61:05.48]  on some podcast and the tagline was
+[61:08.20]  coding is largely solved. You should
+[61:10.80]  people still learn to code if coding is
+[61:13.40]  largely solved.
+[61:14.88]  >> I think being technical is really really
+[61:16.68]  important. Knowing how do computers
+[61:19.12]  work, how does like um
+[61:22.04]  yeah, how does how do computer programs
+[61:23.60]  work? How do languages work? Like what
+[61:25.12]  are the hard things and like what's a
+[61:27.12]  back-end service? Like what's a cache?
+[61:28.80]  Like what's what like like, you know,
+[61:30.28]  what like what is memory allocation?
+[61:32.72]  Like all of these things are actually
+[61:33.76]  kind of really important to learn.
+[61:35.68]  Um, I do think it's hard to motivate
+[61:39.08]  yourself sometimes to do in the same way
+[61:41.04]  that like, you know, doing math by hand
+[61:44.00]  was not that motivating to me, you know,
+[61:46.08]  but some people just love math and did
+[61:47.64]  it. Um, I I think that like that's
+[61:50.80]  probably
+[61:52.80]  like something that people have to
+[61:53.96]  figure out, but I think it is really
+[61:55.28]  worth it. Like being technical is really
+[61:57.36]  really important. Like we talked about
+[61:59.16]  at the start of or like earlier where
+[62:01.44]  like, "Oh, the only way you can tell you
+[62:02.84]  solved you know, the Riemann hypothesis
+[62:05.84]  or like made progress or whatever is
+[62:07.52]  like or the Jacobian conjecture is like
+[62:10.20]  if you're a great mathematician, right?"
+[62:12.28]  And in the same way the only way you can
+[62:14.20]  tell if you're like built great software
+[62:16.28]  is like if you're a great software
+[62:17.40]  engineer. Um,
+[62:19.68]  I think that like how do you do that
+[62:22.76]  hard, but like we've talked about some
+[62:24.32]  of this stuff before just like staying
+[62:25.56]  in the loop like, you know, like put
+[62:27.52]  like, uh,
+[62:29.20]  like putting like reflecting on your
+[62:31.04]  process and and getting better and and
+[62:33.00]  you can use Claude to learn as well and
+[62:35.08]  and sort of explain things to you. So
+[62:36.96]  like treating it like a thought partner.
+[62:39.44]  Um, but learning like truly I I think
+[62:41.88]  like, you know, Kaparthy says like
+[62:43.32]  learning should feel like effort, you
+[62:45.00]  know, and I think that's like one of the
+[62:46.76]  hard things is like a lot of times even
+[62:48.84]  if you ask Claude to explain something
+[62:50.16]  to you and you might just like nod along
+[62:51.48]  and you're like, "Oh, yeah, like I
+[62:52.40]  learned it." But you didn't really cuz
+[62:53.72]  you didn't put any effort in, right? So
+[62:55.56]  I think that like it is really
+[62:57.16]  technical. You should learn. It's hard
+[63:00.44]  to learn. And and sometimes like what
+[63:02.32]  school forces you to do is to learn
+[63:04.00]  that. Um, I don't know truly like I'm
+[63:06.96]  not learning programming from scratch.
+[63:08.88]  So I don't know exactly what how to do
+[63:11.16]  it now. I think if short of better ways,
+[63:14.72]  I would still like type out and build
+[63:17.40]  programs and run them and learn them.
+[63:19.36]  You know what I mean?
+[63:20.64]  Um there might be better ways that are
+[63:21.80]  more cloud informed as well, but I think
+[63:24.00]  it's really important.
+[63:25.80]  Um
+[63:26.72]  I think when Boris says coding is
+[63:28.12]  solved, I think it just means like
+[63:30.92]  um you know, we don't get stuck in the
+[63:33.28]  same ways that we used to before. Like I
+[63:34.88]  think coding used to be this very high
+[63:36.44]  variability thing where you're like, oh
+[63:38.68]  like could this bug take a day or could
+[63:41.40]  it take 2 weeks? You have no idea
+[63:43.40]  sometimes, you know? And I think like um
+[63:46.20]  on the whole coding used to be like in
+[63:49.04]  real terms
+[63:50.60]  like something that was very rare for
+[63:53.64]  something to go well. Do you know what I
+[63:55.48]  mean? Like very few people in the entire
+[63:57.84]  world could write software and they were
+[64:00.00]  very very rare and even if you got them
+[64:02.32]  all together, there were so many other
+[64:03.88]  reasons why it wouldn't work, right? And
+[64:06.48]  coding was this like one of the rarest
+[64:08.64]  things in the world where like the
+[64:09.68]  chance of software
+[64:11.08]  project going well was like
+[64:13.88]  on absolute terms very low, you know?
+[64:16.60]  Uh and if you were like hiring someone
+[64:18.84]  to
+[64:19.84]  like make software for you for something
+[64:22.36]  that's not like a huge product. Like if
+[64:25.20]  you're hiring someone to make software
+[64:26.84]  for your car dealership, you were almost
+[64:28.80]  certainly not going to get the software
+[64:30.52]  you wanted. You're going to get like
+[64:32.16]  essentially scammed, you know what I
+[64:33.68]  mean? Um not because anyone was trying
+[64:36.04]  to scam you. It was just like software
+[64:37.24]  was really really hard and you know, it
+[64:39.36]  could only be spent on like the most
+[64:41.40]  important scalable things in the world.
+[64:43.72]  And now that coding is solved, I think
+[64:46.08]  what we mean is that like you can use
+[64:47.40]  coding to do all these other things that
+[64:50.12]  we not done before, but that's not to
+[64:52.96]  say that like that's not a lot of work
+[64:54.72]  still. Um
+[64:56.64]  it's just like it's not this like
+[64:57.88]  incredibly rare difficult thing that
+[65:00.28]  mostly like just doesn't work and you
+[65:02.72]  have to spend like 8 hours a day locked
+[65:05.00]  in to do.
+[65:07.16]  >> What's really insane, that shows the
+[65:08.96]  difference in expectation, is when I
+[65:11.52]  used to write software, I would be
+[65:14.20]  shocked if it worked on the first try. I
+[65:16.44]  was like, "Whoa.
+[65:17.64]  >> Wait, why is this working?"
+[65:18.91]  >> [laughter]
+[65:19.40]  >> And you you'd expect to kind of bash
+[65:21.64]  your head against the wall a little bit,
+[65:23.08]  and then it it works. Even if it's just
+[65:24.80]  like you missed the semicolon or
+[65:26.88]  something like that. And now I almost
+[65:29.00]  have the flip expectation where it when
+[65:31.28]  it doesn't work, I'm like, "Wait, what
+[65:32.60]  what why did Claude What what happened
+[65:35.04]  here?"
+[65:35.92]  Usually, I expect it to work almost uh
+[65:39.36]  the opposite
+[65:40.08]  >> like on the first try. It's crazy.
+[65:42.20]  >> Immediately. Yeah, yeah, I think humans
+[65:43.64]  get really used to abundance, right?
+[65:45.28]  Like there was this like
+[65:46.92]  um article someone shared recently about
+[65:48.80]  like going through a modern apartment
+[65:50.80]  and talking about all the like wonderful
+[65:52.40]  things that we have now that people
+[65:54.32]  could not have imagined before. Like
+[65:56.16]  something that can play music on demand
+[65:58.20]  that's suited for your mood. You know,
+[66:00.44]  like before you'd have to like hire a
+[66:02.84]  musician, you know, to like go write
+[66:06.36]  like, you know, incredible music, right?
+[66:09.12]  Um but I'd say on the whole, probably
+[66:11.40]  more people are getting paid to make
+[66:13.08]  music now than ever before, right? Like
+[66:15.88]  um and I think that like music is
+[66:17.68]  reaching more people than ever before.
+[66:19.72]  And I think probably the same thing will
+[66:21.36]  happen with software, will happen with
+[66:23.00]  math, will happen with all of these
+[66:24.68]  things. Um
+[66:26.76]  where you know, when you get abundance,
+[66:28.64]  people are like, "Great. Like I want
+[66:29.84]  more abundance. I want my software in
+[66:31.72]  everything, you know? Like I want my
+[66:33.08]  music everywhere, you know?" So, yeah.
+[66:36.00]  >> Yeah, one potential other data point for
+[66:38.24]  this conversation saying that maybe
+[66:40.40]  people should still be technical or
+[66:43.00]  learn how to code is I think earlier in
+[66:45.12]  the conversation we talked about
+[66:47.04]  automating knowledge work, and you
+[66:48.76]  mentioned that
+[66:50.48]  people who are technical had kind of a
+[66:52.16]  leg up cuz they could kind of understood
+[66:54.60]  how to coordinate Claude to do a variety
+[66:57.44]  thing. Like you're calling FFmpeg to
+[67:00.00]  automate some video editing, and like I
+[67:02.76]  don't think someone who is not technical
+[67:04.48]  would have that thought. So, it does
+[67:07.08]  seem like even in this case where models
+[67:09.00]  are doing a lot, there's still so much
+[67:11.32]  value in being technical.
+[67:13.80]  >> Knowing how computers work. You know, in
+[67:15.88]  the same way that like like probably
+[67:18.68]  like the most technical CEOs are like
+[67:20.92]  the best CEOs are technical, right? Like
+[67:22.56]  Zuckerberg, Elon, right? But like they
+[67:24.64]  probably haven't written like a line of
+[67:26.04]  code truly in a long time, but you know,
+[67:29.00]  they understand how systems work, they
+[67:30.80]  understand you know, constraints and
+[67:32.84]  things like that and then that's really
+[67:34.20]  really important. And so,
+[67:36.24]  um you know, even if all that work is
+[67:38.64]  changed, I think like being technical is
+[67:40.28]  really really important.
+[67:42.28]  >> And then last question for you is if you
+[67:44.40]  could go back to when you just entered
+[67:46.32]  the industry and give yourself some
+[67:47.72]  advice knowing what you know now, what
+[67:49.80]  would you say?
+[67:52.28]  >> There are like kind of like two wolves
+[67:54.92]  sort of I I think like you have to
+[67:57.16]  believe in yourself, you know, I think
+[67:58.88]  like this is really important and I
+[68:00.36]  think that like at least when I joined
+[68:03.08]  in the industry, it was rarer to believe
+[68:05.36]  in people when they were
+[68:07.72]  kind of the younger. Like I think that
+[68:09.00]  was like the whole point of Y Combinator
+[68:10.88]  or something was like believing in young
+[68:12.44]  people early on to do really great
+[68:14.80]  things. And so, I think that like you
+[68:16.68]  know, even going back to like the intern
+[68:18.68]  discussion we had earlier, right? Like I
+[68:20.32]  think that like
+[68:22.40]  thinking of yourself not as like someone
+[68:23.84]  who's like being trained to do
+[68:25.16]  something, but someone who can do like
+[68:26.48]  something incredible right away, I think
+[68:28.08]  is really important, you know? And um
+[68:31.20]  I think I wish I had done
+[68:33.92]  bigger, bolder things that I'd written
+[68:37.12]  and and shared about. I think there were
+[68:38.92]  lots of ideas where I was like, "Wow,
+[68:40.56]  like I think
+[68:41.92]  I think I had like I thought I had done
+[68:44.72]  original work that I wish
+[68:47.12]  maybe I'd even shared in some form, but
+[68:48.72]  maybe not like form that it like
+[68:50.40]  survived the internet, you know? And it
+[68:52.84]  wasn't like a like goal of mine. And so,
+[68:55.56]  I wish I'd like sort of been bolder and
+[68:57.80]  like you know,
+[68:59.80]  done and shared some of this work, but
+[69:02.28]  at the same time you also there is a lot
+[69:04.12]  to learn from people, you know what I
+[69:05.76]  mean? And like I think that um
+[69:08.92]  you like I think when you're young,
+[69:10.68]  you're like, you know, you tend to fold
+[69:13.00]  fall either you're not bold enough or
+[69:14.68]  you're
+[69:15.56]  you're not like
+[69:17.36]  uh
+[69:18.96]  you don't like learn enough, you know,
+[69:20.68]  or you're like you're not like you don't
+[69:22.64]  like you're too bold and you don't like
+[69:25.12]  figure out what people have done before
+[69:26.40]  and figure out why it's not working,
+[69:28.00]  right? Um and there's this balance and I
+[69:31.00]  think uh you everyone has different
+[69:33.40]  failure modes, but I think like uh I
+[69:35.68]  think I probably didn't take it enough
+[69:37.16]  advantage of like, you know, mentors and
+[69:39.92]  people who had learned a lot. Um and I
+[69:41.96]  think I probably had to like relearn a
+[69:43.72]  bunch of things as a result. Um
+[69:46.48]  So, there's probably not universal good
+[69:48.56]  advice, but just things to think about
+[69:50.76]  as you're, you know, as you're entering.
+[69:53.12]  >> Awesome. Well, thanks so much for your
+[69:54.52]  time, Derek. Really appreciate it.
+[69:56.28]  >> Yeah, of course. Thanks, fine. It's fun.
+[69:58.76]  >> Hey, thank you for watching this
+[69:59.80]  podcast. If you liked it and you want to
+[70:01.44]  see the show grow, please support with a
+[70:03.64]  comment or a like.
+[70:05.64]  Also, if you have any recommendations
+[70:07.48]  for people you want me to bring on,
+[70:09.48]  please drop a comment. Guests like
+[70:11.64]  Barbara Liskov, Mike Stonebraker, Mark
+[70:14.36]  Brooker, these were all people that I
+[70:16.40]  brought on because someone left a
+[70:18.24]  comment. On another note, aside from the
+[70:20.52]  podcast, I'm working on building the
+[70:22.32]  ergonomic keyboard that I wish existed.
+[70:24.76]  Here's a glance at the prototype. It's a
+[70:26.64]  split keyboard, so there's two sides. Um
+[70:29.68]  this is in the case. But yeah, we
+[70:31.12]  launched on Kickstarter and we hit our
+[70:32.92]  goal within 8 hours of launching. I
+[70:35.00]  really appreciate it if you were one of
+[70:36.40]  the people who grabbed one of the early
+[70:38.16]  units. Um we're now working on the long
+[70:40.52]  journey of building the tooling now, and
+[70:42.64]  so if you still want to pick one up,
+[70:44.32]  I've left the late pledges open on
+[70:46.32]  Kickstarter, so you can grab one there.
+[70:48.56]  I'll put a link in the description.
+[70:50.52]  Thank you again for watching the podcast
+[70:52.84]  and I'll see you in the next episode.

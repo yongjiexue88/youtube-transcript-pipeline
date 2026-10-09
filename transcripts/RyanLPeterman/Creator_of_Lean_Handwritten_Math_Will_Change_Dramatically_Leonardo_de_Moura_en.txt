@@ -1,0 +1,1532 @@
+Title     : Creator of Lean: Handwritten Math Will Change Dramatically | Leonardo de Moura
+Video ID  : KzdYKeAqWhY
+URL       : https://www.youtube.com/watch?v=KzdYKeAqWhY
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1523
+Saved at  : 2026-10-08 08:14:51
+------------------------------------------------------------
+
+[00:00.40]  LLMs paired with the lean proof
+[00:02.48]  assistant have led to breakthroughs in
+[00:04.40]  competition math and more recently the
+[00:07.12]  verification of frontier math results.
+[00:10.32]  Lean is a critical part of this process
+[00:12.64]  because it helps validate the candidate
+[00:14.72]  proofs the LLM spits out. In this
+[00:16.80]  conversation, I asked the creator of
+[00:18.40]  LEAN about how it works [music] and how
+[00:20.56]  it will affect the future of math and
+[00:22.72]  software verification. Could that be the
+[00:24.88]  end of handwritten math? Here's the full
+[00:28.48]  episode.
+[00:32.88]  There's this famous Dysterra quote I
+[00:34.72]  want to start the conversation with.
+[00:36.16]  It's that, you know, program testing can
+[00:38.64]  be used to show the presence of bugs,
+[00:41.36]  but never to show their absence. And in
+[00:44.48]  my understanding is that lean and
+[00:46.24]  formalizing proofs can be used to show
+[00:49.20]  the absence of bugs. And so in your
+[00:52.64]  words, what is lean and how do people
+[00:55.84]  use it to show bugs can't occur in
+[00:58.08]  programs?
+[00:59.20]  L is a programming language. You can
+[01:01.28]  write code, but you can also write
+[01:03.36]  proofs. You can reason about your code.
+[01:05.84]  You can write state properties about
+[01:08.00]  your code and prove them. LIN gives you
+[01:10.96]  machine checkable proofs. You can check
+[01:13.84]  your proofs and get absolute assurance
+[01:15.92]  they are correct. You have uh many
+[01:18.56]  checkers, independent checkers. But you
+[01:21.84]  should view LIN as a platform. You can
+[01:24.48]  write code. You can write properties
+[01:26.96]  about your codes and you can prove them.
+[01:30.56]  >> So could you give a concrete example?
+[01:32.56]  Because when I think of a proof, I think
+[01:35.68]  of what I learned in math. But then how
+[01:38.56]  do you couple that with the software
+[01:40.96]  that we write?
+[01:42.32]  >> Yeah, it's a great question. It's not
+[01:44.48]  that different from math proof. L is
+[01:46.80]  actually very popular for math. But for
+[01:49.28]  for software verification, right? uh
+[01:53.36]  there are two
+[01:55.92]  very different use cases. You can reason
+[01:58.48]  about lin programs. LIN is a programming
+[02:00.40]  language. You can write programs in ling
+[02:02.16]  itself.
+[02:03.76]  Then
+[02:05.36]  a link program is not that different
+[02:06.96]  from a definition you have in math. The
+[02:10.40]  techniques are very similar. But when
+[02:13.44]  you if you want to verify programs
+[02:15.28]  written in a different programming
+[02:16.56]  language that basically two different
+[02:18.80]  approaches.
+[02:20.32]  One of them they translate it's called
+[02:22.08]  shallow embedding. They translate for
+[02:24.56]  rust. This happens today. We have a tool
+[02:26.72]  called that maps rust into ling and you
+[02:30.88]  can verify the ling translation right.
+[02:35.04]  uh and there's another technique called
+[02:36.56]  jeep badging where you have the
+[02:38.72]  semantics you you write a semantics of
+[02:41.28]  the programming language of C in ling
+[02:44.48]  and now you have a you have a data
+[02:46.56]  structure that represents a C program
+[02:49.52]  and you can state properties about it is
+[02:52.40]  almost like your programs become lean
+[02:55.12]  objects right that you can reason about
+[02:58.40]  >> to make it really concrete to give
+[03:00.00]  someone a sense of you know here's this
+[03:02.24]  thing I want to prove about a simple C
+[03:04.72]  program maybe like no buffer overrun or
+[03:08.32]  something like that.
+[03:09.68]  >> What's a step by step where we could use
+[03:11.92]  lean to prove that?
+[03:13.84]  >> Yeah. Yeah. Let's get array. You're
+[03:17.60]  trying to access an array in C. You want
+[03:19.76]  to make sure the index is in bounds.
+[03:22.24]  You're not accessing elements that your
+[03:24.48]  array for example has 10 elements.
+[03:26.72]  You're not trying to access elements 11.
+[03:30.16]  Right?
+[03:31.36]  uh basically can you can write that you
+[03:33.76]  can write in link that uh the value of i
+[03:37.60]  at this point in your program is going
+[03:40.00]  to be greater than or equal to zero and
+[03:42.40]  less than 10 right you you can write
+[03:45.84]  that as a mathematical statement right
+[03:49.36]  uh another way to view is that if you
+[03:52.80]  can express in math what you care about
+[03:56.32]  your program you can verify using l
+[04:00.00]  Right? That's another way to view it.
+[04:02.32]  >> So I have my my C source files and then
+[04:05.12]  somehow there's an equivalent lean proof
+[04:08.24]  that's almost like metadata on top of
+[04:10.64]  the C program.
+[04:11.68]  >> Yes.
+[04:12.32]  >> And that's a line by line proof and lean
+[04:14.40]  will go
+[04:15.28]  >> yes and check.
+[04:16.64]  >> Exactly. People will build automation
+[04:19.76]  for automating the process. uh they're
+[04:22.88]  going to use techniques like triples
+[04:25.52]  that says like uh we have a precondition
+[04:29.28]  some mathematical facts that should be
+[04:31.12]  true before executing that statement the
+[04:34.40]  statement and what is true after right
+[04:37.92]  and then we will have a lot of
+[04:39.44]  automation to to process makes your
+[04:42.24]  proof modeler right I mean uh complexity
+[04:45.36]  is a challenge in software verification
+[04:48.88]  handling the complexity is a big deal
+[04:51.76]  And there were all all these frameworks
+[04:53.92]  for very fine programs. They're trying
+[04:55.60]  to manage the complexity make your
+[04:57.92]  proofs modeler
+[05:00.48]  even with AI now AI can prove things
+[05:02.72]  automatically for us but they have to be
+[05:05.12]  modeler to the proofs if you want them
+[05:07.60]  to scale
+[05:08.96]  >> and what you're saying sounds similar to
+[05:10.48]  in software where you have to write it
+[05:12.56]  cleanly. It needs to be easy to edit and
+[05:15.76]  reason about. So it's almost like a
+[05:18.32]  second software layer on top of the
+[05:20.24]  software. Yes. Yes. You can view this
+[05:23.04]  way. You can also flip and imagine a
+[05:26.40]  future where you're writing the what you
+[05:30.16]  want mathematically precisely and AI
+[05:33.84]  synthesizing the codes and approve that
+[05:37.36]  the code that was synthesized meets your
+[05:40.16]  specification right.
+[05:42.40]  >> Oh interesting. So you could start by
+[05:45.44]  writing what you want to be true and
+[05:48.64]  then
+[05:49.36]  >> ask the AI please. AI is going to just
+[05:51.52]  go and hammer at it till the lean proof
+[05:54.32]  says you're good.
+[05:55.92]  >> Yes. Yes. It feels like science fiction.
+[06:00.32]  Six months ago I would say this is
+[06:01.84]  science fiction but for example now a
+[06:04.72]  colleague of mine Kin Morrison
+[06:07.60]  she a few months ago she started a
+[06:09.60]  project I thought was was six months ago
+[06:12.48]  I would say it's not possible at all.
+[06:14.56]  She said uh we have Z lib this s this
+[06:18.08]  compression library written in C and she
+[06:21.52]  said she creates a very complicated
+[06:24.08]  prompt for AI saying I want you to
+[06:26.64]  translate to ling
+[06:28.96]  ensure the lan version passes the test
+[06:32.24]  suite for for zib then I want you to
+[06:35.68]  prove that if you compress data and you
+[06:39.36]  decompress you get the original data
+[06:42.08]  back it's a really strong property right
+[06:46.16]  a and believe it or not they after one
+[06:49.44]  week succeeded doing the whole thing and
+[06:52.64]  now it's just asking to optimize the
+[06:54.80]  codes
+[06:56.72]  but you cannot break the proofs I mean
+[06:58.80]  you have to keep still proved all the
+[07:01.28]  properties you care about I mean
+[07:03.28]  compressing and decompressing getting
+[07:05.44]  the data back is a really important
+[07:08.48]  property for a compression engine right
+[07:12.96]  yeah This is enrich now. I mean, it's
+[07:15.92]  surreal. I mean,
+[07:17.12]  >> it's I mean, it's crazy. And I hear in
+[07:20.00]  the industry a lot of people, they use a
+[07:24.48]  really comprehensive test suite coupled
+[07:26.96]  with AI to do some really amazing
+[07:30.16]  rewrites cuz they have some more
+[07:33.44]  confidence that the rewrite is accurate
+[07:35.84]  and the AI can check itself. And it
+[07:38.32]  sounds like a specification is even
+[07:42.40]  better than a comprehensive test suite.
+[07:45.44]  >> Yes. Yes. Because with well your quotes
+[07:48.40]  from Dystra captures perfectly, right?
+[07:51.04]  With a test suites you can show the
+[07:53.20]  presence of bugs but not the absence.
+[07:56.08]  It's almost like with the a good test
+[07:58.40]  suite is you you may say well probably
+[08:00.80]  there are no bugs here but is you you
+[08:05.44]  may have a really corner case that's not
+[08:07.92]  covered by your test suite but with a
+[08:10.00]  proof you're covering all possible cases
+[08:14.08]  a and it connects so property based
+[08:18.08]  testing is really popular now people are
+[08:20.80]  writing properties they want to to
+[08:24.00]  ensure they are true but they are
+[08:26.64]  checking with testing, right? But now we
+[08:29.28]  can prove them and you say, "Look,
+[08:31.28]  there's no point testing anymore. I
+[08:33.12]  prove it."
+[08:34.56]  >> It seems like having a a well-written
+[08:38.64]  specification is a superset of a test
+[08:41.76]  suite. But in terms of the human labor
+[08:45.84]  required to create a a reasonable test
+[08:49.36]  suite versus a reasonable specification
+[08:52.80]  um you know how much more work is it to
+[08:55.76]  come up with a great specification
+[08:58.80]  >> varies a lot I mean uh the programs
+[09:04.24]  in many it's not uncommon for someone to
+[09:07.84]  start developing a piece of software and
+[09:09.76]  they don't know exactly what the spec is
+[09:12.96]  right but you know properties property
+[09:15.36]  usually their properties are very clear
+[09:17.44]  in your mind another thing that I tell
+[09:19.92]  people to keep in mind that inefficient
+[09:22.88]  program can give you this specification
+[09:25.92]  usually writing in efficient program is
+[09:29.12]  way easier than writing the super
+[09:31.44]  efficient one that does has many clever
+[09:34.48]  tricks you can write a very this is what
+[09:38.56]  I want in a very naive way and you Ask
+[09:41.92]  the AI look generate efficient version
+[09:45.12]  and optimize and prove that it's
+[09:46.96]  equivalent to my inefficient one.
+[09:51.28]  There are many scenarios. I mean I will
+[09:53.60]  not say this specifications are always
+[09:55.92]  easy to come up with but properties
+[09:59.68]  usually the developers have good ideas
+[10:01.84]  about properties they care about.
+[10:04.96]  uh as inefficient programmer is a spec
+[10:08.56]  rights you can view as a specification
+[10:11.92]  and the technology form of verification
+[10:14.80]  complements testing rights I think your
+[10:18.08]  code from extra captures perfectly
+[10:21.52]  >> and I think I saw this on Twitter
+[10:23.36]  because uh Jane Street was more heavily
+[10:26.96]  investing in formal verification
+[10:28.96]  >> yes
+[10:29.28]  >> and I read their post and they talked
+[10:30.88]  about this I think it was a sell for
+[10:33.84]  some software that was entirely formally
+[10:37.20]  verified.
+[10:38.16]  >> Yes.
+[10:38.80]  >> And the main drawback to why it wasn't,
+[10:42.48]  you know, how much more time would it
+[10:44.32]  take writing a program versus verifying
+[10:47.68]  it?
+[10:48.48]  >> Your example cell 4 is a great example.
+[10:51.44]  This was a major milestone. It's a micro
+[10:54.16]  kernel. They verified done manually was
+[10:57.36]  before AI. This project was done before
+[10:59.84]  AI was a big deal.
+[11:02.48]  And it's a lot. The cost is super
+[11:04.40]  expensive, right? At AWS, we have been
+[11:07.20]  using formal verification for a decade,
+[11:10.56]  but only for the super safety critical
+[11:13.60]  components because it's expensive until
+[11:16.32]  now, right? With AI, it changes the
+[11:19.12]  game.
+[11:21.44]  You have to come up with the spec. But
+[11:23.04]  this is not not the most painful part.
+[11:26.16]  The most painful part is to develop the
+[11:29.20]  proofs manually if you have to before.
+[11:31.84]  for AI and maintain the proofs as you
+[11:34.96]  change the codes. Imagine your
+[11:37.84]  I I've seen people complaining that oh I
+[11:40.32]  I change the program right now I have a
+[11:43.36]  bunch of failures in my test suite and I
+[11:46.08]  have to patch go one by one imagine with
+[11:49.44]  proofs you is the same process you have
+[11:51.28]  to fix the proofs uh sometimes you don't
+[11:54.88]  remember anymore why
+[11:57.60]  the pro what what's the story behind
+[11:59.92]  this proof is a lot but we AI is
+[12:03.68]  extremely good at proving
+[12:06.64]  uh writing formal proofs, maintaining
+[12:09.36]  formal proofs. For example, yesterday I
+[12:13.12]  was
+[12:15.52]  changing something. I want to modify
+[12:18.00]  some proofs for technical reasons and I
+[12:21.12]  I didn't even know what the proofs were
+[12:22.64]  about. Someone else wrote then I said,
+[12:24.64]  "Look, I want you to I asked the write
+[12:28.08]  these proofs without using this feature
+[12:30.00]  because I'm going to change it. I don't
+[12:31.84]  want to break the libraries
+[12:34.56]  instantaneous. It came up with the new
+[12:36.40]  proofs for me. I mean it's really good
+[12:39.81]  [snorts] and this is crucial for making
+[12:42.72]  formal verification mainstream because
+[12:45.12]  otherwise maintaining the proofs. It was
+[12:48.32]  almost like if your program took x
+[12:52.00]  amount of time to do the formal
+[12:54.32]  verification in the past would take 10x.
+[12:57.04]  That would be normal.
+[13:00.24]  But imagine if your program is changing.
+[13:02.48]  That's something that's really common.
+[13:05.12]  Now you have to keep maintaining the
+[13:07.68]  proofs too. It's a lot of work. But AI
+[13:12.24]  eliminates uh this pain for us.
+[13:15.36]  >> You mentioned that lean is because I I
+[13:18.32]  hear it as a proof assistant. But
+[13:20.64]  >> and then you also said it's a
+[13:22.40]  programming language. Yeah.
+[13:23.76]  >> Is that typical for proof assistants to
+[13:25.84]  be both a programming language and a
+[13:29.20]  proof assistant? Some of them especially
+[13:31.68]  the ones that are based on dependence
+[13:33.20]  type theory
+[13:35.28]  uh they are like rock and le are
+[13:37.92]  programming languages and proof
+[13:39.52]  assistance right I mean uh uh you can
+[13:42.56]  write definitions
+[13:44.56]  uh like uh when we're defining concepts
+[13:47.76]  in math but some of these definitions
+[13:49.84]  can be programs I mean and you have
+[13:52.48]  types you have structures
+[13:55.84]  is a programming language but is in that
+[13:58.56]  the family of called functional
+[14:00.40]  programming language I mean is a
+[14:02.16]  specific kind of programming language
+[14:04.08]  for people that are familiar with
+[14:05.84]  programming languages like Haskell ling
+[14:09.04]  is close to Haskell I mean but with the
+[14:11.84]  support for proofs that that's a way to
+[14:14.56]  to view ling
+[14:16.16]  >> are there major use cases where people
+[14:17.84]  use it as programming language but not
+[14:19.84]  as a proof assistant
+[14:21.60]  >> well the first big use case is link
+[14:23.68]  implemented in l we have many of our
+[14:26.00]  tooling is implemented in l like the the
+[14:29.12]  documentation authoring system called
+[14:31.36]  vers is implemented in ling. The build
+[14:33.92]  system that's called lake. It's like
+[14:36.00]  ling make lake is implemented in ling.
+[14:39.60]  Uh at AWS we have a compiler for AI
+[14:43.84]  acceler accelerators.
+[14:46.24]  It's half million lines of ling and it's
+[14:48.16]  using ling as a programming language.
+[14:50.40]  They're proving some properties about
+[14:52.96]  the program using ling. But the main
+[14:55.52]  goal is choose ling use ling as a
+[14:57.84]  programming language in this project.
+[14:59.60]  The proofs are like a a bonus right that
+[15:02.56]  you can get the proofs and find problems
+[15:04.56]  in the design.
+[15:06.24]  >> I think most people are familiar with
+[15:08.56]  programming languages and the tool
+[15:10.72]  chains they have and but um what are all
+[15:14.00]  the major components that you would need
+[15:17.20]  for a proof assistant?
+[15:19.68]  >> This is not that different. I mean if
+[15:21.68]  you're used to modern programming
+[15:23.04]  language like Rust the tooling for
+[15:25.92]  example lake is is our cargo right I
+[15:29.28]  mean uh you're going to open v visual
+[15:31.76]  studio codes same way and you're going
+[15:34.24]  to get all the intellisense
+[15:36.80]  one big difference is that we have
+[15:38.48]  something called the info view in ling
+[15:41.36]  your screens usually is going to be
+[15:42.88]  split in two you have your your file on
+[15:47.20]  the right hand side you have the info
+[15:49.04]  view that tells you information about
+[15:50.72]  your proofs, about your codes, uh is
+[15:56.16]  giving you constant feedback about your
+[15:59.20]  developments. That's basically the main
+[16:01.60]  difference, but the tooling, VS code,
+[16:04.88]  everything works the same way. I mean,
+[16:07.28]  >> it seems like a programming language is
+[16:09.04]  the the fundamental layer and then
+[16:11.12]  there's some additional layer on top
+[16:12.88]  that keeps
+[16:13.92]  >> track. Good question. uh uh in L you
+[16:18.00]  have definitions that are your program
+[16:19.52]  but you have theorems statements like
+[16:22.88]  you're going to say for example uh
+[16:24.56]  factorial is always greater than or
+[16:27.04]  equal to zero or something like that or
+[16:30.08]  if you add two even numbers you get even
+[16:33.04]  number you can write statements like
+[16:35.36]  that and immediately you can write
+[16:39.52]  actually a program that's the proof
+[16:42.64]  but most people don't do that they go
+[16:44.80]  into something called tactic modes. You
+[16:47.84]  can view as a domain specific language
+[16:49.68]  for writing proofs in ling. When you
+[16:52.32]  write by it switches to this domain
+[16:54.80]  specific language and you can you have
+[16:57.92]  steps like simplify my goal
+[17:01.68]  the state of my proof. You can say oh
+[17:04.72]  apply this writing step apply for
+[17:07.84]  example we know that x plus 0= x. You
+[17:10.32]  can ask ling apply this writing and
+[17:13.04]  you're going to see in the info view the
+[17:15.12]  state of the proof changing you you get
+[17:18.32]  immediate feedback and you get this
+[17:20.72]  feeling that you said you you keep
+[17:23.52]  telling applying transformations to your
+[17:26.32]  proof step by step you can see what's
+[17:28.56]  happening until you get no goals left
+[17:32.16]  and you are done the proof's complete
+[17:34.48]  and some people view this process as a
+[17:37.12]  game I I have users that told You built
+[17:40.96]  my favorite computer again for me.
+[17:43.08]  [laughter]
+[17:45.04]  >> That's funny. Is lean itself verified in
+[17:49.04]  lean?
+[17:49.92]  >> Lean is a massive program. You only have
+[17:52.08]  to trust the kernel. The kernel is where
+[17:54.08]  the proofs are checked. Lean itself is
+[17:57.68]  the kind of program that because there
+[18:00.00]  are so many new things we are adding.
+[18:02.16]  It's not even clear what is the
+[18:03.76]  specification. For example, what is the
+[18:07.04]  specification of a simplifier? You you
+[18:09.44]  can write general ideas but users they
+[18:12.80]  want to be able to customize the
+[18:14.64]  behavior. They keep asking they keep
+[18:16.72]  changing the specification all the time.
+[18:18.96]  I want this, I want that. No add this
+[18:22.32]  knob here. So it's really hard to have a
+[18:25.60]  full specification of L. But the kernel
+[18:27.92]  is possible to have a specification. We
+[18:30.48]  have a kernel. The kernel that comes
+[18:32.64]  with ling is not verified. But there are
+[18:35.84]  other kernels that you can use. One of
+[18:38.88]  them is implemented by Mario Kanedo.
+[18:41.60]  It's called Ling for Ling and it's
+[18:44.00]  implemented in ling and he's very fine
+[18:46.08]  is proving that this this kernel has
+[18:48.32]  been verified with respect to the
+[18:50.96]  semantics of ling. This is a cool
+[18:53.44]  project but for us having multiple
+[18:57.44]  kernels is the best way to ensure that
+[19:00.40]  your results are correct. I mean uh some
+[19:03.12]  users implemented their own kernels. We
+[19:05.44]  have kernels implemented in rust uh in
+[19:08.40]  different programming languages. Uh
+[19:10.88]  >> and when you say kernel what's what's
+[19:12.96]  the responsibility or what's the inputs
+[19:15.20]  and outputs of that portion?
+[19:16.72]  >> Yes. And l proof checking is type
+[19:20.00]  checking. This kernels they are type
+[19:22.56]  checking your programs. I mean basically
+[19:25.52]  you can export your lan developments.
+[19:28.72]  You got a big blob and you read this
+[19:31.68]  blob and they're going to check if
+[19:35.52]  when you say we have a proofing link
+[19:37.28]  basically you have a thumb that has a
+[19:39.28]  type and you're checking if the type of
+[19:41.76]  this T matches the type that you claim
+[19:45.60]  it has. For example, the example of the
+[19:47.76]  even numbers. This is a typing link
+[19:50.40]  saying that's uh uh the sum of two even
+[19:53.36]  numbers is a even number.
+[19:56.56]  You can write you can view that it is
+[19:58.48]  exactly a typing link and the proof what
+[20:01.84]  the kernel is checking is whether the
+[20:03.76]  type of the proof matches the type you
+[20:06.40]  claim this thumb has I mean and the the
+[20:09.68]  console will check you do this type
+[20:11.44]  checking
+[20:13.36]  uh the kernels vary between
+[20:18.40]  high performance kernel should it's like
+[20:20.72]  5,000 lines of code I mean the goal of
+[20:23.12]  the should be something you can write
+[20:26.00]  yourself.
+[20:27.60]  Uh of course sometimes people put bells
+[20:30.00]  and whistles like uh one thing concern
+[20:34.72]  people have is like okay
+[20:37.76]  but how do I know that I wrote fas
+[20:41.84]  in ling how do you know that when you
+[20:45.20]  exported it's really theorem it's not 2
+[20:48.64]  plus 2 equals four I mean uh and people
+[20:52.40]  some external kernels they write print
+[20:55.04]  printers I mean they will print the
+[20:57.44]  statements that has been proven all the
+[20:59.60]  dependencies
+[21:01.12]  you can have all the these fancy tools
+[21:03.60]  to make sure you're not being misled.
+[21:07.04]  >> Lean obviously it's so powerful and I
+[21:10.24]  see on social media all these amazing
+[21:13.44]  results from formal verification want to
+[21:16.32]  know you what are the top ones that you
+[21:18.48]  think of or top examples more recently
+[21:21.44]  that have impressed you that lean was
+[21:23.84]  able to accomplish? Well, there are so
+[21:26.64]  many I mean that I thought were was
+[21:28.80]  impossible for for example getting a
+[21:30.72]  gold medal in the international
+[21:32.56]  mathematical olympiad.
+[21:35.04]  A few years ago everybody thought was
+[21:37.04]  impossible. Now everybody they use it as
+[21:40.40]  a benchmark of a easy problem. They say
+[21:42.72]  oh this is like a IMO problem. I mean
+[21:45.28]  this is easy but it's not. I mean these
+[21:48.16]  are really challenging problems. Uh the
+[21:51.28]  other conjectures that people close
+[21:54.00]  using ling AI with ling also impresses
+[21:58.48]  me. Uh there's this unit distance
+[22:02.32]  conjecture for others. First open AI
+[22:05.60]  prove it using formal right was not
+[22:10.08]  formal and we have a system now in ling
+[22:14.16]  is a website where we call ling where we
+[22:16.96]  collect challenges.
+[22:18.96]  uh the same Kim Morrison saw this this
+[22:21.68]  this this
+[22:23.68]  proof open AI and she puts on Lo as a
+[22:28.00]  challenge say okay I want to see someone
+[22:30.40]  formalizing we knew it was huge to
+[22:33.20]  formalize
+[22:34.88]  it's serious math it depends on
+[22:38.48]  and Boris Alexi from openi he did his
+[22:42.16]  swim it's a one million line proof for
+[22:44.80]  for for whole proofing link for this
+[22:46.96]  conjecture uh We estimate I mean the the
+[22:50.32]  the ground math that is needed for the
+[22:53.20]  proof we knew it take months I mean for
+[22:56.48]  experts to do by hands. I mean
+[22:59.36]  >> uh how long did it take in that case
+[23:01.20]  like the time from when the proof came
+[23:03.92]  out to when the challenge was solved on
+[23:05.84]  the lean?
+[23:06.72]  >> I think what was one month?
+[23:08.72]  >> Yeah. And after Kim was a few I think
+[23:12.56]  less than two weeks after Kim puts as a
+[23:15.84]  challenge only vow I took I think two
+[23:18.16]  weeks to get the the or or less I mean
+[23:21.36]  >> that's that's insane.
+[23:22.80]  >> Yes. Yeah. Yeah.
+[23:24.32]  >> We talked about verifying programs but
+[23:26.56]  also there's using it just directly for
+[23:29.12]  mathematics like in this case.
+[23:31.84]  How popular is lean in in terms of um
+[23:35.52]  when you look at the users of lean? What
+[23:38.08]  percent are using it for software
+[23:40.64]  engineering? What percent are using it
+[23:42.08]  more for just direct math? Well,
+[23:45.04]  historically lean be got popular first
+[23:48.24]  with math, right? I mean know with the
+[23:52.00]  beginning of the le mathematical library
+[23:54.24]  in 2017
+[23:56.56]  we we had like a big project called
+[23:59.04]  liquid stencil experiments.
+[24:01.76]  Uh it started beginning of 2020. It was
+[24:06.24]  a big deal because it was to verify a
+[24:09.28]  result from a fields medalist. Per shows
+[24:11.76]  it is a result he was unsure about. He
+[24:14.40]  has not published it. uh uh he felt like
+[24:18.32]  this was one of the most important
+[24:20.00]  results in his career. He wanted to be
+[24:22.96]  sure it was correct. It was done
+[24:25.44]  manually. The verification
+[24:28.16]  uh was a big deal because the team that
+[24:30.88]  formalizes led by Yuan Kling
+[24:34.32]  they not only formalized the results
+[24:37.12]  without fully understanding they do not
+[24:39.20]  fully understand the the proof.
+[24:42.08]  uh but having this info view helped them
+[24:44.64]  guides them step by step
+[24:47.60]  they formalized and simplify the proof
+[24:50.24]  without fully understanding the proof is
+[24:53.20]  mindboggling right I mean how can you
+[24:55.44]  simplify a proof from one of the
+[24:58.40]  greatest living mathematicians without
+[25:00.80]  fully understanding it I mean but you
+[25:02.80]  you they manage to simplify it's almost
+[25:05.76]  like when people do factoring coding you
+[25:07.76]  start changing the codes
+[25:10.24]  is faster now But the program doesn't
+[25:13.12]  really know why. I mean, it felt like
+[25:15.52]  that. It's like you have a gut feeling.
+[25:18.24]  I mean, that's you're going the right
+[25:19.84]  direction.
+[25:21.84]  And this for us at the time, lots of
+[25:24.80]  people got excited about link the math
+[25:26.80]  community because of this project. it
+[25:29.44]  like it's shown that's not about
+[25:31.84]  verifying but enabling people to work
+[25:34.16]  together in large numbers because you
+[25:36.96]  can trust you don't need to trust
+[25:39.28]  someone else's proof right they can fill
+[25:42.00]  holes for you
+[25:44.24]  uh this was
+[25:47.28]  I mean what attracts a lots of attention
+[25:49.28]  from the math community then came Terren
+[25:51.28]  St. He starts using after this project.
+[25:54.96]  He has really cool projects with and
+[25:57.92]  without AI and he got addicted actually.
+[26:01.92]  I think the first time he used it said I
+[26:04.32]  don't think I'm going to do it again.
+[26:06.48]  The for proof one week later he had
+[26:08.80]  another project using ling and he did a
+[26:12.00]  new result he had. [laughter]
+[26:13.44]  >> When you say addicted you mean because
+[26:15.04]  that game that like completion engine.
+[26:17.28]  >> Yeah. Some people I I feel we feel like
+[26:20.96]  when I talk to professors that use link
+[26:23.68]  for teaching
+[26:25.92]  they tell me the class is more or less
+[26:27.84]  split. Some people love it, some people
+[26:30.24]  don't like. But people that like to
+[26:33.76]  problem solving, people that get medals
+[26:36.40]  in the IMO, they love because you get
+[26:38.88]  this excitement of solving. It's like a
+[26:42.16]  solving millions of really hard pseudoc
+[26:44.88]  problems, right? [laughter] And you can
+[26:47.20]  keep solving one and it's easy to get. I
+[26:50.08]  mean I'm a lean developer not a lean
+[26:52.40]  user but when you're developing ling I'm
+[26:54.64]  coding in ling and sometimes I have
+[26:56.88]  prove things is really easy to get
+[26:59.76]  addicted it gets lost proving things you
+[27:03.28]  get this bus every time you prove
+[27:05.52]  something [laughter]
+[27:07.92]  >> you mentioned the II gold medals how is
+[27:11.20]  lean used in that kind of uh I think
+[27:14.08]  maybe referring to alpha proof by deep
+[27:16.48]  mind or maybe something else
+[27:18.08]  >> yes deep mind because they got in 2024
+[27:21.68]  was a big surprise in 2024 they got a
+[27:24.56]  silver medal and now we have gold medals
+[27:28.80]  from startups like a harmonic by dance
+[27:32.48]  got a medal I never imagined by dance
+[27:36.64]  they they they're behind tick tock right
+[27:40.40]  I didn't even know they care about form
+[27:42.40]  math but they have a for math team they
+[27:45.20]  got medals also the approver is really
+[27:47.60]  good
+[27:48.24]  >> so how's it work let's say I mean
+[27:49.76]  there's a series of math problems lean
+[27:52.80]  is just used for verification right so I
+[27:56.00]  imagine there's other components there
+[27:58.08]  >> yeah there's the AI you can view it's
+[28:00.80]  like uh we have go that was very popular
+[28:03.68]  with AI the AI is playing the game I
+[28:07.44]  told you that many people see lens again
+[28:11.12]  it's the same I mean the AI is viewing
+[28:13.12]  lens again they have the statements of
+[28:15.28]  what you want to prove you have the buy
+[28:18.16]  keyword words. Now you have a blank
+[28:21.04]  fill. Make sure that you have no goals
+[28:23.44]  left, right? It keeps applying steps in
+[28:26.08]  this game and seeing the trans the state
+[28:28.96]  of the boards, right? That's the info
+[28:31.04]  view changing
+[28:33.20]  and the AI they use reinforcement
+[28:35.36]  learning for for for trying to get to to
+[28:39.28]  no goals left. They it's a single player
+[28:42.48]  game. Some people play together these
+[28:45.36]  days but yeah the AI is learning to play
+[28:48.32]  the game.
+[28:49.28]  >> So before we were talking about that
+[28:51.36]  game it kind of starts with the
+[28:53.28]  specification. So in that case then the
+[28:56.56]  problem is kind of the specification and
+[28:59.20]  then it
+[29:00.40]  >> the problem yeah you have basically for
+[29:01.92]  each problem in the international
+[29:03.28]  mathematical olympiad someone translates
+[29:05.92]  to ling the statements. It's super
+[29:08.56]  important to have the mathematical
+[29:10.00]  library because you want to be able to
+[29:11.92]  talk about the problems, right? For
+[29:13.84]  example, the problems uses the real
+[29:16.16]  numbers. You need a definition in ling
+[29:18.64]  and we have it inside of math lib the
+[29:20.72]  ling mathematical library. So the first
+[29:23.20]  thing you have to be you have to be able
+[29:25.28]  to write the problems in lane and this
+[29:29.04]  now because of math li it's easy part uh
+[29:33.68]  and after that you have to provide the
+[29:35.12]  proofs I mean sometimes some problems
+[29:37.92]  you have to come up with a definition to
+[29:40.40]  some objects you have to to create that
+[29:43.12]  has some property but yeah that's how it
+[29:46.72]  is. I remember you said one of the first
+[29:50.08]  use cases of lean was um this fields
+[29:53.44]  medalist had this novel mathematics and
+[29:56.96]  then we use lean to verify it but can
+[30:01.28]  lean be used with LMS to generate novel
+[30:04.96]  mathematics or just verify existing is a
+[30:08.80]  good question I mean we don't see lots
+[30:11.84]  of evidence we see now evidence it can
+[30:15.52]  find novel proofs
+[30:17.60]  Right? But coming up with new
+[30:21.04]  mathematical concepts is still
+[30:24.32]  at the limits. Right? I mean right now
+[30:28.00]  in this line of all we have challenges
+[30:29.92]  where the AI has to come up with the
+[30:31.84]  objects
+[30:33.44]  uh themselves right I mean but this is
+[30:36.64]  people will keep investing in this area.
+[30:39.12]  I I do not batch against AI here. I
+[30:42.64]  mean, but we we right now we don't have
+[30:44.96]  evidence they can come up with new math.
+[30:47.84]  >> Open AAI, Enthropic, Cursor, and
+[30:50.80]  Verscell all use this product to make
+[30:52.96]  their lives better. And the problem it
+[30:55.20]  solves is when you're building SAS or an
+[30:57.44]  AI product and you want to sell to other
+[30:59.76]  companies, there's all these
+[31:01.28]  requirements you need to meet. There's
+[31:03.20]  SSO, there's SKIM, there's arbback,
+[31:06.48]  there's audit logs. These are all things
+[31:08.32]  that take time to integrate but aren't
+[31:10.48]  the main focus of your app. Work OS is
+[31:12.64]  an API layer that lets you meet all of
+[31:14.56]  these requirements in just a few lines
+[31:16.72]  of code. So let's say you have a new SAS
+[31:19.12]  product and you want to sell to other
+[31:20.72]  companies. Work OS will solve all of
+[31:22.96]  these critical feature gaps for you. You
+[31:25.68]  can check them out at workos.com to
+[31:28.16]  learn more and get started. And I
+[31:30.32]  appreciate them for supporting my work
+[31:32.00]  and sponsoring this podcast. when I see
+[31:34.24]  on Twitter this, you know, major
+[31:36.24]  conjecture, they made headway on it,
+[31:38.64]  it's that they made headway on
+[31:40.80]  confirming something
+[31:42.08]  >> or or disproving. They also have uh uh
+[31:45.44]  this 1 million lines, they shown the
+[31:47.60]  conjecture was false. They have a proof
+[31:49.84]  showing that it's false, [snorts] but
+[31:51.76]  but it's a formal proof. They did not
+[31:55.92]  came up with a new
+[31:58.88]  theory or anything like that. They're
+[32:01.44]  coming up with a proof, right? I mean,
+[32:04.32]  >> at what points would you say someone
+[32:06.80]  should evaluate formalizing something in
+[32:09.92]  lean?
+[32:11.92]  >> I I I think if if it's safe if it's
+[32:15.12]  critical or if you don't understand
+[32:18.16]  really well, I mean this is important
+[32:20.32]  part. I don't really understand. Anybody
+[32:23.68]  that went through the process of
+[32:25.92]  formalizing something understands the
+[32:28.00]  subject way better after that. I I
+[32:30.96]  almost feel like I remember when I was
+[32:33.44]  in college people would say wow after I
+[32:35.92]  implement this algorithm now I
+[32:38.48]  understand it much better.
+[32:41.36]  The next level is that you implement the
+[32:43.36]  algorithm you prove the properties you
+[32:46.24]  expect
+[32:48.08]  your level of understanding grows.
+[32:50.56]  Right? I mean, uh, another cool thing is
+[32:53.68]  that it enables you to to be much more
+[32:58.00]  bold on on your optimizations
+[33:01.04]  because sometimes
+[33:02.96]  I I've seen that all the time people
+[33:05.12]  fear implementing optimization because
+[33:07.04]  they don't really understand why the the
+[33:08.88]  piece of software works. They feel like
+[33:12.16]  if I do that still works and is faster,
+[33:15.12]  but they are not confident with proofs.
+[33:18.40]  you eliminate this discomfort, right?
+[33:21.36]  You you can prove it's again or the AI
+[33:23.68]  can prove for you or find a counter
+[33:25.76]  example. They're good at both things.
+[33:29.76]  But if you were to speculate or draw
+[33:31.92]  into the future, maybe 3 to 5 years from
+[33:34.88]  now, if the cost of formalizing things
+[33:38.56]  goes down, how does that change
+[33:40.88]  software? How does that change um you
+[33:44.16]  know, handwritten math? Oh, I think
+[33:46.80]  we've changed dramatically, right? Uh,
+[33:49.28]  we have to keep in mind the big labs,
+[33:52.00]  they only start training for formal
+[33:54.80]  verification lean very recently, right?
+[33:58.00]  Seriously, before that was like, oh, is
+[34:01.12]  in the data sets. I mean, you don't
+[34:03.12]  really have the the enforcement learning
+[34:06.48]  pipelines to to optimize.
+[34:09.28]  The behavior we see today that is
+[34:11.20]  already amazing will get way better in
+[34:14.00]  the future.
+[34:15.92]  uh the costs will reduce programming
+[34:19.28]  languages like ling and rock will become
+[34:22.32]  more mainstream because of that
+[34:25.52]  uh many people are not so in the past
+[34:28.08]  people say oh functional programming h I
+[34:31.20]  don't like it
+[34:33.60]  but if I'm not the one that's writing
+[34:35.76]  most of the codes anyway
+[34:38.32]  it doesn't really matter what matters
+[34:40.16]  are the specification level right
+[34:43.84]  doesn't really matter how the code has
+[34:46.00]  been written. Yeah, I think it will
+[34:48.24]  change a lot because of that. At least
+[34:50.40]  that's the direction we are pushing
+[34:52.16]  into.
+[34:53.52]  >> What about let's say you know 10 years
+[34:56.56]  from now lean is everything's going
+[34:58.64]  really well with lean. Is that the could
+[35:02.32]  that be the end of handwritten math or
+[35:05.04]  handwritten proofs?
+[35:07.44]  >> I think there will be always aspects
+[35:09.36]  that is handwritten. The
+[35:12.88]  some people like to make a proof look
+[35:17.28]  they they want to use the proof as an
+[35:21.12]  artifact. You communicate ideas to
+[35:23.60]  others. I can't imagine there will
+[35:26.32]  always be people polishing making them
+[35:29.36]  super easy to understand for for another
+[35:32.48]  human to communicate ideas to other
+[35:35.04]  people. There will always be people like
+[35:37.36]  that. The same way today we have people
+[35:40.08]  that uh we have machines that build
+[35:43.12]  furniture but people they like to to
+[35:47.20]  create them by hands and polish them
+[35:50.00]  make them perfect. This will always
+[35:53.04]  exist but it will be a mixture. I I
+[35:56.56]  would be surprised as if there's someone
+[35:58.80]  that's completely
+[36:01.52]  AI is not in their workflow somehow
+[36:05.28]  right I mean you'll be hybrids many
+[36:08.40]  hybrids some people don't like feel this
+[36:11.60]  uncomfortable about this future but for
+[36:14.56]  me super exciting because I view
+[36:17.36]  developing software is super painful
+[36:19.68]  process
+[36:21.60]  and with AI it's crazy how it bring you
+[36:26.56]  awareness of how many steps are just uh
+[36:32.40]  repetitive
+[36:34.08]  and there's no creativity you're just
+[36:36.64]  patching things and AI automates removes
+[36:40.56]  lots of this pain right I mean
+[36:44.16]  I cannot go back to
+[36:47.28]  I'm looking forward to this future you
+[36:49.04]  describe
+[36:50.32]  >> yeah I guess the thing that gives people
+[36:52.88]  I mean I'm guessing The discomfort is
+[36:56.08]  the worry that if it kept going then you
+[36:59.84]  know then we need less mathematicians or
+[37:02.72]  less computer scientists or something
+[37:04.32]  like that.
+[37:06.08]  People don't see that AI can bring more
+[37:08.08]  people. Uh uh there's also the
+[37:10.88]  specification. I mean some I've see
+[37:13.52]  people saying oh we are going to leave
+[37:16.24]  AI we'll come up with new math. But if
+[37:19.84]  there's no connection to our world,
+[37:24.88]  this is some alien thing that's going by
+[37:27.44]  itself. You need an interface. Uh for
+[37:30.80]  example, we want to build programs
+[37:32.56]  because you want to accomplish
+[37:33.76]  something. Uh just something whatever it
+[37:37.04]  is has an specification. There will be
+[37:39.84]  always humans in the loop saying this is
+[37:41.76]  what we need. This is what we want.
+[37:44.80]  Right? writing this interface
+[37:47.12]  interacting with the AI.
+[37:49.92]  The AI will have math libraries and
+[37:52.40]  everything to prove things about these
+[37:56.00]  these programs we are writing these
+[37:57.68]  artifacts this this whatever we are
+[38:00.64]  trying to build
+[38:03.20]  but we have to be able to interact these
+[38:06.80]  libraries we have to understand the
+[38:08.80]  abstractions that are there
+[38:12.32]  I I don't see humans being eliminated we
+[38:14.56]  are always going to be there in the
+[38:16.00]  interface
+[38:17.60]  righth uh we are telling them what we
+[38:21.04]  want right I mean uh specifications will
+[38:24.64]  be there I can see people always writing
+[38:27.60]  codes
+[38:29.20]  uh even another thing a lot of people
+[38:32.48]  like to write they say I love coding my
+[38:35.20]  interpretation is they love to write
+[38:37.44]  prototypes
+[38:38.96]  I this is fun this is the fun part to
+[38:41.12]  try a new idea but to transform it into
+[38:44.16]  a product is never fun I can tell you
+[38:46.88]  it's never fun
+[38:49.04]  and I can take over these parts and
+[38:51.52]  nobody really likes doing
+[38:54.24]  >> outside of lean. I I know you worked on
+[38:56.80]  the Z3 SMT solver
+[38:59.60]  >> and that sounds like a really difficult
+[39:02.40]  thing to build. So first, what is that
+[39:05.04]  solver in your words? And um yeah, how
+[39:08.32]  does it differ from a SAT solver?
+[39:10.64]  >> Yeah, I s long is going to be yes 20
+[39:15.04]  years ago. I started history. I mean
+[39:17.44]  when I joined Microsoft research
+[39:20.56]  uh yeah this is a semmit to solver is
+[39:23.28]  like a set solver but you have
+[39:24.80]  backgrounds theories like you [snorts]
+[39:27.28]  have support for arithmetic
+[39:29.44]  for arrays uh these are not random
+[39:33.20]  choices right this is because we use for
+[39:36.24]  doing test case generation in software
+[39:38.56]  for doing software verification
+[39:41.20]  link fully Z3 is fully automated is a
+[39:44.24]  push button although lens Z3 are called
+[39:47.28]  ton provers. They are completely
+[39:49.60]  different beasts. Z3 is fully automatic.
+[39:52.96]  Ling is interactive. Has automation but
+[39:55.60]  it's interactive.
+[39:58.96]  Tree is not a programming language. It's
+[40:00.96]  like you can do is more like a
+[40:02.72]  constraint solver.
+[40:04.88]  It turns out you can prove simple things
+[40:06.96]  about it. Not you cannot do advanced
+[40:09.60]  math with abstract math. you can solve
+[40:13.52]  constraints with with Z3.
+[40:16.24]  >> What's an example of the the inputs to
+[40:18.88]  this SMT solver and what you get out
+[40:21.84]  from it?
+[40:22.80]  >> Oh, I I can give you one. I mean that's
+[40:24.88]  even in the Z3 manual. Uh you can encode
+[40:28.40]  a sudoko problem as a set of constraints
+[40:31.52]  and you can ask Z3 to solve and will
+[40:34.24]  give you back the answer
+[40:35.60]  instantaneously.
+[40:37.12]  For real applications, Z3 was used very
+[40:40.80]  successfully for finding bugs in
+[40:42.64]  software. Uh people would convert for
+[40:45.60]  example suppose that you have a path in
+[40:47.36]  your code you know that's has a security
+[40:51.12]  vulnerability but you don't know which
+[40:53.60]  inputs to the program allow you to
+[40:56.24]  execute this path. you can convert that
+[40:59.52]  into a set of constraints that you send
+[41:02.24]  to Z3 and it will say unsatisfiable
+[41:06.24]  which means is impossible to execute
+[41:08.16]  this path and you are happy or it gives
+[41:11.28]  you back an example saying look with
+[41:13.44]  this inputs you're going to be able to
+[41:15.36]  do it I mean and people use it for doing
+[41:19.52]  software verification
+[41:21.92]  uh but because the problem becomes
+[41:24.24]  undecidable
+[41:26.48]  at that level you have many universal
+[41:28.80]  quantifiers for stating properties about
+[41:30.96]  your program, your pre and post
+[41:33.28]  conditions.
+[41:35.36]  The server has heristics
+[41:38.00]  and this was all before AI. The
+[41:40.80]  heristics were handcoded and they will
+[41:43.20]  always fail and for simple things people
+[41:46.64]  would be very happy with the push the
+[41:48.32]  fact that Z3 is push button. But when
+[41:51.36]  the property is not trivial, they would
+[41:53.36]  come back saying come on I know the
+[41:55.60]  proof. I mean why is it we can't find it
+[41:58.32]  that's why ling started I started ling
+[42:01.04]  to make sure that we would have a system
+[42:04.24]  that's really good for software
+[42:05.76]  verification right for Z3 was successful
+[42:09.20]  for finding bugs but not so much for
+[42:13.04]  software for proving the absence of bugs
+[42:16.96]  it was never super successful there but
+[42:20.08]  len uh was born to fill this gap
+[42:25.20]  >> you that undecidable but in practice in
+[42:27.92]  the real world if you run it does it
+[42:31.20]  typically terminate?
+[42:32.64]  >> Yeah. Yeah. Great question. Uh uh Z3
+[42:36.16]  goes the whole complexity level, right?
+[42:38.72]  You you have sets uh uh you have NP
+[42:42.24]  complete, P space complete, XP complete.
+[42:46.00]  You have the whole undecidable, right? I
+[42:48.88]  mean uh surprisingly even for sets you
+[42:53.60]  can write really tiny set problems that
+[42:56.16]  are really hard to solve. No set solver
+[42:58.40]  will solve them. But in practice, the
+[43:02.32]  problems we get for hardware
+[43:04.56]  verification,
+[43:06.40]  uh, uh, especially if you bound
+[43:08.40]  everything, you say, "Oh, I'm trying to
+[43:09.92]  look for a bug in the first 10 steps,
+[43:13.12]  right? Everything's bounded. You're not
+[43:15.76]  trying to prove, but you're trying to
+[43:18.40]  capture a class like a space of
+[43:22.24]  scenarios, right?
+[43:24.80]  They are very effective than there. I
+[43:27.04]  mean there I I I think the lesson there
+[43:30.08]  is that programs and hardware
+[43:33.36]  they're not correct by esoteric reasons
+[43:36.32]  right they they are correct for very
+[43:39.12]  simple reasons I mean that's why these
+[43:41.44]  tools are super effective they [snorts]
+[43:44.80]  um yeah but when you get to undecidable
+[43:48.40]  and you're trying to prove even if the
+[43:52.08]  property is not trivial there I mean it
+[43:55.60]  runs out of team I mean and they time
+[43:58.40]  out frequently and [snorts] sometimes
+[44:01.04]  the there's a here a colleague of mine
+[44:04.56]  here at Amazon I mean like chooses the
+[44:08.00]  name proof instability
+[44:11.12]  because sometimes if you change the
+[44:13.28]  problem you just flip I mean you have A
+[44:16.48]  and B you write B and A where B and A
+[44:18.96]  are complicated formulas you may fail to
+[44:21.68]  prove and when she was just trying to
+[44:24.72]  maintain things proof would break if
+[44:27.44]  using this kind of technology. But with
+[44:29.52]  lean, she she switches to lean and super
+[44:33.60]  smooth, right? Because you're
+[44:35.60]  controlling uh the proof
+[44:38.32]  >> in the lean case. Why is it so much more
+[44:41.76]  efficient?
+[44:43.12]  >> Your proof is basically you can view the
+[44:45.68]  sequence of steps for solving the
+[44:47.52]  problem.
+[44:50.00]  In in Z3, you can view that you have
+[44:51.76]  only one proof step. solve, right? I
+[44:56.24]  mean, you're saying you have options to
+[44:58.56]  solve flags, but you have very you don't
+[45:03.20]  you cannot influence what Z3 is going to
+[45:06.24]  do. It's much harder to influence this
+[45:08.96]  kind of system.
+[45:11.28]  In in ling you can if you want to give a
+[45:13.92]  step super detailed stepbystep proof you
+[45:17.28]  can you can use proof automation like is
+[45:20.00]  available in Z3 but you can also break
+[45:22.96]  it down step by step and the fact you
+[45:26.32]  can do that humans can do it but the
+[45:29.36]  happy surprise is that AI can do it
+[45:32.96]  because now you can say step by step why
+[45:35.68]  something is true. the AI can convince
+[45:39.28]  lean that
+[45:41.52]  it can provide a proof. I mean
+[45:44.32]  >> when you were working on Z3 and lean,
+[45:47.36]  what was the most technically
+[45:49.28]  challenging
+[45:51.44]  part that you had to build for for
+[45:53.60]  either project?
+[45:55.20]  >> I understand how much harder ling is in
+[45:58.96]  comparison of Z3 this is or of a
+[46:01.52]  magnitude harder. I mean uh one explan I
+[46:05.84]  I talked to many colleagues about that
+[46:08.00]  why I felt like L was so much harder I I
+[46:12.72]  think it's the surface the interface
+[46:14.72]  with humans is way
+[46:17.76]  for the tree you have defined as a
+[46:20.24]  language for it's called SMT lib it's
+[46:24.64]  very simple language it's not meant for
+[46:27.60]  humans it's meant for tools I mean it is
+[46:30.16]  uses just the back ends of many
+[46:31.92]  different tools
+[46:33.04]  Someone's gener some program is
+[46:34.88]  generating input for Z3 and people
+[46:38.32]  expect a counter example or saying it's
+[46:41.84]  impossible is unsatisfiable to come up
+[46:43.92]  with the counter example. The interface
+[46:46.88]  is really really simple, right? You you
+[46:50.40]  can view it as a command line tool that
+[46:52.64]  you pass this file on this very low
+[46:55.76]  level language that's super easy to
+[46:57.68]  parse and you come back with yes or no.
+[47:02.08]  And l you have is a programming
+[47:03.84]  language. You have libraries. You have
+[47:06.48]  mechanisms. You have interactivity. You
+[47:08.32]  have user interface. You have LSP. You
+[47:10.72]  have build system. You have G. You have
+[47:12.72]  that is so vast. I mean that's
+[47:18.40]  another challenging part for me as I
+[47:22.00]  mentioned Z3 was a back end.
+[47:24.80]  The Z3 users
+[47:27.04]  are very sophisticated software
+[47:30.08]  developers people that speak the same
+[47:32.96]  language I speak. It's way easy easier
+[47:37.20]  to talk to people that speak your the
+[47:39.60]  same language with L is completely
+[47:42.56]  different, right? The B the first users
+[47:44.72]  are all math math people. They have
+[47:48.00]  completely different backgrounds,
+[47:49.36]  different expectations, different
+[47:52.16]  everything and a different community
+[47:55.60]  and then you have people that want to
+[47:57.84]  use L as a programming language. You
+[48:00.00]  have I I I'm not a programming language
+[48:02.24]  person. uh my background is automated
+[48:05.04]  reasoning
+[48:06.64]  and yeah it's different language
+[48:09.04]  different expectations
+[48:11.20]  >> was there like a a singular component
+[48:14.00]  that was just really technically
+[48:17.52]  challenging
+[48:18.40]  >> I I told you that l implemented in ling
+[48:21.84]  of course it was not always like that
+[48:24.64]  right I mean it had to be implemented in
+[48:27.76]  something else at the beginning the
+[48:30.08]  switch from origin origally was C++.
+[48:35.44]  The switch from CC C++ to lean was
+[48:38.80]  extremely painful. Really really uh I
+[48:43.28]  remember I literally want to cry when
+[48:46.72]  when I managed to compile Ling. I was
+[48:49.76]  just uh Sebastian and I at the time were
+[48:53.68]  building L for together
+[48:56.64]  and but this was before we had a
+[48:58.48]  nonprofit for Ling. I remember calling
+[49:01.76]  him and I said, "Wow, man. This is
+[49:05.28]  insane."
+[49:06.80]  Say, "Are you not excited?" He said, he
+[49:08.72]  said, "Yes, I am. I am." I mean, super
+[49:11.28]  excited. [laughter]
+[49:13.12]  >> What What made that switch uh hard?
+[49:16.88]  >> The first thing is is imagine you're
+[49:20.24]  going to implement the language in
+[49:21.76]  itself. The first thing you want is to
+[49:23.76]  reduce to minimize number of features as
+[49:26.40]  much as possible. So you want to
+[49:28.56]  implement ling using barebones
+[49:31.68]  features because you're going to have to
+[49:33.44]  be able to compile it with itself.
+[49:36.48]  uh uh then now you have like 100,000
+[49:40.96]  lines more or less uh I don't know the
+[49:44.56]  exact number but was between 100 around
+[49:47.20]  100,000 lines and you start trying
+[49:50.96]  compile you fail the first you cannot
+[49:53.68]  even compile the first file in the
+[49:55.44]  pipeline that that more than 1,000 and
+[49:58.32]  the first one fails then you fix the bug
+[50:00.88]  you can compile the first one then you
+[50:03.76]  can compile the second and you keep
+[50:06.16]  moving and you're always finding
+[50:08.40]  discrepancies between the new and the
+[50:11.68]  old one. I mean and you're trying to
+[50:14.32]  reconcile make things easier for the new
+[50:17.60]  one.
+[50:18.48]  because you want to replace the old one
+[50:20.88]  and this process
+[50:24.88]  is pain and l is a complicated language
+[50:26.88]  because of these dependence types and so
+[50:28.80]  on the proofs
+[50:31.28]  for example
+[50:33.92]  when you're implementing ling you you
+[50:35.60]  still need some proofs there I mean
+[50:38.32]  there are some basic proofs you need but
+[50:41.60]  you have to construct these proofs
+[50:43.20]  without no interactivity nothing bare
+[50:46.08]  bones you have to provide the proof
+[50:47.76]  time. It's almost like programming in
+[50:50.40]  assembly. The proof uh this was also
+[50:53.68]  super painful. I mean, my god.
+[50:56.24]  >> Yeah. [laughter]
+[50:57.36]  But it took Yeah. Many people thought we
+[51:01.36]  we were going to fail. Sebastian and I
+[51:03.28]  would not be able to do it.
+[51:05.44]  >> 100,000 lines is a lot. Like all human
+[51:07.68]  written.
+[51:08.16]  >> Yes. All human written. Yeah.
+[51:10.40]  >> We talked a lot about lean and I know
+[51:12.80]  there's competitors to lean. What are
+[51:15.20]  the pros and cons of the different proof
+[51:17.68]  assistants? You know, in what scenarios
+[51:20.96]  is one preferred over the others? For
+[51:23.36]  instance, the first disclaimer, I'm a
+[51:25.52]  completely biased person here, right?
+[51:28.08]  But I can tell you what users tell me. I
+[51:31.04]  mean about for example one thing the
+[51:33.36]  users love is the fact as l is super
+[51:36.56]  extensible because l implemented in ling
+[51:40.24]  you can add extensions to imagine you're
+[51:43.52]  doing your math proof in the middle of
+[51:45.84]  this math proof and say oh I want this
+[51:47.76]  fancy automation here you can write in
+[51:49.92]  the same file or the AI can write for
+[51:53.12]  you the extension for automating a proof
+[51:57.28]  and it will do it I mean even the AI is
+[52:00.72]  they know about the the fact L is
+[52:03.44]  extensible.
+[52:05.28]  If I ask the AI to isolate an issue in
+[52:09.12]  ling, I give the AI a link file, it will
+[52:13.12]  start writing a ling meta program, a
+[52:16.00]  program about the link tunnels to
+[52:18.96]  validate the conjecture it has about why
+[52:22.56]  it doesn't work. It's crazy. I mean the
+[52:26.08]  I keeps writing link meta extension
+[52:28.32]  there. The fact that L extension is
+[52:31.12]  really popular with so many people for
+[52:33.52]  example there is Patrick Masur he's a
+[52:37.20]  French mathematician
+[52:40.88]  uh he wrote something called Labos
+[52:44.24]  Labose you can he uses for teaching we
+[52:48.00]  have this language for writing the
+[52:50.16]  proofs but he made the language look
+[52:52.80]  like English and he has the info view
+[52:56.48]  now is a point and click you can click
+[52:58.32]  there it gives you suggestions about the
+[53:00.48]  next move that's written in structured
+[53:04.32]  English like you find in a textbook. You
+[53:07.36]  see the the the student has a really
+[53:10.48]  good idea on how to write in formal math
+[53:13.20]  proof and he did that without asking me
+[53:16.56]  any questions and he all this stuff the
+[53:18.96]  point and click the the new language the
+[53:22.48]  new interactivity he did all by himself.
+[53:25.52]  He's not a computer scientist. He he's
+[53:28.16]  has a math degree and he did all this
+[53:30.88]  stuff and it's for English and French. I
+[53:33.52]  mean you can choose I mean you can write
+[53:36.32]  the proofs in French
+[53:38.64]  uh and looks a textbook proof. I mean uh
+[53:42.16]  uh the people that write visualizations
+[53:45.04]  right for you want to visual you're
+[53:47.92]  trying to prove something about a math
+[53:49.60]  object you can write extension that
+[53:52.56]  visualize these objects in your info
+[53:55.12]  view right [snorts] that people that
+[53:57.60]  write new domain specific languages
+[54:00.40]  embedded in link for different purposes
+[54:02.64]  for example for protocol verification
+[54:05.52]  there's a language called veil is a link
+[54:08.88]  you open veil you feel like it's a
+[54:10.56]  different system for protocol
+[54:12.00]  verification, but it's just a link file
+[54:15.60]  with these extensions for protocol
+[54:17.52]  verification. The language for this
+[54:20.48]  writing protocol is a very convenient
+[54:22.80]  way.
+[54:25.36]  These folks wrote the whole thing
+[54:27.44]  without ever talking to us. They only
+[54:30.48]  talked to us after they had done it said
+[54:33.36]  look I want this pass of link to be
+[54:35.04]  faster. That's was the only interaction
+[54:37.28]  we had. uh and so interactivity is a big
+[54:40.64]  deal.
+[54:42.32]  Uh another big deal now is the
+[54:44.48]  mathematical library uh is vast. I mean
+[54:48.16]  for stating problems open conjectures
+[54:51.92]  you need a library to with the concept
+[54:54.48]  to even state the problem right. So le
+[54:57.44]  has a massive library and a massive
+[55:00.64]  community.
+[55:02.16]  Uh the community also plays a big role.
+[55:05.84]  people uh before AI I think now most
+[55:08.56]  people ask questions about link to AI
+[55:10.80]  but in the past people would go to the
+[55:12.88]  lens lip channel
+[55:15.12]  ask a question about ling they would get
+[55:16.96]  an answer in five minutes I mean people
+[55:19.76]  would say human based AI I mean people
+[55:22.64]  would be writing answers instantaneously
+[55:25.52]  to your problems the community played a
+[55:28.40]  big role another one was
+[55:32.96]  we listen to to to our users I mean uh
+[55:37.68]  uh the math I mean if you talk for
+[55:40.00]  example Jeremat was the first user I
+[55:43.76]  mean he has math backgrounds
+[55:47.84]  he he you ask him look he said look I
+[55:52.48]  could ask anything any new feature I
+[55:55.60]  would get back the same day I mean this
+[55:58.16]  the fix the new feature the same day and
+[56:01.60]  this attracts people right I mean
+[56:03.36]  because you are making improvements
+[56:04.80]  making sure the system does what they
+[56:07.76]  once uh uh they come back for more. I
+[56:11.28]  mean uh this also has a huge impact in
+[56:15.04]  growing the community. when I was doing
+[56:17.76]  some research there was this idea I
+[56:19.36]  think you mentioned in this conversation
+[56:20.64]  too there's this uh dependent type yes
+[56:24.64]  >> proof assistance and then there's higher
+[56:26.56]  order logic what what is that difference
+[56:28.88]  there
+[56:29.84]  >> at the beginning uh when I start I won't
+[56:32.56]  choose high order logic because it's
+[56:35.04]  much [snorts] easier to implement I mean
+[56:37.92]  uh the pen types is way harder there
+[56:41.84]  uh
+[56:43.44]  but the math community I mean Jeremy is
+[56:46.32]  the one that convinced me that I would
+[56:48.56]  never be able to attract serious
+[56:51.12]  mathematicians like fields medal level
+[56:53.52]  math people with high order logic.
+[56:56.32]  Right? His his point is like how logic
+[56:59.12]  is good for concrete math but if you
+[57:02.08]  want to talk about abstract objects
+[57:05.28]  uh dependent type theory is way more
+[57:07.76]  powerful and is beautiful is easy to
+[57:11.12]  explain why is called dependent. For
+[57:13.60]  example, you can have a structure in
+[57:15.84]  ling when you have several fields like x
+[57:18.64]  and y are natural numbers or integers.
+[57:20.88]  Let's say they're integers.
+[57:23.36]  You can have another field. The type of
+[57:25.84]  the field is a proof that x greater than
+[57:28.64]  y. The type of this field is x let's
+[57:32.48]  call greater
+[57:34.48]  column. You say x greater than y. The
+[57:37.04]  type depends on the value of the
+[57:39.76]  previous fields. That's why it's called
+[57:41.84]  dependence type theory. You can have
+[57:43.92]  types that depends on the values of
+[57:46.32]  other parameters, other fields and so
+[57:49.60]  on. But the beautiful thing about that
+[57:53.52]  that's in this you have this very small
+[57:56.88]  language that is so expressive
+[57:59.84]  for example this fields now that's a
+[58:02.48]  proof [snorts] you you have to provide a
+[58:04.96]  proof you can view it as invariance I
+[58:07.20]  can only build elements of this type if
+[58:12.48]  I give the x and y like in other
+[58:14.40]  programming languages but I have to give
+[58:16.08]  a proof that the x is greater than y is
+[58:19.44]  impossible ble to construct elements
+[58:21.92]  without providing this evidence, right?
+[58:25.36]  Uh you can do this in variance that's
+[58:28.56]  you don't have to invent invariants,
+[58:30.48]  right? the language just the fact you
+[58:32.32]  have these dependencies you can express
+[58:35.92]  uh in the functions you can have a
+[58:38.40]  function for example that says takes a x
+[58:41.52]  a y and a proof that's y is different
+[58:43.84]  from zero right I mean it's impossible
+[58:47.60]  to call the function if you do not
+[58:49.36]  provide evidence that y is different
+[58:51.60]  from zero this was always cool but in
+[58:55.12]  the past people would say wow providing
+[58:57.20]  this proofs is really annoying but with
+[58:59.92]  AI Now the I can synthesize the proofs
+[59:02.56]  for you. Uh and it's really cool.
+[59:07.28]  >> In higher order logic though could you
+[59:09.28]  express the same?
+[59:10.56]  >> No no that's you cannot you don't have
+[59:12.56]  the you lose the dependencies. For
+[59:14.56]  example one thing that you cannot do in
+[59:16.16]  high order logic. Uh in l
+[59:20.72]  in serious math people you have a bunch
+[59:24.40]  of structures they manipulate. you have
+[59:27.20]  like something a field I mean a ring a
+[59:30.72]  group
+[59:32.96]  you can write a function in ling that
+[59:35.28]  takes a group and he turns a new group a
+[59:39.44]  new structure
+[59:42.16]  you're not man you don't really care
+[59:44.08]  about the elements of the structure you
+[59:45.68]  are viewing the structure as a first
+[59:47.52]  class citizen that's something that the
+[59:50.16]  penet can do easily and in order logic
+[59:53.76]  is you have to play in coding tricks is
+[59:56.88]  a mess. I mean, uh, some people say,
+[60:00.64]  "Oh, it works for math." None of the
+[60:02.96]  mathematicians agree with this
+[60:04.72]  statement. None. I mean, you talk to to
+[60:08.40]  terish,
+[60:11.36]  Jerem,
+[60:12.88]  Kevin Buzzard, Patrick Masu, they would
+[60:15.36]  say, "No, no, you have to do the pens
+[60:17.68]  type theory." I mean,
+[60:22.00]  that's another example for me that
+[60:23.68]  listening to your users is important. If
+[60:25.84]  you want to appeal to this community,
+[60:27.68]  it's totally okay to say I don't care
+[60:30.96]  about this community. But if you care,
+[60:33.44]  listening to what they really want is
+[60:35.68]  importance.
+[60:37.36]  >> So when we think about the the future of
+[60:40.00]  lean, I'm curious to hear your thoughts
+[60:42.64]  on where you think lean is going. Um
+[60:46.32]  things you're excited about in the
+[60:47.76]  future. You know, what might it look
+[60:50.08]  like in in a few years?
+[60:51.84]  >> Yeah. Yeah. One thing uh we have this
+[60:55.36]  nonprofit behind LIN since 2023.
+[60:59.12]  I mean L 13 years old uh the first 10
+[61:03.04]  years was
+[61:05.36]  such project right I mean only when we
+[61:08.40]  got the nonprofits behind ling that it
+[61:11.76]  became you can view as a product we have
+[61:14.00]  a team of engineers
+[61:16.56]  and we managed to do it because the
+[61:19.28]  impact on math right but Sebastian and I
+[61:23.36]  I mean we co-ounded this nonprofit what
+[61:25.84]  we are really excited about is le as
+[61:28.72]  programming language, a programming
+[61:29.84]  language where you can prove things
+[61:31.68]  about your programs, right? And that's a
+[61:34.64]  direction we are pushing really hard,
+[61:36.96]  right? Link to uh uh we are super
+[61:40.72]  grateful for AWS,
+[61:43.28]  Amazon, they they're making the largest
+[61:46.40]  donation so far to these nonprofits
+[61:49.20]  where the goal is to accelerate this
+[61:52.32]  path. I mean, LIN is doing super well in
+[61:54.32]  the math path, but let's make Ling as a
+[61:56.72]  programming language. lings a system for
+[61:59.36]  social verification, harder
+[62:01.12]  verification. Let's push to the extreme.
+[62:04.64]  Let's give some love to these people uh
+[62:07.92]  uh to this path that's right now we do
+[62:10.24]  not really have funing to push seriously
+[62:12.88]  this path. That's the nonprofits, right?
+[62:16.64]  Uh for me to be in a world where you can
+[62:20.56]  reason about your codes uh uh is part of
+[62:23.04]  my life. They I'm not writing testes
+[62:25.84]  anymore. I'm writing properties and
+[62:29.44]  proving them. The AI is proving most of
+[62:32.40]  them for me. Uh this is direction we are
+[62:36.32]  pushing hard. And one people one thing
+[62:39.44]  that people don't realize is that when
+[62:41.92]  you have proofs it enables optimizations
+[62:45.60]  for free. You can ask the for example
+[62:48.00]  today if you ask the AI to optimize you
+[62:50.88]  have to inspect the code to make sure no
+[62:53.52]  bugs were introduced in the process.
+[62:56.72]  But
+[62:58.24]  if the AI is telling you, look, I
+[63:00.64]  optimize it. It still computes the same
+[63:02.80]  thing. Here's the proof.
+[63:05.60]  Uh this is a game changer in my points
+[63:09.12]  of view.
+[63:10.72]  >> Yeah, I've heard multiple people say
+[63:13.60]  this decade will be the you the decade
+[63:16.48]  of formal verification of software and
+[63:19.28]  yeah, maybe, you know, lean will be a
+[63:21.92]  huge part of that.
+[63:23.68]  >> Yeah. Yeah. We we for sure we're super
+[63:26.24]  excited to make it happen. I mean uh we
+[63:30.40]  uh
+[63:32.00]  scalability is super important, right?
+[63:34.48]  Because there's a big difference between
+[63:37.52]  math and and social verification. In
+[63:40.80]  math the the statements are usually
+[63:43.52]  really tiny or small. I mean the is an
+[63:47.12]  example. I mean super small but the
+[63:50.80]  proofs insanely cheap.
+[63:54.48]  for socialification
+[63:56.56]  is the opposite right these statements
+[63:58.64]  are big I mean but the proofs are
+[64:01.44]  shallow the reason why this is true is
+[64:04.24]  shallow but you have to manipulate this
+[64:07.28]  big objects right
+[64:10.00]  >> so for someone who wants to um learn
+[64:14.24]  more about formal verification or learn
+[64:16.32]  more about lean do you have a top
+[64:19.04]  technical book recommendation
+[64:21.36]  >> in the lean websites I mean we have uh
+[64:25.28]  several books there that's introduce
+[64:27.36]  lean functional programming lean theorem
+[64:29.84]  proving lean mathematics in lean the
+[64:32.80]  mechanics of proof is great for for
+[64:35.12]  educational purposes we have we have a
+[64:38.00]  collection of books if
+[64:40.96]  people go to lind-lang.org or they they
+[64:44.48]  you'll find all these books there.
+[64:49.04]  But one one thing I I tell people these
+[64:51.68]  days is that learning
+[64:54.64]  l using AI is super efficient. I mean
+[64:58.64]  you you keep talking to AI in natural
+[65:01.20]  language asking what do you want asking
+[65:03.92]  it to write examples many people split
+[65:07.12]  the screen in three now right we had the
+[65:10.56]  link codes the info view and on the
+[65:13.12]  bottom now many people now using an AI
+[65:15.44]  agent there that's writing the codes and
+[65:19.28]  explaining natural language what's going
+[65:21.28]  on there it's a super effective way I
+[65:24.80]  mean Aren style he told me when he
+[65:27.36]  learned ling he he uses old version of
+[65:30.48]  it was before agents he [snorts] would
+[65:32.96]  have the shajp on one window and the
+[65:37.44]  visual studio code in the other window
+[65:39.12]  and he would copy and paste between them
+[65:41.44]  and that's how he learned but now he's
+[65:44.48]  even more effective with the AI agents
+[65:49.76]  it's easy to pick up I mean just talk to
+[65:52.48]  the agent sometimes people say how do I
+[65:54.72]  that start talking to the agent. He will
+[65:57.52]  help you. here will customize
+[66:00.64]  uh right you can explain what you know
+[66:03.84]  already right I mean what's your
+[66:05.68]  backgrounds and for example if you tell
+[66:08.80]  oh I know hasll it's so much easier
+[66:11.92]  right you can customize the process
+[66:15.44]  >> and then last question for you is you
+[66:17.04]  know if you could go back to the
+[66:18.96]  beginning of you know building C3
+[66:21.36]  building lean and give yourself some
+[66:24.08]  advice knowing what you know now what
+[66:25.92]  would you
+[66:27.03]  >> [laughter]
+[66:28.72]  >> No, I'll keep it a secret. I mean, I
+[66:31.60]  think ignorance is a bliss. I mean, you
+[66:34.00]  don't know how hard things are and when
+[66:36.48]  you start the adventure, maybe I'll keep
+[66:39.28]  secrets. What I would tell I think one
+[66:42.16]  thing, especially before starting I I'm
+[66:45.92]  super introverted
+[66:48.00]  and I would tell look you should work on
+[66:50.80]  your people's skills. I mean, because it
+[66:53.68]  helps a lot. I mean when you have to
+[66:55.04]  interact with a community with people
+[66:58.16]  for me it was hard to to learn that and
+[67:00.88]  and I would tell myself look it's really
+[67:03.04]  important to have people's skills too.
+[67:07.04]  >> Well thank you for your time today
+[67:08.72]  appreciate it.
+[67:09.36]  >> Thank you.
+[67:10.40]  >> Hey thank you for watching this podcast.
+[67:12.00]  If you liked it and you want to see the
+[67:13.44]  show grow, please support with a comment
+[67:15.84]  or a like. Also, if you have any
+[67:18.40]  recommendations for people you want me
+[67:20.08]  to bring on, please drop a comment.
+[67:22.72]  guests like Barbara Liskoff, Mike
+[67:24.88]  Stonereaker, Mark Brooker. These were
+[67:27.28]  all people that I brought on because
+[67:29.28]  someone left a comment. On another note,
+[67:31.52]  aside from the podcast, I'm working on
+[67:33.44]  building the ergonomic keyboard that I
+[67:35.36]  wish existed. Here's a glance at the
+[67:37.52]  prototype. It's a split keyboard, so
+[67:39.76]  there's two sides. Um, this is in the
+[67:41.92]  case, but yeah, we launched on
+[67:43.44]  Kickstarter and we hit our goal within
+[67:45.44]  eight hours of launching. I really
+[67:47.04]  appreciate it if you were one of the
+[67:48.32]  people who grabbed one of the early
+[67:49.92]  units. Um, we're now working on the long
+[67:52.24]  journey of building the tooling now. And
+[67:54.32]  so if you still want to pick one up,
+[67:56.00]  I've left the late pledges open on
+[67:58.08]  Kickstarter, so you can grab one there.
+[68:00.24]  I'll put a link in the description.
+[68:02.24]  Thank you again for watching the podcast
+[68:04.56]  and I'll see you in the next

@@ -1,0 +1,2291 @@
+Title     : Creator of uv, ty, Ruff: How Software Engineering Is Changing | Charlie Marsh
+Video ID  : Iw65FD4MGgs
+URL       : https://www.youtube.com/watch?v=Iw65FD4MGgs
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2282
+Saved at  : 2026-10-08 08:16:34
+------------------------------------------------------------
+
+[00:00.08]  It's such an interesting time to be
+[00:01.36]  building software because things are
+[00:02.80]  just changing like so fast.
+[00:04.88]  >> This is Charlie Marsh, founder of
+[00:06.72]  Astral, the Python DevTools startup that
+[00:08.96]  was acquired by OpenAI. And I
+[00:10.88]  interviewed him about how software
+[00:12.72]  engineering is changing.
+[00:14.16]  >> Now it's like when you put up a PR, I
+[00:16.00]  actually have to review it really
+[00:17.12]  closely because you're not like writing
+[00:19.20]  it anymore. It's like the agent. The
+[00:21.20]  cost of putting up a plausible PR has
+[00:22.96]  gone to zero while the cost to like
+[00:25.12]  review has remained the same. if they're
+[00:28.40]  building so heavily with agents, like to
+[00:30.24]  what degree do they need to understand
+[00:31.76]  different parts of the code? I do think
+[00:33.76]  it would be like really hard to be an
+[00:36.24]  early career software engineer right
+[00:37.76]  now. Here's the full episode.
+[00:44.56]  What was the space like when you were
+[00:46.72]  first getting into building these these
+[00:48.48]  dev tools? Like why did you think it
+[00:50.08]  could be better? Before I started
+[00:52.72]  Astral, I was at a computational biology
+[00:55.68]  company and I was like the second
+[00:57.20]  engineer. I had no bio background and no
+[00:59.92]  like ML background and so I was building
+[01:01.60]  all the like software systems to like do
+[01:04.32]  machine learning. Um, and so that was
+[01:06.56]  like all Python. So I was like learning
+[01:08.64]  Python. Then we had some Go and some
+[01:10.00]  Rust. And so I just worked across lots
+[01:11.84]  of different ecosystems. And you know I
+[01:14.96]  think Python at the time like when I was
+[01:17.28]  in that position I we were trying to do
+[01:20.88]  a lot as a small team. So we had like a
+[01:23.28]  very I mean not compared to large code
+[01:27.20]  bases but we had a comparatively large
+[01:28.80]  code base and it was really a small
+[01:30.48]  group of us that were software engineers
+[01:32.16]  trying to serve the rest of the team
+[01:33.76]  whether they were like machine learning
+[01:34.96]  researchers or scientists. So I had kind
+[01:37.36]  of like worked across a bunch of
+[01:38.72]  different ecosystems, seen a lot of the
+[01:40.16]  tooling and now I was like working on
+[01:42.00]  Python and we kept trying to get lots of
+[01:45.04]  leverage out of the tools whether it was
+[01:46.56]  like the type checker or the llinter or
+[01:48.32]  the package manager like things were
+[01:50.16]  scaling up. We were a small team. We
+[01:51.84]  wanted to have like really good static
+[01:53.20]  analysis, really good tooling. Um and we
+[01:56.40]  kept running into like limitations
+[01:57.92]  around it. I mean, I think there were
+[01:59.44]  some I kind of like looked at the Python
+[02:01.68]  ecosystem and I just didn't see the same
+[02:05.36]  amount of like experimentation
+[02:07.92]  that I saw in other ecosystems like in
+[02:10.16]  the web ecosystem.
+[02:12.16]  Um, there were a lot of things going on
+[02:14.40]  that seemed pretty crazy. Um, and there
+[02:16.72]  was a very intense focus on perform I
+[02:19.36]  don't know about very intense, but there
+[02:20.56]  was more of a focus on performance. Um,
+[02:23.28]  and that started with like ESB build and
+[02:25.76]  then which was in Go and then you had
+[02:27.76]  like SWC and Rust and then you know bun
+[02:30.56]  and and Dino and all these other tools
+[02:32.96]  that came around and this idea that you
+[02:35.60]  could have to native tooling for
+[02:38.40]  JavaScript was like became very accepted
+[02:41.60]  um especially as applications became
+[02:43.28]  bigger and people were doing like more
+[02:44.72]  and more stuff on their machine um and
+[02:47.36]  that wasn't really happening in Python.
+[02:49.20]  And so that to me was kind of like the
+[02:51.92]  um the key question was like why can't
+[02:54.00]  we have that? Um because I was seeing
+[02:56.32]  all the stuff that was happening in web
+[02:58.72]  um and I had I had done some rust I'd
+[03:01.36]  done some Go. I'd like seen these
+[03:02.88]  different tool chains and like how they
+[03:04.32]  work what the experience is like the
+[03:05.76]  user experience right mostly in those
+[03:07.52]  cases. Um and then I saw Python and it
+[03:10.16]  was like we had a smaller set of tools.
+[03:13.04]  Um there were lots of interesting ideas
+[03:15.20]  from other ecosystems that I didn't see
+[03:16.72]  like represented. Um and uh they were
+[03:20.24]  really all written in Python. And so
+[03:22.40]  that to me was kind of like the
+[03:23.68]  interesting question. Um, and it was the
+[03:25.28]  first
+[03:27.52]  uh it was sort of like the first thing I
+[03:29.68]  uh I I asked when I started working on
+[03:31.84]  this like when I released rough
+[03:34.40]  um the title of the blog post was
+[03:36.32]  something like Python tooling could be
+[03:37.68]  like much much faster and and for me it
+[03:40.24]  was really like this is a hypothesis
+[03:42.16]  like could Python tooling be much faster
+[03:44.16]  and then I built a prototype and then
+[03:46.16]  that prototype was like yes I think it
+[03:48.08]  could be. you wrote a post kind of like
+[03:50.96]  exploring My Pi or publishing your
+[03:53.68]  results using My Pi and the date on that
+[03:57.44]  like nine days later you you published
+[04:00.00]  the post that one that you mentioned
+[04:01.60]  like it could be so much faster or
+[04:03.36]  >> No, that's funny. I didn't even realize
+[04:04.96]  that. Yeah. That those were so close
+[04:06.40]  together.
+[04:07.04]  >> Did you build that that proof of concept
+[04:09.12]  in those nine days? Yeah, I wrote that I
+[04:11.12]  wrote that blog post about basically
+[04:12.24]  type checking at scale because I was
+[04:14.24]  trying to think of what are things that
+[04:15.44]  I learned that people haven't written
+[04:17.44]  much about and then I started with a l
+[04:20.48]  building a llinter because I thought it
+[04:23.04]  would be much easier. I I think it
+[04:24.48]  actually is a lot easier than building a
+[04:26.88]  type checker. We're now building a type
+[04:28.56]  checker and we have a type we have a
+[04:30.08]  type checker. Um and so I can I can say
+[04:32.56]  that I think building a type checker is
+[04:34.16]  much harder. Um, but I started with a
+[04:36.16]  llinter because I thought it would let
+[04:37.28]  me like prove a lot of the same ideas
+[04:39.68]  but in a smaller form factor like
+[04:42.56]  building a startup or or just building
+[04:45.84]  like a tool. You want to try to like get
+[04:49.92]  something into people's hands that they
+[04:51.44]  can actually use and that actually
+[04:52.64]  proves out value like as quickly as
+[04:54.24]  possible and also that lets you iterate
+[04:56.96]  very quickly. And a llinter weirdly
+[04:59.60]  ended up being like kind of the perfect
+[05:02.08]  form factor for it because it it has
+[05:05.36]  like a pretty simple core, but it's you
+[05:08.72]  know then you have like tons and tons of
+[05:10.08]  rules, right? And so it's like
+[05:11.76]  extensible in a lot of different ways,
+[05:13.60]  but people can get value very quickly
+[05:16.00]  from a small core plus like some number
+[05:18.88]  of rules. And so we were able to like
+[05:20.80]  get something out there and then like
+[05:22.56]  iterate and like ship like more rules
+[05:24.16]  and more functionality and people could
+[05:25.76]  like use it alongside other tools. Like
+[05:27.92]  it was useful immediately which I think
+[05:29.92]  is extremely helpful as opposed to
+[05:32.96]  something like um I mean actually the
+[05:35.28]  type checker would be a good example
+[05:36.96]  like a type checker that's like 75% done
+[05:40.72]  like isn't very useful. Um, same with
+[05:43.68]  the package manager. Like these things
+[05:45.36]  have to be I mean there are ways like I
+[05:48.16]  think I would challenge those as like
+[05:49.44]  blanket statements. But the point is
+[05:51.20]  it's harder to ship something uh
+[05:53.60]  iteratively that's like still useful to
+[05:55.52]  users. Um, and I think that's like uh
+[05:58.08]  one of the key properties and actually
+[05:59.68]  like building momentum uh as like a tool
+[06:03.04]  or something else.
+[06:04.24]  >> When you posted that writing, what was
+[06:06.72]  the reception? I mean the the blog post
+[06:09.12]  itself like I published it and then it
+[06:11.92]  was on Hacker News and it got tweeted
+[06:13.92]  about a lot and it just created some um
+[06:17.60]  you know some amount of uh excitement
+[06:20.56]  and interest around it and those things
+[06:23.44]  um I mean especially being on the front
+[06:25.68]  page of hacker news I have a lot of
+[06:27.12]  thoughts about I mean it's certainly not
+[06:30.08]  uh it's like some percent luck um and
+[06:33.44]  then some percent skill and uh it is
+[06:38.16]  like a helpful thing but not a requisite
+[06:41.12]  to success. Um, and it also doesn't like
+[06:44.24]  guarantee success just because you got
+[06:45.92]  something on the front page of Hacker
+[06:47.36]  News. Um, like it's great. It's great if
+[06:49.60]  you can, but um, there's a lot of
+[06:51.28]  randomness to it. Um, I do think though
+[06:54.56]  that
+[06:56.40]  uh, well maybe a couple things. So one
+[07:00.48]  after that happened like some people
+[07:03.28]  started pay actually paying attention to
+[07:04.64]  the project and so um I really tried to
+[07:07.44]  like capitalize on that um by basically
+[07:10.40]  by being like very engaged and so when
+[07:12.88]  people would file issues I would like
+[07:14.48]  aggressively try to like acknowledge the
+[07:17.12]  issue as quickly as possible fix it and
+[07:18.88]  ship a release like if you can do that
+[07:20.80]  like within one day it's like a very
+[07:22.48]  very powerful loop like you gain
+[07:25.20]  supporters and like create more momentum
+[07:26.88]  around the
+[07:28.00]  Um, and there were also a couple like
+[07:29.52]  high-profile people in the ecosystem
+[07:31.20]  that started paying attention to the
+[07:33.36]  project like Sebastian Ramirez who did
+[07:35.20]  fast uh does fast API and you know a
+[07:37.68]  bunch of other things. Um, and he's been
+[07:39.68]  a great supporter of our projects too.
+[07:41.28]  But like early on he was like oh this is
+[07:42.96]  interesting. I'd like to use it and I
+[07:44.48]  was like I basically asked myself well
+[07:46.80]  what would it take for him to use it?
+[07:47.92]  And then I just like tried to do all
+[07:49.20]  those things. Um, so I tried to
+[07:51.68]  capitalize on that. Um I think the other
+[07:55.20]  is though um I do think a lot about like
+[07:59.28]  developer marketing and um
+[08:04.00]  it's sort of like a dirty word or like a
+[08:06.08]  dirty expression like I I think like I
+[08:07.76]  think a lot of engineers like want
+[08:09.84]  technical products and tools to just
+[08:12.64]  like win on their merits. Like the best
+[08:14.40]  technical solution should just be the
+[08:16.00]  one that like wins and grows. But um I
+[08:19.92]  actually I I mean I have this sort of
+[08:21.52]  like stupid hypothesis that there's all
+[08:23.84]  these like there's like thousands of
+[08:25.60]  like really amazing projects on GitHub
+[08:27.60]  that like basically don't know how to
+[08:29.28]  market themselves and so never like
+[08:31.04]  never get discovered and never go
+[08:32.40]  anywhere. Um, and I don't actually know
+[08:34.56]  if that's true, but it's like sort of
+[08:35.84]  how I feel about a lot of technical work
+[08:38.48]  where it's like it's actually worth
+[08:41.04]  looking at a project like Rough.
+[08:44.32]  And um, when I think about like what to
+[08:47.04]  put in the blog post or this extends to
+[08:49.76]  like what to put in the read me or like
+[08:51.76]  what to put in the you don't need like a
+[08:53.60]  million emojis and like and like a
+[08:56.16]  million screenshots of like everything.
+[08:57.92]  What you need is like, okay, someone's
+[09:00.64]  going to like like land on this page and
+[09:04.24]  I have like 10 seconds to get them
+[09:07.60]  interested in what I'm doing and help
+[09:09.04]  them understand like why it might matter
+[09:10.64]  to them and like why it's useful. And so
+[09:12.56]  like that was like that's like the key
+[09:14.24]  idea that I try to bring basically to
+[09:17.12]  everything. I mean it's a little bit
+[09:18.56]  depressing because it's like okay I only
+[09:19.92]  have like 10 but like people people
+[09:21.28]  really don't have like like this is like
+[09:23.12]  the attention economy, right? It's like
+[09:25.76]  um it's same thing with a blog post like
+[09:28.40]  um ironically I used to look at a lot of
+[09:31.04]  the OpenAI blog posts when I was at
+[09:34.32]  Spring and we were trying to we were
+[09:36.16]  doing like machine learning in bio and
+[09:38.32]  we were trying to publish material to
+[09:40.56]  like explain what we do but but we had
+[09:42.96]  all these interesting insights like we
+[09:44.80]  looked at the OpenAI blog posts
+[09:46.16]  especially like the Dolly ones like the
+[09:47.60]  older ones and we were all we were like
+[09:49.84]  wow that's an amazing blog post because
+[09:52.00]  if you read none of the text, you still
+[09:55.36]  understand what they did and you're
+[09:56.96]  still impressed by it. Like if someone
+[09:58.48]  just goes on the page, they leave with
+[10:00.96]  an impression and they have some
+[10:02.56]  understanding. And I was like, "Wow,
+[10:03.76]  that's like a really amazing thing." And
+[10:05.20]  so when I write blog posts now, I'm
+[10:08.08]  like, if someone just lands on this
+[10:09.52]  page, I have to be prepared for the for
+[10:12.08]  the large number of people who will only
+[10:14.00]  read maybe the TLDDR, maybe look at the
+[10:16.08]  first image, maybe read the headline.
+[10:18.40]  Some people will read the full thing.
+[10:19.84]  And so I should care painstakingly about
+[10:22.16]  every word and everything it says, but
+[10:24.24]  most people will read like almost none
+[10:25.76]  of it. And so again, sorry it's a little
+[10:27.92]  bit like it's a little bit depressing,
+[10:29.12]  but like I do think it's worth thinking
+[10:31.20]  about your audience and like how do you
+[10:33.84]  how do you explain to them like why they
+[10:35.44]  should care about what you're doing in a
+[10:36.96]  way that's honest and genuine like not
+[10:38.96]  like not like deceptive. Um but you do
+[10:41.36]  have to think hard about um how do you
+[10:44.56]  communicate like why something matters
+[10:45.92]  to people very quickly. Could you give
+[10:48.40]  an example of like what you did in your
+[10:51.20]  case?
+[10:51.84]  >> I think like for rough specifically, we
+[10:53.84]  had a really good graph uh of the
+[10:57.28]  benchmarks
+[10:58.80]  >> um that we put in the blog post and that
+[11:01.12]  like went it was like on Twitter and
+[11:03.52]  like that that was like a priceless
+[11:05.20]  graph basically. Um sorry, not in terms
+[11:08.32]  of like monetary value. I just mean in
+[11:09.68]  terms of like attention, right? It was
+[11:11.28]  like oh that's like that's like really
+[11:13.20]  obvious like what's happening there. I
+[11:14.56]  think graphs of benchmarks can be uh
+[11:16.72]  like a really powerful thing. Um all
+[11:19.92]  benchmarks are bad and wrong in some way
+[11:22.32]  and so there's a lot like there's a lot
+[11:24.48]  more to like say about that like but um
+[11:26.96]  but I do think like having a visual hook
+[11:29.28]  that explains to people why they should
+[11:30.80]  care and like what something is. um and
+[11:33.28]  having a really strong tagline like I
+[11:36.40]  would have to look back at what we had
+[11:37.84]  but we were like okay we're going to be
+[11:39.76]  like compatible with your existing stuff
+[11:42.80]  and much faster and uh that's kind of it
+[11:47.12]  and it's like okay well if it's
+[11:48.80]  compatible and it's much faster like
+[11:50.08]  that was like I was like why should you
+[11:51.52]  care like it can be orders of magnitude
+[11:53.44]  faster and it'll give you the same
+[11:54.88]  experience you try to convey that like
+[11:57.12]  as quickly as possible
+[11:58.64]  >> right and even the I mean that blog post
+[12:01.76]  header I mean, Python tooling should
+[12:04.40]  could be much faster. Should be much
+[12:06.00]  >> foc
+[12:08.32]  provocative, I guess. Yeah.
+[12:10.96]  >> I mean, I'm pretty against like uh
+[12:13.52]  clickbait or like trying to be
+[12:15.12]  misleading in like anything that we do.
+[12:17.28]  Like we we you basically want to want to
+[12:20.80]  balance like
+[12:23.04]  creating like effective like effectively
+[12:26.16]  communicating like the most interesting
+[12:28.00]  pieces to people. Um, but you have to do
+[12:30.72]  it in a way that like you believe is
+[12:32.32]  like true and authentic. Um, like you
+[12:35.04]  could lie about a bunch of stuff and
+[12:36.24]  like post interesting things that are
+[12:37.52]  like clearly provocative, but like I
+[12:39.52]  don't know. To me that's just like why
+[12:41.04]  why would I ever do that? That's like
+[12:42.32]  such a losing battle.
+[12:44.00]  >> What What do you think about I mean so
+[12:46.00]  you have that graph and
+[12:47.92]  >> I'm I don't know if the I see this a lot
+[12:50.56]  though where the axis is not zeroed.
+[12:53.20]  >> Oh yeah.
+[12:53.60]  >> So it's you know it's it's all within
+[12:55.20]  the range of like 50 to
+[12:56.96]  >> chart crimes. Yeah. Chart crime. Yeah. I
+[12:59.20]  wouldn't do that. Yeah. Yeah. I do think
+[13:01.84]  like benchmarks are pretty um
+[13:04.80]  complicated and controversial though.
+[13:06.48]  And um maybe most people don't even see
+[13:09.52]  this controversy, but like I do because
+[13:11.36]  it's like it's just very like
+[13:14.40]  performance is very nuanced. Um and
+[13:20.16]  uh you know like like an you know you
+[13:24.16]  have to think about like okay uh with
+[13:26.88]  caching or without caching um those are
+[13:29.20]  like pretty different or like uh
+[13:31.76]  depending on the project that you're
+[13:33.12]  running on uh the performance
+[13:35.20]  characteristics will be like totally
+[13:36.72]  different and like we see this like in
+[13:38.40]  UV this is really hard because like
+[13:40.72]  sometimes um you know UV is really fast
+[13:43.60]  but sometimes your package install is
+[13:45.44]  actually bottlenecked on um like a C++
+[13:49.28]  build that's like totally out of band
+[13:51.12]  and it's like okay well so how do you
+[13:53.20]  like accur it's like I mean it's sort of
+[13:54.80]  impossible to like accurately capture
+[13:56.64]  like all of the different scenarios um
+[14:00.72]  and so but it's also like a disservice
+[14:02.80]  to users like not to try to communicate
+[14:05.84]  to them
+[14:07.52]  like the importance or like a real
+[14:09.84]  representation of like what will the
+[14:12.32]  difference in performance look like and
+[14:13.52]  why does it matter and so you have to
+[14:15.20]  balance those things. Um, which I think
+[14:17.20]  is actually quite hard. Um, and a lot of
+[14:19.68]  people tend to get it wrong. Um, and
+[14:21.52]  maybe we've gotten it wrong a few times,
+[14:22.88]  too. I'm like I'm happy to accept that.
+[14:24.72]  Um, but I do think it's it's more
+[14:26.24]  complicated than people think. Um, but
+[14:29.76]  it's also I think a huge disservice not
+[14:31.52]  to include like some way to try to
+[14:33.12]  convey to people quickly like what
+[14:34.40]  things feel like.
+[14:35.84]  >> I think one of the things I'm most
+[14:37.20]  interested in is like you you mentioned
+[14:39.68]  that graph. I see that graph and like
+[14:41.92]  you know the engineer in me is like how
+[14:43.68]  how did you make it so much faster and
+[14:46.32]  one of the things in the tagline is
+[14:48.56]  Python dev tooling written in rust and
+[14:51.04]  so I guess one of the first thing I'm
+[14:52.56]  curious about is why did you choose rust
+[14:55.28]  and what are the pros and cons of that
+[14:57.68]  >> I would say I largely chose chose rust
+[14:59.92]  for that project because of hype um like
+[15:04.96]  I don't think at the time I was that
+[15:06.48]  informed about a lot of the technical
+[15:09.20]  trade-offs between those different
+[15:10.72]  ecosystems. Um, and I hadn't really done
+[15:13.76]  a lot of systems programming. And so
+[15:15.20]  that's that's like the honest answer is
+[15:17.04]  like I was seeing it in a lot of places
+[15:18.56]  and it was growing a lot and people said
+[15:21.12]  it was like it appeared to be sort of
+[15:22.80]  like an accessible way to write my
+[15:24.80]  impression was that it was an accessible
+[15:26.96]  way to write uh high performance
+[15:29.20]  software. Um, and and so I started for
+[15:32.40]  that reason. Um,
+[15:34.64]  in hindsight,
+[15:37.04]  uh, I think it was, uh, an amazing
+[15:39.92]  decision and I wouldn't absolutely not
+[15:42.40]  do it differently and I think it was
+[15:43.76]  like the best choice for what we're
+[15:45.84]  building. Um, and and now I have a lot
+[15:49.12]  more experience uh, writing Rust. it.
+[15:51.44]  But it is funny because like I I do sort
+[15:54.80]  of think that um if I had tried to write
+[15:58.64]  this in like C or C++, I think I
+[16:00.40]  probably would have given up because I
+[16:01.92]  find those even now I find those
+[16:04.16]  ecosystems
+[16:05.76]  much more like intimidating, hard to
+[16:09.04]  hard to access, hard to learn. I I have
+[16:12.08]  often felt that like one of the great or
+[16:14.48]  like underrated advantages of Rust is
+[16:17.52]  basically like the tooling. Um cuz like
+[16:20.48]  you drop in and you use cargo and that's
+[16:23.68]  how you do like everything. And uh if
+[16:26.48]  you clone, this isn't always true, but
+[16:28.32]  like you know there are exceptions as
+[16:29.76]  projects get sufficiently advanced, but
+[16:31.68]  like if there's like a crate out there
+[16:34.40]  um that we use and maybe I want to
+[16:36.24]  submit a PR to it, I'm like extremely
+[16:39.04]  confident that I can clone it and figure
+[16:40.96]  out how to run and build it without
+[16:42.56]  having to do like any work. like being
+[16:44.72]  able to just clone and run like cargo
+[16:46.32]  run or cargo build or cargo test. That's
+[16:48.56]  actually like really amazing. Um
+[16:50.56]  especially for someone like me who was
+[16:51.84]  like new to systems programming and I
+[16:53.28]  didn't want to have to figure out like
+[16:54.88]  my whole like C++ like tool chain and
+[16:56.96]  like build system like all this stuff. C
+[16:59.60]  Rust was like opinionated about all
+[17:01.44]  these things and so there were a lot of
+[17:04.00]  things that were hard to learn. Um, but
+[17:07.44]  uh but I was allowed to like basically I
+[17:10.72]  was allowed to spend my time focusing on
+[17:12.16]  the things that that like actually
+[17:13.84]  should be hard to learn as opposed to
+[17:15.92]  like all the other uh basically all the
+[17:19.60]   that like you don't want to
+[17:21.04]  spend time on like how do I get this
+[17:23.20]  thing to actually like build and run and
+[17:24.56]  blah blah blah. I think it has been an
+[17:27.04]  extremely good bet for us. um like it's
+[17:30.48]  scaled very well with the project and I
+[17:33.92]  I mean we at OpenAI too are like we use
+[17:36.96]  a lot of Rust and they're like betting
+[17:38.40]  heavily on Rust and then you know me as
+[17:41.12]  someone who builds software for uh
+[17:43.36]  builds developer tools like tries to
+[17:44.96]  build software for people to build
+[17:46.24]  software I'm like very bullish on Rust
+[17:49.36]  um uh like it's grown um enormously and
+[17:53.04]  I think it will actually just like keep
+[17:54.72]  growing enormously um at the same time
+[17:57.76]  like I said this at the start I've never
+[17:59.36]  been someone who's like super dogmatic
+[18:01.20]  about ecosystems. Like I I think that
+[18:03.12]  like all of those ecosystems have like
+[18:05.12]  lots of redeeming qualities. Like I
+[18:06.56]  think what's happening in Zigg is like
+[18:07.92]  very interesting and like I wish I had
+[18:09.84]  more time to like go deep on it and like
+[18:12.40]  develop more nuanced opinions about like
+[18:14.08]  what it does better. Like I'm sure it
+[18:15.36]  does a bunch of things better than Rust.
+[18:16.72]  Um and there I'm sure there are things
+[18:18.00]  for Rust to learn from that ecosystem.
+[18:19.92]  Um similarly people have a ton of
+[18:21.44]  success building stuff in Go. I think
+[18:22.88]  that's great too. I think like I think
+[18:24.72]  all this stuff is great. Um, but I have
+[18:27.04]  loved like using Rust and um, I have
+[18:29.84]  complaints about it, but I view those
+[18:31.36]  complaints as like things that we should
+[18:34.40]  improve. Um, especially as like the way
+[18:37.04]  we build software changes with with with
+[18:39.12]  LMS.
+[18:40.08]  >> So if sounds like you're saying C and
+[18:42.64]  C++
+[18:44.48]  today, you would not consider them
+[18:46.88]  because their tooling is insufficient.
+[18:48.72]  But Zigg, Rust, and Go are all, you
+[18:53.68]  know, some spectrum of tradeoffs or
+[18:55.76]  different things that
+[18:56.64]  >> Yeah. I mean, I think I think a lot of
+[18:58.00]  people would disagree with me, but like
+[18:59.36]  I don't really understand like why
+[19:01.60]  unless there are like very specific
+[19:03.28]  technical
+[19:04.80]  reasons um
+[19:08.16]  uh or you're working with existing
+[19:10.00]  software like basically I don't really
+[19:11.60]  know why I would start a net new project
+[19:14.00]  in C or C++. Um I I certainly would not
+[19:18.88]  like at a personal level. Um I guess if
+[19:21.20]  they're like the ecosystems you know
+[19:22.88]  really well like that's then it makes a
+[19:24.96]  lot of sense to do it. Um but if I was
+[19:27.36]  like a new a programmer like looking to
+[19:29.84]  learn systems or um if I knew those
+[19:32.16]  languages equally well like I guess I
+[19:34.00]  just don't understand like why I would
+[19:35.76]  do that which I'm sure I'll get like
+[19:37.20]  roasted for but I uh but I I just don't
+[19:40.08]  really care. Like I now I actually care
+[19:42.16]  about a lot of things that Rust gives me
+[19:43.44]  that I didn't care about as much before
+[19:44.88]  like memory safety. I don't think I even
+[19:46.56]  understood or cared about what memory
+[19:47.68]  safety was when I started working on
+[19:48.72]  Rough to be honest with you. And now I
+[19:50.40]  like I think it's like a pretty amazing
+[19:52.00]  thing. Um is like you know memory I want
+[19:54.64]  to build things that are like safe uh
+[19:56.48]  that don't crash on users that are
+[19:58.24]  really fast, really performant, um that
+[20:00.72]  don't have to make compromises
+[20:02.48]  basically. And like I feel like I can do
+[20:03.92]  that in Rust. And so for me it's like I
+[20:06.56]  don't know it's kind of like the perfect
+[20:07.68]  language. I mean it's not the perfect
+[20:09.12]  language but it is my favorite language
+[20:10.72]  to use right now.
+[20:12.16]  >> In today's world it's not unreasonable
+[20:15.04]  that you could almost completely
+[20:18.80]  transpile or convert your existing
+[20:21.52]  codebase into any language of your
+[20:23.20]  choice.
+[20:24.00]  >> Like I saw I think it was the on bun I
+[20:27.52]  forgot I think it was zigg to rust.
+[20:29.36]  >> Yes.
+[20:29.92]  >> Like all in one go. So like if you
+[20:34.24]  studied some other language and you
+[20:36.32]  thought it was better, you could totally
+[20:38.64]  rewrite everything from Rust into I
+[20:41.28]  don't know Zigg or Go, would you ever
+[20:43.44]  consider doing that for uh the dev tools
+[20:46.24]  that you've built for instance?
+[20:47.60]  >> Yeah, it's such an interesting time to
+[20:49.28]  be building software because things are
+[20:50.96]  changing. This is not a novel comment,
+[20:53.60]  but things are just changing like so
+[20:55.36]  fast. like I I didn't I didn't really
+[20:58.40]  program with agents at all until like
+[21:00.32]  Christmas, like December break basically
+[21:03.44]  of this year. Um and or of last year
+[21:06.56]  rather and like that's really not that
+[21:08.00]  long ago. Like I mean I was like using
+[21:09.44]  cursor and stuff but like I wasn't like
+[21:11.92]  now like I I haven't edited code in an
+[21:14.80]  editor in a very long time. Like I
+[21:16.88]  everything I do goes through codecs and
+[21:19.36]  like even if it's like small edits I'm
+[21:21.44]  just prompting and kind of like it's
+[21:23.12]  like it's it's completely different. Um,
+[21:25.44]  and that's not that long of a time,
+[21:26.80]  right? And so, uh, I don't know what's
+[21:28.64]  going to look like in six months. hard
+[21:29.92]  to say. But so that you know the reason
+[21:31.84]  that I mentioned that is
+[21:34.40]  like I think bun
+[21:37.52]  uh like doing that rewrite it's like I
+[21:41.76]  wouldn't do that right now but I'm
+[21:44.72]  actually like I'm glad that they are
+[21:48.64]  like pushing that they are experimenting
+[21:51.36]  and pushing the envelope of like what's
+[21:53.04]  possible and and they're doing it in the
+[21:55.04]  face of like a lot of criticism and um
+[21:58.40]  it will be interesting to how it plays
+[22:00.00]  out for users because I think a few
+[22:02.08]  different things I thought about is like
+[22:03.44]  oh reasons not to do that like one is
+[22:07.20]  okay uh maybe you don't understand the
+[22:09.36]  code anymore right like if the code got
+[22:11.76]  completely rewritten quote unquote then
+[22:14.08]  as a human like you may not understand
+[22:15.92]  any of the code anymore um and that can
+[22:18.16]  be a big problem um I I think there are
+[22:21.20]  mitigating factors around that which are
+[22:23.44]  like they tried to do a very direct
+[22:24.96]  transpolation quote unquote I mean it's
+[22:26.72]  not exactly a translation but they tried
+[22:28.16]  to do like very onetoone on. Um, and so
+[22:31.20]  that hopefully helps with like
+[22:32.72]  understanding all the abstractions. If
+[22:34.56]  they're building so heavily with agents,
+[22:36.24]  like does it even matter like to what
+[22:39.52]  degree do they need to understand
+[22:40.80]  different parts of the code? I actually
+[22:42.32]  don't know the answer to that, which is
+[22:43.68]  where my everything's changing so
+[22:45.36]  quickly comes from. It's like it's
+[22:47.44]  actually a little bit hard for me to say
+[22:48.80]  right now how much that actually matters
+[22:51.52]  anymore of um if they did transpile the
+[22:54.32]  whole codebase like how well do they
+[22:55.84]  need to understand things at different
+[22:56.96]  levels of abstraction like they should
+[22:58.80]  you know it's it's actually a very like
+[23:00.64]  I think a complicated question um so one
+[23:03.68]  reason is like how well you understand
+[23:05.20]  the code that's confusing thing the
+[23:06.96]  other is like you're kind of trading
+[23:10.40]  like when you do a rewrite like that
+[23:13.12]  you're trading
+[23:15.76]  known ISS issues for like new unknown
+[23:18.08]  issues. Like imagine you merge that and
+[23:20.56]  it closes like 50 open issues on GitHub
+[23:22.96]  in a literal sense. Okay, that's great.
+[23:25.28]  But you may have now caused like 50 new
+[23:27.68]  issues that didn't exist before that you
+[23:29.36]  don't know about. Um because your test
+[23:32.72]  suite is even a great test suite is only
+[23:37.36]  like an approximation of like your
+[23:39.12]  program's correctness. Um there's like
+[23:42.72]  Hyram's law which is like anything
+[23:46.32]  uh I'll get the phrasing wrong, but I
+[23:47.92]  mean the gist is basically any like
+[23:49.76]  implementation detail in your software
+[23:51.92]  of someone eventually becomes to rely on
+[23:53.92]  that. Um and so even things that aren't
+[23:55.92]  encoded as behavior become part of your
+[23:58.48]  API whether you like it or not. Um which
+[24:00.80]  is a scary thought, but basically that
+[24:02.88]  means that even if you pass your whole
+[24:04.16]  test suite, there's probably like lots
+[24:05.44]  of behavior that was like implicitly
+[24:07.36]  encoded in your program that's like
+[24:09.04]  changed. Um, and the unfortunate thing
+[24:12.16]  is you end up pushing that onto users.
+[24:15.12]  Like they are the ones that have to run
+[24:16.32]  into that and then report it and figure
+[24:17.52]  out what went wrong. And so that's like
+[24:18.80]  that's actually like my main area of
+[24:20.00]  concern with an automated rewrite. I
+[24:21.44]  actually trust the models enough that I
+[24:24.24]  would consider allowing them to do it,
+[24:27.20]  but the scarier thing for me is
+[24:29.04]  basically what's the impact for users?
+[24:30.96]  Like how do you and how do you roll that
+[24:32.64]  out safely? So um I don't know. It's
+[24:35.60]  kind of a we we're not going to like we
+[24:37.52]  don't have anything planned to like do
+[24:38.88]  that for any of our own projects, but it
+[24:40.48]  is like an interesting question. I mean
+[24:42.80]  I I think maybe like the third piece
+[24:44.40]  that I do think about especially right
+[24:46.64]  now where like everything's changing so
+[24:48.24]  quickly and
+[24:51.36]  there's you know the basically the
+[24:53.92]  spectrum of like how you write software
+[24:56.56]  um has like uh gotten like way wider.
+[25:00.24]  This is a terrible analogy, but there's
+[25:01.84]  like so many different ways to build
+[25:03.52]  software now. Like there's like the true
+[25:06.48]  like Andre Carpathy definition of vibe
+[25:08.56]  coding where you're like don't look at
+[25:09.92]  the code at all. Um all the way to like
+[25:12.72]  you know don't use LLMs and and blah
+[25:14.56]  blah. There's like a lot of different
+[25:15.68]  stuff in between. Um and I actually
+[25:18.16]  think that like right now I have pretty
+[25:21.20]  different approaches to different
+[25:22.72]  projects in terms of what I do. like we
+[25:26.08]  like I built, you know, a tool uh last
+[25:31.84]  week that was it's basically personal
+[25:34.48]  software. It's like a custom Rustliner
+[25:38.08]  to help us enforce certain things in our
+[25:41.12]  projects that I've like always wanted to
+[25:43.12]  enforce but didn't fit into existing
+[25:45.04]  tools. And I didn't read any of the
+[25:47.12]  code. Um like GPT55 did the whole thing.
+[25:49.84]  And um and it's like okay I can have a
+[25:53.04]  really different standard for that than
+[25:55.20]  UV because that project we are the only
+[25:58.16]  users. It's uh it's easy to tell if it's
+[26:02.40]  correct or not you know not to go too
+[26:04.72]  deep into the weeds on like what the
+[26:05.92]  project does but like we know if the
+[26:08.08]  output is like incorrect um and uh and
+[26:12.72]  there's no other users. UV is relied on
+[26:16.08]  by millions of you know millions of
+[26:18.56]  engineers and like all the like every
+[26:21.20]  single company and so it's like we want
+[26:23.20]  to be really careful about like what we
+[26:24.64]  ship there and how. Um but there's a lot
+[26:27.12]  of room right now I think for exploring
+[26:28.72]  like how we build software. Um you do
+[26:31.12]  have to be careful like what is your
+[26:33.36]  what what project are you working on and
+[26:35.20]  like what responsibility do you have to
+[26:36.96]  users and that's not meant to be a a
+[26:38.72]  subweet on like what Bun did. It's just
+[26:40.88]  like how I think about how do we want to
+[26:43.60]  push the envelope in like different
+[26:44.80]  places,
+[26:45.52]  >> right? I mean, to me that just reminds
+[26:48.32]  me of the prelim trade-off, the like
+[26:51.12]  navigating the I guess the risk of the
+[26:53.52]  code change and how much you verify it
+[26:55.76]  cuz
+[26:57.44]  if it's not risky, like it's a internal
+[27:00.00]  dev tool that only you and I are using.
+[27:02.40]  >> Yeah.
+[27:02.80]  >> Yeah. Yeah.
+[27:03.28]  >> Yeah. Maybe I just I ship it with I
+[27:06.32]  just, hey, stamp it. It's don't worry
+[27:08.24]  about it. It's not going to break
+[27:09.28]  anything. But if it's, you know, the the
+[27:12.00]  critical thing that's blocking customers
+[27:15.20]  from checking out or something, maybe we
+[27:17.20]  maybe we have two people reviewing it
+[27:18.72]  and there's like a lot of checks in that
+[27:20.80]  part of the codebase. So I it feels like
+[27:23.68]  the similar spectrum is just now like
+[27:27.28]  there's a new level of trying less which
+[27:29.60]  is not just like a human doesn't even
+[27:32.72]  interact with it. just, you know, ship
+[27:35.84]  it and maybe you just stamp it and no
+[27:37.92]  one ever even looked at it,
+[27:39.36]  >> right?
+[27:40.08]  >> Um whereas before at least to have
+[27:42.72]  written it a human would have had to do
+[27:46.00]  it.
+[27:46.24]  >> Yeah. Yeah. Yeah. Yeah. I mean I think
+[27:49.84]  >> well okay a lot of reactions to that.
+[27:52.24]  So, one I I guess like the other thing I
+[27:54.08]  would just say quickly about is like um
+[27:58.72]  sometimes I go over to their repo and
+[28:01.28]  it's like it's just so different than
+[28:03.84]  our repo and it's very interesting to
+[28:05.44]  look at because if you look like
+[28:06.64]  basically the number one contributor is
+[28:08.16]  like the the Robo bot and sometimes
+[28:10.40]  you'll click on PRs by humans and
+[28:12.16]  there's like human accounts talking back
+[28:14.48]  and forth but it's clear that all the
+[28:15.76]  comments were written by agents and
+[28:17.36]  you're like wow this is like very and so
+[28:18.88]  I look at that but my perspective on
+[28:20.40]  that is basically like Okay, I'm glad
+[28:22.56]  that people are like that they are like
+[28:24.64]  experimenting with like different ways
+[28:27.28]  to like build software. Like I don't
+[28:28.96]  know that I'm ready to do that but like
+[28:31.36]  but like I but I do think that like a
+[28:33.28]  lot of basically a lot of things are
+[28:34.40]  going to change and I think it's very
+[28:35.52]  interesting to be experimenting. So I'm
+[28:37.12]  glad that they are experimenting with
+[28:38.40]  things is my sorry is my like conclusion
+[28:40.16]  there.
+[28:40.80]  >> Do you block like if people are just
+[28:43.44]  submitting a full agent stuff on your
+[28:46.08]  repos is that
+[28:47.20]  >> we do. Yeah. So we have an AI policy
+[28:49.68]  now. um which isn't intended to be like
+[28:52.96]  anti-AI but it's really like intended to
+[28:56.32]  um because I mean we develop like very
+[28:58.24]  heavily with LLMs um like that is true
+[29:01.28]  um but it's it's more intended to be
+[29:04.32]  like how do we um
+[29:08.32]  how do we
+[29:11.52]  like retain like useful contributions
+[29:14.16]  while filtering out like net negative
+[29:17.36]  interactions from the repo Because like
+[29:21.04]  a contributor coming in and
+[29:24.72]  uh you know posting a comment that their
+[29:26.40]  agent wrote and then we like ask them a
+[29:28.16]  question and then they just paste like
+[29:30.40]  the agent response back like there's
+[29:32.24]  like very little value in that, right?
+[29:34.24]  Like we could just like ask the question
+[29:36.64]  to to the agent, right? And so the
+[29:38.72]  things like we want to retain the things
+[29:40.00]  that are useful from like human
+[29:41.92]  contributors which is like you know like
+[29:44.40]  insight like ways to reproduce like the
+[29:47.04]  information we would need to like plug
+[29:48.48]  it into our agent because there's no
+[29:49.92]  point in just like having a conversation
+[29:51.68]  with an LLM on a GitHub issue right like
+[29:53.92]  it doesn't really do anything for us. Um
+[29:57.04]  and uh so we we you know our policy is
+[30:00.48]  roughly um you should you should like
+[30:04.00]  you need to like understand like what
+[30:05.68]  you're pasting in u or or what you are
+[30:09.12]  submitting right which I sounds like a
+[30:10.64]  low bar um but it's not and uh
+[30:13.28]  >> how do you police that
+[30:15.44]  >> if we can't tell and it is agent written
+[30:18.00]  then I guess that's fine right
+[30:22.88]  um but you know at least right Now,
+[30:25.76]  there are just lots of tells and like um
+[30:29.12]  uh you know, being way more thorough
+[30:31.60]  than a human would ever be, including
+[30:33.04]  way too much detail, way more
+[30:34.96]  formatting,
+[30:36.56]  um using terminology that a human
+[30:38.40]  wouldn't use, like inventing random
+[30:40.24]  jargon, um tons of links, like I guess
+[30:43.60]  the broad sign would be like putting in
+[30:45.60]  way more effort in ways that aren't
+[30:47.04]  necessary in a way that a human wouldn't
+[30:49.04]  is like almost always agent authored.
+[30:52.00]  But it's been Yeah, it's been
+[30:54.48]  challenging. I mean, I think the hard
+[30:55.60]  thing Zigg has a much more strict LLM
+[30:58.24]  policy, which is like no LLM written
+[30:59.92]  code or no LLM assisted code at all in
+[31:01.76]  the project, which is very different
+[31:02.96]  than us. I mean, like all of my PRs now
+[31:05.68]  are are LLM written, right? LLM written.
+[31:08.24]  Um uh and they had a blog post about
+[31:11.92]  this idea of like they saw called it
+[31:14.32]  something along the lines of like
+[31:15.28]  contributor poker where it's like you're
+[31:17.76]  kind of trying to place like bets on
+[31:19.04]  contributors like like historically in
+[31:20.72]  open source when a contributor came
+[31:22.40]  around um they might be like new to the
+[31:25.20]  project but they could show like signs
+[31:26.40]  of promise or like they're really
+[31:28.00]  engaged or really interested and like
+[31:29.60]  you give them feedback they take the
+[31:31.76]  feedback and they fix up their PR and
+[31:34.40]  then the next time they put up PR
+[31:35.60]  they've learned from that feedback right
+[31:37.12]  it's the same way as like mentoring a
+[31:38.56]  new engineer who joins your team. It's
+[31:40.24]  like they learn from feedback, it
+[31:42.48]  compounds, they get better, and then
+[31:43.76]  they can actually mentor someone else in
+[31:45.20]  the future, right? And so you're making
+[31:47.68]  investments in people in a way. It's the
+[31:50.08]  same for open source. It's like you want
+[31:51.60]  to um I thought about this a lot
+[31:53.28]  historically. It's like you want to like
+[31:55.04]  invest in good contributors who are
+[31:56.88]  going to grow to help others and be
+[31:58.80]  maintainers in their own right. that's
+[32:00.80]  kind of gone um if for PRs especially
+[32:04.56]  that are written by agents because
+[32:06.16]  people don't really learn anything like
+[32:08.16]  someone can put up a PR that's written
+[32:09.44]  by an agent and you leave comments and
+[32:12.24]  then they take your comments and put
+[32:13.44]  them into the agent and then update the
+[32:15.12]  PR and then merge it and it's like that
+[32:17.28]  there's no compounding feedback. Um and
+[32:20.00]  so I actually do like understand that
+[32:22.00]  perspective a lot um of uh like the the
+[32:25.52]  contract between like maintainers and
+[32:27.92]  contributors is like pretty different
+[32:29.20]  now. Um and you know relatedly again not
+[32:33.12]  a novel insight but the cost of putting
+[32:35.12]  up a plausible PR has gone to zero. Um
+[32:38.24]  while the cost to like review and vet
+[32:41.28]  applausible PR has remained the same and
+[32:44.48]  um is very high like especially for the
+[32:47.04]  projects that we work on where
+[32:50.00]  um
+[32:52.32]  you know I'm not trying to like
+[32:53.52]  overstate it. They're just like hard
+[32:54.80]  projects. Like TY is our type checker.
+[32:57.36]  Probably hard hardest project I've
+[32:58.80]  worked on technically to like get a
+[33:00.16]  change merged because of the like
+[33:03.36]  complexity in the architecture but also
+[33:05.68]  like the problem space like it's just
+[33:07.20]  very very hard. Um and so if someone
+[33:09.44]  puts up a plausible PR to to TY it might
+[33:11.84]  take them two minutes and then it could
+[33:14.08]  take us you know an hour to understand
+[33:15.92]  it. And so it's created like very poor
+[33:19.20]  dynamics
+[33:20.88]  in open source. And um I I don't know
+[33:24.00]  how we've solved that. Um I think it
+[33:26.48]  will like continue to get worse um until
+[33:29.44]  hopefully it gets better in some way
+[33:31.28]  like we find ways to solve this. Um but
+[33:33.92]  it's certainly something we've
+[33:34.88]  experienced in our projects,
+[33:36.32]  >> right? It sounds like review is becoming
+[33:39.12]  more and more of a bottleneck. Is for
+[33:41.60]  that bun rewrite. Do you know if it was
+[33:43.84]  human like humans read that code or that
+[33:46.32]  was just kind of
+[33:46.96]  >> No, I don't think it was human reviewed.
+[33:48.40]  Yeah. So, it's just YOLO rewrite the
+[33:50.80]  whole thing. And
+[33:51.68]  >> yeah, I mean, in a way, I think it's
+[33:53.28]  like I think they did have and I'm
+[33:55.52]  excited for like at least at time of at
+[33:58.08]  time of recording, quote unquote, you
+[33:59.60]  know, Jared hasn't published the blog
+[34:01.12]  post yet, which is like I mean, he keeps
+[34:03.28]  making jokes about how like the blog
+[34:04.88]  post taking way longer than the rewrite.
+[34:06.56]  Um, but I'm actually really interested
+[34:08.16]  in the blog post because I think they
+[34:09.60]  did have a pretty
+[34:11.60]  like sophisticated approach to like how
+[34:13.84]  the rewrite worked. Um, which will be
+[34:16.24]  interesting to read about. like it
+[34:17.36]  wasn't just like they had one prompt
+[34:18.48]  that was like rewrite this in in Rust.
+[34:20.32]  It was like they tried to have um at
+[34:22.80]  least my impression from looking at the
+[34:24.48]  PR is like there were um there were
+[34:27.36]  actually like different phases of the
+[34:29.84]  rewrite and like each file had to go
+[34:31.52]  through like a couple different phases
+[34:33.36]  that had like ways to validate whether
+[34:34.88]  it was correct or not. So um uh the
+[34:38.64]  answer is no though. I like I don't
+[34:40.16]  think a human was reading like
+[34:41.76]  significant amounts of that code. Like
+[34:43.12]  it's just not possible basically.
+[34:45.68]  What if we we both agreed today that
+[34:48.24]  Zigg was objectively better than Rust
+[34:50.80]  and then someone on your team said, you
+[34:53.84]  know, I can do this rewrite into Zigg.
+[34:56.96]  Would Would you block it if
+[34:59.04]  >> I think I would block it? I I think
+[35:02.64]  um I I don't know whether I'd be right
+[35:04.64]  to do so, but I think like we as a team
+[35:06.96]  like aren't there yet. Um and uh and
+[35:11.84]  maybe we will like get there and that's
+[35:13.44]  how we will feel eventually. But like
+[35:15.04]  right now I I think we just feel like
+[35:17.52]  right now um there's still a lot of
+[35:21.36]  value in like deeply understanding like
+[35:23.36]  our code and our tool chain and like the
+[35:25.52]  ecosystem. And so I would say we don't
+[35:28.72]  want to do that. Um but
+[35:31.68]  might depend on the project. I don't
+[35:33.20]  know.
+[35:34.72]  all the things that you've built,
+[35:35.92]  they're like an order of magnitude
+[35:37.76]  faster than what was available at the
+[35:39.92]  time.
+[35:41.12]  >> How much of a difference did Rust make
+[35:44.08]  on that graph?
+[35:45.92]  >> I think it so it depends a bit on the
+[35:48.00]  project. Um I think I think in rough
+[35:52.32]  a lot of it was just Rust. Um and then
+[35:56.80]  over time I think we've
+[35:59.68]  um
+[36:01.28]  improved on that a lot because
+[36:04.48]  uh because you can even look at the
+[36:06.80]  history of the project like the project
+[36:09.36]  I mean hopefully no one like hopefully
+[36:11.36]  this is still true but like basically
+[36:12.80]  over time the project gets faster um and
+[36:16.24]  sometimes that regresses but like uh you
+[36:18.64]  know you basically maybe I put it
+[36:20.16]  differently you could write rough you
+[36:24.08]  know in like a couple different ways all
+[36:27.04]  in rust and they could have really
+[36:28.80]  different performance characteristics.
+[36:30.16]  So that's just to say that like I I
+[36:32.24]  generally think of rust as like the the
+[36:35.44]  floor or the uh the sort of like the
+[36:39.36]  baseline performance that you get is
+[36:40.88]  going to be significantly better. But
+[36:42.64]  you still have to you still get a lot
+[36:44.80]  more out of like thinking deeply about
+[36:46.64]  performance and design. Like if you take
+[36:48.64]  the same program in Rust and in Python
+[36:50.72]  like exact same implementation to to the
+[36:52.88]  closest approximation you can get like
+[36:54.72]  the Rust one will be faster but you can
+[36:56.88]  then take that program and you can
+[36:58.08]  probably optimize it another like 10x um
+[37:00.40]  I don't know about 10x but my point is
+[37:02.48]  even within being written in Rust
+[37:04.16]  there's like a ton of room for how to
+[37:06.64]  make things more performant how to write
+[37:08.08]  really performant software and like
+[37:09.60]  again when I started working on Rough um
+[37:12.72]  part of my my goal was to learn Rust and
+[37:14.80]  so I wrote I did write a lot of like bad
+[37:16.80]  code Um, which is fine. Like I shipped
+[37:20.24]  something out that was really helpful to
+[37:21.44]  people. Um, but it's gotten a lot better
+[37:23.20]  I think over time and like we've made it
+[37:24.88]  more and more performant. Um I think in
+[37:27.52]  UV
+[37:29.28]  there was more um sort of like
+[37:32.88]  architectural innovation beyond just
+[37:35.20]  being in Rust especially because UV like
+[37:37.68]  so as a package manager um you're doing
+[37:39.68]  a ton of IO like downloading f and you
+[37:42.80]  know downloading files over the network
+[37:44.56]  unzipping things like writing them to
+[37:46.48]  disk moving them around the llinter
+[37:49.04]  doesn't have to do as much of that I
+[37:50.56]  mean it has to read all your files but
+[37:52.88]  there's there's not like a sign a huge
+[37:54.72]  amount of IO
+[37:55.92]  the package manager is like mostly IO.
+[37:58.16]  It's like and then you're trying to do
+[38:00.08]  things like very efficiently. So um
+[38:01.84]  there it was more I mean rust was
+[38:04.56]  important but I I do think that in UV
+[38:07.68]  there's more um you know architectural
+[38:10.80]  things that we did or like ways that we
+[38:12.72]  thought a lot about performance like the
+[38:14.00]  c the design of the cache is like very
+[38:16.72]  very intentional um and makes it so that
+[38:21.12]  um
+[38:22.96]  like repeated installs of the same
+[38:25.84]  package on your machine are like are
+[38:28.32]  like near instant because of the way
+[38:30.16]  that we like lay out the cache and the
+[38:31.92]  way that we install from the cache into
+[38:33.68]  your projects. Um, it basically means
+[38:35.36]  that if you've installed a package
+[38:36.64]  before, installing it again is extremely
+[38:39.52]  cheap. Um, and both in terms of disc
+[38:42.16]  space and time. Um, and so that was like
+[38:44.64]  that's like a very different design than
+[38:46.64]  um, any of the other like Python package
+[38:48.48]  managers had. Uh, so again, it kind of
+[38:50.80]  depends on the project. Um, I do tend to
+[38:53.60]  think that like whether you're writing
+[38:55.36]  code in Rust or in Python, there's like
+[38:57.12]  always room to like be thinking about
+[38:58.72]  performance. like you can always make
+[39:01.52]  things faster or slower. Like even if
+[39:03.04]  you're writing in Python, like you can
+[39:04.48]  still make things like much much faster
+[39:06.72]  um by like thinking harder about
+[39:09.12]  performance and design. Um so it's some
+[39:11.84]  mix but it depends on the project.
+[39:14.80]  >> Open AAI, Enthropic, Cursor, and
+[39:17.76]  Verscell all use this product to make
+[39:19.92]  their lives better. And the problem it
+[39:22.08]  solves is when you're building SAS or an
+[39:24.32]  AI product and you want to sell to other
+[39:26.64]  companies, there's all these
+[39:28.16]  requirements you need to meet. There's
+[39:30.08]  SSO, there's skim, there's arbback,
+[39:33.36]  there's audit logs. These are all things
+[39:35.20]  that take time to integrate, but aren't
+[39:37.36]  the main focus of your app. Work OS is
+[39:39.52]  an API layer that lets you meet all of
+[39:41.44]  these requirements in just a few lines
+[39:43.60]  of code. So, let's say you have a new
+[39:45.60]  SAS product and you want to sell to
+[39:47.36]  other companies. work OS will solve all
+[39:49.76]  of these critical feature gaps for you.
+[39:52.48]  You can check them out at workos.com to
+[39:55.12]  learn more and get started and I
+[39:57.28]  appreciate them for supporting my work
+[39:58.96]  and sponsoring this podcast over the
+[40:01.36]  course of the project. Do you have a you
+[40:04.56]  know top few things that were
+[40:06.72]  implementing the project that were
+[40:08.80]  technically challenging or most
+[40:10.32]  interesting to you? I really like this
+[40:12.80]  optimization that Andrew on our team um
+[40:16.64]  who goes by burnt sushi. He's uh he's
+[40:19.60]  the author of Rip Grap and bunch of
+[40:22.16]  other things. He's like really amazing
+[40:23.76]  engineer. He did this really cool
+[40:26.16]  optimization around how we represent
+[40:27.68]  versions. It's pretty cool. I mean
+[40:29.36]  basically like if you think about
+[40:30.64]  resolving and installing like a very
+[40:32.32]  complex Python project um we we it turns
+[40:36.00]  out that we have to like parse and
+[40:39.04]  create lots of versions like as in 1.0.1
+[40:43.12]  1.0.2 to like we just like version
+[40:45.76]  objects within the program like we end
+[40:47.60]  up parsing and creating a lot of those
+[40:49.84]  and it turns out that actually like
+[40:51.68]  allocating that memory um was expensive
+[40:54.88]  um given like the scale like the number
+[40:57.20]  of times we were doing it and he came up
+[40:59.44]  with a representation where we can
+[41:01.36]  represent um like 90 something% of
+[41:04.00]  versions with a single U64 integer. So
+[41:06.96]  it's just like way more efficient. Um
+[41:08.72]  and uh the benchmarks around that and
+[41:10.72]  the implementation were were very cool.
+[41:12.40]  It's like one of the coolest PRs I've
+[41:13.68]  read, I think. Um, in TY, which our type
+[41:17.44]  checker, there's a lot of like very
+[41:19.84]  interesting performance work that's
+[41:22.24]  happening, especially to make it um
+[41:25.36]  incremental. So like uh uh TY is
+[41:29.52]  designed to be um a type checker and a
+[41:31.68]  language server. And
+[41:34.64]  the whole system is like highly
+[41:36.00]  incremental. So the idea there is like
+[41:38.16]  if you're in an a text editor and you
+[41:40.56]  open up like one file, you don't
+[41:43.04]  necessarily want to like have to type
+[41:45.04]  check your entire project like all your
+[41:47.04]  dependencies, every file in the project
+[41:48.48]  just to get analysis for that file. Um
+[41:51.92]  like because you don't need to. Um so so
+[41:55.68]  how do you make that work? That's like
+[41:56.88]  that's sort of like uh I would that
+[41:58.72]  would be like lazy. You want to be lazy.
+[42:01.36]  Um, but the other piece to that is like
+[42:02.96]  if you have a file open and you edit it,
+[42:06.24]  um, or you have like two files open, you
+[42:08.08]  edit one of them. Um, you only want to
+[42:11.44]  recmp compute like exactly what you need
+[42:12.96]  to recomputee. Like you don't want to
+[42:14.32]  have to go and retype check like the
+[42:15.92]  entire codebase again. Um, especially
+[42:18.08]  because maybe you're working in a big
+[42:19.28]  project like PyTorch and it's like you
+[42:21.28]  have two files open, you edit one of
+[42:22.64]  them, you don't want it to like and then
+[42:24.16]  you save, you don't want it to take like
+[42:25.36]  two seconds to like retype check the
+[42:26.96]  project and like give you a new
+[42:28.00]  analysis. So the whole system is built
+[42:31.04]  around queries um which is pretty
+[42:33.28]  interesting. This is more of like a
+[42:34.32]  macro design thing. Um but uh we built
+[42:37.20]  it on top of a framework called Salsa
+[42:39.04]  which is um also what Rust Analyzer uses
+[42:41.60]  which is like the popular Rust language
+[42:43.28]  server. Um and now we've
+[42:47.28]  intentionally or inadvertently become
+[42:48.96]  like like very large contributors to
+[42:51.60]  Salsa. Um but but the whole the whole
+[42:54.16]  system is built around that which has
+[42:55.44]  been like very interesting
+[42:56.32]  architecturally.
+[42:57.60]  >> Interesting. So it's it's lazy so it
+[43:00.00]  doesn't type check the whole codebase
+[43:01.76]  and it's incremental. So
+[43:03.04]  >> yeah the incremental part is the thing
+[43:04.32]  that's hard because you kind of need a
+[43:05.76]  way to basically like uh it needs to be
+[43:08.64]  able to model kind of like a dependency
+[43:10.08]  graph of like everything that's
+[43:11.36]  happening in the code. Um and so then
+[43:13.36]  when you change something we want to
+[43:14.72]  just like flow the data back through all
+[43:16.64]  the different pieces like only the
+[43:18.00]  pieces. Yeah. Um so that took a lot of
+[43:21.68]  work. um but uh is it has come together
+[43:25.28]  um and I've been doing a lot of
+[43:27.92]  optimization lately with codecs um
+[43:32.32]  because
+[43:34.96]  it tends to be very good um at
+[43:37.68]  especially at like micro optimizations
+[43:39.68]  like if I'm like and in TY in particular
+[43:43.44]  we also need to think a lot about memory
+[43:45.92]  um not just speed because if you work on
+[43:49.20]  a very large project like you don't want
+[43:50.72]  it to take like many many many gigabytes
+[43:53.52]  of you know just to like run your
+[43:55.60]  language server like ideally you want it
+[43:57.04]  to be like relatively efficient. Um, so
+[43:59.28]  like I spend a lot of time now kind of
+[44:01.52]  like continuously optimizing like memory
+[44:03.68]  usage and performance and I can just set
+[44:05.36]  a goal that's like try to reduce memory
+[44:07.76]  like salsa memory by like 1% on this
+[44:11.04]  project and like you can't do like these
+[44:13.84]  these things that you might like like
+[44:16.08]  try to do. Um,
+[44:18.24]  and it's very good at just like coming
+[44:19.76]  up with um like very reasonable things.
+[44:22.88]  And so I I don't know. I find that very
+[44:24.96]  cool because it's kind of like you can
+[44:26.24]  almost have like continuously op I won't
+[44:28.16]  say self optimizing that's like a built
+[44:29.76]  grandiose but you can kind of be like
+[44:31.68]  continuously like just like optimizing
+[44:33.60]  your software. Um so uh I've been
+[44:36.48]  enjoying that a lot. Um but uh but most
+[44:40.56]  of those are like um yeah trying to find
+[44:43.28]  ways to like represent things uh that
+[44:45.28]  take up less memory um or uh trying to
+[44:49.12]  come up with like sometimes it's like
+[44:50.56]  trying to come up with broader redesigns
+[44:51.92]  to like fix pathological performance.
+[44:55.12]  >> That one optimization where with the
+[44:57.20]  version numbering and seeing that
+[45:00.32]  you can limit it just to like use 64. If
+[45:04.08]  you think back to some of these more
+[45:05.76]  creative optimizations that were done
+[45:08.16]  that was in the human era, do you think
+[45:10.88]  if you just I don't know ran codeex and
+[45:13.36]  you're like hey just don't break things
+[45:14.96]  but lower do you have faith that it
+[45:17.20]  would come up with that or is that kind
+[45:18.64]  of a a step above what
+[45:20.56]  >> that's a very interesting question. If
+[45:22.24]  you just at least in my experience like
+[45:24.00]  if you just ask these things to reduce
+[45:25.36]  memory or improve performance by some
+[45:28.48]  you know moderate percentage it will
+[45:30.80]  typically come up with things around the
+[45:32.48]  edges um as opposed to like larger
+[45:35.84]  uh redesigns or reconsiderations but you
+[45:38.48]  can get to those larger redesigns if you
+[45:42.72]  prompt and collaborate with the agent.
+[45:44.56]  And so if you sort of ask like well like
+[45:48.32]  should we be thinking a bit bigger about
+[45:49.84]  like why we have to represent the data
+[45:51.76]  this way like you can you can get to
+[45:53.84]  like bigger ideas. And so that might be
+[45:56.48]  an idea that you could have gotten to
+[45:58.08]  with prompting if you were like um you
+[46:01.52]  know okay let's start by like profiling
+[46:02.80]  and figuring out where we're spending a
+[46:03.84]  lot of time and then maybe the you know
+[46:06.00]  would eventually come back to you and
+[46:07.60]  say like we're spending a lot of time in
+[46:08.88]  like version parsing and like version
+[46:10.96]  like ball like version drop and version
+[46:12.88]  allocation like blah blah and we' be
+[46:14.72]  like okay well like how could we
+[46:15.84]  represent these like more compactly and
+[46:17.44]  it would probably start by finding like
+[46:19.20]  micro optimizations in the
+[46:20.64]  representation of like well this field
+[46:22.96]  like you combine these two fields like
+[46:25.04]  if you buy it's like blah blah blah but
+[46:26.88]  I think if you kept pushing it like it's
+[46:28.56]  plausible it would get there um but
+[46:30.88]  that's not the thing it's going to come
+[46:31.92]  up with by default. Mitchell Hashimoto
+[46:34.88]  um who was like one of the Hashiore
+[46:37.68]  founders works on Ghosty um he had a
+[46:40.96]  post that was insightful I thought last
+[46:43.76]  week or this weekend about a renderer he
+[46:46.48]  wrote where it was like a really
+[46:47.44]  terrible renderer. I'll probably butcher
+[46:49.28]  the the tweet, but it was like it was a
+[46:51.04]  really terrible renderer and then he
+[46:52.40]  hadn't like intentionally and then he
+[46:53.68]  had an LM like optimize it and it made
+[46:55.28]  it like 10 times faster and he's like
+[46:57.04]  great, right? Actually, no. like my
+[46:58.80]  handwritten version was like a hundred
+[47:00.24]  times faster and it's like you know like
+[47:02.64]  you lose if you're not like using your
+[47:04.32]  brain to like think about from first
+[47:06.96]  principles like how fast should it be
+[47:08.48]  and like how should the system work like
+[47:10.16]  then you just like ship all this these
+[47:12.32]  like accumulated like I mean I I won't
+[47:15.36]  necessarily call it slop but it's like
+[47:16.88]  you just ship these like things and
+[47:18.16]  you're like yeah oh my god I made it 10
+[47:19.36]  times faster but really it should be
+[47:20.64]  like 100 times faster and so I think I
+[47:24.48]  don't know it shouldn't be controversial
+[47:25.68]  there's still a lot of room for like
+[47:26.64]  using your brain Right. And like uh uh
+[47:30.40]  but I do I do think it's like I struggle
+[47:33.12]  with this stuff a lot. I mean like I'm
+[47:34.48]  changing how I write software a lot and
+[47:36.80]  um you know I've had people on my team
+[47:38.64]  like because I'm using agents a lot and
+[47:40.80]  and also was you know to some degree
+[47:43.04]  trying to like
+[47:45.76]  push our team to like use agents more. I
+[47:49.44]  mean I mean some of that for me came
+[47:50.72]  from a place of like we build tools for
+[47:53.52]  software engineers and a lot of our
+[47:56.64]  users are now using agents and so if we
+[47:59.84]  like if I if everything good that we do
+[48:02.88]  that's an exaggeration but if everything
+[48:04.16]  good that we do comes from like
+[48:05.28]  understanding our users very well and
+[48:06.80]  like how they work then like we should
+[48:08.56]  probably be like using agents that we
+[48:10.00]  understand like what it's like to build
+[48:11.20]  software for with them so that we can
+[48:12.96]  build better tools for our users. That
+[48:14.56]  was part of my motivation. Um, and part
+[48:16.64]  of it was just kind of seeing how it can
+[48:19.68]  change like how you work. And I don't
+[48:21.60]  know, I think I'm shipping a lot more.
+[48:23.68]  Um, but but it has been like um it has
+[48:27.52]  been like a a difficult process. Like
+[48:29.04]  I've had people on the team tell me um
+[48:32.72]  uh which I think is great that they tell
+[48:34.48]  me this. Um but they're like, "Oh, it
+[48:36.80]  used to be the case that like whenever
+[48:38.32]  you put up a PR, I could like review it
+[48:40.00]  pretty minimally because I had a lot of
+[48:41.36]  confidence in it and like your work. And
+[48:43.44]  now it's like when you put up a PR I
+[48:45.20]  actually have to review it really
+[48:46.32]  closely because you're not like writing
+[48:48.40]  it anymore. It's like the agent and I
+[48:50.00]  was like wow that's like that's like
+[48:51.84]  very interesting to they're completely
+[48:53.44]  right which is and like and the same
+[48:56.08]  thing happens to me. It's like if I go
+[48:58.64]  to sleep and then wake up in the morning
+[48:59.76]  and look at one of the PRs I put up and
+[49:01.12]  I'm like wait this is terrible. You know
+[49:02.32]  what I mean? It's like you can it's it
+[49:04.40]  it's just uh it is easy to trick
+[49:07.36]  yourself into like
+[49:10.40]  basically believing work that isn't at
+[49:13.52]  the same standard as what you would do
+[49:14.88]  before. And I don't think I think we
+[49:16.56]  have we don't really know what to do
+[49:17.84]  with that. Um, and I'm kind of learning
+[49:20.00]  and getting better and like I mean this
+[49:21.44]  was I think I'm doing a lot better job
+[49:23.28]  now than I was in like probably you know
+[49:25.52]  like February or something where I was
+[49:27.60]  like I was just like you know fully
+[49:30.56]  agent killed and I'm like now I'm like a
+[49:33.04]  little bit more like um but so my point
+[49:36.40]  is like that was like a par powerful
+[49:38.08]  kind of like moment for me when someone
+[49:39.52]  on the team said that and I was like wow
+[49:41.12]  like you're right and I and I see that
+[49:42.96]  in other people on the team's work too
+[49:44.16]  like it's not just limited to me but
+[49:45.44]  it's like um you know it really guys
+[49:48.32]  throw a lot of things on their head.
+[49:50.48]  >> If you generate pure slop, that's that's
+[49:53.52]  easy. But I think there's this gray area
+[49:55.44]  where you you generate partially AI slop
+[49:59.36]  or it's, you know, it's it's acceptable,
+[50:01.52]  but it's not at the bar that you used to
+[50:03.44]  have. Do you What are the tactics that
+[50:06.08]  you've used on the team that have worked
+[50:08.24]  for combating this kind of gray area AI
+[50:11.28]  slop?
+[50:12.88]  I'd like to get to a world.
+[50:15.76]  We're not here and I don't know if we'll
+[50:17.68]  ever get there. I'd like to get to a
+[50:19.68]  world where if you put up a PR and it's
+[50:24.00]  all green, then the odds of it getting
+[50:27.76]  merged are like extremely high, right?
+[50:31.36]  Um because that would mean that like you
+[50:33.44]  have automated verification for like
+[50:35.44]  most of what matters. Um and we have a
+[50:38.24]  lot of that in our projects and we've
+[50:39.28]  tried to add more over time and I think
+[50:40.64]  it's helpful. Like we have like in TY
+[50:42.40]  especially we have um
+[50:44.96]  uh tons of like benchmarks like that run
+[50:47.44]  under val grind like um through through
+[50:49.68]  co cod speed like on every PR. So we get
+[50:51.84]  like and that includes memory. So we
+[50:53.36]  benchmark like memory usage and um uh
+[50:57.20]  simulation time and wall time like on
+[50:58.96]  every PR. And then we also have a really
+[51:02.24]  big suite of ecosystem
+[51:05.36]  um tests. So basically every time you
+[51:07.68]  put up a PR we run before and after on
+[51:10.64]  like a bunch of projects in the
+[51:12.00]  ecosystem and then we create this report
+[51:14.72]  of the diff of all the diagnostics like
+[51:17.20]  the errors that got removed and added
+[51:18.96]  and everything. So we have like over
+[51:20.72]  time we've tried to do like more and
+[51:22.00]  more uh these are important honestly
+[51:24.16]  even before we had agents like these
+[51:25.52]  were like we basically couldn't build
+[51:26.64]  without these things but the point is
+[51:28.40]  like I want to have like more automated
+[51:30.48]  verification um and try to get better at
+[51:32.80]  that um and that includes things too
+[51:36.16]  like um we basically assume now that
+[51:42.56]  anyone on the team that puts up a PR has
+[51:46.00]  already run that through codeex review
+[51:48.00]  like probably several times. Um, and
+[51:50.16]  that's basically an assumption. Um, I
+[51:52.00]  mean, we could automate that process,
+[51:53.20]  but
+[51:53.52]  >> codeex review is just an agent reviewing
+[51:55.36]  the code and double checking.
+[51:56.48]  >> Yeah, it's just running codeex and then
+[51:57.60]  just doing slash review.
+[51:58.56]  >> I see.
+[51:59.04]  >> That's it. Yeah, it's not that fancy. I
+[52:00.32]  mean, it's not sorry, it's not that
+[52:01.36]  sophisticated, but it's just like
+[52:03.04]  because now it's like if if a
+[52:04.32]  contributor puts up a PR, that's the
+[52:05.44]  first thing that we do,
+[52:06.40]  >> right?
+[52:07.84]  >> Um because it tends to find good things.
+[52:10.16]  Um, you know, I think I think the things
+[52:12.40]  that I've uh so so like basically I
+[52:15.28]  think one bucket is like how do you um
+[52:21.52]  create more like automated systems that
+[52:24.16]  just help get things make sure things
+[52:26.72]  are right. Um, and that also includes
+[52:29.52]  things like trying to improve your like
+[52:31.44]  agents.mmd file over time. Like if there
+[52:33.52]  are things if there's feedback you're
+[52:34.72]  giving in a review that the agent's not
+[52:36.56]  respecting, try to find a way to help
+[52:37.92]  the agent learn that. even learn um uh
+[52:41.36]  skills like we have some shared skills
+[52:42.80]  on the team stuff like that like none of
+[52:44.48]  this stuff is very sophisticated by the
+[52:45.68]  way it's like pretty simple um the other
+[52:48.80]  piece is like how do I make sure that I
+[52:52.16]  put in the work to ensure that I'm
+[52:54.24]  creating a good PR um and so for me
+[52:58.08]  that's like
+[53:00.96]  I really should understand it's again it
+[53:03.20]  sounds like a really not it really
+[53:05.44]  sounds like a low bar but I should
+[53:07.52]  understand like each line in the PR.
+[53:10.96]  I know it's crazy. Um uh but also I do I
+[53:16.72]  do try to um review each PR myself in
+[53:21.92]  the GitHub UI. This is something I've
+[53:23.60]  always found really helpful. Like if you
+[53:25.84]  actually just like open up your PR and
+[53:28.48]  click files and read through it as if
+[53:30.48]  you were a reviewer, you tend to find
+[53:32.00]  things that you would miss if you were
+[53:33.28]  just looking at your local diff. I find
+[53:34.88]  that very useful. And then the other is
+[53:37.92]  trying to like encode skill. I guess
+[53:41.20]  this is a little bit more in the first
+[53:42.48]  category, but trying to encode skills um
+[53:45.68]  or trying to encode in skills uh things
+[53:48.48]  I'm contin consistently getting wrong
+[53:50.80]  that the agent is getting wrong. Like I
+[53:52.32]  had like a recent example would be I I
+[53:56.48]  found that I was often getting feedback
+[53:58.16]  on PRs that was of the form
+[54:02.56]  what you know this condition here this
+[54:04.32]  like if statement what case is this
+[54:06.96]  intended to catch because if I comment
+[54:08.96]  it out all the tests pass and so I was
+[54:12.00]  like okay I should probably have a pass
+[54:14.40]  before I put up any PR where I have the
+[54:17.52]  agent like go through and check like are
+[54:19.76]  these conditions still relevant or are
+[54:21.28]  they left over from a product refactor
+[54:22.72]  or something else. So, um I I don't
+[54:25.28]  know. I'm not I'm still learning, but
+[54:27.36]  those are some of the things I've been
+[54:28.64]  doing. Yeah, it's again I think it's
+[54:30.32]  like a it's a pretty hard time to be
+[54:31.60]  like building software, but I felt for a
+[54:34.00]  long time or I had a fear that AI was
+[54:36.80]  going to make us more productive, but
+[54:40.00]  that programming would be like a lot
+[54:41.44]  less fun. Um because I just like love I
+[54:45.60]  just like love programming. Um uh and I
+[54:49.36]  was like, "Oh, now I'm going to have to
+[54:50.48]  spend all my time like reviewing code
+[54:53.36]  and like prompting this like idiot agent
+[54:56.80]  to like that's like keeps getting things
+[54:58.56]  wrong and like but ultimately like is
+[55:00.72]  probably more productive." Um I actually
+[55:03.60]  feel way better about that right now
+[55:05.52]  than I did like a few months ago. And I
+[55:08.64]  don't I don't exactly know why. Like I
+[55:10.88]  think
+[55:12.48]  I think it's because
+[55:15.44]  well I think the agents getting better
+[55:17.04]  and the tooling getting better and me
+[55:18.64]  getting more comfortable with it is one
+[55:20.40]  factor. I think the other is um I've
+[55:24.08]  grown to appreciate more of
+[55:27.68]  the the the kinds of things that like
+[55:29.76]  working with agents has unlocked like
+[55:31.28]  the cost of running an experiment is
+[55:32.96]  incredibly low. There's so many things
+[55:34.72]  I've wanted to try or like questions
+[55:36.96]  I've wanted to answer that I could now
+[55:39.44]  answer like almost instantly. Like I
+[55:42.40]  like a sort of a dumb example, we UV in
+[55:45.52]  UV um everything is snapshot tested. So
+[55:48.80]  like basically all of our testing is
+[55:51.60]  effectively
+[55:53.20]  running UV and verifying the output.
+[55:56.16]  That's how we test like basically the
+[55:57.52]  entire program. Um and so that mean we
+[56:00.64]  have a lot of tests that means we have a
+[56:02.32]  lot of test output and the test output
+[56:06.00]  is um it actually ends up in the test
+[56:09.12]  files. So we have rust files like we
+[56:11.68]  have a file called like lock rs that
+[56:14.40]  tests all our UV lock. It's all our UV
+[56:16.40]  lock tests and it's very very long in
+[56:18.40]  part because it has all the lock output
+[56:20.40]  snapshotted in the test. And I was like
+[56:22.56]  hm like what if we stored the snapshots
+[56:25.20]  in separate files?
+[56:27.44]  like would that somehow make our like
+[56:30.40]  compiles faster because then you don't
+[56:33.04]  have technically that's like rust code
+[56:35.12]  and so it's like would that all
+[56:36.48]  disappear and like would that make like
+[56:38.16]  our builds faster or blah blah blah and
+[56:41.44]  I'd always want to do that but it
+[56:42.56]  sounded like like to do that to do that
+[56:44.40]  experiment as a human would be like
+[56:45.60]  extremely painful because you have to
+[56:47.04]  convert all of those tests and I just
+[56:49.12]  had an agent do it in the background
+[56:50.00]  while I did a bunch of other things and
+[56:51.04]  I got a bunch of data on it and the
+[56:52.72]  answer is no but but it's like I you
+[56:55.52]  know what I mean like I I I mean, sorry,
+[56:57.68]  the answer is a little bit more nuanced.
+[56:59.04]  It actually does have a good impact if
+[57:00.80]  um if you're just iterating on the
+[57:02.64]  snapshot outputs, you no longer have to
+[57:04.40]  recompile your program at all because
+[57:06.16]  this outputs are stored somewhere else.
+[57:07.84]  Anyway, that's the thing that makes a
+[57:09.20]  difference on. But my point is I'm just
+[57:11.04]  like running experiments like that like
+[57:12.56]  all day like like trying things that
+[57:14.48]  were used to be hard like used to cost a
+[57:17.20]  lot to um to answer. Uh the work of then
+[57:21.12]  going from that to like production,
+[57:22.88]  there's still like real work there. Um,
+[57:25.28]  but so you know, I think one piece is
+[57:28.32]  the tools and the agents getting better.
+[57:29.92]  The other is things that I just wouldn't
+[57:32.64]  have been able to do before that I can
+[57:34.00]  now do like incredibly easily. And then
+[57:36.80]  um and then the third is I think I'm
+[57:39.44]  more and more realizing that like a lot
+[57:40.80]  of the value I get from building
+[57:42.24]  software is not uh is retained because
+[57:47.52]  some of it is like thinking hard about
+[57:49.20]  like the not it doesn't have to be
+[57:50.80]  typing out the code but it's like
+[57:52.08]  thinking hard about like the layout of a
+[57:53.52]  data structure. A lot of it is merging a
+[57:56.00]  PR that closes a user issue. I get a lot
+[57:58.08]  of satisfaction from actually like like
+[58:00.64]  fixing and improving something. It's not
+[58:02.24]  necessarily just from typing out the
+[58:03.60]  code. So, I I do feel for people a lot
+[58:06.48]  who
+[58:08.24]  feel like they're losing something by
+[58:09.92]  like working with agents because I do
+[58:11.76]  feel that myself. Um, but I feel better
+[58:14.80]  now than I did a few months ago about
+[58:18.56]  my like like what it's like to work as a
+[58:21.68]  software engineer with agents.
+[58:23.92]  You mentioned in the like one of the
+[58:25.76]  performance optimization examples you
+[58:27.92]  said if you just unleash codecs it kind
+[58:30.16]  of does this local optimizations and
+[58:31.92]  it's very
+[58:32.96]  >> good at that but it's not
+[58:34.88]  >> great at kind of like some of the I mean
+[58:37.44]  today it's more human ingenuity of like
+[58:39.68]  system level um
+[58:41.76]  >> optimizations and it kind of reminded me
+[58:44.48]  of this tweet that you had you said it
+[58:47.04]  says I I'm slightly concerned by how
+[58:49.84]  much garbage I would be turnurning out
+[58:51.60]  if I was trying to use these tools
+[58:53.68]  without significant software engineering
+[58:55.68]  experience.
+[58:57.44]  >> I remain concerned about that.
+[58:58.96]  >> Yeah, it it it reminds me and similar to
+[59:02.56]  what uh the Mitchell Hashimoto tweet
+[59:05.04]  that you said. It was like there's a
+[59:06.56]  very big difference between Codex go and
+[59:09.52]  do this versus um you know, you are like
+[59:13.20]  wielding it like this tool and you're
+[59:14.88]  kind of like proddding in the right
+[59:16.08]  direction.
+[59:16.80]  >> Yeah. Um, but yeah, I was curious your
+[59:19.12]  thoughts on that because it seemed like
+[59:20.56]  it went pretty viral and I think a lot
+[59:22.32]  of people are thinking about that.
+[59:24.32]  >> Like being a great software engineer is
+[59:26.96]  like uh
+[59:30.00]  like more like useful than ever. like I
+[59:32.56]  I don't like it's um you know it's still
+[59:36.72]  the case that I I think that the people
+[59:38.88]  on our team who are like the strongest
+[59:41.44]  like software have the strongest
+[59:43.04]  engineering skills are like the most
+[59:44.72]  effective like even at using agents um
+[59:48.00]  and uh you know it's funny because
+[59:50.80]  there's a lot of talk about like token
+[59:53.28]  maxing I don't know if you're familiar
+[59:54.56]  with this right yeah the idea of like
+[59:56.24]  should you have a leaderboard for
+[59:57.68]  example this is getting tweeted about a
+[59:59.36]  lot companies that have token
+[60:00.40]  leaderboards and it's like how do
+[60:02.08]  like creates terrible incentives to just
+[60:04.24]  like use as much tokens as possible. And
+[60:06.64]  it's funny because we do uh that does
+[60:09.28]  get tracked or sorry there's not a
+[60:11.68]  leaderboard but like token usage is
+[60:14.08]  something you can like look up for
+[60:15.52]  example you know internally I mean and
+[60:17.84]  um it's interesting to look at because I
+[60:20.00]  I don't care like who on the team is
+[60:21.60]  using the most tokens like and there are
+[60:24.16]  people on the team who are like I'm like
+[60:25.76]  actively trying not to care about that
+[60:28.16]  like being where I am on the token
+[60:29.68]  leaderboard which I think is like great
+[60:31.52]  like I I don't care like they don't have
+[60:33.28]  like they should just do like do a great
+[60:35.44]  job and like that's fine. I don't care
+[60:36.72]  if they use a lot of tokens or not. But
+[60:38.08]  it is interesting to look at the token
+[60:39.60]  leaderboard because um some of the
+[60:42.56]  people on the team who are most
+[60:43.52]  productive are like using like a lot of
+[60:45.84]  tokens, right? It's like like there is
+[60:48.00]  like a correlation. I'm not saying it's
+[60:49.20]  causal, but I'm saying like I do think
+[60:51.04]  that a lot of great engineers like are
+[60:53.60]  able to like use agents very effectively
+[60:55.84]  and like to hopefully to like multiply
+[60:57.60]  their skills. Um, so I uh I do think it
+[61:02.96]  would be like
+[61:05.12]  really hard to be an early career
+[61:07.04]  software engineer right now. And um I'm
+[61:11.04]  not spending that much time with early
+[61:13.20]  career engineers right now just based on
+[61:15.28]  like at Astral we're just a very small
+[61:17.52]  team um and we tended to hire very
+[61:19.52]  senior. Um but uh it's it is sort of
+[61:25.20]  hard for me to think about like what
+[61:27.68]  what would we uh like how would I learn
+[61:30.80]  basically like what would the iteration
+[61:32.48]  loop be um I would be like learning from
+[61:36.88]  codecs I guess um as opposed to
+[61:41.36]  uh like
+[61:44.32]  um
+[61:45.92]  the other way around basically I mean
+[61:47.76]  like like a lot of the times I'm
+[61:48.80]  actually like instructing codecs right?
+[61:50.40]  And like trying to correct it and
+[61:51.52]  providing a safeguard on it. Um or opus
+[61:54.24]  or whatever you're using. Um and so uh
+[61:57.68]  yeah, I think I just don't know like
+[62:00.24]  where you would get it would just be way
+[62:03.36]  too easy to fall prey to like a lot of
+[62:05.92]  the bad things that happen when you use
+[62:07.60]  agents. You built this proof of concept
+[62:10.24]  in uh in Rust and it was really
+[62:12.64]  wellreceived, but why did you start a
+[62:15.52]  company around it and how did the like
+[62:17.68]  the raising go and all of that? What was
+[62:19.28]  the motivation there?
+[62:20.72]  >> Yeah. Yeah. So, um I left Spring um I
+[62:24.64]  was actually convinced to leave by a
+[62:26.88]  friend who uh very close friend who um
+[62:31.20]  left Meta around the same time and he
+[62:33.52]  was like, "We should start a company
+[62:34.56]  together." And I was like, "Okay, fine."
+[62:36.64]  Um I mean, it wasn't quite, you know,
+[62:38.88]  that simple. Uh but uh but I did, you
+[62:41.76]  know, I left and and then we we kind of
+[62:43.76]  went into the, you know, the quote
+[62:45.04]  unquote idea maze of like what do we
+[62:47.44]  want to build? like we we went into it
+[62:49.20]  not knowing what we wanted to build and
+[62:50.64]  we spent a bunch of time exploring the
+[62:53.44]  ven diagram of ideas of like there were
+[62:56.00]  things he was interested in that I
+[62:57.76]  thought was were not interesting and and
+[62:59.60]  vice versa and there was some stuff in
+[63:01.84]  the middle and we spent time exploring
+[63:03.76]  the stuff in the middle but then in all
+[63:05.84]  my spare time I was working on like
+[63:07.60]  developer tools and because that's what
+[63:09.36]  I thought was really interesting and he
+[63:10.72]  it wasn't quite like a fit for him
+[63:12.64]  basically um but around then I was
+[63:16.16]  working on rough I was working on a a
+[63:17.92]  couple other projects that you can see
+[63:19.84]  in my GitHub that are like I don't know
+[63:22.40]  probably not as interesting but they
+[63:23.76]  were like I was like experimenting with
+[63:25.04]  like lots of different things at the
+[63:26.24]  time like I was pretty interested in web
+[63:28.16]  assembly. Um I wrote a sort of like a
+[63:33.68]  CI/CD
+[63:36.08]  toolkit in Typescript. It's sort of like
+[63:38.24]  you wrote pipelines in Typescript and it
+[63:40.08]  transpiled them to Docker. And I was
+[63:41.68]  like, "Oh, this could be cool." Like,
+[63:42.80]  well, I don't know. I was like building
+[63:43.92]  a lot of stuff. And at that point in
+[63:47.04]  time, I I decided I wanted to start
+[63:49.52]  developing relationships with investors,
+[63:52.00]  but that I wasn't ready to raise money
+[63:53.52]  because I didn't know what I was
+[63:54.32]  actually going to build. And so, my
+[63:55.60]  thinking was I'm going to try to like
+[63:57.20]  get connected to some people who like to
+[63:59.28]  invest in this kind of stuff. Um, with
+[64:01.76]  an eye towards reaching back out to them
+[64:03.68]  in like like 3 to six months and being
+[64:06.32]  like, "Hey, we had a great conversation.
+[64:07.76]  Now I'm working on X." So, that was my
+[64:10.08]  thinking. So I got connected to a couple
+[64:12.24]  investors who invest in inf like
+[64:14.00]  software infrastructure and developer
+[64:15.20]  tools. Um and I had some good
+[64:18.64]  conversations and then like the problem
+[64:20.48]  is things just can move really quickly
+[64:22.88]  and so I didn't actually expect to like
+[64:24.72]  start raising so soon but I effectively
+[64:27.44]  got convinced and and at the same time
+[64:29.44]  rough was growing a lot and so I
+[64:31.44]  effectively got convinced that there was
+[64:33.04]  enough there to start a company which is
+[64:34.72]  a very interesting process. I was like I
+[64:36.96]  was like I don't know quite know how
+[64:38.32]  this becomes a company but I was
+[64:40.24]  effectively convinced that there was
+[64:42.32]  enough there to build a company which is
+[64:44.40]  interesting
+[64:44.80]  >> by the investors.
+[64:45.92]  >> Yeah.
+[64:46.64]  >> Yeah. Yeah.
+[64:47.92]  >> Um which I'm grateful for.
+[64:51.20]  >> The other thing I was convinced of um uh
+[64:54.24]  was uh uh which is funny is um if I
+[64:59.12]  hated it, I could stop in like six
+[65:01.60]  months. It's like if you decide it's not
+[65:03.44]  for you, you could like give the money
+[65:04.64]  back. actually said that.
+[65:06.00]  >> Yes. Which I actually think was
+[65:07.12]  brilliant cuz like I was probably never
+[65:08.80]  going to do that but it did make me feel
+[65:10.96]  like there was less pressure.
+[65:13.68]  Um so uh sorry very round very very like
+[65:16.64]  weird roundabout details but um but
+[65:18.88]  basically like uh I was like working on
+[65:22.16]  rough more like full-time eventually and
+[65:24.80]  then um uh it was kind of like uh I
+[65:28.72]  would say collaborative with like the
+[65:30.24]  potential early investors where it was
+[65:32.08]  like we would just have like long
+[65:33.20]  conversations about like my ideas and
+[65:34.96]  then um it basically become clear that
+[65:36.96]  it was like there's enough here like you
+[65:38.88]  and I like wrote out kind of like a
+[65:40.24]  product roadmap which honestly like a
+[65:42.32]  lot of it stayed true to like what we
+[65:43.76]  ended up building um what we've ended up
+[65:46.08]  building so far at least and um and from
+[65:49.92]  there it basically became like uh yeah
+[65:52.00]  we want to fund you like here are the
+[65:53.60]  terms that we would do and I was like oh
+[65:55.20]  wow okay so I guess this is happening so
+[65:58.08]  so uh it was it was just an interesting
+[66:00.40]  and I had never done anything like this
+[66:02.64]  before I mean I was just I was just you
+[66:05.04]  know an IC software engineer my whole
+[66:06.64]  career um and then I uh suddenly I was
+[66:08.88]  like starting a company and Um,
+[66:12.88]  it's funny cuz I actually think like the
+[66:16.08]  decision to like go all in and like
+[66:18.32]  start the company
+[66:21.12]  wasn't that stressful. I actually think
+[66:23.52]  a lot of the stress came later as the
+[66:26.40]  company started to succeed. Um because
+[66:28.40]  at the beginning I had I kind of had
+[66:29.84]  nothing to lose. But then as the company
+[66:32.32]  started to succeed um you know I was
+[66:34.96]  like oh wow like the company's kind of
+[66:36.48]  working like what's going to happen from
+[66:37.92]  here and I had a team of 20 people who
+[66:41.20]  were depending on me and so um I don't
+[66:43.76]  know just for me as a founder it was
+[66:45.28]  like um I'm pretty like riskaverse but I
+[66:48.08]  actually found that starting the company
+[66:50.08]  was
+[66:51.68]  uh an easier it was it was an easier
+[66:54.48]  decision than maybe some of the
+[66:55.92]  stressful things that came later uh to
+[66:58.08]  navigate. Um, but it happened very
+[67:01.12]  quickly and sort of unintentionally and
+[67:03.68]  in in a symbiotic way with investors
+[67:06.64]  which was which I I I hadn't really
+[67:08.40]  anticipated.
+[67:09.68]  >> I didn't expect the the investors I mean
+[67:12.64]  cuz I thought the founders hungry for
+[67:14.80]  the fundraising and go please fund me
+[67:17.20]  but the investors were like
+[67:19.36]  >> I think it can happen a million
+[67:20.40]  different ways and like
+[67:22.56]  >> um
+[67:24.00]  >> actually I mean we did three fundraises.
+[67:26.00]  We did a C series A and a series B. Um,
+[67:29.76]  we actually never even announced the
+[67:32.08]  series A or the series B. They were I
+[67:34.64]  mean they were announced in the
+[67:36.00]  acquisition blog post, but we sort of
+[67:38.72]  complicated. It's like we we basically
+[67:40.40]  just never got around to it. Um, and uh
+[67:43.36]  >> why don't you guys publish it? Because
+[67:44.56]  isn't that good marketing for talent?
+[67:46.96]  >> It's good marketing, but basically like
+[67:49.20]  we there kept being like reasons that we
+[67:51.68]  like wanted to wait a little bit and
+[67:53.76]  it's also like to me it always felt like
+[67:56.00]  a lot of work. And then I was like, it
+[67:58.64]  just never I honestly just never felt
+[68:00.24]  like the most important thing because we
+[68:01.92]  were like building a lot of stuff and
+[68:03.52]  like the company was going well and I
+[68:05.12]  was like I don't we don't need the
+[68:07.68]  marketing. Uh we did finally plan to
+[68:10.16]  announce it but then we got bought so
+[68:12.08]  didn't happen. But um but uh each of
+[68:15.68]  those
+[68:18.00]  each of those fundraises was um uh was
+[68:21.44]  like preemptive basically like like
+[68:23.68]  initiated by investors. Um which was uh
+[68:27.20]  which is like uh I mean it's like
+[68:28.80]  fortunate because like the company was
+[68:30.32]  like going well and people wanted to
+[68:31.84]  invest. Um but it was also just like a
+[68:35.04]  funny position to for me to be in I
+[68:37.20]  guess. Um, uh, I think I, uh, I think I
+[68:40.96]  was just always a little bit
+[68:41.76]  conservative and I wasn't super
+[68:44.00]  aggressive about trying to go out and
+[68:45.28]  raise money. Um, and, uh, but but we
+[68:48.24]  were lucky enough to be building things
+[68:49.36]  that people really, um, had a lot of
+[68:51.20]  confidence in or had a lot of belief in.
+[68:53.04]  >> That probably gave you a lot of
+[68:54.40]  negotiating leverage because like one of
+[68:57.28]  the best positions you'd be in is that
+[68:59.44]  you you're willing to walk away. You
+[69:01.92]  don't need it. And by definition, you
+[69:03.60]  didn't even come there to begin with.
+[69:04.96]  They came to you and said, "Please take
+[69:06.56]  the money."
+[69:08.00]  >> That's true. Yeah. Yeah. I wouldn't say
+[69:09.60]  I'm a great negotiator, but um yeah, I
+[69:12.40]  guess at least I had a strong hand. But
+[69:14.64]  we were very lucky with investors. We
+[69:16.08]  had we had amazing investors. Um like
+[69:18.48]  super supportive and really like aligned
+[69:21.92]  with how I wanted to build the company.
+[69:24.24]  Um like never any
+[69:28.16]  conflict, never any like pressure to do
+[69:30.88]  anything specific. um like just support
+[69:34.08]  and um maybe the only thing maybe the
+[69:37.52]  only piece of consistent feedback is
+[69:38.96]  that I could have been more aggressive
+[69:41.76]  uh and but I I don't know it's like uh
+[69:43.84]  just in terms of like scaling and
+[69:45.20]  growing and doing more but I liked the
+[69:47.36]  way that we operated and um yeah we just
+[69:49.76]  had such good we had such good
+[69:51.12]  experiences with our investors too so I
+[69:52.64]  felt lucky about that because it can
+[69:54.24]  easily go the other way. I imagine if
+[69:56.88]  someone invests there's a promise of
+[69:58.80]  future revenue but how how does this
+[70:01.52]  company make money because you guys give
+[70:03.68]  away your software for free right so
+[70:05.44]  >> yeah we launched a commercial product in
+[70:08.48]  like August of last year
+[70:12.16]  >> um and it was sort of it was called py
+[70:15.28]  it was kind of like a hosted
+[70:17.52]  um counterpart to UV so like a lot of
+[70:21.04]  our a lot of UV users will purchase like
+[70:23.28]  a private registry software instead of
+[70:25.44]  using in the public registries either
+[70:26.80]  for like security or maybe they need to
+[70:29.04]  publish their own private artifacts,
+[70:30.64]  things like that. And we basically built
+[70:32.88]  our own private registry that had some
+[70:34.72]  first class support for you for UV. Um,
+[70:37.84]  and it let us solve a bunch of problems
+[70:40.08]  that we saw, you know, in our issue
+[70:41.68]  tracker around users using other
+[70:43.68]  solutions. Um, also let us build
+[70:45.92]  something really fast because we like
+[70:47.36]  vertically integrated the client and the
+[70:49.44]  server. There were like special things
+[70:51.04]  they could do to be like really fast and
+[70:52.64]  really easy to use and and all that. And
+[70:55.44]  we spent a while um selling that uh and
+[71:00.48]  um our revenue actually grew like pretty
+[71:02.24]  well. Um I mean it wasn't like I think
+[71:05.12]  in this era of AI you're constantly
+[71:06.72]  hearing about fastest company to go to
+[71:08.40]  100 million in revenue and and things
+[71:10.08]  like that. It wasn't it didn't look like
+[71:11.60]  that. Um but we were definitely able to
+[71:13.44]  sell this to like some big enterprises.
+[71:15.28]  Um and I mean the cool thing was we had
+[71:17.44]  very good because we built the open
+[71:19.44]  source and everyone was using our open
+[71:21.28]  source. We had a really good funnel like
+[71:24.88]  like we had a small number of extremely
+[71:26.80]  high quality coh customers is the way I
+[71:29.84]  would put it. Um so the general idea for
+[71:33.20]  like how we wanted to make money was
+[71:35.84]  keep uh like build open source and like
+[71:38.56]  the tooling the tooling remains like
+[71:40.56]  free open- source like entirely
+[71:42.72]  non-commercial and then we build
+[71:44.80]  software that's kind of like the natural
+[71:46.24]  next thing you need when you're using
+[71:47.52]  our tooling. So if you're using UV you
+[71:50.08]  there are probably sol problem there are
+[71:51.76]  likely problems we can solve for you
+[71:53.12]  with like a private registry. Um and
+[71:55.04]  then the funnel is like people using UV
+[71:57.20]  they have these problems and then we
+[71:58.48]  sell them the registry and the registry
+[72:00.32]  was meant to be like one piece of a
+[72:02.24]  platform of like a bunch of different
+[72:03.68]  things we sell like a Python cloud. Um,
+[72:06.48]  so that's what we were like building
+[72:07.76]  towards. Um, uh, I mean part of the cool
+[72:11.04]  thing about the, um, acquisition is
+[72:16.16]  we'll be able to take parts of that
+[72:19.04]  platform and make it basically freely
+[72:21.28]  available. Um like we did just as an
+[72:24.72]  example a a big part of that was um
+[72:29.68]  uh we did a lot of like in Python um you
+[72:33.68]  know there's a big part of the community
+[72:34.80]  that uses Python with GPUs like PyTorch
+[72:37.52]  and and then there's like a whole
+[72:39.44]  ecosystem around PyTorch of like
+[72:41.12]  software that kind of like builds
+[72:42.88]  against PyTorch. Um and we that's for a
+[72:46.96]  variety of reasons the ergonomics around
+[72:48.96]  that are are not great. um like it can
+[72:52.40]  be kind of hard to work with, hard to
+[72:54.56]  install, hard to get hard to install the
+[72:56.48]  right version. Depends on the GPU that
+[72:58.40]  you have and like what version of CUDA
+[73:00.08]  you have installed and like all this
+[73:01.28]  stuff. And so we we kind of tried to
+[73:03.52]  solve that in a in a certain way. Um
+[73:06.64]  where we built our own distribution, you
+[73:09.36]  could think of it kind of like a Linux
+[73:10.48]  in the sense of like a Linux
+[73:11.36]  distribution like we pre-built a lot of
+[73:12.96]  things like that that all worked
+[73:14.16]  together and made that available to
+[73:15.76]  customers. And so now we can actually
+[73:17.60]  take that and just make that like freely
+[73:19.12]  available to everyone because we're no
+[73:21.04]  longer uh we no longer are trying to
+[73:23.60]  build like an independent business.
+[73:24.88]  We're just trying to build uh great
+[73:26.80]  tools that like grow a broader
+[73:28.24]  ecosystem. So I mean more more to come
+[73:30.80]  on that, but that's been kind of like
+[73:32.00]  one cool thing that I'm I'm excited
+[73:33.60]  about. as a first-time founder,
+[73:36.00]  especially with the engineering
+[73:37.20]  background, was there anything that kind
+[73:39.44]  of like a surprising learning or
+[73:41.60]  something where you would share that
+[73:43.52]  with someone if they were an engineer
+[73:44.88]  and they were going down that founder
+[73:46.56]  path?
+[73:48.32]  >> There are so many different ways to do
+[73:49.84]  it. Like I I'm actually like not a huge
+[73:53.12]  fan of people giving startup advice in
+[73:55.04]  general because so much of this industry
+[73:57.68]  is like um survivorship bias of like you
+[74:02.56]  could give the exact same advice to like
+[74:04.56]  you know like basically you can go to
+[74:05.92]  like two talks and people give you like
+[74:07.28]  two like incredibly successful founders
+[74:08.80]  give you like completely contradictory
+[74:10.08]  advice and you're like I don't really
+[74:11.12]  know what to do. Um and I I tend to view
+[74:13.44]  that as like you've got to figure out
+[74:14.96]  what's true to you. Um, and so, you
+[74:17.92]  know, like there's all these decisions
+[74:19.20]  you have to make like in person versus
+[74:20.80]  remote, right? Like have a principle and
+[74:24.64]  like stick to it. Like either one can be
+[74:27.68]  great. Like we built the whole company
+[74:29.12]  remotely. It went super well. Like it
+[74:31.20]  was great. Um, do I think there are
+[74:32.80]  benefits to being in person? Of course.
+[74:34.48]  Um, would I have been able to hire the
+[74:36.24]  team that we put together if we were in
+[74:37.60]  person? Absolutely not. And so like, you
+[74:39.44]  know, there are trade-offs to all these
+[74:40.64]  things. You just have to like be
+[74:41.76]  principled and figure out like what's
+[74:43.36]  what resonates with you. um you know
+[74:46.32]  like uh and there's there's like a
+[74:48.16]  million of those decisions that you have
+[74:49.44]  to think through. I feel fortunate in a
+[74:51.44]  lot of the ways I got to run the
+[74:52.56]  company. Like I I tried to spend like
+[74:54.16]  very minimal time fundraising and with
+[74:57.20]  investors and I tried to optimize for
+[74:59.44]  investors I really trusted as opposed to
+[75:02.56]  trying to talk to a billion different
+[75:04.80]  investors and like pit them all against
+[75:06.32]  each other to get the best terms. like
+[75:07.68]  my my goal was always like find a
+[75:09.44]  partner that I really trust and get good
+[75:10.88]  terms and then move quickly to spend as
+[75:12.56]  little time on fundraising as possible.
+[75:14.72]  Um, and so, you know, think about think
+[75:17.28]  about what you care about and focus on
+[75:19.20]  that. There's no right answer to a lot
+[75:20.96]  of this stuff. I got a lot of advice to
+[75:23.68]  get a co-founder when I first started
+[75:25.68]  the company and I basically ignored
+[75:28.56]  that. I mean, I I like Well, sorry. I
+[75:30.96]  did ignore it because I didn't get a
+[75:32.00]  co-founder, I guess. But like I for me,
+[75:35.04]  it was kind of like um
+[75:37.76]  uh I kind of knew they were right
+[75:40.32]  probably, but I didn't really have
+[75:43.04]  someone in mind. I didn't want to force
+[75:44.24]  it and so I just didn't. And um you
+[75:47.28]  know, over time I felt like it would
+[75:48.88]  have been helpful
+[75:50.72]  to have someone to uh that's kind of
+[75:53.28]  like in like in the trenches with you in
+[75:55.20]  the same way. Um, but you know, you find
+[75:57.52]  other ways to acco um to compensate for
+[76:00.32]  it. Like I don't know, I lean on my wife
+[76:02.80]  a lot, probably more than I, you know,
+[76:04.64]  more than I should. Um, probably more
+[76:06.72]  open with my employees than I otherwise
+[76:08.48]  would be, which is, I think, which can
+[76:10.72]  be good or bad, but it's like I share a
+[76:12.72]  lot with of, you know, with with the
+[76:14.16]  early team, like especially when I need
+[76:15.68]  advice on things. Um, try to build a
+[76:18.16]  network of like other founders. Um,
+[76:20.00]  especially here in New York, I have like
+[76:21.28]  a pretty good group of um, there's like
+[76:23.20]  six or seven of us who we try to get
+[76:25.12]  dinner twice a year. Doesn't sound like
+[76:27.28]  a lot, but everyone's busy.
+[76:28.80]  >> Yeah. Yeah. Yeah.
+[76:30.16]  >> Um and and that's been like a really um
+[76:33.44]  Yeah, that's been like a really helpful
+[76:34.80]  like support system. So, you just find
+[76:36.72]  other ways to to compensate, but um
+[76:40.16]  yeah, it's uh I don't know, there's no I
+[76:42.48]  really don't I really think there's not
+[76:44.24]  one right way to do it. Um
+[76:47.84]  yeah, and it extends everywhere. I mean
+[76:49.52]  like also I don't know everyone on X is
+[76:52.00]  talking about like um you know like
+[76:55.28]  should everyone in your company be
+[76:56.64]  working seven days a week this kind of
+[76:58.56]  thing and it's like
+[77:01.12]  I don't know like we just built a very
+[77:02.72]  different company and we were able to do
+[77:03.84]  it like that was not I mean I work I
+[77:06.88]  work basically all the time um and
+[77:09.20]  that's a choice I made um and that I'm
+[77:12.56]  like very happy with but I don't expect
+[77:14.64]  people on the team to work all the time
+[77:16.16]  and I want it to be a company where um
+[77:19.44]  you know you can be highly highly
+[77:21.36]  successful working normal hours um but
+[77:24.72]  also where you're rewarded for you know
+[77:27.20]  your output and your performance um and
+[77:29.12]  I try to keep all those things in sync
+[77:30.72]  but like again there's no one right one
+[77:32.96]  way to do it there's no one right way to
+[77:35.28]  do it like other companies that is their
+[77:37.60]  culture and that's what they want to do
+[77:38.80]  and like sure whatever like if that's
+[77:40.16]  what you sign up for like just make sure
+[77:41.52]  that you're honest about like what
+[77:42.72]  you're doing so I don't know I just
+[77:44.40]  think figure out what you care about and
+[77:47.52]  in my opinion And don't focus too much
+[77:49.12]  on how you think you should be doing
+[77:51.04]  things. Think about how you want to be
+[77:52.80]  doing things and what actually fits with
+[77:54.32]  how you want to work.
+[77:55.84]  >> What's your top book recommendation?
+[77:57.92]  Whether technical or maybe something
+[77:59.76]  that helped you as a founder.
+[78:01.68]  >> I don't read a lot of like technical
+[78:04.40]  material. I have definitely watched a
+[78:06.80]  few talks that were very influential to
+[78:09.04]  me, which is a little bit different.
+[78:10.72]  >> What are those talks?
+[78:13.12]  the Zigg creator uh Andrew Kelly um had
+[78:17.36]  a really good talk about like data
+[78:18.56]  oriented design that like I learned a
+[78:20.64]  lot from. I mean even apart from
+[78:22.16]  learning things, it sort of inspired me
+[78:23.52]  to like look at software quite
+[78:24.88]  differently. Um and so I think about
+[78:26.56]  that talk a lot. Um interesting.
+[78:28.64]  >> Yeah, things like that.
+[78:30.00]  >> It's really good. Yeah, it's about um
+[78:32.24]  well, I haven't watched it in a while,
+[78:33.44]  so I'm probably mess it up, but it's
+[78:35.12]  like uh a lot of it's about basically
+[78:37.36]  design decisions they made in like the
+[78:38.64]  Zig compiler and um and uh just like
+[78:42.64]  thinking about like memory and
+[78:43.60]  allocation and all this stuff. And I was
+[78:45.20]  like, I watched that when I was pretty
+[78:46.64]  early in my career of like systems
+[78:48.00]  programming and I was like, "Wow, like
+[78:50.56]  these people really care about what
+[78:52.00]  they're doing." And I was like, "That's
+[78:53.20]  cool."
+[78:55.60]  Yeah.
+[78:56.56]  >> Yeah. And then last question is, if you
+[78:59.20]  could go back to the beginning of your
+[79:00.56]  career, like right when you graduated
+[79:02.24]  college, what advice would you give
+[79:04.00]  yourself knowing what you know now?
+[79:07.60]  >> I don't know. It's so hard to give
+[79:08.80]  myself advice without feeling like I
+[79:10.24]  have all this hindsight bias, you know?
+[79:11.84]  I mean, I think
+[79:14.08]  I guess I guess there are some things
+[79:15.52]  where I'd basically like tell myself
+[79:17.52]  that it is the right decision and I
+[79:20.32]  shouldn't worry so much, but it's hard
+[79:22.08]  to know how that would have played out,
+[79:23.76]  you know, if I did it a thousand times
+[79:25.44]  over. Um, but for example, like I think
+[79:27.68]  when I left school and I went to work at
+[79:30.24]  Khan Academy, part of me was definitely
+[79:32.72]  like, wow, should I be taking more of
+[79:34.56]  like a big tech job and am I going to
+[79:36.96]  really regret not having that experience
+[79:39.04]  or like um or like I mean the like like
+[79:45.12]  the the Khan Academy like pay was good,
+[79:47.36]  but it was like the big tech pay was was
+[79:48.96]  certainly like better and I was seeing
+[79:50.24]  my friends get like huge bonuses and
+[79:51.92]  like all this stuff and I was like I
+[79:53.20]  felt sort of insecure about should I be
+[79:55.20]  doing that and I think it actually, you
+[79:57.60]  know, in the long term really paid off.
+[79:59.92]  Like I think I mean maybe it would have
+[80:01.36]  been great but like the experience I had
+[80:02.80]  was really what I wanted and I thought I
+[80:05.36]  made that decision for the right reason.
+[80:06.80]  So I think some of these things are like
+[80:10.64]  I don't know everything happens for a
+[80:13.36]  reason you know and it's like have some
+[80:16.16]  faith in like what you're doing for the
+[80:17.68]  right you know for the uh if you're
+[80:20.48]  making decisions based on principles
+[80:22.16]  like I think it can it can work out.
+[80:24.48]  when we started this conversation, you
+[80:26.08]  said, you know, the the reason you got
+[80:28.24]  into what you got into is because you
+[80:30.08]  tried all these different ecosystems and
+[80:32.00]  you had a a broader perspective. I
+[80:34.80]  imagine if you went to Google and you
+[80:37.60]  just kind of I don't know used Google's
+[80:40.32]  closed thing and then you might not have
+[80:42.32]  had the same insight.
+[80:43.68]  >> Yeah. And you know I I I I think about
+[80:46.16]  this with Spring too because Spring like
+[80:48.08]  I was there for four and a half years
+[80:49.92]  and um and then I left right as they
+[80:53.68]  decided to do like you know like a pivot
+[80:55.76]  and then they ended up uh like joining
+[80:57.92]  Janentech. But we had set out to build
+[81:00.24]  like this kind of crazy drug discovery
+[81:03.68]  company. We were focused on aging and it
+[81:06.00]  was all with like computer vision. It
+[81:07.76]  was like very very ambitious what we
+[81:09.20]  were trying to do. Yeah. Yeah. And then
+[81:11.04]  afterwards I was like ah like the
+[81:12.64]  company didn't like it didn't have like
+[81:14.64]  the huge exit or like the huge you know
+[81:16.96]  we didn't achieve like all of our dreams
+[81:18.48]  like did I waste all my time and
+[81:21.44]  ultimately I was like no because I
+[81:24.16]  learned by being an early employee even
+[81:26.40]  and like seeing all these stages I
+[81:28.00]  learned so much about how to run like my
+[81:29.60]  own company and also all the technical
+[81:31.76]  learnings that I rolled into my own
+[81:33.20]  company. So again I feel bad I feel
+[81:35.92]  weird giving this advice because it's
+[81:37.28]  like everything work everything has
+[81:38.72]  worked out really well. But I like I I
+[81:41.36]  feel like there are moments in time
+[81:42.56]  where I sort of doubted some of my
+[81:44.00]  career decisions. And then in hindsight,
+[81:46.00]  like you can only connect the dots
+[81:47.52]  looking backwards. Like it like
+[81:48.96]  everything kind of added up to finding
+[81:51.28]  the thing I really love, which is like
+[81:52.72]  building tools and um and feeding into
+[81:55.04]  that.
+[81:56.00]  >> Awesome. Well, thank you so much for
+[81:57.44]  your time, Charlie. I really appreciate
+[81:58.48]  it.
+[81:58.72]  >> Yeah, thank you. No, it was super fun.
+[82:00.72]  >> Hey, thank you for watching this
+[82:01.84]  podcast. If you liked it and you want to
+[82:03.52]  see the show grow, please support with a
+[82:05.76]  comment or a like. Also, if you have any
+[82:08.64]  recommendations for people you want me
+[82:10.32]  to bring on, please drop a comment.
+[82:12.96]  Guests like Barbara Liskoff, Mike
+[82:15.12]  Stonereaker, Mark Brooker, these were
+[82:17.52]  all people that I brought on because
+[82:19.52]  someone left a comment. On another note,
+[82:21.76]  aside from the podcast, I'm working on
+[82:23.68]  building the ergonomic keyboard that I
+[82:25.60]  wish existed. Here's a glance at the
+[82:27.76]  prototype. It's a split keyboard, so
+[82:30.00]  there's two sides. Um, this is in the
+[82:32.16]  case, but yeah, we launched on
+[82:33.68]  Kickstarter and we hit our goal within
+[82:35.68]  eight hours of launching. I really
+[82:37.44]  appreciate it if you were one of the
+[82:38.64]  people who grabbed one of the early
+[82:40.24]  units. Um, we're now working on the long
+[82:42.56]  journey of building the tooling now and
+[82:44.64]  so if you still want to pick one up,
+[82:46.32]  I've left the late pledges open on
+[82:48.40]  Kickstarter, so you can grab one there.
+[82:50.56]  I'll put a link in the description.
+[82:52.56]  Thank you again for watching the podcast
+[82:54.88]  and I'll see you in the next

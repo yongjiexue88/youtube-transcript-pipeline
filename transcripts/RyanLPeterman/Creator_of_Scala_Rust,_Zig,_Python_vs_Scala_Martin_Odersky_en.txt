@@ -1,0 +1,226 @@
+Title     : Creator of Scala: Rust, Zig, Python vs Scala | Martin Odersky
+Video ID  : SyltKRA8ErU
+URL       : https://www.youtube.com/watch?v=SyltKRA8ErU
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 217
+Saved at  : 2026-10-08 08:13:14
+------------------------------------------------------------
+
+[00:00.08]  when you compare you know Rust or Go
+[00:03.44]  with Scola what are the pros and cons of
+[00:06.72]  the different language designs what's
+[00:08.56]  something that Rust does better than
+[00:10.40]  Scola something that Scola does better
+[00:12.56]  than Rust
+[00:13.44]  >> so Rust is closer to the metal you have
+[00:15.68]  better performance guarantees I guess uh
+[00:18.88]  the fact that Scala is a garbage
+[00:20.32]  collected language means that you always
+[00:22.56]  have some pauses I mean garbage
+[00:24.64]  collection collectors have become quite
+[00:26.64]  quite capable I mean they're brilliant
+[00:28.96]  and the pauses are really very very
+[00:30.72]  small but it's fact it's it's a fact
+[00:32.96]  that you do need a big chunk of memory
+[00:36.16]  to run fast and I guess Rust could could
+[00:39.60]  run in much much smaller memory so I
+[00:41.92]  believe that's that's better for
+[00:43.68]  embedded systems and things like that I
+[00:46.08]  believe right now rust is actually
+[00:47.76]  overused because a lot of people push
+[00:50.16]  sort of rush rust for things higher
+[00:52.48]  higher up in the stack where you a
+[00:55.28]  garbage collector is fine but uh
+[00:57.52]  essentially you you still want to write
+[00:59.60]  code without and that is for me a bit an
+[01:04.16]  exercise in
+[01:06.64]  uh I don't know just intellectual that I
+[01:09.44]  can do it I I don't think really think
+[01:11.52]  there's a there's a big sense in it that
+[01:13.92]  if you have the memory for a garbage
+[01:15.52]  collector you should absolutely use one
+[01:17.36]  because it makes a lot of things uh
+[01:19.68]  simpler so yes of course if given enough
+[01:23.60]  uh brains I can write code around and I
+[01:26.72]  can do that but why should you I I mean
+[01:28.80]  it it it it can be much simpler.
+[01:31.60]  So that was for R. Uh for go is um sort
+[01:36.00]  of a language a bit that that lags
+[01:39.52]  behind. I mean was intentionally
+[01:41.28]  designed to be to be very very small and
+[01:44.08]  essentially to be the standards of the
+[01:45.68]  languages in the '9s. Uh so now they
+[01:48.40]  have gotten generics which is a big
+[01:50.48]  step. So I believe that sort of is sort
+[01:53.68]  of a step forward for that but it's
+[01:56.16]  still a fairly limited language what you
+[01:58.32]  can do which has an advantage that
+[02:01.60]  essentially it is forces a very uniform
+[02:04.56]  style because there's not much of
+[02:06.64]  different things you can do and that's
+[02:08.80]  probably it a culture foster to do
+[02:11.12]  things in a certain way which makes it
+[02:13.76]  easier to essentially read one's other's
+[02:15.92]  programs and and essentially jump in a
+[02:18.08]  new code base and things like that. So I
+[02:20.24]  think that would be my main advantage of
+[02:22.64]  go that I see there.
+[02:24.32]  >> Is it possible to turn off the garbage
+[02:27.12]  collector in Scola?
+[02:28.48]  >> Not in production. Uh so we have some
+[02:31.04]  research that uh would let you use
+[02:34.48]  essentially your own memory allocators
+[02:36.64]  and things like that. Uh uh the the way
+[02:39.76]  let's say Zigg does it. The problem with
+[02:42.00]  that is always that you uh you you can
+[02:45.12]  leak references into memory that you
+[02:47.60]  reclaim and then all hell breaks use
+[02:50.48]  lose essentially your your pointers
+[02:53.04]  point to memory that's undefined and and
+[02:56.00]  so but in in Scala we we now have a very
+[02:59.68]  good way to actually track these
+[03:01.20]  references so we can actually prevent
+[03:03.20]  that statically by the type system that
+[03:05.20]  this will never happen and you can still
+[03:06.88]  have your own allocator. That said, we
+[03:09.84]  haven't really shipped that in
+[03:11.04]  production yet. So, right now, I would
+[03:12.72]  say you use the garbage collector,
+[03:14.08]  escala. Yeah,
+[03:15.52]  >> I see uh a lot on the internet people
+[03:18.00]  comparing Rust and Zigg or kind of a
+[03:20.56]  fierce debate on which one is better.
+[03:24.00]  When you think about Rust versus Zigg,
+[03:26.48]  what are the merits of the two compared
+[03:29.36]  comparing to each other? So what I can
+[03:31.84]  see is ZIK has a really nifty uh compile
+[03:35.04]  time uh uh uh construct uh essentially
+[03:39.20]  inlining where the compiler does smart
+[03:41.84]  inlining and and and that is quite clean
+[03:46.40]  and quite powerful and [snorts] Rust has
+[03:49.28]  has macros but I think they're more
+[03:50.96]  clunky than there is than the zik
+[03:52.80]  version. Um in Scala we have something
+[03:55.60]  quite close to zik. We also have
+[03:57.92]  essentially very a thing that's based on
+[04:00.64]  on inlinining and optimizations by the
+[04:03.20]  compiler. Uh but we have a restriction
+[04:06.32]  which I believe sik doesn't have and
+[04:08.88]  that [snorts] is that um there cannot be
+[04:11.44]  additional type errors after inlining.
+[04:13.76]  So the thing is you inline and then the
+[04:16.08]  question is is the inline program
+[04:17.84]  guaranteed correct uh so type correct or
+[04:21.60]  might you have type errors. The typical
+[04:23.76]  example where you might have type errors
+[04:25.52]  is C++ templates. In fact that's quite
+[04:28.64]  quite scary in C++ that you can expand a
+[04:32.08]  template and then you get very very
+[04:34.08]  complex type errors and very very hard
+[04:36.32]  to to to debug things. So ZIK is I
+[04:39.04]  believe is much better because the the
+[04:40.80]  inlining mechanism is much ser.
+[04:43.12]  >> When you say inlining can you explain
+[04:45.20]  the concept? Inlining just means that uh
+[04:48.08]  in in Scala we can write inline in front
+[04:50.88]  of a of a function and that means that
+[04:53.92]  the compiler will uh before it starts
+[04:57.76]  code generating. So during the time when
+[05:00.72]  it looks at the type code which are
+[05:02.56]  trees it will take the function body
+[05:05.76]  when it sees a function call to that
+[05:07.44]  function it will take the call and
+[05:09.28]  replace it by the body and then it will
+[05:11.76]  do some optimizations. it can say okay
+[05:14.00]  so here we have essentially an app an
+[05:16.80]  application to let's say a value which
+[05:20.00]  is a lambda and but I know where the
+[05:22.00]  lambda points to so let me forward the
+[05:24.24]  call right to the function uh so and and
+[05:27.36]  with that you can already do quite a bit
+[05:30.24]  of uh essentially optimizations which
+[05:33.04]  are guaranteed because the the inliner
+[05:36.56]  must inline that's not a thing like an
+[05:39.60]  optimizer has essentially discretion
+[05:41.84]  whether they want to inline things or
+[05:43.52]  not and so you can never rely on that
+[05:45.68]  but an an inliner which is uh
+[05:48.16]  essentially a compile time based on the
+[05:50.80]  typer must inline so you can rely on it
+[05:53.60]  and const explore by in in zik and C++
+[05:56.64]  is essentially very similar
+[05:58.72]  >> okay so it's a way to get rid of the
+[06:01.04]  function call or the overhead of a
+[06:02.88]  function call and tell the compiler you
+[06:06.48]  can do more because it's all I guess in
+[06:09.60]  line
+[06:10.24]  >> yeah you reveal the implementation and
+[06:12.24]  That means you you can you can uh the
+[06:15.76]  compiler can do something with that.
+[06:17.68]  >> When you think about all the dynamically
+[06:19.36]  typed languages, um which one stands out
+[06:22.80]  as one that you think is kind of the
+[06:25.12]  best among them?
+[06:26.32]  >> Python is ubiquitous. Um and it has a
+[06:30.72]  nice syntax. It uh a lot of the Python
+[06:34.24]  programs look like they're very easy to
+[06:36.56]  read. So that's definitely an advantage.
+[06:39.52]  and and the other one would probably be
+[06:42.32]  something like scheme uh which is sort
+[06:44.88]  of very grounded in computer science
+[06:47.36]  theory and lambda calculus and things
+[06:49.36]  like that. So both of them are sort of
+[06:51.84]  interesting in their own way but of
+[06:53.36]  course Python is 100 times more popular.
+[06:56.32]  >> If you compare Scola to Python for
+[06:59.04]  instance I guess what are the trade-offs
+[07:01.04]  that the two languages took? I think the
+[07:04.00]  gap is closing because Python now
+[07:06.64]  actually has an optional type syntax and
+[07:10.00]  and a number of type checkers that check
+[07:11.92]  that syntax in Python is getting some of
+[07:14.96]  the features that Scala had since the
+[07:16.80]  beginning like pattern matching is in
+[07:18.64]  one of the the recent Pythons. So I
+[07:21.20]  think actually the gap is closing not
+[07:22.96]  just between Python and Scala but
+[07:24.80]  between a lot of programming languages
+[07:26.40]  in general. There sort of all drift to a
+[07:30.00]  standard set of features which mostly
+[07:32.48]  come from functional programming
+[07:33.76]  actually pattern matching for instance
+[07:36.08]  strong type systems uh generics
+[07:38.72]  polymorphism all these things came from
+[07:41.60]  closures all these things came from
+[07:43.28]  functional programming and so the gap is
+[07:46.08]  closing in that in that sense. Um,
+[07:49.28]  Python is um I think the main advantage
+[07:53.60]  of Scala over Python is that it is it
+[07:56.80]  has a strong type system that is always
+[07:59.52]  on and that gives you essentially
+[08:01.68]  guarantees uh that essentially certain
+[08:04.40]  bad states can't can't can't happen. So
+[08:06.96]  so really can rely on it whereas I think
+[08:09.60]  I believe the Python type system well
+[08:11.76]  it's just syntax. it has a number of
+[08:13.44]  type checkers, but in general there's
+[08:16.72]  there's le you you have fewer guarantees
+[08:19.76]  and I believe it's also the ecosystem
+[08:21.60]  and culture that doesn't value types as
+[08:23.84]  much in Python. So I think that's
+[08:25.36]  probably the main difference. F
+[08:27.36]  syntactically the two languages I think
+[08:29.68]  with Scala 3 are actually also quite
+[08:31.44]  close. So Scala 3 looks a lot like
+[08:33.76]  Python. Um in that sense uh you could
+[08:37.60]  say well can see it as a
+[08:41.44]  is a language that has uh strong types
+[08:44.16]  and uh runs on on different runtimes
+[08:47.28]  than Python or I should say the other
+[08:49.28]  thing with Python which is really great
+[08:50.88]  is that Python is a fantastic glue
+[08:52.80]  language because I can essentially have
+[08:55.28]  very very efficient linkages to to high
+[08:57.76]  performance C++ libraries uh uh pandas
+[09:02.16]  or numpy or things like

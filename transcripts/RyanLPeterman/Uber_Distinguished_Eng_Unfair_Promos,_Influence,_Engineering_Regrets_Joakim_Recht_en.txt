@@ -1,0 +1,2203 @@
+Title     : Uber Distinguished Eng: Unfair Promos, Influence, Engineering Regrets | Joakim Recht
+Video ID  : feNh_ubBAMI
+URL       : https://www.youtube.com/watch?v=feNh_ubBAMI
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 2194
+Saved at  : 2026-10-08 08:22:37
+------------------------------------------------------------
+
+[00:00.00]  A software engineer needs to write code.
+[00:01.84]  If you're not writing code, you're not a
+[00:03.84]  software engineer.
+[00:04.88]  >> This is Yo-kim [music] Rect. He grew to
+[00:07.28]  be one of the few distinguished
+[00:08.72]  engineers among thousands at Uber. And I
+[00:11.20]  asked him about how he did it. What are
+[00:13.28]  the typical ways to have your work being
+[00:15.92]  influencing [music] more and more
+[00:17.44]  engineers?
+[00:18.24]  >> I like the idea of like you become a
+[00:19.84]  forceful multiplier by allowing other
+[00:21.84]  people to work better and faster.
+[00:23.58]  [music]
+[00:24.00]  >> He was also on a ton of promo
+[00:25.52]  committees. So I asked him about what
+[00:27.12]  most engineers never get to see. What
+[00:29.76]  does it mean when you're saying promos
+[00:31.60]  are not fair? Sometimes
+[00:32.96]  >> it gets super unfair because it all
+[00:34.48]  depends on how good is your manager at
+[00:36.32]  presenting your case. And if you have a
+[00:38.08]  [ __ ] manager, you have a [ __ ] case.
+[00:40.40]  >> Is there an engineering mistake that you
+[00:42.88]  saw happen at Uber that was only obvious
+[00:45.68]  in hindsight?
+[00:46.64]  >> And I maybe somebody's going to be super
+[00:48.48]  angry about this. I don't know. But uh
+[00:51.04]  >> here's the full episode.
+[00:56.72]  What was the initial problem that you
+[00:58.48]  were solving and the story behind the
+[01:00.40]  project that eventually got you promoted
+[01:02.00]  to distinguished?
+[01:03.20]  >> Not that long after I started at Uber,
+[01:05.52]  we were at the local office in Denmark,
+[01:07.52]  we had been tasked with building a new
+[01:10.80]  data store for Uber. like previously ran
+[01:13.76]  on just Postgress single instance like
+[01:16.32]  just a big ass machine and lot of like a
+[01:18.80]  lot of replicas and stuff like that but
+[01:20.08]  like a single database and that was kind
+[01:22.16]  projected to run out at a certain point
+[01:23.76]  in time so before that point in time we
+[01:25.92]  had to like have a new data store in
+[01:27.60]  place uh so in the office we were
+[01:30.24]  building a new have object store that's
+[01:33.60]  called schemalist there's also a lot of
+[01:34.96]  stuff about that out there u schema is
+[01:37.36]  bas based on shed my sql my job was
+[01:42.08]  primar primarily handling all those my
+[01:43.84]  SQL shots, managing and operating them,
+[01:47.84]  monitoring, scaling, all that stuff. And
+[01:51.28]  in the early setup, it was basically
+[01:52.80]  just like bare metal puppets and my SQL.
+[01:57.28]  And so every time you had to like do a
+[01:59.44]  promote a a master promotion or any kind
+[02:02.72]  of maintenance or replacement, you had
+[02:05.20]  to do some puppet mangling. You had
+[02:07.76]  login mangled puppet, hope for the best.
+[02:10.40]  And that was kind of it was pretty hard
+[02:12.48]  and it got harder and harder because the
+[02:14.48]  system kind of scaled more and more uh
+[02:17.36]  or grew more and more and so at around
+[02:19.92]  that time also like it's not that dugger
+[02:21.84]  was super new at that point in time but
+[02:23.60]  containerization was fairly fairly new
+[02:26.08]  concept still uh some people were using
+[02:28.40]  it some people weren't kubernetus I
+[02:30.56]  think was out in like it just got
+[02:32.40]  released in the like the first alpha
+[02:33.92]  version um just around that time so I
+[02:37.92]  had the like I at some point we kind
+[02:40.00]  start talking about I like why don't we
+[02:41.84]  actually just run the databases in DA so
+[02:44.32]  that we can both run different MySQL
+[02:46.96]  versions more easily we don't have to
+[02:49.20]  like have the entire host we can
+[02:51.28]  actually run multiple databases on a
+[02:53.36]  single host because when you run the
+[02:54.72]  sharded my SQL things it's a bit
+[02:56.80]  expensive if you want your own database
+[02:59.20]  and that then requires probably at least
+[03:02.24]  nine physical servers to run a database
+[03:05.04]  that it gets pretty expensive especially
+[03:07.20]  because you're not going to utilize it
+[03:09.20]  So why don't we why don't we virtualize
+[03:11.60]  and containerize some of that so that we
+[03:13.36]  can improve so we can improve
+[03:15.60]  utilization but also it becomes much
+[03:17.60]  more easy to manage if we then also get
+[03:20.08]  take that idea that's become very common
+[03:22.48]  now but was very uncommon back then
+[03:25.04]  which is let's define what we want to
+[03:27.44]  have like a goal state or an intent uh
+[03:30.56]  and then have a system that can kind of
+[03:32.00]  take you there so you don't have this
+[03:33.36]  procedural
+[03:34.96]  uh promote us promote a new master or
+[03:37.28]  replace something you just say we want
+[03:38.80]  cluster it needs to have nine uh we want
+[03:42.24]  a database we have nine nine individual
+[03:45.04]  clusters three nodes each and then make
+[03:46.80]  that work and don't care about the
+[03:48.40]  details. So that was basically the idea
+[03:50.64]  uh like roughly we built that for
+[03:52.32]  schemas first and that worked out pretty
+[03:54.16]  well. Uh there was like a whole
+[03:56.64]  ecosystem around that was also
+[03:58.16]  monitoring and management and version
+[04:00.64]  control. It was like it was like all
+[04:03.60]  back then a was not githubs. Uh I have
+[04:06.24]  like a somewhat of a version to GitHubs
+[04:08.64]  because GitHub is like a oneway thing.
+[04:10.32]  Uh you push something, you hope for the
+[04:12.80]  best. There's not really any there's no
+[04:14.88]  feedback involved. Uh so you don't
+[04:16.80]  really know if stuff is going to work or
+[04:18.16]  not uh or how far it is and there's no
+[04:20.24]  orchestration. So we built a whole
+[04:21.76]  orchestration layer and monitoring on
+[04:23.84]  top of like a traditional GitHubs uh
+[04:25.76]  GitHubs uh strategy and that kind of
+[04:28.56]  took off and it made us
+[04:31.68]  much better at scaling and much better
+[04:33.60]  at monitoring and much better at
+[04:35.04]  operating and so over time we were like
+[04:37.60]  okay so we did that for that part uh and
+[04:40.08]  then the next idea was basically why
+[04:41.60]  don't we why don't we do that for all
+[04:43.60]  the different databases that we run and
+[04:47.52]  was basically that what became the Odin
+[04:49.68]  effort
+[04:50.64]  uh which was basically just can we build
+[04:52.40]  something similar that can
+[04:56.40]  run work for any kind of stakehold
+[05:00.48]  so that ideally we have a single team
+[05:02.24]  that can operate an entire fleet doing
+[05:04.56]  host maintenance doing database
+[05:06.00]  management doing scaling all that stuff
+[05:08.24]  which was previously every single back
+[05:10.80]  then every database technology had its
+[05:13.28]  own team attached to it and they did
+[05:16.00]  bare metal they did host management the
+[05:18.64]  host monitoring provisioning,
+[05:20.32]  decommissioning, database management,
+[05:22.32]  all that stuff. And it was just a lot of
+[05:24.16]  like everybody had their own tool chain.
+[05:25.68]  It was super wasteful. So basically the
+[05:27.28]  idea was can can we actually can we can
+[05:29.44]  we make a single platform that can
+[05:30.88]  handle all that uh and that that
+[05:33.44]  basically then became yeah Odin uh and
+[05:35.76]  that took a while let [laughter] me say
+[05:37.92]  that uh for many reasons like there's
+[05:41.36]  there's organizational like or like
+[05:43.68]  there's just people because they already
+[05:46.00]  built many many teams built their own
+[05:47.68]  tool chain like why do we why do we use
+[05:49.68]  something else but from a local point of
+[05:51.52]  view it's like doesn't make any sense.
+[05:53.60]  Um, so it just took a while a while is
+[05:56.88]  like yes and yes to convince everybody
+[05:59.44]  that was actually a good idea and then
+[06:00.64]  actually get it rolled out and also
+[06:02.64]  getting it to work with like
+[06:04.96]  technologies that are not that were in
+[06:06.80]  that are inherently
+[06:08.88]  not like cloud ready or like contain
+[06:12.96]  container ready like HDFS for example or
+[06:15.68]  or Kafka used to also be notoriously bad
+[06:18.56]  at like moving stuff around dynamically.
+[06:21.92]  It's like just not a thing. Uh because
+[06:24.08]  like host names are encoded everywhere
+[06:26.16]  and pod numbers and like you need to
+[06:28.32]  shuffle data and there's no good way of
+[06:30.24]  shuffling data really. So getting all
+[06:32.48]  that to work uh it just took a lot of
+[06:35.04]  time uh and effort. Uh but basically the
+[06:38.48]  scope but basically the that that
+[06:40.08]  project just grew and grew and grew in
+[06:42.08]  scope from like a very like uh single
+[06:45.28]  thing where we just need we need just
+[06:46.88]  need to manage our own team stuff to
+[06:49.12]  actually managing the entire company on
+[06:51.76]  the stateful side and when I when I left
+[06:54.48]  it was actually running all the like all
+[06:56.24]  the stateful workloads at uh which is
+[06:59.12]  like [sighs]
+[07:00.80]  I don't remember the exact numbers by
+[07:02.40]  now but like when I left I think we had
+[07:04.00]  like around 120,000 physical servers
+[07:06.56]  under our control. H and like around
+[07:09.20]  half a million like databases. Uh so
+[07:12.16]  like all collocated and whatever and
+[07:14.80]  running on
+[07:16.56]  being being kind of operated by a team
+[07:18.48]  of 20ish people which to me is like
+[07:22.00]  pretty insane. There was still like
+[07:23.44]  database teams that did the actual
+[07:24.72]  database like Cassandra, MySQL like
+[07:27.12]  expertise, but just the fleet management
+[07:29.12]  part of it um like the ability to be
+[07:31.92]  able to upgrade a kernel with a single
+[07:34.96]  click uh or rotate like decommission
+[07:38.96]  data centers or commission new data all
+[07:41.20]  that stuff which usually takes a whole
+[07:42.96]  lot of manual effort.
+[07:45.20]  That's that kind of over time got got
+[07:47.68]  pretty advanced. In my understanding the
+[07:50.16]  initial motivation was two main things.
+[07:53.76]  One is the the fragmentation of the
+[07:55.84]  machines. So not everyone needed a full
+[07:57.68]  instance. So you could save a lot of
+[07:59.76]  capacity. And then the other one it
+[08:02.16]  sounds like maybe even the bigger one is
+[08:03.76]  the dev velocity or the engineering time
+[08:06.40]  savings cuz you don't need as many
+[08:08.80]  production engineers to manage all these
+[08:11.84]  instances. And also just the consistency
+[08:14.48]  of of that part like you want the kind
+[08:17.36]  of the same availability all over the
+[08:19.36]  place. You don't want to have everybody
+[08:20.64]  invent
+[08:22.40]  ways of making sure that servers are
+[08:25.28]  working and when do you discover
+[08:26.88]  something is broken? Uh when how do you
+[08:29.20]  discover that a disc doesn't work any
+[08:30.88]  long or whatever it might be. Like you
+[08:32.64]  don't want everybody to go around do
+[08:34.08]  that doing that by themselves. You kind
+[08:35.68]  of want that to just be done once.
+[08:37.84]  Sounds like you didn't have a grand plan
+[08:39.76]  for it to eventually be all of managing
+[08:42.80]  all of Uber's uh stateful workloads. So
+[08:45.92]  what is it that you saw at the beginning
+[08:47.68]  and how did you convince people that you
+[08:50.00]  should start using um Docker for
+[08:52.80]  databases?
+[08:53.84]  >> Well, so one of the good things about
+[08:55.12]  Uber especially in the early days was
+[08:57.60]  just a lot of freedom. That freedom also
+[08:59.92]  came with a lot of cost. I think at some
+[09:01.92]  point somebody counted that we were
+[09:03.84]  using Adubo there were like something
+[09:05.92]  like 52 maybe different database
+[09:09.52]  technologies in use in the company which
+[09:12.24]  is like that's a lot. Uh uh but on the
+[09:16.64]  other hand we also had the freedom to
+[09:18.88]  basically pick what we wanted. Um so the
+[09:22.72]  decision was was a fairly easy one
+[09:25.44]  because we didn't have to like there
+[09:27.92]  were not a lot of people who had to be
+[09:29.28]  involved in it. there was some people
+[09:30.32]  but it was not a lot of people who had
+[09:32.08]  to be involved in it. Um so in that
+[09:35.36]  sense it was fairly it was fairly easy
+[09:37.92]  on the on like the first thing because
+[09:39.44]  we just did it for our team by ourselves
+[09:41.68]  and that was like how Uber operated for
+[09:44.24]  better for worse. Um
+[09:47.44]  so that part was pretty easy. I think
+[09:48.88]  the the harder part was when we kind of
+[09:50.88]  realized we should really be doing this
+[09:52.72]  for everything. uh there it became a a
+[09:56.00]  bigger project to kind of convince
+[09:58.56]  people that it's the right thing and and
+[10:00.96]  and we also did not con try to convince
+[10:03.60]  everybody at the same time. We said
+[10:05.68]  we're going to build this thing. The
+[10:08.08]  long-term idea is to make to do it for
+[10:10.48]  everything, but we're going to start
+[10:12.72]  like it would be a very incremental
+[10:14.16]  effort going to start with with the
+[10:16.16]  stuff that we own in our office. Then
+[10:18.64]  we're going to do the things that are
+[10:20.48]  owned by
+[10:23.12]  our our friends uh in other departments
+[10:27.04]  and then we're go going to broader and
+[10:28.72]  broader to people who who are more more
+[10:30.96]  resistant to to stuff like this. Uh that
+[10:33.84]  we kind of that we knew up front. Uh we
+[10:37.36]  also knew that we like we're not going
+[10:39.44]  to have like a ready platform like from
+[10:41.36]  day one anyway. So we don't want to have
+[10:43.60]  everybody on on day one. Um, but baby
+[10:47.68]  was like a like I always have like a I
+[10:50.88]  don't want to force anything down
+[10:53.04]  anybody's throat. Uh, so I just want
+[10:56.72]  like I want to build I prefer to build
+[10:58.64]  something and ensure that it actually
+[10:59.84]  works and then people can kind of say
+[11:01.84]  okay that maybe isn't that bad than if
+[11:03.68]  they actually see it work somewhere. So
+[11:06.40]  a more incremental approach to to the
+[11:08.48]  whole thing. And I think that that
+[11:09.76]  helped a lot. It also took a very long
+[11:12.80]  time.
+[11:13.76]  >> When you said there were challenges when
+[11:15.84]  you were influencing the other teams uh
+[11:18.48]  to adopt this, what was the main push
+[11:20.96]  back that you'd hear and how did you
+[11:22.40]  convince people?
+[11:23.92]  >> Well, I think one push back is just that
+[11:26.72]  we already have something and it works.
+[11:29.20]  So, it's a waste to do something else.
+[11:32.00]  Um I and I I can see where I see that
+[11:36.08]  argument, but it's also a kind of local
+[11:38.08]  perspective. It's not a global
+[11:40.32]  perspective. Like when we built this, it
+[11:42.00]  was more of like from like a companywide
+[11:44.16]  perspective of like we want to improve
+[11:46.64]  the general state of stateful workloads.
+[11:50.40]  We don't just want to improve your
+[11:52.00]  thing. Uh so it does also come with a
+[11:54.16]  little bit of like yeah so some things
+[11:55.84]  will be much nicer but some things will
+[11:58.48]  also be
+[12:00.24]  kind of annoying.
+[12:02.16]  uh like for example uh because Uber
+[12:05.28]  didn't and still doesn't have a full uh
+[12:09.92]  uh software defined network where you
+[12:12.00]  can just like
+[12:13.92]  virtually move IP addresses around and
+[12:16.56]  host names. You like if you get a new
+[12:18.40]  host you get a new host name you get a
+[12:20.40]  random port number and that's it. So you
+[12:22.40]  can you can't like do a logical move of
+[12:24.32]  something and that that just for some
+[12:26.48]  storage technologies it makes it really
+[12:28.24]  really hard. Um, and that's of course
+[12:30.72]  pretty annoying. Uh, so you so that that
+[12:34.00]  that from like a local team perspective
+[12:36.32]  can be like quite frustrating if you
+[12:39.36]  then have to like you have tooling that
+[12:40.88]  kind of works and now you have to
+[12:42.56]  rebuild it in in a very different
+[12:44.08]  paradigm and it seems like a bit waste
+[12:46.40]  of time but it really isn't because you
+[12:47.92]  get that you get that large scale
+[12:50.16]  benefit uh because you also you get a
+[12:52.96]  lot of stuff for free. Like for example,
+[12:54.80]  at some point we were like, okay, we
+[12:56.48]  built the basic platform.
+[12:58.64]  Now let's look at at NUMA. NUMA is the
+[13:01.68]  whole like how does memory attach GCPUs?
+[13:04.32]  Uh because if you're running databases
+[13:06.56]  particular stuff that needs to do a lot
+[13:08.40]  of data shuffling, it's nice that the
+[13:10.72]  memory is aligned with the CPU that the
+[13:12.56]  process is running on. So how do you
+[13:14.40]  kind of make that happen uh in a nice
+[13:16.48]  way? Also from a scheduling perspective
+[13:18.56]  like when you need to do feature
+[13:19.68]  optimization, you also need to take that
+[13:21.52]  into account. both the actual runtime
+[13:24.48]  needs to the kind of schedule that we
+[13:26.56]  have the ability to schedule but also
+[13:27.92]  the like the actual scheduleuler needs
+[13:29.60]  to be able to seem how do we best
+[13:32.24]  allocate the CPUs to memory that's a
+[13:34.72]  pretty hard thing to do and it's not
+[13:37.12]  something you get around to doing
+[13:38.24]  yourself but when you have a platform
+[13:39.52]  like this you kind of get it for free
+[13:41.20]  and I think the more of this stuff we
+[13:43.52]  built the more people were like yeah
+[13:45.12]  that's pretty nice
+[13:46.56]  >> it sounds like this effort was uh kind
+[13:48.72]  of a bottoms up kind of effort where you
+[13:52.00]  and some engineers realize this is a
+[13:54.16]  good idea and then it gained traction
+[13:56.16]  gained traction. I'm curious like as the
+[13:58.64]  the initiative evolved like did
+[14:00.64]  leadership starting get involved at some
+[14:02.32]  point and how'd that evolve?
+[14:04.24]  >> We could really only get so far uh
+[14:06.48]  because especially because uh back then
+[14:08.72]  Uber like the stateful part of Uber was
+[14:11.28]  basically split into two. One was like
+[14:13.28]  the online real online uh databases uh
+[14:17.20]  my SQL Postgress uh Cassandra stuff like
+[14:19.68]  that and then there was all the data
+[14:21.76]  stack uh ACFS Kafka Pino all that stuff
+[14:25.44]  and that ran in a completely different
+[14:27.36]  orc we had no like like the management
+[14:30.56]  chain from that more or less went
+[14:32.08]  through the CEO and back down so they
+[14:34.32]  were like yeah this thing you're talking
+[14:36.72]  about it sounds pretty nice but we
+[14:38.48]  really don't care but but then at some
+[14:40.88]  point there were there was some a game
+[14:42.64]  going on but also
+[14:45.76]  we got more and more support up the
+[14:48.08]  management chain to like say this by now
+[14:51.36]  this is something you have to do at some
+[14:52.80]  point there was they just said okay this
+[14:55.52]  Odin thing is the future and you will
+[14:59.28]  not you will not be allowed to have your
+[15:02.48]  own servers any longer you want to run
+[15:04.24]  something that's where it runs um and
+[15:07.60]  that of course helped a little bit also
+[15:08.96]  with like uh adoption because you there
+[15:12.88]  will always be like if you have like the
+[15:14.32]  full button off thing there will al
+[15:15.68]  always be straers or people who are just
+[15:17.52]  like ah we don't want to or we have our
+[15:19.28]  own thing going it's super hard to like
+[15:21.68]  create like full alignments if you if
+[15:24.00]  you're just yourself uh no matter how
+[15:26.00]  nice the thing you have is there's
+[15:27.76]  always going to be somebody out there
+[15:29.12]  who's like ah
+[15:30.24]  >> yeah I mean it's it's a huge undertaking
+[15:32.08]  and I I feel like when you talk about
+[15:34.56]  the end state of the entire company the
+[15:37.92]  scale of databases all running through
+[15:39.68]  this one platform that distinguished
+[15:42.08]  scope makes a lot of sense. Um I'm
+[15:44.56]  curious for for people who are wanting
+[15:46.96]  to know about the career side of things
+[15:48.80]  like how did that look at each step when
+[15:51.60]  your career was growing through that?
+[15:53.76]  >> I think in general
+[15:56.24]  I think there many opinions opinions on
+[15:58.72]  what how you get promoted what what what
+[16:00.96]  triggers a promotion what I have like a
+[16:03.36]  somewhat uh maybe naive hope naive
+[16:07.52]  perspective on it that it's fairly fair.
+[16:09.76]  is not always fair, but it's pretty fair
+[16:11.68]  and it's tied to the scope of the work
+[16:13.52]  that you're doing, the kind of the
+[16:15.76]  amount of people you influence with what
+[16:18.32]  you're doing. Uh that's kind of that's
+[16:20.48]  how I see it. Um, and so like for
+[16:24.08]  something like Odin that had like this
+[16:26.08]  natural progression of first you're
+[16:29.12]  basically doing it inside your teams,
+[16:30.88]  then you're doing it inside your local
+[16:32.48]  org, then you're going doing it inside
+[16:34.96]  your um like the wider maybe platform or
+[16:39.92]  and then it goes even beyond that. And
+[16:41.52]  that that kind of reflects the the the
+[16:45.60]  like the the job level also like the the
+[16:49.12]  the more people you you have under your
+[16:51.52]  influence not like it's not like a
+[16:53.68]  direct influence but it's like the more
+[16:55.20]  people who are like affected by what you
+[16:56.88]  do well the the higher you get in the
+[17:00.32]  level. Uh so if you're actually able to
+[17:04.16]  kind of run a project of that scope to
+[17:08.48]  success then I think a promotion will
+[17:11.60]  happen or not not a promotion but a
+[17:13.44]  number of promotions will happen
+[17:14.48]  automatically and not just for you but
+[17:16.00]  the like the entire team it kind of
+[17:18.00]  drags a lot of people uh along. Uh, of
+[17:21.52]  course you can say I was maybe a bit
+[17:24.08]  lucky in the sense that I had a single
+[17:26.72]  project for a very long time and a lot
+[17:28.80]  of people kind of get shuffled around
+[17:30.08]  and then do a project or the project get
+[17:32.40]  cancelceled or fails and then you have
+[17:33.76]  to do something else. Uh, it gets much
+[17:36.96]  harder uh to kind of kind of write that
+[17:41.68]  expansion. Not impossible. I've seen
+[17:43.52]  many things where many is where where
+[17:45.76]  where it's definitely possible but but
+[17:47.44]  it's just it's much easier when like the
+[17:50.48]  project you're working on has that
+[17:51.84]  natural scope expansion. Uh so maybe my
+[17:55.52]  promotions in to a very large degree
+[17:58.00]  followed that work like first
+[18:01.52]  first I did some background so I did
+[18:03.92]  some other work before we got to to the
+[18:05.52]  whole stateful thing and then I did uh
+[18:07.84]  the the the first version of it. Uh, I
+[18:11.04]  think that got me a promotion and I did
+[18:12.48]  then then we did more and we kind of
+[18:13.92]  expanded to to standard MySQL and
+[18:16.72]  Cassandra and that that got me another
+[18:18.80]  promotion to
+[18:21.84]  I forget that because the title the
+[18:23.60]  title names changed a bit on the way.
+[18:25.68]  Um, but that probably got me to to
+[18:28.32]  principal engineer and then when we kind
+[18:30.40]  of only was more it wasn't done done but
+[18:33.68]  it was like sets like it really didn't
+[18:35.76]  require me any longer. was basically
+[18:37.84]  handed off hand off to to the to the
+[18:40.80]  team uh and I could do other things. Um
+[18:44.40]  and that basically took me to the to the
+[18:46.24]  distinguished uh engineer level. Um but
+[18:49.60]  it was a very natural progression. It
+[18:51.68]  was not a it was it was not a
+[18:53.60]  progression I was like it was not that's
+[18:56.72]  that was that was not the reason why we
+[18:58.48]  were doing it. Uh it was just it
+[19:00.64]  followed the work that we were doing um
+[19:04.08]  quite nicely.
+[19:05.20]  >> Right. I mean th those are the best
+[19:07.28]  kinds of promotions. It sounds like
+[19:08.96]  you're saying that the levels obviously
+[19:11.36]  they're tied to your impact which is
+[19:13.52]  tied to the scope of your influence. And
+[19:16.16]  so I guess the natural question then is
+[19:18.64]  what are the typical ways to have your
+[19:21.36]  work being influencing more and more
+[19:23.68]  engineers.
+[19:24.88]  >> So I have this personal thing and that
+[19:27.36]  is I just I just don't like doing things
+[19:30.64]  too many times.
+[19:32.72]  I just I really don't like it. Uh, and I
+[19:36.80]  think I might have written something
+[19:37.84]  about the the lazy engineer at some
+[19:39.60]  point which like yeah I I like putting
+[19:42.64]  these weird titles on things but the
+[19:45.68]  idea that if I've done something like
+[19:48.72]  for example I need to do if if I'm
+[19:51.44]  operating a database and I need to
+[19:53.28]  replace the host and I've done that
+[19:54.80]  manually a couple of times I'm like I
+[19:56.48]  this I don't want to do any longer. So I
+[19:59.76]  that needs to be automated to some
+[20:01.20]  degree or abracted away or whatever it
+[20:02.80]  might be. Uh and so I think that's it's
+[20:06.72]  not the only thing but I think for me
+[20:08.48]  that is a major driver because then I'm
+[20:11.12]  like why are we why do we have this
+[20:13.04]  waste in our systems or in our
+[20:16.08]  processes? Uh and I like when when you
+[20:19.52]  start thinking about maybe not just your
+[20:21.12]  own waste but also the waste of other
+[20:24.24]  people. I think that's where you kind of
+[20:26.80]  then you get into that scope expansion.
+[20:29.84]  Uh so you kind of start thinking about
+[20:31.68]  your own stuff then you team and you
+[20:33.20]  kind of expand from there. So like that
+[20:35.52]  that's that's how I think about it. I
+[20:37.36]  don't think about it as like and it's
+[20:38.80]  not like oh I need to like get promoted
+[20:40.64]  or whatever. It's just I just have this
+[20:43.20]  uh I just have this natural thing and it
+[20:46.64]  can be pretty annoying sometimes because
+[20:47.92]  you all you can kind of tend to rabbit
+[20:49.92]  hole a little bit also or it's like a
+[20:52.40]  what I what what we kind of call a depth
+[20:54.64]  first approach to everything. uh where
+[20:57.20]  like oh I'm doing this other thing but
+[20:59.04]  suddenly this is annoying me I need to
+[21:00.96]  build this tool oh but the tool is also
+[21:02.96]  annoying to build so I have to build
+[21:04.08]  this I have to build the build system or
+[21:06.16]  I have to improve the build system but
+[21:07.36]  the build system is also annoying so I
+[21:08.56]  have to like whatever and then you take
+[21:09.84]  it on a long chain of like [laughter]
+[21:13.20]  completely sidetracking what you what
+[21:14.72]  you should what you should be doing
+[21:16.16]  that's kind of the danger of it but I to
+[21:20.16]  me I I think it it just drives a lot of
+[21:24.08]  of this like how do you actually improve
+[21:28.64]  systematically and systemically like the
+[21:32.88]  company and the processes and and in
+[21:35.44]  particular your engineering
+[21:36.32]  organization. Uh that's why I'm focused
+[21:39.28]  but it can also touch other things but
+[21:40.88]  mainly engineering. I I see the natural
+[21:43.60]  leverage that comes from it because if
+[21:45.28]  you build some tooling or something like
+[21:47.68]  that that software can then act on your
+[21:51.04]  behalf and help others and then that's
+[21:53.92]  kind of how you scale yourself.
+[21:55.52]  >> Yeah. Yeah. And and yeah. So like we
+[21:57.44]  also talk about this whole thing about
+[21:58.64]  like yeah how do you scale yourself? How
+[22:00.48]  do you how do you come become a force
+[22:02.16]  multiplier? Uh and it's something I
+[22:04.24]  would like it's always like I don't know
+[22:05.76]  then you can mentor people or you can
+[22:07.04]  kind of whatever you can step we can
+[22:09.76]  start like
+[22:12.24]  doing more design so we can push that
+[22:14.40]  down. I like the idea of like you become
+[22:17.44]  a forceful supplier by allowing other
+[22:19.68]  people to work better and faster or
+[22:23.68]  maybe not even work at all ideally on
+[22:25.52]  the thing that they're working on. like
+[22:27.04]  take that problem away like think about
+[22:28.64]  how do how do we actually take the
+[22:30.16]  problem that you have like out of the
+[22:32.00]  equation because I think that's the most
+[22:34.40]  fundamental thing you can do like the
+[22:36.24]  thing you were doing if you don't have
+[22:37.84]  to do that any longer what could you
+[22:39.52]  then be doing you one thing you
+[22:41.60]  mentioned we're talking about promos is
+[22:43.28]  you said they're typically fair and
+[22:46.08]  they're based off of the impact of your
+[22:48.00]  work but I'm curious it sounds like you
+[22:50.48]  have some experience when promos are not
+[22:52.64]  fair or what what does it mean when
+[22:54.80]  you're saying promos are not fair
+[22:56.24]  sometimes times.
+[22:57.20]  >> Well, I think it can mean so it can mean
+[22:58.96]  a lot of things and like I've been part
+[23:01.12]  of promo committees for a very long
+[23:02.72]  time. Um, and the promo committee
+[23:06.00]  structure has also changed a lot uh from
+[23:11.28]  like the first time I was in a promo
+[23:12.96]  committee was I think the I wouldn't say
+[23:15.28]  one of the scariest experiences of my
+[23:17.20]  life. Uh but uh
+[23:22.24]  but I
+[23:24.64]  like so the first promo commission I was
+[23:26.64]  in was basically uh for the entire
+[23:28.56]  platform engineering. I forget how many
+[23:30.16]  we were but it was like all the managers
+[23:32.56]  and VPs and senior directors or whatever
+[23:35.84]  and senior engineers in a room for an
+[23:38.48]  entire day and then somebody asks okay
+[23:42.88]  let's go says let's go through all the
+[23:45.20]  candidates or wait let's actually go
+[23:47.92]  through all our employees all our
+[23:50.08]  engineers just all of them and then the
+[23:53.92]  manager talks about like where how good
+[23:56.72]  are they and should they get promoted
+[23:58.96]  And then we just let it just and there
+[24:00.48]  were like I don't know 200 or 5 500
+[24:02.88]  engineers like I insane number and we
+[24:05.20]  all and there was no preparation there
+[24:06.72]  was no material there was just like the
+[24:08.88]  manager saying what they thought and
+[24:11.52]  obviously they all thought that
+[24:12.40]  everybody should be promoted and then it
+[24:14.40]  was like okay uh and then we should have
+[24:17.20]  some kind of structure let's do some
+[24:18.88]  kind of point system or whatever like I
+[24:21.20]  is this how it works [laughter]
+[24:24.96]  and and and it was back then apparently
+[24:27.12]  and of course in in a setup like that it
+[24:29.44]  gets super unfair because it all it all
+[24:31.28]  depends on how good is your manager at
+[24:33.12]  presenting your case and if you have a
+[24:34.88]  [ __ ] manager you have a [ __ ] case
+[24:38.16]  you might also have a very good manager
+[24:40.00]  but your work is [ __ ] so like so in that
+[24:43.52]  sense there's a lot of unfairness going
+[24:45.44]  on uh which I think also kind of led to
+[24:48.32]  some of the early day Uber culture
+[24:50.96]  issues not just just that but it was
+[24:53.84]  kind of part of it um but anyway things
+[24:56.72]  did get more structured Uh but it is
+[25:00.08]  just super hard because it you cannot
+[25:02.24]  there's just no way you can objectively
+[25:04.24]  judge
+[25:07.52]  how a person is doing because there's so
+[25:10.24]  many dimensions. There's so many things
+[25:12.88]  you're not operating in isolation. Maybe
+[25:15.20]  you depend on like maybe the thing you
+[25:16.72]  were doing actually depended on another
+[25:17.92]  team and that team didn't do what they
+[25:20.16]  said they would do. They just like
+[25:22.96]  ghosted you or whatever. like
+[25:25.84]  they didn't do it and it's like so what
+[25:28.00]  that's not your fault or maybe you had
+[25:30.32]  the project it was running it was almost
+[25:32.56]  in production then it gets canceled by
+[25:34.24]  management just for various reasons not
+[25:36.80]  your fault but like then what like are
+[25:39.92]  you then not getting promoted or are you
+[25:42.48]  getting promoted and if if you're
+[25:44.00]  getting promoted then on what basis like
+[25:46.56]  is it just like oh because you wrote a
+[25:48.00]  lot of code but the code was like never
+[25:49.44]  used and nobody ever saw it again and so
+[25:51.92]  like it's is hard because sometimes you
+[25:55.28]  also like yeah you did a really good
+[25:57.44]  effort and we don't want to demotivate
+[25:59.12]  you completely by saying because it
+[26:00.40]  didn't go to production it was not your
+[26:02.48]  fault you're not getting a promotion. Uh
+[26:05.60]  other times it's like you just also have
+[26:07.76]  to make the thing where like you really
+[26:09.52]  haven't proven anything yet.
+[26:12.00]  You did a lot of good work but it's just
+[26:14.96]  like was not your fault but you're not
+[26:16.88]  getting promoted. Um, so yeah, ideally
+[26:20.80]  there's just fairness all around, but I
+[26:22.88]  think there's there is just inherently
+[26:24.80]  in a in because it's a human process.
+[26:26.56]  There's just a a fair amount of
+[26:27.92]  unfairness. Um, and then I think there's
+[26:31.68]  there's a lot of people who don't really
+[26:33.76]  understand what it means. like they
+[26:35.92]  think it's super unfair because they
+[26:39.12]  think they did really well and compared
+[26:41.92]  to maybe the team they did super well
+[26:44.56]  but it's just also because the team is
+[26:46.00]  not very well very good or you live you
+[26:49.20]  lived on an island and you hadn't
+[26:51.12]  realized that there's another world out
+[26:54.00]  there that's actually very different and
+[26:55.84]  more whatever um which I think just in
+[27:00.48]  the early days of like Uber used to be a
+[27:02.56]  Python shop well first like a JavaScript
+[27:04.72]  Python shop. Then it went into a Go kind
+[27:07.44]  of shop and like nobody knew Go. So
+[27:10.88]  there was a lot of like a lot of people
+[27:13.12]  just trying [ __ ] out and so you would
+[27:15.36]  kind of encounter these these kind of
+[27:17.36]  groups of people who kind of had been in
+[27:19.28]  under their own influence
+[27:21.60]  and like and you just look at the what
+[27:23.76]  they have produced and like this is not
+[27:26.88]  this is no good. [laughter] Like this is
+[27:29.04]  just no good. uh even though you you
+[27:31.36]  kind of uh maybe yeah sure there's one
+[27:33.12]  of you who's better than the other
+[27:34.16]  whatever like but it's just like as a as
+[27:36.32]  a whole it's just no good. Uh so we
+[27:38.16]  cannot we just cannot promote you
+[27:40.64]  because you need to look at what's going
+[27:42.48]  on over here. Um and that can that can
+[27:45.12]  just feel super super unfair to those
+[27:48.40]  people. Uh because if they were not
+[27:51.04]  prepared for what they actually went
+[27:53.44]  into, I think that's also why I try I I
+[27:57.36]  kind of made this effort of like trying
+[27:59.52]  to describe how can you actually get
+[28:01.04]  promoted like what does it mean? And
+[28:03.28]  it's not about like I know like I I
+[28:04.88]  think I call it something like beating
+[28:06.40]  the promo committee or whatever uh which
+[28:08.72]  can just like a a a catchy title but it
+[28:12.64]  was really more about like what does it
+[28:14.64]  actually mean to be a software engineer
+[28:16.72]  at Uber?
+[28:18.48]  uh because you have kind of all sort of
+[28:19.52]  the ideas what that means but but
+[28:21.36]  actually there is something there is a
+[28:22.88]  way to be a software engineer at Uber
+[28:25.20]  like there's there's and that way is
+[28:27.04]  most likely different than meta or
+[28:29.36]  Google or whatever and I think it's
+[28:31.52]  pretty pretty important to be aware of
+[28:32.96]  that because otherwise you kind of
+[28:35.12]  worked towards something and that was
+[28:38.00]  not the thing that it should have been
+[28:40.48]  um and that that that can that can
+[28:42.88]  create a lot of frustration and a lot of
+[28:44.40]  disappointment uh yeah uh which uh and
+[28:49.12]  it's and it's too bad uh that that
+[28:50.80]  people can't get into that state and
+[28:52.72]  don't get the correction uh along the
+[28:55.36]  way that they go all the way to promo
+[28:57.68]  have prepared a package written a lot of
+[28:59.52]  stuff gotten feedback getting peer
+[29:01.84]  feedbacks or whatever and then the the
+[29:04.64]  promo committee is like nah it's no
+[29:06.80]  good.
+[29:08.32]  >> Yeah. you you said you wrote that piece
+[29:10.96]  that was how to beat the promo committee
+[29:13.52]  and it's basically you know the the way
+[29:16.08]  that you grow as an engineer at Uber and
+[29:18.80]  it's it's not focused on actually the
+[29:21.28]  specifics of like the promo packets it's
+[29:24.16]  actually focused on how do you become a
+[29:25.76]  stronger engineer what was in there
+[29:28.72]  >> mainly just to say like good engineering
+[29:31.60]  practices and something that I found
+[29:33.92]  surprising and like I actually found
+[29:35.36]  surprising during all my years at Uber
+[29:38.00]  which is well I don't it also met our
+[29:40.72]  philosophy but I'm like a software
+[29:42.32]  engineer needs to write code if you're
+[29:43.92]  not writing code you're not a software
+[29:45.92]  engineer I know that's some people find
+[29:47.76]  that pretty controversial for some I
+[29:49.20]  don't know why but like apparently it is
+[29:51.04]  to me that and that applies to any level
+[29:53.84]  like if your level if your title
+[29:56.16]  includes engineer
+[29:58.24]  you should be writing code and there's a
+[30:01.04]  it might be different how much code you
+[30:02.48]  write but you should be writing code on
+[30:04.16]  a regular basis
+[30:06.24]  um and to me regular basis means every
+[30:09.20]  day. I know for some people might just
+[30:11.84]  means once a week or whatever but like I
+[30:14.64]  to me it's like every day uh ideally. So
+[30:17.84]  like I think the main advice in that
+[30:20.24]  thing was really just write code
+[30:25.04]  don't don't mess around [laughter]
+[30:28.00]  and and don't like don't overthink it
+[30:30.08]  either like don't like oh I need to
+[30:32.56]  write like advanced uh at my level code
+[30:35.20]  or whatever like the the higher my level
+[30:37.36]  the more advanced my code has to be like
+[30:39.36]  don't no it just like just write code
+[30:41.76]  because the more like if you have that
+[30:44.96]  if you do that uh I have just never seen
+[30:47.60]  anybody who will not grow along with
+[30:49.84]  that and just keep writing the same code
+[30:52.16]  like doesn't make any sense. Um so I
+[30:55.76]  think that was the main advice was
+[30:57.12]  actually just that just write code also
+[31:00.32]  write good code like the secondary
+[31:02.08]  advice and make make good good uh commit
+[31:04.40]  messages and make sure to review code
+[31:06.16]  and make your code nice to review and
+[31:08.00]  all just like standard
+[31:11.28]  software [snorts] practice which people
+[31:13.92]  kind of I don't know forget a bit about
+[31:16.80]  many people also like might not have
+[31:18.88]  learned it because like normally you
+[31:20.48]  don't actually learn like real life
+[31:21.92]  software engineering out of college or
+[31:23.76]  wherever you are, it's all theory. But
+[31:26.08]  like in real life, there's just there
+[31:27.92]  there's also there's also a
+[31:29.76]  craftsmanship to it that you have to
+[31:31.76]  learn and you don't learn learn that in
+[31:34.48]  isolation. It's almost impossible to
+[31:35.84]  learn it by yourself. Well, these days
+[31:37.28]  you can get a lot of help uh from from
+[31:39.84]  AI and whatever, but like you you have
+[31:42.64]  to like see somebody doing it in order
+[31:44.64]  to improve. Um, yeah. So, I think those
+[31:48.48]  were really the that was really the main
+[31:50.48]  thing and and there's a lot of other
+[31:52.56]  things, smaller things about it because
+[31:54.32]  you also need to be able to actually
+[31:56.00]  articulate what you're doing like design
+[31:57.68]  documents. You also need to like be out
+[32:00.56]  there like you like having like my my
+[32:05.44]  other one of my other philosophies is
+[32:07.44]  like running code beats perfect code
+[32:10.72]  anything.
+[32:12.40]  I know you can always come up with like
+[32:13.92]  weird S cases but in in the big picture
+[32:18.48]  running code will always beat working
+[32:20.80]  like perfect code or beautiful code or
+[32:22.96]  whatever. Uh and that could be as as a
+[32:26.24]  software engineer pretty hard to like
+[32:27.68]  like some people because some people are
+[32:29.12]  really oh no no like like it needs to
+[32:31.36]  handle the cases and whatever. Um I I I
+[32:35.92]  I I'm I'm just much more of like yeah
+[32:39.20]  just do something because if you do the
+[32:41.44]  perfect thing you get tied up in this oh
+[32:44.24]  in order to kind of submit code I have
+[32:46.64]  to have all the I have to do the entire
+[32:48.80]  thing and it must handle all cases and
+[32:51.68]  then you kind of work on some that's
+[32:53.36]  where you kind of start working on
+[32:54.48]  something and then you refactor and you
+[32:56.80]  do some more and then event like after a
+[32:58.72]  month you do a commit and
+[33:03.68]  That's just not useful because you did
+[33:05.36]  not get any feedback. You never saw it.
+[33:07.84]  You might be on a completely wrong track
+[33:09.36]  like god knows what.
+[33:10.64]  >> One common advice I hear when people are
+[33:13.84]  thinking about growing in their career
+[33:16.08]  is that they have to scale themselves
+[33:18.32]  and that often points them towards being
+[33:21.60]  more and more of a delegator and more
+[33:24.88]  and more of a tech lead. and they start
+[33:27.28]  getting into this zone where they're in
+[33:29.60]  these highle discussions in the design
+[33:31.92]  docs but not actually writing any code.
+[33:35.36]  What's your thought on that? Because
+[33:36.96]  that's like a very common thing that
+[33:38.96]  people will push on higher level
+[33:40.56]  engineers say stop writing code go and
+[33:42.72]  delegate.
+[33:43.60]  >> Yeah. And like as like personally I like
+[33:45.52]  I I don't subscribe to that idea at all.
+[33:47.68]  I see that a lot. Uh this is also like
+[33:51.04]  some it's also just about like to some
+[33:54.64]  degree it's also what you about what you
+[33:56.72]  find interesting and I I just like
+[33:58.88]  writing code. I just do I have always
+[34:01.28]  liked it. It's just like what I like to
+[34:02.64]  do. I would probably like if I had if I
+[34:04.40]  didn't have anything else to do what I
+[34:06.08]  do but I would do if I didn't have a job
+[34:07.84]  I would probably also do it. Uh so like
+[34:10.32]  I just like it. Um, but I think there's
+[34:13.52]  also just a very big overlap
+[34:16.16]  between like just the between the
+[34:19.12]  writing of code and the ability to like
+[34:22.40]  um perform [clears throat]
+[34:24.32]  uh at any level. Uh, and to me it's it's
+[34:27.20]  like it's there are many facets to it.
+[34:29.68]  Uh, I think one thing is if you're not
+[34:32.48]  writing code, you lose touch with like
+[34:35.28]  the system.
+[34:37.60]  uh not on day one of course because like
+[34:39.44]  on day one if you stop writing code on
+[34:41.28]  day one and one month one it's fine
+[34:44.08]  because you you kind of remember what
+[34:45.60]  was going on but the system evolves all
+[34:47.12]  the time and you forget how it is and
+[34:48.56]  you kind of probably get a more more and
+[34:50.24]  more high level like view of what's
+[34:52.48]  actually going on inside the machine.
+[34:55.12]  Um, so and that just means it gets
+[34:58.00]  harder and harder for you to kind of um
+[35:02.32]  design for the f future like the designs
+[35:04.96]  you come up with will be more and more
+[35:09.28]  uh decoupled from reality and be more
+[35:12.40]  and more it might be idealistic. Uh
+[35:15.60]  whereas like and then when it gets to
+[35:17.36]  actually implementing it's handed off to
+[35:18.72]  somebody else and they're like what is
+[35:20.00]  this [ __ ] Uh and who came up with this?
+[35:22.72]  Oh, that's that that's that guy with the
+[35:25.52]  with the whiteboard and like what and
+[35:27.28]  and the documents like what who's that
+[35:30.32]  to like say what we should should be
+[35:33.04]  doing because we the actual problems we
+[35:35.28]  have are like this. Um so I think that's
+[35:40.24]  I think that's one main that's one major
+[35:43.28]  thing. Um and tied to that is the is the
+[35:47.20]  kind of how do you actually build a team
+[35:50.40]  because as you say you need to scale
+[35:52.08]  yourself that's for sure. Um or I think
+[35:55.92]  another way of of saying you need to
+[35:57.60]  scale yourself is you need to enable as
+[35:59.92]  many people to work as efficiently as
+[36:03.52]  possible. Um which I think is a bit
+[36:06.88]  different than just scaling yourself.
+[36:08.56]  It's getting the sounds that you're kind
+[36:10.08]  of cloning yourself which is like
+[36:12.40]  usually doesn't quite work. Uh
+[36:15.60]  but if you need to kind of make your
+[36:18.00]  team
+[36:20.00]  the when I say your team like the people
+[36:22.64]  around you the people you're supposed to
+[36:24.32]  influence if you're kind of supposed to
+[36:26.80]  kind of affect change whatever the
+[36:29.20]  change might be it just is much easier
+[36:31.36]  to do if they trust you. They know what
+[36:34.56]  they know that you know that what their
+[36:37.52]  pain points are and they that you that
+[36:40.32]  they know that if you say something it
+[36:42.72]  usually works out
+[36:45.12]  or if they say something then you listen
+[36:47.20]  to them.
+[36:49.04]  Um and so that that decoupling kind of
+[36:52.00]  it hurts in that sense because you get
+[36:55.20]  new people in like of course the people
+[36:57.28]  you work with before they will know you
+[36:59.68]  so they're kind of okay but like people
+[37:01.52]  start rotating in and out so you lose
+[37:04.40]  more and more touch with both the people
+[37:05.76]  and the system and that over time gets
+[37:08.40]  you to it might be a pretty bad state
+[37:10.72]  where yeah you're doing a lot of designs
+[37:12.64]  and you're doing a lot of documents and
+[37:14.00]  you're doing a lot of talking and
+[37:15.84]  reviewing and whatnot but you lose more
+[37:18.08]  and more touch with what is actually
+[37:19.52]  going on and then um and this might be
+[37:23.12]  just be an Uber thing uh but you get
+[37:25.44]  more more hostility also and people
+[37:27.44]  won't tell you to your face like but you
+[37:30.00]  will be everybody will think who's that
+[37:32.72]  [ __ ] or who's that kind of guy to
+[37:35.52]  like come and say whatever. So, you're
+[37:37.68]  saying if if you're not hands-on, you
+[37:40.56]  lose trust. And then people won't tell
+[37:43.52]  you that you've lost trust. And then if
+[37:45.44]  you try to influence them or or convince
+[37:48.16]  them, they're going to, you know, not go
+[37:51.44]  your way.
+[37:52.32]  >> Yeah. I think I think at least I've seen
+[37:54.48]  that a lot. Uh, and the the the the
+[37:58.08]  other thing is if you're not like in
+[38:00.88]  there, uh, then at least personally, um,
+[38:05.36]  I I don't want anybody to tell me what
+[38:07.52]  I'm supposed to do. Uh, [laughter]
+[38:10.96]  it's not it's not that I'm not open for
+[38:12.88]  input. Really like to talk about it, but
+[38:16.96]  if you don't have skin in the game, I I
+[38:20.00]  think you should stay out of my things.
+[38:22.80]  Uh and then I will also promise to stay
+[38:25.36]  out of new things. Uh uh if you ask for
+[38:28.72]  help, more than willing to help. If I
+[38:30.64]  ask for help, I hope that somebody will
+[38:32.00]  help. But and so so that whole thing
+[38:34.48]  about like if you kind of do this top
+[38:36.72]  down, oh by the way, now we're supposed
+[38:38.48]  to do this. People don't really know
+[38:39.84]  you, don't know where you're coming
+[38:40.88]  from, don't know why why you're saying
+[38:42.16]  what you're saying. That just it just
+[38:43.68]  creates a lot of mistrust and and in and
+[38:46.00]  in some cases just plain hostility. Um
+[38:49.52]  and and I maybe in the worst case people
+[38:52.00]  will kind of say, "Yeah, that's a pretty
+[38:53.12]  good idea." And then they will just
+[38:55.76]  completely gaslight you and just like go
+[38:57.84]  go back and not not do any of the stuff
+[39:00.56]  that you talked about. Uh
+[39:03.92]  probably the most annoying outcome that
+[39:05.84]  you can get. Uh you said something in my
+[39:09.20]  research, you said something somewhere.
+[39:10.48]  said if a VP says the exact same thing
+[39:14.16]  an engineer does, engineers will still
+[39:17.20]  not fully trust the VP. And so yeah,
+[39:20.32]  that my question is why don't engineers
+[39:22.56]  trust management? Yeah, but I think it's
+[39:25.12]  back to that um that if you don't really
+[39:28.56]  like if you have somebody who you feel
+[39:31.44]  don't really know what they're talking
+[39:33.04]  about to some degree. Uh like they might
+[39:36.48]  have an idea but they don't really like
+[39:38.40]  and that but that idea might be
+[39:40.08]  completely off because they haven't
+[39:41.92]  really spent the time to kind of
+[39:44.16]  understand what is actually going on.
+[39:46.64]  Um, it might be that they're completely
+[39:48.72]  right,
+[39:50.72]  but but it's just it's just I don't
+[39:54.08]  know. I don't know if it's just human
+[39:56.00]  whatever nature or if it's just like if
+[39:57.84]  it's just me. Uh, but [laughter]
+[40:00.32]  but I I just I just know from myself and
+[40:03.36]  from other people I've seen is like
+[40:05.52]  somebody says something and if you don't
+[40:07.92]  like if you don't have a connection to
+[40:09.60]  them,
+[40:11.20]  then it's just hard to like take at face
+[40:13.52]  value. And if face value is all that is
+[40:16.16]  or or force like authority uh like if
+[40:21.12]  authority is the only thing
+[40:24.16]  it just at least in
+[40:26.88]  so this might also be a super local
+[40:29.04]  thing here like in like a Danish thing
+[40:31.04]  like because it's like there's basically
+[40:32.88]  no structure anywhere. Uh but it's also
+[40:37.28]  a thing in Bay Area where like authority
+[40:41.76]  in itself
+[40:43.60]  doesn't really get you all the way. Uh
+[40:48.08]  it it and again people might like say
+[40:50.08]  yeah not a smile and yeah that's that's
+[40:52.24]  nice but if they don't truly believe it
+[40:56.08]  and I have I have just seen so many
+[40:57.60]  times where people yeah that's nice and
+[40:59.36]  they just they they don't mean it.
+[41:02.17]  [laughter]
+[41:02.72]  And if you don't mean it, then how are
+[41:04.48]  you supposed to successfully implement a
+[41:06.16]  project? It would just it will always be
+[41:08.80]  maybe it gets done, but it will be a bit
+[41:10.72]  like it won't like if you if people
+[41:12.56]  don't think it's a good idea, they don't
+[41:14.16]  take ownership. It's just not going to
+[41:15.92]  be really nice. Uh so and so I think
+[41:19.20]  that just takes effort and it takes much
+[41:21.12]  more effort than you normally like that
+[41:22.88]  than you would like it to be. Yeah.
+[41:25.84]  >> You had to influence a ton of people in
+[41:28.24]  getting your project to scale across
+[41:30.08]  Uber. So if Yeah. How do you influence
+[41:34.16]  other engineers then and avoid that
+[41:36.16]  situation you're talking about?
+[41:37.52]  >> Yeah. And again like as I said before
+[41:40.48]  like there's probably always going to be
+[41:42.24]  be somebody somewhere who's like they're
+[41:46.00]  never going to be convinced. Just never
+[41:49.36]  go for 100%. Like that's one thing at
+[41:52.08]  least. Um but but but to me it's really
+[41:55.04]  like I I just believe a lot in leading
+[41:57.12]  by example. like if you say this is what
+[42:00.72]  you're going this is what we're going to
+[42:02.08]  build then you help building and you
+[42:05.60]  also take a lot of the pain and I think
+[42:09.52]  in particular and there's also the thing
+[42:11.68]  about like another thing that that can
+[42:14.32]  very quickly happen is that the the the
+[42:16.48]  the higher level you get uh the more you
+[42:19.52]  can concentrate on the like the hard
+[42:20.96]  stuff the stuff that you there that is
+[42:24.24]  only you who can do um but but That's
+[42:28.48]  really not a lot that only you can do.
+[42:30.96]  Uh there might be a couple of things but
+[42:32.40]  it's really not a lot. So all the other
+[42:35.04]  stuff there there's some tendencies for
+[42:37.44]  people to like say oh because I came up
+[42:40.24]  with the idea I should also implement
+[42:42.00]  the most interesting stuff or what are
+[42:43.92]  new algorithms or whatever or like I
+[42:46.48]  should play with the fun stuff. Um, and
+[42:49.60]  sometimes you do that, but but I think
+[42:51.92]  most of the time you should really
+[42:53.04]  delegate that down. Like you should
+[42:55.28]  delegate the hard stuff down, not and
+[42:57.36]  just keep the easy not the easy stuff,
+[42:59.36]  but um but the stuff that is kind of
+[43:02.48]  boring and you should just do that
+[43:04.64]  yourself because again, you don't have
+[43:06.24]  to prove anything any longer. Once you
+[43:08.32]  once you have reached a certain level,
+[43:09.84]  you don't have to prove anything. You
+[43:11.60]  can do what you want. And so at that
+[43:13.92]  point it's much better to in in my view
+[43:15.68]  at least push down the hard stuff to the
+[43:18.48]  people who can like barely manage it and
+[43:20.40]  then help them uh make sure that they do
+[43:23.20]  that kind they're kind of in the right
+[43:24.72]  direction and then let them kind of work
+[43:27.20]  with that rather that take that yourself
+[43:29.68]  and then delegate all the [ __ ] work
+[43:32.00]  that's that that doesn't help anybody.
+[43:34.32]  Um and we have like we had like this
+[43:37.12]  expression of like shoveling [ __ ] It's
+[43:39.04]  not a nice expression but it is what it
+[43:40.64]  is. Uh there sometimes there's just like
+[43:42.88]  in order to do something there's just
+[43:45.44]  some some really [ __ ] work in there. Uh
+[43:49.28]  and if you take that work uh and like
+[43:52.72]  the the other people do the do the the
+[43:54.56]  fun work that will also it will give you
+[43:57.04]  a lot of credit uh but it will also
+[43:59.68]  allow them to grow much faster because
+[44:01.92]  if they get challenged the rest of the
+[44:04.24]  team they work much faster they they
+[44:06.96]  grow much faster and that's just to to
+[44:08.48]  everybody's benefit. Um so like that
+[44:11.36]  whole thing that's also yeah the coding
+[44:13.92]  leading by example and to me leading by
+[44:15.60]  example just means writing code to a
+[44:19.04]  very large degree. Uh and then taking
+[44:21.12]  all this taking some of that stuff that
+[44:23.92]  other people
+[44:25.76]  that you don't really want to do might
+[44:28.08]  also be improving documentation or
+[44:30.72]  fixing weirdo bugs whatever it is. And
+[44:33.28]  there's not a lot of like there doesn't
+[44:35.04]  have to be a lot of like glory to it.
+[44:38.24]  there's usually not a lot of glory to
+[44:39.68]  it. Um, but I Yeah, I I'm a very strong
+[44:43.84]  believer in in stuff like that.
+[44:46.56]  >> Interesting. Yeah, that's the opposite
+[44:48.32]  advice I I usually hear usually like as
+[44:50.72]  you go up people say you got to do the
+[44:53.36]  hardest parts, the most impressive ones
+[44:55.28]  as well, complex ones to kind of warrant
+[44:58.24]  it being worth your time and you push
+[45:00.64]  out all the easy stuff to anyone that
+[45:02.64]  can handle it that's not you. What's the
+[45:04.72]  downsides of doing it that way? Yeah,
+[45:06.72]  but it's also because it usually turns
+[45:08.96]  out that the easy stuff has it's easy
+[45:12.88]  because it's like it might be easy to
+[45:14.80]  do, but then you're like, oh, this this
+[45:16.96]  thing
+[45:18.48]  why like why are we doing this?
+[45:21.84]  And then you start thinking, oh, how can
+[45:23.60]  we avoid doing that? So you kind of take
+[45:26.08]  some of the easy stuff and it usually
+[45:27.44]  turns it turns out to give that you can
+[45:29.20]  kind of expand that to something that is
+[45:31.84]  not trivial in any longer that actually
+[45:35.76]  that actually did require you to come
+[45:38.00]  in. It was not it was just the intention
+[45:40.32]  or purpose. But when you come in and
+[45:42.32]  look at like why are we why do we have
+[45:45.20]  this many bucks like what is this? And
+[45:48.56]  then you start thinking about is that
+[45:49.68]  the because we have bad reviews because
+[45:51.44]  we have bad testing because something
+[45:53.12]  else and then you can kind of start like
+[45:55.28]  how do we how do we kind of make that
+[45:57.44]  better?
+[45:58.96]  Um, so I think and I and I have I've
+[46:02.56]  heard that the same advice a lot of
+[46:04.24]  times and I had a lot of people come
+[46:07.12]  before after promo committees or
+[46:09.68]  mentoring or whatever saying oh how do I
+[46:12.80]  how do I get the right project so that I
+[46:14.88]  can get promoted or how do I like how do
+[46:17.92]  I grow my scope or like and my advice
+[46:20.64]  has always been the same
+[46:23.04]  more or less forget about that part and
+[46:25.44]  just start writing some code uh focus on
+[46:28.56]  that just do something that works.
+[46:30.16]  Doesn't have to be big. Doesn't have to
+[46:31.44]  be anything. Focus on something that
+[46:32.96]  works. And then every time you do
+[46:34.32]  something, think about are we doing the
+[46:37.12]  right thing here? Like are we
+[46:38.64]  introducing because in a lot of cases
+[46:41.36]  actually um when you build something you
+[46:43.60]  actually introduce more work to other
+[46:45.84]  people. You kind of build a system and
+[46:48.24]  then you like oh this is nice for us but
+[46:50.08]  then it actually turns out that for
+[46:51.28]  other people now they have more work uh
+[46:54.72]  because they have more systems to manage
+[46:56.24]  or they need to configure some other
+[46:57.68]  something else and have more stuff in
+[46:58.96]  their head like how do you think about
+[47:01.12]  how what what is the net overall result
+[47:04.24]  of what you're doing and how can you
+[47:06.40]  make that better?
+[47:08.32]  uh and it just doesn't have to be big
+[47:10.48]  things. Uh but if you like if you're
+[47:12.64]  always working with that in mind, my
+[47:15.68]  philosophy is that then the other thing
+[47:17.68]  will come. Uh you don't have to like you
+[47:20.56]  don't have to be like oh I I must find
+[47:22.72]  something. Uh it will come. And I have
+[47:25.04]  seen it not many times because there are
+[47:27.68]  not many but I have seen a lot of times
+[47:30.48]  where people like oh I need to do like I
+[47:33.36]  need to be promoted and I need to find
+[47:35.12]  the right scope. like just like relax
+[47:37.52]  about that part and just focus on
+[47:40.00]  providing value because once you do that
+[47:42.88]  the other thing will come uh in most
+[47:45.28]  cases again back to the fairness part
+[47:47.12]  that cases where it doesn't come and
+[47:48.32]  then too bad but like in most cases it
+[47:51.84]  it does and I think it's to me it's the
+[47:54.80]  by far the most successful way uh of
+[47:57.20]  getting there. I'm curious as you
+[47:59.44]  advance in your career because I think
+[48:01.20]  this is a common thing some people
+[48:02.56]  experience is did your role become more
+[48:05.44]  political?
+[48:07.52]  >> I'm always like what does political mean
+[48:09.84]  exactly? Um
+[48:12.32]  so I think there a couple things to it.
+[48:14.48]  Um of course you have to talk to more
+[48:16.64]  people so there's more talking and
+[48:19.28]  there's more fighting because you have
+[48:22.56]  to like promote your ideas. H well you
+[48:26.00]  have to promote your ideas but not
+[48:27.44]  probably worse you have to listen to
+[48:28.80]  other people's ideas all the time uh and
+[48:31.52]  because they also want something and
+[48:32.88]  like I think maybe I maybe don't have I
+[48:35.68]  have an opinion or you think that is not
+[48:38.00]  that nice um so in that sense there's
+[48:41.76]  there's a lot of like fighting going on
+[48:44.08]  um I think you also get you get much
+[48:47.28]  more exposed to
+[48:49.68]  to like the realities
+[48:52.08]  like when you're a junior engineer you
+[48:53.92]  kind Oh, we're doing we're kind of doing
+[48:56.80]  engineering and then somebody else has a
+[48:59.44]  grand has a grand plan. They all know
+[49:01.52]  what's going on. It's all under control.
+[49:04.00]  Then you're like you realize at some
+[49:06.24]  point [laughter]
+[49:08.16]  nobody's in control. Like there's an
+[49:11.12]  illusion of control,
+[49:13.36]  but there's just like people randomly
+[49:17.04]  getting ideas and pushing them out. Uh
+[49:20.88]  and that that I think that part is
+[49:22.32]  pretty scary. [laughter]
+[49:24.24]  uh to to to like as a rational engineer
+[49:28.24]  to get to the point where like okay so
+[49:30.96]  we're making decisions just based on
+[49:33.36]  nothing or because you had like a vision
+[49:37.60]  while you were in the shower I don't
+[49:39.44]  know
+[49:40.96]  or like you talked to some other guy who
+[49:43.68]  also don't know what they're talking
+[49:44.88]  about and now that's the strategy um is
+[49:48.56]  that politics maybe it is uh but you get
+[49:51.12]  more and more like you get you get more
+[49:52.88]  and more subject ed to that part and I
+[49:54.48]  think that's that's pretty scary and
+[49:56.32]  it's also definitely not for everybody.
+[49:58.80]  Uh I didn't like it at all. I didn't
+[50:01.04]  particularly like it. I can abstract
+[50:02.56]  from it. I can just do my own thing. But
+[50:04.40]  if you get sucked into that then it then
+[50:07.76]  and a lot of people get sucked into that
+[50:10.08]  because there's so much like oh we could
+[50:11.44]  also do this and let's do a big plan for
+[50:13.36]  whatever and then that takes like weeks
+[50:15.20]  and weeks to do a plan and like
+[50:18.00]  with inbox like okay now we did that
+[50:20.72]  hooray. Um
+[50:23.68]  and so and then there's the whole like
+[50:25.60]  that that idea of like that thing about
+[50:27.28]  like somebody somebody came up with an
+[50:28.80]  idea and now that needs to get
+[50:30.40]  implemented and there's a lot of push
+[50:31.92]  back and all this stuff. Um and of
+[50:34.72]  course everybody has ideas who gets
+[50:38.08]  heard how do we get your how do you get
+[50:40.40]  your idea in? So there's a lot of that.
+[50:43.12]  Um,
+[50:44.80]  my personal approach to all that was
+[50:47.44]  really back to the whole thing about
+[50:49.28]  like I don't need anybody to tell me how
+[50:51.68]  I need to do my things. So I don't also
+[50:53.92]  don't want to tell other people how how
+[50:55.28]  to do their things. Uh and I also don't
+[50:59.04]  like I I have never been like a like
+[51:02.48]  career planner as such like I have not I
+[51:04.40]  oh this is how like I get to this but I
+[51:07.76]  also have a very strong aversion to
+[51:09.60]  projects that I can just see are just
+[51:13.28]  stupid or dead ends or whatever you call
+[51:15.84]  them and just stay away from them and
+[51:18.24]  let somebody else do that. And that's
+[51:20.32]  might be a little bit unfair to those
+[51:21.68]  other people sometimes. Uh but that's
+[51:24.16]  kind of how how I kind of kept my sanity
+[51:27.28]  was basically say, well, okay, this
+[51:29.28]  thing I think you should like it's fine.
+[51:32.72]  You're already enough people. Like you
+[51:35.20]  have plenty of people. I don't need to
+[51:36.56]  be involved. I I have I have my own
+[51:38.80]  thing over here that I can do. I don't
+[51:40.40]  need all that stuff. Uh and of course,
+[51:42.56]  as long as my thing is significant
+[51:45.20]  enough, because if you don't have
+[51:46.48]  anything to do, you're kind of a little
+[51:47.60]  bit then you need to engage with
+[51:49.20]  something. But like as so as as long as
+[51:51.60]  you have something going on yourself
+[51:53.76]  that can kind of fill out your scope
+[51:56.96]  then I like I just say no um a lot uh
+[52:02.56]  and some people might also say too much.
+[52:05.12]  Um, but that's kind of my way of staying
+[52:08.16]  kind of staying a bit away from all that
+[52:10.16]  because there is just there is a lot uh
+[52:12.56]  of noise and I don't know
+[52:16.48]  I just like to be blunt about it just
+[52:18.00]  like plain stupidity in my view but like
+[52:21.12]  I think some people probably call it
+[52:22.88]  politics. I don't think I don't know.
+[52:24.80]  Um, but I also have very low patience
+[52:26.72]  for it uh for stuff like I think if
+[52:29.68]  you're doing something let's talk about
+[52:31.04]  it and do it. I don't want to talk about
+[52:32.88]  we should do something and we talk about
+[52:34.72]  that for hours or days or whatever and
+[52:37.36]  then at the end of it we was like yeah
+[52:40.80]  we could do it next year and like okay
+[52:42.32]  that that was just a pure waste of time.
+[52:44.48]  >> One thing that I hear some from some
+[52:46.32]  friends is they want to avoid all that
+[52:48.32]  stuff so they don't want to get promoted
+[52:51.12]  because then the expectations get higher
+[52:53.52]  of more of that other stuff. So I'm
+[52:56.24]  curious, did is any part of you regret
+[52:58.32]  getting promoted to such a high level
+[53:00.48]  and having to deal with politics?
+[53:02.64]  >> Well, there were okay there were times
+[53:04.16]  when like this is like this just
+[53:08.40]  if only. But I heard but again it really
+[53:12.32]  also depends on how good you are at
+[53:15.44]  resisting pressure
+[53:17.52]  and just like being like being yourself
+[53:20.48]  like resting in yourself. I know it's
+[53:23.52]  like I don't know some kind of voodoo
+[53:24.88]  stuff, but like how confident are you in
+[53:28.32]  just yourself? And do you care how much
+[53:31.20]  do you care about other people's
+[53:33.12]  opinions? And if you care a lot, it's
+[53:35.92]  it's hard. If you don't care too much,
+[53:40.80]  uh it's it's okay. And I like and I I I
+[53:44.16]  like because I had like the good thing
+[53:45.60]  about by by the way, we were remote uh
+[53:48.88]  office in Denmark, small office in
+[53:50.24]  Denmark. And we worked a lot a lot with
+[53:53.36]  the teams in in um in San Francisco.
+[53:57.04]  And the good thing about that is that
+[53:59.36]  our daytime was uninterrupted. So we
+[54:01.76]  basically do whatever we wanted. The bad
+[54:04.16]  thing is we didn't have meetings in the
+[54:05.68]  evening. But it's like but you actually
+[54:07.68]  had a day work like normal work. You
+[54:11.28]  could just do whatever you want and then
+[54:13.12]  you have meetings in the evening. And
+[54:15.12]  that creates this nice like you you kind
+[54:18.16]  of get fully sucked into it. you only
+[54:20.32]  get kind of a couple of hours every day
+[54:21.92]  get sucked into it which I think helps a
+[54:24.64]  lot. Just having having the physical
+[54:26.32]  distance and the time zone distance
+[54:28.48]  actually helped a lot in that because
+[54:30.88]  there was like a lot of other people
+[54:32.32]  were like oh then you pass some BP on uh
+[54:35.60]  in the hallway that oh could you please
+[54:37.28]  come along and we just like talk about
+[54:38.96]  something. Yeah. But we we couldn't do
+[54:41.12]  that. Uh so I think that also helped a
+[54:43.92]  lot.
+[54:44.56]  >> We talked a little bit about influence
+[54:46.16]  and just last question on this. I found
+[54:48.88]  somewhere that you said the best outcome
+[54:51.52]  is when the other person thinks the idea
+[54:53.60]  is theirs. Can you elaborate on what you
+[54:56.32]  mean by that?
+[54:58.32]  >> Yeah. Um, and it's not it's not like it
+[55:02.00]  doesn't happen very often, but I'm I'm
+[55:03.52]  just always when it happens, I am is
+[55:05.84]  those are the best days when I hear
+[55:08.40]  somebody
+[55:10.48]  talking to somebody else like when I
+[55:12.08]  overhear a conversation maybe in the
+[55:13.60]  office, somebody talking to somebody
+[55:15.44]  else about an idea I had originally that
+[55:19.04]  they didn't like.
+[55:21.04]  Um, and then maybe a couple months later
+[55:23.60]  or whatever, it's like they're saying it
+[55:25.60]  and they're not saying that I said it.
+[55:27.28]  they're saying it with conviction.
+[55:29.68]  Um, and it can be it can just be small
+[55:31.84]  stuff, but it can also be a bit lar some
+[55:34.00]  some larger things like I don't like
+[55:36.64]  let's let's just say like you have
+[55:38.64]  resistance on like Odin where you need
+[55:40.64]  to rebuild something because you already
+[55:42.08]  had the tooling but now if you were
+[55:43.92]  actually using you actually had the
+[55:45.12]  benefits but you initially you were not
+[55:47.84]  like able to kind of see through see see
+[55:50.16]  through that and like go go kind of
+[55:52.80]  beyond what you had yourself and see the
+[55:54.80]  benefits of the other thing because you
+[55:56.48]  were looking only at the cost. But after
+[55:58.80]  a while you might have realized that
+[56:01.28]  this actually a good thing. Um without
+[56:04.24]  having been like forced into that you
+[56:06.24]  just like a seed was planted uh and then
+[56:09.36]  that kind of grew into something and
+[56:11.84]  then suddenly that person is actually
+[56:15.20]  aligned and you didn't do a lot. Maybe
+[56:17.84]  you notched a couple of times or there
+[56:20.00]  was like a team kind of not a conscious
+[56:22.16]  team effort but like you get into an
+[56:24.00]  environment and it kind of changes you a
+[56:26.40]  little bit. Um, and like it's just a
+[56:29.04]  couple I' I've seen it not many many
+[56:31.44]  times, but I've seen it a couple times.
+[56:33.04]  It's just like it's just the best
+[56:34.64]  feeling. And it's not the best feeling
+[56:36.80]  of like, oh, you were right kind of
+[56:38.24]  thing. It's just um to some degree a
+[56:40.80]  proud feeling of like those guys, they
+[56:44.80]  learned they they're on the right track
+[56:46.40]  now. And it was without force. Like
+[56:49.84]  there was no force involved. It was not
+[56:51.84]  just because you kind of forced it into
+[56:54.88]  them. You we just need to do this. They
+[56:57.20]  were like actually actually like oh yeah
+[56:59.28]  this actually good idea that's truth.
+[57:01.60]  >> I saw somewhere that you had some
+[57:04.16]  unconventional advice for picking
+[57:05.92]  mentees or just something that I hadn't
+[57:07.52]  heard before where you pick mentees
+[57:11.28]  specifically outside of your org and you
+[57:13.60]  try to disperse them to increase your
+[57:15.68]  influence. I'm curious to hear more
+[57:17.84]  about how do you pick mentees?
+[57:20.64]  >> Yeah. So men like Okay. So mentoring in
+[57:23.12]  general is like it's a very like um
+[57:27.36]  I don't know it sounds so nice and
+[57:30.16]  appealing but it's also when you look at
+[57:32.48]  like the whole thing about scaling
+[57:33.68]  yourself it's like super inefficient
+[57:36.32]  like because
+[57:38.48]  you kind of paralyze it. You're like
+[57:40.72]  you're you're one person you're talking
+[57:42.08]  to one other person. Uh and there's only
+[57:44.96]  so much time in you only have so much
+[57:46.88]  time. Um, so like the it's just super
+[57:50.88]  hard to get high value out of that. Uh,
+[57:53.28]  so to me it was it was really always
+[57:56.64]  mainly just about having a network
+[58:00.88]  uh and having conversations that are
+[58:02.56]  like two-way conversations. It's not
+[58:04.24]  just me providing whatever. It's just
+[58:06.24]  also them talking about something. And
+[58:08.48]  that's where like if you go if you're
+[58:10.40]  all mentoring inside your own like team
+[58:12.56]  or or is like like who's who's actually
+[58:15.84]  learning what now? uh and like the the
+[58:20.48]  that close range mentoring I think you
+[58:23.04]  can that is much easier to do at like
+[58:25.12]  not at scale but you can kind of talk to
+[58:28.08]  people in a group setting more easily
+[58:31.36]  about like career advice or whatever you
+[58:34.56]  can do a bit of like
+[58:36.96]  informal like oh what about that and
+[58:39.20]  what about but it doesn't have to be
+[58:40.48]  like scheduled or structured in that
+[58:42.88]  sense where if you go to people you
+[58:45.12]  don't really know or they're further
+[58:46.40]  away from you there's more work in it
+[58:48.32]  and you also have to like there's also
+[58:49.84]  more benefit for you because you could
+[58:51.68]  learn something about what they're doing
+[58:53.28]  you can give them more input on what
+[58:54.64]  they could be doing or why they're doing
+[58:56.16]  what and so like so that's I think it's
+[58:59.44]  nice it's nice if you actually have to
+[59:01.44]  like spend the time to to actually do it
+[59:03.20]  so that you also get some kind of
+[59:04.80]  benefits but also so that you can kind
+[59:06.88]  of plant plant seeds elsewhere
+[59:11.20]  um because I've also seen
+[59:14.64]  a number of times actually that people
+[59:17.20]  come in and say, "Oh, I just how do I
+[59:19.92]  get promoted? I'm I'm I only get [ __ ]
+[59:22.40]  projects and like whatever." Um, but
+[59:25.68]  then you kind of once they start
+[59:27.12]  thinking about, oh, maybe there's
+[59:28.80]  another way of thinking about the whole
+[59:30.16]  thing, another way of working that will
+[59:32.64]  kind of rub off inside their teams. Uh
+[59:36.24]  so you're kind of planting a small seed
+[59:37.84]  there that again will take a while but
+[59:40.72]  might actually do positive change not
+[59:42.88]  only to the mentee but also the rest of
+[59:45.60]  the team and eventually the rest of the
+[59:47.36]  orc. Um so that's why like
+[59:51.28]  I I I prefer to like have people who are
+[59:54.56]  not super close.
+[59:55.76]  >> Do you have advice for mentees on how to
+[59:59.04]  signal their potential to mentors? So I
+[60:02.16]  imagine at some point you had probably
+[60:04.64]  more asks for people to you know be
+[60:07.20]  mentored by you or spend time with you
+[60:09.44]  than you had time for. Um but let's say
+[60:12.08]  someone's you really promising and they
+[60:13.92]  really want to mentor from some person.
+[60:16.96]  What would be your advice? How can they
+[60:19.04]  you know set that up in a very natural
+[60:20.64]  way? But I would I would probably start
+[60:23.04]  like not just by asking oh can you do
+[60:25.04]  mentoring because also because mentoring
+[60:26.96]  can be kind of a mental load kind well
+[60:29.36]  not a mental load because that's
+[60:30.40]  something else but like it could be kind
+[60:32.08]  of it could be kind of it can feel like
+[60:34.80]  a big thing and a responsibility that
+[60:37.04]  you might not actually want. Um, so it
+[60:40.48]  might more be like, "Oh, can you help
+[60:42.08]  with can you do can you help with
+[60:43.52]  something specific or can we just talk
+[60:45.20]  about like
+[60:47.04]  something a design or a product we're
+[60:49.20]  building or whatever?" Like just have a
+[60:50.80]  conversation and then you take it from
+[60:52.64]  there. I think that's that's one thing
+[60:54.88]  you can do. Um, if if it's about like
+[60:58.08]  how do you actually approach in the
+[60:59.44]  first place, of course, always like cold
+[61:02.80]  call and it works most of the time. Um,
+[61:05.92]  I I usually didn't have that many
+[61:07.52]  people. um reach out but there were a
+[61:09.84]  couple of times but but um
+[61:13.44]  but then also like just show up ask
+[61:16.56]  questions like if you I had a lot of
+[61:18.88]  presentations like in different offices
+[61:23.12]  um and I always like when people like
+[61:25.36]  come up and talk and ask uh so if you
+[61:27.68]  kind of ask good questions uh I don't
+[61:30.80]  know what question good quick good
+[61:31.60]  questions are but like if you ask if you
+[61:33.76]  just come up and ask and signal like
+[61:36.08]  that I think that's that is a good
+[61:37.44]  signal of interest. Uh and then just
+[61:42.24]  because I I think it's also on the on
+[61:46.00]  the mentor to kind of say, well, okay,
+[61:49.68]  what you what you come and say is is
+[61:53.36]  really not what you should be saying.
+[61:55.44]  And I I don't think that should
+[61:56.88]  disqualify because that's the whole
+[61:58.96]  point. They need mentor. They need
+[62:01.44]  mentoring. They might not actually know
+[62:02.80]  what to say. Um, so, so I I I don't
+[62:06.72]  think that if you if you want to do
+[62:08.24]  mentoring, don't don't disqualify just
+[62:10.56]  because they don't didn't send the right
+[62:12.00]  resume or whatever. Um,
+[62:14.96]  but they do have to have some
+[62:16.00]  willingness to learn. And I think you
+[62:18.16]  get you can kind of gr you can kind of
+[62:20.16]  gauge that from just a like a short
+[62:23.68]  discussion of like what are they doing,
+[62:26.64]  what are the outlooks, what they have to
+[62:28.24]  be doing, what are they thinking and see
+[62:30.00]  how they do, how do they react to your
+[62:31.52]  thing. Um and that might take a while
+[62:34.48]  take just a bit of time like 10 15
+[62:36.32]  minutes. Um and that's I think the other
+[62:39.36]  thing is like to me mentoring is much
+[62:42.08]  better if it's just pretty informal.
+[62:44.88]  Like I I have like Uber has had have
+[62:48.48]  been through different like a number of
+[62:50.48]  different like mentoring systems or
+[62:52.24]  platforms or [snorts] projects or
+[62:53.84]  programs or whatever. And I'm like I
+[62:56.64]  don't want a plan uh and I don't want a
+[62:59.68]  schedule. that don't want anything
+[63:01.12]  because like it's all individual what
+[63:03.44]  people want or need. Uh so so also don't
+[63:07.60]  just don't make it more than has to be
+[63:11.28]  and also don't don't be afraid to say
+[63:13.20]  okay I don't think we like kind of we're
+[63:16.96]  done like or like I don't think we're
+[63:19.04]  getting going to like you're not going
+[63:20.40]  to going to get more out of it I'm not
+[63:22.08]  going to get more of it. So this like
+[63:23.60]  yeah it was nice
+[63:25.12]  >> coming to the end of your career story.
+[63:27.04]  I know eventually you left Uber and I'm
+[63:29.68]  curious what's the story behind you
+[63:31.20]  leaving Uber.
+[63:32.72]  >> It's not a nice story unfortunately. Uh
+[63:35.68]  I like I don't think so it is because I
+[63:38.32]  was actually pretty happy on Uber. Uh
+[63:40.72]  and um surprisingly so uh because when I
+[63:44.88]  joined Uber I was like this like a crazy
+[63:47.68]  like a crazy high pace place. When I
+[63:50.96]  joined in 14,
+[63:53.12]  it was also a very hot place to be and
+[63:56.32]  people were coming from Google, Netflix,
+[63:59.28]  Amazon like it like Uber was kind of the
+[64:01.68]  place people were going to. Uh and then
+[64:04.24]  you get a bit of like imposter syndrome
+[64:05.84]  because like I didn't come from like big
+[64:07.60]  tech is going I came from small tech. Um
+[64:12.08]  so so I like all these people kind of
+[64:14.24]  are much better than me. So like what
+[64:17.28]  can I do? Uh and like I was talking so I
+[64:19.92]  better like
+[64:22.00]  I kind of hit the ground running uh uh
+[64:24.56]  and never stop and that that that's can
+[64:28.08]  also that that you can only do that for
+[64:30.00]  so long. I'm like okay like I saw when I
+[64:33.20]  joined and again I didn't have a plan
+[64:34.88]  but like I wouldn't be surprised if I'm
+[64:36.88]  out of there after like three or four
+[64:38.16]  years because it's like it's like a
+[64:39.68]  pretty intense environment. Um but it
+[64:43.84]  turns out it was yeah it was intense.
+[64:45.52]  also turned out that all those people
+[64:46.96]  who came from the other places
+[64:49.76]  well I don't want to like they were not
+[64:52.64]  that much better than me after all
+[64:55.33]  [laughter] uh it turned out they were
+[64:57.12]  they were also just human um
+[65:00.80]  and maybe more importantly they change
+[65:04.00]  jobs much more frequently which means
+[65:06.80]  it's really hard to keep a long project
+[65:08.48]  running uh and kind of get the long-term
+[65:11.04]  benefit of that but but even with the
+[65:14.16]  high pace environment and the
+[65:15.76]  performance uh performance management
+[65:18.00]  and the
+[65:20.32]  promos and all that stuff that is like
+[65:22.72]  not natural to a like a Danish work
+[65:25.20]  environment. Uh it was also just a whole
+[65:27.68]  lot of fun. Uh and we had an office
+[65:31.44]  with a very outsized
+[65:33.92]  um um uh influence.
+[65:38.40]  Uh we had a lot of senior engineers
+[65:41.44]  uh compared to like we were a small
+[65:42.96]  office but like we had very senior
+[65:45.52]  engineers more or less from the get-go
+[65:47.28]  and we just kept on getting more because
+[65:49.84]  and we grew most of them internally a
+[65:51.76]  lot of people grew to high levels. Um so
+[65:55.68]  like in our office we grew two distin
+[65:57.52]  distinct Indians which is like out of at
+[66:00.00]  that point like 70 people it's like out
+[66:03.60]  of 4 and a half thousand years that's
+[66:06.48]  that's pretty insane. Um, so it was a
+[66:11.68]  lot of fun and and we had these very in
+[66:14.64]  like these these projects that we're
+[66:16.32]  working on were very like challenging
+[66:19.36]  and satisfying to work on and it was all
+[66:21.12]  the stuff that if you're just like in a
+[66:23.04]  normal company somewhere you go to
+[66:24.88]  conference or whatever or you read about
+[66:26.56]  blog posts and you reading about these
+[66:28.24]  people who get to like do these
+[66:29.60]  optimizations automations like ah if
+[66:32.24]  only if only we had that like if only we
+[66:35.28]  could do that and but we had that um so
+[66:38.16]  like a lot of good stuff. Unfortunately,
+[66:40.72]  it just happened that management
+[66:42.96]  changed. Um, and that just
+[66:47.36]  created this
+[66:49.92]  uh change in engineering culture that
+[66:53.84]  just meant that more and more people did
+[66:56.08]  not like it. Uh uh and my managers
+[67:01.12]  decided to leave at some point. He was
+[67:03.28]  like my local manager who was also the
+[67:05.68]  site lead. He decided to leave. Then the
+[67:08.48]  the first distinguishing engineer in our
+[67:10.56]  office decided to leave at around the
+[67:12.08]  same point. Other people started to
+[67:13.84]  leave. A lot of people left in the US
+[67:16.00]  also and that just meant that it got
+[67:19.68]  less and less fun and there was more and
+[67:22.80]  more top top down kind of management
+[67:26.00]  going on because initially in the old
+[67:27.92]  days it was very engineering
+[67:30.32]  oriented especially in platform
+[67:31.60]  engineering where where I was. Uh so
+[67:33.68]  very much uh very much not necessarily
+[67:36.40]  only driven by engineers but engineers
+[67:38.00]  were kind of part of the process when
+[67:40.48]  you're designing something you were you
+[67:42.64]  were there uh you were not always like
+[67:46.48]  it was not always the thing you wanted
+[67:48.32]  to do that actually was decided to do
+[67:49.84]  but at least you were there you
+[67:52.00]  understood the reasoning you kind of
+[67:53.84]  stand behind it no almost no matter what
+[67:55.84]  but it turn it kind of went to a place
+[67:58.48]  where it was just like oh now we now we
+[68:00.80]  need to do this and you're like that
+[68:02.40]  seems stupid. Um and like there was this
+[68:06.32]  decision of going to cl to to cloud.
+[68:08.56]  Google had on-prem uh was operating
+[68:10.88]  onrem had benefits and had downsides. Uh
+[68:14.64]  and there was a decision that we should
+[68:16.40]  move to cloud. Uh and the decision was
+[68:18.80]  based on price that it was going to be
+[68:21.60]  cheaper to run on cloud and no engineer
+[68:25.52]  believed that also turned out not to be
+[68:27.60]  true. It only turned out to be true
+[68:29.84]  because then we had to cut cost of
+[68:32.56]  platform by almost 50%. Then
+[68:36.40]  it was cheaper but we we could also have
+[68:39.44]  done that on prim and have have it like
+[68:41.20]  then we just have even cheaper but so
+[68:44.24]  that whole like top down management uh
+[68:47.92]  just led to a full-on drain of uh
+[68:51.60]  especially senior engineers because they
+[68:54.08]  nobody really want to be part of it any
+[68:55.76]  longer.
+[68:57.44]  Nobody wants to be left out any longer
+[68:59.20]  to some degree also. Um so at some point
+[69:01.76]  I was also like I could stay but staying
+[69:04.72]  would basically mean
+[69:06.96]  that I would have to like um work in an
+[69:11.12]  environment where a lot of a lot I
+[69:14.08]  wouldn't be able to kind of uh stand
+[69:16.88]  behind the decisions that were made. And
+[69:19.68]  as a as a senior engineer,
+[69:23.04]  if you're not behind the decisions that
+[69:25.20]  are made, it's really hard.
+[69:28.32]  Uh then you can just choose
+[69:31.60]  my one of my peers or one of the
+[69:35.44]  managers managers actually said when I
+[69:37.52]  was like, I'm I think I'm going to
+[69:38.72]  leave. He was like, yeah, but don't why
+[69:40.56]  not just stick around and you just do
+[69:41.92]  your own thing and just take the money
+[69:45.04]  more or less. I'm like, yeah, sure. the
+[69:47.04]  money the money is pretty nice but I
+[69:49.28]  just I don't think I can do it. I don't
+[69:51.04]  think I can witness
+[69:53.52]  what other people are going through and
+[69:54.96]  just like do my own thing. I just don't
+[69:57.20]  think I can do it. Uh so at that point I
+[69:59.44]  was like I then I was like then I have
+[70:01.28]  to leave because I have tried enough to
+[70:03.84]  change uh how things are done no effect
+[70:07.20]  and that just means in my view that Uber
+[70:10.00]  does not have the need for interviewers
+[70:13.92]  at that level. as simple as that. Um,
+[70:17.92]  and then I was like, then didn't then
+[70:20.00]  yeah, at that point I had to leave. Uh,
+[70:22.24]  but so to me it's a pretty sad thing
+[70:25.12]  because it's like a self-inflicted thing
+[70:28.80]  that Uber did uh for no for no good
+[70:32.16]  reason in my view, but it just lost so
+[70:34.96]  many really really good people. Mostly
+[70:37.44]  two data bricks by now by the way, but
+[70:39.04]  whatever. [laughter]
+[70:40.48]  There's like a parallel world going on
+[70:41.84]  there.
+[70:42.96]  what made you want to go to a startup
+[70:44.64]  instead of maybe data bricks or like a
+[70:46.80]  big company again?
+[70:48.08]  >> Yeah, so I think there are two parts to
+[70:50.16]  it. Uh so data bricks pretty pretty nice
+[70:53.76]  because they had also a local office of
+[70:55.92]  open the local office. A lot of people
+[70:58.32]  moved there a lot of people are new but
+[71:00.56]  also just to build this to to build more
+[71:02.88]  infrastructure and more or less to build
+[71:05.52]  the same thing we have built once in a
+[71:06.88]  while and I like we already built it. It
+[71:10.24]  wasn't that [ __ ] Uh, so like I don't
+[71:12.96]  know if I want to do it again. Like
+[71:14.80]  yeah, it was a lot of fun, but like I
+[71:17.12]  don't know, maybe it's like like if I'm
+[71:19.92]  if I'm moving somewhere, there should be
+[71:21.28]  some kind of change. And it's nice to
+[71:23.04]  have it like a an like a like what's
+[71:25.52]  called a like a cultural change. It's
+[71:27.44]  nice, but it would also just be nice to
+[71:29.20]  like do something else. Uh, the other
+[71:32.88]  thing is uh as as it's nice to be a
+[71:35.84]  senior engineer, but it's also scary.
+[71:38.80]  Scary when you change jobs.
+[71:41.36]  uh because suddenly you get into an
+[71:44.56]  environment where you don't know
+[71:45.92]  anybody. They don't know you. You have
+[71:48.24]  no reputation. Well, you have some
+[71:50.08]  reputation from the outside but you have
+[71:51.92]  no personal reputation. Uh and what I
+[71:56.56]  have seen a lot of times is like people
+[71:58.16]  come in super like senior years come in
+[72:00.80]  they have like and they come in to fix
+[72:02.80]  something usually they're like oh they
+[72:05.12]  fix this thing over here they will come
+[72:07.04]  in and they will fix it for us also. And
+[72:09.68]  it's just never that simple. It's just
+[72:11.76]  never that simple. There's almost no
+[72:15.60]  chance that you can take whatever you
+[72:17.04]  did over there and apply again with
+[72:18.64]  success. Just it just doesn't happen. Uh
+[72:21.68]  so and those people are just in for a
+[72:23.60]  very rough ride because they will face
+[72:25.92]  resistance from everybody. Not everybody
+[72:27.76]  but they face a lot of resistance.
+[72:29.60]  Everybody say yeah what told you
+[72:33.18]  [laughter]
+[72:33.84]  and will more or less cheer when they
+[72:35.92]  when they fail. It's like I don't know
+[72:38.32]  it's not super attractive to be a senior
+[72:40.64]  engineer like that because like the
+[72:42.88]  expectations when you when you come in
+[72:44.48]  are so high. Um like some companies do
+[72:48.08]  quite well because you kind of just they
+[72:50.32]  say well we could like start slow and
+[72:52.32]  you embed you into the team or whatever
+[72:54.08]  not you're not from on day one kind of
+[72:56.56]  but still there's just a lot of like
+[72:58.56]  catching up to do and you have to like
+[73:00.00]  prove yourself. Um, so it's not that
+[73:03.04]  it's cannot be done and I'm not saying
+[73:04.40]  that I I didn't want to do it at all,
+[73:05.92]  but like I just didn't want to do this
+[73:08.08]  like a natural move to another company
+[73:11.36]  where to just do the same. I just like I
+[73:13.28]  was like if you're doing something, we
+[73:14.48]  might as well doing do something real
+[73:16.48]  like drastic and the drastic thing is
+[73:19.04]  just like the the complete opposite of 4
+[73:22.96]  and a half thousand years is like
+[73:26.16]  two million years or whatever it is. Um,
+[73:29.60]  yeah. Yeah. So that that was basically
+[73:30.72]  my my reasoning around it. It's just
+[73:32.56]  like okay but like let's just and we can
+[73:35.28]  because the other thing we can always do
+[73:36.56]  the other thing always like can always
+[73:38.72]  just go to data bricks or one of the
+[73:40.64]  other places. I can even go back to Uber
+[73:43.12]  if I wanted to. I don't want to but like
+[73:46.00]  there's always there always the other
+[73:48.32]  options. H so doing the startup thing is
+[73:51.60]  like if you're doing it then yeah why
+[73:54.08]  not why not just go all in on that. So
+[73:57.12]  that was my kind of thinking around it.
+[73:59.52]  Right. And since you've joined the
+[74:01.60]  startup, how how has it been compared to
+[74:03.92]  your expectations?
+[74:05.76]  >> It has been very interesting. I would
+[74:07.92]  say it has been a lot of fun. Like we do
+[74:12.08]  we have like an AI enterprise automation
+[74:15.44]  startup going. It's super interesting
+[74:18.00]  and we we build so much stuff
+[74:21.84]  um every day. Uh and we're kind of
+[74:24.88]  navigating a space that nobody has ever
+[74:26.80]  been in before. So it's like and so you
+[74:29.44]  have to really be on on the edge always
+[74:32.80]  which is like and I like it and I like
+[74:34.48]  and I like also being and we're building
+[74:36.08]  a product. We're not just building
+[74:37.60]  infrastructure. I love building
+[74:39.36]  infrastructure but it also gets you very
+[74:41.60]  disconnected from like the reality. Uh
+[74:45.20]  where here we're like building the
+[74:46.80]  entire thing and I just like that a lot.
+[74:49.36]  I don't like a lot the ah the
+[74:52.32]  fundraising and oh we're about to run
+[74:54.24]  out of money and then what and like that
+[74:56.08]  whole thing. it can be a bit stressful.
+[74:58.16]  Uh [laughter]
+[74:59.52]  uh and yeah, so it's it's been good. Uh
+[75:04.88]  uh it's been harder than I thought it
+[75:07.28]  would be. Uh for for now, I would say
+[75:11.12]  still still worth it. Uh not in not in
+[75:15.44]  money. Yes, I hope it will eventually.
+[75:18.40]  >> Coming to the end of the conversation, I
+[75:20.80]  wanted to ask you some career
+[75:22.32]  reflection. So, is there an engineering
+[75:25.60]  mistake or the the biggest engineering
+[75:27.36]  mistake that you saw happen at Uber that
+[75:30.88]  was only obvious in hindsight?
+[75:33.60]  >> I think it's hard because there were a
+[75:35.20]  lot of choices that did not scale,
+[75:39.84]  but at the point where they were made,
+[75:42.96]  it was kind of the right choice. It's
+[75:45.68]  just it got so painful later. Uh, does
+[75:49.04]  that mean that you'd have done it
+[75:50.32]  differently? I don't necessarily think
+[75:52.56]  so. Um like for example I said like at
+[75:57.68]  some point we were operating like 50
+[75:59.52]  different databases or whatever. Was
+[76:02.08]  that wrong as such? Well maybe that
+[76:04.32]  maybe somehat that was wrong but but it
+[76:06.96]  came out of the idea of like let
+[76:09.04]  builders build like just like if you
+[76:11.12]  need to do something go nuts. Let not
+[76:13.68]  let nobody block you. Which once you're
+[76:17.68]  10 years into it is an insane strategy
+[76:21.28]  that's going to like kill you. Uh but in
+[76:25.36]  the early days like you don't want a lot
+[76:27.68]  of structure. You just because you don't
+[76:29.60]  know what you're doing. You don't know
+[76:30.88]  if you're going to be successful. You
+[76:32.64]  have no idea what's going to happen. So
+[76:34.24]  they go nuts. Um I think the hard part
+[76:37.92]  is like when do you like when do you
+[76:40.48]  expand? When do you contract? like how
+[76:42.88]  how do how do you kind of manage that in
+[76:44.96]  a good way and that's super hard uh and
+[76:47.28]  I think I think some of the things is
+[76:51.20]  that I think Uber really should have and
+[76:53.52]  I don't really I have not really
+[76:55.20]  reflected much on how how we should have
+[76:57.44]  done it but that's definitely something
+[76:59.04]  where like we should have better at
+[77:01.44]  doing those transition from like full
+[77:04.08]  freedom to more structure
+[77:06.88]  um like one of our prime examples is uh
+[77:10.40]  at some point we start doing tracing uh
+[77:12.72]  back when Jerger was uh was built uh for
+[77:15.44]  for distributed tracing pretty nice and
+[77:18.88]  everybody thought this is pretty nice uh
+[77:20.96]  and then there was like a mandate to say
+[77:23.28]  okay we need to we need to enable
+[77:24.96]  tracing all on all all our service
+[77:26.48]  because we have a microser we have like
+[77:27.76]  a thousands of microservices nobody
+[77:29.12]  knows what's going on let's do tracing
+[77:30.80]  because that will give us a lot of
+[77:32.00]  benefit and then there was an email
+[77:33.92]  going out
+[77:35.92]  and I don't remember the exact dates I'm
+[77:37.92]  guessing the first email was in 15
+[77:39.76]  saying oh okay we're doing tracing. All
+[77:42.40]  teams must implement tracing.
+[77:45.20]  And there probably was a deadline 3
+[77:47.52]  months later. And then 3 months later,
+[77:49.60]  it's like the same because it had not
+[77:51.84]  happened surprisingly. And then it there
+[77:54.64]  was just like maybe until maybe 17, 18,
+[77:57.60]  they was like, "Okay, this now we're
+[77:59.36]  doing it. Now we're doing it." And but
+[78:01.76]  it never got done. And somehow the
+[78:03.76]  emails just stopped coming, but it never
+[78:05.12]  got done. Like for real.
+[78:09.12]  So [snorts]
+[78:10.72]  that's inability to kind of affect like
+[78:16.00]  global change
+[78:18.24]  just made so many projects so hard. Um
+[78:22.80]  and it's really to a very large degree a
+[78:25.12]  cultural problem. But I think it's not
+[78:27.20]  just an engineering problem but it's an
+[78:29.12]  engineering culture problem. And I think
+[78:30.80]  that I think to me that is probably the
+[78:32.56]  one of the biggest things that
+[78:36.16]  that to some degree hurt the company
+[78:38.24]  because there was there's a lot of waste
+[78:40.24]  a lot of waste going on. um that was not
+[78:43.28]  necessary later on was necessary in the
+[78:45.36]  beginning but they don't not um so I
+[78:49.12]  don't think I don't have like a concrete
+[78:50.64]  like oh then we did this and then it was
+[78:52.40]  kind of stupid and we should have done
+[78:53.68]  that where where it was like super
+[78:55.92]  obvious well okay I'll just mention one
+[78:58.88]  thing and that is uh at some point and
+[79:03.76]  maybe somebody's going to be super angry
+[79:05.52]  about this I don't know but uh at some
+[79:08.08]  point we tried to implement uh a a kind
+[79:12.56]  of software networking stack. Um and the
+[79:16.40]  the team building it was like, "Yeah, so
+[79:18.40]  we're going to do this uh thing where
+[79:20.16]  you like we're going to build a software
+[79:22.56]  network uh uh where like if you are when
+[79:26.72]  when when services need to communicate,
+[79:28.64]  it goes into an ingress uh and then it
+[79:31.12]  gets routed through a network and to a
+[79:32.56]  to to to the right service." And that
+[79:34.48]  whole thing we implement in node
+[79:38.40]  and I like I just distinctly remember
+[79:41.84]  there was like a platform tech talk or
+[79:44.08]  about like this is like insane but it
+[79:48.24]  was back in 16 or whatever and I was
+[79:49.84]  like not that senior yet. So I okay but
+[79:52.56]  those people are pretty senior they must
+[79:53.84]  know what they're talking about. turned
+[79:56.24]  out they did not know what they were
+[79:58.48]  talking about and that that caused a lot
+[80:00.96]  of pain [laughter]
+[80:02.64]  and many years of untangling uh and
+[80:06.08]  whatever. Um so I think that that was a
+[80:08.72]  pretty bad decision.
+[80:11.44]  Sorry to anybody who who don't think
+[80:13.12]  there was but I think it was
+[80:15.52]  >> about Uber's culture. Um earlier you
+[80:19.44]  mentioned that especially with the promo
+[80:21.84]  committees that there's a bit of a
+[80:24.00]  unusual culture of you know everyone
+[80:27.12]  needs to sell their managers just
+[80:29.60]  present their reports and you just sell
+[80:31.36]  it in a big group and you alluded to
+[80:33.84]  that at that time there was also some
+[80:35.92]  other cultural backlash and I vaguely
+[80:38.32]  remember that too like around maybe it
+[80:40.32]  was 2017 or something like that where
+[80:42.96]  there was a lot of stuff going on at at
+[80:44.88]  Uber. What was it like for you
+[80:47.68]  experiencing that at the time?
+[80:49.68]  >> There's a fairly big cultural difference
+[80:51.28]  between Denmark and Silicon Valley. It's
+[80:55.28]  very interesting like and in many ways
+[80:58.16]  quite entertaining. Um
+[81:01.44]  uh so like so it was a bit weird to
+[81:05.04]  experience because like many of those
+[81:07.36]  problems we just was we just were like
+[81:10.24]  are these like is this how people
+[81:12.80]  behave? I thought we were just like
+[81:14.64]  coding and having fun. [laughter]
+[81:17.36]  Like what are you doing over there? Like
+[81:19.60]  you're apparently doing something very
+[81:20.96]  different. Uh so it was like it was very
+[81:24.96]  well first of all quite disconnected
+[81:26.64]  because like we were not like we were
+[81:30.08]  quite far from that whole thing. Um or
+[81:33.44]  maybe it's just me. I was like maybe I
+[81:36.40]  was just very naive. I don't know. Um
+[81:39.20]  but first of all it was it was good to
+[81:40.56]  be at a distance because we like there
+[81:42.32]  was a lot of stuff going on. We could
+[81:44.08]  just keep on like executing and doing
+[81:45.92]  our thing. So in that sense it was nice
+[81:48.16]  but it was also it was also insane like
+[81:50.16]  so that much stuff that was happening
+[81:51.68]  and people leaving getting fired, board
+[81:55.20]  members getting kicked out, Travis
+[81:56.96]  getting kicked out. A lot of stuff going
+[81:59.28]  on was like every day you like what's
+[82:01.36]  going to happen now?
+[82:03.60]  Um but again daytime quiet here because
+[82:08.72]  9 9 hours time difference we can just do
+[82:11.28]  our thing and then whatever happens
+[82:12.88]  happens and there's not really anything
+[82:14.40]  we can do about it. It's not like not
+[82:16.80]  our fault. Uh there's some of it that of
+[82:19.28]  course we also have to adapt to. Um but
+[82:23.36]  there was very much like when I joined
+[82:25.92]  there was very much like every
+[82:28.16]  everything was very much about you like
+[82:30.80]  performance reviews you promo you
+[82:33.60]  conversation you like when you get hired
+[82:36.48]  or and you negotiate your salary it's
+[82:38.32]  just about how good you are at
+[82:39.60]  negotiating. So it's all about you. It's
+[82:41.20]  not about the team. The team doesn't
+[82:42.56]  matter at all. It doesn't play into
+[82:43.92]  anything more or less. uh which is
+[82:46.56]  insane to me [laughter] like I don't get
+[82:50.32]  it. So even though that was kind of how
+[82:52.80]  how Uber works, we had never like gone
+[82:56.00]  fully into that mindset. Uh so for for
+[82:59.84]  us there wasn't that big of a of a
+[83:01.92]  difference. Um it was more like okay now
+[83:04.56]  like because I always thought like I
+[83:06.56]  just thought that was how it was in the
+[83:08.08]  US. Uh, so I was like, "Okay, so Oh,
+[83:10.88]  it's not actually like you actually
+[83:13.20]  wanted to be different." Like I thought
+[83:15.12]  I thought you liked it like that,
+[83:17.05]  [laughter] but but you don't I don't I
+[83:19.04]  don't know why why you did it like that
+[83:20.40]  then. But anyway, but it was very
+[83:22.96]  interesting times and there was just a
+[83:24.48]  lot of scandals also where we were like
+[83:27.60]  why why did you do that? like why did
+[83:31.44]  you decide to go to a strip bar or like
+[83:33.44]  why did you decide to to kind of uh open
+[83:36.96]  up somebody's private data and see where
+[83:39.12]  they went? Like what what motivated you
+[83:41.20]  to do that? I don't know. [laughter]
+[83:43.60]  But like [snorts] what motivates a board
+[83:45.36]  member to like on a live stream to the
+[83:48.08]  entire company after a sec sexual
+[83:50.48]  harassment scandal to say something
+[83:52.40]  like, "Yeah, it's going to be nice to
+[83:54.16]  get the women on the board because they
+[83:55.76]  talk more." [laughter]
+[83:57.04]  >> Oh, no. No. What's
+[83:59.44]  >> that's so bad? Like what? Like what are
+[84:02.56]  you thinking about? Like what is this
+[84:05.20]  insanity? I have mixed feelings about
+[84:07.36]  it. It was just I was just happy to be
+[84:09.12]  at a distance and but sometimes you
+[84:11.04]  could also just feel like okay bring out
+[84:12.96]  the popcorn and like see what's
+[84:14.16]  happening here because like it was just
+[84:16.24]  it was very interesting times when I
+[84:18.32]  went to the US to visit before 17. You
+[84:21.44]  go to some of the offices people like
+[84:23.60]  fist bump and then do you want a
+[84:25.84]  whiskey? I don't know. It's like Tuesday
+[84:28.64]  at 2:00 p.m. I don't know. Do I want
+[84:30.80]  whiskey? I don't think so. Like I I
+[84:33.03]  [laughter] don't know. Is that a thing?
+[84:35.92]  >> If you look back on your career so far
+[84:38.64]  and you knowing everything you know now,
+[84:41.04]  if if you were to give yourself advice
+[84:43.12]  when you just started in your career,
+[84:45.28]  what would you say? Just try stuff and
+[84:48.64]  don't don't be afraid just because it
+[84:51.12]  looks hard or because those other people
+[84:52.72]  look much better than you because they
+[84:55.68]  might be better than you. Sure, but but
+[84:58.64]  you can also get there. It's not it's
+[85:00.56]  not it's not rocket science. Uh it it is
+[85:05.28]  just computers. Uh and if if you like
+[85:07.52]  computers, uh you're pretty well off uh
+[85:10.00]  if you just keep going with that. Um, so
+[85:13.52]  I think that's probably the main thing
+[85:15.28]  in my view. It's like just let let the
+[85:18.56]  let your curiosity take you where
+[85:20.48]  wherever and don't just don't assume
+[85:23.84]  that what you're doing right now is the
+[85:26.08]  best thing you can be doing
+[85:28.64]  because there's probably something
+[85:30.00]  that's even better out there or or or
+[85:32.16]  will will be soon. And then
+[85:35.28]  don't don't just discard that just
+[85:37.28]  because you're kind of having fun kind
+[85:39.68]  of having fun now or whatever. Um, of
+[85:42.56]  course it might be hard to like tell
+[85:44.80]  which what what is better than what you
+[85:46.40]  have now. Like you also just have to
+[85:48.32]  take a chance sometime.
+[85:49.84]  >> Awesome. Well, yeah, thanks so much for
+[85:52.48]  your time. I really uh appreciated it
+[85:55.52]  for the guests. I'll I'll link to your
+[85:58.08]  socials in the show notes. Is there
+[86:00.32]  anything else though you want to, you
+[86:02.08]  know, point people to? Maybe something
+[86:03.76]  you're working on or anything like that?
+[86:06.24]  >> I think my LinkedIn profile is probably
+[86:08.00]  the the most relevant place because like
+[86:10.16]  that's where all the stuff I write. Uh,
+[86:11.92]  it goes.
+[86:13.12]  >> Okay, cool. Well, thanks so much. I
+[86:14.72]  really appreciate it.
+[86:16.00]  >> Awesome.
+[86:17.36]  >> Thanks for listening to the podcast. I
+[86:19.92]  don't sell anything or do sponsorships,
+[86:22.48]  but if you want to help out with the
+[86:24.40]  podcast, you can support by engaging
+[86:27.44]  with the content on YouTube or on
+[86:29.84]  Spotify. If you want to drop a review,
+[86:31.52]  that'll be super helpful. And if there's
+[86:33.84]  any guests that you want to bring on to,
+[86:35.84]  please let me know. I feel like sourcing
+[86:38.16]  very senior IC's, there's no wellstudied
+[86:42.00]  list out there on Google that I can just
+[86:43.76]  search this up. So, if there's someone
+[86:45.52]  in your org or at your company who you
+[86:47.44]  really look up to and you want to hear
+[86:48.80]  their career story, let me know and I'll
+[86:51.36]  reach out to

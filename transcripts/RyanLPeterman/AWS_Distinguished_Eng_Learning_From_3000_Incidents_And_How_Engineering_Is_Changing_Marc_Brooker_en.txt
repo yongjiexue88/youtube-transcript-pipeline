@@ -1,0 +1,1963 @@
+Title     : AWS Distinguished Eng: Learning From 3000 Incidents And How Engineering Is Changing | Marc Brooker
+Video ID  : u3GjIXP9N0s
+URL       : https://www.youtube.com/watch?v=u3GjIXP9N0s
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1954
+Saved at  : 2026-10-08 08:18:07
+------------------------------------------------------------
+
+[00:00.00]  If you aren't doing it hands-on, your
+[00:02.32]  opinion about it is very likely to be
+[00:05.04]  completely wrong. This is Mark Brooker.
+[00:07.96]  He's a distinguished engineer [music] at
+[00:09.52]  AWS, and I interviewed him for technical
+[00:11.76]  learnings from his career. 3,000 cloud
+[00:14.84]  system postmortems. I want to ask you,
+[00:16.68]  what makes a good postmortem? I could
+[00:18.68]  spend a lot of time talking about that.
+[00:20.76]  You had a tweet that said that there are
+[00:22.88]  cases where caches are bad. I prefer to
+[00:26.60]  see the teams around me avoiding caching
+[00:28.84]  where possible. We also discussed how
+[00:31.12]  software engineering is changing. What
+[00:33.72]  is important given that code is kind of
+[00:37.20]  flowing like water now? The job changes,
+[00:39.76]  and and and you do different work.
+[00:42.16]  For someone [snorts] who's structuring
+[00:43.80]  their career, would you say it's better
+[00:45.60]  to be overrated or underrated?
+[00:49.72]  Here's the full episode.
+[00:55.88]  At some point, when I was a very junior
+[00:59.16]  engineer, I looked at the more senior
+[01:01.56]  engineers and said, "What what is the
+[01:02.88]  difference between you and I? I'm
+[01:04.48]  working more hours than you. I'm I'm you
+[01:07.56]  know, landing more code than you. Why is
+[01:10.04]  it that you're so much more impactful
+[01:11.52]  than I am?" And then I realized that
+[01:14.48]  kind of the direction of your work, like
+[01:16.44]  what is the thing that you're actually
+[01:17.72]  shipping, matters more than the volume
+[01:20.20]  of your work and your contributions.
+[01:22.08]  What would be your advice on how do you
+[01:24.08]  find problems that matter?
+[01:27.24]  Yeah, I think you have to go super
+[01:28.56]  broad. So, I think there's a set of
+[01:30.48]  those things that come in from from
+[01:32.80]  customers, from the world, right? Like,
+[01:34.72]  here is an unsolved problem.
+[01:36.92]  You know, I spend a lot of time meeting
+[01:38.40]  with AWS customers and listening to them
+[01:40.28]  talk about, you know, what are the
+[01:42.00]  things they still find difficult in in
+[01:43.92]  our space. What are they, you know, what
+[01:45.68]  are they investing in? Where are they
+[01:47.16]  spending their time? Where would they
+[01:48.68]  prefer to be not spending their time and
+[01:51.52]  and focus on their core business
+[01:52.96]  instead. And so, that's one rich seam
+[01:56.20]  of ideas and and and focus on what's you
+[01:58.48]  know what's interesting. I think
+[01:59.64]  completely at the other level is
+[02:02.64]  sort of on looking at the technical
+[02:04.16]  trends and you can look at just the the
+[02:06.24]  kind of speeds and feeds like wow,
+[02:08.16]  networks have gotten faster, storage has
+[02:10.20]  gotten faster. You know, we've seen this
+[02:12.32]  huge explosion in in multi-core and now
+[02:15.36]  in GPUs and you know, so there's a
+[02:18.52]  bottom-up innovation trend there too,
+[02:21.00]  which which you can also look at and say
+[02:22.76]  well, this enables all of these new new
+[02:25.28]  things.
+[02:27.08]  And
+[02:28.52]  um and then broadly kind of
+[02:30.96]  across the world like what what are the
+[02:33.00]  big trends that are going on? What are
+[02:34.56]  the things that are changing in our
+[02:36.04]  industry? What are the things that are
+[02:37.24]  changing in in the world and really it
+[02:39.44]  is those kind of moments of change that
+[02:41.32]  have the
+[02:42.64]  you know, bring with them the
+[02:43.60]  opportunity to to to build things and
+[02:46.92]  and and to recognize problems.
+[02:49.52]  And so to pick one, you know,
+[02:50.52]  concretely, uh you know, when I was in
+[02:54.52]  uh working on the Lambda team in in in
+[02:56.08]  2020 and
+[02:58.04]  I was talking to a lot of customers
+[02:59.48]  about you know, they were super excited
+[03:00.92]  about building on serverless, they were
+[03:02.24]  super excited about building on
+[03:03.64]  containers, there'd been this massive
+[03:05.24]  shift and
+[03:07.36]  what people were seeing then was wow, I
+[03:10.20]  love these serverless products, I love
+[03:12.16]  building this way, but the world of data
+[03:15.44]  and especially relational data doesn't
+[03:17.16]  fit super well into this this paradigm,
+[03:19.56]  right? These relational databases are
+[03:20.96]  still very serverful, you know,
+[03:22.84]  fantastically powerful products, but but
+[03:25.16]  not kind of operationally the same. And
+[03:28.60]  you know, that thinking was you know,
+[03:30.68]  this felt super important to me of like
+[03:33.00]  wow, these customers have have brought
+[03:34.76]  to me a gift of of understanding
+[03:37.44]  something that's really important and
+[03:39.40]  and so I joined the Aurora team, we
+[03:41.96]  built Aurora Serverless and then we
+[03:43.60]  built uh we built the sequel. You know,
+[03:46.04]  we've been investing deeply across all
+[03:48.16]  of our database products to make them a
+[03:49.80]  better fit for these
+[03:51.28]  um
+[03:52.72]  you know,
+[03:53.60]  uh serverless and and and container
+[03:55.24]  workloads.
+[03:56.56]  And
+[03:58.00]  that is an example of of a trend that
+[04:00.36]  was brought by, you know, brought by a
+[04:02.68]  customer.
+[04:03.88]  Um but then also these trends that have
+[04:06.32]  been driven by kind of architectural or
+[04:09.80]  um by other things going on, right?
+[04:11.92]  Faster networks, faster compute, faster
+[04:14.56]  connectivity. It's one of the big
+[04:16.52]  technical trends in the database world
+[04:18.28]  right now is
+[04:20.04]  uh this sort of block storage becoming
+[04:22.68]  the
+[04:23.76]  default back end, the default uh
+[04:25.80]  durability layer for uh for databases of
+[04:28.92]  all kinds, from analytics workloads to
+[04:30.76]  online workloads. And there's been this
+[04:32.80]  incredible explosion around that. And so
+[04:35.48]  if you look at what we did with Aurora D
+[04:37.84]  sequel, for example,
+[04:40.00]  you know, that was
+[04:41.52]  very much learning from that trend and
+[04:44.08]  and taking a lead on that trend and
+[04:45.40]  saying, "Well, we're going to make S3,
+[04:47.12]  this this block store that we built uh
+[04:48.84]  you know, 20 years ago
+[04:50.68]  uh sorry, object store that we built 20
+[04:52.72]  years ago
+[04:53.92]  uh the
+[04:55.48]  underlying
+[04:57.28]  uh durability layer of this new
+[04:58.96]  database. But obviously it doesn't have
+[05:01.12]  the latency properties or or or the rich
+[05:03.32]  interface that that that an online
+[05:05.08]  database needs. And so we're going to
+[05:06.92]  build an architecture on top of that
+[05:09.80]  that deals with all of these other
+[05:11.04]  things
+[05:12.24]  in a much better way, but doesn't have
+[05:13.88]  to worry about durability.
+[05:16.48]  And you know, so that was this perfect
+[05:18.20]  collision of a set of things I was
+[05:20.32]  hearing from customers and a set of
+[05:22.64]  things that were technical trends coming
+[05:25.36]  together and thinking, "Wow, we've we've
+[05:26.84]  got this opportunity to build something
+[05:28.56]  now that is going to be a market leading
+[05:31.96]  product um that would be hard to imagine
+[05:34.96]  without either of those, you know, input
+[05:37.00]  signals."
+[05:38.84]  I I saw something that you wrote. You
+[05:41.24]  mentioned that you were on call for 15
+[05:43.12]  years somewhere in there. And I've heard
+[05:46.32]  many stories of more senior engineers
+[05:48.80]  negotiating out of on-call because per
+[05:51.48]  unit time it could be perceived as not
+[05:53.72]  that impactful.
+[05:55.20]  And so why did you stay on-call for so
+[05:57.92]  long?
+[05:59.28]  I would say that the
+[06:01.28]  majority of
+[06:04.08]  my in-practice knowledge about how to
+[06:06.96]  build distributed systems has come from
+[06:09.28]  being on-call
+[06:10.72]  and
+[06:12.08]  analyzing and deeply understanding
+[06:15.24]  these postmortems and and and COEs.
+[06:18.28]  Um
+[06:19.56]  you know, one of the one of the
+[06:20.80]  challenges of of, you know, running a
+[06:23.32]  company like AWS and and running
+[06:25.56]  large-scale systems is that folks come
+[06:27.40]  out of college with great often great
+[06:29.92]  knowledge of computer science
+[06:31.00]  fundamentals, great programming skills,
+[06:33.52]  you know, great mathematical skills, all
+[06:35.08]  of that stuff is fantastic.
+[06:37.76]  But that without the grounded knowledge
+[06:39.12]  of what it actually means to run and
+[06:41.56]  understand, you know, understand
+[06:43.56]  systems.
+[06:45.16]  And, you know, on-call is one of the
+[06:48.12]  best ways to learn those things, best
+[06:50.20]  ways to see,
+[06:52.08]  um you know, how do systems really run?
+[06:54.00]  How do they really behave? You know, how
+[06:56.20]  do customers really use them? What
+[06:58.80]  happens when customers use systems in
+[07:00.64]  unexpected ways? How can we make systems
+[07:03.36]  more resilient to to customers using
+[07:05.52]  them in in in different ways?
+[07:07.92]  And I think that should be almost a goal
+[07:10.68]  of on-call, right? If you have folks in
+[07:12.52]  your teams who are on-call and they're
+[07:14.64]  just closing the same ticket over and
+[07:16.80]  over. Well, you know, that's where you
+[07:18.64]  need to just build some automation. And
+[07:21.28]  again, building automation is easier
+[07:22.84]  than ever, it's more powerful than ever,
+[07:24.32]  fantastic.
+[07:25.76]  Um but where you really want to spend
+[07:28.36]  the time of the deep experts on your
+[07:30.44]  team is, you know, here's something
+[07:33.56]  unexpected or or unusual that's happened
+[07:36.28]  in in the system. Let's deeply
+[07:38.36]  understand that and let's bring that
+[07:40.84]  knowledge back to both improving that
+[07:43.52]  system and communicating broadly to
+[07:47.52]  the the company and and and the outside
+[07:49.80]  community what we've learned from that.
+[07:53.96]  And so one of the most you know one of
+[07:55.36]  the most uh
+[07:58.08]  powerful things we do at AWS is we have
+[08:01.84]  this mechanism of a very broad weekly
+[08:04.88]  meeting where we all get together, you
+[08:06.76]  know, engineers from across AWS,
+[08:08.76]  leaders, senior leaders from across AWS
+[08:11.64]  and talk about COEs, these postmortems
+[08:14.96]  that we write.
+[08:16.24]  And what we can learn from them.
+[08:18.28]  And how we can apply those lessons
+[08:20.80]  across the whole company. And I think
+[08:23.84]  that
+[08:24.68]  particular mechanism, that particular
+[08:26.64]  kind of in Wednesday morning meeting
+[08:28.80]  that we have
+[08:30.24]  um is one of the things that has been a
+[08:33.12]  core
+[08:34.92]  uh almost causal factor behind you know
+[08:37.76]  AWS's success.
+[08:40.12]  Uh because it has allowed us to and
+[08:43.36]  forced us to spend leadership bandwidth,
+[08:46.88]  to spend expertise, to spend the time of
+[08:50.28]  our best engineers deeply understanding
+[08:53.04]  how our systems operate and why they
+[08:54.92]  operate the way they do.
+[08:57.20]  Um
+[08:58.32]  and you know that level of being just
+[09:00.60]  extremely grounded in reality
+[09:03.84]  uh
+[09:05.04]  helps you design better products, help
+[09:06.80]  helps you architect better systems.
+[09:09.64]  You know, helps you think more clearly
+[09:10.96]  about uh the the next round of things,
+[09:13.80]  helps you fix, you know, helps you fix
+[09:15.68]  issues. And so it's this fundamental
+[09:17.80]  kind of learning exercise. It's a real
+[09:19.68]  blessing.
+[09:20.84]  Um
+[09:21.80]  so I would you know I would recommend on
+[09:23.92]  call to to anybody who wants to learn
+[09:26.16]  about the practice of of distributed
+[09:28.32]  systems. And I would certainly recommend
+[09:31.60]  spending time reading COEs, reading
+[09:34.36]  postmortems, and and deeply reflecting
+[09:37.00]  on not only what can we fix tactically,
+[09:39.80]  but what can we fix organizationally and
+[09:42.08]  strategically and what kind of tools
+[09:44.28]  might might need to exist to to prevent
+[09:47.16]  this kind of thing happening again.
+[09:49.80]  And you know, you asked earlier about,
+[09:51.92]  you know, where do ideas come from? This
+[09:53.28]  is another, you know, fantastic kind of
+[09:56.00]  flow of ideas of saying,
+[09:58.44]  "Wow, you know, we seem to be solving
+[10:00.04]  the same problem over and over in
+[10:02.08]  different ways and getting it slightly
+[10:04.12]  wrong every time."
+[10:06.04]  Um you know, can we extract a a tool to
+[10:09.32]  do that? Can we build a service around
+[10:11.44]  that? Can we Can we build a feature
+[10:13.88]  around that to make it easier for us to
+[10:15.72]  get right and and and easier for our
+[10:17.84]  customers to to get right?
+[10:21.12]  Yeah, it's interesting because I think
+[10:23.00]  if you ask most engineers, they they
+[10:26.00]  really avoid on-call, but it sounds like
+[10:28.12]  you you kind of go towards it and you've
+[10:30.48]  learned a lot from it because it's a
+[10:32.32]  major source of customer problems.
+[10:35.52]  Yeah, and again, you know, I think for
+[10:36.88]  me it comes down to optimizing for
+[10:38.56]  finding the most important things to
+[10:40.24]  work on and you know, if you aren't
+[10:43.64]  close to operating your actual system
+[10:45.92]  and you don't know how it's actually
+[10:47.28]  working,
+[10:49.04]  how are you supposed to identify what to
+[10:50.88]  fix, right? You can come up with some
+[10:52.36]  theories about those, but they're
+[10:53.60]  probably not going to be right.
+[10:56.08]  Um
+[10:57.36]  and again, like I I I don't think
+[10:59.44]  there's a huge amount of value in
+[11:03.40]  the rote ticket closing work of on-call.
+[11:06.44]  I think automation, you know, should be
+[11:08.20]  doing those kinds of work, but I think
+[11:09.80]  there's fantastic value in, you know,
+[11:12.20]  deep understanding, deep investigations
+[11:15.04]  and and deep reflection on what you
+[11:16.88]  learn from
+[11:18.60]  postmortems and COEs.
+[11:21.56]  I tried to estimate uh a couple of
+[11:23.64]  months ago for a talk how many industry
+[11:26.08]  postmortems and Amazon COEs I'd I'd read
+[11:28.68]  over my career.
+[11:30.76]  The best estimate I could come up to and
+[11:32.36]  this was about a year ago, was was
+[11:33.84]  between three and 4,000.
+[11:36.04]  Um and so uh you know, even a little bit
+[11:38.84]  of lesson from each one and it tends to
+[11:41.08]  you know, tends to stick.
+[11:42.80]  Yeah, that was my next question
+[11:44.20]  actually. I I looked at the slides from
+[11:46.20]  that internal presentation and it said,
+[11:48.68]  "I've read approximately 3,000 cloud
+[11:51.96]  system postmortems from across the
+[11:53.60]  industry." And my immediate thought was
+[11:56.92]  I want to ask you what makes a good
+[11:58.48]  postmortem.
+[12:00.28]  So, I think you know, what makes a
+[12:02.00]  really great postmortem is first really
+[12:05.00]  getting into the details and making sure
+[12:06.64]  that you deeply understand what happened
+[12:09.80]  rather than just assuming what happened
+[12:12.08]  based on on the biases you bring in.
+[12:15.76]  Um and so there's a kind of lesson one
+[12:17.84]  there is if you can't understand what
+[12:20.76]  happened, well that teaches you
+[12:22.04]  something about your logging and metrics
+[12:24.56]  and observability and you know, and and
+[12:27.32]  simulations and all of these other
+[12:28.88]  things.
+[12:30.20]  And then once you deeply understand what
+[12:31.88]  happened, um then the ability then a
+[12:35.24]  great postmortem steps through
+[12:38.52]  the whys behind that at multiple levels,
+[12:42.20]  right? Like why? Well, yeah, there was a
+[12:44.68]  code bug. Okay, sure. Code bugs, yes, we
+[12:47.56]  can fix that, but we can't stop there,
+[12:49.96]  right? Like why was that missed in
+[12:51.76]  testing and validation?
+[12:53.84]  You know, for these reasons. Uh you
+[12:55.60]  know, what can we improve? What can we
+[12:57.20]  build around those? Okay, next step you
+[12:59.96]  know, why you know,
+[13:02.48]  why was our testing and validation where
+[13:04.88]  it was? Or you know, why did we assume a
+[13:08.12]  certain thing about the behavior of the
+[13:09.64]  system that we wouldn't have assumed
+[13:11.84]  before?
+[13:13.00]  And so as you sort of get through these
+[13:14.72]  deeper and deeper layers,
+[13:17.48]  a a great postmortem not only identifies
+[13:20.80]  kind of fixes to the proximal cause, but
+[13:23.20]  also identifies broader fixes to
+[13:25.96]  technology, to organizations, to you
+[13:28.40]  know, products and and and and so on.
+[13:31.44]  Um and so that's a kind of multiple
+[13:33.24]  levels thing, right? And you can't get
+[13:35.36]  stuck on
+[13:37.28]  you know, what is the the the most
+[13:38.80]  proximal cause of of an incident, but
+[13:41.08]  you also can't get stuck on this, well,
+[13:43.56]  you know, things fail sometimes and what
+[13:46.20]  are we going to do about it? And
+[13:48.44]  um you you have to come up with a set of
+[13:51.84]  you know, really concrete action items
+[13:54.64]  to fix things at different levels. Fix
+[13:58.20]  this particular line in the software
+[14:00.00]  that that caused something, you know,
+[14:01.84]  fix the testing processes that that
+[14:03.80]  didn't catch that, you know, fix the
+[14:06.96]  um you know, maybe social or or team
+[14:09.52]  processes that led to those technical
+[14:11.56]  processes. Um
+[14:14.48]  and you know, and then if you're seeing
+[14:16.36]  patterns across multiple postmortems,
+[14:19.72]  sort of level those up and say, well,
+[14:21.48]  clearly there's a hard underlying
+[14:23.08]  problem here. You know, can we build a
+[14:25.92]  service around that? Can we build a
+[14:27.92]  library around that? Can we build a
+[14:31.56]  you know, community of practice around
+[14:33.24]  that? You know, are there technical
+[14:35.12]  changes we can make uh to to avoid whole
+[14:38.60]  classes of things?
+[14:40.44]  Um
+[14:42.00]  So that's quite a long-winded answer,
+[14:43.56]  but I I I do think it is it all flows
+[14:46.92]  from
+[14:48.12]  understanding and understanding at
+[14:50.12]  multiple levels. Like understanding
+[14:51.76]  immediately like what happened, but also
+[14:54.12]  understanding you know, broadly what
+[14:56.12]  happened, you know, technologically and
+[14:58.00]  organizationally and and and in context.
+[15:01.44]  And then the ability to connect that
+[15:03.20]  particular event or or postmortem with
+[15:07.60]  other ones, you know, and and and and
+[15:09.76]  extract those patterns.
+[15:11.48]  You know, one of the things that we we
+[15:13.28]  did in D SQL was we spent a lot of time
+[15:15.52]  as we were designing that looking
+[15:16.84]  around, you know, relational database
+[15:19.00]  related postmortems and thinking about
+[15:21.52]  both our own and our customers and
+[15:23.44]  thinking about, you know, how can we
+[15:24.56]  design a database that helps people
+[15:26.32]  avoid falling into these traps?
+[15:28.92]  Um
+[15:30.48]  and, you know, a really common kind of
+[15:33.48]  outage pattern folks with relational
+[15:35.72]  databases is
+[15:37.92]  you have a client
+[15:39.56]  on a distributed system, starts a
+[15:41.60]  transaction, and then goes out to lunch
+[15:44.40]  for whatever reason. And, uh, you know,
+[15:46.80]  that could be a GC pause or could be a
+[15:48.72]  lossy network or it could be a loss of
+[15:50.24]  connectivity and now it's holding locks.
+[15:52.60]  Um and so, if you look at, you know,
+[15:55.08]  relational databases, they don't tend to
+[15:56.84]  be resilient to clients misbehaving in
+[15:59.48]  that way. And that's a really common
+[16:01.36]  cause of
+[16:03.92]  uh, operational issues for systems built
+[16:05.88]  on relational databases. And so, as we
+[16:08.16]  were designing D SQL, we were thinking,
+[16:10.68]  how do we avoid
+[16:12.92]  uh, broadly that class of problems? And
+[16:16.08]  so, folks can say, "Hey, I'm going to
+[16:18.04]  build on D SQL and just not have this
+[16:20.00]  whole class of problems."
+[16:21.84]  Uh, and, you know, I think that's a
+[16:23.64]  really kind of powerful
+[16:25.72]  outer loop over the postmortem process
+[16:28.08]  is to say, "How do we turn all of these
+[16:30.84]  lessons into new services and into
+[16:33.08]  service improvements?"
+[16:35.56]  How do you prevent misbehaving clients
+[16:38.00]  from being a problem for the database?
+[16:41.16]  Yeah, so in in D SQL's case, um
+[16:44.28]  we have uh, we have no pessimistic
+[16:46.48]  locking. And so, it the within the scope
+[16:50.12]  of a transaction, uh, everything that
+[16:52.32]  happens in that transaction, all of the
+[16:54.68]  reads happen using this mechanism called
+[16:56.56]  multi-version concurrency control, where
+[16:59.72]  every row in the database, we sort of
+[17:01.44]  store a history of versions. And so, you
+[17:03.84]  can read an old version of a row without
+[17:06.12]  blocking writers and saying, "Hey, you
+[17:07.64]  can't you can't update this cuz I just
+[17:09.24]  read it."
+[17:10.24]  Um and then, you know, locally within
+[17:13.32]  the query processor that's handling a
+[17:15.36]  connection, uh, we spool the rights
+[17:17.80]  locally and then you get to commit time
+[17:19.56]  and we do this optimistic check of uh,
+[17:22.48]  you know, can I commit this transaction
+[17:24.20]  at at at the transaction commit time.
+[17:27.36]  And so, combining those two mechanisms
+[17:29.20]  of having multi-version concurrency
+[17:30.84]  control and and the scale-out storage
+[17:33.20]  that comes with it
+[17:35.08]  and the commit time optimistic checks,
+[17:39.84]  we can strongly say that, you know,
+[17:42.68]  there is no way that a reader of a piece
+[17:44.68]  of data can block other writers and
+[17:46.92]  there's a no way that that a writer of
+[17:49.00]  data can block readers.
+[17:51.44]  Um, writers can block writers, but only
+[17:55.00]  um,
+[17:56.04]  only by changing data, not just by
+[17:57.96]  looking at it. And so, you can, you
+[17:59.92]  know, you can say, well, you know, I can
+[18:01.96]  cause, um, Sorry, writers can't block
+[18:04.92]  writers, but they can prevent other
+[18:06.24]  writers
+[18:07.24]  uh, transactions from eventually
+[18:08.52]  committing by making a bunch of changes.
+[18:10.92]  And that is
+[18:12.36]  inherent to the definition of the
+[18:15.88]  particular database isolation level. Out
+[18:18.52]  of curiosity, in practice, what percent
+[18:21.64]  overhead would you expect for keeping
+[18:24.24]  copies of old rows for the sake of those
+[18:26.88]  stale reads? Yeah, it's actually
+[18:28.72]  surprisingly small. And it's
+[18:30.84]  surprisingly small because if you look
+[18:32.72]  at the access patterns for most online
+[18:34.64]  databases, even ones that do a lot of
+[18:36.92]  write traffic, that write traffic tends
+[18:39.36]  to be quite concentrated. Uh, and, you
+[18:42.60]  know, it's quite unusual for an online
+[18:44.60]  database workload or even an analytics
+[18:46.68]  workload
+[18:48.00]  to
+[18:49.16]  make a second version of every row in
+[18:51.76]  the database. Typically, what it's doing
+[18:53.56]  is making a,
+[18:55.28]  you know, first, second, third,
+[18:56.40]  hundredth version of this row and a
+[18:58.08]  fiftieth version of that row, but the
+[18:59.64]  vast majority of data isn't changing.
+[19:02.40]  And so, it's super workload dependent,
+[19:04.36]  uh, as as is everything in in in the
+[19:06.52]  database world, uh, but the overhead
+[19:09.12]  tends to be relatively small.
+[19:11.84]  Uh,
+[19:12.52]  I would say it's unusual for
+[19:16.80]  a online database workload for that
+[19:19.80]  overhead on storage to be more than
+[19:21.76]  about 10%.
+[19:23.56]  From my experience, I've seen an
+[19:25.40]  interesting dichotomy between teams
+[19:28.08]  where some teams they really understand
+[19:29.92]  postmortem culture. They tend to be
+[19:31.40]  infrastructure teams. They tend to take
+[19:33.64]  it really seriously and everyone in on
+[19:36.04]  those teams, the tech leads are asking
+[19:37.68]  you, "Hey, why why did that happen?" And
+[19:39.92]  you know, really follow up and make sure
+[19:41.88]  it's it's not a problem. Then I've also
+[19:44.00]  noticed on other teams that is less of a
+[19:46.76]  strong muscle. For those teams that
+[19:49.40]  don't take it too seriously, what would
+[19:51.40]  be your your pitch for why they should
+[19:53.72]  take it seriously?
+[19:55.44]  Yeah, it all comes down to where you
+[19:56.80]  want to spend your time, right? Do you
+[19:58.36]  want to spend your time improving your
+[20:00.28]  product and and making it better or do
+[20:02.08]  you want to spend your time
+[20:04.28]  uh fighting the same fire over and over?
+[20:07.04]  And uh you know, really the
+[20:10.56]  culture of building
+[20:13.00]  um
+[20:14.36]  you know, building great postmortem
+[20:16.36]  cultures to make sure that at the the
+[20:18.24]  the
+[20:19.44]  pros- at the product level and at the
+[20:21.52]  organizational level,
+[20:23.64]  um
+[20:24.92]  you are
+[20:26.96]  fixing known issues
+[20:29.52]  and you are avoiding having the same
+[20:31.92]  problems multiple times.
+[20:34.68]  Um and typically when I see teams that
+[20:38.80]  have you know, a poor postmortem
+[20:41.24]  culture, I think they're
+[20:43.64]  probably one of two failure modes there.
+[20:46.28]  You know, one of them is a
+[20:49.08]  lack of focus on just the outcomes,
+[20:52.04]  right? Like, you know, a lack of of of
+[20:54.12]  really
+[20:55.44]  um
+[20:56.60]  I wouldn't say caring enough. I think
+[20:58.52]  that's a little bit too too personal,
+[21:00.44]  but being really focused on on, you
+[21:03.04]  know, is this
+[21:04.24]  is this product performing super well?
+[21:06.28]  Are we you know, are we really making
+[21:08.44]  our customers happy? And that is
+[21:10.32]  fundamentally a cultural and and and
+[21:12.32]  leadership cultural problem
+[21:14.72]  of of setting the right standards. Oh,
+[21:17.00]  and by the way, like I don't think, you
+[21:18.52]  know, standards should be
+[21:20.56]  uh you know, should be uniform, right?
+[21:22.48]  Like there are places where you know,
+[21:25.56]  the details really really matter where
+[21:28.08]  things like durability are just critical
+[21:30.56]  and and and you do need to have super
+[21:32.48]  high standards in those places.
+[21:34.60]  Um
+[21:35.60]  and you know, places where
+[21:37.88]  you want to optimize for other things
+[21:39.40]  and and and maybe have, you know, have
+[21:41.32]  have a a higher production defect rate.
+[21:44.04]  And I think that's that's okay.
+[21:46.20]  Um as long as that's an intentional
+[21:48.76]  decision that's being made. So, that's
+[21:50.92]  kind of case one, right? Like
+[21:52.80]  insufficient focus on the outcome.
+[21:56.72]  I think case two, and and this is a
+[21:58.32]  harder one to change,
+[22:00.72]  is normalization of kind of operational
+[22:03.96]  heroics. Like, we don't need to fix
+[22:06.04]  these root causes because our on-calls
+[22:08.68]  are super heroic and they're going to
+[22:10.04]  stay up all night and they're going to,
+[22:12.24]  you know, they're going to hack around
+[22:13.40]  things and they don't mind being paged
+[22:14.92]  100 times a week. And
+[22:18.60]  they can feel from the inside like it's
+[22:20.56]  a good culture, right? Like, oh wow,
+[22:22.56]  these people are super strong owners.
+[22:24.24]  They're super engaged. They really care.
+[22:26.24]  They're really working hard on call.
+[22:28.88]  And those are all good signals. But then
+[22:31.24]  when you look at it from the outside,
+[22:32.48]  it's like, well, we're not actually
+[22:33.72]  fixing the causes of things. We're just
+[22:35.64]  doing this fantastically expensive
+[22:38.68]  investment of taking all of these people
+[22:40.64]  and their strong ownership and their
+[22:42.44]  expertise and spending them just on on
+[22:44.48]  on this break-fix cycle.
+[22:46.84]  And that's where you need to kind of
+[22:47.84]  look at it from the outside and say,
+[22:49.92]  well, let's take this energy of this
+[22:51.80]  team, fantastic energy, and focus it on
+[22:56.20]  uh on on improving the service, getting
+[22:58.56]  getting out of the cycle, finding, you
+[23:01.00]  know, finding new things to fix, finding
+[23:03.08]  new things to build.
+[23:05.00]  And that can be hard because it can be
+[23:07.16]  hard for, you know, those folks who've
+[23:10.04]  been in that mode to look at it and say,
+[23:13.40]  "This feels so good. It feels really
+[23:15.72]  like we're we're caring about our
+[23:17.20]  customers and caring about our product
+[23:18.92]  and caring about our business."
+[23:20.92]  Uh, to realize that oh, no, we're
+[23:23.32]  actually caring about it at the wrong
+[23:24.72]  level and we're not serving our business
+[23:27.48]  in the best possible way by being so
+[23:30.40]  narrowly and tactically focused on this
+[23:32.68]  break-fix cycle. And that's where you
+[23:34.68]  sort of need to pop them out and say,
+[23:36.56]  "Well,
+[23:37.56]  let's spend more time thinking about the
+[23:40.84]  postmortem. Let's spend more time
+[23:42.80]  thinking about the causes of things.
+[23:45.24]  Let's let's spend more time addressing
+[23:47.88]  these things in a more uh, strategic
+[23:50.52]  way." And wow, okay, now you've got so
+[23:52.80]  much more time to do that because you've
+[23:54.44]  broken the cycle and you can improve
+[23:56.52]  your product in different ways. I mean,
+[23:58.92]  since you have worked on AWS for almost
+[24:03.08]  two decades, uh,
+[24:04.80]  I'm sure you have a lot of experience
+[24:06.28]  building distributed systems and I think
+[24:09.12]  one of the most common advice that you
+[24:10.84]  hear, I guess this is maybe in the
+[24:12.40]  context of system design, is I I almost
+[24:16.28]  hear almost 100% of the time people will
+[24:18.52]  say, "Just throw a cache on it." Or you
+[24:21.44]  know, you'll have a system design and
+[24:22.80]  say, "How do you make it better? Let's
+[24:24.20]  put a cache here. Let's put a cache
+[24:25.52]  there." And I saw you had a tweet that
+[24:28.04]  said that there are cases where caches
+[24:30.56]  are are bad despite people saying it's
+[24:32.76]  best practice. I was curious if you
+[24:34.48]  could explain that. Yeah, so caching's
+[24:36.84]  good, right? Like it's hey, I'm I'm
+[24:38.36]  going to uh, take the these core ideas
+[24:40.92]  from computer science of of temporal and
+[24:42.84]  spatial locality and I am going to
+[24:45.44]  exploit those to make my system faster,
+[24:48.84]  scale better, et cetera. And so, you
+[24:50.92]  know, obviously very attractive. But,
+[24:54.72]  the downside of caches, especially in
+[24:56.68]  distributed systems, is they have this
+[24:58.36]  mode, right? Like they have this um you
+[25:01.08]  know the there's a mode where the cache
+[25:02.68]  is full, and the cache is full of the
+[25:05.04]  right data in time and space to perform
+[25:07.52]  very well.
+[25:08.84]  And there's a mode where the cache is
+[25:10.16]  empty or contains the wrong data.
+[25:13.16]  And
+[25:14.52]  in the first mode, the system is fast
+[25:17.20]  and happy and healthy.
+[25:19.56]  In the second mode, the system is slow,
+[25:22.40]  often down, because now the back end
+[25:25.04]  doesn't scale to deal with
+[25:27.40]  all of this under-cache traffic.
+[25:29.56]  Customers are very disappointed.
+[25:31.88]  Um
+[25:33.32]  and often it is down in a stable way.
+[25:36.16]  And this is this kind of idea of
+[25:37.40]  meta-stable failures, where the system
+[25:39.72]  has has um
+[25:41.60]  switched from state one to state two,
+[25:44.12]  and in state two it's still stable,
+[25:45.76]  right? Like it's still it's down, but
+[25:48.16]  it's not going to come back up under its
+[25:49.72]  own energy, because for example, all of
+[25:52.88]  this traffic is causing a huge amount of
+[25:54.60]  contention in my database, or it's
+[25:57.00]  saturating the network, and so I can't
+[25:58.72]  even refill the cache. It's not even
+[26:00.80]  getting the right kind of data in.
+[26:03.48]  And so, you know, when I talk about the
+[26:05.04]  downsides of caches, it's really about,
+[26:07.28]  you know, how do we avoid that modality
+[26:11.28]  between
+[26:12.84]  you know, fast and you know, uh the that
+[26:16.60]  that failure of caches, and the you
+[26:19.96]  know, how do we avoid the state where
+[26:21.12]  we're down?
+[26:22.32]  Um
+[26:23.56]  And so, if I go back to
+[26:26.00]  to DSQL, like our answer there is DSQL,
+[26:29.32]  what we call the storage tier, is
+[26:30.72]  essentially a cache, but it is a
+[26:32.76]  complete cache. It contains every row in
+[26:35.64]  the database.
+[26:36.96]  Um and so, it doesn't have this mode
+[26:38.80]  where how do I recover from it being
+[26:41.04]  empty or containing the wrong data? It
+[26:43.36]  contains all of the data.
+[26:45.64]  Um
+[26:47.68]  similarly, if you look at a a more,
+[26:50.24]  let's say, classical relational database
+[26:52.12]  design like Aurora,
+[26:53.96]  the Aurora leader is constantly telling
+[26:56.20]  the potential failover targets, "Here's
+[26:57.96]  something you should cache. Here's
+[26:59.08]  something you should cache. Here's
+[27:00.12]  something you should cache."
+[27:01.64]  So, when a failover happens, the cache
+[27:03.96]  is warm on, you know, on on the failover
+[27:06.80]  target. Um and so, those are the kinds
+[27:09.68]  of things that you can do to avoid those
+[27:11.60]  modalities.
+[27:13.28]  But, in general,
+[27:14.92]  um
+[27:16.20]  you know, and I I I wouldn't extract
+[27:17.92]  this as a rule or or or
+[27:19.72]  or or say that, you know, this applies
+[27:21.64]  100% of the time,
+[27:23.68]  but in general, I prefer to see the
+[27:26.44]  teams around me avoiding caching where
+[27:28.60]  possible.
+[27:29.88]  I prefer patterns where you have a,
+[27:33.36]  let's say, complete materialized view of
+[27:35.56]  the data if you need very fast access to
+[27:37.80]  it, especially if it's slow moving. Just
+[27:39.96]  pull it down onto your local machine and
+[27:41.48]  work with it in memory.
+[27:43.08]  You know, if it's only being updated
+[27:44.32]  once a week, who cares? Like, just make
+[27:46.08]  lots of copies of it.
+[27:47.72]  Um
+[27:49.32]  Uh so, that's that's one pattern. Or,
+[27:51.60]  you know, use a scalable back end, you
+[27:53.80]  know,
+[27:54.72]  or Dynamo DB or whatever your favorite
+[27:56.84]  scalable database is,
+[27:58.88]  and keep your database vendor honest
+[28:01.16]  about getting to the the scale and
+[28:03.04]  performance you need, rather than
+[28:04.44]  putting a cache in front of things.
+[28:06.52]  So, caching isn't a bad pattern, but it
+[28:08.60]  is a pattern with some
+[28:11.16]  significant downsides that are, you
+[28:13.32]  know, really
+[28:14.88]  uh best avoided.
+[28:17.00]  In practice, how how often do you see
+[28:19.68]  that metastable failure, though? Yeah,
+[28:22.76]  you know, this is uh it's not it's not
+[28:24.88]  super common, right? Like, you might go
+[28:26.32]  years without seeing, you know,
+[28:28.04]  something like that. But, if you look
+[28:29.56]  across
+[28:31.48]  the biggest, most impactful,
+[28:34.36]  uh you know, system postmortems across
+[28:36.04]  the industry, I would say that these
+[28:38.04]  kinds of metastable failures have been
+[28:41.40]  an underlying cause in probably a
+[28:44.12]  majority of them. And
+[28:47.16]  it's super important that, you know, as
+[28:48.88]  an industry and as a community of
+[28:50.36]  practice, we understand those things
+[28:51.96]  deeply because
+[28:53.84]  the also those cases where these do
+[28:56.48]  happen,
+[28:57.84]  you know, tend to be larger-scale
+[29:00.88]  issues, longer recovery-time issues, and
+[29:04.48]  and and more complex-to-fix issues,
+[29:06.68]  right? Where you have to often, you
+[29:09.00]  know, turn it off and turn it back on
+[29:10.40]  again, which is this very very painful
+[29:12.96]  thing for a a a team or an organization
+[29:15.60]  to do.
+[29:16.88]  Um
+[29:18.20]  and you know, and so again, like you you
+[29:20.36]  might go years operating a system with
+[29:22.08]  seeing nothing like this. And and but if
+[29:24.80]  you look at the most impactful issues,
+[29:27.72]  it's actually fairly common as an
+[29:30.04]  underlying cause for those issues. And
+[29:31.76]  so, you know, it's kind of both of these
+[29:33.44]  things of being quite uncommon and being
+[29:35.68]  being rather common.
+[29:37.20]  I was reading your blog and you have a
+[29:39.40]  series of posts on how AI may impact the
+[29:43.40]  future of software engineering. And I
+[29:44.80]  kind of want to pick your brain on that.
+[29:46.60]  So, what's your perspective on how you
+[29:49.36]  think AI will uh impact software
+[29:52.20]  engineering and how it'll change things?
+[29:54.48]  Yeah, I mean, it's, you know, hard maybe
+[29:56.44]  harder than ever to tell the future. And
+[29:58.36]  so, you know, this is a a set of uh
+[30:00.80]  maybe guesses uh and and and predictions
+[30:03.44]  about about the future. Um
+[30:06.24]  So, I'll I'll say the first thing I I,
+[30:08.08]  you know, I deeply believe about
+[30:09.64]  software is
+[30:12.12]  we have only just started to see the
+[30:16.12]  impact that software is going to have on
+[30:17.96]  the world. There is such an opportunity
+[30:21.16]  for
+[30:22.44]  more software to exist, bigger software,
+[30:25.16]  better software, more personal software.
+[30:28.00]  You know, all of these things. And so,
+[30:29.40]  software has, throughout its well, its
+[30:32.32]  60-ish-year history, been
+[30:35.52]  supply constrained.
+[30:37.84]  And, you know, I think that's going to
+[30:39.48]  remain true. I think the opportunity for
+[30:42.48]  for software in the world is is just,
+[30:44.76]  you know, almost almost unbounded.
+[30:47.76]  Um and that's really exciting, right?
+[30:49.40]  It's really exciting to be at a moment
+[30:51.36]  when
+[30:52.44]  the economics of building software are
+[30:54.60]  changing and and are changing rather
+[30:56.60]  quickly.
+[30:57.84]  Um and that gives us an opportunity to
+[31:00.72]  think about what could we do in the
+[31:02.96]  world with a lot more software?
+[31:05.36]  Um you know, a lot more
+[31:08.12]  software personalization, a lot more
+[31:11.48]  just the right software in the right
+[31:13.16]  place at the right time.
+[31:15.72]  And
+[31:17.72]  you know, that gives me a huge amount
+[31:19.52]  of, uh, you know, excitement about the
+[31:21.24]  future of of this industry,
+[31:23.76]  uh, because, you know, we we have a
+[31:26.48]  massive opportunity ahead of us, both
+[31:29.16]  driven by these changing economics of
+[31:32.48]  software development.
+[31:34.76]  Um
+[31:35.72]  now, also with those changes, there are
+[31:37.84]  going to be needs for, you know, us as
+[31:40.64]  software practitioners, people who build
+[31:42.36]  software, people who who love software
+[31:44.36]  to to adapt. And, uh, you know,
+[31:48.56]  that that means that that software
+[31:50.28]  careers are going to look different. Um
+[31:53.16]  uh, they're going to look different
+[31:54.32]  early on, they're going to look
+[31:55.36]  different later on. I think the software
+[31:57.68]  business is going to look different. And
+[32:01.08]  the
+[32:02.48]  um
+[32:03.56]  success of people and organizations over
+[32:05.80]  the next, uh,
+[32:07.12]  you know, next who knows, 5 years,
+[32:09.92]  decade, is going to be largely
+[32:12.12]  predicated on their ability to adapt to
+[32:15.08]  that change and and to lead that change.
+[32:18.16]  You told the story about this guy who
+[32:19.96]  bet on analog circuits when, obviously,
+[32:23.20]  we know digital became kind of the more
+[32:25.92]  more dominant way.
+[32:27.72]  Yet, he made he made good money. For the
+[32:29.68]  people who maybe don't want to adapt,
+[32:32.44]  you could still get by and succeed. It's
+[32:35.76]  not going to be like a crazy thing. Is
+[32:38.32]  that is that kind of the takeaway and
+[32:40.40]  why you brought up that story? Yeah, I I
+[32:42.16]  I I I
+[32:42.88]  I think that's that's the right
+[32:44.08]  takeaway. And so if I sort of break
+[32:45.76]  down, you know,
+[32:47.40]  the the the world into to three tiers, I
+[32:50.72]  you know, I think there's going to
+[32:51.80]  remain a huge amount of joy in the craft
+[32:55.72]  of software. Um,
+[32:57.52]  you know, like the craft of of joinery
+[32:59.48]  with, you know, with handsaws, right?
+[33:01.16]  Like it's it's a nice way to spend time.
+[33:04.12]  It's not a particularly economically
+[33:06.52]  interesting activity anymore, but not
+[33:09.16]  everything we do has to be an
+[33:10.40]  economically interesting opportunity. It
+[33:12.12]  can just be something I do because I
+[33:14.28]  enjoy it, because I enjoy the product of
+[33:16.24]  it, because I enjoy talking to people
+[33:17.96]  about it, right? And so there is, you
+[33:20.12]  know, I I I don't think that is going to
+[33:21.72]  go away. I think we're going to see,
+[33:24.12]  you know, a lot of interest in in that.
+[33:25.72]  Like there's been interest in in
+[33:26.88]  retrocomputing and, you know, people who
+[33:28.96]  run an Apple II as their desktop. And
+[33:30.72]  like, well, again, it's wildly
+[33:33.56]  impractical. It's not economically
+[33:35.20]  interesting, but it's fun and something
+[33:36.60]  I, you know, could do as a hobby. And
+[33:38.36]  so, you know, that's that's going to be
+[33:40.84]  a remaining part of of of the world of
+[33:43.28]  software for probably forever.
+[33:46.16]  Um, and then there's this this, you
+[33:48.32]  know,
+[33:49.28]  kind of story that that I told in the
+[33:50.88]  blog post.
+[33:52.60]  And I think this relates to,
+[33:56.08]  you know,
+[33:56.76]  driving change in the real world it's
+[33:58.56]  always harder than it looks from the
+[34:00.20]  outside, right? Like as you get into the
+[34:01.92]  details things become more difficult.
+[34:04.76]  They become more dependent on people.
+[34:06.52]  They become more dependent on politics
+[34:08.36]  and policy and um,
+[34:10.80]  you know, our our various
+[34:11.84]  irrationalities as humans. And And so
+[34:14.44]  driven by that,
+[34:16.92]  you know, there is going to be a
+[34:19.64]  huge amount of and a shrinking over time
+[34:23.04]  amount, but it but a huge amount of the
+[34:25.92]  software industry that is run
+[34:28.60]  in what I might call the old way, right?
+[34:31.68]  Past techniques, past languages, past
+[34:34.88]  technologies.
+[34:36.40]  And there's real economic opportunity in
+[34:40.00]  engaging with that part of the, you
+[34:42.00]  know, part of the world. Um you know, as
+[34:44.48]  we saw with with analog electronics,
+[34:46.68]  analog electronics will very much exist.
+[34:48.68]  In fact, there are
+[34:50.48]  parts of the world like, you know, like
+[34:52.64]  radio and power systems where there's
+[34:54.60]  been incredible technology technological
+[34:56.76]  advancement in in in those fields.
+[34:59.44]  Uh but they have become more niche, and
+[35:01.12]  so, you know, digital became the
+[35:02.56]  mainstream. We wouldn't be talking like
+[35:04.40]  we are today
+[35:05.92]  if it wasn't for this uh you know, 12
+[35:09.84]  orders of magnitude or whatever
+[35:11.16]  explosion in in digital transistor
+[35:13.04]  counts.
+[35:14.88]  Um
+[35:17.36]  but there's interesting opportunity
+[35:18.76]  there, and I think that interesting
+[35:19.92]  opportunity is going to change shape and
+[35:22.28]  and and become more and more specialized
+[35:24.48]  and and and more and more niche and and
+[35:26.48]  great careers to be built there.
+[35:28.44]  Um and then there is the mainstream,
+[35:30.28]  which I think is going to adopt these
+[35:33.04]  new technologies from agentic
+[35:34.80]  development to AI-powered development
+[35:37.16]  to, you know, specification-driven
+[35:39.36]  development um and, you know, a whole
+[35:41.92]  lot of other, you know, new things whose
+[35:44.08]  names we don't even know yet
+[35:46.64]  um
+[35:47.68]  to build software at a speed and a cost
+[35:52.72]  that is unimaginable to do with with old
+[35:56.08]  techniques.
+[35:57.80]  And I think that is where correctly the
+[36:01.36]  majority of the industry is going to be
+[36:03.04]  going. I think that's where the majority
+[36:04.76]  of careers are going to be built. I
+[36:06.72]  think that's where the majority of um
+[36:08.96]  economic opportunity is. It's the space
+[36:11.60]  I'd be in if I was building a company
+[36:13.40]  today. It's the space I'm in in my role.
+[36:16.16]  Um and you know, the one I would sort of
+[36:18.36]  personally be most excited about.
+[36:21.12]  But yeah, it isn't only one. I think
+[36:22.68]  there's going to be the spectrum of
+[36:24.16]  software practice, and especially where
+[36:26.52]  software engages with the physical
+[36:28.32]  world, uh there are going to be some
+[36:30.52]  really interesting
+[36:33.48]  questions about how do we bring these
+[36:35.64]  new technologies, how do we bring these
+[36:37.28]  new practices into
+[36:41.24]  the various many niches that software is
+[36:43.48]  going to and has, you know, over over
+[36:45.44]  six decades kind of wormed its way into.
+[36:49.52]  It's interesting you mentioned joinery.
+[36:51.64]  I wonder if
+[36:53.92]  down the road
+[36:55.40]  we'll see apps on the app store that
+[36:56.80]  people pay extra for because it's
+[36:59.44]  marketed as this was written by a human
+[37:02.28]  or it's it was written by hand. It's a
+[37:04.36]  bespoke
+[37:06.04]  you know, custom app.
+[37:08.60]  Crazy how the world's going to change.
+[37:10.16]  But so it sounds like you know, change
+[37:11.88]  is obviously the the common case. It's
+[37:13.80]  the one that we should be thinking
+[37:14.88]  about. Maybe we can break up the
+[37:16.68]  conversation into parts. One is for
+[37:19.20]  junior engineers.
+[37:20.92]  What is important given that code is
+[37:24.88]  kind of flowing like water now?
+[37:27.24]  At risk of being a bit meta about our
+[37:28.80]  past conversation, it really is about
+[37:30.56]  finding those problems that matter and
+[37:32.28]  and and doing that early in in a career.
+[37:35.04]  And
+[37:36.48]  you know, that requires an understanding
+[37:39.52]  of customers. It requires an
+[37:41.00]  understanding of the business. It
+[37:42.32]  requires an understanding of of
+[37:43.96]  economics and and and of systems.
+[37:46.84]  And
+[37:48.84]  that can I think that's going to move
+[37:52.48]  from being
+[37:54.12]  you know, almost kind of senior engineer
+[37:56.12]  work of like oh, well, you know, now
+[37:57.84]  you're going to go and talk to customers
+[37:59.12]  and actually understand the context of
+[38:00.72]  the stuff you're building
+[38:02.52]  to being more and more part of
+[38:06.00]  even the earliest steps of an
+[38:08.12]  engineering career. Right? Like here's
+[38:10.08]  the context. Here's the problem. Here's
+[38:11.88]  the customer. Let's go off and work
+[38:13.40]  together and solve
+[38:15.04]  you know, and and and and solve this
+[38:16.52]  problem with all of this context.
+[38:19.92]  And
+[38:21.76]  I think that's going to be
+[38:25.40]  super exciting for one set of folks,
+[38:28.68]  uh, and a little bit frustrating for
+[38:30.20]  people who have come into um,
+[38:34.92]  you know, looking for a pure software
+[38:36.40]  development career, right? Looking for a
+[38:38.20]  career where they sit down, open their
+[38:40.32]  IDE,
+[38:42.32]  start typing and and don't stop for
+[38:44.28]  eight hours. I think that's going to be
+[38:46.12]  a mode that we're going to see fewer
+[38:48.20]  people in and a mode that's going to be
+[38:50.44]  harder and harder to build a career
+[38:52.64]  around. Now, the other mode of, "Oh, I'm
+[38:55.08]  excited to go off and learn from my
+[38:56.72]  customers about what they're building
+[38:58.12]  and what they need." I think that's
+[38:59.96]  going to be ever more highly, you know,
+[39:01.80]  highly valuable. And so, super exciting
+[39:04.44]  opportunity to build,
+[39:06.44]  you know, build careers there.
+[39:08.72]  And then maybe and and this might come
+[39:10.36]  across as being a little bit, um, you
+[39:12.60]  know, paradoxical. I think there's also
+[39:14.36]  a ton of opportunity for, you know,
+[39:16.80]  folks who are extremely technically
+[39:18.76]  deep, um, you know, who are, uh,
+[39:22.60]  you know, deep on optimization problems
+[39:25.56]  or deep on infrastructure problems or
+[39:28.68]  deep on, you know, various scientific
+[39:31.00]  things or deep on databases or deep on,
+[39:34.40]  you know, one of the many, many topics
+[39:36.40]  that are all behind our industry.
+[39:39.32]  Because I think the ability to
+[39:42.96]  ans- ask the right questions is also
+[39:46.08]  much more valuable than it was has ever
+[39:48.56]  been.
+[39:49.76]  And so, I think there is a ton of
+[39:51.72]  opportunity for people coming into the
+[39:53.64]  industry with deep technical or
+[39:56.04]  scientific knowledge to now leverage
+[39:59.28]  that in ways that, you know, maybe were,
+[40:02.08]  um, were hard before, right? There was
+[40:04.24]  too much sort of boiler plate to really,
+[40:06.20]  you know, to really use that leverage
+[40:08.36]  that you have. And so, I think we're
+[40:10.08]  going to see a lot more of of of those
+[40:11.80]  kinds of careers, of really kind of
+[40:13.32]  building expertise in a technical topic,
+[40:16.08]  in a scientific topic, and then be able
+[40:18.48]  to turn that into software and software
+[40:21.56]  products in a way that
+[40:24.84]  was really difficult before, and in some
+[40:26.60]  cases wasn't possible before, and is now
+[40:29.48]  um you know, vastly easier.
+[40:31.72]  If I was to look at a career ladder's
+[40:33.56]  expectation, some of what you described
+[40:35.60]  of maybe engaging with the customers and
+[40:38.60]  understanding the business context,
+[40:40.80]  uniquely in software engineering, it
+[40:42.28]  feels like
+[40:43.56]  the earliest levels are insulated from
+[40:46.32]  all of that. You have your your tech
+[40:48.24]  lead, tech leads handing out tasks, and
+[40:51.00]  then the early level engineers just
+[40:53.68]  given task just convert it into code.
+[40:56.08]  And this sounds like you know, that
+[40:57.60]  part's relatively solved. And if not
+[41:01.04]  now, maybe I I'd be surprised if a year
+[41:03.68]  or two from now wasn't like completely
+[41:06.32]  solved. Um and I I think that could
+[41:09.64]  scare a lot of junior engineers cuz they
+[41:11.64]  they would think you're going to expect
+[41:13.64]  me to graduate from college or start
+[41:16.84]  working as a software engineer, and then
+[41:18.96]  I would have the senior engineer
+[41:20.68]  expectations.
+[41:22.40]  Um what would you say to the the scared
+[41:25.08]  software engineer that's just entering
+[41:26.68]  the industry to all this change?
+[41:30.04]  Yeah, you know, I think um
+[41:32.76]  what I would remind them that, you know,
+[41:35.84]  we as people who hire and build
+[41:38.44]  organizations of software engineers, and
+[41:40.44]  and they as people who have are building
+[41:42.84]  software engineering careers, have have
+[41:44.72]  really
+[41:46.00]  um aligned incentives, right? Like you
+[41:48.84]  know,
+[41:49.72]  it it's not valuable to hire a bunch of
+[41:52.24]  people and set them up to fail. Like
+[41:54.16]  that's
+[41:55.04]  nobody wants that. It's it's it's not an
+[41:57.28]  outcome uh that is good for anybody. And
+[42:00.64]  so, yeah, we're going to need to figure
+[42:02.72]  out how do you support people on on that
+[42:05.76]  path? How do you help people learn those
+[42:08.60]  things? How do you give them the right
+[42:10.40]  guardrails, you know? Hey, that first
+[42:12.80]  time that you go out and talk to a
+[42:14.20]  customer, yeah, it's going to be scary.
+[42:15.96]  My My first time talking to an AWS
+[42:17.72]  customer,
+[42:19.12]  I was you know was
+[42:21.04]  I was was super scary, but you know, I I
+[42:24.16]  I got a bunch of help with that and I
+[42:25.56]  got a bunch of advice and I got a bunch
+[42:27.16]  of mentorship and I got a bunch of
+[42:28.48]  feedback and I got better and better at
+[42:30.08]  that over time and I think that's
+[42:32.08]  exactly what these things look like is,
+[42:34.44]  you know, you start off and you you
+[42:35.76]  start small and and and and you learn,
+[42:39.00]  you know, as you go and and and so that
+[42:41.00]  feedback loop goes faster. And so I
+[42:43.76]  don't expect that people coming in
+[42:46.36]  from college or
+[42:48.48]  you know, will will will come in with
+[42:49.88]  all of this knowledge. I think, you
+[42:51.56]  know, it's never been true that people
+[42:53.60]  coming into technical or engineering
+[42:55.24]  career straight out of college know
+[42:56.68]  everything. Or any career for that
+[42:58.96]  matter, right? Like you talk to to
+[43:00.68]  teachers about, you know, what they've
+[43:02.68]  learned on their job versus what they
+[43:04.52]  learned, you know, studying.
+[43:06.60]  Uh you know, they learn a huge amount in
+[43:09.00]  in in things like internships and and
+[43:11.36]  and so on and and over the course of a
+[43:13.12]  career.
+[43:14.44]  Um or doctors or or anybody in, you
+[43:16.56]  know, in in a field like that. Um
+[43:19.48]  and so yeah, it is going to be about
+[43:20.84]  learning and I think the emphasis on
+[43:22.36]  what people learn is going to be
+[43:23.92]  different.
+[43:25.20]  I think it is going to require,
+[43:28.88]  you know, leaders like me who,
+[43:31.64]  you know, care deeply about, you know,
+[43:33.32]  hiring and and and developing folks
+[43:35.32]  early in their career to be really
+[43:36.96]  thoughtful about what, you know, what
+[43:38.44]  does that new letter look like and
+[43:40.64]  um
+[43:41.76]  and you know, we're we're doing a lot of
+[43:43.32]  that thinking. I think people are doing
+[43:44.80]  that kind of thinking across the
+[43:46.16]  industry.
+[43:47.52]  Uh and uh
+[43:50.08]  yeah, it's changing fast. It's It's
+[43:51.76]  uncertain. It's It's It's an interesting
+[43:53.68]  time to to to be graduating. But again,
+[43:56.32]  like it's a super exciting time. I think
+[43:58.16]  that's just the the the scale of the
+[43:59.56]  opportunity is bigger than it's ever
+[44:01.04]  been.
+[44:02.48]  Sounds like your advice for senior
+[44:04.20]  engineers is different from that of
+[44:06.40]  junior engineers. What What is your
+[44:08.44]  thinking there? Yeah, I mean, I think
+[44:11.48]  you know, I think for for folks there
+[44:12.96]  the challenges is is how do you you
+[44:15.16]  know, how do you retain the value of of
+[44:17.20]  this incredible experience and knowledge
+[44:19.00]  that you've gained over a career
+[44:21.12]  while you know, not falling behind
+[44:24.28]  while learning how to you know, best
+[44:26.12]  best use the tools.
+[44:28.04]  And you know, when I look at
+[44:31.56]  senior folks, this is a is a challenge,
+[44:34.36]  you know, hit of them. I think a lot of
+[44:36.00]  people have found themselves in
+[44:38.76]  influence and and and leadership type
+[44:40.88]  positions where they aren't hands-on
+[44:43.20]  building, you know, every day and I
+[44:45.04]  think it's going to be harder and harder
+[44:47.52]  to be
+[44:49.12]  in that kind of role
+[44:51.12]  and
+[44:52.36]  be able to influence and advise in a
+[44:56.76]  um
+[44:58.52]  in a relevant way in a in a in a
+[45:00.72]  positive way.
+[45:02.40]  Um and so really I think my advice for
+[45:04.92]  folks is is is you kind of got to get
+[45:06.68]  building. Like you got to get back in
+[45:08.60]  get back into it. You need to
+[45:10.84]  deeply understand how the practice of
+[45:14.40]  building software and the practice of
+[45:16.08]  designing software has changed and and
+[45:19.08]  is continuing to change.
+[45:21.40]  And and so the challenge is how do I you
+[45:25.04]  know, really take advantage of all of
+[45:26.88]  this knowledge and expertise that I've
+[45:28.68]  built up in my career
+[45:30.60]  and be super curious and be super
+[45:33.48]  hands-on and really be in the details.
+[45:36.64]  And the good news for that Well, I think
+[45:38.48]  there's two bits of good news. One of
+[45:39.76]  them is because of these new tools, you
+[45:42.92]  know, time spent as a practitioner is is
+[45:45.96]  so much more leveraged than it is today.
+[45:47.76]  You can build
+[45:49.04]  so such cool stuff, you know, in in
+[45:52.12]  during that period of time the the
+[45:54.60]  amount of kind of
+[45:56.72]  wasted time and boilerplate and so on is
+[45:59.52]  is so much smaller and so you really do
+[46:01.56]  have this opportunity.
+[46:03.52]  And the other one is again, like why did
+[46:05.60]  you know,
+[46:06.52]  why did we get into this space? Well,
+[46:09.68]  I didn't get into it so I could go to
+[46:11.20]  meetings and sound smart. I got into it
+[46:13.20]  because I love learning and because I
+[46:14.68]  love building technology and because I
+[46:16.84]  love, you know, solving my customers
+[46:18.80]  problems and because I love, you know,
+[46:20.72]  learning about new, you know, new
+[46:22.68]  technologies and learning new things.
+[46:24.36]  And And there's more opportunity to do
+[46:26.32]  that than ever before. Again, you know,
+[46:28.12]  because of this this new set of tools
+[46:30.00]  and the leverage that comes with them.
+[46:31.32]  And so, really is getting back to,
+[46:34.40]  you know, why are you here? Why did you
+[46:35.76]  get into this career? And I think it
+[46:37.32]  really gets us
+[46:38.84]  as technology-focused people
+[46:42.00]  closer to
+[46:43.88]  the our original answer to that.
+[46:46.24]  It's really obvious to me right now when
+[46:48.20]  I speak to, you know, practitioners,
+[46:51.32]  you know, who and who isn't
+[46:54.16]  using a, you know, modern set of
+[46:56.40]  agentic-powered
+[46:58.00]  developer practices. Right? And the
+[46:59.80]  people who are, um, have these really
+[47:02.96]  interesting things to say about the
+[47:04.44]  strengths and weaknesses of those
+[47:05.88]  approaches and the work that still needs
+[47:07.64]  to be done and the integrations that
+[47:09.24]  still need to be done and the things
+[47:11.12]  that are working and aren't. Uh, and the
+[47:13.40]  people who aren't,
+[47:14.92]  you know, using them hands-on
+[47:17.60]  have such
+[47:20.56]  a poor mental model of how they work,
+[47:23.88]  what they're good at, what they're not
+[47:25.36]  good at, that the things they say about
+[47:27.80]  them tend to vary tend to be essentially
+[47:30.28]  fiction.
+[47:31.36]  Um, and so, you know, I think we are in
+[47:33.96]  this minute that if you aren't doing it
+[47:36.24]  hands-on, your opinion about it is is
+[47:39.68]  very likely to be completely wrong.
+[47:42.40]  And that takes a level of humility to
+[47:45.44]  admit that, you know, is is is tough.
+[47:48.12]  You know, it's it's tough for folks with
+[47:49.44]  fancy titles and it's tough for folks
+[47:51.08]  with with distinguished careers. Uh, but
+[47:53.72]  I I think it's a must.
+[47:55.48]  I I feel like there's a common sentiment
+[47:58.24]  among software engineers when they when
+[48:00.92]  they work with someone who is a you
+[48:04.12]  know, quote unquote tech lead but
+[48:05.80]  they're not really hands-on. So, they've
+[48:08.00]  kind of been in the docks for the last 5
+[48:10.76]  years or or so and there's these minor
+[48:13.64]  things they can tell that this person
+[48:15.92]  doesn't actually understand the
+[48:17.40]  underlying thing and sounds like that
+[48:19.56]  gap will widen with these new tools,
+[48:22.44]  which is if you're you're looking at
+[48:24.36]  things from 1,000 ft up and you're not
+[48:27.04]  actually using the tools, that's just
+[48:29.20]  another thing that separates you from
+[48:31.72]  the people who are actually building
+[48:33.52]  where you'll be very out of touch. And I
+[48:35.96]  I think uh you know, when I look at I
+[48:39.00]  think that's always been true. I think
+[48:40.36]  it is wider than you know, ever before.
+[48:43.28]  Um
+[48:44.44]  and but when I look at the
+[48:47.24]  you know, engineering leaders that I've
+[48:49.20]  really respected and learned a huge
+[48:50.88]  amount from over my career. Uh you know,
+[48:53.44]  for example, some of the folks who who
+[48:55.80]  built S3, you know, 20 years ago,
+[48:59.64]  that was such a successful product
+[49:02.00]  because those folks were so deep in the
+[49:04.36]  details and so grounded on the use cases
+[49:06.64]  and so deep in the economics and and
+[49:08.60]  really just did um
+[49:10.92]  you know, really thought about
+[49:13.40]  uh
+[49:14.24]  both the kind of strategic world of like
+[49:16.48]  how is this cloud thing going to change
+[49:18.68]  the way people want to interact with
+[49:20.16]  storage,
+[49:21.68]  but also the
+[49:24.16]  you know, minute-to-minute details of
+[49:26.04]  what's fast now, what's slow, what's
+[49:27.92]  good, what's bad. And I think you know,
+[49:30.12]  when you think about a extremely
+[49:32.16]  enduring product like S3,
+[49:35.20]  um
+[49:36.84]  at or or EC2, I think it's it's been
+[49:40.44]  that groundedness in the details from
+[49:42.60]  from early on from all levels of
+[49:44.76]  leadership that has made those things
+[49:47.16]  so successful. Um
+[49:50.04]  where you know, other products seemingly
+[49:52.92]  with the same amount of early promise
+[49:56.60]  didn't turn out to be as successful.
+[49:59.68]  I think one of the last topics that I
+[50:02.48]  wanted to ask you about was writing. Um,
+[50:05.72]  you have a ton of awesome posts on your
+[50:08.76]  blog. The style of writing is incredibly
+[50:11.80]  clear.
+[50:12.92]  And I I was curious, why do you write so
+[50:16.40]  much as an engineer?
+[50:19.36]  Writing and and speaking, uh, but
+[50:21.80]  especially writing have this incredible
+[50:23.76]  power.
+[50:24.84]  Um, and
+[50:26.40]  you know, for for technical folks, it's
+[50:28.28]  this incredible multiplier in being able
+[50:30.44]  to take these ideas that's in your head
+[50:33.28]  and share them with the world.
+[50:35.80]  Um,
+[50:36.88]  and you know, you can can take a set of
+[50:39.44]  technical ideas in your head and share
+[50:41.68]  them with the world by building a great
+[50:43.12]  product and that's a fantastic thing to
+[50:44.76]  do.
+[50:45.64]  Uh, you can share them in the world kind
+[50:47.04]  of one-on-one, you know, mentorship,
+[50:49.40]  teach people, learn, small groups, also
+[50:52.76]  a great way to spend time.
+[50:54.88]  But the
+[50:56.64]  multiplication factor of doing a talk or
+[51:00.24]  even more of of writing something is so
+[51:03.12]  much higher, right? Like, there are so
+[51:05.04]  many more people that you can share that
+[51:07.48]  with and it lasts for a much longer
+[51:10.32]  period of time.
+[51:12.16]  Um,
+[51:13.52]  and so just having something written on
+[51:15.20]  my blog even that I wrote like a decade
+[51:16.96]  ago that I can share with someone and
+[51:18.56]  say, you know, here's you know, here's
+[51:20.60]  how to think about this problem, here's
+[51:22.12]  an insight that I I I wanted to share
+[51:24.04]  with you. Or or have people discover
+[51:26.56]  that organically is a super powerful.
+[51:29.04]  And so, writing lets you scale out the
+[51:31.96]  impact of your expertise in in space and
+[51:34.64]  time in a way that's really hard to do
+[51:37.40]  in other media. I think with with video
+[51:40.00]  and with podcasts and so on, you know,
+[51:41.80]  we've seen other ways to do that. But I
+[51:44.12]  think writing remains kind of uniquely
+[51:46.76]  powerful.
+[51:48.96]  And then there's this also this idea,
+[51:50.44]  which is this kind of kind of core
+[51:52.04]  belief culturally at Amazon, and I've
+[51:54.40]  obviously been in
+[51:55.80]  affected by this over the years, that
+[51:58.32]  you know, writing forces a level of
+[52:00.72]  mental clarity that speaking, making
+[52:04.52]  slide decks, etc. doesn't. And you know,
+[52:08.04]  that's something that is also really
+[52:09.36]  been my experience of sitting down
+[52:12.32]  to write something down forces me to
+[52:14.52]  think that through
+[52:16.68]  at a depth that I wouldn't have been
+[52:18.84]  been forced to think it through without
+[52:20.64]  that.
+[52:21.88]  Um and so it's all one of you know, your
+[52:24.00]  early conversations with was with Leslie
+[52:25.76]  Lamport, who kind of takes that a step
+[52:27.28]  further and say, "Hey, you know, it's
+[52:29.28]  formal mathematics that is the next step
+[52:31.08]  there." And I I love that point. Um
+[52:34.52]  but I I I think writing is this really
+[52:36.28]  accessible thing for for people to do
+[52:38.36]  that does force a level of thinking. And
+[52:40.88]  so I do a lot of writing, sometimes just
+[52:43.08]  for myself, right? Like I'll I'll write
+[52:45.72]  not ever intending to share it with
+[52:48.44]  anybody,
+[52:49.68]  but just to sharpen my own thinking on a
+[52:52.44]  on a particular point. And so it's some
+[52:55.08]  of that combination of three things,
+[52:56.56]  right? Like I just I just have something
+[52:58.80]  to say and I want to say it. Um you
+[53:01.20]  know, I have something to say and I want
+[53:02.52]  to scale it out in in time and space.
+[53:05.08]  And I want to sharpen my own thinking on
+[53:08.04]  a on a subject um
+[53:11.32]  or or or the thinking of a small group
+[53:13.20]  on a subject in a way that writing is
+[53:16.08]  just a super powerful tool to to do.
+[53:20.16]  Definitely. Yeah, I remember being
+[53:22.04]  surprised early in my career, I had a
+[53:25.24]  manager tech lead who we would write
+[53:28.12]  these these docs on you know, either the
+[53:30.28]  designs or the strategy, and he said,
+[53:33.60]  "Even if you just wrote it and you threw
+[53:35.44]  it away, it would still be worthwhile
+[53:37.88]  because you'll realize things as you're
+[53:40.28]  writing, and that clarity will save you
+[53:42.80]  a lot of time down the road.
+[53:44.80]  Um and it's interesting to me cuz a lot
+[53:47.28]  of engineers
+[53:48.68]  they complain about writing docs. Docs
+[53:51.08]  and you know, all the stuff around the
+[53:52.56]  code. They kind of they kind of hate
+[53:54.28]  that. They say it's a sign of slow, big
+[53:57.28]  company processes and you know, what
+[53:59.80]  would you say to an engineer like that
+[54:01.68]  who's saying, "I just just let me write
+[54:03.16]  the code." Yeah, and that's a great you
+[54:05.04]  know, it's a great point and I think it
+[54:06.64]  really depends on the level of problem
+[54:09.48]  you're trying to solve. And so, you
+[54:11.56]  know, if I look at
+[54:14.24]  I'm going to pick on UML for a minute
+[54:16.64]  here, right? Like it's a sort of
+[54:17.88]  semi-formal software design process and
+[54:20.96]  not one that I've ever found useful
+[54:22.76]  because I think it just happens at the
+[54:24.04]  wrong semantic level. I think it's
+[54:26.04]  bothered with details at a level that
+[54:27.96]  aren't helpful.
+[54:29.44]  Um
+[54:30.76]  and I think a lot of the let's go off
+[54:32.64]  and document this has has a similar
+[54:34.76]  problem, right? Like does this actually
+[54:37.20]  require that level of reflection and
+[54:40.72]  thinking?
+[54:41.96]  Um
+[54:43.00]  and so I think what, you know, for me
+[54:45.68]  separates a valuable doc writing and and
+[54:49.52]  thinking process from a busy work
+[54:52.04]  process is understanding what you're
+[54:54.96]  getting out of it.
+[54:56.40]  And what you're getting out of it might
+[54:57.96]  be an artifact to share with the future,
+[55:00.60]  which is super valuable.
+[55:02.48]  Um either your future self if you've got
+[55:04.16]  a terrible memory like me or, you know,
+[55:06.80]  new teams, new people, people ex- you
+[55:09.36]  know,
+[55:10.16]  or I want to share something with
+[55:11.48]  customers or I want to share something
+[55:12.92]  with the world. And so that's super
+[55:14.20]  valuable.
+[55:15.56]  Or I want to write down something so I
+[55:18.76]  can think through a really difficult,
+[55:22.00]  often one-way door kind of
+[55:24.76]  un- hard to change technical decision or
+[55:28.40]  API design decision.
+[55:30.36]  And I'm not going to do that every time
+[55:33.00]  I make a technical decision. It's not
+[55:34.64]  worth it because a lot of those
+[55:35.84]  technical decisions are either easy or
+[55:38.72]  or not as critical or can be just be
+[55:40.44]  taken back if we figure out they're
+[55:42.12]  wrong.
+[55:43.48]  But I am going to to spend my time that
+[55:45.76]  way when there are key decisions to
+[55:49.48]  make, when there are key
+[55:51.92]  um
+[55:52.64]  insights to to find.
+[55:56.12]  And
+[55:57.84]  I think, you know, and so
+[56:00.56]  it is that like what is the purpose of
+[56:02.40]  writing?
+[56:03.56]  Uh that
+[56:04.92]  uh is that that separates
+[56:06.92]  well-spent time from
+[56:09.68]  poorly spent time.
+[56:11.68]  Now, there are people who still don't
+[56:13.28]  like writing even when it's well-spent
+[56:15.16]  time, even when it's like
+[56:17.80]  you know, you have to explain this piece
+[56:19.72]  of technology to, you know, to a future
+[56:21.96]  team. Um
+[56:23.88]  I think that's a skill worth developing.
+[56:25.72]  You know, sometimes you you do need to,
+[56:27.76]  you know, uh eat your vegetables, uh you
+[56:30.40]  know, and it's it's it is a skill worth
+[56:32.36]  getting good at.
+[56:33.96]  Um
+[56:35.56]  and you know, especially in
+[56:39.20]  documenting the core kind of technical
+[56:41.52]  decisions behind a design is is so
+[56:44.60]  useful. And that's useful in two ways,
+[56:46.68]  by the way. Like one of them is as we
+[56:49.16]  think about building a big system,
+[56:51.32]  um we make thousands of decisions. And
+[56:55.44]  some of those decisions are very
+[56:57.96]  carefully chosen, very particular, and
+[57:01.36]  very impactful.
+[57:03.44]  And some of those decisions are
+[57:06.08]  the best thing we could guess in the
+[57:07.64]  moment based on having no data to make
+[57:09.72]  that decision.
+[57:11.24]  And it's super useful for people who are
+[57:13.28]  coming in to improve that system down
+[57:15.76]  the line to be able to look at the
+[57:18.08]  design and say which of these things
+[57:20.24]  were very carefully chosen and thought
+[57:21.88]  through, and which of these things were
+[57:23.72]  arbitrary.
+[57:25.40]  And because the arbitrary things like
+[57:27.56]  okay, well, I'm going to change that and
+[57:29.20]  I'm going to just go ahead and change
+[57:30.44]  that cuz I have better data now. I've
+[57:32.00]  watched the system run. I can go and
+[57:33.48]  change those. And these other ones were
+[57:35.40]  like, well, let me really engage with
+[57:37.36]  the reason that we made this decision.
+[57:38.96]  Maybe it was non-obvious. Maybe there
+[57:40.56]  was some some more advanced thinking.
+[57:42.76]  And so, being able to kind of understand
+[57:45.16]  the amount of thought that went into a
+[57:47.00]  decision is almost as important as
+[57:48.84]  understanding what that thought was. You
+[57:51.40]  had a really interesting blog post. This
+[57:53.32]  was um
+[57:54.60]  from a while back. It it's titled the
+[57:57.56]  four hobbies and apparent expertise.
+[58:01.12]  And you introduced this really
+[58:03.04]  interesting idea. It's a 2 by 2 matrix.
+[58:05.64]  And on one side, there's doing versus
+[58:08.68]  discussing. And on the other side,
+[58:11.08]  there's the hobby and the gear. Maybe I
+[58:13.88]  can overlay it for people who want to
+[58:15.84]  see. And then later you you kind of
+[58:17.52]  liken that to your career and how I
+[58:20.56]  guess maybe we can imagine the hobby is
+[58:23.00]  is actually coding. And maybe the gear
+[58:25.48]  is
+[58:26.44]  let's just say it's like your dev setup
+[58:27.84]  or something like that. You talked about
+[58:29.60]  these two aspects of being in in
+[58:33.00]  depending on which quadrant you are,
+[58:34.48]  which is there's this trade-off between
+[58:36.76]  expertise and visibility. Where imagine
+[58:39.92]  you're really into coding and you're
+[58:41.52]  really into doing, you're going to be
+[58:44.16]  phenomenal in terms of expertise, but
+[58:47.12]  maybe not as visible, cuz you're not
+[58:49.24]  talking with everyone about how cool
+[58:51.64]  your setup is and and all of that. And
+[58:54.40]  on the flip side, if you're really into
+[58:56.80]  the gear, or maybe your setup in this
+[58:58.88]  case, and you're really into discussing,
+[59:01.04]  you're you're on all the messaging posts
+[59:03.60]  and that, you might not actually be that
+[59:05.40]  good at at coding, but you're very
+[59:07.80]  visible and you have this apparent
+[59:10.64]  competence.
+[59:12.12]  And I thought that trade-off was really
+[59:13.68]  interesting, because I've seen that so
+[59:15.44]  much in software engineering, too, is
+[59:17.32]  there might be someone who's
+[59:19.04]  really quiet coder. They never write
+[59:21.12]  anything, but they know everything, cuz
+[59:23.92]  they've just been in the weeds all the
+[59:25.92]  time. And then there are people on the
+[59:28.00]  complete opposite end of the spectrum
+[59:29.48]  that writing all the time, speaking all
+[59:31.92]  the time, but maybe not actually
+[59:34.12]  practicing as much. And my question to
+[59:36.60]  you is, how do you strike that balance?
+[59:38.40]  Cuz obviously too far in either
+[59:39.96]  direction is not optimal. So, how do you
+[59:42.72]  strike that balance?
+[59:44.44]  Yeah, that's uh you know, that's that's
+[59:46.72]  something that I reflect on a on a lot.
+[59:49.28]  Uh you know, and I do explicitly think
+[59:50.92]  that sort of being 100% on either of
+[59:52.80]  those ends is a is a is a is a failure
+[59:55.00]  mode. And I think
+[59:56.60]  you know, I I will say that
+[59:58.96]  I have a lot more
+[60:01.72]  personal enjoyment working with the
+[60:03.88]  people that are 100% on the doing side
+[60:06.56]  and and 0% on the talking side. I I I I
+[60:09.28]  appreciate and and deeply you know,
+[60:11.28]  deeply love their expertise. Um
+[60:14.68]  but I I I do think that you know, they
+[60:16.48]  they could have more impact and and and
+[60:18.64]  leverage if if if they you know, swung a
+[60:20.76]  little bit away from that. Um
+[60:23.08]  you know, I I tend to not enjoy as much
+[60:25.88]  interacting with the people who are 100%
+[60:27.92]  on on on on the speaking side. Um
+[60:31.48]  Uh but I I
+[60:33.40]  and I think they would you know, have a
+[60:35.20]  lot more
+[60:37.04]  relevant things to say
+[60:39.44]  you know, if if if they you know, swung
+[60:42.00]  a little bit back towards the center.
+[60:45.56]  The other challenge of being on a 100%
+[60:47.36]  on the doing side is sort of gets back
+[60:48.92]  to that, how do you find the really
+[60:50.28]  important problems? And you know, if
+[60:52.48]  your head's down in your IDE all day
+[60:56.08]  you could very likely be working on the
+[60:58.36]  wrong thing.
+[60:59.84]  Um you know, something that that isn't
+[61:01.52]  as as important, isn't as impactful. Um
+[61:05.52]  you know, doesn't have these properties
+[61:06.88]  that that people want. So, you know, how
+[61:09.24]  how do you find the optimal balance? Uh
+[61:11.52]  I don't have a have a recipe for you
+[61:13.80]  know, what really is is optimal.
+[61:17.04]  I tend to
+[61:19.56]  do about let's say 75/25
+[61:23.20]  kind of practitioner versus you know
+[61:25.52]  teaching and and and and communicating.
+[61:28.28]  Maybe 80/20 at times. I found that's
+[61:31.12]  about what feels right for me. Um
+[61:36.04]  I would say that, you know, the great
+[61:37.88]  people I work with, you know, from sort
+[61:40.64]  of 90/10 on that scale up to about 50/50
+[61:43.92]  on that scale. I think, you know,
+[61:45.48]  outside of those, you know, folks tend
+[61:47.64]  to
+[61:48.76]  um
+[61:50.00]  you know, tend to get into trouble
+[61:52.16]  um as practitioners, right? Like, you
+[61:54.16]  know, there people whose job it is to
+[61:55.60]  be, you know, communicators and and
+[61:57.44]  that's great as long as they have the
+[61:58.68]  curiosity and and are clear about what
+[62:00.88]  they, you know, know and and and don't
+[62:02.68]  know. Um
+[62:04.92]  But you know, I found that sweet spot at
+[62:06.96]  that sort of 75/25 point in in in my
+[62:10.36]  career and and that's what's what's
+[62:12.44]  worked for me. I think
+[62:15.12]  um
+[62:16.32]  And I I I think in this moment where
+[62:20.08]  things are changing so fast, there's so
+[62:21.56]  much to learn,
+[62:23.12]  um you know, swinging a little bit more
+[62:25.28]  towards the practitioner side, I think
+[62:27.08]  generally will help people. But again,
+[62:29.36]  you don't want to go too far that way
+[62:30.64]  because then you lose the
+[62:32.52]  um you know, what's important for you
+[62:34.92]  that comes with interacting with the
+[62:36.40]  outside world. On the doing versus
+[62:38.56]  discussing axis, I I kind of view the
+[62:41.60]  doing one as if you were too far, you
+[62:44.12]  would be underrated. And if you were too
+[62:47.68]  far at the discussing, you would be
+[62:50.08]  overrated. Mhm. And
+[62:52.80]  if for someone who's structuring their
+[62:54.84]  career,
+[62:56.12]  uh would you say it's better to be
+[62:58.16]  overrated or underrated?
+[63:01.24]  I think long-term, you know, if if
+[63:03.20]  you're if you're using that terminology,
+[63:04.96]  it's probably better to be underrated. I
+[63:07.08]  think
+[63:08.16]  you know, being
+[63:09.68]  being overrated can feel great
+[63:12.12]  in the moment, um but is rarely
+[63:14.76]  sustainable.
+[63:16.40]  Uh and and and really sort of gets you
+[63:19.16]  where
+[63:20.72]  to where you you you you need to be. I
+[63:23.16]  really enjoy, you know,
+[63:25.52]  uh,
+[63:27.04]  you know, things like sports and and
+[63:28.80]  and, you know, these sort of creative
+[63:30.36]  hobbies and and, uh, you know, crafts
+[63:33.00]  because it it it does,
+[63:35.20]  you know, turn that, um,
+[63:37.60]  let's say perception and reality
+[63:40.24]  knob to to very much reality, right?
+[63:43.12]  Like as a as a as a sports person, you
+[63:45.36]  can't you can't fool the world for very
+[63:47.24]  long. Uh, it it it very quickly becomes,
+[63:50.52]  uh, you know, very obvious, you know,
+[63:51.96]  who who can and who can't. Uh,
+[63:54.36]  you know, I think as a as a crafts
+[63:55.84]  person, the same, right? It it very
+[63:57.84]  quickly becomes,
+[63:59.52]  um,
+[64:00.20]  obvious [clears throat] who who can and
+[64:01.32]  who can't. And I think it takes a little
+[64:03.20]  bit longer in a field like ours where
+[64:05.04]  there always is so much kind of
+[64:06.84]  qualitative stuff that goes on.
+[64:09.16]  Um, but I think long-term when I look
+[64:11.12]  at, you know, careers that I really
+[64:12.88]  admire and people I really admire, uh,
+[64:15.80]  they tend to be people who are
+[64:17.64]  personally very honest about their level
+[64:20.68]  of of knowledge and understanding and
+[64:22.36]  skill.
+[64:23.64]  So, people who walk the walk, not
+[64:26.44]  necessarily talk the talk. I see. Yeah,
+[64:28.92]  about engineers that you admire, I'd be
+[64:30.76]  curious cuz you have worked at AWS and
+[64:33.76]  for such a long time and you have seen
+[64:36.84]  so many legendary engineers.
+[64:39.36]  Who at AWS do you look up to and and
+[64:41.88]  why?
+[64:43.56]  Yeah, I mean, you know, just fantastic.
+[64:46.16]  One of the blessings of working at a
+[64:47.40]  place like AWS is I get to work with so
+[64:49.12]  many great people. Um,
+[64:50.96]  you know, maybe because he's retired,
+[64:53.20]  I'll I'll I'll talk a little bit about
+[64:55.04]  Al Vermeulen. Uh, was was one of the
+[64:57.08]  sort of early engineers at AWS and,
+[64:59.68]  um,
+[65:00.96]  original,
+[65:02.64]  say, huge contributor to the design of
+[65:05.08]  S3, a really big contributor to the
+[65:07.20]  design of a lot of a lot of our database
+[65:09.20]  services over time.
+[65:11.20]  Um, Al was actually the the CTO of
+[65:14.12]  Amazon for a for a period of time when
+[65:16.12]  he realized, I think,
+[65:17.80]  that wasn't the job he wanted to do. Um,
+[65:20.96]  but I, you know, what I really admired
+[65:24.08]  about uh about Al from early in my
+[65:26.60]  career is,
+[65:29.24]  you know, very clearly he was somebody
+[65:31.76]  who deeply understood the things he was
+[65:33.64]  he was doing. And he could work in these
+[65:36.28]  two modes, right? Like, you know, I I
+[65:38.64]  have a great um memory of a sort of
+[65:42.68]  2010-ish, uh
+[65:44.64]  you know, arguing with Al about some of
+[65:46.44]  the edge cases in in the the Paxos
+[65:49.20]  paper. And, you know, he was super deep
+[65:51.68]  at that level, but could also get up to
+[65:53.44]  the the really kind of executive level
+[65:55.44]  and talk about, you know, cloud strategy
+[65:57.88]  and the way we should be explaining
+[65:59.44]  things to people and some of the, you
+[66:00.96]  know, sort of fundamental things that we
+[66:02.68]  need to be building.
+[66:04.12]  Um,
+[66:05.44]  and I really admired that ability to
+[66:07.40]  work sort of almost at at at every
+[66:09.92]  level. And I was like, "Wow, you know,
+[66:11.20]  this is this is something I aspire to."
+[66:13.88]  Um, and uh you know, want to model my
+[66:16.96]  want to model my own career after.
+[66:19.88]  Um,
+[66:21.92]  and so, you know, that's I I think that
+[66:23.68]  is uh you know, the kind of person I've
+[66:26.24]  really, you know, really enjoyed working
+[66:29.00]  with is is people who do have that, you
+[66:31.60]  know, do have that breadth. Um,
+[66:34.32]  and I think, you know, one of the other
+[66:35.64]  things that is you know, really
+[66:39.04]  admirable about a lot of these folks is,
+[66:41.76]  you know, they
+[66:43.32]  they don't want to be celebrities,
+[66:44.56]  right? They they they want to do cool
+[66:46.12]  work for, you know, have an impact, do
+[66:48.08]  great stuff for customers, you know,
+[66:50.12]  optimize for having impact. You know,
+[66:52.36]  for people who want to continue their
+[66:54.28]  engineering education and really remain
+[66:57.32]  on top of things, deeply understand the
+[66:59.64]  technology, do you have any top
+[67:02.28]  technical book recommendations? You
+[67:04.36]  know, anybody who's building distributed
+[67:06.48]  system things, I I I highly recommend uh
+[67:10.28]  Martin Kleppmann's book.
+[67:12.92]  I think there's a second edition of that
+[67:14.68]  coming out, you know, soon. Um
+[67:18.12]  there's a new edition of quantitative
+[67:20.24]  systems design book, which I also think
+[67:22.12]  is is is great. Sorry, Hennessy and
+[67:24.24]  Patterson's computer architecture book.
+[67:26.64]  This this is a super super useful one
+[67:29.24]  that covers a
+[67:30.52]  ton of ground. I read a ton of you know,
+[67:33.56]  fiction and and non-fiction and and
+[67:35.64]  mostly papers when I'm reading technical
+[67:37.48]  things I find you know, I find engaging
+[67:39.56]  at that level you know, more more useful
+[67:41.96]  for me.
+[67:43.36]  And by the way, that's that's become way
+[67:45.20]  more accessible now. You know, one of
+[67:47.68]  the great ways to dive into a paper is
+[67:50.36]  you know, hey
+[67:51.88]  you know, hey Claude summarize this for
+[67:53.92]  me and then then I can dive into it and
+[67:56.44]  and and read you know, the author's
+[67:57.88]  words and I I find that mode is great
+[68:00.40]  and and this is super accessible for
+[68:02.04]  people who haven't been able to read
+[68:04.12]  papers in in the past. Um
+[68:08.92]  but uh
+[68:11.48]  you know, and then there's also a ton of
+[68:12.96]  insight in in some really old stuff too.
+[68:16.20]  Uh
+[68:16.80]  for example
+[68:18.52]  um
+[68:19.64]  you know, some of the
+[68:22.28]  algorithms that we used in in in Lambda
+[68:25.52]  to to manage traffic and and manage
+[68:27.68]  bursts of traffic come from Erlang's
+[68:29.96]  work like a hundred years ago on on
+[68:32.00]  managing telephone call centers
+[68:34.44]  and and his book about that and um
+[68:38.16]  and so you know, folks also shouldn't
+[68:40.04]  think that oh well, the industry is
+[68:41.44]  changing super fast and so I should only
+[68:43.20]  read recent things like there's still
+[68:45.56]  incredible insights in some of the you
+[68:48.08]  know, older work
+[68:49.88]  and in the foundations of
+[68:52.92]  computing and infrastructure and and and
+[68:55.32]  networking and and computer science that
+[68:57.48]  there is um
+[68:59.08]  you know, more again more maybe more
+[69:01.96]  leverage than ever before you know
+[69:03.72]  deeply understanding those topics.
+[69:06.16]  And then last question for you is if you
+[69:08.56]  could go back to your younger self when
+[69:11.56]  you just joined AWS and give yourself
+[69:14.36]  some advice what would you say?
+[69:16.36]  I think maybe I'd be a little bit
+[69:17.44]  bolder. I really loved the team that I
+[69:19.20]  worked with and and you know
+[69:21.92]  you know especially in EC2 and and in
+[69:23.76]  the early days in EBS and I think I was
+[69:26.48]  a little bit more hesitant than was
+[69:28.04]  optimal about leaving those teams and
+[69:30.20]  and looking for the next thing
+[69:32.16]  um you know as
+[69:34.36]  um
+[69:35.72]  you know my
+[69:37.92]  own learning and impact kind of you know
+[69:40.32]  tapered off a little bit in in in those
+[69:42.80]  those places and so
+[69:44.64]  you know I think I've changed
+[69:46.04]  organizations kind of
+[69:48.56]  in a big way four times in my career and
+[69:51.08]  maybe five or six would have been
+[69:52.68]  optimal not a lot more but but some more
+[69:55.60]  uh and so you know don't don't hesitate
+[69:58.44]  uh to
+[69:59.84]  think about you know what am I learning
+[70:02.20]  and who am I learning from and is there
+[70:04.08]  a better environment to to to do that
+[70:06.60]  you know more quickly and
+[70:08.44]  uh and and to learn more things and you
+[70:10.64]  know I'm highly personally highly
+[70:12.00]  motivated by being able to follow my
+[70:14.48]  curiosity and every time I've done that
+[70:17.04]  in my career I found that a
+[70:20.08]  valuable move
+[70:22.12]  uh and uh and something that I've you
+[70:24.60]  know personally enjoyed. Awesome. Okay,
+[70:28.24]  well thank you so much for your time I I
+[70:30.60]  really appreciate it Mark uh thank you
+[70:32.64]  for sharing with uh the audience. This
+[70:34.88]  has been super fun. Thanks so much.
+[70:37.68]  Thank you for listening to the podcast.
+[70:39.32]  It's a passion project of mine that I've
+[70:41.48]  really enjoyed building. Another passion
+[70:43.56]  project that I've been working on kind
+[70:44.96]  of in secret is building an ergonomic
+[70:47.44]  keyboard that I wish existed and I
+[70:49.68]  finally have a prototype so I'd love to
+[70:51.44]  show you what we've built. It's ultra
+[70:54.20]  low profile and ergonomic and I couldn't
+[70:56.96]  find anything like it on the market, so
+[70:58.64]  that's why we built it. I'll put a link
+[71:00.48]  to the keyboard in the description. You
+[71:02.04]  can take a look and learn more about the
+[71:03.56]  project there. We could definitely use
+[71:05.32]  your support. Also, if you have any
+[71:07.32]  feedback for me about the show, I'd love
+[71:09.32]  to hear it. Comments on YouTube have led
+[71:11.80]  to guests coming on like Ilya Grigoric
+[71:14.52]  and David Fowler. I wasn't aware of them
+[71:16.76]  until someone dropped a comment. Also,
+[71:18.92]  feedback in the comments helped me learn
+[71:20.48]  to reduce the number of cliffhangers in
+[71:22.88]  the intros. So, your comments definitely
+[71:24.84]  make a difference. Please keep letting
+[71:26.24]  me know what you'd like to see more of
+[71:27.88]  in the show, and I'll see you in the
+[71:29.24]  next episode.

@@ -1,0 +1,1687 @@
+Title     : Creator of TypeScript: 10x Faster Typescript, Why AI Won't Replace SWEs | Anders Hejlsberg
+Video ID  : cywK3XYYJ2o
+URL       : https://www.youtube.com/watch?v=cywK3XYYJ2o
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1678
+Saved at  : 2026-10-08 08:14:45
+------------------------------------------------------------
+
+[00:00.32]  Don't let people tell you that it can't
+[00:02.16]  be done. [music] When they tell you it
+[00:03.68]  can't be done, it's because they can't
+[00:05.28]  do it.
+[00:06.16]  >> This is Anders Hilesberg, the creator of
+[00:08.40]  Typescript and C. And we talked about
+[00:10.80]  how Typescript recently became [music]
+[00:12.88]  10 times faster through a native
+[00:14.80]  rewrite.
+[00:15.60]  >> Couldn't we like fix JavaScript? [music]
+[00:17.20]  Wouldn't that be better? [laughter]
+[00:19.04]  Do you know what I mean?
+[00:20.16]  >> If you think about Rust, what didn't it
+[00:22.88]  have that if it had it, you would have
+[00:24.88]  picked it?
+[00:25.36]  >> I mean, I think there are two things.
+[00:26.86]  [music] Um, if you're going to hand AI
+[00:29.52]  the keys, I mean, then all bets are off,
+[00:32.08]  right?
+[00:33.04]  >> Why is there such a big difference
+[00:34.72]  between this opinion and what I see from
+[00:38.88]  maybe people who work at Anthropic?
+[00:40.96]  People love these like take it all the
+[00:43.36]  way to 100%. [music] Right? And that's
+[00:45.52]  where I get off the bus.
+[00:47.36]  >> Here's the full episode.
+[00:51.76]  The big thing that we're going to talk
+[00:53.12]  about here is obviously TypeScript 7
+[00:55.76]  with the native rewrite. And the first
+[00:58.24]  thing that I think of when I see this
+[00:59.76]  was I didn't even realize that the
+[01:02.16]  compiler was written in JavaScript to
+[01:03.84]  begin with because I don't usually think
+[01:05.60]  of compilers being written in you know
+[01:08.00]  highle dynamic languages.
+[01:10.08]  >> Yeah. No.
+[01:11.60]  >> So why was Typescript written originally
+[01:14.88]  the compiler written in JavaScript?
+[01:17.92]  >> No, it's a good question. Uh, and
+[01:20.32]  honestly, if you had told me like before
+[01:23.04]  the TypeScript project started that
+[01:24.48]  Anders you're going to be writing
+[01:25.60]  compilers in JavaScript, I'm like, "No,
+[01:27.84]  no, I'm not." But I mean it it it you
+[01:31.36]  know the original prototypes for for
+[01:34.00]  TypeScript um the Strata project as it
+[01:36.64]  was called in the in the very early days
+[01:39.04]  was actually written in C because it was
+[01:42.56]  like an adapt adaptation of the the
+[01:45.44]  parser the JavaScript parser that we had
+[01:47.60]  in IE and whatever and and then we moved
+[01:50.48]  to to JavaScript but we wrote it sort of
+[01:52.64]  C style. Um but why did why did we go
+[01:56.40]  with JavaScript? Well, I mean, if you
+[01:59.60]  can self-host in the ecosystem that you
+[02:03.52]  want to be a part of, then that is just
+[02:05.84]  dramatically better than putting
+[02:07.44]  yourself outside the ecosystem and
+[02:09.36]  trying to target that ecosystem. Do you
+[02:11.20]  know what I mean? Because by writing it
+[02:13.68]  in Typescript, we were also
+[02:17.12]  daily users of Typescript and daily
+[02:19.12]  users of the tooling that we were
+[02:20.80]  building. And whenever something didn't
+[02:22.48]  work right, we knew it immediately. And
+[02:24.64]  whenever something didn't perform right,
+[02:26.40]  we knew it, you know. And so so in the
+[02:29.44]  early in the early years, it was it was
+[02:31.92]  a huge uh boon I think. And then of
+[02:35.68]  course
+[02:37.28]  JavaScript runs everywhere, right? And
+[02:38.88]  that meant automatically our compiler
+[02:40.72]  could run on every platform anywhere
+[02:42.56]  even in the browser right uh had we gone
+[02:45.44]  with a native code solution at that time
+[02:47.92]  it wouldn't have been possible to run it
+[02:49.36]  in the browser. Now we have web assembly
+[02:51.20]  or wom you know but that didn't exist at
+[02:54.00]  the time right um so so it was it was a
+[02:58.00]  meaningful choice uh and honestly
+[03:02.00]  at that time also people didn't really
+[03:04.80]  realize how fast JavaScript had gotten I
+[03:08.00]  mean it used to be very slow and then
+[03:10.64]  Google did all of their excellent work
+[03:12.48]  with V8 and got it to within two or 3x
+[03:16.08]  of of native code which is pretty darn
+[03:18.48]  impressive. Um, and it was like full
+[03:22.24]  well possible to write compilers in in
+[03:25.36]  JavaScript. Um, and you could even get
+[03:28.56]  them performant. Uh, because often
+[03:31.28]  it's the algorithms that determine how
+[03:33.12]  performant you are. It isn't necessarily
+[03:34.80]  the runtime environment, right? I mean,
+[03:36.48]  it's a combo, but but yeah.
+[03:38.88]  >> Is there anything unique about the
+[03:40.88]  TypeScript compiler? like you know I
+[03:43.12]  think of a compiler I think of clang or
+[03:46.00]  or you know one of those ones that is
+[03:48.48]  used for maybe C, C++ or those static
+[03:51.44]  languages. What's unique about the
+[03:53.76]  TypeScript compiler when it was written
+[03:55.76]  in JavaScript compared to these native
+[03:59.04]  uh compilers?
+[04:00.80]  >> I think there are a couple of things
+[04:02.32]  that are pretty unique about
+[04:04.80]  TypeScript's compiler. First of all, it
+[04:07.20]  doesn't target machine code. targets
+[04:09.44]  JavaScript [laughter]
+[04:11.04]  and and some people call that a
+[04:12.64]  transpiler and in a sense you know the
+[04:15.36]  the compilation phase is mostly about
+[04:17.84]  removing the type annotations and
+[04:19.60]  turning your TypeScript back into
+[04:21.44]  JavaScript. Right now in the early days
+[04:24.16]  also an important part of of the
+[04:27.52]  compilation process was to downlevel
+[04:29.92]  your JavaScript meaning
+[04:32.80]  all of the runtime environments at the
+[04:34.56]  time were not evergreen. uh and
+[04:36.72]  sometimes people were lagging like
+[04:38.64]  multiple years behind on which level of
+[04:41.20]  the standard was implemented and for
+[04:43.36]  example when classes got standardized
+[04:46.08]  most JavaScript runtimes didn't
+[04:47.68]  implement classes but it turns out that
+[04:49.84]  you can downlevel to constructor
+[04:51.84]  functions and and trans transform the
+[04:54.96]  code and so part of what we did was this
+[04:58.48]  transformation down level transpiling of
+[05:01.28]  the code but then of course the type
+[05:03.60]  checking uh is is the big thing that we
+[05:05.68]  loop and the type checker in in
+[05:09.12]  Typescript is also quite unlike any
+[05:11.52]  other type checker uh in other
+[05:14.24]  compilers. Typically type checkers exist
+[05:17.52]  in compilers to guide the code generator
+[05:21.52]  um because you want to know are we
+[05:23.04]  dealing with a float or an in or a
+[05:24.48]  string here so we can generate you know
+[05:26.32]  the correct machine instructions for
+[05:28.16]  that data type etc etc. That's not the
+[05:31.52]  case in in Typescript. In fact, since we
+[05:34.56]  erased the types, the types have no
+[05:36.48]  impact whatsoever on the runtime
+[05:38.80]  behavior of the code. They purely exist
+[05:41.68]  for for tooling sake and for the
+[05:45.12]  developer sake and to guide things like
+[05:48.08]  statement completion and refactoring and
+[05:50.48]  code navigation, which is a whole
+[05:52.88]  different thing. Um, and also they don't
+[05:56.40]  necessarily have to be there. Uh, and so
+[05:59.12]  Typescript has a gradual type system.
+[06:01.04]  you can sort of have half of your code
+[06:02.64]  have types and the other half is just
+[06:04.48]  any um that we don't check. Now very few
+[06:09.12]  languages have anything like that. So,
+[06:13.04]  so it's very it's a very different
+[06:14.56]  compiler in in in that sense, you know,
+[06:16.80]  and a very different language in in that
+[06:18.56]  sense. Um, that actually made it
+[06:20.64]  fascinating to work on because we were
+[06:22.16]  solving problems that no one had solved
+[06:24.24]  before, you know.
+[06:25.76]  >> I know a lot of compilers, you know,
+[06:27.44]  they take the the higher level code and
+[06:29.44]  they typically apply optimizations as
+[06:31.60]  well. Maybe, you know, they unroll loops
+[06:34.24]  or they get rid of duplicate
+[06:36.40]  instructions, simplify things. Is
+[06:38.48]  anything like that happen in the
+[06:40.48]  TypeScript to Java compilation process?
+[06:44.24]  >> Very little. Um, like I said, when we do
+[06:47.20]  the down leveling, there there's some
+[06:50.16]  transformations that that that go on
+[06:52.00]  that are that are complex, but it is
+[06:55.20]  less and less the thing that's important
+[06:57.20]  about Typescript. And in fact, a lot of
+[06:59.60]  people use TypeScript only for the type
+[07:01.84]  checker. uh and then they use some
+[07:05.12]  bundler like ESB build or SWC or
+[07:08.00]  whatever to package their app, erase the
+[07:10.72]  types, do whatever needs to be done in
+[07:13.20]  order to make it runnable in in in the
+[07:15.12]  browser. And so we're not really there
+[07:18.80]  to optimize your your code for runtime.
+[07:21.60]  We're there to make you more productive
+[07:23.84]  as a developer or make AI more
+[07:26.08]  productive as a as a developer.
+[07:29.44]  So with the the native rewrite of this
+[07:32.48]  originally fully JavaScript compiler,
+[07:35.68]  what was the problem you were trying to
+[07:37.36]  solve with the rewrite and why did you
+[07:40.24]  end up write rewriting it in native
+[07:42.24]  code?
+[07:43.12]  >> Well, I mean the the problem we were
+[07:44.88]  trying to solve it's real simple
+[07:46.48]  performance and scalability. JavaScript
+[07:48.56]  was never really optimized for compute
+[07:52.08]  inensive workloads like compilers,
+[07:54.40]  right? JavaScript is more about creating
+[07:57.28]  UI that runs in a browser. Was
+[07:59.52]  originally intended for just like maybe
+[08:02.00]  a 100 lines of code, but now of course
+[08:03.84]  it's gotten to be a lot more. Um, but
+[08:06.96]  it's not it's not a place that that you
+[08:09.76]  would optimize for um for the kind of
+[08:13.76]  workload that that we are. So in
+[08:16.80]  JavaScript, first of all, you pay a 2 to
+[08:19.52]  3x perf penalty compared to native code.
+[08:22.40]  I mean it depends on on the workload you
+[08:24.32]  know but that's but if if you're doing
+[08:26.48]  compute that's about where it's at. Um
+[08:30.16]  and then secondly in JavaScript there
+[08:32.24]  are a lot of restrictions around use of
+[08:34.96]  concurrency. Uh JavaScript was always
+[08:38.40]  engineered in fact to be a single
+[08:40.24]  threaded language. That's why we have
+[08:41.76]  callbacks and async and and and
+[08:43.84]  whatever. It's because you can't spin up
+[08:45.60]  threads. Um, and that's a good thing
+[08:49.44]  mostly because concurrency in a language
+[08:52.64]  with mutable data is very very hard
+[08:55.44]  because you can have races and deadlocks
+[08:57.28]  and all of this good stuff, right?
+[08:58.88]  That's why functional programming
+[09:01.04]  languages are easier with concurrency
+[09:03.52]  because all the data is immutable and
+[09:05.28]  it's much easier to reason about. Um
+[09:09.28]  so JavaScript doesn't give you access to
+[09:12.48]  concurrency other than web workers and
+[09:15.60]  but web workers can't share data between
+[09:18.40]  each other other than by remoting it. So
+[09:20.56]  you can you can have one web worker
+[09:22.56]  compute some something, but if it wants
+[09:24.24]  to give it to some other web worker, it
+[09:26.64]  has to turn it into JSON or it can't
+[09:29.04]  just hand it objects. And that means you
+[09:32.48]  can't have one worker compute some data
+[09:36.16]  structure and then have someone else use
+[09:38.32]  it. In other words, you can't have
+[09:40.24]  shared memory concurrency. And really
+[09:42.72]  that's what we wanted in order to gain
+[09:46.24]  all of the perf that we were leaving on
+[09:48.32]  the table by not utilizing multi-core
+[09:50.64]  CPUs that everyone has today, right?
+[09:53.28]  Because Moors law has stopped giving us
+[09:56.40]  faster CPUs. It's giving us more CPUs
+[09:59.20]  and we got to like find ways to use them
+[10:01.12]  in our in our compute intensive
+[10:02.72]  workloads or else we're leaving money on
+[10:04.32]  the table. And so we were leaving money
+[10:05.84]  on the table in multiple ways, right?
+[10:08.56]  And so native code and that was why we
+[10:11.44]  we looked for a language that
+[10:15.20]  would get us out of both of those binds.
+[10:17.44]  It had to be native and it had to have
+[10:19.28]  access to shared memory concurrency.
+[10:21.68]  >> I saw for the language choice you went
+[10:23.68]  with Go. And when I think of all the
+[10:26.32]  systems languages, the ones that are
+[10:28.00]  often hot or maybe you know Rust or
+[10:31.04]  Zigg, why did you choose Go for the
+[10:34.16]  native rewrite? I think the decision
+[10:36.48]  process was actually pretty structured.
+[10:39.68]  You know, the first decision we made was
+[10:43.04]  we're not going to rewrite. We're going
+[10:44.72]  to port because only by porting can we
+[10:48.16]  preserve the semantics and the
+[10:49.84]  algorithms and the exact behavior of our
+[10:52.96]  existing compiler which everyone depends
+[10:55.04]  on for backwards compatibility. Now we
+[10:57.52]  could have we could have cleaned the
+[10:59.60]  slate and started completely from
+[11:01.12]  scratch but we would have come we would
+[11:02.88]  have come up with a different language
+[11:04.16]  in the sense that it would give you
+[11:06.16]  different errors or behave differently
+[11:07.92]  in certain situations where it has to
+[11:09.92]  make choices between multiple
+[11:12.72]  possibilities and and what have you.
+[11:14.72]  Right? So we wanted to port and that
+[11:17.84]  meant our code makes certain assumptions
+[11:21.12]  like our code for example assumes the
+[11:23.04]  existence of garbage collection. It
+[11:26.08]  assumes the existence of first class um
+[11:31.04]  uh treatment of functions. You know, you
+[11:33.04]  can have functions within functions and
+[11:34.48]  you can close over over out of state and
+[11:36.88]  so forth. Um and as we evaluated all of
+[11:40.56]  these,
+[11:42.08]  Go was was the one that checked the most
+[11:44.16]  boxes. You know, it gives us it gives us
+[11:48.56]  very robust and mature native code
+[11:51.20]  generation on all major platforms. it
+[11:54.32]  has garbage collection and it has access
+[11:58.08]  excellent access to shared memory
+[11:59.92]  concurrency. Um, and those were like the
+[12:02.40]  high order bits that we wanted to check
+[12:04.24]  and every other language had something
+[12:08.72]  that kind of worked against those
+[12:10.24]  objectives. So for this particular
+[12:12.00]  workload, Go was the right was the right
+[12:13.84]  choice for us and it's worked out well.
+[12:16.32]  >> If you think about Rusk, what didn't it
+[12:19.60]  have that if it had it, you would have
+[12:21.92]  picked it? I mean I think there are
+[12:23.28]  there are there are two things um it
+[12:26.08]  doesn't have uh garbage collection
+[12:29.60]  it's done manually you know uh well or
+[12:33.12]  it's done through the borrow checker but
+[12:35.04]  the borrow checker doesn't allow
+[12:36.72]  circular data structures and our
+[12:39.28]  compiler is chalk full of circular data
+[12:42.16]  structures we have trees with parent
+[12:43.92]  pointers we have types that are
+[12:45.44]  recursive we have symbols that refer I
+[12:47.76]  mean it's everywhere and like I said if
+[12:50.24]  we had chosen to rewrite we could have
+[12:52.24]  probably solved all of that, but it
+[12:54.96]  wouldn't have been just porting the
+[12:56.64]  code. It would also have been like
+[12:57.92]  solving a whole bunch of new problems
+[12:59.60]  that we had bought ourselves by by going
+[13:01.52]  that route. We tried [laughter]
+[13:04.72]  and it just wasn't feasible, you know,
+[13:07.28]  uh and and and so so we were we were
+[13:09.76]  just trying to optimize for, you know,
+[13:12.56]  doing as little work as possible to get
+[13:14.72]  us to the payout, which is which and
+[13:18.56]  honestly, Rust is no better when it
+[13:20.56]  comes to like the quality of the
+[13:22.00]  generated code or the or the the
+[13:24.32]  concurrency gains that we could have
+[13:25.76]  gotten out of it.
+[13:27.84]  Go just as it's great. I mean, so so we
+[13:31.60]  got we got all the bennies with for less
+[13:33.68]  work by by going that route.
+[13:35.76]  >> I know some languages they're when you
+[13:37.92]  say they're garbage collected, they
+[13:40.40]  >> there's something in the the language
+[13:42.72]  itself that is doing garbage collection,
+[13:45.04]  but um there's also independent
+[13:48.56]  libraries that can provide garbage
+[13:50.48]  collection, right?
+[13:52.48]  There is, but it it but it comes often
+[13:55.44]  with a whole bunch of restrictions and
+[13:57.84]  and and it doesn't come necessarily with
+[14:00.80]  the safety guarantees that we were
+[14:02.32]  looking for. I mean, like Go is type
+[14:04.72]  safe and memory safe. uh meaning that
+[14:07.36]  you don't get to just like have stray
+[14:10.32]  pointers or or whatever where Rust you
+[14:13.36]  can do ref counting or you can do you
+[14:15.44]  can do all sorts of different strategies
+[14:17.52]  but there's always like that little bit
+[14:20.24]  of unsafe where you have to like do this
+[14:22.64]  in order to make it all work you know uh
+[14:25.36]  where where if garbage collection is
+[14:28.56]  engineered into the language it really
+[14:30.56]  is a a separate concern that is you you
+[14:33.36]  you don't you don't have to do anything
+[14:35.92]  special in I mean of course you you have
+[14:39.04]  to like not hold on to data that you no
+[14:41.60]  longer need and whatever you know but
+[14:43.36]  that's true of ref counting as well
+[14:45.04]  right but but it is inherent in in the
+[14:48.32]  language
+[14:49.84]  when you ported it from JavaScript to go
+[14:52.64]  I'm curious how much LLMs were used in
+[14:55.68]  that process because I know famously
+[14:58.88]  there's some major projects that have
+[15:00.64]  been doing uh rewrites of their entire
+[15:03.20]  codebase I know there's this JavaScript
+[15:05.44]  project called bun
+[15:06.80]  >> that rewrote everything from Zigg into
+[15:09.44]  Rust and so
+[15:10.80]  >> seems like a pretty useful tactic and
+[15:13.20]  I'm curious if you leverage that in this
+[15:16.00]  process.
+[15:16.80]  >> Not a whole lot but it also has to do
+[15:18.96]  with timing. Uh we started this project
+[15:21.36]  two years ago and two years ago LLMs
+[15:23.68]  were nowhere near as good as they are
+[15:25.04]  now. I mean that's how crazy fast it
+[15:27.36]  it's all moved, right? Um,
+[15:31.84]  so what we did though is we we certainly
+[15:34.72]  had
+[15:36.48]  a bunch of tools that aided us in the in
+[15:39.12]  the in the the port. I'd say the
+[15:42.32]  prototypes we wrote, the scanner and the
+[15:43.92]  parser we wrote manually. Um, and at
+[15:47.60]  that point we could convince ourselves,
+[15:49.20]  wow, we can actually get 10x out of
+[15:51.04]  this. Now what do we do with the rest of
+[15:53.84]  this codebase? And what we did was we
+[15:56.80]  wrote a tool that syntactically
+[15:58.96]  translates TypeScript into Go.
+[16:03.20]  This Go that comes out of it, it has no
+[16:05.20]  syntax errors in it, but it doesn't
+[16:06.72]  compile either because it's full of, you
+[16:09.92]  know, like it uses types as if they were
+[16:12.56]  TypeScript, which they're not in Go. And
+[16:14.88]  so all of that had to be refactored. We
+[16:17.12]  had to redo all the data structures or
+[16:18.80]  whatever, but we got the same code base
+[16:21.52]  out of it. And then we can sort of bang
+[16:23.12]  on that. and then in a more localized
+[16:25.60]  fashion maybe use AI occasionally to
+[16:28.24]  help us do the transformation. So it was
+[16:30.40]  sort of manual and automated
+[16:34.88]  and a little bit of AI. Now if we were
+[16:38.32]  to start the project today would we do
+[16:41.04]  it differently? Possibly. Um although I
+[16:43.76]  will say if if we just let AI loose on
+[16:48.08]  you know what is it like half a million
+[16:49.44]  lines of code that we have in the old
+[16:50.80]  compiler or somewhere between half a
+[16:52.32]  million and a million right uh and asked
+[16:54.72]  it to translate it all. Well I don't
+[16:57.28]  know that that would absolve us from
+[16:58.88]  then having go in and carefully
+[17:00.48]  examining every line that came out of it
+[17:02.32]  to make sure that there were no
+[17:03.44]  hallucinations. Right? Unless you have
+[17:05.60]  100% perfect test coverage, you probably
+[17:08.24]  still got to go check all of that. Now I
+[17:11.76]  think a a a better approach quite
+[17:14.00]  honestly would be enlist AI to write a
+[17:17.92]  program that helps you translate from
+[17:20.40]  Typescript to Go because at that point
+[17:23.28]  you can park the stochasticness in that
+[17:25.76]  program and then you can get
+[17:27.60]  deterministic behavior whenever you run
+[17:29.76]  the program which means you get the same
+[17:31.60]  transformation every time you run it
+[17:34.48]  right that's always the thing about AI
+[17:36.64]  that people forget it's not
+[17:37.92]  deterministic right so you can't really
+[17:40.00]  trust that it's going to do the same
+[17:41.52]  thing twice.
+[17:43.68]  Um, [snorts]
+[17:44.72]  so, so we might have done it that way,
+[17:47.44]  but AI was not ready to do it at the
+[17:49.60]  time. Now, that doesn't mean that we
+[17:50.88]  don't use AI. I mean, like now down the
+[17:53.44]  line, we use AI a lot in our in our
+[17:56.24]  internal processes around like the the
+[17:58.24]  compiler as everyone does, right? Like
+[18:00.40]  help it to write tests and to move pull
+[18:03.04]  requests and what what what have you.
+[18:05.36]  and and whenever an issue is logged, we
+[18:08.08]  first thing we do is put copilot on and
+[18:09.84]  see if it can fix it for us, right? I
+[18:11.44]  mean, and so yeah,
+[18:13.04]  >> in that approach where you you use the
+[18:15.68]  LM to generate uh tooling and then you
+[18:19.12]  know the tooling is deterministic,
+[18:21.12]  >> but you'd still have to validate that
+[18:23.52]  thing.
+[18:23.92]  >> Yes. But that's that's a lot smaller
+[18:25.92]  surface area that you have to validate,
+[18:27.76]  right? And honestly, I I've seen that
+[18:30.48]  even with friends that are like we did
+[18:32.64]  some trip together and there was like
+[18:34.08]  some some accounting of they go, well,
+[18:36.48]  he paid for the hotel rooms or we paid
+[18:38.16]  for this and whatever and we needed to
+[18:39.68]  like sort it all out, right? And so, so,
+[18:42.16]  okay, well, here's what all the costs
+[18:43.76]  were and here were the pie and like have
+[18:45.44]  AI fix it for us, right? Or like tell
+[18:47.52]  who owes who what and it very
+[18:50.64]  authoritatively came up with the wrong
+[18:52.56]  answer, right? [laughter]
+[18:54.96]  Because it just forgot like about some
+[18:57.04]  of the settlements, right? And but if we
+[18:59.20]  had asked it to write a spreadsheet,
+[19:02.16]  which is really that's just a program,
+[19:03.92]  right? Then we would have gotten the
+[19:05.36]  right answer because it's very good at
+[19:06.88]  writing programs. So it's kind of funny
+[19:09.60]  how you you you don't sometimes you you
+[19:12.24]  don't ask AI for the for the answer. You
+[19:14.64]  ask it for a program that computes the
+[19:16.48]  answer.
+[19:17.84]  >> What are the potential benefits that you
+[19:20.00]  left on the table by doing a port
+[19:21.84]  instead of a full rewrite?
+[19:23.52]  >> To be honest, I don't think there are
+[19:25.20]  any. Um, and I don't think we would
+[19:27.52]  consider uh a rewrite. We were quite
+[19:29.76]  happy we're quite happy with the way
+[19:31.52]  this codebase works. Uh, and we're and
+[19:34.00]  we certainly I don't think we're leaving
+[19:36.56]  any any money on the on the table
+[19:38.64]  currently. Um, and and as I said
+[19:41.28]  earlier, rewrites are toxic often for
+[19:44.40]  ecosystems because they sacrifice
+[19:47.68]  compatibility because you never rewrite
+[19:50.32]  and you get you never get back to
+[19:52.08]  exactly what you had before, right? Oh,
+[19:54.24]  but oh, but in the name of making it
+[19:56.16]  better or prettier or whatever, we
+[19:57.84]  change this and that and this and that
+[19:59.20]  and the other, right? And then well, all
+[20:01.44]  the users get to suffer through that,
+[20:03.12]  right? So, so backwards compatibility is
+[20:05.92]  super important if you want to keep your
+[20:08.08]  ecosystem happy. Uh, and and and we we
+[20:10.64]  do want that. [laughter]
+[20:12.72]  In studying for this interview, I I just
+[20:15.20]  keep reading about JavaScript and the
+[20:17.68]  the strange semantics of the language.
+[20:20.24]  And I think throughout my career too,
+[20:22.24]  people have typically
+[20:24.56]  not been super satisfied or happy with
+[20:27.44]  JavaScript for some reason or the other,
+[20:29.84]  >> right?
+[20:30.72]  >> And my question is why is it so popular
+[20:34.64]  despite that?
+[20:36.24]  >> So first of all, I I don't think
+[20:38.24]  JavaScript is as bad of a lang of a
+[20:40.56]  language as as some people make it out
+[20:42.32]  to be. I I I will say in in like the
+[20:44.64]  three about three four weeks that
+[20:46.32]  Brendan Ike had to create this language
+[20:48.32]  back in the mid 90s, he did a lot of
+[20:51.12]  things right. Um and thank God that he
+[20:54.24]  had been educated on functional
+[20:55.92]  programming and and got first class
+[20:58.16]  functions done right where you can have
+[21:00.00]  functions within functions and the inner
+[21:02.32]  functions can access the outer function
+[21:04.16]  state and you can pass functions around
+[21:07.04]  as first class values.
+[21:10.00]  that is super powerful and JavaScript
+[21:12.16]  actually got that very right. Um, now
+[21:15.92]  there's some quirks in the language too,
+[21:18.08]  like all of the automatic conversions
+[21:20.64]  and all of the bizarre differences
+[21:22.32]  between double equals and triple equals
+[21:24.40]  are just like drives everyone mad,
+[21:27.04]  right? But that's exactly what type
+[21:28.88]  checkers are happy to do. They can like
+[21:30.48]  they can far it out all the little
+[21:32.32]  differences because they understand the
+[21:34.56]  all the deep semantics of the language
+[21:36.40]  that no one seems to be able to keep in
+[21:38.40]  their mind, right? So, and I think
+[21:40.88]  that's part of why Typescript has become
+[21:42.72]  so popular, right? It's like it can
+[21:44.48]  actually like truly bring out the best
+[21:46.80]  parts of JavaScript uh and leave the bad
+[21:49.28]  stuff behind. And of course, you can't
+[21:52.88]  like like the thing about JavaScript is
+[21:55.52]  it is the crossplatform language. Like
+[21:58.32]  even Java that was engineered and
+[22:00.64]  intended to be the way to write
+[22:02.40]  crossplatform applications, it's not
+[22:04.80]  really crossplatform. It doesn't run in
+[22:07.36]  the browser, you I mean it doesn't it
+[22:09.20]  doesn't run everywhere, right?
+[22:10.32]  JavaScript runs everywhere. Um, so there
+[22:15.20]  are a lot of there are a lot of reasons
+[22:16.80]  why you should like JavaScript and and
+[22:20.16]  with TypeScript, I think we've managed
+[22:22.00]  to sort of capture all the badness and
+[22:25.76]  park it.
+[22:27.76]  I saw there were some projects. I don't
+[22:29.84]  know if you're familiar with Dart or
+[22:32.72]  CoffeeScript and
+[22:34.64]  >> it seems like these were some effort to
+[22:37.68]  replace JavaScript or improve it and
+[22:40.96]  >> right
+[22:41.44]  >> but they're not popular today. So I'm
+[22:43.36]  curious what happened.
+[22:44.72]  >> I mean I think coffecript was mostly
+[22:49.28]  it's a different syntax for JavaScript.
+[22:51.60]  So, so it doesn't really change the the
+[22:53.68]  semantics and it doesn't it didn't
+[22:55.52]  provide any additional tooling and and
+[22:57.68]  whatever. And and Dart was also in a
+[23:00.08]  sense about fixing JavaScript, right?
+[23:03.12]  But if you can fix something by fixing
+[23:06.88]  it instead of trying to replace it with
+[23:09.92]  something else, then you're doing the
+[23:13.84]  ecosystem a much bigger favor, I think.
+[23:16.56]  Right. And that's what we set out to do
+[23:18.32]  with TypeScript. We weren't trying to
+[23:19.84]  change JavaScript. we were trying to
+[23:21.60]  improve JavaScript. Um, and I think
+[23:24.80]  that's ultimately why we why we
+[23:26.80]  succeeded.
+[23:28.24]  >> I mean, in this new age where it's very
+[23:31.92]  feasible that maybe AI could rewrite
+[23:34.24]  code bases,
+[23:36.08]  um, I imagine people will start to go
+[23:39.36]  towards the the desired languages rather
+[23:42.40]  than the ones that are the incumbent
+[23:43.84]  languages.
+[23:45.44]  And I'm curious if you think that
+[23:47.36]  JavaScript might become less used in the
+[23:49.84]  future.
+[23:51.52]  >> See, I I don't think so. I I what I've
+[23:54.16]  observed is that AI
+[23:58.40]  is best at the languages if seen the
+[24:01.68]  most of in its training set, right? And
+[24:04.48]  AI gets trained on all the code that
+[24:06.40]  exists in the world. Um,
+[24:09.68]  which means there's an awful lot of
+[24:11.28]  JavaScript, an awful lot of TypeScript,
+[24:12.96]  an awful lot of Python. And therefore,
+[24:15.20]  AI is good at JavaScript and TypeScript
+[24:17.36]  and Python. And it is less good at my
+[24:20.72]  favorite little language that I just
+[24:22.32]  invented. In fact, there's none of it in
+[24:23.92]  the training set, which means you have
+[24:25.52]  to sacrifice God knows how many tokens
+[24:27.60]  in the prompt to teach AI the language
+[24:31.84]  before you can even ask it a question
+[24:33.52]  about the language. Do you know what I
+[24:35.20]  mean? So in that sense I think incumbent
+[24:38.96]  languages are actually if anything going
+[24:41.20]  to flourish uh because of AI and we're
+[24:44.00]  sort of seeing that right now with with
+[24:45.76]  TypeScript too right there there's a
+[24:47.84]  noticeable knee in the curve of
+[24:49.52]  TypeScript adoption that coincides with
+[24:52.88]  the advent of AI. I do think the
+[24:55.52]  incumbent languages are actually if
+[24:57.52]  anything getting stronger.
+[24:59.12]  >> What percent of all JavaScript is
+[25:02.24]  written in Typescript?
+[25:04.80]  Well, so, so in the last year,
+[25:08.08]  Typescript uh became the number one used
+[25:11.92]  language on GitHub. Um, so there's
+[25:14.96]  JavaScript more than JavaScript.
+[25:16.72]  >> So, so more than 50% on GitHub at least
+[25:20.56]  >> is is is written in in Typescript. Um,
+[25:23.68]  so so we're actually like larger now
+[25:25.84]  than the language that we set out to
+[25:27.68]  improve.
+[25:28.96]  >> Wow.
+[25:29.52]  >> Yeah. And larger than Python. If you
+[25:32.00]  were to just draw that out in the
+[25:33.28]  future, do you think that eventually
+[25:35.76]  TypeScript would become the default and
+[25:37.92]  almost 100% of all JavaScript would be
+[25:40.40]  typed?
+[25:41.60]  >> Well, certainly, I mean, if you're
+[25:43.36]  having AI write it, I I almost challenge
+[25:46.56]  you to find a tool that writes
+[25:48.16]  JavaScript. They all write TypeScript.
+[25:50.40]  Uh because it helps AI write better code
+[25:53.92]  because the type annotations guide the
+[25:56.64]  LLM towards writing or to write making
+[25:59.84]  fewer mistakes. and the ability for us
+[26:02.80]  to statically validate the code before
+[26:06.16]  you run it. I mean, that's the
+[26:08.24]  distinction, right? The only way you can
+[26:09.76]  validate JavaScript is by running it,
+[26:12.88]  which means you have to set up a runtime
+[26:14.48]  environment, which might not be possible
+[26:16.24]  for AI to do because AI lives in a
+[26:18.72]  sandbox, right? But AI can run through
+[26:21.68]  tools, the compiler, and check the code
+[26:24.72]  that it just generated and be told, "Oh,
+[26:26.64]  you made a mistake. Oh, well, let me fix
+[26:28.24]  it then before I even tell anyone that I
+[26:30.08]  made the mistake, right? [laughter]
+[26:32.32]  [snorts]
+[26:32.96]  >> After learning about the this 10x
+[26:35.12]  improvement in performance from uh
+[26:37.68]  rewriting in native, I makes me wonder
+[26:40.96]  why anyone would use JavaScript on the
+[26:44.00]  back end. Why not just always use native
+[26:47.28]  languages on the back end?
+[26:48.48]  >> Well, it depends on your problem. Uh I
+[26:51.20]  think because the thing that that
+[26:52.96]  overlooks is
+[26:55.36]  what kind of thing am I going to write
+[26:56.72]  on the back end, you know, like like
+[26:58.40]  there are an awful lot of very very good
+[27:02.00]  web server frameworks for example that
+[27:04.72]  that use TypeScript or JavaScript,
+[27:07.12]  right? So, so if there are like
+[27:10.00]  frameworks in your ecosystem that gets
+[27:11.84]  you to a solution quicker than if you
+[27:14.64]  had to write that because your native
+[27:16.72]  language wasn't really intended to
+[27:18.96]  target that particular community. So, I
+[27:22.32]  think it very much depends on
+[27:25.44]  your what what your problem is
+[27:27.28]  affinitized with. Um, and and often PF
+[27:31.60]  of your code isn't the bottleneck. I
+[27:34.40]  mean, like look at Python. I mean right
+[27:37.28]  it's it's used to basically script and
+[27:39.92]  all of the LLM training in in the world
+[27:42.32]  right I mean which clearly a lot of that
+[27:44.96]  code is ultra timer critical uh but
+[27:47.68]  that's written in native code right and
+[27:49.20]  then you use Python as the orchestration
+[27:51.04]  language and in a sense in a web server
+[27:53.60]  you know like TypeScript is just an
+[27:55.20]  orchestrator you know of talking to a
+[27:58.16]  database and doing this and that what
+[27:59.76]  and and and the things that the things
+[28:01.68]  that that ultimately control the
+[28:03.76]  performance of applications like that
+[28:05.36]  aren't necessarily
+[28:07.20]  whether that inner for loop is running
+[28:10.40]  as as as native code or not which
+[28:13.04]  actually it is because of the JIT anyway
+[28:15.92]  right I mean so
+[28:18.56]  I mean measure measure first and then
+[28:22.16]  make decisions right because you always
+[28:24.08]  get surprised when you measure
+[28:26.88]  >> when you talk about how much faster it
+[28:28.64]  was too one of my immediate thoughts is
+[28:31.44]  why wasn't it done sooner
+[28:33.44]  >> you know at the time we started
+[28:35.52]  TypeScript script. I don't know that we
+[28:37.60]  had ever envisioned that people would be
+[28:39.84]  writing projects that are the size of
+[28:42.08]  the projects that people are now writing
+[28:44.08]  in Typescript, right? Like Visual Studio
+[28:47.36]  Code is like 2.3 million lines of code.
+[28:50.24]  I mean, we have in in-house projects
+[28:52.32]  that are over 10 million lines of of of
+[28:55.20]  code, which is insanity. We would have
+[28:57.36]  just at the time gone, well, that's
+[28:58.80]  clearly no one's ever going to do that,
+[29:00.72]  right? But that was a decade ago or more
+[29:02.88]  than a decade ago, right? We started in
+[29:04.64]  2012 with the TypeScript project and the
+[29:06.64]  world looked very different and so
+[29:08.56]  gradually people have started writing
+[29:11.68]  larger and larger and larger projects,
+[29:13.68]  right? And at the same time, our
+[29:16.72]  compiler has gotten smarter and smarter.
+[29:18.56]  We've added all sorts of cool features
+[29:20.48]  like union types and discriminated
+[29:22.48]  unions and control flow analysis and
+[29:24.80]  blah blah blah. And all of these things
+[29:28.32]  make our type checking even better, but
+[29:30.24]  it also makes it go a little slower
+[29:32.00]  every time we add a new feature. Right?
+[29:33.76]  In fact, our TypeScript 6 runs only
+[29:35.92]  about 50% of the speed of TypeScript 1.5
+[29:39.92]  for example. But TypeScript 1.5 also did
+[29:42.72]  a whole lot less. Um, so projects have
+[29:46.00]  gotten bigger and the compiler does
+[29:48.24]  more. All of which [laughter]
+[29:51.04]  detract from your effective output. And
+[29:53.36]  as I mentioned, Mors law also
+[29:56.24]  unfortunately stopped delivering faster
+[29:58.40]  CPUs and JavaScript keeps you from
+[30:00.72]  taking advantage of the additional
+[30:02.40]  cores. And it's not clear that we could
+[30:04.88]  have foreseen all of that, right? But
+[30:07.36]  but but it's just the way it panned out,
+[30:10.16]  right? [snorts]
+[30:11.12]  >> Open AAI, Enthropic, Curser, and
+[30:14.08]  Verscell all use this product to make
+[30:16.32]  their lives better. And the problem it
+[30:18.48]  solves is when you're building SAS or an
+[30:20.72]  AI product and you want to sell to other
+[30:23.04]  companies, there's all these
+[30:24.56]  requirements you need to meet. There's
+[30:26.56]  SSO, there's skim, there's arbback,
+[30:29.76]  there's audit logs. These are all things
+[30:31.60]  that take time to integrate but aren't
+[30:33.76]  the main focus of your app. Work OS is
+[30:36.08]  an API layer that lets you meet all of
+[30:37.92]  these requirements in just a few lines
+[30:40.16]  of code. So let's say you have a new SAS
+[30:42.56]  product and you want to sell to other
+[30:44.16]  companies. work OS will solve all of
+[30:46.40]  these critical feature gaps for you. You
+[30:49.12]  can check them out at workos.com to
+[30:51.60]  learn more and get started. And I
+[30:53.76]  appreciate them for supporting my work
+[30:55.44]  and sponsoring this podcast. Jira by
+[30:58.16]  Atlassian isn't just for tracking work
+[31:00.24]  anymore. Now you can pick your favorite
+[31:02.08]  AI agent to assign tasks to and they'll
+[31:04.80]  get access to the rich context that's
+[31:06.80]  already in Jira. When the agent is done,
+[31:09.12]  it surfaces a pull request. That way you
+[31:11.44]  can get more done with your favorite
+[31:13.04]  agents all in one place. Learn more at
+[31:16.00]  jira.dev. That's jir.dev.
+[31:20.72]  Appreciate them for sponsoring the
+[31:22.16]  podcast. And back to the show. When I
+[31:24.72]  first became a software engineer and I I
+[31:27.20]  went to start working at Facebook at the
+[31:29.44]  time, they had this popular framework
+[31:32.24]  called Flow, which was
+[31:34.16]  >> doing type inference on top of
+[31:36.72]  JavaScript. It was this thing that would
+[31:38.16]  take a long time.
+[31:39.12]  >> Yep. And then I' I'd never hear about it
+[31:41.36]  these days. So it sounds like Typescript
+[31:44.40]  won if there was a competition to
+[31:46.40]  typing.
+[31:47.12]  >> There was a bit of it. Yeah. In in in
+[31:49.12]  the early days. Um I think the thing
+[31:52.64]  that worked for us was actually the fact
+[31:54.88]  that we were self-hosted which made it a
+[31:57.52]  lot easier for the community to
+[31:58.88]  contribute to the project. [snorts]
+[32:01.28]  Flow was written as I recall in camel.
+[32:04.88]  Um, and so in order to contribute to
+[32:07.52]  flow, you had to go learn a whole
+[32:09.20]  different way of programming and and in
+[32:11.20]  a in a different language, right? And
+[32:13.44]  Float also didn't really focus all that
+[32:15.84]  much on
+[32:17.60]  IDE based tooling,
+[32:20.00]  which we knew full well going in. We're
+[32:22.48]  writing a compiler, but we're not
+[32:23.76]  writing a compiler in order to generate
+[32:26.16]  machine code. We're writing it to make
+[32:27.92]  better tooling. That was why we wrote
+[32:30.08]  it, you know, and so right there
+[32:33.04]  handinhand with our compiler, we had a
+[32:35.12]  language service. It was deeply
+[32:36.56]  integrated into Visual Studio, Visual
+[32:38.48]  Studio Code, all sorts of other editors
+[32:40.64]  through an open protocol, you know, and
+[32:42.72]  that just that's where that was the
+[32:46.32]  problem that needed solving, right? I
+[32:48.32]  mean, it's not it's it's nice to have a
+[32:50.48]  type checker, but boy, you you want
+[32:52.48]  that. You also want statement
+[32:53.92]  completion. You wanted red squiggies.
+[32:55.92]  You want like I mean, you want it
+[32:57.36]  interactive, right?
+[32:59.12]  So I know in your career you've you've
+[33:01.28]  worked on uh multiple programming
+[33:03.44]  languages. What does it take to build a
+[33:06.08]  programming language? Well, first I'll
+[33:09.92]  say that the world needs another
+[33:11.52]  programming language like it needs
+[33:12.72]  another hole in the head. I mean it it's
+[33:14.48]  it's like you you kind of got to be a
+[33:16.64]  certain [laughter] kind of of person to
+[33:20.08]  to even embark on it to begin with,
+[33:22.16]  right? It's a super fascinating area of
+[33:25.44]  of computer science and it's one that's
+[33:27.44]  been around ever since the beginning of
+[33:29.92]  of of computers. Now, every compiler,
+[33:33.28]  every language has a whole bunch of
+[33:35.60]  things you need to to understand like
+[33:37.20]  parsers and scanners and lexers and code
+[33:39.28]  generators and and and and whatever,
+[33:41.60]  right? But but that's sort of the
+[33:44.08]  mechanics of implementing the language.
+[33:46.88]  And then there's the design of the of
+[33:49.68]  the language, sort of the art of making
+[33:53.36]  it feel right and whatever, right? And I
+[33:55.84]  I think you sort of have to master both.
+[33:59.36]  And then you also got to appreciate that
+[34:01.28]  like every new language is actually only
+[34:03.60]  10% new and then it's 90% the same
+[34:06.56]  drudgery that every other language has
+[34:08.32]  to go do. And so be prepared for a lot
+[34:11.12]  of work that maybe isn't as interesting,
+[34:14.40]  you know.
+[34:16.48]  And then finally maybe I'll say that you
+[34:19.20]  know like never forget there that you
+[34:21.92]  you stand on the shoulders of giants. I
+[34:24.40]  mean you you in order to make a great
+[34:26.32]  programming language you got to
+[34:27.52]  understand a bunch of other programming
+[34:28.96]  languages first uh and understand all
+[34:31.60]  the all the distinctions between the
+[34:33.52]  different styles of programming like
+[34:34.88]  procedural and object-oriented or
+[34:36.48]  functional or what have you. Um
+[34:40.08]  and then last but not least it's like
+[34:43.12]  it's a long game. I mean, it is probably
+[34:45.84]  a longer game than anything else. I
+[34:47.76]  mean, like every language project I've
+[34:51.76]  worked on, I've worked on each of them
+[34:53.76]  for at least 10 years. Um, and shipped
+[34:57.68]  multiple versions, and it's really never
+[34:59.84]  until version three that it truly starts
+[35:02.24]  to get okay. Do you know what I mean?
+[35:05.20]  And, and it just takes an incredible
+[35:07.12]  amount of devotion to to that. So, you
+[35:09.20]  got to really not be the type that tires
+[35:11.52]  of a problem quickly and then moves
+[35:13.12]  along. that you're not meant to do
+[35:14.96]  language design.
+[35:17.28]  And you see that too if when you talk to
+[35:19.44]  language designers in the industry,
+[35:20.80]  they've been doing it for a long time.
+[35:22.96]  >> You mentioned those two parts. There's
+[35:24.56]  the the objective pieces that you need
+[35:28.40]  to implement and then there's the the
+[35:31.04]  art of the design and making the
+[35:32.88]  language I guess ergonomic for
+[35:35.44]  developers. When you think of that
+[35:37.84]  second part, that art
+[35:39.68]  >> and you look at other programming
+[35:41.28]  languages, are there any that you admire
+[35:43.76]  outside of the ones that you've worked
+[35:45.12]  on? Of course,
+[35:47.04]  >> learning and and and fully appreciating
+[35:49.60]  the beauty of functional programming has
+[35:51.76]  has been very educational, right? I
+[35:54.00]  mean, because it really is a different
+[35:55.76]  way of thinking about programming, a way
+[35:58.72]  of thinking of programming that's much
+[36:00.48]  closer to math than it is to
+[36:04.40]  machines. Um,
+[36:07.28]  and I think there's there's a lot of uh
+[36:10.48]  incredible goodness that has come from
+[36:12.24]  that. And and honestly even in in like
+[36:14.16]  like building the TypeScript project uh
+[36:17.04]  large portions of the TypeScript
+[36:18.64]  compiler are written in a highly
+[36:20.48]  functional style um and work on
+[36:23.28]  immutable data structures that are then
+[36:25.60]  now because of shared memory concurrency
+[36:27.84]  can be shared between different
+[36:32.32]  uh threads or processes that don't
+[36:35.44]  mutate the data and therefore they can
+[36:37.20]  share one data structure. Right? And
+[36:39.52]  that's incredibly powerful. But
+[36:41.60]  mastering this, you know, like writing
+[36:43.76]  islands of pure functional programming
+[36:46.08]  inside an imperative program and ma and
+[36:48.72]  and and putting it together with
+[36:50.00]  concurrency. I mean, it's it's it's
+[36:51.36]  complex, but I think functional
+[36:53.28]  programming has brought a lot to the
+[36:54.72]  world. Um, I know object-oriented
+[36:56.96]  programming as well. I mean, but I
+[36:58.56]  wouldn't single out any particular
+[37:01.44]  language. Every one language you you
+[37:03.92]  come in contact with, you learn
+[37:05.28]  something. You know,
+[37:07.12]  >> you mentioned the world doesn't really
+[37:10.24]  need more programming languages and uh
+[37:14.32]  if you think 10 years from now, do you
+[37:16.08]  think there'll be less programming
+[37:17.52]  languages than there are today?
+[37:19.36]  >> It's hard to say. I mean, but like I
+[37:22.24]  said,
+[37:24.24]  AI tends to favor the incumbents, right?
+[37:28.56]  And I I do think and I I think this has
+[37:30.88]  been true even before AI. The bar keeps
+[37:33.44]  going up for what it takes to
+[37:36.40]  successfully implement a programming
+[37:38.64]  language and create an ecosystem around
+[37:40.48]  it. I mean it used to be oh you just
+[37:42.96]  need a compiler.
+[37:45.20]  Well
+[37:46.88]  you also kind of need tooling now. I
+[37:48.72]  mean you need a language service you
+[37:50.56]  need uh you need debuggers. You need
+[37:52.80]  profilers. You need frameworks and
+[37:54.88]  libraries. You need code generators that
+[37:58.24]  can target all sorts of I mean it's like
+[38:02.08]  it just keeps getting harder and harder
+[38:04.88]  uh you know to to to get all the way
+[38:07.20]  there.
+[38:08.48]  >> Well, when you think about all those
+[38:09.76]  pieces that really they're all for the
+[38:13.60]  people or I mean the you know the IDE
+[38:16.56]  and the types and I mean the the
+[38:19.84]  computer looks at that too but it's so
+[38:22.08]  that we can read source.
+[38:24.32]  Maybe one day the LMS will generate
+[38:27.12]  machine code directly. I wonder. Um
+[38:32.32]  I think
+[38:35.44]  I think LLMs are better at what they do
+[38:39.52]  when when they don't have to repeat
+[38:41.68]  themselves a lot. I I I think like
+[38:46.64]  when a program is expressed in text, it
+[38:49.60]  is closest to its sort of ultimate
+[38:54.72]  condensed meaning and representation,
+[38:57.20]  right? If you translate it into machine
+[38:59.20]  code, there's an awful lot of noise in
+[39:01.44]  that machine code. Like all of the
+[39:03.68]  instructions, like half of the
+[39:04.96]  instructions are memory addresses that
+[39:06.64]  have absolutely no bearing on what's
+[39:08.48]  going on here, right? So half of it,
+[39:10.16]  half of all the data is noise already,
+[39:12.32]  right? And then whichever register you
+[39:14.24]  pick, well, that doesn't matter either
+[39:15.60]  in the code generator. And honestly, you
+[39:17.28]  could change your mind at any point in
+[39:18.64]  time. So, so teasing the truth out of
+[39:21.28]  that noise is a lot harder than if you
+[39:26.40]  just have a program where the variable
+[39:27.76]  is called I and whatever. And by the
+[39:29.52]  way, that you can relate to the written
+[39:32.08]  instruction that the user just gave you.
+[39:34.16]  I mean, keep in mind that that like AI
+[39:36.80]  are they're just emulators of humans in
+[39:39.28]  a sense, right? I mean, they they it's
+[39:41.12]  like neural networks, right? There's a
+[39:42.96]  reason we have programming languages
+[39:44.72]  because we're terrible at writing
+[39:46.40]  machine code straight off. out of our
+[39:49.12]  head, right? AI is not that different
+[39:51.92]  from us, you know? So, the same would
+[39:54.96]  probably be true there. when you look
+[39:57.20]  back on working on C and you know
+[39:59.60]  TypeScript and these language projects
+[40:02.56]  they were long journeys and I think you
+[40:04.80]  know one thing people might want to know
+[40:06.72]  is what did you learn through those
+[40:09.28]  journeys that if you knew at the
+[40:11.44]  beginning of when you embarked on
+[40:12.96]  working on them you you might have been
+[40:16.32]  better off
+[40:19.44]  gosh well each journey is is different
+[40:23.52]  uh I mean like the first project I
+[40:25.52]  worked on turbo Pascal. I I think
+[40:30.32]  that project started back in the old
+[40:32.32]  days when it was 8-bit micros and 64k of
+[40:34.88]  memory and one person could do
+[40:36.56]  everything themselves and have ultimate
+[40:39.28]  control of everything. And so I was very
+[40:41.28]  much a one-man shop, right? But that
+[40:45.76]  quickly was not scalable, right? And and
+[40:48.00]  and capacities of machines. So we went
+[40:50.32]  for 64 to 640K and then then kaboom the
+[40:53.12]  the the the lid went off, right? and you
+[40:54.96]  could have as much memory as you wanted
+[40:56.88]  and so not one person couldn't do it and
+[40:59.60]  I had to learn to become a team player
+[41:02.00]  right and that that was a big journey
+[41:05.52]  for me I mean to learn to let go right
+[41:08.40]  if you're a perfectionist that that that
+[41:10.24]  could be hard but that's one thing that
+[41:12.24]  I would say I learned there
+[41:14.24]  >> well another way to word this question
+[41:16.32]  is you know what's the most common
+[41:18.96]  mistake that you see people make when
+[41:20.96]  they embark on building a programming
+[41:22.80]  language
+[41:24.40]  Well, I think people tend to overindex
+[41:26.96]  on one idea, you know, that that they
+[41:29.28]  have that they think, "Oh, wouldn't it
+[41:30.72]  be cool if my language could do blah,
+[41:33.44]  and then they underindex on all of the
+[41:35.92]  mundane stuff that every programming
+[41:38.08]  language has to do, you know, and then
+[41:40.08]  it ends up doing that one thing they
+[41:41.92]  love maybe better, but then it does
+[41:44.40]  everything else not as good." [laughter]
+[41:47.60]  And and and the net is a detractor,
+[41:50.88]  right? And so it's so hard to convey how
+[41:55.36]  many things you have to do that really
+[41:57.68]  doesn't have anything to do with the
+[41:59.68]  problem you're you're trying to solve
+[42:02.08]  per se, you know, when you're
+[42:04.16]  implementing programming languages.
+[42:06.00]  >> And when you were working on C, do you
+[42:08.48]  keep tabs on the other languages and
+[42:11.20]  >> you know what they're doing better, what
+[42:13.12]  you could do better with C?
+[42:15.28]  >> Yeah. No, you got to keep yourself
+[42:16.88]  informed about because like I said, we
+[42:19.60]  all stand on the shoulders of giants,
+[42:21.36]  you know, no other no programming
+[42:23.52]  language was ever created in in in
+[42:26.40]  perfect isolation, right? Everyone
+[42:28.56]  learns from from everyone and then
+[42:30.48]  someone comes up with a good idea and
+[42:32.08]  then you see it adopted elsewhere and
+[42:33.52]  we've adopted many ideas from functional
+[42:35.44]  programming you know in C for example
+[42:38.40]  and then other languages have adopted
+[42:40.24]  some of the good ideas we had in C# like
+[42:42.08]  async you know now is in JavaScript and
+[42:44.80]  in some of the other programming
+[42:45.92]  languages out there and that was
+[42:47.20]  pioneered in C and so you know it's it's
+[42:50.88]  we all learn from each other um and and
+[42:53.84]  that's how the industry moves forward
+[42:56.40]  really You mentioned the I guess
+[42:59.36]  learning to let go. I think that's
+[43:00.96]  something that a lot of people as their
+[43:03.28]  career advances they they start with you
+[43:06.00]  know individual contributor work and
+[43:07.60]  then later they start delegating things.
+[43:10.56]  >> How did you learn that or what was the
+[43:12.88]  is there like a maybe a story or
+[43:14.80]  particular project where you you let go
+[43:17.84]  and you you kind of develop that skill?
+[43:21.36]  Well, it's it's almost like I got a
+[43:23.12]  counter story to the to the letting
+[43:24.88]  letting go there because in the C
+[43:28.16]  project um my main function was not
+[43:31.52]  implementing the the C# compiler. It was
+[43:34.00]  being the language designer and writing
+[43:35.60]  the spec and designing all the new
+[43:37.76]  language features. And
+[43:42.00]  before that when I when I had worked on
+[43:44.00]  Turbo Pascal, I was I was doing a bunch
+[43:45.92]  of active coding, you know, on on the
+[43:48.24]  thing itself, right? But then I sort of
+[43:50.72]  let go of that. But I let go of it too
+[43:52.96]  much and I sort of drifted up into the
+[43:55.60]  stratosphere and became more of an
+[43:57.20]  architecture astronaut. Do you know what
+[43:59.12]  I mean? And and and I wasn't getting my
+[44:01.28]  hands dirty. I was writing stuff in the
+[44:03.12]  framework and in the libraries, but it
+[44:04.80]  was it didn't quite these are not like
+[44:07.36]  the deep really super hard problems to
+[44:10.16]  solve, right? And and I didn't really
+[44:12.24]  know it at the time, but I was gradually
+[44:14.16]  getting less happy with with the work
+[44:17.12]  that I was that I was doing, right? I
+[44:19.28]  mean, it's I still enjoy, but there was
+[44:21.04]  something missing, right? And so when
+[44:23.60]  when this TypeScript opportunity came
+[44:25.44]  along, I decided to jump in and actually
+[44:28.24]  actively participating writing compiler
+[44:30.24]  and it brought so much happiness to my
+[44:32.24]  life. Like I I I I finally realized I'm
+[44:34.96]  just I'm just a happy coder, you know? I
+[44:37.04]  mean, I like the spec stuff too, but but
+[44:40.08]  coding is like, man, that's what gets me
+[44:42.32]  up in the morning, make coffee, and
+[44:43.52]  write some code, you know? That's that's
+[44:45.36]  that's that's when I'm my in in my happy
+[44:48.32]  space, you know.
+[44:50.24]  you know, when people are at these
+[44:51.60]  really really high levels, they're kind
+[44:53.92]  of have this expectation of a certain
+[44:55.76]  level of impact. And so, how do you
+[44:58.96]  continue to write code at as such a high
+[45:01.76]  level engineer?
+[45:02.80]  >> Well, the specific code I'm writing
+[45:06.08]  isn't necessarily having all all that
+[45:08.64]  impact, but it's it's the fact that I
+[45:10.88]  also do the architectural guidance, you
+[45:14.32]  know, as part of a a group of people,
+[45:16.72]  right? in a in a project, you know,
+[45:18.32]  there's plenty of work for everyone to
+[45:19.68]  go around and then you you just but you
+[45:21.68]  you you stay involved in a corner of the
+[45:23.92]  project because then you see what
+[45:25.52]  happens in the code, you know, when
+[45:27.60]  you're checking in your code, you go,
+[45:29.28]  what was what what was that over there?
+[45:31.28]  Let let me just what what's happening
+[45:32.80]  over here, you know, or or you realize,
+[45:35.04]  oh, we need to refactor this. This this
+[45:36.96]  is not this is not feeling right
+[45:38.40]  anymore. Or if if but if you let go of
+[45:41.28]  that you don't really you can't really
+[45:43.60]  talk about the thing that people use
+[45:46.48]  day-to-day. You can talk about the
+[45:47.76]  syntax of the thing that people use
+[45:49.36]  day-to-day but you can't talk about that
+[45:50.96]  thing you know so
+[45:54.40]  so both are important I think and I'm
+[45:56.80]  happy that I get to do both now I know a
+[46:00.08]  lot of companies have this idea of
+[46:01.60]  engineering archetypes or the the way
+[46:04.40]  that highle engineers get some work done
+[46:07.84]  and you mentioned architect for instance
+[46:10.00]  a lot of companies have different words
+[46:11.52]  for architect I'm not sure if you're
+[46:13.68]  saying it's just your working style or
+[46:16.08]  are you saying that all high level
+[46:18.32]  engineers should be hands-on at some
+[46:21.12]  level.
+[46:22.08]  >> No, I I'm not saying that because I
+[46:24.64]  don't think it's it's like I made a
+[46:26.32]  conscious choice to
+[46:28.72]  remain an independent uh contributor as
+[46:31.44]  opposed to become a manager. I mean, I
+[46:33.20]  had plenty of opportunities um but but
+[46:36.88]  it that is not where I do my best work,
+[46:39.36]  right? So I think you have to decide for
+[46:41.28]  yourself what is it that motivates you,
+[46:44.32]  makes you happy, keeps you doing this
+[46:46.24]  for for a lifetime. Do do you know what
+[46:49.04]  I mean? And and and you only get one run
+[46:52.08]  at it in in life here, you know? And so,
+[46:54.64]  and if you're going to do your best
+[46:56.00]  work, do the thing that that makes you
+[46:58.88]  the most happy, I think, is and and
+[47:01.68]  that's what I
+[47:04.16]  learned, you know, along the way there,
+[47:06.96]  that coding is part of that, a big part
+[47:08.88]  of that.
+[47:10.08]  >> So then when you were working on C, but
+[47:12.96]  before Typescript, like how did you know
+[47:15.28]  something was missing?
+[47:16.48]  >> I just knew something. I I I I don't
+[47:18.64]  know how I mean it it just I would I
+[47:20.40]  just wasn't feeling as fulfilled with
+[47:23.04]  with with the with only doing the design
+[47:26.00]  part, right? I I I missed the coding.
+[47:28.80]  And whenever I had a chance to write a
+[47:31.68]  little bit of code, I would feel a lot
+[47:33.04]  happier and I go, it's kind of
+[47:34.40]  interesting. I mean, do you know what I
+[47:36.32]  mean? But now I got to go write some
+[47:37.84]  more specs, you know? [laughter]
+[47:41.60]  >> So then, uh was Typescript something you
+[47:43.92]  kind of went towards because you wanted
+[47:46.08]  to write more code? I went towards it
+[47:47.84]  for for many reasons. I mean it wasn't
+[47:50.32]  specifically that to begin with. I I
+[47:52.40]  just found the problem fascinating,
+[47:54.16]  right? I mean because the way Typescript
+[47:56.32]  came about was
+[47:58.64]  actually indirectly through C because
+[48:01.52]  the outlook.com team I think it was
+[48:04.24]  approached the C group and asked whether
+[48:07.36]  we would pretty please productize
+[48:09.44]  something called script sharp. And
+[48:11.68]  script sharp was this thing that took C
+[48:14.24]  and transpiled it into JavaScript so you
+[48:17.44]  could run it in a browser. And I'm like
+[48:20.48]  what? Why? Why would you want to do
+[48:23.20]  that? Why don't you just write the job?
+[48:24.80]  Well, because that way we can get great
+[48:26.64]  tooling. Then we can use Visual Studio
+[48:29.36]  and we can have projects and we can have
+[48:31.60]  type checking and we can have code
+[48:33.84]  refactoring and navigation and we can
+[48:35.84]  write interfaces and people can
+[48:37.52]  understand how this all works. And I'm
+[48:40.00]  like, "Wow,
+[48:42.88]  is JavaScript really that busted?" And
+[48:45.20]  and you're saying like the the way you
+[48:47.04]  want to fix that problem is by
+[48:48.96]  abandoning JavaScript, treating it as an
+[48:50.96]  instruction language, right? And then
+[48:52.72]  having a code generator target it. I'm
+[48:54.96]  like, couldn't we like fix JavaScript?
+[48:57.52]  Wouldn't that be better? Do you know
+[48:59.68]  what I mean? And that's how Typescript
+[49:01.76]  kind of got off the ground, right? It
+[49:03.28]  was like, gosh, there's something here
+[49:05.68]  that's really broken that needs to be
+[49:07.60]  fixed, right? and when it comes to
+[49:10.72]  JavaScript tooling
+[49:12.72]  >> and that's what we set out to do.
+[49:14.80]  >> You know, one thing I thought would be
+[49:16.00]  interesting is in one of the talks that
+[49:18.32]  you gave, you said that you believe that
+[49:21.84]  the speed of your tooling is more
+[49:24.32]  important now because of AI and I want
+[49:28.24]  to hear thoughts on why is that the
+[49:30.08]  case? Well, more and more our workflows
+[49:32.48]  now are are dominated by agents that are
+[49:35.60]  like running away in the background,
+[49:38.48]  right? Right. I mean, like writing code
+[49:40.40]  for you and they make mistakes just like
+[49:44.24]  we do, but they but they but you know,
+[49:46.24]  but you can have as many of them as you
+[49:47.76]  want. So there are like many many more
+[49:49.76]  little workers in the ecosystem writing
+[49:52.96]  much more code, right? And that whole
+[49:55.60]  workflow is like LLMs already have have
+[49:59.12]  performance challenging is and then if
+[50:00.88]  you add like if if you're writing code
+[50:02.48]  in a big project and you have to like
+[50:04.00]  type check it and takes two minutes
+[50:05.68]  every time the LLM writes something. Do
+[50:07.52]  you know what I mean? That's horrible,
+[50:09.04]  right? So So making that go faster is is
+[50:13.36]  a big benefit.
+[50:14.64]  >> Yeah. Absolutely. I guess because it's
+[50:16.64]  it's hammering away.
+[50:18.08]  >> Yeah. Because I mean like like well we
+[50:21.52]  all know LLMs they they like to use GP
+[50:24.48]  and and whatever right but then they're
+[50:26.56]  also smart enough now to realize that if
+[50:28.64]  you're like trying to change this
+[50:30.48]  property called version and like every
+[50:33.68]  other object has a version property. You
+[50:36.96]  can't just grip for version and then go
+[50:38.96]  rename it to something else because like
+[50:40.72]  you're breaking all these other
+[50:42.80]  interfaces that have a version in them,
+[50:44.64]  right? So you got to do semantic search
+[50:46.72]  and the only thing that can do semantic
+[50:48.40]  search is a compiler and so you got to
+[50:52.00]  use the compiler through typically
+[50:54.56]  through LSP through language services or
+[50:57.12]  through our our command line tool that
+[50:59.36]  would give you the equivalent right and
+[51:01.36]  so more and more AI is doing that um and
+[51:06.56]  that means you know compilers run at you
+[51:09.60]  don't you may not even see that they're
+[51:11.04]  running but they're running
+[51:13.44]  and they're doing work on on your
+[51:14.72]  behalf. Yeah.
+[51:16.40]  >> When you talk about AI, it's very
+[51:20.08]  realistic and grounded in the software
+[51:22.40]  engineering. And so I thought it might
+[51:24.72]  be interesting to uh run some common AI
+[51:28.48]  takes that I hear from the internet and
+[51:31.20]  you get your sense of how accurate is
+[51:33.44]  this? What are your thoughts on when or
+[51:35.68]  if it'll be true? Okay. Okay. So the
+[51:38.16]  first one that I've heard um this is
+[51:40.48]  more common at the end of last year is
+[51:42.24]  that you know AI is going to write 90
+[51:45.36]  plus% of the code you know within a
+[51:47.92]  year. Um curious what you think on that.
+[51:51.52]  >> Well for certain classes of apps that
+[51:54.00]  that might like all divide code coded
+[51:56.24]  apps they're writing 100% of the code
+[51:58.00]  right and and there's an awful lot of
+[51:59.44]  that being written.
+[52:01.60]  Are they going to write 90% of the high
+[52:03.76]  quality code on the internet? I don't
+[52:05.76]  know about that. Um so the the thing is
+[52:09.92]  like 90% of what the volume of written
+[52:12.72]  code is just like going like that right
+[52:15.36]  now right because AI writes so much code
+[52:18.72]  so [laughter]
+[52:19.44]  so in a sense that's a self-fulfilling
+[52:21.68]  prophecy right I mean but [snorts] but
+[52:24.16]  but when it comes to like
+[52:27.76]  the super high quality code that no one
+[52:29.92]  has ever written before um it's not
+[52:32.96]  clear to me that AI is going to write
+[52:34.40]  90% of that. So when you think about
+[52:36.48]  cases that AI is not writing all the
+[52:40.16]  code, maybe some examples of the super
+[52:42.32]  high quality stuff, what is that?
+[52:44.64]  >> Well,
+[52:46.16]  I mean it's it's algorithms that no one
+[52:48.24]  has ever seen before, for example, or or
+[52:50.72]  particular solutions like I mean I I
+[52:52.88]  know that AI could not write our
+[52:55.36]  compiler, the TypeScript compiler. It it
+[52:57.28]  just can't. I mean we've tried it. It it
+[53:00.72]  can't do it. Um and I'm not asking it to
+[53:03.68]  either. I mean, I'm not expecting it to
+[53:05.76]  either. Um, but but our compiler is also
+[53:10.56]  not a typical piece of code. I mean,
+[53:12.80]  that's why it's bad at writing it
+[53:14.32]  because it's seen none of it in the
+[53:16.16]  training set. Well, I've seen some
+[53:17.36]  compilers, but not like this one. Not
+[53:19.28]  with these concepts, not with done the
+[53:21.60]  way that that we're doing it, right? And
+[53:23.68]  so, it's just not a good fit there. AI
+[53:26.80]  we we we can't forget that AI is at
+[53:30.64]  heart a big stochastic machine that has
+[53:33.36]  memorized the entire internet, right?
+[53:35.36]  And and is ability and has an ability to
+[53:37.76]  extrapolate somewhat over what it's
+[53:40.08]  memorized, right? Um but if it hasn't
+[53:43.04]  seen it before, it's it's it's not
+[53:45.84]  necessarily going to be all that good at
+[53:47.84]  at doing it. Um it's getting better. I
+[53:50.32]  mean, I'm not saying it's it's not
+[53:51.76]  impressive. I it's it's wildly
+[53:53.60]  impressive what it can do, but I just
+[53:57.44]  think there's a long way still to it's
+[54:00.24]  doing all of it.
+[54:02.40]  >> And I don't know that we ever get there.
+[54:04.64]  I hope we don't because then what's the
+[54:06.56]  point of humans anymore then? I mean,
+[54:08.08]  it's [laughter]
+[54:09.60]  >> Well, I see this take often, too, is um
+[54:12.40]  you know, you won't need to use an IDE
+[54:15.92]  within the year or you don't need to
+[54:17.92]  read the code anymore.
+[54:19.44]  >> Well, good luck to you. I mean, if
+[54:21.28]  you're going to hand AI the keys,
+[54:24.40]  I mean, then all bets are off, right? I
+[54:26.24]  mean, the minute AI you can't convince
+[54:28.08]  AI to fix this issue or this new feature
+[54:31.12]  that you want built, what are you going
+[54:32.88]  to do? I mean, if you don't understand
+[54:36.88]  what what's below, right, that's one
+[54:39.84]  problem. The other problem is, let's say
+[54:41.12]  a user comes to you and goes, your app
+[54:43.68]  just stole my bank account. I'm well,
+[54:47.04]  it's going to sue you. It's not. They're
+[54:48.96]  going to sue you, not the AI. I mean,
+[54:50.88]  it's like at the end of the day, someone
+[54:52.96]  has to take responsibility for what AI
+[54:55.20]  is doing. And if you're giving it the
+[54:57.52]  keys, well, it's on you, you know, but
+[55:00.56]  but I don't know. I personally would not
+[55:05.20]  feel comfortable. I wouldn't be able to
+[55:06.88]  go to sleep at night. I mean, if I
+[55:09.04]  didn't understand what it is that I am
+[55:11.12]  vouching for.
+[55:13.28]  Why is there such a big difference
+[55:14.96]  between this opinion and what I see from
+[55:20.00]  maybe people who work at Anthropic?
+[55:22.64]  >> Well, the difference is all I'm saying
+[55:25.04]  here is not that AI can't do amazing
+[55:27.52]  things. It does it can it does that
+[55:30.40]  every day. But but people love these
+[55:34.24]  like take it all the way to 100%. Right?
+[55:36.80]  And that's where I get off the bus a
+[55:39.60]  little bit, right? I think, oh yeah,
+[55:40.96]  okay, fine. We can get we can get higher
+[55:42.88]  and higher percentage but there still
+[55:45.52]  has to be someone understanding what's
+[55:48.32]  going on and how it's relevant to our
+[55:50.08]  business problem and how it relates to
+[55:52.16]  what our organization is doing and like
+[55:54.24]  I mean there's so many other things that
+[55:55.92]  have to be connected that it's I think
+[55:57.68]  it's wrong to just view it as AI did it
+[56:00.88]  all and we were completely unnecessary
+[56:02.88]  you know and
+[56:04.72]  >> yeah the next one I was going to ask you
+[56:06.24]  was you know three years from now will
+[56:08.72]  AI replace junior software engineers or
+[56:11.36]  what junior software engineers do today.
+[56:13.44]  >> Well, if it does, then how do you ever
+[56:15.28]  get senior software engineers,
+[56:18.16]  >> right? I mean, it's it's like I don't
+[56:20.40]  think so. Well, I not unless you also
+[56:22.88]  believe that you will be able to do your
+[56:24.80]  business three years later than that
+[56:27.20]  without any senior software engineers,
+[56:30.16]  >> right?
+[56:30.72]  >> Because where are they going to come
+[56:31.68]  from? You got to train them. I mean and
+[56:35.60]  but to me I think maybe one thing that
+[56:39.76]  to some extent has happened is that for
+[56:41.76]  certain classes of programmers the the
+[56:43.68]  the pyramid has narrowed at the bottom
+[56:45.68]  right there are fewer people coming in
+[56:48.48]  um and we are wanting them to advance
+[56:51.12]  higher up faster um so that they can get
+[56:55.20]  to this more supervisory role right I
+[56:58.16]  think the the craft of being a software
+[57:01.12]  engineer is definitely changing from
+[57:03.92]  you're you're typing in lines of code to
+[57:08.00]  you're having agents type in lines of
+[57:10.16]  code and you are reviewing the work of
+[57:12.16]  the agents, right? And so so you do more
+[57:16.00]  reviewing, less typing.
+[57:18.64]  Um, and some people love that, you know,
+[57:21.60]  I mean, and and and and really are
+[57:23.52]  fantastic at at that workflow, right?
+[57:26.16]  But it's it's a change in nature of of
+[57:28.32]  what what the job looks like as a
+[57:30.56]  programmer. And this tool that you now
+[57:32.96]  have in a toolbox is having that impact,
+[57:35.44]  right? But it is but a tool and there
+[57:38.48]  are still programmers involved in the in
+[57:40.88]  the process that I firmly believe.
+[57:43.12]  >> It sounds like you enjoy typing out the
+[57:45.84]  code. Would you be less happy if five
+[57:48.32]  years from now
+[57:49.12]  >> I I I for for 40 50 years I have enjoyed
+[57:52.80]  typing out code. Um
+[57:55.76]  I'm actually there there some and so I
+[57:59.20]  will continue to type certain parts of
+[58:01.04]  the code, you know, but there are other
+[58:02.80]  parts of the code that I don't
+[58:04.08]  particularly care to type. I don't care
+[58:05.84]  to type in tests and follow all the
+[58:08.32]  rigor of the particular testing
+[58:10.24]  framework. Heck no. If I can farm that
+[58:12.00]  out to AI, happy me, you know. Um I do
+[58:16.72]  think reviewing has always been harder
+[58:18.72]  for me. It's harder for me to like spend
+[58:20.40]  time on reviewing other people's code
+[58:22.16]  than it is you know writing the code.
+[58:24.56]  But I also think that over time we will
+[58:27.04]  we can make that process of reviewing
+[58:29.28]  code much more ergonomic than it is
+[58:32.16]  today. Right? I mean often today you
+[58:34.24]  just get here's like the list of the
+[58:35.52]  files that were changed and here are the
+[58:37.04]  deltas. You figure it up, right? I mean
+[58:40.08]  AI could help us more there by
+[58:41.76]  explaining what the changes are and and
+[58:43.76]  whatever. And so I I think we're going
+[58:45.28]  to get better at this. It's going to get
+[58:46.56]  more interesting, but it will change the
+[58:49.04]  nature of of the craft.
+[58:53.04]  You said that you've been writing code
+[58:55.04]  for 40 maybe 50 years.
+[58:58.80]  >> What is the hardest piece of code you've
+[59:01.44]  ever written or what's the most
+[59:02.56]  technically challenging thing you've
+[59:04.08]  ever done?
+[59:05.76]  >> There there are so many things that in
+[59:08.80]  their time were challenging, you know.
+[59:10.96]  Um
+[59:13.36]  I mean this last project we worked on,
+[59:15.76]  we knew that like like you know sort of
+[59:18.72]  the easy part was getting the native
+[59:20.32]  code. it's just like just just move it
+[59:22.56]  to this other language, right? But then
+[59:25.28]  this taming this beast called uh shared
+[59:29.28]  memory concurrency and and getting the
+[59:33.20]  compiler to use like as many CPUs as
+[59:36.72]  there are available on your box, right?
+[59:40.80]  That is not a simple problem to solve in
+[59:42.88]  a in a in a compiler because we're all
+[59:45.12]  taught to write sequential stuff, right?
+[59:48.16]  I mean first you do this then you do
+[59:49.60]  this but how do you do all of this at
+[59:51.60]  the same time and then share the data
+[59:53.92]  structures afterwards without anyone
+[59:55.60]  like accidentally modifying the other
+[59:57.12]  guy's data structure and you know how do
+[59:59.27]  [snorts] you in the cases where you have
+[60:00.72]  to do that how do you then synchronize
+[60:02.08]  it and avoid deadlocks and race
+[60:03.60]  conditions and and and whatever right
+[60:05.52]  this it was it was tricky uh there were
+[60:08.72]  some good technical problems uh that
+[60:10.56]  that we licked that I think we can be
+[60:12.40]  proud of you know but
+[60:14.32]  >> what about when hardware was more
+[60:16.48]  constrained earlier in your career Is
+[60:18.32]  there any wacky thing you had to do to
+[60:21.44]  kind of, you know, make it work?
+[60:23.76]  >> Oh, totally. I mean, when I started it
+[60:26.80]  was a like being a programmer was a very
+[60:28.88]  very different thing, right? I mean, I
+[60:30.48]  started out with with 8-bit micros that
+[60:32.88]  had Microsoft basic in ROM, right? And
+[60:35.68]  and the basic interpreter and and you
+[60:38.24]  could buy these books and type in these
+[60:41.12]  Star Wars games or or or whatever. They
+[60:43.68]  were all text, you know, there was just
+[60:45.04]  scrolling and and telling you there's
+[60:46.64]  Klingons over in that C quadrant, you
+[60:48.96]  know, and K4, you know, you got to
+[60:51.52]  whatever, right? Um,
+[60:55.44]  but I got fascinated with understanding
+[60:58.48]  how it was all put together and and got
+[61:00.56]  and and quickly learned how to write uh
+[61:03.36]  assembly code and Turbo Pascal, the
+[61:06.48]  first product I worked on, was all
+[61:08.16]  written in Z80 assembly code. um the
+[61:11.36]  compiler, the editor, the runtime
+[61:12.88]  library, everything was assembly. Um and
+[61:16.24]  writing structured a compiler in
+[61:18.96]  assembly code is like that that was that
+[61:21.20]  was like took a lot of fiddling, you
+[61:24.00]  know, and I mean and you were counting
+[61:26.16]  like okay, I think I can I need to we
+[61:28.72]  need to squeeze this into this EPROM and
+[61:30.88]  then there's only 12K, you know, and I'm
+[61:33.44]  I'm 20 bytes over budget here. Oh, but I
+[61:36.40]  can make this jump this long jump
+[61:38.96]  instead. I could jump to this short jump
+[61:40.64]  and that then jumps to that jump and
+[61:42.40]  then I could save one and that's one
+[61:44.00]  bite saved. Okay. You know, moving right
+[61:46.32]  along. [laughter] I mean, and you you
+[61:48.24]  would you would you you were just like
+[61:49.60]  sitting there and fiddling, you know, it
+[61:51.84]  was it was a craft. It was like
+[61:53.28]  woodworking almost. I mean, it was just
+[61:55.52]  so different from what we do now, right?
+[61:57.52]  Everything is like it's bottomless pits
+[62:00.24]  of capacity and and and and bottomless
+[62:02.80]  pits of expectation from users, right?
+[62:05.92]  Is there a top technical book
+[62:07.44]  recommendation you have for software
+[62:09.04]  engineers? I usually recommend the same
+[62:10.88]  but the the one book that was like the
+[62:13.20]  it book for me when I was younger and
+[62:15.76]  it's called algorithms plus data
+[62:17.44]  structures equals programs by Nicholas V
+[62:20.48]  uh the inventor of Pascal and then later
+[62:23.84]  modular and Oberon and whatever and it's
+[62:26.16]  a
+[62:27.76]  it's a book that is
+[62:30.56]  light on
+[62:32.96]  math and symbolism uh and rich in
+[62:36.64]  instructive examples and good
+[62:38.64]  explanation. ations about how data
+[62:40.56]  structures work. I mean, that's how I
+[62:42.16]  learned about hashts, right? I mean,
+[62:44.08]  like when you're self-taught, you don't
+[62:46.00]  know about hashts. You sort of know
+[62:48.16]  about linked lists, right? And fine. So,
+[62:50.72]  in the original version of Turop Pascal,
+[62:53.20]  all the symbol tables were just well,
+[62:55.04]  they were just linked lists, you know,
+[62:57.12]  or whatever. And then of course as you
+[62:58.80]  had many local variables well you're
+[63:02.40]  you're you're you're going exponential
+[63:04.64]  in search time to you know and then I
+[63:07.28]  read about these hash tables and like
+[63:08.96]  wow what you mean I can like just do
+[63:11.20]  this and then like it's it's basically
+[63:13.92]  like linear lookup time and implemented
+[63:17.12]  and the compilement twice as fast right
+[63:19.60]  I'm like holy cow [laughter]
+[63:22.08]  you know that was useful reading do do
+[63:24.48]  you know what I mean so I was always
+[63:25.92]  like the engineer it like that that I
+[63:29.12]  mean and and understanding how to do
+[63:31.36]  error recovery. He explains that in like
+[63:33.20]  how you construct a simple compiler and
+[63:35.28]  then like you know and it's it's
+[63:38.16]  a it was for me a great book but and now
+[63:41.44]  it's actually like I mean it's just a
+[63:43.04]  big PDF you can download it out there um
+[63:46.48]  it's out of print since 40 30 years.
+[63:49.60]  Yeah. Last question for you is with all
+[63:52.24]  the experience that you have now, if you
+[63:54.48]  could go back to yourself when you just
+[63:56.00]  entered the industry and give yourself
+[63:57.84]  some advice, what would you say?
+[64:01.52]  >> Well, I a couple of things maybe like we
+[64:04.08]  talked about being a team player, you
+[64:05.84]  know, I I I would have probably tried to
+[64:07.76]  educate myself a bit more about that to
+[64:09.76]  to begin with. Um, I think also
+[64:14.80]  one thing in in retrospect is like
+[64:18.88]  don't let people tell you that it can't
+[64:20.80]  be done. When they tell you it can't be
+[64:23.52]  done, it's because they can't do it.
+[64:25.60]  That doesn't mean that you couldn't
+[64:27.28]  possibly do it. Do do you know what I
+[64:29.12]  mean? So, so don't let that discourage
+[64:31.12]  you. Is there a project where you
+[64:34.88]  someone said you couldn't do it and then
+[64:36.80]  you did it and that's how you
+[64:38.24]  >> Well, I think the first thing I worked
+[64:39.84]  on like Turbo Pascal, people were
+[64:41.44]  telling me whenever we told them here's
+[64:43.84]  what we have, they said that can't be
+[64:45.28]  done. That's like nah, you guys are you
+[64:48.08]  full of That's like not possible,
+[64:50.32]  you know. [laughter]
+[64:51.52]  Well, it was. And I didn't know that it
+[64:54.56]  wasn't possible, right?
+[64:56.48]  >> Awesome. Well, thank you for your time.
+[64:57.68]  I really appreciate it, Andrew.
+[64:58.64]  >> You're welcome. No, this is a lot of
+[64:59.92]  fun. Hey, thank you for watching this
+[65:01.92]  podcast. If you liked it and you want to
+[65:03.52]  see the show grow, please support with a
+[65:05.84]  comment or a like. Also, if you have any
+[65:08.80]  recommendations for people you want me
+[65:10.48]  to bring on, please drop a comment.
+[65:13.04]  Guests like Barbara Liskoff, Mike
+[65:15.28]  Stonereaker, Mark Brooker, these were
+[65:17.68]  all people that I brought on because
+[65:19.68]  someone left a comment. On another note,
+[65:21.92]  aside from the podcast, I'm working on
+[65:23.84]  building the ergonomic keyboard that I
+[65:25.76]  wish existed. Here's a glance at the
+[65:27.92]  prototype. It's a split keyboard, so
+[65:30.16]  there's two sides. This is in the case,
+[65:32.56]  but yeah, we launched on Kickstarter and
+[65:34.64]  we hit our goal within eight hours of
+[65:36.48]  launching. I really appreciate it if you
+[65:38.24]  were one of the people who grabbed one
+[65:39.68]  of the early units. Um, we're now
+[65:41.84]  working on the long journey of building
+[65:43.68]  the tooling now. And so, if you still
+[65:45.28]  want to pick one up, I've left the late
+[65:47.44]  pledges open on Kickstarter, so you can
+[65:49.92]  grab one there. I'll put a link in the
+[65:51.60]  description. Thank you again for
+[65:53.76]  watching the podcast and I'll see you in
+[65:56.00]  the next

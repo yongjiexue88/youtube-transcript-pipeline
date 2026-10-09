@@ -1,0 +1,354 @@
+Title     : "Clean Code", Horrible Performance | Casey Muratori
+Video ID  : czr1L3JocOI
+URL       : https://www.youtube.com/watch?v=czr1L3JocOI
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 345
+Saved at  : 2026-10-08 08:05:56
+------------------------------------------------------------
+
+[00:00.00]  Earlier we talked about the the
+[00:01.76]  trade-off between, I guess, performance
+[00:04.56]  code and maintainable code. And I saw
+[00:08.72]  you had this one video said, you know,
+[00:10.96]  in quotes, clean code horrible
+[00:13.64]  performance. Now,
+[00:15.32]  I feel like this is on the same topic.
+[00:17.72]  What's your your take there on, you
+[00:20.44]  know, because you also put clean code in
+[00:23.00]  quotes. What does that mean?
+[00:24.60]  >> So, it's a it's a pretty fairly subtle
+[00:26.20]  topic, right? Uh and that's why the the
+[00:28.64]  quotes are there because um the first
+[00:30.80]  thing that I you have to point out is
+[00:32.48]  that clean code is clean code,
+[00:35.32]  object-oriented programming, a lot of
+[00:37.56]  these phrases, they mean different
+[00:39.12]  things to different people. And so, if
+[00:41.04]  you're going to say that you're, you
+[00:42.40]  know, this code is clean, it's pretty
+[00:45.00]  hard to find two programmers who will
+[00:48.12]  agree on exactly whether it is or not,
+[00:51.04]  right? Like like they all have like
+[00:52.40]  different ideas about what is clean and
+[00:54.64]  what is not, right?
+[00:56.72]  So, the reason I put that in quotes is I
+[00:58.16]  was talking about a very specific thing,
+[00:59.44]  which is like literally like the book
+[01:01.64]  Clean Code, like the thing where there's
+[01:03.40]  like here are the things that we would
+[01:04.64]  recommend that you do, right?
+[01:06.88]  So, in that particular case, what I was
+[01:08.44]  talking about is there's a certain set
+[01:10.84]  of ideas that is advocated in Clean Code
+[01:14.24]  as like these are the things you should
+[01:15.60]  do, and they are like you should have
+[01:19.00]  everything should be kind of um
+[01:22.04]  I guess I would say
+[01:23.64]  dynamic dispatch, or at least you
+[01:25.88]  shouldn't code shouldn't know the types
+[01:27.44]  it's operating on, right? Saying it's
+[01:29.40]  dynamic dispatch is maybe it depends on
+[01:31.40]  the language whether that's going to be
+[01:32.52]  true or not, but when I write code, I
+[01:34.56]  don't know what types I have. It's just
+[01:36.56]  I don't know, like some base classes is
+[01:38.04]  what I'm operating on, and they could be
+[01:39.32]  anything, right? That's thing one. Thing
+[01:41.64]  two is functions should be very small.
+[01:43.72]  Uh in fact, the the numbers are kind of
+[01:46.04]  weird. They're like four lines or five
+[01:48.16]  line Like when you go look at the actual
+[01:49.76]  things that are claimed in some of the
+[01:51.28]  this literature, it's it's really
+[01:52.72]  strange. You're just like, "Gosh, that's
+[01:54.64]  very small, right?"
+[01:56.88]  Um
+[01:58.32]  and I go through some of those things
+[01:59.60]  and I say, "Look, if we were to actually
+[02:01.28]  follow these,
+[02:03.04]  we get into a really bad state because a
+[02:05.72]  lot of the languages that people are
+[02:07.04]  going to be using to implement this
+[02:08.32]  stuff, like C++ for example, um which
+[02:11.16]  even would be a fairly good case in a
+[02:13.24]  lot of cases at least it's a compiled
+[02:14.60]  language and so on.
+[02:17.44]  In a a lot of cases, these things are
+[02:19.00]  kind of a recipe for disaster.
+[02:21.00]  If you're
+[02:22.60]  if you're handing out types where you
+[02:24.44]  can't know the type at compile time or
+[02:26.68]  you can't know the type uh or it's or
+[02:28.44]  it's, you know, going to be in a
+[02:29.36]  different module, so it, you know,
+[02:30.60]  unless you have like a really aggressive
+[02:32.00]  link time code generation, it's not
+[02:33.28]  going to be likely that you could figure
+[02:34.28]  this out. And you're saying all the
+[02:35.96]  functions should be very small and of
+[02:37.32]  course they're going to be virtual
+[02:38.24]  because they're on these sort of types
+[02:39.76]  that you don't know what they are.
+[02:41.88]  This creates a really uh toxic
+[02:44.36]  combination for the compiler.
+[02:46.56]  Normally,
+[02:48.08]  you can have I mean, you can have small
+[02:51.12]  functions if you want them only four
+[02:52.28]  lines long. If the compiler can know
+[02:54.48]  that it can just inline that, right? If
+[02:56.24]  it can see clearly what you're doing and
+[02:58.40]  it can just merge those things in, we
+[02:59.96]  don't have a problem. If they're behind
+[03:01.64]  a virtual function, so it doesn't know,
+[03:03.88]  like it can't guarantee that it is that
+[03:06.04]  type,
+[03:07.44]  um it can't do that.
+[03:09.76]  And so, when you talk about all this
+[03:11.32]  stuff, what you're what you're giving
+[03:12.68]  up, people I think also because the
+[03:14.52]  video I mean, the video was a very short
+[03:16.08]  video, it's part of like a series.
+[03:18.76]  I think people sometimes get the wrong
+[03:19.84]  idea that I think that virtual function
+[03:21.32]  calls cost a lot. They do cost
+[03:23.00]  something, but, you know, depending on
+[03:25.12]  how you want to look at it, they
+[03:25.92]  actually don't cost that much
+[03:27.80]  uh because, you know, it depends on
+[03:29.80]  whether it's predicted correctly or not,
+[03:31.28]  but in general, like the cost of virtual
+[03:33.12]  function is less than you would think a
+[03:34.40]  lot of times.
+[03:36.36]  The actual reason that it slows things
+[03:37.92]  down is because the compiler cannot
+[03:39.64]  merge the code together, right? It can't
+[03:41.68]  inline stuff and remove and reduce the
+[03:43.72]  waste. Like, that's the actual problem.
+[03:46.44]  So, if you just want to call a virtual
+[03:47.72]  function, yeah, it it if it was a
+[03:49.84]  really, really uh hardcore optimization
+[03:52.64]  scenario, then you don't want anything
+[03:54.60]  probably calling a virtual function in
+[03:56.00]  general cuz there is some cost to that.
+[03:58.00]  Just calling a function has cost.
+[04:00.64]  But that wasn't the really bad part of
+[04:02.88]  it, right? So it's that plus there's an
+[04:05.68]  additional thing which is that it can't
+[04:07.56]  unroll and go wide on things. If the
+[04:09.56]  compiler can see everything you're
+[04:10.68]  doing, it can use SIMD, it can like
+[04:13.32]  widen loops to operate on multiple
+[04:14.88]  things at once, it can unroll those
+[04:16.20]  loops. There's all these things it can
+[04:17.24]  do. If it's got these virtual functions,
+[04:18.80]  it's just like
+[04:20.64]  that's it. I don't know I I can't make
+[04:22.36]  decisions about that. I have no idea
+[04:23.52]  what this thing on the other end is
+[04:24.28]  doing, right?
+[04:25.96]  So uh that was kind of my point on that
+[04:28.72]  and uh again, I it's not meant to be uh
+[04:31.96]  assailing the idea that your code should
+[04:33.72]  be easy to read or easy to maintain.
+[04:35.72]  It's just more like these guidelines
+[04:37.52]  seem really bad and also I don't think
+[04:39.68]  we need them for code to be
+[04:41.20]  maintainable. I I don't have trouble
+[04:43.08]  maintaining functions that are 30 lines
+[04:44.80]  long or 50 lines long. I don't find that
+[04:46.68]  five is a magic number or something or
+[04:48.28]  that it has to be really short. Uh and
+[04:49.80]  also I find that it's usually pretty
+[04:51.12]  easy to write code where I know what the
+[04:52.68]  types are. Um that those can be
+[04:54.44]  determined at compile time. Like I don't
+[04:56.28]  think that results in code that's
+[04:58.60]  particularly hard to read.
+[05:00.92]  >> When I was in college, very in very
+[05:03.36]  early, I remember people recommend that
+[05:05.88]  book. So oh, you should read Clean Code.
+[05:08.48]  So my understanding that you wouldn't
+[05:09.68]  recommend people who are software
+[05:11.76]  engineers to read that.
+[05:14.08]  >> I guess the way I would categorize it is
+[05:15.52]  a mixed bag. So I would I wouldn't
+[05:17.40]  actually say that I disagree with all of
+[05:19.60]  all of the things in the book, though. I
+[05:21.08]  mean, some of the things are things that
+[05:22.88]  I definitely do myself. Like giving um
+[05:26.16]  variables like easy to understand names
+[05:29.28]  uh is something that I think would be
+[05:31.24]  and then that's in that book. Uh
+[05:33.48]  is good advice, right? And so kind of
+[05:36.32]  more I wouldn't I wouldn't necessarily
+[05:38.08]  say do or don't read a book. What I
+[05:40.00]  would say is like I think there's some
+[05:41.84]  things in this book that don't that
+[05:43.84]  aren't addressed properly. Like I don't
+[05:46.16]  think you want to tell people these
+[05:47.36]  rules of thumb and not tell them about
+[05:49.12]  these other problems that was exactly
+[05:51.32]  what I was uh pointing out there.
+[05:53.92]  And so, usually it's more that. It's
+[05:55.64]  like
+[05:58.00]  I find that oftentimes there is this
+[06:01.44]  tendency
+[06:03.08]  um I guess I'll say to pretend
+[06:06.32]  that
+[06:07.92]  we don't have to talk about performance
+[06:10.04]  and we can just say like, "In fact,
+[06:11.64]  premature optimization is the root of
+[06:12.80]  all evil." Bringing it back to there. I
+[06:15.12]  feel like there's this uh temptation and
+[06:18.68]  very prevalent practice of sort of
+[06:20.60]  taking that idea to mean we don't have
+[06:23.88]  to talk about performance when we're
+[06:25.04]  teaching people things at all.
+[06:26.76]  Or like when you write the book Clean
+[06:28.12]  Code, you don't have to talk about
+[06:29.16]  performance at all. You can just include
+[06:30.68]  a thing that's basically like, "Hey, um
+[06:34.16]  you know,
+[06:35.16]  there's performance issues, but most of
+[06:37.36]  the time it's not a problem." or
+[06:38.28]  something like that, which is, you know,
+[06:39.80]  or if you look at uh
+[06:41.80]  Refactoring, the book Refactoring, very
+[06:43.88]  popular. It literally says exactly that
+[06:45.56]  in like the opening thing. It's like,
+[06:46.36]  "You know, there there might be
+[06:47.40]  performance concerns, but you know,
+[06:49.32]  they're usually okay." or something,
+[06:50.40]  right? And it's like, that is not true.
+[06:53.12]  I just think that's fundamentally not
+[06:54.48]  true. I think these books should include
+[06:57.32]  detailed discussions of the actual
+[06:59.96]  performance problems that you are very
+[07:01.68]  likely to hit if you take some of their
+[07:03.56]  advice um because it's not that it means
+[07:06.84]  you can't do those things,
+[07:09.64]  but
+[07:10.64]  I'll quote you back to you, it's about
+[07:12.48]  trade-offs.
+[07:13.64]  There is always a trade-off that you're
+[07:15.52]  making.
+[07:16.64]  And sometimes, if you understand the
+[07:18.88]  trade-off, you will make it. You'll say,
+[07:21.36]  "Mm, I know this is going to cost This
+[07:23.32]  may be a serious performance problem for
+[07:25.04]  us, but I think that's okay."
+[07:27.32]  Like, I think it's not like our
+[07:28.80]  performance won't suffer to the point
+[07:30.20]  where it's a problem for the product. I
+[07:32.76]  understand what that's is.
+[07:35.88]  There's a huge difference between that
+[07:37.48]  and just going like, "Uh we don't worry
+[07:39.24]  about performance till the end." Right?
+[07:40.36]  Like, there's it's completely different,
+[07:41.96]  right? Those are two different
+[07:42.88]  engineering approaches.
+[07:44.56]  Uh and so what I try to do is encourage
+[07:47.44]  people
+[07:48.84]  to put that analysis back in. Understand
+[07:51.52]  the performance tradeoffs you're making.
+[07:52.88]  Understand how much it might cost in the
+[07:55.44]  future to like make these fixes.
+[07:58.44]  And I
+[07:59.68]  I don't really do any AI stuff, but my
+[08:02.08]  sort of feeling is
+[08:03.80]  more so now than ever I feel like that's
+[08:05.88]  got to be pretty important because
+[08:07.28]  you're instructing these AIs to do what
+[08:09.76]  they're going to do.
+[08:11.24]  And I feel like it would be a bad idea
+[08:14.32]  to not know about performance tradeoffs
+[08:17.48]  because especially if an AI is going to
+[08:20.16]  be doing your bidding and structuring
+[08:21.84]  the code the way you want to structure
+[08:23.12]  it or doing whatever.
+[08:24.64]  It seems like a very straightforward
+[08:25.76]  part of the process to include
+[08:27.56]  performance stuff in those instructions,
+[08:29.72]  right? Like that would be a natural
+[08:31.16]  thing that we would want to understand
+[08:32.48]  and do, right? So I feel like
+[08:35.96]  really I've been just trying to get that
+[08:37.12]  more into the conversation.
+[08:39.08]  Uh and I feel like it's it's as relevant
+[08:41.52]  now as it ever was and arguably maybe
+[08:43.20]  more so. I don't know, but I could be
+[08:44.52]  wrong about that.
+[08:46.12]  >> What are some things that are in your
+[08:48.20]  mind that are those high-value
+[08:51.24]  performance things to consider that
+[08:53.00]  don't cost a whole lot to think about?
+[08:55.72]  >> So to me awareness is the number one
+[08:58.84]  thing, right? Understanding roughly the
+[09:01.40]  performance characteristics of the
+[09:03.48]  hardware that you're working on, which
+[09:05.36]  includes things like, you know, if
+[09:06.48]  there's a network, like what does that
+[09:07.80]  look like and so on.
+[09:10.04]  Um it's really about awareness more than
+[09:12.80]  anything else because a little bit of
+[09:15.24]  awareness can go a very long way.
+[09:19.56]  If you understand the basic concept that
+[09:22.04]  like, you know, a that network latency
+[09:25.40]  versus network throughput are different
+[09:27.12]  things,
+[09:28.20]  you can make upfront decisions about
+[09:29.96]  structuring code such that you batch
+[09:31.96]  things properly, uh and so on and so
+[09:34.44]  forth. If you don't understand those
+[09:35.76]  things, you could get very far down a
+[09:37.28]  project only to realize that everything
+[09:40.20]  you designed and all the way it works is
+[09:42.12]  all very serial and really just cannot
+[09:44.28]  be accelerated over a network at all.
+[09:45.96]  Like it's never going to run uh
+[09:47.72]  reasonably or something like this,
+[09:48.80]  right?
+[09:50.28]  Uh and so I think the the lowest-hanging
+[09:53.40]  fruit is just to get some education in
+[09:55.68]  performance. Like get some education in
+[09:59.04]  how to think about the way a machine
+[10:02.00]  works and what makes it faster or slow,
+[10:04.12]  what it struggles with and what it
+[10:05.48]  doesn't.
+[10:06.68]  And just to keep that in the back of
+[10:07.96]  your head. Because at the end of the
+[10:10.12]  day, if you have that knowledge, I think
+[10:12.44]  you're very unlikely to make the kinds
+[10:14.64]  of architectural decisions that will be
+[10:17.04]  hard to undo later, right?
+[10:20.04]  Um
+[10:21.00]  and so that's really that's really the
+[10:22.72]  majority of it, I think. And that is by
+[10:25.52]  far the highest-impact, lowest-cost
+[10:28.44]  thing you can do is just do that
+[10:29.56]  training once. Cuz once you have it,
+[10:31.20]  it's with you forever. Once you
+[10:32.84]  understand how to think about
+[10:34.44]  performance,
+[10:35.76]  it can always be there and at any time,
+[10:39.40]  you can sort of have that alarm bell of
+[10:40.84]  like, "Hmm, this I don't see, you know,
+[10:44.36]  you're always kind of looking like I
+[10:45.60]  don't see the path towards this running
+[10:47.56]  well."
+[10:48.64]  And then so that's that your key to stop
+[10:50.56]  and go like, "Uh maybe we need to
+[10:51.96]  rethink like how we were making some of
+[10:53.48]  these decisions."
+[10:54.96]  As long as you can see that path, you're
+[10:57.44]  pretty you can you can delay most like
+[11:00.40]  optimization work. As long as you can
+[11:02.64]  see the path, like here is how we will
+[11:04.92]  optimize this, you're in pretty good
+[11:06.96]  shape because um
+[11:09.40]  if you're making those tradeoffs
+[11:10.68]  correctly, you're not going to paint
+[11:12.84]  yourself into a corner where there's
+[11:14.32]  nothing that you can do other than scrap
+[11:16.44]  and rewrite.

@@ -1,0 +1,1680 @@
+Title     : Google DeepMind Distinguished Eng (L9): How To Land a Job at a Frontier Lab | Vlad Feinberg
+Video ID  : cDyi91onoJ8
+URL       : https://www.youtube.com/watch?v=cDyi91onoJ8
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1671
+Saved at  : 2026-10-08 08:16:43
+------------------------------------------------------------
+
+[00:00.00]  Every single time you go up for a
+[00:01.52]  pre-training run, you're about to put in
+[00:03.60]  more flops into this run than you've
+[00:05.20]  ever done before.
+[00:06.64]  >> This is Vlad Feinberg. He's Google
+[00:08.80]  DeepMind's [music] pre-training area
+[00:10.12]  lead, and I asked him all about how to
+[00:12.52]  get a job at a frontier lab.
+[00:14.44]  >> That was a particular skill that I see
+[00:16.80]  voracious demand for across all the
+[00:18.56]  different labs. The research skill set
+[00:21.40]  is going to become increasingly
+[00:23.08]  important. If you do the scaling book
+[00:25.88]  exercises and, you know, send me a video
+[00:28.04]  of yourself doing them, I would love to,
+[00:30.60]  you know, interview you.
+[00:32.28]  >> Here's the full episode.
+[00:37.76]  You wrote this post that was titled "How
+[00:40.68]  to get a job at a frontier lab." What
+[00:43.12]  are the skills that are kind of in
+[00:45.08]  demand on frontier labs? Maybe we can
+[00:47.24]  talk about the shape of the work.
+[00:49.24]  There's quite a range of different
+[00:52.48]  things that frontier labs require.
+[00:56.00]  At this point, LLMs are artifacts that
+[00:59.56]  are connected to,
+[01:01.72]  uh, research and product in ways that
+[01:05.88]  machine learning really hasn't been as
+[01:08.00]  connected to before. And so, it it
+[01:11.52]  really touches on so many different
+[01:13.04]  things. The goal of my post was to
+[01:15.08]  propose just a couple tangible
+[01:17.88]  directions in which labs could require a
+[01:21.24]  certain set of skills not not to be
+[01:23.00]  fully exhaustive.
+[01:24.60]  And really the ones that I I dive into
+[01:28.36]  have to do with uh kernel development
+[01:31.20]  and low-level engineering to accelerate
+[01:35.52]  the runtime for these LLMs, uh, in
+[01:38.20]  practice. And so, that that was a
+[01:41.00]  particular skill that I see voracious
+[01:43.76]  demand for across all the different
+[01:45.36]  labs, uh, and uh among different
+[01:48.36]  projects within the labs. So, that that
+[01:51.08]  seemed like a very sharp one to call out
+[01:53.24]  as, uh,
+[01:54.64]  uh an overall need. Uh, and so
+[01:57.84]  specifically
+[01:59.28]  whenever we're doing a research project
+[02:02.44]  that involves
+[02:03.80]  changing the architecture for the neural
+[02:05.32]  net in a particular way or rethinking
+[02:08.40]  how we might do serving to
+[02:11.40]  uh you know, do better KV caching or
+[02:13.32]  something like that.
+[02:15.44]  Again, across the stack, you just need
+[02:17.44]  to be able to implement these new
+[02:19.40]  techniques in efficient ways and
+[02:23.00]  uh the inner loop of all of these
+[02:25.96]  different changes is creating software
+[02:28.64]  artifacts that can function at large
+[02:30.72]  scales with high throughput, low
+[02:32.84]  latency.
+[02:34.20]  Uh and this is just fundamental work
+[02:36.64]  that's tied to classical back-end
+[02:39.04]  engineering thinking.
+[02:40.76]  Uh so, yeah, it seemed like a very
+[02:43.92]  open thing for people to specialize in.
+[02:46.40]  >> My friends that work at OpenAI and
+[02:48.60]  Anthropic, there's this distinction of
+[02:52.48]  an applied org and the research org. I
+[02:56.52]  was wondering if DeepMind has a similar
+[02:59.36]  uh distinction and if you could speak
+[03:01.28]  about what that difference is.
+[03:03.56]  >> Uh so, we we have different focus areas
+[03:07.44]  and like
+[03:09.08]  you know, for instance, within GDM,
+[03:10.76]  there's a team that focuses on how
+[03:15.08]  uh we can use our Gemini LLMs to better
+[03:19.00]  inform search results. And so, like that
+[03:20.96]  might be
+[03:22.24]  some, you know,
+[03:24.00]  you know, in some way like an applied
+[03:25.96]  version of the LLMs, but I I
+[03:29.44]  am hesitant to, you know, make a very
+[03:31.96]  sharp distinction here because there's
+[03:34.40]  so much
+[03:35.84]  actual like hard research that has to go
+[03:38.16]  into
+[03:39.68]  this kind of level of product
+[03:41.16]  integration. Like specifically for the
+[03:42.92]  one I mentioned, uh quite a lot of work
+[03:44.96]  goes into making sure that these LLMs
+[03:47.24]  are factual and can cite sources uh to
+[03:50.80]  have very precise grounded answers,
+[03:53.80]  assessing the quality of these sources
+[03:55.92]  to make sure that you're not referring
+[03:57.16]  to anything that's like sarcastic or a
+[03:58.76]  joke.
+[04:00.88]  This is
+[04:02.16]  I guess a good example of how even in
+[04:05.20]  like product specific quote unquote
+[04:07.68]  applied AI verticals, you're still doing
+[04:09.88]  research.
+[04:11.28]  That being said, there's definitely
+[04:14.24]  what I would say is like very classical
+[04:16.08]  LLM research teams, pre-training,
+[04:18.76]  post-training.
+[04:20.64]  These are things that are still
+[04:22.32]  stand-alone teams inside of GDM that are
+[04:25.28]  focused on
+[04:27.44]  what I would say is like, you know,
+[04:28.84]  creating soda models, you know, pure
+[04:31.24]  research.
+[04:33.12]  Again, the caveat is
+[04:34.72]  the the pure research that we do, like
+[04:37.24]  the extent that it matters is the extent
+[04:39.08]  to which we can realize it. And so, you
+[04:41.68]  know, we're just as responsible with uh
+[04:45.20]  delivering these models and making sure
+[04:47.04]  they train stably and actually
+[04:49.84]  being like the SREs of sorts for the
+[04:52.52]  training run to make sure that the model
+[04:54.16]  training is going smoothly
+[04:56.00]  as we are for coming up with the recipes
+[04:57.64]  to make these LLMs.
+[04:59.44]  And you can't separate those two roles.
+[05:01.52]  It's it's really crucial to kind of wear
+[05:03.96]  both of those hats. So,
+[05:07.24]  yeah, I think you can you can draw up a
+[05:08.96]  spectrum between research and applied,
+[05:11.40]  but no matter what in today's world, I
+[05:14.08]  think
+[05:15.28]  everyone needs to be fluid across that
+[05:18.20]  spectrum.
+[05:19.40]  >> I notice there's also another spectrum
+[05:21.36]  of software engineer to pure AI
+[05:24.60]  researcher and like how do you think of
+[05:27.24]  that spectrum? Like software engineering
+[05:29.24]  versus like AI researcher roles?
+[05:31.56]  >> So, I guess in
+[05:34.16]  in in my case specifically, I think a
+[05:36.72]  lot of
+[05:38.44]  what we do
+[05:40.48]  and a lot of the new techniques that we
+[05:43.20]  develop,
+[05:45.20]  the groundwork is laid in infrastructure
+[05:49.40]  investment. So, um I
+[05:53.36]  can walk through what my team does a
+[05:54.60]  little bit more detail later, but
+[05:57.64]  one of the verticals is distillation.
+[06:00.44]  And in order to do uh distillation, it's
+[06:04.12]  it's some way of uh
+[06:06.44]  transferring the knowledge or some form
+[06:09.92]  of statistics about the underlying data
+[06:12.80]  set through a teacher model into the
+[06:15.00]  student model to make the student model
+[06:16.40]  better than if it hadn't ever seen these
+[06:18.80]  auxiliary statistics from the teacher.
+[06:20.80]  And when you're talking about statistics
+[06:24.16]  derived from a massive LLM applied to
+[06:27.56]  trillions and trillions of tokens,
+[06:29.76]  uh you're talking about a level of flops
+[06:32.92]  investment that, you know, is
+[06:35.96]  you know, millions and millions of
+[06:37.00]  dollars. And
+[06:40.08]  that in turn
+[06:42.40]  means that you have to be able to think
+[06:45.12]  through
+[06:46.32]  how do you
+[06:48.00]  uh
+[06:48.80]  optimize the system to be as efficient
+[06:50.36]  as possible because every operation that
+[06:52.72]  we're performing is is multiplied by
+[06:54.48]  such a large factor that every second
+[06:57.16]  counts, every byte of storage counts,
+[06:59.88]  and
+[07:01.40]  quite a bit of that work
+[07:03.52]  is
+[07:04.96]  you know, good old-fashioned software
+[07:06.80]  engineering. And so,
+[07:08.80]  uh in particular,
+[07:10.28]  the infrastructure for distillation has
+[07:13.28]  evolved
+[07:15.48]  through maybe three [snorts] to four
+[07:18.24]  generations at this point.
+[07:20.40]  And in each one,
+[07:22.48]  we've taken a step back, looked at what
+[07:25.92]  kind of research methods have we been
+[07:27.28]  applying for distillation holistically,
+[07:29.72]  thought about how do we broaden what the
+[07:33.40]  infrastructure is capable of, and
+[07:36.28]  there's definitely a couple discrete
+[07:37.72]  points where rethinking the system
+[07:41.56]  design of how we perform distillation
+[07:44.84]  enables us to do research on
+[07:47.04]  distillation methods much more quickly.
+[07:49.44]  And so it's this kind of investment that
+[07:52.40]  like okay, this like four-month or
+[07:54.64]  whatever rewrite of our distillation
+[07:56.96]  infrastructure
+[07:58.68]  then results in a dramatically new and
+[08:02.48]  understanding of distillation scaling
+[08:04.32]  laws that translates to really strong
+[08:08.08]  models. So
+[08:09.76]  it really just work across the stack and
+[08:12.96]  I you know, I can't
+[08:15.08]  Yeah, I can't imagine that we would have
+[08:16.52]  gotten results like flash 3.0 without
+[08:19.44]  having made those distillation
+[08:21.40]  infrastructure investments that are at
+[08:23.40]  the end of the day things that started
+[08:25.00]  with a good old-fashioned design doc and
+[08:26.80]  thinking about what the right
+[08:27.56]  abstractions are for
+[08:29.56]  generating these teacher statistics,
+[08:31.20]  coming up with the right storage system
+[08:33.20]  for them, thinking through what could
+[08:35.48]  support the reading and writing across
+[08:39.00]  multiple different data centers at the
+[08:40.92]  scale.
+[08:42.60]  Really classical distributed systems
+[08:44.48]  problems.
+[08:45.32]  >> Yeah, I mean it sounds like there's
+[08:46.92]  there's a lot of software engineering
+[08:48.76]  back-end infra type problems given just
+[08:51.96]  the scale of the computer at this point.
+[08:54.24]  It still feels like though there at some
+[08:56.88]  point in that spectrum there's some
+[08:59.40]  crossover where there's these new skills
+[09:02.00]  like somewhere where if you had you took
+[09:05.08]  arbitrary back-end engineer and you
+[09:07.28]  place them to I don't know, adjust the
+[09:10.72]  model architecture or something. Like
+[09:12.80]  there that is like a bit of a jump more
+[09:14.56]  than the infra work.
+[09:16.48]  Like how do you see that distinction?
+[09:18.16]  >> Yeah, so I think there is a crossover
+[09:20.52]  point in terms of doing research where
+[09:24.20]  research is an endeavor where the
+[09:30.24]  payoffs become a lot higher risk higher
+[09:33.32]  reward and
+[09:36.08]  we have this notion of
+[09:37.84]  uh kind of research taste, which is, you
+[09:40.00]  know, some high-level intuition about
+[09:42.08]  what path you should be proceeding
+[09:44.32]  through the DAG of the multiple uh
+[09:46.60]  different milestones that you need to
+[09:48.24]  accomplish in a particular project.
+[09:51.16]  In some sense, we can view software
+[09:52.92]  engineering projects through a similar
+[09:54.48]  DAG where, you know, you have all of
+[09:56.56]  these intermediate artifacts that you
+[09:58.52]  want to hit in a software program to uh
+[10:01.36]  get to the final result. But, in the
+[10:04.84]  software engineering case, the DAG is
+[10:07.12]  more or less deterministic where you,
+[10:09.88]  you know, build one service, then a
+[10:11.24]  different service, then a third service,
+[10:13.04]  and you know, you figure out your
+[10:14.36]  storage infrastructure layer first, uh
+[10:16.68]  that kind of thing, and you can just
+[10:17.96]  make monotone progress. But, in the
+[10:19.72]  research case, you have to
+[10:22.84]  uh kind of explore this DAG, which is
+[10:25.20]  now stochastic, cuz some of the nodes,
+[10:27.52]  which might be some research ideas or
+[10:29.20]  some, you know, aspect of getting to a
+[10:31.72]  final goal, uh may or may not work out.
+[10:35.76]  And I think that requires a bit of a
+[10:37.88]  mindset shift.
+[10:40.64]  And that that kind of mindset shift
+[10:42.68]  takes a while to learn, and it takes
+[10:44.28]  specialized skills to learn.
+[10:46.20]  Uh this would be the kind of skills you
+[10:47.44]  pick up in a PhD, for instance.
+[10:49.52]  One succinct way I could put it,
+[10:53.00]  there's a really excellent post by
+[10:56.48]  this uh Professor Jacob Steinhardt, and
+[10:58.60]  I I love to frame a lot of the research
+[11:01.76]  work that I do in this way, and it's
+[11:03.60]  research as an MDP.
+[11:05.32]  So, MDP here, Markov decision process,
+[11:08.68]  uh it's again, we have this high-level
+[11:11.44]  idea of a stochastic dependency graph
+[11:14.56]  between different milestones in a
+[11:16.16]  research project where you might need to
+[11:18.76]  have a pertinent certain kind of result
+[11:20.60]  or prove a certain kind of theorem
+[11:21.84]  before you get to a certain kind of
+[11:23.04]  conclusion. Uh similarly, for a machine
+[11:25.96]  learning research project, you might
+[11:27.60]  need to have this and that
+[11:28.52]  featureization working before where can
+[11:30.32]  get this and that
+[11:32.12]  ImageNet accuracy or something like
+[11:33.60]  that. Um
+[11:35.56]  and expanding those nodes in this graph,
+[11:38.24]  it it's this stochastic endeavor where
+[11:40.92]  these approaches may or may not work
+[11:42.20]  out, and whether or not
+[11:44.60]  one works out opens up a set of new
+[11:47.00]  possibilities for you.
+[11:48.60]  And so
+[11:50.24]  the approach that you might have in
+[11:54.04]  the software engineering case where
+[11:56.52]  you could fully write out here are all
+[11:58.16]  the paths to the goal
+[12:00.16]  across walking this graph, what's the
+[12:02.36]  shortest path to your goal?
+[12:04.20]  That approach is not optimal in the
+[12:06.72]  research case because if all of a sudden
+[12:09.76]  the transitions between the edges in
+[12:12.20]  this graph become unreliable, and uh
+[12:16.12]  some of the nodes you might not even
+[12:18.72]  be aware of. It might be a hidden MDP.
+[12:21.08]  Then, the way that you might approach
+[12:23.00]  this problem
+[12:24.44]  would really differ. And in particular,
+[12:26.52]  you have to factor in the success rate
+[12:29.52]  and the time investment that you're
+[12:30.96]  going to be putting into
+[12:32.92]  uh these different research ideas,
+[12:35.32]  as well as
+[12:37.20]  a priori estimating what those different
+[12:40.40]  rates are. And that's a very different
+[12:42.60]  exercise than writing up what the, you
+[12:45.72]  know, design for your software
+[12:47.36]  engineering project might be. And it's
+[12:49.36]  it it's this skill set of of building an
+[12:51.32]  intuition of how likely an approach is
+[12:53.52]  to work out without having yet done that
+[12:56.16]  approach
+[12:57.52]  that I think people
+[12:59.48]  often you know, correlate with this uh
+[13:01.68]  research taste notion.
+[13:04.60]  But that's exactly the one that you need
+[13:06.00]  to build up in order to properly
+[13:08.52]  uh traverse this MDP.
+[13:11.12]  >> For the the research projects, and just
+[13:13.12]  like generally the nature of the
+[13:14.44]  research work, I mean, it sounds like
+[13:16.28]  you're you're saying that there's a lot
+[13:18.04]  more uncertainty here. I'm still trying
+[13:21.24]  to get a sense of the the nature of the
+[13:23.12]  work. If you threw this back-end
+[13:25.64]  engineer into a team that's doing
+[13:28.40]  research. Like, what are those like
+[13:30.96]  concrete examples where they fall short?
+[13:34.52]  >> Like, I think the the very first thing
+[13:37.00]  that comes to mind is having the right
+[13:39.60]  context for the research landscape in
+[13:43.72]  which you're operating. So,
+[13:45.96]  quite a bit of research work involves
+[13:50.52]  like
+[13:51.64]  almost uh
+[13:53.32]  this kind of
+[13:55.20]  um you have to take on this like very
+[13:57.84]  humble viewpoint of there's been quite a
+[14:00.28]  lot of investment in related work in the
+[14:02.96]  past. And until I know
+[14:07.32]  the sum total of humanity's bleeding
+[14:10.20]  edge in this topic, I'm definitely not
+[14:12.72]  going to be able to further that
+[14:14.44]  bleeding edge. So, building up uh
+[14:18.44]  a solid understanding of of past work uh
+[14:21.68]  in a particular area
+[14:23.48]  uh and doing that related literature
+[14:25.12]  review is maybe the first thing that I
+[14:27.16]  would imagine people might stumble on is
+[14:29.92]  uh
+[14:30.52]  having read and having the skills to
+[14:32.88]  effectively traverse, you know,
+[14:35.08]  historical uh citation tree for a
+[14:37.96]  particular topic. Because you don't have
+[14:40.88]  the time to read all of these different
+[14:42.56]  papers. You need to build up a sense of
+[14:44.88]  uh what are the high value papers and
+[14:47.16]  what are the ways in which I can assess
+[14:49.56]  if a paper's worth reading without fully
+[14:51.32]  reading it. That's like the first thing
+[14:53.68]  that comes to mind as the you know,
+[14:56.32]  skill that people need to build up. Even
+[14:58.16]  to be able to read these research-level
+[14:59.76]  papers, you have to have a background in
+[15:04.00]  machine learning, in um some, you know,
+[15:07.84]  computer science, and
+[15:10.28]  uh
+[15:10.92]  you know, depending on the paper and
+[15:12.24]  depending on the domain, there might be
+[15:13.64]  all sorts of prerequisites in terms of
+[15:15.48]  like the underlying math and
+[15:18.20]  coursework that you would want to have
+[15:19.84]  to properly understand. So,
+[15:23.16]  that's that's quite important to be able
+[15:25.12]  to have a deep understanding of what
+[15:27.56]  methodology is available because you
+[15:29.56]  really won't have
+[15:31.08]  a lot of hope of improving upon the
+[15:33.04]  methodology if you don't understand
+[15:34.28]  what's there already. So, so I think I
+[15:36.80]  like mentioned earlier, one of the
+[15:38.60]  things that my team works on is is
+[15:41.36]  distillation.
+[15:42.76]  And in order to
+[15:45.40]  advance our
+[15:48.04]  understanding in uh distillation for
+[15:50.76]  large language models,
+[15:52.92]  you have to have a good understanding of
+[15:54.92]  like what we're trying to do with LLMs.
+[15:57.92]  And uh just to give a cursory overview
+[16:01.12]  here, the name of the game for LLM
+[16:04.52]  research is
+[16:06.92]  especially in pre-training is uh is
+[16:08.88]  scaling laws. And so,
+[16:11.24]  what are scaling laws? People focus a
+[16:13.12]  lot about like, you know, this power law
+[16:15.04]  structure and the fact that like you,
+[16:17.96]  you know, have this and that exponent,
+[16:19.52]  but like what matters is less so the
+[16:21.92]  functional form. What matters is
+[16:24.16]  for a given recipe of scaling up your
+[16:27.20]  LLM, so as you invest more and more
+[16:29.76]  flops into the pre-training run of an
+[16:31.48]  LLM,
+[16:32.88]  you have to be able to predict what the
+[16:35.24]  final test loss of this LLM is going to
+[16:39.16]  be. And why why do we care about this
+[16:41.72]  question? Why do we care about
+[16:42.72]  predicting what our uh generalization
+[16:44.88]  error is?
+[16:46.08]  In the classical machine learning world,
+[16:49.76]  like say we're trying to, you know, win
+[16:52.00]  ImageNet.
+[16:53.68]  We have our test loss, which is our
+[16:55.56]  classification uh error for, you know, a
+[16:58.40]  thousand different classes and uh you
+[17:00.92]  run your VGG or your ResNet proposal to
+[17:04.32]  get that uh classification error. That's
+[17:06.80]  an estimate of how well that model does
+[17:08.60]  at classifying
+[17:10.72]  amongst those thousand classes uh
+[17:13.08]  various different images.
+[17:15.12]  We can estimate how good our method's
+[17:16.76]  going to be by taking a validation set
+[17:19.12]  and then whenever we have an
+[17:20.20]  architecture idea for a neural net, we
+[17:21.88]  just train it and then we
+[17:24.32]  uh do a bunch of uh validation set runs
+[17:26.76]  and we get a cross-validation error that
+[17:28.56]  is itself an estimator of our final test
+[17:30.56]  error. And so in this way you can just
+[17:32.00]  iterate on different ideas
+[17:34.28]  uh through this process.
+[17:35.84]  But what's different in LLM world is
+[17:38.40]  every single time you go up for a
+[17:39.84]  pre-training run, you're about to put in
+[17:42.36]  more flops into this run than you've
+[17:43.92]  ever done before.
+[17:45.72]  So, it's in some sense like a one-shot
+[17:48.04]  version of this ImageNet problem. You
+[17:49.52]  never get to see the full ImageNet
+[17:51.80]  training data set. You have to practice
+[17:53.84]  on MNIST and then CIFAR and then maybe
+[17:55.92]  based off of those, you try to come up
+[17:58.20]  with a method that just works right off
+[17:59.76]  the bat on ImageNet. And if you were to
+[18:02.96]  just do that by itself, as I'm sure many
+[18:05.88]  people have tried, uh like certainly
+[18:07.56]  when I was learning how to do all of
+[18:08.88]  those different things, you get
+[18:10.20]  something, it works really great on
+[18:11.60]  MNIST, it maybe even works on CIFAR, and
+[18:13.88]  then all of a sudden it breaks on
+[18:15.00]  ImageNet.
+[18:16.40]  You'll find out that like things don't
+[18:18.56]  just generalize easily across scale like
+[18:20.40]  this. And
+[18:22.52]  so much of what we do for LLMs is coming
+[18:25.12]  up with recipes, where a recipe is this
+[18:28.40]  function that goes from number of flops
+[18:30.60]  you'd like to train on to a training
+[18:32.56]  routine for this LLM. And if you can
+[18:35.60]  couple this recipe with a prediction
+[18:38.08]  rule that can predict accurately what
+[18:40.40]  your LLM accuracy is going to be, then
+[18:43.24]  um you're able to make decisions about
+[18:45.92]  how to improve your recipe cuz you can
+[18:47.60]  use that prediction.
+[18:49.32]  That is all a ton of context on what uh
+[18:52.20]  LLM research looks like in general, but
+[18:54.96]  that's like a an understanding that we
+[18:57.00]  got to, that we even thought was
+[18:59.12]  feasible, thanks to so much uh
+[19:02.84]  initial LLM scaling work that we've seen
+[19:06.24]  across the Kaplan paper, across
+[19:09.00]  Chinchilla.
+[19:11.16]  Since those two papers, there's been a
+[19:13.72]  lot more work in terms of like what
+[19:15.64]  other factors are there beyond uh number
+[19:17.92]  of params and um
+[19:20.28]  number of tokens that you train on that
+[19:22.52]  influence your prediction accuracy.
+[19:25.12]  Uh like number of unique tokens for
+[19:26.64]  instance.
+[19:28.12]  But like I would say like those two
+[19:31.08]  foundational papers for LLMs, uh those
+[19:33.88]  are informed by uh an even even longer
+[19:36.48]  line of uh different uh scaling works
+[19:39.64]  going back to like say the original uh
+[19:42.20]  GPTs and then Google has had a ton of
+[19:44.48]  scaling work across its Palm papers.
+[19:47.36]  This is just a set of works that have
+[19:51.44]  informed that viewpoint that I described
+[19:53.40]  earlier that
+[19:55.84]  you you kind of just need to build up by
+[19:58.36]  having gone through that literature
+[20:00.20]  review yourself.
+[20:01.60]  >> If you were for instance, if uh
+[20:04.08]  you were trying to pick someone that was
+[20:05.76]  going on your team and the the way that
+[20:09.12]  you would judge their fitness to help
+[20:11.00]  you push the frontier is their
+[20:13.80]  understanding of the frontier including
+[20:16.12]  the existing literature which requires
+[20:18.56]  all these prerequisite. I think you
+[20:20.72]  called it mathematical maturity in your
+[20:22.76]  post.
+[20:23.84]  >> Yeah, so I think I I
+[20:26.52]  I think it's
+[20:28.52]  easy to read and understand those papers
+[20:30.56]  once you have mathematical maturity.
+[20:33.24]  So I guess the ones I mentioned in
+[20:35.96]  particular nowadays they're table
+[20:37.56]  stakes. So I I would expect candidates
+[20:39.44]  to be familiar with them. Um
+[20:42.84]  I think um
+[20:45.20]  the the general skill set is being able
+[20:47.80]  to dive in to
+[20:49.80]  uh a paper of that level and then
+[20:52.16]  understanding it.
+[20:54.28]  Uh
+[20:55.16]  you know being able to take a research
+[20:57.48]  idea uh from a paper and implementing it
+[21:01.32]  yourself. Like that's that's just a a
+[21:04.04]  very important skill set to be able to
+[21:05.52]  have. Like we get, you know,
+[21:08.40]  all sorts of uh uh different ideas
+[21:10.44]  presented, you know,
+[21:12.40]  they might not all directly apply to our
+[21:14.80]  domain, but if you can deeply understand
+[21:16.64]  them, then you can iterate on them, and
+[21:17.80]  you can improve them inside of
+[21:19.84]  uh inside of our domain. And so, when we
+[21:22.52]  assess for people who can work with the
+[21:26.40]  mathematical concepts in these machine
+[21:28.00]  learning papers, that's that's I guess
+[21:30.04]  the the key skill there that would be
+[21:32.24]  evidence that you can go pick up this
+[21:34.68]  arbitrary paper and see to what extent
+[21:37.96]  these ideas carry over uh in the Google
+[21:40.24]  setting.
+[21:41.40]  >> This probably won't be exhaustive, but
+[21:43.24]  I'd be curious to hear other domains
+[21:46.64]  that maybe people could dig into to see
+[21:49.80]  what kind of matters in frontier AI
+[21:51.68]  research. So, you'd mentioned
+[21:53.88]  distillation, you also mentioned
+[21:55.32]  kernels, it sounds like kernels are
+[21:56.56]  helpful everywhere. Um but are there
+[21:59.28]  other areas that come to mind if you
+[22:00.72]  were just raffle off areas that are not
+[22:02.92]  necessarily exhaustive?
+[22:05.12]  >> One thing that I think is is quite
+[22:07.56]  powerful is uh actually
+[22:10.48]  programming language research. So, by
+[22:13.44]  looking into how we can create
+[22:15.52]  abstractions at the programming language
+[22:17.24]  level, we could facilitate kernel
+[22:19.08]  development. I think ThunderKittens is a
+[22:21.36]  really good example of this. Like,
+[22:23.24]  coming up with an
+[22:24.56]  an abstraction that allows you to write
+[22:26.36]  kernels through four functions instead
+[22:28.40]  of arbitrary globs of C++ code uh
+[22:31.96]  allows you to move really quickly uh in
+[22:35.24]  uh developing algorithms that fully
+[22:37.68]  utilize hardware.
+[22:40.08]  So, like, it it at that point it it's um
+[22:44.36]  it's not about the PL research itself,
+[22:45.88]  it's about having a passion for,
+[22:49.36]  you know, these kind of programming
+[22:50.36]  language abstractions and and working
+[22:52.20]  with uh low-level hardware.
+[22:54.48]  Um you know, uh people who, you know,
+[22:57.88]  are interested in and will
+[23:00.04]  try to work with like cute DSL, the this
+[23:02.92]  kind of thing where there's a lot of
+[23:05.20]  hardware specific domain specific
+[23:07.40]  languages. Uh one other thing that comes
+[23:09.60]  to mind besides PL and uh scaling law
+[23:13.48]  literature would be reinforcement
+[23:15.80]  learning literature.
+[23:17.24]  Uh so in particular ever since uh RLHF,
+[23:21.28]  uh I think we've seen that
+[23:23.36]  deep RL algorithms uh like PPO do have a
+[23:27.16]  place in production systems and you
+[23:29.48]  know, there was a time where
+[23:31.44]  that was in question, but uh now it's
+[23:34.16]  you know,
+[23:35.24]  uh pretty unanimous that we see these
+[23:37.28]  kind of algorithms applied to real
+[23:39.36]  production systems and
+[23:42.24]  the uh theory behind that uh you kind of
+[23:46.40]  have to start with the basics for
+[23:48.80]  reinforcement learning and work their
+[23:50.80]  way up to
+[23:52.84]  you know, the myriad uh value-based
+[23:55.20]  methods and and uh policy gradient
+[23:57.36]  methods that we have today.
+[24:00.32]  That's that's another domain that I
+[24:01.92]  think is just like a very rich
+[24:03.12]  literature tree to crawl. Um and then
+[24:06.60]  for more of the back end engineer folks,
+[24:08.64]  just beyond just the kernels themselves,
+[24:11.92]  there's I think
+[24:13.64]  a pretty fun overlap between distributed
+[24:16.16]  systems and optimization work where uh
+[24:19.92]  figuring out how to design neural net
+[24:23.08]  training algorithms that allow for
+[24:26.20]  training across
+[24:28.24]  many GPUs.
+[24:31.08]  There's all sorts of fun challenges
+[24:34.08]  between asynchronicity, how up-to-date
+[24:37.04]  your gradients are,
+[24:38.88]  how
+[24:40.84]  pipelining affects the staleness,
+[24:43.44]  uh all of these system choices that you
+[24:45.36]  could make in your training algorithm
+[24:47.68]  design will impact convergence and the
+[24:49.64]  final quality of your neural net. And uh
+[24:52.00]  those are things that can be analyzed
+[24:53.36]  independently of the LLM setting
+[24:55.48]  uh and have been for a while. So,
+[24:58.92]  uh, you know, especially if you're kind
+[25:00.12]  of more infra-inclined, then having a
+[25:02.56]  good understanding of like,
+[25:04.68]  uh, how those different algorithms works
+[25:06.28]  work is a is a really good place to
+[25:07.84]  start.
+[25:09.20]  >> Do you see any difference between the
+[25:11.68]  the demands of the different frontier
+[25:13.60]  labs? So, for instance, if someone wants
+[25:15.32]  to work at DeepMind, is there like a
+[25:17.64]  particular area that you see DeepMind
+[25:20.76]  cares about more than Anthropic, for
+[25:22.88]  instance?
+[25:24.08]  >> I think in terms of the skill set, it's
+[25:25.80]  probably pretty similar. Yeah, I think I
+[25:28.20]  think there's maybe differences in like
+[25:31.96]  business strategy and, uh, you know, the
+[25:36.08]  set of offerings that's a function of,
+[25:40.00]  uh, the specialties of the labs and,
+[25:43.52]  uh, like the kind of different, uh, you
+[25:45.92]  know, customers that the labs could
+[25:47.04]  have. Uh, but
+[25:49.48]  uh, I would say that there's there's
+[25:51.76]  quite a lot of overlap between the labs
+[25:53.92]  in terms of what people look for. And
+[25:56.04]  like, yeah, like when I posted, uh, my
+[25:58.08]  post, you would you would see like, you
+[25:59.64]  know, people from both OpenAI and
+[26:01.64]  Anthropic saying like, yeah, like we
+[26:03.40]  agree with this advice. And so, you
+[26:05.04]  know, I think, um,
+[26:07.52]  that that's just a little bit of
+[26:08.72]  evidence towards that.
+[26:09.96]  >> I think one reason for the the huge
+[26:12.08]  demand for wanting to go closer to AI
+[26:14.56]  research is because people are thinking
+[26:17.36]  of software engineering is not going to
+[26:18.92]  be as important in the future. Is there
+[26:21.08]  a similar thought in when it comes to
+[26:23.72]  research where LLMs is also going to
+[26:26.28]  handle a lot of that work as well, so
+[26:28.68]  there's no reason to favor AI research
+[26:31.36]  versus software engineering?
+[26:33.04]  >> Um,
+[26:34.28]  so I think the the research skill set is
+[26:36.84]  going to become increasingly important.
+[26:39.92]  Uh, so I would say like being able to
+[26:42.84]  handle stochastic components in the
+[26:45.80]  planning of your work
+[26:47.76]  is is just going to be a larger and
+[26:50.96]  larger part of how we approach our jobs.
+[26:56.20]  Figuring out how to leverage AI in
+[26:58.96]  whatever thing you work on, which
+[27:01.28]  doesn't even have to be software
+[27:02.40]  related, is just an important muscle to
+[27:04.64]  start building right away.
+[27:06.76]  Um because these components aren't
+[27:08.64]  deterministic and thinking about how do
+[27:10.64]  I construct systems around these LLMs to
+[27:13.28]  do my job more effectively,
+[27:15.24]  uh that's that's going to be the thing
+[27:16.68]  that sets you apart in the future. And I
+[27:18.60]  think that's true no matter what you're
+[27:19.64]  going to be doing. Look, I think I think
+[27:21.92]  there's there's fud everywhere,
+[27:23.88]  especially with with some of the
+[27:25.76]  approach to marketing that some people
+[27:28.00]  have in terms of AI. It's fud that is
+[27:31.44]  being intentionally leveraged. And so, I
+[27:34.12]  I feel like
+[27:36.16]  people should really just focus on
+[27:37.76]  themselves and and trying to uh be more
+[27:40.60]  productive themselves.
+[27:42.32]  I I don't think that like AI is going to
+[27:45.88]  replace all of our roles. And so, the
+[27:48.16]  reason for that is that
+[27:51.24]  one of the important aspects of what we
+[27:54.32]  do as humans in an organization, which
+[27:56.88]  is really this web of trust,
+[28:00.76]  from like, you know, this organization
+[28:03.92]  that is, you know, this pool of
+[28:05.12]  resources and this pool of people that
+[28:06.96]  manages these resources.
+[28:09.12]  One of the important things that we do
+[28:11.16]  is we allocate those resources towards
+[28:13.44]  cer- certain goals.
+[28:15.04]  And um
+[28:17.76]  even when
+[28:19.20]  we can accelerate
+[28:21.08]  our execution,
+[28:23.00]  there's an element of making decisions
+[28:25.96]  around how we allocate these resources
+[28:28.12]  that will always be
+[28:30.48]  something that needs to be attributable
+[28:31.84]  to a human making that decision.
+[28:34.16]  And uh that's simply because
+[28:36.92]  you can't hand off blame to AI.
+[28:39.92]  So,
+[28:41.12]  we at this point have LLMs that really
+[28:44.08]  deeply understand law. And they could,
+[28:45.92]  you know, review your contract for you
+[28:47.36]  or something like that.
+[28:48.92]  But, they can't represent you in court
+[28:51.28]  because they can't be disbarred.
+[28:53.92]  And so, that's that's I think like a
+[28:56.16]  really, you know, sharp way that I might
+[28:58.68]  describe like, okay, this is why the
+[29:00.76]  legal profession will go on even though
+[29:03.88]  LLMs are really good at recalling
+[29:06.04]  precedent is
+[29:07.88]  you want to have someone who is
+[29:10.20]  responsible who can validate the output
+[29:12.52]  of AI to perform
+[29:16.44]  uh
+[29:17.00]  legal work more effectively for you
+[29:19.72]  rather than
+[29:21.24]  hand off
+[29:23.88]  your legal defense to an LLM.
+[29:26.00]  >> Yeah, I think the FUD, that was actually
+[29:28.60]  the original motivation for your post.
+[29:30.76]  >> Yeah, I mean, I I really think that the
+[29:33.20]  mindset that people should have is is a
+[29:35.52]  constructive one. And so, there was a
+[29:38.48]  tweet that I saw, I think by Didi, that
+[29:41.00]  was like some long-form, you know,
+[29:44.24]  fear-mongering about, you know, uh
+[29:47.16]  uh
+[29:48.04]  AI permanent underclass or something
+[29:50.04]  like that. And uh
+[29:51.96]  it's easy to get stuck in that loop, but
+[29:54.64]  I think the important thing to think
+[29:58.16]  about is like we all have agency over
+[30:01.56]  our future and we can start investing in
+[30:05.20]  uh skills that matter for tomorrow
+[30:08.36]  today. And
+[30:10.68]  um
+[30:11.40]  that's that's really
+[30:13.92]  the only thing you should be doing,
+[30:15.24]  right? Like, you know, worrying about it
+[30:16.72]  is not going to not going to help you.
+[30:18.44]  And so, part of why I wanted to write
+[30:20.48]  this post is is in response to that.
+[30:23.72]  Uh because it it it was something that I
+[30:26.08]  could see echoed, you know, I gave the a
+[30:29.44]  lecture at Princeton a while back and,
+[30:31.36]  you know, a big question that came up is
+[30:32.92]  like, you know, how do I work at
+[30:34.80]  DeepMind? And And it's something that
+[30:36.68]  like uh yeah, just when people find out
+[30:39.12]  what I do, that's the top question
+[30:40.48]  people ask. So, I figured it would be
+[30:42.72]  helpful to add a little bit more
+[30:45.08]  constructive
+[30:47.16]  you know, direction to the discourse
+[30:48.88]  here.
+[30:49.84]  >> One last thing on the post cuz, you
+[30:52.12]  know, if you think about getting a role,
+[30:54.24]  there's obviously the skills and we
+[30:56.56]  talked a lot about the skills and your
+[30:58.40]  fitness for the role, but there's also
+[31:00.44]  kind of the
+[31:02.00]  signaling for that role and like what is
+[31:04.60]  kind of valued if you were to be saying
+[31:07.24]  marketing yourself to one of these
+[31:09.00]  frontier labs, what signals
+[31:11.96]  matter most?
+[31:13.48]  >> Actual evidence that you've created
+[31:15.88]  something of uh
+[31:18.96]  of use to other people along the line of
+[31:21.92]  kernels, right? Like you can take any of
+[31:25.28]  the many open source LLMs that we have
+[31:27.88]  and optimize them. You don't have to
+[31:30.12]  make them better in every case. You
+[31:31.68]  could show that oh, I have an
+[31:32.80]  improvement for this and that setting.
+[31:35.16]  It doesn't even have to be something
+[31:36.68]  that speeds up the model on GPU. There's
+[31:39.44]  all sorts of open source stacks like
+[31:41.60]  vLLM. There's a lot of other
+[31:44.60]  things that you can do besides
+[31:46.48]  accelerating the LLM inference on
+[31:48.68]  device. The serving stack that surrounds
+[31:51.44]  LLMs is a very sophisticated distributed
+[31:54.36]  system that has to maintain
+[31:56.96]  this KB cache memory and deal with
+[32:01.16]  all sorts of like load balancing and
+[32:04.88]  request queuing and and very common
+[32:06.96]  problems for for back-end servers. And
+[32:10.48]  these projects are always looking for
+[32:11.60]  help. So, you know, contributions to
+[32:14.68]  vLLM or SG Lang
+[32:17.32]  or demonstrations with TensorRT.
+[32:20.64]  They have I think a
+[32:22.32]  a distributed system called Dynamo that
+[32:24.56]  allows for disaggregated serving
+[32:27.80]  where
+[32:29.04]  you could show that you you made a
+[32:30.40]  project using these components, you
+[32:32.20]  improved these components. Like that
+[32:34.64]  would be an extremely positive signal
+[32:37.16]  for any candidate that I'm looking at
+[32:39.64]  and and a very welcome contribution to
+[32:42.04]  open source.
+[32:43.88]  >> I think also a lot of what we said is
+[32:45.68]  kind of assuming the path of external
+[32:49.00]  hire into Frontier Lab.
+[32:51.88]  But a lot of these Frontier Labs have
+[32:55.08]  large organizations that aren't
+[32:56.52]  necessarily doing the cutting edge
+[32:58.60]  Frontier work. So let's say yeah, for
+[33:00.96]  instance, I mean, you know, Google
+[33:02.48]  DeepMind versus
+[33:04.88]  let's say there's some infrastructure
+[33:06.40]  eng that's working on search and they
+[33:09.08]  have the back-end skillset, maybe not as
+[33:11.04]  much domain context and they try to
+[33:13.80]  internal transfer to Google DeepMind.
+[33:16.32]  Does any of your advice differ in that
+[33:18.16]  kind of case for like an internal
+[33:19.56]  transfer versus
+[33:21.56]  someone who's coming from external?
+[33:23.68]  >> There's someone who I worked with
+[33:26.52]  closely on the search side
+[33:29.16]  who actually did transfer to my team
+[33:32.40]  Nate Lidzén and he's amazing and now he
+[33:34.56]  owns so much of
+[33:36.88]  like what we do on my team in terms of
+[33:40.44]  inference code design for
+[33:42.80]  like flash and flashlight and
+[33:46.00]  I would say like he's a really great
+[33:47.44]  example of this where
+[33:49.84]  his approach was, you know, how do I
+[33:52.80]  help my PA, my product area
+[33:57.36]  adopt this technology as effectively as
+[33:59.44]  possible. So I think there's, you know,
+[34:02.24]  definitely
+[34:03.76]  if you're
+[34:05.16]  in
+[34:06.72]  organization that isn't directly
+[34:08.96]  generating these models, but in some way
+[34:10.80]  trying to leverage them there's
+[34:13.88]  a very big gap in terms of applying
+[34:16.36]  these LLMs effectively, serving them
+[34:18.56]  effectively
+[34:20.64]  within
+[34:22.16]  your organization
+[34:24.36]  and becoming someone who does that
+[34:26.96]  really effectively not only creates a
+[34:29.40]  ton of value
+[34:31.12]  in terms of like
+[34:33.80]  the uh you know specific business need
+[34:36.60]  for your org which will definitely
+[34:38.08]  elevate you and your org
+[34:39.92]  but it'll also be the case that you're
+[34:42.36]  going to just naturally become the
+[34:44.28]  partner that we work with
+[34:46.16]  on the research side to make sure that
+[34:48.84]  our models are effective within your org
+[34:51.08]  and so at that point you know you may or
+[34:53.16]  may not want to transfer definitely if
+[34:56.04]  you transfer we you know be happy to
+[34:57.88]  work with you but like
+[35:00.32]  at that point I think you're you're
+[35:01.68]  you're already doing something that is
+[35:03.28]  cutting edge which is
+[35:04.96]  integrating this new technology into
+[35:08.00]  you know a real product that people use
+[35:09.76]  and so
+[35:11.80]  yeah that'd be my advice there.
+[35:13.80]  >> As it towards the end of this post as we
+[35:15.76]  as we leave this topic you had the
+[35:18.68]  concrete invitation cuz I know you were
+[35:21.08]  hiring
+[35:22.28]  do you want to say what that was?
+[35:23.80]  >> Yeah so I was just trying to think of
+[35:25.76]  like you know you know how do I put my
+[35:28.04]  money where my mouth is
+[35:30.00]  um
+[35:30.64]  how do I demonstrate look this is good
+[35:33.56]  way to show that you have you know at
+[35:36.60]  least some evidence of of like the the
+[35:38.60]  skills that I called out as important
+[35:40.32]  you know intent mathematical maturity
+[35:42.44]  grit
+[35:43.80]  and so I listed out a couple of
+[35:46.04]  exercises that demonstrate you know some
+[35:48.88]  initial knowledge of scaling laws some
+[35:51.00]  willingness to get into the weeds
+[35:53.08]  engineering wise in terms of
+[35:54.48]  implementing a real transformer
+[35:56.96]  and
+[35:58.20]  sort of willingness to pick up the kind
+[36:00.44]  of bread and butter bread and butter
+[36:01.76]  math that we use every day to size these
+[36:06.28]  LLMs
+[36:07.48]  and you know I won't I won't recall the
+[36:10.44]  full list of like the exercises that I
+[36:12.40]  expected here but like you know if if
+[36:14.80]  you do the detailed like handwritten
+[36:18.16]  version of the scaling book exercises
+[36:20.56]  and you know send me a video of yourself
+[36:22.20]  doing them along with the transformer
+[36:24.20]  exercise on my post
+[36:26.56]  then that's something if you can work in
+[36:28.44]  the uh New York office, I would love to,
+[36:31.32]  you know, interview you for. And quite a
+[36:34.32]  few people reached out to me about that.
+[36:36.28]  I actually already have had a couple
+[36:37.76]  submissions and we're proceeding with
+[36:39.88]  the loop with those people. So,
+[36:43.04]  yeah, it's it's quite a bit of work, but
+[36:45.28]  uh impressively, I got a response within
+[36:47.36]  like, I think,
+[36:48.72]  a week of posting. So,
+[36:51.84]  uh it's definitely doable.
+[36:54.60]  Uh
+[36:55.68]  yeah, I mean, I don't have unlimited
+[36:57.24]  head count, so I mean, the offer's on
+[36:59.28]  the table, but the, you know,
+[37:01.56]  I can only hire so many people. The good
+[37:03.96]  thing is, though, that is such a strong
+[37:05.96]  sign of,
+[37:07.84]  you know, self-development
+[37:09.60]  that uh
+[37:11.20]  not only is this a something that you
+[37:12.64]  should be doing for its own sake,
+[37:14.32]  regardless of whether or not you will
+[37:16.20]  get a job at at DeepMind specifically,
+[37:20.04]  but I think it'll be something that's,
+[37:22.08]  you know,
+[37:23.20]  lets you basically prepare for
+[37:25.56]  interviews in other places.
+[37:27.68]  Uh certainly, if you reach out to me
+[37:29.16]  with these uh exercises completed, like,
+[37:32.44]  even if, you know, I do all my hiring,
+[37:35.08]  there's tons of people who I know who
+[37:37.56]  are hiring as well, and I'd be happy to
+[37:39.44]  refer people as well.
+[37:41.60]  >> OpenAI, [snorts]
+[37:42.52]  Anthropic, Cursor, and Vercel all use
+[37:45.80]  this product to make their lives better.
+[37:48.04]  And the problem it solves is when you're
+[37:49.96]  building SaaS or an ad product, and you
+[37:52.60]  want to sell to other companies, there's
+[37:54.52]  all these requirements you need to meet.
+[37:56.60]  There's SSL, there's SCIM, there's RBA,
+[38:00.24]  there's audit logs. These are all things
+[38:02.04]  that take time to integrate, but aren't
+[38:04.20]  the main focus of your app. WorkOS is an
+[38:06.52]  API layer that lets you meet all of
+[38:08.20]  these requirements in just a few lines
+[38:10.36]  of code. So, let's say you have a new
+[38:12.44]  SaaS product, and you want to sell to
+[38:14.08]  other companies, WorkOS will solve all
+[38:16.56]  of these critical feature gaps for you.
+[38:19.32]  You can check them out at workos.com to
+[38:21.80]  learn more and get started. And I
+[38:23.96]  appreciate them for supporting my work
+[38:25.84]  and sponsoring this podcast.
+[38:27.84]  On the next [snorts] topic, I mean, uh I
+[38:29.80]  saw you're the the the area lead for
+[38:32.20]  pre-training on Gemini, and I just
+[38:34.84]  thought it might be interesting to hear
+[38:36.20]  you give um
+[38:37.84]  uh kind of like a high-level overview of
+[38:39.96]  what pre-training is or in your words,
+[38:42.04]  and maybe what are the the high-level
+[38:44.16]  challenges in the area. I mean, we can
+[38:46.00]  talk about that.
+[38:46.88]  >> Yeah, so
+[38:48.72]  there's there's quite a lot of work that
+[38:50.16]  we do in pre-training. Um as an area
+[38:53.56]  lead for it,
+[38:55.76]  the specific things that my team is
+[38:57.68]  responsible for delivering uh include uh
+[39:01.56]  the flash model, the flashlight model.
+[39:04.48]  These are models that get used for AI
+[39:06.20]  overviews and AI mode in the search bar,
+[39:09.12]  uh as well as some other uh 1P models
+[39:11.80]  that are used by different orgs like ads
+[39:14.40]  and YouTube.
+[39:16.20]  Besides this, we're also key technical
+[39:18.68]  POCs for the uh Google-Apple
+[39:21.48]  partnership, uh and so we do technical
+[39:23.56]  work there.
+[39:25.88]  Those are the actual
+[39:27.88]  like product-level deliverables
+[39:30.28]  uh from my team.
+[39:31.52]  Uh beyond that, we do research to make
+[39:35.64]  sure that these deliverables are
+[39:37.24]  state-of-the-art.
+[39:38.72]  And also, we do general pre-training re-
+[39:40.60]  research that contributes to the Pro
+[39:42.32]  Series model as well.
+[39:44.16]  And the nature of the research, I would
+[39:48.16]  say generally breaks down into three
+[39:49.84]  different verticals. There's
+[39:51.88]  distillation, which I mentioned earlier.
+[39:55.16]  There's what I like to call inference
+[39:57.20]  co-design. So, uh
+[39:59.60]  creating neural architectures that are
+[40:02.40]  efficient
+[40:03.92]  uh to run inference on. So, coming up
+[40:06.56]  with the network topology, the shapes of
+[40:10.32]  the matrices that the matmuls uh
+[40:14.32]  uh use uh inside of uh
+[40:16.92]  uh gating and linear layers for this
+[40:18.28]  Transformer as well as the attention
+[40:20.00]  shapes, num heads, that kind of thing.
+[40:22.92]  So, that that is effectively utilizing
+[40:24.88]  the hardware that you're serving on.
+[40:27.32]  And then, the final
+[40:29.52]  uh pillar here is new quantization
+[40:31.76]  methods. And so,
+[40:34.12]  quantization is just something that's uh
+[40:36.12]  been near and dear to my heart that I've
+[40:37.68]  been working on the research side for
+[40:39.84]  ever since I joined Google, and it
+[40:42.08]  really changes what's feasible for uh
+[40:47.44]  the first two. So,
+[40:49.60]  uh that's why,
+[40:51.08]  you know, furthering the state of the
+[40:52.48]  art in terms of how you can compress
+[40:54.44]  models is is also a very important
+[40:57.04]  pillar in the research that my team
+[40:58.88]  does. Generally, uh
+[41:01.16]  uh quantization uh refers to reducing,
+[41:05.28]  in some sense, the size that the neural
+[41:07.72]  nets take up uh in order to represent
+[41:10.40]  their weights. So, typically, a neural
+[41:13.40]  net, when you're training it, uh is
+[41:16.32]  represented as a
+[41:17.92]  uh series of numbers that make up the
+[41:19.60]  matrices inside of the neural net uh
+[41:21.88]  that are stored in FP32, 32-bit
+[41:24.92]  floating-point weights.
+[41:26.40]  Um it turns out that, when you do these
+[41:30.24]  computations, you don't need all of that
+[41:32.44]  extra precision to still maintain the
+[41:34.24]  quality of your neural net. And you can,
+[41:37.08]  with pretty simple methods, reduce the
+[41:40.20]  precision at which you store these
+[41:42.32]  weights down to 4-bits. So, uh all of a
+[41:45.92]  sudden, this huge range of numbers uh
+[41:49.64]  that we would take, you know, this float
+[41:51.88]  32 to represent, uh something that gets
+[41:54.40]  you down to like, you know, seven digits
+[41:56.76]  of precision,
+[41:58.28]  uh can,
+[42:00.12]  you know, with somewhat high fidelity,
+[42:02.76]  uh still be um
+[42:04.76]  represented well by
+[42:07.16]  4-bit ints, which, you know, just cover
+[42:09.08]  this uh tiny range of like minus eight
+[42:11.08]  to seven. And
+[42:13.52]  um
+[42:14.08]  it's it's kind of a miracle that you can
+[42:15.60]  do this.
+[42:17.24]  But what's even more of a miracle is
+[42:19.36]  that you can apply these kind of
+[42:21.68]  quantization transforms to the runtime
+[42:25.00]  activations that the neural net
+[42:26.28]  processes. And as soon as you do that,
+[42:29.40]  the actual math that you're performing,
+[42:31.52]  because you're taking much smaller
+[42:34.16]  operands to your matmul than what you
+[42:36.32]  were doing before,
+[42:37.88]  the amount of electricity that it takes
+[42:39.36]  to compute the neural net drops
+[42:41.32]  significantly.
+[42:42.56]  And what's interesting is that
+[42:44.92]  like 99% of the total cost of operation
+[42:48.12]  for
+[42:49.36]  AI hardware comes from the
+[42:53.20]  uh power that it takes to run these
+[42:54.56]  chips. And so, if you can do these
+[42:57.00]  operations, you could just make neural
+[42:58.96]  nets run more cheaply, run more
+[43:00.52]  efficiently.
+[43:02.56]  That helps
+[43:04.28]  uh
+[43:04.84]  uh in terms of like serving more
+[43:05.96]  requests, and it helps in terms of
+[43:07.72]  latency.
+[43:09.76]  So, the name of the game for quant
+[43:11.80]  research is how do we push the frontier
+[43:13.64]  beyond like this like four-bit range?
+[43:16.48]  >> There's this take that I see on Twitter
+[43:18.64]  all the time, um which is just talking
+[43:21.00]  about MFU, and someone who's not in the
+[43:23.08]  space, or model flops utilization.
+[43:26.08]  Someone who's not in the space, they see
+[43:27.52]  a number in the low 10s, and they think,
+[43:30.24]  "Wow, they're wasting all of those GPU
+[43:32.04]  resources."
+[43:33.48]  Um I was curious if you could just
+[43:36.16]  clarify that for people why a low MFU,
+[43:39.52]  or I guess naively low, is actually not
+[43:42.04]  low at all. And maybe also explain what
+[43:43.88]  MFU is.
+[43:44.76]  >> Yeah, so
+[43:46.60]  when we compute MFU, you want to divide
+[43:50.28]  the actual number of flops that the
+[43:52.60]  neural net is performing here by the
+[43:55.08]  total number of flops that the
+[43:56.56]  accelerator could have done in the time
+[43:58.64]  of your request. And so, in some sense,
+[44:01.64]  this is giving us the
+[44:04.20]  uh percent of time that we're usefully
+[44:07.36]  utilizing the flops rate of the
+[44:09.56]  accelerator. And to get to 100% MFU, you
+[44:13.40]  would just need be need to be fully
+[44:15.00]  utilizing uh the matmul unit of uh
+[44:17.92]  whatever accelerator uh you're doing
+[44:20.00]  here. So, it would just have to be doing
+[44:21.20]  like a bunch of matmuls in a loop
+[44:23.96]  uh without reading any memory or doing
+[44:25.92]  any other operations.
+[44:28.12]  That's not a very useful computation. Uh
+[44:30.92]  and in practice,
+[44:33.72]  neural nets have to apply activation
+[44:37.64]  functions or do attention or write
+[44:41.56]  intermediate outputs back to uh HBM. And
+[44:45.04]  all of those different operations
+[44:47.88]  will require utilizing the memory bus or
+[44:50.56]  utilizing vector processing units
+[44:53.28]  uh or simply they might be a
+[44:56.08]  mathematical operations that
+[44:59.20]  the underlying hardware performs more
+[45:02.00]  slowly than they uh than uh it might
+[45:05.16]  perform a matmul.
+[45:06.49]  >> [snorts]
+[45:06.52]  >> And so, all of those things contribute
+[45:08.48]  to not running at the full speed that
+[45:12.36]  the processor is rated at.
+[45:14.80]  Uh and so, that's why you might not see
+[45:16.44]  100% MFU all the time is cuz,
+[45:19.00]  you know, part of the time your neural
+[45:20.16]  net was, you know, reading and writing
+[45:21.68]  to memory or part of the time it was
+[45:24.08]  doing an operation that uh you know,
+[45:26.72]  fundamentally runs slower than certain
+[45:29.08]  other units on your
+[45:31.56]  on your device. And
+[45:34.40]  I think quite a bit of this inference
+[45:36.64]  co-design work that I talked about
+[45:38.12]  earlier is
+[45:39.76]  across all of the different
+[45:42.36]  um
+[45:43.32]  capabilities of the chip. So, uh
+[45:45.48]  communication to other chips,
+[45:47.96]  um memory bandwidth, the the speed at
+[45:49.68]  which we can read parameters from
+[45:51.40]  memory,
+[45:53.76]  flops, of course. Uh
+[45:55.84]  this can be matmul flops. This can be
+[45:58.52]  flops for processing uh
+[46:01.24]  vectors. So, like things like doing
+[46:02.88]  activations.
+[46:04.16]  Uh all of these have different rates in
+[46:06.52]  the hardware.
+[46:07.64]  And a given computation isn't going to
+[46:09.68]  match the natural hardware's rate
+[46:13.48]  uh of each of those operations. So, when
+[46:17.04]  you design a neural net, you want to be
+[46:19.60]  able to choose shapes for this neural
+[46:21.96]  net that fully saturate all of those
+[46:25.48]  hardware units to get you as high of an
+[46:27.36]  MFU as possible
+[46:29.24]  um when you are doing uh inference here.
+[46:32.60]  What makes this
+[46:34.56]  more than just an algebra problem is
+[46:37.00]  that those choices translate to
+[46:39.52]  different quality outcomes when you
+[46:41.24]  actually train this neural net.
+[46:43.44]  So, the process of this kind of
+[46:45.24]  inference co-design is how do we come up
+[46:49.24]  with neural architectures that
+[46:51.92]  scale predictably
+[46:54.16]  have a good prediction, so are high
+[46:55.80]  quality
+[46:57.04]  and still
+[46:58.64]  make the MFU as large as possible during
+[47:00.56]  inference. And so, this kind of joint
+[47:02.88]  optimization is what makes inference
+[47:05.08]  co-design really fun.
+[47:07.00]  Uh and also this kind of evergreen
+[47:08.36]  problem because as the hardware changes
+[47:11.44]  all of those relative constants of flops
+[47:14.16]  to memory bandwidth to communication
+[47:16.44]  bandwidth change and those will have
+[47:18.44]  different implications to what's the
+[47:21.00]  optimal neural net shape should be.
+[47:23.20]  >> On another topic
+[47:25.24]  Google has this idea of a spot bonus
+[47:27.80]  where someone can kind of give you uh a
+[47:30.24]  one-off
+[47:31.72]  lump sum of money as a thank you for
+[47:34.40]  like good performance. And I I saw on
+[47:36.72]  your resume that Jeff Dean, the legend
+[47:39.28]  himself, gave you a spot bonus. And you
+[47:41.72]  know, if you can tell that story, I'd
+[47:43.00]  love to hear why did he give you a spot
+[47:44.96]  bonus?
+[47:46.08]  >> Yeah, so that one actually was at the
+[47:48.20]  very beginning of the Gemini program.
+[47:53.16]  Uh he gave out a spot bonus to people
+[47:54.88]  who
+[47:55.92]  hopped on and launched the first version
+[47:58.44]  of Bard. And like I had a you know a
+[48:01.48]  very small contribution to a very very
+[48:03.44]  large project at the time.
+[48:05.76]  Uh I helped with uh SFT for
+[48:08.44]  uh one of the first versions uh of
+[48:11.32]  uh supervised fine-tuning for one of the
+[48:12.88]  first versions of uh
+[48:14.64]  Bard that got released like right, you
+[48:16.80]  know.
+[48:17.80]  The biggest lesson
+[48:19.76]  out of
+[48:20.76]  uh that experience was
+[48:23.08]  you know, at that time
+[48:25.44]  I was just doing like pure research in
+[48:28.68]  um uh Google Brain.
+[48:30.48]  And I was super focused on just how do I
+[48:33.52]  maximize the number of first author
+[48:35.04]  papers at uh NeurIPS, ICML, ICLR. And
+[48:41.28]  I remember distinctly thinking like I I
+[48:44.20]  had this instinct of like oh like, you
+[48:47.08]  know, should I just keep my head down
+[48:48.92]  and try to write more papers? And
+[48:51.32]  Luckily at the time uh my my manager
+[48:54.68]  Rohan Aneja, like he really encouraged
+[48:56.96]  all of us to get involved in
+[49:00.20]  uh you know, this space.
+[49:02.28]  And
+[49:03.96]  that was just the right motivation that
+[49:06.36]  I needed to like roll up sleeves, do a
+[49:09.08]  bunch of hyperparameter tuning and
+[49:11.48]  engineering work to get uh this uh model
+[49:15.00]  running on uh uh some like really old
+[49:18.36]  TPUs to get some extra you know, cycles
+[49:21.72]  in for for
+[49:23.24]  uh SFT attempts.
+[49:25.40]  That very small initial engagement that
+[49:27.88]  was recognized by Jeff Dean, I I think
+[49:30.40]  blossomed into more and more investments
+[49:33.48]  on the LLM side by me and
+[49:36.16]  ultimately led me to where I am today.
+[49:39.40]  Uh so
+[49:40.60]  yeah, I would say
+[49:42.04]  you know, it it's less so about you
+[49:44.20]  know, [snorts]
+[49:45.04]  you know, how much that like SFT helped
+[49:47.40]  the initial release and it's much more
+[49:48.96]  about uh
+[49:50.48]  uh recognizing that like
+[49:53.52]  there's there's quite a bit of work,
+[49:55.44]  some of it not glamorous, some of it
+[49:56.92]  just like, you know, hyperparameter
+[49:58.20]  tuning and,
+[49:59.68]  uh, golfing the XLA compiler to make
+[50:02.68]  your program fit in a certain memory
+[50:04.60]  amount
+[50:05.88]  that contributes to a wider business
+[50:07.76]  goal that
+[50:08.92]  is is really quite important for
+[50:11.56]  getting involved in in very high-value
+[50:13.80]  projects.
+[50:14.96]  >> You've been working on Gemini for a
+[50:16.44]  while now, and because it's a top
+[50:18.08]  priority, there has to be some, you
+[50:21.00]  know, incidents or war stories that
+[50:23.12]  you've been involved in. So, I'm
+[50:24.80]  curious, you know, what's your favorite,
+[50:27.68]  uh, war story when working on Gemini?
+[50:30.80]  >> So, I think my all-time favorite
+[50:33.56]  would have to be
+[50:36.96]  Flash 2.0.
+[50:39.52]  Uh, so this one this one was quite a
+[50:42.36]  challenge and a very long journey to get
+[50:44.36]  there.
+[50:45.80]  But,
+[50:47.28]  uh, one of the
+[50:49.04]  main things that we were optimizing for,
+[50:51.92]  which which Flash 1.5 established, is
+[50:54.36]  this category of very fast, low-latency
+[50:57.60]  model
+[50:59.08]  that's still
+[51:00.40]  quite good. Um, and, you know,
+[51:04.04]  in particular, it has to be fast because
+[51:06.44]  it's it's used by search to serve,
+[51:09.04]  uh,
+[51:09.72]  responses in in AI mode, uh, very
+[51:11.96]  quickly.
+[51:14.16]  Because of that,
+[51:16.24]  uh, for Flash 1.5 and before, we we
+[51:18.48]  focused on dense models, which, uh,
+[51:21.24]  allow you to respond very quickly.
+[51:25.16]  Even though at the time we we knew about
+[51:26.68]  MoE models and how they increase
+[51:28.12]  capacity.
+[51:29.44]  And so, I think, um,
+[51:32.40]  one thing that like came up was, okay,
+[51:35.72]  like
+[51:37.04]  we sure would like to use this new
+[51:38.44]  architecture, but it it's difficult to
+[51:41.36]  just simply switch to an MoE because
+[51:44.08]  what happens with an MoE is it it uses a
+[51:45.88]  lot more parameters in general
+[51:48.40]  and because it uses more parameters, it
+[51:50.16]  takes up more HBM.
+[51:52.68]  These chips that we serve on have a
+[51:54.68]  finite amount of HBM, so you have to
+[51:56.56]  shard the MOE across
+[51:59.76]  multiple different chips. So, if you
+[52:01.52]  have, you know, whatever NX birds then
+[52:04.56]  you might chart it across N chips or,
+[52:06.40]  you know, some factor of N.
+[52:08.64]  And what this causes is a lot of
+[52:11.80]  communication in the middle of the
+[52:13.80]  model. When you have a token that needs
+[52:17.16]  to be routed to an expert and that token
+[52:19.84]  might live on the first TPU, but it
+[52:21.36]  needs to go to the last TPU, that's a
+[52:23.36]  lot of communication that you're
+[52:24.60]  inducing in the forward pass. So, the
+[52:27.56]  latency of this operation
+[52:31.48]  like increases dramatically with N.
+[52:35.04]  And
+[52:36.16]  you know, the challenge with MOEs is
+[52:37.44]  they increase N. So,
+[52:39.68]  that that that like kind of really
+[52:41.76]  bottleneck this approach.
+[52:44.68]  And one interesting thing that happened
+[52:47.44]  was we we definitely knew about pipeline
+[52:51.60]  serving for a while.
+[52:53.96]  It's just in the dense case
+[52:55.96]  it never really ended up mattering. Like
+[52:58.08]  I distinctly remember a very early
+[52:59.76]  conversation I had with Sholto about it
+[53:01.64]  and Sholto's like, "Oh yeah, you're like
+[53:03.64]  so flop bound and so pipelining is just
+[53:06.20]  not going to change your prefill
+[53:07.12]  profile." And then he was right. I
+[53:08.68]  tested it out and like then abandoned
+[53:10.36]  the idea.
+[53:12.20]  But what's interesting is
+[53:15.48]  I I had a very small team at the time
+[53:17.28]  and and one of my reports, Gangyan,
+[53:20.48]  had a very nice idea. He was working
+[53:22.24]  with Rahul Arya and a couple folks from
+[53:25.16]  the Israel team at Google.
+[53:27.16]  And that was to apply pipeline prefill
+[53:29.24]  to MOEs.
+[53:31.44]  And pipelining is
+[53:35.04]  a technique where instead of
+[53:36.76]  parallelizing
+[53:38.28]  those N machines experts across those N
+[53:40.64]  machines, you parallel layers across
+[53:43.68]  those end machines. So, instead of on a
+[53:46.64]  particular layer, you have to route
+[53:48.24]  tokens from machine to machine, now one
+[53:51.24]  layer does the computation for one
+[53:53.92]  subset of your pre-fill request, and
+[53:56.32]  then hands off the processed tokens to
+[53:59.72]  the next machine to process the second
+[54:01.88]  layer, and then the third layer, and the
+[54:03.12]  fourth layer.
+[54:04.28]  And
+[54:06.12]  all of the experts can then stay
+[54:08.00]  resident to a single machine or a
+[54:09.56]  smaller set of machines. So,
+[54:12.64]  what this does effectively is it changes
+[54:15.64]  the communication pattern from something
+[54:17.72]  that required a lot of token exchange on
+[54:20.96]  every single layer to
+[54:23.68]  something that's
+[54:25.68]  actually can be hidden behind other
+[54:28.16]  computation because you can do this
+[54:31.16]  pipeline pre-fill across different parts
+[54:33.32]  of your request.
+[54:35.00]  So,
+[54:36.16]  while layer two is working on the
+[54:38.84]  first thousand tokens of your request,
+[54:41.44]  layer one on the first chip is
+[54:43.88]  processing
+[54:45.24]  the second thousand tokens of your
+[54:46.80]  request. So, it was a way of
+[54:50.48]  breaking this HBM constraint by moving
+[54:53.92]  layers across the machines rather than
+[54:55.84]  moving experts across these machines.
+[54:58.04]  And because of that, the communication
+[55:00.40]  overhead has gone down, and all of a
+[55:02.52]  sudden, MoE latency looks really
+[55:04.80]  attractive now. This, you know, the the
+[55:07.76]  Gemini 2.0 report says like it's an MoE
+[55:10.60]  series of models, and the thing that
+[55:12.80]  made that possible is, you know, or one
+[55:14.68]  of the things that made that possible is
+[55:16.12]  is this
+[55:18.08]  you know, serving time innovation.
+[55:21.44]  Dwarak and Reiner have an amazing post
+[55:23.44]  about exactly this
+[55:26.40]  optimization that you can write up in
+[55:29.20]  the algebra of the scaling book. And
+[55:31.08]  it's just a wonderful example of how
+[55:33.92]  this kind of
+[55:35.88]  change can
+[55:38.04]  uh have really dramatic implications on
+[55:40.48]  LLM quality. What really made Flash 2.0
+[55:43.44]  rewarding is
+[55:45.16]  this, you know, giant MoE decision. It
+[55:48.16]  sounds like a small technical decision
+[55:49.80]  at the time, but
+[55:51.20]  people were really worried about whether
+[55:53.24]  or not the latency of this MoE would
+[55:55.88]  actually be reasonable. Luckily,
+[55:58.56]  I was able to run like a very
+[55:59.92]  transparent technical process to get to
+[56:01.96]  the bottom of this. And by the end of
+[56:04.24]  it, uh uh uh you know, we we made the
+[56:06.84]  right call, uh but then we had to train
+[56:08.72]  it. So,
+[56:10.92]  this was a bigger model than we've ever
+[56:14.20]  trained before at the flash scale, and
+[56:16.80]  like we knew this would be the right
+[56:18.12]  call, but it was just going to be 40
+[56:20.32]  days of grueling work for like a really,
+[56:22.80]  really small team. Like we probably had
+[56:24.48]  like five people on the rotation for
+[56:28.04]  training this model. I remember, you
+[56:30.56]  know, all of us just kind of like
+[56:32.64]  rotated day by day, handing off like,
+[56:36.00]  you know,
+[56:37.32]  all of this like SRE style work of uh
+[56:40.92]  keeping the training job alive, which at
+[56:43.00]  the time was was
+[56:44.96]  a very interactive thing cuz uh you had
+[56:47.64]  to make sure that everything was moving
+[56:49.16]  stably, that, you know, you have tuned
+[56:51.28]  data iterators that aren't slowing down
+[56:53.76]  your job, that, you know, if there's
+[56:56.36]  like a gap in the data somewhere or an
+[56:58.88]  indexing issue, you have to like really
+[57:01.00]  quickly put up a fix because it's, you
+[57:03.00]  know, wasting all of this GPU time. Um
+[57:05.72]  >> What about at night time and on the
+[57:07.32]  weekends?
+[57:08.28]  >> So, yeah, like I think, you know, for
+[57:10.64]  those 40 days, we did not do a lot of
+[57:12.68]  sleeping. Like we had to
+[57:15.16]  like do like kind of these dual shifts
+[57:17.68]  across like the Paris office and
+[57:19.40]  Mountain View, and like the thing that
+[57:22.64]  makes it so rewarding was when this
+[57:25.44]  model came out, like around the same
+[57:27.68]  time, uh DeepSeek V3 came out. And uh
+[57:32.12]  the Wall Street Journal put out this
+[57:33.64]  article that was like this giant red
+[57:35.52]  scare article about how China's going to
+[57:37.28]  take over AI with open source models and
+[57:41.36]  I remember my friend sent me a
+[57:42.76]  screenshot of this table of the LMSYS
+[57:46.52]  Arena leaderboard. And you know, all the
+[57:49.40]  way at the top right you've got
+[57:52.48]  chat GPT and
+[57:54.80]  and DeepSeek right behind it. And like,
+[57:57.20]  oh, DeepSeek was trained for whatever
+[57:59.92]  few million dollars, you know, and and
+[58:01.88]  like they're right there.
+[58:03.44]  And then my friend was like, oh, like
+[58:06.60]  you know, Gemini is so behind cuz they
+[58:08.80]  had, you know, a version of like I think
+[58:10.68]  1.5 Pro or something in that table at
+[58:13.24]  the very bottom.
+[58:14.92]  And then I looked at it and was like,
+[58:16.00]  oh, that's really interesting. I was
+[58:17.36]  just looking at this leaderboard cuz we
+[58:20.36]  just released a model and it definitely
+[58:23.44]  doesn't look like that when you go to
+[58:24.96]  the website. So, turns out there was
+[58:28.32]  kind of some ill-written rows on the
+[58:31.92]  Wall Street Journal article. And so now
+[58:35.04]  if you go to that article today, you can
+[58:37.28]  see, you know, what at the time was the
+[58:40.56]  state of the art model
+[58:42.92]  you know, Flash 2.0 thinking
+[58:45.72]  up in the top right corner way far ahead
+[58:47.96]  of DeepSeek V3.
+[58:50.44]  Might be messing with the open source
+[58:52.24]  narrative that they were trying to
+[58:53.36]  publish there, but it was a really
+[58:55.56]  important accomplishment for for the
+[58:57.80]  team.
+[58:59.36]  >> Last question for you is if you could go
+[59:01.76]  back to yourself when you just graduated
+[59:04.84]  college, I guess undergrad, and give
+[59:07.08]  yourself some advice knowing what you
+[59:08.64]  know now, what would you say?
+[59:12.00]  >> You you got to chase the problems that
+[59:16.60]  people are facing
+[59:18.60]  like
+[59:19.64]  in the world today. Like like go after
+[59:23.12]  the challenges that people see in
+[59:25.64]  everyday life and don't be afraid to
+[59:31.56]  tackle a smaller part of this problem or
+[59:34.12]  maybe a more menial sounding part of
+[59:36.04]  this problem, even if it's not fancy
+[59:38.32]  research math or something like that.
+[59:40.12]  Like, trust that by working on what's
+[59:43.24]  important, even if it's a smaller part
+[59:46.16]  of a larger project for what's
+[59:47.40]  important, you're going to get to see
+[59:50.04]  what really matters in terms of moving
+[59:52.36]  the frontier forward.
+[59:53.96]  And it's it's this kind of, I guess,
+[59:58.28]  humility maybe in your
+[60:00.72]  problem approach that that you should
+[60:03.32]  really be chasing.
+[60:05.00]  Um that's one piece of advice. I think
+[60:07.68]  the other bit that I would give, like
+[60:10.20]  maybe as professional advice, perhaps,
+[60:13.92]  would be
+[60:16.36]  be the kind of co-worker
+[60:19.20]  that
+[60:20.72]  people would want to see succeed.
+[60:24.84]  Uh and so, like what I mean by that is
+[60:28.12]  there's this this like conception of
+[60:30.32]  like
+[60:31.32]  workplace psychopath or Machiavellian
+[60:33.68]  leaders or or whatever, people who like
+[60:36.76]  will do anything at all costs to get the
+[60:39.24]  results they want. And they they they
+[60:41.04]  they might be able to squeeze people to
+[60:42.88]  get some short-term gain.
+[60:44.84]  But,
+[60:46.56]  you know, having interacted with a
+[60:48.36]  variety of people professionally for so
+[60:51.00]  long,
+[60:52.64]  what is interesting to me is there have
+[60:55.16]  been
+[60:56.52]  a select few,
+[60:58.96]  you know, one in particular is is
+[61:00.88]  probably a very dear friend and and
+[61:04.04]  mentor of mine, Todd Lipkin, who first
+[61:06.16]  got me into computer science.
+[61:08.12]  Um
+[61:09.20]  that are just so
+[61:12.96]  like kind and
+[61:16.52]  like people that you can learn from
+[61:19.52]  and uh
+[61:21.20]  you know, someone that I can
+[61:24.52]  follow and be successful by following.
+[61:28.20]  That just genuinely inspire me to want
+[61:31.40]  to help them succeed. Uh, and so in
+[61:35.08]  particular, if you
+[61:37.76]  are the kind of person who
+[61:40.20]  helps people succeed in their projects,
+[61:43.20]  comes up with projects that can leverage
+[61:46.00]  other people's complementary skills in
+[61:48.92]  ways that help them shine,
+[61:50.88]  people will notice that. People will
+[61:52.36]  want to contribute to
+[61:55.40]  projects that you come up with in the
+[61:56.76]  future
+[61:57.96]  and in general will want to support you
+[62:00.48]  going forward.
+[62:01.80]  And so, you know,
+[62:03.96]  you people can get really cynical
+[62:05.84]  thinking about the game theory of how to
+[62:07.88]  interact at work.
+[62:09.44]  Uh, but I found that this kind of more
+[62:13.60]  amicable approach
+[62:16.08]  generally like it it creates like this
+[62:19.20]  this deep sense of collaboration and
+[62:23.60]  you know, willingness to help that like
+[62:26.68]  is so important to get very large
+[62:28.72]  projects that require multiple people
+[62:30.60]  and multiple skill sets
+[62:32.72]  uh, over the line.
+[62:34.56]  And so,
+[62:36.00]  yeah, I think if if I could give any
+[62:38.04]  kind of like inner you know,
+[62:39.32]  interpersonal feedback or professional
+[62:41.24]  feedback or whatever to
+[62:43.76]  earlier version of myself, it's it's to
+[62:45.80]  be that guy. It's to to be the kind of
+[62:47.64]  person that other people want to see
+[62:50.16]  succeed.
+[62:51.24]  >> I love that this advice combats the
+[62:54.12]  cynical advice. And I also love that
+[62:56.48]  your original post combats the doomer,
+[63:00.00]  you know, permanent underclass stuff.
+[63:01.60]  So, um, yeah, thank you so much for your
+[63:04.00]  time. It's a lot of fun. Really
+[63:05.12]  appreciate it.
+[63:05.80]  >> Thanks for having me, Ryan.
+[63:07.48]  >> Hey, thank you for watching this
+[63:08.48]  podcast. If you liked it and you want to
+[63:10.16]  see the show grow, please support with a
+[63:12.32]  comment or a like.
+[63:14.32]  Also, if you Do you any recommendations
+[63:16.16]  for people you want me to bring on?
+[63:18.16]  Please drop a comment. Guests like
+[63:20.36]  Barbara Liskov, Mike Stonebreaker, Mark
+[63:23.08]  Brooker, these were all people that I
+[63:25.12]  brought on because someone left a
+[63:26.96]  comment. On another note, aside from the
+[63:29.20]  podcast, I'm working on building the
+[63:31.00]  ergonomic keyboard that I wish existed.
+[63:33.48]  Here's a glance at the prototype. It's a
+[63:35.36]  split keyboard, so there's two sides. Um
+[63:38.36]  this is in the case. But yeah, we
+[63:39.84]  launched on Kickstarter and we hit our
+[63:41.64]  goal within 8 hours of launching. I
+[63:43.72]  really appreciate it if you were one of
+[63:45.08]  the people who grabbed one of the early
+[63:46.84]  units.
+[63:47.96]  Um we're now working on the long journey
+[63:49.64]  of building the tooling now. And so, if
+[63:51.52]  you still want to pick one up, I've left
+[63:53.56]  the late pledges open on Kickstarter, so
+[63:56.20]  you can grab one there. I'll put a link
+[63:57.80]  in the description. Thank you again for
+[64:00.32]  watching the podcast, and I'll see you
+[64:02.44]  in the next episode.

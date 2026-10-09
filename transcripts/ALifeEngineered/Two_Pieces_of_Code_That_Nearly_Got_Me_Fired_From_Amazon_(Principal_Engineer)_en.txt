@@ -1,0 +1,384 @@
+Title     : Two Pieces of Code That Nearly Got Me Fired From Amazon (Principal Engineer)
+Video ID  : IwFYaDuiqsk
+URL       : https://www.youtube.com/watch?v=IwFYaDuiqsk
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 375
+Saved at  : 2026-10-08 11:00:13
+------------------------------------------------------------
+
+[00:00.12]  Network looks like they are experiencing
+[00:02.20]  some sort of problem right now and it's
+[00:04.04]  all connected to a widespread Microsoft
+[00:06.56]  outage and the big question during this
+[00:08.44]  global technology outage is how could
+[00:10.96]  everything have gone so wrong I broke
+[00:13.44]  Amazon twice while I worked there in
+[00:15.56]  this video I'll go into depth about how
+[00:17.56]  I did it how we fixed it what My
+[00:20.04]  Punishment was and how you can avoid
+[00:22.56]  doing the same if you're new to the
+[00:24.00]  channel welcome my name is Steve Winn I
+[00:26.36]  just quit my job at Amazon as a
+[00:28.44]  principal engineer where I spent nearly
+[00:30.40]  20 years to make content full-time if
+[00:32.84]  you'd like more from me sign up to my
+[00:34.56]  free Weekly Newsletter or if you'd like
+[00:36.92]  to chat join my Discord of nearly 8,000
+[00:39.76]  ambitious Tech professionals links for
+[00:41.68]  both are in the description when I say I
+[00:43.96]  broke Amazon I'm talking about causing a
+[00:46.16]  sub one or a severity One issues in
+[00:48.88]  tickets at Amazon are broken down into
+[00:51.24]  five severities with the SE five being
+[00:53.68]  the least severe a s four being an issue
+[00:56.28]  that is personally blocking a s three
+[00:58.68]  being team blocking SE 2 which is
+[01:01.48]  something that's urgent enough that
+[01:03.00]  someone needs to be page and answer that
+[01:04.76]  call within 15 minutes and a SE one
+[01:07.36]  being a company impacting large scale
+[01:09.88]  issue where many teams are paged in and
+[01:12.32]  a companywide conference call is
+[01:14.04]  initiated you don't want to cause s ones
+[01:16.64]  because they're messy high visibility
+[01:19.16]  and require extra paperwork like a
+[01:21.36]  formal postmortem to explain yourself
+[01:23.80]  and what happened called the correction
+[01:25.72]  of error or Coe Coes are a great
+[01:28.92]  mechanism but they're they're very
+[01:30.36]  uncomfortable to deal with when it's
+[01:32.04]  clear that you're the root cause I
+[01:34.52]  caused two of them here's how I broke
+[01:36.64]  Amazon twice while I work
+[01:41.72]  there I came into the office and before
+[01:44.36]  I could put my stuff down my pager went
+[01:46.40]  off our video encoding workflows were
+[01:48.44]  failing at the time I was working in
+[01:50.76]  unbox video the precursor to Prime video
+[01:53.52]  on the video ingestion team the system
+[01:56.08]  was pretty simple video Partners would
+[01:58.56]  deliver movies and TV shows to us as
+[02:00.72]  High Fidelity files that we needed to
+[02:02.60]  re-encode to Target codex optimize for
+[02:05.40]  size and quality that sort of thing if
+[02:07.88]  we needed a different encoding we would
+[02:09.48]  just write a different workflow that
+[02:10.84]  took the source video we saved to create
+[02:12.72]  a different Target artifact these
+[02:14.76]  workflows were touchy and when they
+[02:16.68]  failed the standard procedure was to
+[02:18.80]  just restart them the problem was that
+[02:21.00]  nearly every workflow was failing when
+[02:23.88]  we dug into the workflow errors we
+[02:25.72]  discovered that the video files didn't
+[02:27.28]  exist in the bucket where we stored all
+[02:29.04]  of our source video files when we dug
+[02:31.20]  deeper we discovered that the number of
+[02:32.92]  files in the bucket was decreasing
+[02:34.88]  rapidly thousands upon thousands of our
+[02:37.04]  video files were just getting deleted
+[02:39.32]  hey S3 all of our files are getting
+[02:41.04]  deleted right now they're really
+[02:42.76]  important to us like really important
+[02:44.80]  have you considered not deleting them we
+[02:46.60]  don't know who's deleting them it might
+[02:48.36]  be us but we're not sure well that's
+[02:50.36]  definitely a problem that you should
+[02:51.68]  solve look can you help us track down
+[02:53.72]  which hosts are sending the delete
+[02:55.04]  requests oh yeah totally possible
+[03:00.40]  so will you do that for us oh you want
+[03:02.96]  me to actually do it you should have
+[03:04.76]  said so why would I ask you if
+[03:06.08]  something's possible unless I wanted you
+[03:07.64]  to do it hey man I just answer the
+[03:09.60]  questions that you
+[03:11.92]  ask okay found your culprit adding it to
+[03:14.72]  the ticket
+[03:16.00]  now oh those are my hosts we were
+[03:19.68]  freaking out because getting all of
+[03:21.16]  those files redelivered was going to
+[03:22.60]  take us at least a year we'd have to get
+[03:24.80]  in touch with all of our partners and
+[03:26.24]  they were going to be super mad at us
+[03:28.16]  they might even sue us and it was my
+[03:31.00]  [Applause]
+[03:34.52]  fault when video production houses sent
+[03:37.20]  a video file to us we immediately
+[03:39.56]  uploaded the video file into S3 an
+[03:41.96]  Amazon web service that allows you to
+[03:43.56]  store objects there's no file system as
+[03:46.04]  such you have buckets and objects I
+[03:48.96]  wrote the code that scanned the file
+[03:50.36]  dump where the studios delivered their
+[03:52.00]  Source video files it was a really
+[03:54.36]  simple system after a file was delivered
+[03:57.00]  the code would upload it into S3 verify
+[03:59.96]  that the upload was successful and add a
+[04:02.04]  row into a database then delete the
+[04:04.08]  local file simple except for one big
+[04:07.40]  case today S3 supports files up to 5
+[04:10.32]  terabytes with multi-part uploading
+[04:12.32]  capabilities but before 2010 when this
+[04:15.04]  event occurred S3 only supported file
+[04:17.56]  sizes up to 5 GB this was an issue
+[04:20.40]  because these big source files were
+[04:21.92]  often larger than 5 gbt they were high
+[04:24.32]  quality renders of movies and TV shows
+[04:26.56]  straight from the studios not a problem
+[04:28.96]  to get around this we chunk the video
+[04:30.72]  files and uploaded them into smaller
+[04:32.40]  parts the steps in the chunking logic
+[04:34.68]  were one delete any prior chunks in case
+[04:37.96]  this was a redelivery of a file two
+[04:40.68]  separate the file into parts locally
+[04:43.12]  three upload those parts to S3 now
+[04:46.12]  here's the bug the software our partners
+[04:48.24]  used to upload to the file dump created
+[04:50.32]  a temporary file that was prefixed by a
+[04:52.60]  hash symbol sometimes called a number
+[04:54.72]  sign pound sign crosshatch or octo Thorp
+[04:58.40]  once the file transfer was complete and
+[05:00.20]  verified it would rename the file to
+[05:02.64]  signify that the transfer was successful
+[05:05.00]  but me I didn't know that I instead used
+[05:07.48]  a heuristic I would monitor files in the
+[05:09.96]  file dump and look at their sizes over
+[05:12.24]  time if the file size stayed the same
+[05:14.56]  for some amount of time I would assume
+[05:16.72]  that the transfer was complete on that
+[05:18.68]  fine day a partner unsuccessfully
+[05:20.72]  transferred a large file so the file
+[05:22.92]  name started with that hash symbol
+[05:25.24]  because it was a large file it triggered
+[05:27.12]  the chunking logic remember the firstep
+[05:29.84]  of the chunking logic is to delete any
+[05:31.88]  prior chunks Amazon S3 is a web service
+[05:34.96]  which means you interact with it using
+[05:36.64]  HTTP request to delete you send a delete
+[05:39.68]  request indicate the bucket and give it
+[05:41.72]  a prefix and it deletes everything with
+[05:44.08]  that prefix well the issue is that the
+[05:46.52]  hash symbol is a special character for
+[05:48.56]  URL strings in the context of an AWS
+[05:51.56]  request it basically gets ignored
+[05:54.48]  because I didn't properly escape the
+[05:56.12]  character the prefix I provided was
+[05:58.40]  Slash which meant that I was deleting
+[06:00.60]  everything in the source video bucket
+[06:02.96]  think about it like issuing the command
+[06:05.24]  rm-rf once we realized what the issue
+[06:08.20]  was we immediately stopped my code by
+[06:10.76]  this time however most of our files were
+[06:12.92]  gone and I had a sinking feeling in my
+[06:15.16]  stomach that I was going to get fired on
+[06:16.96]  the spot well it was a good run wait a
+[06:20.88]  second S3 is a part of Amazon hey S3 are
+[06:23.68]  you still there hey man nice job
+[06:25.48]  stopping that deletion thing very
+[06:27.52]  professional thanks for the feedback hey
+[06:29.68]  quick question can you retrieve our
+[06:31.44]  deleted files
+[06:37.40]  yes would you please retrieve our
+[06:39.76]  deleted files oh you want me to do it
+[06:41.80]  now you should have just asked I I did
+[06:44.52]  why would I ask you if you could
+[06:45.80]  retrieve the deleted files if I didn't
+[06:47.60]  want them retrieved look man I just
+[06:49.48]  answer the questions that you asked
+[06:51.68]  after a bit of work and help from our
+[06:53.60]  internal friends at S3 I was so lucky
+[06:56.48]  that S3 is a part of Amazon our files
+[06:59.32]  were were restored in a couple of days I
+[07:01.52]  fixed the code to ignore files with hash
+[07:03.40]  signs in them and to properly escape the
+[07:05.60]  URLs we constructed we didn't have to
+[07:08.28]  reach out to all of our partners and I
+[07:10.80]  kept my job speaking of preventing
+[07:12.64]  system disasters let's talk about
+[07:14.60]  password security after sharing how one
+[07:17.12]  unescaped character nearly wiped out our
+[07:19.32]  entire video library I can tell you that
+[07:21.84]  small oversights in security can have
+[07:24.04]  massive consequences that's where
+[07:26.12]  nordpass comes in created by the same
+[07:28.36]  cyber Security Experts at nordvpn Nord
+[07:31.24]  passes a password manager that helps
+[07:33.00]  prevent the kind of security nightmares
+[07:34.68]  and breaches that keep Engineers awake
+[07:36.68]  at night just like how we learn to
+[07:38.52]  properly Escape special characters in
+[07:40.36]  URLs Nord pass ensures that your
+[07:42.72]  credentials are properly secured from
+[07:44.60]  Bad actors that could compromise all of
+[07:46.96]  your hard work here's what makes Nord
+[07:49.16]  Pass Perfect for Tech professionals
+[07:51.52]  their encrypted Vault stores all of your
+[07:53.36]  password securely cross device sync
+[07:55.80]  Works seamlessly across all platforms
+[07:58.08]  and it allows you to check your work on
+[07:59.52]  on a mobile device if needed the data
+[08:02.04]  breach scanner alerts you if your
+[08:03.64]  credentials are leaked on the dark web
+[08:05.88]  secure sharing lets team share
+[08:07.52]  credentials and credit card details
+[08:09.16]  safely without compromising security so
+[08:11.76]  no more passwords and DMS or
+[08:13.36]  spreadsheets and their password
+[08:15.08]  generator ensures that you're never
+[08:17.08]  using and reusing weak passwords trust
+[08:20.40]  me you don't want to be that fireable
+[08:22.24]  person who broke production because of
+[08:24.08]  compromised credentials be professional
+[08:26.44]  and try Nord pass out no credit card
+[08:28.92]  required for a free 3-month nordpass
+[08:31.24]  business trial use the code engineered
+[08:33.48]  at nordp pass.com engineered thanks
+[08:36.16]  again to nordpass for sponsoring today's
+[08:41.92]  video the second time I broke Amazon was
+[08:44.48]  during a bug bash you know one of those
+[08:46.52]  team events where everyone gets together
+[08:48.84]  orders pizzas and tries to break things
+[08:51.16]  before customers do we were testing a
+[08:53.60]  new checkout widget to make ordering
+[08:55.48]  faster think of it as something between
+[08:57.76]  regular checkout and one click click
+[08:59.64]  ordering the problem was Amazon didn't
+[09:01.96]  have a proper testing environment for
+[09:03.68]  their orders this might sound surprising
+[09:06.24]  but imagine trying to replicate Amazon's
+[09:08.28]  entire ordering system it's massive
+[09:11.00]  spanning hundreds of services across
+[09:12.76]  multiple data centers and continents so
+[09:15.68]  we did what seemed reasonable at the
+[09:17.16]  time we tested in the gamma stage by
+[09:19.64]  placing real orders and then cancelling
+[09:21.64]  them in production during our pizza fuel
+[09:24.44]  testing frenzy someone on the team and
+[09:27.32]  by someone I mean definitely not me
+[09:30.00]  decided to get creative and entered a
+[09:31.92]  quantity of 1 b234
+[09:35.44]  m567 1890 items among the dozens of test
+[09:39.64]  orders that we placed that day this one
+[09:41.96]  would prove particularly problematic
+[09:44.32]  because it halted all of Amazon's orders
+[09:46.48]  in the
+[09:47.90]  [Applause]
+[09:51.36]  US here's where it gets interesting
+[09:53.96]  ordering in Amazon isn't just one simple
+[09:56.40]  transaction it's a complex choreography
+[09:58.76]  of multiple Services working together
+[10:01.40]  even though we canceled our order the
+[10:03.24]  system is so large and interconnected
+[10:05.84]  that parts of the order were still being
+[10:07.80]  processed in various stages think of it
+[10:10.48]  like trying to stop a train even after
+[10:12.52]  you hit the brakes it takes time for all
+[10:14.40]  of the cars to get the message our
+[10:17.12]  problematic order made its way to the
+[10:19.04]  tax calculation service now tax
+[10:21.56]  calculation isn't as simple as
+[10:23.04]  multiplying price by a percentage take
+[10:25.72]  New York state law for example clothing
+[10:28.04]  and Footwear sold for Less than $110 per
+[10:30.68]  item are exempt from the 4% sales tax
+[10:33.84]  this means you need to check each item
+[10:35.52]  individually the tax calculation service
+[10:38.00]  used a work CU to distribute work orders
+[10:40.24]  across multiple computers when a server
+[10:42.60]  picked up our order it tried to process
+[10:44.88]  over a billion items in a tight for Loop
+[10:47.88]  imagine counting to a billion actually
+[10:49.88]  don't because that's exactly what it
+[10:51.32]  crashed our servers the computers would
+[10:53.48]  run out of memory trying to process this
+[10:55.44]  massive Loop crash and then the order
+[10:57.64]  would get picked up by another server
+[10:59.44]  starting the cycle again when the team
+[11:01.60]  responsible for the tax calculation
+[11:03.24]  service noticed that their fleet was
+[11:04.64]  down they did what any of us would do
+[11:07.00]  they turned it off and on again but as
+[11:09.00]  soon as the servers came back online our
+[11:11.04]  poison pull order would be there waiting
+[11:12.96]  ready to crash everything again this is
+[11:14.84]  where Amazon's blameless culture really
+[11:16.56]  shined yes my team created the
+[11:18.88]  problematic order but in the Coe
+[11:21.08]  postmortem we identified at least five
+[11:23.36]  different places where this could have
+[11:24.92]  been prevented input validation the
+[11:28.00]  first one was obviously on my team we
+[11:30.04]  should have validated the inputs on the
+[11:31.56]  front end and back end before sending it
+[11:33.20]  to the ordering services but the
+[11:35.20]  ordering Services should have had
+[11:36.88]  reasonable limits on quantity fields we
+[11:39.48]  were allowed to submit an order with
+[11:41.20]  over a billion items you should have a
+[11:43.60]  healthy paranoia when serving clients
+[11:45.76]  especially end users but even for
+[11:48.00]  internal ones Q management the tax
+[11:50.40]  service needed a dead letter q for
+[11:52.04]  problematic orders that failed too many
+[11:53.96]  times this was in the age before sqs was
+[11:57.08]  used widely internally and definitely
+[11:59.36]  before you could create a dead letter
+[12:00.72]  queue with a checkbox like today
+[12:02.76]  resource limits the tax calculation
+[12:04.96]  service host should have had memory
+[12:06.40]  limits and circuit breakers they should
+[12:08.68]  have seen the big number and failed
+[12:10.44]  quickly if the process failed it should
+[12:12.68]  have had a babysitter to restart it
+[12:14.56]  without human intervention testing
+[12:16.44]  environment Amazon needed and still
+[12:18.64]  needs to be quite honest a proper
+[12:20.68]  testing environment for order workflows
+[12:23.56]  its complex microservice architecture
+[12:25.48]  makes that a challenge but it's not
+[12:27.20]  impossible especially with all of the
+[12:29.20]  smart developers over there and finally
+[12:31.48]  there's service isolation the tax
+[12:33.56]  calculation service should have been
+[12:35.08]  better isolated so its failures couldn't
+[12:37.16]  Cascade for example if they had created
+[12:39.60]  a partition in their Fleet basically
+[12:41.64]  half the orders go to one Fleet and half
+[12:43.40]  go to the other the system wouldn't
+[12:45.40]  completely Halt and the poor operations
+[12:47.44]  folks that needed to solve the issue
+[12:49.40]  could have used the equivalent of a
+[12:50.96]  binary search to find their order which
+[12:53.52]  even at the order scale of Amazon retail
+[12:55.48]  in the US is still logarithmic so still
+[12:58.56]  pretty fast even with the millions and
+[13:00.12]  millions of orders each of these was a
+[13:02.00]  separate team's responsibility and each
+[13:03.88]  team took their part of the solution
+[13:06.00]  without pointing fingers you know what's
+[13:08.20]  really interesting about major incidents
+[13:09.92]  like this they're rarely caused by one
+[13:12.24]  person or one mistake they're usually
+[13:14.84]  the result of multiple small gaps in the
+[13:16.76]  system lining up perfectly like holes
+[13:19.04]  and swiss cheese all lining up to let
+[13:20.92]  some things slip through when you're
+[13:22.36]  working on complex systems you're going
+[13:24.28]  to make mistakes that's not just okay
+[13:26.88]  it's inevitable the real failure isn't
+[13:29.40]  in making the mistake it's in not
+[13:31.48]  learning from it every major incident is
+[13:33.88]  an opportunity to make your systems more
+[13:35.88]  robust your processes more resilient and
+[13:38.76]  your teams more knowledgeable and
+[13:40.76]  sometimes it takes a billion item order
+[13:42.52]  to show you where your systems need
+[13:44.32]  Improvement just maybe try to figure it
+[13:46.52]  out before the pizza party next time if
+[13:48.88]  you enjoyed the story about breaking
+[13:50.28]  Amazon Twice YouTube seems to think that
+[13:52.80]  you'd like this video of mine why not
+[13:55.12]  give to peer pressure go ahead just
+[13:57.72]  click it do it

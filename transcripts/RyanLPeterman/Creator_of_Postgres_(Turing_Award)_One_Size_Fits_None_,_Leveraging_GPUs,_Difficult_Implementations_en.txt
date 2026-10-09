@@ -1,0 +1,125 @@
+Title     : Creator of Postgres (Turing Award): "One Size Fits None", Leveraging GPUs, Difficult Implementations
+Video ID  : qCKgWsexY6c
+URL       : https://www.youtube.com/watch?v=qCKgWsexY6c
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 116
+Saved at  : 2026-10-08 08:13:31
+------------------------------------------------------------
+
+[00:00.08]  talk and I think there's also a paper
+[00:01.60]  behind it of this idea that uh one
+[00:05.20]  sizefits all database systems not
+[00:07.76]  optimal one size actually fits none and
+[00:10.88]  that what you really want is database
+[00:14.00]  solutions that target specific needs
+[00:17.44]  what database offerings you see today
+[00:19.36]  that are one-sizefits-all in 2004 when I
+[00:22.96]  wrote the paper we had an academic
+[00:25.28]  project which was building what became
+[00:28.56]  streambase
+[00:29.68]  And so a stream processing engine looks
+[00:32.24]  nothing like a relational database.
+[00:36.00]  And we had the gist of an idea for
+[00:39.84]  column stores for the for data
+[00:41.84]  warehouses which was popularized by
+[00:44.80]  Vertica looks nothing like a row store.
+[00:48.40]  So here were three wildly different
+[00:50.80]  implementations that had no resemblance
+[00:53.36]  to each other and in each case they were
+[00:56.48]  an order of magnitude faster than the
+[00:59.36]  other guys. So it's pretty clear that
+[01:02.08]  one side, you know, that in with those
+[01:04.72]  three instances,
+[01:06.96]  you give up an order of magnitude
+[01:09.84]  uh when you're running a database system
+[01:12.96]  that isn't
+[01:14.96]  that isn't architected for your kind of
+[01:17.12]  stuff. I think that's still true. I
+[01:20.88]  mean, I think Clickhouse is a column
+[01:23.36]  store. Pine cone is faster than
+[01:28.80]  userdefined types
+[01:31.60]  on on textbased vector processing.
+[01:36.48]  And so I think it's it's still very much
+[01:39.52]  the case [snorts] and I think
+[01:43.44]  there's no difficulty
+[01:46.24]  putting a common parser on top of
+[01:48.72]  multiple implementations.
+[01:51.84]  uh Postgress has so far chosen not to do
+[01:54.88]  that. they don't implement a column
+[01:57.84]  store
+[01:59.44]  and so I think they are not they are not
+[02:01.92]  competitive you know on sizable data
+[02:05.92]  warehouses
+[02:07.76]  they also don't have multi-node support
+[02:11.28]  again for people with big data
+[02:13.12]  warehouses that's table stakes so I
+[02:16.48]  think it's just as true today as it ever
+[02:18.48]  was I think that
+[02:22.32]  what is true
+[02:24.48]  is that if you want to get going, you
+[02:26.96]  have a database problem,
+[02:29.68]  you know, the answer is choose Postgress
+[02:32.62]  [snorts] and there's a huge programming
+[02:34.88]  community, all kinds of all kinds of,
+[02:38.00]  you know, data type implementations.
+[02:40.80]  it's free uh and you can find Postgress
+[02:46.32]  talent easily and get going
+[02:49.76]  and and so I think it's it's it's a
+[02:52.72]  great choice for lowest common
+[02:54.32]  denominator
+[02:56.32]  and until you're trying to do [snorts] a
+[03:00.80]  million transactions a second it works
+[03:02.80]  just fine until you're trying to support
+[03:06.08]  a pedibyte data warehouse it it I say at
+[03:08.88]  the low end it it's absolutely
+[03:10.40]  Absolutely the right one sizefits all at
+[03:12.96]  the low end it's postgress at the high
+[03:15.76]  end that's just not true
+[03:18.08]  >> GPUs do they make available some new
+[03:21.60]  opportunities to optimize databases
+[03:24.40]  probably but I think the the big
+[03:27.04]  challenge is that GPUs are
+[03:32.24]  you know sumd sim you know single
+[03:34.88]  instruction multi- data and that's
+[03:37.68]  that's the anathema of indexing
+[03:41.12]  And so whenever indexing is the right
+[03:43.36]  answer,
+[03:44.88]  they're probably not a good idea.
+[03:48.40]  And I think uh also you've got to
+[03:52.72]  architect them so that the so that the
+[03:56.48]  bandwidth
+[03:58.48]  so that the bandwidth from storage is is
+[04:02.80]  not not the bottleneck. And so if
+[04:06.56]  they're an add-on to the CPU as often as
+[04:09.12]  not the bus connecting it to the the GPU
+[04:12.72]  to the CPU is a bottleneck.
+[04:15.04]  >> Can you explain why indexing would be
+[04:18.56]  not as effective when there's SIMD?
+[04:22.80]  >> So let's let's say I'm I'm [snorts]
+[04:26.56]  looking for Ryan's
+[04:29.36]  I'm looking for Ryan's salary and I have
+[04:31.60]  a B tree.
+[04:33.60]  So you go to the root of the B tree.
+[04:37.28]  You find you find the divider that has
+[04:41.12]  both sides of Ryan.
+[04:43.52]  You follow the pointer.
+[04:46.08]  That's a memory access for sure. Then
+[04:49.28]  you do it all again and you do this like
+[04:52.08]  three or four times.
+[04:54.24]  So that doesn't parallelize well. So the
+[04:57.04]  answer is indexing doesn't parallelize
+[04:59.20]  well. You mentioned B trees. When you
+[05:01.68]  first implemented
+[05:03.52]  uh that first version of ingress, did
+[05:06.40]  you write all of that by hand? Because I
+[05:08.88]  imagine there's probably not some
+[05:10.48]  existing B tree library or something.
+[05:13.12]  >> Yeah, we wrote the original version of
+[05:15.36]  ingress was all written from scratch.
+[05:17.92]  >> What was the hardest part of that
+[05:19.20]  implementation?
+[05:21.52]  >> Uh query optimizer.
+[05:23.52]  >> And why was that hard?
+[05:25.28]  >> It's tough. It's it's just
+[05:29.44]  algorithmically difficult.

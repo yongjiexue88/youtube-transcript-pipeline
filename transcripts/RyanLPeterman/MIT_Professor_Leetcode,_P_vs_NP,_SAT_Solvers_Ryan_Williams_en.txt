@@ -1,0 +1,1956 @@
+Title     : MIT Professor: Leetcode, P vs NP, SAT Solvers | Ryan Williams
+Video ID  : AaK1SL2i_4Y
+URL       : https://www.youtube.com/watch?v=AaK1SL2i_4Y
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1947
+Saved at  : 2026-10-08 08:16:24
+------------------------------------------------------------
+
+[00:00.00]  Hypotheses which are at the edge of our
+[00:01.88]  understanding can be enlightening.
+[00:04.88]  >> This is Ryan Williams. He's a professor
+[00:07.08]  at MIT who won the Gödel Prize for
+[00:09.16]  theoretical computer science, and I
+[00:11.08]  started by asking him a LeetCode
+[00:13.00]  question. So, the question is three-sum.
+[00:16.00]  Can you do better than n squared for
+[00:17.92]  this?
+[00:18.36]  >> Yeah, you actually can do better than n
+[00:20.28]  squared, and this is um not at all
+[00:22.44]  obvious.
+[00:23.56]  >> He also had contrarian takes on popular
+[00:25.96]  hypotheses.
+[00:26.92]  >> I think I'm on the record as not
+[00:28.76]  believing this hypothesis. We really
+[00:31.64]  don't understand polynomial time
+[00:34.16]  computation as deeply as we think we do.
+[00:42.08]  >> All right, I want to start by asking you
+[00:44.00]  the most popular LeetCode question. So,
+[00:46.92]  the question is three-sum.
+[00:49.80]  Given a list of numbers, and we want to
+[00:53.56]  find three numbers such that they sum to
+[00:57.20]  zero.
+[00:57.76]  >> Yes.
+[00:58.64]  >> And so, what are your thoughts on the
+[01:01.88]  brute-force solution for this? We can
+[01:03.36]  start there.
+[01:04.64]  >> So, the obvious brute-force solution
+[01:08.08]  takes if you you've got n numbers n
+[01:10.72]  cubed time. Just try all the triples of
+[01:13.24]  numbers, sum them up, see if they sum to
+[01:15.80]  zero. There is a faster uh solution. So,
+[01:19.44]  one way to get
+[01:21.00]  an order n squared time algorithm for
+[01:23.64]  three-sum is to first start by sorting
+[01:27.40]  the numbers.
+[01:28.48]  And then, you go through the numbers one
+[01:31.68]  by one. Say like, you're looking at a
+[01:34.24]  number A.
+[01:35.80]  And you want to know,
+[01:37.44]  is there a B and a C in the rest of the
+[01:39.52]  list um
+[01:41.80]  whose sum with A is going to be zero?
+[01:45.24]  Okay, so,
+[01:46.84]  the way
+[01:48.20]  this works is
+[01:50.40]  after you sort the numbers, you you do
+[01:53.08]  what's called a finger search. So, you
+[01:55.28]  put um
+[01:57.12]  the finger from your left hand on the
+[01:59.76]  minimum element and finger from your
+[02:02.40]  right hand on the maximum element. So
+[02:04.32]  you start there. And you check like,
+[02:06.32]  okay, are these my B and C?
+[02:08.76]  Right? So you you add them min and max
+[02:11.36]  and check if adding that with A gets you
+[02:14.92]  zero. Okay?
+[02:17.24]  And um if you're lucky, okay, then
+[02:19.84]  you're done, but typically you're not
+[02:21.64]  lucky. And so this sum of the min and
+[02:25.24]  the max is either
+[02:27.40]  um larger than your target value minus A
+[02:31.32]  or it's smaller.
+[02:33.00]  Okay? If it's larger, then you need to
+[02:36.84]  decrease the larger number. So you take
+[02:39.28]  your right finger, which is sitting on
+[02:40.72]  the maximum element, and you move it to
+[02:42.44]  the left one slot. Okay? So you decrease
+[02:45.56]  the larger one.
+[02:47.08]  All right? If the sum is smaller than
+[02:50.84]  your target, you need to take the
+[02:52.08]  smaller number and make it a little bit
+[02:53.40]  bigger. So you move the you move your
+[02:56.36]  left finger sitting on the minimum over
+[02:58.76]  one slot. Okay? And you you keep doing
+[03:01.28]  this. You keep checking
+[03:03.08]  whether, you know, your left finger and
+[03:04.60]  right finger are pointing at a solution.
+[03:06.84]  And if they aren't, then you adjust it.
+[03:09.08]  If they do, they ever do sum up to
+[03:11.88]  exactly what you want, you're done.
+[03:14.76]  And so after each comparison like this,
+[03:18.28]  right? One of your fingers moved. Okay?
+[03:21.52]  If the fingers ever cross, then you
+[03:23.72]  don't have a solution. Like there's just
+[03:25.36]  there just can't be a solution.
+[03:27.24]  And so the number of times you move, you
+[03:29.20]  know, your fingers in total is like N.
+[03:32.36]  So so you have a order N solution for
+[03:35.20]  finding that extra pair.
+[03:37.52]  And you do this for each of the numbers
+[03:40.08]  A.
+[03:41.28]  Okay? So then you get a order N squared
+[03:43.68]  uh solution overall. You do it N times.
+[03:46.64]  Each finger search
+[03:48.36]  uh takes order N time.
+[03:50.32]  >> And that is the popular solution. think.
+[03:53.80]  >> solution, yes.
+[03:54.56]  >> of people know when we're in these
+[03:57.04]  algorithmic LeetCode interviews.
+[04:00.40]  And I know a lot of your research is
+[04:02.96]  kind of about pushing lower bounds, so
+[04:04.96]  maybe we can
+[04:06.32]  start that conversation off by can you
+[04:08.40]  do better than n squared for this?
+[04:10.48]  >> Yeah, you actually can do better than n
+[04:12.40]  squared. And this is um
+[04:14.88]  uh not at all obvious.
+[04:17.00]  In in fact, it it stems from
+[04:19.68]  um taking this finger search idea and
+[04:22.52]  pushing it in a different direction.
+[04:24.68]  So, what you do is you take your sorted
+[04:28.00]  list, okay, and you
+[04:30.64]  break
+[04:31.80]  uh the sorted list up into little groups
+[04:34.36]  of contiguous elements. So, let's say
+[04:36.72]  your little group is like log n size or
+[04:39.20]  square root log n. It's like a really
+[04:41.04]  small little group, okay?
+[04:43.00]  So, you've got either n over log n
+[04:45.60]  groups total or n over square root log n
+[04:47.68]  groups total depending on how you
+[04:49.76]  break up your groups.
+[04:51.44]  And then the idea is you're going to
+[04:54.16]  perform the same kind of finger search,
+[04:56.56]  but you're going to set things up so
+[04:59.00]  that you're comparing two pairs of
+[05:01.40]  groups. Your finger's always pointing at
+[05:03.48]  an entire group.
+[05:05.28]  So, like the left hand and right hand
+[05:07.16]  are pointing at two groups and you want
+[05:08.64]  to know if there's a three sum solution
+[05:09.92]  in that group.
+[05:11.84]  And
+[05:13.24]  you can set up a kind of fast data
+[05:15.96]  structure to check a small group, okay?
+[05:19.76]  And this data structure will take much
+[05:22.16]  less than
+[05:23.76]  um the number of elements in the two
+[05:26.20]  groups squared. So, you set up some
+[05:29.00]  kind of fancy data structure. And
+[05:31.00]  because you set your group size so
+[05:32.52]  small, it's like a pre-processing that
+[05:34.60]  you do over all the possible
+[05:37.40]  inputs you could send from a pair of
+[05:39.36]  groups.
+[05:40.64]  And so, you have some data structure and
+[05:42.92]  it will, you know, let's say it takes
+[05:44.48]  you n to the 1.5 time to prepare this
+[05:47.48]  data structure, this fancy data
+[05:49.04]  structure. But now, when you're looking
+[05:51.28]  at
+[05:52.36]  a pair of groups,
+[05:54.04]  you can look at the answer much faster
+[05:56.84]  than what finger search would have
+[05:58.16]  taken. I guess finger search through
+[05:59.92]  like a group of length G and another
+[06:01.20]  group of length G would take about order
+[06:03.72]  G time, and you can do actually do
+[06:05.20]  faster by by this kind of look up. This
+[06:07.56]  kind of table look up. I think it is
+[06:09.48]  kind of like you you take
+[06:12.40]  uh
+[06:12.96]  this list of length N
+[06:15.32]  and you
+[06:16.96]  uh kind of shrink it into like N over
+[06:20.16]  num uh N over N over group size uh
+[06:23.92]  number of things. And these are more
+[06:25.52]  complicated objects.
+[06:27.32]  And then you do And now like you you're
+[06:29.12]  trying to you're trying to speed up like
+[06:30.84]  the check over these like small uh
+[06:34.00]  complicated objects. For like, should I
+[06:36.12]  move my finger to the right? Like, is
+[06:38.48]  there nothing in this group? Would
+[06:39.84]  finger search just just go straight
+[06:41.88]  through this group or not? Is basically
+[06:43.88]  what you're asking.
+[06:45.08]  >> So, the unit that you're operating on is
+[06:46.92]  not a single integer, it's a
+[06:49.08]  a group.
+[06:49.88]  >> Yeah, it's like a group of them. So, you
+[06:51.40]  use some kind of table look up. Uh
+[06:53.64]  And so, well, it's it's it's much
+[06:55.12]  fancier than a table look up, actually.
+[06:56.68]  It's
+[06:57.44]  It goes through some other model called
+[06:59.72]  the linear decision tree model. Like, so
+[07:02.20]  it's like in some weird model where you
+[07:03.80]  can actually get a faster three some
+[07:05.52]  solution. You can get a N to the 1.5
+[07:07.64]  solution. And there's It's a really
+[07:09.84]  interesting and sophisticated solution,
+[07:11.36]  but what I want to emphasize is it
+[07:12.84]  starts from
+[07:14.52]  the finger search solution. And sort of
+[07:16.84]  like figuring out how to like
+[07:19.08]  process finger moves faster.
+[07:21.84]  Uh sort of do pre-processing so that
+[07:23.28]  finger moves can can go faster.
+[07:26.52]  >> Yeah, I saw the the time complexity
+[07:28.68]  this. It's N squared divided by
+[07:32.08]  log N divided by log log N all raised to
+[07:36.04]  the 2/3.
+[07:37.60]  What Is there any intuition behind I
+[07:39.20]  mean, that's just crazy.
+[07:40.24]  >> So, there are several algorithms of this
+[07:41.68]  kind, and they all work by doing some
+[07:44.80]  modification on what I was talking about
+[07:46.96]  because you can sort of reduce to a
+[07:48.48]  different model. Like a like a
+[07:51.24]  a different kind of look up table, a
+[07:53.36]  different kind of set of tricks.
+[07:55.56]  And you know, maybe there is some
+[07:57.08]  savings you can do here and there by
+[07:59.48]  sort of compressing things a little
+[08:00.76]  differently. Um so, that yeah, there are
+[08:03.36]  several algorithms that beat the n
+[08:05.40]  squared running time bound,
+[08:07.48]  and they all, to my knowledge, kind of
+[08:10.04]  work in a similar type of of way. Like
+[08:13.12]  they
+[08:13.92]  they're they're taking this n squared
+[08:16.12]  time algorithm and finding little ways
+[08:17.80]  to like pre-process
+[08:20.24]  and then optimize like based on the
+[08:21.92]  pre-processing. Like make finger
+[08:24.08]  searches faster and things like that.
+[08:26.04]  Sort of yeah.
+[08:27.88]  >> A lot of your research is on this this
+[08:30.60]  topic of fine-grained complexity or kind
+[08:32.44]  of lowering lower bounds. So, um maybe
+[08:35.76]  you can explain
+[08:37.16]  what is fine-grained
+[08:37.80]  >> Lowering lower bounds, I like that.
+[08:38.96]  >> Yeah, lowering
+[08:39.42]  >> [laughter]
+[08:40.16]  >> Um the idea behind fine-grained
+[08:41.96]  complexity is we have a variety
+[08:45.40]  of problems, canonical problems that
+[08:50.28]  we teach to undergrads.
+[08:52.92]  Um we have canonical algorithms for
+[08:55.84]  these problems. These algorithms have
+[08:59.08]  resisted any major improvements in
+[09:02.96]  decades, and so, we wonder, are these
+[09:07.32]  algorithms optimal?
+[09:09.08]  And what does a theory of optimality
+[09:11.08]  look like in terms of time complexity?
+[09:13.72]  So, what if we just focus solely on the
+[09:16.60]  time complexity of a problem? Like the
+[09:18.72]  fastest algorithm that will solve that
+[09:21.00]  problem.
+[09:22.24]  What does complexity look like then?
+[09:25.92]  Because like P versus NP is not about
+[09:28.36]  time I mean, it's about time complexity
+[09:30.00]  but on a coarse
+[09:31.36]  grained level where P is just
+[09:34.76]  polynomial time. But that polynomial
+[09:36.68]  could be n to the 10 into the billion
+[09:39.12]  whatever and so like showing that
+[09:41.08]  something's not in P is is showing that
+[09:43.44]  it needs some super polynomial amount of
+[09:45.56]  time. Whereas here we we are concerned
+[09:48.08]  with there's a canonical problem it
+[09:50.88]  takes
+[09:52.36]  n cubed time with some very
+[09:55.80]  elegant canonical algorithm. We want to
+[09:58.00]  know
+[09:59.12]  could you do any better? Could you
+[10:00.20]  improve that exponent to n to the 3
+[10:03.00]  minus epsilon for some epsilon?
+[10:05.96]  And then you ask, well
+[10:08.08]  suppose I have a problem over here
+[10:10.36]  and it has a quadratic time algorithm.
+[10:13.56]  And I want to know
+[10:15.92]  if I can improve that quadratic time
+[10:17.84]  algorithm by a little bit. Then you
+[10:19.12]  start asking questions like, well,
+[10:21.08]  suppose I improve this algorithm by a
+[10:24.04]  little bit.
+[10:25.28]  Can I improve this algorithm over here
+[10:27.72]  by a little bit?
+[10:29.56]  And this is naturally a notion of
+[10:30.88]  reduction like saying that like
+[10:33.44]  I want to have some reduction from
+[10:34.80]  problem A to problem B
+[10:37.12]  so that if I can improve the algorithm
+[10:40.52]  for problem B just a little bit
+[10:42.76]  then I can also improve the algorithm
+[10:44.16]  for for problem A by just a little bit.
+[10:47.40]  This actually leads to a different
+[10:49.68]  notion of complexity. You can even take
+[10:52.04]  an NP-complete problem
+[10:54.28]  and a P problem
+[10:56.40]  and reduce the NP problem to the P
+[10:58.00]  problem and the question still makes
+[10:59.56]  sense.
+[11:00.88]  So
+[11:02.08]  for example,
+[11:03.56]  uh you could talk about the subset sum
+[11:05.80]  uh problem, okay? So the subset sum
+[11:08.40]  problem
+[11:09.52]  you've uh got n numbers
+[11:13.48]  and a target value.
+[11:15.88]  And you want to know if there's a subset
+[11:18.00]  of those numbers that sum to a
+[11:20.36]  particular target value, okay?
+[11:22.60]  Now you got n numbers, there's two to
+[11:24.60]  the n possible subsets.
+[11:27.64]  The obvious algorithm takes two to the n
+[11:29.24]  time.
+[11:30.20]  Okay?
+[11:32.04]  But you can actually do better than
+[11:34.16]  this. And the way you do better than
+[11:36.48]  this is to reduce to a polynomial time
+[11:39.00]  solvable problem.
+[11:41.04]  So,
+[11:42.16]  you can get a algorithm which runs in
+[11:45.36]  square root of 2 to the n time for the
+[11:48.84]  subset sum problem. You can avoid
+[11:51.08]  enumerating over all the possible
+[11:52.56]  subsets in a substantial way. And this
+[11:54.76]  is in fact known um
+[11:57.84]  commonly in cryptanalysis by
+[12:00.08]  um I guess a like a meet in the middle
+[12:02.80]  uh type approach. Like So, people do
+[12:06.08]  this sort of thing all the time.
+[12:08.20]  The idea is you partition the set of all
+[12:12.12]  the numbers into two halves, n over two,
+[12:15.04]  n over two.
+[12:16.20]  You enumerate all the subset sums on the
+[12:18.76]  two halves. So, you have 2 to the n over
+[12:21.04]  two possible sums for like the first
+[12:24.40]  half, 2 to the n over two possible sums
+[12:27.08]  for the second half. Then you want to
+[12:28.84]  know, is there a number from the first
+[12:32.16]  half,
+[12:33.40]  you know, from this huge list,
+[12:35.68]  plus another number from the second
+[12:37.72]  half, this huge list, that sums to the
+[12:39.84]  target.
+[12:41.04]  Now, this is the two sum problem.
+[12:44.04]  This is really nothing more than the two
+[12:45.36]  sum problem, which you can solve by
+[12:48.00]  sorting
+[12:49.16]  and binary search.
+[12:51.16]  And this is a reduction. We have shown
+[12:53.84]  how to solve a subset sum problem
+[12:57.76]  like which would normally take 2 to the
+[12:59.44]  n time
+[13:00.64]  in square root of 2 to the n time. An
+[13:02.48]  NP-complete problem by reducing it to a
+[13:05.88]  problem like two sum. The obvious
+[13:09.12]  algorithm there takes n squared time
+[13:11.40]  trying all the pairs of numbers to see
+[13:13.16]  if they sum to a target, and using an n
+[13:16.36]  log n time algorithm for that.
+[13:18.92]  So, so fine-grained complexity can
+[13:22.24]  can relate problems that would not be
+[13:24.88]  relatable at all in the traditional P
+[13:27.20]  versus NP theory. Like one problem is NP
+[13:29.52]  complete, the other problem is not, so
+[13:30.88]  they
+[13:31.60]  they should not have a polynomial time
+[13:33.12]  reduction between them, like in general,
+[13:34.84]  right? But so but if you just look at
+[13:37.00]  the time complexity and you focus on
+[13:39.20]  okay, I have an algorithm, 2 to the n
+[13:41.00]  algorithm, is it the best possible?
+[13:43.92]  Then um
+[13:45.40]  and then I have a n squared algorithm,
+[13:47.08]  is it the best possible? And you then
+[13:48.84]  you can relate the two problems.
+[13:50.88]  And this is a general phenomenon that
+[13:52.72]  you can relate problems that look
+[13:55.52]  like they should have nothing to do with
+[13:57.28]  each other.
+[13:58.52]  >> So you talked about
+[14:00.24]  you talked about reducing subset sum to
+[14:03.40]  two sum
+[14:04.64]  and but subset sum is n arbitrary
+[14:08.68]  integers that sum to
+[14:10.68]  the target sum, right?
+[14:11.92]  >> Yeah, so the idea is um
+[14:14.88]  nobody said I had to use a polynomial
+[14:17.00]  time reduction or something like that to
+[14:19.68]  reduce one problem to another.
+[14:21.96]  So so what's what happened what happened
+[14:24.68]  the trick was I took this subset sum
+[14:27.84]  problem that had n numbers
+[14:30.04]  and then I blew it up
+[14:32.48]  to an instance of this two sum problem.
+[14:35.04]  But that two sum problem has about
+[14:37.24]  square root of 2 to the n numbers.
+[14:40.00]  Now I can solve two sum in linear time.
+[14:42.92]  So that so solving that instance gives
+[14:45.52]  me a square root of 2 to the n time
+[14:47.76]  algorithm for the original problem.
+[14:49.64]  But yeah, in in the meantime, going from
+[14:52.24]  one problem to the other, I blew it up.
+[14:54.48]  And I but by blowing it up, I I'm able
+[14:56.92]  to improve the time complexity of the
+[14:59.36]  obvious algorithm for subset sum.
+[15:02.00]  >> I get it. Okay, so the reduction
+[15:04.36]  it it's kind of like the
+[15:06.76]  if you solve the subset sum, you have
+[15:09.44]  some time complexity, and if you
+[15:11.56]  translate it to the other problem, you
+[15:13.36]  lose a little bit of time complexity,
+[15:14.92]  but less than the aggregate.
+[15:17.32]  >> So all you want to make sure is when all
+[15:19.48]  the dust is cleared and settled, you
+[15:21.44]  want to be able to say, "Look, if I can
+[15:23.64]  improve
+[15:25.00]  the obvious algorithm for two sum,
+[15:27.28]  then I can improve the obvious algorithm
+[15:28.92]  for subset sum." And that's what this
+[15:30.36]  thing achieves.
+[15:31.96]  Right? Because I know because I know how
+[15:33.68]  to get a faster algorithm for two sum,
+[15:36.52]  I can get one for subset sum. So, so you
+[15:39.64]  just want your your reduction between
+[15:42.00]  two problems to have this property. If I
+[15:43.60]  can improve
+[15:44.84]  one problem by a little bit in running
+[15:46.88]  time, I can improve the other problem by
+[15:48.80]  a little bit.
+[15:50.04]  >> In one of your talks, you you mentioned
+[15:52.52]  preserving magic between Okay, so this
+[15:55.36]  is that.
+[15:56.20]  >> this is exactly like preserving magic
+[15:58.16]  because
+[15:58.88]  >> Well, I mean,
+[15:59.80]  >> once you see the two sum solution, it's
+[16:01.52]  not so magical anymore. But, imagine
+[16:04.83]  >> [laughter]
+[16:05.12]  >> that you didn't know about sorting and
+[16:08.00]  binary search and the like, and someone
+[16:10.72]  just says, "Find a pair of things with a
+[16:13.76]  certain property, and there are n
+[16:15.72]  things."
+[16:16.92]  And you're like, "Well, I mean, all the
+[16:19.04]  number of possible pairs
+[16:21.00]  is about n squared, so maybe it'll take
+[16:23.04]  me n squared."
+[16:24.32]  In this particular case, because they're
+[16:26.56]  numbers and you're summing them,
+[16:28.52]  there's an n log n time algorithm. It is
+[16:30.96]  a It is a surprise when you first see
+[16:33.72]  that no, you don't have to try all of
+[16:36.48]  the pairs of numbers. There is a
+[16:38.44]  shortcut. There is a clear shortcut that
+[16:41.24]  lets you find a pair much faster.
+[16:44.12]  And then, you can use that uh
+[16:47.04]  surprise um
+[16:49.28]  or magic, if you will, and get something
+[16:53.00]  for a subset sum. Get a algorithm for
+[16:54.68]  subset sum that avoids trying all of the
+[16:58.24]  two to the n subsets.
+[17:00.12]  >> So, I understand one of the the driving
+[17:03.32]  motives for pursuing this, I guess,
+[17:06.08]  lowering of lower bounds
+[17:08.12]  is that
+[17:09.76]  um
+[17:10.76]  strong exponential time hypothesis, or I
+[17:12.96]  see it, you know, SETH.
+[17:15.68]  Um could you explain that and its
+[17:17.72]  significance?
+[17:18.80]  >> Strong ETH is like a severe
+[17:21.08]  strengthening
+[17:22.60]  of the P versus NP question.
+[17:25.56]  So,
+[17:26.72]  P versus NP
+[17:28.24]  is um, asking whether the SAT problem
+[17:32.88]  um,
+[17:34.04]  has a polynomial time algorithm or not.
+[17:37.88]  Right? And
+[17:39.24]  strong ETH
+[17:40.96]  is basically saying that
+[17:44.40]  for the SAT problem,
+[17:46.72]  uh, you cannot solve it
+[17:48.96]  faster
+[17:50.56]  than much faster than two to the end.
+[17:53.16]  So, there's no 1.999
+[17:56.52]  to the end time algorithm.
+[17:58.48]  For every string of nines, there is no
+[18:01.00]  1.9999 to the end time algorithm.
+[18:05.04]  Um, to say the hypothesis totally
+[18:07.64]  precisely, it has to do with the K-SAT
+[18:09.88]  problem
+[18:11.12]  and you're looking at
+[18:13.52]  clauses of
+[18:15.24]  length K for arbitrary K, but
+[18:19.00]  um,
+[18:20.12]  those details don't matter so much. It's
+[18:22.08]  a canonically NP-complete problem. SAT
+[18:24.92]  is solved all the time in practice. It's
+[18:29.88]  extremely useful for a verification
+[18:32.64]  nowadays. It's an It's an engine
+[18:35.56]  for verification. Um, so it can be
+[18:38.48]  solved fairly well in practice.
+[18:41.40]  However, in the worst case, we still
+[18:43.80]  don't know how to solve it uh,
+[18:46.12]  significantly faster than two to the
+[18:48.44]  end.
+[18:49.28]  So, the hypothesis that it needs, say,
+[18:52.00]  1.99999
+[18:53.68]  to the end time for all strings of nines
+[18:56.44]  is a very strong
+[18:58.72]  exponential time hypothesis. It's way
+[19:01.28]  stronger than P versus NP. It says, "Uh,
+[19:03.32]  no, no, no, no. It's not super
+[19:04.88]  polynomial. It's actually darn near two
+[19:07.24]  to the end time that you need."
+[19:09.32]  Right?
+[19:09.80]  >> And so, do you think that hypothesis is
+[19:12.80]  true and you know, why or why not?
+[19:15.76]  >> I think I'm on the record as not
+[19:17.60]  believing this hypothesis. Yeah. Um
+[19:22.12]  Yeah, why don't I believe this
+[19:23.84]  hypothesis?
+[19:25.16]  Um
+[19:26.88]  Well, I started thinking about this
+[19:28.12]  hypothesis
+[19:30.48]  maybe already as an
+[19:32.72]  undergrad, but certainly starting
+[19:35.92]  in grad school.
+[19:37.56]  Like early in grad school I was thinking
+[19:39.20]  about this. So, before it was even
+[19:41.32]  called strong ETH, I guess that shows
+[19:43.80]  how old I am.
+[19:45.04]  I was trying to think about how to solve
+[19:48.52]  the so-called CNF SAT problem faster
+[19:51.36]  than 2 to the n.
+[19:52.80]  And
+[19:54.32]  well, at the time
+[19:56.16]  there were a number of other NP-complete
+[19:59.28]  problems that had faster algorithms like
+[20:01.88]  subset sum.
+[20:03.64]  So, I thought, well, there's not I mean,
+[20:06.68]  what's so special about SAT? Like, if
+[20:09.32]  all these other problems have faster
+[20:11.40]  algorithms um why not SAT as well? Like
+[20:15.92]  if you restrict to the 3-SAT problem
+[20:19.52]  like So, this is where
+[20:21.72]  you have an AND of these clauses, each
+[20:25.44]  clause has like is an OR of three
+[20:29.36]  variables some of the variables may be
+[20:31.52]  negated.
+[20:32.84]  You want to know if there's a way to set
+[20:34.12]  all the variables to make all the
+[20:35.80]  clauses simultaneously true. Um there is
+[20:38.84]  a faster algorithm for that.
+[20:40.68]  Um but this is a more general version of
+[20:43.20]  SAT. Um
+[20:45.40]  So, at first I just thought, well,
+[20:47.24]  there's no good reason to think in a
+[20:49.20]  lower bound these other related problems
+[20:50.76]  have upper bounds.
+[20:52.68]  So, why not?
+[20:54.08]  But then
+[20:55.48]  um over time I would have different
+[20:58.24]  attacks
+[20:59.92]  on strong ETH, like trying to refute it.
+[21:02.40]  Always trying to refute it in different
+[21:04.96]  ways, these attacks would fail
+[21:08.36]  in some completely catastrophic and
+[21:12.72]  ridiculous way, like um they would like
+[21:16.68]  have no chance of
+[21:18.64]  actually solving the original problem.
+[21:21.44]  But by sort of staring at my failure and
+[21:24.56]  trying to think, well, there's something
+[21:26.52]  interesting happening here. What can I
+[21:28.08]  do with this? Like there's something
+[21:30.80]  interesting. Yeah, it doesn't refute uh
+[21:34.28]  the strong ETH thing.
+[21:36.44]  What does it do? So, by trying to pivot
+[21:39.28]  and and figure out, okay, what can I do
+[21:41.12]  with my failure?
+[21:42.76]  I was able to solve a like a variety of
+[21:45.80]  other problems instead.
+[21:47.80]  And so, after a while, I realized the
+[21:50.68]  truth value
+[21:52.32]  of strong ETH to me
+[21:54.68]  is almost irrelevant. Like because if I
+[21:57.28]  believe that it's false, then I get good
+[22:00.24]  ideas.
+[22:01.68]  I get I get good ideas. Like
+[22:04.28]  And so, by trying to think about, okay,
+[22:08.64]  what would an algorithm that breaks
+[22:11.60]  through the end look like? What could it
+[22:13.72]  look like?
+[22:15.40]  I I sort of force myself to think in a
+[22:18.00]  different way.
+[22:19.44]  Like I I I have to like discard
+[22:21.92]  other natural algorithmic possibilities
+[22:24.04]  because we know they they won't work.
+[22:27.20]  Um
+[22:27.88]  and I have to think in a in a different
+[22:31.40]  direction. And and so,
+[22:33.32]  because it kind of like sends my brain
+[22:36.00]  in a different direction, sends me
+[22:37.56]  thinking a different way,
+[22:39.76]  it's very useful for research.
+[22:42.28]  You know, you you
+[22:43.36]  I mean, even even though I still haven't
+[22:45.40]  refuted it or whatever, like it's very
+[22:48.24]  useful for me to believe that it's
+[22:50.24]  false. Like operationally.
+[22:52.68]  So, the truth value, well, I mean
+[22:55.96]  I believe this is a minority opinion,
+[22:57.64]  right? Why why would they go against I
+[23:00.08]  mean, I think um
+[23:02.64]  for example, Russell and Piazzo, good
+[23:05.48]  friend of mine who uh, helped propose
+[23:08.04]  this.
+[23:08.92]  I mean, he always emphasizes to me,
+[23:11.12]  "Well, this this is a hip hypothesis.
+[23:13.52]  It, you know, we didn't We explicitly
+[23:15.08]  did not name it a conjecture."
+[23:17.20]  We wanted to sort of put forth
+[23:19.96]  some lower bound that would get you to
+[23:22.28]  think about it. Like something that's
+[23:24.96]  maybe a little more controversial than
+[23:27.20]  the other types of things like P = NP or
+[23:30.52]  whatever. Or, you know, like other
+[23:32.36]  things that people more nor- normally
+[23:33.92]  believe. So, like hypothesis, which are
+[23:36.28]  at the edge of our understanding,
+[23:39.04]  can be enlightening to think about. Like
+[23:41.80]  where we truly don't know what the
+[23:45.28]  answer might be based on our intuition.
+[23:48.48]  Um,
+[23:49.92]  so this this is, I guess, one reason why
+[23:52.32]  it was
+[23:53.36]  proposed, but one reason why you might
+[23:56.64]  believe that strong ETH is true is
+[23:59.16]  because believing it implies a lot of
+[24:01.76]  other lower bounds for you conveniently
+[24:04.80]  because you can reduce the SAT problem
+[24:07.16]  to a bunch of other problems that seem
+[24:09.00]  totally unrelated like edit distance,
+[24:12.80]  um, various pattern matching problems.
+[24:17.20]  Um, they have natural
+[24:20.52]  polynomial time solutions if you can
+[24:22.28]  improve on the algorithms for any of
+[24:24.92]  those, you would improve the one for SAT
+[24:27.52]  as well. You would get something better
+[24:28.84]  than 2 to the n. So, believing in it
+[24:31.60]  sort of makes a convenient world view.
+[24:34.28]  It shows that all these different
+[24:35.80]  textbook algorithms are indeed optimal.
+[24:38.44]  >> We've talked about SAT or we've
+[24:39.88]  mentioned SAT so many times in this
+[24:42.16]  conversation. I know there's so many
+[24:44.12]  forms of that problem. What are all the
+[24:46.88]  different forms? And I know there's
+[24:48.36]  there's clause width, also this idea of
+[24:50.36]  depth, too.
+[24:51.52]  >> Um, the most common
+[24:54.08]  representation of a of a SAT formula is
+[24:58.32]  the conjunctive normal form, so-called
+[25:00.88]  CNF representation. And this is what
+[25:04.00]  modern SAT solvers get as input. They
+[25:06.92]  They get their file in in so-called
+[25:09.32]  DIMACS CNF form. And this is
+[25:13.52]  just every line of my file, I give you a
+[25:17.76]  list of
+[25:19.48]  uh variables, possibly with negations,
+[25:22.08]  and each one is a clause. And I'm
+[25:24.24]  supposed to take the or
+[25:26.36]  of those uh
+[25:28.04]  uh variables or negations. These are
+[25:29.96]  Variables or negations, they're often
+[25:30.92]  called literals. Okay, so I take an or
+[25:32.64]  of these literals.
+[25:34.08]  And
+[25:35.16]  the width
+[25:36.36]  of that clause is the number of literals
+[25:38.60]  in it.
+[25:39.88]  Okay?
+[25:41.04]  And
+[25:42.32]  um I'm supposed to take the and over all
+[25:45.96]  those lines, each line in my DIMACS CNF
+[25:49.20]  file.
+[25:50.28]  And so it's an and
+[25:52.08]  of a bunch of ors, and each or has
+[25:57.20]  some small number of literals in it.
+[25:59.08]  Call it K. So usually the the width is
+[26:01.28]  called K.
+[26:02.52]  And so the K-SAT problem is to find an
+[26:05.56]  assignment to all the variables that
+[26:07.68]  satisfies all the clauses when each
+[26:10.60]  clause has width K
+[26:13.28]  or width at most K.
+[26:14.96]  It could be smaller.
+[26:16.60]  Um so that's the most popular
+[26:20.08]  uh version. That's what
+[26:22.16]  SAT solvers, you know, turn on.
+[26:25.00]  And that's what is behind uh strong ETH.
+[26:28.28]  That's the representation there.
+[26:30.60]  Um but there are other ways uh to
+[26:33.32]  represent
+[26:34.80]  a Boolean formula. You could just simply
+[26:36.80]  represent it as some arbitrary
+[26:39.32]  expression
+[26:40.68]  made out made up of ors and ands and
+[26:44.28]  negations. It could just be some
+[26:46.00]  arbitrary expression with nested
+[26:47.28]  parentheses
+[26:48.76]  and all that mess. Um
+[26:51.12]  you could ask you know, given a formula
+[26:53.64]  in this representation with a bunch of
+[26:56.04]  variables, is there a way to set the
+[26:57.72]  variables to make this true? That's
+[26:59.84]  formula SAT.
+[27:01.44]  Um, you could also look at
+[27:06.04]  at circuits of bounded depth, as you
+[27:09.04]  mentioned. So,
+[27:10.76]  there is this
+[27:12.40]  um, this class of circuits that people
+[27:14.56]  study
+[27:15.68]  called uh AC uh circuits for alternating
+[27:19.24]  circuits. Um, it doesn't mean
+[27:21.68]  alternation in terms of electricity, it
+[27:24.52]  means alternation in terms of
+[27:27.04]  uh ORs and ANDs. So, these circuits are
+[27:30.20]  made up of uh ORs and ANDs like in
+[27:34.92]  layers. So, the CNF representation is a
+[27:38.00]  special case where I have an an AND
+[27:40.84]  of ORs like uh
+[27:43.36]  like a AND of a bunch of clauses and
+[27:45.08]  then ORs of the literals.
+[27:47.00]  But, you can go further. You can have an
+[27:48.92]  AND of OR of ANDs
+[27:51.72]  of variables with negations and things
+[27:53.68]  like that. And so, these are uh constant
+[27:57.12]  depth AC circuits. And because the idea
+[28:00.60]  is
+[28:01.56]  uh you only have some constant number of
+[28:03.40]  layers of these ANDs and ORs. And you
+[28:05.40]  can look at the SAT problem
+[28:07.84]  on circuits like that as well, for
+[28:09.44]  example. Those are Those are two
+[28:11.84]  uh other versions that people look at.
+[28:13.80]  >> Yeah, strong ETH is on K-SAT, and I saw
+[28:17.16]  on less than or I guess, you know,
+[28:20.56]  2-SAT, 3-SAT, 4-SAT, 5-SAT. There exists
+[28:23.84]  solutions that are asymptotically better
+[28:26.32]  than 2 to the N. So, I guess it it you
+[28:29.84]  know, the
+[28:30.96]  the larger K can be, the more difficult
+[28:33.24]  the the problem is.
+[28:34.64]  >> That That is the intuition.
+[28:36.20]  >> I'm curious, have you ever plotted that
+[28:37.84]  curve? Like, is it Does it drop off, you
+[28:40.60]  know, exponentially or
+[28:41.96]  >> Yeah. Yeah. Um, th- yeah, that's what's
+[28:44.68]  so interesting uh about the current
+[28:48.28]  state of the art in K-SAT algorithms. As
+[28:52.04]  K increases,
+[28:53.88]  all of them
+[28:55.40]  all of the different types of algorithms
+[28:56.88]  you might try to run, they all approach
+[29:00.88]  a 2 to the n exponent. Like, as K grows
+[29:04.28]  and grows and grows, they get 1.99,
+[29:06.88]  1.999, and so on. And yeah, it it drops
+[29:12.20]  I mean, it get In other words, it will
+[29:13.32]  like it goes towards
+[29:15.32]  uh pretty quickly
+[29:17.16]  actually. And like so we we understand
+[29:19.40]  like how the exponent behaves pretty
+[29:22.04]  well for the known algorithms we have.
+[29:24.24]  >> And then um for for something like
+[29:26.48]  3-SAT, what is the intuition behind
+[29:29.56]  speeding up an exponential time search?
+[29:32.52]  >> Yeah, so for 3-SAT, um
+[29:35.44]  let's just look at a a single clause,
+[29:37.60]  okay? A clause that's got
+[29:39.80]  three variables in it, okay?
+[29:42.12]  We know that if
+[29:43.68]  uh if we set all those three variables
+[29:46.16]  wrong, it's going to be false. Okay, so
+[29:48.20]  we have to avoid one of those
+[29:50.20]  assignments, okay?
+[29:52.04]  Well, that means that there are seven
+[29:54.56]  out of the eight possible assignments,
+[29:56.68]  so there's like three variables,
+[29:58.52]  two to the three, eight possible
+[30:00.44]  assignments, seven of them could be a
+[30:03.20]  satisfying assignment. They uh they
+[30:04.96]  could be part of a satisfying
+[30:06.16]  assignment, we don't know. But one of
+[30:07.68]  them is definitely not.
+[30:09.48]  So the one easy way to see that 2-SAT
+[30:14.20]  can be solved in less than 2 to the n
+[30:15.88]  time is just take any clause,
+[30:19.00]  try one of the seven possible
+[30:21.36]  assignments,
+[30:23.28]  and plug them in,
+[30:25.40]  and then recurse
+[30:27.20]  on the remaining formula.
+[30:29.52]  Now, let's think about what we did. If
+[30:31.44]  we were just trying all the possible 2
+[30:33.92]  to the n assignments,
+[30:35.64]  and we we would like plug in,
+[30:38.40]  you know,
+[30:39.44]  uh one of eight possible assignments
+[30:42.32]  for each of those three variables. And
+[30:44.04]  so we'd have eight recursive calls.
+[30:47.28]  Well, we instead, because we're clever
+[30:49.20]  and we looked at the clauses, we have
+[30:51.00]  seven recursive calls.
+[30:53.12]  And that that's the difference. So so we
+[30:55.24]  reduced
+[30:56.68]  by three variables at the cost of seven
+[30:58.92]  recursive calls as opposed to eight.
+[31:02.32]  And this gets you a slight improvement.
+[31:04.80]  This gets you about
+[31:06.28]  uh 1.9
+[31:08.40]  two to the end.
+[31:09.76]  Something slightly better than
+[31:11.80]  than
+[31:13.04]  uh two to the end.
+[31:14.20]  Okay, but you can do better than this.
+[31:16.76]  Um
+[31:17.48]  But this is this is sort of like the
+[31:19.84]  idea. You try to look at ways to plug in
+[31:23.12]  variables that will force constraints so
+[31:26.76]  you can rule out a large portion of the
+[31:29.44]  possible assignments.
+[31:30.84]  >> When I was thinking about circuits, it
+[31:33.56]  and you know, the different widths and
+[31:35.16]  depths, I I don't know if this is uh
+[31:37.60]  unusual question, but it it reminds me
+[31:41.08]  of neural nets, but the operators are
+[31:43.44]  different and the space of the
+[31:47.36]  uh the literals is different. So instead
+[31:49.16]  of booleans, it's maybe floating points.
+[31:51.96]  And so it just made me wonder about uh
+[31:55.08]  the algorithms that you might apply on a
+[31:56.76]  neural net. Is there, you know, analogs
+[31:59.64]  in between these two spaces?
+[32:01.16]  >> Yes. Yes. So
+[32:03.08]  um
+[32:04.88]  Yeah, if we look at
+[32:07.04]  say I want to model a neural network
+[32:10.48]  on So I want to compute say it's still a
+[32:13.44]  boolean function,
+[32:15.04]  but I want to do it with like a neural
+[32:16.72]  network. So like I want to
+[32:19.28]  use, let's say
+[32:21.40]  uh relus or
+[32:23.56]  um sign activation functions or or what
+[32:26.92]  what have you. Um
+[32:29.20]  There is
+[32:30.36]  a slightly more general like gate that
+[32:33.32]  we can use instead of ors and ands. That
+[32:36.12]  turns out to basically be equivalent.
+[32:39.00]  So, if instead of using ORs and ANDs, we
+[32:42.52]  use a so-called majority gate,
+[32:45.04]  which outputs one if and only if at
+[32:47.84]  least half of its inputs are one.
+[32:51.92]  Using this and negations, we can
+[32:54.12]  actually simulate
+[32:56.24]  uh neural nets, like the usual types of
+[32:58.84]  neural nets that you think of with the
+[33:01.60]  usual types of activation functions. So,
+[33:04.04]  if they have a constant number of layers
+[33:06.88]  of neurons, we can get a constant number
+[33:09.16]  of layers
+[33:10.48]  of majority gates and and negations.
+[33:14.68]  So, once you go So, this is so-called TC
+[33:16.84]  circuits for threshold circuits.
+[33:19.52]  Uh yeah, so once you allow threshold
+[33:21.00]  circuits, you can start to model uh
+[33:23.12]  neural networks.
+[33:24.40]  >> Still using booleans. It's just
+[33:26.04]  >> We're still looking at boolean inputs
+[33:27.40]  though, yes. So, once you allow your
+[33:30.20]  input space
+[33:32.08]  to
+[33:33.44]  to be larger and like have floating
+[33:36.12]  points, then
+[33:37.84]  um you can you can prove a lot
+[33:40.96]  uh
+[33:41.60]  more in terms of lower bounds. You can
+[33:43.48]  find like things that take like depth
+[33:46.24]  three
+[33:47.36]  in a neural net that's, you know, can't
+[33:48.92]  be done in depth two and so on.
+[33:51.20]  Um
+[33:52.68]  So, yeah, once you go
+[33:54.92]  past that and you start looking at just
+[33:56.72]  arbitrary real domain, it it becomes a
+[34:00.40]  a a totally different picture than from
+[34:02.64]  a discrete domain.
+[34:04.84]  >> OpenAI, Anthropic, Cursor, and Vercel
+[34:08.60]  all use this product to make their lives
+[34:10.36]  better.
+[34:11.32]  And the problem it solves is when you're
+[34:13.20]  building SaaS or an ad product and you
+[34:15.88]  want to sell to other companies, there's
+[34:17.72]  all these requirements you need to meet.
+[34:19.84]  There's SSO, there's SCIM, there's RBAC,
+[34:23.48]  there's audit logs. These are all things
+[34:25.28]  that take time to integrate, but aren't
+[34:27.48]  the main focus of your app. WorkOS is an
+[34:29.80]  API layer that lets you meet all of
+[34:31.44]  these requirements in just a few lines
+[34:33.68]  of code. So, let's say you have a new
+[34:35.72]  SaaS product and you want to sell to
+[34:37.40]  other companies, WorkOS will solve all
+[34:39.88]  of these critical feature gaps for you.
+[34:42.60]  You can check them out at workos.com to
+[34:45.04]  learn more and get started. And I
+[34:47.20]  appreciate them for supporting my work
+[34:49.08]  and sponsoring this podcast. One topic I
+[34:51.64]  thought might be fun to go over is you
+[34:53.76]  you wrote this paper about the
+[34:55.76]  likelihoods of these various conjectures
+[34:58.72]  in complexity theory and
+[35:01.52]  I I pulled a few of these that were kind
+[35:04.24]  of a minority opinions or maybe, you
+[35:06.96]  know, less less common takes. So, I'm
+[35:09.36]  curious to hear your rationale. So,
+[35:11.74]  >> [laughter]
+[35:12.28]  >> uh one of them the well-known one, you P
+[35:15.28]  P not equal to NP or, you know, P versus
+[35:17.76]  NP.
+[35:18.84]  Um
+[35:20.20]  you assigned an 80% confidence that
+[35:22.60]  they're not the same. And I think most
+[35:25.64]  people say much higher confidence. So,
+[35:28.44]  why do you why would you assign such a
+[35:29.92]  low confidence that they're not the
+[35:31.32]  same?
+[35:32.68]  >> It's interesting because I think I
+[35:34.20]  originally had something like
+[35:36.56]  75%
+[35:38.92]  but then uh my college classmate Scott
+[35:41.84]  Aaronson was like, "How dare you?" kind
+[35:44.08]  of you know,
+[35:44.92]  he was
+[35:45.15]  >> [laughter]
+[35:45.52]  >> he was he he sort of called me out and
+[35:47.44]  I'm like, "Okay, fine. For you 80%
+[35:49.48]  fine."
+[35:50.40]  I guess that my point is that
+[35:53.80]  we really don't understand polynomial
+[35:56.64]  time computation
+[35:58.76]  as deeply
+[36:00.12]  as we think we do. And
+[36:02.92]  there are
+[36:03.92]  surprises like all the time
+[36:07.16]  in the power of algorithms.
+[36:10.08]  There are very few surprises in terms of
+[36:12.92]  lower bounds. Like, when we are able to
+[36:15.24]  prove a lower bound,
+[36:17.36]  typically it's something we
+[36:20.20]  very much expected to be true
+[36:22.40]  but it was hard to prove. It was hard to
+[36:24.72]  prove.
+[36:26.16]  Somehow we pulled it off, we got what we
+[36:28.00]  expected to be true.
+[36:29.68]  But all the time in algorithms
+[36:31.88]  people are finding algorithms where
+[36:35.00]  it's just like surprising. Just
+[36:37.56]  Wait. What? How How do you get something
+[36:42.16]  that fast? You're right. So
+[36:44.80]  uh this just happens over and over.
+[36:47.48]  When I was younger
+[36:49.44]  um when I was first thinking about P
+[36:51.04]  versus NP
+[36:53.44]  I
+[36:55.72]  like I had an intuition for what should
+[36:57.92]  be.
+[36:59.24]  And
+[37:01.00]  what I've understood over the years is
+[37:02.56]  that
+[37:03.52]  my intuition for what should be
+[37:06.04]  is often just wrong. And I'm I'm having
+[37:09.36]  to revise my intuitions uh all the time.
+[37:13.28]  So when something like this happens
+[37:16.40]  often enough
+[37:18.28]  you start asking yourself, "What do I
+[37:20.84]  really understand?
+[37:23.84]  Uh do I really understand P versus NP?"
+[37:26.56]  Like I mean, I understand the the the
+[37:29.24]  statement, right? Like it's just one of
+[37:31.32]  those problems where
+[37:33.76]  somehow it is not so difficult to to
+[37:37.28]  make formal, to write down
+[37:38.92]  mathematically.
+[37:40.48]  But to actually know what the answer is
+[37:43.72]  is just orders of magnitude more
+[37:46.52]  difficult than it is to phrase the
+[37:48.96]  problem. And complexity theory in
+[37:50.84]  particular is littered with
+[37:54.32]  statements like this where
+[37:56.68]  um
+[37:58.28]  the the space of algorithms is just that
+[38:00.28]  vast. Um
+[38:01.84]  so if you just if you're just keep
+[38:03.72]  getting surprised over time, you're just
+[38:05.16]  like, "Well, what
+[38:06.68]  what do I understand?" Maybe it was just
+[38:08.36]  misplaced confidence.
+[38:10.36]  >> Okay, what about this one? So
+[38:12.60]  EXP not equal to NEXP or would you say
+[38:15.88]  NEXP?
+[38:16.80]  >> Oh, NEXP. Yeah. EXP versus NEXP. So this
+[38:19.36]  is like the exponential time
+[38:22.12]  of P versus NP.
+[38:24.40]  >> For X not equal to NX or NEXP,
+[38:29.40]  you gave it a 45% chance. And if this is
+[38:32.18]  >> [laughter]
+[38:32.40]  >> the P not equal to NP
+[38:34.96]  equivalent, but for exponential time,
+[38:36.84]  why is your
+[38:37.68]  >> Yeah.
+[38:38.16]  >> Why is it so low?
+[38:39.40]  >> Oh, because exponential time algorithms
+[38:41.80]  are even more powerful.
+[38:43.64]  Did I really say 45%? I mean,
+[38:45.96]  >> You did.
+[38:47.28]  >> versus X or NX versus co-NX.
+[38:50.16]  >> Yeah, NX not equal to X 45%.
+[38:53.14]  >> [laughter]
+[38:53.16]  >> I have it.
+[38:53.92]  It's in this table.
+[38:55.20]  >> So, so in other words, I believe NX
+[38:57.60]  equals X more
+[38:59.68]  than I believe they're different, right?
+[39:01.92]  So,
+[39:03.64]  um yeah, let me try to explain why. So,
+[39:06.60]  you can think of the NX versus X
+[39:10.00]  question
+[39:11.68]  as
+[39:13.16]  um some special case
+[39:15.32]  of P versus NP,
+[39:17.24]  where instead of looking at the
+[39:19.40]  arbitrary SAT problem,
+[39:21.88]  I'm looking at a SAT problem which is
+[39:24.84]  extremely compressible.
+[39:27.56]  So, there's like a really small little
+[39:30.12]  computer
+[39:32.04]  that is exponentially smaller than the
+[39:34.40]  length of the instance, and it just
+[39:36.52]  outputs the character
+[39:38.72]  uh on the line number and the column
+[39:40.52]  number for the for the DIMACS CNF, like
+[39:42.68]  the the CNF file, okay? So, it's like a
+[39:45.56]  extreme compression
+[39:47.96]  of like some file.
+[39:49.76]  So, it's like you zipped it down to like
+[39:51.56]  something like exponentially smaller
+[39:53.96]  than its original length, okay?
+[39:56.60]  So, it's like some super compressed,
+[39:58.28]  extremely highly regular
+[40:00.60]  SAT instance. So, I give you that, and I
+[40:03.48]  ask you,
+[40:05.44]  uh when you unpack this thing,
+[40:07.76]  decompress it,
+[40:09.60]  is the result going to be satisfiable or
+[40:11.92]  not?
+[40:13.12]  And I want you to solve this
+[40:15.96]  in time polynomial in the decompressed
+[40:18.80]  representation.
+[40:20.84]  Okay.
+[40:21.92]  Okay. So, the point is that like this is
+[40:24.00]  SAT, but
+[40:25.88]  in the some very special case where the
+[40:27.72]  thing is extremely structured.
+[40:30.20]  So, the idea
+[40:31.88]  um one conjecture for why SAT solvers
+[40:37.52]  work
+[40:38.72]  um
+[40:39.32]  in practice.
+[40:40.80]  Like one I mean this is
+[40:42.96]  I mean conjecture maybe overkill because
+[40:46.24]  I mean this is just this is not even a
+[40:48.32]  well-formed mathematical statement. So,
+[40:50.92]  one hypothesis for why SAT solvers work
+[40:53.72]  in practice is because
+[40:55.80]  um the real world is highly structured.
+[40:58.60]  The real world is governed by physical
+[41:01.08]  laws
+[41:02.24]  that are not random. They're not
+[41:04.04]  arbitrary. Like from a very small number
+[41:06.88]  of rules, we can recreate so much of
+[41:09.32]  science.
+[41:10.84]  So,
+[41:12.08]  what arises in practice from designs of
+[41:15.32]  hardware and things like this are often
+[41:17.56]  extremely compressible. They have to be
+[41:19.88]  extremely compressible.
+[41:22.56]  And
+[41:23.92]  so maybe it's true that you know, every
+[41:27.68]  uh SAT which has
+[41:29.60]  uh a highly compact representation can
+[41:32.36]  just be solved uh efficiently. This is
+[41:35.32]  This is the idea of whether, you know,
+[41:37.68]  NEXP equals EXP.
+[41:39.64]  Um that it when it's really really
+[41:41.44]  structured like that and super
+[41:42.88]  compressible, there is some advantage.
+[41:45.24]  It's not like a completely random and
+[41:47.88]  since it's not like something arbitrary,
+[41:49.44]  it's No, it's in fact very very special.
+[41:51.92]  >> The other one is 80% likelihood on NEXP
+[41:56.24]  equal to coNEXP,
+[41:58.60]  and you wrote why would a
+[42:00.28]  self-respecting complexity theory do
+[42:02.68]  that?
+[42:03.74]  >> [laughter]
+[42:04.68]  >> Yeah, I was curious why that's such a
+[42:06.60]  contentious statement.
+[42:08.36]  >> So, NEXP versus coNEXP. Let's Let's
+[42:10.48]  first talk about NP versus co-NP.
+[42:13.84]  So, co-NP
+[42:15.64]  um
+[42:17.12]  is like the class of sort of complements
+[42:20.56]  of NP-complete problems like
+[42:23.00]  like UNSAT, like checking whether
+[42:24.72]  something's UNSAT.
+[42:26.44]  Now, from the time complexity point of
+[42:28.28]  view
+[42:29.36]  there's no difference between checking
+[42:31.20]  SAT and UNSAT. You can always flip the
+[42:32.84]  answer.
+[42:34.00]  But from the complexity point of view,
+[42:35.88]  if I if I ask you does co-NP equal NP?
+[42:40.20]  What I'm asking you is, could you prove
+[42:42.72]  to me
+[42:43.84]  that a formula is unsatisfiable
+[42:46.96]  with a short proof?
+[42:48.72]  When it's satisfiable I can give you a
+[42:51.16]  short proof. I can just give you the
+[42:52.60]  satisfying assignment. You plug it in,
+[42:55.00]  check that it works. But if it's
+[42:56.68]  unsatisfiable, if there no assignment
+[42:59.08]  works
+[43:00.36]  we're saying for all assignments
+[43:02.80]  the formula is not true. Can you flip
+[43:04.44]  that to an existential statement and
+[43:06.64]  say, "Oh, there exists this little proof
+[43:08.96]  makes it work." So
+[43:10.44]  people don't believe that NP is equal to
+[43:13.88]  co-NP
+[43:15.40]  and in fact like NP different from co-NP
+[43:19.24]  implies P different from NP.
+[43:21.36]  Um
+[43:22.16]  But so this is the exponential time
+[43:24.08]  version
+[43:25.56]  of NP versus co-NP. So it's co-NEX
+[43:29.84]  uh
+[43:30.40]  versus NEX.
+[43:32.32]  The reason why I think
+[43:35.24]  these are likely to be equal
+[43:38.00]  is that
+[43:39.72]  if a little birdie
+[43:41.72]  sat on an NEX machine's shoulder and
+[43:44.72]  gave it a little bit of advice
+[43:47.20]  about what the co-NEX thing is doing
+[43:50.84]  then
+[43:51.88]  the an NEX
+[43:53.80]  uh algorithm
+[43:55.28]  can actually solve co-NEX problems.
+[43:58.36]  And so let let me explain
+[44:00.16]  uh let me explain why Yeah, what's the
+[44:01.52]  little birdie What the heck is the
+[44:02.76]  little birdie saying? So
+[44:04.80]  because NEX problems can run in 2 to the
+[44:07.92]  end time and two to the N squared time
+[44:10.32]  and things like that.
+[44:12.04]  Running an exhaustive search over all
+[44:14.56]  possible inputs of length N is no
+[44:16.72]  problem
+[44:17.88]  for NX.
+[44:19.08]  So, what a little birdie can do is say,
+[44:21.76]  "Okay, suppose um
+[44:24.52]  like I want to verify that
+[44:27.88]  this particular
+[44:30.04]  um instance
+[44:32.36]  like let's say let we can talk about
+[44:33.88]  like an unsat but like the you know some
+[44:36.04]  compressible unsat problem or something.
+[44:38.40]  Suppose I want to prove that this
+[44:39.56]  compressible unsat instance
+[44:42.44]  um
+[44:43.04]  is a yes. Okay? How am I going to do
+[44:45.32]  that uh
+[44:47.16]  with NX?
+[44:48.56]  The little birdie will tell me
+[44:51.12]  the total number of inputs of length N
+[44:54.04]  which are a yes.
+[44:56.60]  Okay?
+[44:57.56]  So, it it will it will just tell me some
+[44:59.64]  string which says, "Here's the total
+[45:01.52]  number of inputs of length N. You gave
+[45:03.60]  me a length N input. Here's the total
+[45:05.24]  number of inputs of length N
+[45:07.96]  uh
+[45:08.56]  that are a yes. Okay?
+[45:11.40]  Okay? So,
+[45:13.84]  um this this advice this little you know
+[45:18.08]  birdie's advice doesn't take very much
+[45:20.36]  like to encode a count. It's like order
+[45:22.80]  N bits to encode a count uh of things.
+[45:26.60]  So,
+[45:27.96]  um so, what does the NX thing do to
+[45:31.12]  prove a co-NX thing? What it does is it
+[45:33.88]  guesses
+[45:35.56]  the things which are a no.
+[45:38.04]  So, I'm trying to prove unsat. So, unsat
+[45:40.16]  means yes, sat means no.
+[45:42.64]  So, the NX thing guesses those things
+[45:44.96]  which are no.
+[45:46.16]  The no things it can answer, right? If
+[45:48.28]  it's a sat thing, it can just guess the
+[45:50.40]  answer to each of the nos.
+[45:53.36]  Okay?
+[45:54.44]  So, it guesses the answer to each of the
+[45:56.36]  nos. It verifies all those answers, and
+[45:59.40]  then it checks that the number of things
+[46:01.64]  it guessed is what the birdie told it.
+[46:04.88]  Once it's done that, all the no's have
+[46:08.12]  been covered, so everything else must be
+[46:10.88]  a yes.
+[46:12.36]  So that so so it can actually prove a
+[46:14.88]  yes by just exhaustively finding all the
+[46:18.24]  no's and ruling out any other no's.
+[46:21.72]  >> But the big question in my mind is where
+[46:23.92]  do you get the little birdie?
+[46:24.84]  >> Where do you get the little birdie
+[46:25.68]  advice from? Yeah, yeah. So
+[46:27.84]  yeah, so this I studied yeah, this um
+[46:31.52]  what the little birdie gives you
+[46:33.76]  and it seems to me that it it is
+[46:36.56]  possible that this little birdie itself
+[46:39.96]  can be constructed in NX.
+[46:42.64]  And if so, then we'd just be done. Like
+[46:45.20]  in NX, you figure out what the little
+[46:47.28]  birdie would tell you and then use that
+[46:49.72]  to just flip the answer. So it guess
+[46:53.04]  Let's sort of guess all the things which
+[46:55.00]  are no, so what remains must be a yes
+[46:57.12]  and
+[46:58.64]  we talked a lot about time
+[47:00.00]  >> complexity. And you mentioned a little
+[47:01.96]  bit this advice I guess kind of space
+[47:03.56]  complexity. And I know you had a major
+[47:06.12]  result relating space and time
+[47:08.76]  complexity. You're basically simulating
+[47:11.40]  time complexity with space complexity,
+[47:13.84]  but lower than it's been done prior.
+[47:17.12]  Could you explain
+[47:19.12]  what it was before your breakthrough
+[47:21.32]  result and then maybe the intuition
+[47:23.40]  behind your breakthrough result?
+[47:25.32]  >> Uh in general, the problem is the
+[47:27.56]  following. I give you
+[47:29.92]  an algorithm that runs in time T
+[47:33.16]  and I want to know
+[47:35.64]  um is there another algorithm that uses
+[47:38.24]  space much less than T? Uses amount of
+[47:41.64]  memory like you know, units of memory
+[47:43.60]  much less
+[47:44.92]  than T
+[47:46.36]  and still solve the problem completely.
+[47:48.72]  Still completely simulates the thing
+[47:50.60]  perfectly.
+[47:52.00]  Um
+[47:53.56]  one intuition for why you
+[47:56.76]  might think um
+[47:58.84]  this
+[47:59.68]  question just
+[48:01.04]  can't be solved or some problems there's
+[48:02.28]  just no
+[48:03.64]  way to improve on the spaces if you
+[48:05.96]  think of like
+[48:07.60]  the pro like a lot of problems in
+[48:09.16]  dynamic programming like let's say I
+[48:11.88]  have
+[48:13.56]  um
+[48:14.36]  some logic circuit that I want to
+[48:16.32]  evaluate and all of the gates are
+[48:18.92]  provided to me in a row and all the
+[48:22.20]  wires sort of flow from left to right.
+[48:25.32]  And the you know I start with
+[48:26.36]  information on the left.
+[48:28.56]  I want to compute the information on the
+[48:31.04]  far right.
+[48:32.44]  And all the you know all the bits are
+[48:33.92]  flowing left to right by wires.
+[48:36.64]  The natural way to evaluate such a
+[48:38.84]  circuit is you start with say the inputs
+[48:40.60]  on the left.
+[48:41.92]  For each gate in turn in the the line
+[48:45.68]  you look at its inputs. Its inputs have
+[48:47.76]  been determined if there's some bits.
+[48:50.04]  You use that to compute the value of
+[48:51.96]  that gate. You pass the values of that
+[48:55.12]  of you know the output of that gate
+[48:56.48]  forward.
+[48:57.40]  Okay?
+[48:58.60]  But if
+[48:59.80]  that uh circuit you know has
+[49:02.88]  T gates in it you know it will take
+[49:04.60]  about T time to solve but it will
+[49:06.72]  definitely also take about T space in
+[49:08.88]  general.
+[49:10.00]  All right? Like the circuit could be
+[49:11.60]  wired up in some wild way and there just
+[49:14.28]  might not be a way to save uh space for
+[49:16.96]  an arbitrary uh circuit.
+[49:19.44]  But already in 1975
+[49:25.24]  people were studying this kind of of
+[49:27.08]  question and finding counterintuitive
+[49:29.76]  answers to it.
+[49:31.28]  So
+[49:31.96]  um Hopcroft, Paul, and Valiant uh based
+[49:35.20]  on work of Patterson and Valiant
+[49:38.24]  uh showed that
+[49:41.00]  time T algorithms at least in this
+[49:43.84]  so-called multi-tape Turing machine uh
+[49:46.24]  model very powerful model uh can be
+[49:49.28]  simulated in space T divided by log of
+[49:52.80]  T. So I mean it's like a like you you
+[49:56.08]  get some space savings but it's only
+[49:57.84]  like a log T factor. Okay.
+[50:00.52]  Um
+[50:01.92]  and
+[50:03.20]  the way this is done is is quite
+[50:06.80]  counterintuitive. Uh it was I mean like
+[50:10.00]  even though there's a only a log factor
+[50:12.12]  there it was
+[50:13.20]  uh
+[50:13.84]  pretty shocking.
+[50:15.76]  That development was
+[50:18.16]  extended to random access models of
+[50:20.76]  computation
+[50:22.24]  um later
+[50:24.08]  and and in more general models of
+[50:26.84]  computation. So like in in the late '70s
+[50:29.44]  and early '80s.
+[50:30.84]  Um
+[50:32.08]  so so it was known for like a pretty
+[50:35.40]  much any reasonable model of computation
+[50:37.28]  that time T can be simulated in space
+[50:40.12]  about T over log T.
+[50:42.28]  But there was a hidden maybe not so
+[50:45.00]  hidden um gotcha in the space efficient
+[50:48.68]  simulation. It needs
+[50:51.12]  an exponential amount of time
+[50:53.20]  to run. So like you there's a time space
+[50:55.56]  trade-off. Okay, if you really want to
+[50:57.20]  save some space you got to blow up the
+[50:59.44]  time by a lot.
+[51:02.04]  Nevertheless
+[51:03.48]  um yeah, it was kind of commonly
+[51:06.12]  conjectured that
+[51:08.60]  this T over log T space was about the
+[51:11.96]  best you could do and you
+[51:14.16]  and that you were probably not going to
+[51:16.24]  get T to the 0.9
+[51:19.68]  space or you know something something
+[51:22.28]  much more efficient. Um
+[51:25.36]  so yeah, it was a big surprise to me uh
+[51:29.84]  like that you can actually put time T in
+[51:33.08]  space about square root
+[51:35.64]  of T.
+[51:36.80]  Again, there's an exponential
+[51:38.92]  running time just to you know give the
+[51:41.20]  full caveat out there.
+[51:43.28]  But
+[51:44.52]  um
+[51:45.28]  but it's still very surprising. Like
+[51:47.16]  this holds for
+[51:48.88]  any kind of time T
+[51:51.16]  uh algorithm. Like, including something
+[51:52.48]  that might be outputting, you know,
+[51:54.56]  something pseudo random, some you know,
+[51:57.40]  something from cryptography,
+[51:59.60]  you know, like it's not at all obvious
+[52:01.80]  that every such process could be
+[52:04.28]  compressed
+[52:05.76]  to only be need like square root of T
+[52:09.04]  uh space and still get the job done,
+[52:10.76]  still compute whatever function was
+[52:12.96]  being computed.
+[52:14.12]  >> I mean, I know it's probably super
+[52:15.48]  involved, but if you could just a high
+[52:17.64]  level, what's the trick? How'd you do
+[52:19.16]  it?
+[52:19.48]  >> Well, the trick for me was to read
+[52:23.00]  um James Cook and Ian Mertz's paper on
+[52:26.20]  tree evaluation very, very carefully.
+[52:28.40]  That
+[52:29.36]  I mean, and just knowing um the P the
+[52:33.84]  landscape around P versus P space and
+[52:35.84]  knowing what Hopcroft, Paul, and Valiant
+[52:38.36]  did. Um
+[52:41.12]  Yeah, so but I I can give you a very
+[52:43.52]  high-level idea of
+[52:46.32]  kind of what's going on and how what
+[52:49.68]  they did uh is useful.
+[52:52.44]  So,
+[52:54.04]  Hopcroft, Paul, and Valiant, the way
+[52:55.64]  they were modeling
+[52:57.48]  uh space-bounded computation was in a
+[52:59.96]  particular way that seemed pretty
+[53:01.60]  general uh at the time, but turned out
+[53:05.12]  to be restrictive
+[53:07.20]  uh
+[53:08.32]  in ways that we just didn't anticipate.
+[53:10.48]  So, the way they thought of it was
+[53:14.52]  um I'm going to take like certain I'm
+[53:17.28]  going to break the computation up into
+[53:18.52]  little pieces
+[53:20.16]  and I'm going to
+[53:23.80]  like write I'm going to write pieces of
+[53:27.52]  the computation like little bits into
+[53:29.56]  the memory, but I'm only going to do
+[53:31.20]  that over blank space. I mean, this is
+[53:33.64]  something that sounds natural, right?
+[53:35.00]  Like, so like I'm going to erase pieces
+[53:38.48]  of memory and then I'm going to
+[53:40.20]  overwrite that blank space with a piece
+[53:42.92]  of memory. So, I'm being very
+[53:44.32]  destructive in a certain sense. Like but
+[53:47.04]  this is a natural thing you do, right?
+[53:48.68]  Like if you want to replace you know,
+[53:50.76]  swap something with something else,
+[53:53.52]  you often just erase. But there are ways
+[53:57.00]  to swap
+[53:58.56]  without uh erasing, right? So, there's
+[54:01.68]  like a common
+[54:03.24]  little trick that is taught in uh CS
+[54:06.04]  courses.
+[54:07.12]  So, like if you
+[54:08.72]  um if you require everything to be
+[54:11.44]  written into a blank uh
+[54:14.04]  register,
+[54:15.36]  then if you want to swap the contents of
+[54:17.68]  two variables like X and Y,
+[54:20.16]  then you've
+[54:21.32]  you've got to have a temporary register.
+[54:23.12]  Like you move one into the temp, you
+[54:25.12]  erase it, you move Y into the
+[54:27.52]  into there and then so on, right?
+[54:29.72]  But if you don't want a temp, you can
+[54:33.04]  achieve the same thing uh with just
+[54:36.56]  XORing the the registers bitwise. Or if
+[54:39.88]  you've got numbers, you can add and
+[54:41.36]  subtract, okay? In three instructions,
+[54:44.92]  clever instructions, adding,
+[54:46.36]  subtracting, or XORing,
+[54:48.44]  you can actually swap the contents of
+[54:50.48]  two registers without needing a third.
+[54:53.92]  Okay? This is kind of the starting point
+[54:56.12]  for thinking about like, well, why does
+[54:57.96]  it matter
+[54:59.48]  if you're always writing into erased
+[55:02.40]  memory?
+[55:03.60]  So,
+[55:04.56]  so what
+[55:05.80]  uh
+[55:06.44]  James Cook and Ian Mertz showed
+[55:09.68]  uh at a very high level was
+[55:12.08]  they they were studying a certain
+[55:14.44]  problem
+[55:15.88]  called tree evaluation, whatever that
+[55:18.00]  is,
+[55:18.92]  and they were the problem had an
+[55:21.36]  algorithm where you're all you had a
+[55:24.32]  little stack
+[55:25.68]  and you're always sort of like
+[55:29.20]  um you know,
+[55:30.52]  popping and and uh pushing on the stack,
+[55:33.52]  but you were always, you know, writing
+[55:36.32]  uh
+[55:37.80]  writing computation contents into erase
+[55:41.72]  memory, okay? What they realized was
+[55:44.28]  that if you allow computations to XOR
+[55:48.44]  bits of memory into existing memory,
+[55:51.12]  then you can save a lot of space.
+[55:53.56]  So, if you're really, really careful
+[55:56.48]  about how you XOR things, you can
+[55:59.40]  basically recover uh you like what's in
+[56:03.00]  your memory without storing all of it at
+[56:05.24]  once. You sort of offload things to
+[56:07.44]  computation,
+[56:09.00]  and you XOR on top of things very, very
+[56:11.76]  cleverly. You can get like nice
+[56:13.52]  cancellations of things you don't want,
+[56:16.20]  and and keep around things you do want.
+[56:18.92]  Yeah, so
+[56:20.36]  I mean, that is a high-level uh idea of
+[56:23.56]  how this stuff works. And then going to
+[56:25.60]  square root, is it just an extension of
+[56:27.80]  that, or is it a completely different?
+[56:29.48]  So, the the way it works with square
+[56:30.92]  root, a square root just happens to be
+[56:32.52]  kind of like the optimal trade-off
+[56:35.48]  in this uh tree evaluation business. So,
+[56:39.24]  so
+[56:40.80]  um what you do is you break the
+[56:42.32]  computation into square root of T time
+[56:45.60]  intervals,
+[56:46.84]  and each time interval has about square
+[56:48.44]  root of T
+[56:49.76]  um steps in it.
+[56:52.48]  And then what you do is you you give a a
+[56:54.52]  particular way of simulating this thing,
+[56:58.96]  so that you're only kind of holding
+[57:01.36]  about a constant number
+[57:04.00]  of blocks or like of these time
+[57:06.28]  intervals in memory at any point in
+[57:08.24]  time.
+[57:09.20]  Like you're only holding a small number
+[57:11.60]  of these
+[57:13.08]  uh
+[57:13.68]  time intervals, like a records of time
+[57:15.92]  intervals in memory at any any point in
+[57:18.28]  time.
+[57:19.24]  Which is entirely not obvious how you
+[57:21.64]  would do it. But but it's some sort of
+[57:23.96]  like it's some sort of sweet spot to set
+[57:26.32]  the square root of T. It's a way to It's
+[57:27.84]  like the
+[57:28.76]  the minimum setting of like trade-off.
+[57:31.00]  Like say I have like
+[57:32.68]  I want to break the computational
+[57:34.16]  intervals, and the intervals have a
+[57:36.44]  certain number of steps. If I If I set
+[57:38.32]  it to be square root of T, then the
+[57:39.92]  number of intervals and the number of
+[57:41.64]  steps in each interval is about the
+[57:43.36]  same.
+[57:44.64]  >> So, I mean, that was a long-held result.
+[57:47.28]  I mean, you you mentioned it was 1975.
+[57:49.72]  That's maybe Yeah, almost 50 years where
+[57:52.88]  if you come up with something like that
+[57:54.44]  and you you I guess you're writing it
+[57:56.32]  out, you're thinking through, and then
+[57:58.04]  you see it. What is that moment like?
+[58:00.60]  >> So, I you know, I'm I've been around
+[58:02.68]  long enough to have been deceived by
+[58:05.36]  myself many many many many times.
+[58:09.16]  So,
+[58:10.36]  yeah, I guess the the first two or three
+[58:12.72]  times I thought about this,
+[58:16.32]  um
+[58:17.08]  I just thought this is another one of
+[58:18.60]  those ideas that can't possibly work.
+[58:21.80]  There's no way. There's just no way this
+[58:23.36]  works.
+[58:24.28]  Um
+[58:26.08]  so, I would just kind of leave it
+[58:28.72]  and then come back to it sometimes when
+[58:30.40]  I was
+[58:32.20]  bored of whatever else I was working on.
+[58:34.32]  Um
+[58:35.36]  like I I It was a pretty slow process of
+[58:38.44]  convincing myself that this could
+[58:40.40]  possibly be true. Like, I
+[58:42.80]  I thought there was
+[58:45.16]  either a bug in what
+[58:49.08]  James and Ian
+[58:50.72]  was doing somewhere,
+[58:52.92]  or there was a bug in
+[58:55.52]  my interpretation of what's happening.
+[58:58.36]  Um I thought
+[59:00.16]  there had to be a mistake for a long
+[59:02.32]  time.
+[59:03.60]  And the only way I got over that was
+[59:05.52]  just
+[59:06.64]  writing it down
+[59:08.64]  uh over and over and over in different
+[59:10.80]  ways, sort of writing and rewriting and
+[59:13.04]  writing and rewriting and adding more
+[59:14.68]  detail,
+[59:15.96]  and then maybe finding a different way
+[59:17.40]  of explaining it and it erasing and, you
+[59:20.64]  know, writing something shorter,
+[59:22.48]  and just sort of re-explaining it to
+[59:24.04]  myself over and over and over.
+[59:27.00]  And even then, like when I submitted it
+[59:28.80]  to the
+[59:29.92]  um stock conference where it was where
+[59:32.64]  it appeared, um I wasn't entirely
+[59:36.04]  confident that it was correct. I was
+[59:38.20]  just exhausted from like thinking about
+[59:40.72]  it for so long and just thought that
+[59:42.44]  maybe someone else will find the mistake
+[59:44.32]  for me. Like I'm Like I Like I At this
+[59:46.56]  point, like
+[59:47.84]  I I was just like desperate. Like I had
+[59:50.12]  actually sent it
+[59:51.72]  to two
+[59:53.20]  colleagues that I trust,
+[59:55.44]  you know, privately and asked them,
+[59:58.48]  "Can you help me find the mistake?" Or
+[60:01.24]  whatever. "Can you help me understand
+[60:02.76]  this?" And one of them just said, like
+[60:05.76]  they Basically, they just didn't read
+[60:07.60]  past the abstract. They're like, "I'm
+[60:09.52]  not I'm sorry. I'm not going to
+[60:12.92]  I'm like they just didn't believe it,
+[60:14.40]  period. Just like me. I mean, they
+[60:15.92]  didn't believe it.
+[60:17.24]  And
+[60:18.68]  uh another one said,
+[60:21.60]  after a long time, "Well,
+[60:24.80]  I didn't quite
+[60:26.52]  um
+[60:27.08]  follow it, but
+[60:28.64]  there was a footnote that you put
+[60:31.56]  like in in the bottom of some page.
+[60:34.04]  After that after that footnote,
+[60:36.68]  then I began to believe it."
+[60:39.52]  So then what I did was I just took that
+[60:41.00]  footnote and elaborated it in in like a
+[60:43.80]  later revision, sort of made it the what
+[60:45.64]  I called the warm-up. I'm going to
+[60:47.28]  because I was like, yeah, I I've got to
+[60:49.28]  do I've got to write this thing in a way
+[60:52.36]  that is airtight so that other people
+[60:54.28]  will actually believe believe this
+[60:56.68]  because
+[60:58.08]  yeah, I it took me a long time to get
+[61:00.56]  used to it, to believe it. Yeah.
+[61:02.04]  >> Wow. Uh what What motivates you to solve
+[61:06.00]  these
+[61:07.04]  hard problems? I mean, what keeps you
+[61:10.44]  driven? Cuz you kind of sounds like you
+[61:13.60]  got to just bash your head against the
+[61:15.56]  wall and
+[61:17.96]  maybe you get there, maybe you don't.
+[61:20.76]  >> I try not to bash my head against the
+[61:24.16]  wall. Um and if I'm going to do it,
+[61:27.84]  it's going to be, you know, a
+[61:29.72]  comfortable wall. It's going to be, you
+[61:32.08]  know, when it's like
+[61:33.92]  high-end and luxurious or something.
+[61:36.68]  Like I'm going to enjoy
+[61:39.52]  uh the process is what I mean. Like if
+[61:43.00]  if I don't enjoy the process of really
+[61:47.60]  grinding and trying to understand
+[61:49.04]  something,
+[61:50.44]  I'm just I'm not going to do it. Like uh
+[61:52.68]  So, I think that
+[61:54.80]  if, you know, if anything is
+[61:56.80]  uh one thing that I that I like I I like
+[61:59.68]  to involve myself in
+[62:01.60]  working on problems where
+[62:03.56]  the the grind is actually joyous and and
+[62:07.12]  fun. Yeah. Um for the other things, uh
+[62:11.12]  they're just they're mainly
+[62:12.20]  opportunistic. They're mainly me just
+[62:15.36]  taking something that new that I see and
+[62:18.60]  just fully integrating it with
+[62:20.48]  everything I know and following
+[62:22.08]  everything to the logical conclusion.
+[62:24.80]  And just seeing what happens. Like and
+[62:26.68]  not not trying not to get emotional,
+[62:28.68]  trying not to whatever, just trying to
+[62:30.96]  follow everything one step after
+[62:33.72]  another. Yeah.
+[62:35.32]  How do you pick good research direction?
+[62:38.00]  The best kind of research direction,
+[62:40.28]  which is very hard to um
+[62:43.32]  it's very hard to come across,
+[62:45.60]  is a direction where you
+[62:48.16]  you've set yourself up in a way that you
+[62:49.68]  can't lose.
+[62:51.12]  That like I have a hypothesis
+[62:54.28]  H
+[62:55.40]  and one of two things is going to
+[62:57.56]  happen. Like either I
+[62:59.60]  prove H is true
+[63:01.44]  or I refute H, prove not H. What I would
+[63:04.92]  like to have is a situation where
+[63:09.08]  um if H is true,
+[63:11.36]  then good things happen. If not H is
+[63:13.68]  true,
+[63:15.08]  good things still happen. Other other
+[63:16.84]  good things. Like um the I like I like
+[63:20.20]  to look at things where Yeah, it's a
+[63:23.04]  win-win.
+[63:24.24]  Kind of if if you can
+[63:27.12]  find opportunities like this, this is
+[63:29.60]  important. Like I think often I'm not
+[63:33.76]  looking at a specific uh problem.
+[63:37.16]  I'm looking at a method. I'm looking at
+[63:40.80]  the technique.
+[63:42.40]  You know, I'm looking at not the
+[63:43.44]  specific proof, but like like the space
+[63:46.68]  of ideas, and I'm trying to understand
+[63:49.48]  what else can be done in the space of
+[63:51.48]  ideas.
+[63:52.92]  Like so so often I solve problems just
+[63:55.64]  by by just taking some idea and putting
+[63:58.28]  it somewhere somewhere else.
+[63:59.88]  >> Do you have a concrete example of where
+[64:02.20]  you you've pursued something knowing
+[64:04.04]  that if you succeed, good. If you
+[64:07.48]  succeed in other direction, also good.
+[64:09.80]  >> I have some particular research program
+[64:13.76]  for which if it materializes, would
+[64:16.80]  actually
+[64:18.16]  show that something called the
+[64:19.56]  orthogonal vectors problem
+[64:21.80]  can be solved in nearly linear time.
+[64:24.00]  Okay? Now,
+[64:26.04]  this um
+[64:27.60]  Now, if that's true, then the SAT
+[64:30.48]  problem can be solved
+[64:32.44]  in about the same time as subset sum. It
+[64:35.04]  could be solved in like square root of 2
+[64:36.60]  the n. So, this would like
+[64:38.88]  truly break uh strong ETH in like a
+[64:42.12]  radical way. Okay?
+[64:44.52]  And
+[64:46.04]  um
+[64:46.68]  I did a lot of work uh in the past
+[64:49.72]  showing how if
+[64:52.44]  uh you can improve on the running time
+[64:55.60]  of SAT,
+[64:56.88]  then you can somehow use that
+[64:59.48]  to prove circuit complexity lower
+[65:01.56]  bounds. You can take an algorithm for
+[65:04.24]  analyzing circuits
+[65:06.28]  that's non-trivial and interesting and
+[65:09.36]  turn that into a limitation on what
+[65:12.20]  those circuits can compute. Okay?
+[65:15.44]  So
+[65:16.52]  So this hypothesis
+[65:18.64]  Let me Maybe maybe I won't exactly say
+[65:20.96]  what it is. It's It's a pretty
+[65:23.16]  technical statement, but the point is
+[65:25.04]  that if the hypothesis is true
+[65:28.96]  then I get this fantastic algorithm for
+[65:32.32]  this orthogonal vectors problem. I get
+[65:34.72]  this algorithm for SAT. I get circuit
+[65:36.96]  complexity lower bounds from that. I get
+[65:38.96]  to somehow prove limitations on what
+[65:40.92]  circuits can do.
+[65:43.04]  If the hypothesis is false
+[65:45.52]  I can use that hypothesis to actually
+[65:47.44]  show another circuit complexity lower
+[65:50.32]  bound of a different flavor.
+[65:53.20]  So So regardless of whether or not like
+[65:56.16]  the hypothesis is true or false, like
+[65:57.92]  I'm going to make progress in complexity
+[65:59.80]  theory. I'm going to prove a new
+[66:01.00]  limitation one way or the other.
+[66:04.48]  Right? So
+[66:05.92]  it So sometimes like I mean this can be
+[66:08.96]  difficult to do, but um
+[66:13.28]  usually what has happened instead of
+[66:14.88]  something so clean
+[66:16.52]  is that I have
+[66:18.32]  I I read about some idea
+[66:21.04]  or whatever. I try to apply the idea. I
+[66:23.52]  read about some magical algorithm. I try
+[66:25.88]  to apply the magical algorithm to solve
+[66:27.60]  something like SAT.
+[66:29.44]  It doesn't work. But I look at my
+[66:32.20]  approach. I stare really hard at it. I
+[66:34.12]  try to pivot. You know, I try to
+[66:36.56]  just extract what I can, and then I get
+[66:38.68]  some other type of algorithm.
+[66:41.36]  Right? I mean, this is essentially how I
+[66:43.32]  proved
+[66:44.92]  um
+[66:46.16]  like the circuit complexity lower bounds
+[66:47.72]  that that first got me a job at Stanford
+[66:50.68]  was I was trying to solve SAT faster
+[66:54.08]  with some algorithm. It didn't work, but
+[66:56.20]  then I realized that that algorithm
+[66:58.24]  worked for a large class of circuits,
+[67:00.32]  including ones we didn't know lower
+[67:01.72]  bounds for.
+[67:02.92]  So then I used that to prove
+[67:04.84]  a lower a lower bounds.
+[67:07.08]  Yeah. so I mean
+[67:08.92]  um this is just a general principle that
+[67:12.52]  that I've had.
+[67:13.72]  >> What would be your book recommendation
+[67:15.84]  if someone wants to learn more on
+[67:18.08]  complexity theory?
+[67:19.32]  >> Yeah, so it sort of depends on how deep
+[67:21.84]  uh
+[67:22.60]  you want to go. There's Avi's book.
+[67:25.56]  Yeah, Avi's book is really nice. If
+[67:27.72]  you're looking for something a little
+[67:29.28]  more gentle of an introduction,
+[67:31.96]  um
+[67:33.08]  I would say like you could read the
+[67:34.68]  early chapters of Lance Fortnow's uh The
+[67:37.84]  Golden Ticket.
+[67:39.40]  Like trying to imagine what a world
+[67:41.84]  would be like if P equaled NP.
+[67:44.52]  Um I it I I like that imagination
+[67:48.20]  exercise that that Lance uh
+[67:50.96]  did.
+[67:52.92]  On a more technical level, you know, if
+[67:55.28]  you're looking um
+[67:57.16]  for something slightly more technical,
+[67:59.72]  you could look at The Nature of
+[68:01.32]  Computation by um Mertens and Moore,
+[68:05.36]  I think. So, this is
+[68:06.88]  this is
+[68:07.88]  still
+[68:09.12]  uh not, you know, very technical, but
+[68:13.12]  um but a lot but it is a textbook,
+[68:15.44]  right? Yeah, um
+[68:17.96]  and then of course
+[68:19.96]  uh
+[68:20.68]  Sipser's uh Introduction to the Theory
+[68:23.08]  of Computation is like
+[68:25.32]  um a fairly concise and very
+[68:28.48]  well-written uh textbook. Yeah.
+[68:32.12]  >> Last question for you is if you could go
+[68:33.84]  back to the beginning of your career
+[68:35.32]  knowing what you know now, what advice
+[68:37.44]  would you give yourself?
+[68:38.72]  >> So, I guess like one thing that I did
+[68:42.44]  um by accident, I guess, uh which I
+[68:45.48]  think
+[68:46.76]  uh people
+[68:48.52]  should keep in mind is that you don't
+[68:50.84]  need uh permission
+[68:53.12]  to work on very tough problems. Like
+[68:56.52]  in fact, the tougher the problem, like
+[68:59.32]  in complexity theory, there are all
+[69:00.48]  these problems where
+[69:02.16]  like, really nobody
+[69:04.12]  has a very good clue of what to do
+[69:06.68]  beyond like a few
+[69:09.04]  simple structural results. Like,
+[69:12.08]  so that kind of levels the playing field
+[69:14.60]  a bit and
+[69:15.92]  yeah, like you just you don't need
+[69:17.80]  permission to think about these
+[69:19.48]  problems. You don't need like, you know,
+[69:21.08]  anybody's uh say-so or whatever.
+[69:24.04]  Um
+[69:25.32]  I mean, that's that's one thing that I
+[69:27.16]  would would like younger people uh to
+[69:29.44]  keep in mind that I mean, this knowledge
+[69:32.72]  is open to the world and it's open to
+[69:34.44]  you and and you can just go learn it and
+[69:37.12]  think about it and
+[69:38.80]  you don't Yeah, you don't need any
+[69:40.44]  anybody's permission, especially not
+[69:41.92]  mine. Um
+[69:44.08]  Yeah, like
+[69:45.60]  um another thing
+[69:48.40]  I think is uh to avoid inertia
+[69:53.04]  in the sense that like, you know, if you
+[69:55.84]  if you don't think about
+[69:58.60]  and reflect like, where am I going
+[70:01.24]  and what am I doing?
+[70:02.88]  Um
+[70:03.92]  you can, you know, you can just end up
+[70:06.12]  coasting in a certain direction.
+[70:09.56]  And I think it's important for people to
+[70:14.00]  sit down and truly reflect and think
+[70:16.92]  from time to time
+[70:18.72]  like, okay, if I keep going in this
+[70:21.20]  direction
+[70:22.88]  is this going to lead to a place that I
+[70:24.84]  want to be?
+[70:26.36]  Um
+[70:27.52]  and you know, this sort of advice
+[70:30.24]  is good for all aspects of life, really.
+[70:33.32]  Like,
+[70:34.52]  like, if I keep if I keep, you know,
+[70:36.68]  just allowing things to be the way they
+[70:39.32]  are, am I going to be okay with that? Or
+[70:41.68]  do I need to do something? Do I need to
+[70:43.68]  So, it's like a little interrupts, you
+[70:45.12]  know, in your
+[70:46.56]  life reflection and just sort of
+[70:49.08]  like, okay, is this is this where I Do I
+[70:51.32]  Do I need to be coasting here? Like, do
+[70:53.08]  I need to Yeah, I think
+[70:55.20]  um
+[70:57.00]  like in research for me, I was
+[71:00.44]  always reevaluating like, okay,
+[71:03.64]  you know, what I do last year and what I
+[71:05.16]  do the year before and, you know,
+[71:07.92]  could you know, like what do I know now
+[71:09.96]  that I didn't know then and like, you
+[71:11.56]  know, am I progressing? I think like
+[71:14.60]  like that sort of self-evaluation
+[71:17.08]  uh is crucial when you're in grad school
+[71:19.24]  because, you know, once you're in a PhD
+[71:21.76]  program,
+[71:23.44]  there are no more like easy metrics to
+[71:26.56]  gauge like how good or bad you're doing
+[71:29.88]  and the truth is
+[71:31.64]  you're just doing like, you know, like
+[71:33.88]  like there there just isn't such a
+[71:35.44]  metric. So, all you can really do is
+[71:38.60]  evaluate your past self with your
+[71:41.12]  present self
+[71:42.80]  and compare and contrast
+[71:45.24]  to to see if you're making progress with
+[71:47.92]  whatever it is you want to do.
+[71:49.72]  Thank you so much for your time,
+[71:50.68]  Professor Williams. I really appreciate
+[71:52.08]  it. Yeah, I appreciate you having me
+[71:53.96]  here. Been fun. Thanks.
+[71:56.20]  >> Hey, thank you for watching this
+[71:57.28]  podcast. If you liked it and you want to
+[71:58.92]  see the show grow, please support with a
+[72:01.08]  comment or a like.
+[72:03.04]  Also, if you have any recommendations
+[72:04.92]  for people you want me to bring on,
+[72:06.92]  please drop a comment. Guests like
+[72:09.08]  Barbara Liskov, Mike Stonebraker, Mark
+[72:11.80]  Booker, these were all people that I
+[72:13.84]  brought on because someone left a
+[72:15.68]  comment. On another note, aside from the
+[72:17.96]  podcast, I'm working on building the
+[72:19.76]  ergonomic keyboard that I wish existed.
+[72:22.24]  Here's a glance at the prototype. It's a
+[72:24.12]  split keyboard, so there's two sides. Um
+[72:27.12]  this is in the case. But yeah, we
+[72:28.60]  launched on Kickstarter and we hit our
+[72:30.40]  goal within eight hours of launching. I
+[72:32.48]  really appreciate it if you were one of
+[72:33.88]  the people who grabbed one of the early
+[72:35.60]  units. Um we're now working on the long
+[72:37.96]  journey of building the tooling now. And
+[72:40.08]  so, if you still want to pick one up,
+[72:41.80]  I've left the late pledges open on
+[72:43.80]  Kickstarter, so you can grab one there.
+[72:46.00]  I'll put a link in the description.
+[72:47.92]  Thank you again for watching the podcast
+[72:50.32]  and I'll see you in the next episode.

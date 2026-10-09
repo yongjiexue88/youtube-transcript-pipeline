@@ -1,0 +1,450 @@
+Title     : AWS to Dropbox: The Largest Ever Data Migration In History | James Cowling
+Video ID  : Ar84Ow4l2XE
+URL       : https://www.youtube.com/watch?v=Ar84Ow4l2XE
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 441
+Saved at  : 2026-10-08 08:15:18
+------------------------------------------------------------
+
+[00:00.00]  one of the big projects you worked on at
+[00:01.88]  Dropbox was my migrating away from S3.
+[00:04.96]  >> Yes. Yes.
+[00:05.68]  >> So, um you know, why why did Dropbox
+[00:08.20]  migrate away from S3?
+[00:10.60]  >> Yeah, that was a desire of the company
+[00:11.96]  for a long time. You know, from even
+[00:13.72]  before I was there. So, I started at
+[00:15.20]  Dropbox in 20 uh 2012.
+[00:18.32]  Um and I spoke to to Drew, the Dropbox
+[00:20.64]  founder, I think in 2010 about this
+[00:22.64]  project. And so, I think there was a
+[00:24.28]  desire to um control the destiny of the
+[00:28.60]  company from a strategic perspective. at
+[00:30.44]  the time, it was before Dropbox kind of
+[00:32.92]  reshaped itself as being more about
+[00:34.32]  collaboration, you know, but at the time
+[00:36.00]  it was a file sync and share category.
+[00:37.76]  That was that was the that was the that
+[00:39.44]  was the market sector, you know? And so,
+[00:41.68]  and owning the file system was really
+[00:43.60]  valuable to the company.
+[00:45.28]  Ultimately, we saved a huge amount of
+[00:46.92]  money. I mean, we we And this is before
+[00:49.84]  the public company went public. We
+[00:51.60]  really drove massive cost efficiencies
+[00:54.48]  through the project. Um but it was hard,
+[00:56.80]  you know, in a way that I think it'd be
+[00:58.16]  very difficult to to emulate without a
+[01:00.32]  huge investment.
+[01:01.88]  And I do think that there is um
+[01:05.08]  there is a benefit to an organization
+[01:07.52]  from having hard problems to solve.
+[01:10.52]  Because if you have a a company with
+[01:12.32]  extremely hard technical challenges, you
+[01:14.80]  can
+[01:15.44]  attract engineers who like working on
+[01:17.40]  those hard technical problems. And when
+[01:19.00]  they've solved those problems, they
+[01:21.40]  cycle off and work on different parts of
+[01:23.28]  the system. So, you know, after we all
+[01:25.32]  worked we had a such a great team. It
+[01:27.16]  was a very very small engineering team.
+[01:29.00]  And after we kind of shipped the the
+[01:31.84]  storage system reliably, we all went off
+[01:33.68]  and, you know, Jamie went and and
+[01:36.36]  redesigned the sync protocol, the
+[01:38.00]  desktop client, and I worked on the on
+[01:40.16]  the file system and the distributed
+[01:41.64]  databases. And so, yeah, there's there's
+[01:43.56]  value to a business to have um that
+[01:46.12]  level of technical investment, but it is
+[01:48.28]  a
+[01:49.24]  you know, it's like it's like having a
+[01:50.64]  baby and then you have to you've got to
+[01:53.20]  raise the baby. You can't just build a
+[01:54.80]  system like this and be that's it, we're
+[01:56.44]  done.
+[01:57.84]  You own it and you have to keep
+[01:59.32]  investing in it.
+[02:01.64]  >> Did um
+[02:03.00]  did S3 do any counter negotiation before
+[02:05.92]  you set out to leave them? Did they say
+[02:07.40]  like, "Oh, you know, we'll cut you a
+[02:08.64]  deal if you stay."
+[02:09.69]  >> [laughter]
+[02:11.00]  >> I guess I'm allowed to talk about this
+[02:12.28]  now. It was a long time ago. Um
+[02:15.36]  yeah, for the longest time there I don't
+[02:16.60]  think they were they were particularly
+[02:17.80]  aware that this was happening.
+[02:19.68]  Um but you know, the the data center
+[02:21.48]  folks talk and uh certainly it was
+[02:25.24]  noticed that Dropbox was buying up a lot
+[02:27.00]  of data center space. So, yeah, we had
+[02:29.48]  we had um obviously at at the scales
+[02:32.76]  that we were at, I mean, we were
+[02:34.08]  negotiating very good rates with Amazon.
+[02:36.80]  You know, we weren't paying sticker
+[02:37.88]  price, we're paying very very very good
+[02:39.96]  discounted rates. Um but yeah, at a
+[02:42.28]  certain point they weren't able to meet
+[02:43.64]  our cost efficiency because it it's when
+[02:45.68]  we launched the system, it really was
+[02:48.24]  more efficient than S3.
+[02:50.16]  And that's for a variety of reasons. One
+[02:51.96]  was that we were using kind of new
+[02:53.60]  experimental disks called shingled
+[02:55.56]  magnetic recording. We were the first
+[02:57.40]  ones I think to use these disks at
+[02:58.84]  scale.
+[02:59.92]  Um and two, we had a very tight
+[03:01.92]  understanding of our workloads. So, we
+[03:03.24]  were able to design the system
+[03:04.72]  specifically optimized for our
+[03:06.48]  workloads, whereas S3 has to design the
+[03:08.84]  system for everybody. So, you know,
+[03:11.08]  it's it got to the point where, you
+[03:12.36]  know, Amazon would not have been able to
+[03:13.80]  offer us a more competitive deal because
+[03:16.08]  we had a more efficient system.
+[03:18.48]  Um
+[03:20.00]  I wouldn't recommend another company do
+[03:21.44]  this right now.
+[03:23.00]  Uh but I think at the time it it
+[03:24.48]  certainly made sense for us as a
+[03:25.68]  company.
+[03:27.20]  >> Can you give an example of a tight
+[03:29.96]  understanding of your workloads leading
+[03:31.80]  to like something you could do that S3
+[03:34.48]  couldn't?
+[03:35.08]  >> Yeah, absolutely. So, for example, I
+[03:36.88]  know
+[03:38.16]  that um well, I'll try not to leak any
+[03:40.36]  confidential data, right? But when you
+[03:42.84]  when you upload a file to Dropbox, there
+[03:44.96]  is a pattern of access, right? Um so,
+[03:48.00]  typically people um access the file very
+[03:50.76]  quickly shortly afterwards um because
+[03:53.64]  you're sharing it with someone, or maybe
+[03:55.72]  your Dropbox is processing that file to
+[03:58.12]  generate an image preview, and then it
+[03:59.92]  decays at a certain rate. And so we
+[04:02.08]  understand in general the average block
+[04:04.88]  size, and we understand also the access
+[04:08.40]  pattern. So we could do things like at a
+[04:10.84]  certain point we had these two clusters.
+[04:14.12]  One was One was
+[04:15.88]  designed for kind of temporary storage.
+[04:19.36]  That was kind of storage inefficient,
+[04:21.68]  but access efficient. So it was very
+[04:24.24]  cheap to read and write to, but it was
+[04:26.32]  inefficient to store. And data would get
+[04:28.28]  written to there first, and then in the
+[04:30.44]  background it would get moved in bulk to
+[04:33.80]  this colder storage system.
+[04:36.00]  And this colder storage system was far
+[04:37.48]  more static.
+[04:39.12]  And so it was able to have kind of more
+[04:40.68]  efficient algorithms and and and be
+[04:43.08]  written to in bulk. And if it went down
+[04:45.92]  for rights, that was no problems because
+[04:47.92]  it wasn't in the live path. And so we're
+[04:49.92]  able to trade off again, like systems is
+[04:51.52]  all about trade-offs. So we're able to
+[04:53.36]  trade off the the live data write path
+[04:55.64]  from the long-term read path.
+[04:57.88]  That's one of many examples where
+[05:00.28]  knowing the size of your data, where
+[05:02.08]  it's accessed from, how frequently it
+[05:03.76]  gets accessed, how how long it takes to
+[05:05.84]  delete that data, you can really tune a
+[05:08.44]  system
+[05:09.72]  to your workload. If you know, stuff
+[05:11.96]  like looking at
+[05:13.64]  um
+[05:14.88]  even things down to knowing how much
+[05:16.84]  power to put in a rack. You know, you
+[05:18.72]  have a rack of hardware there's a power
+[05:21.36]  distribution unit, a PDU, at the top of
+[05:23.00]  that rack. It has a circuit breaker
+[05:24.92]  which can handle a certain number of
+[05:26.36]  amps.
+[05:27.84]  We would have to figure out, you know,
+[05:29.88]  how many amps are required for that rack
+[05:32.24]  based on access patterns. And there were
+[05:34.00]  times where we got it slightly wrong.
+[05:35.64]  There was times where
+[05:37.16]  we got to maybe a bad batch of hardware,
+[05:39.48]  and disks were failing too frequently.
+[05:41.52]  And as a result we were re-replicating
+[05:42.96]  the data
+[05:44.16]  more regularly, and I was getting you
+[05:45.40]  know, messages from the data center team
+[05:46.84]  saying, "Hey,
+[05:48.08]  we're running the racks really hot right
+[05:49.56]  now, you know?" [laughter] So, that's
+[05:51.40]  the level of optimizations you can make
+[05:53.28]  when you get to that scale. Um but
+[05:55.84]  again, that's multi-exabyte scale, you
+[05:58.48]  know,
+[05:59.40]  million hard drive scale.
+[06:01.56]  >> Yeah, when I was reading about this
+[06:02.76]  migration, I saw somewhere in the
+[06:04.48]  migration
+[06:05.88]  you initially started with Go, and then
+[06:09.12]  the racks or something that you're
+[06:10.80]  running on the hardware itself was
+[06:12.68]  ooming too much or
+[06:14.08]  >> Yeah.
+[06:14.32]  >> requesting too much memory, and then you
+[06:16.68]  migrated to Rust.
+[06:18.44]  >> So, initially, the prototype was in
+[06:20.44]  Python, if you can believe that.
+[06:22.44]  And to be fair, Python is actually
+[06:23.88]  pretty efficient for IO. I think people
+[06:25.56]  give Python a a bad rap for IO-bound
+[06:28.48]  workloads. It's pretty good at IO. Um
+[06:31.36]  but obviously, um not great for
+[06:33.32]  concurrency, not great for memory
+[06:34.56]  management, and um very hard to
+[06:36.68]  refactor.
+[06:38.04]  And it was critical the system was
+[06:39.48]  correct. And so, we migrated everything
+[06:42.64]  to Go, and we built most of the storage
+[06:44.44]  system in Go. This was before Go was in
+[06:47.20]  general availability. I think this is
+[06:48.36]  before Go was GA. Um
+[06:50.72]  and we built the system in Go. Go is a
+[06:52.92]  great language for concurrency, a great
+[06:54.80]  language for proxies. You know, it's a
+[06:56.80]  really well designed for like servers
+[06:58.84]  that moved out of one place to another
+[07:00.52]  place.
+[07:01.52]  At a certain point though,
+[07:03.28]  we would have, you know, let's just pick
+[07:05.36]  a number. Let's say a million. Let's say
+[07:06.48]  we have a million nodes in the system.
+[07:08.80]  And every node has um
+[07:12.20]  some amount of memory, some amount of
+[07:13.96]  disk, some amount of sheet metal in the
+[07:16.24]  chassis, right? And we would itemize all
+[07:18.68]  these things. You'd have a pie chart of
+[07:21.00]  of how much money is spent on all the
+[07:23.12]  things. And it would still have stuff
+[07:24.56]  like, yeah, sheet metal and screws and
+[07:26.12]  stuff. And so, you're trying to optimize
+[07:28.60]  the storage, and a big problem for us
+[07:32.00]  was the amount of memory um
+[07:34.80]  these nodes were using. Not just the
+[07:36.52]  memory they were using, but the
+[07:37.88]  unpredictability of it. Uh with, you
+[07:40.72]  know, with Go having a runtime and and
+[07:44.12]  you know, in a storage system an out of
+[07:46.00]  memory error is pretty bad.
+[07:48.28]  Because if a node runs out of memory and
+[07:49.76]  restarts, that looks like a disk
+[07:51.44]  failure.
+[07:52.92]  So that looks a lot like a disk has
+[07:54.36]  failed and has to be re-replicated. And
+[07:56.00]  so a batch of nodes OOMing
+[07:59.44]  can lead to cascading failures
+[08:01.08]  throughout the system.
+[08:02.60]  Because maybe
+[08:04.28]  um
+[08:05.00]  I remember a time it was a band, it
+[08:07.20]  might have been De La Soul. I can't
+[08:08.40]  remember there was a band released an
+[08:09.92]  album on Dropbox.
+[08:11.76]  So there was a big spike in load
+[08:14.16]  um to a to a
+[08:16.12]  a few files. So it was very, very high
+[08:19.08]  um bandwidth and it caused them the
+[08:21.48]  machines to OOM. So that those machines
+[08:23.96]  uh OOMed, those disks OOMed. Um and so
+[08:26.72]  as a result, no problems. The system
+[08:28.68]  went to try to recover that data from a
+[08:30.76]  whole bunch of other replicas, right?
+[08:33.16]  Now all of a sudden you've taken one
+[08:35.40]  amount one fire hose worth of load
+[08:37.72]  coming in and you've turned this into
+[08:39.32]  seven fire hoses worth of load coming
+[08:41.04]  cuz now you have to do a more expensive
+[08:42.56]  reconstruction operation, right? So now
+[08:44.64]  you've seven Xed the load. And these are
+[08:46.48]  the kind of um cyclical kind of
+[08:48.96]  behaviors that can lead to something
+[08:50.12]  called congestion collapse. Congestion
+[08:51.76]  collapse is when
+[08:53.36]  workload to a system crosses a threshold
+[08:55.56]  where it all kind of collapses.
+[08:58.04]  So can you design against congestion
+[09:00.36]  collapse is really the hardest part or
+[09:02.48]  one of the hardest parts of Magic
+[09:03.64]  Pocket, which is the name of the storage
+[09:04.92]  system.
+[09:05.84]  Um so ultimately we switched to Rust for
+[09:10.00]  the storage nodes themselves. And this
+[09:12.24]  again, this is before Rust was in GA, so
+[09:14.68]  that was a bit of a risky move. Uh
+[09:16.88]  but we rewrote um
+[09:18.96]  the switch to Rust coincided with
+[09:20.92]  getting rid of the file system entirely
+[09:22.64]  on the disks and directly addressing the
+[09:25.36]  the disk disk heads. So there was a
+[09:27.60]  there's an instruction set, I think it's
+[09:28.80]  called ZBC, zone based block control,
+[09:31.88]  something like that. There's there's a
+[09:32.80]  there's an instruction set for accessing
+[09:34.40]  disks that we were using.
+[09:36.44]  The disk manufacturers gave us the draft
+[09:38.20]  specs of these new disks and we were
+[09:40.20]  operating off the draft specs and
+[09:42.16]  directly controlling the the disks. And
+[09:44.16]  so,
+[09:45.00]  all that product was tied up um together
+[09:47.88]  um
+[09:49.04]  into a product called DiscoTech.
+[09:50.96]  It was the disk technology project. Um
+[09:53.76]  and ultimately, if you look at that pie
+[09:55.56]  chart, one congestion collapse stopped
+[09:57.64]  and reliability improved. But if you
+[09:59.40]  looked at the pie chart of where all the
+[10:00.84]  money was going, it really shifted to be
+[10:03.28]  almost all disks. And what we wanted to
+[10:05.48]  do is get that pie chart to be
+[10:08.40]  almost all the money spent on disks and
+[10:10.80]  as little money spent on RAM, on
+[10:12.52]  compute, on network, on power, on sheet
+[10:14.88]  metal, etc.
+[10:16.20]  >> The cascading failure you mentioned, was
+[10:18.28]  there So, that that happened and then
+[10:20.72]  there was a postmortem.
+[10:21.92]  >> I don't think we needed a postmortem. I
+[10:23.28]  think we we knew as it was happening.
+[10:25.53]  >> [laughter]
+[10:26.52]  >> I think when I was getting paged in the
+[10:28.16]  middle of the night on these things, I
+[10:29.64]  would you know you'd be pretty pretty
+[10:31.20]  evident. And so, look, this is the
+[10:33.44]  Again, this is an argument in favor of
+[10:35.12]  the cloud. All right. Imagine you've
+[10:37.16]  spent
+[10:38.48]  hundreds of millions of dollars on a on
+[10:40.88]  a storage system and it's out in
+[10:42.24]  production and it's on physical
+[10:44.28]  hardware.
+[10:45.72]  You can't just go and put new memory
+[10:48.52]  chips in every one of them. I mean, you
+[10:50.00]  can, but you have to pay people to come
+[10:52.12]  in and swap them out, you know? And so,
+[10:54.56]  that's a tricky place. And so, as a And
+[10:57.32]  this is what This is what I love about
+[10:58.92]  industry. You know, cuz in like some of
+[11:01.84]  the more um
+[11:03.40]  challenging moments on magic pocket were
+[11:05.92]  stuff like In one week,
+[11:08.16]  just a weird coincidence, two trucks
+[11:10.48]  crashed that were delivering servers.
+[11:12.00]  So, there's two trucks showing up to
+[11:13.68]  deliver racks and they both crashed. I
+[11:15.60]  don't know, you know, the drivers were
+[11:16.72]  okay. So, we lost capacity for 2 weeks.
+[11:19.80]  Uh so So, we lost capacity for for more
+[11:22.16]  than 2 weeks for for for probably 6
+[11:24.00]  weeks.
+[11:25.28]  Um
+[11:26.44]  How What do you do?
+[11:28.16]  What happens, you know, is is the
+[11:29.68]  equivalent of your disk filling up on
+[11:31.00]  your laptop, except it's you know, it's
+[11:32.96]  it's a million disks.
+[11:34.88]  And you can't tell the customers to go
+[11:36.80]  away. You can't delete their files. So,
+[11:38.72]  a lot of a lot of tricky
+[11:41.56]  a lot of tricky capacity work.
+[11:44.12]  And ultimately what that what that led
+[11:45.80]  to was trying to build in
+[11:49.36]  all these protections against the
+[11:50.96]  unknowns. You know, making sure we had
+[11:53.80]  the right amount of buffer planned out
+[11:55.76]  for anything bad that could happen.
+[11:57.28]  Making sure we we design the system so
+[11:59.64]  they couldn't be congestion collapsed so
+[12:01.28]  they wouldn't be memory spikes.
+[12:03.44]  Um and
+[12:05.32]  you know, at one point there's a there's
+[12:06.72]  a process called I think it's called
+[12:07.88]  FMEA,
+[12:09.44]  which is like a threat modeling process
+[12:11.08]  where you had a big spreadsheet and you
+[12:12.68]  kind of write down every bad thing that
+[12:15.04]  could possibly happen and then, you
+[12:16.76]  know, all the how bad it would be if it
+[12:18.92]  happened.
+[12:20.16]  Existential risk
+[12:22.16]  to someone die, you know, if there's a
+[12:23.48]  fire in the data center. All these kind
+[12:24.84]  of things get put into the spreadsheet.
+[12:26.72]  And you kind of do a bit of a almost
+[12:28.64]  pre-mortem kind of a work to figure out
+[12:31.28]  all the all the potential failure modes
+[12:33.36]  and then design around them. And I
+[12:35.20]  that's I love that work. I I really um
+[12:38.84]  I don't know. I do like the firefight. I
+[12:40.68]  I like the
+[12:42.48]  I don't I can't say I like getting paged
+[12:44.16]  because
+[12:45.52]  I've spent my whole life on call,
+[12:47.64]  but I do like that rubber hits the road
+[12:50.08]  stuff. I like that
+[12:52.64]  wow, there's congestion collapse and and
+[12:54.36]  there's no one that can help you. And so
+[12:56.72]  you've got to
+[12:58.12]  think through this problem.
+[12:59.72]  >> When I worked on infrastructure at
+[13:01.12]  Instagram, we had this concept of DEFCON
+[13:03.16]  knobs, which are basically these configs
+[13:06.60]  that you could flip that would
+[13:08.68]  gracefully degrade your system where you
+[13:11.36]  can still operate it, but you know,
+[13:13.32]  maybe in the case of Dropbox, you store
+[13:15.96]  less replicas. So, you take on a
+[13:18.48]  temporary increase of
+[13:21.12]  risk in losing data because you need to.
+[13:24.40]  Did you have something like that and did
+[13:25.84]  you flip it in that type of case?
+[13:27.88]  >> Never when it came to durability. So, I
+[13:30.32]  mean, we just had an just absolute zero
+[13:33.20]  non-negotiable like there was no room
+[13:35.20]  for negotiation on on users' durability.
+[13:37.84]  And so, um
+[13:39.64]  we had those knobs for background
+[13:41.04]  processes for CPU and and memory, for
+[13:42.92]  example. So, if there was like a spike
+[13:44.32]  in load, you could turn off background
+[13:46.44]  processes and and turn off um you know,
+[13:49.12]  um the the test load, for example, on
+[13:51.16]  the system. Eventually, we we built this
+[13:53.48]  system called
+[13:55.96]  trampoline.
+[13:57.24]  And what trampoline did was um which
+[14:00.08]  actually was a it it saved us a ton of
+[14:01.92]  money, right? When if we ever got too
+[14:04.72]  close to the threshold, we would just
+[14:06.72]  start writing data to S3.
+[14:08.68]  Cuz it's right there, right? So, it's um
+[14:11.60]  you can run your capacity way closer to
+[14:14.12]  the edge if you're willing under
+[14:16.12]  worst-case scenarios just to just to
+[14:18.56]  dump 30 petabytes on S3 and then move it
+[14:21.36]  back when it's done. And now, it did it
+[14:23.52]  didn't happen very often. We would do it
+[14:24.96]  to test it. We would do that just to
+[14:26.20]  make sure the system worked.
+[14:27.92]  But, um yeah, being able to have a
+[14:30.52]  escape hatch for worst-case scenario was
+[14:32.84]  really nice.
+[14:34.00]  >> I see. So, S3 is kind of um
+[14:36.20]  it's like elastic storage.
+[14:37.88]  >> Exactly.

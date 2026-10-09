@@ -1,0 +1,1204 @@
+Title     : Turing Award Winner: Disagreeing with Google, Postgres, Future Problems | Mike Stonebraker
+Video ID  : YPObBOwIrHk
+URL       : https://www.youtube.com/watch?v=YPObBOwIrHk
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 1195
+Saved at  : 2026-10-08 08:17:58
+------------------------------------------------------------
+
+[00:00.16]  Computer science may well not be a
+[00:02.16]  growth industry going forward.
+[00:04.56]  >> This is Mike Stonbreaker. He's a touring
+[00:06.72]  award winner famous for his fundamental
+[00:08.80]  contributions to database systems like
+[00:10.88]  creating Postgress and more. What was
+[00:13.20]  the hardest part of that?
+[00:15.20]  >> Uh query optimizer. [music] It's just
+[00:17.28]  algorithmically difficult.
+[00:19.28]  >> How do you identify the people who
+[00:21.12]  aren't smart?
+[00:22.24]  >> Well, I mean it's it's very easy.
+[00:24.64]  >> He shared interesting technical takes
+[00:26.56]  from his experience
+[00:27.68]  >> on our benchmarks. large language models
+[00:30.72]  get [music] 0%.
+[00:32.48]  >> Why did you disagree so much with map
+[00:35.04]  produce?
+[00:35.68]  >> That wasn't the only thing Google was
+[00:37.68]  stupid about.
+[00:39.36]  >> I'm curious your thoughts on unsolved
+[00:41.92]  problems in databases and what you think
+[00:44.72]  the future might look like.
+[00:47.36]  Here's the full episode.
+[00:52.72]  The first thing I want to go over is the
+[00:54.80]  story of how Postgress got started. But
+[00:58.32]  for that I kind of want to start at the
+[00:59.84]  beginning. How did you get into building
+[01:01.76]  database systems? When I graduated I had
+[01:05.92]  the good fortune of being hired at
+[01:07.68]  Berkeley
+[01:09.36]  and I it was clear I had to you know
+[01:12.08]  continuing what I did for my PhD was not
+[01:15.04]  going to go anywhere then as well as
+[01:18.16]  today. Uh you're way ahead if you get
+[01:22.16]  adopted by a mentor
+[01:24.80]  who knows the robes. So Gene Wong, who
+[01:29.04]  who is still alive and still
+[01:32.88]  still kicking, uh took me under his wing
+[01:36.24]  and said, "Well, let's do something
+[01:37.84]  together."
+[01:40.40]  And this was 1971,
+[01:44.00]  which was the year after Ted Cod wrote
+[01:46.88]  his pioneering paper in in CACM. Gene
+[01:50.32]  Wong said, "Well, let's let's take a
+[01:51.92]  look at database stuff." And
+[01:55.84]  at the time the the competitors were a
+[02:00.00]  thing called the Kotil proposal which
+[02:02.80]  you're probably too young to have ever
+[02:04.64]  heard of. And so it was a low-level
+[02:08.56]  spaghetti network proposal
+[02:11.28]  uh where you where you executed queries
+[02:14.88]  by following pointers
+[02:17.20]  and then the the alternative was the IBM
+[02:20.24]  proposal which was a hier thing called
+[02:22.40]  IMS which is still available and it's
+[02:26.16]  hierarchical data. It's a tree. You're
+[02:29.12]  organized your data as trees.
+[02:32.40]  And even at the time, IBM realized that
+[02:36.80]  trees were not general enough to to
+[02:40.32]  solve many people's problems.
+[02:44.56]  So they hacked on a a way to make it a
+[02:47.92]  limited network structure.
+[02:51.52]  So it was clear that was a horrible
+[02:53.52]  hack. The Kodasil proposal had all kinds
+[02:58.08]  of bad properties. Uh besides being
+[03:01.52]  low-level and and really hard to debug,
+[03:04.80]  uh it also had the property that if
+[03:07.28]  anything changed in your what's now
+[03:09.76]  called your schema, you basically had to
+[03:12.08]  throw away everything and do it all
+[03:13.76]  again because it was absolutely rooted
+[03:16.32]  of the physical level.
+[03:18.88]  Whereas Ted Cod stuff made perfect
+[03:21.28]  sense. And so Jean said, "Well, let's
+[03:24.08]  build one of these puppies. That's
+[03:25.52]  clearly the the next thing to try."
+[03:28.72]  So we started building Ingress in 1972
+[03:33.12]  while I was an assistant professor at
+[03:34.96]  Berkeley. As you know, if you're an
+[03:37.52]  assistant professor,
+[03:39.76]  you have to you have about you get five
+[03:42.00]  years to prove that you're a big
+[03:44.72]  and they fire you or they give you
+[03:46.64]  tenure. So, Ingress was my ticket to
+[03:50.40]  getting tenure which happened in 1976.
+[03:55.44]  That was where it started. And then
+[03:58.56]  again, you know, happen stance.
+[04:01.68]  Uh, at the time, you know, a lot of
+[04:04.48]  people would build prototypes which were
+[04:06.72]  sort of studenty like code, which means
+[04:10.32]  you could get it to run, but if you gave
+[04:12.56]  it to anybody else, they couldn't.
+[04:15.60]  So we put in the first 90% to get
+[04:18.96]  something we could run and then for
+[04:22.08]  whatever reason we put in the next 90%
+[04:26.08]  to get it to where it really worked.
+[04:29.12]  So the University of California version
+[04:31.60]  of of Ingress was really worked.
+[04:35.76]  And so over the next couple years about
+[04:38.96]  a hundred universities started running
+[04:40.96]  it because Unix became the big thing.
+[04:46.80]  And so this was a database a free
+[04:49.52]  database system that ran on Unix.
+[04:52.64]  And so it was quite popular in in the
+[04:55.76]  academic world. And so we got started
+[04:59.36]  getting you know lots of visitors at
+[05:01.52]  Berkeley who would say gee this is
+[05:04.16]  really nifty looking stuff what's the
+[05:07.20]  biggest biggest day incorous application
+[05:10.00]  you have
+[05:12.40]  and we'd be forced to say not very big
+[05:15.92]  and so this was brought home
+[05:19.84]  uh in spades when Arizona [snorts]
+[05:22.80]  State University
+[05:25.04]  considered running Ingress
+[05:27.36]  on their student records data, all
+[05:29.68]  40,000 students worth.
+[05:32.64]  And they could get over that they had to
+[05:34.56]  get an unsupported operating system from
+[05:38.16]  Bell Labs.
+[05:40.24]  They could also get over they had to uh
+[05:43.44]  run an unsupported op unsupported
+[05:45.76]  database system from these guys at
+[05:48.32]  Berkeley.
+[05:49.92]  But the project went down in flames when
+[05:52.48]  they realized there was no cobalt
+[05:54.32]  available for Unix. and they were a
+[05:57.04]  cobalt shop. So unsupported operating
+[06:00.24]  system, unsupported database system, no
+[06:02.40]  Cobalt doomed us to, you know,
+[06:06.32]  irrelevance.
+[06:08.32]  And it was clear the only way out of
+[06:10.40]  that was to start a company. And so in
+[06:14.64]  1980 uh we got venture capital as it
+[06:18.40]  existed then
+[06:20.56]  and started Ingress Corporation
+[06:23.52]  to move uh Ingress to uh to Dex uh VMS
+[06:32.00]  uh you know a real a real operating
+[06:35.60]  system and we had a real company that
+[06:38.72]  would support Ingress and that was the
+[06:40.80]  start of the commercial journey.
+[06:43.36]  I saw that Ingress was competing with uh
+[06:47.12]  Larry Ellison's offering at Oracle.
+[06:50.16]  >> Yes,
+[06:51.04]  >> I saw that uh Ingress was was certainly
+[06:54.48]  better than what they were offering, but
+[06:58.00]  they were still competing somehow. How
+[07:00.08]  how did they compete?
+[07:02.16]  Uh Larry Ellison is a fabulous salesman
+[07:05.92]  and he at the time he he would he made
+[07:10.24]  present tense and future tense
+[07:12.64]  indistinguishable
+[07:14.16]  and so he basically lied to customers.
+[07:17.44]  He would ship stuff that didn't work
+[07:21.36]  and h have his initial customers help
+[07:23.84]  him debug it. So I think he he he
+[07:27.36]  engaged in what I consider very shady
+[07:30.88]  business practices.
+[07:33.20]  But lying to customers I think is is you
+[07:36.48]  know unconscionable.
+[07:39.04]  So for instance
+[07:42.80]  uh there's a thing called referential
+[07:44.72]  integrity
+[07:46.72]  which is if you I if you fire an
+[07:50.32]  employee
+[07:52.08]  and he's the last person in a given
+[07:54.80]  department do you want to delete the
+[07:57.28]  department or do you want to have it be
+[07:59.76]  a department ghost department? It's it's
+[08:02.40]  all that kind of stuff. And so Ingress
+[08:05.52]  Corporation implemented referential
+[08:08.08]  integrity. Uh Oracle Corporation wrote
+[08:11.44]  two manual pages that said here's the
+[08:14.24]  definition of referential integrity
+[08:16.72]  which everybody agreed to. And then he
+[08:19.84]  then down at the bottom it said not yet
+[08:22.16]  implemented.
+[08:24.36]  [laughter]
+[08:25.60]  >> Interesting. Yeah. I had interviewed
+[08:27.44]  someone who worked at Sun Micros
+[08:29.60]  Systemystems and they had a similar
+[08:32.24]  opinion that they
+[08:34.48]  Larry Ellison was a little bit shady. So
+[08:37.52]  it seems to be a commonality.
+[08:40.72]  Um I also saw somewhere else in
+[08:43.28]  something that you had said was that um
+[08:47.28]  when Oracle acquired my SQL that
+[08:50.88]  everyone kind of got afraid of that and
+[08:53.84]  moved to Postgress. That was the genesis
+[08:58.56]  of Postgress replacing MySQL as the
+[09:02.96]  preferred open-source relational
+[09:05.04]  database system.
+[09:07.04]  So you you created ingress and there was
+[09:09.76]  a lot of technical innovations in it so
+[09:12.48]  that it was better than the the
+[09:14.24]  incumbents but ultimately it it went
+[09:18.00]  away and you developed Postcrest. What
+[09:20.00]  what was the thing that Ingress didn't
+[09:21.76]  do that Postgress would do? Uh the big
+[09:25.36]  thing that guided us at the very
+[09:26.96]  beginning
+[09:29.20]  was the the original reasoning
+[09:32.48]  for
+[09:34.08]  the academic version of Ingress was we
+[09:37.20]  were going to support a geographic
+[09:40.08]  information system that the neighboring
+[09:43.84]  professor Pine Veriah wanted.
+[09:47.20]  And so to support a GIS system, you need
+[09:51.12]  points, lines, polygons, line groups,
+[09:54.48]  that sort of stuff.
+[09:56.72]  And it was clear that Ingress couldn't
+[10:00.16]  do it because the data types we put into
+[10:04.00]  Ingress were the standard ones,
+[10:06.32]  integers, floats, uh, text, strings, and
+[10:11.52]  you couldn't support, you couldn't
+[10:13.92]  efficiently support
+[10:16.24]  uh, GIS types on top of that. So, as a
+[10:21.28]  GIS, the academic version of Incorus was
+[10:24.48]  a complete failure.
+[10:27.12]  And that was in the back of of our mind.
+[10:31.04]  The other thing that happened, this is a
+[10:33.20]  little out of chronic chronological
+[10:35.52]  sequence, but it helps make the point is
+[10:39.12]  that the commercial version of Ingress I
+[10:42.64]  think around
+[10:44.56]  1985.
+[10:46.88]  uh you know there was ANIE had just
+[10:49.36]  proposed
+[10:50.88]  uh a date and time standard for
+[10:53.28]  relational databases
+[10:55.44]  and so uh commercial Ingress implemented
+[10:59.44]  date and time
+[11:01.52]  uh you know using the standard Gregorian
+[11:04.64]  calendar and so I was associated with
+[11:08.56]  the commercial version of Ingress as
+[11:10.48]  well as I was still at the University of
+[11:13.84]  California as a professor so I I got a
+[11:16.64]  call from from an Ingress customer who
+[11:21.12]  said, you know, you implemented date and
+[11:23.20]  time wrong. And I said, huh? We
+[11:26.96]  implemented the Gregorian calendar and
+[11:29.28]  you can subtract
+[11:31.36]  uh and you know if it has, you know,
+[11:34.48]  days have 30 or 31 months except for
+[11:37.12]  February, except for leap years. So
+[11:40.64]  subtraction on dates works exactly the
+[11:43.84]  way you would expect it to.
+[11:46.08]  But he said that's not what I want in
+[11:49.68]  his particular world. He he said he was
+[11:54.16]  he was dealing with with
+[11:57.20]  bond financial instruments and for some
+[12:00.48]  reason I mean you got the same amount of
+[12:04.24]  interest on a on his financial bonds
+[12:07.76]  during each month no matter how long the
+[12:10.56]  month was.
+[12:12.56]  So he had the date you bought the bond,
+[12:15.28]  the date you sold the bond. He wanted to
+[12:18.32]  do a subtraction,
+[12:20.32]  multiply it by the coupon rate, and say
+[12:23.68]  that's what that's the interest we paid
+[12:25.44]  you.
+[12:27.04]  But of course, his version of
+[12:28.88]  subtraction was March 15 minus February
+[12:32.64]  15th is 30 days because that's the
+[12:35.60]  definition of his calendar.
+[12:38.24]  And so he had to uh retrieve two dates
+[12:42.96]  out to user code, do the subtraction in
+[12:45.44]  user code, put the answer back, and it
+[12:48.88]  cost him a factor of two or three in in
+[12:51.44]  efficiency.
+[12:52.96]  And he said, "Why can't I just overload
+[12:55.60]  your definition of subtraction with what
+[12:58.40]  I want?" And of course with Ingress, it
+[13:01.04]  was hardcoded.
+[13:02.80]  And the problem was this is a case where
+[13:06.64]  you wanted bond time just like you
+[13:09.84]  wanted uh points, lines and polygons.
+[13:13.12]  And so Postgress was engineered to have
+[13:15.36]  an extendable type system.
+[13:18.08]  So you could have whatever data types
+[13:19.68]  you wanted and they were very efficient
+[13:24.32]  and that was the main gist of Postgress
+[13:26.96]  was that it had that flexibility.
+[13:29.52]  Uh and as
+[13:32.40]  you know in business data processing
+[13:36.56]  a lot most people were happy with the
+[13:39.04]  standard data types but relational
+[13:42.96]  databases started to spread to all kinds
+[13:45.44]  of other places what are called abstract
+[13:47.76]  data types or you know uh stored
+[13:52.56]  procedures you know bunch of names
+[13:55.84]  they're called uh you know had had great
+[13:58.96]  applicability
+[14:00.80]  and so Postgress that was that was the
+[14:04.24]  big thing in Postgress. Uh we also
+[14:08.56]  Postgress also
+[14:11.44]  uh supported what the AI guys at the
+[14:14.00]  time wanted in the way of inheritance.
+[14:17.84]  Uh we also supported time travel. Uh but
+[14:22.72]  the implementation absolutely sucked and
+[14:26.08]  it got taken out after a while. So there
+[14:28.48]  were a huge number of of really nifty
+[14:31.44]  things at Postgress.
+[14:33.04]  >> You mentioned you you want to hire
+[14:35.28]  extraordinary software engineers and I
+[14:37.60]  think you've you've said before that you
+[14:39.84]  have no trouble finding those people.
+[14:42.80]  How do you identify those people in your
+[14:45.60]  hiring that they're the extraordinary
+[14:47.28]  ones?
+[14:48.96]  It's usually pretty obvious. I mean I
+[14:52.24]  have a good feel for how difficult stuff
+[14:55.20]  is. if they get 3x the am the the amount
+[14:59.04]  done, you know, in school that I think
+[15:02.32]  is reasonable, then then they're
+[15:04.40]  incredible.
+[15:05.84]  >> On the flip side, you had this
+[15:07.20]  interesting quote. I wrote I wrote it
+[15:09.04]  down. He said, um, I can't stand people
+[15:12.16]  who are who aren't really smart. It's
+[15:15.44]  challenging to talk to them. How do you
+[15:17.84]  identify the people who aren't smart?
+[15:20.72]  >> Well, I mean, it's it's very easy. you
+[15:23.60]  you talk to them and and it it rapidly
+[15:28.08]  you can rapidly surface whether they're
+[15:30.24]  smart or not. You know, what was your
+[15:32.48]  master's thesis? What did you do? Uh
+[15:36.16]  well, how did it how did it exactly
+[15:38.24]  work? Well, how did you deal with error
+[15:42.00]  conditions?
+[15:43.68]  Uh [snorts] how many processes did you
+[15:45.52]  have? Why didn't you use threads?
+[15:49.12]  I only you ask them technical deep
+[15:51.60]  technical quest questions.
+[15:54.40]  >> You you gave a talk and I think there's
+[15:56.00]  also a paper behind it of this idea that
+[15:59.68]  uh one sizefits all database systems not
+[16:02.80]  optimal one size actually fits none and
+[16:05.92]  that what you really want is database
+[16:09.04]  solutions that target specific needs.
+[16:12.48]  What database offerings you see today
+[16:14.40]  that are one-sizefits-all? In 2004 when
+[16:17.76]  I wrote the paper, we had an academic
+[16:20.32]  project which was building what became
+[16:23.52]  streambase. And so a stream processing
+[16:26.40]  engine looks nothing like a relational
+[16:29.44]  database.
+[16:30.96]  And we had the gist of an idea for
+[16:34.88]  column stores for the for data
+[16:36.88]  warehouses which was popularized by
+[16:39.84]  Vertica looks nothing like a row store.
+[16:43.44]  So here were three wildly different
+[16:45.76]  implementations that had no resemblance
+[16:48.40]  to each other and in each case they were
+[16:51.44]  an order of magnitude faster than the
+[16:54.32]  other guys. So it's pretty clear that
+[16:57.04]  one side, you know, that in with those
+[16:59.68]  three instances,
+[17:01.92]  you give up an order of magnitude
+[17:04.88]  uh when you're running a database system
+[17:08.00]  that isn't
+[17:10.00]  that isn't architected for your kind of
+[17:12.16]  stuff. I think that's still true. I
+[17:15.92]  mean, I think Clickhouse is a column
+[17:18.40]  store. Pine cone is faster than
+[17:23.84]  userdefined types
+[17:26.64]  on on textbased vector processing.
+[17:31.52]  And so I think it's it's still very much
+[17:34.48]  the case [snorts] and I think
+[17:38.40]  there's no difficulty
+[17:41.20]  putting a common parser on top of
+[17:43.68]  multiple implementations.
+[17:46.80]  uh Postgress has so far chosen not to do
+[17:49.92]  that. they don't implement a column
+[17:52.88]  store
+[17:54.48]  and so I think they are not they are not
+[17:56.88]  competitive you know on sizable data
+[18:00.88]  warehouses
+[18:02.72]  they also don't have multi-node support
+[18:06.32]  again for people with big data
+[18:08.08]  warehouses that's table stakes so I
+[18:11.44]  think it's just as true today as it ever
+[18:13.52]  was I think that
+[18:17.28]  what is true
+[18:19.52]  is that if you want to get going, you
+[18:21.92]  have a database problem,
+[18:24.64]  you know, the answer is choose Postgress
+[18:27.62]  [snorts] and there's a huge programming
+[18:29.84]  community, all kinds of all kinds of,
+[18:32.96]  you know, data type implementations.
+[18:35.76]  it's free uh and you can find Postgress
+[18:41.36]  talent easily and get going
+[18:44.72]  and and so I think it's it's it's a
+[18:47.68]  great choice for lowest common
+[18:49.36]  denominator
+[18:51.28]  and until you're trying to do [snorts] a
+[18:55.84]  million transactions a second it works
+[18:57.84]  just fine until you're trying to support
+[19:01.04]  a pabyte data warehouse it it I say at
+[19:03.92]  the low end it it's absolutely
+[19:05.44]  Absolutely the right one sizefits-all at
+[19:07.92]  the low end it's Postgress at the high
+[19:10.72]  end that's just not true
+[19:13.12]  >> GPUs do they make available some new
+[19:16.56]  opportunities to optimize databases
+[19:19.44]  probably but I think the the big
+[19:22.08]  challenge is that GPUs are
+[19:27.20]  you know sum simd you know single
+[19:29.92]  instruction multi- data and that's
+[19:32.64]  that's the anathema of indexing
+[19:36.08]  And so whenever indexing is the right
+[19:38.40]  answer, they're probably not a good
+[19:41.36]  idea.
+[19:43.44]  And I think uh also you've got to
+[19:47.76]  architect them so that the so that the
+[19:51.52]  bandwidth
+[19:53.44]  so that the bandwidth from storage is is
+[19:57.76]  not not the bottleneck. And so if
+[20:01.52]  they're an add-on to the CPU as often as
+[20:04.16]  not the bus connecting it to the the GPU
+[20:07.68]  to the CPU is a bottleneck.
+[20:10.08]  >> Can you explain why indexing would be
+[20:13.52]  not as effective when there's SIMD?
+[20:17.84]  >> So let's let's say I'm I'm [snorts]
+[20:21.60]  looking for Ryan's
+[20:24.40]  I'm looking for Ryan's salary and I have
+[20:26.56]  a B tree.
+[20:28.64]  So you go to the root of the B tree.
+[20:32.24]  You find you find the divider that has
+[20:36.16]  both sides of Ryan.
+[20:38.48]  You follow the pointer.
+[20:41.12]  That's a memory access for sure. Then
+[20:44.24]  you do it all again and you do this like
+[20:47.04]  three or four times.
+[20:49.28]  So that doesn't parallelize well. So the
+[20:52.00]  answer is indexing doesn't parallelize
+[20:54.24]  well. You mentioned B trees. When you
+[20:56.64]  first implemented
+[20:58.48]  uh that first version of ingress, did
+[21:01.36]  you write all of that by hand? Because I
+[21:03.84]  imagine there's probably not some
+[21:05.44]  existing B tree library or something.
+[21:08.16]  >> Yeah, we wrote the original version of
+[21:10.32]  ingress was all written from scratch.
+[21:12.96]  >> What was the hardest part of that
+[21:14.24]  implementation?
+[21:16.56]  >> Uh query optimizer.
+[21:18.56]  >> And why was that hard?
+[21:20.24]  >> It's tough. It's it's just
+[21:24.48]  algorithmically difficult. It's still if
+[21:27.68]  you ask most any senior database
+[21:30.88]  programmer what's the hardest hardest
+[21:33.44]  part, they'll still say the optimizer.
+[21:36.80]  Map produce came out at some point in
+[21:39.20]  the early 2000s and it kind of took the
+[21:41.68]  data world by storm. People were really
+[21:44.56]  impressed by it. They thought Google
+[21:46.40]  really knows what they're doing. this is
+[21:48.56]  the best thing since sliced bread. But
+[21:51.28]  it seems like when I look at the
+[21:53.92]  literature and what you thought at the
+[21:55.44]  time, you kind of disagreed heavily. Why
+[21:58.08]  did you disagree so much with uh map
+[22:00.80]  produce?
+[22:02.32]  Well, I think
+[22:04.80]  there were a lot of
+[22:07.28]  not very enlightened people who said
+[22:09.44]  Google Google is really smart. They must
+[22:12.32]  know what they're doing and so we'll do
+[22:15.36]  whatever they say. And so they would
+[22:18.40]  they would uh they would engage in
+[22:22.56]  Hadoop or engage with Hadoop. But Hadoop
+[22:26.16]  is ridiculously inefficient. And so uh
+[22:30.24]  at the time,
+[22:32.64]  you know, others, you know, Dave Dwit
+[22:34.64]  and others who who were involved in our
+[22:36.88]  2011 paper, we understood distributed
+[22:40.56]  databases
+[22:42.72]  and understood that you could beat the
+[22:44.80]  heck out of Hadoop.
+[22:46.80]  uh with a distributed database system,
+[22:49.20]  which is basically what that 2011 paper
+[22:52.56]  says.
+[22:54.08]  And of course, it was it's true. And
+[22:58.24]  but that wasn't the only that wasn't the
+[23:01.60]  only thing Google was stupid about.
+[23:04.80]  So Google also
+[23:08.08]  had the opinion that eventual
+[23:11.44]  consistency was the right way to do
+[23:14.00]  concurrency control.
+[23:16.64]  And so that was postulated from on high
+[23:20.64]  by Google all during that same period of
+[23:23.68]  time.
+[23:25.36]  And it it wasn't and all the database
+[23:29.44]  people said, you know, you're out of
+[23:31.84]  your frigin mind because it doesn't it
+[23:36.24]  solves one particular kind of problem
+[23:38.80]  but only and that very rarely occurs in
+[23:41.84]  practice. Why did they pursue eventual
+[23:44.48]  consistency?
+[23:45.68]  >> Okay, well the idea is that you have an
+[23:47.76]  east coast database and a west coast
+[23:49.44]  database and they're replicas. So you
+[23:51.36]  want them to be the same. If you say I'm
+[23:56.00]  going to do a transaction, I'm going to
+[23:58.16]  decrement by one the number of widgets
+[24:01.36]  in the west coast warehouse then I'm
+[24:04.16]  going to with before I commit that
+[24:06.72]  transaction I'm going to update the east
+[24:09.44]  coast warehouse pay pay a message over
+[24:11.68]  and back to update it and then to make
+[24:15.36]  sure everything goes well it takes a it
+[24:17.68]  takes another roundtrip a message to
+[24:20.56]  make sure that both of them actually do
+[24:23.68]  the commit correctly. So it's expensive
+[24:26.56]  to do a distributed commit and it still
+[24:30.24]  is. And so the idea was well you you do
+[24:35.12]  the e you do the west coast update you
+[24:37.68]  decrease the widgets by one you just
+[24:39.52]  send a message asynchronously and not in
+[24:42.64]  a transaction so that eventually the
+[24:45.84]  east coast uh warehouse gets decremented
+[24:49.44]  by one.
+[24:51.36]  So meanwhile,
+[24:53.44]  if you're on the east coast, you you
+[24:55.92]  decrement, you know, food stuffs by one.
+[24:59.52]  You send an asynchronous message.
+[25:01.84]  Eventually, the West Coast gets it and
+[25:04.48]  eventually everything settles out. So if
+[25:10.16]  you're allowed to to go below zero
+[25:14.72]  then what will happen is if the east
+[25:16.72]  coast guy and the west coast guy
+[25:18.24]  simultaneously
+[25:20.24]  sell the last widget
+[25:22.64]  then then eventually
+[25:25.28]  uh the
+[25:27.44]  state of the warehouse will be minus one
+[25:32.16]  and somebody won't get their widget
+[25:34.32]  their widget
+[25:36.80]  and So, uh, if if you're allowed like
+[25:41.36]  Amazon to say usually ships in 24 hours,
+[25:45.12]  then maybe you're can allowed to
+[25:47.68]  oversell, but most enterprises can't do
+[25:51.60]  that. And so eventual consistency just
+[25:54.88]  doesn't work. So, we talked a million
+[25:58.64]  hours ago about referential integrity.
+[26:01.92]  So referential integrity in a sales
+[26:04.32]  system is uh integrity constraint is
+[26:08.40]  stock is greater than minus one and that
+[26:12.08]  fails
+[26:13.60]  with eventual consistency.
+[26:16.32]  And so uh Jeff Dean finally of Google
+[26:19.92]  finally figured that out
+[26:22.40]  and uh when they did Spanner, Spanner
+[26:26.16]  had a conventional transactional system
+[26:29.04]  and so Google comp uh completely
+[26:31.84]  abandoned eventual consistency
+[26:34.72]  and completely abandoned map reduce.
+[26:37.84]  >> So the trade-offs basically um
+[26:40.64]  correctness for performance. So, it's
+[26:43.04]  performance versus data integrity. And
+[26:46.00]  if you don't care about your data,
+[26:48.80]  then you're willing to deal with with
+[26:52.00]  bad things happening.
+[26:54.24]  So, did you ever talk to the Google team
+[26:56.64]  while they were doing those things that
+[26:58.48]  you thought were so wrong? We talked to
+[27:01.28]  them before the
+[27:05.20]  2011 paper
+[27:08.64]  and said, "Why why don't we why don't we
+[27:12.32]  partner up and do some stuff?" And they
+[27:15.84]  weren't they weren't interested.
+[27:18.24]  So, they declined. Have you seen other
+[27:20.72]  examples in other big tech companies
+[27:22.64]  where their databases or database
+[27:25.20]  solutions where you actively disagree
+[27:27.76]  with them? like maybe Amazon or or
+[27:30.64]  Facebook. Well, I gave a talk at Amazon
+[27:34.08]  maybe three years ago
+[27:37.04]  and I told them all the things I thought
+[27:38.96]  they were doing wrong and I think uh
+[27:44.16]  Amazon's problem is that they are
+[27:47.36]  supporting you know
+[27:50.72]  15 different database systems
+[27:53.76]  and that's about 12 too many. So, so I
+[27:58.16]  think they have their own culture and I
+[28:01.04]  told I I said you're supporting too many
+[28:03.36]  database systems
+[28:05.52]  and at this point they haven't chosen to
+[28:07.76]  retire any of them.
+[28:09.76]  >> Why do you say that the 15 should be
+[28:12.08]  three? Well, they're supporting a
+[28:14.56]  graph-based database system, and it's
+[28:17.44]  well understood that a graph-based
+[28:21.12]  database system is almost never the
+[28:25.12]  performant option.
+[28:27.92]  And so, if you want a graph, if you
+[28:31.20]  want, if you like the idea of having a
+[28:34.96]  user interface that deals with nodes and
+[28:38.72]  edges, that's fine. put put a layer on
+[28:41.52]  top of a relational database system that
+[28:44.56]  gives you that user model. And so most
+[28:48.88]  of their database systems, there's some
+[28:51.52]  other of their database systems that
+[28:53.44]  better at what it does than
+[28:56.72]  than it is.
+[28:59.04]  And so so the answer is you should
+[29:01.12]  retire
+[29:04.32]  you should retire any database system
+[29:06.56]  that isn't performant
+[29:10.24]  in in a big enough market to justify the
+[29:13.36]  maintenance. you've uh influenced
+[29:16.32]  industry significantly from academia
+[29:19.92]  and my one thought that I had is what
+[29:24.24]  why not work directly in industry or why
+[29:28.08]  why do you prefer the position of being
+[29:30.56]  in academia and having influence in the
+[29:32.88]  way that you have versus just uh taking
+[29:36.16]  a job at AWS or something like that
+[29:38.72]  being a very you know distinguished
+[29:40.64]  engineer there
+[29:43.20]  uh because that gives you to a boss.
+[29:45.55]  [laughter]
+[29:46.64]  And that gives you company rules, limits
+[29:49.44]  your ability to publish, limits your
+[29:52.16]  ability to go talk at conferences,
+[29:55.12]  uh limits your abil your ability to
+[30:01.20]  go go poke at what what various
+[30:04.64]  competitors are doing that they won't
+[30:07.68]  tell their competitors.
+[30:10.40]  But mostly I really like being in
+[30:12.72]  startups and I and I after the
+[30:15.28]  commercial version of Postgress got
+[30:17.28]  acquired by InformX.
+[30:19.60]  You know I was working part-time for
+[30:22.64]  InformX
+[30:24.40]  which was a 2,000 person company and I
+[30:27.28]  didn't feel like I could make a
+[30:28.80]  difference because it was bureaucratic
+[30:32.16]  and and whatever the president wanted he
+[30:35.76]  got.
+[30:38.40]  So, I think I'm just not cut out for I'm
+[30:41.92]  not cut out for politicking. I don't do
+[30:44.16]  that very well
+[30:46.32]  and I have a hard time interacting with
+[30:48.80]  people I think are dumb and that again.
+[30:51.68]  So, I guess I I I have I have some
+[30:54.64]  problems with with big companies.
+[30:58.00]  >> I I want to talk a little bit about
+[31:00.24]  Debboss. I just thought it was a really
+[31:02.80]  interesting technical model. Can you
+[31:05.36]  explain what the boss is? We started the
+[31:09.12]  academic project in
+[31:12.48]  20
+[31:14.96]  19 2020 something like that. And the
+[31:18.40]  gist of it was
+[31:20.88]  uh at that point Mate Mate Haria who is
+[31:24.88]  on the faculty at Stanford was also one
+[31:27.52]  of the founders of data bricks was the
+[31:30.16]  original creator of Spark.
+[31:33.68]  And so he said uh
+[31:38.08]  at the time data bricks you know
+[31:40.48]  basically was running people's spark
+[31:43.60]  jobs on the cloud. And so he said at any
+[31:48.16]  given time we might be orchestrating a
+[31:52.08]  million Spark jobs.
+[31:54.40]  And so we have to write a scheduler
+[31:57.04]  that's going to decide who to run next
+[32:00.88]  at scale a million.
+[32:03.28]  And he said there was no we tried all
+[32:06.40]  the all the schedulers written by the OS
+[32:09.28]  folks and they they couldn't they didn't
+[32:12.32]  scale.
+[32:14.64]  So we put all the scheduling data in a
+[32:16.64]  Postgress database and basically a
+[32:20.24]  Postgress application was doing
+[32:22.16]  scheduling and then it sort of clicked
+[32:24.88]  that by and large most everything you do
+[32:28.56]  in an operating system
+[32:30.96]  is managing data at scale
+[32:34.00]  and you should do that using database
+[32:36.40]  technology.
+[32:38.32]  So why don't we just replace at least
+[32:41.28]  the upper half of Linux with a database
+[32:44.24]  system.
+[32:46.88]  So that was the gist of the academic
+[32:49.36]  project and we worked on it at Berkeley
+[32:52.64]  and Stanford
+[32:54.48]  uh in the early early 20s and it was it
+[32:59.12]  was very successful. It clearly it
+[33:02.16]  clearly worked.
+[33:04.24]  And in the process
+[33:07.20]  uh the Stanford folks wrote an extension
+[33:12.56]  to uh JavaScript so that you could
+[33:15.84]  program you need some programming world
+[33:18.32]  that can can talk to your
+[33:21.44]  implementation.
+[33:23.68]  So if you're doing what amounts to a
+[33:27.52]  programming language and you're running
+[33:30.08]  on top of what amounts to an operating
+[33:32.96]  system that is a database,
+[33:35.76]  then the obvious thing to do is put all
+[33:37.92]  your state in the database. And that's
+[33:40.00]  exactly what they did. And so we had an
+[33:42.40]  innovative
+[33:44.08]  programming language model, an
+[33:46.64]  innovative operating system model
+[33:50.40]  and and of course then the idea was well
+[33:53.84]  can we start a company
+[33:56.24]  and so we talked to the VCs
+[34:00.88]  who to a person said
+[34:04.88]  you're you're dreaming if you think
+[34:06.80]  you're going to displace Linux. However,
+[34:10.08]  this programming language stuff is
+[34:11.76]  really nifty. We had what amounted to
+[34:15.76]  extensions to JavaScript
+[34:19.84]  that would allow
+[34:21.92]  any any program to have all of the nice
+[34:24.88]  features of a database system. You know,
+[34:27.76]  stuff was durable. You could have
+[34:29.84]  transactions.
+[34:31.52]  If it failed, you'd fail over. You know,
+[34:34.32]  it was all that nifty stuff.
+[34:37.36]  So we got funded
+[34:39.60]  uh to start a company in 2023
+[34:44.80]  and that was Debboss Incorporated and we
+[34:49.12]  decided that that was the name of the
+[34:51.04]  project since it always been the name of
+[34:53.44]  the project
+[34:55.20]  but we were ba we were basically in the
+[34:57.84]  programming language business and so at
+[35:00.72]  the current time uh deboss has a version
+[35:05.20]  of Typescript a version of Java, version
+[35:07.76]  of Joe, Go,
+[35:10.56]  and a version of Python, which which are
+[35:15.60]  basically seamless. It runs what looks
+[35:18.40]  like vanilla programs. In the world of
+[35:23.44]  the cloud, there's every incentive for
+[35:26.80]  you to structure your your your
+[35:28.88]  application as a workflow.
+[35:31.36]  And so we decided that we would support
+[35:34.96]  a workflow system period.
+[35:38.48]  And so the workflow that that deboss
+[35:43.04]  supports in [snorts] those four
+[35:45.12]  languages is the steps in in a workflow,
+[35:50.32]  the individual
+[35:52.40]  micro apps, whatever you want to call
+[35:54.32]  them, are transactional.
+[35:57.36]  Uh workflows are durable. So that once
+[36:00.80]  you do a step it's not forgotten.
+[36:04.48]  Uh and it's clear that we can make
+[36:10.00]  uh workflows atomic if there was a
+[36:13.44]  market for it which means the whole
+[36:16.08]  workflow would either finish or look
+[36:19.60]  like it never happened. So it has very
+[36:22.32]  very nice properties
+[36:24.64]  and is
+[36:27.52]  a great deal faster and a great deal
+[36:29.36]  easier to use than the competition.
+[36:32.48]  So
+[36:34.00]  the company is selling and innovating in
+[36:37.28]  this area.
+[36:39.60]  And so so the idea is that you want to
+[36:43.04]  make state of your application
+[36:45.52]  persistent when you put it in the
+[36:47.84]  database. uh and then it and then you
+[36:50.96]  figure out how to do it fast.
+[36:53.68]  And I [snorts] think their their
+[36:56.80]  business model as we were talking
+[36:59.44]  earlier is very much get and get leaf
+[37:04.16]  level programmers
+[37:06.32]  interested.
+[37:07.92]  So it's been very much uh you know tell
+[37:11.84]  us leaf level programmer tell us what
+[37:14.56]  you need that we don't have get it
+[37:17.44]  quickly
+[37:19.28]  and convince people to try it and
+[37:24.72]  we've been very very successful with
+[37:26.72]  other with other startups who want to
+[37:29.44]  choose the best thing and we're starting
+[37:32.40]  to be to be successful with the the big
+[37:35.20]  boys. So it's it's an interesting
+[37:39.36]  interesting market and I think the key
+[37:42.16]  thing so far it's
+[37:46.88]  probably twothirds of the customers are
+[37:50.16]  doing agentic AI which means that they
+[37:54.16]  have a large language model surrounded
+[37:56.56]  by a bunch of stuff that that adds more
+[38:00.88]  signal
+[38:02.48]  and so far
+[38:05.76]  Most of Agentic AI is read only,
+[38:10.00]  meaning uh you want to produce a
+[38:12.96]  prediction
+[38:14.56]  for whether Ryan is is going to be a
+[38:17.20]  good customer or not. And so that just
+[38:20.64]  runs some stuff and then produces a new
+[38:23.52]  thing that's given to somebody. So
+[38:27.92]  basically read only which means that uh
+[38:33.28]  you're not you're not actually updating
+[38:37.28]  Ryan's credit rating or and so I think
+[38:42.24]  fairly quickly this the whole world is
+[38:45.60]  going to move to using
+[38:48.00]  you know agents to do read write
+[38:50.64]  applications
+[38:52.24]  and that's going to make that's going to
+[38:54.48]  make them very very databasey
+[38:58.48]  and DeBoss does that stuff really really
+[39:01.92]  well. And so, you know, for instance, if
+[39:06.16]  you want to write an agent or two agents
+[39:10.24]  that move a $100 from my account to your
+[39:14.08]  account.
+[39:15.60]  And so you debit my account, you
+[39:17.92]  increment your account
+[39:20.24]  and these two agents have to agree to
+[39:23.76]  commit
+[39:25.60]  or you have to back everything out,
+[39:29.12]  which is to say the workflow [snorts]
+[39:31.92]  needs to be what I called atomic, which
+[39:34.48]  is it all happens or it looks like it
+[39:37.20]  never happened. And so I think the the
+[39:40.32]  demands on in this market will escalate
+[39:45.28]  with with things with people wanting
+[39:47.84]  stuff to be read, right? And so I think
+[39:50.72]  that that will bode well for the market
+[39:54.16]  and bode well for deboss.
+[39:57.20]  And this this what's being offered in
+[39:59.36]  the market today to application
+[40:01.52]  developers differs from the original
+[40:04.00]  research project where that was actually
+[40:06.16]  swapping out the guts of an operating
+[40:08.24]  system with a database. I see that's I
+[40:11.68]  mean that's really cool. I never
+[40:12.96]  imagined replacing all the state of a of
+[40:16.16]  an operating system with a database.
+[40:18.32]  What's the there there's got to be some
+[40:20.80]  trade-off there.
+[40:22.88]  Well, a file system written on top of a
+[40:25.68]  DBMS is faster than than the Linux file
+[40:30.16]  system. The scheduling engine is
+[40:33.36]  competitive with other scheduling
+[40:35.20]  engines. You can make everything fail
+[40:38.16]  over. So, you get high availability
+[40:41.12]  without having to do anything else. The
+[40:44.48]  answer is there there's really no
+[40:47.28]  downside.
+[40:49.84]  Then why wouldn't Linux
+[40:52.08]  incorporate that and upgrade itself with
+[40:55.12]  this? You hope they would. In other
+[40:58.24]  words, you should you should keep all
+[41:00.56]  the device driver junk down at the
+[41:02.56]  bottom because that's there's a lot of
+[41:04.96]  it and no one wants to do that and
+[41:08.48]  replace everything else with the
+[41:10.00]  database implementation.
+[41:12.40]  Is that something that you've mentioned
+[41:14.08]  to Linux people and what's their typical
+[41:16.64]  reaction
+[41:17.84]  >> back in the academic project when I'd
+[41:20.32]  mentioned that to operating system folks
+[41:23.76]  they would get very very threatened
+[41:26.48]  which is this is the database guys
+[41:28.96]  trying to take over their turf
+[41:32.32]  and I think the programming language
+[41:34.40]  guys ditto you know which is you know
+[41:37.52]  the the the
+[41:40.32]  way to implement the runtime for a
+[41:42.72]  programming environment is with a
+[41:44.72]  database.
+[41:46.48]  >> That's uh that's interesting. I mean, if
+[41:48.96]  it's objectively true, then maybe it
+[41:50.80]  will take over.
+[41:53.04]  >> Well, I mean, it took Java 10 years to
+[41:56.08]  become widely accepted. I just think the
+[41:59.12]  time constant is substantial. I think we
+[42:02.80]  talked a lot about the past of databases
+[42:05.20]  and I'm curious your thoughts on
+[42:07.76]  unsolved problems in databases and what
+[42:10.80]  you think the future might look like.
+[42:13.12]  >> Okay. So I think two different things
+[42:15.60]  that I'd like to talk about. The first
+[42:18.48]  one is
+[42:20.40]  like everyone else
+[42:23.44]  three years ago we started to look at
+[42:26.56]  what were large language models good
+[42:28.64]  for. So, we've been trying to get what's
+[42:33.60]  now called text to SQL
+[42:36.64]  uh to we've been we've been trying to
+[42:39.92]  make it work
+[42:42.72]  on real world databases,
+[42:46.88]  especially real world data warehouses.
+[42:50.48]  So we've been trying the technology
+[42:54.08]  on four different production databases
+[42:57.28]  warehouses
+[42:59.04]  where we've gotten the workload the
+[43:02.00]  actual workload that's run
+[43:05.20]  and
+[43:06.96]  you know from the actual users using the
+[43:10.08]  system
+[43:11.86]  [clears throat] and we've gotten them to
+[43:14.48]  reverse engineer the text that
+[43:17.20]  corresponds to that sequence. So we have
+[43:20.64]  text and SQL for we have four
+[43:25.04]  benchmarks.
+[43:26.40]  >> When you say text to SQL, you mean uh
+[43:28.64]  like a human prompting model or
+[43:31.12]  something like I would just in English
+[43:33.68]  that text would be you know everyone
+[43:36.32]  over four years old. Tell me all the
+[43:38.96]  professors at MIT who won the touring
+[43:41.76]  award. And so an LLM is supposedly good
+[43:45.44]  at that.
+[43:48.48]  And so uh the text to SQL benchmarks
+[43:52.72]  there's a one called spider another one
+[43:54.72]  called bird
+[43:56.80]  and the best LLM systems are pretty good
+[43:59.60]  at those benchmarks you know like 80%
+[44:02.64]  accuracy or better
+[44:04.40]  >> so not superhuman
+[44:06.80]  >> not superhuman but they're pretty good
+[44:09.04]  like you would consider using them a and
+[44:12.64]  you know like current current
+[44:14.40]  leaderboard is something like 85% %
+[44:16.96]  accuracy, which I mean it's getting
+[44:19.36]  there. You say maybe it's not quite
+[44:21.52]  ready for prime time, but it's simply it
+[44:23.76]  certainly
+[44:25.28]  looks looks pretty good.
+[44:28.24]  Well, on our benchmarks,
+[44:30.80]  uh, large language models get 0%. And if
+[44:35.60]  you enhance them with rag and and all
+[44:38.72]  the tricks goes to 10%. And if you give
+[44:42.72]  as a prompt the from clause, in other
+[44:46.08]  words, all the actual tables that need
+[44:48.24]  to be accessed [snorts] and all the
+[44:51.28]  actual join clauses that need to be
+[44:53.60]  joined, then accuracy goes to about 35%.
+[45:00.16]  So the definition of this stuff doesn't
+[45:04.08]  is not ready for prime time and not
+[45:07.52]  going to be for a while, if ever.
+[45:10.48]  So what what's the difference? Uh number
+[45:13.52]  one, data wareh you know LL LLMs are
+[45:17.36]  trained on the pile.
+[45:20.00]  Data warehouse data is not in the pile.
+[45:23.20]  And there's an adage that if you haven't
+[45:25.44]  seen the data a couple times before, you
+[45:29.12]  have no chance of regurgitating it.
+[45:32.88]  That's number one. Uh number two uh
+[45:37.76]  query complexity on spider and bird is
+[45:40.80]  maybe 10 to 20 lines of SQL. Real world
+[45:45.44]  data warehouses it's 100 lines of SQL.
+[45:49.36]  Complexity is bigger.
+[45:51.76]  Number three the schema in spider and
+[45:55.84]  bird is clean.
+[45:58.24]  You know the table names are are mmonic.
+[46:02.08]  The column names are pneummonic and
+[46:04.24]  there's no duplication.
+[46:06.80]  In data warehouses, people have
+[46:08.96]  materialized views all the time. It
+[46:11.68]  means there's redundancy
+[46:14.16]  and and column names are often
+[46:18.16]  underscore
+[46:19.68]  Zuppers blah. And so they're not mmonic.
+[46:24.80]  So that makes it a lot harder. uh and
+[46:28.08]  then they also have idiosyncratic data.
+[46:31.76]  So J term is popular thing at MIT. It's
+[46:35.84]  a one-month term in January.
+[46:39.44]  Not unique to to MIT but not very
+[46:43.12]  popular.
+[46:44.88]  So not in the pile
+[46:47.52]  idiosyncratic data simple queries schema
+[46:53.44]  schema is a mess.
+[46:56.64]  make make it not work. And those are
+[46:59.44]  true of every data warehouse I know of.
+[47:03.20]  And so I think the the technology simply
+[47:08.08]  doesn't work and isn't going to work
+[47:09.84]  anytime soon.
+[47:12.56]  So we've been So what do you do? So well
+[47:16.64]  first of all we published our benchmark.
+[47:19.12]  It's a thing called Beaver, which is an
+[47:21.92]  anonymized
+[47:23.60]  and abstracted version of these four
+[47:25.84]  data warehouses.
+[47:27.92]  And so if you think you're really good
+[47:30.16]  at doing text to SQL, try a real
+[47:33.20]  benchmark, not a fake one.
+[47:36.32]  So number two, uh,
+[47:40.40]  borrowing from what I just said, if you
+[47:43.28]  don't have all the join terms and you
+[47:45.12]  don't have the from clause, you're
+[47:48.16]  toast.
+[47:50.64]  What's more, if you don't break down the
+[47:52.48]  query into simpler pieces, you're toast.
+[47:57.20]  So that says to me that uh you want to
+[48:04.72]  give
+[48:06.80]  your retrieval system simpler pieces
+[48:10.56]  which include the from clause and
+[48:12.32]  include join terms. That's number one.
+[48:15.76]  Uh number two, the minute you want to
+[48:19.52]  talk to two different structured
+[48:22.16]  databases, you know, like your data
+[48:24.64]  warehouse and your CRM system,
+[48:28.56]  then it's pretty clear to me that doing
+[48:31.44]  a structured data join using an LLM is a
+[48:35.92]  bad idea. It's just you're much better
+[48:38.96]  off
+[48:40.80]  you leaving them as tables and doing a
+[48:43.20]  join in SQL.
+[48:45.52]  So our point of view is we are trying
+[48:47.76]  out
+[48:49.28]  turning everything into tables. You
+[48:51.60]  know, we're we're working with the
+[48:54.16]  Department of Transportation in the city
+[48:56.72]  of Munich, Germany,
+[48:58.96]  and they have six people full-time who
+[49:02.40]  are answering citizens
+[49:05.12]  complaints,
+[49:06.72]  queries,
+[49:08.56]  which are of the form, how come I don't
+[49:11.84]  have enough time to cross this
+[49:14.80]  intersection next to my house before the
+[49:17.68]  light turns? All kinds of stuff. How
+[49:20.96]  come the trolley doesn't stop for enough
+[49:23.68]  time for me to get on the trolley? You
+[49:25.92]  know, it's How come the trolley doesn't
+[49:28.32]  come uh more than once an hour? I mean,
+[49:33.28]  it's all this stuff. Their database is
+[49:36.80]  the trolley schedule, that's SQL. The
+[49:39.44]  light sequencing, that's SQL.
+[49:42.88]  The intersections, that's CAD.
+[49:46.80]  the federal
+[49:50.08]  you know country of Germany regulations
+[49:52.96]  of this stuff that's text city of Munich
+[49:57.68]  regulations for this stuff which is text
+[50:01.20]  so you got to join SQL SQL CAD text and
+[50:05.52]  text so our point of view is turn it all
+[50:08.64]  into SQL all into tables and do a join
+[50:12.56]  with what amounts to a query optimizer
+[50:16.40]  So that's what we're working on. I think
+[50:18.96]  other people will have other ideas but I
+[50:21.68]  think it's extremely fertile area
+[50:24.24]  because people really want to do it.
+[50:27.76]  So that's number one. Uh number two we
+[50:30.56]  talked earlier about agentic AI. The
+[50:33.84]  minute this becomes read write it's a
+[50:35.76]  distributed database problem and you
+[50:38.56]  want atomicity
+[50:40.96]  consistency all that stuff. I think a
+[50:43.68]  very interesting area. So that's pretty
+[50:47.84]  much what I what I am what I'm working
+[50:50.40]  on now
+[50:52.24]  >> on that benchmark where it's 0% right
+[50:54.56]  now. What percent is human? Like if you
+[50:58.48]  took someone who really knows SQL, what
+[51:00.80]  would they score like the average human?
+[51:03.04]  So once you disambiguate the the text,
+[51:07.12]  a a knowledgeable SQL user programmer
+[51:11.28]  with the schema will do will will get
+[51:13.76]  very high accuracy.
+[51:15.68]  >> Okay. Like 90% or something at least.
+[51:18.72]  >> Okay. Okay. Wow. It's I'm surprised that
+[51:22.16]  the LM so score so lowly on on this kind
+[51:25.36]  of benchmark. Maybe when this goes out,
+[51:27.76]  someone who works at Anthropic will
+[51:29.60]  reach out to you or something and say,
+[51:31.28]  "Let's
+[51:31.92]  >> I'd love to I'd love to find out because
+[51:35.04]  I mean it's a terrific success story
+[51:38.32]  >> for people who want to deeply understand
+[51:40.64]  databases and they're looking for some
+[51:43.92]  material to study. Is there a book that
+[51:46.72]  you recommend that's a top technical
+[51:48.72]  book to learn databases
+[51:50.88]  >> papers in the literature?"
+[51:53.84]  I think uh Joey Helerstein and I
+[51:56.56]  published a red book what's called the
+[51:58.88]  red book which is called readings and
+[52:01.28]  database systems. It's now
+[52:05.92]  eight years old. I mean I think that
+[52:08.80]  that would be a great set of readings
+[52:10.88]  for eight years ago
+[52:13.20]  and beyond that uh papers
+[52:17.20]  popular papers from the literature. If
+[52:20.24]  you could go back to yourself when you
+[52:22.16]  just graduated, give yourself some
+[52:24.56]  advice knowing what you know today, what
+[52:26.40]  would you say?
+[52:28.08]  >> Back at when I first took the job at
+[52:30.56]  Berkeley and without thinking about it
+[52:33.04]  much, we said, "Let's write a database
+[52:34.80]  system." And we we knew nothing about
+[52:37.20]  databases,
+[52:39.20]  nothing about implementations. We were
+[52:41.52]  not skilled programmers
+[52:44.00]  like Bill Joy. So starting off doing
+[52:47.84]  something that was that crazy
+[52:50.64]  was really pretty crazy.
+[52:53.28]  And and you know you you effort and you
+[52:57.20]  make stuff work and you learn along the
+[52:59.76]  way. And so I think the answer is
+[53:03.84]  think outside the box.
+[53:06.40]  Think crazy thoughts
+[53:08.64]  and try and do them.
+[53:11.12]  And I think
+[53:13.60]  to me it's not at all obvious. The the
+[53:17.36]  better question is if you were starting
+[53:20.00]  out today, what would you major in? Uh
+[53:23.28]  because I think, you know, computer
+[53:26.00]  science may well not be a growth
+[53:27.92]  industry going forward. And I'm not sure
+[53:31.12]  I would recommend 18 year olds to major
+[53:34.40]  in computer science.
+[53:36.64]  I mean, I think health health care and
+[53:38.80]  and the building trades are are are safe
+[53:42.32]  bets and everything else looks much
+[53:45.28]  riskier. Uh, if if you're about to get
+[53:48.96]  your PhD and are trying to decide what
+[53:51.28]  to do,
+[53:53.04]  then I think life is pretty easy. you
+[53:55.52]  know, take take the most prestigious job
+[53:58.08]  you can get
+[54:00.24]  and find a mentor who's willing to help
+[54:03.60]  you
+[54:05.28]  and then pick some area that isn't, you
+[54:10.08]  know, like our our stuff, you know,
+[54:12.56]  which is called Rubicon, is definitely
+[54:14.88]  not going with the flow. So, choose
+[54:18.40]  something that's not that isn't going
+[54:20.96]  with the flow
+[54:22.88]  and try and make it work. Both my wife
+[54:25.20]  and I said, "F follow your passion.
+[54:28.56]  Somehow the money will work out." And I
+[54:31.68]  don't believe that for a minute, but I
+[54:33.76]  think that's what you have to tell your
+[54:35.20]  kids. [laughter]
+[54:36.96]  >> And your grandkids.
+[54:38.56]  >> If you don't believe that, then uh why
+[54:41.04]  do you have to tell them that?
+[54:42.90]  [clears throat]
+[54:43.04]  >> My wife is is a good example. So she has
+[54:46.16]  an she has a master's degree in computer
+[54:49.04]  science, undergraduate degree in
+[54:50.80]  computer science, and she wanted to be a
+[54:54.16]  teacher, you know, you know, K K12
+[54:57.84]  teacher. And her parents said, "You
+[55:00.00]  can't do that. It doesn't pay enough
+[55:01.60]  money."
+[55:03.60]  And so I think and I think she ever
+[55:06.48]  since that time has regretted
+[55:09.52]  that decision. She wasn't passionate
+[55:12.48]  about doing computer science. it was
+[55:14.40]  simply a trade.
+[55:17.20]  And so I think find something you're
+[55:19.60]  passionate about and and you will, you
+[55:23.04]  know, either
+[55:25.20]  you won't starve. You may not make a lot
+[55:27.76]  of money, but I think chances are you'll
+[55:30.96]  be happier than if you do something
+[55:33.28]  you're not passionate about. Because I
+[55:35.60]  think a lot of people I know view their
+[55:38.80]  job as simply a job and life is what
+[55:42.96]  happens between 5:00 pm and 8 am. I
+[55:46.48]  don't feel that way at all. I really
+[55:48.00]  like what I do. Wouldn't matter whether
+[55:50.88]  I made a lot of money or didn't.
+[55:53.12]  >> Awesome. All right. Well, thank you so
+[55:54.96]  much for your time. Really appreciate
+[55:56.48]  it.
+[55:57.44]  >> Thank you for listening to the podcast.
+[55:59.20]  It's a passion project of mine that I've
+[56:01.44]  really enjoyed building. Another passion
+[56:03.44]  project that I've been working on kind
+[56:04.80]  of in secret is building an ergonomic
+[56:07.28]  keyboard that I wish existed and I
+[56:09.60]  finally have a prototype. So, I'd love
+[56:11.20]  to show you what we've built. It's ultra
+[56:14.08]  low profile and ergonomic and I couldn't
+[56:16.80]  find anything like it on the market. So,
+[56:18.48]  that's why we built it. I'll put a link
+[56:20.24]  to the keyboard in the description. You
+[56:21.92]  can take a look and learn more about the
+[56:23.52]  project there. We could definitely use
+[56:25.12]  your support. Also, if you have any
+[56:27.12]  feedback for me about the show, I'd love
+[56:29.12]  to hear it. Comments on YouTube have led
+[56:31.52]  to guests coming on like Ilia Gregoric
+[56:34.16]  and David Fowler. I wasn't aware of them
+[56:36.56]  until someone dropped a comment. Also,
+[56:38.72]  feedback in the comments helped me learn
+[56:40.24]  to reduce the number of cliffhers in the
+[56:42.80]  intros. So, your comments definitely
+[56:44.64]  make a difference. Please keep letting
+[56:46.08]  me know what you'd like to see more of
+[56:47.68]  in the show, and I'll see you in the
+[56:49.20]  next episode.

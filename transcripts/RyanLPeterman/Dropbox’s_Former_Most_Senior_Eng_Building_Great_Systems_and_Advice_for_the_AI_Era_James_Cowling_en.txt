@@ -1,0 +1,3659 @@
+Title     : Dropbox’s Former Most Senior Eng: Building Great Systems and Advice for the AI Era | James Cowling
+Video ID  : 3XkmNSuHFmY
+URL       : https://www.youtube.com/watch?v=3XkmNSuHFmY
+Language  : English (auto-generated) (en)
+Generated : Yes (auto-generated)
+Snippets  : 3650
+Saved at  : 2026-10-08 08:17:08
+------------------------------------------------------------
+
+[00:00.00]  The best engineering comes from a deep
+[00:01.96]  understanding of why.
+[00:04.16]  >> This is James Cowling, formerly the most
+[00:06.64]  senior engineer at Dropbox, and now CTO
+[00:09.04]  at Convex, and we dived into all the
+[00:11.20]  technical work of his career.
+[00:12.92]  >> It's not about getting a system to work.
+[00:15.64]  It's what do you do when it doesn't
+[00:17.56]  work? Simple systems are way harder to
+[00:20.64]  design than complex systems.
+[00:22.24]  >> He also had some interesting takes on
+[00:24.16]  technical leadership.
+[00:25.44]  >> Really, a team should be oriented around
+[00:28.00]  what problem do they solve? They should
+[00:29.44]  not care about the system that survives.
+[00:31.92]  >> I've had many friends whose promotions
+[00:34.20]  were rejected because their work wasn't
+[00:36.56]  complex enough.
+[00:37.44]  >> Yeah, it I mean, it almost angers me. I
+[00:40.76]  just like it so much.
+[00:42.24]  >> Is there any career advice that majorly
+[00:45.24]  changed in the last 5 years?
+[00:47.04]  >> Someone will argue back, "No, what you
+[00:48.84]  can do is get really good at using
+[00:50.32]  Cloud." Well, guess what? It's not very
+[00:52.20]  hard to use Cloud.
+[00:53.84]  >> Here's the full episode.
+[00:55.67]  >> [music]
+[00:59.76]  >> Well, first off, your PhD thesis was
+[01:01.88]  huge. It was It's 156 pages. I didn't
+[01:04.76]  know uh
+[01:06.60]  like theses I thought papers, you know,
+[01:08.44]  maybe 10 pages or something like that.
+[01:10.28]  It's its own book. Um
+[01:12.88]  >> It's very similar to Spanner,
+[01:14.84]  ultimately. And it was um what's funny
+[01:17.36]  is I did that work. It came out a little
+[01:18.72]  bit before Spanner, so I got a citation
+[01:20.40]  in the Spanner paper. But then Spanner
+[01:22.44]  came out and then everyone kind of
+[01:24.68]  everyone forgot about my paper.
+[01:26.46]  >> [laughter]
+[01:27.88]  >> You know, about the research, like if
+[01:29.80]  you could kind of describe the the
+[01:31.96]  problem that Granola was solving, and
+[01:35.36]  you know, how it solved it, those types
+[01:37.40]  of things. Could we talk about that?
+[01:38.88]  >> Yeah, absolutely. So, I mean, my my
+[01:41.00]  interest in my career has been um two
+[01:44.32]  two parallel threads. Um one has been
+[01:47.24]  just abstractions in general. The idea
+[01:49.04]  about how to build simple models for
+[01:51.20]  complex problems, and and I find that a
+[01:53.04]  very, very difficult and very
+[01:54.48]  intellectually was like um design
+[01:57.04]  exercise. How to design APIs, basically.
+[01:59.52]  And the other has been large-scale
+[02:01.68]  transactional systems. Um, big fan of of
+[02:05.00]  transactions. And transaction, you know,
+[02:07.12]  is do a bunch of things at once. And and
+[02:10.36]  again, I think transactions are just one
+[02:12.00]  of the most incredible abstractions
+[02:13.76]  we've invented because it allows us to
+[02:15.80]  to to manage the
+[02:17.60]  probably the most difficult problem in
+[02:19.08]  computer science, which is which is
+[02:20.76]  concurrency.
+[02:22.20]  Um, and so Granola is a um, you know,
+[02:25.68]  that was a long time ago in my life now,
+[02:27.32]  but it was a it was a it was an
+[02:28.80]  algorithm for how to do
+[02:30.60]  um, distributed transaction
+[02:31.92]  coordination. Um, and in particular,
+[02:34.68]  transactions that I described at the
+[02:36.48]  time as one-shot transactions. I'm not
+[02:39.44]  actually sure if that was a standard
+[02:41.00]  term at the time or whether I made it
+[02:42.32]  up. But, um, a one-shot transaction
+[02:44.88]  meaning you kind of send some code to
+[02:47.52]  the server and say run this function,
+[02:50.60]  all these reads, all these writes on
+[02:52.96]  two, three, whatever nodes at once.
+[02:55.80]  And how to make sure this commits
+[02:56.96]  atomically across multiple shards in a
+[02:58.72]  distributed system.
+[03:00.40]  But yeah, that was my my PhD thesis and
+[03:02.76]  my master's thesis was on a on a um,
+[03:05.92]  on on Byzantine fault tolerance. Uh, so
+[03:08.52]  a consensus protocol
+[03:10.64]  uh, in the presence of uh, malicious
+[03:13.32]  nodes. So, how to how to achieve
+[03:14.72]  agreement in state across multiple
+[03:16.48]  parties when there's um, malicious
+[03:18.40]  entities. And
+[03:20.08]  I guess the most well-known work I did
+[03:22.44]  um,
+[03:23.32]  as part of grad school was work on this
+[03:25.24]  paper called Viewstamped Replication
+[03:26.80]  Revisited. And that was uh, that was a
+[03:29.16]  paper on um,
+[03:31.40]  redefining a protocol called Viewstamped
+[03:33.52]  Replication, which was a
+[03:35.24]  predated Paxos a little bit. Very
+[03:37.16]  similar algorithm, Paxos, Raft,
+[03:39.84]  VR, they're all basic virtual synchrony,
+[03:42.72]  all basically the same thing. Um, and
+[03:45.20]  that was a that was a paper I wrote at
+[03:46.88]  the time, which ended up being I guess
+[03:48.76]  influential to a to a
+[03:50.72]  a few really great companies like Tiger
+[03:52.16]  Beetle.
+[03:53.28]  >> You mentioned transactions, and I saw in
+[03:56.04]  the paper there's this idea of an
+[03:58.36]  independent transaction. And I if I'm
+[04:02.20]  you know, understanding correctly, a lot
+[04:03.80]  of the efficiency in a in a distributed
+[04:07.32]  system is lost by needing to get
+[04:10.00]  consensus and to vote for consensus. And
+[04:12.72]  it I saw that in your research, you
+[04:14.96]  found out a way to avoid needing to vote
+[04:17.24]  to reach consensus. And uh you know, how
+[04:19.28]  did you do that?
+[04:20.36]  >> Yes. I mean, um a lot of people I think
+[04:22.64]  think about performance maybe from the
+[04:24.84]  wrong angle cuz they think of
+[04:26.40]  performance as a factor of just of this
+[04:28.72]  raw horsepower. You know, how fast are
+[04:30.72]  your disks? How fast is your network,
+[04:32.44]  etc.? And And no one has particularly
+[04:35.40]  faster disks or memory than anybody
+[04:37.16]  else. Um what really matters to um
+[04:40.56]  performance in a large-scale system is
+[04:42.16]  eliminating points of coordination.
+[04:44.68]  So, it's how to uh allow systems to
+[04:46.92]  progress
+[04:48.44]  without having um without having
+[04:50.96]  contention between parties. You know,
+[04:53.32]  where like you're basically reducing
+[04:55.32]  parallel throughput to serial throughput
+[04:57.12]  across large um numbers of transactions.
+[04:59.40]  And so, in Granola, we had this idea
+[05:01.88]  called a independent transaction. Again,
+[05:04.24]  that was the terminology of the time um
+[05:06.80]  where there were, you know, two entities
+[05:09.24]  are basically processing pure functions.
+[05:11.64]  So, they have independent state, and
+[05:13.52]  they will both come to the same
+[05:14.80]  conclusion as a result. And all they
+[05:16.96]  need to do then is serialize those
+[05:19.08]  transactions. So, they have to decide if
+[05:21.24]  it was to happen atomically across
+[05:22.72]  multiple nodes,
+[05:24.48]  what timestamp should it get? And And
+[05:26.68]  Granola, the paper was mostly about how
+[05:28.64]  to exchange these timestamps very
+[05:30.44]  efficiently. So, how to how to have
+[05:32.56]  multiple parties each propose a
+[05:34.52]  timestamp, and then choose, you know,
+[05:37.40]  the maximum of these, basically. So, you
+[05:39.84]  could safely serialize the transaction.
+[05:42.28]  Um and there's a lot more complexity
+[05:43.56]  that goes into this. But really, the
+[05:45.32]  focus there was about how to maximize
+[05:47.52]  throughput in a large distributed system
+[05:49.76]  with without resulting in the
+[05:51.16]  alternative, which is two-phase commit
+[05:52.92]  and two-phase locking.
+[05:54.76]  And two-phase commit uh with two-phase
+[05:56.88]  locking is basically the standard
+[05:58.24]  approach for when you want to have
+[05:59.92]  multiple nodes agreeing on the same
+[06:02.72]  thing where they both agree to lock
+[06:04.40]  their state, not process any other data,
+[06:06.80]  and then and then and then commit uh the
+[06:08.80]  transaction. Two-phase commit can be
+[06:11.32]  quite um one, it's can be low
+[06:14.44]  performance because you're blocking
+[06:16.12]  basically the systems for the duration
+[06:17.44]  of the transaction, and it can be high
+[06:19.20]  risk, too, because you are taking a
+[06:21.56]  dependency on another node. You
+[06:23.88]  basically blocked waiting for another
+[06:25.32]  node to return. And so, that was what
+[06:27.28]  Granola was. Now, um
+[06:30.60]  I've kind of, you know, it's funny you
+[06:31.88]  asked about Granola cuz I forgot about
+[06:33.28]  it. You know, that's so far in my in my
+[06:35.44]  history, I kind of forgot about that
+[06:36.80]  work, and I even forgot the phrase
+[06:38.80]  independent transactions, to be honest.
+[06:40.60]  So, it's it's it's great to hear you
+[06:41.80]  bring it up again, but I guess all this
+[06:43.56]  stuff does feed into all the work you do
+[06:45.56]  later on in interesting ways.
+[06:47.96]  >> When I think about distributed systems,
+[06:50.52]  I think about you're at a big company
+[06:52.76]  and you got a bunch of machines, but
+[06:55.04]  when you were at MIT building this
+[06:56.72]  thing, how did you build and test it?
+[06:59.36]  Did you
+[07:00.84]  you know, were there spare machines that
+[07:02.84]  the college had or was this in the
+[07:04.64]  cloud?
+[07:05.28]  >> Yeah, it's it's this was a long time ago
+[07:07.36]  now. I'm I'm showing my age. This was
+[07:08.96]  pretty early in the days of AWS, and so
+[07:12.36]  we had a a rack of servers in our office
+[07:15.04]  that we could use, and I was fortunate
+[07:16.60]  enough to be at MIT where we could
+[07:18.08]  afford a rack. Um and there was also um
+[07:22.48]  a service called PlanetLab, and
+[07:23.92]  PlanetLab was like a big communal set of
+[07:26.20]  nodes that um you could academics could
+[07:29.60]  use to run to run uh tests on. But,
+[07:32.04]  PlanetLab was a communal system, and so
+[07:34.48]  it was continually having problems. I
+[07:36.88]  mean, it's just a free-for-all. And so,
+[07:38.88]  for the longest time, I would just sleep
+[07:40.44]  next to my desk and
+[07:42.96]  wake up whenever Planet Lab was free cuz
+[07:45.32]  you know, you need to run some
+[07:46.36]  benchmarks. These days you just spin
+[07:48.52]  something up on AWS, but then I would
+[07:50.20]  yeah, I would sleep next to my desk and
+[07:52.32]  I would wake up in the middle of the
+[07:53.52]  night or random times and check Planet
+[07:55.64]  Lab status and then kick off a
+[07:57.16]  benchmarking job.
+[07:58.68]  Now,
+[07:59.76]  this was right at the cusp
+[08:02.96]  at when I think in some respects Google
+[08:04.68]  ruined systems research.
+[08:06.48]  And I say that with affection and
+[08:08.12]  respect to Google
+[08:09.52]  um because before then
+[08:12.00]  most of the research was coming out of
+[08:14.56]  academia.
+[08:15.72]  And a lot of distributed systems
+[08:16.72]  research was done on smaller scales and
+[08:18.80]  a lot of the um the value prop was the
+[08:21.76]  ideas.
+[08:22.92]  So like hey, I wrote a paper. Here's an
+[08:24.60]  interesting new idea and yeah, it's all
+[08:27.20]  in theory. And so the the value that
+[08:29.76]  came out of it was the idea.
+[08:31.96]  Around about this time you started
+[08:33.24]  seeing papers out of Google, Amazon and
+[08:35.08]  these various companies where it wasn't
+[08:38.00]  necessarily a paper about an idea. It
+[08:40.08]  was a paper about a system. Hey, I built
+[08:42.40]  this giant system. It has a whole bunch
+[08:44.64]  of features, some of which are
+[08:46.08]  interesting, some of which are not and
+[08:47.84]  by the way it powers Gmail or whatever.
+[08:52.28]  And that that um kicked off a pretty
+[08:55.04]  interesting transition because at that
+[08:57.04]  point then
+[08:58.40]  you know, um program committees
+[09:00.16]  reviewing papers started to expect to
+[09:02.04]  see realistic benchmarks.
+[09:04.56]  That frankly grad students are not able
+[09:06.20]  to at least at the time produce. I mean,
+[09:08.44]  we I wasn't running Gmail on my system.
+[09:11.88]  Um and I think it did in some respects
+[09:14.80]  obscure
+[09:16.48]  intellectual ideas, right? Because I'm
+[09:18.76]  all for like papers about systems, but I
+[09:21.28]  think there's also value in a paper
+[09:22.48]  about an idea.
+[09:23.68]  You know, it's not we built this big
+[09:25.24]  thing and it works and up to you to
+[09:27.28]  figure out what's interesting about it,
+[09:29.00]  but instead here's a new thing you know,
+[09:30.36]  there's a paper you know, an old paper
+[09:32.60]  just called leases,
+[09:34.32]  right? Where someone invented the idea
+[09:36.20]  of a time-based lock, and it's just a
+[09:37.84]  paper called leases.
+[09:39.92]  And though that was a cool era of
+[09:41.60]  systems research. I think a lot of it
+[09:43.52]  now has shifted towards uh industrial
+[09:46.20]  research, which is you know, people are
+[09:47.32]  building stuff
+[09:48.84]  with, you know, for practical purposes.
+[09:51.32]  Whereas I think it's hard for academia
+[09:53.00]  to compete on pragmatism. And you know,
+[09:55.68]  academia is really a great place to do
+[09:58.04]  impractical work.
+[09:59.76]  >> When you look back on, you know, you
+[10:01.84]  getting the PhD in academia, being
+[10:04.16]  enabled to completely explore an idea
+[10:06.92]  versus going into industry, but maybe
+[10:09.20]  doing
+[10:10.44]  you know, maybe you worked on Spanner at
+[10:11.84]  Google or something like that. You know,
+[10:14.36]  when you look back, which path do you
+[10:16.48]  think would be better and why?
+[10:18.52]  >> I think there's a bit of a misconception
+[10:19.76]  a lot of folks have about PhD programs.
+[10:22.24]  I think a lot of students are like
+[10:23.60]  high-achieving students in college, and
+[10:25.60]  they think that the PhD program is like
+[10:27.28]  college plus plus. It's like, "Hey, I
+[10:29.32]  like learning things, and so I'm going
+[10:31.48]  to go do a PhD." But it's not. A PhD is
+[10:34.68]  training to be a researcher.
+[10:37.16]  And for most people, they shouldn't do
+[10:40.00]  that. If someone wants to be a
+[10:40.92]  professional software engineer,
+[10:42.96]  they probably shouldn't spend their time
+[10:44.68]  training to be a researcher.
+[10:46.84]  But with a really important caveat.
+[10:49.84]  I think there's a really um interesting
+[10:52.16]  and challenging developmental experience
+[10:53.92]  you go through in in a in the PhD
+[10:55.80]  program at a top university at least,
+[10:58.00]  which is you get to a certain point in
+[10:59.44]  time when you have a problem that you're
+[11:01.40]  facing that no one else in the world
+[11:03.68]  knows the answer to.
+[11:05.00]  You have a problem that you are the
+[11:06.96]  world expert on, and you can't you know,
+[11:08.76]  you can chat about it with folks, but
+[11:10.28]  you can't ask your advisor cuz your
+[11:11.68]  advisor doesn't know either, right? So
+[11:13.56]  you're faced with these difficult
+[11:14.88]  challenges that there's you can't read a
+[11:16.96]  book, you can't, you know, you can't ask
+[11:19.44]  chat GPT, right? And so you're forced to
+[11:21.80]  go through a quite difficult and frankly
+[11:24.20]  emotionally challenging experience of
+[11:27.28]  being unsure, being uncertain, and and
+[11:30.00]  learning to think for yourself.
+[11:32.16]  I think that is really valuable for all
+[11:35.60]  engineers. I think that was really
+[11:37.52]  really valuable in my career.
+[11:39.40]  Um I do see a lot of folks early in
+[11:42.16]  their career
+[11:43.52]  um
+[11:44.56]  think that all knowledge comes from
+[11:46.56]  reading or you know, absorbing it from
+[11:49.12]  someone else or that there's a right way
+[11:50.64]  to do things. But I think being in a PhD
+[11:53.20]  program um
+[11:55.32]  or being faced with really demanding
+[11:57.44]  open questions does train your mind to
+[12:00.16]  be comfortable with that discomfort. Um
+[12:03.32]  I mean, look
+[12:05.04]  I feel um
+[12:06.92]  I feel a little bit lucky that I went
+[12:08.60]  through a grad school without LLMs
+[12:10.80]  existing.
+[12:12.08]  Because I had to deal with this
+[12:13.52]  uncertainty. I I There was There was no
+[12:15.92]  There was no crutch to help me out,
+[12:17.44]  which I think was very valuable. So, um
+[12:21.44]  Ah, I mean, a lot of a lot of
+[12:24.28]  you know, if you want to If you want to
+[12:25.28]  be a researcher, go go do a PhD.
+[12:28.40]  If you want to build stuff, go build
+[12:30.88]  stuff.
+[12:31.96]  You know? And I And you know,
+[12:34.68]  since leaving academia, I've done a lot
+[12:36.88]  of work that I I guess one could call
+[12:38.92]  innovative. Like it it advanced the
+[12:41.20]  industry in certain ways and did novel
+[12:43.64]  stuff, but our goal was never research.
+[12:46.16]  Our goal was just to solve problems. And
+[12:48.04]  I think that's the difference. I mean,
+[12:49.64]  in academia, your goal is to advance
+[12:51.96]  knowledge. Um in in industry, your goal
+[12:54.96]  is to solve problems.
+[12:56.72]  Um and
+[12:58.40]  I gravitate more towards the solving
+[13:00.68]  problems.
+[13:01.68]  And I find that a more comfort-
+[13:03.08]  comfortable environment within which to
+[13:04.60]  work.
+[13:05.72]  >> Going to your time in in industry, you
+[13:08.88]  know, at Dropbox, you became the most
+[13:10.60]  senior engineer at the company. And
+[13:13.04]  looking through all the projects that
+[13:14.68]  you did, I had a series of just
+[13:18.32]  technical curiosities. I saw this idea
+[13:20.76]  early in your career about multi-homing,
+[13:22.56]  and I wasn't familiar with that concept.
+[13:24.76]  What What is multi-homing? What's the
+[13:26.80]  problem it
+[13:28.08]  >> Yeah, I mean multi-homing is the ability
+[13:30.36]  to have data in two locations, two
+[13:32.44]  homes. And multi-homing can be valuable
+[13:35.76]  for a variety of reasons. Um one is
+[13:39.00]  called, you know, primary secondary or,
+[13:41.28]  you know,
+[13:42.12]  lazily replicated multi-homing whereby
+[13:44.80]  all rights commit authoritatively in one
+[13:47.56]  region and get replicated to a secondary
+[13:49.96]  region. Um and so this is normally used
+[13:53.04]  for, you know, business continuity. You
+[13:55.12]  know, one thing we did at Dropbox we
+[13:56.64]  made sure that if the entire West Coast
+[14:00.04]  blew up, you know, which hopefully
+[14:01.52]  wouldn't happen, Dropbox would keep
+[14:03.12]  running because there would be enough
+[14:04.76]  the data would be replicated in other
+[14:05.96]  regions. But with a window of
+[14:07.76]  vulnerability, with a window of time
+[14:09.32]  where there may be some some some data
+[14:11.60]  lost.
+[14:12.84]  Um so that is, you know, that's kind of
+[14:15.12]  primary secondary replication or
+[14:17.00]  multi-homing. There's something else
+[14:18.64]  called active active multi-homing where
+[14:21.16]  there is truly an authoritative copy of
+[14:23.52]  the data in multiple locations. So
+[14:25.76]  basically when you, for example, write
+[14:27.88]  to a system, you don't externalize that
+[14:30.44]  right as having succeeded until it has
+[14:32.64]  landed in all the regions.
+[14:34.72]  Um and so, for example, in the the
+[14:36.68]  storage system at Dropbox, the block
+[14:38.16]  storage system, we truly had a a
+[14:40.28]  multi-region replicated system where we
+[14:42.72]  could take down an entire region, say
+[14:44.44]  take down the
+[14:45.76]  a region in Ashburn, Virginia where
+[14:48.68]  everyone's data centers are and there'd
+[14:50.80]  be zero downtime for the company and the
+[14:52.56]  data was still safe in multiple regions.
+[14:55.12]  I think multi-homing
+[14:57.84]  is something a lot of engineers aspire
+[14:59.68]  to work on cuz it's it seems like
+[15:03.84]  the right thing to do.
+[15:05.56]  But I think the reality is for most
+[15:07.20]  companies it is not.
+[15:09.32]  For most companies it's not because
+[15:10.40]  there's very high cost there's very high
+[15:12.32]  cost latency costs for this. Very high
+[15:14.48]  um because the speed of light is just
+[15:16.52]  not getting faster. The speed of light
+[15:18.04]  is fixed.
+[15:19.24]  And if you have to, you know,
+[15:21.12]  synchronously write data across multiple
+[15:23.20]  regions in the United States, you're
+[15:25.04]  going to have, say, 60 milliseconds in
+[15:27.76]  the commit path of your protocol, which
+[15:29.72]  for most applications is not tenable.
+[15:31.88]  Uh, so there is a lot of desire, um, you
+[15:34.44]  know,
+[15:35.20]  a lot of engineering teams reach out for
+[15:36.80]  kind of advice on how to adopt
+[15:38.56]  active-active multi-homing for the
+[15:39.96]  company. I would normally say, "Don't do
+[15:42.48]  it." I would normally say,
+[15:44.76]  "Frankly, if US East is down, if Amazon
+[15:47.12]  is down that day,
+[15:49.00]  that's okay. If Amazon's down that day,
+[15:51.92]  your your company will be down. That's a
+[15:54.12]  shame, right? But by avoiding that
+[15:57.08]  complexity, you're going to be able to
+[15:58.84]  move much faster and build a much better
+[16:00.24]  product. And so,
+[16:02.04]  in my mind, systems is all about
+[16:03.44]  trade-offs and making the right ones.
+[16:05.72]  I would generally recommend most people
+[16:08.68]  do not make the trade-off to have
+[16:10.72]  partition tolerance or or or
+[16:12.60]  multi-region availability.
+[16:14.48]  Even though for a company like Dropbox,
+[16:15.72]  yes, that does make sense. When you When
+[16:17.32]  you When your When your job is storing
+[16:19.44]  data and you have several exabytes of it
+[16:22.00]  and and hundreds of millions of
+[16:23.40]  customers, I think that's when it's when
+[16:25.20]  it starts to make sense.
+[16:26.64]  >> So, it's it's just another term for, I
+[16:28.96]  guess, data replication and having it
+[16:31.48]  available on other regions. Okay. I
+[16:33.88]  imagine also, I mean, the cost of
+[16:35.60]  storage is a concern. How many replicas
+[16:38.28]  would you keep for something? Like,
+[16:40.08]  let's just say I stored something in
+[16:41.36]  Dropbox. It's my document. Is that
+[16:45.08]  on on the order of one or two or is
+[16:47.20]  there multiple?
+[16:47.96]  >> No, it's on the order of many, many. And
+[16:50.04]  so, um,
+[16:51.56]  so, if you were to store a file in
+[16:53.84]  Dropbox,
+[16:55.92]  I modeled the storage to be, as we
+[16:58.08]  advertise, at least 12 nines of
+[16:59.68]  durability. Internally, the models look
+[17:02.24]  around 24 nines of durability. And so,
+[17:04.84]  that means the data is secure with
+[17:07.24]  99.99999%
+[17:10.12]  where there's 24 nines, right? Which
+[17:12.08]  means, at least according to the model,
+[17:15.24]  you know, the universe will be extinct
+[17:17.36]  before any data is lost. Right. And and
+[17:20.16]  the way that is done is by a combination
+[17:22.16]  of of what's called erasure coding. So,
+[17:24.52]  erasure coding is how you take a
+[17:26.28]  several blocks of data and combine them
+[17:27.92]  together in it with an encoding scheme
+[17:30.36]  and spread them around in in different
+[17:32.12]  locations. At that scale, at Dropbox
+[17:34.28]  scale, you're you're taking things into
+[17:35.48]  consideration like putting data in
+[17:36.80]  different racks, different rows of a
+[17:39.60]  data center because they're on different
+[17:40.64]  power feeds. You're taking into
+[17:42.28]  consideration different eras of hard
+[17:45.00]  drives and different manufacturers of
+[17:46.64]  drives because they can have correlated
+[17:48.04]  failure patterns. And then replication
+[17:50.12]  across regions.
+[17:51.84]  Um so, you know, you you could be
+[17:53.56]  looking at
+[17:54.76]  27 fragments, for example. That doesn't
+[17:57.72]  mean you're storing 27 times the data.
+[17:59.72]  It's it's kind of encoded in in in many
+[18:01.64]  regions. But, it's really uh the
+[18:03.60]  replication schemes get really quite
+[18:05.24]  sophisticated at that point. And we
+[18:06.92]  actually had our own
+[18:08.72]  custom encoding matrix we had developed.
+[18:10.92]  It's called a Vandermonde matrix where
+[18:13.48]  you kind of take a bunch of data and you
+[18:15.28]  combine it together to produce outputs.
+[18:18.76]  And we would plug in some variables like
+[18:21.00]  how much do discs cost? How much does
+[18:23.32]  network bandwidth cost?
+[18:25.32]  Because there's a trade-off. You can
+[18:26.64]  either store If you don't want to lose
+[18:27.96]  your data, you can store more copies on
+[18:29.84]  more discs.
+[18:31.40]  Or you can store fewer copies. And
+[18:33.72]  anytime a disc fails, you re-replicate
+[18:36.48]  it really fast. And re-replicating
+[18:38.52]  really fast costs
+[18:40.12]  disk band costs network bandwidth.
+[18:42.24]  So, these kind of variables go into this
+[18:43.76]  equation. Uh it ends up being an
+[18:45.84]  extremely complex field of endeavor, but
+[18:48.48]  it's kind of abstracted away into a part
+[18:50.36]  of the system that doesn't doesn't leak
+[18:51.84]  into anywhere else.
+[18:53.28]  >> So, with erasure encoding, my my
+[18:55.92]  document in Dropbox is fragmented into a
+[18:59.24]  bunch of different chunks of data and
+[19:01.12]  loaded potentially from many different
+[19:02.64]  machines.
+[19:03.48]  >> Yes, absolutely.
+[19:04.80]  >> It
+[19:05.96]  I mean, the the first thought I have is
+[19:08.20]  now there's uh I might be waiting there
+[19:10.48]  and one of the 27 machines is slow and I
+[19:14.64]  can't look at the whole doc. So, how do
+[19:16.44]  you prevent against that?
+[19:17.56]  >> It's actually faster than not
+[19:19.84]  replicated. Because if you imagine I'll
+[19:22.28]  I'll pick a
+[19:23.60]  uh
+[19:24.36]  a simplified example.
+[19:26.04]  Imagine this is not the encoding scheme
+[19:28.20]  Dropbox uses, but imagine to reconstruct
+[19:30.36]  a file, you have to read six out of nine
+[19:33.36]  fragments.
+[19:35.08]  Right? So, if you read six out of nine
+[19:37.32]  fragments, you can just ask all nine
+[19:40.60]  and reconstruct and return the data as
+[19:42.28]  soon as you've heard from the first six.
+[19:44.64]  It's actually
+[19:45.92]  faster and you can construct these
+[19:47.68]  encoding matrices. So, if it is it's
+[19:49.68]  actually faster to have a ratio coded
+[19:51.36]  data than than not.
+[19:53.28]  >> I see. Okay, so you can
+[19:55.24]  like oversubscribe, over request, and
+[19:58.20]  then you complete on a portion of them
+[20:01.36]  being received.
+[20:02.04]  >> Yes. Now,
+[20:03.24]  in in practice, it was a bit more
+[20:05.16]  complex than that. We'd often have a
+[20:06.52]  copy in a single disk to provide fast
+[20:08.64]  access. We'd often try to make sure that
+[20:11.04]  you could serve your data out of a
+[20:12.64]  region close to your home region. So,
+[20:14.88]  we'd make sure that your data was mostly
+[20:16.64]  served with low latency. But, if that
+[20:19.00]  region had failed, you could reconstruct
+[20:20.76]  it from the remaining regions. So,
+[20:22.28]  there's a lot of um
+[20:24.24]  a lot of people, you know, there's a lot
+[20:25.24]  of uh talk about building your own
+[20:27.68]  infrastructure and and you can save
+[20:29.68]  money by moving off the cloud.
+[20:32.08]  Um
+[20:32.80]  almost definitely you can't. Unless you
+[20:36.24]  you unless you either you have very
+[20:37.96]  small requirements or very fixed
+[20:40.32]  requirements or very very very heavy
+[20:42.96]  investment. Cuz if you want to compete
+[20:44.72]  with Amazon, if you want to build a more
+[20:46.08]  efficient storage system than Amazon,
+[20:48.44]  you have to have a supply chain team
+[20:50.12]  that's working with you know, Western
+[20:51.96]  Digital and Seagate constantly and
+[20:53.96]  negotiating on prices of disks and
+[20:55.72]  buying shipments at certain time and and
+[20:57.92]  capacity teams and and data center
+[21:00.52]  teams. Like there's a lot of work that
+[21:02.44]  goes into like
+[21:03.88]  optimizing this. Because ultimately, our
+[21:06.08]  desire was to use the disks to 90-95%
+[21:10.36]  of
+[21:11.32]  the disk size to to maximize storage
+[21:14.16]  efficiency. To put it this way, I mean
+[21:15.92]  that was
+[21:16.88]  you know, I guess it's a ballpark
+[21:18.20]  figure, a billion-dollar project.
+[21:20.32]  Right? And was you know, and it I think
+[21:22.76]  at the time, as far as I know, was the
+[21:24.44]  largest ever data migration in history,
+[21:27.36]  I think at the time. And so, extremely
+[21:29.92]  large engineering project with very high
+[21:32.92]  technical investment. So, yes, if you
+[21:34.84]  have that scale and you have the
+[21:36.80]  engineering team to do it and you're
+[21:39.88]  willing to keep innovating, if you're
+[21:42.12]  willing to keep
+[21:43.76]  um optimizing and investing effort in
+[21:45.60]  it, then yes, you can do it.
+[21:47.64]  Um but I think the real I mean, the
+[21:49.40]  cloud has been an incredible innovation,
+[21:51.12]  right? Most people are not experts at
+[21:52.64]  this, and most people should not be
+[21:54.20]  experts at this. You know, most people
+[21:55.68]  should focus on their applications.
+[21:57.64]  >> When you say that most people shouldn't,
+[21:59.76]  my immediate thought was but one of the
+[22:02.12]  big projects you worked on at Dropbox
+[22:04.40]  was my migrating away from S3.
+[22:06.96]  >> Yes, yes.
+[22:07.52]  >> So,
+[22:08.28]  um you know, why why did Dropbox migrate
+[22:10.32]  away from S3?
+[22:12.36]  >> Yeah, that was a desire of the company
+[22:13.68]  for a long time. You know, from even
+[22:15.44]  before I was there. So, I started at
+[22:16.88]  Dropbox in 20
+[22:18.40]  uh 2012. Um and I spoke to to Drew, the
+[22:21.96]  Dropbox founder, I think in 2010 about
+[22:24.16]  this project. And so, I think there was
+[22:25.92]  a desire to
+[22:27.76]  um control the destiny of the company
+[22:30.68]  from a strategic perspective. I mean, at
+[22:32.12]  the time it was before Dropbox kind of
+[22:34.56]  reshaped itself as being more about
+[22:36.04]  collaboration. You know, at the time it
+[22:37.76]  was a file sync and share category. That
+[22:39.64]  was that was the that was the that was
+[22:41.24]  the market sector, you know? And so, and
+[22:43.80]  owning the file system was really
+[22:45.32]  valuable to the company.
+[22:47.08]  Ultimately, we saved a huge amount of
+[22:48.68]  money. I mean, we we And this is before
+[22:51.56]  the public company went public. We
+[22:53.28]  really drove massive cost efficiencies
+[22:56.20]  through the project. Um but it was hard,
+[22:58.48]  you know, in a way that I think it'd be
+[22:59.84]  very difficult to to emulate without a
+[23:02.00]  huge investment.
+[23:03.68]  And I do think that there is um
+[23:06.88]  there is a benefit to an organization
+[23:09.20]  from having hard problems to solve.
+[23:12.32]  Because if you have a a company with
+[23:14.04]  extremely hard technical challenges, you
+[23:16.48]  can attract engineers who like working
+[23:19.00]  on those hard technical problems. And
+[23:20.48]  when they've solved those problems, they
+[23:23.12]  cycle off and work on different parts of
+[23:25.00]  the system. So, you know, after we all
+[23:27.04]  worked we had a such a great team. It
+[23:28.88]  was a very very small engineering team.
+[23:30.72]  And after we kind of shipped the the
+[23:33.56]  storage system reliably, we all went off
+[23:35.36]  and you know, Jamie went and and
+[23:38.04]  redesigned the sync protocol, the
+[23:39.72]  desktop client, and I worked on the on
+[23:41.88]  the file system and the distributed
+[23:43.36]  databases. And so, yeah, there's there's
+[23:45.28]  value to a business to have
+[23:47.08]  um that level of technical investment,
+[23:49.20]  but it is uh
+[23:51.04]  you know, it's like it's like having a
+[23:52.36]  baby and then you have to you've got to
+[23:54.92]  raise the baby. You can't just build a
+[23:56.48]  system like this and be that's it, we're
+[23:58.16]  done.
+[23:59.56]  You own it and you have to keep
+[24:01.04]  investing in it.
+[24:03.32]  >> Did um
+[24:04.72]  did S3 do any counter negotiation before
+[24:07.64]  you set out to leave them? Did they say
+[24:09.16]  like, "Oh, you know, we'll cut you a
+[24:10.36]  deal if you
+[24:11.50]  >> [laughter]
+[24:12.72]  >> I guess I'm allowed to talk about this
+[24:14.00]  now. It was a long time ago. Um
+[24:17.04]  Yeah, for the longest time they I don't
+[24:18.28]  think they were they were particularly
+[24:19.48]  aware that this was happening.
+[24:21.40]  Um but you know, the the data center
+[24:23.20]  folks talk. And uh certainly it was
+[24:26.92]  noticed that Dropbox is buying up a lot
+[24:28.68]  of data center space. So, yeah, we had
+[24:31.24]  we had um obviously at uh at the scales
+[24:34.44]  that we were at, I mean, we were
+[24:35.80]  negotiating very good rates with Amazon.
+[24:38.52]  You know, we weren't paying sticker
+[24:39.60]  price, we were paying very very very
+[24:41.36]  good discounted rates. Um but yeah, at a
+[24:43.96]  certain point they weren't able to meet
+[24:45.36]  our cost efficiency. Because it it's it
+[24:47.12]  when we launched the system, it really
+[24:48.72]  was
+[24:49.96]  more efficient than S3.
+[24:51.92]  And that's for a variety of reasons. One
+[24:53.68]  was that we were using kind of new
+[24:55.32]  experimental disks called shingled
+[24:57.24]  magnetic recording. We were the first
+[24:59.12]  ones, I think, to use these disks at
+[25:00.60]  scale.
+[25:01.64]  Um and two, we had a very tight
+[25:03.68]  understanding of our workloads. So, we
+[25:04.96]  were able to design the system
+[25:06.44]  specifically optimized for our
+[25:08.20]  workloads, whereas S3 has to design the
+[25:10.60]  system for everybody. So, you know, it
+[25:13.12]  got to the point where, you know, Amazon
+[25:14.76]  would not have been able to offer us a
+[25:16.04]  more competitive deal because we had a
+[25:18.20]  more efficient system.
+[25:20.20]  Um
+[25:21.72]  I wouldn't recommend another company do
+[25:23.16]  this right now.
+[25:24.72]  Uh but I think at the time it it
+[25:26.12]  certainly made sense for us as a
+[25:27.40]  company.
+[25:28.92]  >> Can you give an example of uh tight
+[25:31.68]  understanding of your workloads leading
+[25:33.52]  to like something you could do that S3
+[25:36.24]  couldn't?
+[25:36.84]  >> Yeah, absolutely. So, for example, I
+[25:38.64]  know
+[25:39.88]  that um well, I'll try not to leak any
+[25:42.12]  confidential data, right? But when you
+[25:44.56]  when you upload a file to Dropbox, there
+[25:46.72]  is a pattern of access, right? Um so,
+[25:49.76]  typically people um access the file very
+[25:52.52]  quickly shortly afterwards um because
+[25:55.36]  you're sharing it with someone or maybe
+[25:57.44]  Dropbox is processing that file to
+[25:59.84]  generate an image preview. And then it
+[26:01.64]  decays at a certain rate. And so, we
+[26:03.80]  understand in general the average block
+[26:06.60]  size, and we um understand also the
+[26:09.56]  access pattern. So, we could do things
+[26:12.24]  like at a certain point we had these two
+[26:14.96]  um clusters. One was at One was
+[26:17.48]  um designed for kind of temporary
+[26:20.28]  storage that was kind of
+[26:21.80]  storage-inefficient
+[26:23.44]  but access-efficient. So, it was very
+[26:25.96]  cheap to read and write to, but it was
+[26:28.04]  inefficient to store. And data would get
+[26:30.04]  written to there first, and then in the
+[26:32.16]  background it would get um moved in bulk
+[26:35.40]  to this colder storage system.
+[26:37.68]  And this colder storage system was far
+[26:39.20]  more static.
+[26:40.80]  And so, it was able to have kind of more
+[26:42.40]  efficient algorithms and and and be
+[26:44.80]  written to in bulk. And if it went down
+[26:47.64]  for writes, that was no problems because
+[26:49.64]  it wasn't in the live path. And so, we
+[26:51.52]  were able to trade off, again, like
+[26:52.84]  systems is all about trade-offs. So, we
+[26:54.80]  were able to trade off the the live data
+[26:56.68]  write path from the long-term read path.
+[26:59.52]  Um that's one of many examples where
+[27:02.04]  knowing the size of your data, where
+[27:03.84]  it's accessed from, how frequently it
+[27:05.48]  gets accessed, how um how long it takes
+[27:07.52]  to delete that data, you can really tune
+[27:10.12]  a system
+[27:11.44]  um to your workload. If you know, stuff
+[27:13.68]  like looking at
+[27:15.36]  um
+[27:16.60]  even things down to knowing how much
+[27:18.52]  power to put in a rack. You know, you
+[27:20.48]  have a rack of hardware, there's a power
+[27:23.08]  distribution unit, a PDU, at the top of
+[27:24.72]  that rack. It has a circuit breaker
+[27:26.64]  which can handle a certain number of
+[27:28.12]  amps.
+[27:29.56]  We would have to figure out, you know,
+[27:31.56]  how many amps are required for that rack
+[27:33.96]  based on access patterns. And there were
+[27:35.68]  times where we got it slightly wrong.
+[27:37.36]  There was times where
+[27:38.84]  we got to maybe a bad batch of hardware,
+[27:41.16]  and disks were failing too frequently.
+[27:43.20]  And as a result, we were re-replicating
+[27:44.68]  the data
+[27:45.88]  more regularly, and I was getting, you
+[27:47.12]  know, messages from the data center team
+[27:48.44]  saying, "Hey,
+[27:49.76]  we're I'm in the rack's really hot right
+[27:51.28]  now." You know? So, that's the level of
+[27:53.56]  optimizations you can make when you get
+[27:55.52]  to that scale. Um but again, that's
+[27:58.20]  multi-exabyte scale. You know,
+[28:01.08]  million hard drive scale.
+[28:03.24]  >> Yeah, when I was reading about this
+[28:04.48]  migration, I saw somewhere in the
+[28:06.20]  migration
+[28:07.60]  you initially started with Go, and then
+[28:10.84]  the racks or something that you're
+[28:12.52]  running on the hardware itself was
+[28:14.40]  ooming too much or
+[28:16.00]  requesting too much memory. And then you
+[28:18.36]  migrated to Rust.
+[28:20.12]  >> So, initially, the prototype was in
+[28:22.16]  Python, if you can believe that.
+[28:24.16]  And to be fair, Python is actually
+[28:25.60]  pretty efficient for IO. I think people
+[28:27.24]  give Python a a bad rap for IO-bound
+[28:30.16]  workloads. It's pretty good at IO. Um
+[28:33.08]  but obviously, um not great for
+[28:35.08]  concurrency, not great for memory
+[28:36.32]  management, and um very hard to
+[28:38.44]  refactor.
+[28:39.76]  And it was critical this system was
+[28:41.24]  correct. And so, we migrated everything
+[28:44.36]  to Go, and we built most of the storage
+[28:46.12]  system in Go. This is before Go was in
+[28:48.92]  general availability. I think it was
+[28:50.12]  before Go was GA. Um and we built the
+[28:53.20]  system in Go. Go is a great language for
+[28:55.52]  concurrency, a great language for
+[28:56.96]  proxies. You know, it's a really well
+[28:59.24]  designed for like servers that moved out
+[29:01.48]  of one place to another place.
+[29:03.28]  At a certain point though,
+[29:05.00]  we would have, you know, let's just pick
+[29:07.08]  a number. Let's say a million. Let's say
+[29:08.20]  we have a million nodes in the system.
+[29:10.52]  And every node has um
+[29:13.92]  some amount of memory, some amount of
+[29:15.68]  disk, some amount of sheet metal in the
+[29:17.92]  chassis, right? And we would itemize all
+[29:20.40]  these things. You'd have a pie chart of
+[29:22.72]  of how much money is spent on all the
+[29:24.84]  things. And it would still have stuff
+[29:26.28]  like, yeah, sheet metal and screws and
+[29:27.80]  stuff. And so, you're trying to optimize
+[29:30.36]  the storage and a big problem for us was
+[29:33.88]  the amount of memory um
+[29:36.52]  these nodes were using. Not just the
+[29:38.24]  memory that we're using, but the
+[29:39.60]  unpredictability of it. Uh with, you
+[29:42.40]  know, with Go having a runtime and and
+[29:45.80]  you know, in a storage system, an out of
+[29:47.64]  memory error is pretty bad.
+[29:49.96]  Because if a node runs out of memory and
+[29:51.48]  restarts, that looks like a disk
+[29:53.16]  failure.
+[29:54.60]  So, that looks a lot like a disk has
+[29:56.04]  failed and has to be re-replicated. And
+[29:57.68]  so, a batch of nodes OOMing
+[30:01.12]  can lead to cascading failures
+[30:02.76]  throughout the system.
+[30:04.28]  Because maybe um I remember a time it
+[30:08.24]  was a band. It might have been De La
+[30:09.48]  Soul. I can't remember. There was a band
+[30:10.88]  released an album on Dropbox.
+[30:13.40]  So, there was a big spike in load
+[30:15.84]  um to a to a
+[30:17.84]  a few files. So, it was very, very high
+[30:20.80]  um bandwidth and it caused the the
+[30:23.16]  machines to OOM. So, the those machines
+[30:25.64]  uh OOMed, those disks OOMed. Um and so,
+[30:28.44]  as a result, no problems. The system
+[30:30.40]  went to try to recover that data from a
+[30:32.48]  whole bunch of other replicas, right?
+[30:34.84]  Now, all of the sudden you've taken one
+[30:37.08]  amount one fire hose worth of load
+[30:39.40]  coming in and you've turned this into
+[30:41.00]  seven fire hoses worth of load coming,
+[30:42.68]  cuz now you have to do a more expensive
+[30:44.28]  reconstruction operation, right? So now
+[30:46.36]  you've seven x the load. And these are
+[30:48.20]  the kind of cyclical kind of behaviors
+[30:51.12]  that can lead to something called
+[30:52.04]  congestion collapse. Congestion collapse
+[30:53.88]  is when
+[30:55.04]  workload to a system crosses a threshold
+[30:57.28]  where it all kind of collapses.
+[30:59.76]  So
+[31:00.80]  designing against congestion collapse is
+[31:02.48]  really the hardest part or one of the
+[31:04.48]  hardest parts of Magic Pocket, which is
+[31:06.00]  the name of the storage system. Um so
+[31:08.72]  ultimately we switched to Rust for the
+[31:12.20]  storage nodes themselves. And this
+[31:13.92]  again, this is before Rust was in GA, so
+[31:16.36]  that was a bit of a risky move.
+[31:18.16]  Uh but we rewrote um
+[31:20.64]  the switch to Rust coincided with
+[31:22.64]  getting rid of the file system entirely
+[31:24.32]  on the disks and directly addressing the
+[31:27.04]  the disk disk heads. So there was a
+[31:29.28]  there's an instruction set, I think it's
+[31:30.48]  called ZBC, zone based block control,
+[31:33.60]  something like that. There's there's a
+[31:34.52]  there's an instruction set for accessing
+[31:36.08]  disks that we were using.
+[31:38.16]  The disk manufacturers gave us the draft
+[31:39.96]  specs of these new disks and we were
+[31:41.80]  operating off the draft specs and
+[31:43.80]  directly controlling the the disks. And
+[31:45.80]  so
+[31:46.68]  all that product was tied up um together
+[31:49.60]  um
+[31:50.72]  into a product called DiscoTech.
+[31:52.64]  It was the disk technology project. Um
+[31:55.44]  and ultimately, if you look at that pie
+[31:57.24]  chart, one congestion collapse stopped
+[31:59.36]  and reliability improved. But if you
+[32:01.08]  looked at the pie chart of where all the
+[32:02.56]  money was going, it really shifted to be
+[32:05.00]  almost all disks. And what we wanted to
+[32:07.16]  do is get that pie chart to be
+[32:10.08]  almost all the money spent on disks and
+[32:12.48]  as little money spent on RAM, on
+[32:14.24]  compute, on network, on power, on sheet
+[32:16.60]  metal, etc.
+[32:17.88]  >> The cascading failure you mentioned, was
+[32:20.00]  there So that that happened and then
+[32:22.44]  there was a postmortem.
+[32:23.60]  >> I don't think we needed a postmortem.
+[32:24.88]  Well, I think we we knew as it was
+[32:26.20]  happening.
+[32:27.34]  >> [laughter]
+[32:28.24]  >> I think when I was getting paged in the
+[32:29.88]  middle of the night on these things, I
+[32:31.36]  would you know, you'd be pretty pretty
+[32:32.92]  evident. And so look, this is the again,
+[32:35.52]  this is an argument in favor of the
+[32:36.96]  cloud. All right. Imagine you've spent
+[32:40.16]  hundreds of millions of dollars on a on
+[32:42.60]  a storage system and it's out in
+[32:43.96]  production and it's on physical
+[32:46.00]  hardware.
+[32:47.40]  You can't just go and put new memory
+[32:50.24]  chips in every one of them. I mean, you
+[32:51.72]  can, but you have to pay people to come
+[32:53.80]  in and swap them out, you know. And so
+[32:55.76]  that That's a tricky place. And so as a
+[32:59.00]  And this is what This is what I love
+[33:00.28]  about industry. You know, cuz in like
+[33:03.24]  some of the more um
+[33:05.08]  challenging moments on Magic Pocket were
+[33:07.64]  stuff like in one week
+[33:09.84]  This is a weird coincidence. Two trucks
+[33:12.16]  crashed that were delivering servers. So
+[33:13.84]  there's two trucks showing up to deliver
+[33:16.12]  racks and then they both crashed. I
+[33:17.32]  don't know, you know, the drivers were
+[33:18.44]  okay. So we lost capacity for 2 weeks.
+[33:21.72]  Uh so the So we lost capacity for for
+[33:23.68]  more than 2 weeks. For for for probably
+[33:25.48]  6 weeks.
+[33:26.96]  Um
+[33:28.08]  What do you do?
+[33:29.84]  What happens, you know, is is the
+[33:31.40]  equivalent of your disk filling up on
+[33:32.72]  your laptop except it's, you know, it's
+[33:34.68]  it's a million disks.
+[33:36.56]  And you can't tell the customers to go
+[33:38.48]  away. You can't delete their files. So a
+[33:40.48]  lot of a lot of tricky um a lot of
+[33:43.52]  tricky capacity work. Um and ultimately
+[33:46.36]  what that what that led to was trying to
+[33:48.60]  build in
+[33:51.00]  all these protections against the
+[33:52.64]  unknowns. You know, making sure we had
+[33:55.48]  the right amount of buffer planned out
+[33:57.48]  for anything bad that could happen.
+[33:59.00]  Making sure we we designed the system so
+[34:01.32]  they couldn't be congestion collapse so
+[34:02.92]  there wouldn't be memory spikes.
+[34:05.08]  Um and
+[34:06.96]  you know, at one point there's a there's
+[34:08.44]  a process called I think it's called
+[34:09.56]  FMEA
+[34:11.16]  which is like a threat modeling process
+[34:12.80]  where you had a big spreadsheet and you
+[34:14.44]  kind of write down every bad thing that
+[34:16.72]  could possibly happen and then, you
+[34:18.52]  know, all the how bad it would be if it
+[34:20.64]  happened.
+[34:21.84]  Existential risk.
+[34:23.80]  Does someone die? You know, if there's a
+[34:25.20]  fire in the data center. All these kind
+[34:26.56]  of things get put into the spreadsheet.
+[34:28.40]  And you kind of do a bit of a almost
+[34:30.36]  pre-mortem kind of work to figure out
+[34:33.04]  all the all the potential failure modes,
+[34:35.12]  and then design around them. And I I
+[34:36.92]  that's I love that work. I I I really um
+[34:40.56]  I don't know. I do like the firefight. I
+[34:42.40]  I like the
+[34:44.16]  I don't I can't say I like getting paged
+[34:45.88]  because
+[34:47.24]  I've spent my whole life on call,
+[34:49.32]  but I do like that rubber hits the road
+[34:51.80]  stuff. I like that
+[34:54.32]  wow, there's congestion collapse and and
+[34:56.04]  there's no one that can help you. And
+[34:58.28]  so, you've [snorts] got to
+[34:59.84]  think through this problem.
+[35:01.44]  >> When I worked on infrastructure at
+[35:02.84]  Instagram, we had this concept of DEFCON
+[35:04.92]  knobs, which are basically these configs
+[35:08.32]  that you could flip that would
+[35:10.40]  gracefully degrade your system, where
+[35:12.96]  you can still operate it, but you know,
+[35:15.04]  maybe in the case of Dropbox, you store
+[35:17.68]  less replicas. So, you take on a
+[35:20.20]  temporary increase of
+[35:22.80]  uh risk in losing data because you need
+[35:25.24]  to. Uh did you have something like that,
+[35:27.32]  and did you flip it in that type of
+[35:29.04]  case?
+[35:29.52]  >> Never when it came to durability. So, I
+[35:32.00]  mean, we just had a just absolute zero
+[35:34.88]  non-negotiable, like there was no room
+[35:36.88]  for negotiation on on user durability.
+[35:39.52]  And so, um
+[35:41.32]  we had those knobs for background
+[35:42.72]  processes, for CPU and and memory, for
+[35:44.56]  example. So, if there was like a spike
+[35:46.00]  in load, you could turn off background
+[35:48.12]  processes and and turn off um you know,
+[35:50.80]  um the the test load, for example, on
+[35:52.88]  the system. Eventually, we we built this
+[35:55.16]  system called
+[35:57.64]  trampoline.
+[35:58.92]  And what trampoline did was um which
+[36:01.76]  actually was a it it saved us a ton of
+[36:03.60]  money, right? When if we ever got too
+[36:06.44]  close to the threshold, we would just
+[36:08.40]  start writing data to S3.
+[36:10.36]  Cuz it's right there, right? So, it's um
+[36:13.32]  you can run your capacity way closer to
+[36:15.84]  the edge if you're willing under worst
+[36:18.16]  case scenarios just to just to dump 30
+[36:20.84]  petabytes on S3, and then move it back
+[36:23.32]  when it's done. And now, it didn't that
+[36:25.24]  didn't happen very often. We would do it
+[36:26.64]  to test it. We would do that to make
+[36:28.00]  sure the system worked.
+[36:29.68]  But um yeah, being able to have a escape
+[36:32.84]  hatch for worst case scenario was really
+[36:34.80]  nice.
+[36:35.72]  >> As you said, S3 is kind of
+[36:37.92]  it's like elastic storage.
+[36:39.60]  >> Exactly.
+[36:40.84]  >> When I looked at this project, it's such
+[36:44.00]  a massive migration and my first thought
+[36:46.52]  is how do you coordinate this whole
+[36:49.00]  project without breaking the system as
+[36:51.68]  it's running?
+[36:53.20]  How Yeah, what are your thoughts on
+[36:55.80]  doing such a large migration without
+[36:57.64]  breaking things?
+[36:58.28]  >> Yeah. Now, I mean in
+[37:00.40]  in terms of the engineers that like
+[37:02.00]  built the initial version of the system,
+[37:04.20]  it was a handful.
+[37:05.88]  Three, four, five, six engineers. It
+[37:07.48]  wasn't a team of a thousand, you know.
+[37:09.24]  It was a very, very small team. And so
+[37:11.64]  um
+[37:12.68]  how do you build such a large system
+[37:15.60]  with a small number of people and then
+[37:16.84]  how do you do a high-risk migration?
+[37:19.20]  Uh
+[37:21.04]  One of these one one thing you do is you
+[37:22.76]  keep things simple. You you try so so so
+[37:25.44]  hard to
+[37:27.16]  build very cleanly abstracted, simple
+[37:30.28]  systems that their failure modes are
+[37:32.08]  very understandable. Um and so they and
+[37:34.60]  they and they decouple so they don't
+[37:36.16]  have congestion, collapse, etc. So,
+[37:38.24]  focusing on simplicity this it gets
+[37:40.52]  tricky by the way with people doing
+[37:42.56]  agentic development. They They're not
+[37:44.40]  the best at building simple systems.
+[37:45.88]  Like simplicity is still the domain of
+[37:47.88]  human beings for now. But um a big focus
+[37:50.76]  on simplicity. The other was um
+[37:53.76]  you know, this this very thick layer of
+[37:56.24]  validation checks during this migration.
+[37:58.64]  And And in fact, um we had uh
+[38:02.24]  when we did the migration off of S3, we
+[38:04.52]  had this um something called the dark
+[38:06.12]  launch where we would you know, be
+[38:07.56]  moving data off of S3, but we were
+[38:09.80]  keeping it in both locations. And we had
+[38:12.12]  to demonstrate to the We had this kind
+[38:13.68]  of contract with the Dropbox founders.
+[38:17.28]  We'd have to kind of keep the system
+[38:18.92]  running with no incidents,
+[38:21.12]  uh no downtime, no data loss, for 6
+[38:23.24]  months before we would delete any of the
+[38:25.36]  data from S3. So, we have double write
+[38:27.80]  it. And, um,
+[38:30.32]  and there's one point in time, halfway
+[38:32.28]  through this process, where there was a
+[38:33.92]  a bug got through to production.
+[38:35.92]  Um, and it didn't nothing bad happened
+[38:38.16]  with the bug. But, it was a it was like
+[38:39.88]  a,
+[38:41.36]  it was it was like a a bug
+[38:43.44]  slipped through our multiple layers of,
+[38:45.48]  you know, release process, etc.
+[38:47.48]  And, um,
+[38:48.92]  so, I went to the VP and I said, "Hey,
+[38:50.64]  you a bug made it through to production,
+[38:53.12]  and we're going to reset the launch
+[38:55.40]  clock.
+[38:56.64]  And, as a result, it's going to launch
+[38:58.84]  later, and it's going to cost us
+[39:01.36]  some amount of money. Let's say
+[39:02.48]  double-digit millions, you know?
+[39:05.36]  And, they were like, "Great.
+[39:07.56]  Thank you. That's good. I trust you."
+[39:09.32]  And, that was that that was a cool
+[39:10.80]  thing. I mean, Dropbox had a lot of
+[39:11.92]  incredible cultural values. But, like,
+[39:14.04]  that was like, "Okay, cool. If you're
+[39:15.72]  prioritizing user safety, that's the
+[39:17.12]  right thing to do." And, um, no one was
+[39:19.96]  mad about that. It was almost like they
+[39:21.32]  were
+[39:22.68]  proud, almost. You know, it was it was
+[39:24.52]  just like a it was like, "Yes, you're
+[39:26.56]  you're operating, uh, in accordance to
+[39:29.00]  the
+[39:29.76]  principles of this company." And, yeah.
+[39:32.04]  >> Okay, so, it it was double writing both
+[39:33.80]  systems for a while, and then
+[39:35.08]  >> For some subset of data, yeah.
+[39:36.56]  >> Uh, okay. And, then you switched over
+[39:38.16]  reads.
+[39:39.00]  >> Once we were sure the system was
+[39:40.64]  durable, and we had all these validators
+[39:42.24]  running in production 24/7, uh, then we
+[39:44.80]  were just migrating as fast as we could.
+[39:46.28]  I think at some point we got up to 700
+[39:49.12]  gigabits per second, 764 gigabits per
+[39:52.24]  second of peering bandwidth between
+[39:54.24]  Amazon servers and ours. Um,
+[39:57.12]  certainly someone on the network team
+[39:58.60]  over there noticed
+[39:59.92]  that [laughter] there was that much data
+[40:01.00]  moving out.
+[40:02.88]  At one point, I got a a slightly nasty
+[40:05.28]  email from someone saying
+[40:07.15]  >> [snorts]
+[40:07.68]  >> it was super weird. I think the phrase
+[40:09.56]  super weird, it's like, "It's super
+[40:11.40]  weird that you're doing so many reads
+[40:13.16]  and not that many writes."
+[40:14.72]  >> Mhm.
+[40:15.00]  >> And, I didn't didn't respond to that
+[40:17.04]  email. But to be fair, like Amazon was
+[40:19.76]  us are a great have been a were a great
+[40:21.28]  partner for Dropbox. And Dropbox still
+[40:23.04]  uses AWS. They always
+[40:26.04]  um
+[40:26.80]  there was no concern that they would do
+[40:28.04]  the wrong thing by us as a company. I
+[40:29.48]  mean, like well we we only had excellent
+[40:31.88]  experience with AWS. Um but yeah, there
+[40:34.56]  was a it was a moment for us, you know,
+[40:36.68]  it was a
+[40:38.48]  it probably strained the relationship
+[40:40.28]  somewhat.
+[40:41.52]  >> You mentioned simplicity and
+[40:44.16]  intuition-wise, it makes sense.
+[40:46.80]  Do you have a concrete example though?
+[40:49.00]  >> Yeah, I've got a concrete example for
+[40:50.08]  you. And it it maybe it shows the
+[40:51.40]  difference between academia and
+[40:53.08]  industry.
+[40:54.32]  Um so um
+[40:56.76]  the storage system is a giant
+[40:58.56]  distributed system with a files stored
+[41:01.60]  in various locations. And so you need a
+[41:03.76]  a mapping from from the file to where it
+[41:06.28]  lives on these disks.
+[41:08.20]  And so all we did was had a cluster of a
+[41:11.36]  thousand MySQL nodes.
+[41:14.20]  All right?
+[41:15.24]  Big giant database, and it was indexed
+[41:17.76]  by the block ID, and it said this block
+[41:19.92]  is on these disks.
+[41:21.40]  And that's a pretty
+[41:23.84]  like simple, it's not sophisticated, you
+[41:26.20]  know? And it And every time we'd hire
+[41:29.28]  someone out of academia, or maybe from
+[41:32.36]  other companies, they'd say, "Oh, this
+[41:33.52]  is not very sophisticated because like
+[41:35.60]  you could use a Patricia trie, or you
+[41:37.96]  could use a distributed hash table, and
+[41:40.64]  that would map um a block to a set of um
+[41:44.56]  of of locations." And I think
+[41:48.88]  that's optimizing for the wrong thing.
+[41:51.68]  Because the really nice thing about
+[41:52.92]  dumping a list of files and their
+[41:54.68]  locations in a giant database is it's
+[41:56.84]  written in one location. If I want to
+[41:59.00]  validate what happened, if I want to
+[42:00.92]  check all the data there is where it's
+[42:02.52]  meant to be, I just walk over the table
+[42:05.12]  and check. And we did. We had services
+[42:07.20]  constantly walking over in the table and
+[42:08.80]  checking. Whereas if it it a distributed
+[42:10.68]  hash table or some giant complex data
+[42:12.56]  structure, it's very hard to to
+[42:14.28]  validate. So, I mean, designing for
+[42:16.84]  validation is very important. Designing
+[42:18.36]  for understanding is very important.
+[42:19.56]  It's not about getting a system to work.
+[42:22.20]  It's what do you do when it doesn't
+[42:24.12]  work, right? And so, having a very
+[42:26.72]  simple boundary That's That's a It's a
+[42:29.00]  very basic example, you know, there's
+[42:30.44]  there's more There's more sophisticated
+[42:31.96]  examples that take more time to explain,
+[42:33.44]  but like something like that is
+[42:36.76]  a lot of engineers will feel, you know,
+[42:39.36]  a lot of engineers will want to do
+[42:40.76]  interesting work. Will want to advance
+[42:42.24]  in their career. They They want to be
+[42:44.68]  seen as a as a intellectual problem
+[42:48.36]  solver.
+[42:49.64]  And so, the tendency can be to design
+[42:52.68]  complex systems. And my argument is
+[42:55.12]  always that like
+[42:56.56]  simple systems are way harder to design
+[42:59.28]  than complex systems.
+[43:01.52]  Like, simplicity is so hard. And I think
+[43:03.88]  to like maybe the untrained eye, a
+[43:05.72]  simple system can seem like obvious. And
+[43:08.76]  the the And the best compliment you
+[43:10.20]  could ever get about anything you design
+[43:13.00]  is people say like, "Oh, isn't that the
+[43:15.04]  Isn't that the obvious way of doing it?"
+[43:16.56]  It's It's like the same as convex, you
+[43:18.32]  know, people say, "Oh, isn't that
+[43:20.68]  What's that? That's just like the
+[43:21.76]  obvious way of structuring?" Like,
+[43:22.96]  great. Because it wasn't obvious when we
+[43:25.04]  did it. No one else was doing it, right?
+[43:26.76]  Everyone thought we were idiots. If
+[43:28.52]  after the fact people think it's
+[43:30.56]  obvious, then you then you really nailed
+[43:32.00]  it. I think um
+[43:33.72]  But I think that's a um it requires a an
+[43:36.32]  understanding that's that that
+[43:37.44]  simplicity is is the hardest thing in
+[43:39.28]  systems. And cuz simplicity is
+[43:42.12]  is scalable. And I don't Yes, simplicity
+[43:44.20]  is scalable in terms of numbers of
+[43:46.88]  queries per second, right? But what I
+[43:48.76]  really mean about scalability is you can
+[43:50.92]  take a simple system
+[43:53.12]  and and have it run for 5 years, and
+[43:55.64]  have people work on it for 5 years, and
+[43:57.92]  have all sorts of features added to it,
+[44:00.08]  and have requirements changed cuz the
+[44:01.72]  company realized the product didn't work
+[44:03.28]  the way it wanted to work, and it wants
+[44:04.60]  to change things, and it still stands
+[44:07.04]  the test of time.
+[44:08.44]  Whereas a complex over-optimized system
+[44:10.76]  will not. And And that's the tough thing
+[44:12.80]  about
+[44:13.92]  distributed systems design, especially
+[44:16.48]  um
+[44:17.28]  LLM augmented distributed systems
+[44:19.04]  design, is just because something works
+[44:22.68]  doesn't mean it's maintainable over a
+[44:24.36]  long period of time. Doesn't mean it's
+[44:25.56]  understandable. Doesn't mean it's
+[44:26.64]  cleanly up architected and abstracted.
+[44:29.28]  That stuff's really very hard.
+[44:31.52]  >> Absolutely. And I agree with you. I
+[44:34.12]  think it's the long-term beneficial
+[44:35.80]  thing to do.
+[44:37.24]  One unusual thing though in the industry
+[44:39.04]  that I I've seen is
+[44:41.04]  the incentive system for engineers is
+[44:44.04]  actually I mean, you mentioned the
+[44:45.88]  desire for an engineer to want to be
+[44:48.52]  seen that they can do something
+[44:50.16]  difficult. There's that, but there's
+[44:51.68]  also the incentive system of promotions.
+[44:54.76]  And I've had many friends whose
+[44:57.04]  promotions were rejected because their
+[44:59.52]  work wasn't complex enough. And so that
+[45:02.12]  kind of forces It's a forces complexity,
+[45:05.00]  which is kind of unusual. I wanted to
+[45:07.12]  know what you thought about that.
+[45:08.44]  >> Yeah. It I mean, almost
+[45:11.48]  angers me. I just like it so much.
+[45:14.48]  Partly why I started my own company, you
+[45:16.12]  know.
+[45:17.16]  Um
+[45:18.16]  I think
+[45:20.00]  the ideal for anyone is to be doing work
+[45:23.92]  where the you're being appreciated for
+[45:27.32]  solving the problem. Like, you know, and
+[45:29.92]  this is
+[45:31.12]  if we get philosophical, this is what it
+[45:32.44]  was like going back to the farming days,
+[45:34.52]  right? There was no incentive to make it
+[45:36.48]  really complicated to milk a cow, cuz
+[45:38.36]  the goal is to like milk the cow, and
+[45:40.12]  then the back The reward is you got
+[45:41.64]  milk, right? And I think at a It sounds
+[45:44.20]  so silly, but at a startup, that's the
+[45:46.36]  same thing. The startup, the goal is to
+[45:48.20]  build the system, have it work, have the
+[45:49.88]  users like it, have it grow, and
+[45:52.44]  everyone gets rewarded and celebrated
+[45:55.16]  for solving the problem.
+[45:57.92]  It gets hard to scale that. So at large
+[46:00.08]  companies
+[46:01.80]  the end up with so many layers of
+[46:03.96]  organization that people end up building
+[46:06.60]  alternative incentive structures, right?
+[46:08.72]  It's like I'm so far away from whatever
+[46:11.28]  the hell we're trying to do over here
+[46:12.88]  that my goal now is to get all green
+[46:15.80]  check marks on my OKR plan.
+[46:18.64]  But who cares about your OKR plan unless
+[46:20.20]  it solves the problem? And so the you
+[46:22.20]  know, the thing that really drives me um
+[46:25.28]  really drives me insane is when people
+[46:27.48]  try to chase
+[46:29.92]  um
+[46:31.20]  artificial goals.
+[46:32.60]  Right? And I And I understand that if
+[46:34.84]  you're in a company with um like this
+[46:37.36]  that you may have no choice in the
+[46:38.76]  matter. But what I want to tell people
+[46:40.88]  there is a better way.
+[46:43.56]  And it you know, and that that better
+[46:45.64]  way may not be available to you. You may
+[46:47.16]  not
+[46:48.16]  have job opportunities near where you
+[46:50.52]  are, for example.
+[46:51.84]  But if you do have the ability to go
+[46:54.40]  work at a company where
+[46:57.08]  like you are being appreciated for
+[46:58.68]  problem solving,
+[47:00.56]  that will make you so much better as an
+[47:02.36]  engineer. Like And I see this when I
+[47:04.64]  when I interview people, you know?
+[47:06.56]  Um and I if if I, you know, do a um
+[47:09.60]  I mean, everyone knows Google has
+[47:10.84]  tremendous engineering and tremendous
+[47:12.28]  engineers. Um a lot of
+[47:14.68]  folks there though, I'm not
+[47:16.72]  that interested in hiring
+[47:19.68]  because
+[47:21.88]  you know, if I'll do a deep dive with
+[47:23.64]  them and they'll say they built a system
+[47:24.80]  and I'll say, "Well, why did you build
+[47:25.72]  it?" And they're like, "I don't know.
+[47:26.48]  The VP told me to." And like, "Oh, how
+[47:28.92]  is this system used?" And they're like,
+[47:30.00]  "I
+[47:30.84]  I don't really know. I think ads uses
+[47:32.32]  it. I'm not sure." And this is a this is
+[47:34.36]  a caricature, but I think it's very,
+[47:36.16]  very hard to do good engineering in that
+[47:37.80]  environment. You can do competent
+[47:39.88]  engineering, but the best engineering
+[47:41.84]  comes from a deep understanding of why.
+[47:44.60]  And this is something we just drill into
+[47:47.32]  you know, the the team here Convex, or
+[47:48.88]  you know, the team embodies so strongly
+[47:50.44]  at Convex is like everything exists for
+[47:52.44]  the why. Do like don't build a a fancy
+[47:55.76]  load balancer unless it's not needed.
+[47:57.32]  Turns out we do need a fancy load
+[47:58.68]  balancer, we're building it right now.
+[48:00.12]  But but you know,
+[48:01.68]  you should always start with why are we
+[48:02.88]  doing this? What's the point?
+[48:05.04]  And
+[48:06.92]  I feel for people stuck in environments
+[48:09.96]  that are not like this. But you know
+[48:11.52]  what? Like I don't know.
+[48:14.84]  Try to fight the system a little bit. I
+[48:16.52]  think I do see a lot of maybe nihilism,
+[48:19.36]  a lot of defeatedness sometimes amongst
+[48:21.68]  junior engineers. A lot of this um
+[48:23.96]  cynicism.
+[48:25.36]  Like you know, what does it matter? Like
+[48:27.52]  who cares? It's just a big organization
+[48:29.24]  and nothing matters and but I think it
+[48:31.28]  does matter. Like
+[48:33.36]  I've just if I think of like the
+[48:35.12]  happiest times in my life, it's been
+[48:36.84]  like just
+[48:37.96]  dedicating myself to a cause and
+[48:40.60]  and
+[48:41.56]  and trying really hard and and trying to
+[48:43.60]  do the right thing and and I felt good
+[48:45.32]  when I went home and and not trying to
+[48:47.52]  get promoted, just trying to do the
+[48:48.52]  right thing and then and then
+[48:50.52]  assume me I'm going to get promoted and
+[48:51.60]  if not go somewhere else. Um I know it
+[48:54.08]  does sound quaint when I'm saying this,
+[48:55.96]  but I think it's possible to do this and
+[48:57.48]  especially possible if you surround
+[48:59.28]  yourself with people like this.
+[49:01.24]  And if someone is in a big company and
+[49:03.48]  they're feeling frustrated by politics,
+[49:05.84]  look around and see if there's a team of
+[49:07.56]  folks who just seem to
+[49:09.40]  want to do the right thing. Just seem to
+[49:10.76]  want to do good stuff. I don't think
+[49:12.44]  that's selling out. I think that's being
+[49:13.76]  true to yourself. Like just
+[49:15.68]  that's what real engineering is.
+[49:17.72]  Not trying to make a complicated fancy
+[49:19.44]  thing to get promoted. Just build the
+[49:20.56]  coolest thing that's solves the problem.
+[49:23.08]  >> This really reminds me of something you
+[49:24.72]  had written and I thought it was really
+[49:25.92]  good writing. And in the writing there
+[49:28.52]  was this idea of system bias.
+[49:31.88]  And
+[49:32.48]  >> Yes.
+[49:32.96]  >> you you have this
+[49:34.92]  uh quote your your writing. It says you
+[49:36.96]  know, here's some examples. It says the
+[49:38.56]  team is spending 6 months to improve
+[49:40.36]  performance by 10% when it was
+[49:42.40]  completely fine to begin with or you
+[49:44.80]  know, the team is trying desperately to
+[49:46.48]  force their tooling on clients who don't
+[49:48.96]  need it or you know, the team is riding
+[49:51.76]  their outdated system to the grave like
+[49:54.04]  the captain going down on the Titanic.
+[49:57.64]  I I've I've definitely seen examples of
+[49:59.60]  all those types of things in industry.
+[50:02.56]  Um
+[50:03.52]  And so
+[50:04.72]  yeah, it I I think it was it was in the
+[50:06.92]  the
+[50:08.12]  It was in the context of your writing
+[50:10.00]  about um what you should orient your
+[50:13.20]  your team around, not systems, but
+[50:15.68]  actually missions. And maybe that's a
+[50:18.08]  way to fight system bias.
+[50:20.20]  >> Yeah, I mean, one of one of my jobs at
+[50:21.72]  Dropbox um
+[50:23.60]  wasn't the most fun job, but it might
+[50:25.04]  have been one of the most impactful
+[50:26.16]  jobs. It was shutting down projects, you
+[50:28.32]  know, looking around and being like,
+[50:30.80]  "Huh, that thing over there that
+[50:33.20]  has had 60 people working on it for 2
+[50:35.12]  years doesn't seem to make a lot of
+[50:37.12]  sense to me." And then I you know, it
+[50:39.00]  wasn't like a um a hostile thing, but
+[50:41.28]  I'd go and chat with the team and I'd
+[50:42.64]  say, "Hey,
+[50:44.24]  what are you all doing? Do you believe
+[50:45.32]  in what you're doing? Does this make
+[50:46.44]  sense?" And the team in private would
+[50:48.60]  say, "Oh, I don't really know. I don't
+[50:50.32]  really But inertia is so strong, you
+[50:52.56]  know, this whole desire to not get in
+[50:54.60]  trouble, you know, to just keep doing
+[50:57.08]  what you were previously doing is so
+[50:58.72]  strong. And it And talented people can
+[51:00.56]  end up doing things that don't make a
+[51:01.64]  lot of sense.
+[51:02.92]  One of the things I said in that article
+[51:04.52]  is it It's kind of a cheesy story, but
+[51:07.20]  when we started um
+[51:09.44]  building the storage system at Dropbox,
+[51:11.44]  the team was called the magic pocket
+[51:12.88]  team cuz that was a silly code name for
+[51:14.44]  the for the for the system we built.
+[51:17.16]  And so the team was oriented around
+[51:19.00]  building that system. But as soon as we
+[51:21.68]  shipped it,
+[51:23.08]  I renamed the team to the storage team.
+[51:26.44]  And that
+[51:27.44]  actually took a bit of work cuz you have
+[51:28.84]  to like rename all the email addresses
+[51:30.88]  and the channels and the repos and the
+[51:32.76]  things. And so it seems like a waste of
+[51:34.68]  time. And um
+[51:37.00]  but my argument to the team was
+[51:39.52]  that the responsibility of the storage
+[51:42.00]  team is not to advocate for magic pocket
+[51:44.84]  the storage system. It's to solve the
+[51:47.12]  needs of storage for the organization,
+[51:50.20]  right? Because who else in the company
+[51:52.08]  knows more about storage than the
+[51:53.88]  storage team, right? And if there was a
+[51:56.12]  point in time where S3 was a better
+[51:59.68]  idea,
+[52:01.04]  it would make sense to move back. Or
+[52:02.64]  maybe there was a different kind of
+[52:03.76]  storage system that you were meant to
+[52:05.52]  use, right? It's the job of the storage
+[52:08.32]  team to advocate for moving back, right?
+[52:11.64]  And so I've seen before, you have like a
+[52:12.96]  team called the
+[52:14.88]  the puppet team, you know, the
+[52:16.88]  people don't really use puppet that much
+[52:17.84]  anymore, but like for you know, the the
+[52:19.36]  puppet the the job manager or puppet
+[52:21.28]  versus chef, and then they'd be kind of
+[52:22.56]  advocating for their team's thing, when
+[52:24.88]  really a team should be oriented around
+[52:27.48]  what problem do they solve? They should
+[52:28.88]  not care about
+[52:30.92]  the system that survives. Because if if
+[52:33.28]  if you are on the magic pocket team,
+[52:36.12]  and someone says we should move back to
+[52:38.36]  S3, that's pretty threatening to your
+[52:40.92]  identity and to your career,
+[52:43.52]  right?
+[52:44.40]  But are you If you're on the storage
+[52:46.08]  team,
+[52:47.44]  and it turns out it makes sense to move
+[52:49.48]  back. I don't think that's the case, but
+[52:51.08]  um
+[52:52.04]  then that's an exciting new product for
+[52:54.12]  you to own.
+[52:55.32]  And so I think it's it seems like such
+[52:57.20]  silly management philosophy, but I think
+[52:59.64]  it's really really important to orient a
+[53:01.32]  team and an identity around solving a
+[53:03.12]  problem and not owning and defending a
+[53:05.36]  system. Cuz you just see this in in big
+[53:07.52]  companies, it's just
+[53:09.00]  inertia is so strong. Yeah, and you see
+[53:11.28]  people doing things they don't believe
+[53:12.60]  in cuz that's just what they do.
+[53:14.52]  >> If the inertia is so strong, how did you
+[53:17.40]  fight it and close down all those
+[53:19.28]  projects?
+[53:20.52]  >> I think I got lucky
+[53:23.16]  in so far as I was there pretty early
+[53:24.68]  on, and I worked hard enough,
+[53:27.60]  you know, I was putting in probably
+[53:29.08]  16-hour days at the start. I'm not
+[53:31.08]  advocating for that, but I was like I
+[53:32.36]  was dedicating my life to to the
+[53:34.20]  company, and I think it became pretty
+[53:36.08]  obvious to people that I cared, you
+[53:37.32]  know? It This is This is Here's a guy
+[53:39.24]  over here that really wants to do the
+[53:40.32]  right thing and cares about the company.
+[53:42.16]  At that point, you build up enough
+[53:46.00]  confidence capital, you know, um, that
+[53:48.84]  you feel comfortable saying things. You
+[53:51.32]  know, I wasn't At that point, I wasn't
+[53:52.80]  afraid for my career. I just I was
+[53:55.48]  afraid for the wrong decisions getting
+[53:57.08]  made. So, I So, So, I felt, you know,
+[53:59.68]  psychologically comfortable making those
+[54:01.24]  observations. And then, at certain
+[54:02.76]  point, you, um,
+[54:04.96]  you know, that there's another, you
+[54:06.08]  know,
+[54:08.52]  A lot of engineers, so, at one point, I
+[54:10.68]  would mentor, um, you know, all the a
+[54:13.40]  lot of the staff plus engineers at the
+[54:15.16]  company. And And people would sometimes
+[54:17.56]  get grumpy, you know, cuz they were
+[54:18.76]  like, "Oh,
+[54:20.56]  we're not doing the right thing over
+[54:21.68]  here, or this is inefficient." And every
+[54:23.40]  Every engineer listening to this has a
+[54:25.16]  story like this. They're annoyed about
+[54:26.76]  some inefficiency at the company. And my
+[54:29.00]  response was generally like,
+[54:31.56]  "Do you think we should solve this
+[54:32.72]  problem right now?"
+[54:34.56]  Cuz if we should, let me know the team
+[54:36.52]  to take some engineers off,
+[54:38.36]  and the product to shut down, and I can
+[54:40.16]  redirect and we can solve this problem
+[54:41.92]  right now.
+[54:43.28]  And they'll be like, "Oh, well,
+[54:45.00]  we shouldn't shut down any other stuff."
+[54:46.44]  I'm like, "Cool, well, we just have this
+[54:47.48]  many engineers right now. And And so,
+[54:50.64]  if there's anything higher lower
+[54:53.00]  priority, let's stop doing the lower
+[54:54.08]  priority thing and do the higher
+[54:55.36]  priority thing, this thing." And often
+[54:57.64]  times, the answer was, "Oh, no, nothing
+[54:59.36]  else is lower priority."
+[55:02.36]  And then, the answer is we just have to
+[55:04.36]  accept. Just have to accept, right?
+[55:06.60]  There's no point in being angry or upset
+[55:09.28]  that we're not doing the right thing all
+[55:10.48]  the time. So, I think there's a
+[55:11.68]  dimension to you break it, you bought
+[55:13.68]  it. I don't think
+[55:15.72]  Like, when I said part of my job was
+[55:17.08]  shutting products down, it wasn't going
+[55:18.64]  around just causing problems, right?
+[55:20.52]  It's all Ideally, like, solving
+[55:22.20]  problems. Like, "Oh, this product is not
+[55:24.28]  going the right direction. Let's
+[55:26.04]  redirect it and do this alternative
+[55:27.60]  thing." And so, I think the thing that
+[55:29.16]  helped me,
+[55:30.80]  I guess, was was having a a sense of
+[55:32.76]  ownership. That like, instead of
+[55:36.04]  complaining,
+[55:37.88]  I just wanted to go fix problems. And
+[55:39.24]  that was but that was part of the
+[55:40.08]  culture. I mean, there was
+[55:41.80]  when I started at Dropbox
+[55:43.96]  and um
+[55:45.84]  I remember being at Dropbox and infra
+[55:47.28]  was I don't know, seven, eight, nine
+[55:48.60]  people.
+[55:49.80]  And you know, we have someone join
+[55:51.92]  from Google, for example, and they'd
+[55:54.08]  say, "Well, someone should go build I
+[55:56.16]  can't do anything without
+[55:58.52]  this logging framework. Couldn't
+[55:59.68]  possibly do anything without this
+[56:00.64]  logging framework." And I'm like, "Well,
+[56:01.92]  we're going okay without it." So and
+[56:03.68]  then like someone needs to build this
+[56:04.84]  thing. And everyone would be like,
+[56:06.40]  "Well, who is someone?" Right? Because
+[56:08.20]  it's just us. It's just us. We we build
+[56:10.64]  it or we don't build it. And they'd
+[56:12.44]  pretty quickly
+[56:13.92]  come to understand, "Oh, wait, it's just
+[56:15.76]  us. It's just we There's There's no
+[56:18.12]  other idiots out there. We're the
+[56:19.48]  idiots, right?" So
+[56:21.52]  that was I don't know, I loved I loved
+[56:23.80]  that time because it was just a
+[56:26.04]  uh time of accountability that
+[56:29.24]  life gets easier and harder when you
+[56:32.24]  realize that everyone else is not an
+[56:33.92]  idiot.
+[56:35.00]  When you realize everyone else is just
+[56:37.32]  dealing with their own stuff, right?
+[56:38.83]  >> [laughter]
+[56:39.68]  >> And so I think um
+[56:42.44]  I I do not think someone will have good
+[56:44.60]  luck going around complaining about
+[56:47.08]  stuff and and just saying this is a dumb
+[56:48.96]  idea and being negative. I think people
+[56:51.48]  will have a um
+[56:53.92]  Everyone wants problems solved though.
+[56:55.92]  So if you're someone in an organization
+[56:57.64]  who is who's willing to put their head
+[56:59.28]  up and say, "You know what? I think this
+[57:01.04]  thing over here is a bad idea,
+[57:03.48]  but here's a different idea and I'm
+[57:05.92]  willing to own it and put the effort
+[57:07.28]  behind it." I think that's a that's a
+[57:09.76]  recipe for success.
+[57:11.12]  >> From that article, you had a great quote
+[57:13.08]  or I guess a great question to think
+[57:15.96]  through this. It said you went to
+[57:17.76]  everyone or a bunch of people and you
+[57:19.48]  would say "If we could be spending these
+[57:21.72]  resources working on any project at the
+[57:23.96]  company right now, would this still be
+[57:26.16]  the best use of time?" And I feel like
+[57:28.84]  it frames exactly what you just
+[57:30.60]  described really cleanly.
+[57:32.48]  >> Yeah, I mean I guess this is like maybe
+[57:34.12]  a a trick for being a tech lead or a
+[57:36.04]  manager is
+[57:38.00]  almost nothing's a yes or no question.
+[57:39.84]  It's a like it's a prioritization
+[57:41.52]  question. Yeah, it's not like should we
+[57:43.88]  redesign the database? I don't know,
+[57:45.24]  maybe. I guess. Is it the most important
+[57:47.40]  thing to do right now? No. Cool, let's
+[57:48.84]  not do it. Right? I think it's much
+[57:50.68]  easier to have those conversations than
+[57:52.84]  to think about it as a yes or no. You
+[57:55.08]  know, I often hear like, "Oh, my VP
+[57:56.60]  won't let me do blah."
+[57:58.88]  Okay. Well, it could be that your VP is
+[58:01.72]  dumb, but it's probably not, right? It
+[58:03.80]  could be that your VP has a different
+[58:05.28]  set of priorities. Maybe their VP knows
+[58:06.92]  that you need to ship these features and
+[58:09.08]  if you don't, then the company's going
+[58:10.16]  to be struggling. I don't know, but to
+[58:12.56]  to really frame it around
+[58:14.52]  prioritization. And the way I think
+[58:16.16]  about the the career ladder for
+[58:17.72]  engineers
+[58:19.16]  is is I I think um some people, maybe
+[58:22.84]  maybe it's not common, but think that
+[58:24.12]  like being coming a senior senior
+[58:25.64]  engineer means you get better at
+[58:26.68]  programming.
+[58:27.96]  But like I don't know. I think my
+[58:29.04]  programmability is went down from like
+[58:31.80]  level four onwards. You know, I think
+[58:33.44]  once I got to like level four,
+[58:35.43]  >> [laughter]
+[58:35.48]  >> that was peak programmer for me and then
+[58:37.52]  I probably went downhill from there. And
+[58:39.60]  I got wiser, whatever, but I think the
+[58:42.12]  real thing that happened is the scope
+[58:44.96]  that I cared about increased. So, at a
+[58:47.00]  certain point you just think about,
+[58:48.24]  "Cool, what matters most at the company
+[58:49.96]  for the next five years?"
+[58:51.72]  Um and
+[58:53.72]  I don't think uh
+[58:55.52]  junior engineer on their first year of
+[58:57.28]  the job should try to do this.
+[58:59.88]  Cuz you probably don't yet have the
+[59:02.56]  wisdom, insight,
+[59:04.28]  um knowledge to be able to make a good
+[59:06.56]  assessment. And I think it probably
+[59:07.92]  would be a mistake to be like to try to
+[59:09.56]  come up with like
+[59:11.76]  redirecting company strategy. But as you
+[59:13.96]  grow, I think the real key part about
+[59:16.40]  growing is the the the IC6, 7, 8
+[59:19.92]  engineers are not necessarily the best
+[59:21.68]  programmers. It's they're just getting
+[59:23.48]  better at having broad perspective
+[59:26.44]  in decisions within a company.
+[59:29.28]  >> OpenAI, Anthropic, Cursor, and Vercel
+[59:33.12]  all use this product to make their lives
+[59:34.84]  better. And the problem it solves is
+[59:37.44]  when you're building SaaS or an AI
+[59:39.08]  product and you want to sell to other
+[59:41.08]  companies, there's all these
+[59:42.68]  requirements you need to meet. There's
+[59:44.64]  SSL, there's SCIM, there's RBAC, there's
+[59:48.16]  audit logs. These are all things that
+[59:49.92]  take time to integrate, but aren't the
+[59:52.04]  main focus of your app. WorkOS is an API
+[59:54.64]  layer that lets you meet all of these
+[59:56.16]  requirements in just a few lines of
+[59:58.24]  code. So, let's say you have a new SaaS
+[60:00.48]  product and you want to sell to other
+[60:02.00]  companies, WorkOS will solve all of
+[60:04.40]  these critical feature gaps for you.
+[60:07.00]  You can check them out at workos.com to
+[60:09.48]  learn more and get started. And I
+[60:11.64]  appreciate them for supporting my work
+[60:13.52]  and sponsoring this podcast.
+[60:15.28]  >> You mentioned this idea of do the right
+[60:17.76]  thing and then, you know, the byproduct
+[60:19.88]  you also get promoted. And I think
+[60:21.24]  that's that's the dream, you know, do
+[60:23.40]  the right thing, get promoted. But in
+[60:26.28]  reality, often times people would have
+[60:28.64]  to make the trade-off. Imagine a two by
+[60:31.00]  two matrix of doing the right thing,
+[60:33.28]  doing the wrong thing,
+[60:34.84]  getting promoted, not getting promoted.
+[60:37.48]  Obviously, the, you know, do the right
+[60:39.84]  thing, get promoted, great. Do the wrong
+[60:42.04]  thing, don't get promoted, obviously
+[60:44.04]  bad. But I'm curious about the other two
+[60:46.24]  quadrants. Which one would you have
+[60:47.96]  picked when you were earlier in your
+[60:49.92]  career? Let's say I came to you, I said,
+[60:51.28]  "Hey, you can do the wrong thing, but
+[60:53.88]  you're going to get promoted. Or you can
+[60:56.36]  do the right thing and I guarantee
+[60:58.24]  you're not going to get promoted. Which
+[60:59.68]  one?"
+[61:00.08]  >> one.
+[61:00.36]  >> Absolutely the second
+[61:00.88]  >> The second one.
+[61:01.40]  >> So, I'm going to say a really tacky
+[61:02.64]  thing, right? Um
+[61:05.00]  there are a set of engineers
+[61:07.12]  um
+[61:08.32]  who at a certain point just make
+[61:10.08]  infinity money. Like, the amount of
+[61:12.24]  money they can make, you know, going and
+[61:14.56]  whatever, going to work at Anthropic is
+[61:16.40]  is a huge amount of money, right? And
+[61:18.88]  so, there's a certain point where it
+[61:21.00]  just doesn't matter anymore. Like the
+[61:22.40]  money is whatever, right? But so that So
+[61:26.00]  if you really want to
+[61:27.68]  If you really want to maximize long-term
+[61:29.72]  income, I don't think you should try to
+[61:31.12]  do that, but if you wanted to maximize
+[61:32.76]  long-term income, if you get to a
+[61:34.88]  certain level of experience and skill
+[61:37.20]  and seniority, you've made it. That's
+[61:39.36]  it. You're done. Money's fine, right?
+[61:41.72]  And so I think there's this desire
+[61:44.24]  amongst
+[61:45.32]  junior engineers early in their career
+[61:47.44]  to be kind of over optimizing for
+[61:50.64]  promotion and and income and salary,
+[61:53.76]  etc.
+[61:55.36]  as opposed to investing in themselves.
+[61:58.32]  And I guess it's it's They probably
+[62:00.08]  don't want to hear me say this cuz it's
+[62:01.44]  easier for me as an old old guy to say
+[62:03.52]  this, right? But But I think
+[62:06.00]  you know, for the longest time at
+[62:07.56]  Dropbox, there was a time at Dropbox
+[62:08.92]  where like we just didn't have our level
+[62:10.20]  system right. I was tech leading the
+[62:11.80]  team and I was making the least amount
+[62:13.20]  of money of the team. I'm cuz I was at
+[62:14.92]  some point a technical manager. I saw
+[62:16.16]  everyone's salaries. I was making the
+[62:18.00]  least I think the least money, but
+[62:19.44]  whatever, right? It all worked out in
+[62:21.24]  the end, right? Now that was a happy
+[62:23.12]  story, but I do really think
+[62:25.92]  I benefit so much from working with the
+[62:28.32]  best people. Like if you have two
+[62:30.12]  choices, like
+[62:32.00]  making 20% more money now or working
+[62:35.12]  with like the best people in the world,
+[62:38.08]  right? Just be around the best people
+[62:40.40]  because like you will be
+[62:43.08]  that's going to sit you on like the on
+[62:45.28]  the ship to success, right? And now Not
+[62:48.24]  everyone wants to do that. Not everyone
+[62:50.16]  wants to go on that Like it's There's no
+[62:53.08]  shame in just wanting to be have a
+[62:54.84]  regular job and just be chilling and
+[62:56.88]  just be getting paid and fine.
+[62:59.56]  There's There's nothing wrong with that.
+[63:01.48]  But if you do want to maximize If you
+[63:03.64]  want to maximize your career growth,
+[63:07.28]  then the way to maximize that is to
+[63:08.44]  maximize your skills, right? Like if
+[63:12.08]  And And hopefully you're not so cynical
+[63:14.00]  to think that there is no correlation
+[63:15.48]  between talent and compensation. Um
+[63:19.20]  I don't
+[63:20.64]  If you think that's the case, okay, um I
+[63:23.88]  don't know what to say. But but but but
+[63:26.16]  there is a correlation between talent
+[63:27.92]  and compensation and growth. And so, my
+[63:30.96]  advice to people early in their career
+[63:32.92]  is land at the best company with the
+[63:35.40]  best people doing the most important
+[63:36.84]  problems, and your life will be great
+[63:39.60]  cuz we are so lucky as engineers. Like
+[63:41.88]  What what what else could What else can
+[63:43.52]  you work solving problems for a job?
+[63:45.92]  Like solving puzzles for a job and
+[63:47.48]  getting paid so [snorts] well. Like
+[63:49.40]  engineers get paid so well compared to
+[63:51.24]  most jobs. Um
+[63:53.36]  The privilege that the real privilege
+[63:57.08]  that we get is to work on something
+[63:59.04]  cool.
+[64:00.04]  And uh that's what I advocate for.
+[64:02.64]  >> I love the idea you mentioned earlier
+[64:05.48]  that's kind of counter to the common
+[64:08.56]  opinion I I often hear. Like the common
+[64:10.84]  opinion I hear they someone working at a
+[64:13.24]  big company, they're in this machine,
+[64:15.76]  that it's kind of defeatist. They're
+[64:17.36]  going, "Ah, I ship this thing, but I
+[64:18.76]  hate this or I don't believe in this."
+[64:21.48]  And the I I really liked your
+[64:23.32]  perspective on you doing the right thing
+[64:26.28]  and like
+[64:27.48]  basically giving a damn that
+[64:29.76]  you know, someone outside of you is
+[64:31.80]  doing the right thing, too, and
+[64:33.28]  expanding your sense of ownership. And I
+[64:36.60]  want to know what is your motivation for
+[64:38.72]  that cuz there's so many other people
+[64:40.16]  who are faced with the same inputs and
+[64:42.36]  they get to a very different conclusion.
+[64:44.08]  So, what motivates you to actually do
+[64:47.08]  the right thing when
+[64:48.68]  the machine doesn't necessarily
+[64:50.32]  incentivize you to do so?
+[64:51.72]  >> Yeah.
+[64:53.12]  Well, I think the machine does
+[64:54.08]  incentivize you to do so, but I don't
+[64:55.36]  think it's it's visible
+[64:57.28]  immediately. Like I think people who
+[64:59.20]  sample who who do less job hopping
+[65:01.60]  really do grow the most because I was I
+[65:04.64]  would say very strongly, if you're not
+[65:06.16]  in a job for 3 years, you're not going
+[65:08.36]  to see
+[65:09.68]  whether your decisions were good. Like
+[65:11.40]  you you can get more money as a junior
+[65:13.60]  engineer, but you cannot become a senior
+[65:16.48]  a very talented senior engineer without
+[65:18.28]  being around for long enough to own the
+[65:20.56]  consequences of your decisions.
+[65:22.48]  It's It's like It's like playing a
+[65:23.92]  basketball game and leaving before the
+[65:25.68]  game's over. Like, you're just not
+[65:28.52]  learning, right? So, so
+[65:31.24]  I do think there's an actual structural
+[65:32.88]  incentive towards staying in a job. Now,
+[65:34.92]  if you're in a bad job, leave the bad
+[65:36.24]  job, right? But there's a structural
+[65:37.60]  incentive to be able to stay long enough
+[65:39.00]  to have an impact.
+[65:41.08]  But also, I don't know. I like
+[65:44.32]  again, I guess it's easy for me to say.
+[65:46.08]  And also, I joined the tech industry
+[65:47.44]  when it wasn't like a very lucrative
+[65:49.52]  field.
+[65:50.60]  Like it you know, it
+[65:52.12]  it wasn't like it is now, you know? But
+[65:54.28]  I just like it. The reason I left
+[65:55.92]  academia
+[65:57.56]  was because I wasn't confident I was
+[66:00.08]  making the right So, what would happen
+[66:02.12]  how I would how I was in academia, I'm
+[66:05.00]  not saying everyone was like this, but
+[66:06.76]  you So, firstly, you you don't know what
+[66:08.96]  to do.
+[66:10.08]  So, you have to make up a problem to
+[66:11.16]  solve. And then you make up a problem.
+[66:14.16]  And then you make up a solution.
+[66:16.04]  You know, and hopefully a good one.
+[66:18.44]  And then you write a paper where you try
+[66:20.64]  to convince everyone that it was a
+[66:21.96]  really good idea.
+[66:23.76]  >> [laughter]
+[66:24.24]  >> And I hated it cuz I didn't want to
+[66:26.24]  convince people. I just wanted to build
+[66:28.20]  it
+[66:29.04]  and see if it was good. Like, I just
+[66:31.48]  wanted to build it and ship it and see I
+[66:33.72]  didn't want to
+[66:35.16]  play pretends and and argue about it was
+[66:37.44]  good. Um that's what makes me feel good.
+[66:40.56]  I don't know. And like, obviously
+[66:44.08]  if you're a engineer who's living
+[66:46.60]  paycheck to paycheck,
+[66:48.44]  you should maybe ignore what I'm saying.
+[66:50.20]  Like, I don't want to come across as
+[66:52.24]  unempathetic to anyone who's really
+[66:53.80]  struggling financially.
+[66:55.80]  But if you are not struggling
+[66:57.28]  financially,
+[66:59.44]  the
+[67:00.64]  best thing you can do for your quality
+[67:02.60]  of life
+[67:03.88]  is
+[67:05.52]  you know, in me enjoying what you do
+[67:07.52]  every day.
+[67:08.72]  You know, like I don't know, you could
+[67:09.56]  have a fancier car
+[67:12.00]  or you can enjoy what you do every day.
+[67:14.68]  And I love cars, like I'm a I'm a motor
+[67:16.28]  head, but I promise that enjoying what
+[67:19.20]  you do every day is going to have a much
+[67:20.92]  bigger impact on your life. And um
+[67:23.24]  personally, I don't enjoy like going to
+[67:25.72]  work and and working on projects I don't
+[67:27.52]  believe in. Like I can only
+[67:29.72]  operate. And so you Jamie, my
+[67:30.72]  co-founder, is the same way. Like
+[67:32.92]  we we really get along really well in
+[67:34.52]  this respect.
+[67:35.72]  We can only um
+[67:38.28]  we can only put up with doing things we
+[67:39.68]  actually care about and
+[67:42.08]  and believe in.
+[67:43.40]  And I think
+[67:44.92]  that's that's the luxury That's more
+[67:47.28]  luxury than taking a first-class flight.
+[67:49.04]  That's more luxury than going to a
+[67:50.36]  three-Michelin-star restaurant.
+[67:52.12]  The luxury is you don't get up and have
+[67:54.52]  to do a a terrible job, you know, um you
+[67:57.72]  get up and go to a place that you like
+[67:59.68]  your co-workers, and you solve cool
+[68:02.28]  problems, and you go home and feel proud
+[68:03.92]  of yourself.
+[68:05.08]  If you can If you can construct your
+[68:07.52]  career that way, and it's not easy, you
+[68:09.04]  have to It requires very active effort,
+[68:11.32]  then you're going to have a good life.
+[68:13.40]  >> I I saw on your career journey
+[68:16.00]  it said that you're occasional manager.
+[68:18.68]  And you you seem like someone who really
+[68:20.84]  enjoys the the technical aspects of
+[68:22.92]  things. So, how did you decide to
+[68:25.28]  occasionally dip into management?
+[68:27.64]  >> I feel
+[68:29.32]  like most people should not want to be
+[68:31.08]  managers.
+[68:32.52]  And I sometimes think it's a bit of a
+[68:33.80]  red flag if someone wants to be a
+[68:35.04]  manager too much, right?
+[68:37.28]  Cuz um being a manager is a hard job.
+[68:40.12]  And uh so, I think most people should go
+[68:42.72]  into management because they need to.
+[68:44.52]  Cuz it's necessary. And so, what
+[68:45.92]  happened every time I went into
+[68:47.24]  management, I'm in a management role now
+[68:48.88]  as well, cuz you have to, right? Um
+[68:51.80]  but um
+[68:53.44]  we someone needed to manage the team.
+[68:55.40]  And and so, I do genuinely enjoy
+[68:58.08]  accountability. I like responsibility. I
+[68:59.92]  like
+[69:00.88]  I like um having weight on my shoulders,
+[69:03.96]  I I suppose.
+[69:05.68]  And so I went into management
+[69:07.96]  several times.
+[69:09.68]  Uh but as soon as I had the opportunity
+[69:10.96]  to get out, as soon as someone else
+[69:12.00]  would come in and manage the team, I
+[69:13.04]  would I would kind of bounce out of that
+[69:14.48]  role back into engineering.
+[69:16.24]  Um
+[69:17.24]  Now, going to management is is is
+[69:18.76]  tremendously educational.
+[69:21.16]  If um
+[69:22.36]  being a manager really lets you see the
+[69:24.44]  world in a different way. You realize
+[69:26.48]  companies are more complicated than you
+[69:27.68]  thought. You realize the engineers are
+[69:29.28]  more complicated than you thought. You
+[69:30.24]  realize everyone on the team is going
+[69:31.64]  through something. And you And you
+[69:33.56]  realize, "Oh, wow, now I understand why
+[69:35.48]  that thing happened." Um so, being a
+[69:37.20]  manager is very educational.
+[69:39.08]  One thing I would say I would strongly
+[69:41.28]  caution people against is going into
+[69:43.08]  management too early in their career.
+[69:45.04]  And I see this happen
+[69:47.32]  um
+[69:47.96]  I see this happen a lot with
+[69:49.52]  well-intentioned people
+[69:51.64]  who want to push people into management
+[69:53.20]  as a means of career advancement, right?
+[69:56.16]  I think it's doing people a disservice.
+[69:57.48]  I think you should let folks take their
+[70:00.20]  time
+[70:01.32]  in an organiza- in a in a career
+[70:03.36]  journey. I don't think you should be
+[70:04.84]  going into management
+[70:06.52]  under most circumstances in the first 3
+[70:08.20]  years of your career. I think you should
+[70:09.40]  get to
+[70:10.64]  ideally get to staff engineer before you
+[70:12.48]  do that. That's not going to happen for
+[70:13.72]  everybody, but ideally you take the time
+[70:15.80]  because if you go into management before
+[70:18.12]  you're excellent technician,
+[70:20.80]  it will limit your ability to influence
+[70:23.12]  strategy later in your career.
+[70:24.88]  >> How does that play out?
+[70:26.04]  >> It plays out with people who um who uh
+[70:29.64]  s-
+[70:30.32]  stuck or have roles as people managers
+[70:33.00]  where, you know, they they see their job
+[70:35.04]  as making maybe making a team happy
+[70:37.52]  or maybe coordinating a team
+[70:39.60]  um or, you know, dealing with all the
+[70:41.68]  day-to-day
+[70:43.04]  um
+[70:44.20]  challenges of like people on a team, but
+[70:46.44]  they're not
+[70:47.68]  organizational leaders.
+[70:49.52]  They're not like pushing the team
+[70:51.80]  towards excellence. They They're not
+[70:53.12]  like, "Hey, how can we reframe what this
+[70:55.44]  team is about? How can we, you know,
+[70:57.72]  help influence technical strategy? And
+[70:59.88]  um
+[71:01.28]  again, people management is a fine job,
+[71:03.48]  but I think
+[71:05.12]  um the best companies are ones where all
+[71:07.92]  the managers are very technical. And so,
+[71:10.12]  they're able to make sure the company's
+[71:11.76]  doing like at a certain point like if
+[71:13.56]  you're not
+[71:14.48]  not a particularly technical manager,
+[71:16.28]  you're not going to be able to evaluate
+[71:18.04]  the work of your team. You're not going
+[71:19.24]  to know whether your team is even doing
+[71:20.68]  well. And I guess maybe you might
+[71:22.36]  contribute towards some of the stuff you
+[71:23.92]  were saying about, you know, cynical
+[71:25.84]  organizational attitudes where like my
+[71:27.76]  manager doesn't understand me. Maybe
+[71:29.68]  your manager doesn't understand you
+[71:31.61]  >> [laughter]
+[71:31.80]  >> if they haven't spent enough time
+[71:33.40]  developing technical skills and and and
+[71:35.40]  and and struggling.
+[71:36.92]  >> Yeah, there's uh another uh piece that
+[71:39.72]  you wrote I thought was really good
+[71:41.52]  about, you know, leading by example and
+[71:44.20]  you actually say it's bad to lead by
+[71:45.64]  example, but um
+[71:47.28]  there there's a quote in there. It says
+[71:49.96]  modern tech workers can be an
+[71:51.68]  anti-authoritarian bunch at the best of
+[71:54.04]  times. And
+[71:55.72]  let's say you're a a tech lead or tech
+[71:57.60]  lead manager or manager, you know, how
+[71:59.76]  how do you strike that balance so you
+[72:01.24]  don't lose credibility as a tech lead?
+[72:03.88]  >> Yeah, there there are command and
+[72:05.84]  control companies
+[72:07.64]  that like the manager just tells people
+[72:09.48]  to do things and they just do them.
+[72:12.52]  Those typically are not excellent
+[72:14.72]  companies. And not every company needs
+[72:16.52]  to be excellent, but if you want to have
+[72:19.56]  a company where
+[72:21.28]  the team's really innovating, like the
+[72:23.00]  engineers feel very personally
+[72:24.60]  responsible for making really
+[72:25.80]  high-quality decisions,
+[72:27.64]  you have to have them believe in what
+[72:29.32]  you're doing.
+[72:30.44]  And so, you you know, at Convex, I'm the
+[72:32.16]  founder and CTO.
+[72:34.08]  I can't really go to someone's desk and
+[72:35.92]  say do this thing.
+[72:37.88]  Now, they they might do it just cuz they
+[72:39.24]  like me. There's a good chance they
+[72:40.64]  would do it, but not because I'm the
+[72:41.88]  boss. They'd be like, "Well, why?"
+[72:44.24]  Right? And that's that's because that's
+[72:45.56]  our culture. I mean, we don't just do
+[72:47.44]  things cuz we're told. Like if I want
+[72:49.40]  someone to do something, I'll spend time
+[72:51.88]  with the team talking about why we're
+[72:53.80]  doing it. Where Where the market's
+[72:55.24]  trending? Where's the gap in our
+[72:56.48]  product? What, you know? And then once
+[72:59.04]  we've really well articulated
+[73:01.72]  um
+[73:02.68]  why something matters, people are just
+[73:04.24]  going to do it anyway. Now Now there's a
+[73:06.28]  Sometimes you have to have hard
+[73:07.12]  conversations, but I think um the way I
+[73:09.76]  think about it in terms of certainly in
+[73:11.04]  terms of conflict in an organization,
+[73:12.48]  there's like this kind of hierarchy of
+[73:14.60]  of the values you have, and then why,
+[73:17.20]  what, and how.
+[73:18.96]  And engineers are very often debating
+[73:20.72]  the how. They're very often debating
+[73:22.16]  like what algorithm should we use for
+[73:24.40]  this? And like, you know, should we use
+[73:26.88]  this container service or that container
+[73:28.32]  service? And these are kind of like the
+[73:30.12]  implementation details.
+[73:32.52]  But most times when I see organizational
+[73:34.96]  conflict, it's because well-intentioned
+[73:37.20]  people
+[73:38.56]  uh debating as best they can about how
+[73:40.60]  to do something, but they don't agree on
+[73:42.04]  why we're doing it.
+[73:43.64]  So if if one team thinks the most
+[73:45.28]  important thing we can do right now is
+[73:46.80]  get more features out to expand our
+[73:48.88]  customer base, and the other team thinks
+[73:50.68]  the most important thing we can do is
+[73:52.00]  increase reliability cuz there's a risk
+[73:53.56]  to the business, right? They're both
+[73:55.48]  very valid perspectives, but it's going
+[73:57.56]  to lead to them doing very different
+[73:59.84]  things.
+[74:00.96]  And within an organization, I'm a strong
+[74:03.56]  believer that everyone needs to have
+[74:04.92]  100% why alignment. So the stuff we
+[74:08.60]  argue about or we debate or we talk
+[74:10.48]  about ad nauseam is why.
+[74:13.04]  And then largely I just trust the team
+[74:14.56]  to do the right thing.
+[74:15.88]  Um and I think that's the case for any
+[74:17.44]  in any tech lead. If you want to have
+[74:18.76]  credibility on a team,
+[74:21.24]  it's not If you think that you can just
+[74:23.84]  tell someone to do something and they'll
+[74:26.32]  listen to me cuz I'm the senior guy, and
+[74:28.88]  no, they won't. They won't. If they
+[74:30.72]  listen to me, it's cuz I've come in and
+[74:32.44]  explained it in a way that resonates
+[74:34.08]  with them. And again, one of my jobs at
+[74:35.72]  Dropbox was to resolve the situations.
+[74:37.96]  You know, someone would say, "Oh, that
+[74:39.92]  team's an idiot. They won't do blah
+[74:41.56]  this." And then I'd go talk to that
+[74:42.80]  team. That team was not an idiot, right?
+[74:45.12]  And we talked through it, and they would
+[74:46.72]  decide to do the project. And it wasn't
+[74:48.36]  because
+[74:50.36]  they were scared of me. I hope they
+[74:52.00]  weren't at least. It was because, you
+[74:54.08]  know, I take the time to figure out what
+[74:56.28]  their motivations are. And And that's
+[74:57.80]  something you really have to learn. If
+[74:59.00]  you're a tech lead, you don't really
+[75:00.96]  have that much authority over people.
+[75:02.72]  And really you have to kind of encourage
+[75:05.72]  them and get them to believe in what
+[75:06.92]  you're doing.
+[75:08.36]  Um and if you are leading through
+[75:10.56]  authority, you're not going to have a
+[75:13.44]  culture where good ideas arise from
+[75:16.84]  within the org. People are just going to
+[75:18.44]  do what they're told.
+[75:19.92]  >> Influence without authority is huge, and
+[75:22.60]  I think there's I mean, even big
+[75:24.40]  companies like Meta, they technically
+[75:26.96]  don't have titles. Everyone's just a
+[75:28.40]  software engineer. Um is that also how
+[75:31.60]  Convex is run?
+[75:33.00]  >> I mean, we're We're a very flat
+[75:34.72]  organization. There are people in tech
+[75:36.12]  lead roles.
+[75:37.40]  I don't completely buy the everyone's a
+[75:40.48]  software engineer thing. It's like, you
+[75:41.84]  know, at I is is is
+[75:44.32]  you know, Entropic. Like, everyone's a
+[75:45.52]  member of technical staff. Because it's
+[75:47.64]  kind of like a wink wink thing. You kind
+[75:50.08]  of know. It's like no one's mentioned
+[75:52.44]  the title, but you kind of know if like
+[75:54.48]  the most senior person in the company
+[75:55.88]  comes to your desk, you're probably
+[75:57.28]  going to notice, you know? And uh and so
+[76:00.36]  I think there's no point in in in, you
+[76:02.64]  know, playing pretends. People People
+[76:04.60]  know, you know? But I will say that you
+[76:06.96]  should have a organizational culture
+[76:08.56]  where you don't do something just
+[76:10.00]  because a senior person says something.
+[76:12.32]  Now, I do think that reputation matters.
+[76:15.88]  Like, I certainly think that, you know,
+[76:17.20]  I don't know. If If If a If a very
+[76:19.64]  experienced person at a at a company
+[76:21.40]  comes and tries to explain something to
+[76:23.32]  you, you probably should listen to them
+[76:25.20]  because they probably have some wisdom.
+[76:27.20]  There might be something to be learned
+[76:28.32]  there. You should be open to it. But
+[76:30.12]  ultimately, um
+[76:32.16]  yeah, even even the most senior person I
+[76:34.04]  don't think um
+[76:36.04]  should be leading through authority.
+[76:37.72]  They They
+[76:38.96]  They They should use the benefit of
+[76:40.24]  their experience to be able to artic to
+[76:42.20]  win the hearts and minds. And and that's
+[76:44.36]  how you in engineering culture is so
+[76:46.92]  important. And if you want a culture of
+[76:48.88]  of ownership and innovation and and
+[76:51.28]  drive and enthusiasm and people trying
+[76:53.28]  to do the right thing, not get promoted,
+[76:54.96]  right? You have to have a culture where
+[76:56.64]  everyone believes in what they're doing.
+[76:58.44]  And no one's going to believe in what
+[76:59.64]  they're doing if the senior principal
+[77:01.60]  engineer comes to the desk and says,
+[77:04.68]  "I'm not going to tell you why, but you
+[77:05.68]  have to delete this database and do this
+[77:07.04]  other thing." And
+[77:08.24]  no, that that's not an empowering
+[77:09.96]  statement. What the empowering statement
+[77:11.72]  is, "Hey, let's spend some time together
+[77:13.84]  to talk about where this product's
+[77:15.72]  trending and how this is probably not
+[77:17.16]  going to work out and how there might be
+[77:18.72]  a different way we can solve this
+[77:19.68]  problem."
+[77:20.44]  >> Uh on the topic of tech leadership, I
+[77:22.16]  mean, in that article I mentioned, the
+[77:24.32]  you know, the title was don't lead by
+[77:26.20]  example. And I think that kind of might
+[77:29.04]  be confusing for people. Can you explain
+[77:31.36]  why you think you shouldn't lead by
+[77:32.92]  example?
+[77:33.72]  >> Yeah, leadership by example is a very
+[77:35.16]  passive thing to do. And engineers are
+[77:37.60]  passive people at the best of times, you
+[77:40.08]  know? I think uh that's that's
+[77:42.04]  stereotypically a little bit part of
+[77:43.36]  their personality. Um so, I mean, the
+[77:45.88]  the very concrete example is, you know,
+[77:47.68]  when I first started becoming an
+[77:49.36]  engineering leader, I was trying to lead
+[77:50.80]  by example. So, I I wanted to kind of um
+[77:55.36]  demonstrate the behaviors I want
+[77:56.92]  everyone else to have. And very
+[77:58.60]  specifically, like um
+[78:01.04]  with regards to on-call and people
+[78:02.80]  getting paged, I want people I want
+[78:04.84]  people to have high ownership. I want
+[78:06.12]  people to jump on issues as soon as it
+[78:07.52]  happened. So, I would do it. I'd be
+[78:09.08]  always the first one to respond to a
+[78:10.64]  page. I would always be like, you know,
+[78:12.92]  writing up the reports. I would always
+[78:14.52]  be jumping on all the bugs and stuff.
+[78:16.76]  And and like really falling over myself
+[78:19.44]  to kind of show how I want people to do
+[78:22.96]  to be.
+[78:24.72]  But from their perspective, all they see
+[78:26.96]  is that the the lead's just doing all
+[78:29.08]  these jobs. And they don't know they're
+[78:31.16]  like, "Oh, maybe that's James's job." Or
+[78:32.96]  maybe James knows how to do it it, I
+[78:35.36]  don't know how to do it. Um
+[78:37.68]  Turns out I didn't know. I was just kind
+[78:38.92]  of figuring out. Or you maybe he likes
+[78:41.24]  doing those things. And I think at a
+[78:42.64]  certain point
+[78:44.96]  being a leader is about understanding
+[78:46.60]  human psychology.
+[78:49.00]  And I don't think you can just act
+[78:51.28]  a certain way in front of people and
+[78:52.88]  wait for them to copy you, right? I
+[78:54.80]  think you should obviously you should
+[78:56.08]  act with integrity and values, and you
+[78:57.76]  should you should you know, you
+[78:59.16]  shouldn't you should own the values of
+[79:00.60]  the team. But you have sometimes have to
+[79:02.04]  explain stuff. Sometimes you have to
+[79:03.24]  tell people, "Hey,
+[79:04.60]  and very very very specifically
+[79:08.68]  there's a there's a there's a trajectory
+[79:10.36]  almost every leader goes through.
+[79:12.96]  Every high-achieving leader where they
+[79:14.92]  become a tech lead, and they care so
+[79:17.76]  much that they become a micromanager.
+[79:19.32]  Like they review every line of code,
+[79:21.12]  they're involved in every decision. And
+[79:22.84]  at a certain point, um
+[79:24.96]  they are the bottleneck for the team. So
+[79:27.04]  this person is so overwhelmed, you might
+[79:29.08]  have gone through this yourself, you
+[79:30.08]  know? They're so overwhelmed, and
+[79:32.00]  they're like, "Wait, my team doesn't
+[79:33.44]  even seem busy right now, and I'm so
+[79:35.64]  busy. I'm reviewing all this code, I'm
+[79:37.16]  doing the strategy. What's going on?"
+[79:39.48]  And then a manager will come along and
+[79:40.84]  say, "Hey, like you're micromanaging.
+[79:42.96]  You got to let your team have more
+[79:44.24]  ownership."
+[79:45.88]  And so
+[79:47.20]  the tech lead says, "Okay, sure.
+[79:49.00]  Whatever. I'll let them own stuff." And
+[79:51.64]  they'll just take their hands off the
+[79:53.12]  wheel, and then the team falls apart,
+[79:55.28]  right?
+[79:55.97]  >> [laughter]
+[79:56.28]  >> Because you can't just stop doing the
+[79:58.80]  things you're doing, right? You have to
+[80:00.56]  go and have a conversation with people.
+[80:02.68]  And so So I I see it I see leadership as
+[80:05.52]  this kind of slider between oversight
+[80:08.60]  and accountability.
+[80:10.24]  So when when someone's new to the team,
+[80:12.80]  when they're very junior, they're in a
+[80:14.64]  mode of oversight. Like you're checking
+[80:16.80]  their work, right? But at a certain
+[80:18.92]  point, you have to dial down the
+[80:21.40]  oversight, and very importantly, dial up
+[80:24.88]  the accountability. So instead of
+[80:26.80]  saying, "I'm not going to look at what
+[80:28.36]  you're doing anymore," you say, "Okay,
+[80:30.48]  cool. You've got this project. Let me
+[80:33.24]  know when it's going to get done. Next
+[80:34.44]  Thursday? Cool. All right. What's the
+[80:36.56]  plan? This is going to happen? Okay, how
+[80:38.68]  are you going to know it's correct?
+[80:39.84]  Great, great, great. It's on you.
+[80:42.04]  I expect you to do that. Great. Let me
+[80:44.00]  Let me know if there's any issues,
+[80:45.52]  right? And then the the ownership
+[80:47.96]  relationship is explicitly on them.
+[80:50.48]  Because what you want to do is basically
+[80:52.08]  encourage ownership within teams.
+[80:55.24]  You can't go from owning something to
+[80:56.44]  just yourself to not owning something
+[80:58.60]  yourself [laughter]
+[80:59.48]  and expect that to develop. You have to
+[81:01.08]  go have those conversations. You have to
+[81:02.40]  go and give people accountability. Now,
+[81:05.16]  what I have found, even though that can
+[81:07.68]  feel like an awkward conversation, most
+[81:10.24]  people genuinely like accountability.
+[81:13.00]  Most people like to own their work. Most
+[81:15.52]  people like to say, "Hey, this is on
+[81:17.04]  you.
+[81:18.36]  We're going to We're all going down with
+[81:19.76]  the ship, right? If [laughter] this you
+[81:20.80]  know
+[81:22.28]  I'm not going to leave you high and dry.
+[81:23.60]  Like, you know, I'm the tech lead. I
+[81:25.16]  still take, you know, responsibility,
+[81:26.44]  too.
+[81:27.52]  You're accountable to this project.
+[81:29.48]  And uh and go for it. And that's how you
+[81:32.40]  can develop people in your team. You
+[81:34.44]  know, a tech lead shouldn't be about you
+[81:36.56]  as the boss and the team is like the
+[81:39.16]  people who, you know, do the work or
+[81:41.24]  something, right? It's about this kind
+[81:43.24]  of flow where you're the more
+[81:45.76]  experienced person typically, maybe the
+[81:47.16]  more organized person, the more
+[81:48.52]  strategic person, and you're working on
+[81:50.48]  developing your team members so they can
+[81:52.60]  take your job.
+[81:53.92]  And then you can do something else.
+[81:55.96]  >> That slider you mentioned, what if you
+[81:59.24]  give someone accountability and they
+[82:01.08]  blow it? Do they go back down the slider
+[82:03.60]  to, you know, where you start
+[82:05.24]  micromanaging?
+[82:06.16]  >> to recognize it, right? So,
+[82:08.88]  this is growth. I mean, this is growth,
+[82:10.52]  right? It doesn't always work. And so,
+[82:13.52]  um
+[82:14.32]  I think I had another article about um
+[82:16.52]  paper cuts or something. So, you know,
+[82:18.60]  we'd call these paper cuts, you know, so
+[82:20.80]  um some decisions don't matter that
+[82:23.44]  much. You know, you get them wrong and
+[82:25.20]  maybe it sets you back a week. You get
+[82:27.20]  them wrong and maybe something's a bit
+[82:28.32]  suboptimal. And these are great
+[82:30.60]  candidates to give people accountability
+[82:32.72]  for because they do it and if it doesn't
+[82:34.52]  work,
+[82:35.64]  they get to experience it and it will
+[82:37.72]  feel bad. And
+[82:40.48]  I guess that's good. It's It's good to
+[82:42.76]  feel bad. You know, you shouldn't be
+[82:44.60]  demoralized, but it's good to try
+[82:46.04]  something and it doesn't work and you're
+[82:47.24]  like, "Oh wow, that's that that didn't
+[82:48.92]  work." And that you And then you feed
+[82:50.88]  that back into your little, you know,
+[82:52.28]  LLM in your brain and you get better
+[82:54.20]  next time, right? Uh
+[82:55.88]  that's that's a growth experience. I
+[82:57.20]  think what you don't want to let people
+[82:58.80]  do is like lose their arm. You know,
+[83:00.28]  like like paper cuts are fine, but I
+[83:02.76]  would not let someone a junior person,
+[83:05.44]  especially, design the replication
+[83:07.72]  system at Conflux whatever. Like, you
+[83:09.36]  know, you have to have safeguards and
+[83:12.36]  and one of the arts as a CTO or leader
+[83:15.84]  tech lead is figuring out the right
+[83:18.00]  level of altitude
+[83:20.44]  to how to know whether you can trust
+[83:21.88]  someone to take on ownership for
+[83:22.92]  something.
+[83:23.76]  >> You mentioned, because you were the most
+[83:25.84]  senior engineer at Dropbox at some
+[83:27.80]  point, that you had to mentor other very
+[83:30.60]  senior engineers and
+[83:32.80]  you know, when I think about mentoring a
+[83:33.92]  junior engineer, it's relatively
+[83:35.76]  straightforward patterns. But when I
+[83:37.48]  think about, let's say I need to mentor
+[83:40.56]  a senior staff engineer or maybe even a
+[83:43.56]  a principal engineer, how do you mentor
+[83:46.00]  someone like that that's already so
+[83:47.52]  polished? They already know how to take
+[83:49.32]  ownership. Um yeah, how do you mentor
+[83:52.28]  someone so senior?
+[83:53.68]  >> Yeah, I mean this in two ways. What One
+[83:55.56]  is there is still just a whole bunch of
+[83:57.24]  commonality. Everyone goes through the
+[83:59.20]  same problems. They They don't know how
+[84:01.40]  to deliver harsh feedback. They They
+[84:03.68]  don't know, you know,
+[84:05.88]  there is a bunch of the standard stuff
+[84:07.76]  people working on, but I do think that
+[84:10.32]  um
+[84:11.24]  that a certain point everyone needs to
+[84:13.20]  become the best version of themselves.
+[84:15.56]  Sounds so cheesy, right? But there is
+[84:17.12]  not an archetype for what, according to
+[84:19.40]  me, there's not an archetype for a
+[84:21.12]  senior principal engineer.
+[84:23.08]  There's you've got to be your own brand
+[84:25.32]  of engineer, right? So, you might be for
+[84:26.88]  me I'm like the strategic kind of
+[84:29.00]  collaboration simplicity abstraction
+[84:30.88]  engineer, and my coding just fell off a
+[84:33.64]  cliff, you know? Some engineers are like
+[84:35.56]  the the deep uh science fiction, you
+[84:38.28]  know, the super hardcore science, you
+[84:40.72]  know, problem-solving engineer. So,
+[84:42.48]  everyone's going to find their own
+[84:43.44]  brand. So, often times what I'll be
+[84:44.80]  working on them is is a combination of
+[84:47.92]  two things. One, finding their their
+[84:51.32]  strengths and helping them
+[84:53.24]  be more spiky, helping them to to like
+[84:55.28]  really um excel in the area that makes
+[84:58.32]  them special.
+[85:00.08]  At the same time,
+[85:01.76]  almost always working on the personal
+[85:04.20]  side of being engineering. Like the the
+[85:06.40]  organizational personal understanding
+[85:08.36]  people, understanding the why. It's just
+[85:10.88]  I don't know. We're we're so mathy, you
+[85:12.92]  know, as an industry. We think that
+[85:14.72]  somehow like even silly things like like
+[85:17.12]  for example, I have to tell so many
+[85:19.00]  senior engineers
+[85:20.72]  that you can't change someone's mind in
+[85:22.68]  a meeting.
+[85:23.88]  You just can't do it. Like you can you
+[85:26.36]  can you can disagree with someone, and
+[85:29.08]  they're going to be mad or whatever,
+[85:31.00]  right? But like but to change someone's
+[85:33.56]  mind involves going through a complex
+[85:35.60]  series of like of
+[85:37.92]  neurological processes, right? That like
+[85:40.48]  that don't happen live in front of 10
+[85:42.76]  people in a meeting, right? And so, if
+[85:45.36]  you force someone to agree with you
+[85:47.48]  about them being wrong, they're just
+[85:49.04]  going to go along with it. And and the
+[85:51.08]  ego is going to get bruised and
+[85:52.20]  whatever. So, so one thing, you know,
+[85:53.92]  firstly, meetings aren't generally
+[85:55.72]  aren't for decision-making.
+[85:57.68]  Most of the time when you identify
+[85:59.80]  uh a disagreement, I would point out the
+[86:03.08]  disagreement and why
+[86:04.96]  and why I I don't agree or, you know,
+[86:07.28]  where the problems are, provide enough
+[86:08.72]  information, and then let it sit and let
+[86:10.80]  them go and reflect on it and like come
+[86:12.88]  back and have a conversation a week
+[86:14.16]  later after they've after they've gone
+[86:15.88]  back and forth about the why, right? And
+[86:17.48]  so this this kind of a lot of very
+[86:18.60]  psychological, but it's it's it makes no
+[86:20.68]  sense to be like, well, they should be
+[86:22.48]  able to change their mind. I mean, well,
+[86:23.92]  they won't, right? That team should do
+[86:26.60]  this, well, they didn't, right? You
+[86:28.28]  know, people should like my API, well,
+[86:30.36]  they don't, right? And [snorts] I think
+[86:31.96]  it's like that whole like it's almost um
+[86:36.08]  it's almost like a capital
+[86:38.44]  a capitalist attitude towards like
+[86:40.36]  interpersonal behaviors, right? It's
+[86:42.52]  like doesn't like you know capitalism
+[86:46.08]  success, you know, or or or or impact.
+[86:49.20]  It doesn't matter how well-intentioned
+[86:51.28]  you were if you didn't manage to
+[86:52.68]  convince them. That you could be the
+[86:54.00]  smartest person in the world, but if you
+[86:56.12]  can't change someone's mind, then you
+[86:58.96]  are kind of useless, right? And so I
+[87:01.16]  think it is a lot of senior engineers
+[87:02.96]  still struggle with this. It doesn't
+[87:04.20]  matter how smart you are, doesn't matter
+[87:05.40]  how right you are. Are you effective?
+[87:07.80]  And a lot of being effective at that
+[87:09.92]  level is about you know, uncertainty and
+[87:13.64]  project management and simplicity blah
+[87:15.40]  blah blah blah blah, but also kind of
+[87:17.04]  interpersonal dynamics because most hard
+[87:19.20]  problems happen with a team.
+[87:21.16]  Not always, but generally when you're at
+[87:23.60]  that level, you're going to have to have
+[87:25.56]  10 20 people working with you to get
+[87:27.08]  something done, and that that's a whole
+[87:28.76]  different ballgame.
+[87:30.64]  >> On the topic of career advice, the the
+[87:33.24]  industry's changed a lot in the last 5
+[87:35.32]  years because of all these agentic
+[87:37.04]  tools, and I wanted to know if you
+[87:40.76]  thought is there any career advice that
+[87:43.88]  majorly changed in the last 5 years?
+[87:46.48]  Something that you used to say 5 years
+[87:47.92]  ago, you don't say anymore or vice
+[87:51.04]  versa.
+[87:52.08]  >> No, I I I don't know if I've changed my
+[87:55.16]  perspective much, but I think the
+[87:56.52]  industry has changed its perspective
+[87:57.92]  dramatically. I think um I mean, let's
+[88:00.68]  just let's just be honest about it. Um
+[88:02.76]  there is incredible demand in Silicon
+[88:04.48]  Valley for senior engineers, and it is
+[88:06.56]  getting harder for junior engineers to
+[88:09.12]  succeed and grow.
+[88:10.52]  Um for a variety of reasons. Um, why is
+[88:14.32]  there demand for senior engineers? Well,
+[88:15.52]  because LLMs can't do everything. Well,
+[88:17.68]  you know, the architecture and
+[88:19.16]  simplicity and design, they're still the
+[88:20.80]  domain of human beings, despite what you
+[88:22.76]  might hear on Twitter, right? And every
+[88:25.32]  company, including the labs, are
+[88:26.80]  desperately hiring senior engineers,
+[88:28.64]  right? But, junior tasks are getting a
+[88:31.84]  little bit commoditized, and that
+[88:32.88]  worries me.
+[88:34.32]  Because I do think that, um,
+[88:38.32]  that learning, it's very you know,
+[88:40.32]  wisdom is kind of facts
+[88:42.88]  put into practice and then synthesized,
+[88:45.08]  you know? And so,
+[88:46.88]  a lot of people would argue that, oh,
+[88:48.36]  well, you know, it's easy to learn now
+[88:50.56]  because of ChatGPT, because you can just
+[88:52.12]  go ask it a question about
+[88:55.20]  how does two-phase commit work, or
+[88:57.40]  what's the difference between snapshot
+[88:59.04]  isolation and serializability, and it
+[89:01.16]  will give you probably a pretty good
+[89:02.20]  answer.
+[89:03.76]  But, I think growth as an engineer
+[89:07.40]  does require wisdom.
+[89:09.36]  And wisdom only really happens when you
+[89:11.24]  synthesize it, in my my opinion. And so,
+[89:14.52]  I think, um,
+[89:17.16]  I'm still very bullish on young people.
+[89:20.64]  We're hiring junior engineers at Convex.
+[89:22.64]  I'm very excited about, I mean, I love
+[89:25.40]  working with junior engineers who are
+[89:26.44]  really hungry to grow.
+[89:28.72]  But, what I would say is train your
+[89:31.40]  mind. Like,
+[89:32.88]  do not listen to anyone who tells you
+[89:35.92]  that there is an advantage to having
+[89:37.52]  less knowledge. Yeah, I'm I'm not sure
+[89:39.24]  if you've seen people will say these
+[89:41.00]  ludicrous things that like, oh, maybe in
+[89:43.04]  the future, like, not knowing
+[89:45.00]  engineering will be an advantage cuz you
+[89:46.44]  won't have biases and you'll just use
+[89:47.92]  Claude. I think these are like ludicrous
+[89:50.20]  statements. Like, like,
+[89:52.08]  software engineering is an intellectual
+[89:53.96]  discipline that helps you think. Like,
+[89:56.48]  like, the software engineering, the best
+[89:58.88]  software engineering is not about
+[90:00.44]  knowing syntax, and it's not about
+[90:02.32]  knowing an algorithm. It's being really
+[90:04.68]  good at conceptualizing problems and
+[90:07.04]  being able to break them down to
+[90:08.16]  building blocks and coming up with clean
+[90:10.00]  solutions to them.
+[90:11.72]  And that requires experience. It
+[90:12.96]  requires
+[90:14.44]  like it's like doing doing weights with
+[90:16.16]  your mind. And just like if you went to
+[90:18.96]  the gym and you just like
+[90:21.64]  it never hurt. Like if you went to the
+[90:23.36]  gym and just picked up really light
+[90:24.76]  weights,
+[90:25.88]  um you're not growing. And also if you
+[90:28.24]  went to the gym and picked up a heavy
+[90:30.36]  weight and like, "Okay, cool. I think I
+[90:31.80]  can do it." And then you let the robot
+[90:33.80]  pick up the weight for you there, you're
+[90:35.48]  also not really growing, right? You have
+[90:37.40]  to do the reps. And so I would say, and
+[90:39.28]  it's tough,
+[90:40.80]  but find a way to
+[90:43.76]  stress your brain
+[90:45.24]  every day.
+[90:46.40]  Find a way to to avoid
+[90:49.56]  Now, obviously a genetic coding is here,
+[90:52.08]  right? Obviously that's, you know, I
+[90:54.20]  could never tell someone to like never
+[90:56.00]  use the coding agent cuz that'd be
+[90:57.68]  silly, you know? But I can say that it
+[91:00.76]  is easy
+[91:02.60]  to fall into a passivity trap. Like when
+[91:04.96]  you're just being passive about your
+[91:06.36]  learning. And I do think you need to
+[91:09.00]  spend some time in the
+[91:11.20]  intellectual wilderness of not being
+[91:13.80]  able to solve a problem and struggling.
+[91:16.00]  If you I I I would say if you're running
+[91:17.64]  into a a new
+[91:19.32]  um
+[91:20.24]  a new problem, try to think of a
+[91:22.44]  solution yourself and then go check with
+[91:25.16]  an LLM.
+[91:27.00]  It's going to
+[91:28.24]  be hard for you. It's almost like
+[91:31.76]  for example,
+[91:33.04]  I'm not very good at reading anymore. I
+[91:34.68]  got to be honest. Like I would find it
+[91:36.52]  hard I mean I can read obviously, but I
+[91:38.28]  find it hard to sit down and read a book
+[91:40.76]  because my brain has been fried by
+[91:44.28]  the stimulation economy, right? Like
+[91:46.00]  Like I I I find it I go home and I'm
+[91:48.40]  tired and I watch a YouTube video. I
+[91:49.92]  don't tend to go home and read a novel.
+[91:51.64]  I should be better at that.
+[91:53.88]  But it takes discipline to do that. I
+[91:55.56]  would say similarly
+[91:57.52]  it's getting harder to solve a difficult
+[92:00.20]  problem without reaching for the help.
+[92:03.24]  It's getting harder and harder every day
+[92:04.72]  to be faced with a very difficult
+[92:06.32]  intellectual problem and not being like,
+[92:07.84]  "Well, I'll just I'll just do a Google
+[92:09.24]  search or I'll just ask Claude." You
+[92:11.16]  know, whatever. I'm still doing the
+[92:12.80]  work.
+[92:13.76]  I don't know. I I would really encourage
+[92:16.28]  people to practice
+[92:18.36]  using your brain every day.
+[92:20.20]  >> If I was just devil's advocate or just
+[92:22.04]  thinking from the junior engineer
+[92:23.76]  perspective, I might think, "Well, the
+[92:26.52]  proof that Claude can do this work today
+[92:28.96]  means that I don't need to know it today
+[92:31.52]  or tomorrow or in the future. So, why
+[92:34.80]  why even build that skill in the first
+[92:36.52]  place? Like and also these agentic
+[92:39.72]  tools, they have positive trajectories,
+[92:42.68]  too. So,
+[92:44.04]  >> Yes. So, firstly, um
+[92:47.44]  the agents are not particularly good at
+[92:48.92]  a lot of parts of engineering currently.
+[92:51.60]  Um and so, probably everyone should
+[92:53.04]  agree there's, you know,
+[92:55.48]  Claude is not good at designing
+[92:56.92]  distributed systems protocols right now,
+[92:58.68]  for example. You know, or or managing a
+[93:01.08]  a 3 million line code base, you know. Um
+[93:03.60]  and so, there are parts of engineering
+[93:05.72]  where engineers are valuable. And like I
+[93:07.48]  said, you know this because the labs are
+[93:09.28]  all hiring engineers. No matter what
+[93:10.68]  they say, they're still hiring
+[93:12.20]  engineers, right? Desperately hiring
+[93:13.64]  engineers. Um really really aggressively
+[93:16.08]  hiring engineers.
+[93:17.32]  Um
+[93:18.64]  So, engineers still have value.
+[93:20.76]  And maybe they won't in the future, but
+[93:23.24]  I doubt it. I really do think there's a
+[93:25.04]  role for human ingenuity in engineering.
+[93:27.52]  And so, here's the here's the trade-off
+[93:31.16]  I would pose to people. I mean, this
+[93:33.12]  there's kind of three paths. One, get
+[93:35.16]  out. Get out of engineering, go mow
+[93:37.80]  lawns, and do whatever if you want.
+[93:40.92]  That's the that's the most nihilistic
+[93:43.12]  attitude. I I don't believe in that. I
+[93:45.28]  believe I really love engineering and I
+[93:46.96]  believe that there's promising roles for
+[93:48.52]  human beings in engineering.
+[93:50.20]  So, the second is
+[93:52.00]  to realize that um
+[93:54.40]  there's value right now for humans in
+[93:55.72]  engineering. And maybe one day AGI will
+[93:58.32]  be here.
+[93:59.92]  Let's say in the year's time AGI will be
+[94:01.76]  here.
+[94:02.56]  And there's two people.
+[94:04.16]  One person just gave up on
+[94:05.80]  problem-solving right now, and they're
+[94:07.12]  just like
+[94:08.52]  feeding the machine, and they're running
+[94:09.72]  17 coding agents in parallel, and
+[94:11.52]  they're just accepting everything Claude
+[94:13.76]  says, and they've given up.
+[94:16.04]  Right? And one person said, "You know
+[94:17.92]  what? I still want to have an active
+[94:19.40]  role in my learning. I want to
+[94:20.64]  understand what it's doing. I want to
+[94:22.00]  think hard about problem-solving."
+[94:23.32]  Right?
+[94:24.40]  Play it out 1 year, AGI arrives. Who is
+[94:27.44]  going to be better placed for the
+[94:28.40]  future?
+[94:29.64]  Right?
+[94:30.56]  The person who's been training their
+[94:31.72]  mind, right? Like there was there's
+[94:34.96]  you don't Engineering's not a means to
+[94:36.68]  an end. It's a mechanism for a for
+[94:39.00]  improving your mental processes. It's
+[94:41.48]  It's like like I still do whiteboarding
+[94:43.88]  coding interviews. And by the way,
+[94:45.36]  Anthropic still does whiteboarding
+[94:46.72]  coding interviews. Just in case you were
+[94:48.40]  wondering. They don't say like just use
+[94:50.24]  Claude, right? So, I still do white
+[94:52.52]  whiteboarding coding interviews with
+[94:53.88]  candidates.
+[94:55.56]  Candidates are getting worse at coding.
+[94:57.00]  That's absolutely true.
+[94:58.92]  But I don't know any better vehicle for
+[95:01.80]  evaluating someone's intellectual
+[95:04.32]  capacity for problem-solving than seeing
+[95:06.52]  them solve an engineering problem.
+[95:07.80]  Right? It's a It's a great mechanism for
+[95:10.08]  doing so. It's like you know,
+[95:12.16]  um
+[95:13.28]  if you were doing a math degree,
+[95:16.04]  right?
+[95:17.20]  A big part of doing advanced mathematics
+[95:18.80]  is proving theorems.
+[95:20.52]  And by the way, the theorems are already
+[95:21.92]  all proven, right? When
+[95:24.76]  by the you know, the exams and is
+[95:27.16]  proving a theorem that has already been
+[95:29.48]  proven. And so, you might say, "Well,
+[95:30.80]  what's the point of proving that
+[95:31.72]  theorem? It's already been done." Well,
+[95:33.24]  the point is that the act of proving
+[95:35.60]  that theorem
+[95:36.88]  improves your mind, right? And then you
+[95:38.76]  can go and do more innovative stuff. So,
+[95:40.40]  I would say sh
+[95:41.76]  Sure, you may not I still do think that
+[95:45.64]  there is a very, very promising role for
+[95:47.16]  human beings in engineering. Maybe not
+[95:48.96]  in coding, but coding and engineering
+[95:51.16]  are very different things, right? Um,
+[95:53.68]  but even if you don't believe me, you
+[95:55.16]  can either give up now, but or you can
+[95:56.92]  just keep trying to improve your brain
+[95:58.68]  and you'll be better off anyway. Imagine
+[96:00.48]  if you're wrong. Imagine if you take the
+[96:01.68]  defeatist view. Imagine if you say,
+[96:03.56]  "Well, AGI is coming next week. Why
+[96:05.52]  bother doing anything?" And imagine
+[96:07.20]  you're wrong.
+[96:08.64]  Oh my god, you just got off the
+[96:11.24]  You just got off the
+[96:13.24]  >> [laughter]
+[96:14.00]  >> off the ride. You got off the ride.
+[96:16.08]  There's so much cool stuff. I mean, this
+[96:17.60]  is a cool time for engineering, right?
+[96:19.24]  This is a really cool time. There's so
+[96:20.48]  much cool stuff happening. And I don't
+[96:22.64]  And I I I hate this talk about like
+[96:25.76]  AI means humans don't have a role
+[96:28.52]  anymore. AI means no one's going to have
+[96:30.56]  a job. AI means we're going to do
+[96:32.56]  nothing else new and there's no one's
+[96:34.56]  going to I What I like is, "Hey, look at
+[96:37.16]  this all this new cool stuff we can
+[96:38.44]  build."
+[96:39.56]  Like, look at how there's ways we can
+[96:41.20]  make people's lives better. And to be
+[96:42.96]  honest, I really wish my peers and and
+[96:45.84]  and my cohort would stop it with the
+[96:49.68]  the real doomer like um human
+[96:53.28]  elimination kind of narrative and
+[96:56.08]  because I think there is a little bit of
+[96:57.44]  a like a
+[96:59.44]  you know, a psychological anchoring, you
+[97:01.36]  know?
+[97:02.12]  I and as part of Convex want to make the
+[97:05.72]  you know, we didn't start Convex to
+[97:06.92]  eliminate jobs. We started Convex
+[97:08.72]  because we want to make it easier for
+[97:09.56]  people to build cool stuff. And And I
+[97:11.20]  think the more we as an industry get
+[97:13.44]  behind, let's do everything we can to
+[97:16.08]  make it possible for people to do more
+[97:17.76]  cool things.
+[97:19.16]  I think it's a really exciting future we
+[97:20.44]  have ahead of us.
+[97:21.64]  >> I wanted to talk about what you're
+[97:22.76]  working on now or Convex and why did you
+[97:25.16]  quit Dropbox to build Convex?
+[97:27.68]  >> I Dropbox is a great place. At a certain
+[97:29.16]  point I I was there eight years. Uh
+[97:32.64]  whether I I don't know if I say I
+[97:34.08]  outgrew the company, but I'd been the
+[97:35.88]  most senior engineer for a while there.
+[97:38.44]  Um
+[97:39.24]  you know, at a certain point I
+[97:41.24]  I wanted to grow and do my own stuff,
+[97:43.36]  you know? And so So I left the company
+[97:45.36]  in very amicably. Um, and um,
+[97:49.40]  started Convex. Now, why Convex? Convex
+[97:51.92]  started pre-agentic era.
+[97:55.08]  Cuz my observation was that that um,
+[97:59.08]  the real differentiator in the success
+[98:01.32]  of a project, especially a large
+[98:02.80]  project, is the quality of the
+[98:04.64]  abstractions, the quality of the design,
+[98:06.32]  the quality of the architecture, right?
+[98:08.20]  Systems that thrive over time and are
+[98:10.00]  extensible are systems that are
+[98:11.76]  architected well.
+[98:13.68]  And in my mind, the most difficult
+[98:15.80]  challenge in engineering, according to
+[98:17.92]  me, is distributed state management. How
+[98:20.80]  do we store state reliably and reason
+[98:22.64]  about it, you know, modifying it
+[98:24.64]  concurrently with other users? And so,
+[98:26.96]  so we designed um, a platform for
+[98:30.00]  application building based on our
+[98:32.44]  experiences building large-scale
+[98:33.80]  systems. So, Convex is a is a
+[98:36.20]  transactional database where the
+[98:37.72]  transactions are written in TypeScript.
+[98:39.28]  They run as stored procedures,
+[98:40.40]  TypeScript stored procedures, they're
+[98:42.04]  serializable. There's, you know,
+[98:43.84]  automatic reactivity. So, what the
+[98:45.84]  client sees is a consistent view of
+[98:47.80]  what's on the on the server.
+[98:50.24]  And I would say Convex is a very
+[98:51.92]  designed platform cuz Convex is designed
+[98:54.28]  to be very composable and fit together
+[98:55.80]  well.
+[98:56.64]  And so, we designed Convex for
+[98:58.32]  developers to use. In particular, we
+[99:00.04]  wanted to make it so that application
+[99:02.16]  developers were able to build complex
+[99:04.16]  full-stack applications. That was the
+[99:06.04]  goal of Convex. Now, all of a sudden,
+[99:08.56]  agentic development came along.
+[99:10.44]  And that's been really interesting for
+[99:12.20]  us because it turns out
+[99:14.40]  that um,
+[99:15.72]  what humans find hard is also what
+[99:18.08]  agents find hard. You know,
+[99:20.28]  you know, the coding agents are not
+[99:21.84]  particularly good with large
+[99:24.16]  code bases, they're not particularly
+[99:25.52]  good with um, reasoning about um, action
+[99:28.56]  at a distance, you know, race conditions
+[99:30.84]  across services, they're not
+[99:32.48]  particularly good at simple
+[99:34.56]  architectures over time. And these are
+[99:36.36]  the things that Convex gives you as a
+[99:38.00]  developer. So, the idea now, and and
+[99:39.92]  almost everyone using Convex is using
+[99:41.64]  Convex because they have their coding
+[99:43.40]  agent doing their front end, but they
+[99:45.44]  need
+[99:46.60]  a back end abstraction, a higher level
+[99:48.88]  abstraction than something like AWS or
+[99:50.80]  something like hosted Postgres, which
+[99:52.68]  makes their problems go away. And that's
+[99:54.32]  that's the company.
+[99:55.64]  >> That was one thing I wanted to ask cuz
+[99:57.36]  immediately when I think, oh, I just
+[99:58.48]  need a back end or something like that,
+[99:59.88]  just go to AWS or, you know, just host
+[100:02.52]  something like that. So, this is the
+[100:04.72]  layer of abstraction on kind of on top
+[100:06.88]  of those types of primitives
+[100:08.36]  >> Yes.
+[100:08.76]  >> that makes it easier for an application
+[100:10.68]  developer.
+[100:11.28]  >> It ties into a lot of the stuff I I said
+[100:13.68]  earlier about making problems go away.
+[100:15.56]  And frankly, I mean, I I watched the
+[100:17.44]  interview you did with Barbara Liskov,
+[100:18.88]  and Barbara was my advisor in grad
+[100:20.60]  school, and and I we worked a lot
+[100:22.64]  together and a lot on abstraction, and
+[100:25.28]  you know, the value in clean designs
+[100:27.52]  that minimize complexity. And so, AWS is
+[100:30.40]  a fine tool.
+[100:32.16]  Postgres is a fine tool.
+[100:34.36]  Although, none of the mainstream
+[100:35.20]  databases are that great, frankly. But
+[100:37.32]  um
+[100:37.92]  they're fine tools, but they're not
+[100:39.56]  they're not making problems go away,
+[100:41.32]  right? And so, the idea of Convex is a
+[100:43.28]  higher level set of abstractions that
+[100:45.48]  you can use and not reason about state
+[100:47.76]  management, not reason about
+[100:49.44]  concurrency, not reason about
+[100:50.56]  scheduling, not reason about
+[100:52.24]  transactions, uh not reason about
+[100:54.40]  polling and data sync and type safety
+[100:56.92]  and all those things. So, Convex is a If
+[100:59.64]  If you think about, you know, the
+[101:00.72]  history of of engineering, over time the
+[101:03.24]  abstraction floor raises. You know, when
+[101:05.24]  Barbara was first starting,
+[101:07.64]  she was using punch cards, you know? Um
+[101:10.40]  I don't I don't know if she mentioned it
+[101:11.44]  to you, but
+[101:12.40]  uh when she started as a programmer, she
+[101:14.32]  never heard the word programmer before,
+[101:16.16]  you know?
+[101:16.92]  Uh that was the first time she heard the
+[101:18.56]  word, right? And then you you went from
+[101:20.76]  punch cards to like, you know, having
+[101:23.04]  proper operating systems and and and uh
+[101:26.04]  you know, then you know,
+[101:27.64]  languages like C and then higher level
+[101:29.00]  languages and and then you had cloud
+[101:30.88]  computing. And over time the abstraction
+[101:32.96]  floor raises, and you largely forget
+[101:35.20]  about what's going on beneath the
+[101:36.40]  surfaces. Most people don't think about
+[101:38.36]  how S3 is implemented. I do, but that's
+[101:40.68]  what I used to work on. But like most
+[101:42.44]  people just use it and it just stores
+[101:44.00]  your data and it gives it back and
+[101:45.00]  that's great.
+[101:46.56]  That's a successful abstraction. But I
+[101:48.40]  do strongly believe that the world
+[101:50.60]  is and has been overdue for a new
+[101:52.56]  abstraction. A one level up the stack.
+[101:55.48]  And especially now that people are doing
+[101:57.12]  agent development, largely they don't
+[101:59.16]  want to own a Postgres instance. Largely
+[102:00.88]  they don't want to think about Kafka
+[102:02.44]  versus RabbitMQ. Uh they don't want to
+[102:04.48]  think about, you know, what set of tools
+[102:05.96]  to use. They want it just to work so
+[102:08.84]  they can focus on building their
+[102:09.80]  application.
+[102:11.28]  >> When you talk about, you know, the
+[102:13.00]  abstraction, there's obviously a lot of
+[102:14.68]  stuff going on behind the scenes in
+[102:17.00]  Convex and the the technical side. And
+[102:20.68]  I, you know, what what is it that Convex
+[102:23.24]  is building behind the scenes that
+[102:25.44]  you're most excited about and why?
+[102:27.60]  >> Basically, Convex is a new
+[102:30.80]  operating system in some respects,
+[102:33.20]  right? So we have the primitives,
+[102:34.64]  queries, mutations, actions,
+[102:36.68]  subscriptions.
+[102:38.32]  What I think is kind of cool is how we
+[102:39.80]  built this, you know? We have our own
+[102:41.40]  database that we built. We have our own
+[102:42.88]  distributed database that, you know,
+[102:44.72]  does, you know, tracks read ranges and
+[102:46.76]  write ranges and does very efficient um
+[102:49.88]  subscriptions over web sockets, etc. So
+[102:52.28]  that's that's the current operating
+[102:54.68]  system set of primitives.
+[102:56.96]  But um
+[102:58.52]  Convex is getting much larger workloads
+[103:00.84]  now and much more interesting workloads
+[103:02.32]  and more high-performance workloads. And
+[103:04.52]  so we're in the process of developing a
+[103:07.00]  slightly lower-level API
+[103:09.68]  for doing very efficient kind of
+[103:11.52]  background processes, singletons,
+[103:13.92]  APIs like fork, like you, you know, in
+[103:16.28]  like operating system primitives. And
+[103:18.08]  I'm pretty excited about launching these
+[103:21.72]  and how much is faster it's going to
+[103:23.52]  make various um Convex components like
+[103:25.72]  the workflow system. Um
+[103:28.72]  And to be honest, the thing I find
+[103:30.20]  exciting every day,
+[103:31.96]  challenging every day. I I still find
+[103:33.76]  Convex very hard. Like
+[103:36.16]  to be honest, like
+[103:37.72]  I struggle every day.
+[103:39.76]  Um I don't find my job easy. I I mean I
+[103:42.24]  I
+[103:42.88]  I feel confident in my job, but it's not
+[103:44.92]  easy. Like designing the new API for
+[103:47.08]  this is super hard. I can't just go ask
+[103:49.12]  ChatGPT. It's not going to give a good
+[103:50.44]  answer, right? And um cuz it's
+[103:53.52]  innovation. It's a It's a new ideas. I
+[103:55.72]  really enjoy it. I find it um stressful
+[103:58.44]  sometimes. I find it um
+[104:01.24]  challenging and tiring, but I also find
+[104:04.40]  it exciting. And and and I would I you
+[104:06.36]  know, I would encourage engineers to try
+[104:07.76]  to find this kind of stuff to work on
+[104:09.52]  where it's like you're on that edge of
+[104:11.56]  like I'm really liking this, but also
+[104:14.00]  it's a bit tricky, you know, it's it's a
+[104:15.40]  bit tough.
+[104:16.60]  >> You mentioned fork and in operating
+[104:18.72]  systems I'm familiar, you know, you just
+[104:21.16]  take the existing process and kind of
+[104:22.96]  split it. What's the idea of fork in a
+[104:26.28]  distributed system?
+[104:27.96]  >> So, Convex almost never has scale issues
+[104:30.80]  with regards to live traffic. You know,
+[104:32.44]  live traffic is like um
+[104:34.72]  typically bound by user-facing
+[104:36.36]  interactions, people clicking on stuff,
+[104:37.84]  running website, you know, acting on
+[104:39.16]  website. Every now and then someone will
+[104:41.48]  come to Convex and want to kick off a
+[104:42.96]  million background jobs to do something,
+[104:44.88]  background processing.
+[104:46.44]  It's a big workload. You
+[104:47.32]  programmatically you can trigger huge
+[104:49.36]  workloads, right? And so the one of
+[104:51.08]  things we have to scale is is kind of
+[104:52.72]  these background workloads and a lot of
+[104:54.68]  them involve things like scheduling.
+[104:57.24]  And there are a lot of workloads in
+[104:58.44]  Convex that would be um
+[105:01.08]  very efficient if you had a background
+[105:03.32]  singleton process to perform things like
+[105:06.16]  aggregates, you know, um
+[105:09.08]  I'll give a very silly example, right?
+[105:11.44]  If you have a let's say you're building
+[105:13.80]  an election on Convex, a voting system,
+[105:16.40]  and every vote is a new uh row in the in
+[105:19.16]  the table and you want to show a tally
+[105:20.88]  of the votes.
+[105:22.12]  You know, one way of doing this is
+[105:23.56]  having a bunch of background processes
+[105:24.84]  or crons adding these things up.
+[105:26.92]  One way is doing a table scan, which is
+[105:29.16]  you know, the obvious way to use
+[105:30.20]  Postgres, which doesn't scale. The other
+[105:32.40]  is to have a background job, which if
+[105:34.76]  there's new votes, it adds them all up,
+[105:37.20]  keeps a tally. If there's no new votes,
+[105:38.96]  it goes to sleep and waits on like a
+[105:41.16]  condition variable to wake up up to wake
+[105:43.40]  up again when there's with a new job to
+[105:44.72]  perform. And so these are the kind of
+[105:46.40]  primitives
+[105:47.64]  that we're working on right now. Most
+[105:49.16]  people won't even know they exist, but
+[105:50.96]  allow us to build these very
+[105:52.08]  high-performance um primitives for
+[105:54.44]  scheduling
+[105:56.16]  um aggregates, you know, background
+[105:59.04]  aggregations, etc. Um and I'm pretty
+[106:01.48]  excited about like the the next
+[106:03.68]  generation of workloads we can support
+[106:05.12]  as a result.
+[106:06.44]  >> When you reflect on your career and you
+[106:09.08]  it sounds like you've done a lot of
+[106:10.36]  gnarly technical work across your PhD,
+[106:13.80]  ca- Dropbox seemed like pretty intense
+[106:16.04]  systems work, and Convex is also doing a
+[106:19.00]  lot of cool stuff. When you look back on
+[106:20.84]  your career, what was the most
+[106:22.40]  technically stimulating work you've ever
+[106:24.56]  done? And you know, why was it hard and
+[106:27.52]  what did you learn from it?
+[106:29.36]  >> There was certainly times in grad school
+[106:30.76]  where we were like um formally mo-
+[106:32.92]  modeling consensus protocols and stuff
+[106:34.92]  and you know, I'd be on the phone with
+[106:36.44]  Barbara on weekends and talking through
+[106:38.92]  um trying to reason about this in our
+[106:40.64]  heads. That was pretty intellectually
+[106:41.84]  stimulating and fun, but I think the
+[106:43.68]  stuff I found most stimulating was stuff
+[106:46.32]  like working on very large storage
+[106:49.60]  system with a team where
+[106:52.16]  you know, things are going wrong. You
+[106:53.84]  know, where where the rubber hits the
+[106:55.36]  road, that's where I find And this is
+[106:57.44]  everyday at Convex. You know, the rubber
+[106:59.32]  hits the road like you know, uh hey, we
+[107:00.52]  have a uh compaction process that runs
+[107:02.48]  in the background, but it's running into
+[107:04.08]  issues. We might have to redesign it
+[107:05.56]  using
+[107:06.56]  partitioning, etc.
+[107:09.44]  I I feel most intellectually stimulated
+[107:11.72]  where where there's a really clear
+[107:14.44]  constraint in front of me.
+[107:16.56]  And um that to me is engineering. Like
+[107:19.12]  if
+[107:20.36]  I I actually know what the definition of
+[107:21.52]  engineering is, but I'm just going to
+[107:23.40]  make it up in my mind, engineering is
+[107:26.20]  science with constraints. It's like It's
+[107:28.36]  like how to How do you
+[107:31.52]  solve problems in the presence of
+[107:33.36]  resource constraints?
+[107:35.04]  I'm not particularly interested in
+[107:36.44]  constraint-free environments. That's
+[107:38.36]  art.
+[107:39.32]  I like craft and engineering. And the
+[107:43.08]  the more visceral and difficult the
+[107:45.00]  constraints, the more fun that is for
+[107:46.56]  me.
+[107:47.96]  And I I've I've been lucky enough to
+[107:50.96]  I don't know whether it's luck or
+[107:53.24]  intention, I don't know, but I I I've
+[107:55.08]  always placed myself in those
+[107:57.28]  environments, you know, like
+[108:00.80]  let's go get on the hardest team and and
+[108:03.24]  own the hardest problem and then
+[108:05.20]  um and then, you know, put the effort
+[108:07.00]  into to to survive.
+[108:10.20]  >> This question might be a little bit off
+[108:11.80]  topic, but you know, I know you were a
+[108:14.40]  consultant for the show the TV show
+[108:16.80]  Silicon Valley.
+[108:18.28]  I love that show and I got to hear how'd
+[108:20.56]  you get involved in that?
+[108:21.88]  >> Yeah, that was a lot of fun. So, um
+[108:25.20]  a lot of folks might not know this. Um
+[108:28.24]  I had nothing to do with season 1. So, a
+[108:29.92]  lot of TV shows, they don't know whether
+[108:31.40]  they're going to survive as a TV show.
+[108:33.56]  So, so, um Mike Judge who started um who
+[108:37.40]  who who wrote Silicon Valley also was of
+[108:39.64]  Beavis and Butt-Head and Office Space
+[108:41.24]  fame. He started his career as a
+[108:43.12]  software engineer at I think Lockheed or
+[108:45.04]  something. So, he actually was a
+[108:46.48]  software engineer that a lot of people
+[108:48.12]  don't realize. And so, Silicon Valley
+[108:50.20]  was like a throwback to the kind of
+[108:52.56]  work he did. And if you anyone's seen
+[108:53.76]  the movie Office Space, you would you
+[108:55.20]  would get this. It's That's a really a
+[108:57.04]  you know, dystopian cubicle era uh tech
+[108:59.88]  uh industry um film.
+[109:01.48]  Um so, they did season 1 of of Silicon
+[109:04.44]  Valley and then it was very popular and
+[109:06.92]  they got picked up and so, they had to
+[109:08.32]  figure out what to do for season 2, but
+[109:09.80]  they didn't know what to do because they
+[109:11.76]  did they'd written a storyline that gets
+[109:13.84]  to the point where there's a compression
+[109:15.16]  algorithm. And And then what happens?
+[109:18.16]  And so they needed to find um
+[109:21.68]  an expert on compression and I guess
+[109:24.48]  ostensibly that was me. And I don't know
+[109:26.16]  whether I was an expert on compression.
+[109:27.64]  I guess I was an expert on storage at
+[109:28.92]  least. And so and so they came to the
+[109:31.64]  office and and uh and we just chat
+[109:34.76]  chatted and it was so much fun, you
+[109:36.24]  know? And so I was involved in um you're
+[109:38.88]  pretty heavily involved in the show. Um
+[109:42.24]  A lot of it was you know storyline and
+[109:44.64]  and so forth. So like yes, sure, what
+[109:45.76]  would you do with the compression
+[109:46.80]  algorithm? What would could you design a
+[109:48.04]  storage system? And and so coming up
+[109:49.48]  with story ideas that that technically
+[109:51.80]  accurate. They were really
+[109:54.80]  you'd be surprised to know how much they
+[109:56.64]  care about accuracy. A lot of um
+[109:59.48]  people I know can't watch that show cuz
+[110:01.60]  it's just so creepily [snorts]
+[110:04.04]  accurate. They find it so cringey. And
+[110:06.20]  partly why Silicon Valley can this TV
+[110:08.52]  show could be so cringey is because
+[110:11.52]  it's it's real. Like those stories are
+[110:14.12]  almost almost
+[110:16.24]  I don't know everyone. So many of the
+[110:17.96]  stories in Silicon Valley are just real
+[110:19.40]  stories. They're just they went to a
+[110:21.36]  bunch of companies just farmed everyone
+[110:24.12]  for like stories of crazy things that
+[110:26.60]  happened in the tech industry and they
+[110:28.16]  wove them into the series. And all the
+[110:30.20]  characters are based on real people and
+[110:32.52]  and real archetypes. Um but they also
+[110:34.60]  cared very much about technical
+[110:35.68]  accuracy. So I would also do technical
+[110:37.20]  consulting and then they'd say stuff
+[110:38.40]  like oh we're
+[110:40.08]  building a data center in our house.
+[110:41.36]  What should the rack look like? And you
+[110:43.84]  know, what should the
+[110:45.20]  diagram on the wall look like? And and
+[110:47.20]  partly, you know, I wanted to be like oh
+[110:49.12]  well it doesn't really matter. No one's
+[110:50.36]  going to care. And they're like no, no,
+[110:51.68]  no, it matters. Like they really cared
+[110:54.16]  to get it right. Um
+[110:56.20]  So yeah, I love the show, but it it can
+[110:58.44]  be hard to watch just because of
+[111:00.56]  oh my god, how how
+[111:03.04]  real it can feel.
+[111:05.00]  >> Are there any Easter eggs where you look
+[111:08.12]  at it and go that's unusually accurate
+[111:10.24]  or or you know, that system diagram
+[111:12.76]  actually is like a very simple
+[111:15.40]  >> I can't I don't think I can even say
+[111:17.32]  them because
+[111:18.72]  there were stories of like early
+[111:20.64]  Dropbox, there were stories of having
+[111:23.00]  ideas ripped off by other companies and
+[111:25.00]  being tricked into having meetings with
+[111:26.80]  folks only to, you know,
+[111:29.88]  it may be even the the competitor's team
+[111:32.56]  there to to steal the information. A lot
+[111:35.48]  a lot of those stories are real, and so
+[111:37.72]  there's people who who what's the
+[111:39.88]  equivalent of value and like, oh wow,
+[111:41.24]  that was that was something I went
+[111:43.04]  through and probably it was because it
+[111:44.52]  was about that situation.
+[111:46.62]  >> [laughter]
+[111:47.76]  >> Uh [snorts] that's that's such a cool
+[111:49.24]  experience. Uh did you get paid for
+[111:51.28]  that, or was just the
+[111:52.68]  >> Yeah, that's a complicated question.
+[111:54.48]  >> [laughter]
+[111:56.60]  >> I got paid because I had to get paid
+[111:58.32]  because it was like a Hollywood union
+[112:00.20]  thing. I didn't want to get paid because
+[112:02.00]  it made my visa more complicated, so
+[112:04.31]  [laughter]
+[112:05.40]  I've got a green card now, I'm all good,
+[112:06.84]  but yeah, but that there was something
+[112:08.84]  where they had to pay me $400. Um
+[112:11.88]  Anyway, I made a grand sum of $400 off
+[112:13.60]  that show.
+[112:14.79]  >> [laughter]
+[112:16.08]  >> Uh looking back on your career, is there
+[112:18.60]  any regret that comes to mind that maybe
+[112:20.76]  other people can learn from?
+[112:22.76]  >> Uh yeah.
+[112:24.40]  I I mean, ooh.
+[112:26.68]  I think I underinvested in my personal
+[112:28.32]  life, to be honest.
+[112:29.92]  I people are probably going to say that
+[112:30.88]  much, you know, because I think you can
+[112:32.28]  be all about like growth, and
+[112:35.24]  you sure I could have grown more. I
+[112:36.80]  could have dropped out of grad school
+[112:38.20]  say three years in or four years in, and
+[112:40.28]  probably would have learned just as
+[112:41.20]  much. I could have taken a job at
+[112:42.88]  Dropbox back, you know, two, three years
+[112:45.12]  earlier and made a lot more money. Um
+[112:48.44]  everyone has been in the industry long
+[112:49.72]  enough has been offered to co-found
+[112:52.08]  several billion-dollar companies. Like,
+[112:53.84]  everyone has a story about the times
+[112:55.84]  they could have been a billionaire
+[112:56.80]  several times over. Um I don't really
+[112:59.32]  regret those. I think um
+[113:02.96]  Yes,
+[113:03.92]  it's been a lot of sacrifice to be
+[113:06.60]  to be blunt. I've been on call my whole
+[113:09.40]  career. You know, I've been I've carried
+[113:11.68]  laptop almost every day.
+[113:13.60]  Um there's many
+[113:15.56]  dinners and parties and events I've had
+[113:17.76]  to skip and there's people in my
+[113:19.24]  personal life who have um suffered as a
+[113:21.68]  result and I really appreciate this
+[113:23.56]  people and they they love and care about
+[113:25.24]  me and they know that I just have a
+[113:26.32]  passion for this and so
+[113:28.80]  you know, they they accept me for who I
+[113:30.52]  am. I think it's um
+[113:34.00]  it's it this is like this is, you know,
+[113:35.96]  this is old person talk. But yeah, I
+[113:37.36]  think everyone has to decide like how
+[113:39.52]  much they want to really drive their
+[113:41.28]  career. Cuz there's a trade-off like
+[113:43.08]  absolutely like
+[113:44.88]  I made a tremendous amount of sacrifices
+[113:46.72]  in my career and I really
+[113:48.40]  prioritized
+[113:49.92]  building as probably the num- number one
+[113:52.52]  I mean values first and then building.
+[113:54.80]  But if yeah, if we went back in time,
+[113:56.28]  yeah, I would have had I had a good
+[113:57.88]  life, but I probably would have done
+[113:59.88]  more vacations and you know, I just
+[114:02.60]  had a bit more of a balanced life. I I
+[114:04.36]  really do think I mean, I see that with
+[114:05.84]  all the 996 stuff and and this kind of
+[114:08.48]  performative like
+[114:10.24]  you know, photos of being in a bar and a
+[114:12.84]  laptop and stuff and I'm like, that's
+[114:14.72]  not that's not real. Like that's not I
+[114:17.20]  mean, I'm sure I was working more than
+[114:18.52]  996 back then, but like I probably still
+[114:21.00]  do work more than 996, but that's I
+[114:23.48]  but I don't do it like um as a checkbox.
+[114:26.40]  You know, I do it cuz I just really want
+[114:27.68]  to be doing stuff and and so I think
+[114:29.80]  just um
+[114:31.60]  I would have I would caution people
+[114:33.76]  against that hustle culture. I'll I'll
+[114:36.12]  that's not
+[114:37.60]  Firstly, like you you know, you're only
+[114:39.20]  young once. You should you should have
+[114:41.52]  fun. Um you know, I've got quite a few
+[114:43.96]  grays in here, you know. Um but um but
+[114:47.72]  also
+[114:49.00]  that's that's that's acting. I mean,
+[114:51.24]  focus on solving problems, work hard, be
+[114:53.32]  passionate. Yeah.
+[114:55.00]  >> Yeah, well, when I studied your career,
+[114:56.52]  I mean,
+[114:57.56]  there's there's mentions of you working
+[114:59.36]  at 16 hours a week in various
+[115:01.72]  but um
+[115:02.96]  you know you you like on call you like
+[115:05.72]  fires
+[115:07.68]  you like ownership like all those things
+[115:10.32]  are recipe for working obscene hours.
+[115:13.84]  >> Yeah, and you know I go home and I'm
+[115:15.68]  tired and I wind down by building stuff
+[115:18.24]  now like I
+[115:19.60]  I'm lucky enough to have a little
+[115:20.52]  workshop at home and so I go home and I
+[115:22.40]  you know make things with my hands.
+[115:25.16]  That's just you know that's just you
+[115:26.76]  become an infra person.
+[115:28.68]  You become an you become an engineer
+[115:30.40]  like in all aspects of your life
+[115:33.24]  but yeah I would just I would just say
+[115:35.12]  like
+[115:36.40]  the cool thing is
+[115:38.56]  doing cool stuff that humans use.
+[115:41.72]  The cool thing's not working long hours.
+[115:43.44]  The cool thing's not like showing off
+[115:45.16]  about about that you were running a
+[115:47.40]  coding agent all night. Who cares? The
+[115:49.36]  cool stuff's the cool thing's
+[115:51.40]  enjoying
+[115:53.20]  doing important things.
+[115:54.84]  >> Do you have a best technical book
+[115:57.08]  recommendation for our people?
+[116:00.00]  >> I mean I have to be honest I
+[116:03.56]  I haven't read almost any
+[116:05.72]  technical book.
+[116:07.31]  >> [laughter]
+[116:08.80]  >> I mean obviously I was in academia for a
+[116:10.52]  long time so I read a lot of papers.
+[116:11.96]  Read a lot of papers.
+[116:13.68]  Yeah, learning is awesome. Reading's
+[116:15.24]  great but balance it right?
+[116:17.64]  Read something and then go put into
+[116:19.64]  practice and most of my career I have I
+[116:22.44]  mean like sure I did a PhD so I guess
+[116:24.32]  that that is like the academic side but
+[116:26.60]  after that most of my learning's been by
+[116:28.04]  doing. Cuz there's nothing like being
+[116:30.24]  faced with a real problem in your face
+[116:31.92]  to like to really to really develop as
+[116:34.88]  an engineer.
+[116:36.56]  >> Yeah, and I think if I answer the
+[116:38.20]  question I'd probably say the same. I
+[116:39.92]  think learning by doing is that's that's
+[116:42.52]  really where where it matters most.
+[116:45.04]  And then last question for you is if you
+[116:47.40]  could go back to the beginning of your
+[116:48.68]  career and give yourself some advice
+[116:50.24]  what would you say?
+[116:51.52]  >> I'd say
+[116:53.20]  you know what it'll it'll be okay. Like
+[116:55.08]  don't sweat sweat the small stuff as
+[116:56.92]  much. It's hard cuz like my
+[116:59.80]  my whole like engineering brand is about
+[117:01.88]  caring about details and like I I love
+[117:04.36]  like Dieter Rams and like design, you
+[117:06.88]  know, and and and so so being obsessive
+[117:10.08]  is a little bit part of my DNA.
+[117:13.12]  But I think I would go back
+[117:15.24]  and say career's a long I mean there's
+[117:18.00]  just
+[117:19.28]  any story anyone reads about 22-year-old
+[117:23.52]  billionaire blah blah blah just ignore
+[117:25.40]  that story. That's not that's not real.
+[117:28.24]  That's not repeatable. That's not normal
+[117:30.48]  and it's not that healthy and it's not
+[117:33.52]  that good for the people either, right?
+[117:37.00]  You probably won't ideally won't max out
+[117:41.40]  your growth for 20 plus years as an
+[117:44.12]  engineer.
+[117:45.24]  I'm still learning all the time and I've
+[117:46.60]  been an engineer for several decades. Um
+[117:49.32]  so my advice would be don't sweat it.
+[117:51.92]  There's time to grow and I do think that
+[117:55.08]  again is is is a little bit of a
+[117:57.80]  modern phenomenon but there's a feeling
+[117:59.44]  right now I'm not going to AGI come and
+[118:01.52]  better max out my growth
+[118:04.12]  in the next 3 months. Well, guess what?
+[118:05.36]  You ain't going to do it. It's not going
+[118:07.20]  to happen, right? You can't do it. You
+[118:09.60]  can't max your growth out in the next 3
+[118:11.56]  months. It won't happen. You don't have
+[118:13.16]  to running 17 agents at the same time.
+[118:15.28]  All you got to do is
+[118:17.36]  orient your career around learning every
+[118:21.40]  day and getting better at what you're
+[118:22.48]  doing and trying to solve things in the
+[118:23.80]  most simple ways.
+[118:25.76]  >> Yeah, I mean on Twitter I I see this
+[118:28.16]  take all the time of this permanent
+[118:30.04]  underclass idea where
+[118:32.68]  you know, if you if you don't make it in
+[118:34.48]  time for AGI then you know, you're going
+[118:36.88]  to be part of this permanent underclass.
+[118:39.36]  >> Yeah. I mean look it's a bit challenging
+[118:41.76]  economic times for a lot of folks and I
+[118:43.16]  don't want to be I don't want to be
+[118:45.16]  unsympathetic to people who are you
+[118:47.00]  know, having financial difficulties.
+[118:49.08]  At the same time it's just not an
+[118:51.04]  instructive attitude. There's not much
+[118:52.88]  you can do with that information other
+[118:54.28]  than feel bad about yourself. And and
+[118:57.12]  and I and I don't and I and someone will
+[118:59.12]  tell someone will argue back, "No, what
+[119:01.08]  you can do is get really good at using
+[119:02.72]  Claude." Well, guess what? It's not very
+[119:04.56]  hard to use Claude. It's not like grab
+[119:07.20]  some Sometimes people tell me like, "Oh
+[119:09.00]  my god, I'm I'm finding it hard to keep
+[119:11.44]  up with all the new models, the new
+[119:12.92]  model drops." I don't even know what the
+[119:14.64]  new models are. Like I I use them, but I
+[119:17.52]  forget the latest model cuz it it
+[119:19.56]  doesn't doesn't matter, right? Like
+[119:21.84]  Like there was this thing called Ralph,
+[119:24.04]  right? I guess it's still Ralph. It's
+[119:25.16]  like a loop thing. I don't really know
+[119:27.44]  what Ralph is, and I haven't heard
+[119:29.20]  anyone mention Ralph in the past few
+[119:30.68]  weeks, but it was the biggest thing in
+[119:32.52]  the in Twitter for like a month.
+[119:34.92]  And it just doesn't this is noise.
+[119:37.56]  Somehow sometimes I feel like it's like
+[119:39.72]  um it's like tech tabloids. It's like
+[119:42.64]  people think that they're learning by
+[119:45.80]  somehow knowing like listening to what
+[119:47.76]  Jensen said today, or like, "Oh my god,
+[119:50.96]  Boris said that Claude writes itself."
+[119:54.08]  I don't think people you're learn That's
+[119:56.20]  like it's just like reading about
+[119:58.24]  Beyoncé, but you're a nerd and so you're
+[120:01.68]  reading about Jensen, right? But like it
+[120:04.08]  doesn't [laughter] matter. You're not
+[120:05.40]  growing. Like you don't have to know.
+[120:07.08]  It's okay.
+[120:08.28]  The new coding agent could come out and
+[120:10.16]  you could miss it. And then next year
+[120:13.72]  if if it turns out it's the big one,
+[120:15.40]  you'll just use it. Like it's not hard.
+[120:17.16]  Like I haven't seen any skill so far. I
+[120:19.92]  guess there's some skill, but it's not a
+[120:21.64]  hard skill. If you're good at
+[120:23.36]  engineering, you can figure out how to
+[120:24.92]  use Claude code, right? Or open code.
+[120:26.92]  So, just watch out for tech tabloidism.
+[120:31.64]  It doesn't matter. Just Just be building
+[120:34.08]  stuff. Just Just Just do real crap.
+[120:36.84]  >> Uh I love I love that mindset and um
+[120:40.64]  yeah. Well, that you know, thank you for
+[120:42.64]  >> I'm on Twitter, too. Like I'm you know,
+[120:44.40]  I'm part of the thing. You know, but
+[120:45.52]  like
+[120:46.40]  but just ignore me, too. Like
+[120:48.97]  >> [laughter]
+[120:51.16]  >> Oh god. All right. Well, thank you so
+[120:53.16]  much for your time, James. I really
+[120:54.44]  appreciate it. This was a lot of fun.
+[120:56.12]  >> All right. It was great. Thank you.
+[120:57.76]  >> Hey, thank you for watching this
+[120:58.80]  podcast. If you liked it and you want to
+[121:00.44]  see the show grow, please support with a
+[121:02.60]  comment or a like.
+[121:04.60]  Also, if you have any recommendations
+[121:06.48]  for people you want me to bring on,
+[121:08.48]  please drop a comment. Guests like
+[121:10.60]  Barbara Liskov, Mike Stonebreaker, Mark
+[121:13.32]  Brooker, these were all people that I
+[121:15.40]  brought on because someone left a
+[121:17.24]  comment. On another note, aside from the
+[121:19.48]  podcast, I'm working on building the
+[121:21.28]  ergonomic keyboard that I wish existed.
+[121:23.76]  Here's a glance at the prototype. It's a
+[121:25.64]  split keyboard, so there's two sides. Um
+[121:28.68]  this is in the case. But yeah, we
+[121:30.12]  launched on Kickstarter and we hit our
+[121:31.92]  goal within 8 hours of launching. I
+[121:34.00]  really appreciate it if you were one of
+[121:35.40]  the people who grabbed one of the early
+[121:37.16]  units. Um we're now working on the long
+[121:39.48]  journey of building the tooling now. And
+[121:41.60]  so, if you still want to pick one up,
+[121:43.28]  I've left the late pledges open
+[121:46.36]  so you can grab one there. I'll put a
+[121:47.88]  link in the description. Thank you again
+[121:50.44]  for watching the podcast, and I'll see
+[121:52.52]  you in the next episode.
